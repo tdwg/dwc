@@ -22,5 +22,6 @@ http://rs.tdwg.org/dwc/ (accessed on 2014-10-31).
 For scholarly citations, consider reading and citing the seminal peer-reviewed article on Darwin Core:
 
 ```
-Wieczorek J, Bloom D, Guralnick R, Blum S, Döring M, et al. (2012) Darwin Core: An Evolving Community-Developed Biodiversity Data Standard. PLoS ONE 7(1): e29715. doi:10.1371/journal.pone.0029715 (accessed on 2014-10-31).
+Wieczorek J, Bloom D, Guralnick R, Blum S, DÃ¶ring M, et al. (2012) Darwin Core: An Evolving Community-
+Developed Biodiversity Data Standard. PLoS ONE 7(1): e29715. doi:10.1371/journal.pone.0029715
 ```
