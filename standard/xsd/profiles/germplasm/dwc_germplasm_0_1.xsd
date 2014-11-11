@@ -1,0 +1,591 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema version="0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/"
+    xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
+    xmlns:gr="http://rs.nordgen.org/dwc/germplasm/0.1/terms/"
+    attributeFormDefault="qualified"
+    elementFormDefault="qualified"
+    >
+
+    <!-- 
+        *****************************************
+        WARNING! DRAFT SCHEMA! UNDER DEVELOPEMENT
+        This is the first draft version 0.1
+        *****************************************
+    -->
+
+    <!-- 
+        Darwin Core Extension for genetic resources, germplasm
+        Draft version January 2009, Dag Endresen (During the Darwin Core workshop in Copenhagen)
+        Modified draft version May 2009, Dag Endresen (Preparations for GIGA TAG in Rome, demo of new GBIF IPT)
+	Added version to the namespace (ahead of the SINGER GPG2 meeting at USDA in August 2009)
+	This draft version 0.1 is now locked, any modifications will be as a new version (0.2)
+	#
+        What would be the most reasonable namespace to use...?
+        Suggestion (for draft version): http://rs.nordgen.org/dwc/germplasm/0.1/terms/
+        Alternative (for draft version): http://atlas.nordgen.org/rs/dwc/germplasm/0.1/terms/
+        Alternative: http://rs.tdwg.org/dwc/germplasm/0.1/terms/
+        Alternative example: http://www.bioversityinternational.org/schemas/dwc/germplasm/0.1/terms/
+	#
+	Version numbering:
+	Suggestion to use the namespace with a 0.x version for the draft versions and proceed to 1.x when a stable version is reached
+        Suggestion: http://rs.tdwg.org/dwc/germplasm/0.1/terms/
+	#        
+        Current GCP_Passport (1.05) use the ns: http://generationcp.org/schemas/gcp_passport/1.05
+        Previous GCP_Passport use the ns: http://www.ipgri.org/schemas/gcp_pass/1.03
+        MCPD namespace: http://www.ipgri.cgiar.org/schemas/mcpd/1.00 (NB! IPGRI is now Bioversity)
+        #
+        Relevant further information (Germplasm Passport Data):
+        http://gcpcr.grinfo.net/include/webservices/schema-documentation.php
+        See: http://www.generationcp.org/schemas/documentation/gcp_passport_1.05.xsd.html
+        See: http://chm.grinfo.net/index.php?app=data_schema&inc=schema_list
+        See: http://wwwdev.ngb.se/portal/index.php?app=data_schema&inc=schema_list 
+    -->
+
+    <xs:import namespace="http://rs.tdwg.org/dwc/terms/" schemaLocation="http://darwincore.googlecode.com/svn/trunk/xsd/tdwg_dwcterms.xsd"/>
+    <!-- ANY GENETIC RESOURCES IDENTIFIER -->
+    <xs:element name="anyIdentifier" abstract="true" substitutionGroup="dwc:anyIdentifier"/>
+    <!-- ANY GENETIC RESOURCES PROPERTY -->
+    <xs:element name="anyProperty" abstract="true" substitutionGroup="dwc:anyProperty"/>
+    <!-- ANY GENETIC RESOURCES CLASS TERM -->
+    <xs:element name="anyClass" abstract="true" substitutionGroup="dwc:anyClass"/>
+
+
+    <!-- I simply added germplasm sample ID and sample term here. Is there perhaps a better way...? May 2009, Dag Terje -->
+    <!-- ANY GENETIC RESOURCES SAMPLE IDENTIFIER -->
+    <xs:element name="anyGermplasmID" abstract="true" substitutionGroup="dwc:anyIdentifier"/>
+    <!-- ANY GENETIC RESOURCES SAMPLE TERM -->
+    <xs:element name="anyGermplasmTerm" abstract="true" substitutionGroup="dwc:anyProperty"/>
+    <!--
+        I am testing with gr:anyGermplasmTerm instead of dwc:anySampleTerm as first tested... 
+        Would this work...? At least for a germplasm demo test version...? (Dag Endresen, 2009-05-13)
+    -->
+
+
+    <!-- 
+        ***********************************************************
+        Additional terms for the darwin core germplasm sample class
+        ***********************************************************
+    -->
+
+    <!-- 
+        NOTE: Enumeration NOT USED BELOW YET!
+        Note that the Enumeration defined below is not used as type definition for any of the relevant terms yet.
+        Conflicing with the default type for generic Darwin Core schema...?
+        How to solve this to be explored at a higher Darwin Core development/modelling level...
+        (Dag Endresen, January 2009, May 2009)
+    -->
+    <xs:simpleType name="BiologicalStatusCodeEnum">
+        <xs:restriction base="xs:int">
+            <xs:enumeration value="100"><xs:annotation><xs:documentation>Wild</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="110"><xs:annotation><xs:documentation>Natural wild</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="120"><xs:annotation><xs:documentation>Semi-matural/wild</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="200"><xs:annotation><xs:documentation>Weedy</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="300"><xs:annotation><xs:documentation>Traditional cultivar/landrace</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="400"><xs:annotation><xs:documentation>Breeding/research material</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="410"><xs:annotation><xs:documentation>Breeders line</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="411"><xs:annotation><xs:documentation>Syntetic population</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="412"><xs:annotation><xs:documentation>Hybrid</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="413"><xs:annotation><xs:documentation>Founder stock/base population</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="414"><xs:annotation><xs:documentation>Inbred line (parent of hybrid cultivar)</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="415"><xs:annotation><xs:documentation>Segregating population</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="420"><xs:annotation><xs:documentation>Genetic stock</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="500"><xs:annotation><xs:documentation>Advanced/improved cultivar</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="999"><xs:annotation><xs:documentation>Other (elaborate in remarks)</xs:documentation></xs:annotation></xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="SampleAcquisitionEnum">
+        <xs:restriction base="xs:int">
+            <xs:enumeration value="10"><xs:annotation><xs:documentation>Wild habitat</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="11"><xs:annotation><xs:documentation>Forest/woodland</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="12"><xs:annotation><xs:documentation>Shrubland</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="13"><xs:annotation><xs:documentation>Grassland</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="14"><xs:annotation><xs:documentation>Desert/tundra</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="15"><xs:annotation><xs:documentation>Aquatic habitat</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="20"><xs:annotation><xs:documentation>Farm or cultivated habitat</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="21"><xs:annotation><xs:documentation>Field</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="22"><xs:annotation><xs:documentation>Orchard</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="23"><xs:annotation><xs:documentation>Backyard, kitchen or home garden</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="24"><xs:annotation><xs:documentation>Fallow land</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="25"><xs:annotation><xs:documentation>Pasture</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="26"><xs:annotation><xs:documentation>Farm store</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="27"><xs:annotation><xs:documentation>Threshing floor</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="28"><xs:annotation><xs:documentation>Park</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="30"><xs:annotation><xs:documentation>Market or shop</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="40"><xs:annotation><xs:documentation>Institute, experimental station, research organization, genebank</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="50"><xs:annotation><xs:documentation>Seed company</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="60"><xs:annotation><xs:documentation>Weedy, distributed or ruderal habitat</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="61"><xs:annotation><xs:documentation>Roadside</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="62"><xs:annotation><xs:documentation>Field margin</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="99"><xs:annotation><xs:documentation>Other (elaborate in remarks)</xs:documentation></xs:annotation></xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="TypeOfStorageEnum">
+        <xs:restriction base="xs:int">
+            <xs:enumeration value="10"><xs:annotation><xs:documentation>Seed collection</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="11"><xs:annotation><xs:documentation>Short term</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="12"><xs:annotation><xs:documentation>Medium term</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="13"><xs:annotation><xs:documentation>Long term</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="20"><xs:annotation><xs:documentation>Field collection</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="30"><xs:annotation><xs:documentation>In vitro collection (slow growth)</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="40"><xs:annotation><xs:documentation>Cryopreserved collection</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="99"><xs:annotation><xs:documentation>Other (elaborate in remarks)</xs:documentation></xs:annotation></xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+    
+
+    <!-- Some terms from the earlier DRAFT DarwinCore seems to be modified (Dag Endresen, 2009-05-13) -->
+    <!-- dwc:anySamplingEventTerm  to  dwc:anyEventTerm -->
+    <!-- dwc:anySampleID  to  gr:anyGermplasmID (SampleID is perhaps now OccurrenceID?) -->
+    <!-- dwc:anySampleTerm  to  gr:anyGermplasmTerm -->
+
+
+    <!-- is GermplasmID the same as dwc:occurrenceID, perhaps GermplasmID is redundant by this dwc term...? -->
+    <xs:element name="GermplasmID" substitutionGroup="gr:anyGermplasmID">
+        <xs:annotation>
+            <xs:documentation>
+                Germplasm Sample ID, there used to be a sampleID in a previous DRAFT Darwin Core...?
+                Does this mean that we should use occurrenceID also for samples...?
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    
+    <xs:element name="BiologicalStatusOfSample" substitutionGroup="gr:anyGermplasmTerm">
+        <xs:annotation>
+            <xs:documentation>
+                (MCPD term: 20): Biological status of sample.
+                Wild, Crop wild relative (CWR), Primitive, Traditional cultivar/landrace, 
+                Breeding line, Genetic stock, Modern cultivar
+                (recommended to follow a regulated vocabulary, or preferable the SAMPSTAT code, MCPD term 20).
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+
+    <xs:element name="BiologicalStatusOfSampleCode" substitutionGroup="gr:anyGermplasmTerm">
+        <xs:annotation>
+            <xs:documentation>
+                MCPD term 20: Biological status of sample, SAMPSTAT.
+                SAMPSTAT codes distinguish wild and primitive cultivars 
+                from modern cultivars and breeding lines (material under development).
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+
+    <xs:element name="GermplasmIdentifier" substitutionGroup="gr:anyGermplasmTerm">
+        <xs:annotation>
+            <xs:documentation>
+                MCPD term: 11: Accession name, ACCENAME.
+                Either a registered or other formal designation given to the accession.
+                For example: Rheinische Vorgebirgstrauben;Emma;Avlon
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+
+    <xs:element name="CollectingInstituteCode" substitutionGroup="dwc:anyEventTerm">
+        <xs:annotation>
+            <xs:documentation>
+                MCPD term 4: Collecting institute code, COLLCODE.
+                FAO WIEWS institute code for the collecting/gathering institute.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+
+    <xs:element name="AncestralData" substitutionGroup="gr:anyGermplasmTerm">
+        <xs:annotation>
+            <xs:documentation>
+                MCPD term 21: Ancestral data, ANCEST.
+                Information about either pedigree or other description of ancestral information.
+                For example a pedigree 'Hanna/7*Atlas//Turk/8*Atlas', 
+                or a description 'mutation found in Hanna', 'selection from Irene'.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+
+    <xs:element name="PurdyPedigree" substitutionGroup="gr:anyGermplasmTerm">
+        <xs:annotation>
+            <xs:documentation>
+                (MCPD term 21): Ancestral information following the purdy pedigree format.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+
+    <!-- Type of storage can be multiple instances, perhaps need to be separate class? -->
+    <xs:element name="TypeOfStorage" substitutionGroup="gr:anyGermplasmTerm">
+        <xs:annotation>
+            <xs:documentation>
+                MCPD term 27: Type of germplasm storage, STORAGE.
+                Refer to FAO/IPGRI Genebank Standards 1994 for details on storage type.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+
+    <!-- Safety duplication of germplasm as a security copy -->
+    <!-- Location of Safety Duplicates as class, multiple instances -->
+    <xs:element name="LocationOfSafetyDuplication" substitutionGroup="dwc:anyClass">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- <xs:element ref="dwc:SampleID" minOccurs="1"/> -->
+                <xs:element ref="gr:GermplasmID" minOccurs="1"/>
+                <xs:element ref="gr:anySafetyDuplicationTerm" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <!-- <xs:element name="SampleID" substitutionGroup="dwc:anyIdentifier"/> -->
+    <xs:element name="anySafetyDuplicationTerm" abstract="true" substitutionGroup="dwc:anyProperty"/>
+    <xs:element name="SafetyDuplicationID" substitutionGroup="dwc:anyIdentifier"/>
+    <xs:element name="SafetyDuplicationInstituteCode" substitutionGroup="gr:anySafetyDuplicationTerm">
+        <xs:annotation>
+            <xs:documentation>
+                MCPD term 26: Location of safety duplicates, DUPLSITE.
+                FAO institute code of the institute where a safety duplicate 
+                of the accession is maintained.
+                Example: For Svalbard Global Seed Vault (SGSV), use the FAO WIEWS institute code NOR051.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="SafetyDuplicationInstitute" substitutionGroup="gr:anySafetyDuplicationTerm"/>
+    <xs:element name="SafetyDuplicationDate" substitutionGroup="gr:anySafetyDuplicationTerm"/>
+    
+    <!-- Treaties and regulations (for PGRFA, Germplasm) -->
+    <!--
+        List treaty/regulation name, and issuing body, 
+        and perhaps when sample was included under the regulations
+        NB! This class desperatly need to be developed further...!
+        Example: ITPGRFA, International Treaty for Plant Genetic Resources
+        The ITPGRFA Annex 1 list the crops regulated by this treaty.
+    -->
+    <xs:element name="GermplasmTreatiesAndRegulations" substitutionGroup="dwc:anyClass">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- <xs:element ref="dwc:SampleID" minOccurs="1"/> -->
+                <xs:element ref="gr:GermplasmID" minOccurs="1"/>
+                <xs:element ref="gr:anyGermplasmRegulationTerm" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <!-- <xs:element name="SampleID" substitutionGroup="dwc:anyIdentifier"/> -->
+    <xs:element name="anyGermplasmRegulationTerm" abstract="true" substitutionGroup="dwc:anyProperty"/>
+    <xs:element name="GermplasmRegulationID" substitutionGroup="dwc:anyIdentifier"/>
+    <xs:element name="TreatyOrRegulationName" substitutionGroup="gr:anyGermplasmRegulationTerm"/>
+    <xs:element name="TreatyOrRegulationGoverningBody" substitutionGroup="gr:anyGermplasmRegulationTerm"/>
+        
+
+    <!-- SAMPLE ACQUISITION (DONOR EVENT) -->
+    <!--
+        Will the donor/acquisition class also need the reference to the genebank institute 
+        receiving the sample to keep track of a chain of donor events 
+        proceeding the donation of the sample to the holding genebank...?
+    -->
+    <xs:element name="SampleAcquisition" substitutionGroup="dwc:anyClass">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="gr:GermplasmID" minOccurs="1"/>
+                <!-- 
+                <xs:element ref="dwc:SampleID" minOccurs="1"/>
+                <xs:any namespace="##other" maxOccurs="unbounded" minOccurs="0"/>
+                -->
+                <xs:element ref="gr:anySampleAcquisitionTerm" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="anySampleAcquisitionTerm" abstract="true" substitutionGroup="dwc:anyProperty"/>
+    <xs:element name="SampleAcquisitionID" substitutionGroup="dwc:anyIdentifier"/>
+    <xs:element name="DonorsSampleIdentifier" substitutionGroup="dwc:anyIdentificationTerm"/>
+    <xs:element name="SampleAcquisitionSource" substitutionGroup="gr:anySampleAcquisitionTerm">
+        <xs:annotation>
+            <xs:documentation>
+                MCPD term 22: Collecting/acquisition source, COLLSRC.
+                Coded as integer value, defined enumeration.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="SampleAcquisitionDate" substitutionGroup="gr:anySampleAcquisitionTerm">
+        <xs:annotation>
+            <xs:documentation>
+                MCPD term 12: Acquisition date, ACQDATE.
+                Date when the germplasm sample (accession) entered the genebank collection.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="DonorInstituteCode" substitutionGroup="gr:anySampleAcquisitionTerm">
+        <xs:annotation>
+            <xs:documentation>
+                MCPD term 23: Donor institute code, DONORCODE
+                FAO WIEWS institute code for the donor institute.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="DonorInstitute" substitutionGroup="gr:anySampleAcquisitionTerm">
+        <xs:annotation>
+            <xs:documentation>
+                (MCPD term 23): Donor institute name.
+                If the FAO WIEWS institute code is available, this term should not be reported.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="SampleAcquisitionRemarks" substitutionGroup="gr:anySampleAcquisitionTerm"/>
+        
+    <!-- BREEDING EVENT (Cultivation event, "similar" but different from Sampling Event) -->
+    <!-- These breeder terms may not need a separate class, only one instance per sample -->
+    <xs:element name="BreedingEventGroup" substitutionGroup="dwc:anyClass">
+            <xs:complexType>
+                <xs:sequence>
+                    <xs:element ref="gr:GermplasmID" minOccurs="1"/>
+                    <!-- 
+                        <xs:element ref="dwc:SampleID" minOccurs="1"/>
+                        <xs:element ref="gr:BreedingEventID" minOccurs="1"/>
+                        <xs:any namespace="##other" maxOccurs="unbounded" minOccurs="0"/>
+                    -->
+                    <xs:element ref="gr:anyBreedingEventTerm" minOccurs="0" maxOccurs="unbounded"/>
+                </xs:sequence>
+            </xs:complexType>
+    </xs:element>
+    <xs:element name="anyBreedingEventTerm" abstract="true" substitutionGroup="gr:anyProperty"/>
+    <xs:element name="BreedingEventID" substitutionGroup="gr:anyIdentifier"/>
+    <xs:element name="BreedersSampleIdentifier" substitutionGroup="gr:anyBreedingEventTerm"/>
+    <xs:element name="BreedingYear" substitutionGroup="gr:anyBreedingEventTerm"/>
+    <xs:element name="BreederPerson" substitutionGroup="gr:anyBreedingEventTerm"/>
+    <xs:element name="BreederInstituteCode" substitutionGroup="gr:anyBreedingEventTerm">
+            <xs:annotation>
+                <xs:documentation>
+                    MCPD term 19: Breeding institute code, BREDCODE
+                    FAO WIEWS institute code for the breeding institute.
+                </xs:documentation>
+            </xs:annotation>
+    </xs:element>
+    <xs:element name="BreederInstitute" substitutionGroup="gr:anyBreedingEventTerm">
+            <xs:annotation>
+                <xs:documentation>
+                    (MCPD term 19): Breeder institute name.
+                    If the FAO WIEWS institute code is available, this term should not be reported.
+                </xs:documentation>
+            </xs:annotation>
+    </xs:element>
+    <xs:element name="BreedingCountry" substitutionGroup="gr:anyBreedingEventTerm"/>
+    <xs:element name="BreedingCountryCode" substitutionGroup="gr:anyBreedingEventTerm"/>
+    <xs:element name="BreedingEventRemarks" substitutionGroup="gr:anyBreedingEventTerm"/>
+
+    <!-- 
+        INFO: mapping of other MCPD terms to DwC terms2
+        
+        dwc:CatalogNumber     MCPD term: 2: Accession number, ACCENUMB (unique identifier for samples within a genebank collection)
+
+    -->
+
+    
+
+
+    <!-- ************************************** -->
+    <!-- Germplasm trait measurement data (C&E) -->
+    <!-- ************************************** -->
+
+    <!-- 
+	Germplasm Trait Measurements (extends DarwinCore MeasurementOrFact)
+
+        DRAFT data exchange format for germplasm trait measurements (C&E).
+        DRAFT descriptors developed for the European ECPGR community as part of EPGRIS3 (workshop 2009-05-07 in Bonn).
+        See: http://www.epgris3.eu/ 
+        See: http://www.epgris3.eu/EPGRIS3%2020090507workshop.htm
+        See: http://www.ecpgr.cgiar.org/
+	
+	    DATASET
+		UPLOADERCODE
+		DATASET_REMARK
+	    EXPERIMENT
+		EXPERIMENT_NUMBER
+		EXPERIMENT_DESCRIPTION
+		EXPERIMENT_YEAR
+		EXPERIMENT_YEAR
+		EXPERIMENT_LONGITUDE
+		EXPERIMENT_LATITUDE
+		EXPERIMENT_REPORT
+	    TRAIT
+		TRAIT_NUMBER
+		TRAIT_NAME
+		TRAIT_REMARK
+		TRAIT_METHOD
+	    GENOTYPE
+		GENOTYPE_NUMBER
+		GENOTYPE_NICODE
+		GENOTYPE_INSTCODE
+		GENOTYPE_ACCENUMB
+		GENOTYPE_GENUS
+	    SCORE
+		GENOTYPE_NUMBER
+		EXPERIMENT_NUMBER
+		TRAIT_NUMBER
+		SCORE
+
+	MAPPING of EPGRIS3 TRAIT terms to the standards DwC core terms
+        dwc:measurementID                SCORE_ID
+        dwc:measurementType              perhaps use this instead of defining GermplasmTraitClass below...?
+        dwc:measurementValue             SCORE
+        dwc:measurementAccuracy          SCORE_ACCURACY (not in the draft Germplasm Trait format, EPGRIS3 C&E)
+        dwc:measurementUnit              SCORE_UNIT
+        dwc:measurementDeterminedDate    SCORE_DATE
+        dwc:measurementDeterminedBy      SCORE_PERSON
+        dwc:measurementMethod            GermplasmExperimentClass defined below for more details (atomized acording to EPGRIS3 C&E)
+        dwc:measurementRemarks           SCORE_REMARKS (not in the draft Germplasm Trait format, EPGRIS3 C&E)
+    -->
+
+    <xs:element name="MeasurementByInstituteCode" substitutionGroup="dwc:anyMeasurementTerm">
+        <xs:annotation>
+            <xs:documentation>
+                Germplasm trait observation determined by institute code, INSTCODE.
+                FAO WIEWS institute code for the institute performing the observation/measurement.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="MeasurementGrowthStage" substitutionGroup="dwc:anyMeasurementTerm">
+        <xs:annotation>
+            <xs:documentation>
+                Germplasm term to describe the growth stage of the plant when the trait observation or measurement was made.
+                Examples include: Ripening, heading, ...
+                A modifier of the TDWG SDD style could be applied here to be more generic and include modifiers like
+                for example part of the plant where the observation was made (eg. leaf, stem, seeds).
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+
+
+    <!-- **************** -->
+    <!-- TRAIT DESCRIPTOR -->
+    <!-- **************** -->
+    <!-- Germplasm Trait is the definition of the observation descriptor (extends measurementMethod) -->
+    <xs:element name="GermplasmTraitID" substitutionGroup="gr:anyGermplasmID">
+        <xs:annotation>
+            <xs:documentation>
+                Trait ID, Germplasm Trait Descriptor (Measurement Descriptor).
+                May eventually develop into a controlled and currated ontology for trait descriptors.
+                Each trait descriptor could eventually be identified by a GUID, for example LSID.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <!-- Multiple Germplasm Trait Descriptors -->
+    <xs:element name="GermplasmTraitGroup" substitutionGroup="dwc:anyClass">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="gr:GermplasmTraitID" minOccurs="1"/>
+                <xs:element ref="gr:anyGermplasmTraitTerm" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="anyGermplasmTraitTerm" abstract="true" substitutionGroup="gr:anyProperty"/>
+    <xs:element name="GermplasmTraitIdentifier" substitutionGroup="gr:anyGermplasmTraitTerm"><!-- TRAIT_NAME -->
+        <xs:annotation>
+            <xs:documentation>
+                EPGRIS3: TRAIT_NAME
+                English name of the trait
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="GermplasmTraitClass" substitutionGroup="gr:anyGermplasmTraitTerm">
+        <xs:annotation>
+            <xs:documentation>
+                Classification of the trait descriptor (a standard controlled vocabulary could be developed).
+                Examples include: Agrobotanical, morphological, chemical, phenological, molecular biology, 
+                disease susceptibility/resistance, tolerance (abiotic), utilization.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="GermplasmTraitScale" substitutionGroup="gr:anyGermplasmTraitTerm">
+        <xs:annotation>
+            <xs:documentation>
+                Scale used for the observations/measurements.
+                Absolute, interval, nominal, ordinal, ratio, or relative values.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="GermplasmTraitSource" substitutionGroup="gr:anyGermplasmTraitTerm">
+        <xs:annotation>
+            <xs:documentation>
+                Reference to the source standard Germplasm Descriptor.
+                For example the UPOV descriptor or the Bioversity Crop Descriptor identifier.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="GermplasmTraitRemarks" substitutionGroup="gr:anyGermplasmTraitTerm"/>
+
+
+    <!-- **************** -->
+    <!-- TRAIT EXPERIMENT -->
+    <!-- **************** -->
+    <!-- Germplasm Experiment is the description of the trait observation event/project/experiment -->
+    <xs:element name="GermplasmExperimentID" substitutionGroup="gr:anyGermplasmID">
+        <xs:annotation>
+            <xs:documentation>
+                Experiment ID, Germplasm Trait Descriptor (Measurement Event).
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <!-- Multiple Germplasm Trait Experiments -->
+    <xs:element name="GermplasmExperimentGroup" substitutionGroup="dwc:anyClass">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="gr:GermplasmExperimentID" minOccurs="1"/>
+                <xs:element ref="gr:anyGermplasmExperimentTerm" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="anyGermplasmExperimentTerm" abstract="true" substitutionGroup="gr:anyProperty"/>
+    <xs:element name="GermplasmExperimentIdentifier" substitutionGroup="gr:anyGermplasmExperimentTerm"><!-- EXPERIMENT_NUMBER -->
+        <xs:annotation>
+            <xs:documentation>
+                EPGRIS3: EXPERIMENT_NUMBER
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element> 
+    <xs:element name="GermplasmExperimentRemarks" substitutionGroup="gr:anyGermplasmExperimentTerm"><!-- EXPERIMENT_DESCRIPTION -->
+        <xs:annotation>
+            <xs:documentation>
+                EPGRIS3: EXPERIMENT_DESCRIPTION
+                Information relevant for the interpretation of the scores in the experiment 
+                such as experimental design, location, experimentor, weather, etc.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="GermplasmExperimentYear" substitutionGroup="gr:anyGermplasmExperimentTerm"><!-- EXPERIMENT_YEAR -->
+        <xs:annotation>
+            <xs:documentation>
+                EPGRIS3: EXPERIMENT_YEAR
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="GermplasmExperimentReport" substitutionGroup="gr:anyGermplasmExperimentTerm"><!-- EXPERIMENT_REPORT -->
+        <xs:annotation>
+            <xs:documentation>
+                EPGRIS3: EXPERIMENT_REPORT
+                A reference to the report of the experiment, either supplied as the file name or the URL of the report.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+
+
+
+
+    
+    <!-- *************** -->
+    <!-- Cultivar domain -->
+    <!-- *************** -->
+    <!-- FAO have developed a cultivar database -->
+    <!-- NB! Probably much better to take this out in separate extension...! -->
+    <!-- FAO to develop this extension...? -->
+    <!--
+            <xs:group name="CultivarGroup">
+            <xs:sequence>
+            <xs:choice maxOccurs="unbounded">
+            <xs:element ref="dwc:anyIdentifier"/>
+            <xs:element ref="dwc:anyClass"/>
+            <xs:element ref="gr:anyCultivarTerm" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:choice>
+            </xs:sequence>
+            </xs:group>
+            <xs:element name="anyCultivarTerm" abstract="true" substitutionGroup="cultivar:anyProperty"/>
+            <xs:element name="CultivarID" substitutionGroup="cultivar:anyIdentifier"/>
+            <xs:element name="CultivarName" substitutionGroup="cultivar:anyIdentificationTerm"/>
+    -->
+        
+
+
+        
+</xs:schema>

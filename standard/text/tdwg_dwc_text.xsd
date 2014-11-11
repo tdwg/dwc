@@ -1,0 +1,110 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<xs:schema version="0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:arch="http://rs.tdwg.org/dwc/text/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
+	targetNamespace="http://rs.tdwg.org/dwc/text/" attributeFormDefault="unqualified"
+	elementFormDefault="qualified">
+	<xs:import namespace="http://rs.tdwg.org/dwc/terms/"
+		schemaLocation="http://darwincore.googlecode.com/svn/trunk/xsd/tdwg_dwcterms.xsd"/>
+	<xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/xml.xsd">
+		<xs:annotation>
+			<xs:documentation>
+				Get access to the xml: attribute groups for xml:lang
+			</xs:documentation>
+		</xs:annotation>
+	</xs:import>
+	
+	<!-- The root element of the document is an archive -->
+	<xs:element name="archive">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="core" type="arch:coreFileType" maxOccurs="1" minOccurs="1"/>
+				<xs:element name="extension" type="arch:extensionFileType" maxOccurs="unbounded"
+					minOccurs="0"/>
+			</xs:sequence>
+			<xs:attribute name="metadata" type="xs:anyURI" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+
+	<!-- attributes shared across all file types, core or extensions -->
+	<xs:attributeGroup name="fileAttributes">
+		<xs:attribute name="linesTerminatedBy" type="xs:string" use="optional" default="\n"/>
+		<xs:attribute name="fieldsTerminatedBy" type="xs:string" use="optional" default=","/>
+		<xs:attribute name="fieldsEnclosedBy" type="xs:string" use="optional" default="&quot;"/>
+		<xs:attribute name="ignoreHeaderLines" type="xs:integer" use="optional" default="0"/>
+		<xs:attribute name="rowType" type="xs:string" use="optional"
+			default="http://rs.tdwg.org/dwc/xsd/simpledarwincore/SimpleDarwinRecord"/>
+		<xs:attribute name="encoding" type="xs:string" use="optional" default="UTF-8"/>
+		<xs:attribute name="dateFormat" type="xs:string" use="optional" default="YYYY-MM-DD"/>
+	</xs:attributeGroup>
+
+	<!-- The file within an archive defines the description and it's fields -->
+	<xs:complexType name="fileType">
+		<xs:sequence>
+			<xs:element name="files" minOccurs="1" maxOccurs="1">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="location" type="xs:string" minOccurs="1"
+							maxOccurs="unbounded"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+		<xs:attributeGroup ref="arch:fileAttributes"/>
+	</xs:complexType>
+
+	<!-- a file representing the core file in a star schema -->
+	<xs:complexType name="coreFileType">
+		<xs:complexContent>
+			<xs:extension base="arch:fileType">
+				<xs:sequence>
+					<xs:element name="id" type="arch:idFieldType" minOccurs="0" maxOccurs="1"/>
+					<xs:element name="field" type="arch:fieldType" minOccurs="1"
+						maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<!-- a file representing an extension file in a star schema -->
+	<xs:complexType name="extensionFileType">
+		<xs:complexContent>
+			<xs:extension base="arch:fileType">
+				<xs:sequence>
+					<xs:element name="coreid" type="arch:idFieldType" minOccurs="1" maxOccurs="1"/>
+					<xs:element name="field" type="arch:fieldType" minOccurs="1"
+						maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<!-- A field represents a column within the file -->
+	<xs:complexType name="idFieldType">
+		<xs:attribute name="index" type="xs:integer" use="optional"/>
+	</xs:complexType>
+
+	<!-- A field represents a column within the file -->
+	<xs:complexType name="fieldType">
+		<xs:attribute name="index" type="xs:integer" use="optional">
+			<xs:annotation>
+				<xs:documentation>The index number of the column this field is represented in the source file(s). Indices start with 0.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="term" type="xs:anyURI" use="required">
+			<xs:annotation>
+				<xs:documentation>The unique, qualified identifier for the term, usually a URI. E.g. http://rs.tdwg.org/dwc/terms/scientificName</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="default" type="xs:string" use="optional">
+			<xs:annotation>
+				<xs:documentation>A global default value that should be used in case the field doesnt have a column index or the actual value for the source record is NULL.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="vocabulary" type="xs:anyURI" use="optional">
+			<xs:annotation>
+				<xs:documentation>A URI that identifies a vocabulary used for the values found for the field in the source files. The URI ideally should resolve to some machine readable definition like SKOS, RDF, the GBIF vocabulary schema or a simple text file as often found for ISO or RFC standards. E.g. http://rs.gbif.org/vocabulary/gbif/nomenclatural_code.xml;   http://www.ietf.org/rfc/rfc3066.txt;   http://www.iso.org/iso/list-en1-semic-3.txt</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
+
+</xs:schema>

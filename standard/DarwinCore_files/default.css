@@ -1,0 +1,185 @@
+/* The Darwin Core Task Group */
+/* Adapted from the Dublin Core Metadata Initiative */
+/* http://tdwg.org/ */
+
+
+/* Note: Todd Fahrner's keyword hack for IE. */
+/* http://alistapart.com/stories/sizematters/ */
+body, body div, body p, body th, body td, body li, body dd {
+	/* More specific to override rule in importing sheet. */
+	font-size: x-small;
+	/* False value for WinIE4/5. */
+	voice-family: "\"}\"";
+	/* Trick WinIE4/5 into thinking the rule is over. */
+	voice-family: inherit;
+	/* Recover from trick. */
+	font-size: small;
+	/* Intended value for better browsers. */
+}
+html>body, html>body div, html>body p, html>body th, html>body td, html>body li, html>body dd {
+	font-size: small;
+	/* Be nice to Opera. */
+}
+/* END Todd Fahrner's keyword hack for IE. */
+
+/* Body */
+body {
+	background: #FFF;
+	color: #000;
+	font-family: Verdana, Arial, "Arial Unicode MS", Helvetica, sans-serif;
+	margin: 10px;
+	padding: 10px;
+	text-align: left;
+}
+
+/* Links */
+a:link { color: #333; text-decoration: underline; }
+a:visited { color: #666; text-decoration: underline; }
+a:hover, a:visited:hover, a:active { color: #F60; text-decoration: underline; }
+
+/* Misc */
+code, pre, tt { color: #000; font-family: Courier, "Courier New", "Andale Mono", Monoco, monospace; }
+hr { color: #CCC; height: 1px; }
+img { border: 0; }
+th, td { vertical-align: top; }
+
+/* Forms */
+form { margin: 0; padding: 0; }
+input.text { font-size: 80%; }
+input.search { font: 11px Verdana, Arial, "Arial Unicode MS", Helvetica, sans-serif; }
+input.button { font: 11px Verdana, Arial, "Arial Unicode MS", Helvetica, sans-serif; margin: 0; padding: 0; }
+
+/* Headings */
+h1 { color: #333; font: bold 135% Verdana, Arial, "Arial Unicode MS", Helvetica, sans-serif; }
+h2 { color: #F30; font: bold 120% Verdana, Arial, "Arial Unicode MS", Helvetica, sans-serif; }
+h3 { color: #000; font: bold 105% Verdana, Arial, "Arial Unicode MS", Helvetica, sans-serif; }
+h4 { color: #666; font: bold 100% Verdana, Arial, "Arial Unicode MS", Helvetica, sans-serif; font-style: italic; }
+h5 { color: #777; font: bold 80% Tahoma, Geneva, "Arial Unicode MS", Arial, Helvetica, sans-serif; }
+
+/* Code/Preformatted - puts gray background behind example */
+code.example, pre.example { background: #EEE; line-height: 140%; }
+
+/* Table used for sidebar menus on home page only */
+table.menuhome { width: 150px; }
+table.menuhome th.cat { background: #CCC; font-size: 80%; font-weight: bold; padding: 4px 6px; text-align: center; vertical-align: top; }
+table.menuhome td.item { background: #EEE; font-size: 80%; padding: 4px 6px 6px 6px; vertical-align: top; }
+
+/* Home page elements */
+div.deck { color: #666; font-size: 80%; padding-bottom: 1em; }
+div.newsarchive { border-bottom: 1px solid #CCC; font-size: 80%; padding: 1em 0; text-align: center; }
+div.dates { font-size: 80%; padding: 1em 0; text-align: center; }
+
+/* Table used for home page layout */
+table.home { width: 100%; }
+table.home td.sidebar { background: #EEE; padding: 0; width: 150px; }
+table.home td.main { padding: 0 15px; }
+
+/* Table used for sidebar menus */
+table.menu { width: 180px; }
+table.menu th.cat { background: #CCC; font-size: 80%; font-weight: bold; padding: 4px 6px; text-align: center; vertical-align: top; }
+table.menu td.item { background: #EEE; font-size: 80%; padding: 4px 6px 8px 6px; vertical-align: top; }
+
+/* Table used in Document pages - yellow background for table heads */
+table.docinfo { background: #FFC; width: 100%; margin-bottom: 0px; }
+table.docinfo th { text-align: right; padding: 4px; width: 15%; }
+table.docinfo td { text-align: left; padding: 4px; width: 85%; }
+
+/* Table used in Working Group pages - gray background for table heads */
+table.wginfo { background: #EEE; width: 100%; margin-bottom: 10px; }
+table.wginfo th { text-align: right; padding: 4px; width: 15%; }
+table.wginfo td { text-align: left; padding: 4px; width: 85%; }
+
+/* Specs for tables with border */
+table.border { border-top: 1px solid #CCC; border-left: 1px solid #CCC; margin-bottom: 10px; width: 95%; border-collapse: collapse;}
+table.border th { background: #EEE; font-family: Verdana, Arial, "Arial Unicode MS", Helvetica, sans-serif; }
+table.border td, table.border th { border-right: 1px solid #CCC; border-bottom: 1px solid #CCC; padding: .5em; }
+table.border caption { font-weight: bold; border-bottom: 1px solid #CCC;}
+
+/* Specs for tables with no border */
+table.noborder { margin-bottom: 10px; }
+table.noborder th { background: #EEE; font-family: Verdana, Arial, "Arial Unicode MS", Helvetica, sans-serif; }
+table.noborder td, table.noborder th { padding: .5em; }
+
+/* Header and Footer */
+td.crumb { font-size: 80%; }
+div.headerhome { padding-bottom: 1em; }
+div.header { border-bottom: 1px solid #CCC; margin-bottom: 1em; padding-bottom: 1em; }
+div.footer { border-top: 2px solid #CCC; margin-top: 1em; }
+div.footer p { font-size: 80%; }
+.small, p.small { font-size: 10px; }
+
+/* Hidden DCMI name for print */
+div.dcmiprint { display: none; }
+
+/* News items */
+div.rss-item { border-bottom: 1px solid #CCC; padding-bottom: 1em; padding-top: 1em; }
+div.rss-type { color: #F30; font-size: 80%; font-weight: bold; }
+div.rss-title { font-weight: bold; margin: 0; padding: 0; }
+div.rss-description p { margin: 0; padding: 4px 0 6px 0; }
+
+/* Style for search engine (htdig) */
+.refineSearch { font: 11px/13px Arial, Helvetica, sans-serif; }
+.resultMatches { font: 12px Arial, Helvetica, sans-serif; font-weight:bold; }
+
+/* THE DUBLIN CORE METADATA REGISTRY */
+#.registry { color: #FFF; font-size: 80%; }
+/* Links in header */
+#a.registry { font-size: 80%; font-weight: bold; }
+#a.registry:link { color: #FFF; text-decoration: none; }
+#a.registry:visited { color: #FFF; text-decoration: none; }
+#a.registry:hover, a.registry:visited:hover, a.registry:active { color: #FFF; text-decoration: underline; }
+
+
+/*-------------------------   menu   ----------------------------------------------------*/
+#menu {
+	width:190px;
+	float:left;
+	padding-bottom:20px;
+	background:#617694 url(../images/menu_bottom.jpg) bottom right no-repeat;
+}
+	#menu div, #menu p, #menu th, #menu td {
+		font: 14px/1.4 Tahoma, Tahoma, "Times New Roman", sans-serif;
+		color: #FFCC00;
+	}
+	#menu .level1 {
+		font: 16px/1.4 Tahoma, Tahoma, "Times New Roman", sans-serif;
+		color: #FFCC00;
+	}
+	#menu a:link { color: #FFCC00; text-decoration:none; }
+	#menu a:visited { color:#FFCC00; text-decoration:none; }
+	#menu a:hover { color:#FFFFFF; text-decoration:none; }
+	#menu a:active { color:#FFFFFF; text-decoration:none; }
+	#menu .highlighted a:link { color: #FFFFFF; text-decoration:none; }
+	#menu .highlighted a:visited { color:#FFFFFF; text-decoration:none; }
+	#menu .highlighted a:hover { color:#FFFFFF; text-decoration:none; }
+	#menu .highlighted a:active { color:#FFFFFF; text-decoration:none; }
+	
+	.topMenu {
+		margin:0;
+		padding:0;
+		margin-left:8px;
+	}
+	.subMenu {
+		margin:0;
+		padding:0;
+		margin-left: 2px;
+		padding-left: 10px;
+		margin-bottom:2px;
+		border-left:1px solid #999999;
+	}
+	.subSubMenu {
+		margin:0;
+		padding:0;
+		margin-left: 2px;
+		padding-left: 20px;
+		margin-bottom:2px;
+		border-left:3px solid #999999;
+	}
+	.menuItem {
+		margin:0;
+		padding:0;
+	}
+	
+HR.sub-divider {
+	BORDER-RIGHT: 0px; BORDER-TOP: #aaa 1px dashed; MARGIN: 3px 15px 2px 4px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px; HEIGHT: 1px
+}

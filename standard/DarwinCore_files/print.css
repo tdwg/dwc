@@ -1,0 +1,13 @@
+#pageHeader { display:none; }
+#menu { display:none; }
+	
+#breadcrumbs {
+	margin: 0;
+}
+#pageContent {
+	margin: 0;
+	padding-right: 0;
+}
+#pageFooter {
+	margin: 0;
+}
