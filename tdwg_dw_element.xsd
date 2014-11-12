@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ==================================================================== -->
+<!-- Introduction                                                         -->
+<!-- ==================================================================== -->
+<!-- Schema to declare an abstract data element for use in substitution   -->
+<!-- groups so that arbitrary lists of elements so derived can be used to -->
+<!-- compose a record. For example, see DarwinRecord.xsd                  -->
+<!-- History:                                                             -->
+<!--   version 0.5 2007-02-14 Renato De Giovanni, John Wieczorek          --> 
+<!-- Status:                                                              -->
+<!--   Ready for testing.                                                 -->
+<!--   See http://wiki.tdwg.org for current status of this standard       -->
+
+<!-- ==================================================================== -->
+<!-- Schema                                                               -->
+<!-- ==================================================================== -->
+<xs:schema 
+	targetNamespace="http://rs.tdwg.org/dwc/dwelement" 
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified" version="0.5">
+
+	<!-- ============================================================== -->
+	<!-- Elements                                                       -->
+	<!-- ============================================================== -->
+	<xs:element name="dwElement" abstract="true"/>
+	  <xs:annotation>
+	    <xs:documentation source="http://wiki.tdwg.org/twiki/bin/view/DarwinCore/DarwinElement" xml:lang="en"/>
+	  </xs:annotation>
+
+</xs:schema>

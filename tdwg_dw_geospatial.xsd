@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ==================================================================== -->
+<!-- Introduction                                                         -->
+<!-- ==================================================================== -->
+<!-- History:                                                             -->
+<!--   version 0.7 2007-04-23 R. De Giovanni: Changed namespace           -->
+<!--   version 0.6 2007-04-17 R. De Giovanni: Added qualification for     -->
+<!--                          types included from tdwg_basetypes.xsd      -->
+<!--   version 0.5 2007-02-14 John Wieczorek, Javier de la Torre          -->
+<!-- Status:                                                              -->
+<!--   Ready for testing.                                                 -->
+<!--   See http://wiki.tdwg.org for current status of this standard       -->
+
+<!-- ==================================================================== -->
+<!-- Schema                                                               -->
+<!-- ==================================================================== -->
+<xs:schema targetNamespace="http://rs.tdwg.org/dwc/geospatial/"
+	xmlns:dwe="http://rs.tdwg.org/dwc/dwelement" 
+	xmlns:dwg="http://rs.tdwg.org/dwc/geospatial/" 
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified" version="0.7">
+
+
+	<!-- ============================================================== -->
+	<!-- Documentation                                                  -->
+	<!-- ============================================================== -->
+	<xs:annotation>
+		<xs:documentation> Protocol-independent XML Schema for a geospatial extension to the Darwin
+			Core. Synchronized with protocol-dependent content models using same version number. For
+			element documentation, see
+			http://wiki.tdwg.org/twiki/bin/view/DarwinCore/GeospatialExtension. </xs:documentation>
+	</xs:annotation>
+
+
+	<!-- ============================================================== -->
+	<!-- Includes                                                       -->
+	<!-- ============================================================== -->
+	<!-- include - inclusions must be top-level elements (children of   -->
+	<!--   the xs:schema element. Inclusion is restricted to the       -->
+	<!--   definition of a single namespace.                            -->
+	<!-- ============================================================== -->
+	<xs:include schemaLocation="http://rs.tdwg.org/dwc/tdwg_basetypes.xsd"/>
+
+
+	<!-- ============================================================== -->
+	<!-- Imports                                                        -->
+	<!-- ============================================================== -->
+	<!-- import - must be used to import definitions from other         -->
+	<!--   namespaces.                                                  -->
+	<!-- ============================================================== -->
+	<xs:import namespace="http://rs.tdwg.org/dwc/dwelement"
+		schemaLocation="http://rs.tdwg.org/dwc/tdwg_dw_element.xsd"/>
+
+
+	<!-- ============================================================== -->
+	<!-- Elements                                                       -->
+	<!-- ============================================================== -->
+	<xs:element name="DecimalLatitude" type="dwg:decimalLatitudeDataType"
+		substitutionGroup="dwe:dwElement" nillable="true">
+		<xs:annotation>
+			<xs:documentation
+				source="http://wiki.tdwg.org/twiki/bin/view/DarwinCore/DecimalLatitude"
+				xml:lang="en"/>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="DecimalLongitude" type="dwg:decimalLongitudeDataType"
+		substitutionGroup="dwe:dwElement" nillable="true">
+		<xs:annotation>
+			<xs:documentation
+				source="http://wiki.tdwg.org/twiki/bin/view/DarwinCore/DecimalLongitude"
+				xml:lang="en"/>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="GeodeticDatum" type="xs:string" substitutionGroup="dwe:dwElement"
+		nillable="true">
+		<xs:annotation>
+			<xs:documentation source="http://wiki.tdwg.org/twiki/bin/view/DarwinCore/GeodeticDatum"
+				xml:lang="en"/>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="CoordinateUncertaintyInMeters" type="xs:positiveInteger"
+		substitutionGroup="dwe:dwElement" nillable="true">
+		<xs:annotation>
+			<xs:documentation
+				source="http://wiki.tdwg.org/twiki/bin/view/DarwinCore/CoordinateUncertaintyInMeters"
+				xml:lang="en"/>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="PointRadiusSpatialFit" type="dwg:spatialFitDataType"
+		substitutionGroup="dwe:dwElement" nillable="true">
+		<xs:annotation>
+			<xs:documentation
+				source="http://wiki.tdwg.org/twiki/bin/view/DarwinCore/PointRadiusSpatialFit"
+				xml:lang="en"/>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="FootprintWKT" type="xs:string" substitutionGroup="dwe:dwElement"
+		nillable="true">
+		<xs:annotation>
+			<xs:documentation source="http://wiki.tdwg.org/twiki/bin/view/DarwinCore/FootprintWKT"
+				xml:lang="en"/>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="FootprintSpatialFit" type="dwg:spatialFitDataType"
+		substitutionGroup="dwe:dwElement" nillable="true">
+		<xs:annotation>
+			<xs:documentation
+				source="http://wiki.tdwg.org/twiki/bin/view/DarwinCore/FootprintSpatialFit"
+				xml:lang="en"/>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="VerbatimCoordinates" type="xs:string" substitutionGroup="dwe:dwElement"
+		nillable="true">
+		<xs:annotation>
+			<xs:documentation
+				source="http://wiki.tdwg.org/twiki/bin/view/DarwinCore/VerbatimCoordinates"
+				xml:lang="en"/>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="VerbatimLatitude" type="xs:string" substitutionGroup="dwe:dwElement"
+		nillable="true">
+		<xs:annotation>
+			<xs:documentation
+				source="http://wiki.tdwg.org/twiki/bin/view/DarwinCore/VerbatimLatitude"
+				xml:lang="en"/>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="VerbatimLongitude" type="xs:string" substitutionGroup="dwe:dwElement"
+		nillable="true">
+		<xs:annotation>
+			<xs:documentation
+				source="http://wiki.tdwg.org/twiki/bin/view/DarwinCore/VerbatimLongitude"
+				xml:lang="en"/>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="VerbatimCoordinateSystem" type="xs:string" substitutionGroup="dwe:dwElement"
+		nillable="true">
+		<xs:annotation>
+			<xs:documentation
+				source="http://wiki.tdwg.org/twiki/bin/view/DarwinCore/VerbatimCoordinateSystem"
+				xml:lang="en"/>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="GeoreferenceProtocol" type="xs:string" substitutionGroup="dwe:dwElement"
+		nillable="true">
+		<xs:annotation>
+			<xs:documentation
+				source="http://wiki.tdwg.org/twiki/bin/view/DarwinCore/GeoreferenceProtocol"
+				xml:lang="en"/>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="GeoreferenceSources" type="xs:string" substitutionGroup="dwe:dwElement"
+		nillable="true">
+		<xs:annotation>
+			<xs:documentation
+				source="http://wiki.tdwg.org/twiki/bin/view/DarwinCore/GeoreferenceSources"
+				xml:lang="en"/>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="GeoreferenceVerificationStatus" type="xs:string"
+		substitutionGroup="dwe:dwElement" nillable="true">
+		<xs:annotation>
+			<xs:documentation
+				source="http://wiki.tdwg.org/twiki/bin/view/DarwinCore/GeoreferenceVerificationStatus"
+				xml:lang="en"/>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="GeoreferenceRemarks" type="xs:string" substitutionGroup="dwe:dwElement"
+		nillable="true">
+		<xs:annotation>
+			<xs:documentation
+				source="http://wiki.tdwg.org/twiki/bin/view/DarwinCore/GeoreferenceRemarks"
+				xml:lang="en"/>
+		</xs:annotation>
+	</xs:element>
+
+</xs:schema>
