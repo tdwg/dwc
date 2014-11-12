@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<outputModel xmlns:dwc="http://rs.tdwg.org/dwc/terms/" 
+             xmlns:dc="http://purl.org/dc/terms/" 
+             xmlns="http://rs.tdwg.org/tapir/1.0" 
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+             xsi:schemaLocation="http://rs.tdwg.org/tapir/1.0 http://rs.tdwg.org/tapir/1.0/schema/tapir.xsd" >
+<label>
+Output Model for Darwin Compound Sample Schema
+</label>
+<documentation>
+Output Model for Darwin Compound Sample Schema
+</documentation>
+<structure>
+<schema location="http://darwincore.googlecode.com/svn/trunk/xsd/tdwg_dwc_compound_sample.xsd"/>
+</structure>
+<indexingElement path="/DarwinRecordSet/dwc:Sample"/>
+<mapping>
+<node path="/DarwinRecordSet/dwc:Sample/dc:modified">
+<concept id="http://rs.tdwg.org/dwc/terms/modified" required="true"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dc:rights">
+<concept id="http://rs.tdwg.org/dwc/terms/rights"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dc:rightsHolder">
+<concept id="http://rs.tdwg.org/dwc/terms/rightsHolder"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dc:language">
+<concept id="http://rs.tdwg.org/dwc/terms/language"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:InstitutionCode">
+<concept id="http://rs.tdwg.org/dwc/terms/InstitutionCode" required="true"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:CollectionCode">
+<concept id="http://rs.tdwg.org/dwc/terms/CollectionCode" required="true"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:CollectionID">
+<concept id="http://rs.tdwg.org/dwc/terms/CollectionID"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SampleID">
+<concept id="http://rs.tdwg.org/dwc/terms/SampleID" required="true"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:AccessConstraints">
+<concept id="http://rs.tdwg.org/dwc/terms/AccessConstraints"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:BasisOfRecord">
+<concept id="http://rs.tdwg.org/dwc/terms/BasisOfRecord" required="true"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:InformationWithheld">
+<concept id="http://rs.tdwg.org/dwc/terms/InformationWithheld"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:Generalizations">
+<concept id="http://rs.tdwg.org/dwc/terms/Generalizations"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SampleDetails">
+<concept id="http://rs.tdwg.org/dwc/terms/SampleDetails"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SampleRemarks">
+<concept id="http://rs.tdwg.org/dwc/terms/SampleRemarks"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:CatalogNumber">
+<concept id="http://rs.tdwg.org/dwc/terms/CatalogNumber"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:CatalogNumberNumeric">
+<concept id="http://rs.tdwg.org/dwc/terms/CatalogNumberNumeric"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:IndividualID">
+<concept id="http://rs.tdwg.org/dwc/terms/IndividualID"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:IndividualCount">
+<concept id="http://rs.tdwg.org/dwc/terms/IndividualCount"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:FieldNotes">
+<concept id="http://rs.tdwg.org/dwc/terms/FieldNotes"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:Citation">
+<concept id="http://rs.tdwg.org/dwc/terms/Citation"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:Sex">
+<concept id="http://rs.tdwg.org/dwc/terms/Sex"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:LifeStage">
+<concept id="http://rs.tdwg.org/dwc/terms/LifeStage"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:ReproductiveCondition">
+<concept id="http://rs.tdwg.org/dwc/terms/ReproductiveCondition"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:EstablishmentMeans">
+<concept id="http://rs.tdwg.org/dwc/terms/EstablishmentMeans"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SampleAttributes">
+<concept id="http://rs.tdwg.org/dwc/terms/SampleAttributes"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:Preparations">
+<concept id="http://rs.tdwg.org/dwc/terms/Preparations"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:Disposition">
+<concept id="http://rs.tdwg.org/dwc/terms/Disposition"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:OtherCatalogNumbers">
+<concept id="http://rs.tdwg.org/dwc/terms/OtherCatalogNumbers"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:AssociatedMedia">
+<concept id="http://rs.tdwg.org/dwc/terms/AssociatedMedia"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:AssociatedReferences">
+<concept id="http://rs.tdwg.org/dwc/terms/AssociatedReferences"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:AssociatedSamples">
+<concept id="http://rs.tdwg.org/dwc/terms/AssociatedSamples"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:AssociatedSequences">
+<concept id="http://rs.tdwg.org/dwc/terms/AssociatedSequences"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:AssociatedTaxa">
+<concept id="http://rs.tdwg.org/dwc/terms/AssociatedTaxa"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:SamplingEventID">
+<concept id="http://rs.tdwg.org/dwc/terms/SamplingEventID"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:SamplingProtocol">
+<concept id="http://rs.tdwg.org/dwc/terms/SamplingProtocol"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:VerbatimCollectingDate">
+<concept id="http://rs.tdwg.org/dwc/terms/VerbatimCollectingDate"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:EarliestDateCollected">
+<concept id="http://rs.tdwg.org/dwc/terms/EarliestDateCollected"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:LatestDateCollected">
+<concept id="http://rs.tdwg.org/dwc/terms/LatestDateCollected"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:StartDayOfYear">
+<concept id="http://rs.tdwg.org/dwc/terms/StartDayOfYear"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:EndDayOfYear">
+<concept id="http://rs.tdwg.org/dwc/terms/EndDayOfYear"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:StartTimeOfDay">
+<concept id="http://rs.tdwg.org/dwc/terms/StartTimeOfDay"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:EndTimeOfDay">
+<concept id="http://rs.tdwg.org/dwc/terms/EndTimeOfDay"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:YearSampled">
+<concept id="http://rs.tdwg.org/dwc/terms/YearSampled"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:MonthOfYear">
+<concept id="http://rs.tdwg.org/dwc/terms/MonthOfYear"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:DayOfMonth">
+<concept id="http://rs.tdwg.org/dwc/terms/DayOfMonth"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:Habitat">
+<concept id="http://rs.tdwg.org/dwc/terms/Habitat"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:Behavior">
+<concept id="http://rs.tdwg.org/dwc/terms/Behavior"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:Collector">
+<concept id="http://rs.tdwg.org/dwc/terms/Collector"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:CollectorNumber">
+<concept id="http://rs.tdwg.org/dwc/terms/CollectorNumber"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:FieldNumber">
+<concept id="http://rs.tdwg.org/dwc/terms/FieldNumber"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:SamplingEventAttributes">
+<concept id="http://rs.tdwg.org/dwc/terms/SamplingEventAttributes"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:SamplingEventRemarks">
+<concept id="http://rs.tdwg.org/dwc/terms/SamplingEventRemarks"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:SamplingLocation/dwc:SamplingLocationID">
+<concept id="http://rs.tdwg.org/dwc/terms/SamplingLocationID"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:SamplingLocation/dwc:HigherGeographyID">
+<concept id="http://rs.tdwg.org/dwc/terms/HigherGeographyID"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:SamplingLocation/dwc:HigherGeography">
+<concept id="http://rs.tdwg.org/dwc/terms/HigherGeography"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:SamplingLocation/dwc:Continent">
+<concept id="http://rs.tdwg.org/dwc/terms/Continent"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:SamplingLocation/dwc:Waterbody">
+<concept id="http://rs.tdwg.org/dwc/terms/WaterBody"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:SamplingLocation/dwc:IslandGroup">
+<concept id="http://rs.tdwg.org/dwc/terms/IslandGroup"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:SamplingLocation/dwc:Island">
+<concept id="http://rs.tdwg.org/dwc/terms/Island"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:SamplingLocation/dwc:Country">
+<concept id="http://rs.tdwg.org/dwc/terms/Country"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:SamplingLocation/dwc:CountryCode">
+<concept id="http://rs.tdwg.org/dwc/terms/CountryCode"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:SamplingLocation/dwc:StateProvince">
+<concept id="http://rs.tdwg.org/dwc/terms/StateProvince"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:SamplingLocation/dwc:County">
+<concept id="http://rs.tdwg.org/dwc/terms/County"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:SamplingLocation/dwc:Locality">
+<concept id="http://rs.tdwg.org/dwc/terms/Locality"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:SamplingLocation/dwc:VerbatimLocality">
+<concept id="http://rs.tdwg.org/dwc/terms/VerbatimLocality"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:SamplingLocation/dwc:VerbatimElevation">
+<concept id="http://rs.tdwg.org/dwc/terms/VerbatimElevation"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:SamplingLocation/dwc:MinimumElevationInMeters">
+<concept id="http://rs.tdwg.org/dwc/terms/MinimumElevationInMeters"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:SamplingLocation/dwc:MaximumElevationInMeters">
+<concept id="http://rs.tdwg.org/dwc/terms/MaximumElevationInMeters"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:SamplingLocation/dwc:VerbatimDepth">
+<concept id="http://rs.tdwg.org/dwc/terms/VerbatimDepth"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:SamplingLocation/dwc:MinimumDepthInMeters">
+<concept id="http://rs.tdwg.org/dwc/terms/MinimumDepthInMeters"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:SamplingLocation/dwc:MaximumDepthInMeters">
+<concept id="http://rs.tdwg.org/dwc/terms/MaximumDepthInMeters"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:SamplingLocation/dwc:DistanceAboveSurfaceInMetersMinimum">
+<concept id="http://rs.tdwg.org/dwc/terms/DistanceAboveSurfaceInMetersMinimum"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:SamplingLocation/dwc:DistanceAboveSurfaceInMetersMaximum">
+<concept id="http://rs.tdwg.org/dwc/terms/DistanceAboveSurfaceInMetersMaximum"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:SamplingLocation/dwc:DecimalLatitude">
+<concept id="http://rs.tdwg.org/dwc/terms/DecimalLatitude"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:SamplingLocation/dwc:DecimalLongitude">
+<concept id="http://rs.tdwg.org/dwc/terms/DecimalLongitude"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:SamplingLocation/dwc:GeodeticDatum">
+<concept id="http://rs.tdwg.org/dwc/terms/GeodeticDatum"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:SamplingLocation/dwc:CoordinateUncertaintyInMeters">
+<concept id="http://rs.tdwg.org/dwc/terms/CoordinateUncertaintyInMeters"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:SamplingLocation/dwc:CoordinatePrecision">
+<concept id="http://rs.tdwg.org/dwc/terms/CoordinatePrecision"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:SamplingLocation/dwc:PointRadiusSpatialFit">
+<concept id="http://rs.tdwg.org/dwc/terms/PointRadiusSpatialFit"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:SamplingLocation/dwc:VerbatimCoordinates">
+<concept id="http://rs.tdwg.org/dwc/terms/VerbatimCoordinates"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:SamplingLocation/dwc:VerbatimLatitude">
+<concept id="http://rs.tdwg.org/dwc/terms/VerbatimLatitude"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:SamplingLocation/dwc:VerbatimLongitude">
+<concept id="http://rs.tdwg.org/dwc/terms/VerbatimLongitude"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:SamplingLocation/dwc:GeoreferencedBy">
+<concept id="http://rs.tdwg.org/dwc/terms/GeoreferencedBy"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:SamplingLocation/dwc:GeoreferenceProtocol">
+<concept id="http://rs.tdwg.org/dwc/terms/GeoreferenceProtocol"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:SamplingLocation/dwc:VerbatimCoordinateSystem">
+<concept id="http://rs.tdwg.org/dwc/terms/VerbatimCoordinateSystem"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:SamplingLocation/dwc:GeoreferenceSources">
+<concept id="http://rs.tdwg.org/dwc/terms/GeoreferenceSources"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:SamplingLocation/dwc:GeoreferenceVerificationStatus">
+<concept id="http://rs.tdwg.org/dwc/terms/GeoreferenceVerificationStatus"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:SamplingLocation/dwc:GeoreferenceRemarks">
+<concept id="http://rs.tdwg.org/dwc/terms/GeoreferenceRemarks"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:SamplingLocation/dwc:FootprintWKT">
+<concept id="http://rs.tdwg.org/dwc/terms/FootprintWKT"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:SamplingEvent/dwc:SamplingLocation/dwc:FootprintSpatialFit">
+<concept id="http://rs.tdwg.org/dwc/terms/FootprintSpatialFit"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:Identification/dwc:IdentificationID">
+<concept id="http://rs.tdwg.org/dwc/terms/IdentificationID"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:Identification/dwc:IdentifiedBy">
+<concept id="http://rs.tdwg.org/dwc/terms/IdentifiedBy"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:Identification/dwc:DateIdentified">
+<concept id="http://rs.tdwg.org/dwc/terms/DateIdentified"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:Identification/dwc:IdentificationReferences">
+<concept id="http://rs.tdwg.org/dwc/terms/IdentificationReferences"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:Identification/dwc:IdentificationRemarks">
+<concept id="http://rs.tdwg.org/dwc/terms/IdentificationRemarks"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:Identification/dwc:PreviousIdentifications">
+<concept id="http://rs.tdwg.org/dwc/terms/PreviousIdentifications"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:Identification/dwc:IdentificationQualifier">
+<concept id="http://rs.tdwg.org/dwc/terms/IdentificationQualifier"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:Identification/dwc:TypeStatus">
+<concept id="http://rs.tdwg.org/dwc/terms/TypeStatus"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:Identification/dwc:Taxon/dwc:TaxonID">
+<concept id="http://rs.tdwg.org/dwc/terms/TaxonID"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:Identification/dwc:Taxon/dwc:ScientificName">
+<concept id="http://rs.tdwg.org/dwc/terms/ScientificName"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:Identification/dwc:Taxon/dwc:Binomial">
+<concept id="http://rs.tdwg.org/dwc/terms/Binomial"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:Identification/dwc:Taxon/dwc:HigherTaxonID">
+<concept id="http://rs.tdwg.org/dwc/terms/HigherTaxonID"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:Identification/dwc:Taxon/dwc:HigherTaxon">
+<concept id="http://rs.tdwg.org/dwc/terms/HigherTaxon"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:Identification/dwc:Taxon/dwc:Kingdom">
+<concept id="http://rs.tdwg.org/dwc/terms/Kingdom"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:Identification/dwc:Taxon/dwc:Phylum">
+<concept id="http://rs.tdwg.org/dwc/terms/Phylum"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:Identification/dwc:Taxon/dwc:Class">
+<concept id="http://rs.tdwg.org/dwc/terms/Class"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:Identification/dwc:Taxon/dwc:Order">
+<concept id="http://rs.tdwg.org/dwc/terms/Order"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:Identification/dwc:Taxon/dwc:Family">
+<concept id="http://rs.tdwg.org/dwc/terms/Family"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:Identification/dwc:Taxon/dwc:Genus">
+<concept id="http://rs.tdwg.org/dwc/terms/Genus"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:Identification/dwc:Taxon/dwc:Subgenus">
+<concept id="http://rs.tdwg.org/dwc/terms/Subgenus"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:Identification/dwc:Taxon/dwc:SpecificEpithet">
+<concept id="http://rs.tdwg.org/dwc/terms/SpecificEpithet"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:Identification/dwc:Taxon/dwc:TaxonRank">
+<concept id="http://rs.tdwg.org/dwc/terms/TaxonRank"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:Identification/dwc:Taxon/dwc:InfraspecificEpithet">
+<concept id="http://rs.tdwg.org/dwc/terms/InfraspecificEpithet"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:Identification/dwc:Taxon/dwc:ScientificNameAuthorship">
+<concept id="http://rs.tdwg.org/dwc/terms/ScientificNameAuthorship"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:Identification/dwc:Taxon/dwc:NomenclaturalCode">
+<concept id="http://rs.tdwg.org/dwc/terms/NomenclaturalCode"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:Identification/dwc:Taxon/dwc:TaxonAccordingTo">
+<concept id="http://rs.tdwg.org/dwc/terms/TaxonAccordingTo"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:Identification/dwc:Taxon/dwc:NamePublishedIn">
+<concept id="http://rs.tdwg.org/dwc/terms/NamePublishedIn"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:Identification/dwc:Taxon/dwc:TaxonomicStatus">
+<concept id="http://rs.tdwg.org/dwc/terms/TaxonomicStatus"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:Identification/dwc:Taxon/dwc:NomenclaturalStatus">
+<concept id="http://rs.tdwg.org/dwc/terms/NomenclaturalStatus"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:Identification/dwc:Taxon/dwc:AcceptedTaxonID">
+<concept id="http://rs.tdwg.org/dwc/terms/AcceptedTaxonID"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:Identification/dwc:Taxon/dwc:AcceptedTaxon">
+<concept id="http://rs.tdwg.org/dwc/terms/AcceptedTaxon"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:Identification/dwc:Taxon/dwc:BasionymID">
+<concept id="http://rs.tdwg.org/dwc/terms/BasionymID"/>
+</node>
+<node path="/DarwinRecordSet/dwc:Sample/dwc:Identification/dwc:Taxon/dwc:Basionym">
+<concept id="http://rs.tdwg.org/dwc/terms/Basionym"/>
+</node>
+</mapping>
+</outputModel>

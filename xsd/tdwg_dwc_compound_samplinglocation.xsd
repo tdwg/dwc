@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema version="0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://rs.tdwg.org/dwc/terms/"
+    xmlns:dc="http://purl.org/dc/terms/"
+    xmlns:dwc="http://rs.tdwg.org/dwc/terms/">
+
+    <xs:import namespace="http://purl.org/dc/terms/" schemaLocation="dublin_core.xsd"/>
+    <xs:include schemaLocation="tdwg_dwcterms.xsd"/>
+
+    <xs:element name="SamplingLocation">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="dc:modified" minOccurs="0"/>
+                <xs:element ref="dc:rights" minOccurs="0"/>
+                <xs:element ref="dc:rightsHolder" minOccurs="0"/>
+                <xs:element ref="dc:language" minOccurs="0"/>
+                <xs:element ref="dwc:SamplingLocationID" minOccurs="0"/>
+              <xs:element ref="dwc:HigherGeographyID" minOccurs="0"/>
+              <xs:element ref="dwc:HigherGeography" minOccurs="0"/>
+              <xs:element ref="dwc:Continent" minOccurs="0"/>
+              <xs:element ref="dwc:Waterbody" minOccurs="0"/>
+              <xs:element ref="dwc:IslandGroup" minOccurs="0"/>
+              <xs:element ref="dwc:Island" minOccurs="0"/>
+              <xs:element ref="dwc:Country" minOccurs="0"/>
+              <xs:element ref="dwc:CountryCode" minOccurs="0"/>
+              <xs:element ref="dwc:StateProvince" minOccurs="0"/>
+              <xs:element ref="dwc:County" minOccurs="0"/>
+              <xs:element ref="dwc:Locality" minOccurs="0"/>
+              <xs:element ref="dwc:VerbatimLocality" minOccurs="0"/>
+              <xs:element ref="dwc:VerbatimElevation" minOccurs="0"/>
+              <xs:element ref="dwc:MinimumElevationInMeters" minOccurs="0"/>
+              <xs:element ref="dwc:MaximumElevationInMeters" minOccurs="0"/>
+              <xs:element ref="dwc:VerbatimDepth" minOccurs="0"/>
+              <xs:element ref="dwc:MinimumDepthInMeters" minOccurs="0"/>
+              <xs:element ref="dwc:MaximumDepthInMeters" minOccurs="0"/>
+              <xs:element ref="dwc:DistanceAboveSurfaceInMetersMinimum" minOccurs="0"/>
+              <xs:element ref="dwc:DistanceAboveSurfaceInMetersMaximum" minOccurs="0"/>
+              <xs:element ref="dwc:DecimalLatitude" minOccurs="0"/>
+              <xs:element ref="dwc:DecimalLongitude" minOccurs="0"/>
+              <xs:element ref="dwc:GeodeticDatum" minOccurs="0"/>
+              <xs:element ref="dwc:CoordinateUncertaintyInMeters" minOccurs="0"/>
+              <xs:element ref="dwc:CoordinatePrecision" minOccurs="0"/>
+              <xs:element ref="dwc:PointRadiusSpatialFit" minOccurs="0"/>
+              <xs:element ref="dwc:VerbatimCoordinates" minOccurs="0"/>
+              <xs:element ref="dwc:VerbatimLatitude" minOccurs="0"/>
+              <xs:element ref="dwc:VerbatimLongitude" minOccurs="0"/>
+              <xs:element ref="dwc:GeoreferencedBy" minOccurs="0"/>
+              <xs:element ref="dwc:GeoreferenceProtocol" minOccurs="0"/>
+              <xs:element ref="dwc:VerbatimCoordinateSystem" minOccurs="0"/>
+              <xs:element ref="dwc:GeoreferenceSources" minOccurs="0"/>
+              <xs:element ref="dwc:GeoreferenceVerificationStatus" minOccurs="0"/>
+              <xs:element ref="dwc:GeoreferenceRemarks" minOccurs="0"/>
+              <xs:element ref="dwc:FootprintWKT" minOccurs="0"/>
+              <xs:element ref="dwc:FootprintSpatialFit" minOccurs="0"/>
+              <xs:element ref="dwc:SamplingLocationRemarks" minOccurs="0"/>    
+              <xs:element ref="dwc:SamplingEvent" minOccurs="0"/>    
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="SamplingEvent">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="dc:modified" minOccurs="0"/>
+                <xs:element ref="dc:rights" minOccurs="0"/>
+                <xs:element ref="dc:rightsHolder" minOccurs="0"/>
+                <xs:element ref="dc:language" minOccurs="0"/>
+                <xs:element ref="dwc:SamplingEventID" minOccurs="0"/>
+              <xs:element ref="dwc:SamplingProtocol" minOccurs="0"/>
+              <xs:element ref="dwc:VerbatimCollectingDate" minOccurs="0"/>
+              <xs:element ref="dwc:EarliestDateCollected" minOccurs="0"/>
+              <xs:element ref="dwc:LatestDateCollected" minOccurs="0"/>
+              <xs:element ref="dwc:StartDayOfYear" minOccurs="0"/>
+              <xs:element ref="dwc:EndDayOfYear" minOccurs="0"/>
+              <xs:element ref="dwc:StartTimeOfDay" minOccurs="0"/>
+              <xs:element ref="dwc:EndTimeOfDay" minOccurs="0"/>
+              <xs:element ref="dwc:YearSampled" minOccurs="0"/>
+              <xs:element ref="dwc:MonthOfYear" minOccurs="0"/>
+              <xs:element ref="dwc:DayOfMonth" minOccurs="0"/>
+              <xs:element ref="dwc:Habitat" minOccurs="0"/>
+              <xs:element ref="dwc:Behavior" minOccurs="0"/>
+              <xs:element ref="dwc:Collector" minOccurs="0"/>
+              <xs:element ref="dwc:CollectorNumber" minOccurs="0"/>
+              <xs:element ref="dwc:FieldNumber" minOccurs="0"/>
+              <xs:element ref="dwc:SamplingEventAttributes" minOccurs="0"/>
+              <xs:element ref="dwc:SamplingEventRemarks" minOccurs="0"/>
+              <xs:element ref="dwc:Sample" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:element name="Sample">
+        <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="dc:modified"/>
+              <xs:element ref="dc:rights" minOccurs="0"/>
+              <xs:element ref="dc:rightsHolder" minOccurs="0"/>
+              <xs:element ref="dc:language" minOccurs="0"/>
+              <xs:element ref="dwc:InstitutionCode" minOccurs="0"/>
+              <xs:element ref="dwc:CollectionCode" minOccurs="0"/>
+              <xs:element ref="dwc:CollectionID" minOccurs="0"/>
+              <xs:element ref="dwc:SampleID"/>
+              <xs:element ref="dwc:BasisOfRecord" minOccurs="0"/>
+              <xs:element ref="dwc:AccessConstraints" minOccurs="0"/>
+              <xs:element ref="dwc:InformationWithheld" minOccurs="0"/>
+              <xs:element ref="dwc:Generalizations" minOccurs="0"/>
+              <xs:element ref="dwc:SampleDetails" minOccurs="0"/>
+              <xs:element ref="dwc:SampleRemarks" minOccurs="0"/>
+              <xs:element ref="dwc:CatalogNumber" minOccurs="0"/>
+              <xs:element ref="dwc:CatalogNumberNumeric" minOccurs="0"/>
+              <xs:element ref="dwc:IndividualID" minOccurs="0"/>
+              <xs:element ref="dwc:IndividualCount" minOccurs="0"/>
+              <xs:element ref="dwc:FieldNotes" minOccurs="0"/>
+              <xs:element ref="dwc:Citation" minOccurs="0"/>
+              <xs:element ref="dwc:Sex" minOccurs="0"/>
+              <xs:element ref="dwc:LifeStage" minOccurs="0"/>
+              <xs:element ref="dwc:ReproductiveCondition" minOccurs="0"/>
+              <xs:element ref="dwc:EstablishmentMeans" minOccurs="0"/>
+              <xs:element ref="dwc:SampleAttributes" minOccurs="0"/>
+              <xs:element ref="dwc:Preparations" minOccurs="0"/>
+              <xs:element ref="dwc:Disposition" minOccurs="0"/>
+              <xs:element ref="dwc:OtherCatalogNumbers" minOccurs="0"/>
+              <xs:element ref="dwc:AssociatedMedia" minOccurs="0"/>
+              <xs:element ref="dwc:AssociatedReferences" minOccurs="0"/>
+              <xs:element ref="dwc:AssociatedSamples" minOccurs="0"/>
+              <xs:element ref="dwc:AssociatedSequences" minOccurs="0"/>
+              <xs:element ref="dwc:AssociatedTaxa" minOccurs="0"/>    
+              <xs:element ref="dwc:Identification" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="Identification">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="dc:modified" minOccurs="0"/>
+                <xs:element ref="dc:rights" minOccurs="0"/>
+                <xs:element ref="dc:rightsHolder" minOccurs="0"/>
+                <xs:element ref="dc:language" minOccurs="0"/>
+                <xs:element ref="dwc:IdentificationID" minOccurs="0"/>
+              <xs:element ref="dwc:IdentifiedBy" minOccurs="0"/>
+              <xs:element ref="dwc:DateIdentified" minOccurs="0"/>
+              <xs:element ref="dwc:IdentificationReferences" minOccurs="0"/>
+              <xs:element ref="dwc:IdentificationRemarks" minOccurs="0"/>
+              <xs:element ref="dwc:PreviousIdentifications" minOccurs="0"/>
+              <xs:element ref="dwc:IdentificationQualifier" minOccurs="0"/>
+              <xs:element ref="dwc:TypeStatus" minOccurs="0"/>
+              <xs:element ref="dwc:Taxon"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="Taxon">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="dc:modified" minOccurs="0"/>
+                <xs:element ref="dc:rights" minOccurs="0"/>
+                <xs:element ref="dc:rightsHolder" minOccurs="0"/>
+                <xs:element ref="dc:language" minOccurs="0"/>
+                <xs:element ref="dwc:TaxonID" minOccurs="0"/>
+              <xs:element ref="dwc:ScientificName"/>
+              <xs:element ref="dwc:Binomial" minOccurs="0"/>
+              <xs:element ref="dwc:HigherTaxonID" minOccurs="0"/>
+              <xs:element ref="dwc:HigherTaxon" minOccurs="0"/>
+              <xs:element ref="dwc:Kingdom" minOccurs="0"/>
+              <xs:element ref="dwc:Phylum" minOccurs="0"/>
+              <xs:element ref="dwc:Class" minOccurs="0"/>
+              <xs:element ref="dwc:Order" minOccurs="0"/>
+              <xs:element ref="dwc:Family" minOccurs="0"/>
+              <xs:element ref="dwc:Genus" minOccurs="0"/>
+              <xs:element ref="dwc:Subgenus" minOccurs="0"/>
+              <xs:element ref="dwc:SpecificEpithet" minOccurs="0"/>
+              <xs:element ref="dwc:TaxonRank" minOccurs="0"/>
+              <xs:element ref="dwc:InfraspecificEpithet" minOccurs="0"/>
+              <xs:element ref="dwc:ScientificNameAuthorship" minOccurs="0"/>
+              <xs:element ref="dwc:NomenclaturalCode" minOccurs="0"/>
+              <xs:element ref="dwc:TaxonAccordingTo" minOccurs="0"/>
+              <xs:element ref="dwc:NamePublishedIn" minOccurs="0"/>
+              <xs:element ref="dwc:TaxonomicStatus" minOccurs="0"/>
+              <xs:element ref="dwc:NomenclaturalStatus" minOccurs="0"/>
+              <xs:element ref="dwc:AcceptedTaxonID" minOccurs="0"/>
+              <xs:element ref="dwc:AcceptedTaxon" minOccurs="0"/>
+              <xs:element ref="dwc:BasionymID" minOccurs="0"/>
+              <xs:element ref="dwc:Basionym" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

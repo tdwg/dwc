@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema version="0.1" 
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns="http://rs.tdwg.org/dwc/terms/xsd/archive/"
+	xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
+    targetNamespace="http://rs.tdwg.org/dwc/terms/xsd/archive/"
+    attributeFormDefault="unqualified"
+    elementFormDefault="qualified">
+	<xs:import namespace="http://www.w3.org/2001/XMLSchema" schemaLocation="http://www.w3.org/2001/XMLSchema.xsd"/>
+	<xs:import namespace="http://rs.tdwg.org/dwc/terms/" schemaLocation="http://darwincore.googlecode.com/svn/trunk/xsd/tdwg_dwcterms.xsd"/>	
+	
+	<!-- The root element of the document is an archive -->
+	<xs:element name="archive" type="archiveType"/>
+	
+	<!-- Archives contain file defitions -->
+	<xs:complexType name="archiveType">
+		<xs:sequence>
+			<xs:element name="file" type="fileType" maxOccurs="unbounded" minOccurs="1"/>
+		</xs:sequence>
+		<xs:attribute name="fileRoot" type="xs:string" use="required"/>
+		<xs:element name="relationships" type="relationshipsType"  maxOccurs="1" minOccurs="0"/>
+	</xs:complexType>
+	
+	<!-- The file within an archive defines the description and it's fields -->
+	<xs:complexType name="fileType">
+		<xs:sequence>
+			<xs:element name="field" type="fieldType" minOccurs="1" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="location" type="xs:string" use="required"/>
+		<xs:attribute name="fieldsTerminatedBy" type="xs:string" use="optional" default=","/>
+		<xs:attribute name="linesTerminatedBy" type="xs:string" use="optional" default="\n"/>
+		<xs:attribute name="fieldsOptionallyEnclosedBy" type="xs:string" use="optional" default=""/>
+		<xs:attribute name="compression" type="compressionEnum" use="optional"/>
+		<xs:attribute name="encoding" type="encodingEnum" use="optional" default="ISO-8859-1"/>
+		<xs:attribute name="ignoreHeaderLines" type="xs:integer" use="optional" default="0"/>
+		<xs:attribute name="dateFormat" type="xs:string" use="optional"/>
+		<xs:attribute name="rowType" type="xs:string" use="optional" default="http://rs.tdwg.org/dwc/terms/SimpleRecord"/>
+	</xs:complexType>
+	
+	<!-- A field represents a column within the file -->
+	<xs:complexType name="fieldType">
+		<xs:attribute name="index" type="xs:integer" use="optional"/>
+		<xs:attribute name="term" type="dwc:DarwinCoreTermsEnum" use="required"/>
+		<xs:attribute name="type" type="xs:anySimpleType" use="optional" default="xs:string"/>
+		<xs:attribute name="default" type="xs:string" use="optional"/>
+	</xs:complexType>	
+	
+	<!-- Relationships 'root' element -->
+	<xs:complexType name="relationshipsType">
+		<xs:sequence>
+			<xs:element name="relationship" type="relationshipType" maxOccurs="unbounded" minOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>	
+	
+	<!-- A relationship within a relationships has 2 files always -->
+	<xs:complexType name="relationshipType">
+		<xs:sequence>
+			<xs:element name="file" type="relationshipFileType" maxOccurs="2" minOccurs="2"/>
+		</xs:sequence>
+	</xs:complexType>	
+	
+	<!-- The file within a relationship definition specifies the location and the
+		 columns that define the 'join' between the files -->
+	<xs:complexType name="relationshipFileType">
+		<xs:attribute name="location" type="xs:string" use="required"/>
+		<xs:attribute name="index" type="xs:integer" use="required"/>
+	</xs:complexType>	
+	
+	<!-- Enumeration for supported compression types -->
+	<xs:simpleType name="compressionEnum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="GZIP"/>
+			<xs:enumeration value="ZIP"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<!-- Enumeration for supported encodings -->
+	<xs:simpleType name="encodingEnum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="windows-1252"/>
+			<xs:enumeration value="ISO-8859-1"/>
+			<xs:enumeration value="UTF-8"/>
+			<xs:enumeration value="UTF-16"/>			
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<!-- Enumeration for supported encodings -->
+	<xs:simpleType name="typeEnum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="string"/>
+			<xs:enumeration value="integer"/>
+			<xs:enumeration value="decimal"/>
+			<xs:enumeration value="date"/>
+			<xs:enumeration value="time"/>			
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

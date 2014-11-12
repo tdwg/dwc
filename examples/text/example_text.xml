@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archive xmlns="http://rs.tdwg.org/dwc/terms/xsd/archive/"
+	fileRoot="http://data.gbif.org/download/"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xsi:schemaLocation="http://rs.tdwg.org/dwc/terms/xsd/archive/ http://darwincore.googlecode.com/svn/trunk/text/tdwg_dwc_text.xsd"
+	>
+	
+	<!-- Here is an example that will define the structure of 
+		
+		 InstitutionName,DatasetName,Collector,CollectorNumber
+		 "Kew gardens, (Kew)",Plant Specimens,Tim Robertson,12,,12,20010101-12:12:01
+		 "Kew gardens, (Kew)",Plant Specimens,Markus Döring,14,,,, 
+	-->
+	<file 
+		rowType="http://rs.tdwg.org/dwc/terms/text/DarwinRecord"
+		location="occurrence-search-123255244678924570.zip"
+		fieldsTerminatedBy=","
+		linesTerminatedBy="\n"
+		fieldsOptionallyEnclosedBy="&quot;"
+		compression="gzip" 
+		encoding="utf8"
+		ignoreHeaderLines="1">
+			<field index="2" 
+				   term="http://rs.tdwg.org/dwc/terms/FieldNumber" 
+				   type="xs:string" 
+				   default="timrobertson100"/>
+			<field index="3" 
+				   term="http://rs.tdwg.org/dwc/terms/CollectorNumber" 
+				   type="xs:integer"/>
+			<field index="5" 
+				   term="http://rs.tdwg.org/dwc/terms/IndividualCount" 
+				   type="xs:integer" 
+				   default="1"/>
+			<!-- ¿ format is like this ? -->
+			<field index="6" 
+				   term="http://rs.tdwg.org/dwc/terms/EarliestDateCollected" 
+				   type="xs:dateTime" 
+				   format="YYYYMMDD-hh:mm:ss"/>
+			<!-- A constant value -->
+			<field term="http://rs.tdwg.org/dwc/terms/DatasetID"
+				   type="xs:string"
+				   default="urn:lsid:tim.lsid.tdwg.org:collections:1" />
+	</file>
+</archive>

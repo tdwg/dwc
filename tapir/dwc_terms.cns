@@ -1,0 +1,710 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cns>
+<schema namespace="http://rs.tdwg.org/dwc/terms/">
+<label>DarwinCore Terms</label>
+<alias>Latest Greatest Darwin</alias>
+<location>http://rs.tdwg.org/dwc/tems/tdwg_dwcterms.xsd</location>
+<concepts>
+<concept id="http://rs.tdwg.org/dwc/terms/modified">
+<alias>DateLastModified</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#dateTime</datatype>
+<doc>http://dublincore.org/documents/dcmi-terms/#terms-modified</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/language">
+<alias>Language</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://dublincore.org/documents/dcmi-terms/#terms-language</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/rights">
+<alias>Rights</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://dublincore.org/documents/dcmi-terms/#terms-rights</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/rightsHolder">
+<alias>RightsHolder</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://dublincore.org/documents/dcmi-terms/#terms-rightsHolder</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/DatasetID">
+<alias>DatasetID</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/DatasetID</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/InstitutionCode">
+<alias>InstitutionCode</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/InstitutionCode</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/CollectionCode">
+<alias>CollectionCode</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/CollectionCode</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/CollectionID">
+<alias>CollectionID</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/CollectionID</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/SampleID">
+<alias>SampleID</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/SampleID</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/BasisOfRecord">
+<alias>BasisOfRecord</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/BasisOfRecord</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/AccessConstraints">
+<alias>AccessConstraints</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/AccessConstraints</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/InformationWithheld">
+<alias>InformationWithheld</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/InformationWithheld</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/Generalizations">
+<alias>Generalizations</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/Generalizations</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/SampleDetails">
+<alias>SampleDetails</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/SampleDetails</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/SampleRemarks">
+<alias>SampleRemarks</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/SampleRemarks</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/CatalogNumber">
+<alias>CatalogNumber</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/CatalogNumber</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/CatalogNumberNumeric">
+<alias>CatalogNumberNumeric</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#decimal</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/CatalogNumberNumeric</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/IndividualID">
+<alias>IndividualID</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/IndividualID</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/IndividualCount">
+<alias>IndividualCount</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#decimal</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/IndividualCount</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/Citation">
+<alias>Citation</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/Citation</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/Sex">
+<alias>Sex</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/Sex</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/LifeStage">
+<alias>LifeStage</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/LifeStage</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/ReproductiveCondition">
+<alias>ReproductiveCondition</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/ReproductiveCondition</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/EstablishmentMeans">
+<alias>EstablishmentMeans</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/EstablishmentMeans</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/SampleAttributes">
+<alias>SampleAttributes</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/SampleAttributes</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/Preparations">
+<alias>Preparations</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/Preparations</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/Disposition">
+<alias>Disposition</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/Disposition</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/OtherCatalogNumbers">
+<alias>OtherCatalogNumbers</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/OtherCatalogNumbers</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/AssociatedMedia">
+<alias>AssociatedMedia</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#anyURI</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/AssociatedMedia</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/AssociatedReferences">
+<alias>AssociatedReferences</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/AssociatedReferences</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/AssociatedSamples">
+<alias>AssociatedSamples</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/AssociatedSamples</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/AssociatedSequences">
+<alias>AssociatedSequences</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/AssociatedSequences</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/AssociatedTaxa">
+<alias>AssociatedTaxa</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/AssociatedTaxa</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/SamplingEventID">
+<alias>SamplingEventID</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/SamplingEventID</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/SamplingProtocol">
+<alias>SamplingProtocol</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/SamplingProtocol</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/VerbatimCollectingDate">
+<alias>VerbatimCollectingDate</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/VerbatimCollectingDate</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/EarliestDateCollected">
+<alias>EarliestDateCollected</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/EarliestDateCollected</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/LatestDateCollected">
+<alias>LatestDateCollected</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/LatestDateCollected</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/StartDayOfYear">
+<alias>StartDayOfYear</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#decimal</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/StartDayOfYear</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/EndDayOfYear">
+<alias>EndDayOfYear</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#decimal</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/EndDayOfYear</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/StartTimeOfDay">
+<alias>StartTimeOfDay</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#decimal</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/StartTimeOfDay</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/EndTimeOfDay">
+<alias>EndTimeOfDay</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#decimal</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/EndTimeOfDay</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/YearSampled">
+<alias>YearSampled</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#decimal</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/YearSampled</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/MonthOfYear">
+<alias>MonthOfYear</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#decimal</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/MonthOfYear</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/DayOfMonth">
+<alias>DayOfMonth</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#decimal</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/DayOfMonth</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/Habitat">
+<alias>Habitat</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#boolean</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/Habitat</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/Behavior">
+<alias>Behavior</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#boolean</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/Behavior</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/Collector">
+<alias>Collector</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/Collector</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/CollectorNumber">
+<alias>CollectorNumber</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/CollectorNumber</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/FieldNumber">
+<alias>FieldNumber</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/FieldNumber</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/FieldNotes">
+<alias>FieldNotes</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/FieldNotes</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/SamplingEventAttributes">
+<alias>SamplingEventAttributes</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/SamplingEventAttributes</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/SamplingEventRemarks">
+<alias>SamplingEventRemarks</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/SamplingEventRemarks</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/SamplingLocationID">
+<alias>SamplingLocationID</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/SamplingLocationID</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/HigherGeographyID">
+<alias>HigherGeographyID</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/HigherGeographyID</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/HigherGeography">
+<alias>HigherGeography</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/HigherGeography</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/Continent">
+<alias>Continent</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/Continent</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/WaterBody">
+<alias>WaterBody</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/WaterBody</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/IslandGroup">
+<alias>IslandGroup</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/IslandGroup</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/Island">
+<alias>Island</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/Island</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/Country">
+<alias>Country</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/Country</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/CountryCode">
+<alias>CountryCode</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/CountryCode</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/StateProvince">
+<alias>StateProvince</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/StateProvince</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/County">
+<alias>County</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/County</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/Locality">
+<alias>Locality</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/Locality</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/VerbatimLocality">
+<alias>VerbatimLocality</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/VerbatimLocality</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/VerbatimElevation">
+<alias>VerbatimElevation</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/VerbatimElevation</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/MinimumElevationInMeters">
+<alias>MinimumElevationInMeters</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#double</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/MinimumElevationInMeters</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/MaximumElevationInMeters">
+<alias>MaximumElevationInMeters</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#double</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/MaximumElevationInMeters</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/VerbatimDepth">
+<alias>VerbatimDepth</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/VerbatimDepth</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/MinimumDepthInMeters">
+<alias>MinimumDepthInMeters</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#double</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/MinimumDepthInMeters</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/MaximumDepthInMeters">
+<alias>MaximumDepthInMeters</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#double</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/MaximumDepthInMeters</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/DistanceAboveSurfaceInMetersMinimum">
+<alias>DistanceAboveSurfaceInMetersMinimum</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#double</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/DistanceAboveSurfaceInMetersMinimum</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/DistanceAboveSurfaceInMetersMaximum">
+<alias>DistanceAboveSurfaceInMetersMaximum</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#double</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/DistanceAboveSurfaceInMetersMaximum</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/DecimalLatitude">
+<alias>DecimalLatitude</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#double</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/DecimalLatitude</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/DecimalLongitude">
+<alias>DecimalLongitude</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#double</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/DecimalLongitude</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/GeodeticDatum">
+<alias>GeodeticDatum</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/GeodeticDatum</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/CoordinateUncertaintyInMeters">
+<alias>CoordinateUncertaintyInMeters</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#double</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/CoordinateUncertaintyInMeters</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/CoordinatePrecision">
+<alias>CoordinatePrecision</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#double</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/CoordinatePrecision</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/PointRadiusSpatialFit">
+<alias>PointRadiusSpatialFit</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#double</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/PointRadiusSpatialFit</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/VerbatimCoordinates">
+<alias>VerbatimCoordinates</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/VerbatimCoordinates</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/VerbatimLatitude">
+<alias>VerbatimLatitude</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/VerbatimLatitude</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/VerbatimLongitude">
+<alias>VerbatimLongitude</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/VerbatimLongitude</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/GeoreferencedBy">
+<alias>GeoreferencedBy</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/GeoreferencedBy</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/GeoreferenceProtocol">
+<alias>GeoreferenceProtocol</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/GeoreferenceProtocol</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/VerbatimCoordinateSystem">
+<alias>VerbatimCoordinateSystem</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/VerbatimCoordinateSystem</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/GeoreferenceSources">
+<alias>GeoreferenceSources</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/GeoreferenceSources</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/GeoreferenceVerificationStatus">
+<alias>GeoreferenceVerificationStatus</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/GeoreferenceVerificationStatus</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/GeoreferenceRemarks">
+<alias>GeoreferenceRemarks</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/GeoreferenceRemarks</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/FootprintWKT">
+<alias>FootprintWKT</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/FootprintWKT</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/FootprintSpatialFit">
+<alias>FootprintSpatialFit</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/FootprintSpatialFit</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/SamplingLocationRemarks">
+<alias>SamplingLocationRemarks</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/SamplingLocationRemarks</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/TaxonID">
+<alias>TaxonID</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/TaxonID</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/ScientificName">
+<alias>ScientificName</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/ScientificName</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/Binomial">
+<alias>Binomial</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/Binomial</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/HigherTaxonID">
+<alias>HigherTaxonID</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/HigherTaxonID</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/HigherTaxon">
+<alias>HigherTaxon</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/HigherTaxon</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/Kingdom">
+<alias>Kingdom</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/Kingdom</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/Phylum">
+<alias>Phylum</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/Phylum</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/Class">
+<alias>Class</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/Class</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/Order">
+<alias>Order</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/Order</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/Family">
+<alias>Family</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/Family</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/Genus">
+<alias>Genus</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/Genus</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/Subgenus">
+<alias>Subgenus</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/Subgenus</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/SpecificEpithet">
+<alias>SpecificEpithet</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/SpecificEpithet</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/TaxonRank">
+<alias>TaxonRank</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/TaxonRank</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/InfraspecificEpithet">
+<alias>InfraspecificEpithet</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/InfraspecificEpithet</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/ScientificNameAuthorship">
+<alias>ScientificNameAuthorship</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/ScientificNameAuthorship</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/NomenclaturalCode">
+<alias>NomenclaturalCode</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/NomenclaturalCode</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/TaxonAccordingTo">
+<alias>TaxonAccordingTo</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/TaxonAccordingTo</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/NamePublishedIn">
+<alias>NamePublishedIn</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/NamePublishedIn</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/TaxonomicStatus">
+<alias>TaxonomicStatus</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/TaxonomicStatus</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/NomenclaturalStatus">
+<alias>NomenclaturalStatus</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/NomenclaturalStatus</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/AcceptedTaxonID">
+<alias>AcceptedTaxonID</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/AcceptedTaxonID</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/AcceptedTaxon">
+<alias>AcceptedTaxon</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/AcceptedTaxon</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/BasionymID">
+<alias>BasionymID</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/BasionymID</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/Basionym">
+<alias>Basionym</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/Basionym</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/IdentificationID">
+<alias>IdentificationID</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/IdentificationID</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/IdentifiedBy">
+<alias>IdentifiedBy</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/IdentifiedBy</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/DateIdentified">
+<alias>DateIdentified</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#dateTime</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/DateIdentified</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/IdentificationReferences">
+<alias>IdentificationReferences</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/IdentificationReferences</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/IdentificationRemarks">
+<alias>IdentificationRemarks</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/IdentificationRemarks</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/PreviousIdentifications">
+<alias>PreviousIdentifications</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/PreviousIdentifications</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/IdentificationQualifier">
+<alias>IdentificationQualifier</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/IdentificationQualifier</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/TypeStatus">
+<alias>TypeStatus</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/TypeStatus</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/RelatedResourceID">
+<alias>RelatedResourceID</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/RelatedResourceID</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/RelatedBasisOfRecord">
+<alias>RelatedBasisOfRecord</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/RelatedBasisOfRecord</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/RelationshipOfResource">
+<alias>RelationshipOfResource</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/RelationshipOfResource</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/RelationshipRemarks">
+<alias>RelationshipRemarks</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/RelationshipRemarks</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/SampleAttributeType ">
+<alias>SampleAttributeType </alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/SampleAttributeType </doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/SampleAttributeValue">
+<alias>SampleAttributeValue</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#double</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/SampleAttributeValue</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/SampleAttributeError">
+<alias>SampleAttributeError</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#double</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/SampleAttributeError</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/SampleAttributeUnit">
+<alias>SampleAttributeUnit</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/SampleAttributeUnit</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/SampleAttibuteRemarks">
+<alias>SampleAttibuteRemarks</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/SampleAttibuteRemarks</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/EventAttributeID">
+<alias>EventAttributeID</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/EventAttributeID</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/EventAttributeType">
+<alias>EventAttributeType</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/EventAttributeType</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/EventAttributeValue">
+<alias>EventAttributeValue</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#double</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/EventAttributeValue</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/EventAttributeError">
+<alias>EventAttributeError</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#double</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/EventAttributeError</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/EventAttributeUnit">
+<alias>EventAttributeUnit</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/EventAttributeUnit</doc>
+</concept>
+<concept id="http://rs.tdwg.org/dwc/terms/EventAttributeRemarks">
+<alias>EventAttributeRemarks</alias>
+<datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+<doc>http://wiki.tdwg.org/twiki/bin/view/DarwinCore/terms/EventAttributeRemarks</doc>
+</concept>
+</concepts>
+</schema>
+</cns>

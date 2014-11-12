@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DarwinRecordSet
+ xmlns="http://rs.tdwg.org/dwc/dwcrecord/"
+ xmlns:dc="http://purl.org/dc/terms/"
+ xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://rs.tdwg.org/dwc/dwcrecord/ ../../xsd/tdwg_dwc_simple.xsd">
+ <!-- http://darwincore.googlecode.com/svn/trunk/xsd/tdwg_dwc_simple.xsd -->
+ <DarwinRecord>
+  <dwc:SampleID>12345678</dwc:SampleID>
+  <dc:modified></dc:modified>
+  <dwc:CatalogNumber>few</dwc:CatalogNumber>
+  <dwc:CollectionCode></dwc:CollectionCode>
+  <dwc:InstitutionCode></dwc:InstitutionCode>
+  <dwc:BasisOfRecord>FossilSpecimen</dwc:BasisOfRecord>
+ </DarwinRecord>
+</DarwinRecordSet>

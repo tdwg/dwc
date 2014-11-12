@@ -1,0 +1,145 @@
+/** ----------------------------------------------------------------------------------
+ 	RDF styling by loic@ultimedia.com.au
+ ---------------------------------------------------------------------------------- */
+
+
+/** ----------------------------------------------------------------------------------
+ * Common HTML elements //////////////////////////////////////////////////////////////
+ ---------------------------------------------------------------------------------- */
+
+body {
+	background-color: #FFFFFF;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+body,td,th,p,div {
+	font: 12px/1.4 Verdana, Arial, Helvetica, sans-serif;
+	color: #617694;
+}
+p {
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+
+/*----------------------------------------------------   links   */
+
+a:link { color: #EC7600; text-decoration:none; }
+a:visited { color:#EC7600; text-decoration:none; }
+a:hover { color:#EC7600; text-decoration:underline; }
+a:active { color:#EC7600; text-decoration:none; }
+
+/*----------------------------------------------------   headers   */
+
+h1,h2,h3,h4,h5,h6 {
+	font: 18px/1.8 Tahoma, Tahoma, "Times New Roman", sans-serif;
+	letter-spacing:1px;
+	margin-top: 0px;
+	color: #6A9832;
+}
+h1 {
+	font-size: 22px;
+}
+h2 {
+	font-size: 20px;
+}
+
+/** ----------------------------------------------------------------------------------
+ * Main layout elements //////////////////////////////////////////////////////////////
+ ---------------------------------------------------------------------------------- */
+
+#container {
+	text-align: left;
+}
+
+/*----------------------------------------------------   page header   */
+
+#RDF-header {
+	height:89px;
+	background:#617694 url(images/headerImage_RDF.jpg) right top no-repeat;
+}
+	#logoBox {
+		width:149px;
+		height:89px;
+		float:left;
+		margin: 0;
+		background:#fff url(images/logo_RDF_bgd.gif) right bottom no-repeat;
+	}
+		#logo {
+			padding-top: 9px;
+			padding-left: 12px;
+		}
+	#RDF-header-title {
+		font: 24px/1.2 Georgia, "Times New Roman", sans-serif;
+		color: #E7F2D9;
+		margin: 0;
+		padding-top: 15px;
+		margin-left: 170px;
+	}
+
+#RDF-title-bar {
+	background:#CADDB5 url(images/RDF-titlebar-right.gif) right bottom no-repeat;
+	height:30px;
+}
+	
+/*----------------------------------------------------   main content   */
+#left-bar {
+	width: 133px;
+	float:left;
+	background:#617694 url(images/left-bar-bottom-right.gif) right bottom no-repeat;
+}
+	#left-bar-menu {
+		padding: 0px 0px 20px 10px;
+	}
+	#left-bar-menu a:link { color: #FFCC00; text-decoration:none; }
+	#left-bar-menu a:visited { color:#FFCC00; text-decoration:none; }
+	#left-bar-menu a:hover { color:#FFFFFF; text-decoration:none; }
+	#left-bar-menu a:active { color:#FFFFFF; text-decoration:none; }
+
+#RDF-main {
+	margin: 0 auto;
+	margin-top:20px;
+	margin-right:20px;
+	margin-left:150px;
+}
+
+/*----------------------------------------------------   RDF styles   */	
+
+.TopProperties{
+    border: 1px solid #617694;
+}
+.ClassProperties{
+	background-color: #FAFCF8;
+	padding:20px;
+	border: 1px solid #ddd;
+	margin-bottom:20px;
+}
+
+
+table{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+}
+	th{
+		color: white;
+		background-color: #617694;
+		vertical-align:text-top;
+	}
+	td{
+		padding: 5px;
+		border-top: 1px solid #ddd;
+		vertical-align:text-top;
+		background-color: #F0F2F4;
+	}
+.ClassProperties dl {
+	margin-left:20px;
+	padding:10px;
+	border: 1px dashed #aaa;
+	margin-bottom:20px;
+}
+	dd {
+		margin-bottom:5px;
+	}

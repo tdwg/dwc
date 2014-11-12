@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema version="0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://rs.tdwg.org/dwc/dwcrecord/"
+    xmlns:dwr="http://rs.tdwg.org/dwc/dwcrecord/"
+    xmlns:dwc="http://rs.tdwg.org/dwc/terms/">
+    <xs:import namespace="http://rs.tdwg.org/dwc/terms/" schemaLocation="tdwg_dwcterms.xsd"/>
+    
+    <xs:annotation>
+        <xs:documentation>
+            This schema defines a classic darwin core record using the new terms from namespace http://rs.tdwg.org/dwc/terms/
+            It allows every term including extensions to appear as often as needed and in any order.
+        </xs:documentation>
+    </xs:annotation>
+    
+    
+    <xs:element name="DarwinRecordSet" >
+        <xs:annotation>
+            <xs:documentation>Simple container to encode multiple darwin core records that have no notion of which class they are.
+            They can therefore represent a taxon, an observation or just a locality</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="dwr:DarwinRecord" maxOccurs="unbounded" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <!-- SAMPLE domain -->
+    <xs:element name="DarwinRecord">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element ref="dwc:anyIdentifier"/>
+                <xs:element ref="dwc:anyProperty"/>
+                <xs:group ref="dwc:DublinCoreTerms"/>
+                <xs:element ref="dwc:anyClass"/>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+    
+</xs:schema>

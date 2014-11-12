@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema version="0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://rs.tdwg.org/dwc/terms/"
+    xmlns:dwc="http://rs.tdwg.org/dwc/terms/">
+    <xs:include schemaLocation="tdwg_dwcterms.xsd"/>
+    
+    <xs:annotation>
+        <xs:documentation>
+            This schema redefines all darwin core classes to disallow compound objects, i.e. within a class no other nested class is allowed.
+            It allows properties to occurr in any order and as many times as needed.
+        </xs:documentation>
+    </xs:annotation>
+    
+
+    <!-- DATASET domain -->
+    <xs:element name="Dataset" substitutionGroup="dwc:anyClass">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element ref="dwc:anyIdentifier"/>
+                <xs:element ref="dwc:anyDatasetTerm"/>
+                <xs:group ref="dwc:anyDublinCoreTerm"/>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+    
+    
+    <!-- IDENTIFICATION domain -->
+    <xs:element name="Identification" substitutionGroup="dwc:anyClass">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element ref="dwc:anyIdentifier"/>
+                <xs:element ref="dwc:anyIdentificationTerm"/>
+                <xs:group ref="dwc:anyDublinCoreTerm"/>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+    
+    
+    <!-- TAXON domain -->
+    <xs:element name="Taxon" substitutionGroup="dwc:anyClass">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element ref="dwc:anyIdentifier"/>
+                <xs:element ref="dwc:anyTaxonTerm"/>
+                <xs:group ref="dwc:anyDublinCoreTerm"/>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+    
+    
+    <!-- SAMPLING LOCATION domain -->
+    <xs:element name="SamplingLocation" substitutionGroup="dwc:anyClass">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element ref="dwc:anyIdentifier"/>
+                <xs:element ref="dwc:anySamplingLocationTerm"/>
+                <xs:group ref="dwc:anyDublinCoreTerm"/>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>  
+    
+    
+    <!-- SAMPLE domain -->
+    <xs:element name="Sample" substitutionGroup="dwc:anyClass">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element ref="dwc:anyIdentifier"/>
+                <xs:element ref="dwc:anySampleTerm"/>
+                <xs:group ref="dwc:anyDublinCoreTerm"/>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+    
+    
+    <!-- SAMPLING EVENT domain -->
+    <xs:element name="SamplingEvent" substitutionGroup="dwc:anyClass">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element ref="dwc:anyIdentifier"/>
+                <xs:element ref="dwc:anySamplingEventTerm"/>
+                <xs:group ref="dwc:anyDublinCoreTerm"/>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+    
+    
+    
+    <!-- SAMPLE ATTRIBUTE domain -->
+    <xs:element name="SampleAttribute" substitutionGroup="dwc:anyClass">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element ref="dwc:anyIdentifier"/>
+                <xs:element ref="dwc:anySampleAttributeTerm"/>
+                <xs:group ref="dwc:anyDublinCoreTerm"/>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+    
+    
+    <!-- EVENT ATTRIBUTE domain -->
+    <xs:element name="EventAttribute" substitutionGroup="dwc:anyClass">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element ref="dwc:anyIdentifier"/>
+                <xs:element ref="dwc:anyEventAttributeTerm"/>
+                <xs:group ref="dwc:anyDublinCoreTerm"/>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+    
+
+    <!-- RELATED RESOURCE domain -->
+    <xs:element name="ResourceRelationship" substitutionGroup="dwc:anyClass">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element ref="dwc:anyIdentifier"/>
+                <xs:element ref="dwc:anyResourceRelationshipTerm"/>
+                <xs:group ref="dwc:anyDublinCoreTerm"/>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

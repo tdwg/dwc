@@ -1,0 +1,451 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=US-ASCII"/>
+<TITLE>Darwin Core Versions</TITLE>
+<LINK rel="schema.DwC" href="http://rs.tdwg.org/dwc/terms/history/versions.htm"/>
+<META name="DC.title" content="Darwin Core Terms Versions"/>
+<META name="DC.description" content="The quick reference guide to mappings from pre-standard Darwin Core versions to the recommended Darwin Core terms."/>
+<META name="DC.subject" content="biodiversity, standards"/>
+<META name="DC.creator" content="Darwin Core Task Group"/>
+<META name="DC.contributor" content="John Wieczorek (MVZ) <tuco@berkeley.edu>"/>
+<META name="DC.contributor" content="Markus Döring (GBIF) <mdoering@gbif.org>"/>
+<META name="DC.contributor" content="Renato De Giovanni (CRIA) <renato@cria.org.br>"/>
+<META name="DC.contributor" content="Tim Robertson (GBIF) <trobertson@gbif.org>"/>
+<META name="DC.contributor" content="Dave Vieglais (KUNHM) <vieglais@ku.edu>"/>
+<META name="DC.contributor" content="Stan Blum (CAS) <sblum@calacademy.org>"/>
+<META name="DC.modified" content="2009-02-12"/>
+<META name="DC.dateAccepted" content="2009-02-12"/>
+<META name="DC.format" content="text/html"/>
+<META name="DC.identifier" content="http://rs.tdwg.org/dwc/terms/history/versions/2009-02-12"/>
+<META name="DC.publisher" content="Biodiversity Information Standards TDWG"/>
+<META name="DC.rights" content=""/>
+<META name="DC.accessRights" content="public"/>
+<META name="DC.bibliographicCitation" content="Darwin Core Standard. 2009"/>
+<META name="DC.isReplacedBy" content=""/>
+<META name="DC.replaces" content="http://wiki.tdwg.org/twiki/bin/view/DarwinCore/DarwinCoreVersions"/>
+<META name="DC.language" content="en"/>
+<LINK rel="meta" href="http://www.tdwg.org/"/>
+<LINK rel="stylesheet" href="../../../DarwinCore_files/default.css" type="text/css"/>
+<SCRIPT src="../../../DarwinCore_files/default.js" type="text/javascript"></SCRIPT>
+</HEAD>
+<BODY>
+<DIV class="header">
+
+<TABLE width="100%" cellspacing="0" cellpadding="0" bgcolor="#617394">
+<TBODY><TR>
+<TD width="70"><A href="http://www.tdwg.org"><IMG src="../../../DarwinCore_files/TDWGlogo_Twiki.gif" width="150" height="70" alt="Biodiversity Information Standards (TDWG) logo"></A></TD>
+<TD width="100%" height="70" align="right" valign="top">
+</TABLE>
+
+<H1>Darwin Core Versions</H1>
+<TABLE cellspacing="0" class="docinfo">
+<TBODY>
+<TR>
+<TH>Title:</TH>
+<TD>Darwin Core Versions</TD>
+</TR>
+<TR>
+<TH>Date Issued:</TH>
+<TD>2009-02-12</TD>
+</TR>
+<TR>
+<TH>Abstract:</TH>
+<TD>This document is a quick reference for mappings between elements in pre-standard Darwin Core 
+versions and the current Darwin Core terms. For complete historical 
+term information, including version changes and details on pre-standard terms, see [<A href="../index.htm">HISTORY</A>]. 
+For a quick reference guide to the current recommended Darwin Core terms, see [<a href="../../index.htm">TERMS</A>].</TD>
+</TR>
+<TR>
+<TH>Contributors:</TH>
+<TD>John Wieczorek (MVZ)<tuco@berkeley.edu>, Markus Döring (GBIF)<mdoering@gbif.org>, Renato De Giovanni (CRIA)<renato@cria.org.br>, Tim Robertson (GBIF)<trobertson@gbif.org>, Dave Vieglais (KUNHM)<vieglais@ku.edu>, Stan Blum (CAS)<sblum@calacademy.org></TD>
+</TR>
+<TR>
+<TH>Legal:</TH>
+<TD>This document is governed by the standard legal, copyright, licensing provisions and disclaimers issued by the Taxonomic Databases Working Group.</TD>
+</TR>
+<TR>
+<TH>Part of TDWG Standard:</TH>
+<TD>***URL to DwC Standard*** goes here</TD>
+</TR>
+<TR>
+<TH>Creator:</TH>
+<TD>Darwin Core Task Group</TD>
+</TR>
+<TR>
+<TH>Identifier:</TH>
+<TD><A href="http://rs.tdwg.org/dwc/terms/history/versions/2009-02-12/">http://rs.tdwg.org/dwc/terms/history/versions/2009-02-12/</A></TD>
+</TR>
+<TR><TH>Latest Version:</TH>
+<TD><A href="http://rs.tdwg.org/dwc/terms/history/versions/">http://rs.tdwg.org/dwc/terms/history/versions/</A></TD>
+</TR>
+<TR>
+<TH>Replaces:</TH>
+<TD><A href="http://wiki.tdwg.org/twiki/bin/view/DarwinCore/DarwinCoreVersions">http://wiki.tdwg.org/twiki/bin/view/DarwinCore/DarwinCoreVersions</A></TD>
+</TR>
+<TR><TH>Replaced By:</TH>
+<TD>Not applicable</TD>
+</TR>
+<TR>
+<TH>Translations:</TH>
+<TD><A href="http://rs.tdwg.org/dwc/translations/">http://rs.tdwg.org/dwc/translations/</A></TD>
+</TR>
+<TR>
+<TH>Document Status:</TH>
+<TD>This is a TDWG Request for Comment.</TD>
+</TR>
+</TBODY></TABLE>
+
+<H2>Table of Contents</H2>
+</P><TABLE width="95%" border="0" align="center"><TBODY>
+<TR><TD width="100%">1. <a href="#introduction">Introduction</a>
+</TD></TR>
+<TR><TD width="100%">2. <a href="#references">References</a>
+</TD></TR>
+<TR><TD width="100%">3. <a href="#versioncomparison">Version Comparison</a>
+</TD></TR>
+</TBODY> </TABLE
+
+<A name="introduction" id="introduction"></A> 
+<H2>1. Introduction</H2>
+<P>Before becoming a TDWG standard, the Darwin Core was instantiated and deployed in many different
+application profiles, all of them based on XML schema. The openly developed and widely used versions 
+of the Darwin Core ([<A href="http://digir.net/schema/conceptual/darwin/2003/1.0/darwin2.xsd">CLASSIC</A>], 
+[<A href="http://digir.net/schema/conceptual/darwin/2003/1.21/darwin2.xsd">MANIS</A>], 
+[<A href="http://iobis.org/obis/obis.xsd">OBIS</A>], 
+[<A href="http://rs.tdwg.org/dwc/tdwg_dw_core.xsd">DRAFT14</A>], 
+[<A href="http://rs.tdwg.org/dwc/tdwg_dw_curatorial.xsd">CURATORIAL</A>], 
+[<A href="http://rs.tdwg.org/dwc/tdwg_dw_geospatial.xsd">GEOSPATIAL</A>]) are each compared (mapped conceptually) to the 
+current recommended Darwin Core terms [<a href="../../index.htm">TERMS</a>] in this document. Each historical version is 
+mapped in a separate table and can be referenced quickly from the index in <a href="#versioncomparison">Version Comparison</a> 
+section.
+
+<A name="references" id="references"></A> 
+<H2>2. References</H2>
+<TABLE width="95%" border="0" align="center">
+
+<TR>
+<TD width="10%"><A name="CLASSIC">[CLASSIC]</A></TD>
+<TD width="40%"><A href="http://digir.net/schema/conceptual/darwin/2003/1.0/darwin2.xsd">http://digir.net/schema/conceptual/darwin/2003/1.0/darwin2.xsd</A></TD>
+<TD width="50%">Darwin Core 1.2 (Classic) schema.</TD>
+</TR>
+
+<TR>
+<TD width="10%"><A name="CURATORIAL">[CURATORIAL]</A></TD>
+<TD width="40%"><A href="http://rs.tdwg.org/dwc/tdwg_dw_curatorial.xsd">http://rs.tdwg.org/dwc/tdwg_dw_curatorial.xsd</A></TD>
+<TD width="50%">Darwin Core 1.4 Curatorial Extension schema.</TD>
+</TR>
+
+<TR>
+<TD width="10%"><A name="DRAFT14">[DRAFT14]</A></TD>
+<TD width="40%"><A href="http://rs.tdwg.org/dwc/tdwg_dw_core.xsd">http://rs.tdwg.org/dwc/tdwg_dw_core.xsd</A></TD>
+<TD width="50%">Darwin Core 1.4 schema.</TD>
+</TR>
+
+<TR>
+<TD width="10%"><A name="DWC">[DWC]</A></TD>
+<TD width="40%"><A href="../../../index.htm">http://rs.tdwg.org/dwc/</A></TD>
+<TD width="50%">An introduction to the Darwin Core Standard.</TD>
+</TR>
+
+<TR>
+<TD width="10%"><A name="GEOSPATIAL">[GEOSPATIAL]</A></TD>
+<TD width="40%"><A href="http://rs.tdwg.org/dwc/tdwg_dw_geospatial.xsd">http://rs.tdwg.org/dwc/tdwg_dw_geospatial.xsd</A></TD>
+<TD width="50%">Darwin Core 1.4 Geospatial Extension schema.</TD>
+</TR>
+
+<TR>
+<TD width="10%"><A name="MANIS">[MANIS]</A></TD>
+<TD width="40%"><A href="http://digir.net/schema/conceptual/darwin/2003/1.21/darwin2.xsd">http://digir.net/schema/conceptual/darwin/2003/1.21/darwin2.xsd</A></TD>
+<TD width="50%">Darwin Core 1.21 (MaNIS/HerpNet/ORNIS/FishNet2) schema.</TD>
+</TR>
+
+<TR>
+<TD width="10%"><A name="OBIS">[OBIS]</A></TD>
+<TD width="40%"><A href="http://iobis.org/obis/obis.xsd">http://iobis.org/obis/obis.xsd</A></TD>
+<TD width="50%">OBIS additions to Darwin Core 1.2 (Classic).</TD>
+</TR>
+
+<TR>
+<TD width="10%"><A name="TERMS">[TERMS]</A></TD>
+<TD width="40%"><A href="../../index.htm">http://rs.tdwg.org/dwc/terms/</A></TD>
+<TD width="50%">Quick reference to recommended Darwin Core terms.</TD>
+</TR>
+
+</TBODY></TABLE>
+
+<A name=versioncomparison" id="versioncomparison"></A> 
+<H2>3. Version Comparison</H2>
+<P>
+3.1 <a href="#dwcclassic">Darwin Core 1.2 (Classic)</a><br>
+3.2 <a href="#dwcmanis">Darwin Core 1.21 (MaNIS/HerpNet/ORNIS/FishNet2)</a><br>
+3.3 <a href="#dwcobis">OBIS extension</a><br>
+3.4 <a href="#dwcdraft14">Darwin Core 1.4 (Draft Standard)</a><br>
+3.5 <a href="#dwccuratorial">Darwin Core 1.4 Curatorial extension</a><br>
+3.6 <a href="#dwcgeospatial">Darwin Core 1.4 Geospatial extension</a><br>
+<P>
+
+<A name=dwcclassic" id="dwcclassic"></A> 
+<H3>3.1 Darwin Core 1.2 (Classic)</H3>
+<TABLE class="border" cellspacing="0"><TBODY>
+<TR><TH colspan="1">Darwin Core 1.2 Element</TH><TH colspan="1">Recommended Term</TH></TR>
+
+<TR><TD><a href="../index.htm#DateLastModified-2003-06-13">DateLastModified</a></TD>	<TD><a href="../index.htm#http://dublincore.org/usage/terms/history/#modified-003">dcterms:modified</a></TD>
+<TR><TD><a href="../index.htm#InstitutionCode-2003-06-13">InstitutionCode</a></TD>	<TD><a href="../index.htm#InstitutionCode-2008-11-19">InstitutionCode</a></TD>
+<TR><TD><a href="../index.htm#CollectionCode-2003-06-13">CollectionCode</a></TD>	<TD><a href="../index.htm#CollectionCode-2008-11-19">CollectionCode</a></TD>
+<TR><TD><a href="../index.htm#CatalogNumber-2003-06-13">CatalogNumber</a></TD>	<TD><a href="../index.htm#CatalogNumber-2008-11-19">CatalogNumber</a></TD>
+<TR><TD><a href="../index.htm#ScientificName-2003-06-13">ScientificName</a></TD>	<TD><a href="../index.htm#ScientificName-2008-11-19">ScientificName</a></TD>
+<TR><TD><a href="../index.htm#BasisOfRecord-2003-06-13">BasisOfRecord</a></TD>	<TD><a href="../index.htm#BasisOfRecord-2008-11-19">BasisOfRecord</a></TD>
+<TR><TD><a href="../index.htm#Kingdom-2003-06-13">Kingdom</a></TD>	<TD><a href="../index.htm#Kingdom-2008-11-19">Kingdom</a></TD>
+<TR><TD><a href="../index.htm#Phylum-2003-06-13">Phylum</a></TD>	<TD><a href="../index.htm#Phylum-2008-11-19">Phylum</a></TD>
+<TR><TD><a href="../index.htm#Class-2003-06-13">Class</a></TD>	<TD><a href="../index.htm#Class-2008-11-19">Class</a></TD>
+<TR><TD><a href="../index.htm#Order-2003-06-13">Order</a></TD>	<TD><a href="../index.htm#Order-2008-11-19">Order</a></TD>
+<TR><TD><a href="../index.htm#Family-2003-06-13">Family</a></TD>	<TD><a href="../index.htm#Family-2008-11-19">Family</a></TD>
+<TR><TD><a href="../index.htm#Genus-2003-06-13">Genus</a></TD>	<TD><a href="../index.htm#Genus-2008-11-19">Genus</a></TD>
+<TR><TD><a href="../index.htm#Species-2003-06-13">Species</a></TD>	<TD><a href="../index.htm#SpecificEpithet-2008-11-19">SpecificEpithet</a></TD>
+<TR><TD><a href="../index.htm#Subspecies-2003-06-13">Subspecies</a></TD>	<TD><a href="../index.htm#InfraspecificEpithet-2008-11-19">InfraspecificEpithet</a></TD>
+<TR><TD><a href="../index.htm#ScientificNameAuthor-2003-06-13">ScientificNameAuthor</a></TD>	<TD><a href="../index.htm#ScientificNameAuthorship-2008-11-19">ScientificNameAuthorship</a></TD>
+<TR><TD><a href="../index.htm#IdentifiedBy-2003-06-13">IdentifiedBy</a></TD>	<TD><a href="../index.htm#IdentifiedBy-2008-11-19">IdentifiedBy</a></TD>
+<TR><TD><a href="../index.htm#YearIdentified-2003-06-13">YearIdentified</a></TD>	<TD><a href="../index.htm#DateIdentified-2008-11-19">DateIdentified</a></TD>
+<TR><TD><a href="../index.htm#MonthIdentified-2003-06-13">MonthIdentified</a></TD>	<TD><a href="../index.htm#DateIdentified-2008-11-19">DateIdentified</a></TD>
+<TR><TD><a href="../index.htm#DayIdentified-2003-06-13">DayIdentified</a></TD>	<TD><a href="../index.htm#DateIdentified-2008-11-19">DateIdentified</a></TD>
+<TR><TD><a href="../index.htm#TypeStatus-2003-06-13">TypeStatus</a></TD>	<TD><a href="../index.htm#TypeStatus-2008-11-19">TypeStatus</a></TD>
+<TR><TD><a href="../index.htm#CollectorNumber-2003-06-13">CollectorNumber</a></TD>	<TD><a href="../index.htm#CollectorNumber-2008-11-19">CollectorNumber</a></TD>
+<TR><TD><a href="../index.htm#FieldNumber-2003-06-13">FieldNumber</a></TD>	<TD><a href="../index.htm#FieldNumber-2008-11-19">FieldNumber</a></TD>
+<TR><TD><a href="../index.htm#Collector-2003-06-13">Collector</a></TD>	<TD><a href="../index.htm#Collector-2008-11-19">Collector</a></TD>
+<TR><TD><a href="../index.htm#YearCollected-2003-06-13">YearCollected</a></TD>	<TD><a href="../index.htm#YearSampled-2008-11-19">YearSampled</a></TD>
+<TR><TD><a href="../index.htm#MonthCollected-2003-06-13">MonthCollected</a></TD>	<TD><a href="../index.htm#MonthOfYear-2008-11-19">MonthOfYear</a></TD>
+<TR><TD><a href="../index.htm#DayCollected-2003-06-13">DayCollected</a></TD>	<TD><a href="../index.htm#DayOfMonth-2008-11-19">DayOfMonth</a></TD>
+<TR><TD><a href="../index.htm#Country-2003-06-13">Country</a></TD>	<TD><a href="../index.htm#Country-2008-11-19">Country</a></TD>
+<TR><TD><a href="../index.htm#StateProvince-2003-06-13">StateProvince</a></TD>	<TD><a href="../index.htm#StateProvince-2008-11-19">StateProvince</a></TD>
+<TR><TD><a href="../index.htm#County-2003-06-13">County</a></TD>	<TD><a href="../index.htm#County-2008-11-19">County</a></TD>
+<TR><TD><a href="../index.htm#Locality-2003-06-13">Locality</a></TD>	<TD><a href="../index.htm#Locality-2008-11-19">Locality</a></TD>
+<TR><TD><a href="../index.htm#Longitude-2003-06-13">Longitude</a></TD>	<TD><a href="../index.htm#DecimalLongitude-2008-11-19">DecimalLongitude</a></TD>
+<TR><TD><a href="../index.htm#Latitude-2003-06-13">Latitude</a></TD>	<TD><a href="../index.htm#DecimalLatitude-2008-11-19">DecimalLatitude</a></TD>
+<TR><TD><a href="../index.htm#CoordinatePrecision-2003-06-13">CoordinatePrecision</a></TD>	<TD><a href="../index.htm#CoordinatePrecision-2008-11-19">CoordinatePrecision</a></TD>
+<TR><TD><a href="../index.htm#BoundingBox-2003-06-13">BoundingBox</a></TD>	<TD><a href="../index.htm#FootprintWKT-2008-11-19">FootprintWKT</a></TD>
+<TR><TD><a href="../index.htm#MinimumElevation-2003-06-13">MinimumElevation</a></TD>	<TD><a href="../index.htm#MinimumElevationInMeters-2008-11-19">MinimumElevationInMeters</a></TD>
+<TR><TD><a href="../index.htm#MaximumElevation-2003-06-13">MaximumElevation</a></TD>	<TD><a href="../index.htm#MaximumElevationInMeters-2008-11-19">MaximumElevationInMeters</a></TD>
+<TR><TD><a href="../index.htm#MinimumDepth-2003-06-13">MinimumDepth</a></TD>	<TD><a href="../index.htm#MinimumDepthInMeters-2008-11-19">MinimumDepthInMeters</a></TD>
+<TR><TD><a href="../index.htm#MaximumDepth-2003-06-13">MaximumDepth</a></TD>	<TD><a href="../index.htm#MaximumDepthInMeters-2008-11-19">MaximumDepthInMeters</a></TD>
+<TR><TD><a href="../index.htm#Sex-2003-06-13">Sex</a></TD>	<TD><a href="../index.htm#Sex-2008-11-19">Sex</a></TD>
+<TR><TD><a href="../index.htm#PreparationType-2003-06-13">PreparationType</a></TD>	<TD><a href="../index.htm#Preparations-2008-11-19">Preparations</a></TD>
+<TR><TD><a href="../index.htm#IndividualCount-2003-06-13">IndividualCount</a></TD>	<TD><a href="../index.htm#IndividualCount-2008-11-19">IndividualCount</a></TD>
+<TR><TD><a href="../index.htm#PreviousCatalogNumber-2003-06-13">PreviousCatalogNumber</a></TD>	<TD><a href="../index.htm#OtherCatalogNumbers-2008-11-19">OtherCatalogNumbers</a></TD>
+<TR><TD><a href="../index.htm#RelatedCatalogItem-2003-06-13">RelatedCatalogItem</a></TD>	<TD><a href="../index.htm#AssociatedSamples-2008-11-19">AssociatedSamples</a></TD>
+<TR><TD><a href="../index.htm#Notes-2003-06-13">Notes</a></TD>	<TD><a href="../index.htm#Remarks-2008-11-19">Remarks</a></TD>
+
+</TBODY></TABLE>
+
+<A name=dwcmanis" id="dwcmanis"></A> 
+<H3>3.2 Darwin Core 1.21 (MaNIS/HerpNet/ORNIS/FishNet2)</H3>
+<TABLE class="border" cellspacing="0"><TBODY>
+<TR><TH colspan="1">Darwin Core 1.21 Element</TH><TH colspan="1">Recommended Term</TH></TR>
+
+<TR><TD><a href="../index.htm#DateLastModified-2003-06-17">DateLastModified</a></TD>	<TD><a href="../index.htm#http://dublincore.org/usage/terms/history/#modified-003">dcterms:modified</a></TD>
+<TR><TD><a href="../index.htm#BasisOfRecord-2003-06-17">BasisOfRecord</a></TD>	<TD><a href="../index.htm#BasisOfRecord-2008-11-19">BasisOfRecord</a></TD>
+<TR><TD><a href="../index.htm#InstitutionCode-2003-06-17">InstitutionCode</a></TD>	<TD><a href="../index.htm#InstitutionCode-2008-11-19">InstitutionCode</a></TD>
+<TR><TD><a href="../index.htm#CollectionCode-2003-06-17">CollectionCode</a></TD>	<TD><a href="../index.htm#CollectionCode-2008-11-19">CollectionCode</a></TD>
+<TR><TD><a href="../index.htm#CatalogNumberText-2003-06-17">CatalogNumberText</a></TD>	<TD><a href="../index.htm#CatalogNumber-2008-11-19">CatalogNumber</a></TD>
+<TR><TD><a href="../index.htm#CatalogNumberNumeric-2003-06-17">CatalogNumberNumeric</a></TD>	<TD><a href="../index.htm#CatalogNumberNumeric-2008-11-19">CatalogNumberNumeric</a></TD>
+<TR><TD><a href="../index.htm#Collector-2003-06-17">Collector</a></TD>	<TD><a href="../index.htm#Collector-2008-11-19">Collector</a></TD>
+<TR><TD><a href="../index.htm#CollectorNumber-2003-06-17">CollectorNumber</a></TD>	<TD><a href="../index.htm#CollectorNumber-2008-11-19">CollectorNumber</a></TD>
+<TR><TD><a href="../index.htm#FieldNumber-2003-06-17">FieldNumber</a></TD>	<TD><a href="../index.htm#FieldNumber-2008-11-19">FieldNumber</a></TD>
+<TR><TD><a href="../index.htm#MonthCollected-2003-06-17">MonthCollected</a></TD>	<TD><a href="../index.htm#MonthOfYear-2008-11-19">MonthOfYear</a></TD>
+<TR><TD><a href="../index.htm#DayCollected-2003-06-17">DayCollected</a></TD>	<TD><a href="../index.htm#DayOfMonth-2008-11-19">DayOfMonth</a></TD>
+<TR><TD><a href="../index.htm#VerbatimCollectingDate-2003-06-17">VerbatimCollectingDate</a></TD>	<TD><a href="../index.htm#VerbatimCollectingDate-2008-11-19">VerbatimCollectingDate</a></TD>
+<TR><TD><a href="../index.htm#FieldNotes-2003-06-17">FieldNotes</a></TD>	<TD><a href="../index.htm#FieldNotes-2008-11-19">FieldNotes</a></TD>
+<TR><TD><a href="../index.htm#HigherGeography-2003-06-17">HigherGeography</a></TD>	<TD><a href="../index.htm#HigherGeography-2008-11-19">HigherGeography</a></TD>
+<TR><TD><a href="../index.htm#IslandGroup-2003-06-17">IslandGroup</a></TD>	<TD><a href="../index.htm#IslandGroup-2008-11-19">IslandGroup</a></TD>
+<TR><TD><a href="../index.htm#Island-2003-06-17">Island</a></TD>	<TD><a href="../index.htm#Island-2008-11-19">Island</a></TD>
+<TR><TD><a href="../index.htm#Country-2003-06-17">Country</a></TD>	<TD><a href="../index.htm#Country-2008-11-19">Country</a></TD>
+<TR><TD><a href="../index.htm#StateProvince-2003-06-17">StateProvince</a></TD>	<TD><a href="../index.htm#StateProvince-2008-11-19">StateProvince</a></TD>
+<TR><TD><a href="../index.htm#County-2003-06-17">County</a></TD>	<TD><a href="../index.htm#County-2008-11-19">County</a></TD>
+<TR><TD><a href="../index.htm#Locality-2003-06-17">Locality</a></TD>	<TD><a href="../index.htm#Locality-2008-11-19">Locality</a></TD>
+<TR><TD><a href="../index.htm#DecimalLatitude-2003-06-17">DecimalLatitude</a></TD>	<TD><a href="../index.htm#DecimalLatitude-2008-11-19">DecimalLatitude</a></TD>
+<TR><TD><a href="../index.htm#DecimalLongitude-2003-06-17">DecimalLongitude</a></TD>	<TD><a href="../index.htm#DecimalLongitude-2008-11-19">DecimalLongitude</a></TD>
+<TR><TD><a href="../index.htm#HorizontalDatum-2003-06-17">HorizontalDatum</a></TD>	<TD><a href="../index.htm#GeodeticDatum-2008-11-19">GeodeticDatum</a></TD>
+<TR><TD><a href="../index.htm#OriginalCoordinateSystem-2003-06-17">OriginalCoordinateSystem</a></TD>	<TD><a href="../index.htm#VerbatimCoordinateSystem-2008-11-19">VerbatimCoordinateSystem</a></TD>
+<TR><TD><a href="../index.htm#VerbatimLatitude-2003-06-17">VerbatimLatitude</a></TD>	<TD><a href="../index.htm#VerbatimLatitude-2008-11-19">VerbatimLatitude</a></TD>
+<TR><TD><a href="../index.htm#VerbatimLongitude-2003-06-17">VerbatimLongitude</a></TD>	<TD><a href="../index.htm#VerbatimLongitude-2008-11-19">VerbatimLongitude</a></TD>
+<TR><TD><a href="../index.htm#GeorefMethod-2003-06-17">GeorefMethod</a></TD>	<TD><a href="../index.htm#GeoreferenceProtocol-2008-11-19">GeoreferenceProtocol</a></TD>
+<TR><TD><a href="../index.htm#CoordinateUncertaintyInMeters-2003-06-17">CoordinateUncertaintyInMeters</a></TD>	<TD><a href="../index.htm#CoordinateUncertaintyInMeters-2008-11-19">CoordinateUncertaintyInMeters</a></TD>
+<TR><TD><a href="../index.htm#LatLongComments-2003-06-17">LatLongComments</a></TD>	<TD><a href="../index.htm#GeoreferenceRemarks-2008-11-19">GeoreferenceRemarks</a></TD>
+<TR><TD><a href="../index.htm#BoundingBox-2003-06-17">BoundingBox</a></TD>	<TD><a href="../index.htm#FootprintWKT-2008-11-19">FootprintWKT</a></TD>
+<TR><TD><a href="../index.htm#MinimumElevationInMeters-2003-06-17">MinimumElevationInMeters</a></TD>	<TD><a href="../index.htm#MinimumElevationInMeters-2008-11-19">MinimumElevationInMeters</a></TD>
+<TR><TD><a href="../index.htm#MaximumElevationInMeters-2003-06-17">MaximumElevationInMeters</a></TD>	<TD><a href="../index.htm#MaximumElevationInMeters-2008-11-19">MaximumElevationInMeters</a></TD>
+<TR><TD><a href="../index.htm#VerbatimElevation-2003-06-17">VerbatimElevation</a></TD>	<TD><a href="../index.htm#VerbatimElevation-2008-11-19">VerbatimElevation</a></TD>
+<TR><TD><a href="../index.htm#MinimumDepthInMeters-2003-06-17">MinimumDepthInMeters</a></TD>	<TD><a href="../index.htm#MinimumDepthInMeters-2008-11-19">MinimumDepthInMeters</a></TD>
+<TR><TD><a href="../index.htm#MaximumDepthInMeters-2003-06-17">MaximumDepthInMeters</a></TD>	<TD><a href="../index.htm#MaximumDepthInMeters-2008-11-19">MaximumDepthInMeters</a></TD>
+<TR><TD><a href="../index.htm#VerbatimDepth-2003-06-17">VerbatimDepth</a></TD>	<TD><a href="../index.htm#VerbatimDepth-2008-11-19">VerbatimDepth</a></TD>
+<TR><TD><a href="../index.htm#ScientificName-2003-06-17">ScientificName</a></TD>	<TD><a href="../index.htm#ScientificName-2008-11-19">ScientificName</a></TD>
+<TR><TD><a href="../index.htm#HigherTaxon-2003-06-17">HigherTaxon</a></TD>	<TD><a href="../index.htm#HigherTaxon-2008-11-19">HigherTaxon</a></TD>
+<TR><TD><a href="../index.htm#Kingdom-2003-06-17">Kingdom</a></TD>	<TD><a href="../index.htm#Kingdom-2008-11-19">Kingdom</a></TD>
+<TR><TD><a href="../index.htm#Phylum-2003-06-17">Phylum</a></TD>	<TD><a href="../index.htm#Phylum-2008-11-19">Phylum</a></TD>
+<TR><TD><a href="../index.htm#Class-2003-06-17">Class</a></TD>	<TD><a href="../index.htm#Class-2008-11-19">Class</a></TD>
+<TR><TD><a href="../index.htm#Order-2003-06-17">Order</a></TD>	<TD><a href="../index.htm#Order-2008-11-19">Order</a></TD>
+<TR><TD><a href="../index.htm#Family-2003-06-17">Family</a></TD>	<TD><a href="../index.htm#Family-2008-11-19">Family</a></TD>
+<TR><TD><a href="../index.htm#Genus-2003-06-17">Genus</a></TD>	<TD><a href="../index.htm#Genus-2008-11-19">Genus</a></TD>
+<TR><TD><a href="../index.htm#Species-2003-06-17">Species</a></TD>	<TD><a href="../index.htm#SpecificEpithet-2008-11-19">SpecificEpithet</a></TD>
+<TR><TD><a href="../index.htm#Subspecies-2003-06-17">Subspecies</a></TD>	<TD><a href="../index.htm#InfraspecificEpithet-2008-11-19">InfraspecificEpithet</a></TD>
+<TR><TD><a href="../index.htm#ScientificNameAuthor-2003-06-17">ScientificNameAuthor</a></TD>	<TD><a href="../index.htm#ScientificNameAuthorship-2008-11-19">ScientificNameAuthorship</a></TD>
+<TR><TD><a href="../index.htm#IdentifiedBy-2003-06-17">IdentifiedBy</a></TD>	<TD><a href="../index.htm#IdentifiedBy-2008-11-19">IdentifiedBy</a></TD>
+<TR><TD><a href="../index.htm#IdentificationModifier-2003-06-17">IdentificationModifier</a></TD>	<TD><a href="../index.htm#IdentificationQualifier-2008-11-19">IdentificationQualifier</a></TD>
+<TR><TD><a href="../index.htm#YearIdentified-2003-06-17">YearIdentified</a></TD>	<TD><a href="../index.htm#DateIdentified-2008-11-19">DateIdentified</a></TD>
+<TR><TD><a href="../index.htm#DayIdentified-2003-06-17">DayIdentified</a></TD>	<TD><a href="../index.htm#DateIdentified-2008-11-19">DateIdentified</a></TD>
+<TR><TD><a href="../index.htm#TypeStatus-2003-06-17">TypeStatus</a></TD>	<TD><a href="../index.htm#TypeStatus-2008-11-19">TypeStatus</a></TD>
+<TR><TD><a href="../index.htm#Sex-2003-06-17">Sex</a></TD>	<TD><a href="../index.htm#Sex-2008-11-19">Sex</a></TD>
+<TR><TD><a href="../index.htm#Preparations-2003-06-17">Preparations</a></TD>	<TD><a href="../index.htm#Preparations-2008-11-19">Preparations</a></TD>
+<TR><TD><a href="../index.htm#Tissues-2003-06-17">Tissues</a></TD>	<TD><a href="../index.htm#Preparations-2008-11-19">Preparations</a></TD>
+<TR><TD><a href="../index.htm#IndividualCount-2003-06-17">IndividualCount</a></TD>	<TD><a href="../index.htm#IndividualCount-2008-11-19">IndividualCount</a></TD>
+<TR><TD><a href="../index.htm#AgeClass-2003-06-17">AgeClass</a></TD>	<TD><a href="../index.htm#LifeStage-2008-11-19">LifeStage</a></TD>
+<TR><TD><a href="../index.htm#GenBankNum-2003-06-17">GenBankNum</a></TD>	<TD><a href="../index.htm#AssociatedSequences-2008-11-19">AssociatedSequences</a></TD>
+<TR><TD><a href="../index.htm#OtherCatalogNumbers-2003-06-17">OtherCatalogNumbers</a></TD>	<TD><a href="../index.htm#OtherCatalogNumbers-2008-11-19">OtherCatalogNumbers</a></TD>
+<TR><TD><a href="../index.htm#RelatedCatalogedItems-2003-06-17">RelatedCatalogedItems</a></TD>	<TD><a href="../index.htm#AssociatedSamples-2008-11-19">AssociatedSamples</a></TD>
+<TR><TD><a href="../index.htm#Remarks-2003-06-17">Remarks</a></TD>	<TD><a href="../index.htm#Remarks-2008-11-19">Remarks</a></TD>
+ 
+</TBODY></TABLE>
+
+<A name=dwcobis" id="dwcobis"></A> 
+<H3>3.3 OBIS extension</H3>
+<TABLE class="border" cellspacing="0"><TBODY>
+<TR><TH colspan="1">OBIS Element</TH><TH colspan="1">Recommended Term</TH></TR>
+
+<TR><TD><a href="../index.htm#RecordURL-2005-07-10">RecordURL</a></TD>	<TD><a href="../index.htm#SampleDetails-2008-11-19">SampleDetails</a></TD>
+<TR><TD><a href="../index.htm#Citation-2005-07-10">Citation</a></TD>	<TD><a href="../index.htm#Citation-2008-11-19">Citation</a></TD>
+<TR><TD><a href="../index.htm#Subgenus-2005-07-10">Subgenus</a></TD>	<TD><a href="../index.htm#Subgenus-2008-11-19">Subgenus</a></TD>
+<TR><TD><a href="../index.htm#StartYearCollected-2005-07-10">StartYearCollected</a></TD>	<TD><a href="../index.htm#EarliestDateCollected-2008-11-19">EarliestDateCollected</a></TD>
+<TR><TD><a href="../index.htm#EndYearCollected-2005-07-10">EndYearCollected</a></TD>	<TD><a href="../index.htm#LatestDateCollected-2008-11-19">LatestDateCollected</a></TD>
+<TR><TD><a href="../index.htm#StartMonthCollected-2005-07-10">StartMonthCollected</a></TD>	<TD><a href="../index.htm#EarliestDateCollected-2008-11-19">EarliestDateCollected</a></TD>
+<TR><TD><a href="../index.htm#EndMonthCollected-2005-07-10">EndMonthCollected</a></TD>	<TD><a href="../index.htm#LatestDateCollected-2008-11-19">LatestDateCollected</a></TD>
+<TR><TD><a href="../index.htm#StartDayCollected-2005-07-10">StartDayCollected</a></TD>	<TD><a href="../index.htm#EarliestDateCollected-2008-11-19">EarliestDateCollected</a></TD>
+<TR><TD><a href="../index.htm#EndDayCollected-2005-07-10">EndDayCollected</a></TD>	<TD><a href="../index.htm#LatestDateCollected-2008-11-19">LatestDateCollected</a></TD>
+<TR><TD><a href="../index.htm#StartJulianDay-2005-07-10">StartJulianDay</a></TD>	<TD><a href="../index.htm#StartDayOfYear-2008-11-19">StartDayOfYear</a></TD>
+<TR><TD><a href="../index.htm#EndJulianDay-2005-07-10">EndJulianDay</a></TD>	<TD><a href="../index.htm#EndDayOfYear-2008-11-19">EndDayOfYear</a></TD>
+<TR><TD><a href="../index.htm#StartTimeOfDay-2005-07-10">StartTimeOfDay</a></TD>	<TD><a href="../index.htm#StartTimeOfDay-2008-11-19">StartTimeOfDay</a></TD>
+<TR><TD><a href="../index.htm#EndTimeOfDay-2005-07-10">EndTimeOfDay</a></TD>	<TD><a href="../index.htm#EndTimeOfDay-2008-11-19">EndTimeOfDay</a></TD>
+<TR><TD><a href="../index.htm#StartLongitude-2005-07-10">StartLongitude</a></TD>	<TD><a href="../index.htm#FootprintWKT-2008-11-19">FootprintWKT</a></TD>
+<TR><TD><a href="../index.htm#EndLongitude-2005-07-10">EndLongitude</a></TD>	<TD><a href="../index.htm#FootprintWKT-2008-11-19">FootprintWKT</a></TD>
+<TR><TD><a href="../index.htm#StartLatitude-2005-07-10">StartLatitude</a></TD>	<TD><a href="../index.htm#FootprintWKT-2008-11-19">FootprintWKT</a></TD>
+<TR><TD><a href="../index.htm#EndLatitude-2005-07-10">EndLatitude</a></TD>	<TD><a href="../index.htm#FootprintWKT-2008-11-19">FootprintWKT</a></TD>
+<TR><TD><a href="../index.htm#Start_EndCoordinatePrecision-2005-07-10">Start_EndCoordinatePrecision</a></TD>	<TD><a href="../index.htm#CoordinateUncertaintyInMeters-2008-11-19">CoordinateUncertaintyInMeters</a></TD>
+<TR><TD><a href="../index.htm#DepthRange-2005-07-10">DepthRange</a></TD>	<TD><a href="../index.htm#VerbatimDepth-2008-11-19">VerbatimDepth</a></TD>
+<TR><TD><a href="../index.htm#Temperature-2005-07-10">Temperature</a></TD>	<TD><a href="../index.htm#SamplingEventAttributes-2008-11-19">SamplingEventAttributes</a></TD>
+<TR><TD><a href="../index.htm#Lifestage-2005-07-10">Lifestage</a></TD>	<TD><a href="../index.htm#Lifestage-2008-11-19">LifeStage</a></TD>
+<TR><TD><a href="../index.htm#ObservedIndividualCount-2005-07-10">ObservedIndividualCount</a></TD>	<TD><a href="../index.htm#IndividualCount-2008-11-19">IndividualCount</a></TD>
+<TR><TD><a href="../index.htm#SampleSize-2005-07-10">SampleSize</a></TD>	<TD><a href="../index.htm#SamplingEventAttributes-2008-11-19">SamplingEventAttributes</a></TD>
+<TR><TD><a href="../index.htm#ObservedWeight-2005-07-10">ObservedWeight</a></TD>	<TD><a href="../index.htm#SampleAttributes-2008-11-19">SampleAttributes</a></TD>
+<TR><TD><a href="../index.htm#GMLFeature-2005-07-10">GMLFeature</a></TD>	<TD><a href="../index.htm#FootprintWKT-2008-11-19">FootprintWKT</a></TD>
+
+</TBODY></TABLE>
+
+<A name=dwcdraft14" id="dwcdraft14"></A> 
+<H3>3.4 Darwin Core 1.4 (Draft Standard)</H3>
+<TABLE class="border" cellspacing="0"><TBODY>
+<TR><TH colspan="1">Darwin Core 1.4 Element</TH><TH colspan="1">Recommended Term</TH></TR>
+
+<TR><TD><a href="../index.htm#GlobalUniqueIdentifier-2007-04-17">GlobalUniqueIdentifier</a></TD>	<TD><a href="../index.htm#SampleID-2008-11-19">SampleID</a></TD>
+<TR><TD><a href="../index.htm#DateLastModified-2007-04-17">DateLastModified</a></TD>	<TD><a href="../index.htm#http://dublincore.org/usage/terms/history/#modified-003">dcterms:modified</a></TD>
+<TR><TD><a href="../index.htm#BasisOfRecord-2007-04-17">BasisOfRecord</a></TD>	<TD><a href="../index.htm#BasisOfRecord-2008-11-19">BasisOfRecord</a></TD>
+<TR><TD><a href="../index.htm#InstitutionCode-2007-04-17">InstitutionCode</a></TD>	<TD><a href="../index.htm#InstitutionCode-2008-11-19">InstitutionCode</a></TD>
+<TR><TD><a href="../index.htm#CollectionCode-2007-04-17">CollectionCode</a></TD>	<TD><a href="../index.htm#CollectionCode-2008-11-19">CollectionCode</a></TD>
+<TR><TD><a href="../index.htm#CatalogNumber-2007-04-17">CatalogNumber</a></TD>	<TD><a href="../index.htm#CatalogNumber-2008-11-19">CatalogNumber</a></TD>
+<TR><TD><a href="../index.htm#InformationWithheld-2007-04-17">InformationWithheld</a></TD>	<TD><a href="../index.htm#InformationWithheld-2008-11-19">InformationWithheld</a></TD>
+<TR><TD><a href="../index.htm#Remarks-2007-04-17">Remarks</a></TD>	<TD><a href="../index.htm#Remarks-2008-11-19">Remarks</a></TD>
+<TR><TD><a href="../index.htm#ScientificName-2007-04-17">ScientificName</a></TD>	<TD><a href="../index.htm#ScientificName-2008-11-19">ScientificName</a></TD>
+<TR><TD><a href="../index.htm#HigherTaxon-2007-04-17">HigherTaxon</a></TD>	<TD><a href="../index.htm#HigherTaxon-2008-11-19">HigherTaxon</a></TD>
+<TR><TD><a href="../index.htm#Kingdom-2007-04-17">Kingdom</a></TD>	<TD><a href="../index.htm#Kingdom-2008-11-19">Kingdom</a></TD>
+<TR><TD><a href="../index.htm#Phylum-2007-04-17">Phylum</a></TD>	<TD><a href="../index.htm#Phylum-2008-11-19">Phylum</a></TD>
+<TR><TD><a href="../index.htm#Class-2007-04-17">Class</a></TD>	<TD><a href="../index.htm#Class-2008-11-19">Class</a></TD>
+<TR><TD><a href="../index.htm#Order-2007-04-17">Order</a></TD>	<TD><a href="../index.htm#Order-2008-11-19">Order</a></TD>
+<TR><TD><a href="../index.htm#Family-2007-04-17">Family</a></TD>	<TD><a href="../index.htm#Family-2008-11-19">Family</a></TD>
+<TR><TD><a href="../index.htm#Genus-2007-04-17">Genus</a></TD>	<TD><a href="../index.htm#Genus-2008-11-19">Genus</a></TD>
+<TR><TD><a href="../index.htm#SpecificEpithet-2007-04-17">SpecificEpithet</a></TD>	<TD><a href="../index.htm#SpecificEpithet-2008-11-19">SpecificEpithet</a></TD>
+<TR><TD><a href="../index.htm#InfraspecificRank-2007-04-17">InfraspecificRank</a></TD>	<TD><a href="../index.htm#TaxonRank-2008-11-19">TaxonRank</a></TD>
+<TR><TD><a href="../index.htm#InfraspecificEpithet-2007-04-17">InfraspecificEpithet</a></TD>	<TD><a href="../index.htm#InfraspecificEpithet-2008-11-19">InfraspecificEpithet</a></TD>
+<TR><TD><a href="../index.htm#AuthorYearOfScientificName-2007-04-17">AuthorYearOfScientificName</a></TD>	<TD><a href="../index.htm#ScientificNameAuthorship-2008-11-19">ScientificNameAuthorship</a></TD>
+<TR><TD><a href="../index.htm#NomenclaturalCode-2007-04-17">NomenclaturalCode</a></TD>	<TD><a href="../index.htm#NomenclaturalCode-2008-11-19">NomenclaturalCode</a></TD>
+<TR><TD><a href="../index.htm#IdentificationQualifier-2007-04-17">IdentificationQualifier</a></TD>	<TD><a href="../index.htm#IdentificationQualifier-2008-11-19">IdentificationQualifier</a></TD>
+<TR><TD><a href="../index.htm#HigherGeography-2007-04-17">HigherGeography</a></TD>	<TD><a href="../index.htm#HigherGeography-2008-11-19">HigherGeography</a></TD>
+<TR><TD><a href="../index.htm#Continent-2007-04-17">Continent</a></TD>	<TD><a href="../index.htm#Continent-2008-11-19">Continent</a></TD>
+<TR><TD><a href="../index.htm#WaterBody-2007-04-17">WaterBody</a></TD>	<TD><a href="../index.htm#WaterBody-2008-11-19">Waterbody</a></TD>
+<TR><TD><a href="../index.htm#IslandGroup-2007-04-17">IslandGroup</a></TD>	<TD><a href="../index.htm#IslandGroup-2008-11-19">IslandGroup</a></TD>
+<TR><TD><a href="../index.htm#Island-2007-04-17">Island</a></TD>	<TD><a href="../index.htm#Island-2008-11-19">Island</a></TD>
+<TR><TD><a href="../index.htm#Country-2007-04-17">Country</a></TD>	<TD><a href="../index.htm#Country-2008-11-19">Country</a></TD>
+<TR><TD><a href="../index.htm#StateProvince-2007-04-17">StateProvince</a></TD>	<TD><a href="../index.htm#StateProvince-2008-11-19">StateProvince</a></TD>
+<TR><TD><a href="../index.htm#County-2007-04-17">County</a></TD>	<TD><a href="../index.htm#County-2008-11-19">County</a></TD>
+<TR><TD><a href="../index.htm#Locality-2007-04-17">Locality</a></TD>	<TD><a href="../index.htm#Locality-2008-11-19">Locality</a></TD>
+<TR><TD><a href="../index.htm#MinimumElevationInMeters-2007-04-17">MinimumElevationInMeters</a></TD>	<TD><a href="../index.htm#MinimumElevationInMeters-2008-11-19">MinimumElevationInMeters</a></TD>
+<TR><TD><a href="../index.htm#MaximumElevationInMeters-2007-04-17">MaximumElevationInMeters</a></TD>	<TD><a href="../index.htm#MaximumElevationInMeters-2008-11-19">MaximumElevationInMeters</a></TD>
+<TR><TD><a href="../index.htm#MinimumDepthInMeters-2007-04-17">MinimumDepthInMeters</a></TD>	<TD><a href="../index.htm#MinimumDepthInMeters-2008-11-19">MinimumDepthInMeters</a></TD>
+<TR><TD><a href="../index.htm#MaximumDepthInMeters-2007-04-17">MaximumDepthInMeters</a></TD>	<TD><a href="../index.htm#MaximumDepthInMeters-2008-11-19">MaximumDepthInMeters</a></TD>
+<TR><TD><a href="../index.htm#CollectingMethod-2007-04-17">CollectingMethod</a></TD>	<TD><a href="../index.htm#SamplingProtocol-2008-11-19">SamplingProtocol</a></TD>
+<TR><TD><a href="../index.htm#ValidDistributionFlag-2007-04-17">ValidDistributionFlag</a></TD>	<TD><a href="../index.htm#SamplingProtocol-2008-11-19">SamplingProtocol</a></TD>
+<TR><TD><a href="../index.htm#EarliestDateCollected-2007-04-17">EarliestDateCollected</a></TD>	<TD><a href="../index.htm#EarliestDateCollected-2008-11-19">EarliestDateCollected</a></TD>
+<TR><TD><a href="../index.htm#LatestDateCollected-2007-04-17">LatestDateCollected</a></TD>	<TD><a href="../index.htm#LatestDateCollected-2008-11-19">LatestDateCollected</a></TD>
+<TR><TD><a href="../index.htm#Collector-2007-04-17">Collector</a></TD>	<TD><a href="../index.htm#Collector-2008-11-19">Collector</a></TD>
+<TR><TD><a href="../index.htm#Sex-2007-04-17">Sex</a></TD>	<TD><a href="../index.htm#Sex-2008-11-19">Sex</a></TD>
+<TR><TD><a href="../index.htm#LifeStage-2007-04-17">LifeStage</a></TD>	<TD><a href="../index.htm#LifeStage-2008-11-19">LifeStage</a></TD>
+<TR><TD><a href="../index.htm#Attributes-2007-04-17">Attributes</a></TD>	<TD><a href="../index.htm#SampleAttributes-2008-11-19">SampleAttributes</a></TD>
+<TR><TD><a href="../index.htm#ImageURL-2007-04-17">ImageURL</a></TD>	<TD><a href="../index.htm#AssociatedMedia-2008-11-19">AssociatedMedia</a></TD>
+<TR><TD><a href="../index.htm#RelatedInformation-2007-04-17">RelatedInformation</a></TD>	<TD><a href="../index.htm#SampleDetails-2008-11-19">SampleDetails</a></TD>
+
+</TBODY></TABLE>
+
+<A name=dwccuratorial" id="dwccuratorial"></A> 
+<H3>3.5 Darwin Core 1.4 Curatorial extension</H3>
+<TABLE class="border" cellspacing="0"><TBODY>
+<TR><TH colspan="1">Darwin Core 1.4 Curatorial Element</TH><TH colspan="1">Recommended Term</TH></TR>
+
+<TR><TD><a href="../index.htm#CatalogNumberNumeric-2007-04-17">CatalogNumberNumeric</a></TD>	<TD><a href="../index.htm#CatalogNumberNumeric-2008-11-19">CatalogNumberNumeric</a></TD>
+<TR><TD><a href="../index.htm#IdentifiedBy-2007-04-17">IdentifiedBy</a></TD>	<TD><a href="../index.htm#IdentifiedBy-2008-11-19">IdentifiedBy</a></TD>
+<TR><TD><a href="../index.htm#DateIdentified-2007-04-17">DateIdentified</a></TD>	<TD><a href="../index.htm#DateIdentified-2008-11-19">DateIdentified</a></TD>
+<TR><TD><a href="../index.htm#CollectorNumber-2007-04-17">CollectorNumber</a></TD>	<TD><a href="../index.htm#CollectorNumber-2008-11-19">CollectorNumber</a></TD>
+<TR><TD><a href="../index.htm#FieldNumber-2007-04-17">FieldNumber</a></TD>	<TD><a href="../index.htm#FieldNumber-2008-11-19">FieldNumber</a></TD>
+<TR><TD><a href="../index.htm#FieldNotes-2007-04-17">FieldNotes</a></TD>	<TD><a href="../index.htm#FieldNotes-2008-11-19">FieldNotes</a></TD>
+<TR><TD><a href="../index.htm#VerbatimCollectingDate-2007-04-17">VerbatimCollectingDate</a></TD>	<TD><a href="../index.htm#VerbatimCollectingDate-2008-11-19">VerbatimCollectingDate</a></TD>
+<TR><TD><a href="../index.htm#VerbatimElevation-2007-04-17">VerbatimElevation</a></TD>	<TD><a href="../index.htm#VerbatimElevation-2008-11-19">VerbatimElevation</a></TD>
+<TR><TD><a href="../index.htm#VerbatimDepth-2007-04-17">VerbatimDepth</a></TD>	<TD><a href="../index.htm#VerbatimDepth-2008-11-19">VerbatimDepth</a></TD>
+<TR><TD><a href="../index.htm#Preparations-2007-04-17">Preparations</a></TD>	<TD><a href="../index.htm#Preparations-2008-11-19">Preparations</a></TD>
+<TR><TD><a href="../index.htm#TypeStatus-2007-04-17">TypeStatus</a></TD>	<TD><a href="../index.htm#TypeStatus-2008-11-19">TypeStatus</a></TD>
+<TR><TD><a href="../index.htm#GenBankNumber-2007-04-17">GenBankNumber</a></TD>	<TD><a href="../index.htm#AssociatedSequences-2008-11-19">AssociatedSequences</a></TD>
+<TR><TD><a href="../index.htm#OtherCatalogNumbers-2007-04-17">OtherCatalogNumbers</a></TD>	<TD><a href="../index.htm#OtherCatalogNumbers-2008-11-19">OtherCatalogNumbers</a></TD>
+<TR><TD><a href="../index.htm#RelatedCatalogedItems-2007-04-17">RelatedCatalogedItems</a></TD>	<TD><a href="../index.htm#AssociatedSamples-2008-11-19">AssociatedSamples</a></TD>
+<TR><TD><a href="../index.htm#Disposition-2007-04-17">Disposition</a></TD>	<TD><a href="../index.htm#Disposition-2008-11-19">Disposition</a></TD>
+<TR><TD><a href="../index.htm#IndividualCount-2007-04-17">IndividualCount</a></TD>	<TD><a href="../index.htm#IndividualCount-2008-11-19">IndividualCount</a></TD>
+
+</TBODY></TABLE>
+
+<A name=dwcgeospatial" id="dwcgeospatial"></A> 
+<H3>3.6 Darwin Core 1.4 Geospatial extension</H3>
+<TABLE class="border" cellspacing="0"><TBODY>
+<TR><TH colspan="1">Darwin Core 1.4 Geospatial Element</TH><TH colspan="1">Recommended Term</TH></TR>
+
+<TR><TD><a href="../index.htm#DecimalLatitude-2007-04-17">DecimalLatitude</a></TD>	<TD><a href="../index.htm#DecimalLatitude-2008-11-19">DecimalLatitude</a></TD>
+<TR><TD><a href="../index.htm#DecimalLongitude-2007-04-17">DecimalLongitude</a></TD>	<TD><a href="../index.htm#DecimalLongitude-2008-11-19">DecimalLongitude</a></TD>
+<TR><TD><a href="../index.htm#GeodeticDatum-2007-04-17">GeodeticDatum</a></TD>	<TD><a href="../index.htm#GeodeticDatum-2008-11-19">GeodeticDatum</a></TD>
+<TR><TD><a href="../index.htm#CoordinateUncertaintyInMeters-2007-04-17">CoordinateUncertaintyInMeters</a></TD>	<TD><a href="../index.htm#CoordinateUncertaintyInMeters-2008-11-19">CoordinateUncertaintyInMeters</a></TD>
+<TR><TD><a href="../index.htm#PointRadiusSpatialFit-2007-04-17">PointRadiusSpatialFit</a></TD>	<TD><a href="../index.htm#PointRadiusSpatialFit-2008-11-19">PointRadiusSpatialFit</a></TD>
+<TR><TD><a href="../index.htm#VerbatimCoordinates-2007-04-17">VerbatimCoordinates</a></TD>	<TD><a href="../index.htm#VerbatimCoordinates-2008-11-19">VerbatimCoordinates</a></TD>
+<TR><TD><a href="../index.htm#VerbatimLatitude-2007-04-17">VerbatimLatitude</a></TD>	<TD><a href="../index.htm#VerbatimLatitude-2008-11-19">VerbatimLatitude</a></TD>
+<TR><TD><a href="../index.htm#VerbatimLongitude-2007-04-17">VerbatimLongitude</a></TD>	<TD><a href="../index.htm#VerbatimLongitude-2008-11-19">VerbatimLongitude</a></TD>
+<TR><TD><a href="../index.htm#VerbatimCoordinateSystem-2007-04-17">VerbatimCoordinateSystem</a></TD>	<TD><a href="../index.htm#VerbatimCoordinateSystem-2008-11-19">VerbatimCoordinateSystem</a></TD>
+<TR><TD><a href="../index.htm#GeoreferenceProtocol-2007-04-17">GeoreferenceProtocol</a></TD>	<TD><a href="../index.htm#GeoreferenceProtocol-2008-11-19">GeoreferenceProtocol</a></TD>
+<TR><TD><a href="../index.htm#GeoreferenceSources-2007-04-17">GeoreferenceSources</a></TD>	<TD><a href="../index.htm#GeoreferenceSources-2008-11-19">GeoreferenceSources</a></TD>
+<TR><TD><a href="../index.htm#GeoreferenceVerificationStatus-2007-04-17">GeoreferenceVerificationStatus</a></TD>	<TD><a href="../index.htm#GeoreferenceVerificationStatus-2008-11-19">GeoreferenceVerificationStatus</a></TD>
+<TR><TD><a href="../index.htm#GeoreferenceRemarks-2007-04-17">GeoreferenceRemarks</a></TD>	<TD><a href="../index.htm#GeoreferenceRemarks-2008-11-19">GeoreferenceRemarks</a></TD>
+<TR><TD><a href="../index.htm#FootprintWKT-2007-04-17">FootprintWKT</a></TD>	<TD><a href="../index.htm#FootprintWKT-2008-11-19">FootprintWKT</a></TD>
+<TR><TD><a href="../index.htm#FootprintSpatialFit-2007-04-17">FootprintSpatialFit</a></TD>	<TD><a href="../index.htm#FootprintSpatialFit-2008-11-19">FootprintSpatialFit</a></TD>
+
+</TBODY></TABLE>
+
+<!-- Footer -->
+<hr>
+<p><a rel="license" href="http://creativecommons.org/licenses/by/3.0/us/"> 
+   <img alt="Creative Commons License" id="creative_commons_icon" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a> 
+   Copyright 2009 - Biodiversity Information Standards - TDWG - <a href="http://www.tdwg.org/about-tdwg/contact-us/">Contact Us</a><br/> 
+<p>Except where otherwise noted, content on this site is licensed under a 
+   <a rel="license" href="http://creativecommons.org/licenses/by/3.0/us/"> Creative Commons 
+   Attribution 3.0 United States License</a>.</p> 
+
+</BODY></HTML>	

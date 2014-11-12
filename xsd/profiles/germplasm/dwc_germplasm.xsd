@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema version="0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://rs.tdwg.org/dwc/terms/germplasm/"
+    xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
+    xmlns:gr="http://rs.tdwg.org/dwc/terms/germplasm/"
+    attributeFormDefault="qualified"
+    elementFormDefault="qualified"
+    >
+
+    <!--  
+        WARNING! DRAFT SCHEMA!
+        UNDER DEVELOPEMENT
+        NOT FOR PRODUCTION!
+    -->
+
+    <!-- 
+        Darwin Core Extension for genetic resources, germplasm
+        Draft version 2009, January
+    -->
+
+    <!-- 
+        What would be the most reasonable namespace to use...?
+        Suggestion: http://rs.tdwg.org/dwc/terms/germplasm/
+        Alternative example: http://www.bioversityinternational.org/dwc/terms/germplasm/
+    
+        Current GCP_Passport (1.05); ns: http://generationcp.org/schemas/gcp_passport/1.05
+        Previous GCP_Passport, ns: http://www.ipgri.org/schemas/gcp_pass/1.03
+        MCPD namespace: http://www.ipgri.cgiar.org/schemas/mcpd/1.00 (NB! IPGRI is now Bioversity)
+        
+        Relevant further information:
+        http://gcpcr.grinfo.net/include/webservices/schema-documentation.php
+        See: http://www.generationcp.org/schemas/documentation/gcp_passport_1.05.xsd.html
+        See: http://chm.grinfo.net/index.php?app=data_schema&inc=schema_list
+        See: http://wwwdev.ngb.se/portal/index.php?app=data_schema&inc=schema_list 
+    -->
+
+    <xs:import namespace="http://rs.tdwg.org/dwc/terms/" schemaLocation="http://darwincore.googlecode.com/svn/trunk/xsd/tdwg_dwcterms.xsd"/>
+    <!-- ANY GENETIC RESOURCES IDENTIFIER -->
+    <xs:element name="anyIdentifier" abstract="true" substitutionGroup="dwc:anyIdentifier"/>
+    <!-- ANY GENETIC RESOURCES PROPERTY -->
+    <xs:element name="anyProperty" abstract="true" substitutionGroup="dwc:anyProperty"/>
+    <!-- ANY GENETIC RESOURCES CLASS TERM -->
+    <xs:element name="anyClass" abstract="true" substitutionGroup="dwc:anyClass"/>
+    
+    <!-- 
+        Additional terms for the darwin core sample class 
+    -->
+
+    <!-- 
+        Note that the Enumeration defined below is not used as type definition for the relevant terms yet.
+        Conflicing with default type for generic Darwin Core schema...?
+    -->
+    <xs:simpleType name="BiologicalStatusCodeEnum">
+        <xs:restriction base="xs:int">
+            <xs:enumeration value="100"><xs:annotation><xs:documentation>Wild</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="110"><xs:annotation><xs:documentation>Natural wild</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="120"><xs:annotation><xs:documentation>Semi-matural/wild</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="200"><xs:annotation><xs:documentation>Weedy</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="300"><xs:annotation><xs:documentation>Traditional cultivar/landrace</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="400"><xs:annotation><xs:documentation>Breeding/research material</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="410"><xs:annotation><xs:documentation>Breeders line</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="411"><xs:annotation><xs:documentation>Syntetic population</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="412"><xs:annotation><xs:documentation>Hybrid</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="413"><xs:annotation><xs:documentation>Founder stock/base population</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="414"><xs:annotation><xs:documentation>Inbred line (parent of hybrid cultivar)</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="415"><xs:annotation><xs:documentation>Segregating population</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="420"><xs:annotation><xs:documentation>Genetic stock</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="500"><xs:annotation><xs:documentation>Advanced/improved cultivar</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="999"><xs:annotation><xs:documentation>Other (elaborate in remarks)</xs:documentation></xs:annotation></xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="SampleAcquisitionEnum">
+        <xs:restriction base="xs:int">
+            <xs:enumeration value="10"><xs:annotation><xs:documentation>Wild habitat</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="11"><xs:annotation><xs:documentation>Forest/woodland</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="12"><xs:annotation><xs:documentation>Shrubland</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="13"><xs:annotation><xs:documentation>Grassland</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="14"><xs:annotation><xs:documentation>Desert/tundra</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="15"><xs:annotation><xs:documentation>Aquatic habitat</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="20"><xs:annotation><xs:documentation>Farm or cultivated habitat</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="21"><xs:annotation><xs:documentation>Field</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="22"><xs:annotation><xs:documentation>Orchard</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="23"><xs:annotation><xs:documentation>Backyard, kitchen or home garden</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="24"><xs:annotation><xs:documentation>Fallow land</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="25"><xs:annotation><xs:documentation>Pasture</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="26"><xs:annotation><xs:documentation>Farm store</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="27"><xs:annotation><xs:documentation>Threshing floor</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="28"><xs:annotation><xs:documentation>Park</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="30"><xs:annotation><xs:documentation>Market or shop</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="40"><xs:annotation><xs:documentation>Institute, experimental station, research organization, genebank</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="50"><xs:annotation><xs:documentation>Seed company</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="60"><xs:annotation><xs:documentation>Weedy, distributed or ruderal habitat</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="61"><xs:annotation><xs:documentation>Roadside</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="62"><xs:annotation><xs:documentation>Field margin</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="99"><xs:annotation><xs:documentation>Other (elaborate in remarks)</xs:documentation></xs:annotation></xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="TypeOfStorageEnum">
+        <xs:restriction base="xs:int">
+            <xs:enumeration value="10"><xs:annotation><xs:documentation>Seed collection</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="11"><xs:annotation><xs:documentation>Short term</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="12"><xs:annotation><xs:documentation>Medium term</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="13"><xs:annotation><xs:documentation>Long term</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="20"><xs:annotation><xs:documentation>Field collection</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="30"><xs:annotation><xs:documentation>In vitro collection (slow growth)</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="40"><xs:annotation><xs:documentation>Cryopreserved collection</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="99"><xs:annotation><xs:documentation>Other (elaborate in remarks)</xs:documentation></xs:annotation></xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:element name="BiologicalStatusOfSample" substitutionGroup="dwc:anySampleTerm">
+        <xs:annotation>
+            <xs:documentation>
+                Biological status of sample
+                Wild, Crop wild relative (CWR), Primitive, Traditional cultivar/landrace, 
+                Breeding line, Genetic stock, Modern cultivar
+                (recommended to follow a regulated vocabulary, or preferable the SAMPSTAT code, MCPD term 20).
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="BiologicalStatusOfSampleCode" substitutionGroup="dwc:anySampleTerm">
+        <xs:annotation>
+            <xs:documentation>
+                MCPD term 20, Biological status of sample, SAMPSTAT.
+                SAMPSTAT codes distinguish wild and primitive cultivars 
+                from modern cultivars and breeding lines (material under development).
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="GermplasmIdentifier" substitutionGroup="dwc:anySampleTerm">
+        <xs:annotation>
+            <xs:documentation>
+                MCPD term: 11, Accession name, ACCENAME.
+                Either a registered or other formal designation given to the accession.
+                For example: Rheinische Vorgebirgstrauben;Emma;Avlon
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="CollectingInstituteCode" substitutionGroup="dwc:anySamplingEventTerm">
+        <xs:annotation>
+            <xs:documentation>
+                MCPD term 4, Collecting institute code, COLLCODE.
+                FAO WIEWS institute code for the collecting/gathering institute.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="AncestralData" substitutionGroup="dwc:anySampleTerm">
+        <xs:annotation>
+            <xs:documentation>
+                MCPD term 21, Ancestral data, ANCEST.
+                Information about either pedigree or other description of ancestral information.
+                For example a pedigree 'Hanna/7*Atlas//Turk/8*Atlas', 
+                or a description 'mutation found in Hanna', 'selection from Irene'.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="PurdyPedigree" substitutionGroup="dwc:anySampleTerm">
+        <xs:annotation>
+            <xs:documentation>
+                Ancestral information following the purdy pedigree format.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <!-- Type of storage can be multiple instances, perhaps need to be separate class? -->
+    <xs:element name="TypeOfStorage" substitutionGroup="dwc:anySampleTerm">
+        <xs:annotation>
+            <xs:documentation>
+                MCPD term: 27, Type of germplasm storage, STORAGE.
+                Refer to FAO/IPGRI Genebank Standards 1994 for details on storage type.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+
+    <!-- Location of Safety Duplicates as class, multiple instances -->
+    <xs:element name="LocationOfSafetyDuplication" substitutionGroup="dwc:anyClass">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="dwc:SampleID" minOccurs="1"/>
+                <xs:element ref="gr:anySafetyDuplicationTerm" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="SampleID" substitutionGroup="dwc:anyIdentifier"/>
+    <xs:element name="anySafetyDuplicationTerm" abstract="true" substitutionGroup="dwc:anyProperty"/>
+    <xs:element name="SafetyDuplicationID" substitutionGroup="dwc:anyIdentifier"/>
+    <xs:element name="SafetyDuplicationInstituteCode" substitutionGroup="gr:anySafetyDuplicationTerm">
+        <xs:annotation>
+            <xs:documentation>
+                MCPD term: 26, Location of safety duplicates, DUPLSITE.
+                FAO institute code of the institute where a safety duplicate 
+                of the accession is maintained.
+                Example: For Svalbard Global Seed Vault (SGSV), use the FAO WIEWS institute code NOR051.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="SafetyDuplicationInstitute" substitutionGroup="gr:anySafetyDuplicationTerm"/>
+    <xs:element name="SafetyDuplicationDate" substitutionGroup="gr:anySafetyDuplicationTerm"/>
+    
+    <!--
+    <xs:element name="SvalbardSafetyDuplicate" substitutionGroup="dwc:anySampleTerm">
+        <xs:annotation>
+            <xs:documentation>
+                A flag to indicate safe duplication at the Svalbard Global Seeds Vault.
+                The Svalbard Global Seed Vault (SGSV) is a second safety backup facility.
+                Seeds in safety backup at SGSV is also safe duplicated at another location.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    -->
+
+    <!-- Treaties and regulations (for PGRFA) -->
+    <!--
+        List treaty/regulation name, and issuing body, 
+        and perhaps when sample was included under the regulations
+        NB! This class desperatly need to be developed further...!
+        Example: ITPGRFA, International Treaty for Plant Genetic Resources
+        The ITPGRFA Annex 1 list the crops regulated by this treaty.
+    -->
+    <xs:element name="GermplasmTreatiesAndRegulations" substitutionGroup="dwc:anyClass">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="dwc:SampleID" minOccurs="1"/>
+                <xs:element ref="gr:anyGermplasmRegulationTerm" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="SampleID" substitutionGroup="dwc:anyIdentifier"/>
+    <xs:element name="anyGermplasmRegulationTerm" abstract="true" substitutionGroup="dwc:anyProperty"/>
+    <xs:element name="GermplasmRegulationID" substitutionGroup="dwc:anyIdentifier"/>
+    <xs:element name="TreatyOrRegulationName" substitutionGroup="gr:anyGermplasmRegulationTerm"/>
+    <xs:element name="TreatyOrRegulationGoverningBody" substitutionGroup="gr:anyGermplasmRegulationTerm">
+        
+
+    <!-- SAMPLE ACQUISITION (DONOR EVENT) -->
+    <!--
+        Will the donor/acquisition class also need the reference to the genebank institute 
+        receiving the sample to keep track of a chain of donor events 
+        proceeding the donation of the sample to the holding genebank...?
+    -->
+    <xs:element name="SampleAcquisition" substitutionGroup="dwc:anyClass">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="dwc:SampleID" minOccurs="1"/>
+                <!-- 
+                <xs:element ref="dwc:SampleID" minOccurs="1"/>
+                <xs:element ref="dwc:SampleID" minOccurs="1"/>
+                <xs:any namespace="##other" maxOccurs="unbounded" minOccurs="0"/>
+                -->
+                <xs:element ref="gr:anySampleAcquisitionTerm" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="SampleID" substitutionGroup="dwc:anyIdentifier"/>
+    <xs:element name="anySampleAcquisitionTerm" abstract="true" substitutionGroup="dwc:anyProperty"/>
+    <xs:element name="SampleAcquisitionID" substitutionGroup="dwc:anyIdentifier"/>
+    <xs:element name="DonorsSampleIdentifier" substitutionGroup="dwc:anyIdentificationTerm"/>
+    <xs:element name="SampleAcquisitionSource" substitutionGroup="gr:anySampleAcquisitionTerm">
+        <xs:annotation>
+            <xs:documentation>
+                MCPD term 22, Collecting/acquisition source, COLLSRC.
+                Coded as integer value, defined enumeration.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="SampleAcquisitionDate" substitutionGroup="gr:anySampleAcquisitionTerm">
+        <xs:annotation>
+            <xs:documentation>
+                MCPD term 12, Acquisition date, ACQDATE.
+                Date when the germplasm sample (accession) entered the genebank collection.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="DonorInstituteCode" substitutionGroup="gr:anySampleAcquisitionTerm">
+        <xs:annotation>
+            <xs:documentation>
+                MCPD term 23, Donor institute code, DONORCODE
+                FAO WIEWS institute code for the donor institute.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="DonorInstitute" substitutionGroup="gr:anySampleAcquisitionTerm">
+        <xs:annotation>
+            <xs:documentation>
+                Donor institute name.
+                If the FAO WIEWS institute code is available, this term should not be reported.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="SampleAcquisitionRemarks" substitutionGroup="gr:anySampleAcquisitionTerm"/>
+        
+        <!-- BREEDING EVENT (Cultivation event, "similar" but different from Sampling Event) -->
+        <!-- These breeder terms may not need a separate class, only one instance per sample -->
+        <xs:element name="BreedingEventGroup" substitutionGroup="dwc:anyClass">
+            <xs:complexType>
+                <xs:sequence>
+                    <xs:element ref="dwc:SampleID" minOccurs="1"/>
+                    <!-- 
+                        <xs:element ref="dwc:SampleID" minOccurs="1"/>
+                        <xs:element ref="gr:BreedingEventID" minOccurs="1"/>
+                        <xs:element ref="gr:etc..." minOccurs="1"/>
+                        <xs:any namespace="##other" maxOccurs="unbounded" minOccurs="0"/>
+                    -->
+                    <xs:element ref="gr:anyBreedingEventTerm" minOccurs="0" maxOccurs="unbounded"/>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:element>
+        <xs:element name="anyBreedingEventTerm" abstract="true" substitutionGroup="gr:anyProperty"/>
+        <xs:element name="BreedingEventID" substitutionGroup="gr:anyIdentifier"/>
+        <xs:element name="BreedersSampleIdentifier" substitutionGroup="gr:anyIdentificationTerm"/>
+        <xs:element name="BreedingYear" substitutionGroup="gr:anyBreedingEventTerm"/>
+        <xs:element name="BreederPerson" substitutionGroup="gr:anyBreedingEventTerm"/>
+        <xs:element name="BreederInstituteCode" substitutionGroup="gr:anyBreedingEventTerm">
+            <xs:annotation>
+                <xs:documentation>
+                    MCPD term 19, Breeding institute code, BREDCODE
+                    FAO WIEWS institute code for the breeding institute.
+                </xs:documentation>
+            </xs:annotation>
+        </xs:element>
+        <xs:element name="BreederInstitute" substitutionGroup="gr:anyBreedingEventTerm">
+            <xs:annotation>
+                <xs:documentation>
+                    Breeder institute name.
+                    If the FAO WIEWS institute code is available, this term should not be reported.
+                </xs:documentation>
+            </xs:annotation>
+        </xs:element>
+        <xs:element name="BreedingCountry" substitutionGroup="gr:anyBreedingEventTerm"/>
+        <xs:element name="BreedingCountryCode" substitutionGroup="gr:anyBreedingEventTerm"/>
+        <xs:element name="BreedingEventRemarks" substitutionGroup="gr:anyBreedingEventTerm"/>
+        
+        
+        <!-- Cultivar domain -->
+        <!-- FAO have developed a cultivar database -->
+        <!-- NB! Probably much better to take this out in separate extension...! -->
+        <!-- FAO to develop this extension...? -->
+        <!--
+            <xs:group name="CultivarGroup">
+            <xs:sequence>
+            <xs:choice maxOccurs="unbounded">
+            <xs:element ref="dwc:anyIdentifier"/>
+            <xs:element ref="dwc:anyClass"/>
+            <xs:element ref="gr:anyCultivarTerm" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:choice>
+            </xs:sequence>
+            </xs:group>
+            <xs:element name="anyCultivarTerm" abstract="true" substitutionGroup="cultivar:anyProperty"/>
+            <xs:element name="CultivarID" substitutionGroup="cultivar:anyIdentifier"/>
+            <xs:element name="CultivarName" substitutionGroup="cultivar:anyIdentificationTerm"/>
+        -->
+        
+</xs:schema>
