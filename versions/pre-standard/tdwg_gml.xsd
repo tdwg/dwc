@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ==================================================================== -->
+<!-- Introduction                                                         -->
+<!-- ==================================================================== -->
+<!-- TDWG Simple GML Profile                                              -->
+<!-- The following schema document contains only those element            -->
+<!-- declarations from GML that are required to validate a GML            -->
+<!-- application schema that complies with this profile.                  -->
+<!-- GML application schemas can ensure compliance with this profile by   -->
+<!-- importing this schema document rather than schema documents from the -->
+<!-- standard GML 3.1.1 distribution.                                     -->
+<!-- History:                                                             -->
+<!--   version 0.5 2007-02-14 P. Dibner, J. Wieczorek, J. de la Torre     -->
+<!-- Status:                                                              -->
+<!--   Ready for testing.                                                 -->
+<!--   CircleByCenterPoint doesn't currently validate importing only      -->
+<!--   gml:geometryPrimitives, geometryAggregates, feature. Fix this and  -->
+<!--   remove full gml import.                                            -->
+<!--   See http://wiki.tdwg.org for current status of this standard.      -->
+<!-- ==================================================================== -->
+<!-- Schema                                                               -->
+<!-- JRW: As a profile, this namespace should substitute for gml          -->
+<!-- ==================================================================== -->
+<xs:schema 
+    targetNamespace="http://rs.tdwg.org/dwc/tdwggml" 
+    xmlns="http://rs.tdwg.org/dwc/tdwggml"
+    xmlns:tdwggml="http://rs.tdwg.org/dwc/tdwggml" 
+    xmlns:gml="http://www.opengis.net/gml"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    elementFormDefault="qualified" 
+    version="0.5">
+
+    <!-- ============================================================== -->
+    <!-- Includes                                                       -->
+    <!-- ============================================================== -->
+    <xs:include schemaLocation="http://rs.tdwg.org/dwc/tdwg_basetypes.xsd"/>
+
+    <!-- ============================================================== -->
+    <!-- Imports                                                        -->
+    <!-- ============================================================== -->
+<!--    <xs:import namespace="http://www.opengis.net/gml"
+        schemaLocation="http://schemas.opengis.net/gml/3.1.1/base/gml.xsd"/>
+-->
+    <!-- JRW: Import only the minimal subset of gml required to support tdwg spatial vocabulary. -->
+    <xs:import namespace="http://www.opengis.net/gml" schemaLocation="http://schemas.opengis.net/gml/3.1.1/base/feature.xsd"/>
+    <xs:import namespace="http://www.opengis.net/gml" schemaLocation="http://schemas.opengis.net/gml/3.1.1/base/geometryPrimitives.xsd"/>
+    <xs:import namespace="http://www.opengis.net/gml" schemaLocation="http://schemas.opengis.net/gml/3.1.1/base/geometryAggregates.xsd"/>
+
+
+    <!-- ============================================================== -->
+    <!-- Elements                                                       -->
+    <!-- ============================================================== -->
+    <!-- Collection Location Geometric Properties -->
+    <!-- In the examples below, dimension is assumed to be 2 and the coordinate reference system is assumed to be understood.  However, other choices can be made per the GML specification. -->
+
+    <xs:element name="LocationPointRadius" type="pointRadiusType" substitutionGroup="gml:_Feature"
+        nillable="true"/>
+
+    <xs:element name="LocationFootprint" type="footprintType" substitutionGroup="gml:_Feature"
+        nillable="true"/>
+
+    <xs:element name="OccurrenceFeature" type="OccurrenceFeatureType"/>
+
+
+    <!-- ============================================================== -->
+    <!-- Types      			                                    -->
+    <!-- ============================================================== -->
+
+    <xs:complexType name="pointRadiusType">
+        <!-- The point-radius feature type is meant to be able to capture the point-radius 
+            representation of a place as described in Wieczorek et al. (IJGIS 18:8 pp745-767). 
+            This representation uses a point for the centroid of the geometry describing the 
+            place within which an event is thought to have occurred, and a distance from that 
+            point to the furthest point describing that underlying geometry. -->
+        <xs:complexContent>
+            <xs:extension base="gml:AbstractFeatureType">
+                <xs:sequence>
+                    <xs:element name="PointRadius" type="gml:CircleByCenterPointType" minOccurs="0"
+                        maxOccurs="1"/>
+                    <xs:element name="PointRadiusSpatialFit" type="spatialFitDataType" minOccurs="0"
+                        maxOccurs="1"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="footprintType">
+        <!-- The footprint feature type allows the location to be represented by points, lines,
+            polygons, curves, or a collection of any of these geometry types. -->
+        <xs:complexContent>
+            <xs:extension base="gml:AbstractFeatureType">
+                <xs:sequence>
+                    <xs:element name="FootprintGeometry" type="gml:MultiGeometryPropertyType"
+                        minOccurs="0" maxOccurs="1"/>
+                    <!-- The footprint geometry holds the collection of encoded geometry objects used 
+                        to describe the location. This footprint may be different from the original 
+                        spatial representation of the location. For example, the data provider may 
+                        represent point locations as the one-degree grid cell in which the point lies. -->
+                    <xs:element name="FootprintSpatialFit" type="spatialFitDataType" minOccurs="0"
+                        maxOccurs="1"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <!-- OccurrenceLocationType -->
+    <xs:complexType name="OccurrenceFeatureType">
+        <xs:complexContent>
+            <xs:extension base="gml:AbstractFeatureType">
+                <xs:sequence>
+                    <xs:element ref="LocationPointRadius" minOccurs="0"/>
+                    <xs:element ref="LocationFootprint" minOccurs="0"/>
+                    <!-- NB: any GML element substitutable for gml:_Geometry can be added to this list or in an extension. -->
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+</xs:schema>
