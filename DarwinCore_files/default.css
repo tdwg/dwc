@@ -80,7 +80,7 @@ table.menu th.cat { background: #CCC; font-size: 80%; font-weight: bold; padding
 table.menu td.item { background: #EEE; font-size: 80%; padding: 4px 6px 8px 6px; vertical-align: top; }
 
 /* Table used in Document pages - yellow background for table heads */
-table.docinfo { background: #FFC; width: 100%; margin-bottom: 10px; }
+table.docinfo { background: #FFC; width: 100%; margin-bottom: 0px; }
 table.docinfo th { text-align: right; padding: 4px; width: 15%; }
 table.docinfo td { text-align: left; padding: 4px; width: 85%; }
 
@@ -121,14 +121,65 @@ div.rss-description p { margin: 0; padding: 4px 0 6px 0; }
 .refineSearch { font: 11px/13px Arial, Helvetica, sans-serif; }
 .resultMatches { font: 12px Arial, Helvetica, sans-serif; font-weight:bold; }
 
-/* New styles */
-#tableObsolete { width: 100%; border-style: solid; border-width: 1px; border-color: #FF6; }
-#tableObsolete td.colNote { padding: 5px; vertical-align: top; background: #FFC; }
-
 /* THE DUBLIN CORE METADATA REGISTRY */
-.registry { color: #FFF; font-size: 80%; }
+#.registry { color: #FFF; font-size: 80%; }
 /* Links in header */
-a.registry { font-size: 80%; font-weight: bold; }
-a.registry:link { color: #FFF; text-decoration: none; }
-a.registry:visited { color: #FFF; text-decoration: none; }
-a.registry:hover, a.registry:visited:hover, a.registry:active { color: #FFF; text-decoration: underline; }
+#a.registry { font-size: 80%; font-weight: bold; }
+#a.registry:link { color: #FFF; text-decoration: none; }
+#a.registry:visited { color: #FFF; text-decoration: none; }
+#a.registry:hover, a.registry:visited:hover, a.registry:active { color: #FFF; text-decoration: underline; }
+
+
+/*-------------------------   menu   ----------------------------------------------------*/
+#menu {
+	width:190px;
+	float:left;
+	padding-bottom:20px;
+	background:#617694 url(../images/menu_bottom.jpg) bottom right no-repeat;
+}
+	#menu div, #menu p, #menu th, #menu td {
+		font: 14px/1.4 Tahoma, Tahoma, "Times New Roman", sans-serif;
+		color: #FFCC00;
+	}
+	#menu .level1 {
+		font: 16px/1.4 Tahoma, Tahoma, "Times New Roman", sans-serif;
+		color: #FFCC00;
+	}
+	#menu a:link { color: #FFCC00; text-decoration:none; }
+	#menu a:visited { color:#FFCC00; text-decoration:none; }
+	#menu a:hover { color:#FFFFFF; text-decoration:none; }
+	#menu a:active { color:#FFFFFF; text-decoration:none; }
+	#menu .highlighted a:link { color: #FFFFFF; text-decoration:none; }
+	#menu .highlighted a:visited { color:#FFFFFF; text-decoration:none; }
+	#menu .highlighted a:hover { color:#FFFFFF; text-decoration:none; }
+	#menu .highlighted a:active { color:#FFFFFF; text-decoration:none; }
+	
+	.topMenu {
+		margin:0;
+		padding:0;
+		margin-left:8px;
+	}
+	.subMenu {
+		margin:0;
+		padding:0;
+		margin-left: 2px;
+		padding-left: 10px;
+		margin-bottom:2px;
+		border-left:1px solid #999999;
+	}
+	.subSubMenu {
+		margin:0;
+		padding:0;
+		margin-left: 2px;
+		padding-left: 20px;
+		margin-bottom:2px;
+		border-left:3px solid #999999;
+	}
+	.menuItem {
+		margin:0;
+		padding:0;
+	}
+	
+HR.sub-divider {
+	BORDER-RIGHT: 0px; BORDER-TOP: #aaa 1px dashed; MARGIN: 3px 15px 2px 4px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px; HEIGHT: 1px
+}

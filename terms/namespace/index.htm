@@ -5,25 +5,23 @@
 <TITLE>Darwin Core Namespace Policy</TITLE>
 <LINK rel="schema.DwC" href="http://rs.tdwg.org/dwc/terms/namespacepolicy.htm"/>
 <META name="DC.title" content="Darwin Core Namespace Policy"/>
-<META name="DC.description" content="This document is most recent version of the Darwin Core Namespace Policy"/>
+<META name="DC.description" content="This document describes the mechanisms for adaptation of the Darwin Core terms."/>
 <META name="DC.subject" content="biodiversity, standards"/>
 <META name="DC.creator" content="Darwin Core Task Group"/>
-<META name="DC.contributor" content="John Wieczorek (MVZ) &lt;tuco@berkeley.edu&gt;"/>
-<META name="DC.contributor" content="Markus Döring (GBIF) &lt;mdoering@gbif.org&gt;"/>
-<META name="DC.contributor" content="Renato De Giovanni (CRIA) &lt;renato@cria.org.br&gt;"/>
-<META name="DC.contributor" content="Tim Robertson (GBIF) &lt;trobertson@gbif.org&gt;"/>
-<META name="DC.contributor" content="Dave Vieglais (KUNHM) &lt;vieglais@ku.edu&gt;"/>
-<META name="DC.contributor" content="Stan Blum (CAS) &lt;sblum@calacademy.org&gt;"/>
-<META name="DC.modified" content="2009-02-20"/>
+<META name="DC.contributor" content="John Wieczorek (MVZ)"/>
+<META name="DC.contributor" content="Markus Döring (GBIF)"/>
+<META name="DC.contributor" content="Renato De Giovanni (CRIA)"/>
+<META name="DC.contributor" content="Tim Robertson (GBIF)"/>
+<META name="DC.contributor" content="Dave Vieglais (KUNHM)"/>
+<META name="DC.modified" content="2009-04-29"/>
 <META name="DC.dateAccepted" content="2009-02-12"/>
 <META name="DC.format" content="text/html"/>
-<META name="DC.identifier" content="http://rs.tdwg.org/dwc/2009-02-20/namespace"/>
+<META name="DC.identifier" content="http://rs.tdwg.org/dwc/2009-04-29/namespace"/>
+<META name="DC.replaces" content="http://rs.tdwg.org/dwc/2009-02-20/terms/namespace/"/>
 <META name="DC.publisher" content="Biodiversity Information Standards TDWG"/>
 <META name="DC.rights" content=""/>
 <META name="DC.accessRights" content="public"/>
 <META name="DC.bibliographicCitation" content="Darwin Core Namespace Policy. 2009"/>
-<META name="DC.isReplacedBy" content=""/>
-<META name="DC.replaces" content=""/>
 <META name="DC.language" content="en"/>
 <LINK rel="meta" href="http://www.tdwg.org/"/>
 <LINK rel="stylesheet" href="../../DarwinCore_files/default.css" type="text/css"/>
@@ -32,13 +30,43 @@
 <BODY>
 <DIV class="header">
 
-<TABLE width="100%" cellspacing="0" cellpadding="0" bgcolor="#617394">
-<TBODY><TR>
-<TD width="70"><A href="http://www.tdwg.org"><IMG src="../../DarwinCore_files/TDWGlogo_Twiki.gif" width="150" height="70" alt="Biodiversity Information Standards (TDWG) logo"></A></TD>
-<TD width="100%" height="70" align="right" valign="top"></TD>
-</TABLE>
+<TABLE width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#617394"><TBODY>
+<TD><A href="http://www.tdwg.org"><IMG src="../../DarwinCore_files/TDWGlogo_Twiki.gif" width="148" height="89" alt="Biodiversity Information Standards (TDWG) logo"></A></TD>
+<TD width="100%" height="100" align="right" valign="top">
+</TBODY></TABLE>
 
-<H1>Darwin Core Namespace Policy</H1>
+<TABLE width="100%" cellspacing="0" cellpadding="0" border="0">
+  <TBODY>
+    <TR>
+      <TD width="15%" cellspacing="0" cellpadding="0" bgcolor="#617394">
+        <div id="menu">
+          <div id="nav" class="topMenu">
+	    <div class="menuItem level1"><a href="../../index.htm" onfocus="blurLink(this);">Introduction</a></div>
+<!--	    <div class="menuItem"><a href="../../index.htm#glossary" onfocus="blurLink(this);">Glossary</a></div> -->
+	    <div class="subMenu"><div class="menuItem"><a href="../../index.htm#references" onfocus="blurLink(this);">References</a></div></div>
+	    <div class="menuItem level1"><a href="../index.htm" onfocus="blurLink(this);">Quick Reference Guide</a></div>
+	    <div class="menuItem level1"><a href="../simple/index.htm" onfocus="blurLink(this);">Simple Darwin Core</a></div>
+	    <div class="menuItem level1"><a href="../type-vocabulary/index.htm" onfocus="blurLink(this);">Type Vocabulary</a></div>
+	    <div class="separator"><hr/></div>
+	    <div class="menuItem level1 highlighted"><a href="../namespace/index.htm" onfocus="blurLink(this);">Namespace Policy</a></div>
+	    <div class="subMenu"><div class="menuItem"><a href="./index.htm#introduction" onfocus="blurLink(this);">Introduction</a></div></div>
+	    <div class="subMenu"><div class="menuItem"><a href="./index.htm#namespaceuris" onfocus="blurLink(this);">Namespace URIs</a></div></div>
+	    <div class="subMenu"><div class="menuItem"><a href="./index.htm#classesofchanges" onfocus="blurLink(this);">Term Change Policy</a></div></div>
+	    <div class="subMenu"><div class="menuItem"><a href="./index.htm#persistence" onfocus="blurLink(this);">Persistence Policy</a></div></div>
+	    <div class="menuItem level1"><a href="../guides/xml/index.htm" onfocus="blurLink(this);">XML Guide</a></div>
+	    <div class="menuItem level1"><a href="../guides/text/index.htm" onfocus="blurLink(this);">Text Guide</a></div>
+	    <div class="separator"><hr/></div>
+	    <div class="menuItem level1"><a href="../history/index.htm" onfocus="blurLink(this);">Complete History</a></div>
+	    <div class="menuItem level1"><a href="../history/decisions/index.htm" onfocus="blurLink(this);">Decision History</a></div>
+	    <div class="menuItem level1"><a href="../history/dwctoabcd/index.htm" onfocus="blurLink(this);">Mapping to ABCD</a></div>
+	    <div class="menuItem level1"><a href="../history/versions/index.htm" onfocus="blurLink(this);">Mapping to Old Versions</a></div>
+	    <div class="separator"><hr/></div>
+	    <div class="menuItem level1"><a href="../../translations/index.htm" onfocus="blurLink(this);">Translations</a></div>
+          </div>
+        </div>
+      </TD>
+      <TD>
+<center><H1>Darwin Dore Namespace Policy</H1><center>
 <TABLE cellspacing="0" class="docinfo">
 <TBODY>
 <TR>
@@ -48,6 +76,10 @@
 <TR>
 <TH>Date Issued:</TH>
 <TD>2009-02-12</TD>
+</TR>
+<TR>
+<TH>Date Modified:</TH>
+<TD>2009-04-29</TD>
 </TR>
 <TR>
 <TH>Abstract:</TH>
@@ -60,7 +92,7 @@ and the policies associated with Darwin Core namespaces.
 </TR>
 <TR>
 <TH>Contributors:</TH>
-<TD>John Wieczorek (MVZ)<tuco@berkeley.edu>, Markus Döring (GBIF)<mdoering@gbif.org>, Renato De Giovanni (CRIA)<renato@cria.org.br>, Tim Robertson (GBIF)<trobertson@gbif.org>, Dave Vieglais (KUNHM)<vieglais@ku.edu>, Stan Blum (CAS)<sblum@calacademy.org></TD>
+<TD>John Wieczorek (MVZ), Markus Döring (GBIF), Renato De Giovanni (CRIA), Tim Robertson (GBIF), Dave Vieglais (KUNHM)</TD>
 </TR>
 <TR>
 <TH>Legal:</TH>
@@ -68,7 +100,7 @@ and the policies associated with Darwin Core namespaces.
 </TR>
 <TR>
 <TH>Part of TDWG Standard:</TH>
-<TD>***URL to DwC Standard*** goes here</TD>
+<TD>***URL to DwC Standard*** will go here</TD>
 </TR>
 <TR>
 <TH>Creator:</TH>
@@ -76,273 +108,145 @@ and the policies associated with Darwin Core namespaces.
 </TR>
 <TR>
 <TH>Identifier:</TH>
-<TD>http://rs.tdwg.org/dwc/2009-02-20/terms/namespace/</TD>
+<TD>http://rs.tdwg.org/dwc/2009-04-29/terms/namespace/</TD>
 </TR>
 <TR><TH>Latest Version:</TH>
 <TD><A href="http://rs.tdwg.org/dwc/terms/namespace/index.htm">http://rs.tdwg.org/dwc/terms/namespace/</A></TD>
 </TR>
 <TR>
 <TH>Replaces:</TH>
-<TD>Not applicable</TD>
+<TD><a href="http://rs.tdwg.org/dwc/2009-02-20/terms/namespace/index.htm">http://rs.tdwg.org/dwc/2009-02-20/terms/namespace/</a></TD>
 </TR>
 <TR>
 <TH>Document Status:</TH>
-<TD>This is a TDWG Request for Comment.</TD>
+<TD>Under Public Review.</TD>
 </TR>
 </TBODY></TABLE>
-
-<H2>Table of Contents</H2>
-</P><TABLE width="95%" border="0" align="center"><TBODY>
-<TR><TD width="100%">1. <a href="#introduction">Introduction</a></TD></TR>
-<TR><TD width="100%">2. <a href="#guide">Document Guide</a></TD></TR>
-<TR><TD width="100%">3. <a href="#glossary">Glossary</a></TD></TR>
-<TR><TD width="100%">4. <a href="#namespaceuris">Darwin Core Namespace URIs</a></TD></TR>
-<TR><TD width="100%">5. <a href="#classesofchanges">Policy concerning classes of changes to Darwin Core terms</a></TD></TR>
-<TR><TD width="100%">6. <a href="#persistence">Persistence Policy</a></TD></TR>
-<TR><TD width="100%">7. <a href="#references">References</a></TD></TR>
-</TBODY></TABLE
+</TD>
+</TR>
+</TBODY>
+</TABLE>
 
 <A name="introduction" id="introduction"></A> 
 <H2>1. Introduction</H2>
-This document and the policies contained herein are modeled on the Dublin Core Metadata Initiative
-Namespace Policy [<a href="http://dublincore.org/documents/2007/07/02/dcmi-namespace/">DCMINAMESPACEPOLICY</a>]. 
-All terms in the Darwin Core must be assigned a unique URI. For convenience, the term URIs that are 
-assigned and managed by the Darwin Core Task Group are grouped into collections known as Darwin
-Core namespaces. This document describes how term URIs are allocated by the Darwin Core Task Group
-and the policies associated with Darwin Core namespaces.
-
-<A name="guide" id="guide"></A> 
-<H2>2. Document Guide</H2>
-Following is an index to the primary documents of the Darwin Core. Links to additional documents relevant to this page can be 
-found in the <em>References</em> section.
-<p>
-<a href="../../index.htm">Introduction</a> - Darwin Core motivation, content, how to participate
-<p>
-<il>Darwin Core Terms
-<ul><a href="../index.htm">Quick Reference Guide</a> - definitions of currently accepted terms.</ul>
-<ul><a href="../history/index.htm">Complete History</a> - everything about every term that ever existed</ul>
-<ul><a href="../history/decisions/index.htm">Decisions</a> - documentation of justifications for past changes to terms</ul>
-<ul><a href="./index.htm">Namespace policy</a> (this document) - how to propose changes to Darwin Core</ul>
-<ul><a href="../type-vocabulary/index.htm">Type Vocabulary</a> - list of terms for types of records supported by Darwin Core</ul>
-</il>
-<p>
-<il>Mappings
-<ul><a href="../history/dwctoabcd/index.htm">ABCD</a> - current equivalent terms in ABCD</ul>
-<ul><a href="../history/versions/index.htm">Versions</a> - current equivalent terms in historical versions</ul>
-</il>
-<p>
-<il>Implementation Guides
-<ul><a href="../guides/xml/index.htm">XML Schemas</a> - how to construct and use Darwin Core XML Schemas</ul>
-<ul><a href="../guides/text/index.htm">Text</a> - how to construct and use text files for capturing Darwin Core data</ul>
-</il>
-<p>
-<a href="../../translations/index.htm">Translations</a> - An index to Darwin Core documents in various languages
-
-<A name="glossary" id="glossary"></A> 
-<H2>3. Glossary</H2>
-<P>This document uses the following terminology:</P>
-<DL>
-
-<DT><EM>term</EM></DT>
-<DD>A property (element), class, vocabulary encoding scheme, or syntax encoding scheme.</DD>
-
-<DT><EM>URI</EM></DT>
-<DD>A Uniform Resource Identifier (<A href="http://www.ietf.org/rfc/rfc3986.txt">URI</A>) or Internationalized Resource Identifier (<A href="http://www.ietf.org/rfc/rfc3987.txt">IRI</A>).</DD>
-
-<DT><EM>Darwin Core term</EM></DT>
-<DD>A <EM>term</EM> that is declared and maintained by Darwin Core Task Group.</DD>
-
-<DT><EM>term URI</EM></DT>
-<DD>The <EM>URI</EM> that identifies a <EM>term</EM>.</DD>
-
-<DT><EM>Darwin Core term URI</EM></DT>
-<DD>The <EM>URI</EM> for a <EM>term</EM> that is declared and managed by Darwin Core Task Group.</DD>
-
-<DT><EM>term name</EM></DT>
-<DD>A unique token assigned to a <EM>term</EM>.  For all <EM>Darwin Core terms</EM>, the <EM>term name</EM> is appended to a <EM>Darwin Core namespace URI</EM> to create the <EM>Darwin Core term URI</EM>.</DD>
-
-<DT><EM>term label</EM></DT>
-<DD>A human-readable label assigned to a <EM>term</EM>.</DD>
-
-<DT><EM>Darwin Core namespace</EM></DT>
-<DD>A collection of <EM>Darwin Core term URIs</EM> where each <EM>term</EM> is assigned a <EM>URI</EM> that starts with the same &#39;base URI&#39;. The &#39;base URI&#39; is known as the <EM>Darwin Core namespace URI</EM>. (Note that a <EM>Darwin Core namespace</EM> is not the same as an &#39;XML namespace&#39;).</DD>
-
-<DT><EM>Darwin Core namespace URI</EM></DT>
-<DD>The <EM>URI</EM> that identifies a <EM>Darwin Core namespace</EM>.</DD>
-
-<DT><EM>Darwin Core recommendation</EM></DT>
-<DD>A specification, approved through Darwin Core&#39;s formal process, which may define one or more <EM>Darwin Core terms</EM>.</DD>
-
-<DT><EM>Darwin Core term declaration</EM></DT>
-<DD>A representation of one or more <EM>Darwin Core terms</EM>.</DD>
-
-</DL>
-
-<P><EM>Term URIs</EM> are grouped into <EM>Darwin Core namespaces</EM> in order to ease the assignment of <EM>URIs </EM>to <EM>terms</EM> and to streamline their use in particular encoding syntaxes. Note that the grouping of <EM>term URIs</EM> into <EM>Darwin Core namespaces</EM> is orthogonal to the grouping of <EM>terms</EM> into sets designed to meet other functional needs, e.g., as various types of vocabularies.</P>
+This document and the policies contained herein are modeled on the <i>Dublin Core Metadata Initiative
+Namespace Policy</i> [<a href="http://dublincore.org/documents/2007/07/02/dcmi-namespace/">DCMINAMESPACEPOLICY</a>]. 
+All terms in the Darwin Core must be assigned a unique URI as an identifier. For convenience, the term URIs are 
+grouped into collections known as <i>Darwin
+Core namespaces</i>. This document describes the policies associated with Darwin Core namespaces and how term 
+URIs are allocated by the <i>Darwin Core Task Group</i> 
+[<A href="http://www.tdwg.org/activities/darwincore/">DWC-TASK</a>].
 
 <A name="namespaceuris" id="namespaceuris"></A> 
-<H2>4. Darwin Core Namespace URIs</H2>
+<H2>2. Namespace URIs</H2>
 
-<P>The <EM>Darwin Core namespace URI</EM> for the collection of all Darwin Core properties, classes and encoding schemes is:</P>
+<P>The Darwin Core namespace URI for the collection of all Darwin Core properties, classes, and encoding schemes is:</P>
 
 <PRE class="example">http://rs.tdwg.org/dwc/terms/
 </PRE>
 
-<P>The <EM>Darwin Core namespace URI</EM> for the collection of <EM>classes</EM> in the Darwin Core Type Vocabulary 
+<P>The Darwin Core namespace URI for the collection of classes in the <i>Darwin Core Type Vocabulary</i> 
 [<A href="../type-vocabulary/index.htm">DWC-TYPE</A>] is:</P>
 
 <PRE class="example">http://rs.tdwg.org/dwc/dwctype/
 </PRE>
 
-<P>All future <EM>Darwin Core namespace URIs</EM> (additional Darwin Core controlled vocabularies for example) will conform to 
+<P>All future Darwin Core namespace URIs (additional Darwin Core controlled vocabularies for example) will conform to 
 this pattern:</P>
 
 <PRE class="example">http://rs.tdwg.org/dwc/namespace_label/
 </PRE>
 
-<P>All <EM>Darwin Core namespace URIs</EM> will dereference to a <EM>Darwin Core term declaration</EM> for all the 
-<EM>terms</EM> with <EM>term URIs</EM> within that <EM>Darwin Core namespace</EM>. A machine-processable <EM>Darwin Core 
-term declaration</EM> will be made available.</P>
+<P>The term identifier for the current (recommended) version of a term is a URI based on the namespace and the term name 
+without version information. Some example Darwin Core term identifiers follow:</P>
 
-<P>Some example <EM>Darwin Core term URIs</EM> follow:</P>
-
-<PRE class="example">http://rs.tdwg.org/dwc/terms/ScientificName
+<PRE class="example">http://rs.tdwg.org/dwc/terms/scientificName
 </PRE>
 
-<P>is the <EM>Darwin Core term URI</EM> for the ScientificName <EM>property</EM>.</P>
+<P>is the Darwin Core term identifier for the <i>scientificName</i> property.</P>
 
 <PRE class="example">http://rs.tdwg.org/dwc/dwctype/PreservedSpecimen
 </PRE>
 
-<P>is the <EM>Darwin Core term URI</EM> for the PreservedSpecimen <EM>class</EM> in the Darwin Core Type Vocabulary.</P>
+<P>is the Darwin Core term identifier for the PreservedSpecimen class in the <i>Darwin Core Type Vocabulary</i>.</P>
 
-<P>Each <EM>Darwin Core term</EM> can be so identified.</P>
-
-<P>All <EM>Darwin Core term URIs</EM> will dereference to a <EM>Darwin Core term declaration</EM> for the identified 
-<EM>term</EM>. A machine-processable <EM>Darwin Core term declaration</EM> will be made available.
+<P>All Darwin Core identifiers will dereference to a Darwin Core term declaration for the identified 
+term.
 
 <A name="classesofchanges" id="classesofchanges"></A> 
-<H2>5. Policy concerning classes of changes to Darwin Core terms</H2>
+<H2>3. Term Change Policy</H2>
 
-<P>Changes to <EM>Darwin Core terms</EM> or <EM>term declarations</EM> will occur from time to time for a variety of reasons. 
-Such changes have varying implications for <EM>Darwin Core term URIs</EM> and <EM>Darwin Core namespaces</EM>. The following 
-classes of changes are identified along with examples and associated implications.
+<P>Changes to Darwin Core terms or term declarations will occur from time to time for a variety of reasons. 
+Such changes have varying implications for Darwin Core term URIs and Darwin Core namespaces. The classes of 
+changes are identified and explained in the following sections along with examples and associated implications.
 
-<P>In all cases, any changes to <EM>Darwin Core terms</EM> or <EM>term declarations</EM> will result 
-in an update to the versioning information carried in the <EM>Darwin Core recommendation</EM> and/or 
-<EM>Darwin Core term declaration</EM> associated with that <EM>term</EM>. Specifically, a new version 
+<P>Any change to Darwin Core terms or term declarations will result 
+in an update to the versioning information carried in the Darwin Core recommendation and/or 
+Darwin Core term declaration associated with that term. Specifically, a new version 
 of the term will be created with appropriate information in the <i>Version</i>, <i>Replaces</i>, and 
 <i>DateModified</i> attributes of the new term, and with the identifying version information of the 
 new term in the <i>Is Replaced By</i> attribute of the term being updated.
 
-<H3>5.1. Minor editorial errata</H3>
+<H3>3.1. Minor editorial errata</H3>
 
-<P>Errors of spelling, punctuation, or other clerical mistakes discovered in <EM>Darwin Core recommendations</EM> and/or 
-<EM>Darwin Core term declarations</EM> will be corrected without a comment period, following notification to the TDWG 
-Architecture Group [<A href="mailto:tdwg-tag@lists.tdwg.org">DWC-USAGE</A>], as long as, in 
-the judgment of the TDWG Architecture Group, there are no implications for negative impact on users or applications that rely 
-on those <EM>Darwin Core term declarations</EM>. Minor editorial changes of this type will result in no changes to <EM>Darwin 
-Core term URIs</EM>, will not undergo a request for comments, and will not result in a decision 
+<P>Errors of spelling, punctuation, or other clerical mistakes discovered in Darwin Core recommendations and/or 
+Darwin Core term declarations will be corrected without a comment period, following notification to the <i>TDWG 
+Architecture Group</i> [<A href="mailto:tdwg-tag@lists.tdwg.org">DWC-USAGE</A>], as long as, in 
+the judgment of the <i>TDWG Architecture Group</i>, there are no implications for negative impact on users or applications that rely 
+on those Darwin Core term declarations. Minor editorial changes of this type will result in no changes to Darwin 
+Core term URIs, will not undergo a request for comments, and will not result in a decision 
 [<a href="../history/decisions/index.htm">DECISIONS</A>].
 
-<H3>5.2. Substantive editorial errata</H3>
+<H3>3.2. Substantive editorial errata</H3>
 
-<P>Errors of substance discovered in <EM>Darwin Core recommendations</EM> and/or <EM>Darwin Core 
-term declarations</EM> will trigger public notification of the correction to the Darwin Core mailing 
-list [<A href="mailto:tdwg-content@lists.tdwg.org">DWC-MAIL</A>]. 
-Errors that, in the judgment of the TDWG Architecture Group, compromise the immediate usefulness or 
+<P>Errors of substance discovered in Darwin Core recommendations and/or Darwin Core 
+term declarations will trigger public notification of the correction to the <i>Darwin Core mailing 
+list</i> [<A href="mailto:tdwg-content@lists.tdwg.org">DWC-MAIL</A>]. 
+Errors that, in the judgment of the <i>TDWG Architecture Group</i>, compromise the immediate usefulness or 
 accuracy of systems based on Darwin Core will be corrected immediately (for example, an incorrect 
 URL to a resource external to Darwin Core). Others will be corrected following a 30-day public 
 comment period to assure that changes do not adversely effect systems or applications which rely on 
-the <EM>Darwin Core namespace</EM> infrastructure. Substantive editorial changes of this type will 
-result in no changes to <EM>Darwin Core term URIs</EM>, and will not result in a decision 
+the Darwin Core namespace infrastructure. Substantive editorial changes of this type will 
+result in no changes to Darwin Core term URIs, and will not result in a decision 
 [<a href="../history/decisions/index.htm">DECISIONS</A>].
 
-<H3>5.3. Semantic changes in Darwin Core terms</H3>
+<H3>3.3. Semantic changes in Darwin Core terms</H3>
 
-<P>Changes of definitions within <EM>Darwin Core recommendations</EM> and/or <EM>Darwin Core term 
-declarations</EM> will be reflected in the affected <EM>Darwin Core recommendation</EM> and/or 
-<EM>Darwin Core term declaration</EM>. Semantic changes of this type will, will 
+<P>Changes of definitions within Darwin Core recommendations and/or Darwin Core term 
+declarations will be reflected in the affected Darwin Core recommendation and/or 
+Darwin Core term declaration. Semantic changes of this type will
 undergo a request for comments, and will result in a decision 
-[<a href="../history/decisions/index.htm">DECISIONS</A>]. If, in the judgment of the TDWG Architecture Group, such 
+[<a href="../history/decisions/index.htm">DECISIONS</A>]. If, in the judgment of the <i>TDWG Architecture Group</i>, such 
 changes of meaning are likely to have substantial impact on either machine processing of 
-<EM>Darwin Core terms</EM> or the functional semantics of the <EM>terms</EM>, then these changes 
-will be reflected in a change of URI for the <EM>Darwin Core term</EM> or <EM>terms</EM> in question. 
-The URIs for any new <EM>Darwin Core namespaces</EM> resulting from such changes will conform to 
-the <EM>Darwin Core namespace URI</EM> pattern defined above. 
+Darwin Core terms or the functional semantics of the terms, then these changes 
+will be reflected in a change of URI for the Darwin Core term or terms in question. 
+The URIs for any new Darwin Core namespaces resulting from such changes will conform to 
+the Darwin Core namespace URI pattern defined above. 
 
-<P>Requests for semantic changes to a term should be made to the Technical Architecture Group 
+<P>Requests for semantic changes to a term should be made to the <i>Technical Architecture Group</i> 
 [<A href="mailto:tdwg-tag@lists.tdwg.org">DWC-USAGE</A>], and should consist of a complete list of attributes to be changed 
 along with a statement of justification for the changes.
 
-<H3>5.4. Addition of Darwin Core term declarations to existing Darwin Core namespaces</H3>
+<H3>3.4. Addition of Darwin Core term declarations to existing Darwin Core namespaces</H3>
 
-<P>New <EM>Darwin Core term URIs</EM> will occasionally be added to existing <EM>Darwin Core namespaces</EM> based on
-public demand. Addition of <EM>Darwin Core term URIs</EM> to existing <EM>Darwin Core namespaces</EM> will not trigger 
-changes in <EM>Darwin Core namespace URIs</EM>. Additional term requests that are determined by the Technical Architecture 
-Group to have merit will undergo a request for comments and will not result in a decision 
+<P>New terms may be added to existing Darwin Core namespaces based on
+public demand. Addition of terms to existing Darwin Core namespaces will not trigger 
+changes in Darwin Core Namespace URIs. Additional term requests that have been determined by the <i>Technical Architecture 
+Group</i> to have merit will undergo a request for comments and will not result in a decision 
 [<a href="../history/decisions/index.htm">DECISIONS</A>].
 
-<P>Requests for additional terms should be made to the Technical Architecture Group 
+<P>Requests for additional terms should be made to the <i>Technical Architecture Group</i> 
 [<A href="mailto:tdwg-tag@lists.tdwg.org">DWC-USAGE</A>], and should consist of a complete list of
-attributes as given in the introduction in the Darwin Core Terms history [<A href="../history/index.htm">HISTORY</A>] along 
+attributes as given in the term definitions section of the <i>Darwin Core Terms Complete History</i> [<A href="../history/index.htm">HISTORY</A>] along 
 with a statement of justification for the new term, including an explanation of why no existing term will suffice.
 
 <A name="persistence" id="persistence"></A> 
-<H2>6. Persistence Policy</H2>
+<H2>4. Persistence Policy</H2>
 <P>
 TDWG recognizes that people and applications depend on the persistence of formal documents and machine processable schemas 
-that have been made publicly available. In particular, the stability of <EM>Darwin Core term URIs</EM> and <EM>Darwin Core 
-namespace URIs</EM> is critical to interoperability over time. Thus, the wide promulgation of this set of <EM>URIs</EM> 
+that have been made publicly available. In particular, the stability of Darwin Core term URIs and Darwin Core 
+namespace URIs is critical to interoperability over time. Thus, the wide promulgation of this set of URIs
 dictates that they be maintained to support legacy applications that have adopted them.</P>
-
-<A name="references" id="references"></A> 
-<H2>7. References</H2>
-<TABLE width="95%" border="0" align="center">
-
-<TR>
-<TD width="10%"><A name="DCMINAMESPACEPOLICY">[DCMINAMESPACEPOLICY]</A></TD>
-<TD width="40%"><A href="http://dublincore.org/documents/2007/07/02/dcmi-namespace/">http://dublincore.org/documents/2007/07/02/dcmi-namespace/</A></TD>
-<TD width="50%">DCMI Namespace Policy, 2 July 2007</TD>
-</TR>
-
-<TR>
-<TD width="10%"><A name="DWC">[DWC]</A></TD>
-<TD width="40%"><A href="../../index.htm">http://rs.tdwg.org/dwc/</A></TD>
-<TD width="50%">An introduction to the Darwin Core Standard.</TD>
-</TR>
-
-<TR>
-<TD width="10%"><A name="DWC-MAIL">[DWC-MAIL]</A></TD>
-<TD width="40%"><A href="mailto:tdwg-content@lists.tdwg.org">tdwg-content@lists.tdwg.org</A></TD>
-<TD width="50%">Mailing list for commentary and discussion on Darwin Core.</TD>
-</TR>
-
-<TR>
-<TD width="10%"><A name="DWC-USAGE">[DWC-USAGE]</A></TD>
-<TD width="40%"><A href="mailto:tdwg-tag@lists.tdwg.org">tdwg-tag@lists.tdwg.org</A></TD>
-<TD width="50%">TDWG Architecture Mailing List.</TD>
-</TR>
-
-<TR>
-<TD width="10%"><A name="DWC-TYPE">[DWC-TYPE]</A></TD>
-<TD width="40%"><A href="../type-vocabulary/index.htm">http://rs.tdwg.org/dwc/terms/type-vocabulary/</A></TD>
-<TD width="50%">Darwin Core Type Vocabulary.</TD>
-</TR>
-
-<TR>
-<TD width="10%"><A name="DECISIONS">[DECISIONS]</A></TD>
-<TD width="40%"><A href="../history/decisions/index.htm">http://rs.tdwg.org/dwc/terms/history/decisions/</A></TD>
-<TD width="50%">A history of decisions resulting in changes to Darwin Core terms.</TD>
-</TR>
-
-<TR>
-<TD width="10%"><A name="HISTORY">[HISTORY]</A></TD>
-<TD width="40%"><A href="../history/index.htm">http://rs.tdwg.org/dwc/terms/history/</A></TD>
-<TD width="50%">Darwin Core Terms: A complete history.</TD>
-</TR>
-
-</TBODY></TABLE>
 
 <!-- Footer -->
 <hr>

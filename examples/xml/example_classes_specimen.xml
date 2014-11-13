@@ -1,0 +1,97 @@
+﻿<?xml version="1.0"?>
+<dwr:DarwinRecordSet
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://rs.tdwg.org/dwc/dwcrecord/  http://rs.tdwg.org/dwc/xsd/tdwg_dwc_classes.xsd"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
+    xmlns:dwr="http://rs.tdwg.org/dwc/dwcrecord/">
+    <dcterms:Location>
+        <dwc:locationID>http://guid.mvz.org/sites/arg/127</dwc:locationID>
+        <dwc:country>Argentina</dwc:country>
+        <dwc:countryCode>ARG</dwc:countryCode>
+        <dwc:stateProvince>Neuquén</dwc:stateProvince>
+        <dwc:locality>25 km al NNE de Bariloche por Ruta 40 (=237)</dwc:locality>
+    </dcterms:Location>
+    <dwc:Occurrence>
+        <dcterms:type>Occurrence</dcterms:type>
+        <dcterms:modified>2009-02-12T12:43:31</dcterms:modified>
+        <dcterms:rightsHolder>Museum of Vertebrate Zoology</dcterms:rightsHolder>
+        <dcterms:rights>Creative Commons License</dcterms:rights>
+        <dwc:institutionCode>MVZ</dwc:institutionCode>
+        <dwc:collectionCode>Mammals</dwc:collectionCode>
+        <dwc:occurrenceID>urn:catalog:MVZ:Mammals:14523</dwc:occurrenceID>
+        <dwc:basisOfRecord>PreservedSpecimen</dwc:basisOfRecord>
+        <dwc:locationID>http://guid.mvz.org/sites/arg/127</dwc:locationID>
+    </dwc:Occurrence>
+    <dwc:Identification>
+      <dwc:identificationID>http://guid.mvz.org/identifications/23459</dwc:identificationID>
+      <dwc:identifiedBy>Richard Sage</dwc:identifiedBy>
+      <dwc:dateIdentified>2000</dwc:dateIdentified>
+      <dwc:identificationQualifier>sp.</dwc:identificationQualifier>
+      <dwc:occurrenceID>urn:catalog:MVZ:Mammals:14523</dwc:occurrenceID>
+    </dwc:Identification>
+    <dwc:Taxon>
+      <dwc:scientificName>Ctenomys</dwc:scientificName>
+      <dwc:genus>Ctenomys</dwc:genus>
+      <dwc:identificationID>http://guid.mvz.org/identifications/23459</dwc:identificationID>
+    </dwc:Taxon>
+    <dwc:Identification>
+      <dwc:identificationID>http://guid.mvz.org/identifications/94752</dwc:identificationID>
+      <dwc:identifiedBy>James L Patton</dwc:identifiedBy>
+      <dwc:dateIdentified>2001-09-14</dwc:dateIdentified>
+      <dwc:occurrenceID>urn:catalog:MVZ:Mammals:14523</dwc:occurrenceID>
+    </dwc:Identification>
+    <dwc:Taxon>
+      <dwc:scientificName>Ctenomys sociabilis</dwc:scientificName>
+      <dwc:higherTaxon>nimalia, Chordata, Vertebrata, Mammalia, Theria, Eutheria, Rodentia, Hystricognatha, Hystricognathi, Ctenomyidae, Ctenomyini, Ctenomys</dwc:higherTaxon>
+      <dwc:kingdom>Animalia</dwc:kingdom>
+      <dwc:phylum>Chordata</dwc:phylum>
+      <dwc:class>Mammalia</dwc:class>
+      <dwc:order>Rodentia</dwc:order>
+      <dwc:family>Ctenomyidae</dwc:family>
+      <dwc:genus>Ctenomys</dwc:genus>
+      <dwc:specificEpithet>sociabilis</dwc:specificEpithet>
+      <dwc:identificationID>http://guid.mvz.org/identifications/94752</dwc:identificationID>
+    </dwc:Taxon>
+    <dwc:Occurrence>
+        <dcterms:type>Occurrence</dcterms:type>
+        <dcterms:modified>2009-02-12T12:43:31</dcterms:modified>
+        <dcterms:rightsHolder>Museum of Vertebrate Zoology</dcterms:rightsHolder>
+        <dcterms:rights>Creative Commons License</dcterms:rights>
+        <dwc:institutionCode>MVZ</dwc:institutionCode>
+        <dwc:collectionCode>Mammals</dwc:collectionCode>
+        <dwc:occurrenceID>urn:catalog:MVZ:Mammals:14524</dwc:occurrenceID>
+        <dwc:basisOfRecord>PreservedSpecimen</dwc:basisOfRecord>
+        <dwc:locationID>http://guid.mvz.org/sites/arg/127</dwc:locationID>
+    </dwc:Occurrence>
+    <dwc:Identification>
+      <dwc:identificationID>http://guid.mvz.org/identifications/94753</dwc:identificationID>
+      <dwc:identifiedBy>James L Patton</dwc:identifiedBy>
+      <dwc:dateIdentified>2001-09-14</dwc:dateIdentified>
+      <dwc:occurrenceID>urn:catalog:MVZ:Mammals:14524</dwc:occurrenceID>
+    </dwc:Identification>
+    <dwc:Taxon>
+      <dwc:scientificName>Ctenomys sociabilis</dwc:scientificName>
+      <dwc:higherTaxon>nimalia, Chordata, Vertebrata, Mammalia, Theria, Eutheria, Rodentia, Hystricognatha, Hystricognathi, Ctenomyidae, Ctenomyini, Ctenomys</dwc:higherTaxon>
+      <dwc:kingdom>Animalia</dwc:kingdom>
+      <dwc:phylum>Chordata</dwc:phylum>
+      <dwc:class>Mammalia</dwc:class>
+      <dwc:order>Rodentia</dwc:order>
+      <dwc:family>Ctenomyidae</dwc:family>
+      <dwc:genus>Ctenomys</dwc:genus>
+      <dwc:specificEpithet>sociabilis</dwc:specificEpithet>
+      <dwc:identificationID>http://guid.mvz.org/identifications/94753</dwc:identificationID>
+    </dwc:Taxon>
+    <dwc:ResourceRelationship>
+        <dwc:resourceRelationshipID>http://guid.mvz.org/relations/23423</dwc:resourceRelationshipID>
+        <dwc:resourceID>urn:catalog:MVZ:Mammals:14523</dwc:resourceID>
+        <dwc:relatedResourceID>urn:catalog:MVZ:Mammals:14524</dwc:relatedResourceID>
+        <dwc:relationshipOfResource>offspring of</dwc:relationshipOfResource>
+    </dwc:ResourceRelationship>
+    <dwc:ResourceRelationship>
+        <dwc:resourceRelationshipID>http://guid.mvz.org/relations/23424</dwc:resourceRelationshipID>
+        <dwc:resourceID>urn:catalog:MVZ:Mammals:14524</dwc:resourceID>
+        <dwc:relatedResourceID>urn:catalog:MVZ:Mammals:14523</dwc:relatedResourceID>
+        <dwc:relationshipOfResource>mother of</dwc:relationshipOfResource>
+    </dwc:ResourceRelationship>
+</dwr:DarwinRecordSet>

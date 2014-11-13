@@ -8,22 +8,20 @@
 <META name="DC.description" content="The list of Darwin Core terms to be used as values of the BasisOfRecord."/>
 <META name="DC.subject" content="biodiversity, standards"/>
 <META name="DC.creator" content="Darwin Core Task Group"/>
-<META name="DC.contributor" content="John Wieczorek (MVZ) &lt;tuco@berkeley.edu&gt;"/>
-<META name="DC.contributor" content="Markus Döring (GBIF) &lt;mdoering@gbif.org&gt;"/>
-<META name="DC.contributor" content="Renato De Giovanni (CRIA) &lt;renato@cria.org.br&gt;"/>
-<META name="DC.contributor" content="Tim Robertson (GBIF) &lt;trobertson@gbif.org&gt;"/>
-<META name="DC.contributor" content="Dave Vieglais (KUNHM) &lt;vieglais@ku.edu&gt;"/>
-<META name="DC.contributor" content="Stan Blum (CAS) &lt;sblum@calacademy.org&gt;"/>
-<META name="DC.modified" content="2009-02-20"/>
+<META name="DC.contributor" content="John Wieczorek (MVZ)"/>
+<META name="DC.contributor" content="Markus Döring (GBIF)"/>
+<META name="DC.contributor" content="Renato De Giovanni (CRIA)"/>
+<META name="DC.contributor" content="Tim Robertson (GBIF)"/>
+<META name="DC.contributor" content="Dave Vieglais (KUNHM)"/>
+<META name="DC.modified" content="2009-04-29"/>
 <META name="DC.dateAccepted" content="2009-02-12"/>
 <META name="DC.format" content="text/html"/>
-<META name="DC.identifier" content="http://rs.tdwg.org/dwc/2009-02-12/terms/type-vocabulary"/>
+<META name="DC.identifier" content="http://rs.tdwg.org/dwc/2009-04-29/terms/type-vocabulary/"/>
+<META name="DC.replaces" content="http://rs.tdwg.org/dwc/2009-02-20/terms/type-vocabulary/"/>
 <META name="DC.publisher" content="Biodiversity Information Standards TDWG"/>
 <META name="DC.rights" content=""/>
 <META name="DC.accessRights" content="public"/>
 <META name="DC.bibliographicCitation" content="Darwin Core Type Vocabulary. 2009"/>
-<META name="DC.isReplacedBy" content=""/>
-<META name="DC.replaces" content=""/>
 <META name="DC.language" content="en"/>
 <LINK rel="meta" href="http://www.tdwg.org/"/>
 <LINK rel="stylesheet" href="../../DarwinCore_files/default.css" type="text/css"/>
@@ -32,13 +30,42 @@
 <BODY>
 <DIV class="header">
 
-<TABLE width="100%" cellspacing="0" cellpadding="0" bgcolor="#617394">
-<TBODY><TR>
-<TD width="70"><A href="http://www.tdwg.org"><IMG src="../../DarwinCore_files/TDWGlogo_Twiki.gif" width="150" height="70" alt="Biodiversity Information Standards (TDWG) logo"></A></TD>
-<TD width="100%" height="70" align="right" valign="top">
-</TABLE>
+<TABLE width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#617394"><TBODY>
+<TD><A href="http://www.tdwg.org"><IMG src="../../DarwinCore_files/TDWGlogo_Twiki.gif" width="148" height="89" alt="Biodiversity Information Standards (TDWG) logo"></A></TD>
+<TD width="100%" height="100" align="right" valign="top">
+</TBODY></TABLE>
 
-<H1>Darwin Core Type Vocabulary</H1>
+<TABLE width="100%" cellspacing="0" cellpadding="0" border="0">
+  <TBODY>
+    <TR>
+      <TD width="15%" cellspacing="0" cellpadding="0" bgcolor="#617394">
+        <div id="menu">
+          <div id="nav" class="topMenu">
+	    <div class="menuItem level1"><a href="../../index.htm" onfocus="blurLink(this);">Introduction</a></div>
+<!--	    <div class="menuItem"><a href="../../index.htm#glossary" onfocus="blurLink(this);">Glossary</a></div> -->
+	    <div class="subMenu"><div class="menuItem"><a href="../../index.htm#references" onfocus="blurLink(this);">References</a></div></div>
+	    <div class="menuItem level1"><a href="../index.htm" onfocus="blurLink(this);">Quick Reference Guide</a></div>
+	    <div class="menuItem level1"><a href="../simple/index.htm" onfocus="blurLink(this);">Simple Darwin Core</a></div>
+	    <div class="menuItem level1 highlighted"><a href="./index.htm" onfocus="blurLink(this);">Type Vocabulary</a></div>
+	    <div class="subMenu"><div class="menuItem"><a href="./index.htm#introduction" onfocus="blurLink(this);">Introduction</a></div></div>
+	    <div class="subMenu"><div class="menuItem"><a href="./index.htm#theterms" onfocus="blurLink(this);">Term Index</a></div></div>
+	    <div class="subMenu"><div class="menuItem"><a href="./index.htm#termdefs" onfocus="blurLink(this);">Term Definitions</a></div></div>
+	    <div class="separator"><hr/></div>
+	    <div class="menuItem level1"><a href="../namespace/index.htm" onfocus="blurLink(this);">Namespace Policy</a></div>
+	    <div class="menuItem level1"><a href="../guides/xml/index.htm" onfocus="blurLink(this);">XML Guide</a></div>
+	    <div class="menuItem level1"><a href="../guides/text/index.htm" onfocus="blurLink(this);">Text Guide</a></div>
+	    <div class="separator"><hr/></div>
+	    <div class="menuItem level1"><a href="../history/index.htm" onfocus="blurLink(this);">Complete History</a></div>
+	    <div class="menuItem level1"><a href="../history/decisions/index.htm" onfocus="blurLink(this);">Decision History</a></div>
+	    <div class="menuItem level1"><a href="../history/dwctoabcd/index.htm" onfocus="blurLink(this);">Mapping to ABCD</a></div>
+	    <div class="menuItem level1"><a href="../history/versions/index.htm" onfocus="blurLink(this);">Mapping to Old Versions</a></div>
+	    <div class="separator"><hr/></div>
+	    <div class="menuItem level1"><a href="../../translations/index.htm" onfocus="blurLink(this);">Translations</a></div>
+          </div>
+        </div>
+      </TD>
+      <TD>
+<center><H1>Darwin Core Type Vocabulary</H1></center>
 <TABLE cellspacing="0" class="docinfo">
 <TBODY>
 <TR>
@@ -50,15 +77,19 @@
 <TD>2009-02-12</TD>
 </TR>
 <TR>
+<TH>Date Modified:</TH>
+<TD>2009-04-29</TD>
+</TR>
+<TR>
 <TH>Abstract:</TH>
-<TD>The Darwin Core Type Vocabulary extends the DCMI Type Vocabulary 
-[<A href="http://dublincore.org/documents/dcmi-type-vocabulary/">DCMI-TYPE</A>] and provides a list of approved terms that 
-may be used as values for the BasisOfRecord term to identify the genre of a resource. The terms documented here are also 
-included in the more comprehensive document "Darwin Core Terms: A complete history [<A href="../history/index.htm">HISTORY</A>].
+<TD>The Darwin Core Type Vocabulary extends the DCMI Type Vocabulary and provides a list of approved terms that 
+may be used as values for the dcterms:type">dcterms:type and basifOfRecord terms to identify the class and 
+specific type of a resource. The terms documented here are also included in the more comprehensive document 
+Darwin Core Terms: A complete history.
 </TR>
 <TR>
 <TH>Contributors:</TH>
-<TD>John Wieczorek (MVZ)<tuco@berkeley.edu>, Markus Döring (GBIF)<mdoering@gbif.org>, Renato De Giovanni (CRIA)<renato@cria.org.br>, Tim Robertson (GBIF)<trobertson@gbif.org>, Dave Vieglais (KUNHM)<vieglais@ku.edu>, Stan Blum (CAS)<sblum@calacademy.org></TD>
+<TD>John Wieczorek (MVZ), Markus Döring (GBIF), Renato De Giovanni (CRIA), Tim Robertson (GBIF), Dave Vieglais (KUNHM)</TD>
 </TR>
 <TR>
 <TH>Legal:</TH>
@@ -66,7 +97,7 @@ included in the more comprehensive document "Darwin Core Terms: A complete histo
 </TR>
 <TR>
 <TH>Part of TDWG Standard:</TH>
-<TD>***URL to DwC Standard*** goes here</TD>
+<TD>***URL to DwC Standard*** will go here</TD>
 </TR>
 <TR>
 <TH>Creator:</TH>
@@ -74,134 +105,128 @@ included in the more comprehensive document "Darwin Core Terms: A complete histo
 </TR>
 <TR>
 <TH>Identifier:</TH>
-<TD>http://rs.tdwg.org/dwc/2009-02-20/terms/type-vocabulary/</A></TD>
+<TD>http://rs.tdwg.org/dwc/2009-04-29/terms/type-vocabulary/</A></TD>
 </TR>
 <TR><TH>Latest Version:</TH>
 <TD><A href="http://rs.tdwg.org/dwc/terms/type-vocabulary/index.htm">http://rs.tdwg.org/dwc/terms/type-vocabulary/</A></TD>
 </TR>
 <TR>
 <TH>Replaces:</TH>
-<TD>Not applicable</TD>
+<TD><a href="http://rs.tdwg.org/dwc/2009-02-20/terms/type-vocabulary/index.htm">http://rs.tdwg.org/dwc/2009-02-20/terms/type-vocabulary/</a></TD>
 </TR>
 <TR>
 <TH>Document Status:</TH>
-<TD>This is a TDWG Request for Comment.</TD>
+<TD>Under Public Review.</TD>
 </TR>
 </TBODY></TABLE>
-
-<H2>Table of Contents</H2>
-<TABLE width="95%" border="0" align="center"><TBODY>
-<TR><TD width="100%">1. <a href="#introduction">Introduction</a></TD></TR>
-<TR><TD width="100%">2. <a href="#guide">Document Guide</a></TD></TR>
-<TR><TD width="100%">3. <a href="#theterms">The Terms</a></TD></TR>
-<TR><TD width="100%">4. <a href="#references">References</a></TD></TR>
-</TBODY></TABLE
+</TD>
+</TR>
+</TBODY>
+</TABLE>
 
 <A name="introduction" id="introduction"></A> 
 <H2>1. Introduction</H2>
 
-The Darwin Core Type Vocabulary is a recommended controlled vocabulary for the description of a Darwin Core resource. It 
-includes terms from  the Dublin Core Type Vocabulary [<A href="http://dublincore.org/documents/dcmi-type-vocabulary/">DCMI-TYPE</A>] 
-as well as other terms that expand upon or refine the terms found there. These terms are meant to be used as the values
-of the BasisOfRecord term in a Darwin Core resource.
-
-<A name="guide" id="guide"></A> 
-<H2>2. Document Guide</H2>
-Following is an index to the primary documents of the Darwin Core. Links to additional documents relevant to this page can be 
-found in the <em>References</em> section.
-<p>
-<a href="../../index.htm">Introduction</a> - Darwin Core motivation, content, how to participate
-<p>
-<il>Darwin Core Terms
-<ul><a href="../index.htm">Quick Reference Guide</a> - definitions of currently accepted terms.</ul>
-<ul><a href="../history/index.htm">Complete History</a> - everything about every term that ever existed</ul>
-<ul><a href="../history/decisions/index.htm">Decisions</a> - documentation of justifications for past changes to terms</ul>
-<ul><a href="../namespace/index.htm">Namespace policy</a> - how to propose changes to Darwin Core</ul>
-<ul><a href="./index.htm">Type Vocabulary</a> (this document) - list of terms for types of records supported by Darwin Core</ul>
-</il>
-<p>
-<il>Mappings
-<ul><a href="../history/dwctoabcd/index.htm">ABCD</a> - current equivalent terms in ABCD</ul>
-<ul><a href="../history/versions/index.htm">Versions</a> - current equivalent terms in historical versions</ul>
-</il>
-<p>
-<il>Implementation Guides
-<ul><a href="../guides/xml/index.htm">XML Schemas</a> - how to construct and use Darwin Core XML Schemas</ul>
-<ul><a href="../guides/text/index.htm">Text</a> - how to construct and use text files for capturing Darwin Core data</ul>
-</il>
-<p>
-<a href="../../translations/index.htm">Translations</a> - An index to Darwin Core documents in various languages
+The <i>Darwin Core Type Vocabulary</i> is a recommended set of terms for categorizing Darwin Core resources. 
+The Type Vocabulary includes terms from  the <i>Dublin Core Type Vocabulary</i> 
+[<A href="http://dublincore.org/documents/dcmi-type-vocabulary/">DCMI-TYPE</A>] as well as 
+additional terms that expand upon or refine the terms found there. 
+The <a href="../index.htm#dcterms:type">dcterms:type</a> term should be limited to the names of Classes and should be 
+populated with the name of the Class of the data in the resource. For example, a record of a taxonomic name should have 
+<i>Taxon</i> as the value of the <a href="../index.htm#dcterms:type">dcterms:type</a> term.
+The <a href="../index.htm#basisOfRecord">basisOfRecord</a> should be populated with the value from the 
+type vocabulary that best corresponds to the resource being shared. The 
+<a href="../index.htm#basisOfRecord">basisOfRecord</a> can be viewed as the subtype of the Class in the type term. 
 
 <A name="theterms" id="theterms"></A> 
-<H2>3. The Terms</H2>
+<H2>2. Term Index</H2>
+
+<H3>Vocabulary for dcterms:type</H3><P>
+<a href="#Occurrence">Occurrence</a>
+| <a href="#dcmitype:Event">dcmitype:Event</a>
+| <a href="#Location">Location</a>
+| <a href="#Taxon">Taxon</a>
+
+<H3>Vocabulary for basisOfRecord</H3></P>
+<a href="#PreservedSpecimen">PreservedSpecimen</a>
+| <a href="#FossilSpecimen">FossilSpecimen</a>
+| <a href="#LivingSpecimen">LivingSpecimen</a>
+| <a href="#HumanObservation">HumanObservation</a>
+| <a href="#MachineObservation">MachineObservation</a>
+| <a href="#dcmitype:StillImage">dcmitype:StillImage</a>
+| <a href="#dcmitype:MovingImage">dcmitype:MovingImage</a>
+| <a href="#dcmitype:Sound">dcmitype:Sound</a>
+| <a href="#NomenclaturalChecklist">NomenclaturalChecklist</a>
+<p>
+
+<A name="termdefs" id="termdefs"></A> 
+<H2>3. Term Definitions</H2>
+The table below contains the term information essential for most users. The complete documentation for each term
+can be found by following the link in the <i>Details</i> section of the term description. The link takes you to the appropriate
+entry in the <i>Complete History</i> [<A href="../history/index.htm">HISTORY</a>] document. The definitions for the fields 
+describing each term are:
+<P>
+</P><TABLE width="95%" border="0" align="center">
+<TBODY>
+<TR>
+<TD width="20%"><b>Term Name</b>:</TD>
+<TD width="80%">The name by which the latest version of the term is commonly known.</TD>
+</TR>
+<TR>
+<TD width="20%"><b>Identifier</b>:</TD>
+<TD width="80%">The unique identifier for the latest version of the term.</TD>
+</TR>
+<TR>
+<TD width="20%"><b>Definition</b>:</TD>
+<TD width="80%">A description of the nature of the content of the term.</TD>
+</TR>
+<TR>
+<TD width="20%"><b>Comment</b>:</TD>
+<TD width="80%">Further commentary about the usage of the term, with examples and a reference to further information.</TD>
+</TR>
+<TR>
+<TD width="20%"><b>Type of Term</b>:</TD>
+<TD width="80%">The category (property, class, vocabulary encoding scheme) to which the term belongs.</TD>
+</TR>
+<TR>
+<TD width="20%"><b>Member Of</b>:</TD>
+<TD width="80%">The Class (DCMI or Darwin Core Type Vocabulary) of which this term is a member.</TD>
+</TR>
+<TR>
+<TD width="20%"><b>Version</b>:</TD>
+<TD width="80%">The identifier for the specific version of the term.</TD>
+</TR>
+<TR>
+<TD width="20%"><b>Refines</b>:</TD>
+<TD width="80%">The name of a term of which this term is a refined (more specialized) version.</TD>
+</TR>
+<TR>
+<TD width="20%"><b>Details</b>:</TD>
+<TD width="80%">A link to the complete information about the term, including access to its history.</TD>
+</TR>
+</TBODY></TABLE>
+<P>
+
 <TABLE class="border" cellspacing="0">
 <TBODY>
 
-<H3>Dublin Core</H3><P>
-<a href="http://dublincore.org/documents/dcmi-terms/#dcmitype-StillImage">StillImage</a>
-<a href="http://dublincore.org/documents/dcmi-terms/#dcmitype-MovingImage">MovingImage</a>
-<a href="http://dublincore.org/documents/dcmi-terms/#dcmitype-Sound">Sound</a>
-<a href="http://dublincore.org/documents/dcmi-terms/#dcmitype-PhysicalObject">PhysicalObject</a>
-
-<!-- Darwin Core Index -->
-<H3>Darwin Core</H3><P>
-<a href="#PreservedSpecimen">PreservedSpecimen</a>
-<a href="#FossilSpecimen">FossilSpecimen</a>
-<a href="#LivingSpecimen">LivingSpecimen</a>
-<a href="#HumanObservation">HumanObservation</a>
-<a href="#MachineObservation">MachineObservation</a>
-<a href="#Location">Location</a>
-<a href="#Taxonomy">Taxonomy</a>
-<a href="#NomenclaturalChecklist">NomenclaturalChecklist</a>
-<p>
-
 <!-- Begin Terms Table -->
-<TR><TH colspan="2"><A name="PreservedSpecimen">Term Name: PreservedSpecimen</A></TH></TR>	<TR><TD>URI:</TD><TD>http://rs.tdwg.org/dwc/dwctype/PreservedSpecimen</TD></TR>	<TR><TD>Definition:</TD><TD>A resource describing a preserved specimen.</TD></TR>	<TR><TD>Comment:</TD><TD> See <a href="http://code.google.com/p/darwincore/wiki/PreservedSpecimen">http://code.google.com/p/darwincore/wiki/PreservedSpecimen</a></TD></TR>	<TR><TD>Type of Term:</TD><TD>http://www.w3.org/2000/01/rdf-schema#Class</TD></TR>	<TR><TD>Member Of:</TD><TD>http://rs.tdwg.org/dwc/terms/DwCType</TD></TR>	<TR><TD>Version:</TD><TD>PreservedSpecimen-2008-11-19</TD></TR>	<TR><TD>Refines:</TD><TD>http://purl.org/dc/dcmitype/PhysicalObject</TD></TR>	<TR><TD>Details:</TD><TD><a href="../history/index.htm#PreservedSpecimen-2008-11-19">PreservedSpecimen</a></TD>
-<TR><TH colspan="2"><A name="FossilSpecimen">Term Name: FossilSpecimen</A></TH></TR>	<TR><TD>URI:</TD><TD>http://rs.tdwg.org/dwc/dwctype/FossilSpecimen</TD></TR>	<TR><TD>Definition:</TD><TD>A resource describing a fossilized specimen.</TD></TR>	<TR><TD>Comment:</TD><TD> See <a href="http://code.google.com/p/darwincore/wiki/FossilSpecimen">http://code.google.com/p/darwincore/wiki/FossilSpecimen</a></TD></TR>	<TR><TD>Type of Term:</TD><TD>http://www.w3.org/2000/01/rdf-schema#Class</TD></TR>	<TR><TD>Member Of:</TD><TD>http://rs.tdwg.org/dwc/terms/DwCType</TD></TR>	<TR><TD>Version:</TD><TD>FossilSpecimen-2008-11-19</TD></TR>	<TR><TD>Refines:</TD><TD>http://rs.tdwg.org/dwc/dwctype/PreservedSpecimen</TD></TR>	<TR><TD>Details:</TD><TD><a href="../history/index.htm#FossilSpecimen-2008-11-19">FossilSpecimen</a></TD>
-<TR><TH colspan="2"><A name="LivingSpecimen">Term Name: LivingSpecimen</A></TH></TR>	<TR><TD>URI:</TD><TD>http://rs.tdwg.org/dwc/dwctype/LivingSpecimen</TD></TR>	<TR><TD>Definition:</TD><TD>A resource describing a living specimen.</TD></TR>	<TR><TD>Comment:</TD><TD> See <a href="http://code.google.com/p/darwincore/wiki/LivingSpecimen">http://code.google.com/p/darwincore/wiki/LivingSpecimen</a></TD></TR>	<TR><TD>Type of Term:</TD><TD>http://www.w3.org/2000/01/rdf-schema#Class</TD></TR>	<TR><TD>Member Of:</TD><TD>http://rs.tdwg.org/dwc/terms/DwCType</TD></TR>	<TR><TD>Version:</TD><TD>LivingSpecimen-2008-11-19</TD></TR>	<TR><TD>Refines:</TD><TD>http://purl.org/dc/dcmitype/PhysicalObject</TD></TR>	<TR><TD>Details:</TD><TD><a href="../history/index.htm#LivingSpecimen-2008-11-19">LivingSpecimen</a></TD>
-<TR><TH colspan="2"><A name="HumanObservation">Term Name: HumanObservation</A></TH></TR>	<TR><TD>URI:</TD><TD>http://rs.tdwg.org/dwc/dwctype/HumanObservation</TD></TR>	<TR><TD>Definition:</TD><TD>A resource describing an observation made by one or more people without accompanying physical evidence.</TD></TR>	<TR><TD>Comment:</TD><TD> See <a href="http://code.google.com/p/darwincore/wiki/HumanObservation">http://code.google.com/p/darwincore/wiki/HumanObservation</a></TD></TR>	<TR><TD>Type of Term:</TD><TD>http://www.w3.org/2000/01/rdf-schema#Class</TD></TR>	<TR><TD>Member Of:</TD><TD>http://rs.tdwg.org/dwc/terms/DwCType</TD></TR>	<TR><TD>Version:</TD><TD>HumanObservation-2008-11-19</TD></TR>	<TR><TD>Refines:</TD><TD></TD></TR>	<TR><TD>Details:</TD><TD><a href="../history/index.htm#HumanObservation-2008-11-19">HumanObservation</a></TD>
-<TR><TH colspan="2"><A name="MachineObservation">Term Name: MachineObservation</A></TH></TR>	<TR><TD>URI:</TD><TD>http://rs.tdwg.org/dwc/dwctype/MachineObservation</TD></TR>	<TR><TD>Definition:</TD><TD>A resource describing an observation made by a machine without accompanying physical evidence.</TD></TR>	<TR><TD>Comment:</TD><TD> See <a href="http://code.google.com/p/darwincore/wiki/MachineObservation">http://code.google.com/p/darwincore/wiki/MachineObservation</a></TD></TR>	<TR><TD>Type of Term:</TD><TD>http://www.w3.org/2000/01/rdf-schema#Class</TD></TR>	<TR><TD>Member Of:</TD><TD>http://rs.tdwg.org/dwc/terms/DwCType</TD></TR>	<TR><TD>Version:</TD><TD>MachineObservation-2008-11-19</TD></TR>	<TR><TD>Refines:</TD><TD></TD></TR>	<TR><TD>Details:</TD><TD><a href="../history/index.htm#MachineObservation-2008-11-19">MachineObservation</a></TD>
-<TR><TH colspan="2"><A name="Location">Term Name: Location</A></TH></TR>	<TR><TD>URI:</TD><TD>http://rs.tdwg.org/dwc/dwctype/Location</TD></TR>	<TR><TD>Definition:</TD><TD>A resource describing a location.</TD></TR>	<TR><TD>Comment:</TD><TD> See <a href="http://code.google.com/p/darwincore/wiki/Location">http://code.google.com/p/darwincore/wiki/Location</a></TD></TR>	<TR><TD>Type of Term:</TD><TD>http://www.w3.org/2000/01/rdf-schema#Class</TD></TR>	<TR><TD>Member Of:</TD><TD>http://rs.tdwg.org/dwc/terms/DwCType</TD></TR>	<TR><TD>Version:</TD><TD>Location-2009-01-23</TD></TR>	<TR><TD>Refines:</TD><TD></TD></TR>	<TR><TD>Details:</TD><TD><a href="../history/index.htm#Location-2009-01-23">Location</a></TD>
-<TR><TH colspan="2"><A name="Taxonomy">Term Name: Taxonomy</A></TH></TR>	<TR><TD>URI:</TD><TD>http://rs.tdwg.org/dwc/dwctype/Taxonomy</TD></TR>	<TR><TD>Definition:</TD><TD>A resource describing a taxon.</TD></TR>	<TR><TD>Comment:</TD><TD> See <a href="http://code.google.com/p/darwincore/wiki/Taxonomy">http://code.google.com/p/darwincore/wiki/Taxonomy</a></TD></TR>	<TR><TD>Type of Term:</TD><TD>http://www.w3.org/2000/01/rdf-schema#Class</TD></TR>	<TR><TD>Member Of:</TD><TD>http://rs.tdwg.org/dwc/terms/DwCType</TD></TR>	<TR><TD>Version:</TD><TD>Taxonomy-2009-01-23</TD></TR>	<TR><TD>Refines:</TD><TD></TD></TR>	<TR><TD>Details:</TD><TD><a href="../history/index.htm#Taxonomy-2009-01-23">Taxonomy</a></TD>
-<TR><TH colspan="2"><A name="NomenclaturalChecklist">Term Name: NomenclaturalChecklist</A></TH></TR>	<TR><TD>URI:</TD><TD>http://rs.tdwg.org/dwc/dwctype/NomenclaturalChecklist</TD></TR>	<TR><TD>Definition:</TD><TD>A resource describing a nomenclatural checklist.</TD></TR>	<TR><TD>Comment:</TD><TD> See <a href="http://code.google.com/p/darwincore/wiki/NomenclaturalChecklist">http://code.google.com/p/darwincore/wiki/NomenclaturalChecklist</a></TD></TR>	<TR><TD>Type of Term:</TD><TD>http://www.w3.org/2000/01/rdf-schema#Class</TD></TR>	<TR><TD>Member Of:</TD><TD>http://rs.tdwg.org/dwc/terms/DwCType</TD></TR>	<TR><TD>Version:</TD><TD>NomenclaturalChecklist-2009-01-23</TD></TR>	<TR><TD>Refines:</TD><TD></TD></TR>	<TR><TD>Details:</TD><TD><a href="../history/index.htm#NomenclaturalChecklist-2009-01-23">NomenclaturalChecklist</a></TD>
+
+<TR><TH colspan="2"><A name="Occurrence">Term Name: Occurrence</A></TH></TR>	<TR><TD>Identifier:</TD><TD>http://rs.tdwg.org/dwc/dwctype/Occurrence</TD></TR>	<TR><TD>Definition:</TD><TD>A resource describing an occurrence.</TD></TR>	<TR><TD>Comment:</TD><TD> For discussion see <a href="http://code.google.com/p/darwincore/wiki/Occurrence">http://code.google.com/p/darwincore/wiki/Occurrence</a></TD></TR>	<TR><TD>Type of Term:</TD><TD>http://www.w3.org/2000/01/rdf-schema#Class</TD></TR>	<TR><TD>Member Of:</TD><TD>http://rs.tdwg.org/dwc/terms/DwCType</TD></TR>	<TR><TD>Version:</TD><TD>Occurrence-2009-04-24</TD></TR>	<TR><TD>Refines:</TD><TD>http://purl.org/dc/dcmitype/Event</TD></TR>	<TR><TD>Details:</TD><TD><a href="../history/index.htm#Occurrence-2009-04-24">Occurrence</a></TD>
+<TR><TH colspan="2"><A name="dcmitype:Event">Term Name: dcmitype:Event</A></TH></TR>	<TR><TD>Identifier:</TD><TD>http://purl.org/dc/dcmitype/Event</TD></TR>	<TR><TD>Definition:</TD><TD>A non-persistent, time-based occurrence.</TD></TR>	<TR><TD>Comment:</TD><TD>Metadata for an event provides descriptive information that is the basis for discovery of the purpose, location, duration, and responsible agents associated with an event. For discussion see <a href="http://code.google.com/p/darwincore/wiki/Event">http://code.google.com/p/darwincore/wiki/Event</a></TD></TR>	<TR><TD>Type of Term:</TD><TD>http://www.w3.org/2000/01/rdf-schema#Class</TD></TR>	<TR><TD>Member Of:</TD><TD>http://rs.tdwg.org/dwc/terms/DwCType</TD></TR>	<TR><TD>Version:</TD><TD>http://dublincore.org/usage/terms/history/#Event-003</TD></TR>	<TR><TD>Refines:</TD><TD></TD></TR>	<TR><TD>Details:</TD><TD><a href="http://dublincore.org/usage/terms/history/#Event-003">Event</a></TD>
+<TR><TH colspan="2"><A name="Location">Term Name: Location</A></TH></TR>	<TR><TD>Identifier:</TD><TD>http://rs.tdwg.org/dwc/dwctype/Location</TD></TR>	<TR><TD>Definition:</TD><TD>A resource describing a location.</TD></TR>	<TR><TD>Comment:</TD><TD> For discussion see <a href="http://code.google.com/p/darwincore/wiki/Location">http://code.google.com/p/darwincore/wiki/Location</a></TD></TR>	<TR><TD>Type of Term:</TD><TD>http://www.w3.org/2000/01/rdf-schema#Class</TD></TR>	<TR><TD>Member Of:</TD><TD>http://rs.tdwg.org/dwc/terms/DwCType</TD></TR>	<TR><TD>Version:</TD><TD>Location-2009-04-24</TD></TR>	<TR><TD>Refines:</TD><TD></TD></TR>	<TR><TD>Details:</TD><TD><a href="../history/index.htm#Location-2009-04-24">Location</a></TD>
+<TR><TH colspan="2"><A name="Taxon">Term Name: Taxon</A></TH></TR>	<TR><TD>Identifier:</TD><TD>http://rs.tdwg.org/dwc/dwctype/Taxon</TD></TR>	<TR><TD>Definition:</TD><TD>A resource describing a taxon.</TD></TR>	<TR><TD>Comment:</TD><TD> For discussion see <a href="http://code.google.com/p/darwincore/wiki/Taxon">http://code.google.com/p/darwincore/wiki/Taxon</a></TD></TR>	<TR><TD>Type of Term:</TD><TD>http://www.w3.org/2000/01/rdf-schema#Class</TD></TR>	<TR><TD>Member Of:</TD><TD>http://rs.tdwg.org/dwc/terms/DwCType</TD></TR>	<TR><TD>Version:</TD><TD>Taxon-2009-01-23</TD></TR>	<TR><TD>Refines:</TD><TD></TD></TR>	<TR><TD>Details:</TD><TD><a href="../history/index.htm#Taxon-2009-01-23">Taxon</a></TD>
+<TR><TH colspan="2"><A name="PreservedSpecimen">Term Name: PreservedSpecimen</A></TH></TR>	<TR><TD>Identifier:</TD><TD>http://rs.tdwg.org/dwc/dwctype/PreservedSpecimen</TD></TR>	<TR><TD>Definition:</TD><TD>A resource describing a preserved specimen.</TD></TR>	<TR><TD>Comment:</TD><TD> For discussion see <a href="http://code.google.com/p/darwincore/wiki/PreservedSpecimen">http://code.google.com/p/darwincore/wiki/PreservedSpecimen</a></TD></TR>	<TR><TD>Type of Term:</TD><TD>http://www.w3.org/2000/01/rdf-schema#Class</TD></TR>	<TR><TD>Member Of:</TD><TD>http://rs.tdwg.org/dwc/terms/DwCType</TD></TR>	<TR><TD>Version:</TD><TD>PreservedSpecimen-2008-11-19</TD></TR>	<TR><TD>Refines:</TD><TD>http://rs.tdwg.org/dwc/dwctype/OccurrenceType</TD></TR>	<TR><TD>Details:</TD><TD><a href="../history/index.htm#PreservedSpecimen-2008-11-19">PreservedSpecimen</a></TD>
+<TR><TH colspan="2"><A name="FossilSpecimen">Term Name: FossilSpecimen</A></TH></TR>	<TR><TD>Identifier:</TD><TD>http://rs.tdwg.org/dwc/dwctype/FossilSpecimen</TD></TR>	<TR><TD>Definition:</TD><TD>A resource describing a fossilized specimen.</TD></TR>	<TR><TD>Comment:</TD><TD> For discussion see <a href="http://code.google.com/p/darwincore/wiki/FossilSpecimen">http://code.google.com/p/darwincore/wiki/FossilSpecimen</a></TD></TR>	<TR><TD>Type of Term:</TD><TD>http://www.w3.org/2000/01/rdf-schema#Class</TD></TR>	<TR><TD>Member Of:</TD><TD>http://rs.tdwg.org/dwc/terms/DwCType</TD></TR>	<TR><TD>Version:</TD><TD>FossilSpecimen-2008-11-19</TD></TR>	<TR><TD>Refines:</TD><TD>http://rs.tdwg.org/dwc/dwctype/OccurrenceType</TD></TR>	<TR><TD>Details:</TD><TD><a href="../history/index.htm#FossilSpecimen-2008-11-19">FossilSpecimen</a></TD>
+<TR><TH colspan="2"><A name="LivingSpecimen">Term Name: LivingSpecimen</A></TH></TR>	<TR><TD>Identifier:</TD><TD>http://rs.tdwg.org/dwc/dwctype/LivingSpecimen</TD></TR>	<TR><TD>Definition:</TD><TD>A resource describing a living specimen.</TD></TR>	<TR><TD>Comment:</TD><TD> For discussion see <a href="http://code.google.com/p/darwincore/wiki/LivingSpecimen">http://code.google.com/p/darwincore/wiki/LivingSpecimen</a></TD></TR>	<TR><TD>Type of Term:</TD><TD>http://www.w3.org/2000/01/rdf-schema#Class</TD></TR>	<TR><TD>Member Of:</TD><TD>http://rs.tdwg.org/dwc/terms/DwCType</TD></TR>	<TR><TD>Version:</TD><TD>LivingSpecimen-2008-11-19</TD></TR>	<TR><TD>Refines:</TD><TD>http://rs.tdwg.org/dwc/dwctype/OccurrenceType</TD></TR>	<TR><TD>Details:</TD><TD><a href="../history/index.htm#LivingSpecimen-2008-11-19">LivingSpecimen</a></TD>
+<TR><TH colspan="2"><A name="HumanObservation">Term Name: HumanObservation</A></TH></TR>	<TR><TD>Identifier:</TD><TD>http://rs.tdwg.org/dwc/dwctype/HumanObservation</TD></TR>	<TR><TD>Definition:</TD><TD>A resource describing an observation made by one or more people.</TD></TR>	<TR><TD>Comment:</TD><TD> For discussion see <a href="http://code.google.com/p/darwincore/wiki/HumanObservation">http://code.google.com/p/darwincore/wiki/HumanObservation</a></TD></TR>	<TR><TD>Type of Term:</TD><TD>http://www.w3.org/2000/01/rdf-schema#Class</TD></TR>	<TR><TD>Member Of:</TD><TD>http://rs.tdwg.org/dwc/terms/DwCType</TD></TR>	<TR><TD>Version:</TD><TD>HumanObservation-2008-11-19</TD></TR>	<TR><TD>Refines:</TD><TD>http://rs.tdwg.org/dwc/dwctype/OccurrenceType</TD></TR>	<TR><TD>Details:</TD><TD><a href="../history/index.htm#HumanObservation-2008-11-19">HumanObservation</a></TD>
+<TR><TH colspan="2"><A name="MachineObservation">Term Name: MachineObservation</A></TH></TR>	<TR><TD>Identifier:</TD><TD>http://rs.tdwg.org/dwc/dwctype/MachineObservation</TD></TR>	<TR><TD>Definition:</TD><TD>A resource describing an observation made by a machine.</TD></TR>	<TR><TD>Comment:</TD><TD> For discussion see <a href="http://code.google.com/p/darwincore/wiki/MachineObservation">http://code.google.com/p/darwincore/wiki/MachineObservation</a></TD></TR>	<TR><TD>Type of Term:</TD><TD>http://www.w3.org/2000/01/rdf-schema#Class</TD></TR>	<TR><TD>Member Of:</TD><TD>http://rs.tdwg.org/dwc/terms/DwCType</TD></TR>	<TR><TD>Version:</TD><TD>MachineObservation-2008-11-19</TD></TR>	<TR><TD>Refines:</TD><TD>http://rs.tdwg.org/dwc/dwctype/OccurrenceType</TD></TR>	<TR><TD>Details:</TD><TD><a href="../history/index.htm#MachineObservation-2008-11-19">MachineObservation</a></TD>
+<TR><TH colspan="2"><A name="dcmitype:StillImage">Term Name: dcmitype:StillImage</A></TH></TR>	<TR><TD>Identifier:</TD><TD>http://purl.org/dc/dcmitype/StillImage</TD></TR>	<TR><TD>Definition:</TD><TD>A resource describing a static visual representation.</TD></TR>	<TR><TD>Comment:</TD><TD>Examples include paintings, drawings, graphic designs, plans and maps. Recommended best practice is to assign the type Text to images of textual materials. Instances of the type Still Image must also be describable as instances of the broader type Image. For discussion see <a href="http://code.google.com/p/darwincore/wiki/StillImage">http://code.google.com/p/darwincore/wiki/StillImage</a></TD></TR>	<TR><TD>Type of Term:</TD><TD>http://www.w3.org/2000/01/rdf-schema#Class</TD></TR>	<TR><TD>Member Of:</TD><TD>http://purl.org/dc/terms/DCMIType</TD></TR>	<TR><TD>Version:</TD><TD>http://dublincore.org/usage/terms/history/#StillImage-003</TD></TR>	<TR><TD>Refines:</TD><TD></TD></TR>	<TR><TD>Details:</TD><TD><a href="http://dublincore.org/usage/terms/history/#StillImage-003">StillImage</a></TD>
+<TR><TH colspan="2"><A name="dcmitype:MovingImage">Term Name: dcmitype:MovingImage</A></TH></TR>	<TR><TD>Identifier:</TD><TD>http://purl.org/dc/dcmitype/MovingImage</TD></TR>	<TR><TD>Definition:</TD><TD>A series of visual representations imparting an impression of motion when shown in succession.</TD></TR>	<TR><TD>Comment:</TD><TD>Examples include animations, movies, television programs, videos, zoetropes, or visual output from a simulation. Instances of the type Moving Image must also be describable as instances of the broader type Image. For discussion see <a href="http://code.google.com/p/darwincore/wiki/MovingImage">http://code.google.com/p/darwincore/wiki/MovingImage</a></TD></TR>	<TR><TD>Type of Term:</TD><TD>http://www.w3.org/2000/01/rdf-schema#Class</TD></TR>	<TR><TD>Member Of:</TD><TD>http://purl.org/dc/terms/DCMIType</TD></TR>	<TR><TD>Version:</TD><TD>http://dublincore.org/usage/terms/history/#MovingImage-003</TD></TR>	<TR><TD>Refines:</TD><TD></TD></TR>	<TR><TD>Details:</TD><TD><a href="http://dublincore.org/usage/terms/history/#MovingImage-003">MovingImage</a></TD>
+<TR><TH colspan="2"><A name="dcmitype:Sound">Term Name: dcmitype:Sound</A></TH></TR>	<TR><TD>Identifier:</TD><TD>http://purl.org/dc/dcmitype/Sound</TD></TR>	<TR><TD>Definition:</TD><TD>A resource primarily intended to be heard.</TD></TR>	<TR><TD>Comment:</TD><TD>Examples include a music playback file format, an audio compact disc, and recorded speech or sounds. For discussion see <a href="http://code.google.com/p/darwincore/wiki/Sound">http://code.google.com/p/darwincore/wiki/Sound</a></TD></TR>	<TR><TD>Type of Term:</TD><TD>http://www.w3.org/2000/01/rdf-schema#Class</TD></TR>	<TR><TD>Member Of:</TD><TD>http://purl.org/dc/terms/DCMIType</TD></TR>	<TR><TD>Version:</TD><TD>http://dublincore.org/usage/terms/history/#Sound-003</TD></TR>	<TR><TD>Refines:</TD><TD></TD></TR>	<TR><TD>Details:</TD><TD><a href="http://dublincore.org/usage/terms/history/#Sound-003">Sound</a></TD>
+<TR><TH colspan="2"><A name="NomenclaturalChecklist">Term Name: NomenclaturalChecklist</A></TH></TR>	<TR><TD>Identifier:</TD><TD>http://rs.tdwg.org/dwc/dwctype/NomenclaturalChecklist</TD></TR>	<TR><TD>Definition:</TD><TD>A resource describing a nomenclatural checklist.</TD></TR>	<TR><TD>Comment:</TD><TD> For discussion see <a href="http://code.google.com/p/darwincore/wiki/NomenclaturalChecklist">http://code.google.com/p/darwincore/wiki/NomenclaturalChecklist</a></TD></TR>	<TR><TD>Type of Term:</TD><TD>http://www.w3.org/2000/01/rdf-schema#Class</TD></TR>	<TR><TD>Member Of:</TD><TD>http://rs.tdwg.org/dwc/terms/DwCType</TD></TR>	<TR><TD>Version:</TD><TD>NomenclaturalChecklist-2009-01-23</TD></TR>	<TR><TD>Refines:</TD><TD></TD></TR>	<TR><TD>Details:</TD><TD><a href="../history/index.htm#NomenclaturalChecklist-2009-01-23">NomenclaturalChecklist</a></TD>
 
 <!-- End Terms Table -->
-
-</TBODY></TABLE>
-
-<A name="references" id="references"></A> 
-<H2>4. References</H2>
-<TABLE width="95%" border="0" align="center">
-
-<TR>
-<TD width="10%"><A name="DCMI">[DCMI]</A></TD>
-<TD width="40%"><A href="http://dublincore.org/">http://dublincore.org/</A></TD>
-<TD width="50%">Dublin Core Metadata Initiative Web site.</TD>
-</TR>
-
-<TR>
-<TD width="10%"><A name="DCMI-TYPE">[DCMI-TYPE]</A></TD>
-<TD width="40%"><A href="http://dublincore.org/documents/dcmi-type-vocabulary/">http://dublincore.org/documents/dcmi-type-vocabulary/</A></TD>
-<TD width="50%">Dublin Core Metadata Initiative Type Vocabulary page.</TD>
-</TR>
-
-<TR>
-<TD width="10%"><A name="DWC">[DWC]</A></TD>
-<TD width="40%"><A href="../../index.htm">http://rs.tdwg.org/dwc/</A></TD>
-<TD width="50%">An introduction to the Darwin Core Standard.</TD>
-</TR>
-
-<TR>
-<TD width="10%"><A name="HISTORY">[HISTORY]</A></TD>
-<TD width="40%"><A href="../history/index.htm">http://rs.tdwg.org/dwc/terms/history/</A></TD>
-<TD width="50%">Complete historical reference to Darwin Core terms.</TD>
-</TR>
-
-<TR>
-<TD width="10%"><A name="TERMS">[TERMS]</A></TD>
-<TD width="40%"><A href="../index.htm">http://rs.tdwg.org/dwc/terms/</A></TD>
-<TD width="50%">Quick reference to recommended Darwin Core terms.</TD>
-</TR>
 
 </TBODY></TABLE>
 

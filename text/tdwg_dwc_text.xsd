@@ -1,70 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema version="0.1" 
 	xmlns:xs="http://www.w3.org/2001/XMLSchema"
-	xmlns="http://rs.tdwg.org/dwc/terms/xsd/archive/"
+	xmlns:arch="http://rs.tdwg.org/dwc/text/"
 	xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
-    targetNamespace="http://rs.tdwg.org/dwc/terms/xsd/archive/"
+    targetNamespace="http://rs.tdwg.org/dwc/text/"
     attributeFormDefault="unqualified"
     elementFormDefault="qualified">
 	<xs:import namespace="http://www.w3.org/2001/XMLSchema" schemaLocation="http://www.w3.org/2001/XMLSchema.xsd"/>
 	<xs:import namespace="http://rs.tdwg.org/dwc/terms/" schemaLocation="http://darwincore.googlecode.com/svn/trunk/xsd/tdwg_dwcterms.xsd"/>	
 	
+	<xs:element name="starArchive">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="core" type="arch:coreFileType" maxOccurs="1" minOccurs="1"/>
+				<xs:element name="extension" type="arch:extensionFileType" maxOccurs="unbounded" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attribute name="metadata" type="xs:anyURI" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	
 	<!-- The root element of the document is an archive -->
-	<xs:element name="archive" type="archiveType"/>
+	<xs:element name="archive" type="arch:archiveType"/>
 	
 	<!-- Archives contain file defitions -->
 	<xs:complexType name="archiveType">
 		<xs:sequence>
-			<xs:element name="file" type="fileType" maxOccurs="unbounded" minOccurs="1"/>
+			<xs:element name="file" type="arch:fileType" maxOccurs="unbounded" minOccurs="1"/>
+			<xs:element name="relationships" maxOccurs="1" minOccurs="0">
+				<xs:complexType>
+				<xs:sequence>
+					<xs:element name="relationship" maxOccurs="unbounded" minOccurs="1">
+						<xs:complexType>
+							<xs:sequence>
+								<!-- The file within a relationship definition specifies the location and the
+									columns that define the 'join' between the files -->
+								<xs:element name="file" maxOccurs="2" minOccurs="2">
+									<xs:complexType>
+										<xs:attribute name="location" type="xs:string" use="required"/>
+										<xs:attribute name="fieldIndex" type="xs:integer" use="required"/>
+									</xs:complexType>	
+								</xs:element>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+				</xs:complexType>
+			</xs:element>
 		</xs:sequence>
-		<xs:attribute name="fileRoot" type="xs:string" use="required"/>
-		<xs:element name="relationships" type="relationshipsType"  maxOccurs="1" minOccurs="0"/>
+		<xs:attribute name="fileRoot" type="xs:string" use="optional" default="."/>
+		<xs:attribute name="metadata" type="xs:anyURI" use="optional"/>
 	</xs:complexType>
 	
-	<!-- The file within an archive defines the description and it's fields -->
-	<xs:complexType name="fileType">
-		<xs:sequence>
-			<xs:element name="field" type="fieldType" minOccurs="1" maxOccurs="unbounded"/>
-		</xs:sequence>
+	
+	<!-- attributes shared across all file types, core or extensions -->
+	<xs:attributeGroup name="fileAttributes">
 		<xs:attribute name="location" type="xs:string" use="required"/>
 		<xs:attribute name="fieldsTerminatedBy" type="xs:string" use="optional" default=","/>
 		<xs:attribute name="linesTerminatedBy" type="xs:string" use="optional" default="\n"/>
-		<xs:attribute name="fieldsOptionallyEnclosedBy" type="xs:string" use="optional" default=""/>
-		<xs:attribute name="compression" type="compressionEnum" use="optional"/>
-		<xs:attribute name="encoding" type="encodingEnum" use="optional" default="ISO-8859-1"/>
+		<xs:attribute name="fieldsEnclosedBy" type="xs:string" use="optional" default=""/>
+		<xs:attribute name="compression" type="arch:compressionEnum" use="optional"/>
+		<xs:attribute name="encoding" type="arch:encodingEnum" use="optional" default="ISO-8859-1"/>
 		<xs:attribute name="ignoreHeaderLines" type="xs:integer" use="optional" default="0"/>
 		<xs:attribute name="dateFormat" type="xs:string" use="optional"/>
-		<xs:attribute name="rowType" type="xs:string" use="optional" default="http://rs.tdwg.org/dwc/terms/SimpleRecord"/>
+		<xs:attribute name="rowType" type="xs:string" use="optional" default="http://rs.tdwg.org/dwc/xsd/simpledarwincore/SimpleDarwinRecord"/>
+	</xs:attributeGroup>
+	
+	<!-- The file within an archive defines the description and it's fields -->
+	<xs:complexType name="fileType">
+		<xs:sequence>			
+			<xs:element name="field" type="arch:fieldType" minOccurs="1" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="arch:fileAttributes"/>
+	</xs:complexType>
+
+	<!-- a file representing the core file in a star schema -->
+	<xs:complexType name="coreFileType">
+		<xs:sequence>
+			<xs:element name="id" type="arch:fieldType" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="field" type="arch:fieldType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="arch:fileAttributes"/>
+	</xs:complexType>
+
+	<!-- a file representing an extension file in a star schema -->
+	<xs:complexType name="extensionFileType">		
+		<xs:sequence>
+			<xs:element name="coreid" type="arch:fieldType" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="field" type="arch:fieldType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="arch:fileAttributes"/>
 	</xs:complexType>
 	
 	<!-- A field represents a column within the file -->
 	<xs:complexType name="fieldType">
 		<xs:attribute name="index" type="xs:integer" use="optional"/>
-		<xs:attribute name="term" type="dwc:DarwinCoreTermsEnum" use="required"/>
+		<xs:attribute name="term" type="xs:anyURI" use="required"/>
 		<xs:attribute name="type" type="xs:anySimpleType" use="optional" default="xs:string"/>
 		<xs:attribute name="default" type="xs:string" use="optional"/>
-	</xs:complexType>	
-	
-	<!-- Relationships 'root' element -->
-	<xs:complexType name="relationshipsType">
-		<xs:sequence>
-			<xs:element name="relationship" type="relationshipType" maxOccurs="unbounded" minOccurs="1"/>
-		</xs:sequence>
-	</xs:complexType>	
-	
-	<!-- A relationship within a relationships has 2 files always -->
-	<xs:complexType name="relationshipType">
-		<xs:sequence>
-			<xs:element name="file" type="relationshipFileType" maxOccurs="2" minOccurs="2"/>
-		</xs:sequence>
-	</xs:complexType>	
-	
-	<!-- The file within a relationship definition specifies the location and the
-		 columns that define the 'join' between the files -->
-	<xs:complexType name="relationshipFileType">
-		<xs:attribute name="location" type="xs:string" use="required"/>
-		<xs:attribute name="index" type="xs:integer" use="required"/>
-	</xs:complexType>	
+	</xs:complexType>
 	
 	<!-- Enumeration for supported compression types -->
 	<xs:simpleType name="compressionEnum">
@@ -81,17 +114,6 @@
 			<xs:enumeration value="ISO-8859-1"/>
 			<xs:enumeration value="UTF-8"/>
 			<xs:enumeration value="UTF-16"/>			
-		</xs:restriction>
-	</xs:simpleType>
-	
-	<!-- Enumeration for supported encodings -->
-	<xs:simpleType name="typeEnum">
-		<xs:restriction base="xs:string">
-			<xs:enumeration value="string"/>
-			<xs:enumeration value="integer"/>
-			<xs:enumeration value="decimal"/>
-			<xs:enumeration value="date"/>
-			<xs:enumeration value="time"/>			
 		</xs:restriction>
 	</xs:simpleType>
 </xs:schema>

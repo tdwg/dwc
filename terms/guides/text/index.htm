@@ -2,27 +2,26 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf8"/>
-<title>Darwin Core Text Guidelines</title>
+<title>Darwin Core Text Guide</title>
 <link rel="schema.DwC" href="http://rs.tdwg.org/dwc/"/>
-<meta name="DC.title" content="Darwin Core Text Guidelines"/>
-<meta name="DC.description" content="Guidelines for implementing Darwin Core in XML."/>
+<meta name="DC.title" content="Darwin Core Text Guide"/>
+<meta name="DC.description" content="Guidelines for implementing Darwin Core in Text files."/>
 <meta name="DC.subject" content="biodiversity, standards"/>
 <meta name="DC.creator" content="Darwin Core Task Group"/>
-<meta name="DC.contributor" content="Tim Robertson (GBIF) &lt;trobertson@gbif.org&gt;"/>
-<meta name="DC.contributor" content="John Wieczorek (MVZ) &lt;tuco@berkeley.edu&gt;"/>
-<meta name="DC.contributor" content="Markus Döring (GBIF) &lt;mdoering@gbif.org&gt;"/>
-<meta name="DC.contributor" content="Renato De Giovanni (CRIA) &lt;renato@cria.org.br&gt;"/>
-<meta name="DC.contributor" content="Dave Vieglais (KUNHM) &lt;vieglais@ku.edu&gt;"/>
-<meta name="DC.modified" content="2009-02-20"/>
+<meta name="DC.contributor" content="Tim Robertson (GBIF)"/>
+<meta name="DC.contributor" content="John Wieczorek (MVZ)"/>
+<meta name="DC.contributor" content="Markus Döring (GBIF)"/>
+<meta name="DC.contributor" content="Renato De Giovanni (CRIA)"/>
+<meta name="DC.contributor" content="Dave Vieglais (KUNHM)"/>
+<meta name="DC.modified" content="2009-04-28"/>
 <meta name="DC.dateAccepted" content="2009-02-12"/>
 <meta name="DC.format" content="text/html"/>
-<meta name="DC.identifier" content="http://rs.tdwg.org/dwc/2009-02-20/terms/guides/text"/>
+<meta name="DC.identifier" content="http://rs.tdwg.org/dwc/2009-04-28/terms/guides/text"/>
+<meta name="DC.replaces" content="http://rs.tdwg.org/dwc/2009-02-20/terms/guides/text/"/>
 <meta name="DC.publisher" content="Biodiversity Information Standards TDWG"/>
 <meta name="DC.rights" content=""/>
 <meta name="DC.accessRights" content="public"/>
-<meta name="DC.bibliographicCitation" content="Darwin Core Text Guidelines. 2009"/>
-<meta name="DC.isReplacedBy" content=""/>
-<meta name="DC.replaces" content=""/>
+<meta name="DC.bibliographicCitation" content="Darwin Core Text Guide. 2009"/>
 <meta name="DC.language" content="en"/>
 <link rel="meta" href="http://www.tdwg.org/"/>
 <link rel="stylesheet" href="../../../DarwinCore_files/default.css" type="text/css"/>
@@ -31,23 +30,58 @@
 <BODY>
 <DIV class="header">
 
-<TABLE width="100%" cellspacing="0" cellpadding="0" bgcolor="#617394">
-<TBODY><TR>
-<TD width="70"><A href="http://www.tdwg.org"><IMG src="../../../DarwinCore_files/TDWGlogo_Twiki.gif" width="150" height="70" alt="Biodiversity Information Standards (TDWG) logo"></A></TD>
-<TD width="100%" height="70" align="right" valign="top">
-</TABLE>
+<TABLE width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#617394"><TBODY>
+<TD><A href="http://www.tdwg.org"><IMG src="../../../DarwinCore_files/TDWGlogo_Twiki.gif" width="148" height="89" alt="Biodiversity Information Standards (TDWG) logo"></A></TD>
+<TD width="100%" height="100" align="right" valign="top">
+</TBODY></TABLE>
 
-<H1>Darwin Core Text Guidelines</H1>
+<TABLE width="100%" cellspacing="0" cellpadding="0" border="0">
+  <TBODY>
+    <TR>
+      <TD width="15%" cellspacing="0" cellpadding="0" bgcolor="#617394">
+        <div id="menu">
+          <div id="nav" class="topMenu">
+	    <div class="menuItem level1"><a href="../../../index.htm" onfocus="blurLink(this);">Introduction</a></div>
+<!--	    <div class="menuItem"><a href="../../../index.htm#glossary" onfocus="blurLink(this);">Glossary</a></div> -->
+	    <div class="subMenu"><div class="menuItem"><a href="../../../index.htm#references" onfocus="blurLink(this);">References</a></div></div>
+	    <div class="menuItem level1"><a href="../../index.htm" onfocus="blurLink(this);">Quick Reference Guide</a></div>
+	    <div class="menuItem level1"><a href="../../simple/index.htm" onfocus="blurLink(this);">Simple Darwin Core</a></div>
+	    <div class="menuItem level1"><a href="../../type-vocabulary/index.htm" onfocus="blurLink(this);">Type Vocabulary</a></div>
+	    <div class="separator"><hr/></div>
+	    <div class="menuItem level1"><a href="../../namespace/index.htm" onfocus="blurLink(this);">Namespace Policy</a></div>
+	    <div class="menuItem level1"><a href="../xml/index.htm" onfocus="blurLink(this);">XML Guide</a></div>
+	    <div class="menuItem level1 highlighted"><a href="../text/index.htm" onfocus="blurLink(this);">Text Guide</a></div>
+	    <div class="subMenu"><div class="menuItem"><a href="./index.htm#introduction" onfocus="blurLink(this);">Introduction</a></div></div>
+	    <div class="subMenu"><div class="menuItem"><a href="./index.htm#metafile" onfocus="blurLink(this);">Metafile Content</a></div></div>
+	    <div class="subMenu"><div class="menuItem"><a href="./index.htm#implement" onfocus="blurLink(this);">Implementation Guide</a></div></div>
+	    <div class="subMenu"><div class="menuItem"><a href="./index.htm#database" onfocus="blurLink(this);">Database Example</a></div></div>
+	    <div class="subMenu"><div class="menuItem"><a href="./index.htm#consumers" onfocus="blurLink(this);">Consumer Guide</a></div></div>
+	    <div class="separator"><hr/></div>
+	    <div class="menuItem level1"><a href="../../history/index.htm" onfocus="blurLink(this);">Complete History</a></div>
+	    <div class="menuItem level1"><a href="../../history/decisions/index.htm" onfocus="blurLink(this);">Decision History</a></div>
+	    <div class="menuItem level1"><a href="../../history/dwctoabcd/index.htm" onfocus="blurLink(this);">Mapping to ABCD</a></div>
+	    <div class="menuItem level1"><a href="../../history/versions/index.htm" onfocus="blurLink(this);">Mapping to Old Versions</a></div>
+	    <div class="separator"><hr/></div>
+	    <div class="menuItem level1"><a href="../../../translations/index.htm" onfocus="blurLink(this);">Translations</a></div>
+          </div>
+        </div>
+      </TD>
+      <TD>
+<center><H1>Darwin Core Text Guide</H1></center>
 <P>
 <TABLE cellspacing="0" class="docinfo">
 	<TBODY>
 <TR>
 <TH>Title:</TH>
-<TD>Darwin Core Text Guidelines</TD>
+<TD>Darwin Core Text Guide</TD>
 </TR>
 <TR>
 <TH>Date Issued:</TH>
 <TD>2009-02-12</TD>
+</TR>
+<TR>
+<TH>Date Modified:</TH>
+<TD>2009-04-28</TD>
 </TR>
 <TR>
 <TH>Abstract:</TH>
@@ -55,7 +89,7 @@
 </TR>
 <TR>
 <TH>Contributors:</TH>
-<TD>Tim Robertson (GBIF)<trobertson@gbif.org>, John Wieczorek (MVZ)<tuco@berkeley.edu>, Markus Döring (GBIF)<mdoering@gbif.org>, Renato De Giovanni (CRIA)<renato@cria.org.br>, Dave Vieglais (KUNHM)<vieglais@ku.edu></TD>
+<TD>Tim Robertson (GBIF), Markus D&#246;ring (GBIF), John Wieczorek (MVZ), Renato De Giovanni (CRIA), Dave Vieglais (KUNHM)</TD>
 </TR>
 <TR>
 <TH>Legal:</TH>
@@ -63,7 +97,7 @@
 </TR>
 <TR>
 <TH>Part of TDWG Standard:</TH>
-<TD>***URL to DwC Standard*** goes here</TD>
+<TD>***URL to DwC Standard*** will go here</TD>
 </TR>
 <TR>
 <TH>Creator:</TH>
@@ -71,33 +105,24 @@
 </TR>
 <TR>
 <TH>Identifier:</TH>
-<TD>http://rs.tdwg.org/dwc/2009-02-20/terms/guides/text/</TD>
+<TD>http://rs.tdwg.org/dwc/2009-04-28/terms/guides/text/</TD>
 </TR>
 <TR><TH>Latest Version:</TH>
 <TD><A href="http://rs.tdwg.org/dwc/terms/guides/text/index.htm">http://rs.tdwg.org/dwc/terms/guides/text/</A></TD>
 </TR>
 <TR>
 <TH>Replaces:</TH>
-<TD>Not applicable</A></TD>
+<TD><a href="http://rs.tdwg.org/dwc/2009-02-20/terms/guides/text/index.htm">http://rs.tdwg.org/dwc/2009-02-20/terms/guides/text/</A></TD>
 </TR>
 <TR>
 <TH>Document Status:</TH>
-<TD>This is a TDWG Request for Comment.</TD>
+<TD>Under Public Review.</TD>
 </TR>
 </TBODY></TABLE>
-
-<H2>Table of Contents</H2>
-<P>
-<TABLE width="95%" border="0" align="center"><TBODY>
-<TR><TD width="100%">1. <a href="#introduction">Introduction</a></TD></TR>
-<TR><TD width="100%">2. <a href="#guide">Document Guide</a></TD></TR>
-<TR><TD width="100%">3. <a href="#terminology">Terminology</a></TD></TR>
-<TR><TD width="100%">4. <a href="#metafile">Metafile content description</a></TD></TR>
-<TR><TD width="100%">5. <a href="#general">General implementation recommendations</a></TD></TR>
-<TR><TD width="100%">6. <a href="#database">Database exporting examples</a></TD></TR>
-<TR><TD width="100%">7. <a href="#consumers">Guideline for consumers</a></TD></TR>
-<TR><TD width="100%">8. <a href="#references">References</a></TD></TR>
-</TBODY></TABLE
+</TD>
+</TR>
+</TBODY>
+</TABLE>
 
 <A name="introduction" id="introduction"></A> 
 <H2>1. Introduction</H2>
@@ -110,12 +135,12 @@ tab delimited files etc.) by means of providing an XML metafile.<br/>
 <h3>1.1 XML versus <EM>Fielded Text</EM></h3>
 <p>
 Many resources exist on the web describing the advantages of XML (<a href="http://en.wikipedia.org/wiki/XML">http://en.wikipedia.org/wiki/XML</a>) over less structured content such as <em>fielded text</em>.  
-These guidelines <b>do not</b> promote the use of <EM>Fielded Text</EM> over XML for data files, but rather provide recommendations for how to handle such data files when necessary.  
+These guidelines <b>do not</b> promote the use of <EM>fielded Text</EM> over XML for data files, but rather provide recommendations for how to handle such data files when necessary.  
 <br/>
-2 such scenarios might be
+Two such scenarios might be
 <ul>
-	<li>The transfer of large numbers of Darwin Core <i>simple</i> records from one database to another.  
-		Typically databases are very efficient at producing and consuming (e.g.) <em>Tab file</em> output.</li>
+	<li>The transfer of large numbers of Darwin Core records and related data from one database to another.  
+		Typically databases are very efficient at producing and consuming (e.g.) comma separated text files.</li>
 	<li>The description of legacy data existing in a <em>fielded text</em> format, such that it might be automatically understood and loaded into another system.  
 		It could be that this system would then re-serve the data in another format such as XML.</li>
 </ul>
@@ -123,7 +148,7 @@ These guidelines <b>do not</b> promote the use of <EM>Fielded Text</EM> over XML
 	
 <h3>1.2 Existing Solution</h3>
 <p>
-Proposed standards exist for similar XML metafiles to describe <EM>fielded text</EM> files, such as the <a href="http://www.fieldedtext.org/">FieldedText</a> standard.  The FieldedText standard aims to offer description of any 
+Proposed standards exist for similar XML metafiles to describe <EM>fielded text</EM> files, such as the <i>Fielded Text</i> standard [<a href="http://www.fieldedtext.org/">FiELDEDTEXT</a>].  The <i>Fielded Text</i> standard aims to offer description of any 
 <EM>fielded text</EM> file including all possible permutations of content. While beneficial to the publisher, this flexibility provides significant challenges to the consumer due to the diverse options that may exist.
 </p>	
 
@@ -141,57 +166,74 @@ can be described with the following illustrative Darwin Core metafile (Namespace
     rowType="http://rs.tdwg.org/dwc/text/DarwinRecord"
     location="specimens.csv"
     ignoreHeaderLines="1"&gt;
-      &lt;field index="0" term="http://rs.tdwg.org/dwc/terms/CatalogNumber" type="xs:integer"/&gt;
-      &lt;field index="1" term="http://rs.tdwg.org/dwc/terms/ScientificName" type="xs:string"/&gt;
-      &lt;field index="2" term="http://rs.tdwg.org/dwc/terms/IndividualCount" type="xs:integer"/&gt;
+      &lt;field index="0" term="http://rs.tdwg.org/dwc/terms/catalogNumber" type="xs:integer"/&gt;
+      &lt;field index="1" term="http://rs.tdwg.org/dwc/terms/scientificName" type="xs:string"/&gt;
+      &lt;field index="2" term="http://rs.tdwg.org/dwc/terms/individualCount" type="xs:integer"/&gt;
       &lt;!-- A constant value has no index, but applies to all rows --&gt;
-      &lt;field term="http://rs.tdwg.org/dwc/terms/DatasetID" type="xs:string" default="urn:lsid:tim.lsid.tdwg.org:collections:1"/&gt;
+      &lt;field term="http://rs.tdwg.org/dwc/terms/datasetID" type="xs:string" default="urn:lsid:tim.lsid.tdwg.org:collections:1"/&gt;
   &lt;/file&gt;
 &lt;/archive&gt;
 </pre>
 </p>	 
 
-<A name="guide" id="guide"></A> 
-<H2>2. Document Guide</H2>
-Following is an index to the primary documents of the Darwin Core. Links to additional documents relevant to this page can be 
-found in the <em>References</em> section.
-<p>
-<a href="../../../index.htm">Introduction</a> - Darwin Core motivation, content, how to participate
-<p>
-<il>Darwin Core Terms
-<ul><a href="../../index.htm">Quick Reference Guide</a> - definitions of currently accepted terms.</ul>
-<ul><a href="../../history/index.htm">Complete History</a> - everything about every term that ever existed</ul>
-<ul><a href="../../history/decisions/index.htm">Decisions</a> - documentation of justifications for past changes to terms</ul>
-<ul><a href="../../namespace/index.htm">Namespace policy</a> - how to propose changes to Darwin Core</ul>
-<ul><a href="../../type-vocabulary/index.htm">Type Vocabulary</a> - list of terms for types of records supported by Darwin Core</ul>
-</il>
-<p>
-<il>Mappings
-<ul><a href="../../history/dwctoabcd/index.htm">ABCD</a> - current equivalent terms in ABCD</ul>
-<ul><a href="../../history/versions/index.htm">Versions</a> - current equivalent terms in historical versions</ul>
-</il>
-<p>
-<il>Implementation Guides
-<ul><a href="../xml/index.htm">XML Schemas</a> - how to construct and use Darwin Core XML Schemas</ul>
-<ul><a href="./index.htm">Text</a> (this document) - how to construct and use text files for capturing Darwin Core data</ul>
-</il>
-<p>
-<a href="../../../translations/index.htm">Translations</a> - An index to Darwin Core documents in various languages
-
-<A name="terminology" id="terminology"></A> 
-<H2>3. Terminology</H2>
-<DL>
-<DT><EM>Fielded Text</EM></DT>
-<DD><EM>Fielded Text</EM> refers to a format of structuring a flat text file into rows and columns; examples include comma 
-separated values(<EM>CSV</EM>) and Tab delimited files (<EM>Tab file</EM>) </DD>
-<P>
-
 <A name="metafile" id="metafile"></A> 
-<H2>4. Metafile content description</H2>
+<H2>2. Metafile Content</H2>
 <p>
-	The metafile schema is available at <a href="../../../text/tdwg_dwc_text.xsd">tdwg_dwc_text.xsd</a>.
+	Refer to the text metafile schema [<a href="../../../text/tdwg_dwc_text.xsd">TEXTSCHEMA</a>] for technical details about the 
+structure of text metafiles. There are 2 differing formats:
+<ol>
+<li><em>archive:</em> Used to describe a single file, or to describe multiple relating files using primary and foreign keys. This is similar to a relational model and allows to describe legacy datasets very well</li>
+<li><em>starArchive:</em> A star archive has a single file for the core entity, and any number of related files.  All relating files have a field for a foreign key pointing to a core record ID. Because this resembles a star this archive is named starArchive.</li>
+</ol>
 </p>
-<h3>4.1 The &lt;archive&gt; element</h3>
+
+<h3>2.1 The &lt;starArchive&gt; element</h3>
+<p>
+	<table class="border">
+		<thead>
+			<caption>Attributes</caption>
+			<th>Attribute</th>
+			<th>Description</th>
+			<th>Required</th>
+			<th>Default</th>
+		</thead>
+		<tbody>
+			<tr>
+				<td class=""><em>metadata</em></td>
+				<td>Contains a qualified Uniform Resource Locator (URL) defining the location of a metadata description of the entire archive.
+				The format of the metadata is not prescribed, but a standardized format like EML, FGDC or the ISO 15115 family is recommended.
+				</td>
+				<td></td>
+				<td/>
+			</tr>
+		</tbody>
+	</table>
+	<table class="border">
+		<thead>
+			<caption>Elements</caption>
+			<th>Element</th>
+			<th>Description</th>
+		</thead>
+		<tbody>
+			<tr>
+				<td class=""><a href="#fileTag">&lt;core&gt;</a></td>
+				<td>An &lt;starArchive&gt; will contain exactly one <a href="#fileTag">&lt;core&gt;</a> element, representing the core data file being described.
+				In addition to the general file attributes described below a core file also has an explicit &lt;id&gt; field, a unique ID for each row in the file. 
+				</td>
+			</tr>
+			<tr>
+				<td class=""><a href="#fileTag">&lt;extension&gt;</a></td>
+				<td>An &lt;starArchive&gt; will contain zero to many <a href="#fileTag">&lt;extension&gt;</a> elements, each representing an individual file directly related to the core.
+				In addition to the general file attributes described below every extension file must have an explicit &lt;coreid&gt; field, 
+				i.e. a foreign key pointing to an ID of a row in the core file. The extension file itself does not have to have a unique ID field and many rows can point to the same core record. 
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</p>
+
+
+<h3>2.2 The &lt;archive&gt; element</h3>
 <p>
 	<table class="border">
 		<thead>
@@ -210,6 +252,14 @@ separated values(<EM>CSV</EM>) and Tab delimited files (<EM>Tab file</EM>) </DD>
 				<td>&#10003;</td>
 				<td/>
 			</tr>
+			<tr>
+				<td class=""><em>metadata</em></td>
+				<td>Contains a qualified Uniform Resource Locator (URL) defining the location of a metadata description of the entire archive.
+				The format of the metadata is not prescribed, but a standardized format like EML, FGDC or the ISO 15115 family is recommended.
+				</td>
+				<td></td>
+				<td/>
+			</tr>
 		</tbody>
 	</table>
 	<table class="border">
@@ -226,7 +276,8 @@ separated values(<EM>CSV</EM>) and Tab delimited files (<EM>Tab file</EM>) </DD>
 		</tbody>
 	</table>
 </p>
-<h3><a name="fileTag">4.2 The &lt;file&gt; element</a></h3>
+
+<h3><a name="fileTag">2.3 The &lt;file&gt; element</a></h3>
 <p>
 	<table class="border">
 		<thead>
@@ -239,9 +290,41 @@ separated values(<EM>CSV</EM>) and Tab delimited files (<EM>Tab file</EM>) </DD>
 		<tbody>
 			<tr>
 				<td class=""><a name="fileTag-location"><em>location</em></a></td>
-				<td>Specifies the location of the file relative to the fileRoot - e.g. dwc-data.txt</td>
+				<td>Specifies the location of the file relative to the fileRoot (e.g. dwc-data.txt)</td>
 				<td>&#10003;</td>
 				<td/>
+			</tr>
+			<tr>
+				<td class=""><em>rowType</em></td>
+				<td>
+				A Unified Resource Identifier (URI) for the term identifying the class of data represented by each row, e.g. http://rs.tdwg.org/dwc/terms/Occurrence or http://rs.tdwg.org/dwc/terms/Taxon.
+				See <a href="../../index.htm">Darwin Core Terms</a> definitions.  Additional classes may be referenced by URI and defined outside the Darwin Core specification.
+				The row type defaults to the ambigous SimpleDarwinRecord.
+				For convienience the classes defined by Darwin Core are listed below:
+					<dl>
+						<dt>Simple Darwin Record</dt>
+						<dd>http://rs.tdwg.org/dwc/xsd/simpledarwincore/SimpleDarwinRecord</dd>
+						<dt>Dataset</dt>
+						<dd>http://rs.tdwg.org/dwc/terms/Dataset</dd>
+						<dt>Occurrence</dt>
+						<dd>http://rs.tdwg.org/dwc/terms/Occurrence</dd>
+						<dt>Event</dt>
+						<dd>http://rs.tdwg.org/dwc/terms/Event</dd>
+						<dt>Location</dt>
+						<dd>http://purl.org/dc/terms/Location</dd>
+						<dt>Identification</dt>
+						<dd>http://rs.tdwg.org/dwc/terms/Identification</dd>
+						<dt>Taxon</dt>
+						<dd>http://rs.tdwg.org/dwc/terms/Taxon</dd>
+						<dt>ResourceRelationship</dt>
+						<dd>http://rs.tdwg.org/dwc/terms/ResourceRelationship</dd>
+						<dt>MeasurementOrFact</dt>
+						<dd>http://rs.tdwg.org/dwc/terms/MeasurementOrFact</dd>
+					</dl>
+					
+				</td>
+				<td>&#10003;</td>
+				<td>http://rs.tdwg.org/dwc/xsd/simpledarwincore/SimpleDarwinRecord</td>
 			</tr>
 			<tr>
 				<td class=""><em>fieldsTerminatedBy</em></td>
@@ -255,6 +338,14 @@ separated values(<EM>CSV</EM>) and Tab delimited files (<EM>Tab file</EM>) </DD>
 				<td/>
 				<td>\n</td>
 			</tr>
+			<tr>
+				<td class=""><em>fieldsEnclosedBy</em></td>
+				<td>Specifies the character optionally used at the start and end of each field, i.e. the character enclosing an entire field.
+				In CSV files frequently &quot; can be found, but the default is no enclosing character.</td>
+				<td/>
+				<td></td>
+			</tr>
+			
 			<tr>
 				<td class=""><em>compression</em></td>
 				<td>Specifies the compression used for the file.  May be omitted or specified as one of:
@@ -289,39 +380,6 @@ separated values(<EM>CSV</EM>) and Tab delimited files (<EM>Tab file</EM>) </DD>
 				<td>Specifies the number lines to ignore from the beginning of the file.  This can be used to ignore files with column headings or preamble comments for example.</td>
 				<td/>
 				<td>0</td>
-			</tr>
-			<tr>
-				<td class=""><em>rowType</em></td>
-				<td>
-				A Unified Resource Identifier (URI) for the term identifying the class of data represented by each row. 
-				See <a href="../../index.htm">Darwin Core Terms</a> definitions.  Additional classes may be referenced by URI and defined outside the Darwin Core specification.
-				For convienience the classes defined by Darwin Core are listed below:
-					<dl>
-						<dt>Simple Darwin Core</dt>
-						<dd>http://rs.tdwg.org/dwc/terms/text/DarwinRecord</dd>
-						<dt>Dataset</dt>
-						<dd>http://rs.tdwg.org/dwc/terms/Dataset</dd>
-						<dt>Sample</dt>
-						<dd>http://rs.tdwg.org/dwc/terms/Sample</dd>
-						<dt>SamplingEvent</dt>
-						<dd>http://rs.tdwg.org/dwc/terms/SamplingEvent</dd>
-						<dt>SamplingLocation</dt>
-						<dd>http://rs.tdwg.org/dwc/terms/SamplingLocation</dd>
-						<dt>Identification</dt>
-						<dd>http://rs.tdwg.org/dwc/terms/Identification</dd>
-						<dt>Taxon</dt>
-						<dd>http://rs.tdwg.org/dwc/terms/Taxon</dd>
-						<dt>RelatedResource</dt>
-						<dd>http://rs.tdwg.org/dwc/terms/RelatedResource</dd>
-						<dt>SampleAttribute</dt>
-						<dd>http://rs.tdwg.org/dwc/terms/SampleAttribute</dd>
-						<dt>EventAttribute</dt>
-						<dd>http://rs.tdwg.org/dwc/terms/EventAttribute</dd>
-					</dl>
-					
-				</td>
-				<td>&#10003;</td>
-				<td/>
 			</tr>
 			<tr>
 				<td class=""><em>dateFormat</em></td>
@@ -360,7 +418,7 @@ separated values(<EM>CSV</EM>) and Tab delimited files (<EM>Tab file</EM>) </DD>
 		</tbody>
 	</table>
 </p>
-<h3><a name="fieldTag">4.2 The &lt;field&gt; element</a></h3>
+<h3><a name="fieldTag">2.4 The &lt;field&gt; element</a></h3>
 <p>
 	<table class="border">
 		<thead>
@@ -389,30 +447,10 @@ separated values(<EM>CSV</EM>) and Tab delimited files (<EM>Tab file</EM>) </DD>
 			</tr>
 			<tr>
 				<td class=""><em>type</em></td>
-				<td>Specifies the type of the content represented in the column.  The following values are supported.
-				<dl>
-					<dt>string</dt>
-					<dd>Represents a sequence of characters, and should be used where no other type is appropriate</dd>
-					<dt>integer</dt>
-					<dd>Represents a whole numeric value (e.g. 123)</dd>
-					<dt>decimal</dt>
-					<dd>Represents a decimal value (e.g. 10.34).  Decimal point must be represented by the character . otherwise the field must be declared as a string type</dd>
-					<dt>dateTime</dt>
-					<dd>Represents the combination of a date and time, in the format [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm].  Valid values include 2001-10-26T21:32:52, 2001-10-26T21:32:52+02:00, 2001-10-26T19:32:52Z, 2001-10-26T19:32:52+00:00, -2001-10-26T21:32:52, and 2001-10-26T21:32:52.12679. Where this format cannot be used, the string type must be declared</dd>
-					<dt>date</dt>
-					<dd>Represents a date in the format [-]CCYY-MM-DD[Z|(+|-)hh:mm].  Valid values include 2001-10-26, 2001-10-26+02:00, 2001-10-26Z, 2001-10-26+00:00, -2001-10-26, and -20000-04-01.  Where this format cannot be used, the string type must be declared</dd>
-					<dt>time</dt>
-					<dd>Represents a time in the format hh:mm:ss[Z|(+|-)hh:mm]. Valid values include 21:32:52, 21:32:52+02:00, 19:32:52Z, 19:32:52+00:00, and 21:32:52.12679.  Where this format cannot be used, the string type must be declared</dd>
-				</dl>
-				TODO: See guidelines for type specification</td>
+				<td>Specifies the type of the content represented in the column.  This is restricted to any simple type (xs:integer, xs:nonNegativeInteger, xs:date etc)
+				See <a href="#fieldTypeGuidelines">guidelines for field types</a></td>
 				<td/>
-				<td>string</td>
-			</tr>
-			<tr>
-				<td class=""><em>format</em></td>
-				<td>TODO - finish decision on format</td>
-				<td/>
-				<td/>
+				<td>xs:string</td>
 			</tr>
 			<tr>
 				<td class=""><em>default</em></td>
@@ -423,14 +461,16 @@ separated values(<EM>CSV</EM>) and Tab delimited files (<EM>Tab file</EM>) </DD>
 		</tbody>
 	</table>
 </p>
-<A name="general" id="general"></A> 
-<H2>5. General implementation guidelines</H2>
-<H3>5.1 Single and multiple data files</H3>
-<h4>5.1.1 Single data file</h4>
+
+
+<A name="implement" id="implement"></A> 
+<H2>3. Implementation Guide</H2>
+<H3>3.1 Single and multiple data files</H3>
+<h4>3.1.1 Single data file</h4>
 In its simplest usage, a single data file can be described.  
 Specifically the file location, the row type and the field mapping are provided.
 <br/>
-<img src="images/singleDataFile.png">
+<img src="images/single.png">
 <br/>
 <pre class="example">
 &lt;!-- Namespaces omitted for example --&gt;
@@ -438,20 +478,20 @@ Specifically the file location, the row type and the field mapping are provided.
   &lt;file rowType="http://rs.tdwg.org/dwc/terms/text/DarwinRecord" 
     location="specimens.txt"&gt;
     &lt;field index="0" 
-      term="http://rs.tdwg.org/dwc/terms/CatalogNumber" 
+      term="http://rs.tdwg.org/dwc/terms/catalogNumber" 
       type="xs:integer"/&gt
     &lt;field index="1" 
-      term="http://rs.tdwg.org/dwc/terms/ScientificName" 
+      term="http://rs.tdwg.org/dwc/terms/scientificName" 
       type="xs:string"/&gt;
   &lt;/file&gt;
 &lt;/archive&gt;
 </pre>				
 	
-<h4>5.1.2 Multiple unrelated data files</h4>
+<h4>3.1.2 Multiple unrelated data files</h4>
 Multiple files containing no inter-file relationships may be described with a single metafile.
 The files must reside at the same 'root' location.  A typical example for this usage might be multiple dataset files each with a common format.
 <br/>
-<img src="images/unrelatedDataFiles.png">
+<img src="images/unrelated.png">
 <br/>
 <pre class="example">
 &lt;!-- Namespaces omitted for example --&gt;
@@ -467,7 +507,58 @@ The files must reside at the same 'root' location.  A typical example for this u
 &lt;/archive&gt;
 </pre>				
 
-<h4>5.1.3 Multiple related data files</h4>
+<h4>3.1.3 Star related data files</h4>
+When there a core data file can be designated to which all other data files are directly related, a rather complex star archive description would look like this:
+<br/>
+<img src="images/star.png">
+<br/>
+<pre class="example">
+&lt;starArchive xmlns=&quot;http://rs.tdwg.org/dwc/terms/xsd/archive/&quot;&gt;
+  &lt;core encoding=&quot;UTF-8&quot; fieldsTerminatedBy=&quot;,&quot; linesTerminatedBy=&quot;\n&quot; fieldsEnclosedBy='&quot;' ignoreHeaderLines=&quot;1&quot; 
+   rowType=&quot;http://rs.tdwg.org/dwc/terms/Taxon&quot;  location=&quot;whales.txt&quot;&gt;
+    &lt;id index=&quot;0&quot; term=&quot;http://rs.tdwg.org/dwc/terms/taxonID&quot;/&gt;
+    &lt;field index=&quot;1&quot; term=&quot;http://purl.org/dc/terms/modified&quot;/&gt;
+    &lt;field index=&quot;2&quot; term=&quot;http://rs.tdwg.org/dwc/terms/scientificName&quot;/&gt;
+    &lt;field index=&quot;3&quot; term=&quot;http://rs.tdwg.org/dwc/terms/acceptedTaxonID&quot;/&gt;
+    &lt;field index=&quot;4&quot; term=&quot;http://rs.tdwg.org/dwc/terms/higherTaxonID&quot;/&gt;
+    &lt;field index=&quot;5&quot; term=&quot;http://rs.tdwg.org/dwc/terms/basionymID&quot;/&gt;
+  &lt;/core&gt;
+  &lt;extension encoding=&quot;UTF-8&quot; fieldsTerminatedBy=&quot;,&quot; linesTerminatedBy=&quot;\n&quot; fieldsEnclosedBy='&quot;' ignoreHeaderLines=&quot;1&quot;
+   rowType=&quot;http://rs.gbif.org/terms/1.0/VernacularName&quot; location=&quot;vernacular_names.txt&quot;&gt;
+    &lt;coreid index=&quot;0&quot; term=&quot;http://rs.tdwg.org/dwc/terms/taxonID&quot;/&gt;
+    &lt;field index=&quot;1&quot; term=&quot;http://rs.gbif.org/terms/1.0/vernacularName&quot;/&gt;
+    &lt;field index=&quot;2&quot; term=&quot;http://purl.org/dc/terms/language&quot;/&gt;
+    &lt;field index=&quot;3&quot; term=&quot;http://rs.tdwg.org/dwc/terms/country&quot;/&gt;
+  &lt;/extension&gt;
+  &lt;extension encoding=&quot;UTF-8&quot; fieldsTerminatedBy=&quot;,&quot; linesTerminatedBy=&quot;\n&quot; fieldsEnclosedBy='&quot;' ignoreHeaderLines=&quot;1&quot;
+   rowType=&quot;http://rs.gbif.org/terms/1.0/Types&quot; location=&quot;types.txt&quot;&gt;
+    &lt;coreid index=&quot;0&quot; term=&quot;http://rs.tdwg.org/dwc/terms/taxonID&quot;/&gt;
+    &lt;field index=&quot;1&quot; term=&quot;http://purl.org/dc/terms/bibliographicCitation&quot;/&gt;
+    &lt;field index=&quot;2&quot; term=&quot;http://rs.tdwg.org/dwc/terms/catalogNumber&quot;/&gt;
+    &lt;field index=&quot;3&quot; term=&quot;http://rs.tdwg.org/dwc/terms/collectionCode&quot;/&gt;
+    &lt;field index=&quot;4&quot; term=&quot;http://rs.tdwg.org/dwc/terms/institutionCode&quot;/&gt;
+    &lt;field index=&quot;5&quot; term=&quot;http://rs.tdwg.org/dwc/terms/typeStatus&quot;/&gt;
+  &lt;/extension&gt;
+    &lt;extension encoding=&quot;UTF-8&quot; fieldsTerminatedBy=&quot;,&quot; linesTerminatedBy=&quot;\n&quot; fieldsEnclosedBy='&quot;' ignoreHeaderLines=&quot;1&quot;
+     rowType=&quot;http://rs.gbif.org/terms/1.0/Description&quot; location=&quot;description.txt&quot;&gt;
+    &lt;coreid index=&quot;0&quot; term=&quot;http://rs.tdwg.org/dwc/terms/taxonID&quot;/&gt;
+    &lt;field index=&quot;1&quot; term=&quot;http://purl.org/dc/terms/title&quot;/&gt;
+    &lt;field index=&quot;2&quot; term=&quot;http://purl.org/dc/terms/description&quot;/&gt;
+    &lt;field index=&quot;3&quot; term=&quot;http://purl.org/dc/terms/language&quot;/&gt;
+    &lt;field index=&quot;4&quot; term=&quot;http://purl.org/dc/terms/type&quot;/&gt;
+    &lt;field index=&quot;5&quot; term=&quot;http://purl.org/dc/terms/source&quot;/&gt;
+  &lt;/extension&gt;
+    &lt;extension encoding=&quot;UTF-8&quot; fieldsTerminatedBy=&quot;,&quot; linesTerminatedBy=&quot;\n&quot; fieldsEnclosedBy='&quot;' ignoreHeaderLines=&quot;1&quot;
+     rowType=&quot;http://rs.gbif.org/terms/1.0/Distribution&quot; location=&quot;distribution.txt&quot;&gt;
+    &lt;coreid index=&quot;0&quot; term=&quot;http://rs.tdwg.org/dwc/terms/taxonID&quot;/&gt;
+    &lt;field index=&quot;1&quot; term=&quot;http://rs.tdwg.org/dwc/terms/country&quot;/&gt;
+    &lt;field index=&quot;2&quot; term=&quot;http://www.iucn.org/redlist/3.1/threatStatus&quot;/&gt;
+    &lt;field index=&quot;3&quot; term=&quot;http://purl.org/dc/terms/source&quot;/&gt;
+  &lt;/extension&gt;
+&lt;/starArchive&gt;
+</pre>
+
+<h4>3.1.4 Multiple related data files</h4>
 When the content of one data file relates to another data file, a relationship can be expressed in the metafile using the &lt;relationships&gt; element.  
 In database terminology, this is equivalent to defining a foreign key constraint from one table to another.  
 However, where a database has the ability to enforce this relationship, <em>fielded text</em> files do not have this capability.  The following guidelines are recommended:<br/>
@@ -478,23 +569,23 @@ However, where a database has the ability to enforce this relationship, <em>fiel
 </ul>
 Therefore care must be taken by the data provider that the relationship expressed is indeed valid, and that the data integrity is not broken.
 <br/>
-<img src="images/relatedDataFiles.png">
+<img src="images/related.png">
 <br/>
 <pre class="example">
 &lt;!-- Namespaces omitted for example --&gt;
 &lt;archive fileRoot="http://mydata.org/"&gt;
   &lt;file rowType="http://rs.tdwg.org/dwc/terms/Sample" 
     location="specimens.txt"&gt;
-    &lt;field index="0" term="http://rs.tdwg.org/dwc/terms/CatalogNumber"/&gt;
-    &lt;field index="1" term="http://rs.tdwg.org/dwc/terms/IndividualCount"/&gt;
+    &lt;field index="0" term="http://rs.tdwg.org/dwc/terms/catalogNumber"/&gt;
+    &lt;field index="1" term="http://rs.tdwg.org/dwc/terms/individualCount"/&gt;
   &lt;/file&gt;
 	
   &lt;file rowType="http://rs.tdwg.org/dwc/terms/Identification" 
     location="identifications.txt"&gt;
-    &lt;field index="0" term="http://rs.tdwg.org/dwc/terms/IdentificationID"/&gt;
-    &lt;field index="1" term="http://rs.tdwg.org/dwc/terms/IdentifiedBy"/&gt;
-    &lt;field index="2" term="http://rs.tdwg.org/dwc/terms/CatalogNumber"/&gt;
-    &lt;field index="3" term="http://rs.tdwg.org/dwc/terms/ScientificName"/&gt;
+    &lt;field index="0" term="http://rs.tdwg.org/dwc/terms/identificationID"/&gt;
+    &lt;field index="1" term="http://rs.tdwg.org/dwc/terms/identifiedBy"/&gt;
+    &lt;field index="2" term="http://rs.tdwg.org/dwc/terms/catalogNumber"/&gt;
+    &lt;field index="3" term="http://rs.tdwg.org/dwc/terms/scientificName"/&gt;
   &lt;/file&gt;
 	
   &lt;relationships&gt;
@@ -505,14 +596,14 @@ Therefore care must be taken by the data provider that the relationship expresse
   &lt;/relationships&gt;	
 &lt;/archive&gt;
 </pre>				
-<br/>
 <p>
-<b>Note:</b><br/>
+<b>Note:</b>
 Although feasible, it is <b>not</b> recommended to express a relationship from one file to itself.  
 This recommendation is made since no description of the relationship type may be expressed.
 </p>
 
-<H3>5.2 Field Type Guidelines</H3>
+<A name="fieldTypeGuidelines" id="fieldTypeGuidelines"></A> 	
+<H3>3.2 Field Type Guidelines</H3>
 <p>
 Most terms should be typed as "string" with the exception of the following terms, which are listed with proposed types:
 </p>
@@ -524,43 +615,40 @@ Most terms should be typed as "string" with the exception of the following terms
 			<th>Comments</th>
 		</thead>
 		<tbody>
-			<tr><td>http://rs.tdwg.org/dwc/terms/DateIdentified</td><td>dateTime, date, string</td><td></td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/EarliestDateCollected</td><td>dateTime, date, string</td><td></td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/EventAttributeDeterminedDate</td><td>dateTime, date, string</td><td></td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/LatestDateCollected</td><td>dateTime, date, string</td><td></td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/SampleAttributeDeterminedDate</td><td>dateTime, date, string</td><td></td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/VerbatimCollectingDate</td><td>dateTime, date, string</td><td></td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/CoordinatePrecision</td><td>decimal, int, string</td><td></td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/CoordinateUncertaintyInMeters</td><td>decimal, int, string</td><td></td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/DistanceAboveSurfaceInMetersMaximum</td><td>decimal, int, string</td><td></td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/DistanceAboveSurfaceInMetersMinimum</td><td>decimal, int, string</td><td></td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/EventAttributeAccuracy</td><td>decimal, int, string</td><td></td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/EventAttributeValue</td><td>decimal, int, string</td><td></td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/MaximumDepthInMeters</td><td>decimal, int, string</td><td></td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/MaximumElevationInMeters</td><td>decimal, int, string</td><td></td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/MinimumDepthInMeters</td><td>decimal, int, string</td><td></td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/MinimumElevationInMeters</td><td>decimal, int, string</td><td></td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/SampleAttributeAccuracy</td><td>decimal, int, string</td><td></td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/SampleAttributeValue</td><td>decimal, int, string</td><td></td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/VerbatimDepth</td><td>decimal, int, string</td><td></td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/DecimalLatitude</td><td>decimal, string</td><td></td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/DecimalLongitude</td><td>decimal, string</td><td></td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/CatalogNumberNumeric</td><td>int</td><td></td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/DayOfMonth</td><td>int, string</td><td>using 1 as 1st of the month</td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/EndDayOfYear</td><td>int, string</td><td></td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/IndividualCount</td><td>int, string</td><td></td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/MonthOfYear</td><td>int, string</td><td>using 1 as January</td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/PointRadiusSpatialFit</td><td>int, string</td><td></td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/StartDayOfYear</td><td>int, string</td><td>using 1 as January 1st</td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/YearSampled</td><td>int, string</td><td>in the format CCYY e.g. 2001</td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/EndTimeOfDay</td><td>time, string</td><td></td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/StartTimeOfDay</td><td>time, string</td><td></td></tr>			
+			<!-- decimal -->
+			<tr><td>http://rs.tdwg.org/dwc/terms/maximumDepthInMeters</td><td>xs:double, xs:integer</td><td></td></tr>
+			<tr><td>http://rs.tdwg.org/dwc/terms/minimumDepthInMeters</td><td>xs:double, xs:integer</td><td></td></tr>
+			<tr><td>http://rs.tdwg.org/dwc/terms/maximumElevationInMeters</td><td>xs:double, xs:integer</td><td></td></tr>
+			<tr><td>http://rs.tdwg.org/dwc/terms/minimumElevationInMeters</td><td>xs:double, xs:integer</td><td></td></tr>
+			<tr><td>http://rs.tdwg.org/dwc/terms/maximumDistanceAboveSurfaceInMeters</td><td>xs:double, xs:integer</td><td></td></tr>
+			<tr><td>http://rs.tdwg.org/dwc/terms/minimumDistanceAboveSurfaceInMeters</td><td>xs:double, xs:integer</td><td></td></tr>
+			<tr><td>http://rs.tdwg.org/dwc/terms/decimalLatitude</td><td>xs:double</td><td></td></tr>
+			<tr><td>http://rs.tdwg.org/dwc/terms/decimalLongitude</td><td>xs:double</td><td></td></tr>
+			<tr><td>http://rs.tdwg.org/dwc/terms/coordinateUncertaintyInMeters</td><td>xs:double, xs:integer</td><td></td></tr>
+			<tr><td>http://rs.tdwg.org/dwc/terms/pointRadiusSpatialFit</td><td>xs:double</td><td></td></tr>
+			<tr><td>http://rs.tdwg.org/dwc/terms/footprintSpatialFit</td><td>xs:double</td><td></td></tr>
+			<!-- integer -->
+			<tr><td>http://rs.tdwg.org/dwc/terms/individualCount</td><td>xs:integer</td><td></td></tr>
+			<tr><td>http://rs.tdwg.org/dwc/terms/startDayOfYear</td><td>xs:integer</td><td>using 1 as January 1st</td></tr>
+			<tr><td>http://rs.tdwg.org/dwc/terms/endDayOfYear</td><td>xs:integer</td><td>using 6 as January 6th</td></tr>
+			<tr><td>http://rs.tdwg.org/dwc/terms/day</td><td>xs:integer</td><td>using 1 as 1st of the month</td></tr>
+			<tr><td>http://rs.tdwg.org/dwc/terms/month</td><td>xs:integer</td><td>using 1 as January</td></tr>
+			<tr><td>http://rs.tdwg.org/dwc/terms/year</td><td>xs:integer</td><td>in the format CCYY e.g. 2001</td></tr>
+			<!-- dateTime -->
+			<tr><td>http://purl.org/dc/terms/modified</td><td>xs:dateTime, xs:date</td><td></td></tr>
+			<!-- time -->
+			<tr><td>http://rs.tdwg.org/dwc/terms/eventTime</td><td>xs:time</td><td></td></tr>
+			<!-- date -->
+			<tr><td>http://rs.tdwg.org/dwc/terms/eventDate</td><td>xs:date</td><td></td></tr>
+			<tr><td>http://rs.tdwg.org/dwc/terms/dateIdentified</td><td>xs:date</td><td></td></tr>
+			<tr><td>http://rs.tdwg.org/dwc/terms/relationshipEstablishedDate</td><td>xs:date</td><td></td></tr>
+			<tr><td>http://rs.tdwg.org/dwc/terms/measurementDeterminedDate</td><td>xs:date</td><td></td></tr>
 		</tbody>
 	</table>
 
 <A name="database" id="database"></A> 
-<H2>6. Database exporting examples</H2>
-<H3>6.1 Mysql</H3>
+<H2>4. Database Example</H2>
+<H3>4.1 Mysql</H3>
 Using the <code>select into outfile</code> command it is very easy to produce <em>fielded text</em> from mysql.<br/>
 The encoding of the resulting file will depend on the server variables and collations used, and might need modified before the operation.
 It is worth noting that mysql will represent NULL values as \N by default and therefore the isNull() function must be used.
@@ -576,7 +664,7 @@ FROM
 </pre>
 
 <A name="consumers" id="consumers"></A> 
-<h2>7. Guidelines for consumers</h2>
+<h2>5. Consumer Guide</h2>
 It goes beyond the scope of these guidelines to specify how a consumer must deal with related data.  However, the following procedure is recommended for a database import:
 <ul>
 	<li>Create tables for each described file with no constraints</li>
@@ -584,61 +672,8 @@ It goes beyond the scope of these guidelines to specify how a consumer must deal
 	<li>Check data integrity by testing the expressed join</li>
 	<li>Copy data into tables enforcing the relationship, or add constraint to newly created tables</li>
 </ul>
-
-<A name="references" id="references"></A> 
-<H2>8. References</H2>
-<TABLE width="95%" border="0" align="center">
-<TBODY>
-
-<TR>
-<TD width="10%"><A name="DCTERMS">[DCTERMS]</A></TD>
-<TD width="40%"><A href="http://dublincore.org/documents/dcmi-terms/">http://dublincore.org/documents/dcmi-terms/</A></TD>
-<TD width="50%">Dublin Core Metadata terms.</TD>
-</TR>
-
-<TR>
-<TD width="10%"><A name="FIELDEDTEXT"></A>[FIELDEDTEXT]</TD>
-<TD width="40%"><A href="http://www.fieldedtext.org/">http://www.fieldedtext.org/</A></TD>
-<TD width="50%">Fielded Text proposed standard.</TD>
-</TR>
-
-<TR>
-<TD width="10%"><A name="HISTORY">[HISTORY]</A></TD>
-<TD width="40%"><A href="../../history/index.htm">http://rs.tdwg.org/dwc/terms/history/</A></TD>
-<TD width="50%">Complete historical reference to Darwin Core terms.</TD>
-</TR>
-
-<TR>
-<TD width="10%"><A name="NAMESPACEPOLICY">[NAMESPACEPOLICY]</A></TD>
-<TD width="40%"><A href="../../namespace/index.htm">http://rs.tdwg.org/dwc/terms/namespace/</A></TD>
-<TD width="50%">Policy governing Darwin Core terms.</TD>
-</TR>
-
-<TR>
-<TD width="10%"><A name="TERMS">[TERMS]</A></TD>
-<TD width="40%"><A href="../../index.htm">http://rs.tdwg.org/dwc/terms/</A></TD>
-<TD width="50%">Quick reference to recommended Darwin Core terms.</TD>
-</TR>
-
-<TR>
-<TD width="10%"><A name="TEXTSCHEMA">[TEXTSCHEMA]</A></TD>
-<TD width="40%"><A href="../../../text/tdwg_dwc_text.xsd">http://rs.tdwg.org/dwc/terms/xsd/tdwg_dwc_text.xsd</A></TD>
-<TD width="50%">Simple Darwin Core Text schema.</TD>
-</TR>
-
-<TR>
-<TD width="10%"><A name="VERSIONS"></A>[VERSIONS]</TD>
-<TD width="40%"><A href="../../history/versions/index.htm">http://rs.tdwg.org/dwc/terms/history/versions/</A></TD>
-<TD width="50%">Reference for mapping historical Darwin Core terms to the current recommended terms.</TD>
-</TR>
-
-<TR>
-<TD width="10%"><A name="XML"></A>[XML]</TD>
-<TD width="40%"><A href="http://www.w3.org/XML/">http://www.w3.org/XML/</A></TD>
-<TD width="50%">Reference site for the Extensible Markup Language (XML).</TD>
-</TR>
-
-</TBODY></TABLE>
+<p>For tools and applications, including a Star Archive Reader (in Java) see the the <i>Darwin Core Tools and Applications</i> Wiki 
+page [<A href="http://code.google.com/p/darwincore/wiki/ToolsAndApplications">TOOLS</a>].
 
 <!-- Footer -->
 <hr>

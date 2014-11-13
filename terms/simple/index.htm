@@ -1,0 +1,377 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=utf8"/>
+<TITLE>Simple Darwin Core</TITLE>
+<LINK rel="schema.DwC" href="http://rs.tdwg.org/dwc/"/>
+<META name="DC.title" content="Simple Darwin Core"/>
+<META name="DC.description" content="A reference to the Simple Darwin Core standard."/>
+<META name="DC.subject" content="biodiversity, standards"/>
+<META name="DC.creator" content="Darwin Core Task Group"/>
+<META name="DC.contributor" content="John Wieczorek (MVZ)"/>
+<META name="DC.contributor" content="Markus Döring (GBIF)"/>
+<META name="DC.contributor" content="Renato De Giovanni (CRIA)"/>
+<META name="DC.contributor" content="Tim Robertson (GBIF)"/>
+<META name="DC.contributor" content="Dave Vieglais (KUNHM)"/>
+<META name="DC.modified" content="2009-04-29"/>
+<META name="DC.dateAccepted" content="2009-04-21"/>
+<META name="DC.format" content="text/html"/>
+<META name="DC.identifier" content="http://rs.tdwg.org/dwc/docs/2009-04-29/"/>
+<META name="DC.replaces" content="http://rs.tdwg.org/dwc/docs/2009-02-20/"/>
+<META name="DC.publisher" content="Biodiversity Information Standards TDWG"/>
+<META name="DC.rights" content=""/>
+<META name="DC.accessRights" content="public"/>
+<META name="DC.bibliographicCitation" content="Simple Darwin Core. 2009"/>
+<META name="DC.language" content="en"/>
+<LINK rel="meta" href="http://www.tdwg.org/"/>
+<LINK rel="stylesheet" href="../../DarwinCore_files/default.css" type="text/css">
+<SCRIPT src="../../DarwinCore_files/default.js" type="text/javascript"></SCRIPT>
+</HEAD>
+
+<BODY>
+<DIV class="header">
+
+<TABLE width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#617394"><TBODY>
+<TD><A href="http://www.tdwg.org"><IMG src="../../DarwinCore_files/TDWGlogo_Twiki.gif" width="148" height="89" alt="Biodiversity Information Standards (TDWG) logo"></A></TD>
+<TD width="100%" height="100" align="right" valign="top">
+</TBODY></TABLE>
+
+<TABLE width="100%" cellspacing="0" cellpadding="0" border="0">
+  <TBODY>
+    <TR>
+      <TD width="15%" cellspacing="0" cellpadding="0" bgcolor="#617394">
+        <div id="menu">
+          <div id="nav" class="topMenu">
+	    <div class="menuItem level1"><a href="../../index.htm" onfocus="blurLink(this);">Introduction</a></div>
+	    <div class="subMenu"><div class="menuItem"><a href="../../index.htm#references" onfocus="blurLink(this);">References</a></div></div>
+	    <div class="menuItem level1"><a href="../index.htm" onfocus="blurLink(this);">Quick Reference Guide</a></div>
+	    <div class="menuItem level1 highlighted"><a href="./index.htm" onfocus="blurLink(this);">Simple Darwin Core</a></div>
+	    <div class="subMenu"><div class="menuItem"><a href="./index.htm#introduction" onfocus="blurLink(this);">Introduction</a></div></div>
+	    <div class="subSubMenu"><div class="menuItem"><a href="#whysimple" onfocus="blurLink(this);">Why simple?</a></div></div>
+	    <div class="subSubMenu"><div class="menuItem"><a href="#whyflexible" onfocus="blurLink(this);">Why flexible?</a></div></div>
+	    <div class="subSubMenu"><div class="menuItem"><a href="#rules" onfocus="blurLink(this);">Rules?</a></div></div>
+	    <div class="subSubMenu"><div class="menuItem"><a href="#howtouse" onfocus="blurLink(this);">How to Use?</a></div></div>
+	    <div class="subSubMenu"><div class="menuItem"><a href="#domore" onfocus="blurLink(this);">Do more</a></div></div>
+	    <div class="menuItem level1"><a href="../type-vocabulary/index.htm" onfocus="blurLink(this);">Type Vocabulary</a></div>
+	    <div class="separator"><hr/></div>
+	    <div class="menuItem level1"><a href="../namespace/index.htm" onfocus="blurLink(this);">Namespace Policy</a></div>
+	    <div class="menuItem level1"><a href="../guides/xml/index.htm" onfocus="blurLink(this);">XML Guide</a></div>
+	    <div class="menuItem level1"><a href="../guides/text/index.htm" onfocus="blurLink(this);">Text Guide</a></div>
+	    <div class="separator"><hr/></div>
+	    <div class="menuItem level1"><a href="../history/index.htm" onfocus="blurLink(this);">Complete History</a></div>
+	    <div class="menuItem level1"><a href="../history/decisions/index.htm" onfocus="blurLink(this);">Decision History</a></div>
+	    <div class="menuItem level1"><a href="../history/dwctoabcd/index.htm" onfocus="blurLink(this);">Mapping to ABCD</a></div>
+	    <div class="menuItem level1"><a href="../history/versions/index.htm" onfocus="blurLink(this);">Mapping to Old Versions</a></div>
+	    <div class="separator"><hr/></div>
+	    <div class="menuItem level1"><a href="../../translations/index.htm" onfocus="blurLink(this);">Translations</a></div>
+          </div>
+        </div>
+      </TD>
+      <TD>
+<center><H1>Simple Darwin Core</H1></center>
+<TABLE cellspacing="0" class="docinfo">
+<TBODY>
+<TR>
+<TH>Title:</TH>
+<TD>Simple Darwin Core</TD>
+</TR>
+<TR>
+<TH>Date Issued:</TH>
+<TD>2009-04-21</TD>
+</TR>
+<TR>
+<TH>Date Modified:</TH>
+<TD>2009-04-29</TD>
+</TR>
+<TR>
+<TH>Abstract:</TH>
+<TD>This document is a reference for the Simple Darwin Core standard.</TD>
+</TR>
+<TR>
+<TH>Contributors:</TH>
+<TD>John Wieczorek (MVZ), Markus Döring (GBIF), Renato De Giovanni (CRIA), Tim Robertson (GBIF), Dave Vieglais (KUNHM)</TD>
+</TR>
+<TR>
+<TH>Legal:</TH>
+<TD>This document is governed by the standard legal, copyright, licensing provisions and disclaimers issued by the Taxonomic Databases Working Group.</TD>
+</TR>
+<TR>
+<TH>Part of TDWG Standard:</TH>
+<TD>***URL to DwC Standard*** will go here</TD>
+</TR>
+<TR>
+<TH>Creator:</TH>
+<TD>Darwin Core Task Group</TD>
+</TR>
+<TR>
+<TH>Identifier:</TH>
+<TD>http://rs.tdwg.org/dwc/2009-04-29/</TD>
+</TR>
+<TR><TH>Latest Version:</TH>
+<TD><A href="http://rs.tdwg.org/dwc/terms/simple/index.htm">http://rs.tdwg.org/dwc/terms/simple/</A></TD>
+</TR>
+<TR>
+<TH>Replaces:</TH>
+<TD></TD>
+</TR>
+<TR>
+<TH>Document Status:</TH>
+<TD>Under Public Review.</TD>
+</TR>
+</TBODY></TABLE>
+      </TD>
+    </TR>
+  </TBODY>
+</TABLE>
+
+<P>
+<A name="introduction" id="introduction"></A> 
+<H2>1. Introduction</H2>
+
+<P>
+<A name="whatis" id="whatis"></A> 
+<H3>1.1 What is Simple Darwin Core?</H3>
+The <i>Simple Darwin Core</i> is a predefined subset of the terms that have common use across a wide variety of biodiversity 
+applications. The terms used in the Simple Darwin Core are those that are found at the cross-section of taxonomic names, 
+places, and events that document biological occurrences on the planet. The two driving principles are simplicity and 
+flexibility.
+
+<A name="whysimple" id="whysimple"></A> 
+<H3>1.2 What makes it simple?</H3>
+The <i>Simple Darwin Core</i> is simple in that it assumes (and allows) no structure beyond the concept of rows and columns, 
+which might be thought of as attributes and their values, or fields and records. The words field and record will be 
+used throughout the rest of the document to refer to the two dimensions of the Simple Darwin Core structure. Think 
+of the term names as the field names. In other words, a <i>Simple Darwin Core</i> record could be captured in a spreadsheet 
+or in a single database table. 
+
+<A name="whyflexible" id="whyflexible"></A> 
+<H3>1.3 What makes it flexible?</H3>
+The <i>Simple Darwin Core</i> has minimal restrictions on which fields are required (none). 
+You might argue that there should be more required fields, that there isn't anything useful you can do without them. That 
+is partially true. A record with no fields in it wouldn't be very interesting, but there is a difference between 
+requiring that there be a field in a record and requiring that a particular field be in all records. 
+By having no required field restriction, the <i>Simple Darwin Core</i> can be used to share any 
+meaningful combination of fields - for example, to share "just names", or "just places", or
+observations of individuals detected in the wild at a given place and time following a method (an occurrence). This 
+flexibility promotes the reuse of the terms and sharing mechanisms for a wide variety of services.
+<P>
+
+<A name="rules" id="rules"></A> 
+<H3>1.4 Are there any rules?</h3>
+There are just a few general guiding principles on how to make the best use of the Simple Darwin Core:
+<ol>
+<li>Any Darwin Core term name can be used as a field name.</li>
+<li>No field name may be repeated in a record.</li>
+<li>Do not use a Class (<a href="../index.htm#Occurrence">Occurrence</a>, 
+<a href="../index.htm#Event">Event</a>, 
+<a href="../index.htm#dcterms:Location">Location</a>, 
+<a href="../index.htm#Identification">Identification</a>, 
+<a href="../index.htm#Taxon">Taxon</a>) 
+as a field.</li>
+<li>Support (provide data in) as many fields as you can.</li>
+<li>Use the <a href="../index.htm#dcterms:type">dcterms:type</a> field to say what class the record represents.</li>
+<li>Use the <a href="../index.htm#basisOfRecord">basisOfRecord</a> field to say specifically what kind of record it is.</li>
+<li>Populate a field with data matching the definition of the field.</li>
+<li>Follow the controlled vocabulary for the values of fields that recommend them.</li>
+<li>If data are withheld, use <a href="../index.htm#informationWithheld">informationWithheld</a> to say so.</li>
+<li>If data are shared in lower quality than the original, use <a href="../index.htm#dataGeneralizations">dataGeneralizations</a> to say so.</li>
+</ol>
+
+The <i>Simple Darwin Core</i> allows (but does not require) every field to appear only once in a record - 
+otherwise how could you distinguish one <a href="../index.htm#scientificName">scientificName</a> field from another one? Think of a database table. It
+will not allow you to have the same name for two different fields. Because of this design restriction (lack of flexibility 
+for the sake of simplicity), the auxiliary fields from the 
+<a href="../index.htm#ResourceRelationship">ResourceRelationship</a> and 
+<a href="../index.htm#MeasurementOrFact">MeasurementOrFact</a> classes are of somewhat limited utility here - 
+you could only share one MeasurementOrFact and one ResourceRelationship per record. You might argue then that there 
+is no way to share information that requires related structures, such as a history of identifications of a specimen. 
+That is mostly true. The only recourse within the Simple Darwin Core is to force the data into one of the catch all 
+"list" terms such as
+<a href="../index.htm#dynamicProperties">dynamicProperties</a>, 
+<a href="../index.htm#otherCatalogNumbers">otherCatalogNumbers</a>, 
+<a href="../index.htm#associatedMedia">associatedMedia</a>, 
+<a href="../index.htm#associatedReferences">associatedReferences</a>, 
+<a href="../index.htm#associatedOccurrences">associatedOccurrences</a>, 
+<a href="../index.htm#associatedSequences">associatedSequences</a>, 
+<a href="../index.htm#associatedTaxa">associatedTaxa</a>, 
+<a href="../index.htm#higherGeography">higherGeography</a>, 
+<a href="../index.htm#higherTaxonName">higherTaxonName</a>, 
+and 
+<a href="../index.htm#previousIdentifications">previousIdentifications</a>.
+For cases where rich data require rich (non-simple) structure, the <i>Simple Darwin Core</i> is not suitable. Instead, use 
+a more capable structure such as the <i>Access to Biological Collections Data</i> schema 
+[<A href="http://www.tdwg.org/schemas/abcd/2.06">ABCD</a>], or the 
+<i>Generic Darwin Core</i> [<A href="../../xsd/tdwg_dwcterms.xsd">GENERICXMLSCHEMA</a>], or another schema built from the 
+Darwin Core terms to suit the use of the data in a particular context. See the <i>Darwin Core XML Guide</i> 
+[<A href="../guides/xml/index.htm">XMLSCHEMAGUIDE</a>] for examples and 
+references to model schemas.
+<P>
+There is a difference between
+having data in a field and requiring that field to have a value from among a legal set of values.
+The Darwin Core is simple in that it has minimal restrictions on the contents of fields. The term descriptions give 
+recommendations about the use of controlled vocabularies wherever appropriate. Data contributors are encouraged to 
+follow these recommendations as well as possible. You might argue that having no restrictions will promote "dirty"
+data (data of low quality or dubious value). Consider the simple axiom "It's not what you have, but what you do with 
+it that matters." If data restrictions were in place at the fundamental level, then 
+a record having any non-compliant data in any of its fields could not be shared via the standard. Not only would there be 
+a derth of shared data in that case (or an unused standard), but also there would be no way to use the standard to 
+build shared data cleaning tools to actually improve the situation, nor to use data services to look up alternative 
+representations (language translations, for example) to serve a broader audience.  The rest is up to how the records 
+will be used - in other words, it is up to applications to enforce further restrictions if appropriate, and it is up 
+to the stakeholders of those applications to decide what the restrictions will be for the purpose the application is 
+trying to serve.
+
+<A name="howtouse" id="howtouse"></A> 
+<H3>1.5 How do I use Simple Darwin Core?</h3>
+The Darwin Core is simple in that data "complying with" the <i>Simple Darwin Core</i> can be easily shared in a variety of
+ways, including, but not limited to, text files and xml documents. Equivalent ways of sharing the same data are described 
+in the sections <a href="#simpledwcastext">Simple Darwin Core as Text</a> and 
+<a href="#simpledwcasxml">Simple Darwin Core as XML</a>.
+<P>
+What you need to do as a contributor of data via the Simple Darwin Core depends on the requirements of the ones
+who are going to consume those data. For example, if you have a collaborator who wants to share data via the 
+Simple Darwin Core, then it may be sufficient to create a spreadsheet that contains column headers matching 
+as many of the Darwin Core term names as you are both interested in sharing - just to be sure you both understand 
+the meaning of the fields you share, and therefore hopefully something about their content. You might create a 
+table in a database using the Simple Darwin Core as 
+a model (if it met all of your needs), and then connect that database with services for sharing via the web. You 
+might use that same database (or spreadsheet) to export a comma-separated value (CSV) file for upload into a 
+hosted service that could serve the data on your behalf. Or you might use that same file to upload into a service
+that would allow you to add value (such as a georeference) or quality (with a data cleaning tool), or to see your 
+data in the context of other shared data.
+
+<A name="simpledwcastext" id="simpledwcastext"></A> 
+<h4>1.5.1 Simple Darwin Core as Text</h4>
+The <i>Text Guide</i> [<a href="../guides/text/index.htm">TEXTGUIDE</a>] describes how to construct and format a text
+file using <i>Fielded Text</i> [<A href="http://www.fieldedtext.org/">FIELDEDTEXT</a>]. That specification allows the contributor to describe the contents of a text file, or
+set of text files (related or not) through a separate configuration file (called a metafile). The metafile allows
+the contributor to communicate the structure of the content of the file or files and any relationships between them.
+Though it is good practice to describe a <i>Simple Darwin Core</i> file with such a metafile, it isn't strictly necessary
+if the file follows the CSV file specification and the first line of the file contains the the field names. A <i>Fielded
+Text</i> metafile for any text file based on the <i>Simple Darwin Core</i> can be created by customizing the example 
+metafile [<a href="../../examples/text/example_text_simpledwc_complete.xml">SIMPLEMETAFILE</a>], which includes references to all 
+Darwin Core terms. Refer to the comments in the file itself as well as the metafile specification in the <i>Text Guide</i> 
+[<A href="../guides/text/index.htm">TEXTGUIDE</a>] for more information.
+
+<A name="simpledwcasxml" id="simpledwcasxml"></A> 
+<h4>1.5.2 Simple Darwin Core as XML</h4>
+The <i>XML Guide</i> [<A href="../guides/xml/index.htm">XMLSCHEMAGUIDE</a>] describes how to construct XML schemas to share 
+data based on Darwin Core terms. Looking at the <i>Simple Darwin Core XML Schema</i> 
+[<A href="../../xsd/tdwg_dwc_simple.xsd">SIMPLEXMLSCHEMA</a>] using the <i>XML Guide</i> as a reference
+you will be able to see that the schema supports the notion of a <i>SimpleDarwinRecord</i>, which is just a grouping of up 
+to one of each of the Darwin Core terms that are not Classes. The following example shows a <i>SimpleDarwinRecordSet</i>
+containing one <i>SimpleDarwinRecord</i> for a <i>Taxon</i>:
+
+<pre class="example">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;SimpleDarwinRecordSet
+ xmlns="http://rs.tdwg.org/dwc/dwcrecord/"
+ xmlns:dc="http://purl.org/dc/terms/"
+ xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://rs.tdwg.org/dwc/dwcrecord/ http://rs.tdwg.org/dwc/xsd/tdwg_dwc_simple.xsd"&gt;
+ &lt;SimpleDarwinRecord&gt;
+  &lt;dc:type&gt;Taxon&lt;/dc:type&gt;
+  &lt;dc:modified&gt;2009-02-12T14:22Z&lt;/dc:modified&gt;
+  &lt;dc:language&gt;en&lt;/dc:language&gt;
+  &lt;dwc:scientificName&gt;Ctenomys sociabilis&lt;/dwc:scientificName&gt;
+  &lt;dwc:higherTaxonName&gt;Animalia, Chordata, Vertebrata, Mammalia, Theria, Eutheria, Rodentia, Hystricognatha, Hystricognathi, Ctenomyidae, Ctenomyini, Ctenomys&lt;/dwc:higherTaxonName&gt;
+  &lt;dwc:kingdom&gt;Animalia&lt;/dwc:kingdom&gt;
+  &lt;dwc:phylum&gt;Chordata&lt;/dwc:phylum&gt;
+  &lt;dwc:class&gt;Mammalia&lt;/dwc:class&gt;
+  &lt;dwc:order&gt;Rodentia&lt;/dwc:order&gt;
+  &lt;dwc:family&gt;Ctenomyidae&lt;/dwc:family&gt;
+  &lt;dwc:genus&gt;Ctenomys&lt;/dwc:genus&gt;
+  &lt;dwc:specificEpithet&gt;sociabilis&lt;/dwc:specificEpithet&gt;
+  &lt;dwc:taxonRank&gt;species&lt;/dwc:taxonRank&gt;
+  &lt;dwc:scientificNameAuthorship&gt;Pearson and Christie, 1985&lt;/dwc:scientificNameAuthorship&gt;
+  &lt;dwc:nomenclaturalCode&gt;ICZN&lt;/dwc:nomenclaturalCode&gt;
+  &lt;dwc:taxonAccordingTo&gt;Pearson O. P., and M. I. Christie.&lt;/dwc:taxonAccordingTo&gt;
+  &lt;dwc:namePublishedIn&gt;Pearson O. P., and M. I. Christie. 1985. Historia Natural, 5(37):388&lt;/dwc:namePublishedIn&gt;
+  &lt;dwc:taxonomicStatus&gt;accepted&lt;/dwc:taxonomicStatus&gt;
+  &lt;dwc:acceptedTaxonName&gt;Ctenomys sociabilis&lt;/dwc:acceptedTaxonName&gt;
+  &lt;dwc:dynamicProperties&gt;iucnStatus=vulnerable; distribution=Neuquen, Argentina&lt;/dwc:dynamicProperties&gt;
+ &lt;/SimpleDarwinRecord&gt;
+&lt;/SimpleDarwinRecordSet&gt;
+</pre>
+<P>
+The <i>SimpleDarwinRecord</i> acts as a Class in
+implementation, because all of the terms belong to it. The <i>Simple Darwin Core</i> schema has just one other level of 
+structure, the <i>SimpleDarwinRecordSet</i>, which is a grouping of one or more <i>SimpleDarwinRecords</i>. The 
+<i>SimpleDarwinRecordSet</i> acts as a Class to define a data set during implementation.
+
+<A name="domore" id="domore"></A> 
+<h3>1.6 Doing More with Simple Darwin Core</h3>
+Sooner or later you may want to share more information than the <i>Simple Darwin Core</i> seems to allow. For example, you
+and your colleagues might decide that it would be useful to have a standard way to exchange information relevant
+to questions in Paleontology. How would you do it? 
+<P>
+One way would be to try to "overload" existing terms by using them to hold information other than what was intended
+based on the definition of the terms. Please don't do this. 
+If an existing term has close to the same meaning as one you want to use, but just doesn't quite fit because of the 
+way the definition is worded, it would be better to request an amendment to the term definition so that it will be 
+clear for your community how to use it. You can request such a change by submitting an issue 
+in the <i>Darwin Core Project</i> [<A href="http://code.google.com/p/darwincore">DWC-PROJECT</a>].
+<P>
+Another way to get more out of the Darwin Core without adding a term is to "payload" the 
+<a href="../index.htm#dynamicProperties">dynamicProperties</a> term as shown in the example below, to contain a list 
+of key-value pairs. The keys in this case would act as new unofficial terms. This is perfectly legal, since it doesn't 
+compromise the meaning of the term. Some of the weaknesses of payloading are that it is prone to errors, inconsistencies, 
+and lack of stable or well-defined semantics. Still, this might be a reasonable way to at least allow you to share all of 
+your data, even if there might be problems with people using it reliably.
+<pre class="example">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;SimpleDarwinRecordSet
+ xmlns="http://rs.tdwg.org/dwc/dwcrecord/"
+ xmlns:dc="http://purl.org/dc/terms/"
+ xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://rs.tdwg.org/dwc/dwcrecord/ http://rs.tdwg.org/dwc/xsd/tdwg_dwc_simple.xsd"&gt;
+ &lt;SimpleDarwinRecord&gt;
+  &lt;dwc:occurrenceID&gt;urn:catalog:YPM:VP.057488&lt;/dwc:occurrenceID&gt;
+  &lt;dc:type&gt;Occurrence&lt;/dc:type&gt;
+  &lt;dc:modified&gt;2009-02-12T14:22Z&lt;/dc:modified&gt;
+  &lt;dc:language&gt;en&lt;/dc:language&gt;
+  &lt;dwc:basisOfRecord&gt;FossilSpecimen&lt;/dwc:basisOfRecord&gt;
+  &lt;dwc:institutionCode&gt;YPM&lt;/dwc:institutionCode&gt;
+  &lt;dwc:collectionCode&gt;VP&lt;/dwc:collectionCode&gt;
+  &lt;dwc:catalogNumber&gt;VP.057488&lt;/dwc:catalogNumber&gt;
+  &lt;dwc:individualCount&gt;1&lt;/dwc:individualCount&gt;
+  &lt;dwc:locationID xsi:nil=&quot;true&quot;/&gt;
+  &lt;dwc:continent&gt;North America&lt;/dwc:continent&gt;
+  &lt;dwc:country&gt;United States&lt;/dwc:country&gt;
+  &lt;dwc:countryCode&gt;USA&lt;/dwc:countryCode&gt;
+  &lt;dwc:stateProvince&gt;Montana&lt;/dwc:stateProvince&gt;
+  &lt;dwc:county&gt;Garfield&lt;/dwc:county&gt;
+  &lt;dwc:scientificName&gt;Tyrannosourus rex&lt;/dwc:scientificName&gt;
+  &lt;dwc:genus&gt;Tyrannosourus&lt;/dwc:genus&gt;
+  &lt;dwc:specificEpithet&gt;rex&lt;/dwc:specificEpithet&gt;
+  &lt;dwc:dynamicProperties&gt;latestPeriodOrHighestSystem="Cretaceous"; latestEonOrHighestEonothem="Late Cretaceous"&lt;/dwc:dynamicProperties&gt;
+ &lt;/SimpleDarwinRecord&gt;
+&lt;/SimpleDarwinRecordSet&gt;
+</pre>
+<P>
+If you were using just CSV text files to exchange information then 
+you might be tempted to just add the new fields to the files. This approach suffers most of the same problems as 
+payloading - no one aside from those with whom you communicated would know what those new fields were or how to use 
+them. Sharing in this way via XML would be an even bigger problem, because the <i>Simple Darwin Core XML Schema</i> 
+[<A href="../../xsd/tdwg_dwc_simple.xsd">SIMPLEXMLSCHEMA</a>] defines the terms that it supports and the new 
+fields would not correspond with any terms understood by the schema. In other words, the XML with your fields in it
+would not be a valid <i>Simple Darwin Core</i> XML document. 
+<P>
+So, if you really need to extend the capabilities of the Darwin Core, the best first step is to add the terms 
+you need. The mechanisms for pursuing this are explained in the <i>Darwin Core Namespace Policy</i> 
+[<A href="../namespace/index.htm">NAMESPACEPOLICY</a>]. The process will help to assure that the new terms are well 
+conceived, that they don't conflict with existing terms, and that they are properly defined in the broader context
+of biological diversity. 
+
+<!-- Footer -->
+<hr>
+<p><a rel="license" href="http://creativecommons.org/licenses/by/3.0/us/"> 
+   <img alt="Creative Commons License" id="creative_commons_icon" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a> 
+   Copyright 2009 - Biodiversity Information Standards - TDWG - <a href="http://www.tdwg.org/about-tdwg/contact-us/">Contact Us</a><br/> 
+<p>Except where otherwise noted, content on this site is licensed under a 
+   <a rel="license" href="http://creativecommons.org/licenses/by/3.0/us/"> Creative Commons 
+   Attribution 3.0 United States License</a>.</p> 
+
+</BODY></HTML>	

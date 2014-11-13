@@ -18,11 +18,48 @@
             <xs:choice maxOccurs="unbounded">
                 <xs:element ref="dwc:anyIdentifier"/>
                 <xs:element ref="dwc:anyDatasetTerm"/>
-                <xs:group ref="dwc:anyDublinCoreTerm"/>
+                <xs:element ref="dwc:anyRecordLevelTerm"/>
             </xs:choice>
         </xs:complexType>
     </xs:element>
     
+    <!-- OCCURRENCE domain -->
+    <xs:element name="Occurrence" substitutionGroup="dwc:anyClass">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element ref="dwc:anyIdentifier"/>
+                <xs:element ref="dwc:anyOccurrenceTerm"/>
+                <xs:element ref="dwc:anyRecordLevelTerm"/>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+    
+    
+    <!-- EVENT domain -->
+    <xs:element name="Event" substitutionGroup="dwc:anyClass">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element ref="dwc:anyIdentifier"/>
+                <xs:element ref="dwc:anyEventTerm"/>
+                <xs:element ref="dwc:anyRecordLevelTerm"/>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+    
+    
+    <!-- SAMPLING LOCATION domain -->
+    <!-- reuses the dc:location term, so see dublin_core.xsd for definition -->
+    <!-- 
+    <xs:element name="Location" substitutionGroup="dwc:anyClass">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element ref="dwc:anyIdentifier"/>
+                <xs:element ref="dwc:anyLocationTerm"/>
+                <xs:element ref="dwc:anyRecordLevelTerm"/>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>  
+    -->
     
     <!-- IDENTIFICATION domain -->
     <xs:element name="Identification" substitutionGroup="dwc:anyClass">
@@ -30,7 +67,7 @@
             <xs:choice maxOccurs="unbounded">
                 <xs:element ref="dwc:anyIdentifier"/>
                 <xs:element ref="dwc:anyIdentificationTerm"/>
-                <xs:group ref="dwc:anyDublinCoreTerm"/>
+                <xs:element ref="dwc:anyRecordLevelTerm"/>
             </xs:choice>
         </xs:complexType>
     </xs:element>
@@ -42,81 +79,37 @@
             <xs:choice maxOccurs="unbounded">
                 <xs:element ref="dwc:anyIdentifier"/>
                 <xs:element ref="dwc:anyTaxonTerm"/>
-                <xs:group ref="dwc:anyDublinCoreTerm"/>
+                <xs:element ref="dwc:anyRecordLevelTerm"/>
             </xs:choice>
         </xs:complexType>
     </xs:element>
     
-    
-    <!-- SAMPLING LOCATION domain -->
-    <xs:element name="SamplingLocation" substitutionGroup="dwc:anyClass">
-        <xs:complexType>
-            <xs:choice maxOccurs="unbounded">
-                <xs:element ref="dwc:anyIdentifier"/>
-                <xs:element ref="dwc:anySamplingLocationTerm"/>
-                <xs:group ref="dwc:anyDublinCoreTerm"/>
-            </xs:choice>
-        </xs:complexType>
-    </xs:element>  
-    
-    
-    <!-- SAMPLE domain -->
-    <xs:element name="Sample" substitutionGroup="dwc:anyClass">
-        <xs:complexType>
-            <xs:choice maxOccurs="unbounded">
-                <xs:element ref="dwc:anyIdentifier"/>
-                <xs:element ref="dwc:anySampleTerm"/>
-                <xs:group ref="dwc:anyDublinCoreTerm"/>
-            </xs:choice>
-        </xs:complexType>
-    </xs:element>
-    
-    
-    <!-- SAMPLING EVENT domain -->
-    <xs:element name="SamplingEvent" substitutionGroup="dwc:anyClass">
-        <xs:complexType>
-            <xs:choice maxOccurs="unbounded">
-                <xs:element ref="dwc:anyIdentifier"/>
-                <xs:element ref="dwc:anySamplingEventTerm"/>
-                <xs:group ref="dwc:anyDublinCoreTerm"/>
-            </xs:choice>
-        </xs:complexType>
-    </xs:element>
-    
-    
-    
-    <!-- SAMPLE ATTRIBUTE domain -->
-    <xs:element name="SampleAttribute" substitutionGroup="dwc:anyClass">
-        <xs:complexType>
-            <xs:choice maxOccurs="unbounded">
-                <xs:element ref="dwc:anyIdentifier"/>
-                <xs:element ref="dwc:anySampleAttributeTerm"/>
-                <xs:group ref="dwc:anyDublinCoreTerm"/>
-            </xs:choice>
-        </xs:complexType>
-    </xs:element>
-    
-    
-    <!-- EVENT ATTRIBUTE domain -->
-    <xs:element name="EventAttribute" substitutionGroup="dwc:anyClass">
-        <xs:complexType>
-            <xs:choice maxOccurs="unbounded">
-                <xs:element ref="dwc:anyIdentifier"/>
-                <xs:element ref="dwc:anyEventAttributeTerm"/>
-                <xs:group ref="dwc:anyDublinCoreTerm"/>
-            </xs:choice>
-        </xs:complexType>
-    </xs:element>
     
 
-    <!-- RELATED RESOURCE domain -->
+
+    <!-- RESOURCE RELATIONSHIP domain -->
     <xs:element name="ResourceRelationship" substitutionGroup="dwc:anyClass">
         <xs:complexType>
             <xs:choice maxOccurs="unbounded">
                 <xs:element ref="dwc:anyIdentifier"/>
                 <xs:element ref="dwc:anyResourceRelationshipTerm"/>
-                <xs:group ref="dwc:anyDublinCoreTerm"/>
+                <xs:element ref="dwc:anyRecordLevelTerm"/>
             </xs:choice>
         </xs:complexType>
     </xs:element>
+
+    
+    
+    <!-- MEASUREMENT domain -->
+    <xs:element name="MeasurementOrFact" substitutionGroup="dwc:anyClass">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element ref="dwc:anyIdentifier"/>
+                <xs:element ref="dwc:anyMeasurementTerm"/>
+                <xs:element ref="dwc:anyRecordLevelTerm"/>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+    
+
 </xs:schema>

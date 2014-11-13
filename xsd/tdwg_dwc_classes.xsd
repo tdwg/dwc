@@ -3,11 +3,12 @@
     targetNamespace="http://rs.tdwg.org/dwc/dwcrecord/"
     xmlns:dwr="http://rs.tdwg.org/dwc/dwcrecord/"
     xmlns:dwc="http://rs.tdwg.org/dwc/terms/">
-    <xs:import namespace="http://rs.tdwg.org/dwc/terms/" schemaLocation="tdwg_dwcclasses.xsd"/>
+    <xs:import namespace="http://rs.tdwg.org/dwc/terms/" schemaLocation="tdwg_dwc_class_terms.xsd"/>
         
     <xs:annotation>
         <xs:documentation>
-            This schema defines a container for all proper darwin core classes.
+            This schema defines a container for all darwin core classes with no notion of a record per se.
+            All classes are treated equally.
         </xs:documentation>
     </xs:annotation>
     

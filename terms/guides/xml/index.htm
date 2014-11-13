@@ -8,22 +8,20 @@
 <META name="DC.description" content="Guide for implementing Darwin Core in XML."/>
 <META name="DC.subject" content="biodiversity, standards"/>
 <META name="DC.creator" content="Darwin Core Task Group"/>
-<META name="DC.contributor" content="John Wieczorek (MVZ) &lt;tuco@berkeley.edu&gt;"/>
-<META name="DC.contributor" content="Markus Döring (GBIF) &lt;mdoering@gbif.org&gt;"/>
-<META name="DC.contributor" content="Renato De Giovanni (CRIA) &lt;renato@cria.org.br&gt;"/>
-<META name="DC.contributor" content="Tim Robertson (GBIF) &lt;trobertson@gbif.org&gt;"/>
-<META name="DC.contributor" content="Dave Vieglais (KUNHM) &lt;vieglais@ku.edu&gt;"/>
-<META name="DC.contributor" content="Stan Blum (CAS) &lt;sblum@calacademy.org&gt;"/>
-<META name="DC.modified" content="2009-02-20"/>
+<META name="DC.contributor" content="John Wieczorek (MVZ)"/>
+<META name="DC.contributor" content="Markus Döring (GBIF)"/>
+<META name="DC.contributor" content="Renato De Giovanni (CRIA)"/>
+<META name="DC.contributor" content="Tim Robertson (GBIF)"/>
+<META name="DC.contributor" content="Dave Vieglais (KUNHM)"/>
+<META name="DC.modified" content="2009-04-29"/>
 <META name="DC.dateAccepted" content="2009-02-12"/>
 <META name="DC.format" content="text/html"/>
-<META name="DC.identifier" content="http://rs.tdwg.org/dwc/2009-02-20/terms/guides/xml"/>
+<META name="DC.identifier" content="http://rs.tdwg.org/dwc/2009-04-29/terms/guides/xml"/>
+<META name="DC.isReplacedBy" content="http://rs.tdwg.org/dwc/2009-02-20/terms/guides/xml/"/>
 <META name="DC.publisher" content="Biodiversity Information Standards TDWG"/>
 <META name="DC.rights" content=""/>
 <META name="DC.accessRights" content="public"/>
-<META name="DC.bibliographicCitation" content="Darwin Core XML Guidelines. 2009"/>
-<META name="DC.isReplacedBy" content=""/>
-<META name="DC.replaces" content=""/>
+<META name="DC.bibliographicCitation" content="Darwin Core XML Guide. 2009"/>
 <META name="DC.language" content="en"/>
 <LINK rel="meta" href="http://www.tdwg.org/"/>
 <LINK rel="stylesheet" href="../../../DarwinCore_files/default.css" type="text/css"/>
@@ -32,16 +30,49 @@
 <BODY>
 <DIV class="header">
 
-<TABLE width="100%" cellspacing="0" cellpadding="0" bgcolor="#617394">
-<TBODY><TR>
-<TD width="70"><A href="http://www.tdwg.org"><IMG src="../../../DarwinCore_files/TDWGlogo_Twiki.gif" width="150" height="70" alt="Biodiversity Information Standards (TDWG) logo"></A></TD>
-<TD width="100%" height="70" align="right" valign="top">
-</TABLE>
+<TABLE width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#617394"><TBODY>
+<TD><A href="http://www.tdwg.org"><IMG src="../../../DarwinCore_files/TDWGlogo_Twiki.gif" width="148" height="89" alt="Biodiversity Information Standards (TDWG) logo"></A></TD>
+<TD width="100%" height="100" align="right" valign="top">
+</TBODY></TABLE>
 
-<H1>Darwin Core XML Guide</H1>
+<TABLE width="100%" cellspacing="0" cellpadding="0" border="0">
+  <TBODY>
+    <TR>
+      <TD width="15%" cellspacing="0" cellpadding="0" bgcolor="#617394">
+        <div id="menu">
+          <div id="nav" class="topMenu">
+	    <div class="menuItem level1"><a href="../../../index.htm" onfocus="blurLink(this);">Introduction</a></div>
+	    <div class="subMenu"><div class="menuItem"><a href="../../../index.htm#references" onfocus="blurLink(this);">References</a></div></div>
+	    <div class="menuItem level1"><a href="../../index.htm" onfocus="blurLink(this);">Quick Reference Guide</a></div>
+	    <div class="menuItem level1"><a href="../../simple/index.htm" onfocus="blurLink(this);">Simple Darwin Core</a></div>
+	    <div class="menuItem level1"><a href="../../type-vocabulary/index.htm" onfocus="blurLink(this);">Type Vocabulary</a></div>
+	    <div class="separator"><hr/></div>
+	    <div class="menuItem level1"><a href="../../namespace/index.htm" onfocus="blurLink(this);">Namespace Policy</a></div>
+	    <div class="menuItem level1 highlighted"><a href="../xml/index.htm" onfocus="blurLink(this);">XML Guide</a></div>
+	    <div class="subMenu"><div class="menuItem"><a href="./index.htm#introduction" onfocus="blurLink(this);">Introduction</a></div></div>
+	    <div class="subMenu"><div class="menuItem"><a href="./index.htm#implement" onfocus="blurLink(this);">Implementation Guide</a></div></div>
+	    <div class="subSubMenu"><div class="menuItem"><a href="#xmlschema" onfocus="blurLink(this);">XML Schema</a></div></div>
+	    <div class="subSubMenu"><div class="menuItem"><a href="#xmlnamespaces" onfocus="blurLink(this);">XML Namespaces</a></div></div>
+	    <div class="subSubMenu"><div class="menuItem"><a href="#abstractmodel" onfocus="blurLink(this);">Abstract Model</a></div></div>
+	    <div class="subSubMenu"><div class="menuItem"><a href="#propsandvalues" onfocus="blurLink(this);">Properties & Values</a></div></div>
+	    <div class="subSubMenu"><div class="menuItem"><a href="#nullvalues" onfocus="blurLink(this);">Null Values</a></div></div>
+	    <div class="subSubMenu"><div class="menuItem"><a href="#simpledarwincore" onfocus="blurLink(this);">Simple Darwin Core</a></div></div>
+	    <div class="subSubMenu"><div class="menuItem"><a href="#classes" onfocus="blurLink(this);">Classes & Containment</a></div></div>
+	    <div class="menuItem level1"><a href="../text/index.htm" onfocus="blurLink(this);">Text Guide</a></div>
+	    <div class="separator"><hr/></div>
+	    <div class="menuItem level1"><a href="../../history/index.htm" onfocus="blurLink(this);">Complete History</a></div>
+	    <div class="menuItem level1"><a href="../../history/decisions/index.htm" onfocus="blurLink(this);">Decision History</a></div>
+	    <div class="menuItem level1"><a href="../../history/dwctoabcd/index.htm" onfocus="blurLink(this);">Mapping to ABCD</a></div>
+	    <div class="menuItem level1"><a href="../../history/versions/index.htm" onfocus="blurLink(this);">Mapping to Old Versions</a></div>
+	    <div class="separator"><hr/></div>
+	    <div class="menuItem level1"><a href="../../../translations/index.htm" onfocus="blurLink(this);">Translations</a></div>
+          </div>
+        </div>
+      </TD>
+      <TD>
+<center><H1>Darwin Core XML Guide</H1><center>
 <P>
-<TABLE cellspacing="0" class="docinfo">
-	<TBODY>
+<TABLE cellspacing="0" class="docinfo"><TBODY>
 <TR>
 <TH>Title:</TH>
 <TD>Darwin Core XML Guidelines</TD>
@@ -51,12 +82,16 @@
 <TD>2009-02-12</TD>
 </TR>
 <TR>
+<TH>Date Modified:</TH>
+<TD>2009-04-29</TD>
+</TR>
+<TR>
 <TH>Abstract:</TH>
 <TD>Guidelines for the implementation of Darwin Core in XML.</TD>
 </TR>
 <TR>
 <TH>Contributors:</TH>
-<TD>John Wieczorek (MVZ)<tuco@berkeley.edu>, Markus Döring (GBIF)<mdoering@gbif.org>, Renato De Giovanni (CRIA)<renato@cria.org.br>, Tim Robertson (GBIF)<trobertson@gbif.org>, Dave Vieglais (KUNHM)<vieglais@ku.edu>, Stan Blum (CAS)<sblum@calacademy.org></TD>
+<TD>John Wieczorek (MVZ), Markus Döring (GBIF), Renato De Giovanni (CRIA), Tim Robertson (GBIF), Dave Vieglais (KUNHM)</TD>
 </TR>
 <TR>
 <TH>Legal:</TH>
@@ -64,7 +99,7 @@
 </TR>
 <TR>
 <TH>Part of TDWG Standard:</TH>
-<TD>***URL to DwC Standard*** goes here</TD>
+<TD>***URL to DwC Standard*** will go here</TD>
 </TR>
 <TR>
 <TH>Creator:</TH>
@@ -72,35 +107,29 @@
 </TR>
 <TR>
 <TH>Identifier:</TH>
-<TD>http://rs.tdwg.org/dwc/2009-02-20/terms/guides/xml/</TD>
+<TD>http://rs.tdwg.org/dwc/2009-04-29/terms/guides/xml/</TD>
 </TR>
 <TR><TH>Latest Version:</TH>
 <TD><A href="http://rs.tdwg.org/dwc/terms/guides/xml/index.htm">http://rs.tdwg.org/dwc/terms/guides/xml/</A></TD>
 </TR>
 <TR>
 <TH>Replaces:</TH>
-<TD>Not applicable</A></TD>
+<TD><a href="http://rs.tdwg.org/dwc/2009-02-20/terms/guides/xml/index.htm">http://rs.tdwg.org/dwc/2009-02-20/terms/guides/xml/</A></TD>
 </TR>
 <TR>
 <TH>Document Status:</TH>
-<TD>This is a TDWG Request for Comment.</TD>
+<TD>Under Public Review.</TD>
 </TR>
 </TBODY></TABLE>
-
-<H2>Table of Contents</H2>
-<P>
-<TABLE width="95%" border="0" align="center"><TBODY>
-<TR><TD width="100%">1. <a href="#introduction">Introduction</a></TD></TR>
-<TR><TD width="100%">2. <a href="#guide">Document Guide</a></TD></TR>
-<TR><TD width="100%">3. <a href="#terminology">Terminology</a></TD></TR>
-<TR><TD width="100%">4. <a href="#general">General implementation guidelines</a></TD></TR>
-<TR><TD width="100%">5. <a href="#references">References</a></TD></TR>
-</TBODY></TABLE
+</TD>
+</TR>
+</TBODY>
+</TABLE>
 
 <A name="introduction" id="introduction"></A> 
 <H2>1. Introduction</H2>
 <P>
-This document provides guidelines for implementing applications schemas based on Darwin Core terms 
+This document provides guidelines for implementing application schemas based on Darwin Core terms 
 [<a href="../../index.htm">TERMS</a>] using [<a href="http://www.w3.org/XML/">XML</a>]. The underlying metadata 
 model is described (in a syntax neutral way), followed by some specific guidelines for XML implementations. Some guidance 
 on the use of non-Darwin Core terms is also provided.
@@ -109,98 +138,65 @@ This document does not provide guidelines for encoding Darwin Core in RDF/XML. N
 relative merits of encoding metadata in &#39;plain&#39; XML rather than RDF/XML. This document provides guidelines in those 
 cases where RDF/XML is not considered appropriate. 
 
-<A name="guide" id="guide"></A> 
-<H2>2. Document Guide</H2>
-Following is an index to the primary documents of the Darwin Core. Links to additional documents relevant to this page can be 
-found in the <em>References</em> section.
-<p>
-<a href="../../../index.htm">Introduction</a> - Darwin Core motivation, content, how to participate
-<p>
-<il>Darwin Core Terms
-<ul><a href="../../index.htm">Quick Reference Guide</a> - definitions of currently accepted terms.</ul>
-<ul><a href="../../history/index.htm">Complete History</a> - everything about every term that ever existed</ul>
-<ul><a href="../../history/decisions/index.htm">Decisions</a> - documentation of justifications for past changes to terms</ul>
-<ul><a href="../../namespace/index.htm">Namespace policy</a> - how to propose changes to Darwin Core</ul>
-<ul><a href="../../type-vocabulary/index.htm">Type Vocabulary</a> - list of terms for types of records supported by Darwin Core</ul>
-</il>
-<p>
-<il>Mappings
-<ul><a href="../../history/dwctoabcd/index.htm">ABCD</a> - current equivalent terms in ABCD</ul>
-<ul><a href="../../history/versions/index.htm">Versions</a> - current equivalent terms in historical versions</ul>
-</il>
-<p>
-<il>Implementation Guides
-<ul><a href="./index.htm">XML Schemas</a> - how to construct and use Darwin Core XML Schemas</ul>
-<ul><a href="../text/index.htm">Text</a> (this document) - how to construct and use text files for capturing Darwin Core data</ul>
-</il>
-<p>
-<a href="../../../translations/index.htm">Translations</a> - An index to Darwin Core documents in various languages
+<A name="implement" id="implement"></A> 
+<H2>2. Implementation Guide</H2>
+<P>
 
-<A name="terminology" id="terminology"></A> 
-<H2>3. Terminology</H2>
-<DL>
-<DT><EM>Resource</EM></DT>
-<DD>a <EM>resource</EM> is anything that has identity. In Darwin Core a resource might refer to any of the <EM>classes</EM>
-of which it is composed, such a record of a biotic occurrence (specimen, observation), or any of the types of records that 
-provide supporting or auxiliary evidence (SamplingEvent, SamplingLocation, Taxon).</DD>
-<DT><EM>Property</EM></DT>
-<DD>a <EM>property</EM> is a specific aspect, characteristic, concept, attribute, or relation used to describe a <EM>resource</EM>. SampleID, for example, is a <EM>property</EM> that identifies a resource, distinguishing it from other resources.</DD>
-<DT><EM>Class</EM></DT>
-<DD>a <EM>class</EM> is a general category or concept that can be described by one or more <EM>properties</EM>. A Sample, for example, is a <EM>class</EM> described by the <EM>properties</EM>, such as SampleID, that have Sample as their <EM>class</EM> (domain).</DD>
-<DT><EM>Record</EM></DT>
-<DD>a <EM>record</EM> is an instance of structured data about a <EM>resource</EM> comprising one or more <EM>classes</EM> and/or <EM>properties</EM> and their associated <EM>values</EM>.</DD></DL>
-<DT><EM>Record Set</EM></DT>
-<DD>a <EM>record set</EM> is a structured grouping of one or more <EM>records</EM>.</DD></DL>
+<A name="xmlschema" id="xmlschema"></A> 
+<H3>2.1 XML Schema</H3>
+Implementors should base their XML applications on <i>XML Schemas</i> 
+[<A href="http://www.w3.org/XML/Schema">XMLSCHEMA</A>] rather than <i>XML DTDs</i>. Approaches 
+based on <i>XML Schemas</i> are more flexible and are more easily re-used within other XML applications. 
 <P>
-Darwin Core terms [<a href="../../index.htm">TERMS</a>] include <EM>classes</EM> and <EM>properties</EM> as defined above.
-
-<A name="general" id="general"></A> 
-<H2>4. General implementation guidelines</H2>
-<P>
-<H3>4.1 XML Schema</H3>
-Implementors should base their XML applications on XML Schemas 
-[<A href="http://dublincore.org/documents/dc-xml-guidelines/#XMLSCHEMA">XMLSCHEMA</A>] rather than XML DTDs. Approaches 
-based on XML Schemas are more flexible and are more easily re-used within other XML applications. 
-<P>
-<H3>4.2 XML Namespaces</H3>
-Implementors should use XML Namespaces 
-[<A href="http://dublincore.org/documents/dc-xml-guidelines/#XMLNS">XMLNS</A>] to uniquely identify elements, element refinements, and encoding schemes. Darwin Core namespaces are defined in the Darwin Core Namespace Policy recommendation 
+<A name="xmlnamespaces" id="xmlnamespaces"></A> 
+<H3>2.2 XML Namespaces</H3>
+Implementors should use <i>XML Namespaces</i> 
+[<A href="http://dublincore.org/documents/dc-xml-guidelines/#XMLNS">XMLNS</A>] to uniquely identify elements. 
+Darwin Core namespaces are defined in the <i>Darwin Core Namespace Policy</i> 
 [<A href="../../namespace/index.htm">NAMESPACEPOLICY</a>], while Dublin Core namespaces are defined in the
-DCMI Namespace Recommendation [<A href="http://dublincore.org/documents/dc-xml-guidelines/#DCMINS">DCMINS</A>].
+<i>DCMI Namespace Recommendation</i> [<A href="http://dublincore.org/documents/dc-xml-guidelines/#DCMINS">DCMINS</A>].
 <P>
-<H3>4.3 Abstract model</H3>
+<A name="abstractmodel" id="abstractmodel"></A> 
+<H3>2.3 Abstract model</H3>
 <P>
-The Darwin Core follows the Dublin Core Metadata Initiative Abstract Model [<A href="http://dublincore.org/documents/abstract-model/">ABSTRACTMODEL</A>]
+The Darwin Core follows the <i>Dublin Core Metadata Initiative Abstract Model</i> [<A href="http://dublincore.org/documents/abstract-model/">ABSTRACTMODEL</A>]
 except that the Darwin Core <EM>record</EM> is roughly equivalent to the Dublin Core <EM>resource</EM>.
 <UL>
-<LI>A <EM>Darwin Core record</EM> is made up of one or more <EM>classes</EM> and/or <EM>properties</EM> and their associated <EM>values</EM>.</LI>
-<LI>A <EM>Darwin Core record</EM> must include all required <EM>properties</EM> (e.g., BasisOfRecord) and their associated <EM>values</EM>.</LI>
-<LI>Each <EM>property</EM> has at most one <EM>class</EM> as its domain.</LI>
-<LI>Each <EM>property</EM> is an attribute of the <EM>resource</EM> being described.</LI>
+<LI>Darwin Core terms are either <EM>classes</EM> or <EM>properties</EM>.</LI>
+<LI>Each <EM>property</EM> has at most one <EM>class</EM> as its domain (describes no more than one <i>class</i>).</LI>
+<LI>A <EM>Darwin Core record</EM> is made up of zero or more <EM>classes</EM> and one or more <EM>properties</EM> with their associated <EM>values</EM>.</LI>
 <LI>Each <EM>value</EM> is a literal string.</LI>
+<LI>The <EM>values</EM> of <EM>properties</EM> within a <EM>Darwin Core record</EM> describe that record.</LI>
+<LI>A <EM>Darwin Core record</EM> must include all required <EM>properties</EM>, if any, and their associated <EM>values</EM>.</LI>
+<!-- 
 <LI>Each literal string <EM>value</EM> may have an associated language (e.g., en-GB).</LI>
 <LI>Each <EM>value</EM> may have an associated <EM>encoding scheme</EM>.</LI>
 <LI>Each <EM>encoding scheme</EM> has a <EM>name</EM>.</LI></UL>
+ -->
+</ul>
 <P>
-<H3>4.4 Properties and Values</H3>
+<A name="propsandvalues" id="propsandvalues"></A> 
+<H3>2.4 Properties and Values</H3>
 <P>The Darwin Core follows the guidelines for expressing Dublin Core metadata using XML 
 [<a href="http://dublincore.org/documents/dc-xml/">DCMIXMLGUIDE</A>] except in that
 Darwin Core implementors should encode <EM>properties</EM> as XML elements and <EM>values</EM> 
 as the content of those elements instead of having each property contain a value representation and its associated value. 
 The name of the XML element should be an XML qualified name (QName), which associates the value given in the <EM>Term name</EM> 
-attribute (not the value in the <EM>Label</EM> attribute) in the Darwin Core Terms recommendation 
+attribute in the Darwin Core Terms recommendation 
 [<A href="../../index.htm">TERMS</A>] with the appropriate namespace name. For example, use
 <PRE class="example">&lt;xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
     targetNamespace="http://rs.tdwg.org/dwc/terms/"
     xmlns:dwc="http://rs.tdwg.org/dwc/terms/"&gt;
 ...
-&lt;dwc:BasisOfRecord&gt;HumanObservation&lt;/dwc:BasisOfRecord&gt;
+&lt;dwc:basisOfRecord&gt;HumanObservation&lt;/dwc:basisOfRecord&gt;
 </PRE>
 <P>rather than</P>
-<PRE class="example">&lt;dwc:BasisOfRecord value=&quot;HumanObservation&quot; /&gt;
+<PRE class="example">&lt;dwc:basisOfRecord value=&quot;HumanObservation&quot; /&gt;
 </PRE>
 <P>
-<H3>4.5 Encoding Schemes</H3>
+
+<!-- 
+<H3>2.5 Encoding Schemes</H3>
 If an encoding scheme is recommended in the <EM>Description</EM> attribute of the term, use that encoding scheme or 
 a refinement of it to constrain the values of the term.
 <P>
@@ -212,212 +208,329 @@ The name of the encoding scheme should be given as the attribute value, and shou
     targetNamespace="http://rs.tdwg.org/dwc/terms/"
     xmlns:dc="http://purl.org/dc/terms/"
     xmlns:dwc="http://rs.tdwg.org/dwc/terms/"&gt;
-&lt;dwc:CountryCode xsi:type=&quot;dc:ISO3166&quot;&gt;COL&lt;/dwc:CountryCode&gt;
+&lt;dwc:countryCode xsi:type=&quot;dc:ISO3166&quot;&gt;COL&lt;/dwc:countryCode&gt;
 </PRE>
 or
 <PRE class="example">
 &lt;xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
     targetNamespace="http://rs.tdwg.org/dwc/terms/"
     xmlns:dwc="http://rs.tdwg.org/dwc/terms/"&gt;
-&lt;dwc:BasisOfRecord xsi:type=&quot;dwc:DwCType&quot;&gt;PreservedSpecimen&lt;/dwc:BasisOfRecord&gt;
+&lt;dwc:basisOfRecord xsi:type=&quot;dwc:DwCType&quot;&gt;PreservedSpecimen&lt;/dwc:basisOfRecord&gt;
 </PRE>
 
 This allows implementors to take some advantage of the data typing functionality provided by the W3C XML Schema specifications 
 [<A href="http://www.w3.org/XML/Schema">XMLSCHEMA</A>].
-
-<H3>4.6 Null values</H3>
+ -->
+ 
+<A name="nullvalues" id="nullvalues"></A> 
+<H3>2.5 Null values</H3>
 <P>
-Elements that are unsupported should not be provided in documents. Supported elements for which the value is null should be explicitly 
-coded to show this using the attribute xsi:nil="true". Following is an example of the latter case:
-<PRE class="example">&lt;dwc:Locality xsi:nil=&quot;true&quot;&gt;&lt;/dwc:Locality&gt;
-</PRE>
+Elements for which the value is null should be omitted from the document or explicitly coded using the 
+attribute <i>xsi:nil="true"</i>. 
+<PRE class="example">&lt;dwc:locality xsi:nil=&quot;true&quot;/&gt;</PRE>
+Do not use an empty string - an element with no content:
+<PRE class="example">&lt;dwc:locality&quot;&gt;&lt;/dwc:locality&quot;&gt;</PRE>
 
-<H3>4.7 Language</H3>
+
+<!-- 
+<H3>2.7 Language</H3>
 <P>
 It is permissible to indicate the language of the <EM>value</EM> using the &#39;xml:lang&#39; attribute. For example:
-<PRE class="example">&lt;dwc:Country xml:lang=&quot;es&quot;&gt;España&lt;/dwc:Country&gt;
-&lt;dwc:Sex xml:lang=&quot;en&quot;&gt;female&lt;/dwc:Sex&gt;
+<PRE class="example">&lt;dwc:country xml:lang=&quot;es&quot;&gt;España&lt;/dwc:country&gt;
+&lt;dwc:sex xml:lang=&quot;en&quot;&gt;female&lt;/dwc:sex&gt;
 </PRE>
-
-<H3>4.8 Simple Darwin Core</H3>
+ -->
+ 
+<A name="simpledarwincore" id="simpledarwincore"></A> 
+<H3>2.6 Simple Darwin Core</H3>
 <P>
-The Simple Darwin Core [<A href="../../../xsd/tdwg_dwc_simple.xsd">SIMPLEXMLSCHEMA</a>] most closely models the "flat" nature of many data sets. It 
+The <i>Simple Darwin Core</i> [<A href="../../../xsd/tdwg_dwc_simple.xsd">SIMPLEXMLSCHEMA</a>] most closely models the "flat" nature of many data sets. It 
 is a ready-made schema for sharing information with no structure beyond properties of a <EM>record</EM> (equivalent to fields in a table, or columns 
-in a spreadsheet).  It is meant to accomodate all properties except those that require further structure to be meaningful (for example, terms in the 
-classes ResourceRelationship, SampleAttribute, and EventAttribute). The schema has few required terms and no term is repeated within a given 
-<EM>record</EM>. 
+in a spreadsheet).  It is meant to accomodate all properties except those that require further structure to be meaningful
+(auxilliary terms in the classes <a href="../../index.htm#ResourceRelationship">ResourceRelationship</a> and 
+<a href="../../index.htm#MeasurementOrFact">MeasurementOrFact</a>. The schema has no required terms and no term is repeated within a given 
+<EM>record</EM>. Refer to the <i>Simple Darwin Core</i> page [<A href="../../simple/index.htm">SIMPLEDWC</a>]
+for the rationale behind this schema.
 <P>
-Records for specimens, observations, taxa, media, locations, and nomenclatural checklists can be constructed using an appropriate BasisOfRecord 
-and appropriate subsets of the Simple Darwin Core elements. The type of content of a record must be designated by the value of the required 
-BasisOfRecord [<a href="../../index.htm#BasisOfRecord">BASISOFRECORD</a>] element, which is controlled by the Darwin Core Type vocabulary 
-[<A href="../../type-vocabulary/index.htm">DWC-TYPE</a>]. 
+Records for specimens, observations, taxa, media, locations, and nomenclatural checklists can be constructed using an appropriate values of
+<a href="../../index.htm#dcterms:type">dcterms:type</a>, to describe the class that is the root of the record, and <a href="../../index.htm#basisOfRecord">basisOfRecord</a>, to describe 
+subtype or basic nature of the record, along with appropriate subsets of the <i>Simple Darwin Core</i> elements. 
+The content of these type elements are controlled by the <i>Darwin Core Type vocabulary</i> 
+[<A href="../../type-vocabulary/index.htm">DWC-TYPE</a>].
 <P>
-Following is an example of an XML document for a single specimen complying with the Simple Darwin Core Schema 
-[<A href="../../../xsd/tdwg_dwc_simple.xsd">SIMPLEXMLSCHEMA</a>]].
+Following is an brief example of an XML document for a single specimen complying with the <i>Simple Darwin Core Schema</i> 
+[<A href="../../../xsd/tdwg_dwc_simple.xsd">SIMPLEXMLSCHEMA</a>]. The Simple Darwin Core XML example document 
+[<a href="../../../examples/xml/example_simple.xml">SIMPLEXMLEXAMPLE</a>] shows 
+detail for a single record having a more complete set of elements.
 
 <PRE class="example">&lt;?xml version=&quot;1.0&quot;?&gt;
-  &lt;records&gt;
-  xmlns=&quot;http://rs.tdwg.ord/dwc/terms/xsd/myapp/&quot;
-  xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
-  xsi:schemaLocation=&quot;http://rs.tdwg.ord/dwc/terms/xsd/myapp/ http://rs.tdwg.org/dwc/xsd/tdwg_dwc_simple.xsd&quot;
-  xmlns:dcterms=&quot;http://purl.org/dc/terms/&quot;
-  xmlns:dwc=&quot;http://rs.tdwg.org/dwc/xsd/simpledarwincore&quot;&gt;
-    &lt;dwc:SimpleDarwinRecord&gt;
-      &lt;dcterms:modified&gt;2009-02-12&lt;/dcterms:modified&gt;
-      &lt;dcterms:rightsHolder&gt;Museum of Vertebrate Zoology&lt;/dcterms:rightsHolder&gt;
-      &lt;dcterms:rights&gt;Creative Commons License&lt;/dcterms:rights&gt;
-      &lt;dwc:InstitutionCode&gt;MVZ&lt;/dwc:InstitutionCode&gt;
-      &lt;dwc:CollectionCode&gt;Mammals&lt;/dwc:CollectionCode&gt;
-      &lt;dwc:SampleID&gt;urn:catalog:MVZ:Mammals:14523&lt;/dwc:SampleID&gt;
-      &lt;dwc:BasisOfRecord&gt;PreservedSpecimen&lt;/dwc:BasisOfRecord&gt;
-      &lt;dwc:Country xml:lang=&quot;es&quot;&gt;Argentina&lt;/dwc:Country&gt;
-      &lt;dwc:CountryCode xsi:type=&quot;dcterms:ISO3166&quot;&gt;ARG&lt;/dwc:CountryCode&gt;
-      &lt;dwc:StateProvince xml:lang=&quot;es&quot;&gt;Neuquén&lt;/dwc:StateProvince&gt;
-      &lt;dwc:Locality xml:lang=&quot;es&quot;&gt;25 km al NNE de Bariloche por Ruta 40 (=237)&lt;/dwc:Locality&gt;
-    &lt;/dwc:SimpleDarwinRecord&gt;
-  &lt;/records&gt;
+&lt;dwr:SimpleDarwinRecordSet
+    xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+    xsi:schemaLocation=&quot;http://rs.tdwg.org/dwc/xsd/simpledarwincore/  http://rs.tdwg.org/dwc/xsd/tdwg_dwc_simple.xsd&quot;
+    xmlns:dcterms=&quot;http://purl.org/dc/terms/&quot;
+    xmlns:dwc=&quot;http://rs.tdwg.org/dwc/terms/&quot;
+    xmlns:dwr=&quot;http://rs.tdwg.org/dwc/xsd/simpledarwincore/&quot;&gt;
+    &lt;dwr:SimpleDarwinRecord&gt;
+        &lt;dcterms:type&gt;Occurrence&lt;/dcterms:type&gt;
+        &lt;dcterms:modified&gt;2009-02-12T12:43:31&lt;/dcterms:modified&gt;
+        &lt;dcterms:rightsHolder&gt;Museum of Vertebrate Zoology&lt;/dcterms:rightsHolder&gt;
+        &lt;dcterms:rights&gt;Creative Commons License&lt;/dcterms:rights&gt;
+        &lt;dwc:institutionCode&gt;MVZ&lt;/dwc:institutionCode&gt;
+        &lt;dwc:collectionCode&gt;Mammals&lt;/dwc:collectionCode&gt;
+        &lt;dwc:occurrenceID&gt;urn:catalog:MVZ:Mammals:14523&lt;/dwc:occurrenceID&gt;
+        &lt;dwc:basisOfRecord&gt;PreservedSpecimen&lt;/dwc:basisOfRecord&gt;
+        &lt;dwc:country&gt;Argentina&lt;/dwc:country&gt;
+        &lt;dwc:countryCode&gt;ARG&lt;/dwc:countryCode&gt;
+        &lt;dwc:stateProvince&gt;Neuqu&#233;n&lt;/dwc:stateProvince&gt;
+        &lt;dwc:locality&gt;25 km al NNE de Bariloche por Ruta 40 (=237)&lt;/dwc:locality&gt;
+    &lt;/dwr:SimpleDarwinRecord&gt;
+&lt;/dwr:SimpleDarwinRecordSet&gt;
+</code></pre>
 </PRE>
 
 <P>
-<H3>4.9 Classes and Containment</H3>
+<A name="classes" id="classes"></A> 
+<H3>2.7 Classes and Containment</H3>
 <P>
-Many Darwin Core terms (<EM>properties</EM>) are defined as having other terms (<EM>classes</EM>) as their domain. For example, AcceptedTaxon and 
-Taxon are both Darwin Core terms, and AcceptedTaxon is a property of the Taxon class (it has Taxon as its domain). When constructing schemas that 
+Many Darwin Core terms (<i>properties</i>) are defined as having other terms (<i>classes</i>) as their domain. 
+For example, <a href="../../index.htm#acceptedTaxonName">acceptedTaxonName</a> and 
+<a href="../../index.htm#Taxon">Taxon</a> are both Darwin Core terms, and acceptedTaxon is a property of the Taxon class (it has Taxon as its domain). When constructing schemas that 
 take advantage of classes in structures, implementors are encouraged to maintain the property/class 
-relationships defined by the terms whenever possible (refer to the <EM>Has Domain</EM> attribute of the term as given in the Complete
-Historical Reference [<A href="../../history/index.htm">HISTORY</a>]), using the mechanisms described in the Generic Darwin Core schema 
-[<A href="../../../xsd/tdwg_dwcterms.xsd">GENERICXMLSCHEMA</a>]. 
+relationships defined by the terms whenever possible (refer to the <i>Has Domain</i> attribute of the term as given in the 
+<i>Quick Reference Guide</i> [<A href="../../index.htm">TERMS</a>]). To promote reuse Darwin Core provides a set of xml schemas 
+to use as the basis of additional schemas:
+<ul>
+ <li>[<A href="../../../xsd/tdwg_dwcterms.xsd">TERMSXMLSCHEMA</a>] - property term definitions as typed global 
+elements and named groups for all terms for a given class to be referenced. The schema makes use of substitution 
+groups anyClass, anyProperty, anyIdentifier and anyXYZTerm for each class, e.g. anyTaxonTerm. This is the schema
+upon which the <i>Simple Darwin Core XML Schema</i>
+[<A href="../../../xsd/tdwg_dwc_simple.xsd">SIMPLEXMLSCHEMA</a>] is based. 
+ </li>
+ <li>[<A href="../../../xsd/tdwg_dwc_class_terms.xsd">CLASSTERMSXMLSCHEMA</a>] - class term definitions as typed global 
+elements with subelements referencing all corresponding property terms via their substitution group.
+ </li>
+</ul>
 <P>
-Structure using classes can be used flexibly. For example, one could construct a specimen-based schema 
-[<A href="../../../xsd/tdwg_dwc_compound_sample.xsd">COMPSAMPLEXMLSCHEMA</a>] having the sample as the root class
-in a hierarchy with SamplingEvent and Identification as children, with SamplingLocation as a child of SamplingEvent, and with Taxon as a child of 
-Identification.
-<P>
-Alternatively, one could construct a observation-based schema 
-[<A href="../../../xsd/tdwg_dwc_compound_samplinglocation.xsd">COMPLOCATIONXMLSCHEMA</a>] having the SamplingLocation as the root class in a 
-hierarchy with SamplingEvent as a child, with Sample as a child of SamplingEvent, with Identification as a child of Sample, and with Taxon as 
-a child of Identification.
+It is encouraged to use classes in a normalized way to avoid deep nesting. A <i>Darwin Core Tools and Applications</i> wiki page 
+[<a href="http://code.google.com/p/darwincore/wiki/ToolsAndApplications">TOOLS</a>] has been created as an index to example schemas
+for the purpose of community discussions and development.
 
-<A name="references" id="references"></A> 
-<H2>5. References</H2>
-<TABLE width="95%" border="0" align="center">
-<TBODY>
+An XML schema [<A href="../../../xsd/tdwg_dwc_classes.xsd">CLASSXMLSCHEMA</a>] is provided to freely mix any darwin 
+core class in a global list and allow them to reference each other via foreign keys using the respective class 
+identifier terms. Following is an example of using normalized classes to represent two related specimen occurrences
+(one of which has had a second identification) at one location following this class-based schema. Note that you can 
+reuse the location definition here by referring to it via locationID:  
+<pre class="example">
+&lt;?xml version="1.0"?&gt;
+&lt;dwr:DarwinRecordSet
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://rs.tdwg.org/dwc/dwcrecord/  http://rs.tdwg.org/dwc/xsd/tdwg_dwc_classes.xsd"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
+    xmlns:dwr="http://rs.tdwg.org/dwc/dwcrecord/"&gt;
+    &lt;dcterms:Location&gt;
+        &lt;dwc:locationID&gt;http://guid.mvz.org/sites/arg/127&lt;/dwc:locationID&gt;
+        &lt;dwc:country&gt;Argentina&lt;/dwc:country&gt;
+        &lt;dwc:countryCode&gt;ARG&lt;/dwc:countryCode&gt;
+        &lt;dwc:stateProvince&gt;Neuquén&lt;/dwc:stateProvince&gt;
+        &lt;dwc:locality&gt;25 km al NNE de Bariloche por Ruta 40 (=237)&lt;/dwc:locality&gt;
+    &lt;/dcterms:Location&gt;
+    &lt;dwc:Occurrence&gt;
+        &lt;dcterms:type&gt;Occurrence&lt;/dcterms:type&gt;
+        &lt;dcterms:modified&gt;2009-02-12T12:43:31&lt;/dcterms:modified&gt;
+        &lt;dcterms:rightsHolder&gt;Museum of Vertebrate Zoology&lt;/dcterms:rightsHolder&gt;
+        &lt;dcterms:rights&gt;Creative Commons License&lt;/dcterms:rights&gt;
+        &lt;dwc:institutionCode&gt;MVZ&lt;/dwc:institutionCode&gt;
+        &lt;dwc:collectionCode&gt;Mammals&lt;/dwc:collectionCode&gt;
+        &lt;dwc:occurrenceID&gt;urn:catalog:MVZ:Mammals:14523&lt;/dwc:occurrenceID&gt;
+        &lt;dwc:basisOfRecord&gt;PreservedSpecimen&lt;/dwc:basisOfRecord&gt;
+        &lt;dwc:locationID&gt;http://guid.mvz.org/sites/arg/127&lt;/dwc:locationID&gt;
+    &lt;/dwc:Occurrence&gt;
+    &lt;dwc:Identification&gt;
+      &lt;dwc:identificationID&gt;http://guid.mvz.org/identifications/23459&lt;/dwc:identificationID&gt;
+      &lt;dwc:identifiedBy&gt;Richard Sage&lt;/dwc:identifiedBy&gt;
+      &lt;dwc:dateIdentified&gt;2000&lt;/dwc:dateIdentified&gt;
+      &lt;dwc:identificationQualifier&gt;sp.&lt;/dwc:identificationQualifier&gt;
+      &lt;dwc:occurrenceID&gt;urn:catalog:MVZ:Mammals:14523&lt;/dwc:occurrenceID&gt;
+    &lt;/dwc:Identification&gt;
+    &lt;dwc:Taxon&gt;
+      &lt;dwc:scientificName&gt;Ctenomys&lt;/dwc:scientificName&gt;
+      &lt;dwc:genus&gt;Ctenomys&lt;/dwc:genus&gt;
+      &lt;dwc:identificationID&gt;http://guid.mvz.org/identifications/23459&lt;/dwc:identificationID&gt;
+    &lt;/dwc:Taxon&gt;
+    &lt;dwc:Identification&gt;
+      &lt;dwc:identificationID&gt;http://guid.mvz.org/identifications/94752&lt;/dwc:identificationID&gt;
+      &lt;dwc:identifiedBy&gt;James L Patton&lt;/dwc:identifiedBy&gt;
+      &lt;dwc:dateIdentified&gt;2001-09-14&lt;/dwc:dateIdentified&gt;
+      &lt;dwc:occurrenceID&gt;urn:catalog:MVZ:Mammals:14523&lt;/dwc:occurrenceID&gt;
+    &lt;/dwc:Identification&gt;
+    &lt;dwc:Taxon&gt;
+      &lt;dwc:scientificName&gt;Ctenomys sociabilis&lt;/dwc:scientificName&gt;
+      &lt;dwc:higherTaxon&gt;nimalia, Chordata, Vertebrata, Mammalia, Theria, Eutheria, Rodentia, Hystricognatha, Hystricognathi, Ctenomyidae, Ctenomyini, Ctenomys&lt;/dwc:higherTaxon&gt;
+      &lt;dwc:kingdom&gt;Animalia&lt;/dwc:kingdom&gt;
+      &lt;dwc:phylum&gt;Chordata&lt;/dwc:phylum&gt;
+      &lt;dwc:class&gt;Mammalia&lt;/dwc:class&gt;
+      &lt;dwc:order&gt;Rodentia&lt;/dwc:order&gt;
+      &lt;dwc:family&gt;Ctenomyidae&lt;/dwc:family&gt;
+      &lt;dwc:genus&gt;Ctenomys&lt;/dwc:genus&gt;
+      &lt;dwc:specificEpithet&gt;sociabilis&lt;/dwc:specificEpithet&gt;
+      &lt;dwc:identificationID&gt;http://guid.mvz.org/identifications/94752&lt;/dwc:identificationID&gt;
+    &lt;/dwc:Taxon&gt;
+    &lt;dwc:Occurrence&gt;
+        &lt;dcterms:type&gt;Occurrence&lt;/dcterms:type&gt;
+        &lt;dcterms:modified&gt;2009-02-12T12:43:31&lt;/dcterms:modified&gt;
+        &lt;dcterms:rightsHolder&gt;Museum of Vertebrate Zoology&lt;/dcterms:rightsHolder&gt;
+        &lt;dcterms:rights&gt;Creative Commons License&lt;/dcterms:rights&gt;
+        &lt;dwc:institutionCode&gt;MVZ&lt;/dwc:institutionCode&gt;
+        &lt;dwc:collectionCode&gt;Mammals&lt;/dwc:collectionCode&gt;
+        &lt;dwc:occurrenceID&gt;urn:catalog:MVZ:Mammals:14524&lt;/dwc:occurrenceID&gt;
+        &lt;dwc:basisOfRecord&gt;PreservedSpecimen&lt;/dwc:basisOfRecord&gt;
+        &lt;dwc:locationID&gt;http://guid.mvz.org/sites/arg/127&lt;/dwc:locationID&gt;
+    &lt;/dwc:Occurrence&gt;
+    &lt;dwc:Identification&gt;
+      &lt;dwc:identificationID&gt;http://guid.mvz.org/identifications/94753&lt;/dwc:identificationID&gt;
+      &lt;dwc:identifiedBy&gt;James L Patton&lt;/dwc:identifiedBy&gt;
+      &lt;dwc:dateIdentified&gt;2001-09-14&lt;/dwc:dateIdentified&gt;
+      &lt;dwc:occurrenceID&gt;urn:catalog:MVZ:Mammals:14524&lt;/dwc:occurrenceID&gt;
+    &lt;/dwc:Identification&gt;
+    &lt;dwc:Taxon&gt;
+      &lt;dwc:scientificName&gt;Ctenomys sociabilis&lt;/dwc:scientificName&gt;
+      &lt;dwc:higherTaxon&gt;nimalia, Chordata, Vertebrata, Mammalia, Theria, Eutheria, Rodentia, Hystricognatha, Hystricognathi, Ctenomyidae, Ctenomyini, Ctenomys&lt;/dwc:higherTaxon&gt;
+      &lt;dwc:kingdom&gt;Animalia&lt;/dwc:kingdom&gt;
+      &lt;dwc:phylum&gt;Chordata&lt;/dwc:phylum&gt;
+      &lt;dwc:class&gt;Mammalia&lt;/dwc:class&gt;
+      &lt;dwc:order&gt;Rodentia&lt;/dwc:order&gt;
+      &lt;dwc:family&gt;Ctenomyidae&lt;/dwc:family&gt;
+      &lt;dwc:genus&gt;Ctenomys&lt;/dwc:genus&gt;
+      &lt;dwc:specificEpithet&gt;sociabilis&lt;/dwc:specificEpithet&gt;
+      &lt;dwc:identificationID&gt;http://guid.mvz.org/identifications/94753&lt;/dwc:identificationID&gt;
+    &lt;/dwc:Taxon&gt;
+    &lt;dwc:ResourceRelationship&gt;
+        &lt;dwc:resourceRelationshipID&gt;http://guid.mvz.org/relations/23423&lt;/dwc:resourceRelationshipID&gt;
+        &lt;dwc:resourceID&gt;urn:catalog:MVZ:Mammals:14523&lt;/dwc:resourceID&gt;
+        &lt;dwc:relatedResourceID&gt;urn:catalog:MVZ:Mammals:14524&lt;/dwc:relatedResourceID&gt;
+        &lt;dwc:relationshipOfResource&gt;offspring of&lt;/dwc:relationshipOfResource&gt;
+    &lt;/dwc:ResourceRelationship&gt;
+    &lt;dwc:ResourceRelationship&gt;
+        &lt;dwc:resourceRelationshipID&gt;http://guid.mvz.org/relations/23424&lt;/dwc:resourceRelationshipID&gt;
+        &lt;dwc:resourceID&gt;urn:catalog:MVZ:Mammals:14524&lt;/dwc:resourceID&gt;
+        &lt;dwc:relatedResourceID&gt;urn:catalog:MVZ:Mammals:14523&lt;/dwc:relatedResourceID&gt;
+        &lt;dwc:relationshipOfResource&gt;mother of&lt;/dwc:relationshipOfResource&gt;
+    &lt;/dwc:ResourceRelationship&gt;
+&lt;/dwr:DarwinRecordSet&gt;
+</pre>
 
-<TR>
-<TD width="10%"><A name="ABSTRACTMODEL">[ABSTRACTMODEL]</A></TD>
-<TD width="40%"><A href="http://dublincore.org/documents/abstract-model/">http://dublincore.org/documents/abstract-model/</A></TD>
-<TD width="50%">Dublin Core Metadata Initiative Abstract model.</TD>
-</TR>
+Here is different example demonstrating area count observations for events on two different days at one location:
+<pre class="example">
+&lt;?xml version=&quot;1.0&quot;?&gt;
+&lt;dwr:DarwinRecordSet
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://rs.tdwg.org/dwc/dwcrecord/  http://rs.tdwg.org/dwc/xsd/tdwg_dwc_classes.xsd"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
+    xmlns:dwr="http://rs.tdwg.org/dwc/dwcrecord/"&gt;
+    &lt;dcterms:Location&gt;
+      &lt;dwc:locationID&gt;http://guid.mvz.org/sites/arg/127&lt;/dwc:locationID&gt;
+      &lt;dwc:country&gt;Argentina&lt;/dwc:country&gt;
+      &lt;dwc:countryCode&gt;ARG&lt;/dwc:countryCode&gt;
+      &lt;dwc:stateProvince&gt;Neuquén&lt;/dwc:stateProvince&gt;
+      &lt;dwc:locality&gt;Valle Limay, Estancia Rincon Grande, 48 ha area with centroid at this point&lt;/dwc:locality&gt;
+      &lt;dwc:decimalLatitude&gt;-40.97467&lt;/dwc:decimalLatitude&gt;
+      &lt;dwc:decimalLongitude&gt;-71.0734&lt;/dwc:decimalLongitude&gt;
+      &lt;dwc:geodeticDatum&gt;WGS84&lt;/dwc:geodeticDatum&gt;
+      &lt;dwc:coordinateUncertaintyInMeters&gt;200&lt;/dwc:coordinateUncertaintyInMeters&gt;
+    &lt;/dcterms:Location&gt;
+    &lt;dwc:Event&gt;
+      &lt;dwc:eventID&gt;http://guid.mvz.org/events/2006/11/26/17&lt;/dwc:eventID&gt;
+      &lt;dwc:samplingProtocol&gt;area count&lt;/dwc:samplingProtocol&gt;
+      &lt;dwc:eventDate&gt;2006-11-26&lt;/dwc:eventDate&gt;
+      &lt;dwc:locationID&gt;http://guid.mvz.org/sites/arg/127&lt;/dwc:locationID&gt;
+    &lt;/dwc:Event&gt;
+    &lt;dwc:Occurrence&gt;
+      &lt;dwc:occurrenceID&gt;urn:catalog:AUDCLO:EBIRD:OBS64515288&lt;/dwc:occurrenceID&gt;
+      &lt;dcterms:type&gt;Occurrence&lt;/dcterms:type&gt;
+      &lt;dcterms:modified&gt;2009-02-17T07:33:04Z&lt;/dcterms:modified&gt;
+      &lt;dcterms:rightsHolder&gt;Avian Knowledge Network&lt;/dcterms:rightsHolder&gt;
+      &lt;dcterms:rights&gt;Creative Commons License&lt;/dcterms:rights&gt;
+      &lt;dwc:institutionCode&gt;AUDCLO&lt;/dwc:institutionCode&gt;
+      &lt;dwc:collectionCode&gt;EBIRD&lt;/dwc:collectionCode&gt;
+      &lt;dwc:basisOfRecord&gt;HumanObservation&lt;/dwc:basisOfRecord&gt;
+      &lt;dwc:individualCount&gt;2&lt;/dwc:individualCount&gt;
+      &lt;dwc:eventID&gt;http://guid.mvz.org/events/2006/11/26/17&lt;/dwc:eventID&gt;
+    &lt;/dwc:Occurrence&gt;
+    &lt;dwc:Taxon&gt;
+      &lt;dwc:scientificName&gt;Anthus hellmayri&lt;/dwc:scientificName&gt;
+      &lt;dwc:class&gt;Aves&lt;/dwc:class&gt;
+      &lt;dwc:genus&gt;Anthus&lt;/dwc:genus&gt;
+      &lt;dwc:specificEpithet&gt;hellmayri&lt;/dwc:specificEpithet&gt;
+      &lt;dwc:occurrenceID&gt;urn:catalog:AUDCLO:EBIRD:OBS64515288&lt;/dwc:occurrenceID&gt;
+    &lt;/dwc:Taxon&gt;
+    &lt;dwc:Occurrence&gt;
+      &lt;dwc:occurrenceID&gt;urn:catalog:AUDCLO:EBIRD:OBS64515286&lt;/dwc:occurrenceID&gt;
+      &lt;dcterms:type&gt;Occurrence&lt;/dcterms:type&gt;
+      &lt;dcterms:modified&gt;2009-02-17T07:33:04Z&lt;/dcterms:modified&gt;
+      &lt;dcterms:rightsHolder&gt;Avian Knowledge Network&lt;/dcterms:rightsHolder&gt;
+      &lt;dcterms:rights&gt;Creative Commons License&lt;/dcterms:rights&gt;
+      &lt;dwc:institutionCode&gt;AUDCLO&lt;/dwc:institutionCode&gt;
+      &lt;dwc:collectionCode&gt;EBIRD&lt;/dwc:collectionCode&gt;
+      &lt;dwc:basisOfRecord&gt;HumanObservation&lt;/dwc:basisOfRecord&gt;
+      &lt;dwc:individualCount&gt;1&lt;/dwc:individualCount&gt;
+      &lt;dwc:eventID&gt;http://guid.mvz.org/events/2006/11/26/17&lt;/dwc:eventID&gt;
+    &lt;/dwc:Occurrence&gt;
+    &lt;dwc:Taxon&gt;
+      &lt;dwc:scientificName&gt;Anthus correndera&lt;/dwc:scientificName&gt;
+      &lt;dwc:class&gt;Aves&lt;/dwc:class&gt;
+      &lt;dwc:genus&gt;Anthus&lt;/dwc:genus&gt;
+      &lt;dwc:specificEpithet&gt;correndera&lt;/dwc:specificEpithet&gt;
+      &lt;dwc:occurrenceID&gt;urn:catalog:AUDCLO:EBIRD:OBS64515286&lt;/dwc:occurrenceID&gt;
+    &lt;/dwc:Taxon&gt;
+    &lt;dwc:Event&gt;
+      &lt;dwc:eventID&gt;http://guid.mvz.org/events/2006/11/27/6&lt;/dwc:eventID&gt;
+      &lt;dwc:samplingProtocol&gt;area count&lt;/dwc:samplingProtocol&gt;
+      &lt;dwc:eventDate&gt;2006-11-27&lt;/dwc:eventDate&gt;
+      &lt;dwc:locationID&gt;http://guid.mvz.org/sites/arg/127&lt;/dwc:locationID&gt;
+    &lt;/dwc:Event&gt;
+    &lt;dwc:Occurrence&gt;
+      &lt;dwc:occurrenceID&gt;urn:catalog:AUDCLO:EBIRD:OBS64515333&lt;/dwc:occurrenceID&gt;
+      &lt;dcterms:type&gt;Occurrence&lt;/dcterms:type&gt;
+      &lt;dcterms:modified&gt;2009-02-17T07:33:04Z&lt;/dcterms:modified&gt;
+      &lt;dcterms:rightsHolder&gt;Avian Knowledge Network&lt;/dcterms:rightsHolder&gt;
+      &lt;dcterms:rights&gt;Creative Commons License&lt;/dcterms:rights&gt;
+      &lt;dwc:institutionCode&gt;AUDCLO&lt;/dwc:institutionCode&gt;
+      &lt;dwc:collectionCode&gt;EBIRD&lt;/dwc:collectionCode&gt;
+      &lt;dwc:basisOfRecord&gt;HumanObservation&lt;/dwc:basisOfRecord&gt;
+      &lt;dwc:individualCount&gt;1&lt;/dwc:individualCount&gt;
+      &lt;dwc:eventID&gt;http://guid.mvz.org/events/2006/11/27/6&lt;/dwc:eventID&gt;
+    &lt;/dwc:Occurrence&gt;
+    &lt;dwc:Taxon&gt;
+      &lt;dwc:scientificName&gt;Anthus hellmayri&lt;/dwc:scientificName&gt;
+      &lt;dwc:class&gt;Aves&lt;/dwc:class&gt;
+      &lt;dwc:genus&gt;Anthus&lt;/dwc:genus&gt;
+      &lt;dwc:specificEpithet&gt;hellmayri&lt;/dwc:specificEpithet&gt;
+      &lt;dwc:occurrenceID&gt;urn:catalog:AUDCLO:EBIRD:OBS64515333&lt;/dwc:occurrenceID&gt;
+    &lt;/dwc:Taxon&gt;
+    &lt;dwc:Occurrence&gt;
+      &lt;dwc:occurrenceID&gt;urn:catalog:AUDCLO:EBIRD:OBS64515331&lt;/dwc:occurrenceID&gt;
+      &lt;dcterms:type&gt;Occurrence&lt;/dcterms:type&gt;
+      &lt;dcterms:modified&gt;2009-02-17T07:33:04Z&lt;/dcterms:modified&gt;
+      &lt;dcterms:rightsHolder&gt;Avian Knowledge Network&lt;/dcterms:rightsHolder&gt;
+      &lt;dcterms:rights&gt;Creative Commons License&lt;/dcterms:rights&gt;
+      &lt;dwc:institutionCode&gt;AUDCLO&lt;/dwc:institutionCode&gt;
+      &lt;dwc:collectionCode&gt;EBIRD&lt;/dwc:collectionCode&gt;
+      &lt;dwc:basisOfRecord&gt;HumanObservation&lt;/dwc:basisOfRecord&gt;
+      &lt;dwc:individualCount&gt;2&lt;/dwc:individualCount&gt;
+      &lt;dwc:eventID&gt;http://guid.mvz.org/events/2006/11/27/6&lt;/dwc:eventID&gt;
+    &lt;/dwc:Occurrence&gt;
+    &lt;dwc:Taxon&gt;
+      &lt;dwc:scientificName&gt;Anthus hellmayri&lt;/dwc:scientificName&gt;
+      &lt;dwc:class&gt;Aves&lt;/dwc:class&gt;
+      &lt;dwc:genus&gt;Anthus&lt;/dwc:genus&gt;
+      &lt;dwc:specificEpithet&gt;hellmayri&lt;/dwc:specificEpithet&gt;
+      &lt;dwc:occurrenceID&gt;urn:catalog:AUDCLO:EBIRD:OBS64515331&lt;/dwc:occurrenceID&gt;
+    &lt;/dwc:Taxon&gt;
+&lt;/dwr:DarwinRecordSet&gt;
+</pre>
 
-<TR>
-<TD width="10%"><A name="BASISOFRECORD">[BASISOFRECORD]</A></TD>
-<TD width="40%"><a href="../../index.htm#BasisOfRecord">http://rs.tdwg.org/dwc/terms/index.htm#BasisOfRecord</A></TD>
-<TD width="50%">Term describing the type of content in a resource.</TD>
-</TR>
-
-<TR>
-<TD width="10%"><A name="COMPSAMPLEXMLSCHEMA">[COMPSAMPLEXMLSCHEMA]</A></TD>
-<TD width="40%"><A href="../../../xsd/tdwg_dwc_compound_sample.xsd">http://rs.tdwg.org/dwc/xsd/tdwg_dwc_compound_sample.xsd</A></TD>
-<TD width="50%">Structured Darwin Core XML schema having Sample as the root.</TD>
-</TR>
-
-<TR>
-<TD width="10%"><A name="COMPLOCATIONXMLSCHEMA">[COMPLOCATIONXMLSCHEMA]</A></TD>
-<TD width="40%"><A href="../../../xsd/tdwg_dwc_compound_samplinglocation.xsd">http://rs.tdwg.org/dwc/xsd/tdwg_dwc_compound_samplinglocation.xsd</A></TD>
-<TD width="50%">Structured Darwin Core XML schema having SamplingLocation as the root.</TD>
-</TR>
-
-<TR>
-<TD width="10%"><A name="DCMI">[DCMI]</A></TD>
-<TD width="40%"><A href="http://dublincore.org/">http://dublincore.org/</A></TD>
-<TD width="50%">Dublin Core Metadata Initiative Web site.</TD>
-</TR>
-
-<TR>
-<TD width="10%"><A name="DCMIXMLGUIDE">[DCMIXMLGUIDE]</A></TD>
-<TD width="40%"><a href="http://dublincore.org/documents/dc-xml/">http://dublincore.org/documents/dc-xml/</A></TD>
-<TD width="50%">Expressing Dublin Core metadata using XML.</TD>
-</TR>
-
-<TR>
-<TD width="10%"><A name="DCTERMS">[DCTERMS]</A></TD>
-<TD width="40%"><A href="http://dublincore.org/documents/dcmi-terms/">http://dublincore.org/documents/dcmi-terms/</A></TD>
-<TD width="50%">Dublin Core Metadata terms.</TD>
-</TR>
-
-<TR>
-<TD width="10%"><A name="DWC">[DWC]</A></TD>
-<TD width="40%"><A href="../../../index.htm">http://rs.tdwg.org/dwc/</A></TD>
-<TD width="50%">An introduction to the Darwin Core Standard.</TD>
-</TR>
-
-<TR>
-<TD width="10%"><A name="DWC-TYPE">[DWC-TYPE]</A></TD>
-<TD width="40%"><A href="../../type-vocabulary/index.htm">http://rs.tdwg.org/dwc/terms/type-vocabulary/</A></TD>
-<TD width="50%">A reference to the Darwin Core Type Vocabulary terms for use with BasisOfRecord.</TD>
-</TR>
-
-<TR>
-<TD width="10%"><A name="GENERICXMLSCHEMA">[GENERICXMLSCHEMA]</A></TD>
-<TD width="40%"><A href="../../../xsd/tdwg_dwcterms.xsd">http://rs.tdwg.org/dwc/xsd/tdwg_dwcterms.xsd</A></TD>
-<TD width="50%">Generic Darwin Core XML schema.</TD>
-</TR>
-
-<TR>
-<TD width="10%"><A name="HISTORY">[HISTORY]</A></TD>
-<TD width="40%"><A href="../../history/index.htm">http://rs.tdwg.org/dwc/terms/history/</A></TD>
-<TD width="50%">Complete historical reference to Darwin Core terms.</TD>
-</TR>
-
-<TR>
-<TD width="10%"><A name="NAMESPACEPOLICY">[NAMESPACEPOLICY]</A></TD>
-<TD width="40%"><A href="../../namespace/index.htm">http://rs.tdwg.org/dwc/terms/namespace/</A></TD>
-<TD width="50%">Policy governing Darwin Core terms.</TD>
-</TR>
-
-<TR>
-<TD width="10%"><A name="RDF"></A>[RDF]</TD>
-<TD width="40%"><A href="http://www.w3.org/RDF/">http://www.w3.org/RDF/</A></TD>
-<TD width="50%">Reference site for the Resource Description Framework (RDF).</TD>
-</TR>
-
-<TR>
-<TD width="10%"><A name="SIMPLEXMLSCHEMA">[SIMPLEXMLSCHEMA]</A></TD>
-<TD width="40%"><A href="../../../xsd/tdwg_dwc_simple.xsd">http://rs.tdwg.org/dwc/xsd/tdwg_dwc_simple.xsd</A></TD>
-<TD width="50%">Simple Darwin Core XML schema.</TD>
-</TR>
-
-<TR>
-<TD width="10%"><A name="TERMS">[TERMS]</A></TD>
-<TD width="40%"><A href="../../index.htm">http://rs.tdwg.org/dwc/terms/</A></TD>
-<TD width="50%">Quick reference to recommended Darwin Core terms.</TD>
-</TR>
-
-<TR>
-<TD width="10%"><A name="VERSIONS"></A>[VERSIONS]</TD>
-<TD width="40%"><A href="../../history/versions/index.htm">http://rs.tdwg.org/dwc/terms/history/versions/</A></TD>
-<TD width="50%">Reference for mapping historical Darwin Core terms to the current recommended terms.</TD>
-</TR>
-
-<TR>
-<TD width="10%"><A name="XML"></A>[XML]</TD>
-<TD width="40%"><A href="http://www.w3.org/XML/">http://www.w3.org/XML/</A></TD>
-<TD width="50%">Reference site for the Extensible Markup Language (XML).</TD>
-</TR>
-
-<TR>
-<TD width="10%"><A name="XMLNS"></A>[XMLNS]</TD>
-<TD width="40%"><A href="http://www.w3.org/TR/1999/REC-xml-names-19990114/">http://www.w3.org/TR/1999/REC-xml-names-19990114/</A></TD>
-<TD width="50%">Reference site for XML namespaces.</TD>
-</TR>
-
-<TR>
-<TD width="10%"><A name="XMLSCHEMA"></A>[XMLSCHEMA]</TD>
-<TD width="40%"><A href="http://www.w3.org/XML/Schema">http://www.w3.org/XML/Schema</A></TD>
-<TD width="50%">Reference site for XML Schema.</TD>
-</TR>
-
-</TBODY></TABLE>
 
 <!-- Footer -->
 <hr>
