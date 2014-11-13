@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <mappingReferences for="http://rs.tdwg.org/dwc/terms/">
   <baseConcept id="http://rs.tdwg.org/dwc/terms/occurrenceID">
     <ref>
@@ -103,15 +103,15 @@
       <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/Species"/>
     </ref>
   </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/taxonRank">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/dwcore/InfraspecificRank"/>
-    </ref>
-  </baseConcept>
   <baseConcept id="http://rs.tdwg.org/dwc/terms/infraspecificEpithet">
     <ref>
       <concept id="http://rs.tdwg.org/dwc/dwcore/InfraspecificEpithet"/>
       <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/Subspecies"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/taxonRank">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/dwcore/InfraspecificRank"/>
     </ref>
   </baseConcept>
   <baseConcept id="http://rs.tdwg.org/dwc/terms/scientificNameAuthorship">

@@ -1,26 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <archive xmlns="http://rs.tdwg.org/dwc/text/"
-	fileRoot="http://data.gbif.org/download/"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:xs="http://www.w3.org/2001/XMLSchema"
 	xsi:schemaLocation="http://rs.tdwg.org/dwc/text/ ../../text/tdwg_dwc_text.xsd">
 	
-	<file rowType="http://rs.tdwg.org/dwc/terms/Sample" location="specimens.txt">
+	<core rowType="http://rs.tdwg.org/dwc/terms/Sample">
+		<files>
+			<location>http://data.gbif.org/download/specimens.txt</location>
+		</files>
+		<id index="0"/>
 		<field index="0" term="http://rs.tdwg.org/dwc/terms/catalogNumber"/>
 		<field index="1" term="http://rs.tdwg.org/dwc/terms/individualCount"/>
-	</file>
+	</core>
 	
-	<file rowType="http://rs.tdwg.org/dwc/terms/Identification" location="identifications.txt">
+	<extension rowType="http://rs.tdwg.org/dwc/terms/Identification">
+		<files>
+			<location>http://data.gbif.org/download/identifications.txt</location>
+		</files>
+		<coreid index="2"/>
 		<field index="0" term="http://rs.tdwg.org/dwc/terms/identificationID"/>
 		<field index="1" term="http://rs.tdwg.org/dwc/terms/identifiedBy"/>
 		<field index="2" term="http://rs.tdwg.org/dwc/terms/catalogNumber"/>
 		<field index="3" term="http://rs.tdwg.org/dwc/terms/scientificName"/>
-	</file>
-	
-	<relationships>
-		<relationship>
-			<file location="specimens.txt" fieldIndex="0"/>
-			<file location="identifications.txt" fieldIndex="2"/>
-		</relationship>
-	</relationships>	
+	</extension>
+
 </archive>

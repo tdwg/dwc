@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <archive xmlns="http://rs.tdwg.org/dwc/text/"
-	fileRoot="http://data.gbif.org/download/"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:xs="http://www.w3.org/2001/XMLSchema"
 	xsi:schemaLocation="http://rs.tdwg.org/dwc/text/ ../../text/tdwg_dwc_text.xsd"
@@ -17,16 +16,20 @@
              to be found in the file called occurrence-search-123255244678924570.zip
              at the address http://data.gbif.org/download/.
 	-->
-	<file 
+	<core 
 		rowType="http://rs.tdwg.org/dwc/terms/text/DarwinRecord"
-		location="occurrence-search-123255244678924570.zip"
 		fieldsTerminatedBy=","
 		linesTerminatedBy="\n"
 		fieldsEnclosedBy="&quot;"
 		compression="GZIP" 
 		encoding="UTF-8"
 		ignoreHeaderLines="1">
-
+<files>
+  <location>http://data.gbif.org/download/occurrence-search-123255244678924570.zip</location>
+</files>
+	             
+	             <id index="0"/>
+	             
 <field index="1" term="http://purl.org/dc/terms/type" type="xs:string"/>
 <field index="2" term="http://purl.org/dc/terms/modified" type="xs:dateTime"/>
 <field index="3" term="http://purl.org/dc/terms/language" type="xs:string"/>
@@ -37,7 +40,7 @@
 <field index="8" term="http://rs.tdwg.org/dwc/terms/basisOfRecord" type="xs:string"/>
 <field index="9" term="http://rs.tdwg.org/dwc/terms/informationWithheld" type="xs:string"/>
 <field index="10" term="http://rs.tdwg.org/dwc/terms/dataGeneralizations" type="xs:string"/>
-<field index="11" term="http://rs.tdwg.org/dwc/terms/dynamciProperties" type="xs:string"/>
+<field index="11" term="http://rs.tdwg.org/dwc/terms/dynamicProperties" type="xs:string"/>
 
 <field index="12" term="http://rs.tdwg.org/dwc/terms/datasetID" type="xs:string"/>
 
@@ -158,5 +161,5 @@
 <field index="122" term="http://rs.tdwg.org/dwc/terms/taxonConceptID" type="xs:string"/>
 <field index="123" term="http://rs.tdwg.org/dwc/terms/taxonAccordingTo" type="xs:string"/>
 
-	</file>
+	</core>
 </archive>

@@ -13,11 +13,11 @@
 <META name="DC.contributor" content="Renato De Giovanni (CRIA)"/>
 <META name="DC.contributor" content="Tim Robertson (GBIF)"/>
 <META name="DC.contributor" content="Dave Vieglais (KUNHM)"/>
-<META name="DC.modified" content="2009-04-29"/>
+<META name="DC.modified" content="2009-05-25"/>
 <META name="DC.dateAccepted" content="2009-02-12"/>
 <META name="DC.format" content="text/html"/>
-<META name="DC.identifier" content="http://rs.tdwg.org/dwc/2009-04-29/terms/guides/xml"/>
-<META name="DC.isReplacedBy" content="http://rs.tdwg.org/dwc/2009-02-20/terms/guides/xml/"/>
+<META name="DC.identifier" content="http://rs.tdwg.org/dwc/2009-05-25/terms/guides/xml"/>
+<META name="DC.replaces" content="http://rs.tdwg.org/dwc/2009-04-29/terms/guides/xml/"/>
 <META name="DC.publisher" content="Biodiversity Information Standards TDWG"/>
 <META name="DC.rights" content=""/>
 <META name="DC.accessRights" content="public"/>
@@ -75,7 +75,7 @@
 <TABLE cellspacing="0" class="docinfo"><TBODY>
 <TR>
 <TH>Title:</TH>
-<TD>Darwin Core XML Guidelines</TD>
+<TD>Darwin Core XML Guide</TD>
 </TR>
 <TR>
 <TH>Date Issued:</TH>
@@ -83,7 +83,7 @@
 </TR>
 <TR>
 <TH>Date Modified:</TH>
-<TD>2009-04-29</TD>
+<TD>2009-05-25</TD>
 </TR>
 <TR>
 <TH>Abstract:</TH>
@@ -107,18 +107,18 @@
 </TR>
 <TR>
 <TH>Identifier:</TH>
-<TD>http://rs.tdwg.org/dwc/2009-04-29/terms/guides/xml/</TD>
+<TD>http://rs.tdwg.org/dwc/2009-05-25/terms/guides/xml/</TD>
 </TR>
 <TR><TH>Latest Version:</TH>
 <TD><A href="http://rs.tdwg.org/dwc/terms/guides/xml/index.htm">http://rs.tdwg.org/dwc/terms/guides/xml/</A></TD>
 </TR>
 <TR>
 <TH>Replaces:</TH>
-<TD><a href="http://rs.tdwg.org/dwc/2009-02-20/terms/guides/xml/index.htm">http://rs.tdwg.org/dwc/2009-02-20/terms/guides/xml/</A></TD>
+<TD><a href="http://rs.tdwg.org/dwc/2009-04-29/terms/guides/xml/index.htm">http://rs.tdwg.org/dwc/2009-04-29/terms/guides/xml/</A></TD>
 </TR>
 <TR>
 <TH>Document Status:</TH>
-<TD>Under Public Review.</TD>
+<TD>For Public Review.</TD>
 </TR>
 </TBODY></TABLE>
 </TD>
@@ -258,9 +258,10 @@ subtype or basic nature of the record, along with appropriate subsets of the <i>
 The content of these type elements are controlled by the <i>Darwin Core Type vocabulary</i> 
 [<A href="../../type-vocabulary/index.htm">DWC-TYPE</a>].
 <P>
-Following is an brief example of an XML document for a single specimen complying with the <i>Simple Darwin Core Schema</i> 
+Following is a brief example of an XML document for a single specimen complying with the <i>Simple Darwin Core Schema</i> 
 [<A href="../../../xsd/tdwg_dwc_simple.xsd">SIMPLEXMLSCHEMA</a>]. The Simple Darwin Core XML example document 
-[<a href="../../../examples/xml/example_simple.xml">SIMPLEXMLEXAMPLE</a>] shows 
+[<a href="../../../examples/xml/example_simple.xml">SIMPLEXMLEXAMPLE</a>] (if this link shows a blank page in 
+your browser, use the View Source option to see the XML document) shows 
 detail for a single record having a more complete set of elements.
 
 <PRE class="example">&lt;?xml version=&quot;1.0&quot;?&gt;
@@ -280,7 +281,7 @@ detail for a single record having a more complete set of elements.
         &lt;dwc:occurrenceID&gt;urn:catalog:MVZ:Mammals:14523&lt;/dwc:occurrenceID&gt;
         &lt;dwc:basisOfRecord&gt;PreservedSpecimen&lt;/dwc:basisOfRecord&gt;
         &lt;dwc:country&gt;Argentina&lt;/dwc:country&gt;
-        &lt;dwc:countryCode&gt;ARG&lt;/dwc:countryCode&gt;
+        &lt;dwc:countryCode&gt;AR&lt;/dwc:countryCode&gt;
         &lt;dwc:stateProvince&gt;Neuqu&#233;n&lt;/dwc:stateProvince&gt;
         &lt;dwc:locality&gt;25 km al NNE de Bariloche por Ruta 40 (=237)&lt;/dwc:locality&gt;
     &lt;/dwr:SimpleDarwinRecord&gt;
@@ -293,8 +294,9 @@ detail for a single record having a more complete set of elements.
 <H3>2.7 Classes and Containment</H3>
 <P>
 Many Darwin Core terms (<i>properties</i>) are defined as having other terms (<i>classes</i>) as their domain. 
-For example, <a href="../../index.htm#acceptedTaxonName">acceptedTaxonName</a> and 
-<a href="../../index.htm#Taxon">Taxon</a> are both Darwin Core terms, and acceptedTaxon is a property of the Taxon class (it has Taxon as its domain). When constructing schemas that 
+For example, <a href="../../index.htm#ScientificName">scientificName</a> and 
+<a href="../../index.htm#Taxon">Taxon</a> are both Darwin Core terms, and scientificName is a property of the Taxon class 
+(it has Taxon as its domain). When constructing schemas that 
 take advantage of classes in structures, implementors are encouraged to maintain the property/class 
 relationships defined by the terms whenever possible (refer to the <i>Has Domain</i> attribute of the term as given in the 
 <i>Quick Reference Guide</i> [<A href="../../index.htm">TERMS</a>]). To promote reuse Darwin Core provides a set of xml schemas 
@@ -315,8 +317,8 @@ It is encouraged to use classes in a normalized way to avoid deep nesting. A <i>
 [<a href="http://code.google.com/p/darwincore/wiki/ToolsAndApplications">TOOLS</a>] has been created as an index to example schemas
 for the purpose of community discussions and development.
 
-An XML schema [<A href="../../../xsd/tdwg_dwc_classes.xsd">CLASSXMLSCHEMA</a>] is provided to freely mix any darwin 
-core class in a global list and allow them to reference each other via foreign keys using the respective class 
+An XML schema [<A href="../../../xsd/tdwg_dwc_classes.xsd">CLASSXMLSCHEMA</a>] is provided to freely mix any Darwin 
+Core Class in a global list and allow them to reference each other using the respective class 
 identifier terms. Following is an example of using normalized classes to represent two related specimen occurrences
 (one of which has had a second identification) at one location following this class-based schema. Note that you can 
 reuse the location definition here by referring to it via locationID:  
@@ -331,7 +333,7 @@ reuse the location definition here by referring to it via locationID:
     &lt;dcterms:Location&gt;
         &lt;dwc:locationID&gt;http://guid.mvz.org/sites/arg/127&lt;/dwc:locationID&gt;
         &lt;dwc:country&gt;Argentina&lt;/dwc:country&gt;
-        &lt;dwc:countryCode&gt;ARG&lt;/dwc:countryCode&gt;
+        &lt;dwc:countryCode&gt;AR&lt;/dwc:countryCode&gt;
         &lt;dwc:stateProvince&gt;Neuquén&lt;/dwc:stateProvince&gt;
         &lt;dwc:locality&gt;25 km al NNE de Bariloche por Ruta 40 (=237)&lt;/dwc:locality&gt;
     &lt;/dcterms:Location&gt;
@@ -366,7 +368,7 @@ reuse the location definition here by referring to it via locationID:
     &lt;/dwc:Identification&gt;
     &lt;dwc:Taxon&gt;
       &lt;dwc:scientificName&gt;Ctenomys sociabilis&lt;/dwc:scientificName&gt;
-      &lt;dwc:higherTaxon&gt;nimalia, Chordata, Vertebrata, Mammalia, Theria, Eutheria, Rodentia, Hystricognatha, Hystricognathi, Ctenomyidae, Ctenomyini, Ctenomys&lt;/dwc:higherTaxon&gt;
+      &lt;dwc:higherTaxonName&gt;Animalia, Chordata, Vertebrata, Mammalia, Theria, Eutheria, Rodentia, Hystricognatha, Hystricognathi, Ctenomyidae, Ctenomyini, Ctenomys&lt;/dwc:higherTaxonName&gt;
       &lt;dwc:kingdom&gt;Animalia&lt;/dwc:kingdom&gt;
       &lt;dwc:phylum&gt;Chordata&lt;/dwc:phylum&gt;
       &lt;dwc:class&gt;Mammalia&lt;/dwc:class&gt;
@@ -395,7 +397,7 @@ reuse the location definition here by referring to it via locationID:
     &lt;/dwc:Identification&gt;
     &lt;dwc:Taxon&gt;
       &lt;dwc:scientificName&gt;Ctenomys sociabilis&lt;/dwc:scientificName&gt;
-      &lt;dwc:higherTaxon&gt;nimalia, Chordata, Vertebrata, Mammalia, Theria, Eutheria, Rodentia, Hystricognatha, Hystricognathi, Ctenomyidae, Ctenomyini, Ctenomys&lt;/dwc:higherTaxon&gt;
+      &lt;dwc:higherTaxonName&gt;Animalia, Chordata, Vertebrata, Mammalia, Theria, Eutheria, Rodentia, Hystricognatha, Hystricognathi, Ctenomyidae, Ctenomyini, Ctenomys&lt;/dwc:higherTaxonName&gt;
       &lt;dwc:kingdom&gt;Animalia&lt;/dwc:kingdom&gt;
       &lt;dwc:phylum&gt;Chordata&lt;/dwc:phylum&gt;
       &lt;dwc:class&gt;Mammalia&lt;/dwc:class&gt;
@@ -432,7 +434,7 @@ Here is different example demonstrating area count observations for events on tw
     &lt;dcterms:Location&gt;
       &lt;dwc:locationID&gt;http://guid.mvz.org/sites/arg/127&lt;/dwc:locationID&gt;
       &lt;dwc:country&gt;Argentina&lt;/dwc:country&gt;
-      &lt;dwc:countryCode&gt;ARG&lt;/dwc:countryCode&gt;
+      &lt;dwc:countryCode&gt;AR&lt;/dwc:countryCode&gt;
       &lt;dwc:stateProvince&gt;Neuquén&lt;/dwc:stateProvince&gt;
       &lt;dwc:locality&gt;Valle Limay, Estancia Rincon Grande, 48 ha area with centroid at this point&lt;/dwc:locality&gt;
       &lt;dwc:decimalLatitude&gt;-40.97467&lt;/dwc:decimalLatitude&gt;

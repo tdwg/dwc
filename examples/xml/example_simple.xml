@@ -10,30 +10,43 @@
 <!-- allow the resolution of the namespace in a self contained package with the documentation. -->
 <!--  xsi:schemaLocation="http://rs.tdwg.org/dwc/dwcrecord/ http://rs.tdwg.org/dwc/xsd/tdwg_dwc_simple.xsd"> -->
  <SimpleDarwinRecord>
-  <dwc:occurrenceID>urn:catalog:MVZ:Mammal:165821</dwc:occurrenceID>
   <dc:type>Occurrence</dc:type>
   <dc:modified>2009-02-12T14:22Z</dc:modified>
   <dc:language>en</dc:language>
   <dc:rights>Content licensed under Creative Commons Attribution 3.0 United States License</dc:rights>
   <dc:rightsHolder>Museum of Vertebrate Zoology, UC Berkeley</dc:rightsHolder>
   <dc:accessRights>open</dc:accessRights>
+  <dc:bibliographicCitation xsi:nil="true"/>
   <dwc:basisOfRecord>PreservedSpecimen</dwc:basisOfRecord>
+  <dwc:informationWithheld xsi:nil="true"/>
+  <dwc:dataGeneralizations xsi:nil="true"/>
+  <dwc:dynamicProperties>tragusLengthInMeters=0.014; weightInGrams=120; zygomaticArchWidthInMeters=0.043</dwc:dynamicProperties>
+  <dwc:datasetID xsi:nil="true"/>
+  <dwc:occurrenceID>urn:catalog:MVZ:Mammal:165821</dwc:occurrenceID>
   <dwc:institutionCode>MVZ</dwc:institutionCode>
   <dwc:collectionCode>Mammal</dwc:collectionCode>
   <dwc:collectionID>urn:lsid:biocol.org:col:34818</dwc:collectionID>
   <dwc:catalogNumber>165821</dwc:catalogNumber>
+  <dwc:occurrenceDetails>http://mvzarctos.berkeley.edu/guid/MVZ:Mamm:165861</dwc:occurrenceDetails>
+  <dwc:recordNumber>OPP 7101</dwc:recordNumber>
+  <dwc:recordedBy>Oliver P. Pearson, Anita K. Pearson</dwc:recordedBy>
+  <dwc:individualID xsi:nil="true"/>
   <dwc:individualCount>1</dwc:individualCount>
   <dwc:sex>male</dwc:sex>
   <dwc:lifeStage>adult</dwc:lifeStage>
   <dwc:reproductiveCondition>non-reproductive</dwc:reproductiveCondition>
+  <dwc:behavior xsi:nil="true"/>
   <dwc:establishmentMeans>native</dwc:establishmentMeans>
   <dwc:preparations>skin, skull, skeleton</dwc:preparations>
   <dwc:disposition>in collection</dwc:disposition>
+  <dwc:otherCatalogNumbers xsi:nil="true"/>
+  <dwc:previousIdentifications xsi:nil="true"/>
   <dwc:associatedMedia>http://arctos.database.museum/SpecimenImages/UAMObs/Mamm/2/P7291179.JPG</dwc:associatedMedia>
   <dwc:associatedReferences>http://www.sciencemag.org/cgi/content/abstract/322/5899/261</dwc:associatedReferences>
   <dwc:associatedOccurrences>mother of urn:catalog:MVZ:Mammal:1234</dwc:associatedOccurrences>
   <dwc:associatedSequences>GenBank: U34853.1</dwc:associatedSequences>
-  <dwc:dynamicProperties>Tragus length: 14mm; Weight: 120g; relativeHumidity: 28; airTemperatureInC: 22; sampleWeightInGrams: 10000; aspectheading=277; slopeindegrees=6; natureOfID=expert identification; identificationEvidence=cytochrome B sequence; iucnstatus=vulnerable; distribution=Neuquen, Argentina</dwc:dynamicProperties>
+  <dwc:associatedTaxa xsi:nil="true"/>
+  <dwc:eventID xsi:nil="true"/>
   <dwc:samplingProtocol>1km trap line with traps every 100m</dwc:samplingProtocol>
   <dwc:verbatimEventDate>March 8 1963</dwc:verbatimEventDate>
   <dwc:eventDate>1963-03-08</dwc:eventDate>
@@ -44,59 +57,82 @@
   <dwc:month>3</dwc:month>
   <dwc:day>8</dwc:day>
   <dwc:habitat>pre-cordilleran steppe</dwc:habitat>
-  <dwc:recordedBy>Oliver P. Pearson, Anita K. Pearson</dwc:recordedBy>
-  <dwc:recordNumber>OPP 7101</dwc:recordNumber>
-  <dwc:fieldNotes>kept in Grinnell-Miller Library</dwc:fieldNotes>
+  <dwc:fieldNumber xsi:nil="true"/>
+  <dwc:fieldNotes>stored in Grinnell-Miller Library</dwc:fieldNotes>
   <dwc:eventRemarks>particularly dry season</dwc:eventRemarks>
   <dwc:locationID>urn:location:BG:134500943</dwc:locationID>
   <dwc:higherGeographyID>urn:location:TGN:1002002</dwc:higherGeographyID>
   <dwc:higherGeography>South America; Chile; Region XII; Parque Natural Karukinka</dwc:higherGeography>
   <dwc:continent>South America</dwc:continent>
-  <dwc:country>Chile</dwc:country>
-  <dwc:countryCode>CHL</dwc:countryCode>
-  <dwc:stateProvince>Region XII</dwc:stateProvince>
+  <dwc:waterBody xsi:nil="true"/>
+  <dwc:islandGroup xsi:nil="true"/>
+  <dwc:island xsi:nil="true"/>
+  <dwc:country>Argentina</dwc:country>
+  <dwc:countryCode>AR</dwc:countryCode>
+  <dwc:stateProvince>Neuquén</dwc:stateProvince>
+  <dwc:county>Departamento Los Lagos</dwc:county>
   <dwc:locality>Bariloche, 25 km NNE via Ruta Nacional 40 (=Ruta 237)</dwc:locality>
   <dwc:verbatimLocality>25 km NNE Bariloche por R. Nac. 237</dwc:verbatimLocality>
   <dwc:verbatimElevation>791m</dwc:verbatimElevation>
   <dwc:minimumElevationInMeters>791</dwc:minimumElevationInMeters>
   <dwc:maximumElevationInMeters>791</dwc:maximumElevationInMeters>
+  <dwc:verbatimDepth xsi:nil="true"/>
+  <dwc:minimumDepthInMeters xsi:nil="true"/>
+  <dwc:maximumDepthInMeters xsi:nil="true"/>
+  <dwc:minimumDistanceAboveSurfaceInMeters xsi:nil="true"/>
+  <dwc:maximumDistanceAboveSurfaceInMeters xsi:nil="true"/>
+  <dwc:locationRemarks>river valley upstream of a terminal moraine</dwc:locationRemarks>
+  <dwc:verbatimCoordinates>41 05 54.03S 121 05 34W</dwc:verbatimCoordinates>
+  <dwc:verbatimLatitude>41 05 54.03S</dwc:verbatimLatitude>
+  <dwc:verbatimLongitude>121 05 34W</dwc:verbatimLongitude>
+  <dwc:verbatimCoordinateSystem>degrees minutes seconds</dwc:verbatimCoordinateSystem>
   <dwc:decimalLatitude>-41.0983423</dwc:decimalLatitude>
   <dwc:decimalLongitude>-121.1761111</dwc:decimalLongitude>
   <dwc:geodeticDatum>WGS84</dwc:geodeticDatum>
   <dwc:coordinateUncertaintyInMeters>7</dwc:coordinateUncertaintyInMeters>
   <dwc:coordinatePrecision>0.0000001</dwc:coordinatePrecision>
   <dwc:pointRadiusSpatialFit>1</dwc:pointRadiusSpatialFit>
-  <dwc:verbatimCoordinates>41 05 54S 121 05 34W</dwc:verbatimCoordinates>
-  <dwc:verbatimLatitude>41 05 54S</dwc:verbatimLatitude>
-  <dwc:verbatimLongitude>121 05 34W</dwc:verbatimLongitude>
+  <dwc:footprintWKT xsi:nil="true"/>
+  <dwc:footprintSpatialFit xsi:nil="true"/>
   <dwc:georeferencedBy>Eileen Lacey</dwc:georeferencedBy>
-  <dwc:georeferenceProtocol>Guide to Best Practices for Georeferencing" (Chapman and Wieczorek, eds. 2006). Global Biodiversity Information Facility</dwc:georeferenceProtocol>
-  <dwc:verbatimCoordinateSystem>degrees minutes seconds</dwc:verbatimCoordinateSystem>
+  <dwc:georeferenceProtocol>Guide to Best Practices for Georeferencing" (Chapman and Wieczorek, eds. 2006). Global Biodiversity Information Facility (http://www.gbif.org/prog/digit/Georeferencing)</dwc:georeferenceProtocol>
   <dwc:georeferenceSources>Garmin Etrex Summit GPS</dwc:georeferenceSources>
   <dwc:georeferenceVerificationStatus>verified by collector</dwc:georeferenceVerificationStatus>
   <dwc:georeferenceRemarks>coordinate uncertainty determined by GPS accuracy reading at the time the waypoint was recorded</dwc:georeferenceRemarks>
-  <dwc:locationRemarks>river valley upstream of a terminal moraine</dwc:locationRemarks>
+  <dwc:identificationID xsi:nil="true"/>
   <dwc:identifiedBy>James L. Patton</dwc:identifiedBy>
   <dwc:dateIdentified>1987-11-18</dwc:dateIdentified>
   <dwc:identificationReferences>Aves del Noroeste Patagonico. Christie et al. 2004.</dwc:identificationReferences>
   <dwc:identificationRemarks>Distinguished between Anthus correndera and Anthus hellmayri based on the comparative lengths of the uñas.</dwc:identificationRemarks>
+  <dwc:identificationQualifier xsi:nil="true"/>
   <dwc:previousIdentifications>Anthus sp., field ID by G. Iglesias; Anthus correndera, expert ID by C. Cicero 2009-02-12 based on morphology</dwc:previousIdentifications>
   <dwc:typeStatus>holotype</dwc:typeStatus>
+  <dwc:taxonNameID xsi:nil="true"/>
+  <dwc:acceptedTaxonNameID xsi:nil="true"/>
+  <dwc:higherTaxonNameID xsi:nil="true"/>
+  <dwc:basionymID xsi:nil="true"/>
   <dwc:scientificName>Ctenomys sociabilis</dwc:scientificName>
-  <dwc:higherTaxon>Animalia, Chordata, Vertebrata, Mammalia, Theria, Eutheria, Rodentia, Hystricognatha, Hystricognathi, Ctenomyidae, Ctenomyini, Ctenomys</dwc:higherTaxon>
+  <dwc:acceptedTaxonName>Ctenomys sociabilis</dwc:acceptedTaxonName>
+  <dwc:higherTaxonName>Animalia, Chordata, Vertebrata, Mammalia, Theria, Eutheria, Rodentia, Hystricognatha, Hystricognathi, Ctenomyidae, Ctenomyini, Ctenomys</dwc:higherTaxonName>
+  <dwc:basionym xsi:nil="true"/>
   <dwc:kingdom>Animalia</dwc:kingdom>
   <dwc:phylum>Chordata</dwc:phylum>
   <dwc:class>Mammalia</dwc:class>
   <dwc:order>Rodentia</dwc:order>
   <dwc:family>Ctenomyidae</dwc:family>
   <dwc:genus>Ctenomys</dwc:genus>
+  <dwc:subgenus xsi:nil="true"/>
   <dwc:specificEpithet>sociabilis</dwc:specificEpithet>
+  <dwc:infraspecificEpithet xsi:nil="true"/>
   <dwc:taxonRank>species</dwc:taxonRank>
   <dwc:scientificNameAuthorship>Pearson and Christie, 1985</dwc:scientificNameAuthorship>
   <dwc:nomenclaturalCode>ICZN</dwc:nomenclaturalCode>
-  <dwc:taxonAccordingTo>Pearson O. P., and M. I. Christie.</dwc:taxonAccordingTo>
+  <dwc:namePublicationID xsi:nil="true"/>
   <dwc:namePublishedIn>Pearson O. P., and M. I. Christie. 1985. Historia Natural, 5(37):388</dwc:namePublishedIn>
   <dwc:taxonomicStatus>accepted</dwc:taxonomicStatus>
-  <dwc:acceptedTaxon>Ctenomys sociabilis</dwc:acceptedTaxon>
+  <dwc:nomenclaturalStatus xsi:nil="true"/>
+  <dwc:taxonRemarks xsi:nil="true"/>
+  <dwc:taxonConceptID xsi:nil="true"/>
+  <dwc:taxonAccordingTo>Pearson O. P., and M. I. Christie.</dwc:taxonAccordingTo>
  </SimpleDarwinRecord>
 </SimpleDarwinRecordSet>

@@ -8,12 +8,12 @@
     <dcterms:Location>
       <dwc:locationID>http://guid.mvz.org/sites/arg/127</dwc:locationID>
       <dwc:country>Argentina</dwc:country>
-      <dwc:countryCode>ARG</dwc:countryCode>
+      <dwc:countryCode>AR</dwc:countryCode>
       <dwc:stateProvince>Neuquén</dwc:stateProvince>
       <dwc:locality>Valle Limay, Estancia Rincon Grande, 48 ha area with centroid at this point</dwc:locality>
       <dwc:decimalLatitude>-40.97467</dwc:decimalLatitude>
       <dwc:decimalLongitude>-71.0734</dwc:decimalLongitude>
-      <dwc:geodeticDatum>WGS84</dwc:geodeticDatum>
+      <dwc:geodeticDatum>epsg:4326</dwc:geodeticDatum>
       <dwc:coordinateUncertaintyInMeters>200</dwc:coordinateUncertaintyInMeters>
     </dcterms:Location>
     <dwc:Event>

@@ -13,11 +13,11 @@
 <meta name="DC.contributor" content="Markus Döring (GBIF)"/>
 <meta name="DC.contributor" content="Renato De Giovanni (CRIA)"/>
 <meta name="DC.contributor" content="Dave Vieglais (KUNHM)"/>
-<meta name="DC.modified" content="2009-04-28"/>
+<meta name="DC.modified" content="2009-05-25"/>
 <meta name="DC.dateAccepted" content="2009-02-12"/>
 <meta name="DC.format" content="text/html"/>
-<meta name="DC.identifier" content="http://rs.tdwg.org/dwc/2009-04-28/terms/guides/text"/>
-<meta name="DC.replaces" content="http://rs.tdwg.org/dwc/2009-02-20/terms/guides/text/"/>
+<meta name="DC.identifier" content="http://rs.tdwg.org/dwc/2009-05-25/terms/guides/text"/>
+<meta name="DC.replaces" content="http://rs.tdwg.org/dwc/2009-04-29/terms/guides/text/"/>
 <meta name="DC.publisher" content="Biodiversity Information Standards TDWG"/>
 <meta name="DC.rights" content=""/>
 <meta name="DC.accessRights" content="public"/>
@@ -55,7 +55,7 @@
 	    <div class="subMenu"><div class="menuItem"><a href="./index.htm#metafile" onfocus="blurLink(this);">Metafile Content</a></div></div>
 	    <div class="subMenu"><div class="menuItem"><a href="./index.htm#implement" onfocus="blurLink(this);">Implementation Guide</a></div></div>
 	    <div class="subMenu"><div class="menuItem"><a href="./index.htm#database" onfocus="blurLink(this);">Database Example</a></div></div>
-	    <div class="subMenu"><div class="menuItem"><a href="./index.htm#consumers" onfocus="blurLink(this);">Consumer Guide</a></div></div>
+	    <div class="subMenu"><div class="menuItem"><a href="./index.htm#tools" onfocus="blurLink(this);">Tools</a></div></div>
 	    <div class="separator"><hr/></div>
 	    <div class="menuItem level1"><a href="../../history/index.htm" onfocus="blurLink(this);">Complete History</a></div>
 	    <div class="menuItem level1"><a href="../../history/decisions/index.htm" onfocus="blurLink(this);">Decision History</a></div>
@@ -81,11 +81,11 @@
 </TR>
 <TR>
 <TH>Date Modified:</TH>
-<TD>2009-04-28</TD>
+<TD>2009-05-25</TD>
 </TR>
 <TR>
 <TH>Abstract:</TH>
-<TD>Guidelines for the implementation of Darwin Core in XML.</TD>
+<TD>Guidelines for implementing Darwin Core in Text files.</TD>
 </TR>
 <TR>
 <TH>Contributors:</TH>
@@ -105,18 +105,18 @@
 </TR>
 <TR>
 <TH>Identifier:</TH>
-<TD>http://rs.tdwg.org/dwc/2009-04-28/terms/guides/text/</TD>
+<TD>http://rs.tdwg.org/dwc/2009-05-25/terms/guides/text/</TD>
 </TR>
 <TR><TH>Latest Version:</TH>
 <TD><A href="http://rs.tdwg.org/dwc/terms/guides/text/index.htm">http://rs.tdwg.org/dwc/terms/guides/text/</A></TD>
 </TR>
 <TR>
 <TH>Replaces:</TH>
-<TD><a href="http://rs.tdwg.org/dwc/2009-02-20/terms/guides/text/index.htm">http://rs.tdwg.org/dwc/2009-02-20/terms/guides/text/</A></TD>
+<TD><a href="http://rs.tdwg.org/dwc/2009-04-29/terms/guides/text/index.htm">http://rs.tdwg.org/dwc/2009-04-29/terms/guides/text/</A></TD>
 </TR>
 <TR>
 <TH>Document Status:</TH>
-<TD>Under Public Review.</TD>
+<TD>For Public Review.</TD>
 </TR>
 </TBODY></TABLE>
 </TD>
@@ -127,67 +127,85 @@
 <A name="introduction" id="introduction"></A> 
 <H2>1. Introduction</H2>
 <P>
-This document provides guidelines for the description of Darwin Core data residing in <em>fielded text</em> files (e.g. comma separated values, 
-tab delimited files etc.) by means of providing an XML metafile.<br/>
-<img src="images/usage.png"></img><br/>
-</P>
-	
-<h3>1.1 XML versus <EM>Fielded Text</EM></h3>
-<p>
-Many resources exist on the web describing the advantages of XML (<a href="http://en.wikipedia.org/wiki/XML">http://en.wikipedia.org/wiki/XML</a>) over less structured content such as <em>fielded text</em>.  
-These guidelines <b>do not</b> promote the use of <EM>fielded Text</EM> over XML for data files, but rather provide recommendations for how to handle such data files when necessary.  
-<br/>
-Two such scenarios might be
-<ul>
-	<li>The transfer of large numbers of Darwin Core records and related data from one database to another.  
-		Typically databases are very efficient at producing and consuming (e.g.) comma separated text files.</li>
-	<li>The description of legacy data existing in a <em>fielded text</em> format, such that it might be automatically understood and loaded into another system.  
-		It could be that this system would then re-serve the data in another format such as XML.</li>
-</ul>
-</p>
-	
-<h3>1.2 Existing Solution</h3>
-<p>
-Proposed standards exist for similar XML metafiles to describe <EM>fielded text</EM> files, such as the <i>Fielded Text</i> standard [<a href="http://www.fieldedtext.org/">FiELDEDTEXT</a>].  The <i>Fielded Text</i> standard aims to offer description of any 
-<EM>fielded text</EM> file including all possible permutations of content. While beneficial to the publisher, this flexibility provides significant challenges to the consumer due to the diverse options that may exist.
-</p>	
+This document provides guidelines for formatting and sharing Darwin Core terms [<a href="../../index.htm">TERMS</a>] in 
+<em>fielded text</em> formats, such as one or more comma separated value (CSV) files. Data conforming to the Simple Darwin Core 
+[<A href="../../simple/index.htm">SIMPLEDWC</A>] (CSV format and having the first row include Darwin Core standard term names)
+can be shared in a single file, while a non-standard text file can be understood using an  [<a href="http://www.w3.org/XML/">XML</a>] 
+metafile to describe its contents and formatting.<br/>
 
-<h3>1.3 Example Metafile Content</h3>
-A simple comma seperated values data file of the following form:
+<img src="images/usage.png"></img><br/>
+	
+More complex structure can be shared in multiple related files. The description of content and relationships between files can 
+be achieved using the metafile. This guideline makes recommendations for the simple case of a <em>core</em> file, upon which 
+Darwin Core <em>records</em> are based, and <em>extensions</em> that are linked to records in that core file. Specifically, extension 
+records have a <em>many-to-one</em> relationship with records in the core file. For example, a core file might contain specimen records, 
+with one specimen per row in the file, while an extension file contains one or more identifications for those specimens, with one identification per row in the extension file, and with an identifier
+to the specimen for each identification row. This example would allow many identifications to be associated with each specimen.  
+</P>
+
+<h3>1.1 Simple Example Metafile Content</h3>
+A simple comma separated values (CSV) data file with the following content:
 <PRE class="example">
-ID,ScientificName,IndividualCount
+ID,Species,Count
 123,"Cryptantha gypsophila Reveal & C.R. Broome",12
 124,"Buxbaumia piperi",2 
 </PRE>
-can be described with the following illustrative Darwin Core metafile (Namespaces omitted for example):
+can be described with the following Darwin Core metafile:
 <PRE class="example">
-&lt;archive fileRoot="http://data.gbif.org/download/"&gt;
-  &lt;file 
-    rowType="http://rs.tdwg.org/dwc/text/DarwinRecord"
-    location="specimens.csv"
-    ignoreHeaderLines="1"&gt;
-      &lt;field index="0" term="http://rs.tdwg.org/dwc/terms/catalogNumber" type="xs:integer"/&gt;
-      &lt;field index="1" term="http://rs.tdwg.org/dwc/terms/scientificName" type="xs:string"/&gt;
-      &lt;field index="2" term="http://rs.tdwg.org/dwc/terms/individualCount" type="xs:integer"/&gt;
-      &lt;!-- A constant value has no index, but applies to all rows --&gt;
-      &lt;field term="http://rs.tdwg.org/dwc/terms/datasetID" type="xs:string" default="urn:lsid:tim.lsid.tdwg.org:collections:1"/&gt;
-  &lt;/file&gt;
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;archive xmlns="http://rs.tdwg.org/dwc/text/"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xsi:schemaLocation="http://rs.tdwg.org/dwc/text/ http://rs.tdwg.org/dwc/text/tdwg_dwc_text.xsd"&gt;
+  &lt;core rowType="http://rs.tdwg.org/dwc/xsd/simpledarwincore/SimpleDarwinRecord" ignoreHeaderLines="1"&gt;
+    &lt;files&gt;
+      &lt;location&gt;http://data.gbif.org/download/specimens.csv&lt;/location&gt;
+    &lt;/files&gt;
+    &lt;field index="0" term="http://rs.tdwg.org/dwc/terms/catalogNumber" type="xs:integer"/&gt;
+    &lt;field index="1" term="http://rs.tdwg.org/dwc/terms/scientificName" type="xs:string"/&gt;
+    &lt;field index="2" term="http://rs.tdwg.org/dwc/terms/individualCount" type="xs:integer"/&gt;
+    &lt;!-- A constant value has no index, but applies to all rows --&gt;
+    &lt;field term="http://rs.tdwg.org/dwc/terms/datasetID" type="xs:string" default="urn:lsid:tim.lsid.tdwg.org:collections:1"/&gt;
+  &lt;/core&gt;
 &lt;/archive&gt;
 </pre>
 </p>	 
+These same data could be understood without the metafile if the contents of the CSV file were:
+<PRE class="example">
+catalogNumber,scientificName,individualCount,datasetID
+123,"Cryptantha gypsophila Reveal & C.R. Broome",12,urn:lsid:tim.lsid.tdwg.org:collections:1
+124,"Buxbaumia piperi",2,urn:lsid:tim.lsid.tdwg.org:collections:1
+</PRE>
+	
+<h3>1.2 XML versus <EM>Fielded Text</EM></h3>
+<p>
+Many resources exist on the web describing the advantages of Extensible Markup Language [<A href="http://www.w3.org/XML/">XML</A>] 
+over less structured content such as <em>fielded text</em>. These guidelines <b>do not</b> promote the use of <EM>fielded Text</EM> 
+over XML for data exchange, but rather provide recommendations for how to handle such data files when necessary.
+<br/>
+Two scenarios that might benefit from the use of <em>fielded text</em> are:
+<ul>
+	<li>The transfer of large numbers of Darwin Core records and related data from one database to another.  
+		Typically databases are very efficient at exporting and importing comma separated text files.</li>
+	<li>The description of legacy data existing in a <em>fielded text</em> format, such that it might be automatically understood and loaded into another system.  
+		It could be that this system would then serve the data in another format such as XML.</li>
+</ul>
+</p>
+
+
 
 <A name="metafile" id="metafile"></A> 
 <H2>2. Metafile Content</H2>
 <p>
-	Refer to the text metafile schema [<a href="../../../text/tdwg_dwc_text.xsd">TEXTSCHEMA</a>] for technical details about the 
-structure of text metafiles. There are 2 differing formats:
-<ol>
-<li><em>archive:</em> Used to describe a single file, or to describe multiple relating files using primary and foreign keys. This is similar to a relational model and allows to describe legacy datasets very well</li>
-<li><em>starArchive:</em> A star archive has a single file for the core entity, and any number of related files.  All relating files have a field for a foreign key pointing to a core record ID. Because this resembles a star this archive is named starArchive.</li>
-</ol>
+The text metafile schema [<a href="../../../text/tdwg_dwc_text.xsd">TEXTSCHEMA</a>] provides technical details for the 
+structure of text metafiles. In the text metafile schema are defined the elements and attributes required to be able to describe the 
+contents and relationships between text files. Following are tables of those elements and attributes, with descriptions and 
+specifications for their use in a metafile.
 </p>
 
-<h3>2.1 The &lt;starArchive&gt; element</h3>
+<h3>2.1 The &lt;archive&gt; element</h3>
+The &lt;archive&gt; element is the container for the list of related files (one core and zero or more extensions). The &lt;archive&gt;
+element has just one attribute, <em>metadata</em>.
 <p>
 	<table class="border">
 		<thead>
@@ -201,7 +219,7 @@ structure of text metafiles. There are 2 differing formats:
 			<tr>
 				<td class=""><em>metadata</em></td>
 				<td>Contains a qualified Uniform Resource Locator (URL) defining the location of a metadata description of the entire archive.
-				The format of the metadata is not prescribed, but a standardized format like EML, FGDC or the ISO 15115 family is recommended.
+				The format of the metadata is not prescribed, but a standardized format such as Ecological Metadata Language (EML), Federal Geographic Data Committee (FGDC), or one of the ISO 15115 family is recommended.
 				</td>
 				<td></td>
 				<td/>
@@ -216,24 +234,22 @@ structure of text metafiles. There are 2 differing formats:
 		</thead>
 		<tbody>
 			<tr>
-				<td class=""><a href="#fileTag">&lt;core&gt;</a></td>
-				<td>An &lt;starArchive&gt; will contain exactly one <a href="#fileTag">&lt;core&gt;</a> element, representing the core data file being described.
-				In addition to the general file attributes described below a core file also has an explicit &lt;id&gt; field, a unique ID for each row in the file. 
+				<td class=""><a href="#coreTag">&lt;core&gt;</a></td>
+				<td>An &lt;archive&gt; will contain exactly one <a href="#coreTag">&lt;core&gt;</a> element, representing the data entity upon which records are based.<br/>
+				If extensions are being used, each record in the core data must have a unique identifier.  The field for this identifier must be specified in an explicit &lt;id&gt; field in order to associate extension records to the core record. 
 				</td>
 			</tr>
 			<tr>
-				<td class=""><a href="#fileTag">&lt;extension&gt;</a></td>
-				<td>An &lt;starArchive&gt; will contain zero to many <a href="#fileTag">&lt;extension&gt;</a> elements, each representing an individual file directly related to the core.
-				In addition to the general file attributes described below every extension file must have an explicit &lt;coreid&gt; field, 
-				i.e. a foreign key pointing to an ID of a row in the core file. The extension file itself does not have to have a unique ID field and many rows can point to the same core record. 
+				<td class=""><a href="#coreTag">&lt;extension&gt;</a></td>
+				<td>An &lt;archive&gt; may define zero or more <a href="#coreTag">&lt;extension&gt;</a> elements, each representing an individual extension entity directly related to the core.
+In addition to the general file attributes described below, every extension entity must have an explicit &lt;coreid&gt; field to relate the extension record to a row in the core entity. The extension itself does not have to have a unique ID field and many rows can point to the same core record. 
 				</td>
 			</tr>
 		</tbody>
 	</table>
 </p>
 
-
-<h3>2.2 The &lt;archive&gt; element</h3>
+<h3><a name="coreTag">2.2 The &lt;core&gt; or &lt;extension&gt; element</a></h3>
 <p>
 	<table class="border">
 		<thead>
@@ -244,63 +260,13 @@ structure of text metafiles. There are 2 differing formats:
 			<th>Default</th>
 		</thead>
 		<tbody>
-			<tr>
-				<td class=""><em>fileRoot</em></td>
-				<td>Contains a qualified Uniform Resource Locator (URL) defining the root location of the data files being described, and must be publically accessible.  
-				Valid examples of the format include <i>http://data.gbif.org/collections/</i>, <i>ftp://ftp.gbif.org/public/</i> and <i>http://data.gbif.org/webservices/export?id=</i>.  This value will be concatinated
-				with the location of the <a href="#fileTag-location">&lt;file&gt;</a> and therefore should contain any necessary trailing characters such as / ? etc.</td>
-				<td>&#10003;</td>
-				<td/>
-			</tr>
-			<tr>
-				<td class=""><em>metadata</em></td>
-				<td>Contains a qualified Uniform Resource Locator (URL) defining the location of a metadata description of the entire archive.
-				The format of the metadata is not prescribed, but a standardized format like EML, FGDC or the ISO 15115 family is recommended.
-				</td>
-				<td></td>
-				<td/>
-			</tr>
-		</tbody>
-	</table>
-	<table class="border">
-		<thead>
-			<caption>Elements</caption>
-			<th>Element</th>
-			<th>Description</th>
-		</thead>
-		<tbody>
-			<tr>
-				<td class=""><a href="#fileTag">&lt;file&gt;</a></td>
-				<td>An &lt;archive&gt; will contain one or more <a href="#fileTag">&lt;file&gt;</a> elements, each representing an individual file being described.</td>
-			</tr>
-		</tbody>
-	</table>
-</p>
-
-<h3><a name="fileTag">2.3 The &lt;file&gt; element</a></h3>
-<p>
-	<table class="border">
-		<thead>
-			<caption>Attributes</caption>
-			<th>Attribute</th>
-			<th>Description</th>
-			<th>Required</th>
-			<th>Default</th>
-		</thead>
-		<tbody>
-			<tr>
-				<td class=""><a name="fileTag-location"><em>location</em></a></td>
-				<td>Specifies the location of the file relative to the fileRoot (e.g. dwc-data.txt)</td>
-				<td>&#10003;</td>
-				<td/>
-			</tr>
 			<tr>
 				<td class=""><em>rowType</em></td>
 				<td>
-				A Unified Resource Identifier (URI) for the term identifying the class of data represented by each row, e.g. http://rs.tdwg.org/dwc/terms/Occurrence or http://rs.tdwg.org/dwc/terms/Taxon.
-				See <a href="../../index.htm">Darwin Core Terms</a> definitions.  Additional classes may be referenced by URI and defined outside the Darwin Core specification.
-				The row type defaults to the ambigous SimpleDarwinRecord.
-				For convienience the classes defined by Darwin Core are listed below:
+				A Unified Resource Identifier (URI) for the term identifying the class of data represented by each row, for example, http://rs.tdwg.org/dwc/terms/Occurrence for Occurrence records or http://rs.tdwg.org/dwc/terms/Taxon for Taxon records.
+				Additional classes may be referenced by URI and defined outside the Darwin Core specification.
+				The row type defaults to the ambiguous SimpleDarwinRecord.
+				For convenience the URIs for classes defined by the Darwin Core are listed below:
 					<dl>
 						<dt>Simple Darwin Record</dt>
 						<dd>http://rs.tdwg.org/dwc/xsd/simpledarwincore/SimpleDarwinRecord</dd>
@@ -340,8 +306,8 @@ structure of text metafiles. There are 2 differing formats:
 			</tr>
 			<tr>
 				<td class=""><em>fieldsEnclosedBy</em></td>
-				<td>Specifies the character optionally used at the start and end of each field, i.e. the character enclosing an entire field.
-				In CSV files frequently &quot; can be found, but the default is no enclosing character.</td>
+				<td>Specifies the character used to enclose (mark the start and end of) each field.
+				In CSV files frequently &quot; can be found, but the default is no enclosing character. Note that a comma separated value file that has commas within the content of any field must have an enclosing character.</td>
 				<td/>
 				<td></td>
 			</tr>
@@ -351,25 +317,25 @@ structure of text metafiles. There are 2 differing formats:
 				<td>Specifies the compression used for the file.  May be omitted or specified as one of:
 				<dl>
 					<dt>GZIP</dt>
-					<dd>Data file is compressed as GZIP</dd>
+					<dd>Data file is compressed as GZIP.</dd>
 					<dt>ZIP</dt>
-					<dd>Data file is compressed as ZIP (E.g. using PKZIP, WinZip, StuffIt etc)</dd>
+					<dd>Data file is compressed as ZIP (PKZIP, WinZip, StuffIt, etc.).</dd>
 				</dl>
 				<td/>
 				<td/>
 			</tr>
 			<tr>
 				<td class=""><em>encoding</em></td>
-				<td>Specifies the encoding for the data file.  One of:
+				<td>Specifies the <a href="http://en.wikipedia.org/wiki/Character_encoding">character encoding</a> for the data file.  The encoding is extremely important, but often ignored. One of:
 					<dl>
 						<dt>UTF-8</dt>
-						<dd>8-bit Unicode Transformation Format</dd>
+						<dd>8-bit Unicode Transformation Format.</dd>
 						<dt>UTF-16</dt>
-						<dd>16-bit Unicode Transformation Format</dd>
+						<dd>16-bit Unicode Transformation Format.</dd>
 						<dt>ISO-8859-1</dt>
-						<dd>Commonly known as Latin-1 and a common default of Microsoft Windows based operating systems</dd>
+						<dd>Commonly known as Latin-1 and a common default on systems configured for a single western European language.</dd>
 						<dt>windows-1252</dt>
-						<dd>Commonly known as WinLatin and a common default of legacy versions of Microsoft Windows based operating systems</dd>
+						<dd>Commonly known as WinLatin and a common default of legacy versions of Microsoft Windows based operating systems.</dd>
 					</dl>
 				</td>
 				<td/>
@@ -383,19 +349,19 @@ structure of text metafiles. There are 2 differing formats:
 			</tr>
 			<tr>
 				<td class=""><em>dateFormat</em></td>
-				<td>When verbatum dates are used, this field can be used to indicate the format represented. It is recommended to use the date, dateTime and time for field formats wherever possible, but where verbatum dates are required, a format may be specified here.
-				This should be considered a 'hint' for consumers.  It is recommended that consumers support the minimum combinations of DD MM and YYYY with the separators / and -.  Examples are given:
+				<td>When verbatim dates are consistent in format, this field can be used to indicate the format represented. It is recommended to use the date, dateTime and time for field formats wherever possible, but where verbatim dates are required, a format may be specified here.
+				This should be considered a 'hint' for consumers.  It is recommended that consumers support the minimum combinations of DD MM and YYYY with the separators / and -.  Examples:
 				<dl>
 					<dt>DDMMYYYY</dt>
-					<dd>E.g. for dates in format 21121978</dd>
+					<dd>For dates of the form 21121978</dd>
 					<dt>DD-MM-YYYY</dt>
-					<dd>E.g. for dates in format 21-12-1978</dd>
+					<dd>For dates of the form 21-12-1978</dd>
 					<dt>MMDDYYYY</dt>
-					<dd>E.g. for dates in format 12211978</dd>
+					<dd>For dates of the form 12211978</dd>
 					<dt>MM-DD-YYYY</dt>
-					<dd>E.g. for dates in format 12-21-1978</dd>
+					<dd>For dates of the form 12-21-1978</dd>
 					<dt>YYYYMMDD</dt>
-					<dd>E.g. for dates in format 19781221</dd>
+					<dd>For dates of the form 19781221</dd>
 				</dl>
 				</td>
 				<td/>
@@ -407,18 +373,57 @@ structure of text metafiles. There are 2 differing formats:
 	<table class="border">
 		<thead>
 			<caption>Elements</caption>
-			<th>Attribute</th>
+			<th>Element</th>
 			<th>Description</th>
 		</thead>
 		<tbody>
 			<tr>
-				<td class=""><a href="#field">&lt;field&gt;</a></td>
-				<td>A &lt;file&gt; will contain one or more <a href="#fieldTag">&lt;field&gt;</a> elements, each representing a 'column' in the row</td>
+				<td class=""><a href="#files">&lt;files&gt;</a></td>
+				<td><a href="#coreTag">&lt;core&gt;</a> or <a href="#coreTag">&lt;extension&gt;</a> element will contain one <a href="#files">&lt;files&gt;</a> element to locate the data being described.</td>
+			</tr>
+			<tr>
+				<td class="">&lt;id&gt;</td>
+				<td>If extensions are being used, an &lt;id&gt; element will exist in the <a href="#coreTag">&lt;core&gt;</a> and will define the column that indicates the identifier for the record.</td>
+			</tr>
+			<tr>
+				<td class="">&lt;coreid&gt;</td>
+				<td>If extensions are being used a &lt;coreid&gt; element will exist in the <a href="#coreTag">&lt;extension&gt;</a> will define the column in the extension file that contains the core record identifier (the matching &lt;id&gt; in the core file).</td>
+			</tr>
+			<tr>
+				<td class=""><a href="#fieldTag">&lt;field&gt;</a></td>
+				<td>A <a href="#coreTag">&lt;core&gt;</a> or <a href="#coreTag">&lt;extension&gt;</a> element will contain one or more <a href="#fieldTag">&lt;field&gt;</a> elements, each representing a 'column' in the row.</td>
 			</tr>
 		</tbody>
 	</table>
 </p>
+<h3><a name="files">2.3 The &lt;files&gt; element</a></h3>				
+<p>
+	The files element will contain one or more &lt;location&gt; elements, each defining where a file resides. It is possible to declare that multiple files combine to represent a single core or extension entity by using the &lt;location&gt; element multiple times, once for each file that makes up the entity.
+</p>
+<p>
+	<table class="border">
+		<thead>
+			<caption>Elements</caption>
+			<th>Element</th>
+			<th>Description</th>
+		</thead>
+		<tbody>
+			<tr>
+				<td class=""><em>location</em></td>
+				<td>Specifies the location of the file being described, which may take either of the following forms:
+					<ul>
+						<li>A web accessible URL such as "http://www.gbif.org/data/specimen.csv" or "ftp://ftp.gbif.org/tim/specimen.txt".</li>
+						<li>A filepath relative to the location of the metafile such as "specimen.txt","./specimen.txt", "data/specimen.txt".</li>   
+					</ul>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</p>
+
 <h3><a name="fieldTag">2.4 The &lt;field&gt; element</a></h3>
+The field element is used to specify the location and content of data within a file. There should be one field element for every term
+being shared for the entity, whether explicitly or through the use of a default value for all rows in the file.
 <p>
 	<table class="border">
 		<thead>
@@ -431,30 +436,29 @@ structure of text metafiles. There are 2 differing formats:
 		<tbody>
 			<tr>
 				<td class=""><em>index</em></td>
-				<td>Specifies the column index from the row.  The first column is column 0, the second column 1 etc.  
-				If no column index is specified, then the term and the default may be used to define a constant value for all rows</td>
+				<td>Specifies the column index from the row.  The first column is column 0, the second column 1, etc.  
+				If no column index is specified, then the term and the default may be used to define a constant value for all rows.</td>
 				<td/>
 				<td/>
 			</tr>
 			<tr>
 				<td class=""><em>term</em></td>
-				<td>A Unified Resource Identifier (URI) for the term identifying the property of data represented by this field.  
-				For example, a scientific name would be http://rs.tdwg.org/dwc/terms/ScientificName.
-				Terms outside of the Darwin Core specification may be used, such as those from the Dublin Core Metadata Initative.
+				<td>A Unified Resource Identifier (URI) for the term represented by this field.  
+				For example, a field containing the scientific name would have term=&quot;http://rs.tdwg.org/dwc/terms/scientificName&quot;.
+				Terms outside of the Darwin Core specification may be used, such as those from the Dublin Core Metadata Initative, for example dcterms:modified would be term=&quot;http://purl.org/dc/terms/modified&quot;.
 				</td>
 				<td>&#10003;</td>
 				<td/>
 			</tr>
 			<tr>
 				<td class=""><em>type</em></td>
-				<td>Specifies the type of the content represented in the column.  This is restricted to any simple type (xs:integer, xs:nonNegativeInteger, xs:date etc)
-				See <a href="#fieldTypeGuidelines">guidelines for field types</a></td>
+				<td>Specifies the type of the data content in the column. This is restricted to any simple type (xs:integer, xs:nonNegativeInteger, xs:date, etc.; see <a href="#fieldTypeGuidelines">guidelines for field types</a>).</td>
 				<td/>
 				<td>xs:string</td>
 			</tr>
 			<tr>
 				<td class=""><em>default</em></td>
-				<td>Used to optionally specify a default value should there not be one supplied in any given row.  If no index is supplied, this can be used to define a constant applicable to all rows.</td>
+				<td>Specifies value to use if one is not supplied for the field in a given row. If no index is supplied, the default can be used to define a constant for all rows for a field that is not in the data file.</td>
 				<td/>
 				<td/>
 			</tr>
@@ -465,147 +469,70 @@ structure of text metafiles. There are 2 differing formats:
 
 <A name="implement" id="implement"></A> 
 <H2>3. Implementation Guide</H2>
-<H3>3.1 Single and multiple data files</H3>
-<h4>3.1.1 Single data file</h4>
-In its simplest usage, a single data file can be described.  
-Specifically the file location, the row type and the field mapping are provided.
-<br/>
-<img src="images/single.png">
-<br/>
-<pre class="example">
-&lt;!-- Namespaces omitted for example --&gt;
-&lt;archive fileRoot="http://mydata.org/"&gt;
-  &lt;file rowType="http://rs.tdwg.org/dwc/terms/text/DarwinRecord" 
-    location="specimens.txt"&gt;
-    &lt;field index="0" 
-      term="http://rs.tdwg.org/dwc/terms/catalogNumber" 
-      type="xs:integer"/&gt
-    &lt;field index="1" 
-      term="http://rs.tdwg.org/dwc/terms/scientificName" 
-      type="xs:string"/&gt;
-  &lt;/file&gt;
-&lt;/archive&gt;
-</pre>				
-	
-<h4>3.1.2 Multiple unrelated data files</h4>
-Multiple files containing no inter-file relationships may be described with a single metafile.
-The files must reside at the same 'root' location.  A typical example for this usage might be multiple dataset files each with a common format.
-<br/>
-<img src="images/unrelated.png">
-<br/>
-<pre class="example">
-&lt;!-- Namespaces omitted for example --&gt;
-&lt;archive fileRoot="http://mydata.org/"&gt;
-  &lt;file rowType="http://rs.tdwg.org/dwc/text/DarwinRecord" 
-    location="aves.txt"&gt;
-    &lt;!-- field definitions omitted for example --&gt;
-  &lt;/file&gt;
-  &lt;file rowType="http://rs.tdwg.org/dwc/text/DarwinRecord" 
-    location="lepidoptera.txt"&gt;
-    &lt;!-- field definitions omitted for example --&gt;
-  &lt;/file&gt;
-&lt;/archive&gt;
-</pre>				
+<H3>3.1 Extension example</H3>
+The following example illustrates the use of extensions. In this example there are three files in the archive, all of which
+are located in the same directory as the metafile. The whales.txt file acts as a core file of Taxon records. The whales.txt file 
+is extended by two other files, types.txt and distribution.txt. The types.txt file contains records of a type specified in an 
+external definition at http://http://rs.gbif.org/terms/1.0/Types and consists of Dublin Core and Darwin Core terms, while the 
+distribution.txt file contains records of a type specified at http://http://rs.gbif.org/terms/1.0/Distribution and consists of 
+Darwin Core terms plus an additional term for threatStatus. Both extension files are related to the core file by the taxonNameID fields.
+Presumably, this archive contains information about whale species, type specimen records for those species, and lists of countries and
+the threat status for those species.
 
-<h4>3.1.3 Star related data files</h4>
-When there a core data file can be designated to which all other data files are directly related, a rather complex star archive description would look like this:
+
 <br/>
-<img src="images/star.png">
+<img src="images/extension.png">
 <br/>
 <pre class="example">
-&lt;starArchive xmlns=&quot;http://rs.tdwg.org/dwc/terms/xsd/archive/&quot;&gt;
-  &lt;core encoding=&quot;UTF-8&quot; fieldsTerminatedBy=&quot;,&quot; linesTerminatedBy=&quot;\n&quot; fieldsEnclosedBy='&quot;' ignoreHeaderLines=&quot;1&quot; 
-   rowType=&quot;http://rs.tdwg.org/dwc/terms/Taxon&quot;  location=&quot;whales.txt&quot;&gt;
-    &lt;id index=&quot;0&quot; term=&quot;http://rs.tdwg.org/dwc/terms/taxonID&quot;/&gt;
-    &lt;field index=&quot;1&quot; term=&quot;http://purl.org/dc/terms/modified&quot;/&gt;
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;archive xmlns="http://rs.tdwg.org/dwc/text/"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xsi:schemaLocation="http://rs.tdwg.org/dwc/text/ http://rs.tdwg.org/dwc/text/tdwg_dwc_text.xsd"&gt;
+	
+  &lt;core encoding=&quot;UTF-8&quot; fieldsTerminatedBy=&quot;\t&quot; linesTerminatedBy=&quot;\n&quot; ignoreHeaderLines=&quot;1&quot; 
+   rowType=&quot;http://rs.tdwg.org/dwc/terms/Taxon&quot;&gt;
+    &lt;files&gt;
+        &lt;location&gt;whales.txt&lt;/location&gt;
+    &lt;/files&gt;
+    &lt;id index=&quot;0&quot; term=&quot;http://rs.tdwg.org/dwc/terms/taxonNameID&quot;/&gt;
+    &lt;field index=&quot;1&quot; term=&quot;http://purl.org/dc/terms/modified&quot; type=&quot;xs:dateTime&quot;/&gt;
     &lt;field index=&quot;2&quot; term=&quot;http://rs.tdwg.org/dwc/terms/scientificName&quot;/&gt;
-    &lt;field index=&quot;3&quot; term=&quot;http://rs.tdwg.org/dwc/terms/acceptedTaxonID&quot;/&gt;
-    &lt;field index=&quot;4&quot; term=&quot;http://rs.tdwg.org/dwc/terms/higherTaxonID&quot;/&gt;
+    &lt;field index=&quot;3&quot; term=&quot;http://rs.tdwg.org/dwc/terms/acceptedTaxonNameID&quot;/&gt;
+    &lt;field index=&quot;4&quot; term=&quot;http://rs.tdwg.org/dwc/terms/higherTaxonNameID&quot;/&gt;
     &lt;field index=&quot;5&quot; term=&quot;http://rs.tdwg.org/dwc/terms/basionymID&quot;/&gt;
   &lt;/core&gt;
+	
   &lt;extension encoding=&quot;UTF-8&quot; fieldsTerminatedBy=&quot;,&quot; linesTerminatedBy=&quot;\n&quot; fieldsEnclosedBy='&quot;' ignoreHeaderLines=&quot;1&quot;
-   rowType=&quot;http://rs.gbif.org/terms/1.0/VernacularName&quot; location=&quot;vernacular_names.txt&quot;&gt;
-    &lt;coreid index=&quot;0&quot; term=&quot;http://rs.tdwg.org/dwc/terms/taxonID&quot;/&gt;
-    &lt;field index=&quot;1&quot; term=&quot;http://rs.gbif.org/terms/1.0/vernacularName&quot;/&gt;
-    &lt;field index=&quot;2&quot; term=&quot;http://purl.org/dc/terms/language&quot;/&gt;
-    &lt;field index=&quot;3&quot; term=&quot;http://rs.tdwg.org/dwc/terms/country&quot;/&gt;
-  &lt;/extension&gt;
-  &lt;extension encoding=&quot;UTF-8&quot; fieldsTerminatedBy=&quot;,&quot; linesTerminatedBy=&quot;\n&quot; fieldsEnclosedBy='&quot;' ignoreHeaderLines=&quot;1&quot;
-   rowType=&quot;http://rs.gbif.org/terms/1.0/Types&quot; location=&quot;types.txt&quot;&gt;
-    &lt;coreid index=&quot;0&quot; term=&quot;http://rs.tdwg.org/dwc/terms/taxonID&quot;/&gt;
+   rowType=&quot;http://rs.gbif.org/terms/1.0/Types&quot;&gt;
+    &lt;files&gt;
+        &lt;location&gt;types.csv&lt;/location&gt;
+    &lt;/files&gt;
+    &lt;coreid index=&quot;0&quot; term=&quot;http://rs.tdwg.org/dwc/terms/taxonNameID&quot;/&gt;
     &lt;field index=&quot;1&quot; term=&quot;http://purl.org/dc/terms/bibliographicCitation&quot;/&gt;
     &lt;field index=&quot;2&quot; term=&quot;http://rs.tdwg.org/dwc/terms/catalogNumber&quot;/&gt;
     &lt;field index=&quot;3&quot; term=&quot;http://rs.tdwg.org/dwc/terms/collectionCode&quot;/&gt;
     &lt;field index=&quot;4&quot; term=&quot;http://rs.tdwg.org/dwc/terms/institutionCode&quot;/&gt;
     &lt;field index=&quot;5&quot; term=&quot;http://rs.tdwg.org/dwc/terms/typeStatus&quot;/&gt;
   &lt;/extension&gt;
-    &lt;extension encoding=&quot;UTF-8&quot; fieldsTerminatedBy=&quot;,&quot; linesTerminatedBy=&quot;\n&quot; fieldsEnclosedBy='&quot;' ignoreHeaderLines=&quot;1&quot;
-     rowType=&quot;http://rs.gbif.org/terms/1.0/Description&quot; location=&quot;description.txt&quot;&gt;
-    &lt;coreid index=&quot;0&quot; term=&quot;http://rs.tdwg.org/dwc/terms/taxonID&quot;/&gt;
-    &lt;field index=&quot;1&quot; term=&quot;http://purl.org/dc/terms/title&quot;/&gt;
-    &lt;field index=&quot;2&quot; term=&quot;http://purl.org/dc/terms/description&quot;/&gt;
-    &lt;field index=&quot;3&quot; term=&quot;http://purl.org/dc/terms/language&quot;/&gt;
-    &lt;field index=&quot;4&quot; term=&quot;http://purl.org/dc/terms/type&quot;/&gt;
-    &lt;field index=&quot;5&quot; term=&quot;http://purl.org/dc/terms/source&quot;/&gt;
-  &lt;/extension&gt;
-    &lt;extension encoding=&quot;UTF-8&quot; fieldsTerminatedBy=&quot;,&quot; linesTerminatedBy=&quot;\n&quot; fieldsEnclosedBy='&quot;' ignoreHeaderLines=&quot;1&quot;
-     rowType=&quot;http://rs.gbif.org/terms/1.0/Distribution&quot; location=&quot;distribution.txt&quot;&gt;
-    &lt;coreid index=&quot;0&quot; term=&quot;http://rs.tdwg.org/dwc/terms/taxonID&quot;/&gt;
+	
+  &lt;extension encoding=&quot;UTF-8&quot; fieldsTerminatedBy=&quot;,&quot; linesTerminatedBy=&quot;\n&quot; fieldsEnclosedBy='&quot;' ignoreHeaderLines=&quot;1&quot;
+     rowType=&quot;http://rs.gbif.org/terms/1.0/Distribution&quot;&gt;
+    &lt;files&gt;
+        &lt;location&gt;distribution.csv&lt;/location&gt;
+    &lt;/files&gt;
+    &lt;coreid index=&quot;0&quot; term=&quot;http://rs.tdwg.org/dwc/terms/taxonNameID&quot;/&gt;
     &lt;field index=&quot;1&quot; term=&quot;http://rs.tdwg.org/dwc/terms/country&quot;/&gt;
     &lt;field index=&quot;2&quot; term=&quot;http://www.iucn.org/redlist/3.1/threatStatus&quot;/&gt;
     &lt;field index=&quot;3&quot; term=&quot;http://purl.org/dc/terms/source&quot;/&gt;
   &lt;/extension&gt;
 &lt;/starArchive&gt;
 </pre>
-
-<h4>3.1.4 Multiple related data files</h4>
-When the content of one data file relates to another data file, a relationship can be expressed in the metafile using the &lt;relationships&gt; element.  
-In database terminology, this is equivalent to defining a foreign key constraint from one table to another.  
-However, where a database has the ability to enforce this relationship, <em>fielded text</em> files do not have this capability.  The following guidelines are recommended:<br/>
-<ul>
-	<li>The fields on either end of a relationship must be of the same type (e.g. xs:integer)</li>
-	<li>To indicate a single row is not related, no value must be provided.  The use of 0, -1, \N, NULL are not to be used to indicate this</li>
-	<li>The data provider must ensure that data has integrity - that the target of a relationship does indeed exist</li>
-</ul>
-Therefore care must be taken by the data provider that the relationship expressed is indeed valid, and that the data integrity is not broken.
-<br/>
-<img src="images/related.png">
-<br/>
-<pre class="example">
-&lt;!-- Namespaces omitted for example --&gt;
-&lt;archive fileRoot="http://mydata.org/"&gt;
-  &lt;file rowType="http://rs.tdwg.org/dwc/terms/Sample" 
-    location="specimens.txt"&gt;
-    &lt;field index="0" term="http://rs.tdwg.org/dwc/terms/catalogNumber"/&gt;
-    &lt;field index="1" term="http://rs.tdwg.org/dwc/terms/individualCount"/&gt;
-  &lt;/file&gt;
-	
-  &lt;file rowType="http://rs.tdwg.org/dwc/terms/Identification" 
-    location="identifications.txt"&gt;
-    &lt;field index="0" term="http://rs.tdwg.org/dwc/terms/identificationID"/&gt;
-    &lt;field index="1" term="http://rs.tdwg.org/dwc/terms/identifiedBy"/&gt;
-    &lt;field index="2" term="http://rs.tdwg.org/dwc/terms/catalogNumber"/&gt;
-    &lt;field index="3" term="http://rs.tdwg.org/dwc/terms/scientificName"/&gt;
-  &lt;/file&gt;
-	
-  &lt;relationships&gt;
-    &lt;relationship&gt;
-      &lt;file location="specimens.txt" fieldIndex="0"/&gt;
-      &lt;file location="identifications.txt" fieldIndex="2"/&gt;
-    &lt;/relationship&gt;
-  &lt;/relationships&gt;	
-&lt;/archive&gt;
-</pre>				
-<p>
-<b>Note:</b>
-Although feasible, it is <b>not</b> recommended to express a relationship from one file to itself.  
-This recommendation is made since no description of the relationship type may be expressed.
-</p>
-
 <A name="fieldTypeGuidelines" id="fieldTypeGuidelines"></A> 	
 <H3>3.2 Field Type Guidelines</H3>
 <p>
-Most terms should be typed as "string" with the exception of the following terms, which are listed with proposed types:
+The default value for <em>type</em> attribute of the &lt;field&gt; element is "string", and this should suffice for data type of
+most terms. Following is a list of exceptions with recommended data types and example content:
 </p>
 <table class="border">
 		<thead>
@@ -616,42 +543,44 @@ Most terms should be typed as "string" with the exception of the following terms
 		</thead>
 		<tbody>
 			<!-- decimal -->
-			<tr><td>http://rs.tdwg.org/dwc/terms/maximumDepthInMeters</td><td>xs:double, xs:integer</td><td></td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/minimumDepthInMeters</td><td>xs:double, xs:integer</td><td></td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/maximumElevationInMeters</td><td>xs:double, xs:integer</td><td></td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/minimumElevationInMeters</td><td>xs:double, xs:integer</td><td></td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/maximumDistanceAboveSurfaceInMeters</td><td>xs:double, xs:integer</td><td></td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/minimumDistanceAboveSurfaceInMeters</td><td>xs:double, xs:integer</td><td></td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/decimalLatitude</td><td>xs:double</td><td></td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/decimalLongitude</td><td>xs:double</td><td></td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/coordinateUncertaintyInMeters</td><td>xs:double, xs:integer</td><td></td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/pointRadiusSpatialFit</td><td>xs:double</td><td></td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/footprintSpatialFit</td><td>xs:double</td><td></td></tr>
+			<tr><td>http://rs.tdwg.org/dwc/terms/maximumDepthInMeters</td><td>xs:double, xs:integer</td><td>Example: 100</td></tr>
+			<tr><td>http://rs.tdwg.org/dwc/terms/minimumDepthInMeters</td><td>xs:double, xs:integer</td><td>Example: 50</td></tr>
+			<tr><td>http://rs.tdwg.org/dwc/terms/maximumElevationInMeters</td><td>xs:double, xs:integer</td><td>Example: 3700</td></tr>
+			<tr><td>http://rs.tdwg.org/dwc/terms/minimumElevationInMeters</td><td>xs:double, xs:integer</td><td>Example: 3600</td></tr>
+			<tr><td>http://rs.tdwg.org/dwc/terms/maximumDistanceAboveSurfaceInMeters</td><td>xs:double, xs:integer</td><td>Example: 10.5</td></tr>
+			<tr><td>http://rs.tdwg.org/dwc/terms/minimumDistanceAboveSurfaceInMeters</td><td>xs:double, xs:integer</td><td>Example: 10</td></tr>
+			<tr><td>http://rs.tdwg.org/dwc/terms/decimalLatitude</td><td>xs:double</td><td>Valid values between -90 and +90 inclusive, keep all precision.</td></tr>
+			<tr><td>http://rs.tdwg.org/dwc/terms/decimalLongitude</td><td>xs:double</td><td>Valid values between -180 and +180, keep all precision.</td></tr>
+			<tr><td>http://rs.tdwg.org/dwc/terms/coordinateUncertaintyInMeters</td><td>xs:double, xs:integer</td><td>Example: 30 (0 is not a valid value).</td></tr>
+			<tr><td>http://rs.tdwg.org/dwc/terms/pointRadiusSpatialFit</td><td>xs:double</td><td>Examples: 1 (perfect fit), 1.5708 (circle bounding a square).</td></tr>
+			<tr><td>http://rs.tdwg.org/dwc/terms/footprintSpatialFit</td><td>xs:double</td><td>Example: 0 (false representation), 1.2732 (square bounding a circle).</td></tr>
 			<!-- integer -->
-			<tr><td>http://rs.tdwg.org/dwc/terms/individualCount</td><td>xs:integer</td><td></td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/startDayOfYear</td><td>xs:integer</td><td>using 1 as January 1st</td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/endDayOfYear</td><td>xs:integer</td><td>using 6 as January 6th</td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/day</td><td>xs:integer</td><td>using 1 as 1st of the month</td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/month</td><td>xs:integer</td><td>using 1 as January</td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/year</td><td>xs:integer</td><td>in the format CCYY e.g. 2001</td></tr>
+			<tr><td>http://rs.tdwg.org/dwc/terms/individualCount</td><td>xs:integer</td><td>Example: 1</td></tr>
+			<tr><td>http://rs.tdwg.org/dwc/terms/startDayOfYear</td><td>xs:integer</td><td>Example: 1 is January 1st, 60 is March 1st or February 29th (leap years).</td></tr>
+			<tr><td>http://rs.tdwg.org/dwc/terms/endDayOfYear</td><td>xs:integer</td><td>Example: 32 is February 1st, 365 or 366 (leap years) is December 31st.</td></tr>
+			<tr><td>http://rs.tdwg.org/dwc/terms/day</td><td>xs:integer</td><td>Example: 1 (the 1st of the month).</td></tr>
+			<tr><td>http://rs.tdwg.org/dwc/terms/month</td><td>xs:integer</td><td>Examples: 1 (January), 12 (December).</td></tr>
+			<tr><td>http://rs.tdwg.org/dwc/terms/year</td><td>xs:integer</td><td>Use the form CCYY. Example: 2001</td></tr>
 			<!-- dateTime -->
-			<tr><td>http://purl.org/dc/terms/modified</td><td>xs:dateTime, xs:date</td><td></td></tr>
-			<!-- time -->
-			<tr><td>http://rs.tdwg.org/dwc/terms/eventTime</td><td>xs:time</td><td></td></tr>
+			<tr><td>http://purl.org/dc/terms/modified</td><td>xs:dateTime, xs:date</td><td>Examples: 2009-05-25T16:52-0800, 2009-05-25</td></tr>
+			<tr><td>http://rs.tdwg.org/dwc/terms/eventDate</td><td>xs:dateTime, xs:date</td><td>Example: 2008-10-13T1400+1000/2100+1000, 2008-10-13</td></tr>
+			<tr><td>http://rs.tdwg.org/dwc/terms/measurementDeterminedDate</td><td>xs:dateTime, xs:date</td><td>Example: 1963-03-08T14:07-0600</td></tr>
 			<!-- date -->
-			<tr><td>http://rs.tdwg.org/dwc/terms/eventDate</td><td>xs:date</td><td></td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/dateIdentified</td><td>xs:date</td><td></td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/relationshipEstablishedDate</td><td>xs:date</td><td></td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/measurementDeterminedDate</td><td>xs:date</td><td></td></tr>
+			<tr><td>http://rs.tdwg.org/dwc/terms/dateIdentified</td><td>xs:date</td><td>Example: 1971-08-03</td></tr>
+			<tr><td>http://rs.tdwg.org/dwc/terms/relationshipEstablishedDate</td><td>xs:date</td><td>Example: 2008-05-10</td></tr>
+			<!-- time -->
+			<tr><td>http://rs.tdwg.org/dwc/terms/eventTime</td><td>xs:time</td><td>Example: 14:09Z</td></tr>
 		</tbody>
 	</table>
 
 <A name="database" id="database"></A> 
 <H2>4. Database Example</H2>
-<H3>4.1 Mysql</H3>
-Using the <code>select into outfile</code> command it is very easy to produce <em>fielded text</em> from mysql.<br/>
-The encoding of the resulting file will depend on the server variables and collations used, and might need modified before the operation.
-It is worth noting that mysql will represent NULL values as \N by default and therefore the isNull() function must be used.
+<H3>4.1 MySQL</H3>
+It is very easy to produce <em>fielded text</em> using the <code>select into outfile</code> command from MySQL. The encoding of the 
+resulting file will depend on the server variables and collations used, and might need to be modified before 
+the operation id done. Note that MySQL will export NULL values as \N by default. Use the isNull() function as shown in the following
+example to avoid this.
+
 <pre class="example">
 SELECT 
   IFNULL(id, ''), IFNULL(scientific_name, ''), IFNULL(count,'') 
@@ -663,16 +592,9 @@ FROM
   dwc;
 </pre>
 
-<A name="consumers" id="consumers"></A> 
-<h2>5. Consumer Guide</h2>
-It goes beyond the scope of these guidelines to specify how a consumer must deal with related data.  However, the following procedure is recommended for a database import:
-<ul>
-	<li>Create tables for each described file with no constraints</li>
-	<li>Import file content into temporary tables</li>
-	<li>Check data integrity by testing the expressed join</li>
-	<li>Copy data into tables enforcing the relationship, or add constraint to newly created tables</li>
-</ul>
-<p>For tools and applications, including a Star Archive Reader (in Java) see the the <i>Darwin Core Tools and Applications</i> Wiki 
+<A name="tools" id="tools"></A> 
+<h2>5. Tools</h2>
+<p>For tools and applications, including a Java-based application to read Darwin Core text archives, see the the <i>Darwin Core Tools and Applications</i> Wiki 
 page [<A href="http://code.google.com/p/darwincore/wiki/ToolsAndApplications">TOOLS</a>].
 
 <!-- Footer -->

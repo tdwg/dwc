@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <xs:schema version="0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"
     targetNamespace="http://rs.tdwg.org/dwc/terms/"
     xmlns:dwc="http://rs.tdwg.org/dwc/terms/">

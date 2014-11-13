@@ -18,7 +18,7 @@
   <dwc:locationID xsi:nil="true"/>
   <dwc:continent>North America</dwc:continent>
   <dwc:country>United States</dwc:country>
-  <dwc:countryCode>USA</dwc:countryCode>
+  <dwc:countryCode>US</dwc:countryCode>
   <dwc:stateProvince>Montana</dwc:stateProvince>
   <dwc:county>Garfield</dwc:county>
   <dwc:scientificName>Tyrannosourus rex</dwc:scientificName>

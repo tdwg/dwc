@@ -52,9 +52,11 @@
                 <xs:element ref="dwc:institutionCode" minOccurs="0"/>
                 <xs:element ref="dwc:collectionCode" minOccurs="0"/>
                 <xs:element ref="dwc:collectionID" minOccurs="0"/>
+                <xs:element ref="dwc:catalogNumber" minOccurs="0"/>
                 <xs:element ref="dwc:occurrenceDetails" minOccurs="0"/>
                 <xs:element ref="dwc:occurrenceRemarks" minOccurs="0"/>
-                <xs:element ref="dwc:catalogNumber" minOccurs="0"/>
+                <xs:element ref="dwc:recordNumber" minOccurs="0"/>
+                <xs:element ref="dwc:recordedBy" minOccurs="0"/>
                 <xs:element ref="dwc:individualID" minOccurs="0"/>
                 <xs:element ref="dwc:individualCount" minOccurs="0"/>
                 <xs:element ref="dwc:sex" minOccurs="0"/>
@@ -65,6 +67,7 @@
                 <xs:element ref="dwc:preparations" minOccurs="0"/>
                 <xs:element ref="dwc:disposition" minOccurs="0"/>
                 <xs:element ref="dwc:otherCatalogNumbers" minOccurs="0"/>
+                <xs:element ref="dwc:previousIdentifications" minOccurs="0"/>
                 <xs:element ref="dwc:associatedMedia" minOccurs="0"/>
                 <xs:element ref="dwc:associatedReferences" minOccurs="0"/>
                 <xs:element ref="dwc:associatedOccurrences" minOccurs="0"/>
@@ -82,8 +85,6 @@
                 <xs:element ref="dwc:month" minOccurs="0"/>
                 <xs:element ref="dwc:day" minOccurs="0"/>
                 <xs:element ref="dwc:habitat" minOccurs="0"/>
-                <xs:element ref="dwc:recordedBy" minOccurs="0"/>
-                <xs:element ref="dwc:recordNumber" minOccurs="0"/>
                 <xs:element ref="dwc:fieldNumber" minOccurs="0"/>
                 <xs:element ref="dwc:fieldNotes" minOccurs="0"/>
                 <xs:element ref="dwc:eventRemarks" minOccurs="0"/>
@@ -109,40 +110,41 @@
                 <xs:element ref="dwc:maximumDepthInMeters" minOccurs="0"/>
                 <xs:element ref="dwc:minimumDistanceAboveSurfaceInMeters" minOccurs="0"/>
                 <xs:element ref="dwc:maximumDistanceAboveSurfaceInMeters" minOccurs="0"/>
+                <xs:element ref="dwc:locationRemarks" minOccurs="0"/>                      
+                <xs:element ref="dwc:verbatimCoordinates" minOccurs="0"/>
+                <xs:element ref="dwc:verbatimLatitude" minOccurs="0"/>
+                <xs:element ref="dwc:verbatimLongitude" minOccurs="0"/>
+                <xs:element ref="dwc:verbatimCoordinateSystem" minOccurs="0"/>
                 <xs:element ref="dwc:decimalLatitude" minOccurs="0"/>
                 <xs:element ref="dwc:decimalLongitude" minOccurs="0"/>
                 <xs:element ref="dwc:geodeticDatum" minOccurs="0"/>
                 <xs:element ref="dwc:coordinateUncertaintyInMeters" minOccurs="0"/>
                 <xs:element ref="dwc:coordinatePrecision" minOccurs="0"/>
                 <xs:element ref="dwc:pointRadiusSpatialFit" minOccurs="0"/>
-                <xs:element ref="dwc:verbatimCoordinates" minOccurs="0"/>
-                <xs:element ref="dwc:verbatimLatitude" minOccurs="0"/>
-                <xs:element ref="dwc:verbatimLongitude" minOccurs="0"/>
+                <xs:element ref="dwc:footprintWKT" minOccurs="0"/>
+                <xs:element ref="dwc:footprintSpatialFit" minOccurs="0"/>
                 <xs:element ref="dwc:georeferencedBy" minOccurs="0"/>
                 <xs:element ref="dwc:georeferenceProtocol" minOccurs="0"/>
-                <xs:element ref="dwc:verbatimCoordinateSystem" minOccurs="0"/>
                 <xs:element ref="dwc:georeferenceSources" minOccurs="0"/>
                 <xs:element ref="dwc:georeferenceVerificationStatus" minOccurs="0"/>
                 <xs:element ref="dwc:georeferenceRemarks" minOccurs="0"/>
-                <xs:element ref="dwc:footprintWKT" minOccurs="0"/>
-                <xs:element ref="dwc:footprintSpatialFit" minOccurs="0"/>
-                <xs:element ref="dwc:locationRemarks" minOccurs="0"/>                      
                 <!-- IdentificationTerms -->
                 <xs:element ref="dwc:identificationID" minOccurs="0"/>
                 <xs:element ref="dwc:identifiedBy" minOccurs="0"/>
                 <xs:element ref="dwc:dateIdentified" minOccurs="0"/>
                 <xs:element ref="dwc:identificationReferences" minOccurs="0"/>
                 <xs:element ref="dwc:identificationRemarks" minOccurs="0"/>
-                <xs:element ref="dwc:previousIdentifications" minOccurs="0"/>
                 <xs:element ref="dwc:identificationQualifier" minOccurs="0"/>
                 <xs:element ref="dwc:typeStatus" minOccurs="0"/>
                 <!-- TaxonTerms -->
                 <xs:element ref="dwc:taxonNameID" minOccurs="0"/>
+                <xs:element ref="dwc:acceptedTaxonNameID" minOccurs="0"/>
                 <xs:element ref="dwc:higherTaxonNameID" minOccurs="0"/>
+                <xs:element ref="dwc:basionymID" minOccurs="0"/>
                 <xs:element ref="dwc:scientificName" minOccurs="0"/>
+                <xs:element ref="dwc:acceptedTaxonName" minOccurs="0"/>
                 <xs:element ref="dwc:higherTaxonName" minOccurs="0"/>
-                <xs:element ref="dwc:taxonConceptID" minOccurs="0"/>
-                <xs:element ref="dwc:higherTaxonConceptID" minOccurs="0"/>
+                <xs:element ref="dwc:basionym" minOccurs="0"/>
                 <xs:element ref="dwc:kingdom" minOccurs="0"/>
                 <xs:element ref="dwc:phylum" minOccurs="0"/>
                 <xs:element ref="dwc:class" minOccurs="0"/>
@@ -151,19 +153,17 @@
                 <xs:element ref="dwc:genus" minOccurs="0"/>
                 <xs:element ref="dwc:subgenus" minOccurs="0"/>
                 <xs:element ref="dwc:specificEpithet" minOccurs="0"/>
-                <xs:element ref="dwc:taxonRank" minOccurs="0"/>
                 <xs:element ref="dwc:infraspecificEpithet" minOccurs="0"/>
+                <xs:element ref="dwc:taxonRank" minOccurs="0"/>
                 <xs:element ref="dwc:scientificNameAuthorship" minOccurs="0"/>
                 <xs:element ref="dwc:nomenclaturalCode" minOccurs="0"/>
-                <xs:element ref="dwc:taxonAccordingTo" minOccurs="0"/>
+                <xs:element ref="dwc:namePublicationID" minOccurs="0"/>
                 <xs:element ref="dwc:namePublishedIn" minOccurs="0"/>
                 <xs:element ref="dwc:taxonomicStatus" minOccurs="0"/>
                 <xs:element ref="dwc:nomenclaturalStatus" minOccurs="0"/>
-                <xs:element ref="dwc:acceptedTaxonNameID" minOccurs="0"/>
-                <xs:element ref="dwc:acceptedTaxonName" minOccurs="0"/>
-                <xs:element ref="dwc:basionymID" minOccurs="0"/>
-                <xs:element ref="dwc:basionym" minOccurs="0"/>
                 <xs:element ref="dwc:taxonRemarks" minOccurs="0"/>
+                <xs:element ref="dwc:taxonConceptID" minOccurs="0"/>
+                <xs:element ref="dwc:taxonAccordingTo" minOccurs="0"/>
             </xs:all>
         </xs:complexType>
     </xs:element>

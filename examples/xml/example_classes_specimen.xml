@@ -8,10 +8,23 @@
     <dcterms:Location>
         <dwc:locationID>http://guid.mvz.org/sites/arg/127</dwc:locationID>
         <dwc:country>Argentina</dwc:country>
-        <dwc:countryCode>ARG</dwc:countryCode>
+        <dwc:countryCode>AR</dwc:countryCode>
         <dwc:stateProvince>Neuquén</dwc:stateProvince>
         <dwc:locality>25 km al NNE de Bariloche por Ruta 40 (=237)</dwc:locality>
     </dcterms:Location>
+    <dwc:Event>
+        <dwc:eventID>http://guid.mvz.org/events/1995/6</dwc:eventID>
+        <dwc:verbatimEventDate>12 Jan 1995</dwc:verbatimEventDate>
+        <dwc:eventDate>1995-01-12</dwc:eventDate>
+        <dwc:startDayOfYear>12</dwc:startDayOfYear>
+        <dwc:endDayOfYear>12</dwc:endDayOfYear>
+        <dwc:year>1995</dwc:year>
+        <dwc:month>1</dwc:month>
+        <dwc:day>12</dwc:day>
+        <dwc:habitat>mallín</dwc:habitat>
+        <dwc:fieldNotes>on file in the Grinnell-Miller Library</dwc:fieldNotes>
+        <dwc:locationID>http://guid.mvz.org/sites/arg/127</dwc:locationID>
+    </dwc:Event>
     <dwc:Occurrence>
         <dcterms:type>Occurrence</dcterms:type>
         <dcterms:modified>2009-02-12T12:43:31</dcterms:modified>
@@ -21,7 +34,7 @@
         <dwc:collectionCode>Mammals</dwc:collectionCode>
         <dwc:occurrenceID>urn:catalog:MVZ:Mammals:14523</dwc:occurrenceID>
         <dwc:basisOfRecord>PreservedSpecimen</dwc:basisOfRecord>
-        <dwc:locationID>http://guid.mvz.org/sites/arg/127</dwc:locationID>
+        <dwc:eventID>http://guid.mvz.org/events/1995/6</dwc:eventID>
     </dwc:Occurrence>
     <dwc:Identification>
       <dwc:identificationID>http://guid.mvz.org/identifications/23459</dwc:identificationID>
@@ -43,7 +56,7 @@
     </dwc:Identification>
     <dwc:Taxon>
       <dwc:scientificName>Ctenomys sociabilis</dwc:scientificName>
-      <dwc:higherTaxon>nimalia, Chordata, Vertebrata, Mammalia, Theria, Eutheria, Rodentia, Hystricognatha, Hystricognathi, Ctenomyidae, Ctenomyini, Ctenomys</dwc:higherTaxon>
+      <dwc:higherTaxonName>Animalia, Chordata, Vertebrata, Mammalia, Theria, Eutheria, Rodentia, Hystricognatha, Hystricognathi, Ctenomyidae, Ctenomyini, Ctenomys</dwc:higherTaxonName>
       <dwc:kingdom>Animalia</dwc:kingdom>
       <dwc:phylum>Chordata</dwc:phylum>
       <dwc:class>Mammalia</dwc:class>
@@ -62,7 +75,7 @@
         <dwc:collectionCode>Mammals</dwc:collectionCode>
         <dwc:occurrenceID>urn:catalog:MVZ:Mammals:14524</dwc:occurrenceID>
         <dwc:basisOfRecord>PreservedSpecimen</dwc:basisOfRecord>
-        <dwc:locationID>http://guid.mvz.org/sites/arg/127</dwc:locationID>
+        <dwc:eventID>http://guid.mvz.org/events/1995/6</dwc:eventID>
     </dwc:Occurrence>
     <dwc:Identification>
       <dwc:identificationID>http://guid.mvz.org/identifications/94753</dwc:identificationID>
@@ -72,7 +85,7 @@
     </dwc:Identification>
     <dwc:Taxon>
       <dwc:scientificName>Ctenomys sociabilis</dwc:scientificName>
-      <dwc:higherTaxon>nimalia, Chordata, Vertebrata, Mammalia, Theria, Eutheria, Rodentia, Hystricognatha, Hystricognathi, Ctenomyidae, Ctenomyini, Ctenomys</dwc:higherTaxon>
+      <dwc:higherTaxonName>Animalia, Chordata, Vertebrata, Mammalia, Theria, Eutheria, Rodentia, Hystricognatha, Hystricognathi, Ctenomyidae, Ctenomyini, Ctenomys</dwc:higherTaxonName>
       <dwc:kingdom>Animalia</dwc:kingdom>
       <dwc:phylum>Chordata</dwc:phylum>
       <dwc:class>Mammalia</dwc:class>

@@ -1,12 +1,23 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <xs:schema version="0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    targetNamespace="http://rs.tdwg.org/dwc/terms/type-vocabulary/"
-    xmlns:dwctype="http://rs.tdwg.org/dwc/terms/type-vocabulary/">
+    targetNamespace="http://rs.tdwg.org/dwc/dwctype/"
+    xmlns:dwctype="http://rs.tdwg.org/dwc/dwctype/">
     <xs:annotation>
         <xs:documentation xml:lang="en">
             The basic Darwin Core type vocabulary schema defining simple types as enumerations for controlled vocabularies.
         </xs:documentation>
     </xs:annotation>
+
+    <xs:simpleType name="TypeEnum">
+        <xs:restriction base="xs:NMTOKEN">
+            <!-- Dublin Core -->
+            <xs:enumeration value="Event"/>
+            <!-- Darwin Core -->
+            <xs:enumeration value="Occurrence"/>
+            <xs:enumeration value="Location"/>
+            <xs:enumeration value="Taxon"/>
+        </xs:restriction>
+    </xs:simpleType>
 
     <xs:simpleType name="BasisOfRecordEnum">
         <xs:restriction base="xs:NMTOKEN">
@@ -14,16 +25,12 @@
             <xs:enumeration value="StillImage"/>
             <xs:enumeration value="MovingImage"/>
             <xs:enumeration value="Sound"/>
-            <xs:enumeration value="PhysicalObject"/>
-            <!--Darwin Core -->
+            <!-- Darwin Core -->
             <xs:enumeration value="PreservedSpecimen"/>
             <xs:enumeration value="FossilSpecimen"/>
             <xs:enumeration value="LivingSpecimen"/>
             <xs:enumeration value="HumanObservation"/>
             <xs:enumeration value="MachineObservation"/>
-            <!-- experimental -->
-            <xs:enumeration value="Location"/>
-            <xs:enumeration value="Taxonomy"/>
             <xs:enumeration value="NomenclaturalChecklist"/>
         </xs:restriction>
     </xs:simpleType>

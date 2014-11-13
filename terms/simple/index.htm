@@ -13,11 +13,11 @@
 <META name="DC.contributor" content="Renato De Giovanni (CRIA)"/>
 <META name="DC.contributor" content="Tim Robertson (GBIF)"/>
 <META name="DC.contributor" content="Dave Vieglais (KUNHM)"/>
-<META name="DC.modified" content="2009-04-29"/>
+<META name="DC.modified" content="2009-05-25"/>
 <META name="DC.dateAccepted" content="2009-04-21"/>
 <META name="DC.format" content="text/html"/>
-<META name="DC.identifier" content="http://rs.tdwg.org/dwc/docs/2009-04-29/"/>
-<META name="DC.replaces" content="http://rs.tdwg.org/dwc/docs/2009-02-20/"/>
+<META name="DC.identifier" content="http://rs.tdwg.org/dwc/docs/2009-05-25/"/>
+<META name="DC.replaces" content="http://rs.tdwg.org/dwc/docs/2009-04-29/"/>
 <META name="DC.publisher" content="Biodiversity Information Standards TDWG"/>
 <META name="DC.rights" content=""/>
 <META name="DC.accessRights" content="public"/>
@@ -70,55 +70,57 @@
       <TD>
 <center><H1>Simple Darwin Core</H1></center>
 <TABLE cellspacing="0" class="docinfo">
-<TBODY>
-<TR>
-<TH>Title:</TH>
-<TD>Simple Darwin Core</TD>
-</TR>
-<TR>
-<TH>Date Issued:</TH>
-<TD>2009-04-21</TD>
-</TR>
-<TR>
-<TH>Date Modified:</TH>
-<TD>2009-04-29</TD>
-</TR>
-<TR>
-<TH>Abstract:</TH>
-<TD>This document is a reference for the Simple Darwin Core standard.</TD>
-</TR>
-<TR>
-<TH>Contributors:</TH>
-<TD>John Wieczorek (MVZ), Markus Döring (GBIF), Renato De Giovanni (CRIA), Tim Robertson (GBIF), Dave Vieglais (KUNHM)</TD>
-</TR>
-<TR>
-<TH>Legal:</TH>
-<TD>This document is governed by the standard legal, copyright, licensing provisions and disclaimers issued by the Taxonomic Databases Working Group.</TD>
-</TR>
-<TR>
-<TH>Part of TDWG Standard:</TH>
-<TD>***URL to DwC Standard*** will go here</TD>
-</TR>
-<TR>
-<TH>Creator:</TH>
-<TD>Darwin Core Task Group</TD>
-</TR>
-<TR>
-<TH>Identifier:</TH>
-<TD>http://rs.tdwg.org/dwc/2009-04-29/</TD>
-</TR>
-<TR><TH>Latest Version:</TH>
-<TD><A href="http://rs.tdwg.org/dwc/terms/simple/index.htm">http://rs.tdwg.org/dwc/terms/simple/</A></TD>
-</TR>
-<TR>
-<TH>Replaces:</TH>
-<TD></TD>
-</TR>
-<TR>
-<TH>Document Status:</TH>
-<TD>Under Public Review.</TD>
-</TR>
-</TBODY></TABLE>
+  <TBODY>
+    <TR>
+      <TH>Title:</TH>
+      <TD>Simple Darwin Core</TD>
+    </TR>
+    <TR>
+      <TH>Date Issued:</TH>
+      <TD>2009-04-21</TD>
+    </TR>
+    <TR>
+      <TH>Date Modified:</TH>
+      <TD>2009-05-25</TD>
+    </TR>
+    <TR>
+      <TH>Abstract:</TH>
+      <TD>This document is a reference for the Simple Darwin Core standard.</TD>
+    </TR>
+    <TR>
+      <TH>Contributors:</TH>
+      <TD>John Wieczorek (MVZ), Markus Döring (GBIF), Renato De Giovanni (CRIA), Tim Robertson (GBIF), Dave Vieglais (KUNHM)</TD>
+    </TR>
+    <TR>
+      <TH>Legal:</TH>
+      <TD>This document is governed by the standard legal, copyright, licensing provisions and disclaimers issued by the Taxonomic Databases Working Group.</TD>
+    </TR>
+    <TR>
+      <TH>Part of TDWG Standard:</TH>
+      <TD>***URL to DwC Standard*** will go here</TD>
+    </TR>
+    <TR>
+      <TH>Creator:</TH>
+      <TD>Darwin Core Task Group</TD>
+    </TR>
+    <TR>
+      <TH>Identifier:</TH>
+      <TD>http://rs.tdwg.org/dwc/2009-05-25/terms/simple/</TD>
+    </TR>
+    <TR>
+      <TH>Latest Version:</TH>
+      <TD><A href="http://rs.tdwg.org/dwc/terms/simple/index.htm">http://rs.tdwg.org/dwc/terms/simple/</A></TD>
+    </TR>
+    <TR>
+      <TH>Replaces:</TH>
+      <TD><A href="http://rs.tdwg.org/dwc/2009-04-29/terms/simple/index.htm">http://rs.tdwg.org/dwc/2009-04-29/terms/simple/</A></TD>
+    </TR>
+    <TR>
+      <TH>Document Status:</TH>
+      <TD>For Public Review.</TD>
+    </TR>
+  </TBODY>
+</TABLE>
       </TD>
     </TR>
   </TBODY>
@@ -162,15 +164,31 @@ There are just a few general guiding principles on how to make the best use of t
 <ol>
 <li>Any Darwin Core term name can be used as a field name.</li>
 <li>No field name may be repeated in a record.</li>
-<li>Do not use a Class (<a href="../index.htm#Occurrence">Occurrence</a>, 
+<li>Do not use a Class (<a href="../index.htm#Dataset">Dataset</a>, 
+<a href="../index.htm#Occurrence">Occurrence</a>, 
 <a href="../index.htm#Event">Event</a>, 
 <a href="../index.htm#dcterms:Location">Location</a>, 
 <a href="../index.htm#Identification">Identification</a>, 
-<a href="../index.htm#Taxon">Taxon</a>) 
-as a field.</li>
+<a href="../index.htm#Taxon">Taxon</a>,
+<a href="../index.htm#ResourceRelationship">ResourceRelationship</a>,
+<a href="../index.htm#MeasurementOrFact">MeasurementOrFact</a>) as a field.</li>
 <li>Support (provide data in) as many fields as you can.</li>
-<li>Use the <a href="../index.htm#dcterms:type">dcterms:type</a> field to say what class the record represents.</li>
-<li>Use the <a href="../index.htm#basisOfRecord">basisOfRecord</a> field to say specifically what kind of record it is.</li>
+<li>Use the <a href="../index.htm#dcterms:type">dcterms:type</a> field to say what class the record represents 
+(<a href="../index.htm#Occurrence">Occurrence</a>, 
+<a href="../index.htm#Event">Event</a>, 
+<a href="../index.htm#dcterms:Location">Location</a>, 
+<a href="../index.htm#Taxon">Taxon</a>).</li>
+
+<li>Use the <a href="../index.htm#basisOfRecord">basisOfRecord</a> field to say specifically what kind of record it is 
+(<a href="../type-vocabulary/index.htm#PreservedSpecimen">PreservedSpecimen</a>,
+<a href="../type-vocabulary/index.htm#FossilSpecimen">FossilSpecimen</a>,
+<a href="../type-vocabulary/index.htm#LivingSpecimen">LivingSpecimen</a>,
+<a href="../type-vocabulary/index.htm#HumanObservation">HumanObservation</a>,
+<a href="../type-vocabulary/index.htm#MachineObservation">MachineObservation</a>,
+<a href="../type-vocabulary/index.htm#dcmitype:StillImage">StillImage</a>,
+<a href="../type-vocabulary/index.htm#dcmitype:MovingImage">MovingImage</a>,
+<a href="../type-vocabulary/index.htm#dcmitype:Sound">Sound</a>,
+<a href="../type-vocabulary/index.htm#NomenclaturalChecklist">NomenclaturalChecklist</a>).</li>
 <li>Populate a field with data matching the definition of the field.</li>
 <li>Follow the controlled vocabulary for the values of fields that recommend them.</li>
 <li>If data are withheld, use <a href="../index.htm#informationWithheld">informationWithheld</a> to say so.</li>
@@ -189,15 +207,15 @@ That is mostly true. The only recourse within the Simple Darwin Core is to force
 "list" terms such as
 <a href="../index.htm#dynamicProperties">dynamicProperties</a>, 
 <a href="../index.htm#otherCatalogNumbers">otherCatalogNumbers</a>, 
+<a href="../index.htm#previousIdentifications">previousIdentifications</a>,
 <a href="../index.htm#associatedMedia">associatedMedia</a>, 
 <a href="../index.htm#associatedReferences">associatedReferences</a>, 
 <a href="../index.htm#associatedOccurrences">associatedOccurrences</a>, 
 <a href="../index.htm#associatedSequences">associatedSequences</a>, 
 <a href="../index.htm#associatedTaxa">associatedTaxa</a>, 
 <a href="../index.htm#higherGeography">higherGeography</a>, 
-<a href="../index.htm#higherTaxonName">higherTaxonName</a>, 
 and 
-<a href="../index.htm#previousIdentifications">previousIdentifications</a>.
+<a href="../index.htm#higherTaxonName">higherTaxonName</a>.
 For cases where rich data require rich (non-simple) structure, the <i>Simple Darwin Core</i> is not suitable. Instead, use 
 a more capable structure such as the <i>Access to Biological Collections Data</i> schema 
 [<A href="http://www.tdwg.org/schemas/abcd/2.06">ABCD</a>], or the 
@@ -249,7 +267,8 @@ the contributor to communicate the structure of the content of the file or files
 Though it is good practice to describe a <i>Simple Darwin Core</i> file with such a metafile, it isn't strictly necessary
 if the file follows the CSV file specification and the first line of the file contains the the field names. A <i>Fielded
 Text</i> metafile for any text file based on the <i>Simple Darwin Core</i> can be created by customizing the example 
-metafile [<a href="../../examples/text/example_text_simpledwc_complete.xml">SIMPLEMETAFILE</a>], which includes references to all 
+metafile [<a href="../../examples/text/example_text_simpledwc_complete.xml">SIMPLEMETAFILE</a>] (if this link shows 
+a blank page in your browser, use the View Source option to see the XML document), which includes references to all 
 Darwin Core terms. Refer to the comments in the file itself as well as the metafile specification in the <i>Text Guide</i> 
 [<A href="../guides/text/index.htm">TEXTGUIDE</a>] for more information.
 
@@ -275,6 +294,7 @@ containing one <i>SimpleDarwinRecord</i> for a <i>Taxon</i>:
   &lt;dc:modified&gt;2009-02-12T14:22Z&lt;/dc:modified&gt;
   &lt;dc:language&gt;en&lt;/dc:language&gt;
   &lt;dwc:scientificName&gt;Ctenomys sociabilis&lt;/dwc:scientificName&gt;
+  &lt;dwc:acceptedTaxonName&gt;Ctenomys sociabilis&lt;/dwc:acceptedTaxonName&gt;
   &lt;dwc:higherTaxonName&gt;Animalia, Chordata, Vertebrata, Mammalia, Theria, Eutheria, Rodentia, Hystricognatha, Hystricognathi, Ctenomyidae, Ctenomyini, Ctenomys&lt;/dwc:higherTaxonName&gt;
   &lt;dwc:kingdom&gt;Animalia&lt;/dwc:kingdom&gt;
   &lt;dwc:phylum&gt;Chordata&lt;/dwc:phylum&gt;
@@ -286,10 +306,9 @@ containing one <i>SimpleDarwinRecord</i> for a <i>Taxon</i>:
   &lt;dwc:taxonRank&gt;species&lt;/dwc:taxonRank&gt;
   &lt;dwc:scientificNameAuthorship&gt;Pearson and Christie, 1985&lt;/dwc:scientificNameAuthorship&gt;
   &lt;dwc:nomenclaturalCode&gt;ICZN&lt;/dwc:nomenclaturalCode&gt;
-  &lt;dwc:taxonAccordingTo&gt;Pearson O. P., and M. I. Christie.&lt;/dwc:taxonAccordingTo&gt;
   &lt;dwc:namePublishedIn&gt;Pearson O. P., and M. I. Christie. 1985. Historia Natural, 5(37):388&lt;/dwc:namePublishedIn&gt;
   &lt;dwc:taxonomicStatus&gt;accepted&lt;/dwc:taxonomicStatus&gt;
-  &lt;dwc:acceptedTaxonName&gt;Ctenomys sociabilis&lt;/dwc:acceptedTaxonName&gt;
+  &lt;dwc:taxonAccordingTo&gt;Pearson O. P., and M. I. Christie.&lt;/dwc:taxonAccordingTo&gt;
   &lt;dwc:dynamicProperties&gt;iucnStatus=vulnerable; distribution=Neuquen, Argentina&lt;/dwc:dynamicProperties&gt;
  &lt;/SimpleDarwinRecord&gt;
 &lt;/SimpleDarwinRecordSet&gt;
