@@ -26,7 +26,28 @@ The information requested in this type of issue includes:
 
 Submitter, URL, Error description, Recommended remedy.
 
-### Term definition recommendation
+Template
+```
+This type of issue is to report an error in the Darwin Core Standard
+documentation. Add a label for the document on which the error occurs.
+These can be selected in the Labels section of the issue tracker. In
+addition, please include the URL to the document in your comment if
+applicable. Describe the error and its remedy as clearly as possible, and
+please identify yourself as the submitter if you want attribution for the
+error report.
+
+Please do not contribute more than one error report per issue. It will help
+us to manage and track changes if distinct problems are identified in their
+own issues.
+
+==Documentation Error Report==
+URL:
+Error description:
+Recommended remedy:
+Submitter:
+```
+
+### Term change recommendation
 
 This type of issue is to make a recommendation for a change to a Darwin
 Core term definition. Select the `Term Definition` template and follow the guidelines provided in the `Description` text box in the Issue Report Form.
@@ -34,6 +55,25 @@ Core term definition. Select the `Term Definition` template and follow the guide
 The information requested in this type of issue includes:
 
 Submitter, Term Name, Recommendation.
+
+Template
+```
+This type of issue is to make a recommendation for a change to an existing
+Darwin Core term. Provide the Term Name (e.g., institutionCode) in the
+Summary (above), describe the recommendation as clearly as possible, and
+please identify yourself as the submitter if you want attribution for the
+change recommendation.
+
+Please do not contribute recommendations for more than one term in a single
+issue. It will help us to manage and track changes if recommendations for
+distinct terms are identified in their own issues. Any number of
+recommendations for a single term may be made in the same issue.
+
+==Term Definition Recommendation==
+Term Name:
+Recommendation:
+Submitter:
+```
 
 ### New term request
 
@@ -43,6 +83,33 @@ Core term. Select the `New Term` template and follow the guidelines provided in 
 The information requested in this type of issue includes:
 
 Submitter, Justification, Definition, Comment, Refines, Has Domain, Has Range, Replaces, ABCD 2.06:
+
+Template
+```
+This type of issue is to make a recommendation for a new Darwin
+Core term. Provide a justification for the new term as well as all of the
+attributes of the new term in the template below.  For definitions of the
+term attributes, see the The Terms: Definitions section of the Complete
+History page (http://rs.tdwg.org/dwc/terms/history/index.htm#theterms).
+Please identify yourself as the submitter if you want attribution for the
+change recommendation.
+
+Please do not contribute recommendations for more than one term issue. It
+will help us to manage and track changes if recommendations for distinct
+terms are identified in their own issues. Any number of recommendations for
+a single term may be made in the same issue.
+
+==New Term Recommendation==
+Submitter:
+Justification:
+Definition:
+Comment:
+Refines:
+Has Domain:
+Has Range:
+Replaces:
+ABCD 2.06:
+```
 
 ### Question
 
