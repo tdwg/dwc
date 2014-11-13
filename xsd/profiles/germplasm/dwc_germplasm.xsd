@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <xs:schema version="0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    targetNamespace="http://rs.tdwg.org/dwc/terms/germplasm/"
+    targetNamespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/"
     xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
-    xmlns:gr="http://rs.tdwg.org/dwc/terms/germplasm/"
+    xmlns:gr="http://rs.nordgen.org/dwc/terms/germplasm/0.1/terms/"
     attributeFormDefault="qualified"
     elementFormDefault="qualified"
     >
@@ -19,18 +19,22 @@
         Darwin Core Extension for genetic resources, germplasm
         Draft version January 2009, Dag Endresen (During the Darwin Core workshop in Copenhagen)
         Modified draft version May 2009, Dag Endresen (Preparations for GIGA TAG in Rome, demo of new GBIF IPT)
-    -->
-
-    <!-- 
+	Added version to the namespace (ahead of the SINGER GPG2 meeting at USDA in August 2009)
+	#
         What would be the most reasonable namespace to use...?
-        Suggestion: http://rs.tdwg.org/dwc/terms/germplasm/
-        Alternative example: http://www.bioversityinternational.org/schemas/dwc/terms/germplasm/
-        Alternative example: http://www.nordgen.org/schemas/dwc/terms/germplasm/ 
-        
+        Suggested (for draft version): http://rs.nordgen.org/dwc/germplasm/0.1/terms/
+        Alternative (for draft version): http://atlas.nordgen.org/rs/dwc/germplasm/0.1/terms/
+        Alternative: http://rs.tdwg.org/dwc/germplasm/0.1/terms/
+        Alternative example: http://www.bioversityinternational.org/schemas/dwc/germplasm/0.1/terms/
+	#
+	Version numbering:
+	Suggestion to use the namespace with a 0.x version for the draft versions and proceed to 1.x when a stable version is reached
+        Suggestion: http://rs.tdwg.org/dwc/germplasm/0.1/terms/
+	#
         Current GCP_Passport (1.05) use the ns: http://generationcp.org/schemas/gcp_passport/1.05
         Previous GCP_Passport use the ns: http://www.ipgri.org/schemas/gcp_pass/1.03
         MCPD namespace: http://www.ipgri.cgiar.org/schemas/mcpd/1.00 (NB! IPGRI is now Bioversity)
-        
+        #
         Relevant further information (Germplasm Passport Data):
         http://gcpcr.grinfo.net/include/webservices/schema-documentation.php
         See: http://www.generationcp.org/schemas/documentation/gcp_passport_1.05.xsd.html
@@ -372,20 +376,49 @@
 
 
     <!-- ************************************** -->
-    <!-- Germplasm trait observation data (C&E) -->
+    <!-- Germplasm trait measurement data (C&E) -->
     <!-- ************************************** -->
 
     <!-- 
-        DRAFT data exchange format for germplasm trait observations (C&E).
+	Germplasm Trait Measurements (extends DarwinCore MeasurementOrFact)
+
+        DRAFT data exchange format for germplasm trait measurements (C&E).
         DRAFT descriptors developed for the European ECPGR community as part of EPGRIS3 (workshop 2009-05-07 in Bonn).
         See: http://www.epgris3.eu/ 
         See: http://www.epgris3.eu/EPGRIS3%2020090507workshop.htm
         See: http://www.ecpgr.cgiar.org/
-    -->
-    <!-- Germplasm Trait Observation (extends DarwinCore MeasurementOrFact) -->
-    <!-- 
+	
+	    DATASET
+		UPLOADERCODE
+		DATASET_REMARK
+	    EXPERIMENT
+		EXPERIMENT_NUMBER
+		EXPERIMENT_DESCRIPTION
+		EXPERIMENT_YEAR
+		EXPERIMENT_YEAR
+		EXPERIMENT_LONGITUDE
+		EXPERIMENT_LATITUDE
+		EXPERIMENT_REPORT
+	    TRAIT
+		TRAIT_NUMBER
+		TRAIT_NAME
+		TRAIT_REMARK
+		TRAIT_METHOD
+	    GENOTYPE
+		GENOTYPE_NUMBER
+		GENOTYPE_NICODE
+		GENOTYPE_INSTCODE
+		GENOTYPE_ACCENUMB
+		GENOTYPE_GENUS
+	    SCORE
+		GENOTYPE_NUMBER
+		EXPERIMENT_NUMBER
+		TRAIT_NUMBER
+		SCORE
+
+	MAPPING of EPGRIS3 TRAIT terms to the standards DwC core terms
         dwc:measurementID                SCORE_ID
-        dwc:measurementType              perhaps instead of defining GermplasmTraitClass below...?
+        dwc:measurementType              perhaps use this instead of defining GermplasmTraitClass below...?
         dwc:measurementValue             SCORE
         dwc:measurementAccuracy          SCORE_ACCURACY (not in the draft Germplasm Trait format, EPGRIS3 C&E)
         dwc:measurementUnit              SCORE_UNIT

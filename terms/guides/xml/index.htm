@@ -13,11 +13,11 @@
 <META name="DC.contributor" content="Renato De Giovanni (CRIA)"/>
 <META name="DC.contributor" content="Tim Robertson (GBIF)"/>
 <META name="DC.contributor" content="Dave Vieglais (KUNHM)"/>
-<META name="DC.modified" content="2009-07-06"/>
+<META name="DC.modified" content="2009-09-23"/>
 <META name="DC.dateAccepted" content="2009-02-12"/>
 <META name="DC.format" content="text/html"/>
-<META name="DC.identifier" content="http://rs.tdwg.org/dwc/2009-07-06/terms/guides/xml"/>
-<META name="DC.replaces" content="http://rs.tdwg.org/dwc/2009-05-25/terms/guides/xml/"/>
+<META name="DC.identifier" content="http://rs.tdwg.org/dwc/2009-09-23/terms/guides/xml"/>
+<META name="DC.replaces" content="http://rs.tdwg.org/dwc/2009-07-06/terms/guides/xml/"/>
 <META name="DC.publisher" content="Biodiversity Information Standards TDWG"/>
 <META name="DC.rights" content=""/>
 <META name="DC.accessRights" content="public"/>
@@ -83,7 +83,7 @@
 </TR>
 <TR>
 <TH>Date Modified:</TH>
-<TD>2009-07-06</TD>
+<TD>2009-09-23</TD>
 </TR>
 <TR>
 <TH>Abstract:</TH>
@@ -107,18 +107,18 @@
 </TR>
 <TR>
 <TH>Identifier:</TH>
-<TD>http://rs.tdwg.org/dwc/2009-07-06/terms/guides/xml/</TD>
+<TD>http://rs.tdwg.org/dwc/2009-09-23/terms/guides/xml/</TD>
 </TR>
 <TR><TH>Latest Version:</TH>
 <TD><A href="http://rs.tdwg.org/dwc/terms/guides/xml/index.htm">http://rs.tdwg.org/dwc/terms/guides/xml/</A></TD>
 </TR>
 <TR>
 <TH>Replaces:</TH>
-<TD><a href="http://rs.tdwg.org/dwc/2009-05-25/terms/guides/xml/index.htm">http://rs.tdwg.org/dwc/2009-05-25/terms/guides/xml/</A></TD>
+<TD><a href="http://rs.tdwg.org/dwc/2009-07-06/terms/guides/xml/index.htm">http://rs.tdwg.org/dwc/2009-07-06/terms/guides/xml/</A></TD>
 </TR>
 <TR>
 <TH>Document Status:</TH>
-<TD>For Public Review.</TD>
+<TD>Response to Public Review.</TD>
 </TR>
 </TBODY></TABLE>
 </TD>
@@ -234,7 +234,6 @@ attribute <i>xsi:nil="true"</i>.
 Do not use an empty string - an element with no content:
 <PRE class="example">&lt;dwc:locality&quot;&gt;&lt;/dwc:locality&quot;&gt;</PRE>
 
-
 <!-- 
 <H3>2.7 Language</H3>
 <P>
@@ -255,11 +254,11 @@ in a spreadsheet).  It is meant to accommodate all properties except those that 
 <EM>record</EM>. Refer to the <i>Simple Darwin Core</i> page [<A href="../../simple/index.htm">SIMPLEDWC</a>]
 for the rationale behind this schema.
 <P>
-Records for specimens, observations, taxa, media, locations, and nomenclatural checklists can be constructed using an appropriate values of
-<a href="../../index.htm#dcterms:type">dcterms:type</a>, to describe the class that is the root of the record, and <a href="../../index.htm#basisOfRecord">basisOfRecord</a>, to describe 
-subtype or basic nature of the record, along with appropriate subsets of the <i>Simple Darwin Core</i> elements. 
-The content of these type elements are controlled by the <i>Darwin Core Type vocabulary</i> 
-[<A href="../../type-vocabulary/index.htm">DWC-TYPE</a>].
+Occurrence, Taxon, Event, and Location records can be constructed using an appropriate 
+values of <a href="../../index.htm#dcterms:type">dcterms:type</a> (which is controlled by the <i>Darwin Core Type vocabulary</i> 
+[<A href="../../type-vocabulary/index.htm">DWC-TYPE</a>]) to describe the <i>Class</i> that is the root of the record. Use the 
+<a href="../../index.htm#basisOfRecord">basisOfRecord</a> (having a separate controlled vocabulary) to describe the specific type of 
+record (various types of specimens, media, taxon records, etc.).
 <P>
 Following is a brief example of an XML document for a single specimen complying with the <i>Simple Darwin Core Schema</i> 
 [<A href="../../../xsd/tdwg_dwc_simple.xsd">SIMPLEXMLSCHEMA</a>]. The Simple Darwin Core XML example document 
@@ -296,14 +295,13 @@ detail for a single record having a more complete set of elements.
 <A name="classes" id="classes"></A> 
 <H3>2.7 Classes and Containment</H3>
 <P>
-Many Darwin Core terms (<i>properties</i>) are defined as having other terms (<i>classes</i>) as their domain. 
+Many Darwin Core terms (<i>properties</i>) are defined as being associated with another term (a <i>class</i>). 
 For example, <a href="../../index.htm#ScientificName">scientificName</a> and 
-<a href="../../index.htm#Taxon">Taxon</a> are both Darwin Core terms, and scientificName is a property of the Taxon class 
-(it has Taxon as its domain). When constructing schemas that 
-take advantage of classes in structures, implementors are encouraged to maintain the property/class 
-relationships defined by the terms whenever possible (refer to the <i>Has Domain</i> attribute of the term as given in the 
-<i>Quick Reference Guide</i> [<A href="../../index.htm">TERMS</a>]). To promote reuse Darwin Core provides a set of xml schemas 
-to use as the basis of additional schemas:
+<a href="../../index.htm#Taxon">Taxon</a> are both Darwin Core terms, and scientificName is associated with the Taxon class. 
+When constructing schemas that take advantage of classes in structures, implementors are encouraged to maintain the 
+property/class relationships defined by the terms whenever possible (refer to the <i>Class</i> attribute of the term as 
+given in the <i>Quick Reference Guide</i> [<A href="../../index.htm">TERMS</a>]). To promote reuse, Darwin Core provides 
+a set of xml schemas to use as the basis of additional schemas:
 <ul>
  <li>[<A href="../../../xsd/tdwg_dwcterms.xsd">TERMSXMLSCHEMA</a>] - property term definitions as typed global 
 elements and named groups for all terms for a given class to be referenced. The schema makes use of substitution 
@@ -371,7 +369,7 @@ reuse the location definition here by referring to it via locationID:
     &lt;/dwc:Identification&gt;
     &lt;dwc:Taxon&gt;
       &lt;dwc:scientificName&gt;Ctenomys sociabilis&lt;/dwc:scientificName&gt;
-      &lt;dwc:higherTaxonName&gt;Animalia, Chordata, Vertebrata, Mammalia, Theria, Eutheria, Rodentia, Hystricognatha, Hystricognathi, Ctenomyidae, Ctenomyini, Ctenomys&lt;/dwc:higherTaxonName&gt;
+      &lt;dwc:higherClassification&gt;Animalia; Chordata; Vertebrata; Mammalia; Theria; Eutheria; Rodentia; Hystricognatha; Hystricognathi; Ctenomyidae; Ctenomyini; Ctenomys&lt;/dwc:higherClassification&gt;
       &lt;dwc:kingdom&gt;Animalia&lt;/dwc:kingdom&gt;
       &lt;dwc:phylum&gt;Chordata&lt;/dwc:phylum&gt;
       &lt;dwc:class&gt;Mammalia&lt;/dwc:class&gt;
@@ -400,7 +398,7 @@ reuse the location definition here by referring to it via locationID:
     &lt;/dwc:Identification&gt;
     &lt;dwc:Taxon&gt;
       &lt;dwc:scientificName&gt;Ctenomys sociabilis&lt;/dwc:scientificName&gt;
-      &lt;dwc:higherTaxonName&gt;Animalia, Chordata, Vertebrata, Mammalia, Theria, Eutheria, Rodentia, Hystricognatha, Hystricognathi, Ctenomyidae, Ctenomyini, Ctenomys&lt;/dwc:higherTaxonName&gt;
+      &lt;dwc:higherClassification&gt;Animalia; Chordata; Vertebrata; Mammalia; Theria; Eutheria; Rodentia; Hystricognatha; Hystricognathi; Ctenomyidae; Ctenomyini; Ctenomys&lt;/dwc:higherClassification&gt;
       &lt;dwc:kingdom&gt;Animalia&lt;/dwc:kingdom&gt;
       &lt;dwc:phylum&gt;Chordata&lt;/dwc:phylum&gt;
       &lt;dwc:class&gt;Mammalia&lt;/dwc:class&gt;
@@ -545,5 +543,12 @@ Here is different example demonstrating area count observations for events on tw
 <p>Except where otherwise noted, content on this site is licensed under a 
    <a rel="license" href="http://creativecommons.org/licenses/by/3.0/us/"> Creative Commons 
    Attribution 3.0 United States License</a>.</p> 
+<!-- The following is used to register Google Analytics for Darwin Core --> 
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"> 
+</script> 
+<script type="text/javascript"> 
+_uacct = "UA-386033-4";
+urchinTracker();
+</script> 
 
 </BODY></HTML>

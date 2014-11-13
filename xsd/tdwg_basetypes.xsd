@@ -2,13 +2,12 @@
 <!-- ==================================================================== -->
 <!-- Introduction                                                         -->
 <!-- ==================================================================== -->
-<!-- Schema for a type library for darwin and extension data types.       -->
+<!-- Schema for a type library for custom Darwin Core data types.         -->
 <!-- History:                                                             -->
+<!--   version 1.0 2009-08-24 John Wieczorek                              --> 
 <!--   version 0.5 2007-02-14 John Wieczorek                              --> 
 <!-- Status:                                                              -->
-<!--   Ready for testing.                                                 -->
-<!--   Should be placed in a tdwg shared data types library.              -->
-<!--   See http://wiki.tdwg.org for current status of this standard       -->
+<!--   Ready for use.                                                      -->
 
 <!-- ==================================================================== -->
 <!-- Schema                                                               -->
@@ -74,7 +73,7 @@
 	  </xs:union>
 	</xs:simpleType>
 
-        <xs:simpleType name="DateTimeISO">
+        <xs:simpleType name="dateTimeISO">
           <xs:annotation>
             <xs:documentation xml:lang="en">
               The date and time expressed in a way conforming to a subset of ISO 8601. Meant to be exactly the same as DateTimeISO defined in ABCD.

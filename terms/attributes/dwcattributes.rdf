@@ -55,5 +55,17 @@ rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/attributes">
 	<dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/attribute#abcdEquivalence"/>
 </rdf:Description>
 
+<!-- organizedInClass --> 
+<rdf:Description rdf:ID="organizedInClass" rdf:about="http://rs.tdwg.org/dwc/terms/attributes/organizedInClass">
+	<rdfs:label xml:lang="en-US">Organized in Class</rdfs:label>
+	<dcterms:description xml:lang="en-US">Used to organize properties within classes for easier human understanding.</dcterms:description>
+	<rdfs:comment>Does not imply domain or range membership in the class.</rdfs:comment> 
+	<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/attribute"/>
+	<dcterms:issued>2009-08-24</dcterms:issued>
+	<dcterms:modified>2009-08-24</dcterms:modified>
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/attribute#organizedInClass"/>
+</rdf:Description>
+
 <!-- end attribute RDF -->
 </rdf:RDF>

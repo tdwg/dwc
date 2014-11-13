@@ -21,12 +21,12 @@
                term yourself - a limitation of the xs:all model.
         </xs:documentation>
     </xs:annotation>
+    <!-- tdwg_basetypes.xsd defines custom data types such as dateTimeISO to allow dates or the forms YYYY and YYYY-MM. -->
     <xs:include schemaLocation="tdwg_basetypes.xsd"/>
     <xs:import namespace="http://purl.org/dc/terms/" schemaLocation="dublin_core.xsd"/>
     <xs:import namespace="http://purl.org/dc/elements/1.1/" schemaLocation="http://dublincore.org/schemas/xmls/qdc/dc.xsd"/>
     <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/03/xml.xsd"/>
     <xs:import namespace="http://rs.tdwg.org/dwc/dwctype/" schemaLocation="tdwg_dwctypes.xsd"/>
-    
     
     <!-- ANY DWC TERM -->
     <xs:element name="any" abstract="true"/>
@@ -37,22 +37,21 @@
             <xs:documentation>Group of all darwin core identifier terms as a convenience to construct other schemas</xs:documentation>
         </xs:annotation>
         <xs:sequence>
-            <xs:element ref="dwc:datasetID" minOccurs="0"/>
             <xs:element ref="dwc:occurrenceID" minOccurs="0"/>
             <xs:element ref="dwc:eventID" minOccurs="0"/>
             <xs:element ref="dwc:locationID" minOccurs="0"/>
             <xs:element ref="dwc:geologicalContextID" minOccurs="0"/>
             <xs:element ref="dwc:identificationID" minOccurs="0"/>
-            <xs:element ref="dwc:scientificNameID" minOccurs="0"/>
+            <xs:element ref="dwc:taxonID" minOccurs="0"/>
             <xs:element ref="dwc:resourceRelationshipID" minOccurs="0"/>
             <xs:element ref="dwc:measurementID" minOccurs="0"/>
         </xs:sequence>
     </xs:group>    
+
     <!-- ANY DWC PROPERTY TERM -->
     <xs:element name="anyProperty" abstract="true" substitutionGroup="dwc:any"/> <!-- type="dwc:simpleProperty"  -->
     <!-- ANY DWC CLASS TERM -->
     <xs:element name="anyClass" abstract="true" substitutionGroup="dwc:any"/>
-    
     
     <!-- 
         All TERMS listed BY domain
@@ -63,7 +62,14 @@
     <xs:element name="anyRecordLevelTerm" abstract="true" substitutionGroup="dwc:anyProperty"/>
     <!-- domain properties -->
     <!-- the dublin core terms applicable for darwin core are defined in the dublin_core.xsd and use this substitution group -->
-    <xs:element name="basisOfRecord" substitutionGroup="dwc:anyRecordLevelTerm" type="dwctype:BasisOfRecordEnum"/>
+    <xs:element name="institutionID" substitutionGroup="dwc:anyRecordLevelTerm" type="xs:string"/>
+    <xs:element name="collectionID" substitutionGroup="dwc:anyRecordLevelTerm" type="xs:string"/>
+    <xs:element name="datasetID" substitutionGroup="dwc:anyRecordLevelTerm" type="xs:string"/>
+    <xs:element name="institutionCode" substitutionGroup="dwc:anyRecordLevelTerm" type="xs:string"/>
+    <xs:element name="collectionCode" substitutionGroup="dwc:anyRecordLevelTerm" type="xs:string"/>
+    <xs:element name="datasetName" substitutionGroup="dwc:anyRecordLevelTerm" type="xs:string"/>
+    <xs:element name="ownerInstitutionCode" substitutionGroup="dwc:anyRecordLevelTerm" type="xs:string"/>
+    <xs:element name="basisOfRecord" substitutionGroup="dwc:anyRecordLevelTerm" type="xs:string"/>
     <xs:element name="informationWithheld" substitutionGroup="dwc:anyRecordLevelTerm" type="xs:string"/>
     <xs:element name="dataGeneralizations" substitutionGroup="dwc:anyRecordLevelTerm" type="xs:string"/>
     <xs:element name="dynamicProperties" substitutionGroup="dwc:anyRecordLevelTerm" type="xs:string"/>
@@ -76,6 +82,13 @@
             <xs:element ref="dcterms:rightsHolder" minOccurs="0"/>
             <xs:element ref="dcterms:accessRights" minOccurs="0"/>
             <xs:element ref="dcterms:bibliographicCitation" minOccurs="0"/>
+            <xs:element ref="dwc:institutionID" minOccurs="0"/>
+            <xs:element ref="dwc:collectionID" minOccurs="0"/>
+            <xs:element ref="dwc:datasetID" minOccurs="0"/>
+            <xs:element ref="dwc:institutionCode" minOccurs="0"/>
+            <xs:element ref="dwc:collectionCode" minOccurs="0"/>
+            <xs:element ref="dwc:datasetName" minOccurs="0"/>
+            <xs:element ref="dwc:ownerInstitutionCode" minOccurs="0"/>
             <xs:element ref="dwc:basisOfRecord" minOccurs="0"/>
             <xs:element ref="dwc:informationWithheld" minOccurs="0"/>
             <xs:element ref="dwc:dataGeneralizations" minOccurs="0"/>
@@ -83,21 +96,10 @@
         </xs:sequence>
     </xs:group>
 
-    <!-- DATASET domain -->
-    <xs:element name="anyDatasetTerm" abstract="true" substitutionGroup="dwc:anyProperty"/>
-    <xs:element name="datasetID" type="dwc:nonEmptyString" substitutionGroup="dwc:anyIdentifier"/>
-    <xs:group name="DatasetTerms">
-        <xs:sequence>
-        </xs:sequence>
-    </xs:group>
-
     <!-- OCCURRENCE domain -->
     <xs:element name="anyOccurrenceTerm" abstract="true" substitutionGroup="dwc:anyProperty"/>
     <xs:element name="occurrenceID" type="dwc:nonEmptyString" substitutionGroup="dwc:anyIdentifier"/>
     <!-- domain properties -->
-    <xs:element name="institutionCode" type="xs:string" substitutionGroup="dwc:anyOccurrenceTerm"/>
-    <xs:element name="collectionCode" type="xs:string" substitutionGroup="dwc:anyOccurrenceTerm"/>
-    <xs:element name="collectionID" type="dwc:nonEmptyString" substitutionGroup="dwc:anyOccurrenceTerm"/>
     <xs:element name="catalogNumber" type="xs:string" substitutionGroup="dwc:anyOccurrenceTerm"/>
     <xs:element name="occurrenceDetails" type="xs:string" substitutionGroup="dwc:anyOccurrenceTerm"/>
     <xs:element name="occurrenceRemarks" type="xs:string" substitutionGroup="dwc:anyOccurrenceTerm"/>
@@ -110,6 +112,7 @@
     <xs:element name="reproductiveCondition" type="xs:string" substitutionGroup="dwc:anyOccurrenceTerm"/>
     <xs:element name="behavior" type="xs:string" substitutionGroup="dwc:anyOccurrenceTerm"/>
     <xs:element name="establishmentMeans" type="xs:string" substitutionGroup="dwc:anyOccurrenceTerm"/>
+    <xs:element name="occurrenceStatus" type="xs:string" substitutionGroup="dwc:anyOccurrenceTerm"/>
     <xs:element name="preparations" type="xs:string" substitutionGroup="dwc:anyOccurrenceTerm"/>
     <xs:element name="disposition" type="xs:string" substitutionGroup="dwc:anyOccurrenceTerm"/>
     <xs:element name="otherCatalogNumbers" type="xs:string" substitutionGroup="dwc:anyOccurrenceTerm"/>
@@ -136,6 +139,7 @@
             <xs:element ref="dwc:reproductiveCondition" minOccurs="0"/>
             <xs:element ref="dwc:behavior" minOccurs="0"/>
             <xs:element ref="dwc:establishmentMeans" minOccurs="0"/>
+            <xs:element ref="dwc:occurrenceStatus" minOccurs="0"/>
             <xs:element ref="dwc:preparations" minOccurs="0"/>
             <xs:element ref="dwc:disposition" minOccurs="0"/>
             <xs:element ref="dwc:otherCatalogNumbers" minOccurs="0"/>
@@ -153,7 +157,7 @@
     <xs:element name="eventID" type="dwc:nonEmptyString" substitutionGroup="dwc:anyIdentifier"/>
     <!-- domain properties -->
     <xs:element name="samplingProtocol" type="xs:string" substitutionGroup="dwc:anyEventTerm"/>
-    <xs:element name="verbatimEventDate" type="xs:string" substitutionGroup="dwc:anyEventTerm"/>
+    <xs:element name="samplingEffort" type="xs:string" substitutionGroup="dwc:anyEventTerm"/>
     <xs:element name="eventDate" type="xs:dateTime" substitutionGroup="dwc:anyEventTerm"/>
     <xs:element name="eventTime" type="xs:time" substitutionGroup="dwc:anyEventTerm"/>
     <xs:element name="startDayOfYear" type="dwc:dayOfYearDataType" substitutionGroup="dwc:anyEventTerm"/>
@@ -161,6 +165,7 @@
     <xs:element name="year" type="xs:gYear" substitutionGroup="dwc:anyEventTerm"/>
     <xs:element name="month" type="xs:gMonth" substitutionGroup="dwc:anyEventTerm"/>
     <xs:element name="day" type="xs:gDay" substitutionGroup="dwc:anyEventTerm"/>
+    <xs:element name="verbatimEventDate" type="xs:string" substitutionGroup="dwc:anyEventTerm"/>
     <xs:element name="habitat" type="xs:string" substitutionGroup="dwc:anyEventTerm"/>
     <xs:element name="fieldNumber" type="xs:string" substitutionGroup="dwc:anyEventTerm"/>
     <xs:element name="fieldNotes" type="xs:string" substitutionGroup="dwc:anyEventTerm"/>
@@ -168,7 +173,7 @@
     <xs:group name="EventTerms">
         <xs:sequence>
             <xs:element ref="dwc:samplingProtocol" minOccurs="0"/>
-            <xs:element ref="dwc:verbatimEventDate" minOccurs="0"/>
+            <xs:element ref="dwc:samplingEffort" minOccurs="0"/>
             <xs:element ref="dwc:eventDate" minOccurs="0"/>
             <xs:element ref="dwc:eventTime" minOccurs="0"/>
             <xs:element ref="dwc:startDayOfYear" minOccurs="0"/>
@@ -176,6 +181,7 @@
             <xs:element ref="dwc:year" minOccurs="0"/>
             <xs:element ref="dwc:month" minOccurs="0"/>
             <xs:element ref="dwc:day" minOccurs="0"/>
+            <xs:element ref="dwc:verbatimEventDate" minOccurs="0"/>
             <xs:element ref="dwc:habitat" minOccurs="0"/>
             <xs:element ref="dwc:fieldNumber" minOccurs="0"/>
             <xs:element ref="dwc:fieldNotes" minOccurs="0"/>
@@ -197,6 +203,7 @@
     <xs:element name="countryCode" type="xs:string" substitutionGroup="dwc:anyLocationTerm"/>
     <xs:element name="stateProvince" type="xs:string" substitutionGroup="dwc:anyLocationTerm"/>
     <xs:element name="county" type="xs:string" substitutionGroup="dwc:anyLocationTerm"/>
+    <xs:element name="municipality" type="xs:string" substitutionGroup="dwc:anyLocationTerm"/>
     <xs:element name="locality" type="xs:string" substitutionGroup="dwc:anyLocationTerm"/>
     <xs:element name="verbatimLocality" type="xs:string" substitutionGroup="dwc:anyLocationTerm"/>
     <xs:element name="verbatimElevation" type="xs:string" substitutionGroup="dwc:anyLocationTerm"/>
@@ -207,6 +214,7 @@
     <xs:element name="maximumDepthInMeters" type="xs:double" substitutionGroup="dwc:anyLocationTerm"/>
     <xs:element name="minimumDistanceAboveSurfaceInMeters" type="xs:double" substitutionGroup="dwc:anyLocationTerm"/>
     <xs:element name="maximumDistanceAboveSurfaceInMeters" type="xs:double" substitutionGroup="dwc:anyLocationTerm"/>
+    <xs:element name="locationAccordingTo" type="xs:string" substitutionGroup="dwc:anyLocationTerm"/>
     <xs:element name="locationRemarks" type="xs:string" substitutionGroup="dwc:anyLocationTerm"/>
     <xs:element name="verbatimCoordinates" type="xs:string" substitutionGroup="dwc:anyLocationTerm"/>
     <xs:element name="verbatimLatitude" type="xs:string" substitutionGroup="dwc:anyLocationTerm"/>
@@ -239,6 +247,7 @@
             <xs:element ref="dwc:countryCode" minOccurs="0"/>
             <xs:element ref="dwc:stateProvince" minOccurs="0"/>
             <xs:element ref="dwc:county" minOccurs="0"/>
+            <xs:element ref="dwc:municipality" minOccurs="0"/>
             <xs:element ref="dwc:locality" minOccurs="0"/>
             <xs:element ref="dwc:verbatimLocality" minOccurs="0"/>
             <xs:element ref="dwc:verbatimElevation" minOccurs="0"/>
@@ -273,7 +282,7 @@
     </xs:group>
 
     <!-- GEOLOGICALCONTEXT domain -->
-    <xs:element name="anyIdentificationTerm" abstract="true" substitutionGroup="dwc:anyProperty"/>
+    <xs:element name="anyGeologicalContextTerm" abstract="true" substitutionGroup="dwc:anyProperty"/>
     <xs:element name="geologicalContextID" type="dwc:nonEmptyString" substitutionGroup="dwc:anyIdentifier"/>
     <!-- domain properties -->
     <xs:element name="earliestEonOrLowestEonothem" type="xs:string" substitutionGroup="dwc:anyGeologicalContextTerm"/>
@@ -338,15 +347,22 @@
 
     <!-- TAXON domain -->
     <xs:element name="anyTaxonTerm" abstract="true" substitutionGroup="dwc:anyProperty"/>
-    <xs:element name="scientificNameID" type="dwc:nonEmptyString" substitutionGroup="dwc:anyIdentifier"/>
+    <xs:element name="taxonID" type="dwc:nonEmptyString" substitutionGroup="dwc:anyIdentifier"/>
     <!-- domain properties -->
-    <xs:element name="acceptedScientificNameID" type="dwc:nonEmptyString" substitutionGroup="dwc:anyTaxonTerm"/>
-    <xs:element name="higherTaxonNameID" type="dwc:nonEmptyString" substitutionGroup="dwc:anyTaxonTerm"/>
-    <xs:element name="basionymID" type="dwc:nonEmptyString" substitutionGroup="dwc:anyTaxonTerm"/>    
+    <xs:element name="scientificNameID" type="dwc:nonEmptyString" substitutionGroup="dwc:anyTaxonTerm"/>
+    <xs:element name="acceptedNameUsageID" type="dwc:nonEmptyString" substitutionGroup="dwc:anyTaxonTerm"/>
+    <xs:element name="parentNameUsageID" type="dwc:nonEmptyString" substitutionGroup="dwc:anyTaxonTerm"/>
+    <xs:element name="originalNameUsageID" type="dwc:nonEmptyString" substitutionGroup="dwc:anyTaxonTerm"/>    
+    <xs:element name="nameAccordingToID" type="xs:string" substitutionGroup="dwc:anyTaxonTerm"/>
+    <xs:element name="namePublishedInID" type="xs:string" substitutionGroup="dwc:anyTaxonTerm"/>
+    <xs:element name="taxonConceptID" type="xs:string" substitutionGroup="dwc:anyTaxonTerm"/>
     <xs:element name="scientificName" type="xs:string" substitutionGroup="dwc:anyTaxonTerm"/>
-    <xs:element name="acceptedScientificName" type="xs:string" substitutionGroup="dwc:anyTaxonTerm"/>
-    <xs:element name="higherTaxonName" type="xs:string" substitutionGroup="dwc:anyTaxonTerm"/>
-    <xs:element name="basionym" type="xs:string" substitutionGroup="dwc:anyTaxonTerm"/>
+    <xs:element name="acceptedNameUsage" type="xs:string" substitutionGroup="dwc:anyTaxonTerm"/>
+    <xs:element name="parentNameUsage" type="xs:string" substitutionGroup="dwc:anyTaxonTerm"/>
+    <xs:element name="originalNameUsage" type="xs:string" substitutionGroup="dwc:anyTaxonTerm"/>
+    <xs:element name="nameAccordingTo" type="xs:string" substitutionGroup="dwc:anyTaxonTerm"/>
+    <xs:element name="namePublishedIn" type="xs:string" substitutionGroup="dwc:anyTaxonTerm"/>
+    <xs:element name="higherClassification" type="xs:string" substitutionGroup="dwc:anyTaxonTerm"/>
     <xs:element name="kingdom" type="xs:string" substitutionGroup="dwc:anyTaxonTerm"/>
     <xs:element name="phylum" type="xs:string" substitutionGroup="dwc:anyTaxonTerm"/>
     <xs:element name="class" type="xs:string" substitutionGroup="dwc:anyTaxonTerm"/>
@@ -356,27 +372,30 @@
     <xs:element name="subgenus" type="xs:string" substitutionGroup="dwc:anyTaxonTerm"/>
     <xs:element name="specificEpithet" type="xs:string" substitutionGroup="dwc:anyTaxonTerm"/>
     <xs:element name="infraspecificEpithet" type="xs:string" substitutionGroup="dwc:anyTaxonTerm"/>
-    <xs:element name="scientificNameRank" type="xs:string" substitutionGroup="dwc:anyTaxonTerm"/>
-    <xs:element name="verbatimScientificNameRank" type="xs:string" substitutionGroup="dwc:anyTaxonTerm"/>
+    <xs:element name="taxonRank" type="xs:string" substitutionGroup="dwc:anyTaxonTerm"/>
+    <xs:element name="verbatimTaxonRank" type="xs:string" substitutionGroup="dwc:anyTaxonTerm"/>
     <xs:element name="scientificNameAuthorship" type="xs:string" substitutionGroup="dwc:anyTaxonTerm"/>
+    <xs:element name="vernacularName" type="xs:string" substitutionGroup="dwc:anyTaxonTerm"/>
     <xs:element name="nomenclaturalCode" type="xs:string" substitutionGroup="dwc:anyTaxonTerm"/>
-    <xs:element name="namePublicationID" type="xs:string" substitutionGroup="dwc:anyTaxonTerm"/>
-    <xs:element name="namePublishedIn" type="xs:string" substitutionGroup="dwc:anyTaxonTerm"/>
     <xs:element name="taxonomicStatus" type="xs:string" substitutionGroup="dwc:anyTaxonTerm"/>
     <xs:element name="nomenclaturalStatus" type="xs:string" substitutionGroup="dwc:anyTaxonTerm"/>
-    <xs:element name="taxonConceptID" type="xs:string" substitutionGroup="dwc:anyTaxonTerm"/>
-    <xs:element name="taxonAccordingTo" type="xs:string" substitutionGroup="dwc:anyTaxonTerm"/>
     <xs:element name="taxonRemarks" type="xs:string" substitutionGroup="dwc:anyTaxonTerm"/>
-    <xs:element name="vernacularName" type="xs:string" substitutionGroup="dwc:anyTaxonTerm"/>
     <xs:group name="TaxonTerms">
         <xs:sequence>
-            <xs:element ref="dwc:higherTaxonNameID" minOccurs="0"/>
-            <xs:element ref="dwc:acceptedScientificNameID" minOccurs="0"/>
-            <xs:element ref="dwc:basionymID" minOccurs="0"/>
+            <xs:element ref="dwc:scientificNameID" minOccurs="0"/>
+            <xs:element ref="dwc:acceptedNameUsageID" minOccurs="0"/>
+            <xs:element ref="dwc:parentNameUsageID" minOccurs="0"/>
+            <xs:element ref="dwc:originalNameUsageID" minOccurs="0"/>
+            <xs:element ref="dwc:nameAccordingToID" minOccurs="0"/>
+            <xs:element ref="dwc:namePublishedInID" minOccurs="0"/>
+            <xs:element ref="dwc:taxonConceptID" minOccurs="0"/>
             <xs:element ref="dwc:scientificName" minOccurs="0"/>
-            <xs:element ref="dwc:acceptedScientificName" minOccurs="0"/>
-            <xs:element ref="dwc:higherTaxonName" minOccurs="0"/>
-            <xs:element ref="dwc:basionym" minOccurs="0"/>
+            <xs:element ref="dwc:acceptedNameUsage" minOccurs="0"/>
+            <xs:element ref="dwc:parentNameUsage" minOccurs="0"/>
+            <xs:element ref="dwc:originalNameUsage" minOccurs="0"/>
+            <xs:element ref="dwc:nameAccordingTo" minOccurs="0"/>
+            <xs:element ref="dwc:namePublishedIn" minOccurs="0"/>
+            <xs:element ref="dwc:higherClassification" minOccurs="0"/>
             <xs:element ref="dwc:kingdom" minOccurs="0"/>
             <xs:element ref="dwc:phylum" minOccurs="0"/>
             <xs:element ref="dwc:class" minOccurs="0"/>
@@ -386,18 +405,14 @@
             <xs:element ref="dwc:subgenus" minOccurs="0"/>
             <xs:element ref="dwc:specificEpithet" minOccurs="0"/>
             <xs:element ref="dwc:infraspecificEpithet" minOccurs="0"/>
-            <xs:element ref="dwc:scientificNameRank" minOccurs="0"/>
-            <xs:element ref="dwc:verbatimScientificNameRank" minOccurs="0"/>
+            <xs:element ref="dwc:taxonRank" minOccurs="0"/>
+            <xs:element ref="dwc:verbatimTaxonRank" minOccurs="0"/>
             <xs:element ref="dwc:scientificNameAuthorship" minOccurs="0"/>
+            <xs:element ref="dwc:vernacularName" minOccurs="0"/>
             <xs:element ref="dwc:nomenclaturalCode" minOccurs="0"/>
-            <xs:element ref="dwc:namePublicationID" minOccurs="0"/>
-            <xs:element ref="dwc:namePublishedIn" minOccurs="0"/>
             <xs:element ref="dwc:taxonomicStatus" minOccurs="0"/>
             <xs:element ref="dwc:nomenclaturalStatus" minOccurs="0"/>
-            <xs:element ref="dwc:taxonConceptID" minOccurs="0"/>
-            <xs:element ref="dwc:taxonAccordingTo" minOccurs="0"/>
             <xs:element ref="dwc:taxonRemarks" minOccurs="0"/>
-            <xs:element ref="dwc:vernacularName" minOccurs="0"/>
         </xs:sequence>
     </xs:group>
 

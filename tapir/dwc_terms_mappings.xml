@@ -1,25 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <mappingReferences for="http://rs.tdwg.org/dwc/terms/">
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/occurrenceID">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/dwcore/GlobalUniqueIdentifier"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/informationWithheld">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/dwcore/InformationWithheld"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/occurrenceDetails">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/dwcore/RelatedInformation"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/occurrenceRemarks">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/dwcore/Remarks"/>
-    </ref>
-  </baseConcept>
   <baseConcept id="http://purl.org/dc/terms/modified">
     <ref>
       <concept id="http://rs.tdwg.org/dwc/dwcore/DateLastModified"/>
@@ -38,25 +18,336 @@
       <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/CollectionCode"/>
     </ref>
   </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/catalogNumber">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/dwcore/CatalogNumber"/>
-      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/CatalogNumber"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/scientificName">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/dwcore/ScientificName"/>
-      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/ScientificName"/>
-    </ref>
-  </baseConcept>
   <baseConcept id="http://rs.tdwg.org/dwc/terms/basisOfRecord">
     <ref>
       <concept id="http://rs.tdwg.org/dwc/dwcore/BasisOfRecord"/>
       <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/BasisOfRecord"/>
     </ref>
   </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/higherTaxonName">
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/informationWithheld">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/dwcore/InformationWithheld"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/dynamicProperties">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/dwcore/Attributes"/>
+    </ref>
+  </baseConcept>
+
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/occurrenceID">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/dwcore/GlobalUniqueIdentifier"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/catalogNumber">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/dwcore/CatalogNumber"/>
+      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/CatalogNumber"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/occurrenceDetails">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/dwcore/RelatedInformation"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/occurrenceRemarks">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/dwcore/Remarks"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/recordNumber">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/curatorial/CollectorNumber"/>
+      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/CollectorNumber"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/recordedBy">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/dwcore/Collector"/>
+      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/Collector"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/individualCount">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/curatorial/IndividualCount"/>
+      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/IndividualCount"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/sex">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/dwcore/Sex"/>
+      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/Sex"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/lifeStage">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/dwcore/LifeStage"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/preparations">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/curatorial/Preparations"/>
+      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/PreparationType"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/disposition">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/curatorial/Disposition"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/otherCatalogNumbers">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/curatorial/OtherCatalogNumbers"/>  
+      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/PreviousCatalogNumber"/>  
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/associatedOccurrences">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/curatorial/RelatedCatalogedItems"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/associatedSequences">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/curatorial/GenBankNumber"/>
+    </ref>
+  </baseConcept>
+
+
+====
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/samplingProtocol">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/dwcore/CollectingMethod"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/eventDate">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/dwcore/LatestDateCollected"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/startDayOfYear">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/dwcore/DayOfYear"/>
+      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/JulianDay"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/endDayOfYear">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/dwcore/DayOfYear"/>
+      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/JulianDay"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/verbatimEventDate">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/curatorial/VerbatimCollectingDate"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/fieldNumber">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/curatorial/FieldNumber"/>
+      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/FieldNumber"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/fieldNotes">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/curatorial/FieldNotes"/>
+    </ref>
+  </baseConcept>
+
+
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/higherGeography">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/dwcore/HigherGeography"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/continent">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/dwcore/Continent"/>
+      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/ContinentOcean"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/waterBody">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/dwcore/WaterBody"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/islandGroup">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/dwcore/IslandGroup"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/island">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/dwcore/Island"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/country">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/dwcore/Country"/>
+      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/Country"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/stateProvince">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/dwcore/StateProvince"/>
+      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/StateProvince"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/county">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/dwcore/County"/>
+      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/County"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/locality">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/dwcore/Locality"/>
+      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/Locality"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/verbatimElevation">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/curatorial/VerbatimElevation"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/minimumElevationInMeters">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/dwcore/MinimumElevationInMeters"/>
+      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/MinimumElevation"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/maximumElevationInMeters">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/dwcore/MaximumElevationInMeters"/>
+      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/MaximumElevation"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/verbatimDepth">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/curatorial/VerbatimDepth"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/minimumDepthInMeters">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/dwcore/MinimumDepthInMeters"/>
+      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/MinimumDepth"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/maximumDepthInMeters">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/dwcore/MaximumDepthInMeters"/>
+      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/MaximumDepth"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/verbatimCoordinates">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/geospatial/VerbatimCoordinates"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/verbatimLatitude">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/geospatial/VerbatimLatitude"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/verbatimLongitude">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/geospatial/VerbatimLongitude"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/verbatimCoordinateSystem">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/geospatial/VerbatimCoordinateSystem"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/decimalLongitude">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/geospatial/DecimalLongitude"/>
+      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/Longitude"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/decimalLatitude">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/geospatial/DecimalLatitude"/>
+      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/Latitude"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/geodeticDatum">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/geospatial/GeodeticDatum"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/coordinateUncertaintyInMeters">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/geospatial/CoordinateUncertaintyInMeters"/>
+      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/CoordinatePrecision"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/pointRadiusSpatialFit">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/geospatial/PointRadiusSpatialFit"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/footprintWKT">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/geospatial/FootprintWKT"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/footprintSpatialFit">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/geospatial/FootprintSpatialFit"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/georeferenceProtocol">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/geospatial/GeoreferenceProtocol"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/georeferenceSources">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/geospatial/GeoreferenceSources"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/georeferenceVerificationStatus">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/geospatial/GeoreferenceVerificationStatus"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/georeferenceRemarks">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/geospatial/GeoreferenceRemarks"/>
+    </ref>
+  </baseConcept>
+
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/identifiedBy">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/curatorial/IdentifiedBy"/>
+      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/IdentifiedBy"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/dateIdentified">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/curatorial/DateIdentified"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/identificationQualifier">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/dwcore/IdentificationQualifier"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/typeStatus">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/curatorial/TypeStatus"/>
+      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/TypeStatus"/>
+    </ref>
+  </baseConcept>
+
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/scientificName">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/dwcore/ScientificName"/>
+      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/ScientificName"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/higherClassification">
     <ref>
       <concept id="http://rs.tdwg.org/dwc/dwcore/HigherTaxon"/>
     </ref>
@@ -109,7 +400,7 @@
       <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/Subspecies"/>
     </ref>
   </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/scientificNameRank">
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/taxonRank">
     <ref>
       <concept id="http://rs.tdwg.org/dwc/dwcore/InfraspecificRank"/>
     </ref>
@@ -123,289 +414,6 @@
   <baseConcept id="http://rs.tdwg.org/dwc/terms/nomenclaturalCode">
     <ref>
       <concept id="http://rs.tdwg.org/dwc/dwcore/NomenclaturalCode"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/identificationQualifier">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/dwcore/IdentificationQualifier"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/recordedBy">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/dwcore/Collector"/>
-      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/Collector"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/samplingProtocol">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/dwcore/CollectingMethod"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/eventDate">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/dwcore/LatestDateCollected"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/startDayOfYear">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/dwcore/DayOfYear"/>
-      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/JulianDay"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/endDayOfYear">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/dwcore/DayOfYear"/>
-      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/JulianDay"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/higherGeography">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/dwcore/HigherGeography"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/continent">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/dwcore/Continent"/>
-      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/ContinentOcean"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/waterBody">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/dwcore/WaterBody"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/islandGroup">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/dwcore/IslandGroup"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/island">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/dwcore/Island"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/country">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/dwcore/Country"/>
-      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/Country"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/stateProvince">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/dwcore/StateProvince"/>
-      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/StateProvince"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/county">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/dwcore/County"/>
-      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/County"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/locality">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/dwcore/Locality"/>
-      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/Locality"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/minimumElevationInMeters">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/dwcore/MinimumElevationInMeters"/>
-      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/MinimumElevation"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/maximumElevationInMeters">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/dwcore/MaximumElevationInMeters"/>
-      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/MaximumElevation"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/minimumDepthInMeters">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/dwcore/MinimumDepthInMeters"/>
-      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/MinimumDepth"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/maximumDepthInMeters">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/dwcore/MaximumDepthInMeters"/>
-      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/MaximumDepth"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/sex">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/dwcore/Sex"/>
-      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/Sex"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/lifeStage">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/dwcore/LifeStage"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/dynamicProperties">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/dwcore/Attributes"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/identifiedBy">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/curatorial/IdentifiedBy"/>
-      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/IdentifiedBy"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/dateIdentified">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/curatorial/DateIdentified"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/typeStatus">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/curatorial/TypeStatus"/>
-      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/TypeStatus"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/recordNumber">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/curatorial/CollectorNumber"/>
-      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/CollectorNumber"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/fieldNumber">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/curatorial/FieldNumber"/>
-      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/FieldNumber"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/fieldNotes">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/curatorial/FieldNotes"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/verbatimEventDate">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/curatorial/VerbatimCollectingDate"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/verbatimElevation">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/curatorial/VerbatimElevation"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/verbatimDepth">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/curatorial/VerbatimDepth"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/preparations">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/curatorial/Preparations"/>
-      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/PreparationType"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/disposition">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/curatorial/Disposition"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/individualCount">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/curatorial/IndividualCount"/>
-      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/IndividualCount"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/otherCatalogNumbers">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/curatorial/OtherCatalogNumbers"/>  
-      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/PreviousCatalogNumber"/>  
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/associatedSequences">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/curatorial/GenBankNumber"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/associatedOccurrences">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/curatorial/RelatedCatalogedItems"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/decimalLongitude">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/geospatial/DecimalLongitude"/>
-      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/Longitude"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/decimalLatitude">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/geospatial/DecimalLatitude"/>
-      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/Latitude"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/geodeticDatum">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/geospatial/GeodeticDatum"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/coordinateUncertaintyInMeters">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/geospatial/CoordinateUncertaintyInMeters"/>
-      <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/CoordinatePrecision"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/pointRadiusSpatialFit">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/geospatial/PointRadiusSpatialFit"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/footprintWKT">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/geospatial/FootprintWKT"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/footprintSpatialFit">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/geospatial/FootprintSpatialFit"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/verbatimCoordinates">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/geospatial/VerbatimCoordinates"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/verbatimLatitude">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/geospatial/VerbatimLatitude"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/verbatimLongitude">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/geospatial/VerbatimLongitude"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/verbatimCoordinateSystem">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/geospatial/VerbatimCoordinateSystem"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/georeferenceProtocol">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/geospatial/GeoreferenceProtocol"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/georeferenceSources">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/geospatial/GeoreferenceSources"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/georeferenceVerificationStatus">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/geospatial/GeoreferenceVerificationStatus"/>
-    </ref>
-  </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/georeferenceRemarks">
-    <ref>
-      <concept id="http://rs.tdwg.org/dwc/geospatial/GeoreferenceRemarks"/>
     </ref>
   </baseConcept>
 </mappingReferences>

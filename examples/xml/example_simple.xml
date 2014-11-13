@@ -17,17 +17,21 @@
   <dc:rightsHolder>Museum of Vertebrate Zoology, UC Berkeley</dc:rightsHolder>
   <dc:accessRights>open</dc:accessRights>
   <dc:bibliographicCitation xsi:nil="true"/>
+  <dwc:institutionID xsi:nil="true"/>
+  <dwc:collectionID>urn:lsid:biocol.org:col:34818</dwc:collectionID>
+  <dwc:datasetID xsi:nil="true"/>
+  <dwc:institutionCode>MVZ</dwc:institutionCode>
+  <dwc:collectionCode>Mammal</dwc:collectionCode>
+  <dwc:datasetName xsi:nil="true"/>
+  <dwc:ownerInstitutionCode xsi:nil="true"/>
   <dwc:basisOfRecord>PreservedSpecimen</dwc:basisOfRecord>
   <dwc:informationWithheld xsi:nil="true"/>
   <dwc:dataGeneralizations xsi:nil="true"/>
   <dwc:dynamicProperties>tragusLengthInMeters=0.014; weightInGrams=120; zygomaticArchWidthInMeters=0.043</dwc:dynamicProperties>
-  <dwc:datasetID xsi:nil="true"/>
   <dwc:occurrenceID>urn:catalog:MVZ:Mammal:165821</dwc:occurrenceID>
-  <dwc:institutionCode>MVZ</dwc:institutionCode>
-  <dwc:collectionCode>Mammal</dwc:collectionCode>
-  <dwc:collectionID>urn:lsid:biocol.org:col:34818</dwc:collectionID>
   <dwc:catalogNumber>165821</dwc:catalogNumber>
   <dwc:occurrenceDetails>http://mvzarctos.berkeley.edu/guid/MVZ:Mamm:165861</dwc:occurrenceDetails>
+  <dwc:occurrenceRemarks xsi:nil="true"/>
   <dwc:recordNumber>OPP 7101</dwc:recordNumber>
   <dwc:recordedBy>Oliver P. Pearson, Anita K. Pearson</dwc:recordedBy>
   <dwc:individualID xsi:nil="true"/>
@@ -37,18 +41,19 @@
   <dwc:reproductiveCondition>non-reproductive</dwc:reproductiveCondition>
   <dwc:behavior xsi:nil="true"/>
   <dwc:establishmentMeans>native</dwc:establishmentMeans>
+  <dwc:occurrenceStatus xsi:nil="true"/>
   <dwc:preparations>skin, skull, skeleton</dwc:preparations>
   <dwc:disposition>in collection</dwc:disposition>
   <dwc:otherCatalogNumbers xsi:nil="true"/>
-  <dwc:previousIdentifications xsi:nil="true"/>
+  <dwc:previousIdentifications>Anthus sp., field ID by G. Iglesias; Anthus correndera, expert ID by C. Cicero 2009-02-12 based on morphology</dwc:previousIdentifications>
   <dwc:associatedMedia>http://arctos.database.museum/SpecimenImages/UAMObs/Mamm/2/P7291179.JPG</dwc:associatedMedia>
   <dwc:associatedReferences>http://www.sciencemag.org/cgi/content/abstract/322/5899/261</dwc:associatedReferences>
   <dwc:associatedOccurrences>mother of urn:catalog:MVZ:Mammal:1234</dwc:associatedOccurrences>
   <dwc:associatedSequences>GenBank: U34853.1</dwc:associatedSequences>
   <dwc:associatedTaxa xsi:nil="true"/>
   <dwc:eventID xsi:nil="true"/>
-  <dwc:samplingProtocol>1km trap line with traps every 100m</dwc:samplingProtocol>
-  <dwc:verbatimEventDate>March 8 1963</dwc:verbatimEventDate>
+  <dwc:samplingProtocol>1 km trap line with traps every 100 m</dwc:samplingProtocol>
+  <dwc:samplingEffort>24 shoe-lace minutes</dwc:samplingEffort>
   <dwc:eventDate>1963-03-08</dwc:eventDate>
   <dwc:eventTime>14:07-06:00</dwc:eventTime>
   <dwc:startDayOfYear>67</dwc:startDayOfYear>
@@ -56,6 +61,7 @@
   <dwc:year>1963</dwc:year>
   <dwc:month>3</dwc:month>
   <dwc:day>8</dwc:day>
+  <dwc:verbatimEventDate>March 8 1963</dwc:verbatimEventDate>
   <dwc:habitat>pre-cordilleran steppe</dwc:habitat>
   <dwc:fieldNumber xsi:nil="true"/>
   <dwc:fieldNotes>stored in Grinnell-Miller Library</dwc:fieldNotes>
@@ -71,6 +77,7 @@
   <dwc:countryCode>AR</dwc:countryCode>
   <dwc:stateProvince>Neuquén</dwc:stateProvince>
   <dwc:county>Departamento Los Lagos</dwc:county>
+  <dwc:municipality xsi:nil="true"/>
   <dwc:locality>Bariloche, 25 km NNE via Ruta Nacional 40 (=Ruta 237)</dwc:locality>
   <dwc:verbatimLocality>25 km NNE Bariloche por R. Nac. 237</dwc:verbatimLocality>
   <dwc:verbatimElevation>791m</dwc:verbatimElevation>
@@ -81,6 +88,7 @@
   <dwc:maximumDepthInMeters xsi:nil="true"/>
   <dwc:minimumDistanceAboveSurfaceInMeters xsi:nil="true"/>
   <dwc:maximumDistanceAboveSurfaceInMeters xsi:nil="true"/>
+  <dwc:locationAccordingTo xsi:nil="true"/>
   <dwc:locationRemarks>river valley upstream of a terminal moraine</dwc:locationRemarks>
   <dwc:verbatimCoordinates>41 05 54.03S 121 05 34W</dwc:verbatimCoordinates>
   <dwc:verbatimLatitude>41 05 54.03S</dwc:verbatimLatitude>
@@ -124,16 +132,22 @@
   <dwc:identificationReferences>Aves del Noroeste Patagonico. Christie et al. 2004.</dwc:identificationReferences>
   <dwc:identificationRemarks>Distinguished between Anthus correndera and Anthus hellmayri based on the comparative lengths of the uñas.</dwc:identificationRemarks>
   <dwc:identificationQualifier xsi:nil="true"/>
-  <dwc:previousIdentifications>Anthus sp., field ID by G. Iglesias; Anthus correndera, expert ID by C. Cicero 2009-02-12 based on morphology</dwc:previousIdentifications>
   <dwc:typeStatus>holotype</dwc:typeStatus>
+  <dwc:taxonID xsi:nil="true"/>
   <dwc:scientificNameID xsi:nil="true"/>
-  <dwc:acceptedScientificNameID xsi:nil="true"/>
-  <dwc:higherTaxonNameID xsi:nil="true"/>
-  <dwc:basionymID xsi:nil="true"/>
+  <dwc:acceptedNameUsageID xsi:nil="true"/>
+  <dwc:parentNameUsageID xsi:nil="true"/>
+  <dwc:originalNameUsageID xsi:nil="true"/>
+  <dwc:nameAccordingToID xsi:nil="true"/>
+  <dwc:namePublishedInID xsi:nil="true"/>
+  <dwc:taxonConceptID xsi:nil="true"/>
   <dwc:scientificName>Ctenomys sociabilis</dwc:scientificName>
-  <dwc:acceptedScientificName>Ctenomys sociabilis</dwc:acceptedScientificName>
-  <dwc:higherTaxonName>Animalia, Chordata, Vertebrata, Mammalia, Theria, Eutheria, Rodentia, Hystricognatha, Hystricognathi, Ctenomyidae, Ctenomyini, Ctenomys</dwc:higherTaxonName>
-  <dwc:basionym xsi:nil="true"/>
+  <dwc:acceptedNameUsage>Ctenomys sociabilis Pearson and Christie, 1985</dwc:acceptedNameUsage>
+  <dwc:parentNameUsage>Ctenomys Blainville, 1826</dwc:parentNameUsage>
+  <dwc:originalNameUsage>Ctenomys sociabilis Pearson and Christie, 1985</dwc:originalNameUsage>
+  <dwc:nameAccordingTo>Pearson O. P., and M. I. Christie. 1985.</dwc:nameAccordingTo>
+  <dwc:namePublishedIn>Pearson O. P., and M. I. Christie. 1985. Historia Natural, 5(37):388</dwc:namePublishedIn>
+  <dwc:higherClassification>Animalia, Chordata, Vertebrata, Mammalia, Theria, Eutheria, Rodentia, Hystricognatha, Hystricognathi, Ctenomyidae, Ctenomyini, Ctenomys</dwc:higherClassification>
   <dwc:kingdom>Animalia</dwc:kingdom>
   <dwc:phylum>Chordata</dwc:phylum>
   <dwc:class>Mammalia</dwc:class>
@@ -143,17 +157,13 @@
   <dwc:subgenus xsi:nil="true"/>
   <dwc:specificEpithet>sociabilis</dwc:specificEpithet>
   <dwc:infraspecificEpithet xsi:nil="true"/>
-  <dwc:scientificNameRank>species</dwc:scientificNameRank>
-  <dwc:verbatimScientificNameRank>species</dwc:verbatimScientificNameRank>
+  <dwc:taxonRank>species</dwc:taxonRank>
+  <dwc:verbatimTaxonRank xsi:nil="true"/>
   <dwc:scientificNameAuthorship>Pearson and Christie, 1985</dwc:scientificNameAuthorship>
-  <dwc:nomenclaturalCode>ICZN</dwc:nomenclaturalCode>
-  <dwc:namePublicationID xsi:nil="true"/>
-  <dwc:namePublishedIn>Pearson O. P., and M. I. Christie. 1985. Historia Natural, 5(37):388</dwc:namePublishedIn>
-  <dwc:taxonomicStatus>accepted</dwc:taxonomicStatus>
-  <dwc:nomenclaturalStatus xsi:nil="true"/>
-  <dwc:taxonConceptID xsi:nil="true"/>
-  <dwc:taxonAccordingTo>Pearson O. P., and M. I. Christie.</dwc:taxonAccordingTo>
-  <dwc:taxonRemarks xsi:nil="true"/>
   <dwc:vernacularName>colonial tuco-tuco</dwc:vernacularName>
+  <dwc:nomenclaturalCode>ICZN</dwc:nomenclaturalCode>
+  <dwc:taxonomicStatus>valid</dwc:taxonomicStatus>
+  <dwc:nomenclaturalStatus xsi:nil="true"/>
+  <dwc:taxonRemarks xsi:nil="true"/>
  </SimpleDarwinRecord>
 </SimpleDarwinRecordSet>

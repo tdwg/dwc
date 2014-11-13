@@ -16,23 +16,8 @@
             <xs:enumeration value="Occurrence"/>
             <xs:enumeration value="Location"/>
             <xs:enumeration value="Taxon"/>
+            <xs:enumeration value="Identification"/>
         </xs:restriction>
     </xs:simpleType>
 
-    <xs:simpleType name="BasisOfRecordEnum">
-        <xs:restriction base="xs:NMTOKEN">
-            <!-- Dublin Core -->
-            <xs:enumeration value="StillImage"/>
-            <xs:enumeration value="MovingImage"/>
-            <xs:enumeration value="Sound"/>
-            <!-- Darwin Core -->
-            <xs:enumeration value="PreservedSpecimen"/>
-            <xs:enumeration value="FossilSpecimen"/>
-            <xs:enumeration value="LivingSpecimen"/>
-            <xs:enumeration value="HumanObservation"/>
-            <xs:enumeration value="MachineObservation"/>
-            <xs:enumeration value="NomenclaturalChecklist"/>
-        </xs:restriction>
-    </xs:simpleType>
-        
 </xs:schema>

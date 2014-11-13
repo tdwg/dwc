@@ -14,13 +14,13 @@
     </dcterms:Location>
     <dwc:Event>
         <dwc:eventID>http://guid.mvz.org/events/1995/6</dwc:eventID>
-        <dwc:verbatimEventDate>12 Jan 1995</dwc:verbatimEventDate>
         <dwc:eventDate>1995-01-12</dwc:eventDate>
         <dwc:startDayOfYear>12</dwc:startDayOfYear>
         <dwc:endDayOfYear>12</dwc:endDayOfYear>
         <dwc:year>1995</dwc:year>
         <dwc:month>1</dwc:month>
         <dwc:day>12</dwc:day>
+        <dwc:verbatimEventDate>12 Jan 1995</dwc:verbatimEventDate>
         <dwc:habitat>mallín</dwc:habitat>
         <dwc:fieldNotes>on file in the Grinnell-Miller Library</dwc:fieldNotes>
         <dwc:locationID>http://guid.mvz.org/sites/arg/127</dwc:locationID>
@@ -56,7 +56,7 @@
     </dwc:Identification>
     <dwc:Taxon>
       <dwc:scientificName>Ctenomys sociabilis</dwc:scientificName>
-      <dwc:higherTaxonName>Animalia, Chordata, Vertebrata, Mammalia, Theria, Eutheria, Rodentia, Hystricognatha, Hystricognathi, Ctenomyidae, Ctenomyini, Ctenomys</dwc:higherTaxonName>
+      <dwc:higherClassification>Animalia; Chordata; Vertebrata; Mammalia; Theria; Eutheria; Rodentia; Hystricognatha; Hystricognathi; Ctenomyidae; Ctenomyini; Ctenomys</dwc:higherClassification>
       <dwc:kingdom>Animalia</dwc:kingdom>
       <dwc:phylum>Chordata</dwc:phylum>
       <dwc:class>Mammalia</dwc:class>
@@ -85,7 +85,7 @@
     </dwc:Identification>
     <dwc:Taxon>
       <dwc:scientificName>Ctenomys sociabilis</dwc:scientificName>
-      <dwc:higherTaxonName>Animalia, Chordata, Vertebrata, Mammalia, Theria, Eutheria, Rodentia, Hystricognatha, Hystricognathi, Ctenomyidae, Ctenomyini, Ctenomys</dwc:higherTaxonName>
+      <dwc:higherClassification>Animalia; Chordata; Vertebrata; Mammalia; Theria; Eutheria; Rodentia; Hystricognatha; Hystricognathi; Ctenomyidae; Ctenomyini; Ctenomys</dwc:higherClassification>
       <dwc:kingdom>Animalia</dwc:kingdom>
       <dwc:phylum>Chordata</dwc:phylum>
       <dwc:class>Mammalia</dwc:class>

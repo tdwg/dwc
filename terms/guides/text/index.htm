@@ -13,11 +13,11 @@
 <meta name="DC.contributor" content="Markus Döring (GBIF)"/>
 <meta name="DC.contributor" content="Renato De Giovanni (CRIA)"/>
 <meta name="DC.contributor" content="Dave Vieglais (KUNHM)"/>
-<meta name="DC.modified" content="2009-07-06"/>
+<meta name="DC.modified" content="2009-09-23"/>
 <meta name="DC.dateAccepted" content="2009-02-12"/>
 <meta name="DC.format" content="text/html"/>
-<meta name="DC.identifier" content="http://rs.tdwg.org/dwc/2009-07-06/terms/guides/text"/>
-<meta name="DC.replaces" content="http://rs.tdwg.org/dwc/2009-05-25/terms/guides/text/"/>
+<meta name="DC.identifier" content="http://rs.tdwg.org/dwc/2009-09-23/terms/guides/text"/>
+<meta name="DC.replaces" content="http://rs.tdwg.org/dwc/2009-07-06/terms/guides/text/"/>
 <meta name="DC.publisher" content="Biodiversity Information Standards TDWG"/>
 <meta name="DC.rights" content=""/>
 <meta name="DC.accessRights" content="public"/>
@@ -81,7 +81,7 @@
 </TR>
 <TR>
 <TH>Date Modified:</TH>
-<TD>2009-07-06</TD>
+<TD>2009-09-23</TD>
 </TR>
 <TR>
 <TH>Abstract:</TH>
@@ -105,18 +105,18 @@
 </TR>
 <TR>
 <TH>Identifier:</TH>
-<TD>http://rs.tdwg.org/dwc/2009-07-06/terms/guides/text/</TD>
+<TD>http://rs.tdwg.org/dwc/2009-09-23/terms/guides/text/</TD>
 </TR>
 <TR><TH>Latest Version:</TH>
 <TD><A href="http://rs.tdwg.org/dwc/terms/guides/text/index.htm">http://rs.tdwg.org/dwc/terms/guides/text/</A></TD>
 </TR>
 <TR>
 <TH>Replaces:</TH>
-<TD><a href="http://rs.tdwg.org/dwc/2009-05-25/terms/guides/text/index.htm">http://rs.tdwg.org/dwc/2009-05-25/terms/guides/text/</A></TD>
+<TD><a href="http://rs.tdwg.org/dwc/2009-07-06/terms/guides/text/index.htm">http://rs.tdwg.org/dwc/2009-07-06/terms/guides/text/</A></TD>
 </TR>
 <TR>
 <TH>Document Status:</TH>
-<TD>For Public Review.</TD>
+<TD>Response to Public Review.</TD>
 </TR>
 </TBODY></TABLE>
 </TD>
@@ -172,18 +172,18 @@ can be described with the following Darwin Core metafile:
 &lt;/archive&gt;
 </pre>
 </p>	 
-These same data could be understood without the metafile if the the first row of the contents of the CSV file used Darwin Core terms: 
+These same data could be understood without the metafile if the the first row of the CSV file contained the term names: 
 <PRE class="example">
-catalogNumber,scientificName,individualCount,datasetID
-123,"Cryptantha gypsophila Reveal & C.R. Broome",12,urn:lsid:tim.lsid.tdwg.org:collections:1
-124,"Buxbaumia piperi",2,urn:lsid:tim.lsid.tdwg.org:collections:1
+type,institutionCode,collectionCode,catalogNumber,scientificName,individualCount,datasetID
+Occurrence,ANSP,PH,123,"Cryptantha gypsophila Reveal & C.R. Broome",12,urn:lsid:tim.lsid.tdwg.org:collections:1
+Occurrence,ANSP,PH,124,"Buxbaumia piperi",2,urn:lsid:tim.lsid.tdwg.org:collections:1
 </PRE>
 	
 <h3>1.2 XML versus <EM>Fielded Text</EM></h3>
 <p>
 Many resources exist on the web describing the advantages of Extensible Markup Language [<A href="http://www.w3.org/XML/">XML</A>] 
-over less structured content such as <em>fielded text</em>. The Darwin Core Text Guide (this document) <b>is not</b> promoting 
-the use of <EM>fielded text</EM> over XML for data exchange, but rather providing recommendations for how to handle such data files when necessary.
+over less structured content such as <em>fielded text</em>. The Darwin Core Text Guide (this document) is not meant to promote
+the use of <EM>fielded text</EM> over XML for data exchange, but rather to provide recommendations for how to handle such data files when necessary.
 <br/>
 Two scenarios that might benefit from the use of <em>fielded text</em> are:
 <ul>
@@ -193,8 +193,6 @@ Two scenarios that might benefit from the use of <em>fielded text</em> are:
 		It could be that this system would then serve the data in another format such as XML.</li>
 </ul>
 </p>
-
-
 
 <A name="metafile" id="metafile"></A> 
 <H2>2. Metafile Content</H2>
@@ -497,12 +495,12 @@ the threat status for those species.
     &lt;files&gt;
         &lt;location&gt;whales.txt&lt;/location&gt;
     &lt;/files&gt;
-    &lt;id index=&quot;0&quot; term=&quot;http://rs.tdwg.org/dwc/terms/taxonNameID&quot;/&gt;
+    &lt;id index=&quot;0&quot; term=&quot;http://rs.tdwg.org/dwc/terms/taxonID&quot;/&gt;
     &lt;field index=&quot;1&quot; term=&quot;http://purl.org/dc/terms/modified&quot; type=&quot;xs:dateTime&quot;/&gt;
     &lt;field index=&quot;2&quot; term=&quot;http://rs.tdwg.org/dwc/terms/scientificName&quot;/&gt;
-    &lt;field index=&quot;3&quot; term=&quot;http://rs.tdwg.org/dwc/terms/acceptedScientificNameID&quot;/&gt;
-    &lt;field index=&quot;4&quot; term=&quot;http://rs.tdwg.org/dwc/terms/higherTaxonNameID&quot;/&gt;
-    &lt;field index=&quot;5&quot; term=&quot;http://rs.tdwg.org/dwc/terms/basionymID&quot;/&gt;
+    &lt;field index=&quot;3&quot; term=&quot;http://rs.tdwg.org/dwc/terms/acceptedNameUsageID&quot;/&gt;
+    &lt;field index=&quot;4&quot; term=&quot;http://rs.tdwg.org/dwc/terms/parentNameUsageID&quot;/&gt;
+    &lt;field index=&quot;5&quot; term=&quot;http://rs.tdwg.org/dwc/terms/originalNameUsageID&quot;/&gt;
   &lt;/core&gt;
 	
   &lt;extension encoding=&quot;UTF-8&quot; fieldsTerminatedBy=&quot;,&quot; linesTerminatedBy=&quot;\n&quot; fieldsEnclosedBy='&quot;' ignoreHeaderLines=&quot;1&quot;
@@ -607,5 +605,12 @@ page [<A href="http://code.google.com/p/darwincore/wiki/ToolsAndApplications">TO
 <p>Except where otherwise noted, content on this site is licensed under a 
    <a rel="license" href="http://creativecommons.org/licenses/by/3.0/us/"> Creative Commons 
    Attribution 3.0 United States License</a>.</p> 
+<!-- The following is used to register Google Analytics for Darwin Core --> 
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"> 
+</script> 
+<script type="text/javascript"> 
+_uacct = "UA-386033-4";
+urchinTracker();
+</script> 
 
 </BODY></HTML>

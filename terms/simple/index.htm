@@ -13,11 +13,11 @@
 <META name="DC.contributor" content="Renato De Giovanni (CRIA)"/>
 <META name="DC.contributor" content="Tim Robertson (GBIF)"/>
 <META name="DC.contributor" content="Dave Vieglais (KUNHM)"/>
-<META name="DC.modified" content="2009-07-06"/>
+<META name="DC.modified" content="2009-09-23"/>
 <META name="DC.dateAccepted" content="2009-04-21"/>
 <META name="DC.format" content="text/html"/>
-<META name="DC.identifier" content="http://rs.tdwg.org/dwc/docs/2009-07-06/"/>
-<META name="DC.replaces" content="http://rs.tdwg.org/dwc/docs/2009-05-25/"/>
+<META name="DC.identifier" content="http://rs.tdwg.org/dwc/docs/2009-09-23/"/>
+<META name="DC.replaces" content="http://rs.tdwg.org/dwc/docs/2009-07-06/"/>
 <META name="DC.publisher" content="Biodiversity Information Standards TDWG"/>
 <META name="DC.rights" content=""/>
 <META name="DC.accessRights" content="public"/>
@@ -81,7 +81,7 @@
     </TR>
     <TR>
       <TH>Date Modified:</TH>
-      <TD>2009-07-06</TD>
+      <TD>2009-09-23</TD>
     </TR>
     <TR>
       <TH>Abstract:</TH>
@@ -105,7 +105,7 @@
     </TR>
     <TR>
       <TH>Identifier:</TH>
-      <TD>http://rs.tdwg.org/dwc/2009-07-06/terms/simple/</TD>
+      <TD>http://rs.tdwg.org/dwc/2009-09-23/terms/simple/</TD>
     </TR>
     <TR>
       <TH>Latest Version:</TH>
@@ -113,11 +113,11 @@
     </TR>
     <TR>
       <TH>Replaces:</TH>
-      <TD><A href="http://rs.tdwg.org/dwc/2009-05-25/terms/simple/index.htm">http://rs.tdwg.org/dwc/2009-05-25/terms/simple/</A></TD>
+      <TD><A href="http://rs.tdwg.org/dwc/2009-07-06/terms/simple/index.htm">http://rs.tdwg.org/dwc/2009-07-06/terms/simple/</A></TD>
     </TR>
     <TR>
       <TH>Document Status:</TH>
-      <TD>For Public Review.</TD>
+      <TD>Response to Public Review.</TD>
     </TR>
   </TBODY>
 </TABLE>
@@ -172,9 +172,7 @@ There are just a few general guiding principles on how to make the best use of t
 <a href="../index.htm#dcterms:Location">Location</a>, 
 <a href="../index.htm#GeologicalContext">GeologicalContext</a>,
 <a href="../index.htm#Identification">Identification</a>, 
-<a href="../index.htm#Taxon">Taxon</a>,
-<a href="../index.htm#ResourceRelationship">ResourceRelationship</a>,
-<a href="../index.htm#MeasurementOrFact">MeasurementOrFact</a>) as a field.</li>
+<a href="../index.htm#Taxon">Taxon</a>) as a field.</li>
 <li>Support (provide data in) as many fields as you can.</li>
 <li>Use the <a href="../index.htm#dcterms:type">dcterms:type</a> field to say what class the record represents 
 (<a href="../index.htm#Occurrence">Occurrence</a>, 
@@ -183,17 +181,10 @@ There are just a few general guiding principles on how to make the best use of t
 <a href="../index.htm#Taxon">Taxon</a>).</li>
 
 <li>Use the <a href="../index.htm#basisOfRecord">basisOfRecord</a> field to say specifically what kind of record it is 
-(<a href="../type-vocabulary/index.htm#PreservedSpecimen">PreservedSpecimen</a>,
-<a href="../type-vocabulary/index.htm#FossilSpecimen">FossilSpecimen</a>,
-<a href="../type-vocabulary/index.htm#LivingSpecimen">LivingSpecimen</a>,
-<a href="../type-vocabulary/index.htm#HumanObservation">HumanObservation</a>,
-<a href="../type-vocabulary/index.htm#MachineObservation">MachineObservation</a>,
-<a href="../type-vocabulary/index.htm#dcmitype:StillImage">StillImage</a>,
-<a href="../type-vocabulary/index.htm#dcmitype:MovingImage">MovingImage</a>,
-<a href="../type-vocabulary/index.htm#dcmitype:Sound">Sound</a>,
-<a href="../type-vocabulary/index.htm#NomenclaturalChecklist">NomenclaturalChecklist</a>).</li>
-<li>Populate a field with data matching the definition of the field.</li>
-<li>Follow the controlled vocabulary for the values of fields that recommend them.</li>
+(PreservedSpecimen, FossilSpecimen, LivingSpecimen, HumanObservation, MachineObservation, StillImage, MovingImage, Sound,
+TaxonName, NomenclaturalAct, TaxonNameUsage).</li>
+<li>Populate a field with data that match the definition of the field.</li>
+<li>Use the controlled vocabulary for the values of fields that recommend them.</li>
 <li>If data are withheld, use <a href="../index.htm#informationWithheld">informationWithheld</a> to say so.</li>
 <li>If data are shared in lower quality than the original, use <a href="../index.htm#dataGeneralizations">dataGeneralizations</a> to say so.</li>
 </ol>
@@ -218,7 +209,7 @@ That is mostly true. The only recourse within the <i>Simple Darwin Core</i> is t
 <a href="../index.htm#associatedTaxa">associatedTaxa</a>, 
 <a href="../index.htm#higherGeography">higherGeography</a>, 
 and 
-<a href="../index.htm#higherTaxonName">higherTaxonName</a>.
+<a href="../index.htm#higherClassification">higherClassification</a>.
 For cases where rich data require rich (non-simple) structure, the <i>Simple Darwin Core</i> is not suitable. Instead, use 
 a more capable structure such as the <i>Access to Biological Collections Data</i> schema 
 [<A href="http://www.tdwg.org/schemas/abcd/2.06">ABCD</a>], or the 
@@ -282,8 +273,8 @@ The <i>XML Guide</i> [<A href="../guides/xml/index.htm">XMLSCHEMAGUIDE</a>] desc
 data based on Darwin Core terms. Looking at the <i>Simple Darwin Core XML Schema</i> 
 [<A href="../../xsd/tdwg_dwc_simple.xsd">SIMPLEXMLSCHEMA</a>] using the <i>XML Guide</i> as a reference
 you will be able to see that the schema supports the notion of a <i>SimpleDarwinRecord</i>, which is just a grouping of up 
-to one of each of the Darwin Core terms that are not Classes. The following example shows a <i>SimpleDarwinRecordSet</i>
-containing one <i>SimpleDarwinRecord</i> for a <i>Taxon</i>:
+to one of each of the Darwin Core terms that are Properties (not Classes and not Type Vocabulary terms). The following example 
+shows a <i>SimpleDarwinRecordSet</i> containing one <i>SimpleDarwinRecord</i> for a <i>Taxon</i>:
 
 <pre class="example">
 &lt;?xml version="1.0" encoding="UTF-8"?&gt;
@@ -295,25 +286,33 @@ containing one <i>SimpleDarwinRecord</i> for a <i>Taxon</i>:
  xsi:schemaLocation="http://rs.tdwg.org/dwc/dwcrecord/ http://rs.tdwg.org/dwc/xsd/tdwg_dwc_simple.xsd"&gt;
  &lt;SimpleDarwinRecord&gt;
   &lt;dc:type&gt;Taxon&lt;/dc:type&gt;
-  &lt;dc:modified&gt;2009-02-12T14:22Z&lt;/dc:modified&gt;
+  &lt;dc:modified&gt;2009-09-22T09:49Z&lt;/dc:modified&gt;
   &lt;dc:language&gt;en&lt;/dc:language&gt;
-  &lt;dwc:scientificName&gt;Ctenomys sociabilis&lt;/dwc:scientificName&gt;
-  &lt;dwc:acceptedScientificName&gt;Ctenomys sociabilis&lt;/dwc:acceptedScientificName&gt;
-  &lt;dwc:higherTaxonName&gt;Animalia, Chordata, Vertebrata, Mammalia, Theria, Eutheria, Rodentia, Hystricognatha, Hystricognathi, Ctenomyidae, Ctenomyini, Ctenomys&lt;/dwc:higherTaxonName&gt;
+  &lt;dwc:scientificNameID&gt;http://research.calacademy.org/research/ichthyology/catalog/fishcatget.asp?spid=53548&lt;/dwc:scientificNameID&gt;
+  &lt;dwc:acceptedNameUsageID&gt;http://research.calacademy.org/research/ichthyology/catalog/fishcatget.asp?spid=22010&lt;/dwc:acceptedNameUsageID&gt;
+  &lt;dwc:originalNameUsageID&gt;http://research.calacademy.org/research/ichthyology/catalog/fishcatget.asp?spid=53548&lt;/dwc:originalNameUsageID&gt;
+  &lt;dwc:nameAccordingToID&gt;http://research.calacademy.org/research/ichthyology/catalog/getref.asp?id=22764&lt;/dwc:nameAccordingToID&gt;
+  &lt;dwc:namePublishedInID&gt;http://research.calacademy.org/research/ichthyology/catalog/getref.asp?id=671&lt;/dwc:namePublishedInID&gt;
+  &lt;dwc:scientificName&gt;Centropyge flavicauda Fraser-Brunner 1933&lt;/dwc:scientificName&gt;
+  &lt;dwc:acceptedNameUsage&gt;Centropyge fisheri (Snyder 1904)&lt;/dwc:acceptedNameUsage&gt;
+  &lt;dwc:parentNameUsage&gt;Centropyge  Kaup, 1860&lt;/dwc:parentNameUsage&gt;
+  &lt;dwc:originalNameUsage&gt;Centropyge flavicauda Fraser-Brunner 1933&lt;/dwc:originalNameUsage&gt;
+  &lt;dwc:nameAccordingTo&gt;Allen, G.R. 1980. Butterfly and angelfishes of the world. Volume II. Mergus Publishers. Pp. 149-352.&lt;/dwc:nameAccordingTo&gt;
+  &lt;dwc:namePublishedIn&gt;Fraser-Brunner, A. 1933. A revision of the chaetodont fishes of the subfamily Pomacanthinae. Proceedings of the General 
+          Meetings for Scientific Business of the Zoological Society of London 1933 (pt 3, no.30): 543-599, Pl. 1.&lt;/dwc:namePublishedIn&gt;
+  &lt;dwc:higherClassification&gt;Animalia;Chordata;Vertebrata;Osteichthyes;Actinopterygii;Neopterygii;Teleostei;Acanthopterygii;Perciformes;
+          Percoidei;Pomacanthidae;Centropyge&lt;/dwc:higherClassification&gt;
   &lt;dwc:kingdom&gt;Animalia&lt;/dwc:kingdom&gt;
   &lt;dwc:phylum&gt;Chordata&lt;/dwc:phylum&gt;
-  &lt;dwc:class&gt;Mammalia&lt;/dwc:class&gt;
-  &lt;dwc:order&gt;Rodentia&lt;/dwc:order&gt;
-  &lt;dwc:family&gt;Ctenomyidae&lt;/dwc:family&gt;
-  &lt;dwc:genus&gt;Ctenomys&lt;/dwc:genus&gt;
-  &lt;dwc:specificEpithet&gt;sociabilis&lt;/dwc:specificEpithet&gt;
-  &lt;dwc:scientificNameRank&gt;species&lt;/dwc:scientificNameRank&gt;
-  &lt;dwc:scientificNameAuthorship&gt;Pearson and Christie, 1985&lt;/dwc:scientificNameAuthorship&gt;
+  &lt;dwc:class&gt;Osteichthyes&lt;/dwc:class&gt;
+  &lt;dwc:order&gt;Perciformes&lt;/dwc:order&gt;
+  &lt;dwc:family&gt;Pomacanthidae&lt;/dwc:family&gt;
+  &lt;dwc:genus&gt;Centropyge&lt;/dwc:genus&gt;
+  &lt;dwc:specificEpithet&gt;flavicauda&lt;/dwc:specificEpithet&gt;
+  &lt;dwc:scientificNameAuthorship&gt;Fraser-Brunner 1933&lt;/dwc:scientificNameAuthorship&gt;
+  &lt;dwc:taxonRank&gt;species&lt;/dwc:taxonRank&gt;
   &lt;dwc:nomenclaturalCode&gt;ICZN&lt;/dwc:nomenclaturalCode&gt;
-  &lt;dwc:namePublishedIn&gt;Pearson O. P., and M. I. Christie. 1985. Historia Natural, 5(37):388&lt;/dwc:namePublishedIn&gt;
   &lt;dwc:taxonomicStatus&gt;accepted&lt;/dwc:taxonomicStatus&gt;
-  &lt;dwc:taxonAccordingTo&gt;Pearson O. P., and M. I. Christie.&lt;/dwc:taxonAccordingTo&gt;
-  &lt;dwc:dynamicProperties&gt;iucnStatus=vulnerable; distribution=Neuquen, Argentina&lt;/dwc:dynamicProperties&gt;
  &lt;/SimpleDarwinRecord&gt;
 &lt;/SimpleDarwinRecordSet&gt;
 </pre>
@@ -326,8 +325,8 @@ structure, the <i>SimpleDarwinRecordSet</i>, which is a grouping of one or more 
 <A name="domore" id="domore"></A> 
 <h3>1.6 Doing More with Simple Darwin Core</h3>
 Sooner or later you may want to share more information than the <i>Simple Darwin Core</i> seems to allow. For example, you
-and your colleagues might decide that it would be useful to have a standard way to exchange information relevant
-to questions in Paleontology. How would you do it? 
+and your colleagues might decide that it would be useful to have a standard way to exchange additional information relevant
+to questions in Conservation. How would you do it?
 <P>
 One way would be to try to "overload" existing terms by using them to hold information other than what was intended
 based on the definition of the terms. Please don't do this. 
@@ -351,43 +350,42 @@ your data, even if there might be problems with people using it reliably.
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
  xsi:schemaLocation="http://rs.tdwg.org/dwc/dwcrecord/ http://rs.tdwg.org/dwc/xsd/tdwg_dwc_simple.xsd"&gt;
  &lt;SimpleDarwinRecord&gt;
-  &lt;dwc:occurrenceID&gt;urn:catalog:YPM:VP.057488&lt;/dwc:occurrenceID&gt;
-  &lt;dc:type&gt;Occurrence&lt;/dc:type&gt;
+  &lt;dc:type&gt;Taxon&lt;/dc:type&gt;
   &lt;dc:modified&gt;2009-02-12T14:22Z&lt;/dc:modified&gt;
   &lt;dc:language&gt;en&lt;/dc:language&gt;
-  &lt;dwc:basisOfRecord&gt;FossilSpecimen&lt;/dwc:basisOfRecord&gt;
-  &lt;dwc:institutionCode&gt;YPM&lt;/dwc:institutionCode&gt;
-  &lt;dwc:collectionCode&gt;VP&lt;/dwc:collectionCode&gt;
-  &lt;dwc:catalogNumber&gt;VP.057488&lt;/dwc:catalogNumber&gt;
-  &lt;dwc:individualCount&gt;1&lt;/dwc:individualCount&gt;
-  &lt;dwc:locationID xsi:nil=&quot;true&quot;/&gt;
-  &lt;dwc:continent&gt;North America&lt;/dwc:continent&gt;
-  &lt;dwc:country&gt;United States&lt;/dwc:country&gt;
-  &lt;dwc:countryCode&gt;USA&lt;/dwc:countryCode&gt;
-  &lt;dwc:stateProvince&gt;Montana&lt;/dwc:stateProvince&gt;
-  &lt;dwc:county&gt;Garfield&lt;/dwc:county&gt;
-  &lt;dwc:scientificName&gt;Tyrannosourus rex&lt;/dwc:scientificName&gt;
-  &lt;dwc:genus&gt;Tyrannosourus&lt;/dwc:genus&gt;
-  &lt;dwc:specificEpithet&gt;rex&lt;/dwc:specificEpithet&gt;
-  &lt;dwc:latestPeriodOrHighestSystem&gt;Cretaceous&lt;/dwc:latestPeriodOrHighestSystem&gt;
-  &lt;dwc:latestEonOrHighestEonothem&gt;Late Cretaceous&lt;/dwc:latestEonOrHighestEonothem&gt;
+  &lt;dwc:scientificName&gt;Ctenomys sociabilis&lt;/dwc:scientificName&gt;
+  &lt;dwc:acceptedNameUsage&gt;Ctenomys sociabilis Pearson and Christie, 1985&lt;/dwc:acceptedNameUsage&gt;
+  &lt;dwc:parentNameUsage&gt;Ctenomys Blainville, 1826&lt;/dwc:parentNameUsage&gt;
+  &lt;dwc:higherClassification&gt;Animalia; Chordata; Vertebrata; Mammalia; Theria; Eutheria; Rodentia; Hystricognatha; Hystricognathi; Ctenomyidae; Ctenomyini; Ctenomys&lt;/dwc:higherClassification&gt;
+  &lt;dwc:kingdom&gt;Animalia&lt;/dwc:kingdom&gt;
+  &lt;dwc:phylum&gt;Chordata&lt;/dwc:phylum&gt;
+  &lt;dwc:class&gt;Mammalia&lt;/dwc:class&gt;
+  &lt;dwc:order&gt;Rodentia&lt;/dwc:order&gt;
+  &lt;dwc:family&gt;Ctenomyidae&lt;/dwc:family&gt;
+  &lt;dwc:genus&gt;Ctenomys&lt;/dwc:genus&gt;
+  &lt;dwc:specificEpithet&gt;sociabilis&lt;/dwc:specificEpithet&gt;
+  &lt;dwc:taxonRank&gt;species&lt;/dwc:taxonRank&gt;
+  &lt;dwc:scientificNameAuthorship&gt;Pearson and Christie, 1985&lt;/dwc:scientificNameAuthorship&gt;
+  &lt;dwc:nomenclaturalCode&gt;ICZN&lt;/dwc:nomenclaturalCode&gt;
+  &lt;dwc:namePublishedIn&gt;Pearson O. P., and M. I. Christie. 1985. Historia Natural, 5(37):388&lt;/dwc:namePublishedIn&gt;
+  &lt;dwc:taxonomicStatus&gt;valid&lt;/dwc:taxonomicStatus&gt;
+<b>  &lt;dwc:dynamicProperties&gt;iucnStatus=vulnerable; distribution=Neuquen, Argentina&lt;/dwc:dynamicProperties&gt; </b>
  &lt;/SimpleDarwinRecord&gt;
 &lt;/SimpleDarwinRecordSet&gt;
 </pre>
 <P>
-If you were using just CSV text files to exchange information then 
-you might be tempted to just add the new fields to the files. This approach suffers most of the same problems as 
-payloading - no one aside from those with whom you communicated would know what those new fields were or how to use 
-them. Sharing in this way via XML would be an even bigger problem, because the <i>Simple Darwin Core XML Schema</i> 
-[<A href="../../xsd/tdwg_dwc_simple.xsd">SIMPLEXMLSCHEMA</a>] defines the terms that it supports and the new 
-fields would not correspond with any terms understood by the schema. In other words, the XML with your fields in it
-would not be a valid <i>Simple Darwin Core</i> XML document. 
+If you were using just CSV text files to exchange information, then you might be tempted to just add the new fields 
+to the files. This approach suffers most of the same problems as payloading - no one aside from those with whom you 
+communicated would know what those new fields were or how to use them. Sharing in this way via XML would be an even 
+bigger problem, because the <i>Simple Darwin Core XML Schema</i> [<A href="../../xsd/tdwg_dwc_simple.xsd">SIMPLEXMLSCHEMA</a>] 
+defines the terms that it supports and the new fields would not correspond with any terms understood by the schema. 
+In other words, the XML with your fields in it would not be a valid <i>Simple Darwin Core</i> XML document. 
 <P>
-So, if you really need to extend the capabilities of the Darwin Core, the best first step is to add the terms 
-you need. The mechanisms for pursuing this are explained in the <i>Darwin Core Namespace Policy</i> 
+So, if you really need to extend the capabilities of the Darwin Core, the best first step is to follow the standards 
+process to add the terms you need. The mechanisms for pursuing this are explained in the <i>Darwin Core Namespace Policy</i> 
 [<A href="../namespace/index.htm">NAMESPACEPOLICY</a>]. The process will help to assure that the new terms are well 
 conceived, that they don't conflict with existing terms, and that they are properly defined in the broader context
-of biological diversity. 
+of biological diversity information. 
 
 <!-- Footer -->
 <hr>
@@ -398,4 +396,12 @@ of biological diversity.
    <a rel="license" href="http://creativecommons.org/licenses/by/3.0/us/"> Creative Commons 
    Attribution 3.0 United States License</a>.</p> 
 
-</BODY></HTML>	
+<!-- The following is used to register Google Analytics for Darwin Core --> 
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"> 
+</script> 
+<script type="text/javascript"> 
+_uacct = "UA-386033-4";
+urchinTracker();
+</script> 
+
+</BODY></HTML>
