@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <xs:schema version="0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"
     targetNamespace="http://rs.tdwg.org/dwc/xsd/simpledarwincore/"
     xmlns:dcterms="http://purl.org/dc/terms/"
@@ -9,18 +9,18 @@
     
     <xs:annotation>
         <xs:documentation>
-            This schema defines Simple Darwin Core records and record sets using the
-            terms from namespace http://rs.tdwg.org/dwc/terms/. This schema allows the 
-            terms listed to appear exactly once in any order.
+            This schema defines Simple Darwin Core records and record sets using the 
+            terms from the namespace http://rs.tdwg.org/dwc/terms/. This schema is extensible, but 
+            requires the terms listed to appear no more than once in a record, and in the order given, 
+            though no given term is required to appear in the sequence. Any new term can be added 
+            following the sequence, in the Extension element. 
         </xs:documentation>
     </xs:annotation>
     
     <xs:element name="SimpleDarwinRecordSet" >
         <xs:annotation>
-            <xs:documentation>Simple container to encode multiple darwin core records 
-                that have no notion of which class they are. They can therefore represent 
-                a taxon, an observation or just a locality, for example.
-            </xs:documentation>
+            <xs:documentation>Simple container to encode multiple darwin core records that have no notion of which class they are.
+            They can therefore represent a taxon, an observation or just a locality, for example.</xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:sequence>
@@ -28,11 +28,10 @@
             </xs:sequence>
         </xs:complexType>
     </xs:element>
-    
-    <!-- SAMPLE domain -->
+
     <xs:element name="SimpleDarwinRecord">
         <xs:complexType>
-            <xs:all>
+            <xs:sequence>
                 <!-- Record-level terms -->
                 <xs:element ref="dcterms:type" minOccurs="0"/>
                 <xs:element ref="dcterms:modified" minOccurs="0"/>
@@ -196,7 +195,17 @@
                 <xs:element ref="dwc:taxonomicStatus" minOccurs="0"/>
                 <xs:element ref="dwc:nomenclaturalStatus" minOccurs="0"/>
                 <xs:element ref="dwc:taxonRemarks" minOccurs="0"/>
-            </xs:all>
+                <xs:element ref="dwr:Extension" minOccurs="0"/>
+            </xs:sequence>
         </xs:complexType>
     </xs:element>
+
+    <xs:element name="Extension">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:any processContents="lax" namespace="##other" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
 </xs:schema>

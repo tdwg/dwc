@@ -13,11 +13,11 @@
 <META name="DC.contributor" content="Renato De Giovanni (CRIA)"/>
 <META name="DC.contributor" content="Tim Robertson (GBIF)"/>
 <META name="DC.contributor" content="Dave Vieglais (KUNHM)"/>
-<META name="DC.modified" content="2009-10-08"/>
+<META name="DC.modified" content="2009-12-07"/>
 <META name="DC.dateAccepted" content="2009-02-12"/>
 <META name="DC.format" content="text/html"/>
-<META name="DC.identifier" content="http://rs.tdwg.org/dwc/2009-09-23/terms/guides/xml"/>
-<META name="DC.replaces" content="http://rs.tdwg.org/dwc/2009-07-06/terms/guides/xml/"/>
+<META name="DC.identifier" content="http://rs.tdwg.org/dwc/2009-12-07/terms/guides/xml"/>
+<META name="DC.replaces" content="http://rs.tdwg.org/dwc/2009-09-23/terms/guides/xml/"/>
 <META name="DC.publisher" content="Biodiversity Information Standards TDWG"/>
 <META name="DC.rights" content=""/>
 <META name="DC.accessRights" content="public"/>
@@ -83,7 +83,7 @@
 </TR>
 <TR>
 <TH>Date Modified:</TH>
-<TD>2009-10-08</TD>
+<TD>2009-12-07</TD>
 </TR>
 <TR>
 <TH>Abstract:</TH>
@@ -107,14 +107,14 @@
 </TR>
 <TR>
 <TH>Identifier:</TH>
-<TD>http://rs.tdwg.org/dwc/2009-09-23/terms/guides/xml/</TD>
+<TD>http://rs.tdwg.org/dwc/2009-12-07/terms/guides/xml/</TD>
 </TR>
 <TR><TH>Latest Version:</TH>
 <TD><A href="http://rs.tdwg.org/dwc/terms/guides/xml/index.htm">http://rs.tdwg.org/dwc/terms/guides/xml/</A></TD>
 </TR>
 <TR>
 <TH>Replaces:</TH>
-<TD><a href="http://rs.tdwg.org/dwc/2009-07-06/terms/guides/xml/index.htm">http://rs.tdwg.org/dwc/2009-07-06/terms/guides/xml/</A></TD>
+<TD><a href="http://rs.tdwg.org/dwc/2009-09-23/terms/guides/xml/index.htm">http://rs.tdwg.org/dwc/2009-09-23/terms/guides/xml/</A></TD>
 </TR>
 <TR>
 <TH>Document Status:</TH>
@@ -255,9 +255,10 @@ in a spreadsheet).  It is meant to accommodate all properties except those that 
 for the rationale behind this schema.
 <P>
 Occurrence, Taxon, Event, and Location records can be constructed using an appropriate 
-values of <a href="../../index.htm#dcterms:type">dcterms:type</a> (which is controlled by the <i>Darwin Core Type vocabulary</i> 
-[<A href="../../type-vocabulary/index.htm">DWC-TYPE</a>]) to describe the <i>Class</i> that is the root of the record. Use the 
-<a href="../../index.htm#basisOfRecord">basisOfRecord</a> (having a separate controlled vocabulary) to describe the specific type of 
+values of <a href="../../index.htm#dcterms:type">dcterms:type</a> (which is controlled by the <i>Dublin Core Type Vocabulary</i> 
+[<A href="http://dublincore.org/documents/dcmi-type-vocabulary/">DCMI-TYPE</a>]) to describe the <i>Class</i> that is the root of the record. Use the 
+<a href="../../index.htm#basisOfRecord">basisOfRecord</a> (having a separate controlled vocabulary, Darwin Core Type Vocabulary 
+[<A href="../../type-vocabulary/index.htm">DWC-TYPE</a>]) to describe the specific type of 
 record (various types of specimens, media, taxon records, etc.).
 <P>
 Following is a brief example of an XML document for a single specimen complying with the <i>Simple Darwin Core Schema</i> 
@@ -274,7 +275,7 @@ detail for a single record having a more complete set of elements.
     xmlns:dwc=&quot;http://rs.tdwg.org/dwc/terms/&quot;
     xmlns:dwr=&quot;http://rs.tdwg.org/dwc/xsd/simpledarwincore/&quot;&gt;
     &lt;dwr:SimpleDarwinRecord&gt;
-        &lt;dcterms:type&gt;Occurrence&lt;/dcterms:type&gt;
+        &lt;dcterms:type&gt;PhysicalObject&lt;/dcterms:type&gt;
         &lt;dcterms:modified&gt;2009-02-12T12:43:31&lt;/dcterms:modified&gt;
         &lt;dcterms:rightsHolder&gt;Museum of Vertebrate Zoology&lt;/dcterms:rightsHolder&gt;
         &lt;dcterms:rights&gt;Creative Commons License&lt;/dcterms:rights&gt;
@@ -339,7 +340,7 @@ reuse the location definition here by referring to it via locationID:
         &lt;dwc:locality&gt;25 km al NNE de Bariloche por Ruta 40 (=237)&lt;/dwc:locality&gt;
     &lt;/dcterms:Location&gt;
     &lt;dwc:Occurrence&gt;
-        &lt;dcterms:type&gt;Occurrence&lt;/dcterms:type&gt;
+        &lt;dcterms:type&gt;PhysicalObject&lt;/dcterms:type&gt;
         &lt;dcterms:modified&gt;2009-02-12T12:43:31&lt;/dcterms:modified&gt;
         &lt;dcterms:rightsHolder&gt;Museum of Vertebrate Zoology&lt;/dcterms:rightsHolder&gt;
         &lt;dcterms:rights&gt;Creative Commons License&lt;/dcterms:rights&gt;
@@ -380,7 +381,7 @@ reuse the location definition here by referring to it via locationID:
       &lt;dwc:identificationID&gt;http://guid.mvz.org/identifications/94752&lt;/dwc:identificationID&gt;
     &lt;/dwc:Taxon&gt;
     &lt;dwc:Occurrence&gt;
-        &lt;dcterms:type&gt;Occurrence&lt;/dcterms:type&gt;
+        &lt;dcterms:type&gt;PhysicalObject&lt;/dcterms:type&gt;
         &lt;dcterms:modified&gt;2009-02-12T12:43:31&lt;/dcterms:modified&gt;
         &lt;dcterms:rightsHolder&gt;Museum of Vertebrate Zoology&lt;/dcterms:rightsHolder&gt;
         &lt;dcterms:rights&gt;Creative Commons License&lt;/dcterms:rights&gt;
@@ -451,7 +452,7 @@ Here is different example demonstrating area count observations for events on tw
     &lt;/dwc:Event&gt;
     &lt;dwc:Occurrence&gt;
       &lt;dwc:occurrenceID&gt;urn:catalog:AUDCLO:EBIRD:OBS64515288&lt;/dwc:occurrenceID&gt;
-      &lt;dcterms:type&gt;Occurrence&lt;/dcterms:type&gt;
+      &lt;dcterms:type&gt;Event&lt;/dcterms:type&gt;
       &lt;dcterms:modified&gt;2009-02-17T07:33:04Z&lt;/dcterms:modified&gt;
       &lt;dcterms:rightsHolder&gt;Avian Knowledge Network&lt;/dcterms:rightsHolder&gt;
       &lt;dcterms:rights&gt;Creative Commons License&lt;/dcterms:rights&gt;
@@ -470,7 +471,7 @@ Here is different example demonstrating area count observations for events on tw
     &lt;/dwc:Taxon&gt;
     &lt;dwc:Occurrence&gt;
       &lt;dwc:occurrenceID&gt;urn:catalog:AUDCLO:EBIRD:OBS64515286&lt;/dwc:occurrenceID&gt;
-      &lt;dcterms:type&gt;Occurrence&lt;/dcterms:type&gt;
+      &lt;dcterms:type&gt;Event&lt;/dcterms:type&gt;
       &lt;dcterms:modified&gt;2009-02-17T07:33:04Z&lt;/dcterms:modified&gt;
       &lt;dcterms:rightsHolder&gt;Avian Knowledge Network&lt;/dcterms:rightsHolder&gt;
       &lt;dcterms:rights&gt;Creative Commons License&lt;/dcterms:rights&gt;
@@ -495,7 +496,7 @@ Here is different example demonstrating area count observations for events on tw
     &lt;/dwc:Event&gt;
     &lt;dwc:Occurrence&gt;
       &lt;dwc:occurrenceID&gt;urn:catalog:AUDCLO:EBIRD:OBS64515333&lt;/dwc:occurrenceID&gt;
-      &lt;dcterms:type&gt;Occurrence&lt;/dcterms:type&gt;
+      &lt;dcterms:type&gt;Event&lt;/dcterms:type&gt;
       &lt;dcterms:modified&gt;2009-02-17T07:33:04Z&lt;/dcterms:modified&gt;
       &lt;dcterms:rightsHolder&gt;Avian Knowledge Network&lt;/dcterms:rightsHolder&gt;
       &lt;dcterms:rights&gt;Creative Commons License&lt;/dcterms:rights&gt;
@@ -514,7 +515,7 @@ Here is different example demonstrating area count observations for events on tw
     &lt;/dwc:Taxon&gt;
     &lt;dwc:Occurrence&gt;
       &lt;dwc:occurrenceID&gt;urn:catalog:AUDCLO:EBIRD:OBS64515331&lt;/dwc:occurrenceID&gt;
-      &lt;dcterms:type&gt;Occurrence&lt;/dcterms:type&gt;
+      &lt;dcterms:type&gt;Event&lt;/dcterms:type&gt;
       &lt;dcterms:modified&gt;2009-02-17T07:33:04Z&lt;/dcterms:modified&gt;
       &lt;dcterms:rightsHolder&gt;Avian Knowledge Network&lt;/dcterms:rightsHolder&gt;
       &lt;dcterms:rights&gt;Creative Commons License&lt;/dcterms:rights&gt;

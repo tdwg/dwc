@@ -7,7 +7,7 @@
  xsi:schemaLocation="http://rs.tdwg.org/dwc/dwcrecord/ http://rs.tdwg.org/dwc/xsd/tdwg_dwc_simple.xsd">
  <SimpleDarwinRecord>
   <dwc:occurrenceID>urn:catalog:YPM:VP.057488</dwc:occurrenceID>
-  <dc:type>Occurrence</dc:type>
+  <dc:type>PhysicalObject</dc:type>
   <dc:modified>2009-02-12T14:22Z</dc:modified>
   <dc:language>en</dc:language>
   <dwc:basisOfRecord>FossilSpecimen</dwc:basisOfRecord>

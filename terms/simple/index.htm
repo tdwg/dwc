@@ -13,11 +13,11 @@
 <META name="DC.contributor" content="Renato De Giovanni (CRIA)"/>
 <META name="DC.contributor" content="Tim Robertson (GBIF)"/>
 <META name="DC.contributor" content="Dave Vieglais (KUNHM)"/>
-<META name="DC.modified" content="2009-10-08"/>
+<META name="DC.modified" content="2009-12-07"/>
 <META name="DC.dateAccepted" content="2009-04-21"/>
 <META name="DC.format" content="text/html"/>
-<META name="DC.identifier" content="http://rs.tdwg.org/dwc/docs/2009-09-23/"/>
-<META name="DC.replaces" content="http://rs.tdwg.org/dwc/docs/2009-07-06/"/>
+<META name="DC.identifier" content="http://rs.tdwg.org/dwc/docs/2009-12-07/"/>
+<META name="DC.replaces" content="http://rs.tdwg.org/dwc/docs/2009-09-23/"/>
 <META name="DC.publisher" content="Biodiversity Information Standards TDWG"/>
 <META name="DC.rights" content=""/>
 <META name="DC.accessRights" content="public"/>
@@ -81,7 +81,7 @@
     </TR>
     <TR>
       <TH>Date Modified:</TH>
-      <TD>2009-10-08</TD>
+      <TD>2009-12-07</TD>
     </TR>
     <TR>
       <TH>Abstract:</TH>
@@ -105,7 +105,7 @@
     </TR>
     <TR>
       <TH>Identifier:</TH>
-      <TD>http://rs.tdwg.org/dwc/2009-09-23/terms/simple/</TD>
+      <TD>http://rs.tdwg.org/dwc/2009-12-07/terms/simple/</TD>
     </TR>
     <TR>
       <TH>Latest Version:</TH>
@@ -113,7 +113,7 @@
     </TR>
     <TR>
       <TH>Replaces:</TH>
-      <TD><A href="http://rs.tdwg.org/dwc/2009-07-06/terms/simple/index.htm">http://rs.tdwg.org/dwc/2009-07-06/terms/simple/</A></TD>
+      <TD><A href="http://rs.tdwg.org/dwc/2009-09-23/terms/simple/index.htm">http://rs.tdwg.org/dwc/2009-09-23/terms/simple/</A></TD>
     </TR>
     <TR>
       <TH>Document Status:</TH>
@@ -166,27 +166,22 @@ There are just a few general guiding principles on how to make the best use of t
 <ol>
 <li>Any Darwin Core term name can be used as a field name.</li>
 <li>No field name may be repeated in a record.</li>
-<li>Do not use a Class (<a href="../index.htm#Dataset">Dataset</a>, 
-<a href="../index.htm#Occurrence">Occurrence</a>, 
+<li>Do not use a <i>Class</i> (<a href="../index.htm#Occurrence">Occurrence</a>, 
 <a href="../index.htm#Event">Event</a>, 
 <a href="../index.htm#dcterms:Location">Location</a>, 
 <a href="../index.htm#GeologicalContext">GeologicalContext</a>,
 <a href="../index.htm#Identification">Identification</a>, 
 <a href="../index.htm#Taxon">Taxon</a>) as a field.</li>
-<li>Support (provide data in) as many fields as you can.</li>
-<li>Use the <a href="../index.htm#dcterms:type">dcterms:type</a> field to say what class the record represents 
-(<a href="../index.htm#Occurrence">Occurrence</a>, 
-<a href="../index.htm#Event">Event</a>, 
-<a href="../index.htm#dcterms:Location">Location</a>, 
-<a href="../index.htm#Taxon">Taxon</a>).</li>
-
-<li>Use the <a href="../index.htm#basisOfRecord">basisOfRecord</a> field to say specifically what kind of record it is 
-(PreservedSpecimen, FossilSpecimen, LivingSpecimen, HumanObservation, MachineObservation, StillImage, MovingImage, Sound,
-TaxonName, NomenclaturalAct, TaxonNameUsage).</li>
-<li>Populate a field with data that match the definition of the field.</li>
+<li>Provide data in as many fields as you can.</li>
+<li>Use the <a href="../index.htm#dcterms:type">dcterms:type</a> field to say what Dublin Core type 
+(PhysicalObject, StillImage, MovingImage, Sound) the record represents, if possible.</li>
+<li>Use the <a href="../index.htm#basisOfRecord">basisOfRecord</a> field to say what Darwin Core type 
+(PreservedSpecimen, FossilSpecimen, LivingSpecimen, HumanObservation, MachineObservation, NomenclaturalChecklist, Taxon, Occurrence, Location, Event) the record represents.</li>
+<li>Populate fields with data that match the definition of the field.</li>
 <li>Use the controlled vocabulary for the values of fields that recommend them.</li>
 <li>If data are withheld, use <a href="../index.htm#informationWithheld">informationWithheld</a> to say so.</li>
-<li>If data are shared in lower quality than the original, use <a href="../index.htm#dataGeneralizations">dataGeneralizations</a> to say so.</li>
+<li>If data are shared in lower quality than the original, use <a href="../index.htm#dataGeneralizations">dataGeneralizations</a> 
+to say so.</li>
 </ol>
 
 Every field in the <i>Simple Darwin Core</i> may appear either once or not at all in a single record - 
@@ -273,7 +268,7 @@ The <i>XML Guide</i> [<A href="../guides/xml/index.htm">XMLSCHEMAGUIDE</a>] desc
 data based on Darwin Core terms. Looking at the <i>Simple Darwin Core XML Schema</i> 
 [<A href="../../xsd/tdwg_dwc_simple.xsd">SIMPLEXMLSCHEMA</a>] using the <i>XML Guide</i> as a reference
 you will be able to see that the schema supports the notion of a <i>SimpleDarwinRecord</i>, which is just a grouping of up 
-to one of each of the Darwin Core terms that are Properties (not Classes and not Type Vocabulary terms). The following example 
+to one of each of the Darwin Core terms that are <i>Properties</i> (not <i>Classes</i> and not <i>Type Vocabulary</i> terms). The following example 
 shows a <i>SimpleDarwinRecordSet</i> containing one <i>SimpleDarwinRecord</i> for a <i>Taxon</i>:
 
 <pre class="example">
@@ -285,9 +280,9 @@ shows a <i>SimpleDarwinRecordSet</i> containing one <i>SimpleDarwinRecord</i> fo
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
  xsi:schemaLocation="http://rs.tdwg.org/dwc/dwcrecord/ http://rs.tdwg.org/dwc/xsd/tdwg_dwc_simple.xsd"&gt;
  &lt;SimpleDarwinRecord&gt;
-  &lt;dc:type&gt;Taxon&lt;/dc:type&gt;
   &lt;dc:modified&gt;2009-09-22T09:49Z&lt;/dc:modified&gt;
   &lt;dc:language&gt;en&lt;/dc:language&gt;
+  &lt;dwc:basisOfRecord&gt;Taxon&lt;/dwc:basisOfRecord&gt;
   &lt;dwc:scientificNameID&gt;http://research.calacademy.org/research/ichthyology/catalog/fishcatget.asp?spid=53548&lt;/dwc:scientificNameID&gt;
   &lt;dwc:acceptedNameUsageID&gt;http://research.calacademy.org/research/ichthyology/catalog/fishcatget.asp?spid=22010&lt;/dwc:acceptedNameUsageID&gt;
   &lt;dwc:originalNameUsageID&gt;http://research.calacademy.org/research/ichthyology/catalog/fishcatget.asp?spid=53548&lt;/dwc:originalNameUsageID&gt;
@@ -317,10 +312,10 @@ shows a <i>SimpleDarwinRecordSet</i> containing one <i>SimpleDarwinRecord</i> fo
 &lt;/SimpleDarwinRecordSet&gt;
 </pre>
 <P>
-The <i>SimpleDarwinRecord</i> acts as a Class in
+The <i>SimpleDarwinRecord</i> acts as a <i>Class</i> in
 implementation, because all of the terms belong to it. The <i>Simple Darwin Core</i> schema has just one other level of 
 structure, the <i>SimpleDarwinRecordSet</i>, which is a grouping of one or more <i>SimpleDarwinRecords</i>. The 
-<i>SimpleDarwinRecordSet</i> acts as a Class to define a data set during implementation.
+<i>SimpleDarwinRecordSet</i> acts as a <i>Class</i> to define a data set during implementation.
 
 <A name="domore" id="domore"></A> 
 <h3>1.6 Doing More with Simple Darwin Core</h3>
@@ -350,9 +345,9 @@ your data, even if there might be problems with people using it reliably.
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
  xsi:schemaLocation="http://rs.tdwg.org/dwc/dwcrecord/ http://rs.tdwg.org/dwc/xsd/tdwg_dwc_simple.xsd"&gt;
  &lt;SimpleDarwinRecord&gt;
-  &lt;dc:type&gt;Taxon&lt;/dc:type&gt;
   &lt;dc:modified&gt;2009-02-12T14:22Z&lt;/dc:modified&gt;
   &lt;dc:language&gt;en&lt;/dc:language&gt;
+  &lt;dwc:basisOfRecord&gt;Taxon&lt;/dwc:basisOfRecord&gt;
   &lt;dwc:scientificName&gt;Ctenomys sociabilis&lt;/dwc:scientificName&gt;
   &lt;dwc:acceptedNameUsage&gt;Ctenomys sociabilis Pearson and Christie, 1985&lt;/dwc:acceptedNameUsage&gt;
   &lt;dwc:parentNameUsage&gt;Ctenomys Blainville, 1826&lt;/dwc:parentNameUsage&gt;

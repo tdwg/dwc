@@ -24,7 +24,7 @@
     </dwc:Event>
     <dwc:Occurrence>
       <dwc:occurrenceID>urn:catalog:AUDCLO:EBIRD:OBS64515288</dwc:occurrenceID>
-      <dcterms:type>Occurrence</dcterms:type>
+      <dcterms:type>Event</dcterms:type>
       <dcterms:modified>2009-02-17T07:33:04Z</dcterms:modified>
       <dcterms:rightsHolder>Avian Knowledge Network</dcterms:rightsHolder>
       <dcterms:rights>Creative Commons License</dcterms:rights>
@@ -43,7 +43,7 @@
     </dwc:Taxon>
     <dwc:Occurrence>
       <dwc:occurrenceID>urn:catalog:AUDCLO:EBIRD:OBS64515286</dwc:occurrenceID>
-      <dcterms:type>Occurrence</dcterms:type>
+      <dcterms:type>Event</dcterms:type>
       <dcterms:modified>2009-02-17T07:33:04Z</dcterms:modified>
       <dcterms:rightsHolder>Avian Knowledge Network</dcterms:rightsHolder>
       <dcterms:rights>Creative Commons License</dcterms:rights>
@@ -68,7 +68,7 @@
     </dwc:Event>
     <dwc:Occurrence>
       <dwc:occurrenceID>urn:catalog:AUDCLO:EBIRD:OBS64515333</dwc:occurrenceID>
-      <dcterms:type>Occurrence</dcterms:type>
+      <dcterms:type>Event</dcterms:type>
       <dcterms:modified>2009-02-17T07:33:04Z</dcterms:modified>
       <dcterms:rightsHolder>Avian Knowledge Network</dcterms:rightsHolder>
       <dcterms:rights>Creative Commons License</dcterms:rights>
@@ -87,7 +87,7 @@
     </dwc:Taxon>
     <dwc:Occurrence>
       <dwc:occurrenceID>urn:catalog:AUDCLO:EBIRD:OBS64515331</dwc:occurrenceID>
-      <dcterms:type>Occurrence</dcterms:type>
+      <dcterms:type>Event</dcterms:type>
       <dcterms:modified>2009-02-17T07:33:04Z</dcterms:modified>
       <dcterms:rightsHolder>Avian Knowledge Network</dcterms:rightsHolder>
       <dcterms:rights>Creative Commons License</dcterms:rights>

@@ -26,7 +26,7 @@
         <dwc:locationID>http://guid.mvz.org/sites/arg/127</dwc:locationID>
     </dwc:Event>
     <dwc:Occurrence>
-        <dcterms:type>Occurrence</dcterms:type>
+        <dcterms:type>PhysicalObject</dcterms:type>
         <dcterms:modified>2009-02-12T12:43:31</dcterms:modified>
         <dcterms:rightsHolder>Museum of Vertebrate Zoology</dcterms:rightsHolder>
         <dcterms:rights>Creative Commons License</dcterms:rights>
@@ -67,7 +67,7 @@
       <dwc:identificationID>http://guid.mvz.org/identifications/94752</dwc:identificationID>
     </dwc:Taxon>
     <dwc:Occurrence>
-        <dcterms:type>Occurrence</dcterms:type>
+        <dcterms:type>PhysicalObject</dcterms:type>
         <dcterms:modified>2009-02-12T12:43:31</dcterms:modified>
         <dcterms:rightsHolder>Museum of Vertebrate Zoology</dcterms:rightsHolder>
         <dcterms:rights>Creative Commons License</dcterms:rights>

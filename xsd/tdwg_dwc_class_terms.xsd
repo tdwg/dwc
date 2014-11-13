@@ -6,8 +6,9 @@
     
     <xs:annotation>
         <xs:documentation>
-            This schema redefines all darwin core classes to disallow compound objects, i.e. within a class no other nested class is allowed.
-            It allows properties to occurr in any order and as many times as needed.
+            This schema redefines all darwin core classes to disallow compound 
+            objects - within a class no other nested class is allowed. It 
+            allows properties to occur in any order and as many times as needed.
         </xs:documentation>
     </xs:annotation>
 

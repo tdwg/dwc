@@ -9,8 +9,7 @@
 xmlns:dcterms="http://purl.org/dc/terms/" 
 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
 xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-<
-rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/attributes">
+<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/attributes">
 <dcterms:title xml:lang="en-US">Darwin Core attributes to describe terms in the http://rs.tdwg.org/dwc/terms/ (dwcterms) namespace</dcterms:title>
 <rdfs:comment>The attributes here are those not found in tdwg/Common, dcterms, rdf, or rdfs, but that are required to fully describe the terms in the dwcterms namespace.</rdfs:comment>
 <dcterms:publisher xml:lang="en-US">BiodiversityInformation Standards (TDWG)</dcterms:publisher>
@@ -20,7 +19,7 @@ rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/attributes">
 <!-- attribute RDF goes here -->
 
 <!-- status --> 
-<rdf:Description rdf:ID="status" rdf:about="http://rs.tdwg.org/dwc/terms/attributes/status">
+<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/attributes/status">
 	<rdfs:label xml:lang="en-US">Status</rdfs:label>
 	<dcterms:description xml:lang="en-US">Used to indicate if the term is recommended for use or if it is only of historical significance.</dcterms:description>
 	<rdfs:comment>Values for this term should be either "recommended" or "historical".</rdfs:comment> 
@@ -32,7 +31,7 @@ rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/attributes">
 </rdf:Description>
 
 <!-- decision --> 
-<rdf:Description rdf:ID="decision" rdf:about="http://rs.tdwg.org/dwc/terms/attributes/decision">
+<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/attributes/decision">
 	<rdfs:label xml:lang="en-US">Decision</rdfs:label>
 	<dcterms:description xml:lang="en-US">Used to reference the formal decision that resulted in this version of the term.</dcterms:description>
 	<rdfs:comment>Example: "http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2009-01-20_1"</rdfs:comment> 
@@ -44,7 +43,7 @@ rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/attributes">
 </rdf:Description>
 
 <!-- abcdEquivalence --> 
-<rdf:Description rdf:ID="abcdEquivalence" rdf:about="http://rs.tdwg.org/dwc/terms/attributes/abcdEquivalence">
+<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/attributes/abcdEquivalence">
 	<rdfs:label xml:lang="en-US">ABCD Equivalence</rdfs:label>
 	<dcterms:description xml:lang="en-US">Used to show the xpath(s) to the equivalent term(s) in the current version of the Access to Biological Collections Data (ABCD) schema.</dcterms:description>
 	<rdfs:comment>Currently mapped to ABCD 2.06b</rdfs:comment> 
@@ -56,7 +55,7 @@ rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/attributes">
 </rdf:Description>
 
 <!-- organizedInClass --> 
-<rdf:Description rdf:ID="organizedInClass" rdf:about="http://rs.tdwg.org/dwc/terms/attributes/organizedInClass">
+<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/attributes/organizedInClass">
 	<rdfs:label xml:lang="en-US">Organized in Class</rdfs:label>
 	<dcterms:description xml:lang="en-US">Used to organize properties within classes for easier human understanding.</dcterms:description>
 	<rdfs:comment>Does not imply domain or range membership in the class.</rdfs:comment> 

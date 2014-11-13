@@ -13,11 +13,11 @@
 <meta name="DC.contributor" content="Markus Döring (GBIF)"/>
 <meta name="DC.contributor" content="Renato De Giovanni (CRIA)"/>
 <meta name="DC.contributor" content="Dave Vieglais (KUNHM)"/>
-<meta name="DC.modified" content="2009-10-08"/>
+<meta name="DC.modified" content="2009-12-07"/>
 <meta name="DC.dateAccepted" content="2009-02-12"/>
 <meta name="DC.format" content="text/html"/>
-<meta name="DC.identifier" content="http://rs.tdwg.org/dwc/2009-09-23/terms/guides/text"/>
-<meta name="DC.replaces" content="http://rs.tdwg.org/dwc/2009-07-06/terms/guides/text/"/>
+<meta name="DC.identifier" content="http://rs.tdwg.org/dwc/2009-12-07/terms/guides/text"/>
+<meta name="DC.replaces" content="http://rs.tdwg.org/dwc/2009-09-23/terms/guides/text/"/>
 <meta name="DC.publisher" content="Biodiversity Information Standards TDWG"/>
 <meta name="DC.rights" content=""/>
 <meta name="DC.accessRights" content="public"/>
@@ -81,7 +81,7 @@
 </TR>
 <TR>
 <TH>Date Modified:</TH>
-<TD>2009-10-08</TD>
+<TD>2009-12-07</TD>
 </TR>
 <TR>
 <TH>Abstract:</TH>
@@ -105,14 +105,14 @@
 </TR>
 <TR>
 <TH>Identifier:</TH>
-<TD>http://rs.tdwg.org/dwc/2009-09-23/terms/guides/text/</TD>
+<TD>http://rs.tdwg.org/dwc/2009-12-07/terms/guides/text/</TD>
 </TR>
 <TR><TH>Latest Version:</TH>
 <TD><A href="http://rs.tdwg.org/dwc/terms/guides/text/index.htm">http://rs.tdwg.org/dwc/terms/guides/text/</A></TD>
 </TR>
 <TR>
 <TH>Replaces:</TH>
-<TD><a href="http://rs.tdwg.org/dwc/2009-07-06/terms/guides/text/index.htm">http://rs.tdwg.org/dwc/2009-07-06/terms/guides/text/</A></TD>
+<TD><a href="http://rs.tdwg.org/dwc/2009-09-23/terms/guides/text/index.htm">http://rs.tdwg.org/dwc/2009-09-23/terms/guides/text/</A></TD>
 </TR>
 <TR>
 <TH>Document Status:</TH>
@@ -175,8 +175,8 @@ can be described with the following Darwin Core metafile:
 These same data could be understood without the metafile if the the first row of the CSV file contained the term names: 
 <PRE class="example">
 type,institutionCode,collectionCode,catalogNumber,scientificName,individualCount,datasetID
-Occurrence,ANSP,PH,123,"Cryptantha gypsophila Reveal & C.R. Broome",12,urn:lsid:tim.lsid.tdwg.org:collections:1
-Occurrence,ANSP,PH,124,"Buxbaumia piperi",2,urn:lsid:tim.lsid.tdwg.org:collections:1
+PhysicalObject,ANSP,PH,123,"Cryptantha gypsophila Reveal & C.R. Broome",12,urn:lsid:tim.lsid.tdwg.org:collections:1
+PhysicalObject,ANSP,PH,124,"Buxbaumia piperi",2,urn:lsid:tim.lsid.tdwg.org:collections:1
 </PRE>
 	
 <h3>1.2 XML versus <EM>Fielded Text</EM></h3>
@@ -270,14 +270,14 @@ In addition to the general file attributes described below, every extension enti
 					<dl>
 						<dt>Simple Darwin Record</dt>
 						<dd>http://rs.tdwg.org/dwc/xsd/simpledarwincore/SimpleDarwinRecord</dd>
-						<dt>Dataset</dt>
-						<dd>http://rs.tdwg.org/dwc/terms/Dataset</dd>
 						<dt>Occurrence</dt>
 						<dd>http://rs.tdwg.org/dwc/terms/Occurrence</dd>
 						<dt>Event</dt>
 						<dd>http://rs.tdwg.org/dwc/terms/Event</dd>
 						<dt>Location</dt>
 						<dd>http://purl.org/dc/terms/Location</dd>
+						<dt>GeologicalContext</dt>
+						<dd>http://purl.org/dc/terms/GeologicalContext</dd>
 						<dt>Identification</dt>
 						<dd>http://rs.tdwg.org/dwc/terms/Identification</dd>
 						<dt>Taxon</dt>
@@ -552,6 +552,7 @@ most terms. Following is a list of exceptions with recommended data types and ex
 			<tr><td>http://rs.tdwg.org/dwc/terms/decimalLatitude</td><td>xs:double</td><td>Valid values between -90 and +90 inclusive, keep all precision.</td></tr>
 			<tr><td>http://rs.tdwg.org/dwc/terms/decimalLongitude</td><td>xs:double</td><td>Valid values between -180 and +180, keep all precision.</td></tr>
 			<tr><td>http://rs.tdwg.org/dwc/terms/coordinateUncertaintyInMeters</td><td>xs:double, xs:integer</td><td>Example: 30 (0 is not a valid value).</td></tr>
+			<tr><td>http://rs.tdwg.org/dwc/terms/coordinatePrecision</td><td>xs:double</td><td>Examples: Examples: "0.00001" (normal GPS limit for decimal degrees), "0.000278" (nearest second), "0.01667" (nearest minute), "1.0" (nearest degree).</td></tr>
 			<tr><td>http://rs.tdwg.org/dwc/terms/pointRadiusSpatialFit</td><td>xs:double</td><td>Examples: 1 (perfect fit), 1.5708 (circle bounding a square).</td></tr>
 			<tr><td>http://rs.tdwg.org/dwc/terms/footprintSpatialFit</td><td>xs:double</td><td>Example: 0 (false representation), 1.2732 (square bounding a circle).</td></tr>
 			<!-- integer -->

@@ -11,12 +11,17 @@
     <xs:simpleType name="TypeEnum">
         <xs:restriction base="xs:NMTOKEN">
             <!-- Dublin Core -->
-            <xs:enumeration value="Event"/>
             <!-- Darwin Core -->
             <xs:enumeration value="Occurrence"/>
+            <xs:enumeration value="Event"/>
             <xs:enumeration value="Location"/>
             <xs:enumeration value="Taxon"/>
-            <xs:enumeration value="Identification"/>
+            <xs:enumeration value="PreservedSpecimen"/>
+            <xs:enumeration value="FossilSpecimen"/>
+            <xs:enumeration value="LivingSpecimen"/>
+            <xs:enumeration value="HumanObservation"/>
+            <xs:enumeration value="MachineObservation"/>
+            <xs:enumeration value="NomenclaturalChecklist"/>
         </xs:restriction>
     </xs:simpleType>
 
