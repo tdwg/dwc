@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema version="2013-10-22" 
+<xs:schema version="2014-11-08"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     targetNamespace="http://rs.tdwg.org/dwc/xsd/simpledarwincore/"
     xmlns:dcterms="http://purl.org/dc/terms/"
@@ -7,7 +7,6 @@
     xmlns:dwc="http://rs.tdwg.org/dwc/terms/">
     <xs:import namespace="http://rs.tdwg.org/dwc/terms/" schemaLocation="tdwg_dwc_extensions.xsd"/>
     <xs:import namespace="http://purl.org/dc/terms/" schemaLocation="http://dublincore.org/schemas/xmls/qdc/2008/02/11/dcterms.xsd"/>
-    
     <xs:annotation>
         <xs:documentation>
             This schema defines Simple Darwin Core records and record sets using the
@@ -15,7 +14,6 @@
             terms listed to appear exactly once in any order.
         </xs:documentation>
     </xs:annotation>
-    
     <xs:element name="SimpleDarwinRecordSet" >
         <xs:annotation>
             <xs:documentation>Simple container to encode multiple darwin core records 
@@ -29,7 +27,6 @@
             </xs:sequence>
         </xs:complexType>
     </xs:element>
-    
     <xs:element name="SimpleDarwinRecord">
         <xs:complexType>
             <xs:all>
@@ -37,7 +34,7 @@
                 <xs:element ref="dcterms:type" minOccurs="0"/>
                 <xs:element ref="dcterms:modified" minOccurs="0"/>
                 <xs:element ref="dcterms:language" minOccurs="0"/>
-                <xs:element ref="dcterms:rights" minOccurs="0"/>
+                <xs:element ref="dcterms:license" minOccurs="0"/>
                 <xs:element ref="dcterms:rightsHolder" minOccurs="0"/>
                 <xs:element ref="dcterms:accessRights" minOccurs="0"/>
                 <xs:element ref="dcterms:bibliographicCitation" minOccurs="0"/>
@@ -56,10 +53,8 @@
                 <!-- Occurrence terms -->
                 <xs:element ref="dwc:occurrenceID" minOccurs="0"/>
                 <xs:element ref="dwc:catalogNumber" minOccurs="0"/>
-                <xs:element ref="dwc:occurrenceRemarks" minOccurs="0"/>
                 <xs:element ref="dwc:recordNumber" minOccurs="0"/>
                 <xs:element ref="dwc:recordedBy" minOccurs="0"/>
-                <xs:element ref="dwc:individualID" minOccurs="0"/>
                 <xs:element ref="dwc:individualCount" minOccurs="0"/>
                 <xs:element ref="dwc:sex" minOccurs="0"/>
                 <xs:element ref="dwc:lifeStage" minOccurs="0"/>
@@ -69,19 +64,25 @@
                 <xs:element ref="dwc:occurrenceStatus" minOccurs="0"/>
                 <xs:element ref="dwc:preparations" minOccurs="0"/>
                 <xs:element ref="dwc:disposition" minOccurs="0"/>
-                <xs:element ref="dwc:otherCatalogNumbers" minOccurs="0"/>
-                <xs:element ref="dwc:previousIdentifications" minOccurs="0"/>
                 <xs:element ref="dwc:associatedMedia" minOccurs="0"/>
                 <xs:element ref="dwc:associatedReferences" minOccurs="0"/>
-                <xs:element ref="dwc:associatedOccurrences" minOccurs="0"/>
                 <xs:element ref="dwc:associatedSequences" minOccurs="0"/>
                 <xs:element ref="dwc:associatedTaxa" minOccurs="0"/>
+                <xs:element ref="dwc:otherCatalogNumbers" minOccurs="0"/>
+                <xs:element ref="dwc:occurrenceRemarks" minOccurs="0"/>
+                <!-- Organism terms -->
+                <xs:element ref="dwc:organismID" minOccurs="0"/>
+                <xs:element ref="dwc:organismName" minOccurs="0"/>
+                <xs:element ref="dwc:organismScope" minOccurs="0"/>
+                <xs:element ref="dwc:associatedOccurrences" minOccurs="0"/>
+                <xs:element ref="dwc:associatedOrganisms" minOccurs="0"/>
+                <xs:element ref="dwc:previousIdentifications" minOccurs="0"/>
+                <xs:element ref="dwc:organismRemarks" minOccurs="0"/>
                 <!-- MaterialSample terms -->
                 <xs:element ref="dwc:materialSampleID" minOccurs="0"/>
                 <!-- Event terms -->
                 <xs:element ref="dwc:eventID" minOccurs="0"/>
-                <xs:element ref="dwc:samplingProtocol" minOccurs="0"/>
-                <xs:element ref="dwc:samplingEffort" minOccurs="0"/>
+                <xs:element ref="dwc:fieldNumber" minOccurs="0"/>
                 <xs:element ref="dwc:eventDate" minOccurs="0"/>
                 <xs:element ref="dwc:eventTime" minOccurs="0"/>
                 <xs:element ref="dwc:startDayOfYear" minOccurs="0"/>
@@ -91,7 +92,8 @@
                 <xs:element ref="dwc:day" minOccurs="0"/>
                 <xs:element ref="dwc:verbatimEventDate" minOccurs="0"/>
                 <xs:element ref="dwc:habitat" minOccurs="0"/>
-                <xs:element ref="dwc:fieldNumber" minOccurs="0"/>
+                <xs:element ref="dwc:samplingProtocol" minOccurs="0"/>
+                <xs:element ref="dwc:samplingEffort" minOccurs="0"/>
                 <xs:element ref="dwc:fieldNotes" minOccurs="0"/>
                 <xs:element ref="dwc:eventRemarks" minOccurs="0"/>
                 <!-- Location terms -->
@@ -109,27 +111,27 @@
                 <xs:element ref="dwc:municipality" minOccurs="0"/>
                 <xs:element ref="dwc:locality" minOccurs="0"/>
                 <xs:element ref="dwc:verbatimLocality" minOccurs="0"/>
-                <xs:element ref="dwc:verbatimElevation" minOccurs="0"/>
                 <xs:element ref="dwc:minimumElevationInMeters" minOccurs="0"/>
                 <xs:element ref="dwc:maximumElevationInMeters" minOccurs="0"/>
-                <xs:element ref="dwc:verbatimDepth" minOccurs="0"/>
+                <xs:element ref="dwc:verbatimElevation" minOccurs="0"/>
                 <xs:element ref="dwc:minimumDepthInMeters" minOccurs="0"/>
                 <xs:element ref="dwc:maximumDepthInMeters" minOccurs="0"/>
+                <xs:element ref="dwc:verbatimDepth" minOccurs="0"/>
                 <xs:element ref="dwc:minimumDistanceAboveSurfaceInMeters" minOccurs="0"/>
                 <xs:element ref="dwc:maximumDistanceAboveSurfaceInMeters" minOccurs="0"/>
-                <xs:element ref="dwc:locationAccordingTo" minOccurs="0"/>                      
-                <xs:element ref="dwc:locationRemarks" minOccurs="0"/>                      
-                <xs:element ref="dwc:verbatimCoordinates" minOccurs="0"/>
-                <xs:element ref="dwc:verbatimLatitude" minOccurs="0"/>
-                <xs:element ref="dwc:verbatimLongitude" minOccurs="0"/>
-                <xs:element ref="dwc:verbatimCoordinateSystem" minOccurs="0"/>
-                <xs:element ref="dwc:verbatimSRS" minOccurs="0"/>
+                <xs:element ref="dwc:locationAccordingTo" minOccurs="0"/>
+                <xs:element ref="dwc:locationRemarks" minOccurs="0"/>
                 <xs:element ref="dwc:decimalLatitude" minOccurs="0"/>
                 <xs:element ref="dwc:decimalLongitude" minOccurs="0"/>
                 <xs:element ref="dwc:geodeticDatum" minOccurs="0"/>
                 <xs:element ref="dwc:coordinateUncertaintyInMeters" minOccurs="0"/>
                 <xs:element ref="dwc:coordinatePrecision" minOccurs="0"/>
                 <xs:element ref="dwc:pointRadiusSpatialFit" minOccurs="0"/>
+                <xs:element ref="dwc:verbatimCoordinates" minOccurs="0"/>
+                <xs:element ref="dwc:verbatimLatitude" minOccurs="0"/>
+                <xs:element ref="dwc:verbatimLongitude" minOccurs="0"/>
+                <xs:element ref="dwc:verbatimCoordinateSystem" minOccurs="0"/>
+                <xs:element ref="dwc:verbatimSRS" minOccurs="0"/>
                 <xs:element ref="dwc:footprintWKT" minOccurs="0"/>
                 <xs:element ref="dwc:footprintSRS" minOccurs="0"/>
                 <xs:element ref="dwc:footprintSpatialFit" minOccurs="0"/>
@@ -160,13 +162,13 @@
                 <xs:element ref="dwc:bed" minOccurs="0"/>
                 <!-- Identification terms -->
                 <xs:element ref="dwc:identificationID" minOccurs="0"/>
+                <xs:element ref="dwc:identificationQualifier" minOccurs="0"/>
+                <xs:element ref="dwc:typeStatus" minOccurs="0"/>
                 <xs:element ref="dwc:identifiedBy" minOccurs="0"/>
                 <xs:element ref="dwc:dateIdentified" minOccurs="0"/>
                 <xs:element ref="dwc:identificationReferences" minOccurs="0"/>
                 <xs:element ref="dwc:identificationVerificationStatus" minOccurs="0"/>
                 <xs:element ref="dwc:identificationRemarks" minOccurs="0"/>
-                <xs:element ref="dwc:identificationQualifier" minOccurs="0"/>
-                <xs:element ref="dwc:typeStatus" minOccurs="0"/>
                 <!-- Taxon terms -->
                 <xs:element ref="dwc:taxonID" minOccurs="0"/>
                 <xs:element ref="dwc:scientificNameID" minOccurs="0"/>
@@ -202,23 +204,20 @@
                 <xs:element ref="dwc:nomenclaturalStatus" minOccurs="0"/>
                 <xs:element ref="dwc:taxonRemarks" minOccurs="0"/>
                 <xs:element ref="dwr:SimpleDarwinExtensions" minOccurs="0" />
-                </xs:all>
+            </xs:all>
         </xs:complexType>
     </xs:element>
-    
     <xs:element name="SimpleDarwinExtensions">
         <xs:complexType>
             <xs:choice maxOccurs="unbounded">
-                <xs:element ref="dwc:anyClass" />                                
+                <xs:element ref="dwc:anyClass" />
             </xs:choice>
         </xs:complexType>
     </xs:element>
-
     <!-- 
         ANY SIMPLE EXTENSION CLASS
         Extensions implementing this abstract type should follow the simple dwc approach and only allow each term to exist once, using xs:all.
         As extension records always will be tight to a single parent simple dwc record, there is no need to have an implicit resourceID in extension records.        
     -->
     <xs:element name="anyExtension" abstract="true" substitutionGroup="dwc:anyClass"/>
-    
 </xs:schema>

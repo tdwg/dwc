@@ -1,535 +1,1014 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<HTML xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<HEAD>
-<META http-equiv="Content-Type" content="text/html; charset=utf8"/>
-<TITLE>Darwin Core</TITLE>
-<LINK rel="schema.DwC" href="http://rs.tdwg.org/dwc/"/>
+﻿<!DOCTYPE html>
 
-<META name="DC.title" content="Darwin Core"/>
-<META name="DC.description" content="The cover page for the Darwin Core standard."/>
-<META name="DC.subject" content="biodiversity, standards"/>
-<META name="DC.creator" content="Darwin Core Task Group"/>
-<META name="DC.contributor" content="John Wieczorek (MVZ)"/>
-<META name="DC.contributor" content="Markus Döring (GBIF)"/>
-<META name="DC.contributor" content="Renato De Giovanni (CRIA)"/>
-<META name="DC.contributor" content="Tim Robertson (GBIF)"/>
-<META name="DC.contributor" content="Dave Vieglais (KUNHM)"/>
-<META name="DC.dateAccepted" content="2009-02-12"/>
-<META name="DC.replaces" content="http://rs.tdwg.org/dwc/2013-09-23/"/>
-<META name="DC.modified" content="2013-10-25"/>
-<META name="DC.identifier" content="http://rs.tdwg.org/dwc/2013-09-30"/>
-<META name="DC.format" content="text/html"/>
-<META name="DC.publisher" content="Biodiversity Information Standards TDWG"/>
-<META name="DC.rights" content=""/>
-<META name="DC.accessRights" content="public"/>
-<META name="DC.bibliographicCitation" content="Darwin Core. 2013"/>
-<META name="DC.language" content="en"/>
-<LINK rel="meta" href="http://www.tdwg.org/"/>
-<LINK rel="stylesheet" href="./DarwinCore_files/default.css" type="text/css">
-<SCRIPT src="./DarwinCore_files/default.js" type="text/javascript"></SCRIPT>
-</HEAD>
+<html lang="en">
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 
-<BODY>
-<TABLE width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#617394"><TBODY>
-<TD><A href="http://www.tdwg.org"><IMG src="./DarwinCore_files/TDWGlogo_Twiki.gif" width="148" height="89" alt="Biodiversity Information Standards (TDWG) logo"></A></TD>
-<TD width="100%" height="100" align="right" valign="top">
-</TBODY></TABLE>
+  <title>Darwin Core</title>
+  <link href="http://rs.tdwg.org/dwc/" rel="schema.DwC">
+  <meta content="Darwin Core" name="DC.title">
+  <meta content="The cover page for the Darwin Core standard." name=
+  "DC.description">
+  <meta content="biodiversity, standards" name="DC.subject">
+  <meta content="Darwin Core Task Group" name="DC.creator">
+  <meta content="John Wieczorek (MVZ)" name="DC.contributor">
+  <meta content="Markus Döring (GBIF)" name="DC.contributor">
+  <meta content="Renato De Giovanni (CRIA)" name="DC.contributor">
+  <meta content="Tim Robertson (GBIF)" name="DC.contributor">
+  <meta content="Dave Vieglais (KUNHM)" name="DC.contributor">
+  <meta content="2009-02-12" name="DC.dateAccepted">
+  <meta content="http://rs.tdwg.org/dwc/2013-10-25/" name="DC.replaces">
+  <meta content="2014-11-08" name="DC.modified">
+  <meta content="http://rs.tdwg.org/dwc/2014-11-08" name="DC.identifier">
+  <meta content="text/html" name="DC.format">
+  <meta content="Biodiversity Information Standards TDWG" name="DC.publisher">
+  <meta content="http://creativecommons.org/licenses/by/4.0/legalcode" name=
+  "DC.license">
+  <meta content="public" name="DC.accessRights">
+  <meta content="Darwin Core. 2014" name="DC.bibliographicCitation">
+  <meta content="en" name="DC.language">
+  <link href="http://www.tdwg.org/" rel="meta">
+  <link href="./DarwinCore_files/default.css" rel="stylesheet" type="text/css">
+  <script src="./DarwinCore_files/default.js" type="text/javascript"></script>
+</head>
 
-<TABLE width="100%" cellspacing="0" cellpadding="0" border="0">
-  <TBODY>
-    <TR>
-      <TD width="15%" cellspacing="0" cellpadding="0" bgcolor="#617394">
-        <div id="menu">
-          <div id="nav" class="topMenu">
-	    <div class="menuItem level1 highlighted"><a href="./index.htm" onfocus="blurLink(this);">Introduction</a></div>
-	    <div class="subMenu"><div class="menuItem"><a href="#references" onfocus="blurLink(this);">References</a></div></div>
-	    <div class="menuItem level1"><a href="./terms/index.htm" onfocus="blurLink(this);">Quick Reference Guide</a></div>
-	    <div class="menuItem level1"><a href="./terms/simple/index.htm" onfocus="blurLink(this);">Simple Darwin Core</a></div>
-	    <div class="menuItem level1"><a href="./terms/type-vocabulary/index.htm" onfocus="blurLink(this);">Type Vocabulary</a></div>
-	    <div class="separator"><hr/></div>
-	    <div class="menuItem level1"><a href="./terms/namespace/index.htm" onfocus="blurLink(this);">Namespace Policy</a></div>
-	    <div class="menuItem level1"><a href="./terms/guides/xml/index.htm" onfocus="blurLink(this);">XML Guide</a></div>
-	    <div class="menuItem level1"><a href="./terms/guides/text/index.htm" onfocus="blurLink(this);">Text Guide</a></div>
-	    <div class="separator"><hr/></div>
-	    <div class="menuItem level1"><a href="./terms/history/index.htm" onfocus="blurLink(this);">Complete History</a></div>
-	    <div class="menuItem level1"><a href="./terms/history/decisions/index.htm" onfocus="blurLink(this);">Decision History</a></div>
-	    <div class="menuItem level1"><a href="./terms/history/dwctoabcd/index.htm" onfocus="blurLink(this);">Mapping to ABCD</a></div>
-	    <div class="menuItem level1"><a href="./terms/history/versions/index.htm" onfocus="blurLink(this);">Mapping to Old Versions</a></div>
-	    <div class="separator"><hr/></div>
-	    <div class="menuItem level1"><a href="./translations/index.htm" onfocus="blurLink(this);">Translations</a></div>
+<body>
+  <table border="0" cellpadding="0" cellspacing="0" style=
+  "background-color: #617394" width="100%">
+    <tbody>
+      <tr>
+        <td>
+          <a href="http://www.tdwg.org"><img alt=
+          "Biodiversity Information Standards (TDWG) logo" height="89" src=
+          "./DarwinCore_files/TDWGlogo_Twiki.gif" width="148"></a>
+        </td>
+
+        <td align="right" height="100" valign="top" width="100%"></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tbody>
+      <tr>
+        <td style="background-color: #617394" width="15%">
+          <div id="menu">
+            <div class="topMenu" id="nav">
+              <div class="menuItem level1 highlighted">
+                <a href="./index.htm" onfocus=
+                "blurLink(this);">Introduction</a>
+              </div>
+
+              <div class="subMenu">
+                <div class="menuItem">
+                  <a href="#references" onfocus=
+                  "blurLink(this);">References</a>
+                </div>
+              </div>
+
+              <div class="menuItem level1">
+                <a href="./terms/index.htm" onfocus="blurLink(this);">Quick
+                Reference Guide</a>
+              </div>
+
+              <div class="menuItem level1">
+                <a href="./terms/simple/index.htm" onfocus=
+                "blurLink(this);">Simple Darwin Core</a>
+              </div>
+
+              <div class="separator">
+                <hr>
+              </div>
+
+              <div class="menuItem level1">
+                <a href="./terms/namespace/index.htm" onfocus=
+                "blurLink(this);">Namespace Policy</a>
+              </div>
+
+              <div class="menuItem level1">
+                <a href="./terms/guides/text/index.htm" onfocus=
+                "blurLink(this);">Text Guide</a>
+              </div>
+
+              <div class="menuItem level1">
+                <a href="./terms/guides/xml/index.htm" onfocus=
+                "blurLink(this);">XML Guide</a>
+              </div>
+
+              <div class="separator">
+                <hr>
+              </div>
+
+              <div class="menuItem level1">
+                <a href="./terms/history/index.htm" onfocus=
+                "blurLink(this);">Complete History</a>
+              </div>
+
+              <div class="menuItem level1">
+                <a href="./terms/history/decisions/index.htm" onfocus=
+                "blurLink(this);">Decision History</a>
+              </div>
+
+              <div class="menuItem level1">
+                <a href="./terms/history/dwctoabcd/index.htm" onfocus=
+                "blurLink(this);">Mapping to ABCD</a>
+              </div>
+
+              <div class="menuItem level1">
+                <a href="./terms/history/versions/index.htm" onfocus=
+                "blurLink(this);">Mapping to Old Versions</a>
+              </div>
+            </div>
           </div>
-        </div>
-      </TD>
-      <TD>
-        <center><H1>Darwin Core</H1></center>
-<TABLE cellspacing="0" class="docinfo">
-<TBODY>
-<TR>
-<TH>Title:</TH>
-<TD>Darwin Core</TD>
-</TR>
-<TR>
-<TH>Date Issued:</TH>
-<TD>2009-02-12</TD>
-</TR>
-<TR>
-<TH>Date Modified:</TH>
-<TD>2013-10-25</TD>
-</TR>
-<TR>
-<TH>Abstract:</TH>
-<TD>This document is a cover page, an entry-level document to the Darwin Core standard. It describes the purpose of the 
-standard and orients the reader to the documents that cover specific topics within the standard, such as the quick 
-guide to the list of terms.</TD>
-</TR>
-<TR>
-<TH>Contributors:</TH>
-<TD>John Wieczorek (MVZ), Markus Döring (GBIF), Renato De Giovanni (CRIA), Tim Robertson (GBIF), Dave Vieglais (KUNHM)</TD>
-</TR>
-<TR>
-<TH>Legal:</TH>
-<TD>This document is governed by the standard legal, copyright, licensing provisions and disclaimers issued by the Taxonomic Databases Working Group.</TD>
-</TR>
-<TR>
-<TH>Part of TDWG Standard:</TH>
-<TD><a href="http://www.tdwg.org/standards/450/">http://www.tdwg.org/standards/450/</a></TD>
-</TR>
-<TR>
-<TH>Creator:</TH>
-<TD>Darwin Core Task Group</TD>
-</TR>
-<TR>
-<TH>Identifier:</TH>
-<TD>http://rs.tdwg.org/dwc/2013-09-30/</TD>
-</TR>
-<TR><TH>Latest Version:</TH>
-<TD><A href="http://rs.tdwg.org/dwc/index.htm">http://rs.tdwg.org/dwc/</A></TD>
-</TR>
-<TR>
-<TH>Replaces:</TH>
-<TD><A href="http://rs.tdwg.org/dwc/2013-09-23/index.htm">http://rs.tdwg.org/dwc/2013-09-23/</A></TD>
-</TR>
-<TR>
-<TH>Document Status:</TH>
-<TD>Current Standard</TD>
-</TR>
-</TBODY></TABLE>
-      </TD>
-    </TR>
-  </TBODY>
-</TABLE>
+        </td>
 
-<P>
-<A name="introduction" id="introduction"></A> 
-<H2>1. Introduction</H2>
-<P>
-<b>Audience</b>: This document is an introduction to the Darwin Core standard and is meant to provide the background, reasons,
-and basic information about sharing (either as a publisher or user of) biodiversity information. Further details on specific
-aspects of the standard and its use can be found in the pages shown in the Table of Contents in the upper left of every page or in
-the <a href="#references">References</a> section of this page.
-<P>
-<b>What is the Darwin Core?</b> 
-<P>
-The Darwin Core is body of standards. It includes 
-a glossary of terms (in other contexts these might be called properties, 
-elements, fields, columns, attributes, or concepts) intended to facilitate the sharing of information about 
-biological diversity by providing reference definitions, examples, and commentaries. The Darwin Core is primarily 
-based on taxa, their occurrence in nature as documented by observations, specimens, samples, and related information.
-Included are documents describing how these terms are managed, how the set of terms can be extended for new purposes,
-and how the terms can be used. The normative document for the terms [<A href="./rdf/dwctermshistory.rdf">RDF-NORMATIVE</A>] 
-is written in the Resource Description Framework (RDF) and is the definitive resource to understand the term definitions and
-their relationships to each other. The <i>Simple Darwin Core</i> 
-[<A href="./terms/simple/index.htm">SIMPLEDWC</A>] is a specification for one particular way to use the terms - to 
-share data about taxa and their occurrences in a simply structured way - and is probably what is meant if someone 
-suggests to "format your data according to the Darwin Core".
-</P>
-<P> 
-<b>Motivation</b>: The Darwin Core standard was originally conceived to facilitate the discovery, retrieval, and integration of 
-information about modern biological specimens, their spatiotemporal occurrence, and their supporting evidence housed in collections 
-(physical or digital). The Darwin Core today is broader in scope and more versatile. It is meant to provide a stable standard reference for 
-sharing information on biological diversity. As a glossary of terms, the Darwin Core is meant to provide stable semantic 
-definitions with the goal of being maximally reusable in a variety of contexts.
-</P>
-<P>
-<b>Rationale</b>: 
-The Darwin Core is based on the standards developed by the <i>Dublin Core Metadata 
-Initiative</i> [<a href="http://dublincore.org/">DCMI</a>] and should be viewed as an extension of the Dublic Core for 
-biodiversity information. The purpose of these terms is to facilitate data sharing by providing a well-defined
-standard core vocabulary in a flexible framework to minimize the barriers to adoption and to maximize reusability.
-The terms described in this standard are a part of a larger set of vocabularies 
-and technical specifications under development [<a href="http://wiki.tdwg.org/twiki/bin/view/">TDWG-DEV</a>] and 
-maintained by <i>Biodiversity Information Standards (TDWG)</i> [<a href="http://www.tdwg.org/standards/">TDWG-STANDARDS</a>].
-</P>
-<P>
-<b>Guiding principles</b>: Each term has a definition and commentaries that are meant to promote the consistent use
-of the terms across applications and disciplines. Evolving commentaries that discuss, refine, expand, or translate 
-the definitions and examples are referred to through links in the <i>Comments</i> attribute of each term. This means of 
-documentation allows the standard to adapt to new purposes without disrupting existing applications. 
-There is meant to be a clear separation between the terms defined in this standard and the applications that make use 
-of them. For example, though the data types and constraints are not provided in the term definitions, recommendations 
-are made about how to restrict the values where appropriate.  
-</P>
-<P>
-<b>Content</b>: The standard
-consists of a vocabulary of terms (properties, elements, fields, concepts) [<a href="./terms/index.htm">TERMS</a>], 
-the policy governing the maintenance of these terms 
-[<A href="./terms/namespace/index.htm">NAMESPACEPOLICY</a>], the decisions that resulted in changes to terms 
-[<a href="./terms/history/decisions/index.htm">DECISIONS</a>], the complete history of terms including detailed 
-attributes [<A href="./terms/history/index.htm">HISTORY</a>], a <i>Generic Darwin Core XML schema</i> 
-[<A href="./xsd/tdwg_dwcterms.xsd">TERMSXMLSCHEMA</A>] from which other schemas can be constructed, a <i>Simple 
-Darwin Core XML schema</i> 
-[<A href="./xsd/tdwg_dwc_simple.xsd">SIMPLEXMLSCHEMA</A>] as a complete schema ready for use, a schema to allow 
-Darwin Core data transfer in text files [<A href="./text/tdwg_dwc_text.xsd">TEXTSCHEMA</A>], and associated reference 
-schemas for the construction of more structured content. These pages also describe
-mappings between the current standard and pre-standard historical versions <A href="./terms/history/versions/index.htm">[VERSIONS]</A>,
-including mappings <A href="./terms/history/dwctoabcd/index.htm">[DWCTOABCD]</A> to concepts in the <i>Access to Biological 
-Collections Data</i> standard <A href="http://www.tdwg.org/schemas/abcd/2.06">[ABCD]</A>.
+        <td>
+          <center><h1>Darwin Core</h1><center>
 
-<P>
-<b>Extension</b>: Though the Darwin Core is insufficient for the needs of all biological 
-disciplines, it can be adapted to serve new purposes. The 
-Darwin Core can be extended by adding new terms to share additional information. To do so you should be familiar with
-the recommendations and procedures defined in the <i>Darwin Core Namespace Policy</i> 
-[<A href="./terms/namespace/index.htm">NAMESPACEPOLICY</a>]. Basically, before proposing 
-a new term, consider the existing terms in this and other compatible standards to determine if the new concept can be 
-accommodated by a simple revision of the description and comments for an existing term, without losing the 
-existing meaning of that term.
+          <table cellspacing="0" class="docinfo">
+            <tbody>
+              <tr>
+                <th>Title:</th>
 
-<P>
-<b>Participation</b>: To receive notification of activity or participate in discussions about Darwin Core, 
-join the <i>tdwg-content</i> mailing 
-list [<A href="http://lists.tdwg.org/mailman/listinfo/tdwg-content">TDWG-CONTENT</A>] and set up specific 
-<a href="http://code.google.com/p/darwincore/feeds">feeds</a> in the <i>Darwin Core Project</i> 
-[<A href="http://code.google.com/p/darwincore">DWC-PROJECT</a>].
-For discussion or commentary on the definition of recommended terms, consult the link inside the <i>Comment</i> section in the 
-listing for the term in the <i>Quick Reference Guide</i> [<a href="./terms/index.htm">TERMS</a>] or search for the page
-in the <i>Darwin Core Project Wiki</i> [<a href="http://code.google.com/p/darwincore/wiki/TableOfContents?tm=6">DWC-WIKI</a>]. 
-Commentary can be added to any term's wiki page. Similarly, the project site can be used for discussion and development 
-of application schemas that make use of the Darwin Core.
-<P>
-To make a formal request for a change to or addition of a term to the Darwin Core, read and follow the recommendations in the
-<i>Darwin Core Namespace Policy</i> [<A href="./terms/namespace/index.htm">NAMESPACEPOLICY</a>].
-For those who wish to construct and submit as a standard any application profile, such as an XML schema, that extends the 
-capabilities of the Darwin Core, adding new terms to the Darwin Core vocabulary that don't already exist in a compatible 
-vocabulary will be a prerequisite. Consult the
-appropriate guideline, such as the <i>XML Guide</i> [<A href="./terms/guides/xml/index.htm">XMLSCHEMAGUIDE</a>], for information about 
-the construction of a new application profile. The rules of submission of proposed standards can be found in the 
-<i>Biodiversity Information Standards (TDWG)</i> process document [<a href="http://www.tdwg.org/about-tdwg/process/">PROCESS</a>].
+                <td>Darwin Core</td>
+              </tr>
 
-<A name="references" id="references"></A> 
-<H2>2. References</H2>
-<TABLE width="95%" border="0" align="center">
-<TR>
-<TD width="10%"><A name="ABCD">[ABCD]</A></TD>
-<TD width="40%"><A href="http://www.tdwg.org/schemas/abcd/2.06">http://www.tdwg.org/schemas/abcd/2.06</A></TD>
-<TD width="50%">Access to Biological Collections Data Standard.</TD>
-</TR>
+              <tr>
+                <th>Date Issued:</th>
 
-<TR>
-<TD width="10%"><A name="ABSTRACTMODEL">[ABSTRACTMODEL]</A></TD>
-<TD width="40%"><A href="http://dublincore.org/documents/abstract-model/">http://dublincore.org/documents/abstract-model/</A></TD>
-<TD width="50%">Dublin Core Metadata Initiative Abstract model.</TD>
-</TR>
+                <td>2009-02-12</td>
+              </tr>
 
-<TR>
-<TD width="10%"><A name="ARCHIVE">[ARCHIVE]</A></TD>
-<TD width="40%"><A href="./archive/darwincore.zip">http://rs.tdwg.org/dwc/archive/darwincore.zip</A></TD>
-<TD width="50%">An archive of all files of the current Darwin Core Standard.</TD>
-</TR>
+              <tr>
+                <th>Date Modified:</th>
 
-<TR>
-<TD width="10%"><A name="BASISOFRECORD">[BASISOFRECORD]</A></TD>
-<TD width="40%"><a href="./terms/index.htm#basisOfRecord">http://rs.tdwg.org/dwc/terms/index.htm#basisOfRecord</A></TD>
-<TD width="50%">Term describing the specific type of content in a resource.</TD>
-</TR>
+                <td>2014-11-08</td>
+              </tr>
 
-<TR>
-<TD width="10%"><A name="CLASSIC">[CLASSIC]</A></TD>
-<TD width="40%"><A href="http://digir.net/schema/conceptual/darwin/2003/1.0/darwin2.xsd">http://digir.net/schema/conceptual/darwin/2003/1.0/darwin2.xsd</A></TD>
-<TD width="50%">Darwin Core 1.2 (Classic) schema.</TD>
-</TR>
+              <tr>
+                <th>Abstract:</th>
 
-<!--
-<TR>
-<TD width="10%"><A name="COMPSAMPLEXMLSCHEMA">[COMPSAMPLEXMLSCHEMA]</A></TD>
-<TD width="40%"><A href="../../../xsd/tdwg_dwc_compound_sample.xsd">http://rs.tdwg.org/dwc/xsd/tdwg_dwc_compound_sample.xsd</A></TD>
-<TD width="50%">Structured Darwin Core XML schema having Sample as the root.</TD>
-</TR>
+                <td>This document is a cover page, an entry-level document to
+                the Darwin Core standard. It describes the purpose of the
+                standard and orients the reader to the documents that cover
+                specific topics within the standard, such as the quick guide to
+                the list of terms.</td>
+              </tr>
 
-<TR>
-<TD width="10%"><A name="COMPLOCATIONXMLSCHEMA">[COMPLOCATIONXMLSCHEMA]</A></TD>
-<TD width="40%"><A href="../../../xsd/tdwg_dwc_compound_samplinglocation.xsd">http://rs.tdwg.org/dwc/xsd/tdwg_dwc_compound_samplinglocation.xsd</A></TD>
-<TD width="50%">Structured Darwin Core XML schema having SamplingLocation as the root.</TD>
-</TR>
--->
+              <tr>
+                <th>Contributors:</th>
 
-<TR>
-<TD width="10%"><A name="CLASSESXMLSCHEMA">[CLASSESXMLSCHEMA]</A></TD>
-<TD width="40%"><A href="./xsd/tdwg_dwc_class_terms.xsd">http://rs.tdwg.org/dwc/xsd/tdwg_dwc_class_terms.xsd</A></TD>
-<TD width="50%">Darwin Core XML schema with classes as global elements.</TD>
-</TR>
+                <td>John Wieczorek (MVZ), Markus Döring (GBIF), Renato De
+                Giovanni (CRIA), Tim Robertson (GBIF), Dave Vieglais
+                (KUNHM)</td>
+              </tr>
 
-<TR>
-<TD width="10%"><A name="CURATORIAL">[CURATORIAL]</A></TD>
-<TD width="40%"><A href="http://rs.tdwg.org/dwc/tdwg_dw_curatorial.xsd">http://rs.tdwg.org/dwc/tdwg_dw_curatorial.xsd</A></TD>
-<TD width="50%">Darwin Core 1.4 Curatorial Extension schema.</TD>
-</TR>
+              <tr>
+                <th>Legal:</th>
 
-<TR>
-<TD width="10%"><A name="DCMI">[DCMI]</A></TD>
-<TD width="40%"><A href="http://dublincore.org/">http://dublincore.org/</A></TD>
-<TD width="50%">Dublin Core Metadata Initiative web site.</TD>
-</TR>
+                <td>This document is governed by the standard legal, copyright,
+                licensing provisions and disclaimers issued by the Taxonomic
+                Databases Working Group.</td>
+              </tr>
 
-<TR>
-<TD width="10%"><A name="DCMI-TYPE">[DCMI-TYPE]</A></TD>
-<TD width="40%"><A href="http://dublincore.org/documents/dcmi-type-vocabulary/">http://dublincore.org/documents/dcmi-type-vocabulary/</A></TD>
-<TD width="50%">Dublin Core Metadata Initiative Type Vocabulary page.</TD>
-</TR>
+              <tr>
+                <th>Part of TDWG Standard:</th>
 
-<TR>
-<TD width="10%"><A name="DCMINS">[DCMINS]</A></TD>
-<TD width="40%"><A href="http://dublincore.org/documents/dcmi-namespace/">http://dublincore.org/documents/dcmi-namespace/</A></TD>
-<TD width="50%">DCMI Namespace Policy</TD>
-</TR>
+                <td>
+                  <a href=
+                  "http://www.tdwg.org/standards/450/">http://www.tdwg.org/standards/450/</a>
+                </td>
+              </tr>
 
-<TR>
-<TD width="10%"><A name="DCMIXMLGUIDE">[DCMIXMLGUIDE]</A></TD>
-<TD width="40%"><a href="http://dublincore.org/documents/dc-xml/">http://dublincore.org/documents/dc-xml/</A></TD>
-<TD width="50%">Expressing Dublin Core metadata using XML.</TD>
-</TR>
+              <tr>
+                <th>Creator:</th>
 
-<TR>
-<TD width="10%"><A name="DCTERMS">[DCTERMS]</A></TD>
-<TD width="40%"><A href="http://dublincore.org/documents/dcmi-terms/">http://dublincore.org/documents/dcmi-terms/</A></TD>
-<TD width="50%">Dublin Core Metadata terms.</TD>
-</TR>
+                <td>Darwin Core Task Group</td>
+              </tr>
 
-<TR>
-<TD width="10%"><A name="DECISIONS">[DECISIONS]</A></TD>
-<TD width="40%"><A href="./terms/history/decisions/index.htm">http://rs.tdwg.org/dwc/terms/history/decisions/</A></TD>
-<TD width="50%">A reference to the decisions leading to changes in terms (definitions, status, etc.).</TD>
-</TR>
+              <tr>
+                <th>Identifier:</th>
 
-<TR>
-<TD width="10%"><A name="DRAFT14">[DRAFT14]</A></TD>
-<TD width="40%"><A href="http://rs.tdwg.org/dwc/tdwg_dw_core.xsd">http://rs.tdwg.org/dwc/tdwg_dw_core.xsd</A></TD>
-<TD width="50%">Darwin Core 1.4 draft standard schema.</TD>
-</TR>
+                <td>http://rs.tdwg.org/dwc/2014-11-08/</td>
+              </tr>
 
-<TR>
-<TD width="10%"><A name="DWC">[DWC]</A></TD>
-<TD width="40%"><A href="./index.htm">http://rs.tdwg.org/dwc/</A></TD>
-<TD width="50%">An introduction to the Darwin Core Standard.</TD>
-</TR>
+              <tr>
+                <th>Latest Version:</th>
 
-<TR>
-<TD width="10%"><A name="DWC-MAIL">[DWC-MAIL]</A></TD>
-<TD width="40%"><A href="mailto:tdwg-content@lists.tdwg.org">tdwg-content@lists.tdwg.org</A></TD>
-<TD width="50%">Mailing list for commentary and discussion on Darwin Core.</TD>
-</TR>
+                <td>
+                  <a href=
+                  "http://rs.tdwg.org/dwc/index.htm">http://rs.tdwg.org/dwc/</a>
+                </td>
+              </tr>
 
-<TR>
-<TD width="10%"><A name="DWC-PROJECT">[DWC-PROJECT]</A></TD>
-<TD width="40%"><A href="http://code.google.com/p/darwincore">http://code.google.com/p/darwincore</A></TD>
-<TD width="50%">Project site for the maintenance of Darwin Core development activity.</TD>
-</TR>
+              <tr>
+                <th>Replaces:</th>
 
-<TR>
-<TD width="10%"><A name="DWC-TYPE">[DWC-TYPE]</A></TD>
-<TD width="40%"><A href="./terms/type-vocabulary/index.htm">http://rs.tdwg.org/dwc/terms/type-vocabulary/</A></TD>
-<TD width="50%">A reference to the Darwin Core Type Vocabulary for use as values of the dcterms:type term.</TD>
-</TR>
+                <td>
+                  <a href=
+                  "http://rs.tdwg.org/dwc/2013-10-25/index.htm">http://rs.tdwg.org/dwc/2013-10-25/</a>
+                </td>
+              </tr>
 
-<TR>
-<TD width="10%"><A name="DWC-TASK">[DWC-TASK]</A></TD>
-<TD width="40%"><A href="http://www.tdwg.org/activities/darwincore/">http://www.tdwg.org/activities/darwincore/</A></TD>
-<TD width="50%">Reference site for the Darwin Core Task Group.</TD>
-</TR>
+              <tr>
+                <th>Document Status:</th>
 
-<TR>
-<TD width="10%"><A name="DWC-WIKI">[DWC-WIKI]</A></TD>
-<TD width="40%"><A href="http://code.google.com/p/darwincore/wiki/TableOfContents?tm=6">http://code.google.com/p/darwincore/wiki/TableOfContents?tm=6</A></TD>
-<TD width="50%">Wiki pages for discussion and commentary on Darwin Core terms and application profiles.</TD>
-</TR>
+                <td>Current Standard</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 
-<TR>
-<TD width="10%"><A name="DWCTOABCD">[DWCTOABCD]</A></TD>
-<TD width="40%"><A href="./terms/history/dwctoabcd/index.htm">http://rs.tdwg.org/dwc/terms/history/dwctoabcd/</A></TD>
-<TD width="50%">A reference for Darwin Core terms mapped to ABCD.</TD>
-</TR>
+  <p><a id="introduction" name="introduction"></a></p>
 
-<TR>
-<TD width="10%"><A name="FIELDEDTEXT"></A>[FIELDEDTEXT]</TD>
-<TD width="40%"><A href="http://www.fieldedtext.org/">http://www.fieldedtext.org/</A></TD>
-<TD width="50%">Fielded Text documentation.</TD>
-</TR>
+  <h2>1. Introduction</h2>
 
-<TR>
-<TD width="10%"><A name="GEOSPATIAL">[GEOSPATIAL]</A></TD>
-<TD width="40%"><A href="http://rs.tdwg.org/dwc/tdwg_dw_geospatial.xsd">http://rs.tdwg.org/dwc/tdwg_dw_geospatial.xsd</A></TD>
-<TD width="50%">Darwin Core 1.4 Geospatial Extension schema.</TD>
-</TR>
+  <p><b>Audience</b>: This document is an introduction to the Darwin Core
+  standard and is meant to provide the background, reasons, and basic
+  information about sharing (either as a publisher or user of) biodiversity
+  information. Further details on specific aspects of the standard and its use
+  can be found in the pages shown in the Table of Contents in the upper left of
+  every page or in the <a href="#references">References</a> section of this
+  page.</p>
 
-<TR>
-<TD width="10%"><A name="HISTORY">[HISTORY]</A></TD>
-<TD width="40%"><A href="./terms/history/index.htm">http://rs.tdwg.org/dwc/terms/history/</A></TD>
-<TD width="50%">Complete historical reference to Darwin Core terms.</TD>
-</TR>
+  <p style="font-weight: bold">What is the Darwin Core?</p>
 
-<TR>
-<TD width="10%"><A name="MANIS">[MANIS]</A></TD>
-<TD width="40%"><A href="http://digir.net/schema/conceptual/darwin/manis/1.21/darwin2.xsd">http://digir.net/schema/conceptual/darwin/manis/1.21/darwin2.xsd</A></TD>
-<TD width="50%">Darwin Core 1.21 (MaNIS/HerpNet/ORNIS/FishNet2) schema.</TD>
-</TR>
+  <p>The Darwin Core is body of standards. It includes a glossary of terms (in
+  other contexts these might be called properties, elements, fields, columns,
+  attributes, or concepts) intended to facilitate the sharing of information
+  about biological diversity by providing reference definitions, examples, and
+  commentaries. The Darwin Core is primarily based on taxa, their occurrence in
+  nature as documented by observations, specimens, samples, and related
+  information. Included are documents describing how these terms are managed,
+  how the set of terms can be extended for new purposes, and how the terms can
+  be used. The normative document for the terms [<a href=
+  "./rdf/dwctermshistory.rdf">RDF-NORMATIVE</a>] is written in the Resource
+  Description Framework (RDF) and is the definitive resource to understand the
+  term definitions and their relationships to each other. The <i>Simple Darwin
+  Core</i> [<a href="./terms/simple/index.htm">SIMPLEDWC</a>] is a
+  specification for one particular way to use the terms - to share data about
+  taxa and their occurrences in a simply structured way - and is probably what
+  is meant if someone suggests to "format your data according to the Darwin
+  Core".</p>
 
-<TR>
-<TD width="10%"><A name="NAMESPACEPOLICY">[NAMESPACEPOLICY]</A></TD>
-<TD width="40%"><A href="./terms/namespace/index.htm">http://rs.tdwg.org/dwc/terms/namespace/</A></TD>
-<TD width="50%">Policy governing Darwin Core terms.</TD>
-</TR>
+  <p><b>Motivation</b>: The Darwin Core standard was originally conceived to
+  facilitate the discovery, retrieval, and integration of information about
+  modern biological specimens, their spatiotemporal occurrence, and their
+  supporting evidence housed in collections (physical or digital). The Darwin
+  Core today is broader in scope and more versatile. It is meant to provide a
+  stable standard reference for sharing information on biological diversity. As
+  a glossary of terms, the Darwin Core is meant to provide stable semantic
+  definitions with the goal of being maximally reusable in a variety of
+  contexts.</p>
 
-<TR>
-<TD width="10%"><A name="OBIS">[OBIS]</A></TD>
-<TD width="40%"><A href="http://iobis.org/obis/obis.xsd">http://iobis.org/obis/obis.xsd</A></TD>
-<TD width="50%">OBIS additions to Darwin Core 1.2 (Classic).</TD>
-</TR>
+  <p><b>Rationale</b>: The Darwin Core is based on the standards developed by
+  the <i>Dublin Core Metadata Initiative</i> [<a href=
+  "http://dublincore.org/">DCMI</a>] and can be viewed as an extension of the
+  Dublic Core for biodiversity information. The purpose of these terms is to
+  facilitate data sharing by providing a well-defined standard core vocabulary
+  in a flexible framework to minimize the barriers to adoption and to maximize
+  reusability. The terms described in this standard are a part of a larger set
+  of vocabularies and technical specifications under development [<a href=
+  "http://wiki.tdwg.org/twiki/bin/view/">TDWG-DEV</a>] and maintained by
+  <i>Biodiversity Information Standards (TDWG)</i> [<a href=
+  "http://www.tdwg.org/standards/">TDWG-STANDARDS</a>].</p>
 
-<TR>
-<TD width="10%"><A name="PALEO">[PALEO]</A></TD>
-<TD width="40%"><A href="http://wiki.tdwg.org/twiki/bin/view/DarwinCore/PaleontologyElement">http://wiki.tdwg.org/twiki/bin/view/DarwinCore/PaleontologyElement</A></TD>
-<TD width="50%">Darwin Core 1.4 Paleontology Extension wiki.</TD>
-</TR>
+  <p><b>Guiding principles</b>: Each term has a definition and commentaries
+  that are meant to promote the consistent use of the terms across applications
+  and disciplines. Evolving commentaries that discuss, refine, expand, or
+  translate the definitions and examples are referred to through links in the
+  <i>Comments</i> attribute of each term. This means of documentation allows
+  the standard to adapt to new purposes without disrupting existing
+  applications. There is meant to be a clear separation between the terms
+  defined in this standard and the applications that make use of them. For
+  example, though the data types and constraints are not provided in the term
+  definitions, recommendations are made about how to restrict the values where
+  appropriate.</p>
 
-<TR>
-<TD width="10%"><A name="PROCESS">[PROCESS]</A></TD>
-<TD width="40%"><A href="http://www.tdwg.org/about-tdwg/process/">http://www.tdwg.org/about-tdwg/process/</A></TD>
-<TD width="50%">TDWG Standards Development Process.</TD>
-</TR>
+  <p><b>Content</b>: The standard consists of a vocabulary of terms
+  (properties, elements, fields, concepts) [<a href=
+  "./terms/index.htm">TERMS</a>], the policy governing the maintenance of these
+  terms [<a href="./terms/namespace/index.htm">NAMESPACEPOLICY</a>], the
+  decisions that resulted in changes to terms [<a href=
+  "./terms/history/decisions/index.htm">DECISIONS</a>], the complete history of
+  terms including detailed attributes [<a href=
+  "./terms/history/index.htm">HISTORY</a>], a <i>Generic Darwin Core XML
+  schema</i> [<a href="./xsd/tdwg_dwcterms.xsd">TERMSXMLSCHEMA</a>] from which
+  other schemas can be constructed, a <i>Simple Darwin Core XML schema</i>
+  [<a href="./xsd/tdwg_dwc_simple.xsd">SIMPLEXMLSCHEMA</a>] as a complete
+  schema ready for use, a schema to allow Darwin Core data transfer in text
+  files [<a href="./text/tdwg_dwc_text.xsd">TEXTSCHEMA</a>], and associated
+  reference schemas for the construction of more structured content. These
+  pages also describe mappings between the current standard and pre-standard
+  historical versions <a href=
+  "./terms/history/versions/index.htm">[VERSIONS]</a>, including mappings
+  <a href="./terms/history/dwctoabcd/index.htm">[DWCTOABCD]</a> to concepts in
+  the <i>Access to Biological Collections Data</i> standard <a href=
+  "http://www.tdwg.org/schemas/abcd/2.06">[ABCD]</a>.</p>
 
-<TR>
-<TD width="10%"><A name="RDF">[RDF]</A></TD>
-<TD width="40%"><A href="./rdf/dwcterms.rdf">http://rs.tdwg.org/dwc/rdf/dwcterms.rdf</A></TD>
-<TD width="50%">An rdf document for the complete current recommended set of Darwin Core terms. If this link shows a blank page in your browser, use the View Source option to see the RDF document.</TD>
-</TR>
+  <p><b>Extension</b>: Though the Darwin Core is insufficient for the needs of
+  all biological disciplines, it can be adapted to serve new purposes. Darwin
+  Core can be extended by adding new terms to share additional information. To
+  do so you should be familiar with the recommendations and procedures defined
+  in the <i>Darwin Core Namespace Policy</i> [<a href=
+  "./terms/namespace/index.htm">NAMESPACEPOLICY</a>]. Basically, before
+  proposing a new term, consider the existing terms in this and other
+  compatible standards to determine if the new concept can be accommodated by a
+  simple revision of the description and comments for an existing term, without
+  losing the existing meaning of that term.</p>
 
-<TR>
-<TD width="10%"><A name="RDF-NORMATIVE">[RDF-NORMATIVE]</A></TD>
-<TD width="40%"><A href="./rdf/dwctermshistory.rdf">http://rs.tdwg.org/dwc/rdf/dwctermshistory.rdf</A></TD>
-<TD width="50%">The normative document for the complete history of Darwin Core terms, in RDF. If this link shows a blank page in your browser, use the View Source option to see the RDF document.</TD>
-</TR>
+  <p><b>Participation</b>: To receive notification of activity or participate
+  in discussions about Darwin Core, join the <i>tdwg-content</i> mailing list
+  [<a href=
+  "http://lists.tdwg.org/mailman/listinfo/tdwg-content">TDWG-CONTENT</a>] and
+  watch the <i>Darwin Core Project</i> [<a href=
+  "https://github.com/tdwg/dwc">DWC-PROJECT</a>]. For discussion or commentary
+  on the definition of recommended terms, consult the link inside the
+  <i>Comment</i> section in the listing for the term in the <i>Quick Reference
+  Guide</i> [<a href="./terms/index.htm">TERMS</a>] or search for the relevant
+  content in the auxiliary<i>Darwin Core Documentation</i> [<a href=
+  "http://terms.tdwg.org/wiki/Darwin_Core">DWC-WIKI</a>].</p>
 
-<TR>
-<TD width="10%"><A name="SIMPLEMETAFILE">[SIMPLEMETAFILE]</A></TD>
-<TD width="40%"><A href="./examples/text/example_text_simpledwc_complete.xml">http://rs.tdwg.org/dwc/examples/text/simplemetafile.xml</A></TD>
-<TD width="50%">Simple Darwin Core Text metafile. If this link shows a blank page in your browser, use the View Source option to see the XML document.</TD>
-</TR>
+  <p>To make a formal request for a change to or addition of a term to the
+  Darwin Core, read and follow the recommendations in the <i>Darwin Core
+  Namespace Policy</i> [<a href=
+  "./terms/namespace/index.htm">NAMESPACEPOLICY</a>]. For those who wish to
+  construct and submit as a standard any application profile, such as an XML
+  schema, that extends the capabilities of the Darwin Core, adding new terms to
+  the Darwin Core vocabulary that don't already exist in a compatible
+  vocabulary will be a prerequisite. Consult the appropriate guideline, such as
+  the <i>XML Guide</i> [<a href="./terms/guides/xml/index.htm">XMLGUIDE</a>],
+  for information about the construction of a new application profile. The
+  rules of submission of proposed standards can be found in the <i>Biodiversity
+  Information Standards (TDWG)</i> process document [<a href=
+  "http://www.tdwg.org/about-tdwg/process/">PROCESS</a>]. <a id="references"
+  name="references"></a></p>
 
-<TR>
-<TD width="10%"><A name="SIMPLEXMLSCHEMA">[SIMPLEXMLSCHEMA]</A></TD>
-<TD width="40%"><A href="./xsd/tdwg_dwc_simple.xsd">http://rs.tdwg.org/dwc/xsd/tdwg_dwc_simple.xsd</A></TD>
-<TD width="50%">Simple Darwin Core XML schema.</TD>
-</TR>
+  <h2>2. References</h2>
 
-<TR>
-<TD width="10%"><A name="SIMPLEDWC">[SIMPLEDWC]</A></TD>
-<TD width="40%"><A href="./terms/simple/index.htm">http://rs.tdwg.org/dwc/terms/simple/index.htm</A></TD>
-<TD width="50%">Simple Darwin Core guide.</TD>
-</TR>
+  <table align="center" border="0" width="95%">
+    <tr>
+      <td width="10%">
+        <a id="ABCD" name="ABCD">[ABCD]</a>
+      </td>
 
-<TR>
-<TD width="10%"><A name="TDWG-CONTENT">[TDWG-CONTENT]</A></TD>
-<TD width="40%"><A href="http://lists.tdwg.org/mailman/listinfo/tdwg-content">http://lists.tdwg.org/mailman/listinfo/tdwg-content</A></TD>
-<TD width="50%">Web site for the tdwg-content mailing list used for commentary and discussion on Darwin Core.</TD>
-</TR>
+      <td width="40%">
+        <a href=
+        "http://www.tdwg.org/schemas/abcd/2.06">http://www.tdwg.org/schemas/abcd/2.06</a>
+      </td>
 
-<TR>
-<TD width="10%"><A name="TDWG-DEV">[TDWG-DEV]</A></TD>
-<TD width="40%"><A href="http://wiki.tdwg.org/twiki/bin/view/">http://wiki.tdwg.org/twiki/bin/view/</A></TD>
-<TD width="50%">Biodiversity Information Standards Wiki.</TD>
-</TR>
+      <td width="50%">Access to Biological Collections Data Standard.</td>
+    </tr>
 
-<TR>
-<TD width="10%"><A name="TDWG-STANDARDS">[TDWG-STANDARDS]</A></TD>
-<TD width="40%"><A href="http://www.tdwg.org/standards/">http://www.tdwg.org/standards/</A></TD>
-<TD width="50%">Biodiversity Information Standards.</TD>
-</TR>
+    <tr>
+      <td width="10%">
+        <a id="ABSTRACTMODEL" name="ABSTRACTMODEL">[ABSTRACTMODEL]</a>
+      </td>
 
-<TR>
-<TD width="10%"><A name="TDWG-TAG">[TDWG-TAG]</A></TD>
-<TD width="40%"><A href="mailto:tdwg-tag@lists.tdwg.org">tdwg-tag@lists.tdwg.org</A></TD>
-<TD width="50%">TDWG Architecture mailing list.</TD>
-</TR>
+      <td width="40%">
+        <a href=
+        "http://dublincore.org/documents/abstract-model/">http://dublincore.org/documents/abstract-model/</a>
+      </td>
 
-<TR>
-<TD width="10%"><A name="TERMS">[TERMS]</A></TD>
-<TD width="40%"><A href="./terms/index.htm">http://rs.tdwg.org/dwc/terms/</A></TD>
-<TD width="50%">Quick reference to current standard Darwin Core terms.</TD>
-</TR>
+      <td width="50%">Dublin Core Metadata Initiative Abstract model.</td>
+    </tr>
 
-<TR>
-<TD width="10%"><A name="TERMSXMLSCHEMA">[TERMSXMLSCHEMA]</A></TD>
-<TD width="40%"><A href="./xsd/tdwg_dwcterms.xsd">http://rs.tdwg.org/dwc/xsd/tdwg_dwcterms.xsd</A></TD>
-<TD width="50%">Darwin Core XML schema with properties as global elements.</TD>
-</TR>
+    <tr>
+      <td width="10%">
+        <a id="ARCHIVE" name="ARCHIVE">[ARCHIVE]</a>
+      </td>
 
-<TR>
-<TD width="10%"><A name="TEXTGUIDE"></A>[TEXTGUIDE]</TD>
-<TD width="40%"><A href="./terms/guides/text/index.htm">http://rs.tdwg.org/dwc/terms/guides/text</A></TD>
-<TD width="50%">Guide for using Darwin Core in fielded text documents.</TD>
-</TR>
+      <td width="40%">
+        <a href=
+        "./archive/darwincore.zip">http://rs.tdwg.org/dwc/archive/darwincore.zip</a>
+      </td>
 
-<TR>
-<TD width="10%"><A name="TEXTSCHEMA">[TEXTSCHEMA]</A></TD>
-<TD width="40%"><A href="./text/tdwg_dwc_text.xsd">http://rs.tdwg.org/dwc/terms/text/tdwg_dwc_text.xsd</A></TD>
-<TD width="50%">Simple Darwin Core Text schema.</TD>
-</TR>
+      <td width="50%">An archive of all files of the current Darwin Core
+      Standard.</td>
+    </tr>
 
-<TR>
-<TD width="10%"><A name="TOOLS">[TOOLS]</A></TD>
-<TD width="40%"><A href="http://code.google.com/p/darwincore/wiki/ToolsAndApplications">http://code.google.com/p/darwincore/wiki/ToolsAndApplications</A></TD>
-<TD width="50%">Wiki pages for Darwin Core applications, tools, discussion, and development.</TD>
-</TR>
+    <tr>
+      <td width="10%">
+        <a id="BASISOFRECORD" name="BASISOFRECORD">[BASISOFRECORD]</a>
+      </td>
 
-<TR>
-<TD width="10%"><A name="VERSIONS"></A>[VERSIONS]</TD>
-<TD width="40%"><A href="./terms/history/versions/index.htm">http://rs.tdwg.org/dwc/terms/history/versions/</A></TD>
-<TD width="50%">Reference for mapping historical Darwin Core terms to the current standard terms.</TD>
-</TR>
+      <td width="40%">
+        <a href=
+        "./terms/index.htm#basisOfRecord">http://rs.tdwg.org/dwc/terms/index.htm#basisOfRecord</a>
+      </td>
 
-<TR>
-<TD width="10%"><A name="XMLSCHEMAGUIDE"></A>[XMLSCHEMAGUIDE]</TD>
-<TD width="40%"><A href="./terms/guides/xml/index.htm">http://rs.tdwg.org/dwc/terms/guides/xml</A></TD>
-<TD width="50%">Guide for the construction of XML schemas.</TD>
-</TR>
+      <td width="50%">Term describing the specific type of content in a
+      resource.</td>
+    </tr>
 
-<TR>
-<TD width="10%"><A name="XML"></A>[XML]</TD>
-<TD width="40%"><A href="http://www.w3.org/XML/">http://www.w3.org/XML/</A></TD>
-<TD width="50%">Reference site for the Extensible Markup Language (XML).</TD>
-</TR>
+    <tr>
+      <td width="10%">
+        <a id="CLASSIC" name="CLASSIC">[CLASSIC]</a>
+      </td>
 
-<TR>
-<TD width="10%"><A name="XMLNS"></A>[XMLNS]</TD>
-<TD width="40%"><A href="http://www.w3.org/TR/1999/REC-xml-names-19990114/">http://www.w3.org/TR/1999/REC-xml-names-19990114/</A></TD>
-<TD width="50%">Reference site for XML namespaces.</TD>
-</TR>
+      <td width="40%">
+        <a href=
+        "http://digir.sourceforge.net/schema/conceptual/darwin/2003/1.0/darwin2.xsd">http://digir.sourceforge.net/schema/conceptual/darwin/2003/1.0/darwin2.xsd</a>
+      </td>
 
-<TR>
-<TD width="10%"><A name="XMLSCHEMA"></A>[XMLSCHEMA]</TD>
-<TD width="40%"><A href="http://www.w3.org/XML/Schema">http://www.w3.org/XML/Schema</A></TD>
-<TD width="50%">Reference site for XML Schema.</TD>
-</TR>
+      <td width="50%">Darwin Core 1.2 (Classic) schema.</td>
+    </tr>
 
-</TABLE>
+    <tr>
+      <td width="10%">
+        <a id="CLASSESXMLSCHEMA" name="CLASSESXMLSCHEMA">[CLASSESXMLSCHEMA]</a>
+      </td>
 
-<!-- Footer -->
-<hr>
-<p><a rel="license" href="http://creativecommons.org/licenses/by/3.0/us/"> 
-   <img alt="Creative Commons License" id="creative_commons_icon" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a> 
-   Copyright 2009-2013 - Biodiversity Information Standards - TDWG - <a href="http://www.tdwg.org/about-tdwg/contact-us/">Contact Us</a><br/> 
-<p>Except where otherwise noted, content on this site is licensed under a 
-   <a rel="license" href="http://creativecommons.org/licenses/by/3.0/us/"> Creative Commons 
-   Attribution 3.0 United States License</a>.</p> 
+      <td width="40%">
+        <a href=
+        "./xsd/tdwg_dwc_class_terms.xsd">http://rs.tdwg.org/dwc/xsd/tdwg_dwc_class_terms.xsd</a>
+      </td>
 
-</BODY></HTML>
+      <td width="50%">Darwin Core XML schema with classes as global
+      elements.</td>
+    </tr>
+
+    <tr>
+      <td width="10%">
+        <a id="CURATORIAL" name="CURATORIAL">[CURATORIAL]</a>
+      </td>
+
+      <td width="40%">
+        <a href=
+        "http://rs.tdwg.org/dwc/tdwg_dw_curatorial.xsd">http://rs.tdwg.org/dwc/tdwg_dw_curatorial.xsd</a>
+      </td>
+
+      <td width="50%">Darwin Core 1.4 Curatorial Extension schema.</td>
+    </tr>
+
+    <tr>
+      <td width="10%">
+        <a id="DCMI" name="DCMI">[DCMI]</a>
+      </td>
+
+      <td width="40%">
+        <a href="http://dublincore.org/">http://dublincore.org/</a>
+      </td>
+
+      <td width="50%">Dublin Core Metadata Initiative web site.</td>
+    </tr>
+
+    <tr>
+      <td width="10%">
+        <a id="DCMI-TYPE" name="DCMI-TYPE">[DCMI-TYPE]</a>
+      </td>
+
+      <td width="40%">
+        <a href=
+        "http://dublincore.org/documents/dcmi-type-vocabulary/">http://dublincore.org/documents/dcmi-type-vocabulary/</a>
+      </td>
+
+      <td width="50%">Dublin Core Metadata Initiative Type Vocabulary
+      page.</td>
+    </tr>
+
+    <tr>
+      <td width="10%">
+        <a id="DCMINS" name="DCMINS">[DCMINS]</a>
+      </td>
+
+      <td width="40%">
+        <a href=
+        "http://dublincore.org/documents/dcmi-namespace/">http://dublincore.org/documents/dcmi-namespace/</a>
+      </td>
+
+      <td width="50%">DCMI Namespace Policy</td>
+    </tr>
+
+    <tr>
+      <td width="10%">
+        <a id="DCMIXMLGUIDE" name="DCMIXMLGUIDE">[DCMIXMLGUIDE]</a>
+      </td>
+
+      <td width="40%">
+        <a href=
+        "http://dublincore.org/documents/dc-xml/">http://dublincore.org/documents/dc-xml/</a>
+      </td>
+
+      <td width="50%">Expressing Dublin Core metadata using XML.</td>
+    </tr>
+
+    <tr>
+      <td width="10%">
+        <a id="DCTERMS" name="DCTERMS">[DCTERMS]</a>
+      </td>
+
+      <td width="40%">
+        <a href=
+        "http://dublincore.org/documents/dcmi-terms/">http://dublincore.org/documents/dcmi-terms/</a>
+      </td>
+
+      <td width="50%">Dublin Core Metadata terms.</td>
+    </tr>
+
+    <tr>
+      <td width="10%">
+        <a id="DECISIONS" name="DECISIONS">[DECISIONS]</a>
+      </td>
+
+      <td width="40%">
+        <a href=
+        "./terms/history/decisions/index.htm">http://rs.tdwg.org/dwc/terms/history/decisions/</a>
+      </td>
+
+      <td width="50%">A reference to the decisions leading to changes in terms
+      (definitions, status, etc.).</td>
+    </tr>
+
+    <tr>
+      <td width="10%">
+        <a id="DRAFT14" name="DRAFT14">[DRAFT14]</a>
+      </td>
+
+      <td width="40%">
+        <a href=
+        "http://rs.tdwg.org/dwc/tdwg_dw_core.xsd">http://rs.tdwg.org/dwc/tdwg_dw_core.xsd</a>
+      </td>
+
+      <td width="50%">Darwin Core 1.4 draft standard schema.</td>
+    </tr>
+
+    <tr>
+      <td width="10%">
+        <a id="DWC" name="DWC">[DWC]</a>
+      </td>
+
+      <td width="40%">
+        <a href="./index.htm">http://rs.tdwg.org/dwc/</a>
+      </td>
+
+      <td width="50%">An introduction to the Darwin Core Standard.</td>
+    </tr>
+
+    <tr>
+      <td width="10%">
+        <a id="DWC-MAIL" name="DWC-MAIL">[DWC-MAIL]</a>
+      </td>
+
+      <td width="40%">
+        <a href=
+        "mailto:tdwg-content@lists.tdwg.org">tdwg-content@lists.tdwg.org</a>
+      </td>
+
+      <td width="50%">Mailing list for commentary and discussion on Darwin
+      Core.</td>
+    </tr>
+
+    <tr>
+      <td width="10%">
+        <a id="DWC" name="DWC">[DWC-PLOS]</a>
+      </td>
+
+      <td width="40%">
+        <a href=
+        "doi:10.1371/journal.pone.0029715"></a>doi:10.1371/journal.pone.0029715
+      </td>
+
+      <td width="50%">The peer-reviewed article in PLoS ONE introducing the
+      Darwin Core Standard.</td>
+    </tr>
+
+    <tr>
+      <td width="10%">
+        <a id="DWC-PROJECT" name="DWC-PROJECT">[DWC-PROJECT]</a>
+      </td>
+
+      <td width="40%">
+        <a href="https://github.com/tdwg/dwc">https://github.com/tdwg/dwc</a>
+      </td>
+
+      <td width="50%">Project site for the maintenance of Darwin Core
+      development activity.</td>
+    </tr>
+
+    <tr>
+      <td width="10%">
+        <a id="DWC-TASK" name="DWC-TASK">[DWC-TASK]</a>
+      </td>
+
+      <td width="40%">
+        <a href=
+        "http://www.tdwg.org/activities/darwincore/">http://www.tdwg.org/activities/darwincore/</a>
+      </td>
+
+      <td width="50%">Reference site for the Darwin Core Task Group.</td>
+    </tr>
+
+    <tr>
+      <td width="10%">
+        <a id="DWC-WIKI" name="DWC-WIKI">[DWC-WIKI]</a>
+      </td>
+
+      <td width="40%">
+        <a href=
+        "http://kos.gbif.org/wiki/DarwinCore">http://kos.gbif.org/wiki/DarwinCore</a>
+      </td>
+
+      <td width="50%">Wiki pages for discussion and commentary on Darwin Core
+      terms.</td>
+    </tr>
+
+    <tr>
+      <td width="10%">
+        <a id="DWCTOABCD" name="DWCTOABCD">[DWCTOABCD]</a>
+      </td>
+
+      <td width="40%">
+        <a href=
+        "./terms/history/dwctoabcd/index.htm">http://rs.tdwg.org/dwc/terms/history/dwctoabcd/</a>
+      </td>
+
+      <td width="50%">A reference for Darwin Core terms mapped to ABCD.</td>
+    </tr>
+
+    <tr>
+      <td width="10%">
+        <a id="FIELDEDTEXT" name="FIELDEDTEXT"></a>[FIELDEDTEXT]
+      </td>
+
+      <td width="40%">
+        <a href="http://www.fieldedtext.org/">http://www.fieldedtext.org/</a>
+      </td>
+
+      <td width="50%">Fielded Text documentation.</td>
+    </tr>
+
+    <tr>
+      <td width="10%">
+        <a id="GEOSPATIAL" name="GEOSPATIAL">[GEOSPATIAL]</a>
+      </td>
+
+      <td width="40%">
+        <a href=
+        "http://rs.tdwg.org/dwc/tdwg_dw_geospatial.xsd">http://rs.tdwg.org/dwc/tdwg_dw_geospatial.xsd</a>
+      </td>
+
+      <td width="50%">Darwin Core 1.4 Geospatial Extension schema.</td>
+    </tr>
+
+    <tr>
+      <td width="10%">
+        <a id="HISTORY" name="HISTORY">[HISTORY]</a>
+      </td>
+
+      <td width="40%">
+        <a href=
+        "./terms/history/index.htm">http://rs.tdwg.org/dwc/terms/history/</a>
+      </td>
+
+      <td width="50%">Complete historical reference to Darwin Core terms.</td>
+    </tr>
+
+    <tr>
+      <td width="10%">
+        <a id="MANIS" name="MANIS">[MANIS]</a>
+      </td>
+
+      <td width="40%">
+        <a href=
+        "http://digir.sourceforge.net/schema/conceptual/darwin/manis/1.21/darwin2.xsd">http://digir.sourceforge.net/schema/conceptual/darwin/manis/1.21/darwin2.xsd</a>
+      </td>
+
+      <td width="50%">Darwin Core 1.21 (MaNIS/HerpNet/ORNIS/FishNet2)
+      schema.</td>
+    </tr>
+
+    <tr>
+      <td width="10%">
+        <a id="NAMESPACEPOLICY" name="NAMESPACEPOLICY">[NAMESPACEPOLICY]</a>
+      </td>
+
+      <td width="40%">
+        <a href=
+        "./terms/namespace/index.htm">http://rs.tdwg.org/dwc/terms/namespace/</a>
+      </td>
+
+      <td width="50%">Policy governing Darwin Core terms.</td>
+    </tr>
+
+    <tr>
+      <td width="10%">
+        <a id="OBIS" name="OBIS">[OBIS]</a>
+      </td>
+
+      <td width="40%">
+        <a href=
+        "http://iobis.org/obis/obis.xsd">http://iobis.org/obis/obis.xsd</a>
+      </td>
+
+      <td width="50%">OBIS additions to Darwin Core 1.2 (Classic).</td>
+    </tr>
+
+    <tr>
+      <td width="10%">
+        <a id="PALEO" name="PALEO">[PALEO]</a>
+      </td>
+
+      <td width="40%">
+        <a href=
+        "http://wiki.tdwg.org/twiki/bin/view/DarwinCore/PaleontologyElement">http://wiki.tdwg.org/twiki/bin/view/DarwinCore/PaleontologyElement</a>
+      </td>
+
+      <td width="50%">Darwin Core 1.4 Paleontology Extension wiki.</td>
+    </tr>
+
+    <tr>
+      <td width="10%">
+        <a id="PROCESS" name="PROCESS">[PROCESS]</a>
+      </td>
+
+      <td width="40%">
+        <a href=
+        "http://www.tdwg.org/about-tdwg/process/">http://www.tdwg.org/about-tdwg/process/</a>
+      </td>
+
+      <td width="50%">TDWG Standards Development Process.</td>
+    </tr>
+
+    <tr>
+      <td width="10%">
+        <a id="RDF" name="RDF">[RDF]</a>
+      </td>
+
+      <td width="40%">
+        <a href=
+        "./rdf/dwcterms.rdf">http://rs.tdwg.org/dwc/rdf/dwcterms.rdf</a>
+      </td>
+
+      <td width="50%">An rdf document for the complete current recommended set
+      of Darwin Core terms. If this link shows a blank page in your browser,
+      use the View Source option to see the RDF document.</td>
+    </tr>
+
+    <tr>
+      <td width="10%">
+        <a id="RDF-NORMATIVE" name="RDF-NORMATIVE">[RDF-NORMATIVE]</a>
+      </td>
+
+      <td width="40%">
+        <a href=
+        "./rdf/dwctermshistory.rdf">http://rs.tdwg.org/dwc/rdf/dwctermshistory.rdf</a>
+      </td>
+
+      <td width="50%">The normative document for the complete history of Darwin
+      Core terms, in RDF. If this link shows a blank page in your browser, use
+      the View Source option to see the RDF document.</td>
+    </tr>
+
+    <tr>
+      <td width="10%">
+        <a id="SIMPLEMETAFILE" name="SIMPLEMETAFILE">[SIMPLEMETAFILE]</a>
+      </td>
+
+      <td width="40%">
+        <a href=
+        "./examples/text/example_text_simpledwc_complete.xml">http://rs.tdwg.org/dwc/examples/text/simplemetafile.xml</a>
+      </td>
+
+      <td width="50%">Simple Darwin Core Text metafile. If this link shows a
+      blank page in your browser, use the View Source option to see the XML
+      document.</td>
+    </tr>
+
+    <tr>
+      <td width="10%">
+        <a id="SIMPLEXMLSCHEMA" name="SIMPLEXMLSCHEMA">[SIMPLEXMLSCHEMA]</a>
+      </td>
+
+      <td width="40%">
+        <a href=
+        "./xsd/tdwg_dwc_simple.xsd">http://rs.tdwg.org/dwc/xsd/tdwg_dwc_simple.xsd</a>
+      </td>
+
+      <td width="50%">Simple Darwin Core XML schema.</td>
+    </tr>
+
+    <tr>
+      <td width="10%">
+        <a id="SIMPLEDWC" name="SIMPLEDWC">[SIMPLEDWC]</a>
+      </td>
+
+      <td width="40%">
+        <a href=
+        "./terms/simple/index.htm">http://rs.tdwg.org/dwc/terms/simple/index.htm</a>
+      </td>
+
+      <td width="50%">Simple Darwin Core guide.</td>
+    </tr>
+
+    <tr>
+      <td width="10%">
+        <a id="TDWG-CONTENT" name="TDWG-CONTENT">[TDWG-CONTENT]</a>
+      </td>
+
+      <td width="40%">
+        <a href=
+        "http://lists.tdwg.org/mailman/listinfo/tdwg-content">http://lists.tdwg.org/mailman/listinfo/tdwg-content</a>
+      </td>
+
+      <td width="50%">Web site for the tdwg-content mailing list used for
+      commentary and discussion on Darwin Core.</td>
+    </tr>
+
+    <tr>
+      <td width="10%">
+        <a id="TDWG-DEV" name="TDWG-DEV">[TDWG-DEV]</a>
+      </td>
+
+      <td width="40%">
+        <a href=
+        "http://wiki.tdwg.org/twiki/bin/view/">http://wiki.tdwg.org/twiki/bin/view/</a>
+      </td>
+
+      <td width="50%">Biodiversity Information Standards Wiki.</td>
+    </tr>
+
+    <tr>
+      <td width="10%">
+        <a id="TDWG-STANDARDS" name="TDWG-STANDARDS">[TDWG-STANDARDS]</a>
+      </td>
+
+      <td width="40%">
+        <a href=
+        "http://www.tdwg.org/standards/">http://www.tdwg.org/standards/</a>
+      </td>
+
+      <td width="50%">Biodiversity Information Standards.</td>
+    </tr>
+
+    <tr>
+      <td width="10%">
+        <a id="TDWG-TAG" name="TDWG-TAG">[TDWG-TAG]</a>
+      </td>
+
+      <td width="40%">
+        <a href="mailto:tdwg-tag@lists.tdwg.org">tdwg-tag@lists.tdwg.org</a>
+      </td>
+
+      <td width="50%">TDWG Technical Architecture Group mailing list.</td>
+    </tr>
+
+    <tr>
+      <td width="10%">
+        <a id="TEXTGUIDE" name="TEXTGUIDE"></a>[TEXTGUIDE]
+      </td>
+
+      <td width="40%">
+        <a href=
+        "./terms/guides/text/index.htm">http://rs.tdwg.org/dwc/terms/guides/text</a>
+      </td>
+
+      <td width="50%">Guide for using Darwin Core in fielded text
+      documents.</td>
+    </tr>
+
+    <tr>
+      <td width="10%">
+        <a id="TERMS" name="TERMS">[TERMS]</a>
+      </td>
+
+      <td width="40%">
+        <a href="./terms/index.htm">http://rs.tdwg.org/dwc/terms/</a>
+      </td>
+
+      <td width="50%">Quick reference to current standard Darwin Core
+      terms.</td>
+    </tr>
+
+    <tr>
+      <td width="10%">
+        <a id="TERMSXMLSCHEMA" name="TERMSXMLSCHEMA">[TERMSXMLSCHEMA]</a>
+      </td>
+
+      <td width="40%">
+        <a href=
+        "./xsd/tdwg_dwcterms.xsd">http://rs.tdwg.org/dwc/xsd/tdwg_dwcterms.xsd</a>
+      </td>
+
+      <td width="50%">Darwin Core XML schema with properties as global
+      elements.</td>
+    </tr>
+
+    <tr>
+      <td width="10%">
+        <a id="TEXTSCHEMA" name="TEXTSCHEMA">[TEXTSCHEMA]</a>
+      </td>
+
+      <td width="40%">
+        <a href=
+        "./text/tdwg_dwc_text.xsd">http://rs.tdwg.org/dwc/terms/text/tdwg_dwc_text.xsd</a>
+      </td>
+
+      <td width="50%">Simple Darwin Core Text schema.</td>
+    </tr>
+
+    <tr>
+      <td width="10%">
+        <a id="TOOLS" name="TOOLS">[TOOLS]</a>
+      </td>
+
+      <td width="40%">
+        <a href=
+        "https://github.com/tdwg/dwc-documentation/blob/master/doc/resources.md">
+        https://github.com/tdwg/dwc-documentation/blob/master/doc/resources.md</a>
+      </td>
+
+      <td width="50%">Darwin Core applications, tools, presentations, and
+      templates.</td>
+    </tr>
+
+    <tr>
+      <td width="10%">
+        <a id="VERSIONS" name="VERSIONS"></a>[VERSIONS]
+      </td>
+
+      <td width="40%">
+        <a href=
+        "./terms/history/versions/index.htm">http://rs.tdwg.org/dwc/terms/history/versions/</a>
+      </td>
+
+      <td width="50%">Reference for mapping historical Darwin Core terms to the
+      current standard terms.</td>
+    </tr>
+
+    <tr>
+      <td width="10%">
+        <a id="XML" name="XML"></a>[XML]
+      </td>
+
+      <td width="40%">
+        <a href="http://www.w3.org/XML/">http://www.w3.org/XML/</a>
+      </td>
+
+      <td width="50%">Reference site for the Extensible Markup Language
+      (XML).</td>
+    </tr>
+
+    <tr>
+      <td width="10%">
+        <a id="XMLGUIDE" name="XMLGUIDE"></a>[XMLGUIDE]
+      </td>
+
+      <td width="40%">
+        <a href=
+        "./terms/guides/xml/index.htm">http://rs.tdwg.org/dwc/terms/guides/xml</a>
+      </td>
+
+      <td width="50%">Guide for using Darwin Core in XML dcouments.</td>
+    </tr>
+
+    <tr>
+      <td width="10%">
+        <a id="XMLNS" name="XMLNS"></a>[XMLNS]
+      </td>
+
+      <td width="40%">
+        <a href=
+        "http://www.w3.org/TR/1999/REC-xml-names-19990114/">http://www.w3.org/TR/1999/REC-xml-names-19990114/</a>
+      </td>
+
+      <td width="50%">Reference site for XML namespaces.</td>
+    </tr>
+
+    <tr>
+      <td width="10%">
+        <a id="XMLSCHEMA" name="XMLSCHEMA"></a>[XMLSCHEMA]
+      </td>
+
+      <td width="40%">
+        <a href="http://www.w3.org/XML/Schema">http://www.w3.org/XML/Schema</a>
+      </td>
+
+      <td width="50%">Reference site for XML Schema.</td>
+    </tr>
+  </table>
+  <hr>
+  
+  <!-- Footer -->
+  <p>Except where otherwise noted, content on this site is licensed under a
+  <a href="http://creativecommons.org/licenses/by/4.0/" rel="license">Creative
+  Commons Attribution 4.0 International License</a>.</p>
+
+  <p><a href="http://creativecommons.org/licenses/by/4.0/" rel=
+  "license"><img alt="Creative Commons License" id="creative_commons_icon" src=
+  "http://i.creativecommons.org/l/by/4.0/88x31.png"></a> Copyright 2011-2014 -
+  Biodiversity Information Standards - TDWG - <a href=
+  "http://www.tdwg.org/about-tdwg/contact-us/">Contact Us</a><br>
+  
+  <!-- The following is used to register Google Analytics for Darwin Core -->
+   <script src="http://www.google-analytics.com/urchin.js" type=
+  "text/javascript"></script> <script type="text/javascript">
+
+    _uacct = "UA-386033-4";
+    urchinTracker();
+  </script></p>
+</body>
+</html>

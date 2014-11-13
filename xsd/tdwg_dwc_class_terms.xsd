@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<xs:schema version="2013-10-22" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+<xs:schema version="2014-11-08" xmlns:xs="http://www.w3.org/2001/XMLSchema"
     targetNamespace="http://rs.tdwg.org/dwc/terms/"
     xmlns:dwc="http://rs.tdwg.org/dwc/terms/">
     <xs:include schemaLocation="tdwg_dwcterms.xsd"/>
@@ -18,6 +18,17 @@
             <xs:choice maxOccurs="unbounded">
                 <xs:element ref="dwc:anyIdentifier"/>
                 <xs:element ref="dwc:anyOccurrenceTerm"/>
+                <xs:element ref="dwc:anyRecordLevelTerm"/>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+    
+    <!-- ORGANISM domain -->
+    <xs:element name="Organism" substitutionGroup="dwc:anyClass">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element ref="dwc:anyIdentifier"/>
+                <xs:element ref="dwc:anyOrganismTerm"/>
                 <xs:element ref="dwc:anyRecordLevelTerm"/>
             </xs:choice>
         </xs:complexType>
@@ -46,7 +57,7 @@
     </xs:element>
     
     <!-- LOCATION domain -->
-    <!-- reuses the dc:location term, so see dublin_core.xsd for definition -->
+    <!-- reuses the dcterms:location term, so see dublin_core.xsd for definition -->
     <!-- 
     <xs:element name="Location" substitutionGroup="dwc:anyClass">
         <xs:complexType>

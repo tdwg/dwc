@@ -18,8 +18,8 @@
         <dwc:startDayOfYear>12</dwc:startDayOfYear>
         <dwc:endDayOfYear>12</dwc:endDayOfYear>
         <dwc:year>1995</dwc:year>
-        <dwc:month>--01</dwc:month>
-        <dwc:day>---12</dwc:day>
+        <dwc:month>01</dwc:month>
+        <dwc:day>12</dwc:day>
         <dwc:verbatimEventDate>12 Jan 1995</dwc:verbatimEventDate>
         <dwc:habitat>mallín</dwc:habitat>
         <dwc:fieldNotes>on file in the Grinnell-Miller Library</dwc:fieldNotes>
@@ -29,7 +29,6 @@
         <dcterms:type>PhysicalObject</dcterms:type>
         <dcterms:modified>2009-02-12T12:43:31</dcterms:modified>
         <dcterms:rightsHolder>Museum of Vertebrate Zoology</dcterms:rightsHolder>
-        <dcterms:rights>Creative Commons License</dcterms:rights>
         <dwc:institutionCode>MVZ</dwc:institutionCode>
         <dwc:collectionCode>Mammals</dwc:collectionCode>
         <dwc:occurrenceID>urn:catalog:MVZ:Mammals:14523</dwc:occurrenceID>
@@ -70,7 +69,6 @@
         <dcterms:type>PhysicalObject</dcterms:type>
         <dcterms:modified>2009-02-12T12:43:31</dcterms:modified>
         <dcterms:rightsHolder>Museum of Vertebrate Zoology</dcterms:rightsHolder>
-        <dcterms:rights>Creative Commons License</dcterms:rights>
         <dwc:institutionCode>MVZ</dwc:institutionCode>
         <dwc:collectionCode>Mammals</dwc:collectionCode>
         <dwc:occurrenceID>urn:catalog:MVZ:Mammals:14524</dwc:occurrenceID>

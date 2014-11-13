@@ -18,16 +18,14 @@
     </dcterms:Location>
     <dwc:Event>
       <dwc:eventID>http://guid.mvz.org/events/2006/11/26/17</dwc:eventID>
-      <dwc:samplingProtocol>area count</dwc:samplingProtocol>
       <dwc:eventDate>2006-11-26T00:00:00</dwc:eventDate>
+      <dwc:samplingProtocol>area count</dwc:samplingProtocol>
       <dwc:locationID>http://guid.mvz.org/sites/arg/127</dwc:locationID>
     </dwc:Event>
     <dwc:Occurrence>
       <dwc:occurrenceID>urn:catalog:AUDCLO:EBIRD:OBS64515288</dwc:occurrenceID>
       <dcterms:type>Event</dcterms:type>
       <dcterms:modified>2009-02-17T07:33:04Z</dcterms:modified>
-      <dcterms:rightsHolder>Avian Knowledge Network</dcterms:rightsHolder>
-      <dcterms:rights>Creative Commons License</dcterms:rights>
       <dwc:institutionCode>AUDCLO</dwc:institutionCode>
       <dwc:collectionCode>EBIRD</dwc:collectionCode>
       <dwc:basisOfRecord>HumanObservation</dwc:basisOfRecord>
@@ -45,8 +43,6 @@
       <dwc:occurrenceID>urn:catalog:AUDCLO:EBIRD:OBS64515286</dwc:occurrenceID>
       <dcterms:type>Event</dcterms:type>
       <dcterms:modified>2009-02-17T07:33:04Z</dcterms:modified>
-      <dcterms:rightsHolder>Avian Knowledge Network</dcterms:rightsHolder>
-      <dcterms:rights>Creative Commons License</dcterms:rights>
       <dwc:institutionCode>AUDCLO</dwc:institutionCode>
       <dwc:collectionCode>EBIRD</dwc:collectionCode>
       <dwc:basisOfRecord>HumanObservation</dwc:basisOfRecord>
@@ -62,16 +58,14 @@
     </dwc:Taxon>
     <dwc:Event>
       <dwc:eventID>http://guid.mvz.org/events/2006/11/27/6</dwc:eventID>
-      <dwc:samplingProtocol>area count</dwc:samplingProtocol>
       <dwc:eventDate>2006-11-27T00:00:00</dwc:eventDate>
+      <dwc:samplingProtocol>area count</dwc:samplingProtocol>
       <dwc:locationID>http://guid.mvz.org/sites/arg/127</dwc:locationID>
     </dwc:Event>
     <dwc:Occurrence>
       <dwc:occurrenceID>urn:catalog:AUDCLO:EBIRD:OBS64515333</dwc:occurrenceID>
       <dcterms:type>Event</dcterms:type>
       <dcterms:modified>2009-02-17T07:33:04Z</dcterms:modified>
-      <dcterms:rightsHolder>Avian Knowledge Network</dcterms:rightsHolder>
-      <dcterms:rights>Creative Commons License</dcterms:rights>
       <dwc:institutionCode>AUDCLO</dwc:institutionCode>
       <dwc:collectionCode>EBIRD</dwc:collectionCode>
       <dwc:basisOfRecord>HumanObservation</dwc:basisOfRecord>
@@ -89,8 +83,6 @@
       <dwc:occurrenceID>urn:catalog:AUDCLO:EBIRD:OBS64515331</dwc:occurrenceID>
       <dcterms:type>Event</dcterms:type>
       <dcterms:modified>2009-02-17T07:33:04Z</dcterms:modified>
-      <dcterms:rightsHolder>Avian Knowledge Network</dcterms:rightsHolder>
-      <dcterms:rights>Creative Commons License</dcterms:rights>
       <dwc:institutionCode>AUDCLO</dwc:institutionCode>
       <dwc:collectionCode>EBIRD</dwc:collectionCode>
       <dwc:basisOfRecord>HumanObservation</dwc:basisOfRecord>
