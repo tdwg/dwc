@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:dc="http://purl.org/dc/terms/"
+      xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
+      xmlns:georss='http://www.georss.org/georss#'
+      xmlns:oboe='http://code.ecoinformatics.org/code/semtools/trunk/dev/oboe/oboe.owl#'>
+<head >
+<title>Observation in RDFa</title>
+  <meta about='sciname_location.html' property='dc:creator' content="Dave Vieglais"/>
+  <meta about='sciname_location.html' property='dc:date' content="2008-11-14T09:52:00+00:00" />
+  <meta about='sciname_location.html' property='dc:description' content="Demonstrates how to
+    create the equivalent of a simple observation record within a HTML document that can be
+    converted to an RDF document." />
+</head>
+<body>
+  <p>This example document contains a record of an observation tagged with an lsid of xxx
+  <span about="lsid:blah.blah" typeof="oboe:Observation">
+    that includes the scientific name 
+    <span property='dwc:scientificName' style='font-style: italic;'>Bufo marinus</span>,
+ </span>
+  <span about='lsid:blah.blah' typeof="dc:Location" > 
+    <span property='dwc:geodeticDatum' content='epsg:4326' />
+    a geographic location of
+    <span property='georss:point' content='-25.273262 152.725067' />
+    longitude 
+    <span property='dwc:decimalLongitude'>152.725067</span>
+    east, latitude 
+    <span property='dwc:decimalLatitude'>-25.273262</span>,
+  </span>
+  and a time of
+  <span about='lsid:blah.blah' property='dwc:eventDate' content="2008-11-10T23:32:00+00:00">
+  9:32 in the morning of the 12th of November.
+  </span>
+</p>
+</body>
+</html>

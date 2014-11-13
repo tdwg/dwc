@@ -1,0 +1,99 @@
+﻿<?xml version="1.0"?>
+<dwr:DarwinRecordSet
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://rs.tdwg.org/dwc/dwcrecord/  ../../xsd/tdwg_dwc_classes.xsd"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
+    xmlns:dwr="http://rs.tdwg.org/dwc/dwcrecord/">
+    <dcterms:Location>
+      <dwc:locationID>http://guid.mvz.org/sites/arg/127</dwc:locationID>
+      <dwc:country>Argentina</dwc:country>
+      <dwc:countryCode>AR</dwc:countryCode>
+      <dwc:stateProvince>Neuquén</dwc:stateProvince>
+      <dwc:locality>Valle Limay, Estancia Rincon Grande, 48 ha area with centroid at this point</dwc:locality>
+      <dwc:decimalLatitude>-40.97467</dwc:decimalLatitude>
+      <dwc:decimalLongitude>-71.0734</dwc:decimalLongitude>
+      <dwc:geodeticDatum>epsg:4326</dwc:geodeticDatum>
+      <dwc:coordinateUncertaintyInMeters>200</dwc:coordinateUncertaintyInMeters>
+    </dcterms:Location>
+    <dwc:Event>
+      <dwc:eventID>http://guid.mvz.org/events/2006/11/26/17</dwc:eventID>
+      <dwc:eventDate>2006-11-26T00:00:00</dwc:eventDate>
+      <dwc:samplingProtocol>area count</dwc:samplingProtocol>
+      <dwc:locationID>http://guid.mvz.org/sites/arg/127</dwc:locationID>
+    </dwc:Event>
+    <dwc:Occurrence>
+      <dwc:occurrenceID>urn:catalog:AUDCLO:EBIRD:OBS64515288</dwc:occurrenceID>
+      <dcterms:type>Event</dcterms:type>
+      <dcterms:modified>2009-02-17T07:33:04Z</dcterms:modified>
+      <dwc:institutionCode>AUDCLO</dwc:institutionCode>
+      <dwc:collectionCode>EBIRD</dwc:collectionCode>
+      <dwc:basisOfRecord>HumanObservation</dwc:basisOfRecord>
+      <dwc:individualCount>2</dwc:individualCount>
+      <dwc:eventID>http://guid.mvz.org/events/2006/11/26/17</dwc:eventID>
+    </dwc:Occurrence>
+    <dwc:Taxon>
+      <dwc:scientificName>Anthus hellmayri</dwc:scientificName>
+      <dwc:class>Aves</dwc:class>
+      <dwc:genus>Anthus</dwc:genus>
+      <dwc:specificEpithet>hellmayri</dwc:specificEpithet>
+      <dwc:occurrenceID>urn:catalog:AUDCLO:EBIRD:OBS64515288</dwc:occurrenceID>
+    </dwc:Taxon>
+    <dwc:Occurrence>
+      <dwc:occurrenceID>urn:catalog:AUDCLO:EBIRD:OBS64515286</dwc:occurrenceID>
+      <dcterms:type>Event</dcterms:type>
+      <dcterms:modified>2009-02-17T07:33:04Z</dcterms:modified>
+      <dwc:institutionCode>AUDCLO</dwc:institutionCode>
+      <dwc:collectionCode>EBIRD</dwc:collectionCode>
+      <dwc:basisOfRecord>HumanObservation</dwc:basisOfRecord>
+      <dwc:individualCount>1</dwc:individualCount>
+      <dwc:eventID>http://guid.mvz.org/events/2006/11/26/17</dwc:eventID>
+    </dwc:Occurrence>
+    <dwc:Taxon>
+      <dwc:scientificName>Anthus correndera</dwc:scientificName>
+      <dwc:class>Aves</dwc:class>
+      <dwc:genus>Anthus</dwc:genus>
+      <dwc:specificEpithet>correndera</dwc:specificEpithet>
+      <dwc:occurrenceID>urn:catalog:AUDCLO:EBIRD:OBS64515286</dwc:occurrenceID>
+    </dwc:Taxon>
+    <dwc:Event>
+      <dwc:eventID>http://guid.mvz.org/events/2006/11/27/6</dwc:eventID>
+      <dwc:eventDate>2006-11-27T00:00:00</dwc:eventDate>
+      <dwc:samplingProtocol>area count</dwc:samplingProtocol>
+      <dwc:locationID>http://guid.mvz.org/sites/arg/127</dwc:locationID>
+    </dwc:Event>
+    <dwc:Occurrence>
+      <dwc:occurrenceID>urn:catalog:AUDCLO:EBIRD:OBS64515333</dwc:occurrenceID>
+      <dcterms:type>Event</dcterms:type>
+      <dcterms:modified>2009-02-17T07:33:04Z</dcterms:modified>
+      <dwc:institutionCode>AUDCLO</dwc:institutionCode>
+      <dwc:collectionCode>EBIRD</dwc:collectionCode>
+      <dwc:basisOfRecord>HumanObservation</dwc:basisOfRecord>
+      <dwc:individualCount>1</dwc:individualCount>
+      <dwc:eventID>http://guid.mvz.org/events/2006/11/27/6</dwc:eventID>
+    </dwc:Occurrence>
+    <dwc:Taxon>
+      <dwc:scientificName>Anthus hellmayri</dwc:scientificName>
+      <dwc:class>Aves</dwc:class>
+      <dwc:genus>Anthus</dwc:genus>
+      <dwc:specificEpithet>hellmayri</dwc:specificEpithet>
+      <dwc:occurrenceID>urn:catalog:AUDCLO:EBIRD:OBS64515333</dwc:occurrenceID>
+    </dwc:Taxon>
+    <dwc:Occurrence>
+      <dwc:occurrenceID>urn:catalog:AUDCLO:EBIRD:OBS64515331</dwc:occurrenceID>
+      <dcterms:type>Event</dcterms:type>
+      <dcterms:modified>2009-02-17T07:33:04Z</dcterms:modified>
+      <dwc:institutionCode>AUDCLO</dwc:institutionCode>
+      <dwc:collectionCode>EBIRD</dwc:collectionCode>
+      <dwc:basisOfRecord>HumanObservation</dwc:basisOfRecord>
+      <dwc:individualCount>2</dwc:individualCount>
+      <dwc:eventID>http://guid.mvz.org/events/2006/11/27/6</dwc:eventID>
+    </dwc:Occurrence>
+    <dwc:Taxon>
+      <dwc:scientificName>Anthus hellmayri</dwc:scientificName>
+      <dwc:class>Aves</dwc:class>
+      <dwc:genus>Anthus</dwc:genus>
+      <dwc:specificEpithet>hellmayri</dwc:specificEpithet>
+      <dwc:occurrenceID>urn:catalog:AUDCLO:EBIRD:OBS64515331</dwc:occurrenceID>
+    </dwc:Taxon>
+</dwr:DarwinRecordSet>

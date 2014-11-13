@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://rs.tdwg.org/dwc/my/extension/"
+    xmlns:my="http://rs.tdwg.org/dwc/my/extension/"
+    xmlns:dwc="http://rs.tdwg.org/dwc/terms/">
+    <xs:import namespace="http://rs.tdwg.org/dwc/terms/" schemaLocation="../tdwg_dwc_extensions.xsd"/>
+    
+    <!-- substitute the abstract dwc anyClass so it comes available in the main simple darwin core schema -->
+    <xs:element name="SomeExtension" substitutionGroup="dwc:anyClass">
+        <xs:complexType>
+            <xs:all>
+                <xs:element ref="my:firstProperty" minOccurs="0"/>
+                <xs:element ref="my:secondProperty" minOccurs="0"/>
+                <xs:element ref="my:thirdProperty" minOccurs="0"/>
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="firstProperty" type="xs:string" substitutionGroup="dwc:anyProperty"/>
+    <xs:element name="secondProperty" type="xs:date" substitutionGroup="dwc:anyProperty"/>
+    <xs:element name="thirdProperty" type="xs:integer" substitutionGroup="dwc:anyProperty"/>
+
+</xs:schema>

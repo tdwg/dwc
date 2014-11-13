@@ -1,0 +1,68 @@
+<!-- <!DOCTYPE html PUBLIC "-//XML-DEV//DTD XHTML RDDL 1.0//EN" "http://www.rddl.org/rddl-xhtml.dtd">-->
+<!-- Note: DOCTYPE is commented out in the RDDL example RDDL itself; perhaps otherwise some html clients cause problems. -->
+<html xmlns="http://www.w3.org/1999/xhtml" 
+		xmlns:xlink="http://www.w3.org/1999/xlink"
+		xmlns:rddl="http://www.rddl.org/"
+    xml:base="http://rs.tdwg.org/dwc"
+    xml:lang="en-US">
+
+  <head>
+    <title>Resource Directory (RDDL) for Darwin Core (DwC)</title>
+    <link href="http://www.rddl.org/xrd.css" type="text/css" rel="stylesheet"/>
+  </head>
+
+  <body>
+    <h1>Resource Directory (RDDL) for Darwin Core (DwC)</h1>
+    <div id="overview">
+      <h2>Overview</h2>
+      <p>The Darwin Core root namespace (<code>http://rs.tdwg.org/dwc/</code>) is currently used only for the latest version. Versions copies are also kept in version namespaces in the event that one would like to bind to a specific version.</p>
+    </div>
+
+    <h2>Resources</h2>
+    <div id="resources" class="resource">
+      <ul class="compact">
+      <rddl:resource 
+          xlink:type="simple" 
+          id="DwC" 
+          xlink:role="http://www.rddl.org/" 
+          xlink:arcrole="http://www.rddl.org/purposes#directory" 
+          xlink:href="http://rs.tdwg.org/dwc" 
+          xlink:title="RDDL Subdirectory: http://rs.tdwg.org/dwc">
+        <li><a href="http://rs.tdwg.org/dwc">RDDL Subdirectory: http://rs.tdwg.org/dwc</a></li>
+      </rddl:resource>
+      </ul>
+
+      <ul class="compact">
+          <a href="http://rs.tdwg.org/dwc/tdwg_dw_record.xsd">Generic Darwin Record Application Schema</a>
+        <ul class="compact">
+          <a href="http://rs.tdwg.org/dwc/tdwg_dw_core.xsd">Darwin Core Schema</a>
+        </ul>
+        <ul class="compact">
+          <a href="http://rs.tdwg.org/dwc/tdwg_dw_geospatial.xsd">Darwin Geospatial Extension Schema</a>
+        </ul>
+        <ul class="compact">
+          <a href="http://rs.tdwg.org/dwc/tdwg_dw_curatorial.xsd">Darwin Curatorial Extension Schema</a>
+        </ul>
+        <ul class="compact">
+          <a href="http://rs.tdwg.org/dwc/tdwg_dw_element.xsd">Darwin Element Definition Schema</a>
+        </ul>
+      </ul>
+
+        <ul class="compact">
+          <a href="http://rs.tdwg.org/dwc/tdwg_dw_record_tapir.xsd">Darwin Record Application Schema for TAPIR</a>
+        </ul>
+
+      <ul class="compact">
+          <a href="http://rs.tdwg.org/dwc/tdwg_basetypes.xsd">Base Type Definition Schema</a>
+      </ul>
+      <ul class="compact">
+          <a href="http://rs.tdwg.org/dwc/tdwg_gml.xsd">TDWG Simple GML Profile</a>
+      </ul>
+
+    </div>
+
+    <div id="footer">
+      <p>Copyright (c) 2006-2007 Taxonomic Databases Working Group. Author: John Wieczorek</p>
+    </div>
+  </body>
+</html>
