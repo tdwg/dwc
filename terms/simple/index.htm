@@ -13,11 +13,11 @@
 <META name="DC.contributor" content="Renato De Giovanni (CRIA)"/>
 <META name="DC.contributor" content="Tim Robertson (GBIF)"/>
 <META name="DC.contributor" content="Dave Vieglais (KUNHM)"/>
-<META name="DC.modified" content="2009-05-25"/>
+<META name="DC.modified" content="2009-07-06"/>
 <META name="DC.dateAccepted" content="2009-04-21"/>
 <META name="DC.format" content="text/html"/>
-<META name="DC.identifier" content="http://rs.tdwg.org/dwc/docs/2009-05-25/"/>
-<META name="DC.replaces" content="http://rs.tdwg.org/dwc/docs/2009-04-29/"/>
+<META name="DC.identifier" content="http://rs.tdwg.org/dwc/docs/2009-07-06/"/>
+<META name="DC.replaces" content="http://rs.tdwg.org/dwc/docs/2009-05-25/"/>
 <META name="DC.publisher" content="Biodiversity Information Standards TDWG"/>
 <META name="DC.rights" content=""/>
 <META name="DC.accessRights" content="public"/>
@@ -81,7 +81,7 @@
     </TR>
     <TR>
       <TH>Date Modified:</TH>
-      <TD>2009-05-25</TD>
+      <TD>2009-07-06</TD>
     </TR>
     <TR>
       <TH>Abstract:</TH>
@@ -105,7 +105,7 @@
     </TR>
     <TR>
       <TH>Identifier:</TH>
-      <TD>http://rs.tdwg.org/dwc/2009-05-25/terms/simple/</TD>
+      <TD>http://rs.tdwg.org/dwc/2009-07-06/terms/simple/</TD>
     </TR>
     <TR>
       <TH>Latest Version:</TH>
@@ -113,7 +113,7 @@
     </TR>
     <TR>
       <TH>Replaces:</TH>
-      <TD><A href="http://rs.tdwg.org/dwc/2009-04-29/terms/simple/index.htm">http://rs.tdwg.org/dwc/2009-04-29/terms/simple/</A></TD>
+      <TD><A href="http://rs.tdwg.org/dwc/2009-05-25/terms/simple/index.htm">http://rs.tdwg.org/dwc/2009-05-25/terms/simple/</A></TD>
     </TR>
     <TR>
       <TH>Document Status:</TH>
@@ -129,12 +129,14 @@
 <P>
 <A name="introduction" id="introduction"></A> 
 <H2>1. Introduction</H2>
-
+<P>
+<b>Audience</b>: This document is targeted toward those who want to share biodiversity information using the simplest methods 
+and structure - the <i>Simple Darwin Core</i>. It explains the uses and limitations of this structure and how to expand upon it.
 <P>
 <A name="whatis" id="whatis"></A> 
 <H3>1.1 What is Simple Darwin Core?</H3>
 The <i>Simple Darwin Core</i> is a predefined subset of the terms that have common use across a wide variety of biodiversity 
-applications. The terms used in the Simple Darwin Core are those that are found at the cross-section of taxonomic names, 
+applications. The terms used in the <i>Simple Darwin</i> Core are those that are found at the cross-section of taxonomic names, 
 places, and events that document biological occurrences on the planet. The two driving principles are simplicity and 
 flexibility.
 
@@ -142,7 +144,7 @@ flexibility.
 <H3>1.2 What makes it simple?</H3>
 The <i>Simple Darwin Core</i> is simple in that it assumes (and allows) no structure beyond the concept of rows and columns, 
 which might be thought of as attributes and their values, or fields and records. The words field and record will be 
-used throughout the rest of the document to refer to the two dimensions of the Simple Darwin Core structure. Think 
+used throughout the rest of the document to refer to the two dimensions of the <i>Simple Darwin Core</i> structure. Think 
 of the term names as the field names. In other words, a <i>Simple Darwin Core</i> record could be captured in a spreadsheet 
 or in a single database table. 
 
@@ -160,7 +162,7 @@ flexibility promotes the reuse of the terms and sharing mechanisms for a wide va
 
 <A name="rules" id="rules"></A> 
 <H3>1.4 Are there any rules?</h3>
-There are just a few general guiding principles on how to make the best use of the Simple Darwin Core:
+There are just a few general guiding principles on how to make the best use of the <i>Simple Darwin Core</i>:
 <ol>
 <li>Any Darwin Core term name can be used as a field name.</li>
 <li>No field name may be repeated in a record.</li>
@@ -168,6 +170,7 @@ There are just a few general guiding principles on how to make the best use of t
 <a href="../index.htm#Occurrence">Occurrence</a>, 
 <a href="../index.htm#Event">Event</a>, 
 <a href="../index.htm#dcterms:Location">Location</a>, 
+<a href="../index.htm#GeologicalContext">GeologicalContext</a>,
 <a href="../index.htm#Identification">Identification</a>, 
 <a href="../index.htm#Taxon">Taxon</a>,
 <a href="../index.htm#ResourceRelationship">ResourceRelationship</a>,
@@ -195,7 +198,7 @@ There are just a few general guiding principles on how to make the best use of t
 <li>If data are shared in lower quality than the original, use <a href="../index.htm#dataGeneralizations">dataGeneralizations</a> to say so.</li>
 </ol>
 
-The <i>Simple Darwin Core</i> allows (but does not require) every field to appear only once in a record - 
+Every field in the <i>Simple Darwin Core</i> may appear either once or not at all in a single record - 
 otherwise how could you distinguish one <a href="../index.htm#scientificName">scientificName</a> field from another one? Think of a database table. It
 will not allow you to have the same name for two different fields. Because of this design restriction (lack of flexibility 
 for the sake of simplicity), the auxiliary fields from the 
@@ -203,7 +206,7 @@ for the sake of simplicity), the auxiliary fields from the
 <a href="../index.htm#MeasurementOrFact">MeasurementOrFact</a> classes are of somewhat limited utility here - 
 you could only share one MeasurementOrFact and one ResourceRelationship per record. You might argue then that there 
 is no way to share information that requires related structures, such as a history of identifications of a specimen. 
-That is mostly true. The only recourse within the Simple Darwin Core is to force the data into one of the catch all 
+That is mostly true. The only recourse within the <i>Simple Darwin Core</i> is to force the data into one of the catch all 
 "list" terms such as
 <a href="../index.htm#dynamicProperties">dynamicProperties</a>, 
 <a href="../index.htm#otherCatalogNumbers">otherCatalogNumbers</a>, 
@@ -246,12 +249,12 @@ ways, including, but not limited to, text files and xml documents. Equivalent wa
 in the sections <a href="#simpledwcastext">Simple Darwin Core as Text</a> and 
 <a href="#simpledwcasxml">Simple Darwin Core as XML</a>.
 <P>
-What you need to do as a contributor of data via the Simple Darwin Core depends on the requirements of the ones
+What you need to do as a contributor of data via the <i>Simple Darwin Core</i> depends on the requirements of the ones
 who are going to consume those data. For example, if you have a collaborator who wants to share data via the 
-Simple Darwin Core, then it may be sufficient to create a spreadsheet that contains column headers matching 
+<i>Simple Darwin Core</i>, then it may be sufficient to create a spreadsheet that contains column headers matching 
 as many of the Darwin Core term names as you are both interested in sharing - just to be sure you both understand 
 the meaning of the fields you share, and therefore hopefully something about their content. You might create a 
-table in a database using the Simple Darwin Core as 
+table in a database using the <i>Simple Darwin Core</i> as 
 a model (if it met all of your needs), and then connect that database with services for sharing via the web. You 
 might use that same database (or spreadsheet) to export a comma-separated value (CSV) file for upload into a 
 hosted service that could serve the data on your behalf. Or you might use that same file to upload into a service
@@ -261,15 +264,16 @@ data in the context of other shared data.
 <A name="simpledwcastext" id="simpledwcastext"></A> 
 <h4>1.5.1 Simple Darwin Core as Text</h4>
 The <i>Text Guide</i> [<a href="../guides/text/index.htm">TEXTGUIDE</a>] describes how to construct and format a text
-file using <i>Fielded Text</i> [<A href="http://www.fieldedtext.org/">FIELDEDTEXT</a>]. That specification allows the contributor to describe the contents of a text file, or
-set of text files (related or not) through a separate configuration file (called a metafile). The metafile allows
-the contributor to communicate the structure of the content of the file or files and any relationships between them.
-Though it is good practice to describe a <i>Simple Darwin Core</i> file with such a metafile, it isn't strictly necessary
-if the file follows the CSV file specification and the first line of the file contains the the field names. A <i>Fielded
-Text</i> metafile for any text file based on the <i>Simple Darwin Core</i> can be created by customizing the example 
-metafile [<a href="../../examples/text/example_text_simpledwc_complete.xml">SIMPLEMETAFILE</a>] (if this link shows 
-a blank page in your browser, use the View Source option to see the XML document), which includes references to all 
-Darwin Core terms. Refer to the comments in the file itself as well as the metafile specification in the <i>Text Guide</i> 
+file using a simplified subset of the <i>Fielded Text</i> [<A href="http://www.fieldedtext.org/">FIELDEDTEXT</a>] 
+specification, which allows the contributor to describe the contents of a text file, or set of text files (related 
+or not) through a separate configuration file (called a metafile). The metafile allows the contributor to communicate 
+the structure of the content of the file or files and any relationships between them. Though it is good practice to 
+describe a <i>Simple Darwin Core</i> file with such a metafile, it isn't strictly necessary if the file follows the 
+CSV file specification and the first line of the file contains the the field names. A <i>Fielded Text</i> metafile for 
+any text file based on the <i>Simple Darwin Core</i> can be created by customizing the example metafile 
+[<a href="../../examples/text/example_text_simpledwc_complete.xml">SIMPLEMETAFILE</a>] (if this link shows a blank page 
+in your browser, use the View Source option to see the XML document), which includes references to all Darwin Core terms. 
+Refer to the comments in the file itself as well as the metafile specification in the <i>Text Guide</i> 
 [<A href="../guides/text/index.htm">TEXTGUIDE</a>] for more information.
 
 <A name="simpledwcasxml" id="simpledwcasxml"></A> 
@@ -294,7 +298,7 @@ containing one <i>SimpleDarwinRecord</i> for a <i>Taxon</i>:
   &lt;dc:modified&gt;2009-02-12T14:22Z&lt;/dc:modified&gt;
   &lt;dc:language&gt;en&lt;/dc:language&gt;
   &lt;dwc:scientificName&gt;Ctenomys sociabilis&lt;/dwc:scientificName&gt;
-  &lt;dwc:acceptedTaxonName&gt;Ctenomys sociabilis&lt;/dwc:acceptedTaxonName&gt;
+  &lt;dwc:acceptedScientificName&gt;Ctenomys sociabilis&lt;/dwc:acceptedScientificName&gt;
   &lt;dwc:higherTaxonName&gt;Animalia, Chordata, Vertebrata, Mammalia, Theria, Eutheria, Rodentia, Hystricognatha, Hystricognathi, Ctenomyidae, Ctenomyini, Ctenomys&lt;/dwc:higherTaxonName&gt;
   &lt;dwc:kingdom&gt;Animalia&lt;/dwc:kingdom&gt;
   &lt;dwc:phylum&gt;Chordata&lt;/dwc:phylum&gt;
@@ -303,7 +307,7 @@ containing one <i>SimpleDarwinRecord</i> for a <i>Taxon</i>:
   &lt;dwc:family&gt;Ctenomyidae&lt;/dwc:family&gt;
   &lt;dwc:genus&gt;Ctenomys&lt;/dwc:genus&gt;
   &lt;dwc:specificEpithet&gt;sociabilis&lt;/dwc:specificEpithet&gt;
-  &lt;dwc:taxonRank&gt;species&lt;/dwc:taxonRank&gt;
+  &lt;dwc:scientificNameRank&gt;species&lt;/dwc:scientificNameRank&gt;
   &lt;dwc:scientificNameAuthorship&gt;Pearson and Christie, 1985&lt;/dwc:scientificNameAuthorship&gt;
   &lt;dwc:nomenclaturalCode&gt;ICZN&lt;/dwc:nomenclaturalCode&gt;
   &lt;dwc:namePublishedIn&gt;Pearson O. P., and M. I. Christie. 1985. Historia Natural, 5(37):388&lt;/dwc:namePublishedIn&gt;
@@ -365,7 +369,8 @@ your data, even if there might be problems with people using it reliably.
   &lt;dwc:scientificName&gt;Tyrannosourus rex&lt;/dwc:scientificName&gt;
   &lt;dwc:genus&gt;Tyrannosourus&lt;/dwc:genus&gt;
   &lt;dwc:specificEpithet&gt;rex&lt;/dwc:specificEpithet&gt;
-  &lt;dwc:dynamicProperties&gt;latestPeriodOrHighestSystem="Cretaceous"; latestEonOrHighestEonothem="Late Cretaceous"&lt;/dwc:dynamicProperties&gt;
+  &lt;dwc:latestPeriodOrHighestSystem&gt;Cretaceous&lt;/dwc:latestPeriodOrHighestSystem&gt;
+  &lt;dwc:latestEonOrHighestEonothem&gt;Late Cretaceous&lt;/dwc:latestEonOrHighestEonothem&gt;
  &lt;/SimpleDarwinRecord&gt;
 &lt;/SimpleDarwinRecordSet&gt;
 </pre>

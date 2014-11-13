@@ -109,7 +109,7 @@
       <concept id="http://digir.net/schema/conceptual/darwin/2003/1.0/Subspecies"/>
     </ref>
   </baseConcept>
-  <baseConcept id="http://rs.tdwg.org/dwc/terms/taxonRank">
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/scientificNameRank">
     <ref>
       <concept id="http://rs.tdwg.org/dwc/dwcore/InfraspecificRank"/>
     </ref>
@@ -359,6 +359,11 @@
     </ref>
   </baseConcept>
   <baseConcept id="http://rs.tdwg.org/dwc/terms/footprintWKT">
+    <ref>
+      <concept id="http://rs.tdwg.org/dwc/geospatial/FootprintWKT"/>
+    </ref>
+  </baseConcept>
+  <baseConcept id="http://rs.tdwg.org/dwc/terms/footprintSpatialFit">
     <ref>
       <concept id="http://rs.tdwg.org/dwc/geospatial/FootprintSpatialFit"/>
     </ref>

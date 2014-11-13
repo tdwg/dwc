@@ -13,11 +13,11 @@
 <META name="DC.contributor" content="Renato De Giovanni (CRIA)"/>
 <META name="DC.contributor" content="Tim Robertson (GBIF)"/>
 <META name="DC.contributor" content="Dave Vieglais (KUNHM)"/>
-<META name="DC.modified" content="2009-05-25"/>
+<META name="DC.modified" content="2009-07-06"/>
 <META name="DC.dateAccepted" content="2009-02-12"/>
 <META name="DC.format" content="text/html"/>
-<META name="DC.identifier" content="http://rs.tdwg.org/dwc/2009-05-25/terms/guides/xml"/>
-<META name="DC.replaces" content="http://rs.tdwg.org/dwc/2009-04-29/terms/guides/xml/"/>
+<META name="DC.identifier" content="http://rs.tdwg.org/dwc/2009-07-06/terms/guides/xml"/>
+<META name="DC.replaces" content="http://rs.tdwg.org/dwc/2009-05-25/terms/guides/xml/"/>
 <META name="DC.publisher" content="Biodiversity Information Standards TDWG"/>
 <META name="DC.rights" content=""/>
 <META name="DC.accessRights" content="public"/>
@@ -83,7 +83,7 @@
 </TR>
 <TR>
 <TH>Date Modified:</TH>
-<TD>2009-05-25</TD>
+<TD>2009-07-06</TD>
 </TR>
 <TR>
 <TH>Abstract:</TH>
@@ -107,14 +107,14 @@
 </TR>
 <TR>
 <TH>Identifier:</TH>
-<TD>http://rs.tdwg.org/dwc/2009-05-25/terms/guides/xml/</TD>
+<TD>http://rs.tdwg.org/dwc/2009-07-06/terms/guides/xml/</TD>
 </TR>
 <TR><TH>Latest Version:</TH>
 <TD><A href="http://rs.tdwg.org/dwc/terms/guides/xml/index.htm">http://rs.tdwg.org/dwc/terms/guides/xml/</A></TD>
 </TR>
 <TR>
 <TH>Replaces:</TH>
-<TD><a href="http://rs.tdwg.org/dwc/2009-04-29/terms/guides/xml/index.htm">http://rs.tdwg.org/dwc/2009-04-29/terms/guides/xml/</A></TD>
+<TD><a href="http://rs.tdwg.org/dwc/2009-05-25/terms/guides/xml/index.htm">http://rs.tdwg.org/dwc/2009-05-25/terms/guides/xml/</A></TD>
 </TR>
 <TR>
 <TH>Document Status:</TH>
@@ -128,6 +128,9 @@
 
 <A name="introduction" id="introduction"></A> 
 <H2>1. Introduction</H2>
+<b>Audience</b>: This document is targeted toward those who wish to use or construct application schemas using Darwin Core terms in XML.
+It includes explanations of existing schemas such as the Simple Darwin Core [<A href="../../simple/index.htm">SIMPLEDWC</a>] and how 
+to build new schemas to meet specific models of information.
 <P>
 This document provides guidelines for implementing application schemas based on Darwin Core terms 
 [<a href="../../index.htm">TERMS</a>] using [<a href="http://www.w3.org/XML/">XML</a>]. The underlying metadata 
@@ -151,10 +154,10 @@ based on <i>XML Schemas</i> are more flexible and are more easily re-used within
 <A name="xmlnamespaces" id="xmlnamespaces"></A> 
 <H3>2.2 XML Namespaces</H3>
 Implementors should use <i>XML Namespaces</i> 
-[<A href="http://dublincore.org/documents/dc-xml-guidelines/#XMLNS">XMLNS</A>] to uniquely identify elements. 
+[<A href="http://www.w3.org/TR/1999/REC-xml-names-19990114/">XMLNS</A>] to uniquely identify elements. 
 Darwin Core namespaces are defined in the <i>Darwin Core Namespace Policy</i> 
 [<A href="../../namespace/index.htm">NAMESPACEPOLICY</a>], while Dublin Core namespaces are defined in the
-<i>DCMI Namespace Recommendation</i> [<A href="http://dublincore.org/documents/dc-xml-guidelines/#DCMINS">DCMINS</A>].
+<i>DCMI Namespace Recommendation</i> [<A href="http://dublincore.org/documents/dcmi-namespace/">DCMINS</A>].
 <P>
 <A name="abstractmodel" id="abstractmodel"></A> 
 <H3>2.3 Abstract model</H3>
@@ -246,7 +249,7 @@ It is permissible to indicate the language of the <EM>value</EM> using the &#39;
 <P>
 The <i>Simple Darwin Core</i> [<A href="../../../xsd/tdwg_dwc_simple.xsd">SIMPLEXMLSCHEMA</a>] most closely models the "flat" nature of many data sets. It 
 is a ready-made schema for sharing information with no structure beyond properties of a <EM>record</EM> (equivalent to fields in a table, or columns 
-in a spreadsheet).  It is meant to accomodate all properties except those that require further structure to be meaningful
+in a spreadsheet).  It is meant to accommodate all properties except those that require further structure to be meaningful
 (auxilliary terms in the classes <a href="../../index.htm#ResourceRelationship">ResourceRelationship</a> and 
 <a href="../../index.htm#MeasurementOrFact">MeasurementOrFact</a>. The schema has no required terms and no term is repeated within a given 
 <EM>record</EM>. Refer to the <i>Simple Darwin Core</i> page [<A href="../../simple/index.htm">SIMPLEDWC</a>]

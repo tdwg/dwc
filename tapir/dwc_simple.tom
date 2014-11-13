@@ -15,7 +15,7 @@ Output Model for Simple Darwin Record Schema
 </structure>
 <indexingElement path="/DarwinRecordSet/DarwinRecord"/>
 <mapping>
-                <!-- Record Level domain  -->
+                <!-- Record Level terms -->
 <node path="/DarwinRecordSet/DarwinRecord/dc:type">
 <concept id="http://purl.org/dc/terms/type"/>
 </node>
@@ -49,11 +49,11 @@ Output Model for Simple Darwin Record Schema
 <node path="/DarwinRecordSet/DarwinRecord/dwc:dynamicProperties">
 <concept id="http://rs.tdwg.org/dwc/terms/dynamicProperties"/>
 </node>
-                <!-- Dataset domain -->
+                <!-- Dataset terms -->
 <node path="/DarwinRecordSet/DarwinRecord/dwc:datasetID">
 <concept id="http://rs.tdwg.org/dwc/terms/datasetID"/>
 </node>
-                <!-- Occurrence domain -->
+                <!-- Occurrence terms -->
 <node path="/DarwinRecordSet/DarwinRecord/dwc:occurrenceID">
 <concept id="http://rs.tdwg.org/dwc/terms/occurrenceID"/>
 </node>
@@ -172,7 +172,7 @@ Output Model for Simple Darwin Record Schema
 <node path="/DarwinRecordSet/DarwinRecord/dwc:eventRemarks">
 <concept id="http://rs.tdwg.org/dwc/terms/eventRemarks"/>
 </node>
-                <!-- LocationTerms -->
+                <!-- Location terms -->
 <node path="/DarwinRecordSet/DarwinRecord/dwc:locationID">
 <concept id="http://rs.tdwg.org/dwc/terms/locationID"/>
 </node>
@@ -251,6 +251,9 @@ Output Model for Simple Darwin Record Schema
 <node path="/DarwinRecordSet/DarwinRecord/dwc:verbatimCoordinateSystem">
 <concept id="http://rs.tdwg.org/dwc/terms/verbatimCoordinateSystem"/>
 </node>
+<node path="/DarwinRecordSet/DarwinRecord/dwc:verbatimSRS">
+<concept id="http://rs.tdwg.org/dwc/terms/verbatimSRS"/>
+</node>
 <node path="/DarwinRecordSet/DarwinRecord/dwc:decimalLatitude">
 <concept id="http://rs.tdwg.org/dwc/terms/decimalLatitude"/>
 </node>
@@ -272,6 +275,9 @@ Output Model for Simple Darwin Record Schema
 <node path="/DarwinRecordSet/DarwinRecord/dwc:footprintWKT">
 <concept id="http://rs.tdwg.org/dwc/terms/footprintWKT"/>
 </node>
+<node path="/DarwinRecordSet/DarwinRecord/dwc:footprintSRS">
+<concept id="http://rs.tdwg.org/dwc/terms/footprintSRS"/>
+</node>
 <node path="/DarwinRecordSet/DarwinRecord/dwc:footprintSpatialFit">
 <concept id="http://rs.tdwg.org/dwc/terms/footprintSpatialFit"/>
 </node>
@@ -290,7 +296,63 @@ Output Model for Simple Darwin Record Schema
 <node path="/DarwinRecordSet/DarwinRecord/dwc:georeferenceRemarks">
 <concept id="http://rs.tdwg.org/dwc/terms/georeferenceRemarks"/>
 </node>
-                <!-- IdentificationTerms -->
+                <!-- GeologicalContext Terms -->
+<node path="/DarwinRecordSet/DarwinRecord/dwc:geologicalContextID">
+<concept id="http://rs.tdwg.org/dwc/terms/geologicalContextID"/>
+</node>
+<node path="/DarwinRecordSet/DarwinRecord/dwc:earliestEonOrLowestEonothem">
+<concept id="http://rs.tdwg.org/dwc/terms/earliestEonOrLowestEonothem"/>
+</node>
+<node path="/DarwinRecordSet/DarwinRecord/dwc:latestEonOrHighestEonothem">
+<concept id="http://rs.tdwg.org/dwc/terms/latestEonOrHighestEonothem"/>
+</node>
+<node path="/DarwinRecordSet/DarwinRecord/dwc:earliestEraOrLowestErathem">
+<concept id="http://rs.tdwg.org/dwc/terms/earliestEraOrLowestErathem"/>
+</node>
+<node path="/DarwinRecordSet/DarwinRecord/dwc:latestEraOrHighestErathem">
+<concept id="http://rs.tdwg.org/dwc/terms/latestEraOrHighestErathem"/>
+</node>
+<node path="/DarwinRecordSet/DarwinRecord/dwc:earliestPeriodOrLowestSystem">
+<concept id="http://rs.tdwg.org/dwc/terms/earliestPeriodOrLowestSystem"/>
+</node>
+<node path="/DarwinRecordSet/DarwinRecord/dwc:latestPeriodOrHighestSystem">
+<concept id="http://rs.tdwg.org/dwc/terms/latestPeriodOrHighestSystem"/>
+</node>
+<node path="/DarwinRecordSet/DarwinRecord/dwc:earliestEpochOrLowestSeries">
+<concept id="http://rs.tdwg.org/dwc/terms/earliestEpochOrLowestSeries"/>
+</node>
+<node path="/DarwinRecordSet/DarwinRecord/dwc:latestEpochOrHighestSeries">
+<concept id="http://rs.tdwg.org/dwc/terms/latestEpochOrHighestSeries"/>
+</node>
+<node path="/DarwinRecordSet/DarwinRecord/dwc:earliestAgeOrLowestStage">
+<concept id="http://rs.tdwg.org/dwc/terms/earliestAgeOrLowestStage"/>
+</node>
+<node path="/DarwinRecordSet/DarwinRecord/dwc:latestAgeOrHighestStage">
+<concept id="http://rs.tdwg.org/dwc/terms/latestAgeOrHighestStage"/>
+</node>
+<node path="/DarwinRecordSet/DarwinRecord/dwc:lowestBiostratigraphicZone">
+<concept id="http://rs.tdwg.org/dwc/terms/lowestBiostratigraphicZone"/>
+</node>
+<node path="/DarwinRecordSet/DarwinRecord/dwc:highestBiostratigraphicZone">
+<concept id="http://rs.tdwg.org/dwc/terms/highestBiostratigraphicZone"/>
+</node>
+<node path="/DarwinRecordSet/DarwinRecord/dwc:lithostratigraphicTerms">
+<concept id="http://rs.tdwg.org/dwc/terms/lithostratigraphicTerms"/>
+</node>
+<node path="/DarwinRecordSet/DarwinRecord/dwc:group">
+<concept id="http://rs.tdwg.org/dwc/terms/group"/>
+</node>
+<node path="/DarwinRecordSet/DarwinRecord/dwc:formation">
+<concept id="http://rs.tdwg.org/dwc/terms/formation"/>
+</node>
+<node path="/DarwinRecordSet/DarwinRecord/dwc:member">
+<concept id="http://rs.tdwg.org/dwc/terms/member"/>
+</node>
+<node path="/DarwinRecordSet/DarwinRecord/dwc:bed">
+<concept id="http://rs.tdwg.org/dwc/terms/bed"/>
+</node>
+
+                <!-- Identification Terms -->
 <node path="/DarwinRecordSet/DarwinRecord/dwc:identificationID">
 <concept id="http://rs.tdwg.org/dwc/terms/identificationID"/>
 </node>
@@ -312,12 +374,12 @@ Output Model for Simple Darwin Record Schema
 <node path="/DarwinRecordSet/DarwinRecord/dwc:typeStatus">
 <concept id="http://rs.tdwg.org/dwc/terms/typeStatus"/>
 </node>
-                <!-- TaxonTerms -->
-<node path="/DarwinRecordSet/DarwinRecord/dwc:taxonNameID">
-<concept id="http://rs.tdwg.org/dwc/terms/taxonNameID"/>
+                <!-- Taxon terms -->
+<node path="/DarwinRecordSet/DarwinRecord/dwc:scientificNameID">
+<concept id="http://rs.tdwg.org/dwc/terms/scientificNameID"/>
 </node>
-<node path="/DarwinRecordSet/DarwinRecord/dwc:acceptedTaxonNameID">
-<concept id="http://rs.tdwg.org/dwc/terms/acceptedTaxonNameID"/>
+<node path="/DarwinRecordSet/DarwinRecord/dwc:acceptedScientificNameID">
+<concept id="http://rs.tdwg.org/dwc/terms/acceptedScientificNameID"/>
 </node>
 <node path="/DarwinRecordSet/DarwinRecord/dwc:higherTaxonNameID">
 <concept id="http://rs.tdwg.org/dwc/terms/higherTaxonNameID"/>
@@ -328,8 +390,8 @@ Output Model for Simple Darwin Record Schema
 <node path="/DarwinRecordSet/DarwinRecord/dwc:scientificName">
 <concept id="http://rs.tdwg.org/dwc/terms/scientificName"/>
 </node>
-<node path="/DarwinRecordSet/DarwinRecord/dwc:acceptedTaxonName">
-<concept id="http://rs.tdwg.org/dwc/terms/acceptedTaxonName"/>
+<node path="/DarwinRecordSet/DarwinRecord/dwc:acceptedScientificName">
+<concept id="http://rs.tdwg.org/dwc/terms/acceptedScientificName"/>
 </node>
 <node path="/DarwinRecordSet/DarwinRecord/dwc:higherTaxonName">
 <concept id="http://rs.tdwg.org/dwc/terms/higherTaxonName"/>
@@ -364,8 +426,11 @@ Output Model for Simple Darwin Record Schema
 <node path="/DarwinRecordSet/DarwinRecord/dwc:infraspecificEpithet">
 <concept id="http://rs.tdwg.org/dwc/terms/infraspecificEpithet"/>
 </node>
-<node path="/DarwinRecordSet/DarwinRecord/dwc:taxonRank">
-<concept id="http://rs.tdwg.org/dwc/terms/taxonRank"/>
+<node path="/DarwinRecordSet/DarwinRecord/dwc:scientificNameRank">
+<concept id="http://rs.tdwg.org/dwc/terms/scientificNameRank"/>
+</node>
+<node path="/DarwinRecordSet/DarwinRecord/dwc:verbatimScientificNameRank">
+<concept id="http://rs.tdwg.org/dwc/terms/verbatimScientificNameRank"/>
 </node>
 <node path="/DarwinRecordSet/DarwinRecord/dwc:scientificNameAuthorship">
 <concept id="http://rs.tdwg.org/dwc/terms/scientificNameAuthorship"/>
@@ -385,14 +450,17 @@ Output Model for Simple Darwin Record Schema
 <node path="/DarwinRecordSet/DarwinRecord/dwc:nomenclaturalStatus">
 <concept id="http://rs.tdwg.org/dwc/terms/nomenclaturalStatus"/>
 </node>
-<node path="/DarwinRecordSet/DarwinRecord/dwc:taxonRemarks">
-<concept id="http://rs.tdwg.org/dwc/terms/taxonRemarks"/>
-</node>
 <node path="/DarwinRecordSet/DarwinRecord/dwc:taxonConceptID">
 <concept id="http://rs.tdwg.org/dwc/terms/taxonConceptID"/>
 </node>
 <node path="/DarwinRecordSet/DarwinRecord/dwc:taxonAccordingTo">
 <concept id="http://rs.tdwg.org/dwc/terms/taxonAccordingTo"/>
+</node>
+<node path="/DarwinRecordSet/DarwinRecord/dwc:taxonRemarks">
+<concept id="http://rs.tdwg.org/dwc/terms/taxonRemarks"/>
+</node>
+<node path="/DarwinRecordSet/DarwinRecord/dwc:vernacularName">
+<concept id="http://rs.tdwg.org/dwc/terms/vernacularName"/>
 </node>
 </mapping>
 </outputModel>

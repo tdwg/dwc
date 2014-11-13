@@ -13,11 +13,11 @@
 <META name="DC.contributor" content="Renato De Giovanni (CRIA)"/>
 <META name="DC.contributor" content="Tim Robertson (GBIF)"/>
 <META name="DC.contributor" content="Dave Vieglais (KUNHM)"/>
-<META name="DC.modified" content="2009-05-25"/>
+<META name="DC.modified" content="2009-07-06"/>
 <META name="DC.dateAccepted" content="2009-02-12"/>
 <META name="DC.format" content="text/html"/>
-<META name="DC.identifier" content="http://rs.tdwg.org/dwc/2009-05-25/terms/history/versions/"/>
-<META name="DC.replaces" content="http://rs.tdwg.org/dwc/2009-04-29/terms/history/versions/"/>
+<META name="DC.identifier" content="http://rs.tdwg.org/dwc/2009-07-06/terms/history/versions/"/>
+<META name="DC.replaces" content="http://rs.tdwg.org/dwc/2009-05-25/terms/history/versions/"/>
 <META name="DC.publisher" content="Biodiversity Information Standards TDWG"/>
 <META name="DC.rights" content=""/>
 <META name="DC.accessRights" content="public"/>
@@ -67,6 +67,7 @@
 	    <div class="subSubMenu"><div class="menuItem"><a href="#dwcdraft14" onfocus="blurLink(this);">Darwin Core 1.4</a></div></div>
 	    <div class="subSubMenu"><div class="menuItem"><a href="#dwccuratorial" onfocus="blurLink(this);">Curatorial Extension</a></div></div>
 	    <div class="subSubMenu"><div class="menuItem"><a href="#dwcgeospatial" onfocus="blurLink(this);">Geospatial Extension</a></div></div>
+	    <div class="subSubMenu"><div class="menuItem"><a href="#paleo" onfocus="blurLink(this);">Paleontology Extension</a></div></div>
 	    <div class="separator"><hr/></div>
 	    <div class="menuItem level1"><a href="../../../translations/index.htm" onfocus="blurLink(this);">Translations</a></div>
           </div>
@@ -86,7 +87,7 @@
 </TR>
 <TR>
 <TH>Date Modified:</TH>
-<TD>2009-05-25</TD>
+<TD>2009-07-06</TD>
 </TR>
 <TR>
 <TH>Abstract:</TH>
@@ -113,14 +114,14 @@ For a quick reference guide to the current recommended Darwin Core terms, see [<
 </TR>
 <TR>
 <TH>Identifier:</TH>
-<TD>http://rs.tdwg.org/dwc/2009-05-25/terms/history/versions/</A></TD>
+<TD>http://rs.tdwg.org/dwc/2009-07-06/terms/history/versions/</A></TD>
 </TR>
 <TR><TH>Latest Version:</TH>
 <TD><A href="http://rs.tdwg.org/dwc/terms/history/versions/index.htm">http://rs.tdwg.org/dwc/terms/history/versions/</A></TD>
 </TR>
 <TR>
 <TH>Replaces:</TH>
-<TD><A href="http://rs.tdwg.org/dwc/2009-04-29/terms/history/versions/index.htm">http://rs.tdwg.org/dwc/2009-04-29/terms/history/versions/</A></TD>
+<TD><A href="http://rs.tdwg.org/dwc/2009-05-25/terms/history/versions/index.htm">http://rs.tdwg.org/dwc/2009-05-25/terms/history/versions/</A></TD>
 </TR>
 <TR>
 <TH>Document Status:</TH>
@@ -134,14 +135,19 @@ For a quick reference guide to the current recommended Darwin Core terms, see [<
 
 <A name="introduction" id="introduction"></A> 
 <H2>1. Introduction</H2>
-<P>Before becoming a TDWG standard, the Darwin Core was instantiated and deployed in many different
+<b>Audience</b>: This document is targeted toward those who wish to understand how the standard Darwin Core terms are related to 
+previously used Darwin Core schemas. 
+<P>
+Before becoming a TDWG standard, the Darwin Core was instantiated and deployed in many different
 application profiles, all of them based on XML schema. The openly developed and widely used versions 
 of the Darwin Core ([<A href="http://digir.net/schema/conceptual/darwin/2003/1.0/darwin2.xsd">CLASSIC</A>], 
 [<A href="http://digir.net/schema/conceptual/darwin/manis/1.21/darwin2.xsd">MANIS</A>], 
 [<A href="http://iobis.org/obis/obis.xsd">OBIS</A>], 
 [<A href="http://rs.tdwg.org/dwc/tdwg_dw_core.xsd">DRAFT14</A>], 
 [<A href="http://rs.tdwg.org/dwc/tdwg_dw_curatorial.xsd">CURATORIAL</A>], 
-[<A href="http://rs.tdwg.org/dwc/tdwg_dw_geospatial.xsd">GEOSPATIAL</A>]) are each compared (mapped conceptually) to the 
+[<A href="http://rs.tdwg.org/dwc/tdwg_dw_geospatial.xsd">GEOSPATIAL</A>]), 
+[<A href="http://wiki.tdwg.org/twiki/bin/view/DarwinCore/PaleontologyElement">PALEO</A>]) 
+are each compared (mapped conceptually) to the 
 current recommended Darwin Core terms [<a href="../../index.htm">TERMS</a>] in this document. Each historical version is 
 mapped in a separate table and can be referenced quickly from the <a href="#mappings">Mappings</a> section below.
 
@@ -154,6 +160,7 @@ mapped in a separate table and can be referenced quickly from the <a href="#mapp
 2.4 <a href="#dwcdraft14">Darwin Core 1.4 (Draft Standard)</a><br>
 2.5 <a href="#dwccuratorial">Darwin Core 1.4 Curatorial extension</a><br>
 2.6 <a href="#dwcgeospatial">Darwin Core 1.4 Geospatial extension</a><br>
+2.7 <a href="#paleo">Darwin Core 1.4 Paleontology extension</a><br>
 <P>
 
 <A name=dwcclassic" id="dwcclassic"></A> 
@@ -417,6 +424,30 @@ mapped in a separate table and can be referenced quickly from the <a href="#mapp
 
 </TBODY></TABLE>
 
+<A name=paleo" id="paleo"></A> 
+<H3>2.7 Darwin Core 1.4 Paleontology extension</H3>
+<TABLE class="border" cellspacing="0"><TBODY>
+<TR><TH colspan="1">Darwin Core 1.4 Paleontology Element</TH><TH colspan="1">Recommended Term</TH></TR>
+
+<TR><TD><a href="../index.htm#EarliestEonOrLowestEonothem-2005-07-03">EarliestEonOrLowestEonothem</a></TD>	<TD><a href="../../index.htm#earliestEonOrLowestEonothem">earliestEonOrLowestEonothem</a></TD>
+<TR><TD><a href="../index.htm#LatestEonOrHighestEonothem-2005-07-03">LatestEonOrHighestEonothem</a></TD>	<TD><a href="../../index.htm#latestEonOrHighestEonothem">latestEonOrHighestEonothem</a></TD>
+<TR><TD><a href="../index.htm#EarliestEraOrLowestErathem-2005-07-03">EarliestEraOrLowestErathem</a></TD>	<TD><a href="../../index.htm#earliestEraOrLowestErathem">earliestEraOrLowestErathem</a></TD>
+<TR><TD><a href="../index.htm#LatestEraOrHighestErathem-2005-07-03">LatestEraOrHighestErathem</a></TD>	<TD><a href="../../index.htm#latestEraOrHighestErathem">latestEraOrHighestErathem</a></TD>
+<TR><TD><a href="../index.htm#EarliestPeriodOrLowestSystem-2005-07-03">EarliestPeriodOrLowestSystem</a></TD>	<TD><a href="../../index.htm#earliestPeriodOrLowestSystem">earliestPeriodOrLowestSystem</a></TD>
+<TR><TD><a href="../index.htm#LatestPeriodOrHighestSystem-2005-07-03">LatestPeriodOrHighestSystem</a></TD>	<TD><a href="../../index.htm#latestPeriodOrHighestSystem">latestPeriodOrHighestSystem</a></TD>
+<TR><TD><a href="../index.htm#EarliestEpochOrLowestSeries-2005-07-03">EarliestEpochOrLowestSeries</a></TD>	<TD><a href="../../index.htm#earliestEpochOrLowestSeries">earliestEpochOrLowestSeries</a></TD>
+<TR><TD><a href="../index.htm#LatestEpochOrHighestSeries-2005-07-03">LatestEpochOrHighestSeries</a></TD>	<TD><a href="../../index.htm#latestEpochOrHighestSeries">latestEpochOrHighestSeries</a></TD>
+<TR><TD><a href="../index.htm#EarliestAgeOrLowestStage-2005-07-03">EarliestAgeOrLowestStage</a></TD>	<TD><a href="../../index.htm#earliestAgeOrLowestStage">earliestAgeOrLowestStage</a></TD>
+<TR><TD><a href="../index.htm#LatestAgeOrHighestStage-2005-07-03">LatestAgeOrHighestStage</a></TD>	<TD><a href="../../index.htm#latestAgeOrHighestStage">latestAgeOrHighestStage</a></TD>
+<TR><TD><a href="../index.htm#LowestBiostratigraphicZone-2005-07-03">LowestBiostratigraphicZone</a></TD>	<TD><a href="../../index.htm#lowestBiostratigraphicZone">lowestBiostratigraphicZone</a></TD>
+<TR><TD><a href="../index.htm#HighestBiostratigraphicZone-2005-07-03">HighestBiostratigraphicZone</a></TD>	<TD><a href="../../index.htm#highestBiostratigraphicZone">highestBiostratigraphicZone</a></TD>
+<TR><TD><a href="../index.htm#LithostratigraphicTerms-2005-07-03">LithostratigraphicTerms</a></TD>	<TD><a href="../../index.htm#lithostratigraphicTerms">lithostratigraphicTerms</a></TD>
+<TR><TD><a href="../index.htm#Group-2005-07-03">Group</a></TD>	<TD><a href="../../index.htm#group">group</a></TD>
+<TR><TD><a href="../index.htm#Formation-2005-07-03">Formation</a></TD>	<TD><a href="../../index.htm#formation">formation</a></TD>
+<TR><TD><a href="../index.htm#Member-2005-07-03">Member</a></TD>	<TD><a href="../../index.htm#member">member</a></TD>
+<TR><TD><a href="../index.htm#Bed-2005-07-03">Bed</a></TD>	<TD><a href="../../index.htm#bed">bed</a></TD>
+
+</TBODY></TABLE>
 
 <!-- Footer -->
 <hr>

@@ -18,7 +18,7 @@
 <xs:element name="publisher" type="xs:string"/>
 <xs:element name="contributor" type="xs:string"/>
 <xs:element name="date" type="xs:date"/>
-    <xs:element name="type" type="xs:string" substitutionGroup="dwc:anyRecordLevelTerm"  type="dwctype:TypeEnum"/>
+    <xs:element name="type" type="dwctype:TypeEnum" substitutionGroup="dwc:anyRecordLevelTerm"/>
 <xs:element name="format" type="xs:string"/>
 <xs:element name="identifier" type="xs:string"/>
 <xs:element name="source" type="xs:string"/>

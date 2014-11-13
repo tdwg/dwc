@@ -13,11 +13,11 @@
 <META name="DC.contributor" content="Renato De Giovanni (CRIA)"/>
 <META name="DC.contributor" content="Tim Robertson (GBIF)"/>
 <META name="DC.contributor" content="Dave Vieglais (KUNHM)"/>
-<META name="DC.modified" content="2009-05-25"/>
+<META name="DC.modified" content="2009-07-06"/>
 <META name="DC.dateAccepted" content="2009-02-12"/>
 <META name="DC.format" content="text/html"/>
-<META name="DC.identifier" content="http://rs.tdwg.org/dwc/docs/2009-05-25"
-<META name="DC.replaces" content="http://rs.tdwg.org/dwc/2009-04-29/"/>
+<META name="DC.identifier" content="http://rs.tdwg.org/dwc/docs/2009-07-06"
+<META name="DC.replaces" content="http://rs.tdwg.org/dwc/2009-05-25/"/>
 <META name="DC.publisher" content="Biodiversity Information Standards TDWG"/>
 <META name="DC.rights" content=""/>
 <META name="DC.accessRights" content="public"/>
@@ -73,7 +73,7 @@
 </TR>
 <TR>
 <TH>Date Modified:</TH>
-<TD>2009-05-25</TD>
+<TD>2009-07-06</TD>
 </TR>
 <TR>
 <TH>Abstract:</TH>
@@ -97,14 +97,14 @@
 </TR>
 <TR>
 <TH>Identifier:</TH>
-<TD>http://rs.tdwg.org/dwc/2009-05-25/</TD>
+<TD>http://rs.tdwg.org/dwc/2009-07-06/</TD>
 </TR>
 <TR><TH>Latest Version:</TH>
 <TD><A href="http://rs.tdwg.org/dwc/index.htm">http://rs.tdwg.org/dwc/</A></TD>
 </TR>
 <TR>
 <TH>Replaces:</TH>
-<TD><A href="http://rs.tdwg.org/dwc/2009-04-29/index.htm">http://rs.tdwg.org/dwc/2009-04-29/</A></TD>
+<TD><A href="http://rs.tdwg.org/dwc/2009-05-25/index.htm">http://rs.tdwg.org/dwc/2009-05-25/</A></TD>
 </TR>
 <TR>
 <TH>Document Status:</TH>
@@ -119,6 +119,11 @@
 <P>
 <A name="introduction" id="introduction"></A> 
 <H2>1. Introduction</H2>
+<P>
+<b>Audience</b>: This document is an introduction to the Darwin Core standard and is meant to provide the background, reasons,
+and basic information about sharing (either as a publisher or user of) biodiversity information. Further details on specific
+aspects of the standard and its use can be found in the pages shown in the Table of Contents in the upper left of every page or in
+the <a href="#references">References</a> section of this page.
 <P>
 <b>What is the Darwin Core?</b> 
 <P>
@@ -137,7 +142,7 @@ suggests to "format your data according to the Darwin Core".
 <P> 
 <b>Motivation</b>: The Darwin Core standard was originally conceived to facilitate the discovery, retrieval, and integration of 
 information about modern biological specimens, their spatiotemporal occurrence, and their supporting evidence housed in collections 
-(physical or digital). The Darwin Core today is broader in scope. It is meant to provide a stable standard reference for 
+(physical or digital). The Darwin Core today is broader in scope and more versatile. It is meant to provide a stable standard reference for 
 sharing information on biological diversity. As a glossary of terms, the Darwin Core is meant to provide stable semantic 
 definitions with the goal of being maximally reusable in a variety of contexts.
 </P>
@@ -149,7 +154,7 @@ biodiversity information. The purpose of these terms is to facilitate data shari
 standard core vocabulary in a flexible framework to minimize the barriers to adoption and to maximize reusability.
 The terms described in this standard are a part of a larger set of vocabularies 
 and technical specifications under development [<a href="http://wiki.tdwg.org/twiki/bin/view/">TDWG-DEV</a>] and 
-maintained [<a href="http://www.tdwg.org/standards/">TDWG-STANDARDS</a>] by <i>Biodiversity Information Standards (TDWG)</i>.
+maintained by <i>Biodiversity Information Standards (TDWG)</i> [<a href="http://www.tdwg.org/standards/">TDWG-STANDARDS</a>].
 </P>
 <P>
 <b>Guiding principles</b>: Each term has a definition and commentaries that are meant to promote the consistent use
@@ -256,7 +261,7 @@ the construction of a new application profile. The rules of submission of propos
 
 <TR>
 <TD width="10%"><A name="CLASSESXMLSCHEMA">[CLASSESXMLSCHEMA]</A></TD>
-<TD width="40%"><A href="./xsd/tdwg_dwcclassterms.xsd">http://rs.tdwg.org/dwc/xsd/tdwg_dwcclassterms.xsd</A></TD>
+<TD width="40%"><A href="./xsd/tdwg_dwc_class_terms.xsd">http://rs.tdwg.org/dwc/xsd/tdwg_dwc_class_terms.xsd</A></TD>
 <TD width="50%">Darwin Core XML schema with classes as global elements.</TD>
 </TR>
 
@@ -279,9 +284,9 @@ the construction of a new application profile. The rules of submission of propos
 </TR>
 
 <TR>
-<TD width="10%"><A name="DCMINAMESPACEPOLICY">[DCMINAMESPACEPOLICY]</A></TD>
-<TD width="40%"><A href="http://dublincore.org/documents/2007/07/02/dcmi-namespace/">http://dublincore.org/documents/2007/07/02/dcmi-namespace/</A></TD>
-<TD width="50%">DCMI Namespace Policy, 2 July 2007</TD>
+<TD width="10%"><A name="DCMINS">[DCMINS]</A></TD>
+<TD width="40%"><A href="http://dublincore.org/documents/dcmi-namespace/">http://dublincore.org/documents/dcmi-namespace/</A></TD>
+<TD width="50%">DCMI Namespace Policy</TD>
 </TR>
 
 <TR>
@@ -396,6 +401,12 @@ the construction of a new application profile. The rules of submission of propos
 <TD width="10%"><A name="OBIS">[OBIS]</A></TD>
 <TD width="40%"><A href="http://iobis.org/obis/obis.xsd">http://iobis.org/obis/obis.xsd</A></TD>
 <TD width="50%">OBIS additions to Darwin Core 1.2 (Classic).</TD>
+</TR>
+
+<TR>
+<TD width="10%"><A name="PALEO">[PALEO]</A></TD>
+<TD width="40%"><A href="http://wiki.tdwg.org/twiki/bin/view/DarwinCore/PaleontologyElement">http://wiki.tdwg.org/twiki/bin/view/DarwinCore/PaleontologyElement</A></TD>
+<TD width="50%">Darwin Core 1.4 Paleontology Extension wiki.</TD>
 </TR>
 
 <TR>

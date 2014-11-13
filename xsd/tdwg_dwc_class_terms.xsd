@@ -47,7 +47,7 @@
     </xs:element>
     
     
-    <!-- SAMPLING LOCATION domain -->
+    <!-- LOCATION domain -->
     <!-- reuses the dc:location term, so see dublin_core.xsd for definition -->
     <!-- 
     <xs:element name="Location" substitutionGroup="dwc:anyClass">
@@ -61,6 +61,17 @@
     </xs:element>  
     -->
     
+    <!-- GEOLOGICALCONTEXT domain -->
+    <xs:element name="GeologicalContext" substitutionGroup="dwc:anyClass">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element ref="dwc:anyIdentifier"/>
+                <xs:element ref="dwc:anyGeologicalContextTerm"/>
+                <xs:element ref="dwc:anyRecordLevelTerm"/>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>  
+
     <!-- IDENTIFICATION domain -->
     <xs:element name="Identification" substitutionGroup="dwc:anyClass">
         <xs:complexType>
@@ -100,7 +111,7 @@
 
     
     
-    <!-- MEASUREMENT domain -->
+    <!-- MEASUREMENTORFACT domain -->
     <xs:element name="MeasurementOrFact" substitutionGroup="dwc:anyClass">
         <xs:complexType>
             <xs:choice maxOccurs="unbounded">

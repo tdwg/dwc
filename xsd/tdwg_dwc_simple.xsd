@@ -33,7 +33,7 @@
     <xs:element name="SimpleDarwinRecord">
         <xs:complexType>
             <xs:all>
-                <!-- Record Level domain  -->
+                <!-- Record-level terms -->
                 <xs:element ref="dcterms:type" minOccurs="0"/>
                 <xs:element ref="dcterms:modified" minOccurs="0"/>
                 <xs:element ref="dcterms:language" minOccurs="0"/>
@@ -45,9 +45,9 @@
                 <xs:element ref="dwc:informationWithheld" minOccurs="0"/>
                 <xs:element ref="dwc:dataGeneralizations" minOccurs="0"/>
                 <xs:element ref="dwc:dynamicProperties" minOccurs="0"/>
-                <!-- DatasetTerms -->
+                <!-- Dataset terms -->
                 <xs:element ref="dwc:datasetID" minOccurs="0"/>
-                <!-- Occurrence domain with some required properties -->
+                <!-- Occurrence terms -->
                 <xs:element ref="dwc:occurrenceID" minOccurs="0"/>
                 <xs:element ref="dwc:institutionCode" minOccurs="0"/>
                 <xs:element ref="dwc:collectionCode" minOccurs="0"/>
@@ -88,7 +88,7 @@
                 <xs:element ref="dwc:fieldNumber" minOccurs="0"/>
                 <xs:element ref="dwc:fieldNotes" minOccurs="0"/>
                 <xs:element ref="dwc:eventRemarks" minOccurs="0"/>
-                <!-- LocationTerms -->
+                <!-- Location terms -->
                 <xs:element ref="dwc:locationID" minOccurs="0"/>
                 <xs:element ref="dwc:higherGeographyID" minOccurs="0"/>
                 <xs:element ref="dwc:higherGeography" minOccurs="0"/>
@@ -115,6 +115,7 @@
                 <xs:element ref="dwc:verbatimLatitude" minOccurs="0"/>
                 <xs:element ref="dwc:verbatimLongitude" minOccurs="0"/>
                 <xs:element ref="dwc:verbatimCoordinateSystem" minOccurs="0"/>
+                <xs:element ref="dwc:verbatimSRS" minOccurs="0"/>
                 <xs:element ref="dwc:decimalLatitude" minOccurs="0"/>
                 <xs:element ref="dwc:decimalLongitude" minOccurs="0"/>
                 <xs:element ref="dwc:geodeticDatum" minOccurs="0"/>
@@ -122,13 +123,33 @@
                 <xs:element ref="dwc:coordinatePrecision" minOccurs="0"/>
                 <xs:element ref="dwc:pointRadiusSpatialFit" minOccurs="0"/>
                 <xs:element ref="dwc:footprintWKT" minOccurs="0"/>
+                <xs:element ref="dwc:footprintSRS" minOccurs="0"/>
                 <xs:element ref="dwc:footprintSpatialFit" minOccurs="0"/>
                 <xs:element ref="dwc:georeferencedBy" minOccurs="0"/>
                 <xs:element ref="dwc:georeferenceProtocol" minOccurs="0"/>
                 <xs:element ref="dwc:georeferenceSources" minOccurs="0"/>
                 <xs:element ref="dwc:georeferenceVerificationStatus" minOccurs="0"/>
                 <xs:element ref="dwc:georeferenceRemarks" minOccurs="0"/>
-                <!-- IdentificationTerms -->
+                <!-- GeologicalContext terms -->
+                <xs:element ref="dwc:geologicalContextID" minOccurs="0"/>
+                <xs:element ref="dwc:earliestEonOrLowestEonothem" minOccurs="0"/>
+                <xs:element ref="dwc:latestEonOrHighestEonothem" minOccurs="0"/>
+                <xs:element ref="dwc:earliestEraOrLowestErathem" minOccurs="0"/>
+                <xs:element ref="dwc:latestEraOrHighestErathem" minOccurs="0"/>
+                <xs:element ref="dwc:earliestPeriodOrLowestSystem" minOccurs="0"/>
+                <xs:element ref="dwc:latestPeriodOrHighestSystem" minOccurs="0"/>
+                <xs:element ref="dwc:earliestEpochOrLowestSeries" minOccurs="0"/>
+                <xs:element ref="dwc:latestEpochOrHighestSeries" minOccurs="0"/>
+                <xs:element ref="dwc:earliestAgeOrLowestStage" minOccurs="0"/>
+                <xs:element ref="dwc:latestAgeOrHighestStage" minOccurs="0"/>
+                <xs:element ref="dwc:lowestBiostratigraphicZone" minOccurs="0"/>
+                <xs:element ref="dwc:highestBiostratigraphicZone" minOccurs="0"/>
+                <xs:element ref="dwc:lithostratigraphicTerms" minOccurs="0"/>
+                <xs:element ref="dwc:group" minOccurs="0"/>
+                <xs:element ref="dwc:formation" minOccurs="0"/>
+                <xs:element ref="dwc:member" minOccurs="0"/>
+                <xs:element ref="dwc:bed" minOccurs="0"/>
+                <!-- Identification terms -->
                 <xs:element ref="dwc:identificationID" minOccurs="0"/>
                 <xs:element ref="dwc:identifiedBy" minOccurs="0"/>
                 <xs:element ref="dwc:dateIdentified" minOccurs="0"/>
@@ -136,13 +157,13 @@
                 <xs:element ref="dwc:identificationRemarks" minOccurs="0"/>
                 <xs:element ref="dwc:identificationQualifier" minOccurs="0"/>
                 <xs:element ref="dwc:typeStatus" minOccurs="0"/>
-                <!-- TaxonTerms -->
-                <xs:element ref="dwc:taxonNameID" minOccurs="0"/>
-                <xs:element ref="dwc:acceptedTaxonNameID" minOccurs="0"/>
+                <!-- Taxon terms -->
+                <xs:element ref="dwc:scientificNameID" minOccurs="0"/>
+                <xs:element ref="dwc:acceptedScientificNameID" minOccurs="0"/>
                 <xs:element ref="dwc:higherTaxonNameID" minOccurs="0"/>
                 <xs:element ref="dwc:basionymID" minOccurs="0"/>
                 <xs:element ref="dwc:scientificName" minOccurs="0"/>
-                <xs:element ref="dwc:acceptedTaxonName" minOccurs="0"/>
+                <xs:element ref="dwc:acceptedScientificName" minOccurs="0"/>
                 <xs:element ref="dwc:higherTaxonName" minOccurs="0"/>
                 <xs:element ref="dwc:basionym" minOccurs="0"/>
                 <xs:element ref="dwc:kingdom" minOccurs="0"/>
@@ -154,16 +175,18 @@
                 <xs:element ref="dwc:subgenus" minOccurs="0"/>
                 <xs:element ref="dwc:specificEpithet" minOccurs="0"/>
                 <xs:element ref="dwc:infraspecificEpithet" minOccurs="0"/>
-                <xs:element ref="dwc:taxonRank" minOccurs="0"/>
+                <xs:element ref="dwc:scientificNameRank" minOccurs="0"/>
+                <xs:element ref="dwc:verbatimScientificNameRank" minOccurs="0"/>
                 <xs:element ref="dwc:scientificNameAuthorship" minOccurs="0"/>
                 <xs:element ref="dwc:nomenclaturalCode" minOccurs="0"/>
                 <xs:element ref="dwc:namePublicationID" minOccurs="0"/>
                 <xs:element ref="dwc:namePublishedIn" minOccurs="0"/>
                 <xs:element ref="dwc:taxonomicStatus" minOccurs="0"/>
                 <xs:element ref="dwc:nomenclaturalStatus" minOccurs="0"/>
-                <xs:element ref="dwc:taxonRemarks" minOccurs="0"/>
                 <xs:element ref="dwc:taxonConceptID" minOccurs="0"/>
                 <xs:element ref="dwc:taxonAccordingTo" minOccurs="0"/>
+                <xs:element ref="dwc:taxonRemarks" minOccurs="0"/>
+                <xs:element ref="dwc:vernacularName" minOccurs="0"/>
             </xs:all>
         </xs:complexType>
     </xs:element>

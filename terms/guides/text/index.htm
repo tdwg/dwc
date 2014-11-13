@@ -13,11 +13,11 @@
 <meta name="DC.contributor" content="Markus Döring (GBIF)"/>
 <meta name="DC.contributor" content="Renato De Giovanni (CRIA)"/>
 <meta name="DC.contributor" content="Dave Vieglais (KUNHM)"/>
-<meta name="DC.modified" content="2009-05-25"/>
+<meta name="DC.modified" content="2009-07-06"/>
 <meta name="DC.dateAccepted" content="2009-02-12"/>
 <meta name="DC.format" content="text/html"/>
-<meta name="DC.identifier" content="http://rs.tdwg.org/dwc/2009-05-25/terms/guides/text"/>
-<meta name="DC.replaces" content="http://rs.tdwg.org/dwc/2009-04-29/terms/guides/text/"/>
+<meta name="DC.identifier" content="http://rs.tdwg.org/dwc/2009-07-06/terms/guides/text"/>
+<meta name="DC.replaces" content="http://rs.tdwg.org/dwc/2009-05-25/terms/guides/text/"/>
 <meta name="DC.publisher" content="Biodiversity Information Standards TDWG"/>
 <meta name="DC.rights" content=""/>
 <meta name="DC.accessRights" content="public"/>
@@ -81,7 +81,7 @@
 </TR>
 <TR>
 <TH>Date Modified:</TH>
-<TD>2009-05-25</TD>
+<TD>2009-07-06</TD>
 </TR>
 <TR>
 <TH>Abstract:</TH>
@@ -105,14 +105,14 @@
 </TR>
 <TR>
 <TH>Identifier:</TH>
-<TD>http://rs.tdwg.org/dwc/2009-05-25/terms/guides/text/</TD>
+<TD>http://rs.tdwg.org/dwc/2009-07-06/terms/guides/text/</TD>
 </TR>
 <TR><TH>Latest Version:</TH>
 <TD><A href="http://rs.tdwg.org/dwc/terms/guides/text/index.htm">http://rs.tdwg.org/dwc/terms/guides/text/</A></TD>
 </TR>
 <TR>
 <TH>Replaces:</TH>
-<TD><a href="http://rs.tdwg.org/dwc/2009-04-29/terms/guides/text/index.htm">http://rs.tdwg.org/dwc/2009-04-29/terms/guides/text/</A></TD>
+<TD><a href="http://rs.tdwg.org/dwc/2009-05-25/terms/guides/text/index.htm">http://rs.tdwg.org/dwc/2009-05-25/terms/guides/text/</A></TD>
 </TR>
 <TR>
 <TH>Document Status:</TH>
@@ -126,6 +126,8 @@
 
 <A name="introduction" id="introduction"></A> 
 <H2>1. Introduction</H2>
+<b>Audience</b>: This document is targeted toward those who wish to use or share information based on the Darwin Core terms using text
+files. It provides technical details on how to construct these files and complementary metadata files that describe their content.
 <P>
 This document provides guidelines for formatting and sharing Darwin Core terms [<a href="../../index.htm">TERMS</a>] in 
 <em>fielded text</em> formats, such as one or more comma separated value (CSV) files. Data conforming to the Simple Darwin Core 
@@ -170,7 +172,7 @@ can be described with the following Darwin Core metafile:
 &lt;/archive&gt;
 </pre>
 </p>	 
-These same data could be understood without the metafile if the contents of the CSV file were:
+These same data could be understood without the metafile if the the first row of the contents of the CSV file used Darwin Core terms: 
 <PRE class="example">
 catalogNumber,scientificName,individualCount,datasetID
 123,"Cryptantha gypsophila Reveal & C.R. Broome",12,urn:lsid:tim.lsid.tdwg.org:collections:1
@@ -180,8 +182,8 @@ catalogNumber,scientificName,individualCount,datasetID
 <h3>1.2 XML versus <EM>Fielded Text</EM></h3>
 <p>
 Many resources exist on the web describing the advantages of Extensible Markup Language [<A href="http://www.w3.org/XML/">XML</A>] 
-over less structured content such as <em>fielded text</em>. These guidelines <b>do not</b> promote the use of <EM>fielded Text</EM> 
-over XML for data exchange, but rather provide recommendations for how to handle such data files when necessary.
+over less structured content such as <em>fielded text</em>. The Darwin Core Text Guide (this document) <b>is not</b> promoting 
+the use of <EM>fielded text</EM> over XML for data exchange, but rather providing recommendations for how to handle such data files when necessary.
 <br/>
 Two scenarios that might benefit from the use of <em>fielded text</em> are:
 <ul>
@@ -198,9 +200,9 @@ Two scenarios that might benefit from the use of <em>fielded text</em> are:
 <H2>2. Metafile Content</H2>
 <p>
 The text metafile schema [<a href="../../../text/tdwg_dwc_text.xsd">TEXTSCHEMA</a>] provides technical details for the 
-structure of text metafiles. In the text metafile schema are defined the elements and attributes required to be able to describe the 
-contents and relationships between text files. Following are tables of those elements and attributes, with descriptions and 
-specifications for their use in a metafile.
+structure of a metafile by defining the elements and attributes required to describe the contents and relationships 
+between text files. These elements and attributes, with descriptions and specifications for their use in a metafile, 
+are described in the following table.
 </p>
 
 <h3>2.1 The &lt;archive&gt; element</h3>
@@ -219,7 +221,7 @@ element has just one attribute, <em>metadata</em>.
 			<tr>
 				<td class=""><em>metadata</em></td>
 				<td>Contains a qualified Uniform Resource Locator (URL) defining the location of a metadata description of the entire archive.
-				The format of the metadata is not prescribed, but a standardized format such as Ecological Metadata Language (EML), Federal Geographic Data Committee (FGDC), or one of the ISO 15115 family is recommended.
+				The format of the metadata is not prescribed, but a standardized format such as Ecological Metadata Language (EML), Federal Geographic Data Committee (FGDC), or ISO 19115 family is recommended.
 				</td>
 				<td></td>
 				<td/>
@@ -235,14 +237,14 @@ element has just one attribute, <em>metadata</em>.
 		<tbody>
 			<tr>
 				<td class=""><a href="#coreTag">&lt;core&gt;</a></td>
-				<td>An &lt;archive&gt; will contain exactly one <a href="#coreTag">&lt;core&gt;</a> element, representing the data entity upon which records are based.<br/>
-				If extensions are being used, each record in the core data must have a unique identifier.  The field for this identifier must be specified in an explicit &lt;id&gt; field in order to associate extension records to the core record. 
+				<td>An &lt;archive&gt; must contain exactly one <a href="#coreTag">&lt;core&gt;</a> element, representing the data entity (the actual file and its column header mappings to Darwin Core terms) upon which records are based.<br/>
+				If extensions are being used, each record in the core data must have a unique identifier.  The field for this identifier must be specified in an explicit &lt;id&gt; field in order to associate extension records with the core record. 
 				</td>
 			</tr>
 			<tr>
 				<td class=""><a href="#coreTag">&lt;extension&gt;</a></td>
 				<td>An &lt;archive&gt; may define zero or more <a href="#coreTag">&lt;extension&gt;</a> elements, each representing an individual extension entity directly related to the core.
-In addition to the general file attributes described below, every extension entity must have an explicit &lt;coreid&gt; field to relate the extension record to a row in the core entity. The extension itself does not have to have a unique ID field and many rows can point to the same core record. 
+In addition to the general file attributes described below, every extension entity must have an explicit &lt;coreId&gt; field to relate the extension record to a row in the core entity. The extension itself does not have to have a unique ID field and many rows can point to the same core record. 
 				</td>
 			</tr>
 		</tbody>
@@ -307,7 +309,7 @@ In addition to the general file attributes described below, every extension enti
 			<tr>
 				<td class=""><em>fieldsEnclosedBy</em></td>
 				<td>Specifies the character used to enclose (mark the start and end of) each field.
-				In CSV files frequently &quot; can be found, but the default is no enclosing character. Note that a comma separated value file that has commas within the content of any field must have an enclosing character.</td>
+				CSV files frequently use the double quote character (&quot;), but the default is no enclosing character. Note that a comma separated value file that has commas within the content of any field must have an enclosing character.</td>
 				<td/>
 				<td></td>
 			</tr>
@@ -334,7 +336,7 @@ In addition to the general file attributes described below, every extension enti
 						<dd>16-bit Unicode Transformation Format.</dd>
 						<dt>ISO-8859-1</dt>
 						<dd>Commonly known as Latin-1 and a common default on systems configured for a single western European language.</dd>
-						<dt>windows-1252</dt>
+						<dt>Windows-1252</dt>
 						<dd>Commonly known as WinLatin and a common default of legacy versions of Microsoft Windows based operating systems.</dd>
 					</dl>
 				</td>
@@ -379,26 +381,26 @@ In addition to the general file attributes described below, every extension enti
 		<tbody>
 			<tr>
 				<td class=""><a href="#files">&lt;files&gt;</a></td>
-				<td><a href="#coreTag">&lt;core&gt;</a> or <a href="#coreTag">&lt;extension&gt;</a> element will contain one <a href="#files">&lt;files&gt;</a> element to locate the data being described.</td>
+				<td><a href="#coreTag">&lt;core&gt;</a> or <a href="#coreTag">&lt;extension&gt;</a> element must contain one <a href="#files">&lt;files&gt;</a> element to locate the data being described.</td>
 			</tr>
 			<tr>
 				<td class="">&lt;id&gt;</td>
-				<td>If extensions are being used, an &lt;id&gt; element will exist in the <a href="#coreTag">&lt;core&gt;</a> and will define the column that indicates the identifier for the record.</td>
+				<td>If extensions are being used, the <a href="#coreTag">&lt;core&gt;</a> must contain an &lt;id&gt; element that indicates the identifier for a record.</td>
 			</tr>
 			<tr>
-				<td class="">&lt;coreid&gt;</td>
-				<td>If extensions are being used a &lt;coreid&gt; element will exist in the <a href="#coreTag">&lt;extension&gt;</a> will define the column in the extension file that contains the core record identifier (the matching &lt;id&gt; in the core file).</td>
+				<td class="">&lt;coreId&gt;</td>
+				<td>If extensions are being used, the <a href="#coreTag">&lt;extension&gt;</a> element must contain a &lt;coreId&gt; element that indicates the column in the extension file that contains the core record identifier (the matching &lt;id&gt; in the core file).</td>
 			</tr>
 			<tr>
 				<td class=""><a href="#fieldTag">&lt;field&gt;</a></td>
-				<td>A <a href="#coreTag">&lt;core&gt;</a> or <a href="#coreTag">&lt;extension&gt;</a> element will contain one or more <a href="#fieldTag">&lt;field&gt;</a> elements, each representing a 'column' in the row.</td>
+				<td>A <a href="#coreTag">&lt;core&gt;</a> or <a href="#coreTag">&lt;extension&gt;</a> element must contain one or more <a href="#fieldTag">&lt;field&gt;</a> elements, each representing a 'column' in the row.</td>
 			</tr>
 		</tbody>
 	</table>
 </p>
 <h3><a name="files">2.3 The &lt;files&gt; element</a></h3>				
 <p>
-	The files element will contain one or more &lt;location&gt; elements, each defining where a file resides. It is possible to declare that multiple files combine to represent a single core or extension entity by using the &lt;location&gt; element multiple times, once for each file that makes up the entity.
+	The files element must contain one or more &lt;location&gt; elements, each defining where a file resides. Each core or extension entity can be composed from one or more files. If an entity has data in more than one file, use the &lt;location&gt; element multiple times, once for each file that makes up the entity.
 </p>
 <p>
 	<table class="border">
@@ -422,7 +424,7 @@ In addition to the general file attributes described below, every extension enti
 </p>
 
 <h3><a name="fieldTag">2.4 The &lt;field&gt; element</a></h3>
-The field element is used to specify the location and content of data within a file. There should be one field element for every term
+The field element is used to specify the location and content of data within a file. There must be one field element for every term
 being shared for the entity, whether explicitly or through the use of a default value for all rows in the file.
 <p>
 	<table class="border">
@@ -436,7 +438,7 @@ being shared for the entity, whether explicitly or through the use of a default 
 		<tbody>
 			<tr>
 				<td class=""><em>index</em></td>
-				<td>Specifies the column index from the row.  The first column is column 0, the second column 1, etc.  
+				<td>Specifies the position of the column in the row.  The first column has an index of 0, the second column 1, etc.  
 				If no column index is specified, then the term and the default may be used to define a constant value for all rows.</td>
 				<td/>
 				<td/>
@@ -445,7 +447,7 @@ being shared for the entity, whether explicitly or through the use of a default 
 				<td class=""><em>term</em></td>
 				<td>A Unified Resource Identifier (URI) for the term represented by this field.  
 				For example, a field containing the scientific name would have term=&quot;http://rs.tdwg.org/dwc/terms/scientificName&quot;.
-				Terms outside of the Darwin Core specification may be used, such as those from the Dublin Core Metadata Initative, for example dcterms:modified would be term=&quot;http://purl.org/dc/terms/modified&quot;.
+				Terms outside of the Darwin Core specification may be used, such as those from the Dublin Core Metadata Initative, for example, dcterms:modified would be term=&quot;http://purl.org/dc/terms/modified&quot;.
 				</td>
 				<td>&#10003;</td>
 				<td/>
@@ -498,7 +500,7 @@ the threat status for those species.
     &lt;id index=&quot;0&quot; term=&quot;http://rs.tdwg.org/dwc/terms/taxonNameID&quot;/&gt;
     &lt;field index=&quot;1&quot; term=&quot;http://purl.org/dc/terms/modified&quot; type=&quot;xs:dateTime&quot;/&gt;
     &lt;field index=&quot;2&quot; term=&quot;http://rs.tdwg.org/dwc/terms/scientificName&quot;/&gt;
-    &lt;field index=&quot;3&quot; term=&quot;http://rs.tdwg.org/dwc/terms/acceptedTaxonNameID&quot;/&gt;
+    &lt;field index=&quot;3&quot; term=&quot;http://rs.tdwg.org/dwc/terms/acceptedScientificNameID&quot;/&gt;
     &lt;field index=&quot;4&quot; term=&quot;http://rs.tdwg.org/dwc/terms/higherTaxonNameID&quot;/&gt;
     &lt;field index=&quot;5&quot; term=&quot;http://rs.tdwg.org/dwc/terms/basionymID&quot;/&gt;
   &lt;/core&gt;
@@ -508,7 +510,7 @@ the threat status for those species.
     &lt;files&gt;
         &lt;location&gt;types.csv&lt;/location&gt;
     &lt;/files&gt;
-    &lt;coreid index=&quot;0&quot; term=&quot;http://rs.tdwg.org/dwc/terms/taxonNameID&quot;/&gt;
+    &lt;coreId index=&quot;0&quot; term=&quot;http://rs.tdwg.org/dwc/terms/scientificNameID&quot;/&gt;
     &lt;field index=&quot;1&quot; term=&quot;http://purl.org/dc/terms/bibliographicCitation&quot;/&gt;
     &lt;field index=&quot;2&quot; term=&quot;http://rs.tdwg.org/dwc/terms/catalogNumber&quot;/&gt;
     &lt;field index=&quot;3&quot; term=&quot;http://rs.tdwg.org/dwc/terms/collectionCode&quot;/&gt;
@@ -521,7 +523,7 @@ the threat status for those species.
     &lt;files&gt;
         &lt;location&gt;distribution.csv&lt;/location&gt;
     &lt;/files&gt;
-    &lt;coreid index=&quot;0&quot; term=&quot;http://rs.tdwg.org/dwc/terms/taxonNameID&quot;/&gt;
+    &lt;coreId index=&quot;0&quot; term=&quot;http://rs.tdwg.org/dwc/terms/scientificNameID&quot;/&gt;
     &lt;field index=&quot;1&quot; term=&quot;http://rs.tdwg.org/dwc/terms/country&quot;/&gt;
     &lt;field index=&quot;2&quot; term=&quot;http://www.iucn.org/redlist/3.1/threatStatus&quot;/&gt;
     &lt;field index=&quot;3&quot; term=&quot;http://purl.org/dc/terms/source&quot;/&gt;
@@ -576,9 +578,9 @@ most terms. Following is a list of exceptions with recommended data types and ex
 <A name="database" id="database"></A> 
 <H2>4. Database Example</H2>
 <H3>4.1 MySQL</H3>
-It is very easy to produce <em>fielded text</em> using the <code>select into outfile</code> command from MySQL. The encoding of the 
+It is very easy to produce <em>fielded text</em> using the <code>SELECT INTO outfile</code> command from MySQL. The encoding of the 
 resulting file will depend on the server variables and collations used, and might need to be modified before 
-the operation id done. Note that MySQL will export NULL values as \N by default. Use the isNull() function as shown in the following
+the operation is done. Note that MySQL will export NULL values as \N by default. Use the IFNULL() function as shown in the following
 example to avoid this.
 
 <pre class="example">

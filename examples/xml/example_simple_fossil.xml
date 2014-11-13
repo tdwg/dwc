@@ -24,6 +24,9 @@
   <dwc:scientificName>Tyrannosourus rex</dwc:scientificName>
   <dwc:genus>Tyrannosourus</dwc:genus>
   <dwc:specificEpithet>rex</dwc:specificEpithet>
-  <dwc:dynamicProperties>latestPeriodOrHighestSystem=Cretaceous; latestEonOrHighestEonothem=Late Cretaceous</dwc:dynamicProperties>
+  <dwc:earliestPeriodOrHighestSystem>Creataceous</dwc:earliestPeriodOrHighestSystem>
+  <dwc:latestPeriodOrHighestSystem>Creataceous</dwc:latestPeriodOrHighestSystem>
+  <dwc:earliestEonOrHighestEonothem>Late Cretaceous</dwc:earliestEonOrHighestEonothem>
+  <dwc:latestEonOrHighestEonothem>Late Cretaceous</dwc:latestEonOrHighestEonothem>
  </SimpleDarwinRecord>
 </SimpleDarwinRecordSet>
