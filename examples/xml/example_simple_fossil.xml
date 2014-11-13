@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SimpleDarwinRecordSet
- xmlns="http://rs.tdwg.org/dwc/dwcrecord/"
+ xmlns="http://rs.tdwg.org/dwc/xsd/simpledarwincore/"
  xmlns:dc="http://purl.org/dc/terms/"
  xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="http://rs.tdwg.org/dwc/dwcrecord/ http://rs.tdwg.org/dwc/xsd/tdwg_dwc_simple.xsd">
+ xsi:schemaLocation="http://rs.tdwg.org/dwc/xsd/simpledarwincore/ ../../xsd/tdwg_dwc_simple.xsd">
  <SimpleDarwinRecord>
   <dwc:occurrenceID>urn:catalog:YPM:VP.057488</dwc:occurrenceID>
   <dc:type>PhysicalObject</dc:type>
-  <dc:modified>2009-02-12T14:22Z</dc:modified>
+  <dc:modified>2009-02-12T12:43:31</dc:modified>
   <dc:language>en</dc:language>
   <dwc:basisOfRecord>FossilSpecimen</dwc:basisOfRecord>
   <dwc:institutionCode>YPM</dwc:institutionCode>

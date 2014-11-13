@@ -11,15 +11,16 @@
 <META name="DC.contributor" content="John Wieczorek (MVZ)"/>
 <META name="DC.contributor" content="Éamonn Ó Tuama (GBIF)"/>
 <META name="DC.contributor" content="Andrea Hahn (GBIF)"/>
-<META name="DC.modified" content="2009-10-08"/>
+<META name="DC.contributor" content="Jörg Holetschek (BGBM)"/>
+<META name="DC.modified" content="2011-10-26"/>
 <META name="DC.dateAccepted" content="2009-02-12"/>
 <META name="DC.format" content="text/html"/>
-<META name="DC.identifier" content="http://rs.tdwg.org/dwc/2009-09-23/terms/history/dwctoabcd/"/>
-<META name="DC.replaces" content="http://rs.tdwg.org/dwc/2009-07-06/terms/history/dwctoabcd"/>
+<META name="DC.identifier" content="http://rs.tdwg.org/dwc/2011-10-26/terms/history/dwctoabcd/"/>
+<META name="DC.replaces" content="http://rs.tdwg.org/dwc/2009-09-23/terms/history/dwctoabcd"/>
 <META name="DC.publisher" content="Biodiversity Information Standards TDWG"/>
 <META name="DC.rights" content=""/>
 <META name="DC.accessRights" content="public"/>
-<META name="DC.bibliographicCitation" content="Mapping Darwin Core to ABCD. 2009"/>
+<META name="DC.bibliographicCitation" content="Mapping Darwin Core to ABCD. 2011"/>
 <META name="DC.language" content="en"/>
 <LINK rel="meta" href="http://www.tdwg.org/"/>
 <LINK rel="stylesheet" href="../../../DarwinCore_files/default.css" type="text/css"/>
@@ -86,7 +87,7 @@
 </TR>
 <TR>
 <TH>Date Modified:</TH>
-<TD>2009-10-08</TD>
+<TD>2011-10-26</TD>
 </TR>
 <TR>
 <TH>Abstract:</TH>
@@ -97,7 +98,7 @@ For a quick reference guide to the current recommended Darwin Core terms, see [<
 </TR>
 <TR>
 <TH>Contributors:</TH>
-<TD>John Wieczorek (MVZ), Éamonn Ó Tuama (GBIF), Andrea Hahn (GBIF)</TD>
+<TD>John Wieczorek (MVZ), Éamonn Ó Tuama (GBIF), Andrea Hahn (GBIF), Jörg Holetschek (BGBM)</TD>
 </TR>
 <TR>
 <TH>Legal:</TH>
@@ -113,14 +114,14 @@ For a quick reference guide to the current recommended Darwin Core terms, see [<
 </TR>
 <TR>
 <TH>Identifier:</TH>
-<TD>http://rs.tdwg.org/dwc/2009-09-23/terms/history/dwctoabcd/</A></TD>
+<TD>http://rs.tdwg.org/dwc/2011-10-26/terms/history/dwctoabcd/</A></TD>
 </TR>
 <TR><TH>Latest Version:</TH>
 <TD><A href="http://rs.tdwg.org/dwc/terms/history/dwctoabcd/index.htm">http://rs.tdwg.org/dwc/terms/history/dwctoabcd/</A></TD>
 </TR>
 <TR>
 <TH>Replaces:</TH>
-<TD><A href="http://rs.tdwg.org/dwc/2009-07-06/terms/history/dwctoabcd/index.htm">http://rs.tdwg.org/dwc/2009-07-06/terms/history/dwctoabcd/</A></TD>
+<TD><A href="http://rs.tdwg.org/dwc/2009-09-23/terms/history/dwctoabcd/index.htm">http://rs.tdwg.org/dwc/2009-09-23/terms/history/dwctoabcd/</A></TD>
 </TR>
 <TR>
 <TH>Document Status:</TH>
@@ -471,11 +472,13 @@ the most current version of ABCD.
 <TR><TD><a href="../../index.htm#dcterms:modified">dcterms:modified</a></TD>	<TD>DataSets/DataSet/Units/Unit/DateLastEdited</TD>
 <TR><TD><a href="../../index.htm#dcterms:language">dcterms:language</a></TD>	<TD>some ABCD elements have a datatype extended with a language attribute, no language element at the Unit level</TD>
 <TR><TD><a href="../../index.htm#dcterms:rights">dcterms:rights</a></TD>	<TD>DataSets/DataSet/Units/Unit/IPRStatements</TD>
-<TR><TD><a href="../../index.htm#dcterms:rightsHolder">dcterms:rightsHolder</a></TD>	<TD>DataSets/DataSet/Units/Unit/Owner/Organisation/Name/Representation/Text or DataSets/DataSet/Units/Unit/Owner/Person/FullName or DataSets/DataSet/Metadata/Owners/Owner/Organisation/Name/Representation/Text or DataSets/DataSet/Metadata/Owners/Owner/Pers
+<TR><TD><a href="../../index.htm#dcterms:rightsHolder">dcterms:rightsHolder</a></TD>	<TD>{DataSets/DataSet/Units/Unit/Owner/Organisation/Name/Representation/Text or DataSets/DataSet/Units/Unit/Owner/Person/FullName or DataSets/DataSet/Metadata/Owners/Owner/Organisation/Name/Representation/Text or DataSets/DataSet/Metadata/Owners/Owner/Person/FullName}</TD>
 <TR><TD><a href="../../index.htm#dcterms:accessRights">dcterms:accessRights</a></TD>	<TD>DataSets/DataSet/Units/Unit/IPRStatements</TD>
 <TR><TD><a href="../../index.htm#dcterms:bibliographicCitation">dcterms:bibliographicCitation</a></TD>	<TD>DataSets/DataSet/Units/Unit/IPRStatements/Citations/Citation/Text</TD>
+<TR><TD><a href="../../index.htm#dcterms:references">dcterms:references</a></TD>	<TD>{DataSets/DataSet/Units/Unit/RecordURI or Datasets/Dataset/Units/Unit/UnitReferences/UnitReferences or Datasets/Dataset/Units/Unit/SourceReference or Datasets/Dataset/Units/Unit/Identifications/Identification/References/Reference or Datasets/Dataset/Units/Unit/SpecimenUnit/NomenclaturalTypeDesignations/NomenclaturalTypeDesignation/NomenclaturalReference or MeasurementOrFact/MeasurementOrFactAtomised/MeasurementOrFactReference}</TD>
 <TR><TD><a href="../../index.htm#institutionID">institutionID</a></TD>	<TD>DataSets/DataSet/Units/Unit/SourceID</TD>
 <TR><TD><a href="../../index.htm#collectionID">collectionID</a></TD>	<TD>DataSets/DataSet/Units/Unit/SourceID</TD>
+<TR><TD><a href="../../index.htm#datasetID">datasetID</a></TD>	<TD>DataSets/DataSet/DataSetGUID</TD>
 <TR><TD><a href="../../index.htm#institutionCode">institutionCode</a></TD>	<TD>DataSets/DataSet/Units/Unit/SourceInstitutionID</TD>
 <TR><TD><a href="../../index.htm#collectionCode">collectionCode</a></TD>	<TD>DataSets/DataSet/Units/Unit/SourceID</TD>
 <TR><TD><a href="../../index.htm#datasetName">datasetName</a></TD>	<TD>DataSets/DataSet/Units/Unit/SourceID</TD>
@@ -484,17 +487,15 @@ the most current version of ABCD.
 <TR><TD><a href="../../index.htm#informationWithheld">informationWithheld</a></TD>	<TD>DataSets/DataSet/Units/Unit/InformationWithheld</TD>
 <TR><TD><a href="../../index.htm#dataGeneralizations">dataGeneralizations</a></TD>	<TD>not in ABCD</TD>
 <TR><TD><a href="../../index.htm#dynamicProperties">dynamicProperties</a></TD>	<TD>not in ABCD</TD>
-<TR><TD><a href="../../index.htm#datasetID">datasetID</a></TD>	<TD>DataSets/DataSet/DataSetGUID</TD>
 <TR><TD><a href="../../index.htm#occurrenceID">occurrenceID</a></TD>	<TD>DataSets/DataSet/Units/Unit/UnitGUID</TD>
 <TR><TD><a href="../../index.htm#catalogNumber">catalogNumber</a></TD>	<TD>DataSets/DataSet/Units/Unit/UnitID</TD>
-<TR><TD><a href="../../index.htm#occurrenceDetails">occurrenceDetails</a></TD>	<TD>DataSets/DataSet/Units/Unit/RecordURI</TD>
 <TR><TD><a href="../../index.htm#occurrenceRemarks">occurrenceRemarks</a></TD>	<TD>DataSets/DataSet/Units/Unit/Notes</TD>
 <TR><TD><a href="../../index.htm#recordNumber">recordNumber</a></TD>	<TD>DataSets/DataSet/Units/Unit/CollectorsFieldNumber</TD>
 <TR><TD><a href="../../index.htm#recordedBy">recordedBy</a></TD>	<TD>DataSets/DataSet/Units/Unit/Gathering/GatheringAgents/GatheringAgentsText</TD>
-<TR><TD><a href="../../index.htm#individualID">individualID</a></TD>	<TD>DataSets/DataSet/Units/Unit/Identifications/Identification/Result/TaxonIdentified/ScientificName/NameAtomised/Zoological/NamedIndividual or DataSets/DataSet/Units/Unit/ObservationUnit/ObservationUnitIdentifiers/ObservationUnitIdentifier or DataSets/Da
+<TR><TD><a href="../../index.htm#individualID">individualID</a></TD>	<TD>DataSets/DataSet/Units/Unit/Identifications/Identification/Result/TaxonIdentified/ScientificName/NameAtomised/Zoological/NamedIndividual or DataSets/DataSet/Units/Unit/ObservationUnit/ObservationUnitIdentifiers/ObservationUnitIdentifier or DataSets/DataSet/Units/Unit/SpecimenUnit/Accessions/AccessionNumber</TD>
 <TR><TD><a href="../../index.htm#individualCount">individualCount</a></TD>	<TD>DataSets/DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts/SiteMeasurementOrFact/MeasurementOrFactAtomised/LowerValue</TD>
 <TR><TD><a href="../../index.htm#sex">sex</a></TD>	<TD>DataSets/DataSet/Units/Unit/Sex</TD>
-<TR><TD><a href="../../index.htm#lifeStage">lifeStage</a></TD>	<TD>DataSets/DataSet/Units/Unit/MycologicalUnit/MycologicalSexualStage or DataSets/DataSet/Units/Unit/MycologicalUnit/MycologicalLiveStages/MycologicalLiveStage (Note DwC spec uses ”MycologicalLifeStage” or DataSets/DataSet/Units/Unit/ZoologicalUnit/Phase
+<TR><TD><a href="../../index.htm#lifeStage">lifeStage</a></TD>	<TD>DataSets/DataSet/Units/Unit/MycologicalUnit/MycologicalSexualStage or DataSets/DataSet/Units/Unit/MycologicalUnit/MycologicalLiveStages/MycologicalLiveStage (Note DwC spec uses ”MycologicalLifeStage” or DataSets/DataSet/Units/Unit/ZoologicalUnit/PhasesOrStages/PhaseOrStage</TD>
 <TR><TD><a href="../../index.htm#reproductiveCondition">reproductiveCondition</a></TD>	<TD>not in ABCD</TD>
 <TR><TD><a href="../../index.htm#behavior">behavior</a></TD>	<TD>not in ABCD</TD>
 <TR><TD><a href="../../index.htm#establishmentMeans">establishmentMeans</a></TD>	<TD>DataSets/DataSet/Units/Unit/Gathering/EstablishmentMeans</TD>
@@ -505,7 +506,7 @@ the most current version of ABCD.
 <TR><TD><a href="../../index.htm#previousIdentifications">previousIdentifications</a></TD>	<TD>DataSets/DataSet/Units/Unit/Identifications/Identification with PreferredFlag = false</TD>
 <TR><TD><a href="../../index.htm#associatedMedia">associatedMedia</a></TD>	<TD>DataSets/DataSet/Units/Unit/MultimediaObjects</TD>
 <TR><TD><a href="../../index.htm#associatedReferences">associatedReferences</a></TD>	<TD>DataSets/DataSet/Units/Unit/UnitReferences</TD>
-<TR><TD><a href="../../index.htm#associatedOccurrences">associatedOccurrences</a></TD>	<TD>DataSets/DataSet/Units/Unit/Associations/UnitAssociation/AssociatedUnitSourceInstitutionCode + DataSets/DataSet/Units/Unit/Associations/UnitAssociation/AssociatedUnitSourceName + DataSets/DataSet/Units/Unit/Associations/UnitAssociation/AssociatedUnitI
+<TR><TD><a href="../../index.htm#associatedOccurrences">associatedOccurrences</a></TD>	<TD>DataSets/DataSet/Units/Unit/Associations/UnitAssociation/AssociatedUnitSourceInstitutionCode + DataSets/DataSet/Units/Unit/Associations/UnitAssociation/AssociatedUnitSourceName + DataSets/DataSet/Units/Unit/Associations/UnitAssociation/AssociatedUnitID</TD>
 <TR><TD><a href="../../index.htm#associatedSequences">associatedSequences</a></TD>	<TD>DataSets/DataSet/Units/Unit/Sequences/Sequence/ID-in-Database + constant</TD>
 <TR><TD><a href="../../index.htm#associatedTaxa">associatedTaxa</a></TD>	<TD>DataSets/DataSet/Units/Unit/Gathering/Synecology/AssociatedTaxa</TD>
 <TR><TD><a href="../../index.htm#eventID">eventID</a></TD>	<TD>DataSets/DataSet/Units/Unit/Gathering/Code</TD>
@@ -519,10 +520,10 @@ the most current version of ABCD.
 <TR><TD><a href="../../index.htm#month">month</a></TD>	<TD>accessible from DataSets/DataSet/Units/Unit/Gathering/ISODateTimeBegin</TD>
 <TR><TD><a href="../../index.htm#day">day</a></TD>	<TD>accessible from DataSets/DataSet/Units/Unit/Gathering/ISODateTimeBegin</TD>
 <TR><TD><a href="../../index.htm#verbatimEventDate">verbatimEventDate</a></TD>	<TD>DataSets/DataSet/Units/Unit/Gathering/DateTime/DateText</TD>
-<TR><TD><a href="../../index.htm#habitat">habitat</a></TD>	<TD>not in ABCD</TD>
+<TR><TD><a href="../../index.htm#habitat">habitat</a></TD>	<TD>DataSets/DataSet/Units/Unit/Gathering/Biotope/Text</TD>
 <TR><TD><a href="../../index.htm#fieldNumber">fieldNumber</a></TD>	<TD>DataSets/DataSet/Units/Unit/Gathering/Code</TD>
 <TR><TD><a href="../../index.htm#fieldNotes">fieldNotes</a></TD>	<TD>DataSets/DataSet/Units/Unit/FieldNotes</TD>
-<TR><TD><a href="../../index.htm#eventRemarks">eventRemarks</a></TD>	<TD>not in ABCD</TD>
+<TR><TD><a href="../../index.htm#eventRemarks">eventRemarks</a></TD>	<TD>DataSets/DataSet/Units/Unit/Gathering/Notes</TD>
 <TR><TD><a href="../../index.htm#locationID">locationID</a></TD>	<TD>not in ABCD</TD>
 <TR><TD><a href="../../index.htm#higherGeographyID">higherGeographyID</a></TD>	<TD>not in ABCD</TD>
 <TR><TD><a href="../../index.htm#higherGeography">higherGeography</a></TD>	<TD>{DataSets/DataSet/Units/Unit/Gathering/LocalityText or DataSets/DataSet/Units/Unit/Gathering/NamedAreas/NamedArea/AreaName}</TD>
@@ -562,6 +563,7 @@ the most current version of ABCD.
 <TR><TD><a href="../../index.htm#footprintSRS">footprintSRS</a></TD>	<TD>not in ABCD</TD>
 <TR><TD><a href="../../index.htm#footprintSpatialFit">footprintSpatialFit</a></TD>	<TD>DataSets/DataSet/Units/Unit/Gathering/FootprintSpatialFit (ABCD v2.06b)</TD>
 <TR><TD><a href="../../index.htm#georeferencedBy">georeferencedBy</a></TD>	<TD>not in ABCD</TD>
+<TR><TD><a href="../../index.htm#georeferencedDate">georeferencedDate</a></TD>	<TD>not in ABCD</TD>
 <TR><TD><a href="../../index.htm#georeferenceProtocol">georeferenceProtocol</a></TD>	<TD>DataSets/DataSet/Units/Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinateMethod</TD>
 <TR><TD><a href="../../index.htm#georeferenceSources">georeferenceSources</a></TD>	<TD>DataSets/DataSet/Units/Unit/Gathering/SiteCoordinateSets/SiteCoordinates/GeoreferenceSources</TD>
 <TR><TD><a href="../../index.htm#georeferenceVerificationStatus">georeferenceVerificationStatus</a></TD>	<TD>DataSets/DataSet/Units/Unit/Gathering/SiteCoordinateSets/SiteCoordinates/GeoreferenceVerificationStatus</TD>
@@ -579,7 +581,7 @@ the most current version of ABCD.
 <TR><TD><a href="../../index.htm#latestAgeOrHighestStage">latestAgeOrHighestStage</a></TD>	<TD>not in ABCD</TD>
 <TR><TD><a href="../../index.htm#lowestBiostratigraphicZone">lowestBiostratigraphicZone</a></TD>	<TD>not in ABCD</TD>
 <TR><TD><a href="../../index.htm#highestBiostratigraphicZone">highestBiostratigraphicZone</a></TD>	<TD>not in ABCD</TD>
-<TR><TD><a href="../../index.htm#lithostratigraphicTerms">lithostratigraphicTerms</a></TD>	<TD>not in ABCD</TD>
+<TR><TD><a href="../../index.htm#lithostratigraphicTerms">lithostratigraphicTerms</a></TD>	<TD>DataSets/DataSet/Units/Unit/Gathering/Stratigraphy/LithostratigraphicTerms</TD>
 <TR><TD><a href="../../index.htm#group">group</a></TD>	<TD>not in ABCD</TD>
 <TR><TD><a href="../../index.htm#formation">formation</a></TD>	<TD>not in ABCD</TD>
 <TR><TD><a href="../../index.htm#member">member</a></TD>	<TD>not in ABCD</TD>
@@ -588,6 +590,7 @@ the most current version of ABCD.
 <TR><TD><a href="../../index.htm#identifiedBy">identifiedBy</a></TD>	<TD>DataSets/DataSet/Units/Unit/Identifications/Identification/Identifiers/IdentifiersText</TD>
 <TR><TD><a href="../../index.htm#dateIdentified">dateIdentified</a></TD>	<TD>DataSets/DataSet/Units/Unit/Identifications/Identification/Date/DateText</TD>
 <TR><TD><a href="../../index.htm#identificationReferences">identificationReferences</a></TD>	<TD>DataSets/DataSet/Units/Unit/Identifications/Identification/References</TD>
+<TR><TD><a href="../../index.htm#identificationVerificationStatus">identificationVerificationStatus</a></TD>	<TD>not in ABCD</TD>
 <TR><TD><a href="../../index.htm#identificationRemarks">identificationRemarks</a></TD>	<TD>DataSets/DataSet/Units/Unit/Identifications/Identification/Notes</TD>
 <TR><TD><a href="../../index.htm#identificationQualifier">identificationQualifier</a></TD>	<TD>DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/IdentificationQualifier</TD>
 <TR><TD><a href="../../index.htm#typeStatus">typeStatus</a></TD>	<TD>DataSets/DataSet/Units/Unit/SpecimenUnit/NomenclaturalTypeDesignations/NomenclaturalTypeText</TD>
@@ -605,19 +608,20 @@ the most current version of ABCD.
 <TR><TD><a href="../../index.htm#originalNameUsage">originalNameUsage</a></TD>	<TD>not in ABCD</TD>
 <TR><TD><a href="../../index.htm#nameAccordingTo">nameAccordingTo</a></TD>	<TD>not in ABCD</TD>
 <TR><TD><a href="../../index.htm#namePublishedIn">namePublishedIn</a></TD>	<TD>DataSets/DataSet/Units/Unit/SpecimenUnit/NomenclaturalTypeDesignations/NomenclaturalTypeDesignation/NomenclaturalReference/TitleCitation</TD>
+<TR><TD><a href="../../index.htm#namePublishedInYear">namePublishedInYear</a></TD>	<TD>not in ABCD</TD>
 <TR><TD><a href="../../index.htm#higherClassification">higherClassification</a></TD>	<TD>not in ABCD</TD>
 <TR><TD><a href="../../index.htm#kingdom">kingdom</a></TD>	<TD>DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/HigherTaxa/HigherTaxon/HigherTaxonName with HigherTaxa/HigherTaxon/HigherTaxonRank = regnum</TD>
 <TR><TD><a href="../../index.htm#phylum">phylum</a></TD>	<TD>DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/HigherTaxa/HigherTaxon/HigherTaxonName with HigherTaxa/HigherTaxon/HigherTaxonRank = phylum</TD>
 <TR><TD><a href="../../index.htm#class">class</a></TD>	<TD>DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/HigherTaxa/HigherTaxon/HigherTaxonName with HigherTaxa/HigherTaxon/HigherTaxonRank = classis</TD>
 <TR><TD><a href="../../index.htm#order">order</a></TD>	<TD>DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/HigherTaxa/HigherTaxon/HigherTaxonName with HigherTaxa/HigherTaxon/HigherTaxonRank = ordo</TD>
 <TR><TD><a href="../../index.htm#family">family</a></TD>	<TD>DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/HigherTaxa/HigherTaxon/HigherTaxonName with HigherTaxa/HigherTaxon/HigherTaxonRank = familia</TD>
-<TR><TD><a href="../../index.htm#genus">genus</a></TD>	<TD>{DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Bacterial/GenusOrMonomial or DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Botanical/Genus
+<TR><TD><a href="../../index.htm#genus">genus</a></TD>	<TD>{DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Bacterial/GenusOrMonomial or DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Botanical/GenusOrMonomial or DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Viral/GenusOrMonomial or DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Zoological/GenusOrMonomial}</TD>
 <TR><TD><a href="../../index.htm#subgenus">subgenus</a></TD>	<TD>DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Zoological/Subgenus</TD>
-<TR><TD><a href="../../index.htm#specificEpithet">specificEpithet</a></TD>	<TD>{DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Bacterial/SpeciesEpithet or DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Botanical/FirstE
-<TR><TD><a href="../../index.htm#infraspecificEpithet">infraspecificEpithet</a></TD>	<TD>{DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Bacterial/SubspeciesEpithet or DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Botanical/Sec
+<TR><TD><a href="../../index.htm#specificEpithet">specificEpithet</a></TD>	<TD>{DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Bacterial/SpeciesEpithet or DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Botanical/FirstEpithet or DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Zoological/SpeciesEpithet}</TD>
+<TR><TD><a href="../../index.htm#infraspecificEpithet">infraspecificEpithet</a></TD>	<TD>{DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Bacterial/SubspeciesEpithet or DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Botanical/SecondEpithet or DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Zoological/SubspeciesEpithet}</TD>
 <TR><TD><a href="../../index.htm#taxonRank">taxonRank</a></TD>	<TD>DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Botanical/Rank</TD>
 <TR><TD><a href="../../index.htm#verbatimTaxonRank">verbatimTaxonRank</a></TD>	<TD>not in ABCD</TD>
-<TR><TD><a href="../../index.htm#scientificNameAuthorship">scientificNameAuthorship</a></TD>	<TD>{DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Bacterial/ParentheticalAuthorTeamAndYear + DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/B
+<TR><TD><a href="../../index.htm#scientificNameAuthorship">scientificNameAuthorship</a></TD>	<TD>{DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Bacterial/ParentheticalAuthorTeamAndYear + DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Bacterial/AuthorTeamAndYear} or {DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Botanical/AuthorTeamParenthesis + DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Botanical/AuthorTeam} or {DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Zoological/AuthorTeamOriginalAndYear + [= or] DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Zoological/AuthorTeamParenthesisAndYear}</TD>
 <TR><TD><a href="../../index.htm#vernacularName">vernacularName</a></TD>	<TD>not in ABCD</TD>
 <TR><TD><a href="../../index.htm#nomenclaturalCode">nomenclaturalCode</a></TD>	<TD>DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/Code</TD>
 <TR><TD><a href="../../index.htm#taxonomicStatus">taxonomicStatus</a></TD>	<TD>not in ABCD</TD>
@@ -626,19 +630,19 @@ pro parte</TD>
 <TR><TD><a href="../../index.htm#taxonRemarks">taxonRemarks</a></TD>	<TD>not in ABCD</TD>
 <TR><TD><a href="../../index.htm#resourceRelationshipID">resourceRelationshipID</a></TD>	<TD>not in ABCD</TD>
 <TR><TD><a href="../../index.htm#resourceID">resourceID</a></TD>	<TD>not in ABCD</TD>
-<TR><TD><a href="../../index.htm#relatedResourceID">relatedResourceID</a></TD>	<TD>DataSets/DataSet/Units/Unit/Associations/UnitAssociation/AssociatedUnitSourceInstitutionCode + DataSets/DataSet/Units/Unit/Associations/UnitAssociation/AssociatedUnitSourceName + DataSets/DataSet/Units/Unit/Associations/UnitAssociation/AssociatedUnitI
+<TR><TD><a href="../../index.htm#relatedResourceID">relatedResourceID</a></TD>	<TD>DataSets/DataSet/Units/Unit/Associations/UnitAssociation/AssociatedUnitSourceInstitutionCode + DataSets/DataSet/Units/Unit/Associations/UnitAssociation/AssociatedUnitSourceName + DataSets/DataSet/Units/Unit/Associations/UnitAssociation/AssociatedUnitID</TD>
 <TR><TD><a href="../../index.htm#relationshipOfResource">relationshipOfResource</a></TD>	<TD>DataSets/DataSet/Units/Unit/Associations/UnitAssociation/AssociationType</TD>
 <TR><TD><a href="../../index.htm#relationshipAccordingTo">relationshipAccordingTo</a></TD>	<TD>not in ABCD</TD>
 <TR><TD><a href="../../index.htm#relationshipEstablishedDate">relationshipEstablishedDate</a></TD>	<TD>not in ABCD</TD>
 <TR><TD><a href="../../index.htm#relationshipRemarks">relationshipRemarks</a></TD>	<TD>DataSets/DataSet/Units/Unit/Associations/UnitAssociation/Comments</TD>
 <TR><TD><a href="../../index.htm#measurementID">measurementID</a></TD>	<TD>not in ABCD</TD>
 <TR><TD><a href="../../index.htm#measurementType">measurementType</a></TD>	<TD>DataSets/DataSet/Units/Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/Parameter or DataSets/DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/Parameter</TD>
-<TR><TD><a href="../../index.htm#measurementValue">measurementValue</a></TD>	<TD>DataSets/DataSet/Units/Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/UpperValue or DataSets/DataSet/Units/Unit/Gathering/S
-<TR><TD><a href="../../index.htm#measurementAccuracy">measurementAccuracy</a></TD>	<TD>DataSets/DataSet/Units/Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/Accuracy or DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts/SiteMeasurementOrFact/MeasurementOrFactAtomised/Accuracy or DataSets/DataSet/Units/Unit/Gather
-<TR><TD><a href="../../index.htm#measurementUnit">measurementUnit</a></TD>	<TD>DataSets/DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/UnitOfMeasurement or DataSets/DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/UnitOfMeasurement<
-<TR><TD><a href="../../index.htm#measurementDeterminedDate">measurementDeterminedDate</a></TD>	<TD>DataSets/DataSet/Units/Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/MeasurementDateTime or DataSets/DataSet/Units/Unit/Gathering/Altitude/MeasurementOrFactAtomised/MeasurementDateTime or DataSets/DataSet/Units/Unit/Gathering/De
-<TR><TD><a href="../../index.htm#measurementDeterminedBy">measurementDeterminedBy</a></TD>	<TD>DataSets/DataSet/Units/Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/MeasuredBy or DataSets/DataSet/Units/Unit/Gathering/Altitude/MeasurementOrFactAtomised/MeasuredBy or DataSets/DataSet/Units/Unit/Gathering/Depth/MeasurementOrF
-<TR><TD><a href="../../index.htm#measurementMethod">measurementMethod</a></TD>	<TD>/DataSets/DataSet/Units/Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/Method or /DataSets/DataSet/Units/Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFactAtomised/Method or /DataSets/DataSet/Units/Unit/Gathering/SiteMe
+<TR><TD><a href="../../index.htm#measurementValue">measurementValue</a></TD>	<TD>DataSets/DataSet/Units/Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/UpperValue or DataSets/DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts/SiteMeasurementOrFact/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts/SiteMeasurementOrFact/MeasurementOrFactAtomised/UpperValue or DataSets/DataSet/Units/Unit/Gathering/Altitude/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/Gathering/Altitude/MeasurementOrFactAtomised/UpperValue or DataSets/DataSet/Units/Unit/Gathering/Depth/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/Gathering/Depth/MeasurementOrFactAtomised/UpperValue or DataSets/DataSet/Units/Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFactAtomised/UpperValue or DataSets/DataSet/Units/Unit/Gathering/Height/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/Gathering/Height/MeasurementOrFactAtomised/UpperValue</TD>
+<TR><TD><a href="../../index.htm#measurementAccuracy">measurementAccuracy</a></TD>	<TD>DataSets/DataSet/Units/Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/Accuracy or DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts/SiteMeasurementOrFact/MeasurementOrFactAtomised/Accuracy or DataSets/DataSet/Units/Unit/Gathering/Aspect/Accuracy or DataSets/DataSet/Units/Unit/Gathering/Altitude/MeasurementOrFactAtomised/Accuracy or DataSets/DataSet/Units/Unit/Gathering/Depth/MeasurementOrFactAtomised/Accuracy or DataSets/DataSet/Units/Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFactAtomised/Accuracy or DataSets/DataSet/Units/Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/Accuracy</TD>
+<TR><TD><a href="../../index.htm#measurementUnit">measurementUnit</a></TD>	<TD>DataSets/DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/UnitOfMeasurement or DataSets/DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/UnitOfMeasurement</TD>
+<TR><TD><a href="../../index.htm#measurementDeterminedDate">measurementDeterminedDate</a></TD>	<TD>DataSets/DataSet/Units/Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/MeasurementDateTime or DataSets/DataSet/Units/Unit/Gathering/Altitude/MeasurementOrFactAtomised/MeasurementDateTime or DataSets/DataSet/Units/Unit/Gathering/Depth/MeasurementOrFactAtomised/MeasurementDateTime or DataSets/DataSet/Units/Unit/Gathering/Height/MeasurementOrFactAtomised/MeasurementDateTime or DataSets/DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts/SiteMeasurementOrFact/MeasurementOrFactAtomised/MeasurementDateTime or DataSets/DataSet/Units/Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFactAtomised/MeasurementDateTime</TD>
+<TR><TD><a href="../../index.htm#measurementDeterminedBy">measurementDeterminedBy</a></TD>	<TD>DataSets/DataSet/Units/Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/MeasuredBy or DataSets/DataSet/Units/Unit/Gathering/Altitude/MeasurementOrFactAtomised/MeasuredBy or DataSets/DataSet/Units/Unit/Gathering/Depth/MeasurementOrFactAtomised/MeasuredBy or DataSets/DataSet/Units/Unit/Gathering/Height/MeasurementOrFactAtomised/MeasuredBy or DataSets/DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts/SiteMeasurementOrFact/MeasurementOrFactAtomised/MeasuredBy or DataSets/DataSet/Units/Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFactAtomised/MeasuredBy</TD>
+<TR><TD><a href="../../index.htm#measurementMethod">measurementMethod</a></TD>	<TD>/DataSets/DataSet/Units/Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/Method or /DataSets/DataSet/Units/Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFactAtomised/Method or /DataSets/DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts/SiteMeasurementOrFact/MeasurementOrFactAtomised/Method</TD>
 <TR><TD><a href="../../index.htm#measurementRemarks">measurementRemarks</a></TD>	<TD>not in ABCD</TD>
 
 </TBODY></TABLE>
@@ -647,7 +651,7 @@ pro parte</TD>
 <hr>
 <p><a rel="license" href="http://creativecommons.org/licenses/by/3.0/us/"> 
    <img alt="Creative Commons License" id="creative_commons_icon" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a> 
-   Copyright 2009 - Biodiversity Information Standards - TDWG - <a href="http://www.tdwg.org/about-tdwg/contact-us/">Contact Us</a><br/> 
+   Copyright 2009-2011 - Biodiversity Information Standards - TDWG - <a href="http://www.tdwg.org/about-tdwg/contact-us/">Contact Us</a><br/> 
 <p>Except where otherwise noted, content on this site is licensed under a 
    <a rel="license" href="http://creativecommons.org/licenses/by/3.0/us/"> Creative Commons 
    Attribution 3.0 United States License</a>.</p> 

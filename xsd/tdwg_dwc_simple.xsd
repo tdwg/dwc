@@ -1,5 +1,6 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<xs:schema version="0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema version="1.1" 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
     targetNamespace="http://rs.tdwg.org/dwc/xsd/simpledarwincore/"
     xmlns:dcterms="http://purl.org/dc/terms/"
     xmlns:dwr="http://rs.tdwg.org/dwc/xsd/simpledarwincore/"
@@ -41,6 +42,7 @@
                 <xs:element ref="dcterms:rightsHolder" minOccurs="0"/>
                 <xs:element ref="dcterms:accessRights" minOccurs="0"/>
                 <xs:element ref="dcterms:bibliographicCitation" minOccurs="0"/>
+                <xs:element ref="dcterms:references" minOccurs="0"/>
                 <xs:element ref="dwc:institutionID" minOccurs="0"/>
                 <xs:element ref="dwc:collectionID" minOccurs="0"/>
                 <xs:element ref="dwc:datasetID" minOccurs="0"/>
@@ -55,7 +57,6 @@
                 <!-- Occurrence terms -->
                 <xs:element ref="dwc:occurrenceID" minOccurs="0"/>
                 <xs:element ref="dwc:catalogNumber" minOccurs="0"/>
-                <xs:element ref="dwc:occurrenceDetails" minOccurs="0"/>
                 <xs:element ref="dwc:occurrenceRemarks" minOccurs="0"/>
                 <xs:element ref="dwc:recordNumber" minOccurs="0"/>
                 <xs:element ref="dwc:recordedBy" minOccurs="0"/>
@@ -132,6 +133,7 @@
                 <xs:element ref="dwc:footprintSRS" minOccurs="0"/>
                 <xs:element ref="dwc:footprintSpatialFit" minOccurs="0"/>
                 <xs:element ref="dwc:georeferencedBy" minOccurs="0"/>
+                <xs:element ref="dwc:georeferencedDate" minOccurs="0"/>
                 <xs:element ref="dwc:georeferenceProtocol" minOccurs="0"/>
                 <xs:element ref="dwc:georeferenceSources" minOccurs="0"/>
                 <xs:element ref="dwc:georeferenceVerificationStatus" minOccurs="0"/>
@@ -160,6 +162,7 @@
                 <xs:element ref="dwc:identifiedBy" minOccurs="0"/>
                 <xs:element ref="dwc:dateIdentified" minOccurs="0"/>
                 <xs:element ref="dwc:identificationReferences" minOccurs="0"/>
+                <xs:element ref="dwc:identificationVerificationStatus" minOccurs="0"/>
                 <xs:element ref="dwc:identificationRemarks" minOccurs="0"/>
                 <xs:element ref="dwc:identificationQualifier" minOccurs="0"/>
                 <xs:element ref="dwc:typeStatus" minOccurs="0"/>
@@ -178,6 +181,7 @@
                 <xs:element ref="dwc:originalNameUsage" minOccurs="0"/>
                 <xs:element ref="dwc:nameAccordingTo" minOccurs="0"/>
                 <xs:element ref="dwc:namePublishedIn" minOccurs="0"/>
+                <xs:element ref="dwc:namePublishedInYear" minOccurs="0"/>
                 <xs:element ref="dwc:higherClassification" minOccurs="0"/>
                 <xs:element ref="dwc:kingdom" minOccurs="0"/>
                 <xs:element ref="dwc:phylum" minOccurs="0"/>

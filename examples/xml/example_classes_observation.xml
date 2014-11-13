@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0"?>
 <dwr:DarwinRecordSet
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://rs.tdwg.org/dwc/dwcrecord/  http://rs.tdwg.org/dwc/xsd/tdwg_dwc_classes.xsd"
+    xsi:schemaLocation="http://rs.tdwg.org/dwc/dwcrecord/  ../../xsd/tdwg_dwc_classes.xsd"
     xmlns:dcterms="http://purl.org/dc/terms/"
     xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
     xmlns:dwr="http://rs.tdwg.org/dwc/dwcrecord/">
@@ -19,7 +19,7 @@
     <dwc:Event>
       <dwc:eventID>http://guid.mvz.org/events/2006/11/26/17</dwc:eventID>
       <dwc:samplingProtocol>area count</dwc:samplingProtocol>
-      <dwc:eventDate>2006-11-26</dwc:eventDate>
+      <dwc:eventDate>2006-11-26T00:00:00</dwc:eventDate>
       <dwc:locationID>http://guid.mvz.org/sites/arg/127</dwc:locationID>
     </dwc:Event>
     <dwc:Occurrence>
@@ -63,7 +63,7 @@
     <dwc:Event>
       <dwc:eventID>http://guid.mvz.org/events/2006/11/27/6</dwc:eventID>
       <dwc:samplingProtocol>area count</dwc:samplingProtocol>
-      <dwc:eventDate>2006-11-27</dwc:eventDate>
+      <dwc:eventDate>2006-11-27T00:00:00</dwc:eventDate>
       <dwc:locationID>http://guid.mvz.org/sites/arg/127</dwc:locationID>
     </dwc:Event>
     <dwc:Occurrence>

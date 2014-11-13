@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <SimpleDarwinRecordSet
- xmlns="http://rs.tdwg.org/dwc/dwcrecord/"
+ xmlns="http://rs.tdwg.org/dwc/xsd/simpledarwincore/"
  xmlns:dc="http://purl.org/dc/terms/"
  xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="http://rs.tdwg.org/dwc/dwcrecord/ ../../xsd/tdwg_dwc_simple.xsd">
+ xsi:schemaLocation="http://rs.tdwg.org/dwc/xsd/simpledarwincore/ ../../xsd/tdwg_dwc_simple.xsd">
 
 <!-- In practice the schema location should be the following. The above was to -->
 <!-- allow the resolution of the namespace in a self contained package with the documentation. -->
 <!--  xsi:schemaLocation="http://rs.tdwg.org/dwc/dwcrecord/ http://rs.tdwg.org/dwc/xsd/tdwg_dwc_simple.xsd"> -->
  <SimpleDarwinRecord>
   <dc:type>PhysicalObject</dc:type>
-  <dc:modified>2009-02-12T14:22Z</dc:modified>
+  <dc:modified>2009-02-12T14:22:00Z</dc:modified>
   <dc:language>en</dc:language>
   <dc:rights>Content licensed under Creative Commons Attribution 3.0 United States License</dc:rights>
   <dc:rightsHolder>Museum of Vertebrate Zoology, UC Berkeley</dc:rightsHolder>
@@ -54,13 +54,13 @@
   <dwc:eventID xsi:nil="true"/>
   <dwc:samplingProtocol>1 km trap line with traps every 100 m</dwc:samplingProtocol>
   <dwc:samplingEffort>24 shoe-lace minutes</dwc:samplingEffort>
-  <dwc:eventDate>1963-03-08</dwc:eventDate>
+  <dwc:eventDate>1963-03-08T00:00:00</dwc:eventDate>
   <dwc:eventTime>14:07-06:00</dwc:eventTime>
   <dwc:startDayOfYear>67</dwc:startDayOfYear>
   <dwc:endDayOfYear>67</dwc:endDayOfYear>
   <dwc:year>1963</dwc:year>
-  <dwc:month>3</dwc:month>
-  <dwc:day>8</dwc:day>
+  <dwc:month>--03</dwc:month>
+  <dwc:day>---08</dwc:day>
   <dwc:verbatimEventDate>March 8 1963</dwc:verbatimEventDate>
   <dwc:habitat>pre-cordilleran steppe</dwc:habitat>
   <dwc:fieldNumber xsi:nil="true"/>
@@ -70,7 +70,7 @@
   <dwc:higherGeographyID>urn:location:TGN:1002002</dwc:higherGeographyID>
   <dwc:higherGeography>South America; Chile; Region XII; Parque Natural Karukinka</dwc:higherGeography>
   <dwc:continent>South America</dwc:continent>
-  <dwc:waterBody xsi:nil="true"/>
+  <dwc:waterbody xsi:nil="true"/>
   <dwc:islandGroup xsi:nil="true"/>
   <dwc:island xsi:nil="true"/>
   <dwc:country>Argentina</dwc:country>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0"?>
 <dwr:DarwinRecordSet
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://rs.tdwg.org/dwc/dwcrecord/  http://rs.tdwg.org/dwc/xsd/tdwg_dwc_classes.xsd"
+    xsi:schemaLocation="http://rs.tdwg.org/dwc/dwcrecord/  ../../xsd/tdwg_dwc_classes.xsd"
     xmlns:dcterms="http://purl.org/dc/terms/"
     xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
     xmlns:dwr="http://rs.tdwg.org/dwc/dwcrecord/">
@@ -14,12 +14,12 @@
     </dcterms:Location>
     <dwc:Event>
         <dwc:eventID>http://guid.mvz.org/events/1995/6</dwc:eventID>
-        <dwc:eventDate>1995-01-12</dwc:eventDate>
+        <dwc:eventDate>1995-01-12T00:00:00</dwc:eventDate>
         <dwc:startDayOfYear>12</dwc:startDayOfYear>
         <dwc:endDayOfYear>12</dwc:endDayOfYear>
         <dwc:year>1995</dwc:year>
-        <dwc:month>1</dwc:month>
-        <dwc:day>12</dwc:day>
+        <dwc:month>--01</dwc:month>
+        <dwc:day>---12</dwc:day>
         <dwc:verbatimEventDate>12 Jan 1995</dwc:verbatimEventDate>
         <dwc:habitat>mallín</dwc:habitat>
         <dwc:fieldNotes>on file in the Grinnell-Miller Library</dwc:fieldNotes>
@@ -39,7 +39,7 @@
     <dwc:Identification>
       <dwc:identificationID>http://guid.mvz.org/identifications/23459</dwc:identificationID>
       <dwc:identifiedBy>Richard Sage</dwc:identifiedBy>
-      <dwc:dateIdentified>2000</dwc:dateIdentified>
+      <dwc:dateIdentified>2000-01-01T00:00:00</dwc:dateIdentified>
       <dwc:identificationQualifier>sp.</dwc:identificationQualifier>
       <dwc:occurrenceID>urn:catalog:MVZ:Mammals:14523</dwc:occurrenceID>
     </dwc:Identification>
@@ -51,7 +51,7 @@
     <dwc:Identification>
       <dwc:identificationID>http://guid.mvz.org/identifications/94752</dwc:identificationID>
       <dwc:identifiedBy>James L Patton</dwc:identifiedBy>
-      <dwc:dateIdentified>2001-09-14</dwc:dateIdentified>
+      <dwc:dateIdentified>2001-09-14T00:00:00</dwc:dateIdentified>
       <dwc:occurrenceID>urn:catalog:MVZ:Mammals:14523</dwc:occurrenceID>
     </dwc:Identification>
     <dwc:Taxon>
@@ -80,7 +80,7 @@
     <dwc:Identification>
       <dwc:identificationID>http://guid.mvz.org/identifications/94753</dwc:identificationID>
       <dwc:identifiedBy>James L Patton</dwc:identifiedBy>
-      <dwc:dateIdentified>2001-09-14</dwc:dateIdentified>
+      <dwc:dateIdentified>2001-09-14T00:00:00</dwc:dateIdentified>
       <dwc:occurrenceID>urn:catalog:MVZ:Mammals:14524</dwc:occurrenceID>
     </dwc:Identification>
     <dwc:Taxon>

@@ -221,7 +221,7 @@ follow these recommendations as well as possible. You might argue that having no
 data (data of low quality or dubious value). Consider the simple axiom "It's not what you have, but what you do with 
 it that matters." If data restrictions were in place at the fundamental level, then 
 a record having any non-compliant data in any of its fields could not be shared via the standard. Not only would there be 
-a derth of shared data in that case (or an unused standard), but also there would be no way to use the standard to 
+a dearth of shared data in that case (or an unused standard), but also there would be no way to use the standard to 
 build shared data cleaning tools to actually improve the situation, nor to use data services to look up alternative 
 representations (language translations, for example) to serve a broader audience.  The rest is up to how the records 
 will be used - in other words, it is up to applications to enforce further restrictions if appropriate, and it is up 
@@ -255,7 +255,7 @@ specification, which allows the contributor to describe the contents of a text f
 or not) through a separate configuration file (called a metafile). The metafile allows the contributor to communicate 
 the structure of the content of the file or files and any relationships between them. Though it is good practice to 
 describe a <i>Simple Darwin Core</i> file with such a metafile, it isn't strictly necessary if the file follows the 
-CSV file specification and the first line of the file contains the the field names. A <i>Fielded Text</i> metafile for 
+CSV file specification and the first line of the file contains the field names. A <i>Fielded Text</i> metafile for 
 any text file based on the <i>Simple Darwin Core</i> can be created by customizing the example metafile 
 [<a href="../../examples/text/example_text_simpledwc_complete.xml">SIMPLEMETAFILE</a>] (if this link shows a blank page 
 in your browser, use the View Source option to see the XML document), which includes references to all Darwin Core terms. 
@@ -274,13 +274,13 @@ shows a <i>SimpleDarwinRecordSet</i> containing one <i>SimpleDarwinRecord</i> fo
 <pre class="example">
 &lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;SimpleDarwinRecordSet
- xmlns="http://rs.tdwg.org/dwc/dwcrecord/"
+ xmlns="http://rs.tdwg.org/dwc/xsd/simpledarwincore/"
  xmlns:dc="http://purl.org/dc/terms/"
  xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="http://rs.tdwg.org/dwc/dwcrecord/ http://rs.tdwg.org/dwc/xsd/tdwg_dwc_simple.xsd"&gt;
+ xsi:schemaLocation="http://rs.tdwg.org/dwc/xsd/simpledarwincore/ http://rs.tdwg.org/dwc/xsd/tdwg_dwc_simple.xsd"&gt;
  &lt;SimpleDarwinRecord&gt;
-  &lt;dc:modified&gt;2009-09-22T09:49Z&lt;/dc:modified&gt;
+  &lt;dc:modified&gt;2006-05-04T18:13:51.0Z&lt;/dc:modified&gt;
   &lt;dc:language&gt;en&lt;/dc:language&gt;
   &lt;dwc:basisOfRecord&gt;Taxon&lt;/dwc:basisOfRecord&gt;
   &lt;dwc:scientificNameID&gt;http://research.calacademy.org/research/ichthyology/catalog/fishcatget.asp?spid=53548&lt;/dwc:scientificNameID&gt;
@@ -339,13 +339,13 @@ your data, even if there might be problems with people using it reliably.
 <pre class="example">
 &lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;SimpleDarwinRecordSet
- xmlns="http://rs.tdwg.org/dwc/dwcrecord/"
+ xmlns="http://rs.tdwg.org/dwc/xsd/simpledarwincore/"
  xmlns:dc="http://purl.org/dc/terms/"
  xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="http://rs.tdwg.org/dwc/dwcrecord/ http://rs.tdwg.org/dwc/xsd/tdwg_dwc_simple.xsd"&gt;
+ xsi:schemaLocation="http://rs.tdwg.org/dwc/xsd/simpledarwincore/ http://rs.tdwg.org/dwc/xsd/tdwg_dwc_simple.xsd"&gt;
  &lt;SimpleDarwinRecord&gt;
-  &lt;dc:modified&gt;2009-02-12T14:22Z&lt;/dc:modified&gt;
+  &lt;dc:modified&gt;2009-02-12T12:43:31&lt;/dc:modified&gt;
   &lt;dc:language&gt;en&lt;/dc:language&gt;
   &lt;dwc:basisOfRecord&gt;Taxon&lt;/dwc:basisOfRecord&gt;
   &lt;dwc:scientificName&gt;Ctenomys sociabilis&lt;/dwc:scientificName&gt;

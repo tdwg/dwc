@@ -163,16 +163,16 @@ can be described with the following Darwin Core metafile:
     &lt;files&gt;
       &lt;location&gt;http://data.gbif.org/download/specimens.csv&lt;/location&gt;
     &lt;/files&gt;
-    &lt;field index="0" term="http://rs.tdwg.org/dwc/terms/catalogNumber" type="xs:integer"/&gt;
-    &lt;field index="1" term="http://rs.tdwg.org/dwc/terms/scientificName" type="xs:string"/&gt;
-    &lt;field index="2" term="http://rs.tdwg.org/dwc/terms/individualCount" type="xs:integer"/&gt;
+    &lt;field index="0" term="http://rs.tdwg.org/dwc/terms/catalogNumber" /&gt;
+    &lt;field index="1" term="http://rs.tdwg.org/dwc/terms/scientificName" /&gt;
+    &lt;field index="2" term="http://rs.tdwg.org/dwc/terms/individualCount" /&gt;
     &lt;!-- A constant value has no index, but applies to all rows --&gt;
-    &lt;field term="http://rs.tdwg.org/dwc/terms/datasetID" type="xs:string" default="urn:lsid:tim.lsid.tdwg.org:collections:1"/&gt;
+    &lt;field term="http://rs.tdwg.org/dwc/terms/datasetID" default="urn:lsid:tim.lsid.tdwg.org:collections:1"/&gt;
   &lt;/core&gt;
 &lt;/archive&gt;
 </pre>
 </p>	 
-These same data could be understood without the metafile if the the first row of the CSV file contained the term names: 
+These same data could be understood without the metafile if the first row of the CSV file contained the term names: 
 <PRE class="example">
 type,institutionCode,collectionCode,catalogNumber,scientificName,individualCount,datasetID
 PhysicalObject,ANSP,PH,123,"Cryptantha gypsophila Reveal & C.R. Broome",12,urn:lsid:tim.lsid.tdwg.org:collections:1
@@ -296,7 +296,7 @@ In addition to the general file attributes described below, every extension enti
 				<td class=""><em>fieldsTerminatedBy</em></td>
 				<td>Specifies the delimiter between fields.  Typical values might be "," or "\t" for CSV or Tab files respectively.</td>
 				<td/>
-				<td>\t</td>
+				<td>,</td>
 			</tr>
 			<tr>
 				<td class=""><em>linesTerminatedBy</em></td>
@@ -309,24 +309,13 @@ In addition to the general file attributes described below, every extension enti
 				<td>Specifies the character used to enclose (mark the start and end of) each field.
 				CSV files frequently use the double quote character (&quot;), but the default is no enclosing character. Note that a comma separated value file that has commas within the content of any field must have an enclosing character.</td>
 				<td/>
-				<td></td>
+				<td>&quot;</td>
 			</tr>
 			
 			<tr>
-				<td class=""><em>compression</em></td>
-				<td>Specifies the compression used for the file.  May be omitted or specified as one of:
-				<dl>
-					<dt>GZIP</dt>
-					<dd>Data file is compressed as GZIP.</dd>
-					<dt>ZIP</dt>
-					<dd>Data file is compressed as ZIP (PKZIP, WinZip, StuffIt, etc.).</dd>
-				</dl>
-				<td/>
-				<td/>
-			</tr>
-			<tr>
 				<td class=""><em>encoding</em></td>
-				<td>Specifies the <a href="http://en.wikipedia.org/wiki/Character_encoding">character encoding</a> for the data file.  The encoding is extremely important, but often ignored. One of:
+				<td>Specifies the <a href="http://en.wikipedia.org/wiki/Character_encoding">character encoding</a> for the data file.  
+				        The encoding is extremely important, but often ignored. The most frequently used encodings are:
 					<dl>
 						<dt>UTF-8</dt>
 						<dd>8-bit Unicode Transformation Format.</dd>
@@ -339,7 +328,7 @@ In addition to the general file attributes described below, every extension enti
 					</dl>
 				</td>
 				<td/>
-				<td>ISO-8859-1</td>
+				<td>UTF-8</td>
 			</tr>
 			<tr>
 				<td class=""><em>ignoreHeaderLines</em></td>
@@ -365,7 +354,7 @@ In addition to the general file attributes described below, every extension enti
 				</dl>
 				</td>
 				<td/>
-				<td></td>
+				<td>YYYY-MM-DD</td>
 			</tr>
 			
 		</tbody>
@@ -451,16 +440,23 @@ being shared for the entity, whether explicitly or through the use of a default 
 				<td/>
 			</tr>
 			<tr>
-				<td class=""><em>type</em></td>
-				<td>Specifies the type of the data content in the column. This is restricted to any simple type (xs:integer, xs:nonNegativeInteger, xs:date, etc.; see <a href="#fieldTypeGuidelines">guidelines for field types</a>).</td>
-				<td/>
-				<td>xs:string</td>
-			</tr>
-			<tr>
 				<td class=""><em>default</em></td>
 				<td>Specifies value to use if one is not supplied for the field in a given row. If no index is supplied, the default can be used to define a constant for all rows for a field that is not in the data file.</td>
 				<td/>
 				<td/>
+			</tr>
+			<tr>
+				<td class=""><em>vocabulary</em></td>
+				<td>A Unified Resource Identifier (URI) for a vocabulary that the source values for this field are based on.
+                                The URI ideally should resolve to some machine readable definition like SKOS, RDF or at least some simple text or html file
+                                often found for ISO or RFC standards. 
+                                For example 
+                                http://rs.gbif.org/vocabulary/gbif/nomenclatural_code.xml,   
+                                http://www.ietf.org/rfc/rfc3066.txt
+                                or http://www.iso.org/iso/list-en1-semic-3.txt
+				.</td>
+				<td/>
+				<td></td>
 			</tr>
 		</tbody>
 	</table>
@@ -495,8 +491,9 @@ the threat status for those species.
     &lt;files&gt;
         &lt;location&gt;whales.txt&lt;/location&gt;
     &lt;/files&gt;
-    &lt;id index=&quot;0&quot; term=&quot;http://rs.tdwg.org/dwc/terms/taxonID&quot;/&gt;
-    &lt;field index=&quot;1&quot; term=&quot;http://purl.org/dc/terms/modified&quot; type=&quot;xs:dateTime&quot;/&gt;
+    &lt;id index=&quot;0&quot; /&gt;
+    &lt;field index=&quot;0&quot; term=&quot;http://rs.tdwg.org/dwc/terms/taxonID&quot; /&gt;
+    &lt;field index=&quot;1&quot; term=&quot;http://purl.org/dc/terms/modified&quot; /&gt;
     &lt;field index=&quot;2&quot; term=&quot;http://rs.tdwg.org/dwc/terms/scientificName&quot;/&gt;
     &lt;field index=&quot;3&quot; term=&quot;http://rs.tdwg.org/dwc/terms/acceptedNameUsageID&quot;/&gt;
     &lt;field index=&quot;4&quot; term=&quot;http://rs.tdwg.org/dwc/terms/parentNameUsageID&quot;/&gt;
@@ -508,7 +505,7 @@ the threat status for those species.
     &lt;files&gt;
         &lt;location&gt;types.csv&lt;/location&gt;
     &lt;/files&gt;
-    &lt;coreId index=&quot;0&quot; term=&quot;http://rs.tdwg.org/dwc/terms/scientificNameID&quot;/&gt;
+    &lt;coreId index=&quot;0&quot; /&gt;
     &lt;field index=&quot;1&quot; term=&quot;http://purl.org/dc/terms/bibliographicCitation&quot;/&gt;
     &lt;field index=&quot;2&quot; term=&quot;http://rs.tdwg.org/dwc/terms/catalogNumber&quot;/&gt;
     &lt;field index=&quot;3&quot; term=&quot;http://rs.tdwg.org/dwc/terms/collectionCode&quot;/&gt;
@@ -521,58 +518,13 @@ the threat status for those species.
     &lt;files&gt;
         &lt;location&gt;distribution.csv&lt;/location&gt;
     &lt;/files&gt;
-    &lt;coreId index=&quot;0&quot; term=&quot;http://rs.tdwg.org/dwc/terms/scientificNameID&quot;/&gt;
-    &lt;field index=&quot;1&quot; term=&quot;http://rs.tdwg.org/dwc/terms/country&quot;/&gt;
-    &lt;field index=&quot;2&quot; term=&quot;http://www.iucn.org/redlist/3.1/threatStatus&quot;/&gt;
-    &lt;field index=&quot;3&quot; term=&quot;http://purl.org/dc/terms/source&quot;/&gt;
+    &lt;coreId index=&quot;0&quot; /&gt;
+    &lt;field index=&quot;1&quot; term=&quot;http://rs.tdwg.org/dwc/terms/countryCode&quot;/&gt;
+    &lt;field index=&quot;2&quot; term=&quot;http://rs.gbif.org/terms/1.0/threatStatus&quot;/&gt;
+    &lt;field index=&quot;3&quot; term=&quot;http://rs.tdwg.org/dwc/terms/occurrenceStatus&quot;/&gt;
   &lt;/extension&gt;
-&lt;/starArchive&gt;
+&lt;/archive&gt;
 </pre>
-<A name="fieldTypeGuidelines" id="fieldTypeGuidelines"></A> 	
-<H3>3.2 Field Type Guidelines</H3>
-<p>
-The default value for <em>type</em> attribute of the &lt;field&gt; element is "string", and this should suffice for data type of
-most terms. Following is a list of exceptions with recommended data types and example content:
-</p>
-<table class="border">
-		<thead>
-			<caption>Non string term mappings</caption>
-			<th>Term</th>
-			<th>Recommended Types</th>
-			<th>Comments</th>
-		</thead>
-		<tbody>
-			<!-- decimal -->
-			<tr><td>http://rs.tdwg.org/dwc/terms/maximumDepthInMeters</td><td>xs:double, xs:integer</td><td>Example: 100</td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/minimumDepthInMeters</td><td>xs:double, xs:integer</td><td>Example: 50</td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/maximumElevationInMeters</td><td>xs:double, xs:integer</td><td>Example: 3700</td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/minimumElevationInMeters</td><td>xs:double, xs:integer</td><td>Example: 3600</td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/maximumDistanceAboveSurfaceInMeters</td><td>xs:double, xs:integer</td><td>Example: 10.5</td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/minimumDistanceAboveSurfaceInMeters</td><td>xs:double, xs:integer</td><td>Example: 10</td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/decimalLatitude</td><td>xs:double</td><td>Valid values between -90 and +90 inclusive, keep all precision.</td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/decimalLongitude</td><td>xs:double</td><td>Valid values between -180 and +180, keep all precision.</td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/coordinateUncertaintyInMeters</td><td>xs:double, xs:integer</td><td>Example: 30 (0 is not a valid value).</td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/coordinatePrecision</td><td>xs:double</td><td>Examples: Examples: "0.00001" (normal GPS limit for decimal degrees), "0.000278" (nearest second), "0.01667" (nearest minute), "1.0" (nearest degree).</td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/pointRadiusSpatialFit</td><td>xs:double</td><td>Examples: 1 (perfect fit), 1.5708 (circle bounding a square).</td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/footprintSpatialFit</td><td>xs:double</td><td>Example: 0 (false representation), 1.2732 (square bounding a circle).</td></tr>
-			<!-- integer -->
-			<tr><td>http://rs.tdwg.org/dwc/terms/individualCount</td><td>xs:integer</td><td>Example: 1</td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/startDayOfYear</td><td>xs:integer</td><td>Example: 1 is January 1st, 60 is March 1st or February 29th (leap years).</td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/endDayOfYear</td><td>xs:integer</td><td>Example: 32 is February 1st, 365 or 366 (leap years) is December 31st.</td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/day</td><td>xs:integer</td><td>Example: 1 (the 1st of the month).</td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/month</td><td>xs:integer</td><td>Examples: 1 (January), 12 (December).</td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/year</td><td>xs:integer</td><td>Use the form CCYY. Example: 2001</td></tr>
-			<!-- dateTime -->
-			<tr><td>http://purl.org/dc/terms/modified</td><td>xs:dateTime, xs:date</td><td>Examples: 2009-05-25T16:52-0800, 2009-05-25</td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/eventDate</td><td>xs:dateTime, xs:date</td><td>Example: 2008-10-13T1400+1000/2100+1000, 2008-10-13</td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/measurementDeterminedDate</td><td>xs:dateTime, xs:date</td><td>Example: 1963-03-08T14:07-0600</td></tr>
-			<!-- date -->
-			<tr><td>http://rs.tdwg.org/dwc/terms/dateIdentified</td><td>xs:date</td><td>Example: 1971-08-03</td></tr>
-			<tr><td>http://rs.tdwg.org/dwc/terms/relationshipEstablishedDate</td><td>xs:date</td><td>Example: 2008-05-10</td></tr>
-			<!-- time -->
-			<tr><td>http://rs.tdwg.org/dwc/terms/eventTime</td><td>xs:time</td><td>Example: 14:09Z</td></tr>
-		</tbody>
-	</table>
 
 <A name="database" id="database"></A> 
 <H2>4. Database Example</H2>

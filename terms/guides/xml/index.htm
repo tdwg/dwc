@@ -13,11 +13,11 @@
 <META name="DC.contributor" content="Renato De Giovanni (CRIA)"/>
 <META name="DC.contributor" content="Tim Robertson (GBIF)"/>
 <META name="DC.contributor" content="Dave Vieglais (KUNHM)"/>
-<META name="DC.modified" content="2009-12-07"/>
+<META name="DC.modified" content="2010-05-23"/>
 <META name="DC.dateAccepted" content="2009-02-12"/>
 <META name="DC.format" content="text/html"/>
-<META name="DC.identifier" content="http://rs.tdwg.org/dwc/2009-12-07/terms/guides/xml"/>
-<META name="DC.replaces" content="http://rs.tdwg.org/dwc/2009-09-23/terms/guides/xml/"/>
+<META name="DC.identifier" content="http://rs.tdwg.org/dwc/2010-05-23/terms/guides/xml"/>
+<META name="DC.replaces" content="http://rs.tdwg.org/dwc/2009-12-07/terms/guides/xml/"/>
 <META name="DC.publisher" content="Biodiversity Information Standards TDWG"/>
 <META name="DC.rights" content=""/>
 <META name="DC.accessRights" content="public"/>
@@ -83,7 +83,7 @@
 </TR>
 <TR>
 <TH>Date Modified:</TH>
-<TD>2009-12-07</TD>
+<TD>2010-05-23</TD>
 </TR>
 <TR>
 <TH>Abstract:</TH>
@@ -107,14 +107,14 @@
 </TR>
 <TR>
 <TH>Identifier:</TH>
-<TD>http://rs.tdwg.org/dwc/2009-12-07/terms/guides/xml/</TD>
+<TD>http://rs.tdwg.org/dwc/2010-05-23/terms/guides/xml/</TD>
 </TR>
 <TR><TH>Latest Version:</TH>
 <TD><A href="http://rs.tdwg.org/dwc/terms/guides/xml/index.htm">http://rs.tdwg.org/dwc/terms/guides/xml/</A></TD>
 </TR>
 <TR>
 <TH>Replaces:</TH>
-<TD><a href="http://rs.tdwg.org/dwc/2009-09-23/terms/guides/xml/index.htm">http://rs.tdwg.org/dwc/2009-09-23/terms/guides/xml/</A></TD>
+<TD><a href="http://rs.tdwg.org/dwc/2009-12-07/terms/guides/xml/index.htm">http://rs.tdwg.org/dwc/2009-12-07/terms/guides/xml/</A></TD>
 </TR>
 <TR>
 <TH>Document Status:</TH>
@@ -232,7 +232,7 @@ Elements for which the value is null should be omitted from the document or expl
 attribute <i>xsi:nil="true"</i>. 
 <PRE class="example">&lt;dwc:locality xsi:nil=&quot;true&quot;/&gt;</PRE>
 Do not use an empty string - an element with no content:
-<PRE class="example">&lt;dwc:locality&quot;&gt;&lt;/dwc:locality&quot;&gt;</PRE>
+<PRE class="example">&lt;dwc:locality&gt;&lt;/dwc:locality&gt;</PRE>
 
 <!-- 
 <H3>2.7 Language</H3>
@@ -356,20 +356,29 @@ reuse the location definition here by referring to it via locationID:
       &lt;dwc:dateIdentified&gt;2000&lt;/dwc:dateIdentified&gt;
       &lt;dwc:identificationQualifier&gt;sp.&lt;/dwc:identificationQualifier&gt;
       &lt;dwc:occurrenceID&gt;urn:catalog:MVZ:Mammals:14523&lt;/dwc:occurrenceID&gt;
+      &lt;dwc:taxonID&gt;urn:lsid:catalogueoflife.org:taxon:d79c11aa-29c1-102b-9a4a-00304854f820:col20120721&lt;/dwc:taxonID&gt;
     &lt;/dwc:Identification&gt;
     &lt;dwc:Taxon&gt;
+      &lt;dwc:taxonID&gt;urn:lsid:catalogueoflife.org:taxon:d79c11aa-29c1-102b-9a4a-00304854f820:col20120721&lt;/dwc:taxonID&gt;
       &lt;dwc:scientificName&gt;Ctenomys&lt;/dwc:scientificName&gt;
+      &lt;dwc:taxonRank&gt;genus&lt;/dwc:taxonRank&gt;
+      &lt;dwc:nomenclaturalCode&gt;ICZN&lt;/dwc:nomenclaturalCode&gt;
       &lt;dwc:genus&gt;Ctenomys&lt;/dwc:genus&gt;
-      &lt;dwc:identificationID&gt;http://guid.mvz.org/identifications/23459&lt;/dwc:identificationID&gt;
     &lt;/dwc:Taxon&gt;
     &lt;dwc:Identification&gt;
       &lt;dwc:identificationID&gt;http://guid.mvz.org/identifications/94752&lt;/dwc:identificationID&gt;
       &lt;dwc:identifiedBy&gt;James L Patton&lt;/dwc:identifiedBy&gt;
       &lt;dwc:dateIdentified&gt;2001-09-14&lt;/dwc:dateIdentified&gt;
       &lt;dwc:occurrenceID&gt;urn:catalog:MVZ:Mammals:14523&lt;/dwc:occurrenceID&gt;
+      &lt;dwc:taxonID&gt;urn:lsid:catalogueoflife.org:taxon:df0a797c-29c1-102b-9a4a-00304854f820:col20120721&lt;/dwc:taxonID&gt;
     &lt;/dwc:Identification&gt;
     &lt;dwc:Taxon&gt;
+      &lt;dwc:taxonID&gt;urn:lsid:catalogueoflife.org:taxon:df0a797c-29c1-102b-9a4a-00304854f820:col20120721&lt;/dwc:taxonID&gt;
+      &lt;dwc:parentNameUsageID&gt;urn:lsid:catalogueoflife.org:taxon:d79c11aa-29c1-102b-9a4a-00304854f820:col20120721&lt;/dwc:parentNameUsageID&gt;
       &lt;dwc:scientificName&gt;Ctenomys sociabilis&lt;/dwc:scientificName&gt;
+      &lt;dwc:scientificNameAuthorship&gt;Pearson and Christie, 1985&lt;/dwc:scientificNameAuthorship&gt;
+      &lt;dwc:taxonRank&gt;species&lt;/dwc:taxonRank&gt;
+      &lt;dwc:nomenclaturalCode&gt;ICZN&lt;/dwc:nomenclaturalCode&gt;
       &lt;dwc:higherClassification&gt;Animalia; Chordata; Vertebrata; Mammalia; Theria; Eutheria; Rodentia; Hystricognatha; Hystricognathi; Ctenomyidae; Ctenomyini; Ctenomys&lt;/dwc:higherClassification&gt;
       &lt;dwc:kingdom&gt;Animalia&lt;/dwc:kingdom&gt;
       &lt;dwc:phylum&gt;Chordata&lt;/dwc:phylum&gt;
@@ -378,7 +387,6 @@ reuse the location definition here by referring to it via locationID:
       &lt;dwc:family&gt;Ctenomyidae&lt;/dwc:family&gt;
       &lt;dwc:genus&gt;Ctenomys&lt;/dwc:genus&gt;
       &lt;dwc:specificEpithet&gt;sociabilis&lt;/dwc:specificEpithet&gt;
-      &lt;dwc:identificationID&gt;http://guid.mvz.org/identifications/94752&lt;/dwc:identificationID&gt;
     &lt;/dwc:Taxon&gt;
     &lt;dwc:Occurrence&gt;
         &lt;dcterms:type&gt;PhysicalObject&lt;/dcterms:type&gt;
@@ -396,19 +404,8 @@ reuse the location definition here by referring to it via locationID:
       &lt;dwc:identifiedBy&gt;James L Patton&lt;/dwc:identifiedBy&gt;
       &lt;dwc:dateIdentified&gt;2001-09-14&lt;/dwc:dateIdentified&gt;
       &lt;dwc:occurrenceID&gt;urn:catalog:MVZ:Mammals:14524&lt;/dwc:occurrenceID&gt;
+      &lt;dwc:taxonID&gt;urn:lsid:catalogueoflife.org:taxon:df0a797c-29c1-102b-9a4a-00304854f820:col20120721&lt;/dwc:taxonID&gt;
     &lt;/dwc:Identification&gt;
-    &lt;dwc:Taxon&gt;
-      &lt;dwc:scientificName&gt;Ctenomys sociabilis&lt;/dwc:scientificName&gt;
-      &lt;dwc:higherClassification&gt;Animalia; Chordata; Vertebrata; Mammalia; Theria; Eutheria; Rodentia; Hystricognatha; Hystricognathi; Ctenomyidae; Ctenomyini; Ctenomys&lt;/dwc:higherClassification&gt;
-      &lt;dwc:kingdom&gt;Animalia&lt;/dwc:kingdom&gt;
-      &lt;dwc:phylum&gt;Chordata&lt;/dwc:phylum&gt;
-      &lt;dwc:class&gt;Mammalia&lt;/dwc:class&gt;
-      &lt;dwc:order&gt;Rodentia&lt;/dwc:order&gt;
-      &lt;dwc:family&gt;Ctenomyidae&lt;/dwc:family&gt;
-      &lt;dwc:genus&gt;Ctenomys&lt;/dwc:genus&gt;
-      &lt;dwc:specificEpithet&gt;sociabilis&lt;/dwc:specificEpithet&gt;
-      &lt;dwc:identificationID&gt;http://guid.mvz.org/identifications/94753&lt;/dwc:identificationID&gt;
-    &lt;/dwc:Taxon&gt;
     &lt;dwc:ResourceRelationship&gt;
         &lt;dwc:resourceRelationshipID&gt;http://guid.mvz.org/relations/23423&lt;/dwc:resourceRelationshipID&gt;
         &lt;dwc:resourceID&gt;urn:catalog:MVZ:Mammals:14523&lt;/dwc:resourceID&gt;
@@ -424,7 +421,8 @@ reuse the location definition here by referring to it via locationID:
 &lt;/dwr:DarwinRecordSet&gt;
 </pre>
 
-Here is different example demonstrating area count observations for events on two different days at one location:
+Here is different example demonstrating area count observations for events on two different days at one location.
+Note that we omit the identification class here as there is not identification related data and link via the taxonID directly:
 <pre class="example">
 &lt;?xml version=&quot;1.0&quot;?&gt;
 &lt;dwr:DarwinRecordSet
@@ -461,13 +459,14 @@ Here is different example demonstrating area count observations for events on tw
       &lt;dwc:basisOfRecord&gt;HumanObservation&lt;/dwc:basisOfRecord&gt;
       &lt;dwc:individualCount&gt;2&lt;/dwc:individualCount&gt;
       &lt;dwc:eventID&gt;http://guid.mvz.org/events/2006/11/26/17&lt;/dwc:eventID&gt;
+      &lt;dwc:taxonID&gt;urn:lsid:catalogueoflife.org:taxon:f000ee00-29c1-102b-9a4a-00304854f820:col20120721&lt;/dwc:taxonID&gt;
     &lt;/dwc:Occurrence&gt;
     &lt;dwc:Taxon&gt;
-      &lt;dwc:scientificName&gt;Anthus hellmayri&lt;/dwc:scientificName&gt;
+      &lt;dwc:taxonID&gt;urn:lsid:catalogueoflife.org:taxon:f000ee00-29c1-102b-9a4a-00304854f820:col20120721&lt;/dwc:taxonID&gt;
+      &lt;dwc:scientificName&gt;Anthus hellmayri Hartert, 1909&lt;/dwc:scientificName&gt;
       &lt;dwc:class&gt;Aves&lt;/dwc:class&gt;
       &lt;dwc:genus&gt;Anthus&lt;/dwc:genus&gt;
       &lt;dwc:specificEpithet&gt;hellmayri&lt;/dwc:specificEpithet&gt;
-      &lt;dwc:occurrenceID&gt;urn:catalog:AUDCLO:EBIRD:OBS64515288&lt;/dwc:occurrenceID&gt;
     &lt;/dwc:Taxon&gt;
     &lt;dwc:Occurrence&gt;
       &lt;dwc:occurrenceID&gt;urn:catalog:AUDCLO:EBIRD:OBS64515286&lt;/dwc:occurrenceID&gt;
@@ -480,13 +479,14 @@ Here is different example demonstrating area count observations for events on tw
       &lt;dwc:basisOfRecord&gt;HumanObservation&lt;/dwc:basisOfRecord&gt;
       &lt;dwc:individualCount&gt;1&lt;/dwc:individualCount&gt;
       &lt;dwc:eventID&gt;http://guid.mvz.org/events/2006/11/26/17&lt;/dwc:eventID&gt;
+      &lt;dwc:taxonID&gt;urn:lsid:catalogueoflife.org:taxon:f000e838-29c1-102b-9a4a-00304854f820:col20120721&lt;/dwc:taxonID&gt;
     &lt;/dwc:Occurrence&gt;
     &lt;dwc:Taxon&gt;
-      &lt;dwc:scientificName&gt;Anthus correndera&lt;/dwc:scientificName&gt;
+      &lt;dwc:taxonID&gt;urn:lsid:catalogueoflife.org:taxon:f000e838-29c1-102b-9a4a-00304854f820:col20120721&lt;/dwc:taxonID&gt;
+      &lt;dwc:scientificName&gt;Anthus correndera Vieillot, 1818&lt;/dwc:scientificName&gt;
       &lt;dwc:class&gt;Aves&lt;/dwc:class&gt;
       &lt;dwc:genus&gt;Anthus&lt;/dwc:genus&gt;
       &lt;dwc:specificEpithet&gt;correndera&lt;/dwc:specificEpithet&gt;
-      &lt;dwc:occurrenceID&gt;urn:catalog:AUDCLO:EBIRD:OBS64515286&lt;/dwc:occurrenceID&gt;
     &lt;/dwc:Taxon&gt;
     &lt;dwc:Event&gt;
       &lt;dwc:eventID&gt;http://guid.mvz.org/events/2006/11/27/6&lt;/dwc:eventID&gt;
@@ -505,14 +505,8 @@ Here is different example demonstrating area count observations for events on tw
       &lt;dwc:basisOfRecord&gt;HumanObservation&lt;/dwc:basisOfRecord&gt;
       &lt;dwc:individualCount&gt;1&lt;/dwc:individualCount&gt;
       &lt;dwc:eventID&gt;http://guid.mvz.org/events/2006/11/27/6&lt;/dwc:eventID&gt;
+      &lt;dwc:taxonID&gt;urn:lsid:catalogueoflife.org:taxon:f000ee00-29c1-102b-9a4a-00304854f820:col20120721&lt;/dwc:taxonID&gt;
     &lt;/dwc:Occurrence&gt;
-    &lt;dwc:Taxon&gt;
-      &lt;dwc:scientificName&gt;Anthus hellmayri&lt;/dwc:scientificName&gt;
-      &lt;dwc:class&gt;Aves&lt;/dwc:class&gt;
-      &lt;dwc:genus&gt;Anthus&lt;/dwc:genus&gt;
-      &lt;dwc:specificEpithet&gt;hellmayri&lt;/dwc:specificEpithet&gt;
-      &lt;dwc:occurrenceID&gt;urn:catalog:AUDCLO:EBIRD:OBS64515333&lt;/dwc:occurrenceID&gt;
-    &lt;/dwc:Taxon&gt;
     &lt;dwc:Occurrence&gt;
       &lt;dwc:occurrenceID&gt;urn:catalog:AUDCLO:EBIRD:OBS64515331&lt;/dwc:occurrenceID&gt;
       &lt;dcterms:type&gt;Event&lt;/dcterms:type&gt;
@@ -524,14 +518,8 @@ Here is different example demonstrating area count observations for events on tw
       &lt;dwc:basisOfRecord&gt;HumanObservation&lt;/dwc:basisOfRecord&gt;
       &lt;dwc:individualCount&gt;2&lt;/dwc:individualCount&gt;
       &lt;dwc:eventID&gt;http://guid.mvz.org/events/2006/11/27/6&lt;/dwc:eventID&gt;
+      &lt;dwc:taxonID&gt;urn:lsid:catalogueoflife.org:taxon:f000ee00-29c1-102b-9a4a-00304854f820:col20120721&lt;/dwc:taxonID&gt;
     &lt;/dwc:Occurrence&gt;
-    &lt;dwc:Taxon&gt;
-      &lt;dwc:scientificName&gt;Anthus hellmayri&lt;/dwc:scientificName&gt;
-      &lt;dwc:class&gt;Aves&lt;/dwc:class&gt;
-      &lt;dwc:genus&gt;Anthus&lt;/dwc:genus&gt;
-      &lt;dwc:specificEpithet&gt;hellmayri&lt;/dwc:specificEpithet&gt;
-      &lt;dwc:occurrenceID&gt;urn:catalog:AUDCLO:EBIRD:OBS64515331&lt;/dwc:occurrenceID&gt;
-    &lt;/dwc:Taxon&gt;
 &lt;/dwr:DarwinRecordSet&gt;
 </pre>
 
