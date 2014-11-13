@@ -241,6 +241,7 @@
     <xs:element name="Sex" type="xs:string" substitutionGroup="dwc:anySampleTerm"/>
     <xs:element name="LifeStage" type="xs:string" substitutionGroup="dwc:anySampleTerm"/>
     <xs:element name="ReproductiveCondition" type="xs:string" substitutionGroup="dwc:anySampleTerm"/>
+    <xs:element name="Behavior" type="xs:string" substitutionGroup="dwc:anySampleTerm"/>
     <xs:element name="EstablishmentMeans" type="xs:string" substitutionGroup="dwc:anySampleTerm"/>
     <xs:element name="SampleAttributes" type="xs:string" substitutionGroup="dwc:anySampleTerm"/>
     <xs:element name="Preparations" type="xs:string" substitutionGroup="dwc:anySampleTerm"/>
@@ -271,6 +272,7 @@
             <xs:element ref="dwc:Sex" minOccurs="0"/>
             <xs:element ref="dwc:LifeStage" minOccurs="0"/>
             <xs:element ref="dwc:ReproductiveCondition" minOccurs="0"/>
+            <xs:element ref="dwc:Behavior" minOccurs="0"/>
             <xs:element ref="dwc:EstablishmentMeans" minOccurs="0"/>
             <xs:element ref="dwc:SampleAttributes" minOccurs="0"/>
             <xs:element ref="dwc:Preparations" minOccurs="0"/>
@@ -301,7 +303,6 @@
     <xs:element name="MonthOfYear" type="xs:gMonth" substitutionGroup="dwc:anySamplingEventTerm"/>
     <xs:element name="DayOfMonth" type="xs:gDay" substitutionGroup="dwc:anySamplingEventTerm"/>
     <xs:element name="Habitat" type="xs:string" substitutionGroup="dwc:anySamplingEventTerm"/>
-    <xs:element name="Behavior" type="xs:string" substitutionGroup="dwc:anySamplingEventTerm"/>
     <xs:element name="Collector" type="xs:string" substitutionGroup="dwc:anySamplingEventTerm"/>
     <xs:element name="CollectorNumber" type="xs:string" substitutionGroup="dwc:anySamplingEventTerm"/>
     <xs:element name="FieldNumber" type="xs:string" substitutionGroup="dwc:anySamplingEventTerm"/>
@@ -321,7 +322,6 @@
             <xs:element ref="dwc:MonthOfYear" minOccurs="0"/>
             <xs:element ref="dwc:DayOfMonth" minOccurs="0"/>
             <xs:element ref="dwc:Habitat" minOccurs="0"/>
-            <xs:element ref="dwc:Behavior" minOccurs="0"/>
             <xs:element ref="dwc:Collector" minOccurs="0"/>
             <xs:element ref="dwc:CollectorNumber" minOccurs="0"/>
             <xs:element ref="dwc:FieldNumber" minOccurs="0"/>
@@ -341,7 +341,7 @@
     <xs:element name="SampleAttributeUnit" type="xs:string" substitutionGroup="dwc:anySampleAttributeTerm"/>
     <xs:element name="SampleAttributeDeterminedDate" type="xs:dateTime" substitutionGroup="dwc:anySampleAttributeTerm"/>
     <xs:element name="SampleAttributeDeterminedBy" type="xs:string" substitutionGroup="dwc:anySampleAttributeTerm"/>
-    <xs:element name="SampleAttibuteRemarks" type="xs:string" substitutionGroup="dwc:anySampleAttributeTerm"/>    
+    <xs:element name="SampleAttributeRemarks" type="xs:string" substitutionGroup="dwc:anySampleAttributeTerm"/>    
     <xs:group name="SampleAttributeTerms">
         <xs:sequence>
             <xs:element ref="dwc:SampleAttributeType" minOccurs="0"/>
@@ -350,7 +350,7 @@
             <xs:element ref="dwc:SampleAttributeUnit" minOccurs="0"/>
             <xs:element ref="dwc:SampleAttributeDeterminedDate" minOccurs="0"/>
             <xs:element ref="dwc:SampleAttributeDeterminedBy" minOccurs="0"/>
-            <xs:element ref="dwc:SampleAttibuteRemarks" minOccurs="0"/>
+            <xs:element ref="dwc:SampleAttributeRemarks" minOccurs="0"/>
         </xs:sequence>
     </xs:group>
     

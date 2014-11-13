@@ -43,5 +43,17 @@ rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/attributes">
 	<dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/attribute#decision"/>
 </rdf:Description>
 
+<!-- abcdEquivalence --> 
+<rdf:Description rdf:ID="abcdEquivalence" rdf:about="http://rs.tdwg.org/dwc/terms/attributes/abcdEquivalence">
+	<rdfs:label xml:lang="en-US">ABCD Equivalence</rdfs:label>
+	<dcterms:description xml:lang="en-US">Used to show the xpath(s) to the equivalent term(s) in the current version of the Access to Biological Collections Data (ABCD) schema.</dcterms:description>
+	<rdfs:comment>Currently mapped to ABCD 2.06b</rdfs:comment> 
+	<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/attribute"/>
+	<dcterms:issued>2009-01-25</dcterms:issued>
+	<dcterms:modified>2009-01-25</dcterms:modified>
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/attribute#abcdEquivalence"/>
+</rdf:Description>
+
 <!-- end attribute RDF -->
 </rdf:RDF>

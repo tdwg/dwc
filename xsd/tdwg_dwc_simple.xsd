@@ -57,6 +57,7 @@
                 <xs:element ref="dwc:Sex" minOccurs="0"/>
                 <xs:element ref="dwc:LifeStage" minOccurs="0"/>
                 <xs:element ref="dwc:ReproductiveCondition" minOccurs="0"/>
+                <xs:element ref="dwc:Behavior" minOccurs="0"/>
                 <xs:element ref="dwc:EstablishmentMeans" minOccurs="0"/>
                 <xs:element ref="dwc:SampleAttributes" minOccurs="0"/>
                 <xs:element ref="dwc:Preparations" minOccurs="0"/>
@@ -158,7 +159,6 @@
                 <xs:element ref="dwc:MonthOfYear" minOccurs="0"/>
                 <xs:element ref="dwc:DayOfMonth" minOccurs="0"/>
                 <xs:element ref="dwc:Habitat" minOccurs="0"/>
-                <xs:element ref="dwc:Behavior" minOccurs="0"/>
                 <xs:element ref="dwc:Collector" minOccurs="0"/>
                 <xs:element ref="dwc:CollectorNumber" minOccurs="0"/>
                 <xs:element ref="dwc:FieldNumber" minOccurs="0"/>

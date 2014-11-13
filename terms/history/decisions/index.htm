@@ -14,10 +14,10 @@
 <META name="DC.contributor" content="Tim Robertson (GBIF) &lt;trobertson@gbif.org&gt;"/>
 <META name="DC.contributor" content="Dave Vieglais (KUNHM) &lt;vieglais@ku.edu&gt;"/>
 <META name="DC.contributor" content="Stan Blum (CAS) &lt;sblum@calacademy.org&gt;"/>
-<META name="DC.modified" content="2009-02-12"/>
+<META name="DC.modified" content="2009-03-06"/>
 <META name="DC.dateAccepted" content="2009-02-12"/>
 <META name="DC.format" content="text/html"/>
-<META name="DC.identifier" content="http://rs.tdwg.org/dwc/terms/history/decisions/2009-02-12"/>
+<META name="DC.identifier" content="http://rs.tdwg.org/dwc/2009-02-12/terms/history/decisions"/>
 <META name="DC.publisher" content="Biodiversity Information Standards TDWG"/>
 <META name="DC.rights" content=""/>
 <META name="DC.accessRights" content="public"/>
@@ -72,21 +72,14 @@
 </TR>
 <TR>
 <TH>Identifier:</TH>
-<TD><A href="http://rs.tdwg.org/dwc/terms/history/decisions/2009-02-12/">http://rs.tdwg.org/dwc/terms/history/decisions/2009-02-12/</A></TD>
+<TD>http://rs.tdwg.org/dwc/2009-02-20/terms/history/decisions/</A></TD>
 </TR>
 <TR><TH>Latest Version:</TH>
-<TD><A href="http://rs.tdwg.org/dwc/terms/history/decisions/">http://rs.tdwg.org/dwc/terms/history/decisions/</A></TD>
+<TD><A href="http://rs.tdwg.org/dwc/terms/history/decisions/index.htm">http://rs.tdwg.org/dwc/terms/history/decisions/</A></TD>
 </TR>
 <TR>
 <TH>Replaces:</TH>
 <TD><A href="http://wiki.tdwg.org/twiki/bin/view/DarwinCore/DarwinCoreDraftStandard">http://wiki.tdwg.org/twiki/bin/view/DarwinCore/DarwinCoreDraftStandard</A></TD>
-</TR>
-<TR><TH>Replaced By:</TH>
-<TD>Not applicable</TD>
-</TR>
-<TR>
-<TH>Translations:</TH>
-<TD><A href="http://rs.tdwg.org/dwc/translations/">http://rs.tdwg.org/dwc/translations/</A></TD>
 </TR>
 <TR>
 <TH>Document Status:</TH>
@@ -96,12 +89,10 @@
 
 <H2>Table of Contents</H2>
 <TABLE width="95%" border="0" align="center"><TBODY>
-<TR><TD width="100%">1. <a href="#introduction">Introduction</a>
-</TD></TR>
-<TR><TD width="100%">2. <a href="#references">References</a>
-</TD></TR>
-<TR><TD width="100%">3. <a href="#Decisions">Decisions</a>
-</TD></TR>
+<TR><TD width="100%">1. <a href="#introduction">Introduction</a></TD></TR>
+<TR><TD width="100%">2. <a href="#guide">Document Guide</a></TD></TR>
+<TR><TD width="100%">3. <a href="#decisions">Decisions</a></TD></TR>
+<TR><TD width="100%">4. <a href="#references">References</a></TD></TR>
 </TBODY></TABLE
 
 <A name="introduction" id="introduction"></A> 
@@ -110,8 +101,48 @@
 <P>From time to time changes are proposed to Darwin Core terms. This document shows the outcome of 
 decisions based on officially proposed changes.
 
+<A name="guide" id="guide"></A> 
+<H2>2. Document Guide</H2>
+Following is an index to the primary documents of the Darwin Core. Links to additional documents relevant to this page can be 
+found in the <em>References</em> section.
+<p>
+<a href="../../../index.htm">Introduction</a> - Darwin Core motivation, content, how to participate
+<p>
+<il>Darwin Core Terms
+<ul><a href="../../index.htm">Quick Reference Guide</a> - definitions of currently accepted terms.</ul>
+<ul><a href="../index.htm">Complete History</a> - everything about every term that ever existed</ul>
+<ul><a href="./index.htm">Decisions</a> (this document) - documentation of justifications for past changes to terms</ul>
+<ul><a href="../../namespace/index.htm">Namespace policy</a> - how to propose changes to Darwin Core</ul>
+<ul><a href="../../type-vocabulary/index.htm">Type Vocabulary</a> - list of terms for types of records supported by Darwin Core</ul>
+</il>
+<p>
+<il>Mappings
+<ul><a href="../dwctoabcd/index.htm">ABCD</a> - current equivalent terms in ABCD</ul>
+<ul><a href="../versions/index.htm">Versions</a> - current equivalent terms in historical versions</ul>
+</il>
+<p>
+<il>Implementation Guides
+<ul><a href="../../guides/xml/index.htm">XML Schemas</a> - how to construct and use Darwin Core XML Schemas</ul>
+<ul><a href="../../guides/text/index.htm">Text</a> - how to construct and use text files for capturing Darwin Core data</ul>
+</il>
+<p>
+<a href="../../../translations/index.htm">Translations</a> - An index to Darwin Core documents in various languages
+
+<A name="decisions" id="decisions"></A> 
+<H2>3. Decisions</H2>
+<TABLE class="border" cellspacing="0">
+<TBODY>
+
+<!-- Begin Decisions Table -->
+
+<TR><TH colspan="2"><A name="Decision-2009-03-06_1">Decision-2009-03-06_1</A></TH></TR>	<TR><TD>Identifier:</TD><TD>http://rs.tdwg.org/dwc/terms/history/decisions/Decision-2009-03-06_1</TD></TR>	<TR><TD>Description:</TD><TD>The domain of Behavior was recognized as having been spuriously set to SamplingEvent when it should have been Sample.</TD></TR>	<TR><TD>Date:</TD><TD>2009-03-06</TD></TR>
+
+<!-- End Decisions Table -->
+
+</TBODY></TABLE>
+
 <A name="references" id="references"></A> 
-<H2>2. References</H2>
+<H2>4. References</H2>
 <TABLE width="95%" border="0" align="center">
 
 <TR>
@@ -143,20 +174,6 @@ decisions based on officially proposed changes.
 <TD width="40%"><A href="../versions/index.htm">http://rs.tdwg.org/dwc/terms/history/versions/</A></TD>
 <TD width="50%">Reference for mapping historical Darwin Core terms to the current recommended terms.</TD>
 </TR>
-
-</TBODY></TABLE>
-
-<A name="decisions" id="decisions"></A> 
-<H2>3. Decisions</H2>
-<TABLE class="border" cellspacing="0">
-<TBODY>
-
-<!-- Begin Decisions Table -->
-
-<TR><TH colspan="2"><A name="Decision-2009-01-20_0">Decision-2009-01-20_0</A></TH></TR>	<TR><TD>Identifier:</TD><TD>http://rs.tdwg.org/dwc/terms/history/decisions/Decision-2009-01-20_0</TD></TR>	<TR><TD>Description:</TD><TD>Example of what a decision would look like.</TD></TR>	<TR><TD>Date:</TD><TD>2009-01-20</TD></TR>
-<TR><TH colspan="2"><A name="Decision-2009-01-20_1">Decision-2009-01-20_1</A></TH></TR>	<TR><TD>Identifier:</TD><TD>http://rs.tdwg.org/dwc/terms/history/decisions/Decision-2009-01-20_1</TD></TR>	<TR><TD>Description:</TD><TD>Another example of what a decision would look like.</TD></TR>	<TR><TD>Date:</TD><TD>2009-01-21</TD></TR>
-
-<!-- End Decisions Table -->
 
 </TBODY></TABLE>
 

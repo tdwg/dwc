@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="human-dwctype.xsl"?>
+<!DOCTYPE rdf:RDF [
+    <!ENTITY rdfns 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+    <!ENTITY rdfsns 'http://www.w3.org/2000/01/rdf-schema#'>
+    <!ENTITY dctermsns 'http://purl.org/dc/terms/'>
+    <!ENTITY dctypens 'http://purl.org/dc/dcmitype/'>
+    <!ENTITY dcwtypens 'http://rs.tdwg.org/dwc/dwctype/'>
+    <!ENTITY dcamns 'http://purl.org/dc/dcam/'>
+    <!ENTITY dwcattributesns 'http://rs.tdwg.org/dwc/terms/attributes/'>
+<!--
+    <!ENTITY skosns 'http://www.w3.org/2004/02/skos/core#'>
+    <!ENTITY vsns 'http://www.w3.org/2003/06/sw-vocab-status/ns#'>
+-->
+]>
+<rdf:RDF 
+xmlns:dcam="http://purl.org/dc/dcam/"
+xmlns:dwcattributes="http://rs.tdwg.org/dwc/terms/attributes/"
+xmlns:dcterms="http://purl.org/dc/terms/" 
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+<rdf:Description rdf:about="http://rs.tdwg.org/dwc/dwctype/">
+<dcterms:title xml:lang="en-US">Darwin Core Namespace for terms in the Darwin Core Type Vocabulary</dcterms:title>
+<rdfs:comment>To comment on this schema, please create a new issue in http://code.google.com/p/darwincore/issues/</rdfs:comment>
+<dcterms:publisher xml:lang="en-US">Biodiversity Information Standards (TDWG)</dcterms:publisher>
+<dcterms:modified>2009-02-24</dcterms:modified>
+</rdf:Description>
+
+<!-- 
+  Each RDF description uses the following:
+    rdfs:label
+    rdfs:comment
+   *dcterms:description
+    rdfs:isDefinedBy
+    dcterms:issued
+    dcterms:modified
+    rdf:type
+    dcterms:hasVersion
+    dcam:memberOf
+   *rdfs:range
+    rdfs:subPropertyOf
+   *rdfs:domain
+    rdfs:replaces
+    dwcattributes:status
+   *dwcattributes:decision
+    dwcattributes:abcdEquivalence
+    
+    // potentially useful
+    skos = http://www.w3.org/2004/02/skos/core#
+    skos:example
+    vs = http://www.w3.org/2003/06/sw-vocab-status/ns#
+    vs:term_status
+-->
+
+<!-- Mutable RDF goes here -->
+
+<rdf:Description rdf:about="http://rs.tdwg.org/dwc/dwctype/PreservedSpecimen">	<rdfs:label xml:lang="en-US">PreservedSpecimen</rdfs:label>	<rdfs:comment xml:lang="en-US">A resource describing a preserved specimen.</rdfs:comment>		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/dwctype/"/>	<dcterms:issued>2008-11-19</dcterms:issued>	<dcterms:modified>2008-11-19</dcterms:modified>	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>	<dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/dwctype/#PreservedSpecimen-2008-11-19"/>	<dcam:memberOf rdf:resource="http://rs.tdwg.org/dwc/terms/DwCType"/>		<rdfs:subClassOf rdf:resource="http://purl.org/dc/dcmitype/PhysicalObject"/>		<rdfs:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/PreservedSpecimen-2008-11-19"/>	<dwcattributes:status>recommended</dwcattributes:status>		<dwcattributes:abcdEquivalence>RecordBasisEnum/PreservedSpecimen</dwcattributes:abcdEquivalence>	</rdf:Description>
+<rdf:Description rdf:about="http://rs.tdwg.org/dwc/dwctype/FossilSpecimen">	<rdfs:label xml:lang="en-US">FossilSpecimen</rdfs:label>	<rdfs:comment xml:lang="en-US">A resource describing a fossilized specimen.</rdfs:comment>		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/dwctype/"/>	<dcterms:issued>2008-11-19</dcterms:issued>	<dcterms:modified>2008-11-19</dcterms:modified>	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>	<dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/dwctype/#FossilSpecimen-2008-11-19"/>	<dcam:memberOf rdf:resource="http://rs.tdwg.org/dwc/terms/DwCType"/>		<rdfs:subClassOf rdf:resource="http://rs.tdwg.org/dwc/dwctype/PreservedSpecimen"/>		<rdfs:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/FossilSpecimen-2008-11-19"/>	<dwcattributes:status>recommended</dwcattributes:status>		<dwcattributes:abcdEquivalence>RecordBasisEnum/FossileSpecimen</dwcattributes:abcdEquivalence>	</rdf:Description>
+<rdf:Description rdf:about="http://rs.tdwg.org/dwc/dwctype/LivingSpecimen">	<rdfs:label xml:lang="en-US">LivingSpecimen</rdfs:label>	<rdfs:comment xml:lang="en-US">A resource describing a living specimen.</rdfs:comment>		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/dwctype/"/>	<dcterms:issued>2008-11-19</dcterms:issued>	<dcterms:modified>2008-11-19</dcterms:modified>	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>	<dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/dwctype/#LivingSpecimen-2008-11-19"/>	<dcam:memberOf rdf:resource="http://rs.tdwg.org/dwc/terms/DwCType"/>		<rdfs:subClassOf rdf:resource="http://purl.org/dc/dcmitype/PhysicalObject"/>		<rdfs:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/LivingSpecimen-2008-11-19"/>	<dwcattributes:status>recommended</dwcattributes:status>		<dwcattributes:abcdEquivalence>RecordBasisEnum/LivingSpecimen</dwcattributes:abcdEquivalence>	</rdf:Description>
+<rdf:Description rdf:about="http://rs.tdwg.org/dwc/dwctype/HumanObservation">	<rdfs:label xml:lang="en-US">HumanObservation</rdfs:label>	<rdfs:comment xml:lang="en-US">A resource describing an observation made by one or more people without accompanying physical evidence.</rdfs:comment>		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/dwctype/"/>	<dcterms:issued>2008-11-19</dcterms:issued>	<dcterms:modified>2008-11-19</dcterms:modified>	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>	<dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/dwctype/#HumanObservation-2008-11-19"/>	<dcam:memberOf rdf:resource="http://rs.tdwg.org/dwc/terms/DwCType"/>				<rdfs:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/HumanObservation-2008-11-19"/>	<dwcattributes:status>recommended</dwcattributes:status>		<dwcattributes:abcdEquivalence>RecordBasisEnum/HumanObservation</dwcattributes:abcdEquivalence>	</rdf:Description>
+<rdf:Description rdf:about="http://rs.tdwg.org/dwc/dwctype/MachineObservation">	<rdfs:label xml:lang="en-US">MachineObservation</rdfs:label>	<rdfs:comment xml:lang="en-US">A resource describing an observation made by a machine without accompanying physical evidence.</rdfs:comment>		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/dwctype/"/>	<dcterms:issued>2008-11-19</dcterms:issued>	<dcterms:modified>2008-11-19</dcterms:modified>	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>	<dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/dwctype/#MachineObservation-2008-11-19"/>	<dcam:memberOf rdf:resource="http://rs.tdwg.org/dwc/terms/DwCType"/>				<rdfs:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/MachineObservation-2008-11-19"/>	<dwcattributes:status>recommended</dwcattributes:status>		<dwcattributes:abcdEquivalence>RecordBasisEnum/MachineObservation</dwcattributes:abcdEquivalence>	</rdf:Description>
+<rdf:Description rdf:about="http://rs.tdwg.org/dwc/dwctype/Location">	<rdfs:label xml:lang="en-US">Location</rdfs:label>	<rdfs:comment xml:lang="en-US">A resource describing a location.</rdfs:comment>		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/dwctype/"/>	<dcterms:issued>2009-01-23</dcterms:issued>	<dcterms:modified>2009-01-23</dcterms:modified>	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>	<dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/dwctype/#Location-2009-01-23"/>	<dcam:memberOf rdf:resource="http://rs.tdwg.org/dwc/terms/DwCType"/>				<rdfs:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/Location-2009-01-23"/>	<dwcattributes:status>recommended</dwcattributes:status>		<dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>	</rdf:Description>
+<rdf:Description rdf:about="http://rs.tdwg.org/dwc/dwctype/Taxonomy">	<rdfs:label xml:lang="en-US">Taxonomy</rdfs:label>	<rdfs:comment xml:lang="en-US">A resource describing a taxon.</rdfs:comment>		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/dwctype/"/>	<dcterms:issued>2009-01-23</dcterms:issued>	<dcterms:modified>2009-01-23</dcterms:modified>	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>	<dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/dwctype/#Taxonomy-2009-01-23"/>	<dcam:memberOf rdf:resource="http://rs.tdwg.org/dwc/terms/DwCType"/>				<rdfs:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/Taxonomy-2009-01-23"/>	<dwcattributes:status>recommended</dwcattributes:status>		<dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>	</rdf:Description>
+<rdf:Description rdf:about="http://rs.tdwg.org/dwc/dwctype/NomenclaturalChecklist">	<rdfs:label xml:lang="en-US">NomenclaturalChecklist</rdfs:label>	<rdfs:comment xml:lang="en-US">A resource describing a nomenclatural checklist.</rdfs:comment>		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/dwctype/"/>	<dcterms:issued>2009-01-23</dcterms:issued>	<dcterms:modified>2009-01-23</dcterms:modified>	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>	<dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/dwctype/#NomenclaturalChecklist-2009-01-23"/>	<dcam:memberOf rdf:resource="http://rs.tdwg.org/dwc/terms/DwCType"/>				<rdfs:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/NomenclaturalChecklist-2009-01-23"/>	<dwcattributes:status>recommended</dwcattributes:status>		<dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>	</rdf:Description>
+
+<!-- end Mutable RDF -->
+</rdf:RDF>

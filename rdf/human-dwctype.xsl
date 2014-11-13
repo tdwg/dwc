@@ -1,19 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- $Rev: 1321 $ -->
-<!-- $Date: 2007-09-10 17:23:32 +0200 (Mon, 10 Sep 2007) $ -->
-<!-- $Author: RogerHyam $ -->
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Rev: 1322 $ -->
+<!-- $Date: 2009-02-25 $ -->
+<!-- $Author: John Wieczorek $ -->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" version="1.0"
      xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:dwctype="http://rs.tdwg.org/dwc/terms/vocabulary/"
+     xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:dwctype="http://rs.tdwg.org/dwc/dwctype/"
      xmlns:owl="http://www.w3.org/2002/07/owl#">
      <xsl:output method="html" encoding="UTF-8" indent="yes"/>
      <xsl:variable name="wikiPrefix">http://code.google.com/p/darwincore/wiki/</xsl:variable>
      <xsl:template match="rdf:RDF">
           <html>
                <head>
-                    <title>Darwin Core Terms</title>
+                    <title>Darwin Core Type Vocabulary</title>
                     <link rel="stylesheet" type="text/css" href="human.css"/>
                </head>
                <body>
@@ -26,7 +26,7 @@
                                              height="67" border="0" id="logo"/>
                                    </a>
                               </div>
-                              <div id="RDF-header-title"> Darwin Core Terms</div>
+                              <div id="RDF-header-title"> Darwin Core Type Vocabulary</div>
                          </div>
 
                          <div id="RDF-title-bar">
@@ -37,13 +37,13 @@
                               <div id="left-bar-menu">
                                    <a href="http://www.tdwg.org">TDWG home</a>
                                    <div class="separator"><hr/></div>
-                                   <a href="http://128.32.146.144/dcterms/index.htm">Darwin Core Home</a><br/>
-                                   <a href="http://code.google.com/p/darwincore/">Darwin Core Development</a>                                   
+                                   <a href="http://rs.tdwg.org/dwc/index.htm">DarwinCore Home</a><br/>
+                                   <a href="http://code.google.com/p/darwincore/">DarwinCore Google Code</a>                                   
                                    <div class="separator"><hr/></div>
-                                   <a href="http://128.32.146.144/dcterms/terms/index.htm">Quick Guide to Terms</a><br/>
-                                   <a href="http://128.32.146.144/dcterms/terms/type-vocabulary/index.htm">Type Vocabulary</a><br/>
-                                   <a href="http://128.32.146.144/dcterms/terms/namespace/index.htm">Namespaces</a><br/>
-                                   <a href="http://128.32.146.144/dcterms/terms/xsd/guide/index.htm">XML encoding</a><br/>
+                                   <a href="http://rs.tdwg.org/dwc/terms/index.htm">Quick Reference Guide to Terms</a><br/>
+                                   <a href="http://rs.tdwg.org/dwc/terms/type-vocabulary/index.htm">Type Vocabulary</a><br/>
+                                   <a href="http://rs.tdwg.org/dwc/terms/namespace/index.htm">Namespaces</a><br/>
+                                   <a href="http://rs.tdwg.org/dwc/terms/guides/xsd/index.htm">XML encoding</a><br/>
                                    <a href="http://rs.tdwg.org/dwc/terms/guides/text/index.htm">Text encoding</a>
                               </div>
                          </div>
@@ -51,10 +51,10 @@
                          <div id="RDF-main">
 
                               <h1>
-                                   Darwin Core Terms
+                                   Darwin Core Type Vocabulary
                               </h1>
-                              <p>(This is an HTML view of the RDF term definitions. Use View-Source to
-                                   see the underlying RDF.) </p>
+                              <p>(This is an HTML view of the RDF type vocabulary term definitions. 
+                                   Use View-Source to see the underlying RDF.) </p>
                               <xsl:apply-templates select="rdf:Description"/>
                          </div>
                     </div>

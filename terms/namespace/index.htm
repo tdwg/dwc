@@ -14,10 +14,10 @@
 <META name="DC.contributor" content="Tim Robertson (GBIF) &lt;trobertson@gbif.org&gt;"/>
 <META name="DC.contributor" content="Dave Vieglais (KUNHM) &lt;vieglais@ku.edu&gt;"/>
 <META name="DC.contributor" content="Stan Blum (CAS) &lt;sblum@calacademy.org&gt;"/>
-<META name="DC.modified" content="2009-02-12"/>
+<META name="DC.modified" content="2009-02-20"/>
 <META name="DC.dateAccepted" content="2009-02-12"/>
 <META name="DC.format" content="text/html"/>
-<META name="DC.identifier" content="http://rs.tdwg.org/dwc/namespace/2009-02-12"/>
+<META name="DC.identifier" content="http://rs.tdwg.org/dwc/2009-02-20/namespace"/>
 <META name="DC.publisher" content="Biodiversity Information Standards TDWG"/>
 <META name="DC.rights" content=""/>
 <META name="DC.accessRights" content="public"/>
@@ -35,7 +35,7 @@
 <TABLE width="100%" cellspacing="0" cellpadding="0" bgcolor="#617394">
 <TBODY><TR>
 <TD width="70"><A href="http://www.tdwg.org"><IMG src="../../DarwinCore_files/TDWGlogo_Twiki.gif" width="150" height="70" alt="Biodiversity Information Standards (TDWG) logo"></A></TD>
-<TD width="100%" height="70" align="right" valign="top">
+<TD width="100%" height="70" align="right" valign="top"></TD>
 </TABLE>
 
 <H1>Darwin Core Namespace Policy</H1>
@@ -76,21 +76,14 @@ and the policies associated with Darwin Core namespaces.
 </TR>
 <TR>
 <TH>Identifier:</TH>
-<TD><A href="http://rs.tdwg.org/dwc/terms/namespace/2009-02-12/">http://rs.tdwg.org/dwc/terms/namespace/2009-02-12/</A></TD>
+<TD>http://rs.tdwg.org/dwc/2009-02-20/terms/namespace/</TD>
 </TR>
 <TR><TH>Latest Version:</TH>
-<TD><A href="http://rs.tdwg.org/dwc/terms/namespace/">http://rs.tdwg.org/dwc/terms/namespace/</A></TD>
+<TD><A href="http://rs.tdwg.org/dwc/terms/namespace/index.htm">http://rs.tdwg.org/dwc/terms/namespace/</A></TD>
 </TR>
 <TR>
 <TH>Replaces:</TH>
 <TD>Not applicable</TD>
-</TR>
-<TR><TH>Replaced By:</TH>
-<TD>Not applicable</TD>
-</TR>
-<TR>
-<TH>Translations:</TH>
-<TD><A href="http://rs.tdwg.org/dwc/translations/">http://rs.tdwg.org/dwc/translations/</A></TD>
 </TR>
 <TR>
 <TH>Document Status:</TH>
@@ -100,22 +93,53 @@ and the policies associated with Darwin Core namespaces.
 
 <H2>Table of Contents</H2>
 </P><TABLE width="95%" border="0" align="center"><TBODY>
-<TR><TD width="100%">1. <a href="glossary">Glossary</a>
-</TD></TR>
-<TR><TD width="100%">2. <a href="#introduction">Introduction</a>
-</TD></TR>
-<TR><TD width="100%">3. <a href="#references">References</a>
-</TD></TR>
-<TR><TD width="100%">4. <a href="#namespaceuris">Darwin Core Namespace URIs</a>
-</TD></TR>
-<TR><TD width="100%">5. <a href="#classesofchanges">Policy concerning classes of changes to Darwin Core terms</a>
-</TD></TR>
-<TR><TD width="100%">6. <a href="#persistence">Persistence Policy</a>
-</TD></TR>
+<TR><TD width="100%">1. <a href="#introduction">Introduction</a></TD></TR>
+<TR><TD width="100%">2. <a href="#guide">Document Guide</a></TD></TR>
+<TR><TD width="100%">3. <a href="#glossary">Glossary</a></TD></TR>
+<TR><TD width="100%">4. <a href="#namespaceuris">Darwin Core Namespace URIs</a></TD></TR>
+<TR><TD width="100%">5. <a href="#classesofchanges">Policy concerning classes of changes to Darwin Core terms</a></TD></TR>
+<TR><TD width="100%">6. <a href="#persistence">Persistence Policy</a></TD></TR>
+<TR><TD width="100%">7. <a href="#references">References</a></TD></TR>
 </TBODY></TABLE
 
+<A name="introduction" id="introduction"></A> 
+<H2>1. Introduction</H2>
+This document and the policies contained herein are modeled on the Dublin Core Metadata Initiative
+Namespace Policy [<a href="http://dublincore.org/documents/2007/07/02/dcmi-namespace/">DCMINAMESPACEPOLICY</a>]. 
+All terms in the Darwin Core must be assigned a unique URI. For convenience, the term URIs that are 
+assigned and managed by the Darwin Core Task Group are grouped into collections known as Darwin
+Core namespaces. This document describes how term URIs are allocated by the Darwin Core Task Group
+and the policies associated with Darwin Core namespaces.
+
+<A name="guide" id="guide"></A> 
+<H2>2. Document Guide</H2>
+Following is an index to the primary documents of the Darwin Core. Links to additional documents relevant to this page can be 
+found in the <em>References</em> section.
+<p>
+<a href="../../index.htm">Introduction</a> - Darwin Core motivation, content, how to participate
+<p>
+<il>Darwin Core Terms
+<ul><a href="../index.htm">Quick Reference Guide</a> - definitions of currently accepted terms.</ul>
+<ul><a href="../history/index.htm">Complete History</a> - everything about every term that ever existed</ul>
+<ul><a href="../history/decisions/index.htm">Decisions</a> - documentation of justifications for past changes to terms</ul>
+<ul><a href="./index.htm">Namespace policy</a> (this document) - how to propose changes to Darwin Core</ul>
+<ul><a href="../type-vocabulary/index.htm">Type Vocabulary</a> - list of terms for types of records supported by Darwin Core</ul>
+</il>
+<p>
+<il>Mappings
+<ul><a href="../history/dwctoabcd/index.htm">ABCD</a> - current equivalent terms in ABCD</ul>
+<ul><a href="../history/versions/index.htm">Versions</a> - current equivalent terms in historical versions</ul>
+</il>
+<p>
+<il>Implementation Guides
+<ul><a href="../guides/xml/index.htm">XML Schemas</a> - how to construct and use Darwin Core XML Schemas</ul>
+<ul><a href="../guides/text/index.htm">Text</a> - how to construct and use text files for capturing Darwin Core data</ul>
+</il>
+<p>
+<a href="../../translations/index.htm">Translations</a> - An index to Darwin Core documents in various languages
+
 <A name="glossary" id="glossary"></A> 
-<H2>1. Glossary</H2>
+<H2>3. Glossary</H2>
 <P>This document uses the following terminology:</P>
 <DL>
 
@@ -123,7 +147,7 @@ and the policies associated with Darwin Core namespaces.
 <DD>A property (element), class, vocabulary encoding scheme, or syntax encoding scheme.</DD>
 
 <DT><EM>URI</EM></DT>
-<DD>A Uniform Resource Identifier (<A href="http://www.ietf.org/rfc/rfc3986.txt">URI</A>) or Internationalized Resource Identifier (<A href="<A href="http://www.ietf.org/rfc/rfc3987.txt">IRI</A>).</DD>
+<DD>A Uniform Resource Identifier (<A href="http://www.ietf.org/rfc/rfc3986.txt">URI</A>) or Internationalized Resource Identifier (<A href="http://www.ietf.org/rfc/rfc3987.txt">IRI</A>).</DD>
 
 <DT><EM>Darwin Core term</EM></DT>
 <DD>A <EM>term</EM> that is declared and maintained by Darwin Core Task Group.</DD>
@@ -155,63 +179,6 @@ and the policies associated with Darwin Core namespaces.
 </DL>
 
 <P><EM>Term URIs</EM> are grouped into <EM>Darwin Core namespaces</EM> in order to ease the assignment of <EM>URIs </EM>to <EM>terms</EM> and to streamline their use in particular encoding syntaxes. Note that the grouping of <EM>term URIs</EM> into <EM>Darwin Core namespaces</EM> is orthogonal to the grouping of <EM>terms</EM> into sets designed to meet other functional needs, e.g., as various types of vocabularies.</P>
-
-<A name="introduction" id="introduction"></A> 
-<H2>2. Introduction</H2>
-This document and the policies contained herein are modeled on the Dublin Core Metadata Initiative
-Namespace Policy [<a href="http://dublincore.org/documents/2007/07/02/dcmi-namespace/">DCMINAMESPACEPOLICY</a>]. 
-All terms in the Darwin Core must be assigned a unique URI. For convenience, the term URIs that are 
-assigned and managed by the Darwin Core Task Group are grouped into collections known as Darwin
-Core namespaces. This document describes how term URIs are allocated by the Darwin Core Task Group
-and the policies associated with Darwin Core namespaces.
-
-<A name="references" id="references"></A> 
-<H2>3. References</H2>
-<TABLE width="95%" border="0" align="center">
-
-<TR>
-<TD width="10%"><A name="DCMINAMESPACEPOLICY">[DCMINAMESPACEPOLICY]</A></TD>
-<TD width="40%"><A href="http://dublincore.org/documents/2007/07/02/dcmi-namespace/">http://dublincore.org/documents/2007/07/02/dcmi-namespace/</A></TD>
-<TD width="50%">DCMI Namespace Policy, 2 July 2007</TD>
-</TR>
-
-<TR>
-<TD width="10%"><A name="DWC">[DWC]</A></TD>
-<TD width="40%"><A href="../../index.htm">http://rs.tdwg.org/dwc/</A></TD>
-<TD width="50%">An introduction to the Darwin Core Standard.</TD>
-</TR>
-
-<TR>
-<TD width="10%"><A name="DWC-MAIL">[DWC-MAIL]</A></TD>
-<TD width="40%"><A href="mailto:tdwg-content@lists.tdwg.org">tdwg-content@lists.tdwg.org</A></TD>
-<TD width="50%">Mailing list for commentary and discussion on Darwin Core.</TD>
-</TR>
-
-<TR>
-<TD width="10%"><A name="DWC-USAGE">[DWC-USAGE]</A></TD>
-<TD width="40%"><A href="mailto:tdwg-tag@lists.tdwg.org">tdwg-tag@lists.tdwg.org</A></TD>
-<TD width="50%">TDWG Architecture Mailing List.</TD>
-</TR>
-
-<TR>
-<TD width="10%"><A name="DWC-TYPE">[DWC-TYPE]</A></TD>
-<TD width="40%"><A href="../type-vocabulary/index.htm">http://rs.tdwg.org/dwc/terms/type-vocabulary/</A></TD>
-<TD width="50%">Darwin Core Type Vocabulary.</TD>
-</TR>
-
-<TR>
-<TD width="10%"><A name="DECISIONS">[DECISIONS]</A></TD>
-<TD width="40%"><A href="../history/decisions/index.htm">http://rs.tdwg.org/dwc/terms/history/decisions/</A></TD>
-<TD width="50%">A history of decisions resulting in changes to Darwin Core terms.</TD>
-</TR>
-
-<TR>
-<TD width="10%"><A name="HISTORY">[HISTORY]</A></TD>
-<TD width="40%"><A href="../history/index.htm">http://rs.tdwg.org/dwc/terms/history/</A></TD>
-<TD width="50%">Darwin Core Terms: A complete history.</TD>
-</TR>
-
-</TBODY></TABLE>
 
 <A name="namespaceuris" id="namespaceuris"></A> 
 <H2>4. Darwin Core Namespace URIs</H2>
@@ -328,6 +295,54 @@ TDWG recognizes that people and applications depend on the persistence of formal
 that have been made publicly available. In particular, the stability of <EM>Darwin Core term URIs</EM> and <EM>Darwin Core 
 namespace URIs</EM> is critical to interoperability over time. Thus, the wide promulgation of this set of <EM>URIs</EM> 
 dictates that they be maintained to support legacy applications that have adopted them.</P>
+
+<A name="references" id="references"></A> 
+<H2>7. References</H2>
+<TABLE width="95%" border="0" align="center">
+
+<TR>
+<TD width="10%"><A name="DCMINAMESPACEPOLICY">[DCMINAMESPACEPOLICY]</A></TD>
+<TD width="40%"><A href="http://dublincore.org/documents/2007/07/02/dcmi-namespace/">http://dublincore.org/documents/2007/07/02/dcmi-namespace/</A></TD>
+<TD width="50%">DCMI Namespace Policy, 2 July 2007</TD>
+</TR>
+
+<TR>
+<TD width="10%"><A name="DWC">[DWC]</A></TD>
+<TD width="40%"><A href="../../index.htm">http://rs.tdwg.org/dwc/</A></TD>
+<TD width="50%">An introduction to the Darwin Core Standard.</TD>
+</TR>
+
+<TR>
+<TD width="10%"><A name="DWC-MAIL">[DWC-MAIL]</A></TD>
+<TD width="40%"><A href="mailto:tdwg-content@lists.tdwg.org">tdwg-content@lists.tdwg.org</A></TD>
+<TD width="50%">Mailing list for commentary and discussion on Darwin Core.</TD>
+</TR>
+
+<TR>
+<TD width="10%"><A name="DWC-USAGE">[DWC-USAGE]</A></TD>
+<TD width="40%"><A href="mailto:tdwg-tag@lists.tdwg.org">tdwg-tag@lists.tdwg.org</A></TD>
+<TD width="50%">TDWG Architecture Mailing List.</TD>
+</TR>
+
+<TR>
+<TD width="10%"><A name="DWC-TYPE">[DWC-TYPE]</A></TD>
+<TD width="40%"><A href="../type-vocabulary/index.htm">http://rs.tdwg.org/dwc/terms/type-vocabulary/</A></TD>
+<TD width="50%">Darwin Core Type Vocabulary.</TD>
+</TR>
+
+<TR>
+<TD width="10%"><A name="DECISIONS">[DECISIONS]</A></TD>
+<TD width="40%"><A href="../history/decisions/index.htm">http://rs.tdwg.org/dwc/terms/history/decisions/</A></TD>
+<TD width="50%">A history of decisions resulting in changes to Darwin Core terms.</TD>
+</TR>
+
+<TR>
+<TD width="10%"><A name="HISTORY">[HISTORY]</A></TD>
+<TD width="40%"><A href="../history/index.htm">http://rs.tdwg.org/dwc/terms/history/</A></TD>
+<TD width="50%">Darwin Core Terms: A complete history.</TD>
+</TR>
+
+</TBODY></TABLE>
 
 <!-- Footer -->
 <hr>
