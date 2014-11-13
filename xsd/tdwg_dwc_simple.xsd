@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema version="1.1" 
+<xs:schema version="2013-10-22" 
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     targetNamespace="http://rs.tdwg.org/dwc/xsd/simpledarwincore/"
     xmlns:dcterms="http://purl.org/dc/terms/"
     xmlns:dwr="http://rs.tdwg.org/dwc/xsd/simpledarwincore/"
     xmlns:dwc="http://rs.tdwg.org/dwc/terms/">
-    <xs:import namespace="http://rs.tdwg.org/dwc/terms/" schemaLocation="tdwg_dwcterms.xsd"/>
-    <xs:import namespace="http://purl.org/dc/terms/" schemaLocation="dublin_core.xsd"/>
+    <xs:import namespace="http://rs.tdwg.org/dwc/terms/" schemaLocation="tdwg_dwc_extensions.xsd"/>
+    <xs:import namespace="http://purl.org/dc/terms/" schemaLocation="http://dublincore.org/schemas/xmls/qdc/2008/02/11/dcterms.xsd"/>
     
     <xs:annotation>
         <xs:documentation>
@@ -30,7 +30,6 @@
         </xs:complexType>
     </xs:element>
     
-    <!-- SAMPLE domain -->
     <xs:element name="SimpleDarwinRecord">
         <xs:complexType>
             <xs:all>
@@ -77,6 +76,8 @@
                 <xs:element ref="dwc:associatedOccurrences" minOccurs="0"/>
                 <xs:element ref="dwc:associatedSequences" minOccurs="0"/>
                 <xs:element ref="dwc:associatedTaxa" minOccurs="0"/>
+                <!-- MaterialSample terms -->
+                <xs:element ref="dwc:materialSampleID" minOccurs="0"/>
                 <!-- Event terms -->
                 <xs:element ref="dwc:eventID" minOccurs="0"/>
                 <xs:element ref="dwc:samplingProtocol" minOccurs="0"/>
@@ -200,7 +201,24 @@
                 <xs:element ref="dwc:taxonomicStatus" minOccurs="0"/>
                 <xs:element ref="dwc:nomenclaturalStatus" minOccurs="0"/>
                 <xs:element ref="dwc:taxonRemarks" minOccurs="0"/>
-            </xs:all>
+                <xs:element ref="dwr:SimpleDarwinExtensions" minOccurs="0" />
+                </xs:all>
         </xs:complexType>
     </xs:element>
+    
+    <xs:element name="SimpleDarwinExtensions">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element ref="dwc:anyClass" />                                
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- 
+        ANY SIMPLE EXTENSION CLASS
+        Extensions implementing this abstract type should follow the simple dwc approach and only allow each term to exist once, using xs:all.
+        As extension records always will be tight to a single parent simple dwc record, there is no need to have an implicit resourceID in extension records.        
+    -->
+    <xs:element name="anyExtension" abstract="true" substitutionGroup="dwc:anyClass"/>
+    
 </xs:schema>

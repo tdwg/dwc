@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<xs:schema version="0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+<xs:schema version="2013-10-22" xmlns:xs="http://www.w3.org/2001/XMLSchema"
     targetNamespace="http://rs.tdwg.org/dwc/dwctype/"
     xmlns:dwctype="http://rs.tdwg.org/dwc/dwctype/">
     <xs:annotation>
@@ -13,6 +13,7 @@
             <!-- Dublin Core -->
             <!-- Darwin Core -->
             <xs:enumeration value="Occurrence"/>
+            <xs:enumeration value="MaterialSample"/>
             <xs:enumeration value="Event"/>
             <xs:enumeration value="Location"/>
             <xs:enumeration value="Taxon"/>

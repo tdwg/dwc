@@ -4,6 +4,7 @@
 <META http-equiv="Content-Type" content="text/html; charset=utf8"/>
 <TITLE>Darwin Core</TITLE>
 <LINK rel="schema.DwC" href="http://rs.tdwg.org/dwc/"/>
+
 <META name="DC.title" content="Darwin Core"/>
 <META name="DC.description" content="The cover page for the Darwin Core standard."/>
 <META name="DC.subject" content="biodiversity, standards"/>
@@ -13,15 +14,15 @@
 <META name="DC.contributor" content="Renato De Giovanni (CRIA)"/>
 <META name="DC.contributor" content="Tim Robertson (GBIF)"/>
 <META name="DC.contributor" content="Dave Vieglais (KUNHM)"/>
-<META name="DC.modified" content="2009-10-08"/>
 <META name="DC.dateAccepted" content="2009-02-12"/>
+<META name="DC.replaces" content="http://rs.tdwg.org/dwc/2013-09-23/"/>
+<META name="DC.modified" content="2013-10-25"/>
+<META name="DC.identifier" content="http://rs.tdwg.org/dwc/2013-09-30"/>
 <META name="DC.format" content="text/html"/>
-<META name="DC.identifier" content="http://rs.tdwg.org/dwc/docs/2009-09-23"/>
-<META name="DC.replaces" content="http://rs.tdwg.org/dwc/2009-07-06/"/>
 <META name="DC.publisher" content="Biodiversity Information Standards TDWG"/>
 <META name="DC.rights" content=""/>
 <META name="DC.accessRights" content="public"/>
-<META name="DC.bibliographicCitation" content="Darwin Core. 2009"/>
+<META name="DC.bibliographicCitation" content="Darwin Core. 2013"/>
 <META name="DC.language" content="en"/>
 <LINK rel="meta" href="http://www.tdwg.org/"/>
 <LINK rel="stylesheet" href="./DarwinCore_files/default.css" type="text/css">
@@ -73,7 +74,7 @@
 </TR>
 <TR>
 <TH>Date Modified:</TH>
-<TD>2009-10-08</TD>
+<TD>2013-10-25</TD>
 </TR>
 <TR>
 <TH>Abstract:</TH>
@@ -99,14 +100,14 @@ guide to the list of terms.</TD>
 </TR>
 <TR>
 <TH>Identifier:</TH>
-<TD>http://rs.tdwg.org/dwc/2009-09-23/</TD>
+<TD>http://rs.tdwg.org/dwc/2013-09-30/</TD>
 </TR>
 <TR><TH>Latest Version:</TH>
 <TD><A href="http://rs.tdwg.org/dwc/index.htm">http://rs.tdwg.org/dwc/</A></TD>
 </TR>
 <TR>
 <TH>Replaces:</TH>
-<TD><A href="http://rs.tdwg.org/dwc/2009-07-06/index.htm">http://rs.tdwg.org/dwc/2009-07-06/</A></TD>
+<TD><A href="http://rs.tdwg.org/dwc/2013-09-23/index.htm">http://rs.tdwg.org/dwc/2013-09-23/</A></TD>
 </TR>
 <TR>
 <TH>Document Status:</TH>
@@ -133,10 +134,11 @@ The Darwin Core is body of standards. It includes
 a glossary of terms (in other contexts these might be called properties, 
 elements, fields, columns, attributes, or concepts) intended to facilitate the sharing of information about 
 biological diversity by providing reference definitions, examples, and commentaries. The Darwin Core is primarily 
-based on taxa, their occurrence in nature as documented by observations, specimens, and samples, and related information.
+based on taxa, their occurrence in nature as documented by observations, specimens, samples, and related information.
 Included are documents describing how these terms are managed, how the set of terms can be extended for new purposes,
- and how the terms can be used. 
-The <i>Simple Darwin Core</i> 
+and how the terms can be used. The normative document for the terms [<A href="./rdf/dwctermshistory.rdf">RDF-NORMATIVE</A>] 
+is written in the Resource Description Framework (RDF) and is the definitive resource to understand the term definitions and
+their relationships to each other. The <i>Simple Darwin Core</i> 
 [<A href="./terms/simple/index.htm">SIMPLEDWC</A>] is a specification for one particular way to use the terms - to 
 share data about taxa and their occurrences in a simply structured way - and is probably what is meant if someone 
 suggests to "format your data according to the Darwin Core".
@@ -196,7 +198,7 @@ existing meaning of that term.
 <P>
 <b>Participation</b>: To receive notification of activity or participate in discussions about Darwin Core, 
 join the <i>tdwg-content</i> mailing 
-list [<A href="http://lists.tdwg.org/mailman/listinfo/tdwg-content">DWC-SUBSCRIBE</A>] and set up specific 
+list [<A href="http://lists.tdwg.org/mailman/listinfo/tdwg-content">TDWG-CONTENT</A>] and set up specific 
 <a href="http://code.google.com/p/darwincore/feeds">feeds</a> in the <i>Darwin Core Project</i> 
 [<A href="http://code.google.com/p/darwincore">DWC-PROJECT</a>].
 For discussion or commentary on the definition of recommended terms, consult the link inside the <i>Comment</i> section in the 
@@ -232,7 +234,7 @@ the construction of a new application profile. The rules of submission of propos
 <TR>
 <TD width="10%"><A name="ARCHIVE">[ARCHIVE]</A></TD>
 <TD width="40%"><A href="./archive/darwincore.zip">http://rs.tdwg.org/dwc/archive/darwincore.zip</A></TD>
-<TD width="50%">An archive of all files of the Darwin Core Standard.</TD>
+<TD width="50%">An archive of all files of the current Darwin Core Standard.</TD>
 </TR>
 
 <TR>
@@ -334,21 +336,9 @@ the construction of a new application profile. The rules of submission of propos
 </TR>
 
 <TR>
-<TD width="10%"><A name="DWC-SUBSCRIBE">[DWC-SUBSCRIBE]</A></TD>
-<TD width="40%"><A href="http://lists.tdwg.org/mailman/listinfo/tdwg-content">http://lists.tdwg.org/mailman/listinfo/tdwg-content</A></TD>
-<TD width="50%">Web site for the tdwg-content mailing list used for commentary and discussion on Darwin Core.</TD>
-</TR>
-
-<TR>
 <TD width="10%"><A name="DWC-TYPE">[DWC-TYPE]</A></TD>
 <TD width="40%"><A href="./terms/type-vocabulary/index.htm">http://rs.tdwg.org/dwc/terms/type-vocabulary/</A></TD>
 <TD width="50%">A reference to the Darwin Core Type Vocabulary for use as values of the dcterms:type term.</TD>
-</TR>
-
-<TR>
-<TD width="10%"><A name="DWC-USAGE">[DWC-USAGE]</A></TD>
-<TD width="40%"><A href="mailto:tdwg-tag@lists.tdwg.org">tdwg-tag@lists.tdwg.org</A></TD>
-<TD width="50%">TDWG Architecture mailing list.</TD>
 </TR>
 
 <TR>
@@ -420,7 +410,13 @@ the construction of a new application profile. The rules of submission of propos
 <TR>
 <TD width="10%"><A name="RDF">[RDF]</A></TD>
 <TD width="40%"><A href="./rdf/dwcterms.rdf">http://rs.tdwg.org/dwc/rdf/dwcterms.rdf</A></TD>
-<TD width="50%">An rdf document for the complete set of Darwin Core terms. If this link shows a blank page in your browser, use the View Source option to see the RDF document.</TD>
+<TD width="50%">An rdf document for the complete current recommended set of Darwin Core terms. If this link shows a blank page in your browser, use the View Source option to see the RDF document.</TD>
+</TR>
+
+<TR>
+<TD width="10%"><A name="RDF-NORMATIVE">[RDF-NORMATIVE]</A></TD>
+<TD width="40%"><A href="./rdf/dwctermshistory.rdf">http://rs.tdwg.org/dwc/rdf/dwctermshistory.rdf</A></TD>
+<TD width="50%">The normative document for the complete history of Darwin Core terms, in RDF. If this link shows a blank page in your browser, use the View Source option to see the RDF document.</TD>
 </TR>
 
 <TR>
@@ -442,6 +438,12 @@ the construction of a new application profile. The rules of submission of propos
 </TR>
 
 <TR>
+<TD width="10%"><A name="TDWG-CONTENT">[TDWG-CONTENT]</A></TD>
+<TD width="40%"><A href="http://lists.tdwg.org/mailman/listinfo/tdwg-content">http://lists.tdwg.org/mailman/listinfo/tdwg-content</A></TD>
+<TD width="50%">Web site for the tdwg-content mailing list used for commentary and discussion on Darwin Core.</TD>
+</TR>
+
+<TR>
 <TD width="10%"><A name="TDWG-DEV">[TDWG-DEV]</A></TD>
 <TD width="40%"><A href="http://wiki.tdwg.org/twiki/bin/view/">http://wiki.tdwg.org/twiki/bin/view/</A></TD>
 <TD width="50%">Biodiversity Information Standards Wiki.</TD>
@@ -451,6 +453,12 @@ the construction of a new application profile. The rules of submission of propos
 <TD width="10%"><A name="TDWG-STANDARDS">[TDWG-STANDARDS]</A></TD>
 <TD width="40%"><A href="http://www.tdwg.org/standards/">http://www.tdwg.org/standards/</A></TD>
 <TD width="50%">Biodiversity Information Standards.</TD>
+</TR>
+
+<TR>
+<TD width="10%"><A name="TDWG-TAG">[TDWG-TAG]</A></TD>
+<TD width="40%"><A href="mailto:tdwg-tag@lists.tdwg.org">tdwg-tag@lists.tdwg.org</A></TD>
+<TD width="50%">TDWG Architecture mailing list.</TD>
 </TR>
 
 <TR>
@@ -519,7 +527,7 @@ the construction of a new application profile. The rules of submission of propos
 <hr>
 <p><a rel="license" href="http://creativecommons.org/licenses/by/3.0/us/"> 
    <img alt="Creative Commons License" id="creative_commons_icon" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a> 
-   Copyright 2009 - Biodiversity Information Standards - TDWG - <a href="http://www.tdwg.org/about-tdwg/contact-us/">Contact Us</a><br/> 
+   Copyright 2009-2013 - Biodiversity Information Standards - TDWG - <a href="http://www.tdwg.org/about-tdwg/contact-us/">Contact Us</a><br/> 
 <p>Except where otherwise noted, content on this site is licensed under a 
    <a rel="license" href="http://creativecommons.org/licenses/by/3.0/us/"> Creative Commons 
    Attribution 3.0 United States License</a>.</p> 

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <xs:schema 
-    version="1.1"
+    version="2013-10-22"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     targetNamespace="http://rs.tdwg.org/dwc/terms/"
     xmlns:dcterms="http://purl.org/dc/terms/"
@@ -25,7 +25,7 @@
     </xs:annotation>
     <!-- tdwg_basetypes.xsd defines custom data types such as dateTimeISO to allow dates or the forms YYYY and YYYY-MM. -->
     <xs:include schemaLocation="tdwg_basetypes.xsd"/>
-    <xs:import namespace="http://purl.org/dc/terms/" schemaLocation="dublin_core.xsd"/>
+    <xs:import namespace="http://purl.org/dc/terms/" schemaLocation="http://dublincore.org/schemas/xmls/qdc/2008/02/11/dcterms.xsd"/>
     <xs:import namespace="http://purl.org/dc/elements/1.1/" schemaLocation="http://dublincore.org/schemas/xmls/qdc/dc.xsd"/>
     <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/03/xml.xsd"/>
     <xs:import namespace="http://rs.tdwg.org/dwc/dwctype/" schemaLocation="tdwg_dwctypes.xsd"/>
@@ -36,10 +36,11 @@
     <xs:element name="anyIdentifier" abstract="true" substitutionGroup="dwc:any"/>
     <xs:group name="IdentifierTerms">
         <xs:annotation>
-            <xs:documentation>Group of all darwin core identifier terms as a convenience to construct other schemas</xs:documentation>
+            <xs:documentation>Group of all Darwin Core identifier terms as a convenience to construct other schemas</xs:documentation>
         </xs:annotation>
         <xs:sequence>
             <xs:element ref="dwc:occurrenceID" minOccurs="0"/>
+            <xs:element ref="dwc:materialSampleID" minOccurs="0"/>
             <xs:element ref="dwc:eventID" minOccurs="0"/>
             <xs:element ref="dwc:locationID" minOccurs="0"/>
             <xs:element ref="dwc:geologicalContextID" minOccurs="0"/>
@@ -57,13 +58,13 @@
     
     <!-- 
         All TERMS listed BY domain
-        Every domain has its own substitutiongroup
+        Every domain has its own substitutionGroup
     -->
 
     <!-- RECORD-LEVEL domainless terms -->
     <xs:element name="anyRecordLevelTerm" abstract="true" substitutionGroup="dwc:anyProperty"/>
     <!-- domain properties -->
-    <!-- the dublin core terms applicable for darwin core are defined in the dublin_core.xsd and use this substitution group -->
+    <!-- the Dublin Core terms applicable for Darwin Core are defined in the dublin_core.xsd and use this substitution group -->
     <xs:element name="institutionID" substitutionGroup="dwc:anyRecordLevelTerm" type="xs:string"/>
     <xs:element name="collectionID" substitutionGroup="dwc:anyRecordLevelTerm" type="xs:string"/>
     <xs:element name="datasetID" substitutionGroup="dwc:anyRecordLevelTerm" type="xs:string"/>
@@ -152,6 +153,11 @@
             <xs:element ref="dwc:associatedTaxa" minOccurs="0"/>
         </xs:sequence>
     </xs:group>
+
+    <!-- MaterialSample domain -->
+    <xs:element name="anyMaterialSampleTerm" abstract="true" substitutionGroup="dwc:anyProperty"/>
+    <xs:element name="materialSampleID" type="dwc:nonEmptyString" substitutionGroup="dwc:anyIdentifier"/>
+    <!-- domain properties -->
 
     <!-- EVENT domain -->
     <xs:element name="anyEventTerm" abstract="true" substitutionGroup="dwc:anyProperty"/>

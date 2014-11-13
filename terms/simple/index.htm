@@ -4,6 +4,7 @@
 <META http-equiv="Content-Type" content="text/html; charset=utf8"/>
 <TITLE>Simple Darwin Core</TITLE>
 <LINK rel="schema.DwC" href="http://rs.tdwg.org/dwc/"/>
+
 <META name="DC.title" content="Simple Darwin Core"/>
 <META name="DC.description" content="A reference to the Simple Darwin Core standard."/>
 <META name="DC.subject" content="biodiversity, standards"/>
@@ -13,15 +14,15 @@
 <META name="DC.contributor" content="Renato De Giovanni (CRIA)"/>
 <META name="DC.contributor" content="Tim Robertson (GBIF)"/>
 <META name="DC.contributor" content="Dave Vieglais (KUNHM)"/>
-<META name="DC.modified" content="2009-12-07"/>
 <META name="DC.dateAccepted" content="2009-04-21"/>
+<META name="DC.replaces" content="http://rs.tdwg.org/dwc/docs/2009-12-07/"/>
+<META name="DC.modified" content="2013-10-22"/>
+<META name="DC.identifier" content="http://rs.tdwg.org/dwc/docs/2013-10-22/"/>
 <META name="DC.format" content="text/html"/>
-<META name="DC.identifier" content="http://rs.tdwg.org/dwc/docs/2009-12-07/"/>
-<META name="DC.replaces" content="http://rs.tdwg.org/dwc/docs/2009-09-23/"/>
 <META name="DC.publisher" content="Biodiversity Information Standards TDWG"/>
 <META name="DC.rights" content=""/>
 <META name="DC.accessRights" content="public"/>
-<META name="DC.bibliographicCitation" content="Simple Darwin Core. 2009"/>
+<META name="DC.bibliographicCitation" content="Simple Darwin Core. 2013"/>
 <META name="DC.language" content="en"/>
 <LINK rel="meta" href="http://www.tdwg.org/"/>
 <LINK rel="stylesheet" href="../../DarwinCore_files/default.css" type="text/css">
@@ -81,7 +82,7 @@
     </TR>
     <TR>
       <TH>Date Modified:</TH>
-      <TD>2009-12-07</TD>
+      <TD>2013-10-22</TD>
     </TR>
     <TR>
       <TH>Abstract:</TH>
@@ -105,7 +106,7 @@
     </TR>
     <TR>
       <TH>Identifier:</TH>
-      <TD>http://rs.tdwg.org/dwc/2009-12-07/terms/simple/</TD>
+      <TD>http://rs.tdwg.org/dwc/2013-10-22/terms/simple/</TD>
     </TR>
     <TR>
       <TH>Latest Version:</TH>
@@ -113,7 +114,7 @@
     </TR>
     <TR>
       <TH>Replaces:</TH>
-      <TD><A href="http://rs.tdwg.org/dwc/2009-09-23/terms/simple/index.htm">http://rs.tdwg.org/dwc/2009-09-23/terms/simple/</A></TD>
+      <TD><A href="http://rs.tdwg.org/dwc/2009-12-07/terms/simple/index.htm">http://rs.tdwg.org/dwc/2009-12-07/terms/simple/</A></TD>
     </TR>
     <TR>
       <TH>Document Status:</TH>
@@ -168,6 +169,7 @@ There are just a few general guiding principles on how to make the best use of t
 <li>No field name may be repeated in a record.</li>
 <li>Do not use a <i>Class</i> (<a href="../index.htm#Occurrence">Occurrence</a>, 
 <a href="../index.htm#Event">Event</a>, 
+<a href="../index.htm#MaterialSample">MaterialSample</a>, 
 <a href="../index.htm#dcterms:Location">Location</a>, 
 <a href="../index.htm#GeologicalContext">GeologicalContext</a>,
 <a href="../index.htm#Identification">Identification</a>, 
@@ -176,7 +178,7 @@ There are just a few general guiding principles on how to make the best use of t
 <li>Use the <a href="../index.htm#dcterms:type">dcterms:type</a> field to say what Dublin Core type 
 (PhysicalObject, StillImage, MovingImage, Sound) the record represents, if possible.</li>
 <li>Use the <a href="../index.htm#basisOfRecord">basisOfRecord</a> field to say what Darwin Core type 
-(PreservedSpecimen, FossilSpecimen, LivingSpecimen, HumanObservation, MachineObservation, NomenclaturalChecklist, Taxon, Occurrence, Location, Event) the record represents.</li>
+(PreservedSpecimen, FossilSpecimen, LivingSpecimen, HumanObservation, MachineObservation, NomenclaturalChecklist, Taxon, Occurrence, MaterialSample, Location, Event) the record represents.</li>
 <li>Populate fields with data that match the definition of the field.</li>
 <li>Use the controlled vocabulary for the values of fields that recommend them.</li>
 <li>If data are withheld, use <a href="../index.htm#informationWithheld">informationWithheld</a> to say so.</li>
@@ -386,7 +388,7 @@ of biological diversity information.
 <hr>
 <p><a rel="license" href="http://creativecommons.org/licenses/by/3.0/us/"> 
    <img alt="Creative Commons License" id="creative_commons_icon" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a> 
-   Copyright 2009 - Biodiversity Information Standards - TDWG - <a href="http://www.tdwg.org/about-tdwg/contact-us/">Contact Us</a><br/> 
+   Copyright 2009-2013 - Biodiversity Information Standards - TDWG - <a href="http://www.tdwg.org/about-tdwg/contact-us/">Contact Us</a><br/> 
 <p>Except where otherwise noted, content on this site is licensed under a 
    <a rel="license" href="http://creativecommons.org/licenses/by/3.0/us/"> Creative Commons 
    Attribution 3.0 United States License</a>.</p> 
