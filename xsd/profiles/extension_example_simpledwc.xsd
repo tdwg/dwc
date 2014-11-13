@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://rs.tdwg.org/dwc/my/extension/"
+    xmlns:my="http://rs.tdwg.org/dwc/my/extension/"
+    xmlns:dwr="http://rs.tdwg.org/dwc/xsd/simpledarwincore/"
+    xmlns:dwc="http://rs.tdwg.org/dwc/terms/">
+    <xs:include schemaLocation="extension_example.xsd"/>
+    <xs:import namespace="http://rs.tdwg.org/dwc/xsd/simpledarwincore/" schemaLocation="../tdwg_dwc_simple.xsd"/>
+    <xs:import namespace="http://rs.tdwg.org/dwc/terms/" schemaLocation="../tdwg_dwc_extensions.xsd"/>
+    
+</xs:schema>

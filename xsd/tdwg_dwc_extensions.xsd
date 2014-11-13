@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema version="2014-11-08" 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://rs.tdwg.org/dwc/terms/"
+    xmlns:simple="http://rs.tdwg.org/dwc/xsd/simpledarwincore/"
+    xmlns:dwc="http://rs.tdwg.org/dwc/terms/">
+    <xs:include schemaLocation="tdwg_dwcterms.xsd"/>
+    <xs:import namespace="http://rs.tdwg.org/dwc/xsd/simpledarwincore/" schemaLocation="tdwg_dwc_simple.xsd"/>
+    
+    <xs:annotation>
+        <xs:documentation>
+            This schema defines extension classes to the Simple Darwin Core record schema. 
+        </xs:documentation>
+    </xs:annotation>
+
+    <!-- MEASUREMENTORFACT -->
+    <xs:element name="MeasurementOrFact" substitutionGroup="simple:anyExtension">
+        <xs:complexType>
+            <xs:all>
+                <xs:element ref="dwc:measurementID" minOccurs="0"/>
+                <xs:element ref="dwc:measurementType" minOccurs="1"/>
+                <xs:element ref="dwc:measurementValue" minOccurs="1"/>
+                <xs:element ref="dwc:measurementAccuracy" minOccurs="0"/>
+                <xs:element ref="dwc:measurementUnit" minOccurs="0"/>
+                <xs:element ref="dwc:measurementDeterminedBy" minOccurs="0"/>
+                <xs:element ref="dwc:measurementDeterminedDate" minOccurs="0"/>
+                <xs:element ref="dwc:measurementMethod" minOccurs="0"/>
+                <xs:element ref="dwc:measurementRemarks" minOccurs="0"/>
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+    
+    <!-- RESOURCE RELATIONSHIP -->
+    <xs:element name="ResourceRelationship" substitutionGroup="simple:anyExtension">
+        <xs:complexType>
+            <xs:all>
+                <xs:element ref="dwc:resourceRelationshipID" minOccurs="0"/>
+                <xs:element ref="dwc:relatedResourceID" minOccurs="1"/>
+                <xs:element ref="dwc:relationshipOfResource" minOccurs="1"/>
+                <xs:element ref="dwc:relationshipAccordingTo" minOccurs="0"/>
+                <xs:element ref="dwc:relationshipEstablishedDate" minOccurs="0"/>
+                <xs:element ref="dwc:relationshipRemarks" minOccurs="0"/>
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+    
+</xs:schema>

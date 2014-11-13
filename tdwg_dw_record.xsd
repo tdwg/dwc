@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ==================================================================== -->
+<!-- Introduction                                                         -->
+<!-- ==================================================================== -->
+<!-- Darwin application schema incorporating core and standard extensions --> 
+<!-- into a record using the dwElement substitutionGroup. GML feature     -->
+<!-- support also provided through the DarwinFeature.                     -->
+<!-- History:                                                             -->
+<!--   version 0.5 2007-02-14 Renato De Giovanni, John Wieczorek          -->
+<!-- Status:                                                              -->
+<!--   Ready for testing.                                                 -->
+<!--   See http://wiki.tdwg.org for current status of this standard       -->
+
+<!-- ==================================================================== -->
+<!-- Schema                                                               -->
+<!-- ==================================================================== -->
+<xsd:schema 
+	targetNamespace="http://rs.tdwg.org/dwc/dwrecord"
+	xmlns:tdwggml="http://rs.tdwg.org/dwc/tdwggml"
+	xmlns:dwe="http://rs.tdwg.org/dwc/dwelement"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified" version="0.5">
+
+	<!-- ============================================================== -->
+	<!-- Documentation                                                  -->
+	<!-- ============================================================== -->
+	<xsd:annotation>
+	  <xsd:documentation>
+	    Darwin application schema containing Darwin Core and extension 
+	    elements into a DarwinRecord or a DarwinFeature, which is a 
+	    gmlAbstractFeatureType.
+	  </xsd:documentation>
+	</xsd:annotation>
+
+	<!-- ============================================================== -->
+	<!-- Imports                                                        -->
+	<!-- ============================================================== -->
+	<!-- import - must be used to import definitions from other         -->
+	<!--   namespaces.                                                  -->
+	<!-- ============================================================== -->
+	<xsd:import namespace="http://rs.tdwg.org/dwc/dwelement" schemaLocation="http://rs.tdwg.org/dwc/tdwg_dw_element.xsd"/>
+	<xsd:import namespace="http://rs.tdwg.org/dwc/tdwggml"   schemaLocation="http://rs.tdwg.org/dwc/tdwg_gml.xsd" />
+
+
+	<!-- ============================================================== -->
+	<!-- Elements                                                       -->
+	<!-- ============================================================== -->
+	<xsd:element name="DarwinRecordSet">
+	  <xsd:complexType>
+	    <xsd:sequence>
+	      <xsd:element ref="DarwinRecord"  maxOccurs="unbounded"/>
+	    </xsd:sequence>
+	  </xsd:complexType>
+	</xsd:element>
+
+	<xsd:element name="DarwinRecord">
+	  <xsd:complexType>
+	    <xsd:sequence>
+	      <xsd:element ref="dwe:dwElement" maxOccurs="unbounded"/>
+	    </xsd:sequence>
+	  </xsd:complexType>
+	</xsd:element>
+
+	<xsd:element name="DarwinFeature" type="DarwinFeatureType" substitutionGroup="gml:_Feature"/>
+
+
+	<!-- ============================================================== -->
+	<!-- Types                                                          -->
+	<!-- ============================================================== -->
+	<xsd:complexType name="DarwinRecordType">
+	    <xsd:sequence>
+	      <xsd:element ref="dwe:dwElement" maxOccurs="unbounded"/>
+	    </xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="DarwinFeatureType">
+	  <xsd:complexContent>
+	  	<xsd:extension base="tdwggml:OccurrenceFeatureType">
+	      <xsd:sequence>
+		<xsd:element name="darwinRecord" type="DarwinRecordType" nillable="false" minOccurs="1" maxOccurs="unbounded" />
+	      </xsd:sequence>
+	    </xsd:extension>
+	  </xsd:complexContent>
+	</xsd:complexType>
+
+
+</xsd:schema>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SimpleDarwinRecordSet 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://rs.tdwg.org/dwc/my/extension/ extension_example_simpledwc.xsd"
+    xmlns="http://rs.tdwg.org/dwc/xsd/simpledarwincore/"
+    xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
+    xmlns:my="http://rs.tdwg.org/dwc/my/extension/">
+    
+    <SimpleDarwinRecord>
+        <dwc:institutionCode>MVZ</dwc:institutionCode>
+        <dwc:collectionCode>TREES</dwc:collectionCode>
+        <dwc:catalogNumber>1234</dwc:catalogNumber>
+        <dwc:scientificName>Abies alba Mill.</dwc:scientificName>
+        <SimpleDarwinExtensions>
+            <dwc:MeasurementOrFact>
+                <dwc:measurementID>21</dwc:measurementID>
+                <dwc:measurementValue>317</dwc:measurementValue>
+                <dwc:measurementUnit>cm</dwc:measurementUnit>
+                <dwc:measurementType>Trunk Diameter</dwc:measurementType>
+            </dwc:MeasurementOrFact>
+            <my:SomeExtension>
+                <my:firstProperty>important stuff</my:firstProperty>
+                <my:secondProperty>2004-09-23</my:secondProperty>
+                <my:thirdProperty>432</my:thirdProperty>
+            </my:SomeExtension>
+        </SimpleDarwinExtensions>    
+    </SimpleDarwinRecord>
+</SimpleDarwinRecordSet>
