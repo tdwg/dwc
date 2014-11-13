@@ -27,13 +27,13 @@
 		encoding="UTF-8"
 		ignoreHeaderLines="1">
 
-<field index="1" term="http://purl.org/dc/terms/dcterms:type" type="xs:string"/>
-<field index="2" term="http://purl.org/dc/terms/dcterms:modified" type="xs:dateTime"/>
-<field index="3" term="http://purl.org/dc/terms/dcterms:language" type="xs:string"/>
-<field index="4" term="http://purl.org/dc/terms/dcterms:rights" type="xs:string"/>
-<field index="5" term="http://purl.org/dc/terms/dcterms:rightsHolder" type="xs:string"/>
-<field index="6" term="http://purl.org/dc/terms/dcterms:accessRights" type="xs:string"/>
-<field index="7" term="http://purl.org/dc/terms/dcterms:bibliographicCitation" type="xs:string"/>
+<field index="1" term="http://purl.org/dc/terms/type" type="xs:string"/>
+<field index="2" term="http://purl.org/dc/terms/modified" type="xs:dateTime"/>
+<field index="3" term="http://purl.org/dc/terms/language" type="xs:string"/>
+<field index="4" term="http://purl.org/dc/terms/rights" type="xs:string"/>
+<field index="5" term="http://purl.org/dc/terms/rightsHolder" type="xs:string"/>
+<field index="6" term="http://purl.org/dc/terms/accessRights" type="xs:string"/>
+<field index="7" term="http://purl.org/dc/terms/bibliographicCitation" type="xs:string"/>
 
 <field index="8" term="http://rs.tdwg.org/dwc/terms/institutionID" type="xs:string"/>
 <field index="9" term="http://rs.tdwg.org/dwc/terms/collectionID" type="xs:string"/>
