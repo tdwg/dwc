@@ -27,7 +27,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:title xml:lang="en">Darwin Core Recommended Terms</dcterms:title>
         <rdfs:comment>This document contains a list of Darwin Core terms that have the dwcattributes:status equal to "recommended". For the full normative RDF document of all Darwin Core terms, see dwctermshistory.rdf. To comment on this schema, please create a new issue in https://github.com/tdwg/dwc/issues</rdfs:comment>
         <dcterms:publisher xml:lang="en">Biodiversity Information Standards (TDWG)</dcterms:publisher>
-        <dcterms:modified>2014-11-08</dcterms:modified>
+        <dcterms:modified>2014-12-05</dcterms:modified>
     </rdf:Description>
     <!-- 
   Each RDF description uses the following:
@@ -477,7 +477,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
     <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/dynamicProperties">
         <rdfs:label xml:lang="en">Dynamic Properties</rdfs:label>
         <rdfs:comment xml:lang="en">A list of additional measurements, facts, characteristics, or assertions about the record. Meant to provide a mechanism for structured content.</rdfs:comment>
-        <dcterms:description xml:lang="en">The recommended best practice is to use a key:value encoding schema such as JSON. Examples: "{'heightInMeters':'1.5'}", "{'tragusLengthInMeters':'0.014', 'weightInGrams':'120'}", "{'natureOfID':'expert identification', 'identificationEvidence':'cytochrome B sequence'}", "{'relativeHumidity':'28', 'airTemperatureInCelcius':'22', 'sampleSizeInKilograms':'10'}", "{'aspectHeading':'277', 'slopeInDegrees':'6'}", "{'iucnStatus':'vulnerable', 'taxonDistribution':'Neuquén, Argentina'}".</dcterms:description>
+        <dcterms:description xml:lang="en">The recommended best practice is to use a key:value encoding schema such as JSON. Examples: "{"heightInMeters":1.5}", "{"tragusLengthInMeters":0.014, "weightInGrams":120}", "{"natureOfID":"expert identification", "identificationEvidence":"cytochrome B sequence"}", "{"relativeHumidity":28, "airTemperatureInCelcius":22, "sampleSizeInKilograms":10}", "{"aspectHeading":277, "slopeInDegrees":6}", "{"iucnStatus":"vulnerable", "taxonDistribution":"Neuquén, Argentina"}".</dcterms:description>
         <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2014-10-23</dcterms:modified>
