@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+  <title>Darwin Core Terms: A quick reference guide</title>
+  <link rel="stylesheet" href="bootstrap.min.css">  
+</head>
+
+<body>
+
+<div class="container">
+	<div class="jumbotron">
+	    <h1>Darwin Core Term Reference</h1>
+	</div>
+
+	
+#for $group in $groups
+	#if $group.uri is not None
+	  <h4><a href="#$group.name">$group.name</a></h4>
+	#else
+	  <h4>$group.name</h4>
+	#end if
+	<p>
+	#set $sep = ''
+	#for $term in $group.terms
+		$sep <a href="#$term.name">$term.name</a> 
+		#set $sep = '|'
+	#end for
+	</p>
+#end for
+
+<hr/>
+
+#def showTerm($t)
+  #if $t.uri is not None
+  <a name="$t.name"></a>
+  <dl class="dl-horizontal">
+    <dt>Name</dt>
+    <dd><strong>$t.name</strong></dd>
+
+    <dt>Identifier</dt>
+    <dd>$t.uri</dd>
+    
+	#if $t.class is not None
+    <dt>Class</dt>
+    <dd>$t.class</dd>
+    #end if
+
+    <dt>Definition</dt>
+    <dd>$t.definition</dd>
+    
+    <dt>Comment</dt>
+    <dd>$t.comment</dd>
+    
+    <dt>Details</dt>
+    <dd><a href="$t.version">$t.version</a></dd>
+  </dl>
+<hr/>
+  #end if
+#end def
+
+#for $t in $groups
+  $showTerm(t)
+#end for
+
+
+#for $group in $groups
+  #for $t in $group.terms
+	  $showTerm(t)
+  #end for
+#end for
+
+</div> <!-- /container -->
+
+</body>
+</html>

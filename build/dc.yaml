@@ -1,0 +1,9 @@
+type:
+  definition: 'The nature or genre of the resource. For Darwin Core, recommended best practice is to use the name of the class that defines the root of the record.'
+  comment: 'Examples: "StillImage", "MovingImage", "Sound", "PhysicalObject", "Event", "Text". For discussion see http://terms.tdwg.org/wiki/dwc:type'
+  details: http://dublincore.org/usage/terms/history/#typeT-001
+
+references:
+  definition: 'A related resource that is referenced, cited, or otherwise pointed to by the described resource.'
+  comment: 'Examples: "http://mvzarctos.berkeley.edu/guid/MVZ:Mamm:165861"; "http://www.catalogueoflife.org/annual-checklist/show_species_details.php?record_id=6197868". For discussion see http://terms.tdwg.org/wiki/dwc:references'
+  details: http://dublincore.org/usage/terms/history/#references-003
