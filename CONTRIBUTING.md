@@ -1,6 +1,6 @@
 # Guidelines for contributing
 
-Changes to the standard are subject to the [change policy](changepolicy.html). Here's how you can contribute:
+Changes to the standard are subject to the [change policy](change_policy.html). Here's how you can contribute:
 
 * Want to make a change to the standard? Copy and paste one of the **issue templates** below and [submit a new issue](https://github.com/tdwg/dwc/issues/new).
 * Want to contribute to this repository? [Fork the repository](https://github.com/tdwg/dwc/fork), make the changes, and [send a pull request](https://github.com/tdwg/dwc/compare).
