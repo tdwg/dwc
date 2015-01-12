@@ -70,141 +70,143 @@
             </div>
         </div>
 
-      <p><a id="introduction" name="introduction"></a></p>
+        <div class="content">
+            <div class="container">
+                <h1>Introduction</h1>
 
-      <h2>1. Introduction</h2>
+                <p><b>Audience</b>: This document is an introduction to the Darwin Core
+                standard and is meant to provide the background, reasons, and basic
+                information about sharing (either as a publisher or user of) biodiversity
+                information. Further details on specific aspects of the standard and its use
+                can be found in the pages shown in the Table of Contents in the upper left of
+                every page or in the <a href="#references">References</a> section of this
+                page.</p>
 
-      <p><b>Audience</b>: This document is an introduction to the Darwin Core
-      standard and is meant to provide the background, reasons, and basic
-      information about sharing (either as a publisher or user of) biodiversity
-      information. Further details on specific aspects of the standard and its use
-      can be found in the pages shown in the Table of Contents in the upper left of
-      every page or in the <a href="#references">References</a> section of this
-      page.</p>
+                <p style="font-weight: bold">What is the Darwin Core?</p>
 
-      <p style="font-weight: bold">What is the Darwin Core?</p>
+                <p>The Darwin Core is body of standards. It includes a glossary of terms (in
+                other contexts these might be called properties, elements, fields, columns,
+                attributes, or concepts) intended to facilitate the sharing of information
+                about biological diversity by providing reference definitions, examples, and
+                commentaries. The Darwin Core is primarily based on taxa, their occurrence in
+                nature as documented by observations, specimens, samples, and related
+                information. Included are documents describing how these terms are managed,
+                how the set of terms can be extended for new purposes, and how the terms can
+                be used. The normative document for the terms [<a href=
+                "./rdf/dwctermshistory.rdf">RDF-NORMATIVE</a>] is written in the Resource
+                Description Framework (RDF) and is the definitive resource to understand the
+                term definitions and their relationships to each other. The <i>Simple Darwin
+                Core</i> [<a href="./terms/simple/index.htm">SIMPLEDWC</a>] is a
+                specification for one particular way to use the terms - to share data about
+                taxa and their occurrences in a simply structured way - and is probably what
+                is meant if someone suggests to "format your data according to the Darwin
+                Core".</p>
 
-      <p>The Darwin Core is body of standards. It includes a glossary of terms (in
-      other contexts these might be called properties, elements, fields, columns,
-      attributes, or concepts) intended to facilitate the sharing of information
-      about biological diversity by providing reference definitions, examples, and
-      commentaries. The Darwin Core is primarily based on taxa, their occurrence in
-      nature as documented by observations, specimens, samples, and related
-      information. Included are documents describing how these terms are managed,
-      how the set of terms can be extended for new purposes, and how the terms can
-      be used. The normative document for the terms [<a href=
-      "./rdf/dwctermshistory.rdf">RDF-NORMATIVE</a>] is written in the Resource
-      Description Framework (RDF) and is the definitive resource to understand the
-      term definitions and their relationships to each other. The <i>Simple Darwin
-      Core</i> [<a href="./terms/simple/index.htm">SIMPLEDWC</a>] is a
-      specification for one particular way to use the terms - to share data about
-      taxa and their occurrences in a simply structured way - and is probably what
-      is meant if someone suggests to "format your data according to the Darwin
-      Core".</p>
+                <p><b>Motivation</b>: The Darwin Core standard was originally conceived to
+                facilitate the discovery, retrieval, and integration of information about
+                modern biological specimens, their spatiotemporal occurrence, and their
+                supporting evidence housed in collections (physical or digital). The Darwin
+                Core today is broader in scope and more versatile. It is meant to provide a
+                stable standard reference for sharing information on biological diversity. As
+                a glossary of terms, the Darwin Core is meant to provide stable semantic
+                definitions with the goal of being maximally reusable in a variety of
+                contexts.</p>
 
-      <p><b>Motivation</b>: The Darwin Core standard was originally conceived to
-      facilitate the discovery, retrieval, and integration of information about
-      modern biological specimens, their spatiotemporal occurrence, and their
-      supporting evidence housed in collections (physical or digital). The Darwin
-      Core today is broader in scope and more versatile. It is meant to provide a
-      stable standard reference for sharing information on biological diversity. As
-      a glossary of terms, the Darwin Core is meant to provide stable semantic
-      definitions with the goal of being maximally reusable in a variety of
-      contexts.</p>
+                <p><b>Rationale</b>: The Darwin Core is based on the standards developed by
+                the <i>Dublin Core Metadata Initiative</i> [<a href=
+                "http://dublincore.org/">DCMI</a>] and can be viewed as an extension of the
+                Dublin Core for biodiversity information. The purpose of these terms is to
+                facilitate data sharing by providing a well-defined standard core vocabulary
+                in a flexible framework to minimize the barriers to adoption and to maximize
+                reusability. The terms described in this standard are a part of a larger set
+                of vocabularies and technical specifications under development [<a href=
+                "http://wiki.tdwg.org/twiki/bin/view/">TDWG-DEV</a>] and maintained by
+                <i>Biodiversity Information Standards (TDWG)</i> [<a href=
+                "http://www.tdwg.org/standards/">TDWG-STANDARDS</a>].</p>
 
-      <p><b>Rationale</b>: The Darwin Core is based on the standards developed by
-      the <i>Dublin Core Metadata Initiative</i> [<a href=
-      "http://dublincore.org/">DCMI</a>] and can be viewed as an extension of the
-      Dublin Core for biodiversity information. The purpose of these terms is to
-      facilitate data sharing by providing a well-defined standard core vocabulary
-      in a flexible framework to minimize the barriers to adoption and to maximize
-      reusability. The terms described in this standard are a part of a larger set
-      of vocabularies and technical specifications under development [<a href=
-      "http://wiki.tdwg.org/twiki/bin/view/">TDWG-DEV</a>] and maintained by
-      <i>Biodiversity Information Standards (TDWG)</i> [<a href=
-      "http://www.tdwg.org/standards/">TDWG-STANDARDS</a>].</p>
+                <p><b>Guiding principles</b>: Each term has a definition and commentaries
+                that are meant to promote the consistent use of the terms across applications
+                and disciplines. Evolving commentaries that discuss, refine, expand, or
+                translate the definitions and examples are referred to through links in the
+                <i>Comments</i> attribute of each term. This means of documentation allows
+                the standard to adapt to new purposes without disrupting existing
+                applications. There is meant to be a clear separation between the terms
+                defined in this standard and the applications that make use of them. For
+                example, though the data types and constraints are not provided in the term
+                definitions, recommendations are made about how to restrict the values where
+                appropriate.</p>
 
-      <p><b>Guiding principles</b>: Each term has a definition and commentaries
-      that are meant to promote the consistent use of the terms across applications
-      and disciplines. Evolving commentaries that discuss, refine, expand, or
-      translate the definitions and examples are referred to through links in the
-      <i>Comments</i> attribute of each term. This means of documentation allows
-      the standard to adapt to new purposes without disrupting existing
-      applications. There is meant to be a clear separation between the terms
-      defined in this standard and the applications that make use of them. For
-      example, though the data types and constraints are not provided in the term
-      definitions, recommendations are made about how to restrict the values where
-      appropriate.</p>
+                <p><b>Content</b>: The standard consists of a vocabulary of terms
+                (properties, elements, fields, concepts) [<a href=
+                "./terms/index.htm">TERMS</a>], the policy governing the maintenance of these
+                terms [<a href="./terms/namespace/index.htm">NAMESPACEPOLICY</a>], the
+                decisions that resulted in changes to terms [<a href=
+                "./terms/history/decisions/index.htm">DECISIONS</a>], the complete history of
+                terms including detailed attributes [<a href=
+                "./terms/history/index.htm">HISTORY</a>], a <i>Generic Darwin Core XML
+                schema</i> [<a href="./xsd/tdwg_dwcterms.xsd">TERMSXMLSCHEMA</a>] from which
+                other schemas can be constructed, a <i>Simple Darwin Core XML schema</i>
+                [<a href="./xsd/tdwg_dwc_simple.xsd">SIMPLEXMLSCHEMA</a>] as a complete
+                schema ready for use, a schema to allow Darwin Core data transfer in text
+                files [<a href="./text/tdwg_dwc_text.xsd">TEXTSCHEMA</a>], and associated
+                reference schemas for the construction of more structured content. These
+                pages also describe mappings between the current standard and pre-standard
+                historical versions <a href=
+                "./terms/history/versions/index.htm">[VERSIONS]</a>, including mappings
+                <a href="./terms/history/dwctoabcd/index.htm">[DWCTOABCD]</a> to concepts in
+                the <i>Access to Biological Collections Data</i> standard <a href=
+                "http://www.tdwg.org/schemas/abcd/2.06">[ABCD]</a>.</p>
 
-      <p><b>Content</b>: The standard consists of a vocabulary of terms
-      (properties, elements, fields, concepts) [<a href=
-      "./terms/index.htm">TERMS</a>], the policy governing the maintenance of these
-      terms [<a href="./terms/namespace/index.htm">NAMESPACEPOLICY</a>], the
-      decisions that resulted in changes to terms [<a href=
-      "./terms/history/decisions/index.htm">DECISIONS</a>], the complete history of
-      terms including detailed attributes [<a href=
-      "./terms/history/index.htm">HISTORY</a>], a <i>Generic Darwin Core XML
-      schema</i> [<a href="./xsd/tdwg_dwcterms.xsd">TERMSXMLSCHEMA</a>] from which
-      other schemas can be constructed, a <i>Simple Darwin Core XML schema</i>
-      [<a href="./xsd/tdwg_dwc_simple.xsd">SIMPLEXMLSCHEMA</a>] as a complete
-      schema ready for use, a schema to allow Darwin Core data transfer in text
-      files [<a href="./text/tdwg_dwc_text.xsd">TEXTSCHEMA</a>], and associated
-      reference schemas for the construction of more structured content. These
-      pages also describe mappings between the current standard and pre-standard
-      historical versions <a href=
-      "./terms/history/versions/index.htm">[VERSIONS]</a>, including mappings
-      <a href="./terms/history/dwctoabcd/index.htm">[DWCTOABCD]</a> to concepts in
-      the <i>Access to Biological Collections Data</i> standard <a href=
-      "http://www.tdwg.org/schemas/abcd/2.06">[ABCD]</a>.</p>
+                <p><b>Extension</b>: Though the Darwin Core is insufficient for the needs of
+                all biological disciplines, it can be adapted to serve new purposes. Darwin
+                Core can be extended by adding new terms to share additional information. To
+                do so you should be familiar with the recommendations and procedures defined
+                in the <i>Darwin Core Namespace Policy</i> [<a href=
+                "./terms/namespace/index.htm">NAMESPACEPOLICY</a>]. Basically, before
+                proposing a new term, consider the existing terms in this and other
+                compatible standards to determine if the new concept can be accommodated by a
+                simple revision of the description and comments for an existing term, without
+                losing the existing meaning of that term.</p>
 
-      <p><b>Extension</b>: Though the Darwin Core is insufficient for the needs of
-      all biological disciplines, it can be adapted to serve new purposes. Darwin
-      Core can be extended by adding new terms to share additional information. To
-      do so you should be familiar with the recommendations and procedures defined
-      in the <i>Darwin Core Namespace Policy</i> [<a href=
-      "./terms/namespace/index.htm">NAMESPACEPOLICY</a>]. Basically, before
-      proposing a new term, consider the existing terms in this and other
-      compatible standards to determine if the new concept can be accommodated by a
-      simple revision of the description and comments for an existing term, without
-      losing the existing meaning of that term.</p>
+                <p><b>Participation</b>: To receive notification of activity or participate
+                in discussions about Darwin Core, join the <i>tdwg-content</i> mailing list
+                [<a href=
+                "http://lists.tdwg.org/mailman/listinfo/tdwg-content">TDWG-CONTENT</a>] and
+                watch the <i>Darwin Core Project</i> [<a href=
+                "https://github.com/tdwg/dwc">DWC-PROJECT</a>]. For discussion or commentary
+                on the definition of recommended terms, consult the link inside the
+                <i>Comment</i> section in the listing for the term in the <i>Quick Reference
+                Guide</i> [<a href="./terms/index.htm">TERMS</a>] or search for the relevant
+                content in the auxiliary<i>Darwin Core Documentation</i> [<a href=
+                "http://terms.tdwg.org/wiki/Darwin_Core">DWC-WIKI</a>].</p>
 
-      <p><b>Participation</b>: To receive notification of activity or participate
-      in discussions about Darwin Core, join the <i>tdwg-content</i> mailing list
-      [<a href=
-      "http://lists.tdwg.org/mailman/listinfo/tdwg-content">TDWG-CONTENT</a>] and
-      watch the <i>Darwin Core Project</i> [<a href=
-      "https://github.com/tdwg/dwc">DWC-PROJECT</a>]. For discussion or commentary
-      on the definition of recommended terms, consult the link inside the
-      <i>Comment</i> section in the listing for the term in the <i>Quick Reference
-      Guide</i> [<a href="./terms/index.htm">TERMS</a>] or search for the relevant
-      content in the auxiliary<i>Darwin Core Documentation</i> [<a href=
-      "http://terms.tdwg.org/wiki/Darwin_Core">DWC-WIKI</a>].</p>
+                <p>To make a formal request for a change to or addition of a term to the
+                Darwin Core, read and follow the recommendations in the <i>Darwin Core
+                Namespace Policy</i> [<a href=
+                "./terms/namespace/index.htm">NAMESPACEPOLICY</a>]. For those who wish to
+                construct and submit as a standard any application profile, such as an XML
+                schema, that extends the capabilities of the Darwin Core, adding new terms to
+                the Darwin Core vocabulary that don't already exist in a compatible
+                vocabulary will be a prerequisite. Consult the appropriate guideline, such as
+                the <i>XML Guide</i> [<a href="./terms/guides/xml/index.htm">XMLGUIDE</a>],
+                for information about the construction of a new application profile. The
+                rules of submission of proposed standards can be found in the <i>Biodiversity
+                Information Standards (TDWG)</i> process document [<a href=
+                "http://www.tdwg.org/about-tdwg/process/">PROCESS</a>]. <a id="references"
+                name="references"></a></p>
 
-      <p>To make a formal request for a change to or addition of a term to the
-      Darwin Core, read and follow the recommendations in the <i>Darwin Core
-      Namespace Policy</i> [<a href=
-      "./terms/namespace/index.htm">NAMESPACEPOLICY</a>]. For those who wish to
-      construct and submit as a standard any application profile, such as an XML
-      schema, that extends the capabilities of the Darwin Core, adding new terms to
-      the Darwin Core vocabulary that don't already exist in a compatible
-      vocabulary will be a prerequisite. Consult the appropriate guideline, such as
-      the <i>XML Guide</i> [<a href="./terms/guides/xml/index.htm">XMLGUIDE</a>],
-      for information about the construction of a new application profile. The
-      rules of submission of proposed standards can be found in the <i>Biodiversity
-      Information Standards (TDWG)</i> process document [<a href=
-      "http://www.tdwg.org/about-tdwg/process/">PROCESS</a>]. <a id="references"
-      name="references"></a></p>
-      
-      <!-- Footer -->
-      <p>Except where otherwise noted, content on this site is licensed under a
-      <a href="http://creativecommons.org/licenses/by/4.0/" rel="license">Creative
-      Commons Attribution 4.0 International License</a>.</p>
+                <!-- Footer -->
+                <p>Except where otherwise noted, content on this site is licensed under a
+                <a href="http://creativecommons.org/licenses/by/4.0/" rel="license">Creative
+                Commons Attribution 4.0 International License</a>.</p>
 
-      <p><a href="http://creativecommons.org/licenses/by/4.0/" rel=
-      "license"><img alt="Creative Commons License" id="creative_commons_icon" src=
-      "http://i.creativecommons.org/l/by/4.0/88x31.png"></a> Copyright 2011-2014 -
-      Biodiversity Information Standards - TDWG - <a href=
-      "http://www.tdwg.org/about-tdwg/contact-us/">Contact Us</a><br>
+                <p><a href="http://creativecommons.org/licenses/by/4.0/" rel=
+                "license"><img alt="Creative Commons License" id="creative_commons_icon" src=
+                "http://i.creativecommons.org/l/by/4.0/88x31.png"></a> Copyright 2011-2014 -
+                Biodiversity Information Standards - TDWG - <a href=
+                "http://www.tdwg.org/about-tdwg/contact-us/">Contact Us</a><br>
+            </div>
+        </div>
       
         <!-- Scripts -->
         <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
