@@ -1,0 +1,12 @@
+footer {
+    background-color: #f8f8f8;
+    border-top: 1px solid #e7e7e7;
+    }
+    footer .container {
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+    footer a img {
+        float: left;
+        margin-right: 20px;
+    }
