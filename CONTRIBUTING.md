@@ -2,15 +2,15 @@
 
 Changes to the standard are subject to the [change policy](changepolicy.html). Here's how you can contribute:
 
-* Want to make a change to the standard? Copy and paste one of the issue templates below and [submit a new issue](https://github.com/tdwg/dwc/issues/new).
+* Want to make a change to the standard? Copy and paste one of the **issue templates** below and [submit a new issue](https://github.com/tdwg/dwc/issues/new).
 * Want to contribute to this repository? [Fork the repository](https://github.com/tdwg/dwc/fork), make the changes, and [send a pull request](https://github.com/tdwg/dwc/compare).
- Have a question about Darwin Core? Send it to tdwg-content@lists.tdwg.org.
+* Have a question about Darwin Core? Send it to tdwg-content@lists.tdwg.org.
 
 ## Issue templates
 
 ### New term
 
-Copy and paste this template into your [new issue](https://github.com/tdwg/dwc/issues/new) if you want to create a term that does not exist yet ((example of such an issue)[]).
+Copy and paste this template into your [new issue](https://github.com/tdwg/dwc/issues/new) if you want to create a term that does not exist yet ([example]()).
 
 ```
 ## New term
@@ -32,7 +32,7 @@ Proposed definition of the new term:
 
 ### Change term
 
-Copy and paste this template into your [new issue](https://github.com/tdwg/dwc/issues/new) if you want to make a change to a term ((example of such an issue)[]).
+Copy and paste this template into your [new issue](https://github.com/tdwg/dwc/issues/new) if you want to make a change to a term ([example]()).
 
 ```
 ## Change term
@@ -53,7 +53,7 @@ I suggest the following changes (leave blank whatever would not change):
 
 ### Change documentation
 
-Copy and paste this template into your [new issue](https://github.com/tdwg/dwc/issues/new) if you want to make a change to the documentation ((example of such an issue)[]). Or, [fork the repository](https://github.com/tdwg/dwc/fork), make the changes yourself, and [send a pull request](https://github.com/tdwg/dwc/compare).
+Copy and paste this template into your [new issue](https://github.com/tdwg/dwc/issues/new) if you want to make a change to the documentation ([example]()). Or, [fork the repository](https://github.com/tdwg/dwc/fork), make the changes yourself, and [send a pull request](https://github.com/tdwg/dwc/compare).
 
 ```
 ## Change documentation
