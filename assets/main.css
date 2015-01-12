@@ -1,12 +1,28 @@
-footer {
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    margin-bottom: 80px; /* Sticky footer */
+}
+
+.content {
+    padding-bottom: 20px;
+}
+
+.footer {
     background-color: #f8f8f8;
     border-top: 1px solid #e7e7e7;
+    bottom: 0;
+    height: 80px;
+    position: absolute;
+    width: 100%;
     }
-    footer .container {
-        padding-bottom: 15px;
-        padding-top: 15px;
+    .footer .container {
+        padding-top: 20px;
     }
-    footer a img {
+    .footer a img {
         float: left;
         margin-right: 20px;
     }
