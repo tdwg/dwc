@@ -42,11 +42,9 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
     rdfs:isDefinedBy
     rdfs:range
     rdfs:subPropertyOf
-		
     rdfs:seeAlso (for ABCD mapping)
     dwcattributes:status
     dwcattributes:decision
-    
     // potentially useful
     rdfs:domain
     skos = http://www.w3.org/2004/02/skos/core#
@@ -63,8 +61,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-09-21</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#acceptedNameUsage-2009-09-21"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#acceptedNameUsage-2009-09-21"/>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
@@ -76,10 +73,8 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-01-21</dcterms:issued>
         <dcterms:modified>2009-09-21</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#acceptedNameUsageID-2009-09-21"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#acceptedNameUsageID-2009-09-21"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/acceptedTaxonID-2009-08-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
@@ -90,8 +85,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-01-21</dcterms:issued>
         <dcterms:modified>2009-01-21</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#accordingTo-2009-01-21"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#accordingTo-2009-01-21"/>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
     </rdf:Description>
     <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/associatedMedia">
@@ -102,10 +96,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2014-10-23</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#associatedMedia-2014-10-23"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/associatedMedia-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
-        <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-30_16"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#associatedMedia-2014-10-23"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/MultimediaObjects</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
     </rdf:Description>
@@ -117,10 +108,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2014-10-23</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#associatedOccurrences-2014-10-23"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/associatedOccurrences-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
-        <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-30_16"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#associatedOccurrences-2014-10-23"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Associations/UnitAssociation/AssociatedUnitSourceInstitutionCode + DataSets/DataSet/Units/Unit/Associations/UnitAssociation/AssociatedUnitSourceName + DataSets/DataSet/Units/Unit/Associations/UnitAssociation/AssociatedUnitID</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Organism"/>
     </rdf:Description>
@@ -132,9 +120,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2014-10-23</dcterms:issued>
         <dcterms:modified>2014-10-23</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#associatedOrganisms-2014-10-23"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
-        <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-26_14"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#associatedOrganisms-2014-10-23"/>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Organism"/>
     </rdf:Description>
@@ -146,10 +132,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2014-10-23</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#associatedReferences-2014-10-23"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/associatedReferences-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
-        <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-30_16"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#associatedReferences-2014-10-23"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/UnitReferences</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
     </rdf:Description>
@@ -161,10 +144,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2014-10-23</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#associatedSequences-2014-10-23"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/associatedSequences-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
-        <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-30_16"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#associatedSequences-2014-10-23"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Sequences/Sequence/ID-in-Database + constant</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
     </rdf:Description>
@@ -176,10 +156,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2014-10-23</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#associatedTaxa-2014-10-23"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/associatedTaxa-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
-        <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-30_16"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#associatedTaxa-2014-10-23"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/Synecology/AssociatedTaxa</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
     </rdf:Description>
@@ -191,12 +168,8 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2014-10-23</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#basisOfRecord-2014-10-23"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/basisOfRecord-2009-12-07"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
-        <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-26_15"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#basisOfRecord-2014-10-23"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/RecordBasis</dwcattributes:abcdEquivalence>
-        
     </rdf:Description>
     <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/bed">
         <rdfs:label xml:lang="en">Bed</rdfs:label>
@@ -205,9 +178,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-04-24</dcterms:issued>
         <dcterms:modified>2009-07-06</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#bed-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/Bed-2005-07-03"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#bed-2009-04-24"/>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/GeologicalContext"/>
     </rdf:Description>
@@ -219,8 +190,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-03-06</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#behavior-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#behavior-2009-04-24"/>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
     </rdf:Description>
@@ -232,9 +202,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#catalogNumber-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/CatalogNumber-2007-04-17"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#catalogNumber-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/UnitID</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
     </rdf:Description>
@@ -246,9 +214,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-08-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#class-2009-08-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/class-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#class-2009-08-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/HigherTaxa/HigherTaxon/HigherTaxonName with HigherTaxa/HigherTaxon/HigherTaxonRank = classis</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
@@ -260,11 +226,8 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2013-10-04</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#collectionCode-2009-09-11"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/collectionCode-2009-08-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#collectionCode-2009-09-11"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/SourceID</dwcattributes:abcdEquivalence>
-        
     </rdf:Description>
     <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/collectionID">
         <rdfs:label xml:lang="en">Collection ID</rdfs:label>
@@ -274,10 +237,8 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2014-10-23</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#collectionID-2009-09-11"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#collectionID-2009-09-11"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/SourceID</dwcattributes:abcdEquivalence>
-        
     </rdf:Description>
     <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/continent">
         <rdfs:label xml:lang="en">Continent</rdfs:label>
@@ -287,9 +248,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2013-10-04</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#continent-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/Continent-2007-04-17"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#continent-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/NamedAreas/NamedArea/AreaName with NamedAreas/NamedArea/AreaClass= Continent</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
@@ -301,9 +260,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#coordinatePrecision-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/CoordinatePrecision-2003-06-13"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#coordinatePrecision-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesLatLong/ISOAccuracy or DataSets/DataSet/Units/Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesLatLong/AccuracyStatement</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
@@ -315,9 +272,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#coordinateUncertaintyInMeters-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/CoordinateUncertaintyInMeters-2007-04-17"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#coordinateUncertaintyInMeters-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesLatLon/CoordinateErrorDistanceInMeters</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
@@ -329,9 +284,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#country-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/Country-2007-04-17"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#country-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/Country/Name</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
@@ -343,8 +296,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#countryCode-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#countryCode-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/Country/ISO3166Code</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
@@ -356,9 +308,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#county-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/County-2007-04-17"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#county-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/NamedAreas/NamedArea/AreaName with NamedAreas/NamedArea/AreaClass= County</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
@@ -370,11 +320,8 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#dataGeneralizations-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/Generalizations-2008-11-19"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#dataGeneralizations-2009-04-24"/>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
-        
     </rdf:Description>
     <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/datasetID">
         <rdfs:label xml:lang="en">Dataset ID</rdfs:label>
@@ -383,12 +330,9 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-09-11</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#datasetID-2009-09-11"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#datasetID-2009-09-11"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/datasetID-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/DataSetGUID</dwcattributes:abcdEquivalence>
-        
     </rdf:Description>
     <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/datasetName">
         <rdfs:label xml:lang="en">Dataset Name</rdfs:label>
@@ -398,10 +342,8 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-09-11</dcterms:issued>
         <dcterms:modified>2009-09-11</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#datasetName-2009-09-11"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#datasetName-2009-09-11"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/SourceID</dwcattributes:abcdEquivalence>
-        
     </rdf:Description>
     <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/dateIdentified">
         <rdfs:label xml:lang="en">Date Identified</rdfs:label>
@@ -411,10 +353,8 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-08-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#dateIdentified-2009-08-24"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#dateIdentified-2009-08-24"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/dateIdentified-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Identifications/Identification/Date/DateText</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Identification"/>
     </rdf:Description>
@@ -426,9 +366,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#day-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/DayCollected-2003-06-17"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#day-2009-04-24"/>
         <dwcattributes:abcdEquivalence>accessible from DataSets/DataSet/Units/Unit/Gathering/ISODateTimeBegin</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Event"/>
     </rdf:Description>
@@ -440,9 +378,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-07-06</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#decimalLatitude-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/DecimalLatitude-2007-04-17"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#decimalLatitude-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesLatLon/LatitudeDecimal</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
@@ -454,9 +390,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-07-06</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#decimalLongitude-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/DecimalLongitude-2007-04-17"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#decimalLongitude-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesLatLon/LongitudeDecimal</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
@@ -468,9 +402,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#disposition-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/Disposition-2007-04-17"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#disposition-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/SpecimenUnit/Disposition</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
     </rdf:Description>
@@ -482,12 +414,8 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2014-10-23</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#dynamicProperties-2014-10-23"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/dynamicProperties-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
-        <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-30_16"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#dynamicProperties-2014-10-23"/>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
-        
     </rdf:Description>
     <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/earliestAgeOrLowestStage">
         <rdfs:label xml:lang="en">Earliest Age Or Lowest Stage</rdfs:label>
@@ -497,9 +425,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-04-24</dcterms:issued>
         <dcterms:modified>2009-07-06</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#earliestAgeOrLowestStage-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/EarliestAgeOrLowestStage-2005-07-03"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#earliestAgeOrLowestStage-2009-04-24"/>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/GeologicalContext"/>
     </rdf:Description>
@@ -511,9 +437,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-04-24</dcterms:issued>
         <dcterms:modified>2009-07-06</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#earliestEonOrLowestEonothem-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/EarliestEonOrLowestEonothem-2005-07-03"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#earliestEonOrLowestEonothem-2009-04-24"/>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/GeologicalContext"/>
     </rdf:Description>
@@ -525,9 +449,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-04-24</dcterms:issued>
         <dcterms:modified>2009-07-06</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#earliestEpochOrLowestSeries-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/EarliestEpochOrLowestSeries-2005-07-03"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#earliestEpochOrLowestSeries-2009-04-24"/>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/GeologicalContext"/>
     </rdf:Description>
@@ -539,9 +461,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-04-24</dcterms:issued>
         <dcterms:modified>2009-07-06</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#earliestEraOrLowestErathem-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/EarliestEraOrLowestErathem-2005-07-03"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#earliestEraOrLowestErathem-2009-04-24"/>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/GeologicalContext"/>
     </rdf:Description>
@@ -553,9 +473,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-04-24</dcterms:issued>
         <dcterms:modified>2009-07-06</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#earliestPeriodOrLowestSystem-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/EarliestPeriodOrLowestSystem-2005-07-03"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#earliestPeriodOrLowestSystem-2009-04-24"/>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/GeologicalContext"/>
     </rdf:Description>
@@ -567,9 +485,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#endDayOfYear-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/DayOfYear-2007-04-17"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#endDayOfYear-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/DateTime/DayNumberEnd</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Event"/>
     </rdf:Description>
@@ -581,8 +497,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#establishmentMeans-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#establishmentMeans-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/EstablishmentMeans</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
     </rdf:Description>
@@ -594,10 +509,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2014-10-23</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#Event-2014-10-23"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/Event-2009-04-29"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
-        <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-26_15"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#Event-2014-10-23"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering</dwcattributes:abcdEquivalence>
     </rdf:Description>
     <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/eventDate">
@@ -608,11 +520,8 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-04-24</dcterms:issued>
         <dcterms:modified>2009-07-01</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#eventDate-2009-04-24"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#eventDate-2009-04-24"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/EarliestDateCollected-2007-04-17"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/LatestDateCollected-2007-04-17"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/ISODateTimeBegin</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Event"/>
     </rdf:Description>
@@ -623,10 +532,8 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#eventID-2009-04-24"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#eventID-2009-04-24"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/SamplingEventID-2008-11-19"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/Code</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Event"/>
     </rdf:Description>
@@ -638,8 +545,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-01-18</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#eventRemarks-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#eventRemarks-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/Notes</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Event"/>
     </rdf:Description>
@@ -651,10 +557,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-04-24</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#eventTime-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/StartTimeOfDay-2005-07-10"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/EndTimeOfDay-2005-07-10"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#eventTime-2009-04-24"/>
         <dwcattributes:abcdEquivalence>accessible from DataSets/DataSet/Units/Unit/Gathering/ISODateTimeBegin and DataSets/DataSet/Units/Unit/Gathering/ISODateTimeEnd</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Event"/>
     </rdf:Description>
@@ -666,9 +569,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-08-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#family-2009-08-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/family-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#family-2009-08-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/HigherTaxa/HigherTaxon/HigherTaxonName with HigherTaxa/HigherTaxon/HigherTaxonRank = familia</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
@@ -680,9 +581,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#fieldNotes-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/FieldNotes-2007-04-17"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#fieldNotes-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/FieldNotes</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Event"/>
     </rdf:Description>
@@ -694,9 +593,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#fieldNumber-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/FieldNumber-2007-04-17"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#fieldNumber-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/Code</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Event"/>
     </rdf:Description>
@@ -708,9 +605,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2014-10-23</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#footprintSpatialFit-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/FootprintSpatialFit-2007-04-17"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#footprintSpatialFit-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/FootprintSpatialFit (ABCD v2.06b)</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
@@ -722,8 +617,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-07-06</dcterms:issued>
         <dcterms:modified>2009-07-06</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#footprintSRS-2009-07-06"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#footprintSRS-2009-07-06"/>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
@@ -735,9 +629,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#footprintWKT-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/FootprintWKT-2007-04-17"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#footprintWKT-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/FootprintWKT (ABCD v2.06b)</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
@@ -749,9 +641,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-04-24</dcterms:issued>
         <dcterms:modified>2009-07-06</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#formation-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/Formation-2005-07-03"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#formation-2009-04-24"/>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/GeologicalContext"/>
     </rdf:Description>
@@ -762,10 +652,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2014-10-23</dcterms:issued>
         <dcterms:modified>2014-10-23</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#FossilSpecimen-2014-10-23"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/dwctype/FossilSpecimen-2011-10-16"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
-        <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-26_15"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#FossilSpecimen-2014-10-23"/>
         <dwcattributes:abcdEquivalence>RecordBasisEnum/FossileSpecimen</dwcattributes:abcdEquivalence>
     </rdf:Description>
     <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/genus">
@@ -776,9 +663,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-08-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#genus-2009-08-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/genus-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#genus-2009-08-24"/>
         <dwcattributes:abcdEquivalence>{DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Bacterial/GenusOrMonomial or DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Botanical/GenusOrMonomial or DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Viral/GenusOrMonomial or DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Zoological/GenusOrMonomial}</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
@@ -790,9 +675,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-07-06</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#geodeticDatum-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/GeodeticDatum-2007-04-17"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#geodeticDatum-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesLatLon/SpatialDatum</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
@@ -804,10 +687,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-07-06</dcterms:issued>
         <dcterms:modified>2014-10-23</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#GeologicalContext-2014-10-23"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/GeologicalContext-2009-07-06"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
-        <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-26_15"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#GeologicalContext-2014-10-23"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/Stratigraphy</dwcattributes:abcdEquivalence>
     </rdf:Description>
     <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/geologicalContextID">
@@ -817,9 +697,8 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-07-06</dcterms:issued>
         <dcterms:modified>2009-07-06</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#geologicalContextID-2009-07-06"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#geologicalContextID-2009-07-06"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/GeologicalContext"/>
     </rdf:Description>
@@ -831,11 +710,8 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-01-21</dcterms:issued>
         <dcterms:modified>2014-10-23</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#georeferencedBy-2014-10-23"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#georeferencedBy-2014-10-23"/>
         <rdfs:subPropertyOf rdf:resource="http://rs.tdwg.org/dwc/terms/accordingTo"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/georeferencedBy-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
-        <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-30_16"/>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
@@ -847,10 +723,8 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2011-10-16</dcterms:issued>
         <dcterms:modified>2011-10-16</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#georeferencedDate-2011-10-16"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#georeferencedDate-2011-10-16"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
-        <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2011-10-16_9"/>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
@@ -862,9 +736,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#georeferenceProtocol-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/GeoreferenceProtocol-2007-04-17"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#georeferenceProtocol-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinateMethod</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
@@ -876,9 +748,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#georeferenceRemarks-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/GeoreferenceRemarks-2007-04-17"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#georeferenceRemarks-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/SiteCoordinateSets/SiteCoordinates/GeoreferenceRemarks</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
@@ -890,10 +760,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2014-10-23</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#georeferenceSources-2014-10-23"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/georeferenceSources-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
-        <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-30_16"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#georeferenceSources-2014-10-23"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/SiteCoordinateSets/SiteCoordinates/GeoreferenceSources</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
@@ -905,9 +772,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#georeferenceVerificationStatus-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/GeoreferenceVerificationStatus-2007-04-17"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#georeferenceVerificationStatus-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/SiteCoordinateSets/SiteCoordinates/GeoreferenceVerificationStatus</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
@@ -918,9 +783,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-04-24</dcterms:issued>
         <dcterms:modified>2009-07-06</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#group-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/Group-2005-07-03"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#group-2009-04-24"/>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/GeologicalContext"/>
     </rdf:Description>
@@ -932,8 +795,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-05-17</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#habitat-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#habitat-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/Biotope/Text</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Event"/>
     </rdf:Description>
@@ -945,10 +807,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2014-10-23</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#higherClassification-2014-10-23"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/higherClassification-2009-08-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
-        <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-30_16"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#higherClassification-2014-10-23"/>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
@@ -960,10 +819,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2014-10-23</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#higherGeography-2014-10-23"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/higherGeography-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
-        <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-30_16"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#higherGeography-2014-10-23"/>
         <dwcattributes:abcdEquivalence>{DataSets/DataSet/Units/Unit/Gathering/LocalityText or DataSets/DataSet/Units/Unit/Gathering/NamedAreas/NamedArea/AreaName}</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
@@ -975,9 +831,8 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-01-21</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#higherGeographyID-2009-04-24"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#higherGeographyID-2009-04-24"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
@@ -988,9 +843,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-04-24</dcterms:issued>
         <dcterms:modified>2009-07-06</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#highestBiostratigraphicZone-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/HighestBiostratigraphicZone-2005-07-03"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#highestBiostratigraphicZone-2009-04-24"/>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/GeologicalContext"/>
     </rdf:Description>
@@ -1001,10 +854,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2014-10-23</dcterms:issued>
         <dcterms:modified>2014-10-23</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#HumanObservation-2014-10-23"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/dwctype/HumanObservation-2011-10-16"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
-        <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-26_15"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#HumanObservation-2014-10-23"/>
         <dwcattributes:abcdEquivalence>RecordBasisEnum/HumanObservation</dwcattributes:abcdEquivalence>
     </rdf:Description>
     <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/Identification">
@@ -1015,10 +865,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2014-10-23</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#Identification-2014-10-23"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/Identification-2008-11-19"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
-        <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-26_15"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#Identification-2014-10-23"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Identifications/Identification</dwcattributes:abcdEquivalence>
     </rdf:Description>
     <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/identificationID">
@@ -1028,9 +875,8 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#identificationID-2009-04-24"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#identificationID-2009-04-24"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Identification"/>
     </rdf:Description>
@@ -1042,9 +888,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#identificationQualifier-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/IdentificationQualifier-2007-04-17"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#identificationQualifier-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/IdentificationQualifier</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Identification"/>
     </rdf:Description>
@@ -1056,10 +900,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2014-10-23</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#identificationReferences-2014-10-23"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/identificationReferences-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
-        <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-30_16"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#identificationReferences-2014-10-23"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Identifications/Identification/References</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Identification"/>
     </rdf:Description>
@@ -1071,8 +912,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#identificationRemarks-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#identificationRemarks-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Identifications/Identification/Notes</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Identification"/>
     </rdf:Description>
@@ -1084,9 +924,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2011-10-16</dcterms:issued>
         <dcterms:modified>2011-10-16</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#identificationVerificationStatus-2011-10-16"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
-        <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2011-10-16_10"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#identificationVerificationStatus-2011-10-16"/>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Identification"/>
     </rdf:Description>
@@ -1098,11 +936,8 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2014-10-23</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#identifiedBy-2014-10-23"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#identifiedBy-2014-10-23"/>
         <rdfs:subPropertyOf rdf:resource="http://rs.tdwg.org/dwc/terms/accordingTo"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/identifiedBy-2009-08-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
-        <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-30_16"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Identifications/Identification/Identifiers/IdentifiersText</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Identification"/>
     </rdf:Description>
@@ -1114,9 +949,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#individualCount-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/IndividualCount-2007-04-17"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#individualCount-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts/SiteMeasurementOrFact/MeasurementOrFactAtomised/LowerValue</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
     </rdf:Description>
@@ -1128,11 +961,8 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#informationWithheld-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/InformationWithheld-2007-04-17"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#informationWithheld-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/InformationWithheld</dwcattributes:abcdEquivalence>
-        
     </rdf:Description>
     <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/infraspecificEpithet">
         <rdfs:label xml:lang="en">Infraspecific Epithet</rdfs:label>
@@ -1142,9 +972,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-08-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#infraspecificEpithet-2009-08-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/infraspecificEpithet-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#infraspecificEpithet-2009-08-24"/>
         <dwcattributes:abcdEquivalence>{DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Bacterial/SubspeciesEpithet or DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Botanical/SecondEpithet or DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Zoological/SubspeciesEpithet}</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
@@ -1156,11 +984,8 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2013-10-04</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#institutionCode-2009-09-11"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/institutionCode-2009-08-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#institutionCode-2009-09-11"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/SourceInstitutionID</dwcattributes:abcdEquivalence>
-        
     </rdf:Description>
     <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/institutionID">
         <rdfs:label xml:lang="en">Institution ID</rdfs:label>
@@ -1170,10 +995,8 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-09-11</dcterms:issued>
         <dcterms:modified>2014-10-23</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#institutionID-2009-09-11"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#institutionID-2009-09-11"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/SourceInstitutionID</dwcattributes:abcdEquivalence>
-        
     </rdf:Description>
     <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/island">
         <rdfs:label xml:lang="en">Island</rdfs:label>
@@ -1183,9 +1006,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#island-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/Island-2007-04-17"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#island-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/NamedAreas/NamedArea/AreaName with NamedAreas/NamedArea/AreaClass= Island</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
@@ -1197,9 +1018,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#islandGroup-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/IslandGroup-2007-04-17"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#islandGroup-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/NamedAreas/NamedArea/AreaName with NamedAreas/NamedArea/AreaClass= Island group</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
@@ -1211,9 +1030,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-08-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#kingdom-2009-08-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/kingdom-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#kingdom-2009-08-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/HigherTaxa/HigherTaxon/HigherTaxonName with HigherTaxa/HigherTaxon/HigherTaxonRank = regnum</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
@@ -1225,9 +1042,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-04-24</dcterms:issued>
         <dcterms:modified>2009-07-06</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#latestAgeOrHighestStage-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/LatestAgeOrHighestStage-2005-07-03"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#latestAgeOrHighestStage-2009-04-24"/>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/GeologicalContext"/>
     </rdf:Description>
@@ -1239,9 +1054,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-04-24</dcterms:issued>
         <dcterms:modified>2009-07-06</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#latestEonOrHighestEonothem-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/LatestEonOrLowestEonothem-2005-07-03"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#latestEonOrHighestEonothem-2009-04-24"/>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/GeologicalContext"/>
     </rdf:Description>
@@ -1253,9 +1066,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-04-24</dcterms:issued>
         <dcterms:modified>2009-07-06</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#latestEpochOrHighestSeries-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/LatestEpochOrHighestSeries-2005-07-03"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#latestEpochOrHighestSeries-2009-04-24"/>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/GeologicalContext"/>
     </rdf:Description>
@@ -1267,9 +1078,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-04-24</dcterms:issued>
         <dcterms:modified>2009-07-06</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#latestEraOrHighestErathem-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/LatestEraOrHighestErathem-2005-07-03"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#latestEraOrHighestErathem-2009-04-24"/>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/GeologicalContext"/>
     </rdf:Description>
@@ -1281,9 +1090,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-04-24</dcterms:issued>
         <dcterms:modified>2009-07-06</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#latestPeriodOrHighestSystem-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/LatestPeriodOrHighestSystem-2005-07-03"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#latestPeriodOrHighestSystem-2009-04-24"/>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/GeologicalContext"/>
     </rdf:Description>
@@ -1295,9 +1102,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#lifeStage-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/LifeStage-2007-04-17"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#lifeStage-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/MycologicalUnit/MycologicalSexualStage or DataSets/DataSet/Units/Unit/MycologicalUnit/MycologicalLiveStages/MycologicalLiveStage (Note DwC spec uses ”MycologicalLifeStage” or DataSets/DataSet/Units/Unit/ZoologicalUnit/PhasesOrStages/PhaseOrStage</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
     </rdf:Description>
@@ -1308,9 +1113,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-04-24</dcterms:issued>
         <dcterms:modified>2009-07-06</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#lithostratigraphicTerms-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/LithostratigraphicTerms-2005-07-03"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#lithostratigraphicTerms-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/Stratigraphy/LithostratigraphicTerms</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/GeologicalContext"/>
     </rdf:Description>
@@ -1321,10 +1124,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2014-10-23</dcterms:issued>
         <dcterms:modified>2014-10-23</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#LivingSpecimen-2014-10-23"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/dwctype/LivingSpecimen-2011-10-16"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
-        <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-26_15"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#LivingSpecimen-2014-10-23"/>
         <dwcattributes:abcdEquivalence>RecordBasisEnum/LivingSpecimen</dwcattributes:abcdEquivalence>
     </rdf:Description>
     <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/locality">
@@ -1335,9 +1135,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#locality-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/Locality-2007-04-17"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#locality-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/NamedAreas/NamedArea/AreaName</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
@@ -1349,9 +1147,8 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-08-24</dcterms:issued>
         <dcterms:modified>2009-08-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#locationAccordingTo-2009-08-24"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#locationAccordingTo-2009-08-24"/>
         <rdfs:subPropertyOf rdf:resource="http://rs.tdwg.org/dwc/terms/accordingTo"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
@@ -1362,10 +1159,8 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#locationID-2009-04-24"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#locationID-2009-04-24"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/SamplingLocationID-2008-11-19"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
@@ -1377,9 +1172,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-01-18</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#locationRemarks-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/SamplingLocationRemarks-2009-01-18"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#locationRemarks-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/AreaDetail</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
@@ -1390,9 +1183,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-04-24</dcterms:issued>
         <dcterms:modified>2009-07-06</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#lowestBiostratigraphicZone-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/LowestBiostratigraphicZone-2005-07-03"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#lowestBiostratigraphicZone-2009-04-24"/>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/GeologicalContext"/>
     </rdf:Description>
@@ -1403,10 +1194,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2014-10-23</dcterms:issued>
         <dcterms:modified>2014-10-23</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#MachineObservation-2014-10-23"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/dwctype/MachineObservation-2011-10-16"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
-        <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-26_15"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#MachineObservation-2014-10-23"/>
         <dwcattributes:abcdEquivalence>RecordBasisEnum/MachineObservation</dwcattributes:abcdEquivalence>
     </rdf:Description>
     <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/MaterialSample">
@@ -1417,10 +1205,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2013-03-28</dcterms:issued>
         <dcterms:modified>2014-10-23</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#MaterialSample-2014-10-23"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/MaterialSample-2013-03-28"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
-        <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-26_15"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#MaterialSample-2014-10-23"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit</dwcattributes:abcdEquivalence>
     </rdf:Description>
     <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/materialSampleID">
@@ -1430,11 +1215,8 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2013-03-28</dcterms:issued>
         <dcterms:modified>2013-09-26</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#materialSampleID-2013-05-25"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#materialSampleID-2013-05-25"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
-        <dcterms:replaces rdf:resource="http://gensc.org/ns/mixs/source_mat_id-2011-01-26"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
-        <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2013-10-09_13"/>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/MaterialSample"/>
     </rdf:Description>
@@ -1446,9 +1228,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#maximumDepthInMeters-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/MaximumDepthInMeters-2007-04-17"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#maximumDepthInMeters-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/Depth/MeasurementOrFactAtomised/UpperValue</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
@@ -1460,8 +1240,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#maximumDistanceAboveSurfaceInMeters-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#maximumDistanceAboveSurfaceInMeters-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/Height/MeasurementOrFactAtomised/UpperValue</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
@@ -1473,9 +1252,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#maximumElevationInMeters-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/MaximumElevationInMeters-2007-04-17"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#maximumElevationInMeters-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/Altitude/MeasurementOrFactAtomised/UpperValue</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
@@ -1487,10 +1264,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-01-18</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#measurementAccuracy-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/occurrenceMeasurementAccuracy-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/eventMeasurementAccuracy-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#measurementAccuracy-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/Accuracy or DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts/SiteMeasurementOrFact/MeasurementOrFactAtomised/Accuracy or DataSets/DataSet/Units/Unit/Gathering/Aspect/Accuracy or DataSets/DataSet/Units/Unit/Gathering/Altitude/MeasurementOrFactAtomised/Accuracy or DataSets/DataSet/Units/Unit/Gathering/Depth/MeasurementOrFactAtomised/Accuracy or DataSets/DataSet/Units/Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFactAtomised/Accuracy or DataSets/DataSet/Units/Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/Accuracy</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/MeasurementOrFact"/>
     </rdf:Description>
@@ -1502,11 +1276,8 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-01-23</dcterms:issued>
         <dcterms:modified>2014-10-23</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#measurementDeterminedBy-2014-10-23"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#measurementDeterminedBy-2014-10-23"/>
         <rdfs:subPropertyOf rdf:resource="http://rs.tdwg.org/dwc/terms/accordingTo"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/measurementDeterminedBy-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
-        <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-30_16"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/MeasuredBy or DataSets/DataSet/Units/Unit/Gathering/Altitude/MeasurementOrFactAtomised/MeasuredBy or DataSets/DataSet/Units/Unit/Gathering/Depth/MeasurementOrFactAtomised/MeasuredBy or DataSets/DataSet/Units/Unit/Gathering/Height/MeasurementOrFactAtomised/MeasuredBy or DataSets/DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts/SiteMeasurementOrFact/MeasurementOrFactAtomised/MeasuredBy or DataSets/DataSet/Units/Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFactAtomised/MeasuredBy</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/MeasurementOrFact"/>
     </rdf:Description>
@@ -1518,11 +1289,8 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-01-23</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#measurementDeterminedDate-2009-04-24"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#measurementDeterminedDate-2009-04-24"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/occurrenceMeasurementDeterminedDate-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/eventMeasurementDeterminedDate-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/MeasurementDateTime or DataSets/DataSet/Units/Unit/Gathering/Altitude/MeasurementOrFactAtomised/MeasurementDateTime or DataSets/DataSet/Units/Unit/Gathering/Depth/MeasurementOrFactAtomised/MeasurementDateTime or DataSets/DataSet/Units/Unit/Gathering/Height/MeasurementOrFactAtomised/MeasurementDateTime or DataSets/DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts/SiteMeasurementOrFact/MeasurementOrFactAtomised/MeasurementDateTime or DataSets/DataSet/Units/Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFactAtomised/MeasurementDateTime</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/MeasurementOrFact"/>
     </rdf:Description>
@@ -1533,11 +1301,8 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-03-06</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#measurementID-2009-04-24"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#measurementID-2009-04-24"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/occurrenceMeasurementID-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/eventMeasurementID-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/MeasurementOrFact"/>
     </rdf:Description>
@@ -1549,8 +1314,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#measurementMethod-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#measurementMethod-2009-04-24"/>
         <dwcattributes:abcdEquivalence>/DataSets/DataSet/Units/Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/Method or /DataSets/DataSet/Units/Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFactAtomised/Method or /DataSets/DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts/SiteMeasurementOrFact/MeasurementOrFactAtomised/Method</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/MeasurementOrFact"/>
     </rdf:Description>
@@ -1562,10 +1326,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-04-24</dcterms:issued>
         <dcterms:modified>2014-10-23</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#MeasurementOrFact-2014-10-23"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/MeasurementOrFact-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
-        <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-26_15"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#MeasurementOrFact-2014-10-23"/>
         <dwcattributes:abcdEquivalence>Datasets/Dataset/Units/Unit/MeasurementsOrFacts or DataSets/DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts</dwcattributes:abcdEquivalence>
     </rdf:Description>
     <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/measurementRemarks">
@@ -1576,10 +1337,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#measurementRemarks-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/occurrenceMeasurementRemarks-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/eventMeasurementRemarks-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#measurementRemarks-2009-04-24"/>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/MeasurementOrFact"/>
     </rdf:Description>
@@ -1591,10 +1349,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#measurementType-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/occurrenceMeasurementType-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/eventMeasurementType-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#measurementType-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/Parameter or DataSets/DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/Parameter</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/MeasurementOrFact"/>
     </rdf:Description>
@@ -1606,10 +1361,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#measurementUnit-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/occurrenceMeasurementUnit-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/eventMeasurementUnit-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#measurementUnit-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/UnitOfMeasurement or DataSets/DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/UnitOfMeasurement</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/MeasurementOrFact"/>
     </rdf:Description>
@@ -1621,10 +1373,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#measurementValue-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/occurrenceMeasurementValue-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/eventMeasurementValue-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#measurementValue-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/UpperValue or DataSets/DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts/SiteMeasurementOrFact/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts/SiteMeasurementOrFact/MeasurementOrFactAtomised/UpperValue or DataSets/DataSet/Units/Unit/Gathering/Altitude/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/Gathering/Altitude/MeasurementOrFactAtomised/UpperValue or DataSets/DataSet/Units/Unit/Gathering/Depth/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/Gathering/Depth/MeasurementOrFactAtomised/UpperValue or DataSets/DataSet/Units/Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFactAtomised/UpperValue or DataSets/DataSet/Units/Unit/Gathering/Height/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/Gathering/Height/MeasurementOrFactAtomised/UpperValue</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/MeasurementOrFact"/>
     </rdf:Description>
@@ -1636,9 +1385,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-04-24</dcterms:issued>
         <dcterms:modified>2009-07-06</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#member-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/Member-2005-07-03"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#member-2009-04-24"/>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/GeologicalContext"/>
     </rdf:Description>
@@ -1650,9 +1397,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#minimumDepthInMeters-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/MinimumDepthInMeters-2007-04-17"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#minimumDepthInMeters-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/Depth/MeasurementOrFactAtomised/LowerValue</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
@@ -1664,8 +1409,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#minimumDistanceAboveSurfaceInMeters-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#minimumDistanceAboveSurfaceInMeters-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/Height/MeasurementOrFactAtomised/LowerValue</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
@@ -1677,9 +1421,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#minimumElevationInMeters-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/MinimumElevationInMeters-2007-04-17"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#minimumElevationInMeters-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/Altitude/MeasurementOrFactAtomised/LowerValue</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
@@ -1691,9 +1433,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#month-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/MonthCollected-2003-06-17"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#month-2009-04-24"/>
         <dwcattributes:abcdEquivalence>accessible from DataSets/DataSet/Units/Unit/Gathering/ISODateTimeBegin</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Event"/>
     </rdf:Description>
@@ -1705,8 +1445,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-08-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#municipality-2009-08-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#municipality-2009-08-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/NamedAreas/NamedArea/AreaName</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
@@ -1718,10 +1457,8 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-09-21</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#nameAccordingTo-2009-09-21"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#nameAccordingTo-2009-09-21"/>
         <rdfs:subPropertyOf rdf:resource="http://rs.tdwg.org/dwc/terms/accordingTo"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/taxonAccordingTo-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
@@ -1733,9 +1470,8 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-08-24</dcterms:issued>
         <dcterms:modified>2009-09-21</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#nameAccordingToID-2009-09-21"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#nameAccordingToID-2009-09-21"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
@@ -1747,10 +1483,8 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-09-21</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#namePublishedIn-2009-09-21"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#namePublishedIn-2009-09-21"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/bibliographicCitation"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/namePublishedIn-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/SpecimenUnit/NomenclaturalTypeDesignations/NomenclaturalTypeDesignation/NomenclaturalReference/TitleCitation</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
@@ -1762,10 +1496,8 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-05-18</dcterms:issued>
         <dcterms:modified>2009-09-21</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#namePublishedInID-2009-09-21"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#namePublishedInID-2009-09-21"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/namePublicationID-2009-05-18"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
@@ -1777,9 +1509,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2011-10-16</dcterms:issued>
         <dcterms:modified>2011-10-16</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#namePublishedInYear-2011-10-16"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
-        <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2011-10-16_8"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#namePublishedInYear-2011-10-16"/>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
@@ -1791,9 +1521,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-09-21</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#nomenclaturalCode-2009-09-21"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/NomenclaturalCode-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#nomenclaturalCode-2009-09-21"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/Code</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
@@ -1805,8 +1533,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-01-18</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#nomenclaturalStatus-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#nomenclaturalStatus-2009-04-24"/>
         <dwcattributes:abcdEquivalence>(DataSets/DataSet/Units/Unit/SpecimenUnit/NomenclaturalTypeDesignations/NomenclaturalTypeDesignation/NomenclaturalReference/TitleCitation) pro parte</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
@@ -1818,10 +1545,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2014-10-23</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#Occurrence-2014-10-23"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence-2009-04-29"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
-        <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-26_15"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#Occurrence-2014-10-23"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit</dwcattributes:abcdEquivalence>
     </rdf:Description>
     <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/occurrenceID">
@@ -1832,10 +1556,8 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#occurrenceID-2009-04-24"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#occurrenceID-2009-04-24"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/GlobalUniqueIdentifier-2007-04-17"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/UnitGUID</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
     </rdf:Description>
@@ -1847,9 +1569,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#occurrenceRemarks-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/SampleRemarks-2009-01-18"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#occurrenceRemarks-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Notes</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
     </rdf:Description>
@@ -1861,8 +1581,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-09-17</dcterms:issued>
         <dcterms:modified>2009-09-17</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#occurrenceStatus-2009-09-17"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#occurrenceStatus-2009-09-17"/>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
     </rdf:Description>
@@ -1874,9 +1593,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-08-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#order-2009-08-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/order-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#order-2009-08-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/HigherTaxa/HigherTaxon/HigherTaxonName with HigherTaxa/HigherTaxon/HigherTaxonRank = ordo</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
@@ -1888,9 +1605,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2014-10-23</dcterms:issued>
         <dcterms:modified>2014-10-23</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#Organism-2014-10-23"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
-        <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-26_14"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#Organism-2014-10-23"/>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
     </rdf:Description>
     <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/organismID">
@@ -1900,11 +1615,8 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2014-10-23</dcterms:issued>
         <dcterms:modified>2014-10-23</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#organismID-2014-10-23"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#organismID-2014-10-23"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/individualID-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
-        <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-26_14"/>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Organism"/>
     </rdf:Description>
@@ -1916,9 +1628,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2014-10-23</dcterms:issued>
         <dcterms:modified>2014-10-23</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#organismName-2014-10-23"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
-        <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-26_14"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#organismName-2014-10-23"/>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Organism"/>
     </rdf:Description>
@@ -1930,9 +1640,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2014-10-23</dcterms:issued>
         <dcterms:modified>2014-10-23</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#organismRemarks-2014-10-23"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
-        <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-26_14"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#organismRemarks-2014-10-23"/>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Organism"/>
     </rdf:Description>
@@ -1944,9 +1652,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2014-10-23</dcterms:issued>
         <dcterms:modified>2014-10-23</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#organismScope-2014-10-23"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
-        <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-26_14"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#organismScope-2014-10-23"/>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Organism"/>
     </rdf:Description>
@@ -1958,9 +1664,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-09-21</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#originalNameUsage-2009-09-21"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/basionym-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#originalNameUsage-2009-09-21"/>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
@@ -1972,10 +1676,8 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-01-21</dcterms:issued>
         <dcterms:modified>2009-09-21</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#originalNameUsageID-2009-09-21"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#originalNameUsageID-2009-09-21"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/basionymID-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
@@ -1987,10 +1689,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2014-10-23</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#otherCatalogNumbers-2014-10-23"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/otherCatalogNumbers-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
-        <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-30_16"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#otherCatalogNumbers-2014-10-23"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/SpecimenUnit/History/PreviousUnitsText</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
     </rdf:Description>
@@ -2002,10 +1701,8 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-08-24</dcterms:issued>
         <dcterms:modified>2013-10-04</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#ownerInstitutionCode-2009-08-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#ownerInstitutionCode-2009-08-24"/>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
-        
     </rdf:Description>
     <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/parentNameUsage">
         <rdfs:label xml:lang="en">Parent Name Usage</rdfs:label>
@@ -2015,8 +1712,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-08-24</dcterms:issued>
         <dcterms:modified>2009-09-21</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#parentNameUsage-2009-09-21"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#parentNameUsage-2009-09-21"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/HigherTaxa/HigherTaxon/HigherTaxonName</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
@@ -2028,10 +1724,8 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-01-21</dcterms:issued>
         <dcterms:modified>2009-09-21</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#parentNameUsageID-2009-09-21"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#parentNameUsageID-2009-09-21"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/higherTaxonNameID-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
@@ -2043,9 +1737,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-08-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#phylum-2009-08-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/phylum-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#phylum-2009-08-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/HigherTaxa/HigherTaxon/HigherTaxonName with HigherTaxa/HigherTaxon/HigherTaxonRank = phylum</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
@@ -2057,9 +1749,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2014-10-23</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#pointRadiusSpatialFit-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/PointRadiusSpatialFit-2007-04-17"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#pointRadiusSpatialFit-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/SiteCoordinateSets/SiteCoordinates/PointRadiusSpatialFit</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
@@ -2071,10 +1761,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2014-10-23</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#preparations-2014-10-23"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/preparations-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
-        <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-30_16"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#preparations-2014-10-23"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/SpecimenUnit/Preparations/PreparationsText</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
     </rdf:Description>
@@ -2085,10 +1772,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2014-10-23</dcterms:issued>
         <dcterms:modified>2014-10-23</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#PreservedSpecimen-2014-10-23"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/dwctype/PreservedSpecimen-2011-10-16"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
-        <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-26_15"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#PreservedSpecimen-2014-10-23"/>
         <dwcattributes:abcdEquivalence>RecordBasisEnum/PreservedSpecimen</dwcattributes:abcdEquivalence>
     </rdf:Description>
     <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/previousIdentifications">
@@ -2099,10 +1783,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2014-10-23</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#previousIdentifications-2014-10-23"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/previousIdentifications-2009-05-18"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
-        <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-30_16"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#previousIdentifications-2014-10-23"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Identifications/Identification with PreferredFlag = false</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Organism"/>
     </rdf:Description>
@@ -2114,11 +1795,8 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2014-10-23</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#recordedBy-2014-10-23"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#recordedBy-2014-10-23"/>
         <rdfs:subPropertyOf rdf:resource="http://rs.tdwg.org/dwc/terms/accordingTo"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/recordedBy-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
-        <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-30_16"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/GatheringAgents/GatheringAgentsText</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
     </rdf:Description>
@@ -2130,9 +1808,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-05-18</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#recordNumber-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/CollectorNumber-2007-04-17"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#recordNumber-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/CollectorsFieldNumber</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
     </rdf:Description>
@@ -2143,9 +1819,8 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#relatedResourceID-2009-04-24"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#relatedResourceID-2009-04-24"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Associations/UnitAssociation/AssociatedUnitSourceInstitutionCode + DataSets/DataSet/Units/Unit/Associations/UnitAssociation/AssociatedUnitSourceName + DataSets/DataSet/Units/Unit/Associations/UnitAssociation/AssociatedUnitID</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/ResourceRelationship"/>
     </rdf:Description>
@@ -2157,9 +1832,8 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-04-24</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#relationshipAccordingTo-2009-04-24"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#relationshipAccordingTo-2009-04-24"/>
         <rdfs:subPropertyOf rdf:resource="http://rs.tdwg.org/dwc/terms/accordingTo"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/ResourceRelationship"/>
     </rdf:Description>
@@ -2171,9 +1845,8 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-04-24</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#relationshipEstablishedDate-2009-04-24"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#relationshipEstablishedDate-2009-04-24"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/ResourceRelationship"/>
     </rdf:Description>
@@ -2185,8 +1858,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#relationshipOfResource-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#relationshipOfResource-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Associations/UnitAssociation/AssociationType</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/ResourceRelationship"/>
     </rdf:Description>
@@ -2198,8 +1870,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#relationshipRemarks-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#relationshipRemarks-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Associations/UnitAssociation/Comments</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/ResourceRelationship"/>
     </rdf:Description>
@@ -2211,8 +1882,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#reproductiveCondition-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#reproductiveCondition-2009-04-24"/>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
     </rdf:Description>
@@ -2223,9 +1893,8 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-04-24</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#resourceID-2009-04-24"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#resourceID-2009-04-24"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/ResourceRelationship"/>
     </rdf:Description>
@@ -2237,10 +1906,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2014-10-23</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#ResourceRelationship-2014-10-23"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/ResourceRelationship-2009-01-21"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
-        <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-26_15"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#ResourceRelationship-2014-10-23"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Associations</dwcattributes:abcdEquivalence>
     </rdf:Description>
     <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/resourceRelationshipID">
@@ -2250,9 +1916,8 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-01-26</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#resourceRelationshipID-2009-04-24"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#resourceRelationshipID-2009-04-24"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/ResourceRelationship"/>
     </rdf:Description>
@@ -2264,8 +1929,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-08-24</dcterms:issued>
         <dcterms:modified>2009-08-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#samplingEffort-2009-08-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#samplingEffort-2009-08-24"/>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Event"/>
     </rdf:Description>
@@ -2277,9 +1941,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#samplingProtocol-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/CollectingMethod-2007-04-17"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#samplingProtocol-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/Method</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Event"/>
     </rdf:Description>
@@ -2291,9 +1953,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-09-21</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#scientificName-2009-09-21"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/scientificName-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#scientificName-2009-09-21"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/FullScientificNameString</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
@@ -2305,9 +1965,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#scientificNameAuthorship-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/AuthorYearOfScientificName-2007-04-17"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#scientificNameAuthorship-2009-04-24"/>
         <dwcattributes:abcdEquivalence>{DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Bacterial/ParentheticalAuthorTeamAndYear + DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Bacterial/AuthorTeamAndYear} or {DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Botanical/AuthorTeamParenthesis + DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Botanical/AuthorTeam} or {DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Zoological/AuthorTeamOriginalAndYear + [= or] DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Zoological/AuthorTeamParenthesisAndYear}</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
@@ -2319,10 +1977,8 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-08-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#scientificNameID-2009-08-24"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#scientificNameID-2009-08-24"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/TaxonNameID-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
@@ -2334,9 +1990,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#sex-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/Sex-2007-04-17"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#sex-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Sex</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
     </rdf:Description>
@@ -2348,9 +2002,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#specificEpithet-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/SpecificEpithet-2007-04-17"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#specificEpithet-2009-04-24"/>
         <dwcattributes:abcdEquivalence>{DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Bacterial/SpeciesEpithet or DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Botanical/FirstEpithet or DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Zoological/SpeciesEpithet}</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
@@ -2362,9 +2014,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#startDayOfYear-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/DayOfYear-2007-04-17"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#startDayOfYear-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/DateTime/DayNumberBegin</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Event"/>
     </rdf:Description>
@@ -2376,9 +2026,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#stateProvince-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/StateProvince-2007-04-17"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#stateProvince-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/NamedAreas/NamedArea/AreaName with NamedAreas/NamedArea/AreaClass= State or = Province (etc.)</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
@@ -2390,9 +2038,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-08-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#subgenus-2009-08-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/subgenus-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#subgenus-2009-08-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Zoological/Subgenus</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
@@ -2404,10 +2050,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2014-10-23</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#Taxon-2014-10-23"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon-2009-09-21"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
-        <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-26_15"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#Taxon-2014-10-23"/>
         <dwcattributes:abcdEquivalence>no simple equivalent in ABCD</dwcattributes:abcdEquivalence>
     </rdf:Description>
     <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/taxonConceptID">
@@ -2418,10 +2061,8 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-04-24</dcterms:issued>
         <dcterms:modified>2009-09-21</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#taxonConceptID-2009-09-21"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#taxonConceptID-2009-09-21"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/taxonConceptID-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
@@ -2433,10 +2074,8 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-08-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#taxonID-2009-08-24"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#taxonID-2009-08-24"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/scientificNameID-2009-07-06"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
@@ -2448,8 +2087,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#taxonomicStatus-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#taxonomicStatus-2009-04-24"/>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
@@ -2461,9 +2099,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-09-21</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#taxonRank-2009-09-21"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/scientificNameRank-2009-07-06"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#taxonRank-2009-09-21"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Botanical/Rank</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
@@ -2475,9 +2111,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-08-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#taxonRemarks-2009-08-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/taxonRemarks-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#taxonRemarks-2009-08-24"/>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
@@ -2489,10 +2123,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2014-10-23</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#typeStatus-2014-10-23"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/typeStatus-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
-        <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-30_16"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#typeStatus-2014-10-23"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/SpecimenUnit/NomenclaturalTypeDesignations/NomenclaturalTypeText</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Identification"/>
     </rdf:Description>
@@ -2504,9 +2135,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-07-06</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#verbatimCoordinates-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/VerbatimCoordinates-2007-04-17"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#verbatimCoordinates-2009-04-24"/>
         <dwcattributes:abcdEquivalence>{DataSets/DataSet/Units/Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesLatLon/CoordinatesText or DataSets/DataSet/Units/Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesUTM/UTMText}</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
@@ -2518,9 +2147,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-07-06</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#verbatimCoordinateSystem-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/VerbatimCoordinateSystem-2007-04-17"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#verbatimCoordinateSystem-2009-04-24"/>
         <dwcattributes:abcdEquivalence>(partly) DataSets/DataSet/Units/Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesGrid/GridCellSystem</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
@@ -2532,9 +2159,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#verbatimDepth-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/VerbatimDepth-2007-04-17"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#verbatimDepth-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/Depth/MeasurementOrFactText</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
@@ -2546,9 +2171,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#verbatimElevation-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/VerbatimElevation-2007-04-17"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#verbatimElevation-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/Altitude/MeasurementOrFactText</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
@@ -2560,9 +2183,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#verbatimEventDate-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/VerbatimCollectingDate-2007-04-17"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#verbatimEventDate-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/DateTime/DateText</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Event"/>
     </rdf:Description>
@@ -2574,9 +2195,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-07-06</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#verbatimLatitude-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/VerbatimLatitude-2007-04-17"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#verbatimLatitude-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesLatLon/VerbatimLatitude</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
@@ -2588,8 +2207,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#verbatimLocality-2009-04-24"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#verbatimLocality-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/NamedAreas/NamedArea/AreaName</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
@@ -2601,9 +2219,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-07-06</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#verbatimLongitude-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/VerbatimLongitude-2007-04-17"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#verbatimLongitude-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesLatLon/VerbatimLongitude</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
@@ -2615,8 +2231,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-07-06</dcterms:issued>
         <dcterms:modified>2009-07-06</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#verbatimSRS-2009-07-06"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#verbatimSRS-2009-07-06"/>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
@@ -2628,9 +2243,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-07-06</dcterms:issued>
         <dcterms:modified>2009-09-21</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#verbatimTaxonRank-2009-09-21"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/verbatimScientificNameRank-2009-07-06"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#verbatimTaxonRank-2009-09-21"/>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
@@ -2642,8 +2255,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-07-06</dcterms:issued>
         <dcterms:modified>2009-07-06</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#vernacularName-2009-07-06"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#vernacularName-2009-07-06"/>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
@@ -2655,9 +2267,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#waterBody-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/WaterBody-2007-04-17"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#waterBody-2009-04-24"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/NamedAreas/NamedArea/AreaName with NamedAreas/NamedArea/AreaClass= Water body</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
@@ -2669,9 +2279,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2008-11-19</dcterms:issued>
         <dcterms:modified>2009-04-24</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#year-2009-04-24"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/YearCollected-2003-06-17"/>
-        <dwcattributes:status>recommended</dwcattributes:status>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history.html#year-2009-04-24"/>
         <dwcattributes:abcdEquivalence>accessible from DataSets/DataSet/Units/Unit/Gathering/ISODateTimeBegin</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Event"/>
     </rdf:Description>

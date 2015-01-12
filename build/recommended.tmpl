@@ -6,31 +6,6 @@
   <link rel="stylesheet" href="bootstrap.min.css">  
 </head>
 
-<body>
-
-<div class="container">
-	<div class="jumbotron">
-	    <h1>Darwin Core Term Reference</h1>
-	</div>
-
-	
-#for $group in $groups
-	#if $group.uri is not None
-	  <h4><a href="#$group.name">$group.name</a></h4>
-	#else
-	  <h4>$group.name</h4>
-	#end if
-	<p>
-	#set $sep = ''
-	#for $term in $group.terms
-		$sep <a href="#$term.name">$term.name</a> 
-		#set $sep = '|'
-	#end for
-	</p>
-#end for
-
-<hr/>
-
 #def showTerm($t)
   #if $t.uri is not None
   <a name="$t.name"></a>
@@ -58,6 +33,31 @@
 <hr/>
   #end if
 #end def
+
+<body>
+
+<div class="container">
+	<div class="jumbotron">
+	    <h1>Darwin Core Term Reference</h1>
+	</div>
+
+	
+#for $group in $groups
+	#if $group.uri is not None
+	  <h4><a href="#$group.name">$group.name</a></h4>
+	#else
+	  <h4>$group.name</h4>
+	#end if
+	<p>
+	#set $sep = ''
+	#for $term in $group.terms
+		$sep <a href="#$term.name">$term.name</a> 
+		#set $sep = '|'
+	#end for
+	</p>
+#end for
+
+<hr/>
 
 #for $t in $groups
   $showTerm(t)

@@ -3,6 +3,36 @@ type:
   comment: 'Examples: "StillImage", "MovingImage", "Sound", "PhysicalObject", "Event", "Text". For discussion see http://terms.tdwg.org/wiki/dwc:type'
   details: http://dublincore.org/usage/terms/history/#typeT-001
 
+modified:
+  definition: 'The most recent date-time on which the resource was changed. For Darwin Core, recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E).'
+  comment: 'Examples: "1963-03-08T14:07-0600" is 8 Mar 1963 2:07pm in the time zone six hours earlier than UTC, "2009-02-20T08:40Z" is 20 Feb 2009 8:40am UTC, "1809-02-12" is 12 Feb 1809, "1906-06" is Jun 1906, "1971" is just that year, "2007-03-01T13:00:00Z/2008-05-11T15:30:00Z" is the interval between 1 Mar 2007 1pm UTC and 11 May 2008 3:30pm UTC, "2007-11-13/15" is the interval between 13 Nov 2007 and 15 Nov 2007. For discussion see http://terms.tdwg.org/wiki/dwc:modified'
+  details: http://dublincore.org/usage/terms/history/#modified-003
+  
+language:
+  definition: 'A language of the resource. Recommended best practice is to use a controlled vocabulary such as RFC 4646 [RFC4646].'
+  comment: 'Examples: "en" for English, "es" for Spanish. For discussion see http://terms.tdwg.org/wiki/dwc:language'
+  details: http://dublincore.org/usage/terms/history/#languageT-001
+
+license:
+  definition: 'A legal document giving official permission to do something with the resource.'
+  comment: 'Examples: "http://creativecommons.org/publicdomain/zero/1.0/legalcode", "http://creativecommons.org/licenses/by/4.0/legalcode". For discussion see http://terms.tdwg.org/wiki/dwc:license'
+  details: http://dublincore.org/usage/terms/history/#license-002
+
+rightsHolder:
+  definition: 'A person or organization owning or managing rights over the resource.'
+  comment: 'Example: "The Regents of the University of California.". For discussion see http://terms.tdwg.org/wiki/dwc:rightsHolder'
+  details: http://dublincore.org/usage/terms/history/#rightsHolder-002
+
+accessRights:
+  definition: 'Information about who can access the resource or an indication of its security status. Access Rights may include information regarding access or restrictions based on privacy, security, or other policies.'
+  comment: 'Example: "not-for-profit use only". For discussion see http://terms.tdwg.org/wiki/dwc:accessRights'
+  details: http://dublincore.org/usage/terms/history/#accessRights-002
+
+bibliographicCitation:
+  definition: 'A bibliographic reference for the resource as a statement indicating how this record should be cited (attributed) when used. Recommended practice is to include sufficient bibliographic detail to identify the resource as unambiguously as possible.'
+  comment: 'Examples: "Ctenomys sociabilis (MVZ 165861)" for a specimen, "Oliver P. Pearson. 1985. Los tuco-tucos (genera Ctenomys) de los Parques Nacionales Lanin y Nahuel Huapi, Argentina Historia Natural, 5(37):337-343." for a Taxon. For discussion see http://terms.tdwg.org/wiki/dwc:bibliographicCitation'
+  details: http://dublincore.org/usage/terms/history/#bibliographicCitation-002
+
 references:
   definition: 'A related resource that is referenced, cited, or otherwise pointed to by the described resource.'
   comment: 'Examples: "http://mvzarctos.berkeley.edu/guid/MVZ:Mamm:165861"; "http://www.catalogueoflife.org/annual-checklist/show_species_details.php?record_id=6197868". For discussion see http://terms.tdwg.org/wiki/dwc:references'
