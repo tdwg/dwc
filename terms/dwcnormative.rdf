@@ -54,7 +54,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
     vs:term_status
 -->
     <!-- Versioned Mutable RDF goes here -->
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/acceptedNameUsage-2009-09-21">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/acceptedNameUsage">
         <rdfs:label xml:lang="en">Accepted Name Usage</rdfs:label>
         <rdfs:comment xml:lang="en">The full name, with authorship and date information if known, of the currently valid (zoological) or accepted (botanical) taxon.</rdfs:comment>
         <dcterms:description xml:lang="en">Example: "Tamias minimus" valid name for "Eutamias minimus"</dcterms:description>
@@ -68,7 +68,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/acceptedNameUsageID-2009-09-21">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/acceptedNameUsageID">
         <rdfs:label xml:lang="en">Accepted Name Usage ID</rdfs:label>
         <rdfs:comment xml:lang="en">An identifier for the name usage (documented meaning of the name according to a source) of the currently valid (zoological) or accepted (botanical) taxon.</rdfs:comment>
         <dcterms:description xml:lang="en">Example: "8fa58e08-08de-4ac1-b69c-1235340b7001"</dcterms:description>
@@ -192,7 +192,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/IPRStatements</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Sample"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/accordingTo-2009-01-21">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/accordingTo">
         <rdfs:label xml:lang="en">According To</rdfs:label>
         <rdfs:comment xml:lang="en">Abstract term to attribute information to a source.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
@@ -240,7 +240,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/MultimediaObjects</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/associatedMedia-2014-10-23">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/associatedMedia">
         <rdfs:label xml:lang="en">Associated Media</rdfs:label>
         <rdfs:comment xml:lang="en">A list (concatenated and separated) of identifiers (publication, global unique identifier, URI) of media associated with the Occurrence.</rdfs:comment>
         <dcterms:description xml:lang="en">The recommended best practice is to separate the values with a vertical bar (' | '). Examples: "http://arctos.database.museum/SpecimenImages/UAMObs/Mamm/2/P7291179.JPG", "http://204.140.246.24/Fish/Collection%20Pictures/10118-00.jpg | http://204.140.246.24/Fish/Collection%20Pictures/10118-00a.jpg".</dcterms:description>
@@ -270,7 +270,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Associations/UnitAssociation/AssociatedUnitSourceInstitutionCode + DataSets/DataSet/Units/Unit/Associations/UnitAssociation/AssociatedUnitSourceName + DataSets/DataSet/Units/Unit/Associations/UnitAssociation/AssociatedUnitID</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/associatedOccurrences-2014-10-23">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/associatedOccurrences">
         <rdfs:label xml:lang="en">Associated Occurrences</rdfs:label>
         <rdfs:comment xml:lang="en">A list (concatenated and separated) of identifiers of other Occurrence records and their associations to this Occurrence.</rdfs:comment>
         <dcterms:description xml:lang="en">The recommended best practice is to separate the values with a vertical bar (' | ').</dcterms:description>
@@ -285,7 +285,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Associations/UnitAssociation/AssociatedUnitSourceInstitutionCode + DataSets/DataSet/Units/Unit/Associations/UnitAssociation/AssociatedUnitSourceName + DataSets/DataSet/Units/Unit/Associations/UnitAssociation/AssociatedUnitID</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Organism"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/associatedOrganisms-2014-10-23">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/associatedOrganisms">
         <rdfs:label xml:lang="en">Associated Organisms</rdfs:label>
         <rdfs:comment xml:lang="en">A list (concatenated and separated) of identifiers of other Organisms and their associations to this Organism.</rdfs:comment>
         <dcterms:description xml:lang="en">The recommended best practice is to separate the values with a vertical bar (' | '). Examples: "sibling of MXA-232", "mother of MXA-231 | mother of MXA-232"</dcterms:description>
@@ -313,7 +313,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/UnitReferences</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/associatedReferences-2014-10-23">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/associatedReferences">
         <rdfs:label xml:lang="en">Associated References</rdfs:label>
         <rdfs:comment xml:lang="en">A list (concatenated and separated) of identifiers (publication, bibliographic reference, global unique identifier, URI) of literature associated with the Occurrence.</rdfs:comment>
         <dcterms:description xml:lang="en">The recommended best practice is to separate the values with a vertical bar (' | '). Examples: "http://www.sciencemag.org/cgi/content/abstract/322/5899/261", "Christopher J. Conroy, Jennifer L. Neuwald. 2008. Phylogeographic study of the California vole, Microtus californicus Journal of Mammalogy, 89(3):755-767.", "Steven R. Hoofer and Ronald A. Van Den Bussche. 2001. Phylogenetic Relationships of Plecotine Bats and Allies Based on Mitochondrial Ribosomal Sequences. Journal of Mammalogy 82(1):131-137. | Walker, Faith M., Jeffrey T. Foster, Kevin P. Drees, Carol L. Chambers. 2014. Spotted bat (Euderma maculatum) microsatellite discovery using illumina sequencing. Conservation Genetics Resources.".</dcterms:description>
@@ -343,7 +343,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Sequences/Sequence/ID-in-Database + constant</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/associatedSequences-2014-10-23">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/associatedSequences">
         <rdfs:label xml:lang="en">Associated Sequences</rdfs:label>
         <rdfs:comment xml:lang="en">A list (concatenated and separated) of identifiers (publication, global unique identifier, URI) of genetic sequence information associated with the Occurrence.</rdfs:comment>
         <dcterms:description xml:lang="en">The recommended best practice is to separate the values with a vertical bar (' | '). Examples: "http://www.ncbi.nlm.nih.gov/nuccore/U34853.1", "http://www.ncbi.nlm.nih.gov/nuccore/GU328060 | http://www.ncbi.nlm.nih.gov/nuccore/AF326093".</dcterms:description>
@@ -372,7 +372,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/Synecology/AssociatedTaxa</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/associatedTaxa-2014-10-23">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/associatedTaxa">
         <rdfs:label xml:lang="en">Associated Taxa</rdfs:label>
         <rdfs:comment xml:lang="en">A list (concatenated and separated) of identifiers or names of taxa and their associations with the Occurrence.</rdfs:comment>
         <dcterms:description xml:lang="en">The recommended best practice is to separate the values with a vertical bar (' | '), and to separate the relationship from the taxon with a colon (':'). Examples: "host: Quercus alba", "parasitoid of:Cyclocephala signaticollis | predator of Apis mellifera".</dcterms:description>
@@ -515,7 +515,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/RecordBasis</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="all"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/basisOfRecord-2014-10-23">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/basisOfRecord">
         <rdfs:label xml:lang="en">Basis of Record</rdfs:label>
         <rdfs:comment xml:lang="en">The specific nature of the data record.</rdfs:comment>
         <dcterms:description xml:lang="en">Recommended best practice is to use a controlled vocabulary such as the list of Darwin Core classes. Examples: "PreservedSpecimen", "FossilSpecimen", "LivingSpecimen", "HumanObservation", "MachineObservation"</dcterms:description>
@@ -541,7 +541,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="paleo"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/bed-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/bed">
         <rdfs:label xml:lang="en">Bed</rdfs:label>
         <rdfs:comment xml:lang="en">The full name of the lithostratigraphic bed from which the cataloged item was collected.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
@@ -554,7 +554,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/GeologicalContext"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/behavior-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/behavior">
         <rdfs:label xml:lang="en">Behavior</rdfs:label>
         <rdfs:comment xml:lang="en">A description of the behavior shown by the subject at the time the Occurrence was recorded.  Recommended best practice is to use a controlled vocabulary.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "roosting", "foraging", "running"</dcterms:description>
@@ -626,7 +626,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:status>superseded</dwcattributes:status>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/UnitID</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/catalogNumber-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/catalogNumber">
         <rdfs:label xml:lang="en">Catalog Number</rdfs:label>
         <rdfs:comment xml:lang="en">An identifier (preferably unique) for the record within the data set or collection.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "2008.1334", "145732a", "145732"</dcterms:description>
@@ -748,7 +748,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/HigherTaxa/HigherTaxon/HigherTaxonName with HigherTaxa/HigherTaxon/HigherTaxonRank = classis</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/class-2009-08-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/class">
         <rdfs:label xml:lang="en">Class</rdfs:label>
         <rdfs:comment xml:lang="en">The full scientific name of the class in which the taxon is classified.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "Mammalia", "Hepaticopsida"</dcterms:description>
@@ -836,7 +836,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/SourceID</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="all"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/collectionCode-2009-09-11">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/collectionCode">
         <rdfs:label xml:lang="en">Collection Code</rdfs:label>
         <rdfs:comment xml:lang="en">The name, acronym, coden, or initialism identifying the collection or data set from which the record was derived.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "Mammals", "Hildebrandt", "eBird"</dcterms:description>
@@ -864,7 +864,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/SourceID</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="all"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/collectionID-2009-09-11">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/collectionID">
         <rdfs:label xml:lang="en">Collection ID</rdfs:label>
         <rdfs:comment xml:lang="en">An identifier for the collection or dataset from which the record was derived.</rdfs:comment>
         <dcterms:description xml:lang="en">For physical specimens, the recommended best practice is to use an identifier from a collections registry such as the Global Registry of Biodiversity Repositories (http://grbio.org/). Examples: "http://biocol.org/urn:lsid:biocol.org:col:1001", "http://grbio.org/cool/p5fp-c036".</dcterms:description>
@@ -959,7 +959,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:status>superseded</dwcattributes:status>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/NamedAreas/NamedArea/AreaName with NamedAreas/NamedArea/AreaClass= Continent</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/continent-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/continent">
         <rdfs:label xml:lang="en">Continent</rdfs:label>
         <rdfs:comment xml:lang="en">The name of the continent in which the Location occurs. Recommended best practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "Africa", "Antarctica", "Asia", "Europe", "North America", "Oceania", "South America"</dcterms:description>
@@ -1007,7 +1007,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:status>superseded</dwcattributes:status>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesLatLong/ISOAccuracy or DataSets/DataSet/Units/Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesLatLong/AccuracyStatement</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/coordinatePrecision-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/coordinatePrecision">
         <rdfs:label xml:lang="en">Coordinate Precision</rdfs:label>
         <rdfs:comment xml:lang="en">A decimal representation of the precision of the coordinates given in the decimalLatitude and decimalLongitude.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "0.00001" (normal GPS limit for decimal degrees), "0.000278" (nearest second), "0.01667" (nearest minute), "1.0" (nearest degree)</dcterms:description>
@@ -1045,7 +1045,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:status>superseded</dwcattributes:status>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesLatLon/CoordinateErrorDistanceInMeters</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/coordinateUncertaintyInMeters-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/coordinateUncertaintyInMeters">
         <rdfs:label xml:lang="en">Coordinate Uncertainty In Meters</rdfs:label>
         <rdfs:comment xml:lang="en">The horizontal distance (in meters) from the given decimalLatitude and decimalLongitude describing the smallest circle containing the whole of the Location. Leave the value empty if the uncertainty is unknown, cannot be estimated, or is not applicable (because there are no coordinates). Zero is not a valid value for this term.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "30" (reasonable lower limit of a GPS reading under good conditions if the actual precision was not recorded at the time), "71" (uncertainty for a UTM coordinate having 100 meter precision and a known spatial reference system).</dcterms:description>
@@ -1094,7 +1094,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:status>superseded</dwcattributes:status>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/Country/Name</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/country-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/country">
         <rdfs:label xml:lang="en">Country</rdfs:label>
         <rdfs:comment xml:lang="en">The name of the country or major administrative unit in which the Location occurs. Recommended best practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "Denmark", "Colombia", "España"</dcterms:description>
@@ -1108,7 +1108,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/Country/Name</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/countryCode-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/countryCode">
         <rdfs:label xml:lang="en">Country Code</rdfs:label>
         <rdfs:comment xml:lang="en">The standard code for the country in which the Location occurs. Recommended best practice is to use ISO 3166-1-alpha-2 country codes.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "AR" for Argentina, "SV" for El Salvador</dcterms:description>
@@ -1156,7 +1156,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:status>superseded</dwcattributes:status>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/NamedAreas/NamedArea/AreaName with NamedAreas/NamedArea/AreaClass= County</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/county-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/county">
         <rdfs:label xml:lang="en">County</rdfs:label>
         <rdfs:comment xml:lang="en">The full, unabbreviated name of the next smaller administrative region than stateProvince (county, shire, department, etc.) in which the Location occurs.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "Missoula", "Los Lagos", "Mataró"</dcterms:description>
@@ -1170,7 +1170,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/NamedAreas/NamedArea/AreaName with NamedAreas/NamedArea/AreaClass= County</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/dataGeneralizations-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/dataGeneralizations">
         <rdfs:label xml:lang="en">Data Generalizations</rdfs:label>
         <rdfs:comment xml:lang="en">Actions taken to make the shared data less specific or complete than in its original form. Suggests that alternative data of higher quality may be available on request.</rdfs:comment>
         <dcterms:description xml:lang="en">Example: "Coordinates generalized from original GPS coordinates to the nearest half degree grid cell"</dcterms:description>
@@ -1209,7 +1209,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/DataSetGUID</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Dataset"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/datasetID-2009-09-11">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/datasetID">
         <rdfs:label xml:lang="en">Dataset ID</rdfs:label>
         <rdfs:comment xml:lang="en">An identifier for the set of data. May be a global unique identifier or an identifier specific to a collection or institution.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
@@ -1223,7 +1223,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/DataSetGUID</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="all"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/datasetName-2009-09-11">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/datasetName">
         <rdfs:label xml:lang="en">Dataset Name</rdfs:label>
         <rdfs:comment xml:lang="en">The name identifying the data set from which the record was derived.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "Grinnell Resurvey Mammals", "Lacey Ctenomys Recaptures"</dcterms:description>
@@ -1265,7 +1265,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Identifications/Identification/Date/DateText</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Identification"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/dateIdentified-2009-08-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/dateIdentified">
         <rdfs:label xml:lang="en">Date Identified</rdfs:label>
         <rdfs:comment xml:lang="en">The date on which the subject was identified as representing the Taxon. Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E).</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "1963-03-08T14:07-0600" is 8 Mar 1963 2:07pm in the time zone six hours earlier than UTC, "2009-02-20T08:40Z" is 20 Feb 2009 8:40am UTC, "1809-02-12" is 12 Feb 1809, "1906-06" is Jun 1906, "1971" is just that year, "2007-03-01T13:00:00Z/2008-05-11T15:30:00Z" is the interval between 1 Mar 2007 1pm UTC and 11 May 2008 3:30pm UTC, "2007-11-13/15" is the interval between 13 Nov 2007 and 15 Nov 2007.</dcterms:description>
@@ -1315,7 +1315,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:status>superseded</dwcattributes:status>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/DateLastEdited</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/day-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/day">
         <rdfs:label xml:lang="en">Day</rdfs:label>
         <rdfs:comment xml:lang="en">The integer day of the month on which the Event occurred.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "9", "28"</dcterms:description>
@@ -1411,7 +1411,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:status>superseded</dwcattributes:status>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesLatLon/LatitudeDecimal</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/decimalLatitude-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/decimalLatitude">
         <rdfs:label xml:lang="en">Decimal Latitude</rdfs:label>
         <rdfs:comment xml:lang="en">The geographic latitude (in decimal degrees, using the spatial reference system given in geodeticDatum) of the geographic center of a Location. Positive values are north of the Equator, negative values are south of it. Legal values lie between -90 and 90, inclusive.</rdfs:comment>
         <dcterms:description xml:lang="en">Example: "-41.0983423"</dcterms:description>
@@ -1449,7 +1449,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:status>superseded</dwcattributes:status>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesLatLon/LongitudeDecimal</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/decimalLongitude-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/decimalLongitude">
         <rdfs:label xml:lang="en">Decimal Longitude</rdfs:label>
         <rdfs:comment xml:lang="en">The geographic longitude (in decimal degrees, using the spatial reference system given in geodeticDatum) of the geographic center of a Location. Positive values are east of the Greenwich Meridian, negative values are west of it. Legal values lie between -180 and 180, inclusive.</rdfs:comment>
         <dcterms:description xml:lang="en">Example: "-121.1761111"</dcterms:description>
@@ -1485,7 +1485,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:status>superseded</dwcattributes:status>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/SpecimenUnit/Disposition</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/disposition-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/disposition">
         <rdfs:label xml:lang="en">Disposition</rdfs:label>
         <rdfs:comment xml:lang="en">The current state of a specimen with respect to the collection identified in collectionCode or collectionID. Recommended best practice is to use a controlled vocabulary.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "in collection", "missing", "voucher elsewhere", "duplicates elsewhere"</dcterms:description>
@@ -1525,7 +1525,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="all"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/dynamicProperties-2014-10-23">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/dynamicProperties">
         <rdfs:label xml:lang="en">Dynamic Properties</rdfs:label>
         <rdfs:comment xml:lang="en">A list of additional measurements, facts, characteristics, or assertions about the record. Meant to provide a mechanism for structured content.</rdfs:comment>
         <dcterms:description xml:lang="en">The recommended best practice is to use a key:value encoding schema such as JSON. Examples: "{"heightInMeters":1.5}", "{"tragusLengthInMeters":0.014, "weightInGrams":120}", "{"natureOfID":"expert identification", "identificationEvidence":"cytochrome B sequence"}", "{"relativeHumidity":28, "airTemperatureInCelcius":22, "sampleSizeInKilograms":10}", "{"aspectHeading":277, "slopeInDegrees":6}", "{"iucnStatus":"vulnerable", "taxonDistribution":"Neuquén, Argentina"}".</dcterms:description>
@@ -1551,7 +1551,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="paleo"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/earliestAgeOrLowestStage-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/earliestAgeOrLowestStage">
         <rdfs:label xml:lang="en">Earliest Age Or Lowest Stage</rdfs:label>
         <rdfs:comment xml:lang="en">The full name of the earliest possible geochronologic age or lowest chronostratigraphic stage attributable to the stratigraphic horizon from which the cataloged item was collected.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "Atlantic", "Boreal", "Skullrockian"</dcterms:description>
@@ -1605,7 +1605,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="paleo"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/earliestEonOrLowestEonothem-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/earliestEonOrLowestEonothem">
         <rdfs:label xml:lang="en">Earliest Eon Or Lowest Eonothem</rdfs:label>
         <rdfs:comment xml:lang="en">The full name of the earliest possible geochronologic eon or lowest chrono-stratigraphic eonothem or the informal name ("Precambrian") attributable to the stratigraphic horizon from which the cataloged item was collected.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "Phanerozoic", "Proterozoic"</dcterms:description>
@@ -1630,7 +1630,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="paleo"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/earliestEpochOrLowestSeries-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/earliestEpochOrLowestSeries">
         <rdfs:label xml:lang="en">Earliest Epoch Or Lowest Series</rdfs:label>
         <rdfs:comment xml:lang="en">The full name of the earliest possible geochronologic epoch or lowest chronostratigraphic series attributable to the stratigraphic horizon from which the cataloged item was collected.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "Holocene", "Pleistocene", "Ibexian Series"</dcterms:description>
@@ -1655,7 +1655,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="paleo"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/earliestEraOrLowestErathem-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/earliestEraOrLowestErathem">
         <rdfs:label xml:lang="en">Earliest Era Or Lowest Erathem</rdfs:label>
         <rdfs:comment xml:lang="en">The full name of the earliest possible geochronologic era or lowest chronostratigraphic erathem attributable to the stratigraphic horizon from which the cataloged item was collected.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "Cenozoic", "Mesozoic"</dcterms:description>
@@ -1680,7 +1680,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="paleo"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/earliestPeriodOrLowestSystem-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/earliestPeriodOrLowestSystem">
         <rdfs:label xml:lang="en">Earliest Period Or Lowest System</rdfs:label>
         <rdfs:comment xml:lang="en">The full name of the earliest possible geochronologic period or lowest chronostratigraphic system attributable to the stratigraphic horizon from which the cataloged item was collected.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "Neogene", "Tertiary", "Quaternary"</dcterms:description>
@@ -1705,7 +1705,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:status>superseded</dwcattributes:status>
         <dwcattributes:abcdEquivalence>accessible from DataSets/DataSet/Units/Unit/Gathering/ISODateTimeEnd</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/endDayOfYear-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/endDayOfYear">
         <rdfs:label xml:lang="en">End Day Of Year</rdfs:label>
         <rdfs:comment xml:lang="en">The latest ordinal day of the year on which the Event occurred (1 for January 1, 365 for December 31, except in a leap year, in which case it is 366).</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "1" (=1 Jan), "366" (=31 Dec), "365" (=30 Dec in a leap year, 31 Dec in a non-leap year)</dcterms:description>
@@ -1799,7 +1799,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:status>superseded</dwcattributes:status>
         <dwcattributes:abcdEquivalence>accessible from DataSets/DataSet/Units/Unit/Gathering/ISODateTimeEnd</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/establishmentMeans-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/establishmentMeans">
         <rdfs:label xml:lang="en">Establishment Means</rdfs:label>
         <rdfs:comment xml:lang="en">The process by which the biological individual(s) represented in the Occurrence became established at the location. Recommended best practice is to use a controlled vocabulary.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "native", "introduced", "naturalised", "invasive", "managed"</dcterms:description>
@@ -1825,7 +1825,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-26_15"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/Event-2014-10-23">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/Event">
         <rdfs:label xml:lang="en">Event</rdfs:label>
         <rdfs:comment xml:lang="en">An action that occurs at some location during some time.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: A specimen collection process. A machine observation.</dcterms:description>
@@ -1970,7 +1970,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts/SiteMeasurementOrFact/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts/SiteMeasurementOrFact/MeasurementOrFactAtomised/UpperValue or DataSets/DataSet/Units/Unit/Gathering/Altitude/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/Gathering/Altitude/MeasurementOrFactAtomised/UpperValue or DataSets/DataSet/Units/Unit/Gathering/Depth/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/Gathering/Depth/MeasurementOrFactAtomised/UpperValue or DataSets/DataSet/Units/Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFactAtomised/UpperValue or DataSets/DataSet/Units/Unit/Gathering/Height/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/Gathering/Height/MeasurementOrFactAtomised/UpperValue</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/EventAttribute"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/eventDate-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/eventDate">
         <rdfs:label xml:lang="en">Event Date</rdfs:label>
         <rdfs:comment xml:lang="en">The date-time or interval during which an Event occurred. For occurrences, this is the date-time when the event was recorded. Not suitable for a time in a geological context. Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E).</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "1963-03-08T14:07-0600" is 8 Mar 1963 2:07pm in the time zone six hours earlier than UTC, "2009-02-20T08:40Z" is 20 Feb 2009 8:40am UTC, "1809-02-12" is 12 Feb 1809, "1906-06" is Jun 1906, "1971" is just that year, "2007-03-01T13:00:00Z/2008-05-11T15:30:00Z" is the interval between 1 Mar 2007 1pm UTC and 11 May 2008 3:30pm UTC, "2007-11-13/15" is the interval between 13 Nov 2007 and 15 Nov 2007.</dcterms:description>
@@ -1986,7 +1986,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/ISODateTimeBegin</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Event"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/eventID-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/eventID">
         <rdfs:label xml:lang="en">Event ID</rdfs:label>
         <rdfs:comment xml:lang="en">An identifier for the set of information associated with an Event (something that occurs at a place and time). May be a global unique identifier or an identifier specific to the data set.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
@@ -2126,7 +2126,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts/SiteMeasurementOrFact/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts/SiteMeasurementOrFact/MeasurementOrFactAtomised/UpperValue or DataSets/DataSet/Units/Unit/Gathering/Altitude/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/Gathering/Altitude/MeasurementOrFactAtomised/UpperValue or DataSets/DataSet/Units/Unit/Gathering/Depth/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/Gathering/Depth/MeasurementOrFactAtomised/UpperValue or DataSets/DataSet/Units/Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFactAtomised/UpperValue or DataSets/DataSet/Units/Unit/Gathering/Height/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/Gathering/Height/MeasurementOrFactAtomised/UpperValue</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/EventMeasurement"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/eventRemarks-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/eventRemarks">
         <rdfs:label xml:lang="en">Event Remarks</rdfs:label>
         <rdfs:comment xml:lang="en">Comments or notes about the Event.</rdfs:comment>
         <dcterms:description xml:lang="en">Example: "after the recent rains the river is nearly at flood stage"</dcterms:description>
@@ -2139,7 +2139,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/Notes</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Event"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/eventTime-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/eventTime">
         <rdfs:label xml:lang="en">Event Time</rdfs:label>
         <rdfs:comment xml:lang="en">The time or interval during which an Event occurred. Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E).</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "14:07-0600" is 2:07pm in the time zone six hours earlier than UTC, "08:40:21Z" is 8:40:21am UTC, "13:00:00Z/15:30:00Z" is the interval between 1pm UTC and 3:30pm UTC.</dcterms:description>
@@ -2203,7 +2203,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/HigherTaxa/HigherTaxon/HigherTaxonName with HigherTaxa/HigherTaxon/HigherTaxonRank = familia</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/family-2009-08-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/family">
         <rdfs:label xml:lang="en">Family</rdfs:label>
         <rdfs:comment xml:lang="en">The full scientific name of the family in which the taxon is classified.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "Felidae", "Monocleaceae"</dcterms:description>
@@ -2240,7 +2240,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:status>superseded</dwcattributes:status>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/FieldNotes</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/fieldNotes-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/fieldNotes">
         <rdfs:label xml:lang="en">Field Notes</rdfs:label>
         <rdfs:comment xml:lang="en">One of a) an indicator of the existence of, b) a reference to (publication, URI), or c) the text of notes taken in the field about the Event.</rdfs:comment>
         <dcterms:description xml:lang="en">Example: "notes available in Grinnell-Miller Library"</dcterms:description>
@@ -2289,7 +2289,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:status>superseded</dwcattributes:status>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/Code</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/fieldNumber-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/fieldNumber">
         <rdfs:label xml:lang="en">Field Number</rdfs:label>
         <rdfs:comment xml:lang="en">An identifier given to the event in the field. Often serves as a link between field notes and the Event.</rdfs:comment>
         <dcterms:description xml:lang="en">Example: "RV Sol 87-03-08"</dcterms:description>
@@ -2314,7 +2314,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:status>superseded</dwcattributes:status>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/FootprintSpatialFit (ABCD v2.06b)</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/footprintSpatialFit-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/footprintSpatialFit">
         <rdfs:label xml:lang="en">Footprint Spatial Fit</rdfs:label>
         <rdfs:comment xml:lang="en">The ratio of the area of the footprint (footprintWKT) to the area of the true (original, or most specific) spatial representation of the Location. Legal values are 0, greater than or equal to 1, or undefined. A value of 1 is an exact match or 100% overlap. A value of 0 should be used if the given footprint does not completely contain the original representation. The footprintSpatialFit is undefined (and should be left blank) if the original representation is a point and the given georeference is not that same point. If both the original and the given georeference are the same point, the footprintSpatialFit is 1.</rdfs:comment>
         <dcterms:description xml:lang="en">Detailed explanations with graphical examples can be found in the "Guide to Best Practices for Georeferencing", Chapman and Wieczorek, eds. 2006.</dcterms:description>
@@ -2328,7 +2328,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/FootprintSpatialFit (ABCD v2.06b)</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/footprintSRS-2009-07-06">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/footprintSRS">
         <rdfs:label xml:lang="en">Footprint SRS</rdfs:label>
         <rdfs:comment xml:lang="en">A Well-Known Text (WKT) representation of the Spatial Reference System (SRS) for the footprintWKT of the Location. Do not use this term to describe the SRS of the decimalLatitude and decimalLongitude, even if it is the same as for the footprintWKT - use the geodeticDatum instead.</rdfs:comment>
         <dcterms:description xml:lang="en">Example: The WKT for the standard WGS84 SRS (EPSG:4326) is "GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137,298.257223563]],PRIMEM["Greenwich",0],UNIT["Degree",0.0174532925199433]]" without the enclosing quotes.</dcterms:description>
@@ -2352,7 +2352,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:status>superseded</dwcattributes:status>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/FootprintWKT (ABCD v2.06b)</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/footprintWKT-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/footprintWKT">
         <rdfs:label xml:lang="en">Footprint WKT</rdfs:label>
         <rdfs:comment xml:lang="en">A Well-Known Text (WKT) representation of the shape (footprint, geometry) that defines the Location. A Location may have both a point-radius representation (see decimalLatitude) and a footprint representation, and they may differ from each other.</rdfs:comment>
         <dcterms:description xml:lang="en">Example: the one-degree bounding box with opposite corners at (longitude=10, latitude=20) and (longitude=11, latitude=21) would be expressed in well-known text as POLYGON ((10 20, 11 20, 11 21, 10 21, 10 20))</dcterms:description>
@@ -2377,7 +2377,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="paleo"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/formation-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/formation">
         <rdfs:label xml:lang="en">Formation</rdfs:label>
         <rdfs:comment xml:lang="en">The full name of the lithostratigraphic formation from which the cataloged item was collected.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "Notch Peak Fromation", "House Limestone", "Fillmore Formation"</dcterms:description>
@@ -2416,7 +2416,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-26_15"/>
         <dwcattributes:abcdEquivalence>RecordBasisEnum/FossileSpecimen</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/FossilSpecimen-2014-10-23">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/FossilSpecimen">
         <rdfs:label xml:lang="en">Fossil Specimen</rdfs:label>
         <rdfs:comment xml:lang="en">A preserved specimen that is a fossil.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
@@ -2514,7 +2514,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>{DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Bacterial/GenusOrMonomial or DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Botanical/GenusOrMonomial or DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Viral/GenusOrMonomial or DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Zoological/GenusOrMonomial}</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/genus-2009-08-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/genus">
         <rdfs:label xml:lang="en">Genus</rdfs:label>
         <rdfs:comment xml:lang="en">The full scientific name of the genus in which the taxon is classified.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "Puma", "Monoclea"</dcterms:description>
@@ -2540,7 +2540,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:status>superseded</dwcattributes:status>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesLatLon/SpatialDatum</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/geodeticDatum-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/geodeticDatum">
         <rdfs:label xml:lang="en">Geodetic Datum</rdfs:label>
         <rdfs:comment xml:lang="en">The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which the geographic coordinates given in decimalLatitude and decimalLongitude as based. Recommended best practice is use the EPSG code as a controlled vocabulary to provide an SRS, if known. Otherwise use a controlled vocabulary for the name or code of the geodetic datum, if known. Otherwise use a controlled vocabulary for the name or code of the ellipsoid, if known. If none of these is known, use the value "unknown".</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "EPSG:4326", "WGS84", "NAD27", "Campo Inchauspe", "European 1950", "Clarke 1866"</dcterms:description>
@@ -2566,7 +2566,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-26_15"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/Stratigraphy</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/GeologicalContext-2014-10-23">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/GeologicalContext">
         <rdfs:label xml:lang="en">Geological Context</rdfs:label>
         <rdfs:comment xml:lang="en">Geological information, such as stratigraphy, that qualifies a region or place.</rdfs:comment>
         <dcterms:description xml:lang="en">Example: A lithostratigraphic layer.</dcterms:description>
@@ -2580,7 +2580,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-26_15"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/Stratigraphy</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/geologicalContextID-2009-07-06">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/geologicalContextID">
         <rdfs:label xml:lang="en">Geological Context ID</rdfs:label>
         <rdfs:comment xml:lang="en">An identifier for the set of information associated with a GeologicalContext (the location within a geological context, such as stratigraphy). May be a global unique identifier or an identifier specific to the data set.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
@@ -2608,7 +2608,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/georeferencedBy-2014-10-23">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/georeferencedBy">
         <rdfs:label xml:lang="en">Georeferenced By</rdfs:label>
         <rdfs:comment xml:lang="en">A list (concatenated and separated) of names of people, groups, or organizations who determined the georeference (spatial representation) for the Location.</rdfs:comment>
         <dcterms:description xml:lang="en">The recommended best practice is to separate the values with a vertical bar (' | '). Examples: "Brad Millen (ROM)", "Kristina Yamamoto (MVZ) | Janet Fang (MVZ)".</dcterms:description>
@@ -2624,7 +2624,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/georeferencedDate-2011-10-16">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/georeferencedDate">
         <rdfs:label xml:lang="en">Georeferenced Date</rdfs:label>
         <rdfs:comment xml:lang="en">The date on which the Location was georeferenced. Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E).</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "1963-03-08T14:07-0600" is 8 Mar 1963 2:07pm in the time zone six hours earlier than UTC, "2009-02-20T08:40Z" is 20 Feb 2009 8:40am UTC, "1809-02-12" is 12 Feb 1809, "1906-06" is Jun 1906, "1971" is just that year, "2007-03-01T13:00:00Z/2008-05-11T15:30:00Z" is the interval between 1 Mar 2007 1pm UTC and 11 May 2008 3:30pm UTC, "2007-11-13/15" is the interval between 13 Nov 2007 and 15 Nov 2007.</dcterms:description>
@@ -2651,7 +2651,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:status>superseded</dwcattributes:status>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinateMethod</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/georeferenceProtocol-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/georeferenceProtocol">
         <rdfs:label xml:lang="en">Georeference Protocol</rdfs:label>
         <rdfs:comment xml:lang="en">A description or reference to the methods used to determine the spatial footprint, coordinates, and uncertainties.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "Guide to Best Practices for Georeferencing. (Chapman and Wieczorek, eds. 2006). Global Biodiversity Information Facility.", "MaNIS/HerpNet/ORNIS Georeferencing Guidelines", "Georeferencing Quick Reference Guide"</dcterms:description>
@@ -2677,7 +2677,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:status>superseded</dwcattributes:status>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/SiteCoordinateSets/SiteCoordinates/GeoreferenceRemarks</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/georeferenceRemarks-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/georeferenceRemarks">
         <rdfs:label xml:lang="en">Georeference Remarks</rdfs:label>
         <rdfs:comment xml:lang="en">Notes or comments about the spatial description determination, explaining assumptions made in addition or opposition to the those formalized in the method referred to in georeferenceProtocol.</rdfs:comment>
         <dcterms:description xml:lang="en">Example: "assumed distance by road (Hwy. 101)"</dcterms:description>
@@ -2717,7 +2717,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/SiteCoordinateSets/SiteCoordinates/GeoreferenceSources</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/georeferenceSources-2014-10-23">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/georeferenceSources">
         <rdfs:label xml:lang="en">Georeference Sources</rdfs:label>
         <rdfs:comment xml:lang="en">A list (concatenated and separated) of maps, gazetteers, or other resources used to georeference the Location, described specifically enough to allow anyone in the future to use the same resources.</rdfs:comment>
         <dcterms:description xml:lang="en">The recommended best practice is to separate the values with a vertical bar (' | '). Examples: "GeoLocate", "USGS 1:24000 Florence Montana Quad | Terrametrics 2008 on Google Earth".</dcterms:description>
@@ -2743,7 +2743,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:status>superseded</dwcattributes:status>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/SiteCoordinateSets/SiteCoordinates/GeoreferenceVerificationStatus</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/georeferenceVerificationStatus-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/georeferenceVerificationStatus">
         <rdfs:label xml:lang="en">Georeference Verification Status</rdfs:label>
         <rdfs:comment xml:lang="en">A categorical description of the extent to which the georeference has been verified to represent the best possible spatial description. Recommended best practice is to use a controlled vocabulary.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "requires verification", "verified by collector", "verified by curator".</dcterms:description>
@@ -2801,7 +2801,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="paleo"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/group-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/group">
         <rdfs:label xml:lang="en">Group</rdfs:label>
         <rdfs:comment xml:lang="en">The full name of the lithostratigraphic group from which the cataloged item was collected.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
@@ -2814,7 +2814,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/GeologicalContext"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/habitat-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/habitat">
         <rdfs:label xml:lang="en">Habitat</rdfs:label>
         <rdfs:comment xml:lang="en">A category or description of the habitat in which the Event occurred.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "oak savanna", "pre-cordilleran steppe"</dcterms:description>
@@ -2842,7 +2842,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/higherClassification-2014-10-23">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/higherClassification">
         <rdfs:label xml:lang="en">Higher Classification</rdfs:label>
         <rdfs:comment xml:lang="en">A list (concatenated and separated) of taxa names terminating at the rank immediately superior to the taxon referenced in the taxon record.</rdfs:comment>
         <dcterms:description xml:lang="en">The recommended best practice is to separate the values with a vertical bar (' | '), with terms in order from the highest taxonomic rank to the lowest. Examples: "Animalia", "Animalia | Chordata | Vertebrata | Mammalia | Theria | Eutheria | Rodentia | Hystricognatha | Hystricognathi | Ctenomyidae | Ctenomyini | Ctenomys".</dcterms:description>
@@ -2895,7 +2895,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>{DataSets/DataSet/Units/Unit/Gathering/LocalityText or DataSets/DataSet/Units/Unit/Gathering/NamedAreas/NamedArea/AreaName}</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/higherGeography-2014-10-23">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/higherGeography">
         <rdfs:label xml:lang="en">Higher Geography</rdfs:label>
         <rdfs:comment xml:lang="en">A list (concatenated and separated) of geographic names less specific than the information captured in the locality term.</rdfs:comment>
         <dcterms:description xml:lang="en">The recommended best practice is to separate the values with a vertical bar (' | '), with terms in order from least specific to most specific. Examples: "North Atlantic Ocean", "South America | Argentina | Patagonia | Parque Nacional Nahuel Huapi | Neuquén | Los Lagos" with accompanying values "South America" in Continent, "Argentina" in Country, "Neuquén" in StateProvince, and "Los Lagos" in County.</dcterms:description>
@@ -2910,7 +2910,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>{DataSets/DataSet/Units/Unit/Gathering/LocalityText or DataSets/DataSet/Units/Unit/Gathering/NamedAreas/NamedArea/AreaName}</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/higherGeographyID-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/higherGeographyID">
         <rdfs:label xml:lang="en">Higher Geography ID</rdfs:label>
         <rdfs:comment xml:lang="en">An identifier for the geographic region within which the Location occurred. Recommended best practice is to use an persistent identifier from a controlled vocabulary such as the Getty Thesaurus of Geographic Names.</rdfs:comment>
         <dcterms:description xml:lang="en">Example: "TGN: 1002002" for Prov. Tierra del Fuego, Argentina</dcterms:description>
@@ -3025,7 +3025,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="paleo"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/highestBiostratigraphicZone-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/highestBiostratigraphicZone">
         <rdfs:label xml:lang="en">Highest Biostratigraphic Zone</rdfs:label>
         <rdfs:comment xml:lang="en">The full name of the highest possible geological biostratigraphic zone of the stratigraphic horizon from which the cataloged item was collected.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
@@ -3074,7 +3074,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-26_15"/>
         <dwcattributes:abcdEquivalence>RecordBasisEnum/HumanObservation</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/HumanObservation-2014-10-23">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/HumanObservation">
         <rdfs:label xml:lang="en">Human Observation</rdfs:label>
         <rdfs:comment xml:lang="en">An output of a human observation process.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
@@ -3099,7 +3099,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-26_15"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Identifications/Identification</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/Identification-2014-10-23">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/Identification">
         <rdfs:label xml:lang="en">Identification</rdfs:label>
         <rdfs:comment xml:lang="en">A taxonomic determination (e.g., the assignment to a taxon).</rdfs:comment>
         <dcterms:description xml:lang="en">Example: A subspecies determination of an organism.</dcterms:description>
@@ -3126,7 +3126,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Identification"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/identificationID-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/identificationID">
         <rdfs:label xml:lang="en">Identification ID</rdfs:label>
         <rdfs:comment xml:lang="en">An identifier for the Identification (the body of information associated with the assignment of a scientific name). May be a global unique identifier or an identifier specific to the data set.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
@@ -3162,7 +3162,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:status>superseded</dwcattributes:status>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/IdentificationQualifier</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/identificationQualifier-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/identificationQualifier">
         <rdfs:label xml:lang="en">Identification Qualifier</rdfs:label>
         <rdfs:comment xml:lang="en">A brief phrase or a standard term ("cf.", "aff.") to express the determiner's doubts about the Identification.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: 1) For the determination "Quercus aff. agrifolia var. oxyadenia", identificationQualifier would be "aff. agrifolia var. oxyadenia" with accompanying values "Quercus" in genus, "agrifolia" in specificEpithet, "oxyadenia" in infraspecificEpithet, and "var." in rank. 2) For the determination "Quercus agrifolia cf. var. oxyadenia", identificationQualifier would be "cf. var. oxyadenia " with accompanying values "Quercus" in genus, "agrifolia" in specificEpithet, "oxyadenia" in infraspecificEpithet, and "var." in rank.</dcterms:description>
@@ -3190,7 +3190,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Identifications/Identification/References</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Identification"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/identificationReferences-2014-10-23">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/identificationReferences">
         <rdfs:label xml:lang="en">Identification References</rdfs:label>
         <rdfs:comment xml:lang="en">A list (concatenated and separated) of references (publication, global unique identifier, URI) used in the Identification.</rdfs:comment>
         <dcterms:description xml:lang="en">The recommended best practice is to separate the values with a vertical bar (' | '). Examples: "Aves del Noroeste Patagonico. Christie et al. 2004.", "Stebbins, R. Field Guide to Western Reptiles and Amphibians. 3rd Edition. 2003. | Irschick, D.J. and Shaffer, H.B. (1997). ''The polytypic species revisited: Morphological differentiation among tiger salamanders (Ambystoma tigrinum) (Amphibia: Caudata).'' Herpetologica, 53(1), 30-49.".</dcterms:description>
@@ -3205,7 +3205,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Identifications/Identification/References</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Identification"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/identificationRemarks-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/identificationRemarks">
         <rdfs:label xml:lang="en">Identification Remarks</rdfs:label>
         <rdfs:comment xml:lang="en">Comments or notes about the Identification.</rdfs:comment>
         <dcterms:description xml:lang="en">Example: "Distinguished between Anthus correndera and Anthus hellmayri based on the comparative lengths of the uñas."</dcterms:description>
@@ -3218,7 +3218,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Identifications/Identification/Notes</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Identification"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/identificationVerificationStatus-2011-10-16">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/identificationVerificationStatus">
         <rdfs:label xml:lang="en">Identification Verification Status</rdfs:label>
         <rdfs:comment xml:lang="en">A categorical indicator of the extent to which the taxonomic identification has been verified to be correct. Recommended best practice is to use a controlled vocabulary such as that used in HISPID/ABCD.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "0", "4"</dcterms:description>
@@ -3298,7 +3298,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Identifications/Identification/Identifiers/IdentifiersText</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Identification"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/identifiedBy-2014-10-23">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/identifiedBy">
         <rdfs:label xml:lang="en">Identified By</rdfs:label>
         <rdfs:comment xml:lang="en">A list (concatenated and separated) of names of people, groups, or organizations who assigned the Taxon to the subject.</rdfs:comment>
         <dcterms:description xml:lang="en">The recommended best practice is to separate the values with a vertical bar (' | '). Examples: "James L. Patton", "Theodore Pappenfuss | Robert Macey".</dcterms:description>
@@ -3360,7 +3360,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:status>superseded</dwcattributes:status>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts/SiteMeasurementOrFact/MeasurementOrFactAtomised/LowerValue</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/individualCount-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/individualCount">
         <rdfs:label xml:lang="en">Individual Count</rdfs:label>
         <rdfs:comment xml:lang="en">The number of individuals represented present at the time of the Occurrence.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "1", "25"</dcterms:description>
@@ -3400,7 +3400,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:status>superseded</dwcattributes:status>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/InformationWithheld</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/informationWithheld-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/informationWithheld">
         <rdfs:label xml:lang="en">Information Withheld</rdfs:label>
         <rdfs:comment xml:lang="en">Additional information that exists, but that has not been shared in the given record.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "location information not given for endangered species", "collector identities withheld", "ask about tissue samples"</dcterms:description>
@@ -3440,7 +3440,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>{DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Bacterial/SubspeciesEpithet or DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Botanical/SecondEpithet or DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Zoological/SubspeciesEpithet}</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/infraspecificEpithet-2009-08-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/infraspecificEpithet">
         <rdfs:label xml:lang="en">Infraspecific Epithet</rdfs:label>
         <rdfs:comment xml:lang="en">The name of the lowest or terminal infraspecific epithet of the scientificName, excluding any rank designation.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "concolor", "oxyadenia", "sayi"</dcterms:description>
@@ -3528,7 +3528,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/SourceInstitutionID</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="all"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/institutionCode-2009-09-11">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/institutionCode">
         <rdfs:label xml:lang="en">Institution Code</rdfs:label>
         <rdfs:comment xml:lang="en">The name (or acronym) in use by the institution having custody of the object(s) or information referred to in the record.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "MVZ", "FMNH", "AKN-CLO", "University of California Museum of Paleontology (UCMP)"</dcterms:description>
@@ -3542,7 +3542,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/SourceInstitutionID</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="all"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/institutionID-2009-09-11">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/institutionID">
         <rdfs:label xml:lang="en">Institution ID</rdfs:label>
         <rdfs:comment xml:lang="en">An identifier for the institution having custody of the object(s) or information referred to in the record.</rdfs:comment>
         <dcterms:description xml:lang="en">For physical specimens, the recommended best practice is to use an identifier from a collections registry such as the Global Registry of Biodiversity Repositories (http://grbio.org/). Examples: "http://biocol.org/urn:lsid:biocol.org:col:34777", "http://grbio.org/cool/km06-gtbn".</dcterms:description>
@@ -3578,7 +3578,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:status>superseded</dwcattributes:status>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/NamedAreas/NamedArea/AreaName with NamedAreas/NamedArea/AreaClass= Island</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/island-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/island">
         <rdfs:label xml:lang="en">Island</rdfs:label>
         <rdfs:comment xml:lang="en">The name of the island on or near which the Location occurs. Recommended best practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "Isla Victoria", "Vancouver", "Viti Levu", "Zanzibar"</dcterms:description>
@@ -3615,7 +3615,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:status>superseded</dwcattributes:status>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/NamedAreas/NamedArea/AreaName with NamedAreas/NamedArea/AreaClass= Island group</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/islandGroup-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/islandGroup">
         <rdfs:label xml:lang="en">Island Group</rdfs:label>
         <rdfs:comment xml:lang="en">The name of the island group in which the Location occurs. Recommended best practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "Alexander Archipelago", "Seychelles"</dcterms:description>
@@ -3701,7 +3701,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/HigherTaxa/HigherTaxon/HigherTaxonName with HigherTaxa/HigherTaxon/HigherTaxonRank = regnum</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/kingdom-2009-08-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/kingdom">
         <rdfs:label xml:lang="en">Kingdom</rdfs:label>
         <rdfs:comment xml:lang="en">The full scientific name of the kingdom in which the taxon is classified.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "Animalia", "Plantae"</dcterms:description>
@@ -3726,7 +3726,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="paleo"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/latestAgeOrHighestStage-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/latestAgeOrHighestStage">
         <rdfs:label xml:lang="en">Latest AgeOr Highest Stage</rdfs:label>
         <rdfs:comment xml:lang="en">The full name of the latest possible geochronologic age or highest chronostratigraphic stage attributable to the stratigraphic horizon from which the cataloged item was collected.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "Atlantic", "Boreal", "Skullrockian"</dcterms:description>
@@ -3780,7 +3780,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="paleo"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/latestEonOrHighestEonothem-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/latestEonOrHighestEonothem">
         <rdfs:label xml:lang="en">Latest Eon Or Highest Eonothem</rdfs:label>
         <rdfs:comment xml:lang="en">The full name of the latest possible geochronologic eon or highest chrono-stratigraphic eonothem or the informal name ("Precambrian") attributable to the stratigraphic horizon from which the cataloged item was collected.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "Phanerozoic", "Proterozoic"</dcterms:description>
@@ -3805,7 +3805,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="paleo"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/latestEpochOrHighestSeries-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/latestEpochOrHighestSeries">
         <rdfs:label xml:lang="en">Latest Epoch Or Highest Series</rdfs:label>
         <rdfs:comment xml:lang="en">The full name of the latest possible geochronologic epoch or highest chronostratigraphic series attributable to the stratigraphic horizon from which the cataloged item was collected.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "Holocene", "Pleistocene", "Ibexian Series"</dcterms:description>
@@ -3830,7 +3830,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="paleo"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/latestEraOrHighestErathem-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/latestEraOrHighestErathem">
         <rdfs:label xml:lang="en">Latest Era Or Highest Erathem</rdfs:label>
         <rdfs:comment xml:lang="en">The full name of the latest possible geochronologic era or highest chronostratigraphic erathem attributable to the stratigraphic horizon from which the cataloged item was collected.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "Cenozoic", "Mesozoic"</dcterms:description>
@@ -3855,7 +3855,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="paleo"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/latestPeriodOrHighestSystem-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/latestPeriodOrHighestSystem">
         <rdfs:label xml:lang="en">Latest Period Or Highest System</rdfs:label>
         <rdfs:comment xml:lang="en">The full name of the latest possible geochronologic period or highest chronostratigraphic system attributable to the stratigraphic horizon from which the cataloged item was collected.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "Neogene", "Tertiary", "Quaternary"</dcterms:description>
@@ -3915,7 +3915,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:status>superseded</dwcattributes:status>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/MycologicalUnit/MycologicalSexualStage or DataSets/DataSet/Units/Unit/MycologicalUnit/MycologicalLiveStages/MycologicalLiveStage (Note DwC spec uses ”MycologicalLifeStage” or DataSets/DataSet/Units/Unit/ZoologicalUnit/PhasesOrStages/PhaseOrStage</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/lifeStage-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/lifeStage">
         <rdfs:label xml:lang="en">Life Stage</rdfs:label>
         <rdfs:comment xml:lang="en">The age class or life stage of the biological individual(s) at the time the Occurrence was recorded. Recommended best practice is to use a controlled vocabulary.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "egg", "eft", "juvenile", "adult", "2 adults 4 juveniles"</dcterms:description>
@@ -3940,7 +3940,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/Stratigraphy/LithostratigraphicTerms</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="paleo"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/lithostratigraphicTerms-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/lithostratigraphicTerms">
         <rdfs:label xml:lang="en">Lithostratigraphic Terms</rdfs:label>
         <rdfs:comment xml:lang="en">The combination of all litho-stratigraphic names for the rock from which the cataloged item was collected.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
@@ -3978,7 +3978,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-26_15"/>
         <dwcattributes:abcdEquivalence>RecordBasisEnum/LivingSpecimen</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/LivingSpecimen-2014-10-23">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/LivingSpecimen">
         <rdfs:label xml:lang="en">Living Specimen</rdfs:label>
         <rdfs:comment xml:lang="en">A specimen that is alive.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
@@ -4026,7 +4026,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:status>superseded</dwcattributes:status>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/AreaDetail</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/locality-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/locality">
         <rdfs:label xml:lang="en">Locality</rdfs:label>
         <rdfs:comment xml:lang="en">The specific description of the place. Less specific geographic information can be provided in other geographic terms (higherGeography, continent, country, stateProvince, county, municipality, waterBody, island, islandGroup). This term may contain information modified from the original to correct perceived errors or standardize the description.</rdfs:comment>
         <dcterms:description xml:lang="en">Example: "Bariloche, 25 km NNE via Ruta Nacional 40 (=Ruta 237)"</dcterms:description>
@@ -4052,7 +4052,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-26_15"/>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/locationAccordingTo-2009-08-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/locationAccordingTo">
         <rdfs:label xml:lang="en">Location According To</rdfs:label>
         <rdfs:comment xml:lang="en">Information about the source of this Location information. Could be a publication (gazetteer), institution, or team of individuals.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "Getty Thesaurus of Geographic Names", "GADM"</dcterms:description>
@@ -4079,7 +4079,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/locationID-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/locationID">
         <rdfs:label xml:lang="en">Location ID</rdfs:label>
         <rdfs:comment xml:lang="en">An identifier for the set of location information (data associated with dcterms:Location). May be a global unique identifier or an identifier specific to the data set.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
@@ -4093,7 +4093,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/locationRemarks-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/locationRemarks">
         <rdfs:label xml:lang="en">Location Remarks</rdfs:label>
         <rdfs:comment xml:lang="en">Comments or notes about the Location.</rdfs:comment>
         <dcterms:description xml:lang="en">Example: "under water since 2005"</dcterms:description>
@@ -4129,7 +4129,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="paleo"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/lowestBiostratigraphicZone-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/lowestBiostratigraphicZone">
         <rdfs:label xml:lang="en">Lowest Biostratigraphic Zone</rdfs:label>
         <rdfs:comment xml:lang="en">The full name of the lowest possible geological biostratigraphic zone of the stratigraphic horizon from which the cataloged item was collected.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
@@ -4167,7 +4167,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-26_15"/>
         <dwcattributes:abcdEquivalence>RecordBasisEnum/MachineObservation</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/MachineObservation-2014-10-23">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/MachineObservation">
         <rdfs:label xml:lang="en">Machine Observation</rdfs:label>
         <rdfs:comment xml:lang="en">An output of a machine observation process.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
@@ -4205,7 +4205,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-26_15"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/MaterialSample-2014-10-23">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/MaterialSample">
         <rdfs:label xml:lang="en">Material Sample</rdfs:label>
         <rdfs:comment xml:lang="en">A physical results of a sampling (or subsampling) event. In biological collections, the material sample is typically collected, and either preserved or destructively processed.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: A whole organism preserved in a collection. A part of an organism isolated for some purpose. A soil sample. A marine microbial sample.</dcterms:description>
@@ -4219,7 +4219,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-26_15"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/materialSampleID-2013-05-25">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/materialSampleID">
         <rdfs:label xml:lang="en">Material Sample ID</rdfs:label>
         <rdfs:comment xml:lang="en">An identifier for the MaterialSample (as opposed to a particular digital record of the material sample). In the absence of a persistent global unique identifier, construct one from a combination of identifiers in the record that will most closely make the materialSampleID globally unique.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
@@ -4269,7 +4269,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:status>superseded</dwcattributes:status>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/Depth/MeasurementOrFactAtomised/UpperValue</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/maximumDepthInMeters-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/maximumDepthInMeters">
         <rdfs:label xml:lang="en">Maximum Depth In Meters</rdfs:label>
         <rdfs:comment xml:lang="en">The greater depth of a range of depth below the local surface, in meters.</rdfs:comment>
         <dcterms:description xml:lang="en">Example: "200"</dcterms:description>
@@ -4283,7 +4283,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/Depth/MeasurementOrFactAtomised/UpperValue</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/maximumDistanceAboveSurfaceInMeters-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/maximumDistanceAboveSurfaceInMeters">
         <rdfs:label xml:lang="en">Maximum Distance Above Surface In Meters</rdfs:label>
         <rdfs:comment xml:lang="en">The greater distance in a range of distance from a reference surface in the vertical direction, in meters. Use positive values for locations above the surface, negative values for locations below. If depth measures are given, the reference surface is the location given by the depth, otherwise the reference surface is the location given by the elevation.</rdfs:comment>
         <dcterms:description xml:lang="en">Example: 1.5 meter sediment core from the bottom of a lake (at depth 20m) at 300m elevation; VerbatimElevation: "300m" MinimumElevationInMeters: "300", MaximumElevationInMeters: "300", VerbatimDepth: "20m", MinimumDepthInMeters: "20", MaximumDepthInMeters: "20", minimumDistanceAboveSurfaceInMeters: "0", maximumDistanceAboveSurfaceInMeters: "-1.5"</dcterms:description>
@@ -4331,7 +4331,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:status>superseded</dwcattributes:status>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/Altitude/MeasurementOrFactAtomised/UpperValue</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/maximumElevationInMeters-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/maximumElevationInMeters">
         <rdfs:label xml:lang="en">Maximum Elevation In Meters</rdfs:label>
         <rdfs:comment xml:lang="en">The upper limit of the range of elevation (altitude, usually above sea level), in meters.</rdfs:comment>
         <dcterms:description xml:lang="en">Example: "200"</dcterms:description>
@@ -4345,7 +4345,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/Altitude/MeasurementOrFactAtomised/UpperValue</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/measurementAccuracy-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/measurementAccuracy">
         <rdfs:label xml:lang="en">Measurement Accuracy</rdfs:label>
         <rdfs:comment xml:lang="en">The description of the potential error associated with the measurementValue.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "0.01", "normal distribution with variation of 2 m"</dcterms:description>
@@ -4377,7 +4377,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/MeasuredBy or DataSets/DataSet/Units/Unit/Gathering/Altitude/MeasurementOrFactAtomised/MeasuredBy or DataSets/DataSet/Units/Unit/Gathering/Depth/MeasurementOrFactAtomised/MeasuredBy or DataSets/DataSet/Units/Unit/Gathering/Height/MeasurementOrFactAtomised/MeasuredBy or DataSets/DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts/SiteMeasurementOrFact/MeasurementOrFactAtomised/MeasuredBy or DataSets/DataSet/Units/Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFactAtomised/MeasuredBy</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/MeasurementOrFact"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/measurementDeterminedBy-2014-10-23">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/measurementDeterminedBy">
         <rdfs:label xml:lang="en">Measurement Determined By</rdfs:label>
         <rdfs:comment xml:lang="en">A list (concatenated and separated) of names of people, groups, or organizations who determined the value of the MeasurementOrFact.</rdfs:comment>
         <dcterms:description xml:lang="en">The recommended best practice is to separate the values with a vertical bar (' | '). Examples: "Rob Guralnick", "Julie Woodruff | Eileen Lacey".</dcterms:description>
@@ -4393,7 +4393,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/MeasuredBy or DataSets/DataSet/Units/Unit/Gathering/Altitude/MeasurementOrFactAtomised/MeasuredBy or DataSets/DataSet/Units/Unit/Gathering/Depth/MeasurementOrFactAtomised/MeasuredBy or DataSets/DataSet/Units/Unit/Gathering/Height/MeasurementOrFactAtomised/MeasuredBy or DataSets/DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts/SiteMeasurementOrFact/MeasurementOrFactAtomised/MeasuredBy or DataSets/DataSet/Units/Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFactAtomised/MeasuredBy</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/MeasurementOrFact"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/measurementDeterminedDate-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/measurementDeterminedDate">
         <rdfs:label xml:lang="en">Measurement Determined Date</rdfs:label>
         <rdfs:comment xml:lang="en">The date on which the MeasurementOrFact was made. Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E).</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "1963-03-08T14:07-0600" is 8 Mar 1963 2:07pm in the time zone six hours earlier than UTC, "2009-02-20T08:40Z" is 20 Feb 2009 8:40am UTC, "1809-02-12" is 12 Feb 1809, "1906-06" is Jun 1906, "1971" is just that year, "2007-03-01T13:00:00Z/2008-05-11T15:30:00Z" is the interval between 1 Mar 2007 1pm UTC and 11 May 2008 3:30pm UTC, "2007-11-13/15" is the interval between 13 Nov 2007 and 15 Nov 2007.</dcterms:description>
@@ -4409,7 +4409,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/MeasurementDateTime or DataSets/DataSet/Units/Unit/Gathering/Altitude/MeasurementOrFactAtomised/MeasurementDateTime or DataSets/DataSet/Units/Unit/Gathering/Depth/MeasurementOrFactAtomised/MeasurementDateTime or DataSets/DataSet/Units/Unit/Gathering/Height/MeasurementOrFactAtomised/MeasurementDateTime or DataSets/DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts/SiteMeasurementOrFact/MeasurementOrFactAtomised/MeasurementDateTime or DataSets/DataSet/Units/Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFactAtomised/MeasurementDateTime</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/MeasurementOrFact"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/measurementID-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/measurementID">
         <rdfs:label xml:lang="en">Measurement ID</rdfs:label>
         <rdfs:comment xml:lang="en">An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
@@ -4424,7 +4424,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/MeasurementOrFact"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/measurementMethod-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/measurementMethod">
         <rdfs:label xml:lang="en">Measurement Method</rdfs:label>
         <rdfs:comment xml:lang="en">A description of or reference to (publication, URI) the method or protocol used to determine the measurement, fact, characteristic, or assertion.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "minimum convex polygon around burrow entrances" for a home range area, "barometric altimeter" for an elevation</dcterms:description>
@@ -4451,7 +4451,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-26_15"/>
         <dwcattributes:abcdEquivalence>Datasets/Dataset/Units/Unit/MeasurementsOrFacts or DataSets/DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/MeasurementOrFact-2014-10-23">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/MeasurementOrFact">
         <rdfs:label xml:lang="en">Measurement or Fact</rdfs:label>
         <rdfs:comment xml:lang="en">A measurement of or fact about an rdfs:Resource (http://www.w3.org/2000/01/rdf-schema#Resource).</rdfs:comment>
         <dcterms:description xml:lang="en">Resources can be thought of as identifiable records or instances of classes and may include, but need not be limited to Occurrences, Organisms, MaterialSamples, Events, Locations, GeologicalContexts, Identifications, or Taxa. Examples: The weight of an organism in grams. The number of placental scars.</dcterms:description>
@@ -4465,7 +4465,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-26_15"/>
         <dwcattributes:abcdEquivalence>Datasets/Dataset/Units/Unit/MeasurementsOrFacts or DataSets/DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/measurementRemarks-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/measurementRemarks">
         <rdfs:label xml:lang="en">Measurement Remarks</rdfs:label>
         <rdfs:comment xml:lang="en">Comments or notes accompanying the MeasurementOrFact.</rdfs:comment>
         <dcterms:description xml:lang="en">Example: "tip of tail missing"</dcterms:description>
@@ -4480,7 +4480,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/MeasurementOrFact"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/measurementType-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/measurementType">
         <rdfs:label xml:lang="en">Measurement Type</rdfs:label>
         <rdfs:comment xml:lang="en">The nature of the measurement, fact, characteristic, or assertion. Recommended best practice is to use a controlled vocabulary.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "tail length", "temperature", "trap line length", "survey area", "trap type"</dcterms:description>
@@ -4495,7 +4495,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/Parameter or DataSets/DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/Parameter</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/MeasurementOrFact"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/measurementUnit-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/measurementUnit">
         <rdfs:label xml:lang="en">Measurement Unit</rdfs:label>
         <rdfs:comment xml:lang="en">The units associated with the measurementValue. Recommended best practice is to use the International System of Units (SI).</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "mm", "C", "km", "ha"</dcterms:description>
@@ -4510,7 +4510,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/UnitOfMeasurement or DataSets/DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/UnitOfMeasurement</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/MeasurementOrFact"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/measurementValue-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/measurementValue">
         <rdfs:label xml:lang="en">Measurement Value</rdfs:label>
         <rdfs:comment xml:lang="en">The value of the measurement, fact, characteristic, or assertion.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "45", "20", "1", "14.5", "UV-light"</dcterms:description>
@@ -4536,7 +4536,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="paleo"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/member-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/member">
         <rdfs:label xml:lang="en">Member</rdfs:label>
         <rdfs:comment xml:lang="en">The full name of the lithostratigraphic member from which the cataloged item was collected.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "Lava Dam Member", "Hellnmaria Member"</dcterms:description>
@@ -4585,7 +4585,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:status>superseded</dwcattributes:status>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/Depth/MeasurementOrFactAtomised/LowerValue</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/minimumDepthInMeters-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/minimumDepthInMeters">
         <rdfs:label xml:lang="en">Minimum Depth In Meters</rdfs:label>
         <rdfs:comment xml:lang="en">The lesser depth of a range of depth below the local surface, in meters.</rdfs:comment>
         <dcterms:description xml:lang="en">Example: "100"</dcterms:description>
@@ -4599,7 +4599,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/Depth/MeasurementOrFactAtomised/LowerValue</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/minimumDistanceAboveSurfaceInMeters-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/minimumDistanceAboveSurfaceInMeters">
         <rdfs:label xml:lang="en">Minimum Distance Above Surface In Meters</rdfs:label>
         <rdfs:comment xml:lang="en">The lesser distance in a range of distance from a reference surface in the vertical direction, in meters. Use positive values for locations above the surface, negative values for locations below. If depth measures are given, the reference surface is the location given by the depth, otherwise the reference surface is the location given by the elevation.</rdfs:comment>
         <dcterms:description xml:lang="en">Example: 1.5 meter sediment core from the bottom of a lake (at depth 20m) at 300m elevation; VerbatimElevation: "300m" MinimumElevationInMeters: "300", MaximumElevationInMeters: "300", VerbatimDepth: "20m", MinimumDepthInMeters: "20", MaximumDepthInMeters: "20", minimumDistanceAboveSurfaceInMeters: "0", maximumDistanceAboveSurfaceInMeters: "-1.5"</dcterms:description>
@@ -4647,7 +4647,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:status>superseded</dwcattributes:status>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/Altitude/MeasurementOrFactAtomised/LowerValue</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/minimumElevationInMeters-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/minimumElevationInMeters">
         <rdfs:label xml:lang="en">Minimum Elevation In Meters</rdfs:label>
         <rdfs:comment xml:lang="en">The lower limit of the range of elevation (altitude, usually above sea level), in meters.</rdfs:comment>
         <dcterms:description xml:lang="en">Example: "100"</dcterms:description>
@@ -4661,7 +4661,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/Altitude/MeasurementOrFactAtomised/LowerValue</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/month-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/month">
         <rdfs:label xml:lang="en">Month</rdfs:label>
         <rdfs:comment xml:lang="en">The ordinal month in which the Event occurred.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "1" (=January), "10" (=October)</dcterms:description>
@@ -4721,7 +4721,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:status>superseded</dwcattributes:status>
         <dwcattributes:abcdEquivalence>accessible from DataSets/DataSet/Units/Unit/Identifications/Identification/Date/DateText</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/municipality-2009-08-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/municipality">
         <rdfs:label xml:lang="en">Municipality</rdfs:label>
         <rdfs:comment xml:lang="en">The full, unabbreviated name of the next smaller administrative region than county (city, municipality, etc.) in which the Location occurs. Do not use this term for a nearby named place that does not contain the actual location.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "Holzminden"</dcterms:description>
@@ -4734,7 +4734,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/NamedAreas/NamedArea/AreaName</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/nameAccordingTo-2009-09-21">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/nameAccordingTo">
         <rdfs:label xml:lang="en">Name According To</rdfs:label>
         <rdfs:comment xml:lang="en">The reference to the source in which the specific taxon concept circumscription is defined or implied - traditionally signified by the Latin "sensu" or "sec." (from secundum, meaning "according to"). For taxa that result from identifications, a reference to the keys, monographs, experts and other sources should be given.</rdfs:comment>
         <dcterms:description xml:lang="en">Example: "McCranie, J. R., D. B. Wake, and L. D. Wilson. 1996. The taxonomic status of Bolitoglossa schmidti, with comments on the biology of the Mesoamerican salamander Bolitoglossa dofleini (Caudata: Plethodontidae). Carib. J. Sci. 32:395-398.", "Werner Greuter 2008", "Lilljeborg 1861, Upsala Univ. Arsskrift, Math. Naturvet., pp. 4, 5"</dcterms:description>
@@ -4749,7 +4749,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/nameAccordingToID-2009-09-21">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/nameAccordingToID">
         <rdfs:label xml:lang="en">Name According To ID</rdfs:label>
         <rdfs:comment xml:lang="en">An identifier for the source in which the specific taxon concept circumscription is defined or implied. See nameAccordingTo.</rdfs:comment>
         <dcterms:description xml:lang="en">Example: "doi:10.1016/S0269-915X(97)80026-2"</dcterms:description>
@@ -4791,7 +4791,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/SpecimenUnit/NomenclaturalTypeDesignations/NomenclaturalTypeDesignation/NomenclaturalReference/TitleCitation</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/namePublishedIn-2009-09-21">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/namePublishedIn">
         <rdfs:label xml:lang="en">Name Published In</rdfs:label>
         <rdfs:comment xml:lang="en">A reference for the publication in which the scientificName was originally established under the rules of the associated nomenclaturalCode.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "Pearson O. P., and M. I. Christie. 1985. Historia Natural, 5(37):388", "Forel, Auguste, Diagnosies provisoires de quelques espèces nouvelles de fourmis de Madagascar, récoltées par M. Grandidier., Annales de la Societe Entomologique de Belgique, Comptes-rendus des Seances 30, 1886"</dcterms:description>
@@ -4806,7 +4806,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/SpecimenUnit/NomenclaturalTypeDesignations/NomenclaturalTypeDesignation/NomenclaturalReference/TitleCitation</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/namePublishedInID-2009-09-21">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/namePublishedInID">
         <rdfs:label xml:lang="en">Name Published In ID</rdfs:label>
         <rdfs:comment xml:lang="en">An identifier for the publication in which the scientificName was originally established under the rules of the associated nomenclaturalCode.</rdfs:comment>
         <dcterms:description xml:lang="en">Example: "http://hdl.handle.net/10199/7"</dcterms:description>
@@ -4821,7 +4821,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/namePublishedInYear-2011-10-16">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/namePublishedInYear">
         <rdfs:label xml:lang="en">Name Published In Year</rdfs:label>
         <rdfs:comment xml:lang="en">The four-digit year in which the scientificName was published.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "1915", "2008"</dcterms:description>
@@ -4872,7 +4872,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/Code</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/nomenclaturalCode-2009-09-21">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/nomenclaturalCode">
         <rdfs:label xml:lang="en">Nomenclatural Code</rdfs:label>
         <rdfs:comment xml:lang="en">The nomenclatural code (or codes in the case of an ambiregnal name) under which the scientificName is constructed. Recommended best practice is to use a controlled vocabulary.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "ICBN", "ICZN", "BC", "ICNCP", "BioCode", "ICZN; ICBN"</dcterms:description>
@@ -4886,7 +4886,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/Code</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/nomenclaturalStatus-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/nomenclaturalStatus">
         <rdfs:label xml:lang="en">Nomenclatural Status</rdfs:label>
         <rdfs:comment xml:lang="en">The status related to the original publication of the name and its conformance to the relevant rules of nomenclature. It is based essentially on an algorithm according to the business rules of the code.  It requires no taxonomic opinion.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "nom. ambig.", "nom. illeg.", "nom. subnud."</dcterms:description>
@@ -4970,7 +4970,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-26_15"/>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/Occurrence-2014-10-23">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/Occurrence">
         <rdfs:label xml:lang="en">Occurrence</rdfs:label>
         <rdfs:comment xml:lang="en">An existence of an Organism (sensu http://rs.tdwg.org/dwc/terms/Organism) at a particular place at a particular time.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: A wolf pack on the shore of Kluane Lake in 1988. A virus in a plant leaf in a the New York Botanical Garden at 15:29 on 2014-10-23. A fungus in Central Park in the summer of 1929.</dcterms:description>
@@ -5013,7 +5013,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/RecordURI</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/occurrenceID-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/occurrenceID">
         <rdfs:label xml:lang="en">Occurrence ID</rdfs:label>
         <rdfs:comment xml:lang="en">An identifier for the Occurrence (as opposed to a particular digital record of the occurrence). In the absence of a persistent global unique identifier, construct one from a combination of identifiers in the record that will most closely make the occurrenceID globally unique.</rdfs:comment>
         <dcterms:description xml:lang="en">For a specimen in the absence of a bona fide global unique identifier, for example, use the form: "urn:catalog:[institutionCode]:[collectionCode]:[catalogNumber]. Examples: "urn:lsid:nhm.ku.edu:Herps:32", "urn:catalog:FMNH:Mammal:145732"</dcterms:description>
@@ -5154,7 +5154,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/UpperValue</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/OccurrenceMeasurement"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/occurrenceRemarks-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/occurrenceRemarks">
         <rdfs:label xml:lang="en">Occurrence Remarks</rdfs:label>
         <rdfs:comment xml:lang="en">Comments or notes about the Occurrence.</rdfs:comment>
         <dcterms:description xml:lang="en">Example: "found dead on road"</dcterms:description>
@@ -5168,7 +5168,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Notes</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/occurrenceStatus-2009-09-17">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/occurrenceStatus">
         <rdfs:label xml:lang="en">Occurrence Status</rdfs:label>
         <rdfs:comment xml:lang="en">A statement about the presence or absence of a Taxon at a Location. Recommended best practice is to use a controlled vocabulary.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "present", "absent"</dcterms:description>
@@ -5230,7 +5230,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/HigherTaxa/HigherTaxon/HigherTaxonName with HigherTaxa/HigherTaxon/HigherTaxonRank = ordo</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/order-2009-08-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/order">
         <rdfs:label xml:lang="en">Order</rdfs:label>
         <rdfs:comment xml:lang="en">The full scientific name of the order in which the taxon is classified.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "Carnivora", "Monocleales"</dcterms:description>
@@ -5244,7 +5244,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/HigherTaxa/HigherTaxon/HigherTaxonName with HigherTaxa/HigherTaxon/HigherTaxonRank = ordo</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/Organism-2014-10-23">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/Organism">
         <rdfs:label xml:lang="en">Organism</rdfs:label>
         <rdfs:comment xml:lang="en">A particular organism or defined group of organisms considered to be taxonomically homogeneous.</rdfs:comment>
         <dcterms:description xml:lang="en">Instances of the Organism class are intended to facilitate linking of one or more Identification instances to one or more Occurrence instances. Therefore, things that are typically assigned scientific names (such as viruses, hybrids, and lichens) and aggregates whose occurrences are typically recorded (such as packs, clones, and colonies) are included in the scope of this class.</dcterms:description>
@@ -5257,7 +5257,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-26_14"/>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/organismID-2014-10-23">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/organismID">
         <rdfs:label xml:lang="en">Organism ID</rdfs:label>
         <rdfs:comment xml:lang="en">An identifier for the Organism instance (as opposed to a particular digital record of the Organism). May be a globally unique identifier or an identifier specific to the data set.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
@@ -5272,7 +5272,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Organism"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/organismName-2014-10-23">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/organismName">
         <rdfs:label xml:lang="en">Organism Name</rdfs:label>
         <rdfs:comment xml:lang="en">A textual name or label assigned to an Organism instance.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "Huberta", "Boab Prison Tree", "J pod".</dcterms:description>
@@ -5286,7 +5286,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Organism"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/organismRemarks-2014-10-23">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/organismRemarks">
         <rdfs:label xml:lang="en">Organism Remarks</rdfs:label>
         <rdfs:comment xml:lang="en">Comments or notes about the Organism instance.</rdfs:comment>
         <dcterms:description xml:lang="en">Example: "One of a litter of six."</dcterms:description>
@@ -5300,7 +5300,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Organism"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/organismScope-2014-10-23">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/organismScope">
         <rdfs:label xml:lang="en">Organism Scope</rdfs:label>
         <rdfs:comment xml:lang="en">A description of the kind of Organism instance. Can be used to indicate whether the Organism instance represents a discrete organism or if it represents a particular type of aggregation. Recommended best practice is to use a controlled vocabulary.</rdfs:comment>
         <dcterms:description xml:lang="en">This term is not intended to be used to specify a type of taxon. To describe the kind of Organism using a URI object in RDF, use rdf:type (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) instead. Examples: "multicellular organism", "virus", "clone" "pack", "colony".</dcterms:description>
@@ -5325,7 +5325,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:status>superseded</dwcattributes:status>
         <dwcattributes:abcdEquivalence>(partly) DataSets/DataSet/Units/Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesGrid/GridCellSystem</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/originalNameUsage-2009-09-21">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/originalNameUsage">
         <rdfs:label xml:lang="en">Original Name Usage</rdfs:label>
         <rdfs:comment xml:lang="en">The taxon name, with authorship and date information if known, as it originally appeared when first established under the rules of the associated nomenclaturalCode. The basionym (botany) or basonym (bacteriology) of the scientificName or the senior/earlier homonym for replaced names.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "Pinus abies", "Gasterosteus saltatrix Linnaeus 1768"</dcterms:description>
@@ -5339,7 +5339,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/originalNameUsageID-2009-09-21">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/originalNameUsageID">
         <rdfs:label xml:lang="en">Original Name Usage ID</rdfs:label>
         <rdfs:comment xml:lang="en">An identifier for the name usage (documented meaning of the name according to a source) in which the terminal element of the scientificName was originally established under the rules of the associated nomenclaturalCode.</rdfs:comment>
         <dcterms:description xml:lang="en">Example: "http://species.gbif.org/abies_alba_1753"</dcterms:description>
@@ -5393,7 +5393,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/SpecimenUnit/History/PreviousUnitsText</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/otherCatalogNumbers-2014-10-23">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/otherCatalogNumbers">
         <rdfs:label xml:lang="en">Other Catalog Numbers</rdfs:label>
         <rdfs:comment xml:lang="en">A list (concatenated and separated) of previous or alternate fully qualified catalog numbers or other human-used identifiers for the same Occurrence, whether in the current or any other data set or collection.</rdfs:comment>
         <dcterms:description xml:lang="en">The recommended best practice is to separate the values with a vertical bar (' | '). Examples: "FMNH:Mammal:1234", "NPS YELLO6778 | MBG 33424".</dcterms:description>
@@ -5408,7 +5408,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/SpecimenUnit/History/PreviousUnitsText</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/ownerInstitutionCode-2009-08-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/ownerInstitutionCode">
         <rdfs:label xml:lang="en">Owner Institution Code</rdfs:label>
         <rdfs:comment xml:lang="en">The name (or acronym) in use by the institution having ownership of the object(s) or information referred to in the record.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "NPS", "APN", "InBio"</dcterms:description>
@@ -5421,7 +5421,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="all"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/parentNameUsage-2009-09-21">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/parentNameUsage">
         <rdfs:label xml:lang="en">Parent Name Usage</rdfs:label>
         <rdfs:comment xml:lang="en">The full name, with authorship and date information if known, of the direct, most proximate higher-rank parent taxon (in a classification) of the most specific element of the scientificName.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "Rubiaceae", "Gruiformes", "Testudinae"</dcterms:description>
@@ -5434,7 +5434,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/HigherTaxa/HigherTaxon/HigherTaxonName</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/parentNameUsageID-2009-09-21">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/parentNameUsageID">
         <rdfs:label xml:lang="en">Parent Name Usage ID</rdfs:label>
         <rdfs:comment xml:lang="en">An identifier for the name usage (documented meaning of the name according to a source) of the direct, most proximate higher-rank parent taxon (in a classification) of the most specific element of the scientificName.</rdfs:comment>
         <dcterms:description xml:lang="en">Example: "8fa58e08-08de-4ac1-b69c-1235340b7001"</dcterms:description>
@@ -5498,7 +5498,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/HigherTaxa/HigherTaxon/HigherTaxonName with HigherTaxa/HigherTaxon/HigherTaxonRank = phylum</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/phylum-2009-08-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/phylum">
         <rdfs:label xml:lang="en">Phylum</rdfs:label>
         <rdfs:comment xml:lang="en">The full scientific name of the phylum or division in which the taxon is classified.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "Chordata" (phylum), "Bryophyta" (division)</dcterms:description>
@@ -5523,7 +5523,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:status>superseded</dwcattributes:status>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/SiteCoordinateSets/SiteCoordinates/PointRadiusSpatialFit</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/pointRadiusSpatialFit-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/pointRadiusSpatialFit">
         <rdfs:label xml:lang="en">Point Radius Spatial Fit</rdfs:label>
         <rdfs:comment xml:lang="en">The ratio of the area of the point-radius (decimalLatitude, decimalLongitude, coordinateUncertaintyInMeters) to the area of the true (original, or most specific) spatial representation of the Location. Legal values are 0, greater than or equal to 1, or undefined. A value of 1 is an exact match or 100% overlap. A value of 0 should be used if the given point-radius does not completely contain the original representation. The pointRadiusSpatialFit is undefined (and should be left blank) if the original representation is a point without uncertainty and the given georeference is not that same point (without uncertainty). If both the original and the given georeference are the same point, the pointRadiusSpatialFit is 1.</rdfs:comment>
         <dcterms:description xml:lang="en">Detailed explanations with graphical examples can be found in the "Guide to Best Practices for Georeferencing", Chapman and Wieczorek, eds. 2006.</dcterms:description>
@@ -5576,7 +5576,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/SpecimenUnit/Preparations/PreparationsText</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/preparations-2014-10-23">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/preparations">
         <rdfs:label xml:lang="en">Preparations</rdfs:label>
         <rdfs:comment xml:lang="en">A list (concatenated and separated) of preparations and preservation methods for a specimen.</rdfs:comment>
         <dcterms:description xml:lang="en">The recommended best practice is to separate the values with a vertical bar (' | '). Examples: "fossil", "cast", "photograph", "DNA extract", "skin | "skull | skeleton", "whole animal (ETOH) | tissue (EDTA)".</dcterms:description>
@@ -5627,7 +5627,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-26_15"/>
         <dwcattributes:abcdEquivalence>RecordBasisEnum/PreservedSpecimen</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/PreservedSpecimen-2014-10-23">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/PreservedSpecimen">
         <rdfs:label xml:lang="en">Preserved Specimen</rdfs:label>
         <rdfs:comment xml:lang="en">A specimen that has been preserved.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
@@ -5692,7 +5692,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Identifications/Identification with PreferredFlag = false</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/previousIdentifications-2014-10-23">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/previousIdentifications">
         <rdfs:label xml:lang="en">Previous Identifications</rdfs:label>
         <rdfs:comment xml:lang="en">A list (concatenated and separated) of previous assignments of names to the Organism.</rdfs:comment>
         <dcterms:description xml:lang="en">The recommended best practice is to separate the values with a vertical bar (' | '). Examples: "Chalepidae", "Pinus abies", "Anthus sp., field ID by G. Iglesias | Anthus correndera, expert ID by C. Cicero 2009-02-12 based on morphology".</dcterms:description>
@@ -5723,7 +5723,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/GatheringAgents/GatheringAgentsText</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/recordedBy-2014-10-23">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/recordedBy">
         <rdfs:label xml:lang="en">Recorded By</rdfs:label>
         <rdfs:comment xml:lang="en">A list (concatenated and separated) of names of people, groups, or organizations responsible for recording the original Occurrence. The primary collector or observer, especially one who applies a personal identifier (recordNumber), should be listed first.</rdfs:comment>
         <dcterms:description xml:lang="en">The recommended best practice is to separate the values with a vertical bar (' | '). The primary collector or observer, especially one who applies a personal identifier (recordNumber), should be listed first. Examples: "José E. Crespo", "Oliver P. Pearson | Anita K. Pearson" where the value in recordNumber "OPP 7101" corresponds to the number for the specimen in the field catalog (collector number) of Oliver P. Pearson.</dcterms:description>
@@ -5739,7 +5739,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/GatheringAgents/GatheringAgentsText</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/recordNumber-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/recordNumber">
         <rdfs:label xml:lang="en">Record Number</rdfs:label>
         <rdfs:comment xml:lang="en">An identifier given to the Occurrence at the time it was recorded. Often serves as a link between field notes and an Occurrence record, such as a specimen collector's number.</rdfs:comment>
         <dcterms:description xml:lang="en">Example: "OPP 7101"</dcterms:description>
@@ -5824,7 +5824,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:status>superseded</dwcattributes:status>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/RecordURI</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/relatedResourceID-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/relatedResourceID">
         <rdfs:label xml:lang="en">Related Resource ID</rdfs:label>
         <rdfs:comment xml:lang="en">An identifier for a related resource (the object, rather than the subject of the relationship).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
@@ -5850,7 +5850,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/ResourceRelationship"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/relationshipAccordingTo-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/relationshipAccordingTo">
         <rdfs:label xml:lang="en">Relationship According To</rdfs:label>
         <rdfs:comment xml:lang="en">The source (person, organization, publication, reference) establishing the relationship between the two resources.</rdfs:comment>
         <dcterms:description xml:lang="en">Example: "Julie Woodruff"</dcterms:description>
@@ -5864,7 +5864,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/ResourceRelationship"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/relationshipEstablishedDate-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/relationshipEstablishedDate">
         <rdfs:label xml:lang="en">Relationship Established Date</rdfs:label>
         <rdfs:comment xml:lang="en">The date-time on which the relationship between the two resources was established. Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E).</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "1963-03-08T14:07-0600" is 8 Mar 1963 2:07pm in the time zone six hours earlier than UTC, "2009-02-20T08:40Z" is 20 Feb 2009 8:40am UTC, "1809-02-12" is 12 Feb 1809, "1906-06" is Jun 1906, "1971" is just that year, "2007-03-01T13:00:00Z/2008-05-11T15:30:00Z" is the interval between 1 Mar 2007 1pm UTC and 11 May 2008 3:30pm UTC, "2007-11-13/15" is the interval between 13 Nov 2007 and 15 Nov 2007.</dcterms:description>
@@ -5878,7 +5878,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/ResourceRelationship"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/relationshipOfResource-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/relationshipOfResource">
         <rdfs:label xml:lang="en">Relationship Of Resource</rdfs:label>
         <rdfs:comment xml:lang="en">The relationship of the resource identified by relatedResourceID to the subject (optionally identified by the resourceID). Recommended best practice is to use a controlled vocabulary.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "duplicate of", "mother of", "endoparasite of", "host to", "sibling of", "valid synonym of", "located within"</dcterms:description>
@@ -5891,7 +5891,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Associations/UnitAssociation/AssociationType</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/ResourceRelationship"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/relationshipRemarks-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/relationshipRemarks">
         <rdfs:label xml:lang="en">Relationship Remarks</rdfs:label>
         <rdfs:comment xml:lang="en">Comments or notes about the relationship between the two resources.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "mother and offspring collected from the same nest", "pollinator captured in the act"</dcterms:description>
@@ -5939,7 +5939,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:status>superseded</dwcattributes:status>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Notes</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/reproductiveCondition-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/reproductiveCondition">
         <rdfs:label xml:lang="en">Reproductive Condition</rdfs:label>
         <rdfs:comment xml:lang="en">The reproductive condition of the biological individual(s) represented in the Occurrence. Recommended best practice is to use a controlled vocabulary.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples" "non-reproductive", "pregnant", "in bloom", "fruit-bearing"</dcterms:description>
@@ -5952,7 +5952,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/resourceID-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/resourceID">
         <rdfs:label xml:lang="en">Resource ID</rdfs:label>
         <rdfs:comment xml:lang="en">An identifier for the resource that is the subject of the relationship.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
@@ -5978,7 +5978,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-26_15"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Associations</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/ResourceRelationship-2014-10-23">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/ResourceRelationship">
         <rdfs:label xml:lang="en">Resource Relationship</rdfs:label>
         <rdfs:comment xml:lang="en">A relationship of one rdfs:Resource (http://www.w3.org/2000/01/rdf-schema#Resource) to another.</rdfs:comment>
         <dcterms:description xml:lang="en">Resources can be thought of as identifiable records or instances of classes and may include, but need not be limited to Occurrences, Organisms, MaterialSamples, Events, Locations, GeologicalContexts, Identifications, or Taxa. Example: An instance of an Organism is the mother of another instance of an Organism.</dcterms:description>
@@ -5992,7 +5992,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-26_15"/>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Associations</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/resourceRelationshipID-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/resourceRelationshipID">
         <rdfs:label xml:lang="en">Resource Relationship ID</rdfs:label>
         <rdfs:comment xml:lang="en">An identifier for an instance of relationship between one resource (the subject) and another (relatedResource, the object).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
@@ -6161,7 +6161,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/Parameter</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/SampleAttribute"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/samplingEffort-2009-08-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/samplingEffort">
         <rdfs:label xml:lang="en">Sampling Effort</rdfs:label>
         <rdfs:comment xml:lang="en">The amount of effort expended during an Event.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "40 trap-nights", "10 observer-hours; 10 km by foot; 30 km by car"</dcterms:description>
@@ -6262,7 +6262,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/AreaDetail</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/samplingProtocol-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/samplingProtocol">
         <rdfs:label xml:lang="en">Sampling Protocol</rdfs:label>
         <rdfs:comment xml:lang="en">The name of, reference to, or description of the method or protocol used during an Event.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "UV light trap", "mist net", "bottom trawl", "ad hoc observation", "point count", "Penguins from space: faecal stains reveal the location of emperor penguin colonies, http://dx.doi.org/10.1111/j.1466-8238.2009.00467.x", "Takats et al. 2001. Guidelines for Nocturnal Owl Monitoring in North America. Beaverhill Bird Observatory and Bird Studies Canada, Edmonton, Alberta. 32 pp.", "http://www.bsc-eoc.org/download/Owl.pdf"</dcterms:description>
@@ -6325,7 +6325,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/FullScientificNameString</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/scientificName-2009-09-21">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/scientificName">
         <rdfs:label xml:lang="en">Scientific Name</rdfs:label>
         <rdfs:comment xml:lang="en">The full scientific name, with authorship and date information if known. When forming part of an Identification, this should be the name in lowest level taxonomic rank that can be determined. This term should not contain identification qualifications, which should instead be supplied in the IdentificationQualifier term.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "Coleoptera" (order), "Vespertilionidae" (family), "Manis" (genus), "Ctenomys sociabilis" (genus + specificEpithet), "Ambystoma tigrinum diaboli" (genus + specificEpithet + infraspecificEpithet), "Roptrocerus typographi (Györfi, 1952)" (genus + specificEpithet + scientificNameAuthorship), "Quercus agrifolia var. oxyadenia (Torr.) J.T. Howell" (genus + specificEpithet + taxonRank + infraspecificEpithet + scientificNameAuthorship)</dcterms:description>
@@ -6362,7 +6362,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:status>superseded</dwcattributes:status>
         <dwcattributes:abcdEquivalence>{DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Bacterial/ParentheticalAuthorTeamAndYear + DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Bacterial/AuthorTeamAndYear} or {DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Botanical/AuthorTeamParenthesis + DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Botanical/AuthorTeam} or {DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Zoological/AuthorTeamOriginalAndYear + [= or] DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Zoological/AuthorTeamParenthesisAndYear}</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/scientificNameAuthorship-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/scientificNameAuthorship">
         <rdfs:label xml:lang="en">Scientific Name Authorship</rdfs:label>
         <rdfs:comment xml:lang="en">The authorship information for the scientificName formatted according to the conventions of the applicable nomenclaturalCode.</rdfs:comment>
         <dcterms:description xml:lang="en">Example: "(Torr.) J.T. Howell", "(Martinovský) Tzvelev", "(Györfi, 1952)"</dcterms:description>
@@ -6390,7 +6390,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/scientificNameID-2009-08-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/scientificNameID">
         <rdfs:label xml:lang="en">Scientific Name ID</rdfs:label>
         <rdfs:comment xml:lang="en">An identifier for the nomenclatural (not taxonomic) details of a scientific name.</rdfs:comment>
         <dcterms:description xml:lang="en">Example: "urn:lsid:ipni.org:names:37829-1:1.3"</dcterms:description>
@@ -6454,7 +6454,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:status>superseded</dwcattributes:status>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Sex</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/sex-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/sex">
         <rdfs:label xml:lang="en">Sex</rdfs:label>
         <rdfs:comment xml:lang="en">The sex of the biological individual(s) represented in the Occurrence. Recommended best practice is to use a controlled vocabulary.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "female", "hermaphrodite", "8 males, 4 females"</dcterms:description>
@@ -6526,7 +6526,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:status>superseded</dwcattributes:status>
         <dwcattributes:abcdEquivalence>{DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Bacterial/SpeciesEpithet or DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Botanical/FirstEpithet or DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Zoological/SpeciesEpithet}</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/specificEpithet-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/specificEpithet">
         <rdfs:label xml:lang="en">Specific Epithet</rdfs:label>
         <rdfs:comment xml:lang="en">The name of the first or species epithet of the scientificName.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "concolor", "gottschei"</dcterms:description>
@@ -6562,7 +6562,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:status>superseded</dwcattributes:status>
         <dwcattributes:abcdEquivalence>accessible from DataSets/DataSet/Units/Unit/Gathering/ISODateTimeBegin</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/startDayOfYear-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/startDayOfYear">
         <rdfs:label xml:lang="en">Start Day Of Year</rdfs:label>
         <rdfs:comment xml:lang="en">The earliest ordinal day of the year on which the Event occurred (1 for January 1, 365 for December 31, except in a leap year, in which case it is 366).</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "1" (=1 Jan), "366" (=31 Dec), "365" (=30 Dec in a leap year, 31 Dec in a non-leap year)</dcterms:description>
@@ -6691,7 +6691,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:status>superseded</dwcattributes:status>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/NamedAreas/NamedArea/AreaName with NamedAreas/NamedArea/AreaClass= State or = Province (etc.)</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/stateProvince-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/stateProvince">
         <rdfs:label xml:lang="en">State Province</rdfs:label>
         <rdfs:comment xml:lang="en">The name of the next smaller administrative region than country (state, province, canton, department, region, etc.) in which the Location occurs.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "Montana", "Minas Gerais", "Córdoba"</dcterms:description>
@@ -6730,7 +6730,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Zoological/Subgenus</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/subgenus-2009-08-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/subgenus">
         <rdfs:label xml:lang="en">Subgenus</rdfs:label>
         <rdfs:comment xml:lang="en">The full scientific name of the subgenus in which the taxon is classified. Values should include the genus to avoid homonym confusion.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "Strobus (Pinus)", "Puma (Puma)" "Loligo (Amerigo)", "Hieracium subgen. Pilosella"</dcterms:description>
@@ -6803,7 +6803,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-26_15"/>
         <dwcattributes:abcdEquivalence>no simple equivalent in ABCD</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/Taxon-2014-10-23">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/Taxon">
         <rdfs:label xml:lang="en">Taxon</rdfs:label>
         <rdfs:comment xml:lang="en">A group of organisms (sensu http://purl.obolibrary.org/obo/OBI_0100026) considered by taxonomists to form a homogeneous unit.</rdfs:comment>
         <dcterms:description xml:lang="en">Example: The genus Truncorotaloides as published by Brönnimann et al. in 1953 in the Journal of Paleontology Vol. 27(6) p. 817-820.</dcterms:description>
@@ -6856,7 +6856,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/taxonConceptID-2009-09-21">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/taxonConceptID">
         <rdfs:label xml:lang="en">Taxon Concept ID</rdfs:label>
         <rdfs:comment xml:lang="en">An identifier for the taxonomic concept to which the record refers - not for the nomenclatural details of a taxon.</rdfs:comment>
         <dcterms:description xml:lang="en">Example: "8fa58e08-08de-4ac1-b69c-1235340b7001"</dcterms:description>
@@ -6884,7 +6884,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/taxonID-2009-08-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/taxonID">
         <rdfs:label xml:lang="en">Taxon ID</rdfs:label>
         <rdfs:comment xml:lang="en">An identifier for the set of taxon information (data associated with the Taxon class). May be a global unique identifier or an identifier specific to the data set.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "8fa58e08-08de-4ac1-b69c-1235340b7001", "32567", "http://species.gbif.org/abies_alba_1753", "urn:lsid:gbif.org:usages:32567"</dcterms:description>
@@ -6913,7 +6913,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/taxonomicStatus-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/taxonomicStatus">
         <rdfs:label xml:lang="en">Taxonomic Status</rdfs:label>
         <rdfs:comment xml:lang="en">The status of the use of the scientificName as a label for a taxon. Requires taxonomic opinion to define the scope of a taxon. Rules of priority then are used to define the taxonomic status of the nomenclature contained in that scope, combined with the experts opinion. It must be linked to a specific taxonomic reference that defines the concept. Recommended best practice is to use a controlled vocabulary.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "invalid", "misapplied", "homotypic synonym", "accepted"</dcterms:description>
@@ -6940,7 +6940,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/ScientificName/NameAtomised/Botanical/Rank</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/taxonRank-2009-09-21">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/taxonRank">
         <rdfs:label xml:lang="en">Taxon Rank</rdfs:label>
         <rdfs:comment xml:lang="en">The taxonomic rank of the most specific name in the scientificName. Recommended best practice is to use a controlled vocabulary.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "subspecies", "varietas", "forma", "species", "genus"</dcterms:description>
@@ -6967,7 +6967,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/taxonRemarks-2009-08-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/taxonRemarks">
         <rdfs:label xml:lang="en">Taxon Remarks</rdfs:label>
         <rdfs:comment xml:lang="en">Comments or notes about the taxon or name.</rdfs:comment>
         <dcterms:description xml:lang="en">Example: "this name is a misspelling in common use"</dcterms:description>
@@ -7087,7 +7087,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/SpecimenUnit/NomenclaturalTypeDesignations/NomenclaturalTypeText</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Identification"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/typeStatus-2014-10-23">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/typeStatus">
         <rdfs:label xml:lang="en">Type Status</rdfs:label>
         <rdfs:comment xml:lang="en">A list (concatenated and separated) of nomenclatural types (type status, typified scientific name, publication) applied to the subject.</rdfs:comment>
         <dcterms:description xml:lang="en">The recommended best practice is to separate the values with a vertical bar (' | '). Examples: "holotype of Ctenomys sociabilis. Pearson O. P., and M. I. Christie. 1985. Historia Natural, 5(37):388", "holotype of Pinus abies | holotype of Picea abies".</dcterms:description>
@@ -7147,7 +7147,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:status>superseded</dwcattributes:status>
         <dwcattributes:abcdEquivalence>{DataSets/DataSet/Units/Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesLatLon/CoordinatesText or DataSets/DataSet/Units/Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesUTM/UTMText}</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/verbatimCoordinates-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/verbatimCoordinates">
         <rdfs:label xml:lang="en">Verbatim Coordinates</rdfs:label>
         <rdfs:comment xml:lang="en">The verbatim original spatial coordinates of the Location. The coordinate ellipsoid, geodeticDatum, or full Spatial Reference System (SRS) for these coordinates should be stored in verbatimSRS and the coordinate system should be stored in verbatimCoordinateSystem.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "41 05 54S 121 05 34W", "17T 630000 4833400"</dcterms:description>
@@ -7173,7 +7173,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:status>superseded</dwcattributes:status>
         <dwcattributes:abcdEquivalence>(partly) DataSets/DataSet/Units/Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesGrid/GridCellSystem</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/verbatimCoordinateSystem-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/verbatimCoordinateSystem">
         <rdfs:label xml:lang="en">Verbatim Coordinate System</rdfs:label>
         <rdfs:comment xml:lang="en">The spatial coordinate system for the verbatimLatitude and verbatimLongitude or the verbatimCoordinates of the Location. Recommended best practice is to use a controlled vocabulary.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "decimal degrees", "degrees decimal minutes", "degrees minutes seconds", "UTM"</dcterms:description>
@@ -7210,7 +7210,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:status>superseded</dwcattributes:status>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/Depth/MeasurementOrFactText</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/verbatimDepth-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/verbatimDepth">
         <rdfs:label xml:lang="en">Verbatim Depth</rdfs:label>
         <rdfs:comment xml:lang="en">The original description of the depth below the local surface.</rdfs:comment>
         <dcterms:description xml:lang="en">Example: "100-200 m"</dcterms:description>
@@ -7247,7 +7247,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:status>superseded</dwcattributes:status>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/Altitude/MeasurementOrFactText</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/verbatimElevation-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/verbatimElevation">
         <rdfs:label xml:lang="en">Verbatim Elevation</rdfs:label>
         <rdfs:comment xml:lang="en">The original description of the elevation (altitude, usually above sea level) of the Location.</rdfs:comment>
         <dcterms:description xml:lang="en">Example: "100-200 m"</dcterms:description>
@@ -7261,7 +7261,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/Altitude/MeasurementOrFactText</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/verbatimEventDate-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/verbatimEventDate">
         <rdfs:label xml:lang="en">Verbatim EventDate</rdfs:label>
         <rdfs:comment xml:lang="en">The verbatim original representation of the date and time information for an Event.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "spring 1910", "Marzo 2002", "1999-03-XX", "17IV1934"</dcterms:description>
@@ -7298,7 +7298,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:status>superseded</dwcattributes:status>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesLatLon/VerbatimLatitude</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/verbatimLatitude-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/verbatimLatitude">
         <rdfs:label xml:lang="en">Verbatim Latitude</rdfs:label>
         <rdfs:comment xml:lang="en">The verbatim original latitude of the Location. The coordinate ellipsoid, geodeticDatum, or full Spatial Reference System (SRS) for these coordinates should be stored in verbatimSRS and the coordinate system should be stored in verbatimCoordinateSystem.</rdfs:comment>
         <dcterms:description xml:lang="en">Example: "41 05 54.03S"</dcterms:description>
@@ -7312,7 +7312,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesLatLon/VerbatimLatitude</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/verbatimLocality-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/verbatimLocality">
         <rdfs:label xml:lang="en">Verbatim Locality</rdfs:label>
         <rdfs:comment xml:lang="en">The original textual description of the place.</rdfs:comment>
         <dcterms:description xml:lang="en">Example: "25 km NNE Bariloche por R. Nac. 237"</dcterms:description>
@@ -7348,7 +7348,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:status>superseded</dwcattributes:status>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesLatLon/VerbatimLongitude</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/verbatimLongitude-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/verbatimLongitude">
         <rdfs:label xml:lang="en">Verbatim Longitude</rdfs:label>
         <rdfs:comment xml:lang="en">The verbatim original longitude of the Location. The coordinate ellipsoid, geodeticDatum, or full Spatial Reference System (SRS) for these coordinates should be stored in verbatimSRS and the coordinate system should be stored in verbatimCoordinateSystem.</rdfs:comment>
         <dcterms:description xml:lang="en">Example: "121d 10' 34" W"</dcterms:description>
@@ -7362,7 +7362,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesLatLon/VerbatimLongitude</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/verbatimRank-2009-09-21">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/verbatimTaxonRank">
         <rdfs:label xml:lang="en">Verbatim Taxon Rank</rdfs:label>
         <rdfs:comment xml:lang="en">The taxonomic rank of the most specific name in the scientificName as it appears in the original record.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "Agamospecies", "sub-lesus", "prole", "apomict", "nothogrex", "sp.", "subsp.", "var."</dcterms:description>
@@ -7370,7 +7370,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:issued>2009-07-06</dcterms:issued>
         <dcterms:modified>2009-09-21</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#verbatimRank-2009-09-21"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#verbatimTaxonRank-2009-09-21"/>
         <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/verbatimScientificNameRank-2009-07-06"/>
         <dwcattributes:status>recommended</dwcattributes:status>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
@@ -7389,7 +7389,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/verbatimSRS-2009-07-06">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/verbatimSRS">
         <rdfs:label xml:lang="en">Verbatim SRS</rdfs:label>
         <rdfs:comment xml:lang="en">The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which coordinates given in verbatimLatitude and verbatimLongitude, or verbatimCoordinates are based. Recommended best practice is use the EPSG code as a controlled vocabulary to provide an SRS, if known. Otherwise use a controlled vocabulary for the name or code of the geodetic datum, if known. Otherwise use a controlled vocabulary for the name or code of the ellipsoid, if known. If none of these is known, use the value "unknown".</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "EPSG:4326", "WGS84", "NAD27", "Campo Inchauspe", "European 1950", "Clarke 1866"</dcterms:description>
@@ -7402,7 +7402,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/vernacularName-2009-07-06">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/vernacularName">
         <rdfs:label xml:lang="en">Vernacular Name</rdfs:label>
         <rdfs:comment xml:lang="en">A common or vernacular name.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "Andean Condor", "Condor Andino", "American Eagle", "Gänsegeier"</dcterms:description>
@@ -7427,7 +7427,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:status>superseded</dwcattributes:status>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/NamedAreas/NamedArea/AreaName with NamedAreas/NamedArea/AreaClass= Water body</dwcattributes:abcdEquivalence>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/waterBody-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/waterBody">
         <rdfs:label xml:lang="en">Water Body</rdfs:label>
         <rdfs:comment xml:lang="en">The name of the water body in which the Location occurs. Recommended best practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names.</rdfs:comment>
         <dcterms:description xml:lang="en">Examples: "Indian Ocean", "Baltic Sea", "Hudson River"</dcterms:description>
@@ -7441,7 +7441,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/NamedAreas/NamedArea/AreaName with NamedAreas/NamedArea/AreaClass= Water body</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/year-2009-04-24">
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/year">
         <rdfs:label xml:lang="en">Year</rdfs:label>
         <rdfs:comment xml:lang="en">The four-digit year in which the Event occurred, according to the Common Era Calendar.</rdfs:comment>
         <dcterms:description xml:lang="en">Example: "2008"</dcterms:description>
