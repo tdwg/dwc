@@ -1,269 +1,81 @@
 ﻿<!DOCTYPE html>
-
 <html lang="en">
 <head>
-  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-
-  <title>Darwin Core Text Guide</title>
-  <link href="http://rs.tdwg.org/dwc/" rel="schema.DwC">
-  <meta content="Darwin Core Text Guide" name="DC.title">
-  <meta content="Guidelines for implementing Darwin Core in Text files." name=
-  "DC.description">
-  <meta content="biodiversity, standards" name="DC.subject">
-  <meta content="Darwin Core Task Group" name="DC.creator">
-  <meta content="Tim Robertson (GBIF)" name="DC.contributor">
-  <meta content="John Wieczorek (MVZ)" name="DC.contributor">
-  <meta content="Markus Döring (GBIF)" name="DC.contributor">
-  <meta content="Renato De Giovanni (CRIA)" name="DC.contributor">
-  <meta content="Dave Vieglais (KUNHM)" name="DC.contributor">
-  <meta content="2009-02-12" name="DC.dateAccepted">
-  <meta content="http://rs.tdwg.org/dwc/2009-12-07/terms/guides/text/" name=
-  "DC.replaces">
-  <meta content="2014-11-08" name="DC.modified">
-  <meta content="http://rs.tdwg.org/dwc/2014-11-08/terms/guides/text" name=
-  "DC.identifier">
-  <meta content="text/html" name="DC.format">
-  <meta content="Biodiversity Information Standards TDWG" name="DC.publisher">
-  <meta content="http://creativecommons.org/licenses/by/4.0/legalcode" name=
-  "DC.license">
-  <meta content="public" name="DC.accessRights">
-  <meta content="Darwin Core Text Guide. 2014" name="DC.bibliographicCitation">
-  <meta content="en" name="DC.language">
-  <link href="http://www.tdwg.org/" rel="meta">
-  <link href="../../../DarwinCore_files/default.css" rel="stylesheet" type=
-  "text/css">
-  <script src="../../../DarwinCore_files/default.js" type="text/javascript"></script>
+    <meta charset="utf-8">
+    <title>Darwin Core Text Guide</title>
+    <link href="http://rs.tdwg.org/dwc/" rel="schema.DwC">
+    <meta content="Darwin Core Text Guide" name="DC.title">
+    <meta content="Guidelines for implementing Darwin Core in Text files." name="DC.description">
+    <meta name="DC.modified" content="2015-01-13"><!-- Also update in footer -->
+    
+    <meta name="dcterms.subject" content="biodiversity, standards">
+    <meta name="dcterms.creator" content="Darwin Core Task Group">
+    <meta name="dcterms.contributor" content="John Wieczorek (MVZ)">
+    <meta name="dcterms.contributor" content="Markus Döring (GBIF)">
+    <meta name="dcterms.contributor" content="Renato De Giovanni (CRIA)">
+    <meta name="dcterms.contributor" content="Tim Robertson (GBIF)">
+    <meta name="dcterms.contributor" content="Dave Vieglais (KUNHM)">
+    <meta name="dcterms.contributor" content="Peter Desmet (INBO)">
+    <meta name="dcterms.publisher" content="Biodiversity Information Standards (TDWG)">
+    <meta name="dcterms.license" content="http://creativecommons.org/licenses/by/4.0/legalcode">
+    <meta name="dcterms.language" content="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../../assets/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/main.css">
+    <link href="http://www.tdwg.org/" rel="meta">    
 </head>
 
 <body>
-  <table border="0" cellpadding="0" cellspacing="0" style=
-  "background-color: #617394" width="100%">
-    <tbody>
-      <tr>
-        <td>
-          <a href="http://www.tdwg.org"><img alt=
-          "Biodiversity Information Standards (TDWG) logo" height="89" src=
-          "../../../DarwinCore_files/TDWGlogo_Twiki.gif" width="148"></a>
-        </td>
-
-        <td align="right" height="100" valign="top" width="100%"></td>
-      </tr>
-    </tbody>
-  </table>
-
-  <table border="0" cellpadding="0" cellspacing="0" width="100%">
-    <tbody>
-      <tr>
-        <td style="background-color: #617394" width="15%">
-          <div id="menu">
-            <div class="topMenu" id="nav">
-              <div class="menuItem level1">
-                <a href="../../../index.htm" onfocus=
-                "blurLink(this);">Introduction</a>
-              </div>
-              <!--        <div class="menuItem"><a href="../../../index.htm#glossary" onfocus="blurLink(this);">Glossary</a></div> -->
-
-              <div class="subMenu">
-                <div class="menuItem">
-                  <a href="../../../index.htm#references" onfocus=
-                  "blurLink(this);">References</a>
-                </div>
-              </div>
-
-              <div class="menuItem level1">
-                <a href="../../index.htm" onfocus="blurLink(this);">Quick
-                Reference Guide</a>
-              </div>
-
-              <div class="menuItem level1">
-                <a href="../../simple/index.htm" onfocus=
-                "blurLink(this);">Simple Darwin Core</a>
-              </div>
-
-              <div class="separator">
-                <hr>
-              </div>
-
-              <div class="menuItem level1">
-                <a href="../../namespace/index.htm" onfocus=
-                "blurLink(this);">Namespace Policy</a>
-              </div>
-
-              <div class="menuItem level1 highlighted">
-                <a href="../text/index.htm" onfocus="blurLink(this);">Text
-                Guide</a>
-              </div>
-
-              <div class="subMenu">
-                <div class="menuItem">
-                  <a href="./index.htm#introduction" onfocus=
-                  "blurLink(this);">Introduction</a>
-                </div>
-              </div>
-
-              <div class="subMenu">
-                <div class="menuItem">
-                  <a href="./index.htm#metafile" onfocus=
-                  "blurLink(this);">Metafile Content</a>
-                </div>
-              </div>
-
-              <div class="subMenu">
-                <div class="menuItem">
-                  <a href="./index.htm#implement" onfocus=
-                  "blurLink(this);">Implementation Guide</a>
-                </div>
-              </div>
-
-              <div class="subMenu">
-                <div class="menuItem">
-                  <a href="./index.htm#database" onfocus=
-                  "blurLink(this);">Database Example</a>
-                </div>
-              </div>
-
-              <div class="subMenu">
-                <div class="menuItem">
-                  <a href="./index.htm#tools" onfocus=
-                  "blurLink(this);">Tools</a>
-                </div>
-              </div>
-
-              <div class="menuItem level1">
-                <a href="../xml/index.htm" onfocus="blurLink(this);">XML
-                Guide</a>
-              </div>
-
-              <div class="separator">
-                <hr>
-              </div>
-
-              <div class="menuItem level1">
-                <a href="../../history/index.htm" onfocus=
-                "blurLink(this);">Complete History</a>
-              </div>
-
-              <div class="menuItem level1">
-                <a href="../../history/decisions/index.htm" onfocus=
-                "blurLink(this);">Decision History</a>
-              </div>
-
-              <div class="menuItem level1">
-                <a href="../../history/dwctoabcd/index.htm" onfocus=
-                "blurLink(this);">Mapping to ABCD</a>
-              </div>
-
-              <div class="menuItem level1">
-                <a href="../../history/versions/index.htm" onfocus=
-                "blurLink(this);">Mapping to Old Versions</a>
-              </div>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">Darwin Core</a>
             </div>
-          </div>
-        </td>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="../terms/index.html">Terms</a></li>
+                    <li><a href="../examples/index.html">Examples</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Reference <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="../../change_policy.html">Change policy</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../../simple_dwc.html">Simple Darwin Core</a></li>
+                            <li class="divider"></li>
+                            <li class="active"><a href="../text/index.html">Text guide</a></li>
+                            <li><a href="../xml/index.html">XML guide</a></li>
+                            <li class="disabled"><a href="../rdf/index.html">RDF guide</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../../terms/history.html">Term history</a></li>
+                            <li><a href="../../terms/decisions.html">Term decisions</a></li>
+                            <li><a href="../../terms/mappings.html">Term mappings</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="../../resources/index.html">Resources</a></li>
+                    <li><a href="http://github.com/tdwg/dwc">Source</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="content">
+        <div class="container">
+            <div class="page-header">
+                <h1>Darwin Core Text Guide</h1>
+            </div>            
 
-        <td>
-          <center><h1>Darwin Core Text Guide</h1></center>
-
-          <p></p>
-
-          <table cellspacing="0" class="docinfo">
-            <tbody>
-              <tr>
-                <th>Title:</th>
-
-                <td>Darwin Core Text Guide</td>
-              </tr>
-
-              <tr>
-                <th>Date Issued:</th>
-
-                <td>2009-02-12</td>
-              </tr>
-
-              <tr>
-                <th>Date Modified:</th>
-
-                <td>2014-11-08</td>
-              </tr>
-
-              <tr>
-                <th>Abstract:</th>
-
-                <td>Guidelines for implementing Darwin Core in Text files.</td>
-              </tr>
-
-              <tr>
-                <th>Contributors:</th>
-
-                <td>Tim Robertson (GBIF), Markus D&#246;ring (GBIF), John
-                Wieczorek (MVZ), Renato De Giovanni (CRIA), Dave Vieglais
-                (KUNHM)</td>
-              </tr>
-
-              <tr>
-                <th>Legal:</th>
-
-                <td>This document is governed by the standard legal, copyright,
-                licensing provisions and disclaimers issued by the Taxonomic
-                Databases Working Group.</td>
-              </tr>
-
-              <tr>
-                <th>Part of TDWG Standard:</th>
-
-                <td>
-                  <a href=
-                  "http://www.tdwg.org/standards/450/">http://www.tdwg.org/standards/450/</a>
-                </td>
-              </tr>
-
-              <tr>
-                <th>Creator:</th>
-
-                <td>Darwin Core Task Group</td>
-              </tr>
-
-              <tr>
-                <th>Identifier:</th>
-
-                <td>http://rs.tdwg.org/dwc/2014-11-08/terms/guides/text/</td>
-              </tr>
-
-              <tr>
-                <th>Latest Version:</th>
-
-                <td>
-                  <a href=
-                  "http://rs.tdwg.org/dwc/terms/guides/text/index.htm">http://rs.tdwg.org/dwc/terms/guides/text/</a>
-                </td>
-              </tr>
-
-              <tr>
-                <th>Replaces:</th>
-
-                <td>
-                  <a href=
-                  "http://rs.tdwg.org/dwc/2009-12-07/terms/guides/text/index.htm">
-                  http://rs.tdwg.org/dwc/2009-12-07/terms/guides/text/</a>
-                </td>
-              </tr>
-
-              <tr>
-                <th>Document Status:</th>
-
-                <td>Current Standard</td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-    </tbody>
-  </table><a id="introduction" name="introduction"></a>
-
-  <h2>1. Introduction</h2><b>Audience</b>: This document is targeted toward
+            <h2 id="introduction">1. Introduction</h2>
+            
+  <p><b>Audience</b>: This document is targeted toward
   those who wish to use or share information based on the Darwin Core terms
   using text files. It provides technical details on how to construct these
-  files and complementary metadata files that describe their content.
+  files and complementary metadata files that describe their content.</p> 
 
   <p>This document provides guidelines for formatting and sharing Darwin Core
   terms [<a href="../../index.htm">TERMS</a>] in <em>fielded text</em> formats,
@@ -272,9 +84,11 @@
   format and having the first row include Darwin Core standard term names) can
   be shared in a single file, while a non-standard text file can be understood
   using an [<a href="http://www.w3.org/XML/">XML</a>] metafile to describe its
-  contents and formatting.<br>
-  <img src="images/usage.png"><br>
-  More complex structure can be shared in multiple related files. The
+  contents and formatting.</p>
+  
+  <img src="images/usage.png">
+  
+  <p>More complex structure can be shared in multiple related files. The
   description of content and relationships between files can be achieved using
   the metafile. This guideline makes recommendations for the simple case of a
   <em>core</em> file, upon which Darwin Core <em>records</em> are based, and
@@ -285,15 +99,21 @@
   contains one or more identifications for those specimens, with one
   identification per row in the extension file, and with an identifier to the
   specimen for each identification row. This example would allow many
-  identifications to be associated with each specimen.</p>
+  identifications to be associated with each specimen.</p>    
+    
+    
+  <h3 id="simple">1.1 Simple Example Metafile Content</h3>
+  <p>A simple comma separated values
+  (CSV) data file with the following content:</p>
 
-  <h3>1.1 Simple Example Metafile Content</h3>A simple comma separated values
-  (CSV) data file with the following content:
   <pre class="example">
 ID,Species,Count
 123,"Cryptantha gypsophila Reveal & C.R. Broome",12
 124,"Buxbaumia piperi",2 
-</pre>can be described with the following Darwin Core metafile:
+</pre>
+
+<p>can be described with the following Darwin Core metafile:</p>
+
   <pre class="example">
 &lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;archive xmlns="http://rs.tdwg.org/dwc/text/"
@@ -312,8 +132,10 @@ ID,Species,Count
   &lt;/core&gt;
 &lt;/archive&gt;
 </pre>
+
   <p>These same data could be understood without the metafile if the first row
-  of the CSV file contained the term names:
+  of the CSV file contained the term names:</p>
+  
   <pre class="example">
 type,institutionCode,collectionCode,catalogNumber,scientificName,individualCount,datasetID
 PhysicalObject,ANSP,PH,123,"Cryptantha gypsophila Reveal & C.R. Broome",12,urn:lsid:tim.lsid.tdwg.org:collections:1
@@ -341,9 +163,9 @@ PhysicalObject,ANSP,PH,124,"Buxbaumia piperi",2,urn:lsid:tim.lsid.tdwg.org:colle
     another system. It could be that this system would then serve the data in
     another format such as XML.</li>
   </ul>
-  <p><a id="metafile" name="metafile"></a>
-
-  <h2>2. Metafile Content</h2>
+  
+  
+  <h2 id="metafile">2. Metafile Content</h2>
 
   <p>The text metafile schema [<a href=
   "../../../text/tdwg_dwc_text.xsd">TEXTSCHEMA</a>] provides technical details
@@ -352,12 +174,14 @@ PhysicalObject,ANSP,PH,124,"Buxbaumia piperi",2,urn:lsid:tim.lsid.tdwg.org:colle
   elements and attributes, with descriptions and specifications for their use
   in a metafile, are described in the following table.</p>
 
-  <h3>2.1 The &lt;archive&gt; element</h3>The &lt;archive&gt; element is the
+  <h3>2.1 The &lt;archive&gt; element</h3>
+  
+  <p>The &lt;archive&gt; element is the
   container for the list of related files (one core and zero or more
   extensions). The &lt;archive&gt; element has just one attribute,
-  <em>metadata</em>.
+  <em>metadata</em>.</p>
 
-  <p></p>Attributes
+  <h4>Attributes</h4>
 
   <table class="border">
     <thead>
@@ -433,12 +257,11 @@ PhysicalObject,ANSP,PH,124,"Buxbaumia piperi",2,urn:lsid:tim.lsid.tdwg.org:colle
       </tr>
     </tbody>
   </table>
-  <p>
 
-  <h3><a id="coreTag" name="coreTag">2.2 The &lt;core&gt; or &lt;extension&gt;
-  element</a></h3>
 
-  <p></p>Attributes
+  <h3 id="coreTag">2.2 The &lt;core&gt; or &lt;extension&gt; element</h3>
+
+  <h4>Attributes</h4>
 
   <table class="border">
     <thead>
@@ -689,9 +512,9 @@ PhysicalObject,ANSP,PH,124,"Buxbaumia piperi",2,urn:lsid:tim.lsid.tdwg.org:colle
       </tr>
     </tbody>
   </table>
-  <p>
 
-  <h3><a id="files" name="files">2.3 The &lt;files&gt; element</a></h3>
+
+  <h3 id="files">2.3 The &lt;files&gt; element</h3>
 
   <p>The files element must contain one or more &lt;location&gt; elements, each
   defining where a file resides. Each core or extension entity can be composed
@@ -699,7 +522,7 @@ PhysicalObject,ANSP,PH,124,"Buxbaumia piperi",2,urn:lsid:tim.lsid.tdwg.org:colle
   &lt;location&gt; element multiple times, once for each file that makes up the
   entity.</p>
 
-  <p></p>Elements
+  <h4>Elements</h4>  
 
   <table class="border">
     <thead>
@@ -730,15 +553,15 @@ PhysicalObject,ANSP,PH,124,"Buxbaumia piperi",2,urn:lsid:tim.lsid.tdwg.org:colle
       </tr>
     </tbody>
   </table>
-  <p>
 
-  <h3><a id="fieldTag" name="fieldTag">2.4 The &lt;field&gt;
-  element</a></h3>The field element is used to specify the location and content
+
+  <h3 id="fieldTag">2.4 The &lt;field&gt; element</h3>
+  <p>The field element is used to specify the location and content
   of data within a file. There must be one field element for every term being
   shared for the entity, whether explicitly or through the use of a default
-  value for all rows in the file.
+  value for all rows in the file.</p>
 
-  <p></p>Attributes
+  <h4>Attributes</h4>  
 
   <table class="border">
     <thead>
@@ -806,11 +629,13 @@ PhysicalObject,ANSP,PH,124,"Buxbaumia piperi",2,urn:lsid:tim.lsid.tdwg.org:colle
       </tr>
     </tbody>
   </table>
-  <p><a id="implement" name="implement"></a>
 
-  <h2>3. Implementation Guide</h2>
 
-  <h3>3.1 Extension example</h3>The following example illustrates the use of
+
+  <h2 id="implement">3. Implementation Guide</h2>
+
+  <h3>3.1 Extension example</h3>
+  <p>The following example illustrates the use of
   extensions. In this example there are three files in the archive, all of
   which are located in the same directory as the metafile. The whales.txt file
   acts as a core file of Taxon records. The whales.txt file is extended by two
@@ -823,8 +648,10 @@ PhysicalObject,ANSP,PH,124,"Buxbaumia piperi",2,urn:lsid:tim.lsid.tdwg.org:colle
   files are related to the core file by the taxonNameID fields. Presumably,
   this archive contains information about whale species, type specimen records
   for those species, and lists of countries and the threat status for those
-  species.<br>
-  <img src="images/extension.png"><br>
+  species.</p>
+  
+  <img src="images/extension.png">
+  
   <pre class="example">
 &lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;archive xmlns="http://rs.tdwg.org/dwc/text/"
@@ -870,16 +697,20 @@ PhysicalObject,ANSP,PH,124,"Buxbaumia piperi",2,urn:lsid:tim.lsid.tdwg.org:colle
     &lt;field index=&quot;3&quot; term=&quot;http://rs.tdwg.org/dwc/terms/occurrenceStatus&quot;/&gt;
   &lt;/extension&gt;
 &lt;/archive&gt;
-</pre><a id="database" name="database"></a>
+</pre>
 
-  <h2>4. Database Example</h2>
 
-  <h3>4.1 MySQL</h3>It is very easy to produce <em>fielded text</em> using the
+  <h2 id="database">4. Database Example</h2>
+
+  <h3>4.1 MySQL</h3>
+
+  <p>It is very easy to produce <em>fielded text</em> using the
   <code>SELECT INTO outfile</code> command from MySQL. The encoding of the
   resulting file will depend on the server variables and collations used, and
   might need to be modified before the operation is done. Note that MySQL will
   export NULL values as \N by default. Use the IFNULL() function as shown in
-  the following example to avoid this.
+  the following example to avoid this.</p>
+
   <pre class="example">
 SELECT 
   IFNULL(id, ''), IFNULL(scientific_name, ''), IFNULL(count,'') 
@@ -891,30 +722,43 @@ FROM
   dwc;
 </pre><a id="tools" name="tools"></a>
 
-  <h2>5. Tools</h2>
+  <h2 id="tools">5. Tools</h2>
 
   <p>For tools and applications, including a Java-based application to read
   Darwin Core text archives, see the <i>Darwin Core Tools and Applications</i>
   page [<a href=
-  "https://github.com/tdwg/dwc-documentation/blob/master/doc/resources.md">TOOLS</a>].</p>
-  <hr>
-  <!-- Footer -->
+  "https://github.com/tdwg/dwc-documentation/blob/master/doc/resources.md">TOOLS</a>].</p>    
+    
+        </div>
+    </div>
 
-  <p>Except where otherwise noted, content on this site is licensed under a
-  <a href="http://creativecommons.org/licenses/by/4.0/" rel="license">Creative
-  Commons Attribution 4.0 International License</a>.</p>
-
-  <p><a href="http://creativecommons.org/licenses/by/4.0/" rel=
-  "license"><img alt="Creative Commons License" id="creative_commons_icon" src=
-  "http://i.creativecommons.org/l/by/4.0/88x31.png"></a> Copyright 2011-2014 -
-  Biodiversity Information Standards - TDWG - <a href=
-  "http://www.tdwg.org/about-tdwg/contact-us/">Contact Us</a><br>
-  <!-- The following is used to register Google Analytics for Darwin Core -->
-   <script src="http://www.google-analytics.com/urchin.js" type=
-  "text/javascript"></script> <script type="text/javascript">
-
-  _uacct = "UA-386033-4";
-  urchinTracker();
-  </script></p>
-</body>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4">
+                    <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png"/></a></p>
+                </div>
+                <div class="col-xs-8">
+                    <ul class="list-inline pull-right">
+                        <li>Page last modified on 2015-01-13</li>
+                        <li><a href="https://github.com/tdwg/dwc/blob/gh-pages/resources.html">Edit on GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+      
+    <!-- Scripts -->
+    <script type="text/javascript" src="../../assets/jquery.min.js"></script>
+    <script type="text/javascript" src="../../assets/bootstrap.min.js"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+        ga('create', 'UA-386033-4', 'auto');
+        ga('send', 'pageview');
+    </script>
+    </body>
 </html>
