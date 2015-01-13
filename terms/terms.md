@@ -8,7 +8,7 @@ These pages provide a list of all of the current terms of the Darwin core. The t
 
 ### dcterms:language
 
-**Quick reference**: <http://rs.tdwg.org/dwc/terms/index.htm#dcterms:language>
+**Quick reference**: <http://rs.tdwg.org/dwc/terms/index.htm#language>
 
 As of 2012-04-11, the Dublin Core metadata Initiative recommends the use of a controlled vocabulary such as RFC 4646. For Darwin Core, the latest RFC for ISO 639-1 is the recommended version (RFC 5646 as of 2012-04-11). 
 
