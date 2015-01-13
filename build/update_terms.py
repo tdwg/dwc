@@ -15,9 +15,10 @@ DC=Namespace("http://purl.org/dc/terms/")
 DWCA=Namespace("http://rs.tdwg.org/dwc/terms/attributes/")
 
 def buildHtml():
+    data=parseTerms()
     print """building html files"""
-    html = Template(file="recommended.tmpl", searchList=[parseTerms()])
-    recommended = open("recommended.html", "w")
+    html = Template(file="recommended.tmpl", searchList=[data])
+    recommended = open("../terms/index.html", "w")
     recommended.write(str(html))
     recommended.close()    
 
@@ -26,19 +27,28 @@ def buildDownloads():
     print """TBD"""
 
 
-def getTerm(name, g):
+def veriyfCompleteness(graph, yaml):    
+    print """veriyf graph completeness"""
+    print """TBD"""
+
+def anchorLinks(x):
+    print """TBD"""
+    
+def getTermDef(name, g):
     t={}
+    t["name"]=name
+    t["fullname"]="dwc:"+name
     if name.startswith("DC_"):
         name=name[3:]
         uri=DC[name]
         t["name"]="dcterms:"+name
+        t["fullname"]=t["name"]
     elif name.find(" ") > 0:
         uri=None
-        t["name"]=name
     else:
         uri=DWC[name]
-        t["name"]=name
     t["uri"]=uri
+    t["label"]=g.value(subject=uri, predicate=RDFS.label)
     t["class"]=g.value(subject=uri, predicate=DWCA.organizedInClass)
     t["definition"]=g.value(subject=uri, predicate=RDFS.comment)
     t["comment"]=g.value(subject=uri, predicate=DC.description)
@@ -57,16 +67,17 @@ def parseTerms():
         g.add( (uri, RDFS.comment, Literal(dc[t]["definition"])) )        
         g.add( (uri, DC.description, Literal(dc[t]["comment"])) )        
         g.add( (uri, DC.hasVersion, URIRef(dc[t]["details"])) )
+    # before we continue verify we have all terms covered in both the order yaml and the graph
+    veriyfCompleteness(g, order)
     data={}
     groups=[]
     for groupData in order:
-        group=getTerm(sorted(groupData.keys())[0], g)
+        group=getTermDef(sorted(groupData.keys())[0], g)
         groups.append(group)
         group["terms"]=[]
         for t in sorted(groupData.values())[0]:
-            group["terms"].append(getTerm(t, g))            
+            group["terms"].append(getTermDef(t, g))            
     data["groups"]=groups
-    # print data
     return data
 
 

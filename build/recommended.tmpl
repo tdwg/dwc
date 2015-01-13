@@ -1,22 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
   <title>Darwin Core Terms: A quick reference guide</title>
-  <link rel="stylesheet" href="bootstrap.min.css">  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 </head>
 
-#def showTerm($t)
+<body>
+
+<div class="container">
+
+	<div class="jumbotron">
+	    <h1>Darwin Core Term Reference</h1>
+		<p>This document is a quick reference for all recommended Darwin Core terms. For complete historical term information, including version changes and pre-standard terms, see [<a  href="http://rs.tdwg.org/dwc/terms/history.html">HISTORY</a>]. For a comparative table of elements from pre-standard versions of Darwin Core to the current terms in the standard, see [<a  href="http://rs.tdwg.org/dwc/terms/mappings.html">VERSIONS</a>].</p>
+	</div>
+
+
+<p>
+<strong>Audience</strong>: This document is targeted toward those who need a reference (lists and definitions) to the essential information about the current recommended Darwin Core terms.</p>
+
+<p>This quick guide provides a list of all current terms of the Darwin core. The terms are organized by categories (in bold) in the index. The categories correspond to Darwin Core terms that are classes (terms that have other terms to describe them). The terms that describe a given class (the class properties) appear in the list immediately below the name of the category in the index. The index provides links to the term descriptions in the table below the index.</p>
+
+<p>Names that begin with dcterms: are terms managed by the Dublin Core Metadata Initiative [DCMI], which are reproduced here and which may include a description and comments adapted for the biodiversity community. The original definition of such terms can be found by following the link given in the Details section for the term.</p>
+
+<p>Terms under the Record-level Terms section apply to the whole record regardless of the record type. For example, a record for a camera trap bird sighting would fall into the Dublin Core dcterms:type category StillImage and at the same time into the Darwin Core basisOfRecord category MachineObservation - a particular type of Occurrence, so the value of dcterms:type term for the record would be "StillImage" and the value of the basisOfRecord term would be "MachineObservation" to show which kind of Occurrence record it is. All of the rest of the record-level terms would apply to the Occurrence record.</p>
+
+<p>The terms found under the Auxiliary Terms section can only be meaningfully implemented in an application that supports relational structures. For example, none of the auxiliary terms will be found in the specification of the Simple Darwin Core [SIMPLEDWC], which is "flat" in structure.</p>
+	
+
+#def showTerm($t, $isProperty)
   #if $t.uri is not None
-  <a name="$t.name"></a>
-  <dl class="dl-horizontal">
+  <dl
+#if $isProperty 
+ id="$t.name"
+#end if 
+ class="dl-horizontal class-dl">
     <dt>Name</dt>
-    <dd><strong>$t.name</strong></dd>
+    <dd>$t.name</dd>
+
+    <dt>Label</dt>
+    <dd>$t.label</dd>
 
     <dt>Identifier</dt>
-    <dd>$t.uri</dd>
+    <dd><a href="$t.uri">$t.uri</a></dd>
     
-	#if $t.class is not None
+	#if $isProperty
     <dt>Class</dt>
     <dd>$t.class</dd>
     #end if
@@ -27,48 +54,39 @@
     <dt>Comment</dt>
     <dd>$t.comment</dd>
     
-    <dt>Details</dt>
+    <dt>Reference</dt>
+    <dd><a href="http://terms.tdwg.org/wiki/$t.fullname">http://terms.tdwg.org/wiki/$t.fullname</a></dd>
+
+    <dt>History</dt>
     <dd><a href="$t.version">$t.version</a></dd>
   </dl>
-<hr/>
   #end if
 #end def
 
-<body>
-
-<div class="container">
-	<div class="jumbotron">
-	    <h1>Darwin Core Term Reference</h1>
-	</div>
-
 	
 #for $group in $groups
+<section id="$group.name" class="class-section">
+	<header>
 	#if $group.uri is not None
-	  <h4><a href="#$group.name">$group.name</a></h4>
+	  <h2>$group.name</h2>
 	#else
-	  <h4>$group.name</h4>
+	  <h2>$group.name</h2>
 	#end if
-	<p>
-	#set $sep = ''
+	<ul class="list-inline term-index">		
 	#for $term in $group.terms
-		$sep <a href="#$term.name">$term.name</a> 
-		#set $sep = '|'
+		<li><a href="#$term.name">$term.name</a></li>
 	#end for
-	</p>
+	</ul>
+	</header>
+
+    $showTerm(group, False)
+
+	#for $t in $group.terms
+		$showTerm(t, True)
+	#end for
+	
 #end for
 
-<hr/>
-
-#for $t in $groups
-  $showTerm(t)
-#end for
-
-
-#for $group in $groups
-  #for $t in $group.terms
-	  $showTerm(t)
-  #end for
-#end for
 
 </div> <!-- /container -->
 
