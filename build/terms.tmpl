@@ -84,16 +84,15 @@
         #if $isProperty 
             <div id="$t.name_simple" class="term-definition">
                 <table class="table table-bordered table-condensed">
-                <tbody>
         #else
             <div class="class-definition">
                 <table class="table table-bordered table-condensed">
-                <tbody>
         #end if
-                    <colgroup>
-                        <col />
-                        <col />
-                    </colgroup>
+                <colgroup>
+                    <col />
+                    <col />
+                </colgroup>
+                <tbody>
                     <tr><td colspan="2">$t.name</td></tr>
                     <tr><td>Label</td><td>$t.label</td></tr>
                     <tr><td>Identifier</td><td><a href="$t.uri">$t.uri</a></td></tr>
