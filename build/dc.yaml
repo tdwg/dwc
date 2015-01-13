@@ -1,3 +1,8 @@
+Location:
+  definition: 'A spatial region or named place.'
+  comment: ''
+  details: http://dublincore.org/usage/terms/history/#Location-001
+
 type:
   definition: 'The nature or genre of the resource. For Darwin Core, recommended best practice is to use the name of the class that defines the root of the record.'
   comment: 'Examples: "StillImage", "MovingImage", "Sound", "PhysicalObject", "Event", "Text". For discussion see http://terms.tdwg.org/wiki/dwc:type'
