@@ -31,8 +31,7 @@
 		<xs:attribute name="fieldsTerminatedBy" type="xs:string" use="optional" default=","/>
 		<xs:attribute name="fieldsEnclosedBy" type="xs:string" use="optional" default="&quot;"/>
 		<xs:attribute name="ignoreHeaderLines" type="xs:integer" use="optional" default="0"/>
-		<xs:attribute name="rowType" type="xs:string" use="optional"
-			default="http://rs.tdwg.org/dwc/xsd/simpledarwincore/SimpleDarwinRecord"/>
+		<xs:attribute name="rowType" type="xs:string" use="required"/>
 		<xs:attribute name="encoding" type="xs:string" use="optional" default="UTF-8"/>
 		<xs:attribute name="dateFormat" type="xs:string" use="optional" default="YYYY-MM-DD"/>
 	</xs:attributeGroup>
