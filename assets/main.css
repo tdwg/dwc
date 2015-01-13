@@ -29,15 +29,41 @@ body {
     }
 
 .terms-sidebar {
-        /*margin-top: 40px;*/
+        margin-top: 40px;
     }
-    .terms-sidebar ul {
+    .terms-sidebar .nav {
         position: fixed;
     }
-    .terms-sidebar ul > li > a {
+    .terms-sidebar .nav > li > a {
         padding-bottom: 5px;
         padding-top: 5px;
     }
-    .terms-sidebar ul > .active > a {
-        color: red;
+    .terms-sidebar .nav > .active > a,
+    .terms-sidebar .nav > .active > a:hover,
+    .terms-sidebar .nav > .active > a:focus {
+        background-color: transparent;
+        border-left: 2px solid #2a6496;
+        color: #2a6496;
+        font-weight: bold;
+        margin-left: -2px;
+        text-decoration: none;
     }
+    .terms-sidebar .nav > li > a:hover,
+    .terms-sidebar .nav > li > a:focus {
+        background-color: transparent;
+        border-left: 1px solid #2a6496;
+        margin-left: -1px;
+        text-decoration: none;
+    }
+
+.class-section,
+.term-dl {
+    padding-top: 70px;
+    margin-top: -70px;
+}
+
+@media screen and (max-width: 767px){
+    .terms-sidebar {
+        display:none
+    }
+}
