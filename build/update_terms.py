@@ -37,12 +37,12 @@ def buildDownloads(groups):
     with codecs.open('../resources/simple_dwc_terms_list.csv', 'w', 'utf-8') as f:
         for g in groups:
             for t in g["terms"]:
-                f.write(t["name_simple"] + "\n")
+                f.write(t["name"] + "\n")
     print """building simple_dwc.properties"""
     with codecs.open('../resources/simple_dwc.properties', 'w', 'utf-8') as f:
         for g in groups:
             for t in g["terms"]:
-                term=t["name_simple"]
+                term=t["name"]
                 f.write("%s.name=%s\n" % (term,term))
                 f.write("%s.uri=%s\n" % (term,t["uri"]))
                 f.write("%s.label=%s\n" % (term, n2e(t["label"])))
@@ -55,7 +55,7 @@ def buildDownloads(groups):
             for t in g["terms"]:
                 if started:
                     f.write(",")
-                f.write('"'+t["name_simple"]+'"')
+                f.write('"'+t["name"]+'"')
                 started=True
         f.write("\n")
     print """building simple_dwc_pgsql.sql"""
@@ -68,8 +68,8 @@ def buildDownloads(groups):
             for t in g["terms"]:
                 if started:
                     f.write(",\n")
-                f.write('  "%s" ' % t["name_simple"])
-                f.write(types.get(t["name_simple"], "text"))
+                f.write('  "%s" ' % t["name"])
+                f.write(types.get(t["name"], "text"))
                 started=True
         f.write("\n);\n")
 
@@ -92,14 +92,11 @@ def getTermDef(name, g):
     t={}
     if name.startswith("DC_"):
         name=name[3:]
-        t["name"]="dcterms:"+name
-        t["name_simple"]=name
-        t["name_prefixed"]=t["name"]
-        t["fullname"]=t["name"]
+        t["name"]=name
+        t["name_prefixed"]="dcterms:"+name
         uri=DC.term(name)
     else:
         t["name"]=name
-        t["name_simple"]=name
         t["name_prefixed"]="dwc:"+name
         uri=DWC.term(name)
         if uri==REC_LEVEL:
