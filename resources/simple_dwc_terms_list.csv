@@ -1,4 +1,4 @@
-﻿type
+type
 modified
 language
 license
@@ -162,3 +162,19 @@ nomenclaturalCode
 taxonomicStatus
 nomenclaturalStatus
 taxonRemarks
+resourceRelationshipID
+resourceID
+relatedResourceID
+relationshipOfResource
+relationshipAccordingTo
+relationshipEstablishedDate
+relationshipRemarks
+measurementID
+measurementType
+measurementValue
+measurementAccuracy
+measurementUnit
+measurementDeterminedBy
+measurementDeterminedDate
+measurementMethod
+measurementRemarks
