@@ -1,286 +1,49 @@
-﻿<!DOCTYPE html>
-
-<html>
-<head>
-  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-
-  <title>Darwin Core Terms: A complete historical record</title>
-  <link href="http://rs.tdwg.org/dwc/terms/history/" rel="schema.DC" />
-  <meta content="Darwin Core Terms: A complete historical record" name=
-  "DC.title" />
-  <meta content=
-  "This document is a consolidated, historically complete, and updated representation of all Elements, Element Refinements, Encoding Schemes, and Vocabulary Terms in Darwin Core namespaces in all of their historical versions both current and superseded. While this document may be useful for tracking changes in the status and attributes of terms over time, most users will need just the latest information, which is held in the document Darwin Core Terms: A quick reference guide at http://rs.tdwg.org/dwc/terms/"
-  name="DC.description" />
-  <meta content="biodiversity, standards" name="DC.subject" />
-  <meta content="Darwin Core Task Group" name="DC.creator" />
-  <meta content="John Wieczorek (MVZ)" name="DC.contributor" />
-  <meta content="Markus Döring (GBIF)" name="DC.contributor" />
-  <meta content="Renato De Giovanni (CRIA)" name="DC.contributor" />
-  <meta content="Tim Robertson (GBIF)" name="DC.contributor" />
-  <meta content="Dave Vieglais (KUNHM)" name="DC.contributor" />
-  <meta content="2009-02-12" name="DC.dateAccepted" />
-  <meta content="http://rs.tdwg.org/dwc/2013-10-22/terms/history/" name=
-  "DC.replaces" />
-  <meta content="2014-12-05" name="DC.modified" />
-  <meta content="http://rs.tdwg.org/dwc/2014-11-08/terms/history/" name=
-  "DC.identifier" />
-  <meta content="text/html" name="DC.format" />
-  <meta content="Biodiversity Information Standards TDWG" name=
-  "DC.publisher" />
-  <meta content="http://creativecommons.org/licenses/by/4.0/legalcode" name=
-  "DC.license" />
-  <meta content="public" name="DC.accessRights" />
-  <meta content="Darwin Core Terms: A complete historical record. 2014" name=
-  "DC.bibliographicCitation" />
-  <meta content="en" name="DC.language" />
-  <link href="http://www.tdwg.org" rel="meta" />
-  <link href="../../DarwinCore_files/default.css" rel="stylesheet" type=
-  "text/css" />
-</head>
+﻿<html>
 
 <body>
-    <table border="0" cellpadding="0" cellspacing="0" style=
-    "background-color: #617394" width="100%">
-      <tbody>
-        <tr>
-          <td>
-            <a href="http://www.tdwg.org"><img alt=
-            "Biodiversity Information Standards (TDWG) logo" height="89" src=
-            "../../DarwinCore_files/TDWGlogo_Twiki.gif" width="148" /></a>
-          </td>
+    <h2>1. Introduction</h2>
+    This page contains detailed historical information about the Darwin Core terms and standard. You may want to consider consulting one of the following pages if you have other specific interests:
+    <a href="../index.html">Darwin Core Terms</a> - current term definitions
+    <a href="../dwc_normative.rdf">Normative Darwin Core</a> - authoritative specification of the standard in RDF
+    <a href="./old_versions.html">Darwin Core Versions</a> - pre-standard versions of Darwin Core
+    <a href="./mapping_abcd.html">Mapping to ABCD</a> - relationship of terms to <a href=
+    "http://www.tdwg.org/schemas/abcd/2.06">ABCD 2.06</a>
+    
+    <a id="dwchistory" name="dwchistory"></a>
+    <h2>2. History of Darwin Core</h2>
+    Darwin Core was developed as a standard under the <a href="http://www.tdwg.org/activities/darwincore/">Darwin Core Task Group</a> following the <a href="http://www.tdwg.org/about-tdwg/process/">standards process</a> of <a href="http://www.tdwg.org/">Biodiversity Information Standards (TDWG)</a>. 
+    
+Following is the timeline for the Darwin Core ratification process:
+* 14 Feb 2009 - The standard was submitted to the TDWG Executive Committee.
+* 17 Feb 2009 - Gail Kampmeier accepted role as Review Manager.
+* 11 Apr 2009 - Peer Review submitted to Darwin Core Task Group.
+* 01 May 2009 - Revisions made and comments submitted to Review Manager.
+* 13 May 2009 - Additional recommendations provided by the Review Manager.
+* 24 May 2009 - Revisions made and new version committed to standards track. 
+* 29 May 2009 - Revisions accepted and draft standard forwarded for review by the TDWG Executive Committee.
+* 29 Jun 2009 - Executive Review submitted to Darwin Core Task Group with recommendation to accept for Public Review with revisions.
+* 08 Jul 2009 - Revisions made and new version committed to standards track.
+* 11 Jul 2009 - Proposed standard announced for public review.
+* 10 Aug 2009 - Earliest possible date for the close of public review.
+* 23 Sep 2009 - Public Review closed, response version published.
+* 08 Oct 2009 - Standard ratified by TDWG Executive Committee.
 
-          <td align="right" height="100" valign="top" width="100%"></td>
-        </tr>
-      </tbody>
-    </table>
+    Public review was conducted and archived on the <a href="http://lists.tdwg.org/pipermail/tdwg-content/">tdwg-content mailing list</a> (tdwg-content@lists.tdwg.org) from 11 July through 23 Sep 2009.
 
-    <table border="0" cellpadding="0" cellspacing="0" width="100%">
-      <tbody>
-        <tr>
-          <td style="background-color: #617394" width="15%">
-            <div id="menu">
-              <div class="topMenu" id="nav">
-                <div class="menuItem level1">
-                  <a href="../../index.htm" onfocus=
-                  "blurLink(this);">Introduction</a>
-                </div>
-                <!--        <div class="menuItem"><a href="../../index.htm#glossary" onfocus="blurLink(this);">Glossary</a></div> -->
+### Changes from previous versions
 
-                <div class="subMenu">
-                  <div class="menuItem">
-                    <a href="../../index.htm#references" onfocus=
-                    "blurLink(this);">References</a>
-                  </div>
-                </div>
+The Standard Darwin Core differs from previous versions in several important ways.
 
-                <div class="menuItem level1">
-                  <a href="../index.htm" onfocus="blurLink(this);">Quick
-                  Reference Guide</a>
-                </div>
+* The primary purpose of the standard is more open to biological data of all kinds than previous versions, whose scope was limited to biological occurrence and biased toward specimen data.
+* The foundation of the standard is a list of reusable concepts (called terms) rather than just a set of XML schemas. The list is maintained in its canonical form in rdf (http://rs.tdwg.org/dwc/rdf/dwcterms.rdf). The remainder of the standard consists of documentation about the terms, their maintenance, their use in applications, and the mechanisms for extending the Darwin Core, as well as a number of functional and example application profiles.
+* The list of terms consists of those derived from previous versions of the Darwin Core XML schemas (including OBIS and the Curatorial, Geospatial, and Paleontology extensions), as well as terms recommended for use by the Observations, Animal Movement, Crop Wild Relatives, Genetic Resources, and Sensitive Data groups. In the making of this list and the crafting of the term definitions, care was taken to address concerns arising in discussion groups, mailing lists, and wiki commentary since the inception of the first proposed Darwin Core XML schema.
 
-                <div class="menuItem level1">
-                  <a href="../simple/index.htm" onfocus=
-                  "blurLink(this);">Simple Darwin Core</a>
-                </div>
-
-                <div class="separator">
-                  <hr />
-                </div>
-
-                <div class="menuItem level1">
-                  <a href="../namespace/index.htm" onfocus=
-                  "blurLink(this);">Namespace Policy</a>
-                </div>
-
-                <div class="menuItem level1">
-                  <a href="../guides/text/index.htm" onfocus=
-                  "blurLink(this);">Text Guide</a>
-                </div>
-
-                <div class="menuItem level1">
-                  <a href="../guides/xml/index.htm" onfocus=
-                  "blurLink(this);">XML Guide</a>
-                </div>
-
-                <div class="separator">
-                  <hr />
-                </div>
-
-                <div class="menuItem level1 highlighted">
-                  <a href="../history/index.htm" onfocus=
-                  "blurLink(this);">Complete History</a>
-                </div>
-
-                <div class="subMenu">
-                  <div class="menuItem">
-                    <a href="./index.htm#introduction" onfocus=
-                    "blurLink(this);">Introduction</a>
-                  </div>
-                </div>
-
-                <div class="subMenu">
-                  <div class="menuItem">
-                    <a href="./index.htm#theterms" onfocus=
-                    "blurLink(this);">The Terms: Definitions</a>
-                  </div>
-                </div>
-
-                <div class="menuItem level1">
-                  <a href="../history/decisions/index.htm" onfocus=
-                  "blurLink(this);">Decision History</a>
-                </div>
-
-                <div class="menuItem level1">
-                  <a href="../history/dwctoabcd/index.htm" onfocus=
-                  "blurLink(this);">Mapping to ABCD</a>
-                </div>
-
-                <div class="menuItem level1">
-                  <a href="../history/versions/index.htm" onfocus=
-                  "blurLink(this);">Mapping to Old Versions</a>
-                </div>
-              </div>
-            </div>
-          </td>
-
-          <td>
-            <center><h1>Darwin Core Terms: A complete historical record</h1></center>
-
-            <table cellspacing="0" class="docinfo">
-              <tbody>
-                <tr>
-                  <th>Title:</th>
-
-                  <td>Darwin Core Terms: A complete historical record</td>
-                </tr>
-
-                <tr>
-                  <th>Date Issued:</th>
-
-                  <td>2009-02-12</td>
-                </tr>
-
-                <tr>
-                  <th>Date Modified:</th>
-
-                  <td>2014-12-05</td>
-                </tr>
-
-                <tr>
-                  <th>Abstract:</th>
-
-                  <td>
-                    This document is an authoritative specification of all
-                    terms in all of their historical versions as maintained by
-                    the Darwin Core Task Group. While this document is useful
-                    for complete information and for tracking changes in the
-                    status and attributes of terms over time, most users will
-                    need just the latest information, which is held in the
-                    document &quot;Darwin Core Terms: A quick reference
-                    guide&quot; [<a href="../index.htm">TERMS</a>].
-                  </td>
-                </tr>
-
-                <tr>
-                  <th>Contributors:</th>
-
-                  <td>John Wieczorek (MVZ), Markus Döring (GBIF), Renato De
-                  Giovanni (CRIA), Tim Robertson (GBIF), Dave Vieglais
-                  (KUNHM)</td>
-                </tr>
-
-                <tr>
-                  <th>Legal:</th>
-
-                  <td>This document is governed by the standard legal,
-                  copyright, licensing provisions and disclaimers issued by the
-                  Taxonomic Databases Working Group.</td>
-                </tr>
-
-                <tr>
-                  <th>Part of TDWG Standard:</th>
-
-                  <td>
-                    <a href=
-                    "http://www.tdwg.org/standards/450/">http://www.tdwg.org/standards/450/</a>
-                  </td>
-                </tr>
-
-                <tr>
-                  <th>Creator:</th>
-
-                  <td>Darwin Core Task Group</td>
-                </tr>
-
-                <tr>
-                  <th>Identifier:</th>
-
-                  <td>http://rs.tdwg.org/dwc/2014-11-08/terms/history/</td>
-                </tr>
-
-                <tr>
-                  <th>Latest Version:</th>
-
-                  <td>
-                    <a href=
-                    "http://rs.tdwg.org/dwc/terms/history/index.htm">http://rs.tdwg.org/dwc/terms/history/</a>
-                  </td>
-                </tr>
-
-                <tr>
-                  <th>Replaces:</th>
-
-                  <td>
-                    <a href=
-                    "http://rs.tdwg.org/dwc/2013-10-22/terms/history/index.htm">
-                    http://rs.tdwg.org/dwc/2013-10-22/terms/history/</a>
-                  </td>
-                </tr>
-
-                <tr>
-                  <th>Document Status:</th>
-
-                  <td>Current Standard</td>
-                </tr>
-              </tbody>
-            </table>
-          </td>
-        </tr>
-      </tbody>
-    </table><a id="introduction" name="introduction"></a>
-
-    <h2>1. Introduction</h2><b>Audience</b>: This document is targeted toward
-    those who wish to understand the complete specification of the Darwin Core
-    terms and their histories. Most users will not need the comprehensive
-    historical detail presented here and should instead consult the document
-    <i>Darwin Core Terms: A quick reference guide</i> [<a href=
-    "../index.htm">TERMS</a>], for the most current basic information on
-    recommended terms. Users who want the authoritative specification of the
-    terms should consult the full Resource Description Framework [<a href=
-    "../../rdf/dwctermshistory.rdf">RDF</a>] document.
-
-    <p>This document serves as a complete alphabetically ordered reference for
-    all terms associated with the Darwin Core, including historical versions
-    (Classic, MaNIS, OBIS, Draft Standard 1.4, Curatorial extension, Geospatial
-    extension, Paleontology extension) prior to having a standard.</p>
-
-    <p>Users interested in mappings from historical versions to the current
-    standard may consult the document <i>Darwin Core Versions</i> [<a href=
-    "./versions/index.htm">VERSIONS</a>]. Users interested in mappings between
-    the current recommended terms and the most recent schema for <i>Access to
-    Biological Collections Data</i> should consult the document <i>Darwin Core
-    to ABCD Mapping</i> [<a href="./dwctoabcd/index.htm">DWCTOABCD</a>].
-    Mappings between historical versions and ABCD 2.06 [<a href=
-    "http://www.tdwg.org/schemas/abcd/2.06">ABCD</a>] are contained in this
-    document.</p>
-    <a id="theterms" name="theterms"></a>
-
-    <h2>2. The Terms: Definitions</h2>
+    <a id="termhistory" name="termhistory"></a>
+    <h2>3. Term History</h2>
+    <p>This document serves as a complete alphabetically ordered reference for all terms associated with the Darwin Core, including historical pre-standard versions (Classic, MaNIS, OBIS, Draft Standard 1.4, Curatorial extension, Geospatial extension, Paleontology extension).</p>
 
     <p>Following is the complete list of term attributes and their
     definitions:</p>
-
-    <p></p>
 
     <table align="center" border="0" width="95%">
       <tbody>
@@ -904,7 +667,7 @@
 <TR><TH colspan="2"><A name="reproductiveCondition-2009-04-24">Term Name: reproductiveCondition</A></TH></TR>	<TR><TD>Identifier:</TD><TD>http://rs.tdwg.org/dwc/terms/reproductiveCondition</TD></TR>	<TR><TD>Namespace:</TD><TD>http://rs.tdwg.org/dwc/terms/</TD></TR>	<TR><TD>Label:</TD><TD>Reproductive Condition</TD></TR>	<TR><TD>Definition:</TD><TD>The reproductive condition of the biological individual(s) represented in the Occurrence. Recommended best practice is to use a controlled vocabulary.</TD></TR>	<TR><TD>Comment:</TD><TD>Examples" "non-reproductive", "pregnant", "in bloom", "fruit-bearing". For discussion see <a href="http://terms.tdwg.org/wiki/dwc:reproductiveCondition">http://terms.tdwg.org/wiki/dwc:reproductiveCondition</a></TD></TR>	<TR><TD>Type of Term:</TD><TD>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</TD></TR>	<TR><TD>Refines:</TD><TD></TD></TR>	<TR><TD>Status:</TD><TD>recommended</TD></TR>	<TR><TD>Date Issued:</TD><TD>2008-11-19</TD></TR>	<TR><TD>Date Modified:</TD><TD>2009-04-24</TD></TR>		<TR><TD>Has Domain:</TD><TD></TD></TR>	<TR><TD>Has Range:</TD><TD></TD></TR>		<TR><TD>Version:</TD><TD>reproductiveCondition-2009-04-24</TD></TR>	<TR><TD>Replaces:</TD><TD></TD></TR>	<TR><TD>Is Replaced By:</TD><TD></TD></TR>	<TR><TD>Class:</TD><TD>http://rs.tdwg.org/dwc/terms/Occurrence</TD></TR>	<TR><TD>ABCD 2.06:</TD><TD>not in ABCD</TD></TR>
 <TR><TH colspan="2"><A name="resourceID-2009-04-24">Term Name: resourceID</A></TH></TR>	<TR><TD>Identifier:</TD><TD>http://rs.tdwg.org/dwc/terms/resourceID</TD></TR>	<TR><TD>Namespace:</TD><TD>http://rs.tdwg.org/dwc/terms/</TD></TR>	<TR><TD>Label:</TD><TD>Resource ID</TD></TR>	<TR><TD>Definition:</TD><TD>An identifier for the resource that is the subject of the relationship.</TD></TR>	<TR><TD>Comment:</TD><TD>For discussion see <a href="http://terms.tdwg.org/wiki/dwc:resourceID">http://terms.tdwg.org/wiki/dwc:resourceID</a></TD></TR>	<TR><TD>Type of Term:</TD><TD>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</TD></TR>	<TR><TD>Refines:</TD><TD>http://purl.org/dc/terms/identifier</TD></TR>	<TR><TD>Status:</TD><TD>recommended</TD></TR>	<TR><TD>Date Issued:</TD><TD>2009-04-24</TD></TR>	<TR><TD>Date Modified:</TD><TD>2009-04-24</TD></TR>		<TR><TD>Has Domain:</TD><TD></TD></TR>	<TR><TD>Has Range:</TD><TD></TD></TR>		<TR><TD>Version:</TD><TD>resourceID-2009-04-24</TD></TR>	<TR><TD>Replaces:</TD><TD></TD></TR>	<TR><TD>Is Replaced By:</TD><TD></TD></TR>	<TR><TD>Class:</TD><TD>http://rs.tdwg.org/dwc/terms/ResourceRelationship</TD></TR>	<TR><TD>ABCD 2.06:</TD><TD>not in ABCD</TD></TR>
 <TR><TH colspan="2"><A name="ResourceRelationship-2009-01-21">Term Name: ResourceRelationship</A></TH></TR>	<TR><TD>Identifier:</TD><TD>http://rs.tdwg.org/dwc/terms/ResourceRelationship</TD></TR>	<TR><TD>Namespace:</TD><TD>http://rs.tdwg.org/dwc/terms/</TD></TR>	<TR><TD>Label:</TD><TD>Resource Relationship</TD></TR>	<TR><TD>Definition:</TD><TD>The category of information pertaining to relationships between resources (instances of data records, such as Occurrences, Taxa, Locations, Events).</TD></TR>	<TR><TD>Comment:</TD><TD>Resources can be thought of as identifiable records and may include, but need not be limited to Occurrences, Locations, Events, Identifications, or Taxon records.</TD></TR>	<TR><TD>Type of Term:</TD><TD>http://www.w3.org/2000/01/rdf-schema#Class</TD></TR>	<TR><TD>Refines:</TD><TD></TD></TR>	<TR><TD>Status:</TD><TD>superseded</TD></TR>	<TR><TD>Date Issued:</TD><TD>2008-11-19</TD></TR>	<TR><TD>Date Modified:</TD><TD>2014-10-23</TD></TR>		<TR><TD>Has Domain:</TD><TD></TD></TR>	<TR><TD>Has Range:</TD><TD></TD></TR>	<TR><TD>Decision:</TD><TD><a href="./decisions/index.htm#Decision-2014-10-26_15">Decision-2014-10-26_15</a></TD></TR>	<TR><TD>Version:</TD><TD>ResourceRelationship-2009-01-21</TD></TR>	<TR><TD>Replaces:</TD><TD></TD></TR>	<TR><TD>Is Replaced By:</TD><TD><a href="./index.htm#ResourceRelationship-2014-10-23">ResourceRelationship-2014-10-23</a></TD></TR>	<TR><TD>Class:</TD><TD></TD></TR>	<TR><TD>ABCD 2.06:</TD><TD>DataSets/DataSet/Units/Unit/Associations</TD></TR>
-<TR><TH colspan="2"><A name="ResourceRelationship-2014-10-23">Term Name: ResourceRelationship</A></TH></TR>	<TR><TD>Identifier:</TD><TD>http://rs.tdwg.org/dwc/terms/ResourceRelationship</TD></TR>	<TR><TD>Namespace:</TD><TD>http://rs.tdwg.org/dwc/terms/</TD></TR>	<TR><TD>Label:</TD><TD>Resource Relationship</TD></TR>	<TR><TD>Definition:</TD><TD>A relationship of one rdfs:Resource (<a href="http://www.w3.org/2000/01/rdf-schema#Resource) to anothe">http://www.w3.org/2000/01/rdf-schema#Resource) to anothe</a>) to another.</TD></TR>	<TR><TD>Comment:</TD><TD>Resources can be thought of as identifiable records or instances of classes and may include, but need not be limited to Occurrences, Organisms, MaterialSamples, Events, Locations, GeologicalContexts, Identifications, or Taxa. Example: An instance of an Organism is the mother of another instance of an Organism. For discussion see <a href="http://terms.tdwg.org/wiki/dwc:ResourceRelationship">http://terms.tdwg.org/wiki/dwc:ResourceRelationship</a></TD></TR>	<TR><TD>Type of Term:</TD><TD>http://www.w3.org/2000/01/rdf-schema#Class</TD></TR>	<TR><TD>Refines:</TD><TD></TD></TR>	<TR><TD>Status:</TD><TD>recommended</TD></TR>	<TR><TD>Date Issued:</TD><TD>2008-11-19</TD></TR>	<TR><TD>Date Modified:</TD><TD>2014-10-23</TD></TR>		<TR><TD>Has Domain:</TD><TD></TD></TR>	<TR><TD>Has Range:</TD><TD></TD></TR>	<TR><TD>Decision:</TD><TD><a href="./decisions/index.htm#Decision-2014-10-26_15">Decision-2014-10-26_15</a></TD></TR>	<TR><TD>Version:</TD><TD>ResourceRelationship-2014-10-23</TD></TR>	<TR><TD>Replaces:</TD><TD><a href="./index.htm#ResourceRelationship-2009-01-21">ResourceRelationship-2009-01-21</a></TD></TR>	<TR><TD>Is Replaced By:</TD><TD></TD></TR>	<TR><TD>Class:</TD><TD></TD></TR>	<TR><TD>ABCD 2.06:</TD><TD>DataSets/DataSet/Units/Unit/Associations</TD></TR>
+<TR><TH colspan="2"><A name="ResourceRelationship-2014-10-23">Term Name: ResourceRelationship</A></TH></TR>	<TR><TD>Identifier:</TD><TD>http://rs.tdwg.org/dwc/terms/ResourceRelationship</TD></TR>	<TR><TD>Namespace:</TD><TD>http://rs.tdwg.org/dwc/terms/</TD></TR>	<TR><TD>Label:</TD><TD>Resource Relationship</TD></TR>	<TR><TD>Definition:</TD><TD>A relationship of one rdfs:Resource (<a href="http://www.w3.org/2000/01/rdf-schema#Resource</a>) to another.</TD></TR>	<TR><TD>Comment:</TD><TD>Resources can be thought of as identifiable records or instances of classes and may include, but need not be limited to Occurrences, Organisms, MaterialSamples, Events, Locations, GeologicalContexts, Identifications, or Taxa. Example: An instance of an Organism is the mother of another instance of an Organism. For discussion see <a href="http://terms.tdwg.org/wiki/dwc:ResourceRelationship">http://terms.tdwg.org/wiki/dwc:ResourceRelationship</a></TD></TR>	<TR><TD>Type of Term:</TD><TD>http://www.w3.org/2000/01/rdf-schema#Class</TD></TR>	<TR><TD>Refines:</TD><TD></TD></TR>	<TR><TD>Status:</TD><TD>recommended</TD></TR>	<TR><TD>Date Issued:</TD><TD>2008-11-19</TD></TR>	<TR><TD>Date Modified:</TD><TD>2014-10-23</TD></TR>		<TR><TD>Has Domain:</TD><TD></TD></TR>	<TR><TD>Has Range:</TD><TD></TD></TR>	<TR><TD>Decision:</TD><TD><a href="./decisions/index.htm#Decision-2014-10-26_15">Decision-2014-10-26_15</a></TD></TR>	<TR><TD>Version:</TD><TD>ResourceRelationship-2014-10-23</TD></TR>	<TR><TD>Replaces:</TD><TD><a href="./index.htm#ResourceRelationship-2009-01-21">ResourceRelationship-2009-01-21</a></TD></TR>	<TR><TD>Is Replaced By:</TD><TD></TD></TR>	<TR><TD>Class:</TD><TD></TD></TR>	<TR><TD>ABCD 2.06:</TD><TD>DataSets/DataSet/Units/Unit/Associations</TD></TR>
 <TR><TH colspan="2"><A name="resourceRelationshipID-2009-04-24">Term Name: resourceRelationshipID</A></TH></TR>	<TR><TD>Identifier:</TD><TD>http://rs.tdwg.org/dwc/terms/resourceRelationshipID</TD></TR>	<TR><TD>Namespace:</TD><TD>http://rs.tdwg.org/dwc/terms/</TD></TR>	<TR><TD>Label:</TD><TD>Resource Relationship ID</TD></TR>	<TR><TD>Definition:</TD><TD>An identifier for an instance of relationship between one resource (the subject) and another (relatedResource, the object).</TD></TR>	<TR><TD>Comment:</TD><TD>For discussion see <a href="http://terms.tdwg.org/wiki/dwc:resourceRelationshipID">http://terms.tdwg.org/wiki/dwc:resourceRelationshipID</a></TD></TR>	<TR><TD>Type of Term:</TD><TD>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</TD></TR>	<TR><TD>Refines:</TD><TD>http://purl.org/dc/terms/identifier</TD></TR>	<TR><TD>Status:</TD><TD>recommended</TD></TR>	<TR><TD>Date Issued:</TD><TD>2009-01-26</TD></TR>	<TR><TD>Date Modified:</TD><TD>2009-04-24</TD></TR>		<TR><TD>Has Domain:</TD><TD></TD></TR>	<TR><TD>Has Range:</TD><TD></TD></TR>		<TR><TD>Version:</TD><TD>resourceRelationshipID-2009-04-24</TD></TR>	<TR><TD>Replaces:</TD><TD></TD></TR>	<TR><TD>Is Replaced By:</TD><TD></TD></TR>	<TR><TD>Class:</TD><TD>http://rs.tdwg.org/dwc/terms/ResourceRelationship</TD></TR>	<TR><TD>ABCD 2.06:</TD><TD>not in ABCD</TD></TR>
 <TR><TH colspan="2"><A name="Sample-2008-11-19">Term Name: Sample</A></TH></TR>	<TR><TD>Identifier:</TD><TD>http://rs.tdwg.org/dwc/terms/Sample</TD></TR>	<TR><TD>Namespace:</TD><TD>http://rs.tdwg.org/dwc/terms/</TD></TR>	<TR><TD>Label:</TD><TD>Sample</TD></TR>	<TR><TD>Definition:</TD><TD>Container class for information about the results of a sampling event (specimen, observation, etc.)</TD></TR>	<TR><TD>Comment:</TD><TD></TD></TR>	<TR><TD>Type of Term:</TD><TD>http://www.w3.org/2000/01/rdf-schema#Class</TD></TR>	<TR><TD>Refines:</TD><TD></TD></TR>	<TR><TD>Status:</TD><TD>superseded</TD></TR>	<TR><TD>Date Issued:</TD><TD>2008-11-19</TD></TR>	<TR><TD>Date Modified:</TD><TD>2008-11-19</TD></TR>		<TR><TD>Has Domain:</TD><TD></TD></TR>	<TR><TD>Has Range:</TD><TD></TD></TR>		<TR><TD>Version:</TD><TD>Sample-2008-11-19</TD></TR>	<TR><TD>Replaces:</TD><TD></TD></TR>	<TR><TD>Is Replaced By:</TD><TD><a href="./index.htm#Occurrence-2009-04-29">Occurrence-2009-04-29</a></TD></TR>	<TR><TD>Class:</TD><TD></TD></TR>	<TR><TD>ABCD 2.06:</TD><TD>DataSets/DataSet/Units/Unit</TD></TR>
 <TR><TH colspan="2"><A name="SampleAttribute-2008-11-19">Term Name: SampleAttribute</A></TH></TR>	<TR><TD>Identifier:</TD><TD>http://rs.tdwg.org/dwc/terms/SampleAttribute</TD></TR>	<TR><TD>Namespace:</TD><TD>http://rs.tdwg.org/dwc/terms/</TD></TR>	<TR><TD>Label:</TD><TD>Sample Attribute</TD></TR>	<TR><TD>Definition:</TD><TD>Container class for information about attributes related to a given sample.</TD></TR>	<TR><TD>Comment:</TD><TD></TD></TR>	<TR><TD>Type of Term:</TD><TD>http://www.w3.org/2000/01/rdf-schema#Class</TD></TR>	<TR><TD>Refines:</TD><TD></TD></TR>	<TR><TD>Status:</TD><TD>superseded</TD></TR>	<TR><TD>Date Issued:</TD><TD>2008-11-19</TD></TR>	<TR><TD>Date Modified:</TD><TD>2008-11-19</TD></TR>		<TR><TD>Has Domain:</TD><TD></TD></TR>	<TR><TD>Has Range:</TD><TD></TD></TR>		<TR><TD>Version:</TD><TD>SampleAttribute-2008-11-19</TD></TR>	<TR><TD>Replaces:</TD><TD></TD></TR>	<TR><TD>Is Replaced By:</TD><TD><a href="./index.htm#MeasurementOrFact-2009-04-24">MeasurementOrFact-2009-04-24</a></TD></TR>	<TR><TD>Class:</TD><TD></TD></TR>	<TR><TD>ABCD 2.06:</TD><TD>Datasets/Dataset/Units/Unit/MeasurementsOrFacts</TD></TR>
@@ -1030,24 +793,4 @@
       </tbody>
     </table>
     <hr />
-
-  <!-- Footer -->
-  <p>Except where otherwise noted, content on this site is licensed under a
-  <a href="http://creativecommons.org/licenses/by/4.0/" rel="license">Creative
-  Commons Attribution 4.0 International License</a>.</p>
-
-  <p><a href="http://creativecommons.org/licenses/by/4.0/" rel=
-  "license"><img alt="Creative Commons License" id="creative_commons_icon" src=
-  "http://i.creativecommons.org/l/by/4.0/88x31.png"></a> Copyright 2011-2014 -
-  Biodiversity Information Standards - TDWG - <a href=
-  "http://www.tdwg.org/about-tdwg/contact-us/">Contact Us</a><br>
-
-  <!-- The following is used to register Google Analytics for Darwin Core -->
-  <script src="http://www.google-analytics.com/urchin.js" type=
-  "text/javascript"></script> <script type="text/javascript">
-
-  _uacct = "UA-386033-4";
-  urchinTracker();
-  </script></p>
 </body>
-</html>
