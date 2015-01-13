@@ -5,6 +5,7 @@ html {
 
 body {
     margin-bottom: 80px; /* Sticky footer */
+    padding-top: 50px; /* Fixed navbar */
 }
 
 .content {
