@@ -81,7 +81,7 @@
 #def showTerm($t, $isProperty)
     #if $t.uri is not None
         #if $isProperty 
-            <a class="anchor" id="$t.name"></a>
+            <a id="$t.name" class="anchor"></a>
             <table class="table table-bordered table-condensed dwc-table term-definition">
         #else
             <table class="table table-bordered table-condensed dwc-table class-definition">
@@ -107,7 +107,7 @@
 #end def
                     #for $group in $groups
                     <section class="class-group">
-                        <a class="anchor" id="$group.name"></a>
+                        <a id="$group.name" class="anchor"></a>
                         <header class="well">
                             <h2>$group.name</h2>
                             <ul class="list-inline">
