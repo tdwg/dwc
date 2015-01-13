@@ -1,10 +1,4 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<!--
-  To use the stylesheet to make the RDF more readable in a web browser, 
-  uncomment one of the the following stylesheet references:
-<?xml-stylesheet type="text/xsl" href="human.xsl"?>
-<?xml-stylesheet type="text/xsl" href="http://rs.tdwg.org/dwc/rdf/human.xsl"?>
--->
 <!DOCTYPE rdf:RDF [
 
 <!ENTITY rdfns 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
@@ -12,10 +6,6 @@
 <!ENTITY dctermsns 'http://purl.org/dc/terms/'>
 <!ENTITY dctypens 'http://purl.org/dc/dcmitype/'>
 <!ENTITY dwcattributesns 'http://rs.tdwg.org/dwc/terms/attributes/'>
-<!--
-<!ENTITY skosns 'http://www.w3.org/2004/02/skos/core#'>
-<!ENTITY vsns 'http://www.w3.org/2003/06/sw-vocab-status/ns#'>
--->
 ]>
 <rdf:RDF
     xmlns:dwcattributes="http://rs.tdwg.org/dwc/terms/attributes/"
@@ -43,14 +33,6 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
     rdfs:range
     rdfs:subPropertyOf
     rdfs:seeAlso (for ABCD mapping)
-    dwcattributes:status
-    dwcattributes:decision
-    // potentially useful
-    rdfs:domain
-    skos = http://www.w3.org/2004/02/skos/core#
-    skos:example
-    vs = http://www.w3.org/2003/06/sw-vocab-status/ns#
-    vs:term_status
 -->
     <!-- Mutable RDF goes here -->
     <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/acceptedNameUsage">

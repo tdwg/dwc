@@ -17,7 +17,7 @@ DWCA=Namespace("http://rs.tdwg.org/dwc/terms/attributes/")
 def buildHtml():
     print """building html files"""
     html = Template(file="recommended.tmpl", searchList=[parseTerms()])
-    recommended = open("recommended.html", "w")
+    recommended = open("../terms/index.html", "w")
     recommended.write(str(html))
     recommended.close()    
 
