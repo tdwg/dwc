@@ -86,7 +86,7 @@ def utf8(x):
 def anchorLinks(x):
     if x is None:
         return x
-    return re.sub('(https?://\S+)', "<a href='\\1'>\\1</a>", x)
+    return re.sub('(https?://\S+[a-zA-Z0-9/_-])', "<a href='\\1'>\\1</a>", x)
     
 def getTermDef(name, g):
     t={}
