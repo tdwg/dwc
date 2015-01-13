@@ -66,8 +66,8 @@
 
         <div class="content">
             <div class="container">
-                <nav class="col-xs-2 bs-docs-sidebar">
-                    <ul id="sidebar" class="nav nav-stacked fixed">
+                <nav class="col-xs-2 terms-sidebar">
+                    <ul class="nav nav-stacked">
                         <li><a href="#Record-level Terms">Record-level Terms</a></li>
                         <li><a href="#Occurrence">Occurrence</a></li>
                         <li><a href="#Organism">Organism</a></li>
@@ -325,6 +325,7 @@
                         <dt>History</dt><dd><a href="http://rs.tdwg.org/dwc/terms/history.html#dynamicProperties-2014-10-23">http://rs.tdwg.org/dwc/terms/history.html#dynamicProperties-2014-10-23</a></dd>
                     </dl>
 
+                    </section>
                     <section id="Occurrence" class="class-section">
                         <header class="well">
                             <h2>Occurrence</h2>
@@ -571,6 +572,7 @@
                         <dt>History</dt><dd><a href="http://rs.tdwg.org/dwc/terms/history.html#occurrenceRemarks-2009-04-24">http://rs.tdwg.org/dwc/terms/history.html#occurrenceRemarks-2009-04-24</a></dd>
                     </dl>
 
+                    </section>
                     <section id="Organism" class="class-section">
                         <header class="well">
                             <h2>Organism</h2>
@@ -673,6 +675,7 @@
                         <dt>History</dt><dd><a href="http://rs.tdwg.org/dwc/terms/history.html#organismRemarks-2014-10-23">http://rs.tdwg.org/dwc/terms/history.html#organismRemarks-2014-10-23</a></dd>
                     </dl>
 
+                    </section>
                     <section id="MaterialSample" class="class-section">
                         <header class="well">
                             <h2>MaterialSample</h2>
@@ -703,6 +706,7 @@
                         <dt>History</dt><dd><a href="http://rs.tdwg.org/dwc/terms/history.html#materialSampleID-2013-05-25">http://rs.tdwg.org/dwc/terms/history.html#materialSampleID-2013-05-25</a></dd>
                     </dl>
 
+                    </section>
                     <section id="Event" class="class-section">
                         <header class="well">
                             <h2>Event</h2>
@@ -901,6 +905,7 @@
                         <dt>History</dt><dd><a href="http://rs.tdwg.org/dwc/terms/history.html#eventRemarks-2009-04-24">http://rs.tdwg.org/dwc/terms/history.html#eventRemarks-2009-04-24</a></dd>
                     </dl>
 
+                    </section>
                     <section id="dcterms:Location" class="class-section">
                         <header class="well">
                             <h2>dcterms:Location</h2>
@@ -1447,6 +1452,7 @@
                         <dt>History</dt><dd><a href="http://rs.tdwg.org/dwc/terms/history.html#georeferenceRemarks-2009-04-24">http://rs.tdwg.org/dwc/terms/history.html#georeferenceRemarks-2009-04-24</a></dd>
                     </dl>
 
+                    </section>
                     <section id="GeologicalContext" class="class-section">
                         <header class="well">
                             <h2>GeologicalContext</h2>
@@ -1681,6 +1687,7 @@
                         <dt>History</dt><dd><a href="http://rs.tdwg.org/dwc/terms/history.html#bed-2009-04-24">http://rs.tdwg.org/dwc/terms/history.html#bed-2009-04-24</a></dd>
                     </dl>
 
+                    </section>
                     <section id="Identification" class="class-section">
                         <header class="well">
                             <h2>Identification</h2>
@@ -1795,6 +1802,7 @@
                         <dt>History</dt><dd><a href="http://rs.tdwg.org/dwc/terms/history.html#identificationRemarks-2009-04-24">http://rs.tdwg.org/dwc/terms/history.html#identificationRemarks-2009-04-24</a></dd>
                     </dl>
 
+                    </section>
                     <section id="Taxon" class="class-section">
                         <header class="well">
                             <h2>Taxon</h2>
@@ -2209,6 +2217,7 @@
                         <dt>History</dt><dd><a href="http://rs.tdwg.org/dwc/terms/history.html#taxonRemarks-2009-08-24">http://rs.tdwg.org/dwc/terms/history.html#taxonRemarks-2009-08-24</a></dd>
                     </dl>
 
+                    </section>
                     <section id="ResourceRelationship" class="class-section">
                         <header class="well">
                             <h2>ResourceRelationship</h2>
@@ -2311,6 +2320,7 @@
                         <dt>History</dt><dd><a href="http://rs.tdwg.org/dwc/terms/history.html#relationshipRemarks-2009-04-24">http://rs.tdwg.org/dwc/terms/history.html#relationshipRemarks-2009-04-24</a></dd>
                     </dl>
 
+                    </section>
                     <section id="MeasurementOrFact" class="class-section">
                         <header class="well">
                             <h2>MeasurementOrFact</h2>
@@ -2437,6 +2447,7 @@
                         <dt>History</dt><dd><a href="http://rs.tdwg.org/dwc/terms/history.html#measurementRemarks-2009-04-24">http://rs.tdwg.org/dwc/terms/history.html#measurementRemarks-2009-04-24</a></dd>
                     </dl>
 
+                    </section>
                 </div>
             </div>
         </div>
@@ -2452,9 +2463,9 @@
         <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min.js"></script>
         <script type="text/javascript">
-            body.scrollspy({
-                target: ".bs-docs-sidebar",
-                offset: 40
+            $("body").scrollspy({
+                target: ".terms-sidebar",
+                offset: 50
             });
         </script>
         <script>

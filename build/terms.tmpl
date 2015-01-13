@@ -66,8 +66,8 @@
 
         <div class="content">
             <div class="container">
-                <nav class="col-xs-2 bs-docs-sidebar">
-                    <ul id="sidebar" class="nav nav-stacked fixed">
+                <nav class="col-xs-2 terms-sidebar">
+                    <ul class="nav nav-stacked">
                         #for $group in $groups
                         <li><a href="#$group.name">$group.name</a></li>
                         #end for
@@ -116,6 +116,7 @@
                         #for $t in $group.terms
                             $showTerm(t, True)
                         #end for
+                    </section>
                     #end for
                 </div>
             </div>
@@ -132,9 +133,9 @@
         <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min.js"></script>
         <script type="text/javascript">
-            $("body").scrollspy({
-                target: ".bs-docs-sidebar",
-                offset: 40
+            \$("body").scrollspy({
+                target: ".terms-sidebar",
+                offset: 50
             });
         </script>
         <script>
