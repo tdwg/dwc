@@ -66,49 +66,58 @@
 
         <div class="content">
             <div class="container">
-                <div class="page-header">
-                    <h1>Terms</h1>
-                    <p>This page provides a list and definitions of all currently recommended terms of the Darwin Core standard. Terms that begin with "dcterms:" are from the Dublin Core. Categories correspond to Darwin Core classes (terms that have other terms to describe them). </p>
+                <nav class="col-xs-2 bs-docs-sidebar">
+                    <ul id="sidebar" class="nav nav-stacked fixed">
+                        #for $group in $groups
+                        <li><a href="#$group.name">$group.name</a></li>
+                        #end for
+                    </ul>
+                </nav>
+                <div class="col-xs-10">
+                    <div class="page-header">
+                        <h1>Terms</h1>
+                        <p>This page provides a list of all currently recommended terms of the Darwin Core standard and their definitions. Terms that begin with <code>dcterms:</code> are from the <a href="http://dublincore.org/documents/dcmi-terms/">Dublin Core</a>. Categories correspond to Darwin Core classes (terms that have other terms to describe them). List of these terms in various formats can be found in <a href="../downloads">downloads</a>.</p>
+                    </div>
+
+                    #def showTerm($t, $isProperty)
+                        #if $t.uri is not None
+                            #if $isProperty 
+                    <dl id="$t.name" class="dl-horizontal term-dl">
+                            #else
+                    <dl class="dl-horizontal class-dl">
+                            #end if
+                        <dt>Name</dt><dd>$t.name</dd>
+                        <dt>Label</dt><dd>$t.label</dd>
+                        <dt>Identifier</dt><dd><a href="$t.uri">$t.uri</a></dd>
+                        #if $isProperty
+                        <dt>Class</dt><dd>$t.class</dd>
+                        #end if
+                        <dt>Definition</dt><dd>$t.definition</dd>
+                        <dt>Comment</dt><dd>$t.comment</dd>
+                        <dt>Reference</dt><dd><a href="http://terms.tdwg.org/wiki/$t.fullname">http://terms.tdwg.org/wiki/$t.fullname</a></dd>
+                        <dt>History</dt><dd><a href="$t.version">$t.version</a></dd>
+                    </dl>
+                        #end if
+                    #end def
+
+                    #for $group in $groups
+                    <section id="$group.name" class="class-section">
+                        <header class="well">
+                            <h2>$group.name</h2>
+                            <ul class="list-inline term-index">
+                            #for $term in $group.terms
+                                <li><a href="#$term.name">$term.name</a></li>
+                            #end for
+                            </ul>
+                        </header>
+
+                        $showTerm(group, False)
+
+                        #for $t in $group.terms
+                            $showTerm(t, True)
+                        #end for
+                    #end for
                 </div>
-
-#def showTerm($t, $isProperty)
-  #if $t.uri is not None
-  <dl
-#if $isProperty 
- id="$t.name"
-#end if 
- class="dl-horizontal class-dl">
-    <dt>Name</dt><dd>$t.name</dd>
-    <dt>Label</dt><dd>$t.label</dd>
-    <dt>Identifier</dt><dd><a href="$t.uri">$t.uri</a></dd>
-    #if $isProperty
-    <dt>Class</dt><dd>$t.class</dd>
-    #end if
-    <dt>Definition</dt><dd>$t.definition</dd>
-    <dt>Comment</dt><dd>$t.comment</dd>
-    <dt>Reference</dt><dd><a href="http://terms.tdwg.org/wiki/$t.fullname">http://terms.tdwg.org/wiki/$t.fullname</a></dd>
-    <dt>History</dt><dd><a href="$t.version">$t.version</a></dd>
-  </dl>
-  #end if
-#end def
-
-#for $group in $groups
-<section id="$group.name" class="class-section">
-    <header>
-        <h2>$group.name</h2>
-        <ul class="list-inline term-index">
-        #for $term in $group.terms
-            <li><a href="#$term.name">$term.name</a></li>
-        #end for
-        </ul>
-    </header>
-
-    $showTerm(group, False)
-
-    #for $t in $group.terms
-        $showTerm(t, True)
-    #end for
-#end for
             </div>
         </div>
 
@@ -122,6 +131,12 @@
         <!-- Scripts -->
         <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            $("body").scrollspy({
+                target: ".bs-docs-sidebar",
+                offset: 40
+            });
+        </script>
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
