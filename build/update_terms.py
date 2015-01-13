@@ -5,7 +5,7 @@ easy_install pip
 pip install -r requirements.txt
 '''
 
-import yaml
+import yaml, re, csv, codecs
 from Cheetah.Template import Template
 from rdflib import Graph, URIRef, Namespace, Literal
 from rdflib.namespace import RDFS
@@ -16,20 +16,77 @@ DWCA=Namespace("http://rs.tdwg.org/dwc/terms/attributes/")
 REC_LEVEL=DWC.term("Record-level")
 
 
-def buildHtml():
-    data=parseTerms()
+def buildHtml(groups):    
     print """building html files"""
+    data={}
+    data["groups"]=groups
     html = Template(file="terms.tmpl", searchList=[data])
     recommended = open("../terms/index.html", "w")
     recommended.write(str(html))
     recommended.close()    
 
-def buildDownloads():
-    print """building downloads"""
-    print """TBD"""
+def buildDownloads(groups):
+    print """building dwc_terms.csv"""
+    with open('../resources/dwc_terms.csv', 'w') as csvf:
+        writer=csv.writer(csvf, delimiter=',', quotechar='"', quoting=csv.QUOTE_ALL)
+        writer.writerow(['TermName', 'URI', "Label_en", "Group", "Definition", "Comments"])
+        for g in groups:
+            for t in g["terms"]:
+                writer.writerow([t["name"], t["uri"], utf8(t["label"]), t["class"], utf8(t["definition"]), utf8(t["comment"])])
+    print """building simple_dwc_terms_list.csv"""
+    with codecs.open('../resources/simple_dwc_terms_list.csv', 'w', 'utf-8') as f:
+        for g in groups:
+            for t in g["terms"]:
+                f.write(t["name_simple"] + "\n")
+    print """building simple_dwc.properties"""
+    with codecs.open('../resources/simple_dwc.properties', 'w', 'utf-8') as f:
+        for g in groups:
+            for t in g["terms"]:
+                term=t["name_simple"]
+                f.write("%s.name=%s\n" % (term,term))
+                f.write("%s.uri=%s\n" % (term,t["uri"]))
+                f.write("%s.label=%s\n" % (term, n2e(t["label"])))
+                f.write("%s.definition=%s\n" % (term, n2e(t["definition"])))
+                f.write("%s.comment=%s\n" % (term, n2e(t["comment"])))
+    print """building simple_dwc_terms_header.csv"""
+    with codecs.open('../resources/simple_dwc_terms_header.csv', 'w', 'utf-8') as f:
+        started=False
+        for g in groups:
+            for t in g["terms"]:
+                if started:
+                    f.write(",")
+                f.write('"'+t["name_simple"]+'"')
+                started=True
+        f.write("\n")
+    print """building simple_dwc_pgsql.sql"""
+    with open('term_type.yaml', 'r') as f:
+        types = yaml.load(f)
+    with codecs.open('../resources/simple_dwc_pgsql.sql', 'w', 'utf-8') as f:
+        started=False
+        f.write("CREATE TABLE dwc (\n")
+        for g in groups:
+            for t in g["terms"]:
+                if started:
+                    f.write(",\n")
+                f.write('  "%s" ' % t["name_simple"])
+                f.write(types.get(t["name_simple"], "text"))
+                started=True
+        f.write("\n);\n")
+
+def n2e(x):
+    if x is None:
+        return ""
+    return x
+
+def utf8(x):
+    if x is None:
+        return x
+    return x.encode("utf-8")    
 
 def anchorLinks(x):
-    print """TBD"""
+    if x is None:
+        return x
+    return re.sub('(https?://\S+)', "<a href='\\1'>\\1</a>", x)
     
 def getTermDef(name, g):
     t={}
@@ -51,8 +108,8 @@ def getTermDef(name, g):
     if uri is not None:
         t["label"]=g.value(subject=uri, predicate=RDFS.label)
         t["class"]=g.value(subject=uri, predicate=DWCA.organizedInClass)
-        t["definition"]=g.value(subject=uri, predicate=RDFS.comment)
-        t["comment"]=g.value(subject=uri, predicate=DC.description)
+        t["definition"]=anchorLinks(g.value(subject=uri, predicate=RDFS.comment))
+        t["comment"]=anchorLinks(g.value(subject=uri, predicate=DC.description))
         t["version"]=g.value(subject=uri, predicate=DC.hasVersion)
         if t["definition"] is None:
             raise AssertionError("Unknown term definition "+str(uri))
@@ -84,10 +141,9 @@ def parseTerms():
             for t in sorted(group.values())[0]:
                 groupTerm["terms"].append(getTermDef(t, g))            
         groups.append(groupTerm)
-    data["groups"]=groups
     # finally verify we have all terms covered in both the order yaml and the graph
     verifyCompleteness(g, groups)
-    return data
+    return groups
 
 def verifyCompleteness(graph, groups):    
     terms={}
@@ -106,5 +162,6 @@ def verifyCompleteness(graph, groups):
 
 
 if __name__ == "__main__":
-    buildHtml()
-    buildDownloads()
+    data=parseTerms()
+    buildHtml(data)
+    buildDownloads(data)
