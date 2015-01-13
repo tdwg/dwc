@@ -4,21 +4,21 @@
         <meta charset="utf-8">
         
         <title>Darwin Core Terms</title>
-        <meta name="DC.title" content="Darwin Core Terms">
-        <meta name="DC.description" content="The cover page for the Darwin Core standard.">
-        <meta name="DC.modified" content="2015-01-12">
+        <meta name="dcterms.title" content="Darwin Core Terms">
+        <meta name="dcterms.description" content="The cover page for the Darwin Core standard.">
+        <meta name="dcterms.modified" content="2015-01-12">
         
-        <meta name="DC.subject" content="biodiversity, standards">
-        <meta name="DC.creator" content="Darwin Core Task Group">
-        <meta name="DC.contributor" content="John Wieczorek (MVZ)">
-        <meta name="DC.contributor" content="Markus Doring (GBIF)">
-        <meta name="DC.contributor" content="Renato De Giovanni (CRIA)">
-        <meta name="DC.contributor" content="Tim Robertson (GBIF)">
-        <meta name="DC.contributor" content="Dave Vieglais (KUNHM)">
-        <meta name="DC.contributor" content="Peter Desmet (INBO)">
-        <meta name="DC.publisher" content="Biodiversity Information Standards (TDWG)">
-        <meta name="DC.license" content="http://creativecommons.org/licenses/by/4.0/legalcode">
-        <meta name="DC.language" content="en">
+        <meta name="dcterms.subject" content="biodiversity, standards">
+        <meta name="dcterms.creator" content="Darwin Core Task Group">
+        <meta name="dcterms.contributor" content="John Wieczorek (MVZ)">
+        <meta name="dcterms.contributor" content="Markus Doring (GBIF)">
+        <meta name="dcterms.contributor" content="Renato De Giovanni (CRIA)">
+        <meta name="dcterms.contributor" content="Tim Robertson (GBIF)">
+        <meta name="dcterms.contributor" content="Dave Vieglais (KUNHM)">
+        <meta name="dcterms.contributor" content="Peter Desmet (INBO)">
+        <meta name="dcterms.publisher" content="Biodiversity Information Standards (TDWG)">
+        <meta name="dcterms.license" content="http://creativecommons.org/licenses/by/4.0/legalcode">
+        <meta name="dcterms.language" content="en">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="../assets/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../assets/main.css">
@@ -82,29 +82,37 @@
 #def showTerm($t, $isProperty)
     #if $t.uri is not None
         #if $isProperty 
-            <dl id="$t.name_simple" class="dl-horizontal term-dl">
+            <div id="$t.name_simple" class="term-definition">
+                <table class="table table-bordered table-condensed">
         #else
-            <dl class="dl-horizontal class-dl">
+            <div class="class-definition">
+                <table class="table table-bordered table-condensed">
         #end if
-    <dt>Name</dt><dd>$t.name</dd>
-    <dt>Label</dt><dd>$t.label</dd>
-    <dt>Identifier</dt><dd><a href="$t.uri">$t.uri</a></dd>
-    #if $isProperty
-    <dt>Class</dt><dd>$t.class</dd>
-    #end if
-    <dt>Definition</dt><dd>$t.definition</dd>
-    <dt>Comment</dt><dd>$t.comment</dd>
-    <dt>Reference</dt><dd><a href="http://terms.tdwg.org/wiki/$t.name_prefixed">http://terms.tdwg.org/wiki/$t.name_prefixed</a></dd>
-    <dt>History</dt><dd><a href="$t.version">$t.version</a></dd>
-</dl>
+                <colgroup>
+                    <col />
+                    <col />
+                </colgroup>
+                <tbody>
+                    <tr><td colspan="2">$t.name</td></tr>
+                    <tr><td>Label</td><td>$t.label</td></tr>
+                    <tr><td>Identifier</td><td><a href="$t.uri">$t.uri</a></td></tr>
+                    #if $isProperty
+                    <tr><td>Class</td><td>$t.class</td></tr>
+                    #end if
+                    <tr><td>Definition</td><td>$t.definition</td></tr>
+                    <tr><td>Comment</td><td>$t.comment</td></tr>
+                    <tr><td>Reference</td><td><a href="http://terms.tdwg.org/wiki/$t.name_prefixed">http://terms.tdwg.org/wiki/$t.name_prefixed</a></td></tr>
+                    <tr><td>History</td><td><a href="$t.version">$t.version</a></td></tr>
+                </tbody>
+                </table>
+            </div>
     #end if
 #end def
-
                     #for $group in $groups
-                    <section id="$group.name_simple" class="class-section">
+                    <section id="$group.name_simple" class="class-group">
                         <header class="well">
                             <h2>$group.name</h2>
-                            <ul class="list-inline term-index">
+                            <ul class="list-inline">
                             #for $term in $group.terms
                                 <li><a href="#$term.name_simple">$term.name</a></li>
                             #end for
@@ -124,8 +132,17 @@
 
         <footer class="footer">
             <div class="container">
-                <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png"/></a>
-                <p><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Darwin Core</span> by the Darwin Core Task Group, <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.tdwg.org" property="cc:attributionName" rel="cc:attributionURL">Biodiversity Information Standards (TDWG)</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+                <div class="row">
+                    <div class="col-xs-4">
+                        <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png"/></a></p>
+                    </div>
+                    <div class="col-xs-8">
+                        <ul class="list-inline pull-right">
+                            <li>Page last modified on 2015-01-13</li>
+                            <li><a href="https://github.com/tdwg/dwc/issues/new">Submit an issue</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </footer>
       
