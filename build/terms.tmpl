@@ -4,21 +4,21 @@
         <meta charset="utf-8">
         
         <title>Darwin Core Terms</title>
-        <meta name="DC.title" content="Darwin Core Terms">
-        <meta name="DC.description" content="The cover page for the Darwin Core standard.">
-        <meta name="DC.modified" content="2015-01-12">
+        <meta name="dcterms.title" content="Darwin Core Terms">
+        <meta name="dcterms.description" content="The cover page for the Darwin Core standard.">
+        <meta name="dcterms.modified" content="2015-01-12">
         
-        <meta name="DC.subject" content="biodiversity, standards">
-        <meta name="DC.creator" content="Darwin Core Task Group">
-        <meta name="DC.contributor" content="John Wieczorek (MVZ)">
-        <meta name="DC.contributor" content="Markus Doring (GBIF)">
-        <meta name="DC.contributor" content="Renato De Giovanni (CRIA)">
-        <meta name="DC.contributor" content="Tim Robertson (GBIF)">
-        <meta name="DC.contributor" content="Dave Vieglais (KUNHM)">
-        <meta name="DC.contributor" content="Peter Desmet (INBO)">
-        <meta name="DC.publisher" content="Biodiversity Information Standards (TDWG)">
-        <meta name="DC.license" content="http://creativecommons.org/licenses/by/4.0/legalcode">
-        <meta name="DC.language" content="en">
+        <meta name="dcterms.subject" content="biodiversity, standards">
+        <meta name="dcterms.creator" content="Darwin Core Task Group">
+        <meta name="dcterms.contributor" content="John Wieczorek (MVZ)">
+        <meta name="dcterms.contributor" content="Markus Doring (GBIF)">
+        <meta name="dcterms.contributor" content="Renato De Giovanni (CRIA)">
+        <meta name="dcterms.contributor" content="Tim Robertson (GBIF)">
+        <meta name="dcterms.contributor" content="Dave Vieglais (KUNHM)">
+        <meta name="dcterms.contributor" content="Peter Desmet (INBO)">
+        <meta name="dcterms.publisher" content="Biodiversity Information Standards (TDWG)">
+        <meta name="dcterms.license" content="http://creativecommons.org/licenses/by/4.0/legalcode">
+        <meta name="dcterms.language" content="en">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="../assets/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../assets/main.css">
@@ -84,16 +84,15 @@
         #if $isProperty 
             <div id="$t.name_simple" class="term-definition">
                 <table class="table table-bordered table-condensed">
-                <tbody>
         #else
             <div class="class-definition">
                 <table class="table table-bordered table-condensed">
-                <tbody>
         #end if
-                    <colgroup>
-                        <col />
-                        <col />
-                    </colgroup>
+                <colgroup>
+                    <col />
+                    <col />
+                </colgroup>
+                <tbody>
                     <tr><td colspan="2">$t.name</td></tr>
                     <tr><td>Label</td><td>$t.label</td></tr>
                     <tr><td>Identifier</td><td><a href="$t.uri">$t.uri</a></td></tr>
