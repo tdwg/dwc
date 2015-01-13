@@ -1,31 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Darwin Core Terms: A quick reference guide</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-</head>
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Darwin Core Terms</title>
+        <meta name="DC.title" content="Darwin Core Terms">
+        <meta name="DC.description" content="The cover page for the Darwin Core standard.">
+        <meta name="DC.modified" content="2015-01-12">
+        
+        <meta name="DC.subject" content="biodiversity, standards">
+        <meta name="DC.creator" content="Darwin Core Task Group">
+        <meta name="DC.contributor" content="John Wieczorek (MVZ)">
+        <meta name="DC.contributor" content="Markus Döring (GBIF)">
+        <meta name="DC.contributor" content="Renato De Giovanni (CRIA)">
+        <meta name="DC.contributor" content="Tim Robertson (GBIF)">
+        <meta name="DC.contributor" content="Dave Vieglais (KUNHM)">
+        <meta name="DC.contributor" content="Peter Desmet (INBO)">
+        <meta name="DC.publisher" content="Biodiversity Information Standards (TDWG)">
+        <meta name="DC.license" content="http://creativecommons.org/licenses/by/4.0/legalcode">
+        <meta name="DC.language" content="en">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/main.css">
+    </head>
 
-<body>
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../">Darwin Core</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="../terms/">Terms</a></li>
+                        <li><a href="../examples/">Examples</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Reference <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="../change_policy.html">Change policy</a></li>
+                                <li><a href="../references.html">References</a></li>
+                                <li class="divider"></li>
+                                <li><a href="../simple_dwc.html">Simple Darwin Core</a></li>
+                                <li class="divider"></li>
+                                <li><a href="../guides/text/">Text guide</a></li>
+                                <li><a href="../guides/xml/">XML guide</a></li>
+                                <li class="disabled"><a href="../guides/rdf/">RDF guide</a></li>
+                                <li class="divider"></li>
+                                <li><a href="../terms/history.html">Term history</a></li>
+                                <li><a href="../terms/decisions.html">Term decision history</a></li>
+                                <li><a href="../terms/mappings.html">Term mappings</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="../downloads/">Downloads</a></li>
+                        <li><a href="http://github.com/tdwg/dwc">Source</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-<div class="container">
+        <div class="content">
+            <div class="container">
+                <div class="page-header">
+                    <h1>Terms</h1>
+                </div>
 
-	<div class="jumbotron">
-	    <h1>Darwin Core Term Reference</h1>
-		<p>This document is a quick reference for all recommended Darwin Core terms. For complete historical term information, including version changes and pre-standard terms, see [<a  href="http://rs.tdwg.org/dwc/terms/history.html">HISTORY</a>]. For a comparative table of elements from pre-standard versions of Darwin Core to the current terms in the standard, see [<a  href="http://rs.tdwg.org/dwc/terms/mappings.html">VERSIONS</a>].</p>
-	</div>
+                <p><strong>Audience</strong>: This document is targeted toward those who need a reference (lists and definitions) to the essential information about the current recommended Darwin Core terms.</p>
 
+                <p>This quick guide provides a list of all current terms of the Darwin core. The terms are organized by categories (in bold) in the index. The categories correspond to Darwin Core terms that are classes (terms that have other terms to describe them). The terms that describe a given class (the class properties) appear in the list immediately below the name of the category in the index. The index provides links to the term descriptions in the table below the index.</p>
 
-<p>
-<strong>Audience</strong>: This document is targeted toward those who need a reference (lists and definitions) to the essential information about the current recommended Darwin Core terms.</p>
+                <p>Names that begin with dcterms: are terms managed by the Dublin Core Metadata Initiative [DCMI], which are reproduced here and which may include a description and comments adapted for the biodiversity community. The original definition of such terms can be found by following the link given in the Details section for the term.</p>
 
-<p>This quick guide provides a list of all current terms of the Darwin core. The terms are organized by categories (in bold) in the index. The categories correspond to Darwin Core terms that are classes (terms that have other terms to describe them). The terms that describe a given class (the class properties) appear in the list immediately below the name of the category in the index. The index provides links to the term descriptions in the table below the index.</p>
+                <p>Terms under the Record-level Terms section apply to the whole record regardless of the record type. For example, a record for a camera trap bird sighting would fall into the Dublin Core dcterms:type category StillImage and at the same time into the Darwin Core basisOfRecord category MachineObservation - a particular type of Occurrence, so the value of dcterms:type term for the record would be "StillImage" and the value of the basisOfRecord term would be "MachineObservation" to show which kind of Occurrence record it is. All of the rest of the record-level terms would apply to the Occurrence record.</p>
 
-<p>Names that begin with dcterms: are terms managed by the Dublin Core Metadata Initiative [DCMI], which are reproduced here and which may include a description and comments adapted for the biodiversity community. The original definition of such terms can be found by following the link given in the Details section for the term.</p>
-
-<p>Terms under the Record-level Terms section apply to the whole record regardless of the record type. For example, a record for a camera trap bird sighting would fall into the Dublin Core dcterms:type category StillImage and at the same time into the Darwin Core basisOfRecord category MachineObservation - a particular type of Occurrence, so the value of dcterms:type term for the record would be "StillImage" and the value of the basisOfRecord term would be "MachineObservation" to show which kind of Occurrence record it is. All of the rest of the record-level terms would apply to the Occurrence record.</p>
-
-<p>The terms found under the Auxiliary Terms section can only be meaningfully implemented in an application that supports relational structures. For example, none of the auxiliary terms will be found in the specification of the Simple Darwin Core [SIMPLEDWC], which is "flat" in structure.</p>
-	
+                <p>The terms found under the Auxiliary Terms section can only be meaningfully implemented in an application that supports relational structures. For example, none of the auxiliary terms will be found in the specification of the Simple Darwin Core [SIMPLEDWC], which is "flat" in structure.</p>
 
 #def showTerm($t, $isProperty)
   #if $t.uri is not None
@@ -34,61 +87,58 @@
  id="$t.name"
 #end if 
  class="dl-horizontal class-dl">
-    <dt>Name</dt>
-    <dd>$t.name</dd>
-
-    <dt>Label</dt>
-    <dd>$t.label</dd>
-
-    <dt>Identifier</dt>
-    <dd><a href="$t.uri">$t.uri</a></dd>
-    
-	#if $isProperty
-    <dt>Class</dt>
-    <dd>$t.class</dd>
+    <dt>Name</dt><dd>$t.name</dd>
+    <dt>Label</dt><dd>$t.label</dd>
+    <dt>Identifier</dt><dd><a href="$t.uri">$t.uri</a></dd>
+    #if $isProperty
+    <dt>Class</dt><dd>$t.class</dd>
     #end if
-
-    <dt>Definition</dt>
-    <dd>$t.definition</dd>
-    
-    <dt>Comment</dt>
-    <dd>$t.comment</dd>
-    
-    <dt>Reference</dt>
-    <dd><a href="http://terms.tdwg.org/wiki/$t.fullname">http://terms.tdwg.org/wiki/$t.fullname</a></dd>
-
-    <dt>History</dt>
-    <dd><a href="$t.version">$t.version</a></dd>
+    <dt>Definition</dt><dd>$t.definition</dd>
+    <dt>Comment</dt><dd>$t.comment</dd>
+    <dt>Reference</dt><dd><a href="http://terms.tdwg.org/wiki/$t.fullname">http://terms.tdwg.org/wiki/$t.fullname</a></dd>
+    <dt>History</dt><dd><a href="$t.version">$t.version</a></dd>
   </dl>
   #end if
 #end def
 
-	
 #for $group in $groups
 <section id="$group.name" class="class-section">
-	<header>
-	#if $group.uri is not None
-	  <h2>$group.name</h2>
-	#else
-	  <h2>$group.name</h2>
-	#end if
-	<ul class="list-inline term-index">		
-	#for $term in $group.terms
-		<li><a href="#$term.name">$term.name</a></li>
-	#end for
-	</ul>
-	</header>
+    <header>
+        <h2>$group.name</h2>
+        <ul class="list-inline term-index">
+        #for $term in $group.terms
+            <li><a href="#$term.name">$term.name</a></li>
+        #end for
+        </ul>
+    </header>
 
     $showTerm(group, False)
 
-	#for $t in $group.terms
-		$showTerm(t, True)
-	#end for
-	
+    #for $t in $group.terms
+        $showTerm(t, True)
+    #end for
 #end for
+            </div>
+        </div>
 
+        <footer class="footer">
+            <div class="container">
+                <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png"/></a>
+                <p><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Darwin Core</span> by the Darwin Core Task Group, <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.tdwg.org" property="cc:attributionName" rel="cc:attributionURL">Biodiversity Information Standards (TDWG)</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+            </div>
+        </footer>
+      
+        <!-- Scripts -->
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-</div> <!-- /container -->
-
-</body>
+            ga('create', 'UA-386033-4', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </body>
 </html>
