@@ -26,3 +26,17 @@ body {
         float: left;
         margin-right: 20px;
     }
+
+.terms-sidebar {
+        /*margin-top: 40px;*/
+    }
+    .terms-sidebar ul {
+        position: fixed;
+    }
+    .terms-sidebar ul > li > a {
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+    .terms-sidebar ul > .active > a {
+        color: red;
+    }
