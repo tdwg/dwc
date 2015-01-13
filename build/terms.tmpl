@@ -25,7 +25,7 @@
     </head>
 
     <body>
-        <nav class="navbar navbar-default">
+        <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
@@ -65,15 +65,15 @@
         </nav>
 
         <div class="content">
-            <div class="container">
-                <nav class="col-xs-2 terms-sidebar">
+            <div class="container-fluid">
+                <nav class="col-sm-2 terms-sidebar">
                     <ul class="nav nav-stacked">
                         #for $group in $groups
                         <li><a href="#$group.name">$group.name</a></li>
                         #end for
                     </ul>
                 </nav>
-                <div class="col-xs-10">
+                <div class="col-sm-10">
                     <div class="page-header">
                         <h1>Terms</h1>
                         <p>This page provides a list of all currently recommended terms of the Darwin Core standard and their definitions. Terms that begin with <code>dcterms:</code> are from the <a href="http://dublincore.org/documents/dcmi-terms/">Dublin Core</a>. Categories correspond to Darwin Core classes (terms that have other terms to describe them). List of these terms in various formats can be found in <a href="../downloads">downloads</a>.</p>
