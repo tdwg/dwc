@@ -69,7 +69,7 @@
                 <nav class="col-sm-2 terms-sidebar">
                     <ul class="nav nav-stacked">
                         #for $group in $groups
-                        <li><a href="#$group.name_simple">$group.name</a></li>
+                        <li><a href="#$group.name">$group.name</a></li>
                         #end for
                     </ul>
                 </nav>
@@ -82,7 +82,7 @@
 #def showTerm($t, $isProperty)
     #if $t.uri is not None
         #if $isProperty 
-            <div id="$t.name_simple" class="term-definition">
+            <div id="$t.name" class="term-definition">
                 <table class="table table-bordered table-condensed">
         #else
             <div class="class-definition">
@@ -109,12 +109,12 @@
     #end if
 #end def
                     #for $group in $groups
-                    <section id="$group.name_simple" class="class-group">
+                    <section id="$group.name" class="class-group">
                         <header class="well">
                             <h2>$group.name</h2>
                             <ul class="list-inline">
                             #for $term in $group.terms
-                                <li><a href="#$term.name_simple">$term.name</a></li>
+                                <li><a href="#$term.name">$term.name</a></li>
                             #end for
                             </ul>
                         </header>
