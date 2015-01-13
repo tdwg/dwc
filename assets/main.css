@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    margin-bottom: 80px; /* Sticky footer */
+    margin-bottom: 75px; /* Sticky footer */
     padding-top: 50px; /* Fixed navbar */
 }
 
@@ -16,16 +16,12 @@ body {
     background-color: #f8f8f8;
     border-top: 1px solid #e7e7e7;
     bottom: 0;
-    height: 80px;
+    height: 75px;
     position: absolute;
     width: 100%;
     }
     .footer .container {
         padding-top: 20px;
-    }
-    .footer a img {
-        float: left;
-        margin-right: 20px;
     }
 
 .terms-sidebar {
@@ -81,7 +77,6 @@ body {
         .class-group .table td {
             word-wrap: break-word;
         }
-
 
 @media screen and (max-width: 767px){
     .terms-sidebar {
