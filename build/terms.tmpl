@@ -68,18 +68,8 @@
             <div class="container">
                 <div class="page-header">
                     <h1>Terms</h1>
-                    <p>Add here</p>
+                    <p>This page provides a list and definitions of all currently recommended terms of the Darwin Core standard. Terms that begin with "dcterms:" are from the Dublin Core. Categories correspond to Darwin Core classes (terms that have other terms to describe them). </p>
                 </div>
-
-                <p><strong>Audience</strong>: This document is targeted toward those who need a reference (lists and definitions) to the essential information about the current recommended Darwin Core terms.</p>
-
-                <p>This quick guide provides a list of all current terms of the Darwin core. The terms are organized by categories (in bold) in the index. The categories correspond to Darwin Core terms that are classes (terms that have other terms to describe them). The terms that describe a given class (the class properties) appear in the list immediately below the name of the category in the index. The index provides links to the term descriptions in the table below the index.</p>
-
-                <p>Names that begin with dcterms: are terms managed by the Dublin Core Metadata Initiative [DCMI], which are reproduced here and which may include a description and comments adapted for the biodiversity community. The original definition of such terms can be found by following the link given in the Details section for the term.</p>
-
-                <p>Terms under the Record-level Terms section apply to the whole record regardless of the record type. For example, a record for a camera trap bird sighting would fall into the Dublin Core dcterms:type category StillImage and at the same time into the Darwin Core basisOfRecord category MachineObservation - a particular type of Occurrence, so the value of dcterms:type term for the record would be "StillImage" and the value of the basisOfRecord term would be "MachineObservation" to show which kind of Occurrence record it is. All of the rest of the record-level terms would apply to the Occurrence record.</p>
-
-                <p>The terms found under the Auxiliary Terms section can only be meaningfully implemented in an application that supports relational structures. For example, none of the auxiliary terms will be found in the specification of the Simple Darwin Core [SIMPLEDWC], which is "flat" in structure.</p>
 
 #def showTerm($t, $isProperty)
   #if $t.uri is not None
