@@ -10,7 +10,7 @@ The Darwin Core is body of standards. It includes a glossary of terms (in other 
 
 Darwin Core (c) by the Darwin Core Task Group, Biodiversity Informatics Standards (TDWG). Darwin Core is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/). A copy of the license is provided in [LICENSE](LICENSE).
 
-### How to attribute and cite Darwin Core
+### How to cite Darwin Core
 
 For scholarly citations, consider reading and citing the seminal peer-reviewed article on Darwin Core:
 
