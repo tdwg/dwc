@@ -37,8 +37,8 @@
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="../terms/index.html">Terms</a></li>
-                    <li><a href="../examples/index.html">Examples</a></li>
+                    <li><a href="../../terms/index.html">Terms</a></li>
+                    <li><a href="../../examples/index.html">Examples</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Reference <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
@@ -78,15 +78,15 @@
   files and complementary metadata files that describe their content.</p> 
 
   <p>This document provides guidelines for formatting and sharing Darwin Core
-  terms [<a href="../../index.htm">TERMS</a>] in <em>fielded text</em> formats,
+  terms [<a href="../../index.html">TERMS</a>] in <em>fielded text</em> formats,
   such as one or more comma separated value (CSV) files. Data conforming to the
-  Simple Darwin Core [<a href="../../simple/index.htm">SIMPLEDWC</a>] (CSV
+  Simple Darwin Core [<a href="../../simple.html">SIMPLEDWC</a>] (CSV
   format and having the first row include Darwin Core standard term names) can
   be shared in a single file, while a non-standard text file can be understood
   using an [<a href="http://www.w3.org/XML/">XML</a>] metafile to describe its
   contents and formatting.</p>
   
-  <img src="images/usage.png">
+  <p><img src="images/usage.png"></p>
   
   <p>More complex structure can be shared in multiple related files. The
   description of content and relationships between files can be achieved using
@@ -120,11 +120,11 @@ ID,Species,Count
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xsi:schemaLocation="http://rs.tdwg.org/dwc/text/ http://rs.tdwg.org/dwc/text/tdwg_dwc_text.xsd"&gt;
-  &lt;core rowType="http://rs.tdwg.org/dwc/xsd/simpledarwincore/SimpleDarwinRecord" ignoreHeaderLines="1"&gt;
+  &lt;core rowType="http://rs.tdwg.org/dwc/terms/Occurrence" ignoreHeaderLines="1"&gt;
     &lt;files&gt;
       &lt;location&gt;http://data.gbif.org/download/specimens.csv&lt;/location&gt;
     &lt;/files&gt;
-    &lt;field index="0" term="http://rs.tdwg.org/dwc/terms/catalogNumber" /&gt;
+    &lt;field index="0" term="http://rs.tdwg.org/dwc/terms/occurrenceID" /&gt;
     &lt;field index="1" term="http://rs.tdwg.org/dwc/terms/scientificName" /&gt;
     &lt;field index="2" term="http://rs.tdwg.org/dwc/terms/individualCount" /&gt;
     &lt;!-- A constant value has no index, but applies to all rows --&gt;
@@ -137,12 +137,12 @@ ID,Species,Count
   of the CSV file contained the term names:</p>
   
   <pre class="example">
-type,institutionCode,collectionCode,catalogNumber,scientificName,individualCount,datasetID
-PhysicalObject,ANSP,PH,123,"Cryptantha gypsophila Reveal & C.R. Broome",12,urn:lsid:tim.lsid.tdwg.org:collections:1
-PhysicalObject,ANSP,PH,124,"Buxbaumia piperi",2,urn:lsid:tim.lsid.tdwg.org:collections:1
+occurrenceID,scientificName,individualCount,datasetID
+123,"Cryptantha gypsophila Reveal & C.R. Broome",12,urn:lsid:tim.lsid.tdwg.org:collections:1
+124,"Buxbaumia piperi",2,urn:lsid:tim.lsid.tdwg.org:collections:1
 </pre>
 
-  <h3>1.2 XML versus <em>Fielded Text</em></h3>
+  <h3>1.2 XML versus Fielded Text</h3>
 
   <p>Many resources exist on the web describing the advantages of Extensible
   Markup Language [<a href="http://www.w3.org/XML/">XML</a>] over less
@@ -167,8 +167,8 @@ PhysicalObject,ANSP,PH,124,"Buxbaumia piperi",2,urn:lsid:tim.lsid.tdwg.org:colle
   
   <h2 id="metafile">2. Metafile Content</h2>
 
-  <p>The text metafile schema [<a href=
-  "../../../text/tdwg_dwc_text.xsd">TEXTSCHEMA</a>] provides technical details
+  <p>The text metafile schema [<a href="tdwg_dwc_text.xsd">TEXTSCHEMA</a>] 
+  provides technical details
   for the structure of a metafile by defining the elements and attributes
   required to describe the contents and relationships between text files. These
   elements and attributes, with descriptions and specifications for their use
@@ -183,7 +183,7 @@ PhysicalObject,ANSP,PH,124,"Buxbaumia piperi",2,urn:lsid:tim.lsid.tdwg.org:colle
 
   <h4>Attributes</h4>
 
-  <table class="border">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Attribute</th>
@@ -210,9 +210,10 @@ PhysicalObject,ANSP,PH,124,"Buxbaumia piperi",2,urn:lsid:tim.lsid.tdwg.org:colle
         <td>
       </tr>
     </tbody>
-  </table>Elements
-
-  <table class="border">
+  </table>
+  
+  <h4>Elements</h4>
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Element</th>
@@ -262,8 +263,7 @@ PhysicalObject,ANSP,PH,124,"Buxbaumia piperi",2,urn:lsid:tim.lsid.tdwg.org:colle
   <h3 id="coreTag">2.2 The &lt;core&gt; or &lt;extension&gt; element</h3>
 
   <h4>Attributes</h4>
-
-  <table class="border">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Attribute</th>
@@ -286,16 +286,10 @@ PhysicalObject,ANSP,PH,124,"Buxbaumia piperi",2,urn:lsid:tim.lsid.tdwg.org:colle
           http://rs.tdwg.org/dwc/terms/Occurrence for Occurrence records or
           http://rs.tdwg.org/dwc/terms/Taxon for Taxon records. Additional
           classes may be referenced by URI and defined outside the Darwin Core
-          specification. The row type defaults to the ambiguous
-          SimpleDarwinRecord. For convenience the URIs for classes defined by
+          specification. For convenience the URIs for classes defined by
           the Darwin Core are listed below:
 
           <dl>
-            <dt>Simple Darwin Record</dt>
-
-            <dd>
-            http://rs.tdwg.org/dwc/xsd/simpledarwincore/SimpleDarwinRecord</dd>
-
             <dt>Occurrence</dt>
 
             <dd>http://rs.tdwg.org/dwc/terms/Occurrence</dd>
@@ -332,7 +326,7 @@ PhysicalObject,ANSP,PH,124,"Buxbaumia piperi",2,urn:lsid:tim.lsid.tdwg.org:colle
 
         <td>&#10003;</td>
 
-        <td>http://rs.tdwg.org/dwc/xsd/simpledarwincore/SimpleDarwinRecord</td>
+        <td></td>
       </tr>
 
       <tr>
@@ -371,8 +365,7 @@ PhysicalObject,ANSP,PH,124,"Buxbaumia piperi",2,urn:lsid:tim.lsid.tdwg.org:colle
         <td class=""><em>encoding</em></td>
 
         <td>
-          Specifies the <a href=
-          "http://en.wikipedia.org/wiki/Character_encoding">character
+          Specifies the <a href="http://en.wikipedia.org/wiki/Character_encoding">character
           encoding</a> for the data file. The encoding is extremely important,
           but often ignored. The most frequently used encodings are:
 
@@ -451,9 +444,10 @@ PhysicalObject,ANSP,PH,124,"Buxbaumia piperi",2,urn:lsid:tim.lsid.tdwg.org:colle
         <td>YYYY-MM-DD</td>
       </tr>
     </tbody>
-  </table>Elements
-
-  <table class="border">
+  </table>
+  
+  <h4>Elements</h4>
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Element</th>
@@ -524,7 +518,7 @@ PhysicalObject,ANSP,PH,124,"Buxbaumia piperi",2,urn:lsid:tim.lsid.tdwg.org:colle
 
   <h4>Elements</h4>  
 
-  <table class="border">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Element</th>
@@ -542,12 +536,12 @@ PhysicalObject,ANSP,PH,124,"Buxbaumia piperi",2,urn:lsid:tim.lsid.tdwg.org:colle
           either of the following forms:
 
           <ul>
+            <li>A filepath relative to the location of the metafile such as
+            "specimen.txt","./specimen.txt", "data/specimen.txt".</li>
+
             <li>A web accessible URL such as
             "http://www.gbif.org/data/specimen.csv" or
             "ftp://ftp.gbif.org/tim/specimen.txt".</li>
-
-            <li>A filepath relative to the location of the metafile such as
-            "specimen.txt","./specimen.txt", "data/specimen.txt".</li>
           </ul>
         </td>
       </tr>
@@ -563,7 +557,7 @@ PhysicalObject,ANSP,PH,124,"Buxbaumia piperi",2,urn:lsid:tim.lsid.tdwg.org:colle
 
   <h4>Attributes</h4>  
 
-  <table class="border">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Attribute</th>
@@ -620,7 +614,7 @@ PhysicalObject,ANSP,PH,124,"Buxbaumia piperi",2,urn:lsid:tim.lsid.tdwg.org:colle
         source values for this field are based on. The URI ideally should
         resolve to some machine readable definition like SKOS, RDF or at least
         some simple text or html file often found for ISO or RFC standards. For
-        example http://rs.gbif.org/vocabulary/gbif/nomenclatural_code.xml,
+        example http://rs.gbif.org/vocabulary/gbif/rank.xml,
         http://www.ietf.org/rfc/rfc3066.txt or
         http://www.iso.org/iso/list-en1-semic-3.txt .</td>
         <td>
@@ -650,7 +644,7 @@ PhysicalObject,ANSP,PH,124,"Buxbaumia piperi",2,urn:lsid:tim.lsid.tdwg.org:colle
   for those species, and lists of countries and the threat status for those
   species.</p>
   
-  <img src="images/extension.png">
+  <p><img src="images/extension.png"></p>
   
   <pre class="example">
 &lt;?xml version="1.0" encoding="UTF-8"?&gt;
@@ -720,14 +714,13 @@ SELECT
       LINES TERMINATED BY '\n' 
 FROM 
   dwc;
-</pre><a id="tools" name="tools"></a>
+</pre>
 
-  <h2 id="tools">5. Tools</h2>
+  <h2 id="resources">5. Resources</h2>
 
   <p>For tools and applications, including a Java-based application to read
-  Darwin Core text archives, see the <i>Darwin Core Tools and Applications</i>
-  page [<a href=
-  "https://github.com/tdwg/dwc-documentation/blob/master/doc/resources.md">TOOLS</a>].</p>    
+  Darwin Core text archives, see the <a href="../../resources/index.html">Darwin Core Resources</a> page.</p>    
+    
     
         </div>
     </div>
