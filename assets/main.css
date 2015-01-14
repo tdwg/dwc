@@ -52,31 +52,34 @@ body {
         text-decoration: none;
     }
 
-.class-group,
-.term-definition {
-        padding-top: 70px; /* Avoid anchor links from sticking to the top */
-        margin-top: -70px;
+.anchor {
+    display: block; 
+    position: relative; 
+    top: -70px; 
+    visibility: hidden;
+}
+
+.class-group .well h2 {
+    margin-top: 10px;
+}
+
+.dwc-table {
+    table-layout: fixed;
     }
-    .class-group .well h2 {
-        margin-top: 10px;
+    .dwc-table col:first-child {
+        width: 120px; /* Labels */
     }
-    .class-group .table {
-        table-layout: fixed;
-        }
-        .class-group .table col:first-child {
-            width: 120px; /* Labels */
-        }
-        .class-group .class-definition .table tr { /* Class definitions */;
-            background-color: #f5f5f5;
-        }
-        .class-group .table tr:first-child { /* Header for each definition */
-            background-color: #e7e7e7;
-            font-size: 16px;
-            font-weight: bold;
-        }
-        .class-group .table td {
-            word-wrap: break-word;
-        }
+    .dwc-table.class-definition tr { /* Class definitions */;
+        background-color: #f5f5f5;
+    }
+    .dwc-table tr:first-child { /* Header for each definition */
+        background-color: #e7e7e7;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .dwc-table td {
+        word-wrap: break-word;
+    }
 
 @media screen and (max-width: 767px){
     .terms-sidebar {

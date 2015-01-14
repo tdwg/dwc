@@ -81,11 +81,10 @@
 #def showTerm($t, $isProperty)
     #if $t.uri is not None
         #if $isProperty 
-            <div id="$t.name" class="term-definition">
-                <table class="table table-bordered table-condensed">
+            <a id="$t.name" class="anchor"></a>
+            <table class="table table-bordered table-condensed dwc-table term-definition">
         #else
-            <div class="class-definition">
-                <table class="table table-bordered table-condensed">
+            <table class="table table-bordered table-condensed dwc-table class-definition">
         #end if
                 <colgroup>
                     <col />
@@ -103,12 +102,12 @@
                     <tr><td>Reference</td><td><a href="http://terms.tdwg.org/wiki/$t.name_prefixed">http://terms.tdwg.org/wiki/$t.name_prefixed</a></td></tr>
                     <tr><td>History</td><td><a href="$t.version">$t.version</a></td></tr>
                 </tbody>
-                </table>
-            </div>
+            </table>
     #end if
 #end def
                     #for $group in $groups
-                    <section id="$group.name" class="class-group">
+                    <section class="class-group">
+                        <a id="$group.name" class="anchor"></a>
                         <header class="well">
                             <h2>$group.name</h2>
                             <ul class="list-inline">
