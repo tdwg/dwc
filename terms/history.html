@@ -1,195 +1,163 @@
-<html>
-<body>
-    <h2>1. Introduction</h2>
-    This page contains detailed historical information about the Darwin Core terms and standard. You may want to consider consulting one of the following pages if you have other specific interests:
-    <a href="../index.html">Darwin Core Terms</a> - current term definitions
-    <a href="../dwc_normative.rdf">Normative Darwin Core</a> - authoritative specification of the standard in RDF
-    <a href="./old_versions.html">Darwin Core Versions</a> - pre-standard versions of Darwin Core
-    <a href="./mapping_abcd.html">Mapping to ABCD</a> - relationship of terms to <a href=
-    "http://www.tdwg.org/schemas/abcd/2.06">ABCD 2.06</a>
-    
-    <a id="dwchistory" name="dwchistory"></a>
-    <h2>2. History of Darwin Core</h2>
-    Darwin Core was developed as a standard under the <a href="http://www.tdwg.org/activities/darwincore/">Darwin Core Task Group</a> following the <a href="http://www.tdwg.org/about-tdwg/process/">standards process</a> of <a href="http://www.tdwg.org/">Biodiversity Information Standards (TDWG)</a>. 
-    
-Following is the timeline for the Darwin Core ratification process:
-* 14 Feb 2009 - The standard was submitted to the TDWG Executive Committee.
-* 17 Feb 2009 - Gail Kampmeier accepted role as Review Manager.
-* 11 Apr 2009 - Peer Review submitted to Darwin Core Task Group.
-* 01 May 2009 - Revisions made and comments submitted to Review Manager.
-* 13 May 2009 - Additional recommendations provided by the Review Manager.
-* 24 May 2009 - Revisions made and new version committed to standards track. 
-* 29 May 2009 - Revisions accepted and draft standard forwarded for review by the TDWG Executive Committee.
-* 29 Jun 2009 - Executive Review submitted to Darwin Core Task Group with recommendation to accept for Public Review with revisions.
-* 08 Jul 2009 - Revisions made and new version committed to standards track.
-* 11 Jul 2009 - Proposed standard announced for public review.
-* 10 Aug 2009 - Earliest possible date for the close of public review.
-* 23 Sep 2009 - Public Review closed, response version published.
-* 08 Oct 2009 - Standard ratified by TDWG Executive Committee.
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Darwin Core term history</title>
+        <meta name="dcterms.title" content="Darwin Core term history">
+        <meta name="dcterms.description" content=""><!-- Populate -->
+        <meta name="dcterms.modified" content="2015-01-13"><!-- Also update in footer -->
+        
+        <meta name="dcterms.subject" content="biodiversity, standards">
+        <meta name="dcterms.creator" content="Darwin Core Task Group">
+        <meta name="dcterms.contributor" content="John Wieczorek (MVZ)">
+        <meta name="dcterms.contributor" content="Markus Döring (GBIF)">
+        <meta name="dcterms.contributor" content="Renato De Giovanni (CRIA)">
+        <meta name="dcterms.contributor" content="Tim Robertson (GBIF)">
+        <meta name="dcterms.contributor" content="Dave Vieglais (KUNHM)">
+        <meta name="dcterms.contributor" content="Peter Desmet (INBO)">
+        <meta name="dcterms.publisher" content="Biodiversity Information Standards (TDWG)">
+        <meta name="dcterms.license" content="http://creativecommons.org/licenses/by/4.0/legalcode">
+        <meta name="dcterms.language" content="en">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../assets/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../assets/main.css">
+    </head>
 
-    Public review was conducted and archived on the <a href="http://lists.tdwg.org/pipermail/tdwg-content/">tdwg-content mailing list</a> (tdwg-content@lists.tdwg.org) from 11 July through 23 Sep 2009.
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../index.html">Darwin Core</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="../terms/index.html">Terms</a></li>
+                        <li><a href="../examples/index.html">Examples</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Reference <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="../change_policy.html">Change policy</a></li>
+                                <li class="divider"></li>
+                                <li><a href="../simple_dwc.html">Simple Darwin Core</a></li>
+                                <li class="divider"></li>
+                                <li><a href="../guides/text/index.html">Text guide</a></li>
+                                <li><a href="../guides/xml/index.html">XML guide</a></li>
+                                <li class="disabled"><a href="../guides/rdf/index.html">RDF guide</a></li>
+                                <li class="divider"></li>
+                                <li class="active"><a href="../terms/history.html">Term history</a></li>
+                                <li><a href="../terms/decisions.html">Term decisions</a></li>
+                                <li><a href="../terms/mappings.html">Term mappings</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="../resources/index.html">Resources</a></li>
+                        <li><a href="http://github.com/tdwg/dwc">Source</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-### Changes from previous versions
+        <div class="content">
+            <div class="container">
+                <div class="page-header">
+                    <h1>Term history</h1>
+                </div>
 
-The Standard Darwin Core differs from previous versions in several important ways.
+                <h2>1. Introduction</h2>
+                This page contains detailed historical information about the Darwin Core terms and standard. You may want to consider consulting one of the following pages if you have other specific interests:
+                <a href="../index.html">Darwin Core Terms</a> - current term definitions
+                <a href="../dwc_normative.rdf">Normative Darwin Core</a> - authoritative specification of the standard in RDF
+                <a href="./old_versions.html">Darwin Core Versions</a> - pre-standard versions of Darwin Core
+                <a href="./mapping_abcd.html">Mapping to ABCD</a> - relationship of terms to <a href=
+                "http://www.tdwg.org/schemas/abcd/2.06">ABCD 2.06</a>
 
-* The primary purpose of the standard is more open to biological data of all kinds than previous versions, whose scope was limited to biological occurrence and biased toward specimen data.
-* The foundation of the standard is a list of reusable concepts (called terms) rather than just a set of XML schemas. The list is maintained in its canonical form in rdf (http://rs.tdwg.org/dwc/rdf/dwcterms.rdf). The remainder of the standard consists of documentation about the terms, their maintenance, their use in applications, and the mechanisms for extending the Darwin Core, as well as a number of functional and example application profiles.
-* The list of terms consists of those derived from previous versions of the Darwin Core XML schemas (including OBIS and the Curatorial, Geospatial, and Paleontology extensions), as well as terms recommended for use by the Observations, Animal Movement, Crop Wild Relatives, Genetic Resources, and Sensitive Data groups. In the making of this list and the crafting of the term definitions, care was taken to address concerns arising in discussion groups, mailing lists, and wiki commentary since the inception of the first proposed Darwin Core XML schema.
+                <h2>2. History of Darwin Core</h2>
+                Darwin Core was developed as a standard under the <a href="http://www.tdwg.org/activities/darwincore/">Darwin Core Task Group</a> following the <a href="http://www.tdwg.org/about-tdwg/process/">standards process</a> of <a href="http://www.tdwg.org/">Biodiversity Information Standards (TDWG)</a>. 
 
-    <a id="termhistory" name="termhistory"></a>
-    <h2>3. Term History</h2>
-    <p>This document serves as a complete alphabetically ordered reference for all terms associated with the Darwin Core, including historical pre-standard versions (Classic, MaNIS, OBIS, Draft Standard 1.4, Curatorial extension, Geospatial extension, Paleontology extension).</p>
+                Following is the timeline for the Darwin Core ratification process:
+                * 14 Feb 2009 - The standard was submitted to the TDWG Executive Committee.
+                * 17 Feb 2009 - Gail Kampmeier accepted role as Review Manager.
+                * 11 Apr 2009 - Peer Review submitted to Darwin Core Task Group.
+                * 01 May 2009 - Revisions made and comments submitted to Review Manager.
+                * 13 May 2009 - Additional recommendations provided by the Review Manager.
+                * 24 May 2009 - Revisions made and new version committed to standards track. 
+                * 29 May 2009 - Revisions accepted and draft standard forwarded for review by the TDWG Executive Committee.
+                * 29 Jun 2009 - Executive Review submitted to Darwin Core Task Group with recommendation to accept for Public Review with revisions.
+                * 08 Jul 2009 - Revisions made and new version committed to standards track.
+                * 11 Jul 2009 - Proposed standard announced for public review.
+                * 10 Aug 2009 - Earliest possible date for the close of public review.
+                * 23 Sep 2009 - Public Review closed, response version published.
+                * 08 Oct 2009 - Standard ratified by TDWG Executive Committee.
 
-    <p>Following is the complete list of term attributes and their
-    definitions:</p>
+                Public review was conducted and archived on the <a href="http://lists.tdwg.org/pipermail/tdwg-content/">tdwg-content mailing list</a> (tdwg-content@lists.tdwg.org) from 11 July through 23 Sep 2009.
 
-    <table align="center" border="0" width="95%">
-      <tbody>
-        <tr>
-          <td width="20%"><b>Term Name</b>:</td>
+                ### Changes from previous versions
 
-          <td width="80%">The name by which the latest version of the term is
-          commonly known.</td>
-        </tr>
+                The Standard Darwin Core differs from previous versions in several important ways.
 
-        <tr>
-          <td width="20%"><b>Identifier</b>:</td>
+                * The primary purpose of the standard is more open to biological data of all kinds than previous versions, whose scope was limited to biological occurrence and biased toward specimen data.
+                * The foundation of the standard is a list of reusable concepts (called terms) rather than just a set of XML schemas. The list is maintained in its canonical form in rdf (http://rs.tdwg.org/dwc/rdf/dwcterms.rdf). The remainder of the standard consists of documentation about the terms, their maintenance, their use in applications, and the mechanisms for extending the Darwin Core, as well as a number of functional and example application profiles.
+                * The list of terms consists of those derived from previous versions of the Darwin Core XML schemas (including OBIS and the Curatorial, Geospatial, and Paleontology extensions), as well as terms recommended for use by the Observations, Animal Movement, Crop Wild Relatives, Genetic Resources, and Sensitive Data groups. In the making of this list and the crafting of the term definitions, care was taken to address concerns arising in discussion groups, mailing lists, and wiki commentary since the inception of the first proposed Darwin Core XML schema.
 
-          <td width="80%">The unique identifier for the latest version of the
-          term.</td>
-        </tr>
+                <h2>2. Term History</h2>
+                <p>This document serves as a complete alphabetically ordered reference for all terms associated with the Darwin Core, including historical pre-standard versions (Classic, MaNIS, OBIS, Draft Standard 1.4, Curatorial extension, Geospatial extension, Paleontology extension).</p>
+                <p>Following is the complete list of term attributes and their definitions:</p>
 
-        <tr>
-          <td width="20%"><b>Namespace</b>:</td>
+                <dl class="dl-horizontal">
+                    <dt>Term Name</dt><dd>The name by which the latest version of the term is commonly known.</dd>
+                    <dt>Identifier</dt><dd>The unique identifier for the latest version of the term.</dd>
+                    <dt>Namespace</dt><dd>The namespace (Darwin Core, Dublin Core) within which the term is defined. The combination of the namespace and the version make a unique identifier for the term.</dd>
+                    <dt>Label</dt><dd>The commonly used label for the term.</dd>
+                    <dt>Definition</dt><dd>A description of the nature of the content of the term.</dd>
+                    <dt>Comment</dt><dd>Further commentary about the usage of the term, with examples and a reference to further information.</dd>
+                    <dt>Type of Term</dt><dd>The category (property, class, vocabulary encoding scheme, or datatype - syntax encoding scheme) to which the term belongs.</dd>
+                    <dt>Refines</dt><dd>The name of a term of which this term is a refined (more specialized) version.</dd>
+                    <dt>Status</dt><dd>The status of the term - deprecated (not recommended for use), superseded (not recommended for use - replaced by the term or terms shown in the Is Replaced By column), or recommended (ready for use).</dd>
+                    <dt>Date Issued</dt><dd>Date on which the term was first published.</dd>
+                    <dt>Date Modified</dt><dd>Date on which the term was last changed in any way that would change its meaning or use.</dd>
+                    <dt>Member Of</dt><dd>The Class of which this term is a member.</dd>
+                    <dt>Has Domain</dt><dd>A Class of which a resource described by the term is a property.</dd>
+                    <dt>Has Range</dt><dd>A Class of which a value described by the term is an instance.</dd>
+                    <dt>Decision</dt><dd>The reference to the published decision that resulted in the current version of the term.</dd>
+                    <dt>Version</dt><dd>The identifier for the specific version of the term.</dd>
+                    <dt>Replaces</dt><dd>The identifier of the previous version of the term.</dd>
+                    <dt>Is Replaced By</dt><dd>The identifier of the next newer version of the term.</dd>
+                    <dt>Class</dt><dd>The primary category of terms (Class) that this term describes.</dd>
+                    <dt>ABCD 2.</dd>06</dt><dd>The xpath(s) to the equivalent concept(s) in the Access to Biological Collections Data schema version 2.06.</dd>
+                </dl>
 
-          <td width="80%">The namespace (Darwin Core, Dublin Core) within which
-          the term is defined. The combination of the namespace and the version
-          make a unique identifier for the term.</td>
-        </tr>
+                <a id="acceptedNameUsage-2009-09-21" class="anchor"></a>
+                <table class="table table-bordered table-condensed dwc-table term-definition">
+                    <colgroup><col /><col /></colgroup>
+                    <tbody>
+                        <tr><td colspan="2">acceptedNameUsage</td></tr>
+                        <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/acceptedNameUsage">http://rs.tdwg.org/dwc/terms/acceptedNameUsage</a></td></tr>
+                        <tr><td>Namespace</td><td>http://rs.tdwg.org/dwc/terms/</td></tr>
+                        <tr><td>Label</td><td>Accepted Name Usage</td></tr>
+                        <tr><td>Definition</td><td>The full name, with authorship and date information if known, of the currently valid (zoological) or accepted (botanical) taxon.</td></tr>
+                        <tr><td>Comment</td><td>Example: "Tamias minimus" valid name for "Eutamias minimus".</td></tr>
+                        <tr><td>Reference</td><td><a href="http://terms.tdwg.org/wiki/dwc:acceptedNameUsage">http://terms.tdwg.org/wiki/dwc:acceptedNameUsage</a></td></tr>
+                        <tr><td>Type of term</td><td>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</td></tr>
+                        <tr><td>Refines</td><td></td></tr>
+                        <tr><td>Status</td><td>recommended</td></tr>
+                        <tr><td>Date issued</td><td>2008-11-19</td></tr>
+                        <tr><td>Date modified</td><td>2009-09-21</td></tr>
+                        <tr><td>Has domain</td><td></td></tr>
+                        <tr><td>Has range</td><td></td></tr>
+                        <tr><td>Version</td><td>acceptedNameUsage-2009-09-21</td></tr>
+                        <tr><td>Replaces</td><td><a href="index.html#acceptedScientificName-2009-07-06">acceptedScientificName-2009-07-06</a></td></tr>
+                        <tr><td>Is replaced by</td><td></td></tr>
+                        <tr><td>Class</td><td>http://rs.tdwg.org/dwc/terms/Taxon</td></tr>
+                        <tr><td>ABCD 2.06</td><td>not in ABCD</td></tr>
+                    </tbody>
+                </table>
 
-        <tr>
-          <td width="20%"><b>Label</b>:</td>
-
-          <td width="80%">The commonly used label for the term.</td>
-        </tr>
-
-        <tr>
-          <td width="20%"><b>Definition</b>:</td>
-
-          <td width="80%">A description of the nature of the content of the
-          term.</td>
-        </tr>
-
-        <tr>
-          <td width="20%"><b>Comment</b>:</td>
-
-          <td width="80%">Further commentary about the usage of the term, with
-          examples and a reference to further information.</td>
-        </tr>
-
-        <tr>
-          <td width="20%"><b>Type of Term</b>:</td>
-
-          <td width="80%">The category (property, class, vocabulary encoding
-          scheme, or datatype - syntax encoding scheme) to which the term
-          belongs.</td>
-        </tr>
-
-        <tr>
-          <td width="20%"><b>Refines</b>:</td>
-
-          <td width="80%">The name of a term of which this term is a refined
-          (more specialized) version.</td>
-        </tr>
-
-        <tr>
-          <td width="20%"><b>Status</b>:</td>
-
-          <td width="80%">The status of the term - deprecated (not recommended
-          for use), superseded (not recommended for use - replaced by the term
-          or terms shown in the <i>Is Replaced By</i> column), or recommended
-          (ready for use).</td>
-        </tr>
-
-        <tr>
-          <td width="20%"><b>Date Issued</b>:</td>
-
-          <td width="80%">Date on which the term was first published.</td>
-        </tr>
-
-        <tr>
-          <td width="20%"><b>Date Modified</b>:</td>
-
-          <td width="80%">Date on which the term was last changed in any way
-          that would change its meaning or use.</td>
-        </tr>
-
-        <tr>
-          <td width="20%"><b>Member Of</b>:</td>
-
-          <td width="80%">The Class of which this term is a member.</td>
-        </tr>
-
-        <tr>
-          <td width="20%"><b>Has Domain</b>:</td>
-
-          <td width="80%">A Class of which a resource described by the term is
-          a property.</td>
-        </tr>
-
-        <tr>
-          <td width="20%"><b>Has Range</b>:</td>
-
-          <td width="80%">A Class of which a value described by the term is an
-          instance.</td>
-        </tr>
-
-        <tr>
-          <td width="20%"><b>Decision</b>:</td>
-
-          <td width="80%">The reference to the published decision that resulted
-          in the current version of the term.</td>
-        </tr>
-
-        <tr>
-          <td width="20%"><b>Version</b>:</td>
-
-          <td width="80%">The identifier for the specific version of the
-          term.</td>
-        </tr>
-
-        <tr>
-          <td width="20%"><b>Replaces</b>:</td>
-
-          <td width="80%">The identifier of the previous version of the
-          term.</td>
-        </tr>
-
-        <tr>
-          <td width="20%"><b>Is Replaced By</b>:</td>
-
-          <td width="80%">The identifier of the next newer version of the
-          term.</td>
-        </tr>
-
-        <tr>
-          <td width="20%"><b>Class</b>:</td>
-
-          <td width="80%">The primary category of terms (Class) that this term
-          describes.</td>
-        </tr>
-
-        <tr>
-          <td width="20%"><b>ABCD 2.06</b>:</td>
-
-          <td width="80%">The xpath(s) to the equivalent concept(s) in the
-          Access to Biological Collections Data schema version 2.06.</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <p></p>
     <table cellspacing="0" class="border">
       <tbody>
 <!-- Begin Term Table -->
@@ -788,8 +756,36 @@ The Standard Darwin Core differs from previous versions in several important way
 <TR><TH colspan="2"><A name="YearIdentified-2003-06-13">Term Name: YearIdentified</A></TH></TR>	<TR><TD>Identifier:</TD><TD>http://digir.net/schema/conceptual/darwin/2003/1.0/YearIdentified</TD></TR>	<TR><TD>Namespace:</TD><TD>http://digir.net/schema/conceptual/darwin/2003/1.0/</TD></TR>	<TR><TD>Label:</TD><TD>Year Identified</TD></TR>	<TR><TD>Definition:</TD><TD>The year portion of the date when the Collection Item was identified; as four digits [-9999..9999], e.g., 1906, 2002.</TD></TR>	<TR><TD>Comment:</TD><TD></TD></TR>	<TR><TD>Type of Term:</TD><TD>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</TD></TR>	<TR><TD>Refines:</TD><TD></TD></TR>	<TR><TD>Status:</TD><TD>superseded</TD></TR>	<TR><TD>Date Issued:</TD><TD>2003-06-13</TD></TR>	<TR><TD>Date Modified:</TD><TD>2003-06-13</TD></TR>		<TR><TD>Has Domain:</TD><TD></TD></TR>	<TR><TD>Has Range:</TD><TD></TD></TR>		<TR><TD>Version:</TD><TD>YearIdentified-2003-06-13</TD></TR>	<TR><TD>Replaces:</TD><TD></TD></TR>	<TR><TD>Is Replaced By:</TD><TD><a href="./index.htm#dateIdentified-2009-04-24">dateIdentified-2009-04-24</a></TD></TR>	<TR><TD>Class:</TD><TD></TD></TR>	<TR><TD>ABCD 2.06:</TD><TD>accessible from DataSets/DataSet/Units/Unit/Identifications/Identification/Date/DateText</TD></TR>
 <TR><TH colspan="2"><A name="YearIdentified-2003-06-17">Term Name: YearIdentified</A></TH></TR>	<TR><TD>Identifier:</TD><TD>http://digir.net/schema/conceptual/darwin/2003/1.0/YearIdentified</TD></TR>	<TR><TD>Namespace:</TD><TD>http://digir.net/schema/conceptual/darwin/2003/1.0/</TD></TR>	<TR><TD>Label:</TD><TD>Year Identified</TD></TR>	<TR><TD>Definition:</TD><TD>The four digit year in the Common Era calendar in which the cataloged item was identified as having the ScientificName.</TD></TR>	<TR><TD>Comment:</TD><TD></TD></TR>	<TR><TD>Type of Term:</TD><TD>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</TD></TR>	<TR><TD>Refines:</TD><TD></TD></TR>	<TR><TD>Status:</TD><TD>superseded</TD></TR>	<TR><TD>Date Issued:</TD><TD>2003-06-17</TD></TR>	<TR><TD>Date Modified:</TD><TD>2003-06-17</TD></TR>		<TR><TD>Has Domain:</TD><TD></TD></TR>	<TR><TD>Has Range:</TD><TD></TD></TR>		<TR><TD>Version:</TD><TD>YearIdentified-2003-06-17</TD></TR>	<TR><TD>Replaces:</TD><TD><a href="./index.htm#YearIdentified-2003-06-13">YearIdentified-2003-06-13</a></TD></TR>	<TR><TD>Is Replaced By:</TD><TD><a href="./index.htm#dateIdentified-2009-04-24">dateIdentified-2009-04-24</a></TD></TR>	<TR><TD>Class:</TD><TD></TD></TR>	<TR><TD>ABCD 2.06:</TD><TD>accessible from DataSets/DataSet/Units/Unit/Identifications/Identification/Date/DateText</TD></TR>
 
-<!-- End Term Table -->
-      </tbody>
-    </table>
-    <hr />
-</body>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png"/></a></p>
+                    </div>
+                    <div class="col-xs-8">
+                        <ul class="list-inline pull-right">
+                            <li>Page last modified on 2015-01-13</li>
+                            <li><a href="https://github.com/tdwg/dwc/blob/gh-pages/terms/history.html">Edit on GitHub</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+      
+        <!-- Scripts -->
+        <script type="text/javascript" src="../assets/jquery.min.js"></script>
+        <script type="text/javascript" src="../assets/bootstrap.min.js"></script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-386033-4', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </body>
+</html>
