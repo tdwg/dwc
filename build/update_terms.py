@@ -1,8 +1,12 @@
 #!/usr/bin/env python
 
 ''' 
-easy_install pip
-pip install -r requirements.txt
+Install the required libraries for this script with PIP:
+$ easy_install pip
+$ sudo pip install -r requirements.txt
+
+To run the script just run it from inside the build folder:
+$ ./update_terms.py
 '''
 
 import yaml, re, csv, codecs
