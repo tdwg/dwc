@@ -69,10 +69,10 @@
                     <h1>Change policy</h1>
                 </div>
 
-                <h2>Introduction</h2>
+                <h2>1. Introduction</h2>
                 <p>This document and the policies contained herein are modeled on the <em>Dublin Core Metadata Initiative Namespace Policy</em> [<a href="http://dublincore.org/documents/2007/07/02/dcmi-namespace/">DCMINAMESPACEPOLICY</a>]. All terms in the Darwin Core must be identified with a unique Uniform Resource Identifier (URI). For convenience, the term URIs are grouped into collections known as <em>Darwin Core namespaces</em>. This document describes the policies associated with Darwin Core namespaces and how term URIs are allocated by the <em>Darwin Core Task Group</em> [<a href="http://www.tdwg.org/activities/darwincore/">DWC-TASK</a>].</p>
                 
-                <h2>Namespace URIs</h2>
+                <h2>2. Namespace URIs</h2>
                 <p>The Darwin Core namespace URI for the collection of all Darwin Core properties, classes, and encoding schemes is:</p>
                 <pre class="example">http://rs.tdwg.org/dwc/terms/</pre>
                 <p>The term identifier for the current (recommended) version of a term is a URI based on the namespace and the term name without version information. Some example Darwin Core term identifiers follow:</p>
@@ -83,32 +83,32 @@
                 <p>All Darwin Core identifiers will dereference to a Darwin Core term
                 declaration for the identified term.</p>
 
-                <h2>Term change policy</h2>
+                <h2>3. Term change policy</h2>
                 <p>Changes to Darwin Core recommendations or term declarations will occur from time to time for a variety of reasons. Changes have varying implications for the decision making process and for versioning Darwin Core documents and term URIs. The types of changes and appropriate processes are identified and explained in the following sections.</p>
                 <p><strong>Reporting issues</strong>: In all cases the proposed change should be reported to the <em>Technical Architecture Group</em> [<a href="mailto:tdwg-tag@lists.tdwg.org">TDWG-TAG</a>] and the outcome of the proposal should be announced on the <em>Darwin Core mailing list</em> [<a href="http://lists.tdwg.org/mailman/listinfo/tdwg-content">TDWG-CONTENT</a>].</p>
                 <p><strong>Decisions</strong>: In cases where an Executive decision is required,the <em>Technical Architecture Group</em> will conduct a minimum 30-day public comment period on the <em>Darwin Core mailing list</em> [<a href="http://lists.tdwg.org/mailman/listinfo/tdwg-content">TDWG-CONTENT</a>], during which the proposal can be refined based on discussion in an effort to reach consensus (no dissenting opinion expressed publicly on the mailing list for 30 days from the most recent iteration). If a consensus is reached, the proposal will be presented by the <em>Technical Architecture Group</em> to the Executive Committee for a decision [<a href="terms/decisions.html">DECISIONS</a>] within 30 days.</p>
                 <p><strong>Versions</strong>: In cases where a decision requires a version change, the attributes <em>Status</em> (recommended, superseded, or deprecated), <em>Date Issued</em>, <em>Date Modified</em>, <em>Decision</em>, <em>Version</em>, <em>Replaces</em>, and <em>Is Replaced By</em> will be modified in the affected terms as appropriate.</p>
 
-                <h3>Minor editorial errata</h3>
+                <h3>3.1 Minor editorial errata</h3>
                 <p>An error in spelling, punctuation, grammar, or other clerical mistake
                 discovered in a Darwin Core recommendation or term declaration may be
                 corrected without a public comment period or Executive Decision. Minor
                 editorial changes of this type do not require a version change for the
                 affected term and/or documents.</p>
 
-                <h3>Substantive editorial errata</h3>
+                <h3>3.2 Substantive editorial errata</h3>
                 <p>A substantive error is one that compromises the usefulness or accuracy of systems based on Darwin Core. Those that are unequivocal (for example, an incorrect URI or reference) may be treated as minor editorial errata (Section 3.1).</p>
                 <p>Otherwise, the <em>Technical Architecture Group</em> will conduct a public comment period and seek an Executive decision to find a solution that minimizes adverse effects on existing applications. Changes of this nature require a version change for the affected term and/or documents.</p>
 
-                <h3>Semantic changes to Darwin Core terms</h3>
+                <h3>3.3 Semantic changes to Darwin Core terms</h3>
                 <p>Darwin Core terms may be changed based on public demand and consensus. A request to the <em>Technical Architecture Group</em> for a term change should consist of proposed values for the complete list of attributes given in the term definitions section of the <em>Darwin Core Terms Complete History</em> [<a href="terms/history.html">HISTORY</a>] along with a statement of justification for the change.</p>
                 <p>Term changes that are likely to have substantial functional impact on human understanding or machine processing will posted for public commentary and an Executive decision. Changes of this nature require a version change for the affected term and/or documents.</p>
 
-                <h3>Addition of Darwin Core terms</h3>
+                <h3>3.4 Addition of Darwin Core terms</h3>
                 <p>New terms may be added to the Darwin Core namespaces based on public demand and consensus. A request to the <em>Technical Architecture Group</em> [<a href="mailto:tdwg-tag@lists.tdwg.org">TDWG-TAG</a>] for a new term should consist of proposed values for the complete list of attributes given in the term definitions section of the <em>Darwin Core Terms Complete History</em> [<a href="terms/history.html">HISTORY</a>] along with a statement of justification for the new term, including an explanation of why no existing term will suffice.</p>
                 <p>New term proposals will be posted for public commentary and an Executive decision. Changes of this nature require a version change for the affected term and/or documents.</p>
 
-                <h2>Persistence policy</h2>
+                <h2>4. Persistence policy</h2>
                 <p>TDWG recognizes that people and applications depend on the persistence of formal documents and machine processable schemas that have been made publicly available. In particular, the stability of Darwin Core term URIs and Darwin Core namespace URIs is critical to interoperability over time. Thus, the wide promulgation of this set of URIs dictates that they be maintained to support legacy applications that have adopted them.</p>
             </div>
         </div>
