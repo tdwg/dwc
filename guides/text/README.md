@@ -148,7 +148,7 @@ Specifies the number lines to ignore from the beginning of the file. This can be
 * **Required**: no
 * **Default**: `0`
 
-#### `dateFormat`
+#### `dateFormat` attribute
 
 When verbatim dates are consistent in format, this field can be used to indicate the format represented. It is recommended to use the date, dateTime and time for field formats wherever possible, but where verbatim dates are required, a format may be specified here. This should be considered a 'hint' for consumers. It is recommended that consumers support the minimum combinations of `DD` `MM` and `YYYY` with the separators `/` and `-`. Examples:
 
@@ -175,7 +175,6 @@ If extensions are being used, the `<extension>` element must contain a `<coreId>
 #### `<field>` subelement
 
 A `<core>` or `<extension>` element must contain one or more <field> elements, each representing a 'column' in the row.
-
 
 ### 2.3 `<files>` element
 
