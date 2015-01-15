@@ -75,25 +75,21 @@ The `<archive>` element is the container for the list of related files (one core
 Contains a qualified Uniform Resource Locator (URL) defining the location of a metadata description of the entire archive. The format of the metadata is not prescribed, but a standardized format such as Ecological Metadata Language (EML), Federal Geographic Data Committee (FGDC), or ISO 19115 family is recommended.
 
 * **Required**: no
-* **Default**: 
+* **Default**: metadata.xml
 
-#### Subelements
-
-#### `<core>` element
+#### `<core>` subelement
 
 An `<archive>` must contain exactly one `<core>` element, representing the data entity (the actual file and its column header mappings to Darwin Core terms) upon which records are based.
 
 If extensions are being used, each record in the core data must have a unique identifier. The field for this identifier must be specified in an explicit `<id>` field in order to associate extension records with the core record.
 
-#### `<extension>` element
+#### `<extension>` subelement
 
 An `<archive>` may define zero or more `<extension>` elements, each representing an individual extension entity directly related to the core. In addition to the general file attributes described below, every extension entity must have an explicit `<coreId>` field to relate the extension record to a row in the core entity. The extension itself does not have to have a unique ID field and many rows can point to the same core record.
 
 ### 2.2 The `<core>` or `<extension>` element
 
-#### Attributes
-
-##### `rowType` attribute
+#### `rowType` attribute
 
 A Unified Resource Identifier (URI) for the term identifying the class of data represented by each row, for example, http://rs.tdwg.org/dwc/terms/Occurrence for Occurrence records or http://rs.tdwg.org/dwc/terms/Taxon for Taxon records. Additional classes may be referenced by URI and defined outside the Darwin Core specification. The row type is required. For convenience the URIs for classes defined by the Darwin Core are listed below:
 
@@ -109,30 +105,29 @@ A Unified Resource Identifier (URI) for the term identifying the class of data r
 </dl>
 
 * **Required**: yes
-* **Default**: http://rs.tdwg.org/dwc/xsd/simpledarwincore/SimpleDarwinRecord
 
-##### `fieldsTerminatedBy` attribute
+#### `fieldsTerminatedBy` attribute
 
 Specifies the delimiter between fields. Typical values might be `,` or `\t` for CSV or Tab files respectively.
 
 * **Required**: no
 * **Default**: `,`
 
-##### `linesTerminatedBy` attribute
+#### `linesTerminatedBy` attribute
 
 Specifies the row separator character.
 
 * **Required**: no
 * **Default**: `\n`
 
-##### `fieldsEnclosedBy` attribute
+#### `fieldsEnclosedBy` attribute
 
 Specifies the character used to enclose (mark the start and end of) each field. CSV files frequently use the double quote character (`"`), but the default is no enclosing character. Note that a comma separated value file that has commas within the content of any field must have an enclosing character.</td>
 
 * **Required**: no
 * **Default**: `"`
 
-##### `encoding` attribute
+#### `encoding` attribute
 
 Specifies the [character encoding](http://en.wikipedia.org/wiki/Character_encoding) for the data file. The encoding is extremely important, but often ignored. The most frequently used encodings are:
 
@@ -146,14 +141,14 @@ Specifies the [character encoding](http://en.wikipedia.org/wiki/Character_encodi
 * **Required**: no
 * **Default**: `UTF-8`
 
-##### `ignoreHeaderLines` attribute_
+#### `ignoreHeaderLines` attribute
 
 Specifies the number lines to ignore from the beginning of the file. This can be used to ignore files with column headings or preamble comments for example.
 
 * **Required**: no
 * **Default**: `0`
 
-##### `dateFormat`
+#### `dateFormat`
 
 When verbatim dates are consistent in format, this field can be used to indicate the format represented. It is recommended to use the date, dateTime and time for field formats wherever possible, but where verbatim dates are required, a format may be specified here. This should be considered a 'hint' for consumers. It is recommended that consumers support the minimum combinations of `DD` `MM` and `YYYY` with the separators `/` and `-`. Examples:
 
@@ -165,21 +160,19 @@ When verbatim dates are consistent in format, this field can be used to indicate
     <dt>YYYYMMDD</dt><dd>For dates of the form 19781221</dd>
 </dl>
 
-#### Elements
-
-##### `<files>` element
+#### `<files>` subelement
 
 `<core>` or `<extension>` element must contain one `<files>` element to locate the data being described.
 
-##### `<id>` element
+#### `<id>` subelement
 
 If extensions are being used, the `<core>` must contain an <id> element that indicates the identifier for a record.
 
-##### `<coreId>` element
+#### `<coreId>` subelement
 
 If extensions are being used, the `<extension>` element must contain a `<coreId>` element that indicates the column in the extension file that contains the core record identifier (the matching `<id>` in the core file).
 
-##### `<field>` element
+#### `<field>` subelement
 
 A `<core>` or `<extension>` element must contain one or more <field> elements, each representing a 'column' in the row.
 
@@ -188,9 +181,7 @@ A `<core>` or `<extension>` element must contain one or more <field> elements, e
 
 The files element must contain one or more <location> elements, each defining where a file resides. Each core or extension entity can be composed from one or more files. If an entity has data in more than one file, use the `<location>` element multiple times, once for each file that makes up the entity.
 
-#### Elements
-
-##### `<location>` element
+#### `<location>` subelement
 
 Specifies the location of the file being described, which may take either of the following forms:
 
@@ -201,30 +192,27 @@ Specifies the location of the file being described, which may take either of the
 
 The field element is used to specify the location and content of data within a file. There must be one field element for every term being shared for the entity, whether explicitly or through the use of a default value for all rows in the file.
 
-#### Attributes
-
-##### `index` attribute
+#### `index` attribute
 
 Specifies the position of the column in the row. The first column has an index of 0, the second column 1, etc. If no column index is specified, then the term and the default may be used to define a constant value for all rows.
 
 * **Required**: no
 * **Default**:
 
-##### `term` attribute
+#### `term` attribute
 
 A Unified Resource Identifier (URI) for the term represented by this field. For example, a field containing the scientific name would have term="http://rs.tdwg.org/dwc/terms/scientificName". Terms outside of the Darwin Core specification may be used, such as those from the Dublin Core Metadata Initative, for example, dcterms:modified would be term="http://purl.org/dc/terms/modified".
 
 * **Required**: yes
-* **Default**:
 
-##### `default` attribute
+#### `default` attribute
 
 Specifies value to use if one is not supplied for the field in a given row. If no index is supplied, the default can be used to define a constant for all rows for a field that is not in the data file.
 
 * **Required**: no
 * **Default**:
 
-##### `vocabulary` attribute
+#### `vocabulary` attribute
 
 A Unified Resource Identifier (URI) for a vocabulary that the source values for this field are based on. The URI ideally should resolve to some machine readable definition like SKOS, RDF or at least some simple text or html file often found for ISO or RFC standards. For example http://rs.gbif.org/vocabulary/gbif/nomenclatural_code.xml, http://www.ietf.org/rfc/rfc3066.txt or http://www.iso.org/iso/list-en1-semic-3.txt.
 
