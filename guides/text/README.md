@@ -70,24 +70,22 @@ The text metafile schema [[TEXTSCHEMA](tdwg_dwc_text.xsd)] provides technical de
 
 The `<archive>` element is the container for the list of related files (one core and zero or more extensions). The `<archive>` element has just one attribute, `metadata`.
 
-#### Attributes
-
-##### `metadata` attribute
+#### `metadata` attribute
 
 Contains a qualified Uniform Resource Locator (URL) defining the location of a metadata description of the entire archive. The format of the metadata is not prescribed, but a standardized format such as Ecological Metadata Language (EML), Federal Geographic Data Committee (FGDC), or ISO 19115 family is recommended.
 
 * **Required**: no
 * **Default**: 
 
-#### Elements
+#### Subelements
 
-##### `<core>` element
+#### `<core>` element
 
 An `<archive>` must contain exactly one `<core>` element, representing the data entity (the actual file and its column header mappings to Darwin Core terms) upon which records are based.
 
 If extensions are being used, each record in the core data must have a unique identifier. The field for this identifier must be specified in an explicit `<id>` field in order to associate extension records with the core record.
 
-##### `<extension>` element
+#### `<extension>` element
 
 An `<archive>` may define zero or more `<extension>` elements, each representing an individual extension entity directly related to the core. In addition to the general file attributes described below, every extension entity must have an explicit `<coreId>` field to relate the extension record to a row in the core entity. The extension itself does not have to have a unique ID field and many rows can point to the same core record.
 
@@ -97,10 +95,9 @@ An `<archive>` may define zero or more `<extension>` elements, each representing
 
 ##### `rowType` attribute
 
-A Unified Resource Identifier (URI) for the term identifying the class of data represented by each row, for example, http://rs.tdwg.org/dwc/terms/Occurrence for Occurrence records or http://rs.tdwg.org/dwc/terms/Taxon for Taxon records. Additional classes may be referenced by URI and defined outside the Darwin Core specification. The row type defaults to the ambiguous SimpleDarwinRecord. For convenience the URIs for classes defined by the Darwin Core are listed below:
+A Unified Resource Identifier (URI) for the term identifying the class of data represented by each row, for example, http://rs.tdwg.org/dwc/terms/Occurrence for Occurrence records or http://rs.tdwg.org/dwc/terms/Taxon for Taxon records. Additional classes may be referenced by URI and defined outside the Darwin Core specification. The row type is required. For convenience the URIs for classes defined by the Darwin Core are listed below:
 
 <dl class="dl-horizontal">
-    <dt>Simple Darwin Record</dt><dd> http://rs.tdwg.org/dwc/xsd/simpledarwincore/SimpleDarwinRecord</dd>
     <dt>Occurrence</dt><dd>http://rs.tdwg.org/dwc/terms/Occurrence</dd>
     <dt>Event</dt><dd>http://rs.tdwg.org/dwc/terms/Event</dd>
     <dt>Location</dt><dd>http://purl.org/dc/terms/Location</dd>
