@@ -1,6 +1,5 @@
 TITLE: Guidelines for contributing
-DESCRIPTION: How to contribute to Darwin Core
-
+DESCRIPTION: This document describes how you can contribute to Darwin Core.
 
 Changes to the standard are subject to the [change policy](change_policy.html). Here's how you can contribute:
 
