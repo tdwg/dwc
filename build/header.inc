@@ -6,7 +6,7 @@
     <link href="http://rs.tdwg.org/dwc/" rel="schema.DwC">
     <meta content="$TITLE" name="DC.title">
     <meta content="$DESCRIPTION" name="DC.description">
-    <meta name="DC.modified" content="$DATE">
+    <meta name="DC.modified" content="$LAST_MODIFIED">
 
     <meta name="dcterms.subject" content="biodiversity, standards">
     <meta name="dcterms.creator" content="Darwin Core Task Group">
@@ -37,27 +37,27 @@
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="$BASEterms/index.html">Terms</a></li>
-                    <li><a href="$BASEexamples/index.html">Examples</a></li>
+                    <li class="$MENU/TERMS/INDEX"><a href="$BASEterms/index.html">Terms</a></li>
+                    <li class="$MENU/EXAMPLES/INDEX"><a href="$BASEexamples/index.html">Examples</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Reference <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="$BASEchange_policy.html">Change policy</a></li>
+                            <li class="$MENU/CHANGE_POLICY"><a href="$BASEchange_policy.html">Change policy</a></li>
                             <li class="divider"></li>
-                            <li><a href="$BASEsimple_dwc.html">Simple Darwin Core</a></li>
+                            <li class="$MENU/SIMPLE_DWC"><a href="$BASEsimple_dwc.html">Simple Darwin Core</a></li>
                             <li class="divider"></li>
-                            <li><a href="$BASEtext/index.html">Text guide</a></li>
-                            <li class="active"><a href="$BASExml/index.html">XML guide</a></li>
-                            <li class="disabled"><a href="$BASErdf/index.html">RDF guide</a></li>
+                            <li class="$MENU/GUIDES/TEXT/INDEX"><a href="$BASEguides/text/index.html">Text guide</a></li>
+                            <li class="$MENU/GUIDES/XML/INDEX"><a href="$BASEguides/xml/index.html">XML guide</a></li>
+                            <li class="$MENU/GUIDES/RDF/INDEX disabled"><a href="$BASEguides/rdf/index.html">RDF guide</a></li>
                             <li class="divider"></li>
-                            <li><a href="$BASEterms/history.html">Term history</a></li>
-                            <li><a href="$BASEterms/decisions.html">Term decisions</a></li>
-                            <li><a href="$BASEterms/mappings.html">Term mappings</a></li>
+                            <li class="$MENU/TERMS/HISTORY"><a href="$BASEterms/history.html">Term history</a></li>
+                            <li class="$MENU/TERMS/DECISIONS"><a href="$BASEterms/decisions.html">Term decisions</a></li>
+                            <li class="$MENU/TERMS/MAPPINGS"><a href="$BASEterms/mappings.html">Term mappings</a></li>
                         </ul>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="$BASEresources/index.html">Resources</a></li>
+                    <li class="$MENU/RESOURCES/INDEX"><a href="$BASEresources/index.html">Resources</a></li>
                     <li><a href="http://github.com/tdwg/dwc">Source</a></li>
                 </ul>
             </div>

@@ -10,7 +10,7 @@
                 </div>
                 <div class="col-xs-8">
                     <ul class="list-inline pull-right">
-                        <li>Page last modified on $DATE</li>
+                        <li>Page last modified on $LAST_MODIFIED</li>
                         <li><a href="https://github.com/tdwg/dwc/blob/gh-pages/resources.html">Edit on GitHub</a></li>
                     </ul>
                 </div>
