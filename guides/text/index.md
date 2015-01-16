@@ -1,10 +1,7 @@
-dcterms.title: Darwin Core text guide
-dcterms.description: Guidelines for implementing Darwin Core in Text files.
-dcterms.modified: 2015-01-14
+TITLE: Darwin Core text guide
+DESCRIPTION: Guidelines for implementing Darwin Core in Text files.
+LAST_MODIFIED: 2015-01-14
 
----
-
-# Darwin Core text guide
 
 ## 1. Introduction
 

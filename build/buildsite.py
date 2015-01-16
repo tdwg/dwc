@@ -15,7 +15,10 @@ import datetime as dt
 
 
 BASE="http://rs.gbif.org"
+
 ROOT = abspath(join(os.curdir, os.pardir))
+PARAMS_MD = re.compile("^([A-Z0-9_]+)\s*\:\s*(.*)$", re.MULTILINE)
+MENU_PARAMS_HTML = re.compile("\$MENU[A-Z0-9_/]+", re.MULTILINE)
 
 def traverse():
     print """building site starting at %s""" % ROOT
@@ -38,19 +41,35 @@ def parse(level, fn, header, footer):
     mdFile = fn + ".md"
     htmlFile = fn + ".html"
     print """PARSE %s -> %s""" % (mdFile,htmlFile)
-    with codecs.open(mdFile, 'r', 'utf-8') as f:
-        html = mistune.markdown(f.read())
+    (md, metadata)=parseMetadata(mdFile)
+    print metadata
+    body = mistune.markdown(md)
+    path=fn[len(ROOT):]
     with codecs.open(htmlFile, 'w', 'utf-8') as f:
-        f.write(buildInc(header, level))
-        f.write(html)
-        f.write(buildInc(footer, level))
+        f.write(processMetadata(header, level, path, metadata))
+        f.write(processMetadata(body, level, path, metadata))
+        f.write(processMetadata(footer, level, path, metadata))
 
-def buildInc(html, level):
-    return html.replace("$BASE", "../"*level)\
-        .replace("$DATE", str(dt.date.today()))\
-        .replace("$DESCRIPTION", "")\
-        .replace("$TITLE", "my title")
+def parseMetadata(mdFile):
+    metadata={}
+    with codecs.open(mdFile, 'r', 'utf-8') as f:
+        md = f.read().strip()
+    metadata["LAST_MODIFIED"]=str(dt.date.today())
+    metadata["TITLE"]=""
+    metadata["DESCRIPTION"]=""
+    for m in PARAMS_MD.finditer(md):
+        metadata[m.group(1)]=m.group(2).strip()
+    md=PARAMS_MD.sub("", md)
+    return (md, metadata)
 
+def processMetadata(html, level, path, metadata):
+    html=html.replace("$BASE", "../"*level)
+    # replace menu vars
+    html=html.replace("$MENU"+path.upper(), "active")
+    html=MENU_PARAMS_HTML.sub("", html)
+    for k, v in metadata.iteritems():
+        html=html.replace("$"+k, v)
+    return html
 
 def anchorLinks(x):
     if x is None:
