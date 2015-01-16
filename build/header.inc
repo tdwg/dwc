@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>Darwin Core XML Guide</title>
     <link href="http://rs.tdwg.org/dwc/" rel="schema.DwC">
-    <meta content="$TITLE" name="DC.title">
-    <meta content="$DESCRIPTION" name="DC.description">
+    <meta name="DC.title" content="$TITLE">
+    <meta name="DC.description" content="$DESCRIPTION">
     <meta name="DC.modified" content="$LAST_MODIFIED">
 
     <meta name="dcterms.subject" content="biodiversity, standards">
@@ -22,7 +22,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="$BASEassets/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="$BASEassets/main.css">
-    <link href="http://www.tdwg.org/" rel="meta">
 </head>
 
 <body>
@@ -68,4 +67,5 @@
         <div class="container">
             <div class="page-header">
                 <h1>$TITLE</h1>
+                <p>$DESCRIPTION</p>
             </div>
