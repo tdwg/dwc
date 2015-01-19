@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Darwin Core RDF Guide</title>
+    <title>Darwin Core XML Guide</title>
     <link href="http://rs.tdwg.org/dwc/" rel="schema.DwC">
-    <meta content="Darwin Core RDF Guide" name="DC.title">
-    <meta content="Guidelines for implementing Darwin Core as RDF." name="DC.description">
-    <meta name="DC.modified" content="2015-01-13"><!-- Also update in footer -->
-    
+    <meta content="my title" name="DC.title">
+    <meta content="" name="DC.description">
+    <meta name="DC.modified" content="2015-01-15">
+
     <meta name="dcterms.subject" content="biodiversity, standards">
     <meta name="dcterms.creator" content="Darwin Core Task Group">
     <meta name="dcterms.contributor" content="John Wieczorek (MVZ)">
@@ -20,9 +20,9 @@
     <meta name="dcterms.license" content="http://creativecommons.org/licenses/by/4.0/legalcode">
     <meta name="dcterms.language" content="en">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="../../assets/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../../assets/main.css">
-    <link href="http://www.tdwg.org/" rel="meta">    
+    <link rel="stylesheet" type="text/css" href="../assets/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/main.css">
+    <link href="http://www.tdwg.org/" rel="meta">
 </head>
 
 <body>
@@ -37,43 +37,62 @@
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="../../terms/index.html">Terms</a></li>
-                    <li><a href="../../examples/index.html">Examples</a></li>
+                    <li><a href="../terms/index.html">Terms</a></li>
+                    <li><a href="../examples/index.html">Examples</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Reference <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="../../change_policy.html">Change policy</a></li>
+                            <li><a href="../change_policy.html">Change policy</a></li>
                             <li class="divider"></li>
-                            <li><a href="../../simple_dwc.html">Simple Darwin Core</a></li>
+                            <li><a href="../simple_dwc.html">Simple Darwin Core</a></li>
                             <li class="divider"></li>
                             <li><a href="../text/index.html">Text guide</a></li>
-                            <li><a href="../xml/index.html">XML guide</a></li>
-                            <li class="disabled active"><a href="../rdf/index.html">RDF guide</a></li>
+                            <li class="active"><a href="../xml/index.html">XML guide</a></li>
+                            <li class="disabled"><a href="../rdf/index.html">RDF guide</a></li>
                             <li class="divider"></li>
-                            <li><a href="../../terms/history.html">Term history</a></li>
-                            <li><a href="../../terms/decisions.html">Term decisions</a></li>
-                            <li><a href="../../terms/mappings.html">Term mappings</a></li>
+                            <li><a href="../terms/history.html">Term history</a></li>
+                            <li><a href="../terms/decisions.html">Term decisions</a></li>
+                            <li><a href="../terms/mappings.html">Term mappings</a></li>
                         </ul>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="../../resources/index.html">Resources</a></li>
+                    <li><a href="../resources/index.html">Resources</a></li>
                     <li><a href="http://github.com/tdwg/dwc">Source</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    
+
     <div class="content">
         <div class="container">
             <div class="page-header">
-                <h1>Darwin Core RDF Guide</h1>
-            </div>            
+                <h1>my title</h1>
+            </div>
+<p>The build folder contains a python script to rebuild the terms index page and all resources.
+It will use the current terms/dwc_normaltive.rdf and some yaml configurations inside this build folder for term definitions and order.</p>
+<h2>Run the script</h2>
+<p>Install the required libraries for this script with PIP once:
+$ easy_install pip
+$ sudo pip install -r requirements.txt</p>
+<p>To run the script just run it from inside the build folder:
+$ ./update_terms.py</p>
+<h2>Adding new terms</h2>
+<p>Simple changes for definitions should just be done in the RDF file.
+In case a DwC term has been renamed, removed or added this also needs to be reflected in the following files:</p>
+<h3>dc.yaml</h3>
+<p>This file contains the Dublin Core terms to be used in the record level group in the right order and their DwC definitions.</p>
+<h3>term_order.yaml</h3>
+<p>This file contains a nested list of all DwC terms to be shown in the terms index.
+The order and grouping of terms is defined here, but the definitions and other metadata is taken from the dwc_normative.rdf</p>
+<h3>term_type.yaml</h3>
+<p>In order to generate the postgres sql table definition the script needs to know all data types different from the default <em>text</em>.
+This file contains a list of those terms with the exact data type as used in postgres.</p>
+<h2>TODO</h2>
+<ul>
+<li>add DOI explanations</li>
+</ul>
 
-            <h2 id="introduction">1. Introduction</h2>
-            
-  <p>This guide has to be added still.</p> 
-    
         </div>
     </div>
 
@@ -85,23 +104,23 @@
                 </div>
                 <div class="col-xs-8">
                     <ul class="list-inline pull-right">
-                        <li>Page last modified on 2015-01-13</li>
+                        <li>Page last modified on 2015-01-15</li>
                         <li><a href="https://github.com/tdwg/dwc/blob/gh-pages/resources.html">Edit on GitHub</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
-      
+
     <!-- Scripts -->
-    <script type="text/javascript" src="../../assets/jquery.min.js"></script>
-    <script type="text/javascript" src="../../assets/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../assets/jquery.min.js"></script>
+    <script type="text/javascript" src="../assets/bootstrap.min.js"></script>
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    
+
         ga('create', 'UA-386033-4', 'auto');
         ga('send', 'pageview');
     </script>

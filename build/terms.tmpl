@@ -86,10 +86,7 @@
         #else
             <table class="table table-bordered table-condensed dwc-table class-definition">
         #end if
-                <colgroup>
-                    <col />
-                    <col />
-                </colgroup>
+                <colgroup><col /><col /></colgroup>
                 <tbody>
                     <tr><td colspan="2">$t.name</td></tr>
                     <tr><td>Label</td><td>$t.label</td></tr>
@@ -106,7 +103,7 @@
     #end if
 #end def
                     #for $group in $groups
-                    <section class="class-group">
+                    <section>
                         <a id="$group.name" class="anchor"></a>
                         <header class="well">
                             <h2>$group.name</h2>

@@ -24,6 +24,17 @@ body {
         padding-top: 20px;
     }
 
+.anchor {
+    display: block; 
+    position: relative; 
+    top: -70px; 
+    visibility: hidden;
+}
+
+section .well h2 {
+    margin-top: 10px; /* On terms page */
+}
+
 .terms-sidebar {
         margin-top: 40px;
     }
@@ -52,16 +63,12 @@ body {
         text-decoration: none;
     }
 
-.anchor {
-    display: block; 
-    position: relative; 
-    top: -70px; 
-    visibility: hidden;
-}
-
-.class-group .well h2 {
-    margin-top: 10px;
-}
+.table {
+    table-layout: fixed;
+    }
+    .table th {
+        background-color: #e7e7e7;
+    }
 
 .dwc-table {
     table-layout: fixed;
