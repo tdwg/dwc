@@ -64,29 +64,39 @@
         </nav>
 
         <div class="content">
-            <div class="container">
-                <div class="page-header">
-                    <h1>Term mappings</h1>
-                </div>
+            <div class="container-fluid">
+                <nav class="col-sm-2 terms-sidebar">
+                    <ul class="nav nav-stacked">
+						<li><a href="#abcd">ABCD Mappings</a></li>						
+						<li><a href="#abcd-dwcclassic">DwC 1.2 (Classic)</a></li>
+						<li><a href="#abcd-dwcobis">OBIS extension</a></li>
+						<li><a href="#abcd-dwcmanis">DwC 1.21 (MaNIS)</a></li>
+						<li><a href="#abcd-dwcdraft14">DwC 1.4 (Draft Standard)</a></li>
+						<li><a href="#abcd-dwccuratorial">DwC 1.4 Curatorial extension</a></li>
+						<li><a href="#abcd-dwcgeospatial">DwC 1.4 Geospatial extension</a></li>
+						<li><a href="#abcd-abcdpaleo">DwC 1.4 Paleontology extension</a></li>
+						<li><a href="#abcd-dwccurrent">Standard DwC (Recommended)</a></li>
+						<li>&nbsp;</li>
+						<li><a href="#previous">Previous DwC</a></li>						
+						<li><a href="#dwcclassic">DwC 1.2 (Classic)</a></li>
+						<li><a href="#dwcobis">OBIS extension</a></li>
+						<li><a href="#dwcmanis">DwC 1.21 (MaNIS)</a></li>
+						<li><a href="#dwcdraft14">DwC 1.4 (Draft Standard)</a></li>
+						<li><a href="#dwccuratorial">DwC 1.4 Curatorial extension</a></li>
+						<li><a href="#dwcgeospatial">DwC 1.4 Geospatial extension</a></li>
+						<li><a href="#dwcpaleo">DwC 1.4 Paleontology extension</a></li>
+                    </ul>
+                </nav>
+                <div class="col-sm-10">
+					<div class="page-header">
+                    	<h1>Term mappings</h1>
+					</div>
 
-                <h2>1. Introduction</h2>
-                <b>Audience</b>: This document is targeted toward those who wish to understand how the Darwin Core terms are related to the structure of the Access to Biological Collections Data [<a href="http://www.tdwg.org/schemas/abcd/2.06">ABCD</a>] schema.
-
+                <h2 id="abcd">ABCD Mappings</h2>
+				<p><b>Audience</b>: This document is targeted toward those who wish to understand how the Darwin Core terms are related to the structure of the Access to Biological Collections Data [<a href="http://www.tdwg.org/schemas/abcd/2.06">ABCD</a>] schema.</p>
                 <p>Before becoming a TDWG standard, the Darwin Core was instantiated and deployed in many different application profiles, all of them based on XML schema. In this document the openly developed and widely used versions of the Darwin Core ([<a href="http://digir.sourceforge.net/schema/conceptual/darwin/2003/1.0/darwin2.xsd">CLASSIC</a>], [<a href="http://digir.sourceforge.net/schema/conceptual/darwin/manis/1.21/darwin2.xsd">MANIS</a>], [<a href="http://iobis.org/obis/obis.xsd">OBIS</a>], [<a href="http://rs.tdwg.org/dwc/tdwg_dw_core.xsd">DRAFT14</a>], [<a href="http://rs.tdwg.org/dwc/tdwg_dw_curatorial.xsd">CURATORIAL</a>], [<a href="http://rs.tdwg.org/dwc/tdwg_dw_geospatial.xsd">GEOSPATIAL</a>]) are each compared (mapped conceptually) to the Access to Biological Collections Data [<a href="http://www.tdwg.org/schemas/abcd/2.06">ABCD</a>] schema. Each historical version is mapped in a separate table and can be referenced quickly from the index in <a href="#mappings">Mappings</a> section. Each element in each Darwin Core versions is mapped to the one or more xpath designations of the equivalent element(s) in the most current version of ABCD. <a id="mappings" name="mappings&quot;"></a></p>
 
-                <h2>2. ABCD Mappings</h2>
-
-                <p>2.1 <a href="#dwcclassic">Darwin Core 1.2 (Classic)</a><br>
-                2.2 <a href="#dwcobis">OBIS extension</a><br>
-                2.3 <a href="#dwcmanis">Darwin Core 1.21 (MaNIS/HerpNet/ORNIS/FishNet2)</a><br>
-                2.4 <a href="#dwcdraft14">Darwin Core 1.4 (Draft Standard)</a><br>
-                2.5 <a href="#dwccuratorial">Darwin Core 1.4 Curatorial extension</a><br>
-                2.6 <a href="#dwcgeospatial">Darwin Core 1.4 Geospatial extension</a><br>
-                2.7 <a href="#abcdpaleo">Darwin Core 1.4 Paleontology extension</a><br>
-                2.8 <a href="#dwccurrent">Standard Darwin Core (Recommended)</a><br></p>
-
-                <h3>2.1 Darwin Core 1.2 (Classic)</h3>
-                <a id="dwcclassic" class="anchor"></a>
+                <h3 id="abcd-dwcclassic">Darwin Core 1.2 (Classic)</h3>
                 <table class="table table-bordered table-condensed dwc-table term-definition">
                     <colgroup><col /><col /></colgroup>
                     <tbody>
@@ -538,8 +548,7 @@
 					</tbody>
 				  </table>
 				  
-				  <h3>2.2 OBIS extension</h3>
-				<a id="dwcobis" class="anchor"></a>
+				  <h3 id="abcd-dwcobis">OBIS extension</h3>
 				<table class="table table-bordered table-condensed dwc-table term-definition">
                     <colgroup><col /><col /></colgroup>
                     <tbody>
@@ -800,8 +809,7 @@
 					</tbody>
 				  </table>
 				  
-				<h3>2.3 Darwin Core 1.21 (MaNIS/HerpNet/ORNIS/FishNet2)</h3>
-                <a id="dwcmanis" class="anchor"></a>
+				<h3 id="abcd-dwcmanis">Darwin Core 1.21 (MaNIS/HerpNet/ORNIS/FishNet2)</h3>
                 <table class="table table-bordered table-condensed dwc-table term-definition">
                     <colgroup><col /><col /></colgroup>
                     <tbody>
@@ -1425,8 +1433,7 @@
 					</tbody>
 				  </table>
 				  
-				<h3>2.4 Darwin Core 1.4 (Draft Standard)</h3>
-                <a id="dwcdraft14" class="anchor"></a>
+				<h3 id="abcd-dwcdraft14">Darwin Core 1.4 (Draft Standard)</h3>
                 <table class="table table-bordered table-condensed dwc-table term-definition">
                     <colgroup><col /><col /></colgroup>
                     <tbody>
@@ -1861,8 +1868,7 @@
 					</tbody>
 				  </table>
 				  
-				<h3>2.5 Darwin Core 1.4 Curatorial extension</h3>
-                <a id="dwccuratorial" class="anchor"></a>
+				<h3 id="abcd-dwccuratorial">Darwin Core 1.4 Curatorial extension</h3>
                 <table class="table table-bordered table-condensed dwc-table term-definition">
                     <colgroup><col /><col /></colgroup>
                     <tbody>
@@ -2018,8 +2024,7 @@
 					</tbody>
 				  </table>
 				  
-			    <h3>2.6 Darwin Core 1.4 Geospatial extension</h3>
-                <a id="dwcgeospatial" class="anchor"></a>
+			    <h3 id="abcd-dwcgeospatial">Darwin Core 1.4 Geospatial extension</h3>
                 <table class="table table-bordered table-condensed dwc-table term-definition">
                     <colgroup><col /><col /></colgroup>
                     <tbody>
@@ -2176,8 +2181,7 @@
 					</tbody>
 				  </table>
 				  
-				<h3>2.7 Darwin Core 1.4 Paleontology Extension</h3>
-                <a id="abcdpaleo" class="anchor"></a>
+				<h3 id="abcd-abcdpaleo">Darwin Core 1.4 Paleontology Extension</h3>
                 <table class="table table-bordered table-condensed dwc-table term-definition">
                     <colgroup><col /><col /></colgroup>
                     <tbody>
@@ -2334,8 +2338,7 @@
 					</tbody>
 				  </table>
 				  
-			    <h3>2.8 Standard Darwin Core (Recommended)</h3>
-                <a id="dwccurrent" class="anchor"></a>
+			    <h3 id="abcd-dwccurrent">Standard Darwin Core (Recommended)</h3>
                 <table class="table table-bordered table-condensed dwc-table term-definition">
                     <colgroup><col /><col /></colgroup>
                     <tbody>
@@ -4150,25 +4153,12 @@
 				  </table>
 				  <hr>
 
-				  <h2>3. Introduction</h2>
-				  <b>Audience</b>: This document is targeted toward
-				  those who wish to understand how the standard Darwin Core terms are related to previously used Darwin Core schemas.
-
+				  <h2 id="previous">Standard Darwin Core Mappings</h2>
+				  <p><b>Audience</b>: This document is targeted toward
+				  those who wish to understand how the standard Darwin Core terms are related to previously used Darwin Core schemas.</p>
 				  <p>Before becoming a TDWG standard, the Darwin Core was instantiated and deployed in many different application profiles, all of them based on XML schema. The openly developed and widely used versions of the Darwin Core ([<a href="http://digir.sourceforge.net/schema/conceptual/darwin/2003/1.0/darwin2.xsd">CLASSIC</a>], [<a href="http://digir.sourceforge.net/schema/conceptual/darwin/manis/1.21/darwin2.xsd">MANIS</a>], [<a href="http://iobis.org/obis/obis.xsd">OBIS</a>], [<a href="http://rs.tdwg.org/dwc/tdwg_dw_core.xsd">DRAFT14</a>], [<a href="http://rs.tdwg.org/dwc/tdwg_dw_curatorial.xsd">CURATORIAL</a>], [<a href="http://rs.tdwg.org/dwc/tdwg_dw_geospatial.xsd">GEOSPATIAL</a>]), [<a href="http://wiki.tdwg.org/twiki/bin/view/DarwinCore/PaleontologyElement">PALEO</a>]) are each compared (mapped conceptually) to the current recommended Darwin Core terms [<a href="../../index.htm">TERMS</a>] in this document. Each historical version is mapped in a separate table and can be referenced quickly from the <a href="#mappings">Mappings</a> section below. <a id="mappings" name="mappings&quot;"></a></p>
 
-				  <h2>4. Standard Darwin Core Mappings</h2>
-
-				  <p>4.1 <a href="#dwcclassic">Darwin Core 1.2 (Classic)</a><br>
-				  4.2 <a href="#dwcobis">OBIS extension</a><br>
-				  4.3 <a href="#dwcmanis">Darwin Core 1.21
-				  (MaNIS/HerpNet/ORNIS/FishNet2)</a><br>
-				  4.4 <a href="#dwcdraft14">Darwin Core 1.4 (Draft Standard)</a><br>
-				  4.5 <a href="#dwccuratorial">Darwin Core 1.4 Curatorial extension</a><br>
-				  4.6 <a href="#dwcgeospatial">Darwin Core 1.4 Geospatial extension</a><br>
-				  4.7 <a href="#dwcpaleo">Darwin Core 1.4 Paleontology extension</a><br></p>
-
-				<h3>4.1 Darwin Core 1.2 (Classic)</h3>
-                <a id="dwcclassic" class="anchor"></a>
+				<h3 id="dwcclassic">Darwin Core 1.2 (Classic)</h3>
                 <table class="table table-bordered table-condensed dwc-table term-definition">
                     <colgroup><col /><col /></colgroup>
                     <tbody>
@@ -4672,8 +4662,7 @@
 					</tbody>
 				  </table>
 				  
-				<h3>4.2 OBIS extension</h3>
-                <a id="dwcobis" class="anchor"></a>
+				<h3 id="dwcobis">OBIS extension</h3>
                 <table class="table table-bordered table-condensed dwc-table term-definition">
                     <colgroup><col /><col /></colgroup>
                     <tbody>
@@ -4961,8 +4950,7 @@
 					</tbody>
 				  </table>
 				  
-                <h3>4.3 Darwin Core 1.21 (MaNIS/HerpNet/ORNIS/FishNet2)</h3>
-                <a id="dwcmanis" class="anchor"></a>
+                <h3 id="dwcmanis">Darwin Core 1.21 (MaNIS/HerpNet/ORNIS/FishNet2)</h3>
                 <table class="table table-bordered table-condensed dwc-table term-definition">
                     <colgroup><col /><col /></colgroup>
                     <tbody>
@@ -5660,8 +5648,7 @@
 					</tbody>
 				  </table>
 				  
-				<h3>2.4 Darwin Core 1.4 (Draft Standard)</h3>
-                <a id="dwcmdraft14" class="anchor"></a>
+				<h3 id="dwcmdraft14">Darwin Core 1.4 (Draft Standard)</h3>
                 <table class="table table-bordered table-condensed dwc-table term-definition">
                     <colgroup><col /><col /></colgroup>
                     <tbody>
@@ -6154,8 +6141,7 @@
 					</tbody>
 				  </table>
 				  
-				<h3>4.5 Darwin Core 1.4 Curatorial extension</h3>
-                <a id="dwccuratorial" class="anchor"></a>
+				<h3 id="dwccuratorial">Darwin Core 1.4 Curatorial extension</h3>
                 <table class="table table-bordered table-condensed dwc-table term-definition">
                     <colgroup><col /><col /></colgroup>
                     <tbody>
@@ -6329,8 +6315,7 @@
 					</tbody>
 				  </table>
 				   
-				<h3>4.6 Darwin Core 1.4 Geospatial extension</h3>
-                <a id="dwcgeospatial" class="anchor"></a>
+				<h3 id="dwcgeospatial">Darwin Core 1.4 Geospatial extension</h3>
                 <table class="table table-bordered table-condensed dwc-table term-definition">
                     <colgroup><col /><col /></colgroup>
                     <tbody>
@@ -6505,8 +6490,7 @@
 					</tbody>
 				  </table>
 				  
-				<h3>4.7 Darwin Core 1.4 Paleontology extension</h3>
-                <a id="dwcpaleo" class="anchor"></a>
+				<h3 id="dwcpaleo">Darwin Core 1.4 Paleontology extension</h3>
                 <table class="table table-bordered table-condensed dwc-table term-definition">
                     <colgroup><col /><col /></colgroup>
                     <tbody>
@@ -6709,7 +6693,7 @@
 					  </tr>
 					</tbody>
 				  </table>
-				  <hr>
+				</div>
 
         <footer class="footer">
             <div class="container">
@@ -6733,7 +6717,7 @@
         <script type="text/javascript">
             $("body").scrollspy({
                 target: ".terms-sidebar",
-                offset: 50
+                offset: 200
             });
         </script>
         <script>
