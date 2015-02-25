@@ -101,9 +101,13 @@
 		</xs:attribute>
 		<xs:attribute name="vocabulary" type="xs:anyURI" use="optional">
 			<xs:annotation>
-				<xs:documentation>A URI that identifies a vocabulary used for the values found for the field in the source files. The URI ideally should resolve to some machine readable definition like SKOS, RDF, the GBIF vocabulary schema or a simple text file as often found for ISO or RFC standards. E.g. http://rs.gbif.org/vocabulary/gbif/nomenclatural_code.xml;   http://www.ietf.org/rfc/rfc3066.txt;   http://www.iso.org/iso/list-en1-semic-3.txt</xs:documentation>
+				<xs:documentation>A URI that identifies a vocabulary used for the values found for the field in the source files. The URI ideally should resolve to some machine readable definition like SKOS, RDF, the GBIF vocabulary schema or a simple text file as often found for ISO or RFC standards. E.g. http://rs.gbif.org/vocabulary/gbif/nomenclatural_code.xml;   http://www.ietf.org/rfc/rfc3066.txt;   http://www.iso.org/iso/list-en1-semic-3.txt</xs:documentation> 
 			</xs:annotation>
 		</xs:attribute>
+                <xs:attribute name="delimitedBy" type="xs:string" use="optional">
+                        <xs:annotation>
+                                <xs:documentation>Indicates an optional delimiter used for concatenating multiple values in a list.</xs:documentation>
+                        </xs:annotation>
+                </xs:attribute>
 	</xs:complexType>
-
 </xs:schema>
