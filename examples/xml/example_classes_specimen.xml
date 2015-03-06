@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <dwr:DarwinRecordSet
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://rs.tdwg.org/dwc/dwcrecord/  ../../xsd/tdwg_dwc_classes.xsd"
