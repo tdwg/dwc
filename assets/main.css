@@ -69,27 +69,23 @@ section .well h2 {
     .table th {
         background-color: #e7e7e7;
     }
-
-.dwc-table {
-    table-layout: fixed;
+    .table col:first-child {
+        width: 120px; /* Labels, requires <colgroup><col></col><col></col></colgroup> */
     }
-    .dwc-table col:first-child {
-        width: 120px; /* Labels */
-    }
-    .dwc-table.class-definition tr { /* Class definitions */;
+    .table.class-definition tr { /* Class definitions */;
         background-color: #f5f5f5;
     }
-    .dwc-table tr:first-child { /* Header for each definition */
+    .table tr:first-child { /* Header for each definition */
         background-color: #e7e7e7;
         font-size: 16px;
         font-weight: bold;
     }
-    .dwc-table td {
+    .table td {
         word-wrap: break-word;
     }
 
 @media screen and (max-width: 767px){
     .terms-sidebar {
-        display:none
+        display: none
     }
 }

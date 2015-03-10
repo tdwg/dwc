@@ -6,7 +6,7 @@
         <title>Darwin Core terms</title>
         <meta name="dcterms.title" content="Darwin Core terms">
         <meta name="dcterms.description" content="The cover page for the Darwin Core standard.">
-        <meta name="dcterms.modified" content="2015-01-12">
+        <meta name="dcterms.modified" content="2015-03-09">
         
         <meta name="dcterms.subject" content="biodiversity, standards">
         <meta name="dcterms.creator" content="Darwin Core Task Group">
@@ -65,46 +65,21 @@
 
         <div class="content">
             <div class="container-fluid">
-                <nav class="col-sm-2 terms-sidebar">
+                <nav class="col-sm-3 terms-sidebar">
                     <ul class="nav nav-stacked">
                         #for $group in $groups
                         <li><a href="#$group.name">$group.name</a></li>
                         #end for
                     </ul>
                 </nav>
-                <div class="col-sm-10">
+                <div class="col-sm-9">
                     <div class="page-header">
                         <h1>Terms</h1>
                         <p>This page provides a list of all currently recommended terms of the Darwin Core standard and their definitions. Terms that begin with <code>dcterms:</code> are from the <a href="http://dublincore.org/documents/dcmi-terms/">Dublin Core</a>. Categories correspond to Darwin Core classes (terms that have other terms to describe them). List of these terms in various formats can be found in <a href="../resources">resources</a>.</p>
                     </div>
 
-#def showTerm($t, $isProperty)
-    #if $t.uri is not None
-        #if $isProperty 
-            <a id="$t.name" class="anchor"></a>
-            <table class="table table-bordered table-condensed dwc-table term-definition">
-        #else
-            <table class="table table-bordered table-condensed dwc-table class-definition">
-        #end if
-                <colgroup><col /><col /></colgroup>
-                <tbody>
-                    <tr><td colspan="2">$t.name</td></tr>
-                    <tr><td>Label</td><td>$t.label</td></tr>
-                    <tr><td>Identifier</td><td><a href="$t.uri">$t.uri</a></td></tr>
-                    #if $isProperty
-                    <tr><td>Class</td><td>$t.class</td></tr>
-                    #end if
-                    <tr><td>Definition</td><td>$t.definition</td></tr>
-                    <tr><td>Comment</td><td>$t.comment</td></tr>
-                    <tr><td>Reference</td><td><a href="http://terms.tdwg.org/wiki/$t.name_prefixed">http://terms.tdwg.org/wiki/$t.name_prefixed</a></td></tr>
-                    <tr><td>History</td><td><a href="$t.version">$t.version</a></td></tr>
-                </tbody>
-            </table>
-    #end if
-#end def
                     #for $group in $groups
-                    <section>
-                        <a id="$group.name" class="anchor"></a>
+                    <section id="$group.name">
                         <header class="well">
                             <h2>$group.name</h2>
                             <ul class="list-inline">
@@ -113,12 +88,34 @@
                             #end for
                             </ul>
                         </header>
+            #def showTerm($t, $isProperty)
+                #if $t.uri is not None
+                    #if $isProperty 
+                    <table id="$t.name" class="table table-bordered table-condensed term-definition">
+                    #else
+                    <table id="$t.name" class="table table-bordered table-condensed class-definition">
+                    #end if
+                            <colgroup><col></col><col></col></colgroup>
+                            <tbody>
+                                <tr><td colspan="2">$t.name</td></tr>
+                                <tr><td>Label</td><td>$t.label</td></tr>
+                                <tr><td>Identifier</td><td><a href="$t.uri">$t.uri</a></td></tr>
+                                #if $isProperty
+                                <tr><td>Class</td><td>$t.class</td></tr>
+                                #end if
+                                <tr><td>Definition</td><td>$t.definition</td></tr>
+                                <tr><td>Comment</td><td>$t.comment</td></tr>
+                                <tr><td>Reference</td><td><a href="http://terms.tdwg.org/wiki/$t.name_prefixed">http://terms.tdwg.org/wiki/$t.name_prefixed</a></td></tr>
+                                <tr><td>History</td><td><a href="$t.version">$t.version</a></td></tr>
+                            </tbody>
+                        </table>
+                #end if
+            #end def
 
-                        $showTerm(group, False)
-
-                        #for $t in $group.terms
-                            $showTerm(t, True)
-                        #end for
+$showTerm(group, False)
+#for $t in $group.terms
+    $showTerm(t, True)
+#end for
                     </section>
                     #end for
                 </div>
