@@ -79,7 +79,7 @@
                     </div>
 
                     #for $group in $groups
-                    <section id="$group.name">
+                    <section id="$group.name" class="anchor">
                         <header class="well">
                             <h2>$group.name</h2>
                             <ul class="list-inline">
@@ -90,11 +90,12 @@
                         </header>
             #def showTerm($t, $isProperty)
                 #if $t.uri is not None
-                    #if $isProperty 
-                    <table id="$t.name" class="table table-bordered table-condensed term-definition">
-                    #else
-                    <table id="$t.name" class="table table-bordered table-condensed class-definition">
-                    #end if
+                    #if $isProperty
+                    <a id="$t.name" class="anchor"></a>
+                        <table class="table table-bordered table-condensed term-definition">
+                        #else
+                        <table class="table table-bordered table-condensed class-definition">
+                        #end if
                             <colgroup><col></col><col></col></colgroup>
                             <tbody>
                                 <tr><td colspan="2">$t.name</td></tr>
