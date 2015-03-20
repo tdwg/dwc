@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema 
-    version="2014-11-08"
+    version="2015-03-19"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     targetNamespace="http://rs.tdwg.org/dwc/terms/"
     xmlns:dcterms="http://purl.org/dc/terms/"
@@ -103,6 +103,8 @@
     <xs:element name="recordNumber" type="xs:string" substitutionGroup="dwc:anyOccurrenceTerm"/>
     <xs:element name="recordedBy" type="xs:string" substitutionGroup="dwc:anyOccurrenceTerm"/>
     <xs:element name="individualCount" type="xs:positiveInteger" substitutionGroup="dwc:anyOccurrenceTerm"/>
+    <xs:element name="organismQuantity" type="xs:string" substitutionGroup="dwc:anyOccurrenceTerm"/>
+    <xs:element name="organismQuantityType" type="xs:string" substitutionGroup="dwc:anyOccurrenceTerm"/>
     <xs:element name="sex" type="xs:string" substitutionGroup="dwc:anyOccurrenceTerm"/>
     <xs:element name="lifeStage" type="xs:string" substitutionGroup="dwc:anyOccurrenceTerm"/>
     <xs:element name="reproductiveCondition" type="xs:string" substitutionGroup="dwc:anyOccurrenceTerm"/>
@@ -123,6 +125,8 @@
             <xs:element ref="dwc:recordNumber" minOccurs="0"/>
             <xs:element ref="dwc:recordedBy" minOccurs="0"/>
             <xs:element ref="dwc:individualCount" minOccurs="0"/>
+            <xs:element ref="dwc:organismQuantity" minOccurs="0"/>
+            <xs:element ref="dwc:organismQuantityType" minOccurs="0"/>
             <xs:element ref="dwc:sex" minOccurs="0"/>
             <xs:element ref="dwc:lifeStage" minOccurs="0"/>
             <xs:element ref="dwc:reproductiveCondition" minOccurs="0"/>
@@ -167,6 +171,7 @@
     <xs:element name="anyEventTerm" abstract="true" substitutionGroup="dwc:anyProperty"/>
     <xs:element name="eventID" type="dwc:nonEmptyString" substitutionGroup="dwc:anyIdentifier"/>
     <!-- domain properties -->
+    <xs:element name="parentEventID" type="xs:string" substitutionGroup="dwc:anyEventTerm"/>
     <xs:element name="eventDate" type="dwc:dateTimeISO" substitutionGroup="dwc:anyEventTerm"/>
     <xs:element name="eventTime" type="xs:time" substitutionGroup="dwc:anyEventTerm"/>
     <xs:element name="startDayOfYear" type="dwc:dayOfYearDataType" substitutionGroup="dwc:anyEventTerm"/>
@@ -179,10 +184,13 @@
     <xs:element name="fieldNumber" type="xs:string" substitutionGroup="dwc:anyEventTerm"/>
     <xs:element name="samplingProtocol" type="xs:string" substitutionGroup="dwc:anyEventTerm"/>
     <xs:element name="samplingEffort" type="xs:string" substitutionGroup="dwc:anyEventTerm"/>
+    <xs:element name="sampleValueSize" type="xs:string" substitutionGroup="dwc:anyEventTerm"/>
+    <xs:element name="sampleValueUnit" type="xs:string" substitutionGroup="dwc:anyEventTerm"/>
     <xs:element name="fieldNotes" type="xs:string" substitutionGroup="dwc:anyEventTerm"/>
     <xs:element name="eventRemarks" type="xs:string" substitutionGroup="dwc:anyEventTerm"/>
     <xs:group name="EventTerms">
         <xs:sequence>
+            <xs:element ref="dwc:parentEventID" minOccurs="0"/>
             <xs:element ref="dwc:eventDate" minOccurs="0"/>
             <xs:element ref="dwc:eventTime" minOccurs="0"/>
             <xs:element ref="dwc:startDayOfYear" minOccurs="0"/>
@@ -195,6 +203,8 @@
             <xs:element ref="dwc:fieldNumber" minOccurs="0"/>
             <xs:element ref="dwc:samplingProtocol" minOccurs="0"/>
             <xs:element ref="dwc:samplingEffort" minOccurs="0"/>
+            <xs:element ref="dwc:sampleSizeValue" minOccurs="0"/>
+            <xs:element ref="dwc:sampleSizeUnit" minOccurs="0"/>
             <xs:element ref="dwc:fieldNotes" minOccurs="0"/>
             <xs:element ref="dwc:eventRemarks" minOccurs="0"/>
         </xs:sequence>
