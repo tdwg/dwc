@@ -23,6 +23,8 @@ catalogNumber
 recordNumber
 recordedBy
 individualCount
+organismQuantity
+organismQuantityType
 sex
 lifeStage
 reproductiveCondition
@@ -46,6 +48,7 @@ previousIdentifications
 organismRemarks
 materialSampleID
 eventID
+parentEventID
 fieldNumber
 eventDate
 eventTime
@@ -58,6 +61,8 @@ verbatimEventDate
 habitat
 samplingProtocol
 samplingEffort
+sampleSizeValue
+sampleSizeUnit
 fieldNotes
 eventRemarks
 locationID
