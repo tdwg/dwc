@@ -27,7 +27,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:title xml:lang="en">Darwin Core Terms Complete History</dcterms:title>
         <rdfs:comment>This is the normative (Type 1) document for the terms in the Darwin Core standard (http://www.tdwg.org/standards/450/). It contains a list of all versions of all Darwin Core terms. To comment on this schema, please create a new issue in http://code.google.com/p/darwincore/issues/</rdfs:comment>
         <dcterms:publisher xml:lang="en">Biodiversity Information Standards (TDWG)</dcterms:publisher>
-        <dcterms:modified>2014-12-05</dcterms:modified>
+        <dcterms:modified>2015-03-19</dcterms:modified>
     </rdf:Description>
     <!-- 
   Each RDF description uses the following:
@@ -1305,7 +1305,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
     </rdf:Description>
     <rdf:Description rdf:about="http://rs.tdwg.org/dwc/dwcore/DateLastModified-2007-04-17">
         <rdfs:label xml:lang="en">Date Last Modified</rdfs:label>
-        <rdfs:comment xml:lang="en">The last date-time of publication when any of the data for the record were modified from the previous publication of that record. When publishing a record for the first time, use the publication date-time. Returns values as ISO 8601 date and time. (cf. http://www.w3.org/TR/xmlschema-2/#isoformats and http://www.iso.org/iso/en/prods-services/popstds/dateandtime.html Example: November 5, 1994, 8:15:30 am, US Eastern Standard Time” would be “1994-11-05T13:15:30Z”</rdfs:comment>
+        <rdfs:comment xml:lang="en">The last date-time of publication when any of the data for the record were modified from the previous publication of that record. When publishing a record for the first time, use the publication date-time. Returns values as ISO 8601 date and time. (cf. http://www.w3.org/TR/xmlschema-2/#isoformats and http://www.iso.org/iso/en/prods-services/popstds/dateandtime.html Example: November 5, 1994, 8:15:30 am, US Eastern Standard Time" would be "1994-11-05T13:15:30Z"</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/dwcore/"/>
         <dcterms:issued>2007-04-17</dcterms:issued>
         <dcterms:modified>2007-04-17</dcterms:modified>
@@ -2770,7 +2770,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
     </rdf:Description>
     <rdf:Description rdf:about="http://rs.tdwg.org/dwc/dwcore/GlobalUniqueIdentifier-2007-04-17">
         <rdfs:label xml:lang="en">Global Unique Identifier</rdfs:label>
-        <rdfs:comment xml:lang="en">A Uniform Resource Name (URN) as a unique identifier for the specimen or observation record. In the absence of a persistent global unique identifier, construct one in the form: “[InstitutionCode]:[CollectionCode]: [CatalogNumber]” Examples: 1) urn:lsid:nhm.ku.edu:Herps:32 2) “FMNH:Mammal:145732”</rdfs:comment>
+        <rdfs:comment xml:lang="en">A Uniform Resource Name (URN) as a unique identifier for the specimen or observation record. In the absence of a persistent global unique identifier, construct one in the form: "[InstitutionCode]:[CollectionCode]: [CatalogNumber]" Examples: 1) urn:lsid:nhm.ku.edu:Herps:32 2) "FMNH:Mammal:145732"</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/dwcore/"/>
         <dcterms:issued>2007-04-17</dcterms:issued>
         <dcterms:modified>2007-04-17</dcterms:modified>
@@ -3901,7 +3901,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:hasVersion rdf:resource="http://www.iobis.org/obis/history/#Lifestage-2005-07-10"/>
         <dcterms:replaces rdf:resource="http://www.iobis.org/obis/AgeClass-2003-06-17"/>
         <dwcattributes:status>superseded</dwcattributes:status>
-        <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/MycologicalUnit/MycologicalSexualStage or DataSets/DataSet/Units/Unit/MycologicalUnit/MycologicalLiveStages/MycologicalLiveStage (Note DwC spec uses ”MycologicalLifeStage” or DataSets/DataSet/Units/Unit/ZoologicalUnit/PhasesOrStages/PhaseOrStage</dwcattributes:abcdEquivalence>
+        <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/MycologicalUnit/MycologicalSexualStage or DataSets/DataSet/Units/Unit/MycologicalUnit/MycologicalLiveStages/MycologicalLiveStage (Note DwC spec uses "MycologicalLifeStage" or DataSets/DataSet/Units/Unit/ZoologicalUnit/PhasesOrStages/PhaseOrStage</dwcattributes:abcdEquivalence>
     </rdf:Description>
     <rdf:Description rdf:about="http://rs.tdwg.org/dwc/dwcore/LifeStage-2007-04-17">
         <rdfs:label xml:lang="en">Life Stage</rdfs:label>
@@ -3913,7 +3913,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/dwcore/history/#LifeStage-2007-04-17"/>
         <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/dwcore/AgeClass-2003-06-17"/>
         <dwcattributes:status>superseded</dwcattributes:status>
-        <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/MycologicalUnit/MycologicalSexualStage or DataSets/DataSet/Units/Unit/MycologicalUnit/MycologicalLiveStages/MycologicalLiveStage (Note DwC spec uses ”MycologicalLifeStage” or DataSets/DataSet/Units/Unit/ZoologicalUnit/PhasesOrStages/PhaseOrStage</dwcattributes:abcdEquivalence>
+        <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/MycologicalUnit/MycologicalSexualStage or DataSets/DataSet/Units/Unit/MycologicalUnit/MycologicalLiveStages/MycologicalLiveStage (Note DwC spec uses "MycologicalLifeStage" or DataSets/DataSet/Units/Unit/ZoologicalUnit/PhasesOrStages/PhaseOrStage</dwcattributes:abcdEquivalence>
     </rdf:Description>
     <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/lifeStage-2009-04-24">
         <rdfs:label xml:lang="en">Life Stage</rdfs:label>
@@ -3926,7 +3926,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#lifeStage-2009-04-24"/>
         <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/LifeStage-2007-04-17"/>
         <dwcattributes:status>recommended</dwcattributes:status>
-        <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/MycologicalUnit/MycologicalSexualStage or DataSets/DataSet/Units/Unit/MycologicalUnit/MycologicalLiveStages/MycologicalLiveStage (Note DwC spec uses ”MycologicalLifeStage” or DataSets/DataSet/Units/Unit/ZoologicalUnit/PhasesOrStages/PhaseOrStage</dwcattributes:abcdEquivalence>
+        <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/MycologicalUnit/MycologicalSexualStage or DataSets/DataSet/Units/Unit/MycologicalUnit/MycologicalLiveStages/MycologicalLiveStage (Note DwC spec uses "MycologicalLifeStage" or DataSets/DataSet/Units/Unit/ZoologicalUnit/PhasesOrStages/PhaseOrStage</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://digir.net/schema/conceptual/darwin/extension/paleontology/1.0/LithostratigraphicTerms-2005-07-03">
@@ -5286,6 +5286,34 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Organism"/>
     </rdf:Description>
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/organismQuantity-2014-12-23">
+        <rdfs:label xml:lang="en">Organism Quantity</rdfs:label>
+        <rdfs:comment xml:lang="en">A number or enumeration value for the quantity of organisms.</rdfs:comment>
+        <dcterms:description xml:lang="en">An organismQuantity must have a corresponding organismQuantityType, e.g., "27" for organismQuantity with "individuals" for organismQuantityType; "12.5" for organismQuantity with "%biomass" for organismQuantityType; "r" for organismQuantity with "BraunBlanquetScale" for organismQuantityType.</dcterms:description>
+        <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
+        <dcterms:issued>2014-11-07</dcterms:issued>
+        <dcterms:modified>2015-03-19</dcterms:modified>
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#organismQuantity-2014-12-23"/>
+        <dwcattributes:status>recommended</dwcattributes:status>
+        <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2015-03-19_18"/>
+        <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
+        <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/organismQuantityType-2014-12-23">
+        <rdfs:label xml:lang="en">Organism Quantity Type</rdfs:label>
+        <rdfs:comment xml:lang="en">The type of quantification system used for the quantity of organisms.</rdfs:comment>
+        <dcterms:description xml:lang="en">An organismQuantityType must have a corresponding organismQuantity, e.g., "27" for organismQuantity with "individuals" for organismQuantityType; "12.5" for organismQuantity with "%biomass" for organismQuantityType; "r" for organismQuantity with "BraunBlanquetScale" for organismQuantityType.</dcterms:description>
+        <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
+        <dcterms:issued>2014-11-07</dcterms:issued>
+        <dcterms:modified>2015-03-19</dcterms:modified>
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#organismQuantityType-2014-12-23"/>
+        <dwcattributes:status>recommended</dwcattributes:status>
+        <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2015-03-19_18"/>
+        <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
+        <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
+    </rdf:Description>
     <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/organismRemarks-2014-10-23">
         <rdfs:label xml:lang="en">Organism Remarks</rdfs:label>
         <rdfs:comment xml:lang="en">Comments or notes about the Organism instance.</rdfs:comment>
@@ -5420,6 +5448,20 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dwcattributes:status>recommended</dwcattributes:status>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="all"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/parentEventID-2014-12-23">
+        <rdfs:label xml:lang="en">Parent Event ID</rdfs:label>
+        <rdfs:comment xml:lang="en">An identifier for the broader Event that groups this and potentially other Events.</rdfs:comment>
+        <dcterms:description xml:lang="en">May be a globally unique identifier or an identifier specific to the data set. Example: "A1" as parentEventID to identify the main Whittaker Plot in nested samples, each with its own eventID (e.g., "A1:1", "A1:2").</dcterms:description>
+        <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
+        <dcterms:issued>2014-11-07</dcterms:issued>
+        <dcterms:modified>2015-03-19</dcterms:modified>
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#parentEventID-2014-12-23"/>
+        <dwcattributes:status>recommended</dwcattributes:status>
+        <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2015-03-19_18"/>
+        <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
+        <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Event"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/parentNameUsage-2009-09-21">
         <rdfs:label xml:lang="en">Parent Name Usage</rdfs:label>
@@ -6274,6 +6316,34 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/CollectingMethod-2007-04-17"/>
         <dwcattributes:status>recommended</dwcattributes:status>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Gathering/Method</dwcattributes:abcdEquivalence>
+        <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Event"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/sampleSizeValue-2014-12-23">
+        <rdfs:label xml:lang="en">Sample Size Value</rdfs:label>
+        <rdfs:comment xml:lang="en">A numeric value for a measurement of the size (time duration, length, area, or volume) of a sample in a sampling event.</rdfs:comment>
+        <dcterms:description xml:lang="en">A sampleSizeValue must have a corresponding sampleSizeUnit. Example: "5" for sampleSizeValue with "metre" for sampleSizeUnit.</dcterms:description>
+        <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
+        <dcterms:issued>2014-11-07</dcterms:issued>
+        <dcterms:modified>2015-03-19</dcterms:modified>
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#sampleSizeValue-2014-12-23"/>
+        <dwcattributes:status>recommended</dwcattributes:status>
+        <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2015-03-19_18"/>
+        <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
+        <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Event"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/sampleSizeUnit-2014-12-23">
+        <rdfs:label xml:lang="en">Sample Size Unit</rdfs:label>
+        <rdfs:comment xml:lang="en">The unit of measurement of the size (time duration, length, area, or volume) of a sample in a sampling event.</rdfs:comment>
+        <dcterms:description xml:lang="en">A sampleSizeUnit must have a corresponding sampleSizeValue, e.g., "5" for sampleSizeValue with "metre" for sampleSizeUnit. Examples: "minute", "hour", "day", "metre", "square metre", "cubic metre". Recommended best practice is to use a controlled vocabulary such as the Ontology of Units of Measure http://www.wurvoc.org/vocabularies/om-1.8/ of SI units, derived units, or other non-SI units accepted for use within the SI (e.g., minute, hour, day, litre).</dcterms:description>
+        <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
+        <dcterms:issued>2014-11-07</dcterms:issued>
+        <dcterms:modified>2015-03-19</dcterms:modified>
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#sampleSizeUnit-2014-12-23"/>
+        <dwcattributes:status>recommended</dwcattributes:status>
+        <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2015-03-19_18"/>
+        <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Event"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://digir.net/schema/conceptual/darwin/2003/1.0/ScientificName-2003-06-13">

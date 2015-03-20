@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema version="2014-11-08"
+<xs:schema version="2015-03-19"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     targetNamespace="http://rs.tdwg.org/dwc/xsd/simpledarwincore/"
     xmlns:dcterms="http://purl.org/dc/terms/"
@@ -56,6 +56,8 @@
                 <xs:element ref="dwc:recordNumber" minOccurs="0"/>
                 <xs:element ref="dwc:recordedBy" minOccurs="0"/>
                 <xs:element ref="dwc:individualCount" minOccurs="0"/>
+                <xs:element ref="dwc:organismQuantity" minOccurs="0"/>
+                <xs:element ref="dwc:organismQuantityType" minOccurs="0"/>
                 <xs:element ref="dwc:sex" minOccurs="0"/>
                 <xs:element ref="dwc:lifeStage" minOccurs="0"/>
                 <xs:element ref="dwc:reproductiveCondition" minOccurs="0"/>
@@ -82,6 +84,7 @@
                 <xs:element ref="dwc:materialSampleID" minOccurs="0"/>
                 <!-- Event terms -->
                 <xs:element ref="dwc:eventID" minOccurs="0"/>
+                <xs:element ref="dwc:parentEventID" minOccurs="0"/>
                 <xs:element ref="dwc:fieldNumber" minOccurs="0"/>
                 <xs:element ref="dwc:eventDate" minOccurs="0"/>
                 <xs:element ref="dwc:eventTime" minOccurs="0"/>
@@ -94,6 +97,8 @@
                 <xs:element ref="dwc:habitat" minOccurs="0"/>
                 <xs:element ref="dwc:samplingProtocol" minOccurs="0"/>
                 <xs:element ref="dwc:samplingEffort" minOccurs="0"/>
+                <xs:element ref="dwc:sampleSizeValue" minOccurs="0"/>
+                <xs:element ref="dwc:sampleSizeUnit" minOccurs="0"/>
                 <xs:element ref="dwc:fieldNotes" minOccurs="0"/>
                 <xs:element ref="dwc:eventRemarks" minOccurs="0"/>
                 <!-- Location terms -->
