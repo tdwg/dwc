@@ -184,8 +184,8 @@
     <xs:element name="fieldNumber" type="xs:string" substitutionGroup="dwc:anyEventTerm"/>
     <xs:element name="samplingProtocol" type="xs:string" substitutionGroup="dwc:anyEventTerm"/>
     <xs:element name="samplingEffort" type="xs:string" substitutionGroup="dwc:anyEventTerm"/>
-    <xs:element name="sampleValueSize" type="xs:string" substitutionGroup="dwc:anyEventTerm"/>
-    <xs:element name="sampleValueUnit" type="xs:string" substitutionGroup="dwc:anyEventTerm"/>
+    <xs:element name="sampleSizeValue" type="xs:string" substitutionGroup="dwc:anyEventTerm"/>
+    <xs:element name="sampleSizeUnit" type="xs:string" substitutionGroup="dwc:anyEventTerm"/>
     <xs:element name="fieldNotes" type="xs:string" substitutionGroup="dwc:anyEventTerm"/>
     <xs:element name="eventRemarks" type="xs:string" substitutionGroup="dwc:anyEventTerm"/>
     <xs:group name="EventTerms">
