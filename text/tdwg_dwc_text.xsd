@@ -4,7 +4,7 @@
 	targetNamespace="http://rs.tdwg.org/dwc/text/" attributeFormDefault="unqualified"
 	elementFormDefault="qualified">
 	<xs:import namespace="http://rs.tdwg.org/dwc/terms/"
-		schemaLocation="http://darwincore.googlecode.com/svn/trunk/xsd/tdwg_dwcterms.xsd"/>
+		schemaLocation="https://raw.githubusercontent.com/tdwg/dwc/master/xsd/tdwg_dwcterms.xsd"/>
 	<xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://rs.gbif.org/schema/xml.xsd">
 		<xs:annotation>
 			<xs:documentation>
