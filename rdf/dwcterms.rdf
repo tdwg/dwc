@@ -20,7 +20,7 @@
     <dcterms:title xml:lang="en">Darwin Core Recommended Terms</dcterms:title>
     <rdfs:comment>This document contains a list of Darwin Core terms that have the dwcattributes:status equal to "recommended". For the full normative RDF document of all Darwin Core terms, see dwctermshistory.rdf. To comment on this schema, please create a new issue in https://github.com/tdwg/dwc/issues</rdfs:comment>
     <dcterms:publisher xml:lang="en">Biodiversity Information Standards (TDWG)</dcterms:publisher>
-    <dcterms:modified>2015-03-19</dcterms:modified>
+    <dcterms:modified>2016-04-25</dcterms:modified>
   </rdf:Description>
   <!-- 
   Each RDF description uses the following:
@@ -32,19 +32,13 @@
     dcterms:modified
     rdf:type
     dcterms:hasVersion
-    rdfs:range
     rdfs:subPropertyOf
     dcterms:replaces
     rdfs:seeAlso (for ABCD mapping)
     dwcattributes:status
     dwcattributes:decision
-    
-    // potentially useful
-    rdfs:domain
-    skos = http://www.w3.org/2004/02/skos/core#
-    skos:example
-    vs = http://www.w3.org/2003/06/sw-vocab-status/ns#
-    vs:term_status
+    dwcattributes:abcdEquivalence
+    dwcattributes:organizedInClass
 -->
   <!-- Mutable RDF goes here -->
   <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/acceptedNameUsage">
@@ -189,7 +183,6 @@
     <dwcattributes:status>recommended</dwcattributes:status>
     <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-26_15"/>
     <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/RecordBasis</dwcattributes:abcdEquivalence>
-    <dwcattributes:organizedInClass rdf:resource="all"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/bed">
     <rdfs:label xml:lang="en">Bed</rdfs:label>
@@ -257,7 +250,6 @@
     <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/collectionCode-2009-08-24"/>
     <dwcattributes:status>recommended</dwcattributes:status>
     <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/SourceID</dwcattributes:abcdEquivalence>
-    <dwcattributes:organizedInClass rdf:resource="all"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/collectionID">
     <rdfs:label xml:lang="en">Collection ID</rdfs:label>
@@ -270,7 +262,6 @@
     <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#collectionID-2009-09-11"/>
     <dwcattributes:status>recommended</dwcattributes:status>
     <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/SourceID</dwcattributes:abcdEquivalence>
-    <dwcattributes:organizedInClass rdf:resource="all"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/continent">
     <rdfs:label xml:lang="en">Continent</rdfs:label>
@@ -367,7 +358,6 @@
     <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/Generalizations-2008-11-19"/>
     <dwcattributes:status>recommended</dwcattributes:status>
     <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
-    <dwcattributes:organizedInClass rdf:resource="all"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/datasetID">
     <rdfs:label xml:lang="en">Dataset ID</rdfs:label>
@@ -381,7 +371,6 @@
     <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/datasetID-2009-04-24"/>
     <dwcattributes:status>recommended</dwcattributes:status>
     <dwcattributes:abcdEquivalence>DataSets/DataSet/DataSetGUID</dwcattributes:abcdEquivalence>
-    <dwcattributes:organizedInClass rdf:resource="all"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/datasetName">
     <rdfs:label xml:lang="en">Dataset Name</rdfs:label>
@@ -394,7 +383,6 @@
     <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#datasetName-2009-09-11"/>
     <dwcattributes:status>recommended</dwcattributes:status>
     <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/SourceID</dwcattributes:abcdEquivalence>
-    <dwcattributes:organizedInClass rdf:resource="all"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/dateIdentified">
     <rdfs:label xml:lang="en">Date Identified</rdfs:label>
@@ -480,7 +468,6 @@
     <dwcattributes:status>recommended</dwcattributes:status>
     <dwcattributes:decision rdf:resource="http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-30_16"/>
     <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
-    <dwcattributes:organizedInClass rdf:resource="all"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/earliestAgeOrLowestStage">
     <rdfs:label xml:lang="en">Earliest Age Or Lowest Stage</rdfs:label>
@@ -1125,7 +1112,6 @@
     <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/InformationWithheld-2007-04-17"/>
     <dwcattributes:status>recommended</dwcattributes:status>
     <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/InformationWithheld</dwcattributes:abcdEquivalence>
-    <dwcattributes:organizedInClass rdf:resource="all"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/infraspecificEpithet">
     <rdfs:label xml:lang="en">Infraspecific Epithet</rdfs:label>
@@ -1153,7 +1139,6 @@
     <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/institutionCode-2009-08-24"/>
     <dwcattributes:status>recommended</dwcattributes:status>
     <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/SourceInstitutionID</dwcattributes:abcdEquivalence>
-    <dwcattributes:organizedInClass rdf:resource="all"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/institutionID">
     <rdfs:label xml:lang="en">Institution ID</rdfs:label>
@@ -1166,7 +1151,6 @@
     <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#institutionID-2009-09-11"/>
     <dwcattributes:status>recommended</dwcattributes:status>
     <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/SourceInstitutionID</dwcattributes:abcdEquivalence>
-    <dwcattributes:organizedInClass rdf:resource="all"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/island">
     <rdfs:label xml:lang="en">Island</rdfs:label>
@@ -2026,7 +2010,6 @@
     <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#ownerInstitutionCode-2009-08-24"/>
     <dwcattributes:status>recommended</dwcattributes:status>
     <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
-    <dwcattributes:organizedInClass rdf:resource="all"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/parentEventID">
     <rdfs:label xml:lang="en">Parent Event ID</rdfs:label>
