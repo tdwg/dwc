@@ -873,6 +873,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:modified>2014-10-23</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
         <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#collectionID-2009-09-11"/>
+        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/collectionID-2009-04-24"/>
         <dwcattributes:status>recommended</dwcattributes:status>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/SourceID</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="all"/>
