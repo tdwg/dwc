@@ -27,7 +27,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:title xml:lang="en">Darwin Core Terms Complete History</dcterms:title>
         <rdfs:comment>This is the normative (Type 1) document for the terms in the Darwin Core standard (http://www.tdwg.org/standards/450/). It contains a list of all versions of all Darwin Core terms. To comment on this schema, please create a new issue in http://code.google.com/p/darwincore/issues/</rdfs:comment>
         <dcterms:publisher xml:lang="en">Biodiversity Information Standards (TDWG)</dcterms:publisher>
-        <dcterms:modified>2016-04-24</dcterms:modified>
+        <dcterms:modified>2016-04-25</dcterms:modified>
     </rdf:Description>
     <!-- 
   Each RDF description uses the following:
@@ -2970,7 +2970,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
         <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#higherTaxonconceptID-2009-04-24"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
-        <dwcattributes:status>deprecated</dwcattributes:status>
+        <dwcattributes:status>superseded</dwcattributes:status>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
