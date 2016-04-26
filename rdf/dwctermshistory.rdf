@@ -27,7 +27,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:title xml:lang="en">Darwin Core Terms Complete History</dcterms:title>
         <rdfs:comment>This is the normative (Type 1) document for the terms in the Darwin Core standard (http://www.tdwg.org/standards/450/). It contains a list of all versions of all Darwin Core terms. To comment on this schema, please create a new issue in http://code.google.com/p/darwincore/issues/</rdfs:comment>
         <dcterms:publisher xml:lang="en">Biodiversity Information Standards (TDWG)</dcterms:publisher>
-        <dcterms:modified>2015-03-19</dcterms:modified>
+        <dcterms:modified>2016-04-25</dcterms:modified>
     </rdf:Description>
     <!-- 
   Each RDF description uses the following:
@@ -106,7 +106,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
         <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#acceptedScientificNameID-2009-07-06"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/AcceptedTaxonNameID-2009-04-24"/>
+        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/acceptedTaxonNameID-2009-04-24"/>
         <dwcattributes:status>superseded</dwcattributes:status>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
@@ -873,6 +873,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:modified>2014-10-23</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
         <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#collectionID-2009-09-11"/>
+        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/collectionID-2009-04-24"/>
         <dwcattributes:status>recommended</dwcattributes:status>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/SourceID</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="all"/>
@@ -2969,7 +2970,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
         <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#higherTaxonconceptID-2009-04-24"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
-        <dwcattributes:status>deprecated</dwcattributes:status>
+        <dwcattributes:status>superseded</dwcattributes:status>
         <dwcattributes:abcdEquivalence>not in ABCD</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
     </rdf:Description>
@@ -4881,7 +4882,7 @@ xml:base="http://rs.tdwg.org/dwc/terms/">
         <dcterms:modified>2009-09-21</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
         <dcterms:hasVersion rdf:resource="http://rs.tdwg.org/dwc/terms/history/#nomenclaturalCode-2009-09-21"/>
-        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/NomenclaturalCode-2009-04-24"/>
+        <dcterms:replaces rdf:resource="http://rs.tdwg.org/dwc/terms/nomenclaturalCode-2009-04-24"/>
         <dwcattributes:status>recommended</dwcattributes:status>
         <dwcattributes:abcdEquivalence>DataSets/DataSet/Units/Unit/Identifications/Identification/TaxonIdentified/Code</dwcattributes:abcdEquivalence>
         <dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
