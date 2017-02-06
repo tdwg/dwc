@@ -26,9 +26,9 @@
 
 <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/">
 	<dcterms:title xml:lang="en">Darwin Core Terms Complete History</dcterms:title>
-	<rdfs:comment>This is the normative (Type 1) document for the terms in the Darwin Core standard (http://www.tdwg.org/standards/450/). It contains a list of all versions of all Darwin Core terms. To comment on this schema, please create a new issue in http://code.google.com/p/darwincore/issues/</rdfs:comment>
+	<rdfs:comment>This is the normative document for the terms in the Darwin Core standard (http://www.tdwg.org/standards/450/). It contains a list of all versions of all Darwin Core terms. To comment on this schema, please create a new issue in https://github.com/tdwg/dwc/issues/</rdfs:comment>
 	<dcterms:publisher xml:lang="en">Biodiversity Information Standards (TDWG)</dcterms:publisher>
-	<dcterms:modified>2016-04-25</dcterms:modified>
+	<dcterms:modified>2017-02-05</dcterms:modified>
 </rdf:Description>
 <!-- 
   Each RDF description uses the following:
