@@ -6,6 +6,7 @@
 
 import io
 import csv
+import sys
 
 from urllib import request
 
@@ -145,9 +146,9 @@ class DwcDigester(object):
         return template_data
 
     @staticmethod
-    def create_html(template_data, html_template="terms.tmpl", html_output="../dist/index.html"):
+    def create_html(template_data, html_template="./config/index.tmpl", html_output="../dist/index.html"):
         """build html with the processed term info"""
-        print("building html files")
+
         data={}
         data["groups"] = template_data
         html = Template(file=html_template, searchList=[data])
@@ -155,3 +156,20 @@ class DwcDigester(object):
         index_page = open(html_output, "w")
         index_page.write(str(html))
         index_page.close()
+
+
+def main():
+    """Building up the html"""
+
+    config_terms_file = "./config/terms_config.csv"
+    term_versions_file = "../vocabulary/term_versions.csv"
+
+    print("Running build process using current term_versions and config_terms file...")
+    my_dwc = DwcDigester(term_versions_file, config_terms_file)
+    print("Building index html file...")
+    my_dwc.create_html(my_dwc.process_terms())
+    print("...done!")
+
+
+if __name__ == "__main__":
+    sys.exit(main())
