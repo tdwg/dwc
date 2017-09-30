@@ -36,6 +36,10 @@ The repository structure is described below. Files/directories indicated with `G
 └── .gitignore                : Files and directories to be ignored by git
 ```
 
+## Contributors
+
+[List of contributors](https://github.com/tdwg/dwc/contributors)
+
 ## License
 
 Darwin Core (c) by the Darwin Core Task Group, Biodiversity Informatics Standards (TDWG). Darwin Core is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/). A copy of the license is provided in [LICENSE](LICENSE).
