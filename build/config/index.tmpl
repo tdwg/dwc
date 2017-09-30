@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!-- Metadata -->
         <title>Darwin Core quick reference guide</title>
+        
         <!-- CSS -->
         <link rel="stylesheet" href="https://dev.tdwg.org/theme/css/main.css">
         <style>
@@ -26,6 +26,8 @@
 
             .group-terms {
                 font-size: 1.1rem;
+            .table .label {
+                width: 7rem; /* To align all labels */
             }
         </style>
     </head>
@@ -66,34 +68,26 @@
 
                         #if $group.iri is not None
                         ## The above will exclude the Record-level group
-                        <div class="card my-2">
-                            <div class="card-header">
-                                $group.name
-                            </div>
-                            <div class="card-body">
-                                <dl>
-                                    <dt>Identifier</dt><dd><a href="$group.iri">$group.iri</a></dd>
-                                    <dt>Definition</dt><dd>$group.definition</dd>
-                                    <dt>Comments</dt><dd>$group.comments</dd>
-                                </dl>
-                            </div>
-                        </div>
+                        <table class="table table-sm border mb-3">
+                            <tbody>
+                                <tr class="table-primary"><th colspan="2">$group.name</th></tr>
+                                <tr><td class="label">Identifier</td><td><a href="$group.iri">$group.iri</a></td></tr>
+                                <tr><td class="label">Definition</td><td>$group.definition</td></tr>
+                                <tr><td class="label">Comments</td><td>$group.comments</td></tr>
+                            </tbody>
+                        </table>
                         #end if
 
                         #for $term in $group.terms
                         <a id="$term.name" class="anchor"></a>
-                        <div class="card my-2">
-                            <div class="card-header">
-                                $term.name
-                            </div>
-                            <div class="card-body">
-                                <dl>
-                                    <dt>Identifier</dt><dd><a href="$term.iri">$term.iri</a></dd>
-                                    <dt>Definition</dt><dd>$term.definition</dd>
-                                    <dt>Comments</dt><dd>$term.comments</dd>
-                                </dl>
-                            </div>
-                        </div>
+                        <table class="table table-sm border mb-3">
+                            <tbody>
+                                <tr class="table-secondary"><th colspan="2">$term.name</th></tr>
+                                <tr><td class="label">Identifier</td><td><a href="$group.iri">$term.iri</a></td></tr>
+                                <tr><td class="label">Definition</td><td>$term.definition</td></tr>
+                                <tr><td class="label">Comments</td><td>$term.comments</td></tr>
+                            </tbody>
+                        </table>
                         #end for
                     </section>
                     #end for
