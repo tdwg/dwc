@@ -43,7 +43,7 @@ The repository structure is described below. Files/directories indicated with `G
 │   ├── build.py              : Build script to generate distribution files from the normative document
 │   └── config                : Configuration files for build.py
 │       ├── index.tmpl        : Template for index.html
-│       └── terms_config.csv  : Configuration for the recommended terms, incl. order, labels, examples
+│       └── terms.csv         : Configuration for the recommended terms, incl. order, labels, examples
 │
 ├── .github
 │   ├── CONTRIBUTING.md       : Guide on how to contribute to Darwin Core

@@ -161,7 +161,7 @@ class DwcDigester(object):
 def main():
     """Building up the html"""
 
-    config_terms_file = "./config/terms_config.csv"
+    config_terms_file = "./config/terms.csv"
     term_versions_file = "../vocabulary/term_versions.csv"
 
     print("Running build process using current term_versions and config_terms file...")
