@@ -1,0 +1,149 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+=======
+﻿<!DOCTYPE html>
+>>>>>>> 3f4250f44d233b1ab4b22dc0864b9b2ff4d7949f
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Darwin Core Change Policy</title>
+        <meta name="dcterms.title" content="Darwin Core Change Policy">
+        <meta name="dcterms.description" content="This document describes the mechanisms for adaptation of the Darwin Core terms.">
+        <meta name="dcterms.modified" content="2015-01-13"><!-- Also update in footer -->
+        
+        <meta name="dcterms.subject" content="biodiversity, standards">
+        <meta name="dcterms.creator" content="Darwin Core Task Group">
+        <meta name="dcterms.contributor" content="John Wieczorek (MVZ)">
+        <meta name="dcterms.contributor" content="Markus Döring (GBIF)">
+        <meta name="dcterms.contributor" content="Renato De Giovanni (CRIA)">
+        <meta name="dcterms.contributor" content="Tim Robertson (GBIF)">
+        <meta name="dcterms.contributor" content="Dave Vieglais (KUNHM)">
+        <meta name="dcterms.contributor" content="Peter Desmet (INBO)">
+        <meta name="dcterms.publisher" content="Biodiversity Information Standards (TDWG)">
+        <meta name="dcterms.license" content="http://creativecommons.org/licenses/by/4.0/legalcode">
+        <meta name="dcterms.language" content="en">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="assets/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/main.css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Darwin Core</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="terms/">Terms</a></li>
+                        <li><a href="examples/">Examples</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Reference <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li class="active"><a href="change_policy.html">Change policy</a></li>
+                                <li class="divider"></li>
+                                <li><a href="simple_dwc.html">Simple Darwin Core</a></li>
+                                <li class="divider"></li>
+                                <li><a href="guides/text/">Text guide</a></li>
+                                <li><a href="guides/xml/">XML guide</a></li>
+                                <li class="disabled"><a href="guides/rdf/">RDF guide</a></li>
+                                <li class="divider"></li>
+                                <li><a href="terms/history.html">Term history</a></li>
+                                <li><a href="terms/decisions.html">Term decisions</a></li>
+                                <li><a href="terms/mappings.html">Term mappings</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="resources/">Resources</a></li>
+                        <li><a href="http://github.com/tdwg/dwc">Source</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="content">
+            <div class="container">
+                <div class="page-header">
+                    <h1>Change policy</h1>
+                </div>
+
+                <h2>1. Introduction</h2>
+                <p>This document and the policies contained herein are modeled on the <em>Dublin Core Metadata Initiative Namespace Policy</em> [<a href="http://dublincore.org/documents/2007/07/02/dcmi-namespace/">DCMINAMESPACEPOLICY</a>]. All terms in the Darwin Core must be identified with a unique Uniform Resource Identifier (URI). For convenience, the term URIs are grouped into collections known as <em>Darwin Core namespaces</em>. This document describes the policies associated with Darwin Core namespaces and how term URIs are allocated by the <em>Darwin Core Task Group</em> [<a href="http://www.tdwg.org/activities/darwincore/">DWC-TASK</a>].</p>
+                
+                <h2>2. Namespace URIs</h2>
+                <p>The Darwin Core namespace URI for the collection of all Darwin Core properties, classes, and encoding schemes is:</p>
+                <pre class="example">http://rs.tdwg.org/dwc/terms/</pre>
+                <p>The term identifier for the current (recommended) version of a term is a URI based on the namespace and the term name without version information. Some example Darwin Core term identifiers follow:</p>
+                <pre class="example">http://rs.tdwg.org/dwc/terms/scientificName</pre>
+                <p>is the Darwin Core term identifier for the <em>scientificName</em> property, while</p>
+                <pre class="example">http://rs.tdwg.org/dwc/terms/MachineObservation</pre>
+                <p>is the Darwin Core term identifier for the <em>MachineObservation</em> class.</p>
+                <p>All Darwin Core identifiers will dereference to a Darwin Core term
+                declaration for the identified term.</p>
+
+                <h2>3. Term change policy</h2>
+                <p>Changes to Darwin Core recommendations or term declarations will occur from time to time for a variety of reasons. Changes have varying implications for the decision making process and for versioning Darwin Core documents and term URIs. The types of changes and appropriate processes are identified and explained in the following sections.</p>
+                <p><strong>Reporting issues</strong>: In all cases the proposed change should be reported to the <em>Technical Architecture Group</em> [<a href="mailto:tdwg-tag@lists.tdwg.org">TDWG-TAG</a>] and the outcome of the proposal should be announced on the <em>Darwin Core mailing list</em> [<a href="http://lists.tdwg.org/mailman/listinfo/tdwg-content">TDWG-CONTENT</a>].</p>
+                <p><strong>Decisions</strong>: In cases where an Executive decision is required,the <em>Technical Architecture Group</em> will conduct a minimum 30-day public comment period on the <em>Darwin Core mailing list</em> [<a href="http://lists.tdwg.org/mailman/listinfo/tdwg-content">TDWG-CONTENT</a>], during which the proposal can be refined based on discussion in an effort to reach consensus (no dissenting opinion expressed publicly on the mailing list for 30 days from the most recent iteration). If a consensus is reached, the proposal will be presented by the <em>Technical Architecture Group</em> to the Executive Committee for a decision [<a href="terms/decisions.html">DECISIONS</a>] within 30 days.</p>
+                <p><strong>Versions</strong>: In cases where a decision requires a version change, the attributes <em>Status</em> (recommended, superseded, or deprecated), <em>Date Issued</em>, <em>Date Modified</em>, <em>Decision</em>, <em>Version</em>, <em>Replaces</em>, and <em>Is Replaced By</em> will be modified in the affected terms as appropriate.</p>
+
+                <h3>3.1 Minor editorial errata</h3>
+                <p>An error in spelling, punctuation, grammar, or other clerical mistake
+                discovered in a Darwin Core recommendation or term declaration may be
+                corrected without a public comment period or Executive Decision. Minor
+                editorial changes of this type do not require a version change for the
+                affected term and/or documents.</p>
+
+                <h3>3.2 Substantive editorial errata</h3>
+                <p>A substantive error is one that compromises the usefulness or accuracy of systems based on Darwin Core. Those that are unequivocal (for example, an incorrect URI or reference) may be treated as minor editorial errata (Section 3.1).</p>
+                <p>Otherwise, the <em>Technical Architecture Group</em> will conduct a public comment period and seek an Executive decision to find a solution that minimizes adverse effects on existing applications. Changes of this nature require a version change for the affected term and/or documents.</p>
+
+                <h3>3.3 Semantic changes to Darwin Core terms</h3>
+                <p>Darwin Core terms may be changed based on public demand and consensus. A request to the <em>Technical Architecture Group</em> for a term change should consist of proposed values for the complete list of attributes given in the term definitions section of the <em>Darwin Core Terms Complete History</em> [<a href="terms/history.html">HISTORY</a>] along with a statement of justification for the change.</p>
+                <p>Term changes that are likely to have substantial functional impact on human understanding or machine processing will posted for public commentary and an Executive decision. Changes of this nature require a version change for the affected term and/or documents.</p>
+
+                <h3>3.4 Addition of Darwin Core terms</h3>
+                <p>New terms may be added to the Darwin Core namespaces based on public demand and consensus. A request to the <em>Technical Architecture Group</em> [<a href="mailto:tdwg-tag@lists.tdwg.org">TDWG-TAG</a>] for a new term should consist of proposed values for the complete list of attributes given in the term definitions section of the <em>Darwin Core Terms Complete History</em> [<a href="terms/history.html">HISTORY</a>] along with a statement of justification for the new term, including an explanation of why no existing term will suffice.</p>
+                <p>New term proposals will be posted for public commentary and an Executive decision. Changes of this nature require a version change for the affected term and/or documents.</p>
+
+                <h2>4. Persistence policy</h2>
+                <p>TDWG recognizes that people and applications depend on the persistence of formal documents and machine processable schemas that have been made publicly available. In particular, the stability of Darwin Core term URIs and Darwin Core namespace URIs is critical to interoperability over time. Thus, the wide promulgation of this set of URIs dictates that they be maintained to support legacy applications that have adopted them.</p>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png"/></a></p>
+                    </div>
+                    <div class="col-xs-8">
+                        <ul class="list-inline pull-right">
+                            <li>Page last modified on 2015-01-13</li>
+                            <li><a href="https://github.com/tdwg/dwc/blob/gh-pages/change_policy.html">Edit on GitHub</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+      
+        <!-- Scripts -->
+        <script type="text/javascript" src="assets/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/bootstrap.min.js"></script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-386033-4', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </body>
+</html>

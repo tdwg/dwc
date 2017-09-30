@@ -1,0 +1,92 @@
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    margin-bottom: 75px; /* Sticky footer */
+    padding-top: 50px; /* Fixed navbar */
+}
+
+.content {
+    padding-bottom: 20px;
+}
+
+.footer {
+    background-color: #f8f8f8;
+    border-top: 1px solid #e7e7e7;
+    bottom: 0;
+    height: 75px;
+    position: absolute;
+    width: 100%;
+    }
+    .footer .container {
+        padding-top: 20px;
+    }
+
+.anchor:before {
+    content: " ";
+    display: block;
+    height: 70px;
+    margin-top: -70px;
+    visibility: hidden;
+}
+
+section .well h2 {
+    margin-top: 10px; /* On terms page */
+}
+
+.terms-sidebar {
+        margin-top: 40px;
+    }
+    .terms-sidebar .nav {
+        position: fixed;
+    }
+    .terms-sidebar .nav > li > a {
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+    .terms-sidebar .nav > .active > a,
+    .terms-sidebar .nav > .active > a:hover,
+    .terms-sidebar .nav > .active > a:focus {
+        background-color: transparent;
+        border-left: 2px solid #2a6496;
+        color: #2a6496;
+        font-weight: bold;
+        margin-left: -2px;
+        text-decoration: none;
+    }
+    .terms-sidebar .nav > li > a:hover,
+    .terms-sidebar .nav > li > a:focus {
+        background-color: transparent;
+        border-left: 1px solid #2a6496;
+        margin-left: -1px;
+        text-decoration: none;
+    }
+
+.table {
+    table-layout: fixed;
+    }
+    .table th {
+        background-color: #e7e7e7;
+    }
+    .table col:first-child {
+        width: 120px; /* Labels, requires <colgroup><col></col><col></col></colgroup> */
+    }
+    .table.class-definition tr { /* Class definitions */;
+        background-color: #f5f5f5;
+    }
+    .table tr:first-child { /* Header for each definition */
+        background-color: #e7e7e7;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .table td {
+        word-wrap: break-word;
+    }
+
+@media screen and (max-width: 767px){
+    .terms-sidebar {
+        display: none
+    }
+}

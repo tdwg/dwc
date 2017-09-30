@@ -1,0 +1,593 @@
+<<<<<<< HEAD
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Darwin Core term decisions</title>
+        <meta name="dcterms.title" content="Darwin Core term decisions">
+        <meta name="dcterms.description" content="A history of decisions about Darwin Core terms.">
+        <meta name="dcterms.modified" content="2015-01-13"><!-- Also update in footer -->
+        
+        <meta name="dcterms.subject" content="biodiversity, standards">
+        <meta name="dcterms.creator" content="Darwin Core Task Group">
+        <meta name="dcterms.contributor" content="John Wieczorek (MVZ)">
+        <meta name="dcterms.contributor" content="Markus Döring (GBIF)">
+        <meta name="dcterms.contributor" content="Renato De Giovanni (CRIA)">
+        <meta name="dcterms.contributor" content="Tim Robertson (GBIF)">
+        <meta name="dcterms.contributor" content="Dave Vieglais (KUNHM)">
+        <meta name="dcterms.contributor" content="Peter Desmet (INBO)">
+        <meta name="dcterms.publisher" content="Biodiversity Information Standards (TDWG)">
+        <meta name="dcterms.license" content="http://creativecommons.org/licenses/by/4.0/legalcode">
+        <meta name="dcterms.language" content="en">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../assets/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../assets/main.css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../index.html">Darwin Core</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="../terms/index.html">Terms</a></li>
+                        <li><a href="../examples/index.html">Examples</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Reference <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="../change_policy.html">Change policy</a></li>
+                                <li class="divider"></li>
+                                <li><a href="../simple_dwc.html">Simple Darwin Core</a></li>
+                                <li class="divider"></li>
+                                <li><a href="../guides/text/index.html">Text guide</a></li>
+                                <li><a href="../guides/xml/index.html">XML guide</a></li>
+                                <li class="disabled"><a href="../guides/rdf/index.html">RDF guide</a></li>
+                                <li class="divider"></li>
+                                <li><a href="../terms/history.html">Term history</a></li>
+                                <li class="active"><a href="../terms/decisions.html">Term decisions</a></li>
+                                <li><a href="../terms/mappings.html">Term mappings</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="../resources/index.html">Resources</a></li>
+                        <li><a href="http://github.com/tdwg/dwc">Source</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="content">
+            <div class="container">
+                <div class="page-header">
+                    <h1>Term decisions</h1>
+                </div>
+
+                <h2>1. Introduction</h2>
+                <p>From time to time changes are proposed to Darwin Core terms through the process described in the Term Change Policy section of the <em>Darwin Core Namespace Policy</em> [<a href= "../change_policy.html">NAMESPACEPOLICY</a>]. This document shows the outcome of decisions based on officially proposed changes.</p>
+
+                <h2>2. Decisions</h2>
+
+                <a id="Decision-2009-12-07_1" class="anchor"></a>
+                <table class="table table-bordered table-condensed">
+                    <colgroup><col><col></colgroup>
+                    <tbody>
+                        <tr><td colspan="2">Decision-2009-12-07_1</td></tr>
+                        <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2009-12-07_1">http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2009-12-07_1</a></td></tr>
+                        <tr><td>Description</td><td>The recommended controlled vocabulary for dcterms:type was changed from a vocabulary of Darwin Core Classes (Occurrence, Taxon, Location, Event) to the DCMI type vocabulary (PhysicalObject, Event, StillImage, MovingImage, Sound, Text, Dataset) to be consistent with the standard use of that term.</td></tr>
+                        <tr><td>Date</td><td>2009-12-07</td></tr>
+                    </tbody>
+                </table>
+
+                <a id="Decision-2009-12-07_2" class="anchor"></a>
+                <table class="table table-bordered table-condensed">
+                    <colgroup><col><col></colgroup>
+                    <tbody>
+                        <tr><td colspan="2">Decision-2009-12-07_2</td></tr>
+                        <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2009-12-07_2">http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2009-12-07_2</a></td></tr>
+                        <tr><td>Description</td><td>The recommended controlled vocabulary for basisOfRecord remains the Darwin Core Type Vocabulary, but the Dublin Core classes StillImage, MovingImage, and Sound were removed from that list as these are to be used as vocabulary for the dcterms:type term.</td></tr>
+                        <tr><td>Date</td><td>2009-12-07</td></tr>
+                    </tbody>
+                </table>
+
+                <a id="Decision-2011-10-16_3" class="anchor"></a>
+                <table class="table table-bordered table-condensed">
+                    <colgroup><col><col></colgroup>
+                    <tbody>
+                        <tr><td colspan="2">Decision-2011-10-16_3</td></tr>
+                            <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2011-10-16_3">http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2011-10-16_3</a></td></tr>
+                            <tr><td>Description</td><td>The Dublin Core type vocabulary values StillImage, MovingImage, and Sound have not been added to the list of valid values for Darwin Core type vocabulary pending further insights from the RDF Interest Group about how best to manage basisOfRecord when a record can be "about" more than one subject.</td></tr>
+                            <tr><td>Date</td><td>2011-10-16</td></tr>
+                    </tbody>
+                </table>
+
+                <a id="Decision-2011-10-16_4" class="anchor"></a>
+                <table class="table table-bordered table-condensed">
+                    <colgroup><col><col></colgroup>
+                    <tbody>
+                        <tr><td colspan="2">Decision-2011-10-16_4</td></tr>
+                            <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2011-10-16_4">http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2011-10-16_4</a></td></tr>
+                            <tr><td>Description</td><td>The recommendation to add alias as an attribute of Darwin Core terms was rejected as being an application-specific recommendation without sufficiently demonstrated community need.</td></tr>
+                            <tr><td>Date</td><td>2011-10-16</td></tr>
+                    </tbody>
+                </table>
+
+                <a id="Decision-2011-10-16_5" class="anchor"></a>
+                <table class="table table-bordered table-condensed">
+                    <colgroup><col><col></colgroup>
+                    <tbody>
+                        <tr><td colspan="2">Decision-2011-10-16_5</td></tr>
+                            <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2011-10-16_5">http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2011-10-16_5</a></td></tr>
+                            <tr><td>Description</td><td>The label for all terms have been changed to words in English rather than lower camel case term names. This will facilitate discovery with search engines and is consistent with Dublin Core.</td></tr>
+                            <tr><td>Date</td><td>2011-10-16</td></tr>
+                    </tbody>
+                </table>
+
+                <a id="Decision-2011-10-16_6" class="anchor"></a>
+                <table class="table table-bordered table-condensed">
+                    <colgroup><col><col></colgroup>
+                    <tbody>
+                        <tr><td colspan="2">Decision-2011-10-16_6</td></tr>
+                            <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2011-10-16_6">http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2011-10-16_6</a></td></tr>
+                            <tr><td>Description</td><td>The subclasses for Darwin Core type vocabulary have been removed. These were seen as too constraining when considering biodiversity information in the context of linked data.</td></tr>
+                            <tr><td>Date</td><td>2011-10-16</td></tr>
+                    </tbody>
+                </table>
+
+                <a id="Decision-2011-10-16_7" class="anchor"></a>
+                <table class="table table-bordered table-condensed">
+                    <colgroup><col><col></colgroup>
+                    <tbody>
+                        <tr><td colspan="2">Decision-2011-10-16_7</td></tr>
+                            <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2011-10-16_7">http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2011-10-16_7</a></td></tr>
+                            <tr><td>Description</td><td>The term Darwin Core term dwc:occurrenceDetails has been deprecated in favor of a new record-level term from the Dublin Core - dcterms:references, which is broader in meaning than the deprecated term.</td></tr>
+                            <tr><td>Date</td><td>2011-10-16</td></tr>
+                    </tbody>
+                </table>
+
+                <a id="Decision-2011-10-16_8" class="anchor"></a>
+                <table class="table table-bordered table-condensed">
+                    <colgroup><col><col></colgroup>
+                    <tbody>
+                        <tr><td colspan="2">Decision-2011-10-16_8</td></tr>
+                            <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2011-10-16_8">http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2011-10-16_8</a></td></tr>
+                            <tr><td>Description</td><td>Added term namePublishedInYear.</td></tr>
+                            <tr><td>Date</td><td>2011-10-16</td></tr>
+                    </tbody>
+                </table>
+
+                <a id="Decision-2011-10-16_9" class="anchor"></a>
+                <table class="table table-bordered table-condensed">
+                    <colgroup><col><col></colgroup>
+                    <tbody>
+                        <tr><td colspan="2">Decision-2011-10-16_9</td></tr>
+                            <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2011-10-16_9">http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2011-10-16_9</a></td></tr>
+                            <tr><td>Description</td><td>Added term georeferencedDate.</td></tr>
+                            <tr><td>Date</td><td>2011-10-16</td></tr>
+                    </tbody>
+                </table>
+
+                <a id="Decision-2011-10-16_10" class="anchor"></a>
+                <table class="table table-bordered table-condensed">
+                    <colgroup><col><col></colgroup>
+                    <tbody>
+                        <tr><td colspan="2">Decision-2011-10-16_10</td></tr>
+                            <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2011-10-16_10">http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2011-10-16_10</a></td></tr>
+                            <tr><td>Description</td><td>Added term identificationVerificationStatus.</td></tr>
+                            <tr><td>Date</td><td>2011-10-16</td></tr>
+                    </tbody>
+                </table>
+
+                <a id="Decision-2013-10-09_11" class="anchor"></a>
+                <table class="table table-bordered table-condensed">
+                    <colgroup><col><col></colgroup>
+                    <tbody>
+                        <tr><td colspan="2">Decision-2013-10-09_11</td></tr>
+                            <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2013-10-09_11">http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2013-10-09_11</a></td></tr>
+                            <tr><td>Description</td><td>Added term MaterialSample.</td></tr>
+                            <tr><td>Date</td><td>2013-10-09</td></tr>
+                    </tbody>
+                </table>
+
+                <a id="Decision-2013-10-09_12" class="anchor"></a>
+                <table class="table table-bordered table-condensed">
+                    <colgroup><col><col></colgroup>
+                    <tbody>
+                        <tr><td colspan="2">Decision-2013-10-09_12</td></tr>
+                            <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2013-10-09_12">http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2013-10-09_12</a></td></tr>
+                            <tr><td>Description</td><td>Added Darwin Core type vocabulary term MaterialSample.</td></tr>
+                            <tr><td>Date</td><td>2013-10-09</td></tr>
+                    </tbody>
+                </table>
+
+                <a id="Decision-2013-10-09_13" class="anchor"></a>
+                <table class="table table-bordered table-condensed">
+                    <colgroup><col><col></colgroup>
+                    <tbody>
+                        <tr><td colspan="2">Decision-2013-10-09_13</td></tr>
+                            <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2013-10-09_13">http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2013-10-09_13</a></td></tr>
+                            <tr><td>Description</td><td>Added term materialSampleID.</td></tr>
+                            <tr><td>Date</td><td>2013-10-09</td></tr>
+                    </tbody>
+                </table>
+
+                <a id="Decision-2014-10-26_14" class="anchor"></a>
+                <table class="table table-bordered table-condensed">
+                    <colgroup><col><col></colgroup>
+                    <tbody>
+                        <tr><td colspan="2">Decision-2014-10-26_14</td></tr>
+                            <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2014-10-26_14">http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2014-10-26_14</a></td></tr>
+                            <tr><td>Description</td><td>Added class term Organism with associated properties organismID, organismName, organismScope, organismRemarks, and associatedOrganisms. Associated terms previousIdentifications and associatedOccurrences with the new Organism class. Removed the individualID term.</td></tr>
+                            <tr><td>Date</td><td>2014-10-26</td></tr>
+                    </tbody>
+                </table>
+
+                <a id="Decision-2014-10-26_15" class="anchor"></a>
+                <table class="table table-bordered table-condensed">
+                    <colgroup><col><col></colgroup>
+                    <tbody>
+                        <tr><td colspan="2">Decision-2014-10-26_15</td></tr>
+                            <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2014-10-26_15">http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2014-10-26_15</a></td></tr>
+                            <tr><td>Description</td><td>Deprecated the Darwin Core Type Vocabulary (http://rs.tdwg.org/dwc/dwctype) in favor of the corresponding terms in the dwc namespace (http://rs.tdwg.org/dwc/terms). Added terms PreservedSpecimen, LivingSpecimen, FossilSpecimen, MachineObservation, and HumanObservation to the Darwin Core namespace (http://rs.tdwg.org/dwc/terms).</td></tr>
+                            <tr><td>Date</td><td>2014-10-26</td></tr>
+                    </tbody>
+                </table>
+
+                <a id="Decision-2014-10-30_16" class="anchor"></a>
+                <table class="table table-bordered table-condensed">
+                    <colgroup><col><col></colgroup>
+                    <tbody>
+                        <tr><td colspan="2">Decision-2014-10-30_16</td></tr>
+                            <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2014-10-30_16">http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2014-10-30_16</a></td></tr>
+                            <tr><td>Description</td><td>Added comments recommending list value separation with ' | ' for terms that can be constructed from concatenated lists. Added comment recommending that dynamicProperties be populated with JSON.</td></tr>
+                            <tr><td>Date</td><td>2014-10-30</td></tr>
+                    </tbody>
+                </table>
+
+                <a id="Decision-2014-11-06_17" class="anchor"></a>
+                <table class="table table-bordered table-condensed">
+                    <colgroup><col><col></colgroup>
+                    <tbody>
+                        <tr><td colspan="2">Decision-2014-11-06_17</td></tr>
+                            <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2014-11-06_17">http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2014-11-06_17</a></td></tr>
+                            <tr><td>Description</td><td>Deprecated the Dublin Core rights term in favor of the Dublin Core license term, which is how rights was being promoted since it was first recommended for use in Darwin Core..</td></tr>
+                            <tr><td>Date</td><td>2014-11-06</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png"/></a></p>
+                    </div>
+                    <div class="col-xs-8">
+                        <ul class="list-inline pull-right">
+                            <li>Page last modified on 2015-01-13</li>
+                            <li><a href="https://github.com/tdwg/dwc/blob/gh-pages/terms/decisions.html">Edit on GitHub</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+      
+        <!-- Scripts -->
+        <script type="text/javascript" src="../assets/jquery.min.js"></script>
+        <script type="text/javascript" src="../assets/bootstrap.min.js"></script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-386033-4', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </body>
+</html>
+=======
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Darwin Core term decisions</title>
+        <meta name="dcterms.title" content="Darwin Core term decisions">
+        <meta name="dcterms.description" content="A history of decisions about Darwin Core terms.">
+        <meta name="dcterms.modified" content="2015-01-13"><!-- Also update in footer -->
+        
+        <meta name="dcterms.subject" content="biodiversity, standards">
+        <meta name="dcterms.creator" content="Darwin Core Task Group">
+        <meta name="dcterms.contributor" content="John Wieczorek (MVZ)">
+        <meta name="dcterms.contributor" content="Markus Döring (GBIF)">
+        <meta name="dcterms.contributor" content="Renato De Giovanni (CRIA)">
+        <meta name="dcterms.contributor" content="Tim Robertson (GBIF)">
+        <meta name="dcterms.contributor" content="Dave Vieglais (KUNHM)">
+        <meta name="dcterms.contributor" content="Peter Desmet (INBO)">
+        <meta name="dcterms.publisher" content="Biodiversity Information Standards (TDWG)">
+        <meta name="dcterms.license" content="http://creativecommons.org/licenses/by/4.0/legalcode">
+        <meta name="dcterms.language" content="en">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../assets/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../assets/main.css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../index.html">Darwin Core</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="../terms/index.html">Terms</a></li>
+                        <li><a href="../examples/index.html">Examples</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Reference <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="../change_policy.html">Change policy</a></li>
+                                <li class="divider"></li>
+                                <li><a href="../simple_dwc.html">Simple Darwin Core</a></li>
+                                <li class="divider"></li>
+                                <li><a href="../guides/text/index.html">Text guide</a></li>
+                                <li><a href="../guides/xml/index.html">XML guide</a></li>
+                                <li class="disabled"><a href="../guides/rdf/index.html">RDF guide</a></li>
+                                <li class="divider"></li>
+                                <li><a href="../terms/history.html">Term history</a></li>
+                                <li class="active"><a href="../terms/decisions.html">Term decisions</a></li>
+                                <li><a href="../terms/mappings.html">Term mappings</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="../resources/index.html">Resources</a></li>
+                        <li><a href="http://github.com/tdwg/dwc">Source</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="content">
+            <div class="container">
+                <div class="page-header">
+                    <h1>Term decisions</h1>
+                </div>
+
+                <h2>1. Introduction</h2>
+                <p>From time to time changes are proposed to Darwin Core terms through the process described in the Term Change Policy section of the <em>Darwin Core Namespace Policy</em> [<a href= "../change_policy.html">NAMESPACEPOLICY</a>]. This document shows the outcome of decisions based on officially proposed changes.</p>
+
+                <h2>2. Decisions</h2>
+
+                <a id="Decision-2009-12-07_1" class="anchor"></a>
+                <table class="table table-bordered table-condensed">
+                    <colgroup><col><col></colgroup>
+                    <tbody>
+                        <tr><td colspan="2">Decision-2009-12-07_1</td></tr>
+                        <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2009-12-07_1">http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2009-12-07_1</a></td></tr>
+                        <tr><td>Description</td><td>The recommended controlled vocabulary for dcterms:type was changed from a vocabulary of Darwin Core Classes (Occurrence, Taxon, Location, Event) to the DCMI type vocabulary (PhysicalObject, Event, StillImage, MovingImage, Sound, Text, Dataset) to be consistent with the standard use of that term.</td></tr>
+                        <tr><td>Date</td><td>2009-12-07</td></tr>
+                    </tbody>
+                </table>
+
+                <a id="Decision-2009-12-07_2" class="anchor"></a>
+                <table class="table table-bordered table-condensed">
+                    <colgroup><col><col></colgroup>
+                    <tbody>
+                        <tr><td colspan="2">Decision-2009-12-07_2</td></tr>
+                        <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2009-12-07_2">http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2009-12-07_2</a></td></tr>
+                        <tr><td>Description</td><td>The recommended controlled vocabulary for basisOfRecord remains the Darwin Core Type Vocabulary, but the Dublin Core classes StillImage, MovingImage, and Sound were removed from that list as these are to be used as vocabulary for the dcterms:type term.</td></tr>
+                        <tr><td>Date</td><td>2009-12-07</td></tr>
+                    </tbody>
+                </table>
+
+                <a id="Decision-2011-10-16_3" class="anchor"></a>
+                <table class="table table-bordered table-condensed">
+                    <colgroup><col><col></colgroup>
+                    <tbody>
+                        <tr><td colspan="2">Decision-2011-10-16_3</td></tr>
+                            <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2011-10-16_3">http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2011-10-16_3</a></td></tr>
+                            <tr><td>Description</td><td>The Dublin Core type vocabulary values StillImage, MovingImage, and Sound have not been added to the list of valid values for Darwin Core type vocabulary pending further insights from the RDF Interest Group about how best to manage basisOfRecord when a record can be "about" more than one subject.</td></tr>
+                            <tr><td>Date</td><td>2011-10-16</td></tr>
+                    </tbody>
+                </table>
+
+                <a id="Decision-2011-10-16_4" class="anchor"></a>
+                <table class="table table-bordered table-condensed">
+                    <colgroup><col><col></colgroup>
+                    <tbody>
+                        <tr><td colspan="2">Decision-2011-10-16_4</td></tr>
+                            <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2011-10-16_4">http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2011-10-16_4</a></td></tr>
+                            <tr><td>Description</td><td>The recommendation to add alias as an attribute of Darwin Core terms was rejected as being an application-specific recommendation without sufficiently demonstrated community need.</td></tr>
+                            <tr><td>Date</td><td>2011-10-16</td></tr>
+                    </tbody>
+                </table>
+
+                <a id="Decision-2011-10-16_5" class="anchor"></a>
+                <table class="table table-bordered table-condensed">
+                    <colgroup><col><col></colgroup>
+                    <tbody>
+                        <tr><td colspan="2">Decision-2011-10-16_5</td></tr>
+                            <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2011-10-16_5">http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2011-10-16_5</a></td></tr>
+                            <tr><td>Description</td><td>The label for all terms have been changed to words in English rather than lower camel case term names. This will facilitate discovery with search engines and is consistent with Dublin Core.</td></tr>
+                            <tr><td>Date</td><td>2011-10-16</td></tr>
+                    </tbody>
+                </table>
+
+                <a id="Decision-2011-10-16_6" class="anchor"></a>
+                <table class="table table-bordered table-condensed">
+                    <colgroup><col><col></colgroup>
+                    <tbody>
+                        <tr><td colspan="2">Decision-2011-10-16_6</td></tr>
+                            <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2011-10-16_6">http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2011-10-16_6</a></td></tr>
+                            <tr><td>Description</td><td>The subclasses for Darwin Core type vocabulary have been removed. These were seen as too constraining when considering biodiversity information in the context of linked data.</td></tr>
+                            <tr><td>Date</td><td>2011-10-16</td></tr>
+                    </tbody>
+                </table>
+
+                <a id="Decision-2011-10-16_7" class="anchor"></a>
+                <table class="table table-bordered table-condensed">
+                    <colgroup><col><col></colgroup>
+                    <tbody>
+                        <tr><td colspan="2">Decision-2011-10-16_7</td></tr>
+                            <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2011-10-16_7">http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2011-10-16_7</a></td></tr>
+                            <tr><td>Description</td><td>The term Darwin Core term dwc:occurrenceDetails has been deprecated in favor of a new record-level term from the Dublin Core - dcterms:references, which is broader in meaning than the deprecated term.</td></tr>
+                            <tr><td>Date</td><td>2011-10-16</td></tr>
+                    </tbody>
+                </table>
+
+                <a id="Decision-2011-10-16_8" class="anchor"></a>
+                <table class="table table-bordered table-condensed">
+                    <colgroup><col><col></colgroup>
+                    <tbody>
+                        <tr><td colspan="2">Decision-2011-10-16_8</td></tr>
+                            <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2011-10-16_8">http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2011-10-16_8</a></td></tr>
+                            <tr><td>Description</td><td>Added term namePublishedInYear.</td></tr>
+                            <tr><td>Date</td><td>2011-10-16</td></tr>
+                    </tbody>
+                </table>
+
+                <a id="Decision-2011-10-16_9" class="anchor"></a>
+                <table class="table table-bordered table-condensed">
+                    <colgroup><col><col></colgroup>
+                    <tbody>
+                        <tr><td colspan="2">Decision-2011-10-16_9</td></tr>
+                            <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2011-10-16_9">http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2011-10-16_9</a></td></tr>
+                            <tr><td>Description</td><td>Added term georeferencedDate.</td></tr>
+                            <tr><td>Date</td><td>2011-10-16</td></tr>
+                    </tbody>
+                </table>
+
+                <a id="Decision-2011-10-16_10" class="anchor"></a>
+                <table class="table table-bordered table-condensed">
+                    <colgroup><col><col></colgroup>
+                    <tbody>
+                        <tr><td colspan="2">Decision-2011-10-16_10</td></tr>
+                            <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2011-10-16_10">http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2011-10-16_10</a></td></tr>
+                            <tr><td>Description</td><td>Added term identificationVerificationStatus.</td></tr>
+                            <tr><td>Date</td><td>2011-10-16</td></tr>
+                    </tbody>
+                </table>
+
+                <a id="Decision-2013-10-09_11" class="anchor"></a>
+                <table class="table table-bordered table-condensed">
+                    <colgroup><col><col></colgroup>
+                    <tbody>
+                        <tr><td colspan="2">Decision-2013-10-09_11</td></tr>
+                            <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2013-10-09_11">http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2013-10-09_11</a></td></tr>
+                            <tr><td>Description</td><td>Added term MaterialSample.</td></tr>
+                            <tr><td>Date</td><td>2013-10-09</td></tr>
+                    </tbody>
+                </table>
+
+                <a id="Decision-2013-10-09_12" class="anchor"></a>
+                <table class="table table-bordered table-condensed">
+                    <colgroup><col><col></colgroup>
+                    <tbody>
+                        <tr><td colspan="2">Decision-2013-10-09_12</td></tr>
+                            <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2013-10-09_12">http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2013-10-09_12</a></td></tr>
+                            <tr><td>Description</td><td>Added Darwin Core type vocabulary term MaterialSample.</td></tr>
+                            <tr><td>Date</td><td>2013-10-09</td></tr>
+                    </tbody>
+                </table>
+
+                <a id="Decision-2013-10-09_13" class="anchor"></a>
+                <table class="table table-bordered table-condensed">
+                    <colgroup><col><col></colgroup>
+                    <tbody>
+                        <tr><td colspan="2">Decision-2013-10-09_13</td></tr>
+                            <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2013-10-09_13">http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2013-10-09_13</a></td></tr>
+                            <tr><td>Description</td><td>Added term materialSampleID.</td></tr>
+                            <tr><td>Date</td><td>2013-10-09</td></tr>
+                    </tbody>
+                </table>
+
+                <a id="Decision-2014-10-26_14" class="anchor"></a>
+                <table class="table table-bordered table-condensed">
+                    <colgroup><col><col></colgroup>
+                    <tbody>
+                        <tr><td colspan="2">Decision-2014-10-26_14</td></tr>
+                            <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2014-10-26_14">http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2014-10-26_14</a></td></tr>
+                            <tr><td>Description</td><td>Added class term Organism with associated properties organismID, organismName, organismScope, organismRemarks, and associatedOrganisms. Associated terms previousIdentifications and associatedOccurrences with the new Organism class. Removed the individualID term.</td></tr>
+                            <tr><td>Date</td><td>2014-10-26</td></tr>
+                    </tbody>
+                </table>
+
+                <a id="Decision-2014-10-26_15" class="anchor"></a>
+                <table class="table table-bordered table-condensed">
+                    <colgroup><col><col></colgroup>
+                    <tbody>
+                        <tr><td colspan="2">Decision-2014-10-26_15</td></tr>
+                            <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2014-10-26_15">http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2014-10-26_15</a></td></tr>
+                            <tr><td>Description</td><td>Deprecated the Darwin Core Type Vocabulary (http://rs.tdwg.org/dwc/dwctype) in favor of the corresponding terms in the dwc namespace (http://rs.tdwg.org/dwc/terms). Added terms PreservedSpecimen, LivingSpecimen, FossilSpecimen, MachineObservation, and HumanObservation to the Darwin Core namespace (http://rs.tdwg.org/dwc/terms).</td></tr>
+                            <tr><td>Date</td><td>2014-10-26</td></tr>
+                    </tbody>
+                </table>
+
+                <a id="Decision-2014-10-30_16" class="anchor"></a>
+                <table class="table table-bordered table-condensed">
+                    <colgroup><col><col></colgroup>
+                    <tbody>
+                        <tr><td colspan="2">Decision-2014-10-30_16</td></tr>
+                            <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2014-10-30_16">http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2014-10-30_16</a></td></tr>
+                            <tr><td>Description</td><td>Added comments recommending list value separation with ' | ' for terms that can be constructed from concatenated lists. Added comment recommending that dynamicProperties be populated with JSON.</td></tr>
+                            <tr><td>Date</td><td>2014-10-30</td></tr>
+                    </tbody>
+                </table>
+
+                <a id="Decision-2014-11-06_17" class="anchor"></a>
+                <table class="table table-bordered table-condensed">
+                    <colgroup><col><col></colgroup>
+                    <tbody>
+                        <tr><td colspan="2">Decision-2014-11-06_17</td></tr>
+                            <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2014-11-06_17">http://rs.tdwg.org/dwc/terms/decisions.html#Decision-2014-11-06_17</a></td></tr>
+                            <tr><td>Description</td><td>Deprecated the Dublin Core rights term in favor of the Dublin Core license term, which is how rights was being promoted since it was first recommended for use in Darwin Core..</td></tr>
+                            <tr><td>Date</td><td>2014-11-06</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png"/></a></p>
+                    </div>
+                    <div class="col-xs-8">
+                        <ul class="list-inline pull-right">
+                            <li>Page last modified on 2015-01-13</li>
+                            <li><a href="https://github.com/tdwg/dwc/blob/gh-pages/terms/decisions.html">Edit on GitHub</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+      
+        <!-- Scripts -->
+        <script type="text/javascript" src="../assets/jquery.min.js"></script>
+        <script type="text/javascript" src="../assets/bootstrap.min.js"></script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-386033-4', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </body>
+</html>
+>>>>>>> 3f4250f44d233b1ab4b22dc0864b9b2ff4d7949f
