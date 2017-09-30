@@ -21,7 +21,7 @@ REC_LEVEL=DWC.term("Record-level")
 
 
 def buildHtml(groups):    
-    print """building html files"""
+    print("""building html files""")
     data={}
     data["groups"]=groups
     html = Template(file="terms.tmpl", searchList=[data])
@@ -30,19 +30,19 @@ def buildHtml(groups):
     recommended.close()    
 
 def buildDownloads(groups):
-    print """building dwc_terms.csv"""
+    print("""building dwc_terms.csv""")
     with open('../resources/dwc_terms.csv', 'w') as csvf:
         writer=csv.writer(csvf, delimiter=',', quotechar='"', quoting=csv.QUOTE_ALL)
         writer.writerow(['TermName', 'URI', "Label_en", "Group", "Definition", "Comments"])
         for g in groups:
             for t in g["terms"]:
                 writer.writerow([t["name"], t["uri"], utf8(t["label"]), t["class"], utf8(t["definition"]), utf8(t["comment"])])
-    print """building simple_dwc_terms_list.csv"""
+    print("""building simple_dwc_terms_list.csv""")
     with codecs.open('../resources/simple_dwc_terms_list.csv', 'w', 'utf-8') as f:
         for g in groups:
             for t in g["terms"]:
                 f.write(t["name"] + "\n")
-    print """building simple_dwc.properties"""
+    print("""building simple_dwc.properties""")
     with codecs.open('../resources/simple_dwc.properties', 'w', 'utf-8') as f:
         for g in groups:
             for t in g["terms"]:
@@ -52,7 +52,7 @@ def buildDownloads(groups):
                 f.write("%s.label=%s\n" % (term, n2e(t["label"])))
                 f.write("%s.definition=%s\n" % (term, n2e(t["definition"])))
                 f.write("%s.comment=%s\n" % (term, n2e(t["comment"])))
-    print """building simple_dwc_terms_header.csv"""
+    print("""building simple_dwc_terms_header.csv""")
     with codecs.open('../resources/simple_dwc_terms_header.csv', 'w', 'utf-8') as f:
         started=False
         for g in groups:
@@ -62,7 +62,7 @@ def buildDownloads(groups):
                 f.write('"'+t["name"]+'"')
                 started=True
         f.write("\n")
-    print """building simple_dwc_pgsql.sql"""
+    print("""building simple_dwc_pgsql.sql""")
     with open('term_type.yaml', 'r') as f:
         types = yaml.load(f)
     with codecs.open('../resources/simple_dwc_pgsql.sql', 'w', 'utf-8') as f:
@@ -153,11 +153,11 @@ def verifyCompleteness(graph, groups):
             terms[str(g["uri"])]=1
         for t in g["terms"]:
             terms[str(t["uri"])]=1
-    print """%s terms defined""" % len(terms)
+    print("""%s terms defined""" % len(terms))
     for s in graph.subjects():
         if s not in (DWC.accordingTo, DWC.term("")) and str(s) not in terms:
             raise AssertionError("Term missing from terms_order.yaml: "+s)        
-    print """All terms exist in both the graph and yaml"""
+    print("""All terms exist in both the graph and yaml""")
 
 
 
