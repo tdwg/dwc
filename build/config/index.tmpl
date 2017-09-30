@@ -24,8 +24,6 @@
                 visibility: hidden;
             }
 
-            .group-terms {
-                font-size: 1.1rem;
             .table .label {
                 width: 7rem; /* To align all labels */
             }
@@ -62,7 +60,7 @@
                         <h2>$group.name</h2>
                         <div class="my-4 group-terms">
                             #for $term in $group.terms
-                            <a class="badge badge-pill badge-light" href="#$term.name">$term.name</a>
+                            <a class="btn btn-sm btn-outline-dark m-1" href="#$term.name">$term.name</a>
                             #end for
                         </div>
 
