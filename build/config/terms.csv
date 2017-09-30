@@ -199,12 +199,7 @@ http://rs.tdwg.org/dwc/terms/relationshipOfResource,"Examples: ""duplicate of"",
 http://rs.tdwg.org/dwc/terms/relationshipAccordingTo,"Example: ""Julie Woodruff""",http://rs.tdwg.org/dwc/terms/ResourceRelationship,not in ABCD
 http://rs.tdwg.org/dwc/terms/relationshipEstablishedDate,"Examples: ""1963-03-08T14:07-0600"" is 8 Mar 1963 2:07pm in the time zone six hours earlier than UTC, ""2009-02-20T08:40Z"" is 20 Feb 2009 8:40am UTC, ""1809-02-12"" is 12 Feb 1809, ""1906-06"" is Jun 1906, ""1971"" is just that year, ""2007-03-01T13:00:00Z/2008-05-11T15:30:00Z"" is the interval between 1 Mar 2007 1pm UTC and 11 May 2008 3:30pm UTC, ""2007-11-13/15"" is the interval between 13 Nov 2007 and 15 Nov 2007.",http://rs.tdwg.org/dwc/terms/ResourceRelationship,not in ABCD
 http://rs.tdwg.org/dwc/terms/relationshipRemarks,"Examples: ""mother and offspring collected from the same nest"", ""pollinator captured in the act""",http://rs.tdwg.org/dwc/terms/ResourceRelationship,DataSets/DataSet/Units/Unit/Associations/UnitAssociation/Comments
-http://rs.tdwg.org/dwc/iri/inDescribedPlace,"A ""convenience property"" that replaces Darwin Core literal-value terms related to locations. See Section 2.7.5 of the Darwin Core RDF Guide for details.",http://rs.tdwg.org/dwc/terms/attributes/UseWithIri,not in ABCD
-http://rs.tdwg.org/dwc/iri/identifiedBy,,http://rs.tdwg.org/dwc/terms/attributes/UseWithIri,not in ABCD
-http://rs.tdwg.org/dwc/iri/recordedBy,,http://rs.tdwg.org/dwc/terms/attributes/UseWithIri,not in ABCD
-http://rs.tdwg.org/dwc/iri/toTaxon,"A ""convenience property"" that replaces Darwin Core literal-value terms related to taxonomic entities. See Section 2.7.4 of the Darwin Core RDF Guide for details.",http://rs.tdwg.org/dwc/terms/attributes/UseWithIri,not in ABCD
-http://rs.tdwg.org/dwc/iri/inCollection,"A ""convenience property"" that replaces literal-value terms related to collections and institutions. See Section 2.7.3 of the Darwin Core RDF Guide for details.",http://rs.tdwg.org/dwc/terms/attributes/UseWithIri,not in ABCD
-http://rs.tdwg.org/dwc/iri/georeferencedBy,,http://rs.tdwg.org/dwc/terms/attributes/UseWithIri,not in ABCD
+http://rs.tdwg.org/dwc/terms/attributes/UseWithIri,A utility class to organize the dwciri: terms.,,not in ABCD
 http://rs.tdwg.org/dwc/iri/behavior,,http://rs.tdwg.org/dwc/terms/attributes/UseWithIri,not in ABCD
 http://rs.tdwg.org/dwc/iri/dataGeneralizations,,http://rs.tdwg.org/dwc/terms/attributes/UseWithIri,not in ABCD
 http://rs.tdwg.org/dwc/iri/disposition,,http://rs.tdwg.org/dwc/terms/attributes/UseWithIri,not in ABCD
@@ -216,13 +211,17 @@ http://rs.tdwg.org/dwc/iri/footprintSRS,,http://rs.tdwg.org/dwc/terms/attributes
 http://rs.tdwg.org/dwc/iri/footprintWKT,,http://rs.tdwg.org/dwc/terms/attributes/UseWithIri,not in ABCD
 http://rs.tdwg.org/dwc/iri/fromLithostratigraphicUnit,"A ""convenience property"" that replaces Darwin Core literal-value terms related to geological context. See Section 2.7.7 of the Darwin Core RDF Guide for details.",http://rs.tdwg.org/dwc/terms/attributes/UseWithIri,not in ABCD
 http://rs.tdwg.org/dwc/iri/geodeticDatum,,http://rs.tdwg.org/dwc/terms/attributes/UseWithIri,not in ABCD
+http://rs.tdwg.org/dwc/iri/georeferencedBy,,http://rs.tdwg.org/dwc/terms/attributes/UseWithIri,not in ABCD
 http://rs.tdwg.org/dwc/iri/georeferenceProtocol,,http://rs.tdwg.org/dwc/terms/attributes/UseWithIri,not in ABCD
 http://rs.tdwg.org/dwc/iri/georeferenceSources,,http://rs.tdwg.org/dwc/terms/attributes/UseWithIri,not in ABCD
 http://rs.tdwg.org/dwc/iri/georeferenceVerificationStatus,,http://rs.tdwg.org/dwc/terms/attributes/UseWithIri,not in ABCD
 http://rs.tdwg.org/dwc/iri/habitat,,http://rs.tdwg.org/dwc/terms/attributes/UseWithIri,not in ABCD
 http://rs.tdwg.org/dwc/iri/identificationQualifier,,http://rs.tdwg.org/dwc/terms/attributes/UseWithIri,not in ABCD
 http://rs.tdwg.org/dwc/iri/identificationVerificationStatus,,http://rs.tdwg.org/dwc/terms/attributes/UseWithIri,not in ABCD
+http://rs.tdwg.org/dwc/iri/identifiedBy,,http://rs.tdwg.org/dwc/terms/attributes/UseWithIri,not in ABCD
+http://rs.tdwg.org/dwc/iri/inCollection,"A ""convenience property"" that replaces literal-value terms related to collections and institutions. See Section 2.7.3 of the Darwin Core RDF Guide for details.",http://rs.tdwg.org/dwc/terms/attributes/UseWithIri,not in ABCD
 http://rs.tdwg.org/dwc/iri/inDataset,A string literal name of the dataset can be provided using the term dwc:datasetName. See the Darwin Core RDF Guide for details.,http://rs.tdwg.org/dwc/terms/attributes/UseWithIri,not in ABCD
+http://rs.tdwg.org/dwc/iri/inDescribedPlace,"A ""convenience property"" that replaces Darwin Core literal-value terms related to locations. See Section 2.7.5 of the Darwin Core RDF Guide for details.",http://rs.tdwg.org/dwc/terms/attributes/UseWithIri,not in ABCD
 http://rs.tdwg.org/dwc/iri/informationWithheld,,http://rs.tdwg.org/dwc/terms/attributes/UseWithIri,not in ABCD
 http://rs.tdwg.org/dwc/iri/latestGeochronologicalEra,"A ""convenience property"" that replaces Darwin Core literal-value terms related to geological context. See Section 2.7.6 of the Darwin Core RDF Guide for details.",http://rs.tdwg.org/dwc/terms/attributes/UseWithIri,not in ABCD
 http://rs.tdwg.org/dwc/iri/lifeStage,,http://rs.tdwg.org/dwc/terms/attributes/UseWithIri,not in ABCD
@@ -234,11 +233,13 @@ http://rs.tdwg.org/dwc/iri/measurementUnit,,http://rs.tdwg.org/dwc/terms/attribu
 http://rs.tdwg.org/dwc/iri/occurrenceStatus,,http://rs.tdwg.org/dwc/terms/attributes/UseWithIri,not in ABCD
 http://rs.tdwg.org/dwc/iri/organismQuantityType,An organismQuantityType must have a corresponding organismQuantity.,http://rs.tdwg.org/dwc/terms/attributes/UseWithIri,not in ABCD
 http://rs.tdwg.org/dwc/iri/preparations,,http://rs.tdwg.org/dwc/terms/attributes/UseWithIri,not in ABCD
+http://rs.tdwg.org/dwc/iri/recordedBy,,http://rs.tdwg.org/dwc/terms/attributes/UseWithIri,not in ABCD
 http://rs.tdwg.org/dwc/iri/recordNumber,The subject is an occurrence and and the object is a (possibly IRI-identified) resource that is the field notes.,http://rs.tdwg.org/dwc/terms/attributes/UseWithIri,not in ABCD
 http://rs.tdwg.org/dwc/iri/reproductiveCondition,,http://rs.tdwg.org/dwc/terms/attributes/UseWithIri,not in ABCD
 http://rs.tdwg.org/dwc/iri/sampleSizeUnit,"A sampleSizeUnit must have a corresponding sampleSizeValue. Recommended best practice is to use a controlled vocabulary such as the Ontology of Units of Measure http://www.wurvoc.org/vocabularies/om-1.8/ of SI units, derived units, or other non-SI units accepted for use within the SI (e.g., minute, hour, day, litre).",http://rs.tdwg.org/dwc/terms/attributes/UseWithIri,not in ABCD
 http://rs.tdwg.org/dwc/iri/samplingProtocol,,http://rs.tdwg.org/dwc/terms/attributes/UseWithIri,not in ABCD
 http://rs.tdwg.org/dwc/iri/sex,,http://rs.tdwg.org/dwc/terms/attributes/UseWithIri,not in ABCD
+http://rs.tdwg.org/dwc/iri/toTaxon,"A ""convenience property"" that replaces Darwin Core literal-value terms related to taxonomic entities. See Section 2.7.4 of the Darwin Core RDF Guide for details.",http://rs.tdwg.org/dwc/terms/attributes/UseWithIri,not in ABCD
 http://rs.tdwg.org/dwc/iri/typeStatus,,http://rs.tdwg.org/dwc/terms/attributes/UseWithIri,not in ABCD
 http://rs.tdwg.org/dwc/iri/verbatimCoordinateSystem,,http://rs.tdwg.org/dwc/terms/attributes/UseWithIri,not in ABCD
 http://rs.tdwg.org/dwc/iri/verbatimSRS,,http://rs.tdwg.org/dwc/terms/attributes/UseWithIri,not in ABCD
