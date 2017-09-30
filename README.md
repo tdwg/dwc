@@ -42,7 +42,7 @@ The repository structure is described below. Files/directories indicated with `G
 
 ## License
 
-Darwin Core (c) by the Darwin Core Task Group, Biodiversity Informatics Standards (TDWG). Darwin Core is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/). A copy of the license is provided in [LICENSE](LICENSE).
+[Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/)
 
 ### How to cite Darwin Core
 
