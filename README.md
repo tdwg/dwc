@@ -44,18 +44,14 @@ The repository structure is described below. Files/directories indicated with `G
 
 [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/)
 
-### How to cite Darwin Core
+## Recommended citation
 
-For scholarly citations, consider reading and citing the seminal peer-reviewed article on Darwin Core:
+For Darwin Core in general, consider the peer-reviewed article on Darwin Core:
 
-```
-Wieczorek J, Bloom D, Guralnick R, Blum S, Döring M, et al. (2012) Darwin Core: An Evolving Community-
-Developed Biodiversity Data Standard. PLoS ONE 7(1): e29715. doi:10.1371/journal.pone.0029715
-```
+> Wieczorek J, Bloom D, Guralnick R, Blum S, Döring M, et al. (2012) Darwin Core: An Evolving Community-Developed Biodiversity Data Standard. PLoS ONE 7(1): e29715. https://doi.org/10.1371/journal.pone.0029715
 
-When specifically citing the Darwin Core Standard documentation, use the following format (substitute the parenthetical date accessed with today's date):
+For this repository:
 
-```
-Darwin Core Task Group, Biodiversity Information Standards (TDWG). 2009. Darwin Core. 
-http://rs.tdwg.org/dwc/ (accessed on 2015-01-12).
-```
+> Darwin Core maintenance group, Biodiversity Information Standards (TDWG) (2014). Darwin Core. Zenodo. https://doi.org/10.5281/zenodo.592792
+
+The citation above represents all versions of the repository. Specific [versions/releases](https://github.com/tdwg/dwc/releases) from 2011 onwards are also deposited on Zenodo.
