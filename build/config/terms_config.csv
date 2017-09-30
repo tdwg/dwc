@@ -49,7 +49,7 @@ Associated Organisms,http://rs.tdwg.org/dwc/terms/associatedOrganisms,"The recom
 Previous Identifications,http://rs.tdwg.org/dwc/terms/previousIdentifications,"The recommended best practice is to separate the values with a vertical bar (' | '). Examples: ""Chalepidae"", ""Pinus abies"", ""Anthus sp., field ID by G. Iglesias | Anthus correndera, expert ID by C. Cicero 2009-02-12 based on morphology"".",http://rs.tdwg.org/dwc/terms/Organism,DataSets/DataSet/Units/Unit/Identifications/Identification with PreferredFlag = false
 Organism Remarks,http://rs.tdwg.org/dwc/terms/organismRemarks,"Example: ""One of a litter of six.""",http://rs.tdwg.org/dwc/terms/Organism,not in ABCD
 Material Sample,http://rs.tdwg.org/dwc/terms/MaterialSample,Examples: A whole organism preserved in a collection. A part of an organism isolated for some purpose. A soil sample. A marine microbial sample.,,DataSets/DataSet/Units/Unit
-Material Sample ID,http://rs.tdwg.org/dwc/terms/MaterialSampleID,,http://rs.tdwg.org/dwc/terms/MaterialSample,not in ABCD
+Material Sample ID,http://rs.tdwg.org/dwc/terms/materialSampleID,,http://rs.tdwg.org/dwc/terms/MaterialSample,not in ABCD
 Living Specimen,http://rs.tdwg.org/dwc/terms/LivingSpecimen,,,RecordBasisEnum/LivingSpecimen
 Preserved Specimen,http://rs.tdwg.org/dwc/terms/PreservedSpecimen,,,RecordBasisEnum/PreservedSpecimen
 Fossil Specimen,http://rs.tdwg.org/dwc/terms/FossilSpecimen,,,RecordBasisEnum/FossileSpecimen
@@ -74,7 +74,7 @@ Sample Size Unit,http://rs.tdwg.org/dwc/terms/sampleSizeUnit,"A sampleSizeUnit m
 Sampling Effort,http://rs.tdwg.org/dwc/terms/samplingEffort,"Examples: ""40 trap-nights"", ""10 observer-hours; 10 km by foot; 30 km by car""",http://rs.tdwg.org/dwc/terms/Event,not in ABCD
 Field Notes,http://rs.tdwg.org/dwc/terms/fieldNotes,"Example: ""notes available in Grinnell-Miller Library""",http://rs.tdwg.org/dwc/terms/Event,DataSets/DataSet/Units/Unit/FieldNotes
 Event Remarks,http://rs.tdwg.org/dwc/terms/eventRemarks,"Example: ""after the recent rains the river is nearly at flood stage""",http://rs.tdwg.org/dwc/terms/Event,DataSets/DataSet/Units/Unit/Gathering/Notes
-Location,http://purl.org/dc/terms/location,,http://purl.org/dc/terms/,not in ABCD
+Location,http://purl.org/dc/terms/Location,,http://purl.org/dc/terms/,not in ABCD
 Location ID,http://rs.tdwg.org/dwc/terms/locationID,,http://purl.org/dc/terms/Location,not in ABCD
 Higher Geography ID,http://rs.tdwg.org/dwc/terms/higherGeographyID,"Example: ""TGN: 1002002"" for Prov. Tierra del Fuego, Argentina",http://purl.org/dc/terms/Location,not in ABCD
 Higher Geography,http://rs.tdwg.org/dwc/terms/higherGeography,"The recommended best practice is to separate the values with a vertical bar (' | '), with terms in order from least specific to most specific. Examples: ""North Atlantic Ocean"", ""South America | Argentina | Patagonia | Parque Nacional Nahuel Huapi | Neuquén | Los Lagos"" with accompanying values ""South America"" in Continent, ""Argentina"" in Country, ""Neuquén"" in StateProvince, and ""Los Lagos"" in County.",http://purl.org/dc/terms/Location,{DataSets/DataSet/Units/Unit/Gathering/LocalityText or DataSets/DataSet/Units/Unit/Gathering/NamedAreas/NamedArea/AreaName}
