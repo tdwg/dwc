@@ -115,7 +115,7 @@ class DwcDigester(object):
         term_data["label"] = vs_term['label']
         term_data["class"] = cf_term['organized_in']
         term_data["definition"] = vs_term['definition']
-        term_data["description"] = cf_term['dcterms_description']
+        term_data["comments"] = cf_term['comments']
         term_data["rdf_type"] = vs_term['rdf_type']
         return term_data
 
