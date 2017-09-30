@@ -2,8 +2,21 @@
 
 Darwin Core is a standard maintained by the Darwin Core maintenance group. It includes a glossary of terms (in other contexts these might be called properties, elements, fields, columns, attributes, or concepts) intended to **facilitate the sharing of information about biological diversity** by providing identifiers, labels, and definitions. Darwin Core is primarily based on taxa, their occurrence in nature as documented by observations, specimens, samples, and related information.
 
+## Getting started
 
+[Darwin Core quick reference guide](http://rs.tdwg.org/dwc/terms/index.html)
 
+Documents:
+
+* [Recommended terms](dist/recommended_terms.csv): a CSV file with the current set of Darwin Core terms
+* [Normative document](vocabulary/term_versions.csv): a CSV file with the full version history of Darwin Core terms
+* [Usage guides](guides/): Guides on how to use Darwin Core as text, rdf, xml
+* [Distribution files](dist/): Convenient files to start using Darwin Core
+
+Community:
+
+* [How to contribute](.github/CONTRIBUTING.md): a guide on how to contribute to Darwin Core
+* [Darwin Core Q&A](https://github.com/tdwg/dwc-qa): an open forum on the use of Darwin Core
 
 ## Repo structure
 
