@@ -146,7 +146,7 @@ class DwcDigester(object):
         return template_data
 
     @staticmethod
-    def create_html(template_data, html_template="./config/index.tmpl", html_output="../dist/index.html"):
+    def create_html(template_data, html_template="./config/index.tmpl", html_output="../guides/index.html"):
         """build html with the processed term info"""
 
         data={}
