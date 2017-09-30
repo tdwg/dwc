@@ -54,8 +54,6 @@ http://rs.tdwg.org/dwc/terms/LivingSpecimen,,,RecordBasisEnum/LivingSpecimen
 http://rs.tdwg.org/dwc/terms/PreservedSpecimen,,,RecordBasisEnum/PreservedSpecimen
 http://rs.tdwg.org/dwc/terms/FossilSpecimen,,,RecordBasisEnum/FossileSpecimen
 http://rs.tdwg.org/dwc/terms/Event,Examples: A specimen collection process. A machine observation.,,DataSets/DataSet/Units/Unit/Gathering
-http://rs.tdwg.org/dwc/terms/HumanObservation,,,RecordBasisEnum/HumanObservation
-http://rs.tdwg.org/dwc/terms/MachineObservation,,,RecordBasisEnum/MachineObservation
 http://rs.tdwg.org/dwc/terms/eventID,,http://rs.tdwg.org/dwc/terms/Event,DataSets/DataSet/Units/Unit/Gathering/Code
 http://rs.tdwg.org/dwc/terms/parentEventID,"May be a globally unique identifier or an identifier specific to the data set. Example: ""A1"" as parentEventID to identify the main Whittaker Plot in nested samples, each with its own eventID (e.g., ""A1:1"", ""A1:2"").",http://rs.tdwg.org/dwc/terms/Event,not in ABCD
 http://rs.tdwg.org/dwc/terms/fieldNumber,"Example: ""RV Sol 87-03-08""",http://rs.tdwg.org/dwc/terms/Event,DataSets/DataSet/Units/Unit/Gathering/Code
@@ -74,6 +72,8 @@ http://rs.tdwg.org/dwc/terms/sampleSizeUnit,"A sampleSizeUnit must have a corres
 http://rs.tdwg.org/dwc/terms/samplingEffort,"Examples: ""40 trap-nights"", ""10 observer-hours; 10 km by foot; 30 km by car""",http://rs.tdwg.org/dwc/terms/Event,not in ABCD
 http://rs.tdwg.org/dwc/terms/fieldNotes,"Example: ""notes available in Grinnell-Miller Library""",http://rs.tdwg.org/dwc/terms/Event,DataSets/DataSet/Units/Unit/FieldNotes
 http://rs.tdwg.org/dwc/terms/eventRemarks,"Example: ""after the recent rains the river is nearly at flood stage""",http://rs.tdwg.org/dwc/terms/Event,DataSets/DataSet/Units/Unit/Gathering/Notes
+http://rs.tdwg.org/dwc/terms/HumanObservation,,,RecordBasisEnum/HumanObservation
+http://rs.tdwg.org/dwc/terms/MachineObservation,,,RecordBasisEnum/MachineObservation
 http://purl.org/dc/terms/Location,,http://purl.org/dc/terms/,not in ABCD
 http://rs.tdwg.org/dwc/terms/locationID,,http://purl.org/dc/terms/Location,not in ABCD
 http://rs.tdwg.org/dwc/terms/higherGeographyID,"Example: ""TGN: 1002002"" for Prov. Tierra del Fuego, Argentina",http://purl.org/dc/terms/Location,not in ABCD
