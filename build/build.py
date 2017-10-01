@@ -162,7 +162,7 @@ class DwcDigester(object):
         term_data["comments"] = cf_term['comments']
         term_data["rdf_type"] = vs_term['rdf_type']
         namespace_url, _ = self.split_iri(term_iri)
-        term_data["namespace_name"] = self.resolve_namespace_abbrev(namespace_url)
+        term_data["namespace"] = self.resolve_namespace_abbrev(namespace_url)
         return term_data
 
     def process_terms(self):
@@ -180,7 +180,9 @@ class DwcDigester(object):
         class_group["comments"] = None
         class_group["rdf_type"] = None
         class_group["terms"] = []
-        for term in self.config(): # sequence of the config file used as order
+        class_group["namespace"] = "Record-level"
+
+        for term in self.configs(): # sequence of the config file used as order
             term_data = self.get_term_definition(term)
             # new class encountered
             if term_data["rdf_type"] == "http://www.w3.org/2000/01/rdf-schema#Class":
