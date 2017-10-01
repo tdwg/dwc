@@ -111,11 +111,11 @@ class DwcDigester(object):
 
         term_data = {}
         term_data["name"] = term_iri.split("/")[-1]
-        term_data["uri"] = term_iri
+        term_data["iri"] = term_iri
         term_data["label"] = vs_term['label']
         term_data["class"] = cf_term['organized_in']
         term_data["definition"] = vs_term['definition']
-        term_data["description"] = cf_term['dcterms_description']
+        term_data["comments"] = cf_term['comments']
         term_data["rdf_type"] = vs_term['rdf_type']
         return term_data
 
@@ -127,7 +127,12 @@ class DwcDigester(object):
         # sequence matters in config and it starts with Record-level
         class_group = {}
         class_group["name"] = "Record-level"
-        class_group["uri"] = None
+        class_group["iri"] = None
+        class_group["label"] = "Record-level"
+        class_group["class"] = None
+        class_group["definition"] = None
+        class_group["comments"] = None
+        class_group["rdf_type"] = None
         class_group["terms"] = []
         for term in self.config(): # sequence of the config file used as order
             term_data = self.get_term_definition(term)
@@ -161,7 +166,7 @@ class DwcDigester(object):
 def main():
     """Building up the html"""
 
-    config_terms_file = "./config/terms_config.csv"
+    config_terms_file = "./config/terms.csv"
     term_versions_file = "../vocabulary/term_versions.csv"
 
     print("Running build process using current term_versions and config_terms file...")
