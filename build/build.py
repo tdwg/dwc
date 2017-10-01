@@ -104,14 +104,12 @@ class DwcDigester(object):
         for term in self.configs():
             self.terms_config_data[term["term_iri"]] = term
 
+    @property
     def _version_terms(self):
         """get an overview of the terms in the term_versions file"""
         return set(self.term_versions_data.keys())
 
-    def _version_properties(self):
-        """get an overview of the terms in the term_versions file"""
-        return set(self.term_versions_data.keys())
-
+    @property
     def _config_terms(self):
         """get an overview of the terms in the terms config file"""
         return set(self.terms_config_data.keys())
@@ -126,8 +124,8 @@ class DwcDigester(object):
 
     def match_error_report(self):
         """check if the prime dwc file and the humaninfo file provide corresponding terms"""
-        overload_versionterms = self._version_terms() - self._config_terms()
-        overload_configterms = self._config_terms() - self._version_terms()
+        overload_versionterms = self._version_terms - self._config_terms
+        overload_configterms = self._config_terms - self._version_terms
         if len(overload_versionterms) > 0 or len(overload_configterms) > 0:
             vs_terms = ", ".join([term.split("/")[-1] for term in overload_versionterms])
             cf_terms = ", ".join([term.split("/")[-1] for term in overload_configterms])
