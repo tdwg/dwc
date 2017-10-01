@@ -5,12 +5,20 @@
 #
 
 import io
+import re
 import csv
 import sys
 import codecs
 
 from urllib import request
 from Cheetah.Template import Template
+
+NAMESPACES = {
+    'http://rs.tdwg.org/dwc/iri/' : 'dwciri',
+    'http://rs.tdwg.org/dwc/terms/' : 'dwc',
+    'http://purl.org/dc/elements/1.1/' : 'dc',
+    'http://purl.org/dc/terms/' : 'dcterms',
+    'http://rs.tdwg.org/dwc/terms/attributes/' : 'tdwgutility'}
 
 
 class ProvidedTermsError(Exception):
@@ -22,6 +30,9 @@ class RdfTypeError(Exception):
     """rdftype encountered that is not known by builder"""
     pass
 
+class DwcNamespaceError(Exception):
+    """Namespace link is not available in the currently provided links"""
+    pass
 
 class DwcBuildReader():
 
@@ -122,12 +133,27 @@ class DwcDigester(object):
             cf_terms = ", ".join([term.split("/")[-1] for term in overload_configterms])
             raise ProvidedTermsError("".join(["Terms only in term_versions.csv: ", vs_terms,
                                               ". Terms only in terms_config.csv: ", cf_terms]))
+    @staticmethod
+    def split_iri(term_iri):
+        """"""
+        prog = re.compile("(.*/)([^/]*$)")
+        namespace, term = prog.findall(term_iri)[0]
+        return namespace, term
 
-    def get_term_definition(self, term):
-        """Extract the required information to show on the webpage of a single term """
-        cf_term = term
-        vs_term = self._select_versions_term(term["term_iri"])
-        term_iri = term['term_iri']
+    @staticmethod
+    def resolve_namespace_abbrev(namespace):
+        """Using the NAMESPACE constant, get the namespace abbreviation"""
+        if namespace not in NAMESPACES.keys():
+            raise DwcNamespaceError("The namespace url is currently not supported in NAMESPACES")
+        return NAMESPACES[namespace]
+
+    def get_term_definition(self, config_term):
+        """Extract the required information to show on the webpage of a single term
+        requires configuration term
+        """
+        cf_term = config_term
+        vs_term = self._select_versions_term(cf_term["term_iri"])
+        term_iri = cf_term['term_iri']
 
         term_data = {}
         term_data["name"] = term_iri.split("/")[-1]
@@ -137,6 +163,8 @@ class DwcDigester(object):
         term_data["definition"] = vs_term['definition']
         term_data["comments"] = cf_term['comments']
         term_data["rdf_type"] = vs_term['rdf_type']
+        namespace_url, _ = self.split_iri(term_iri)
+        term_data["namespace_name"] = self.resolve_namespace_abbrev(namespace_url)
         return term_data
 
     def process_terms(self):
