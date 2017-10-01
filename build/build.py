@@ -7,6 +7,7 @@
 import io
 import csv
 import sys
+import codecs
 
 from urllib import request
 
@@ -78,6 +79,10 @@ class DwcDigester(object):
             self.terms_config_data[term["term_iri"]] = term
 
     def _version_terms(self):
+        """get an overview of the terms in the term_versions file"""
+        return set(self.term_versions_data.keys())
+
+    def _version_properties(self):
         """get an overview of the terms in the term_versions file"""
         return set(self.term_versions_data.keys())
 
@@ -162,6 +167,32 @@ class DwcDigester(object):
         index_page.write(str(html))
         index_page.close()
 
+    def simple_dwc_terms(self, template_data):
+        """onle extract those terms that are simple dwc"""
+        # TODO: based on additional column in config -> only simple-dwc
+        properties = []
+        for term in self.config():
+            term_data = self.get_term_definition(term)
+            if term_data["rdf_type"] == "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" and term["flag"] == "simple":
+                properties.append(term["name"])
+        return properties
+
+    @staticmethod
+    def create_dwc_list(template_data, file_output="../dist/dwc_list.csv"):
+        """build a list of dwc terms"""
+        # TODO: based on additional column in config -> only simple-dwc
+        with codecs.open(file_output, 'w', 'utf-8') as dwc_list_file:
+            for term in self.simple_dwc_terms(template_data):
+                    dwc_list_file.write(term["name"] + "\n")
+
+    @staticmethod
+    def create_dwc_header(template_data, file_output="../dist/dwc_header.csv"):
+        """build a header of dwc terms"""
+        # TODO: based on additional column in config -> only simple-dwc
+        with codecs.open(file_output, 'w', 'utf-8') as dwc_header_file:
+            properties = self.simple_dwc_terms(template_data)
+            dwc_header_file.write(",".join(properties))
+            dwc_header_file.write("\n")
 
 def main():
     """Building up the html"""
@@ -172,7 +203,11 @@ def main():
     print("Running build process using current term_versions and config_terms file...")
     my_dwc = DwcDigester(term_versions_file, config_terms_file)
     print("Building index html file...")
-    my_dwc.create_html(my_dwc.process_terms())
+    data = my_dwc.process_terms()
+    my_dwc.create_html(data)
+    print("Building simple dwc list and header...")
+    my_dwc.create_dwc_list(data)
+    my_dwc.create_dwc_header(data)
     print("...done!")
 
 
