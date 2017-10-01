@@ -118,15 +118,15 @@ class DwcDigester(object):
         return set(self.terms_config_data.keys())
 
     def _select_versions_term(self, term_iri):
-        """Select a specific term of the versions data, using term_iri match"""
+        """select a specific term of the versions data, using term_iri match"""
         return self.term_versions_data[term_iri]
 
     def _select_config_term(self, term_iri):
-        """Select a specific term of the config data, using term_iri match"""
+        """select a specific term of the config data, using term_iri match"""
         return self.terms_config_data[term_iri]
 
     def match_error_report(self):
-        """check if the prime dwc file and the humaninfo file provide corresponding terms"""
+        """check if the prime dwc file and the configurations file provide corresponding terms and inform user on the term differences in between both files"""
         overload_versionterms = self._version_terms - self._config_terms
         overload_configterms = self._config_terms - self._version_terms
         if len(overload_versionterms) > 0 or len(overload_configterms) > 0:
@@ -136,21 +136,25 @@ class DwcDigester(object):
                                               ". Terms only in terms_config.csv: ", cf_terms]))
     @staticmethod
     def split_iri(term_iri):
-        """"""
+        """split an iri field into the namespace url and the term itself"""
         prog = re.compile("(.*/)([^/]*$)")
         namespace, term = prog.findall(term_iri)[0]
         return namespace, term
 
     @staticmethod
     def resolve_namespace_abbrev(namespace):
-        """Using the NAMESPACE constant, get the namespace abbreviation"""
+        """Using the NAMESPACE constant, get the namespace abbreviation by providing the namespace link"""
         if namespace not in NAMESPACES.keys():
             raise DwcNamespaceError("The namespace url is currently not supported in NAMESPACES")
         return NAMESPACES[namespace]
 
-    def get_term_definition(self, config_term):
-        """Extract the required information to show on the webpage of a single term
-        requires configuration term
+    def get_term_definition(self, term_iri):
+        """Extract the required information from both tables to show on the webpage of a single term
+        by using the term_iri as the identifier
+
+        Notes
+        ------
+        Due to the current implementation, make sure to provide the same keys represented in the record-level specific version `process_terms` method (room for improvement)
         """
         cf_term = self._select_config_term(term_iri)
         vs_term = self._select_versions_term(term_iri)
@@ -168,11 +172,28 @@ class DwcDigester(object):
         return term_data
 
     def process_terms(self):
-        """parse the config terms towards the structure required for the HTML template"""
+        """parse the config terms (sequence matters!), collect all required data from both the normative versions file and the config file and return the template ready data.
 
+        Returns
+        -------
+        Data object that can be digested by the html-templatye file. Contains the term data formatted to create the indidivual outputs, each list element is a dictionary representing a class group. Hence, the data object is structured as follows:
+
+            [
+                {'name' : class_group_name_1, 'label': xxxx,...,
+                    'terms':
+                        [
+                            {'name' : term_1, 'label': xxxx,...},
+                            {'name' : term_2, 'label': xxxx,...},
+                            ...
+                        ]}
+                {'name' : class_group_name_2,...
+                ...},
+                ...
+            ]
+        """
         template_data = []
         in_class = "Record-level"
-        # sequence matters in config and it starts with Record-level
+        # sequence matters in config and it starts with Record-level which we populate here ad-hoc
         class_group = {}
         class_group["name"] = "Record-level"
         class_group["iri"] = None
@@ -200,30 +221,12 @@ class DwcDigester(object):
         template_data.append(class_group)
         return template_data
 
-    @staticmethod
-    def create_html(template_data, html_template="./config/index.tmpl",
+    def create_html(self, html_template="./config/index.tmpl",
                     html_output="../guides/index.html"):
         """build html with the processed term info, by filling in the tmpl-template
 
         Parameters
         -----------
-        template_data : list of dict
-            contains the term data formatted to create the indidivual outputs, each list element
-            is a dictionary representing a class group. Hence, the data object is structured as
-            follows
-            [
-                {'name' : class_group_name_1, 'label': xxxx,...,
-                    'terms':
-                        [
-                            {'name' : term_1, 'label': xxxx,...},
-                            {'name' : term_2, 'label': xxxx,...},
-                            ...
-                        ]}
-                {'name' : class_group_name_2,...
-                ...},
-                ...
-            ]
-
         html_template : str
             relative path and filename to the [Cheetah3](http://cheetahtemplate.org/) compatible
             template
@@ -240,8 +243,7 @@ class DwcDigester(object):
         index_page.close()
 
     def simple_dwc_terms(self):
-        """only extract those terms that are simple dwc,
-        defined as `simple` in the flags column of the config file of terms"""
+        """only extract those terms that are simple dwc, defined as `simple` in the flags column of the config file of terms"""
         properties = []
         for term in self.configs():
             term_data = self.get_term_definition(term['term_iri'])
@@ -251,13 +253,25 @@ class DwcDigester(object):
         return properties
 
     def create_dwc_list(self, file_output="../dist/simple_dwc_vertical.csv"):
-        """build a list of simple dwc terms"""
+        """build a list of simple dwc terms and write it to file
+
+        Parameters
+        -----------
+        file_output : str
+            relative path and filename to write the resulting list
+        """
         with codecs.open(file_output, 'w', 'utf-8') as dwc_list_file:
             for term in self.simple_dwc_terms():
                 dwc_list_file.write(term + "\n")
 
     def create_dwc_header(self, file_output="../dist/simple_dwc_horizontal.csv"):
-        """build a header of simple dwc terms"""
+        """build a header of simple dwc terms and write it to file
+
+        Parameters
+        -----------
+        file_output : str
+            relative path and filename to write the resulting list
+        """
         with codecs.open(file_output, 'w', 'utf-8') as dwc_header_file:
             properties = self.simple_dwc_terms()
             dwc_header_file.write(",".join(properties))
