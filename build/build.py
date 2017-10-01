@@ -10,16 +10,16 @@ import sys
 import codecs
 
 from urllib import request
-
 from Cheetah.Template import Template
 
 
 class ProvidedTermsError(Exception):
-    """Inconsistency in the available terms Error"""
+    """inconsistency in the available terms Error"""
     pass
 
+
 class RdfTypeError(Exception):
-    """Rdftype encountered that is not known by builder"""
+    """rdftype encountered that is not known by builder"""
     pass
 
 
@@ -43,6 +43,21 @@ class DwcBuildReader():
 class DwcDigester(object):
 
     def __init__(self, term_versions, terms_config):
+        """digest the normative document of Darwin Core and the configurations file to support automatic generation of derivatives
+
+        Parameters
+        -----------
+        term_versions : str
+            either a relative path and filename of the normative Dwc document or a URL link to the
+            raw Github version of the file
+        terms_config : str
+            either a relative path and filename of the configurations file or a URL link to the
+            raw Github version of the file
+
+        Notes
+        -----
+        Remark that the sequence of the configurations file entries is essential for the automatic generation of the individual documents (mainly the index.html)
+        """
         self.term_versions = term_versions
         self.terms_config = terms_config
 
@@ -55,7 +70,7 @@ class DwcDigester(object):
         self.match_error_report()
 
     def versions(self):
-        """iterator to provide the terms as represented in the term versions file"""
+        """iterator to provide the terms as represented in the normative term versions file"""
         with DwcBuildReader(self.term_versions) as versions:
             for vterm in csv.DictReader(io.TextIOWrapper(versions), delimiter=','):
                 if vterm["status"] == "recommended":
@@ -63,18 +78,18 @@ class DwcDigester(object):
 
     def config(self):
         """iterator to provide the terms as represented in the terms config file
-        (including the sequence)"""
+        (taking into account the sequence)"""
         with DwcBuildReader(self.terms_config) as configs:
             for cfterm in csv.DictReader(io.TextIOWrapper(configs), delimiter=','):
                 yield cfterm
 
     def _store_versions(self):
-        """collect all the versions data in a dictionary"""
+        """collect all the versions data in a dictionary as the term_versions_data attribute"""
         for term in self.versions():
             self.term_versions_data[term["term_iri"]] = term
 
     def _store_config(self):
-        """collect all the config data in a dictionary"""
+        """collect all the config data in a dictionary as the terms_config_data attribute"""
         for term in self.config():
             self.terms_config_data[term["term_iri"]] = term
 
@@ -156,9 +171,35 @@ class DwcDigester(object):
         return template_data
 
     @staticmethod
-    def create_html(template_data, html_template="./config/index.tmpl", 
+    def create_html(template_data, html_template="./config/index.tmpl",
                     html_output="../guides/index.html"):
-        """build html with the processed term info"""
+        """build html with the processed term info, by filling in the tmpl-template
+
+        Parameters
+        -----------
+        template_data : list of dict
+            contains the term data formatted to create the indidivual outputs, each list element
+            is a dictionary representing a class group. Hence, the data object is structured as
+            follows
+            [
+                {'name' : class_group_name_1, 'label': xxxx,...,
+                    'terms':
+                        [
+                            {'name' : term_1, 'label': xxxx,...},
+                            {'name' : term_2, 'label': xxxx,...},
+                            ...
+                        ]}
+                {'name' : class_group_name_2,...
+                ...},
+                ...
+            ]
+
+        html_template : str
+            relative path and filename to the [Cheetah3](http://cheetahtemplate.org/) compatible
+            template
+        html_output : str
+            relative path and filename to write the resulting index.html
+        """
 
         data={}
         data["groups"] = template_data
@@ -169,31 +210,33 @@ class DwcDigester(object):
         index_page.close()
 
     def simple_dwc_terms(self, template_data):
-        """onle extract those terms that are simple dwc"""
+        """onle extract those terms that are simple dwc,
+        defined as `simple` in the flags column of the config file of terms"""
         properties = []
         for term in self.config():
             term_data = self.get_term_definition(term)
-            if term_data["rdf_type"] == "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" and term["flags"] == "simple":
+            if (term_data["rdf_type"] == "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" and
+                term["flags"] == "simple"):
                 properties.append(term_data["name"])
         return properties
 
-    def create_dwc_list(self, template_data, 
+    def create_dwc_list(self, template_data,
                         file_output="../dist/simple_dwc_vertical.csv"):
-        """build a list of dwc terms"""
+        """build a list of simple dwc terms"""
         with codecs.open(file_output, 'w', 'utf-8') as dwc_list_file:
             for term in self.simple_dwc_terms(template_data):
                 dwc_list_file.write(term + "\n")
 
-    def create_dwc_header(self, template_data, 
+    def create_dwc_header(self, template_data,
                           file_output="../dist/simple_dwc_horizontal.csv"):
-        """build a header of dwc terms"""
+        """build a header of simple dwc terms"""
         with codecs.open(file_output, 'w', 'utf-8') as dwc_header_file:
             properties = self.simple_dwc_terms(template_data)
             dwc_header_file.write(",".join(properties))
             dwc_header_file.write("\n")
 
 def main():
-    """Building up the html"""
+    """Building up the quick reference html and derivatives"""
 
     config_terms_file = "./config/terms.csv"
     term_versions_file = "../vocabulary/term_versions.csv"
