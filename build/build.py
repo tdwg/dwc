@@ -80,6 +80,9 @@ class DwcDigester(object):
         # check for the ability to combine the data
         self.match_error_report()
 
+        # create the defined data-object for the different outputs
+        self.template_data = self.process_terms()
+
     def versions(self):
         """iterator providing the terms as represented in the normative term versions file"""
         with DwcBuildReader(self.term_versions) as versions:
@@ -229,37 +232,35 @@ class DwcDigester(object):
             relative path and filename to write the resulting index.html
         """
 
-        data={}
-        data["groups"] = template_data
+        data = {}
+        data["groups"] = self.template_data
         html = Template(file=html_template, searchList=[data])
 
         index_page = open(html_output, "w")
         index_page.write(str(html))
         index_page.close()
 
-    def simple_dwc_terms(self, template_data):
-        """onle extract those terms that are simple dwc,
+    def simple_dwc_terms(self):
+        """only extract those terms that are simple dwc,
         defined as `simple` in the flags column of the config file of terms"""
         properties = []
         for term in self.configs():
-            term_data = self.get_term_definition(term)
+            term_data = self.get_term_definition(term['term_iri'])
             if (term_data["rdf_type"] == "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" and
                 term["flags"] == "simple"):
                 properties.append(term_data["name"])
         return properties
 
-    def create_dwc_list(self, template_data,
-                        file_output="../dist/simple_dwc_vertical.csv"):
+    def create_dwc_list(self, file_output="../dist/simple_dwc_vertical.csv"):
         """build a list of simple dwc terms"""
         with codecs.open(file_output, 'w', 'utf-8') as dwc_list_file:
-            for term in self.simple_dwc_terms(template_data):
+            for term in self.simple_dwc_terms():
                 dwc_list_file.write(term + "\n")
 
-    def create_dwc_header(self, template_data,
-                          file_output="../dist/simple_dwc_horizontal.csv"):
+    def create_dwc_header(self, file_output="../dist/simple_dwc_horizontal.csv"):
         """build a header of simple dwc terms"""
         with codecs.open(file_output, 'w', 'utf-8') as dwc_header_file:
-            properties = self.simple_dwc_terms(template_data)
+            properties = self.simple_dwc_terms()
             dwc_header_file.write(",".join(properties))
             dwc_header_file.write("\n")
 
@@ -272,11 +273,10 @@ def main():
     print("Running build process using current term_versions and config_terms file...")
     my_dwc = DwcDigester(term_versions_file, config_terms_file)
     print("Building index html file...")
-    data = my_dwc.process_terms()
-    my_dwc.create_html(data)
+    my_dwc.create_html()
     print("Building simple dwc list and header...")
-    my_dwc.create_dwc_list(data)
-    my_dwc.create_dwc_header(data)
+    my_dwc.create_dwc_list()
+    my_dwc.create_dwc_header()
     print("...done!")
 
 
