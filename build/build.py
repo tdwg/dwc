@@ -152,12 +152,11 @@ class DwcDigester(object):
         """Extract the required information to show on the webpage of a single term
         requires configuration term
         """
-        cf_term = config_term
-        vs_term = self._select_versions_term(cf_term["term_iri"])
-        term_iri = cf_term['term_iri']
+        cf_term = self._select_config_term(term_iri)
+        vs_term = self._select_versions_term(term_iri)
 
         term_data = {}
-        term_data["name"] = term_iri.split("/")[-1]
+        _, term_data["name"] = self.split_iri(term_iri)
         term_data["iri"] = term_iri
         term_data["label"] = vs_term['label']
         term_data["class"] = cf_term['organized_in']
@@ -186,7 +185,7 @@ class DwcDigester(object):
         class_group["namespace"] = "Record-level"
 
         for term in self.configs(): # sequence of the config file used as order
-            term_data = self.get_term_definition(term)
+            term_data = self.get_term_definition(term['term_iri'])
             # new class encountered
             if term_data["rdf_type"] == "http://www.w3.org/2000/01/rdf-schema#Class":
                 # store previous section in template_data
