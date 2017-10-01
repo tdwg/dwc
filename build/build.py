@@ -178,7 +178,7 @@ class DwcDigester(object):
         return properties
 
     @staticmethod
-    def create_dwc_list(template_data, file_output="../dist/dwc_list.csv"):
+    def create_dwc_list(template_data, file_output="../dist/simple_dwc_vertical.csv"):
         """build a list of dwc terms"""
         # TODO: based on additional column in config -> only simple-dwc
         with codecs.open(file_output, 'w', 'utf-8') as dwc_list_file:
@@ -186,7 +186,7 @@ class DwcDigester(object):
                     dwc_list_file.write(term["name"] + "\n")
 
     @staticmethod
-    def create_dwc_header(template_data, file_output="../dist/dwc_header.csv"):
+    def create_dwc_header(template_data, file_output="../dist/simple_dwc_horizontal.csv"):
         """build a header of dwc terms"""
         # TODO: based on additional column in config -> only simple-dwc
         with codecs.open(file_output, 'w', 'utf-8') as dwc_header_file:
