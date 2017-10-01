@@ -156,7 +156,8 @@ class DwcDigester(object):
         return template_data
 
     @staticmethod
-    def create_html(template_data, html_template="./config/index.tmpl", html_output="../guides/index.html"):
+    def create_html(template_data, html_template="./config/index.tmpl", 
+                    html_output="../guides/index.html"):
         """build html with the processed term info"""
 
         data={}
@@ -169,26 +170,23 @@ class DwcDigester(object):
 
     def simple_dwc_terms(self, template_data):
         """onle extract those terms that are simple dwc"""
-        # TODO: based on additional column in config -> only simple-dwc
         properties = []
         for term in self.config():
             term_data = self.get_term_definition(term)
-            if term_data["rdf_type"] == "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" and term["flag"] == "simple":
-                properties.append(term["name"])
+            if term_data["rdf_type"] == "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" and term["flags"] == "simple":
+                properties.append(term_data["name"])
         return properties
 
-    @staticmethod
-    def create_dwc_list(template_data, file_output="../dist/simple_dwc_vertical.csv"):
+    def create_dwc_list(self, template_data, 
+                        file_output="../dist/simple_dwc_vertical.csv"):
         """build a list of dwc terms"""
-        # TODO: based on additional column in config -> only simple-dwc
         with codecs.open(file_output, 'w', 'utf-8') as dwc_list_file:
             for term in self.simple_dwc_terms(template_data):
-                    dwc_list_file.write(term["name"] + "\n")
+                dwc_list_file.write(term + "\n")
 
-    @staticmethod
-    def create_dwc_header(template_data, file_output="../dist/simple_dwc_horizontal.csv"):
+    def create_dwc_header(self, template_data, 
+                          file_output="../dist/simple_dwc_horizontal.csv"):
         """build a header of dwc terms"""
-        # TODO: based on additional column in config -> only simple-dwc
         with codecs.open(file_output, 'w', 'utf-8') as dwc_header_file:
             properties = self.simple_dwc_terms(template_data)
             dwc_header_file.write(",".join(properties))
