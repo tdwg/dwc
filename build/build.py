@@ -75,20 +75,20 @@ class DwcDigester(object):
         self.term_versions_data = {}
         self._store_versions()
         self.terms_config_data = {}
-        self._store_config()
+        self._store_configs()
 
         # check for the ability to combine the data
         self.match_error_report()
 
     def versions(self):
-        """iterator to provide the terms as represented in the normative term versions file"""
+        """iterator providing the terms as represented in the normative term versions file"""
         with DwcBuildReader(self.term_versions) as versions:
             for vterm in csv.DictReader(io.TextIOWrapper(versions), delimiter=','):
                 if vterm["status"] == "recommended":
                     yield vterm
 
-    def config(self):
-        """iterator to provide the terms as represented in the terms config file
+    def configs(self):
+        """iterator providing the terms as represented in the terms config file
         (taking into account the sequence)"""
         with DwcBuildReader(self.terms_config) as configs:
             for cfterm in csv.DictReader(io.TextIOWrapper(configs), delimiter=','):
@@ -99,9 +99,9 @@ class DwcDigester(object):
         for term in self.versions():
             self.term_versions_data[term["term_iri"]] = term
 
-    def _store_config(self):
+    def _store_configs(self):
         """collect all the config data in a dictionary as the terms_config_data attribute"""
-        for term in self.config():
+        for term in self.configs():
             self.terms_config_data[term["term_iri"]] = term
 
     def _version_terms(self):
@@ -241,7 +241,7 @@ class DwcDigester(object):
         """onle extract those terms that are simple dwc,
         defined as `simple` in the flags column of the config file of terms"""
         properties = []
-        for term in self.config():
+        for term in self.configs():
             term_data = self.get_term_definition(term)
             if (term_data["rdf_type"] == "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" and
                 term["flags"] == "simple"):
