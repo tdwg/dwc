@@ -22,6 +22,8 @@ catalogNumber
 recordNumber
 recordedBy
 individualCount
+organismQuantity
+organismQuantityType
 sex
 lifeStage
 reproductiveCondition
@@ -45,6 +47,7 @@ previousIdentifications
 organismRemarks
 materialSampleID
 eventID
+parentEventID
 fieldNumber
 eventDate
 eventTime
@@ -56,6 +59,8 @@ day
 verbatimEventDate
 habitat
 samplingProtocol
+sampleSizeValue
+sampleSizeUnit
 samplingEffort
 fieldNotes
 eventRemarks
@@ -162,19 +167,3 @@ nomenclaturalCode
 taxonomicStatus
 nomenclaturalStatus
 taxonRemarks
-resourceRelationshipID
-resourceID
-relatedResourceID
-relationshipOfResource
-relationshipAccordingTo
-relationshipEstablishedDate
-relationshipRemarks
-measurementID
-measurementType
-measurementValue
-measurementAccuracy
-measurementUnit
-measurementDeterminedBy
-measurementDeterminedDate
-measurementMethod
-measurementRemarks
