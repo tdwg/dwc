@@ -182,10 +182,8 @@ class DwcDigester(object):
         def _handle_matched(inputstring):
             """quick hack version of url handling on the current prime versions data"""
             url = inputstring.group()
-            if url.endswith("."): # not included in regex to notice the special 'end of . case'
-                url = url[:-1]
             return "<a href=\"{}\">{}</a>".format(url, url)
-        regx = "(http[s]?://[\w\d:#@%/;$()~_?\+-=\\\.&]*)(?<!\))"
+        regx = "(http[s]?://[\w\d:#@%/;$()~_?\+-=\\\.&]*)(?<![\)\.])"
         return re.sub(regx, _handle_matched, text_with_urls)
 
     def process_terms(self):
