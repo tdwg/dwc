@@ -174,15 +174,12 @@ class DwcDigester(object):
     @staticmethod
     def convert_link(text_with_urls):
         """takes all links in a text field and converts it to the html tagged version of the link
-
-        Notes
-        ------
-        The underlying regex is not a general URL matcher and ad-hoc made. Furthermore, it currently handles the end-dot of the description field outside the regex
         """
         def _handle_matched(inputstring):
             """quick hack version of url handling on the current prime versions data"""
             url = inputstring.group()
             return "<a href=\"{}\">{}</a>".format(url, url)
+            
         regx = "(http[s]?://[\w\d:#@%/;$()~_?\+-=\\\.&]*)(?<![\)\.])"
         return re.sub(regx, _handle_matched, text_with_urls)
 
