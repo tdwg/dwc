@@ -164,12 +164,24 @@ class DwcDigester(object):
         term_data["iri"] = term_iri
         term_data["label"] = vs_term['label']
         term_data["class"] = cf_term['organized_in']
-        term_data["definition"] = vs_term['definition']
-        term_data["comments"] = cf_term['comments']
+        term_data["definition"] = self.convert_link(vs_term['definition'])
+        term_data["comments"] = self.convert_link(cf_term['comments'])
         term_data["rdf_type"] = vs_term['rdf_type']
         namespace_url, _ = self.split_iri(term_iri)
         term_data["namespace"] = self.resolve_namespace_abbrev(namespace_url)
         return term_data
+
+    @staticmethod
+    def convert_link(text_with_urls):
+        """takes all links in a text field and converts it to the html tagged version of the link
+        """
+        def _handle_matched(inputstring):
+            """quick hack version of url handling on the current prime versions data"""
+            url = inputstring.group()
+            return "<a href=\"{}\">{}</a>".format(url, url)
+            
+        regx = "(http[s]?://[\w\d:#@%/;$()~_?\+-=\\\.&]*)(?<![\)\.])"
+        return re.sub(regx, _handle_matched, text_with_urls)
 
     def process_terms(self):
         """parse the config terms (sequence matters!), collect all required data from both the normative versions file and the config file and return the template ready data.
