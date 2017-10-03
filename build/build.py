@@ -165,11 +165,17 @@ class DwcDigester(object):
         term_data["label"] = vs_term['label']
         term_data["class"] = cf_term['organized_in']
         term_data["definition"] = self.convert_link(vs_term['definition'])
-        term_data["comments"] = self.convert_link(cf_term['comments'])
+        term_data["comments"] = self.convert_link(self.convert_code(cf_term['comments']))
         term_data["rdf_type"] = vs_term['rdf_type']
         namespace_url, _ = self.split_iri(term_iri)
         term_data["namespace"] = self.resolve_namespace_abbrev(namespace_url)
         return term_data
+
+    @staticmethod
+    def convert_code(text_with_backticks):
+        """takes all back-quoted sections in a text field and converts it to the html tagged version of code blocks <code>...</code>
+        """
+        return re.sub(r'`([^`]*)`', r'<code>\1</code>', text_with_backticks)
 
     @staticmethod
     def convert_link(text_with_urls):
@@ -179,7 +185,7 @@ class DwcDigester(object):
             """quick hack version of url handling on the current prime versions data"""
             url = inputstring.group()
             return "<a href=\"{}\">{}</a>".format(url, url)
-            
+
         regx = "(http[s]?://[\w\d:#@%/;$()~_?\+-=\\\.&]*)(?<![\)\.])"
         return re.sub(regx, _handle_matched, text_with_urls)
 
