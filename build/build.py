@@ -194,7 +194,7 @@ class DwcDigester(object):
 
         Returns
         -------
-        Data object that can be digested by the html-templatye file. Contains the term data formatted to create the indidivual outputs, each list element is a dictionary representing a class group. Hence, the data object is structured as follows:
+        Data object that can be digested by the html-template file. Contains the term data formatted to create the indidivual outputs, each list element is a dictionary representing a class group. Hence, the data object is structured as follows:
 
             [
                 {'name' : class_group_name_1, 'label': xxxx,...,
@@ -301,14 +301,14 @@ def main():
     config_terms_file = "./config/terms.csv"
     term_versions_file = "../standard/vocabularies/term_versions.csv"
 
-    print("Running build process using current term_versions and config_terms file...")
+    print("Running build process:")
     my_dwc = DwcDigester(term_versions_file, config_terms_file)
-    print("Building index html file...")
+    print("Building quick reference guide")
     my_dwc.create_html()
-    print("Building simple dwc list and header...")
+    print("Building simple DwC CSV files")
     my_dwc.create_dwc_list()
     my_dwc.create_dwc_header()
-    print("...done!")
+    print("Done!")
 
 
 if __name__ == "__main__":
