@@ -221,7 +221,7 @@ class DwcDigester(object):
         class_group["comments"] = None
         class_group["rdf_type"] = None
         class_group["terms"] = []
-        class_group["namespace"] = "Record-level"
+        class_group["namespace"] = None
 
         for term in self.configs(): # sequence of the config file used as order
             term_data = self.get_term_definition(term['term_iri'])
