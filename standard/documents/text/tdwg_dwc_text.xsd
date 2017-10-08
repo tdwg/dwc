@@ -69,7 +69,7 @@
 		<xs:complexContent>
 			<xs:extension base="arch:fileType">
 				<xs:sequence>
-					<xs:element name="coreid" type="arch:idFieldType" minOccurs="1" maxOccurs="1"/>
+					<xs:element name="coreId" type="arch:idFieldType" minOccurs="1" maxOccurs="1"/>
 					<xs:element name="field" type="arch:fieldType" minOccurs="1"
 						maxOccurs="unbounded"/>
 				</xs:sequence>
