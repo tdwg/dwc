@@ -49,7 +49,7 @@
                         <ul class="nav flex-md-column nav-pills">
                             #for $group in $groups
                             <li class="nav-item">
-                                <a class="nav-link py-1" href="#$group.name">$group.name</a><!-- anchor to group -->
+                                <a class="nav-link py-1" href="#$group.label">$group.label</a><!-- anchor to group -->
                             </li>
                             #end for
                         </ul>
@@ -61,11 +61,11 @@
                     <p class="lead">This page provides a list of all currently recommended terms of the Darwin Core standard. Categories such as <code>Occurrence</code>, <code>Event</code> correspond to Darwin Core classes, which group other terms. Convenient <a href="https://github.com/tdwg/dwc/tree/master/dist"> files of these terms</a> and <a href="https://github.com/tdwg/dwc/blob/master/vocabulary/term_versions.csv"> their full history</a> can be found in the <a href="https://github.com/tdwg/dwc">Darwin Core repository</a>.</p>
                     
                     #for $group in $groups
-                    <section id="$group.name" class="anchor mb-4"><!-- anchor to group -->
-                        <h2>$group.name</h2>
-                        <div class="my-4 group-terms">
+                    <section id="$group.label" class="anchor mb-4"><!-- anchor to group -->
+                        <h2>$group.label</h2>
+                        <div class="my-4">
                             #for $term in $group.terms
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#$term.namespace:$term.name">$term.name</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-dark m-1" href="#$term.namespace:$term.label">$term.label</a><!-- link to term -->
                             #end for
                         </div>
 
@@ -73,7 +73,7 @@
                         ## The above will exclude the Record-level group
                         <table class="table table-sm border mb-3">
                             <tbody>
-                                <tr class="table-primary"><th colspan="2">$group.name <span class="badge badge-primary float-right">Class</span></th></tr>
+                                <tr class="table-primary"><th colspan="2">$group.label <span class="badge badge-primary float-right">Class</span></th></tr>
                                 <tr><td class="label">Identifier</td><td><a href="$group.iri">$group.iri</a></td></tr>
                                 <tr><td class="label">Definition</td><td>$group.definition</td></tr>
                                 <tr><td class="label">Comments</td><td>$group.comments</td></tr>
@@ -82,10 +82,10 @@
                         #end if
 
                         #for $term in $group.terms
-                        <a id="$term.namespace:$term.name" class="anchor"></a><!-- anchor to term -->
+                        <a id="$term.namespace:$term.label" class="anchor"></a><!-- anchor to term -->
                         <table class="table table-sm border mb-3">
                             <tbody>
-                                <tr class="table-secondary"><th colspan="2">$term.name <span class="badge badge-secondary float-right">Property</span></th></tr>
+                                <tr class="table-secondary"><th colspan="2">$term.label <span class="badge badge-secondary float-right">Property</span></th></tr>
                                 <tr><td class="label">Identifier</td><td><a href="$group.iri">$term.iri</a></td></tr>
                                 <tr><td class="label">Definition</td><td>$term.definition</td></tr>
                                 <tr><td class="label">Comments</td><td>$term.comments</td></tr>

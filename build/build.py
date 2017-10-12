@@ -136,10 +136,10 @@ class DwcDigester(object):
                                               ". Terms only in terms_config.csv: ", cf_terms]))
     @staticmethod
     def split_iri(term_iri):
-        """split an iri field into the namespace url and the term itself"""
+        """split an iri field into the namespace url and the local name of the term"""
         prog = re.compile("(.*/)([^/]*$)")
-        namespace, term = prog.findall(term_iri)[0]
-        return namespace, term
+        namespace, local_name = prog.findall(term_iri)[0]
+        return namespace, local_name
 
     @staticmethod
     def resolve_namespace_abbrev(namespace):
@@ -160,9 +160,8 @@ class DwcDigester(object):
         vs_term = self._select_versions_term(term_iri)
 
         term_data = {}
-        _, term_data["name"] = self.split_iri(term_iri)
-        term_data["iri"] = term_iri
         term_data["label"] = vs_term['label']
+        term_data["iri"] = term_iri
         term_data["class"] = cf_term['organized_in']
         term_data["definition"] = self.convert_link(vs_term['definition'])
         term_data["comments"] = self.convert_link(self.convert_code(cf_term['comments']))
@@ -213,9 +212,8 @@ class DwcDigester(object):
         in_class = "Record-level"
         # sequence matters in config and it starts with Record-level which we populate here ad-hoc
         class_group = {}
-        class_group["name"] = "Record-level"
-        class_group["iri"] = None
         class_group["label"] = "Record-level"
+        class_group["iri"] = None
         class_group["class"] = None
         class_group["definition"] = None
         class_group["comments"] = None
@@ -267,7 +265,7 @@ class DwcDigester(object):
             term_data = self.get_term_definition(term['term_iri'])
             if (term_data["rdf_type"] == "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" and
                 term["flags"] == "simple"):
-                properties.append(term_data["name"])
+                properties.append(term_data["label"])
         return properties
 
     def create_dwc_list(self, file_output="../dist/simple_dwc_vertical.csv"):
