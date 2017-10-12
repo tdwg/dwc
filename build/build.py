@@ -251,7 +251,7 @@ class DwcDigester(object):
         """
 
         data = {}
-        data["groups"] = self.template_data
+        data["class_groups"] = self.template_data
         html = Template(file=html_template, searchList=[data])
 
         index_page = open(html_output, "w")
