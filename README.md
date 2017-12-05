@@ -4,7 +4,7 @@ Darwin Core is a standard maintained by the Darwin Core maintenance group. It in
 
 ## Getting started
 
-[Darwin Core quick reference guide](http://rs.tdwg.org/dwc/terms/index.html)
+[Darwin Core quick reference guide](http://rs.tdwg.org/dwc/terms/)
 
 Documents:
 
