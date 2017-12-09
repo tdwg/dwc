@@ -5,13 +5,14 @@
 #
 
 import io
+import os
 import re
 import csv
 import sys
 import codecs
 
 from urllib import request
-from Cheetah.Template import Template
+from jinja2 import FileSystemLoader, Environment
 
 NAMESPACES = {
     'http://rs.tdwg.org/dwc/iri/' : 'dwciri',
@@ -244,7 +245,7 @@ class DwcDigester(object):
         Parameters
         -----------
         html_template : str
-            relative path and filename to the [Cheetah3](http://cheetahtemplate.org/) compatible
+            relative path and filename to the Jinja2 compatible
             template
         html_output : str
             relative path and filename to write the resulting index.html
@@ -252,7 +253,10 @@ class DwcDigester(object):
 
         data = {}
         data["class_groups"] = self.template_data
-        html = Template(file=html_template, searchList=[data])
+
+        env = Environment(loader = FileSystemLoader(os.path.dirname(html_template)))
+        template = env.get_template(os.path.basename(html_template))
+        html = template.render(data)
 
         index_page = open(html_output, "w")
         index_page.write(str(html))

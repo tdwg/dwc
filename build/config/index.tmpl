@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Darwin Core quick reference guide</title>
-        
+
         <!-- CSS -->
         <link rel="stylesheet" href="https://dev.tdwg.org/theme/css/main.css">
         <style>
@@ -13,7 +13,7 @@
             }
 
             @media screen and (min-width: 768px) {
-                #sidebar { position: fixed; } /* Use fixed sidebar on md screens */ 
+                #sidebar { position: fixed; } /* Use fixed sidebar on md screens */
             }
 
             .anchor:before { /* To offset sticky-top navbar */
@@ -47,11 +47,11 @@
                 <div class="col-md-3">
                     <nav id="sidebar" class="mb-4">
                         <ul class="nav flex-md-column nav-pills">
-                            #for $class_group in $class_groups
+                            {% for class_group in class_groups %}
                             <li class="nav-item">
-                                <a class="nav-link py-1" href="#$class_group.label">$class_group.label</a><!-- anchor to class_group -->
+                                <a class="nav-link py-1" href="#{{ class_group.label }}">{{ class_group.label }}</a><!-- anchor to class_group -->
                             </li>
-                            #end for
+                            {% endfor %}
                         </ul>
                     </nav>
                 </div>
@@ -59,45 +59,45 @@
                 <div class="col-md-9">
                     <h1>Darwin Core quick reference guide</h1>
                     <p class="lead">This page provides a list of all currently recommended terms of the Darwin Core standard. Categories such as <code>Occurrence</code>, <code>Event</code> correspond to Darwin Core classes, which group other terms. Convenient <a href="https://github.com/tdwg/dwc/tree/master/dist"> files of these terms</a> and <a href="https://github.com/tdwg/dwc/blob/master/vocabulary/term_versions.csv"> their full history</a> can be found in the <a href="https://github.com/tdwg/dwc">Darwin Core repository</a>.</p>
-                    
-                    #for $class_group in $class_groups
-                    <section id="$class_group.label" class="anchor mb-4"><!-- anchor to class_group -->
-                        <h2>$class_group.label</h2>
+
+                    {% for class_group in class_groups %}
+                    <section id="{{ class_group.label }}" class="anchor mb-4"><!-- anchor to class_group -->
+                        <h2>{{ class_group.label }}</h2>
                         <div class="my-4">
-                            #for $term in $class_group.terms
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#$term.namespace:$term.label">$term.label</a><!-- link to term -->
-                            #end for
+                            {% for term in class_group.terms %}
+                            <a class="btn btn-sm btn-outline-dark m-1" href="#{{ term.namespace}}:{{ term.label }}">{{ term.label }}</a><!-- link to term -->
+                            {% endfor %}
                         </div>
 
-                        #if $class_group.iri is not None
-                        ## The above will exclude the Record-level class_group
+                        {% if class_group.iri is not none %}
+                        {# The above will exclude the Record-level class_group #}
                         <table class="table table-sm border mb-3">
                             <tbody>
-                                <tr class="table-primary"><th colspan="2">$class_group.label <span class="badge badge-primary float-right">Class</span></th></tr>
-                                <tr><td class="label">Identifier</td><td><a href="$class_group.iri">$class_group.iri</a></td></tr>
-                                <tr><td class="label">Definition</td><td>$class_group.definition</td></tr>
-                                <tr><td class="label">Comments</td><td>$class_group.comments</td></tr>
+                                <tr class="table-primary"><th colspan="2">{{ class_group.label }}<span class="badge badge-primary float-right">Class</span></th></tr>
+                                <tr><td class="label">Identifier</td><td><a href="{{ class_group.iri }}">{{ class_group.iri }}</a></td></tr>
+                                <tr><td class="label">Definition</td><td>{{class_group.definition}}</td></tr>
+                                <tr><td class="label">Comments</td><td>{{class_group.comments}}</td></tr>
                             </tbody>
                         </table>
-                        #end if
+                        {%endif %}
 
-                        #for $term in $class_group.terms
-                        <a id="$term.namespace:$term.label" class="anchor"></a><!-- anchor to term -->
+                        {% for term in class_group.terms %}
+                        <a id="{{ term.namespace}}:{{ term.label }}" class="anchor"></a><!-- anchor to term -->
                         <table class="table table-sm border mb-3">
                             <tbody>
-                                <tr class="table-secondary"><th colspan="2">$term.label <span class="badge badge-secondary float-right">Property</span></th></tr>
-                                <tr><td class="label">Identifier</td><td><a href="$term.iri">$term.iri</a></td></tr>
-                                <tr><td class="label">Definition</td><td>$term.definition</td></tr>
-                                <tr><td class="label">Comments</td><td>$term.comments</td></tr>
+                                <tr class="table-secondary"><th colspan="2">{{ term.label }}<span class="badge badge-secondary float-right">Property</span></th></tr>
+                                <tr><td class="label">Identifier</td><td><a href="{{ term.iri }}">{{ term.iri }}</a></td></tr>
+                                <tr><td class="label">Definition</td><td>{{ term.definition }}</td></tr>
+                                <tr><td class="label">Comments</td><td>{{ term.comments }}</td></tr>
                             </tbody>
                         </table>
-                        #end for
+                        {% endfor %}
                     </section>
-                    #end for
+                    {% endfor %}
                 </div>
             </div>
         </div>
-      
+
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://dev.tdwg.org/theme/js/jquery.min.js"></script>
         <script src="https://dev.tdwg.org/theme/js/popper.min.js"></script>
