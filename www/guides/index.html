@@ -13,7 +13,10 @@
             }
 
             @media screen and (min-width: 768px) {
-                #sidebar { position: fixed; } /* Use fixed sidebar on md screens */
+                #tdwg-sidebar-nav {
+                    position: fixed; /* Use fixed sidebar on md screens */
+                    width: calc(25% - 30px) /* 25% = width of .col-md-3 and -30px = sum of padding left/right of .col */
+                }
             }
 
             .anchor:before { /* To offset sticky-top navbar */
@@ -30,97 +33,103 @@
         </style>
     </head>
 
-    <body data-spy="scroll" data-target="#sidebar">
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="http://www.tdwg.org">TDWG</a>
-                <ul class="navbar-nav align-right">
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/tdwg/dwc">DwC on GitHub</a>
-                    </li>
-                </ul>
+    <body data-spy="scroll" data-target="#tdwg-sidebar-nav">
+        <header class="navbar navbar-expand navbar-dark tdwg-navbar sticky-top">
+            <div class="container-fluid flex-column flex-md-row">
+                <a class="navbar-brand mr-md-3" href="http://www.tdwg.org">TDWG</a>
+                <nav>
+                    <ul class="navbar-nav">
+                        <li class="nav-item ml-auto">
+                            <a class="nav-link" href="https://github.com/tdwg/dwc">DwC on GitHub</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-        </nav>
+        </header>
 
-        <div class="container-fluid pt-3">
+        <main class="container-fluid">
             <div class="row">
-                <div class="col-md-3">
-                    <nav id="sidebar" class="mb-4">
-                        <ul class="nav flex-md-column nav-pills">
+                <div class="col-12 col-md-3 order-md-2 tdwg-sidebar-primary">
+                    <button class="btn d-md-none w-100" type="button" data-toggle="collapse" data-target="#tdwg-sidebar-nav">
+                        <i class="fa fa-bars fa-lg"></i>
+                    </button>
+
+                    <nav class="collapse" id="tdwg-sidebar-nav">
+                        <ul class="nav flex-column">
                             
                             <li class="nav-item">
-                                <a class="nav-link py-1" href="#Record-level">Record-level</a><!-- anchor to class_group -->
+                                <a class="nav-link" href="#Record-level">Record-level</a><!-- anchor to class_group -->
                             </li>
                             
                             <li class="nav-item">
-                                <a class="nav-link py-1" href="#Occurrence">Occurrence</a><!-- anchor to class_group -->
+                                <a class="nav-link" href="#Occurrence">Occurrence</a><!-- anchor to class_group -->
                             </li>
                             
                             <li class="nav-item">
-                                <a class="nav-link py-1" href="#Organism">Organism</a><!-- anchor to class_group -->
+                                <a class="nav-link" href="#Organism">Organism</a><!-- anchor to class_group -->
                             </li>
                             
                             <li class="nav-item">
-                                <a class="nav-link py-1" href="#MaterialSample">MaterialSample</a><!-- anchor to class_group -->
+                                <a class="nav-link" href="#MaterialSample">MaterialSample</a><!-- anchor to class_group -->
                             </li>
                             
                             <li class="nav-item">
-                                <a class="nav-link py-1" href="#LivingSpecimen">LivingSpecimen</a><!-- anchor to class_group -->
+                                <a class="nav-link" href="#LivingSpecimen">LivingSpecimen</a><!-- anchor to class_group -->
                             </li>
                             
                             <li class="nav-item">
-                                <a class="nav-link py-1" href="#PreservedSpecimen">PreservedSpecimen</a><!-- anchor to class_group -->
+                                <a class="nav-link" href="#PreservedSpecimen">PreservedSpecimen</a><!-- anchor to class_group -->
                             </li>
                             
                             <li class="nav-item">
-                                <a class="nav-link py-1" href="#FossilSpecimen">FossilSpecimen</a><!-- anchor to class_group -->
+                                <a class="nav-link" href="#FossilSpecimen">FossilSpecimen</a><!-- anchor to class_group -->
                             </li>
                             
                             <li class="nav-item">
-                                <a class="nav-link py-1" href="#Event">Event</a><!-- anchor to class_group -->
+                                <a class="nav-link" href="#Event">Event</a><!-- anchor to class_group -->
                             </li>
                             
                             <li class="nav-item">
-                                <a class="nav-link py-1" href="#HumanObservation">HumanObservation</a><!-- anchor to class_group -->
+                                <a class="nav-link" href="#HumanObservation">HumanObservation</a><!-- anchor to class_group -->
                             </li>
                             
                             <li class="nav-item">
-                                <a class="nav-link py-1" href="#MachineObservation">MachineObservation</a><!-- anchor to class_group -->
+                                <a class="nav-link" href="#MachineObservation">MachineObservation</a><!-- anchor to class_group -->
                             </li>
                             
                             <li class="nav-item">
-                                <a class="nav-link py-1" href="#Location">Location</a><!-- anchor to class_group -->
+                                <a class="nav-link" href="#Location">Location</a><!-- anchor to class_group -->
                             </li>
                             
                             <li class="nav-item">
-                                <a class="nav-link py-1" href="#GeologicalContext">GeologicalContext</a><!-- anchor to class_group -->
+                                <a class="nav-link" href="#GeologicalContext">GeologicalContext</a><!-- anchor to class_group -->
                             </li>
                             
                             <li class="nav-item">
-                                <a class="nav-link py-1" href="#Identification">Identification</a><!-- anchor to class_group -->
+                                <a class="nav-link" href="#Identification">Identification</a><!-- anchor to class_group -->
                             </li>
                             
                             <li class="nav-item">
-                                <a class="nav-link py-1" href="#Taxon">Taxon</a><!-- anchor to class_group -->
+                                <a class="nav-link" href="#Taxon">Taxon</a><!-- anchor to class_group -->
                             </li>
                             
                             <li class="nav-item">
-                                <a class="nav-link py-1" href="#MeasurementOrFact">MeasurementOrFact</a><!-- anchor to class_group -->
+                                <a class="nav-link" href="#MeasurementOrFact">MeasurementOrFact</a><!-- anchor to class_group -->
                             </li>
                             
                             <li class="nav-item">
-                                <a class="nav-link py-1" href="#ResourceRelationship">ResourceRelationship</a><!-- anchor to class_group -->
+                                <a class="nav-link" href="#ResourceRelationship">ResourceRelationship</a><!-- anchor to class_group -->
                             </li>
                             
                             <li class="nav-item">
-                                <a class="nav-link py-1" href="#UseWithIRI">UseWithIRI</a><!-- anchor to class_group -->
+                                <a class="nav-link" href="#UseWithIRI">UseWithIRI</a><!-- anchor to class_group -->
                             </li>
                             
                         </ul>
                     </nav>
                 </div>
 
-                <div class="col-md-9">
+                <div class="col-12 col-md-9 order-md-1">
                     <h1>Darwin Core quick reference guide</h1>
                     <p class="lead">This page provides a list of all currently recommended terms of the Darwin Core standard. Categories such as <code>Occurrence</code>, <code>Event</code> correspond to Darwin Core classes, which group other terms. Convenient <a href="https://github.com/tdwg/dwc/tree/master/dist"> files of these terms</a> and <a href="https://github.com/tdwg/dwc/blob/master/vocabulary/term_versions.csv"> their full history</a> can be found in the <a href="https://github.com/tdwg/dwc">Darwin Core repository</a>.</p>
 
@@ -129,43 +138,43 @@
                         <h2>Record-level</h2>
                         <div class="my-4">
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dcterms:type">type</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:type">type</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dcterms:modified">modified</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:modified">modified</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dcterms:language">language</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:language">language</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dcterms:license">license</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:license">license</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dcterms:rightsHolder">rightsHolder</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:rightsHolder">rightsHolder</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dcterms:accessRights">accessRights</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:accessRights">accessRights</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dcterms:bibliographicCitation">bibliographicCitation</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:bibliographicCitation">bibliographicCitation</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dcterms:references">references</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:references">references</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:institutionID">institutionID</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:institutionID">institutionID</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:collectionID">collectionID</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:collectionID">collectionID</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:datasetID">datasetID</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:datasetID">datasetID</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:institutionCode">institutionCode</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:institutionCode">institutionCode</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:collectionCode">collectionCode</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:collectionCode">collectionCode</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:datasetName">datasetName</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:datasetName">datasetName</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:ownerInstitutionCode">ownerInstitutionCode</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:ownerInstitutionCode">ownerInstitutionCode</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:basisOfRecord">basisOfRecord</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:basisOfRecord">basisOfRecord</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:informationWithheld">informationWithheld</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:informationWithheld">informationWithheld</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:dataGeneralizations">dataGeneralizations</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:dataGeneralizations">dataGeneralizations</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:dynamicProperties">dynamicProperties</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:dynamicProperties">dynamicProperties</a><!-- link to term -->
                             
                         </div>
 
@@ -368,47 +377,47 @@
                         <h2>Occurrence</h2>
                         <div class="my-4">
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:occurrenceID">occurrenceID</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:occurrenceID">occurrenceID</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:catalogNumber">catalogNumber</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:catalogNumber">catalogNumber</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:recordNumber">recordNumber</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:recordNumber">recordNumber</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:recordedBy">recordedBy</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:recordedBy">recordedBy</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:individualCount">individualCount</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:individualCount">individualCount</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:organismQuantity">organismQuantity</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:organismQuantity">organismQuantity</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:organismQuantityType">organismQuantityType</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:organismQuantityType">organismQuantityType</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:sex">sex</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:sex">sex</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:lifeStage">lifeStage</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:lifeStage">lifeStage</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:reproductiveCondition">reproductiveCondition</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:reproductiveCondition">reproductiveCondition</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:behavior">behavior</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:behavior">behavior</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:establishmentMeans">establishmentMeans</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:establishmentMeans">establishmentMeans</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:occurrenceStatus">occurrenceStatus</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:occurrenceStatus">occurrenceStatus</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:preparations">preparations</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:preparations">preparations</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:disposition">disposition</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:disposition">disposition</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:associatedMedia">associatedMedia</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:associatedMedia">associatedMedia</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:associatedReferences">associatedReferences</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:associatedReferences">associatedReferences</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:associatedSequences">associatedSequences</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:associatedSequences">associatedSequences</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:associatedTaxa">associatedTaxa</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:associatedTaxa">associatedTaxa</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:otherCatalogNumbers">otherCatalogNumbers</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:otherCatalogNumbers">otherCatalogNumbers</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:occurrenceRemarks">occurrenceRemarks</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:occurrenceRemarks">occurrenceRemarks</a><!-- link to term -->
                             
                         </div>
 
@@ -641,19 +650,19 @@
                         <h2>Organism</h2>
                         <div class="my-4">
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:organismID">organismID</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:organismID">organismID</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:organismName">organismName</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:organismName">organismName</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:organismScope">organismScope</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:organismScope">organismScope</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:associatedOccurrences">associatedOccurrences</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:associatedOccurrences">associatedOccurrences</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:associatedOrganisms">associatedOrganisms</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:associatedOrganisms">associatedOrganisms</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:previousIdentifications">previousIdentifications</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:previousIdentifications">previousIdentifications</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:organismRemarks">organismRemarks</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:organismRemarks">organismRemarks</a><!-- link to term -->
                             
                         </div>
 
@@ -746,7 +755,7 @@
                         <h2>MaterialSample</h2>
                         <div class="my-4">
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:materialSampleID">materialSampleID</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:materialSampleID">materialSampleID</a><!-- link to term -->
                             
                         </div>
 
@@ -842,41 +851,41 @@
                         <h2>Event</h2>
                         <div class="my-4">
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:eventID">eventID</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:eventID">eventID</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:parentEventID">parentEventID</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:parentEventID">parentEventID</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:fieldNumber">fieldNumber</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:fieldNumber">fieldNumber</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:eventDate">eventDate</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:eventDate">eventDate</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:eventTime">eventTime</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:eventTime">eventTime</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:startDayOfYear">startDayOfYear</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:startDayOfYear">startDayOfYear</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:endDayOfYear">endDayOfYear</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:endDayOfYear">endDayOfYear</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:year">year</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:year">year</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:month">month</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:month">month</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:day">day</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:day">day</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:verbatimEventDate">verbatimEventDate</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:verbatimEventDate">verbatimEventDate</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:habitat">habitat</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:habitat">habitat</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:samplingProtocol">samplingProtocol</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:samplingProtocol">samplingProtocol</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:sampleSizeValue">sampleSizeValue</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:sampleSizeValue">sampleSizeValue</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:sampleSizeUnit">sampleSizeUnit</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:sampleSizeUnit">sampleSizeUnit</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:samplingEffort">samplingEffort</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:samplingEffort">samplingEffort</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:fieldNotes">fieldNotes</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:fieldNotes">fieldNotes</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:eventRemarks">eventRemarks</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:eventRemarks">eventRemarks</a><!-- link to term -->
                             
                         </div>
 
@@ -1121,93 +1130,93 @@
                         <h2>Location</h2>
                         <div class="my-4">
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:locationID">locationID</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:locationID">locationID</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:higherGeographyID">higherGeographyID</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:higherGeographyID">higherGeographyID</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:higherGeography">higherGeography</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:higherGeography">higherGeography</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:continent">continent</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:continent">continent</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:waterBody">waterBody</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:waterBody">waterBody</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:islandGroup">islandGroup</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:islandGroup">islandGroup</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:island">island</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:island">island</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:country">country</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:country">country</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:countryCode">countryCode</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:countryCode">countryCode</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:stateProvince">stateProvince</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:stateProvince">stateProvince</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:county">county</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:county">county</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:municipality">municipality</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:municipality">municipality</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:locality">locality</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:locality">locality</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:verbatimLocality">verbatimLocality</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:verbatimLocality">verbatimLocality</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:minimumElevationInMeters">minimumElevationInMeters</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:minimumElevationInMeters">minimumElevationInMeters</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:maximumElevationInMeters">maximumElevationInMeters</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:maximumElevationInMeters">maximumElevationInMeters</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:verbatimElevation">verbatimElevation</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:verbatimElevation">verbatimElevation</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:minimumDepthInMeters">minimumDepthInMeters</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:minimumDepthInMeters">minimumDepthInMeters</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:maximumDepthInMeters">maximumDepthInMeters</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:maximumDepthInMeters">maximumDepthInMeters</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:verbatimDepth">verbatimDepth</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:verbatimDepth">verbatimDepth</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:minimumDistanceAboveSurfaceInMeters">minimumDistanceAboveSurfaceInMeters</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:minimumDistanceAboveSurfaceInMeters">minimumDistanceAboveSurfaceInMeters</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:maximumDistanceAboveSurfaceInMeters">maximumDistanceAboveSurfaceInMeters</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:maximumDistanceAboveSurfaceInMeters">maximumDistanceAboveSurfaceInMeters</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:locationAccordingTo">locationAccordingTo</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:locationAccordingTo">locationAccordingTo</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:locationRemarks">locationRemarks</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:locationRemarks">locationRemarks</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:decimalLatitude">decimalLatitude</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:decimalLatitude">decimalLatitude</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:decimalLongitude">decimalLongitude</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:decimalLongitude">decimalLongitude</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:geodeticDatum">geodeticDatum</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:geodeticDatum">geodeticDatum</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:coordinateUncertaintyInMeters">coordinateUncertaintyInMeters</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:coordinateUncertaintyInMeters">coordinateUncertaintyInMeters</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:coordinatePrecision">coordinatePrecision</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:coordinatePrecision">coordinatePrecision</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:pointRadiusSpatialFit">pointRadiusSpatialFit</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:pointRadiusSpatialFit">pointRadiusSpatialFit</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:verbatimCoordinates">verbatimCoordinates</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:verbatimCoordinates">verbatimCoordinates</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:verbatimLatitude">verbatimLatitude</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:verbatimLatitude">verbatimLatitude</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:verbatimLongitude">verbatimLongitude</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:verbatimLongitude">verbatimLongitude</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:verbatimCoordinateSystem">verbatimCoordinateSystem</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:verbatimCoordinateSystem">verbatimCoordinateSystem</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:verbatimSRS">verbatimSRS</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:verbatimSRS">verbatimSRS</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:footprintWKT">footprintWKT</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:footprintWKT">footprintWKT</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:footprintSRS">footprintSRS</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:footprintSRS">footprintSRS</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:footprintSpatialFit">footprintSpatialFit</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:footprintSpatialFit">footprintSpatialFit</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:georeferencedBy">georeferencedBy</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:georeferencedBy">georeferencedBy</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:georeferencedDate">georeferencedDate</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:georeferencedDate">georeferencedDate</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:georeferenceProtocol">georeferenceProtocol</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:georeferenceProtocol">georeferenceProtocol</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:georeferenceSources">georeferenceSources</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:georeferenceSources">georeferenceSources</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:georeferenceVerificationStatus">georeferenceVerificationStatus</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:georeferenceVerificationStatus">georeferenceVerificationStatus</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:georeferenceRemarks">georeferenceRemarks</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:georeferenceRemarks">georeferenceRemarks</a><!-- link to term -->
                             
                         </div>
 
@@ -1670,41 +1679,41 @@
                         <h2>GeologicalContext</h2>
                         <div class="my-4">
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:geologicalContextID">geologicalContextID</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:geologicalContextID">geologicalContextID</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:earliestEonOrLowestEonothem">earliestEonOrLowestEonothem</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:earliestEonOrLowestEonothem">earliestEonOrLowestEonothem</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:latestEonOrHighestEonothem">latestEonOrHighestEonothem</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:latestEonOrHighestEonothem">latestEonOrHighestEonothem</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:earliestEraOrLowestErathem">earliestEraOrLowestErathem</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:earliestEraOrLowestErathem">earliestEraOrLowestErathem</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:latestEraOrHighestErathem">latestEraOrHighestErathem</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:latestEraOrHighestErathem">latestEraOrHighestErathem</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:earliestPeriodOrLowestSystem">earliestPeriodOrLowestSystem</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:earliestPeriodOrLowestSystem">earliestPeriodOrLowestSystem</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:latestPeriodOrHighestSystem">latestPeriodOrHighestSystem</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:latestPeriodOrHighestSystem">latestPeriodOrHighestSystem</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:earliestEpochOrLowestSeries">earliestEpochOrLowestSeries</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:earliestEpochOrLowestSeries">earliestEpochOrLowestSeries</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:latestEpochOrHighestSeries">latestEpochOrHighestSeries</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:latestEpochOrHighestSeries">latestEpochOrHighestSeries</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:earliestAgeOrLowestStage">earliestAgeOrLowestStage</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:earliestAgeOrLowestStage">earliestAgeOrLowestStage</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:latestAgeOrHighestStage">latestAgeOrHighestStage</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:latestAgeOrHighestStage">latestAgeOrHighestStage</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:lowestBiostratigraphicZone">lowestBiostratigraphicZone</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:lowestBiostratigraphicZone">lowestBiostratigraphicZone</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:highestBiostratigraphicZone">highestBiostratigraphicZone</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:highestBiostratigraphicZone">highestBiostratigraphicZone</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:lithostratigraphicTerms">lithostratigraphicTerms</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:lithostratigraphicTerms">lithostratigraphicTerms</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:group">group</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:group">group</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:formation">formation</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:formation">formation</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:member">member</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:member">member</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:bed">bed</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:bed">bed</a><!-- link to term -->
                             
                         </div>
 
@@ -1907,21 +1916,21 @@
                         <h2>Identification</h2>
                         <div class="my-4">
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:identificationID">identificationID</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:identificationID">identificationID</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:identificationQualifier">identificationQualifier</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:identificationQualifier">identificationQualifier</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:typeStatus">typeStatus</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:typeStatus">typeStatus</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:identifiedBy">identifiedBy</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:identifiedBy">identifiedBy</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:dateIdentified">dateIdentified</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:dateIdentified">dateIdentified</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:identificationReferences">identificationReferences</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:identificationReferences">identificationReferences</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:identificationVerificationStatus">identificationVerificationStatus</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:identificationVerificationStatus">identificationVerificationStatus</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:identificationRemarks">identificationRemarks</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:identificationRemarks">identificationRemarks</a><!-- link to term -->
                             
                         </div>
 
@@ -2024,71 +2033,71 @@
                         <h2>Taxon</h2>
                         <div class="my-4">
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:taxonID">taxonID</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:taxonID">taxonID</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:scientificNameID">scientificNameID</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:scientificNameID">scientificNameID</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:acceptedNameUsageID">acceptedNameUsageID</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:acceptedNameUsageID">acceptedNameUsageID</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:parentNameUsageID">parentNameUsageID</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:parentNameUsageID">parentNameUsageID</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:originalNameUsageID">originalNameUsageID</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:originalNameUsageID">originalNameUsageID</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:nameAccordingToID">nameAccordingToID</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:nameAccordingToID">nameAccordingToID</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:namePublishedInID">namePublishedInID</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:namePublishedInID">namePublishedInID</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:taxonConceptID">taxonConceptID</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:taxonConceptID">taxonConceptID</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:scientificName">scientificName</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:scientificName">scientificName</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:acceptedNameUsage">acceptedNameUsage</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:acceptedNameUsage">acceptedNameUsage</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:parentNameUsage">parentNameUsage</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:parentNameUsage">parentNameUsage</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:originalNameUsage">originalNameUsage</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:originalNameUsage">originalNameUsage</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:nameAccordingTo">nameAccordingTo</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:nameAccordingTo">nameAccordingTo</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:namePublishedIn">namePublishedIn</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:namePublishedIn">namePublishedIn</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:namePublishedInYear">namePublishedInYear</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:namePublishedInYear">namePublishedInYear</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:higherClassification">higherClassification</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:higherClassification">higherClassification</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:kingdom">kingdom</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:kingdom">kingdom</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:phylum">phylum</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:phylum">phylum</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:class">class</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:class">class</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:order">order</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:order">order</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:family">family</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:family">family</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:genus">genus</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:genus">genus</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:subgenus">subgenus</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:subgenus">subgenus</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:specificEpithet">specificEpithet</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:specificEpithet">specificEpithet</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:infraspecificEpithet">infraspecificEpithet</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:infraspecificEpithet">infraspecificEpithet</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:taxonRank">taxonRank</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:taxonRank">taxonRank</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:verbatimTaxonRank">verbatimTaxonRank</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:verbatimTaxonRank">verbatimTaxonRank</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:scientificNameAuthorship">scientificNameAuthorship</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:scientificNameAuthorship">scientificNameAuthorship</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:vernacularName">vernacularName</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:vernacularName">vernacularName</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:nomenclaturalCode">nomenclaturalCode</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:nomenclaturalCode">nomenclaturalCode</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:taxonomicStatus">taxonomicStatus</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:taxonomicStatus">taxonomicStatus</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:nomenclaturalStatus">nomenclaturalStatus</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:nomenclaturalStatus">nomenclaturalStatus</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:taxonRemarks">taxonRemarks</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:taxonRemarks">taxonRemarks</a><!-- link to term -->
                             
                         </div>
 
@@ -2441,23 +2450,23 @@
                         <h2>MeasurementOrFact</h2>
                         <div class="my-4">
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:measurementID">measurementID</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:measurementID">measurementID</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:measurementType">measurementType</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:measurementType">measurementType</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:measurementValue">measurementValue</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:measurementValue">measurementValue</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:measurementAccuracy">measurementAccuracy</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:measurementAccuracy">measurementAccuracy</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:measurementUnit">measurementUnit</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:measurementUnit">measurementUnit</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:measurementDeterminedBy">measurementDeterminedBy</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:measurementDeterminedBy">measurementDeterminedBy</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:measurementDeterminedDate">measurementDeterminedDate</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:measurementDeterminedDate">measurementDeterminedDate</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:measurementMethod">measurementMethod</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:measurementMethod">measurementMethod</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:measurementRemarks">measurementRemarks</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:measurementRemarks">measurementRemarks</a><!-- link to term -->
                             
                         </div>
 
@@ -2570,19 +2579,19 @@
                         <h2>ResourceRelationship</h2>
                         <div class="my-4">
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:resourceRelationshipID">resourceRelationshipID</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:resourceRelationshipID">resourceRelationshipID</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:resourceID">resourceID</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:resourceID">resourceID</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:relatedResourceID">relatedResourceID</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:relatedResourceID">relatedResourceID</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:relationshipOfResource">relationshipOfResource</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:relationshipOfResource">relationshipOfResource</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:relationshipAccordingTo">relationshipAccordingTo</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:relationshipAccordingTo">relationshipAccordingTo</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:relationshipEstablishedDate">relationshipEstablishedDate</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:relationshipEstablishedDate">relationshipEstablishedDate</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwc:relationshipRemarks">relationshipRemarks</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:relationshipRemarks">relationshipRemarks</a><!-- link to term -->
                             
                         </div>
 
@@ -2675,91 +2684,91 @@
                         <h2>UseWithIRI</h2>
                         <div class="my-4">
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwciri:behavior">behavior</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:behavior">behavior</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwciri:dataGeneralizations">dataGeneralizations</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:dataGeneralizations">dataGeneralizations</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwciri:disposition">disposition</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:disposition">disposition</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwciri:earliestGeochronologicalEra">earliestGeochronologicalEra</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:earliestGeochronologicalEra">earliestGeochronologicalEra</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwciri:establishmentMeans">establishmentMeans</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:establishmentMeans">establishmentMeans</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwciri:fieldNotes">fieldNotes</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:fieldNotes">fieldNotes</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwciri:fieldNumber">fieldNumber</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:fieldNumber">fieldNumber</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwciri:footprintSRS">footprintSRS</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:footprintSRS">footprintSRS</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwciri:footprintWKT">footprintWKT</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:footprintWKT">footprintWKT</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwciri:fromLithostratigraphicUnit">fromLithostratigraphicUnit</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:fromLithostratigraphicUnit">fromLithostratigraphicUnit</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwciri:geodeticDatum">geodeticDatum</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:geodeticDatum">geodeticDatum</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwciri:georeferencedBy">georeferencedBy</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:georeferencedBy">georeferencedBy</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwciri:georeferenceProtocol">georeferenceProtocol</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:georeferenceProtocol">georeferenceProtocol</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwciri:georeferenceSources">georeferenceSources</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:georeferenceSources">georeferenceSources</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwciri:georeferenceVerificationStatus">georeferenceVerificationStatus</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:georeferenceVerificationStatus">georeferenceVerificationStatus</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwciri:habitat">habitat</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:habitat">habitat</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwciri:identificationQualifier">identificationQualifier</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:identificationQualifier">identificationQualifier</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwciri:identificationVerificationStatus">identificationVerificationStatus</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:identificationVerificationStatus">identificationVerificationStatus</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwciri:identifiedBy">identifiedBy</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:identifiedBy">identifiedBy</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwciri:inCollection">inCollection</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:inCollection">inCollection</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwciri:inDataset">inDataset</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:inDataset">inDataset</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwciri:inDescribedPlace">inDescribedPlace</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:inDescribedPlace">inDescribedPlace</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwciri:informationWithheld">informationWithheld</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:informationWithheld">informationWithheld</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwciri:latestGeochronologicalEra">latestGeochronologicalEra</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:latestGeochronologicalEra">latestGeochronologicalEra</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwciri:lifeStage">lifeStage</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:lifeStage">lifeStage</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwciri:locationAccordingTo">locationAccordingTo</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:locationAccordingTo">locationAccordingTo</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwciri:measurementDeterminedBy">measurementDeterminedBy</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:measurementDeterminedBy">measurementDeterminedBy</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwciri:measurementMethod">measurementMethod</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:measurementMethod">measurementMethod</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwciri:measurementType">measurementType</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:measurementType">measurementType</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwciri:measurementUnit">measurementUnit</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:measurementUnit">measurementUnit</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwciri:occurrenceStatus">occurrenceStatus</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:occurrenceStatus">occurrenceStatus</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwciri:organismQuantityType">organismQuantityType</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:organismQuantityType">organismQuantityType</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwciri:preparations">preparations</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:preparations">preparations</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwciri:recordedBy">recordedBy</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:recordedBy">recordedBy</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwciri:recordNumber">recordNumber</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:recordNumber">recordNumber</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwciri:reproductiveCondition">reproductiveCondition</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:reproductiveCondition">reproductiveCondition</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwciri:sampleSizeUnit">sampleSizeUnit</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:sampleSizeUnit">sampleSizeUnit</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwciri:samplingProtocol">samplingProtocol</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:samplingProtocol">samplingProtocol</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwciri:sex">sex</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:sex">sex</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwciri:toTaxon">toTaxon</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:toTaxon">toTaxon</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwciri:typeStatus">typeStatus</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:typeStatus">typeStatus</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwciri:verbatimCoordinateSystem">verbatimCoordinateSystem</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:verbatimCoordinateSystem">verbatimCoordinateSystem</a><!-- link to term -->
                             
-                            <a class="btn btn-sm btn-outline-dark m-1" href="#dwciri:verbatimSRS">verbatimSRS</a><!-- link to term -->
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:verbatimSRS">verbatimSRS</a><!-- link to term -->
                             
                         </div>
 
@@ -2812,7 +2821,7 @@
                                 <tr class="table-secondary"><th colspan="2">earliestGeochronologicalEra<span class="badge badge-secondary float-right">Property</span></th></tr>
                                 <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/earliestGeochronologicalEra">http://rs.tdwg.org/dwc/iri/earliestGeochronologicalEra</a></td></tr>
                                 <tr><td class="label">Definition</td><td>Use to link a dwc:GeologicalContext instance to chronostratigraphic time periods at the lowest possible level in a standardized hierarchy.   Use this property to point to the earliest possible geological time period from which the cataloged item was collected.</td></tr>
-                                <tr><td class="label">Comments</td><td>Recommended best practice is to use an IRI from a controlled vocabulary. A "convenience property" that replaces Darwin Core literal-value terms related to geological context. See Section 2.7.6 of the Darwin Core RDF Guide for details.</td></tr>
+                                <tr><td class="label">Comments</td><td>Recommended best practice is to use an IRI from a controlled vocabulary. A ""convenience property"" that replaces Darwin Core literal-value terms related to geological context. See Section 2.7.6 of the Darwin Core RDF Guide for details.</td></tr>
                             </tbody>
                         </table>
                         
@@ -2972,7 +2981,7 @@
                                 <tr class="table-secondary"><th colspan="2">inCollection<span class="badge badge-secondary float-right">Property</span></th></tr>
                                 <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/inCollection">http://rs.tdwg.org/dwc/iri/inCollection</a></td></tr>
                                 <tr><td class="label">Definition</td><td>Use to link any subject resource that is part of a collection to the collection containing the resource.</td></tr>
-                                <tr><td class="label">Comments</td><td>Recommended best practice is to use an IRI from a controlled registry. A "convenience property" that replaces literal-value terms related to collections and institutions. See Section 2.7.3 of the Darwin Core RDF Guide for details.</td></tr>
+                                <tr><td class="label">Comments</td><td>Recommended best practice is to use an IRI from a controlled registry. A ""convenience property"" that replaces literal-value terms related to collections and institutions. See Section 2.7.3 of the Darwin Core RDF Guide for details.</td></tr>
                             </tbody>
                         </table>
                         
@@ -2992,7 +3001,7 @@
                                 <tr class="table-secondary"><th colspan="2">inDescribedPlace<span class="badge badge-secondary float-right">Property</span></th></tr>
                                 <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/inDescribedPlace">http://rs.tdwg.org/dwc/iri/inDescribedPlace</a></td></tr>
                                 <tr><td class="label">Definition</td><td>Use to link a dcterms:Location instance subject to the lowest level standardized hierarchically-described resource.</td></tr>
-                                <tr><td class="label">Comments</td><td>Recommended best practice is to use an IRI from a controlled registry. A "convenience property" that replaces Darwin Core literal-value terms related to locations. See Section 2.7.5 of the Darwin Core RDF Guide for details.</td></tr>
+                                <tr><td class="label">Comments</td><td>Recommended best practice is to use an IRI from a controlled registry. A ""convenience property"" that replaces Darwin Core literal-value terms related to locations. See Section 2.7.5 of the Darwin Core RDF Guide for details.</td></tr>
                             </tbody>
                         </table>
                         
@@ -3012,7 +3021,7 @@
                                 <tr class="table-secondary"><th colspan="2">latestGeochronologicalEra<span class="badge badge-secondary float-right">Property</span></th></tr>
                                 <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/latestGeochronologicalEra">http://rs.tdwg.org/dwc/iri/latestGeochronologicalEra</a></td></tr>
                                 <tr><td class="label">Definition</td><td>Use to link a dwc:GeologicalContext instance to chronostratigraphic time periods at the lowest possible level in a standardized hierarchy.   Use this property to point to the latest possible geological time period from which the cataloged item was collected.</td></tr>
-                                <tr><td class="label">Comments</td><td>Recommended best practice is to use an IRI from a controlled vocabulary. A "convenience property" that replaces Darwin Core literal-value terms related to geological context. See Section 2.7.6 of the Darwin Core RDF Guide for details.</td></tr>
+                                <tr><td class="label">Comments</td><td>Recommended best practice is to use an IRI from a controlled vocabulary. A ""convenience property"" that replaces Darwin Core literal-value terms related to geological context. See Section 2.7.6 of the Darwin Core RDF Guide for details.</td></tr>
                             </tbody>
                         </table>
                         
@@ -3210,7 +3219,7 @@
                     
                 </div>
             </div>
-        </div>
+        </main>
 
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://dev.tdwg.org/theme/js/jquery.min.js"></script>
