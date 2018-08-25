@@ -1,127 +1,42 @@
  Darwin Core RDF Guide                        
 
-[![Biodiversity Information Standards (TDWG) logo](../../../DarwinCore_files/TDWGlogo_Twiki.gif)](http://www.tdwg.org)
-
-[Introduction](../../../index.htm)
-
-[References](../../../index.htm#references)
-
-[Quick Reference Guide](../../index.htm)
-
-[Simple Darwin Core](../../simple/index.htm)
-
-- - -
-
-[RDF Guide](../rdf/index.htm)
-
-[Table of Contents](./index.htm#toc)
-
-[Introduction](./index.htm#1_Introduction)
-
-[Implementation Guide](./index.htm#2_Implementation_Guide)
-
-[Term reference](./index.htm#3_Term_reference)
-
-[Text Guide](../text/index.htm)
-
-[XML Guide](../xml/index.htm)
-
-- - -
-
-[Namespace Policy](../../namespace/index.htm)
-
-[Complete History](../../history/index.htm)
-
-[Decision History](../../history/decisions/index.htm)
-
-- - -
-
-[Mapping to ABCD](../../history/dwctoabcd/index.htm)
-
-[Mapping to Old Versions](../../history/versions/index.htm)
-
 # Darwin Core RDF Guide
 
-Title:
+Title
+: Darwin Core RDF Guide
 
-Darwin Core RDF Guide
+Date Issued
+: 2015\-03\-27
 
-Date Issued:
+Date Modified
+: 2016\-04\-25
 
-2015\-03\-27
+Abstract
+: This guide is intended to facilitate the use of Darwin Core terms in the Resource Description Framework (RDF). It explains basic features of RDF and provides details of how to expose data in the form of RDF using Darwin Core terms and terms from other key vocabularies. It defines terms in the namespace http://rs.tdwg.org/dwc/iri/ which are intended for use excusively with non\-literal objects.
 
-Date Modified:
+Contributors
+: Steve Baskauf (TDWG RDF/OWL Task Group), John Wieczorek (TDWG Darwin Core Task Group), John Deck (Genomic Biodiversity Working Group), Campbell Webb (TDWG RDF/OWL Task Group), Paul J. Morris (Harvard University Herbaria/Museum of Comparative Zoölogy), Mark Schildhauer (National Center for Ecological Analysis and Synthesis) (KUNHM)
 
-2016\-04\-25
+Legal
+: This document is governed by the standard legal, copyright, licensing provisions and disclaimers issued by the Taxonomic Databases Working Group.
 
-Abstract:
+Part of TDWG Standard
+: [http://www.tdwg.org/standards/450/](http://www.tdwg.org/standards/450/)
 
-This guide is intended to facilitate the use of Darwin Core terms in the Resource Description Framework (RDF). It explains basic features of RDF and provides details of how to expose data in the form of RDF using Darwin Core terms and terms from other key vocabularies. It defines terms in the namespace http://rs.tdwg.org/dwc/iri/ which are intended for use excusively with non\-literal objects.
+Creator
+: Darwin Core and RDF/OWL Task Groups
 
-Contributors:
+Identifier
+: http://rs.tdwg.org/dwc/2015\-06\-02/terms/guides/rdf/
 
-Steve Baskauf (TDWG RDF/OWL Task Group), John Wieczorek (TDWG Darwin Core Task Group), John Deck (Genomic Biodiversity Working Group), Campbell Webb (TDWG RDF/OWL Task Group), Paul J. Morris (Harvard University Herbaria/Museum of Comparative Zoölogy), Mark Schildhauer (National Center for Ecological Analysis and Synthesis) (KUNHM)
+Latest Version
+: [http://rs.tdwg.org/dwc/terms/guides/rdf/](http://rs.tdwg.org/dwc/terms/guides/rdf/index.htm)
 
-Legal:
+Replaces
+: http://rs.tdwg.org/dwc/2015\-03\-27/terms/guides/rdf/
 
-This document is governed by the standard legal, copyright, licensing provisions and disclaimers issued by the Taxonomic Databases Working Group.
-
-Part of TDWG Standard:
-
-[http://www.tdwg.org/standards/450/](http://www.tdwg.org/standards/450/)
-
-Creator:
-
-Darwin Core and RDF/OWL Task Groups
-
-Identifier:
-
-http://rs.tdwg.org/dwc/2015\-06\-02/terms/guides/rdf/
-
-Latest Version:
-
-[http://rs.tdwg.org/dwc/terms/guides/rdf/](http://rs.tdwg.org/dwc/terms/guides/rdf/index.htm)
-
-Replaces:
-
-http://rs.tdwg.org/dwc/2015\-03\-27/terms/guides/rdf/
-
-Document Status:
-
-Current Standard
-
-# Table of Contents[](./index.htm#toc)
-
--   [1 Introduction](./index.htm#1_Introduction)
-
--   [1.1 Audience](./index.htm#1.1_Audience)
--   [1.2 Rationale](./index.htm#1.2_Rationale)
--   [1.3 Features of RDF](./index.htm#1.3_Features_of_RDF)
--   [1.4 Use of terms in RDF](./index.htm#1.4_Use_of_terms_in_RDF)
--   [1.5 Roles of text strings as values of properties in dwc: namespace](./index.htm#1.5_Roles_of_text_strings_as_values_of_properties_in_dwc:_namesp)
-
--   [2 Implementation Guide](./index.htm#2_Implementation_Guide)
-
--   [2.1 Definitions](./index.htm#2.1_Definitions)
--   [2.2 Subject resources](./index.htm#2.2_Subject_resources)
--   [2.3 Predicates](./index.htm#2.3_Predicates)
--   [2.4 Object resources](./index.htm#2.4_Object_resources)
--   [2.5 Terms in the dwciri: namespace](./index.htm#2.5_Terms_in_the_dwciri:_namespace)
--   [2.6 Darwin Core ID terms and RDF](./index.htm#2.6_Darwin_Core_ID_terms_and_RDF)
--   [2.7 Darwin Core convenience terms](./index.htm#2.7_Darwin_Core_convenience_terms)
--   [2.8 Darwin Core association terms](./index.htm#2.8_Darwin_Core_association_terms)
--   [2.9 MeasurementOrFact instances](./index.htm#2.9_MeasurementOrFact_instances)
-
--   [3 Term reference](./index.htm#3_Term_reference)
-
--   [3.1 Non\-Darwin Core terms needed to express fundamental properties in RDF](./index.htm#3.1_Non-Darwin_Core_terms_needed_to_express_fundamental_properti)
--   [3.2 Imported Dublin Core terms for which only literal objects are appropriate](./index.htm#3.2_Imported_Dublin_Core_terms_for_which_only_literal_objects_ar)
--   [3.3 Imported Dublin Core terms that have non\-literal objects and corresponding terms that have literal objects](./index.htm#3.3_Imported_Dublin_Core_terms_that_have_non-literal_objects_and)
--   [3.4 Terms defined by Darwin Core that are expected to be used only with literal values](./index.htm#3.4_Terms_defined_by_Darwin_Core_that_are_expected_to_be_used_on)
--   [3.5 Darwin Core convenience terms that are expected to be used only with literal values](./index.htm#3.5_Darwin_Core_convenience_terms_that_are_expected_to_be_used_o)
--   [3.6 dwciri: terms having local names that don’t correspond to terms in the dwc: Darwin Core namespace](./index.htm#3.6_dwciri:_terms_having_local_names_that_don’t_correspond_to)
--   [3.7 dwc: namespace terms that have analogues in the dwciri: namespace](./index.htm#3.7_dwc:_namespace_terms_that_have_analogues_in_the_dwciri:_name)
--   [3.8 Darwin Core terms for which this guide does not recommend the use of a dwciri: object property](./index.htm#3.8_Darwin_Core_terms_for_which_this_guide_does_not_recommend_th)
+Document Status
+: Current Standard
 
 # 1 Introduction[](./index.htm#1_Introduction)
 
@@ -149,15 +64,18 @@ Each arrow represents a statement about the image, called a "triple" in RDF. The
 
 This RDF graph can be serialized in a somewhat human\-friendly syntax called Terse RDF Triple Language (Turtle) \[[TURTLE](http://www.w3.org/TR/turtle/)\]:
 
+```turtle
 @prefix rdf:  <http://www.w3.org/1999/02/22\-rdf\-syntax\-ns#>.  
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#>.  
 @prefix dcterms:  <http://purl.org/dc/terms/>.  
 <http://bioimages.vanderbilt.edu/kirchoff/ac1490>a <http://purl.org/dc/dcmitype/StillImage>;  
        dcterms:created "2010\-09\-01T03:41:31"^^xsd:dateTime;  
        dcterms:creator <http://bioimages.vanderbilt.edu/contact/kirchoff#coblea>.
+```
 
 Here is the graph in RDF/XML syntax \[[RDF\-XML\-SYNTAX](http://www.w3.org/TR/rdf-syntax-grammar/)\]:
 
+```rdf
 <?xml version\="1.0" encoding\="UTF\-8"?>  
 <rdf:RDF  xmlns:rdf\="http://www.w3.org/1999/02/22\-rdf\-syntax\-ns#"  
 xmlns:dcterms\="http://purl.org/dc/terms/"  
@@ -168,6 +86,7 @@ xmlns:dcterms\="http://purl.org/dc/terms/"
    <dcterms:created  rdf:datatype\="http://www.w3.org/2001/XMLSchema#dateTime"\>2010\-09\-01T03:41:31</dcterms:created>  
  </rdf:Description>  
 </rdf:RDF>
+```
 
 In this document, the following formatting conventions will be used. Full IRIs will be shown in Courier type and enclosed in angle brackets, e.g.,
 
@@ -275,101 +194,23 @@ To facilitate achieving the clarity that RDF makes possible, this guide provides
 
 **Table 1**
 
-**vocabulary name**
-
-**namespace abbreviation**
-
-**full prefix**
-
-Resource Description Framework
-
-_rdf:_
-
-http://www.w3.org/1999/02/22\-rdf\-syntax\-ns#
-
-RDF Schema
-
-_rdfs:_
-
-http://www.w3.org/2000/01/rdf\-schema#
-
-XML Schema
-
-_xsd:_
-
-http://www.w3.org/2001/XMLSchema#
-
-Web Ontology Language
-
-_owl:_
-
-http://www.w3.org/2002/07/owl#
-
-Darwin Core terms (string literal objects)
-
-_dwc:_
-
-http://rs.tdwg.org/dwc/terms/
-
-Darwin Core terms (IRI reference objects)
-
-_dwciri:_
-
-http://rs.tdwg.org/dwc/iri/
-
-Dublin Core terms
-
-_dcterms:_
-
-http://purl.org/dc/terms/
-
-Dublin Core legacy terms
-
-_dc:_
-
-http://purl.org/dc/elements/1.1/
-
-Dublin Core type vocabulary
-
-_dcmitype:_
-
-http://purl.org/dc/dcmitype/
-
-FOAF vocabulary
-
-_foaf:_
-
-http://xmlns.com/foaf/0.1/
-
-DBpedia resources
-
-_dbres:_
-
-http://dbpedia.org/resource/
-
-GeoNames Ontology
-
-_gn:_
-
-http://www.geonames.org/ontology#
-
-GeoSciML Geologic Timescale model Ontology
-
-_gsml:_
-
-http://resource.geosciml.org/ontology/timescale/gts\-30#
-
-Virtual International Authority File
-
-_viaf:_
-
-http://viaf.org/viaf/
-
-Extensible Metadata Platform Rights Management vocabulary
-
-_xmpRights:_
-
-http://ns.adobe.com/xap/1.0/rights/
+vocabulary name | namespace abbreviation | full prefix
+--- | --- | ---
+Resource Description Framework | rdf: | http://www.w3.org/1999/02/22-rdf-syntax-ns#
+RDF Schema | rdfs: | http://www.w3.org/2000/01/rdf-schema#
+XML Schema | xsd: | http://www.w3.org/2001/XMLSchema#
+Web Ontology Language | owl: | http://www.w3.org/2002/07/owl#
+Darwin Core terms (string literal objects) | dwc: | http://rs.tdwg.org/dwc/terms/
+Darwin Core terms (IRI reference objects) | dwciri: | http://rs.tdwg.org/dwc/iri/
+Dublin Core terms | dcterms: | http://purl.org/dc/terms/
+Dublin Core legacy terms | dc: | http://purl.org/dc/elements/1.1/
+Dublin Core type vocabulary | dcmitype: | http://purl.org/dc/dcmitype/
+FOAF vocabulary | foaf: | http://xmlns.com/foaf/0.1/
+DBpedia resources | dbres: | http://dbpedia.org/resource/
+GeoNames Ontology | gn: | http://www.geonames.org/ontology#
+GeoSciML Geologic Timescale model Ontology | gsml: | http://resource.geosciml.org/ontology/timescale/gts-30#
+Virtual International Authority File | viaf: | http://viaf.org/viaf/
+Extensible Metadata Platform Rights Management vocabulary | xmpRights: | http://ns.adobe.com/xap/1.0/rights/
 
 For brevity, the examples do not include namespace declarations, nor an _rdf:RDF_ container element. If a user wishes to test or validate an example, insert it into the container element defined in [Section 2.1.2](./index.htm#2.1.2_Generating_graphical_diagrams_and_triple_tables_for_the_ex).
 
@@ -377,6 +218,7 @@ For brevity, the examples do not include namespace declarations, nor an _rdf:RDF
 
 The W3C RDF Validation Service \[[W3C\-RDF\-VALIDATOR](http://www.w3.org/RDF/Validator/)\] can be used to generate both a tabular listing and a graphical diagram of the triples that are included in the example XML serializations. Text from the examples can be placed inside the _rdf:RDF_ container element below, then pasted into the validator box to generate the desired output.
 
+```rdf
 <?xml version\="1.0" encoding\="UTF\-8"?>  
 <rdf:RDF  xmlns:rdf\="http://www.w3.org/1999/02/22\-rdf\-syntax\-ns#"  
 xmlns:rdfs\="http://www.w3.org/2000/01/rdf\-schema#"  
@@ -395,6 +237,7 @@ xmlns:viaf\="http://viaf.org/viaf/"
 \>  
 … resource descriptions go here …  
 </rdf:RDF>
+```
 
 ### 2.1.3 Terminology[](./index.htm#2.1.3_Terminology)
 
@@ -402,23 +245,10 @@ xmlns:viaf\="http://viaf.org/viaf/"
 
 **Table 2**
 
-**Subject**
-
-**Predicate**
-
-**Object**
-
-<http://dbpedia.org/resource/Starry\_night>
-
-<http://xmlns.com/foaf/0.1/maker>
-
-<http://viaf.org/viaf/9854560>
-
-_dbres:Starry\_night_
-
-_foaf:maker_
-
-_viaf:9854560_
+Subject | Predicate | Object
+--- | --- | ---
+<http://dbpedia.org/resource/Starry_night> | <http://xmlns.com/foaf/0.1/maker> | <http://viaf.org/viaf/9854560>
+dbres:Starry_night | foaf:maker | viaf:9854560
 
 In the second row of Table 2, the full IRIs are given. In the third row namespace abbreviations are used to shorten the IRIs. The following fragments of RDF shows the triple in RDF/XML and Turtle serializations of the triple shown in Table 2:
 
@@ -426,13 +256,18 @@ In the second row of Table 2, the full IRIs are given. In the third row namespac
 
 RDF/XML
 
+```rdf
 <rdf:Description  rdf:about\="http://dbpedia.org/resource/Starry\_night"\>  
      <foaf:maker  rdf:resource\="http://viaf.org/viaf/9854560"/>  
 </rdf:Description>
+```
 
 Turtle
 
-<http://dbpedia.org/resource/Starry\_night\>foaf:maker <http://viaf.org/viaf/9854560\>.
+```rdf
+<http://dbpedia.org/resource/Starry_night>
+     foaf:maker <http://viaf.org/viaf/9854560>.
+```
 
 The Dublin Core Metadata Initiative (DCMI) Abstract Model \[[DCAM](http://dublincore.org/documents/abstract-model/)\], which was designed to be compatible with RDF, describes subject resources using property\-value pairs, which correspond to pairs of predicates and objects. When referring to Dublin Core terms (as well as Darwin Core, which is modeled on Dublin Core) "property" is used synonymously with "predicate" and "value" is used synonymously with "object". In Example 1, _foaf:maker_ is a property and _viaf:9854560_ is the value associated with that property. Predicates must be identified by IRIs. Objects of triples may be identified in three ways: 1) the object resource can be identified by an IRI reference, 2) the object can be identified by a non\-IRI string, in which case it is called a literal, and 3) the object resource can also be left unidentified, in which case it is called a blank node or an anonymous node. Blank nodes are undesirable if it is important that other data providers be able to refer to the resource they represent. However, blank nodes may be preferable if external references to the resource are not relevant, or if the data provider is unable or unwilling to provide a stable IRI to identify the resource. IRI references and blank nodes can be the subjects of RDF triples, but literals cannot.
 
@@ -444,26 +279,32 @@ If the subject of an RDF triple is identified (i.e., not an anonymous node), it 
 
 The _rdf:about_ attribute of the _rdf:Description_ element is used in RDF/XML to identify the subject of a triple:
 
+```rdf
 <rdf:Description  rdf:about\="http://arctos.database.museum/guid/MVZ:Mamm:165861"\>
+```
 
 ### 2.2.2 Associating a string identifier with a subject resource[](./index.htm#2.2.2_Associating_a_string_identifier_with_a_subject_resource)
 
 The Dublin Core term _dcterms:identifier_ should be used to associate a string literal identifier (e.g., UUID, "Darwin Core Triplet", or ARK) with an IRI\-identified resource as shown here in RDF/XML:
 
+```rdf
 <dcterms:identifier>58D31D52\-713D\-44B4\-9FE9\-CB2D9249C422</dcterms:identifier>  
    
 <dcterms:identifier>MVZ:Mamm:165861</dcterms:identifier>  
   
 <dcterms:identifier>ark:/12025/654xz321</dcterms:identifier>
+```
 
 If an HTTP IRI is considered to be the identifier for a subject resource, it is acceptable to present it as a string literal value for _dcterms:identifier_ in addition to using it in the _rdf:about_ attribute of the subject resource, as in Example 2:
 
 **Example 2:**
 
+```rdf
 <rdf:Description  rdf:about\="http://bioimages.vanderbilt.edu/kirchoff/b5161"\>  
      <rdf:type  rdf:resource  \="http://purl.org/dc/dcmitype/StillImage"  />  
      <dcterms:identifier>http://bioimages.vanderbilt.edu/kirchoff/b5161</dcterms:identifier>  
 </rdf:Description>
+```
 
 ### 2.2.3 Associating a URN with its HTTP\-proxied equivalent[](./index.htm#2.2.3_Associating_a_URN_with_its_HTTP-proxied_equivalent)
 
@@ -473,13 +314,18 @@ The TDWG LSID Applicability Statement standard \[[GUID\-STANDARD](http://www.tdw
 
 RDF/XML
 
+```rdf
 <rdf:Description  rdf:about\="http://biocol.org/urn:lsid:biocol.org:col:35115"\>  
      <owl:sameAs  rdf:resource\="urn:lsid:biocol.org:col:35115"/>  
 </rdf:Description>
+```
 
 Turtle
 
-<http://biocol.org/urn:lsid:biocol.org:col:35115\>owl:sameAs <urn:lsid:biocol.org:col:35115>.
+```rdf
+<http://biocol.org/urn:lsid:biocol.org:col:35115>
+     owl:sameAs <urn:lsid:biocol.org:col:35115>.
+```
 
 Since LSIDs follow the URN IRI scheme, they can serve as the subject of any RDF triple. However, it is better to use the http\-proxied form as the subject (i.e., the value of the _rdf:about_ attribute) in the description of the resource. See the Darwin Core informative ancillary web pages \[[DWC\-RDF\-ANCILLARY](https://code.google.com/p/tdwg-rdf/wiki/DwCAncillary)\] for more information about implementing LSIDs.
 
@@ -501,23 +347,29 @@ The predicate _rdf:type_ is defined to have an object that is a class. The class
 
 RDF/XML
 
+```rdf
 <rdf:Description  rdf:about\="http://bioimages.vanderbilt.edu/baskauf/12226"\>  
      <rdf:type  rdf:resource\="http://purl.org/dc/dcmitype/StillImage"/>  
      <dcterms:created  rdf:datatype\="http://www.w3.org/2001/XMLSchema#dateTime"\>2002\-06\-11T09:37:33</dcterms:created>  
 </rdf:Description>
+```
 
 Turtle:
 
+```rdf
 <http://bioimages.vanderbilt.edu/baskauf/12226\>  
      a dcmitype:StillImage;  
      dcterms:created "2002\-06\-11T09:37:33"^^xsd:dateTime.
+```
 
 In Turtle serialization, _rdf:type_ can be abbreviated as "_a_" (Example 4). In XML serialization, the RDF specification provides an abbreviated way to specify the type of a described resource. This method is called a typed node element \[[TYPED\-NODE](http://www.w3.org/TR/rdf-syntax-grammar/#section-Syntax-typed-nodes)\]. The _rdf:Description_ element is replaced by an element whose name is an XML qualified name that identifies a class of which the described resource is an instance as in Example 5:
 
 **Example 5:**
 
+```rdf
 <dcmitype:StillImage  rdf:about\="http://bioimages.vanderbilt.edu/baskauf/12226"\> <dcterms:created  rdf:datatype\="http://www.w3.org/2001/XMLSchema#dateTime"\>2002\-06\-11T09:37:33</dcterms:created>  
 </dcmitype:StillImage>
+```
 
 This example serializes the exact same two triples as Example 4. The _rdf:type_ triple is implied by the container element name.
 
@@ -529,7 +381,9 @@ P rdfs:domain C
 
 is used to describe a subject resource, a client can infer that the subject resource is an instance of class _C_. For example, the term _dcterms:bibliographicCitation_ is assigned the property
 
+```rdf
 <rdfs:domain  rdf:resource\="http://purl.org/dc/terms/BibliographicResource"/>
+```
 
 in its definition. If that term were used as the property of a specimen, a client could infer that the specimen had _rdf:type_ _dcterms:BibliographicResource_:
 
