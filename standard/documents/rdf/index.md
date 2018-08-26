@@ -941,53 +941,13 @@ There are several groups of convenience terms in the _dwc:_ namespace which may 
 
 **Table 6**
 
-**Category of convenience term**
-
-**Object property**
-
-**Category of object resource**
-
-**_rdf:type_ of example resource**
-
-ownership of collection item ([Section 2.7.3](./index.htm#2.7.3_Ownership_of_a_collection_item))
-
-_dwciri:inCollection_
-
-collection
-
-not specified
-
-description of a taxonomic entity ([Section 2.7.4](./index.htm#2.7.4_Description_of_a_taxonomic_entity))
-
-_dwciri:toTaxon_
-
-taxon concept; taxon name use
-
-_dwc:Taxon_
-
-names of geographic subdivisions ([Section 2.7.5](./index.htm#2.7.5_Names_of_geographic_subdivisions))
-
-_dwciri:inDescribedPlace_
-
-geographic place
-
-_gn:Feature_
-
-chronostratographic (geological timescale) description ([Section 2.7.6](./index.htm#2.7.6_Chronostratographic_(geological_timescale)_descriptors))
-
-_dwciri:earliestGeochronologicalEra_ _dwciri:latestGeochronologicalEra_
-
-geochronological time period
-
-_gsml:GeochronologicEra_
-
-lithostratigraphy descriptors ([Section 2.7.7](./index.htm#2.7.7_Lithostratigraphy_descriptors))
-
-_dwciri:fromLithostratigraphicUnit_
-
-lithostratigraphic unit
-
-not specified
+Category of convenience term | Object property | Category of object resource | rdf:type of example resource
+--- | --- | --- | ---
+ownership of collection item (Section 2.7.3) | dwciri:inCollection | collection | not specified
+description of a taxonomic entity (Section 2.7.4) | dwciri:toTaxon | taxon concept; taxon name use | dwc:Taxon
+names of geographic subdivisions (Section 2.7.5) | dwciri:inDescribedPlace | geographic place | gn:Feature
+chronostratographic (geological timescale) description (Section 2.7.6) | dwciri:earliestGeochronologicalEra dwciri:latestGeochronologicalEra | geochronological time period | gsml:GeochronologicEra
+lithostratigraphy descriptors (Section 2.7.7) | dwciri:fromLithostratigraphicUnit | lithostratigraphic unit | not specified
 
 ### 2.7.3 Ownership of a collection item[](./index.htm#2.7.3_Ownership_of_a_collection_item)
 
@@ -995,25 +955,9 @@ Historically, the set of values for _dwc:institutionCode_, _dwc:collectionCode_,
 
 **Table 7**
 
-**_dwc:basisOfRecord_**
-
-**_dwc:institutionCode_**
-
-**_dwc:collectionCode_**
-
-**_dwc:catalogNumber_**
-
-**_dwc:collectionID_**
-
-"PreservedSpecimen"
-
-"MVZ"
-
-"Mamm"
-
-"115956"
-
-"urn:lsid:biocol.org:col:34904"
+dwc:basisOfRecord | dwc:institutionCode | dwc:collectionCode | dwc:catalogNumber | dwc:collectionID
+--- | --- | --- | --- | ---
+"PreservedSpecimen" | "MVZ" | "Mamm" | "115956" | "urn:lsid:biocol.org:col:34904"
 
 In RDF, unique identification of collection items is done through the IRI which acts as a globally unique identifier for that item. The Darwin Core triplet properties may still be provided as literal values, but ownership/control of the collection item should be indicated using _dwciri:inCollection_ with an HTTP IRI as the IRI\-reference object. For physical specimens, the recommended best practice is to use a collection IRI from a collections registry such as an HTTP\-proxied LSID from the Global Registry of Biorepositories \[[GRBIO](http://grbio.org/)\]. Example 24 illustrates this for the data from Table 7.
 
@@ -1021,6 +965,7 @@ In RDF, unique identification of collection items is done through the IRI which 
 
 RDF/XML
 
+```rdf
 <rdf:Description  rdf:about\="http://arctos.database.museum/guid/MVZ:Mamm:115956"\>  
      <rdf:type  rdf:resource\="http://rs.tdwg.org/dwc/terms/PreservedSpecimen"/>  
      <dwc:institutionCode>MVZ</dwc:institutionCode>  
@@ -1028,14 +973,17 @@ RDF/XML
      <dwc:catalogNumber>115956</dwc:catalogNumber>  
      <dwciri:inCollection  rdf:resource\="http://biocol.org/urn:lsid:biocol.org:col:34904"/>  
 </rdf:Description>
+```
 
 Turtle
 
+```turtle
 <http://arctos.database.museum/guid/MVZ:Mamm:115956\>a dwc:PreservedSpecimen;  
      dwc:collectionCode "Mamm";  
      dwc:institutionCode "MVZ";  
      dwc:catalogNumber "115956";  
      dwciri:inCollection <http://biocol.org/urn:lsid:biocol.org:col:34904\>.
+```
 
 ### 2.7.4 Description of a taxonomic entity[](./index.htm#2.7.4_Description_of_a_taxonomic_entity)
 
@@ -1047,33 +995,9 @@ Consider the following example where Takuma Yun identified a spider to the speci
 
 **Table 8**
 
-**_dwc:identificationID_**
-
-**_dwc:identifiedBy_**
-
-**_dwc:order_**
-
-**_dwc:family_**
-
-**_dwc:genus_**
-
-**_dwc:specificEpithet_**
-
-**_dwc:nameAccordingToID_**
-
-"75C9EA16\-72B1\-44C9\-AD40\-3C3A41323A09"
-
-"Takuma Yun"
-
-"Araneae"
-
-"Hersiliidae"
-
-"Hersilia"
-
-"yaeyamaensis"
-
-"75C9EA16\-72B1\-44C9\-AD40\-3C3D41323AB9"
+dwc:identificationID | dwc:identifiedBy | dwc:order | dwc:family | dwc:genus | dwc:specificEpithet | dwc:nameAccordingToID
+--- | --- | --- | --- | --- | --- | ---
+"75C9EA16-72B1-44C9-AD40-3C3A41323A09" | "Takuma Yun" | "Araneae" | "Hersiliidae" | "Hersilia" | "yaeyamaensis" | "75C9EA16-72B1-44C9-AD40-3C3D41323AB9"
 
 In this example, a best practice would be to link the identification instance to a taxon instance of _Hersilia yaeyamaensis_ sec. Tanikawa 1999 using the object property _dwciri:toTaxon_ as shown in Example 22. However, the data provider may be uninterested, or unable to mint or discover a taxon instance to which the identification instance can be linked. The provider may simply wish to make it easier to discover the identification instance and be unconcerned about the taxonomic relationships that might be asserted for concepts that may be defined for the listed name components. In that case the provider can use the following RDF:
 
@@ -1081,6 +1005,7 @@ In this example, a best practice would be to link the identification instance to
 
 RDF/XML
 
+```rdf
 <rdf:Description  rdf:about\="http://museum.or.jp/9AC9BD26\-8B41\-458A\-AA35\-503A4527D009"\>  
      <rdf:type  rdf:resource\="http://rs.tdwg.org/dwc/terms/Identification"/>  
      <dwc:identifiedBy>Takuma Yun</dwc:identifiedBy>  
@@ -1090,9 +1015,11 @@ RDF/XML
      <dwc:specificEpithet>yaeyamaensis</dwc:specificEpithet>  
      <dwc:nameAccordingTo>Tanikawa 1999</dwc:nameAccordingTo>  
 </rdf:Description>
+```
 
 Turtle:
 
+```turtle
 <http://museum.or.jp/9AC9BD26\-8B41\-458A\-AA35\-503A4527D009\>  
      a dwc:Identification;  
      dwc:identifiedBy "Takuma Yun";  
@@ -1101,14 +1028,19 @@ Turtle:
      dwc:genus "Hersilia";  
      dwc:specificEpithet "yaeyamaensis";  
      dwc:nameAccordingTo "Tanikawa 1999".
+```
 
 In the example, providing the triple
 
+```rdf
 <http://museum.or.jp/9AC9BD26\-8B41\-458A\-AA35\-503A4527D009\> dwc:order  “Araneae”
+```
 
 should not be taken to imply that Takuma Yun asserted that the spider he identified was classified within the order Araneae, nor should the RDF be assumed to imply that Takuma Yun asserted that Aranaeae is the name of a parent taxon of the genus _Hersilia_. Those sorts of assertions would need to be made using more complex RDF and a more expressive vocabulary outside of Darwin Core. The RDF simply makes it easier for users who are looking for spider identifications to search for them by looking for identifications having _dwc:order_ of “Araneae”, _dcw:genus_ of “Hersilia”, and a specific epithet of “yaeyamaensis”. If it can be determined (perhaps at a later time) that the taxon described by the convenience terms corresponds to a particular IRI\-identified instance, the identification instance can be linked to it using an object property, e.g.,
 
+```rdf
 <http://muse.or.jp/9AC9BD26\-8B41\-458A\-AA35\-503A4527D009\> dwciri:toTaxon <http://zoobank.org/75C9EA16\-72B1\-44C9\-AD40\-3C3D41323AB9\>
+```
 
 ### 2.7.5 Names of geographic subdivisions[](./index.htm#2.7.5_Names_of_geographic_subdivisions)
 
@@ -1118,6 +1050,7 @@ The data from Table 5 can be expressed as shown in Example 26. In the example, t
 
 RDF/XML
 
+```rdf
 <rdf:Description  rdf:about\="http://bioimages.vanderbilt.edu/baskauf/00001#loc"\>  
      <rdf:type  rdf:resource\="http://purl.org/dc/terms/Location"/>  
      <dwc:decimalLatitude  rdf:datatype\="http://www.w3.org/2001/XMLSchema#decimal"\>36.4024</dwc:decimalLatitude>  
@@ -1129,9 +1062,11 @@ RDF/XML
      <dwc:county>Robertson</dwc:county>  
      <dwciri:inDescribedPlace  rdf:resource\="http://sws.geonames.org/4653638/"/>  
 </rdf:Description>
+```
 
 Turtle
 
+```turtle
 <http://bioimages.vanderbilt.edu/baskauf/00001#loc\>a dcterms:Location;  
      dwc:decimalLatitude "36.4024"^^xsd:decimal;  
      dwc:decimalLongitude "\-87.02219"^^xsd:decimal;  
@@ -1141,6 +1076,7 @@ Turtle
      dwc:stateProvince "Tennessee";  
      dwc:county "Robertson";  
      dwciri:inDescribedPlace <http://sws.geonames.org/4653638/>.
+```
 
 Because generic RDF places no restrictions on repeating properties, a _dcterms:Location_ instance could have multiple _dwciri:inDescribedPlace_ properties if the location is included within several described geographic subdivisions. For example, a particular location could be included within <http://sws.geonames.org/4626068/> (The Great Smoky Mountains National Park which straddles two states) and <http://sws.geonames.org/4656568/> (Sevier County, Tennessee, US, which is the lowest level political subdivision).
 
@@ -1150,25 +1086,9 @@ The following example is taken from [http://dx.doi.org/10.1098/rsbl.2011.0228](h
 
 **Table 9**
 
-**_dwc:formation_**
-
-**_dwc:earliestEonOrLowestEonothem dwc:latestEonOrHighestEonothem_**
-
-**_dwc:earliestEraOrLowestErathem dwc:latestEraOrHighestErathem_**
-
-**_dwc:earliestPeriodOrLowestSystem dwc:latestPeriodOrHighestSystem_**
-
-**_dwc:earliestEpochOrLowestSeries dwc:latestEpochOrHighestSeries_**
-
-"Jiu\-longshan"
-
-"Phanerozoic"
-
-"Mesozoic"
-
-"Jurassic"
-
-"Middle"
+dwc:formation | dwc:earliestEonOrLowestEonothem dwc:latestEonOrHighestEonothem | dwc:earliestEraOrLowestErathem dwc:latestEraOrHighestErathem | dwc:earliestPeriodOrLowestSystem dwc:latestPeriodOrHighestSystem | dwc:earliestEpochOrLowestSeries dwc:latestEpochOrHighestSeries
+--- | --- | --- | --- | ---
+"Jiu-longshan" | "Phanerozoic" | "Mesozoic" | "Jurassic" | "Middle"
 
 Example 27 shows how this can be rendered as RDF using the Darwin Core stratigraphic timescale terms as convenience terms.
 
@@ -1176,11 +1096,14 @@ Example 27 shows how this can be rendered as RDF using the Darwin Core stratigra
 
 RDF/XML
 
+```rdf
 <rdf:Description  rdf:about\="http://paleo.cnu.edu.cn/ara/nn2010008#context"\> <rdf:type  rdf:resource\="http://rs.tdwg.org/dwc/terms/GeologicalContext"/> <dwc:formation>Jiu\-longshan</dwc:formation> <dwc:earliestEonOrLowestEonothem>Phanerozoic</dwc:earliestEonOrLowestEonothem> <dwc:latestEonOrHighestEonothem>Phanerozoic</dwc:latestEonOrHighestEonothem> <dwc:earliestEraOrLowestErathem>Mesozoic</dwc:earliestEraOrLowestErathem> <dwc:latestEraOrHighestErathem>Mesozoic</dwc:latestEraOrHighestErathem> <dwc:earliestPeriodOrLowestSystem>Jurassic</dwc:earliestPeriodOrLowestSystem> <dwc:latestPeriodOrHighestSystem>Jurassic</dwc:latestPeriodOrHighestSystem> <dwc:earliestEpochOrLowestSeries>Middle</dwc:earliestEpochOrLowestSeries> <dwc:latestEpochOrHighestSeries>Middle</dwc:latestEpochOrHighestSeries> <dwciri:earliestGeochronologicalEra  rdf:resource\="http://resource.geosciml.org/classifier/ics/ischart/MiddleJurassic"/> <dwciri:latestGeochronologicalEra  rdf:resource\="http://resource.geosciml.org/classifier/ics/ischart/MiddleJurassic"/>  
 </rdf:Description>
+```
 
 Turtle
 
+```turtle
 <http://paleo.cnu.edu.cn/ara/nn2010008#context\>a dwc:GeologicalContext;  
      dwc:formation "Jiu\-longshan";  
      dwc:earliestEonOrLowestEonothem "Phanerozoic";  
@@ -1193,6 +1116,7 @@ Turtle
      dwc:latestEpochOrHighestSeries "Middle";  
      dwciri:earliestGeochronologicalEra <http://resource.geosciml.org/classifier/ics/ischart/MiddleJurassic\>;  
      dwciri:latestGeochronologicalEra <http://resource.geosciml.org/classifier/ics/ischart/MiddleJurassic\>.
+```
 
 In this example, the object properties _dwciri:earliestGeochronologicalEra_ and _dwciri:latestGeochronologicalEra_ link to an IRI that identifies an instance of the _gsml:GeochronologicEra_ class which uses SKOS to relate the Middle Jurassic epoch to higher levels in the geochronological hierarchy.
 
@@ -1208,9 +1132,11 @@ Darwin Core contains a number of terms whose local name begins with "associated"
 
 The information encoded by a Darwin Core association term property/value pair can be broken down into three components:
 
--   a link to a related resource
--   a designation of the type of the related resource
--   (for some terms) a description of the nature of the relationship including its direction
+<ul>
+<li>-   a link to a related resource</li>
+<li>-   a designation of the type of the related resource</li>
+<li>-   (for some terms) a description of the nature of the relationship including its direction</li>
+</ul>
 
 The related resource is designated by some sort of identifier present in the literal value. The type of the related resource is implied by the second part of the local name (e.g., "Media", "Occurrences", etc.). The definitions of some of the terms (_dwc:associatedTaxa_, _dwc:associatedOccurrences_, and _dwc:associatedOrganisms_) also specify that the nature of the association with the subject resource should also be included in the literal value ("sibling of", "predator of ", etc.).
 
@@ -1220,17 +1146,9 @@ A database might contain the information shown in Table 10.
 
 **Table 10**
 
-**_dwc:organismID_**
-
-**_dwc:associatedOrganisms_**
-
-**_dwc:associatedMedia_**
-
-"[http://bioimages.vanderbilt.edu/ind\-durandp/dd343](http://bioimages.vanderbilt.edu/ind-durandp/dd343)"
-
-"sibling of AX3467"
-
-"[http://bioimages.vanderbilt.edu/durandp/dd343 | http://bioimages.vanderbilt.edu/durandp/dd344](http://bioimages.vanderbilt.edu/durandp/dd343%7Chttp://bioimages.vanderbilt.edu/durandp/dd344)"
+dwc:organismID | dwc:associatedOrganisms | dwc:associatedMedia
+--- | --- | ---
+"http://bioimages.vanderbilt.edu/ind-durandp/dd343" | "sibling of AX3467" | "http://bioimages.vanderbilt.edu/durandp/dd343 | http://bioimages.vanderbilt.edu/durandp/dd344"
 
 These data can be serialized as RDF using the _dwc:_ namespace literal value terms _dwc:associatedOrganisms_ and _dwc:associatedMedia_ as shown in Example 28.
 
@@ -1238,17 +1156,21 @@ These data can be serialized as RDF using the _dwc:_ namespace literal value ter
 
 RDF/XML
 
+```rdf
 <rdf:Description  rdf:about\="http://bioimages.vanderbilt.edu/ind\-durandp/dd343"\>  
      <rdf:type  rdf:resource\="http://rs.tdwg.org/dwc/terms/Organism"/> <dwc:associatedOrganisms>sibling of AX3467</dwc:associatedOrganisms>  
      <dwc:associatedMedia>http://bioimages.vanderbilt.edu/durandp/dd343 | http://bioimages.vanderbilt.edu/durandp/dd344</dwc:associatedMedia>  
 </rdf:Description>
+```
 
 Turtle:
 
+```turtle
 <http://bioimages.vanderbilt.edu/ind\-durandp/dd343\>  
      a dwc:Organism;  
      dwc:associatedOrganisms "sibling of AX3467";  
      dwc:associatedMedia "http://bioimages.vanderbilt.edu/durandp/dd343 | http://bioimages.vanderbilt.edu/durandp/dd344".
+```
 
 Because the values of the association terms are literals, a consuming client would need to carry out additional processing to determine the identity of the associated resources referenced in the literals. In the case of the value for _dwc:associatedOrgansims_, the client would have to determine that the substring "AX3467" was an identifier for the organism and determine the nature of the relationship represented by the substring "sibling of". In the case of the value for _dwc:associatedMedia_, the client would need to parse the identifiers included in the value string, then determine that those substrings were IRIs.
 
@@ -1270,6 +1192,7 @@ Example 29 shows how the data presented in Table 10 may be expressed as RDF usin
 
 RDF/XML
 
+```rdf
 <rdf:Description  rdf:about\="http://bioimages.vanderbilt.edu/ind\-durandp/dd343"\>  
      <rdf:type  rdf:resource\="http://rs.tdwg.org/dwc/terms/Organism"/>  
      <dcterms:relation  rdf:resource\="http://museum.org/individuals/ax3467"/>  
@@ -1288,9 +1211,11 @@ RDF/XML
 <rdf:Description  rdf:about\="http://bioimages.vanderbilt.edu/durandp/dd344"\>  
      <rdf:type  rdf:resource\="http://purl.org/dc/dcmitype/StillImage"/>  
 </rdf:Description>
+```
 
 Turtle:
 
+```turtle
 <http://bioimages.vanderbilt.edu/ind\-durandp/dd343\>a dwc:Organism;  
      dcterms:relation <http://museum.org/individuals/ax3467\>;  
      dcterms:relation <http://bioimages.vanderbilt.edu/durandp/dd343\>;  
@@ -1304,6 +1229,7 @@ Turtle:
      a dcmitype:StillImage.  
 <http://bioimages.vanderbilt.edu/durandp/dd344\>  
      a dcmitype:StillImage.
+```
 
 Notes:
 
@@ -1319,11 +1245,13 @@ If the strategy outlined in [Section 2.8.3](./index.htm#2.8.3_Expressing_Darwin_
 
 SPARQL
 
+```sparql
 PREFIX dcterms:  <http://purl.org/dc/terms/>  
 PREFIX dcmitype:  <http://purl.org/dc/dcmitype/>SELECT ?resource WHERE {  
  <iri1> dcterms:relation ?resource.  
  ?resource a dcmitype:StillImage.  
  }
+ ```
 
 ## 2.9 MeasurementOrFact instances[](./index.htm#2.9_MeasurementOrFact_instances)
 
@@ -1335,11 +1263,14 @@ Measurement properties can be grouped as part of a _dwc:MeasurementOrFact_ insta
 
 RDF/XML
 
+```rdf
 <dwc:Occurrence  rdf:about\="http://mczbase.mcz.harvard.edu/guid/MCZ:Mamm:67231"\> <dcterms:relation>  <dwc:MeasurementOrFact> <dwc:measurementType>tail length</dwc:measurementType> <dwciri:measurementType  rdf:resource\="http://purl.obolibrary.org/obo/VT\_0002758"  /> <dwc:measurementValue  rdf:datatype\="http://www.w3.org/2001/XMLSchema#int"\>25</dwc:measurementValue> <dwc:measurementUnit>mm</dwc:measurementUnit>  <dwciri:measurementUnit  rdf:resource\="http://mimi.case.edu/ontologies/2009/1/UnitsOntology#millimeter"/> <dwc:measurementAccuracy  rdf:datatype\="http://www.w3.org/2001/XMLSchema#decimal"\>0.5</dwc:measurementAccuracy> <dwc:measurementDeterminedDate  rdf:datatype\="http://www.w3.org/2001/XMLSchema#date"\>2009\-08\-22</dwc:measurementDeterminedDate> <dwc:measurementDeterminedBy>Ryan B Stephens</dwc:measurementDeterminedBy> <dwciri:measurementDeterminedBy  rdf:resource\="http://scholar.google.com/citations?user=RAsUdjoAAAAJ"  /> <dwc:measurementMethod>unspecified</dwc:measurementMethod> <dwciri:measurementMethod  rdf:resource\="http://purl.obolibrary.org/obo/MMO\_0000160"  /> <dwc:measurementRemarks  xml:lang\="en"\>Accuracy from significant digits.</dwc:measurementRemarks>  </dwc:MeasurementOrFact> </dcterms:relation>  
 </dwc:Occurrence>
+```
 
 Turtle
 
+```turtle
 <http://mczbase.mcz.harvard.edu/guid/MCZ:Mamm:67231\> a dwc:Occurrence;  
      dcterms:relation \[a dwc:MeasurementOrFact ;   
           dwc:measurementType "tail length" ;   
@@ -1354,6 +1285,7 @@ Turtle
           dwc:measurementMethod "unspecified" ;   
           dwciri:measurementMethod <http://purl.obolibrary.org/obo/MMO\_0000160\> ;   
           dwc:measurementRemarks "Accuracy from significant digits."@en\].
+```
 
 # 3 Term reference[](./index.htm#3._Term_reference)
 
@@ -1361,865 +1293,164 @@ This section organizes terms from Darwin Core and other key vocabularies accordi
 
 ## 3.1 Non\-Darwin Core terms needed to express fundamental properties in RDF[](./index.htm#3.1_Non-Darwin_Core_terms_needed_to_express_fundamental_properti)
 
-**term**
-
-**Notes**
-
-rdf:type
-
-Used to indicate the class of which the resource is an instance. It is considered a best practice to type resources using _rdf:type_, whereas type declarations using _dcterms:type_ and _dwc:basisOfRecord_ are optional. See [Section 2.3.1.5](./index.htm#2.3.1.5_Classes_to_be_used_for_type_declarations_of_resources_de) for recommended classes to be used with biodiversity resources.
-
-dcterms:identifier
-
-Used to relate string literal identifiers to the subject resource. This can include string representations of IRIs if they are considered the identifier for the resource.
-
-dcterms:relation
-
-Used to link subject and object resources that have an unspecified association.
+term | Notes
+--- | ---
+rdf:type | Used to indicate the class of which the resource is an instance. It is considered a best practice to type resources using rdf:type, whereas type declarations using dcterms:type and dwc:basisOfRecord are optional. See Section 2.3.1.5 for recommended classes to be used with biodiversity resources.
+dcterms:identifier | Used to relate string literal identifiers to the subject resource. This can include string representations of IRIs if they are considered the identifier for the resource.
+dcterms:relation | Used to link subject and object resources that have an unspecified association.
 
 ## 3.2 Imported Dublin Core terms for which only literal objects are appropriate[](./index.htm#3.2_Imported_Dublin_Core_terms_for_which_only_literal_objects_ar)
 
-**term**
+term | domain | range
+--- | --- | ---
+dcterms:modified | --- | rdfs:Literal[^1]
+dcterms:bibliographicCitation | dcterms:BibliographicResource | rdfs:Literal
 
-**domain**
-
-**range**
-
-dcterms:modified
-
-\-\-\-
-
-rdfs:Literal1
-
-dcterms:bibliographicCitation
-
-dcterms:BibliographicResource
-
-rdfs:Literal
-
-1 Recommended format is ISO 8601:2004(E) \[[ISO\-DATES](http://en.wikipedia.org/wiki/ISO_8601)\]. See notes on date terms in [Section 3.4](./index.htm#3.4_Terms_defined_by_Darwin_Core_that_are_expected_to_be_used_on) for further information.
+[^1]: Recommended format is ISO 8601:2004(E) \[[ISO\-DATES](http://en.wikipedia.org/wiki/ISO_8601)\]. See notes on date terms in [Section 3.4](./index.htm#3.4_Terms_defined_by_Darwin_Core_that_are_expected_to_be_used_on) for further information.
 
 ## 3.3 Imported Dublin Core terms that have non\-literal objects and corresponding terms that have literal objects[](./index.htm#3.3_Imported_Dublin_Core_terms_that_have_non-literal_objects_and)
 
-**Term intended for use in RDF with non\-literal objects**2
+Term intended for use in RDF with non-literal objects[^2] | range | recommended values[^3] | Term intended for use in RDF with literal objects
+dcterms:language | dcterms:LinguisticSystem | MARC ISO 639-2 language IRI | dc:language
+dcterms:license[^4] | dcterms:LicenseDocument | Creative Commons license IRI | xmpRights:UsageTerms[^5]
+dcterms:type | rdfs:Class | DCMI Type Vocabulary | dc:type
+dcterms:rightsHolder | dcterms:Agent | IRI for the agent owning or managing the rights. | xmpRights:Owner[^6]
+dcterms:accessRights | dcterms:RightsStatement | A custom RDF rights statement could be created describing who can access the resource or an indication of its security status. | No literal object analogue exists for this term. The string value can be expressed as a property of a blank node.[^7]
+dcterms:references | --- | IRI for a publication (preferably an HTTP-proxied DOI) related to the subject resource. | Use dwc:identificationReferences for a reference consulted in making an taxonomic identification and dwc:associatedReferences for references related to occurrences.
 
-**range**
+[^2]: None of these _dcterms:_ namespace terms have domain declarations.
 
-**recommended values**3
+[^3]: For recommended controlled values, see the document "Sources of well\-known controlled value IRIs", accessible from the Darwin Core informative ancillary web pages \[[DWC\-RDF\-ANCILLARY](https://code.google.com/p/tdwg-rdf/wiki/DwCAncillary)\]
 
-**Term intended for use in RDF with literal objects**
+[^4]: For more information about linking a creative work to its license, see the document "Sources of well\-known controlled value IRIs", accessible from the Darwin Core informative ancillary web pages \[[DWC\-RDF\-ANCILLARY](https://code.google.com/p/tdwg-rdf/wiki/DwCAncillary)\]
 
-dcterms:language
+[^5]: DCMI does not provide a literal object analogue of _dcterms:license_. Audubon Core \[[AUDUBON\-CORE](http://terms.tdwg.org/wiki/Audubon_Core)\] recommends _xmpRights:UsageTerms_ for literals.
 
-dcterms:LinguisticSystem
+[^6]: DCMI does not provide a literal object analogue of _dcterms:rightsHolder_. Audubon Core \[[AUDUBON\-CORE](http://terms.tdwg.org/wiki/Audubon_Core)\] recommends _xmpRights:Owner_ for literals. However, since _xmpRights:Owner_ is defined as "a list of legal owners of the resource" \[[XMP\-SPECIFICATION](http://www.adobe.com/content/dam/Adobe/en/devnet/xmp/pdfs/XMPSpecificationPart1.pdf)\], it can only be used to specify the rights owner, not an agent managing the rights.
 
-MARC ISO 639\-2 language IRI
-
-dc:language
-
-dcterms:license4
-
-dcterms:LicenseDocument
-
-Creative Commons license IRI
-
-xmpRights:UsageTerms5
-
-dcterms:type
-
-rdfs:Class
-
-DCMI Type Vocabulary
-
-dc:type
-
-dcterms:rightsHolder
-
-dcterms:Agent
-
-IRI for the agent owning or managing the rights.
-
-xmpRights:Owner6
-
-dcterms:accessRights
-
-dcterms:RightsStatement
-
-A custom RDF rights statement could be created describing who can access the resource or an indication of its security status.
-
-No literal object analogue exists for this term. The string value can be expressed as a property of a blank node.7
-
-dcterms:references
-
-\-\-\-
-
-IRI for a publication (preferably an HTTP\-proxied DOI) related to the subject resource.
-
-Use _dwc:identificationReferences_ for a reference consulted in making an taxonomic identification and _dwc:associatedReferences_ for references related to occurrences.
-
-2 None of these _dcterms:_ namespace terms have domain declarations.
-
-3 For recommended controlled values, see the document "Sources of well\-known controlled value IRIs", accessible from the Darwin Core informative ancillary web pages \[[DWC\-RDF\-ANCILLARY](https://code.google.com/p/tdwg-rdf/wiki/DwCAncillary)\]
-
-4 For more information about linking a creative work to its license, see the document "Sources of well\-known controlled value IRIs", accessible from the Darwin Core informative ancillary web pages \[[DWC\-RDF\-ANCILLARY](https://code.google.com/p/tdwg-rdf/wiki/DwCAncillary)\]
-
-5 DCMI does not provide a literal object analogue of _dcterms:license_. Audubon Core \[[AUDUBON\-CORE](http://terms.tdwg.org/wiki/Audubon_Core)\] recommends _xmpRights:UsageTerms_ for literals.
-
-6 DCMI does not provide a literal object analogue of _dcterms:rightsHolder_. Audubon Core \[[AUDUBON\-CORE](http://terms.tdwg.org/wiki/Audubon_Core)\] recommends _xmpRights:Owner_ for literals. However, since _xmpRights:Owner_ is defined as "a list of legal owners of the resource" \[[XMP\-SPECIFICATION](http://www.adobe.com/content/dam/Adobe/en/devnet/xmp/pdfs/XMPSpecificationPart1.pdf)\], it can only be used to specify the rights owner, not an agent managing the rights.
-
-7 See the DCMI accessRights guidelines \[[DC\-ACCESSRIGHTS](http://wiki.dublincore.org/index.php/User_Guide/Publishing_Metadata#dcterms:accessRights)\] for an example.
+[^7]: See the DCMI accessRights guidelines \[[DC\-ACCESSRIGHTS](http://wiki.dublincore.org/index.php/User_Guide/Publishing_Metadata#dcterms:accessRights)\] for an example.
 
 ## 3.4 Terms defined by Darwin Core that are expected to be used only with literal values[](./index.htm#3.4_Terms_defined_by_Darwin_Core_that_are_expected_to_be_used_on)
 
-**Darwin Core term**
+Darwin Core term | Notes on expressing as RDF
+--- | ---
+dwc:eventDate</br>dwc:georeferencedDate</br>dwc:dateIdentified</br>dwc:relationshipEstablishedDate</br>dwc:measurementDeterminedDate | These date terms have range rdfs:Literal[^8]. Best practice as specified in the term definition recommends that they should be formatted according to ISO 8601:2004(E). There is no defined XML Schema datatype that corresponds exactly to ISO 8601:2004(E), therefore the entire set of possible values cannot be specified using an rdf:datatype attribute. The XML Schema dateTime datatype (xsd:dateTime) which is effectively a subset of ISO 8601:2004(E), may be used as an rdf:datatype attribute. However, xsd:dateTime requires the complete series of year, month, day, hour, second (e.g., 002-10-10T12:00:00) and does not permit listing only part of this hierarchy (e.g., only the year) as is allowed in ISO 8601:2004(E).
+dwc:eventTime | It is recommended that the format described by ISO 8601:2004(E) be used. As with the date terms, there is no XML Schema datatype that includes all of the possible values allowed in ISO 8601:2004(E), so there is no generic rdf:datatype attribute that would apply to all possible instances. The XML Schema time datatype (xsd:time) which is effectively a subset of ISO 8601:2004(E) may be used as an rdf:datatype attribute although it is limited to values that include hours, minutes, and seconds (e.g., 13:07:56-05:00).
+dwc:individualCount</br>dwc:decimalLatitude</br>dwc:decimalLongitude</br>dwc:coordinatePrecision</br>dwc:pointRadiusSpatialFit</br>dwc:coordinateUncertaintyInMeters</br>dwc:minimumElevationInMeters</br>dwc:maximumElevationInMeters</br>dwc:minimumDepthInMeters</br>dwc:maximumDepthInMeters</br>dwc:minimumDistanceAboveSurfaceInMeters</br>dwc:maximumDistanceAboveSurfaceInMeters</br>dwc:startDayOfYear</br>dwc:endDayOfYear</br>dwc:year</br>dwc:month</br>dwc:day</br>dwc:footprintSpatialFit</br>dwc:measurementValue</br>dwc:measurementAccuracy | These terms are expected to have literal values that are numeric. Therefore, an rdf:datatype attribute describing the form of the number should be used.
+dwc:occurrenceRemarks</br>dwc:eventRemarks</br>dwc:locationRemarks</br>dwc:georeferenceRemarks</br>dwc:identificationRemarks</br>dwc:taxonRemarks</br>dwc:organismRemarks</br>dwc:relationshipRemarks</br>dwc:measurementRemarks | Because these are remarks, they are expected to have literal values with an xml:lang attribute.
+dwc:catalogNumber</br>dwc:samplingEffort</br>dwc:organismName</br>dwc:verbatimEventDate</br>dwc:verbatimLocality</br>dwc:verbatimElevation</br>dwc:verbatimCoordinates</br>dwc:verbatimLatitude</br>dwc:verbatimLongitude</br>dwc:verbatimDepth</br>dwc:verbatumTaxonRank | Based on their term definitions, these terms are expected to have untyped literal values
+dwc:otherCatalogNumbers | There is no simple mapping because of the kinds of identifiers people use and variety of relationships that there may be among identifiers. For non-IRI identifiers expressed as string values, the string may be provided as a literal value of dwc:otherCatalogNumbers. Whether this is preferable to providing multiple dwc:catalogNumber properties may depend on community practice. owl:sameAs may be used to associate other IRI identifiers with the subject IRI if that is appropriate.
+dwc:basisOfRecord | Use only with literal value strings consisting of the local name component of Darwin Core class IRIs. Use rdf:type to refer to IRIs that describe the type of the resource.
+dwc:dynamicProperties | Expected to contain JSON as a literal. Communities of practice might choose to use other vocabularies or develop their own vocabularies to express this sort of content directly as RDF.
 
-**Notes on expressing as RDF**
-
-dwc:eventDate
-
-dwc:georeferencedDate
-
-dwc:dateIdentified
-
-dwc:relationshipEstablishedDate
-
-dwc:measurementDeterminedDate
-
-These date terms have range _rdfs:Literal_ 8. Best practice as specified in the term definition recommends that they should be formatted according to ISO 8601:2004(E). There is no defined XML Schema datatype that corresponds exactly to ISO 8601:2004(E), therefore the entire set of possible values cannot be specified using an _rdf:datatype_ attribute. The XML Schema dateTime datatype (_xsd:dateTime_) which is effectively a subset of ISO 8601:2004(E), may be used as an _rdf:datatype_ attribute. However, _xsd:dateTime_ requires the complete series of year, month, day, hour, second (e.g., 002\-10\-10T12:00:00) and does not permit listing only part of this hierarchy (e.g., only the year) as is allowed in ISO 8601:2004(E).
-
-dwc:eventTime
-
-It is recommended that the format described by ISO 8601:2004(E) be used. As with the date terms, there is no XML Schema datatype that includes all of the possible values allowed in ISO 8601:2004(E), so there is no generic _rdf:datatype_ attribute that would apply to all possible instances. The XML Schema time datatype (_xsd:time_) which is effectively a subset of ISO 8601:2004(E) may be used as an _rdf:datatype_ attribute although it is limited to values that include hours, minutes, and seconds (e.g., 13:07:56\-05:00).
-
-dwc:individualCount
-
-dwc:decimalLatitude
-
-dwc:decimalLongitude
-
-dwc:coordinatePrecision
-
-dwc:pointRadiusSpatialFit
-
-dwc:coordinateUncertaintyInMeters
-
-dwc:minimumElevationInMeters
-
-dwc:maximumElevationInMeters
-
-dwc:minimumDepthInMeters
-
-dwc:maximumDepthInMeters
-
-dwc:minimumDistanceAboveSurfaceInMeters
-
-dwc:maximumDistanceAboveSurfaceInMeters
-
-dwc:startDayOfYear
-
-dwc:endDayOfYear
-
-dwc:year
-
-dwc:month
-
-dwc:day
-
-dwc:footprintSpatialFit
-
-dwc:measurementValue
-
-dwc:measurementAccuracy
-
-dwc:sampleSizeValue
-
-dwc:organismQuantity
-
-These terms are expected to have literal values that are numeric. Therefore, an _rdf:datatype_ attribute describing the form of the number should be used.
-
-dwc:occurrenceRemarks
-
-dwc:eventRemarks
-
-dwc:locationRemarks
-
-dwc:georeferenceRemarks
-
-dwc:identificationRemarks
-
-dwc:taxonRemarks
-
-dwc:organismRemarks
-
-dwc:relationshipRemarks
-
-dwc:measurementRemarks
-
-Because these are remarks, they are expected to have literal values with an _xml:lang_ attribute.
-
-dwc:catalogNumber
-
-dwc:samplingEffort
-
-dwc:organismName
-
-dwc:verbatimEventDate
-
-dwc:verbatimLocality
-
-dwc:verbatimElevation
-
-dwc:verbatimCoordinates
-
-dwc:verbatimLatitude
-
-dwc:verbatimLongitude
-
-dwc:verbatimDepth
-
-dwc:verbatumTaxonRank
-
-Based on their term definitions, these terms are expected to have untyped literal values
-
-dwc:otherCatalogNumbers
-
-There is no simple mapping because of the kinds of identifiers people use and variety of relationships that there may be among identifiers. For non\-IRI identifiers expressed as string values, the string may be provided as a literal value of _dwc:otherCatalogNumbers_. Whether this is preferable to providing multiple _dwc:catalogNumber_ properties may depend on community practice. _owl:sameAs_ may be used to associate other IRI identifiers with the subject IRI if that is appropriate.
-
-dwc:basisOfRecord
-
-Use only with literal value strings consisting of the local name component of Darwin Core class IRIs. Use _rdf:type_ to refer to IRIs that describe the type of the resource.
-
-dwc:dynamicProperties
-
-Expected to contain JSON as a literal. Communities of practice might choose to use other vocabularies or develop their own vocabularies to express this sort of content directly as RDF.
-
-8 No Darwin Core terms defined in the Darwin Core normative RDF (as opposed to those imported from Dublin Core) have domain or range declarations as a part of their definitions. However, the five terms in the _dwc:_ namespace listed in the table above are defined to be _rdfs:subPropertyOf_ of _dcterms:date_, which has the range _rdfs:Literal_. Under the extensional entailment rule ext4 listed in section 7.3.1 of the RDF Semantics 2004 W3C Recommendation \[[RDF\-SEMANTICS\-2004](http://www.w3.org/TR/2004/REC-rdf-mt-20040210/#RDFSExtRules)\], these terms can be inferred to have the range _rdfs:Literal_. However, the RDF 1.1 Semantics W3C Recommendation \[[RDF\-SEMANTICS\-1.1](http://www.w3.org/TR/rdf11-mt/)\] does not include these extensional entailment rules. Nevertheless, it is reasonable to expect that date properties should have literal values, with datatype attributes whenever possible.
+[^8]: No Darwin Core terms defined in the Darwin Core normative RDF (as opposed to those imported from Dublin Core) have domain or range declarations as a part of their definitions. However, the five terms in the _dwc:_ namespace listed in the table above are defined to be _rdfs:subPropertyOf_ of _dcterms:date_, which has the range _rdfs:Literal_. Under the extensional entailment rule ext4 listed in section 7.3.1 of the RDF Semantics 2004 W3C Recommendation \[[RDF\-SEMANTICS\-2004](http://www.w3.org/TR/2004/REC-rdf-mt-20040210/#RDFSExtRules)\], these terms can be inferred to have the range _rdfs:Literal_. However, the RDF 1.1 Semantics W3C Recommendation \[[RDF\-SEMANTICS\-1.1](http://www.w3.org/TR/rdf11-mt/)\] does not include these extensional entailment rules. Nevertheless, it is reasonable to expect that date properties should have literal values, with datatype attributes whenever possible.
 
 ## 3.5 Darwin Core convenience terms that are expected to be used only with literal values[](./index.htm#3.5_Darwin_Core_convenience_terms_that_are_expected_to_be_used_o)
 
 See [Section 2.7](./index.htm#2.7_Darwin_Core_convenience_terms) for more information on "convenience" terms.
 
-**Darwin Core term**
-
-**Notes**
-
-dwc:collectionCode
-
-dwc:institutionCode
-
-dwc:ownerInstitutionCode
-
-The subject resource can be any resource that is part of a collection. As an alternative, use the object property _dwciri:inCollection_ to link the subject resource to an IRI for the collection containing the institution that owns or controls the resource.
-
-dwc:kingdom
-
-dwc:phylum
-
-dwc:class
-
-dwc:order
-
-dwc:family
-
-dwc:genus
-
-dwc:subgenus
-
-dwc:specificEpithet
-
-dwc:infraspecificEpithet
-
-dwc:higherClassification
-
-dwc:vernacularName
-
-dwc:nameAccordingTo
-
-dwc:scientificName
-
-dwc:taxonRank
-
-dwc:scientificNameAuthorship
-
-dwc:nomenclaturalStatus
-
-dwc:namePublishedIn
-
-dwc:namePublishedInYear
-
-dwc:nomenclaturalCode
-
-dwc:originalNameUsage
-
-dwc:taxonomicStatus
-
-dwc:parentNameUsage
-
-dwc:acceptedNameUsage
-
-The subject resource should be a _dwc:Identification_ instance. See [Section 2.7.4](./index.htm#2.7.4_Description_of_a_taxonomic_entity) for a discussion of why it not recommended to use these as properties of _dwc:Taxon_ instances. As an alternative, use the object property _dwciri:toTaxon_ to link the subject _dwc:Identification_ instance to a taxonomic entity such as a taxon, taxon concept, or taxon name use. It is likely that these taxonomic entities will have a complex structure which differentiates among name entities, name strings, application of a name to a concept, which expresses parent/child and set relationships among entities, and which tracks provenance information about the names, references, and concepts. The flat nature of text\-based Darwin Core cannot represent such a complex structure and it is beyond the scope of this guide to describe them.
-
-dwc:higherGeography
-
-dwc:continent
-
-dwc:waterBody
-
-dwc:islandGroup
-
-dwc:island
-
-dwc:countryCode
-
-dwc:country
-
-dwc:stateProvince
-
-dwc:county
-
-dwc:municipality
-
-dwc:locality
-
-The subject resource should be a _dcterms:Location_ instance. As an alternative, use the object property _dwciri:inDescribedPlace_ to link the subject resource to a standardized place described as part of a hierarchy. See [Section 2.7.5](./index.htm#2.7.5_Names_of_geographic_subdivisions) for details. It is likely that providers will want to provide a text value for _dwc:locality_ even if _dwciri:inDescribedPlace_ is used to replace the other hierarchical convenience terms in this category. This is because it is unlikely that a place description at this most specific level (e.g., “15 km N of Essen”) would be represented by a standardized IRI\-identified place instance. There is no _dwciri:_ analogue of _dwc:locality_ because if an IRI\-identified place were available to represent the locality, the term _dwciri:inDescribedPlace_ would be used to link to it.
-
-dwc:earliestEonOrLowestEonothem
-
-dwc:latestEonOrHighestEonothem
-
-dwc:earliestEraOrLowestErathem
-
-dwc:latestEraOrHighestErathem
-
-dwc:earliestPeriodOrLowestSystem
-
-dwc:latestPeriodOrHighestSystem
-
-dwc:earliestEpochOrLowestSeries
-
-dwc:latestEpochOrHighestSeries
-
-dwc:earliestAgeOrLowestStage
-
-dwc:latestAgeOrHighestStage
-
-The subject resource should be a _dwc:GeologicalContext_ instance. As an alternative, use the object properties _dwciri:earliestGeochronologicalEra_ and _dwciri:latestGeochronologicalEra_ as described in [Section 3.6](./index.htm#3.6_dwciri:_terms_having_local_names_that_don%E2%80%99t_correspond_to). See [Section 2.7.6](./index.htm#2.7.6_Chronostratographic_(geological_timescale)_descriptors) for details.
-
-dwc:lithostratigraphicTerms
-
-dwc:group
-
-dwc:formation
-
-dwc:member
-
-dwc:bed
-
-The subject resource should be a _dwc:GeologicalContext_ instance. As an alternative, use the object property _dwciri:fromLithostratigraphicUnit_ to link the subject resource to the lowest appropriate unit of a lithostratigraphic hierarchy.
+Darwin Core term | Notes
+--- | ---
+dwc:collectionCode</br>dwc:institutionCode</br>dwc:ownerInstitutionCode | The subject resource can be any resource that is part of a collection. As an alternative, use the object property dwciri:inCollection to link the subject resource to an IRI for the collection containing the institution that owns or controls the resource.
+dwc:kingdom</br>dwc:phylum</br>dwc:class</br>dwc:order</br>dwc:family</br>dwc:genus</br>dwc:subgenus</br>dwc:specificEpithet</br>dwc:infraspecificEpithet</br>dwc:higherClassification</br>dwc:vernacularName</br>dwc:nameAccordingTo</br>dwc:scientificName</br>dwc:taxonRank</br>dwc:scientificNameAuthorship</br>dwc:nomenclaturalStatus</br>dwc:namePublishedIn</br>dwc:namePublishedInYear</br>dwc:nomenclaturalCode</br>dwc:originalNameUsage</br>dwc:taxonomicStatus</br>dwc:parentNameUsage</br>dwc:acceptedNameUsage | The subject resource should be a dwc:Identification instance. See Section 2.7.4 for a discussion of why it not recommended to use these as properties of dwc:Taxon instances. As an alternative, use the object property dwciri:toTaxon to link the subject dwc:Identification instance to a taxonomic entity such as a taxon, taxon concept, or taxon name use. It is likely that these taxonomic entities will have a complex structure which differentiates among name entities, name strings, application of a name to a concept, which expresses parent/child and set relationships among entities, and which tracks provenance information about the names, references, and concepts. The flat nature of text-based Darwin Core cannot represent such a complex structure and it is beyond the scope of this guide to describe them.
+dwc:higherGeography</br>dwc:continent</br>dwc:waterBody</br>dwc:islandGroup</br>dwc:island</br>dwc:countryCode</br>dwc:country</br>dwc:stateProvince</br>dwc:county</br>dwc:municipality</br>dwc:locality | The subject resource should be a dcterms:Location instance. As an alternative, use the object property dwciri:inDescribedPlace to link the subject resource to a standardized place described as part of a hierarchy. See Section 2.7.5 for details. It is likely that providers will want to provide a text value for dwc:locality even if dwciri:inDescribedPlace is used to replace the other hierarchical convenience terms in this category. This is because it is unlikely that a place description at this most specific level (e.g., “15 km N of Essen”) would be represented by a standardized IRI-identified place instance. There is no dwciri: analogue of dwc:locality because if an IRI-identified place were available to represent the locality, the term dwciri:inDescribedPlace would be used to link to it.
+dwc:earliestEonOrLowestEonothem</br>dwc:latestEonOrHighestEonothem</br>dwc:earliestEraOrLowestErathem</br>dwc:latestEraOrHighestErathem</br>dwc:earliestPeriodOrLowestSystem</br>dwc:latestPeriodOrHighestSystem</br>dwc:earliestEpochOrLowestSeries</br>dwc:latestEpochOrHighestSeries</br>dwc:earliestAgeOrLowestStage</br>dwc:latestAgeOrHighestStage | The subject resource should be a dwc:GeologicalContext instance. As an alternative, use the object properties dwciri:earliestGeochronologicalEra and dwciri:latestGeochronologicalEra as described in Section 3.6. See Section 2.7.6 for details.
+dwc:lithostratigraphicTerms</br>dwc:group</br>dwc:formation</br>dwc:member</br>dwc:bed | The subject resource should be a dwc:GeologicalContext instance. As an alternative, use the object property dwciri:fromLithostratigraphicUnit to link the subject resource to the lowest appropriate unit of a lithostratigraphic hierarchy.
 
 ## 3.6 dwciri: terms having local names that don’t correspond to terms in the dwc: Darwin Core namespace[](./index.htm#3.6_dwciri:_terms_having_local_names_that_don’t_correspond_to)
 
-**Darwin Core term**
-
-**Notes**
-
-dwciri:inCollection
-
-Use to link any subject resource that is part of a collection to the collection containing the resource. Recommended best practice is to use IRIs from Global Registry of Biorepositories \[[GRBIO](http://grbio.org/)\]. For details, see the list of sources of controlled values in the Darwin Core informative ancillary web pages \[[DWC\-RDF\-ANCILLARY](https://code.google.com/p/tdwg-rdf/wiki/DwCAncillary)\]. See [Section 2.7.3](./index.htm#2.7.3_Ownership_of_a_collection_item) for usage details.
-
-dwciri:toTaxon
-
-Use to link a _dwc:Identification_ instance subject to a taxonomic entity such as a taxon, taxon concept, or taxon name use. See [Section 2.7.4](./index.htm#2.7.4_Description_of_a_taxonomic_entity) for usage details.
-
-dwciri:inDescribedPlace
-
-Use to link a _dcterms:Location_ instance subject to the lowest level standardized hierarchically\-described resource. It is expected that such resources will be linked to higher levels in the hierarchy by the organization minting the IRI. Recommended best practice is to use IRIs from the GeoNames geographical database \[[GEONAMES](http://www.geonames.org/)\]. For details, see the list of sources of controlled values in the Darwin Core informative ancillary web pages \[[DWC\-RDF\-ANCILLARY](https://code.google.com/p/tdwg-rdf/wiki/DwCAncillary)\]. See [Section 2.7.5](./index.htm#2.7.5_Names_of_geographic_subdivisions) for usage details.
-
-dwciri:earliestGeochronologicalEra
-
-dwciri:latestGeochronologicalEra
-
-Use to link a _dwc:GeologicalContext_ instance to chronostratigraphic time periods at the lowest possible level in a standardized hierarchy. Use _dwciri:earliestGeochronologicalEra_ to point to the earliest possible geological time period from which the cataloged item was collected and the object property _dwciri:latestGeochronologicalEra_ to point to the latest possible geological time period from which the cataloged item was collected. The organization minting the IRI should link those time periods to higher levels in the hierarchy. Recommended best practice is to use IRIs defined by the International Commission on Stratigraphy \[[ICS](http://www.stratigraphy.org/)\]. For details, see the list of sources of controlled values in the Darwin Core informative ancillary web pages \[[DWC\-RDF\-ANCILLARY](https://code.google.com/p/tdwg-rdf/wiki/DwCAncillary)\]. See [Section 2.7.6](./index.htm#2.7.6_Chronostratographic_(geological_timescale)_descriptors) for usage details.
-
-dwciri:fromLithostratigraphicUnit
-
-Use to link a _dwc:GeologicalContext_ instance to an IRI\-identified lithostratigraphic unit at the lowest possible level in a hierarchy. It is expected that such resources will be linked to higher levels in the hierarchy by the organization minting the IRI. See [Section 2.7.7](./index.htm#2.7.7_Lithostratigraphy_descriptors) for usage details.
-
-dwciri:inDataset
-
-This object property is provided to link a subject dataset record to the dataset which contains it. A string literal name of the dataset can be provided using the term _dwc:datasetName_.
+Darwin Core term | Notes
+--- | ---
+dwciri:inCollection | Use to link any subject resource that is part of a collection to the collection containing the resource. Recommended best practice is to use IRIs from Global Registry of Biorepositories [GRBIO]. For details, see the list of sources of controlled values in the Darwin Core informative ancillary web pages [DWC-RDF-ANCILLARY]. See Section 2.7.3 for usage details.
+dwciri:toTaxon | Use to link a dwc:Identification instance subject to a taxonomic entity such as a taxon, taxon concept, or taxon name use. See Section 2.7.4 for usage details.
+dwciri:inDescribedPlace | Use to link a dcterms:Location instance subject to the lowest level standardized hierarchically-described resource. It is expected that such resources will be linked to higher levels in the hierarchy by the organization minting the IRI. Recommended best practice is to use IRIs from the GeoNames geographical database [GEONAMES]. For details, see the list of sources of controlled values in the Darwin Core informative ancillary web pages [DWC-RDF-ANCILLARY]. See Section 2.7.5 for usage details.
+dwciri:earliestGeochronologicalEra</br>dwciri:latestGeochronologicalEra | Use to link a dwc:GeologicalContext instance to chronostratigraphic time periods at the lowest possible level in a standardized hierarchy. Use dwciri:earliestGeochronologicalEra to point to the earliest possible geological time period from which the cataloged item was collected and the object property dwciri:latestGeochronologicalEra to point to the latest possible geological time period from which the cataloged item was collected. The organization minting the IRI should link those time periods to higher levels in the hierarchy. Recommended best practice is to use IRIs defined by the International Commission on Stratigraphy [ICS]. For details, see the list of sources of controlled values in the Darwin Core informative ancillary web pages [DWC-RDF-ANCILLARY]. See Section 2.7.6 for usage details.
+dwciri:fromLithostratigraphicUnit | Use to link a dwc:GeologicalContext instance to an IRI-identified lithostratigraphic unit at the lowest possible level in a hierarchy. It is expected that such resources will be linked to higher levels in the hierarchy by the organization minting the IRI. See Section 2.7.7 for usage details.
+dwciri:inDataset | This object property is provided to link a subject dataset record to the dataset which contains it. A string literal name of the dataset can be provided using the term dwc:datasetName.
 
 ## 3.7 dwc: namespace terms that have analogues in the dwciri: namespace[](./index.htm#3.7_dwc:_namespace_terms_that_have_analogues_in_the_dwciri:_name)
 
-**Darwin Core term having a _dwciri:_ analogue with the same local name**
-
-**Notes on the _dwciri:_ analogues**
-
-dwc:recordedBy
-
-dwc:identifiedBy
-
-dwc:georeferencedBy
-
-dwc:measurementDeterminedBy
-
-The object is an agent; use a well\-known IRI such as those referenced in the list of sources of controlled values in the Darwin Core informative ancillary web pages \[[DWC\-RDF\-ANCILLARY](https://code.google.com/p/tdwg-rdf/wiki/DwCAncillary)\].
-
-dwc:locationAccordingTo
-
-The object is an agent or publication. Use a well\-known IRI when possible, such as an HTTP\-proxied DOI.
-
-dwc:georeferenceProtocol
-
-dwc:georeferenceSources
-
-dwc:samplingProtocol
-
-The object is a published or well\-known reference; use an IRI version (preferably HTTP proxied) of doi, isbn, issn, etc. if available.
-
-dwc:sex
-
-dwc:lifeStage
-
-dwc:reproductiveCondition
-
-dwc:establishmentMeans
-
-dwc:behavior
-
-dwc:occurrenceStatus
-
-dwc:disposition
-
-dwc:verbatimCoordinateSystem
-
-dwc:verbatimSRS
-
-dwc:geodeticDatum
-
-dwc:georeferenceVerificationStatus
-
-dwc:footprintWKT
-
-dwc:footprintSRS
-
-dwc:lowestBiostratigraphicZone
-
-dwc:highestBiostratigraphicZone
-
-dwc:identificationVerificationStatus
-
-dwc:identificationQualifier
-
-dwc:preparations
-
-dwc:typeStatus
-
-dwc:measurementType
-
-dwc:measurementUnit
-
-dwc:measurementMethod
-
-dwc:sampleSizeUnit
-
-dwc:organismQuantityType
-
-Recommended best practice is to use a controlled vocabulary if one is available.
-
-dwc:informationWithheld
-
-dwc:dataGeneralizations
-
-dwc:habitat
-
-If the object property (_dwciri:_ analogue) is used rather than the _dwc:_ property, the object property should point to a stable resource which might be a controlled vocabulary.
-
-dwc:fieldNumber
-
-dwc:fieldNotes
-
-_dwciri:fieldNumber_ is an object property whose subject is a (possibly IRI\-identified) resource that is the field notes and whose object is a _dwc:Event_ instance. _dwciri:fieldNotes_ is an object property whose subject is a _dwc:Event_ instance and whose object is a (possibly IRI\-identified) resource that is the field notes.
-
-dwc:recordNumber
-
-_dwciri:recordNumber_ is an object property whose subject is an occurrence and and whose object is a (possibly IRI\-identified) resource that is the field notes.
+Darwin Core term having a dwciri: analogue with the same local name | Notes on the dwciri: analogues
+--- | ---
+dwc:recordedBy</br>dwc:identifiedBy</br>dwc:georeferencedBy</br>dwc:measurementDeterminedBy | The object is an agent; use a well-known IRI such as those referenced in the list of sources of controlled values in the Darwin Core informative ancillary web pages [DWC-RDF-ANCILLARY].
+dwc:locationAccordingTo | The object is an agent or publication. Use a well-known IRI when possible, such as an HTTP-proxied DOI.
+dwc:georeferenceProtocol</br>dwc:georeferenceSources</br>dwc:samplingProtocol | The object is a published or well-known reference; use an IRI version (preferably HTTP proxied) of doi, isbn, issn, etc. if available.
+dwc:sex</br>dwc:lifeStage</br>dwc:reproductiveCondition</br>dwc:establishmentMeans</br>dwc:behavior</br>dwc:occurrenceStatus</br>dwc:disposition</br>dwc:verbatimCoordinateSystem</br>dwc:verbatimSRS</br>dwc:geodeticDatum</br>dwc:georeferenceVerificationStatus</br>dwc:footprintWKT</br>dwc:footprintSRS</br>dwc:lowestBiostratigraphicZone</br>dwc:highestBiostratigraphicZone</br>dwc:identificationVerificationStatus</br>dwc:identificationQualifier</br>dwc:preparations</br>dwc:typeStatus</br>dwc:measurementType</br>dwc:measurementUnit</br>dwc:measurementMethod</br> | Recommended best practice is to use a controlled vocabulary if one is available.
+dwc:informationWithheld</br>dwc:dataGeneralizations</br>dwc:habitat | If the object property (dwciri: analogue) is used rather than the dwc: property, the object property should point to a stable resource which might be a controlled vocabulary.
+dwc:fieldNumber</br>dwc:fieldNotes | dwciri:fieldNumber is an object property whose subject is a (possibly IRI-identified) resource that is the field notes and whose object is a dcmitype:Event instance. dwciri:fieldNotes is an object property whose subject is a dcmitype:Event instance and whose object is a (possibly IRI-identified) resource that is the field notes.
+dwc:recordNumber | dwciri:recordNumber is an object property whose subject is an occurrence and and whose object is a (possibly IRI-identified) resource that is the field notes.
 
 ## 3.8 Darwin Core terms for which this guide does not recommend the use of a dwciri: object property[](./index.htm#3.8_Darwin_Core_terms_for_which_this_guide_does_not_recommend_th)
 
-**Darwin Core term**
+Darwin Core term | Notes
+--- | ---
+dwc:relationshipOfResource</br>dwc:relationshipAccordingTo | The non-RDF use of terms organized under the dwc:ResourceRelationship class depends on values for dwc:resourceID and dwc:relatedResourceID, terms which cannot be used in RDF for reasons discussed in Section 2.6. As of November 2014, the RDF/OWL Task Group is seeking a way to express resource relationships as RDF. For the present, dwciri: analogues have not been adopted for these two terms. See the Darwin Core informative ancillary web pages [DWC-RDF-ANCILLARY] for further discussion.
+dwc:associatedOccurrences</br>dwc:associatedMedia</br>dwc:associatedSequences</br>dwc:associatedTaxa</br>dwc:associatedOrganisms | Use dcterms:relation and rdf:type, or terms that indicate more specific relationships as described in Section 2.8 (Darwin Core association terms).
+dwc:previousIdentifications | There is no consensus object property for associating identifications with resources of other classes. From whatever scheme you have chosen to provide object properties, use same object property as used for the most recent identification but provide an earlier dwc:dateIdentified value.
+dwc:organismScope | Use rdf:type with a non-literal object. See the comment at http://rs.tdwg.org/dwc/terms/organismScope.
 
-**Notes**
-
-dwc:relationshipOfResource
-
-dwc:relationshipAccordingTo
-
-The non\-RDF use of terms organized under the _dwc:ResourceRelationship_ class depends on values for _dwc:resourceID_ and _dwc:relatedResourceID_, terms which cannot be used in RDF for reasons discussed in [Section 2.6](./index.htm#2.6_Darwin_Core_ID_terms_and_RDF). As of November 2014, the RDF/OWL Task Group is seeking a way to express resource relationships as RDF. For the present, _dwciri:_ analogues have not been adopted for these two terms. See the Darwin Core informative ancillary web pages \[[DWC\-RDF\-ANCILLARY](https://code.google.com/p/tdwg-rdf/wiki/DwCAncillary)\] for further discussion.
-
-dwc:associatedOccurrences
-
-dwc:associatedMedia
-
-dwc:associatedSequences
-
-dwc:associatedTaxa
-
-dwc:associatedOrganisms
-
-Use _dcterms:relation_ and _rdf:type_, or terms that indicate more specific relationships as described in [Section 2.8](./index.htm#2.8_Darwin_Core_association_terms) (Darwin Core association terms).
-
-dwc:previousIdentifications
-
-There is no consensus object property for associating identifications with resources of other classes. From whatever scheme you have chosen to provide object properties, use same object property as used for the most recent identification but provide an earlier _dwc:dateIdentified_ value.
-
-dwc:organismScope
-
-Use _rdf:type_ with a non\-literal object. See the comment at [http://rs.tdwg.org/dwc/terms/organismScope](http://rs.tdwg.org/dwc/terms/organismScope).
 
 ## 4 References[](./index.htm#4_References)
 
-\[AUDUBON\-CORE\]
-
-[http://terms.tdwg.org/wiki/Audubon\_Core](http://terms.tdwg.org/wiki/Audubon_Core)
-
-Audubon Core: metadata for biodiversity multimedia resources and collections.
-
-\[DC\-ACCESSRIGHTS\]
-
-[http://wiki.dublincore.org/index.php/User\_Guide/Publishing\_Metadata#dcterms:accessRights](http://wiki.dublincore.org/index.php/User_Guide/Publishing_Metadata#dcterms:accessRights)
-
-Dublin Core Users' Guide: dcterms:accessRights.
-
-\[DC\-LINKED\-DATA\]
-
-[http://wiki.dublincore.org/index.php/User\_Guide/Publishing\_Metadata#Legacy\_namespace](http://wiki.dublincore.org/index.php/User_Guide/Publishing_Metadata#Legacy_namespace)
-
-Dublin Core legacy namespace term usage.
-
-\[DC\-QUALIFIER\]
-
-[http://dublincore.org/documents/usageguide/qualifiers.shtml](http://dublincore.org/documents/usageguide/qualifiers.shtml)
-
-Using Dublin Core qualifiers.
-
-\[DC\-RDF\]
-
-[http://dublincore.org/documents/dc\-rdf/#sect\-4](http://dublincore.org/documents/dc-rdf/#sect-4)
-
-Expressing Dublin Core metadata using the Resource Description Framework.
-
-\[DC\-RDF\-NOTES\]
-
-[http://dublincore.org/documents/2008/01/14/dc\-rdf\-notes/#sect\-3](http://dublincore.org/documents/2008/01/14/dc-rdf-notes/#sect-3)
-
-Expressing Dublin Core metadata using the Resource Description Framework.
-
-\[DC\-RDF\-SEMANTICS\]
-
-[http://dublincore.org/documents/dc\-rdf/#sect\-5](http://dublincore.org/documents/dc-rdf/#sect-5)
-
-Resource Description Framework semantics and the DCMI Abstract Model.
-
-\[DC\-SUBPROPERTIES\]
-
-[http://dublincore.org/usage/decisions/2008/dcterms\-changes/#sect\-2](http://dublincore.org/usage/decisions/2008/dcterms-changes/#sect-2)
-
-Subproperty relations between terms in the Dublin Core.
-
-\[DC\-TERMS\]
-
-[http://dublincore.org/documents/DC\-TERMS/](http://dublincore.org/documents/DC-TERMS/)
-
-Dublin Core metadata terms.
-
-\[DCAM\]
-
-[http://dublincore.org/documents/abstract\-model/](http://dublincore.org/documents/abstract-model/)
-
-Dublin Core abstract model.
-
-\[DWC\]
-
-[http://rs.tdwg.org/dwc/](./index.htm)
-
-An introduction to the Darwin Core Standard.
-
-\[DWC\-GUIDE\]
-
-[http://rs.tdwg.org/dwc/terms/index.htm](../../index.htm)
-
-Darwin Core Quick Reference Guide.
-
-\[DWC\-RDF\-ANCILLARY\]
-
-[https://code.google.com/p/tdwg\-rdf/wiki/DwCAncillary](https://code.google.com/p/tdwg-rdf/wiki/DwCAncillary)
-
-Ancillary documents related to the Darwin Core RDF Guide.
-
-\[DWC\-XML\]
-
-[http://rs.tdwg.org/dwc/terms/guides/xml/index.htm](../xml/index.htm)
-
-Darwin Core XML Guide.
-
-\[FOAF\]
-
-[http://xmlns.com/foaf/spec/](http://xmlns.com/foaf/spec/)
-
-Friend of a Friend (FOAF) Vocabulary Specification.
-
-\[GEONAMES\]
-
-[http://www.geonames.org/](http://www.geonames.org/)
-
-GeoNames geographical database.
-
-\[GRBIO\]
-
-[http://grbio.org/](http://grbio.org/)
-
-Global Registry of Biodiversity Repositories.
-
-\[GUID\-GUIDE\-GBIF\]
-
-[http://www.gbif.org/resources/2575](http://www.gbif.org/resources/2575)
-
-GUID and Life Sciences Identifiers Applicability Statements.
-
-\[GUID\-STANDARD\]
-
-[http://www.tdwg.org/standards/150/](http://www.tdwg.org/standards/150/)
-
-GUID and Life Sciences Identifiers Applicability Statements.
-
-\[HTTP\-CONTENT\-NEGOTIATION\]
-
-[http://tools.ietf.org/html/rfc2616#section\-12](http://tools.ietf.org/html/rfc2616#section-12)
-
-HTTP content negotiation. The process of selecting the best representation for a given response when there are multiple representations available
-
-\[ICS\]
-
-[http://www.stratigraphy.org/](http://www.stratigraphy.org/)
-
-International Commission on Stratigraphy.
-
-\[IRI\]
-
-[http://tools.ietf.org/html/rfc3987](http://tools.ietf.org/html/rfc3987)
-
-Internationalized Resource Identifiers. A protocol for expressing URIs in Unicode.
-
-\[ISBN\-AS\-URN\]
-
-[http://tools.ietf.org/html/rfc3187](http://tools.ietf.org/html/rfc3187)
-
-Using International Standard Book Numbers as Uniform Resource Names.
-
-\[ISO\-DATES\]
-
-[http://en.wikipedia.org/wiki/ISO\_8601](http://en.wikipedia.org/wiki/ISO_8601)
-
-ISO 8601 Data elements and interchange formats – Information interchange – Representation of dates and times.
-
-\[LANG\-CODES\]
-
-[http://www.ietf.org/rfc/rfc4646.txt](http://www.ietf.org/rfc/rfc4646.txt)
-
-Network Working Group RFC 4646. Tags for identifying languages.
-
-\[LINKED\-DATA\]
-
-[http://linkeddata.org/](http://linkeddata.org/)
-
-Linked Data.
-
-\[MARC\-LANGUAGES\]
-
-[http://id.loc.gov/vocabulary/iso639\-2](http://id.loc.gov/vocabulary/iso639-2)
-
-ISO 639\-2 Alpha\-3 Language Codes.
-
-\[OWL\]
-
-[http://www.w3.org/TR/owl2\-overview/](http://www.w3.org/TR/owl2-overview/)
-
-OWL Web Ontology Language.
-
-\[OWL\-PRIMER\]
-
-[http://www.w3.org/TR/owl\-primer/#Object\_Properties](http://www.w3.org/TR/owl-primer/#Object_Properties)
-
-OWL Web Ontology Language object properties.
-
-\[RDB2RDF\]
-
-[http://www.w3.org/TR/r2rml/](http://www.w3.org/TR/r2rml/)
-
-R2RML: RDB to RDF Mapping Language.
-
-\[RDF\]
-
-[http://www.w3.org/TR/rdf11\-concepts/](http://www.w3.org/TR/rdf11-concepts/)
-
-Resource Description Framework.
-
-\[RDF\-BEGINNERS\-GUIDE\]
-
-[http://code.google.com/p/tdwg\-rdf/wiki/Beginners](http://code.google.com/p/tdwg-rdf/wiki/Beginners)
-
-Beginner's Guide to RDF. Biodiversity informatics using RDF and OWL.
-
-\[RDF\-DATATYPE\-SEMANTICS\]
-
-[http://www.w3.org/TR/rdf11\-mt/#literals\-and\-datatypes](http://www.w3.org/TR/rdf11-mt/#literals-and-datatypes)
-
-Resource Description Framework literals and datatypes semantics.
-
-\[RDF\-DATATYPE\-SYNTAX\]
-
-[http://www.w3.org/TR/rdf\-syntax\-grammar/#section\-Syntax\-datatyped\-literals](http://www.w3.org/TR/rdf-syntax-grammar/#section-Syntax-datatyped-literals)
-
-Resource Description Framework XML syntax for datatyped literals.
-
-\[RDF\-ENTAILMENT\-RULES\]
-
-[http://www.w3.org/TR/rdf11\-mt/#entailment\-rules\-informative](http://www.w3.org/TR/rdf11-mt/#entailment-rules-informative)
-
-Resource Description Framework entailment rules.
-
-\[RDF\-PRIMER\]
-
-[http://www.w3.org/TR/rdf11\-primer](http://www.w3.org/TR/rdf11-primer)
-
-Resource Description Framework Primer. Basic knowledge to use RDF effectively.
-
-\[RDF\-SEMANTICS\-1.1\]
-
-[http://www.w3.org/TR/rdf11\-mt/](http://www.w3.org/TR/rdf11-mt/)
-
-Resource Description Framework 1.1 Semantics W3C Recommendation.
-
-\[RDF\-SEMANTICS\-2004\]
-
-[http://www.w3.org/TR/2004/REC\-rdf\-mt\-20040210/#RDFSExtRules](http://www.w3.org/TR/2004/REC-rdf-mt-20040210/#RDFSExtRules)
-
-Resource Description Framework Semantics W3C Recommendation 10 February 2004.
-
-\[RDF\-TRIPLES\]
-
-[http://www.w3.org/TR/2014/NOTE\-rdf11\-primer\-20140624/#section\-triple](http://www.w3.org/TR/2014/NOTE-rdf11-primer-20140624/#section-triple)
-
-Resource Description Framework triple explanation.
-
-\[RDF\-TYPE\]
-
-[http://www.w3.org/TR/rdf\-schema/#ch\_type](http://www.w3.org/TR/rdf-schema/#ch_type)
-
-Resource Description Framework type explanation.
-
-\[RDF\-VOCAB\-PUB\]
-
-[http://www.w3.org/TR/swbp\-vocab\-pub/#naming](http://www.w3.org/TR/swbp-vocab-pub/#naming)
-
-Resource Description Framework namespace URIs.
-
-\[RDF\-XML\-SYNTAX\]
-
-[http://www.w3.org/TR/rdf\-syntax\-grammar/](http://www.w3.org/TR/rdf-syntax-grammar/)
-
-Resource Description Framework XML syntax.
-
-\[RDFS\]
-
-[http://www.w3.org/TR/rdf\-schema/](http://www.w3.org/TR/rdf-schema/)
-
-Resource Description Framework Schema specification.
-
-\[SPARQL\]
-
-[http://www.w3.org/TR/sparql11\-query/](http://www.w3.org/TR/sparql11-query/)
-
-SPARQL query language.
-
-\[TCS\-STANDARD\]
-
-[http://www.tdwg.org/standards/117/](http://www.tdwg.org/standards/117/)
-
-Taxonomic Concept Transfer Schema standard.
-
-\[TEXTGUIDE\]
-
-[http://rs.tdwg.org/dwc/terms/guides/text](./terms/guides/text/index.htm)
-
-Guide for implementing Darwin Core in Text files.
-
-\[TURTLE\]
-
-[http://www.w3.org/TR/turtle/](http://www.w3.org/TR/turtle/)
-
-Terse RDF Triple Language. A textual syntax for RDF that allows an RDF graph to be completely written in a compact and natural text form.
-
-\[TYPED\-NODE\]
-
-[http://www.w3.org/TR/rdf\-syntax\-grammar/#section\-Syntax\-typed\-nodes](http://www.w3.org/TR/rdf-syntax-grammar/#section-Syntax-typed-nodes)
-
-Resource Description Framework typed node explanation.
-
-\[URI\]
-
-[http://tools.ietf.org/html/rfc3986](http://tools.ietf.org/html/rfc3986)
-
-Uniform Resource Identifiers. A compact sequence of characters that identifies an abstract or physical resource.
-
-\[URI\-SCHEMES\]
-
-[http://www.iana.org/assignments/uri\-schemes.html](http://www.iana.org/assignments/uri-schemes.html)
-
-Uniform Resource Identifier (URI) Schemes.
-
-\[USING\-DC\-CREATOR\]
-
-[http://wiki.foaf\-project.org/w/UsingDublinCoreCreator](http://wiki.foaf-project.org/w/UsingDublinCoreCreator)
-
-Using the Dublin Core creator term as a literal or IRI.
-
-\[UUID\]
-
-[http://www.iso.org/iso/home/store/catalogue\_ics/catalogue\_detail\_ics.htm?csnumber=62795](http://www.iso.org/iso/home/store/catalogue_ics/catalogue_detail_ics.htm?csnumber=62795)
-
-ISO/IEC 9834\-8:2014. Part 8: Generation of universally unique identifiers (UUIDs) and their use in object identifiers.
-
-\[UUID\-URN\-NAMESPACE\]
-
-[http://tools.ietf.org/html/rfc4122](http://tools.ietf.org/html/rfc4122)
-
-A Universally Unique IDentifier (UUID) URN Namespace.
-
-\[W3C\-RDF\-VALIDATOR\]
-
-[http://www.w3.org/RDF/Validator/](http://www.w3.org/RDF/Validator/)
-
-W3C RDF Validation Service.
-
-\[XML\-LANG\]
-
-[http://www.w3.org/TR/REC\-xml/#sec\-lang\-tag](http://www.w3.org/TR/REC-xml/#sec-lang-tag)
-
-XML language identification.
-
-\[XMP\-SPECIFICATION\]
-
-[http://www.adobe.com/content/dam/Adobe/en/devnet/xmp/pdfs/XMPSpecificationPart1.pdf](http://www.adobe.com/content/dam/Adobe/en/devnet/xmp/pdfs/XMPSpecificationPart1.pdf)
-
-XMP Specification Part 1: Data Model, Serialization, and Core Properties.
-
-\[XMLGUIDE\]
-
-[http://rs.tdwg.org/dwc/terms/guides/xml](./terms/guides/xml/index.htm)
-
-Guide for using Darwin Core in XML documents.
+Resource | Link | Description
+--- | --- | ---
+[AUDUBON-CORE] | http://terms.tdwg.org/wiki/Audubon_Core | Audubon Core: metadata for biodiversity multimedia resources and collections.
+[DC-ACCESSRIGHTS] | http://wiki.dublincore.org/index.php/User_Guide/Publishing_Metadata#dcterms:accessRights | Dublin Core Users' Guide: dcterms:accessRights.
+[DC-LINKED-DATA] | http://wiki.dublincore.org/index.php/User_Guide/Publishing_Metadata#Legacy_namespace | Dublin Core legacy namespace term usage.
+[DC-QUALIFIER] | http://dublincore.org/documents/usageguide/qualifiers.shtml | Using Dublin Core qualifiers.
+[DC-RDF] | http://dublincore.org/documents/dc-rdf/#sect-4 | Expressing Dublin Core metadata using the Resource Description Framework.
+[DC-RDF-NOTES] | http://dublincore.org/documents/2008/01/14/dc-rdf-notes/#sect-3 | Expressing Dublin Core metadata using the Resource Description Framework.
+[DC-RDF-SEMANTICS] | http://dublincore.org/documents/dc-rdf/#sect-5 | Resource Description Framework semantics and the DCMI Abstract Model.
+[DC-SUBPROPERTIES] | http://dublincore.org/usage/decisions/2008/dcterms-changes/#sect-2 | Subproperty relations between terms in the Dublin Core.
+[DC-TERMS] | http://dublincore.org/documents/DC-TERMS/ | Dublin Core metadata terms.
+[DCAM] | http://dublincore.org/documents/abstract-model/ | Dublin Core abstract model.
+[DWC] | http://rs.tdwg.org/dwc/ | An introduction to the Darwin Core Standard.
+[DWC-GUIDE] | http://rs.tdwg.org/dwc/terms/index.htm | Darwin Core Quick Reference Guide.
+[DWC-RDF-ANCILLARY] | https://code.google.com/p/tdwg-rdf/wiki/DwCAncillary | Ancillary documents related to the Darwin Core RDF Guide.
+[DWC-XML] | http://rs.tdwg.org/dwc/terms/guides/xml/index.htm | Darwin Core XML Guide.
+[FOAF] | http://xmlns.com/foaf/spec/ | Friend of a Friend (FOAF) Vocabulary Specification.
+[GEONAMES] | http://www.geonames.org/ | GeoNames geographical database.
+[GRBIO] | http://grbio.org/ | Global Registry of Biodiversity Repositories.
+[GUID-GUIDE-GBIF] | http://www.gbif.org/resources/2575 | GUID and Life Sciences Identifiers Applicability Statements.
+[GUID-STANDARD] | http://www.tdwg.org/standards/150/ | GUID and Life Sciences Identifiers Applicability Statements.
+[HTTP-CONTENT-NEGOTIATION] | http://tools.ietf.org/html/rfc2616#section-12 | HTTP content negotiation. The process of selecting the best representation for a given response when there are multiple representations available
+[ICS] | http://www.stratigraphy.org/ | International Commission on Stratigraphy.
+[IRI] | http://tools.ietf.org/html/rfc3987 | Internationalized Resource Identifiers. A protocol for expressing URIs in Unicode.
+[ISBN-AS-URN] | http://tools.ietf.org/html/rfc3187 | Using International Standard Book Numbers as Uniform Resource Names.
+[ISO-DATES] | http://en.wikipedia.org/wiki/ISO_8601 | ISO 8601 Data elements and interchange formats – Information interchange – Representation of dates and times.
+[LANG-CODES] | http://www.ietf.org/rfc/rfc4646.txt | Network Working Group RFC 4646. Tags for identifying languages.
+[LINKED-DATA] | http://linkeddata.org/ | Linked Data.
+[MARC-LANGUAGES] | http://id.loc.gov/vocabulary/iso639-2 | ISO 639-2 Alpha-3 Language Codes.
+[OWL] | http://www.w3.org/TR/owl2-overview/ | OWL Web Ontology Language.
+[OWL-PRIMER] | http://www.w3.org/TR/owl-primer/#Object_Properties | OWL Web Ontology Language object properties.
+[RDB2RDF] | http://www.w3.org/TR/r2rml/ | R2RML: RDB to RDF Mapping Language.
+[RDF] | http://www.w3.org/TR/rdf11-concepts/ | Resource Description Framework.
+[RDF-BEGINNERS-GUIDE] | http://code.google.com/p/tdwg-rdf/wiki/Beginners | Beginner's Guide to RDF. Biodiversity informatics using RDF and OWL.
+[RDF-DATATYPE-SEMANTICS] | http://www.w3.org/TR/rdf11-mt/#literals-and-datatypes | Resource Description Framework literals and datatypes semantics.
+[RDF-DATATYPE-SYNTAX] | http://www.w3.org/TR/rdf-syntax-grammar/#section-Syntax-datatyped-literals | Resource Description Framework XML syntax for datatyped literals.
+[RDF-ENTAILMENT-RULES] | http://www.w3.org/TR/rdf11-mt/#entailment-rules-informative | Resource Description Framework entailment rules.
+[RDF-PRIMER] | http://www.w3.org/TR/rdf11-primer | Resource Description Framework Primer. Basic knowledge to use RDF effectively.
+[RDF-SEMANTICS-1.1] | http://www.w3.org/TR/rdf11-mt/ | Resource Description Framework 1.1 Semantics W3C Recommendation.
+[RDF-SEMANTICS-2004] | http://www.w3.org/TR/2004/REC-rdf-mt-20040210/#RDFSExtRules | Resource Description Framework Semantics W3C Recommendation 10 February 2004.
+[RDF-TRIPLES] | http://www.w3.org/TR/2014/NOTE-rdf11-primer-20140624/#section-triple | Resource Description Framework triple explanation.
+[RDF-TYPE] | http://www.w3.org/TR/rdf-schema/#ch_type | Resource Description Framework type explanation.
+[RDF-VOCAB-PUB] | http://www.w3.org/TR/swbp-vocab-pub/#naming | Resource Description Framework namespace URIs.
+[RDF-XML-SYNTAX] | http://www.w3.org/TR/rdf-syntax-grammar/ | Resource Description Framework XML syntax.
+[RDFS] | http://www.w3.org/TR/rdf-schema/ | Resource Description Framework Schema specification.
+[SPARQL] | http://www.w3.org/TR/sparql11-query/ | SPARQL query language.
+[TCS-STANDARD] | http://www.tdwg.org/standards/117/ | Taxonomic Concept Transfer Schema standard.
+[TEXTGUIDE] | http://rs.tdwg.org/dwc/terms/guides/text | Guide for implementing Darwin Core in Text files.
+[TURTLE] | http://www.w3.org/TR/turtle/ | Terse RDF Triple Language. A textual syntax for RDF that allows an RDF graph to be completely written in a compact and natural text form.
+[TYPED-NODE] | http://www.w3.org/TR/rdf-syntax-grammar/#section-Syntax-typed-nodes | Resource Description Framework typed node explanation.
+[URI] | http://tools.ietf.org/html/rfc3986 | Uniform Resource Identifiers. A compact sequence of characters that identifies an abstract or physical resource.
+[URI-SCHEMES] | http://www.iana.org/assignments/uri-schemes.html | Uniform Resource Identifier (URI) Schemes.
+[USING-DC-CREATOR] | http://wiki.foaf-project.org/w/UsingDublinCoreCreator | Using the Dublin Core creator term as a literal or IRI.
+[UUID] | http://www.iso.org/iso/home/store/catalogue_ics/catalogue_detail_ics.htm?csnumber=62795 | ISO/IEC 9834-8:2014. Part 8: Generation of universally unique identifiers (UUIDs) and their use in object identifiers.
+[UUID-URN-NAMESPACE] | http://tools.ietf.org/html/rfc4122 | A Universally Unique IDentifier (UUID) URN Namespace.
+[W3C-RDF-VALIDATOR] | http://www.w3.org/RDF/Validator/ | W3C RDF Validation Service.
+[XML-LANG] | http://www.w3.org/TR/REC-xml/#sec-lang-tag | XML language identification.
+[XMP-SPECIFICATION] | http://www.adobe.com/content/dam/Adobe/en/devnet/xmp/pdfs/XMPSpecificationPart1.pdf | XMP Specification Part 1: Data Model, Serialization, and Core Properties.
+[XMLGUIDE] | http://rs.tdwg.org/dwc/terms/guides/xml | Guide for using Darwin Core in XML documents.
 
 - - -
 
