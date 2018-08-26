@@ -1,0 +1,27 @@
+<header class="navbar navbar-expand navbar-dark theme-navbar">
+    <div class="container-fluid flex-column flex-md-row">
+        <a class="navbar-brand mr-md-3" href="http://www.tdwg.org">TDWG</a>
+        <nav>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ "/" | absolute_url }}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ "terms/" | absolute_url }}">Terms</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Guides</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="{{ "/guides/simple/" | absolute_url }}">Simple DwC</a>
+                        <a class="dropdown-item" href="{{ "/guides/xml/" | absolute_url }}">XML</a>
+                        <a class="dropdown-item" href="{{ "/guides/rdf/" | absolute_url }}">RDF</a>
+                        <a class="dropdown-item" href="{{ "/guides/text/" | absolute_url }}">Text</a>
+                    </div>
+                </li>
+                <li class="nav-item ml-auto">
+                    <a class="nav-link" href="https://github.com/tdwg/dwc">DwC on GitHub</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
