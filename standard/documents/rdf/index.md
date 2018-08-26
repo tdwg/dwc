@@ -1451,10 +1451,3 @@ Resource | Link | Description
 [XML-LANG] | http://www.w3.org/TR/REC-xml/#sec-lang-tag | XML language identification.
 [XMP-SPECIFICATION] | http://www.adobe.com/content/dam/Adobe/en/devnet/xmp/pdfs/XMPSpecificationPart1.pdf | XMP Specification Part 1: Data Model, Serialization, and Core Properties.
 [XMLGUIDE] | http://rs.tdwg.org/dwc/terms/guides/xml | Guide for using Darwin Core in XML documents.
-
-- - -
-
-Except where otherwise noted, content on this site is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
-
-[![Creative Commons License](http://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/) Copyright 2015 \- Biodiversity Information Standards \- TDWG \- [Contact Us](http://www.tdwg.org/about-tdwg/contact-us/)  
-\_uacct = "UA\-386033\-4"; urchinTracker();
