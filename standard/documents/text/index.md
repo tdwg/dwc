@@ -1,7 +1,40 @@
-TITLE: Darwin Core text guide
-DESCRIPTION: Guidelines for implementing Darwin Core in Text files.
-LAST_MODIFIED: 2015-01-14
+# Darwin Core Text Guide
 
+Title
+: Darwin Core Text Guide
+
+Date Issued
+: 2009-02-12
+
+Date Modified
+: 2015-06-02
+
+Abstract
+: Guidelines for implementing Darwin Core in Text files.
+
+Contributors
+: Tim Robertson (GBIF), Markus Döring (GBIF), John Wieczorek (MVZ), Renato De Giovanni (CRIA), Dave Vieglais (KUNHM)
+
+Legal
+: This document is governed by the standard legal, copyright, licensing provisions and disclaimers issued by the Taxonomic Databases Working Group.
+
+Part of TDWG Standard
+: <http://www.tdwg.org/standards/450/>
+
+Creator
+: Darwin Core Task Group
+
+Identifier
+: <http://rs.tdwg.org/dwc/2014-11-08/terms/guides/text/>
+
+Latest Version
+: <http://rs.tdwg.org/dwc/terms/guides/text/>
+
+Replaces
+: <http://rs.tdwg.org/dwc/2009-12-07/terms/guides/text/>
+
+Document Status
+: Current Standard
 
 ## 1. Introduction
 
@@ -23,7 +56,7 @@ ID,Species,Count
 
 can be described with the following Darwin Core metafile:
 
-```
+```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <archive xmlns="http://rs.tdwg.org/dwc/text/"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -90,16 +123,29 @@ An `<archive>` may define zero or more `<extension>` elements, each representing
 
 A Unified Resource Identifier (URI) for the term identifying the class of data represented by each row, for example, http://rs.tdwg.org/dwc/terms/Occurrence for Occurrence records or http://rs.tdwg.org/dwc/terms/Taxon for Taxon records. Additional classes may be referenced by URI and defined outside the Darwin Core specification. The row type is required. For convenience the URIs for classes defined by the Darwin Core are listed below:
 
-<dl class="dl-horizontal">
-    <dt>Occurrence</dt><dd>http://rs.tdwg.org/dwc/terms/Occurrence</dd>
-    <dt>Event</dt><dd>http://rs.tdwg.org/dwc/terms/Event</dd>
-    <dt>Location</dt><dd>http://purl.org/dc/terms/Location</dd>
-    <dt>GeologicalContext</dt><dd>http://purl.org/dc/terms/GeologicalContext</dd>
-    <dt>Identification</dt><dd>http://rs.tdwg.org/dwc/terms/Identification</dd>
-    <dt>Taxon</dt><dd>http://rs.tdwg.org/dwc/terms/Taxon</dd>
-    <dt>ResourceRelationship</dt><dd>http://rs.tdwg.org/dwc/terms/ResourceRelationship</dd>
-    <dt>MeasurementOrFact</dt><dd>http://rs.tdwg.org/dwc/terms/MeasurementOrFact</dd>
-</dl>
+Occurrence
+: http://rs.tdwg.org/dwc/terms/Occurrence
+
+Event
+: http://rs.tdwg.org/dwc/terms/Event
+
+Location
+: http://purl.org/dc/terms/Location
+
+GeologicalContext
+: http://purl.org/dc/terms/GeologicalContext
+
+Identification
+: http://rs.tdwg.org/dwc/terms/Identification
+
+Taxon
+: http://rs.tdwg.org/dwc/terms/Taxon
+
+ResourceRelationship
+: http://rs.tdwg.org/dwc/terms/ResourceRelationship
+
+MeasurementOrFact
+: http://rs.tdwg.org/dwc/terms/MeasurementOrFact
 
 * **Required**: yes
 
@@ -128,12 +174,17 @@ Specifies the character used to enclose (mark the start and end of) each field. 
 
 Specifies the [character encoding](http://en.wikipedia.org/wiki/Character_encoding) for the data file. The encoding is extremely important, but often ignored. The most frequently used encodings are:
 
-<dl class="dl-horizontal">
-    <dt>UTF-8</dt><dd>8-bit Unicode Transformation Format.</dd>
-    <dt>UTF-16</dt><dd>16-bit Unicode Transformation Format.</dd>
-    <dt>ISO-8859-1</dt><dd>Commonly known as Latin-1 and a common default on systems configured for a single western European language.</dd>
-    <dt>Windows-1252</dt><dd>Commonly known as WinLatin and a common default of legacy versions of Microsoft Windows based operating systems.</dd>
-</dl>
+UTF-8
+: 8-bit Unicode Transformation Format.
+
+UTF-16
+: 16-bit Unicode Transformation Format.
+
+ISO-8859-1
+: Commonly known as Latin-1 and a common default on systems configured for a single western European language.
+
+Windows-1252
+: Commonly known as WinLatin and a common default of legacy versions of Microsoft Windows based operating systems.
 
 * **Required**: no
 * **Default**: `UTF-8`
@@ -149,13 +200,20 @@ Specifies the number lines to ignore from the beginning of the file. This can be
 
 When verbatim dates are consistent in format, this field can be used to indicate the format represented. It is recommended to use the date, dateTime and time for field formats wherever possible, but where verbatim dates are required, a format may be specified here. This should be considered a 'hint' for consumers. It is recommended that consumers support the minimum combinations of `DD` `MM` and `YYYY` with the separators `/` and `-`. Examples:
 
-<dl class="dl-horizontal">
-    <dt>DDMMYYYY</dt><dd>For dates of the form 21121978</dd>
-    <dt>DD-MM-YYYY</dt><dd>For dates of the form 21-12-1978</dd>
-    <dt>MMDDYYYY</dt><dd>For dates of the form 12211978</dd>
-    <dt>MM-DD-YYYY</dt><dd>For dates of the form 12-21-1978</dd>
-    <dt>YYYYMMDD</dt><dd>For dates of the form 19781221</dd>
-</dl>
+DDMMYYYY
+: For dates of the form 21121978
+
+DD-MM-YYYY
+: For dates of the form 21-12-1978
+
+MMDDYYYY
+: For dates of the form 12211978
+
+MM-DD-YYYY
+: For dates of the form 12-21-1978
+
+YYYYMMDD
+: For dates of the form 19781221
 
 #### `<files>` subelement
 
