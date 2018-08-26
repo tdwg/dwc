@@ -1,103 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+{#
+    This template is NOT use by jekyll, but by the Darwin Core build script
+    to create the terms/index.md file which mostly contains html.
+#}
 
-        <title>Darwin Core quick reference guide</title>
+<div class="row">
+    <div class="col-12 col-md-3 order-md-2 theme-sidebar-primary">
+        <button class="btn d-md-none w-100" type="button" data-toggle="collapse" data-target="#theme-sidebar-nav">
+            <i class="fa fa-bars fa-lg"></i>
+        </button>
 
-        <!-- Favicons -->
-        <link rel="apple-touch-icon" sizes="180x180" href="https://www.tdwg.org/theme/icons/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="https://www.tdwg.org/theme/icons/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="https://www.tdwg.org/theme/icons/favicon-16x16.png">
-        <link rel="manifest" href="https://www.tdwg.org/theme/icons/site.webmanifest">
-        <link rel="mask-icon" href="https://www.tdwg.org/theme/icons/safari-pinned-tab.svg" color="#617694">
-        <link rel="shortcut icon" href="https://www.tdwg.org/theme/icons/favicon.ico">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-config" content="https://www.tdwg.org/theme/icons/browserconfig.xml">
-        <meta name="theme-color" content="#ffffff">
+        <nav class="collapse" id="theme-sidebar-nav">
+            <ul class="nav flex-column">
+                {% for class_group in class_groups %}
+                <li class="nav-item">
+                    <a class="nav-link" href="#{{ class_group.label }}">{{ class_group.label }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </div>
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="https://www.tdwg.org/theme/css/main.css">
-    </head>
+    <div class="col-12 col-md-9 order-md-1">
+        <h1>Darwin Core quick reference guide</h1>
+        <p class="lead">This page provides a list of all currently recommended terms of the Darwin Core standard. Categories such as <code>Occurrence</code>, <code>Event</code> correspond to Darwin Core classes, which group other terms. Convenient <a href="https://github.com/tdwg/dwc/tree/master/dist"> files of these terms</a> and <a href="https://github.com/tdwg/dwc/blob/master/vocabulary/term_versions.csv"> their full history</a> can be found in the <a href="https://github.com/tdwg/dwc">Darwin Core repository</a>.</p>
 
-    <body data-spy="scroll" data-target="#theme-sidebar-nav">
-        <header class="navbar navbar-expand navbar-dark theme-navbar">
-            <div class="container-fluid flex-column flex-md-row">
-                <a class="navbar-brand mr-md-3" href="http://www.tdwg.org">TDWG</a>
-                <nav>
-                    <ul class="navbar-nav">
-                        <li class="nav-item ml-auto">
-                            <a class="nav-link" href="https://github.com/tdwg/dwc">DwC on GitHub</a>
-                        </li>
-                    </ul>
-                </nav>
+        {% for class_group in class_groups %}
+        <section id="{{ class_group.label }}" class="anchor mb-4">
+            <h2>{{ class_group.label }}</h2>
+            <div class="my-4">
+                {% for term in class_group.terms %}
+                <a class="btn btn-sm btn-outline-secondary m-1" href="#{{ term.namespace}}:{{ term.label }}">{{ term.label }}</a>
+                {% endfor %}
             </div>
-        </header>
 
-        <main class="container-fluid">
-            <div class="row">
-                <div class="col-12 col-md-3 order-md-2 theme-sidebar-primary">
-                    <button class="btn d-md-none w-100" type="button" data-toggle="collapse" data-target="#theme-sidebar-nav">
-                        <i class="fa fa-bars fa-lg"></i>
-                    </button>
+            {% if class_group.iri is not none %}
+            {# The above will exclude the Record-level class_group #}
+            <table class="table table-sm border mb-3">
+                <tbody>
+                    <tr class="table-primary"><th colspan="2">{{ class_group.label }}<span class="badge badge-primary float-right">Class</span></th></tr>
+                    <tr><td class="label">Identifier</td><td><a href="{{ class_group.iri }}">{{ class_group.iri }}</a></td></tr>
+                    <tr><td class="label">Definition</td><td>{{class_group.definition}}</td></tr>
+                    <tr><td class="label">Comments</td><td>{{class_group.comments}}</td></tr>
+                </tbody>
+            </table>
+            {%endif %}
 
-                    <nav class="collapse" id="theme-sidebar-nav">
-                        <ul class="nav flex-column">
-                            {% for class_group in class_groups %}
-                            <li class="nav-item">
-                                <a class="nav-link" href="#{{ class_group.label }}">{{ class_group.label }}</a><!-- anchor to class_group -->
-                            </li>
-                            {% endfor %}
-                        </ul>
-                    </nav>
-                </div>
-
-                <div class="col-12 col-md-9 order-md-1">
-                    <h1>Darwin Core quick reference guide</h1>
-                    <p class="lead">This page provides a list of all currently recommended terms of the Darwin Core standard. Categories such as <code>Occurrence</code>, <code>Event</code> correspond to Darwin Core classes, which group other terms. Convenient <a href="https://github.com/tdwg/dwc/tree/master/dist"> files of these terms</a> and <a href="https://github.com/tdwg/dwc/blob/master/vocabulary/term_versions.csv"> their full history</a> can be found in the <a href="https://github.com/tdwg/dwc">Darwin Core repository</a>.</p>
-
-                    {% for class_group in class_groups %}
-                    <section id="{{ class_group.label }}" class="anchor mb-4"><!-- anchor to class_group -->
-                        <h2>{{ class_group.label }}</h2>
-                        <div class="my-4">
-                            {% for term in class_group.terms %}
-                            <a class="btn btn-sm btn-outline-secondary m-1" href="#{{ term.namespace}}:{{ term.label }}">{{ term.label }}</a><!-- link to term -->
-                            {% endfor %}
-                        </div>
-
-                        {% if class_group.iri is not none %}
-                        {# The above will exclude the Record-level class_group #}
-                        <table class="table table-sm border mb-3">
-                            <tbody>
-                                <tr class="table-primary"><th colspan="2">{{ class_group.label }}<span class="badge badge-primary float-right">Class</span></th></tr>
-                                <tr><td class="label">Identifier</td><td><a href="{{ class_group.iri }}">{{ class_group.iri }}</a></td></tr>
-                                <tr><td class="label">Definition</td><td>{{class_group.definition}}</td></tr>
-                                <tr><td class="label">Comments</td><td>{{class_group.comments}}</td></tr>
-                            </tbody>
-                        </table>
-                        {%endif %}
-
-                        {% for term in class_group.terms %}
-                        <a id="{{ term.namespace}}:{{ term.label }}" class="anchor"></a><!-- anchor to term -->
-                        <table class="table table-sm border mb-3">
-                            <tbody>
-                                <tr class="table-secondary"><th colspan="2">{{ term.label }}<span class="badge badge-secondary float-right">Property</span></th></tr>
-                                <tr><td class="label">Identifier</td><td><a href="{{ term.iri }}">{{ term.iri }}</a></td></tr>
-                                <tr><td class="label">Definition</td><td>{{ term.definition }}</td></tr>
-                                <tr><td class="label">Comments</td><td>{{ term.comments }}</td></tr>
-                            </tbody>
-                        </table>
-                        {% endfor %}
-                    </section>
-                    {% endfor %}
-                </div>
-            </div>
-        </main>
-
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://www.tdwg.org/theme/js/jquery.min.js"></script>
-        <script src="https://www.tdwg.org/theme/js/popper.min.js"></script>
-        <script src="https://www.tdwg.org/theme/js/bootstrap.min.js"></script>
-    </body>
-</html>
+            {% for term in class_group.terms %}
+            <a id="{{ term.namespace}}:{{ term.label }}" class="anchor"></a>
+            <table class="table table-sm border mb-3">
+                <tbody>
+                    <tr class="table-secondary"><th colspan="2">{{ term.label }}<span class="badge badge-secondary float-right">Property</span></th></tr>
+                    <tr><td class="label">Identifier</td><td><a href="{{ term.iri }}">{{ term.iri }}</a></td></tr>
+                    <tr><td class="label">Definition</td><td>{{ term.definition }}</td></tr>
+                    <tr><td class="label">Comments</td><td>{{ term.comments }}</td></tr>
+                </tbody>
+            </table>
+            {% endfor %}
+        </section>
+        {% endfor %}
+    </div>
+</div>
