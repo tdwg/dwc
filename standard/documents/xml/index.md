@@ -291,10 +291,3 @@ Here is different example demonstrating area count observations for events on tw
     </dwc:Occurrence>
 </dwr:DarwinRecordSet>
 ```
-
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)
-
--   Page last modified on 2015\-03\-13</li>
--   [Edit on GitHub](https://github.com/tdwg/dwc/blob/gh-pages/resources.html)
-
-(function(i,s,o,g,r,a,m){i\['GoogleAnalyticsObject'\]=r;i\[r\]=i\[r\]||function(){ (i\[r\].q=i\[r\].q||\[\]).push(arguments)},i\[r\].l=1\*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)\[0\];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google\-analytics.com/analytics.js','ga'); ga('create', 'UA\-386033\-4', 'auto'); ga('send', 'pageview'); \=======  Darwin Core XML Guide                  
