@@ -56,7 +56,7 @@ This section describes some of the basic features of RDF. It is not intended as 
 
 The RDF model itself is independent of any specific serialization syntax. The following diagram represents a set of facts about an image in a graphical form easily understood by humans.
 
-![](./images/rdf-graphical-example.png)
+![](rdf-graphical-example.png)
 
 Each arrow represents a statement about the image, called a "triple" in RDF. The set of triples is called an RDF graph. Resources (represented by ovals) are identified by IRIs. The described resource (in this example the image http://bioimages.vanderbilt.edu/kirchoff/ac1490 at the tail of the arrow) is called the subject of the triple. Properties of the subject resource are identified by term IRIs shown here with their namespaces abbreviated (e.g., _dcterms:_ = "http://purl.org/dc/terms/"). The property is called the predicate of the triple. The values of the properties are called the object of the statement, with literal values (consisting of text) represented by rectangles.
 

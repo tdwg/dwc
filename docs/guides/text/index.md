@@ -40,7 +40,7 @@ Document Status
 
 This document provides guidelines for formatting and sharing Darwin Core terms [[TERMS](../../terms/index.html)] in _fielded text_ formats, such as one or more comma separated value (CSV) files. Data conforming to the Simple Darwin Core [[SIMPLEDWC](../../simple_dwc.html)] (CSV format and having the first row include Darwin Core standard term names) can be shared in a single file, while a non-standard text file can be understood using an [[XML](http://www.w3.org/XML/)] metafile to describe its contents and formatting.
 
-![Usage](images/usage.png)
+![Usage](usage.png)
 
 More complex structure can be shared in multiple related files. The description of content and relationships between files can be achieved using the metafile. This guideline makes recommendations for the simple case of a _core_ file, upon which Darwin Core _records_ are based, and _extensions_ that are linked to records in that core file. Specifically, extension records have a _many-to-one_ relationship with records in the core file. For example, a core file might contain specimen records, with one specimen per row in the file, while an extension file contains one or more identifications for those specimens, with one identification per row in the extension file, and with an identifier to the specimen for each identification row. This example would allow many identifications to be associated with each specimen.
 
@@ -279,7 +279,7 @@ A Unified Resource Identifier (URI) for a vocabulary that the source values for 
 
 The following example illustrates the use of extensions. In this example there are three files in the archive, all of which are located in the same directory as the metafile. The whales.txt file acts as a core file of Taxon records. The whales.txt file is extended by two other files, types.txt and distribution.txt. The types.txt file contains records of a type specified in an external definition at http://http://rs.gbif.org/terms/1.0/Types and consists of Dublin Core and Darwin Core terms, while the distribution.txt file contains records of a type specified at http://http://rs.gbif.org/terms/1.0/Distribution and consists of Darwin Core terms plus an additional term for threatStatus. Both extension files are related to the core file by the taxonNameID fields. Presumably, this archive contains information about whale species, type specimen records for those species, and lists of countries and the threat status for those species.
 
-![Extension](images/extension.png)
+![Extension](extension.png)
 
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
