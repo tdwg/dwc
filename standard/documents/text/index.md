@@ -1,7 +1,40 @@
-TITLE: Darwin Core text guide
-DESCRIPTION: Guidelines for implementing Darwin Core in Text files.
-LAST_MODIFIED: 2015-01-14
+# Darwin Core Text Guide
 
+Title
+: Darwin Core Text Guide
+
+Date Issued
+: 2009-02-12
+
+Date Modified
+: 2015-06-02
+
+Abstract
+: Guidelines for implementing Darwin Core in Text files.
+
+Contributors
+: Tim Robertson (GBIF), Markus Döring (GBIF), John Wieczorek (MVZ), Renato De Giovanni (CRIA), Dave Vieglais (KUNHM)
+
+Legal
+: This document is governed by the standard legal, copyright, licensing provisions and disclaimers issued by the Taxonomic Databases Working Group.
+
+Part of TDWG Standard
+: <http://www.tdwg.org/standards/450/>
+
+Creator
+: Darwin Core Task Group
+
+Identifier
+: <http://rs.tdwg.org/dwc/2014-11-08/terms/guides/text/>
+
+Latest Version
+: <http://rs.tdwg.org/dwc/terms/guides/text/>
+
+Replaces
+: <http://rs.tdwg.org/dwc/2009-12-07/terms/guides/text/>
+
+Document Status
+: Current Standard
 
 ## 1. Introduction
 
