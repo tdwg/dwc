@@ -95,7 +95,7 @@ Do not use an empty string - an element with no content:
 
 ```XML
 <dwc:locality></dwc:locality>
-'''
+```
 
 ### 2.6 Simple Darwin Core
 
