@@ -36,9 +36,6 @@ Replaces
 Document Status
 : Current Standard
 
-* TOC
-{:toc}
-
 ## 1. Introduction
 
 **Audience**: This document is targeted toward those who wish to use or construct application schemas using Darwin Core terms in XML. It includes explanations of existing schemas such as the Simple Darwin Core [[SIMPLEDWC](../../simple/index.htm)] and how to build new schemas to meet specific models of information.
@@ -98,7 +95,7 @@ Do not use an empty string - an element with no content:
 
 ```XML
 <dwc:locality></dwc:locality>
-'''
+```
 
 ### 2.6 Simple Darwin Core
 
