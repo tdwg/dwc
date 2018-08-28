@@ -36,23 +36,23 @@ Replaces
 Document Status
 : Current Standard
 
-## 1. Introduction
+## 1. Audience
 
-Audience: This document is targeted toward those who want to share biodiversity information using the simplest methods and structure: Simple Darwin Core. It explains the uses and limitations of this structure and how to expand upon it.
+This document is targeted toward those who want to share biodiversity information using the simplest methods and structure: Simple Darwin Core. It explains the uses and limitations of this structure and how to expand upon it.
 
-### 1.1 What is Simple Darwin Core?
+## 2. What is Simple Darwin Core?
 
 Simple Darwin Core is a predefined subset of the terms that have common use across a wide variety of biodiversity applications. The terms used in Simple Darwin Core are those that are found at the cross-section of taxonomic names, places, and events that document biological occurrences on the planet. The two driving principles are simplicity and flexibility.
 
-### 1.2 What makes it simple?
+## 3. What makes it simple?
 
 Simple Darwin Core is simple in that it assumes (and allows) no structure beyond the concept of rows and columns, which might be thought of as attributes and their values, or fields and records. The words field and record will be used throughout the rest of the document to refer to the two dimensions of the Simple Darwin Core structure. Think of the term names as the field names. In other words, a Simple Darwin Core record could be captured in a spreadsheet or in a single database table.
 
-### 1.3 What makes it flexible?
+## 4. What makes it flexible?
 
 Simple Darwin Core has minimal restrictions on which fields are required (none). You might argue that there should be more required fields, that there isn't anything useful you can do without them. That is partially true. A record with no fields in it wouldn't be very interesting, but there is a difference between requiring that there be a field in a record and requiring that a particular field be in all records. By having no required field restriction, Simple Darwin Core can be used to share any meaningful combination of fields - for example, to share "just names", or "just places", or observations of individuals detected in the wild at a given place and time following a method (an occurrence). This flexibility promotes the reuse of the terms and sharing mechanisms for a wide variety of services.
 
-### 1.4 Are there any rules?
+## 5. Are there any rules?
 
 There are just a few general guiding principles on how to make the best use of Simple Darwin Core:
 
@@ -71,17 +71,17 @@ Every field in Simple Darwin Core may appear either once or not at all in a sing
 
 There is a difference between having data in a field and requiring that field to have a value from among a legal set of values. Darwin Core is simple in that it has minimal restrictions on the contents of fields. The term comments give recommendations about the use of controlled vocabularies and how to structure content wherever appropriate. Data contributors are encouraged to follow these recommendations as well as possible. You might argue that having no restrictions will promote "dirty" data (data of low quality or dubious value). Consider the simple axiom "It's not what you have, but what you do with it that matters." If data restrictions were in place at the fundamental level, then a record having any non-compliant data in any of its fields could not be shared via the standard. Not only would there be a dearth of shared data in that case (or an unused standard), but also there would be no way to use the standard to build shared data cleaning tools to actually improve the situation, nor to use data services to look up alternative representations (language translations, for example) to serve a broader audience. The rest is up to how the records will be used - in other words, it is up to applications to enforce further restrictions if appropriate, and it is up to the stakeholders of those applications to decide what the restrictions will be for the purpose the application is trying to serve.
 
-### 1.5 How do I use Simple Darwin Core?
+## 6. How do I use Simple Darwin Core?
 
-Darwin Core is simple in that data "complying with" Simple Darwin Core can be easily shared in a variety of ways, including, but not limited to, text files and xml documents. Equivalent ways of sharing the same data are described in the sections [Simple Darwin Core as Text](#151-simple-darwin-core-as-text) and [Simple Darwin Core as XML](#152-simple-darwin-core-as-xml).
+Darwin Core is simple in that data "complying with" Simple Darwin Core can be easily shared in a variety of ways, including, but not limited to, text files and xml documents. Equivalent ways of sharing the same data are described in the sections [Simple Darwin Core as Text](#161-simple-darwin-core-as-text) and [Simple Darwin Core as XML](#162-simple-darwin-core-as-xml).
 
 What you need to do as a contributor of data via Simple Darwin Core depends on the requirements of the ones who are going to consume those data. For example, if you have a collaborator who wants to share data via Simple Darwin Core, then it may be sufficient to create a spreadsheet that contains column headers matching as many of the Darwin Core term names as you are both interested in sharing - just to be sure you both understand the meaning of the fields you share, and therefore hopefully something about their content. You might create a table in a database using Simple Darwin Core as a model (if it met all of your needs), and then connect that database with services for sharing via the web. You might use that same database (or spreadsheet) to export a comma-separated value (CSV) file for upload into a hosted service that could serve the data on your behalf. Or you might use that same file to upload into a service that would allow you to add value (such as a georeference) or quality (with a data cleaning tool), or to see your data in the context of other shared data.
 
-#### 1.5.1 Simple Darwin Core as text
+### 6.1 Simple Darwin Core as text
 
-The [Text guide](../text/) describes how to construct and format a text file using a simplified subset of the [Fielded Text](http://www.fieldedtext.org/)] specification, which allows the contributor to describe the contents of a text file, or set of text files (related or not) through a separate configuration file (called a metafile). The metafile allows the contributor to communicate the structure of the content of the file or files and any relationships between them. Though it is good practice to describe a Simple Darwin Core file with such a metafile, it isn't strictly necessary if the file follows the CSV file specification and the first line of the file contains the field names. A `Fielded Text` metafile for any text file based on Simple Darwin Core can be created by customizing the [example metafile](../text/example_text_simpledwc_complete.xml), which includes references to all Darwin Core terms. Refer to the comments in the file itself as well as the metafile specification in the [Text guide](../text/) for more information.
+The [Text guide](../text/) describes how to construct and format a text file using a simplified subset of the [Fielded Text](http://www.fieldedtext.org/) specification, which allows the contributor to describe the contents of a text file, or set of text files (related or not) through a separate configuration file (called a metafile). The metafile allows the contributor to communicate the structure of the content of the file or files and any relationships between them. Though it is good practice to describe a Simple Darwin Core file with such a metafile, it isn't strictly necessary if the file follows the CSV file specification and the first line of the file contains the field names. A `Fielded Text` metafile for any text file based on Simple Darwin Core can be created by customizing the [example metafile](../text/example_text_simpledwc_complete.xml), which includes references to all Darwin Core terms. Refer to the comments in the file itself as well as the metafile specification in the [Text guide](../text/) for more information.
 
-#### 1.5.2 Simple Darwin Core as XML
+### 6.2 Simple Darwin Core as XML
 
 The [XML guide](../xml/) describes how to construct XML schemas to share data based on Darwin Core terms. Looking at the [Simple Darwin Core XML Schema](../xml/tdwg_dwc_simple.xsd) using the XML guide as a reference you will be able to see that the schema supports the notion of a `SimpleDarwinRecord`, which is just a grouping of up to one of each of the Darwin Core terms that are `Properties` (not `Classes`). The following example shows a `SimpleDarwinRecordSet` containing one `SimpleDarwinRecord` for a `Taxon`:
     
@@ -128,7 +128,7 @@ The [XML guide](../xml/) describes how to construct XML schemas to share data ba
 
 The `SimpleDarwinRecord` acts as a `Class` in implementation, because all of the terms are properties of it. The Simple Darwin Core schema has just one other level of structure, the `SimpleDarwinRecordSet`, which is a grouping of one or more `SimpleDarwinRecords`. The `SimpleDarwinRecordSet` acts as a `Class` to define a data set during implementation.
 
-### 1.6 Doing more with Simple Darwin Core
+## 7. Doing more with Simple Darwin Core
 
 Sooner or later you may want to share more information than Simple Darwin Core seems to allow. For example, you and your colleagues might decide that it would be useful to have a standard way to exchange additional information relevant to questions in Conservation. How would you do it?
 
@@ -173,7 +173,7 @@ If you were using just CSV text files to exchange information, then you might be
 
 So, if you really need to extend the capabilities of Darwin Core, the best first step is to follow the standards process to add the terms you need. See the [Contributing guide](https://github.com/tdwg/dwc/blob/master/.github/CONTRIBUTING.md) to understand how to suggest a new term.
 
-### 1.7 Going beyond Simple Darwin Core
+## 8. Going beyond Simple Darwin Core
 
 For cases where rich data require rich (non-simple) structure, Simple Darwin Core alone is not suitable. When sharing information via [Fielded Text](http://www.fieldedtext.org/), the solution is to use Simple Darwin Core as a core record with one or more associated extensions for the additional information. See the [Text guide](../text/) for an explanation and examples.
 
