@@ -1,6 +1,44 @@
 # Simple Darwin Core
 
+Title
+: Simple Darwin Core
+
+Date Issued
+: 2009-04-21
+
+Date Modified
+: 2015-06-02
+
+Abstract
+: This document is a reference for the Simple Darwin Core standard.
+
+Contributors
+: John Wieczorek (MVZ), Markus Döring (GBIF), Renato De Giovanni (CRIA), Tim Robertson (GBIF), Dave Vieglais (KUNHM)
+
+Legal
+: This document is governed by the standard legal, copyright, licensing provisions and disclaimers issued by the Taxonomic Databases Working Group.
+
+Part of TDWG Standard
+: <http://www.tdwg.org/standards/450/>
+
+Creator
+: Darwin Core Task Group
+
+Identifier
+: <http://rs.tdwg.org/dwc/2014-11-08/terms/simple/>
+
+Latest Version
+: <http://rs.tdwg.org/dwc/terms/simple/>
+
+Replaces
+: <http://rs.tdwg.org/dwc/2013-10-22/terms/simple/>
+
+Document Status
+: Current Standard
+
 ## 1. Introduction
+
+Audience: This document is targeted toward those who want to share biodiversity information using the simplest methods and structure: Simple Darwin Core. It explains the uses and limitations of this structure and how to expand upon it.
 
 ### 1.1 What is Simple Darwin Core?
 
@@ -8,7 +46,7 @@ Simple Darwin Core is a predefined subset of the terms that have common use acro
 
 ### 1.2 What makes it simple?
 
-Simple Darwin Core is simple in that it assumes (and allows) no structure beyond the concept of rows and columns, which might be thought of as attributes and their values, or fields and records. The words field and record will be used throughout the rest of the document to refer to the two dimensions of Simple Darwin Core structure. Think of the term names as the field names. In other words, a Simple Darwin Core record could be captured in a spreadsheet or in a single database table.
+Simple Darwin Core is simple in that it assumes (and allows) no structure beyond the concept of rows and columns, which might be thought of as attributes and their values, or fields and records. The words field and record will be used throughout the rest of the document to refer to the two dimensions of the Simple Darwin Core structure. Think of the term names as the field names. In other words, a Simple Darwin Core record could be captured in a spreadsheet or in a single database table.
 
 ### 1.3 What makes it flexible?
 
@@ -20,7 +58,7 @@ There are just a few general guiding principles on how to make the best use of S
 
 1. Any Darwin Core term name can be used as a field name.
 2. No field name may be repeated in a record.
-3. Do not use a `Class` ([`Occurrence`](http://rs.tdwg.org/dwc/terms/Occurrence), [`Organism`](http://rs.tdwg.org/dwc/terms/Organism), [`MaterialSample`](http://rs.tdwg.org/dwc/terms/MaterialSample), [`LivingSpecimen`](http://rs.tdwg.org/dwc/terms/LivingSpecimen), [`PreservedSpecimen`](http://rs.tdwg.org/dwc/terms/PreservedSpecimen), [`FossilSpecimen`](http://rs.tdwg.org/dwc/terms/FossilSpecimen), [`Event`](http://rs.tdwg.org/dwc/terms/Event), [`HumanObservation`](http://rs.tdwg.org/dwc/terms/HumanObservation), [`MachineObservation`](http://rs.tdwg.org/dwc/terms/MachineObservation), [`Location`](http://rs.tdwg.org/dwc/terms/Location), [`GeologicalContext`](http://rs.tdwg.org/dwc/terms/GeologicalContext), [`Identification`](http://rs.tdwg.org/dwc/terms/Identification), [`Taxon`](http://rs.tdwg.org/dwc/terms/Taxon)) as a field.
+3. Do not use a _Class_ ([`Occurrence`](http://rs.tdwg.org/dwc/terms/Occurrence), [`Organism`](http://rs.tdwg.org/dwc/terms/Organism), [`MaterialSample`](http://rs.tdwg.org/dwc/terms/MaterialSample), [`LivingSpecimen`](http://rs.tdwg.org/dwc/terms/LivingSpecimen), [`PreservedSpecimen`](http://rs.tdwg.org/dwc/terms/PreservedSpecimen), [`FossilSpecimen`](http://rs.tdwg.org/dwc/terms/FossilSpecimen), [`Event`](http://rs.tdwg.org/dwc/terms/Event), [`HumanObservation`](http://rs.tdwg.org/dwc/terms/HumanObservation), [`MachineObservation`](http://rs.tdwg.org/dwc/terms/MachineObservation), [`Location`](http://rs.tdwg.org/dwc/terms/Location), [`GeologicalContext`](http://rs.tdwg.org/dwc/terms/GeologicalContext), [`Identification`](http://rs.tdwg.org/dwc/terms/Identification), [`Taxon`](http://rs.tdwg.org/dwc/terms/Taxon)) as a field.
 4. Provide data in as many fields as you can.
 5. Use the [`type`](http://rs.tdwg.org/dwc/terms/type) field to provide the name of the what Dublin Core type class (`PhysicalObject`, `StillImage`, `MovingImage`, `Sound`, `Text`) the record represents.
 6. Use the [`basisOfRecord`](http://rs.tdwg.org/dwc/terms/basisOfRecord) field to provide the name of the most specific Darwin Core class (`LivingSpecimen`, `PreservedSpecimen`, `FossilSpecimen`, `MaterialSample`, `HumanObservation`, `MachineObservation`, `Event`, `Occurrence`, `Taxon`, `Identification`, `Organism`, `Location`, `GeologicalContext`, `MeasurementOrFact`, `ResourceRelationship`) the record represents.
@@ -35,60 +73,60 @@ There is a difference between having data in a field and requiring that field to
 
 ### 1.5 How do I use Simple Darwin Core?
 
-Darwin Core is simple in that data "complying with" Simple Darwin Core can be easily shared in a variety of ways, including, but not limited to, text files and XML documents.
+Darwin Core is simple in that data "complying with" Simple Darwin Core can be easily shared in a variety of ways, including, but not limited to, text files and xml documents. Equivalent ways of sharing the same data are described in the sections [Simple Darwin Core as Text](#151-simple-darwin-core-as-text) and [Simple Darwin Core as XML](#152-simple-darwin-core-as-xml).
 
 What you need to do as a contributor of data via Simple Darwin Core depends on the requirements of the ones who are going to consume those data. For example, if you have a collaborator who wants to share data via Simple Darwin Core, then it may be sufficient to create a spreadsheet that contains column headers matching as many of the Darwin Core term names as you are both interested in sharing - just to be sure you both understand the meaning of the fields you share, and therefore hopefully something about their content. You might create a table in a database using Simple Darwin Core as a model (if it met all of your needs), and then connect that database with services for sharing via the web. You might use that same database (or spreadsheet) to export a comma-separated value (CSV) file for upload into a hosted service that could serve the data on your behalf. Or you might use that same file to upload into a service that would allow you to add value (such as a georeference) or quality (with a data cleaning tool), or to see your data in the context of other shared data.
 
 #### 1.5.1 Simple Darwin Core as text
 
-The [Text guide](../text/index.md) describes how to construct and format a text file using a simplified subset of the [Fielded Text](http://www.fieldedtext.org/)] specification, which allows the contributor to describe the contents of a text file, or set of text files (related or not) through a separate configuration file (called a metafile). The metafile allows the contributor to communicate the structure of the content of the file or files and any relationships between them. Though it is good practice to describe a Simple Darwin Core file with such a metafile, it isn't strictly necessary if the file follows the CSV file specification and the first line of the file contains the field names. A `Fielded Text` metafile for any text file based on Simple Darwin Core can be created by customizing the [example metafile](../text/example_text_simpledwc_complete.xml), which includes references to all Darwin Core terms. Refer to the comments in the file itself as well as the metafile specification in the [Text guide](../text/index.md) for more information.
+The [Text guide](../text/) describes how to construct and format a text file using a simplified subset of the [Fielded Text](http://www.fieldedtext.org/)] specification, which allows the contributor to describe the contents of a text file, or set of text files (related or not) through a separate configuration file (called a metafile). The metafile allows the contributor to communicate the structure of the content of the file or files and any relationships between them. Though it is good practice to describe a Simple Darwin Core file with such a metafile, it isn't strictly necessary if the file follows the CSV file specification and the first line of the file contains the field names. A `Fielded Text` metafile for any text file based on Simple Darwin Core can be created by customizing the [example metafile](../text/example_text_simpledwc_complete.xml), which includes references to all Darwin Core terms. Refer to the comments in the file itself as well as the metafile specification in the [Text guide](../text/) for more information.
 
 #### 1.5.2 Simple Darwin Core as XML
 
-The [XML guide](../xml/index.md) describes how to construct XML schemas to share data based on Darwin Core terms. Looking at the [Simple Darwin Core XML Schema](../xml/tdwg_dwc_simple.xsd)] using the XML guide as a reference you will be able to see that the schema supports the notion of a `SimpleDarwinRecord`, which is just a grouping of up to one of each of the Darwin Core terms that are `Properties` (not `Classes`). The following example shows a `SimpleDarwinRecordSet` containing one `SimpleDarwinRecord` for a `Taxon`:
+The [XML guide](../xml/) describes how to construct XML schemas to share data based on Darwin Core terms. Looking at the [Simple Darwin Core XML Schema](../xml/tdwg_dwc_simple.xsd) using the XML guide as a reference you will be able to see that the schema supports the notion of a `SimpleDarwinRecord`, which is just a grouping of up to one of each of the Darwin Core terms that are `Properties` (not `Classes`). The following example shows a `SimpleDarwinRecordSet` containing one `SimpleDarwinRecord` for a `Taxon`:
     
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <SimpleDarwinRecordSet
- xmlns="http://rs.tdwg.org/dwc/xsd/simpledarwincore/"
- xmlns:dc="http://purl.org/dc/terms/"
- xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
- xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="http://rs.tdwg.org/dwc/xsd/simpledarwincore/ http://rs.tdwg.org/dwc/xsd/tdwg_dwc_simple.xsd">
- <SimpleDarwinRecord>
-  <dc:modified>2006-05-04T18:13:51.0Z</dc:modified>
-  <dc:language>en</dc:language>
-  <dwc:basisOfRecord>Taxon</dwc:basisOfRecord>
-  <dwc:scientificNameID>http://research.calacademy.org/research/ichthyology/catalog/fishcatget.asp?spid=53548</dwc:scientificNameID>
-  <dwc:acceptedNameUsageID>http://research.calacademy.org/research/ichthyology/catalog/fishcatget.asp?spid=22010</dwc:acceptedNameUsageID>
-  <dwc:originalNameUsageID>http://research.calacademy.org/research/ichthyology/catalog/fishcatget.asp?spid=53548</dwc:originalNameUsageID>
-  <dwc:nameAccordingToID>http://research.calacademy.org/research/ichthyology/catalog/getref.asp?id=22764</dwc:nameAccordingToID>
-  <dwc:namePublishedInID>http://research.calacademy.org/research/ichthyology/catalog/getref.asp?id=671</dwc:namePublishedInID>
-  <dwc:scientificName>Centropyge flavicauda Fraser-Brunner 1933</dwc:scientificName>
-  <dwc:acceptedNameUsage>Centropyge fisheri (Snyder 1904)</dwc:acceptedNameUsage>
-  <dwc:parentNameUsage>Centropyge  Kaup, 1860</dwc:parentNameUsage>
-  <dwc:originalNameUsage>Centropyge flavicauda Fraser-Brunner 1933</dwc:originalNameUsage>
-  <dwc:nameAccordingTo>Allen, G.R. 1980. Butterfly and angelfishes of the world. Volume II. Mergus Publishers. Pp. 149-352.</dwc:nameAccordingTo>
-  <dwc:namePublishedIn>Fraser-Brunner, A. 1933. A revision of the chaetodont fishes of the subfamily Pomacanthinae. Proceedings of the General 
+  xmlns="http://rs.tdwg.org/dwc/xsd/simpledarwincore/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://rs.tdwg.org/dwc/xsd/simpledarwincore/ http://rs.tdwg.org/dwc/xsd/tdwg_dwc_simple.xsd">
+  <SimpleDarwinRecord>
+    <dc:modified>2006-05-04T18:13:51.0Z</dc:modified>
+    <dc:language>en</dc:language>
+    <dwc:basisOfRecord>Taxon</dwc:basisOfRecord>
+    <dwc:scientificNameID>http://research.calacademy.org/research/ichthyology/catalog/fishcatget.asp?spid=53548</dwc:scientificNameID>
+    <dwc:acceptedNameUsageID>http://research.calacademy.org/research/ichthyology/catalog/fishcatget.asp?spid=22010</dwc:acceptedNameUsageID>
+    <dwc:originalNameUsageID>http://research.calacademy.org/research/ichthyology/catalog/fishcatget.asp?spid=53548</dwc:originalNameUsageID>
+    <dwc:nameAccordingToID>http://research.calacademy.org/research/ichthyology/catalog/getref.asp?id=22764</dwc:nameAccordingToID>
+    <dwc:namePublishedInID>http://research.calacademy.org/research/ichthyology/catalog/getref.asp?id=671</dwc:namePublishedInID>
+    <dwc:scientificName>Centropyge flavicauda Fraser-Brunner 1933</dwc:scientificName>
+    <dwc:acceptedNameUsage>Centropyge fisheri (Snyder 1904)</dwc:acceptedNameUsage>
+    <dwc:parentNameUsage>Centropyge  Kaup, 1860</dwc:parentNameUsage>
+    <dwc:originalNameUsage>Centropyge flavicauda Fraser-Brunner 1933</dwc:originalNameUsage>
+    <dwc:nameAccordingTo>Allen, G.R. 1980. Butterfly and angelfishes of the world. Volume II. Mergus Publishers. Pp. 149-352.</dwc:nameAccordingTo>
+    <dwc:namePublishedIn>Fraser-Brunner, A. 1933. A revision of the chaetodont fishes of the subfamily Pomacanthinae. Proceedings of the General 
           Meetings for Scientific Business of the Zoological Society of London 1933 (pt 3, no.30): 543-599, Pl. 1.</dwc:namePublishedIn>
-  <dwc:higherClassification>Animalia;Chordata;Vertebrata;Osteichthyes;Actinopterygii;Neopterygii;Teleostei;Acanthopterygii;Perciformes;
+    <dwc:higherClassification>Animalia;Chordata;Vertebrata;Osteichthyes;Actinopterygii;Neopterygii;Teleostei;Acanthopterygii;Perciformes;
           Percoidei;Pomacanthidae;Centropyge</dwc:higherClassification>
-  <dwc:kingdom>Animalia</dwc:kingdom>
-  <dwc:phylum>Chordata</dwc:phylum>
-  <dwc:class>Osteichthyes</dwc:class>
-  <dwc:order>Perciformes</dwc:order>
-  <dwc:family>Pomacanthidae</dwc:family>
-  <dwc:genus>Centropyge</dwc:genus>
-  <dwc:specificEpithet>flavicauda</dwc:specificEpithet>
-  <dwc:scientificNameAuthorship>Fraser-Brunner 1933</dwc:scientificNameAuthorship>
-  <dwc:taxonRank>species</dwc:taxonRank>
-  <dwc:nomenclaturalCode>ICZN</dwc:nomenclaturalCode>
-  <dwc:taxonomicStatus>accepted</dwc:taxonomicStatus>
- </SimpleDarwinRecord>
+    <dwc:kingdom>Animalia</dwc:kingdom>
+    <dwc:phylum>Chordata</dwc:phylum>
+    <dwc:class>Osteichthyes</dwc:class>
+    <dwc:order>Perciformes</dwc:order>
+    <dwc:family>Pomacanthidae</dwc:family>
+    <dwc:genus>Centropyge</dwc:genus>
+    <dwc:specificEpithet>flavicauda</dwc:specificEpithet>
+    <dwc:scientificNameAuthorship>Fraser-Brunner 1933</dwc:scientificNameAuthorship>
+    <dwc:taxonRank>species</dwc:taxonRank>
+    <dwc:nomenclaturalCode>ICZN</dwc:nomenclaturalCode>
+    <dwc:taxonomicStatus>accepted</dwc:taxonomicStatus>
+  </SimpleDarwinRecord>
 </SimpleDarwinRecordSet>
 ```
 
-The `SimpleDarwinRecord` acts as a `Class` in implementation, because all of the terms are properties of it. Tge Simple Darwin Core schema has just one other level of structure, the `SimpleDarwinRecordSet`, which is a grouping of one or more `SimpleDarwinRecords`. The `SimpleDarwinRecordSet` acts as a `Class` to define a data set during implementation.
+The `SimpleDarwinRecord` acts as a `Class` in implementation, because all of the terms are properties of it. The Simple Darwin Core schema has just one other level of structure, the `SimpleDarwinRecordSet`, which is a grouping of one or more `SimpleDarwinRecords`. The `SimpleDarwinRecordSet` acts as a `Class` to define a data set during implementation.
 
 ### 1.6 Doing more with Simple Darwin Core
 
@@ -101,33 +139,33 @@ Another way to get more out of Darwin Core without adding a term is to "payload"
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <SimpleDarwinRecordSet
- xmlns="http://rs.tdwg.org/dwc/xsd/simpledarwincore/"
- xmlns:dc="http://purl.org/dc/terms/"
- xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
- xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="http://rs.tdwg.org/dwc/xsd/simpledarwincore/ http://rs.tdwg.org/dwc/xsd/tdwg_dwc_simple.xsd">
- <SimpleDarwinRecord>
-  <dc:modified>2009-02-12T12:43:31</dc:modified>
-  <dc:language>en</dc:language>
-  <dwc:basisOfRecord>Taxon</dwc:basisOfRecord>
-  <dwc:scientificName>Ctenomys sociabilis</dwc:scientificName>
-  <dwc:acceptedNameUsage>Ctenomys sociabilis Pearson and Christie, 1985</dwc:acceptedNameUsage>
-  <dwc:parentNameUsage>Ctenomys Blainville, 1826</dwc:parentNameUsage>
-  <dwc:higherClassification>Animalia; Chordata; Vertebrata; Mammalia; Theria; Eutheria; Rodentia; Hystricognatha; Hystricognathi; Ctenomyidae; Ctenomyini; Ctenomys</dwc:higherClassification>
-  <dwc:kingdom>Animalia</dwc:kingdom>
-  <dwc:phylum>Chordata</dwc:phylum>
-  <dwc:class>Mammalia</dwc:class>
-  <dwc:order>Rodentia</dwc:order>
-  <dwc:family>Ctenomyidae</dwc:family>
-  <dwc:genus>Ctenomys</dwc:genus>
-  <dwc:specificEpithet>sociabilis</dwc:specificEpithet>
-  <dwc:taxonRank>species</dwc:taxonRank>
-  <dwc:scientificNameAuthorship>Pearson and Christie, 1985</dwc:scientificNameAuthorship>
-  <dwc:nomenclaturalCode>ICZN</dwc:nomenclaturalCode>
-  <dwc:namePublishedIn>Pearson O. P., and M. I. Christie. 1985. Historia Natural, 5(37):388</dwc:namePublishedIn>
-  <dwc:taxonomicStatus>valid</dwc:taxonomicStatus>
-  <dwc:dynamicProperties>{"iucnStatus":"vulnerable", "distribution":"Neuquén, Argentina"}</dwc:dynamicProperties> 
- </SimpleDarwinRecord>
+  xmlns="http://rs.tdwg.org/dwc/xsd/simpledarwincore/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://rs.tdwg.org/dwc/xsd/simpledarwincore/ http://rs.tdwg.org/dwc/xsd/tdwg_dwc_simple.xsd">
+  <SimpleDarwinRecord>
+    <dc:modified>2009-02-12T12:43:31</dc:modified>
+    <dc:language>en</dc:language>
+    <dwc:basisOfRecord>Taxon</dwc:basisOfRecord>
+    <dwc:scientificName>Ctenomys sociabilis</dwc:scientificName>
+    <dwc:acceptedNameUsage>Ctenomys sociabilis Pearson and Christie, 1985</dwc:acceptedNameUsage>
+    <dwc:parentNameUsage>Ctenomys Blainville, 1826</dwc:parentNameUsage>
+    <dwc:higherClassification>Animalia; Chordata; Vertebrata; Mammalia; Theria; Eutheria; Rodentia; Hystricognatha; Hystricognathi; Ctenomyidae; Ctenomyini; Ctenomys</dwc:higherClassification>
+    <dwc:kingdom>Animalia</dwc:kingdom>
+    <dwc:phylum>Chordata</dwc:phylum>
+    <dwc:class>Mammalia</dwc:class>
+    <dwc:order>Rodentia</dwc:order>
+    <dwc:family>Ctenomyidae</dwc:family>
+    <dwc:genus>Ctenomys</dwc:genus>
+    <dwc:specificEpithet>sociabilis</dwc:specificEpithet>
+    <dwc:taxonRank>species</dwc:taxonRank>
+    <dwc:scientificNameAuthorship>Pearson and Christie, 1985</dwc:scientificNameAuthorship>
+    <dwc:nomenclaturalCode>ICZN</dwc:nomenclaturalCode>
+    <dwc:namePublishedIn>Pearson O. P., and M. I. Christie. 1985. Historia Natural, 5(37):388</dwc:namePublishedIn>
+    <dwc:taxonomicStatus>valid</dwc:taxonomicStatus>
+    <dwc:dynamicProperties>{"iucnStatus":"vulnerable", "distribution":"Neuquén, Argentina"}</dwc:dynamicProperties> 
+  </SimpleDarwinRecord>
 </SimpleDarwinRecordSet>
 ```
 
@@ -137,5 +175,6 @@ So, if you really need to extend the capabilities of Darwin Core, the best first
 
 ### 1.7 Going beyond Simple Darwin Core
 
-For cases where rich data require rich (non-simple) structure, Simple Darwin Core alone is not suitable. When sharing information via [Fielded Text](http://www.fieldedtext.org/), the solution is to use Simple Darwin Core as a core record with one or more associated extensions for the additional information. See the [Text guide](../text/index.md) for an explanation and examples. When sharing information via [XML](http://www.w3.org/XML/), a richer structure such as the Access to Biological Collections Data schema ([ABCD](https://github.com/tdwg/abcd)), or the [Generic Darwin Core](../xml/tdwg_dwcterms.xsd), or another schema built from Darwin Core terms to suit the use of the data in a particular context. See the [XML guide](../xml/index.md) for examples and references to model schemas.
-olution is to use the _Simple Darwin Core_ as a core record with one or more associated extensions for the additional information. See the _Darwin Core Text Guide_ [[TEXTGUIDE](guides/text/index.html)] for an explanation and examples. When sharing information via XML [[XML](http://www.w3.org/XML/)], a richer structure such as the _Access to Biological Collections Data_ schema [[ABCD](http://www.tdwg.org/schemas/abcd/2.06)], or the _Generic Darwin Core_ [[GENERICXMLSCHEMA](guides/xml/tdwg_dwcterms.xsd)], or another schema built from the Darwin Core terms to suit the use of the data in a particular context. See the _Darwin Core XML Guide_ [[XMLGUIDE](guides/xml/index.html)] for examples and references to model schemas.
+For cases where rich data require rich (non-simple) structure, Simple Darwin Core alone is not suitable. When sharing information via [Fielded Text](http://www.fieldedtext.org/), the solution is to use Simple Darwin Core as a core record with one or more associated extensions for the additional information. See the [Text guide](../text/) for an explanation and examples.
+
+When sharing information via [XML](http://www.w3.org/XML/), a richer structure such as the Access to Biological Collections Data schema ([ABCD](https://github.com/tdwg/abcd)), or the [Generic Darwin Core](../xml/tdwg_dwcterms.xsd), or another schema built from Darwin Core terms to suit the use of the data in a particular context. See the [XML guide](../xml/) for examples and references to model schemas.
