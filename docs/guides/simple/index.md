@@ -36,9 +36,9 @@ Replaces
 Document Status
 : Current Standard
 
-## 1. Audience
+## 1. Introduction
 
-This document is targeted toward those who want to share biodiversity information using the simplest methods and structure: Simple Darwin Core. It explains the uses and limitations of this structure and how to expand upon it.
+**Audience**: This document is targeted toward those who want to share biodiversity information using the simplest methods and structure: Simple Darwin Core. It explains the uses and limitations of this structure and how to expand upon it.
 
 ## 2. What is Simple Darwin Core?
 
