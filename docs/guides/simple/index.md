@@ -60,7 +60,7 @@ There are just a few general guiding principles on how to make the best use of S
 2. No field name may be repeated in a record.
 3. Do not use a _Class_ ([`Occurrence`](http://rs.tdwg.org/dwc/terms/Occurrence), [`Organism`](http://rs.tdwg.org/dwc/terms/Organism), [`MaterialSample`](http://rs.tdwg.org/dwc/terms/MaterialSample), [`LivingSpecimen`](http://rs.tdwg.org/dwc/terms/LivingSpecimen), [`PreservedSpecimen`](http://rs.tdwg.org/dwc/terms/PreservedSpecimen), [`FossilSpecimen`](http://rs.tdwg.org/dwc/terms/FossilSpecimen), [`Event`](http://rs.tdwg.org/dwc/terms/Event), [`HumanObservation`](http://rs.tdwg.org/dwc/terms/HumanObservation), [`MachineObservation`](http://rs.tdwg.org/dwc/terms/MachineObservation), [`Location`](http://rs.tdwg.org/dwc/terms/Location), [`GeologicalContext`](http://rs.tdwg.org/dwc/terms/GeologicalContext), [`Identification`](http://rs.tdwg.org/dwc/terms/Identification), [`Taxon`](http://rs.tdwg.org/dwc/terms/Taxon)) as a field.
 4. Provide data in as many fields as you can.
-5. Use the [`type`](http://rs.tdwg.org/dwc/terms/type) field to provide the name of the what Dublin Core type class (`PhysicalObject`, `StillImage`, `MovingImage`, `Sound`, `Text`) the record represents.
+5. Use the [`dcterms:type`](http://rs.tdwg.org/dwc/terms/dcterms:type) field to provide the name of the what Dublin Core type class (`PhysicalObject`, `StillImage`, `MovingImage`, `Sound`, `Text`) the record represents.
 6. Use the [`basisOfRecord`](http://rs.tdwg.org/dwc/terms/basisOfRecord) field to provide the name of the most specific Darwin Core class (`LivingSpecimen`, `PreservedSpecimen`, `FossilSpecimen`, `MaterialSample`, `HumanObservation`, `MachineObservation`, `Event`, `Occurrence`, `Taxon`, `Identification`, `Organism`, `Location`, `GeologicalContext`, `MeasurementOrFact`, `ResourceRelationship`) the record represents.
 7. Populate fields with data that match the definition of the field.
 8. Use the controlled vocabulary for the values of fields that recommend them.
@@ -88,41 +88,41 @@ The [XML guide](../xml/) describes how to construct XML schemas to share data ba
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <SimpleDarwinRecordSet
-  xmlns="http://rs.tdwg.org/dwc/xsd/simpledarwincore/"
-  xmlns:dc="http://purl.org/dc/terms/"
-  xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://rs.tdwg.org/dwc/xsd/simpledarwincore/ http://rs.tdwg.org/dwc/xsd/tdwg_dwc_simple.xsd">
-  <SimpleDarwinRecord>
-    <dc:modified>2006-05-04T18:13:51.0Z</dc:modified>
-    <dc:language>en</dc:language>
-    <dwc:basisOfRecord>Taxon</dwc:basisOfRecord>
-    <dwc:scientificNameID>http://research.calacademy.org/research/ichthyology/catalog/fishcatget.asp?spid=53548</dwc:scientificNameID>
-    <dwc:acceptedNameUsageID>http://research.calacademy.org/research/ichthyology/catalog/fishcatget.asp?spid=22010</dwc:acceptedNameUsageID>
-    <dwc:originalNameUsageID>http://research.calacademy.org/research/ichthyology/catalog/fishcatget.asp?spid=53548</dwc:originalNameUsageID>
-    <dwc:nameAccordingToID>http://research.calacademy.org/research/ichthyology/catalog/getref.asp?id=22764</dwc:nameAccordingToID>
-    <dwc:namePublishedInID>http://research.calacademy.org/research/ichthyology/catalog/getref.asp?id=671</dwc:namePublishedInID>
-    <dwc:scientificName>Centropyge flavicauda Fraser-Brunner 1933</dwc:scientificName>
-    <dwc:acceptedNameUsage>Centropyge fisheri (Snyder 1904)</dwc:acceptedNameUsage>
-    <dwc:parentNameUsage>Centropyge  Kaup, 1860</dwc:parentNameUsage>
-    <dwc:originalNameUsage>Centropyge flavicauda Fraser-Brunner 1933</dwc:originalNameUsage>
-    <dwc:nameAccordingTo>Allen, G.R. 1980. Butterfly and angelfishes of the world. Volume II. Mergus Publishers. Pp. 149-352.</dwc:nameAccordingTo>
-    <dwc:namePublishedIn>Fraser-Brunner, A. 1933. A revision of the chaetodont fishes of the subfamily Pomacanthinae. Proceedings of the General 
-          Meetings for Scientific Business of the Zoological Society of London 1933 (pt 3, no.30): 543-599, Pl. 1.</dwc:namePublishedIn>
-    <dwc:higherClassification>Animalia;Chordata;Vertebrata;Osteichthyes;Actinopterygii;Neopterygii;Teleostei;Acanthopterygii;Perciformes;
-          Percoidei;Pomacanthidae;Centropyge</dwc:higherClassification>
-    <dwc:kingdom>Animalia</dwc:kingdom>
-    <dwc:phylum>Chordata</dwc:phylum>
-    <dwc:class>Osteichthyes</dwc:class>
-    <dwc:order>Perciformes</dwc:order>
-    <dwc:family>Pomacanthidae</dwc:family>
-    <dwc:genus>Centropyge</dwc:genus>
-    <dwc:specificEpithet>flavicauda</dwc:specificEpithet>
-    <dwc:scientificNameAuthorship>Fraser-Brunner 1933</dwc:scientificNameAuthorship>
-    <dwc:taxonRank>species</dwc:taxonRank>
-    <dwc:nomenclaturalCode>ICZN</dwc:nomenclaturalCode>
-    <dwc:taxonomicStatus>accepted</dwc:taxonomicStatus>
-  </SimpleDarwinRecord>
+    xmlns="http://rs.tdwg.org/dwc/xsd/simpledarwincore/"
+    xmlns:dc="http://purl.org/dc/terms/"
+    xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://rs.tdwg.org/dwc/xsd/simpledarwincore/ http://rs.tdwg.org/dwc/xsd/tdwg_dwc_simple.xsd">
+    <SimpleDarwinRecord>
+        <dc:modified>2006-05-04T18:13:51.0Z</dc:modified>
+        <dc:language>en</dc:language>
+        <dwc:basisOfRecord>Taxon</dwc:basisOfRecord>
+        <dwc:scientificNameID>http://research.calacademy.org/research/ichthyology/catalog/fishcatget.asp?spid=53548</dwc:scientificNameID>
+        <dwc:acceptedNameUsageID>http://research.calacademy.org/research/ichthyology/catalog/fishcatget.asp?spid=22010</dwc:acceptedNameUsageID>
+        <dwc:originalNameUsageID>http://research.calacademy.org/research/ichthyology/catalog/fishcatget.asp?spid=53548</dwc:originalNameUsageID>
+        <dwc:nameAccordingToID>http://research.calacademy.org/research/ichthyology/catalog/getref.asp?id=22764</dwc:nameAccordingToID>
+        <dwc:namePublishedInID>http://research.calacademy.org/research/ichthyology/catalog/getref.asp?id=671</dwc:namePublishedInID>
+        <dwc:scientificName>Centropyge flavicauda Fraser-Brunner 1933</dwc:scientificName>
+        <dwc:acceptedNameUsage>Centropyge fisheri (Snyder 1904)</dwc:acceptedNameUsage>
+        <dwc:parentNameUsage>Centropyge  Kaup, 1860</dwc:parentNameUsage>
+        <dwc:originalNameUsage>Centropyge flavicauda Fraser-Brunner 1933</dwc:originalNameUsage>
+        <dwc:nameAccordingTo>Allen, G.R. 1980. Butterfly and angelfishes of the world. Volume II. Mergus Publishers. Pp. 149-352.</dwc:nameAccordingTo>
+        <dwc:namePublishedIn>Fraser-Brunner, A. 1933. A revision of the chaetodont fishes of the subfamily Pomacanthinae. Proceedings of the General 
+              Meetings for Scientific Business of the Zoological Society of London 1933 (pt 3, no.30): 543-599, Pl. 1.</dwc:namePublishedIn>
+        <dwc:higherClassification>Animalia;Chordata;Vertebrata;Osteichthyes;Actinopterygii;Neopterygii;Teleostei;Acanthopterygii;Perciformes;
+              Percoidei;Pomacanthidae;Centropyge</dwc:higherClassification>
+        <dwc:kingdom>Animalia</dwc:kingdom>
+        <dwc:phylum>Chordata</dwc:phylum>
+        <dwc:class>Osteichthyes</dwc:class>
+        <dwc:order>Perciformes</dwc:order>
+        <dwc:family>Pomacanthidae</dwc:family>
+        <dwc:genus>Centropyge</dwc:genus>
+        <dwc:specificEpithet>flavicauda</dwc:specificEpithet>
+        <dwc:scientificNameAuthorship>Fraser-Brunner 1933</dwc:scientificNameAuthorship>
+        <dwc:taxonRank>species</dwc:taxonRank>
+        <dwc:nomenclaturalCode>ICZN</dwc:nomenclaturalCode>
+        <dwc:taxonomicStatus>accepted</dwc:taxonomicStatus>
+    </SimpleDarwinRecord>
 </SimpleDarwinRecordSet>
 ```
 
@@ -139,33 +139,33 @@ Another way to get more out of Darwin Core without adding a term is to "payload"
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <SimpleDarwinRecordSet
-  xmlns="http://rs.tdwg.org/dwc/xsd/simpledarwincore/"
-  xmlns:dc="http://purl.org/dc/terms/"
-  xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://rs.tdwg.org/dwc/xsd/simpledarwincore/ http://rs.tdwg.org/dwc/xsd/tdwg_dwc_simple.xsd">
-  <SimpleDarwinRecord>
-    <dc:modified>2009-02-12T12:43:31</dc:modified>
-    <dc:language>en</dc:language>
-    <dwc:basisOfRecord>Taxon</dwc:basisOfRecord>
-    <dwc:scientificName>Ctenomys sociabilis</dwc:scientificName>
-    <dwc:acceptedNameUsage>Ctenomys sociabilis Pearson and Christie, 1985</dwc:acceptedNameUsage>
-    <dwc:parentNameUsage>Ctenomys Blainville, 1826</dwc:parentNameUsage>
-    <dwc:higherClassification>Animalia; Chordata; Vertebrata; Mammalia; Theria; Eutheria; Rodentia; Hystricognatha; Hystricognathi; Ctenomyidae; Ctenomyini; Ctenomys</dwc:higherClassification>
-    <dwc:kingdom>Animalia</dwc:kingdom>
-    <dwc:phylum>Chordata</dwc:phylum>
-    <dwc:class>Mammalia</dwc:class>
-    <dwc:order>Rodentia</dwc:order>
-    <dwc:family>Ctenomyidae</dwc:family>
-    <dwc:genus>Ctenomys</dwc:genus>
-    <dwc:specificEpithet>sociabilis</dwc:specificEpithet>
-    <dwc:taxonRank>species</dwc:taxonRank>
-    <dwc:scientificNameAuthorship>Pearson and Christie, 1985</dwc:scientificNameAuthorship>
-    <dwc:nomenclaturalCode>ICZN</dwc:nomenclaturalCode>
-    <dwc:namePublishedIn>Pearson O. P., and M. I. Christie. 1985. Historia Natural, 5(37):388</dwc:namePublishedIn>
-    <dwc:taxonomicStatus>valid</dwc:taxonomicStatus>
-    <dwc:dynamicProperties>{"iucnStatus":"vulnerable", "distribution":"Neuquén, Argentina"}</dwc:dynamicProperties> 
-  </SimpleDarwinRecord>
+    xmlns="http://rs.tdwg.org/dwc/xsd/simpledarwincore/"
+    xmlns:dc="http://purl.org/dc/terms/"
+    xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://rs.tdwg.org/dwc/xsd/simpledarwincore/ http://rs.tdwg.org/dwc/xsd/tdwg_dwc_simple.xsd">
+    <SimpleDarwinRecord>
+        <dc:modified>2009-02-12T12:43:31</dc:modified>
+        <dc:language>en</dc:language>
+        <dwc:basisOfRecord>Taxon</dwc:basisOfRecord>
+        <dwc:scientificName>Ctenomys sociabilis</dwc:scientificName>
+        <dwc:acceptedNameUsage>Ctenomys sociabilis Pearson and Christie, 1985</dwc:acceptedNameUsage>
+        <dwc:parentNameUsage>Ctenomys Blainville, 1826</dwc:parentNameUsage>
+        <dwc:higherClassification>Animalia; Chordata; Vertebrata; Mammalia; Theria; Eutheria; Rodentia; Hystricognatha; Hystricognathi; Ctenomyidae; Ctenomyini; Ctenomys</dwc:higherClassification>
+        <dwc:kingdom>Animalia</dwc:kingdom>
+        <dwc:phylum>Chordata</dwc:phylum>
+        <dwc:class>Mammalia</dwc:class>
+        <dwc:order>Rodentia</dwc:order>
+        <dwc:family>Ctenomyidae</dwc:family>
+        <dwc:genus>Ctenomys</dwc:genus>
+        <dwc:specificEpithet>sociabilis</dwc:specificEpithet>
+        <dwc:taxonRank>species</dwc:taxonRank>
+        <dwc:scientificNameAuthorship>Pearson and Christie, 1985</dwc:scientificNameAuthorship>
+        <dwc:nomenclaturalCode>ICZN</dwc:nomenclaturalCode>
+        <dwc:namePublishedIn>Pearson O. P., and M. I. Christie. 1985. Historia Natural, 5(37):388</dwc:namePublishedIn>
+        <dwc:taxonomicStatus>valid</dwc:taxonomicStatus>
+        <dwc:dynamicProperties>{"iucnStatus":"vulnerable", "distribution":"Neuquén, Argentina"}</dwc:dynamicProperties> 
+    </SimpleDarwinRecord>
 </SimpleDarwinRecordSet>
 ```
 
