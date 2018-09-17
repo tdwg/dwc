@@ -1,7 +1,7 @@
-# Darwin Core XML Guide
+# Darwin Core XML guide
 
 Title
-: Darwin Core XML Guide
+: Darwin Core XML guide
 
 Date Issued
 : 2009-02-12
@@ -44,13 +44,13 @@ This document provides guidelines for implementing application schemas based on 
 
 This document does not provide guidelines for encoding Darwin Core in RDF/XML. Nor does it take a position on the relative merits of encoding metadata in "plain" XML rather than RDF/XML. This document provides guidelines in those cases where RDF/XML is not considered appropriate.
 
-## 2. Implementation Guide
+## 2. Implementation guide
 
-### 2.1 XML Schema
+### 2.1 XML schema
 
 Implementors should base their XML applications on [XML Schemas](http://www.w3.org/XML/Schema) rather than _XML DTDs_. Approaches based on _XML Schemas_ are more flexible and are more easily re-used within other XML applications.
 
-### 2.2 XML Namespaces
+### 2.2 XML namespaces
 
 Implementors should use [XML Namespaces](http://www.w3.org/TR/1999/REC-xml-names-19990114/) to uniquely identify elements. Darwin Core namespaces are defined in the [Darwin Core Namespace Policy](../../namespace/), while Dublin Core namespaces are defined in the [DCMI Namespace Recommendation](http://dublincore.org/documents/dcmi-namespace/).
 
@@ -65,7 +65,7 @@ The Darwin Core follows the [Dublin Core Metadata Initiative Abstract Model](htt
 - The `values` of `properties` within a `Darwin Core record` describe that record.
 - A `Darwin Core record` must include all required `properties`, if any, and their associated `values`.
 
-### 2.4 Properties and Values
+### 2.4 Properties and values
 
 Darwin Core follows the guidelines for expressing [Dublin Core metadata using XML](http://dublincore.org/documents/dc-xml/) except in that Darwin Core implementors should encode `properties` as XML elements and `values` as the content of those elements instead of having each property contain a value representation and its associated value. The name of the XML element should be an XML qualified name (QName), which associates the value given in the `Term name` attribute in the [Darwin Core Terms](../../terms/) recommendation with the appropriate namespace name. For example, use:
 
@@ -130,7 +130,7 @@ Following is a brief example of an XML document for a single specimen complying 
 </dwr:SimpleDarwinRecordSet>
 ```
 
-### 2.7 Classes and Containment
+### 2.7 Classes and containment
 
 Many Darwin Core terms (`properties`) are defined as being associated with another term (a `class`). For example, [`scientificName`](http://rs.tdwg.org/dwc/terms/scientificName) and [`Taxon`](http://rs.tdwg.org/dwc/terms/Taxon) are both Darwin Core terms, but `scientificName` is a property associated with the `Taxon` class. When constructing schemas that take advantage of classes in structures, implementors are encouraged to maintain the property/class relationships defined by the terms whenever possible (refer to the `Class` attribute of the term as given in the [Quick Reference Guide](../../terms/) or the attribute `dwcattributes:organizedInClass` in the term declaration in the [`dcterms.rdf`](../rdf/dcterms.rdf) file. To promote reuse, Darwin Core provides a set of xml schemas to use as the basis of additional schemas:
 
