@@ -36,7 +36,7 @@ Replaces
 Document Status
 : Current Standard
 
-## 1 Introduction
+## 1. Introduction
 
 Each method of encoding information using Darwin Core [[DWC](http://rs.tdwg.org/dwc/index.htm)] has a guide explaining how to use the Darwin Core terms in that situation. This is the guide for encoding biodiversity data using the Resource Description Framework [[RDF](http://www.w3.org/TR/rdf11-concepts/)].
 
@@ -192,7 +192,7 @@ A number of Darwin Core properties specify that their values should be an identi
 
 To facilitate achieving the clarity that RDF makes possible, this guide provides different approaches for each of these four situations in which string values are provided. In the first three situations, the existing term from Darwin Core namespace _dwc:_ can be used with a literal value to expose the string value as it currently exists in a text-based database. This allows for the rapid deployment of RDF described in [Section 1.4.3](./index.htm#1.4.3_Use_of_Darwin_Core_terms_in_RDF) and is all that is required in the first situation ([Section 1.5.1](./index.htm#1.5.1_Situations_where_a_string_is_the_standard_means_for_encodi)). In the second situation ([Section 1.5.2](./index.htm#1.5.2_Situations_where_a_string_value_serves_as_a_proxy_for_a_no)), analogues of the existing _dwc:_ terms have been created in the _dwciri:_ namespace which are intended to be used with IRI-references rather than names. In the third situation ([Section 1.5.3](./index.htm#1.5.3_Situations_where_a_string_value_serves_as_a_keyword_to_ena)), new _dwciri:_ terms have been created to relate subject resources to IRI-identified object resources which form part of a hierarchy. If such a hierarchy already exists, the need is eliminated for separate terms (“convenience terms”) which relate the subject resource to all parts of the hierarchy, although those terms can still be used if they are convenient for facilitating string searches. The last situation ([Section 1.5.4](./index.htm#1.5.4_Situations_where_a_string_value_serves_as_an_identifier)) is more complex and a significant part of the implementation guide is devoted to the ways in which RDF should be structured to handle various kinds of identifiers.
 
-## 2 Implementation Guide
+## 2. Implementation Guide
 
 ### 2.1 Definitions
 
@@ -1288,7 +1288,7 @@ Turtle
           dwc:measurementRemarks "Accuracy from significant digits."@en].
 ```
 
-## 3 Term reference
+## 3. Term reference
 
 This section organizes terms from Darwin Core and other key vocabularies according to their use in RDF. If the use of a term has additional restrictions or implications (e.g., domain and range assertions), they are noted. Recommended formats and values are given when appropriate.
 
@@ -1390,7 +1390,7 @@ dwc:associatedOccurrences</br>dwc:associatedMedia</br>dwc:associatedSequences</b
 dwc:previousIdentifications | There is no consensus object property for associating identifications with resources of other classes. From whatever scheme you have chosen to provide object properties, use same object property as used for the most recent identification but provide an earlier dwc:dateIdentified value.
 dwc:organismScope | Use rdf:type with a non-literal object. See the comment at http://rs.tdwg.org/dwc/terms/organismScope.
 
-## 4 References
+## 4. References
 
 Resource | Link | Description
 --- | --- | ---
