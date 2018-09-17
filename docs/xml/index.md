@@ -36,7 +36,7 @@ Replaces
 Document Status
 : Current Standard
 
-## 1. Introduction
+## 1 Introduction
 
 **Audience**: This document is targeted toward those who wish to use or construct application schemas using Darwin Core terms in XML. It includes explanations of existing schemas such as [Simple Darwin Core](../simple/) and how to build new schemas to meet specific models of information.
 
@@ -44,7 +44,7 @@ This document provides guidelines for implementing application schemas based on 
 
 This document does not provide guidelines for encoding Darwin Core in RDF/XML. Nor does it take a position on the relative merits of encoding metadata in "plain" XML rather than RDF/XML. This document provides guidelines in those cases where RDF/XML is not considered appropriate.
 
-## 2. Implementation guide
+## 2 Implementation guide
 
 ### 2.1 XML schema
 

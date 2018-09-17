@@ -36,7 +36,7 @@ Replaces
 Document Status
 : Current Standard
 
-## 1. Introduction
+## 1 Introduction
 
 This document provides guidelines for formatting and sharing [Darwin Core terms](http://rs.tdwg.org/dwc/terms) in _fielded text_ formats, such as one or more comma separated value (CSV) files. Data conforming to the [Simple Darwin Core](../simple/) (CSV format and having the first row include Darwin Core standard term names) can be shared in a single file, while a non-standard text file can be understood using an [XML](http://www.w3.org/XML/) metafile to describe its contents and formatting.
 
@@ -92,7 +92,7 @@ Two scenarios that might benefit from the use of fielded text are:
 - The transfer of large numbers of Darwin Core records and related data from one database to another. Typically databases are very efficient at exporting and importing comma separated text files.
 - The description of legacy data existing in a fielded text format, such that it might be automatically understood and loaded into another system. It could be that this system would then serve the data in another format such as XML.
 
-## 2. Metafile content
+## 2 Metafile content
 
 The [text metafile schema](tdwg_dwc_text.xsd) provides technical details for the structure of a metafile by defining the elements and attributes required to describe the contents and relationships between text files. These elements and attributes, with descriptions and specifications for their use in a metafile, are described in the following table.
 
@@ -159,7 +159,7 @@ Attribute | Description | Required | Default
 `default` | Specifies value to use if one is not supplied for the field in a given row. If no index is supplied, the default can be used to define a constant for all rows for a field that is not in the data file. | no | 
 `vocabulary` | A Unified Resource Identifier (URI) for a vocabulary that the source values for this field are based on. The URI ideally should resolve to some machine readable definition like SKOS, RDF or at least some simple text or html file often found for ISO or RFC standards. For example http://rs.gbif.org/vocabulary/gbif/nomenclatural_code.xml, http://www.ietf.org/rfc/rfc3066.txt or http://www.iso.org/iso/list-en1-semic-3.txt. | no | 
 
-## 3. Implementation guide
+## 3 Implementation guide
 
 ### 3.1 Extension example
 
@@ -211,7 +211,7 @@ The following example illustrates the use of extensions. In this example there a
 </archive>
 ```
 
-## 4. Database example
+## 4 Database example
 
 ### 4.1 MySQL
 
