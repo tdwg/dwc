@@ -83,14 +83,14 @@ PhysicalObject,ANSP,PH,123,"Cryptantha gypsophila Reveal & C.R. Broome",12,urn:l
 PhysicalObject,ANSP,PH,124,"Buxbaumia piperi",2,urn:lsid:tim.lsid.tdwg.org:collections:1
 ```
 
-### 1.2 XML versus _fielded text_
+### 1.2 XML versus fielded text
 
-Many resources exist on the web describing the advantages of Extensible Markup Language [XML](http://www.w3.org/XML/) over less structured content such as _fielded text_. The Darwin Core text guide (this document) is not meant to promote the use of _fielded text_ over XML for data exchange, but rather to provide recommendations for how to handle such data files when necessary.
+Many resources exist on the web describing the advantages of Extensible Markup Language [XML](http://www.w3.org/XML/) over less structured content such as _fielded text_. The Darwin Core text guide (this document) is not meant to promote the use of fielded text over XML for data exchange, but rather to provide recommendations for how to handle such data files when necessary.
 
-Two scenarios that might benefit from the use of _fielded text_ are:
+Two scenarios that might benefit from the use of fielded text are:
 
 - The transfer of large numbers of Darwin Core records and related data from one database to another. Typically databases are very efficient at exporting and importing comma separated text files.
-- The description of legacy data existing in a _fielded text_ format, such that it might be automatically understood and loaded into another system. It could be that this system would then serve the data in another format such as XML.
+- The description of legacy data existing in a fielded text format, such that it might be automatically understood and loaded into another system. It could be that this system would then serve the data in another format such as XML.
 
 ## 2. Metafile content
 
@@ -159,7 +159,7 @@ Attribute | Description | Required | Default
 `default` | Specifies value to use if one is not supplied for the field in a given row. If no index is supplied, the default can be used to define a constant for all rows for a field that is not in the data file. | no | 
 `vocabulary` | A Unified Resource Identifier (URI) for a vocabulary that the source values for this field are based on. The URI ideally should resolve to some machine readable definition like SKOS, RDF or at least some simple text or html file often found for ISO or RFC standards. For example http://rs.gbif.org/vocabulary/gbif/nomenclatural_code.xml, http://www.ietf.org/rfc/rfc3066.txt or http://www.iso.org/iso/list-en1-semic-3.txt. | no | 
 
-## 3. Implementation Guide
+## 3. Implementation guide
 
 ### 3.1 Extension example
 
@@ -211,11 +211,11 @@ The following example illustrates the use of extensions. In this example there a
 </archive>
 ```
 
-## 4. Database Example
+## 4. Database example
 
 ### 4.1 MySQL
 
-It is very easy to produce _fielded text_ using the `SELECT INTO` outfile command from MySQL. The encoding of the resulting file will depend on the server variables and collations used, and might need to be modified before the operation is done. Note that MySQL will export `NULL` values as `\N` by default. Use the `IFNULL()` function as shown in the following example to avoid this.
+It is very easy to produce fielded text using the `SELECT INTO` outfile command from MySQL. The encoding of the resulting file will depend on the server variables and collations used, and might need to be modified before the operation is done. Note that MySQL will export `NULL` values as `\N` by default. Use the `IFNULL()` function as shown in the following example to avoid this.
 
 ```SQL
 SELECT 
