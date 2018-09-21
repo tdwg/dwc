@@ -3,11 +3,23 @@
 Title
 : Simple Darwin Core
 
-Date Issued
+Date version issued
+: 2015-06-02
+
+Date created
 : 2009-04-21
 
-Date Modified
-: 2015-06-02
+Part of TDWG Standard
+: <http://www.tdwg.org/standards/450/>
+
+This version
+: <http://rs.tdwg.org/dwc/terms/simple/2014-11-08>
+
+Latest Version
+: <http://rs.tdwg.org/dwc/terms/simple/>
+
+Previous version
+: <http://rs.tdwg.org/dwc/terms/simple/2013-10-22>
 
 Abstract
 : This document is a reference for the Simple Darwin Core standard.
@@ -15,26 +27,11 @@ Abstract
 Contributors
 : John Wieczorek (MVZ), Markus Döring (GBIF), Renato De Giovanni (CRIA), Tim Robertson (GBIF), Dave Vieglais (KUNHM)
 
-Legal
-: This document is governed by the standard legal, copyright, licensing provisions and disclaimers issued by the Taxonomic Databases Working Group.
-
-Part of TDWG Standard
-: <http://www.tdwg.org/standards/450/>
-
 Creator
 : Darwin Core Task Group
 
-Identifier
-: <http://rs.tdwg.org/dwc/2014-11-08/terms/simple/>
-
-Latest Version
-: <http://rs.tdwg.org/dwc/terms/simple/>
-
-Replaces
-: <http://rs.tdwg.org/dwc/2013-10-22/terms/simple/>
-
-Document Status
-: Current Standard
+Bibliographic citation
+: Darwin Core Task Group. 2009. Simple Darwin Core. Biodiversity Information Standards (TDWG). http://rs.tdwg.org/dwc/terms/simple/
 
 ## 1 Introduction
 
@@ -84,7 +81,7 @@ The [Text guide](../text/) describes how to construct and format a text file usi
 ### 6.2 Simple Darwin Core as XML
 
 The [XML guide](../xml/) describes how to construct XML schemas to share data based on Darwin Core terms. Looking at the [Simple Darwin Core XML Schema](../xml/tdwg_dwc_simple.xsd) using the XML guide as a reference you will be able to see that the schema supports the notion of a `SimpleDarwinRecord`, which is just a grouping of up to one of each of the Darwin Core terms that are `Properties` (not `Classes`). The following example shows a `SimpleDarwinRecordSet` containing one `SimpleDarwinRecord` for a `Taxon`:
-    
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <SimpleDarwinRecordSet
@@ -107,7 +104,7 @@ The [XML guide](../xml/) describes how to construct XML schemas to share data ba
         <dwc:parentNameUsage>Centropyge  Kaup, 1860</dwc:parentNameUsage>
         <dwc:originalNameUsage>Centropyge flavicauda Fraser-Brunner 1933</dwc:originalNameUsage>
         <dwc:nameAccordingTo>Allen, G.R. 1980. Butterfly and angelfishes of the world. Volume II. Mergus Publishers. Pp. 149-352.</dwc:nameAccordingTo>
-        <dwc:namePublishedIn>Fraser-Brunner, A. 1933. A revision of the chaetodont fishes of the subfamily Pomacanthinae. Proceedings of the General 
+        <dwc:namePublishedIn>Fraser-Brunner, A. 1933. A revision of the chaetodont fishes of the subfamily Pomacanthinae. Proceedings of the General
               Meetings for Scientific Business of the Zoological Society of London 1933 (pt 3, no.30): 543-599, Pl. 1.</dwc:namePublishedIn>
         <dwc:higherClassification>Animalia;Chordata;Vertebrata;Osteichthyes;Actinopterygii;Neopterygii;Teleostei;Acanthopterygii;Perciformes;
               Percoidei;Pomacanthidae;Centropyge</dwc:higherClassification>
@@ -164,7 +161,7 @@ Another way to get more out of Darwin Core without adding a term is to "payload"
         <dwc:nomenclaturalCode>ICZN</dwc:nomenclaturalCode>
         <dwc:namePublishedIn>Pearson O. P., and M. I. Christie. 1985. Historia Natural, 5(37):388</dwc:namePublishedIn>
         <dwc:taxonomicStatus>valid</dwc:taxonomicStatus>
-        <dwc:dynamicProperties>{"iucnStatus":"vulnerable", "distribution":"Neuquén, Argentina"}</dwc:dynamicProperties> 
+        <dwc:dynamicProperties>{"iucnStatus":"vulnerable", "distribution":"Neuquén, Argentina"}</dwc:dynamicProperties>
     </SimpleDarwinRecord>
 </SimpleDarwinRecordSet>
 ```

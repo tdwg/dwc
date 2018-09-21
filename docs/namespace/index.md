@@ -1,4 +1,4 @@
-## Header section
+## Darwin Core Namespace Policy
 
 Title
 : Darwin Core Namespace Policy
@@ -29,6 +29,9 @@ Contributors
 
 Creator
 : Darwin Core Task Group
+
+Bibliographic citation
+: Darwin Core Task Group. 2009. Darwin Core Namespace Policy. Biodiversity Information Standards (TDWG). http://rs.tdwg.org/dwc/terms/namespace/
 
 ## 1. Introduction
 
