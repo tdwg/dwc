@@ -10,16 +10,16 @@ Date created
 : 2009-02-12
 
 Part of TDWG Standard
-: [http://www.tdwg.org/standards/450/](http://www.tdwg.org/standards/450/)
+: <http://www.tdwg.org/standards/450/>
 
 This version
-: [http://rs.tdwg.org/dwc/terms/namespace/2018-08-26](http://rs.tdwg.org/dwc/terms/namespace/2018-08-26)
+: <http://rs.tdwg.org/dwc/terms/namespace/2018-08-26>
 
 Latest version
-: [http://rs.tdwg.org/dwc/terms/namespace/](http://rs.tdwg.org/dwc/terms/namespace/)
+: >http://rs.tdwg.org/dwc/terms/namespace/>
 
 Previous version
-: [http://rs.tdwg.org/dwc/terms/namespace/2013-09-23](http://rs.tdwg.org/dwc/terms/namespace/2013-09-23)
+: <http://rs.tdwg.org/dwc/terms/namespace/2013-09-23>
 
 Abstract
 : All terms in the Darwin Core must be assigned a unique Uniform Resource Identifier (URI). For convenience, the term URIs that are assigned and managed by the Darwin Core Task Group are grouped into collections known as Darwin Core namespaces. This document describes how term URIs are allocated by the Darwin Core Maintenance Group and the policies associated with Darwin Core namespaces.
