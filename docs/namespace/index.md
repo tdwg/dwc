@@ -16,7 +16,7 @@ This version
 : <http://rs.tdwg.org/dwc/terms/namespace/2018-08-26>
 
 Latest version
-: >http://rs.tdwg.org/dwc/terms/namespace/>
+: <http://rs.tdwg.org/dwc/terms/namespace/>
 
 Previous version
 : <http://rs.tdwg.org/dwc/terms/namespace/2013-09-23>
@@ -47,10 +47,16 @@ This document is targeted toward those who want to make changes to the Darwin Co
 
 ## 2. Namespace URIs
 
-The Darwin Core namespace URI for the collection of all Darwin Core properties, classes, and encoding schemes is:
+The Darwin Core namespace URI for the collection of general Darwin Core properties, classes, and encoding schemes is:
 
 ```
 http://rs.tdwg.org/dwc/terms/
+```
+
+The Darwin Core namespace URI for the collection Darwin Core properties expected to have IRI values is:
+
+```
+http://rs.tdwg.org/dwc/iri/
 ```
 
 The term identifier for the current (recommended) version of a term is a URI based on the namespace and the term name without version information. Some example Darwin Core term identifiers follow:

@@ -1148,7 +1148,7 @@ A database might contain the information shown in Table 10.
 
 dwc:organismID | dwc:associatedOrganisms | dwc:associatedMedia
 --- | --- | ---
-"http://bioimages.vanderbilt.edu/ind-durandp/dd343" | "sibling of AX3467" | "http://bioimages.vanderbilt.edu/durandp/dd343 | http://bioimages.vanderbilt.edu/durandp/dd344"
+"http://bioimages.vanderbilt.edu/ind-durandp/dd343" | "sibling of AX3467" | "http://bioimages.vanderbilt.edu/durandp/dd343 &#124; http://bioimages.vanderbilt.edu/durandp/dd344"
 
 These data can be serialized as RDF using the _dwc:_ namespace literal value terms _dwc:associatedOrganisms_ and _dwc:associatedMedia_ as shown in Example 28.
 
@@ -1392,7 +1392,7 @@ dwc:organismScope | Use rdf:type with a non-literal object. See the comment at h
 
 Resource | Link | Description
 --- | --- | ---
-[AUDUBON-CORE] | http://terms.tdwg.org/wiki/Audubon_Core | Audubon Core: metadata for biodiversity multimedia resources and collections.
+[AUDUBON-CORE] | https://www.tdwg.org/standards/ac/ | Audubon Core: metadata for biodiversity multimedia resources and collections.
 [DC-ACCESSRIGHTS] | http://wiki.dublincore.org/index.php/User_Guide/Publishing_Metadata#dcterms:accessRights | Dublin Core Users' Guide: dcterms:accessRights.
 [DC-LINKED-DATA] | http://wiki.dublincore.org/index.php/User_Guide/Publishing_Metadata#Legacy_namespace | Dublin Core legacy namespace term usage.
 [DC-QUALIFIER] | http://dublincore.org/documents/usageguide/qualifiers.shtml | Using Dublin Core qualifiers.
@@ -1400,7 +1400,7 @@ Resource | Link | Description
 [DC-RDF-NOTES] | http://dublincore.org/documents/2008/01/14/dc-rdf-notes/#sect-3 | Expressing Dublin Core metadata using the Resource Description Framework.
 [DC-RDF-SEMANTICS] | http://dublincore.org/documents/dc-rdf/#sect-5 | Resource Description Framework semantics and the DCMI Abstract Model.
 [DC-SUBPROPERTIES] | http://dublincore.org/usage/decisions/2008/dcterms-changes/#sect-2 | Subproperty relations between terms in the Dublin Core.
-[DC-TERMS] | http://dublincore.org/documents/DC-TERMS/ | Dublin Core metadata terms.
+[DC-TERMS] | http://dublincore.org/documents/dcmi-terms/ | Dublin Core metadata terms.
 [DCAM] | http://dublincore.org/documents/abstract-model/ | Dublin Core abstract model.
 [DWC] | http://rs.tdwg.org/dwc/ | An introduction to the Darwin Core Standard.
 [DWC-GUIDE] | http://rs.tdwg.org/dwc/terms/index.htm | Darwin Core Quick Reference Guide.
@@ -1409,7 +1409,7 @@ Resource | Link | Description
 [FOAF] | http://xmlns.com/foaf/spec/ | Friend of a Friend (FOAF) Vocabulary Specification.
 [GEONAMES] | http://www.geonames.org/ | GeoNames geographical database.
 [GRBIO] | http://grbio.org/ | Global Registry of Biodiversity Repositories.
-[GUID-GUIDE-GBIF] | http://www.gbif.org/resources/2575 | GUID and Life Sciences Identifiers Applicability Statements.
+[GUID-GUIDE-GBIF] | https://www.gbif.org/document/80575 | A Beginner’s Guide to Persistent Identifiers.
 [GUID-STANDARD] | http://www.tdwg.org/standards/150/ | GUID and Life Sciences Identifiers Applicability Statements.
 [HTTP-CONTENT-NEGOTIATION] | http://tools.ietf.org/html/rfc2616#section-12 | HTTP content negotiation. The process of selecting the best representation for a given response when there are multiple representations available
 [ICS] | http://www.stratigraphy.org/ | International Commission on Stratigraphy.
@@ -1423,7 +1423,7 @@ Resource | Link | Description
 [OWL-PRIMER] | http://www.w3.org/TR/owl-primer/#Object_Properties | OWL Web Ontology Language object properties.
 [RDB2RDF] | http://www.w3.org/TR/r2rml/ | R2RML: RDB to RDF Mapping Language.
 [RDF] | http://www.w3.org/TR/rdf11-concepts/ | Resource Description Framework.
-[RDF-BEGINNERS-GUIDE] | http://code.google.com/p/tdwg-rdf/wiki/Beginners | Beginner's Guide to RDF. Biodiversity informatics using RDF and OWL.
+[RDF-BEGINNERS-GUIDE] | https://github.com/tdwg/rdf/blob/master/Beginners.md | Beginner's Guide to RDF. Biodiversity informatics using RDF and OWL.
 [RDF-DATATYPE-SEMANTICS] | http://www.w3.org/TR/rdf11-mt/#literals-and-datatypes | Resource Description Framework literals and datatypes semantics.
 [RDF-DATATYPE-SYNTAX] | http://www.w3.org/TR/rdf-syntax-grammar/#section-Syntax-datatyped-literals | Resource Description Framework XML syntax for datatyped literals.
 [RDF-ENTAILMENT-RULES] | http://www.w3.org/TR/rdf11-mt/#entailment-rules-informative | Resource Description Framework entailment rules.
@@ -1442,10 +1442,10 @@ Resource | Link | Description
 [TYPED-NODE] | http://www.w3.org/TR/rdf-syntax-grammar/#section-Syntax-typed-nodes | Resource Description Framework typed node explanation.
 [URI] | http://tools.ietf.org/html/rfc3986 | Uniform Resource Identifiers. A compact sequence of characters that identifies an abstract or physical resource.
 [URI-SCHEMES] | http://www.iana.org/assignments/uri-schemes.html | Uniform Resource Identifier (URI) Schemes.
-[USING-DC-CREATOR] | http://wiki.foaf-project.org/w/UsingDublinCoreCreator | Using the Dublin Core creator term as a literal or IRI.
+[USING-DC-CREATOR] | https://web.archive.org/web/20140805081802/http://wiki.foaf-project.org:80/w/UsingDublinCoreCreator | Using the Dublin Core creator term as a literal or IRI.
 [UUID] | http://www.iso.org/iso/home/store/catalogue_ics/catalogue_detail_ics.htm?csnumber=62795 | ISO/IEC 9834-8:2014. Part 8: Generation of universally unique identifiers (UUIDs) and their use in object identifiers.
 [UUID-URN-NAMESPACE] | http://tools.ietf.org/html/rfc4122 | A Universally Unique IDentifier (UUID) URN Namespace.
 [W3C-RDF-VALIDATOR] | http://www.w3.org/RDF/Validator/ | W3C RDF Validation Service.
 [XML-LANG] | http://www.w3.org/TR/REC-xml/#sec-lang-tag | XML language identification.
-[XMP-SPECIFICATION] | http://www.adobe.com/content/dam/Adobe/en/devnet/xmp/pdfs/XMPSpecificationPart1.pdf | XMP Specification Part 1: Data Model, Serialization, and Core Properties.
+[XMP-SPECIFICATION] | https://wwwimages2.adobe.com/content/dam/acom/en/devnet/xmp/pdfs/XMP%20SDK%20Release%20cc-2016-08/XMPSpecificationPart1.pdf | XMP Specification Part 1: Data Model, Serialization, and Core Properties.
 [XMLGUIDE] | http://rs.tdwg.org/dwc/terms/guides/xml | Guide for using Darwin Core in XML documents.
