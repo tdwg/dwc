@@ -56,7 +56,7 @@ The RDF model itself is independent of any specific serialization syntax. The fo
 
 ![](rdf-graphical-example.png)
 
-Each arrow represents a statement about the image, called a "triple" in RDF. The set of triples is called an RDF graph. Resources (represented by ovals) are identified by IRIs. The described resource (in this example the image http://bioimages.vanderbilt.edu/kirchoff/ac1490 at the tail of the arrow) is called the subject of the triple. Properties of the subject resource are identified by term IRIs shown here with their namespaces abbreviated (e.g., ```dcterms:``` = "http://purl.org/dc/terms/"). The property is called the predicate of the triple. The values of the properties are called the object of the statement, with literal values (consisting of text) represented by rectangles.
+Each arrow represents a statement about the image, called a "triple" in RDF. The set of triples is called an RDF graph. Resources (represented by ovals) are identified by IRIs. The described resource (in this example the image http://bioimages.vanderbilt.edu/kirchoff/ac1490 at the tail of the arrow) is called the subject of the triple. Properties of the subject resource are identified by term IRIs shown here with their namespaces abbreviated (e.g., ```dcterms:``` = "```http://purl.org/dc/terms/```"). The property is called the predicate of the triple. The values of the properties are called the object of the statement, with literal values (consisting of text) represented by rectangles.
 
 This RDF graph can be serialized in a somewhat human-friendly syntax called [Terse RDF Triple Language (Turtle)](http://www.w3.org/TR/turtle/):
 
@@ -87,18 +87,18 @@ xmlns:dcterms="http://purl.org/dc/terms/"
 In this document, the following formatting conventions will be used. Full IRIs will be shown in Courier type and enclosed in angle brackets, e.g.,
 
 ```
-http://bioimages.vanderbilt.edu/contact/kirchoff#coblea
+<http://bioimages.vanderbilt.edu/contact/kirchoff#coblea>
 ```
 
 Abbreviated UIRIs will be shown as ```inline code``` in the form ```namespace:localName```, e.g., ```rdf:type```. Namespace abbreviations when shown by themselves will also be shown in italics, e.g., ```dwc:``` . Examples will be displayed in Courier type.
 
-XML is a widely understood form of RDF serialization. Therefore, all examples given here will be shown as RDF/XML. In most cases, they will also be shown in Turtle. For more detailed information about RDF serialization, see part 3 of the [Beginner's Guide to RDF](http://code.google.com/p/tdwg-rdf/wiki/Beginners) and the references cited there.
+XML is a widely understood form of RDF serialization. Therefore, all examples given here will be shown as RDF/XML. In most cases, they will also be shown in Turtle. For more detailed information about RDF serialization, see part 3 of the [Beginner's Guide to RDF](https://github.com/tdwg/rdf/blob/master/Beginners3RDFbasics.md) and the references cited there.
 
 #### 1.3.2 Internationalized Resource Identifier (IRI) (non-normative)
 
 Data providers make use of a variety of identifiers to refer to resources they wish to provide. These identifiers may be locally unique within the provider's database, or they may be globally unique. Providers have sought to make their identifiers globally unique through such means as "Darwin Core Triplets" (institutionCode:collectionCode:catalogNumber) and creation of [UUIDs](http://www.iso.org/iso/home/store/catalogue_ics/catalogue_detail_ics.htm?csnumber=62795). However, only identifiers in the form of [IRIs](http://tools.ietf.org/html/rfc3987) can be valid subjects of statements (known as RDF triples) in RDF, so neither “Darwin Core Triples” nor UUIDs can be used in unmodified form for that purpose. IRIs are a superset of a narrower form of identifiers known as Uniform Resource Identifiers (URIs) that can be used in place of [IRIs](http://tools.ietf.org/html/rfc3986). This document will refer exclusively to IRIs with the understanding that URIs may be used in place of IRIs.
 
-The most familiar form of IRI is a Uniform Resource Locator (URL) which not only identifies a resource, but provides information about retrieving an information resource (i.e., a resource that can be transmitted in electronic form) such as text in the form of an HTML web page. However, in general IRIs may identify non-information resources (physical or conceptual entities) that are not transmittable electronically, e.g., <http://bioimages.vanderbilt.edu/contact/kirchoff#coblea>, a person. If a client attempts to retrieve a non-information resource by dereferencing its HTTP IRI, a process called [content negotiation](http://tools.ietf.org/html/rfc2616#section-12) is used to refer the client to the IRI of an information resource representation of the non-information resource. For humans, this is usually a web page, while for semantic clients (machines) the representation is a document in the form of RDF/XML. For more detailed information about IRIs see part 1 of the [Beginner's Guide to RDF](http://code.google.com/p/tdwg-rdf/wiki/Beginners) and the references cited there.
+The most familiar form of IRI is a Uniform Resource Locator (URL) which not only identifies a resource, but provides information about retrieving an information resource (i.e., a resource that can be transmitted in electronic form) such as text in the form of an HTML web page. However, in general IRIs may identify non-information resources (physical or conceptual entities) that are not transmittable electronically, e.g., <http://bioimages.vanderbilt.edu/contact/kirchoff#coblea>, a person. If a client attempts to retrieve a non-information resource by dereferencing its HTTP IRI, a process called [content negotiation](http://tools.ietf.org/html/rfc2616#section-12) is used to refer the client to the IRI of an information resource representation of the non-information resource. For humans, this is usually a web page, while for semantic clients (machines) the representation is a document in the form of RDF/XML. For more detailed information about IRIs see part 1 of the [Beginner's Guide to RDF](https://github.com/tdwg/rdf/blob/master/Beginners1URIs.md) and the references cited there.
 
 ##### 1.3.2.1 Persistent Identifiers (normative)
 
@@ -110,13 +110,13 @@ First, if a non-IRI globally unique identifier is used to identify a subject res
 urn:uuid:f81d4fae-7dec-11d0-a765-00a0c91e6bf6
 ```
 
-Similarly, [ISBNs can be converted to URNs](http://tools.ietf.org/html/rfc3187) as shown in Examples 13 and 14. Although these URNs are valid IRIs, they have the disadvantage that they are not actionable (see [Section 1.3.2.2](./index.htm#1.3.2.2_HTTP_IRIs_as_self-resolving_GUIDs)). In contrast, the "Darwin Core triplet"
+Similarly, [ISBNs can be converted to URNs](http://tools.ietf.org/html/rfc3187) as shown in Examples 13 and 14. Although these URNs are valid IRIs, they have the disadvantage that they are not actionable (see [Section 1.3.2.2](https://github.com/baskaufs/dwc/blob/master/docs/rdf/index.md#1322-http-iris-as-self-resolving-guids-normative)). In contrast, the "Darwin Core triplet"
 
 ```
 MVZ:Mamm:165861
 ```
 
-has been turned into an actionable IRI by appending it to the base string "http://arctos.database.museum/guid/":
+has been turned into an actionable IRI by appending it to the base string "```http://arctos.database.museum/guid/```":
 
 ```
 http://arctos.database.museum/guid/MVZ:Mamm:165861
@@ -124,9 +124,9 @@ http://arctos.database.museum/guid/MVZ:Mamm:165861
 
 Second, if a provider refers to a resource using an URL that provides data about the resource, the provider should take care to ensure that the URL does not change over time (e.g., if the content moves to a different server, if the directory structure changes, or if a new version of the database is introduced). It may be preferable to use [content negotiation](http://www.w3.org/TR/cooluris/) to redirect the user from a persistent IRI which refers to the resource, to the URL of a web page which describes the resource.
 
-For a more detailed introduction to persistent identifiers, see the [GBIF Beginner's Guide to Persistent Identifiers](http://www.gbif.org/resources/2575).
+For a more detailed introduction to persistent identifiers, see the [GBIF Beginner's Guide to Persistent Identifiers](https://www.gbif.org/document/80575).
 
-Based on the precedent set by the [TDWG LSID Applicability Statement standard](http://www.tdwg.org/standards/150/), it is recommended that URN-based IRIs be related to HTTP-proxied equivalents (if they exist) as described in [Section 2.2.3](./index.htm#2.2.3_Associating_a_URN_with_its_HTTP-proxied_equivalent).
+Based on the precedent set by the [TDWG LSID Applicability Statement standard](http://www.tdwg.org/standards/150/), it is recommended that URN-based IRIs be related to HTTP-proxied equivalents (if they exist) as described in [Section 2.2.3](https://github.com/baskaufs/dwc/blob/master/docs/rdf/index.md#223-associating-a-urn-with-its-http-proxied-equivalent-normative).
 
 ##### 1.3.2.2 HTTP IRIs as self-resolving GUIDs (normative)
 
@@ -136,7 +136,7 @@ Advocates of principles of [Linked Data](http://linkeddata.org/) prefer to use i
 
 #### 1.4.1 Well-known vocabularies (non-normative)
 
-Because RDF assumes no pre-existing agreement between data providers and consumers about the terms used as properties to describe resources, the likelihood that a consuming client will "understand" the meaning of an RDF triple will be increased if the provider uses terms from a well-known vocabulary. Some well-known general and biodiversity-related vocabularies are listed in the [Introduction to the Beginner's Guide to RDF](http://code.google.com/p/tdwg-rdf/wiki/Beginners#0.3.7._Biodiversity-related_and_General_vocabularies_and_ontolog). If no well-known term exists to represent a property needed to describe a resource, a data provider may "mint" its own term. In that case, the provider should assign the term an IRI, define the term in RDF, provide clear human-understandable documentation of how the term should be used, provide for dereferencing of the IRI, and commit to the long-term stability of the term IRI and definition.
+Because RDF assumes no pre-existing agreement between data providers and consumers about the terms used as properties to describe resources, the likelihood that a consuming client will "understand" the meaning of an RDF triple will be increased if the provider uses terms from a well-known vocabulary. Some well-known general and biodiversity-related vocabularies are listed in the [Introduction to the Beginner's Guide to RDF](https://github.com/tdwg/rdf/blob/master/Beginners.md#037-biodiversity-related-and-general-vocabularies-and-ontologies). If no well-known term exists to represent a property needed to describe a resource, a data provider may "mint" its own term. In that case, the provider should assign the term an IRI, define the term in RDF, provide clear human-understandable documentation of how the term should be used, provide for dereferencing of the IRI, and commit to the long-term stability of the term IRI and definition.
 
 #### 1.4.2 Appropriate use of terms (normative)
 
@@ -144,7 +144,7 @@ Because of the machine-oriented nature of RDF, a provider must assume that a con
 
 For these reasons, terms should be used as predicates in RDF only after the data provider has carefully examined the documentation and usage guidelines associated with the vocabulary or ontology which defines the term and has determined that use of that term is consistent with the meaning which the provider intends to impart to the triple in which the term is to be used as a predicate.
 
-For more detailed information about the implications of using terms that have range, domain, and subproperty declarations in RDF, see part 4 of the [Beginner's Guide to RDF](http://code.google.com/p/tdwg-rdf/wiki/Beginners). For more detailed information about how OWL is used to define complex properties of terms in RDF, see part 7 of the [Beginner's Guide to RDF](http://code.google.com/p/tdwg-rdf/wiki/Beginners).
+For more detailed information about the implications of using terms that have range, domain, and subproperty declarations in RDF, see part 4 of the [Beginner's Guide to RDF](https://github.com/tdwg/rdf/blob/master/Beginners4Vocabularies.md). For more detailed information about how OWL is used to define complex properties of terms in RDF, see part 7 of the [Beginner's Guide to RDF](https://github.com/tdwg/rdf/blob/master/Beginners7OWL.md).
 
 #### 1.4.3 Use of Darwin Core terms in RDF (normative)
 
