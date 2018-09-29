@@ -518,7 +518,7 @@ Some resources such as titles, dates, and numbers can be intrinsically expressed
 
 ##### 2.4.1.1 Typed literals (normative)
 
-Because literals cannot be the subjects of RDF triples, it is not possible to describe the properties of literals extensively in RDF. However, specifying a datatype IRI for a literal provides a mechanism that allows an client to interpret the nature of the resource that the string denotes. [[RDF-DATATYPE-SEMANTICS](http://www.w3.org/TR/rdf11-mt/#literals-and-datatypes)] [[RDF-DATATYPE-SYNTAX](http://www.w3.org/TR/rdf-syntax-grammar/#section-Syntax-datatyped-literals)]
+Because literals cannot be the subjects of RDF triples, it is not possible to describe the properties of literals extensively in RDF. However, specifying a datatype IRI for a literal provides a mechanism that allows an client to interpret the nature of the resource that the string denotes. (See the [RDF-DATATYPE-SEMANTICS](http://www.w3.org/TR/rdf11-mt/#literals-and-datatypes) and the [RDF-DATATYPE-SYNTAX](http://www.w3.org/TR/rdf-syntax-grammar/#section-Syntax-datatyped-literals).)
 
 The rdf datatype attribute indicates that the string conforms to a particular format (integer, date, etc.) that maps the string to its abstract value.
 
