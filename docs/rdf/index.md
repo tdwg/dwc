@@ -1325,9 +1325,9 @@ dcterms:bibliographicCitation | dcterms:BibliographicResource | rdfs:Literal
 
 [^4]: For more information about linking a creative work to its license, see the document "Sources of well-known controlled value IRIs", accessible from the [Darwin Core informative ancillary web page](https://github.com/tdwg/rdf/blob/master/DwCAncillary.md)
 
-[^5]: DCMI does not provide a literal object analogue of ```dcterms:license```. [Audubon Core](http://terms.tdwg.org/wiki/Audubon_Core) recommends ```xmpRights:UsageTerms``` for literals.
+[^5]: DCMI does not provide a literal object analogue of ```dcterms:license```. [Audubon Core](https://www.tdwg.org/standards/ac/) recommends ```xmpRights:UsageTerms``` for literals.
 
-[^6]: DCMI does not provide a literal object analogue of ```dcterms:rightsHolder```. [Audubon Core](http://terms.tdwg.org/wiki/Audubon_Core) recommends ```xmpRights:Owner``` for literals. However, since ```xmpRights:Owner``` is defined by the [XMP specification](http://www.adobe.com/content/dam/Adobe/en/devnet/xmp/pdfs/XMPSpecificationPart1.pdf) as "a list of legal owners of the resource", it can only be used to specify the rights owner, not an agent managing the rights.
+[^6]: DCMI does not provide a literal object analogue of ```dcterms:rightsHolder```. [Audubon Core](https://www.tdwg.org/standards/ac/) recommends ```xmpRights:Owner``` for literals. However, since ```xmpRights:Owner``` is defined by the [XMP specification](https://wwwimages2.adobe.com/content/dam/acom/en/devnet/xmp/pdfs/XMP%20SDK%20Release%20cc-2016-08/XMPSpecificationPart1.pdf) as "a list of legal owners of the resource", it can only be used to specify the rights owner, not an agent managing the rights.
 
 [^7]: See the [DCMI accessRights guidelines](http://wiki.dublincore.org/index.php/User_Guide/Publishing_Metadata#dcterms:accessRights) for an example.
 
@@ -1348,7 +1348,7 @@ dwc:dynamicProperties | Expected to contain JSON as a literal. Communities of pr
 
 ### 3.5 Darwin Core convenience terms that are expected to be used only with literal values (normative)
 
-See [Section 2.7](./index.htm#2.7_Darwin_Core_convenience_terms) for more information on "convenience" terms.
+See [Section 2.7](#27-darwin-core-convenience-terms-non-normative) for more information on "convenience" terms.
 
 Darwin Core term | Notes
 --- | ---
@@ -1358,7 +1358,7 @@ dwc:higherGeography</br>dwc:continent</br>dwc:waterBody</br>dwc:islandGroup</br>
 dwc:earliestEonOrLowestEonothem</br>dwc:latestEonOrHighestEonothem</br>dwc:earliestEraOrLowestErathem</br>dwc:latestEraOrHighestErathem</br>dwc:earliestPeriodOrLowestSystem</br>dwc:latestPeriodOrHighestSystem</br>dwc:earliestEpochOrLowestSeries</br>dwc:latestEpochOrHighestSeries</br>dwc:earliestAgeOrLowestStage</br>dwc:latestAgeOrHighestStage | The subject resource should be a dwc:GeologicalContext instance. As an alternative, use the object properties dwciri:earliestGeochronologicalEra and dwciri:latestGeochronologicalEra as described in Section 3.6. See Section 2.7.6 for details.
 dwc:lithostratigraphicTerms</br>dwc:group</br>dwc:formation</br>dwc:member</br>dwc:bed | The subject resource should be a dwc:GeologicalContext instance. As an alternative, use the object property dwciri:fromLithostratigraphicUnit to link the subject resource to the lowest appropriate unit of a lithostratigraphic hierarchy.
 
-### 3.6 dwciri: terms having local names that don’t correspond to terms in the dwc: Darwin Core namespace (normative)
+### 3.6 ```dwciri:``` terms having local names that don’t correspond to terms in the ```dwc:``` Darwin Core namespace (normative)
 
 Darwin Core term | Notes
 --- | ---
