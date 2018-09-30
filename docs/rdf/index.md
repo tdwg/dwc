@@ -56,7 +56,7 @@ The RDF model itself is independent of any specific serialization syntax. The fo
 
 ![](rdf-graphical-example.png)
 
-Each arrow represents a statement about the image, called a "triple" in RDF. The set of triples is called an RDF graph. Resources (represented by ovals) are identified by IRIs. The described resource (in this example the image http://bioimages.vanderbilt.edu/kirchoff/ac1490 at the tail of the arrow) is called the subject of the triple. Properties of the subject resource are identified by term IRIs shown here with their namespaces abbreviated (e.g., ```dcterms:``` = "```http://purl.org/dc/terms/```"). The property is called the predicate of the triple. The values of the properties are called the object of the statement, with literal values (consisting of text) represented by rectangles.
+Each arrow represents a statement about the image, called a "triple" in RDF. The set of triples is called an RDF graph. Resources (represented by ovals) are identified by IRIs. The described resource (in this example the image ```<http://bioimages.vanderbilt.edu/kirchoff/ac1490>``` at the tail of the arrow) is called the subject of the triple. Properties of the subject resource are identified by term IRIs shown here with their namespaces abbreviated (e.g., ```dcterms:``` = "```http://purl.org/dc/terms/```"). The property is called the predicate of the triple. The values of the properties are called the object of the statement, with literal values (consisting of text) represented by rectangles.
 
 This RDF graph can be serialized in a somewhat human-friendly syntax called [Terse RDF Triple Language (Turtle)](http://www.w3.org/TR/turtle/):
 
@@ -84,7 +84,7 @@ xmlns:dcterms="http://purl.org/dc/terms/"
 </rdf:RDF>
 ```
 
-In this document, the following formatting conventions will be used. Full IRIs will be shown in Courier type and enclosed in angle brackets, e.g.,
+In this document, the following formatting conventions will be used. Full IRIs will be enclosed in angle brackets, e.g.,
 
 ```
 <http://bioimages.vanderbilt.edu/contact/kirchoff#coblea>
@@ -98,7 +98,7 @@ XML is a widely understood form of RDF serialization. Therefore, all examples gi
 
 Data providers make use of a variety of identifiers to refer to resources they wish to provide. These identifiers may be locally unique within the provider's database, or they may be globally unique. Providers have sought to make their identifiers globally unique through such means as "Darwin Core Triplets" (institutionCode:collectionCode:catalogNumber) and creation of [UUIDs](http://www.iso.org/iso/home/store/catalogue_ics/catalogue_detail_ics.htm?csnumber=62795). However, only identifiers in the form of [IRIs](http://tools.ietf.org/html/rfc3987) can be valid subjects of statements (known as RDF triples) in RDF, so neither “Darwin Core Triples” nor UUIDs can be used in unmodified form for that purpose. IRIs are a superset of a narrower form of identifiers known as Uniform Resource Identifiers (URIs) that can be used in place of [IRIs](http://tools.ietf.org/html/rfc3986). This document will refer exclusively to IRIs with the understanding that URIs may be used in place of IRIs.
 
-The most familiar form of IRI is a Uniform Resource Locator (URL) which not only identifies a resource, but provides information about retrieving an information resource (i.e., a resource that can be transmitted in electronic form) such as text in the form of an HTML web page. However, in general IRIs may identify non-information resources (physical or conceptual entities) that are not transmittable electronically, e.g., <http://bioimages.vanderbilt.edu/contact/kirchoff#coblea>, a person. If a client attempts to retrieve a non-information resource by dereferencing its HTTP IRI, a process called [content negotiation](http://tools.ietf.org/html/rfc2616#section-12) is used to refer the client to the IRI of an information resource representation of the non-information resource. For humans, this is usually a web page, while for semantic clients (machines) the representation is a document in the form of RDF/XML. For more detailed information about IRIs see part 1 of the [Beginner's Guide to RDF](https://github.com/tdwg/rdf/blob/master/Beginners1URIs.md) and the references cited there.
+The most familiar form of IRI is a Uniform Resource Locator (URL) which not only identifies a resource, but provides information about retrieving an information resource (i.e., a resource that can be transmitted in electronic form) such as text in the form of an HTML web page. However, in general IRIs may identify non-information resources (physical or conceptual entities) that are not transmittable electronically, e.g., ```<http://bioimages.vanderbilt.edu/contact/kirchoff#coblea>```, a person. If a client attempts to retrieve a non-information resource by dereferencing its HTTP IRI, a process called [content negotiation](http://tools.ietf.org/html/rfc2616#section-12) is used to refer the client to the IRI of an information resource representation of the non-information resource. For humans, this is usually a web page, while for semantic clients (machines) the representation is a document in the form of RDF/XML. For more detailed information about IRIs see part 1 of the [Beginner's Guide to RDF](https://github.com/tdwg/rdf/blob/master/Beginners1URIs.md) and the references cited there.
 
 ##### 1.3.2.1 Persistent Identifiers (normative)
 
@@ -107,7 +107,7 @@ Best practices dictate that identifiers (known as persistent identifiers or glob
 First, if a non-IRI globally unique identifier is used to identify a subject resource, it must be converted to an IRI by making it conform to a well-known IRI scheme (e.g., a [URN or HTTP IRI](http://www.iana.org/assignments/uri-schemes.html)). For example, a UUID can be transformed into a [URN](http://tools.ietf.org/html/rfc4122) by prefixing its string representation with "urn:uuid:" as in
 
 ```
-urn:uuid:f81d4fae-7dec-11d0-a765-00a0c91e6bf6
+<urn:uuid:f81d4fae-7dec-11d0-a765-00a0c91e6bf6>
 ```
 
 Similarly, [ISBNs can be converted to URNs](http://tools.ietf.org/html/rfc3187) as shown in Examples 13 and 14. Although these URNs are valid IRIs, they have the disadvantage that they are not actionable (see [Section 1.3.2.2](#1322-http-iris-as-self-resolving-guids-normative)). In contrast, the "Darwin Core triplet"
@@ -119,7 +119,7 @@ MVZ:Mamm:165861
 has been turned into an actionable IRI by appending it to the base string "```http://arctos.database.museum/guid/```":
 
 ```
-http://arctos.database.museum/guid/MVZ:Mamm:165861
+<http://arctos.database.museum/guid/MVZ:Mamm:165861>
 ```
 
 Second, if a provider refers to a resource using an URL that provides data about the resource, the provider should take care to ensure that the URL does not change over time (e.g., if the content moves to a different server, if the directory structure changes, or if a new version of the database is introduced). It may be preferable to use [content negotiation](http://www.w3.org/TR/cooluris/) to redirect the user from a persistent IRI which refers to the resource, to the URL of a web page which describes the resource.
@@ -333,11 +333,11 @@ Turtle
 
 Since LSIDs follow the URN IRI scheme, they can serve as the subject of any RDF triple. However, it is better to use the http-proxied form as the subject (i.e., the value of the ```rdf:about``` attribute) in the description of the resource. See the [Darwin Core informative ancillary web page](https://github.com/tdwg/rdf/blob/master/DwCAncillary.md) for more information about implementing LSIDs.
 
-This practice can be extended to any URN. For example, ```owl:sameAs``` can be used to relate the URN <urn:uuid:f81d4fae-7dec-11d0-a765-00a0c91e6bf6> to its HTTP-proxied equivalent ```<http://provider.org/f81d4fae-7dec-11d0-a765-00a0c91e6bf6>``` in a manner analogous to Example 3.
+This practice can be extended to any URN. For example, ```owl:sameAs``` can be used to relate the URN ```<urn:uuid:f81d4fae-7dec-11d0-a765-00a0c91e6bf6>``` to its HTTP-proxied equivalent ```<http://provider.org/f81d4fae-7dec-11d0-a765-00a0c91e6bf6>``` in a manner analogous to Example 3.
 
 ### 2.3 Predicates (normative)
 
-Most terms in the Darwin Core vocabulary can be used as predicates in triples to represent properties of subject resources. The full term IRI must be used, although with an appropriate namespace declaration, the namespace can be abbreviated ([Section 2.1.1](./index.htm#2.1.1_Namespace_abbreviations_used_in_XML_qualified_names_(QName)). RDF does not restrict the source of predicates, therefore Darwin Core terms can be mixed with terms from other vocabularies. This includes the important predicate ```rdf:type``` which is used to indicate the class of which the subject resource is an instance. There is no prohibition in RDF against repeating properties.
+Most terms in the Darwin Core vocabulary can be used as predicates in triples to represent properties of subject resources. The full term IRI must be used, although with an appropriate namespace declaration, the namespace can be abbreviated ([Section 2.1.1](#211-namespace-abbreviations-used-in-xml-qualified-names-qnames-in-this-document-non-normative)). RDF does not restrict the source of predicates, therefore Darwin Core terms can be mixed with terms from other vocabularies. This includes the important predicate ```rdf:type``` which is used to indicate the class of which the subject resource is an instance. There is no prohibition in RDF against repeating properties.
 
 #### 2.3.1 Declaring the type of the resource (non-normative)
 
@@ -422,7 +422,7 @@ is used with a value, a client can infer that the value is an instance of class 
 <rdfs:range  rdf:resource="http://purl.org/dc/terms/LinguisticSystem"/>
 ```
 
-in its definition. If the object of that term in an RDF triple is a reference to the IRI for English assigned by the [MARC ISO 639-2 Codes for the Representation of Names of Languages](http://id.loc.gov/vocabulary/iso639-2) (Example 7), then it can be inferred that http://id.loc.gov/vocabulary/iso639-2/eng is a ```dcterms:LingisticSystem``` even though the MARC description in RDF does not assert that directly in its definition.
+in its definition. If the object of that term in an RDF triple is a reference to the IRI for English assigned by the [MARC ISO 639-2 Codes for the Representation of Names of Languages](http://id.loc.gov/vocabulary/iso639-2) (Example 7), then it can be inferred that ```<http://id.loc.gov/vocabulary/iso639-2/eng>``` is a ```dcterms:LingisticSystem``` even though the MARC description in RDF does not assert that directly in its definition.
 
 **Example 7:**
 
@@ -441,7 +441,7 @@ Turtle
      dcterms:language <http://id.loc.gov/vocabulary/iso639-2/eng>.
 ```
 
-No terms defined within the Darwin Core namespace have range or domain declarations. However, some terms imported into Darwin Core from Dublin Core do have domain or range declarations. [Sections 3.2](./index.htm#3.2_Imported_Dublin_Core_terms_for_which_only_literal_objects_ar) and [3.3](./index.htm#3.3_Imported_Dublin_Core_terms_that_have_non-literal_objects_and) of this guide gives the declared ranges and domains when they are asserted for such terms.
+No terms defined within the Darwin Core namespace have range or domain declarations. However, some terms imported into Darwin Core from Dublin Core do have domain or range declarations. [Sections 3.2](#32-imported-dublin-core-terms-for-which-only-literal-objects-are-appropriate-normative) and [3.3](#33-imported-dublin-core-terms-that-have-non-literal-objects-and-corresponding-terms-that-have-literal-objects-normative) of this guide gives the declared ranges and domains when they are asserted for such terms.
 
 ##### 2.3.1.3 Explicit vs. inferred type declarations (normative)
 
@@ -461,7 +461,7 @@ in the description so that clients searching for instances of either ```foaf:Ima
 
 ##### 2.3.1.4 Other predicates used to indicate type (normative)
 
-Both the Dublin Core and Darwin Core define terms that can be used to describe the nature of a resource: ```dcterms:type``` and ```dwc:basisOfRecord``` respectively. However, using these terms to describe the nature of the subject resource is not a substitute for use of ```rdf:type```. The [DCMI notes on RDF semantics](http://dublincore.org/documents/dc-rdf/#sect-5) recommend that "applications implementing this specification primarily use and understand ```rdf:type``` in place of ```dcterms:type``` when expressing Dublin Core metadata in RDF, as most RDF processors come with built-in knowledge of ```rdf:type```." A similar argument could be made for the use of ```rdf:type``` over ```dwc:basisOfRecord```. Including ```dc:type```, ```dcterms:type```, and ```dwc:basisOfRecord``` in an RDF description should be considered optional, while including ```rdf:type``` should be considered highly recommended. A ```dwciri:``` analogue ([Section 2.5](./index.htm#2.5_Terms_in_the_dwciri:_namespace)) of ```dwc:basisOfRecord``` should not be used. Use ```rdf:type``` instead when the object is an IRI reference. Here is an example that describes a specimen using several of the terms that define the nature of a resource explicitly, including multiple ```rdf:type``` declarations:
+Both the Dublin Core and Darwin Core define terms that can be used to describe the nature of a resource: ```dcterms:type``` and ```dwc:basisOfRecord``` respectively. However, using these terms to describe the nature of the subject resource is not a substitute for use of ```rdf:type```. The [DCMI notes on RDF semantics](http://dublincore.org/documents/dc-rdf/#sect-5) recommend that "applications implementing this specification primarily use and understand ```rdf:type``` in place of ```dcterms:type``` when expressing Dublin Core metadata in RDF, as most RDF processors come with built-in knowledge of ```rdf:type```." A similar argument could be made for the use of ```rdf:type``` over ```dwc:basisOfRecord```. Including ```dc:type```, ```dcterms:type```, and ```dwc:basisOfRecord``` in an RDF description should be considered optional, while including ```rdf:type``` should be considered highly recommended. A ```dwciri:``` analogue ([Section 2.5](#25-terms-in-the-dwciri-namespace-normative)) of ```dwc:basisOfRecord``` should not be used. Use ```rdf:type``` instead when the object is an IRI reference. Here is an example that describes a specimen using several of the terms that define the nature of a resource explicitly, including multiple ```rdf:type``` declarations:
 
 **Example 8:**
 
@@ -488,11 +488,11 @@ Turtle
      dwc:basisOfRecord "PreservedSpecimen".
 ```
 
-Refer to [Sections 2.4.3](./index.htm#2.4.3_Object_resources_that_have_been_previously_represented_by) and [2.5](./index.htm#2.5_Terms_in_the_dwciri:_namespace) for an explanation of the distinction between terms in the ```dc:```, ```dcterms:```, ```dwc:```, and ```dwciri:``` namespaces.
+Refer to [Sections 2.4.3](#243-object-resources-that-have-been-previously-represented-by-literals-but-which-are-actually-non-literal-resources-non-normative) and [2.5](#25-terms-in-the-dwciri-namespace-normative) for an explanation of the distinction between terms in the ```dc:```, ```dcterms:```, ```dwc:```, and ```dwciri:``` namespaces.
 
 ##### 2.3.1.5 Classes to be used for type declarations of resources described using Darwin Core (normative)
 
-The [TDWG GUID Applicability Statement standard](http://www.tdwg.org/standards/150/) specifies that an object in the biodiversity domain that is identified by a GUID should be typed using a well-known vocabulary. With this recommendation in mind, it should be considered a best practice to provide information about the type (i.e., class membership) of any resource that is assigned a persistent identifier in the form of an IRI. Since Darwin Core is a well-known vocabulary and a ratified TDWG standard, its classes should be used for typing in preference to classes in parts of the TDWG ontology which are not ratified standards and are effectively deprecated. The human-readable definitions of the Darwin core classes provide guidance for deciding the types to assign to resources, although community consensus may be necessary to classify some of the more complex kinds of resources. ([Section 1.4.4](./index.htm#1.4.4_Limitations_of_this_guide))
+The [TDWG GUID Applicability Statement standard](http://www.tdwg.org/standards/150/) specifies that an object in the biodiversity domain that is identified by a GUID should be typed using a well-known vocabulary. With this recommendation in mind, it should be considered a best practice to provide information about the type (i.e., class membership) of any resource that is assigned a persistent identifier in the form of an IRI. Since Darwin Core is a well-known vocabulary and a ratified TDWG standard, its classes should be used for typing in preference to classes in parts of the TDWG ontology which are not ratified standards and are effectively deprecated. The human-readable definitions of the Darwin core classes provide guidance for deciding the types to assign to resources, although community consensus may be necessary to classify some of the more complex kinds of resources. ([Section 1.4.4](#144-limitations-of-this-guide-non-normative))
 
 Any Darwin Core class IRI may be used as a value for ```rdf:type```, although it is not clear whether ```dwc:ResourceRelationship``` instances make sense in the context of RDF. The following list summarizes classes included in the Dublin Core type vocabulary (but which are not part of Darwin Core) that should also be used for typing biodiversity-related resources:
 
@@ -506,7 +506,7 @@ Any Darwin Core class IRI may be used as a value for ```rdf:type```, although it
 
 ### 2.4 Object resources (non-normative)
 
-[Section 1.3.1](./index.htm#1.3.1_Serialization_and_syntax) of the Introduction to this guide shows how the object of an RDF triple can be a expressed as either a string literal or an IRI reference. It is also possible to have non-literal objects that are not identified by an IRI. These are known as blank or anonymous nodes. This section describes how to express objects in each of these three forms. [Section 1.4.3](./index.htm#1.4.3_Use_of_Darwin_Core_terms_in_RDF) and [Section 1.5](./index.htm#1.5_Roles_of_text_strings_as_values_of_properties_in_dwc:_namesp) of the Introduction explains the issues involved in exposing data for which values as string literals (e.g., names, citations, and codes) are used as proxies for non-literal resources. This section also discusses strategies for expressing such data as RDF.
+[Section 1.3.1](#131-serialization-and-syntax-non-normative) of the Introduction to this guide shows how the object of an RDF triple can be a expressed as either a string literal or an IRI reference. It is also possible to have non-literal objects that are not identified by an IRI. These are known as blank or anonymous nodes. This section describes how to express objects in each of these three forms. [Section 1.4.3](#143-use-of-darwin-core-terms-in-rdf-normative) and [Section 1.5](#15-roles-of-text-strings-as-values-of-properties-in-dwc-namespace-non-normative) of the Introduction explains the issues involved in exposing data for which values as string literals (e.g., names, citations, and codes) are used as proxies for non-literal resources. This section also discusses strategies for expressing such data as RDF.
 
 #### 2.4.1 Literal object resources (normative)
 
@@ -518,7 +518,7 @@ Some resources such as titles, dates, and numbers can be intrinsically expressed
 
 ##### 2.4.1.1 Typed literals (normative)
 
-Because literals cannot be the subjects of RDF triples, it is not possible to describe the properties of literals extensively in RDF. However, specifying a datatype IRI for a literal provides a mechanism that allows an client to interpret the nature of the resource that the string denotes. (See the [RDF-DATATYPE-SEMANTICS](http://www.w3.org/TR/rdf11-mt/#literals-and-datatypes) and the [RDF-DATATYPE-SYNTAX](http://www.w3.org/TR/rdf-syntax-grammar/#section-Syntax-datatyped-literals).)
+Because literals cannot be the subjects of RDF triples, it is not possible to describe the properties of literals extensively in RDF. However, specifying a datatype IRI for a literal provides a mechanism that allows an client to interpret the nature of the resource that the string denotes. (See the [RDF 1.1 Semantics](http://www.w3.org/TR/rdf11-mt/#literals-and-datatypes) and the [RDF 1.1 XML Syntax](http://www.w3.org/TR/rdf-syntax-grammar/#section-Syntax-datatyped-literals) documents for details.)
 
 The rdf datatype attribute indicates that the string conforms to a particular format (integer, date, etc.) that maps the string to its abstract value.
 
@@ -545,7 +545,7 @@ Turtle
      dwc:coordinateUncertaintyInMeters "20"^^xsd:int.
 ```
 
-If the string expresses information in a particular language, a provider should include an ```xml:lang``` attribute [[XML-LANG](http://www.w3.org/TR/REC-xml/#sec-lang-tag)] to indicate the language of the string through the RFC 4646 language code [[LANG-CODES](http://www.ietf.org/rfc/rfc4646.txt)] for that language. In addition to specifying the language of the string, providing a language tag entails that the described resource has the type ```rdf:langString```.
+If the string expresses information in a particular language, a provider should include an [```xml:lang``` attribute](http://www.w3.org/TR/REC-xml/#sec-lang-tag) to indicate the language of the string through the [RFC 4646 language code](http://www.ietf.org/rfc/rfc4646.txt) for that language. In addition to specifying the language of the string, providing a language tag entails that the described resource has the type ```rdf:langString```.
 
 **Example 10:**
 
@@ -572,7 +572,7 @@ In the [RDF 1.1 Semantics](http://www.w3.org/TR/rdf11-mt/#literals-and-datatypes
 
 ##### 2.4.1.2 Terms intended for use with literal objects (normative)
 
-The definitions of some terms make it clear that they should be used with literal objects. Darwin Core specifically "imports" several [Dublin Core terms](http://dublincore.org/documents/DC-TERMS/) into its vocabulary for use in describing biodiversity data. In some cases, terms in the ```dcterms:``` namespace have range declarations of ```rdfs:Literal``` and are therefore understood to be intended for use with literal objects (strings). In some vocabularies, certain terms are required to have literal objects because in their definitions they are declared to be ```owl:Datatype``` properties. In the case of Darwin Core terms in the ```dwc:``` (http://rs.tdwg.org/dwc/terms/) namespace, the normative term definitions in RDF do not include any declarations that indicate whether the terms should be used with literal or IRI reference objects. (Exceptions to this are the various date-related terms, which inherit the range ```rdfs:Literal``` because they are ```rdfs:subPropertyOf``` ```dcterms:date```.) However, because the ```dwc:``` terms were originally designed to accommodate text and XML data transfer, their definitions generally specify how term values should be expressed as string literals. This guide establishes the convention that terms in the ```dwc:``` namespace should be restricted to use with literal objects so that their use in RDF will be consistent with their definitions. As discussed in [Section 1.4.3](./index.htm#1.4.3_Use_of_Darwin_Core_terms_in_RDF) and [Section 2.5](./index.htm#2.5_Terms_in_the_dwciri:_namespace), this guide introduces a separate namespace http://rs.tdwg.org/dwc/iri/ (abbreviated as ```dwciri:```) for additional Darwin Core terms which are intended to have objects that are IRI references.
+The definitions of some terms make it clear that they should be used with literal objects. Darwin Core specifically "imports" several [Dublin Core terms](http://dublincore.org/documents/dcmi-terms/) into its vocabulary for use in describing biodiversity data. In some cases, terms in the ```dcterms:``` namespace have range declarations of ```rdfs:Literal``` and are therefore understood to be intended for use with literal objects (strings). In some vocabularies, certain terms are required to have literal objects because in their definitions they are declared to be ```owl:Datatype``` properties. In the case of Darwin Core terms in the ```dwc:``` (```http://rs.tdwg.org/dwc/terms/```) namespace, the normative term definitions in RDF do not include any declarations that indicate whether the terms should be used with literal or IRI reference objects. (Exceptions to this are the various date-related terms, which inherit the range ```rdfs:Literal``` because they are ```rdfs:subPropertyOf``` ```dcterms:date```.) However, because the ```dwc:``` terms were originally designed to accommodate text and XML data transfer, their definitions generally specify how term values should be expressed as string literals. This guide establishes the convention that terms in the ```dwc:``` namespace should be restricted to use with literal objects so that their use in RDF will be consistent with their definitions. As discussed in [Section 1.4.3](#143-use-of-darwin-core-terms-in-rdf-normative) and [Section 2.5](#25-terms-in-the-dwciri-namespace-normative), this guide introduces a separate namespace ```http://rs.tdwg.org/dwc/iri/``` (abbreviated as ```dwciri:```) for additional Darwin Core terms which are intended to have objects that are IRI references.
 
 #### 2.4.2 Non-literal object resources (normative)
 
@@ -665,7 +665,7 @@ the rights holder object IRI is managed by an institution other than the image o
 
 ###### 2.4.2.1.1 Objects identified by LSIDs (normative)
 
-In the previous example, the HTTP IRI used as the object of the ```dcterms:rightsHolder``` property was an HTTP-proxied form of an LSID. Because an LSID is a URN and therefore a type of IRI, the RDF specification does not prohibit the use of an LSID as an IRI referenced object. However, the TDWG LSID Applicability Guide standard dictates that LSIDs must not be used as the object of RDF triples (Recommendation 31 of the [GUID applicability statement](http://www.tdwg.org/standards/150/)) because a client would not necessarily be able to dereference the LSID to discover additional information about the object resource. The HTTP-proxied version of the LSID should be used instead (see [Section 2.2.3](./index.htm#2.2.3_Associating_a_URN_with_its_HTTP-proxied_equivalent)). See the [Darwin Core informative ancillary web page](https://github.com/tdwg/rdf/blob/master/DwCAncillary.md) for more information about using LSIDs in RDF.
+In the previous example, the HTTP IRI used as the object of the ```dcterms:rightsHolder``` property was an HTTP-proxied form of an LSID. Because an LSID is a URN and therefore a type of IRI, the RDF specification does not prohibit the use of an LSID as an IRI referenced object. However, the TDWG LSID Applicability Guide standard dictates that LSIDs must not be used as the object of RDF triples (Recommendation 31 of the [GUID applicability statement](http://www.tdwg.org/standards/150/)) because a client would not necessarily be able to dereference the LSID to discover additional information about the object resource. The HTTP-proxied version of the LSID should be used instead (see [Section 2.2.3](#223-associating-a-urn-with-its-http-proxied-equivalent-normative)). See the [Darwin Core informative ancillary web page](https://github.com/tdwg/rdf/blob/master/DwCAncillary.md) for more information about using LSIDs in RDF.
 
 ##### 2.4.2.2 Objects which are blank (anonymous) nodes (non-normative)
 
@@ -700,7 +700,7 @@ the described subject resource refers to an object resource that is not identifi
 
 #### 2.4.3 Object resources that have been previously represented by literals but which are actually non-literal resources (non-normative)
 
-In databases the names of entities have frequently been used to represent the entities themselves. For example, the name of a person is often used as a proxy for the person, or an abbreviation for a language has been used to represent the language itself. Prior to the creation of the DCMI Abstract Model, many data which were described using terms in the legacy Dublin Core namespace ```dc:``` (http://purl.org/dc/elements/1.1/) followed the historical practice of using the name of an entity to represent a non-literal entity. Extending this practice to RDF would result in representations such as this:
+In databases the names of entities have frequently been used to represent the entities themselves. For example, the name of a person is often used as a proxy for the person, or an abbreviation for a language has been used to represent the language itself. Prior to the creation of the DCMI Abstract Model, many data which were described using terms in the legacy Dublin Core namespace ```dc:``` (```http://purl.org/dc/elements/1.1/```) followed the historical practice of using the name of an entity to represent a non-literal entity. Extending this practice to RDF would result in representations such as this:
 
 **Example 17:**
 
@@ -723,7 +723,7 @@ However, over time, the community of RDF users has come to consider it a best pr
 
 ##### 2.4.3.1 Literal values for non-literal resources in Dublin Core (normative)
 
-The introduction of the DCMI Abstract Model (DCAM) and subsequent guidelines for the use of [Dublin Core terms in RDF](http://dublincore.org/documents/dc-rdf/#sect-4) were intended to clarify the [use of Dublin Core terms with literal and non-literal objects](http://dublincore.org/documents/2008/01/14/dc-rdf-notes/#sect-3). In particular, ranges were declared for terms in the ```dcterms:``` namespace (http://purl.org/dc/terms/) with the intention of clarifying whether each term was intended for use with a literal or a non-literal value. For example, ```dcterms:bibliographicCitation``` has the range ```rdfs:Literal```, while ```dcterms:creator``` has range ```dcterms:Agent```. Because the term ```dcterms:creator``` has a non-literal range, it should be used with an object that is an IRI reference as illustrated in the following example:
+The introduction of the DCMI Abstract Model (DCAM) and subsequent guidelines for the use of [Dublin Core terms in RDF](http://dublincore.org/documents/dc-rdf/#sect-4) were intended to clarify the [use of Dublin Core terms with literal and non-literal objects](http://dublincore.org/documents/2008/01/14/dc-rdf-notes/#sect-3). In particular, ranges were declared for terms in the ```dcterms:``` namespace (```http://purl.org/dc/terms/```) with the intention of clarifying whether each term was intended for use with a literal or a non-literal value. For example, ```dcterms:bibliographicCitation``` has the range ```rdfs:Literal```, while ```dcterms:creator``` has range ```dcterms:Agent```. Because the term ```dcterms:creator``` has a non-literal range, it should be used with an object that is an IRI reference as illustrated in the following example:
 
 **Example 18:**
 
@@ -745,7 +745,7 @@ The [Dublin Core RDF guidelines](http://dublincore.org/documents/dc-rdf/#sect-4)
 
 ##### 2.4.3.2 Literal values for non-literal resources in Darwin Core (normative)
 
-Because there are many legacy data composed of string values of ```dwc:``` namespace (http://rs.tdwg.org/dwc/terms/) terms whose objects actually represent non-literal entities (i.e., value strings sensu DCAM), it is likely that many providers will at least initially expose such data in RDF as string literals served directly from their existing databases, e.g. [R2RML](http://www.w3.org/TR/r2rml/). To make it possible for the legacy data to be exposed as RDF while also ensuring that the meaning of those data is preserved, in RDF the literal value of an existing Darwin Core term in the ```dwc:``` namespace should have the same structure as that described in the term's description, as in Example 19.
+Because there are many legacy data composed of string values of ```dwc:``` namespace (```http://rs.tdwg.org/dwc/terms/```) terms whose objects actually represent non-literal entities (i.e., value strings sensu DCAM), it is likely that many providers will at least initially expose such data in RDF as string literals served directly from their existing databases, e.g. [R2RML](http://www.w3.org/TR/r2rml/). To make it possible for the legacy data to be exposed as RDF while also ensuring that the meaning of those data is preserved, in RDF the literal value of an existing Darwin Core term in the ```dwc:``` namespace should have the same structure as that described in the term's description, as in Example 19.
 
 **Example 19:**
 
@@ -764,20 +764,20 @@ Turtle
      dwc:recordedBy "Oliver P. Pearson | Anita K. Pearson".
 ```
 
-The terms in the ```dwc:``` namespace should NOT be used for IRI reference objects, even if the term definition suggests that the object resource is of a non-literal type. Instead, IRI reference objects should be used with terms in the ```dwciri:``` namespace as defined by this guide in [Section 2.5](./index.htm#2.5_Terms_in_the_dwciri:_namespace). When a string value is provided as the object of a ```dwc:``` namespace term whose definition suggests that the object is of a non-literal type, that string is understood to be serving as a value string.
+The terms in the ```dwc:``` namespace should NOT be used for IRI reference objects, even if the term definition suggests that the object resource is of a non-literal type. Instead, IRI reference objects should be used with terms in the ```dwciri:``` namespace as defined by this guide in [Section 2.5](#25-terms-in-the-dwciri-namespace-normative). When a string value is provided as the object of a ```dwc:``` namespace term whose definition suggests that the object is of a non-literal type, that string is understood to be serving as a value string.
 
 ### 2.5 Terms in the dwciri: namespace (normative)
 
-Terms in the namespace ```dwciri:``` (http://rs.tdwg.org/dwc/iri/) are intended for use with IRI reference objects and should NOT be used with literal objects. They may also be used with blank node objects, although in most cases this will probably be unnecessary.
+Terms in the namespace ```dwciri:``` (```http://rs.tdwg.org/dwc/iri/```) are intended for use with IRI reference objects and should NOT be used with literal objects. They may also be used with blank node objects, although in most cases this will probably be unnecessary.
 
 #### 2.5.1 Definition of dwciri: terms (normative)
 
-If a term in the ```dwciri:``` namespace has a corresponding term with the same local name [[RDF-VOCAB-PUB](http://www.w3.org/TR/swbp-vocab-pub/#naming)] in the ```dwc:``` namespace, the ```dwciri:``` namespace term is defined to have the same meaning as its ```dwc:``` namespace term analogue. In defining a ```dwciri:``` term that has a ```dwc:``` analogue, the definition of the ```dwc:``` term is understood to be modified in the following ways:
+If a term in the ```dwciri:``` namespace has a corresponding term with the same [local name](http://www.w3.org/TR/swbp-vocab-pub/#naming) in the ```dwc:``` namespace, the ```dwciri:``` namespace term is defined to have the same meaning as its ```dwc:``` namespace term analogue. In defining a ```dwciri:``` term that has a ```dwc:``` analogue, the definition of the ```dwc:``` term is understood to be modified in the following ways:
 
 - when a ```dwciri:``` term is used as an RDF predicate, its non-literal object will be identified by an IRI reference rather than a string literal
 - the object of the ```dwciri:``` term predicate will be a single resource. If the ```dwc:``` term definition specifies that multiple values should be a concatenated list, the resource described by a ```dwciri:``` property should be the subject of a triple for each value on the list. Alternatively, a single triple can be used to describe the subject if the object is a single resource composed of component resources described using additional RDF triples.
 
-Several terms in the ```dwciri:``` namespace do not have ```dwc:``` namespace analogues (```dwciri:inCollection```, ```dwciri:toTaxon```, ```dwciri:inDescribedPlace```, ```dwciri:earliestGeochronologicalEra```, ```dwciri:latestGeochronologicalEra```, ```dwciri:fromLithostratigraphicUnit```, and ```dwciri:inDataset```). Their definitions are given in [Section 3.6](./index.htm#3.6_dwciri:_terms_having_local_names_that_don%E2%80%99t_correspond_to).
+Several terms in the ```dwciri:``` namespace do not have ```dwc:``` namespace analogues (```dwciri:inCollection```, ```dwciri:toTaxon```, ```dwciri:inDescribedPlace```, ```dwciri:earliestGeochronologicalEra```, ```dwciri:latestGeochronologicalEra```, ```dwciri:fromLithostratigraphicUnit```, and ```dwciri:inDataset```). Their definitions are given in [Section 3.6](#36-dwciri-terms-having-local-names-that-dont-correspond-to-terms-in-the-dwc-darwin-core-namespace-normative).
 
 #### 2.5.2 Using terms in the Darwin Core dwciri: namespace with non-literal objects identified by IRI references (non-normative)
 
@@ -801,7 +801,7 @@ Turtle
                        <http://museum-x.org/personnel/akp>.
 ```
 
-where <http://viaf.org/viaf/263074474> is a persistent IRI identifier for the person whose name is "Oliver P. Pearson" and <http://museum-x.org/personnel/akp> is a persistent IRI identifier for the person whose name is "Anita K. Pearson".
+where ```<http://viaf.org/viaf/263074474>``` is a persistent IRI identifier for the person whose name is "Oliver P. Pearson" and ```<http://museum-x.org/personnel/akp>``` is a persistent IRI identifier for the person whose name is "Anita K. Pearson".
 
 #### 2.5.3 Expectation of clients encountering RDF containing dwc: and dwciri: terms (normative)
 
@@ -832,7 +832,7 @@ dwc:identificationID | dwc:identifiedBy | dwc:dateIdentified | dwc:taxonID
 --- | --- | --- | ---
 "http://guid.mvz.org/identifications/23459" | "Richard Sage" | "2000" | "urn:lsid:catalogueoflife.org:taxon:d79c11aa-29c1-102b-9a4a-00304854f820:col20120721"
 
-In Example 21 and Table 3, the "ID" terms are used to specify both the identifier of a resource which is the subject of the record itself (using the term ```dwc:identificationID```) and to specify an object resource related to the subject resource by a foreign key (using the term ```dwc:taxonID```). Because the ID terms are not designated to be used with subjects or objects specifically, the resource they identify must be made clear by the context in which they are used. In the case of the database table, a pre-existing understanding between the data provider and consumer would indicate that the rows of the table represent ```dwc:Identification``` instances and therefore the ```dwc:identificationID``` property would provide the identifier of the subject and any other ID terms would refer to object resources that are related to that particular identification instance. In the XML example, the type of the subject resource is made clear through the record's container element and hence a consumer would know that the ```dwc:identificationID``` property referred to the subject resource. In RDF, the two functions (specifying type and referencing an identifier) are handled separately using ```rdf:type``` declarations ([Section 2.3.1](./index.htm#2.3.1_Declaring_the_type_of_the_resource)) and defined mechanisms for expressing the identifier of the subject resource ([Section 2.2](./index.htm#2.2_Subject_resources)). Because these mechanisms are well-known best practices outside TDWG, they should be used rather than using the Darwin Core ID terms when data are expressed as RDF. The following example shows an appropriate way to express the information in Example 21 as RDF:
+In Example 21 and Table 3, the "ID" terms are used to specify both the identifier of a resource which is the subject of the record itself (using the term ```dwc:identificationID```) and to specify an object resource related to the subject resource by a foreign key (using the term ```dwc:taxonID```). Because the ID terms are not designated to be used with subjects or objects specifically, the resource they identify must be made clear by the context in which they are used. In the case of the database table, a pre-existing understanding between the data provider and consumer would indicate that the rows of the table represent ```dwc:Identification``` instances and therefore the ```dwc:identificationID``` property would provide the identifier of the subject and any other ID terms would refer to object resources that are related to that particular identification instance. In the XML example, the type of the subject resource is made clear through the record's container element and hence a consumer would know that the ```dwc:identificationID``` property referred to the subject resource. In RDF, the two functions (specifying type and referencing an identifier) are handled separately using ```rdf:type``` declarations ([Section 2.3.1](#231-declaring-the-type-of-the-resource-non-normative)) and defined mechanisms for expressing the identifier of the subject resource ([Section 2.2](#22-subject-resources-normative)). Because these mechanisms are well-known best practices outside TDWG, they should be used rather than using the Darwin Core ID terms when data are expressed as RDF. The following example shows an appropriate way to express the information in Example 21 as RDF:
 
 **Example 22:**
 
@@ -860,9 +860,9 @@ Turtle:
 
 The following points about the Example 22 should be noted:
 
-1. In RDF/XML use the ```rdf:about``` attribute of an ```rdf:Description``` element to specify an IRI identifier used with the subject ID term, i.e., the value of ```dwc:identificationID``` is an HTTP IRI and can therefore be used with the ```rdf:about``` attribute. The ```dcterms:identifier``` property can also be used to express the primary identifier for the subject resource as a literal. In Example 22, the HTTP IRI is considered the primary identifier for the Identification instance so it is included as a string value of ```dcterms:identifier``` as well as the IRI of the subject resource. Refer to [Section 2.2.1](./index.htm#2.2.1_Identifying_subject_resources_using_IRIs) and [2.2.2](./index.htm#2.2.2_Associating_a_string_identifier_with_a_subject_resource) for more details.
-2. Data providers who want to relate a subject resource to related non-literal resources should use [object properties](http://www.w3.org/TR/owl-primer/#Object_Properties) (i.e., properties which relate IRI-identified instances to other IRI-identified instances) from a well-known vocabulary or ontology. Darwin Core does not generally define object properties that connect its core classes and in those cases users will have to find object properties outside of Darwin Core (see the [Darwin Core informative ancillary web page](https://github.com/tdwg/rdf/blob/master/DwCAncillary.md)] for examples). In this example, the term ```dwciri:toTaxon``` (see [Section 2.7.4](./index.htm#2.7.4_Description_of_a_taxonomic_entity)) is used to relate the ```dwc:Identification``` instance to a taxon instance. (Please note that this is for illustration purposes only and this guide takes no position on the nature of taxa or taxon concepts or whether the resource used in this example is actually a taxon or not.)
-3. If an identified object of a triple is a non-literal resource ([Section 2.4.2](./index.htm#2.4.2_Non-literal_object_resources)), RDF requires that it be referenced by an IRI. Although the UUID "d79c11aa-29c1-102b-9a4a-00304854f820:col20120721" is a globally unique and hopefully persistent identifier for the taxon, it is not an IRI. Catalog of Life has created an IRI from the UUID in the form of an LSID:
+1. In RDF/XML use the ```rdf:about``` attribute of an ```rdf:Description``` element to specify an IRI identifier used with the subject ID term, i.e., the value of ```dwc:identificationID``` is an HTTP IRI and can therefore be used with the ```rdf:about``` attribute. The ```dcterms:identifier``` property can also be used to express the primary identifier for the subject resource as a literal. In Example 22, the HTTP IRI is considered the primary identifier for the Identification instance so it is included as a string value of ```dcterms:identifier``` as well as the IRI of the subject resource. Refer to [Section 2.2.1](#221-identifying-subject-resources-using-iris-normative) and [2.2.2](#222-associating-a-string-identifier-with-a-subject-resource-normative) for more details.
+2. Data providers who want to relate a subject resource to related non-literal resources should use [object properties](http://www.w3.org/TR/owl-primer/#Object_Properties) (i.e., properties which relate IRI-identified instances to other IRI-identified instances) from a well-known vocabulary or ontology. Darwin Core does not generally define object properties that connect its core classes and in those cases users will have to find object properties outside of Darwin Core (see the [Darwin Core informative ancillary web page](https://github.com/tdwg/rdf/blob/master/DwCAncillary.md)] for examples). In this example, the term ```dwciri:toTaxon``` (see [Section 2.7.4](#274-description-of-a-taxonomic-entity-normative)) is used to relate the ```dwc:Identification``` instance to a taxon instance. (Please note that this is for illustration purposes only and this guide takes no position on the nature of taxa or taxon concepts or whether the resource used in this example is actually a taxon or not.)
+3. If an identified object of a triple is a non-literal resource ([Section 2.4.2](#242-non-literal-object-resources-normative)), RDF requires that it be referenced by an IRI. Although the UUID "d79c11aa-29c1-102b-9a4a-00304854f820:col20120721" is a globally unique and hopefully persistent identifier for the taxon, it is not an IRI. Catalog of Life has created an IRI from the UUID in the form of an LSID:
 
 ```rdf
 <urn:lsid:catalogueoflife.org:taxon:d79c11aa-29c1-102b-9a4a-00304854f820:col20120721>
@@ -874,7 +874,7 @@ so expressing the object reference as
 <dwciri:toTaxon  rdf:resource="urn:lsid:catalogueoflife.org:taxon:d79c11aa-29c1-102b-9a4a-00304854f820:col20120721"/>
 ```
 
-would be valid RDF. However, best practices ([Section 2.4.2.1.1](./index.htm#2.4.2.1.1_Objects_identified_by_LSIDs)) specify that when LSIDs are the objects of triples, they should be in HTTP-proxied form. In Example 22, the LSID is proxied using the TDWG LSID resolver.
+would be valid RDF. However, best practices ([Section 2.4.2.1.1](#24211-objects-identified-by-lsids-normative)) specify that when LSIDs are the objects of triples, they should be in HTTP-proxied form. In Example 22, the LSID is proxied using the TDWG LSID resolver.
 
 4. The class of the subject identification instance (```dwc:Identification```) is asserted explicitly using ```rdf:type```. The type of the object taxon instance is not stated directly - a client would need to dereference the IRI to discover it.
 
@@ -929,7 +929,7 @@ The data unambiguously specifies the lowest level political subdivision (Roberts
 
 #### 2.7.1 What purpose do convenience terms serve? (non-normative)
 
-When expressing the data about resources collected in Robertson County in RDF, it really isn’t necessary to indicate in every record that North America is a parent feature of the United States, that the United States is a parent feature of Tennessee, and that Tennessee is a parent feature of Robertson County. It is only necessary to link the record to an IRI for Robertson County such as <http://sws.geonames.org/4653638/> and a semantic client can discover the parent features by traversing the ```gn:parentFeature``` property of features included in the hierarchy. Once a client has discovered the higher level parts of the hierarchy in which it is interested, no additional retrieval of data about the hierarchy is required.
+When expressing the data about resources collected in Robertson County in RDF, it really isn’t necessary to indicate in every record that North America is a parent feature of the United States, that the United States is a parent feature of Tennessee, and that Tennessee is a parent feature of Robertson County. It is only necessary to link the record to an IRI for Robertson County such as ```<http://sws.geonames.org/4653638/>``` and a semantic client can discover the parent features by traversing the ```gn:parentFeature``` property of features included in the hierarchy. Once a client has discovered the higher level parts of the hierarchy in which it is interested, no additional retrieval of data about the hierarchy is required.
 
 In general, it should not be necessary for a data provider to recreate hierarchical RDF relationships that have already been expressed by a centralized service. For that reason, this guide does not describe best-practices for expressing such relationships in RDF. Nevertheless, there are several reasons why it may be convenient for a data provider to expose literal values from existing text-based data:
 
@@ -939,7 +939,7 @@ In general, it should not be necessary for a data provider to recreate hierarchi
 
 #### 2.7.2 Literal convenience terms versus a single object property reference (normative)
 
-There are several groups of convenience terms in the ```dwc:``` namespace which may be used to provide literal values for the purposes listed above ([Section 3.6](./index.htm#3.6_dwciri:_terms_having_local_names_that_don%E2%80%99t_correspond_to)). In the case of each of these groups, it is not expected that a provider will link to IRI references for each level in the hierarchy. Therefore, ```dwciri:``` analogues are not defined for those convenience terms from the ```dwc:``` namespace. Rather, for each category of convenience terms, there is a single ```dwciri:``` namespace term (having no analogue in the ```dwc:``` namespace; [Section 3.7](./index.htm#3.7_dwc:_namespace_terms_that_have_analogues_in_the_dwciri:_name)) that can be used to link to the lowest available level in the hierarchy with the understanding that the RDF of the object resource will provide links to other IRIs for higher levels of the hierarchy. Such ```dwciri:``` terms can refer to any level in the hierarchy if there is uncertainty about the identity of lower levels, or if lower levels do not exist.
+There are several groups of convenience terms in the ```dwc:``` namespace which may be used to provide literal values for the purposes listed above ([Section 3.6](#36-dwciri-terms-having-local-names-that-dont-correspond-to-terms-in-the-dwc-darwin-core-namespace-normative)). In the case of each of these groups, it is not expected that a provider will link to IRI references for each level in the hierarchy. Therefore, ```dwciri:``` analogues are not defined for those convenience terms from the ```dwc:``` namespace. Rather, for each category of convenience terms, there is a single ```dwciri:``` namespace term (having no analogue in the ```dwc:``` namespace; [Section 3.7](#37-dwc-namespace-terms-that-have-analogues-in-the-dwciri-namespace-normative)) that can be used to link to the lowest available level in the hierarchy with the understanding that the RDF of the object resource will provide links to other IRIs for higher levels of the hierarchy. Such ```dwciri:``` terms can refer to any level in the hierarchy if there is uncertainty about the identity of lower levels, or if lower levels do not exist.
 
 **Table 6**
 
@@ -1080,7 +1080,7 @@ Turtle
      dwciri:inDescribedPlace <http://sws.geonames.org/4653638/>.
 ```
 
-Because generic RDF places no restrictions on repeating properties, a ```dcterms:Location``` instance could have multiple ```dwciri:inDescribedPlace``` properties if the location is included within several described geographic subdivisions. For example, a particular location could be included within <http://sws.geonames.org/4626068/> (The Great Smoky Mountains National Park which straddles two states) and <http://sws.geonames.org/4656568/> (Sevier County, Tennessee, US, which is the lowest level political subdivision).
+Because generic RDF places no restrictions on repeating properties, a ```dcterms:Location``` instance could have multiple ```dwciri:inDescribedPlace``` properties if the location is included within several described geographic subdivisions. For example, a particular location could be included within ```<http://sws.geonames.org/4626068/>``` (The Great Smoky Mountains National Park which straddles two states) and ```<http://sws.geonames.org/4656568/>``` (Sevier County, Tennessee, US, which is the lowest level political subdivision).
 
 #### 2.7.6 Chronostratographic (geological timescale) descriptors (normative)
 
@@ -1180,9 +1180,9 @@ The advantage of presenting the literal values of Darwin Core association proper
 
 Because a Darwin Core association term property/value pair actually encodes two or more discrete "facts", it is probably better to represent the information contained in that property/value pair by more than a single triple.
 
-The well-known Dublin Core term ```dcterms:relation``` (http://purl.org/dc/terms/relation) can be used to link related resources. ```dcterms:relation``` does not specify the exact nature of the relationship, although it has a number of declared subproperties that more precisely specify kinds and directions of the relationships (for example: ```dcterms:hasPart```, ```dcterms:isPartOf```, ```dcterms:hasFormat```, ```dcterms:isFormatOf```, ```dcterms:references```, ```dcterms:isVersionOf```, etc.). So ```dcterms:relation``` is a generic term that may be used to indicate that a resource has an unspecified association with some other resource.
+The well-known Dublin Core term ```dcterms:relation``` (```<http://purl.org/dc/terms/relation>```) can be used to link related resources. ```dcterms:relation``` does not specify the exact nature of the relationship, although it has a number of declared subproperties that more precisely specify kinds and directions of the relationships (for example: ```dcterms:hasPart```, ```dcterms:isPartOf```, ```dcterms:hasFormat```, ```dcterms:isFormatOf```, ```dcterms:references```, ```dcterms:isVersionOf```, etc.). So ```dcterms:relation``` is a generic term that may be used to indicate that a resource has an unspecified association with some other resource.
 
-The term ```rdf:type``` ([Section 2.3.1](./index.htm#2.3.1_Declaring_the_type_of_the_resource)) is the standard property for indicating the type of a resource in RDF. So it should be used to declare the type of the object resource of a Darwin Core association term property/value pair.
+The term ```rdf:type``` ([Section 2.3.1](#231-declaring-the-type-of-the-resource-non-normative)) is the standard property for indicating the type of a resource in RDF. So it should be used to declare the type of the object resource of a Darwin Core association term property/value pair.
 
 The nature and direction of the association between the subject and object resource can be described more precisely if an appropriate term exists for that purpose. For example, in many cases, the relationship between a subject and object resource that are linked by ```dwc:associatedMedia``` is depiction. Thus the well known term ```foaf:depiction``` can be used to link two resources in lieu of, or in addition to ```dcterms:relation```.
 
@@ -1238,7 +1238,7 @@ Notes:
 
 #### 2.8.4 Querying for associated resources (non-normative)
 
-If the strategy outlined in [Section 2.8.3](./index.htm#2.8.3_Expressing_Darwin_Core_association_terms_as_RDF_with_URI_r) were used, resources associated with a subject resource could be discovered using a [SPARQL query](http://www.w3.org/TR/sparql11-query/) similar to Example 30. In that example, <iri1> is the IRI of a subject resource, and ```dcmitype:StillImage``` is the type of associated media that would be discovered.
+If the strategy outlined in [Section 2.8.3](#283-expressing-darwin-core-association-terms-as-rdf-with-uri-references-normative) were used, resources associated with a subject resource could be discovered using a [SPARQL query](http://www.w3.org/TR/sparql11-query/) similar to Example 30. In that example, <iri1> is the IRI of a subject resource, and ```dcmitype:StillImage``` is the type of associated media that would be discovered.
 
 **Example 30:**
 
@@ -1246,7 +1246,8 @@ SPARQL
 
 ```sparql
 PREFIX dcterms:  <http://purl.org/dc/terms/>  
-PREFIX dcmitype:  <http://purl.org/dc/dcmitype/>SELECT ?resource WHERE {  
+PREFIX dcmitype:  <http://purl.org/dc/dcmitype/>
+SELECT ?resource WHERE {  
  <iri1> dcterms:relation ?resource.  
  ?resource a dcmitype:StillImage.  
  }
@@ -1305,17 +1306,17 @@ term | domain | range
 dcterms:modified | --- | rdfs:Literal[^1]
 dcterms:bibliographicCitation | dcterms:BibliographicResource | rdfs:Literal
 
-[^1]: Recommended format is [ISO 8601:2004(E)](http://en.wikipedia.org/wiki/ISO_8601). See notes on date terms in [Section 3.4](./index.htm#3.4_Terms_defined_by_Darwin_Core_that_are_expected_to_be_used_on) for further information.
+[^1]: Recommended format is [ISO 8601:2004(E)](http://en.wikipedia.org/wiki/ISO_8601). See notes on date terms in [Section 3.4](#34-terms-defined-by-darwin-core-that-are-expected-to-be-used-only-with-literal-values-normative) for further information.
 
 ### 3.3 Imported Dublin Core terms that have non-literal objects and corresponding terms that have literal objects (normative)
 
-Term intended for use in RDF with non-literal objects[^2] | range | recommended values[^3] | Term intended for use in RDF with literal objects
-dcterms:language | dcterms:LinguisticSystem | MARC ISO 639-2 language IRI | dc:language
-dcterms:license[^4] | dcterms:LicenseDocument | Creative Commons license IRI | xmpRights:UsageTerms[^5]
-dcterms:type | rdfs:Class | DCMI Type Vocabulary | dc:type
-dcterms:rightsHolder | dcterms:Agent | IRI for the agent owning or managing the rights. | xmpRights:Owner[^6]
-dcterms:accessRights | dcterms:RightsStatement | A custom RDF rights statement could be created describing who can access the resource or an indication of its security status. | No literal object analogue exists for this term. The string value can be expressed as a property of a blank node.[^7]
-dcterms:references | --- | IRI for a publication (preferably an HTTP-proxied DOI) related to the subject resource. | Use dwc:identificationReferences for a reference consulted in making an taxonomic identification and dwc:associatedReferences for references related to occurrences.
+| Term intended for use in RDF with non-literal objects[^2] | range | recommended values[^3] | Term intended for use in RDF with literal objects |
+| dcterms:language | dcterms:LinguisticSystem | MARC ISO 639-2 language IRI | dc:language |
+| dcterms:license[^4] | dcterms:LicenseDocument | Creative Commons license IRI | xmpRights:UsageTerms[^5] |
+| dcterms:type | rdfs:Class | DCMI Type Vocabulary | dc:type |
+| dcterms:rightsHolder | dcterms:Agent | IRI for the agent owning or managing the rights. | xmpRights:Owner[^6] |
+| dcterms:accessRights | dcterms:RightsStatement | A custom RDF rights statement could be created describing who can access the resource or an indication of its security status. | No literal object analogue exists for this term. The string value can be expressed as a property of a blank node.[^7] |
+| dcterms:references | --- | IRI for a publication (preferably an HTTP-proxied DOI) related to the subject resource. | Use dwc:identificationReferences for a reference consulted in making an taxonomic identification and dwc:associatedReferences for references related to occurrences. |
 
 [^2]: None of these ```dcterms:``` namespace terms have domain declarations.
 
