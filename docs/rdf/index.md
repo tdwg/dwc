@@ -1311,6 +1311,7 @@ dcterms:bibliographicCitation | dcterms:BibliographicResource | rdfs:Literal
 ### 3.3 Imported Dublin Core terms that have non-literal objects and corresponding terms that have literal objects (normative)
 
 | Term intended for use in RDF with non-literal objects[^2] | range | recommended values[^3] | Term intended for use in RDF with literal objects |
+| --- | --- | --- | --- |
 | dcterms:language | dcterms:LinguisticSystem | MARC ISO 639-2 language IRI | dc:language |
 | dcterms:license[^4] | dcterms:LicenseDocument | Creative Commons license IRI | xmpRights:UsageTerms[^5] |
 | dcterms:type | rdfs:Class | DCMI Type Vocabulary | dc:type |
