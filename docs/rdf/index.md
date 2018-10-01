@@ -1316,33 +1316,33 @@ dcterms:relation | Used to link subject and object resources that have an unspec
 
 term | domain | range
 --- | --- | ---
-dcterms:modified | --- | rdfs:Literal<sup>1</sup>
+dcterms:modified | --- | rdfs:Literal[1]
 dcterms:bibliographicCitation | dcterms:BibliographicResource | rdfs:Literal
 
-<sup>1</sup> Recommended format is [ISO 8601:2004(E)](http://en.wikipedia.org/wiki/ISO_8601). See notes on date terms in [Section 3.4](#34-terms-defined-by-darwin-core-that-are-expected-to-be-used-only-with-literal-values-normative) for further information.
+[1] Recommended format is [ISO 8601:2004(E)](http://en.wikipedia.org/wiki/ISO_8601). See notes on date terms in [Section 3.4](#34-terms-defined-by-darwin-core-that-are-expected-to-be-used-only-with-literal-values-normative) for further information.
 
 ### 3.3 Imported Dublin Core terms that have non-literal objects and corresponding terms that have literal objects (normative)
 
-| Term intended for use in RDF with non-literal objects<sup>2</sup> | range | recommended values<sup>3</sup> | Term intended for use in RDF with literal objects |
+| Term intended for use in RDF with non-literal objects[2] | range | recommended values[3] | Term intended for use in RDF with literal objects |
 | --- | --- | --- | --- |
 | dcterms:language | dcterms:LinguisticSystem | MARC ISO 639-2 language IRI | dc:language |
-| dcterms:license<sup>4</sup> | dcterms:LicenseDocument | Creative Commons license IRI | xmpRights:UsageTerms<sup>5</sup> |
+| dcterms:license[4] | dcterms:LicenseDocument | Creative Commons license IRI | xmpRights:UsageTerms[5] |
 | dcterms:type | rdfs:Class | DCMI Type Vocabulary | dc:type |
-| dcterms:rightsHolder | dcterms:Agent | IRI for the agent owning or managing the rights. | xmpRights:Owner<sup>6</sup> |
-| dcterms:accessRights | dcterms:RightsStatement | A custom RDF rights statement could be created describing who can access the resource or an indication of its security status. | No literal object analogue exists for this term. The string value can be expressed as a property of a blank node.<sup>7</sup> |
+| dcterms:rightsHolder | dcterms:Agent | IRI for the agent owning or managing the rights. | xmpRights:Owner[6] |
+| dcterms:accessRights | dcterms:RightsStatement | A custom RDF rights statement could be created describing who can access the resource or an indication of its security status. | No literal object analogue exists for this term. The string value can be expressed as a property of a blank node.[7] |
 | dcterms:references | --- | IRI for a publication (preferably an HTTP-proxied DOI) related to the subject resource. | Use `dwc:identificationReferences` for a reference consulted in making an taxonomic identification and `dwc:associatedReferences` for references related to occurrences. |
 
-<sup>2</sup> None of these ```dcterms:``` namespace terms have domain declarations.
+[2]: None of these `dcterms:` namespace terms have domain declarations.
 
-<sup>3</sup> For recommended controlled values, see the document "Sources of well-known controlled value IRIs", accessible from the [Darwin Core informative ancillary web page](https://github.com/tdwg/rdf/blob/master/DwCAncillary.md)
+[3]: For recommended controlled values, see the document "Sources of well-known controlled value IRIs", accessible from the [Darwin Core informative ancillary web page](https://github.com/tdwg/rdf/blob/master/DwCAncillary.md)
 
-<sup>4</sup> For more information about linking a creative work to its license, see the document "Sources of well-known controlled value IRIs", accessible from the [Darwin Core informative ancillary web page](https://github.com/tdwg/rdf/blob/master/DwCAncillary.md)
+[4]: For more information about linking a creative work to its license, see the document "Sources of well-known controlled value IRIs", accessible from the [Darwin Core informative ancillary web page](https://github.com/tdwg/rdf/blob/master/DwCAncillary.md)
 
-<sup>5</sup> DCMI does not provide a literal object analogue of ```dcterms:license```. [Audubon Core](https://www.tdwg.org/standards/ac/) recommends ```xmpRights:UsageTerms``` for literals.
+[5]: DCMI does not provide a literal object analogue of `dcterms:license`. [Audubon Core](https://www.tdwg.org/standards/ac/) recommends `xmpRights:UsageTerms` for literals.
 
-<sup>6</sup> DCMI does not provide a literal object analogue of ```dcterms:rightsHolder```. [Audubon Core](https://www.tdwg.org/standards/ac/) recommends ```xmpRights:Owner``` for literals. However, since ```xmpRights:Owner``` is defined by the [XMP specification](https://wwwimages2.adobe.com/content/dam/acom/en/devnet/xmp/pdfs/XMP%20SDK%20Release%20cc-2016-08/XMPSpecificationPart1.pdf) as "a list of legal owners of the resource", it can only be used to specify the rights owner, not an agent managing the rights.
+[6]: DCMI does not provide a literal object analogue of `dcterms:rightsHolder`. [Audubon Core](https://www.tdwg.org/standards/ac/) recommends `xmpRights:Owner` for literals. However, since `xmpRights:Owner` is defined by the [XMP specification](https://wwwimages2.adobe.com/content/dam/acom/en/devnet/xmp/pdfs/XMP%20SDK%20Release%20cc-2016-08/XMPSpecificationPart1.pdf) as "a list of legal owners of the resource", it can only be used to specify the rights owner, not an agent managing the rights.
 
-<sup>7</sup> See the [DCMI accessRights guidelines](http://wiki.dublincore.org/index.php/User_Guide/Publishing_Metadata#dcterms:accessRights) for an example.
+[7]: See the [DCMI accessRights guidelines](http://wiki.dublincore.org/index.php/User_Guide/Publishing_Metadata#dcterms:accessRights) for an example.
 
 ### 3.4 Terms defined by Darwin Core that are expected to be used only with literal values (normative)
 
@@ -1357,7 +1357,7 @@ dwc:otherCatalogNumbers | There is no simple mapping because of the kinds of ide
 dwc:basisOfRecord | Use only with literal value strings consisting of the local name component of Darwin Core class IRIs. Use `rdf:type` to refer to IRIs that describe the type of the resource.
 dwc:dynamicProperties | Expected to contain JSON as a literal. Communities of practice might choose to use other vocabularies or develop their own vocabularies to express this sort of content directly as RDF.
 
-<sup>8</sup> No Darwin Core terms defined by Darwin Core (as opposed to those imported from Dublin Core) have domain or range declarations as a part of their definitions. However, the five terms in the ```dwc:``` namespace listed in the table above are defined to be ```rdfs:subPropertyOf``` of ```dcterms:date```, which has the range ```rdfs:Literal```. Under the extensional entailment rule ext4 listed in section 7.3.1 of the [RDF Semantics 2004 W3C Recommendation](http://www.w3.org/TR/2004/REC-rdf-mt-20040210/#RDFSExtRules), these terms can be inferred to have the range ```rdfs:Literal```. However, the [RDF 1.1 Semantics W3C Recommendation](http://www.w3.org/TR/rdf11-mt/) does not include these extensional entailment rules. Nevertheless, it is reasonable to expect that date properties should have literal values, with datatype attributes whenever possible.
+[8]: No Darwin Core terms defined by Darwin Core (as opposed to those imported from Dublin Core) have domain or range declarations as a part of their definitions. However, the five terms in the `dwc:` namespace listed in the table above are defined to be `rdfs:subPropertyOf` of `dcterms:date`, which has the range `rdfs:Literal`. Under the extensional entailment rule ext4 listed in section 7.3.1 of the [RDF Semantics 2004 W3C Recommendation](http://www.w3.org/TR/2004/REC-rdf-mt-20040210/#RDFSExtRules), these terms can be inferred to have the range `rdfs:Literal`. However, the [RDF 1.1 Semantics W3C Recommendation](http://www.w3.org/TR/rdf11-mt/) does not include these extensional entailment rules. Nevertheless, it is reasonable to expect that date properties should have literal values, with datatype attributes whenever possible.
 
 ### 3.5 Darwin Core convenience terms that are expected to be used only with literal values (normative)
 
