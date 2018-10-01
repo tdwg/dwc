@@ -35,7 +35,7 @@ Bibliographic citation
 
 ## 1. Introduction
 
-This document and the policies contained herein are modeled on the _Dublin Core Metadata Initiative Namespace Policy_ \[[DCMINAMESPACEPOLICY](http://dublincore.org/documents/2007/07/02/dcmi-namespace/)\]. All terms in the Darwin Core must be identified with a unique Uniform Resource Identifier (URI). For convenience, the term URIs are grouped into collections known as _Darwin Core namespaces_. This document describes the policies associated with Darwin Core namespaces and how term URIs are allocated by the _Darwin Core Maintenance Group_ \[[DWC-TASK](http://www.tdwg.org/activities/darwincore/)\].
+This document and the policies contained herein are modeled on the [Dublin Core Metadata Initiative Namespace Policy](http://dublincore.org/documents/2007/07/02/dcmi-namespace/). All terms in the Darwin Core must be identified with a unique Uniform Resource Identifier (URI). For convenience, the term URIs are grouped into collections known as _Darwin Core namespaces_. This document describes the policies associated with Darwin Core namespaces and how term URIs are allocated by the [Darwin Core Maintenance Group](http://www.tdwg.org/activities/darwincore/).
 
 ### 1.1 Status of the content of this document
 
@@ -64,6 +64,7 @@ The term identifier for the current (recommended) version of a term is a URI bas
 ```
 http://rs.tdwg.org/dwc/terms/scientificName
 ```
+
 is the Darwin Core term identifier for the _scientificName_ property, while
 
 ```
@@ -74,10 +75,10 @@ is the Darwin Core term identifier for the _MachineObservation_ class.
 
 All Darwin Core identifiers will dereference to a Darwin Core term declaration for the identified term.
 
-## 3. Term Change Policy
+## 3. Term change policy
 
-(This section has been superseded by the [Vocabulary Maintenance Specification](https://github.com/tdwg/vocab/blob/master/vms/maintenance-specification.md) )
+(This section has been superseded by the [Vocabulary Maintenance Specification](https://github.com/tdwg/vocab/blob/master/vms/maintenance-specification.md))
 
-## 4. Persistence Policy
+## 4. Persistence policy
 
 [TDWG](https://www.tdwg.org/) recognizes that people and applications depend on the persistence of formal documents and machine processable schemas that have been made publicly available. In particular, the stability of Darwin Core term URIs and Darwin Core namespace URIs is critical to interoperability over time. Thus, the wide promulgation of this set of URIs dictates that they be maintained to support legacy applications that have adopted them.
