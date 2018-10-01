@@ -3,11 +3,23 @@
 Title
 : Simple Darwin Core
 
-Date Issued
+Date version issued
+: 2015-06-02
+
+Date created
 : 2009-04-21
 
-Date Modified
-: 2015-06-02
+Part of TDWG Standard
+: <http://www.tdwg.org/standards/450/>
+
+This version
+: <http://rs.tdwg.org/dwc/terms/simple/2014-11-08>
+
+Latest Version
+: <http://rs.tdwg.org/dwc/terms/simple/>
+
+Previous version
+: <http://rs.tdwg.org/dwc/terms/simple/2013-10-22>
 
 Abstract
 : This document is a reference for the Simple Darwin Core standard.
@@ -15,34 +27,21 @@ Abstract
 Contributors
 : John Wieczorek (MVZ), Markus Döring (GBIF), Renato De Giovanni (CRIA), Tim Robertson (GBIF), Dave Vieglais (KUNHM)
 
-Legal
-: This document is governed by the standard legal, copyright, licensing provisions and disclaimers issued by the Taxonomic Databases Working Group.
-
-Part of TDWG Standard
-: <http://www.tdwg.org/standards/450/>
-
 Creator
 : Darwin Core Task Group
 
-Identifier
-: <http://rs.tdwg.org/dwc/2014-11-08/terms/simple/>
-
-Latest Version
-: <http://rs.tdwg.org/dwc/terms/simple/>
-
-Replaces
-: <http://rs.tdwg.org/dwc/2013-10-22/terms/simple/>
-
-Document Status
-: Current Standard
+Bibliographic citation
+: Darwin Core Task Group. 2009. Simple Darwin Core. Biodiversity Information Standards (TDWG). http://rs.tdwg.org/dwc/terms/simple/
 
 ## 1 Introduction
 
-**Audience**: This document is targeted toward those who want to share biodiversity information using the simplest methods and structure: Simple Darwin Core. It explains the uses and limitations of this structure and how to expand upon it.
-
-## 2 What is Simple Darwin Core?
-
 Simple Darwin Core is a predefined subset of the terms that have common use across a wide variety of biodiversity applications. The terms used in Simple Darwin Core are those that are found at the cross-section of taxonomic names, places, and events that document biological occurrences on the planet. The two driving principles are simplicity and flexibility.
+
+### 1.1 Status of the content of this document
+All sections of this document are normative, except for examples, which are explicitly marked as non-normative.
+
+## 2 Audience
+This document is targeted toward those who want to share biodiversity information using the simplest methods and structure: Simple Darwin Core. It explains the uses and limitations of this structure and how to expand upon it.
 
 ## 3 What makes it simple?
 
@@ -83,8 +82,11 @@ The [Text guide](../text/) describes how to construct and format a text file usi
 
 ### 6.2 Simple Darwin Core as XML
 
-The [XML guide](../xml/) describes how to construct XML schemas to share data based on Darwin Core terms. Looking at the [Simple Darwin Core XML Schema](../xml/tdwg_dwc_simple.xsd) using the XML guide as a reference you will be able to see that the schema supports the notion of a `SimpleDarwinRecord`, which is just a grouping of up to one of each of the Darwin Core terms that are `Properties` (not `Classes`). The following example shows a `SimpleDarwinRecordSet` containing one `SimpleDarwinRecord` for a `Taxon`:
-    
+The [XML guide](../xml/) describes how to construct XML schemas to share data based on Darwin Core terms. Looking at the [Simple Darwin Core XML Schema](../xml/tdwg_dwc_simple.xsd) using the XML guide as a reference you will be able to see that the schema supports the notion of a `SimpleDarwinRecord`, which is just a grouping of up to one of each of the Darwin Core terms that are `Properties` (not `Classes`).
+
+#### 6.2.1 Example of Simple Darwin Core as XML (non-normative)
+The following example shows a `SimpleDarwinRecordSet` containing one `SimpleDarwinRecord` for a `Taxon`:
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <SimpleDarwinRecordSet
@@ -107,7 +109,7 @@ The [XML guide](../xml/) describes how to construct XML schemas to share data ba
         <dwc:parentNameUsage>Centropyge  Kaup, 1860</dwc:parentNameUsage>
         <dwc:originalNameUsage>Centropyge flavicauda Fraser-Brunner 1933</dwc:originalNameUsage>
         <dwc:nameAccordingTo>Allen, G.R. 1980. Butterfly and angelfishes of the world. Volume II. Mergus Publishers. Pp. 149-352.</dwc:nameAccordingTo>
-        <dwc:namePublishedIn>Fraser-Brunner, A. 1933. A revision of the chaetodont fishes of the subfamily Pomacanthinae. Proceedings of the General 
+        <dwc:namePublishedIn>Fraser-Brunner, A. 1933. A revision of the chaetodont fishes of the subfamily Pomacanthinae. Proceedings of the General
               Meetings for Scientific Business of the Zoological Society of London 1933 (pt 3, no.30): 543-599, Pl. 1.</dwc:namePublishedIn>
         <dwc:higherClassification>Animalia;Chordata;Vertebrata;Osteichthyes;Actinopterygii;Neopterygii;Teleostei;Acanthopterygii;Perciformes;
               Percoidei;Pomacanthidae;Centropyge</dwc:higherClassification>
@@ -134,7 +136,10 @@ Sooner or later you may want to share more information than Simple Darwin Core s
 
 One way would be to try to "overload" existing terms by using them to hold information other than what was intended based on the definition of the terms. Please don't do this. If an existing term has close to the same meaning as one you want to use, but just doesn't quite fit because of the way the definition is worded, it would be better to request an amendment to the term definition so that it will be clear for your community how to use it. You can request such a change by submitting an issue in the [Darwin Core repository](https://github.com/tdwg/dwc).
 
+### 7.1 Structured content using dynamicProperties
 Another way to get more out of Darwin Core without adding a term is to "payload" the [`dynamicProperties`](http://rs.tdwg.org/dwc/terms/dynamicProperties) term with structured content, as shown in the example below, using Javascript Open Notation (JSON). This is perfectly legal, since it doesn't compromise the meaning of the term. One of the weaknesses of payloading data in this way is that it is subject to a lack of stable or well-defined semantics. Also, it is highly recommended to flatten the content into a single string with no non-printing characters (such as line feeds) to facilitate use in the widest variety of data sharing contexts. Still, this might be a reasonable way to at least allow you to share all of your data, even if there might be problems with people using it reliably.
+
+#### 7.1.1 Example of structured JSON content within XML (non-normative)
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -164,11 +169,12 @@ Another way to get more out of Darwin Core without adding a term is to "payload"
         <dwc:nomenclaturalCode>ICZN</dwc:nomenclaturalCode>
         <dwc:namePublishedIn>Pearson O. P., and M. I. Christie. 1985. Historia Natural, 5(37):388</dwc:namePublishedIn>
         <dwc:taxonomicStatus>valid</dwc:taxonomicStatus>
-        <dwc:dynamicProperties>{"iucnStatus":"vulnerable", "distribution":"Neuquén, Argentina"}</dwc:dynamicProperties> 
+        <dwc:dynamicProperties>{"iucnStatus":"vulnerable", "distribution":"Neuquén, Argentina"}</dwc:dynamicProperties>
     </SimpleDarwinRecord>
 </SimpleDarwinRecordSet>
 ```
 
+### 7.2 Extending Darwin Core by adding terms
 If you were using just CSV text files to exchange information, then you might be tempted to just add the new fields to the files. This approach suffers most of the same problems as payloading - no one aside from those with whom you communicated would know what those new fields were or how to use them. Sharing in this way via XML would be an even bigger problem, because the [Simple Darwin Core XML Schema](../xml/tdwg_dwc_simple.xsd) defines the terms that it supports and the new fields would not correspond with any terms understood by the schema. In other words, the XML with your fields in it would not be a valid Simple Darwin Core XML document.
 
 So, if you really need to extend the capabilities of Darwin Core, the best first step is to follow the standards process to add the terms you need. See the [Contributing guide](https://github.com/tdwg/dwc/blob/master/.github/CONTRIBUTING.md) to understand how to suggest a new term.
