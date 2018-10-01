@@ -42,6 +42,7 @@ This document provides guidelines for formatting and sharing [Darwin Core terms]
 More complex structure can be shared in multiple related files. The description of content and relationships between files can be achieved using the metafile. This guideline makes recommendations for the simple case of a _core_ file, upon which Darwin Core _records_ are based, and _extensions_ that are linked to records in that core file. Specifically, extension records have a _many-to-one_ relationship with records in the core file. For example, a core file might contain specimen records, with one specimen per row in the file, while an extension file contains one or more identifications for those specimens, with one identification per row in the extension file, and with an identifier to the specimen for each identification row. This example would allow many identifications to be associated with each specimen.
 
 ### 1.1 Status of the content of this document
+
 All sections of this document are normative, except for examples, whose sections are marked as non-normative.
 
 ### 1.2 Simple example metafile content (non-normative)

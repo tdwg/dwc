@@ -40,9 +40,11 @@ This document provides guidelines for implementing application schemas based on 
 This document does not provide guidelines for encoding Darwin Core in RDF/XML. Nor does it take a position on the relative merits of encoding metadata in "plain" XML rather than RDF/XML. This document provides guidelines in those cases where RDF/XML is not considered appropriate.
 
 ### 1.1 Status of the content of this document
+
 All sections of this document are normative, except for sections that are explicitly marked as non-normative.
 
 ### 1.2 Audience
+
 This document is targeted toward those who wish to use or construct application schemas using Darwin Core terms in XML. It includes explanations of existing schemas such as [Simple Darwin Core](../simple/) and how to build new schemas to meet specific models of information.
 
 ## 2 Implementation guide
@@ -105,6 +107,7 @@ Do not use an empty string - an element with no content:
 The term [`dcterms:type`](http://rs.tdwg.org/dwc/terms/dcterms:type) (which is controlled by the [Dublin Core Type Vocabulary](http://dublincore.org/documents/dcmi-type-vocabulary/)), gives the basic category of object (`PhysicalObject`, `StillImage`, `MovingImage`, `Sound`, `Text`) the record is about. The term [`basisOfRecord`](http://rs.tdwg.org/dwc/terms/basisOfRecord), which has a controlled vocabulary distinct from that of `dcterms:type`, shows the name of the Darwin Core class (e.g., [`LivingSpecimen`](http://rs.tdwg.org/dwc/terms/LivingSpecimen), [`PreservedSpecimen`](http://rs.tdwg.org/dwc/terms/PreservedSpecimen), [`FossilSpecimen`](http://rs.tdwg.org/dwc/terms/FossilSpecimen), [`HumanObservation`](http://rs.tdwg.org/dwc/terms/HumanObservation), [`MachineObservation`](http://rs.tdwg.org/dwc/terms/MachineObservation), [`Taxon`](http://rs.tdwg.org/dwc/terms/Taxon)) the record is about.
 
 #### 2.6.1 Simple Darwin Core example (non-normative)
+
 Following is a brief example of an XML document for a single specimen complying with the [Simple Darwin Core Schema](tdwg_dwc_simple.xsd)]. The [Simple Darwin Core XML example document](example_simple.xml) (if this link shows a blank page in your browser, use the View Source option to see the XML document) shows detail for a single record having a more complete set of elements.
 
 ```xml
@@ -142,6 +145,7 @@ Many Darwin Core terms (`properties`) are defined as being associated with anoth
 It is encouraged to use classes in a normalized way to avoid deep nesting. A [Darwin Core Tools and Applications page](https://github.com/tdwg/dwc-documentation/blob/master/documentation/resources.md) has been created as an index to example schemas for the purpose of community discussions and development. An [XML schema](tdwg_dwc_classes.xsd) is provided to freely mix any Darwin Core Class in a global list and allow them to reference each other using the respective class identifier terms.
 
 #### 2.7.1 Normalized classes examples (non-normative)
+
 Following is an example of using normalized classes to represent two related specimen occurrences (one of which has had a second identification) at one location following this class-based schema. Note that you can reuse the location definition here by referring to it via locationID:
 
 ```xml
