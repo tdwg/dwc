@@ -1277,7 +1277,23 @@ Measurement properties can be grouped as part of a `dwc:MeasurementOrFact` insta
 RDF/XML
 
 ```rdf
-<dwc:Occurrence  rdf:about="http://mczbase.mcz.harvard.edu/guid/MCZ:Mamm:67231"> <dcterms:relation>  <dwc:MeasurementOrFact> <dwc:measurementType>tail length</dwc:measurementType> <dwciri:measurementType  rdf:resource="http://purl.obolibrary.org/obo/VT_0002758"  /> <dwc:measurementValue  rdf:datatype="http://www.w3.org/2001/XMLSchema#int">25</dwc:measurementValue> <dwc:measurementUnit>mm</dwc:measurementUnit>  <dwciri:measurementUnit  rdf:resource="http://mimi.case.edu/ontologies/2009/1/UnitsOntology#millimeter"/> <dwc:measurementAccuracy  rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5</dwc:measurementAccuracy> <dwc:measurementDeterminedDate  rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-08-22</dwc:measurementDeterminedDate> <dwc:measurementDeterminedBy>Ryan B Stephens</dwc:measurementDeterminedBy> <dwciri:measurementDeterminedBy  rdf:resource="http://scholar.google.com/citations?user=RAsUdjoAAAAJ"  /> <dwc:measurementMethod>unspecified</dwc:measurementMethod> <dwciri:measurementMethod  rdf:resource="http://purl.obolibrary.org/obo/MMO_0000160"  /> <dwc:measurementRemarks  xml:lang="en">Accuracy from significant digits.</dwc:measurementRemarks>  </dwc:MeasurementOrFact> </dcterms:relation>  
+<dwc:Occurrence  rdf:about="http://mczbase.mcz.harvard.edu/guid/MCZ:Mamm:67231">
+    <dcterms:relation>
+        <dwc:MeasurementOrFact>
+            <dwc:measurementType>tail length</dwc:measurementType>
+            <dwciri:measurementType  rdf:resource="http://purl.obolibrary.org/obo/VT_0002758"  />
+            <dwc:measurementValue  rdf:datatype="http://www.w3.org/2001/XMLSchema#int">25</dwc:measurementValue>
+            <dwc:measurementUnit>mm</dwc:measurementUnit>
+            <dwciri:measurementUnit  rdf:resource="http://mimi.case.edu/ontologies/2009/1/UnitsOntology#millimeter"/>
+            <dwc:measurementAccuracy  rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5</dwc:measurementAccuracy>
+            <dwc:measurementDeterminedDate  rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-08-22</dwc:measurementDeterminedDate>
+            <dwc:measurementDeterminedBy>Ryan B Stephens</dwc:measurementDeterminedBy>
+            <dwciri:measurementDeterminedBy  rdf:resource="http://scholar.google.com/citations?user=RAsUdjoAAAAJ"  />
+            <dwc:measurementMethod>unspecified</dwc:measurementMethod>
+            <dwciri:measurementMethod  rdf:resource="http://purl.obolibrary.org/obo/MMO_0000160"  />
+            <dwc:measurementRemarks  xml:lang="en">Accuracy from significant digits.</dwc:measurementRemarks>
+        </dwc:MeasurementOrFact>
+    </dcterms:relation>  
 </dwc:Occurrence>
 ```
 
