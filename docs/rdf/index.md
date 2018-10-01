@@ -72,7 +72,7 @@ This RDF graph can be serialized in a somewhat human-friendly syntax called [Ter
 
 Here is the graph in [RDF/XML syntax](http://www.w3.org/TR/rdf-syntax-grammar/):
 
-```rdf
+```xml
 <?xml version="1.0" encoding="UTF-8"?>  
 <rdf:RDF  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"  
 xmlns:dcterms="http://purl.org/dc/terms/"  
@@ -223,7 +223,7 @@ For brevity, the examples do not include namespace declarations, nor an `rdf:RDF
 
 The [W3C RDF Validation Service](http://www.w3.org/RDF/Validator/) can be used to generate both a tabular listing and a graphical diagram of the triples that are included in the example XML serializations. Text from the examples can be placed inside the `rdf:RDF` container element below, then pasted into the validator box to generate the desired output.
 
-```rdf
+```xml
 <?xml version="1.0" encoding="UTF-8"?>  
 <rdf:RDF  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"  
 xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"  
@@ -261,7 +261,7 @@ In the second row of Table 2, the full IRIs are given. In the third row namespac
 
 RDF/XML
 
-```rdf
+```xml
 <rdf:Description  rdf:about="http://dbpedia.org/resource/Starry_night">  
      <foaf:maker  rdf:resource="http://viaf.org/viaf/9854560"/>  
 </rdf:Description>
@@ -284,7 +284,7 @@ If the subject of an RDF triple is identified (i.e., not an anonymous node), it 
 
 The `rdf:about` attribute of the `rdf:Description` element is used in RDF/XML to identify the subject of a triple:
 
-```rdf
+```xml
 <rdf:Description  rdf:about="http://arctos.database.museum/guid/MVZ:Mamm:165861">
 ```
 
@@ -292,15 +292,15 @@ The `rdf:about` attribute of the `rdf:Description` element is used in RDF/XML to
 
 The Dublin Core term `dcterms:identifier` should be used to associate a string literal identifier (e.g., UUID, "Darwin Core Triplet", or ARK) with an IRI-identified resource as shown here in RDF/XML:
 
-```rdf
+```xml
 <dcterms:identifier>58D31D52-713D-44B4-9FE9-CB2D9249C422</dcterms:identifier>  
 ```
 
-```rdf   
+```xml   
 <dcterms:identifier>MVZ:Mamm:165861</dcterms:identifier>  
 ```
 
-```rdf
+```xml
 <dcterms:identifier>ark:/12025/654xz321</dcterms:identifier>
 ```
 
@@ -308,7 +308,7 @@ If an HTTP IRI is considered to be the identifier for a subject resource, it is 
 
 **Example 2:**
 
-```rdf
+```xml
 <rdf:Description  rdf:about="http://bioimages.vanderbilt.edu/kirchoff/b5161">  
      <rdf:type  rdf:resource  ="http://purl.org/dc/dcmitype/StillImage"  />  
      <dcterms:identifier>http://bioimages.vanderbilt.edu/kirchoff/b5161</dcterms:identifier>  
@@ -323,7 +323,7 @@ The [TDWG LSID Applicability Statement standard](http://www.tdwg.org/standards/1
 
 RDF/XML
 
-```rdf
+```xml
 <rdf:Description  rdf:about="http://biocol.org/urn:lsid:biocol.org:col:35115">  
      <owl:sameAs  rdf:resource="urn:lsid:biocol.org:col:35115"/>  
 </rdf:Description>
@@ -356,7 +356,7 @@ The predicate `rdf:type` is defined to have an object that is a class. The class
 
 RDF/XML
 
-```rdf
+```xml
 <rdf:Description  rdf:about="http://bioimages.vanderbilt.edu/baskauf/12226">  
      <rdf:type  rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>  
      <dcterms:created  rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2002-06-11T09:37:33</dcterms:created>  
@@ -375,7 +375,7 @@ In Turtle serialization, `rdf:type` can be abbreviated as "`a`" (Example 4). In 
 
 **Example 5:**
 
-```rdf
+```xml
 <dcmitype:StillImage  rdf:about="http://bioimages.vanderbilt.edu/baskauf/12226"> <dcterms:created  rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2002-06-11T09:37:33</dcterms:created>  
 </dcmitype:StillImage>
 ```
@@ -392,7 +392,7 @@ P rdfs:domain C
 
 is used to describe a subject resource, a client can infer that the subject resource is an instance of class `C`. For example, the term `dcterms:bibliographicCitation` is assigned the property
 
-```rdf
+```xml
 <rdfs:domain  rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
 ```
 
@@ -402,7 +402,7 @@ in its definition. If that term were used as the property of a specimen, a clien
 
 RDF/XML
 
-```rdf
+```xml
 <rdf:Description  rdf:about="http://arctos.database.museum/guid/MVZ:Mamm:165861">  
      <dcterms:bibliographicCitation>Ctenomys sociabilis (MVZ 165861)</dcterms:bibliographicCitation>  
 </rdf:Description>
@@ -423,7 +423,7 @@ P rdfs:range C
 
 is used with a value, a client can infer that the value is an instance of class `C`. The term `dcterms:language` is assigned the property
 
-```rdf
+```xml
 <rdfs:range  rdf:resource="http://purl.org/dc/terms/LinguisticSystem"/>
 ```
 
@@ -433,7 +433,7 @@ in its definition. If the object of that term in an RDF triple is a reference to
 
 RDF/XML
 
-```rdf
+```xml
 <rdf:Description  rdf:about="http://dx.doi.org/10.5962/bhl.title.59991">  
      <dcterms:language  rdf:resource="http://id.loc.gov/vocabulary/iso639-2/eng"/>  
 </rdf:Description>
@@ -452,13 +452,13 @@ No terms defined within the Darwin Core namespace have range or domain declarati
 
 Because the use of a predicate having a range or domain declaration implies the `rdf:type` of a resource, data providers should exercise caution in using any such term in a non-standard way. For example, if the property `foaf:familyName` were used with a specimen (e.g., to indicate the taxonomic family), that use would imply that the specimen was a `foaf:Person` . However, it cannot be assumed that all clients will perform the reasoning necessary to infer the `rdf:type` declarations implied by range and domain declarations. Therefore, if a data provider feels that it is important for a consumer to know that a resource is an instance of a particular class, the provider should type the resource using an explicit `rdf:type` triple even if that asserts the same information that could be inferred from a domain or range declaration. For example, if providers of images want to assure that an image will be found in a query for resources having `rdf:type` `foaf:Image`, they should not assume that describing the image using the property `foaf:depicts` will accomplish that because of the range declaration of `foaf:depicts`. It would be safer to include
 
-```rdf
+```xml
 <rdf:type  rdf:resource="http://xmlns.com/foaf/0.1/Image"/>
 ```
 
 in the description of the image. In fact, the provider would probably also want to include
 
-```rdf
+```xml
 <rdf:type  rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
 ```
 
@@ -472,7 +472,7 @@ Both the Dublin Core and Darwin Core define terms that can be used to describe t
 
 RDF/XML
 
-```rdf
+```xml
 <rdf:Description rdf:about="http://arctos.database.museum/guid/MVZ:Mamm:165861">
      <rdf:type rdf:resource="http://rs.tdwg.org/dwc/terms/PreservedSpecimen"/>
      <rdf:type rdf:resource="http://purl.org/dc/dcmitype/PhysicalObject"/>
@@ -501,19 +501,19 @@ The [TDWG GUID Applicability Statement standard](http://www.tdwg.org/standards/1
 
 Any Darwin Core class IRI may be used as a value for `rdf:type`, although it is not clear whether `dwc:ResourceRelationship` instances make sense in the context of RDF. The following list summarizes classes included in the Dublin Core type vocabulary (but which are not part of Darwin Core) that should also be used for typing biodiversity-related resources:
 
-```rdf
+```xml
 dcmitype:StillImage
 ```
 
-```rdf
+```xml
 dcmitype:MovingImage
 ```
 
-```rdf
+```xml
 dcmitype:Sound
 ```
 
-```rdf
+```xml
 dcmitype:PhysicalObject
 ```
 
@@ -525,7 +525,7 @@ dcmitype:PhysicalObject
 
 Some resources such as titles, dates, and numbers can be intrinsically expressed as strings. In cases where it is appropriate for the object of a triple to be a string, in RDF/XML the string is placed in a container element whose qualified name is the property:
 
-```rdf
+```xml
 <dwc:catalogNumber>s1987-00397</dwc:catalogNumber>
 ```
 
@@ -539,7 +539,7 @@ The rdf datatype attribute indicates that the string conforms to a particular fo
 
 RDF/XML
 
-```rdf
+```xml
 <rdf:Description  rdf:about="http://bioimages.vanderbilt.edu/hessd/e5240#loc">  
      <rdf:type  rdf:resource  ="http://purl.org/dc/terms/Location"  />  
      <dwc:decimalLatitude  rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">35.857959</dwc:decimalLatitude>  
@@ -564,7 +564,7 @@ If the string expresses information in a particular language, a provider should 
 
 RDF/XML
 
-```rdf
+```xml
 <rdf:Description rdf:about="http://dx.doi.org/10.1525/auk.2009.09022">
      <dcterms:bibliographicCitation xml:lang="en">S. Claramunt, et al. 2009. Polyphyly of Campylorhamphus, and Description of a New Genus for C. pucherani (Dendrocolaptinae). The Awk 127(2):430-439.</dcterms:bibliographicCitation>
      <dcterms:bibliographicCitation xml:lang="es">S. Claramunt, et al. 2009. Polifilia de Campylorhamphus y la Descripción de un Nuevo Género para C. pucherani (Dendrocolaptinae). The Awk 127(2):430-439.</dcterms:bibliographicCitation>
@@ -591,7 +591,7 @@ The definitions of some terms make it clear that they should be used with litera
 
 Resources that are physical or conceptual often cannot be intrinsically represented as string literals and if identified, they are referenced in RDF by IRIs. Digital resources (e.g., images, web pages, etc.) could be represented as literals (the encoded content of the resource), but because many characters would be required to do that, they are usually referenced as independent entities through IRIs. In RDF/XML an IRI reference to a non-literal object can be made using the attribute `rdf:resource` in an empty XML element:
 
-```rdf
+```xml
 <dcterms:rightsHolder  rdf:resource="http://biocol.org/urn:lsid:biocol.org:col:15666"/>
 ```
 
@@ -599,7 +599,7 @@ A description of the referenced non-literal object may be found within the same 
 
 **Example 11:**
 
-```rdf
+```xml
 <dcterms:rightsHolder>  
      <rdf:Description  rdf:about="http://biocol.org/urn:lsid:biocol.org:col:15666"> <dcterms:identifier>FSU</dcterms:identifier>  
      </rdf:Description>  
@@ -610,7 +610,7 @@ If the non-literal object is not identified by an IRI (i.e., it is a blank node)
 
 **Example 12:**
 
-```rdf
+```xml
 <dcterms:rightsHolder>  
      <rdf:Description>  
            <dcterms:title  xml:lang="en">Trustees of the University of Lavonia</dcterms:title>  
@@ -624,7 +624,7 @@ There are positive and negative aspects to describing a resource within the same
 
 **Example 13:**
 
-```rdf
+```xml
 <rdf:Description  rdf:about="http://bioimages.vanderbilt.edu/taxon/30148-gleason1991">  
      <dcterms:references  rdf:resource="urn:isbn:0893273651"/>  
 </rdf:Description>
@@ -634,7 +634,7 @@ a description providing basic publication data such as:
 
 **Example 14:**
 
-```rdf
+```xml
 <rdf:Description  rdf:about="urn:isbn:0893273651">  
      <rdf:type  rdf:resource="http://xmlns.com/foaf/0.1/Document"/>  
      <dcterms:date  rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1991</dcterms:date>  
@@ -660,7 +660,7 @@ However, if the IRI references an object resource whose data are being actively 
 
 RDF/XML
 
-```rdf
+```xml
 <rdf:Description  rdf:about="http://www.morphbank.net/?id=541608">  
      <rdf:type  rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>  
      <dcterms:rightsHolder  rdf:resource="http://biocol.org/urn:lsid:biocol.org:col:15666"/>  
@@ -688,7 +688,7 @@ Under most circumstances, it is desirable to refer to a non-literal object resou
 
 RDF/XML
 
-```rdf
+```xml
 <rdf:Description  rdf:about="http://museum.org/accession/12312">  
      <dcterms:isReferencedBy> <rdf:Description>  
                <rdf:type  rdf:resource="http://xmlns.com/foaf/0.1/Document"/>  
@@ -719,7 +719,7 @@ In databases the names of entities have frequently been used to represent the en
 
 RDF/XML
 
-```rdf
+```xml
 <rdf:Description  rdf:about="http://dbpedia.org/resource/Starry_night">  
      <dc:creator>Vincent van Gogh</dc:creator>  
 </rdf:Description>
@@ -742,7 +742,7 @@ The introduction of the DCMI Abstract Model (DCAM) and subsequent guidelines for
 
 RDF/XML
 
-```rdf
+```xml
 <rdf:Description  rdf:about="http://dbpedia.org/resource/Starry_night">  
      <dcterms:creator  rdf:resource="http://viaf.org/viaf/9854560"/>  
 </rdf:Description>
@@ -764,7 +764,7 @@ Because there are many legacy data composed of string values of `dwc:` namespace
 
 RDF/XML
 
-```rdf
+```xml
 <rdf:Description  rdf:about="http://arctos.database.museum/guid/MVZ:Mamm:115956">  
      <dwc:recordedBy>Oliver P. Pearson | Anita K. Pearson</dwc:recordedBy>  
 </rdf:Description>
@@ -800,7 +800,7 @@ The following example shows how the data from Example 19 could be expressed if I
 
 RDF/XML
 
-```rdf
+```xml
 <rdf:Description  rdf:about="http://arctos.database.museum/guid/MVZ:Mamm:115956">  
      <dwciri:recordedBy  rdf:resource="http://viaf.org/viaf/263074474"  />  
      <dwciri:recordedBy  rdf:resource="http://museum-x.org/personnel/akp"  />  
@@ -851,7 +851,7 @@ In Example 21 and Table 3, the "ID" terms are used to specify both the identifie
 
 RDF/XML
 
-```rdf
+```xml
 <rdf:Description  rdf:about="http://guid.mvz.org/identifications/23459">  
      <rdf:type  rdf:resource="http://rs.tdwg.org/dwc/terms/Identification"/>  
      <dcterms:identifier>http://guid.mvz.org/identifications/23459</dcterms:identifier>  
@@ -877,13 +877,13 @@ The following points about the Example 22 should be noted:
 2. Data providers who want to relate a subject resource to related non-literal resources should use [object properties](http://www.w3.org/TR/owl-primer/#Object_Properties) (i.e., properties which relate IRI-identified instances to other IRI-identified instances) from a well-known vocabulary or ontology. Darwin Core does not generally define object properties that connect its core classes and in those cases users will have to find object properties outside of Darwin Core (see the [Darwin Core informative ancillary web page](https://github.com/tdwg/rdf/blob/master/DwCAncillary.md)] for examples). In this example, the term `dwciri:toTaxon` (see [Section 2.7.4](#274-description-of-a-taxonomic-entity-normative)) is used to relate the `dwc:Identification` instance to a taxon instance. (Please note that this is for illustration purposes only and this guide takes no position on the nature of taxa or taxon concepts or whether the resource used in this example is actually a taxon or not.)
 3. If an identified object of a triple is a non-literal resource ([Section 2.4.2](#242-non-literal-object-resources-normative)), RDF requires that it be referenced by an IRI. Although the UUID "d79c11aa-29c1-102b-9a4a-00304854f820:col20120721" is a globally unique and hopefully persistent identifier for the taxon, it is not an IRI. Catalog of Life has created an IRI from the UUID in the form of an LSID:
 
-```rdf
+```xml
 <urn:lsid:catalogueoflife.org:taxon:d79c11aa-29c1-102b-9a4a-00304854f820:col20120721>
 ```
 
 so expressing the object reference as
 
-```rdf
+```xml
 <dwciri:toTaxon  rdf:resource="urn:lsid:catalogueoflife.org:taxon:d79c11aa-29c1-102b-9a4a-00304854f820:col20120721"/>
 ```
 
@@ -899,7 +899,7 @@ The previous section showed that using a Darwin Core ID term to indicate the ide
 
 RDF/XML (incorrect usage)
 
-```rdf
+```xml
 <rdf:Description rdf:about="http://guid.mvz.org/identifications/23459">
      <rdf:type rdf:resource="http://rs.tdwg.org/dwc/terms/Identification"/>
      <dwc:identifiedBy>Richard Sage</dwc:identifiedBy>
@@ -980,7 +980,7 @@ In RDF, unique identification of collection items is done through the IRI which 
 
 RDF/XML
 
-```rdf
+```xml
 <rdf:Description  rdf:about="http://arctos.database.museum/guid/MVZ:Mamm:115956">  
      <rdf:type  rdf:resource="http://rs.tdwg.org/dwc/terms/PreservedSpecimen"/>  
      <dwc:institutionCode>MVZ</dwc:institutionCode>  
@@ -1020,7 +1020,7 @@ In this example, a best practice would be to link the identification instance to
 
 RDF/XML
 
-```rdf
+```xml
 <rdf:Description  rdf:about="http://museum.or.jp/9AC9BD26-8B41-458A-AA35-503A4527D009">  
      <rdf:type  rdf:resource="http://rs.tdwg.org/dwc/terms/Identification"/>  
      <dwc:identifiedBy>Takuma Yun</dwc:identifiedBy>  
@@ -1047,13 +1047,13 @@ Turtle:
 
 In the example, providing the triple
 
-```rdf
+```xml
 <http://museum.or.jp/9AC9BD26-8B41-458A-AA35-503A4527D009> dwc:order  "Araneae"
 ```
 
 should not be taken to imply that Takuma Yun asserted that the spider he identified was classified within the order Araneae, nor should the RDF be assumed to imply that Takuma Yun asserted that Aranaeae is the name of a parent taxon of the genus _Hersilia_. Those sorts of assertions would need to be made using more complex RDF and a more expressive vocabulary outside of Darwin Core. The RDF simply makes it easier for users who are looking for spider identifications to search for them by looking for identifications having `dwc:order` of "Araneae", `dcw:genus` of "Hersilia", and a specific epithet of "yaeyamaensis". If it can be determined (perhaps at a later time) that the taxon described by the convenience terms corresponds to a particular IRI-identified instance, the identification instance can be linked to it using an object property, e.g.,
 
-```rdf
+```xml
 <http://muse.or.jp/9AC9BD26-8B41-458A-AA35-503A4527D009> dwciri:toTaxon <http://zoobank.org/75C9EA16-72B1-44C9-AD40-3C3D41323AB9>
 ```
 
@@ -1065,7 +1065,7 @@ The data from Table 5 can be expressed as shown in Example 26. In the example, t
 
 RDF/XML
 
-```rdf
+```xml
 <rdf:Description  rdf:about="http://bioimages.vanderbilt.edu/baskauf/00001#loc">  
      <rdf:type  rdf:resource="http://purl.org/dc/terms/Location"/>  
      <dwc:decimalLatitude  rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">36.4024</dwc:decimalLatitude>  
@@ -1111,7 +1111,7 @@ Example 27 shows how this can be rendered as RDF using the Darwin Core stratigra
 
 RDF/XML
 
-```rdf
+```xml
 <rdf:Description  rdf:about="http://paleo.cnu.edu.cn/ara/nn2010008#context"> <rdf:type  rdf:resource="http://rs.tdwg.org/dwc/terms/GeologicalContext"/> <dwc:formation>Jiu-longshan</dwc:formation> <dwc:earliestEonOrLowestEonothem>Phanerozoic</dwc:earliestEonOrLowestEonothem> <dwc:latestEonOrHighestEonothem>Phanerozoic</dwc:latestEonOrHighestEonothem> <dwc:earliestEraOrLowestErathem>Mesozoic</dwc:earliestEraOrLowestErathem> <dwc:latestEraOrHighestErathem>Mesozoic</dwc:latestEraOrHighestErathem> <dwc:earliestPeriodOrLowestSystem>Jurassic</dwc:earliestPeriodOrLowestSystem> <dwc:latestPeriodOrHighestSystem>Jurassic</dwc:latestPeriodOrHighestSystem> <dwc:earliestEpochOrLowestSeries>Middle</dwc:earliestEpochOrLowestSeries> <dwc:latestEpochOrHighestSeries>Middle</dwc:latestEpochOrHighestSeries> <dwciri:earliestGeochronologicalEra  rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/MiddleJurassic"/> <dwciri:latestGeochronologicalEra  rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/MiddleJurassic"/>  
 </rdf:Description>
 ```
@@ -1169,7 +1169,7 @@ These data can be serialized as RDF using the `dwc:` namespace literal value ter
 
 RDF/XML
 
-```rdf
+```xml
 <rdf:Description  rdf:about="http://bioimages.vanderbilt.edu/ind-durandp/dd343">  
      <rdf:type  rdf:resource="http://rs.tdwg.org/dwc/terms/Organism"/> <dwc:associatedOrganisms>sibling of AX3467</dwc:associatedOrganisms>  
      <dwc:associatedMedia>http://bioimages.vanderbilt.edu/durandp/dd343 | http://bioimages.vanderbilt.edu/durandp/dd344</dwc:associatedMedia>  
@@ -1205,7 +1205,7 @@ Example 29 shows how the data presented in Table 10 may be expressed as RDF usin
 
 RDF/XML
 
-```rdf
+```xml
 <rdf:Description  rdf:about="http://bioimages.vanderbilt.edu/ind-durandp/dd343">  
      <rdf:type  rdf:resource="http://rs.tdwg.org/dwc/terms/Organism"/>  
      <dcterms:relation  rdf:resource="http://museum.org/individuals/ax3467"/>  
@@ -1276,7 +1276,7 @@ Measurement properties can be grouped as part of a `dwc:MeasurementOrFact` insta
 
 RDF/XML
 
-```rdf
+```xml
 <dwc:Occurrence  rdf:about="http://mczbase.mcz.harvard.edu/guid/MCZ:Mamm:67231">
     <dcterms:relation>
         <dwc:MeasurementOrFact>
