@@ -1,5 +1,6 @@
-TITLE: Guidelines for contributing
-DESCRIPTION: This document describes how you can contribute to Darwin Core.
+# Guidelines for contributing
+
+This document describes how you can contribute to Darwin Core.
 
 Changes to the standard are subject to the [change policy](change_policy.html). Here's how you can contribute:
 
@@ -16,19 +17,19 @@ Copy and paste this template into your [new issue](https://github.com/tdwg/dwc/i
 ```
 ## New term
 
-* Submitter: 
-* Proponents (at least two independent parties who need this term): 
-* Justification (why is this term necessary?): 
+* Submitter:
+* Proponents (at least two independent parties who need this term):
+* Justification (why is this term necessary?):
 
 Proposed definition of the new term:
 
-* Term name (in lowerCamelCase): 
-* Class (e.g. Location, Taxon): 
-* Definition of the term: 
-* Comment (examples, recommendations regarding content, etc.): 
-* Refines (identifier of the broader term this term refines, if applicable): 
-* Replaces (identifier of the existing term that would be deprecated and replaced by this term, if applicable): 
-* ABCD 2.06 (XPATH of the equivalent term in ABCD, if applicable): 
+* Term name (in lowerCamelCase):
+* Class (e.g. Location, Taxon):
+* Definition of the term:
+* Comment (examples, recommendations regarding content, etc.):
+* Refines (identifier of the broader term this term refines, if applicable):
+* Replaces (identifier of the existing term that would be deprecated and replaced by this term, if applicable):
+* ABCD 2.06 (XPATH of the equivalent term in ABCD, if applicable):
 ```
 
 ### Change term
@@ -38,18 +39,18 @@ Copy and paste this template into your [new issue](https://github.com/tdwg/dwc/i
 ```
 ## Change term
 
-* Term identifier (URL of the term to change): 
-* Submitter: 
-* Justification (why is this change necessary?): 
+* Term identifier (URL of the term to change):
+* Submitter:
+* Justification (why is this change necessary?):
 
 I suggest the following changes (leave blank whatever would not change):
 
-* Term name (in lowerCamelCase): 
-* Definition of the term: 
-* Comment (examples): 
-* Refines (identifier of the broader term this term refines, if applicable): 
-* Replaces (identifier of the existing term that would be deprecated and replaced by this term, if applicable): 
-* ABCD 2.06 (XPATH of the equivalent term in ABCD, if applicable): 
+* Term name (in lowerCamelCase):
+* Definition of the term:
+* Comment (examples):
+* Refines (identifier of the broader term this term refines, if applicable):
+* Replaces (identifier of the existing term that would be deprecated and replaced by this term, if applicable):
+* ABCD 2.06 (XPATH of the equivalent term in ABCD, if applicable):
 ```
 
 ### Change documentation
@@ -59,9 +60,9 @@ Copy and paste this template into your [new issue](https://github.com/tdwg/dwc/i
 ```
 ## Change documentation
 
-* Documentation reference (URL): 
-* Submitter: 
-* Justification (why is this change necessary?): 
+* Documentation reference (URL):
+* Submitter:
+* Justification (why is this change necessary?):
 
 I suggest the following changes:
 

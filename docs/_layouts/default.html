@@ -5,8 +5,22 @@
     <body data-spy="scroll" data-target="#theme-sidebar-nav">
         {% include navbar.html %}
         
-        <main class="container-fluid">
-        {{ content }}
+        <main class="{% if page.container == 'fixed' %}container{% else %}container-fluid{% endif %}">
+            <div class="row">
+                <div class="col-12 col-md-3 order-md-2 theme-sidebar-primary">
+                    <button class="btn d-md-none w-100" type="button" data-toggle="collapse" data-target="#theme-sidebar-nav">
+                        <i class="fa fa-bars fa-lg"></i>
+                    </button>
+
+                    <nav class="collapse" id="theme-sidebar-nav">
+                        {% include toc.html html=content sanitize=true h_min=2 class="nav.flex-column" item_class="nav-item" %}
+                    </nav>
+                </div>
+
+                <div class="col-12 col-md-9 order-md-1">
+                    {{ content }}
+                </div>
+            </div>
         </main>
         
         {% include footer.html %}
