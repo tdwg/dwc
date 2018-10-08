@@ -31,7 +31,7 @@ Creator
 : Darwin Core Task Group
 
 Bibliographic citation
-: Darwin Core Task Group. 2009. Darwin Core XML guide. Biodiversity Information Standards (TDWG). http://rs.tdwg.org/dwc/terms/guides/xml/
+: Darwin Core Task Group. 2009. Darwin Core XML guide. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/terms/guides/xml/>
 
 ## 1 Introduction
 
