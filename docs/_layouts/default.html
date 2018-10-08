@@ -5,7 +5,7 @@
     <body data-spy="scroll" data-target="#theme-sidebar-nav">
         {% include navbar.html %}
         
-        <main class="container">
+        <main class="{% if page.container == 'fixed' %}container{% else %}container-fluid{% endif %}">
             <div class="row">
                 <div class="col-12 col-md-3 order-md-2 theme-sidebar-primary">
                     <button class="btn d-md-none w-100" type="button" data-toggle="collapse" data-target="#theme-sidebar-nav">
