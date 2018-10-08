@@ -9,7 +9,7 @@ container: fixed
 ## Getting started
 
 * [Darwin Core quick reference guide](terms/)
-* Usage guides: on how to use Darwin Core as [Simple Darwin Core](simple/), [text](text/), [RDF](rdf/) or [XML](xml/)
+* Usage guides: on how to use Darwin Core as [Simple Darwin Core](simple/), [text](text/), [XML](xml/) or [RDF](rdf/)]
 * [Darwin Core GitHub repository](https://github.com/tdwg/dwc): where Darwin Core is maintained
 * [Normative document](https://github.com/tdwg/dwc/blob/master/vocabulary/term_versions.csv): a CSV file with the full version history of Darwin Core terms
 * [Distribution files](https://github.com/tdwg/dwc/tree/master/dist): convenient files to start using Darwin Core
