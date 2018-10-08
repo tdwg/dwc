@@ -168,7 +168,7 @@ The following example illustrates the use of extensions. In this example there a
 
 ![Extension](extension.png)
 
-```XML
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <archive xmlns="http://rs.tdwg.org/dwc/text/"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -218,7 +218,7 @@ The following example illustrates the use of extensions. In this example there a
 
 It is very easy to produce fielded text using the `SELECT INTO` outfile command from MySQL. The encoding of the resulting file will depend on the server variables and collations used, and might need to be modified before the operation is done. Note that MySQL will export `NULL` values as `\N` by default. Use the `IFNULL()` function as shown in the following example to avoid this.
 
-```SQL
+```sql
 SELECT
     IFNULL(id, ''), IFNULL(scientific_name, ''), IFNULL(count,'')
         INTO outfile '/tmp/dwc.txt'
