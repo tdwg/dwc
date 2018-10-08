@@ -201,21 +201,21 @@ To facilitate achieving the clarity that RDF makes possible, this guide provides
 
 vocabulary name | namespace abbreviation | full prefix
 --- | --- | ---
-Resource Description Framework | rdf: | http://www.w3.org/1999/02/22-rdf-syntax-ns#
-RDF Schema | rdfs: | http://www.w3.org/2000/01/rdf-schema#
-XML Schema | xsd: | http://www.w3.org/2001/XMLSchema#
-Web Ontology Language | owl: | http://www.w3.org/2002/07/owl#
-Darwin Core terms (string literal objects) | dwc: | http://rs.tdwg.org/dwc/terms/
-Darwin Core terms (IRI reference objects) | dwciri: | http://rs.tdwg.org/dwc/iri/
-Dublin Core terms | dcterms: | http://purl.org/dc/terms/
-Dublin Core legacy terms | dc: | http://purl.org/dc/elements/1.1/
-Dublin Core type vocabulary | dcmitype: | http://purl.org/dc/dcmitype/
-FOAF vocabulary | foaf: | http://xmlns.com/foaf/0.1/
-DBpedia resources | dbres: | http://dbpedia.org/resource/
-GeoNames Ontology | gn: | http://www.geonames.org/ontology#
-GeoSciML Geologic Timescale model Ontology | gsml: | http://resource.geosciml.org/ontology/timescale/gts-30#
-Virtual International Authority File | viaf: | http://viaf.org/viaf/
-Extensible Metadata Platform Rights Management vocabulary | xmpRights: | http://ns.adobe.com/xap/1.0/rights/
+Resource Description Framework | rdf: | <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+RDF Schema | rdfs: | <http://www.w3.org/2000/01/rdf-schema#>
+XML Schema | xsd: | <http://www.w3.org/2001/XMLSchema#>
+Web Ontology Language | owl: | <http://www.w3.org/2002/07/owl#>
+Darwin Core terms (string literal objects) | dwc: | <http://rs.tdwg.org/dwc/terms/>
+Darwin Core terms (IRI reference objects) | dwciri: | <http://rs.tdwg.org/dwc/iri/>
+Dublin Core terms | dcterms: | <http://purl.org/dc/terms/>
+Dublin Core legacy terms | dc: | <http://purl.org/dc/elements/1.1/>
+Dublin Core type vocabulary | dcmitype: | <http://purl.org/dc/dcmitype/>
+FOAF vocabulary | foaf: | <http://xmlns.com/foaf/0.1/>
+DBpedia resources | dbres: | <http://dbpedia.org/resource/>
+GeoNames Ontology | gn: | <http://www.geonames.org/ontology#>
+GeoSciML Geologic Timescale model Ontology | gsml: | <http://resource.geosciml.org/ontology/timescale/gts-30#>
+Virtual International Authority File | viaf: | <http://viaf.org/viaf/>
+Extensible Metadata Platform Rights Management vocabulary | xmpRights: | <http://ns.adobe.com/xap/1.0/rights/>
 
 For brevity, the examples do not include namespace declarations, nor an `rdf:RDF` container element. If a user wishes to test or validate an example, insert it into the container element defined in [Section 2.1.2](#212-generating-graphical-diagrams-and-triple-tables-for-the-examples-non-normative).
 
