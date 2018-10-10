@@ -301,7 +301,7 @@ def main():
     """Building up the quick reference html and derivatives"""
 
     config_terms_file = "./config/terms.csv"
-    term_versions_file = "../standard/vocabularies/term_versions.csv"
+    term_versions_file = "../vocabulary/term_versions.csv"
 
     print("Running build process:")
     my_dwc = DwcDigester(term_versions_file, config_terms_file)
