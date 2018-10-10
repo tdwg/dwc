@@ -2,10 +2,10 @@
 container: fixed
 ---
 
-# Darwin Core Namespace Policy
+# Darwin Core namespace policy
 
 Title
-: Darwin Core Namespace Policy
+: Darwin Core namespace policy
 
 Date version issued
 : 2018-08-26
