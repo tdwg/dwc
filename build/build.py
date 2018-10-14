@@ -55,14 +55,14 @@ class DwcBuildReader():
 class DwcDigester(object):
 
     def __init__(self, term_versions):
-        """digest the term document of Darwin Core to support automatic
+        """Digest the term document of Darwin Core to support automatic
         generation of derivatives
 
         Parameters
         -----------
         term_versions : str
-            either a relative path and filename of the normative Dwc document or a URL link to the
-            raw Github version of the file
+            Either a relative path and filename of the normative Dwc document
+            or a URL link to the raw Github version of the file
 
         Notes
         -----
@@ -79,36 +79,51 @@ class DwcDigester(object):
         self.template_data = self.process_terms()
 
     def versions(self):
-        """iterator providing the terms as represented in the normative term versions file"""
+        """Iterator providing the terms as represented in the normative term
+        versions file
+        """
         with DwcBuildReader(self.term_versions) as versions:
             for vterm in csv.DictReader(io.TextIOWrapper(versions), delimiter=','):
                 if vterm["status"] == "recommended":
                     yield vterm
 
     def _store_versions(self):
-        """collect all the versions data in a dictionary as the term_versions_data attribute"""
+        """Collect all the versions data in a dictionary as the
+        term_versions_data attribute
+        """
         for term in self.versions():
             self.term_versions_data[term["term_iri"]] = term
 
     @property
     def _version_terms(self):
-        """get an overview of the terms in the term_versions file"""
+        """Get an overview of the terms in the term_versions file
+        """
         return set(self.term_versions_data.keys())
 
     def _select_versions_term(self, term_iri):
-        """select a specific term of the versions data, using term_iri match"""
+        """Select a specific term of the versions data, using term_iri match
+        """
         return self.term_versions_data[term_iri]
 
     @staticmethod
     def split_iri(term_iri):
-        """split an iri field into the namespace url and the local name of the term"""
+        """Split an iri field into the namespace url and the local name
+        of the term
+        """
         prog = re.compile("(.*/)([^/]*$)")
         namespace, local_name = prog.findall(term_iri)[0]
         return namespace, local_name
 
     @staticmethod
     def resolve_namespace_abbrev(namespace):
-        """Using the NAMESPACE constant, get the namespace abbreviation by providing the namespace link"""
+        """Using the NAMESPACE constant, get the namespace abbreviation by
+        providing the namespace link
+
+        Parameters
+        -----------
+        namespace : str
+            valid key of the NAMESPACES variable
+        """
         if namespace not in NAMESPACES.keys():
             raise DwcNamespaceError("The namespace url is currently not supported in NAMESPACES")
         return NAMESPACES[namespace]
@@ -138,13 +153,15 @@ class DwcDigester(object):
 
     @staticmethod
     def convert_code(text_with_backticks):
-        """takes all back-quoted sections in a text field and converts it to the html tagged version of code blocks <code>...</code>
+        """Takes all back-quoted sections in a text field and converts it to
+        the html tagged version of code blocks <code>...</code>
         """
         return re.sub(r'`([^`]*)`', r'<code>\1</code>', text_with_backticks)
 
     @staticmethod
     def convert_link(text_with_urls):
-        """takes all links in a text field and converts it to the html tagged version of the link
+        """Takes all links in a text field and converts it to the html tagged
+        version of the link
         """
         def _handle_matched(inputstring):
             """quick hack version of url handling on the current prime versions data"""
@@ -211,7 +228,8 @@ class DwcDigester(object):
 
     def create_html(self, html_template="../docs/_layouts/terms.tmpl",
                     html_output="../docs/terms/index.md"):
-        """build html with the processed term info, by filling in the tmpl-template
+        """build html with the processed term info, by filling in the
+        tmpl-template
 
         Parameters
         -----------
@@ -234,7 +252,9 @@ class DwcDigester(object):
         index_page.close()
 
     def simple_dwc_terms(self):
-        """only extract those terms that are simple dwc, defined as `simple` in the flags column of the config file of terms"""
+        """Only extract those terms that are simple dwc, defined as `simple`
+        in the flags column of the config file of terms
+        """
         properties = []
         for term in self.versions():
             term_data = self.get_term_definition(term['term_iri'])
@@ -244,7 +264,7 @@ class DwcDigester(object):
         return properties
 
     def create_dwc_list(self, file_output="../dist/simple_dwc_vertical.csv"):
-        """build a list of simple dwc terms and write it to file
+        """Build a list of simple dwc terms and write it to file
 
         Parameters
         -----------
@@ -256,7 +276,7 @@ class DwcDigester(object):
                 dwc_list_file.write(term + "\n")
 
     def create_dwc_header(self, file_output="../dist/simple_dwc_horizontal.csv"):
-        """build a header of simple dwc terms and write it to file
+        """Build a header of simple dwc terms and write it to file
 
         Parameters
         -----------
