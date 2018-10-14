@@ -1,6 +1,6 @@
 The build folder contains a python script to rebuild the terms index page.
 
-It will use the `vocabulary/term_versions.csv` and the `./config/terms_config.csv` to populate the html-template file (`./config/index.tmpl`)
+It will use the `vocabulary/term_versions.csv` to populate the html-template (`./config/index.tmpl`) to an `.md` file.
 
 ## Run the build script
 Install the required libraries for this script with pip once:
