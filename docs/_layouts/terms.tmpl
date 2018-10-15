@@ -30,7 +30,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
 {%endif %}
 
 {% for term in class_group.terms %}
-<a id="{{ term.namespace}}:{{ term.label }}" class="anchor"></a>
+<a id="{{ term.namespace}}:{{ term.label }}" class="anchor"></a><a id="{{ term.label }}" class="anchor"></a>
 <table class="table table-sm border mb-3">
     <tbody>
         <tr class="table-secondary"><th colspan="2">{{ term.label }}<span class="badge badge-secondary float-right">Property</span></th></tr>
