@@ -1,16 +1,25 @@
-The build folder contains a python script to rebuild the terms index page.
+# Build script
 
-It will use the `vocabulary/term_versions.csv` to populate the html-template (`./config/index.tmpl`) to an `.md` file.
+The build script `build.py` uses as input:
+
+* [vocabulary/term_versions.csv](../vocabulary/term_versions.csv): the list of terms
+* [docs/_layouts/terms.tmpl](../docs/_layouts/terms.tmpl): a Jinja2 template for the quick reference guide
+
+To create:
+
+* The quick reference guide as a Markdown file at [docs/terms/index.md](../docs/terms/index.md). The guide is build as Markdown (with a lot of included html) rather than html, so it can incorporated by Jekyll in the Darwin Core website (including a header, footer and table of content).
+* Two simple Darwin Core CSV files in [dist/](../dist/)
 
 ## Run the build script
-Install the required libraries for this script with pip once:
 
-```
-pip install -r requirements.txt
-```
+1. Install the required libraries (once):
 
-To run the script, run the build script from command line:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-```
-python build.py
-```
+2. Run the script from the command line:
+
+    ```bash
+    python build.py
+    ```
