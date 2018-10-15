@@ -26,12 +26,34 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     
     <a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:references">references</a>
     
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:institutionID">institutionID</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:collectionID">collectionID</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:datasetID">datasetID</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:institutionCode">institutionCode</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:collectionCode">collectionCode</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:datasetName">datasetName</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:ownerInstitutionCode">ownerInstitutionCode</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:basisOfRecord">basisOfRecord</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:informationWithheld">informationWithheld</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:dataGeneralizations">dataGeneralizations</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:dynamicProperties">dynamicProperties</a>
+    
 </div>
 
 
 
 
-<a id="dcterms:type" class="anchor"></a>
+<a id="dcterms:type" class="anchor"></a><a id="type" class="anchor"></a>
 <table class="table table-sm border mb-3">
     <tbody>
         <tr class="table-secondary"><th colspan="2">type<span class="badge badge-secondary float-right">Property</span></th></tr>
@@ -41,7 +63,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     </tbody>
 </table>
 
-<a id="dcterms:modified" class="anchor"></a>
+<a id="dcterms:modified" class="anchor"></a><a id="modified" class="anchor"></a>
 <table class="table table-sm border mb-3">
     <tbody>
         <tr class="table-secondary"><th colspan="2">modified<span class="badge badge-secondary float-right">Property</span></th></tr>
@@ -51,7 +73,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     </tbody>
 </table>
 
-<a id="dcterms:language" class="anchor"></a>
+<a id="dcterms:language" class="anchor"></a><a id="language" class="anchor"></a>
 <table class="table table-sm border mb-3">
     <tbody>
         <tr class="table-secondary"><th colspan="2">language<span class="badge badge-secondary float-right">Property</span></th></tr>
@@ -61,7 +83,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     </tbody>
 </table>
 
-<a id="dcterms:license" class="anchor"></a>
+<a id="dcterms:license" class="anchor"></a><a id="license" class="anchor"></a>
 <table class="table table-sm border mb-3">
     <tbody>
         <tr class="table-secondary"><th colspan="2">license<span class="badge badge-secondary float-right">Property</span></th></tr>
@@ -71,7 +93,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     </tbody>
 </table>
 
-<a id="dcterms:rightsHolder" class="anchor"></a>
+<a id="dcterms:rightsHolder" class="anchor"></a><a id="rightsHolder" class="anchor"></a>
 <table class="table table-sm border mb-3">
     <tbody>
         <tr class="table-secondary"><th colspan="2">rightsHolder<span class="badge badge-secondary float-right">Property</span></th></tr>
@@ -81,7 +103,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     </tbody>
 </table>
 
-<a id="dcterms:accessRights" class="anchor"></a>
+<a id="dcterms:accessRights" class="anchor"></a><a id="accessRights" class="anchor"></a>
 <table class="table table-sm border mb-3">
     <tbody>
         <tr class="table-secondary"><th colspan="2">accessRights<span class="badge badge-secondary float-right">Property</span></th></tr>
@@ -91,7 +113,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     </tbody>
 </table>
 
-<a id="dcterms:bibliographicCitation" class="anchor"></a>
+<a id="dcterms:bibliographicCitation" class="anchor"></a><a id="bibliographicCitation" class="anchor"></a>
 <table class="table table-sm border mb-3">
     <tbody>
         <tr class="table-secondary"><th colspan="2">bibliographicCitation<span class="badge badge-secondary float-right">Property</span></th></tr>
@@ -101,12 +123,884 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     </tbody>
 </table>
 
-<a id="dcterms:references" class="anchor"></a>
+<a id="dcterms:references" class="anchor"></a><a id="references" class="anchor"></a>
 <table class="table table-sm border mb-3">
     <tbody>
         <tr class="table-secondary"><th colspan="2">references<span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="label">Identifier</td><td><a href="http://purl.org/dc/terms/references">http://purl.org/dc/terms/references</a></td></tr>
         <tr><td class="label">Definition</td><td>A related resource that is referenced, cited, or otherwise pointed to by the described resource.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:institutionID" class="anchor"></a><a id="institutionID" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">institutionID<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/institutionID">http://rs.tdwg.org/dwc/terms/institutionID</a></td></tr>
+        <tr><td class="label">Definition</td><td>An identifier for the institution having custody of the object(s) or information referred to in the record.</td></tr>
+        <tr><td class="label">Comments</td><td>For physical specimens, the recommended best practice is to use an identifier from a collections registry such as the Global Registry of Biodiversity Repositories (<a href="http://grbio.org/">http://grbio.org/</a>).</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:collectionID" class="anchor"></a><a id="collectionID" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">collectionID<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/collectionID">http://rs.tdwg.org/dwc/terms/collectionID</a></td></tr>
+        <tr><td class="label">Definition</td><td>An identifier for the collection or dataset from which the record was derived.</td></tr>
+        <tr><td class="label">Comments</td><td>For physical specimens, the recommended best practice is to use an identifier from a collections registry such as the Global Registry of Biodiversity Repositories (<a href="http://grbio.org/">http://grbio.org/</a>).</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:datasetID" class="anchor"></a><a id="datasetID" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">datasetID<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/datasetID">http://rs.tdwg.org/dwc/terms/datasetID</a></td></tr>
+        <tr><td class="label">Definition</td><td>An identifier for the set of data. May be a global unique identifier or an identifier specific to a collection or institution.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:institutionCode" class="anchor"></a><a id="institutionCode" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">institutionCode<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/institutionCode">http://rs.tdwg.org/dwc/terms/institutionCode</a></td></tr>
+        <tr><td class="label">Definition</td><td>The name (or acronym) in use by the institution having custody of the object(s) or information referred to in the record.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:collectionCode" class="anchor"></a><a id="collectionCode" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">collectionCode<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/collectionCode">http://rs.tdwg.org/dwc/terms/collectionCode</a></td></tr>
+        <tr><td class="label">Definition</td><td>The name, acronym, coden, or initialism identifying the collection or data set from which the record was derived.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:datasetName" class="anchor"></a><a id="datasetName" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">datasetName<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/datasetName">http://rs.tdwg.org/dwc/terms/datasetName</a></td></tr>
+        <tr><td class="label">Definition</td><td>The name identifying the data set from which the record was derived.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:ownerInstitutionCode" class="anchor"></a><a id="ownerInstitutionCode" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">ownerInstitutionCode<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/ownerInstitutionCode">http://rs.tdwg.org/dwc/terms/ownerInstitutionCode</a></td></tr>
+        <tr><td class="label">Definition</td><td>The name (or acronym) in use by the institution having ownership of the object(s) or information referred to in the record.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:basisOfRecord" class="anchor"></a><a id="basisOfRecord" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">basisOfRecord<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/basisOfRecord">http://rs.tdwg.org/dwc/terms/basisOfRecord</a></td></tr>
+        <tr><td class="label">Definition</td><td>The specific nature of the data record.</td></tr>
+        <tr><td class="label">Comments</td><td>Recommended best practice is to use the standard label of one of the Darwin Core classes.</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:informationWithheld" class="anchor"></a><a id="informationWithheld" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">informationWithheld<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/informationWithheld">http://rs.tdwg.org/dwc/terms/informationWithheld</a></td></tr>
+        <tr><td class="label">Definition</td><td>Additional information that exists, but that has not been shared in the given record.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:dataGeneralizations" class="anchor"></a><a id="dataGeneralizations" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">dataGeneralizations<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/dataGeneralizations">http://rs.tdwg.org/dwc/terms/dataGeneralizations</a></td></tr>
+        <tr><td class="label">Definition</td><td>Actions taken to make the shared data less specific or complete than in its original form. Suggests that alternative data of higher quality may be available on request.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:dynamicProperties" class="anchor"></a><a id="dynamicProperties" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">dynamicProperties<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/dynamicProperties">http://rs.tdwg.org/dwc/terms/dynamicProperties</a></td></tr>
+        <tr><td class="label">Definition</td><td>A list of additional measurements, facts, characteristics, or assertions about the record. Meant to provide a mechanism for structured content.</td></tr>
+        <tr><td class="label">Comments</td><td>Recommended best practice is to use a key:value encoding schema for a data interchange format such as JSON.</td></tr>
+    </tbody>
+</table>
+
+
+
+
+## Occurrence
+    
+<div class="my-4">
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:occurrenceID">occurrenceID</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:catalogNumber">catalogNumber</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:recordNumber">recordNumber</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:recordedBy">recordedBy</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:individualCount">individualCount</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:organismQuantity">organismQuantity</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:organismQuantityType">organismQuantityType</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:sex">sex</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:lifeStage">lifeStage</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:reproductiveCondition">reproductiveCondition</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:behavior">behavior</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:establishmentMeans">establishmentMeans</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:occurrenceStatus">occurrenceStatus</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:preparations">preparations</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:disposition">disposition</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:associatedMedia">associatedMedia</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:associatedReferences">associatedReferences</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:associatedSequences">associatedSequences</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:associatedTaxa">associatedTaxa</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:otherCatalogNumbers">otherCatalogNumbers</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:occurrenceRemarks">occurrenceRemarks</a>
+    
+</div>
+
+
+
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-primary"><th colspan="2">Occurrence<span class="badge badge-primary float-right">Class</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/Occurrence">http://rs.tdwg.org/dwc/terms/Occurrence</a></td></tr>
+        <tr><td class="label">Definition</td><td>An existence of an Organism (sensu <a href="http://rs.tdwg.org/dwc/terms/Organism">http://rs.tdwg.org/dwc/terms/Organism</a>) at a particular place at a particular time.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+
+
+<a id="dwc:occurrenceID" class="anchor"></a><a id="occurrenceID" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">occurrenceID<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/occurrenceID">http://rs.tdwg.org/dwc/terms/occurrenceID</a></td></tr>
+        <tr><td class="label">Definition</td><td>An identifier for the Occurrence (as opposed to a particular digital record of the occurrence). In the absence of a persistent global unique identifier, construct one from a combination of identifiers in the record that will most closely make the occurrenceID globally unique.</td></tr>
+        <tr><td class="label">Comments</td><td>Recommended best practice is to use a persistent, globally unique identifier.</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:catalogNumber" class="anchor"></a><a id="catalogNumber" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">catalogNumber<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/catalogNumber">http://rs.tdwg.org/dwc/terms/catalogNumber</a></td></tr>
+        <tr><td class="label">Definition</td><td>An identifier (preferably unique) for the record within the data set or collection.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:recordNumber" class="anchor"></a><a id="recordNumber" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">recordNumber<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/recordNumber">http://rs.tdwg.org/dwc/terms/recordNumber</a></td></tr>
+        <tr><td class="label">Definition</td><td>An identifier given to the Occurrence at the time it was recorded. Often serves as a link between field notes and an Occurrence record, such as a specimen collector's number.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:recordedBy" class="anchor"></a><a id="recordedBy" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">recordedBy<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/recordedBy">http://rs.tdwg.org/dwc/terms/recordedBy</a></td></tr>
+        <tr><td class="label">Definition</td><td>A list (concatenated and separated) of names of people, groups, or organizations responsible for recording the original Occurrence. The primary collector or observer, especially one who applies a personal identifier (recordNumber), should be listed first.</td></tr>
+        <tr><td class="label">Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:individualCount" class="anchor"></a><a id="individualCount" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">individualCount<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/individualCount">http://rs.tdwg.org/dwc/terms/individualCount</a></td></tr>
+        <tr><td class="label">Definition</td><td>The number of individuals represented present at the time of the Occurrence.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:organismQuantity" class="anchor"></a><a id="organismQuantity" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">organismQuantity<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/organismQuantity">http://rs.tdwg.org/dwc/terms/organismQuantity</a></td></tr>
+        <tr><td class="label">Definition</td><td>A number or enumeration value for the quantity of organisms.</td></tr>
+        <tr><td class="label">Comments</td><td>A dwc:organismQuantity must have a corresponding dwc:organismQuantityType.</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:organismQuantityType" class="anchor"></a><a id="organismQuantityType" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">organismQuantityType<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/organismQuantityType">http://rs.tdwg.org/dwc/terms/organismQuantityType</a></td></tr>
+        <tr><td class="label">Definition</td><td>The type of quantification system used for the quantity of organisms.</td></tr>
+        <tr><td class="label">Comments</td><td>A dwc:organismQuantityType must have a corresponding dwc:organismQuantity.</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:sex" class="anchor"></a><a id="sex" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">sex<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/sex">http://rs.tdwg.org/dwc/terms/sex</a></td></tr>
+        <tr><td class="label">Definition</td><td>The sex of the biological individual(s) represented in the Occurrence.</td></tr>
+        <tr><td class="label">Comments</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:lifeStage" class="anchor"></a><a id="lifeStage" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">lifeStage<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/lifeStage">http://rs.tdwg.org/dwc/terms/lifeStage</a></td></tr>
+        <tr><td class="label">Definition</td><td>The age class or life stage of the biological individual(s) at the time the Occurrence was recorded.</td></tr>
+        <tr><td class="label">Comments</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:reproductiveCondition" class="anchor"></a><a id="reproductiveCondition" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">reproductiveCondition<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/reproductiveCondition">http://rs.tdwg.org/dwc/terms/reproductiveCondition</a></td></tr>
+        <tr><td class="label">Definition</td><td>The reproductive condition of the biological individual(s) represented in the Occurrence.</td></tr>
+        <tr><td class="label">Comments</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:behavior" class="anchor"></a><a id="behavior" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">behavior<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/behavior">http://rs.tdwg.org/dwc/terms/behavior</a></td></tr>
+        <tr><td class="label">Definition</td><td>The behavior shown by the subject at the time the Occurrence was recorded.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:establishmentMeans" class="anchor"></a><a id="establishmentMeans" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">establishmentMeans<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/establishmentMeans">http://rs.tdwg.org/dwc/terms/establishmentMeans</a></td></tr>
+        <tr><td class="label">Definition</td><td>The process by which the biological individual(s) represented in the Occurrence became established at the location.</td></tr>
+        <tr><td class="label">Comments</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:occurrenceStatus" class="anchor"></a><a id="occurrenceStatus" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">occurrenceStatus<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/occurrenceStatus">http://rs.tdwg.org/dwc/terms/occurrenceStatus</a></td></tr>
+        <tr><td class="label">Definition</td><td>A statement about the presence or absence of a Taxon at a Location.</td></tr>
+        <tr><td class="label">Comments</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:preparations" class="anchor"></a><a id="preparations" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">preparations<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/preparations">http://rs.tdwg.org/dwc/terms/preparations</a></td></tr>
+        <tr><td class="label">Definition</td><td>A list (concatenated and separated) of preparations and preservation methods for a specimen.</td></tr>
+        <tr><td class="label">Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:disposition" class="anchor"></a><a id="disposition" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">disposition<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/disposition">http://rs.tdwg.org/dwc/terms/disposition</a></td></tr>
+        <tr><td class="label">Definition</td><td>The current state of a specimen with respect to the collection identified in collectionCode or collectionID.</td></tr>
+        <tr><td class="label">Comments</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:associatedMedia" class="anchor"></a><a id="associatedMedia" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">associatedMedia<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/associatedMedia">http://rs.tdwg.org/dwc/terms/associatedMedia</a></td></tr>
+        <tr><td class="label">Definition</td><td>A list (concatenated and separated) of identifiers (publication, global unique identifier, URI) of media associated with the Occurrence.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:associatedReferences" class="anchor"></a><a id="associatedReferences" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">associatedReferences<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/associatedReferences">http://rs.tdwg.org/dwc/terms/associatedReferences</a></td></tr>
+        <tr><td class="label">Definition</td><td>A list (concatenated and separated) of identifiers (publication, bibliographic reference, global unique identifier, URI) of literature associated with the Occurrence.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:associatedSequences" class="anchor"></a><a id="associatedSequences" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">associatedSequences<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/associatedSequences">http://rs.tdwg.org/dwc/terms/associatedSequences</a></td></tr>
+        <tr><td class="label">Definition</td><td>A list (concatenated and separated) of identifiers (publication, global unique identifier, URI) of genetic sequence information associated with the Occurrence.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:associatedTaxa" class="anchor"></a><a id="associatedTaxa" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">associatedTaxa<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/associatedTaxa">http://rs.tdwg.org/dwc/terms/associatedTaxa</a></td></tr>
+        <tr><td class="label">Definition</td><td>A list (concatenated and separated) of identifiers or names of taxa and their associations with the Occurrence.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:otherCatalogNumbers" class="anchor"></a><a id="otherCatalogNumbers" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">otherCatalogNumbers<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/otherCatalogNumbers">http://rs.tdwg.org/dwc/terms/otherCatalogNumbers</a></td></tr>
+        <tr><td class="label">Definition</td><td>A list (concatenated and separated) of previous or alternate fully qualified catalog numbers or other human-used identifiers for the same Occurrence, whether in the current or any other data set or collection.</td></tr>
+        <tr><td class="label">Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:occurrenceRemarks" class="anchor"></a><a id="occurrenceRemarks" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">occurrenceRemarks<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/occurrenceRemarks">http://rs.tdwg.org/dwc/terms/occurrenceRemarks</a></td></tr>
+        <tr><td class="label">Definition</td><td>Comments or notes about the Occurrence.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+
+
+
+## Organism
+    
+<div class="my-4">
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:organismID">organismID</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:organismName">organismName</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:organismScope">organismScope</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:associatedOccurrences">associatedOccurrences</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:associatedOrganisms">associatedOrganisms</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:previousIdentifications">previousIdentifications</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:organismRemarks">organismRemarks</a>
+    
+</div>
+
+
+
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-primary"><th colspan="2">Organism<span class="badge badge-primary float-right">Class</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/Organism">http://rs.tdwg.org/dwc/terms/Organism</a></td></tr>
+        <tr><td class="label">Definition</td><td>A particular organism or defined group of organisms considered to be taxonomically homogeneous.</td></tr>
+        <tr><td class="label">Comments</td><td>Instances of the dwc:Organism class are intended to facilitate linking one or more dwc:Identification instances to one or more dwc:Occurrence instances. Therefore, things that are typically assigned scientific names (such as viruses, hybrids, and lichens) and aggregates whose occurrences are typically recorded (such as packs, clones, and colonies) are included in the scope of this class.</td></tr>
+    </tbody>
+</table>
+
+
+
+<a id="dwc:organismID" class="anchor"></a><a id="organismID" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">organismID<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/organismID">http://rs.tdwg.org/dwc/terms/organismID</a></td></tr>
+        <tr><td class="label">Definition</td><td>An identifier for the Organism instance (as opposed to a particular digital record of the Organism). May be a globally unique identifier or an identifier specific to the data set.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:organismName" class="anchor"></a><a id="organismName" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">organismName<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/organismName">http://rs.tdwg.org/dwc/terms/organismName</a></td></tr>
+        <tr><td class="label">Definition</td><td>A textual name or label assigned to an Organism instance.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:organismScope" class="anchor"></a><a id="organismScope" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">organismScope<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/organismScope">http://rs.tdwg.org/dwc/terms/organismScope</a></td></tr>
+        <tr><td class="label">Definition</td><td>A description of the kind of Organism instance. Can be used to indicate whether the Organism instance represents a discrete organism or if it represents a particular type of aggregation.</td></tr>
+        <tr><td class="label">Comments</td><td>Recommended best practice is to use a controlled vocabulary. This term is not intended to be used to specify a type of taxon. To describe the kind of dwc:Organism using a URI object in RDF, use rdf:type (<a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</a>) instead.</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:associatedOccurrences" class="anchor"></a><a id="associatedOccurrences" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">associatedOccurrences<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/associatedOccurrences">http://rs.tdwg.org/dwc/terms/associatedOccurrences</a></td></tr>
+        <tr><td class="label">Definition</td><td>A list (concatenated and separated) of identifiers of other Occurrence records and their associations to this Occurrence.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:associatedOrganisms" class="anchor"></a><a id="associatedOrganisms" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">associatedOrganisms<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/associatedOrganisms">http://rs.tdwg.org/dwc/terms/associatedOrganisms</a></td></tr>
+        <tr><td class="label">Definition</td><td>A list (concatenated and separated) of identifiers of other Organisms and their associations to this Organism.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:previousIdentifications" class="anchor"></a><a id="previousIdentifications" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">previousIdentifications<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/previousIdentifications">http://rs.tdwg.org/dwc/terms/previousIdentifications</a></td></tr>
+        <tr><td class="label">Definition</td><td>A list (concatenated and separated) of previous assignments of names to the Organism.</td></tr>
+        <tr><td class="label">Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:organismRemarks" class="anchor"></a><a id="organismRemarks" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">organismRemarks<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/organismRemarks">http://rs.tdwg.org/dwc/terms/organismRemarks</a></td></tr>
+        <tr><td class="label">Definition</td><td>Comments or notes about the Organism instance.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+
+
+
+## MaterialSample
+    
+<div class="my-4">
+    
+</div>
+
+
+
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-primary"><th colspan="2">MaterialSample<span class="badge badge-primary float-right">Class</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/MaterialSample">http://rs.tdwg.org/dwc/terms/MaterialSample</a></td></tr>
+        <tr><td class="label">Definition</td><td>A physical result of a sampling (or subsampling) event. In biological collections, the material sample is typically collected, and either preserved or destructively processed.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+
+
+
+
+
+## LivingSpecimen
+    
+<div class="my-4">
+    
+</div>
+
+
+
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-primary"><th colspan="2">LivingSpecimen<span class="badge badge-primary float-right">Class</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/LivingSpecimen">http://rs.tdwg.org/dwc/terms/LivingSpecimen</a></td></tr>
+        <tr><td class="label">Definition</td><td>A specimen that is alive.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+
+
+
+
+
+## PreservedSpecimen
+    
+<div class="my-4">
+    
+</div>
+
+
+
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-primary"><th colspan="2">PreservedSpecimen<span class="badge badge-primary float-right">Class</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/PreservedSpecimen">http://rs.tdwg.org/dwc/terms/PreservedSpecimen</a></td></tr>
+        <tr><td class="label">Definition</td><td>A specimen that has been preserved.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+
+
+
+
+
+## FossilSpecimen
+    
+<div class="my-4">
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:materialSampleID">materialSampleID</a>
+    
+</div>
+
+
+
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-primary"><th colspan="2">FossilSpecimen<span class="badge badge-primary float-right">Class</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/FossilSpecimen">http://rs.tdwg.org/dwc/terms/FossilSpecimen</a></td></tr>
+        <tr><td class="label">Definition</td><td>A preserved specimen that is a fossil.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+
+
+<a id="dwc:materialSampleID" class="anchor"></a><a id="materialSampleID" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">materialSampleID<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/materialSampleID">http://rs.tdwg.org/dwc/terms/materialSampleID</a></td></tr>
+        <tr><td class="label">Definition</td><td>An identifier for the MaterialSample (as opposed to a particular digital record of the material sample). In the absence of a persistent global unique identifier, construct one from a combination of identifiers in the record that will most closely make the materialSampleID globally unique.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+
+
+
+## Event
+    
+<div class="my-4">
+    
+</div>
+
+
+
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-primary"><th colspan="2">Event<span class="badge badge-primary float-right">Class</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/Event">http://rs.tdwg.org/dwc/terms/Event</a></td></tr>
+        <tr><td class="label">Definition</td><td>An action that occurs at some location during some time.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+
+
+
+
+
+## HumanObservation
+    
+<div class="my-4">
+    
+</div>
+
+
+
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-primary"><th colspan="2">HumanObservation<span class="badge badge-primary float-right">Class</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/HumanObservation">http://rs.tdwg.org/dwc/terms/HumanObservation</a></td></tr>
+        <tr><td class="label">Definition</td><td>An output of a human observation process.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+
+
+
+
+
+## MachineObservation
+    
+<div class="my-4">
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:eventID">eventID</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:parentEventID">parentEventID</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:fieldNumber">fieldNumber</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:eventDate">eventDate</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:eventTime">eventTime</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:startDayOfYear">startDayOfYear</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:endDayOfYear">endDayOfYear</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:year">year</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:month">month</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:day">day</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:verbatimEventDate">verbatimEventDate</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:habitat">habitat</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:samplingProtocol">samplingProtocol</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:sampleSizeValue">sampleSizeValue</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:sampleSizeUnit">sampleSizeUnit</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:samplingEffort">samplingEffort</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:fieldNotes">fieldNotes</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:eventRemarks">eventRemarks</a>
+    
+</div>
+
+
+
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-primary"><th colspan="2">MachineObservation<span class="badge badge-primary float-right">Class</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/MachineObservation">http://rs.tdwg.org/dwc/terms/MachineObservation</a></td></tr>
+        <tr><td class="label">Definition</td><td>An output of a machine observation process.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+
+
+<a id="dwc:eventID" class="anchor"></a><a id="eventID" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">eventID<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/eventID">http://rs.tdwg.org/dwc/terms/eventID</a></td></tr>
+        <tr><td class="label">Definition</td><td>An identifier for the set of information associated with an Event (something that occurs at a place and time). May be a global unique identifier or an identifier specific to the data set.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:parentEventID" class="anchor"></a><a id="parentEventID" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">parentEventID<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/parentEventID">http://rs.tdwg.org/dwc/terms/parentEventID</a></td></tr>
+        <tr><td class="label">Definition</td><td>An identifier for the broader Event that groups this and potentially other Events.</td></tr>
+        <tr><td class="label">Comments</td><td>Use a globally unique identifier for a dwc:Event or an identifier for a dwc:Event that is specific to the data set.</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:fieldNumber" class="anchor"></a><a id="fieldNumber" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">fieldNumber<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/fieldNumber">http://rs.tdwg.org/dwc/terms/fieldNumber</a></td></tr>
+        <tr><td class="label">Definition</td><td>An identifier given to the event in the field. Often serves as a link between field notes and the Event.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:eventDate" class="anchor"></a><a id="eventDate" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">eventDate<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/eventDate">http://rs.tdwg.org/dwc/terms/eventDate</a></td></tr>
+        <tr><td class="label">Definition</td><td>The date-time or interval during which an Event occurred. For occurrences, this is the date-time when the event was recorded. Not suitable for a time in a geological context.</td></tr>
+        <tr><td class="label">Comments</td><td>Recommended best practice is to use a date that conforms to ISO 8601:2004(E).</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:eventTime" class="anchor"></a><a id="eventTime" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">eventTime<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/eventTime">http://rs.tdwg.org/dwc/terms/eventTime</a></td></tr>
+        <tr><td class="label">Definition</td><td>The time or interval during which an Event occurred.</td></tr>
+        <tr><td class="label">Comments</td><td>Recommended best practice is to use a time that conforms to ISO 8601:2004(E).</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:startDayOfYear" class="anchor"></a><a id="startDayOfYear" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">startDayOfYear<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/startDayOfYear">http://rs.tdwg.org/dwc/terms/startDayOfYear</a></td></tr>
+        <tr><td class="label">Definition</td><td>The earliest ordinal day of the year on which the Event occurred (1 for January 1, 365 for December 31, except in a leap year, in which case it is 366).</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:endDayOfYear" class="anchor"></a><a id="endDayOfYear" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">endDayOfYear<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/endDayOfYear">http://rs.tdwg.org/dwc/terms/endDayOfYear</a></td></tr>
+        <tr><td class="label">Definition</td><td>The latest ordinal day of the year on which the Event occurred (1 for January 1, 365 for December 31, except in a leap year, in which case it is 366).</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:year" class="anchor"></a><a id="year" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">year<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/year">http://rs.tdwg.org/dwc/terms/year</a></td></tr>
+        <tr><td class="label">Definition</td><td>The four-digit year in which the Event occurred, according to the Common Era Calendar.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:month" class="anchor"></a><a id="month" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">month<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/month">http://rs.tdwg.org/dwc/terms/month</a></td></tr>
+        <tr><td class="label">Definition</td><td>The ordinal month in which the Event occurred.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:day" class="anchor"></a><a id="day" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">day<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/day">http://rs.tdwg.org/dwc/terms/day</a></td></tr>
+        <tr><td class="label">Definition</td><td>The integer day of the month on which the Event occurred.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:verbatimEventDate" class="anchor"></a><a id="verbatimEventDate" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">verbatimEventDate<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimEventDate">http://rs.tdwg.org/dwc/terms/verbatimEventDate</a></td></tr>
+        <tr><td class="label">Definition</td><td>The verbatim original representation of the date and time information for an Event.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:habitat" class="anchor"></a><a id="habitat" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">habitat<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/habitat">http://rs.tdwg.org/dwc/terms/habitat</a></td></tr>
+        <tr><td class="label">Definition</td><td>A category or description of the habitat in which the Event occurred.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:samplingProtocol" class="anchor"></a><a id="samplingProtocol" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">samplingProtocol<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/samplingProtocol">http://rs.tdwg.org/dwc/terms/samplingProtocol</a></td></tr>
+        <tr><td class="label">Definition</td><td>The name of, reference to, or description of the method or protocol used during an Event.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:sampleSizeValue" class="anchor"></a><a id="sampleSizeValue" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">sampleSizeValue<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/sampleSizeValue">http://rs.tdwg.org/dwc/terms/sampleSizeValue</a></td></tr>
+        <tr><td class="label">Definition</td><td>A numeric value for a measurement of the size (time duration, length, area, or volume) of a sample in a sampling event.</td></tr>
+        <tr><td class="label">Comments</td><td>A sampleSizeValue must have a corresponding sampleSizeUnit. </td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:sampleSizeUnit" class="anchor"></a><a id="sampleSizeUnit" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">sampleSizeUnit<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/sampleSizeUnit">http://rs.tdwg.org/dwc/terms/sampleSizeUnit</a></td></tr>
+        <tr><td class="label">Definition</td><td>The unit of measurement of the size (time duration, length, area, or volume) of a sample in a sampling event.</td></tr>
+        <tr><td class="label">Comments</td><td>A sampleSizeUnit must have a corresponding sampleSizeValue, e.g., <code>5</code> for sampleSizeValue with <code>metre</code> for sampleSizeUnit.</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:samplingEffort" class="anchor"></a><a id="samplingEffort" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">samplingEffort<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/samplingEffort">http://rs.tdwg.org/dwc/terms/samplingEffort</a></td></tr>
+        <tr><td class="label">Definition</td><td>The amount of effort expended during an Event.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:fieldNotes" class="anchor"></a><a id="fieldNotes" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">fieldNotes<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/fieldNotes">http://rs.tdwg.org/dwc/terms/fieldNotes</a></td></tr>
+        <tr><td class="label">Definition</td><td>One of a) an indicator of the existence of, b) a reference to (publication, URI), or c) the text of notes taken in the field about the Event.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:eventRemarks" class="anchor"></a><a id="eventRemarks" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">eventRemarks<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/eventRemarks">http://rs.tdwg.org/dwc/terms/eventRemarks</a></td></tr>
+        <tr><td class="label">Definition</td><td>Comments or notes about the Event.</td></tr>
         <tr><td class="label">Comments</td><td></td></tr>
     </tbody>
 </table>
@@ -117,6 +1011,94 @@ This page provides a list of all currently recommended terms of the Darwin Core 
 ## Location
     
 <div class="my-4">
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:locationID">locationID</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:higherGeographyID">higherGeographyID</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:higherGeography">higherGeography</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:continent">continent</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:waterBody">waterBody</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:islandGroup">islandGroup</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:island">island</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:country">country</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:countryCode">countryCode</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:stateProvince">stateProvince</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:county">county</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:municipality">municipality</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:locality">locality</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:verbatimLocality">verbatimLocality</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:minimumElevationInMeters">minimumElevationInMeters</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:maximumElevationInMeters">maximumElevationInMeters</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:verbatimElevation">verbatimElevation</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:minimumDepthInMeters">minimumDepthInMeters</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:maximumDepthInMeters">maximumDepthInMeters</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:verbatimDepth">verbatimDepth</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:minimumDistanceAboveSurfaceInMeters">minimumDistanceAboveSurfaceInMeters</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:maximumDistanceAboveSurfaceInMeters">maximumDistanceAboveSurfaceInMeters</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:locationAccordingTo">locationAccordingTo</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:locationRemarks">locationRemarks</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:decimalLatitude">decimalLatitude</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:decimalLongitude">decimalLongitude</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:geodeticDatum">geodeticDatum</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:coordinateUncertaintyInMeters">coordinateUncertaintyInMeters</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:coordinatePrecision">coordinatePrecision</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:pointRadiusSpatialFit">pointRadiusSpatialFit</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:verbatimCoordinates">verbatimCoordinates</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:verbatimLatitude">verbatimLatitude</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:verbatimLongitude">verbatimLongitude</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:verbatimCoordinateSystem">verbatimCoordinateSystem</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:verbatimSRS">verbatimSRS</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:footprintWKT">footprintWKT</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:footprintSRS">footprintSRS</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:footprintSpatialFit">footprintSpatialFit</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:georeferencedBy">georeferencedBy</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:georeferencedDate">georeferencedDate</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:georeferenceProtocol">georeferenceProtocol</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:georeferenceSources">georeferenceSources</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:georeferenceVerificationStatus">georeferenceVerificationStatus</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:georeferenceRemarks">georeferenceRemarks</a>
     
 </div>
 
@@ -132,6 +1114,1456 @@ This page provides a list of all currently recommended terms of the Darwin Core 
 </table>
 
 
+
+<a id="dwc:locationID" class="anchor"></a><a id="locationID" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">locationID<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/locationID">http://rs.tdwg.org/dwc/terms/locationID</a></td></tr>
+        <tr><td class="label">Definition</td><td>An identifier for the set of location information (data associated with dcterms:Location). May be a global unique identifier or an identifier specific to the data set.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:higherGeographyID" class="anchor"></a><a id="higherGeographyID" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">higherGeographyID<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/higherGeographyID">http://rs.tdwg.org/dwc/terms/higherGeographyID</a></td></tr>
+        <tr><td class="label">Definition</td><td>An identifier for the geographic region within which the Location occurred.</td></tr>
+        <tr><td class="label">Comments</td><td>Recommended best practice is to use a persistent identifier from a controlled vocabulary such as the Getty Thesaurus of Geographic Names.</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:higherGeography" class="anchor"></a><a id="higherGeography" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">higherGeography<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/higherGeography">http://rs.tdwg.org/dwc/terms/higherGeography</a></td></tr>
+        <tr><td class="label">Definition</td><td>A list (concatenated and separated) of geographic names less specific than the information captured in the locality term.</td></tr>
+        <tr><td class="label">Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>), with terms in order from least specific to most specific.</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:continent" class="anchor"></a><a id="continent" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">continent<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/continent">http://rs.tdwg.org/dwc/terms/continent</a></td></tr>
+        <tr><td class="label">Definition</td><td>The name of the continent in which the Location occurs.</td></tr>
+        <tr><td class="label">Comments</td><td>Recommended best practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names.</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:waterBody" class="anchor"></a><a id="waterBody" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">waterBody<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/waterBody">http://rs.tdwg.org/dwc/terms/waterBody</a></td></tr>
+        <tr><td class="label">Definition</td><td>The name of the water body in which the Location occurs.</td></tr>
+        <tr><td class="label">Comments</td><td>Recommended best practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names.</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:islandGroup" class="anchor"></a><a id="islandGroup" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">islandGroup<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/islandGroup">http://rs.tdwg.org/dwc/terms/islandGroup</a></td></tr>
+        <tr><td class="label">Definition</td><td>The name of the island group in which the Location occurs.</td></tr>
+        <tr><td class="label">Comments</td><td>Recommended best practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names.</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:island" class="anchor"></a><a id="island" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">island<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/island">http://rs.tdwg.org/dwc/terms/island</a></td></tr>
+        <tr><td class="label">Definition</td><td>The name of the island on or near which the Location occurs.</td></tr>
+        <tr><td class="label">Comments</td><td>Recommended best practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names.</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:country" class="anchor"></a><a id="country" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">country<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/country">http://rs.tdwg.org/dwc/terms/country</a></td></tr>
+        <tr><td class="label">Definition</td><td>The name of the country or major administrative unit in which the Location occurs.</td></tr>
+        <tr><td class="label">Comments</td><td>Recommended best practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names.</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:countryCode" class="anchor"></a><a id="countryCode" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">countryCode<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/countryCode">http://rs.tdwg.org/dwc/terms/countryCode</a></td></tr>
+        <tr><td class="label">Definition</td><td>The standard code for the country in which the Location occurs.</td></tr>
+        <tr><td class="label">Comments</td><td>Recommended best practice is to use an ISO 3166-1-alpha-2 country code.</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:stateProvince" class="anchor"></a><a id="stateProvince" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">stateProvince<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/stateProvince">http://rs.tdwg.org/dwc/terms/stateProvince</a></td></tr>
+        <tr><td class="label">Definition</td><td>The name of the next smaller administrative region than country (state, province, canton, department, region, etc.) in which the Location occurs.</td></tr>
+        <tr><td class="label">Comments</td><td>Recommended best practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names.</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:county" class="anchor"></a><a id="county" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">county<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/county">http://rs.tdwg.org/dwc/terms/county</a></td></tr>
+        <tr><td class="label">Definition</td><td>The full, unabbreviated name of the next smaller administrative region than stateProvince (county, shire, department, etc.) in which the Location occurs.</td></tr>
+        <tr><td class="label">Comments</td><td>Recommended best practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names.</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:municipality" class="anchor"></a><a id="municipality" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">municipality<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/municipality">http://rs.tdwg.org/dwc/terms/municipality</a></td></tr>
+        <tr><td class="label">Definition</td><td>The full, unabbreviated name of the next smaller administrative region than county (city, municipality, etc.) in which the Location occurs. Do not use this term for a nearby named place that does not contain the actual location.</td></tr>
+        <tr><td class="label">Comments</td><td>Recommended best practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names.</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:locality" class="anchor"></a><a id="locality" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">locality<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/locality">http://rs.tdwg.org/dwc/terms/locality</a></td></tr>
+        <tr><td class="label">Definition</td><td>The specific description of the place. Less specific geographic information can be provided in other geographic terms (higherGeography, continent, country, stateProvince, county, municipality, waterBody, island, islandGroup). This term may contain information modified from the original to correct perceived errors or standardize the description.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:verbatimLocality" class="anchor"></a><a id="verbatimLocality" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">verbatimLocality<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimLocality">http://rs.tdwg.org/dwc/terms/verbatimLocality</a></td></tr>
+        <tr><td class="label">Definition</td><td>The original textual description of the place.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:minimumElevationInMeters" class="anchor"></a><a id="minimumElevationInMeters" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">minimumElevationInMeters<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/minimumElevationInMeters">http://rs.tdwg.org/dwc/terms/minimumElevationInMeters</a></td></tr>
+        <tr><td class="label">Definition</td><td>The lower limit of the range of elevation (altitude, usually above sea level), in meters.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:maximumElevationInMeters" class="anchor"></a><a id="maximumElevationInMeters" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">maximumElevationInMeters<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/maximumElevationInMeters">http://rs.tdwg.org/dwc/terms/maximumElevationInMeters</a></td></tr>
+        <tr><td class="label">Definition</td><td>The upper limit of the range of elevation (altitude, usually above sea level), in meters.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:verbatimElevation" class="anchor"></a><a id="verbatimElevation" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">verbatimElevation<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimElevation">http://rs.tdwg.org/dwc/terms/verbatimElevation</a></td></tr>
+        <tr><td class="label">Definition</td><td>The original description of the elevation (altitude, usually above sea level) of the Location.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:minimumDepthInMeters" class="anchor"></a><a id="minimumDepthInMeters" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">minimumDepthInMeters<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/minimumDepthInMeters">http://rs.tdwg.org/dwc/terms/minimumDepthInMeters</a></td></tr>
+        <tr><td class="label">Definition</td><td>The lesser depth of a range of depth below the local surface, in meters.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:maximumDepthInMeters" class="anchor"></a><a id="maximumDepthInMeters" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">maximumDepthInMeters<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/maximumDepthInMeters">http://rs.tdwg.org/dwc/terms/maximumDepthInMeters</a></td></tr>
+        <tr><td class="label">Definition</td><td>The greater depth of a range of depth below the local surface, in meters.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:verbatimDepth" class="anchor"></a><a id="verbatimDepth" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">verbatimDepth<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimDepth">http://rs.tdwg.org/dwc/terms/verbatimDepth</a></td></tr>
+        <tr><td class="label">Definition</td><td>The original description of the depth below the local surface.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:minimumDistanceAboveSurfaceInMeters" class="anchor"></a><a id="minimumDistanceAboveSurfaceInMeters" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">minimumDistanceAboveSurfaceInMeters<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/minimumDistanceAboveSurfaceInMeters">http://rs.tdwg.org/dwc/terms/minimumDistanceAboveSurfaceInMeters</a></td></tr>
+        <tr><td class="label">Definition</td><td>The lesser distance in a range of distance from a reference surface in the vertical direction, in meters. Use positive values for locations above the surface, negative values for locations below. If depth measures are given, the reference surface is the location given by the depth, otherwise the reference surface is the location given by the elevation.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:maximumDistanceAboveSurfaceInMeters" class="anchor"></a><a id="maximumDistanceAboveSurfaceInMeters" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">maximumDistanceAboveSurfaceInMeters<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/maximumDistanceAboveSurfaceInMeters">http://rs.tdwg.org/dwc/terms/maximumDistanceAboveSurfaceInMeters</a></td></tr>
+        <tr><td class="label">Definition</td><td>The greater distance in a range of distance from a reference surface in the vertical direction, in meters. Use positive values for locations above the surface, negative values for locations below. If depth measures are given, the reference surface is the location given by the depth, otherwise the reference surface is the location given by the elevation.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:locationAccordingTo" class="anchor"></a><a id="locationAccordingTo" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">locationAccordingTo<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/locationAccordingTo">http://rs.tdwg.org/dwc/terms/locationAccordingTo</a></td></tr>
+        <tr><td class="label">Definition</td><td>Information about the source of this Location information. Could be a publication (gazetteer), institution, or team of individuals.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:locationRemarks" class="anchor"></a><a id="locationRemarks" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">locationRemarks<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/locationRemarks">http://rs.tdwg.org/dwc/terms/locationRemarks</a></td></tr>
+        <tr><td class="label">Definition</td><td>Comments or notes about the Location.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:decimalLatitude" class="anchor"></a><a id="decimalLatitude" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">decimalLatitude<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/decimalLatitude">http://rs.tdwg.org/dwc/terms/decimalLatitude</a></td></tr>
+        <tr><td class="label">Definition</td><td>The geographic latitude (in decimal degrees, using the spatial reference system given in geodeticDatum) of the geographic center of a Location. Positive values are north of the Equator, negative values are south of it. Legal values lie between -90 and 90, inclusive.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:decimalLongitude" class="anchor"></a><a id="decimalLongitude" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">decimalLongitude<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/decimalLongitude">http://rs.tdwg.org/dwc/terms/decimalLongitude</a></td></tr>
+        <tr><td class="label">Definition</td><td>The geographic longitude (in decimal degrees, using the spatial reference system given in geodeticDatum) of the geographic center of a Location. Positive values are east of the Greenwich Meridian, negative values are west of it. Legal values lie between -180 and 180, inclusive.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:geodeticDatum" class="anchor"></a><a id="geodeticDatum" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">geodeticDatum<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/geodeticDatum">http://rs.tdwg.org/dwc/terms/geodeticDatum</a></td></tr>
+        <tr><td class="label">Definition</td><td>The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which the geographic coordinates given in decimalLatitude and decimalLongitude as based.</td></tr>
+        <tr><td class="label">Comments</td><td>Recommended best practice is to use the EPSG code of the SRS, if known. Otherwise use a controlled vocabulary for the name or code of the geodetic datum, if known. Otherwise use a controlled vocabulary for the name or code of the ellipsoid, if known. If none of these is known, use the value <code>unknown</code>.</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:coordinateUncertaintyInMeters" class="anchor"></a><a id="coordinateUncertaintyInMeters" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">coordinateUncertaintyInMeters<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/coordinateUncertaintyInMeters">http://rs.tdwg.org/dwc/terms/coordinateUncertaintyInMeters</a></td></tr>
+        <tr><td class="label">Definition</td><td>The horizontal distance (in meters) from the given decimalLatitude and decimalLongitude describing the smallest circle containing the whole of the Location. Leave the value empty if the uncertainty is unknown, cannot be estimated, or is not applicable (because there are no coordinates). Zero is not a valid value for this term.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:coordinatePrecision" class="anchor"></a><a id="coordinatePrecision" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">coordinatePrecision<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/coordinatePrecision">http://rs.tdwg.org/dwc/terms/coordinatePrecision</a></td></tr>
+        <tr><td class="label">Definition</td><td>A decimal representation of the precision of the coordinates given in the decimalLatitude and decimalLongitude.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:pointRadiusSpatialFit" class="anchor"></a><a id="pointRadiusSpatialFit" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">pointRadiusSpatialFit<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/pointRadiusSpatialFit">http://rs.tdwg.org/dwc/terms/pointRadiusSpatialFit</a></td></tr>
+        <tr><td class="label">Definition</td><td>The ratio of the area of the point-radius (decimalLatitude, decimalLongitude, coordinateUncertaintyInMeters) to the area of the true (original, or most specific) spatial representation of the Location. Legal values are 0, greater than or equal to 1, or undefined. A value of 1 is an exact match or 100% overlap. A value of 0 should be used if the given point-radius does not completely contain the original representation. The pointRadiusSpatialFit is undefined (and should be left blank) if the original representation is a point without uncertainty and the given georeference is not that same point (without uncertainty). If both the original and the given georeference are the same point, the pointRadiusSpatialFit is 1.</td></tr>
+        <tr><td class="label">Comments</td><td>Detailed explanations with graphical examples can be found in the Guide to Best Practices for Georeferencing, Chapman and Wieczorek, eds. 2006.</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:verbatimCoordinates" class="anchor"></a><a id="verbatimCoordinates" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">verbatimCoordinates<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimCoordinates">http://rs.tdwg.org/dwc/terms/verbatimCoordinates</a></td></tr>
+        <tr><td class="label">Definition</td><td>The verbatim original spatial coordinates of the Location. The coordinate ellipsoid, geodeticDatum, or full Spatial Reference System (SRS) for these coordinates should be stored in verbatimSRS and the coordinate system should be stored in verbatimCoordinateSystem.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:verbatimLatitude" class="anchor"></a><a id="verbatimLatitude" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">verbatimLatitude<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimLatitude">http://rs.tdwg.org/dwc/terms/verbatimLatitude</a></td></tr>
+        <tr><td class="label">Definition</td><td>The verbatim original latitude of the Location. The coordinate ellipsoid, geodeticDatum, or full Spatial Reference System (SRS) for these coordinates should be stored in verbatimSRS and the coordinate system should be stored in verbatimCoordinateSystem.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:verbatimLongitude" class="anchor"></a><a id="verbatimLongitude" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">verbatimLongitude<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimLongitude">http://rs.tdwg.org/dwc/terms/verbatimLongitude</a></td></tr>
+        <tr><td class="label">Definition</td><td>The verbatim original longitude of the Location. The coordinate ellipsoid, geodeticDatum, or full Spatial Reference System (SRS) for these coordinates should be stored in verbatimSRS and the coordinate system should be stored in verbatimCoordinateSystem.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:verbatimCoordinateSystem" class="anchor"></a><a id="verbatimCoordinateSystem" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">verbatimCoordinateSystem<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimCoordinateSystem">http://rs.tdwg.org/dwc/terms/verbatimCoordinateSystem</a></td></tr>
+        <tr><td class="label">Definition</td><td>The spatial coordinate system for the verbatimLatitude and verbatimLongitude or the verbatimCoordinates of the Location.</td></tr>
+        <tr><td class="label">Comments</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:verbatimSRS" class="anchor"></a><a id="verbatimSRS" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">verbatimSRS<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimSRS">http://rs.tdwg.org/dwc/terms/verbatimSRS</a></td></tr>
+        <tr><td class="label">Definition</td><td>The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which coordinates given in verbatimLatitude and verbatimLongitude, or verbatimCoordinates are based.</td></tr>
+        <tr><td class="label">Comments</td><td>Recommended best practice is to use the EPSG code of the SRS, if known. Otherwise use a controlled vocabulary for the name or code of the geodetic datum, if known. Otherwise use a controlled vocabulary for the name or code of the ellipsoid, if known. If none of these is known, use the value <code>unknown</code>.</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:footprintWKT" class="anchor"></a><a id="footprintWKT" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">footprintWKT<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/footprintWKT">http://rs.tdwg.org/dwc/terms/footprintWKT</a></td></tr>
+        <tr><td class="label">Definition</td><td>A Well-Known Text (WKT) representation of the shape (footprint, geometry) that defines the Location. A Location may have both a point-radius representation (see decimalLatitude) and a footprint representation, and they may differ from each other.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:footprintSRS" class="anchor"></a><a id="footprintSRS" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">footprintSRS<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/footprintSRS">http://rs.tdwg.org/dwc/terms/footprintSRS</a></td></tr>
+        <tr><td class="label">Definition</td><td>A Well-Known Text (WKT) representation of the Spatial Reference System (SRS) for the footprintWKT of the Location. Do not use this term to describe the SRS of the decimalLatitude and decimalLongitude, even if it is the same as for the footprintWKT - use the geodeticDatum instead.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:footprintSpatialFit" class="anchor"></a><a id="footprintSpatialFit" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">footprintSpatialFit<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/footprintSpatialFit">http://rs.tdwg.org/dwc/terms/footprintSpatialFit</a></td></tr>
+        <tr><td class="label">Definition</td><td>The ratio of the area of the footprint (footprintWKT) to the area of the true (original, or most specific) spatial representation of the Location. Legal values are 0, greater than or equal to 1, or undefined. A value of 1 is an exact match or 100% overlap. A value of 0 should be used if the given footprint does not completely contain the original representation. The footprintSpatialFit is undefined (and should be left blank) if the original representation is a point and the given georeference is not that same point. If both the original and the given georeference are the same point, the footprintSpatialFit is 1.</td></tr>
+        <tr><td class="label">Comments</td><td>Detailed explanations with graphical examples can be found in the Guide to Best Practices for Georeferencing, Chapman and Wieczorek, eds. 2006.</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:georeferencedBy" class="anchor"></a><a id="georeferencedBy" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">georeferencedBy<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/georeferencedBy">http://rs.tdwg.org/dwc/terms/georeferencedBy</a></td></tr>
+        <tr><td class="label">Definition</td><td>A list (concatenated and separated) of names of people, groups, or organizations who determined the georeference (spatial representation) for the Location.</td></tr>
+        <tr><td class="label">Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:georeferencedDate" class="anchor"></a><a id="georeferencedDate" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">georeferencedDate<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/georeferencedDate">http://rs.tdwg.org/dwc/terms/georeferencedDate</a></td></tr>
+        <tr><td class="label">Definition</td><td>The date on which the Location was georeferenced.</td></tr>
+        <tr><td class="label">Comments</td><td>Recommended best practice is to use a date that conforms to ISO 8601:2004(E).</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:georeferenceProtocol" class="anchor"></a><a id="georeferenceProtocol" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">georeferenceProtocol<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/georeferenceProtocol">http://rs.tdwg.org/dwc/terms/georeferenceProtocol</a></td></tr>
+        <tr><td class="label">Definition</td><td>A description or reference to the methods used to determine the spatial footprint, coordinates, and uncertainties.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:georeferenceSources" class="anchor"></a><a id="georeferenceSources" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">georeferenceSources<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/georeferenceSources">http://rs.tdwg.org/dwc/terms/georeferenceSources</a></td></tr>
+        <tr><td class="label">Definition</td><td>A list (concatenated and separated) of maps, gazetteers, or other resources used to georeference the Location, described specifically enough to allow anyone in the future to use the same resources.</td></tr>
+        <tr><td class="label">Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:georeferenceVerificationStatus" class="anchor"></a><a id="georeferenceVerificationStatus" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">georeferenceVerificationStatus<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/georeferenceVerificationStatus">http://rs.tdwg.org/dwc/terms/georeferenceVerificationStatus</a></td></tr>
+        <tr><td class="label">Definition</td><td>A categorical description of the extent to which the georeference has been verified to represent the best possible spatial description.</td></tr>
+        <tr><td class="label">Comments</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:georeferenceRemarks" class="anchor"></a><a id="georeferenceRemarks" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">georeferenceRemarks<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/georeferenceRemarks">http://rs.tdwg.org/dwc/terms/georeferenceRemarks</a></td></tr>
+        <tr><td class="label">Definition</td><td>Notes or comments about the spatial description determination, explaining assumptions made in addition or opposition to the those formalized in the method referred to in georeferenceProtocol.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+
+
+
+## GeologicalContext
+    
+<div class="my-4">
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:geologicalContextID">geologicalContextID</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:earliestEonOrLowestEonothem">earliestEonOrLowestEonothem</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:latestEonOrHighestEonothem">latestEonOrHighestEonothem</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:earliestEraOrLowestErathem">earliestEraOrLowestErathem</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:latestEraOrHighestErathem">latestEraOrHighestErathem</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:earliestPeriodOrLowestSystem">earliestPeriodOrLowestSystem</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:latestPeriodOrHighestSystem">latestPeriodOrHighestSystem</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:earliestEpochOrLowestSeries">earliestEpochOrLowestSeries</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:latestEpochOrHighestSeries">latestEpochOrHighestSeries</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:earliestAgeOrLowestStage">earliestAgeOrLowestStage</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:latestAgeOrHighestStage">latestAgeOrHighestStage</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:lowestBiostratigraphicZone">lowestBiostratigraphicZone</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:highestBiostratigraphicZone">highestBiostratigraphicZone</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:lithostratigraphicTerms">lithostratigraphicTerms</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:group">group</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:formation">formation</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:member">member</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:bed">bed</a>
+    
+</div>
+
+
+
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-primary"><th colspan="2">GeologicalContext<span class="badge badge-primary float-right">Class</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/GeologicalContext">http://rs.tdwg.org/dwc/terms/GeologicalContext</a></td></tr>
+        <tr><td class="label">Definition</td><td>Geological information, such as stratigraphy, that qualifies a region or place.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+
+
+<a id="dwc:geologicalContextID" class="anchor"></a><a id="geologicalContextID" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">geologicalContextID<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/geologicalContextID">http://rs.tdwg.org/dwc/terms/geologicalContextID</a></td></tr>
+        <tr><td class="label">Definition</td><td>An identifier for the set of information associated with a GeologicalContext (the location within a geological context, such as stratigraphy). May be a global unique identifier or an identifier specific to the data set.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:earliestEonOrLowestEonothem" class="anchor"></a><a id="earliestEonOrLowestEonothem" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">earliestEonOrLowestEonothem<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/earliestEonOrLowestEonothem">http://rs.tdwg.org/dwc/terms/earliestEonOrLowestEonothem</a></td></tr>
+        <tr><td class="label">Definition</td><td>The full name of the earliest possible geochronologic eon or lowest chrono-stratigraphic eonothem or the informal name ("Precambrian") attributable to the stratigraphic horizon from which the cataloged item was collected.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:latestEonOrHighestEonothem" class="anchor"></a><a id="latestEonOrHighestEonothem" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">latestEonOrHighestEonothem<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/latestEonOrHighestEonothem">http://rs.tdwg.org/dwc/terms/latestEonOrHighestEonothem</a></td></tr>
+        <tr><td class="label">Definition</td><td>The full name of the latest possible geochronologic eon or highest chrono-stratigraphic eonothem or the informal name ("Precambrian") attributable to the stratigraphic horizon from which the cataloged item was collected.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:earliestEraOrLowestErathem" class="anchor"></a><a id="earliestEraOrLowestErathem" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">earliestEraOrLowestErathem<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/earliestEraOrLowestErathem">http://rs.tdwg.org/dwc/terms/earliestEraOrLowestErathem</a></td></tr>
+        <tr><td class="label">Definition</td><td>The full name of the earliest possible geochronologic era or lowest chronostratigraphic erathem attributable to the stratigraphic horizon from which the cataloged item was collected.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:latestEraOrHighestErathem" class="anchor"></a><a id="latestEraOrHighestErathem" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">latestEraOrHighestErathem<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/latestEraOrHighestErathem">http://rs.tdwg.org/dwc/terms/latestEraOrHighestErathem</a></td></tr>
+        <tr><td class="label">Definition</td><td>The full name of the latest possible geochronologic era or highest chronostratigraphic erathem attributable to the stratigraphic horizon from which the cataloged item was collected.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:earliestPeriodOrLowestSystem" class="anchor"></a><a id="earliestPeriodOrLowestSystem" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">earliestPeriodOrLowestSystem<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/earliestPeriodOrLowestSystem">http://rs.tdwg.org/dwc/terms/earliestPeriodOrLowestSystem</a></td></tr>
+        <tr><td class="label">Definition</td><td>The full name of the earliest possible geochronologic period or lowest chronostratigraphic system attributable to the stratigraphic horizon from which the cataloged item was collected.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:latestPeriodOrHighestSystem" class="anchor"></a><a id="latestPeriodOrHighestSystem" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">latestPeriodOrHighestSystem<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/latestPeriodOrHighestSystem">http://rs.tdwg.org/dwc/terms/latestPeriodOrHighestSystem</a></td></tr>
+        <tr><td class="label">Definition</td><td>The full name of the latest possible geochronologic period or highest chronostratigraphic system attributable to the stratigraphic horizon from which the cataloged item was collected.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:earliestEpochOrLowestSeries" class="anchor"></a><a id="earliestEpochOrLowestSeries" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">earliestEpochOrLowestSeries<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/earliestEpochOrLowestSeries">http://rs.tdwg.org/dwc/terms/earliestEpochOrLowestSeries</a></td></tr>
+        <tr><td class="label">Definition</td><td>The full name of the earliest possible geochronologic epoch or lowest chronostratigraphic series attributable to the stratigraphic horizon from which the cataloged item was collected.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:latestEpochOrHighestSeries" class="anchor"></a><a id="latestEpochOrHighestSeries" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">latestEpochOrHighestSeries<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/latestEpochOrHighestSeries">http://rs.tdwg.org/dwc/terms/latestEpochOrHighestSeries</a></td></tr>
+        <tr><td class="label">Definition</td><td>The full name of the latest possible geochronologic epoch or highest chronostratigraphic series attributable to the stratigraphic horizon from which the cataloged item was collected.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:earliestAgeOrLowestStage" class="anchor"></a><a id="earliestAgeOrLowestStage" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">earliestAgeOrLowestStage<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/earliestAgeOrLowestStage">http://rs.tdwg.org/dwc/terms/earliestAgeOrLowestStage</a></td></tr>
+        <tr><td class="label">Definition</td><td>The full name of the earliest possible geochronologic age or lowest chronostratigraphic stage attributable to the stratigraphic horizon from which the cataloged item was collected.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:latestAgeOrHighestStage" class="anchor"></a><a id="latestAgeOrHighestStage" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">latestAgeOrHighestStage<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/latestAgeOrHighestStage">http://rs.tdwg.org/dwc/terms/latestAgeOrHighestStage</a></td></tr>
+        <tr><td class="label">Definition</td><td>The full name of the latest possible geochronologic age or highest chronostratigraphic stage attributable to the stratigraphic horizon from which the cataloged item was collected.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:lowestBiostratigraphicZone" class="anchor"></a><a id="lowestBiostratigraphicZone" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">lowestBiostratigraphicZone<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/lowestBiostratigraphicZone">http://rs.tdwg.org/dwc/terms/lowestBiostratigraphicZone</a></td></tr>
+        <tr><td class="label">Definition</td><td>The full name of the lowest possible geological biostratigraphic zone of the stratigraphic horizon from which the cataloged item was collected.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:highestBiostratigraphicZone" class="anchor"></a><a id="highestBiostratigraphicZone" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">highestBiostratigraphicZone<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/highestBiostratigraphicZone">http://rs.tdwg.org/dwc/terms/highestBiostratigraphicZone</a></td></tr>
+        <tr><td class="label">Definition</td><td>The full name of the highest possible geological biostratigraphic zone of the stratigraphic horizon from which the cataloged item was collected.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:lithostratigraphicTerms" class="anchor"></a><a id="lithostratigraphicTerms" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">lithostratigraphicTerms<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/lithostratigraphicTerms">http://rs.tdwg.org/dwc/terms/lithostratigraphicTerms</a></td></tr>
+        <tr><td class="label">Definition</td><td>The combination of all litho-stratigraphic names for the rock from which the cataloged item was collected.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:group" class="anchor"></a><a id="group" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">group<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/group">http://rs.tdwg.org/dwc/terms/group</a></td></tr>
+        <tr><td class="label">Definition</td><td>The full name of the lithostratigraphic group from which the cataloged item was collected.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:formation" class="anchor"></a><a id="formation" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">formation<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/formation">http://rs.tdwg.org/dwc/terms/formation</a></td></tr>
+        <tr><td class="label">Definition</td><td>The full name of the lithostratigraphic formation from which the cataloged item was collected.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:member" class="anchor"></a><a id="member" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">member<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/member">http://rs.tdwg.org/dwc/terms/member</a></td></tr>
+        <tr><td class="label">Definition</td><td>The full name of the lithostratigraphic member from which the cataloged item was collected.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:bed" class="anchor"></a><a id="bed" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">bed<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/bed">http://rs.tdwg.org/dwc/terms/bed</a></td></tr>
+        <tr><td class="label">Definition</td><td>The full name of the lithostratigraphic bed from which the cataloged item was collected.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+
+
+
+## Identification
+    
+<div class="my-4">
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:identificationID">identificationID</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:identificationQualifier">identificationQualifier</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:typeStatus">typeStatus</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:identifiedBy">identifiedBy</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:dateIdentified">dateIdentified</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:identificationReferences">identificationReferences</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:identificationVerificationStatus">identificationVerificationStatus</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:identificationRemarks">identificationRemarks</a>
+    
+</div>
+
+
+
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-primary"><th colspan="2">Identification<span class="badge badge-primary float-right">Class</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/Identification">http://rs.tdwg.org/dwc/terms/Identification</a></td></tr>
+        <tr><td class="label">Definition</td><td>A taxonomic determination (e.g., the assignment to a taxon).</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+
+
+<a id="dwc:identificationID" class="anchor"></a><a id="identificationID" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">identificationID<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/identificationID">http://rs.tdwg.org/dwc/terms/identificationID</a></td></tr>
+        <tr><td class="label">Definition</td><td>An identifier for the Identification (the body of information associated with the assignment of a scientific name). May be a global unique identifier or an identifier specific to the data set.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:identificationQualifier" class="anchor"></a><a id="identificationQualifier" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">identificationQualifier<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/identificationQualifier">http://rs.tdwg.org/dwc/terms/identificationQualifier</a></td></tr>
+        <tr><td class="label">Definition</td><td>A brief phrase or a standard term ("cf.", "aff.") to express the determiner's doubts about the Identification.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:typeStatus" class="anchor"></a><a id="typeStatus" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">typeStatus<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/typeStatus">http://rs.tdwg.org/dwc/terms/typeStatus</a></td></tr>
+        <tr><td class="label">Definition</td><td>A list (concatenated and separated) of nomenclatural types (type status, typified scientific name, publication) applied to the subject.</td></tr>
+        <tr><td class="label">Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:identifiedBy" class="anchor"></a><a id="identifiedBy" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">identifiedBy<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/identifiedBy">http://rs.tdwg.org/dwc/terms/identifiedBy</a></td></tr>
+        <tr><td class="label">Definition</td><td>A list (concatenated and separated) of names of people, groups, or organizations who assigned the Taxon to the subject.</td></tr>
+        <tr><td class="label">Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:dateIdentified" class="anchor"></a><a id="dateIdentified" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">dateIdentified<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/dateIdentified">http://rs.tdwg.org/dwc/terms/dateIdentified</a></td></tr>
+        <tr><td class="label">Definition</td><td>The date on which the subject was identified as representing the Taxon.</td></tr>
+        <tr><td class="label">Comments</td><td>Recommended best practice is to use a date that conforms to ISO 8601:2004(E).</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:identificationReferences" class="anchor"></a><a id="identificationReferences" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">identificationReferences<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/identificationReferences">http://rs.tdwg.org/dwc/terms/identificationReferences</a></td></tr>
+        <tr><td class="label">Definition</td><td>A list (concatenated and separated) of references (publication, global unique identifier, URI) used in the Identification.</td></tr>
+        <tr><td class="label">Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:identificationVerificationStatus" class="anchor"></a><a id="identificationVerificationStatus" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">identificationVerificationStatus<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/identificationVerificationStatus">http://rs.tdwg.org/dwc/terms/identificationVerificationStatus</a></td></tr>
+        <tr><td class="label">Definition</td><td>A categorical indicator of the extent to which the taxonomic identification has been verified to be correct.</td></tr>
+        <tr><td class="label">Comments</td><td>Recommended best practice is to use a controlled vocabulary such as that used in HISPID and ABCD.</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:identificationRemarks" class="anchor"></a><a id="identificationRemarks" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">identificationRemarks<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/identificationRemarks">http://rs.tdwg.org/dwc/terms/identificationRemarks</a></td></tr>
+        <tr><td class="label">Definition</td><td>Comments or notes about the Identification.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+
+
+
+## Taxon
+    
+<div class="my-4">
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:taxonID">taxonID</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:scientificNameID">scientificNameID</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:acceptedNameUsageID">acceptedNameUsageID</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:parentNameUsageID">parentNameUsageID</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:originalNameUsageID">originalNameUsageID</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:nameAccordingToID">nameAccordingToID</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:namePublishedInID">namePublishedInID</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:taxonConceptID">taxonConceptID</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:scientificName">scientificName</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:acceptedNameUsage">acceptedNameUsage</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:parentNameUsage">parentNameUsage</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:originalNameUsage">originalNameUsage</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:nameAccordingTo">nameAccordingTo</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:namePublishedIn">namePublishedIn</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:namePublishedInYear">namePublishedInYear</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:higherClassification">higherClassification</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:kingdom">kingdom</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:phylum">phylum</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:class">class</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:order">order</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:family">family</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:genus">genus</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:subgenus">subgenus</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:specificEpithet">specificEpithet</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:infraspecificEpithet">infraspecificEpithet</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:taxonRank">taxonRank</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:verbatimTaxonRank">verbatimTaxonRank</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:scientificNameAuthorship">scientificNameAuthorship</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:vernacularName">vernacularName</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:nomenclaturalCode">nomenclaturalCode</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:taxonomicStatus">taxonomicStatus</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:nomenclaturalStatus">nomenclaturalStatus</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:taxonRemarks">taxonRemarks</a>
+    
+</div>
+
+
+
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-primary"><th colspan="2">Taxon<span class="badge badge-primary float-right">Class</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/Taxon">http://rs.tdwg.org/dwc/terms/Taxon</a></td></tr>
+        <tr><td class="label">Definition</td><td>A group of organisms (sensu <a href="http://purl.obolibrary.org/obo/OBI_0100026">http://purl.obolibrary.org/obo/OBI_0100026</a>) considered by taxonomists to form a homogeneous unit.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+
+
+<a id="dwc:taxonID" class="anchor"></a><a id="taxonID" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">taxonID<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/taxonID">http://rs.tdwg.org/dwc/terms/taxonID</a></td></tr>
+        <tr><td class="label">Definition</td><td>An identifier for the set of taxon information (data associated with the Taxon class). May be a global unique identifier or an identifier specific to the data set.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:scientificNameID" class="anchor"></a><a id="scientificNameID" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">scientificNameID<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/scientificNameID">http://rs.tdwg.org/dwc/terms/scientificNameID</a></td></tr>
+        <tr><td class="label">Definition</td><td>An identifier for the nomenclatural (not taxonomic) details of a scientific name.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:acceptedNameUsageID" class="anchor"></a><a id="acceptedNameUsageID" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">acceptedNameUsageID<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/acceptedNameUsageID">http://rs.tdwg.org/dwc/terms/acceptedNameUsageID</a></td></tr>
+        <tr><td class="label">Definition</td><td>An identifier for the name usage (documented meaning of the name according to a source) of the currently valid (zoological) or accepted (botanical) taxon.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:parentNameUsageID" class="anchor"></a><a id="parentNameUsageID" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">parentNameUsageID<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/parentNameUsageID">http://rs.tdwg.org/dwc/terms/parentNameUsageID</a></td></tr>
+        <tr><td class="label">Definition</td><td>An identifier for the name usage (documented meaning of the name according to a source) of the direct, most proximate higher-rank parent taxon (in a classification) of the most specific element of the scientificName.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:originalNameUsageID" class="anchor"></a><a id="originalNameUsageID" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">originalNameUsageID<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/originalNameUsageID">http://rs.tdwg.org/dwc/terms/originalNameUsageID</a></td></tr>
+        <tr><td class="label">Definition</td><td>An identifier for the name usage (documented meaning of the name according to a source) in which the terminal element of the scientificName was originally established under the rules of the associated nomenclaturalCode.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:nameAccordingToID" class="anchor"></a><a id="nameAccordingToID" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">nameAccordingToID<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/nameAccordingToID">http://rs.tdwg.org/dwc/terms/nameAccordingToID</a></td></tr>
+        <tr><td class="label">Definition</td><td>An identifier for the source in which the specific taxon concept circumscription is defined or implied. See nameAccordingTo.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:namePublishedInID" class="anchor"></a><a id="namePublishedInID" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">namePublishedInID<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/namePublishedInID">http://rs.tdwg.org/dwc/terms/namePublishedInID</a></td></tr>
+        <tr><td class="label">Definition</td><td>An identifier for the publication in which the scientificName was originally established under the rules of the associated nomenclaturalCode.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:taxonConceptID" class="anchor"></a><a id="taxonConceptID" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">taxonConceptID<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/taxonConceptID">http://rs.tdwg.org/dwc/terms/taxonConceptID</a></td></tr>
+        <tr><td class="label">Definition</td><td>An identifier for the taxonomic concept to which the record refers - not for the nomenclatural details of a taxon.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:scientificName" class="anchor"></a><a id="scientificName" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">scientificName<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/scientificName">http://rs.tdwg.org/dwc/terms/scientificName</a></td></tr>
+        <tr><td class="label">Definition</td><td>The full scientific name, with authorship and date information if known. When forming part of an Identification, this should be the name in lowest level taxonomic rank that can be determined. This term should not contain identification qualifications, which should instead be supplied in the IdentificationQualifier term.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:acceptedNameUsage" class="anchor"></a><a id="acceptedNameUsage" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">acceptedNameUsage<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/acceptedNameUsage">http://rs.tdwg.org/dwc/terms/acceptedNameUsage</a></td></tr>
+        <tr><td class="label">Definition</td><td>The full name, with authorship and date information if known, of the currently valid (zoological) or accepted (botanical) taxon.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:parentNameUsage" class="anchor"></a><a id="parentNameUsage" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">parentNameUsage<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/parentNameUsage">http://rs.tdwg.org/dwc/terms/parentNameUsage</a></td></tr>
+        <tr><td class="label">Definition</td><td>The full name, with authorship and date information if known, of the direct, most proximate higher-rank parent taxon (in a classification) of the most specific element of the scientificName.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:originalNameUsage" class="anchor"></a><a id="originalNameUsage" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">originalNameUsage<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/originalNameUsage">http://rs.tdwg.org/dwc/terms/originalNameUsage</a></td></tr>
+        <tr><td class="label">Definition</td><td>The taxon name, with authorship and date information if known, as it originally appeared when first established under the rules of the associated nomenclaturalCode. The basionym (botany) or basonym (bacteriology) of the scientificName or the senior/earlier homonym for replaced names.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:nameAccordingTo" class="anchor"></a><a id="nameAccordingTo" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">nameAccordingTo<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/nameAccordingTo">http://rs.tdwg.org/dwc/terms/nameAccordingTo</a></td></tr>
+        <tr><td class="label">Definition</td><td>The reference to the source in which the specific taxon concept circumscription is defined or implied - traditionally signified by the Latin "sensu" or "sec." (from secundum, meaning "according to"). For taxa that result from identifications, a reference to the keys, monographs, experts and other sources should be given.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:namePublishedIn" class="anchor"></a><a id="namePublishedIn" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">namePublishedIn<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/namePublishedIn">http://rs.tdwg.org/dwc/terms/namePublishedIn</a></td></tr>
+        <tr><td class="label">Definition</td><td>A reference for the publication in which the scientificName was originally established under the rules of the associated nomenclaturalCode.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:namePublishedInYear" class="anchor"></a><a id="namePublishedInYear" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">namePublishedInYear<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/namePublishedInYear">http://rs.tdwg.org/dwc/terms/namePublishedInYear</a></td></tr>
+        <tr><td class="label">Definition</td><td>The four-digit year in which the scientificName was published.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:higherClassification" class="anchor"></a><a id="higherClassification" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">higherClassification<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/higherClassification">http://rs.tdwg.org/dwc/terms/higherClassification</a></td></tr>
+        <tr><td class="label">Definition</td><td>A list (concatenated and separated) of taxa names terminating at the rank immediately superior to the taxon referenced in the taxon record.</td></tr>
+        <tr><td class="label">Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>), with terms in order from the highest taxonomic rank to the lowest.</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:kingdom" class="anchor"></a><a id="kingdom" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">kingdom<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/kingdom">http://rs.tdwg.org/dwc/terms/kingdom</a></td></tr>
+        <tr><td class="label">Definition</td><td>The full scientific name of the kingdom in which the taxon is classified.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:phylum" class="anchor"></a><a id="phylum" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">phylum<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/phylum">http://rs.tdwg.org/dwc/terms/phylum</a></td></tr>
+        <tr><td class="label">Definition</td><td>The full scientific name of the phylum or division in which the taxon is classified.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:class" class="anchor"></a><a id="class" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">class<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/class">http://rs.tdwg.org/dwc/terms/class</a></td></tr>
+        <tr><td class="label">Definition</td><td>The full scientific name of the class in which the taxon is classified.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:order" class="anchor"></a><a id="order" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">order<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/order">http://rs.tdwg.org/dwc/terms/order</a></td></tr>
+        <tr><td class="label">Definition</td><td>The full scientific name of the order in which the taxon is classified.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:family" class="anchor"></a><a id="family" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">family<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/family">http://rs.tdwg.org/dwc/terms/family</a></td></tr>
+        <tr><td class="label">Definition</td><td>The full scientific name of the family in which the taxon is classified.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:genus" class="anchor"></a><a id="genus" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">genus<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/genus">http://rs.tdwg.org/dwc/terms/genus</a></td></tr>
+        <tr><td class="label">Definition</td><td>The full scientific name of the genus in which the taxon is classified.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:subgenus" class="anchor"></a><a id="subgenus" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">subgenus<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/subgenus">http://rs.tdwg.org/dwc/terms/subgenus</a></td></tr>
+        <tr><td class="label">Definition</td><td>The full scientific name of the subgenus in which the taxon is classified. Values should include the genus to avoid homonym confusion.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:specificEpithet" class="anchor"></a><a id="specificEpithet" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">specificEpithet<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/specificEpithet">http://rs.tdwg.org/dwc/terms/specificEpithet</a></td></tr>
+        <tr><td class="label">Definition</td><td>The name of the first or species epithet of the scientificName.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:infraspecificEpithet" class="anchor"></a><a id="infraspecificEpithet" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">infraspecificEpithet<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/infraspecificEpithet">http://rs.tdwg.org/dwc/terms/infraspecificEpithet</a></td></tr>
+        <tr><td class="label">Definition</td><td>The name of the lowest or terminal infraspecific epithet of the scientificName, excluding any rank designation.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:taxonRank" class="anchor"></a><a id="taxonRank" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">taxonRank<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/taxonRank">http://rs.tdwg.org/dwc/terms/taxonRank</a></td></tr>
+        <tr><td class="label">Definition</td><td>The taxonomic rank of the most specific name in the scientificName.</td></tr>
+        <tr><td class="label">Comments</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:verbatimTaxonRank" class="anchor"></a><a id="verbatimTaxonRank" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">verbatimTaxonRank<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimTaxonRank">http://rs.tdwg.org/dwc/terms/verbatimTaxonRank</a></td></tr>
+        <tr><td class="label">Definition</td><td>The taxonomic rank of the most specific name in the scientificName as it appears in the original record.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:scientificNameAuthorship" class="anchor"></a><a id="scientificNameAuthorship" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">scientificNameAuthorship<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/scientificNameAuthorship">http://rs.tdwg.org/dwc/terms/scientificNameAuthorship</a></td></tr>
+        <tr><td class="label">Definition</td><td>The authorship information for the scientificName formatted according to the conventions of the applicable nomenclaturalCode.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:vernacularName" class="anchor"></a><a id="vernacularName" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">vernacularName<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/vernacularName">http://rs.tdwg.org/dwc/terms/vernacularName</a></td></tr>
+        <tr><td class="label">Definition</td><td>A common or vernacular name.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:nomenclaturalCode" class="anchor"></a><a id="nomenclaturalCode" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">nomenclaturalCode<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/nomenclaturalCode">http://rs.tdwg.org/dwc/terms/nomenclaturalCode</a></td></tr>
+        <tr><td class="label">Definition</td><td>The nomenclatural code (or codes in the case of an ambiregnal name) under which the scientificName is constructed.</td></tr>
+        <tr><td class="label">Comments</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:taxonomicStatus" class="anchor"></a><a id="taxonomicStatus" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">taxonomicStatus<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/taxonomicStatus">http://rs.tdwg.org/dwc/terms/taxonomicStatus</a></td></tr>
+        <tr><td class="label">Definition</td><td>The status of the use of the scientificName as a label for a taxon. Requires taxonomic opinion to define the scope of a taxon. Rules of priority then are used to define the taxonomic status of the nomenclature contained in that scope, combined with the experts opinion. It must be linked to a specific taxonomic reference that defines the concept.</td></tr>
+        <tr><td class="label">Comments</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:nomenclaturalStatus" class="anchor"></a><a id="nomenclaturalStatus" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">nomenclaturalStatus<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/nomenclaturalStatus">http://rs.tdwg.org/dwc/terms/nomenclaturalStatus</a></td></tr>
+        <tr><td class="label">Definition</td><td>The status related to the original publication of the name and its conformance to the relevant rules of nomenclature. It is based essentially on an algorithm according to the business rules of the code. It requires no taxonomic opinion.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:taxonRemarks" class="anchor"></a><a id="taxonRemarks" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">taxonRemarks<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/taxonRemarks">http://rs.tdwg.org/dwc/terms/taxonRemarks</a></td></tr>
+        <tr><td class="label">Definition</td><td>Comments or notes about the taxon or name.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+
+
+
+## MeasurementOrFact
+    
+<div class="my-4">
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:measurementID">measurementID</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:measurementType">measurementType</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:measurementValue">measurementValue</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:measurementAccuracy">measurementAccuracy</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:measurementUnit">measurementUnit</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:measurementDeterminedBy">measurementDeterminedBy</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:measurementDeterminedDate">measurementDeterminedDate</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:measurementMethod">measurementMethod</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:measurementRemarks">measurementRemarks</a>
+    
+</div>
+
+
+
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-primary"><th colspan="2">MeasurementOrFact<span class="badge badge-primary float-right">Class</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/MeasurementOrFact">http://rs.tdwg.org/dwc/terms/MeasurementOrFact</a></td></tr>
+        <tr><td class="label">Definition</td><td>A measurement of or fact about an rdfs:Resource (<a href="http://www.w3.org/2000/01/rdf-schema#Resource">http://www.w3.org/2000/01/rdf-schema#Resource</a>).</td></tr>
+        <tr><td class="label">Comments</td><td>Resources can be thought of as identifiable records or instances of classes and may include, but need not be limited to dwc:Occurrence, dwc:Organism, dwc:MaterialSample, dwc:Event, dwc:Location, dwc:GeologicalContext, dwc:Identification, or dwc:Taxon.</td></tr>
+    </tbody>
+</table>
+
+
+
+<a id="dwc:measurementID" class="anchor"></a><a id="measurementID" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">measurementID<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/measurementID">http://rs.tdwg.org/dwc/terms/measurementID</a></td></tr>
+        <tr><td class="label">Definition</td><td>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:measurementType" class="anchor"></a><a id="measurementType" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">measurementType<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/measurementType">http://rs.tdwg.org/dwc/terms/measurementType</a></td></tr>
+        <tr><td class="label">Definition</td><td>The nature of the measurement, fact, characteristic, or assertion.</td></tr>
+        <tr><td class="label">Comments</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:measurementValue" class="anchor"></a><a id="measurementValue" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">measurementValue<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/measurementValue">http://rs.tdwg.org/dwc/terms/measurementValue</a></td></tr>
+        <tr><td class="label">Definition</td><td>The value of the measurement, fact, characteristic, or assertion.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:measurementAccuracy" class="anchor"></a><a id="measurementAccuracy" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">measurementAccuracy<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/measurementAccuracy">http://rs.tdwg.org/dwc/terms/measurementAccuracy</a></td></tr>
+        <tr><td class="label">Definition</td><td>The description of the potential error associated with the measurementValue.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:measurementUnit" class="anchor"></a><a id="measurementUnit" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">measurementUnit<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/measurementUnit">http://rs.tdwg.org/dwc/terms/measurementUnit</a></td></tr>
+        <tr><td class="label">Definition</td><td>The units associated with the measurementValue.</td></tr>
+        <tr><td class="label">Comments</td><td>Recommended best practice is to use the International System of Units (SI).</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:measurementDeterminedBy" class="anchor"></a><a id="measurementDeterminedBy" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">measurementDeterminedBy<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/measurementDeterminedBy">http://rs.tdwg.org/dwc/terms/measurementDeterminedBy</a></td></tr>
+        <tr><td class="label">Definition</td><td>A list (concatenated and separated) of names of people, groups, or organizations who determined the value of the MeasurementOrFact.</td></tr>
+        <tr><td class="label">Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:measurementDeterminedDate" class="anchor"></a><a id="measurementDeterminedDate" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">measurementDeterminedDate<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/measurementDeterminedDate">http://rs.tdwg.org/dwc/terms/measurementDeterminedDate</a></td></tr>
+        <tr><td class="label">Definition</td><td>The date on which the MeasurementOrFact was made.</td></tr>
+        <tr><td class="label">Comments</td><td>Recommended best practice is to use a date that conforms to ISO 8601:2004(E).</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:measurementMethod" class="anchor"></a><a id="measurementMethod" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">measurementMethod<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/measurementMethod">http://rs.tdwg.org/dwc/terms/measurementMethod</a></td></tr>
+        <tr><td class="label">Definition</td><td>A description of or reference to (publication, URI) the method or protocol used to determine the measurement, fact, characteristic, or assertion.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:measurementRemarks" class="anchor"></a><a id="measurementRemarks" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">measurementRemarks<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/measurementRemarks">http://rs.tdwg.org/dwc/terms/measurementRemarks</a></td></tr>
+        <tr><td class="label">Definition</td><td>Comments or notes accompanying the MeasurementOrFact.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+
+
+
+## ResourceRelationship
+    
+<div class="my-4">
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:resourceRelationshipID">resourceRelationshipID</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:resourceID">resourceID</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:relatedResourceID">relatedResourceID</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:relationshipOfResource">relationshipOfResource</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:relationshipAccordingTo">relationshipAccordingTo</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:relationshipEstablishedDate">relationshipEstablishedDate</a>
+    
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:relationshipRemarks">relationshipRemarks</a>
+    
+</div>
+
+
+
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-primary"><th colspan="2">ResourceRelationship<span class="badge badge-primary float-right">Class</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/ResourceRelationship">http://rs.tdwg.org/dwc/terms/ResourceRelationship</a></td></tr>
+        <tr><td class="label">Definition</td><td>A relationship of one rdfs:Resource (<a href="http://www.w3.org/2000/01/rdf-schema#Resource">http://www.w3.org/2000/01/rdf-schema#Resource</a>) to another.</td></tr>
+        <tr><td class="label">Comments</td><td>Resources can be thought of as identifiable records or instances of classes and may include, but need not be limited to dwc:Occurrence, dwc:Organism, dwc:MaterialSample, dwc:Event, dwc:Location, dwc:GeologicalContext, dwc:Identification, or dwc:Taxon.</td></tr>
+    </tbody>
+</table>
+
+
+
+<a id="dwc:resourceRelationshipID" class="anchor"></a><a id="resourceRelationshipID" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">resourceRelationshipID<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/resourceRelationshipID">http://rs.tdwg.org/dwc/terms/resourceRelationshipID</a></td></tr>
+        <tr><td class="label">Definition</td><td>An identifier for an instance of relationship between one resource (the subject) and another (relatedResource, the object).</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:resourceID" class="anchor"></a><a id="resourceID" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">resourceID<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/resourceID">http://rs.tdwg.org/dwc/terms/resourceID</a></td></tr>
+        <tr><td class="label">Definition</td><td>An identifier for the resource that is the subject of the relationship.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:relatedResourceID" class="anchor"></a><a id="relatedResourceID" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">relatedResourceID<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/relatedResourceID">http://rs.tdwg.org/dwc/terms/relatedResourceID</a></td></tr>
+        <tr><td class="label">Definition</td><td>An identifier for a related resource (the object, rather than the subject of the relationship).</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:relationshipOfResource" class="anchor"></a><a id="relationshipOfResource" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">relationshipOfResource<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/relationshipOfResource">http://rs.tdwg.org/dwc/terms/relationshipOfResource</a></td></tr>
+        <tr><td class="label">Definition</td><td>The relationship of the resource identified by relatedResourceID to the subject (optionally identified by the resourceID).</td></tr>
+        <tr><td class="label">Comments</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:relationshipAccordingTo" class="anchor"></a><a id="relationshipAccordingTo" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">relationshipAccordingTo<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/relationshipAccordingTo">http://rs.tdwg.org/dwc/terms/relationshipAccordingTo</a></td></tr>
+        <tr><td class="label">Definition</td><td>The source (person, organization, publication, reference) establishing the relationship between the two resources.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:relationshipEstablishedDate" class="anchor"></a><a id="relationshipEstablishedDate" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">relationshipEstablishedDate<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/relationshipEstablishedDate">http://rs.tdwg.org/dwc/terms/relationshipEstablishedDate</a></td></tr>
+        <tr><td class="label">Definition</td><td>The date-time on which the relationship between the two resources was established.</td></tr>
+        <tr><td class="label">Comments</td><td>Recommended best practice is to use a date that conforms to ISO 8601:2004(E).</td></tr>
+    </tbody>
+</table>
+
+<a id="dwc:relationshipRemarks" class="anchor"></a><a id="relationshipRemarks" class="anchor"></a>
+<table class="table table-sm border mb-3">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">relationshipRemarks<span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/relationshipRemarks">http://rs.tdwg.org/dwc/terms/relationshipRemarks</a></td></tr>
+        <tr><td class="label">Definition</td><td>Comments or notes about the relationship between the two resources.</td></tr>
+        <tr><td class="label">Comments</td><td></td></tr>
+    </tbody>
+</table>
 
 
 
@@ -241,7 +2673,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
 
 
 
-<a id="dwciri:inDescribedPlace" class="anchor"></a>
+<a id="dwciri:inDescribedPlace" class="anchor"></a><a id="inDescribedPlace" class="anchor"></a>
 <table class="table table-sm border mb-3">
     <tbody>
         <tr class="table-secondary"><th colspan="2">inDescribedPlace<span class="badge badge-secondary float-right">Property</span></th></tr>
@@ -251,7 +2683,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     </tbody>
 </table>
 
-<a id="dwciri:identifiedBy" class="anchor"></a>
+<a id="dwciri:identifiedBy" class="anchor"></a><a id="identifiedBy" class="anchor"></a>
 <table class="table table-sm border mb-3">
     <tbody>
         <tr class="table-secondary"><th colspan="2">identifiedBy<span class="badge badge-secondary float-right">Property</span></th></tr>
@@ -261,7 +2693,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     </tbody>
 </table>
 
-<a id="dwciri:recordedBy" class="anchor"></a>
+<a id="dwciri:recordedBy" class="anchor"></a><a id="recordedBy" class="anchor"></a>
 <table class="table table-sm border mb-3">
     <tbody>
         <tr class="table-secondary"><th colspan="2">recordedBy<span class="badge badge-secondary float-right">Property</span></th></tr>
@@ -271,7 +2703,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     </tbody>
 </table>
 
-<a id="dwciri:toTaxon" class="anchor"></a>
+<a id="dwciri:toTaxon" class="anchor"></a><a id="toTaxon" class="anchor"></a>
 <table class="table table-sm border mb-3">
     <tbody>
         <tr class="table-secondary"><th colspan="2">toTaxon<span class="badge badge-secondary float-right">Property</span></th></tr>
@@ -281,7 +2713,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     </tbody>
 </table>
 
-<a id="dwciri:inCollection" class="anchor"></a>
+<a id="dwciri:inCollection" class="anchor"></a><a id="inCollection" class="anchor"></a>
 <table class="table table-sm border mb-3">
     <tbody>
         <tr class="table-secondary"><th colspan="2">inCollection<span class="badge badge-secondary float-right">Property</span></th></tr>
@@ -291,7 +2723,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     </tbody>
 </table>
 
-<a id="dwciri:georeferencedBy" class="anchor"></a>
+<a id="dwciri:georeferencedBy" class="anchor"></a><a id="georeferencedBy" class="anchor"></a>
 <table class="table table-sm border mb-3">
     <tbody>
         <tr class="table-secondary"><th colspan="2">georeferencedBy<span class="badge badge-secondary float-right">Property</span></th></tr>
@@ -301,7 +2733,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     </tbody>
 </table>
 
-<a id="dwciri:behavior" class="anchor"></a>
+<a id="dwciri:behavior" class="anchor"></a><a id="behavior" class="anchor"></a>
 <table class="table table-sm border mb-3">
     <tbody>
         <tr class="table-secondary"><th colspan="2">behavior<span class="badge badge-secondary float-right">Property</span></th></tr>
@@ -311,7 +2743,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     </tbody>
 </table>
 
-<a id="dwciri:dataGeneralizations" class="anchor"></a>
+<a id="dwciri:dataGeneralizations" class="anchor"></a><a id="dataGeneralizations" class="anchor"></a>
 <table class="table table-sm border mb-3">
     <tbody>
         <tr class="table-secondary"><th colspan="2">dataGeneralizations<span class="badge badge-secondary float-right">Property</span></th></tr>
@@ -321,7 +2753,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     </tbody>
 </table>
 
-<a id="dwciri:disposition" class="anchor"></a>
+<a id="dwciri:disposition" class="anchor"></a><a id="disposition" class="anchor"></a>
 <table class="table table-sm border mb-3">
     <tbody>
         <tr class="table-secondary"><th colspan="2">disposition<span class="badge badge-secondary float-right">Property</span></th></tr>
@@ -331,7 +2763,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     </tbody>
 </table>
 
-<a id="dwciri:earliestGeochronologicalEra" class="anchor"></a>
+<a id="dwciri:earliestGeochronologicalEra" class="anchor"></a><a id="earliestGeochronologicalEra" class="anchor"></a>
 <table class="table table-sm border mb-3">
     <tbody>
         <tr class="table-secondary"><th colspan="2">earliestGeochronologicalEra<span class="badge badge-secondary float-right">Property</span></th></tr>
@@ -341,7 +2773,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     </tbody>
 </table>
 
-<a id="dwciri:establishmentMeans" class="anchor"></a>
+<a id="dwciri:establishmentMeans" class="anchor"></a><a id="establishmentMeans" class="anchor"></a>
 <table class="table table-sm border mb-3">
     <tbody>
         <tr class="table-secondary"><th colspan="2">establishmentMeans<span class="badge badge-secondary float-right">Property</span></th></tr>
@@ -351,7 +2783,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     </tbody>
 </table>
 
-<a id="dwciri:fieldNotes" class="anchor"></a>
+<a id="dwciri:fieldNotes" class="anchor"></a><a id="fieldNotes" class="anchor"></a>
 <table class="table table-sm border mb-3">
     <tbody>
         <tr class="table-secondary"><th colspan="2">fieldNotes<span class="badge badge-secondary float-right">Property</span></th></tr>
@@ -361,7 +2793,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     </tbody>
 </table>
 
-<a id="dwciri:fieldNumber" class="anchor"></a>
+<a id="dwciri:fieldNumber" class="anchor"></a><a id="fieldNumber" class="anchor"></a>
 <table class="table table-sm border mb-3">
     <tbody>
         <tr class="table-secondary"><th colspan="2">fieldNumber<span class="badge badge-secondary float-right">Property</span></th></tr>
@@ -371,7 +2803,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     </tbody>
 </table>
 
-<a id="dwciri:footprintSRS" class="anchor"></a>
+<a id="dwciri:footprintSRS" class="anchor"></a><a id="footprintSRS" class="anchor"></a>
 <table class="table table-sm border mb-3">
     <tbody>
         <tr class="table-secondary"><th colspan="2">footprintSRS<span class="badge badge-secondary float-right">Property</span></th></tr>
@@ -381,7 +2813,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     </tbody>
 </table>
 
-<a id="dwciri:footprintWKT" class="anchor"></a>
+<a id="dwciri:footprintWKT" class="anchor"></a><a id="footprintWKT" class="anchor"></a>
 <table class="table table-sm border mb-3">
     <tbody>
         <tr class="table-secondary"><th colspan="2">footprintWKT<span class="badge badge-secondary float-right">Property</span></th></tr>
@@ -391,7 +2823,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     </tbody>
 </table>
 
-<a id="dwciri:fromLithostratigraphicUnit" class="anchor"></a>
+<a id="dwciri:fromLithostratigraphicUnit" class="anchor"></a><a id="fromLithostratigraphicUnit" class="anchor"></a>
 <table class="table table-sm border mb-3">
     <tbody>
         <tr class="table-secondary"><th colspan="2">fromLithostratigraphicUnit<span class="badge badge-secondary float-right">Property</span></th></tr>
@@ -401,7 +2833,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     </tbody>
 </table>
 
-<a id="dwciri:geodeticDatum" class="anchor"></a>
+<a id="dwciri:geodeticDatum" class="anchor"></a><a id="geodeticDatum" class="anchor"></a>
 <table class="table table-sm border mb-3">
     <tbody>
         <tr class="table-secondary"><th colspan="2">geodeticDatum<span class="badge badge-secondary float-right">Property</span></th></tr>
@@ -411,7 +2843,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     </tbody>
 </table>
 
-<a id="dwciri:georeferenceProtocol" class="anchor"></a>
+<a id="dwciri:georeferenceProtocol" class="anchor"></a><a id="georeferenceProtocol" class="anchor"></a>
 <table class="table table-sm border mb-3">
     <tbody>
         <tr class="table-secondary"><th colspan="2">georeferenceProtocol<span class="badge badge-secondary float-right">Property</span></th></tr>
@@ -421,7 +2853,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     </tbody>
 </table>
 
-<a id="dwciri:georeferenceSources" class="anchor"></a>
+<a id="dwciri:georeferenceSources" class="anchor"></a><a id="georeferenceSources" class="anchor"></a>
 <table class="table table-sm border mb-3">
     <tbody>
         <tr class="table-secondary"><th colspan="2">georeferenceSources<span class="badge badge-secondary float-right">Property</span></th></tr>
@@ -431,7 +2863,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     </tbody>
 </table>
 
-<a id="dwciri:georeferenceVerificationStatus" class="anchor"></a>
+<a id="dwciri:georeferenceVerificationStatus" class="anchor"></a><a id="georeferenceVerificationStatus" class="anchor"></a>
 <table class="table table-sm border mb-3">
     <tbody>
         <tr class="table-secondary"><th colspan="2">georeferenceVerificationStatus<span class="badge badge-secondary float-right">Property</span></th></tr>
@@ -441,7 +2873,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     </tbody>
 </table>
 
-<a id="dwciri:habitat" class="anchor"></a>
+<a id="dwciri:habitat" class="anchor"></a><a id="habitat" class="anchor"></a>
 <table class="table table-sm border mb-3">
     <tbody>
         <tr class="table-secondary"><th colspan="2">habitat<span class="badge badge-secondary float-right">Property</span></th></tr>
@@ -451,7 +2883,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     </tbody>
 </table>
 
-<a id="dwciri:identificationQualifier" class="anchor"></a>
+<a id="dwciri:identificationQualifier" class="anchor"></a><a id="identificationQualifier" class="anchor"></a>
 <table class="table table-sm border mb-3">
     <tbody>
         <tr class="table-secondary"><th colspan="2">identificationQualifier<span class="badge badge-secondary float-right">Property</span></th></tr>
@@ -461,7 +2893,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     </tbody>
 </table>
 
-<a id="dwciri:identificationVerificationStatus" class="anchor"></a>
+<a id="dwciri:identificationVerificationStatus" class="anchor"></a><a id="identificationVerificationStatus" class="anchor"></a>
 <table class="table table-sm border mb-3">
     <tbody>
         <tr class="table-secondary"><th colspan="2">identificationVerificationStatus<span class="badge badge-secondary float-right">Property</span></th></tr>
@@ -471,7 +2903,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     </tbody>
 </table>
 
-<a id="dwciri:inDataset" class="anchor"></a>
+<a id="dwciri:inDataset" class="anchor"></a><a id="inDataset" class="anchor"></a>
 <table class="table table-sm border mb-3">
     <tbody>
         <tr class="table-secondary"><th colspan="2">inDataset<span class="badge badge-secondary float-right">Property</span></th></tr>
@@ -481,7 +2913,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     </tbody>
 </table>
 
-<a id="dwciri:informationWithheld" class="anchor"></a>
+<a id="dwciri:informationWithheld" class="anchor"></a><a id="informationWithheld" class="anchor"></a>
 <table class="table table-sm border mb-3">
     <tbody>
         <tr class="table-secondary"><th colspan="2">informationWithheld<span class="badge badge-secondary float-right">Property</span></th></tr>
@@ -491,7 +2923,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     </tbody>
 </table>
 
-<a id="dwciri:latestGeochronologicalEra" class="anchor"></a>
+<a id="dwciri:latestGeochronologicalEra" class="anchor"></a><a id="latestGeochronologicalEra" class="anchor"></a>
 <table class="table table-sm border mb-3">
     <tbody>
         <tr class="table-secondary"><th colspan="2">latestGeochronologicalEra<span class="badge badge-secondary float-right">Property</span></th></tr>
@@ -501,7 +2933,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     </tbody>
 </table>
 
-<a id="dwciri:lifeStage" class="anchor"></a>
+<a id="dwciri:lifeStage" class="anchor"></a><a id="lifeStage" class="anchor"></a>
 <table class="table table-sm border mb-3">
     <tbody>
         <tr class="table-secondary"><th colspan="2">lifeStage<span class="badge badge-secondary float-right">Property</span></th></tr>
@@ -511,7 +2943,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     </tbody>
 </table>
 
-<a id="dwciri:locationAccordingTo" class="anchor"></a>
+<a id="dwciri:locationAccordingTo" class="anchor"></a><a id="locationAccordingTo" class="anchor"></a>
 <table class="table table-sm border mb-3">
     <tbody>
         <tr class="table-secondary"><th colspan="2">locationAccordingTo<span class="badge badge-secondary float-right">Property</span></th></tr>
@@ -521,7 +2953,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     </tbody>
 </table>
 
-<a id="dwciri:measurementDeterminedBy" class="anchor"></a>
+<a id="dwciri:measurementDeterminedBy" class="anchor"></a><a id="measurementDeterminedBy" class="anchor"></a>
 <table class="table table-sm border mb-3">
     <tbody>
         <tr class="table-secondary"><th colspan="2">measurementDeterminedBy<span class="badge badge-secondary float-right">Property</span></th></tr>
@@ -531,7 +2963,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     </tbody>
 </table>
 
-<a id="dwciri:measurementMethod" class="anchor"></a>
+<a id="dwciri:measurementMethod" class="anchor"></a><a id="measurementMethod" class="anchor"></a>
 <table class="table table-sm border mb-3">
     <tbody>
         <tr class="table-secondary"><th colspan="2">measurementMethod<span class="badge badge-secondary float-right">Property</span></th></tr>
@@ -541,7 +2973,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     </tbody>
 </table>
 
-<a id="dwciri:measurementType" class="anchor"></a>
+<a id="dwciri:measurementType" class="anchor"></a><a id="measurementType" class="anchor"></a>
 <table class="table table-sm border mb-3">
     <tbody>
         <tr class="table-secondary"><th colspan="2">measurementType<span class="badge badge-secondary float-right">Property</span></th></tr>
@@ -551,7 +2983,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     </tbody>
 </table>
 
-<a id="dwciri:measurementUnit" class="anchor"></a>
+<a id="dwciri:measurementUnit" class="anchor"></a><a id="measurementUnit" class="anchor"></a>
 <table class="table table-sm border mb-3">
     <tbody>
         <tr class="table-secondary"><th colspan="2">measurementUnit<span class="badge badge-secondary float-right">Property</span></th></tr>
@@ -561,7 +2993,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     </tbody>
 </table>
 
-<a id="dwciri:occurrenceStatus" class="anchor"></a>
+<a id="dwciri:occurrenceStatus" class="anchor"></a><a id="occurrenceStatus" class="anchor"></a>
 <table class="table table-sm border mb-3">
     <tbody>
         <tr class="table-secondary"><th colspan="2">occurrenceStatus<span class="badge badge-secondary float-right">Property</span></th></tr>
@@ -571,7 +3003,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     </tbody>
 </table>
 
-<a id="dwciri:organismQuantityType" class="anchor"></a>
+<a id="dwciri:organismQuantityType" class="anchor"></a><a id="organismQuantityType" class="anchor"></a>
 <table class="table table-sm border mb-3">
     <tbody>
         <tr class="table-secondary"><th colspan="2">organismQuantityType<span class="badge badge-secondary float-right">Property</span></th></tr>
@@ -581,7 +3013,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     </tbody>
 </table>
 
-<a id="dwciri:preparations" class="anchor"></a>
+<a id="dwciri:preparations" class="anchor"></a><a id="preparations" class="anchor"></a>
 <table class="table table-sm border mb-3">
     <tbody>
         <tr class="table-secondary"><th colspan="2">preparations<span class="badge badge-secondary float-right">Property</span></th></tr>
@@ -591,7 +3023,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     </tbody>
 </table>
 
-<a id="dwciri:recordNumber" class="anchor"></a>
+<a id="dwciri:recordNumber" class="anchor"></a><a id="recordNumber" class="anchor"></a>
 <table class="table table-sm border mb-3">
     <tbody>
         <tr class="table-secondary"><th colspan="2">recordNumber<span class="badge badge-secondary float-right">Property</span></th></tr>
@@ -601,7 +3033,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     </tbody>
 </table>
 
-<a id="dwciri:reproductiveCondition" class="anchor"></a>
+<a id="dwciri:reproductiveCondition" class="anchor"></a><a id="reproductiveCondition" class="anchor"></a>
 <table class="table table-sm border mb-3">
     <tbody>
         <tr class="table-secondary"><th colspan="2">reproductiveCondition<span class="badge badge-secondary float-right">Property</span></th></tr>
@@ -611,7 +3043,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     </tbody>
 </table>
 
-<a id="dwciri:sampleSizeUnit" class="anchor"></a>
+<a id="dwciri:sampleSizeUnit" class="anchor"></a><a id="sampleSizeUnit" class="anchor"></a>
 <table class="table table-sm border mb-3">
     <tbody>
         <tr class="table-secondary"><th colspan="2">sampleSizeUnit<span class="badge badge-secondary float-right">Property</span></th></tr>
@@ -621,7 +3053,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     </tbody>
 </table>
 
-<a id="dwciri:samplingProtocol" class="anchor"></a>
+<a id="dwciri:samplingProtocol" class="anchor"></a><a id="samplingProtocol" class="anchor"></a>
 <table class="table table-sm border mb-3">
     <tbody>
         <tr class="table-secondary"><th colspan="2">samplingProtocol<span class="badge badge-secondary float-right">Property</span></th></tr>
@@ -631,7 +3063,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     </tbody>
 </table>
 
-<a id="dwciri:sex" class="anchor"></a>
+<a id="dwciri:sex" class="anchor"></a><a id="sex" class="anchor"></a>
 <table class="table table-sm border mb-3">
     <tbody>
         <tr class="table-secondary"><th colspan="2">sex<span class="badge badge-secondary float-right">Property</span></th></tr>
@@ -641,7 +3073,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     </tbody>
 </table>
 
-<a id="dwciri:typeStatus" class="anchor"></a>
+<a id="dwciri:typeStatus" class="anchor"></a><a id="typeStatus" class="anchor"></a>
 <table class="table table-sm border mb-3">
     <tbody>
         <tr class="table-secondary"><th colspan="2">typeStatus<span class="badge badge-secondary float-right">Property</span></th></tr>
@@ -651,7 +3083,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     </tbody>
 </table>
 
-<a id="dwciri:verbatimCoordinateSystem" class="anchor"></a>
+<a id="dwciri:verbatimCoordinateSystem" class="anchor"></a><a id="verbatimCoordinateSystem" class="anchor"></a>
 <table class="table table-sm border mb-3">
     <tbody>
         <tr class="table-secondary"><th colspan="2">verbatimCoordinateSystem<span class="badge badge-secondary float-right">Property</span></th></tr>
@@ -661,7 +3093,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     </tbody>
 </table>
 
-<a id="dwciri:verbatimSRS" class="anchor"></a>
+<a id="dwciri:verbatimSRS" class="anchor"></a><a id="verbatimSRS" class="anchor"></a>
 <table class="table table-sm border mb-3">
     <tbody>
         <tr class="table-secondary"><th colspan="2">verbatimSRS<span class="badge badge-secondary float-right">Property</span></th></tr>
