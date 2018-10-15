@@ -243,7 +243,10 @@ class DwcDigester(object):
         data = {}
         data["class_groups"] = self.template_data
 
-        env = Environment(loader = FileSystemLoader(os.path.dirname(html_template)))
+        env = Environment(
+            loader = FileSystemLoader(os.path.dirname(html_template)),
+            trim_blocks = True
+        )
         template = env.get_template(os.path.basename(html_template))
         html = template.render(data)
 
