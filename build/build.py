@@ -146,6 +146,7 @@ class DwcDigester(object):
         term_data["class"] = vs_term['organized_in']
         term_data["definition"] = self.convert_link(vs_term['definition'])
         term_data["comments"] = self.convert_link(self.convert_code(vs_term['comments']))
+        term_data["examples"] = self.convert_link(self.convert_code(vs_term['examples']))
         term_data["rdf_type"] = vs_term['rdf_type']
         namespace_url, _ = self.split_iri(term_iri)
         term_data["namespace"] = self.resolve_namespace_abbrev(namespace_url)
