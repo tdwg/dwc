@@ -38,7 +38,7 @@ class DwcNamespaceError(Exception):
 class DwcBuildReader():
 
     def __init__(self, dwc_build_file):
-        """Custom Reader switching between to raw Github or local file"""
+        """Custom Reader switching between raw Github or local file"""
         self.dwc_build_file = dwc_build_file
 
     def __enter__(self):
