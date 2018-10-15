@@ -48,7 +48,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
         <tr><td class="label">Identifier</td><td><a href="http://purl.org/dc/terms/modified">http://purl.org/dc/terms/modified</a></td></tr>
         <tr><td class="label">Definition</td><td>The most recent date-time on which the resource was changed.</td></tr>
         <tr><td class="label">Comments</td><td>Recommended best practice is to use a date that conforms to ISO 8601:2004(E).</td></tr>
-        <tr><td class="label">Examples</td><td><code>1963-03-08T14:07-0600</code> (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC). <code>2009-02-20T08:40Z</code> (20 February 2009 8:40am UTC). '2018-08-29T15:19<code> (3:19pm local time on 29 August 2018). </code>1809-02-12<code> (some time during 12 February 1809). </code>1906-06<code> (some time in June 1906). </code>1971<code> (some time in the year 1971). </code>2007-03-01T13:00:00Z/2008-05-11T15:30:00Z<code> (some time during the interval between 1 March 2007 1pm UTC and 11 May 2008 3:30pm UTC). </code>1900/1909<code> (some time during the interval between the beginning of the year 1900 and the end of the year 1909). </code>2007-11-13/15` (some time in the interval between 13 November 2007 and 15 November 2007).</td></tr>
+        <tr><td class="label">Examples</td><td><code>1963-03-08T14:07-0600</code> (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC). <code>2009-02-20T08:40Z</code> (20 February 2009 8:40am UTC). <code>2018-08-29T15:19</code> (3:19pm local time on 29 August 2018). <code>1809-02-12</code> (some time during 12 February 1809). <code>1906-06</code> (some time in June 1906). <code>1971</code> (some time in the year 1971). <code>2007-03-01T13:00:00Z/2008-05-11T15:30:00Z</code> (some time during the interval between 1 March 2007 1pm UTC and 11 May 2008 3:30pm UTC). <code>1900/1909</code> (some time during the interval between the beginning of the year 1900 and the end of the year 1909). <code>2007-11-13/15</code> (some time in the interval between 13 November 2007 and 15 November 2007).</td></tr>
     </tbody>
 </table>
 <p class="invisible">
@@ -92,7 +92,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
         <tr><td class="label">Identifier</td><td><a href="http://purl.org/dc/terms/accessRights">http://purl.org/dc/terms/accessRights</a></td></tr>
         <tr><td class="label">Definition</td><td>Information about who can access the resource or an indication of its security status. Access Rights may include information regarding access or restrictions based on privacy, security, or other policies.</td></tr>
         <tr><td class="label">Comments</td><td></td></tr>
-        <tr><td class="label">Examples</td><td><code>not-for-profit use only</code>, '<a href="https://www.fieldmuseum.org/field-museum-natural-history-conditions-and-suggested-norms-use-collections-data-and-images">https://www.fieldmuseum.org/field-museum-natural-history-conditions-and-suggested-norms-use-collections-data-and-images</a>'</td></tr>
+        <tr><td class="label">Examples</td><td><code>not-for-profit use only</code>, <code><a href="https://www.fieldmuseum.org/field-museum-natural-history-conditions-and-suggested-norms-use-collections-data-and-images">https://www.fieldmuseum.org/field-museum-natural-history-conditions-and-suggested-norms-use-collections-data-and-images</a></code></td></tr>
     </tbody>
 </table>
 <p class="invisible">
@@ -147,7 +147,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
         <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/datasetID">http://rs.tdwg.org/dwc/terms/datasetID</a></td></tr>
         <tr><td class="label">Definition</td><td>An identifier for the set of data. May be a global unique identifier or an identifier specific to a collection or institution.</td></tr>
         <tr><td class="label">Comments</td><td></td></tr>
-        <tr><td class="label">Examples</td><td>b15d4952-7d20-46f1-8a3e-556a512b04c5</td></tr>
+        <tr><td class="label">Examples</td><td><code>b15d4952-7d20-46f1-8a3e-556a512b04c5</code></td></tr>
     </tbody>
 </table>
 <p class="invisible">
@@ -765,7 +765,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
         <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/eventID">http://rs.tdwg.org/dwc/terms/eventID</a></td></tr>
         <tr><td class="label">Definition</td><td>An identifier for the set of information associated with an Event (something that occurs at a place and time). May be a global unique identifier or an identifier specific to the data set.</td></tr>
         <tr><td class="label">Comments</td><td></td></tr>
-        <tr><td class="label">Examples</td><td>INBO:VIS:Ev:00009375</td></tr>
+        <tr><td class="label">Examples</td><td><code>INBO:VIS:Ev:00009375</code></td></tr>
     </tbody>
 </table>
 <p class="invisible">
@@ -798,7 +798,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
         <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/eventDate">http://rs.tdwg.org/dwc/terms/eventDate</a></td></tr>
         <tr><td class="label">Definition</td><td>The date-time or interval during which an Event occurred. For occurrences, this is the date-time when the event was recorded. Not suitable for a time in a geological context.</td></tr>
         <tr><td class="label">Comments</td><td>Recommended best practice is to use a date that conforms to ISO 8601:2004(E).</td></tr>
-        <tr><td class="label">Examples</td><td><code>1963-03-08T14:07-0600</code> (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC). <code>2009-02-20T08:40Z</code> (20 February 2009 8:40am UTC). '2018-08-29T15:19<code> (3:19pm local time on 29 August 2018). </code>1809-02-12<code> (some time during 12 February 1809). </code>1906-06<code> (some time in June 1906). </code>1971<code> (some time in the year 1971). </code>2007-03-01T13:00:00Z/2008-05-11T15:30:00Z<code> (some time during the interval between 1 March 2007 1pm UTC and 11 May 2008 3:30pm UTC). </code>1900/1909<code> (some time during the interval between the beginning of the year 1900 and the end of the year 1909). </code>2007-11-13/15` (some time in the interval between 13 November 2007 and 15 November 2007).</td></tr>
+        <tr><td class="label">Examples</td><td><code>1963-03-08T14:07-0600</code> (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC). <code>2009-02-20T08:40Z</code> (20 February 2009 8:40am UTC). <code>2018-08-29T15:19</code> (3:19pm local time on 29 August 2018). <code>1809-02-12</code> (some time during 12 February 1809). <code>1906-06</code> (some time in June 1906). <code>1971</code> (some time in the year 1971). <code>2007-03-01T13:00:00Z/2008-05-11T15:30:00Z</code> (some time during the interval between 1 March 2007 1pm UTC and 11 May 2008 3:30pm UTC). <code>1900/1909</code> (some time during the interval between the beginning of the year 1900 and the end of the year 1909). <code>2007-11-13/15</code> (some time in the interval between 13 November 2007 and 15 November 2007).</td></tr>
     </tbody>
 </table>
 <p class="invisible">
@@ -1453,7 +1453,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
         <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/georeferencedDate">http://rs.tdwg.org/dwc/terms/georeferencedDate</a></td></tr>
         <tr><td class="label">Definition</td><td>The date on which the Location was georeferenced.</td></tr>
         <tr><td class="label">Comments</td><td>Recommended best practice is to use a date that conforms to ISO 8601:2004(E).</td></tr>
-        <tr><td class="label">Examples</td><td><code>1963-03-08T14:07-0600</code> (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC). <code>2009-02-20T08:40Z</code> (20 February 2009 8:40am UTC). '2018-08-29T15:19<code> (3:19pm local time on 29 August 2018). </code>1809-02-12<code> (some time during 12 February 1809). </code>1906-06<code> (some time in June 1906). </code>1971<code> (some time in the year 1971). </code>2007-03-01T13:00:00Z/2008-05-11T15:30:00Z<code> (some time during the interval between 1 March 2007 1pm UTC and 11 May 2008 3:30pm UTC). </code>1900/1909<code> (some time during the interval between the beginning of the year 1900 and the end of the year 1909). </code>2007-11-13/15` (some time in the interval between 13 November 2007 and 15 November 2007).</td></tr>
+        <tr><td class="label">Examples</td><td><code>1963-03-08T14:07-0600</code> (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC). <code>2009-02-20T08:40Z</code> (20 February 2009 8:40am UTC). <code>2018-08-29T15:19</code> (3:19pm local time on 29 August 2018). <code>1809-02-12</code> (some time during 12 February 1809). <code>1906-06</code> (some time in June 1906). <code>1971</code> (some time in the year 1971). <code>2007-03-01T13:00:00Z/2008-05-11T15:30:00Z</code> (some time during the interval between 1 March 2007 1pm UTC and 11 May 2008 3:30pm UTC). <code>1900/1909</code> (some time during the interval between the beginning of the year 1900 and the end of the year 1909). <code>2007-11-13/15</code> (some time in the interval between 13 November 2007 and 15 November 2007).</td></tr>
     </tbody>
 </table>
 <p class="invisible">
@@ -1543,7 +1543,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
         <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/geologicalContextID">http://rs.tdwg.org/dwc/terms/geologicalContextID</a></td></tr>
         <tr><td class="label">Definition</td><td>An identifier for the set of information associated with a GeologicalContext (the location within a geological context, such as stratigraphy). May be a global unique identifier or an identifier specific to the data set.</td></tr>
         <tr><td class="label">Comments</td><td></td></tr>
-        <tr><td class="label">Examples</td><td><a href="https://opencontext.org/subjects/e54377f7-4452-4315-b676-40679b10c4d9">https://opencontext.org/subjects/e54377f7-4452-4315-b676-40679b10c4d9</a></td></tr>
+        <tr><td class="label">Examples</td><td><code><a href="https://opencontext.org/subjects/e54377f7-4452-4315-b676-40679b10c4d9">https://opencontext.org/subjects/e54377f7-4452-4315-b676-40679b10c4d9</a></code></td></tr>
     </tbody>
 </table>
 <p class="invisible">
@@ -1810,7 +1810,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
         <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/dateIdentified">http://rs.tdwg.org/dwc/terms/dateIdentified</a></td></tr>
         <tr><td class="label">Definition</td><td>The date on which the subject was identified as representing the Taxon.</td></tr>
         <tr><td class="label">Comments</td><td>Recommended best practice is to use a date that conforms to ISO 8601:2004(E).</td></tr>
-        <tr><td class="label">Examples</td><td><code>1963-03-08T14:07-0600</code> (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC). <code>2009-02-20T08:40Z</code> (20 February 2009 8:40am UTC). '2018-08-29T15:19<code> (3:19pm local time on 29 August 2018). </code>1809-02-12<code> (some time during 12 February 1809). </code>1906-06<code> (some time in June 1906). </code>1971<code> (some time in the year 1971). </code>2007-03-01T13:00:00Z/2008-05-11T15:30:00Z<code> (some time during the interval between 1 March 2007 1pm UTC and 11 May 2008 3:30pm UTC). </code>1900/1909<code> (some time during the interval between the beginning of the year 1900 and the end of the year 1909). </code>2007-11-13/15` (some time in the interval between 13 November 2007 and 15 November 2007).</td></tr>
+        <tr><td class="label">Examples</td><td><code>1963-03-08T14:07-0600</code> (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC). <code>2009-02-20T08:40Z</code> (20 February 2009 8:40am UTC). <code>2018-08-29T15:19</code> (3:19pm local time on 29 August 2018). <code>1809-02-12</code> (some time during 12 February 1809). <code>1906-06</code> (some time in June 1906). <code>1971</code> (some time in the year 1971). <code>2007-03-01T13:00:00Z/2008-05-11T15:30:00Z</code> (some time during the interval between 1 March 2007 1pm UTC and 11 May 2008 3:30pm UTC). <code>1900/1909</code> (some time during the interval between the beginning of the year 1900 and the end of the year 1909). <code>2007-11-13/15</code> (some time in the interval between 13 November 2007 and 15 November 2007).</td></tr>
     </tbody>
 </table>
 <p class="invisible">
@@ -2359,7 +2359,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
         <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/measurementDeterminedDate">http://rs.tdwg.org/dwc/terms/measurementDeterminedDate</a></td></tr>
         <tr><td class="label">Definition</td><td>The date on which the MeasurementOrFact was made.</td></tr>
         <tr><td class="label">Comments</td><td>Recommended best practice is to use a date that conforms to ISO 8601:2004(E).</td></tr>
-        <tr><td class="label">Examples</td><td><code>1963-03-08T14:07-0600</code> (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC). <code>2009-02-20T08:40Z</code> (20 February 2009 8:40am UTC). '2018-08-29T15:19<code> (3:19pm local time on 29 August 2018). </code>1809-02-12<code> (some time during 12 February 1809). </code>1906-06<code> (some time in June 1906). </code>1971<code> (some time in the year 1971). </code>2007-03-01T13:00:00Z/2008-05-11T15:30:00Z<code> (some time during the interval between 1 March 2007 1pm UTC and 11 May 2008 3:30pm UTC). </code>1900/1909<code> (some time during the interval between the beginning of the year 1900 and the end of the year 1909). </code>2007-11-13/15` (some time in the interval between 13 November 2007 and 15 November 2007).</td></tr>
+        <tr><td class="label">Examples</td><td><code>1963-03-08T14:07-0600</code> (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC). <code>2009-02-20T08:40Z</code> (20 February 2009 8:40am UTC). <code>2018-08-29T15:19</code> (3:19pm local time on 29 August 2018). <code>1809-02-12</code> (some time during 12 February 1809). <code>1906-06</code> (some time in June 1906). <code>1971</code> (some time in the year 1971). <code>2007-03-01T13:00:00Z/2008-05-11T15:30:00Z</code> (some time during the interval between 1 March 2007 1pm UTC and 11 May 2008 3:30pm UTC). <code>1900/1909</code> (some time during the interval between the beginning of the year 1900 and the end of the year 1909). <code>2007-11-13/15</code> (some time in the interval between 13 November 2007 and 15 November 2007).</td></tr>
     </tbody>
 </table>
 <p class="invisible">
@@ -2471,7 +2471,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
         <tr><td class="label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/relationshipEstablishedDate">http://rs.tdwg.org/dwc/terms/relationshipEstablishedDate</a></td></tr>
         <tr><td class="label">Definition</td><td>The date-time on which the relationship between the two resources was established.</td></tr>
         <tr><td class="label">Comments</td><td>Recommended best practice is to use a date that conforms to ISO 8601:2004(E).</td></tr>
-        <tr><td class="label">Examples</td><td><code>1963-03-08T14:07-0600</code> (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC). <code>2009-02-20T08:40Z</code> (20 February 2009 8:40am UTC). '2018-08-29T15:19<code> (3:19pm local time on 29 August 2018). </code>1809-02-12<code> (some time during 12 February 1809). </code>1906-06<code> (some time in June 1906). </code>1971<code> (some time in the year 1971). </code>2007-03-01T13:00:00Z/2008-05-11T15:30:00Z<code> (some time during the interval between 1 March 2007 1pm UTC and 11 May 2008 3:30pm UTC). </code>1900/1909<code> (some time during the interval between the beginning of the year 1900 and the end of the year 1909). </code>2007-11-13/15` (some time in the interval between 13 November 2007 and 15 November 2007).</td></tr>
+        <tr><td class="label">Examples</td><td><code>1963-03-08T14:07-0600</code> (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC). <code>2009-02-20T08:40Z</code> (20 February 2009 8:40am UTC). <code>2018-08-29T15:19</code> (3:19pm local time on 29 August 2018). <code>1809-02-12</code> (some time during 12 February 1809). <code>1906-06</code> (some time in June 1906). <code>1971</code> (some time in the year 1971). <code>2007-03-01T13:00:00Z/2008-05-11T15:30:00Z</code> (some time during the interval between 1 March 2007 1pm UTC and 11 May 2008 3:30pm UTC). <code>1900/1909</code> (some time during the interval between the beginning of the year 1900 and the end of the year 1909). <code>2007-11-13/15</code> (some time in the interval between 13 November 2007 and 15 November 2007).</td></tr>
     </tbody>
 </table>
 <p class="invisible">
