@@ -10,33 +10,38 @@ This page provides a list of all currently recommended terms of the Darwin Core 
 {% for class_group in class_groups %}
 
 ## {{ class_group.label }}
-    
+
 <div class="my-4">
     {% for term in class_group.terms %}
-    <a class="btn btn-sm btn-outline-secondary m-1" href="#{{ term.namespace}}:{{ term.label }}">{{ term.label }}</a>
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#{{ term.namespace }}:{{ term.label }}">{{ term.label }}</a>
     {% endfor %}
 </div>
 
 {% if class_group.iri is not none %}
-{# The above will exclude the Record-level class_group #}
-<table class="table table-sm border mb-3">
+{# Class (the above will exclude the Record-level class_group) #}
+<table class="table table-sm table-bordered">
     <tbody>
         <tr class="table-primary"><th colspan="2">{{ class_group.label }}<span class="badge badge-primary float-right">Class</span></th></tr>
         <tr><td class="label">Identifier</td><td><a href="{{ class_group.iri }}">{{ class_group.iri }}</a></td></tr>
-        <tr><td class="label">Definition</td><td>{{class_group.definition}}</td></tr>
-        <tr><td class="label">Comments</td><td>{{class_group.comments}}</td></tr>
+        <tr><td class="label">Definition</td><td>{{ class_group.definition }}</td></tr>
+        <tr><td class="label">Comments</td><td>{{ class_group.comments }}</td></tr>
+        <tr><td class="label">Examples</td><td>{{ class_group.examples }}</td></tr>
     </tbody>
 </table>
 {%endif %}
 
 {% for term in class_group.terms %}
-<a id="{{ term.namespace}}:{{ term.label }}" class="anchor"></a>
-<table class="table table-sm border mb-3">
+{# Term #}
+<p class="invisible">
+    <a id="{{ term.namespace }}:{{ term.label }}"></a>{% if term.namespace != "dwciri" %}<a id="{{ term.label }}"></a>{% endif %}
+</p>
+<table class="table table-sm table-bordered">
     <tbody>
         <tr class="table-secondary"><th colspan="2">{{ term.label }}<span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="label">Identifier</td><td><a href="{{ term.iri }}">{{ term.iri }}</a></td></tr>
         <tr><td class="label">Definition</td><td>{{ term.definition }}</td></tr>
         <tr><td class="label">Comments</td><td>{{ term.comments }}</td></tr>
+        <tr><td class="label">Examples</td><td>{{ term.examples }}</td></tr>
     </tbody>
 </table>
 {% endfor %}
