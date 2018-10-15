@@ -22,10 +22,10 @@ This page provides a list of all currently recommended terms of the Darwin Core 
 <table class="table table-sm table-bordered">
     <tbody>
         <tr class="table-primary"><th colspan="2">{{ class_group.label }}<span class="badge badge-primary float-right">Class</span></th></tr>
-        <tr><td class="label">Identifier</td><td><a href="{{ class_group.iri }}">{{ class_group.iri }}</a></td></tr>
-        <tr><td class="label">Definition</td><td>{{ class_group.definition }}</td></tr>
-        <tr><td class="label">Comments</td><td>{{ class_group.comments }}</td></tr>
-        <tr><td class="label">Examples</td><td>{{ class_group.examples }}</td></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="{{ class_group.iri }}">{{ class_group.iri }}</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>{{ class_group.definition }}</td></tr>
+        <tr><td class="theme-label">Comments</td><td>{{ class_group.comments }}</td></tr>
+        <tr><td class="theme-label">Examples</td><td>{{ class_group.examples }}</td></tr>
     </tbody>
 </table>
 {%endif %}
@@ -38,10 +38,10 @@ This page provides a list of all currently recommended terms of the Darwin Core 
 <table class="table table-sm table-bordered">
     <tbody>
         <tr class="table-secondary"><th colspan="2">{{ term.label }}<span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="label">Identifier</td><td><a href="{{ term.iri }}">{{ term.iri }}</a></td></tr>
-        <tr><td class="label">Definition</td><td>{{ term.definition }}</td></tr>
-        <tr><td class="label">Comments</td><td>{{ term.comments }}</td></tr>
-        <tr><td class="label">Examples</td><td>{{ term.examples }}</td></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="{{ term.iri }}">{{ term.iri }}</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>{{ term.definition }}</td></tr>
+        <tr><td class="theme-label">Comments</td><td>{{ term.comments }}</td></tr>
+        <tr><td class="theme-label">Examples</td><td>{{ term.examples }}</td></tr>
     </tbody>
 </table>
 {% endfor %}
