@@ -613,6 +613,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
 ## MaterialSample
 
 <div class="my-4">
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:materialSampleID">materialSampleID</a>
     </div>
 
 <table class="table table-sm table-bordered">
@@ -622,58 +623,6 @@ This page provides a list of all currently recommended terms of the Darwin Core 
         <tr><td class="theme-label">Definition</td><td>A physical result of a sampling (or subsampling) event. In biological collections, the material sample is typically collected, and either preserved or destructively processed.</td></tr>
         <tr><td class="theme-label">Comments</td><td></td></tr>
         <tr><td class="theme-label">Examples</td><td>A whole organism preserved in a collection. A part of an organism isolated for some purpose. A soil sample. A marine microbial sample.</td></tr>
-    </tbody>
-</table>
-
-
-
-## LivingSpecimen
-
-<div class="my-4">
-    </div>
-
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-primary"><th colspan="2">LivingSpecimen <span class="badge badge-primary float-right">Class</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/LivingSpecimen">http://rs.tdwg.org/dwc/terms/LivingSpecimen</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A specimen that is alive.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td>A living plant in a botanical garden. A living animal in a zoo.</td></tr>
-    </tbody>
-</table>
-
-
-
-## PreservedSpecimen
-
-<div class="my-4">
-    </div>
-
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-primary"><th colspan="2">PreservedSpecimen <span class="badge badge-primary float-right">Class</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/PreservedSpecimen">http://rs.tdwg.org/dwc/terms/PreservedSpecimen</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A specimen that has been preserved.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td>A plant on an herbarium sheet. A cataloged lot of fish in a jar.</td></tr>
-    </tbody>
-</table>
-
-
-
-## FossilSpecimen
-
-<div class="my-4">
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:materialSampleID">materialSampleID</a>
-    </div>
-
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-primary"><th colspan="2">FossilSpecimen <span class="badge badge-primary float-right">Class</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/FossilSpecimen">http://rs.tdwg.org/dwc/terms/FossilSpecimen</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A preserved specimen that is a fossil.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td>A body fossil. A coprolite. A gastrolith. An ichnofossil. A piece of a petrified tree.</td></tr>
     </tbody>
 </table>
 
@@ -691,40 +640,6 @@ This page provides a list of all currently recommended terms of the Darwin Core 
 
 
 ## Event
-
-<div class="my-4">
-    </div>
-
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-primary"><th colspan="2">Event <span class="badge badge-primary float-right">Class</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/Event">http://rs.tdwg.org/dwc/terms/Event</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>An action that occurs at some location during some time.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td>A specimen collection process. A camera trap image capture.  A marine trawl.</td></tr>
-    </tbody>
-</table>
-
-
-
-## HumanObservation
-
-<div class="my-4">
-    </div>
-
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-primary"><th colspan="2">HumanObservation <span class="badge badge-primary float-right">Class</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/HumanObservation">http://rs.tdwg.org/dwc/terms/HumanObservation</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>An output of a human observation process.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td>Evidence of an Occurrence taken from field notes or literature. A record of an Occurrence without physical evidence nor evidence captured with a machine. </td></tr>
-    </tbody>
-</table>
-
-
-
-## MachineObservation
 
 <div class="my-4">
         <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:eventID">eventID</a>
@@ -749,11 +664,11 @@ This page provides a list of all currently recommended terms of the Darwin Core 
 
 <table class="table table-sm table-bordered">
     <tbody>
-        <tr class="table-primary"><th colspan="2">MachineObservation <span class="badge badge-primary float-right">Class</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/MachineObservation">http://rs.tdwg.org/dwc/terms/MachineObservation</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>An output of a machine observation process.</td></tr>
+        <tr class="table-primary"><th colspan="2">Event <span class="badge badge-primary float-right">Class</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/Event">http://rs.tdwg.org/dwc/terms/Event</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>An action that occurs at some location during some time.</td></tr>
         <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td>A photograph. A video. An audio recording. A remote sensing image. A Occurrence record based on telemetry.</td></tr>
+        <tr><td class="theme-label">Examples</td><td>A specimen collection process. A camera trap image capture.  A marine trawl.</td></tr>
     </tbody>
 </table>
 
@@ -3018,4 +2933,89 @@ This page provides a list of all currently recommended terms of the Darwin Core 
         <tr><td class="theme-label">Examples</td><td><code>EPSG:4326</code>, <code>WGS84</code>, <code>NAD27</code>, <code>Campo Inchauspe</code>, <code>European 1950</code>, <code>Clarke 1866</code>, <code>unknown</code></td></tr>
     </tbody>
 </table>
+
+
+## LivingSpecimen
+
+<div class="my-4">
+    </div>
+
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-primary"><th colspan="2">LivingSpecimen <span class="badge badge-primary float-right">Class</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/LivingSpecimen">http://rs.tdwg.org/dwc/terms/LivingSpecimen</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>A specimen that is alive.</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td>A living plant in a botanical garden. A living animal in a zoo.</td></tr>
+    </tbody>
+</table>
+
+
+
+## PreservedSpecimen
+
+<div class="my-4">
+    </div>
+
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-primary"><th colspan="2">PreservedSpecimen <span class="badge badge-primary float-right">Class</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/PreservedSpecimen">http://rs.tdwg.org/dwc/terms/PreservedSpecimen</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>A specimen that has been preserved.</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td>A plant on an herbarium sheet. A cataloged lot of fish in a jar.</td></tr>
+    </tbody>
+</table>
+
+
+
+## FossilSpecimen
+
+<div class="my-4">
+    </div>
+
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-primary"><th colspan="2">FossilSpecimen <span class="badge badge-primary float-right">Class</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/FossilSpecimen">http://rs.tdwg.org/dwc/terms/FossilSpecimen</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>A preserved specimen that is a fossil.</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td>A body fossil. A coprolite. A gastrolith. An ichnofossil. A piece of a petrified tree.</td></tr>
+    </tbody>
+</table>
+
+
+
+## HumanObservation
+
+<div class="my-4">
+    </div>
+
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-primary"><th colspan="2">HumanObservation <span class="badge badge-primary float-right">Class</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/HumanObservation">http://rs.tdwg.org/dwc/terms/HumanObservation</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>An output of a human observation process.</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td>Evidence of an Occurrence taken from field notes or literature. A record of an Occurrence without physical evidence nor evidence captured with a machine. </td></tr>
+    </tbody>
+</table>
+
+
+
+## MachineObservation
+
+<div class="my-4">
+    </div>
+
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-primary"><th colspan="2">MachineObservation <span class="badge badge-primary float-right">Class</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/MachineObservation">http://rs.tdwg.org/dwc/terms/MachineObservation</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>An output of a machine observation process.</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td>A photograph. A video. An audio recording. A remote sensing image. A Occurrence record based on telemetry.</td></tr>
+    </tbody>
+</table>
+
 
