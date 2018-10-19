@@ -13,3 +13,9 @@
 <script src="https://www.tdwg.org/theme/js/popper.min.js"></script>
 <script src="https://www.tdwg.org/theme/js/bootstrap.min.js"></script>
 <script src="https://www.tdwg.org/theme/js/theme.js"></script>
+<script>
+$(document).ready(function() {
+    // In quick reference guide: add divider in sidebar after UseWithIRI
+    $("a[href='#usewithiri']", "#theme-sidebar-nav").parent().addClass("theme-divider-below");
+});
+</script>

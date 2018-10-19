@@ -3019,10 +3019,3 @@ This page provides a list of all currently recommended terms of the Darwin Core 
 </table>
 
 
-
-<script>
-$(document).ready(function() {
-    // Add divider in sidebar after UseWithIRI
-    $("a[href='#usewithiri']", "#theme-sidebar-nav").parent().addClass("theme-divider-below");
-});
-</script>
