@@ -1,8 +1,8 @@
-<header class="navbar navbar-expand navbar-dark theme-navbar">
-    <div class="container-fluid flex-column flex-md-row">
+<nav class="navbar navbar-expand navbar-dark bg-secondary">
+    <div class="container-fluid">
         <a class="navbar-brand mr-md-3" href="http://www.tdwg.org">TDWG</a>
-        <nav>
-            <ul class="navbar-nav">
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-md-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="{{ "/" | absolute_url }}">Home</a>
                 </li>
@@ -21,10 +21,12 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ "namespace/" | absolute_url }}">Namespace policy</a>
                 </li>
-                <li class="nav-item ml-auto">
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
                     <a class="nav-link" href="https://github.com/tdwg/dwc">GitHub</a>
                 </li>
             </ul>
         </nav>
     </div>
-</header>
+</nav>
