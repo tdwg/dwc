@@ -31,7 +31,7 @@ js: >-
 
 # Build settings
 markdown: kramdown
-theme: tdwg-theme-jekyll
+# theme: tdwg-theme-jekyll
 remote_theme: tdwg/tdwg-theme-jekyll
 plugins:
   - jekyll-feed
