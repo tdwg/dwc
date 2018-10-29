@@ -2,7 +2,6 @@
 title: Darwin Core
 description: Website for the Darwin Core standard.
 url: "https://dwc.tdwg.com"
-baseurl: "/"
 
 navbar:
   left:
