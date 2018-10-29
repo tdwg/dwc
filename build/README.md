@@ -3,7 +3,7 @@
 The build script `build.py` uses as input:
 
 * [vocabulary/term_versions.csv](../vocabulary/term_versions.csv): the list of terms
-* [docs/_layouts/terms.tmpl](../docs/_layouts/terms.tmpl): a Jinja2 template for the quick reference guide
+* [terms.tmpl](terms.tmpl): a Jinja2 template for the quick reference guide
 
 To create:
 
