@@ -1,5 +1,5 @@
 ---
-container: fixed
+layout: home
 ---
 
 # Darwin Core
