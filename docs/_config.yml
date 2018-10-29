@@ -1,7 +1,7 @@
 # Site settings
 title: Darwin Core
 description: Website for the Darwin Core standard.
-url: "https://dwc.tdwg.com"
+url: "https://dwc.tdwg.org"
 
 navbar:
   left:
