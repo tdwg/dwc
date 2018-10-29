@@ -1,3 +1,6 @@
+---
+container: fluid
+---
 
 # Darwin Core quick reference guide
 

@@ -1,7 +1,3 @@
----
-container: fixed
----
-
 # Darwin Core namespace policy
 
 Title
