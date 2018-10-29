@@ -1,1 +1,4 @@
-theme: jekyll-theme-cayman
+# Build settings
+markdown: kramdown
+theme: tdwg-theme-jekyll
+remote_theme: tdwg/tdwg-theme-jekyll
