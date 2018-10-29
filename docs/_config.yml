@@ -1,4 +1,38 @@
+# Site settings
+title: Darwin Core
+description: Website for the Darwin Core standard.
+url: "https://dwc.tdwg.com"
+baseurl: "/"
+
+navbar:
+  left:
+  - text: Terms
+    href: terms/
+  - text: Guides
+    menu:
+    - text: Simple Darwin Core
+      href: simple/
+    - text: Text
+      href: text/
+    - text: XML
+      href: xml/
+    - text: RDF
+      href: rdf/
+  - text: Namespace policy
+    href: namespace/
+  right:
+  - text: GitHub
+    href: https://github.com/tdwg/dwc
+
+js: >-
+  $(document).ready(function() {
+      // In quick reference guide: add divider in sidebar after UseWithIRI
+      $("a[href='#usewithiri']", "#theme-sidebar-nav").parent().addClass("theme-divider-below");
+  });
+
 # Build settings
 markdown: kramdown
 theme: tdwg-theme-jekyll
 remote_theme: tdwg/tdwg-theme-jekyll
+plugins:
+  - jekyll-feed
