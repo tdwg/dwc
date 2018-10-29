@@ -227,7 +227,7 @@ class DwcDigester(object):
         template_data.append(class_group)
         return template_data
 
-    def create_html(self, html_template="../docs/_layouts/terms.tmpl",
+    def create_html(self, html_template="terms.tmpl",
                     html_output="../docs/terms/index.md"):
         """build html with the processed term info, by filling in the
         tmpl-template
