@@ -8,10 +8,9 @@ Darwin Core is a standard maintained by the Darwin Core maintenance group. It in
 
 Documents:
 
-* [Recommended terms](dist/recommended_terms.csv): a CSV file with the current set of Darwin Core terms
-* [Normative document](standard/vocabularies/term_versions.csv): a CSV file with the full version history of Darwin Core terms
-* [Usage guides](standard/documents/): Guides on how to use Darwin Core as text, rdf, xml
-* [Distribution files](dist/): Convenient files to start using Darwin Core
+* [Normative document](vocabulary/term_versions.csv): a CSV file with the full version history of Darwin Core terms
+* [Distribution documents](dist/): Simple CSV files to start using Darwin Core
+* [Website documents](docs/): Markdown files that form the source for the [Darwin Core website](https://dwc.tdwg.org/)
 
 Community:
 
