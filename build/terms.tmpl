@@ -20,8 +20,8 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     {% endfor %}
 </div>
 
-{% if class_group.iri is not none %}
-{# Class (the above will exclude the Record-level class_group) #}
+{% if class_group.label != 'Record-level' and class_group.label != 'UseWithIRI' %}
+{# Class #}
 <table class="table table-sm table-bordered">
     <tbody>
         <tr class="table-primary"><th colspan="2">{{ class_group.label }} <span class="badge badge-primary float-right">Class</span></th></tr>

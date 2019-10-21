@@ -2453,15 +2453,6 @@ This page provides a list of all currently recommended terms of the Darwin Core 
         <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:verbatimSRS">verbatimSRS</a>
     </div>
 
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-primary"><th colspan="2">UseWithIRI <span class="badge badge-primary float-right">Class</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/attributes/UseWithIRI">http://rs.tdwg.org/dwc/terms/attributes/UseWithIRI</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The category of terms that are recommended to have an IRI as a value.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>A utility class to organize the dwciri: terms.</td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
 
 <p class="invisible">
     <a id="dwciri:inDescribedPlace"></a></p>
