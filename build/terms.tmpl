@@ -14,6 +14,9 @@ This page provides a list of all currently recommended terms of the Darwin Core 
 
 ## {{ class_group.label }}
 
+{% if class_group.label == 'UseWithIRI' %}
+For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https://dwc.tdwg.org/rdf/#25-terms-in-the-dwciri-namespace-normative).
+{% endif %}
 <div class="my-4">
     {% for term in class_group.terms %}
     <a class="btn btn-sm btn-outline-secondary m-1" href="#{{ term.namespace }}:{{ term.label }}">{{ term.label }}</a>

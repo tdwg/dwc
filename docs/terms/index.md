@@ -2407,6 +2407,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
 
 ## UseWithIRI
 
+For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https://dwc.tdwg.org/rdf/#25-terms-in-the-dwciri-namespace-normative).
 <div class="my-4">
         <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:inDescribedPlace">inDescribedPlace</a>
         <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:identifiedBy">identifiedBy</a>
