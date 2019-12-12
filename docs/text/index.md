@@ -112,7 +112,7 @@ Attribute | Description | Required | Default
 Element | Description
 --- | ---
 `<core>` | An `<archive>` must contain exactly one `<core>` element, representing the data entity (the actual file and its column header mappings to Darwin Core terms) upon which records are based. If extensions are being used, each record in the core data must have a unique identifier. The field for this identifier must be specified in an explicit `<id>` field in order to associate extension records with the core record.
-`<extension>` | An `<archive>` may define zero or more `<extension>` elements, each representing an individual extension entity directly related to the core. In addition to the general file attributes described below, every extension entity must have an explicit `<coreId>` field to relate the extension record to a row in the core entity. The extension itself does not have to have a unique ID field and many rows can point to the same core record.
+`<extension>` | An `<archive>` may define zero or more `<extension>` elements, each representing an individual extension entity directly related to the core. In addition to the general file attributes described below, every extension entity must have an explicit `<coreid>` field to relate the extension record to a row in the core entity. The extension itself does not have to have a unique ID field and many rows can point to the same core record.
 
 ### 2.2 The `<core>` or `<extension>` element
 
@@ -134,7 +134,7 @@ Element | Description
 --- | ---
 `<files>` | `<core>` or `<extension>` element must contain one `<files>` element to locate the data being described.
 `<id>` | If extensions are being used, the `<core>` must contain an <id> element that indicates the identifier for a record.
-`<coreId>` | If extensions are being used, the `<extension>` element must contain a `<coreId>` element that indicates the column in the extension file that contains the core record identifier (the matching `<id>` in the core file).
+`<coreid>` | If extensions are being used, the `<extension>` element must contain a `<coreid>` element that indicates the column in the extension file that contains the core record identifier (the matching `<id>` in the core file).
 `<field>` | A `<core>` or `<extension>` element must contain one or more <field> elements, each representing a 'column' in the row.
 
 ### 2.3 `<files>` element
@@ -192,7 +192,7 @@ The following example illustrates the use of extensions. In this example there a
         <files>
             <location>types.csv</location>
         </files>
-        <coreId index="0" />
+        <coreid index="0" />
         <field index="1" term="http://purl.org/dc/terms/bibliographicCitation"/>
         <field index="2" term="http://rs.tdwg.org/dwc/terms/catalogNumber"/>
         <field index="3" term="http://rs.tdwg.org/dwc/terms/collectionCode"/>
@@ -204,7 +204,7 @@ The following example illustrates the use of extensions. In this example there a
         <files>
             <location>distribution.csv</location>
         </files>
-        <coreId index="0" />
+        <coreid index="0" />
         <field index="1" term="http://rs.tdwg.org/dwc/terms/countryCode"/>
         <field index="2" term="http://rs.gbif.org/terms/1.0/threatStatus"/>
         <field index="3" term="http://rs.tdwg.org/dwc/terms/occurrenceStatus"/>
