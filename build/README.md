@@ -23,3 +23,9 @@ To create:
     ```bash
     python build.py
     ```
+
+## Generating the "normative document"
+
+The script `generate_normative_csv.py` pulls source data from the rs.tdwg.org GitHub repo. No local files are required.
+
+It outputs the file `term_versions.csv`, which is used as the input for the `build.py` script above.
