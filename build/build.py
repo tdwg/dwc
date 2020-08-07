@@ -141,7 +141,7 @@ class DwcDigester(object):
         vs_term = self._select_versions_term(term_iri)
 
         term_data = {}
-        term_data["label"] = vs_term['label']
+        term_data["label"] = vs_term['term_localName'] # Use camelCase term_localName as label
         term_data["iri"] = term_iri
         term_data["class"] = vs_term['organized_in']
         term_data["definition"] = self.convert_link(vs_term['definition'])
@@ -295,7 +295,7 @@ class DwcDigester(object):
 def main():
     """Building up the quick reference html and derivatives"""
 
-    term_versions_file = "../vocabulary/term_versions.csv"
+    term_versions_file = "../vocabulary/generated_normative_document.csv"
 
     print("Running build process:")
     my_dwc = DwcDigester(term_versions_file)
