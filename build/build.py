@@ -141,7 +141,7 @@ class DwcDigester(object):
         vs_term = self._select_versions_term(term_iri)
 
         term_data = {}
-        term_data["label"] = vs_term['term_localName'] # Use camelCase term_localName as label
+        term_data["label"] = vs_term['term_localName'] # See https://github.com/tdwg/dwc/issues/253#issuecomment-670098202
         term_data["iri"] = term_iri
         term_data["class"] = vs_term['organized_in']
         term_data["definition"] = self.convert_link(vs_term['definition'])
