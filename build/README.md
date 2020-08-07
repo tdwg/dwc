@@ -26,6 +26,6 @@ To create:
 
 ## Generating the "normative document"
 
-The script `generate_normative_csv.py` pulls source data from the rs.tdwg.org GitHub repo. No local files are required.
+The script `generate_normative_csv.py` pulls source data from the rs.tdwg.org GitHub repo. The local file `qrg-list.csv` contains a list of the term IRIs in the order that they are to appear in the Quick Reference Guide. This list needs to be changed whenever terms are added to or deprecated from Darwin Core.
 
 It outputs the file `term_versions.csv`, which is used as the input for the `build.py` script above.

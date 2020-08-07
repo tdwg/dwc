@@ -141,7 +141,7 @@ normative_doc_df = pd.DataFrame(normative_doc_list, columns = column_headers)
 # Set the row label as the version IRI
 normative_doc_df.set_index('iri', drop=False, inplace=True)
 normative_doc_df.index.names = ['row_index']
-normative_doc_df.to_csv('test.csv', index = False)
+#normative_doc_df.to_csv('test.csv', index = False)
 string1 = normative_doc_df.iloc[571]['term_iri']
 
 # -----------------------------
@@ -177,6 +177,6 @@ sorted_output = remaining_rows_df.iloc[remaining_rows_df.iri.str.lower().argsort
 normative_doc_df = built_rows_df.append(sorted_output)
 
 # Save the normative document DataFrame as a CSV
-normative_doc_df.to_csv('term_versions.csv', index = False)
+normative_doc_df.to_csv('../vocabulary/term_versions.csv', index = False)
 
 print('done')
