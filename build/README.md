@@ -29,3 +29,9 @@ To create:
 The script `generate_normative_csv.py` pulls source data from the rs.tdwg.org GitHub repo. The local file `qrg-list.csv` contains a list of the term IRIs in the order that they are to appear in the Quick Reference Guide. This list needs to be changed whenever terms are added to or deprecated from Darwin Core.
 
 It outputs the file `term_versions.csv`, which is used as the input for the `build.py` script above.
+
+## Generating the "list of terms" document
+
+The Jupyter notebook 'build-termlist.ipynb` inputs the header information from `termlist-header.md`, then builds the list of terms and their metadata from data in the rs.tdwg.org TDWG GitHub repo. (The script also inputs `termlist-footer.md` and appends it to the end of the generated document, but currently it has no content.) The constructed Markdown document is saved in the /docs/list/ directory as index.md . 
+
+When this is all working, the code can be pulled from the Jupyter notebook cells and just be saved as a `.py` Python script.
