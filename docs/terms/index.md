@@ -10,9 +10,9 @@ This page provides a list of all currently recommended terms of the Darwin Core 
 ## Record-level
 
 <div class="my-4">
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:type">type</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#dc:type">type</a>
         <a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:modified">modified</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:language">language</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#dc:language">language</a>
         <a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:license">license</a>
         <a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:rightsHolder">rightsHolder</a>
         <a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:accessRights">accessRights</a>
@@ -33,11 +33,11 @@ This page provides a list of all currently recommended terms of the Darwin Core 
 
 
 <p class="invisible">
-    <a id="dcterms:type"></a><a id="type"></a></p>
+    <a id="dc:type"></a><a id="type"></a></p>
 <table class="table table-sm table-bordered">
     <tbody>
         <tr class="table-secondary"><th colspan="2">type <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://purl.org/dc/terms/type">http://purl.org/dc/terms/type</a></td></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://purl.org/dc/elements/1.1/type">http://purl.org/dc/elements/1.1/type</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The nature or genre of the resource.</td></tr>
         <tr><td class="theme-label">Comments</td><td>Must be populated with a value from the DCMI type vocabulary (<a href="http://dublincore.org/documents/2010/10/11/dcmi-type-vocabulary/">http://dublincore.org/documents/2010/10/11/dcmi-type-vocabulary/</a>).</td></tr>
         <tr><td class="theme-label">Examples</td><td><code>StillImage</code>, <code>MovingImage</code>, <code>Sound</code>, <code>PhysicalObject</code>, <code>Event</code>, <code>Text</code></td></tr>
@@ -55,13 +55,13 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     </tbody>
 </table>
 <p class="invisible">
-    <a id="dcterms:language"></a><a id="language"></a></p>
+    <a id="dc:language"></a><a id="language"></a></p>
 <table class="table table-sm table-bordered">
     <tbody>
         <tr class="table-secondary"><th colspan="2">language <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://purl.org/dc/terms/language">http://purl.org/dc/terms/language</a></td></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://purl.org/dc/elements/1.1/language">http://purl.org/dc/elements/1.1/language</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>A language of the resource.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use RFC 5646 as a controlled vocabulary.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary such as RFC 4646.</td></tr>
         <tr><td class="theme-label">Examples</td><td><code>en</code> (for English), <code>es</code> (for Spanish)</td></tr>
     </tbody>
 </table>
@@ -93,8 +93,8 @@ This page provides a list of all currently recommended terms of the Darwin Core 
     <tbody>
         <tr class="table-secondary"><th colspan="2">accessRights <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://purl.org/dc/terms/accessRights">http://purl.org/dc/terms/accessRights</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Information about who can access the resource or an indication of its security status. Access Rights may include information regarding access or restrictions based on privacy, security, or other policies.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Information about who can access the resource or an indication of its security status.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Access Rights may include information regarding access or restrictions based on privacy, security, or other policies.</td></tr>
         <tr><td class="theme-label">Examples</td><td><code>not-for-profit use only</code>, <code><a href="https://www.fieldmuseum.org/field-museum-natural-history-conditions-and-suggested-norms-use-collections-data-and-images">https://www.fieldmuseum.org/field-museum-natural-history-conditions-and-suggested-norms-use-collections-data-and-images</a></code></td></tr>
     </tbody>
 </table>
@@ -2409,6 +2409,7 @@ This page provides a list of all currently recommended terms of the Darwin Core 
 
 For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https://dwc.tdwg.org/rdf/#25-terms-in-the-dwciri-namespace-normative).
 <div class="my-4">
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:language">language</a>
         <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:inDescribedPlace">inDescribedPlace</a>
         <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:identifiedBy">identifiedBy</a>
         <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:recordedBy">recordedBy</a>
@@ -2455,6 +2456,17 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     </div>
 
 
+<p class="invisible">
+    <a id="dcterms:language"></a><a id="language"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">language <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://purl.org/dc/terms/language">http://purl.org/dc/terms/language</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>A language of the resource.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use an IRI from the Library of Congress ISO 639-2 scheme <a href="http://id.loc.gov/vocabulary/iso639-2">http://id.loc.gov/vocabulary/iso639-2</a></td></tr>
+        <tr><td class="theme-label">Examples</td><td></td></tr>
+    </tbody>
+</table>
 <p class="invisible">
     <a id="dwciri:inDescribedPlace"></a></p>
 <table class="table table-sm table-bordered">
@@ -2639,7 +2651,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/geodeticDatum">http://rs.tdwg.org/dwc/iri/geodeticDatum</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which the geographic coordinates given in decimalLatitude and decimalLongitude as based.</td></tr>
         <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use an IRI for the EPSG code of the SRS, if known. Otherwise use an IRI or controlled vocabulary for the name or code of the geodetic datum, if known. Otherwise use an IRI or controlled vocabulary for the name or code of the ellipsoid, if known. If none of these is known, use the value <code>unknown</code>.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><a href="https://epsg.io/4326">https://epsg.io/4326</a></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code><a href="https://epsg.io/4326">https://epsg.io/4326</a></code></td></tr>
     </tbody>
 </table>
 <p class="invisible">
@@ -2825,7 +2837,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
         <tr class="table-secondary"><th colspan="2">organismQuantityType <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/organismQuantityType">http://rs.tdwg.org/dwc/iri/organismQuantityType</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The type of quantification system used for the quantity of organisms.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>A dwc;organismQuantityType must have a corresponding dwc:organismQuantity.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>A dwc:organismQuantityType must have a corresponding dwc:organismQuantity.</td></tr>
         <tr><td class="theme-label">Examples</td><td></td></tr>
     </tbody>
 </table>
@@ -2870,7 +2882,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/sampleSizeUnit">http://rs.tdwg.org/dwc/iri/sampleSizeUnit</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The unit of measurement of the size (time duration, length, area, or volume) of a sample in a sampling event.</td></tr>
         <tr><td class="theme-label">Comments</td><td>A sampleSizeUnit must have a corresponding sampleSizeValue. Recommended best practice is to use a controlled vocabulary such as the Ontology of Units of Measure <a href="http://www.wurvoc.org/vocabularies/om-1.8/">http://www.wurvoc.org/vocabularies/om-1.8/</a> of SI units, derived units, or other non-SI units accepted for use within the SI.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>minute</code>, <code>hour</code>, <code>day</code>, <code>metre</code>, <code>square metre</code>, <code>cubic metre</code></td></tr>
+        <tr><td class="theme-label">Examples</td><td></td></tr>
     </tbody>
 </table>
 <p class="invisible">
@@ -2924,8 +2936,8 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
         <tr class="table-secondary"><th colspan="2">verbatimSRS <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/verbatimSRS">http://rs.tdwg.org/dwc/iri/verbatimSRS</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which coordinates given in verbatimLatitude and verbatimLongitude, or verbatimCoordinates are based.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use an IRI for the EPSG code of the SRS, if known. Otherwise use an IRI or controlled vocabulary for the name or code of the geodetic datum, if known. Otherwise use an IRI or controlled vocabulary for the name or code of the ellipsoid, if known. If none of these is known, use the value <code>unknown</code>.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>EPSG:4326</code>, <code>WGS84</code>, <code>NAD27</code>, <code>Campo Inchauspe</code>, <code>European 1950</code>, <code>Clarke 1866</code>, <code>unknown</code></td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use an IRI for the EPSG code of the SRS, if known. Otherwise use a controlled vocabulary IRI for the name or code of the geodetic datum, if known. Otherwise use a controlled vocabulary IRI for the name or code of the ellipsoid, if known.</td></tr>
+        <tr><td class="theme-label">Examples</td><td></td></tr>
     </tbody>
 </table>
 
