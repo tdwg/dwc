@@ -295,7 +295,7 @@ class DwcDigester(object):
 def main():
     """Building up the quick reference html and derivatives"""
 
-    term_versions_file = "../vocabulary/generated_normative_document.csv"
+    term_versions_file = "../vocabulary/term_versions.csv"
 
     print("Running build process:")
     my_dwc = DwcDigester(term_versions_file)
