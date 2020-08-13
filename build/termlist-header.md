@@ -22,7 +22,7 @@ Abstract
 : Darwin Core is a vocabulary standard for transmitting information about biodiversity. This document lists all terms in namespaces currently used in the vocabulary.
 
 Contributors
-: John Wieczorek (VertNet), Peter Desmet (INBO), Steve Baskauf (TDWG RDF/OWL Task Group), Tim Robertson (GBIF), Markus Döring (GBIF), Quentin Groom (Botanic Garden Meise), Stijn Van Hoey (INBO), David Bloom (VertNet), Paula Zermoglio (VertNet), Robert Guralnick (University of Florida), John Deck (Genomic Biodiversity Working Group), Gail Kampmeier (INHS), Dave Vieglais (KUNHM), Renato De Giovanni (CRIA), Campbell Webb (TDWG RDF/OWL Task Group), Paul J. Morris (Harvard University Herbaria/Museum of Comparative Zoölogy), Mark Schildhauer (NCEAS)
+: John Wieczorek (VertNet), Peter Desmet (INBO), Steve Baskauf (Vanderbilt Libraries), Tim Robertson (GBIF), Markus Döring (GBIF), Quentin Groom (Botanic Garden Meise), Stijn Van Hoey (INBO), David Bloom (VertNet), Paula Zermoglio (VertNet), Robert Guralnick (University of Florida), John Deck (Genomic Biodiversity Working Group), Gail Kampmeier (INHS), Dave Vieglais (KUNHM), Renato De Giovanni (CRIA), Campbell Webb (TDWG RDF/OWL Task Group), Paul J. Morris (Harvard University Herbaria/Museum of Comparative Zoölogy), Mark Schildhauer (NCEAS)
 
 Creator
 : TDWG Darwin Core Maintenance Group
