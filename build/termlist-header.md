@@ -37,6 +37,8 @@ This document contains terms that are part of the most recent version of the Dar
 
 This document includes terms in four namespaces that contain recommended terms: `dwc:`, `dwciri:`, `dc:`, and `dcterms:`. However, some terms in these namespaces are deprecated and should no longer be used. Deprecation is noted in the term metadata. Namespaces that contain only deprecated terms are not included in this document, but metadata about those terms can be retrieved by dereferencing their IRIs.
 
+For a simplified list that contains only the currently recommended terms, see the [Darwin Core Quick Reference Guide](https://dwc.tdwg.org/terms/).
+
 ### 1.1 Status of the content of this document
 
 Sections 1 and 3 are non-normative.
