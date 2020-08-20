@@ -62,6 +62,7 @@ It outputs the file `term_versions.csv`, which is used as the input for the `bui
 
 ## Generating the "list of terms" document
 
-The Jupyter notebook `build-termlist.ipynb` inputs the header information from `termlist-header.md`, then builds the list of terms and their metadata from data in the [rs.tdwg.org](http://github.com/tdwg/rs.tdwg.org) repository. The script also inputs `termlist-footer.md` and appends it to the end of the generated document, but currently it has no content. The constructed Markdown document is saved as `/docs/list/index.md`. 
+The Python script `build-termlist.py` inputs the header information from `termlist-header.md`, then builds the list of terms and their metadata from data in the [rs.tdwg.org](http://github.com/tdwg/rs.tdwg.org) repository. The script also inputs `termlist-footer.md` and appends it to the end of the generated document, but currently it has no content. The constructed Markdown document is saved as `/docs/list/index.md`. 
 
-Note: when this is all working, the code can be pulled from the Jupyter notebook cells and just be saved as a `.py` Python script.
+------
+Last edited: 2020-08-20
