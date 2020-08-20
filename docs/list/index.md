@@ -38,7 +38,7 @@ Bibliographic citation
 
 This document contains terms that are part of the most recent version of the Darwin Core vocabulary (http://rs.tdwg.org/version/dwc/2020-08-20).
 
-This document includes terms in four namespaces that contain recommended terms: `dwc:`, `dwciri:`, `dc:`, and `dcterms:`. However, some terms in these namespaces are deprecated and should no longer be used. Deprecation is noted in the term metadata. Namespaces that contain only deprecated terms are not included in this document, but metadata about those terms can be retrieved by dereferencing their IRIs.
+This document includes terms in four namespaces that contain recommended terms: `dwc:`, `dwciri:`, `dc:`, and `dcterms:`. However, some terms in these namespaces are deprecated or superseded and should no longer be used. Deprecation or supersession is noted in the term metadata. Namespaces that contain only deprecated terms are not included in this document, but metadata about those terms can be retrieved by dereferencing their IRIs.
 
 For a simplified list that contains only the currently recommended terms, see the [Darwin Core Quick Reference Guide](../terms/).
 
