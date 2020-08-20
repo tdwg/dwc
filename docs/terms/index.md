@@ -452,7 +452,7 @@ This document is intended to be an easy-to-read reference of the currently recom
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/associatedMedia">http://rs.tdwg.org/dwc/terms/associatedMedia</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>A list (concatenated and separated) of identifiers (publication, global unique identifier, URI) of media associated with the Occurrence.</td></tr>
         <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code><a href="http://arctos.database.museum/SpecimenImages/UAMObs/Mamm/2/P7291179.JPG">http://arctos.database.museum/SpecimenImages/UAMObs/Mamm/2/P7291179.JPG</a></code>, <code><a href="http://204.140.246.24/Fish/Collection%20Pictures/10118-00.jpg">http://204.140.246.24/Fish/Collection%20Pictures/10118-00.jpg</a> | <a href="http://204.140.246.24/Fish/Collection%20Pictures/10118-00a.jpg">http://204.140.246.24/Fish/Collection%20Pictures/10118-00a.jpg</a></code></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code><a href="https://arctos.database.museum/media/10520962">https://arctos.database.museum/media/10520962</a> | <a href="https://arctos.database.museum/media/10520964">https://arctos.database.museum/media/10520964</a></code></td></tr>
     </tbody>
 </table>
 <p class="invisible">
@@ -715,7 +715,7 @@ This document is intended to be an easy-to-read reference of the currently recom
         <tr class="table-secondary"><th colspan="2">eventDate <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/eventDate">http://rs.tdwg.org/dwc/terms/eventDate</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The date-time or interval during which an Event occurred. For occurrences, this is the date-time when the event was recorded. Not suitable for a time in a geological context.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a date that conforms to ISO 8601:2004(E).</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a date that conforms to ISO 8601-1:2019.</td></tr>
         <tr><td class="theme-label">Examples</td><td><code>1963-03-08T14:07-0600</code> (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC). <code>2009-02-20T08:40Z</code> (20 February 2009 8:40am UTC). <code>2018-08-29T15:19</code> (3:19pm local time on 29 August 2018). <code>1809-02-12</code> (some time during 12 February 1809). <code>1906-06</code> (some time in June 1906). <code>1971</code> (some time in the year 1971). <code>2007-03-01T13:00:00Z/2008-05-11T15:30:00Z</code> (some time during the interval between 1 March 2007 1pm UTC and 11 May 2008 3:30pm UTC). <code>1900/1909</code> (some time during the interval between the beginning of the year 1900 and the end of the year 1909). <code>2007-11-13/15</code> (some time in the interval between 13 November 2007 and 15 November 2007).</td></tr>
     </tbody>
 </table>
@@ -726,7 +726,7 @@ This document is intended to be an easy-to-read reference of the currently recom
         <tr class="table-secondary"><th colspan="2">eventTime <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/eventTime">http://rs.tdwg.org/dwc/terms/eventTime</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The time or interval during which an Event occurred.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a time that conforms to ISO 8601:2004(E).</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a date that conforms to ISO 8601-1:2019.</td></tr>
         <tr><td class="theme-label">Examples</td><td><code>14:07-0600</code> (2:07pm in the time zone six hours earlier than UTC). <code>08:40:21Z</code> (8:40:21am UTC). <code>13:00:00Z/15:30:00Z</code> (the interval between 1pm UTC and 3:30pm UTC).</td></tr>
     </tbody>
 </table>
@@ -769,7 +769,7 @@ This document is intended to be an easy-to-read reference of the currently recom
     <tbody>
         <tr class="table-secondary"><th colspan="2">month <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/month">http://rs.tdwg.org/dwc/terms/month</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The ordinal month in which the Event occurred.</td></tr>
+        <tr><td class="theme-label">Definition</td><td>The integer month in which the Event occurred.</td></tr>
         <tr><td class="theme-label">Comments</td><td></td></tr>
         <tr><td class="theme-label">Examples</td><td><code>1</code> (January). <code>10</code> (October).</td></tr>
     </tbody>
@@ -1370,7 +1370,7 @@ This document is intended to be an easy-to-read reference of the currently recom
         <tr class="table-secondary"><th colspan="2">georeferencedDate <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/georeferencedDate">http://rs.tdwg.org/dwc/terms/georeferencedDate</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The date on which the Location was georeferenced.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a date that conforms to ISO 8601:2004(E).</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a date that conforms to ISO 8601-1:2019.</td></tr>
         <tr><td class="theme-label">Examples</td><td><code>1963-03-08T14:07-0600</code> (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC). <code>2009-02-20T08:40Z</code> (20 February 2009 8:40am UTC). <code>2018-08-29T15:19</code> (3:19pm local time on 29 August 2018). <code>1809-02-12</code> (some time during 12 February 1809). <code>1906-06</code> (some time in June 1906). <code>1971</code> (some time in the year 1971). <code>2007-03-01T13:00:00Z/2008-05-11T15:30:00Z</code> (some time during the interval between 1 March 2007 1pm UTC and 11 May 2008 3:30pm UTC). <code>1900/1909</code> (some time during the interval between the beginning of the year 1900 and the end of the year 1909). <code>2007-11-13/15</code> (some time in the interval between 13 November 2007 and 15 November 2007).</td></tr>
     </tbody>
 </table>
@@ -1726,8 +1726,8 @@ This document is intended to be an easy-to-read reference of the currently recom
     <tbody>
         <tr class="table-secondary"><th colspan="2">dateIdentified <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/dateIdentified">http://rs.tdwg.org/dwc/terms/dateIdentified</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The date on which the subject was identified as representing the Taxon.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a date that conforms to ISO 8601:2004(E).</td></tr>
+        <tr><td class="theme-label">Definition</td><td>The date on which the subject was determined as representing the Taxon.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a date that conforms to ISO 8601-1:2019.</td></tr>
         <tr><td class="theme-label">Examples</td><td><code>1963-03-08T14:07-0600</code> (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC). <code>2009-02-20T08:40Z</code> (20 February 2009 8:40am UTC). <code>2018-08-29T15:19</code> (3:19pm local time on 29 August 2018). <code>1809-02-12</code> (some time during 12 February 1809). <code>1906-06</code> (some time in June 1906). <code>1971</code> (some time in the year 1971). <code>2007-03-01T13:00:00Z/2008-05-11T15:30:00Z</code> (some time during the interval between 1 March 2007 1pm UTC and 11 May 2008 3:30pm UTC). <code>1900/1909</code> (some time during the interval between the beginning of the year 1900 and the end of the year 1909). <code>2007-11-13/15</code> (some time in the interval between 13 November 2007 and 15 November 2007).</td></tr>
     </tbody>
 </table>
@@ -1888,7 +1888,7 @@ This document is intended to be an easy-to-read reference of the currently recom
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/namePublishedInID">http://rs.tdwg.org/dwc/terms/namePublishedInID</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>An identifier for the publication in which the scientificName was originally established under the rules of the associated nomenclaturalCode.</td></tr>
         <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code><a href="http://hdl.handle.net/10199/7">http://hdl.handle.net/10199/7</a></code></td></tr>
+        <tr><td class="theme-label">Examples</td><td></td></tr>
     </tbody>
 </table>
 <p class="invisible">
@@ -2276,7 +2276,7 @@ This document is intended to be an easy-to-read reference of the currently recom
         <tr class="table-secondary"><th colspan="2">measurementDeterminedDate <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/measurementDeterminedDate">http://rs.tdwg.org/dwc/terms/measurementDeterminedDate</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The date on which the MeasurementOrFact was made.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a date that conforms to ISO 8601:2004(E).</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a date that conforms to ISO 8601-1:2019.</td></tr>
         <tr><td class="theme-label">Examples</td><td><code>1963-03-08T14:07-0600</code> (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC). <code>2009-02-20T08:40Z</code> (20 February 2009 8:40am UTC). <code>2018-08-29T15:19</code> (3:19pm local time on 29 August 2018). <code>1809-02-12</code> (some time during 12 February 1809). <code>1906-06</code> (some time in June 1906). <code>1971</code> (some time in the year 1971). <code>2007-03-01T13:00:00Z/2008-05-11T15:30:00Z</code> (some time during the interval between 1 March 2007 1pm UTC and 11 May 2008 3:30pm UTC). <code>1900/1909</code> (some time during the interval between the beginning of the year 1900 and the end of the year 1909). <code>2007-11-13/15</code> (some time in the interval between 13 November 2007 and 15 November 2007).</td></tr>
     </tbody>
 </table>
@@ -2388,7 +2388,7 @@ This document is intended to be an easy-to-read reference of the currently recom
         <tr class="table-secondary"><th colspan="2">relationshipEstablishedDate <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/relationshipEstablishedDate">http://rs.tdwg.org/dwc/terms/relationshipEstablishedDate</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The date-time on which the relationship between the two resources was established.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a date that conforms to ISO 8601:2004(E).</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a date that conforms to ISO 8601-1:2019.</td></tr>
         <tr><td class="theme-label">Examples</td><td><code>1963-03-08T14:07-0600</code> (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC). <code>2009-02-20T08:40Z</code> (20 February 2009 8:40am UTC). <code>2018-08-29T15:19</code> (3:19pm local time on 29 August 2018). <code>1809-02-12</code> (some time during 12 February 1809). <code>1906-06</code> (some time in June 1906). <code>1971</code> (some time in the year 1971). <code>2007-03-01T13:00:00Z/2008-05-11T15:30:00Z</code> (some time during the interval between 1 March 2007 1pm UTC and 11 May 2008 3:30pm UTC). <code>1900/1909</code> (some time during the interval between the beginning of the year 1900 and the end of the year 1909). <code>2007-11-13/15</code> (some time in the interval between 13 November 2007 and 15 November 2007).</td></tr>
     </tbody>
 </table>

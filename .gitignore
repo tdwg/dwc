@@ -1,7 +1,12 @@
 .idea
+
+# Mac OS X
 .DS_Store
 
+# Python
 __pycache__/
 *.py[cod]
-
 .ipynb_checkpoints
+
+# Jekyll
+docs/_site/*
