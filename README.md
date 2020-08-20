@@ -4,11 +4,12 @@ Darwin Core is a standard maintained by the Darwin Core maintenance group. It in
 
 ## Getting started
 
-[Darwin Core quick reference guide](http://rs.tdwg.org/dwc/terms/)
+[Darwin Core quick reference guide](https://dwc.tdwg.org/terms/)
 
 Documents:
 
-* [Complete term history table](vocabulary/term_versions.csv): a CSV file with the full version history of Darwin Core terms
+* [List of terms document](https://dwc.tdwg.org/list/): Comprehensive metadata for current and obsolete terms in human readable form 
+* [Complete term history table](vocabulary/term_versions.csv): A CSV file with the full version history of Darwin Core terms
 * [Distribution documents](dist/): Simple CSV files to start using Darwin Core
 * [Website documents](docs/): Markdown files that form the source for the [Darwin Core website](https://dwc.tdwg.org/)
 
