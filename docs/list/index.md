@@ -37,7 +37,7 @@ This document contains terms that are part of the most recent version of the Dar
 
 This document includes terms in four namespaces that contain recommended terms: `dwc:`, `dwciri:`, `dc:`, and `dcterms:`. However, some terms in these namespaces are deprecated and should no longer be used. Deprecation is noted in the term metadata. Namespaces that contain only deprecated terms are not included in this document, but metadata about those terms can be retrieved by dereferencing their IRIs.
 
-For a simplified list that contains only the currently recommended terms, see the [Darwin Core Quick Reference Guide](https://dwc.tdwg.org/terms/).
+For a simplified list that contains only the currently recommended terms, see the [Darwin Core Quick Reference Guide](../terms/).
 
 ### 1.1 Status of the content of this document
 
@@ -63,7 +63,7 @@ The following namespace abbreviations are used in this document:
 
 ## 2 Use of Terms
 
-Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://dwc.tdwg.org/rdf/#143-use-of-darwin-core-terms-in-rdf-normative), terms in the `dwciri:` namespace MUST be used with IRI values. Terms in the `dwc:` and `dc:` namespaces are generally expected to have string literal values. Values for terms in the `dcterms:` namespace will depend on the details of the term. See [Section 3 of the Darwin Core RDF Guide](https://dwc.tdwg.org/rdf/#3-term-reference-normative) for details.
+Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#143-use-of-darwin-core-terms-in-rdf-normative), terms in the `dwciri:` namespace MUST be used with IRI values. Terms in the `dwc:` and `dc:` namespaces are generally expected to have string literal values. Values for terms in the `dcterms:` namespace will depend on the details of the term. See [Section 3 of the Darwin Core RDF Guide](../rdf/#3-term-reference-normative) for details.
 
 ## 3 Term indices
 ### 3.1 Index By Term Name
