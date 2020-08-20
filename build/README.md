@@ -7,7 +7,7 @@ The build script `build.py` uses as input:
 
 And creates:
 
-* The quick reference guide is a Markdown file at [docs/terms/index.md](../docs/terms/index.md). The guide is build as Markdown (with a lot of included html) rather than html, so it can incorporated by Jekyll in the Darwin Core website (including a header, footer and table of content).
+* The quick reference guide is a Markdown file at [docs/terms/index.md](../docs/terms/index.md). The guide is built as Markdown (with a lot of included html) rather than html, so it can be incorporated by Jekyll in the Darwin Core website (including a header, footer and table of contents).
 * Two simple Darwin Core CSV files in [dist/](../dist/)
 
 ## Run the build script
@@ -28,7 +28,7 @@ And creates:
 
 The script `generate_normative_csv.py` pulls source data from the [rs.tdwg.org](http://github.com/tdwg/rs.tdwg.org) repository. The local file `qrg-list.csv` contains a list of the term IRIs in the order that they are to appear in the Quick Reference Guide. This list needs to be changed whenever terms are added to or deprecated from Darwin Core.
 
-It outputs the file `term_versions.csv`, which is used as the input for the `build.py` script above.
+It generates the file `term_versions.csv`, which is used as the input for the `build.py` script above.
 
 ## Generating the "list of terms" document
 
