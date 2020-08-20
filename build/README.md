@@ -7,7 +7,7 @@
 3. Delete any rows whose terms are not being modified.
 4. Edit the cells whose values need to be changed.
 5. If a new term is being added, fill in a new row anywhere below the header row.
-6. Special care must be taken if columns are added (i.e. metadata properties are added). This is not for the faint of heart! The new columns must be added to every file used as source data for the various scripts and the column header mapping files also need to be edited. See [this page](for more details). This should should be a rare event. DO NOT ever delete columns! If you want to elimite values for a property, just leave empty strings in all of the cells of that property's column.
+6. Special care must be taken if columns are added (i.e. metadata properties are added). This is not for the faint of heart! The new columns must be added to every file used as source data for the various scripts and the column header mapping files also need to be edited. See [this page](for more details). This should be a rare event. DO NOT ever delete columns! If you want to elimite values for a property, just leave empty strings in all of the cells of that property's column.
 7. Create a new branch (or fork if you don't have push rights) of the [rs.tdwg.org repo](https://github.com/tdwg/rs.tdwg.org). Save your edited CSV file using some notable name in the [process](https://github.com/tdwg/rs.tdwg.org/tree/master/process) directory. 
 8. Open the [simplified_process_rs_tdwg_org.ipynb](https://github.com/tdwg/rs.tdwg.org/blob/master/process/simplified_process_rs_tdwg_org.ipynb) Jupyter notebook and follow [these instructions](https://github.com/tdwg/rs.tdwg.org/blob/master/process/process-vocabulary.md#21-setup) to edit the configuration section of the script. 
 9. Run the script, paying careful attention to whether particular sections are appropriate for what you are trying to accomplish. NOTE: there are still some kinks to be worked out for the borrowed terms (`dc:` and `dcterms:` namespaces), but changes there should be rare. It is useful to monitor the diffs that are generated as sections of the script are run and make sure that the changes are reasonable. This is easily monitored if you are using the GitHub desktop client.
@@ -37,7 +37,7 @@ The build script `build.py` uses as input:
 
 And creates:
 
-* The quick reference guide is a Markdown file at [docs/terms/index.md](../docs/terms/index.md). The guide is build as Markdown (with a lot of included html) rather than html, so it can incorporated by Jekyll in the Darwin Core website (including a header, footer and table of content).
+* The quick reference guide is a Markdown file at [docs/terms/index.md](../docs/terms/index.md). The guide is built as Markdown (with a lot of included html) rather than html, so it can be incorporated by Jekyll in the Darwin Core website (including a header, footer and table of contents).
 * Two simple Darwin Core CSV files in [dist/](../dist/)
 
 ## Run the build script
