@@ -28,7 +28,7 @@ The repository structure is described below. Files/directories indicated with `G
 │
 ├── standard                  : All content considered part of the Darwin Core standard
 │   ├── vocabularies
-│   │   └── term_versions.csv : Darwin Core term versions, contains the normative definitions of the terms
+│   │   └── term_versions.csv : Darwin Core term versions history
 │   │
 │   └── documents
 │       ├── simple            : Simple Darwin Core guide
