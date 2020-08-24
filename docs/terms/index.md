@@ -275,7 +275,7 @@ This document is intended to be an easy-to-read reference of the currently recom
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/Occurrence">http://rs.tdwg.org/dwc/terms/Occurrence</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>An existence of an Organism (sensu <a href="http://rs.tdwg.org/dwc/terms/Organism">http://rs.tdwg.org/dwc/terms/Organism</a>) at a particular place at a particular time.</td></tr>
         <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td>A wolf pack on the shore of Kluane Lake in 1988. A virus in a plant leaf in a the New York Botanical Garden at 15:29 on 2014-10-23. A fungus in Central Park in the summer of 1929.</td></tr>
+        <tr><td class="theme-label">Examples</td><td>A wolf pack on the shore of Kluane Lake in 1988. A virus in a plant leaf in the New York Botanical Garden at 15:29 on 2014-10-23. A fungus in Central Park in the summer of 1929.</td></tr>
     </tbody>
 </table>
 
@@ -736,7 +736,7 @@ This document is intended to be an easy-to-read reference of the currently recom
     <tbody>
         <tr class="table-secondary"><th colspan="2">startDayOfYear <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/startDayOfYear">http://rs.tdwg.org/dwc/terms/startDayOfYear</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The earliest ordinal day of the year on which the Event occurred (1 for January 1, 365 for December 31, except in a leap year, in which case it is 366).</td></tr>
+        <tr><td class="theme-label">Definition</td><td>The earliest integer day of the year on which the Event occurred (1 for January 1, 365 for December 31, except in a leap year, in which case it is 366).</td></tr>
         <tr><td class="theme-label">Comments</td><td></td></tr>
         <tr><td class="theme-label">Examples</td><td><code>1</code> (1 January). <code>366</code> (31 December), <code>365</code> (30 December in a leap year, 31 December in a non-leap year).</td></tr>
     </tbody>
@@ -747,7 +747,7 @@ This document is intended to be an easy-to-read reference of the currently recom
     <tbody>
         <tr class="table-secondary"><th colspan="2">endDayOfYear <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/endDayOfYear">http://rs.tdwg.org/dwc/terms/endDayOfYear</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The latest ordinal day of the year on which the Event occurred (1 for January 1, 365 for December 31, except in a leap year, in which case it is 366).</td></tr>
+        <tr><td class="theme-label">Definition</td><td>The latest integer day of the year on which the Event occurred (1 for January 1, 365 for December 31, except in a leap year, in which case it is 366).</td></tr>
         <tr><td class="theme-label">Comments</td><td></td></tr>
         <tr><td class="theme-label">Examples</td><td><code>1</code> (1 January). <code>32</code> (1 February). <code>366</code> (31 December). <code>365</code> (30 December in a leap year, 31 December in a non-leap year).</td></tr>
     </tbody>
@@ -1259,9 +1259,9 @@ This document is intended to be an easy-to-read reference of the currently recom
     <tbody>
         <tr class="table-secondary"><th colspan="2">pointRadiusSpatialFit <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/pointRadiusSpatialFit">http://rs.tdwg.org/dwc/terms/pointRadiusSpatialFit</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The ratio of the area of the point-radius (decimalLatitude, decimalLongitude, coordinateUncertaintyInMeters) to the area of the true (original, or most specific) spatial representation of the Location. Legal values are 0, greater than or equal to 1, or undefined. A value of 1 is an exact match or 100% overlap. A value of 0 should be used if the given point-radius does not completely contain the original representation. The pointRadiusSpatialFit is undefined (and should be left blank) if the original representation is a point without uncertainty and the given georeference is not that same point (without uncertainty). If both the original and the given georeference are the same point, the pointRadiusSpatialFit is 1.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Detailed explanations with graphical examples can be found in the Guide to Best Practices for Georeferencing, Chapman and Wieczorek, eds. 2006.</td></tr>
-        <tr><td class="theme-label">Examples</td><td>Detailed explanations with graphical examples can be found in the Guide to Best Practices for Georeferencing, Chapman and Wieczorek, eds. 2006.</td></tr>
+        <tr><td class="theme-label">Definition</td><td>The ratio of the area of the point-radius (decimalLatitude, decimalLongitude, coordinateUncertaintyInMeters) to the area of the true (original, or most specific) spatial representation of the Location. Legal values are 0, greater than or equal to 1, or undefined. A value of 1 is an exact match or 100% overlap. A value of 0 should be used if the given point-radius does not completely contain the original representation. The pointRadiusSpatialFit is undefined (and should be left empty) if the original representation is a point without uncertainty and the given georeference is not that same point (without uncertainty). If both the original and the given georeference are the same point, the pointRadiusSpatialFit is 1.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Detailed explanations with graphical examples can be found in the Georeferencing Best Practices, Chapman and Wieczorek, 2020 (<a href="https://doi.org/10.15468/doc-gg7h-s853">https://doi.org/10.15468/doc-gg7h-s853</a>).</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>0</code>, <code>1</code>, <code>1.5708</code></td></tr>
     </tbody>
 </table>
 <p class="invisible">
@@ -1303,7 +1303,7 @@ This document is intended to be an easy-to-read reference of the currently recom
     <tbody>
         <tr class="table-secondary"><th colspan="2">verbatimCoordinateSystem <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimCoordinateSystem">http://rs.tdwg.org/dwc/terms/verbatimCoordinateSystem</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The spatial coordinate system for the verbatimLatitude and verbatimLongitude or the verbatimCoordinates of the Location.</td></tr>
+        <tr><td class="theme-label">Definition</td><td>The coordinate format for the verbatimLatitude and verbatimLongitude or the verbatimCoordinates of the Location.</td></tr>
         <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
         <tr><td class="theme-label">Examples</td><td><code>decimal degrees</code>, <code>degrees decimal minutes</code>, <code>degrees minutes seconds</code>, <code>UTM</code></td></tr>
     </tbody>
@@ -1347,9 +1347,9 @@ This document is intended to be an easy-to-read reference of the currently recom
     <tbody>
         <tr class="table-secondary"><th colspan="2">footprintSpatialFit <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/footprintSpatialFit">http://rs.tdwg.org/dwc/terms/footprintSpatialFit</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The ratio of the area of the footprint (footprintWKT) to the area of the true (original, or most specific) spatial representation of the Location. Legal values are 0, greater than or equal to 1, or undefined. A value of 1 is an exact match or 100% overlap. A value of 0 should be used if the given footprint does not completely contain the original representation. The footprintSpatialFit is undefined (and should be left blank) if the original representation is a point and the given georeference is not that same point. If both the original and the given georeference are the same point, the footprintSpatialFit is 1.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Detailed explanations with graphical examples can be found in the Guide to Best Practices for Georeferencing, Chapman and Wieczorek, eds. 2006.</td></tr>
-        <tr><td class="theme-label">Examples</td><td>Detailed explanations with graphical examples can be found in the Guide to Best Practices for Georeferencing, Chapman and Wieczorek, eds. 2006.</td></tr>
+        <tr><td class="theme-label">Definition</td><td>The ratio of the area of the footprint (footprintWKT) to the area of the true (original, or most specific) spatial representation of the Location. Legal values are 0, greater than or equal to 1, or undefined. A value of 1 is an exact match or 100% overlap. A value of 0 should be used if the given footprint does not completely contain the original representation. The footprintSpatialFit is undefined (and should be left empty) if the original representation is a point without uncertainty and the given georeference is not that same point (without uncertainty). If both the original and the given georeference are the same point, the footprintSpatialFit is 1.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Detailed explanations with graphical examples can be found in the Georeferencing Best Practices, Chapman and Wieczorek, 2020 (<a href="https://doi.org/10.15468/doc-gg7h-s853">https://doi.org/10.15468/doc-gg7h-s853</a>).</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>0</code>, <code>1</code>, <code>1.5708</code></td></tr>
     </tbody>
 </table>
 <p class="invisible">
@@ -1382,7 +1382,7 @@ This document is intended to be an easy-to-read reference of the currently recom
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/georeferenceProtocol">http://rs.tdwg.org/dwc/terms/georeferenceProtocol</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>A description or reference to the methods used to determine the spatial footprint, coordinates, and uncertainties.</td></tr>
         <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Guide to Best Practices for Georeferencing. (Chapman and Wieczorek, eds. 2006). Global Biodiversity Information Facility.</code>, <code>MaNIS/HerpNet/ORNIS Georeferencing Guidelines</code>, <code>Georeferencing Quick Reference Guide</code></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>Georeferencing Quick Reference Guide (Zermoglio et al. 2020, <a href="https://doi.org/10.35035/e09p-h128">https://doi.org/10.35035/e09p-h128</a>)</code></td></tr>
     </tbody>
 </table>
 <p class="invisible">
