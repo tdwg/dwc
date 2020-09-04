@@ -6,7 +6,7 @@ Changes to the standard are subject to the [change policy](change_policy.html). 
 
 * Want to make a change to the standard? Copy and paste one of the **issue templates** below and [submit a new issue](https://github.com/tdwg/dwc/issues/new).
 * Want to contribute to this repository? [Fork the repository](https://github.com/tdwg/dwc/fork), make the changes, and [send a pull request](https://github.com/tdwg/dwc/compare).
-* Have a question about Darwin Core? Send it to tdwg-content@lists.tdwg.org.
+* Have a question about Darwin Core? Send it to tdwg-content@lists.tdwg.org or to the Darwin Core Questions & Answers repository through [this form](https://docs.google.com/forms/d/e/1FAIpQLSekd0QSdgiK5ujh6CLZPx9kKTcS-mJRNK_pGWk3b3fHv4x4gQ/viewform?c=0&w=1) or directly as a new [issue](https://github.com/tdwg/dwc-qa/issues).
 
 ## Issue templates
 
