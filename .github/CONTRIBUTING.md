@@ -18,15 +18,16 @@ Copy and paste this template into your [new issue](https://github.com/tdwg/dwc/i
 ## New term
 
 * Submitter:
-* Proponents (at least two independent parties who need this term):
 * Justification (why is this term necessary?):
+* Proponents (at least two independent parties who need this term):
 
-Proposed definition of the new term:
+Proposed attributes of the new term:
 
 * Term name (in lowerCamelCase):
 * Class (e.g. Location, Taxon):
 * Definition of the term:
-* Comment (examples, recommendations regarding content, etc.):
+* Usage comments (recommendations regarding content, etc.):
+* Examples: 
 * Refines (identifier of the broader term this term refines, if applicable):
 * Replaces (identifier of the existing term that would be deprecated and replaced by this term, if applicable):
 * ABCD 2.06 (XPATH of the equivalent term in ABCD, if applicable):
@@ -40,14 +41,16 @@ Copy and paste this template into your [new issue](https://github.com/tdwg/dwc/i
 ## Change term
 
 * Term identifier (URL of the term to change):
-* Submitter:
 * Justification (why is this change necessary?):
+* Submitter:
 
 I suggest the following changes (leave blank whatever would not change):
 
 * Term name (in lowerCamelCase):
+* Class (e.g. Location, Taxon):
 * Definition of the term:
-* Comment (examples):
+* Usage comments (recommendations regarding content, etc.):
+* Examples: 
 * Refines (identifier of the broader term this term refines, if applicable):
 * Replaces (identifier of the existing term that would be deprecated and replaced by this term, if applicable):
 * ABCD 2.06 (XPATH of the equivalent term in ABCD, if applicable):
