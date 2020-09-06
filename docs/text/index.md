@@ -4,7 +4,7 @@ Title
 : Darwin Core text guide
 
 Date version issued
-: 2015-06-02
+: 2020-09-05
 
 Date created
 : 2009-02-12
@@ -13,13 +13,13 @@ Part of TDWG Standard
 : <http://www.tdwg.org/standards/450/>
 
 This version
-: <http://rs.tdwg.org/dwc/terms/guides/text/2014-11-08>
+: <http://rs.tdwg.org/dwc/terms/guides/text/2020-09-05>
 
 Latest version
 : <http://rs.tdwg.org/dwc/terms/guides/text/>
 
 Previous version
-: <http://rs.tdwg.org/dwc/terms/guides/text/2009-12-07>
+: <http://rs.tdwg.org/dwc/terms/guides/text/2014-11-08>
 
 Abstract
 : Guidelines for implementing Darwin Core in Text files.
@@ -123,7 +123,7 @@ Attribute | Description | Required | Default
 `rowType` | A Unified Resource Identifier (URI) for the term identifying the class of data represented by each row, for example, <http://rs.tdwg.org/dwc/terms/Occurrence> for Occurrence records or <http://rs.tdwg.org/dwc/terms/Taxon> for Taxon records. Additional classes may be referenced by URI and defined outside the Darwin Core specification. The row type is required. For convenience the URIs for classes defined by the Darwin Core are: `Occurrence`: <http://rs.tdwg.org/dwc/terms/Occurrence>, `Event`: <http://rs.tdwg.org/dwc/terms/Event>, `Location`: <http://purl.org/dc/terms/Location>, `GeologicalContext`: <http://purl.org/dc/terms/GeologicalContext>, `Identification`: <http://rs.tdwg.org/dwc/terms/Identification>, `Taxon`: <http://rs.tdwg.org/dwc/terms/Taxon>, `ResourceRelationship`: <http://rs.tdwg.org/dwc/terms/ResourceRelationship>, `MeasurementOrFact`: <http://rs.tdwg.org/dwc/terms/MeasurementOrFact> | yes |
 `fieldsTerminatedBy` | Specifies the delimiter between fields. Typical values might be `,` or `\t` for CSV or Tab files respectively. | no | `,`
 `linesTerminatedBy` | Specifies the row separator character. | no | `\n`
-`fieldsEnclosedBy` | Specifies the character used to enclose (mark the start and end of) each field. CSV files frequently use the double quote character (`"`), but the default is no enclosing character. Note that a comma separated value file that has commas within the content of any field must have an enclosing character. | no | `"`
+`fieldsEnclosedBy` | Specifies the character used to enclose (mark the start and end of) each field. CSV files frequently use the double quote character (`"`), which is the default value if none is explicitly provided. Note that a comma separated value file that has commas within the content of any field must have an enclosing character. | no | `"`
 `encoding` | Specifies the [character encoding](http://en.wikipedia.org/wiki/Character_encoding) for the data file. The encoding is extremely important, but often ignored. The most frequently used encodings are: `UTF-8`: 8-bit Unicode Transformation Format, `UTF-16`: 16-bit Unicode Transformation Format, `ISO-8859-1`: commonly known as "Latin-1" and a common default on systems configured for a single western European language, `Windows-1252`: commonly known as "WinLatin" and a common default of legacy versions of Microsoft Windows based operating systems. | no | `UTF-8`
 `ignoreHeaderLines` | Specifies the number lines to ignore from the beginning of the file. This can be used to ignore files with column headings or preamble comments for example. | no | `0`
 `dateFormat` | When verbatim dates are consistent in format, this field can be used to indicate the format represented. It is recommended to use the date, dateTime and time for field formats wherever possible, but where verbatim dates are required, a format may be specified here. This should be considered a 'hint' for consumers. It is recommended that consumers support the minimum combinations of `DD` `MM` and `YYYY` with the separators `/` and `-`. Examples: `DDMMYYYY`: for dates of the form 21121978, `DD-MM-YYYY`: for dates of the form 21-12-1978, `MMDDYYYY`: for dates of the form 12211978, `MM-DD-YYYY`: for dates of the form 12-21-1978, `YYYYMMDD`: for dates of the form 19781221. | no | `YYYY-MM-DD`
