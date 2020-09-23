@@ -8,7 +8,7 @@ This document is intended to be an easy-to-read reference of the currently recom
 
 To cite the standard upon which this page is built, use the following:
 
-> Darwin Core Maintenance Group. 2020. List of Darwin Core terms. Biodiversity Information Standards (TDWG). http://rs.tdwg.org/dwc/doc/list/
+> Darwin Core Maintenance Group. 2020. List of Darwin Core terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/list/>
 
 To cite Darwin Core in general, use the peer-reviewed article on Darwin Core:
 
