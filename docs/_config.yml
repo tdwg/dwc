@@ -1,8 +1,7 @@
-# Site settings
+# SITE SETTINGS
 title: Darwin Core
-description: Website for the Darwin Core standard.
+description: Website for the Darwin Core standard
 url: "https://dwc.tdwg.org"
-
 navbar:
   left:
   - text: Terms
@@ -29,7 +28,7 @@ js: >-
       $("a[href='#usewithiri']", "#theme-sidebar-nav").parent().addClass("theme-divider-below");
   });
 
-# Build settings
+# BUILD SETTINGS
 markdown: kramdown
 # theme: tdwg-theme-jekyll
 remote_theme: tdwg/tdwg-theme-jekyll
