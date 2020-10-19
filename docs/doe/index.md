@@ -1,6 +1,6 @@
 # Degree of Establishment Controlled Vocabulary List of Terms
 
-Title:
+Title
 : Degree of Establishment Controlled Vocabulary List of Terms
 
 Namespace URI
