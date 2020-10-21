@@ -31,6 +31,8 @@ http://rs.tdwg.org/dwc/terms/lifeStage
 http://rs.tdwg.org/dwc/terms/reproductiveCondition
 http://rs.tdwg.org/dwc/terms/behavior
 http://rs.tdwg.org/dwc/terms/establishmentMeans
+http://rs.tdwg.org/dwc/terms/degreeOfEstablishment
+http://rs.tdwg.org/dwc/terms/pathway
 http://rs.tdwg.org/dwc/terms/occurrenceStatus
 http://rs.tdwg.org/dwc/terms/preparations
 http://rs.tdwg.org/dwc/terms/disposition
@@ -204,6 +206,7 @@ http://rs.tdwg.org/dwc/iri/inCollection
 http://rs.tdwg.org/dwc/iri/georeferencedBy
 http://rs.tdwg.org/dwc/iri/behavior
 http://rs.tdwg.org/dwc/iri/dataGeneralizations
+http://rs.tdwg.org/dwc/iri/degreeOfEstablishment
 http://rs.tdwg.org/dwc/iri/disposition
 http://rs.tdwg.org/dwc/iri/earliestGeochronologicalEra
 http://rs.tdwg.org/dwc/iri/establishmentMeans
@@ -230,6 +233,7 @@ http://rs.tdwg.org/dwc/iri/measurementType
 http://rs.tdwg.org/dwc/iri/measurementUnit
 http://rs.tdwg.org/dwc/iri/occurrenceStatus
 http://rs.tdwg.org/dwc/iri/organismQuantityType
+http://rs.tdwg.org/dwc/iri/pathway
 http://rs.tdwg.org/dwc/iri/preparations
 http://rs.tdwg.org/dwc/iri/recordNumber
 http://rs.tdwg.org/dwc/iri/reproductiveCondition
