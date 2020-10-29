@@ -80,6 +80,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://r
 			<td>Term IRI</td>
 			<td><a href="http://rs.tdwg.org/dwcdoe/values/d">http://rs.tdwg.org/dwcdoe/values/d</a></td>
 		</tr>
+		<tr>
 			<td>Modified</td>
 			<td>2020-10-13</td>
 		</tr>
@@ -117,6 +118,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://r
 			<td>Term IRI</td>
 			<td><a href="http://rs.tdwg.org/dwcdoe/values/d001">http://rs.tdwg.org/dwcdoe/values/d001</a></td>
 		</tr>
+		<tr>
 			<td>Modified</td>
 			<td>2020-10-13</td>
 		</tr>
@@ -162,6 +164,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://r
 			<td>Term IRI</td>
 			<td><a href="http://rs.tdwg.org/dwcdoe/values/d002">http://rs.tdwg.org/dwcdoe/values/d002</a></td>
 		</tr>
+		<tr>
 			<td>Modified</td>
 			<td>2020-10-13</td>
 		</tr>
@@ -211,6 +214,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://r
 			<td>Term IRI</td>
 			<td><a href="http://rs.tdwg.org/dwcdoe/values/d003">http://rs.tdwg.org/dwcdoe/values/d003</a></td>
 		</tr>
+		<tr>
 			<td>Modified</td>
 			<td>2020-10-13</td>
 		</tr>
@@ -256,6 +260,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://r
 			<td>Term IRI</td>
 			<td><a href="http://rs.tdwg.org/dwcdoe/values/d004">http://rs.tdwg.org/dwcdoe/values/d004</a></td>
 		</tr>
+		<tr>
 			<td>Modified</td>
 			<td>2020-10-13</td>
 		</tr>
@@ -301,6 +306,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://r
 			<td>Term IRI</td>
 			<td><a href="http://rs.tdwg.org/dwcdoe/values/d005">http://rs.tdwg.org/dwcdoe/values/d005</a></td>
 		</tr>
+		<tr>
 			<td>Modified</td>
 			<td>2020-10-13</td>
 		</tr>
@@ -346,6 +352,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://r
 			<td>Term IRI</td>
 			<td><a href="http://rs.tdwg.org/dwcdoe/values/d006">http://rs.tdwg.org/dwcdoe/values/d006</a></td>
 		</tr>
+		<tr>
 			<td>Modified</td>
 			<td>2020-10-13</td>
 		</tr>
@@ -391,6 +398,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://r
 			<td>Term IRI</td>
 			<td><a href="http://rs.tdwg.org/dwcdoe/values/d007">http://rs.tdwg.org/dwcdoe/values/d007</a></td>
 		</tr>
+		<tr>
 			<td>Modified</td>
 			<td>2020-10-13</td>
 		</tr>
@@ -436,6 +444,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://r
 			<td>Term IRI</td>
 			<td><a href="http://rs.tdwg.org/dwcdoe/values/d008">http://rs.tdwg.org/dwcdoe/values/d008</a></td>
 		</tr>
+		<tr>
 			<td>Modified</td>
 			<td>2020-10-13</td>
 		</tr>
@@ -481,6 +490,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://r
 			<td>Term IRI</td>
 			<td><a href="http://rs.tdwg.org/dwcdoe/values/d009">http://rs.tdwg.org/dwcdoe/values/d009</a></td>
 		</tr>
+		<tr>
 			<td>Modified</td>
 			<td>2020-10-13</td>
 		</tr>
@@ -526,6 +536,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://r
 			<td>Term IRI</td>
 			<td><a href="http://rs.tdwg.org/dwcdoe/values/d010">http://rs.tdwg.org/dwcdoe/values/d010</a></td>
 		</tr>
+		<tr>
 			<td>Modified</td>
 			<td>2020-10-13</td>
 		</tr>
@@ -571,6 +582,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://r
 			<td>Term IRI</td>
 			<td><a href="http://rs.tdwg.org/dwcdoe/values/d011">http://rs.tdwg.org/dwcdoe/values/d011</a></td>
 		</tr>
+		<tr>
 			<td>Modified</td>
 			<td>2020-10-13</td>
 		</tr>
