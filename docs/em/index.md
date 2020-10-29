@@ -75,6 +75,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 			<td>Term IRI</td>
 			<td><a href="http://rs.tdwg.org/dwcem/values/e">http://rs.tdwg.org/dwcem/values/e</a></td>
 		</tr>
+		<tr>
 			<td>Modified</td>
 			<td>2020-10-13</td>
 		</tr>
@@ -112,6 +113,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 			<td>Term IRI</td>
 			<td><a href="http://rs.tdwg.org/dwcem/values/e001">http://rs.tdwg.org/dwcem/values/e001</a></td>
 		</tr>
+		<tr>
 			<td>Modified</td>
 			<td>2020-10-13</td>
 		</tr>
@@ -157,6 +159,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 			<td>Term IRI</td>
 			<td><a href="http://rs.tdwg.org/dwcem/values/e002">http://rs.tdwg.org/dwcem/values/e002</a></td>
 		</tr>
+		<tr>
 			<td>Modified</td>
 			<td>2020-10-13</td>
 		</tr>
@@ -202,6 +205,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 			<td>Term IRI</td>
 			<td><a href="http://rs.tdwg.org/dwcem/values/e003">http://rs.tdwg.org/dwcem/values/e003</a></td>
 		</tr>
+		<tr>
 			<td>Modified</td>
 			<td>2020-10-13</td>
 		</tr>
@@ -247,6 +251,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 			<td>Term IRI</td>
 			<td><a href="http://rs.tdwg.org/dwcem/values/e004">http://rs.tdwg.org/dwcem/values/e004</a></td>
 		</tr>
+		<tr>
 			<td>Modified</td>
 			<td>2020-10-13</td>
 		</tr>
@@ -292,6 +297,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 			<td>Term IRI</td>
 			<td><a href="http://rs.tdwg.org/dwcem/values/e005">http://rs.tdwg.org/dwcem/values/e005</a></td>
 		</tr>
+		<tr>
 			<td>Modified</td>
 			<td>2020-10-13</td>
 		</tr>
@@ -337,6 +343,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 			<td>Term IRI</td>
 			<td><a href="http://rs.tdwg.org/dwcem/values/e006">http://rs.tdwg.org/dwcem/values/e006</a></td>
 		</tr>
+		<tr>
 			<td>Modified</td>
 			<td>2020-10-13</td>
 		</tr>

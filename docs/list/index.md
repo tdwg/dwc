@@ -3219,11 +3219,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2020-10-13</td>
+			<td>2020-10-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/establishmentMeans-2020-10-13">http://rs.tdwg.org/dwc/terms/version/establishmentMeans-2020-10-13</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/establishmentMeans-2020-10-28">http://rs.tdwg.org/dwc/terms/version/establishmentMeans-2020-10-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3239,7 +3239,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`native`, `nativeReintroduced`, `introduced`, `introducedAssistedColonisation`, `vagrant`, uncertain`</td>
+			<td>`native`, `nativeReintroduced`, `introduced`, `introducedAssistedColonisation`, `vagrant`, `uncertain`</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -5277,11 +5277,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2017-10-06</td>
+			<td>2020-10-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/georeferenceSources-2017-10-06">http://rs.tdwg.org/dwc/terms/version/georeferenceSources-2017-10-06</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/georeferenceSources-2020-10-28">http://rs.tdwg.org/dwc/terms/version/georeferenceSources-2020-10-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -5297,7 +5297,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`<a href="https://www.geonames.org/`">https://www.geonames.org/`</a>, `USGS 1:24000 Florence Montana Quad | Terrametrics 2008 on Google Earth`, `GeoLocate`</td>
+			<td>`<a href="https://www.geonames.org/`">https://www.geonames.org/`</a>, `USGS 1:24000 Florence Montana Quad 1967 | Terrametrics 2008 on Google Earth`, `GeoLocate`</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -6935,7 +6935,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2008-01-14</td>
+			<td>2020-10-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
@@ -6951,7 +6951,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to use a controlled vocabulary such as RFC 4646.</td>
+			<td>Recommended best practice is to use a controlled vocabulary such as RFC 5646.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -7891,11 +7891,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2017-10-06</td>
+			<td>2020-10-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/materialSampleID-2017-10-06">http://rs.tdwg.org/dwc/terms/version/materialSampleID-2017-10-06</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/materialSampleID-2020-10-28">http://rs.tdwg.org/dwc/terms/version/materialSampleID-2020-10-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -7904,6 +7904,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Definition</td>
 			<td>An identifier for the MaterialSample (as opposed to a particular digital record of the material sample). In the absence of a persistent global unique identifier, construct one from a combination of identifiers in the record that will most closely make the materialSampleID globally unique.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a persistent, globally unique identifier.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
