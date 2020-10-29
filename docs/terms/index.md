@@ -69,7 +69,7 @@ To cite Darwin Core in general, use the peer-reviewed article on Darwin Core:
         <tr class="table-secondary"><th colspan="2">language <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://purl.org/dc/elements/1.1/language">http://purl.org/dc/elements/1.1/language</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>A language of the resource.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary such as RFC 4646.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary such as RFC 5646.</td></tr>
         <tr><td class="theme-label">Examples</td><td><code>en</code> (for English), <code>es</code> (for Spanish)</td></tr>
     </tbody>
 </table>
@@ -418,7 +418,7 @@ To cite Darwin Core in general, use the peer-reviewed article on Darwin Core:
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/establishmentMeans">http://rs.tdwg.org/dwc/terms/establishmentMeans</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>Statement about whether an organism or organisms have been introduced to a given place and time through the direct or indirect activity of modern humans.</td></tr>
         <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use controlled value strings from the <a href="http://rs.tdwg.org/dwcem/">http://rs.tdwg.org/dwcem/</a> controlled vocabulary designated for use with this term. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>native</code>, <code>nativeReintroduced</code>, <code>introduced</code>, <code>introducedAssistedColonisation</code>, <code>vagrant</code>, uncertain`</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>native</code>, <code>nativeReintroduced</code>, <code>introduced</code>, <code>introducedAssistedColonisation</code>, <code>vagrant</code>, <code>uncertain</code></td></tr>
     </tbody>
 </table>
 <p class="invisible">
@@ -668,7 +668,7 @@ To cite Darwin Core in general, use the peer-reviewed article on Darwin Core:
         <tr class="table-secondary"><th colspan="2">materialSampleID <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/materialSampleID">http://rs.tdwg.org/dwc/terms/materialSampleID</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>An identifier for the MaterialSample (as opposed to a particular digital record of the material sample). In the absence of a persistent global unique identifier, construct one from a combination of identifiers in the record that will most closely make the materialSampleID globally unique.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a persistent, globally unique identifier.</td></tr>
         <tr><td class="theme-label">Examples</td><td><code>06809dc5-f143-459a-be1a-6f03e63fc083</code></td></tr>
     </tbody>
 </table>
@@ -1425,7 +1425,7 @@ To cite Darwin Core in general, use the peer-reviewed article on Darwin Core:
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/georeferenceSources">http://rs.tdwg.org/dwc/terms/georeferenceSources</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>A list (concatenated and separated) of maps, gazetteers, or other resources used to georeference the Location, described specifically enough to allow anyone in the future to use the same resources.</td></tr>
         <tr><td class="theme-label">Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code><a href="https://www.geonames.org/">https://www.geonames.org/</a></code>, <code>USGS 1:24000 Florence Montana Quad | Terrametrics 2008 on Google Earth</code>, <code>GeoLocate</code></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code><a href="https://www.geonames.org/">https://www.geonames.org/</a></code>, <code>USGS 1:24000 Florence Montana Quad 1967 | Terrametrics 2008 on Google Earth</code>, <code>GeoLocate</code></td></tr>
     </tbody>
 </table>
 <p class="invisible">
