@@ -23,4 +23,4 @@ Proposed new attributes of the term:
 * Examples: 
 * Refines (identifier of the broader term this term refines, if applicable):
 * Replaces (identifier of the existing term that would be deprecated and replaced by this term, if applicable):
-* ABCD 2.06 (XPATH of the equivalent term in ABCD, if applicable):
+* ABCD 2.06 (XPATH of the equivalent term in ABCD or EFG, if applicable):
