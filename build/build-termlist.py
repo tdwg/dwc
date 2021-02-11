@@ -1,5 +1,6 @@
 # Script to build Markdown pages that provide term metadata for complex vocabularies
 # Steve Baskauf 2020-08-12 CC0
+# updated 2021-02-11
 # This script merges static Markdown header and footer documents with term information tables (in Markdown) generated from data in the rs.tdwg.org repo from the TDWG Github site
 
 import re
@@ -92,7 +93,7 @@ print()
 # ---------------
 
 # Create column list
-column_list = ['pref_ns_prefix', 'pref_ns_uri', 'term_localName', 'label', 'rdfs_comment', 'dcterms_description', 'examples', 'term_modified', 'term_deprecated', 'rdf_type', 'replaces_term', 'replaces1_term']
+column_list = ['pref_ns_prefix', 'pref_ns_uri', 'term_localName', 'label', 'rdfs_comment', 'dcterms_description', 'examples', 'term_modified', 'term_deprecated', 'rdf_type', 'tdwgutility_abcdEquivalence', 'replaces_term', 'replaces1_term']
 #column_list = ['pref_ns_prefix', 'pref_ns_uri', 'term_localName', 'label', 'definition', 'usage', 'notes', 'term_modified', 'term_deprecated', 'type']
 if vocab_type == 2:
     column_list += ['controlled_value_string']
@@ -114,7 +115,7 @@ for term_list in term_lists_info:
     data_url = githubBaseUri + term_list['database'] + '/' + term_list['database'] + '.csv'
     frame = pd.read_csv(data_url, na_filter=False)
     for index,row in frame.iterrows():
-        row_list = [term_list['pref_ns_prefix'], term_list['pref_ns_uri'], row['term_localName'], row['label'], row['rdfs_comment'], row['dcterms_description'], row['examples'], row['term_modified'], row['term_deprecated'], row['rdf_type'], row['replaces_term'], row['replaces1_term']]
+        row_list = [term_list['pref_ns_prefix'], term_list['pref_ns_uri'], row['term_localName'], row['label'], row['rdfs_comment'], row['dcterms_description'], row['examples'], row['term_modified'], row['term_deprecated'], row['rdf_type'], row['tdwgutility_abcdEquivalence'], row['replaces_term'], row['replaces1_term']]
         #row_list = [term_list['pref_ns_prefix'], term_list['pref_ns_uri'], row['term_localName'], row['label'], row['definition'], row['usage'], row['notes'], row['term_modified'], row['term_deprecated'], row['type']]
         if vocab_type == 2:
             row_list += [row['controlled_value_string']]
@@ -327,6 +328,12 @@ if True:
             text += '\t\t\t<td>Examples</td>\n'
             text += '\t\t\t<td>' + createLinks(row['examples']) + '</td>\n'
             #text += '\t\t\t<td>' + createLinks(row['usage']) + '</td>\n'
+            text += '\t\t</tr>\n'
+
+        if row['tdwgutility_abcdEquivalence'] != '':
+            text += '\t\t<tr>\n'
+            text += '\t\t\t<td>ABCD equivalence</td>\n'
+            text += '\t\t\t<td>' + createLinks(row['tdwgutility_abcdEquivalence']) + '</td>\n'
             text += '\t\t</tr>\n'
 
         if vocab_type == 2 or vocab_type ==3: # controlled vocabulary
