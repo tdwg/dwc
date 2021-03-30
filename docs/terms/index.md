@@ -417,7 +417,7 @@ To cite Darwin Core in general, use the peer-reviewed article on Darwin Core:
         <tr class="table-secondary"><th colspan="2">establishmentMeans <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/establishmentMeans">http://rs.tdwg.org/dwc/terms/establishmentMeans</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>Statement about whether an organism or organisms have been introduced to a given place and time through the direct or indirect activity of modern humans.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use controlled value strings from the <a href="http://rs.tdwg.org/dwcem/">http://rs.tdwg.org/dwcem/</a> controlled vocabulary designated for use with this term. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a></td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use controlled value strings from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/em/">http://rs.tdwg.org/dwc/doc/em/</a>. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a></td></tr>
         <tr><td class="theme-label">Examples</td><td><code>native</code>, <code>nativeReintroduced</code>, <code>introduced</code>, <code>introducedAssistedColonisation</code>, <code>vagrant</code>, <code>uncertain</code></td></tr>
     </tbody>
 </table>
@@ -428,7 +428,7 @@ To cite Darwin Core in general, use the peer-reviewed article on Darwin Core:
         <tr class="table-secondary"><th colspan="2">degreeOfEstablishment <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/degreeOfEstablishment">http://rs.tdwg.org/dwc/terms/degreeOfEstablishment</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The degree to which an Organism survives, reproduces, and expands its range at the given place and time.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use controlled value strings from the <a href="http://rs.tdwg.org/dwcdoe/">http://rs.tdwg.org/dwcdoe/</a> controlled vocabulary designated for use with this term. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a></td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use controlled value strings from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/doe/">http://rs.tdwg.org/dwc/doc/doe/</a>. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a></td></tr>
         <tr><td class="theme-label">Examples</td><td><code>native</code>, <code>captive</code>, <code>cultivated</code>, <code>released</code>, <code>failing</code>, <code>casual</code>, <code>reproducing</code>, <code>established</code>, <code>colonising</code>, <code>invasive</code>, <code>widespreadInvasive</code></td></tr>
     </tbody>
 </table>
@@ -439,7 +439,7 @@ To cite Darwin Core in general, use the peer-reviewed article on Darwin Core:
         <tr class="table-secondary"><th colspan="2">pathway <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/pathway">http://rs.tdwg.org/dwc/terms/pathway</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The process by which an Organism came to be in a given place at a given time.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use controlled value strings from the <a href="http://rs.tdwg.org/dwcpw/">http://rs.tdwg.org/dwcpw/</a> controlled vocabulary designated for use with this term. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a></td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use controlled value strings from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/pw/">http://rs.tdwg.org/dwc/doc/pw/</a>. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a></td></tr>
         <tr><td class="theme-label">Examples</td><td><code>releasedForUse</code>, <code>otherEscape</code>, <code>transportContaminant</code>, <code>transportStowaway</code>, <code>corridor</code>, <code>unaided</code></td></tr>
     </tbody>
 </table>
@@ -2596,7 +2596,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
         <tr class="table-secondary"><th colspan="2">degreeOfEstablishment <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/degreeOfEstablishment">http://rs.tdwg.org/dwc/iri/degreeOfEstablishment</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The degree to which an Organism survives, reproduces, and expands its range at the given place and time.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use IRIs from the <a href="http://rs.tdwg.org/dwcdoe/">http://rs.tdwg.org/dwcdoe/</a> controlled vocabulary designated for use with this term. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a> . Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use IRIs from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/doe/">http://rs.tdwg.org/dwc/doc/doe/</a>. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a> . Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
         <tr><td class="theme-label">Examples</td><td><code><a href="http://rs.tdwg.org/dwcdoe/values/d003">http://rs.tdwg.org/dwcdoe/values/d003</a></code>, <code><a href="http://rs.tdwg.org/dwcdoe/values/d005">http://rs.tdwg.org/dwcdoe/values/d005</a></code></td></tr>
     </tbody>
 </table>
@@ -2629,7 +2629,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
         <tr class="table-secondary"><th colspan="2">establishmentMeans <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/establishmentMeans">http://rs.tdwg.org/dwc/iri/establishmentMeans</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The process by which the biological individual(s) represented in the Occurrence became established at the location.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use IRIs from the <a href="http://rs.tdwg.org/dwcem/">http://rs.tdwg.org/dwcem/</a> controlled vocabulary designated for use with this term. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a> . Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use IRIs from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/em/">http://rs.tdwg.org/dwc/doc/em/</a>. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a> . Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
         <tr><td class="theme-label">Examples</td><td><code><a href="http://rs.tdwg.org/dwcem/values/e001">http://rs.tdwg.org/dwcem/values/e001</a></code>, <code><a href="http://rs.tdwg.org/dwcem/values/e005">http://rs.tdwg.org/dwcem/values/e005</a></code></td></tr>
     </tbody>
 </table>
@@ -2893,7 +2893,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
         <tr class="table-secondary"><th colspan="2">pathway <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/pathway">http://rs.tdwg.org/dwc/iri/pathway</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The process by which an Organism came to be in a given place at a given time.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use IRIs from the <a href="http://rs.tdwg.org/dwcpw/">http://rs.tdwg.org/dwcpw/</a> controlled vocabulary designated for use with this term. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a> . Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use IRIs from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/pw/">http://rs.tdwg.org/dwc/doc/pw/</a>. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a> . Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
         <tr><td class="theme-label">Examples</td><td><code><a href="http://rs.tdwg.org/dwcpw/values/p002">http://rs.tdwg.org/dwcpw/values/p002</a></code>, <code><a href="http://rs.tdwg.org/dwcpw/values/p046">http://rs.tdwg.org/dwcpw/values/p046</a></code></td></tr>
     </tbody>
 </table>
