@@ -10,17 +10,18 @@ assignees: ''
 
 ## New term
 
-* Submitter:
-* Justification (why is this term necessary?):
-* Proponents (at least two independent parties who need this term):
+* Submitter: 
+* Efficacy Justification (why is this term necessary?): 
+* Demand Justification (name at least two organizations that independently need this term): 
+* Stability Justification (what concerns are there that this might affect existing emplementations?): 
 
 Proposed attributes of the new term:
 
-* Term name (in lowerCamelCase):
-* Organized in Class (e.g. Location, Taxon):
-* Definition of the term:
-* Usage comments (recommendations regarding content, etc.):
-* Examples: 
-* Refines (identifier of the broader term this term refines, if applicable):
-* Replaces (identifier of the existing term that would be deprecated and replaced by this term, if applicable):
-* ABCD 2.06 (XPATH of the equivalent term in ABCD or EFG, if applicable):
+* Term name (in lowerCamelCase for properties, UpperCamelCase for classes): 
+* Organized in Class (e.g., Occurrence, Event, Location, Taxon): 
+* Definition of the term (normative): 
+* Usage comments (recommendations regarding content, etc., not normative): 
+* Examples (not normative): 
+* Refines (identifier of the broader term this term refines; normative): 
+* Replaces (identifier of the existing term that would be deprecated and replaced by this term; normative): 
+* ABCD 2.06 (XPATH of the equivalent term in ABCD or EFG; not normative):
