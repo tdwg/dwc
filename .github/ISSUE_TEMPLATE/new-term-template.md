@@ -13,7 +13,8 @@ assignees: ''
 * Submitter: 
 * Efficacy Justification (why is this term necessary?): 
 * Demand Justification (name at least two organizations that independently need this term): 
-* Stability Justification (what concerns are there that this might affect existing emplementations?): 
+* Stability Justification (what concerns are there that this might affect existing implementations?): 
+* Implications for dwciri: namespace (does this change affect a dwciri term version)?: 
 
 Proposed attributes of the new term:
 
