@@ -16,6 +16,8 @@ assignees: ''
 * Stability Justification (what concerns are there that this might affect existing implementations?): 
 * Implications for dwciri: namespace (does this change affect a dwciri term version)?: 
 
+Current Term definition: https://dwc.tdwg.org/list/#dwc_[term name here]
+
 Proposed attributes of the new term:
 
 * Term name (in lowerCamelCase for properties, UpperCamelCase for classes): 
