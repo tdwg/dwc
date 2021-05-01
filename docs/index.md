@@ -4,7 +4,7 @@ layout: home
 
 # Darwin Core
 
-<p class="lead">Darwin Core is a standard maintained by the [Darwin Core Maintenance Interest Group](https://www.tdwg.org/standards/dwc/#maintenance%20group). It includes a glossary of terms (in other contexts these might be called properties, elements, fields, columns, attributes, or concepts) intended to <strong>facilitate the sharing of information about biological diversity</strong> by providing identifiers, labels, and definitions. Darwin Core is primarily based on taxa, their occurrence in nature as documented by observations, specimens, samples, and related information.</p>
+<p class="lead">Darwin Core is a standard maintained by the <a href="https://www.tdwg.org/standards/dwc/#maintenance%20group">Darwin Core Maintenance Interest Group</a>. It includes a glossary of terms (in other contexts these might be called properties, elements, fields, columns, attributes, or concepts) intended to <strong>facilitate the sharing of information about biological diversity</strong> by providing identifiers, labels, and definitions. Darwin Core is primarily based on taxa, their occurrence in nature as documented by observations, specimens, samples, and related information.</p>
 
 ## Getting started
 
