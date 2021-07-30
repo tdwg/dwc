@@ -4,9 +4,13 @@ container: fluid
 
 # Darwin Core quick reference guide
 
-This document is intended to be an easy-to-read reference of the currently (as of 2021-07-15) recommended terms maintained as part of the [Darwin Core standard](https://www.tdwg.org/standards/dwc/). This page itself is not part of the standard. It draws on the term names and definitions from the normative part of the standard and combines them with comments and examples that are not normative, but that are meant to help people to use the terms consistently. Categories such as `Occurrence` and `Event` correspond to Darwin Core classes, which are special category terms used to group sets of terms for convenience. Comprehensive metadata for current and obsolete terms in human readable form are found in a [list of terms document](../list/). [Files with lists of these terms](https://github.com/tdwg/dwc/tree/master/dist) and [their full history](https://github.com/tdwg/dwc/blob/master/vocabulary/term_versions.csv) can be found in the [Darwin Core repository](https://github.com/tdwg/dwc). See below for how to [cite Darwin Core](#cite_darwin_core).
+This document is intended to be an easy-to-read reference of the currently (as of 2021-07-15) recommended terms maintained as part of the [Darwin Core standard](https://www.tdwg.org/standards/dwc/) and is maintained by the [Darwin Core Maintenance Group](https://www.tdwg.org/community/dwc/). 
 
-For inquiries about how to use Darwin Core, either enter an issue in the [Darwin Core Questions & Answers site](https://github.com/tdwg/dwc-qa/blob/master/README.md) or enter an issue in the [alternative form](https://tinyurl.com/darwin-qa), which will have the same effect.
+This page is not part of the standard, but combines the normative term names and definitions with the non-normative comments and examples that are meant to help people to use the terms consistently. Capitalized terms such as `Occurrence` and `Event` are Darwin Core classes, which are special category terms used to group sets of terms for convenience. Comprehensive metadata for current and obsolete terms in human readable form are found in the document [List of Darwin Core terms](../list/). 
+
+Additional [files with just the current term names](https://github.com/tdwg/dwc/tree/master/dist) and a [file with the full term history](https://github.com/tdwg/dwc/blob/master/vocabulary/term_versions.csv) can be found in the [Darwin Core repository](https://github.com/tdwg/dwc). 
+
+For inquiries about how to use Darwin Core, either enter an issue in the [Darwin Core Questions & Answers site](https://github.com/tdwg/dwc-qa/blob/master/README.md) or enter an issue in the [alternative form](https://tinyurl.com/darwin-qa), which will have the same effect. See the bottom of this document for how to [cite Darwin Core](#cite-darwin-core).
 
 
 ## Record-level
