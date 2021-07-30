@@ -4,19 +4,7 @@ container: fluid
 
 # Darwin Core quick reference guide
 
-This document is intended to be an easy-to-read reference of the currently (as of 2021-07-15) recommended terms maintained as part of the [Darwin Core standard](https://www.tdwg.org/standards/dwc/). This page itself is not part of the standard. It draws on the term names and definitions from the normative part of the standard and combines them with comments and examples that are not normative, but that are meant to help people to use the terms consistently. Categories such as `Occurrence` and `Event` correspond to Darwin Core classes, which are special category terms used to group sets of terms for convenience. Comprehensive metadata for current and obsolete terms in human readable form are found in a [list of terms document](../list/). [Files with lists of these terms](https://github.com/tdwg/dwc/tree/master/dist) and [their full history](https://github.com/tdwg/dwc/blob/master/vocabulary/term_versions.csv) can be found in the [Darwin Core repository](https://github.com/tdwg/dwc).
-
-To cite this document, use the following:
-
-> Darwin Core Maintenance Group. 2021. Darwin Core quick reference guide. Biodiversity Information Standards (TDWG). <https://dwc.tdwg.org/terms/>
-
-To cite the standard document upon which this page is built, use the following:
-
-> Darwin Core Maintenance Group. 2021. List of Darwin Core terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/list/>
-
-To cite Darwin Core in general, use the peer-reviewed article on Darwin Core:
-
-> Wieczorek J, Bloom D, Guralnick R, Blum S, Döring M, et al. (2012) Darwin Core: An Evolving Community-Developed Biodiversity Data Standard. PLoS ONE 7(1): e29715. <https://doi.org/10.1371/journal.pone.0029715>
+This document is intended to be an easy-to-read reference of the currently (as of 2021-07-15) recommended terms maintained as part of the [Darwin Core standard](https://www.tdwg.org/standards/dwc/). This page itself is not part of the standard. It draws on the term names and definitions from the normative part of the standard and combines them with comments and examples that are not normative, but that are meant to help people to use the terms consistently. Categories such as `Occurrence` and `Event` correspond to Darwin Core classes, which are special category terms used to group sets of terms for convenience. Comprehensive metadata for current and obsolete terms in human readable form are found in a [list of terms document](../list/). [Files with lists of these terms](https://github.com/tdwg/dwc/tree/master/dist) and [their full history](https://github.com/tdwg/dwc/blob/master/vocabulary/term_versions.csv) can be found in the [Darwin Core repository](https://github.com/tdwg/dwc). See below for how to [cite Darwin Core](#cite_darwin_core).
 
 For inquiries about how to use Darwin Core, either enter an issue in the [Darwin Core Questions & Answers site](https://github.com/tdwg/dwc-qa/blob/master/README.md) or enter an issue in the [alternative form](https://tinyurl.com/darwin-qa), which will have the same effect.
 
@@ -3238,3 +3226,16 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
 </table>
 
 
+
+# Cite Darwin Core
+To cite Darwin Core in general, use the peer-reviewed article on Darwin Core:
+
+Wieczorek J, Bloom D, Guralnick R, Blum S, Döring M, et al. (2012) Darwin Core: An Evolving Community-Developed Biodiversity Data Standard. PLoS ONE 7(1): e29715. <https://doi.org/10.1371/journal.pone.0029715>
+
+To cite the standard document upon which this page is built, use the following:
+
+Darwin Core Maintenance Group. 2021. List of Darwin Core terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/list/>
+
+To cite this document specifically, use the following:
+
+Darwin Core Maintenance Group. 2021. Darwin Core quick reference guide. Biodiversity Information Standards (TDWG). <https://dwc.tdwg.org/terms/>

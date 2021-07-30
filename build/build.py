@@ -1,9 +1,10 @@
 #
-# S. Van Hoey
-#
+# Author: S. Van Hoey
+# Contributors: John Wieczorek
+# 
 # Build script for tdwg dwc handling
 #
-
+__version__ = '2021-07-30T-03:00'
 import io
 import os
 import re
@@ -17,10 +18,10 @@ from jinja2 import FileSystemLoader, Environment
 NAMESPACES = {
     'http://rs.tdwg.org/dwc/iri/' : 'dwciri',
     'http://rs.tdwg.org/dwc/terms/' : 'dwc',
+    'http://rs.tdwg.org/chrono/terms/' : 'chrono',
     'http://purl.org/dc/elements/1.1/' : 'dc',
     'http://purl.org/dc/terms/' : 'dcterms',
     'http://rs.tdwg.org/dwc/terms/attributes/' : 'tdwgutility'}
-
 
 class ProvidedTermsError(Exception):
     """inconsistency in the available terms Error"""
