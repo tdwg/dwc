@@ -23,6 +23,7 @@ http://rs.tdwg.org/dwc/terms/occurrenceID
 http://rs.tdwg.org/dwc/terms/catalogNumber
 http://rs.tdwg.org/dwc/terms/recordNumber
 http://rs.tdwg.org/dwc/terms/recordedBy
+http://rs.tdwg.org/dwc/terms/recordedByID
 http://rs.tdwg.org/dwc/terms/individualCount
 http://rs.tdwg.org/dwc/terms/organismQuantity
 http://rs.tdwg.org/dwc/terms/organismQuantityType
@@ -33,10 +34,12 @@ http://rs.tdwg.org/dwc/terms/behavior
 http://rs.tdwg.org/dwc/terms/establishmentMeans
 http://rs.tdwg.org/dwc/terms/degreeOfEstablishment
 http://rs.tdwg.org/dwc/terms/pathway
+http://rs.tdwg.org/dwc/terms/georeferenceVerificationStatus
 http://rs.tdwg.org/dwc/terms/occurrenceStatus
 http://rs.tdwg.org/dwc/terms/preparations
 http://rs.tdwg.org/dwc/terms/disposition
 http://rs.tdwg.org/dwc/terms/associatedMedia
+http://rs.tdwg.org/dwc/terms/associatedOccurrences
 http://rs.tdwg.org/dwc/terms/associatedReferences
 http://rs.tdwg.org/dwc/terms/associatedSequences
 http://rs.tdwg.org/dwc/terms/associatedTaxa
@@ -46,7 +49,6 @@ http://rs.tdwg.org/dwc/terms/Organism
 http://rs.tdwg.org/dwc/terms/organismID
 http://rs.tdwg.org/dwc/terms/organismName
 http://rs.tdwg.org/dwc/terms/organismScope
-http://rs.tdwg.org/dwc/terms/associatedOccurrences
 http://rs.tdwg.org/dwc/terms/associatedOrganisms
 http://rs.tdwg.org/dwc/terms/previousIdentifications
 http://rs.tdwg.org/dwc/terms/organismRemarks
@@ -89,6 +91,7 @@ http://rs.tdwg.org/dwc/terms/verbatimLocality
 http://rs.tdwg.org/dwc/terms/minimumElevationInMeters
 http://rs.tdwg.org/dwc/terms/maximumElevationInMeters
 http://rs.tdwg.org/dwc/terms/verbatimElevation
+http://rs.tdwg.org/dwc/terms/verticalDatum
 http://rs.tdwg.org/dwc/terms/minimumDepthInMeters
 http://rs.tdwg.org/dwc/terms/maximumDepthInMeters
 http://rs.tdwg.org/dwc/terms/verbatimDepth
@@ -114,7 +117,6 @@ http://rs.tdwg.org/dwc/terms/georeferencedBy
 http://rs.tdwg.org/dwc/terms/georeferencedDate
 http://rs.tdwg.org/dwc/terms/georeferenceProtocol
 http://rs.tdwg.org/dwc/terms/georeferenceSources
-http://rs.tdwg.org/dwc/terms/georeferenceVerificationStatus
 http://rs.tdwg.org/dwc/terms/georeferenceRemarks
 http://rs.tdwg.org/dwc/terms/GeologicalContext
 http://rs.tdwg.org/dwc/terms/geologicalContextID
@@ -137,9 +139,11 @@ http://rs.tdwg.org/dwc/terms/member
 http://rs.tdwg.org/dwc/terms/bed
 http://rs.tdwg.org/dwc/terms/Identification
 http://rs.tdwg.org/dwc/terms/identificationID
+http://rs.tdwg.org/dwc/terms/verbatimIdentification
 http://rs.tdwg.org/dwc/terms/identificationQualifier
 http://rs.tdwg.org/dwc/terms/typeStatus
 http://rs.tdwg.org/dwc/terms/identifiedBy
+http://rs.tdwg.org/dwc/terms/identifiedByID
 http://rs.tdwg.org/dwc/terms/dateIdentified
 http://rs.tdwg.org/dwc/terms/identificationReferences
 http://rs.tdwg.org/dwc/terms/identificationVerificationStatus
@@ -166,10 +170,14 @@ http://rs.tdwg.org/dwc/terms/phylum
 http://rs.tdwg.org/dwc/terms/class
 http://rs.tdwg.org/dwc/terms/order
 http://rs.tdwg.org/dwc/terms/family
+http://rs.tdwg.org/dwc/terms/subfamily
 http://rs.tdwg.org/dwc/terms/genus
+http://rs.tdwg.org/dwc/terms/genericName
 http://rs.tdwg.org/dwc/terms/subgenus
+http://rs.tdwg.org/dwc/terms/infragenericEpithet
 http://rs.tdwg.org/dwc/terms/specificEpithet
 http://rs.tdwg.org/dwc/terms/infraspecificEpithet
+http://rs.tdwg.org/dwc/terms/cultivarEpithet
 http://rs.tdwg.org/dwc/terms/taxonRank
 http://rs.tdwg.org/dwc/terms/verbatimTaxonRank
 http://rs.tdwg.org/dwc/terms/scientificNameAuthorship
@@ -191,6 +199,7 @@ http://rs.tdwg.org/dwc/terms/measurementRemarks
 http://rs.tdwg.org/dwc/terms/ResourceRelationship
 http://rs.tdwg.org/dwc/terms/resourceRelationshipID
 http://rs.tdwg.org/dwc/terms/resourceID
+http://rs.tdwg.org/dwc/terms/relationshipOfResourceID
 http://rs.tdwg.org/dwc/terms/relatedResourceID
 http://rs.tdwg.org/dwc/terms/relationshipOfResource
 http://rs.tdwg.org/dwc/terms/relationshipAccordingTo
@@ -231,6 +240,7 @@ http://rs.tdwg.org/dwc/iri/measurementDeterminedBy
 http://rs.tdwg.org/dwc/iri/measurementMethod
 http://rs.tdwg.org/dwc/iri/measurementType
 http://rs.tdwg.org/dwc/iri/measurementUnit
+http://rs.tdwg.org/dwc/iri/measurementValue
 http://rs.tdwg.org/dwc/iri/occurrenceStatus
 http://rs.tdwg.org/dwc/iri/organismQuantityType
 http://rs.tdwg.org/dwc/iri/pathway
@@ -243,8 +253,10 @@ http://rs.tdwg.org/dwc/iri/sex
 http://rs.tdwg.org/dwc/iri/typeStatus
 http://rs.tdwg.org/dwc/iri/verbatimCoordinateSystem
 http://rs.tdwg.org/dwc/iri/verbatimSRS
+http://rs.tdwg.org/dwc/iri/verticalDatum
 http://rs.tdwg.org/dwc/terms/LivingSpecimen
 http://rs.tdwg.org/dwc/terms/PreservedSpecimen
 http://rs.tdwg.org/dwc/terms/FossilSpecimen
+http://rs.tdwg.org/dwc/terms/MaterialCitation
 http://rs.tdwg.org/dwc/terms/HumanObservation
 http://rs.tdwg.org/dwc/terms/MachineObservation
