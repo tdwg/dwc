@@ -21,6 +21,7 @@ occurrenceID
 catalogNumber
 recordNumber
 recordedBy
+recordedByID
 individualCount
 organismQuantity
 organismQuantityType
@@ -31,10 +32,12 @@ behavior
 establishmentMeans
 degreeOfEstablishment
 pathway
+georeferenceVerificationStatus
 occurrenceStatus
 preparations
 disposition
 associatedMedia
+associatedOccurrences
 associatedReferences
 associatedSequences
 associatedTaxa
@@ -43,7 +46,6 @@ occurrenceRemarks
 organismID
 organismName
 organismScope
-associatedOccurrences
 associatedOrganisms
 previousIdentifications
 organismRemarks
@@ -83,6 +85,7 @@ verbatimLocality
 minimumElevationInMeters
 maximumElevationInMeters
 verbatimElevation
+verticalDatum
 minimumDepthInMeters
 maximumDepthInMeters
 verbatimDepth
@@ -108,7 +111,6 @@ georeferencedBy
 georeferencedDate
 georeferenceProtocol
 georeferenceSources
-georeferenceVerificationStatus
 georeferenceRemarks
 geologicalContextID
 earliestEonOrLowestEonothem
@@ -129,9 +131,11 @@ formation
 member
 bed
 identificationID
+verbatimIdentification
 identificationQualifier
 typeStatus
 identifiedBy
+identifiedByID
 dateIdentified
 identificationReferences
 identificationVerificationStatus
@@ -157,10 +161,14 @@ phylum
 class
 order
 family
+subfamily
 genus
+genericName
 subgenus
+infragenericEpithet
 specificEpithet
 infraspecificEpithet
+cultivarEpithet
 taxonRank
 verbatimTaxonRank
 scientificNameAuthorship
