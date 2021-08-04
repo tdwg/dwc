@@ -1417,4 +1417,14 @@ Darwin Core term | Notes
 `dwc:relationshipOfResource`<br>`dwc:relationshipAccordingTo` | The non-RDF use of terms organized under the `dwc:ResourceRelationship` class depends on values for `dwc:resourceID` and `dwc:relatedResourceID`, terms which cannot be used in RDF for reasons discussed in [Section 2.6](#26-darwin-core-id-terms-and-rdf-normative). As of November 2014, the RDF/OWL Task Group is seeking a way to express resource relationships as RDF. For the present, `dwciri:` analogues have not been adopted for these two terms. See the [Darwin Core informative ancillary web page](https://github.com/tdwg/rdf/blob/master/DwCAncillary.md) for further discussion.
 `dwc:associatedOccurrences`<br>`dwc:associatedMedia`<br>`dwc:associatedSequences`<br>`dwc:associatedTaxa`<br>`dwc:associatedOrganisms` | Use `dcterms:relation` and `rdf:type`, or terms that indicate more specific relationships as described in [Section 2.8](#28-darwin-core-association-terms-non-normative) (Darwin Core association terms).
 `dwc:previousIdentifications` | There is no consensus object property for associating identifications with resources of other classes. From whatever scheme you have chosen to provide object properties, use same object property as used for the most recent identification but provide an earlier dwc:dateIdentified value.
-`dwc:organismScope` | Use `rdf:type` with a non-literal object. See the comment at http://rs.tdwg.org/dwc/terms/organismScope.
+`dwc:organismScope` | Use `rdf:type` with a non-literal object. See the comment at <http://rs.tdwg.org/dwc/terms/organismScope>.
+
+### 3.9 Chronometric Age extension `chrono:` terms that have analogues in the `chronoiri:` namespace (normative)
+
+The [Chronometric Age vocabulary](http://rs.tdwg.org/dwc/doc/chrono/) extends the core Darwin Core vocabulary. It has a second namespace for IRI-valued terms, `chronoiri:`, which operates analogously to the `dwciri:` namespace.
+
+Chronometric Age term having a `chronoiri:` analogue with the same local name | Notes on the `chronoiri:` analogues
+--- | ---
+`chrono:chronometricAgeDeterminedBy` | The object is an agent; use a well-known IRI such as those referenced in the list of sources of controlled values in the [Darwin Core informative ancillary web page](https://github.com/tdwg/rdf/blob/master/DwCAncillary.md).
+`chrono:chronometricAgeConversionProtocol`<br>`chrono:chronometricAgeProtocol`<br>`chrono: chronoiri:chronometricAgeUncertaintyMethod` | The object is a published or well-known reference; use an IRI version (preferably HTTP proxied) of doi, isbn, issn, etc. if available.
+`chrono:earliestChronometricAgeReferenceSystem`<br>`chrono:latestChronometricAgeReferenceSystem`<br>`chrono:materialDated` | Recommended best practice is to use a controlled vocabulary if one is available.
