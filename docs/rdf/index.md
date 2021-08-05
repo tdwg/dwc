@@ -43,6 +43,10 @@ The Darwin Core RDF Guide is targeted toward those who wish to share biodiversit
 
 Sections of this document are explicitly identified as either normative or non-normative. All numbered examples are non-normative, even if they fall within sections designated as normative. Tables may be designated as non-normative, even if they fall within sections designated as normative.
 
+#### 1.1.1 RFC 2119 key words
+
+The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to be interpreted as described in [RFC 2119](https://tools.ietf.org/html/rfc2119).
+
 ### 1.2 Rationale (non-normative)
 
 Darwin Core is a vocabulary which provides terms that can be used to describe the properties and types of entities (known in RDF as "resources") in the biodiversity realm. Darwin Core is a general purpose vocabulary because its terms can be used as part of a number of data transfer systems. RDF differs in several important ways from other data transfer systems for which DwC usage guides exist ([Text Guide](http://rs.tdwg.org/dwc/terms/guides/text/) and [XML Guide](http://rs.tdwg.org/dwc/terms/guides/xml/)). By its nature, RDF is a distributed system. It is assumed that data from one provider will be linked to data from other providers. This also implies that it is always possible to discover new data properties about a particular resource and that those properties may be described using unfamiliar terms. This differs significantly from other data transfer systems where there needs to be a pre-existing agreement (in the form of a federation schema or human-understandable document) between the sender and receiver about the format of the data and the organization and interpretation of the terms within records. Because RDF is intended to facilitate data and metadata discovery by machines (actually computer programs known as semantic clients or just "clients"), the meaning and use of terms needs to be well-defined and discoverable by clients without human intervention. To facilitate cross-referencing of resources among different data providers, resources need to be identified using standardized, machine-understandable, and globally unique identifiers known as internationalized resource identifiers (IRIs). Finally, because anyone can make statements about a resource without agreeing to a pre-determined schema, RDF by its nature is a highly normalized network of relationships, in contrast to typical database tables which are by their nature "flat". Because of these differences, effective use of RDF requires that its users adhere to what are essentially evolving social conventions about identifiers, data transfer protocols, and application of vocabularies. Some of these conventions will be described in the following sections.
@@ -822,7 +826,7 @@ A client that encounters a triple having a term from the `dwciri:` namespace as 
 
 ### 2.6 Darwin Core ID terms and RDF (normative)
 
-Darwin Core contains a number of "ID" terms intended to designate identifiers, e.g., `dwc:occurrenceID`, `dwc:identificationID`, `dwc:locationID`, etc. The "ID" terms provide two functions, specifying the class of the resource and indicating that value of the term is an identifier. These functions are illustrated by the non-RDF XML below, which is part of an example provided in the [Darwin Core XML Guide ](http://rs.tdwg.org/dwc/terms/guides/xml/):
+Darwin Core contains a number of "ID" terms intended to designate identifiers, e.g., `dwc:occurrenceID`, `dwc:identificationID`, `dwc:locationID`, etc. The "ID" terms provide two functions, specifying the class of the resource and indicating that value of the term is an identifier. These functions are illustrated by the non-RDF XML below, which is part of a hypothetical example provided in the [Darwin Core XML Guide ](http://rs.tdwg.org/dwc/terms/guides/xml/):
 
 **Example 21:**
 
@@ -1006,7 +1010,7 @@ The consensus embodied in the [TDWG Taxon Concept Transfer Schema (TCS) standard
 
 It might be argued that these convenience terms would more appropriately be properties of a `dwc:Taxon` instance. However, the object properties necessary to relate `dwc:Taxon` instances to name entities, references, parent taxa, and child taxa do not exist and the exact relationship between taxonomic entities such as taxon concepts, protonyms, taxon name uses, etc. has not been established using RDF. So the creation of functional `dwc:Taxon` instances described using RDF is not possible at the present time. Therefore this document establishes the convention that convenience terms for taxonomic entities SHOULD be properties of `dwc:Identification`. The task of describing taxonomic entities using RDF will have to be an effort outside of Darwin Core. This guide does establish the object property `dwciri:toTaxon` for use in relating a Darwin Core identification instance to a taxonomic entity as defined elsewhere.
 
-Consider the following made-up example where Takuma Yun identified a spider to the species _Hersilia yaeyamaensis_ using information in Tanikawa (1999). The data about this identification was listed in a database as shown in Table 8.
+Consider the following hypothetical example where Takuma Yun identified a spider to the species _Hersilia yaeyamaensis_ using information in Tanikawa (1999). The data about this identification was listed in a database as shown in Table 8.
 
 **Table 8** (non-normative)
 
