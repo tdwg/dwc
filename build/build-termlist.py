@@ -56,7 +56,8 @@ display_id = ['record_level', 'dc', 'dcterms', 'occurrence', 'organism', 'materi
 # Function definitions
 # ---------------
 
-# replace URL with link
+# replace URL with link (function used with Audubon Core list of terms build script)
+# Does not correctly handle URLs with close parens ) characters.
 #
 def createLinks(text):
     def repl(match):
@@ -64,9 +65,30 @@ def createLinks(text):
             return '<a href="' + match.group(1)[:-1] + '">' + match.group(1)[:-1] + '</a>.'
         return '<a href="' + match.group(1) + '">' + match.group(1) + '</a>'
 
-    pattern = '(https?://[^\s,;\)"]*)'
+    pattern = '(https?://[^\s,;\)"<]*)'
     result = re.sub(pattern, repl, text)
     return result
+
+# 2021-08-05 Replace the createLinks() function with functions copied from the QRG build script written by S. Van Hoey
+def convert_code(text_with_backticks):
+    """Takes all back-quoted sections in a text field and converts it to
+    the html tagged version of code blocks <code>...</code>
+    """
+    return re.sub(r'`([^`]*)`', r'<code>\1</code>', text_with_backticks)
+
+# 2021-08-06 Discovered when using this with Audubon Core list of terms build script that it does not
+# correctly handle trailing commas that follow a URL. I don't understand the regex well enough to fix it
+def convert_link(text_with_urls):
+    """Takes all links in a text field and converts it to the html tagged
+    version of the link
+    """
+    def _handle_matched(inputstring):
+        """quick hack version of url handling on the current prime versions data"""
+        url = inputstring.group()
+        return "<a href=\"{}\">{}</a>".format(url, url)
+
+    regx = "(http[s]?://[\w\d:#@%/;$()~_?\+-;=\\\.&]*)(?<![\)\.])"
+    return re.sub(regx, _handle_matched, text_with_urls)
 
 # ---------------
 # Retrieve term list metadata from GitHub
@@ -318,22 +340,22 @@ if True:
         #if row['notes'] != '':
             text += '\t\t<tr>\n'
             text += '\t\t\t<td>Notes</td>\n'
-            text += '\t\t\t<td>' + createLinks(row['dcterms_description']) + '</td>\n'
-            #text += '\t\t\t<td>' + createLinks(row['notes']) + '</td>\n'
+            text += '\t\t\t<td>' + convert_link(convert_code(row['dcterms_description'])) + '</td>\n'
+            #text += '\t\t\t<td>' + convert_link(convert_code(row['notes'])) + '</td>\n'
             text += '\t\t</tr>\n'
 
         if row['examples'] != '':
         #if row['usage'] != '':
             text += '\t\t<tr>\n'
             text += '\t\t\t<td>Examples</td>\n'
-            text += '\t\t\t<td>' + createLinks(row['examples']) + '</td>\n'
-            #text += '\t\t\t<td>' + createLinks(row['usage']) + '</td>\n'
+            text += '\t\t\t<td>' + convert_link(convert_code(row['examples'])) + '</td>\n'
+            #text += '\t\t\t<td>' + convert_link(convert_code(row['usage'])) + '</td>\n'
             text += '\t\t</tr>\n'
 
         if row['tdwgutility_abcdEquivalence'] != '':
             text += '\t\t<tr>\n'
             text += '\t\t\t<td>ABCD equivalence</td>\n'
-            text += '\t\t\t<td>' + createLinks(row['tdwgutility_abcdEquivalence']) + '</td>\n'
+            text += '\t\t\t<td>' + convert_link(convert_code(row['tdwgutility_abcdEquivalence'])) + '</td>\n'
             text += '\t\t</tr>\n'
 
         if vocab_type == 2 or vocab_type ==3: # controlled vocabulary
