@@ -799,7 +799,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Tamias minimus` (valid name for Eutamias minimus).</td>
+			<td><code>Tamias minimus</code> (valid name for Eutamias minimus).</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -845,7 +845,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`tsn:41107` (ITIS), `urn:lsid:ipni.org:names:320035-2` (IPNI), `2704179` (GBIF), `6W3C4` (COL)</td>
+			<td><code>tsn:41107</code> (ITIS), <code>urn:lsid:ipni.org:names:320035-2</code> (IPNI), <code>2704179</code> (GBIF), <code>6W3C4</code> (COL)</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -1243,7 +1243,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`not-for-profit use only`, `<a href="https://www.fieldmuseum.org/field-museum-natural-history-conditions-and-suggested-norms-use-collections-data-and-images`">https://www.fieldmuseum.org/field-museum-natural-history-conditions-and-suggested-norms-use-collections-data-and-images`</a></td>
+			<td><code>not-for-profit use only</code>, <code><a href="https://www.fieldmuseum.org/field-museum-natural-history-conditions-and-suggested-norms-use-collections-data-and-images">https://www.fieldmuseum.org/field-museum-natural-history-conditions-and-suggested-norms-use-collections-data-and-images</a></code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -1361,7 +1361,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`<a href="https://arctos.database.museum/media/10520962">https://arctos.database.museum/media/10520962</a> | <a href="https://arctos.database.museum/media/10520964`">https://arctos.database.museum/media/10520964`</a></td>
+			<td><code><a href="https://arctos.database.museum/media/10520962">https://arctos.database.museum/media/10520962</a> | <a href="https://arctos.database.museum/media/10520964">https://arctos.database.museum/media/10520964</a></code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -1411,7 +1411,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`"parasite collected from":"<a href="https://arctos.database.museum/guid/MSB:Mamm:215895?seid=950760">https://arctos.database.museum/guid/MSB:Mamm:215895?seid=950760</a>"`, `"encounter previous to":"<a href="http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3175067">http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3175067</a>" | "encounter previous to":"<a href="http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3177393">http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3177393</a>" | "encounter previous to":"<a href="http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3177394">http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3177394</a>" | "encounter previous to":"<a href="http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3177392">http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3177392</a>" | "encounter previous to":"<a href="http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3609139">http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3609139</a>"`</td>
+			<td><code>"parasite collected from":"<a href="https://arctos.database.museum/guid/MSB:Mamm:215895?seid=950760">https://arctos.database.museum/guid/MSB:Mamm:215895?seid=950760</a>"</code>, <code>"encounter previous to":"<a href="http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3175067">http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3175067</a>" | "encounter previous to":"<a href="http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3177393">http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3177393</a>" | "encounter previous to":"<a href="http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3177394">http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3177394</a>" | "encounter previous to":"<a href="http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3177392">http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3177392</a>" | "encounter previous to":"<a href="http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3609139">http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3609139</a>"</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -1465,7 +1465,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`"sibling of":"<a href="http://arctos.database.museum/guid/DMNS:Mamm:14171">http://arctos.database.museum/guid/DMNS:Mamm:14171</a>"`, `"parent of":"<a href="http://arctos.database.museum/guid/MSB:Mamm:196208">http://arctos.database.museum/guid/MSB:Mamm:196208</a>" | "parent of":"<a href="http://arctos.database.museum/guid/MSB:Mamm:196523">http://arctos.database.museum/guid/MSB:Mamm:196523</a>" | "sibling of":"<a href="http://arctos.database.museum/guid/MSB:Mamm:142638">http://arctos.database.museum/guid/MSB:Mamm:142638</a>"`</td>
+			<td><code>"sibling of":"<a href="http://arctos.database.museum/guid/DMNS:Mamm:14171">http://arctos.database.museum/guid/DMNS:Mamm:14171</a>"</code>, <code>"parent of":"<a href="http://arctos.database.museum/guid/MSB:Mamm:196208">http://arctos.database.museum/guid/MSB:Mamm:196208</a>" | "parent of":"<a href="http://arctos.database.museum/guid/MSB:Mamm:196523">http://arctos.database.museum/guid/MSB:Mamm:196523</a>" | "sibling of":"<a href="http://arctos.database.museum/guid/MSB:Mamm:142638">http://arctos.database.museum/guid/MSB:Mamm:142638</a>"</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -1515,7 +1515,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`<a href="http://www.sciencemag.org/cgi/content/abstract/322/5899/261`">http://www.sciencemag.org/cgi/content/abstract/322/5899/261`</a>, `Christopher J. Conroy, Jennifer L. Neuwald. 2008. Phylogeographic study of the California vole, Microtus californicus Journal of Mammalogy, 89(3):755-767.`, `Steven R. Hoofer and Ronald A. Van Den Bussche. 2001. Phylogenetic Relationships of Plecotine Bats and Allies Based on Mitochondrial Ribosomal Sequences. Journal of Mammalogy 82(1):131-137. | Walker, Faith M., Jeffrey T. Foster, Kevin P. Drees, Carol L. Chambers. 2014. Spotted bat (Euderma maculatum) microsatellite discovery using illumina sequencing. Conservation Genetics Resources.`</td>
+			<td><code><a href="http://www.sciencemag.org/cgi/content/abstract/322/5899/261">http://www.sciencemag.org/cgi/content/abstract/322/5899/261</a></code>, <code>Christopher J. Conroy, Jennifer L. Neuwald. 2008. Phylogeographic study of the California vole, Microtus californicus Journal of Mammalogy, 89(3):755-767.</code>, <code>Steven R. Hoofer and Ronald A. Van Den Bussche. 2001. Phylogenetic Relationships of Plecotine Bats and Allies Based on Mitochondrial Ribosomal Sequences. Journal of Mammalogy 82(1):131-137. | Walker, Faith M., Jeffrey T. Foster, Kevin P. Drees, Carol L. Chambers. 2014. Spotted bat (Euderma maculatum) microsatellite discovery using illumina sequencing. Conservation Genetics Resources.</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -1561,7 +1561,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`<a href="http://www.ncbi.nlm.nih.gov/nuccore/U34853.1`">http://www.ncbi.nlm.nih.gov/nuccore/U34853.1`</a>, `<a href="http://www.ncbi.nlm.nih.gov/nuccore/GU328060">http://www.ncbi.nlm.nih.gov/nuccore/GU328060</a> | <a href="http://www.ncbi.nlm.nih.gov/nuccore/AF326093`">http://www.ncbi.nlm.nih.gov/nuccore/AF326093`</a></td>
+			<td><code><a href="http://www.ncbi.nlm.nih.gov/nuccore/U34853.1">http://www.ncbi.nlm.nih.gov/nuccore/U34853.1</a></code>, <code><a href="http://www.ncbi.nlm.nih.gov/nuccore/GU328060">http://www.ncbi.nlm.nih.gov/nuccore/GU328060</a> | <a href="http://www.ncbi.nlm.nih.gov/nuccore/AF326093">http://www.ncbi.nlm.nih.gov/nuccore/AF326093</a></code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -1607,7 +1607,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`"host":"Quercus alba"`, `"host":"gbif.org/species/2879737"`,`"parasitoid of":"Cyclocephala signaticollis" | "predator of":"Apis mellifera"`</td>
+			<td><code>"host":"Quercus alba"</code>, <code>"host":"gbif.org/species/2879737"</code>,<code>"parasitoid of":"Cyclocephala signaticollis" | "predator of":"Apis mellifera"</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -1745,7 +1745,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`PreservedSpecimen`, `FossilSpecimen`, `LivingSpecimen`, `MaterialSample`, `Event`, `HumanObservation`, `MachineObservation`, `Taxon`, `Occurrence`, `MaterialCitation`</td>
+			<td><code>PreservedSpecimen</code>, <code>FossilSpecimen</code>, <code>LivingSpecimen</code>, <code>MaterialSample</code>, <code>Event</code>, <code>HumanObservation</code>, <code>MachineObservation</code>, <code>Taxon</code>, <code>Occurrence</code>, <code>MaterialCitation</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -1795,7 +1795,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Harlem coal`</td>
+			<td><code>Harlem coal</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -1879,7 +1879,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`roosting`, `foraging`, `running`</td>
+			<td><code>roosting</code>, <code>foraging</code>, <code>running</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -1925,7 +1925,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>Occurrence example: `Museum of Vertebrate Zoology, UC Berkeley. MVZ Mammal Collection (Arctos). Record ID: <a href="http://arctos.database.museum/guid/MVZ:Mamm:165861?seid=101356">http://arctos.database.museum/guid/MVZ:Mamm:165861?seid=101356</a>. Source: <a href="http://ipt.vertnet.org:8080/ipt/resource.do?r=mvz_mammal.`">http://ipt.vertnet.org:8080/ipt/resource.do?r=mvz_mammal.`</a> Taxon example: `<a href="https://www.gbif.org/species/2439608">https://www.gbif.org/species/2439608</a> Source: GBIF Taxonomic Backbone`, Event example: `Rand, K.M., Logerwell, E.A. The first demersal trawl survey of benthic fish and invertebrates in the Beaufort Sea since the late 1970s. Polar Biol 34, 475–488 (2011). <a href="https://doi.org/10.1007/s00300-010-0900-2`">https://doi.org/10.1007/s00300-010-0900-2`</a></td>
+			<td>Occurrence example: <code>Museum of Vertebrate Zoology, UC Berkeley. MVZ Mammal Collection (Arctos). Record ID: <a href="http://arctos.database.museum/guid/MVZ:Mamm:165861?seid=101356">http://arctos.database.museum/guid/MVZ:Mamm:165861?seid=101356</a>. Source: <a href="http://ipt.vertnet.org:8080/ipt/resource.do?r=mvz_mammal">http://ipt.vertnet.org:8080/ipt/resource.do?r=mvz_mammal</a>.</code> Taxon example: <code><a href="https://www.gbif.org/species/2439608">https://www.gbif.org/species/2439608</a> Source: GBIF Taxonomic Backbone</code>, Event example: <code>Rand, K.M., Logerwell, E.A. The first demersal trawl survey of benthic fish and invertebrates in the Beaufort Sea since the late 1970s. Polar Biol 34, 475–488 (2011). <a href="https://doi.org/10.1007/s00300-010-0900-2">https://doi.org/10.1007/s00300-010-0900-2</a></code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -2009,7 +2009,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`145732`, `145732a`, `2008.1334`, `R-4313`</td>
+			<td><code>145732</code>, <code>145732a</code>, <code>2008.1334</code>, <code>R-4313</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -2089,7 +2089,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Mammalia`, `Hepaticopsida`</td>
+			<td><code>Mammalia</code>, <code>Hepaticopsida</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -2131,7 +2131,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Mammals`, `Hildebrandt`, `EBIRD`, `VP`</td>
+			<td><code>Mammals</code>, <code>Hildebrandt</code>, <code>EBIRD</code>, <code>VP</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -2177,7 +2177,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`<a href="http://biocol.org/urn:lsid:biocol.org:col:1001`">http://biocol.org/urn:lsid:biocol.org:col:1001`</a>, `<a href="http://grbio.org/cool/p5fp-c036`">http://grbio.org/cool/p5fp-c036`</a></td>
+			<td><code><a href="http://biocol.org/urn:lsid:biocol.org:col:1001">http://biocol.org/urn:lsid:biocol.org:col:1001</a></code>, <code><a href="http://grbio.org/cool/p5fp-c036">http://grbio.org/cool/p5fp-c036</a></code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -2223,7 +2223,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Africa`, `Antarctica`, `Asia`, `Europe`, `North America`, `Oceania`, `South America`</td>
+			<td><code>Africa</code>, <code>Antarctica</code>, <code>Asia</code>, <code>Europe</code>, <code>North America</code>, <code>Oceania</code>, <code>South America</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -2265,7 +2265,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`0.00001` (normal GPS limit for decimal degrees). `0.000278` (nearest second). `0.01667` (nearest minute). `1.0` (nearest degree).</td>
+			<td><code>0.00001</code> (normal GPS limit for decimal degrees). <code>0.000278</code> (nearest second). <code>0.01667</code> (nearest minute). <code>1.0</code> (nearest degree).</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -2307,7 +2307,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`30` (reasonable lower limit on or after 2020-05-01 of a GPS reading under good conditions if the actual precision was not recorded at the time). `100` (reasonable lower limit before 2020-05-01 of a GPS reading under good conditions if the actual precision was not recorded at the time). `71` (uncertainty for a UTM coordinate having 100 meter precision and a known spatial reference system).</td>
+			<td><code>30</code> (reasonable lower limit on or after 2020-05-01 of a GPS reading under good conditions if the actual precision was not recorded at the time). <code>100</code> (reasonable lower limit before 2020-05-01 of a GPS reading under good conditions if the actual precision was not recorded at the time). <code>71</code> (uncertainty for a UTM coordinate having 100 meter precision and a known spatial reference system).</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -2353,7 +2353,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Denmark`, `Colombia`, `España`</td>
+			<td><code>Denmark</code>, <code>Colombia</code>, <code>España</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -2399,7 +2399,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`AR`, `SV`</td>
+			<td><code>AR</code>, <code>SV</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -2445,7 +2445,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Missoula`, `Los Lagos`, `Mataró`</td>
+			<td><code>Missoula</code>, <code>Los Lagos</code>, <code>Mataró</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -2491,7 +2491,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`King Edward` (for scientificName "Solanum tuberosum 'King Edward'" and taxonRank "cultivar"); `Mishmiense` (for scientificName "Rhododendron boothii Mishmiense Group" and taxonRank "cultivar group"); `Atlantis` (for scientificName "Paphiopedilum Atlantis grex" and taxonRank "grex").</td>
+			<td><code>King Edward</code> (for scientificName "Solanum tuberosum 'King Edward'" and taxonRank "cultivar"); <code>Mishmiense</code> (for scientificName "Rhododendron boothii Mishmiense Group" and taxonRank "cultivar group"); <code>Atlantis</code> (for scientificName "Paphiopedilum Atlantis grex" and taxonRank "grex").</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -2537,7 +2537,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Coordinates generalized from original GPS coordinates to the nearest half degree grid cell`.</td>
+			<td><code>Coordinates generalized from original GPS coordinates to the nearest half degree grid cell</code>.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -2659,7 +2659,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`b15d4952-7d20-46f1-8a3e-556a512b04c5`</td>
+			<td><code>b15d4952-7d20-46f1-8a3e-556a512b04c5</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -2701,7 +2701,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Grinnell Resurvey Mammals`, `Lacey Ctenomys Recaptures`</td>
+			<td><code>Grinnell Resurvey Mammals</code>, <code>Lacey Ctenomys Recaptures</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -2747,7 +2747,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`1963-03-08T14:07-0600` (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC). `2009-02-20T08:40Z` (20 February 2009 8:40am UTC). `2018-08-29T15:19` (3:19pm local time on 29 August 2018). `1809-02-12` (some time during 12 February 1809). `1906-06` (some time in June 1906). `1971` (some time in the year 1971). `2007-03-01T13:00:00Z/2008-05-11T15:30:00Z` (some time during the interval between 1 March 2007 1pm UTC and 11 May 2008 3:30pm UTC). `1900/1909` (some time during the interval between the beginning of the year 1900 and the end of the year 1909). `2007-11-13/15` (some time in the interval between 13 November 2007 and 15 November 2007).</td>
+			<td><code>1963-03-08T14:07-0600</code> (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC). <code>2009-02-20T08:40Z</code> (20 February 2009 8:40am UTC). <code>2018-08-29T15:19</code> (3:19pm local time on 29 August 2018). <code>1809-02-12</code> (some time during 12 February 1809). <code>1906-06</code> (some time in June 1906). <code>1971</code> (some time in the year 1971). <code>2007-03-01T13:00:00Z/2008-05-11T15:30:00Z</code> (some time during the interval between 1 March 2007 1pm UTC and 11 May 2008 3:30pm UTC). <code>1900/1909</code> (some time during the interval between the beginning of the year 1900 and the end of the year 1909). <code>2007-11-13/15</code> (some time in the interval between 13 November 2007 and 15 November 2007).</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -2793,7 +2793,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`9`, `28`</td>
+			<td><code>9</code>, <code>28</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -2835,7 +2835,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`-41.0983423`</td>
+			<td><code>-41.0983423</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -2877,7 +2877,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`-121.1761111`</td>
+			<td><code>-121.1761111</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -2923,7 +2923,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`<a href="http://rs.tdwg.org/dwcdoe/values/d003`">http://rs.tdwg.org/dwcdoe/values/d003`</a>, `<a href="http://rs.tdwg.org/dwcdoe/values/d005`">http://rs.tdwg.org/dwcdoe/values/d005`</a></td>
+			<td><code><a href="http://rs.tdwg.org/dwcdoe/values/d003">http://rs.tdwg.org/dwcdoe/values/d003</a></code>, <code><a href="http://rs.tdwg.org/dwcdoe/values/d005">http://rs.tdwg.org/dwcdoe/values/d005</a></code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -2973,7 +2973,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`native`, `captive`, `cultivated`, `released`, `failing`, `casual`, `reproducing`, `established`, `colonising`, `invasive`, `widespreadInvasive`</td>
+			<td><code>native</code>, <code>captive</code>, <code>cultivated</code>, <code>released</code>, <code>failing</code>, <code>casual</code>, <code>reproducing</code>, <code>established</code>, <code>colonising</code>, <code>invasive</code>, <code>widespreadInvasive</code></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -3061,7 +3061,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`in collection`, `missing`, `voucher elsewhere`, `duplicates elsewhere`</td>
+			<td><code>in collection</code>, <code>missing</code>, <code>voucher elsewhere</code>, <code>duplicates elsewhere</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -3145,7 +3145,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`{"heightInMeters":1.5}`, `{"tragusLengthInMeters":0.014, "weightInGrams":120}`, `{"natureOfID":"expert identification", "identificationEvidence":"cytochrome B sequence"}`, `{"relativeHumidity":28, "airTemperatureInCelsius":22, "sampleSizeInKilograms":10}`, `{"aspectHeading":277, "slopeInDegrees":6}`, `{"iucnStatus":"vulnerable", "taxonDistribution":"Neuquén, Argentina"}`</td>
+			<td><code>{"heightInMeters":1.5}</code>, <code>{"tragusLengthInMeters":0.014, "weightInGrams":120}</code>, <code>{"natureOfID":"expert identification", "identificationEvidence":"cytochrome B sequence"}</code>, <code>{"relativeHumidity":28, "airTemperatureInCelsius":22, "sampleSizeInKilograms":10}</code>, <code>{"aspectHeading":277, "slopeInDegrees":6}</code>, <code>{"iucnStatus":"vulnerable", "taxonDistribution":"Neuquén, Argentina"}</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -3191,7 +3191,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Atlantic`, `Boreal`, `Skullrockian`</td>
+			<td><code>Atlantic</code>, <code>Boreal</code>, <code>Skullrockian</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -3279,7 +3279,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Phanerozoic`, `Proterozoic`</td>
+			<td><code>Phanerozoic</code>, <code>Proterozoic</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -3321,7 +3321,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Holocene`, `Pleistocene`, `Ibexian Series`</td>
+			<td><code>Holocene</code>, <code>Pleistocene</code>, <code>Ibexian Series</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -3363,7 +3363,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Cenozoic`, `Mesozoic`</td>
+			<td><code>Cenozoic</code>, <code>Mesozoic</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -3447,7 +3447,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Neogene`, `Tertiary`, `Quaternary`</td>
+			<td><code>Neogene</code>, <code>Tertiary</code>, <code>Quaternary</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -3489,7 +3489,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`1` (1 January). `32` (1 February). `366` (31 December). `365` (30 December in a leap year, 31 December in a non-leap year).</td>
+			<td><code>1</code> (1 January). <code>32</code> (1 February). <code>366</code> (31 December). <code>365</code> (30 December in a leap year, 31 December in a non-leap year).</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -3581,7 +3581,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`<a href="http://rs.tdwg.org/dwcem/values/e001`">http://rs.tdwg.org/dwcem/values/e001`</a>, `<a href="http://rs.tdwg.org/dwcem/values/e005`">http://rs.tdwg.org/dwcem/values/e005`</a></td>
+			<td><code><a href="http://rs.tdwg.org/dwcem/values/e001">http://rs.tdwg.org/dwcem/values/e001</a></code>, <code><a href="http://rs.tdwg.org/dwcem/values/e005">http://rs.tdwg.org/dwcem/values/e005</a></code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -3631,7 +3631,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`native`, `nativeReintroduced`, `introduced`, `introducedAssistedColonisation`, `vagrant`, `uncertain`</td>
+			<td><code>native</code>, <code>nativeReintroduced</code>, <code>introduced</code>, <code>introducedAssistedColonisation</code>, <code>vagrant</code>, <code>uncertain</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -4171,7 +4171,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`1963-03-08T14:07-0600` (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC). `2009-02-20T08:40Z` (20 February 2009 8:40am UTC). `2018-08-29T15:19` (3:19pm local time on 29 August 2018). `1809-02-12` (some time during 12 February 1809). `1906-06` (some time in June 1906). `1971` (some time in the year 1971). `2007-03-01T13:00:00Z/2008-05-11T15:30:00Z` (some time during the interval between 1 March 2007 1pm UTC and 11 May 2008 3:30pm UTC). `1900/1909` (some time during the interval between the beginning of the year 1900 and the end of the year 1909). `2007-11-13/15` (some time in the interval between 13 November 2007 and 15 November 2007).</td>
+			<td><code>1963-03-08T14:07-0600</code> (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC). <code>2009-02-20T08:40Z</code> (20 February 2009 8:40am UTC). <code>2018-08-29T15:19</code> (3:19pm local time on 29 August 2018). <code>1809-02-12</code> (some time during 12 February 1809). <code>1906-06</code> (some time in June 1906). <code>1971</code> (some time in the year 1971). <code>2007-03-01T13:00:00Z/2008-05-11T15:30:00Z</code> (some time during the interval between 1 March 2007 1pm UTC and 11 May 2008 3:30pm UTC). <code>1900/1909</code> (some time during the interval between the beginning of the year 1900 and the end of the year 1909). <code>2007-11-13/15</code> (some time in the interval between 13 November 2007 and 15 November 2007).</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -4213,7 +4213,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`INBO:VIS:Ev:00009375`</td>
+			<td><code>INBO:VIS:Ev:00009375</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -4661,7 +4661,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`After the recent rains the river is nearly at flood stage.`</td>
+			<td><code>After the recent rains the river is nearly at flood stage.</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -4707,7 +4707,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`14:07-0600` (2:07pm in the time zone six hours earlier than UTC). `08:40:21Z` (8:40:21am UTC). `13:00:00Z/15:30:00Z` (the interval between 1pm UTC and 3:30pm UTC).</td>
+			<td><code>14:07-0600</code> (2:07pm in the time zone six hours earlier than UTC). <code>08:40:21Z</code> (8:40:21am UTC). <code>13:00:00Z/15:30:00Z</code> (the interval between 1pm UTC and 3:30pm UTC).</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -4749,7 +4749,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Felidae`, `Monocleaceae`</td>
+			<td><code>Felidae</code>, <code>Monocleaceae</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -4833,7 +4833,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Notes available in the Grinnell-Miller Library.`</td>
+			<td><code>Notes available in the Grinnell-Miller Library.</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -4917,7 +4917,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`RV Sol 87-03-08`</td>
+			<td><code>RV Sol 87-03-08</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -4963,7 +4963,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`0`, `1`, `1.5708`</td>
+			<td><code>0</code>, <code>1</code>, <code>1.5708</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -5051,11 +5051,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to use the EPSG code of the SRS, if known. Otherwise use a controlled vocabulary for the name or code of the geodetic datum, if known. Otherwise use a controlled vocabulary for the name or code of the ellipsoid, if known. If none of these is known, use the value `unknown`. It is also permitted to provide the SRS in Well-Known-Text, especially if no EPSG code provides the necessary values for the attributes of the SRS. Do not use this term to describe the SRS of the decimalLatitude and decimalLongitude, nor of any verbatim coordinates - use the geodeticDatum and verbatimSRS instead.</td>
+			<td>Recommended best practice is to use the EPSG code of the SRS, if known. Otherwise use a controlled vocabulary for the name or code of the geodetic datum, if known. Otherwise use a controlled vocabulary for the name or code of the ellipsoid, if known. If none of these is known, use the value <code>unknown</code>. It is also permitted to provide the SRS in Well-Known-Text, especially if no EPSG code provides the necessary values for the attributes of the SRS. Do not use this term to describe the SRS of the decimalLatitude and decimalLongitude, nor of any verbatim coordinates - use the geodeticDatum and verbatimSRS instead.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`epsg:4326`, `GEOGCS["GCS_WGS_1984", DATUM["D_WGS_1984", SPHEROID["WGS_1984",6378137,298.257223563]], PRIMEM["Greenwich",0], UNIT["Degree",0.0174532925199433]]` (WKT for the standard WGS84 Spatial Reference System EPSG:4326)</td>
+			<td><code>epsg:4326</code>, <code>GEOGCS["GCS_WGS_1984", DATUM["D_WGS_1984", SPHEROID["WGS_1984",6378137,298.257223563]], PRIMEM["Greenwich",0], UNIT["Degree",0.0174532925199433]]</code> (WKT for the standard WGS84 Spatial Reference System EPSG:4326)</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -5143,7 +5143,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`POLYGON ((10 20, 11 20, 11 21, 10 21, 10 20))` (the one-degree bounding box with opposite corners at longitude=10, latitude=20 and longitude=11, latitude=21)</td>
+			<td><code>POLYGON ((10 20, 11 20, 11 21, 10 21, 10 20))</code> (the one-degree bounding box with opposite corners at longitude=10, latitude=20 and longitude=11, latitude=21)</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -5185,7 +5185,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Notch Peak Formation`, `House Limestone`, `Fillmore Formation`</td>
+			<td><code>Notch Peak Formation</code>, <code>House Limestone</code>, <code>Fillmore Formation</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -5365,7 +5365,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Felis` (for scientificName "Felis concolor", with accompanying values of "Puma concolor" in acceptedNameUsage and "Puma" in genus).</td>
+			<td><code>Felis</code> (for scientificName "Felis concolor", with accompanying values of "Puma concolor" in acceptedNameUsage and "Puma" in genus).</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -5411,7 +5411,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Puma`, `Monoclea`</td>
+			<td><code>Puma</code>, <code>Monoclea</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -5453,11 +5453,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to use the EPSG code of the SRS, if known. Otherwise use a controlled vocabulary for the name or code of the geodetic datum, if known. Otherwise use a controlled vocabulary for the name or code of the ellipsoid, if known. If none of these is known, use the value `unknown`.</td>
+			<td>Recommended best practice is to use the EPSG code of the SRS, if known. Otherwise use a controlled vocabulary for the name or code of the geodetic datum, if known. Otherwise use a controlled vocabulary for the name or code of the ellipsoid, if known. If none of these is known, use the value <code>unknown</code>.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`EPSG:4326`, `WGS84`, `NAD27`, `Campo Inchauspe`, `European 1950`, `Clarke 1866`, `unknown`</td>
+			<td><code>EPSG:4326</code>, <code>WGS84</code>, <code>NAD27</code>, <code>Campo Inchauspe</code>, <code>European 1950</code>, <code>Clarke 1866</code>, <code>unknown</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -5499,11 +5499,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to use an IRI for the EPSG code of the SRS, if known. Otherwise use an IRI or controlled vocabulary for the name or code of the geodetic datum, if known. Otherwise use an IRI or controlled vocabulary for the name or code of the ellipsoid, if known. If none of these is known, use the value `unknown`.</td>
+			<td>Recommended best practice is to use an IRI for the EPSG code of the SRS, if known. Otherwise use an IRI or controlled vocabulary for the name or code of the geodetic datum, if known. Otherwise use an IRI or controlled vocabulary for the name or code of the ellipsoid, if known. If none of these is known, use the value <code>unknown</code>.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`<a href="https://epsg.io/4326`">https://epsg.io/4326`</a></td>
+			<td><code><a href="https://epsg.io/4326">https://epsg.io/4326</a></code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -5591,7 +5591,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`<a href="https://opencontext.org/subjects/e54377f7-4452-4315-b676-40679b10c4d9`">https://opencontext.org/subjects/e54377f7-4452-4315-b676-40679b10c4d9`</a></td>
+			<td><code><a href="https://opencontext.org/subjects/e54377f7-4452-4315-b676-40679b10c4d9">https://opencontext.org/subjects/e54377f7-4452-4315-b676-40679b10c4d9</a></code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -5633,11 +5633,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to separate the values in a list with space vertical bar space (` | `).</td>
+			<td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Brad Millen (ROM)`, `Kristina Yamamoto | Janet Fang`</td>
+			<td><code>Brad Millen (ROM)</code>, <code>Kristina Yamamoto | Janet Fang</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -5729,7 +5729,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`1963-03-08T14:07-0600` (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC). `2009-02-20T08:40Z` (20 February 2009 8:40am UTC). `2018-08-29T15:19` (3:19pm local time on 29 August 2018). `1809-02-12` (some time during 12 February 1809). `1906-06` (some time in June 1906). `1971` (some time in the year 1971). `2007-03-01T13:00:00Z/2008-05-11T15:30:00Z` (some time during the interval between 1 March 2007 1pm UTC and 11 May 2008 3:30pm UTC). `1900/1909` (some time during the interval between the beginning of the year 1900 and the end of the year 1909). `2007-11-13/15` (some time in the interval between 13 November 2007 and 15 November 2007).</td>
+			<td><code>1963-03-08T14:07-0600</code> (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC). <code>2009-02-20T08:40Z</code> (20 February 2009 8:40am UTC). <code>2018-08-29T15:19</code> (3:19pm local time on 29 August 2018). <code>1809-02-12</code> (some time during 12 February 1809). <code>1906-06</code> (some time in June 1906). <code>1971</code> (some time in the year 1971). <code>2007-03-01T13:00:00Z/2008-05-11T15:30:00Z</code> (some time during the interval between 1 March 2007 1pm UTC and 11 May 2008 3:30pm UTC). <code>1900/1909</code> (some time during the interval between the beginning of the year 1900 and the end of the year 1909). <code>2007-11-13/15</code> (some time in the interval between 13 November 2007 and 15 November 2007).</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -5775,7 +5775,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Georeferencing Quick Reference Guide (Zermoglio et al. 2020, <a href="https://doi.org/10.35035/e09p-h128">https://doi.org/10.35035/e09p-h128</a>)`</td>
+			<td><code>Georeferencing Quick Reference Guide (Zermoglio et al. 2020, <a href="https://doi.org/10.35035/e09p-h128">https://doi.org/10.35035/e09p-h128</a>)</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -5859,7 +5859,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Assumed distance by road (Hwy. 101)`.</td>
+			<td><code>Assumed distance by road (Hwy. 101)</code>.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -5943,11 +5943,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to separate the values in a list with space vertical bar space (` | `).</td>
+			<td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`<a href="https://www.geonames.org/`">https://www.geonames.org/`</a>, `USGS 1:24000 Florence Montana Quad 1967 | Terrametrics 2008 on Google Earth`, `GeoLocate`</td>
+			<td><code><a href="https://www.geonames.org/">https://www.geonames.org/</a></code>, <code>USGS 1:24000 Florence Montana Quad 1967 | Terrametrics 2008 on Google Earth</code>, <code>GeoLocate</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -6043,7 +6043,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`unable to georeference`, `requires georeference`, `requires verification`, `verified by data custodian`, `verified by contributor`</td>
+			<td><code>unable to georeference</code>, <code>requires georeference</code>, <code>requires verification</code>, <code>verified by data custodian</code>, <code>verified by contributor</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -6089,7 +6089,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Bathurst`, `Lower Wealden`</td>
+			<td><code>Bathurst</code>, <code>Lower Wealden</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -6131,7 +6131,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`oak savanna`, `pre-cordilleran steppe`</td>
+			<td><code>oak savanna</code>, <code>pre-cordilleran steppe</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -6215,11 +6215,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to separate the values in a list with space vertical bar space (` | `), with terms in order from the highest taxonomic rank to the lowest.</td>
+			<td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>), with terms in order from the highest taxonomic rank to the lowest.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Plantae | Tracheophyta | Magnoliopsida | Ranunculales | Ranunculaceae | Ranunculus`, `Animalia`, `Animalia | Chordata | Vertebrata | Mammalia | Theria | Eutheria | Rodentia | Hystricognatha | Hystricognathi | Ctenomyidae | Ctenomyini | Ctenomys`</td>
+			<td><code>Plantae | Tracheophyta | Magnoliopsida | Ranunculales | Ranunculaceae | Ranunculus</code>, <code>Animalia</code>, <code>Animalia | Chordata | Vertebrata | Mammalia | Theria | Eutheria | Rodentia | Hystricognatha | Hystricognathi | Ctenomyidae | Ctenomyini | Ctenomys</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -6265,11 +6265,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to separate the values in a list with space vertical bar space (` | `), with terms in order from least specific to most specific.</td>
+			<td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>), with terms in order from least specific to most specific.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`North Atlantic Ocean`. `South America | Argentina | Patagonia | Parque Nacional Nahuel Huapi | Neuquén | Los Lagos` (with accompanying values `South America` in continent, `Argentina` in country, `Neuquén` in stateProvince, and `Los Lagos` in county.</td>
+			<td><code>North Atlantic Ocean</code>. <code>South America | Argentina | Patagonia | Parque Nacional Nahuel Huapi | Neuquén | Los Lagos</code> (with accompanying values <code>South America</code> in continent, <code>Argentina</code> in country, <code>Neuquén</code> in stateProvince, and <code>Los Lagos</code> in county.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -6319,7 +6319,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`<a href="http://vocab.getty.edu/tgn/1002002`">http://vocab.getty.edu/tgn/1002002`</a> (Antártida e Islas del Atlántico Sur, Territorio Nacional de la Tierra del Fuego, Argentina).</td>
+			<td><code><a href="http://vocab.getty.edu/tgn/1002002">http://vocab.getty.edu/tgn/1002002</a></code> (Antártida e Islas del Atlántico Sur, Territorio Nacional de la Tierra del Fuego, Argentina).</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -6571,7 +6571,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Blancan`</td>
+			<td><code>Blancan</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -6747,7 +6747,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`9992`</td>
+			<td><code>9992</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -6831,7 +6831,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`aff. agrifolia var. oxyadenia` (for `Quercus aff. agrifolia var. oxyadenia` with accompanying values `Quercus` in genus, `agrifolia`  in specificEpithet, `oxyadenia`  in infraspecificEpithet, and `var.` in taxonRank. `cf. var. oxyadenia` for `Quercus agrifolia cf. var. oxyadenia` with accompanying values `Quercus` in genus, `agrifolia` in specificEpithet, `oxyadenia` in infraspecificEpithet, and `var.` in taxonRank.</td>
+			<td><code>aff. agrifolia var. oxyadenia</code> (for <code>Quercus aff. agrifolia var. oxyadenia</code> with accompanying values <code>Quercus</code> in genus, <code>agrifolia</code>  in specificEpithet, <code>oxyadenia</code>  in infraspecificEpithet, and <code>var.</code> in taxonRank. <code>cf. var. oxyadenia</code> for <code>Quercus agrifolia cf. var. oxyadenia</code> with accompanying values <code>Quercus</code> in genus, <code>agrifolia</code> in specificEpithet, <code>oxyadenia</code> in infraspecificEpithet, and <code>var.</code> in taxonRank.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -6877,11 +6877,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to separate the values in a list with space vertical bar space (` | `).</td>
+			<td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Aves del Noroeste Patagonico. Christie et al. 2004.`, `Stebbins, R. Field Guide to Western Reptiles and Amphibians. 3rd Edition. 2003. | Irschick, D.J. and Shaffer, H.B. (1997). The polytypic species revisited: Morphological differentiation among tiger salamanders (Ambystoma tigrinum) (Amphibia: Caudata). Herpetologica, 53(1), 30-49.`</td>
+			<td><code>Aves del Noroeste Patagonico. Christie et al. 2004.</code>, <code>Stebbins, R. Field Guide to Western Reptiles and Amphibians. 3rd Edition. 2003. | Irschick, D.J. and Shaffer, H.B. (1997). The polytypic species revisited: Morphological differentiation among tiger salamanders (Ambystoma tigrinum) (Amphibia: Caudata). Herpetologica, 53(1), 30-49.</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -6927,7 +6927,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Distinguished between Anthus correndera and Anthus hellmayri based on the comparative lengths of the uñas.`</td>
+			<td><code>Distinguished between Anthus correndera and Anthus hellmayri based on the comparative lengths of the uñas.</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -6973,7 +6973,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`0` ("unverified" in HISPID/ABCD).</td>
+			<td><code>0</code> ("unverified" in HISPID/ABCD).</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -7061,11 +7061,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to separate the values in a list with space vertical bar space (` | `).</td>
+			<td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`James L. Patton`, `Theodore Pappenfuss | Robert Macey`</td>
+			<td><code>James L. Patton</code>, <code>Theodore Pappenfuss | Robert Macey</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -7161,7 +7161,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`<a href="https://orcid.org/0000-0002-1825-0097`">https://orcid.org/0000-0002-1825-0097`</a> (for an individual), `<a href="https://orcid.org/0000-0002-1825-0097">https://orcid.org/0000-0002-1825-0097</a> | <a href="https://orcid.org/0000-0002-1825-0098`">https://orcid.org/0000-0002-1825-0098`</a> (for a list of people). </td>
+			<td><code><a href="https://orcid.org/0000-0002-1825-0097">https://orcid.org/0000-0002-1825-0097</a></code> (for an individual), <code><a href="https://orcid.org/0000-0002-1825-0097">https://orcid.org/0000-0002-1825-0097</a> | <a href="https://orcid.org/0000-0002-1825-0098">https://orcid.org/0000-0002-1825-0098</a></code> (for a list of people). </td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -7295,7 +7295,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`<a href="http://vocab.getty.edu/tgn/1019987`">http://vocab.getty.edu/tgn/1019987`</a></td>
+			<td><code><a href="http://vocab.getty.edu/tgn/1019987">http://vocab.getty.edu/tgn/1019987</a></code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -7337,7 +7337,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`0`, `1`, `25`</td>
+			<td><code>0</code>, <code>1</code>, <code>25</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -7475,7 +7475,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`location information not given for endangered species`, `collector identities withheld | ask about tissue samples`</td>
+			<td><code>location information not given for endangered species</code>, <code>collector identities withheld | ask about tissue samples</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -7517,11 +7517,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>The term infragenericEpithet should be used in conjunction with genericName, specificEpithet, infraspecificEpithet, taxonRank and scientificNameAuthorship to represent the individual elements of the complete scientificName. It can be used to indicate the subgenus placement of a species, which in zoology is often given in parentheses. Can also be used to share infrageneric names such as botanical sections (e.g., `Vicia sect. Cracca`).</td>
+			<td>The term infragenericEpithet should be used in conjunction with genericName, specificEpithet, infraspecificEpithet, taxonRank and scientificNameAuthorship to represent the individual elements of the complete scientificName. It can be used to indicate the subgenus placement of a species, which in zoology is often given in parentheses. Can also be used to share infrageneric names such as botanical sections (e.g., <code>Vicia sect. Cracca</code>).</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Abacetillus` (for scientificName "Abacetus (Abacetillus) ambiguus", `Cracca` (for scientificName "Vicia sect. Cracca")</td>
+			<td><code>Abacetillus</code> (for scientificName "Abacetus (Abacetillus) ambiguus", <code>Cracca</code> (for scientificName "Vicia sect. Cracca")</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -7567,11 +7567,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>In botany, where there can be more than one infraspecific rank, name strings may be provided, in literature and in identifications, that have more than two epithets. Only the last of these epithets is the infraspecificEpithet and only the first and the last epithets belong to the scientificName. For example: the infraspecificEpithet in the string "Indigofera charlieriana subsp. sessilis var. scaberrima" is `scaberrima` and the scientificName is `Indigophera charlieriana var. scaberrima`.</td>
+			<td>In botany, where there can be more than one infraspecific rank, name strings may be provided, in literature and in identifications, that have more than two epithets. Only the last of these epithets is the infraspecificEpithet and only the first and the last epithets belong to the scientificName. For example: the infraspecificEpithet in the string "Indigofera charlieriana subsp. sessilis var. scaberrima" is <code>scaberrima</code> and the scientificName is <code>Indigophera charlieriana var. scaberrima</code>.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`concolor` (for scientificName "Puma concolor concolor"), `oxyadenia` (for scientificName "Quercus agrifolia var. oxyadenia"), `laxa` (for scientificName "Cheilanthes hirta f. laxa"), `scaberrima` (for scientificName "Indigofera charlieriana var. scaberrima").</td>
+			<td><code>concolor</code> (for scientificName "Puma concolor concolor"), <code>oxyadenia</code> (for scientificName "Quercus agrifolia var. oxyadenia"), <code>laxa</code> (for scientificName "Cheilanthes hirta f. laxa"), <code>scaberrima</code> (for scientificName "Indigofera charlieriana var. scaberrima").</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -7613,7 +7613,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`MVZ`, `FMNH`, `CLO`, `UCMP`</td>
+			<td><code>MVZ</code>, <code>FMNH</code>, <code>CLO</code>, <code>UCMP</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -7659,7 +7659,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`<a href="http://biocol.org/urn:lsid:biocol.org:col:34777`">http://biocol.org/urn:lsid:biocol.org:col:34777`</a>, `<a href="http://grbio.org/cool/km06-gtbn`">http://grbio.org/cool/km06-gtbn`</a></td>
+			<td><code><a href="http://biocol.org/urn:lsid:biocol.org:col:34777">http://biocol.org/urn:lsid:biocol.org:col:34777</a></code>, <code><a href="http://grbio.org/cool/km06-gtbn">http://grbio.org/cool/km06-gtbn</a></code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -7705,7 +7705,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Nosy Be`, `Bikini Atoll`, `Vancouver`, `Viti Levu`, `Zanzibar`</td>
+			<td><code>Nosy Be</code>, <code>Bikini Atoll</code>, <code>Vancouver</code>, <code>Viti Levu</code>, <code>Zanzibar</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -7751,7 +7751,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Alexander Archipelago`, `Archipiélago Diego Ramírez`, `Seychelles`</td>
+			<td><code>Alexander Archipelago</code>, <code>Archipiélago Diego Ramírez</code>, <code>Seychelles</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -7793,7 +7793,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Animalia`, `Archaea`, `Bacteria`, `Chromista`, `Fungi`, `Plantae`, `Protozoa`, `Viruses`</td>
+			<td><code>Animalia</code>, <code>Archaea</code>, <code>Bacteria</code>, <code>Chromista</code>, <code>Fungi</code>, <code>Plantae</code>, <code>Protozoa</code>, <code>Viruses</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -7839,7 +7839,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`en` (for English), `es` (for Spanish)</td>
+			<td><code>en</code> (for English), <code>es</code> (for Spanish)</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -7931,7 +7931,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Atlantic`, `Boreal`, `Skullrockian`</td>
+			<td><code>Atlantic</code>, <code>Boreal</code>, <code>Skullrockian</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -8019,7 +8019,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Phanerozoic`, `Proterozoic`</td>
+			<td><code>Phanerozoic</code>, <code>Proterozoic</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -8061,7 +8061,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Holocene`, `Pleistocene`, `Ibexian Series`</td>
+			<td><code>Holocene</code>, <code>Pleistocene</code>, <code>Ibexian Series</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -8103,7 +8103,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Cenozoic`, `Mesozoic`</td>
+			<td><code>Cenozoic</code>, <code>Mesozoic</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -8187,7 +8187,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Neogene`, `Tertiary`, `Quaternary`</td>
+			<td><code>Neogene</code>, <code>Tertiary</code>, <code>Quaternary</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -8229,7 +8229,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`<a href="http://creativecommons.org/publicdomain/zero/1.0/legalcode`">http://creativecommons.org/publicdomain/zero/1.0/legalcode`</a>, `<a href="http://creativecommons.org/licenses/by/4.0/legalcode`">http://creativecommons.org/licenses/by/4.0/legalcode`</a></td>
+			<td><code><a href="http://creativecommons.org/publicdomain/zero/1.0/legalcode">http://creativecommons.org/publicdomain/zero/1.0/legalcode</a></code>, <code><a href="http://creativecommons.org/licenses/by/4.0/legalcode">http://creativecommons.org/licenses/by/4.0/legalcode</a></code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -8279,7 +8279,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`zygote`, `larva`, `juvenile`, `adult`, `seedling`, `flowering`, `fruiting`</td>
+			<td><code>zygote</code>, <code>larva</code>, <code>juvenile</code>, <code>adult</code>, <code>seedling</code>, <code>flowering</code>, <code>fruiting</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -8367,7 +8367,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Pleistocene-Weichselien`</td>
+			<td><code>Pleistocene-Weichselien</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -8459,7 +8459,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Bariloche, 25 km NNE via Ruta Nacional 40 (=Ruta 237)`, `Queets Rainforest, Olympic National Park`</td>
+			<td><code>Bariloche, 25 km NNE via Ruta Nacional 40 (=Ruta 237)</code>, <code>Queets Rainforest, Olympic National Park</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -8543,7 +8543,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Getty Thesaurus of Geographic Names`, `GADM`</td>
+			<td><code>Getty Thesaurus of Geographic Names</code>, <code>GADM</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -8669,7 +8669,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`<a href="https://opencontext.org/subjects/768A875F-E205-4D0B-DE55-BAB7598D0FD1`">https://opencontext.org/subjects/768A875F-E205-4D0B-DE55-BAB7598D0FD1`</a></td>
+			<td><code><a href="https://opencontext.org/subjects/768A875F-E205-4D0B-DE55-BAB7598D0FD1">https://opencontext.org/subjects/768A875F-E205-4D0B-DE55-BAB7598D0FD1</a></code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -8711,7 +8711,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`under water since 2005`</td>
+			<td><code>under water since 2005</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -8753,7 +8753,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Maastrichtian`</td>
+			<td><code>Maastrichtian</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -8945,7 +8945,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`06809dc5-f143-459a-be1a-6f03e63fc083`</td>
+			<td><code>06809dc5-f143-459a-be1a-6f03e63fc083</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -8991,7 +8991,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`0`, `200`</td>
+			<td><code>0</code>, <code>200</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -9033,7 +9033,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`-1.5` (below the surface). `4.2` (above the surface). For a 1.5 meter sediment core from the bottom of a lake (at depth 20m) at 300m elevation: verbatimElevation: `300m` minimumElevationInMeters: `300`, maximumElevationInMeters: `300`, verbatimDepth: `20m`, minimumDepthInMeters: `20`, maximumDepthInMeters: `20`, minimumDistanceAboveSurfaceInMeters: `0`, maximumDistanceAboveSurfaceInMeters: `-1.5`.</td>
+			<td><code>-1.5</code> (below the surface). <code>4.2</code> (above the surface). For a 1.5 meter sediment core from the bottom of a lake (at depth 20m) at 300m elevation: verbatimElevation: <code>300m</code> minimumElevationInMeters: <code>300</code>, maximumElevationInMeters: <code>300</code>, verbatimDepth: <code>20m</code>, minimumDepthInMeters: <code>20</code>, maximumDepthInMeters: <code>20</code>, minimumDistanceAboveSurfaceInMeters: <code>0</code>, maximumDistanceAboveSurfaceInMeters: <code>-1.5</code>.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -9075,7 +9075,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`-205`, `1236`</td>
+			<td><code>-205</code>, <code>1236</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -9117,7 +9117,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`0.01`, `normal distribution with variation of 2 m`</td>
+			<td><code>0.01</code>, <code>normal distribution with variation of 2 m</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -9201,11 +9201,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to separate the values in a list with space vertical bar space (` | `).</td>
+			<td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Rob Guralnick`, `Peter Desmet | Stijn Van Hoey`</td>
+			<td><code>Rob Guralnick</code>, <code>Peter Desmet | Stijn Van Hoey</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -9255,7 +9255,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`1963-03-08T14:07-0600` (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC). `2009-02-20T08:40Z` (20 February 2009 8:40am UTC). `2018-08-29T15:19` (3:19pm local time on 29 August 2018). `1809-02-12` (some time during 12 February 1809). `1906-06` (some time in June 1906). `1971` (some time in the year 1971). `2007-03-01T13:00:00Z/2008-05-11T15:30:00Z` (some time during the interval between 1 March 2007 1pm UTC and 11 May 2008 3:30pm UTC). `1900/1909` (some time during the interval between the beginning of the year 1900 and the end of the year 1909). `2007-11-13/15` (some time in the interval between 13 November 2007 and 15 November 2007).</td>
+			<td><code>1963-03-08T14:07-0600</code> (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC). <code>2009-02-20T08:40Z</code> (20 February 2009 8:40am UTC). <code>2018-08-29T15:19</code> (3:19pm local time on 29 August 2018). <code>1809-02-12</code> (some time during 12 February 1809). <code>1906-06</code> (some time in June 1906). <code>1971</code> (some time in the year 1971). <code>2007-03-01T13:00:00Z/2008-05-11T15:30:00Z</code> (some time during the interval between 1 March 2007 1pm UTC and 11 May 2008 3:30pm UTC). <code>1900/1909</code> (some time during the interval between the beginning of the year 1900 and the end of the year 1909). <code>2007-11-13/15</code> (some time in the interval between 13 November 2007 and 15 November 2007).</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -9297,7 +9297,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`9c752d22-b09a-11e8-96f8-529269fb1459`</td>
+			<td><code>9c752d22-b09a-11e8-96f8-529269fb1459</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -9339,7 +9339,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`minimum convex polygon around burrow entrances` (for a home range area). `barometric altimeter` (for an elevation).</td>
+			<td><code>minimum convex polygon around burrow entrances</code> (for a home range area). <code>barometric altimeter</code> (for an elevation).</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -9473,7 +9473,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`tip of tail missing`</td>
+			<td><code>tip of tail missing</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -9519,7 +9519,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`tail length`, `temperature`, `trap line length`, `survey area`, `trap type`</td>
+			<td><code>tail length</code>, <code>temperature</code>, <code>trap line length</code>, <code>survey area</code>, <code>trap type</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -9607,7 +9607,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`mm`, `C`, `km`, `ha`</td>
+			<td><code>mm</code>, <code>C</code>, <code>km</code>, <code>ha</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -9691,7 +9691,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`45`, `20`, `1`, `14.5`, `UV-light`</td>
+			<td><code>45</code>, <code>20</code>, <code>1</code>, <code>14.5</code>, <code>UV-light</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -9737,7 +9737,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`<a href="http://vocab.nerc.ac.uk/collection/L22/current/TOOL0960/`">http://vocab.nerc.ac.uk/collection/L22/current/TOOL0960/`</a></td>
+			<td><code><a href="http://vocab.nerc.ac.uk/collection/L22/current/TOOL0960/">http://vocab.nerc.ac.uk/collection/L22/current/TOOL0960/</a></code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -9783,7 +9783,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Lava Dam Member`, `Hellnmaria Member`</td>
+			<td><code>Lava Dam Member</code>, <code>Hellnmaria Member</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -9825,7 +9825,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`0`, `100`</td>
+			<td><code>0</code>, <code>100</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -9867,7 +9867,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`-1.5` (below the surface). `4.2` (above the surface). For a 1.5 meter sediment core from the bottom of a lake (at depth 20m) at 300m elevation: verbatimElevation: `300m` minimumElevationInMeters: `300`, maximumElevationInMeters: `300`, verbatimDepth: `20m`, minimumDepthInMeters: `20`, maximumDepthInMeters: `20`, minimumDistanceAboveSurfaceInMeters: `0`, maximumDistanceAboveSurfaceInMeters: `-1.5`.</td>
+			<td><code>-1.5</code> (below the surface). <code>4.2</code> (above the surface). For a 1.5 meter sediment core from the bottom of a lake (at depth 20m) at 300m elevation: verbatimElevation: <code>300m</code> minimumElevationInMeters: <code>300</code>, maximumElevationInMeters: <code>300</code>, verbatimDepth: <code>20m</code>, minimumDepthInMeters: <code>20</code>, maximumDepthInMeters: <code>20</code>, minimumDistanceAboveSurfaceInMeters: <code>0</code>, maximumDistanceAboveSurfaceInMeters: <code>-1.5</code>.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -9909,7 +9909,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`-100`, `802`</td>
+			<td><code>-100</code>, <code>802</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -9955,7 +9955,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`1963-03-08T14:07-0600` (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC). `2009-02-20T08:40Z` (20 February 2009 8:40am UTC). `2018-08-29T15:19` (3:19pm local time on 29 August 2018). `1809-02-12` (some time during 12 February 1809). `1906-06` (some time in June 1906). `1971` (some time in the year 1971). `2007-03-01T13:00:00Z/2008-05-11T15:30:00Z` (some time during the interval between 1 March 2007 1pm UTC and 11 May 2008 3:30pm UTC). `1900/1909` (some time during the interval between the beginning of the year 1900 and the end of the year 1909). `2007-11-13/15` (some time in the interval between 13 November 2007 and 15 November 2007).</td>
+			<td><code>1963-03-08T14:07-0600</code> (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC). <code>2009-02-20T08:40Z</code> (20 February 2009 8:40am UTC). <code>2018-08-29T15:19</code> (3:19pm local time on 29 August 2018). <code>1809-02-12</code> (some time during 12 February 1809). <code>1906-06</code> (some time in June 1906). <code>1971</code> (some time in the year 1971). <code>2007-03-01T13:00:00Z/2008-05-11T15:30:00Z</code> (some time during the interval between 1 March 2007 1pm UTC and 11 May 2008 3:30pm UTC). <code>1900/1909</code> (some time during the interval between the beginning of the year 1900 and the end of the year 1909). <code>2007-11-13/15</code> (some time in the interval between 13 November 2007 and 15 November 2007).</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -10001,7 +10001,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`1` (January). `10` (October).</td>
+			<td><code>1</code> (January). <code>10</code> (October).</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -10047,7 +10047,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Holzminden`, `Araçatuba`, `Ga-Segonyana`</td>
+			<td><code>Holzminden</code>, <code>Araçatuba</code>, <code>Ga-Segonyana</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -10089,11 +10089,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>This term provides context to the `scientificName`. Together with the `scientificName`, separated by ‘sensu’ or ‘sec.’, it forms the taxon concept label, which may be seen as having the same relationship to `taxonConceptID` as, for example, `acceptedNameUsage` has to `acceptedNameUsageID`. When not provided, in Taxon Core data sets the `nameAccordingTo` can be taken to be the data set. In this case the data set mostly provides sufficient context to infer the delimitation of the taxon and its relationship with other taxa. In Occurrence Core data sets, when not provided, `nameAccordingTo` can be an underlying taxonomy of the data set, e.g. Plants of the World Online (<a href="http://powo.science.kew.org/">http://powo.science.kew.org/</a>) for vascular plant records in iNaturalist (in which case it should be provided), or, which is the case for most `PreservedSpecimen` data sets, the `Identification`, in which case there is no further context.</td>
+			<td>This term provides context to the <code>scientificName</code>. Together with the <code>scientificName</code>, separated by ‘sensu’ or ‘sec.’, it forms the taxon concept label, which may be seen as having the same relationship to <code>taxonConceptID</code> as, for example, <code>acceptedNameUsage</code> has to <code>acceptedNameUsageID</code>. When not provided, in Taxon Core data sets the <code>nameAccordingTo</code> can be taken to be the data set. In this case the data set mostly provides sufficient context to infer the delimitation of the taxon and its relationship with other taxa. In Occurrence Core data sets, when not provided, <code>nameAccordingTo</code> can be an underlying taxonomy of the data set, e.g. Plants of the World Online (<a href="http://powo.science.kew.org/">http://powo.science.kew.org/</a>) for vascular plant records in iNaturalist (in which case it should be provided), or, which is the case for most <code>PreservedSpecimen</code> data sets, the <code>Identification</code>, in which case there is no further context.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Franz NM, Cardona-Duque J (2013) Description of two new species and phylogenetic reassessment of Perelleschus Wibmer & O’Brien, 1986 (Coleoptera: Curculionidae), with a complete taxonomic concept history of Perelleschus sec. Franz & Cardona-Duque, 2013. Syst Biodivers. 11: 209–236.` (as the full citation of the Franz & Cardona-Duque (2013) in Perelleschus splendida sec. Franz & Cardona-Duque (2013))</td>
+			<td><code>Franz NM, Cardona-Duque J (2013) Description of two new species and phylogenetic reassessment of Perelleschus Wibmer & O’Brien, 1986 (Coleoptera: Curculionidae), with a complete taxonomic concept history of Perelleschus sec. Franz & Cardona-Duque, 2013. Syst Biodivers. 11: 209–236.</code> (as the full citation of the Franz & Cardona-Duque (2013) in Perelleschus splendida sec. Franz & Cardona-Duque (2013))</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -10139,7 +10139,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`<a href="https://doi.org/10.1016/S0269-915X(97">https://doi.org/10.1016/S0269-915X(97</a>)80026-2`</td>
+			<td><code><a href="https://doi.org/10.1016/S0269-915X(97)80026-2">https://doi.org/10.1016/S0269-915X(97)80026-2</a></code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -10227,7 +10227,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Pearson O. P., and M. I. Christie. 1985. Historia Natural, 5(37):388`, `Forel, Auguste, Diagnosies provisoires de quelques espèces nouvelles de fourmis de Madagascar, récoltées par M. Grandidier., Annales de la Societe Entomologique de Belgique, Comptes-rendus des Seances 30, 1886`</td>
+			<td><code>Pearson O. P., and M. I. Christie. 1985. Historia Natural, 5(37):388</code>, <code>Forel, Auguste, Diagnosies provisoires de quelques espèces nouvelles de fourmis de Madagascar, récoltées par M. Grandidier., Annales de la Societe Entomologique de Belgique, Comptes-rendus des Seances 30, 1886</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -10307,7 +10307,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`1915`, `2008`</td>
+			<td><code>1915</code>, <code>2008</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -10357,7 +10357,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`ICN`, `ICZN`, `BC`, `ICNCP`, `BioCode`</td>
+			<td><code>ICN</code>, <code>ICZN</code>, <code>BC</code>, <code>ICNCP</code>, <code>BioCode</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -10399,7 +10399,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`nom. ambig.`, `nom. illeg.`, `nom. subnud.`</td>
+			<td><code>nom. ambig.</code>, <code>nom. illeg.</code>, <code>nom. subnud.</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -10579,7 +10579,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`<a href="http://arctos.database.museum/guid/MSB:Mamm:233627`">http://arctos.database.museum/guid/MSB:Mamm:233627`</a>, `000866d2-c177-4648-a200-ead4007051b9`, `urn:catalog:UWBM:Bird:89776`</td>
+			<td><code><a href="http://arctos.database.museum/guid/MSB:Mamm:233627">http://arctos.database.museum/guid/MSB:Mamm:233627</a></code>, <code>000866d2-c177-4648-a200-ead4007051b9</code>, <code>urn:catalog:UWBM:Bird:89776</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -11019,7 +11019,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`found dead on road`</td>
+			<td><code>found dead on road</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -11107,7 +11107,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`present`, `absent`</td>
+			<td><code>present</code>, <code>absent</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -11149,7 +11149,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Carnivora`, `Monocleales`</td>
+			<td><code>Carnivora</code>, <code>Monocleales</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -11241,7 +11241,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`<a href="http://arctos.database.museum/guid/WNMU:Mamm:1249`">http://arctos.database.museum/guid/WNMU:Mamm:1249`</a></td>
+			<td><code><a href="http://arctos.database.museum/guid/WNMU:Mamm:1249">http://arctos.database.museum/guid/WNMU:Mamm:1249</a></code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -11287,7 +11287,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Huberta`, `Boab Prison Tree`, `J pod`</td>
+			<td><code>Huberta</code>, <code>Boab Prison Tree</code>, <code>J pod</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -11337,7 +11337,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`27` (organismQuantity) with `individuals` (organismQuantityType). `12.5` (organismQuantity) with `% biomass` (organismQuantityType). `r` (organismQuantity) with `Braun Blanquet Scale` (organismQuantityType). `many` (organismQuantity) with `individuals` (organismQuantityType).</td>
+			<td><code>27</code> (organismQuantity) with <code>individuals</code> (organismQuantityType). <code>12.5</code> (organismQuantity) with <code>% biomass</code> (organismQuantityType). <code>r</code> (organismQuantity) with <code>Braun Blanquet Scale</code> (organismQuantityType). <code>many</code> (organismQuantity) with <code>individuals</code> (organismQuantityType).</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -11429,7 +11429,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`27` (organismQuantity) with `individuals` (organismQuantityType). `12.5` (organismQuantity) with `%biomass` (organismQuantityType). `r` (organismQuantity) with `BraunBlanquetScale` (organismQuantityType).</td>
+			<td><code>27</code> (organismQuantity) with <code>individuals</code> (organismQuantityType). <code>12.5</code> (organismQuantity) with <code>%biomass</code> (organismQuantityType). <code>r</code> (organismQuantity) with <code>BraunBlanquetScale</code> (organismQuantityType).</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -11475,7 +11475,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`One of a litter of six`</td>
+			<td><code>One of a litter of six</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -11525,7 +11525,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`multicellular organism`, `virus`, `clone`, `pack`, `colony`</td>
+			<td><code>multicellular organism</code>, <code>virus</code>, <code>clone</code>, <code>pack</code>, <code>colony</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -11575,7 +11575,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Pinus abies`, `Gasterosteus saltatrix Linnaeus 1768`</td>
+			<td><code>Pinus abies</code>, <code>Gasterosteus saltatrix Linnaeus 1768</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -11621,7 +11621,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`tsn:41107` (ITIS), `urn:lsid:ipni.org:names:320035-2` (IPNI), `2704179` (GBIF), `6W3C4` (COL)</td>
+			<td><code>tsn:41107</code> (ITIS), <code>urn:lsid:ipni.org:names:320035-2</code> (IPNI), <code>2704179</code> (GBIF), <code>6W3C4</code> (COL)</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -11663,11 +11663,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to separate the values in a list with space vertical bar space (` | `).</td>
+			<td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`FMNH:Mammal:1234`, `NPS YELLO6778 | MBG 33424`</td>
+			<td><code>FMNH:Mammal:1234</code>, <code>NPS YELLO6778 | MBG 33424</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -11713,7 +11713,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`NPS`, `APN`, `InBio`</td>
+			<td><code>NPS</code>, <code>APN</code>, <code>InBio</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -11759,7 +11759,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`A1` (parentEventID to identify the main Whittaker Plot in nested samples, each with its own eventID - `A1:1`, `A1:2`).</td>
+			<td><code>A1</code> (parentEventID to identify the main Whittaker Plot in nested samples, each with its own eventID - <code>A1:1</code>, <code>A1:2</code>).</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -11805,7 +11805,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Rubiaceae`, `Gruiformes`, `Testudinae`</td>
+			<td><code>Rubiaceae</code>, <code>Gruiformes</code>, <code>Testudinae</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -11851,7 +11851,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`tsn:41074` (ITIS), `urn:lsid:ipni.org:names:30001404-2` (IPNI), `2704173` (GBIF), `6T8N` (COL)</td>
+			<td><code>tsn:41074</code> (ITIS), <code>urn:lsid:ipni.org:names:30001404-2</code> (IPNI), <code>2704173</code> (GBIF), <code>6T8N</code> (COL)</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -11897,7 +11897,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`releasedForUse`, `otherEscape`, `transportContaminant`, `transportStowaway`, `corridor`, `unaided`</td>
+			<td><code>releasedForUse</code>, <code>otherEscape</code>, <code>transportContaminant</code>, <code>transportStowaway</code>, <code>corridor</code>, <code>unaided</code></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -11943,7 +11943,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`<a href="http://rs.tdwg.org/dwcpw/values/p002`">http://rs.tdwg.org/dwcpw/values/p002`</a>, `<a href="http://rs.tdwg.org/dwcpw/values/p046`">http://rs.tdwg.org/dwcpw/values/p046`</a></td>
+			<td><code><a href="http://rs.tdwg.org/dwcpw/values/p002">http://rs.tdwg.org/dwcpw/values/p002</a></code>, <code><a href="http://rs.tdwg.org/dwcpw/values/p046">http://rs.tdwg.org/dwcpw/values/p046</a></code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -11989,7 +11989,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Chordata` (phylum). `Bryophyta` (division).</td>
+			<td><code>Chordata</code> (phylum). <code>Bryophyta</code> (division).</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -12035,7 +12035,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`0`, `1`, `1.5708`</td>
+			<td><code>0</code>, <code>1</code>, <code>1.5708</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -12119,11 +12119,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to separate the values in a list with space vertical bar space (` | `).</td>
+			<td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`fossil`, `cast`, `photograph`, `DNA extract`, `skin | skull | skeleton`, `whole animal (ETOH) | tissue (EDTA)`</td>
+			<td><code>fossil</code>, <code>cast</code>, <code>photograph</code>, <code>DNA extract</code>, <code>skin | skull | skeleton</code>, <code>whole animal (ETOH) | tissue (EDTA)</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -12265,11 +12265,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to separate the values in a list with space vertical bar space (` | `).</td>
+			<td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Chalepidae`, `Pinus abies`, `Anthus sp., field ID by G. Iglesias | Anthus correndera, expert ID by C. Cicero 2009-02-12 based on morphology`</td>
+			<td><code>Chalepidae</code>, <code>Pinus abies</code>, <code>Anthus sp., field ID by G. Iglesias | Anthus correndera, expert ID by C. Cicero 2009-02-12 based on morphology</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -12319,11 +12319,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to separate the values in a list with space vertical bar space (` | `).</td>
+			<td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`José E. Crespo`. `Oliver P. Pearson | Anita K. Pearson` (where the value in recordNumber `OPP 7101` corresponds to the collector number for the specimen in the field catalog of Oliver P. Pearson).</td>
+			<td><code>José E. Crespo</code>. <code>Oliver P. Pearson | Anita K. Pearson</code> (where the value in recordNumber <code>OPP 7101</code> corresponds to the collector number for the specimen in the field catalog of Oliver P. Pearson).</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -12415,7 +12415,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`<a href="https://orcid.org/0000-0002-1825-0097`">https://orcid.org/0000-0002-1825-0097`</a> (for an individual); `<a href="https://orcid.org/0000-0002-1825-0097">https://orcid.org/0000-0002-1825-0097</a> | <a href="https://orcid.org/0000-0002-1825-0098`">https://orcid.org/0000-0002-1825-0098`</a> (for a list of people).</td>
+			<td><code><a href="https://orcid.org/0000-0002-1825-0097">https://orcid.org/0000-0002-1825-0097</a></code> (for an individual); <code><a href="https://orcid.org/0000-0002-1825-0097">https://orcid.org/0000-0002-1825-0097</a> | <a href="https://orcid.org/0000-0002-1825-0098">https://orcid.org/0000-0002-1825-0098</a></code> (for a list of people).</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -12503,7 +12503,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`OPP 7101`</td>
+			<td><code>OPP 7101</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -12549,7 +12549,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>MaterialSample example: `<a href="http://arctos.database.museum/guid/MVZ:Mamm:165861`">http://arctos.database.museum/guid/MVZ:Mamm:165861`</a>, Taxon example: `<a href="https://www.catalogueoflife.org/data/taxon/32664`">https://www.catalogueoflife.org/data/taxon/32664`</a></td>
+			<td>MaterialSample example: <code><a href="http://arctos.database.museum/guid/MVZ:Mamm:165861">http://arctos.database.museum/guid/MVZ:Mamm:165861</a></code>, Taxon example: <code><a href="https://www.catalogueoflife.org/data/taxon/32664">https://www.catalogueoflife.org/data/taxon/32664</a></code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -12637,7 +12637,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`dc609808-b09b-11e8-96f8-529269fb1459`</td>
+			<td><code>dc609808-b09b-11e8-96f8-529269fb1459</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -12721,7 +12721,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Julie Woodruff`</td>
+			<td><code>Julie Woodruff</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -12767,7 +12767,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`1963-03-08T14:07-0600` (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC). `2009-02-20T08:40Z` (20 February 2009 8:40am UTC). `2018-08-29T15:19` (3:19pm local time on 29 August 2018). `1809-02-12` (some time during 12 February 1809). `1906-06` (some time in June 1906). `1971` (some time in the year 1971). `2007-03-01T13:00:00Z/2008-05-11T15:30:00Z` (some time during the interval between 1 March 2007 1pm UTC and 11 May 2008 3:30pm UTC). `1900/1909` (some time during the interval between the beginning of the year 1900 and the end of the year 1909). `2007-11-13/15` (some time in the interval between 13 November 2007 and 15 November 2007).</td>
+			<td><code>1963-03-08T14:07-0600</code> (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC). <code>2009-02-20T08:40Z</code> (20 February 2009 8:40am UTC). <code>2018-08-29T15:19</code> (3:19pm local time on 29 August 2018). <code>1809-02-12</code> (some time during 12 February 1809). <code>1906-06</code> (some time in June 1906). <code>1971</code> (some time in the year 1971). <code>2007-03-01T13:00:00Z/2008-05-11T15:30:00Z</code> (some time during the interval between 1 March 2007 1pm UTC and 11 May 2008 3:30pm UTC). <code>1900/1909</code> (some time during the interval between the beginning of the year 1900 and the end of the year 1909). <code>2007-11-13/15</code> (some time in the interval between 13 November 2007 and 15 November 2007).</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -12813,7 +12813,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`sameAs`, `duplicate of`, `mother of`, `offspring of`, `sibling of`, `parasite of`, `host of`, `valid synonym of`, `located within`, `pollinator of members of taxon`, `pollinated specific plant`, `pollinated by members of taxon`</td>
+			<td><code>sameAs</code>, <code>duplicate of</code>, <code>mother of</code>, <code>offspring of</code>, <code>sibling of</code>, <code>parasite of</code>, <code>host of</code>, <code>valid synonym of</code>, <code>located within</code>, <code>pollinator of members of taxon</code>, <code>pollinated specific plant</code>, <code>pollinated by members of taxon</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -12859,7 +12859,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`<a href="http://purl.obolibrary.org/obo/RO_0002456`">http://purl.obolibrary.org/obo/RO_0002456`</a> (for the relation "pollinated by"), `<a href="http://purl.obolibrary.org/obo/RO_0002455`">http://purl.obolibrary.org/obo/RO_0002455`</a> (for the relation "pollinates"), `<a href="https://www.inaturalist.org/observation_fields/879`">https://www.inaturalist.org/observation_fields/879`</a> (for the relation "eaten by")</td>
+			<td><code><a href="http://purl.obolibrary.org/obo/RO_0002456">http://purl.obolibrary.org/obo/RO_0002456</a></code> (for the relation "pollinated by"), <code><a href="http://purl.obolibrary.org/obo/RO_0002455">http://purl.obolibrary.org/obo/RO_0002455</a></code> (for the relation "pollinates"), <code><a href="https://www.inaturalist.org/observation_fields/879">https://www.inaturalist.org/observation_fields/879</a></code> (for the relation "eaten by")</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -12905,7 +12905,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`mother and offspring collected from the same nest`, `pollinator captured in the act`</td>
+			<td><code>mother and offspring collected from the same nest</code>, <code>pollinator captured in the act</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -12951,7 +12951,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`non-reproductive`, `pregnant`, `in bloom`, `fruit-bearing`</td>
+			<td><code>non-reproductive</code>, <code>pregnant</code>, <code>in bloom</code>, <code>fruit-bearing</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -13035,7 +13035,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`f809b9e0-b09b-11e8-96f8-529269fb1459`</td>
+			<td><code>f809b9e0-b09b-11e8-96f8-529269fb1459</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -13127,7 +13127,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`04b16710-b09c-11e8-96f8-529269fb1459`</td>
+			<td><code>04b16710-b09c-11e8-96f8-529269fb1459</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -13223,7 +13223,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`The Regents of the University of California`</td>
+			<td><code>The Regents of the University of California</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -13663,11 +13663,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>A sampleSizeUnit must have a corresponding sampleSizeValue, e.g., `5` for sampleSizeValue with `metre` for sampleSizeUnit.</td>
+			<td>A sampleSizeUnit must have a corresponding sampleSizeValue, e.g., <code>5</code> for sampleSizeValue with <code>metre</code> for sampleSizeUnit.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`minute`, `hour`, `day`, `metre`, `square metre`, `cubic metre`</td>
+			<td><code>minute</code>, <code>hour</code>, <code>day</code>, <code>metre</code>, <code>square metre</code>, <code>cubic metre</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -13759,7 +13759,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`5` for sampleSizeValue with `metre` for sampleSizeUnit.</td>
+			<td><code>5</code> for sampleSizeValue with <code>metre</code> for sampleSizeUnit.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -13885,7 +13885,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`40 trap-nights`, `10 observer-hours`, `10 km by foot`, `30 km by car`</td>
+			<td><code>40 trap-nights</code>, <code>10 observer-hours</code>, <code>10 km by foot</code>, <code>30 km by car</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -14229,7 +14229,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`<a href="https://doi.org/10.1111/j.1466-8238.2009.00467.x`">https://doi.org/10.1111/j.1466-8238.2009.00467.x`</a></td>
+			<td><code><a href="https://doi.org/10.1111/j.1466-8238.2009.00467.x">https://doi.org/10.1111/j.1466-8238.2009.00467.x</a></code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -14279,7 +14279,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`UV light trap`, `mist net`, `bottom trawl`, `ad hoc observation | point count`, `Penguins from space: faecal stains reveal the location of emperor penguin colonies, <a href="https://doi.org/10.1111/j.1466-8238.2009.00467.x`">https://doi.org/10.1111/j.1466-8238.2009.00467.x`</a>, `Takats et al. 2001. Guidelines for Nocturnal Owl Monitoring in North America. Beaverhill Bird Observatory and Bird Studies Canada, Edmonton, Alberta. 32 pp., <a href="http://www.bsc-eoc.org/download/Owl.pdf`">http://www.bsc-eoc.org/download/Owl.pdf`</a></td>
+			<td><code>UV light trap</code>, <code>mist net</code>, <code>bottom trawl</code>, <code>ad hoc observation | point count</code>, <code>Penguins from space: faecal stains reveal the location of emperor penguin colonies, <a href="https://doi.org/10.1111/j.1466-8238.2009.00467.x">https://doi.org/10.1111/j.1466-8238.2009.00467.x</a></code>, <code>Takats et al. 2001. Guidelines for Nocturnal Owl Monitoring in North America. Beaverhill Bird Observatory and Bird Studies Canada, Edmonton, Alberta. 32 pp., <a href="http://www.bsc-eoc.org/download/Owl.pdf">http://www.bsc-eoc.org/download/Owl.pdf</a></code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -14329,7 +14329,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Coleoptera` (order). `Vespertilionidae` (family). `Manis` (genus). `Ctenomys sociabilis` (genus + specificEpithet). `Ambystoma tigrinum diaboli` (genus + specificEpithet + infraspecificEpithet). `Roptrocerus typographi (Györfi, 1952)` (genus + specificEpithet + scientificNameAuthorship), `Quercus agrifolia var. oxyadenia (Torr.) J.T. Howell` (genus + specificEpithet + taxonRank + infraspecificEpithet + scientificNameAuthorship).</td>
+			<td><code>Coleoptera</code> (order). <code>Vespertilionidae</code> (family). <code>Manis</code> (genus). <code>Ctenomys sociabilis</code> (genus + specificEpithet). <code>Ambystoma tigrinum diaboli</code> (genus + specificEpithet + infraspecificEpithet). <code>Roptrocerus typographi (Györfi, 1952)</code> (genus + specificEpithet + scientificNameAuthorship), <code>Quercus agrifolia var. oxyadenia (Torr.) J.T. Howell</code> (genus + specificEpithet + taxonRank + infraspecificEpithet + scientificNameAuthorship).</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -14375,7 +14375,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`(Torr.) J.T. Howell`, `(Martinovský) Tzvelev`, `(Györfi, 1952)`</td>
+			<td><code>(Torr.) J.T. Howell</code>, <code>(Martinovský) Tzvelev</code>, <code>(Györfi, 1952)</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -14417,7 +14417,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`urn:lsid:ipni.org:names:37829-1:1.3`</td>
+			<td><code>urn:lsid:ipni.org:names:37829-1:1.3</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -14555,7 +14555,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`female`, `male`, `hermaphrodite`</td>
+			<td><code>female</code>, <code>male</code>, <code>hermaphrodite</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -14601,7 +14601,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`concolor`, `gottschei`</td>
+			<td><code>concolor</code>, <code>gottschei</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -14643,7 +14643,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`1` (1 January). `366` (31 December), `365` (30 December in a leap year, 31 December in a non-leap year).</td>
+			<td><code>1</code> (1 January). <code>366</code> (31 December), <code>365</code> (30 December in a leap year, 31 December in a non-leap year).</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -14735,7 +14735,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Montana`, `Minas Gerais`, `Córdoba`</td>
+			<td><code>Montana</code>, <code>Minas Gerais</code>, <code>Córdoba</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -14777,7 +14777,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Periptyctinae`, `Orchidoideae`, `Sphindociinae`</td>
+			<td><code>Periptyctinae</code>, <code>Orchidoideae</code>, <code>Sphindociinae</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -14823,7 +14823,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Strobus`, `Amerigo`, `Pilosella`</td>
+			<td><code>Strobus</code>, <code>Amerigo</code>, <code>Pilosella</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -14995,7 +14995,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`8fa58e08-08de-4ac1-b69c-1235340b7001`</td>
+			<td><code>8fa58e08-08de-4ac1-b69c-1235340b7001</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -15079,7 +15079,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`8fa58e08-08de-4ac1-b69c-1235340b7001`, `32567`, `<a href="https://www.gbif.org/species/212`">https://www.gbif.org/species/212`</a></td>
+			<td><code>8fa58e08-08de-4ac1-b69c-1235340b7001</code>, <code>32567</code>, <code><a href="https://www.gbif.org/species/212">https://www.gbif.org/species/212</a></code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -15163,7 +15163,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`invalid`, `misapplied`, `homotypic synonym`, `accepted`</td>
+			<td><code>invalid</code>, <code>misapplied</code>, <code>homotypic synonym</code>, <code>accepted</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -15209,7 +15209,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`subspecies`, `varietas`, `forma`, `species`, `genus`</td>
+			<td><code>subspecies</code>, <code>varietas</code>, <code>forma</code>, <code>species</code>, <code>genus</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -15251,7 +15251,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`this name is a misspelling in common use`</td>
+			<td><code>this name is a misspelling in common use</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -15397,7 +15397,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`StillImage`, `MovingImage`, `Sound`, `PhysicalObject`, `Event`, `Text`</td>
+			<td><code>StillImage</code>, <code>MovingImage</code>, <code>Sound</code>, <code>PhysicalObject</code>, <code>Event</code>, <code>Text</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -15447,11 +15447,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to separate the values in a list with space vertical bar space (` | `).</td>
+			<td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`holotype of Ctenomys sociabilis. Pearson O. P., and M. I. Christie. 1985. Historia Natural, 5(37):388`, `holotype of Pinus abies | holotype of Picea abies`</td>
+			<td><code>holotype of Ctenomys sociabilis. Pearson O. P., and M. I. Christie. 1985. Historia Natural, 5(37):388</code>, <code>holotype of Pinus abies | holotype of Picea abies</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -15539,7 +15539,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`41 05 54S 121 05 34W`, `17T 630000 4833400`</td>
+			<td><code>41 05 54S 121 05 34W</code>, <code>17T 630000 4833400</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -15627,7 +15627,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`decimal degrees`, `degrees decimal minutes`, `degrees minutes seconds`, `UTM`</td>
+			<td><code>decimal degrees</code>, <code>degrees decimal minutes</code>, <code>degrees minutes seconds</code>, <code>UTM</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -15669,7 +15669,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`100-200 m`</td>
+			<td><code>100-200 m</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -15711,7 +15711,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`100-200 m`</td>
+			<td><code>100-200 m</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -15753,7 +15753,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`spring 1910`, `Marzo 2002`, `1999-03-XX`, `17IV1934`</td>
+			<td><code>spring 1910</code>, <code>Marzo 2002</code>, <code>1999-03-XX</code>, <code>17IV1934</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -15795,11 +15795,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>This term is meant to allow the capture of an unaltered original identification/determination, including identification qualifiers, hybrid formulas, uncertainties, etc. This term is meant to be used in addition to `scientificName` (and `identificationQualifier` etc.), not instead of it.</td>
+			<td>This term is meant to allow the capture of an unaltered original identification/determination, including identification qualifiers, hybrid formulas, uncertainties, etc. This term is meant to be used in addition to <code>scientificName</code> (and <code>identificationQualifier</code> etc.), not instead of it.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Peromyscus sp.`, `Ministrymon sp. nov. 1`, `Anser anser X Branta canadensis`, `Pachyporidae?`</td>
+			<td><code>Peromyscus sp.</code>, <code>Ministrymon sp. nov. 1</code>, <code>Anser anser X Branta canadensis</code>, <code>Pachyporidae?</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -15845,7 +15845,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`41 05 54.03S`</td>
+			<td><code>41 05 54.03S</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -15887,7 +15887,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`25 km NNE Bariloche por R. Nac. 237`</td>
+			<td><code>25 km NNE Bariloche por R. Nac. 237</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -15929,7 +15929,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`121d 10' 34" W`</td>
+			<td><code>121d 10' 34" W</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -16059,11 +16059,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to use the EPSG code of the SRS, if known. Otherwise use a controlled vocabulary for the name or code of the geodetic datum, if known. Otherwise use a controlled vocabulary for the name or code of the ellipsoid, if known. If none of these is known, use the value `unknown`.</td>
+			<td>Recommended best practice is to use the EPSG code of the SRS, if known. Otherwise use a controlled vocabulary for the name or code of the geodetic datum, if known. Otherwise use a controlled vocabulary for the name or code of the ellipsoid, if known. If none of these is known, use the value <code>unknown</code>.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`unknown`, `EPSG:4326`, `WGS84`, `NAD27`, `Campo Inchauspe`, `European 1950`, `Clarke 1866`</td>
+			<td><code>unknown</code>, <code>EPSG:4326</code>, <code>WGS84</code>, <code>NAD27</code>, <code>Campo Inchauspe</code>, <code>European 1950</code>, <code>Clarke 1866</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -16105,7 +16105,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Agamospecies`, `sub-lesus`, `prole`, `apomict`, `nothogrex`, `sp.`, `subsp.`, `var.`</td>
+			<td><code>Agamospecies</code>, <code>sub-lesus</code>, <code>prole</code>, <code>apomict</code>, <code>nothogrex</code>, <code>sp.</code>, <code>subsp.</code>, <code>var.</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -16147,7 +16147,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Andean Condor`, `Condor Andino`, `American Eagle`, `Gänsegeier`</td>
+			<td><code>Andean Condor</code>, <code>Condor Andino</code>, <code>American Eagle</code>, <code>Gänsegeier</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -16197,7 +16197,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`EGM84`, `EGM96`, `EGM2008`, `PGM2000A`, `PGM2004`, `PGM2006`, `PGM2007`, `epsg:7030`, `unknown`</td>
+			<td><code>EGM84</code>, <code>EGM96</code>, <code>EGM2008</code>, <code>PGM2000A</code>, <code>PGM2004</code>, <code>PGM2006</code>, <code>PGM2007</code>, <code>epsg:7030</code>, <code>unknown</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -16293,7 +16293,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Indian Ocean`, `Baltic Sea`, `Hudson River`, `Lago Nahuel Huapi`</td>
+			<td><code>Indian Ocean</code>, <code>Baltic Sea</code>, <code>Hudson River</code>, <code>Lago Nahuel Huapi</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -16335,7 +16335,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`1160`, `2008`</td>
+			<td><code>1160</code>, <code>2008</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
