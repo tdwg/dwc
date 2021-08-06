@@ -57,7 +57,7 @@ display_id = ['record_level', 'dc', 'dcterms', 'occurrence', 'organism', 'materi
 # ---------------
 
 # replace URL with link (function used with Audubon Core list of terms build script)
-# Does not correctly handle URLs with close parens ) characters.
+# Does not correctly handle URLs with close parens ) characters, so no longer used.
 #
 def createLinks(text):
     def repl(match):
@@ -69,15 +69,13 @@ def createLinks(text):
     result = re.sub(pattern, repl, text)
     return result
 
-# 2021-08-05 Replace the createLinks() function with functions copied from the QRG build script written by S. Van Hoey
+# 2021-08-06 Replace the createLinks() function with functions copied from the QRG build script written by S. Van Hoey
 def convert_code(text_with_backticks):
     """Takes all back-quoted sections in a text field and converts it to
     the html tagged version of code blocks <code>...</code>
     """
     return re.sub(r'`([^`]*)`', r'<code>\1</code>', text_with_backticks)
 
-# 2021-08-06 Discovered when using this with Audubon Core list of terms build script that it does not
-# correctly handle trailing commas that follow a URL. I don't understand the regex well enough to fix it
 def convert_link(text_with_urls):
     """Takes all links in a text field and converts it to the html tagged
     version of the link
@@ -87,7 +85,7 @@ def convert_link(text_with_urls):
         url = inputstring.group()
         return "<a href=\"{}\">{}</a>".format(url, url)
 
-    regx = "(http[s]?://[\w\d:#@%/;$()~_?\+-;=\\\.&]*)(?<![\)\.])"
+    regx = "(http[s]?://[\w\d:#@%/;$()~_?\+-;=\\\.&]*)(?<![\)\.,])"
     return re.sub(regx, _handle_matched, text_with_urls)
 
 # ---------------
