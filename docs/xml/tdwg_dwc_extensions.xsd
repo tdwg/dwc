@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema version="2014-11-08" 
+<xs:schema 
+    version="2021-07-15" 
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     targetNamespace="http://rs.tdwg.org/dwc/terms/"
     xmlns:simple="http://rs.tdwg.org/dwc/xsd/simpledarwincore/"
+    xmlns:chrono="http://rs.tdwg.org/chrono/terms/"
     xmlns:dwc="http://rs.tdwg.org/dwc/terms/">
     <xs:include schemaLocation="tdwg_dwcterms.xsd"/>
-    <xs:import namespace="http://rs.tdwg.org/dwc/xsd/simpledarwincore/" schemaLocation="tdwg_dwc_simple.xsd"/>
+    <xs:import 
+       namespace="http://rs.tdwg.org/dwc/xsd/simpledarwincore/" 
+       schemaLocation="tdwg_dwc_simple.xsd"/>
     
     <xs:annotation>
         <xs:documentation>
@@ -35,8 +39,10 @@
         <xs:complexType>
             <xs:all>
                 <xs:element ref="dwc:resourceRelationshipID" minOccurs="0"/>
+                <xs:element ref="dwc:resourceID" minOccurs="1"/>
+                <xs:element ref="dwc:relationshipOfResourceID" minOccurs="0"/>
                 <xs:element ref="dwc:relatedResourceID" minOccurs="1"/>
-                <xs:element ref="dwc:relationshipOfResource" minOccurs="1"/>
+                <xs:element ref="dwc:relationshipOfResource" minOccurs="0"/>
                 <xs:element ref="dwc:relationshipAccordingTo" minOccurs="0"/>
                 <xs:element ref="dwc:relationshipEstablishedDate" minOccurs="0"/>
                 <xs:element ref="dwc:relationshipRemarks" minOccurs="0"/>
@@ -44,4 +50,29 @@
         </xs:complexType>
     </xs:element>
     
+    <!-- CHRONOMETRIC AGE -->
+    <xs:element name="ChronometricAge" substitutionGroup="simple:anyExtension">
+        <xs:complexType>
+            <xs:all>
+                <xs:element ref="chrono:chronometricAgeID" minOccurs="0"/>
+                <xs:element ref="chrono:verbatimChronometricAge" minOccurs="0"/>
+                <xs:element ref="chrono:chronometricAgeProtocol" minOccurs="0"/>
+                <xs:element ref="chrono:uncalibratedChronometricAge" minOccurs="0"/>
+                <xs:element ref="chrono:chronometricAgeConversionProtocol" minOccurs="0"/>
+                <xs:element ref="chrono:earliestChronometricAge" minOccurs="0"/>
+                <xs:element ref="chrono:earliestChronometricReferenceSystem" minOccurs="0"/>
+                <xs:element ref="chrono:latestChronometricAge" minOccurs="0"/>
+                <xs:element ref="chrono:latestChronometricAgeReferenceSystem" minOccurs="0"/>
+                <xs:element ref="chrono:chronometricAgeUncertaintyInYears" minOccurs="0"/>
+                <xs:element ref="chrono:chronometricAgeUncertaintyMethod" minOccurs="0"/>
+                <xs:element ref="chrono:materialDated" minOccurs="0"/>
+                <xs:element ref="chrono:materialDatedID" minOccurs="0"/>
+                <xs:element ref="chrono:materialDatedRelationship" minOccurs="0"/>
+                <xs:element ref="chrono:chronometricAgeDeterminedBy" minOccurs="0"/>
+                <xs:element ref="chrono:chronometricAgeDeterminedDate" minOccurs="0"/>
+                <xs:element ref="chrono:chronometricAgeReferences" minOccurs="0"/>
+                <xs:element ref="chrono:chronometricAgeRemarks" minOccurs="0"/>
+            </xs:all>
+        </xs:complexType>
+    </xs:element>    
 </xs:schema>

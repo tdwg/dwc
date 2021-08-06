@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema version="0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+<xs:schema 
+    version="2021-07-15" 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
     targetNamespace="http://rs.tdwg.org/dwc/dwcrecord/"
     xmlns:dwr="http://rs.tdwg.org/dwc/dwcrecord/"
     xmlns:dwc="http://rs.tdwg.org/dwc/terms/">
-    <xs:import namespace="http://rs.tdwg.org/dwc/terms/" schemaLocation="tdwg_dwc_class_terms.xsd"/>
+    <xs:import 
+       namespace="http://rs.tdwg.org/dwc/terms/" 
+       schemaLocation="tdwg_dwc_class_terms.xsd"/>
         
     <xs:annotation>
         <xs:documentation>
-            This schema defines a container for all darwin core classes with no notion of a record per se.
-            All classes are treated equally.
+            This schema defines a container for all Darwin Core classes with no notion 
+            of a record per se. All classes are treated equally.
         </xs:documentation>
     </xs:annotation>
     
@@ -19,5 +23,4 @@
             </xs:sequence>
         </xs:complexType>
     </xs:element>
-    
 </xs:schema>
