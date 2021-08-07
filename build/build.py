@@ -212,16 +212,32 @@ class DwcDigester(object):
         class_group["terms"] = []
         class_group["namespace"] = None
 
+        addedUseWithIRI = False
         for term in self.versions(): # sequence of the terms file used as order
             term_data = self.get_term_definition(term['term_iri'])
-            # new class encountered
+            test = term['term_iri']
+            print(f'{test=}')
             if term_data["rdf_type"] == "http://www.w3.org/2000/01/rdf-schema#Class":
+                # new class encountered
                 # store previous section in template_data
                 template_data.append(class_group)
                 #start new class group
                 class_group = term_data
                 class_group["terms"] = []
                 in_class = term_data["label"] # check on the class working in
+            elif term['term_iri']=='http://purl.org/dc/terms/language':
+                # Vulnerable to ordering terms in term_versions.csv, but...
+                # This is the first row of dwciri terms
+                # store previous section in template_data
+                print(f'{term=}\n{term_data=}')
+                template_data.append(class_group)
+                #start a class group for UseWithIRI
+                class_group = {"label":"UseWithIRI"}
+                class_group["terms"] = []
+                in_class = "UseWithIRI" # check on the class working in
+                addedUseWithIRI = True
+                class_group['terms'].append(term_data)
+                print(f'{class_group=}')
             else:
                 class_group['terms'].append(term_data)
         # save the last class to template_data
