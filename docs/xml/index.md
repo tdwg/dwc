@@ -43,6 +43,10 @@ This document does not provide guidelines for encoding Darwin Core in RDF/XML. N
 
 All sections of this document are normative, except for sections that are explicitly marked as non-normative.
 
+#### 1.1.1 RFC 2119 key words
+
+The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to be interpreted as described in [RFC 2119](https://tools.ietf.org/html/rfc2119).
+
 ### 1.2 Audience
 
 This document is targeted toward those who wish to use or construct application schemas using Darwin Core terms in XML. It includes explanations of existing schemas such as [Simple Darwin Core](../simple/) and how to build new schemas to meet specific models of information.
@@ -51,26 +55,25 @@ This document is targeted toward those who wish to use or construct application 
 
 ### 2.1 XML schema
 
-Implementors should base their XML applications on [XML Schemas](http://www.w3.org/XML/Schema) rather than _XML DTDs_. Approaches based on _XML Schemas_ are more flexible and are more easily re-used within other XML applications.
+Implementors SHOULD base their XML applications on [XML Schemas](http://www.w3.org/XML/Schema) rather than _XML DTDs_. Approaches based on _XML Schemas_ are more flexible and are more easily re-used within other XML applications.
 
 ### 2.2 XML namespaces
 
-Implementors should use [XML Namespaces](http://www.w3.org/TR/1999/REC-xml-names-19990114/) to uniquely identify elements. Darwin Core namespaces are defined in the [Darwin Core Namespace Policy](../../namespace/), while Dublin Core namespaces are defined in the [DCMI Namespace Recommendation](http://dublincore.org/documents/dcmi-namespace/).
+Implementors MUST use [XML Namespaces](http://www.w3.org/TR/1999/REC-xml-names-19990114/) to uniquely identify elements. Darwin Core namespaces are defined in the [Darwin Core Namespace Policy](../../namespace/), while Dublin Core namespaces are defined in the [DCMI Namespace Recommendation](http://dublincore.org/documents/dcmi-namespace/).
 
 ### 2.3 Abstract model
 
 The Darwin Core follows the [Dublin Core Metadata Initiative Abstract Model](http://dublincore.org/documents/abstract-model/) except that the Darwin Core _record_ is roughly equivalent to the Dublin Core _resource_.
 
-- Darwin Core terms are either `classes` or `properties`.
-- Each `property` has at most one `class` as its domain (describes no more than one `class`).
-- A `Darwin Core record` is made up of zero or more `classes` and one or more `properties` with their associated `values`.
-- Each `value` is a literal string.
+- Darwin Core terms MUST be either `classes` or `properties`.
+- A `Darwin Core record` MUST be made up of zero or more `classes` and one or more `properties` with their associated `values`.
+- Each `value` MUST be a literal string.
 - The `values` of `properties` within a `Darwin Core record` describe that record.
-- A `Darwin Core record` must include all required `properties`, if any, and their associated `values`.
+- A `Darwin Core record` MUST include all required `properties`, if any, and their associated `values`.
 
 ### 2.4 Properties and values
 
-Darwin Core follows the guidelines for expressing [Dublin Core metadata using XML](http://dublincore.org/documents/dc-xml/) except in that Darwin Core implementors should encode `properties` as XML elements and `values` as the content of those elements instead of having each property contain a value representation and its associated value. The name of the XML element should be an XML qualified name (QName), which associates the value given in the `Term name` attribute in the [Darwin Core Terms](../../terms/) recommendation with the appropriate namespace name. For example, use:
+Darwin Core follows the guidelines for expressing [Dublin Core metadata using XML](http://dublincore.org/documents/dc-xml/) except in that Darwin Core implementors MUST encode `properties` as XML elements and `values` as the content of those elements instead of having each property contain a value representation and its associated value. The name of the XML element MUST be an XML qualified name (QName), which associates the value given in the `Term name` attribute in the [Darwin Core Terms](../../terms/) recommendation with the appropriate namespace name. For example, use:
 
 ```xml
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
@@ -88,13 +91,13 @@ rather than:
 
 ### 2.5 Null values
 
-Elements for which the value is null should be omitted from the document or explicitly coded using the attribute `xsi:nil="true"`.
+Elements for which the value is null SHOULD be omitted from the document or explicitly coded using the attribute `xsi:nil="true"`.
 
 ```xml
 <dwc:locality xsi:nil="true"/>
 ```
 
-Do not use an empty string - an element with no content:
+An empty string - an element with no content - MUST NOT be used:
 
 ```xml
 <dwc:locality></dwc:locality>
@@ -148,28 +151,28 @@ Following is a brief example of an XML document for a single specimen complying 
 
 ### 2.7 Classes and containment
 
-Many Darwin Core terms (`properties`) are defined as being associated with another term (a `class`). For example, [`scientificName`](http://rs.tdwg.org/dwc/terms/scientificName) and [`Taxon`](http://rs.tdwg.org/dwc/terms/Taxon) are both Darwin Core terms, but `scientificName` is a property organized within the `Taxon` class. When constructing schemas that take advantage of classes in structures, implementors are encouraged to maintain the property/class organization for the terms whenever possible (refer to the grouping of the term within a class in the [Quick Reference Guide](../../terms/). To promote reuse, Darwin Core provides a set of xml schemas to use as the basis of additional schemas:
+Many Darwin Core terms (`properties`) are defined as being associated with another term (a `class`). For example, [`scientificName`](http://rs.tdwg.org/dwc/terms/scientificName) and [`Taxon`](http://rs.tdwg.org/dwc/terms/Taxon) are both Darwin Core terms, but `scientificName` is a property organized within the `Taxon` class. When constructing schemas that take advantage of classes in structures, implementors SHOULD maintain the property/class organization for the terms whenever possible (refer to the grouping of the term within a class in the [Quick Reference Guide](../../terms/). To promote reuse, Darwin Core provides a set of xml schemas to use as the basis of additional schemas:
 
 - [Terms XML Schema](tdwg_dwcterms.xsd) - property term definitions as typed global elements and named groups for all terms for a given class to be referenced. The schema makes use of substitution groups `anyClass`, `anyProperty`, `anyIdentifier` and `anyXYZTerm` for each class, e.g. `anyTaxonTerm`. This is the schema upon which the [Simple Darwin Core XML Schema](tdwg_dwc_simple.xsd) is based.
 - [Class Terms XML Schema](tdwg_dwc_class_terms.xsd) - class term definitions as typed global elements with subelements referencing all corresponding property terms via their substitution group.
 
-It is encouraged to use classes in a normalized way to avoid deep nesting. An [XML schema](tdwg_dwc_classes.xsd) is provided to freely mix any Darwin Core Class in a global list and allow them to reference each other using the respective class identifier terms.
+Classes SHOULD be used in a normalized way to avoid deep nesting. An [XML schema](tdwg_dwc_classes.xsd) is provided to freely mix any Darwin Core Class in a global list and allow them to reference each other using the respective class identifier terms.
 
 #### 2.7.1 Normalized classes examples (non-normative)
 
-Following is an example of using a normalized class-based schema to represent two related specimen occurrences from one Event. In this example a Western garter snake collected by Gordon W Gullion in 1949 was found to have eaten a Coastal giant salamander. Note that you can reuse the event definition here by referring to it via eventID:
+Following is an example of using a normalized class-based schema to represent two related specimen occurrences from one Event. In this example a Western garter snake collected by Gordon W Gullion in 1949 was found to have eaten a Coastal giant salamander. Note the reuse of class instances by referring to the identifiers declared in the instances of those classes:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <dwr:DarwinRecordSet xmlns:dwr="http://rs.tdwg.org/dwc/dwcrecord/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://rs.tdwg.org/dwc/dwcrecord/  http://rs.tdwg.org/dwc/xsd/tdwg_dwc_classes.xsd">
    <dwc:Occurrence>
+      <dwc:occurrenceID>http://arctos.database.museum/guid/MVZ:Herp:51568?seid=525813</dwc:occurrenceID>
       <dcterms:type>PhysicalObject</dcterms:type>
+      <dwc:basisOfRecord>PreservedSpecimen</dwc:basisOfRecord>
       <dwc:institutionCode>MVZ</dwc:institutionCode>
       <dwc:collectionCode>Amphibian and reptile specimens</dwc:collectionCode>
       <dwc:catalogNumber>MVZ:Herp:51568</dwc:catalogNumber>
       <dwc:recordedBy>Gordon W. Gullion</dwc:recordedBy>
-      <dwc:occurrenceID>http://arctos.database.museum/guid/MVZ:Herp:51568?seid=525813</dwc:occurrenceID>
-      <dwc:basisOfRecord>PreservedSpecimen</dwc:basisOfRecord>
       <dwc:organismID>http://arctos.database.museum/guid/MVZ:Herp:51568</dwc:organismID>
       <dwc:eventID>525813</dwc:eventID>
       <dwc:associatedMedia>http://arctos.database.museum/MediaSearch.cfm?collection_object_id=10513964</dwc:associatedMedia>
@@ -208,13 +211,13 @@ Following is an example of using a normalized class-based schema to represent tw
       <dwc:specificEpithet>elgans</dwc:specificEpithet>
    </dwc:Taxon>
    <dwc:Occurrence>
+      <dwc:occurrenceID>http://arctos.database.museum/guid/MVZ:Herp:51500?seid=670405</dwc:occurrenceID>
       <dcterms:type>PhysicalObject</dcterms:type>
+      <dwc:basisOfRecord>PreservedSpecimen</dwc:basisOfRecord>
       <dwc:institutionCode>MVZ</dwc:institutionCode>
       <dwc:collectionCode>Amphibian and reptile specimens</dwc:collectionCode>
       <dwc:catalogNumber>MVZ:Herp:51500</dwc:catalogNumber>
       <dwc:recordedBy>Gordon W. Gullion</dwc:recordedBy>
-      <dwc:occurrenceID>http://arctos.database.museum/guid/MVZ:Herp:51500?seid=670405</dwc:occurrenceID>
-      <dwc:basisOfRecord>PreservedSpecimen</dwc:basisOfRecord>
       <dwc:eventID>525813</dwc:eventID>
       <dwc:associatedMedia>http://arctos.database.museum/MediaSearch.cfm?collection_object_id=10513964</dwc:associatedMedia>
       <dwc:associatedOccurrences>"found as stomach contents of":"http://arctos.database.museum/guid/MVZ:Herp:51568?seid=525813"</dwc:associatedOccurrences>
