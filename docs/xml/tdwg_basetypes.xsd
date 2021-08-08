@@ -13,6 +13,7 @@
 <!-- Schema                                                               -->
 <!-- ==================================================================== -->
 <xs:schema 
+    version="2021-07-15"
 	xmlns:xs="http://www.w3.org/2001/XMLSchema"
 	elementFormDefault="unqualified" version="0.5">
 
@@ -76,13 +77,14 @@
         <xs:simpleType name="dateTimeISO">
           <xs:annotation>
             <xs:documentation xml:lang="en">
-              The date and time expressed in a way conforming to a subset of ISO 8601. Meant to be exactly the same as DateTimeISO defined in ABCD.
+              The date and time expressed in a way conforming to a subset of ISO 8601. 
+              Meant to be exactly the same as DateTimeISO defined in ABCD.
             </xs:documentation>
           </xs:annotation>
           <xs:restriction base="xs:string">
-            <xs:pattern value="\d\d\d\d(\-(0[1-9]|1[012])(\-((0[1-9])|1\d|2\d|3[01])(T(0\d|1\d|2[0-3])(:[0-5]\d){0,2})?)?)?|\-\-(0[1-9]|1[012])(\-(0[1-9]|1\d|2\d|3[01]))?|\-\-\-(0[1-9]|1\d|2\d|3[01])">
+            <xs:pattern 
+               value="\d\d\d\d(\-(0[1-9]|1[012])(\-((0[1-9])|1\d|2\d|3[01])(T(0\d|1\d|2[0-3])(:[0-5]\d){0,2})?)?)?|\-\-(0[1-9]|1[012])(\-(0[1-9]|1\d|2\d|3[01]))?|\-\-\-(0[1-9]|1\d|2\d|3[01])">
             </xs:pattern>
           </xs:restriction>
        </xs:simpleType>
-
 </xs:schema>
