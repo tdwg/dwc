@@ -205,7 +205,6 @@ http://rs.tdwg.org/dwc/terms/relationshipOfResource
 http://rs.tdwg.org/dwc/terms/relationshipAccordingTo
 http://rs.tdwg.org/dwc/terms/relationshipEstablishedDate
 http://rs.tdwg.org/dwc/terms/relationshipRemarks
-http://rs.tdwg.org/dwc/terms/attributes/UseWithIRI
 http://purl.org/dc/terms/language
 http://rs.tdwg.org/dwc/iri/inDescribedPlace
 http://rs.tdwg.org/dwc/iri/identifiedBy

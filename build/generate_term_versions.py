@@ -119,6 +119,7 @@ for row_index,row in accumulated_frame.iterrows():
             normative_doc_row.append(row[column_mapping['accum']])
     normative_doc_list.append(normative_doc_row)
 
+''' NO LONGER NEEDED FOR HANDLING OF IRI VALUED TERMS
 # special handling for http://rs.tdwg.org/dwc/terms/attributes/UseWithIRI. Eventually we want to eliminate this.
 use_with_iri_row = ['http://rs.tdwg.org/dwc/terms/attributes/UseWithIRI-2017-10-06',
   'UseWithIRI',
@@ -135,6 +136,7 @@ use_with_iri_row = ['http://rs.tdwg.org/dwc/terms/attributes/UseWithIRI-2017-10-
   'not in ABCD',
   '']
 normative_doc_list.append(use_with_iri_row)
+'''
 
 # Turn list of lists into dataframe
 normative_doc_df = pd.DataFrame(normative_doc_list, columns = column_headers)
