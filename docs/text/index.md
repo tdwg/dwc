@@ -35,7 +35,7 @@ Bibliographic citation
 
 ## 1 Introduction
 
-This document provides guidelines for formatting and sharing [Darwin Core terms](http://rs.tdwg.org/dwc/terms) in _fielded text_ formats, such as one or more comma separated value (CSV) files. Data conforming to the [Simple Darwin Core](../simple/) (CSV format and having the first row include Darwin Core standard term names) MAY be shared in a single file, while a non-standard text file MAY be understood using an [XML](http://www.w3.org/XML/) metafile to describe its contents and formatting.
+This document provides guidelines for formatting and sharing [Darwin Core terms](http://rs.tdwg.org/dwc/terms) in _fielded text_ formats, such as one or more comma separated value (CSV) files. Data conforming to the [Simple Darwin Core](../simple/) (CSV format and having the first row include Darwin Core standard term names) MAY be shared in a single file, while a non-standard text file MAY be understood using an [XML](http://www.w3.org/XML/) metafile to describe its contents and formatting. A [Darwin Core Archive](https://ipt.gbif.org/manual/en/ipt/2.5/dwca-guide) is an example of an implementation of the Darwin Core Text recommendation.
 
 ![Usage](usage.png)
 
