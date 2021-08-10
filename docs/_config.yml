@@ -30,10 +30,10 @@ navbar:
       href: rdf/
     - text: XML
       href: xml/
-    - text: Questions & Answers
-      href: https://github.com/tdwg/dwc-qa/blob/master/README.md
     - text: Namespace policy
       href: namespace/
+    - text: Questions & Answers (separate site)
+      href: https://github.com/tdwg/dwc-qa/blob/master/README.md
   right:
   - text: GitHub
     href: https://github.com/tdwg/dwc
