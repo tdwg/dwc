@@ -5,19 +5,35 @@ url: "https://dwc.tdwg.org"
 navbar:
   left:
   - text: Terms
-    href: terms/
+    menu:
+    - text: Darwin Core
+      href: list/
+    - text: Establishment Means
+      href: https://dwc.tdwg.org/em/
+    - text: Degree of Establishment
+      href: https://dwc.tdwg.org/doe/
+    - text: Pathway
+      href: https://dwc.tdwg.org/pw/
+    - text: Chronometric Age
+      href: https://tdwg.github.io/chrono/list/
   - text: Guides
     menu:
+    - text: Darwin Core Quick Reference
+      href: terms/
+    - text: Chronometric Age Quick Reference
+      href: https://tdwg.github.io/chrono/terms/
     - text: Simple Darwin Core
       href: simple/
-    - text: Text
+    - text: Text (Darwin Core Archive)
       href: text/
-    - text: XML
-      href: xml/
     - text: RDF
       href: rdf/
-  - text: Namespace policy
-    href: namespace/
+    - text: XML
+      href: xml/
+    - text: Questions & Answers
+      href: https://github.com/tdwg/dwc-qa/blob/master/README.md
+    - text: Namespace policy
+      href: namespace/
   right:
   - text: GitHub
     href: https://github.com/tdwg/dwc
