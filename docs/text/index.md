@@ -25,7 +25,7 @@ Abstract
 : Guidelines for implementing Darwin Core in Text files.
 
 Contributors
-: Tim Robertson (GBIF), Markus Döring (GBIF), John Wieczorek (MVZ), Renato De Giovanni (CRIA), Dave Vieglais (KUNHM)
+: Tim Robertson (GBIF), Markus Döring (GBIF), John Wieczorek (Darwin Core Maintenance Group), Renato De Giovanni (CRIA), Dave Vieglais (KUNHM), Steve Baskauf (Darwin Core Maintenance Group)
 
 Creator
 : Darwin Core Task Group
@@ -35,11 +35,11 @@ Bibliographic citation
 
 ## 1 Introduction
 
-This document provides guidelines for formatting and sharing [Darwin Core terms](http://rs.tdwg.org/dwc/terms) in _fielded text_ formats, such as one or more comma separated value (CSV) files. Data conforming to the [Simple Darwin Core](../simple/) (CSV format and having the first row include Darwin Core standard term names) can be shared in a single file, while a non-standard text file can be understood using an [XML](http://www.w3.org/XML/) metafile to describe its contents and formatting.
+This document provides guidelines for formatting and sharing [Darwin Core terms](http://rs.tdwg.org/dwc/terms) in _fielded text_ formats, such as one or more comma separated value (CSV) files. Data conforming to the [Simple Darwin Core](../simple/) (CSV format and having the first row include Darwin Core standard term names) MAY be shared in a single file, while a non-standard text file MAY be understood using an [XML](http://www.w3.org/XML/) metafile to describe its contents and formatting. A [Darwin Core Archive](https://ipt.gbif.org/manual/en/ipt/2.5/dwca-guide) is an example of an implementation of the Darwin Core Text recommendation.
 
 ![Usage](usage.png)
 
-More complex structure can be shared in multiple related files. The description of content and relationships between files can be achieved using the metafile. This guideline makes recommendations for the simple case of a _core_ file, upon which Darwin Core _records_ are based, and _extensions_ that are linked to records in that core file. Specifically, extension records have a _many-to-one_ relationship with records in the core file. For example, a core file might contain specimen records, with one specimen per row in the file, while an extension file contains one or more identifications for those specimens, with one identification per row in the extension file, and with an identifier to the specimen for each identification row. This example would allow many identifications to be associated with each specimen.
+More complex structure MAY be shared in multiple related files. The description of content and relationships between files can be achieved using the metafile. This guideline makes recommendations for the simple case of a _core_ file, upon which Darwin Core _records_ are based, and _extensions_, which are linked to records in that core file. Specifically, extension records have a _many-to-one_ relationship with records in the core file. For example, a core file might contain specimen records, with one specimen per row in the file, while an extension file contains one or more identifications for those specimens, with one identification per row in the extension file, and with an identifier to the specimen for each identification row. This example would allow many identifications to be associated with each specimen.
 
 ### 1.1 Status of the content of this document
 
@@ -51,7 +51,7 @@ The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL 
 
 ### 1.2 Simple example metafile content (non-normative)
 
-A simple comma separated values (CSV) data file with the following content:
+A simple comma separated values (CSV) data file named specimens.csv with the following content:
 
 ```csv
 ID,Species,Count
@@ -71,7 +71,7 @@ can be described with the following Darwin Core metafile:
 	<files>
 	    <location>http://data.gbif.org/download/specimens.csv</location>
     	</files>
-    	<field index="0" term="http://rs.tdwg.org/dwc/terms/catalogNumber" />
+    	<field index="0" term="http://rs.tdwg.org/dwc/terms/occurrenceID" />
     	<field index="1" term="http://rs.tdwg.org/dwc/terms/scientificName" />
     	<field index="2" term="http://rs.tdwg.org/dwc/terms/individualCount" />
    	<!-- A constant value has no index, but applies to all rows -->
@@ -80,7 +80,7 @@ can be described with the following Darwin Core metafile:
 </archive>
 ```
 
-These same data could be understood without the metafile if the first row of the CSV file contained the term names:
+These same data could be understood without the metafile if the first row of the CSV file contained Darwin Core term names, such as:
 
 ```csv
 type,institutionCode,collectionCode,catalogNumber,scientificName,individualCount,datasetID
@@ -88,28 +88,19 @@ PhysicalObject,ANSP,PH,123,"Cryptantha gypsophila Reveal & C.R. Broome",12,urn:l
 PhysicalObject,ANSP,PH,124,"Buxbaumia piperi",2,urn:lsid:tim.lsid.tdwg.org:collections:1
 ```
 
-### 1.3 XML versus fielded text
-
-Many resources exist on the web describing the advantages of Extensible Markup Language [XML](http://www.w3.org/XML/) over less structured content such as _fielded text_. The Darwin Core text guide (this document) is not meant to promote the use of fielded text over XML for data exchange, but rather to provide recommendations for how to handle such data files when necessary.
-
-Two scenarios that might benefit from the use of fielded text are:
-
-- The transfer of large numbers of Darwin Core records and related data from one database to another. Typically databases are very efficient at exporting and importing comma separated text files.
-- The description of legacy data existing in a fielded text format, such that it might be automatically understood and loaded into another system. It could be that this system would then serve the data in another format such as XML.
-
 ## 2 Metafile content
 
 The [text metafile schema](tdwg_dwc_text.xsd) provides technical details for the structure of a metafile by defining the elements and attributes necessary to describe the contents and relationships between text files. These elements and attributes, with descriptions and specifications for their use in a metafile, are described in the following table.
 
 ### 2.1 The `<archive>` element
 
-The `<archive>` element is the container for the list of related files (one core and zero or more extensions). The `<archive>` element MUST have one attribute, `metadata`.
+The `<archive>` element is the container for the list of related files (one core and zero or more extensions). The `<archive>` element SHOULD have a `metadata` attribute.
 
 #### 2.1.1 Attributes
 
 Attribute | Description | Required | Default
 --- | --- | --- | ---
-`metadata` | If used, the value MUST be a qualified Uniform Resource Locator (URL) defining the location of a metadata description of the entire archive. The format of the metadata is not prescribed, but a standardized format such as Ecological Metadata Language (EML), Federal Geographic Data Committee (FGDC), or ISO 19115 family is RECOMMENDED. | no |
+`metadata` | If used, the value MUST be a qualified Uniform Resource Locator (URL) defining the location of a metadata description of the entire archive. The format of the metadata is not prescribed, but a standardized format such as Ecological Metadata Language (EML), Federal Geographic Data Committee (FGDC), or a format from the ISO 19115 family is RECOMMENDED. | no |
 
 #### 2.1.2 Elements
 
@@ -124,51 +115,52 @@ Element | Description
 
 Attribute | Description | Required | Default
 --- | --- | --- | ---
-`rowType` | MUST be a Unified Resource Identifier (URI) for the term identifying the class of data represented by each row, for example, <http://rs.tdwg.org/dwc/terms/Occurrence> for Occurrence records or <http://rs.tdwg.org/dwc/terms/Taxon> for Taxon records. Additional classes MAY be defined outside the Darwin Core specification if denoted by a URI. The row type is REQUIRED. For convenience the URIs for classes defined by the Darwin Core are: `Occurrence`: <http://rs.tdwg.org/dwc/terms/Occurrence>, `Event`: <http://rs.tdwg.org/dwc/terms/Event>, `Location`: <http://purl.org/dc/terms/Location>, `GeologicalContext`: <http://purl.org/dc/terms/GeologicalContext>, `Identification`: <http://rs.tdwg.org/dwc/terms/Identification>, `Taxon`: <http://rs.tdwg.org/dwc/terms/Taxon>, `ResourceRelationship`: <http://rs.tdwg.org/dwc/terms/ResourceRelationship>, `MeasurementOrFact`: <http://rs.tdwg.org/dwc/terms/MeasurementOrFact> | yes |
+`rowType` | The row type is REQUIRED and MUST be a Unified Resource Identifier (URI) for the term identifying the class of data represented by each row. Classes MAY be defined outside the Darwin Core specification if denoted by a URI. For convenience the URIs for classes defined by the Darwin Core are: `Occurrence`: <http://rs.tdwg.org/dwc/terms/Occurrence>, `Organism`: <http://rs.tdwg.org/dwc/terms/Organism>, `MaterialSample`: <http://rs.tdwg.org/dwc/terms/MaterialSample>, `Event`: <http://rs.tdwg.org/dwc/terms/Event>, `Location`: <http://purl.org/dc/terms/Location>, `GeologicalContext`: <http://purl.org/dc/terms/GeologicalContext>, `Identification`: <http://rs.tdwg.org/dwc/terms/Identification>, `Taxon`: <http://rs.tdwg.org/dwc/terms/Taxon>, `ResourceRelationship`: <http://rs.tdwg.org/dwc/terms/ResourceRelationship>, `MeasurementOrFact`: <http://rs.tdwg.org/dwc/terms/MeasurementOrFact>, `ChronometricAge`: <http://rs.tdwg.org/chrono/terms/ChronometricAge>,  | yes |
 `fieldsTerminatedBy` | Specifies the delimiter between fields. Typical values MAY be `,` or `\t` for CSV or Tab files respectively. | no | `,`
 `linesTerminatedBy` | Specifies the row separator character. | no | `\n`
 `fieldsEnclosedBy` | Specifies the character used to enclose (mark the start and end of) each field. CSV files frequently use the double quote character (`"`), which is the default value if none is explicitly provided. Note that a comma separated value file that has commas within the content of any field MUST have an enclosing character. | no | `"`
-`encoding` | Specifies the [character encoding](http://en.wikipedia.org/wiki/Character_encoding) for the data file. The encoding is extremely important, but often ignored. The most frequently used encodings are: `UTF-8`: 8-bit Unicode Transformation Format, `UTF-16`: 16-bit Unicode Transformation Format, `ISO-8859-1`: commonly known as "Latin-1" and a common default on systems configured for a single western European language, `Windows-1252`: commonly known as "WinLatin" and a common default of legacy versions of Microsoft Windows based operating systems. | no | `UTF-8`
-`ignoreHeaderLines` | Specifies the number lines to ignore from the beginning of the file. This MAY be used to ignore files with column headings or preamble comments for example. | no | `0`
-`dateFormat` | When verbatim dates are consistent in format, this field MAY be used to indicate the format represented. It is RECOMMENDED to use the date, dateTime and time for field formats wherever possible, but where verbatim dates are required, a format MAY be specified here. This should be considered a 'hint' for consumers. It is RECOMMENDED that consumers support the minimum combinations of `DD` `MM` and `YYYY` with the separators `/` and `-`. Examples: `DDMMYYYY`: for dates of the form 21121978, `DD-MM-YYYY`: for dates of the form 21-12-1978, `MMDDYYYY`: for dates of the form 12211978, `MM-DD-YYYY`: for dates of the form 12-21-1978, `YYYYMMDD`: for dates of the form 19781221. | no | `YYYY-MM-DD`
+`encoding` | Specifies the [character encoding](https://en.wikipedia.org/wiki/Character_encoding) for the data file. The encoding is extremely important, but often ignored. The most frequently used encodings are: `UTF-8`: 8-bit Unicode Transformation Format, `UTF-16`: 16-bit Unicode Transformation Format, `ISO-8859-1`: commonly known as "Latin-1" and a common default on systems configured for a single western European language, `Windows-1252`: commonly known as "WinLatin" and a common default of legacy versions of Microsoft Windows-based operating systems. | no | `UTF-8`
+`ignoreHeaderLines` | Specifies the number lines to ignore from the beginning of the file. This MAY be used to ignore files with column headings or preamble comments. | no | `0`
+`dateFormat` | If date fields throughout the entire dataset follow a consistent format, this format MAY be specified by the `dateFormat` parameter. This SHOULD be considered a 'hint' for consumers in cases where the date fields do not follow the RECOMMENDED ISO 8601:2019-1 specification. The format for this parameter MUST be a combination of year (`YYYY`), month (`MM`), and day (`DD`) indicators in combination with a separator (`/` or `-`). Examples: `DDMMYYYY` for dates of the form 21121978, `DD-MM-YYYY` for dates of the form 21-12-1978, `MMDDYYYY` for dates of the form 12211978, `MM-DD-YYYY` for dates of the form 12-21-1978, `YYYYMMDD` for dates of the form 19781221. | no | `YYYY-MM-DD`
 
 #### 2.2.2 Elements
 
 Element | Description
 --- | ---
-`<files>` | `<core>` or `<extension>` element MUST contain one `<files>` element to locate the data being described.
-`<id>` | If extensions are being used, the `<core>` MUST contain an <id> element that indicates the identifier for a record.
-`<coreid>` | If extensions are being used, the `<extension>` element MUST contain a `<coreid>` element that indicates the column in the extension file that contains the core record identifier (the matching `<id>` in the core file).
-`<field>` | A `<core>` or `<extension>` element MUST contain one or more <field> elements, each representing a 'column' in the row.
+`<files>` | A `<core>` element MUST contain one `<files>` element to locate the data being described. An `<extension>` element, if present, MUST also contain one `<files>` element.
+`<id>` | If extensions are being used, the `<core>` MUST contain an `<id>` element, which indicates the identifier for a record.
+`<coreid>` | If an extension is used, the `<extension>` element MUST contain a `<coreid>` element, which indicates the column in the extension file that contains the core record identifier (the value that is supposed to match the `<id>` in the core file).
+`<field>` | A `<core>` or `<extension>` element MUST contain one or more `<field>` elements, each representing a 'column' in the row.
 
 ### 2.3 `<files>` element
 
-The files element MUST contain one or more <location> elements, each defining where a file resides. Each core or extension entity can be composed from one or more files. If an entity has data in more than one file, use the `<location>` element multiple times, once for each file that makes up the entity.
+The `<files>` element MUST contain one or more `<location>` elements, each defining where a file resides. Each `<core>` or `<extension>` entity MAY be composed from one or more files. If an entity has data in more than one file, the `<location>` element MUST be present once for each distinct `<file>` that makes up the entity.
 
 #### 2.3.1 Elements
 
 Element | Description
 --- | ---
-`<location>` | Specifies the location of the file being described, which MUST take one of the following forms: 1) a web accessible URL such as `http://www.gbif.org/data/specimen.csv` or `ftp://ftp.gbif.org/tim/specimen.txt`, 2) a filepath relative to the location of the metafile such as `specimen.txt`, `./specimen.txt`, `data/specimen.txt`.
+`<location>` | Specifies the location of the `<file>` being described. The `<location>` element MUST take one of the following forms: 1) a web accessible URL such as `http://www.gbif.org/data/specimen.csv` or `ftp://ftp.gbif.org/tim/specimen.txt`, or 2) a file path relative to the location of the metafile such as `specimen.txt`, `./specimen.txt`, `./data/specimen.txt`.
 
 ### 2.4 The `<field>` element
 
-The field element is used to specify the location and content of data within a file. There MUST be one field element for every term being shared for the entity, whether explicitly or through the use of a default value for all rows in the file.
+The `<field>` element is used to specify the location and content of data within a `<file>`. There MUST be one `<field>` element for every term being shared for the entity, whether explicitly or through the use of a `<default>` value for all rows in the `<file>`.
 
 #### 2.4.1 Attributes
 
 Attribute | Description | Required | Default
 --- | --- | --- | ---
-`index` | Specifies the position of the column in the row. The first column has an index of 0, the second column 1, etc. If no column index is specified, then the term and the default MAY be used to define a constant value for all rows. | no |
-`term` | MUST be a Unified Resource Identifier (URI) for the term represented by this field. For example, a field containing the scientific name would have `term="http://rs.tdwg.org/dwc/terms/scientificName"`. Terms outside of the Darwin Core specification MAY be used, such as those from the Dublin Core Metadata Initative, for example, `dcterms:modified` would be `term="http://purl.org/dc/terms/modified"`. | yes |
-`default` | Specifies value to use if one is not supplied for the field in a given row. If no index is supplied, the default MAY be used to define a constant for all rows for a field that is not in the data file. | no |
-`vocabulary` | When present, MUST be a Unified Resource Identifier (URI) for a vocabulary that the source values for this field are based on. The URI ideally should resolve to some machine readable definition like SKOS, RDF or at least some simple text or html file often found for ISO or RFC standards. For example <http://rs.gbif.org/vocabulary/gbif/nomenclatural_code.xml>, <http://www.ietf.org/rfc/rfc3066.txt> or <http://www.iso.org/iso/list-en1-semic-3.txt>. | no |
+`index` | Specifies the position of the column in the row. The first column has an index of 0, the second column has an index of 1, etc. If no column index is specified, the term and a default constant value for it MAY be defined for all rows. | no |
+`term` | MUST be a Unified Resource Identifier (URI) for the term represented by this `<field>`. For example, a column containing the scientific name would have `term="http://rs.tdwg.org/dwc/terms/scientificName"`. Terms outside of the Darwin Core specification, such as those from the Dublin Core Metadata Initative, MAY be used. For example, `dcterms:modified` would be `term="http://purl.org/dc/terms/modified"`. | yes |
+`default` | Specifies a value to use if one is not supplied for the `<field>` in a given row. If no index is supplied for a given `<field>`, the `<default>` MAY be used to define a constant for all rows for that `<field>`. | no |
+`vocabulary` | When present, MUST be a Unified Resource Identifier (URI) for a vocabulary that the source values for this `<field>` are based on. The URI SHOULD resolve to some machine readable definition such as SKOS or RDF, or a simple text or HTML file such as often found for ISO or RFC standards. For example <http://rs.gbif.org/vocabulary/gbif/nomenclatural_code.xml>, <http://www.ietf.org/rfc/rfc3066.txt> or <http://www.iso.org/iso/list-en1-semic-3.txt>. | no |
 
-## 3 Implementation guide
+## 3 Implementation guide (non-normative)
+A [Darwin Core Archive](https://ipt.gbif.org/manual/en/ipt/2.5/dwca-guide) is an example of an implementation of the Darwin Core Text recommendation.
 
 ### 3.1 Extension example (non-normative)
 
-The following example illustrates the use of extensions. In this example there are three files in the archive, all of which are located in the same directory as the metafile. The whales.txt file acts as a core file of Taxon records. The whales.txt file is extended by two other files, types.txt and distribution.txt. The types.txt file contains records of a type specified in an external definition at <http://http://rs.gbif.org/terms/1.0/Types> and consists of Dublin Core and Darwin Core terms, while the distribution.txt file contains records of a type specified at <http://http://rs.gbif.org/terms/1.0/Distribution> and consists of Darwin Core terms plus an additional term for threatStatus. Both extension files are related to the core file by the taxonNameID fields. Presumably, this archive contains information about whale species, type specimen records for those species, and lists of countries and the threat status for those species.
+The following example illustrates the use of extensions. In this example there are three files in the archive, all of which are located in the same directory as the metafile. The whales.txt file acts as a core file of Taxon records. The whales.txt file is extended by two other files, types.txt and distribution.txt. The types.txt file contains records specified in an external definition at <http://rs.gbif.org/terms/1.0/Types> and consists of Dublin Core and Darwin Core terms, while the distribution.txt file contains records specified at <http://rs.gbif.org/terms/1.0/Distribution> and consists of Darwin Core terms plus an additional term for threatStatus. Both extension files are related to the core file by the taxonNameID fields. This archive contains information about whale species, type specimen records for those species, and lists of countries and the threat status for those species in those countries.
 
 ![Extension](extension.png)
 
@@ -220,7 +212,7 @@ The following example illustrates the use of extensions. In this example there a
 
 ### 4.1 MySQL
 
-It is very easy to produce fielded text using the `SELECT INTO` outfile command from MySQL. The encoding of the resulting file will depend on the server variables and collations used, and might need to be modified before the operation is done. Note that MySQL will export `NULL` values as `\N` by default. Use the `IFNULL()` function as shown in the following example to avoid this.
+It is very easy to produce _fielded text_ using the `SELECT INTO … outfile` command from MySQL. The encoding of the resulting file will depend on the server variables and collations used, and might need to be modified before the operation is done. Note that MySQL will export `NULL` values as `\N` by default. Use the `IFNULL()` function as shown in the following example to avoid this.
 
 ```sql
 SELECT
