@@ -16,7 +16,7 @@
 __author__ = "John Wieczorek"
 __copyright__ = "Copyright 2021 Rauthiflor LLC"
 __filename__ = 'build_extension.py'
-__version__ = f'{__filename__} 2021-08-16T17:29-03:00'
+__version__ = f'{__filename__} 2021-08-17T20:40-03:00'
 
 import io
 import os
@@ -513,7 +513,7 @@ def main():
         s += f'python {__filename__}'
         s += ' -x ./occurrence_core.tmpl'
         s += ' -i ./occurrence_core_list.csv'
-        s += ' -o ../ext/dwc_occurrence_2021-08_16.xml'
+        s += ' -o ../ext/dwc_occurrence_2021-08-16.xml'
         s += ' -t ../vocabulary/term_versions.csv'
         print(s)
         return
