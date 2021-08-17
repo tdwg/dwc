@@ -1,0 +1,9 @@
+group,iri,type,thesaurus,description,comments,examples,required
+ResourceRelationship,http://rs.tdwg.org/dwc/terms/resourceRelationshipID,,,,,,
+ResourceRelationship,http://rs.tdwg.org/dwc/terms/resourceID,,,,,,true
+ResourceRelationship,http://rs.tdwg.org/dwc/terms/relationshipOfResourceID,,,,,,
+ResourceRelationship,http://rs.tdwg.org/dwc/terms/relatedResourceID,,,,,,true
+ResourceRelationship,http://rs.tdwg.org/dwc/terms/relationshipOfResource,,,,,,
+ResourceRelationship,http://rs.tdwg.org/dwc/terms/relationshipAccordingTo,,,,,,
+ResourceRelationship,http://rs.tdwg.org/dwc/terms/relationshipEstablishedDate,,,,,,
+ResourceRelationship,http://rs.tdwg.org/dwc/terms/relationshipRemarks,,,,,,

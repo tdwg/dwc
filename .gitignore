@@ -10,3 +10,6 @@ __pycache__/
 
 # Jekyll
 docs/_site/*
+
+# All built extension xml files
+ext/
