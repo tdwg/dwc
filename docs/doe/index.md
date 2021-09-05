@@ -120,11 +120,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://r
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2020-10-13</td>
+			<td>2021-09-01</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwcdoe/values/version/d001-2020-10-13">http://rs.tdwg.org/dwcdoe/values/version/d001-2020-10-13</a></td>
+			<td><a href="http://rs.tdwg.org/dwcdoe/values/version/d001-2021-09-01">http://rs.tdwg.org/dwcdoe/values/version/d001-2021-09-01</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -132,11 +132,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://r
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>Not transported beyond limits of native range</td>
+			<td>Not transported beyond limits of native range.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Considered native and naturally occuring. See also Blackburn et al. 2011 <a href="https://doi.org/10.1016/j.tree.2011.03.023">https://doi.org/10.1016/j.tree.2011.03.023</a> category A</td>
+			<td>Considered native and naturally occurring. See also "category A" in Blackburn et al. 2011. <a href="https://doi.org/10.1016/j.tree.2011.03.023">https://doi.org/10.1016/j.tree.2011.03.023</a></td>
 		</tr>
 		<tr>
 			<td>Controlled value</td>
@@ -166,11 +166,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://r
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2020-10-13</td>
+			<td>2021-09-01</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwcdoe/values/version/d002-2020-10-13">http://rs.tdwg.org/dwcdoe/values/version/d002-2020-10-13</a></td>
+			<td><a href="http://rs.tdwg.org/dwcdoe/values/version/d002-2021-09-01">http://rs.tdwg.org/dwcdoe/values/version/d002-2021-09-01</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -178,15 +178,15 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://r
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>Individuals in captivity or quarantine (i.e. individuals provided with conditions suitable for them, but explicit measures of containment are in place)</td>
+			<td>Individuals in captivity or quarantine (i.e., individuals provided with conditions suitable for them, but explicit measures of containment are in place).</td>
 		</tr>
 		<tr>
 			<td>Usage</td>
-			<td>Only for cases where specific actions have been taken place to prevent escape of individuals or propagules</td>
+			<td>Only for cases where specific actions have been taken place to prevent escape of individuals or propagules.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>See also Blackburn et al. 2011 <a href="https://doi.org/10.1016/j.tree.2011.03.023">https://doi.org/10.1016/j.tree.2011.03.023</a> category B1</td>
+			<td>See also "category B1" in Blackburn et al. 2011. <a href="https://doi.org/10.1016/j.tree.2011.03.023">https://doi.org/10.1016/j.tree.2011.03.023</a></td>
 		</tr>
 		<tr>
 			<td>Controlled value</td>
@@ -216,11 +216,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://r
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2020-10-13</td>
+			<td>2021-09-01</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwcdoe/values/version/d003-2020-10-13">http://rs.tdwg.org/dwcdoe/values/version/d003-2020-10-13</a></td>
+			<td><a href="http://rs.tdwg.org/dwcdoe/values/version/d003-2021-09-01">http://rs.tdwg.org/dwcdoe/values/version/d003-2021-09-01</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -228,11 +228,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://r
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>Individuals in cultivation (i.e. individuals provided with conditions suitable for them, but explicit measures to prevent dispersal are limited at best)</td>
+			<td>Individuals in cultivation (i.e., individuals provided with conditions suitable for them, but explicit measures to prevent dispersal are limited at best).</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Examples include gardens, parks and farms. See also Blackburn et al. 2011 <a href="https://doi.org/10.1016/j.tree.2011.03.023">https://doi.org/10.1016/j.tree.2011.03.023</a> category B2</td>
+			<td>Examples include gardens, parks and farms. See also "category B2" in Blackburn et al. 2011. <a href="https://doi.org/10.1016/j.tree.2011.03.023">https://doi.org/10.1016/j.tree.2011.03.023</a></td>
 		</tr>
 		<tr>
 			<td>Controlled value</td>
@@ -262,11 +262,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://r
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2020-10-13</td>
+			<td>2021-09-01</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwcdoe/values/version/d004-2020-10-13">http://rs.tdwg.org/dwcdoe/values/version/d004-2020-10-13</a></td>
+			<td><a href="http://rs.tdwg.org/dwcdoe/values/version/d004-2021-09-01">http://rs.tdwg.org/dwcdoe/values/version/d004-2021-09-01</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -274,11 +274,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://r
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>Individuals directly released into novel environment</td>
+			<td>Individuals directly released into novel environment.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>For example, fish stocked for angling, birds for hunting. See also Blackburn et al. 2011 <a href="https://doi.org/10.1016/j.tree.2011.03.023">https://doi.org/10.1016/j.tree.2011.03.023</a> category B3</td>
+			<td>For example, fish stocked for angling, birds for hunting. See also "category B3" in Blackburn et al. 2011. <a href="https://doi.org/10.1016/j.tree.2011.03.023">https://doi.org/10.1016/j.tree.2011.03.023</a></td>
 		</tr>
 		<tr>
 			<td>Controlled value</td>
@@ -308,11 +308,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://r
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2020-10-13</td>
+			<td>2021-09-01</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwcdoe/values/version/d005-2020-10-13">http://rs.tdwg.org/dwcdoe/values/version/d005-2020-10-13</a></td>
+			<td><a href="http://rs.tdwg.org/dwcdoe/values/version/d005-2021-09-01">http://rs.tdwg.org/dwcdoe/values/version/d005-2021-09-01</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -320,11 +320,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://r
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>Individuals released outside of captivity or cultivation in a location, but incapable of surviving for a significant period</td>
+			<td>Individuals released outside of captivity or cultivation in a location, but incapable of surviving for a significant period.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Such as frost tender plants sown or planted in a cold climate. See also Blackburn et al. 2011 <a href="https://doi.org/10.1016/j.tree.2011.03.023">https://doi.org/10.1016/j.tree.2011.03.023</a> category C0</td>
+			<td>For example, frost-tender plants sown or planted in a cold climate. See also "category C0" in Blackburn et al. 2011. <a href="https://doi.org/10.1016/j.tree.2011.03.023">https://doi.org/10.1016/j.tree.2011.03.023</a></td>
 		</tr>
 		<tr>
 			<td>Controlled value</td>
@@ -354,11 +354,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://r
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2020-10-13</td>
+			<td>2021-09-01</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwcdoe/values/version/d006-2020-10-13">http://rs.tdwg.org/dwcdoe/values/version/d006-2020-10-13</a></td>
+			<td><a href="http://rs.tdwg.org/dwcdoe/values/version/d006-2021-09-01">http://rs.tdwg.org/dwcdoe/values/version/d006-2021-09-01</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -366,11 +366,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://r
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>Individuals surviving outside of captivity or cultivation in a location, no reproduction</td>
+			<td>Individuals surviving outside of captivity or cultivation in a location with no reproduction.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Trees planted in the wild for forestry or ornament may come under this category. See also Blackburn et al. 2011 <a href="https://doi.org/10.1016/j.tree.2011.03.023">https://doi.org/10.1016/j.tree.2011.03.023</a> category C1</td>
+			<td>Trees planted in the wild for forestry or ornament may come under this category. See also "category C1" in Blackburn et al. 2011. <a href="https://doi.org/10.1016/j.tree.2011.03.023">https://doi.org/10.1016/j.tree.2011.03.023</a></td>
 		</tr>
 		<tr>
 			<td>Controlled value</td>
@@ -400,11 +400,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://r
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2020-10-13</td>
+			<td>2021-09-01</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwcdoe/values/version/d007-2020-10-13">http://rs.tdwg.org/dwcdoe/values/version/d007-2020-10-13</a></td>
+			<td><a href="http://rs.tdwg.org/dwcdoe/values/version/d007-2021-09-01">http://rs.tdwg.org/dwcdoe/values/version/d007-2021-09-01</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -412,11 +412,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://r
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>Individuals surviving outside of captivity or cultivation in a location, reproduction is occurring, but population not self-sustaining</td>
+			<td>Individuals surviving outside of captivity or cultivation in a location. Reproduction is occurring, but population not self-sustaining.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Offspring are produced, but these either do not survive or are fertile enough to maintain the population. See also Blackburn et al. 2011 <a href="https://doi.org/10.1016/j.tree.2011.03.023">https://doi.org/10.1016/j.tree.2011.03.023</a> category C2</td>
+			<td>Offspring are produced, but these either do not survive or are not fertile enough to maintain the population. See also "category C2" in Blackburn et al. 2011. <a href="https://doi.org/10.1016/j.tree.2011.03.023">https://doi.org/10.1016/j.tree.2011.03.023</a></td>
 		</tr>
 		<tr>
 			<td>Controlled value</td>
@@ -446,11 +446,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://r
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2020-10-13</td>
+			<td>2021-09-01</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwcdoe/values/version/d008-2020-10-13">http://rs.tdwg.org/dwcdoe/values/version/d008-2020-10-13</a></td>
+			<td><a href="http://rs.tdwg.org/dwcdoe/values/version/d008-2021-09-01">http://rs.tdwg.org/dwcdoe/values/version/d008-2021-09-01</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -458,11 +458,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://r
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>Individuals surviving outside of captivity or cultivation in a location, reproduction occurring, and population self-sustaining</td>
+			<td>Individuals surviving outside of captivity or cultivation in a location. Reproduction occurring, and population self-sustaining.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>The population is maintained by reproduction, but is not spreading. See also Blackburn et al. 2011 <a href="https://doi.org/10.1016/j.tree.2011.03.023">https://doi.org/10.1016/j.tree.2011.03.023</a> category C3</td>
+			<td>The population is maintained by reproduction, but is not spreading. See also "category C3" in Blackburn et al. 2011. <a href="https://doi.org/10.1016/j.tree.2011.03.023">https://doi.org/10.1016/j.tree.2011.03.023</a></td>
 		</tr>
 		<tr>
 			<td>Controlled value</td>
@@ -492,11 +492,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://r
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2020-10-13</td>
+			<td>2021-09-01</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwcdoe/values/version/d009-2020-10-13">http://rs.tdwg.org/dwcdoe/values/version/d009-2020-10-13</a></td>
+			<td><a href="http://rs.tdwg.org/dwcdoe/values/version/d009-2021-09-01">http://rs.tdwg.org/dwcdoe/values/version/d009-2021-09-01</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -504,11 +504,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://r
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>Self-sustaining population outside of captivity or cultivation, with individuals surviving a significant distance from the original point of introduction</td>
+			<td>Self-sustaining population outside of captivity or cultivation, with individuals surviving a significant distance from the original point of introduction.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>The population is maintained by reproduction and is spreading. See also Blackburn et al. 2011 <a href="https://doi.org/10.1016/j.tree.2011.03.023">https://doi.org/10.1016/j.tree.2011.03.023</a> category D1</td>
+			<td>The population is maintained by reproduction and is spreading. See also "category D1" in Blackburn et al. 2011. <a href="https://doi.org/10.1016/j.tree.2011.03.023">https://doi.org/10.1016/j.tree.2011.03.023</a></td>
 		</tr>
 		<tr>
 			<td>Controlled value</td>
@@ -538,11 +538,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://r
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2020-10-13</td>
+			<td>2021-09-01</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwcdoe/values/version/d010-2020-10-13">http://rs.tdwg.org/dwcdoe/values/version/d010-2020-10-13</a></td>
+			<td><a href="http://rs.tdwg.org/dwcdoe/values/version/d010-2021-09-01">http://rs.tdwg.org/dwcdoe/values/version/d010-2021-09-01</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -550,11 +550,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://r
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>Self-sustaining population outside of captivity or cultivation, with individuals surviving and reproducing a significant distance from the original point of introduction</td>
+			<td>Self-sustaining population outside of captivity or cultivation, with individuals surviving and reproducing a significant distance from the original point of introduction.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>The population is maintained by reproduction, is spreading, and their progeny is also reproducing and spreading. See also Blackburn et al. 2011 <a href="https://doi.org/10.1016/j.tree.2011.03.023">https://doi.org/10.1016/j.tree.2011.03.023</a> category D2</td>
+			<td>The population is maintained by reproduction, is spreading, and its progeny are also reproducing and spreading. See also "category D2" in Blackburn et al. 2011. <a href="https://doi.org/10.1016/j.tree.2011.03.023">https://doi.org/10.1016/j.tree.2011.03.023</a></td>
 		</tr>
 		<tr>
 			<td>Controlled value</td>
@@ -584,11 +584,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://r
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2020-10-13</td>
+			<td>2021-09-01</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwcdoe/values/version/d011-2020-10-13">http://rs.tdwg.org/dwcdoe/values/version/d011-2020-10-13</a></td>
+			<td><a href="http://rs.tdwg.org/dwcdoe/values/version/d011-2021-09-01">http://rs.tdwg.org/dwcdoe/values/version/d011-2021-09-01</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -596,15 +596,15 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://r
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>Fully invasive species, with individuals dispersing, surviving and reproducing at multiple sites across a greater or lesser spectrum of habitats and extent of occurrence</td>
+			<td>Fully invasive species, with individuals dispersing, surviving and reproducing at multiple sites across a spectrum of habitats and geographic range.</td>
 		</tr>
 		<tr>
 			<td>Usage</td>
-			<td>This term is only used for those invasives with the highest degree of encroachment</td>
+			<td>This term is only used for those invasives with the highest degree of encroachment.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>See also Blackburn et al. 2011 <a href="https://doi.org/10.1016/j.tree.2011.03.023">https://doi.org/10.1016/j.tree.2011.03.023</a> category E</td>
+			<td>See also "category E" in Blackburn et al. 2011. <a href="https://doi.org/10.1016/j.tree.2011.03.023">https://doi.org/10.1016/j.tree.2011.03.023</a></td>
 		</tr>
 		<tr>
 			<td>Controlled value</td>
