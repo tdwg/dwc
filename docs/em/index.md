@@ -115,11 +115,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2020-10-13</td>
+			<td>2021-09-01</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwcem/values/version/e001-2020-10-13">http://rs.tdwg.org/dwcem/values/version/e001-2020-10-13</a></td>
+			<td><a href="http://rs.tdwg.org/dwcem/values/version/e001-2021-09-01">http://rs.tdwg.org/dwcem/values/version/e001-2021-09-01</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -127,11 +127,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>A taxon occurring within its natural range</td>
+			<td>A taxon occurring within its natural range.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>What is considered native to an area varies with the biogeographic history of an area and the local interpretation of what is a "natural range".  </td>
+			<td>What is considered native to an area varies with the biogeographic history of an area and the local interpretation of what is a "natural range".</td>
 		</tr>
 		<tr>
 			<td>Controlled value</td>
@@ -161,11 +161,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2020-10-13</td>
+			<td>2021-09-01</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwcem/values/version/e002-2020-10-13">http://rs.tdwg.org/dwcem/values/version/e002-2020-10-13</a></td>
+			<td><a href="http://rs.tdwg.org/dwcem/values/version/e002-2021-09-01">http://rs.tdwg.org/dwcem/values/version/e002-2021-09-01</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -173,11 +173,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>A taxon re-established by direct introduction by humans into an area which was once part of its natural range, but from where it had become extinct.</td>
+			<td>A taxon re-established by direct introduction by humans into an area that was once part of its natural range, but from where it had become extinct.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Where a taxon has become extirpated from an area where it had naturally occurred it may be returned to that area deliberately with the intension of re-establishing it. </td>
+			<td>Where a taxon has become extirpated from an area where it had naturally occurred it may be returned to that area deliberately with the intension of re-establishing it.</td>
 		</tr>
 		<tr>
 			<td>Controlled value</td>
@@ -207,11 +207,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2020-10-13</td>
+			<td>2021-09-01</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwcem/values/version/e003-2020-10-13">http://rs.tdwg.org/dwcem/values/version/e003-2020-10-13</a></td>
+			<td><a href="http://rs.tdwg.org/dwcem/values/version/e003-2021-09-01">http://rs.tdwg.org/dwcem/values/version/e003-2021-09-01</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -219,11 +219,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>Establishment of a taxon by human agency into an area that is not part of its natural range</td>
+			<td>Establishment of a taxon by human agency into an area that is not part of its natural range.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Organisms can be introduced to novel areas and habitats by human activity, either on purpose or by accident. Humans can also inadvertently create corridors that breakdown natural barriers to dispersal and allow organisms to spread beyond their natural range.</td>
+			<td>Organisms can be introduced to novel areas and habitats by human activity, either on purpose or by accident. Humans can also inadvertently create corridors that break down natural barriers to dispersal and allow organisms to spread beyond their natural range.</td>
 		</tr>
 		<tr>
 			<td>Controlled value</td>
@@ -253,11 +253,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2020-10-13</td>
+			<td>2021-09-01</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwcem/values/version/e004-2020-10-13">http://rs.tdwg.org/dwcem/values/version/e004-2020-10-13</a></td>
+			<td><a href="http://rs.tdwg.org/dwcem/values/version/e004-2021-09-01">http://rs.tdwg.org/dwcem/values/version/e004-2021-09-01</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -265,11 +265,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>Establishment of a taxon specifically with the intention of creating a self-sustaining wild population in an area that is not part of the taxon's natural range</td>
+			<td>Establishment of a taxon specifically with the intention of creating a self-sustaining wild population in an area that is not part of the taxon's natural range.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>In the event of environmental change and habitat destruction a conservation option is to introduce a taxon into an area it did not naturally occur</td>
+			<td>In the event of environmental change and habitat destruction a conservation option is to introduce a taxon into an area it did not naturally occur.</td>
 		</tr>
 		<tr>
 			<td>Controlled value</td>
@@ -345,11 +345,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2020-10-13</td>
+			<td>2021-09-01</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwcem/values/version/e006-2020-10-13">http://rs.tdwg.org/dwcem/values/version/e006-2020-10-13</a></td>
+			<td><a href="http://rs.tdwg.org/dwcem/values/version/e006-2021-09-01">http://rs.tdwg.org/dwcem/values/version/e006-2021-09-01</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -357,7 +357,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The origin of the occurrence of the taxon in an area is obscure</td>
+			<td>The origin of the occurrence of the taxon in an area is obscure.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
