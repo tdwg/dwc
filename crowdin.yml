@@ -1,0 +1,21 @@
+preserve_hierarchy: true
+
+files:
+  - source: /build/terms.tmpl
+    translation: /build/%file_name%.%locale%.tmpl
+    dest: /build/%file_name%.md
+    type: md
+    languages_mapping:
+      locale:
+        ar: ar
+        da: da
+        de-DE: de
+        es-ES: es
+        fr: fr
+        ja: ja
+        nl-NL: nl
+        pt-PT: pt
+        ru: ru
+        uk: uk
+        zh-CN: zh-Hans
+        zh-TW: zh-Hant
