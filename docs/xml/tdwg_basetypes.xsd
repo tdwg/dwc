@@ -15,7 +15,7 @@
 <xs:schema 
     version="2021-07-15"
 	xmlns:xs="http://www.w3.org/2001/XMLSchema"
-	elementFormDefault="unqualified" version="0.5">
+	elementFormDefault="unqualified">
 
 	<!-- ============================================================== -->
 	<!-- Types                                                          -->
