@@ -144,7 +144,7 @@ Following is a brief example of an XML document for a single specimen complying 
         <dwc:geodeticDatum>epdg:4267</dwc:geodeticDatum>
         <dwc:coordinateUncertaintyInMeters>13696</dwc:coordinateUncertaintyInMeters>
         <dwc:eventDate>1911-05-14</dwc:eventDate>
-        <dwc:scientificName><Perognathus inornatus inornatus/dwc:scientificName>
+        <dwc:scientificName>Perognathus inornatus inornatus</dwc:scientificName>
     </dwr:SimpleDarwinRecord>
 </dwr:SimpleDarwinRecordSet>
 ```
@@ -250,7 +250,8 @@ Following is an example of using a normalized class-based schema to represent tw
       <dwc:relationshipOfResource>eaten by</dwc:relationshipOfResource>
       <dwc:relatedResourceID>http://arctos.database.museum/guid/MVZ:Herp:51568</dwc:relatedResourceID>
    </dwc:ResourceRelationship>
-</dwr:DarwinRecordSet>```
+</dwr:DarwinRecordSet>
+```
 
 Here is an example demonstrating area count observations for Events on two different days at the same location. Note that we omit the identification class here as there is no identification-related data and link directly to the Taxon via the `taxonID`:
 
