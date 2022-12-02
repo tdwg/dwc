@@ -19,6 +19,7 @@ assignees: ''
 Proposed attributes of the new term:
 
 * Term name (in lowerCamelCase for properties, UpperCamelCase for classes): 
+* Term label (English, not normative): 
 * Organized in Class (e.g., Occurrence, Event, Location, Taxon): 
 * Definition of the term (normative): 
 * Usage comments (recommendations regarding content, etc., not normative): 
