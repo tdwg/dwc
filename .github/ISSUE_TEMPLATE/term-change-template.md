@@ -21,6 +21,7 @@ Current Term definition: https://dwc.tdwg.org/list/#dwc_[term name here]
 Proposed attributes of the new term version (Please put actual changes to be implemented in **bold** and ~strikethrough~):
 
 * Term name (in lowerCamelCase for properties, UpperCamelCase for classes): 
+* Term label (English, not normative): 
 * Organized in Class (e.g., Occurrence, Event, Location, Taxon): 
 * Definition of the term (normative): 
 * Usage comments (recommendations regarding content, etc., not normative): 
