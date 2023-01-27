@@ -39,7 +39,7 @@ This document provides guidelines for formatting and sharing [Darwin Core terms]
 
 ![Usage](usage.png)
 
-More complex structure MAY be shared in multiple related files. The description of content and relationships between files can be achieved using the metafile. This guideline makes recommendations for the simple case of a _core_ file, upon which Darwin Core _records_ are based, and _extensions_, which are linked to records in that core file. Specifically, extension records have a _many-to-one_ relationship with records in the core file. For example, a core file might contain specimen records, with one specimen per row in the file, while an extension file contains one or more identifications for those specimens, with one identification per row in the extension file, and with an identifier to the specimen for each identification row. This example would allow many identifications to be associated with each specimen.
+More complex structure MAY be shared in multiple related files. The description of content and relationships between files can be achieved using the metafile (meta.xml). This guideline makes recommendations for the simple case of a _core_ file, upon which Darwin Core _records_ are based, and _extensions_, which are linked to records in that core file. Specifically, extension records have a _many-to-one_ relationship with records in the core file. For example, a core file might contain specimen records, with one specimen per row in the file, while an extension file contains one or more identifications for those specimens, with one identification per row in the extension file, and with an identifier to the specimen for each identification row. This example would allow many identifications to be associated with each specimen.
 
 ### 1.1 Status of the content of this document
 
@@ -59,7 +59,7 @@ ID,Species,Count
 124,"Buxbaumia piperi",2
 ```
 
-can be described with the following Darwin Core metafile:
+can be described with the following Darwin Core metafile (meta.xml):
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -90,7 +90,7 @@ PhysicalObject,ANSP,PH,124,"Buxbaumia piperi",2,urn:lsid:tim.lsid.tdwg.org:colle
 
 ## 2 Metafile content
 
-The [text metafile schema](tdwg_dwc_text.xsd) provides technical details for the structure of a metafile by defining the elements and attributes necessary to describe the contents and relationships between text files. These elements and attributes, with descriptions and specifications for their use in a metafile, are described in the following table.
+The [text metafile schema](tdwg_dwc_text.xsd) provides technical details for the structure of a metafile by defining the elements and attributes necessary to describe the contents and relationships between text files. These elements and attributes, with descriptions and specifications for their use in a metafile, are described in the following table. The metafile MUST be named `meta.xml`. 
 
 ### 2.1 The `<archive>` element
 
