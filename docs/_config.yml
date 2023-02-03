@@ -2,41 +2,6 @@
 title: Darwin Core
 description: Website for the Darwin Core standard
 url: "https://dwc.tdwg.org"
-navbar:
-  left:
-  - text: Terms
-    menu:
-    - text: Darwin Core
-      href: list/
-    - text: Establishment Means
-      href: https://dwc.tdwg.org/em/
-    - text: Degree of Establishment
-      href: https://dwc.tdwg.org/doe/
-    - text: Pathway
-      href: https://dwc.tdwg.org/pw/
-    - text: Chronometric Age
-      href: https://tdwg.github.io/chrono/list/
-  - text: Guides
-    menu:
-    - text: Darwin Core Quick Reference
-      href: terms/
-    - text: Chronometric Age Quick Reference
-      href: https://tdwg.github.io/chrono/terms/
-    - text: Simple Darwin Core
-      href: simple/
-    - text: Text (Darwin Core Archive)
-      href: text/
-    - text: RDF
-      href: rdf/
-    - text: XML
-      href: xml/
-    - text: Namespace policy
-      href: namespace/
-    - text: Questions & Answers (separate site)
-      href: https://github.com/tdwg/dwc-qa/blob/master/README.md
-  right:
-  - text: GitHub
-    href: https://github.com/tdwg/dwc
 
 js: >-
   $(document).ready(function() {
