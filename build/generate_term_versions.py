@@ -156,7 +156,7 @@ built_rows_df = normative_doc_df.iloc[1:0].copy()
 # DataFrame to hold remaining rows
 remaining_rows_df = normative_doc_df.copy()
 
-# Load the ordered list of terms in the quick reference guide (single column named recommended_term_iri)
+# Load the ordered list of terms in the Quick Reference Guide (single column named recommended_term_iri)
 print('ordering rows for output document')
 qrg_df = pd.read_csv('qrg-list.csv', na_filter=False)
 for qrg_index,qrg_row in qrg_df.iterrows():

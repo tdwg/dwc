@@ -307,13 +307,13 @@ class DwcDigester(object):
             dwc_header_file.write("\n")
 
 def main():
-    """Building up the quick reference html and derivatives"""
+    """Building up the Quick Reference Guide html and derivatives"""
 
     term_versions_file = "../vocabulary/term_versions.csv"
 
     print("Running build process:")
     my_dwc = DwcDigester(term_versions_file)
-    print("Building quick reference guide")
+    print("Building Quick Reference Guide")
     my_dwc.create_html()
     print("Building simple DwC CSV files")
     my_dwc.create_dwc_list()

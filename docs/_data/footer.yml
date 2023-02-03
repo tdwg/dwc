@@ -1,0 +1,15 @@
+# Footer content is organized in columns, with the first one reserved for social icons (defined in _config.yml).
+# You can also add a small print license statement at the bottom.
+
+# Columns (the more you add, the narrower they will be)
+columns:
+  - links:
+    - text: Biodiversity Information Standards (TDWG)
+      href: https://www.tdwg.org/
+
+# Small print license statement to add at the bottom of the footer. Can be Markdown
+# Will be prefixed by "© {{ site.author }}" if defined in _config.yml
+license: >
+  Content on this site, made open by [Biodiversity Information Standards (TDWG)](https://www.tdwg.org/) 
+  is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
+

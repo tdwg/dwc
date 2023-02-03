@@ -4,19 +4,19 @@ Darwin Core is a standard maintained by the [Darwin Core Maintenance Interest Gr
 
 ## Getting started
 
-[Darwin Core quick reference guide](https://dwc.tdwg.org/terms/)
+[Darwin Core Quick Reference Guide](https://dwc.tdwg.org/terms/)
 
 Documents:
 
-* [List of terms document](https://dwc.tdwg.org/list/): Comprehensive metadata for current and obsolete terms in human readable form 
-* [Complete term history table](vocabulary/term_versions.csv): A CSV file with the full version history of Darwin Core terms
-* [Distribution documents](dist/): Simple CSV files to start using Darwin Core
-* [Website documents](docs/): Markdown files that form the source for the [Darwin Core website](https://dwc.tdwg.org/)
+- [List of terms document](https://dwc.tdwg.org/list/): Comprehensive metadata for current and obsolete terms in human readable form 
+- [Complete term history table](vocabulary/term_versions.csv): A CSV file with the full version history of Darwin Core terms
+- [Distribution documents](dist/): Simple CSV files to start using Darwin Core
+- [Website documents](docs/): Markdown files that form the source for the [Darwin Core website](https://dwc.tdwg.org/)
 
 Community:
 
-* [How to contribute](.github/CONTRIBUTING.md): a guide on how to contribute to Darwin Core
-* [Darwin Core Q&A](https://github.com/tdwg/dwc-qa): an open forum on the use of Darwin Core
+- [How to contribute](.github/CONTRIBUTING.md): a guide on how to contribute to Darwin Core
+- [Darwin Core Q&A](https://github.com/tdwg/dwc-qa): an open forum on the use of Darwin Core
 
 ## Repo structure
 
