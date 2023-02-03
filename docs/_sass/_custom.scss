@@ -1,0 +1,9 @@
+// Custom styling
+
+.content {
+  table {
+    td:first-of-type {
+      width: 120px; // Label column, long words will still push this wider
+    }
+  }
+}
