@@ -1,16 +1,32 @@
 # SITE SETTINGS
 title: Darwin Core
-description: Website for the Darwin Core standard
 url: "https://dwc.tdwg.org"
 
-js: >-
-  $(document).ready(function() {
-      // In quick reference guide: add divider in sidebar after UseWithIRI
-      $("a[href='#usewithiri']", "#theme-sidebar-nav").parent().addClass("theme-divider-below");
-  });
+# SOCIAL PROFILES
+social:
+  github: tdwg/dwc
+
+# THEME SETTINGS
+theme: minima
+remote_theme: tdwg/petridish
+github_edit: false
+logo: /assets/theme/images/tdwg-logo-short.svg
 
 # BUILD SETTINGS
 markdown: kramdown
-remote_theme: tdwg/tdwg-theme-jekyll
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+
+# FRONTMATTER DEFAULTS
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+      toc: true
