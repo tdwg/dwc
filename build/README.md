@@ -33,13 +33,13 @@
 
 The build script `build.py` uses as input:
 
-* [vocabulary/term_versions.csv](../vocabulary/term_versions.csv): the list of terms
-* [terms.tmpl](terms.tmpl): a Jinja2 template for the quick reference guide
+- [vocabulary/term_versions.csv](../vocabulary/term_versions.csv): the list of terms
+- [terms.tmpl](terms.tmpl): a Jinja2 template for the Quick Reference Guide
 
 And creates:
 
-* The quick reference guide is a Markdown file at [docs/terms/index.md](../docs/terms/index.md). The guide is built as Markdown (with a lot of included html) rather than html, so it can be incorporated by Jekyll in the Darwin Core website (including a header, footer and table of contents).
-* Two simple Darwin Core CSV files in [dist/](../dist/)
+- The Quick Reference Guide is a Markdown file at [docs/terms/index.md](../docs/terms/index.md). The guide is built as Markdown (with a lot of included html) rather than html, so it can be incorporated by Jekyll in the Darwin Core website (including a header, footer and table of contents).
+- Two simple Darwin Core CSV files in [dist/](../dist/)
 
 ## Run the build script
 

@@ -8,8 +8,8 @@ layout: home
 
 ## Getting started
 
-* [Quick reference guide](terms/)
-* Usage guides: how to use Darwin Core as [Simple Darwin Core](simple/), [Text (Darwin Core Archives)](text/), [XML](xml/) or [RDF](rdf/)
-* [GitHub repository](https://github.com/tdwg/dwc): where Darwin Core is maintained
-* [Normative term list](list/): the document containing the full history of normative Darwin Core term definitions
-* [Distribution files](https://github.com/tdwg/dwc/tree/master/dist): convenient files to start using Darwin Core
+- [Quick Reference Guide](terms/)
+- Usage guides: how to use Darwin Core as [Simple Darwin Core](simple/), [Text (Darwin Core Archives)](text/), [XML](xml/) or [RDF](rdf/)
+- [GitHub repository](https://github.com/tdwg/dwc): where Darwin Core is maintained
+- [Normative term list](list/): the document containing the full history of normative Darwin Core term definitions
+- [Distribution files](https://github.com/tdwg/dwc/tree/master/dist): convenient files to start using Darwin Core

@@ -2,7 +2,7 @@
 container: fluid
 ---
 
-# Darwin Core quick reference guide
+# Darwin Core Quick Reference Guide
 
 This document is intended to be an easy-to-read reference of the currently (as of 2021-07-15) recommended terms maintained as part of the [Darwin Core standard](https://www.tdwg.org/standards/dwc/) and is maintained by the [Darwin Core Maintenance Group](https://www.tdwg.org/community/dwc/). 
 
@@ -3242,4 +3242,4 @@ Darwin Core Maintenance Group. 2021. List of Darwin Core terms. Biodiversity Inf
 
 To cite this document specifically, use the following:
 
-Darwin Core Maintenance Group. 2021. Darwin Core quick reference guide. Biodiversity Information Standards (TDWG). <https://dwc.tdwg.org/terms/>
+Darwin Core Maintenance Group. 2021. Darwin Core Quick Reference Guide. Biodiversity Information Standards (TDWG). <https://dwc.tdwg.org/terms/>
