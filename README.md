@@ -54,14 +54,13 @@ The repository structure is described below. Files/directories indicated with `G
 │   ├── pw                : Pathway Controlled Vocabulary List of Terms
 │   ├── rdf               : Darwin Core RDF Guide
 │   ├── simple            : Simple Darwin Core Guide
-│   ├── terms
-│   │   └── index.md      : Content for Quick Reference Guide generation using Jekyll
-│   │
+│   ├── terms.            : GENERATED Quick Reference Guide
 │   ├── text              : Darwin Core Text Guide (Darwin Core Archive specification)
 │   ├── xml               : Darwin Core XML Guide
-│   ├── _config.yml       : Jekyll site configuration for Quick Reference Guide
+│   ├── _data             : Website navigation and footer
+│   ├── _config.yml       : Jekyll site configuration
 │   ├── CNAME             : Canonical Name record for dwc.tdwg.org
-│   └── index.md          : Header for Darwin Core web site generation using Jekyll
+│   └── index.md          : Website home page
 │
 ├── vocabulary
 │   └── term_versions.csv : Darwin Core term versions, contains the complete history of the terms
