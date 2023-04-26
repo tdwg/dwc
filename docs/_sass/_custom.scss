@@ -5,5 +5,9 @@
     td:first-of-type {
       width: 120px; // Label column, long words will still push this wider
     }
+
+    .list-group-item {
+      padding: 0.5rem 0; // Examples
+    }
   }
 }
