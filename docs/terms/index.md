@@ -46,7 +46,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://purl.org/dc/elements/1.1/type">http://purl.org/dc/elements/1.1/type</a></td></tr>
     <tr><td>Definition</td><td>The nature or genre of the resource.</td></tr>
     <tr><td>Comments</td><td>Must be populated with a value from the DCMI type vocabulary (<a href="http://dublincore.org/documents/2010/10/11/dcmi-type-vocabulary/">http://dublincore.org/documents/2010/10/11/dcmi-type-vocabulary/</a>).</td></tr>
-    <tr><td>Examples</td><td><code>StillImage</code>; <code>MovingImage</code>; <code>Sound</code>; <code>PhysicalObject</code>; <code>Event</code>; <code>Text</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>StillImage</code></li><li class="list-group-item"><code>MovingImage</code></li><li class="list-group-item"><code>Sound</code></li><li class="list-group-item"><code>PhysicalObject</code></li><li class="list-group-item"><code>Event</code></li><li class="list-group-item"><code>Text</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -59,7 +59,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://purl.org/dc/terms/modified">http://purl.org/dc/terms/modified</a></td></tr>
     <tr><td>Definition</td><td>The most recent date-time on which the resource was changed.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to use a date that conforms to ISO 8601-1:2019.</td></tr>
-    <tr><td>Examples</td><td><code>1963-03-08T14:07-0600</code> (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC); <code>2009-02-20T08:40Z</code> (20 February 2009 8:40am UTC); <code>2018-08-29T15:19</code> (3:19pm local time on 29 August 2018); <code>1809-02-12</code> (some time during 12 February 1809); <code>1906-06</code> (some time in June 1906); <code>1971</code> (some time in the year 1971); <code>2007-03-01T13:00:00Z/2008-05-11T15:30:00Z</code> (some time during the interval between 1 March 2007 1pm UTC and 11 May 2008 3:30pm UTC); <code>1900/1909</code> (some time during the interval between the beginning of the year 1900 and the end of the year 1909); <code>2007-11-13/15</code> (some time in the interval between 13 November 2007 and 15 November 2007)</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>1963-03-08T14:07-0600</code> (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC)</li><li class="list-group-item"><code>2009-02-20T08:40Z</code> (20 February 2009 8:40am UTC)</li><li class="list-group-item"><code>2018-08-29T15:19</code> (3:19pm local time on 29 August 2018)</li><li class="list-group-item"><code>1809-02-12</code> (some time during 12 February 1809)</li><li class="list-group-item"><code>1906-06</code> (some time in June 1906)</li><li class="list-group-item"><code>1971</code> (some time in the year 1971)</li><li class="list-group-item"><code>2007-03-01T13:00:00Z/2008-05-11T15:30:00Z</code> (some time during the interval between 1 March 2007 1pm UTC and 11 May 2008 3:30pm UTC)</li><li class="list-group-item"><code>1900/1909</code> (some time during the interval between the beginning of the year 1900 and the end of the year 1909)</li><li class="list-group-item"><code>2007-11-13/15</code> (some time in the interval between 13 November 2007 and 15 November 2007)</li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -72,7 +72,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://purl.org/dc/elements/1.1/language">http://purl.org/dc/elements/1.1/language</a></td></tr>
     <tr><td>Definition</td><td>A language of the resource.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary such as RFC 5646.</td></tr>
-    <tr><td>Examples</td><td><code>en</code> (for English); <code>es</code> (for Spanish)</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>en</code> (for English)</li><li class="list-group-item"><code>es</code> (for Spanish)</li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -85,7 +85,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://purl.org/dc/terms/license">http://purl.org/dc/terms/license</a></td></tr>
     <tr><td>Definition</td><td>A legal document giving official permission to do something with the resource.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code><a href="http://creativecommons.org/publicdomain/zero/1.0/legalcode">http://creativecommons.org/publicdomain/zero/1.0/legalcode</a></code>; <code><a href="http://creativecommons.org/licenses/by/4.0/legalcode">http://creativecommons.org/licenses/by/4.0/legalcode</a></code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="http://creativecommons.org/publicdomain/zero/1.0/legalcode">http://creativecommons.org/publicdomain/zero/1.0/legalcode</a></code></li><li class="list-group-item"><code><a href="http://creativecommons.org/licenses/by/4.0/legalcode">http://creativecommons.org/licenses/by/4.0/legalcode</a></code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -111,7 +111,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://purl.org/dc/terms/accessRights">http://purl.org/dc/terms/accessRights</a></td></tr>
     <tr><td>Definition</td><td>Information about who can access the resource or an indication of its security status.</td></tr>
     <tr><td>Comments</td><td>Access Rights may include information regarding access or restrictions based on privacy, security, or other policies.</td></tr>
-    <tr><td>Examples</td><td><code>not-for-profit use only</code>; <code><a href="https://www.fieldmuseum.org/field-museum-natural-history-conditions-and-suggested-norms-use-collections-data-and-images">https://www.fieldmuseum.org/field-museum-natural-history-conditions-and-suggested-norms-use-collections-data-and-images</a></code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>not-for-profit use only</code></li><li class="list-group-item"><code><a href="https://www.fieldmuseum.org/field-museum-natural-history-conditions-and-suggested-norms-use-collections-data-and-images">https://www.fieldmuseum.org/field-museum-natural-history-conditions-and-suggested-norms-use-collections-data-and-images</a></code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -124,7 +124,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://purl.org/dc/terms/bibliographicCitation">http://purl.org/dc/terms/bibliographicCitation</a></td></tr>
     <tr><td>Definition</td><td>A bibliographic reference for the resource as a statement indicating how this record should be cited (attributed) when used.</td></tr>
     <tr><td>Comments</td><td>From Dublin Core, "Recommended practice is to include sufficient bibliographic detail to identify the resource as unambiguously as possible." The intended usage of this term in Darwin Core is to provide the preferred way to cite the resource itself - "how to cite this record". Note that the intended usage of dcterms:references in Darwin Core, by contrast, is to point to the definitive source representation of the resource - "where to find the as-close-to-original reference, if one is available.</td></tr>
-    <tr><td>Examples</td><td>Occurrence example: <code>Museum of Vertebrate Zoology, UC Berkeley. MVZ Mammal Collection (Arctos). Record ID: <a href="http://arctos.database.museum/guid/MVZ:Mamm:165861?seid=101356">http://arctos.database.museum/guid/MVZ:Mamm:165861?seid=101356</a>. Source: <a href="http://ipt.vertnet.org:8080/ipt/resource.do?r=mvz_mammal">http://ipt.vertnet.org:8080/ipt/resource.do?r=mvz_mammal</a>.</code>; Taxon example: <code><a href="https://www.gbif.org/species/2439608">https://www.gbif.org/species/2439608</a> Source: GBIF Taxonomic Backbone</code>; Event example: <code>Rand, K.M., Logerwell, E.A. The first demersal trawl survey of benthic fish and invertebrates in the Beaufort Sea since the late 1970s. Polar Biol 34, 475–488 (2011). <a href="https://doi.org/10.1007/s00300-010-0900-2">https://doi.org/10.1007/s00300-010-0900-2</a></code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item">Occurrence example: <code>Museum of Vertebrate Zoology, UC Berkeley. MVZ Mammal Collection (Arctos). Record ID: <a href="http://arctos.database.museum/guid/MVZ:Mamm:165861?seid=101356">http://arctos.database.museum/guid/MVZ:Mamm:165861?seid=101356</a>. Source: <a href="http://ipt.vertnet.org:8080/ipt/resource.do?r=mvz_mammal">http://ipt.vertnet.org:8080/ipt/resource.do?r=mvz_mammal</a>.</code></li><li class="list-group-item">Taxon example: <code><a href="https://www.gbif.org/species/2439608">https://www.gbif.org/species/2439608</a> Source: GBIF Taxonomic Backbone</code></li><li class="list-group-item">Event example: <code>Rand, K.M., Logerwell, E.A. The first demersal trawl survey of benthic fish and invertebrates in the Beaufort Sea since the late 1970s. Polar Biol 34, 475–488 (2011). <a href="https://doi.org/10.1007/s00300-010-0900-2">https://doi.org/10.1007/s00300-010-0900-2</a></code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -137,7 +137,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://purl.org/dc/terms/references">http://purl.org/dc/terms/references</a></td></tr>
     <tr><td>Definition</td><td>A related resource that is referenced, cited, or otherwise pointed to by the described resource.</td></tr>
     <tr><td>Comments</td><td>From Dublin Core, "This property is intended to be used with non-literal values. This property is an inverse property of Is Referenced By." The intended usage of this term in Darwin Core is to point to the definitive source representation of the resource (e.g.,Taxon, Occurrence, Event in Darwin Core), if one is available. Note that the intended usage of dcterms:bibliographicCitation in Darwin Core, by contrast, is to provide the preferred way to cite the resource itself.</td></tr>
-    <tr><td>Examples</td><td>MaterialSample example: <code><a href="http://arctos.database.museum/guid/MVZ:Mamm:165861">http://arctos.database.museum/guid/MVZ:Mamm:165861</a></code>; Taxon example: <code><a href="https://www.catalogueoflife.org/data/taxon/32664">https://www.catalogueoflife.org/data/taxon/32664</a></code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item">MaterialSample example: <code><a href="http://arctos.database.museum/guid/MVZ:Mamm:165861">http://arctos.database.museum/guid/MVZ:Mamm:165861</a></code></li><li class="list-group-item">Taxon example: <code><a href="https://www.catalogueoflife.org/data/taxon/32664">https://www.catalogueoflife.org/data/taxon/32664</a></code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -150,7 +150,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/institutionID">http://rs.tdwg.org/dwc/terms/institutionID</a></td></tr>
     <tr><td>Definition</td><td>An identifier for the institution having custody of the object(s) or information referred to in the record.</td></tr>
     <tr><td>Comments</td><td>For physical specimens, the recommended best practice is to use an identifier from a collections registry such as the Global Registry of Biodiversity Repositories (<a href="http://grbio.org/">http://grbio.org/</a>).</td></tr>
-    <tr><td>Examples</td><td><code><a href="http://biocol.org/urn:lsid:biocol.org:col:34777">http://biocol.org/urn:lsid:biocol.org:col:34777</a></code>; <code><a href="http://grbio.org/cool/km06-gtbn">http://grbio.org/cool/km06-gtbn</a></code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="http://biocol.org/urn:lsid:biocol.org:col:34777">http://biocol.org/urn:lsid:biocol.org:col:34777</a></code></li><li class="list-group-item"><code><a href="http://grbio.org/cool/km06-gtbn">http://grbio.org/cool/km06-gtbn</a></code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -163,7 +163,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/collectionID">http://rs.tdwg.org/dwc/terms/collectionID</a></td></tr>
     <tr><td>Definition</td><td>An identifier for the collection or dataset from which the record was derived.</td></tr>
     <tr><td>Comments</td><td>For physical specimens, the recommended best practice is to use an identifier from a collections registry such as the Global Registry of Biodiversity Repositories (<a href="http://grbio.org/">http://grbio.org/</a>).</td></tr>
-    <tr><td>Examples</td><td><code><a href="http://biocol.org/urn:lsid:biocol.org:col:1001">http://biocol.org/urn:lsid:biocol.org:col:1001</a></code>; <code><a href="http://grbio.org/cool/p5fp-c036">http://grbio.org/cool/p5fp-c036</a></code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="http://biocol.org/urn:lsid:biocol.org:col:1001">http://biocol.org/urn:lsid:biocol.org:col:1001</a></code></li><li class="list-group-item"><code><a href="http://grbio.org/cool/p5fp-c036">http://grbio.org/cool/p5fp-c036</a></code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -189,7 +189,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/institutionCode">http://rs.tdwg.org/dwc/terms/institutionCode</a></td></tr>
     <tr><td>Definition</td><td>The name (or acronym) in use by the institution having custody of the object(s) or information referred to in the record.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>MVZ</code>; <code>FMNH</code>; <code>CLO</code>; <code>UCMP</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>MVZ</code></li><li class="list-group-item"><code>FMNH</code></li><li class="list-group-item"><code>CLO</code></li><li class="list-group-item"><code>UCMP</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -202,7 +202,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/collectionCode">http://rs.tdwg.org/dwc/terms/collectionCode</a></td></tr>
     <tr><td>Definition</td><td>The name, acronym, coden, or initialism identifying the collection or data set from which the record was derived.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>Mammals</code>; <code>Hildebrandt</code>; <code>EBIRD</code>; <code>VP</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Mammals</code></li><li class="list-group-item"><code>Hildebrandt</code></li><li class="list-group-item"><code>EBIRD</code></li><li class="list-group-item"><code>VP</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -215,7 +215,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/datasetName">http://rs.tdwg.org/dwc/terms/datasetName</a></td></tr>
     <tr><td>Definition</td><td>The name identifying the data set from which the record was derived.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>Grinnell Resurvey Mammals</code>; <code>Lacey Ctenomys Recaptures</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Grinnell Resurvey Mammals</code></li><li class="list-group-item"><code>Lacey Ctenomys Recaptures</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -228,7 +228,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/ownerInstitutionCode">http://rs.tdwg.org/dwc/terms/ownerInstitutionCode</a></td></tr>
     <tr><td>Definition</td><td>The name (or acronym) in use by the institution having ownership of the object(s) or information referred to in the record.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>NPS</code>; <code>APN</code>; <code>InBio</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>NPS</code></li><li class="list-group-item"><code>APN</code></li><li class="list-group-item"><code>InBio</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -241,7 +241,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/basisOfRecord">http://rs.tdwg.org/dwc/terms/basisOfRecord</a></td></tr>
     <tr><td>Definition</td><td>The specific nature of the data record.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to use the standard label of one of the Darwin Core classes.</td></tr>
-    <tr><td>Examples</td><td><code>PreservedSpecimen</code>; <code>FossilSpecimen</code>; <code>LivingSpecimen</code>; <code>MaterialSample</code>; <code>Event</code>; <code>HumanObservation</code>; <code>MachineObservation</code>; <code>Taxon</code>; <code>Occurrence</code>; <code>MaterialCitation</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>PreservedSpecimen</code></li><li class="list-group-item"><code>FossilSpecimen</code></li><li class="list-group-item"><code>LivingSpecimen</code></li><li class="list-group-item"><code>MaterialSample</code></li><li class="list-group-item"><code>Event</code></li><li class="list-group-item"><code>HumanObservation</code></li><li class="list-group-item"><code>MachineObservation</code></li><li class="list-group-item"><code>Taxon</code></li><li class="list-group-item"><code>Occurrence</code></li><li class="list-group-item"><code>MaterialCitation</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -254,7 +254,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/informationWithheld">http://rs.tdwg.org/dwc/terms/informationWithheld</a></td></tr>
     <tr><td>Definition</td><td>Additional information that exists, but that has not been shared in the given record.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>location information not given for endangered species</code>; <code>collector identities withheld | ask about tissue samples</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>location information not given for endangered species</code></li><li class="list-group-item"><code>collector identities withheld | ask about tissue samples</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -280,7 +280,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/dynamicProperties">http://rs.tdwg.org/dwc/terms/dynamicProperties</a></td></tr>
     <tr><td>Definition</td><td>A list of additional measurements, facts, characteristics, or assertions about the record. Meant to provide a mechanism for structured content.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to use a key:value encoding schema for a data interchange format such as JSON.</td></tr>
-    <tr><td>Examples</td><td><code>{"heightInMeters":1.5}</code>; <code>{"tragusLengthInMeters":0.014, "weightInGrams":120}</code>; <code>{"natureOfID":"expert identification", "identificationEvidence":"cytochrome B sequence"}</code>; <code>{"relativeHumidity":28, "airTemperatureInCelsius":22, "sampleSizeInKilograms":10}</code>; <code>{"aspectHeading":277, "slopeInDegrees":6}</code>; <code>{"iucnStatus":"vulnerable", "taxonDistribution":"Neuquén, Argentina"}</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>{"heightInMeters":1.5}</code></li><li class="list-group-item"><code>{"tragusLengthInMeters":0.014, "weightInGrams":120}</code></li><li class="list-group-item"><code>{"natureOfID":"expert identification", "identificationEvidence":"cytochrome B sequence"}</code></li><li class="list-group-item"><code>{"relativeHumidity":28, "airTemperatureInCelsius":22, "sampleSizeInKilograms":10}</code></li><li class="list-group-item"><code>{"aspectHeading":277, "slopeInDegrees":6}</code></li><li class="list-group-item"><code>{"iucnStatus":"vulnerable", "taxonDistribution":"Neuquén, Argentina"}</code></li></ul></td></tr>
   </tbody>
 </table>
 
@@ -336,7 +336,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/occurrenceID">http://rs.tdwg.org/dwc/terms/occurrenceID</a></td></tr>
     <tr><td>Definition</td><td>An identifier for the Occurrence (as opposed to a particular digital record of the occurrence). In the absence of a persistent global unique identifier, construct one from a combination of identifiers in the record that will most closely make the occurrenceID globally unique.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to use a persistent, globally unique identifier.</td></tr>
-    <tr><td>Examples</td><td><code><a href="http://arctos.database.museum/guid/MSB:Mamm:233627">http://arctos.database.museum/guid/MSB:Mamm:233627</a></code>; <code>000866d2-c177-4648-a200-ead4007051b9</code>; <code>urn:catalog:UWBM:Bird:89776</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="http://arctos.database.museum/guid/MSB:Mamm:233627">http://arctos.database.museum/guid/MSB:Mamm:233627</a></code></li><li class="list-group-item"><code>000866d2-c177-4648-a200-ead4007051b9</code></li><li class="list-group-item"><code>urn:catalog:UWBM:Bird:89776</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -349,7 +349,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/catalogNumber">http://rs.tdwg.org/dwc/terms/catalogNumber</a></td></tr>
     <tr><td>Definition</td><td>An identifier (preferably unique) for the record within the data set or collection.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>145732</code>; <code>145732a</code>; <code>2008.1334</code>; <code>R-4313</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>145732</code></li><li class="list-group-item"><code>145732a</code></li><li class="list-group-item"><code>2008.1334</code></li><li class="list-group-item"><code>R-4313</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -375,7 +375,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/recordedBy">http://rs.tdwg.org/dwc/terms/recordedBy</a></td></tr>
     <tr><td>Definition</td><td>A list (concatenated and separated) of names of people, groups, or organizations responsible for recording the original Occurrence. The primary collector or observer, especially one who applies a personal identifier (recordNumber), should be listed first.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
-    <tr><td>Examples</td><td><code>José E. Crespo</code>; <code>Oliver P. Pearson | Anita K. Pearson</code> (where the value in recordNumber <code>OPP 7101</code> corresponds to the collector number for the specimen in the field catalog of Oliver P. Pearson)</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>José E. Crespo</code></li><li class="list-group-item"><code>Oliver P. Pearson | Anita K. Pearson</code> (where the value in recordNumber <code>OPP 7101</code> corresponds to the collector number for the specimen in the field catalog of Oliver P. Pearson)</li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -388,7 +388,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/recordedByID">http://rs.tdwg.org/dwc/terms/recordedByID</a></td></tr>
     <tr><td>Definition</td><td>A list (concatenated and separated) of the globally unique identifier for the person, people, groups, or organizations responsible for recording the original Occurrence.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to provide a single identifier that disambiguates the details of the identifying agent. If a list is used, it is recommended to separate the values in the list with space vertical bar space (<code> | </code>). The order of the identifiers on any list for this term can not be guaranteed to convey any semantics.</td></tr>
-    <tr><td>Examples</td><td><code><a href="https://orcid.org/0000-0002-1825-0097">https://orcid.org/0000-0002-1825-0097</a></code> (for an individual); <code><a href="https://orcid.org/0000-0002-1825-0097">https://orcid.org/0000-0002-1825-0097</a> | <a href="https://orcid.org/0000-0002-1825-0098">https://orcid.org/0000-0002-1825-0098</a></code> (for a list of people).</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="https://orcid.org/0000-0002-1825-0097">https://orcid.org/0000-0002-1825-0097</a></code> (for an individual)</li><li class="list-group-item"><code><a href="https://orcid.org/0000-0002-1825-0097">https://orcid.org/0000-0002-1825-0097</a> | <a href="https://orcid.org/0000-0002-1825-0098">https://orcid.org/0000-0002-1825-0098</a></code> (for a list of people)</li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -401,7 +401,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/individualCount">http://rs.tdwg.org/dwc/terms/individualCount</a></td></tr>
     <tr><td>Definition</td><td>The number of individuals present at the time of the Occurrence.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>0</code>; <code>1</code>; <code>25</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>0</code></li><li class="list-group-item"><code>1</code></li><li class="list-group-item"><code>25</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -414,7 +414,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/organismQuantity">http://rs.tdwg.org/dwc/terms/organismQuantity</a></td></tr>
     <tr><td>Definition</td><td>A number or enumeration value for the quantity of organisms.</td></tr>
     <tr><td>Comments</td><td>An organismQuantity must have a corresponding organismQuantityType.</td></tr>
-    <tr><td>Examples</td><td><code>27</code> (organismQuantity) with <code>individuals</code> (organismQuantityType); <code>12.5</code> (organismQuantity) with <code>% biomass</code> (organismQuantityType); <code>r</code> (organismQuantity) with <code>Braun Blanquet Scale</code> (organismQuantityType); <code>many</code> (organismQuantity) with <code>individuals</code> (organismQuantityType)</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>27</code> (organismQuantity) with <code>individuals</code> (organismQuantityType)</li><li class="list-group-item"><code>12.5</code> (organismQuantity) with <code>% biomass</code> (organismQuantityType)</li><li class="list-group-item"><code>r</code> (organismQuantity) with <code>Braun Blanquet Scale</code> (organismQuantityType)</li><li class="list-group-item"><code>many</code> (organismQuantity) with <code>individuals</code> (organismQuantityType)</li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -427,7 +427,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/organismQuantityType">http://rs.tdwg.org/dwc/terms/organismQuantityType</a></td></tr>
     <tr><td>Definition</td><td>The type of quantification system used for the quantity of organisms.</td></tr>
     <tr><td>Comments</td><td>A dwc:organismQuantityType must have a corresponding dwc:organismQuantity.</td></tr>
-    <tr><td>Examples</td><td><code>27</code> (organismQuantity) with <code>individuals</code> (organismQuantityType); <code>12.5</code> (organismQuantity) with <code>% biomass</code> (organismQuantityType); <code>r</code> (organismQuantity) with <code>Braun Blanquet Scale</code> (organismQuantityType)</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>27</code> (organismQuantity) with <code>individuals</code> (organismQuantityType)</li><li class="list-group-item"><code>12.5</code> (organismQuantity) with <code>% biomass</code> (organismQuantityType)</li><li class="list-group-item"><code>r</code> (organismQuantity) with <code>Braun Blanquet Scale</code> (organismQuantityType)</li><li class="list-group-item"><code>many</code> (organismQuantity) with <code>individuals</code> (organismQuantityType)</li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -440,7 +440,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/sex">http://rs.tdwg.org/dwc/terms/sex</a></td></tr>
     <tr><td>Definition</td><td>The sex of the biological individual(s) represented in the Occurrence.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
-    <tr><td>Examples</td><td><code>female</code>; <code>male</code>; <code>hermaphrodite</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>female</code></li><li class="list-group-item"><code>male</code></li><li class="list-group-item"><code>hermaphrodite</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -453,7 +453,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/lifeStage">http://rs.tdwg.org/dwc/terms/lifeStage</a></td></tr>
     <tr><td>Definition</td><td>The age class or life stage of the Organism(s) at the time the Occurrence was recorded.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
-    <tr><td>Examples</td><td><code>zygote</code>; <code>larva</code>; <code>juvenile</code>; <code>adult</code>; <code>seedling</code>; <code>flowering</code>; <code>fruiting</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>zygote</code></li><li class="list-group-item"><code>larva</code></li><li class="list-group-item"><code>juvenile</code></li><li class="list-group-item"><code>adult</code></li><li class="list-group-item"><code>seedling</code></li><li class="list-group-item"><code>flowering</code></li><li class="list-group-item"><code>fruiting</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -466,7 +466,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/reproductiveCondition">http://rs.tdwg.org/dwc/terms/reproductiveCondition</a></td></tr>
     <tr><td>Definition</td><td>The reproductive condition of the biological individual(s) represented in the Occurrence.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
-    <tr><td>Examples</td><td><code>non-reproductive</code>; <code>pregnant</code>; <code>in bloom</code>; <code>fruit-bearing</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>non-reproductive</code></li><li class="list-group-item"><code>pregnant</code></li><li class="list-group-item"><code>in bloom</code></li><li class="list-group-item"><code>fruit-bearing</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -479,7 +479,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/behavior">http://rs.tdwg.org/dwc/terms/behavior</a></td></tr>
     <tr><td>Definition</td><td>The behavior shown by the subject at the time the Occurrence was recorded.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>roosting</code>; <code>foraging</code>; <code>running</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>roosting</code></li><li class="list-group-item"><code>foraging</code></li><li class="list-group-item"><code>running</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -492,7 +492,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/establishmentMeans">http://rs.tdwg.org/dwc/terms/establishmentMeans</a></td></tr>
     <tr><td>Definition</td><td>Statement about whether an organism or organisms have been introduced to a given place and time through the direct or indirect activity of modern humans.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to use controlled value strings from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/em/">http://rs.tdwg.org/dwc/doc/em/</a>. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a></td></tr>
-    <tr><td>Examples</td><td><code>native</code>; <code>nativeReintroduced</code>; <code>introduced</code>; <code>introducedAssistedColonisation</code>; <code>vagrant</code>; <code>uncertain</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>native</code></li><li class="list-group-item"><code>nativeReintroduced</code></li><li class="list-group-item"><code>introduced</code></li><li class="list-group-item"><code>introducedAssistedColonisation</code></li><li class="list-group-item"><code>vagrant</code></li><li class="list-group-item"><code>uncertain</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -505,7 +505,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/degreeOfEstablishment">http://rs.tdwg.org/dwc/terms/degreeOfEstablishment</a></td></tr>
     <tr><td>Definition</td><td>The degree to which an Organism survives, reproduces, and expands its range at the given place and time.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to use controlled value strings from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/doe/">http://rs.tdwg.org/dwc/doc/doe/</a>. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a></td></tr>
-    <tr><td>Examples</td><td><code>native</code>; <code>captive</code>; <code>cultivated</code>; <code>released</code>; <code>failing</code>; <code>casual</code>; <code>reproducing</code>; <code>established</code>; <code>colonising</code>; <code>invasive</code>; <code>widespreadInvasive</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>native</code></li><li class="list-group-item"><code>captive</code></li><li class="list-group-item"><code>cultivated</code></li><li class="list-group-item"><code>released</code></li><li class="list-group-item"><code>failing</code></li><li class="list-group-item"><code>casual</code></li><li class="list-group-item"><code>reproducing</code></li><li class="list-group-item"><code>established</code></li><li class="list-group-item"><code>colonising</code></li><li class="list-group-item"><code>invasive</code></li><li class="list-group-item"><code>widespreadInvasive</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -518,7 +518,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/pathway">http://rs.tdwg.org/dwc/terms/pathway</a></td></tr>
     <tr><td>Definition</td><td>The process by which an Organism came to be in a given place at a given time.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to use controlled value strings from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/pw/">http://rs.tdwg.org/dwc/doc/pw/</a>. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a></td></tr>
-    <tr><td>Examples</td><td><code>releasedForUse</code>; <code>otherEscape</code>; <code>transportContaminant</code>; <code>transportStowaway</code>; <code>corridor</code>; <code>unaided</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>releasedForUse</code></li><li class="list-group-item"><code>otherEscape</code></li><li class="list-group-item"><code>transportContaminant</code></li><li class="list-group-item"><code>transportStowaway</code></li><li class="list-group-item"><code>corridor</code></li><li class="list-group-item"><code>unaided</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -531,7 +531,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/georeferenceVerificationStatus">http://rs.tdwg.org/dwc/terms/georeferenceVerificationStatus</a></td></tr>
     <tr><td>Definition</td><td>A categorical description of the extent to which the georeference has been verified to represent the best possible spatial description for the Location of the Occurrence.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
-    <tr><td>Examples</td><td><code>unable to georeference</code>; <code>requires georeference</code>; <code>requires verification</code>; <code>verified by data custodian</code>; <code>verified by contributor</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>unable to georeference</code></li><li class="list-group-item"><code>requires georeference</code></li><li class="list-group-item"><code>requires verification</code></li><li class="list-group-item"><code>verified by data custodian</code></li><li class="list-group-item"><code>verified by contributor</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -544,7 +544,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/occurrenceStatus">http://rs.tdwg.org/dwc/terms/occurrenceStatus</a></td></tr>
     <tr><td>Definition</td><td>A statement about the presence or absence of a Taxon at a Location.</td></tr>
     <tr><td>Comments</td><td>For Occurrences, the default vocabulary is recommended to consist of "present" and "absent", but can be extended by implementers with good justification.</td></tr>
-    <tr><td>Examples</td><td><code>present</code>; <code>absent</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>present</code></li><li class="list-group-item"><code>absent</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -557,7 +557,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/preparations">http://rs.tdwg.org/dwc/terms/preparations</a></td></tr>
     <tr><td>Definition</td><td>A list (concatenated and separated) of preparations and preservation methods for a specimen.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
-    <tr><td>Examples</td><td><code>fossil</code>; <code>cast</code>; <code>photograph</code>; <code>DNA extract</code>; <code>skin | skull | skeleton</code>; <code>whole animal (ETOH) | tissue (EDTA)</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>fossil</code></li><li class="list-group-item"><code>cast</code></li><li class="list-group-item"><code>photograph</code></li><li class="list-group-item"><code>DNA extract</code></li><li class="list-group-item"><code>skin | skull | skeleton</code></li><li class="list-group-item"><code>whole animal (ETOH) | tissue (EDTA)</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -570,7 +570,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/disposition">http://rs.tdwg.org/dwc/terms/disposition</a></td></tr>
     <tr><td>Definition</td><td>The current state of a specimen with respect to the collection identified in collectionCode or collectionID.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
-    <tr><td>Examples</td><td><code>in collection</code>; <code>missing</code>; <code>voucher elsewhere</code>; <code>duplicates elsewhere</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>in collection</code></li><li class="list-group-item"><code>missing</code></li><li class="list-group-item"><code>voucher elsewhere</code></li><li class="list-group-item"><code>duplicates elsewhere</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -596,7 +596,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/associatedOccurrences">http://rs.tdwg.org/dwc/terms/associatedOccurrences</a></td></tr>
     <tr><td>Definition</td><td>A list (concatenated and separated) of identifiers of other Occurrence records and their associations to this Occurrence.</td></tr>
     <tr><td>Comments</td><td>This term can be used to provide a list of associations to other Occurrences. Note that the ResourceRelationship class is an alternative means of representing associations, and with more detail. Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
-    <tr><td>Examples</td><td><code>"parasite collected from":"<a href="https://arctos.database.museum/guid/MSB:Mamm:215895?seid=950760">https://arctos.database.museum/guid/MSB:Mamm:215895?seid=950760</a>"</code>; <code>"encounter previous to":"<a href="http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3175067">http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3175067</a>" | "encounter previous to":"<a href="http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3177393">http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3177393</a>" | "encounter previous to":"<a href="http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3177394">http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3177394</a>" | "encounter previous to":"<a href="http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3177392">http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3177392</a>" | "encounter previous to":"<a href="http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3609139">http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3609139</a>"</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>"parasite collected from":"<a href="https://arctos.database.museum/guid/MSB:Mamm:215895?seid=950760">https://arctos.database.museum/guid/MSB:Mamm:215895?seid=950760</a>"</code></li><li class="list-group-item"><code>"encounter previous to":"<a href="http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3175067">http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3175067</a>" | "encounter previous to":"<a href="http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3177393">http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3177393</a>" | "encounter previous to":"<a href="http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3177394">http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3177394</a>" | "encounter previous to":"<a href="http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3177392">http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3177392</a>" | "encounter previous to":"<a href="http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3609139">http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3609139</a>"</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -609,7 +609,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/associatedReferences">http://rs.tdwg.org/dwc/terms/associatedReferences</a></td></tr>
     <tr><td>Definition</td><td>A list (concatenated and separated) of identifiers (publication, bibliographic reference, global unique identifier, URI) of literature associated with the Occurrence.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>). Note that the ResourceRelationship class is an alternative means of representing associations, and with more detail. Note also that the intended usage of the term dcterms:references in Darwin Core when applied to an Occurrence is to point to the definitive source representation of that Occurrence if one is available. Note also that the intended usage of dcterms:bibliographicCitation in Darwin Core when applied to an Occurrence is to provide the preferred way to cite the Occurrence itself.</td></tr>
-    <tr><td>Examples</td><td><code><a href="http://www.sciencemag.org/cgi/content/abstract/322/5899/261">http://www.sciencemag.org/cgi/content/abstract/322/5899/261</a></code>; <code>Christopher J. Conroy, Jennifer L. Neuwald. 2008. Phylogeographic study of the California vole, Microtus californicus Journal of Mammalogy, 89(3):755-767.</code>; <code>Steven R. Hoofer and Ronald A. Van Den Bussche. 2001. Phylogenetic Relationships of Plecotine Bats and Allies Based on Mitochondrial Ribosomal Sequences. Journal of Mammalogy 82(1):131-137. | Walker, Faith M., Jeffrey T. Foster, Kevin P. Drees, Carol L. Chambers. 2014. Spotted bat (Euderma maculatum) microsatellite discovery using illumina sequencing. Conservation Genetics Resources.</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="http://www.sciencemag.org/cgi/content/abstract/322/5899/261">http://www.sciencemag.org/cgi/content/abstract/322/5899/261</a></code></li><li class="list-group-item"><code>Christopher J. Conroy, Jennifer L. Neuwald. 2008. Phylogeographic study of the California vole, Microtus californicus Journal of Mammalogy, 89(3):755-767.</code></li><li class="list-group-item"><code>Steven R. Hoofer and Ronald A. Van Den Bussche. 2001. Phylogenetic Relationships of Plecotine Bats and Allies Based on Mitochondrial Ribosomal Sequences. Journal of Mammalogy 82(1):131-137. | Walker, Faith M., Jeffrey T. Foster, Kevin P. Drees, Carol L. Chambers. 2014. Spotted bat (Euderma maculatum) microsatellite discovery using illumina sequencing. Conservation Genetics Resources.</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -622,7 +622,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/associatedSequences">http://rs.tdwg.org/dwc/terms/associatedSequences</a></td></tr>
     <tr><td>Definition</td><td>A list (concatenated and separated) of identifiers (publication, global unique identifier, URI) of genetic sequence information associated with the Occurrence.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code><a href="http://www.ncbi.nlm.nih.gov/nuccore/U34853.1">http://www.ncbi.nlm.nih.gov/nuccore/U34853.1</a></code>; <code><a href="http://www.ncbi.nlm.nih.gov/nuccore/GU328060">http://www.ncbi.nlm.nih.gov/nuccore/GU328060</a> | <a href="http://www.ncbi.nlm.nih.gov/nuccore/AF326093">http://www.ncbi.nlm.nih.gov/nuccore/AF326093</a></code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="http://www.ncbi.nlm.nih.gov/nuccore/U34853.1">http://www.ncbi.nlm.nih.gov/nuccore/U34853.1</a></code></li><li class="list-group-item"><code><a href="http://www.ncbi.nlm.nih.gov/nuccore/GU328060">http://www.ncbi.nlm.nih.gov/nuccore/GU328060</a> | <a href="http://www.ncbi.nlm.nih.gov/nuccore/AF326093">http://www.ncbi.nlm.nih.gov/nuccore/AF326093</a></code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -635,7 +635,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/associatedTaxa">http://rs.tdwg.org/dwc/terms/associatedTaxa</a></td></tr>
     <tr><td>Definition</td><td>A list (concatenated and separated) of identifiers or names of taxa and the associations of this Occurrence to each of them.</td></tr>
     <tr><td>Comments</td><td>This term can be used to provide a list of associations to Taxa other than the one defined in the Occurrence. Note that the ResourceRelationship class is an alternative means of representing associations, and with more detail. This term is not apt for establishing relationships between Taxa, only between specific Occurrences of an Organism with other Taxa. Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
-    <tr><td>Examples</td><td><code>"host":"Quercus alba"</code>; <code>"host":"gbif.org/species/2879737"</code>,<code>"parasitoid of":"Cyclocephala signaticollis" | "predator of":"Apis mellifera"</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>"host":"Quercus alba"</code></li><li class="list-group-item"><code>"host":"gbif.org/species/2879737"</code></li><li class="list-group-item"><code>"parasitoid of":"Cyclocephala signaticollis" | "predator of":"Apis mellifera"</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -648,7 +648,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/otherCatalogNumbers">http://rs.tdwg.org/dwc/terms/otherCatalogNumbers</a></td></tr>
     <tr><td>Definition</td><td>A list (concatenated and separated) of previous or alternate fully qualified catalog numbers or other human-used identifiers for the same Occurrence, whether in the current or any other data set or collection.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
-    <tr><td>Examples</td><td><code>FMNH:Mammal:1234</code>; <code>NPS YELLO6778 | MBG 33424</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>FMNH:Mammal:1234</code></li><li class="list-group-item"><code>NPS YELLO6778 | MBG 33424</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -710,7 +710,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/organismName">http://rs.tdwg.org/dwc/terms/organismName</a></td></tr>
     <tr><td>Definition</td><td>A textual name or label assigned to an Organism instance.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>Huberta</code>; <code>Boab Prison Tree</code>; <code>J pod</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Huberta</code></li><li class="list-group-item"><code>Boab Prison Tree</code></li><li class="list-group-item"><code>J pod</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -723,7 +723,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/organismScope">http://rs.tdwg.org/dwc/terms/organismScope</a></td></tr>
     <tr><td>Definition</td><td>A description of the kind of Organism instance. Can be used to indicate whether the Organism instance represents a discrete organism or if it represents a particular type of aggregation.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. This term is not intended to be used to specify a type of taxon. To describe the kind of dwc:Organism using a URI object in RDF, use rdf:type (<a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</a>) instead.</td></tr>
-    <tr><td>Examples</td><td><code>multicellular organism</code>; <code>virus</code>; <code>clone</code>; <code>pack</code>; <code>colony</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>multicellular organism</code></li><li class="list-group-item"><code>virus</code></li><li class="list-group-item"><code>clone</code></li><li class="list-group-item"><code>pack</code></li><li class="list-group-item"><code>colony</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -736,7 +736,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/associatedOrganisms">http://rs.tdwg.org/dwc/terms/associatedOrganisms</a></td></tr>
     <tr><td>Definition</td><td>A list (concatenated and separated) of identifiers of other Organisms and the associations of this Organism to each of them.</td></tr>
     <tr><td>Comments</td><td>This term can be used to provide a list of associations to other Organisms. Note that the ResourceRelationship class is an alternative means of representing associations, and with more detail. Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
-    <tr><td>Examples</td><td><code>"sibling of":"<a href="http://arctos.database.museum/guid/DMNS:Mamm:14171">http://arctos.database.museum/guid/DMNS:Mamm:14171</a>"</code>; <code>"parent of":"<a href="http://arctos.database.museum/guid/MSB:Mamm:196208">http://arctos.database.museum/guid/MSB:Mamm:196208</a>" | "parent of":"<a href="http://arctos.database.museum/guid/MSB:Mamm:196523">http://arctos.database.museum/guid/MSB:Mamm:196523</a>" | "sibling of":"<a href="http://arctos.database.museum/guid/MSB:Mamm:142638">http://arctos.database.museum/guid/MSB:Mamm:142638</a>"</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>"sibling of":"<a href="http://arctos.database.museum/guid/DMNS:Mamm:14171">http://arctos.database.museum/guid/DMNS:Mamm:14171</a>"</code></li><li class="list-group-item"><code>"parent of":"<a href="http://arctos.database.museum/guid/MSB:Mamm:196208">http://arctos.database.museum/guid/MSB:Mamm:196208</a>" | "parent of":"<a href="http://arctos.database.museum/guid/MSB:Mamm:196523">http://arctos.database.museum/guid/MSB:Mamm:196523</a>" | "sibling of":"<a href="http://arctos.database.museum/guid/MSB:Mamm:142638">http://arctos.database.museum/guid/MSB:Mamm:142638</a>"</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -749,7 +749,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/previousIdentifications">http://rs.tdwg.org/dwc/terms/previousIdentifications</a></td></tr>
     <tr><td>Definition</td><td>A list (concatenated and separated) of previous assignments of names to the Organism.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
-    <tr><td>Examples</td><td><code>Chalepidae</code>; <code>Pinus abies</code>; <code>Anthus sp., field ID by G. Iglesias | Anthus correndera, expert ID by C. Cicero 2009-02-12 based on morphology</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Chalepidae</code></li><li class="list-group-item"><code>Pinus abies</code></li><li class="list-group-item"><code>Anthus sp., field ID by G. Iglesias | Anthus correndera, expert ID by C. Cicero 2009-02-12 based on morphology</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -854,7 +854,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/parentEventID">http://rs.tdwg.org/dwc/terms/parentEventID</a></td></tr>
     <tr><td>Definition</td><td>An identifier for the broader Event that groups this and potentially other Events.</td></tr>
     <tr><td>Comments</td><td>Use a globally unique identifier for a dwc:Event or an identifier for a dwc:Event that is specific to the data set.</td></tr>
-    <tr><td>Examples</td><td><code>A1</code> (parentEventID to identify the main Whittaker Plot in nested samples, each with its own eventID - <code>A1:1</code>; <code>A1:2</code>).</td></tr>
+    <tr><td>Examples</td><td><code>A1</code> (parentEventID to identify the main Whittaker Plot in nested samples, each with its own eventID - <code>A1:1</code>, <code>A1:2</code>).</td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -880,7 +880,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/eventDate">http://rs.tdwg.org/dwc/terms/eventDate</a></td></tr>
     <tr><td>Definition</td><td>The date-time or interval during which an Event occurred. For occurrences, this is the date-time when the event was recorded. Not suitable for a time in a geological context.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to use a date that conforms to ISO 8601-1:2019.</td></tr>
-    <tr><td>Examples</td><td><code>1963-03-08T14:07-0600</code> (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC); <code>2009-02-20T08:40Z</code> (20 February 2009 8:40am UTC); <code>2018-08-29T15:19</code> (3:19pm local time on 29 August 2018); <code>1809-02-12</code> (some time during 12 February 1809); <code>1906-06</code> (some time in June 1906); <code>1971</code> (some time in the year 1971); <code>2007-03-01T13:00:00Z/2008-05-11T15:30:00Z</code> (some time during the interval between 1 March 2007 1pm UTC and 11 May 2008 3:30pm UTC); <code>1900/1909</code> (some time during the interval between the beginning of the year 1900 and the end of the year 1909); <code>2007-11-13/15</code> (some time in the interval between 13 November 2007 and 15 November 2007)</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>1963-03-08T14:07-0600</code> (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC)</li><li class="list-group-item"><code>2009-02-20T08:40Z</code> (20 February 2009 8:40am UTC)</li><li class="list-group-item"><code>2018-08-29T15:19</code> (3:19pm local time on 29 August 2018)</li><li class="list-group-item"><code>1809-02-12</code> (some time during 12 February 1809)</li><li class="list-group-item"><code>1906-06</code> (some time in June 1906)</li><li class="list-group-item"><code>1971</code> (some time in the year 1971)</li><li class="list-group-item"><code>2007-03-01T13:00:00Z/2008-05-11T15:30:00Z</code> (some time during the interval between 1 March 2007 1pm UTC and 11 May 2008 3:30pm UTC)</li><li class="list-group-item"><code>1900/1909</code> (some time during the interval between the beginning of the year 1900 and the end of the year 1909)</li><li class="list-group-item"><code>2007-11-13/15</code> (some time in the interval between 13 November 2007 and 15 November 2007)</li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -893,7 +893,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/eventTime">http://rs.tdwg.org/dwc/terms/eventTime</a></td></tr>
     <tr><td>Definition</td><td>The time or interval during which an Event occurred.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to use a date that conforms to ISO 8601-1:2019.</td></tr>
-    <tr><td>Examples</td><td><code>14:07-0600</code> (2:07pm in the time zone six hours earlier than UTC); <code>08:40:21Z</code> (8:40:21am UTC); <code>13:00:00Z/15:30:00Z</code> (the interval between 1pm UTC and 3:30pm UTC)</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>14:07-0600</code> (2:07pm in the time zone six hours earlier than UTC)</li><li class="list-group-item"><code>08:40:21Z</code> (8:40:21am UTC)</li><li class="list-group-item"><code>13:00:00Z/15:30:00Z</code> (the interval between 1pm UTC and 3:30pm UTC)</li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -906,7 +906,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/startDayOfYear">http://rs.tdwg.org/dwc/terms/startDayOfYear</a></td></tr>
     <tr><td>Definition</td><td>The earliest integer day of the year on which the Event occurred (1 for January 1, 365 for December 31, except in a leap year, in which case it is 366).</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>1</code> (1 January); <code>366</code> (31 December); <code>365</code> (30 December in a leap year, 31 December in a non-leap year)</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>1</code> (1 January)</li><li class="list-group-item"><code>366</code> (31 December)</li><li class="list-group-item"><code>365</code> (30 December in a leap year, 31 December in a non-leap year)</li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -919,7 +919,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/endDayOfYear">http://rs.tdwg.org/dwc/terms/endDayOfYear</a></td></tr>
     <tr><td>Definition</td><td>The latest integer day of the year on which the Event occurred (1 for January 1, 365 for December 31, except in a leap year, in which case it is 366).</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>1</code> (1 January); <code>32</code> (1 February); <code>366</code> (31 December); <code>365</code> (30 December in a leap year, 31 December in a non-leap year)</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>1</code> (1 January)</li><li class="list-group-item"><code>32</code> (1 February)</li><li class="list-group-item"><code>366</code> (31 December)</li><li class="list-group-item"><code>365</code> (30 December in a leap year, 31 December in a non-leap year)</li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -932,7 +932,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/year">http://rs.tdwg.org/dwc/terms/year</a></td></tr>
     <tr><td>Definition</td><td>The four-digit year in which the Event occurred, according to the Common Era Calendar.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>1160</code>; <code>2008</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>1160</code></li><li class="list-group-item"><code>2008</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -945,7 +945,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/month">http://rs.tdwg.org/dwc/terms/month</a></td></tr>
     <tr><td>Definition</td><td>The integer month in which the Event occurred.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>1</code> (January); <code>10</code> (October)</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>1</code> (January)</li><li class="list-group-item"><code>10</code> (October)</li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -958,7 +958,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/day">http://rs.tdwg.org/dwc/terms/day</a></td></tr>
     <tr><td>Definition</td><td>The integer day of the month on which the Event occurred.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>9</code>; <code>28</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>9</code></li><li class="list-group-item"><code>28</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -971,7 +971,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimEventDate">http://rs.tdwg.org/dwc/terms/verbatimEventDate</a></td></tr>
     <tr><td>Definition</td><td>The verbatim original representation of the date and time information for an Event.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>spring 1910</code>; <code>Marzo 2002</code>; <code>1999-03-XX</code>; <code>17IV1934</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>spring 1910</code></li><li class="list-group-item"><code>Marzo 2002</code></li><li class="list-group-item"><code>1999-03-XX</code></li><li class="list-group-item"><code>17IV1934</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -984,7 +984,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/habitat">http://rs.tdwg.org/dwc/terms/habitat</a></td></tr>
     <tr><td>Definition</td><td>A category or description of the habitat in which the Event occurred.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>oak savanna</code>; <code>pre-cordilleran steppe</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>oak savanna</code></li><li class="list-group-item"><code>pre-cordilleran steppe</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -997,7 +997,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/samplingProtocol">http://rs.tdwg.org/dwc/terms/samplingProtocol</a></td></tr>
     <tr><td>Definition</td><td>The names of, references to, or descriptions of the methods or protocols used during an Event.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is describe an Event with no more than one sampling protocol. In the case of a summary Event with multiple protocols, in which a specific protocol can not be attributed to specific Occurrences, the recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
-    <tr><td>Examples</td><td><code>UV light trap</code>; <code>mist net</code>; <code>bottom trawl</code>; <code>ad hoc observation | point count</code>; <code>Penguins from space: faecal stains reveal the location of emperor penguin colonies, <a href="https://doi.org/10.1111/j.1466-8238.2009.00467.x">https://doi.org/10.1111/j.1466-8238.2009.00467.x</a></code>; <code>Takats et al. 2001. Guidelines for Nocturnal Owl Monitoring in North America. Beaverhill Bird Observatory and Bird Studies Canada, Edmonton, Alberta. 32 pp., <a href="http://www.bsc-eoc.org/download/Owl.pdf">http://www.bsc-eoc.org/download/Owl.pdf</a></code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>UV light trap</code></li><li class="list-group-item"><code>mist net</code></li><li class="list-group-item"><code>bottom trawl</code></li><li class="list-group-item"><code>ad hoc observation | point count</code></li><li class="list-group-item"><code>Penguins from space: faecal stains reveal the location of emperor penguin colonies, <a href="https://doi.org/10.1111/j.1466-8238.2009.00467.x">https://doi.org/10.1111/j.1466-8238.2009.00467.x</a></code></li><li class="list-group-item"><code>Takats et al. 2001. Guidelines for Nocturnal Owl Monitoring in North America. Beaverhill Bird Observatory and Bird Studies Canada, Edmonton, Alberta. 32 pp., <a href="http://www.bsc-eoc.org/download/Owl.pdf">http://www.bsc-eoc.org/download/Owl.pdf</a></code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -1023,7 +1023,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/sampleSizeUnit">http://rs.tdwg.org/dwc/terms/sampleSizeUnit</a></td></tr>
     <tr><td>Definition</td><td>The unit of measurement of the size (time duration, length, area, or volume) of a sample in a sampling event.</td></tr>
     <tr><td>Comments</td><td>A sampleSizeUnit must have a corresponding sampleSizeValue, e.g., <code>5</code> for sampleSizeValue with <code>metre</code> for sampleSizeUnit.</td></tr>
-    <tr><td>Examples</td><td><code>minute</code>; <code>hour</code>; <code>day</code>; <code>metre</code>; <code>square metre</code>; <code>cubic metre</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>minute</code></li><li class="list-group-item"><code>hour</code></li><li class="list-group-item"><code>day</code></li><li class="list-group-item"><code>metre</code></li><li class="list-group-item"><code>square metre</code></li><li class="list-group-item"><code>cubic metre</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -1036,7 +1036,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/samplingEffort">http://rs.tdwg.org/dwc/terms/samplingEffort</a></td></tr>
     <tr><td>Definition</td><td>The amount of effort expended during an Event.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>40 trap-nights</code>; <code>10 observer-hours</code>; <code>10 km by foot</code>; <code>30 km by car</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>40 trap-nights</code></li><li class="list-group-item"><code>10 observer-hours</code></li><li class="list-group-item"><code>10 km by foot</code></li><li class="list-group-item"><code>30 km by car</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -1162,7 +1162,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/higherGeography">http://rs.tdwg.org/dwc/terms/higherGeography</a></td></tr>
     <tr><td>Definition</td><td>A list (concatenated and separated) of geographic names less specific than the information captured in the locality term.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>), with terms in order from least specific to most specific.</td></tr>
-    <tr><td>Examples</td><td><code>North Atlantic Ocean</code>; <code>South America | Argentina | Patagonia | Parque Nacional Nahuel Huapi | Neuquén | Los Lagos</code> with accompanying values <code>South America</code> (continent) <code>Argentina</code> (country), <code>Neuquén</code> (stateProvince), and <code>Los Lagos</code> (county)</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>North Atlantic Ocean</code></li><li class="list-group-item"><code>South America | Argentina | Patagonia | Parque Nacional Nahuel Huapi | Neuquén | Los Lagos</code> with accompanying values <code>South America</code> (continent) <code>Argentina</code> (country), <code>Neuquén</code> (stateProvince), and <code>Los Lagos</code> (county)</li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -1175,7 +1175,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/continent">http://rs.tdwg.org/dwc/terms/continent</a></td></tr>
     <tr><td>Definition</td><td>The name of the continent in which the Location occurs.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names.</td></tr>
-    <tr><td>Examples</td><td><code>Africa</code>; <code>Antarctica</code>; <code>Asia</code>; <code>Europe</code>; <code>North America</code>; <code>Oceania</code>; <code>South America</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Africa</code></li><li class="list-group-item"><code>Antarctica</code></li><li class="list-group-item"><code>Asia</code></li><li class="list-group-item"><code>Europe</code></li><li class="list-group-item"><code>North America</code></li><li class="list-group-item"><code>Oceania</code></li><li class="list-group-item"><code>South America</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -1188,7 +1188,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/waterBody">http://rs.tdwg.org/dwc/terms/waterBody</a></td></tr>
     <tr><td>Definition</td><td>The name of the water body in which the Location occurs.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names.</td></tr>
-    <tr><td>Examples</td><td><code>Indian Ocean</code>; <code>Baltic Sea</code>; <code>Hudson River</code>; <code>Lago Nahuel Huapi</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Indian Ocean</code></li><li class="list-group-item"><code>Baltic Sea</code></li><li class="list-group-item"><code>Hudson River</code></li><li class="list-group-item"><code>Lago Nahuel Huapi</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -1201,7 +1201,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/islandGroup">http://rs.tdwg.org/dwc/terms/islandGroup</a></td></tr>
     <tr><td>Definition</td><td>The name of the island group in which the Location occurs.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names.</td></tr>
-    <tr><td>Examples</td><td><code>Alexander Archipelago</code>; <code>Archipiélago Diego Ramírez</code>; <code>Seychelles</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Alexander Archipelago</code></li><li class="list-group-item"><code>Archipiélago Diego Ramírez</code></li><li class="list-group-item"><code>Seychelles</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -1214,7 +1214,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/island">http://rs.tdwg.org/dwc/terms/island</a></td></tr>
     <tr><td>Definition</td><td>The name of the island on or near which the Location occurs.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names.</td></tr>
-    <tr><td>Examples</td><td><code>Nosy Be</code>; <code>Bikini Atoll</code>; <code>Vancouver</code>; <code>Viti Levu</code>; <code>Zanzibar</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Nosy Be</code></li><li class="list-group-item"><code>Bikini Atoll</code></li><li class="list-group-item"><code>Vancouver</code></li><li class="list-group-item"><code>Viti Levu</code></li><li class="list-group-item"><code>Zanzibar</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -1227,7 +1227,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/country">http://rs.tdwg.org/dwc/terms/country</a></td></tr>
     <tr><td>Definition</td><td>The name of the country or major administrative unit in which the Location occurs.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names. Recommended best practice is to leave this field blank if the Location spans multiple entities at this administrative level or if the Location might be in one or another of multiple possible entities at this level. Multiplicity and uncertainty of the geographic entity can be captured either in the term higherGeography or in the term locality, or both.</td></tr>
-    <tr><td>Examples</td><td><code>Denmark</code>; <code>Colombia</code>; <code>España</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Denmark</code></li><li class="list-group-item"><code>Colombia</code></li><li class="list-group-item"><code>España</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -1240,7 +1240,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/countryCode">http://rs.tdwg.org/dwc/terms/countryCode</a></td></tr>
     <tr><td>Definition</td><td>The standard code for the country in which the Location occurs.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to use an ISO 3166-1-alpha-2 country code.</td></tr>
-    <tr><td>Examples</td><td><code>AR</code>; <code>SV</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>AR</code></li><li class="list-group-item"><code>SV</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -1253,7 +1253,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/stateProvince">http://rs.tdwg.org/dwc/terms/stateProvince</a></td></tr>
     <tr><td>Definition</td><td>The name of the next smaller administrative region than country (state, province, canton, department, region, etc.) in which the Location occurs.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names.</td></tr>
-    <tr><td>Examples</td><td><code>Montana</code>; <code>Minas Gerais</code>; <code>Córdoba</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Montana</code></li><li class="list-group-item"><code>Minas Gerais</code></li><li class="list-group-item"><code>Córdoba</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -1266,7 +1266,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/county">http://rs.tdwg.org/dwc/terms/county</a></td></tr>
     <tr><td>Definition</td><td>The full, unabbreviated name of the next smaller administrative region than stateProvince (county, shire, department, etc.) in which the Location occurs.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names.</td></tr>
-    <tr><td>Examples</td><td><code>Missoula</code>; <code>Los Lagos</code>; <code>Mataró</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Missoula</code></li><li class="list-group-item"><code>Los Lagos</code></li><li class="list-group-item"><code>Mataró</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -1279,7 +1279,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/municipality">http://rs.tdwg.org/dwc/terms/municipality</a></td></tr>
     <tr><td>Definition</td><td>The full, unabbreviated name of the next smaller administrative region than county (city, municipality, etc.) in which the Location occurs. Do not use this term for a nearby named place that does not contain the actual location.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names.</td></tr>
-    <tr><td>Examples</td><td><code>Holzminden</code>; <code>Araçatuba</code>; <code>Ga-Segonyana</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Holzminden</code></li><li class="list-group-item"><code>Araçatuba</code></li><li class="list-group-item"><code>Ga-Segonyana</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -1292,7 +1292,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/locality">http://rs.tdwg.org/dwc/terms/locality</a></td></tr>
     <tr><td>Definition</td><td>The specific description of the place.</td></tr>
     <tr><td>Comments</td><td>Less specific geographic information can be provided in other geographic terms (higherGeography, continent, country, stateProvince, county, municipality, waterBody, island, islandGroup). This term may contain information modified from the original to correct perceived errors or standardize the description.</td></tr>
-    <tr><td>Examples</td><td><code>Bariloche, 25 km NNE via Ruta Nacional 40 (=Ruta 237)</code>; <code>Queets Rainforest, Olympic National Park</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Bariloche, 25 km NNE via Ruta Nacional 40 (=Ruta 237)</code></li><li class="list-group-item"><code>Queets Rainforest, Olympic National Park</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -1318,7 +1318,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/minimumElevationInMeters">http://rs.tdwg.org/dwc/terms/minimumElevationInMeters</a></td></tr>
     <tr><td>Definition</td><td>The lower limit of the range of elevation (altitude, usually above sea level), in meters.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>-100</code>; <code>802</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>-100</code></li><li class="list-group-item"><code>802</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -1331,7 +1331,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/maximumElevationInMeters">http://rs.tdwg.org/dwc/terms/maximumElevationInMeters</a></td></tr>
     <tr><td>Definition</td><td>The upper limit of the range of elevation (altitude, usually above sea level), in meters.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>-205</code>; <code>1236</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>-205</code></li><li class="list-group-item"><code>1236</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -1357,7 +1357,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verticalDatum">http://rs.tdwg.org/dwc/terms/verticalDatum</a></td></tr>
     <tr><td>Definition</td><td>The vertical datum used as the reference upon which the values in the elevation terms are based.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
-    <tr><td>Examples</td><td><code>EGM84</code>; <code>EGM96</code>; <code>EGM2008</code>; <code>PGM2000A</code>; <code>PGM2004</code>; <code>PGM2006</code>; <code>PGM2007</code>; <code>epsg:7030</code>; <code>unknown</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>EGM84</code></li><li class="list-group-item"><code>EGM96</code></li><li class="list-group-item"><code>EGM2008</code></li><li class="list-group-item"><code>PGM2000A</code></li><li class="list-group-item"><code>PGM2004</code></li><li class="list-group-item"><code>PGM2006</code></li><li class="list-group-item"><code>PGM2007</code></li><li class="list-group-item"><code>epsg:7030</code></li><li class="list-group-item"><code>unknown</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -1370,7 +1370,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/minimumDepthInMeters">http://rs.tdwg.org/dwc/terms/minimumDepthInMeters</a></td></tr>
     <tr><td>Definition</td><td>The lesser depth of a range of depth below the local surface, in meters.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>0</code>; <code>100</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>0</code></li><li class="list-group-item"><code>100</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -1383,7 +1383,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/maximumDepthInMeters">http://rs.tdwg.org/dwc/terms/maximumDepthInMeters</a></td></tr>
     <tr><td>Definition</td><td>The greater depth of a range of depth below the local surface, in meters.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>0</code>; <code>200</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>0</code></li><li class="list-group-item"><code>200</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -1409,7 +1409,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/minimumDistanceAboveSurfaceInMeters">http://rs.tdwg.org/dwc/terms/minimumDistanceAboveSurfaceInMeters</a></td></tr>
     <tr><td>Definition</td><td>The lesser distance in a range of distance from a reference surface in the vertical direction, in meters. Use positive values for locations above the surface, negative values for locations below. If depth measures are given, the reference surface is the location given by the depth, otherwise the reference surface is the location given by the elevation.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>-1.5</code> (below the surface); <code>4.2</code> (above the surface); For a 1.5 meter sediment core from the bottom of a lake (at depth 20m) at 300m elevation: verbatimElevation: <code>300m</code> minimumElevationInMeters: <code>300</code>, maximumElevationInMeters: <code>300</code>, verbatimDepth: <code>20m</code>, minimumDepthInMeters: <code>20</code>, maximumDepthInMeters: <code>20</code>, minimumDistanceAboveSurfaceInMeters: <code>0</code>, maximumDistanceAboveSurfaceInMeters: <code>-1.5</code>.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>-1.5</code> (below the surface)</li><li class="list-group-item"><code>4.2</code> (above the surface)</li><li class="list-group-item">For a 1.5 meter sediment core from the bottom of a lake (at depth 20m) at 300m elevation: verbatimElevation: <code>300m</code> minimumElevationInMeters: <code>300</code>, maximumElevationInMeters: <code>300</code>, verbatimDepth: <code>20m</code>, minimumDepthInMeters: <code>20</code>, maximumDepthInMeters: <code>20</code>, minimumDistanceAboveSurfaceInMeters: <code>0</code>, maximumDistanceAboveSurfaceInMeters: <code>-1.5</code>.</li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -1422,7 +1422,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/maximumDistanceAboveSurfaceInMeters">http://rs.tdwg.org/dwc/terms/maximumDistanceAboveSurfaceInMeters</a></td></tr>
     <tr><td>Definition</td><td>The greater distance in a range of distance from a reference surface in the vertical direction, in meters. Use positive values for locations above the surface, negative values for locations below. If depth measures are given, the reference surface is the location given by the depth, otherwise the reference surface is the location given by the elevation.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>-1.5</code> (below the surface); <code>4.2</code> (above the surface); For a 1.5 meter sediment core from the bottom of a lake (at depth 20m) at 300m elevation: verbatimElevation: <code>300m</code> minimumElevationInMeters: <code>300</code>, maximumElevationInMeters: <code>300</code>, verbatimDepth: <code>20m</code>, minimumDepthInMeters: <code>20</code>, maximumDepthInMeters: <code>20</code>, minimumDistanceAboveSurfaceInMeters: <code>0</code>, maximumDistanceAboveSurfaceInMeters: <code>-1.5</code>.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>-1.5</code> (below the surface)</li><li class="list-group-item"><code>4.2</code> (above the surface)</li><li class="list-group-item">For a 1.5 meter sediment core from the bottom of a lake (at depth 20m) at 300m elevation: verbatimElevation: <code>300m</code> minimumElevationInMeters: <code>300</code>, maximumElevationInMeters: <code>300</code>, verbatimDepth: <code>20m</code>, minimumDepthInMeters: <code>20</code>, maximumDepthInMeters: <code>20</code>, minimumDistanceAboveSurfaceInMeters: <code>0</code>, maximumDistanceAboveSurfaceInMeters: <code>-1.5</code>.</li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -1435,7 +1435,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/locationAccordingTo">http://rs.tdwg.org/dwc/terms/locationAccordingTo</a></td></tr>
     <tr><td>Definition</td><td>Information about the source of this Location information. Could be a publication (gazetteer), institution, or team of individuals.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>Getty Thesaurus of Geographic Names</code>; <code>GADM</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Getty Thesaurus of Geographic Names</code></li><li class="list-group-item"><code>GADM</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -1487,7 +1487,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/geodeticDatum">http://rs.tdwg.org/dwc/terms/geodeticDatum</a></td></tr>
     <tr><td>Definition</td><td>The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which the geographic coordinates given in decimalLatitude and decimalLongitude as based.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to use the EPSG code of the SRS, if known. Otherwise use a controlled vocabulary for the name or code of the geodetic datum, if known. Otherwise use a controlled vocabulary for the name or code of the ellipsoid, if known. If none of these is known, use the value <code>unknown</code>.</td></tr>
-    <tr><td>Examples</td><td><code>EPSG:4326</code>; <code>WGS84</code>; <code>NAD27</code>; <code>Campo Inchauspe</code>; <code>European 1950</code>; <code>Clarke 1866</code>; <code>unknown</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>EPSG:4326</code></li><li class="list-group-item"><code>WGS84</code></li><li class="list-group-item"><code>NAD27</code></li><li class="list-group-item"><code>Campo Inchauspe</code></li><li class="list-group-item"><code>European 1950</code></li><li class="list-group-item"><code>Clarke 1866</code></li><li class="list-group-item"><code>unknown</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -1500,7 +1500,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/coordinateUncertaintyInMeters">http://rs.tdwg.org/dwc/terms/coordinateUncertaintyInMeters</a></td></tr>
     <tr><td>Definition</td><td>The horizontal distance (in meters) from the given decimalLatitude and decimalLongitude describing the smallest circle containing the whole of the Location. Leave the value empty if the uncertainty is unknown, cannot be estimated, or is not applicable (because there are no coordinates). Zero is not a valid value for this term.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>30</code> (reasonable lower limit on or after 2020-05-01 of a GPS reading under good conditions if the actual precision was not recorded at the time); <code>100</code> (reasonable lower limit before 2020-05-01 of a GPS reading under good conditions if the actual precision was not recorded at the time); <code>71</code> (uncertainty for a UTM coordinate having 100 meter precision and a known spatial reference system)</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>30</code> (reasonable lower limit on or after 2020-05-01 of a GPS reading under good conditions if the actual precision was not recorded at the time)</li><li class="list-group-item"><code>100</code> (reasonable lower limit before 2020-05-01 of a GPS reading under good conditions if the actual precision was not recorded at the time)</li><li class="list-group-item"><code>71</code> (uncertainty for a UTM coordinate having 100 meter precision and a known spatial reference system)</li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -1513,7 +1513,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/coordinatePrecision">http://rs.tdwg.org/dwc/terms/coordinatePrecision</a></td></tr>
     <tr><td>Definition</td><td>A decimal representation of the precision of the coordinates given in the decimalLatitude and decimalLongitude.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>0.00001</code> (normal GPS limit for decimal degrees); <code>0.000278</code> (nearest second); <code>0.01667</code> (nearest minute); <code>1.0</code> (nearest degree)</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>0.00001</code> (normal GPS limit for decimal degrees)</li><li class="list-group-item"><code>0.000278</code> (nearest second)</li><li class="list-group-item"><code>0.01667</code> (nearest minute)</li><li class="list-group-item"><code>1.0</code> (nearest degree)</li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -1526,7 +1526,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/pointRadiusSpatialFit">http://rs.tdwg.org/dwc/terms/pointRadiusSpatialFit</a></td></tr>
     <tr><td>Definition</td><td>The ratio of the area of the point-radius (decimalLatitude, decimalLongitude, coordinateUncertaintyInMeters) to the area of the true (original, or most specific) spatial representation of the Location. Legal values are 0, greater than or equal to 1, or undefined. A value of 1 is an exact match or 100% overlap. A value of 0 should be used if the given point-radius does not completely contain the original representation. The pointRadiusSpatialFit is undefined (and should be left empty) if the original representation is a point without uncertainty and the given georeference is not that same point (without uncertainty). If both the original and the given georeference are the same point, the pointRadiusSpatialFit is 1.</td></tr>
     <tr><td>Comments</td><td>Detailed explanations with graphical examples can be found in the Georeferencing Best Practices, Chapman and Wieczorek, 2020 (<a href="https://doi.org/10.15468/doc-gg7h-s853">https://doi.org/10.15468/doc-gg7h-s853</a>).</td></tr>
-    <tr><td>Examples</td><td><code>0</code>; <code>1</code>; <code>1.5708</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>0</code></li><li class="list-group-item"><code>1</code></li><li class="list-group-item"><code>1.5708</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -1539,7 +1539,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimCoordinates">http://rs.tdwg.org/dwc/terms/verbatimCoordinates</a></td></tr>
     <tr><td>Definition</td><td>The verbatim original spatial coordinates of the Location. The coordinate ellipsoid, geodeticDatum, or full Spatial Reference System (SRS) for these coordinates should be stored in verbatimSRS and the coordinate system should be stored in verbatimCoordinateSystem.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>41 05 54S 121 05 34W</code>; <code>17T 630000 4833400</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>41 05 54S 121 05 34W</code></li><li class="list-group-item"><code>17T 630000 4833400</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -1578,7 +1578,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimCoordinateSystem">http://rs.tdwg.org/dwc/terms/verbatimCoordinateSystem</a></td></tr>
     <tr><td>Definition</td><td>The coordinate format for the verbatimLatitude and verbatimLongitude or the verbatimCoordinates of the Location.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
-    <tr><td>Examples</td><td><code>decimal degrees</code>; <code>degrees decimal minutes</code>; <code>degrees minutes seconds</code>; <code>UTM</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>decimal degrees</code></li><li class="list-group-item"><code>degrees decimal minutes</code></li><li class="list-group-item"><code>degrees minutes seconds</code></li><li class="list-group-item"><code>UTM</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -1591,7 +1591,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimSRS">http://rs.tdwg.org/dwc/terms/verbatimSRS</a></td></tr>
     <tr><td>Definition</td><td>The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which coordinates given in verbatimLatitude and verbatimLongitude, or verbatimCoordinates are based.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to use the EPSG code of the SRS, if known. Otherwise use a controlled vocabulary for the name or code of the geodetic datum, if known. Otherwise use a controlled vocabulary for the name or code of the ellipsoid, if known. If none of these is known, use the value <code>unknown</code>.</td></tr>
-    <tr><td>Examples</td><td><code>unknown</code>; <code>EPSG:4326</code>; <code>WGS84</code>; <code>NAD27</code>; <code>Campo Inchauspe</code>; <code>European 1950</code>; <code>Clarke 1866</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>unknown</code></li><li class="list-group-item"><code>EPSG:4326</code></li><li class="list-group-item"><code>WGS84</code></li><li class="list-group-item"><code>NAD27</code></li><li class="list-group-item"><code>Campo Inchauspe</code></li><li class="list-group-item"><code>European 1950</code></li><li class="list-group-item"><code>Clarke 1866</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -1617,7 +1617,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/footprintSRS">http://rs.tdwg.org/dwc/terms/footprintSRS</a></td></tr>
     <tr><td>Definition</td><td>The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which the geometry given in footprintWKT is based.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to use the EPSG code of the SRS, if known. Otherwise use a controlled vocabulary for the name or code of the geodetic datum, if known. Otherwise use a controlled vocabulary for the name or code of the ellipsoid, if known. If none of these is known, use the value <code>unknown</code>. It is also permitted to provide the SRS in Well-Known-Text, especially if no EPSG code provides the necessary values for the attributes of the SRS. Do not use this term to describe the SRS of the decimalLatitude and decimalLongitude, nor of any verbatim coordinates - use the geodeticDatum and verbatimSRS instead.</td></tr>
-    <tr><td>Examples</td><td><code>epsg:4326</code>; <code>GEOGCS["GCS_WGS_1984", DATUM["D_WGS_1984", SPHEROID["WGS_1984",6378137,298.257223563]], PRIMEM["Greenwich",0], UNIT["Degree",0.0174532925199433]]</code> (WKT for the standard WGS84 Spatial Reference System EPSG:4326)</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>epsg:4326</code></li><li class="list-group-item"><code>GEOGCS["GCS_WGS_1984", DATUM["D_WGS_1984", SPHEROID["WGS_1984",6378137,298.257223563]], PRIMEM["Greenwich",0], UNIT["Degree",0.0174532925199433]]</code> (WKT for the standard WGS84 Spatial Reference System EPSG:4326)</li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -1630,7 +1630,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/footprintSpatialFit">http://rs.tdwg.org/dwc/terms/footprintSpatialFit</a></td></tr>
     <tr><td>Definition</td><td>The ratio of the area of the footprint (footprintWKT) to the area of the true (original, or most specific) spatial representation of the Location. Legal values are 0, greater than or equal to 1, or undefined. A value of 1 is an exact match or 100% overlap. A value of 0 should be used if the given footprint does not completely contain the original representation. The footprintSpatialFit is undefined (and should be left empty) if the original representation is a point without uncertainty and the given georeference is not that same point (without uncertainty). If both the original and the given georeference are the same point, the footprintSpatialFit is 1.</td></tr>
     <tr><td>Comments</td><td>Detailed explanations with graphical examples can be found in the Georeferencing Best Practices, Chapman and Wieczorek, 2020 (<a href="https://doi.org/10.15468/doc-gg7h-s853">https://doi.org/10.15468/doc-gg7h-s853</a>).</td></tr>
-    <tr><td>Examples</td><td><code>0</code>; <code>1</code>; <code>1.5708</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>0</code></li><li class="list-group-item"><code>1</code></li><li class="list-group-item"><code>1.5708</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -1643,7 +1643,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/georeferencedBy">http://rs.tdwg.org/dwc/terms/georeferencedBy</a></td></tr>
     <tr><td>Definition</td><td>A list (concatenated and separated) of names of people, groups, or organizations who determined the georeference (spatial representation) for the Location.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
-    <tr><td>Examples</td><td><code>Brad Millen (ROM)</code>; <code>Kristina Yamamoto | Janet Fang</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Brad Millen (ROM)</code></li><li class="list-group-item"><code>Kristina Yamamoto | Janet Fang</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -1656,7 +1656,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/georeferencedDate">http://rs.tdwg.org/dwc/terms/georeferencedDate</a></td></tr>
     <tr><td>Definition</td><td>The date on which the Location was georeferenced.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to use a date that conforms to ISO 8601-1:2019.</td></tr>
-    <tr><td>Examples</td><td><code>1963-03-08T14:07-0600</code> (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC); <code>2009-02-20T08:40Z</code> (20 February 2009 8:40am UTC); <code>2018-08-29T15:19</code> (3:19pm local time on 29 August 2018); <code>1809-02-12</code> (some time during 12 February 1809); <code>1906-06</code> (some time in June 1906); <code>1971</code> (some time in the year 1971); <code>2007-03-01T13:00:00Z/2008-05-11T15:30:00Z</code> (some time during the interval between 1 March 2007 1pm UTC and 11 May 2008 3:30pm UTC); <code>1900/1909</code> (some time during the interval between the beginning of the year 1900 and the end of the year 1909); <code>2007-11-13/15</code> (some time in the interval between 13 November 2007 and 15 November 2007)</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>1963-03-08T14:07-0600</code> (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC)</li><li class="list-group-item"><code>2009-02-20T08:40Z</code> (20 February 2009 8:40am UTC)</li><li class="list-group-item"><code>2018-08-29T15:19</code> (3:19pm local time on 29 August 2018)</li><li class="list-group-item"><code>1809-02-12</code> (some time during 12 February 1809)</li><li class="list-group-item"><code>1906-06</code> (some time in June 1906)</li><li class="list-group-item"><code>1971</code> (some time in the year 1971)</li><li class="list-group-item"><code>2007-03-01T13:00:00Z/2008-05-11T15:30:00Z</code> (some time during the interval between 1 March 2007 1pm UTC and 11 May 2008 3:30pm UTC)</li><li class="list-group-item"><code>1900/1909</code> (some time during the interval between the beginning of the year 1900 and the end of the year 1909)</li><li class="list-group-item"><code>2007-11-13/15</code> (some time in the interval between 13 November 2007 and 15 November 2007)</li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -1682,7 +1682,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/georeferenceSources">http://rs.tdwg.org/dwc/terms/georeferenceSources</a></td></tr>
     <tr><td>Definition</td><td>A list (concatenated and separated) of maps, gazetteers, or other resources used to georeference the Location, described specifically enough to allow anyone in the future to use the same resources.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
-    <tr><td>Examples</td><td><code><a href="https://www.geonames.org/">https://www.geonames.org/</a></code>; <code>USGS 1:24000 Florence Montana Quad 1967 | Terrametrics 2008 on Google Earth</code>; <code>GeoLocate</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="https://www.geonames.org/">https://www.geonames.org/</a></code></li><li class="list-group-item"><code>USGS 1:24000 Florence Montana Quad 1967 | Terrametrics 2008 on Google Earth</code></li><li class="list-group-item"><code>GeoLocate</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -1756,7 +1756,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/earliestEonOrLowestEonothem">http://rs.tdwg.org/dwc/terms/earliestEonOrLowestEonothem</a></td></tr>
     <tr><td>Definition</td><td>The full name of the earliest possible geochronologic eon or lowest chrono-stratigraphic eonothem or the informal name ("Precambrian") attributable to the stratigraphic horizon from which the cataloged item was collected.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>Phanerozoic</code>; <code>Proterozoic</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Phanerozoic</code></li><li class="list-group-item"><code>Proterozoic</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -1769,7 +1769,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/latestEonOrHighestEonothem">http://rs.tdwg.org/dwc/terms/latestEonOrHighestEonothem</a></td></tr>
     <tr><td>Definition</td><td>The full name of the latest possible geochronologic eon or highest chrono-stratigraphic eonothem or the informal name ("Precambrian") attributable to the stratigraphic horizon from which the cataloged item was collected.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>Phanerozoic</code>; <code>Proterozoic</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Phanerozoic</code></li><li class="list-group-item"><code>Proterozoic</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -1782,7 +1782,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/earliestEraOrLowestErathem">http://rs.tdwg.org/dwc/terms/earliestEraOrLowestErathem</a></td></tr>
     <tr><td>Definition</td><td>The full name of the earliest possible geochronologic era or lowest chronostratigraphic erathem attributable to the stratigraphic horizon from which the cataloged item was collected.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>Cenozoic</code>; <code>Mesozoic</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Cenozoic</code></li><li class="list-group-item"><code>Mesozoic</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -1795,7 +1795,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/latestEraOrHighestErathem">http://rs.tdwg.org/dwc/terms/latestEraOrHighestErathem</a></td></tr>
     <tr><td>Definition</td><td>The full name of the latest possible geochronologic era or highest chronostratigraphic erathem attributable to the stratigraphic horizon from which the cataloged item was collected.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>Cenozoic</code>; <code>Mesozoic</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Cenozoic</code></li><li class="list-group-item"><code>Mesozoic</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -1808,7 +1808,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/earliestPeriodOrLowestSystem">http://rs.tdwg.org/dwc/terms/earliestPeriodOrLowestSystem</a></td></tr>
     <tr><td>Definition</td><td>The full name of the earliest possible geochronologic period or lowest chronostratigraphic system attributable to the stratigraphic horizon from which the cataloged item was collected.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>Neogene</code>; <code>Tertiary</code>; <code>Quaternary</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Neogene</code></li><li class="list-group-item"><code>Tertiary</code></li><li class="list-group-item"><code>Quaternary</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -1821,7 +1821,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/latestPeriodOrHighestSystem">http://rs.tdwg.org/dwc/terms/latestPeriodOrHighestSystem</a></td></tr>
     <tr><td>Definition</td><td>The full name of the latest possible geochronologic period or highest chronostratigraphic system attributable to the stratigraphic horizon from which the cataloged item was collected.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>Neogene</code>; <code>Tertiary</code>; <code>Quaternary</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Neogene</code></li><li class="list-group-item"><code>Tertiary</code></li><li class="list-group-item"><code>Quaternary</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -1834,7 +1834,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/earliestEpochOrLowestSeries">http://rs.tdwg.org/dwc/terms/earliestEpochOrLowestSeries</a></td></tr>
     <tr><td>Definition</td><td>The full name of the earliest possible geochronologic epoch or lowest chronostratigraphic series attributable to the stratigraphic horizon from which the cataloged item was collected.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>Holocene</code>; <code>Pleistocene</code>; <code>Ibexian Series</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Holocene</code></li><li class="list-group-item"><code>Pleistocene</code></li><li class="list-group-item"><code>Ibexian Series</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -1847,7 +1847,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/latestEpochOrHighestSeries">http://rs.tdwg.org/dwc/terms/latestEpochOrHighestSeries</a></td></tr>
     <tr><td>Definition</td><td>The full name of the latest possible geochronologic epoch or highest chronostratigraphic series attributable to the stratigraphic horizon from which the cataloged item was collected.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>Holocene</code>; <code>Pleistocene</code>; <code>Ibexian Series</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Holocene</code></li><li class="list-group-item"><code>Pleistocene</code></li><li class="list-group-item"><code>Ibexian Series</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -1860,7 +1860,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/earliestAgeOrLowestStage">http://rs.tdwg.org/dwc/terms/earliestAgeOrLowestStage</a></td></tr>
     <tr><td>Definition</td><td>The full name of the earliest possible geochronologic age or lowest chronostratigraphic stage attributable to the stratigraphic horizon from which the cataloged item was collected.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>Atlantic</code>; <code>Boreal</code>; <code>Skullrockian</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Atlantic</code></li><li class="list-group-item"><code>Boreal</code></li><li class="list-group-item"><code>Skullrockian</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -1873,7 +1873,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/latestAgeOrHighestStage">http://rs.tdwg.org/dwc/terms/latestAgeOrHighestStage</a></td></tr>
     <tr><td>Definition</td><td>The full name of the latest possible geochronologic age or highest chronostratigraphic stage attributable to the stratigraphic horizon from which the cataloged item was collected.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>Atlantic</code>; <code>Boreal</code>; <code>Skullrockian</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Atlantic</code></li><li class="list-group-item"><code>Boreal</code></li><li class="list-group-item"><code>Skullrockian</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -1925,7 +1925,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/group">http://rs.tdwg.org/dwc/terms/group</a></td></tr>
     <tr><td>Definition</td><td>The full name of the lithostratigraphic group from which the cataloged item was collected.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>Bathurst</code>; <code>Lower Wealden</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Bathurst</code></li><li class="list-group-item"><code>Lower Wealden</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -1938,7 +1938,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/formation">http://rs.tdwg.org/dwc/terms/formation</a></td></tr>
     <tr><td>Definition</td><td>The full name of the lithostratigraphic formation from which the cataloged item was collected.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>Notch Peak Formation</code>; <code>House Limestone</code>; <code>Fillmore Formation</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Notch Peak Formation</code></li><li class="list-group-item"><code>House Limestone</code></li><li class="list-group-item"><code>Fillmore Formation</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -1951,7 +1951,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/member">http://rs.tdwg.org/dwc/terms/member</a></td></tr>
     <tr><td>Definition</td><td>The full name of the lithostratigraphic member from which the cataloged item was collected.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>Lava Dam Member</code>; <code>Hellnmaria Member</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Lava Dam Member</code></li><li class="list-group-item"><code>Hellnmaria Member</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2017,7 +2017,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimIdentification">http://rs.tdwg.org/dwc/terms/verbatimIdentification</a></td></tr>
     <tr><td>Definition</td><td>A string representing the taxonomic identification as it appeared in the original record.</td></tr>
     <tr><td>Comments</td><td>This term is meant to allow the capture of an unaltered original identification/determination, including identification qualifiers, hybrid formulas, uncertainties, etc. This term is meant to be used in addition to <code>scientificName</code> (and <code>identificationQualifier</code> etc.), not instead of it.</td></tr>
-    <tr><td>Examples</td><td><code>Peromyscus sp.</code>; <code>Ministrymon sp. nov. 1</code>; <code>Anser anser X Branta canadensis</code>; <code>Pachyporidae?</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Peromyscus sp.</code></li><li class="list-group-item"><code>Ministrymon sp. nov. 1</code></li><li class="list-group-item"><code>Anser anser X Branta canadensis</code></li><li class="list-group-item"><code>Pachyporidae?</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2030,7 +2030,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/identificationQualifier">http://rs.tdwg.org/dwc/terms/identificationQualifier</a></td></tr>
     <tr><td>Definition</td><td>A brief phrase or a standard term ("cf.", "aff.") to express the determiner's doubts about the Identification.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>aff. agrifolia var. oxyadenia</code> (for <code>Quercus aff. agrifolia var. oxyadenia</code> with accompanying values <code>Quercus</code> in genus, <code>agrifolia</code>  in specificEpithet, <code>oxyadenia</code>  in infraspecificEpithet, and <code>var.</code> in taxonRank; <code>cf. var. oxyadenia</code> for <code>Quercus agrifolia cf. var. oxyadenia</code> with accompanying values <code>Quercus</code> in genus, <code>agrifolia</code> in specificEpithet, <code>oxyadenia</code> in infraspecificEpithet, and <code>var.</code> in taxonRank</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>aff. agrifolia var. oxyadenia</code> (for <code>Quercus aff. agrifolia var. oxyadenia</code> with accompanying values <code>Quercus</code> in genus, <code>agrifolia</code>  in specificEpithet, <code>oxyadenia</code>  in infraspecificEpithet, and <code>var.</code> in taxonRank)</li><li class="list-group-item"><code>cf. var. oxyadenia</code> (for <code>Quercus agrifolia cf. var. oxyadenia</code> with accompanying values <code>Quercus</code> in genus, <code>agrifolia</code> in specificEpithet, <code>oxyadenia</code> in infraspecificEpithet, and <code>var.</code> in taxonRank)</li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2043,7 +2043,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/typeStatus">http://rs.tdwg.org/dwc/terms/typeStatus</a></td></tr>
     <tr><td>Definition</td><td>A list (concatenated and separated) of nomenclatural types (type status, typified scientific name, publication) applied to the subject.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
-    <tr><td>Examples</td><td><code>holotype of Ctenomys sociabilis. Pearson O. P., and M. I. Christie. 1985. Historia Natural, 5(37):388</code>; <code>holotype of Pinus abies | holotype of Picea abies</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>holotype of Ctenomys sociabilis. Pearson O. P., and M. I. Christie. 1985. Historia Natural, 5(37):388</code></li><li class="list-group-item"><code>holotype of Pinus abies | holotype of Picea abies</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2056,7 +2056,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/identifiedBy">http://rs.tdwg.org/dwc/terms/identifiedBy</a></td></tr>
     <tr><td>Definition</td><td>A list (concatenated and separated) of names of people, groups, or organizations who assigned the Taxon to the subject.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
-    <tr><td>Examples</td><td><code>James L. Patton</code>; <code>Theodore Pappenfuss | Robert Macey</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>James L. Patton</code></li><li class="list-group-item"><code>Theodore Pappenfuss | Robert Macey</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2069,7 +2069,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/identifiedByID">http://rs.tdwg.org/dwc/terms/identifiedByID</a></td></tr>
     <tr><td>Definition</td><td>A list (concatenated and separated) of the globally unique identifier for the person, people, groups, or organizations responsible for assigning the Taxon to the subject.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to provide a single identifier that disambiguates the details of the identifying agent. If a list is used, the order of the identifiers on the list should not be assumed to convey any semantics. Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
-    <tr><td>Examples</td><td><code><a href="https://orcid.org/0000-0002-1825-0097">https://orcid.org/0000-0002-1825-0097</a></code> (for an individual), <code><a href="https://orcid.org/0000-0002-1825-0097">https://orcid.org/0000-0002-1825-0097</a> | <a href="https://orcid.org/0000-0002-1825-0098">https://orcid.org/0000-0002-1825-0098</a></code> (for a list of people). </td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="https://orcid.org/0000-0002-1825-0097">https://orcid.org/0000-0002-1825-0097</a></code> (for an individual)</li><li class="list-group-item"><code><a href="https://orcid.org/0000-0002-1825-0097">https://orcid.org/0000-0002-1825-0097</a> | <a href="https://orcid.org/0000-0002-1825-0098">https://orcid.org/0000-0002-1825-0098</a></code> (for a list of people)</li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2082,7 +2082,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/dateIdentified">http://rs.tdwg.org/dwc/terms/dateIdentified</a></td></tr>
     <tr><td>Definition</td><td>The date on which the subject was determined as representing the Taxon.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to use a date that conforms to ISO 8601-1:2019.</td></tr>
-    <tr><td>Examples</td><td><code>1963-03-08T14:07-0600</code> (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC); <code>2009-02-20T08:40Z</code> (20 February 2009 8:40am UTC); <code>2018-08-29T15:19</code> (3:19pm local time on 29 August 2018); <code>1809-02-12</code> (some time during 12 February 1809); <code>1906-06</code> (some time in June 1906); <code>1971</code> (some time in the year 1971); <code>2007-03-01T13:00:00Z/2008-05-11T15:30:00Z</code> (some time during the interval between 1 March 2007 1pm UTC and 11 May 2008 3:30pm UTC); <code>1900/1909</code> (some time during the interval between the beginning of the year 1900 and the end of the year 1909); <code>2007-11-13/15</code> (some time in the interval between 13 November 2007 and 15 November 2007)</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>1963-03-08T14:07-0600</code> (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC)</li><li class="list-group-item"><code>2009-02-20T08:40Z</code> (20 February 2009 8:40am UTC)</li><li class="list-group-item"><code>2018-08-29T15:19</code> (3:19pm local time on 29 August 2018)</li><li class="list-group-item"><code>1809-02-12</code> (some time during 12 February 1809)</li><li class="list-group-item"><code>1906-06</code> (some time in June 1906)</li><li class="list-group-item"><code>1971</code> (some time in the year 1971)</li><li class="list-group-item"><code>2007-03-01T13:00:00Z/2008-05-11T15:30:00Z</code> (some time during the interval between 1 March 2007 1pm UTC and 11 May 2008 3:30pm UTC)</li><li class="list-group-item"><code>1900/1909</code> (some time during the interval between the beginning of the year 1900 and the end of the year 1909)</li><li class="list-group-item"><code>2007-11-13/15</code> (some time in the interval between 13 November 2007 and 15 November 2007)</li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2095,7 +2095,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/identificationReferences">http://rs.tdwg.org/dwc/terms/identificationReferences</a></td></tr>
     <tr><td>Definition</td><td>A list (concatenated and separated) of references (publication, global unique identifier, URI) used in the Identification.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
-    <tr><td>Examples</td><td><code>Aves del Noroeste Patagonico. Christie et al. 2004.</code>; <code>Stebbins, R. Field Guide to Western Reptiles and Amphibians. 3rd Edition. 2003. | Irschick, D.J. and Shaffer, H.B. (1997). The polytypic species revisited: Morphological differentiation among tiger salamanders (Ambystoma tigrinum) (Amphibia: Caudata). Herpetologica, 53(1), 30-49.</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Aves del Noroeste Patagonico. Christie et al. 2004.</code></li><li class="list-group-item"><code>Stebbins, R. Field Guide to Western Reptiles and Amphibians. 3rd Edition. 2003. | Irschick, D.J. and Shaffer, H.B. (1997). The polytypic species revisited: Morphological differentiation among tiger salamanders (Ambystoma tigrinum) (Amphibia: Caudata). Herpetologica, 53(1), 30-49.</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2188,7 +2188,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/taxonID">http://rs.tdwg.org/dwc/terms/taxonID</a></td></tr>
     <tr><td>Definition</td><td>An identifier for the set of taxon information (data associated with the Taxon class). May be a global unique identifier or an identifier specific to the data set.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>8fa58e08-08de-4ac1-b69c-1235340b7001</code>; <code>32567</code>; <code><a href="https://www.gbif.org/species/212">https://www.gbif.org/species/212</a></code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>8fa58e08-08de-4ac1-b69c-1235340b7001</code></li><li class="list-group-item"><code>32567</code></li><li class="list-group-item"><code><a href="https://www.gbif.org/species/212">https://www.gbif.org/species/212</a></code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2214,7 +2214,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/acceptedNameUsageID">http://rs.tdwg.org/dwc/terms/acceptedNameUsageID</a></td></tr>
     <tr><td>Definition</td><td>An identifier for the name usage (documented meaning of the name according to a source) of the currently valid (zoological) or accepted (botanical) taxon.</td></tr>
     <tr><td>Comments</td><td>This term should be used for synonyms or misapplied names to refer to the taxonID of a Taxon record that represents the accepted (botanical) or valid (zoological) name. For Darwin Core Archives the related record should be present locally in the same archive.</td></tr>
-    <tr><td>Examples</td><td><code>tsn:41107</code> (ITIS); <code>urn:lsid:ipni.org:names:320035-2</code> (IPNI); <code>2704179</code> (GBIF); <code>6W3C4</code> (COL)</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>tsn:41107</code> (ITIS)</li><li class="list-group-item"><code>urn:lsid:ipni.org:names:320035-2</code> (IPNI)</li><li class="list-group-item"><code>2704179</code> (GBIF)</li><li class="list-group-item"><code>6W3C4</code> (COL)</li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2227,7 +2227,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/parentNameUsageID">http://rs.tdwg.org/dwc/terms/parentNameUsageID</a></td></tr>
     <tr><td>Definition</td><td>An identifier for the name usage (documented meaning of the name according to a source) of the direct, most proximate higher-rank parent taxon (in a classification) of the most specific element of the scientificName.</td></tr>
     <tr><td>Comments</td><td>This term should be used for accepted names to refer to the taxonID of a Taxon record that represents the next higher taxon rank in the same taxonomic classification. For Darwin Core Archives the related record should be present locally in the same archive.</td></tr>
-    <tr><td>Examples</td><td><code>tsn:41074</code> (ITIS); <code>urn:lsid:ipni.org:names:30001404-2</code> (IPNI); <code>2704173</code> (GBIF); <code>6T8N</code> (COL)</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>tsn:41074</code> (ITIS)</li><li class="list-group-item"><code>urn:lsid:ipni.org:names:30001404-2</code> (IPNI)</li><li class="list-group-item"><code>2704173</code> (GBIF)</li><li class="list-group-item"><code>6T8N</code> (COL)</li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2240,7 +2240,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/originalNameUsageID">http://rs.tdwg.org/dwc/terms/originalNameUsageID</a></td></tr>
     <tr><td>Definition</td><td>An identifier for the name usage (documented meaning of the name according to a source) in which the terminal element of the scientificName was originally established under the rules of the associated nomenclaturalCode.</td></tr>
     <tr><td>Comments</td><td>This term should be used to refer to the taxonID of a Taxon record that represents the usage of the terminal element of the scientificName as originally established under the rules of the associated nomenclaturalCode. For example, for names governed by the ICNafp, this term would establish the relationship between a record representing a subsequent combination and the record for its corresponding basionym. Unlike basionyms, however, this term can apply to scientific names at all ranks. For Darwin Core Archives the related record should be present locally in the same archive.</td></tr>
-    <tr><td>Examples</td><td><code>tsn:41107</code> (ITIS); <code>urn:lsid:ipni.org:names:320035-2</code> (IPNI); <code>2704179</code> (GBIF); <code>6W3C4</code> (COL)</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>tsn:41107</code> (ITIS)</li><li class="list-group-item"><code>urn:lsid:ipni.org:names:320035-2</code> (IPNI)</li><li class="list-group-item"><code>2704179</code> (GBIF)</li><li class="list-group-item"><code>6W3C4</code> (COL)</li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2292,7 +2292,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/scientificName">http://rs.tdwg.org/dwc/terms/scientificName</a></td></tr>
     <tr><td>Definition</td><td>The full scientific name, with authorship and date information if known. When forming part of an Identification, this should be the name in lowest level taxonomic rank that can be determined. This term should not contain identification qualifications, which should instead be supplied in the IdentificationQualifier term.</td></tr>
     <tr><td>Comments</td><td>This term should not contain identification qualifications, which should instead be supplied in the IdentificationQualifier term. When applied to an Organism or Occurrence, this term should be used to represent the scientific name that was applied to the associated Organism in accordance with the Taxon to which it was or is currently identified.</td></tr>
-    <tr><td>Examples</td><td><code>Coleoptera</code> (order); <code>Vespertilionidae</code> (family); <code>Manis</code> (genus); <code>Ctenomys sociabilis</code> (genus + specificEpithet); <code>Ambystoma tigrinum diaboli</code> (genus + specificEpithet + infraspecificEpithet); <code>Roptrocerus typographi (Györfi, 1952)</code> (genus + specificEpithet + scientificNameAuthorship); <code>Quercus agrifolia var. oxyadenia (Torr.) J.T. Howell</code> (genus + specificEpithet + taxonRank + infraspecificEpithet + scientificNameAuthorship)</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Coleoptera</code> (order)</li><li class="list-group-item"><code>Vespertilionidae</code> (family)</li><li class="list-group-item"><code>Manis</code> (genus)</li><li class="list-group-item"><code>Ctenomys sociabilis</code> (genus + specificEpithet)</li><li class="list-group-item"><code>Ambystoma tigrinum diaboli</code> (genus + specificEpithet + infraspecificEpithet)</li><li class="list-group-item"><code>Roptrocerus typographi (Györfi, 1952)</code> (genus + specificEpithet + scientificNameAuthorship)</li><li class="list-group-item"><code>Quercus agrifolia var. oxyadenia (Torr.) J.T. Howell</code> (genus + specificEpithet + taxonRank + infraspecificEpithet + scientificNameAuthorship)</li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2318,7 +2318,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/parentNameUsage">http://rs.tdwg.org/dwc/terms/parentNameUsage</a></td></tr>
     <tr><td>Definition</td><td>The full name, with authorship and date information if known, of the direct, most proximate higher-rank parent taxon (in a classification) of the most specific element of the scientificName.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>Rubiaceae</code>; <code>Gruiformes</code>; <code>Testudinae</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Rubiaceae</code></li><li class="list-group-item"><code>Gruiformes</code></li><li class="list-group-item"><code>Testudinae</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2331,7 +2331,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/originalNameUsage">http://rs.tdwg.org/dwc/terms/originalNameUsage</a></td></tr>
     <tr><td>Definition</td><td>The taxon name, with authorship and date information if known, as it originally appeared when first established under the rules of the associated nomenclaturalCode. The basionym (botany) or basonym (bacteriology) of the scientificName or the senior/earlier homonym for replaced names.</td></tr>
     <tr><td>Comments</td><td>The full scientific name, with authorship and date information if known, of the name usage in which the terminal element of the scientificName was originally established under the rules of the associated nomenclaturalCode. For example, for names governed by the ICNafp, this term would indicate the basionym of a record representing a subsequent combination. Unlike basionyms, however, this term can apply to scientific names at all ranks.</td></tr>
-    <tr><td>Examples</td><td><code>Pinus abies</code>; <code>Gasterosteus saltatrix Linnaeus 1768</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Pinus abies</code></li><li class="list-group-item"><code>Gasterosteus saltatrix Linnaeus 1768</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2357,7 +2357,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/namePublishedIn">http://rs.tdwg.org/dwc/terms/namePublishedIn</a></td></tr>
     <tr><td>Definition</td><td>A reference for the publication in which the scientificName was originally established under the rules of the associated nomenclaturalCode.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>Pearson O. P., and M. I. Christie. 1985. Historia Natural, 5(37):388</code>; <code>Forel, Auguste, Diagnosies provisoires de quelques espèces nouvelles de fourmis de Madagascar, récoltées par M. Grandidier., Annales de la Societe Entomologique de Belgique, Comptes-rendus des Seances 30, 1886</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Pearson O. P., and M. I. Christie. 1985. Historia Natural, 5(37):388</code></li><li class="list-group-item"><code>Forel, Auguste, Diagnosies provisoires de quelques espèces nouvelles de fourmis de Madagascar, récoltées par M. Grandidier., Annales de la Societe Entomologique de Belgique, Comptes-rendus des Seances 30, 1886</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2370,7 +2370,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/namePublishedInYear">http://rs.tdwg.org/dwc/terms/namePublishedInYear</a></td></tr>
     <tr><td>Definition</td><td>The four-digit year in which the scientificName was published.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>1915</code>; <code>2008</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>1915</code></li><li class="list-group-item"><code>2008</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2383,7 +2383,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/higherClassification">http://rs.tdwg.org/dwc/terms/higherClassification</a></td></tr>
     <tr><td>Definition</td><td>A list (concatenated and separated) of taxa names terminating at the rank immediately superior to the taxon referenced in the taxon record.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>), with terms in order from the highest taxonomic rank to the lowest.</td></tr>
-    <tr><td>Examples</td><td><code>Plantae | Tracheophyta | Magnoliopsida | Ranunculales | Ranunculaceae | Ranunculus</code>; <code>Animalia</code>; <code>Animalia | Chordata | Vertebrata | Mammalia | Theria | Eutheria | Rodentia | Hystricognatha | Hystricognathi | Ctenomyidae | Ctenomyini | Ctenomys</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Plantae | Tracheophyta | Magnoliopsida | Ranunculales | Ranunculaceae | Ranunculus</code></li><li class="list-group-item"><code>Animalia</code></li><li class="list-group-item"><code>Animalia | Chordata | Vertebrata | Mammalia | Theria | Eutheria | Rodentia | Hystricognatha | Hystricognathi | Ctenomyidae | Ctenomyini | Ctenomys</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2396,7 +2396,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/kingdom">http://rs.tdwg.org/dwc/terms/kingdom</a></td></tr>
     <tr><td>Definition</td><td>The full scientific name of the kingdom in which the taxon is classified.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>Animalia</code>; <code>Archaea</code>; <code>Bacteria</code>; <code>Chromista</code>; <code>Fungi</code>; <code>Plantae</code>; <code>Protozoa</code>; <code>Viruses</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Animalia</code></li><li class="list-group-item"><code>Archaea</code></li><li class="list-group-item"><code>Bacteria</code></li><li class="list-group-item"><code>Chromista</code></li><li class="list-group-item"><code>Fungi</code></li><li class="list-group-item"><code>Plantae</code></li><li class="list-group-item"><code>Protozoa</code></li><li class="list-group-item"><code>Viruses</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2409,7 +2409,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/phylum">http://rs.tdwg.org/dwc/terms/phylum</a></td></tr>
     <tr><td>Definition</td><td>The full scientific name of the phylum or division in which the taxon is classified.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>Chordata</code> (phylum); <code>Bryophyta</code> (division).</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Chordata</code> (phylum)</li><li class="list-group-item"><code>Bryophyta</code> (division).</li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2422,7 +2422,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/class">http://rs.tdwg.org/dwc/terms/class</a></td></tr>
     <tr><td>Definition</td><td>The full scientific name of the class in which the taxon is classified.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>Mammalia</code>; <code>Hepaticopsida</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Mammalia</code></li><li class="list-group-item"><code>Hepaticopsida</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2435,7 +2435,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/order">http://rs.tdwg.org/dwc/terms/order</a></td></tr>
     <tr><td>Definition</td><td>The full scientific name of the order in which the taxon is classified.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>Carnivora</code>; <code>Monocleales</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Carnivora</code></li><li class="list-group-item"><code>Monocleales</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2448,7 +2448,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/family">http://rs.tdwg.org/dwc/terms/family</a></td></tr>
     <tr><td>Definition</td><td>The full scientific name of the family in which the taxon is classified.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>Felidae</code>; <code>Monocleaceae</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Felidae</code></li><li class="list-group-item"><code>Monocleaceae</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2461,7 +2461,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/subfamily">http://rs.tdwg.org/dwc/terms/subfamily</a></td></tr>
     <tr><td>Definition</td><td>The full scientific name of the subfamily in which the taxon is classified.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>Periptyctinae</code>; <code>Orchidoideae</code>; <code>Sphindociinae</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Periptyctinae</code></li><li class="list-group-item"><code>Orchidoideae</code></li><li class="list-group-item"><code>Sphindociinae</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2474,7 +2474,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/genus">http://rs.tdwg.org/dwc/terms/genus</a></td></tr>
     <tr><td>Definition</td><td>The full scientific name of the genus in which the taxon is classified.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>Puma</code>; <code>Monoclea</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Puma</code></li><li class="list-group-item"><code>Monoclea</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2500,7 +2500,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/subgenus">http://rs.tdwg.org/dwc/terms/subgenus</a></td></tr>
     <tr><td>Definition</td><td>The full scientific name of the subgenus in which the taxon is classified. Values should include the genus to avoid homonym confusion.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>Strobus</code>; <code>Amerigo</code>; <code>Pilosella</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Strobus</code></li><li class="list-group-item"><code>Amerigo</code></li><li class="list-group-item"><code>Pilosella</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2513,7 +2513,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/infragenericEpithet">http://rs.tdwg.org/dwc/terms/infragenericEpithet</a></td></tr>
     <tr><td>Definition</td><td>The infrageneric part of a binomial name at ranks above species but below genus.</td></tr>
     <tr><td>Comments</td><td>The term infragenericEpithet should be used in conjunction with genericName, specificEpithet, infraspecificEpithet, taxonRank and scientificNameAuthorship to represent the individual elements of the complete scientificName. It can be used to indicate the subgenus placement of a species, which in zoology is often given in parentheses. Can also be used to share infrageneric names such as botanical sections (e.g., <code>Vicia sect. Cracca</code>).</td></tr>
-    <tr><td>Examples</td><td><code>Abacetillus</code> (for scientificName "Abacetus (Abacetillus) ambiguus"; <code>Cracca</code> (for scientificName "Vicia sect. Cracca")</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Abacetillus</code> (for scientificName "Abacetus (Abacetillus) ambiguus")</li><li class="list-group-item"><code>Cracca</code> (for scientificName "Vicia sect. Cracca")</li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2526,7 +2526,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/specificEpithet">http://rs.tdwg.org/dwc/terms/specificEpithet</a></td></tr>
     <tr><td>Definition</td><td>The name of the first or species epithet of the scientificName.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>concolor</code>; <code>gottschei</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>concolor</code></li><li class="list-group-item"><code>gottschei</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2539,7 +2539,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/infraspecificEpithet">http://rs.tdwg.org/dwc/terms/infraspecificEpithet</a></td></tr>
     <tr><td>Definition</td><td>The name of the lowest or terminal infraspecific epithet of the scientificName, excluding any rank designation.</td></tr>
     <tr><td>Comments</td><td>In botany, where there can be more than one infraspecific rank, name strings may be provided, in literature and in identifications, that have more than two epithets. Only the last of these epithets is the infraspecificEpithet and only the first and the last epithets belong to the scientificName. For example: the infraspecificEpithet in the string "Indigofera charlieriana subsp. sessilis var. scaberrima" is <code>scaberrima</code> and the scientificName is <code>Indigophera charlieriana var. scaberrima</code>.</td></tr>
-    <tr><td>Examples</td><td><code>concolor</code> (for scientificName "Puma concolor concolor"); <code>oxyadenia</code> (for scientificName "Quercus agrifolia var. oxyadenia"); <code>laxa</code> (for scientificName "Cheilanthes hirta f. laxa"); <code>scaberrima</code> (for scientificName "Indigofera charlieriana var. scaberrima")</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>concolor</code> (for scientificName "Puma concolor concolor")</li><li class="list-group-item"><code>oxyadenia</code> (for scientificName "Quercus agrifolia var. oxyadenia")</li><li class="list-group-item"><code>laxa</code> (for scientificName "Cheilanthes hirta f. laxa")</li><li class="list-group-item"><code>scaberrima</code> (for scientificName "Indigofera charlieriana var. scaberrima")</li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2552,7 +2552,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/cultivarEpithet">http://rs.tdwg.org/dwc/terms/cultivarEpithet</a></td></tr>
     <tr><td>Definition</td><td>Part of the name of a cultivar, cultivar group or grex that follows the scientific name.</td></tr>
     <tr><td>Comments</td><td>According to the Rules of the Cultivated Plant Code, a cultivar name consists of a botanical name followed by a cultivar epithet. The value given as the cultivarEpithet should exclude any quotes. The term taxonRank should be used to indicate which type of cultivated plant name (e.g. cultivar, cultivar group, grex) is concerned. This epithet, including any enclosing apostrophes or suffix, should be provided in scientificName as well.</td></tr>
-    <tr><td>Examples</td><td><code>King Edward</code> (for scientificName "Solanum tuberosum 'King Edward'" and taxonRank "cultivar"); <code>Mishmiense</code> (for scientificName "Rhododendron boothii Mishmiense Group" and taxonRank "cultivar group"); <code>Atlantis</code> (for scientificName "Paphiopedilum Atlantis grex" and taxonRank "grex")</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>King Edward</code> (for scientificName "Solanum tuberosum 'King Edward'" and taxonRank "cultivar")</li><li class="list-group-item"><code>Mishmiense</code> (for scientificName "Rhododendron boothii Mishmiense Group" and taxonRank "cultivar group")</li><li class="list-group-item"><code>Atlantis</code> (for scientificName "Paphiopedilum Atlantis grex" and taxonRank "grex")</li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2565,7 +2565,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/taxonRank">http://rs.tdwg.org/dwc/terms/taxonRank</a></td></tr>
     <tr><td>Definition</td><td>The taxonomic rank of the most specific name in the scientificName.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
-    <tr><td>Examples</td><td><code>subspecies</code>; <code>varietas</code>; <code>forma</code>; <code>species</code>; <code>genus</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>subspecies</code></li><li class="list-group-item"><code>varietas</code></li><li class="list-group-item"><code>forma</code></li><li class="list-group-item"><code>species</code></li><li class="list-group-item"><code>genus</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2578,7 +2578,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimTaxonRank">http://rs.tdwg.org/dwc/terms/verbatimTaxonRank</a></td></tr>
     <tr><td>Definition</td><td>The taxonomic rank of the most specific name in the scientificName as it appears in the original record.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>Agamospecies</code>; <code>sub-lesus</code>; <code>prole</code>; <code>apomict</code>; <code>nothogrex</code>; <code>sp.</code>; <code>subsp.</code>; <code>var.</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Agamospecies</code></li><li class="list-group-item"><code>sub-lesus</code></li><li class="list-group-item"><code>prole</code></li><li class="list-group-item"><code>apomict</code></li><li class="list-group-item"><code>nothogrex</code></li><li class="list-group-item"><code>sp.</code></li><li class="list-group-item"><code>subsp.</code></li><li class="list-group-item"><code>var.</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2591,7 +2591,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/scientificNameAuthorship">http://rs.tdwg.org/dwc/terms/scientificNameAuthorship</a></td></tr>
     <tr><td>Definition</td><td>The authorship information for the scientificName formatted according to the conventions of the applicable nomenclaturalCode.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>(Torr.) J.T. Howell</code>; <code>(Martinovský) Tzvelev</code>; <code>(Györfi, 1952)</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>(Torr.) J.T. Howell</code></li><li class="list-group-item"><code>(Martinovský) Tzvelev</code></li><li class="list-group-item"><code>(Györfi, 1952)</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2604,7 +2604,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/vernacularName">http://rs.tdwg.org/dwc/terms/vernacularName</a></td></tr>
     <tr><td>Definition</td><td>A common or vernacular name.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>Andean Condor</code>; <code>Condor Andino</code>; <code>American Eagle</code>; <code>Gänsegeier</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Andean Condor</code></li><li class="list-group-item"><code>Condor Andino</code></li><li class="list-group-item"><code>American Eagle</code></li><li class="list-group-item"><code>Gänsegeier</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2617,7 +2617,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/nomenclaturalCode">http://rs.tdwg.org/dwc/terms/nomenclaturalCode</a></td></tr>
     <tr><td>Definition</td><td>The nomenclatural code (or codes in the case of an ambiregnal name) under which the scientificName is constructed.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
-    <tr><td>Examples</td><td><code>ICN</code>; <code>ICZN</code>; <code>BC</code>; <code>ICNCP</code>; <code>BioCode</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>ICN</code></li><li class="list-group-item"><code>ICZN</code></li><li class="list-group-item"><code>BC</code></li><li class="list-group-item"><code>ICNCP</code></li><li class="list-group-item"><code>BioCode</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2630,7 +2630,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/taxonomicStatus">http://rs.tdwg.org/dwc/terms/taxonomicStatus</a></td></tr>
     <tr><td>Definition</td><td>The status of the use of the scientificName as a label for a taxon. Requires taxonomic opinion to define the scope of a taxon. Rules of priority then are used to define the taxonomic status of the nomenclature contained in that scope, combined with the experts opinion. It must be linked to a specific taxonomic reference that defines the concept.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
-    <tr><td>Examples</td><td><code>invalid</code>; <code>misapplied</code>; <code>homotypic synonym</code>; <code>accepted</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>invalid</code></li><li class="list-group-item"><code>misapplied</code></li><li class="list-group-item"><code>homotypic synonym</code></li><li class="list-group-item"><code>accepted</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2643,7 +2643,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/nomenclaturalStatus">http://rs.tdwg.org/dwc/terms/nomenclaturalStatus</a></td></tr>
     <tr><td>Definition</td><td>The status related to the original publication of the name and its conformance to the relevant rules of nomenclature. It is based essentially on an algorithm according to the business rules of the code. It requires no taxonomic opinion.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>nom. ambig.</code>; <code>nom. illeg.</code>; <code>nom. subnud.</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>nom. ambig.</code></li><li class="list-group-item"><code>nom. illeg.</code></li><li class="list-group-item"><code>nom. subnud.</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2708,7 +2708,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/measurementType">http://rs.tdwg.org/dwc/terms/measurementType</a></td></tr>
     <tr><td>Definition</td><td>The nature of the measurement, fact, characteristic, or assertion.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
-    <tr><td>Examples</td><td><code>tail length</code>; <code>temperature</code>; <code>trap line length</code>; <code>survey area</code>; <code>trap type</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>tail length</code></li><li class="list-group-item"><code>temperature</code></li><li class="list-group-item"><code>trap line length</code></li><li class="list-group-item"><code>survey area</code></li><li class="list-group-item"><code>trap type</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2721,7 +2721,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/measurementValue">http://rs.tdwg.org/dwc/terms/measurementValue</a></td></tr>
     <tr><td>Definition</td><td>The value of the measurement, fact, characteristic, or assertion.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>45</code>; <code>20</code>; <code>1</code>; <code>14.5</code>; <code>UV-light</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>45</code></li><li class="list-group-item"><code>20</code></li><li class="list-group-item"><code>1</code></li><li class="list-group-item"><code>14.5</code></li><li class="list-group-item"><code>UV-light</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2734,7 +2734,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/measurementAccuracy">http://rs.tdwg.org/dwc/terms/measurementAccuracy</a></td></tr>
     <tr><td>Definition</td><td>The description of the potential error associated with the measurementValue.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>0.01</code>; <code>normal distribution with variation of 2 m</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>0.01</code></li><li class="list-group-item"><code>normal distribution with variation of 2 m</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2747,7 +2747,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/measurementUnit">http://rs.tdwg.org/dwc/terms/measurementUnit</a></td></tr>
     <tr><td>Definition</td><td>The units associated with the measurementValue.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to use the International System of Units (SI).</td></tr>
-    <tr><td>Examples</td><td><code>mm</code>; <code>C</code>; <code>km</code>; <code>ha</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>mm</code></li><li class="list-group-item"><code>C</code></li><li class="list-group-item"><code>km</code></li><li class="list-group-item"><code>ha</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2760,7 +2760,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/measurementDeterminedBy">http://rs.tdwg.org/dwc/terms/measurementDeterminedBy</a></td></tr>
     <tr><td>Definition</td><td>A list (concatenated and separated) of names of people, groups, or organizations who determined the value of the MeasurementOrFact.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
-    <tr><td>Examples</td><td><code>Rob Guralnick</code>; <code>Peter Desmet | Stijn Van Hoey</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Rob Guralnick</code></li><li class="list-group-item"><code>Peter Desmet | Stijn Van Hoey</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2773,7 +2773,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/measurementDeterminedDate">http://rs.tdwg.org/dwc/terms/measurementDeterminedDate</a></td></tr>
     <tr><td>Definition</td><td>The date on which the MeasurementOrFact was made.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to use a date that conforms to ISO 8601-1:2019.</td></tr>
-    <tr><td>Examples</td><td><code>1963-03-08T14:07-0600</code> (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC); <code>2009-02-20T08:40Z</code> (20 February 2009 8:40am UTC); <code>2018-08-29T15:19</code> (3:19pm local time on 29 August 2018); <code>1809-02-12</code> (some time during 12 February 1809); <code>1906-06</code> (some time in June 1906); <code>1971</code> (some time in the year 1971); <code>2007-03-01T13:00:00Z/2008-05-11T15:30:00Z</code> (some time during the interval between 1 March 2007 1pm UTC and 11 May 2008 3:30pm UTC); <code>1900/1909</code> (some time during the interval between the beginning of the year 1900 and the end of the year 1909); <code>2007-11-13/15</code> (some time in the interval between 13 November 2007 and 15 November 2007)</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>1963-03-08T14:07-0600</code> (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC)</li><li class="list-group-item"><code>2009-02-20T08:40Z</code> (20 February 2009 8:40am UTC)</li><li class="list-group-item"><code>2018-08-29T15:19</code> (3:19pm local time on 29 August 2018)</li><li class="list-group-item"><code>1809-02-12</code> (some time during 12 February 1809)</li><li class="list-group-item"><code>1906-06</code> (some time in June 1906)</li><li class="list-group-item"><code>1971</code> (some time in the year 1971)</li><li class="list-group-item"><code>2007-03-01T13:00:00Z/2008-05-11T15:30:00Z</code> (some time during the interval between 1 March 2007 1pm UTC and 11 May 2008 3:30pm UTC)</li><li class="list-group-item"><code>1900/1909</code> (some time during the interval between the beginning of the year 1900 and the end of the year 1909)</li><li class="list-group-item"><code>2007-11-13/15</code> (some time in the interval between 13 November 2007 and 15 November 2007)</li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2786,7 +2786,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/measurementMethod">http://rs.tdwg.org/dwc/terms/measurementMethod</a></td></tr>
     <tr><td>Definition</td><td>A description of or reference to (publication, URI) the method or protocol used to determine the measurement, fact, characteristic, or assertion.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>minimum convex polygon around burrow entrances</code> (for a home range area); <code>barometric altimeter</code> (for an elevation)</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>minimum convex polygon around burrow entrances</code> (for a home range area)</li><li class="list-group-item"><code>barometric altimeter</code> (for an elevation)</li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2863,7 +2863,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/relationshipOfResourceID">http://rs.tdwg.org/dwc/terms/relationshipOfResourceID</a></td></tr>
     <tr><td>Definition</td><td>An identifier for the relationship type (predicate) that connects the subject identified by resourceID to its object identified by relatedResourceID.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to use the identifiers of the terms in a controlled vocabulary, such as the OBO Relation Ontology.</td></tr>
-    <tr><td>Examples</td><td><code><a href="http://purl.obolibrary.org/obo/RO_0002456">http://purl.obolibrary.org/obo/RO_0002456</a></code> (for the relation "pollinated by"); <code><a href="http://purl.obolibrary.org/obo/RO_0002455">http://purl.obolibrary.org/obo/RO_0002455</a></code> (for the relation "pollinates"); <code><a href="https://www.inaturalist.org/observation_fields/879">https://www.inaturalist.org/observation_fields/879</a></code> (for the relation "eaten by")</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="http://purl.obolibrary.org/obo/RO_0002456">http://purl.obolibrary.org/obo/RO_0002456</a></code> (for the relation "pollinated by")</li><li class="list-group-item"><code><a href="http://purl.obolibrary.org/obo/RO_0002455">http://purl.obolibrary.org/obo/RO_0002455</a></code> (for the relation "pollinates")</li><li class="list-group-item"><code><a href="https://www.inaturalist.org/observation_fields/879">https://www.inaturalist.org/observation_fields/879</a></code> (for the relation "eaten by")</li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2889,7 +2889,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/relationshipOfResource">http://rs.tdwg.org/dwc/terms/relationshipOfResource</a></td></tr>
     <tr><td>Definition</td><td>The relationship of the subject (identified by resourceID) to the object (identified by relatedResourceID).</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
-    <tr><td>Examples</td><td><code>sameAs</code>; <code>duplicate of</code>; <code>mother of</code>; <code>offspring of</code>; <code>sibling of</code>; <code>parasite of</code>; <code>host of</code>; <code>valid synonym of</code>; <code>located within</code>; <code>pollinator of members of taxon</code>; <code>pollinated specific plant</code>; <code>pollinated by members of taxon</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>sameAs</code></li><li class="list-group-item"><code>duplicate of</code></li><li class="list-group-item"><code>mother of</code></li><li class="list-group-item"><code>offspring of</code></li><li class="list-group-item"><code>sibling of</code></li><li class="list-group-item"><code>parasite of</code></li><li class="list-group-item"><code>host of</code></li><li class="list-group-item"><code>valid synonym of</code></li><li class="list-group-item"><code>located within</code></li><li class="list-group-item"><code>pollinator of members of taxon</code></li><li class="list-group-item"><code>pollinated specific plant</code></li><li class="list-group-item"><code>pollinated by members of taxon</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2915,7 +2915,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/relationshipEstablishedDate">http://rs.tdwg.org/dwc/terms/relationshipEstablishedDate</a></td></tr>
     <tr><td>Definition</td><td>The date-time on which the relationship between the two resources was established.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to use a date that conforms to ISO 8601-1:2019.</td></tr>
-    <tr><td>Examples</td><td><code>1963-03-08T14:07-0600</code> (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC); <code>2009-02-20T08:40Z</code> (20 February 2009 8:40am UTC); <code>2018-08-29T15:19</code> (3:19pm local time on 29 August 2018); <code>1809-02-12</code> (some time during 12 February 1809); <code>1906-06</code> (some time in June 1906); <code>1971</code> (some time in the year 1971); <code>2007-03-01T13:00:00Z/2008-05-11T15:30:00Z</code> (some time during the interval between 1 March 2007 1pm UTC and 11 May 2008 3:30pm UTC); <code>1900/1909</code> (some time during the interval between the beginning of the year 1900 and the end of the year 1909); <code>2007-11-13/15</code> (some time in the interval between 13 November 2007 and 15 November 2007)</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>1963-03-08T14:07-0600</code> (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC)</li><li class="list-group-item"><code>2009-02-20T08:40Z</code> (20 February 2009 8:40am UTC)</li><li class="list-group-item"><code>2018-08-29T15:19</code> (3:19pm local time on 29 August 2018)</li><li class="list-group-item"><code>1809-02-12</code> (some time during 12 February 1809)</li><li class="list-group-item"><code>1906-06</code> (some time in June 1906)</li><li class="list-group-item"><code>1971</code> (some time in the year 1971)</li><li class="list-group-item"><code>2007-03-01T13:00:00Z/2008-05-11T15:30:00Z</code> (some time during the interval between 1 March 2007 1pm UTC and 11 May 2008 3:30pm UTC)</li><li class="list-group-item"><code>1900/1909</code> (some time during the interval between the beginning of the year 1900 and the end of the year 1909)</li><li class="list-group-item"><code>2007-11-13/15</code> (some time in the interval between 13 November 2007 and 15 November 2007)</li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2928,7 +2928,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/relationshipRemarks">http://rs.tdwg.org/dwc/terms/relationshipRemarks</a></td></tr>
     <tr><td>Definition</td><td>Comments or notes about the relationship between the two resources.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>mother and offspring collected from the same nest</code>; <code>pollinator captured in the act</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>mother and offspring collected from the same nest</code></li><li class="list-group-item"><code>pollinator captured in the act</code></li></ul></td></tr>
   </tbody>
 </table>
 
@@ -3106,7 +3106,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/degreeOfEstablishment">http://rs.tdwg.org/dwc/iri/degreeOfEstablishment</a></td></tr>
     <tr><td>Definition</td><td>The degree to which an Organism survives, reproduces, and expands its range at the given place and time.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to use IRIs from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/doe/">http://rs.tdwg.org/dwc/doc/doe/</a>. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a> . Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
-    <tr><td>Examples</td><td><code><a href="http://rs.tdwg.org/dwcdoe/values/d003">http://rs.tdwg.org/dwcdoe/values/d003</a></code>; <code><a href="http://rs.tdwg.org/dwcdoe/values/d005">http://rs.tdwg.org/dwcdoe/values/d005</a></code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="http://rs.tdwg.org/dwcdoe/values/d003">http://rs.tdwg.org/dwcdoe/values/d003</a></code></li><li class="list-group-item"><code><a href="http://rs.tdwg.org/dwcdoe/values/d005">http://rs.tdwg.org/dwcdoe/values/d005</a></code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -3142,7 +3142,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/establishmentMeans">http://rs.tdwg.org/dwc/iri/establishmentMeans</a></td></tr>
     <tr><td>Definition</td><td>The process by which the biological individual(s) represented in the Occurrence became established at the location.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to use IRIs from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/em/">http://rs.tdwg.org/dwc/doc/em/</a>. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a> . Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
-    <tr><td>Examples</td><td><code><a href="http://rs.tdwg.org/dwcem/values/e001">http://rs.tdwg.org/dwcem/values/e001</a></code>; <code><a href="http://rs.tdwg.org/dwcem/values/e005">http://rs.tdwg.org/dwcem/values/e005</a></code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="http://rs.tdwg.org/dwcem/values/e001">http://rs.tdwg.org/dwcem/values/e001</a></code></li><li class="list-group-item"><code><a href="http://rs.tdwg.org/dwcem/values/e005">http://rs.tdwg.org/dwcem/values/e005</a></code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -3442,7 +3442,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/pathway">http://rs.tdwg.org/dwc/iri/pathway</a></td></tr>
     <tr><td>Definition</td><td>The process by which an Organism came to be in a given place at a given time.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to use IRIs from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/pw/">http://rs.tdwg.org/dwc/doc/pw/</a>. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a> . Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
-    <tr><td>Examples</td><td><code><a href="http://rs.tdwg.org/dwcpw/values/p002">http://rs.tdwg.org/dwcpw/values/p002</a></code>; <code><a href="http://rs.tdwg.org/dwcpw/values/p046">http://rs.tdwg.org/dwcpw/values/p046</a></code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="http://rs.tdwg.org/dwcpw/values/p002">http://rs.tdwg.org/dwcpw/values/p002</a></code></li><li class="list-group-item"><code><a href="http://rs.tdwg.org/dwcpw/values/p046">http://rs.tdwg.org/dwcpw/values/p046</a></code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
