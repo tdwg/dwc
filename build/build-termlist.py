@@ -88,6 +88,21 @@ def convert_link(text_with_urls):
     regx = "(http[s]?://[\w\d:#@%/;$()~_?\+-;=\\\.&]*)(?<![\)\.,])"
     return re.sub(regx, _handle_matched, text_with_urls)
 
+# Hack the code taken from the terms.tmpl template to insert the HTML necessary to make the semicolon-separated
+# lists of examples into an HTML list.
+# {% set examples = term.examples.split("; ") %}
+# {% if examples | length == 1 %}{{ examples | first }}{% else %}<ul class="list-group list-group-flush">{% for example in examples %}<li class="list-group-item">{{ example }}</li>{% endfor %}</ul>{% endif %}
+def convert_examples(text_with_list_of_examples: str) -> str:
+    examples_list = text_with_list_of_examples.split('; ')
+    if len(examples_list) == 1:
+        return examples_list[0]
+    else:
+        output = '<ul class="list-group list-group-flush">\n'
+        for example in examples_list:
+            output += '  <li class="list-group-item">' + example + '</li>\n'
+        output += '</ul>'
+        return output
+
 # ---------------
 # Retrieve term list metadata from GitHub
 # ---------------
@@ -346,7 +361,7 @@ if True:
         #if row['usage'] != '':
             text += '\t\t<tr>\n'
             text += '\t\t\t<td>Examples</td>\n'
-            text += '\t\t\t<td>' + convert_link(convert_code(row['examples'])) + '</td>\n'
+            text += '\t\t\t<td>' + convert_examples(convert_link(convert_code(row['examples']))) + '</td>\n'
             #text += '\t\t\t<td>' + convert_link(convert_code(row['usage'])) + '</td>\n'
             text += '\t\t</tr>\n'
 
