@@ -22,7 +22,7 @@ import pandas as pd
 # commenting of these pairs.
 
 # This is the base URL for raw files from the branch of the repo that has been pushed to GitHub
-githubBaseUri = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/'
+githubBaseUri = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/dwc_2023-06-15/'
 
 headerFileName = 'termlist-header.md'
 footerFileName = 'termlist-footer.md'
