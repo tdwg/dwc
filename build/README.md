@@ -13,7 +13,7 @@
 9. Run the [processing script](https://github.com/tdwg/rs.tdwg.org/blob/master/process/process.py), which needs to be in the same directory as the configuration file. 
 10. There are some manual edits that need to be made if there are changes to either of the Dublin Core namespace terms. The versions don't get handled very automatically, so make the same changes to the [dcterms: version CSV](https://github.com/tdwg/rs.tdwg.org/blob/master/dcterms-for-dwc-versions/dcterms-for-dwc-versions.csv) or [dc: version CSV](https://github.com/tdwg/rs.tdwg.org/blob/master/dc-for-dwc-versions/dc-for-dwc-versions.csv) as were made to the main term CSVs. 
 11. The Dublin Core versions also need to be manually added for the new termlist version in the [termlist versions members CSV](https://github.com/tdwg/rs.tdwg.org/blob/master/term-lists-versions/term-lists-versions-members.csv). In the future, this may get automated.
-12. As of 2022-05-28 there is a Jupyter notebook that mostly automates the process of updating the list of terms metadata. See [these notes](https://github.com/tdwg/rs.tdwg.org/blob/master/process/process-vocabulary.md#5-managing-documents-metadata-via-python-script) for more information. Steve Baskauf is still working on integrating this with the rest of the build process, but it's more automated than it was.
+12. As of 2023-06-16 there is a [Python script](https://github.com/tdwg/rs.tdwg.org/blob/master/process/document_metadata_processing/tdwg_docs_metadata_update.py) that automates the process of updating the metadata about the list of terms document. See [these notes](https://github.com/tdwg/rs.tdwg.org/blob/master/process/process-vocabulary.md#5-managing-documents-metadata-via-python-script) for more information. Steve Baskauf is still working on integrating this with the rest of the build process, but it's more automated than it was.
 13. Push the branch to GitHub and create a pull request. It is best for someone to review the changes carefully before merging.
 14. Once the branch has been merged the data are available via HTTP to the other scripts that use those data. 
 15. Create a branch of the [Darwin Core repo](https://github.com/tdwg/dwc). 
@@ -66,4 +66,4 @@ It generates the file `term_versions.csv`, which is used as the input for the `b
 The Python script `build-termlist.py` inputs the header information from `termlist-header.md`, then builds the list of terms and their metadata from data in the [rs.tdwg.org](http://github.com/tdwg/rs.tdwg.org) repository. The script also inputs `termlist-footer.md` and appends it to the end of the generated document, but currently it has no content. The constructed Markdown document is saved as `/docs/list/index.md`. 
 
 ------
-Last edited: 2021-08-04
+Last edited: 2023-06-17
