@@ -11,6 +11,8 @@ The first three categories are tracked in the milestone [Public Review 2023-02-1
 
 ## 1. New terms added (change process and Executive approval required)
 
+Note: The IRI analogs of new terms (in the dwciri: namespace) are not shown. Their definitions are identical to the dwc: analogs.
+
 <table>
 	<thead>
 		<tr>
@@ -347,13 +349,13 @@ The first three categories are tracked in the milestone [Public Review 2023-02-1
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_eventType"></a>Term Name  dwciri:eventType</th>
+			<th colspan="2"><a id="dwc_eventType"></a>Term Name  dwc:eventType</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/eventType">http://rs.tdwg.org/dwc/iri/eventType</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/eventType">http://rs.tdwg.org/dwc/terms/eventType</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -361,11 +363,11 @@ The first three categories are tracked in the milestone [Public Review 2023-02-1
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/eventType-2023-06-16">http://rs.tdwg.org/dwc/iri/version/eventType-2023-06-16</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/eventType-2023-06-16">http://rs.tdwg.org/dwc/terms/version/eventType-2023-06-16</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
-			<td>Event Type (IRI)</td>
+			<td>Event Type</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -373,7 +375,20 @@ The first three categories are tracked in the milestone [Public Review 2023-02-1
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to use a controlled vocabulary. Regardless of the dwc:eventType, the interval of the dwc:Event can be captured in dwc:eventDate. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td>
+			<td>Recommended best practice is to use a controlled vocabulary. Regardless of the dwc:eventType, the interval of the dwc:Event can be captured in dwc:eventDate.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>Sample</code></li>
+  <li class="list-group-item"><code>Observation</code></li>
+  <li class="list-group-item"><code>Site Visit</code></li>
+  <li class="list-group-item"><code>Biotic Interaction</code></li>
+  <li class="list-group-item"><code>Bioblitz</code></li>
+  <li class="list-group-item"><code>Expedition</code></li>
+  <li class="list-group-item"><code>Survey</code></li>
+  <li class="list-group-item"><code>Project</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
