@@ -1,13 +1,13 @@
 # Changes made in the 2023-06-16 version of DwC
 
-The changes shown below fall into several categories:
+The changes made fall into several categories:
 
 1. New terms added (requires change process and Executive approval)
 2. Subtantive term changes (requires change process and Executive approval)
 3. Non-substantive term changes (correcting errors, updating examples; does not require change process but is tracked for transparency)
 4. Formatting changes. The examples were changed from a comma separated list to a vertical list.
 
-The first three categories are tracked in the milestone [Public Review 2023-02-12](https://github.com/tdwg/dwc/milestone/16), where the details of the changes can be viewed.
+The first three categories are tracked in the milestone [Public Review 2023-02-12](https://github.com/tdwg/dwc/milestone/16), where the rationale and discussion of changes are given. The details of the changes are shown below, except for those resulting from [Issue 379](https://github.com/tdwg/dwc/issues/379), which were too numerous to show below, but which can be seen in the draft of the new List of Terms document. The changes made in the fourth category were cosmetic and not shown below.
 
 ## 1. New terms added (change process and Executive approval required)
 
