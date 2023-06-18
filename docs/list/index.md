@@ -1979,7 +1979,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>A bibliographic reference for the resource as a statement indicating how this record should be cited (attributed) when used.</td>
+			<td>A bibliographic reference for the resource.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
