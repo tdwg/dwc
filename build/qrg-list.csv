@@ -30,7 +30,9 @@ http://rs.tdwg.org/dwc/terms/organismQuantityType
 http://rs.tdwg.org/dwc/terms/sex
 http://rs.tdwg.org/dwc/terms/lifeStage
 http://rs.tdwg.org/dwc/terms/reproductiveCondition
+http://rs.tdwg.org/dwc/terms/caste
 http://rs.tdwg.org/dwc/terms/behavior
+http://rs.tdwg.org/dwc/terms/vitality
 http://rs.tdwg.org/dwc/terms/establishmentMeans
 http://rs.tdwg.org/dwc/terms/degreeOfEstablishment
 http://rs.tdwg.org/dwc/terms/pathway
@@ -54,7 +56,9 @@ http://rs.tdwg.org/dwc/terms/previousIdentifications
 http://rs.tdwg.org/dwc/terms/organismRemarks
 http://rs.tdwg.org/dwc/terms/MaterialSample
 http://rs.tdwg.org/dwc/terms/materialSampleID
+http://rs.tdwg.org/dwc/terms/verbatimLabel
 http://rs.tdwg.org/dwc/terms/Event
+http://rs.tdwg.org/dwc/terms/eventType
 http://rs.tdwg.org/dwc/terms/eventID
 http://rs.tdwg.org/dwc/terms/parentEventID
 http://rs.tdwg.org/dwc/terms/fieldNumber
@@ -169,8 +173,11 @@ http://rs.tdwg.org/dwc/terms/kingdom
 http://rs.tdwg.org/dwc/terms/phylum
 http://rs.tdwg.org/dwc/terms/class
 http://rs.tdwg.org/dwc/terms/order
+http://rs.tdwg.org/dwc/terms/superfamily
 http://rs.tdwg.org/dwc/terms/family
 http://rs.tdwg.org/dwc/terms/subfamily
+http://rs.tdwg.org/dwc/terms/tribe
+http://rs.tdwg.org/dwc/terms/subtribe
 http://rs.tdwg.org/dwc/terms/genus
 http://rs.tdwg.org/dwc/terms/genericName
 http://rs.tdwg.org/dwc/terms/subgenus
@@ -188,6 +195,7 @@ http://rs.tdwg.org/dwc/terms/nomenclaturalStatus
 http://rs.tdwg.org/dwc/terms/taxonRemarks
 http://rs.tdwg.org/dwc/terms/MeasurementOrFact
 http://rs.tdwg.org/dwc/terms/measurementID
+http://rs.tdwg.org/dwc/terms/parentMeasurementID
 http://rs.tdwg.org/dwc/terms/measurementType
 http://rs.tdwg.org/dwc/terms/measurementValue
 http://rs.tdwg.org/dwc/terms/measurementAccuracy
@@ -213,11 +221,13 @@ http://rs.tdwg.org/dwc/iri/toTaxon
 http://rs.tdwg.org/dwc/iri/inCollection
 http://rs.tdwg.org/dwc/iri/georeferencedBy
 http://rs.tdwg.org/dwc/iri/behavior
+http://rs.tdwg.org/dwc/iri/caste
 http://rs.tdwg.org/dwc/iri/dataGeneralizations
 http://rs.tdwg.org/dwc/iri/degreeOfEstablishment
 http://rs.tdwg.org/dwc/iri/disposition
 http://rs.tdwg.org/dwc/iri/earliestGeochronologicalEra
 http://rs.tdwg.org/dwc/iri/establishmentMeans
+http://rs.tdwg.org/dwc/iri/eventType 
 http://rs.tdwg.org/dwc/iri/fieldNotes
 http://rs.tdwg.org/dwc/iri/fieldNumber
 http://rs.tdwg.org/dwc/iri/footprintSRS
@@ -253,6 +263,7 @@ http://rs.tdwg.org/dwc/iri/typeStatus
 http://rs.tdwg.org/dwc/iri/verbatimCoordinateSystem
 http://rs.tdwg.org/dwc/iri/verbatimSRS
 http://rs.tdwg.org/dwc/iri/verticalDatum
+http://rs.tdwg.org/dwc/iri/vitality
 http://rs.tdwg.org/dwc/terms/LivingSpecimen
 http://rs.tdwg.org/dwc/terms/PreservedSpecimen
 http://rs.tdwg.org/dwc/terms/FossilSpecimen
