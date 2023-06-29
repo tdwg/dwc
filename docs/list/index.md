@@ -1821,6 +1821,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2014-10-26_15">http://rs.tdwg.org/decisions/decision-2014-10-26_15</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-06-28_40">http://rs.tdwg.org/decisions/decision-2023-06-28_40</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -2085,6 +2089,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-06-28_40">http://rs.tdwg.org/decisions/decision-2023-06-28_40</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -2137,6 +2145,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-06-28_40">http://rs.tdwg.org/decisions/decision-2023-06-28_40</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -2415,6 +2427,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-06-28_40">http://rs.tdwg.org/decisions/decision-2023-06-28_40</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -2607,6 +2623,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-06-28_40">http://rs.tdwg.org/decisions/decision-2023-06-28_40</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -2656,6 +2676,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-06-28_40">http://rs.tdwg.org/decisions/decision-2023-06-28_40</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -5013,6 +5037,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-06-28_40">http://rs.tdwg.org/decisions/decision-2023-06-28_40</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -5068,6 +5096,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-06-28_40">http://rs.tdwg.org/decisions/decision-2023-06-28_40</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -5109,6 +5141,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-06-28_40">http://rs.tdwg.org/decisions/decision-2023-06-28_40</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -5372,6 +5408,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-06-28_40">http://rs.tdwg.org/decisions/decision-2023-06-28_40</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -8062,6 +8102,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-06-28_40">http://rs.tdwg.org/decisions/decision-2023-06-28_40</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -10684,6 +10728,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-06-28_40">http://rs.tdwg.org/decisions/decision-2023-06-28_40</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -10871,6 +10919,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-06-28_40">http://rs.tdwg.org/decisions/decision-2023-06-28_40</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -10912,6 +10964,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-06-28_40">http://rs.tdwg.org/decisions/decision-2023-06-28_40</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -12518,6 +12574,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-06-28_40">http://rs.tdwg.org/decisions/decision-2023-06-28_40</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -12815,6 +12875,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-06-28_40">http://rs.tdwg.org/decisions/decision-2023-06-28_40</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -15200,6 +15264,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2019-12-01_19">http://rs.tdwg.org/decisions/decision-2019-12-01_19</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-06-28_40">http://rs.tdwg.org/decisions/decision-2023-06-28_40</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -15621,6 +15689,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-06-28_40">http://rs.tdwg.org/decisions/decision-2023-06-28_40</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -15762,6 +15834,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-06-28_40">http://rs.tdwg.org/decisions/decision-2023-06-28_40</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -15814,6 +15890,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-06-28_40">http://rs.tdwg.org/decisions/decision-2023-06-28_40</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -16219,6 +16299,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-06-28_40">http://rs.tdwg.org/decisions/decision-2023-06-28_40</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -16347,6 +16431,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-06-28_40">http://rs.tdwg.org/decisions/decision-2023-06-28_40</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -16889,6 +16977,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2021-07-15_34">http://rs.tdwg.org/decisions/decision-2021-07-15_34</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-06-28_40">http://rs.tdwg.org/decisions/decision-2023-06-28_40</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -16934,6 +17026,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-06-28_40">http://rs.tdwg.org/decisions/decision-2023-06-28_40</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -17453,6 +17549,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-06-28_40">http://rs.tdwg.org/decisions/decision-2023-06-28_40</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -17504,6 +17604,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-06-28_40">http://rs.tdwg.org/decisions/decision-2023-06-28_40</a></td>
 		</tr>
 	</tbody>
 </table>
