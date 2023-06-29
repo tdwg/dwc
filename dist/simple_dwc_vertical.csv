@@ -28,7 +28,9 @@ organismQuantityType
 sex
 lifeStage
 reproductiveCondition
+caste
 behavior
+vitality
 establishmentMeans
 degreeOfEstablishment
 pathway
@@ -50,6 +52,8 @@ associatedOrganisms
 previousIdentifications
 organismRemarks
 materialSampleID
+verbatimLabel
+eventType
 eventID
 parentEventID
 fieldNumber
@@ -160,8 +164,11 @@ kingdom
 phylum
 class
 order
+superfamily
 family
 subfamily
+tribe
+subtribe
 genus
 genericName
 subgenus
