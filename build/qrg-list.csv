@@ -58,9 +58,9 @@ http://rs.tdwg.org/dwc/terms/MaterialSample
 http://rs.tdwg.org/dwc/terms/materialSampleID
 http://rs.tdwg.org/dwc/terms/verbatimLabel
 http://rs.tdwg.org/dwc/terms/Event
-http://rs.tdwg.org/dwc/terms/eventType
 http://rs.tdwg.org/dwc/terms/eventID
 http://rs.tdwg.org/dwc/terms/parentEventID
+http://rs.tdwg.org/dwc/terms/eventType
 http://rs.tdwg.org/dwc/terms/fieldNumber
 http://rs.tdwg.org/dwc/terms/eventDate
 http://rs.tdwg.org/dwc/terms/eventTime
