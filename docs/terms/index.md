@@ -1,9 +1,9 @@
 
 # Darwin Core Quick Reference Guide
 
-This document is intended to be an easy-to-read reference of the currently (as of 2021-07-15) recommended terms maintained as part of the [Darwin Core standard](https://www.tdwg.org/standards/dwc/) and is maintained by the [Darwin Core Maintenance Group](https://www.tdwg.org/community/dwc/). 
+This document is intended to be an easy-to-read reference of the currently (as of 2023-06-28) recommended terms maintained as part of the [Darwin Core standard](https://www.tdwg.org/standards/dwc/) and is maintained by the [Darwin Core Maintenance Group](https://www.tdwg.org/community/dwc/). 
 
-This page is not part of the standard, but combines the normative term names and definitions with the non-normative comments and examples that are meant to help people to use the terms consistently. Capitalized terms, such as Occurrence, are Darwin Core classes, which are special category terms used to group sets of terms for convenience. Comprehensive metadata for current and obsolete terms in human readable form are found in the document [List of Darwin Core terms](../list/). 
+This page is not part of the standard, but combines the normative term names and definitions with the non-normative comments and examples that are meant to help people to use the terms consistently. Definitions, comments, and examples may include namespace abbreviations (e.g., "dwc:"). These are included to show that the meaning for the word it is attached to very specifically means the term as defined in that namespace. Thus, dwc:Event means Event as defined by Darwin Core at https://dwc.tdwg.org/terms/#event. Capitalized terms that follow a namespace abbreviation, such as dwc:Occurrence, are Darwin Core class terms, which are a special category of terms used to group sets of property terms (terms that being with lower case names that follow the namespace abbreviation, e.g., dwc:eventID) for convenience. Comprehensive metadata for current and obsolete terms in human readable form are found in the document [List of Darwin Core terms](../list/). 
 
 Additional [files with just the current term names](https://github.com/tdwg/dwc/tree/master/dist) and a [file with the full term history](https://github.com/tdwg/dwc/blob/master/vocabulary/term_versions.csv) can be found in the [Darwin Core repository](https://github.com/tdwg/dwc). 
 
@@ -843,9 +843,9 @@ This category contains terms that are generic in that they might apply to any ty
 ## Event
 
 <div class="my-4">
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:eventType">eventType</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:eventID">eventID</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:parentEventID">parentEventID</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:eventType">eventType</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:fieldNumber">fieldNumber</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:eventDate">eventDate</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:eventTime">eventTime</a>
@@ -875,19 +875,6 @@ This category contains terms that are generic in that they might apply to any ty
 </table>
 
 <p class="invisible">
-  <span id="dwc:eventType"></span>
-    <span id="eventType"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">eventType</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/eventType">http://rs.tdwg.org/dwc/terms/eventType</a></td></tr>
-    <tr><td>Definition</td><td>The nature of the dwc:Event.</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. Regardless of the dwc:eventType, the interval of the dwc:Event can be captured in dwc:eventDate.</td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Sample</code></li><li class="list-group-item"><code>Observation</code></li><li class="list-group-item"><code>Site Visit</code></li><li class="list-group-item"><code>Biotic Interaction</code></li><li class="list-group-item"><code>Bioblitz</code></li><li class="list-group-item"><code>Expedition</code></li><li class="list-group-item"><code>Survey</code></li><li class="list-group-item"><code>Project</code></li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
   <span id="dwc:eventID"></span>
     <span id="eventID"></span>
   </p>
@@ -911,6 +898,19 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Definition</td><td>An identifier for the broader dwc:Event that groups this and potentially other dwc:Events.</td></tr>
     <tr><td>Comments</td><td>Use a globally unique identifier for a dwc:Event or an identifier for a dwc:Event that is specific to the data set.</td></tr>
     <tr><td>Examples</td><td><code>A1</code> (parentEventID to identify the main Whittaker Plot in nested samples, each with its own eventID - <code>A1:1</code>, <code>A1:2</code>).</td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:eventType"></span>
+    <span id="eventType"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">eventType</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/eventType">http://rs.tdwg.org/dwc/terms/eventType</a></td></tr>
+    <tr><td>Definition</td><td>The nature of the dwc:Event.</td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. Regardless of the dwc:eventType, the interval of the dwc:Event can be captured in dwc:eventDate.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Sample</code></li><li class="list-group-item"><code>Observation</code></li><li class="list-group-item"><code>Site Visit</code></li><li class="list-group-item"><code>Biotic Interaction</code></li><li class="list-group-item"><code>Bioblitz</code></li><li class="list-group-item"><code>Expedition</code></li><li class="list-group-item"><code>Survey</code></li><li class="list-group-item"><code>Project</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
