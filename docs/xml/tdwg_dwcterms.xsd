@@ -132,9 +132,11 @@
     <xs:element name="sex" type="xs:string" substitutionGroup="dwc:anyOccurrenceTerm"/>
     <xs:element name="lifeStage" type="xs:string" substitutionGroup="dwc:anyOccurrenceTerm"/>
     <xs:element name="reproductiveCondition" type="xs:string" substitutionGroup="dwc:anyOccurrenceTerm"/>
+    <xs:element name="caste" type="xs:string" substitutionGroup="dwc:anyOccurrenceTerm"/>
     <xs:element name="behavior" type="xs:string" substitutionGroup="dwc:anyOccurrenceTerm"/>
+    <xs:element name="vitality" type="xs:string" substitutionGroup="dwc:anyOccurrenceTerm"/>
     <xs:element name="establishmentMeans" type="xs:string" substitutionGroup="dwc:anyOccurrenceTerm"/>
-    <xs:element name="degreeOfEstablishmentMeans" type="xs:string" substitutionGroup="dwc:anyOccurrenceTerm"/>
+    <xs:element name="degreeOfEstablishment" type="xs:string" substitutionGroup="dwc:anyOccurrenceTerm"/>
     <xs:element name="pathway" type="xs:string" substitutionGroup="dwc:anyOccurrenceTerm"/>
     <xs:element name="georeferenceVerificationStatus" type="xs:string" substitutionGroup="dwc:anyOccurrenceTerm"/>
     <xs:element name="occurrenceStatus" type="xs:string" substitutionGroup="dwc:anyOccurrenceTerm"/>
@@ -159,9 +161,11 @@
             <xs:element ref="dwc:sex" minOccurs="0"/>
             <xs:element ref="dwc:lifeStage" minOccurs="0"/>
             <xs:element ref="dwc:reproductiveCondition" minOccurs="0"/>
+            <xs:element ref="dwc:caste" minOccurs="0"/>
             <xs:element ref="dwc:behavior" minOccurs="0"/>
+            <xs:element ref="dwc:vitality" minOccurs="0"/>
             <xs:element ref="dwc:establishmentMeans" minOccurs="0"/>
-            <xs:element ref="dwc:degreeOfEstablishmentMeans" minOccurs="0"/>
+            <xs:element ref="dwc:degreeOfEstablishment" minOccurs="0"/>
             <xs:element ref="dwc:pathway" minOccurs="0"/>
             <xs:element ref="dwc:georeferenceVerificationStatus" minOccurs="0"/>
             <xs:element ref="dwc:occurrenceStatus" minOccurs="0"/>
@@ -199,6 +203,7 @@
     <!-- MaterialSample domain -->
     <xs:element name="anyMaterialSampleTerm" abstract="true" substitutionGroup="dwc:anyProperty"/>
     <xs:element name="materialSampleID" type="dwc:nonEmptyString" substitutionGroup="dwc:anyIdentifier"/>
+    <xs:element name="verbatimLabel" type="xs:string" substitutionGroup="dwc:anyMaterialSampleTerm"/>
     <!-- domain properties -->
 
     <!-- EVENT domain -->
@@ -206,6 +211,7 @@
     <xs:element name="eventID" type="dwc:nonEmptyString" substitutionGroup="dwc:anyIdentifier"/>
     <!-- domain properties -->
     <xs:element name="parentEventID" type="xs:string" substitutionGroup="dwc:anyEventTerm"/>
+    <xs:element name="eventType" type="xs:string" substitutionGroup="dwc:anyEventTerm"/>
     <xs:element name="eventDate" type="dwc:dateTimeISO" substitutionGroup="dwc:anyEventTerm"/>
     <xs:element name="eventTime" type="xs:time" substitutionGroup="dwc:anyEventTerm"/>
     <xs:element name="startDayOfYear" type="dwc:dayOfYearDataType" substitutionGroup="dwc:anyEventTerm"/>
@@ -225,6 +231,7 @@
     <xs:group name="EventTerms">
         <xs:sequence>
             <xs:element ref="dwc:parentEventID" minOccurs="0"/>
+            <xs:element ref="dwc:eventType" minOccurs="0"/>
             <xs:element ref="dwc:eventDate" minOccurs="0"/>
             <xs:element ref="dwc:eventTime" minOccurs="0"/>
             <xs:element ref="dwc:startDayOfYear" minOccurs="0"/>
@@ -251,7 +258,7 @@
     <xs:element name="higherGeographyID" type="dwc:nonEmptyString" substitutionGroup="dwc:anyLocationTerm"/>
     <xs:element name="higherGeography" type="xs:string" substitutionGroup="dwc:anyLocationTerm"/>
     <xs:element name="continent" type="xs:string" substitutionGroup="dwc:anyLocationTerm"/>
-    <xs:element name="waterbody" type="xs:string" substitutionGroup="dwc:anyLocationTerm"/>
+    <xs:element name="waterBody" type="xs:string" substitutionGroup="dwc:anyLocationTerm"/>
     <xs:element name="islandGroup" type="xs:string" substitutionGroup="dwc:anyLocationTerm"/>
     <xs:element name="island" type="xs:string" substitutionGroup="dwc:anyLocationTerm"/>
     <xs:element name="country" type="xs:string" substitutionGroup="dwc:anyLocationTerm"/>
@@ -296,7 +303,7 @@
             <xs:element ref="dwc:higherGeographyID" minOccurs="0"/>
             <xs:element ref="dwc:higherGeography" minOccurs="0"/>
             <xs:element ref="dwc:continent" minOccurs="0"/>
-            <xs:element ref="dwc:waterbody" minOccurs="0"/>
+            <xs:element ref="dwc:waterBody" minOccurs="0"/>
             <xs:element ref="dwc:islandGroup" minOccurs="0"/>
             <xs:element ref="dwc:island" minOccurs="0"/>
             <xs:element ref="dwc:country" minOccurs="0"/>
@@ -431,8 +438,11 @@
     <xs:element name="phylum" type="xs:string" substitutionGroup="dwc:anyTaxonTerm"/>
     <xs:element name="class" type="xs:string" substitutionGroup="dwc:anyTaxonTerm"/>
     <xs:element name="order" type="xs:string" substitutionGroup="dwc:anyTaxonTerm"/>
+    <xs:element name="superfamily" type="xs:string" substitutionGroup="dwc:anyTaxonTerm"/>
     <xs:element name="family" type="xs:string" substitutionGroup="dwc:anyTaxonTerm"/>
     <xs:element name="subfamily" type="xs:string" substitutionGroup="dwc:anyTaxonTerm"/>
+    <xs:element name="tribe" type="xs:string" substitutionGroup="dwc:anyTaxonTerm"/>
+    <xs:element name="subtribe" type="xs:string" substitutionGroup="dwc:anyTaxonTerm"/>
     <xs:element name="genus" type="xs:string" substitutionGroup="dwc:anyTaxonTerm"/>
     <xs:element name="genericName" type="xs:string" substitutionGroup="dwc:anyTaxonTerm"/>
     <xs:element name="subgenus" type="xs:string" substitutionGroup="dwc:anyTaxonTerm"/>
@@ -469,8 +479,11 @@
             <xs:element ref="dwc:phylum" minOccurs="0"/>
             <xs:element ref="dwc:class" minOccurs="0"/>
             <xs:element ref="dwc:order" minOccurs="0"/>
+            <xs:element ref="dwc:superfamily" minOccurs="0"/>
             <xs:element ref="dwc:family" minOccurs="0"/>
             <xs:element ref="dwc:subfamily" minOccurs="0"/>
+            <xs:element ref="dwc:tribe" minOccurs="0"/>
+            <xs:element ref="dwc:subtribe" minOccurs="0"/>
             <xs:element ref="dwc:genus" minOccurs="0"/>
             <xs:element ref="dwc:genericName" minOccurs="0"/>
             <xs:element ref="dwc:subgenus" minOccurs="0"/>
@@ -493,6 +506,7 @@
     <xs:element name="anyMeasurementTerm" abstract="true" substitutionGroup="dwc:anyProperty"/>
     <xs:element name="measurementID" type="dwc:nonEmptyString" substitutionGroup="dwc:anyIdentifier"/>
     <!-- domain properties -->
+    <xs:element name="parentMeasurementID" type="xs:string" substitutionGroup="dwc:anyMeasurementTerm"/>
     <xs:element name="measurementType" type="xs:string" substitutionGroup="dwc:anyMeasurementTerm"/>
     <xs:element name="measurementValue" type="xs:string" substitutionGroup="dwc:anyMeasurementTerm"/>
     <xs:element name="measurementAccuracy" type="xs:string" substitutionGroup="dwc:anyMeasurementTerm"/>
@@ -503,6 +517,7 @@
     <xs:element name="measurementRemarks" type="xs:string" substitutionGroup="dwc:anyMeasurementTerm"/>
     <xs:group name="MeasurementTerms">
         <xs:sequence>
+            <xs:element ref="dwc:parentMeasurementID" minOccurs="0"/>
             <xs:element ref="dwc:measurementType" minOccurs="0"/>
             <xs:element ref="dwc:measurementValue" minOccurs="0"/>
             <xs:element ref="dwc:measurementAccuracy" minOccurs="0"/>
