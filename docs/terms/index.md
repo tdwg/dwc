@@ -254,7 +254,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">informationWithheld</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/informationWithheld">http://rs.tdwg.org/dwc/terms/informationWithheld</a></td></tr>
     <tr><td>Definition</td><td>Additional information that exists, but that has not been shared in the given record.</td></tr>
-    <tr><td>Comments</td><td></td></tr>
+    <tr><td>Comments</td><td>This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>location information not given for endangered species</code></li><li class="list-group-item"><code>collector identities withheld | ask about tissue samples</code></li></ul></td></tr>
   </tbody>
 </table>
@@ -267,7 +267,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">dataGeneralizations</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/dataGeneralizations">http://rs.tdwg.org/dwc/terms/dataGeneralizations</a></td></tr>
     <tr><td>Definition</td><td>Actions taken to make the shared data less specific or complete than in its original form. Suggests that alternative data of higher quality may be available on request.</td></tr>
-    <tr><td>Comments</td><td></td></tr>
+    <tr><td>Comments</td><td>This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><code>Coordinates generalized from original GPS coordinates to the nearest half degree grid cell</code>.</td></tr>
   </tbody>
 </table>
@@ -364,7 +364,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">recordNumber</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/recordNumber">http://rs.tdwg.org/dwc/terms/recordNumber</a></td></tr>
     <tr><td>Definition</td><td>An identifier given to the dwc:Occurrence at the time it was recorded. Often serves as a link between field notes and a dwc:Occurrence record, such as a specimen collector's number.</td></tr>
-    <tr><td>Comments</td><td></td></tr>
+    <tr><td>Comments</td><td>This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><code>OPP 7101</code></td></tr>
   </tbody>
 </table>
@@ -377,7 +377,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">recordedBy</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/recordedBy">http://rs.tdwg.org/dwc/terms/recordedBy</a></td></tr>
     <tr><td>Definition</td><td>A list (concatenated and separated) of names of people, groups, or organizations responsible for recording the original dwc:Occurrence. The primary collector or observer, especially one who applies a personal identifier (dwc:recordNumber), should be listed first.</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>José E. Crespo</code></li><li class="list-group-item"><code>Oliver P. Pearson | Anita K. Pearson</code> (where the value in recordNumber <code>OPP 7101</code> corresponds to the collector number for the specimen in the field catalog of Oliver P. Pearson)</li></ul></td></tr>
   </tbody>
 </table>
@@ -429,7 +429,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">organismQuantityType</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/organismQuantityType">http://rs.tdwg.org/dwc/terms/organismQuantityType</a></td></tr>
     <tr><td>Definition</td><td>The type of quantification system used for the quantity of dwc:Organisms.</td></tr>
-    <tr><td>Comments</td><td>A dwc:organismQuantityType must have a corresponding dwc:organismQuantity.</td></tr>
+    <tr><td>Comments</td><td>A dwc:organismQuantityType must have a corresponding dwc:organismQuantity. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>27</code> (organismQuantity) with <code>individuals</code> (organismQuantityType)</li><li class="list-group-item"><code>12.5</code> (organismQuantity) with <code>% biomass</code> (organismQuantityType)</li><li class="list-group-item"><code>r</code> (organismQuantity) with <code>Braun-Blanquet Scale</code> (organismQuantityType)</li><li class="list-group-item"><code>many</code> (organismQuantity) with <code>individuals</code> (organismQuantityType)</li></ul></td></tr>
   </tbody>
 </table>
@@ -442,7 +442,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">sex</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/sex">http://rs.tdwg.org/dwc/terms/sex</a></td></tr>
     <tr><td>Definition</td><td>The sex of the biological individual(s) represented in the dwc:Occurrence.</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>female</code></li><li class="list-group-item"><code>male</code></li><li class="list-group-item"><code>hermaphrodite</code></li></ul></td></tr>
   </tbody>
 </table>
@@ -455,7 +455,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">lifeStage</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/lifeStage">http://rs.tdwg.org/dwc/terms/lifeStage</a></td></tr>
     <tr><td>Definition</td><td>The age class or life stage of the dwc:Organism(s) at the time the dwc:Occurrence was recorded.</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>zygote</code></li><li class="list-group-item"><code>larva</code></li><li class="list-group-item"><code>juvenile</code></li><li class="list-group-item"><code>adult</code></li><li class="list-group-item"><code>seedling</code></li><li class="list-group-item"><code>flowering</code></li><li class="list-group-item"><code>fruiting</code></li></ul></td></tr>
   </tbody>
 </table>
@@ -468,7 +468,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">reproductiveCondition</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/reproductiveCondition">http://rs.tdwg.org/dwc/terms/reproductiveCondition</a></td></tr>
     <tr><td>Definition</td><td>The reproductive condition of the biological individual(s) represented in the dwc:Occurrence.</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>non-reproductive</code></li><li class="list-group-item"><code>pregnant</code></li><li class="list-group-item"><code>in bloom</code></li><li class="list-group-item"><code>fruit-bearing</code></li></ul></td></tr>
   </tbody>
 </table>
@@ -481,7 +481,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">caste</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/caste">http://rs.tdwg.org/dwc/terms/caste</a></td></tr>
     <tr><td>Definition</td><td>Categorisation of individuals for eusocial species (including some mammals and arthropods).</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary that aligns best with the dwc:Taxon.</td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary that aligns best with the dwc:Taxon. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>queen</code></li><li class="list-group-item"><code>male alate</code></li><li class="list-group-item"><code>intercaste</code></li><li class="list-group-item"><code>minor worker</code></li><li class="list-group-item"><code>soldier</code></li><li class="list-group-item"><code>ergatoid</code></li></ul></td></tr>
   </tbody>
 </table>
@@ -494,7 +494,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">behavior</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/behavior">http://rs.tdwg.org/dwc/terms/behavior</a></td></tr>
     <tr><td>Definition</td><td>The behavior shown by the subject at the time the dwc:Occurrence was recorded.</td></tr>
-    <tr><td>Comments</td><td></td></tr>
+    <tr><td>Comments</td><td>This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>roosting</code></li><li class="list-group-item"><code>foraging</code></li><li class="list-group-item"><code>running</code></li></ul></td></tr>
   </tbody>
 </table>
@@ -507,7 +507,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">vitality</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/vitality">http://rs.tdwg.org/dwc/terms/vitality</a></td></tr>
     <tr><td>Definition</td><td>An indication of whether a dwc:Organism was alive or dead at the time of collection or observation.</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. Intended to be used with records having a dwc:basisOfRecord of <code>PreservedSpecimen</code>, <code>MaterialSample</code>, or <code>HumanObservation</code>.</td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. Intended to be used with records having a dwc:basisOfRecord of <code>PreservedSpecimen</code>, <code>MaterialSample</code>, or <code>HumanObservation</code>. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>alive</code></li><li class="list-group-item"><code>dead</code></li><li class="list-group-item"><code>mixedLot</code></li><li class="list-group-item"><code>uncertain</code></li><li class="list-group-item"><code>notAssessed</code></li></ul></td></tr>
   </tbody>
 </table>
@@ -520,7 +520,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">establishmentMeans</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/establishmentMeans">http://rs.tdwg.org/dwc/terms/establishmentMeans</a></td></tr>
     <tr><td>Definition</td><td>Statement about whether a dwc:Organism has been introduced to a given place and time through the direct or indirect activity of modern humans.</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to use controlled value strings from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/em/">http://rs.tdwg.org/dwc/doc/em/</a>. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a></td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to use controlled value strings from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/em/">http://rs.tdwg.org/dwc/doc/em/</a>. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a>. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>native</code></li><li class="list-group-item"><code>nativeReintroduced</code></li><li class="list-group-item"><code>introduced</code></li><li class="list-group-item"><code>introducedAssistedColonisation</code></li><li class="list-group-item"><code>vagrant</code></li><li class="list-group-item"><code>uncertain</code></li></ul></td></tr>
   </tbody>
 </table>
@@ -533,7 +533,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">degreeOfEstablishment</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/degreeOfEstablishment">http://rs.tdwg.org/dwc/terms/degreeOfEstablishment</a></td></tr>
     <tr><td>Definition</td><td>The degree to which a dwc:Organism survives, reproduces, and expands its range at the given place and time.</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to use controlled value strings from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/doe/">http://rs.tdwg.org/dwc/doc/doe/</a>. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a></td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to use controlled value strings from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/doe/">http://rs.tdwg.org/dwc/doc/doe/</a>. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a>. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>native</code></li><li class="list-group-item"><code>captive</code></li><li class="list-group-item"><code>cultivated</code></li><li class="list-group-item"><code>released</code></li><li class="list-group-item"><code>failing</code></li><li class="list-group-item"><code>casual</code></li><li class="list-group-item"><code>reproducing</code></li><li class="list-group-item"><code>established</code></li><li class="list-group-item"><code>colonising</code></li><li class="list-group-item"><code>invasive</code></li><li class="list-group-item"><code>widespreadInvasive</code></li></ul></td></tr>
   </tbody>
 </table>
@@ -546,7 +546,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">pathway</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/pathway">http://rs.tdwg.org/dwc/terms/pathway</a></td></tr>
     <tr><td>Definition</td><td>The process by which a dwc:Organism came to be in a given place at a given time.</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to use controlled value strings from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/pw/">http://rs.tdwg.org/dwc/doc/pw/</a>. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a></td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to use controlled value strings from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/pw/">http://rs.tdwg.org/dwc/doc/pw/</a>. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a>. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>releasedForUse</code></li><li class="list-group-item"><code>otherEscape</code></li><li class="list-group-item"><code>transportContaminant</code></li><li class="list-group-item"><code>transportStowaway</code></li><li class="list-group-item"><code>corridor</code></li><li class="list-group-item"><code>unaided</code></li></ul></td></tr>
   </tbody>
 </table>
@@ -559,7 +559,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">georeferenceVerificationStatus</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/georeferenceVerificationStatus">http://rs.tdwg.org/dwc/terms/georeferenceVerificationStatus</a></td></tr>
     <tr><td>Definition</td><td>A categorical description of the extent to which the georeference has been verified to represent the best possible spatial description for the dcterms:Location of the dwc:Occurrence.</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>unable to georeference</code></li><li class="list-group-item"><code>requires georeference</code></li><li class="list-group-item"><code>requires verification</code></li><li class="list-group-item"><code>verified by data custodian</code></li><li class="list-group-item"><code>verified by contributor</code></li></ul></td></tr>
   </tbody>
 </table>
@@ -572,7 +572,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">occurrenceStatus</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/occurrenceStatus">http://rs.tdwg.org/dwc/terms/occurrenceStatus</a></td></tr>
     <tr><td>Definition</td><td>A statement about the presence or absence of a dwc:Taxon at a dcterms:Location.</td></tr>
-    <tr><td>Comments</td><td>For dwc:Occurrences, the default vocabulary is recommended to consist of <code>present</code> and <code>absent</code>, but can be extended by implementers with good justification.</td></tr>
+    <tr><td>Comments</td><td>For dwc:Occurrences, the default vocabulary is recommended to consist of <code>present</code> and <code>absent</code>, but can be extended by implementers with good justification. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>present</code></li><li class="list-group-item"><code>absent</code></li></ul></td></tr>
   </tbody>
 </table>
@@ -585,7 +585,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">preparations</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/preparations">http://rs.tdwg.org/dwc/terms/preparations</a></td></tr>
     <tr><td>Definition</td><td>A list (concatenated and separated) of preparations and preservation methods for a specimen.</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>fossil</code></li><li class="list-group-item"><code>cast</code></li><li class="list-group-item"><code>photograph</code></li><li class="list-group-item"><code>DNA extract</code></li><li class="list-group-item"><code>skin | skull | skeleton</code></li><li class="list-group-item"><code>whole animal (ETOH) | tissue (EDTA)</code></li></ul></td></tr>
   </tbody>
 </table>
@@ -598,7 +598,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">disposition</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/disposition">http://rs.tdwg.org/dwc/terms/disposition</a></td></tr>
     <tr><td>Definition</td><td>The current state of a specimen with respect to the collection identified in dwc:collectionCode or dwc:collectionID.</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>in collection</code></li><li class="list-group-item"><code>missing</code></li><li class="list-group-item"><code>voucher elsewhere</code></li><li class="list-group-item"><code>duplicates elsewhere</code></li></ul></td></tr>
   </tbody>
 </table>
@@ -910,7 +910,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">eventType</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/eventType">http://rs.tdwg.org/dwc/terms/eventType</a></td></tr>
     <tr><td>Definition</td><td>The nature of the dwc:Event.</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. Regardless of the dwc:eventType, the interval of the dwc:Event can be captured in dwc:eventDate.</td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. Regardless of the dwc:eventType, the interval of the dwc:Event can be captured in dwc:eventDate. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Sample</code></li><li class="list-group-item"><code>Observation</code></li><li class="list-group-item"><code>Site Visit</code></li><li class="list-group-item"><code>Biotic Interaction</code></li><li class="list-group-item"><code>Bioblitz</code></li><li class="list-group-item"><code>Expedition</code></li><li class="list-group-item"><code>Survey</code></li><li class="list-group-item"><code>Project</code></li></ul></td></tr>
   </tbody>
 </table>
@@ -923,7 +923,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">fieldNumber</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/fieldNumber">http://rs.tdwg.org/dwc/terms/fieldNumber</a></td></tr>
     <tr><td>Definition</td><td>An identifier given to the dwc:Event in the field. Often serves as a link between field notes and the dwc:Event.</td></tr>
-    <tr><td>Comments</td><td></td></tr>
+    <tr><td>Comments</td><td>This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><code>RV Sol 87-03-08</code></td></tr>
   </tbody>
 </table>
@@ -1040,7 +1040,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">habitat</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/habitat">http://rs.tdwg.org/dwc/terms/habitat</a></td></tr>
     <tr><td>Definition</td><td>A category or description of the habitat in which the dwc:Event occurred.</td></tr>
-    <tr><td>Comments</td><td></td></tr>
+    <tr><td>Comments</td><td>This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>oak savanna</code></li><li class="list-group-item"><code>pre-cordilleran steppe</code></li></ul></td></tr>
   </tbody>
 </table>
@@ -1053,7 +1053,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">samplingProtocol</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/samplingProtocol">http://rs.tdwg.org/dwc/terms/samplingProtocol</a></td></tr>
     <tr><td>Definition</td><td>The names of, references to, or descriptions of the methods or protocols used during a dwc:Event.</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is describe a dwc:Event with no more than one sampling protocol. In the case of a summary Event with multiple protocols, in which a specific protocol can not be attributed to specific dwc:Occurrences, the recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is describe a dwc:Event with no more than one sampling protocol. In the case of a summary Event with multiple protocols, in which a specific protocol can not be attributed to specific dwc:Occurrences, the recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>UV light trap</code></li><li class="list-group-item"><code>mist net</code></li><li class="list-group-item"><code>bottom trawl</code></li><li class="list-group-item"><code>ad hoc observation | point count</code></li><li class="list-group-item"><code>Penguins from space: faecal stains reveal the location of emperor penguin colonies, <a href="https://doi.org/10.1111/j.1466-8238.2009.00467.x">https://doi.org/10.1111/j.1466-8238.2009.00467.x</a></code></li><li class="list-group-item"><code>Takats et al. 2001. Guidelines for Nocturnal Owl Monitoring in North America. Beaverhill Bird Observatory and Bird Studies Canada, Edmonton, Alberta. 32 pp., <a href="http://www.bsc-eoc.org/download/Owl.pdf">http://www.bsc-eoc.org/download/Owl.pdf</a></code></li></ul></td></tr>
   </tbody>
 </table>
@@ -1079,7 +1079,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">sampleSizeUnit</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/sampleSizeUnit">http://rs.tdwg.org/dwc/terms/sampleSizeUnit</a></td></tr>
     <tr><td>Definition</td><td>The unit of measurement of the size (time duration, length, area, or volume) of a sample in a sampling dwc:Event.</td></tr>
-    <tr><td>Comments</td><td>A dwc:sampleSizeUnit must have a corresponding dwc:sampleSizeValue, e.g., <code>5</code> for dwc:sampleSizeValue with <code>m</code> for dwc:sampleSizeUnit.</td></tr>
+    <tr><td>Comments</td><td>A dwc:sampleSizeUnit must have a corresponding dwc:sampleSizeValue, e.g., <code>5</code> for dwc:sampleSizeValue with <code>m</code> for dwc:sampleSizeUnit. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>minute</code></li><li class="list-group-item"><code>hour</code></li><li class="list-group-item"><code>day</code></li><li class="list-group-item"><code>metre</code></li><li class="list-group-item"><code>square metre</code></li><li class="list-group-item"><code>cubic metre</code></li></ul></td></tr>
   </tbody>
 </table>
@@ -1105,7 +1105,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">fieldNotes</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/fieldNotes">http://rs.tdwg.org/dwc/terms/fieldNotes</a></td></tr>
     <tr><td>Definition</td><td>One of a) an indicator of the existence of, b) a reference to (publication, URI), or c) the text of notes taken in the field about the dwc:Event.</td></tr>
-    <tr><td>Comments</td><td></td></tr>
+    <tr><td>Comments</td><td>This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><code>Notes available in the Grinnell-Miller Library.</code></td></tr>
   </tbody>
 </table>
@@ -1413,7 +1413,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">verticalDatum</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verticalDatum">http://rs.tdwg.org/dwc/terms/verticalDatum</a></td></tr>
     <tr><td>Definition</td><td>The vertical datum used as the reference upon which the values in the elevation terms are based.</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>EGM84</code></li><li class="list-group-item"><code>EGM96</code></li><li class="list-group-item"><code>EGM2008</code></li><li class="list-group-item"><code>PGM2000A</code></li><li class="list-group-item"><code>PGM2004</code></li><li class="list-group-item"><code>PGM2006</code></li><li class="list-group-item"><code>PGM2007</code></li><li class="list-group-item"><code>epsg:7030</code></li><li class="list-group-item"><code>unknown</code></li></ul></td></tr>
   </tbody>
 </table>
@@ -1491,7 +1491,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">locationAccordingTo</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/locationAccordingTo">http://rs.tdwg.org/dwc/terms/locationAccordingTo</a></td></tr>
     <tr><td>Definition</td><td>Information about the source of this dcterms:Location information. Could be a publication (gazetteer), institution, or team of individuals.</td></tr>
-    <tr><td>Comments</td><td></td></tr>
+    <tr><td>Comments</td><td>This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Getty Thesaurus of Geographic Names</code></li><li class="list-group-item"><code>GADM</code></li></ul></td></tr>
   </tbody>
 </table>
@@ -1543,7 +1543,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">geodeticDatum</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/geodeticDatum">http://rs.tdwg.org/dwc/terms/geodeticDatum</a></td></tr>
     <tr><td>Definition</td><td>The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which the geographic coordinates given in dwc:decimalLatitude and dwc:decimalLongitude are based.</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to use the EPSG code of the SRS, if known. Otherwise use a controlled vocabulary for the name or code of the geodetic datum, if known. Otherwise use a controlled vocabulary for the name or code of the ellipsoid, if known. If none of these is known, use the value <code>unknown</code>.</td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to use the EPSG code of the SRS, if known. Otherwise use a controlled vocabulary for the name or code of the geodetic datum, if known. Otherwise use a controlled vocabulary for the name or code of the ellipsoid, if known. If none of these is known, use the value <code>unknown</code>. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>EPSG:4326</code></li><li class="list-group-item"><code>WGS84</code></li><li class="list-group-item"><code>NAD27</code></li><li class="list-group-item"><code>Campo Inchauspe</code></li><li class="list-group-item"><code>European 1950</code></li><li class="list-group-item"><code>Clarke 1866</code></li><li class="list-group-item"><code>unknown</code></li></ul></td></tr>
   </tbody>
 </table>
@@ -1634,7 +1634,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">verbatimCoordinateSystem</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimCoordinateSystem">http://rs.tdwg.org/dwc/terms/verbatimCoordinateSystem</a></td></tr>
     <tr><td>Definition</td><td>The coordinate format for the dwc:verbatimLatitude and dwc:verbatimLongitude or the dwc:verbatimCoordinates of the dcterms:Location.</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>decimal degrees</code></li><li class="list-group-item"><code>degrees decimal minutes</code></li><li class="list-group-item"><code>degrees minutes seconds</code></li><li class="list-group-item"><code>UTM</code></li></ul></td></tr>
   </tbody>
 </table>
@@ -1647,7 +1647,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">verbatimSRS</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimSRS">http://rs.tdwg.org/dwc/terms/verbatimSRS</a></td></tr>
     <tr><td>Definition</td><td>The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which coordinates given in dwc:verbatimLatitude and dwc:verbatimLongitude, or dwc:verbatimCoordinates are based.</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to use the EPSG code of the SRS, if known. Otherwise use a controlled vocabulary for the name or code of the geodetic datum, if known. Otherwise use a controlled vocabulary for the name or code of the ellipsoid, if known. If none of these is known, use the value <code>unknown</code>.</td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to use the EPSG code of the SRS, if known. Otherwise use a controlled vocabulary for the name or code of the geodetic datum, if known. Otherwise use a controlled vocabulary for the name or code of the ellipsoid, if known. If none of these is known, use the value <code>unknown</code>. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>unknown</code></li><li class="list-group-item"><code>EPSG:4326</code></li><li class="list-group-item"><code>WGS84</code></li><li class="list-group-item"><code>NAD27</code></li><li class="list-group-item"><code>Campo Inchauspe</code></li><li class="list-group-item"><code>European 1950</code></li><li class="list-group-item"><code>Clarke 1866</code></li></ul></td></tr>
   </tbody>
 </table>
@@ -1660,7 +1660,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">footprintWKT</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/footprintWKT">http://rs.tdwg.org/dwc/terms/footprintWKT</a></td></tr>
     <tr><td>Definition</td><td>A Well-Known Text (WKT) representation of the shape (footprint, geometry) that defines the dcterms:Location. A dcterms:Location may have both a point-radius representation (see dwc:decimalLatitude) and a footprint representation, and they may differ from each other.</td></tr>
-    <tr><td>Comments</td><td></td></tr>
+    <tr><td>Comments</td><td>This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><code>POLYGON ((10 20, 11 20, 11 21, 10 21, 10 20))</code> (the one-degree bounding box with opposite corners at longitude=10, latitude=20 and longitude=11, latitude=21)</td></tr>
   </tbody>
 </table>
@@ -1673,7 +1673,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">footprintSRS</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/footprintSRS">http://rs.tdwg.org/dwc/terms/footprintSRS</a></td></tr>
     <tr><td>Definition</td><td>The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which the geometry given in dwc:footprintWKT is based.</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to use the EPSG code of the SRS, if known. Otherwise use a controlled vocabulary for the name or code of the geodetic datum, if known. Otherwise use a controlled vocabulary for the name or code of the ellipsoid, if known. If none of these is known, use the value <code>unknown</code>. It is also permitted to provide the SRS in Well-Known-Text, especially if no EPSG code provides the necessary values for the attributes of the SRS. Do not use this term to describe the SRS of the dwc:decimalLatitude and dwc:decimalLongitude, nor of any verbatim coordinates - use the dwc:geodeticDatum and dwc:verbatimSRS instead.</td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to use the EPSG code of the SRS, if known. Otherwise use a controlled vocabulary for the name or code of the geodetic datum, if known. Otherwise use a controlled vocabulary for the name or code of the ellipsoid, if known. If none of these is known, use the value <code>unknown</code>. It is also permitted to provide the SRS in Well-Known-Text, especially if no EPSG code provides the necessary values for the attributes of the SRS. Do not use this term to describe the SRS of the dwc:decimalLatitude and dwc:decimalLongitude, nor of any verbatim coordinates - use the dwc:geodeticDatum and dwc:verbatimSRS instead. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>epsg:4326</code></li><li class="list-group-item"><code>GEOGCS["GCS_WGS_1984", DATUM["D_WGS_1984", SPHEROID["WGS_1984",6378137,298.257223563]], PRIMEM["Greenwich",0], UNIT["Degree",0.0174532925199433]]</code> (WKT for the standard WGS84 Spatial Reference System EPSG:4326)</li></ul></td></tr>
   </tbody>
 </table>
@@ -1699,7 +1699,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">georeferencedBy</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/georeferencedBy">http://rs.tdwg.org/dwc/terms/georeferencedBy</a></td></tr>
     <tr><td>Definition</td><td>A list (concatenated and separated) of names of people, groups, or organizations who determined the georeference (spatial representation) for the dcterms:Location.</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Brad Millen (ROM)</code></li><li class="list-group-item"><code>Kristina Yamamoto | Janet Fang</code></li></ul></td></tr>
   </tbody>
 </table>
@@ -1725,7 +1725,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">georeferenceProtocol</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/georeferenceProtocol">http://rs.tdwg.org/dwc/terms/georeferenceProtocol</a></td></tr>
     <tr><td>Definition</td><td>A description or reference to the methods used to determine the spatial footprint, coordinates, and uncertainties.</td></tr>
-    <tr><td>Comments</td><td></td></tr>
+    <tr><td>Comments</td><td>This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><code>Georeferencing Quick Reference Guide (Zermoglio et al. 2020, <a href="https://doi.org/10.35035/e09p-h128">https://doi.org/10.35035/e09p-h128</a>)</code></td></tr>
   </tbody>
 </table>
@@ -1738,7 +1738,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">georeferenceSources</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/georeferenceSources">http://rs.tdwg.org/dwc/terms/georeferenceSources</a></td></tr>
     <tr><td>Definition</td><td>A list (concatenated and separated) of maps, gazetteers, or other resources used to georeference the dcterms:Location, described specifically enough to allow anyone in the future to use the same resources.</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="https://www.geonames.org/">https://www.geonames.org/</a></code></li><li class="list-group-item"><code>USGS 1:24000 Florence Montana Quad 1967 | Terrametrics 2008 on Google Earth</code></li><li class="list-group-item"><code>GeoLocate</code></li></ul></td></tr>
   </tbody>
 </table>
@@ -2086,7 +2086,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">identificationQualifier</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/identificationQualifier">http://rs.tdwg.org/dwc/terms/identificationQualifier</a></td></tr>
     <tr><td>Definition</td><td>A brief phrase or a standard term ("cf.", "aff.") to express the determiner's doubts about the dwc:Identification.</td></tr>
-    <tr><td>Comments</td><td></td></tr>
+    <tr><td>Comments</td><td>This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>aff. agrifolia var. oxyadenia</code> (for <code>Quercus aff. agrifolia var. oxyadenia</code> with accompanying values <code>Quercus</code> in genus, <code>agrifolia</code>  in specificEpithet, <code>oxyadenia</code>  in infraspecificEpithet, and <code>var.</code> in taxonRank)</li><li class="list-group-item"><code>cf. var. oxyadenia</code> (for <code>Quercus agrifolia cf. var. oxyadenia</code> with accompanying values <code>Quercus</code> in genus, <code>agrifolia</code> in specificEpithet, <code>oxyadenia</code> in infraspecificEpithet, and <code>var.</code> in taxonRank)</li></ul></td></tr>
   </tbody>
 </table>
@@ -2099,7 +2099,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">typeStatus</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/typeStatus">http://rs.tdwg.org/dwc/terms/typeStatus</a></td></tr>
     <tr><td>Definition</td><td>A list (concatenated and separated) of nomenclatural types (type status, typified scientific name, publication) applied to the subject.</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>holotype of Ctenomys sociabilis. Pearson O. P., and M. I. Christie. 1985. Historia Natural, 5(37):388</code></li><li class="list-group-item"><code>holotype of Pinus abies | holotype of Picea abies</code></li></ul></td></tr>
   </tbody>
 </table>
@@ -2112,7 +2112,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">identifiedBy</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/identifiedBy">http://rs.tdwg.org/dwc/terms/identifiedBy</a></td></tr>
     <tr><td>Definition</td><td>A list (concatenated and separated) of names of people, groups, or organizations who assigned the dwc:Taxon to the subject.</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>James L. Patton</code></li><li class="list-group-item"><code>Theodore Pappenfuss | Robert Macey</code></li></ul></td></tr>
   </tbody>
 </table>
@@ -2164,7 +2164,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">identificationVerificationStatus</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/identificationVerificationStatus">http://rs.tdwg.org/dwc/terms/identificationVerificationStatus</a></td></tr>
     <tr><td>Definition</td><td>A categorical indicator of the extent to which the taxonomic identification has been verified to be correct.</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary such as that used in HISPID and ABCD.</td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary such as that used in HISPID and ABCD. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><code>0</code> ("unverified" in HISPID/ABCD).</td></tr>
   </tbody>
 </table>
@@ -2820,7 +2820,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">measurementType</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/measurementType">http://rs.tdwg.org/dwc/terms/measurementType</a></td></tr>
     <tr><td>Definition</td><td>The nature of the measurement, fact, characteristic, or assertion.</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>tail length</code></li><li class="list-group-item"><code>temperature</code></li><li class="list-group-item"><code>trap line length</code></li><li class="list-group-item"><code>survey area</code></li><li class="list-group-item"><code>trap type</code></li></ul></td></tr>
   </tbody>
 </table>
@@ -2833,7 +2833,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">measurementValue</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/measurementValue">http://rs.tdwg.org/dwc/terms/measurementValue</a></td></tr>
     <tr><td>Definition</td><td>The value of the measurement, fact, characteristic, or assertion.</td></tr>
-    <tr><td>Comments</td><td></td></tr>
+    <tr><td>Comments</td><td>This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>45</code></li><li class="list-group-item"><code>20</code></li><li class="list-group-item"><code>1</code></li><li class="list-group-item"><code>14.5</code></li><li class="list-group-item"><code>UV-light</code></li></ul></td></tr>
   </tbody>
 </table>
@@ -2859,7 +2859,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">measurementUnit</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/measurementUnit">http://rs.tdwg.org/dwc/terms/measurementUnit</a></td></tr>
     <tr><td>Definition</td><td>The units associated with the dwc:measurementValue.</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to use the International System of Units (SI).</td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to use the International System of Units (SI). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>m</code></li><li class="list-group-item"><code>g</code></li><li class="list-group-item"><code>l</code></li><li class="list-group-item"><code>°C</code></li><li class="list-group-item"><code>mm</code></li><li class="list-group-item"><code>km²</code></li><li class="list-group-item"><code>%</code></li><li class="list-group-item"><code>hh:mm:ss</code></li></ul></td></tr>
   </tbody>
 </table>
@@ -2872,7 +2872,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">measurementDeterminedBy</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/measurementDeterminedBy">http://rs.tdwg.org/dwc/terms/measurementDeterminedBy</a></td></tr>
     <tr><td>Definition</td><td>A list (concatenated and separated) of names of people, groups, or organizations who determined the value of the dwc:MeasurementOrFact.</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Rob Guralnick</code></li><li class="list-group-item"><code>Peter Desmet | Stijn Van Hoey</code></li></ul></td></tr>
   </tbody>
 </table>
@@ -2898,7 +2898,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">measurementMethod</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/measurementMethod">http://rs.tdwg.org/dwc/terms/measurementMethod</a></td></tr>
     <tr><td>Definition</td><td>A description of or reference to (publication, URI) the method or protocol used to determine the measurement, fact, characteristic, or assertion.</td></tr>
-    <tr><td>Comments</td><td></td></tr>
+    <tr><td>Comments</td><td>This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>minimum convex polygon around burrow entrances</code> (for a home range area)</li><li class="list-group-item"><code>barometric altimeter</code> (for an elevation)</li></ul></td></tr>
   </tbody>
 </table>
@@ -3064,6 +3064,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:disposition">disposition</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:earliestGeochronologicalEra">earliestGeochronologicalEra</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:establishmentMeans">establishmentMeans</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:eventType">eventType</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:fieldNotes">fieldNotes</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:fieldNumber">fieldNumber</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:footprintSRS">footprintSRS</a>
@@ -3270,6 +3271,18 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr><td>Definition</td><td>Statement about whether a dwc:Organism has been introduced to a given place and time through the direct or indirect activity of modern humans.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to use IRIs from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/em/">http://rs.tdwg.org/dwc/doc/em/</a>. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a> . Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="http://rs.tdwg.org/dwcem/values/e001">http://rs.tdwg.org/dwcem/values/e001</a></code></li><li class="list-group-item"><code><a href="http://rs.tdwg.org/dwcem/values/e005">http://rs.tdwg.org/dwcem/values/e005</a></code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwciri:eventType"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">eventType</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/eventType">http://rs.tdwg.org/dwc/iri/eventType</a></td></tr>
+    <tr><td>Definition</td><td>The nature of the dwc:Event.</td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. Regardless of the dwc:eventType, the interval of the dwc:Event can be captured in dwc:eventDate. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -3794,7 +3807,6 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
 ## MachineObservation
 
 <div class="my-4">
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:eventType">eventType</a>
   </div>
 
 <table class="table">
@@ -3807,18 +3819,6 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
   </tbody>
 </table>
 
-<p class="invisible">
-  <span id="dwciri:eventType"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">eventType</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/eventType">http://rs.tdwg.org/dwc/iri/eventType</a></td></tr>
-    <tr><td>Definition</td><td>The nature of the dwc:Event.</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. Regardless of the dwc:eventType, the interval of the dwc:Event can be captured in dwc:eventDate. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
-    <tr><td>Examples</td><td></td></tr>
-  </tbody>
-</table>
 
 
 ## Cite Darwin Core
