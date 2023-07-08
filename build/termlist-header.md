@@ -4,7 +4,7 @@ Title
 : List of Darwin Core terms
 
 Date version issued
-: 2023-06-28
+: 2023-07-07
 
 Date created
 : 2020-08-12
@@ -13,13 +13,13 @@ Part of TDWG Standard
 : <http://www.tdwg.org/standards/450>
 
 This version
-: <http://rs.tdwg.org/dwc/doc/list/2023-06-28>
+: <http://rs.tdwg.org/dwc/doc/list/2023-07-07>
 
 Latest version
 : <http://rs.tdwg.org/dwc/doc/list/>
 
 Previous version
-: <http://rs.tdwg.org/dwc/doc/list/2021-07-15>
+: <http://rs.tdwg.org/dwc/doc/list/2021-06-28>
 
 Abstract
 : Darwin Core is a vocabulary standard for transmitting information about biodiversity. This document lists all terms in namespaces currently used in the vocabulary.
@@ -31,12 +31,12 @@ Creator
 : TDWG Darwin Core Maintenance Group
 
 Bibliographic citation
-: Darwin Core Maintenance Group. 2023. List of Darwin Core terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/list/2023-06-28>
+: Darwin Core Maintenance Group. 2023. List of Darwin Core terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/list/2023-07-07>
 
 
 ## 1 Introduction (Informative)
 
-This document contains terms that are part of the most recent version of the Darwin Core vocabulary (<http://rs.tdwg.org/version/dwc/2023-06-28>).
+This document contains terms that are part of the most recent version of the Darwin Core vocabulary (<http://rs.tdwg.org/version/dwc/2023-07-07>).
 
 This document includes terms in four namespaces that contain recommended terms: `dwc:`, `dwciri:`, `dc:`, and `dcterms:`. However, some terms in these namespaces are deprecated or superseded and should no longer be used. Deprecation or supersession is noted in the term metadata. Namespaces that contain only deprecated terms are not included in this document, but metadata about those terms can be retrieved by dereferencing their IRIs.
 
