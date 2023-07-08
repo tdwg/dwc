@@ -15906,11 +15906,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2023-07-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/superfamily-2023-06-28">http://rs.tdwg.org/dwc/terms/version/superfamily-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/superfamily-2023-07-07">http://rs.tdwg.org/dwc/terms/version/superfamily-2023-07-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -15918,7 +15918,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The full scientific name of the family in which the dwc:Taxon is classified.</td>
+			<td>The full scientific name of the superfamily in which the dwc:Taxon is classified.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>

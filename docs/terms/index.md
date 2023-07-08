@@ -2506,7 +2506,7 @@ This category contains terms that are generic in that they might apply to any ty
   <tbody>
     <tr class="table-secondary"><th colspan="2">superfamily</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/superfamily">http://rs.tdwg.org/dwc/terms/superfamily</a></td></tr>
-    <tr><td>Definition</td><td>The full scientific name of the family in which the dwc:Taxon is classified.</td></tr>
+    <tr><td>Definition</td><td>The full scientific name of the superfamily in which the dwc:Taxon is classified.</td></tr>
     <tr><td>Comments</td><td>A taxonomic category subordinate to an order and superior to a family. According to ICZN article 29.2, the suffix <code>-oidea</code> is used for a superfamily name.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Achatinoidea</code></li><li class="list-group-item"><code>Cerithioidea</code></li><li class="list-group-item"><code>Helicoidea</code></li><li class="list-group-item"><code>Hypsibioidea</code></li><li class="list-group-item"><code>Valvatoidea</code></li><li class="list-group-item"><code>Zonitoidea</code></li></ul></td></tr>
   </tbody>
