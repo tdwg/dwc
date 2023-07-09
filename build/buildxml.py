@@ -11,11 +11,12 @@
 # One extension can be generated per run of the script, with the extension's name and
 # destination file as parameters (see main() for syntax).
 #
-__version__ = '2023-07-09T12:46-03:00'
+__version__ = '2023-07-09T20:21-03:00'
 
 import csv
 import sys
 import argparse
+from xml.sax.saxutils import escape
 
 class CSVtoXMLConverter:
     '''
@@ -566,13 +567,17 @@ class CSVtoXMLConverter:
         xml += '    xmlns:dc="http://purl.org/dc/terms/"\n'
         xml += '    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd"\n'
         xml += f'    dc:title="{extension.get("title")}"\n'
-        xml += f'    name="{extension_name}" namespace="{extension.get("namespace")}" rowType="{extension.get("rowType")}"\n'
+        xml += f'    name="{extension_name}"\n'
+        xml += f'    namespace="{extension.get("namespace")}"\n'
+        xml += f'    rowType="{extension.get("rowType")}"\n'
         xml += f'    dc:issued="{extension.get("dc:issued")}"\n'
         subject = extension.get("dc:subject")
         if subject is not None:
             xml += f'    dc:subject="{extension.get("dc:subject")}"\n'
         xml += f'    dc:relation="{extension.get("dc:relation")}"\n'
-        xml += f'    dc:description="{extension.get("dc:description")}">\n'
+        description = extension.get("dc:description")
+        description = escape(description, {'"':'&quot;'})
+        xml += f'    dc:description="{description}">\n'
         xml += '\n'
         with open(self.csv_file_path, 'r') as csv_file:
             reader = csv.reader(csv_file)
@@ -603,8 +608,10 @@ class CSVtoXMLConverter:
                 description = row_dict["definition"]
                 if row_dict.get("comments") is not None and len(row_dict.get("comments"))>0:
                     description += f' {row_dict["comments"]}'
+                description = escape(description, {'"':'&quot;'})
                 term_xml += f'dc:description="{description}" '
                 examples = row_dict.get("examples") or ""
+                examples = escape(examples, {'"':'&quot;'})
                 term_xml += f'examples="{examples}" '
                 if row_dict["term_localName"] in extension.get("required"):
                     term_xml += f'required="true"/>'
@@ -612,9 +619,10 @@ class CSVtoXMLConverter:
                     term_xml += f'required="false"/>'
                 xml += f'    {term_xml}\n'
         for addition in extension.get("gbif_additions"):
+            addition = escape(addition,{'"':'&quot;'})
             xml += f'    {addition}'
         xml += "</extension>"
-        return encoded_quotes(xml)
+        return xml
 
     def write_xml(self, extension_name, filename):
         '''
@@ -623,9 +631,6 @@ class CSVtoXMLConverter:
         '''
         with open(filename, 'w') as xml_file:
             xml_file.write(self.get_xml(extension_name))
-
-def encoded_quotes(s):
-    return s.replace('"', '&quot;')
 
 def _getoptions():
   ''' Parse command line options and return them.'''
