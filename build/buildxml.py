@@ -11,7 +11,7 @@
 # One extension can be generated per run of the script, with the extension's name and
 # destination file as parameters (see main() for syntax).
 #
-__version__ = '2023-07-07T22:22-03:00'
+__version__ = '2023-07-09T12:46-03:00'
 
 import csv
 import sys
@@ -610,12 +610,11 @@ class CSVtoXMLConverter:
                     term_xml += f'required="true"/>'
                 else:
                     term_xml += f'required="false"/>'
-                    
                 xml += f'    {term_xml}\n'
         for addition in extension.get("gbif_additions"):
             xml += f'    {addition}'
         xml += "</extension>"
-        return xml
+        return encoded_quotes(xml)
 
     def write_xml(self, extension_name, filename):
         '''
@@ -624,6 +623,9 @@ class CSVtoXMLConverter:
         '''
         with open(filename, 'w') as xml_file:
             xml_file.write(self.get_xml(extension_name))
+
+def encoded_quotes(s):
+    return s.replace('"', '&quot;')
 
 def _getoptions():
   ''' Parse command line options and return them.'''
