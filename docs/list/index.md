@@ -164,6 +164,15 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [dwc:organismScope](#dwc_organismScope) |
 [dwc:previousIdentifications](#dwc_previousIdentifications) 
 
+**Material Entity**
+
+[dwc:associatedSequences](#dwc_associatedSequences) |
+[dwc:disposition](#dwc_disposition) |
+[dwc:materialEntityID](#dwc_materialEntityID) |
+[dwc:materialEntityRemarks](#dwc_materialEntityRemarks) |
+[dwc:preparations](#dwc_preparations) |
+[dwc:verbatimLabel](#dwc_verbatimLabel) 
+
 **Material Sample**
 
 [dwc:materialSampleID](#dwc_materialSampleID) 
@@ -519,6 +528,15 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [Organism Remarks](#dwc_organismRemarks) |
 [Organism Scope](#dwc_organismScope) |
 [Previous Identifications](#dwc_previousIdentifications) 
+
+**Material Entity**
+
+[Associated Sequences](#dwc_associatedSequences) |
+[Disposition](#dwc_disposition) |
+[Material Entity ID](#dwc_materialEntityID) |
+[Material Entity Remarks](#dwc_materialEntityRemarks) |
+[Preparations](#dwc_preparations) |
+[Verbatim Label](#dwc_verbatimLabel) 
 
 **Material Sample**
 
