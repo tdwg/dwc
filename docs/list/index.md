@@ -4,7 +4,7 @@ Title
 : List of Darwin Core terms
 
 Date version issued
-: 2023-07-07
+: 2023-08-18
 
 Date created
 : 2020-08-12
@@ -13,13 +13,13 @@ Part of TDWG Standard
 : <http://www.tdwg.org/standards/450>
 
 This version
-: <http://rs.tdwg.org/dwc/doc/list/2023-07-07>
+: <http://rs.tdwg.org/dwc/doc/list/2023-08-18>
 
 Latest version
 : <http://rs.tdwg.org/dwc/doc/list/>
 
 Previous version
-: <http://rs.tdwg.org/dwc/doc/list/2021-06-28>
+: <http://rs.tdwg.org/dwc/doc/list/2023-07-07>
 
 Abstract
 : Darwin Core is a vocabulary standard for transmitting information about biodiversity. This document lists all terms in namespaces currently used in the vocabulary.
@@ -31,12 +31,12 @@ Creator
 : TDWG Darwin Core Maintenance Group
 
 Bibliographic citation
-: Darwin Core Maintenance Group. 2023. List of Darwin Core terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/list/2023-07-07>
+: Darwin Core Maintenance Group. 2023. List of Darwin Core terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/list/2023-08-18>
 
 
 ## 1 Introduction (Informative)
 
-This document contains terms that are part of the most recent version of the Darwin Core vocabulary (<http://rs.tdwg.org/version/dwc/2023-07-07>).
+This document contains terms that are part of the most recent version of the Darwin Core vocabulary (<http://rs.tdwg.org/version/dwc/2023-08-18>).
 
 This document includes terms in four namespaces that contain recommended terms: `dwc:`, `dwciri:`, `dc:`, and `dcterms:`. However, some terms in these namespaces are deprecated or superseded and should no longer be used. Deprecation or supersession is noted in the term metadata. Namespaces that contain only deprecated terms are not included in this document, but metadata about those terms can be retrieved by dereferencing their IRIs.
 
@@ -87,6 +87,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [dcterms:Location](#dcterms_Location) |
 [dwc:MachineObservation](#dwc_MachineObservation) |
 [dwc:MaterialCitation](#dwc_MaterialCitation) |
+[dwc:MaterialEntity](#dwc_MaterialEntity) |
 [dwc:MaterialSample](#dwc_MaterialSample) |
 [dwc:MeasurementOrFact](#dwc_MeasurementOrFact) |
 [dwc:Occurrence](#dwc_Occurrence) |
@@ -118,7 +119,6 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [dcterms:language](#dcterms_language) |
 [dcterms:license](#dcterms_license) |
 [dcterms:modified](#dcterms_modified) |
-[dcterms:references](#dcterms_references) |
 [dcterms:rights](#dcterms_rights) |
 [dcterms:rightsHolder](#dcterms_rightsHolder) |
 [dcterms:type](#dcterms_type) 
@@ -128,14 +128,12 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [dwc:associatedMedia](#dwc_associatedMedia) |
 [dwc:associatedOccurrences](#dwc_associatedOccurrences) |
 [dwc:associatedReferences](#dwc_associatedReferences) |
-[dwc:associatedSequences](#dwc_associatedSequences) |
 [dwc:associatedTaxa](#dwc_associatedTaxa) |
 [dwc:behavior](#dwc_behavior) |
 [dwc:caste](#dwc_caste) |
 [dwc:catalogNumber](#dwc_catalogNumber) |
 [dwc:CatalogNumberNumeric](#dwc_CatalogNumberNumeric) |
 [dwc:degreeOfEstablishment](#dwc_degreeOfEstablishment) |
-[dwc:disposition](#dwc_disposition) |
 [dwc:establishmentMeans](#dwc_establishmentMeans) |
 [dwc:georeferenceVerificationStatus](#dwc_georeferenceVerificationStatus) |
 [dwc:individualCount](#dwc_individualCount) |
@@ -150,7 +148,6 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [dwc:organismQuantityType](#dwc_organismQuantityType) |
 [dwc:otherCatalogNumbers](#dwc_otherCatalogNumbers) |
 [dwc:pathway](#dwc_pathway) |
-[dwc:preparations](#dwc_preparations) |
 [dwc:recordedBy](#dwc_recordedBy) |
 [dwc:recordedByID](#dwc_recordedByID) |
 [dwc:recordNumber](#dwc_recordNumber) |
@@ -169,8 +166,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 
 **Material Sample**
 
-[dwc:materialSampleID](#dwc_materialSampleID) |
-[dwc:verbatimLabel](#dwc_verbatimLabel) 
+[dwc:materialSampleID](#dwc_materialSampleID) 
 
 **Event**
 
@@ -339,8 +335,8 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [dwc:taxonAccordingTo](#dwc_taxonAccordingTo) |
 [dwc:taxonAttributes](#dwc_taxonAttributes) |
 [dwc:taxonConceptID](#dwc_taxonConceptID) |
-[dwc:TaxonID](#dwc_TaxonID) |
 [dwc:taxonID](#dwc_taxonID) |
+[dwc:TaxonID](#dwc_TaxonID) |
 [dwc:taxonNameID](#dwc_taxonNameID) |
 [dwc:taxonomicStatus](#dwc_taxonomicStatus) |
 [dwc:taxonRank](#dwc_taxonRank) |
@@ -447,8 +443,9 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [Location](#dcterms_Location) |
 [Machine Observation](#dwc_MachineObservation) |
 [Material Citation](#dwc_MaterialCitation) |
+[Material Entity](#dwc_MaterialEntity) |
 [Material Sample](#dwc_MaterialSample) |
-[Measurement or Fact](#dwc_MeasurementOrFact) |
+[Measurement Or Fact](#dwc_MeasurementOrFact) |
 [Occurrence](#dwc_Occurrence) |
 [Occurrence Measurement](#dwc_OccurrenceMeasurement) |
 [Organism](#dwc_Organism) |
@@ -478,7 +475,6 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [Date Modified](#dcterms_modified) |
 [Language](#dcterms_language) |
 [License](#dcterms_license) |
-[References](#dcterms_references) |
 [Rights](#dcterms_rights) |
 [Rights Holder](#dcterms_rightsHolder) |
 [Type](#dcterms_type) 
@@ -488,14 +484,12 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [Associated Media](#dwc_associatedMedia) |
 [Associated Occurrences](#dwc_associatedOccurrences) |
 [Associated References](#dwc_associatedReferences) |
-[Associated Sequences](#dwc_associatedSequences) |
 [Associated Taxa](#dwc_associatedTaxa) |
 [Behavior](#dwc_behavior) |
 [Caste](#dwc_caste) |
 [Catalog Number](#dwc_catalogNumber) |
 [Catalog Number Numeric](#dwc_CatalogNumberNumeric) |
 [Degree of Establishment](#dwc_degreeOfEstablishment) |
-[Disposition](#dwc_disposition) |
 [Establishment Means](#dwc_establishmentMeans) |
 [Georeference Verification Status](#dwc_georeferenceVerificationStatus) |
 [Individual Count](#dwc_individualCount) |
@@ -510,7 +504,6 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [Organism Quantity Type](#dwc_organismQuantityType) |
 [Other Catalog Numbers](#dwc_otherCatalogNumbers) |
 [Pathway](#dwc_pathway) |
-[Preparations](#dwc_preparations) |
 [Record Number](#dwc_recordNumber) |
 [Recorded By](#dwc_recordedBy) |
 [Recorded By ID](#dwc_recordedByID) |
@@ -529,8 +522,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 
 **Material Sample**
 
-[Material Sample ID](#dwc_materialSampleID) |
-[Verbatim Label](#dwc_verbatimLabel) 
+[Material Sample ID](#dwc_materialSampleID) 
 
 **Event**
 
@@ -621,12 +613,12 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [Geological Context ID](#dwc_geologicalContextID) |
 [Group](#dwc_group) |
 [Highest Biostratigraphic Zone](#dwc_highestBiostratigraphicZone) |
-[Latest AgeOr Highest Stage](#dwc_latestAgeOrHighestStage) |
-[Latest Eon Or Highest Eonothem](#dwc_latestEonOrHighestEonothem) |
+[Latest Age Or Highest Stage](#dwc_latestAgeOrHighestStage) |
 [Latest Epoch Or Highest Series](#dwc_latestEpochOrHighestSeries) |
 [Latest Era Or Highest Erathem](#dwc_latestEraOrHighestErathem) |
 [Latest Period Or Highest System](#dwc_latestPeriodOrHighestSystem) |
 [Lithostratigraphic Terms](#dwc_lithostratigraphicTerms) |
+[Llatest Eon Or Highest Eonothem](#dwc_latestEonOrHighestEonothem) |
 [Lowest Biostratigraphic Zone](#dwc_lowestBiostratigraphicZone) |
 [Member](#dwc_member) 
 
@@ -698,7 +690,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [Taxon According To](#dwc_taxonAccordingTo) |
 [Taxon Attributes](#dwc_taxonAttributes) |
 [Taxon Concept ID](#dwc_taxonConceptID) |
-[Taxon ID](#dwc_TaxonID) |
+[Taxon ID](#dwc_taxonID) |
 [Taxon Name ID](#dwc_taxonNameID) |
 [Taxon Rank](#dwc_taxonRank) |
 [Taxon Remarks](#dwc_taxonRemarks) |
@@ -1585,11 +1577,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2023-08-18</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/associatedSequences-2023-06-28">http://rs.tdwg.org/dwc/terms/version/associatedSequences-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/associatedSequences-2023-08-18">http://rs.tdwg.org/dwc/terms/version/associatedSequences-2023-08-18</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1597,7 +1589,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>A list (concatenated and separated) of identifiers (publication, global unique identifier, URI) of genetic sequence information associated with the dwc:Occurrence.</td>
+			<td>A list (concatenated and separated) of identifiers (publication, global unique identifier, URI) of genetic sequence information associated with the dwc:MaterialEntity.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -1772,15 +1764,15 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2023-08-18</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/basisOfRecord-2023-06-28">http://rs.tdwg.org/dwc/terms/version/basisOfRecord-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/basisOfRecord-2023-08-18">http://rs.tdwg.org/dwc/terms/version/basisOfRecord-2023-08-18</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
-			<td>Basis of Record</td>
+			<td>Basis Of Record</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -1793,6 +1785,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Examples</td>
 			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>MaterialEntity</code></li>
   <li class="list-group-item"><code>PreservedSpecimen</code></li>
   <li class="list-group-item"><code>FossilSpecimen</code></li>
   <li class="list-group-item"><code>LivingSpecimen</code></li>
@@ -1841,11 +1834,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2017-10-06</td>
+			<td>2023-08-18</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/bed-2017-10-06">http://rs.tdwg.org/dwc/terms/version/bed-2017-10-06</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/bed-2023-08-18">http://rs.tdwg.org/dwc/terms/version/bed-2023-08-18</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1853,7 +1846,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The full name of the lithostratigraphic bed from which the cataloged item was collected.</td>
+			<td>The full name of the lithostratigraphic bed from which the dwc:MaterialEntity was collected.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -3310,11 +3303,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2023-08-18</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/disposition-2023-06-28">http://rs.tdwg.org/dwc/terms/version/disposition-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/disposition-2023-08-18">http://rs.tdwg.org/dwc/terms/version/disposition-2023-08-18</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3322,7 +3315,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The current state of a specimen with respect to the collection identified in dwc:collectionCode or dwc:collectionID.</td>
+			<td>The current state of a dwc:MaterialEntity with respect to a collection.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
@@ -3333,8 +3326,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td><ul class="list-group list-group-flush">
   <li class="list-group-item"><code>in collection</code></li>
   <li class="list-group-item"><code>missing</code></li>
-  <li class="list-group-item"><code>voucher elsewhere</code></li>
-  <li class="list-group-item"><code>duplicates elsewhere</code></li>
+  <li class="list-group-item"><code>on loan</code></li>
+  <li class="list-group-item"><code>used up</code></li>
+  <li class="list-group-item"><code>destroyed</code><code></li>
+  <li class="list-group-item"></code>deaccessioned`</li>
 </ul></td>
 		</tr>
 		<tr>
@@ -3456,11 +3451,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2023-08-18</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/earliestAgeOrLowestStage-2023-06-28">http://rs.tdwg.org/dwc/terms/version/earliestAgeOrLowestStage-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/earliestAgeOrLowestStage-2023-08-18">http://rs.tdwg.org/dwc/terms/version/earliestAgeOrLowestStage-2023-08-18</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3468,7 +3463,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The full name of the earliest possible geochronologic age or lowest chronostratigraphic stage attributable to the stratigraphic horizon from which the cataloged item was collected.</td>
+			<td>The full name of the earliest possible geochronologic age or lowest chronostratigraphic stage attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -3548,11 +3543,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2023-08-18</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/earliestEonOrLowestEonothem-2023-06-28">http://rs.tdwg.org/dwc/terms/version/earliestEonOrLowestEonothem-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/earliestEonOrLowestEonothem-2023-08-18">http://rs.tdwg.org/dwc/terms/version/earliestEonOrLowestEonothem-2023-08-18</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3560,7 +3555,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The full name of the earliest possible geochronologic eon or lowest chrono-stratigraphic eonothem or the informal name ("Precambrian") attributable to the stratigraphic horizon from which the cataloged item was collected.</td>
+			<td>The full name of the earliest possible geochronologic eon or lowest chrono-stratigraphic eonothem or the informal name ("Precambrian") attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -3593,11 +3588,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2023-08-18</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/earliestEpochOrLowestSeries-2023-06-28">http://rs.tdwg.org/dwc/terms/version/earliestEpochOrLowestSeries-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/earliestEpochOrLowestSeries-2023-08-18">http://rs.tdwg.org/dwc/terms/version/earliestEpochOrLowestSeries-2023-08-18</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3605,7 +3600,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The full name of the earliest possible geochronologic epoch or lowest chronostratigraphic series attributable to the stratigraphic horizon from which the cataloged item was collected.</td>
+			<td>The full name of the earliest possible geochronologic epoch or lowest chronostratigraphic series attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -3639,11 +3634,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2023-08-18</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/earliestEraOrLowestErathem-2023-06-28">http://rs.tdwg.org/dwc/terms/version/earliestEraOrLowestErathem-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/earliestEraOrLowestErathem-2023-08-18">http://rs.tdwg.org/dwc/terms/version/earliestEraOrLowestErathem-2023-08-18</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3651,7 +3646,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The full name of the earliest possible geochronologic era or lowest chronostratigraphic erathem attributable to the stratigraphic horizon from which the cataloged item was collected.</td>
+			<td>The full name of the earliest possible geochronologic era or lowest chronostratigraphic erathem attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -3684,11 +3679,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2015-03-27</td>
+			<td>2023-08-18</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/earliestGeochronologicalEra-2015-03-27">http://rs.tdwg.org/dwc/iri/version/earliestGeochronologicalEra-2015-03-27</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/earliestGeochronologicalEra-2023-08-18">http://rs.tdwg.org/dwc/iri/version/earliestGeochronologicalEra-2023-08-18</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3696,15 +3691,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>Use to link a dwc:GeologicalContext instance to chronostratigraphic time periods at the lowest possible level in a standardized hierarchy.   Use this property to point to the earliest possible geological time period from which the cataloged item was collected.</td>
+			<td>Use to link a dwc:GeologicalContext instance to chronostratigraphic time periods at the lowest possible level in a standardized hierarchy. Use this property to point to the earliest possible geological time period from which the dwc:MaterialEntity was collected.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
 			<td>Recommended best practice is to use an IRI from a controlled vocabulary. A "convenience property" that replaces Darwin Core literal-value terms related to geological context. See Section 2.7.6 of the Darwin Core RDF Guide for details.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -3726,11 +3717,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2023-08-18</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/earliestPeriodOrLowestSystem-2023-06-28">http://rs.tdwg.org/dwc/terms/version/earliestPeriodOrLowestSystem-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/earliestPeriodOrLowestSystem-2023-08-18">http://rs.tdwg.org/dwc/terms/version/earliestPeriodOrLowestSystem-2023-08-18</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3738,7 +3729,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The full name of the earliest possible geochronologic period or lowest chronostratigraphic system attributable to the stratigraphic horizon from which the cataloged item was collected.</td>
+			<td>The full name of the earliest possible geochronologic period or lowest chronostratigraphic system attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -5435,6 +5426,52 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
+			<th colspan="2"><a id="dwciri_footprintSRS"></a>Term Name  dwciri:footprintSRS</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/footprintSRS">http://rs.tdwg.org/dwc/iri/footprintSRS</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2023-06-28</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/footprintSRS-2023-06-28">http://rs.tdwg.org/dwc/iri/version/footprintSRS-2023-06-28</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Footprint SRS (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which the geometry given in dwc:footprintWKT is based.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2021-07-15_34">http://rs.tdwg.org/decisions/decision-2021-07-15_34</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
 			<th colspan="2"><a id="dwc_footprintSRS"></a>Term Name  dwc:footprintSRS</th>
 		</tr>
 	</thead>
@@ -5469,52 +5506,6 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
   <li class="list-group-item"><code>epsg:4326</code></li>
   <li class="list-group-item"><code>GEOGCS["GCS_WGS_1984", DATUM["D_WGS_1984", SPHEROID["WGS_1984",6378137,298.257223563]], PRIMEM["Greenwich",0], UNIT["Degree",0.0174532925199433]]</code> (WKT for the standard WGS84 Spatial Reference System EPSG:4326)</li>
 </ul></td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2021-07-15_34">http://rs.tdwg.org/decisions/decision-2021-07-15_34</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
-			<th colspan="2"><a id="dwciri_footprintSRS"></a>Term Name  dwciri:footprintSRS</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/footprintSRS">http://rs.tdwg.org/dwc/iri/footprintSRS</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2023-06-28</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/footprintSRS-2023-06-28">http://rs.tdwg.org/dwc/iri/version/footprintSRS-2023-06-28</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Footprint SRS (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which the geometry given in dwc:footprintWKT is based.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -5632,11 +5623,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2023-08-18</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/formation-2023-06-28">http://rs.tdwg.org/dwc/terms/version/formation-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/formation-2023-08-18">http://rs.tdwg.org/dwc/terms/version/formation-2023-08-18</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -5644,7 +5635,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The full name of the lithostratigraphic formation from which the cataloged item was collected.</td>
+			<td>The full name of the lithostratigraphic formation from which the dwc:MaterialEntity was collected.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -5897,6 +5888,52 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
+			<th colspan="2"><a id="dwciri_geodeticDatum"></a>Term Name  dwciri:geodeticDatum</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/geodeticDatum">http://rs.tdwg.org/dwc/iri/geodeticDatum</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2023-06-28</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/geodeticDatum-2023-06-28">http://rs.tdwg.org/dwc/iri/version/geodeticDatum-2023-06-28</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Geodetic Datum (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which the geographic coordinates given in dwc:decimalLatitude and dwc:decimalLongitude is based.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use an IRI for the EPSG code of the SRS, if known. Otherwise use an IRI or controlled vocabulary for the name or code of the geodetic datum, if known. Otherwise use an IRI or controlled vocabulary for the name or code of the ellipsoid, if known. If none of these is known, use the value <code>unknown</code>.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><code><a href="https://epsg.io/4326">https://epsg.io/4326</a></code></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
 			<th colspan="2"><a id="dwc_geodeticDatum"></a>Term Name  dwc:geodeticDatum</th>
 		</tr>
 	</thead>
@@ -5940,52 +5977,6 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>ABCD equivalence</td>
 			<td>DataSets/DataSet/Units/Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesLatLon/SpatialDatum</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
-			<th colspan="2"><a id="dwciri_geodeticDatum"></a>Term Name  dwciri:geodeticDatum</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/geodeticDatum">http://rs.tdwg.org/dwc/iri/geodeticDatum</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2023-06-28</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/geodeticDatum-2023-06-28">http://rs.tdwg.org/dwc/iri/version/geodeticDatum-2023-06-28</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Geodetic Datum (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which the geographic coordinates given in dwc:decimalLatitude and dwc:decimalLongitude is based.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Recommended best practice is to use an IRI for the EPSG code of the SRS, if known. Otherwise use an IRI or controlled vocabulary for the name or code of the geodetic datum, if known. Otherwise use an IRI or controlled vocabulary for the name or code of the ellipsoid, if known. If none of these is known, use the value <code>unknown</code>.</td>
-		</tr>
-		<tr>
-			<td>Examples</td>
-			<td><code><a href="https://epsg.io/4326">https://epsg.io/4326</a></code></td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -6240,6 +6231,48 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
+			<th colspan="2"><a id="dwciri_georeferenceProtocol"></a>Term Name  dwciri:georeferenceProtocol</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/georeferenceProtocol">http://rs.tdwg.org/dwc/iri/georeferenceProtocol</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2015-03-27</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/georeferenceProtocol-2015-03-27">http://rs.tdwg.org/dwc/iri/version/georeferenceProtocol-2015-03-27</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Georeference Protocol (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A description or reference to the methods used to determine the spatial footprint, coordinates, and uncertainties.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
 			<th colspan="2"><a id="dwc_georeferenceProtocol"></a>Term Name  dwc:georeferenceProtocol</th>
 		</tr>
 	</thead>
@@ -6286,48 +6319,6 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_georeferenceProtocol"></a>Term Name  dwciri:georeferenceProtocol</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/georeferenceProtocol">http://rs.tdwg.org/dwc/iri/georeferenceProtocol</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2015-03-27</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/georeferenceProtocol-2015-03-27">http://rs.tdwg.org/dwc/iri/version/georeferenceProtocol-2015-03-27</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Georeference Protocol (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>A description or reference to the methods used to determine the spatial footprint, coordinates, and uncertainties.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="dwc_georeferenceRemarks"></a>Term Name  dwc:georeferenceRemarks</th>
 		</tr>
 	</thead>
@@ -6359,6 +6350,48 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>ABCD equivalence</td>
 			<td>DataSets/DataSet/Units/Unit/Gathering/SiteCoordinateSets/SiteCoordinates/GeoreferenceRemarks</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_georeferenceSources"></a>Term Name  dwciri:georeferenceSources</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/georeferenceSources">http://rs.tdwg.org/dwc/iri/georeferenceSources</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2023-06-28</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/georeferenceSources-2023-06-28">http://rs.tdwg.org/dwc/iri/version/georeferenceSources-2023-06-28</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Georeference Sources (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A map, gazetteer, or other resource used to georeference the dcterms:Location.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -6424,13 +6457,13 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_georeferenceSources"></a>Term Name  dwciri:georeferenceSources</th>
+			<th colspan="2"><a id="dwciri_georeferenceVerificationStatus"></a>Term Name  dwciri:georeferenceVerificationStatus</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/georeferenceSources">http://rs.tdwg.org/dwc/iri/georeferenceSources</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/georeferenceVerificationStatus">http://rs.tdwg.org/dwc/iri/georeferenceVerificationStatus</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -6438,19 +6471,19 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/georeferenceSources-2023-06-28">http://rs.tdwg.org/dwc/iri/version/georeferenceSources-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/georeferenceVerificationStatus-2023-06-28">http://rs.tdwg.org/dwc/iri/version/georeferenceVerificationStatus-2023-06-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
-			<td>Georeference Sources (IRI)</td>
+			<td>Georeference Verification Status (IRI)</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>A map, gazetteer, or other resource used to georeference the dcterms:Location.</td>
+			<td>A categorical description of the extent to which the georeference has been verified to represent the best possible spatial description for the dcterms:Location of the dwc:Occurrence.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td>
+			<td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -6459,6 +6492,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2021-07-15_34">http://rs.tdwg.org/decisions/decision-2021-07-15_34</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -6522,52 +6559,6 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_georeferenceVerificationStatus"></a>Term Name  dwciri:georeferenceVerificationStatus</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/georeferenceVerificationStatus">http://rs.tdwg.org/dwc/iri/georeferenceVerificationStatus</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2023-06-28</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/georeferenceVerificationStatus-2023-06-28">http://rs.tdwg.org/dwc/iri/version/georeferenceVerificationStatus-2023-06-28</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Georeference Verification Status (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>A categorical description of the extent to which the georeference has been verified to represent the best possible spatial description for the dcterms:Location of the dwc:Occurrence.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2021-07-15_34">http://rs.tdwg.org/decisions/decision-2021-07-15_34</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="dwc_group"></a>Term Name  dwc:group</th>
 		</tr>
 	</thead>
@@ -6578,11 +6569,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2023-08-18</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/group-2023-06-28">http://rs.tdwg.org/dwc/terms/version/group-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/group-2023-08-18">http://rs.tdwg.org/dwc/terms/version/group-2023-08-18</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -6590,7 +6581,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The full name of the lithostratigraphic group from which the cataloged item was collected.</td>
+			<td>The full name of the lithostratigraphic group from which the dwc:MaterialEntity was collected.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -7077,11 +7068,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2017-10-06</td>
+			<td>2023-08-18</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/highestBiostratigraphicZone-2017-10-06">http://rs.tdwg.org/dwc/terms/version/highestBiostratigraphicZone-2017-10-06</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/highestBiostratigraphicZone-2023-08-18">http://rs.tdwg.org/dwc/terms/version/highestBiostratigraphicZone-2023-08-18</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -7089,7 +7080,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The full name of the highest possible geological biostratigraphic zone of the stratigraphic horizon from which the cataloged item was collected.</td>
+			<td>The full name of the highest possible geological biostratigraphic zone of the stratigraphic horizon from which the dwc:MaterialEntity was collected.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -7567,48 +7558,6 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_identifiedBy"></a>Term Name  dwciri:identifiedBy</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/identifiedBy">http://rs.tdwg.org/dwc/iri/identifiedBy</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2023-06-28</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/identifiedBy-2023-06-28">http://rs.tdwg.org/dwc/iri/version/identifiedBy-2023-06-28</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Identified By (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>A person, group, or organization who assigned the dwc:Taxon to the subject.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="dwc_identifiedBy"></a>Term Name  dwc:identifiedBy</th>
 		</tr>
 	</thead>
@@ -7659,6 +7608,48 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2019-12-01_19">http://rs.tdwg.org/decisions/decision-2019-12-01_19</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_identifiedBy"></a>Term Name  dwciri:identifiedBy</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/identifiedBy">http://rs.tdwg.org/dwc/iri/identifiedBy</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2023-06-28</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/identifiedBy-2023-06-28">http://rs.tdwg.org/dwc/iri/version/identifiedBy-2023-06-28</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Identified By (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A person, group, or organization who assigned the dwc:Taxon to the subject.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
 		</tr>
 	</tbody>
 </table>
@@ -8507,19 +8498,19 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2023-08-18</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/latestAgeOrHighestStage-2023-06-28">http://rs.tdwg.org/dwc/terms/version/latestAgeOrHighestStage-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/latestAgeOrHighestStage-2023-08-18">http://rs.tdwg.org/dwc/terms/version/latestAgeOrHighestStage-2023-08-18</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
-			<td>Latest AgeOr Highest Stage</td>
+			<td>Latest Age Or Highest Stage</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The full name of the latest possible geochronologic age or highest chronostratigraphic stage attributable to the stratigraphic horizon from which the cataloged item was collected.</td>
+			<td>The full name of the latest possible geochronologic age or highest chronostratigraphic stage attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -8599,19 +8590,19 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2023-08-18</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/latestEonOrHighestEonothem-2023-06-28">http://rs.tdwg.org/dwc/terms/version/latestEonOrHighestEonothem-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/latestEonOrHighestEonothem-2023-08-18">http://rs.tdwg.org/dwc/terms/version/latestEonOrHighestEonothem-2023-08-18</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
-			<td>Latest Eon Or Highest Eonothem</td>
+			<td>Llatest Eon Or Highest Eonothem</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The full name of the latest possible geochronologic eon or highest chrono-stratigraphic eonothem or the informal name ("Precambrian") attributable to the stratigraphic horizon from which the cataloged item was collected.</td>
+			<td>The full name of the latest possible geochronologic eon or highest chrono-stratigraphic eonothem or the informal name ("Precambrian") attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -8644,11 +8635,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2023-08-18</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/latestEpochOrHighestSeries-2023-06-28">http://rs.tdwg.org/dwc/terms/version/latestEpochOrHighestSeries-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/latestEpochOrHighestSeries-2023-08-18">http://rs.tdwg.org/dwc/terms/version/latestEpochOrHighestSeries-2023-08-18</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8656,7 +8647,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The full name of the latest possible geochronologic epoch or highest chronostratigraphic series attributable to the stratigraphic horizon from which the cataloged item was collected.</td>
+			<td>The full name of the latest possible geochronologic epoch or highest chronostratigraphic series attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -8690,11 +8681,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2023-08-18</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/latestEraOrHighestErathem-2023-06-28">http://rs.tdwg.org/dwc/terms/version/latestEraOrHighestErathem-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/latestEraOrHighestErathem-2023-08-18">http://rs.tdwg.org/dwc/terms/version/latestEraOrHighestErathem-2023-08-18</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8702,7 +8693,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The full name of the latest possible geochronologic era or highest chronostratigraphic erathem attributable to the stratigraphic horizon from which the cataloged item was collected.</td>
+			<td>The full name of the latest possible geochronologic era or highest chronostratigraphic erathem attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -8735,11 +8726,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2015-03-27</td>
+			<td>2023-08-18</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/latestGeochronologicalEra-2015-03-27">http://rs.tdwg.org/dwc/iri/version/latestGeochronologicalEra-2015-03-27</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/latestGeochronologicalEra-2023-08-18">http://rs.tdwg.org/dwc/iri/version/latestGeochronologicalEra-2023-08-18</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8747,15 +8738,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>Use to link a dwc:GeologicalContext instance to chronostratigraphic time periods at the lowest possible level in a standardized hierarchy.   Use this property to point to the latest possible geological time period from which the cataloged item was collected.</td>
+			<td>Use to link a dwc:GeologicalContext instance to chronostratigraphic time periods at the lowest possible level in a standardized hierarchy. Use this property to point to the latest possible geological time period from which the dwc:MaterialEntity was collected.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
 			<td>Recommended best practice is to use an IRI from a controlled vocabulary. A "convenience property" that replaces Darwin Core literal-value terms related to geological context. See Section 2.7.6 of the Darwin Core RDF Guide for details.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -8777,11 +8764,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2023-08-18</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/latestPeriodOrHighestSystem-2023-06-28">http://rs.tdwg.org/dwc/terms/version/latestPeriodOrHighestSystem-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/latestPeriodOrHighestSystem-2023-08-18">http://rs.tdwg.org/dwc/terms/version/latestPeriodOrHighestSystem-2023-08-18</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8789,7 +8776,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The full name of the latest possible geochronologic period or highest chronostratigraphic system attributable to the stratigraphic horizon from which the cataloged item was collected.</td>
+			<td>The full name of the latest possible geochronologic period or highest chronostratigraphic system attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -8862,6 +8849,48 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
+			<th colspan="2"><a id="dwciri_lifeStage"></a>Term Name  dwciri:lifeStage</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/lifeStage">http://rs.tdwg.org/dwc/iri/lifeStage</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2023-06-28</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/lifeStage-2023-06-28">http://rs.tdwg.org/dwc/iri/version/lifeStage-2023-06-28</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Life Stage (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The age class or life stage of the dwc:Organism(s) at the time the dwc:Occurrence was recorded.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
 			<th colspan="2"><a id="dwc_lifeStage"></a>Term Name  dwc:lifeStage</th>
 		</tr>
 	</thead>
@@ -8920,48 +8949,6 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_lifeStage"></a>Term Name  dwciri:lifeStage</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/lifeStage">http://rs.tdwg.org/dwc/iri/lifeStage</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2023-06-28</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/lifeStage-2023-06-28">http://rs.tdwg.org/dwc/iri/version/lifeStage-2023-06-28</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Life Stage (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>The age class or life stage of the dwc:Organism(s) at the time the dwc:Occurrence was recorded.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="dwc_lithostratigraphicTerms"></a>Term Name  dwc:lithostratigraphicTerms</th>
 		</tr>
 	</thead>
@@ -8972,11 +8959,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2017-10-06</td>
+			<td>2023-08-18</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/lithostratigraphicTerms-2017-10-06">http://rs.tdwg.org/dwc/terms/version/lithostratigraphicTerms-2017-10-06</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/lithostratigraphicTerms-2023-08-18">http://rs.tdwg.org/dwc/terms/version/lithostratigraphicTerms-2023-08-18</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8984,7 +8971,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The combination of all litho-stratigraphic names for the rock from which the cataloged item was collected.</td>
+			<td>The combination of all litho-stratigraphic names for the rock from which the dwc:MaterialEntity was collected.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -8992,7 +8979,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
-			<td>DataSets/DataSet/Units/Unit/Gathering/Stratigraphy/LithostratigraphicTerms</td>
+			<td>not in ABCD</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -9368,11 +9355,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2017-10-06</td>
+			<td>2023-08-18</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/lowestBiostratigraphicZone-2017-10-06">http://rs.tdwg.org/dwc/terms/version/lowestBiostratigraphicZone-2017-10-06</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/lowestBiostratigraphicZone-2023-08-18">http://rs.tdwg.org/dwc/terms/version/lowestBiostratigraphicZone-2023-08-18</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -9380,7 +9367,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The full name of the lowest possible geological biostratigraphic zone of the stratigraphic horizon from which the cataloged item was collected.</td>
+			<td>The full name of the lowest possible geological biostratigraphic zone of the stratigraphic horizon from which the dwc:MaterialEntity was collected.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -9496,6 +9483,157 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
+			<th colspan="2"><a id="dwc_MaterialEntity"></a>Term Name  dwc:MaterialEntity</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/MaterialEntity">http://rs.tdwg.org/dwc/terms/MaterialEntity</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2023-08-18</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/MaterialEntity-2023-08-18">http://rs.tdwg.org/dwc/terms/version/MaterialEntity-2023-08-18</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Material Entity</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>An entity that can be identified, exists for some period of time, and consists in whole or in part of physical matter while it exists.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>The term is defined at the most general level to admit descriptions of any subtype of material entity within the scope of Darwin Core. In particular, any kind of material sample, preserved specimen, fossil, or exemplar from living collections is intended to be subsumed under this term.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>an instance of a fossil</code></li>
+  <li class="list-group-item"><code>an instance of a herbarium sheet with its attached plant specimen</code></li>
+  <li class="list-group-item"><code>a particular part of the plant-derived material affixed to a herbarium sheet</code></li>
+  <li class="list-group-item"><code>an instance of a frozen tissue sample</code></li>
+  <li class="list-group-item"><code>a specific water sample</code></li>
+  <li class="list-group-item"><code>an instance of a meteorite fragment</code></li>
+  <li class="list-group-item"><code>a particular wolf in a zoo</code></li>
+  <li class="list-group-item"><code>a particular pack of wolves in the wild</code></li>
+  <li class="list-group-item"><code>an isolated molecule of DNA</code></li>
+  <li class="list-group-item"><code>a specific deep-frozen DNA sample</code></li>
+  <li class="list-group-item"><code>a particular field notebook</code></li>
+  <li class="list-group-item"><code>a particular paper page from a field notebook</code></li>
+  <li class="list-group-item"><code>an instance of a printed photograph</code></li>
+</ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>None (Specimen Unit, when used to denote a class of things, appears to be a broadly construed subclass.)</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Class</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_materialEntityID"></a>Term Name  dwc:materialEntityID</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/materialEntityID">http://rs.tdwg.org/dwc/terms/materialEntityID</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2023-08-18</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/materialEntityID-2023-08-18">http://rs.tdwg.org/dwc/terms/version/materialEntityID-2023-08-18</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Material Entity ID</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>An identifier for a particular instance of a MaterialEntity.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Values of dwc:materialEntityID are intended to uniquely and persistently identify a particular dwc:MaterialEntity within some context. Examples of context include a particular sample collection, an organization, or the worldwide scale. Recommended best practice is to use a persistent, globally unique identifier. The identifier is bound to a physical object (the dwc:MaterialEntity) as opposed to a particular digital record (representation) of that physical object.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><code>06809dc5-f143-459a-be1a-6f03e63fc083</code></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>Unit/UnitGUID or Unit/UnitID</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_materialEntityRemarks"></a>Term Name  dwc:materialEntityRemarks</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/materialEntityRemarks">http://rs.tdwg.org/dwc/terms/materialEntityRemarks</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2023-08-18</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/materialEntityRemarks-2023-08-18">http://rs.tdwg.org/dwc/terms/version/materialEntityRemarks-2023-08-18</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Material Entity Remarks</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>Comments or notes about the MaterialEntity instance.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>found in association with charred remains</code></li>
+  <li class="list-group-item"><code>some original fragments missing</code></li>
+</ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>DataSets/DataSet/Units/Unit/Notes</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
 			<th colspan="2"><a id="dwc_MaterialSample"></a>Term Name  dwc:MaterialSample</th>
 		</tr>
 	</thead>
@@ -9506,11 +9644,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2018-09-06</td>
+			<td>2023-08-18</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/MaterialSample-2018-09-06">http://rs.tdwg.org/dwc/terms/version/MaterialSample-2018-09-06</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/MaterialSample-2023-08-18">http://rs.tdwg.org/dwc/terms/version/MaterialSample-2023-08-18</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -9518,11 +9656,16 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>A physical result of a sampling (or subsampling) event. In biological collections, the material sample is typically collected, and either preserved or destructively processed.</td>
+			<td>A material entity that represents an entity of interest in whole or in part.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>A whole organism preserved in a collection. A part of an organism isolated for some purpose. A soil sample. A marine microbial sample.</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>a whole organism preserved in a collection</code></li>
+  <li class="list-group-item"><code>a part of an organism isolated for some purpose</code></li>
+  <li class="list-group-item"><code>a soil sample</code></li>
+  <li class="list-group-item"><code>a marine microbial sample</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -10071,15 +10214,15 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2023-08-18</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/MeasurementOrFact-2023-06-28">http://rs.tdwg.org/dwc/terms/version/MeasurementOrFact-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/MeasurementOrFact-2023-08-18">http://rs.tdwg.org/dwc/terms/version/MeasurementOrFact-2023-08-18</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
-			<td>Measurement or Fact</td>
+			<td>Measurement Or Fact</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -10087,11 +10230,15 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Resources can be thought of as identifiable records or instances of classes and may include, but need not be limited to dwc:Occurrence, dwc:Organism, dwc:MaterialSample, dwc:Event, dcterms:Location, dwc:GeologicalContext, dwc:Identification, or dwc:Taxon.</td>
+			<td>Resources can be thought of as identifiable records or instances of classes and may include, but need not be limited to instances of dwc:Occurrence, dwc:Organism, dwc:MaterialEntity, dwc:Event, dcterms:Location, dwc:GeologicalContext, dwc:Identification, or dwc:Taxon.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>The weight of an organism in grams. The number of placental scars. Surface water temperature in Celsius.</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>the weight of a dwc:Organism in grams</code></li>
+  <li class="list-group-item"><code>the number of placental scars</code></li>
+  <li class="list-group-item"><code>surface water temperature in Celsius</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -10344,56 +10491,6 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_measurementValue"></a>Term Name  dwciri:measurementValue</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/measurementValue">http://rs.tdwg.org/dwc/iri/measurementValue</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2021-07-15</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/measurementValue-2021-07-15">http://rs.tdwg.org/dwc/iri/version/measurementValue-2021-07-15</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Measurement Value (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>The value of the measurement, fact, characteristic, or assertion.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>Examples</td>
-			<td><code><a href="http://vocab.nerc.ac.uk/collection/L22/current/TOOL0960/">http://vocab.nerc.ac.uk/collection/L22/current/TOOL0960/</a></code></td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2021-07-15_34">http://rs.tdwg.org/decisions/decision-2021-07-15_34</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="dwc_measurementValue"></a>Term Name  dwc:measurementValue</th>
 		</tr>
 	</thead>
@@ -10446,6 +10543,56 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
+			<th colspan="2"><a id="dwciri_measurementValue"></a>Term Name  dwciri:measurementValue</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/measurementValue">http://rs.tdwg.org/dwc/iri/measurementValue</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2021-07-15</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/measurementValue-2021-07-15">http://rs.tdwg.org/dwc/iri/version/measurementValue-2021-07-15</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Measurement Value (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The value of the measurement, fact, characteristic, or assertion.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><code><a href="http://vocab.nerc.ac.uk/collection/L22/current/TOOL0960/">http://vocab.nerc.ac.uk/collection/L22/current/TOOL0960/</a></code></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2021-07-15_34">http://rs.tdwg.org/decisions/decision-2021-07-15_34</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
 			<th colspan="2"><a id="dwc_member"></a>Term Name  dwc:member</th>
 		</tr>
 	</thead>
@@ -10456,11 +10603,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2023-08-18</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/member-2023-06-28">http://rs.tdwg.org/dwc/terms/version/member-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/member-2023-08-18">http://rs.tdwg.org/dwc/terms/version/member-2023-08-18</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -10468,7 +10615,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The full name of the lithostratigraphic member from which the cataloged item was collected.</td>
+			<td>The full name of the lithostratigraphic member from which the dwc:MaterialEntity was collected.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -11794,6 +11941,48 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
+			<th colspan="2"><a id="dwciri_occurrenceStatus"></a>Term Name  dwciri:occurrenceStatus</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/occurrenceStatus">http://rs.tdwg.org/dwc/iri/occurrenceStatus</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2023-06-28</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/occurrenceStatus-2023-06-28">http://rs.tdwg.org/dwc/iri/version/occurrenceStatus-2023-06-28</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Occurrence Status (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A statement about the presence or absence of a dwc:Taxon at a dcterms:Location.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
 			<th colspan="2"><a id="dwc_occurrenceStatus"></a>Term Name  dwc:occurrenceStatus</th>
 		</tr>
 	</thead>
@@ -11828,48 +12017,6 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
   <li class="list-group-item"><code>present</code></li>
   <li class="list-group-item"><code>absent</code></li>
 </ul></td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
-			<th colspan="2"><a id="dwciri_occurrenceStatus"></a>Term Name  dwciri:occurrenceStatus</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/occurrenceStatus">http://rs.tdwg.org/dwc/iri/occurrenceStatus</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2023-06-28</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/occurrenceStatus-2023-06-28">http://rs.tdwg.org/dwc/iri/version/occurrenceStatus-2023-06-28</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Occurrence Status (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>A statement about the presence or absence of a dwc:Taxon at a dcterms:Location.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -12729,59 +12876,6 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_pathway"></a>Term Name  dwc:pathway</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/pathway">http://rs.tdwg.org/dwc/terms/pathway</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2023-06-28</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/pathway-2023-06-28">http://rs.tdwg.org/dwc/terms/version/pathway-2023-06-28</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Pathway</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>The process by which a dwc:Organism came to be in a given place at a given time.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Recommended best practice is to use controlled value strings from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/pw/">http://rs.tdwg.org/dwc/doc/pw/</a>. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a>. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
-		</tr>
-		<tr>
-			<td>Examples</td>
-			<td><ul class="list-group list-group-flush">
-  <li class="list-group-item"><code>releasedForUse</code></li>
-  <li class="list-group-item"><code>otherEscape</code></li>
-  <li class="list-group-item"><code>transportContaminant</code></li>
-  <li class="list-group-item"><code>transportStowaway</code></li>
-  <li class="list-group-item"><code>corridor</code></li>
-  <li class="list-group-item"><code>unaided</code></li>
-</ul></td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2020-10-13_23">http://rs.tdwg.org/decisions/decision-2020-10-13_23</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="dwciri_pathway"></a>Term Name  dwciri:pathway</th>
 		</tr>
 	</thead>
@@ -12820,6 +12914,59 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>ABCD equivalence</td>
 			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2020-10-13_23">http://rs.tdwg.org/decisions/decision-2020-10-13_23</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_pathway"></a>Term Name  dwc:pathway</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/pathway">http://rs.tdwg.org/dwc/terms/pathway</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2023-06-28</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/pathway-2023-06-28">http://rs.tdwg.org/dwc/terms/version/pathway-2023-06-28</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Pathway</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The process by which a dwc:Organism came to be in a given place at a given time.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use controlled value strings from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/pw/">http://rs.tdwg.org/dwc/doc/pw/</a>. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a>. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>releasedForUse</code></li>
+  <li class="list-group-item"><code>otherEscape</code></li>
+  <li class="list-group-item"><code>transportContaminant</code></li>
+  <li class="list-group-item"><code>transportStowaway</code></li>
+  <li class="list-group-item"><code>corridor</code></li>
+  <li class="list-group-item"><code>unaided</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -12934,6 +13081,67 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
+			<th colspan="2"><a id="dwc_preparations"></a>Term Name  dwc:preparations</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/preparations">http://rs.tdwg.org/dwc/terms/preparations</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2023-08-18</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/preparations-2023-08-18">http://rs.tdwg.org/dwc/terms/version/preparations-2023-08-18</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Preparations</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A list (concatenated and separated) of preparations and preservation methods for a dwc:MaterialEntity.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>fossil</code></li>
+  <li class="list-group-item"><code>cast</code></li>
+  <li class="list-group-item"><code>photograph</code></li>
+  <li class="list-group-item"><code>DNA extract</code></li>
+  <li class="list-group-item"><code>skin | skull | skeleton</code></li>
+  <li class="list-group-item"><code>whole animal (ETOH) | tissue (EDTA)</code></li>
+</ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>DataSets/DataSet/Units/Unit/SpecimenUnit/Preparations/PreparationsText</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2014-10-30_16">http://rs.tdwg.org/decisions/decision-2014-10-30_16</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2019-12-01_19">http://rs.tdwg.org/decisions/decision-2019-12-01_19</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
 			<th colspan="2"><a id="dwciri_preparations"></a>Term Name  dwciri:preparations</th>
 		</tr>
 	</thead>
@@ -12969,67 +13177,6 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
-			<th colspan="2"><a id="dwc_preparations"></a>Term Name  dwc:preparations</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/preparations">http://rs.tdwg.org/dwc/terms/preparations</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2023-06-28</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/preparations-2023-06-28">http://rs.tdwg.org/dwc/terms/version/preparations-2023-06-28</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Preparations</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>A list (concatenated and separated) of preparations and preservation methods for a specimen.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
-		</tr>
-		<tr>
-			<td>Examples</td>
-			<td><ul class="list-group list-group-flush">
-  <li class="list-group-item"><code>fossil</code></li>
-  <li class="list-group-item"><code>cast</code></li>
-  <li class="list-group-item"><code>photograph</code></li>
-  <li class="list-group-item"><code>DNA extract</code></li>
-  <li class="list-group-item"><code>skin | skull | skeleton</code></li>
-  <li class="list-group-item"><code>whole animal (ETOH) | tissue (EDTA)</code></li>
-</ul></td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>DataSets/DataSet/Units/Unit/SpecimenUnit/Preparations/PreparationsText</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2014-10-30_16">http://rs.tdwg.org/decisions/decision-2014-10-30_16</a></td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2019-12-01_19">http://rs.tdwg.org/decisions/decision-2019-12-01_19</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -13076,6 +13223,52 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2014-10-26_15">http://rs.tdwg.org/decisions/decision-2014-10-26_15</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_PreviousIdentifications"></a>Term Name  dwc:PreviousIdentifications</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/PreviousIdentifications">http://rs.tdwg.org/dwc/terms/PreviousIdentifications</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2009-04-24</td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Previous Identifications</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><strong>This term is deprecated and should no longer be used.</strong></td>
+		</tr>
+		<tr>
+			<td>Is replaced by</td>
+			<td><a href="#dwc_previousIdentifications">http://rs.tdwg.org/dwc/terms/previousIdentifications</a></td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A list (concatenated and separated) of previous ScientificNames to which the sample was identified.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Example: "Anthus correndera".</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>DataSets/DataSet/Units/Unit/Identifications/Identification with PreferredFlag = false</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
 		</tr>
 	</tbody>
 </table>
@@ -13134,52 +13327,6 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2014-10-30_16">http://rs.tdwg.org/decisions/decision-2014-10-30_16</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
-			<th colspan="2"><a id="dwc_PreviousIdentifications"></a>Term Name  dwc:PreviousIdentifications</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/PreviousIdentifications">http://rs.tdwg.org/dwc/terms/PreviousIdentifications</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2009-04-24</td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Previous Identifications</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><strong>This term is deprecated and should no longer be used.</strong></td>
-		</tr>
-		<tr>
-			<td>Is replaced by</td>
-			<td><a href="#dwc_previousIdentifications">http://rs.tdwg.org/dwc/terms/previousIdentifications</a></td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>A list (concatenated and separated) of previous ScientificNames to which the sample was identified.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Example: "Anthus correndera".</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>DataSets/DataSet/Units/Unit/Identifications/Identification with PreferredFlag = false</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
 		</tr>
 	</tbody>
 </table>
@@ -13433,7 +13580,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2023-08-18</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
@@ -13449,12 +13596,12 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>From Dublin Core, "This property is intended to be used with non-literal values. This property is an inverse property of Is Referenced By." The intended usage of this term in Darwin Core is to point to the definitive source representation of the resource (e.g., dwc:Taxon, dwc:Occurrence, dwc:Event in Darwin Core), if one is available. Note that the intended usage of dcterms:bibliographicCitation in Darwin Core, by contrast, is to provide the preferred way to cite the resource itself.</td>
+			<td>From Dublin Core, "This property is intended to be used with non-literal values. This property is an inverse property of Is Referenced By." The intended usage of this term in Darwin Core is to point to the definitive source representation of the resource (e.g.,dwc:Taxon, dwc:Occurrence, dwc:Event), if one is available. Note that the intended usage of dcterms:bibliographicCitation in Darwin Core, by contrast, is to provide the preferred way to cite the resource itself.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
 			<td><ul class="list-group list-group-flush">
-  <li class="list-group-item"><code><a href="http://arctos.database.museum/guid/MVZ:Mamm:165861">http://arctos.database.museum/guid/MVZ:Mamm:165861</a></code> (MaterialSample example)</li>
+  <li class="list-group-item"><code><a href="http://arctos.database.museum/guid/MVZ:Mamm:165861">http://arctos.database.museum/guid/MVZ:Mamm:165861</a></code> (MaterialEntity example)</li>
   <li class="list-group-item"><code><a href="https://www.catalogueoflife.org/data/taxon/32664">https://www.catalogueoflife.org/data/taxon/32664</a></code> (Taxon example)</li>
 </ul></td>
 		</tr>
@@ -13859,48 +14006,6 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_reproductiveCondition"></a>Term Name  dwciri:reproductiveCondition</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/reproductiveCondition">http://rs.tdwg.org/dwc/iri/reproductiveCondition</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2023-06-28</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/reproductiveCondition-2023-06-28">http://rs.tdwg.org/dwc/iri/version/reproductiveCondition-2023-06-28</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Reproductive Condition (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>The reproductive condition of the biological individual(s) represented in the dwc:Occurrence.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="dwc_reproductiveCondition"></a>Term Name  dwc:reproductiveCondition</th>
 		</tr>
 	</thead>
@@ -13937,6 +14042,48 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
   <li class="list-group-item"><code>in bloom</code></li>
   <li class="list-group-item"><code>fruit-bearing</code></li>
 </ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_reproductiveCondition"></a>Term Name  dwciri:reproductiveCondition</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/reproductiveCondition">http://rs.tdwg.org/dwc/iri/reproductiveCondition</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2023-06-28</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/reproductiveCondition-2023-06-28">http://rs.tdwg.org/dwc/iri/version/reproductiveCondition-2023-06-28</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Reproductive Condition (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The reproductive condition of the biological individual(s) represented in the dwc:Occurrence.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -14004,11 +14151,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2023-08-18</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/ResourceRelationship-2023-06-28">http://rs.tdwg.org/dwc/terms/version/ResourceRelationship-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/ResourceRelationship-2023-08-18">http://rs.tdwg.org/dwc/terms/version/ResourceRelationship-2023-08-18</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -14020,11 +14167,15 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Resources can be thought of as identifiable records or instances of classes and may include, but need not be limited to dwc:Occurrence, dwc:Organism, dwc:MaterialSample, dwc:Event, dcterms:Location, dwc:GeologicalContext, dwc:Identification, or dwc:Taxon.</td>
+			<td>Resources can be thought of as identifiable records or instances of classes and may include, but need not be limited to instances of dwc:Occurrence, dwc:Organism, dwc:MaterialEntity, dwc:Event, dcterms:Location, dwc:GeologicalContext, dwc:Identification, or dwc:Taxon.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>An instance of an Organism is the mother of another instance of an Organism. A uniquely identified Occurrence represents the same Occurrence as another uniquely identified Occurrence. A MaterialSample is a subsample of another MaterialSample.</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>an instance of a dwc:Organism is the mother of another instance of a dwc:Organism</code></li>
+  <li class="list-group-item"><code>a uniquely identified dwc:Occurrence represents the same dwc:Occurrence as another uniquely identified dwc:Occurrence</code></li>
+  <li class="list-group-item"><code>a dwc:MaterialEntity is a subsample of another dwc:MaterialEntity</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -15154,6 +15305,56 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
+			<th colspan="2"><a id="dwciri_samplingProtocol"></a>Term Name  dwciri:samplingProtocol</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/samplingProtocol">http://rs.tdwg.org/dwc/iri/samplingProtocol</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2023-06-28</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/samplingProtocol-2023-06-28">http://rs.tdwg.org/dwc/iri/version/samplingProtocol-2023-06-28</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Sampling Protocol (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The methods or protocols used during a dwc:Event, denoted by an IRI.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is describe a dwc:Event with no more than one sampling protocol. In the case of a summary dwc:Event in which a specific protocol can not be attributed to specific dwc:Occurrences, the recommended best practice is to repeat the property for each IRI that denotes a different sampling protocol that applies to the dwc:Occurrence.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><code><a href="https://doi.org/10.1111/j.1466-8238.2009.00467.x">https://doi.org/10.1111/j.1466-8238.2009.00467.x</a></code></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2021-07-15_34">http://rs.tdwg.org/decisions/decision-2021-07-15_34</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
 			<th colspan="2"><a id="dwc_samplingProtocol"></a>Term Name  dwc:samplingProtocol</th>
 		</tr>
 	</thead>
@@ -15196,56 +15397,6 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>ABCD equivalence</td>
 			<td>DataSets/DataSet/Units/Unit/Gathering/Method</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2021-07-15_34">http://rs.tdwg.org/decisions/decision-2021-07-15_34</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
-			<th colspan="2"><a id="dwciri_samplingProtocol"></a>Term Name  dwciri:samplingProtocol</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/samplingProtocol">http://rs.tdwg.org/dwc/iri/samplingProtocol</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2023-06-28</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/samplingProtocol-2023-06-28">http://rs.tdwg.org/dwc/iri/version/samplingProtocol-2023-06-28</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Sampling Protocol (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>The methods or protocols used during a dwc:Event, denoted by an IRI.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Recommended best practice is describe a dwc:Event with no more than one sampling protocol. In the case of a summary dwc:Event in which a specific protocol can not be attributed to specific dwc:Occurrences, the recommended best practice is to repeat the property for each IRI that denotes a different sampling protocol that applies to the dwc:Occurrence.</td>
-		</tr>
-		<tr>
-			<td>Examples</td>
-			<td><code><a href="https://doi.org/10.1111/j.1466-8238.2009.00467.x">https://doi.org/10.1111/j.1466-8238.2009.00467.x</a></code></td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -15464,48 +15615,6 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_sex"></a>Term Name  dwciri:sex</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/sex">http://rs.tdwg.org/dwc/iri/sex</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2023-06-28</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/sex-2023-06-28">http://rs.tdwg.org/dwc/iri/version/sex-2023-06-28</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Sex (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>The sex of the biological individual(s) represented in the dwc:Occurrence.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="dwc_sex"></a>Term Name  dwc:sex</th>
 		</tr>
 	</thead>
@@ -15553,6 +15662,48 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2019-12-01_19">http://rs.tdwg.org/decisions/decision-2019-12-01_19</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_sex"></a>Term Name  dwciri:sex</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/sex">http://rs.tdwg.org/dwc/iri/sex</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2023-06-28</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/sex-2023-06-28">http://rs.tdwg.org/dwc/iri/version/sex-2023-06-28</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Sex (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The sex of the biological individual(s) represented in the dwc:Occurrence.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
 		</tr>
 	</tbody>
 </table>
@@ -16125,48 +16276,6 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_TaxonID"></a>Term Name  dwc:TaxonID</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/TaxonID">http://rs.tdwg.org/dwc/terms/TaxonID</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2009-04-24</td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Taxon ID</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><strong>This term is deprecated and should no longer be used.</strong></td>
-		</tr>
-		<tr>
-			<td>Is replaced by</td>
-			<td><a href="#dwc_taxonNameID">http://rs.tdwg.org/dwc/terms/taxonNameID</a></td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>A global unique identifier for the taxon (name in a classification).</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="dwc_taxonID"></a>Term Name  dwc:taxonID</th>
 		</tr>
 	</thead>
@@ -16198,6 +16307,48 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
   <li class="list-group-item"><code>32567</code></li>
   <li class="list-group-item"><code><a href="https://www.gbif.org/species/212">https://www.gbif.org/species/212</a></code></li>
 </ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_TaxonID"></a>Term Name  dwc:TaxonID</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/TaxonID">http://rs.tdwg.org/dwc/terms/TaxonID</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2009-04-24</td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Taxon ID</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><strong>This term is deprecated and should no longer be used.</strong></td>
+		</tr>
+		<tr>
+			<td>Is replaced by</td>
+			<td><a href="#dwc_taxonNameID">http://rs.tdwg.org/dwc/terms/taxonNameID</a></td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A global unique identifier for the taxon (name in a classification).</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -16613,48 +16764,6 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_typeStatus"></a>Term Name  dwciri:typeStatus</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/typeStatus">http://rs.tdwg.org/dwc/iri/typeStatus</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2015-03-27</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/typeStatus-2015-03-27">http://rs.tdwg.org/dwc/iri/version/typeStatus-2015-03-27</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Type Status (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>A nomenclatural type (type status, typified scientific name, publication) applied to the subject.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="dwc_typeStatus"></a>Term Name  dwc:typeStatus</th>
 		</tr>
 	</thead>
@@ -16708,6 +16817,48 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
+			<th colspan="2"><a id="dwciri_typeStatus"></a>Term Name  dwciri:typeStatus</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/typeStatus">http://rs.tdwg.org/dwc/iri/typeStatus</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2015-03-27</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/typeStatus-2015-03-27">http://rs.tdwg.org/dwc/iri/version/typeStatus-2015-03-27</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Type Status (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A nomenclatural type (type status, typified scientific name, publication) applied to the subject.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
 			<th colspan="2"><a id="dwc_verbatimCoordinates"></a>Term Name  dwc:verbatimCoordinates</th>
 		</tr>
 	</thead>
@@ -16742,48 +16893,6 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>ABCD equivalence</td>
 			<td>{DataSets/DataSet/Units/Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesLatLon/CoordinatesText or DataSets/DataSet/Units/Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesUTM/UTMText}</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
-			<th colspan="2"><a id="dwciri_verbatimCoordinateSystem"></a>Term Name  dwciri:verbatimCoordinateSystem</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/verbatimCoordinateSystem">http://rs.tdwg.org/dwc/iri/verbatimCoordinateSystem</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2023-06-28</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/verbatimCoordinateSystem-2023-06-28">http://rs.tdwg.org/dwc/iri/version/verbatimCoordinateSystem-2023-06-28</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Verbatim Coordinate System (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>The spatial coordinate system for the dwc:verbatimLatitude and dwc:verbatimLongitude or the dwc:verbatimCoordinates of the dcterms:Location.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -16835,6 +16944,48 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>ABCD equivalence</td>
 			<td>(partly) DataSets/DataSet/Units/Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesGrid/GridCellSystem</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_verbatimCoordinateSystem"></a>Term Name  dwciri:verbatimCoordinateSystem</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/verbatimCoordinateSystem">http://rs.tdwg.org/dwc/iri/verbatimCoordinateSystem</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2023-06-28</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/verbatimCoordinateSystem-2023-06-28">http://rs.tdwg.org/dwc/iri/version/verbatimCoordinateSystem-2023-06-28</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Verbatim Coordinate System (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The spatial coordinate system for the dwc:verbatimLatitude and dwc:verbatimLongitude or the dwc:verbatimCoordinates of the dcterms:Location.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -17049,11 +17200,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2023-08-18</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/verbatimLabel-2023-06-28">http://rs.tdwg.org/dwc/terms/version/verbatimLabel-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/verbatimLabel-2023-08-18">http://rs.tdwg.org/dwc/terms/version/verbatimLabel-2023-08-18</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -17061,14 +17212,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>A serialized encoding intended to represent the literal, i.e., character by character, textual content of a label affixed on, near, or explicitly associated with a material entity, free from interpretation, translation, or transliteration.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
 			<td>The content of this term should include no embellishments, prefixes, headers or other additions made to the text. Abbreviations must not be expanded and supposed misspellings must not be corrected. Lines or breakpoints between blocks of text that could be verified by seeing the original labels or images of them may be used. Examples of material entities include preserved specimens, fossil specimens, and material samples. Best practice is to use UTF-8 for all characters. Best practice is to add comment “verbatimLabel derived from human transcription” in dwc:occurrenceRemarks.</td>
 		</tr>
 		<tr>
-			<td>Examples</td>
+			<td>Notes</td>
 			<td>Examples can be found at <a href="https://dwc.tdwg.org/examples/verbatimLabel">https://dwc.tdwg.org/examples/verbatimLabel</a>.</td>
 		</tr>
 		<tr>
@@ -17261,48 +17408,6 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_verbatimSRS"></a>Term Name  dwciri:verbatimSRS</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/verbatimSRS">http://rs.tdwg.org/dwc/iri/verbatimSRS</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2023-06-28</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/verbatimSRS-2023-06-28">http://rs.tdwg.org/dwc/iri/version/verbatimSRS-2023-06-28</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Verbatim SRS (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which coordinates given in dwc:verbatimLatitude and dwc:verbatimLongitude, or dwc:verbatimCoordinates are based.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Recommended best practice is to use an IRI for the EPSG code of the SRS, if known. Otherwise use a controlled vocabulary IRI for the name or code of the geodetic datum, if known. Otherwise use a controlled vocabulary IRI for the name or code of the ellipsoid, if known.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="dwc_verbatimSRS"></a>Term Name  dwc:verbatimSRS</th>
 		</tr>
 	</thead>
@@ -17342,6 +17447,48 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
   <li class="list-group-item"><code>European 1950</code></li>
   <li class="list-group-item"><code>Clarke 1866</code></li>
 </ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_verbatimSRS"></a>Term Name  dwciri:verbatimSRS</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/verbatimSRS">http://rs.tdwg.org/dwc/iri/verbatimSRS</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2023-06-28</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/verbatimSRS-2023-06-28">http://rs.tdwg.org/dwc/iri/version/verbatimSRS-2023-06-28</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Verbatim SRS (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which coordinates given in dwc:verbatimLatitude and dwc:verbatimLongitude, or dwc:verbatimCoordinates are based.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use an IRI for the EPSG code of the SRS, if known. Otherwise use a controlled vocabulary IRI for the name or code of the geodetic datum, if known. Otherwise use a controlled vocabulary IRI for the name or code of the ellipsoid, if known.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -17459,6 +17606,52 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
+			<th colspan="2"><a id="dwciri_verticalDatum"></a>Term Name  dwciri:verticalDatum</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/verticalDatum">http://rs.tdwg.org/dwc/iri/verticalDatum</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2021-07-15</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/verticalDatum-2021-07-15">http://rs.tdwg.org/dwc/iri/version/verticalDatum-2021-07-15</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Vertical Datum (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The vertical datum used as the reference upon which the values in the elevation terms are based.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2021-07-15_34">http://rs.tdwg.org/decisions/decision-2021-07-15_34</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
 			<th colspan="2"><a id="dwc_verticalDatum"></a>Term Name  dwc:verticalDatum</th>
 		</tr>
 	</thead>
@@ -17500,52 +17693,6 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
   <li class="list-group-item"><code>epsg:7030</code></li>
   <li class="list-group-item"><code>unknown</code></li>
 </ul></td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2021-07-15_34">http://rs.tdwg.org/decisions/decision-2021-07-15_34</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
-			<th colspan="2"><a id="dwciri_verticalDatum"></a>Term Name  dwciri:verticalDatum</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/verticalDatum">http://rs.tdwg.org/dwc/iri/verticalDatum</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2021-07-15</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/verticalDatum-2021-07-15">http://rs.tdwg.org/dwc/iri/version/verticalDatum-2021-07-15</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Vertical Datum (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>The vertical datum used as the reference upon which the values in the elevation terms are based.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
