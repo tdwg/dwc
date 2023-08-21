@@ -504,7 +504,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">vitality</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/vitality">http://rs.tdwg.org/dwc/terms/vitality</a></td></tr>
     <tr><td>Definition</td><td>An indication of whether a dwc:Organism was alive or dead at the time of collection or observation.</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. Intended to be used with records having a dwc:basisOfRecord of <code>PreservedSpecimen</code>, <code>MaterialSample</code>, or <code>HumanObservation</code>. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. Intended to be used with records having a dwc:basisOfRecord of <code>PreservedSpecimen</code>, <code>MaterialEntity</code>, <code>MaterialSample</code>, or <code>HumanObservation</code>. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>alive</code></li><li class="list-group-item"><code>dead</code></li><li class="list-group-item"><code>mixedLot</code></li><li class="list-group-item"><code>uncertain</code></li><li class="list-group-item"><code>notAssessed</code></li></ul></td></tr>
   </tbody>
 </table>
@@ -810,7 +810,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/disposition">http://rs.tdwg.org/dwc/terms/disposition</a></td></tr>
     <tr><td>Definition</td><td>The current state of a dwc:MaterialEntity with respect to a collection.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>in collection</code></li><li class="list-group-item"><code>missing</code></li><li class="list-group-item"><code>on loan</code></li><li class="list-group-item"><code>used up</code></li><li class="list-group-item"><code>destroyed</code><code></li><li class="list-group-item"></code>deaccessioned`</li></ul></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>in collection</code></li><li class="list-group-item"><code>missing</code></li><li class="list-group-item"><code>on loan</code></li><li class="list-group-item"><code>used up</code></li><li class="list-group-item"><code>destroyed</code></li><li class="list-group-item"><code>deaccessioned</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -3109,6 +3109,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:disposition">disposition</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:earliestGeochronologicalEra">earliestGeochronologicalEra</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:establishmentMeans">establishmentMeans</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:eventType">eventType</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:fieldNotes">fieldNotes</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:fieldNumber">fieldNumber</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:footprintSRS">footprintSRS</a>
@@ -3315,6 +3316,18 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr><td>Definition</td><td>Statement about whether a dwc:Organism has been introduced to a given place and time through the direct or indirect activity of modern humans.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to use IRIs from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/em/">http://rs.tdwg.org/dwc/doc/em/</a>. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a> . Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="http://rs.tdwg.org/dwcem/values/e001">http://rs.tdwg.org/dwcem/values/e001</a></code></li><li class="list-group-item"><code><a href="http://rs.tdwg.org/dwcem/values/e005">http://rs.tdwg.org/dwcem/values/e005</a></code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwciri:eventType"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">eventType</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/eventType">http://rs.tdwg.org/dwc/iri/eventType</a></td></tr>
+    <tr><td>Definition</td><td>The nature of the dwc:Event.</td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. Regardless of the dwc:eventType, the interval of the dwc:Event can be captured in dwc:eventDate. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -3745,7 +3758,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr class="table-secondary"><th colspan="2">vitality</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/vitality">http://rs.tdwg.org/dwc/iri/vitality</a></td></tr>
     <tr><td>Definition</td><td>An indication of whether a dwc:Organism was alive or dead at the time of collection or observation.</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. Intended to be used with records having a dwc:basisOfRecord of <code>PreservedSpecimen</code>, <code>MaterialSample</code>, or <code>HumanObservation</code>. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. Intended to be used with records having a dwc:basisOfRecord of <code>PreservedSpecimen</code>, <code>MaterialEntity</code>, <code>MaterialSample</code>, or <code>HumanObservation</code>. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
@@ -3839,7 +3852,6 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
 ## MachineObservation
 
 <div class="my-4">
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:eventType">eventType</a>
   </div>
 
 <table class="table">
@@ -3852,18 +3864,6 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
   </tbody>
 </table>
 
-<p class="invisible">
-  <span id="dwciri:eventType"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">eventType</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/eventType">http://rs.tdwg.org/dwc/iri/eventType</a></td></tr>
-    <tr><td>Definition</td><td>The nature of the dwc:Event.</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. Regardless of the dwc:eventType, the interval of the dwc:Event can be captured in dwc:eventDate. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
-    <tr><td>Examples</td><td></td></tr>
-  </tbody>
-</table>
 
 
 ## Cite Darwin Core
