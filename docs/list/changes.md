@@ -165,11 +165,11 @@ These changes included situations where:
 - where dwc:MaterialEntity was added to the list of possible classes, 
 - or where an example that was previously described as a dwc:MaterialSample is now described as dwc:MaterialEntity. 
 
-Terms involved:  dwc:basisOfRecord, dcterms:references, dwc:associatedSequences, dwc:disposition, dwc:preparations, dwc:verbatimLabel, dwc:ResourceRelationship, dwc:MeasurementOrFact, and many of the geochronological and stratigraphic terms, see https://github.com/tdwg/dwc/milestone/18 for the full list. 
+Terms involved:  dwc:basisOfRecord, dcterms:references, dwc:associatedSequences, dwc:disposition, dwc:preparations, dwc:verbatimLabel, dwc:vitality, dwc:ResourceRelationship, dwc:MeasurementOrFact, and many of the geochronological and stratigraphic terms, see https://github.com/tdwg/dwc/milestone/18 for the full list. 
 
-Several terms are now organized under the new dwc:MaterialSample class rather than the dwc:Occurrence class: dwc:disposition, dwc:preparations, and dwc:verbatimLabel. 
+Several terms are now organized under the new dwc:MaterialEntity class rather than the dwc:Occurrence class: dwc:disposition, dwc:preparations, and dwc:verbatimLabel. 
 
-Here's an example of a change to dwc:MaterialSample in a term definition: 
+Here's an example of a change from "cataloged item" to "dwc:MaterialEntity" in a term definition: 
 
 **Before**
 
