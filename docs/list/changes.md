@@ -1,5 +1,7 @@
 # Changes made in the 2023-08-21 version of DwC
 
+NOTE: dates given in the documents will be updated to the actual ratification date once it is complete.
+
 ## 1. New terms added (change process and Executive approval required)
 
 Note: The IRI analogs of new terms (in the dwciri: namespace) are not shown. Their definitions are identical to the dwc: analogs.
