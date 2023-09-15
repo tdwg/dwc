@@ -14,9 +14,9 @@
 # limitations under the License.
 
 __author__ = "John Wieczorek"
-__copyright__ = "Copyright 2021 Rauthiflor LLC"
+__copyright__ = "Copyright 2023 Rauthiflor LLC"
 __filename__ = 'build_extension.py'
-__version__ = f'{__filename__} 2021-08-17T20:40-03:00'
+__version__ = f'{__filename__} 2023-09-15T16:52-03:00'
 
 import io
 import os
@@ -32,6 +32,7 @@ NAMESPACES = {
     'http://rs.tdwg.org/dwc/iri/' : 'dwciri',
     'http://rs.tdwg.org/dwc/terms/' : 'dwc',
     'http://rs.tdwg.org/chrono/terms/' : 'chrono',
+    'http://rs.tdwg.org/eco/terms/' : 'eco',
     'http://purl.org/dc/elements/1.1/' : 'dc',
     'http://purl.org/dc/terms/' : 'dcterms',
     'http://rs.tdwg.org/dwc/terms/attributes/' : 'tdwgutility'}
@@ -139,7 +140,7 @@ class DwcDigester(object):
             valid key of the NAMESPACES variable
         """
         if namespace not in NAMESPACES.keys():
-            raise DwcNamespaceError("The namespace url is currently not supported in NAMESPACES")
+            raise DwcNamespaceError(f"The namespace url {namespace} is currently not supported in NAMESPACES")
         return NAMESPACES[namespace]
 
     def get_term_definition(self, term_iri):
@@ -153,7 +154,6 @@ class DwcDigester(object):
         method (room for improvement)
         """
         vs_term = self._select_versions_term(term_iri)
-
         term_data = {}
         term_data["label"] = vs_term['term_localName'] # See https://github.com/tdwg/dwc/issues/253#issuecomment-670098202
         term_data["iri"] = term_iri
@@ -167,6 +167,7 @@ class DwcDigester(object):
         term_data["rdf_type"] = vs_term['rdf_type']
         namespace_url, _ = self.split_iri(term_iri)
         term_data["namespace"] = self.resolve_namespace_abbrev(namespace_url)
+#        print(f'get_term_definition({term_iri})\n  {term_data}')
         return term_data
 
     @staticmethod
@@ -232,6 +233,7 @@ class DwcDigester(object):
         for term in self.versions(): # sequence of the terms file used as order
             term_data = self.get_term_definition(term['term_iri'])
             test = term['term_iri']
+#            print(f'{term_data}')
 #            print(f'{test=}')
             if term_data["rdf_type"] == "http://www.w3.org/2000/01/rdf-schema#Class":
                 # new class encountered
@@ -258,6 +260,7 @@ class DwcDigester(object):
                 class_group['terms'].append(term_data)
         # save the last class to template_data
         template_data.append(class_group)
+#        print(f'{class_group}')
         return template_data
 
     def create_html(self, html_template="terms.tmpl",
@@ -412,6 +415,9 @@ class DwcDigester(object):
                 elif namespace=='http://purl.org/chrono/terms/':
                     # Example: https://tdwg.github.io/chrono/terms/#chrono:materialDated
                     dc_relation = f'https://tdwg.github.io/chrono/terms/#chrono:{name}'
+                elif namespace=='http://rs.tdwg.org/eco/terms/':
+                    # Example: https://tdwg.github.io/eco/terms/#eco:samplingPerformedBy
+                    dc_relation = f'https://eco.tdwg.org/terms/#eco:{name}'
 
                 # Get the term definition (dc:description) from the description field of
                 # the Extension term list file. Later we'll check if this is blank, and
@@ -422,6 +428,7 @@ class DwcDigester(object):
                 # term list file. Later we'll check if this is blank, and if so, fill it 
                 # from the standard.
                 comments = term['comments']
+#                print(f'comments: {comments}')
 
                 # Get the term examples from the description field of the Extension term 
                 # list file. Later we'll check if this is blank, and if so, fill it from 
@@ -439,8 +446,10 @@ class DwcDigester(object):
                 # Try to find the term from the standard
                 term_data = None
                 try:
+#                    print(f"{term['iri']}")
                     term_data = self.get_term_definition(term['iri'])
                 except:
+                    print(f"{term['iri']} not found in get_term_definitions({term['iri']})")
                     pass
                 
                 # Fill in dc:description, comments, or examples from the standard if it is
@@ -452,7 +461,7 @@ class DwcDigester(object):
                         comments = term_data['comments']
                     if examples is None or examples.strip()=='':
                         examples = term_data['examples']
-
+#                    print(f'comments: {comments}')
                 # Transform description, comment, and examples for HMTL encodings
                 dc_description = html.escape(dc_description)
                 comments = html.escape(comments)
@@ -501,7 +510,7 @@ def _getoptions():
     return parser.parse_args()
 
 def main():
-    """Build XML Darwin Core Extension files"""
+    """Build Darwin Core Extension XML files"""
 
     options = _getoptions()
     optdict = {}
@@ -514,11 +523,11 @@ def main():
         s += ' -x ./occurrence_core.tmpl'
         s += ' -i ./occurrence_core_list.csv'
         s += ' -o ../ext/dwc_occurrence_2021-08-16.xml'
-        s += ' -t ../vocabulary/term_versions.csv'
+        s += ' -t ../../vocabulary/term_versions.csv'
         print(s)
         return
 
-    term_versions_file = "../vocabulary/term_versions.csv"
+    term_versions_file = "../../vocabulary/term_versions.csv"
     if options.termversionsfile is not None and len(options.termversionsfile)!=0:
         term_versions_file = options.termversionsfile
 

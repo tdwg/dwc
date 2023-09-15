@@ -4,22 +4,13 @@ Title
 : Darwin Core text guide
 
 Date version issued
-: 2021-07-15
+: 2023-09-14
 
 Date created
 : 2009-02-12
 
 Part of TDWG Standard
 : <http://www.tdwg.org/standards/450/>
-
-This version
-: <http://rs.tdwg.org/dwc/terms/guides/text/2021-07-15>
-
-Latest version
-: <http://rs.tdwg.org/dwc/terms/guides/text/>
-
-Previous version
-: <http://rs.tdwg.org/dwc/terms/guides/text/2020-09-05>
 
 Abstract
 : Guidelines for implementing Darwin Core in Text files.
@@ -115,7 +106,7 @@ Element | Description
 
 Attribute | Description | Required | Default
 --- | --- | --- | ---
-`rowType` | The row type is REQUIRED and MUST be a Unified Resource Identifier (URI) for the term identifying the class of data represented by each row. Classes MAY be defined outside the Darwin Core specification if denoted by a URI. For convenience the URIs for classes defined by the Darwin Core are: `Occurrence`: <http://rs.tdwg.org/dwc/terms/Occurrence>, `Organism`: <http://rs.tdwg.org/dwc/terms/Organism>, `MaterialSample`: <http://rs.tdwg.org/dwc/terms/MaterialSample>, `Event`: <http://rs.tdwg.org/dwc/terms/Event>, `Location`: <http://purl.org/dc/terms/Location>, `GeologicalContext`: <http://purl.org/dc/terms/GeologicalContext>, `Identification`: <http://rs.tdwg.org/dwc/terms/Identification>, `Taxon`: <http://rs.tdwg.org/dwc/terms/Taxon>, `ResourceRelationship`: <http://rs.tdwg.org/dwc/terms/ResourceRelationship>, `MeasurementOrFact`: <http://rs.tdwg.org/dwc/terms/MeasurementOrFact>, `ChronometricAge`: <http://rs.tdwg.org/chrono/terms/ChronometricAge>,  | yes |
+`rowType` | The row type is REQUIRED and MUST be a Unified Resource Identifier (URI) for the term identifying the class of data represented by each row. Classes MAY be defined outside the Darwin Core specification if denoted by a URI. For convenience the URIs for classes defined by the Darwin Core are: `dwc:Occurrence`: <http://rs.tdwg.org/dwc/terms/Occurrence>, `dwc:Organism`: <http://rs.tdwg.org/dwc/terms/Organism>, `dwc:MaterialEntity`: <http://rs.tdwg.org/dwc/terms/MaterialEntity>, `dwc:MaterialSample`: <http://rs.tdwg.org/dwc/terms/MaterialSample>, `dwc:Event`: <http://rs.tdwg.org/dwc/terms/Event>, `dcterms:Location`: <http://purl.org/dc/terms/Location>, `dwc:GeologicalContext`: <http://purl.org/dc/terms/GeologicalContext>, `dwc:Identification`: <http://rs.tdwg.org/dwc/terms/Identification>, `dwc:Taxon`: <http://rs.tdwg.org/dwc/terms/Taxon>, `dwc:ResourceRelationship`: <http://rs.tdwg.org/dwc/terms/ResourceRelationship>, `dwc:MeasurementOrFact`: <http://rs.tdwg.org/dwc/terms/MeasurementOrFact>, `chrono:ChronometricAge`: <http://rs.tdwg.org/chrono/terms/ChronometricAge>,  | yes |
 `fieldsTerminatedBy` | Specifies the delimiter between fields. Typical values MAY be `,` or `\t` for CSV or Tab files respectively. | no | `,`
 `linesTerminatedBy` | Specifies the row separator character. | no | `\n`
 `fieldsEnclosedBy` | Specifies the character used to enclose (mark the start and end of) each field. CSV files frequently use the double quote character (`"`), which is the default value if none is explicitly provided. Note that a comma separated value file that has commas within the content of any field MUST have an enclosing character. | no | `"`
@@ -160,7 +151,7 @@ A [Darwin Core Archive](https://ipt.gbif.org/manual/en/ipt/2.5/dwca-guide) is an
 
 ### 3.1 Extension example (non-normative)
 
-The following example illustrates the use of extensions. In this example there are three files in the archive, all of which are located in the same directory as the metafile. The whales.txt file acts as a core file of Taxon records. The whales.txt file is extended by two other files, types.txt and distribution.txt. The types.txt file contains records specified in an external definition at <http://rs.gbif.org/terms/1.0/Types> and consists of Dublin Core and Darwin Core terms, while the distribution.txt file contains records specified at <http://rs.gbif.org/terms/1.0/Distribution> and consists of Darwin Core terms plus an additional term for threatStatus. Both extension files are related to the core file by the taxonNameID fields. This archive contains information about whale species, type specimen records for those species, and lists of countries and the threat status for those species in those countries.
+The following example illustrates the use of extensions. In this example there are three files in the archive, all of which are located in the same directory as the metafile. The whales.txt file acts as a core file of Taxon records. The whales.txt file is extended by two other files, types.txt and distribution.txt. The types.txt file contains records specified in an external definition at <http://rs.gbif.org/terms/1.0/TypesAndSpecimen> and consists of Dublin Core and Darwin Core terms, while the distribution.txt file contains records specified in the Species Distribution Extension at <http://rs.gbif.org/terms/1.0/Distribution> and consists of Darwin Core terms plus an additional term for threatStatus. Both extension files are related to the core file by the dwc:taxonID fields. This archive contains information about whale species, type specimen records for those species, and lists of countries and the threat status for those species in those countries.
 
 ![Extension](extension.png)
 
@@ -184,7 +175,7 @@ The following example illustrates the use of extensions. In this example there a
         <field index="5" term="http://rs.tdwg.org/dwc/terms/originalNameUsageID"/>
     </core>
 
-    <extension encoding="UTF-8" fieldsTerminatedBy="," linesTerminatedBy="\n" fieldsEnclosedBy='"' ignoreHeaderLines="1" rowType="http://rs.gbif.org/terms/1.0/Types">
+    <extension encoding="UTF-8" fieldsTerminatedBy="," linesTerminatedBy="\n" fieldsEnclosedBy='"' ignoreHeaderLines="1" rowType="http://rs.gbif.org/terms/1.0/TypesAndSpecimen">
         <files>
             <location>types.csv</location>
         </files>

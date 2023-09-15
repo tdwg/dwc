@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema 
-    version="2023-06-28"
+    version="2023-09-14"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     targetNamespace="http://rs.tdwg.org/dwc/xsd/simpledarwincore/"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -79,12 +79,9 @@
                 <xs:element ref="dwc:pathway" minOccurs="0"/>
                 <xs:element ref="dwc:georeferenceVerificationStatus" minOccurs="0"/>
                 <xs:element ref="dwc:occurrenceStatus" minOccurs="0"/>
-                <xs:element ref="dwc:preparations" minOccurs="0"/>
-                <xs:element ref="dwc:disposition" minOccurs="0"/>
                 <xs:element ref="dwc:associatedMedia" minOccurs="0"/>
                 <xs:element ref="dwc:associatedOccurrences" minOccurs="0"/>
                 <xs:element ref="dwc:associatedReferences" minOccurs="0"/>
-                <xs:element ref="dwc:associatedSequences" minOccurs="0"/>
                 <xs:element ref="dwc:associatedTaxa" minOccurs="0"/>
                 <xs:element ref="dwc:otherCatalogNumbers" minOccurs="0"/>
                 <xs:element ref="dwc:occurrenceRemarks" minOccurs="0"/>
@@ -95,9 +92,15 @@
                 <xs:element ref="dwc:associatedOrganisms" minOccurs="0"/>
                 <xs:element ref="dwc:previousIdentifications" minOccurs="0"/>
                 <xs:element ref="dwc:organismRemarks" minOccurs="0"/>
+                <!-- MaterialEntity terms -->
+                <xs:element ref="dwc:materialEntityID" minOccurs="0"/>
+                <xs:element ref="dwc:preparations" minOccurs="0"/>
+                <xs:element ref="dwc:disposition" minOccurs="0"/>
+                <xs:element ref="dwc:verbatimLabel" minOccurs="0"/>
+                <xs:element ref="dwc:associatedSequences" minOccurs="0"/>
+                <xs:element ref="dwc:materialEntityRemarks" minOccurs="0"/>
                 <!-- MaterialSample terms -->
                 <xs:element ref="dwc:materialSampleID" minOccurs="0"/>
-                <xs:element ref="dwc:verbatimLabel" minOccurs="0"/>
                 <!-- Event terms -->
                 <xs:element ref="dwc:eventID" minOccurs="0"/>
                 <xs:element ref="dwc:parentEventID" minOccurs="0"/>
@@ -113,9 +116,9 @@
                 <xs:element ref="dwc:verbatimEventDate" minOccurs="0"/>
                 <xs:element ref="dwc:habitat" minOccurs="0"/>
                 <xs:element ref="dwc:samplingProtocol" minOccurs="0"/>
-                <xs:element ref="dwc:samplingEffort" minOccurs="0"/>
                 <xs:element ref="dwc:sampleSizeValue" minOccurs="0"/>
                 <xs:element ref="dwc:sampleSizeUnit" minOccurs="0"/>
+                <xs:element ref="dwc:samplingEffort" minOccurs="0"/>
                 <xs:element ref="dwc:fieldNotes" minOccurs="0"/>
                 <xs:element ref="dwc:eventRemarks" minOccurs="0"/>
                 <!-- Location terms -->

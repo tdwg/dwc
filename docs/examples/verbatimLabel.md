@@ -4,6 +4,9 @@ Title
 : verbatimLabel Examples
 
 Date modified
+: 2023-09-14
+
+Date created
 : 2023-06-14
 
 Part of TDWG Standard
@@ -25,7 +28,7 @@ The following provides examples and guidance for the use of Darwin Core verbatim
 
 ## Example 1
 
-For a label affixed to a pinned insect specimen, the verbatimLabel would contain:
+For a label affixed to a pinned insect specimen, the dwc:verbatimLabel would contain:
 
 > ILL: Union Co.
 > Wolf Lake by Powder Plant
@@ -40,11 +43,11 @@ For a label affixed to a pinned insect specimen, the verbatimLabel would contain
 > Insect Collection
 > 456782
 
-With comment `verbatimLabel derived from human transcription` added in occurrenceRemarks.
+With comment `verbatimLabel derived from human transcription` added in dwc:occurrenceRemarks.
 
 ## Example 2
 
-When using Optical Character Recognition (OCR) techniques against an herbarium sheet, the verbatimLabel would contain:
+When using Optical Character Recognition (OCR) techniques against an herbarium sheet, the dwc:verbatimLabel would contain:
 
 > 0 1 2 3 4 5 6 7 8 9 10
 > cm	copyright reserved
@@ -71,4 +74,4 @@ When using Optical Character Recognition (OCR) techniques against an herbarium s
 > NEW YORK BOTANICAL GARDEN
 > 00499439
       
-With comment `verbatimLabel derived from unadulterated OCR output` added in occurrenceRemarks.
+With comment `verbatimLabel derived from unadulterated OCR output` added in dwc:occurrenceRemarks.

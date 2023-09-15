@@ -3,23 +3,14 @@
 Title
 : Darwin Core XML guide
 
-Date version issued
-: 2021-07-15
+Date modified
+: 2023-09-14
 
 Date created
 : 2009-02-12
 
 Part of TDWG Standard
 : <http://www.tdwg.org/standards/450/>
-
-This version
-: <http://rs.tdwg.org/dwc/terms/guides/xml/2021-07-15>
-
-Latest version
-: <http://rs.tdwg.org/dwc/terms/guides/xml/>
-
-Previous version
-: <http://rs.tdwg.org/dwc/terms/guides/xml/2014-11-08>
 
 Abstract
 : Guidelines for the implementation of Darwin Core in XML.
@@ -65,7 +56,7 @@ Implementors MUST use [XML Namespaces](http://www.w3.org/TR/1999/REC-xml-names-1
 
 The Darwin Core follows the [Dublin Core Metadata Initiative Abstract Model](http://dublincore.org/documents/abstract-model/) except that the Darwin Core _record_ is roughly equivalent to the Dublin Core _resource_.
 
-- Darwin Core terms MUST be either `classes` or `properties`.
+- A Darwin Core term MUST be either a `class` or a `property` where `class` is defined as http://www.w3.org/2000/01/rdf-schema#Class and `property` is defined as http://www.w3.org/1999/02/22-rdf-syntax-ns#Property.
 - A `Darwin Core record` MUST be made up of zero or more `classes` and one or more `properties` with their associated `values`.
 - Each `value` MUST be a literal string.
 - The `values` of `properties` within a `Darwin Core record` describe that record.
@@ -107,7 +98,7 @@ An empty string - an element with no content - MUST NOT be used:
 
 [Simple Darwin Core](tdwg_dwc_simple.xsd) most closely models the "flat" nature of many data sets. It is a ready-made schema for sharing information with no structure beyond properties of a _record_ (equivalent to fields in a table, or columns in a spreadsheet). It is meant to accommodate all properties except those that require further structure to be meaningful (auxilliary terms in the classes [ResourceRelationship](http://rs.tdwg.org/dwc/terms/ResourceRelationship), [MeasurementOrFact](http://rs.tdwg.org/dwc/terms/MeasurementOrFact), and [ChronometricAge](http://rs.tdwg.org/chrono/terms/ChronometricAge). The schema has no required terms and no term is repeated within a given _record_. Refer to [Simple Darwin Core](../simple/) for the rationale behind this schema.
 
-The term [`dcterms:type`](http://rs.tdwg.org/dwc/terms/dcterms:type) (which is controlled by the [Dublin Core Type Vocabulary](http://dublincore.org/documents/dcmi-type-vocabulary/)), gives the basic category of object (`PhysicalObject`, `StillImage`, `MovingImage`, `Sound`, `Text`) the record is about. The term [`basisOfRecord`](http://rs.tdwg.org/dwc/terms/basisOfRecord), which has a controlled vocabulary distinct from that of `dcterms:type`, shows the name of the Darwin Core class (e.g., [`LivingSpecimen`](http://rs.tdwg.org/dwc/terms/LivingSpecimen), [`PreservedSpecimen`](http://rs.tdwg.org/dwc/terms/PreservedSpecimen), [`FossilSpecimen`](http://rs.tdwg.org/dwc/terms/FossilSpecimen), [`MaterialCitation`](http://rs.tdwg.org/dwc/terms/MaterialCitation), [`HumanObservation`](http://rs.tdwg.org/dwc/terms/HumanObservation), [`MachineObservation`](http://rs.tdwg.org/dwc/terms/MachineObservation), [`Taxon`](http://rs.tdwg.org/dwc/terms/Taxon)) the record is about.
+The term [`dcterms:type`](http://rs.tdwg.org/dwc/terms/dcterms:type) (which is controlled by the [Dublin Core Type Vocabulary](http://dublincore.org/documents/dcmi-type-vocabulary/)), gives the basic category of object (`PhysicalObject`, `StillImage`, `MovingImage`, `Sound`, `Text`) the record is about. The term [`basisOfRecord`](http://rs.tdwg.org/dwc/terms/basisOfRecord), which has a controlled vocabulary distinct from that of `dcterms:type`, shows the name of the Darwin Core class (e.g., [`Event`](http://rs.tdwg.org/dwc/terms/Event), [`LivingSpecimen`](http://rs.tdwg.org/dwc/terms/LivingSpecimen), [`PreservedSpecimen`](http://rs.tdwg.org/dwc/terms/PreservedSpecimen), [`FossilSpecimen`](http://rs.tdwg.org/dwc/terms/FossilSpecimen), [`MaterialEntity`](http://rs.tdwg.org/dwc/terms/MaterialEntity), [`MaterialCitation`](http://rs.tdwg.org/dwc/terms/MaterialCitation), [`HumanObservation`](http://rs.tdwg.org/dwc/terms/HumanObservation), [`MachineObservation`](http://rs.tdwg.org/dwc/terms/MachineObservation), [`Taxon`](http://rs.tdwg.org/dwc/terms/Taxon)) the record is about.
 
 #### 2.6.1 Simple Darwin Core example (non-normative)
 
@@ -160,7 +151,7 @@ Classes SHOULD be used in a normalized way to avoid deep nesting. An [XML schema
 
 #### 2.7.1 Normalized classes examples (non-normative)
 
-Following is an example of using a normalized class-based schema to represent two related specimen occurrences from one Event. In this example a Western garter snake collected by Gordon W Gullion in 1949 was found to have eaten a Coastal giant salamander. Note the reuse of class instances by referring to the identifiers declared in the instances of those classes:
+Following is an example of using a normalized class-based schema to represent two related specimen dwc:Occurrences from one dwc:Event. In this example a Western garter snake collected by Gordon W Gullion in 1949 was found to have eaten a Coastal giant salamander. Note the reuse of class instances by referring to the identifiers declared in the instances of those classes:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -253,7 +244,7 @@ Following is an example of using a normalized class-based schema to represent tw
 </dwr:DarwinRecordSet>
 ```
 
-Here is an example demonstrating area count observations for Events on two different days at the same location. Note that we omit the identification class here as there is no identification-related data and link directly to the Taxon via the `taxonID`:
+Here is an example demonstrating area count observations for dwc:Events on two different days at the same dcterms:Location. Note that we omit the dwc:Identification class here as there is no identification-related data and link directly to the dwc:Taxon via the `dwc:taxonID`:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

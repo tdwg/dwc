@@ -55,6 +55,7 @@
         <xs:sequence>
             <xs:element ref="dwc:occurrenceID" minOccurs="0"/>
             <xs:element ref="dwc:organismID" minOccurs="0"/>
+            <xs:element ref="dwc:materialEntityID" minOccurs="0"/>
             <xs:element ref="dwc:materialSampleID" minOccurs="0"/>
             <xs:element ref="dwc:eventID" minOccurs="0"/>
             <xs:element ref="dwc:locationID" minOccurs="0"/>
@@ -140,12 +141,9 @@
     <xs:element name="pathway" type="xs:string" substitutionGroup="dwc:anyOccurrenceTerm"/>
     <xs:element name="georeferenceVerificationStatus" type="xs:string" substitutionGroup="dwc:anyOccurrenceTerm"/>
     <xs:element name="occurrenceStatus" type="xs:string" substitutionGroup="dwc:anyOccurrenceTerm"/>
-    <xs:element name="preparations" type="xs:string" substitutionGroup="dwc:anyOccurrenceTerm"/>
-    <xs:element name="disposition" type="xs:string" substitutionGroup="dwc:anyOccurrenceTerm"/>
     <xs:element name="associatedMedia" type="xs:string" substitutionGroup="dwc:anyOccurrenceTerm"/>
-    <xs:element name="associatedReferences" type="xs:string" substitutionGroup="dwc:anyOccurrenceTerm"/>
     <xs:element name="associatedOccurrences" type="xs:string" substitutionGroup="dwc:anyOccurrenceTerm"/>
-    <xs:element name="associatedSequences" type="xs:string" substitutionGroup="dwc:anyOccurrenceTerm"/>
+    <xs:element name="associatedReferences" type="xs:string" substitutionGroup="dwc:anyOccurrenceTerm"/>
     <xs:element name="associatedTaxa" type="xs:string" substitutionGroup="dwc:anyOccurrenceTerm"/>
     <xs:element name="otherCatalogNumbers" type="xs:string" substitutionGroup="dwc:anyOccurrenceTerm"/>
     <xs:element name="occurrenceRemarks" type="xs:string" substitutionGroup="dwc:anyOccurrenceTerm"/>
@@ -169,12 +167,9 @@
             <xs:element ref="dwc:pathway" minOccurs="0"/>
             <xs:element ref="dwc:georeferenceVerificationStatus" minOccurs="0"/>
             <xs:element ref="dwc:occurrenceStatus" minOccurs="0"/>
-            <xs:element ref="dwc:preparations" minOccurs="0"/>
-            <xs:element ref="dwc:disposition" minOccurs="0"/>
             <xs:element ref="dwc:associatedMedia" minOccurs="0"/>
-            <xs:element ref="dwc:associatedReferences" minOccurs="0"/>
             <xs:element ref="dwc:associatedOccurrences" minOccurs="0"/>
-            <xs:element ref="dwc:associatedSequences" minOccurs="0"/>
+            <xs:element ref="dwc:associatedReferences" minOccurs="0"/>
             <xs:element ref="dwc:associatedTaxa" minOccurs="0"/>
             <xs:element ref="dwc:otherCatalogNumbers" minOccurs="0"/>
             <xs:element ref="dwc:occurrenceRemarks" minOccurs="0"/>
@@ -200,10 +195,28 @@
         </xs:sequence>
     </xs:group>
 
+    <!-- MaterialEntity domain -->
+    <xs:element name="anyMaterialEntityTerm" abstract="true" substitutionGroup="dwc:anyProperty"/>
+    <xs:element name="materialEntityID" type="dwc:nonEmptyString" substitutionGroup="dwc:anyIdentifier"/>
+    <!-- domain properties -->
+    <xs:element name="preparations" type="xs:string" substitutionGroup="dwc:anyMaterialEntityTerm"/>
+    <xs:element name="disposition" type="xs:string" substitutionGroup="dwc:anyMaterialEntityTerm"/>
+    <xs:element name="verbatimLabel" type="xs:string" substitutionGroup="dwc:anyMaterialEntityTerm"/>
+    <xs:element name="associatedSequences" type="xs:string" substitutionGroup="dwc:anyMaterialEntityTerm"/>
+    <xs:element name="materialEntityRemarks" type="xs:string" substitutionGroup="dwc:anyMaterialEntityTerm"/>
+    <xs:group name="MaterialEntityTerms">
+        <xs:sequence>
+            <xs:element ref="dwc:preparations" minOccurs="0"/>
+            <xs:element ref="dwc:disposition" minOccurs="0"/>
+            <xs:element ref="dwc:verbatimLabel" minOccurs="0"/>
+            <xs:element ref="dwc:associatedSequences" minOccurs="0"/>
+            <xs:element ref="dwc:materialEntityRemarks" minOccurs="0"/>
+        </xs:sequence>
+    </xs:group>
+
     <!-- MaterialSample domain -->
     <xs:element name="anyMaterialSampleTerm" abstract="true" substitutionGroup="dwc:anyProperty"/>
     <xs:element name="materialSampleID" type="dwc:nonEmptyString" substitutionGroup="dwc:anyIdentifier"/>
-    <xs:element name="verbatimLabel" type="xs:string" substitutionGroup="dwc:anyMaterialSampleTerm"/>
     <!-- domain properties -->
 
     <!-- EVENT domain -->
@@ -212,6 +225,7 @@
     <!-- domain properties -->
     <xs:element name="parentEventID" type="xs:string" substitutionGroup="dwc:anyEventTerm"/>
     <xs:element name="eventType" type="xs:string" substitutionGroup="dwc:anyEventTerm"/>
+    <xs:element name="fieldNumber" type="xs:string" substitutionGroup="dwc:anyEventTerm"/>
     <xs:element name="eventDate" type="dwc:dateTimeISO" substitutionGroup="dwc:anyEventTerm"/>
     <xs:element name="eventTime" type="xs:time" substitutionGroup="dwc:anyEventTerm"/>
     <xs:element name="startDayOfYear" type="dwc:dayOfYearDataType" substitutionGroup="dwc:anyEventTerm"/>
@@ -221,7 +235,6 @@
     <xs:element name="day" type="xs:gDay" substitutionGroup="dwc:anyEventTerm"/>
     <xs:element name="verbatimEventDate" type="xs:string" substitutionGroup="dwc:anyEventTerm"/>
     <xs:element name="habitat" type="xs:string" substitutionGroup="dwc:anyEventTerm"/>
-    <xs:element name="fieldNumber" type="xs:string" substitutionGroup="dwc:anyEventTerm"/>
     <xs:element name="samplingProtocol" type="xs:string" substitutionGroup="dwc:anyEventTerm"/>
     <xs:element name="sampleSizeValue" type="xs:string" substitutionGroup="dwc:anyEventTerm"/>
     <xs:element name="sampleSizeUnit" type="xs:string" substitutionGroup="dwc:anyEventTerm"/>
@@ -232,6 +245,7 @@
         <xs:sequence>
             <xs:element ref="dwc:parentEventID" minOccurs="0"/>
             <xs:element ref="dwc:eventType" minOccurs="0"/>
+            <xs:element ref="dwc:fieldNumber" minOccurs="0"/>
             <xs:element ref="dwc:eventDate" minOccurs="0"/>
             <xs:element ref="dwc:eventTime" minOccurs="0"/>
             <xs:element ref="dwc:startDayOfYear" minOccurs="0"/>
@@ -241,7 +255,6 @@
             <xs:element ref="dwc:day" minOccurs="0"/>
             <xs:element ref="dwc:verbatimEventDate" minOccurs="0"/>
             <xs:element ref="dwc:habitat" minOccurs="0"/>
-            <xs:element ref="dwc:fieldNumber" minOccurs="0"/>
             <xs:element ref="dwc:samplingProtocol" minOccurs="0"/>
             <xs:element ref="dwc:sampleSizeValue" minOccurs="0"/>
             <xs:element ref="dwc:sampleSizeUnit" minOccurs="0"/>
@@ -322,6 +335,7 @@
             <xs:element ref="dwc:verbatimDepth" minOccurs="0"/>
             <xs:element ref="dwc:minimumDistanceAboveSurfaceInMeters" minOccurs="0"/>
             <xs:element ref="dwc:maximumDistanceAboveSurfaceInMeters" minOccurs="0"/>
+            <xs:element ref="dwc:locationAccordingTo" minOccurs="0"/>
             <xs:element ref="dwc:locationRemarks" minOccurs="0"/>
             <xs:element ref="dwc:decimalLatitude" minOccurs="0"/>
             <xs:element ref="dwc:decimalLongitude" minOccurs="0"/>

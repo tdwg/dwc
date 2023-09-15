@@ -11,6 +11,9 @@ Title
 Date modified
 : 20XX-XX-XX
 
+Date created
+: 20XX-XX-XX
+
 Part of TDWG Standard
 : Not formally part of any standard.
 

@@ -3,23 +3,14 @@
 Title
 : Darwin Core namespace policy
 
-Date version issued
-: 2018-08-26
+Date modified
+: 2023-09-14
 
 Date created
 : 2009-02-12
 
 Part of TDWG Standard
 : <http://www.tdwg.org/standards/450/>
-
-This version
-: <http://rs.tdwg.org/dwc/terms/namespace/2018-08-26>
-
-Latest version
-: <http://rs.tdwg.org/dwc/terms/namespace/>
-
-Previous version
-: <http://rs.tdwg.org/dwc/terms/namespace/2013-09-23>
 
 Abstract
 : All terms in the Darwin Core must be assigned a unique Uniform Resource Identifier (URI). For convenience, the term URIs that are assigned and managed by the Darwin Core Task Group are grouped into collections known as Darwin Core namespaces. This document describes how term URIs are allocated by the Darwin Core Maintenance Group and the policies associated with Darwin Core namespaces.
@@ -57,6 +48,12 @@ The Darwin Core namespace URI for the collection Darwin Core properties expected
 
 ```
 http://rs.tdwg.org/dwc/iri/
+```
+
+The Darwin Core namespace URI for the collection of ChronometricAge properties, classes, and encoding schemes is:
+
+```
+http://rs.tdwg.org/chrono/terms/
 ```
 
 The term identifier for the current (recommended) version of a term is a URI based on the namespace and the term name without version information. Some example Darwin Core term identifiers follow:

@@ -51,13 +51,13 @@ organismRemarks
 materialEntityID
 preparations
 disposition
+verbatimLabel
 associatedSequences
 materialEntityRemarks
 materialSampleID
-verbatimLabel
-eventType
 eventID
 parentEventID
+eventType
 fieldNumber
 eventDate
 eventTime

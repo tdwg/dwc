@@ -1,10 +1,11 @@
 
 # Darwin Core Quick Reference Guide
 
-This document is intended to be an easy-to-read reference of the currently (as of 2023-08-21) recommended terms maintained as part of the [Darwin Core standard](https://www.tdwg.org/standards/dwc/) and is maintained by the [Darwin Core Maintenance Group](https://www.tdwg.org/community/dwc/). 
-
+This document is intended to be an easy-to-read reference of the currently (as of 2023-06-28) recommended terms maintained as part of the [Darwin Core standard](https://www.tdwg.org/standards/dwc/) and is maintained by the [Darwin Core Maintenance Group](https://www.tdwg.org/community/dwc/). 
 
 **Need help?** Read more about how to use Darwin Core in the [Darwin Core Questions & Answers site](https://github.com/tdwg/dwc-qa/blob/master/README.md). Still have questions? Submit a new issue (question/problem) to the [dwc-qa issues page in GitHub](https://github.com/tdwg/dwc-qa/issues), or use the [form](https://tinyurl.com/darwin-qa). See the bottom of this document for [how to cite Darwin Core](https://dwc.tdwg.org/terms/#cite-darwin-core)."
+
+**Want to contribute?** For information about how to contribute to the Darwin Core Standard, including how to propose changes, see the [Guidelines for contributing](https://github.com/tdwg/dwc/blob/master/.github/CONTRIBUTING.md).
 
 This page is not part of the standard, but combines the normative term names and definitions with the non-normative comments and examples that are meant to help people to use the terms consistently. Definitions, comments, and examples may include namespace abbreviations (e.g., "dwc:"). These are included to show that the meaning for the word it is attached to very specifically means the term as defined in that namespace. Thus, dwc:Event means Event as defined by Darwin Core at https://dwc.tdwg.org/terms/#event. Capitalized terms that follow a namespace abbreviation, such as dwc:Occurrence, are Darwin Core class terms, which are a special category of terms used to group sets of property terms (terms that being with lower case names that follow the namespace abbreviation, e.g., dwc:eventID) for convenience. Comprehensive metadata for current and obsolete terms in human readable form are found in the document [List of Darwin Core terms](../list/). 
 
@@ -760,6 +761,7 @@ This category contains terms that are generic in that they might apply to any ty
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:materialEntityID">materialEntityID</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:preparations">preparations</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:disposition">disposition</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimLabel">verbatimLabel</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:associatedSequences">associatedSequences</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:materialEntityRemarks">materialEntityRemarks</a>
   </div>
@@ -814,6 +816,19 @@ This category contains terms that are generic in that they might apply to any ty
   </tbody>
 </table>
 <p class="invisible">
+  <span id="dwc:verbatimLabel"></span>
+    <span id="verbatimLabel"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">verbatimLabel</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimLabel">http://rs.tdwg.org/dwc/terms/verbatimLabel</a></td></tr>
+    <tr><td>Definition</td><td>The content of this term should include no embellishments, prefixes, headers or other additions made to the text. Abbreviations must not be expanded and supposed misspellings must not be corrected. Lines or breakpoints between blocks of text that could be verified by seeing the original labels or images of them may be used. Examples of material entities include preserved specimens, fossil specimens, and material samples. Best practice is to use UTF-8 for all characters. Best practice is to add comment “verbatimLabel derived from human transcription” in dwc:occurrenceRemarks.</td></tr>
+    <tr><td>Comments</td><td>Examples can be found at <a href="https://dwc.tdwg.org/examples/verbatimLabel">https://dwc.tdwg.org/examples/verbatimLabel</a>.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
   <span id="dwc:associatedSequences"></span>
     <span id="associatedSequences"></span>
   </p>
@@ -845,7 +860,6 @@ This category contains terms that are generic in that they might apply to any ty
 
 <div class="my-4">
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:materialSampleID">materialSampleID</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimLabel">verbatimLabel</a>
   </div>
 
 <table class="table">
@@ -871,27 +885,14 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Examples</td><td><code>06809dc5-f143-459a-be1a-6f03e63fc083</code></td></tr>
   </tbody>
 </table>
-<p class="invisible">
-  <span id="dwc:verbatimLabel"></span>
-    <span id="verbatimLabel"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">verbatimLabel</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimLabel">http://rs.tdwg.org/dwc/terms/verbatimLabel</a></td></tr>
-    <tr><td>Definition</td><td>The content of this term should include no embellishments, prefixes, headers or other additions made to the text. Abbreviations must not be expanded and supposed misspellings must not be corrected. Lines or breakpoints between blocks of text that could be verified by seeing the original labels or images of them may be used. Examples of material entities include preserved specimens, fossil specimens, and material samples. Best practice is to use UTF-8 for all characters. Best practice is to add comment “verbatimLabel derived from human transcription” in dwc:occurrenceRemarks.</td></tr>
-    <tr><td>Comments</td><td>Examples can be found at <a href="https://dwc.tdwg.org/examples/verbatimLabel">https://dwc.tdwg.org/examples/verbatimLabel</a>.</td></tr>
-    <tr><td>Examples</td><td></td></tr>
-  </tbody>
-</table>
 
 
 ## Event
 
 <div class="my-4">
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:eventType">eventType</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:eventID">eventID</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:parentEventID">parentEventID</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:eventType">eventType</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:fieldNumber">fieldNumber</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:eventDate">eventDate</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:eventTime">eventTime</a>
@@ -921,19 +922,6 @@ This category contains terms that are generic in that they might apply to any ty
 </table>
 
 <p class="invisible">
-  <span id="dwc:eventType"></span>
-    <span id="eventType"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">eventType</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/eventType">http://rs.tdwg.org/dwc/terms/eventType</a></td></tr>
-    <tr><td>Definition</td><td>The nature of the dwc:Event.</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. Regardless of the dwc:eventType, the interval of the dwc:Event can be captured in dwc:eventDate. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Sample</code></li><li class="list-group-item"><code>Observation</code></li><li class="list-group-item"><code>Site Visit</code></li><li class="list-group-item"><code>Biotic Interaction</code></li><li class="list-group-item"><code>Bioblitz</code></li><li class="list-group-item"><code>Expedition</code></li><li class="list-group-item"><code>Survey</code></li><li class="list-group-item"><code>Project</code></li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
   <span id="dwc:eventID"></span>
     <span id="eventID"></span>
   </p>
@@ -957,6 +945,19 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Definition</td><td>An identifier for the broader dwc:Event that groups this and potentially other dwc:Events.</td></tr>
     <tr><td>Comments</td><td>Use a globally unique identifier for a dwc:Event or an identifier for a dwc:Event that is specific to the data set.</td></tr>
     <tr><td>Examples</td><td><code>A1</code> (parentEventID to identify the main Whittaker Plot in nested samples, each with its own eventID - <code>A1:1</code>, <code>A1:2</code>).</td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:eventType"></span>
+    <span id="eventType"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">eventType</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/eventType">http://rs.tdwg.org/dwc/terms/eventType</a></td></tr>
+    <tr><td>Definition</td><td>The nature of the dwc:Event.</td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. Regardless of the dwc:eventType, the interval of the dwc:Event can be captured in dwc:eventDate. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Sample</code></li><li class="list-group-item"><code>Observation</code></li><li class="list-group-item"><code>Site Visit</code></li><li class="list-group-item"><code>Biotic Interaction</code></li><li class="list-group-item"><code>Bioblitz</code></li><li class="list-group-item"><code>Expedition</code></li><li class="list-group-item"><code>Survey</code></li><li class="list-group-item"><code>Project</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">

@@ -4,7 +4,7 @@
 # 
 # Build script for tdwg dwc handling
 #
-__version__ = '2021-07-30T-03:00'
+__version__ = '2023-09-14T-03:00'
 import io
 import os
 import re
@@ -281,7 +281,19 @@ class DwcDigester(object):
                 properties.append(term_data["label"])
         return properties
 
-    def create_dwc_list(self, file_output="../dist/simple_dwc_vertical.csv"):
+    def all_dwc_terms(self):
+        """Extract all property terms that are defined as `simple` or 'extension'
+        in the flags column of the config file of terms
+        """
+        properties = []
+        for term in self.versions():
+            term_data = self.get_term_definition(term['term_iri'])
+            if (term_data["rdf_type"] == "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" and
+                term["flags"] in ("simple","extension")):
+                properties.append(term_data["label"])
+        return properties
+
+    def create_simple_dwc_list(self, file_output="../dist/simple_dwc_vertical.csv"):
         """Build a list of simple dwc terms and write it to file
 
         Parameters
@@ -291,6 +303,18 @@ class DwcDigester(object):
         """
         with codecs.open(file_output, 'w', 'utf-8') as dwc_list_file:
             for term in self.simple_dwc_terms():
+                dwc_list_file.write(term + "\n")
+
+    def create_all_dwc_list(self, file_output="../dist/all_dwc_vertical.csv"):
+        """Build a list of all dwc terms and write it to file
+
+        Parameters
+        -----------
+        file_output : str
+            relative path and filename to write the resulting list
+        """
+        with codecs.open(file_output, 'w', 'utf-8') as dwc_list_file:
+            for term in self.all_dwc_terms():
                 dwc_list_file.write(term + "\n")
 
     def create_dwc_header(self, file_output="../dist/simple_dwc_horizontal.csv"):
@@ -316,7 +340,8 @@ def main():
     print("Building Quick Reference Guide")
     my_dwc.create_html()
     print("Building simple DwC CSV files")
-    my_dwc.create_dwc_list()
+    my_dwc.create_simple_dwc_list()
+    my_dwc.create_all_dwc_list()
     my_dwc.create_dwc_header()
     print("Done!")
 
