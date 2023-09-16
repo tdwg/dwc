@@ -14,14 +14,14 @@
   - text: Pathway
     href: /pw/
   - text: Chronometric Age
-    href: https://tdwg.github.io/chrono/list/
+    href: https://chrono.tdwg.org/list/
 - text: Guides
   menu:
   - text: Darwin Core Quick Reference
     href: /terms/
   - text: "---"
   - text: Chronometric Age Quick Reference
-    href: https://tdwg.github.io/chrono/terms/
+    href: https://chrono.tdwg.org/terms/
   - text: Simple Darwin Core
     href: /simple/
   - text: Text (Darwin Core Archive)
