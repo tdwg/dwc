@@ -1,42 +1,41 @@
-# List of Darwin Core terms
+# {document_title}
 
 Title
-: List of Darwin Core terms
+: {document_title}
 
 Date version issued
-: 2023-08-18
+: {ratification_date}
 
 Date created
-: 2020-08-12
+: {created_date}
 
 Part of TDWG Standard
-: <http://www.tdwg.org/standards/450>
+: <{standard_iri}>
 
 This version
-: <http://rs.tdwg.org/dwc/doc/list/2023-08-18>
+: <{current_iri}{ratification_date}>
 
 Latest version
-: <http://rs.tdwg.org/dwc/doc/list/>
+: <{current_iri}>
 
-Previous version
-: <http://rs.tdwg.org/dwc/doc/list/2023-07-07>
+{previous_version_slot}
 
 Abstract
-: Darwin Core is a vocabulary standard for transmitting information about biodiversity. This document lists all terms in namespaces currently used in the vocabulary.
+: {abstract}
 
 Contributors
-: John Wieczorek (VertNet), Peter Desmet (INBO), Steve Baskauf (Vanderbilt University Libraries), Tim Robertson (GBIF), Markus Döring (GBIF), Quentin Groom (Botanic Garden Meise), Stijn Van Hoey (INBO), David Bloom (VertNet), Paula Zermoglio (VertNet), Robert Guralnick (University of Florida), John Deck (Genomic Biodiversity Working Group), Gail Kampmeier (INHS), Dave Vieglais (KUNHM), Renato De Giovanni (CRIA), Campbell Webb (TDWG RDF/OWL Task Group), Paul J. Morris (Harvard University Herbaria/Museum of Comparative Zoölogy), Mark Schildhauer (NCEAS)
+: {contributors}
 
 Creator
-: TDWG Darwin Core Maintenance Group
+: {creator}
 
 Bibliographic citation
-: Darwin Core Maintenance Group. 2023. List of Darwin Core terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/list/2023-08-18>
+: {creator}. {year}. {document_title}. {publisher}. <{current_iri}{ratification_date}>
 
 
 ## 1 Introduction (Informative)
 
-This document contains terms that are part of the most recent version of the Darwin Core vocabulary (<http://rs.tdwg.org/version/dwc/2023-08-18>).
+This document contains terms that are part of the most recent version of the Darwin Core vocabulary (<http://rs.tdwg.org/version/dwc/{ratification_date}>).
 
 This document includes terms in four namespaces that contain recommended terms: `dwc:`, `dwciri:`, `dc:`, and `dcterms:`. However, some terms in these namespaces are deprecated or superseded and should no longer be used. Deprecation or supersession is noted in the term metadata. Namespaces that contain only deprecated terms are not included in this document, but metadata about those terms can be retrieved by dereferencing their IRIs.
 
@@ -51,7 +50,7 @@ Section 2 is normative.
 In Section 4, the values of the `Term IRI` and `Definition` are normative. The values of `Term Name` are non-normative, although one can expect that the namespace abbreviation prefix is one commonly used for the term namespace.  `Label` and the values of all other properties (such as `Examples` and `Notes`) are non-normative.
 
 ### 1.2 RFC 2119 key words
-The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [RFC 2119](https://tools.ietf.org/html/rfc2119).
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [BCP 14](https://www.rfc-editor.org/info/bcp14) [\[RFC 2119\]](https://datatracker.ietf.org/doc/html/rfc2119) and [\[RFC 8174\]](https://datatracker.ietf.org/doc/html/rfc8174) when, and only when, they appear in all capitals, as shown here.
 
 ### 1.3 Namespace abbreviations
 
