@@ -1,0 +1,41 @@
+- contributor_iri: https://orcid.org/0000-0003-1144-0290
+  contributor_literal: John Wieczorek
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: VertNet
+  affiliation_uri: http://www.wikidata.org/entity/Q98382028
+
+- contributor_iri: https://orcid.org/0000-0001-7757-1889
+  contributor_literal: Markus Döring
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Global Biodiversity Information Facility
+  affiliation_uri: http://www.wikidata.org/entity/Q1531570
+
+- contributor_iri: https://orcid.org/0000-0002-7104-7266
+  contributor_literal: Renato De Giovanni
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Centro de Referência em Informação Ambiental
+  affiliation_uri: http://www.wikidata.org/entity/Q29168927
+
+- contributor_iri: https://orcid.org/0000-0001-6215-3617
+  contributor_literal: Tim Robertson
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Global Biodiversity Information Facility
+  affiliation_uri: http://www.wikidata.org/entity/Q1531570
+
+- contributor_iri: https://orcid.org/0000-0002-6513-4996
+  contributor_literal: Dave Vieglais
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: KU Natural History Museum
+  affiliation_uri: http://www.wikidata.org/entity/Q1111807
+
+- contributor_iri: https://orcid.org/0000-0002-5178-4170
+  contributor_literal: Gail Kampmeier
+  contributor_role: review manager
+  role_uri: http://www.wikidata.org/entity/Q2462658
+  affiliation: Illinois Natural History Survey
+  affiliation_uri: http://www.wikidata.org/entity/Q5999587
