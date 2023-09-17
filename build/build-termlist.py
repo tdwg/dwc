@@ -22,7 +22,7 @@ import yaml
 # headers are not. To build a page using the sample files, you will need to reverse the
 # commenting of these pairs.
 
-github_branch = 'main' # "main" for production, something else for development
+github_branch = 'master' # "master" for production, something else for development
 
 # This is the base URL for raw files from the branch of the repo that has been pushed to GitHub
 githubBaseUri = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/' + github_branch + '/'
