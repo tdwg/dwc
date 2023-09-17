@@ -1,10 +1,10 @@
-# List of Darwin Core terms
+# Darwin Core List of Terms
 
 Title
-: List of Darwin Core terms
+: Darwin Core List of Terms
 
 Date version issued
-: 2023-08-21
+: 2023-09-13
 
 Date created
 : 2020-08-12
@@ -13,7 +13,7 @@ Part of TDWG Standard
 : <http://www.tdwg.org/standards/450>
 
 This version
-: <http://rs.tdwg.org/dwc/doc/list/2023-08-21>
+: <http://rs.tdwg.org/dwc/doc/list/2023-09-13>
 
 Latest version
 : <http://rs.tdwg.org/dwc/doc/list/>
@@ -25,18 +25,18 @@ Abstract
 : Darwin Core is a vocabulary standard for transmitting information about biodiversity. This document lists all terms in namespaces currently used in the vocabulary.
 
 Contributors
-: John Wieczorek (VertNet), Peter Desmet (INBO), Steve Baskauf (Vanderbilt University Libraries), Tim Robertson (GBIF), Markus Döring (GBIF), Quentin Groom (Botanic Garden Meise), Stijn Van Hoey (INBO), David Bloom (VertNet), Paula Zermoglio (VertNet), Robert Guralnick (University of Florida), John Deck (Genomic Biodiversity Working Group), Gail Kampmeier (INHS), Dave Vieglais (KUNHM), Renato De Giovanni (CRIA), Campbell Webb (TDWG RDF/OWL Task Group), Paul J. Morris (Harvard University Herbaria/Museum of Comparative Zoölogy), Mark Schildhauer (NCEAS)
+: [John Wieczorek](https://orcid.org/0000-0003-1144-0290) ([VertNet](http://www.wikidata.org/entity/Q98382028)), [Peter Desmet](https://orcid.org/0000-0002-8442-8025) ([Instituut voor Natuur- en Bosonderzoek (INBO)](http://www.wikidata.org/entity/Q7315097)), [Steve Baskauf](https://orcid.org/0000-0003-4365-3135) ([Vanderbilt University Libraries](http://www.wikidata.org/entity/Q16849893)), [Tim Robertson](https://orcid.org/0000-0001-6215-3617) ([Global Biodiversity Information Facility](http://www.wikidata.org/entity/Q1531570)), [Markus Döring](https://orcid.org/0000-0001-7757-1889) ([Global Biodiversity Information Facility](http://www.wikidata.org/entity/Q1531570)), [Quentin Groom](https://orcid.org/0000-0002-0596-5376) ([Botanic Garden Meise](http://www.wikidata.org/entity/Q3052500)), [Stijn Van Hoey](https://orcid.org/0000-0001-6413-3185) ([Instituut voor Natuur- en Bosonderzoek (INBO)](http://www.wikidata.org/entity/Q7315097)), [David Bloom](https://orcid.org/0000-0003-1273-1807) ([VertNet](http://www.wikidata.org/entity/Q98382028)), [Paula Zermoglio](https://orcid.org/0000-0002-6056-5084) ([VertNet](http://www.wikidata.org/entity/Q98382028)), [Robert Guralnick](https://orcid.org/0000-0001-6682-1504) ([University of Florida](http://www.wikidata.org/entity/Q501758)), [John Deck](https://orcid.org/0000-0002-5905-1617) ([Genomic Biodiversity Working Group](http://www.wikidata.org/entity/Q98382041)), [Gail Kampmeier](https://orcid.org/0000-0002-5178-4170) ([Illinois Natural History Survey](http://www.wikidata.org/entity/Q5999587)), [Dave Vieglais](https://orcid.org/0000-0002-6513-4996) ([KU Natural History Museum](http://www.wikidata.org/entity/Q1111807)), [Renato De Giovanni](https://orcid.org/0000-0002-7104-7266) ([Centro de Referência em Informação Ambiental](http://www.wikidata.org/entity/Q29168927)), [Campbell Webb](https://orcid.org/0000-0003-1031-3249) ([TDWG RDF/OWL Task Group](http://www.wikidata.org/entity/Q4914768)), [Paul J. Morris](http://purl.oclc.org/net/edu.harvard.huh/guid/uuid/5e51de22-d841-4c47-b0c4-d5ad0bd03035) ([Harvard University Herbaria/Museum of Comparative Zoölogy](http://www.wikidata.org/entity/Q51926077)), [Mark Schildhauer](https://orcid.org/0000-0003-0632-7576) ([National Center for Ecological Analysis and Synthesis](http://www.wikidata.org/entity/Q6971323)), [Sophia Ratcliffe](https://orcid.org/0000-0001-9284-7900) ([National Biodiversity Network Trust](http://www.wikidata.org/entity/Q6970988)), [Teresa J. Mayfield-Meyer](https://orcid.org/0000-0002-1970-7044) ([The University of New Mexico, Arctos](http://www.wikidata.org/entity/Q1190812)), [Christian Bölling](https://orcid.org/0000-0002-6544-1363) ([Museum für Naturkunde Berlin - Leibniz-Institut für Evolutions- und Biodiversitätsforschung](http://www.wikidata.org/entity/Q233098))
 
 Creator
 : TDWG Darwin Core Maintenance Group
 
 Bibliographic citation
-: Darwin Core Maintenance Group. 2023. List of Darwin Core terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/list/2023-08-21>
+: TDWG Darwin Core Maintenance Group. 2023. Darwin Core List of Terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/list/2023-09-13>
 
 
 ## 1 Introduction (Informative)
 
-This document contains terms that are part of the most recent version of the Darwin Core vocabulary (<http://rs.tdwg.org/version/dwc/2023-08-21>).
+This document contains terms that are part of the most recent version of the Darwin Core vocabulary (<http://rs.tdwg.org/version/dwc/2023-09-13>).
 
 This document includes terms in four namespaces that contain recommended terms: `dwc:`, `dwciri:`, `dc:`, and `dcterms:`. However, some terms in these namespaces are deprecated or superseded and should no longer be used. Deprecation or supersession is noted in the term metadata. Namespaces that contain only deprecated terms are not included in this document, but metadata about those terms can be retrieved by dereferencing their IRIs.
 
@@ -51,7 +51,7 @@ Section 2 is normative.
 In Section 4, the values of the `Term IRI` and `Definition` are normative. The values of `Term Name` are non-normative, although one can expect that the namespace abbreviation prefix is one commonly used for the term namespace.  `Label` and the values of all other properties (such as `Examples` and `Notes`) are non-normative.
 
 ### 1.2 RFC 2119 key words
-The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [RFC 2119](https://tools.ietf.org/html/rfc2119).
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [BCP 14](https://www.rfc-editor.org/info/bcp14) [\[RFC 2119\]](https://datatracker.ietf.org/doc/html/rfc2119) and [\[RFC 8174\]](https://datatracker.ietf.org/doc/html/rfc8174) when, and only when, they appear in all capitals, as shown here.
 
 ### 1.3 Namespace abbreviations
 
@@ -131,6 +131,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [dcterms:language](#dcterms_language) |
 [dcterms:license](#dcterms_license) |
 [dcterms:modified](#dcterms_modified) |
+[dcterms:references](#dcterms_references) |
 [dcterms:rights](#dcterms_rights) |
 [dcterms:rightsHolder](#dcterms_rightsHolder) |
 [dcterms:type](#dcterms_type) 
@@ -508,6 +509,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [Date Modified](#dcterms_modified) |
 [Language](#dcterms_language) |
 [License](#dcterms_license) |
+[References](#dcterms_references) |
 [Rights](#dcterms_rights) |
 [Rights Holder](#dcterms_rightsHolder) |
 [Type](#dcterms_type) 
@@ -1619,11 +1621,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-08-18</td>
+			<td>2023-09-13</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/associatedSequences-2023-08-18">http://rs.tdwg.org/dwc/terms/version/associatedSequences-2023-08-18</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/associatedSequences-2023-09-13">http://rs.tdwg.org/dwc/terms/version/associatedSequences-2023-09-13</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1647,6 +1649,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -1806,11 +1812,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-08-18</td>
+			<td>2023-09-13</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/basisOfRecord-2023-08-18">http://rs.tdwg.org/dwc/terms/version/basisOfRecord-2023-08-18</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/basisOfRecord-2023-09-13">http://rs.tdwg.org/dwc/terms/version/basisOfRecord-2023-09-13</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1860,6 +1866,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2023-06-28_40">http://rs.tdwg.org/decisions/decision-2023-06-28_40</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -1876,11 +1886,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-08-18</td>
+			<td>2023-09-13</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/bed-2023-08-18">http://rs.tdwg.org/dwc/terms/version/bed-2023-08-18</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/bed-2023-09-13">http://rs.tdwg.org/dwc/terms/version/bed-2023-09-13</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1901,6 +1911,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -3303,11 +3317,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-08-21</td>
+			<td>2023-09-13</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/disposition-2023-08-21">http://rs.tdwg.org/dwc/terms/version/disposition-2023-08-21</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/disposition-2023-09-13">http://rs.tdwg.org/dwc/terms/version/disposition-2023-09-13</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3339,6 +3353,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -3493,11 +3511,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-08-18</td>
+			<td>2023-09-13</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/earliestAgeOrLowestStage-2023-08-18">http://rs.tdwg.org/dwc/terms/version/earliestAgeOrLowestStage-2023-08-18</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/earliestAgeOrLowestStage-2023-09-13">http://rs.tdwg.org/dwc/terms/version/earliestAgeOrLowestStage-2023-09-13</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3522,6 +3540,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -3585,11 +3607,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-08-18</td>
+			<td>2023-09-13</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/earliestEonOrLowestEonothem-2023-08-18">http://rs.tdwg.org/dwc/terms/version/earliestEonOrLowestEonothem-2023-08-18</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/earliestEonOrLowestEonothem-2023-09-13">http://rs.tdwg.org/dwc/terms/version/earliestEonOrLowestEonothem-2023-09-13</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3614,6 +3636,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -3630,11 +3656,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-08-18</td>
+			<td>2023-09-13</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/earliestEpochOrLowestSeries-2023-08-18">http://rs.tdwg.org/dwc/terms/version/earliestEpochOrLowestSeries-2023-08-18</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/earliestEpochOrLowestSeries-2023-09-13">http://rs.tdwg.org/dwc/terms/version/earliestEpochOrLowestSeries-2023-09-13</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3660,6 +3686,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -3676,11 +3706,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-08-18</td>
+			<td>2023-09-13</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/earliestEraOrLowestErathem-2023-08-18">http://rs.tdwg.org/dwc/terms/version/earliestEraOrLowestErathem-2023-08-18</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/earliestEraOrLowestErathem-2023-09-13">http://rs.tdwg.org/dwc/terms/version/earliestEraOrLowestErathem-2023-09-13</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3705,6 +3735,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -3721,11 +3755,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-08-18</td>
+			<td>2023-09-13</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/earliestGeochronologicalEra-2023-08-18">http://rs.tdwg.org/dwc/iri/version/earliestGeochronologicalEra-2023-08-18</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/earliestGeochronologicalEra-2023-09-13">http://rs.tdwg.org/dwc/iri/version/earliestGeochronologicalEra-2023-09-13</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3740,8 +3774,16 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Recommended best practice is to use an IRI from a controlled vocabulary. A "convenience property" that replaces Darwin Core literal-value terms related to geological context. See Section 2.7.6 of the Darwin Core RDF Guide for details.</td>
 		</tr>
 		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -3759,11 +3801,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-08-18</td>
+			<td>2023-09-13</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/earliestPeriodOrLowestSystem-2023-08-18">http://rs.tdwg.org/dwc/terms/version/earliestPeriodOrLowestSystem-2023-08-18</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/earliestPeriodOrLowestSystem-2023-09-13">http://rs.tdwg.org/dwc/terms/version/earliestPeriodOrLowestSystem-2023-09-13</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3788,6 +3830,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -5665,11 +5711,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-08-18</td>
+			<td>2023-09-13</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/formation-2023-08-18">http://rs.tdwg.org/dwc/terms/version/formation-2023-08-18</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/formation-2023-09-13">http://rs.tdwg.org/dwc/terms/version/formation-2023-09-13</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -5694,6 +5740,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -6611,11 +6661,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-08-18</td>
+			<td>2023-09-13</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/group-2023-08-18">http://rs.tdwg.org/dwc/terms/version/group-2023-08-18</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/group-2023-09-13">http://rs.tdwg.org/dwc/terms/version/group-2023-09-13</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -6639,6 +6689,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -7110,11 +7164,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-08-18</td>
+			<td>2023-09-13</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/highestBiostratigraphicZone-2023-08-18">http://rs.tdwg.org/dwc/terms/version/highestBiostratigraphicZone-2023-08-18</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/highestBiostratigraphicZone-2023-09-13">http://rs.tdwg.org/dwc/terms/version/highestBiostratigraphicZone-2023-09-13</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -7135,6 +7189,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -8540,11 +8598,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-08-18</td>
+			<td>2023-09-13</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/latestAgeOrHighestStage-2023-08-18">http://rs.tdwg.org/dwc/terms/version/latestAgeOrHighestStage-2023-08-18</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/latestAgeOrHighestStage-2023-09-13">http://rs.tdwg.org/dwc/terms/version/latestAgeOrHighestStage-2023-09-13</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8569,6 +8627,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -8632,11 +8694,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-08-18</td>
+			<td>2023-09-13</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/latestEonOrHighestEonothem-2023-08-18">http://rs.tdwg.org/dwc/terms/version/latestEonOrHighestEonothem-2023-08-18</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/latestEonOrHighestEonothem-2023-09-13">http://rs.tdwg.org/dwc/terms/version/latestEonOrHighestEonothem-2023-09-13</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8661,6 +8723,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -8677,11 +8743,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-08-18</td>
+			<td>2023-09-13</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/latestEpochOrHighestSeries-2023-08-18">http://rs.tdwg.org/dwc/terms/version/latestEpochOrHighestSeries-2023-08-18</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/latestEpochOrHighestSeries-2023-09-13">http://rs.tdwg.org/dwc/terms/version/latestEpochOrHighestSeries-2023-09-13</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8707,6 +8773,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -8723,11 +8793,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-08-18</td>
+			<td>2023-09-13</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/latestEraOrHighestErathem-2023-08-18">http://rs.tdwg.org/dwc/terms/version/latestEraOrHighestErathem-2023-08-18</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/latestEraOrHighestErathem-2023-09-13">http://rs.tdwg.org/dwc/terms/version/latestEraOrHighestErathem-2023-09-13</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8752,6 +8822,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -8768,11 +8842,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-08-18</td>
+			<td>2023-09-13</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/latestGeochronologicalEra-2023-08-18">http://rs.tdwg.org/dwc/iri/version/latestGeochronologicalEra-2023-08-18</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/latestGeochronologicalEra-2023-09-13">http://rs.tdwg.org/dwc/iri/version/latestGeochronologicalEra-2023-09-13</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8787,8 +8861,16 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Recommended best practice is to use an IRI from a controlled vocabulary. A "convenience property" that replaces Darwin Core literal-value terms related to geological context. See Section 2.7.6 of the Darwin Core RDF Guide for details.</td>
 		</tr>
 		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -8806,11 +8888,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-08-18</td>
+			<td>2023-09-13</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/latestPeriodOrHighestSystem-2023-08-18">http://rs.tdwg.org/dwc/terms/version/latestPeriodOrHighestSystem-2023-08-18</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/latestPeriodOrHighestSystem-2023-09-13">http://rs.tdwg.org/dwc/terms/version/latestPeriodOrHighestSystem-2023-09-13</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8835,6 +8917,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -9001,11 +9087,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-08-18</td>
+			<td>2023-09-13</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/lithostratigraphicTerms-2023-08-18">http://rs.tdwg.org/dwc/terms/version/lithostratigraphicTerms-2023-08-18</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/lithostratigraphicTerms-2023-09-13">http://rs.tdwg.org/dwc/terms/version/lithostratigraphicTerms-2023-09-13</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -9021,11 +9107,15 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
+			<td>DataSets/DataSet/Units/Unit/Gathering/Stratigraphy/LithostratigraphicTerms</td>
 		</tr>
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -9397,11 +9487,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-08-18</td>
+			<td>2023-09-13</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/lowestBiostratigraphicZone-2023-08-18">http://rs.tdwg.org/dwc/terms/version/lowestBiostratigraphicZone-2023-08-18</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/lowestBiostratigraphicZone-2023-09-13">http://rs.tdwg.org/dwc/terms/version/lowestBiostratigraphicZone-2023-09-13</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -9422,6 +9512,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -9535,11 +9629,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-08-18</td>
+			<td>2023-09-13</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/MaterialEntity-2023-08-18">http://rs.tdwg.org/dwc/terms/version/MaterialEntity-2023-08-18</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/MaterialEntity-2023-09-13">http://rs.tdwg.org/dwc/terms/version/MaterialEntity-2023-09-13</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -9579,6 +9673,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Type</td>
 			<td>Class</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -9595,11 +9693,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-08-18</td>
+			<td>2023-09-13</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/materialEntityID-2023-08-18">http://rs.tdwg.org/dwc/terms/version/materialEntityID-2023-08-18</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/materialEntityID-2023-09-13">http://rs.tdwg.org/dwc/terms/version/materialEntityID-2023-09-13</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -9625,6 +9723,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -9641,11 +9743,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-08-18</td>
+			<td>2023-09-13</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/materialEntityRemarks-2023-08-18">http://rs.tdwg.org/dwc/terms/version/materialEntityRemarks-2023-08-18</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/materialEntityRemarks-2023-09-13">http://rs.tdwg.org/dwc/terms/version/materialEntityRemarks-2023-09-13</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -9670,6 +9772,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -9686,11 +9792,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-08-18</td>
+			<td>2023-09-13</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/MaterialSample-2023-08-18">http://rs.tdwg.org/dwc/terms/version/MaterialSample-2023-08-18</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/MaterialSample-2023-09-13">http://rs.tdwg.org/dwc/terms/version/MaterialSample-2023-09-13</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -9724,6 +9830,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2014-10-26_15">http://rs.tdwg.org/decisions/decision-2014-10-26_15</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -10256,11 +10366,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-08-18</td>
+			<td>2023-09-13</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/MeasurementOrFact-2023-08-18">http://rs.tdwg.org/dwc/terms/version/MeasurementOrFact-2023-08-18</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/MeasurementOrFact-2023-09-13">http://rs.tdwg.org/dwc/terms/version/MeasurementOrFact-2023-09-13</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -10293,6 +10403,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2014-10-26_15">http://rs.tdwg.org/decisions/decision-2014-10-26_15</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -10645,11 +10759,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-08-18</td>
+			<td>2023-09-13</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/member-2023-08-18">http://rs.tdwg.org/dwc/terms/version/member-2023-08-18</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/member-2023-09-13">http://rs.tdwg.org/dwc/terms/version/member-2023-09-13</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -10673,6 +10787,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -13133,11 +13251,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-08-18</td>
+			<td>2023-09-13</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/preparations-2023-08-18">http://rs.tdwg.org/dwc/terms/version/preparations-2023-08-18</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/preparations-2023-09-13">http://rs.tdwg.org/dwc/terms/version/preparations-2023-09-13</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -13177,6 +13295,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2019-12-01_19">http://rs.tdwg.org/decisions/decision-2019-12-01_19</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -13622,7 +13744,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-08-18</td>
+			<td>2023-09-13</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
@@ -13658,6 +13780,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2011-10-16_7">http://rs.tdwg.org/decisions/decision-2011-10-16_7</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -14193,11 +14319,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-08-18</td>
+			<td>2023-09-13</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/ResourceRelationship-2023-08-18">http://rs.tdwg.org/dwc/terms/version/ResourceRelationship-2023-08-18</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/ResourceRelationship-2023-09-13">http://rs.tdwg.org/dwc/terms/version/ResourceRelationship-2023-09-13</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -14230,6 +14356,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2014-10-26_15">http://rs.tdwg.org/decisions/decision-2014-10-26_15</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -17242,11 +17372,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-08-18</td>
+			<td>2023-09-13</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/verbatimLabel-2023-08-18">http://rs.tdwg.org/dwc/terms/version/verbatimLabel-2023-08-18</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/verbatimLabel-2023-09-13">http://rs.tdwg.org/dwc/terms/version/verbatimLabel-2023-09-13</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -17271,6 +17401,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2023-06-28_40">http://rs.tdwg.org/decisions/decision-2023-06-28_40</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -17764,11 +17898,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-08-21</td>
+			<td>2023-09-13</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/vitality-2023-08-21">http://rs.tdwg.org/dwc/terms/version/vitality-2023-08-21</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/vitality-2023-09-13">http://rs.tdwg.org/dwc/terms/version/vitality-2023-09-13</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -17804,6 +17938,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2023-06-28_40">http://rs.tdwg.org/decisions/decision-2023-06-28_40</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -17820,11 +17958,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-08-21</td>
+			<td>2023-09-13</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/vitality-2023-08-21">http://rs.tdwg.org/dwc/iri/version/vitality-2023-08-21</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/vitality-2023-09-13">http://rs.tdwg.org/dwc/iri/version/vitality-2023-09-13</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -17849,6 +17987,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2023-06-28_40">http://rs.tdwg.org/decisions/decision-2023-06-28_40</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
 		</tr>
 	</tbody>
 </table>
