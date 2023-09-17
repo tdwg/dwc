@@ -1,37 +1,36 @@
-# Darwin Core XML guide
+# {document_title}
 
 Title
-: Darwin Core XML guide
+: {document_title}
 
 Date version issued
-: 2023-09-13
+: {ratification_date}
 
 Date created
-: 2009-02-12
+: {created_date}
 
 Part of TDWG Standard
-: <http://www.tdwg.org/standards/450>
+: <{standard_iri}>
 
 This version
-: <http://rs.tdwg.org/dwc/terms/guides/xml/2023-09-13>
+: <{current_iri}{ratification_date}>
 
 Latest version
-: <http://rs.tdwg.org/dwc/terms/guides/xml/>
+: <{current_iri}>
 
-Previous version
-: <http://rs.tdwg.org/dwc/terms/guides/xml/2021-07-15>
+{previous_version_slot}
 
 Abstract
-: Guidelines for the implementation of Darwin Core in XML.
+: {abstract}
 
 Contributors
-: [John Wieczorek](https://orcid.org/0000-0003-1144-0290) ([VertNet](http://www.wikidata.org/entity/Q98382028)), [Markus Döring](https://orcid.org/0000-0001-7757-1889) ([Global Biodiversity Information Facility](http://www.wikidata.org/entity/Q1531570)), [Renato De Giovanni](https://orcid.org/0000-0002-7104-7266) ([Centro de Referência em Informação Ambiental](http://www.wikidata.org/entity/Q29168927)), [Tim Robertson](https://orcid.org/0000-0001-6215-3617) ([Global Biodiversity Information Facility](http://www.wikidata.org/entity/Q1531570)), [Dave Vieglais](https://orcid.org/0000-0002-6513-4996) ([KU Natural History Museum](http://www.wikidata.org/entity/Q1111807)), [Gail Kampmeier](https://orcid.org/0000-0002-5178-4170) ([Illinois Natural History Survey](http://www.wikidata.org/entity/Q5999587))
+: {contributors}
 
 Creator
-: Darwin Core Task Group
+: {creator}
 
 Bibliographic citation
-: Darwin Core Task Group. 2023. Darwin Core XML guide. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/terms/guides/xml/2023-09-13>
+: {creator}. {year}. {document_title}. {publisher}. <{current_iri}{ratification_date}>
 
 ## 1 Introduction
 
