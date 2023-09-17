@@ -9,7 +9,7 @@ documentTitle: Darwin Core text guide
 abstract: Guidelines for implementing Darwin Core in Text files.
 
 # This value is generally the name of the task group that created the document.
-creator: Darwin Core Task Group
+creator: Darwin Core Maintenance Group
 
 # Current (2023-08-27) practice is to publish documents as Markdown files in a TDWG GitHub repository.
 # These Markdown documents are then converted to HTML by GitHub Pages. To match the TDWG theme, the 
