@@ -9,10 +9,10 @@ import os
 
 githubBaseUri = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/'
 
-config_file_path = 'process/document_metadata_processing/dwc_doc_list/'
+config_file_path = 'process/document_metadata_processing/dwc_terms_guides_text/'
 document_configuration_yaml_file = 'document_configuration.yaml'
 
-path_of_doc_relative_to_build_dir = '../docs/list/'
+path_of_doc_relative_to_build_dir = '../docs/text/'
 
 # Load the document configuration YAML file from its GitHub URL
 document_configuration_yaml_url = githubBaseUri + config_file_path + document_configuration_yaml_file
