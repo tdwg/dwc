@@ -1,18 +1,58 @@
 # Script to make the current document be the previous document
+# This program is released under a GNU General Public License v3.0 http://www.gnu.org/licenses/gpl-3.0
+# Author: Steve Baskauf
 
-# This script should be run only after the script updating the machine-readable metadata has been run.
+script_version = '0.1.0'
+version_modified = '2023-09-17'
 
-import requests   # best library to manage HTTP transactions
+# NOTE: This script should be run only after the script updating the machine-readable metadata has been run.
+# It must be run before the script that generates the new document version.
+
+import requests
 import pandas as pd
 import yaml
 import os
+import sys
 
-githubBaseUri = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/'
+# -----------------
+# Command line arguments
+# -----------------
 
-config_file_path = 'process/document_metadata_processing/dwc_terms_guides_text/'
+arg_vals = sys.argv[1:]
+opts = [opt for opt in arg_vals if opt.startswith('-')]
+args = [arg for arg in arg_vals if not arg.startswith('-')]
+
+# Name of the last part of the URL of the doc
+if '--slug' in opts:
+    document_slug = args[opts.index('--slug')]
+else:
+    print('Must specify URL slug for document using --slug option')
+    exit()
+
+# Used as the directory name
+if '--dir' in opts:
+    directory_name = args[opts.index('--dir')]
+else:
+    print('Must specify name of directory containing template and configs using --dir option')
+    exit()
+
+# "master" for production, something else for development
+if '--branch' in opts:
+    github_branch = args[opts.index('--branch')]
+else:
+    github_branch = 'master'
+
+
+# -----------------
+# Configuration section
+# -----------------
+
+githubBaseUri = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/' + github_branch + '/'
+
+config_file_path = 'process/document_metadata_processing/' + directory_name + '/'
 document_configuration_yaml_file = 'document_configuration.yaml'
 
-path_of_doc_relative_to_build_dir = '../docs/text/'
+path_of_doc_relative_to_build_dir = '../docs/' + document_slug + '/'
 
 # Load the document configuration YAML file from its GitHub URL
 document_configuration_yaml_url = githubBaseUri + config_file_path + document_configuration_yaml_file

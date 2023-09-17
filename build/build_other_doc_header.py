@@ -1,27 +1,49 @@
-# Script to build Markdown pages that provide term metadata for complex vocabularies
-# Steve Baskauf 2020-06-28 CC0
-# Modified for use with Humboldt Extension 2022-05-29
-# This script merges static Markdown header and footer documents with term information tables (in Markdown) generated from data in the rs.tdwg.org repo from the TDWG Github site
+# Script to insert header metadata into a document template
+# This program is released under a GNU General Public License v3.0 http://www.gnu.org/licenses/gpl-3.0
+# Author: Steve Baskauf
 
-import re
-import requests   # best library to manage HTTP transactions
-import csv        # library to read/write/parse CSV files
-import json       # library to convert JSON to Python data structures
+script_version = '0.1.0'
+version_modified = '2023-09-17'
+
+# NOTE: This script should be run after the script that moves the previous document to a version.
+
+import requests
 import pandas as pd
 import yaml
+import sys
+
+# -----------------
+# Command line arguments
+# -----------------
+
+arg_vals = sys.argv[1:]
+opts = [opt for opt in arg_vals if opt.startswith('-')]
+args = [arg for arg in arg_vals if not arg.startswith('-')]
+
+# Name of the last part of the URL of the doc
+if '--slug' in opts:
+    document_slug = args[opts.index('--slug')]
+else:
+    print('Must specify URL slug for document using --slug option')
+    exit()
+
+# Used as the directory name
+if '--dir' in opts:
+    directory_name = args[opts.index('--dir')]
+else:
+    print('Must specify name of directory containing template and configs using --dir option')
+    exit()
+
+# "master" for production, something else for development
+if '--branch' in opts:
+    github_branch = args[opts.index('--branch')]
+else:
+    github_branch = 'master'
+
 
 # -----------------
 # Configuration section
 # -----------------
-
-# Name of the last part of the URL of the doc
-document_slug = 'text'
-
-# Used as the directory name
-directory_name = 'dwc_terms_guides_text'
-
-# "master" for production, something else for development
-github_branch = 'master'
 
 # This is the base URL for raw files from the branch of the repo that has been pushed to GitHub
 github_base_url = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/' + github_branch + '/'
