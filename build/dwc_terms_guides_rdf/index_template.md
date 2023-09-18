@@ -1,37 +1,36 @@
-# Darwin Core RDF guide
+# {document_title}
 
 Title
-: Darwin Core RDF guide
+: {document_title}
 
 Date version issued
-: 2021-07-15
+: {ratification_date}
 
 Date created
-: 2015-03-27
+: {created_date}
 
 Part of TDWG Standard
-: <http://www.tdwg.org/standards/450>
+: <{standard_iri}>
 
 This version
-: <http://rs.tdwg.org/dwc/terms/guides/rdf/2021-07-15>
+: <{current_iri}{ratification_date}>
 
 Latest version
-: <http://rs.tdwg.org/dwc/terms/guides/rdf/>
+: <{current_iri}>
 
-Previous version
-: <http://rs.tdwg.org/dwc/terms/guides/rdf/2016-04-25>
+{previous_version_slot}
 
 Abstract
-: This guide is intended to facilitate the use of Darwin Core terms in the Resource Description Framework (RDF). It explains basic features of RDF and provides details of how to expose data in the form of RDF using Darwin Core terms and terms from other key vocabularies. It defines terms in the namespace http://rs.tdwg.org/dwc/iri/ which are intended for use exclusively with non-literal objects.
+: {abstract}
 
 Contributors
-: [Steve Baskauf](https://orcid.org/0000-0003-4365-3135) ([Vanderbilt University Department of Biological Sciences](http://www.wikidata.org/entity/Q78041310)), [John Wieczorek](https://orcid.org/0000-0003-1144-0290) ([VertNet](http://www.wikidata.org/entity/Q98382028)), [John Deck](https://orcid.org/0000-0002-5905-1617) ([Genomic Biodiversity Working Group](http://www.wikidata.org/entity/Q98382041)), [Campbell Webb](https://orcid.org/0000-0003-1031-3249) ([TDWG RDF/OWL Task Group](http://www.wikidata.org/entity/Q4914768)), [Paul J. Morris](http://purl.oclc.org/net/edu.harvard.huh/guid/uuid/5e51de22-d841-4c47-b0c4-d5ad0bd03035) ([Harvard University Herbaria/Museum of Comparative Zoölogy](http://www.wikidata.org/entity/Q51926077)), [Mark Schildhauer](https://orcid.org/0000-0003-0632-7576) ([National Center for Ecological Analysis and Synthesis](http://www.wikidata.org/entity/Q6971323))
+: {contributors}
 
 Creator
-: Darwin Core and RDF/OWL Task Groups
+: {creator}
 
 Bibliographic citation
-: Darwin Core and RDF/OWL Task Groups. 2021. Darwin Core RDF guide. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/terms/guides/rdf/2021-07-15>
+: {creator}. {year}. {document_title}. {publisher}. <{current_iri}{ratification_date}>
 
 ## 1 Introduction (non-normative)
 

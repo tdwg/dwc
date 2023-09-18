@@ -4,8 +4,10 @@
 
 import pandas as pd
 
+github_branch = 'master' # "master" for production, something else for development
+
 # This is the base URL for raw files from the branch of the repo that has been pushed to GitHub
-github_baseUri = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/'
+github_baseUri = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/' + github_branch + '/'
 
 # This is a Python list of the database names of the term version lists to be included in the document.
 #term_lists = ['iri']

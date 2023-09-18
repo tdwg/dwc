@@ -1,14 +1,11 @@
 group,iri,type,thesaurus,description,comments,examples,required
-Occurrence,http://rs.tdwg.org/dwc/terms/occurrenceID,,,,,,
 MeasurementOrFact,http://rs.tdwg.org/dwc/terms/measurementID,,,,,,
-MeasurementOrFact,http://rs.tdwg.org/dwc/terms/measurementType,,,,,,
-MeasurementOrFact,http://rs.tdwg.org/dwc/iri/measurementType,uri,,,,,
+MeasurementOrFact,http://rs.tdwg.org/dwc/terms/parentMeasurementID,,,,,,
+MeasurementOrFact,http://rs.tdwg.org/dwc/terms/measurementType,,,,,,true
 MeasurementOrFact,http://rs.tdwg.org/dwc/terms/measurementValue,,,,,,
-MeasurementOrFact,http://rs.tdwg.org/dwc/iri/measurementValue,uri,,,,,
 MeasurementOrFact,http://rs.tdwg.org/dwc/terms/measurementAccuracy,,,,,,
 MeasurementOrFact,http://rs.tdwg.org/dwc/terms/measurementUnit,,,,,,
-MeasurementOrFact,http://rs.tdwg.org/dwc/iri/measurementUnit,uri,,,,,
-MeasurementOrFact,http://rs.tdwg.org/dwc/terms/measurementDeterminedDate,,,,,,
 MeasurementOrFact,http://rs.tdwg.org/dwc/terms/measurementDeterminedBy,,,,,,
+MeasurementOrFact,http://rs.tdwg.org/dwc/terms/measurementDeterminedDate,,,,,,
 MeasurementOrFact,http://rs.tdwg.org/dwc/terms/measurementMethod,,,,,,
 MeasurementOrFact,http://rs.tdwg.org/dwc/terms/measurementRemarks,,,,,,

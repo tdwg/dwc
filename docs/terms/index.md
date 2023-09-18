@@ -6,6 +6,8 @@ This document is intended to be an easy-to-read reference of the currently (as o
 
 **Need help?** Read more about how to use Darwin Core in the [Darwin Core Questions & Answers site](https://github.com/tdwg/dwc-qa/blob/master/README.md). Still have questions? Submit a new issue (question/problem) to the [dwc-qa issues page in GitHub](https://github.com/tdwg/dwc-qa/issues), or use the [form](https://tinyurl.com/darwin-qa). See the bottom of this document for [how to cite Darwin Core](https://dwc.tdwg.org/terms/#cite-darwin-core)."
 
+**Want to contribute?** For information about how to contribute to the Darwin Core Standard, including how to propose changes, see the [Guidelines for contributing](https://github.com/tdwg/dwc/blob/master/.github/CONTRIBUTING.md).
+
 This page is not part of the standard, but combines the normative term names and definitions with the non-normative comments and examples that are meant to help people to use the terms consistently. Definitions, comments, and examples may include namespace abbreviations (e.g., "dwc:"). These are included to show that the meaning for the word it is attached to very specifically means the term as defined in that namespace. Thus, dwc:Event means Event as defined by Darwin Core at https://dwc.tdwg.org/terms/#event. Capitalized terms that follow a namespace abbreviation, such as dwc:Occurrence, are Darwin Core class terms, which are a special category of terms used to group sets of property terms (terms that being with lower case names that follow the namespace abbreviation, e.g., dwc:eventID) for convenience. Comprehensive metadata for current and obsolete terms in human readable form are found in the document [List of Darwin Core terms](../list/). 
 
 Additional [files with just the current term names](https://github.com/tdwg/dwc/tree/master/dist) and a [file with the full term history](https://github.com/tdwg/dwc/blob/master/vocabulary/term_versions.csv) can be found in the [Darwin Core repository](https://github.com/tdwg/dwc). 
@@ -138,7 +140,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://purl.org/dc/terms/references">http://purl.org/dc/terms/references</a></td></tr>
     <tr><td>Definition</td><td>A related resource that is referenced, cited, or otherwise pointed to by the described resource.</td></tr>
     <tr><td>Comments</td><td>From Dublin Core, "This property is intended to be used with non-literal values. This property is an inverse property of Is Referenced By." The intended usage of this term in Darwin Core is to point to the definitive source representation of the resource (e.g.,Taxon, Occurrence, Event in Darwin Core), if one is available. Note that the intended usage of dcterms:bibliographicCitation in Darwin Core, by contrast, is to provide the preferred way to cite the resource itself.</td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="http://arctos.database.museum/guid/MVZ:Mamm:165861">http://arctos.database.museum/guid/MVZ:Mamm:165861</a></code> (MaterialSample example)</li><li class="list-group-item"><code><a href="https://www.catalogueoflife.org/data/taxon/32664">https://www.catalogueoflife.org/data/taxon/32664</a></code> (Taxon example)</li></ul></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="http://arctos.database.museum/guid/MVZ:Mamm:165861">http://arctos.database.museum/guid/MVZ:Mamm:165861</a></code> (MaterialEntity example)</li><li class="list-group-item"><code><a href="https://www.catalogueoflife.org/data/taxon/32664">https://www.catalogueoflife.org/data/taxon/32664</a></code> (Taxon example)</li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -242,7 +244,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/basisOfRecord">http://rs.tdwg.org/dwc/terms/basisOfRecord</a></td></tr>
     <tr><td>Definition</td><td>The specific nature of the data record.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary such as the set of local names of the identifiers for classes in Darwin Core.</td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>PreservedSpecimen</code></li><li class="list-group-item"><code>FossilSpecimen</code></li><li class="list-group-item"><code>LivingSpecimen</code></li><li class="list-group-item"><code>MaterialSample</code></li><li class="list-group-item"><code>Event</code></li><li class="list-group-item"><code>HumanObservation</code></li><li class="list-group-item"><code>MachineObservation</code></li><li class="list-group-item"><code>Taxon</code></li><li class="list-group-item"><code>Occurrence</code></li><li class="list-group-item"><code>MaterialCitation</code></li></ul></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>MaterialEntity</code></li><li class="list-group-item"><code>PreservedSpecimen</code></li><li class="list-group-item"><code>FossilSpecimen</code></li><li class="list-group-item"><code>LivingSpecimen</code></li><li class="list-group-item"><code>MaterialSample</code></li><li class="list-group-item"><code>Event</code></li><li class="list-group-item"><code>HumanObservation</code></li><li class="list-group-item"><code>MachineObservation</code></li><li class="list-group-item"><code>Taxon</code></li><li class="list-group-item"><code>Occurrence</code></li><li class="list-group-item"><code>MaterialCitation</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -308,12 +310,9 @@ This category contains terms that are generic in that they might apply to any ty
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:pathway">pathway</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:georeferenceVerificationStatus">georeferenceVerificationStatus</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:occurrenceStatus">occurrenceStatus</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:preparations">preparations</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:disposition">disposition</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:associatedMedia">associatedMedia</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:associatedOccurrences">associatedOccurrences</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:associatedReferences">associatedReferences</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:associatedSequences">associatedSequences</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:associatedTaxa">associatedTaxa</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:otherCatalogNumbers">otherCatalogNumbers</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:occurrenceRemarks">occurrenceRemarks</a>
@@ -507,7 +506,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">vitality</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/vitality">http://rs.tdwg.org/dwc/terms/vitality</a></td></tr>
     <tr><td>Definition</td><td>An indication of whether a dwc:Organism was alive or dead at the time of collection or observation.</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. Intended to be used with records having a dwc:basisOfRecord of <code>PreservedSpecimen</code>, <code>MaterialSample</code>, or <code>HumanObservation</code>. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. Intended to be used with records having a dwc:basisOfRecord of <code>PreservedSpecimen</code>, <code>MaterialEntity</code>, <code>MaterialSample</code>, or <code>HumanObservation</code>. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>alive</code></li><li class="list-group-item"><code>dead</code></li><li class="list-group-item"><code>mixedLot</code></li><li class="list-group-item"><code>uncertain</code></li><li class="list-group-item"><code>notAssessed</code></li></ul></td></tr>
   </tbody>
 </table>
@@ -577,32 +576,6 @@ This category contains terms that are generic in that they might apply to any ty
   </tbody>
 </table>
 <p class="invisible">
-  <span id="dwc:preparations"></span>
-    <span id="preparations"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">preparations</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/preparations">http://rs.tdwg.org/dwc/terms/preparations</a></td></tr>
-    <tr><td>Definition</td><td>A list (concatenated and separated) of preparations and preservation methods for a specimen.</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>fossil</code></li><li class="list-group-item"><code>cast</code></li><li class="list-group-item"><code>photograph</code></li><li class="list-group-item"><code>DNA extract</code></li><li class="list-group-item"><code>skin | skull | skeleton</code></li><li class="list-group-item"><code>whole animal (ETOH) | tissue (EDTA)</code></li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:disposition"></span>
-    <span id="disposition"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">disposition</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/disposition">http://rs.tdwg.org/dwc/terms/disposition</a></td></tr>
-    <tr><td>Definition</td><td>The current state of a specimen with respect to the collection identified in dwc:collectionCode or dwc:collectionID.</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>in collection</code></li><li class="list-group-item"><code>missing</code></li><li class="list-group-item"><code>voucher elsewhere</code></li><li class="list-group-item"><code>duplicates elsewhere</code></li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
   <span id="dwc:associatedMedia"></span>
     <span id="associatedMedia"></span>
   </p>
@@ -639,19 +612,6 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Definition</td><td>A list (concatenated and separated) of identifiers (publication, bibliographic reference, global unique identifier, URI) of literature associated with the dwc:Occurrence.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>). Note that the dwc:ResourceRelationship class is an alternative means of representing associations, and with more detail. Note also that the intended usage of the term dcterms:references in Darwin Core when applied to a dwc:Occurrence is to point to the definitive source representation of that dwc:Occurrence if one is available. Note also that the intended usage of dcterms:bibliographicCitation in Darwin Core when applied to a dwc:Occurrence is to provide the preferred way to cite the dwc:Occurrence itself.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="http://www.sciencemag.org/cgi/content/abstract/322/5899/261">http://www.sciencemag.org/cgi/content/abstract/322/5899/261</a></code></li><li class="list-group-item"><code>Christopher J. Conroy, Jennifer L. Neuwald. 2008. Phylogeographic study of the California vole, Microtus californicus Journal of Mammalogy, 89(3):755-767.</code></li><li class="list-group-item"><code>Steven R. Hoofer and Ronald A. Van Den Bussche. 2001. Phylogenetic Relationships of Plecotine Bats and Allies Based on Mitochondrial Ribosomal Sequences. Journal of Mammalogy 82(1):131-137. | Walker, Faith M., Jeffrey T. Foster, Kevin P. Drees, Carol L. Chambers. 2014. Spotted bat (Euderma maculatum) microsatellite discovery using illumina sequencing. Conservation Genetics Resources.</code></li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:associatedSequences"></span>
-    <span id="associatedSequences"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">associatedSequences</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/associatedSequences">http://rs.tdwg.org/dwc/terms/associatedSequences</a></td></tr>
-    <tr><td>Definition</td><td>A list (concatenated and separated) of identifiers (publication, global unique identifier, URI) of genetic sequence information associated with the dwc:Occurrence.</td></tr>
-    <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="http://www.ncbi.nlm.nih.gov/nuccore/U34853.1">http://www.ncbi.nlm.nih.gov/nuccore/U34853.1</a></code></li><li class="list-group-item"><code><a href="http://www.ncbi.nlm.nih.gov/nuccore/GU328060">http://www.ncbi.nlm.nih.gov/nuccore/GU328060</a> | <a href="http://www.ncbi.nlm.nih.gov/nuccore/AF326093">http://www.ncbi.nlm.nih.gov/nuccore/AF326093</a></code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -796,20 +756,120 @@ This category contains terms that are generic in that they might apply to any ty
 </table>
 
 
+## MaterialEntity
+
+<div class="my-4">
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:materialEntityID">materialEntityID</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:preparations">preparations</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:disposition">disposition</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimLabel">verbatimLabel</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:associatedSequences">associatedSequences</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:materialEntityRemarks">materialEntityRemarks</a>
+  </div>
+
+<table class="table">
+  <tbody>
+    <tr class="table-primary"><th colspan="2">MaterialEntity <span class="badge bg-primary float-end">Class</span></th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/MaterialEntity">http://rs.tdwg.org/dwc/terms/MaterialEntity</a></td></tr>
+    <tr><td>Definition</td><td>An entity that can be identified, exists for some period of time, and consists in whole or in part of physical matter while it exists.</td></tr>
+    <tr><td>Comments</td><td>The term is defined at the most general level to admit descriptions of any subtype of material entity within the scope of Darwin Core. In particular, any kind of material sample, preserved specimen, fossil, or exemplar from living collections is intended to be subsumed under this term.</td></tr>
+    <tr><td>Examples</td><td><code>an instance of a fossil</code>; <code>an instance of a herbarium sheet with its attached plant specimen</code>; <code>a particular part of the plant-derived material affixed to a herbarium sheet</code>; <code>an instance of a frozen tissue sample</code>; <code>a specific water sample</code>; <code>an instance of a meteorite fragment</code>; <code>a particular wolf in a zoo</code>; <code>a particular pack of wolves in the wild</code>; <code>an isolated molecule of DNA</code>; <code>a specific deep-frozen DNA sample</code>; <code>a particular field notebook</code>; <code>a particular paper page from a field notebook</code>; <code>an instance of a printed photograph</code></td></tr>
+  </tbody>
+</table>
+
+<p class="invisible">
+  <span id="dwc:materialEntityID"></span>
+    <span id="materialEntityID"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">materialEntityID</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/materialEntityID">http://rs.tdwg.org/dwc/terms/materialEntityID</a></td></tr>
+    <tr><td>Definition</td><td>An identifier for a particular instance of a MaterialEntity.</td></tr>
+    <tr><td>Comments</td><td>Values of dwc:materialEntityID are intended to uniquely and persistently identify a particular dwc:MaterialEntity within some context. Examples of context include a particular sample collection, an organization, or the worldwide scale. Recommended best practice is to use a persistent, globally unique identifier. The identifier is bound to a physical object (the dwc:MaterialEntity) as opposed to a particular digital record (representation) of that physical object.</td></tr>
+    <tr><td>Examples</td><td><code>06809dc5-f143-459a-be1a-6f03e63fc083</code></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:preparations"></span>
+    <span id="preparations"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">preparations</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/preparations">http://rs.tdwg.org/dwc/terms/preparations</a></td></tr>
+    <tr><td>Definition</td><td>A list (concatenated and separated) of preparations and preservation methods for a dwc:MaterialEntity.</td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>fossil</code></li><li class="list-group-item"><code>cast</code></li><li class="list-group-item"><code>photograph</code></li><li class="list-group-item"><code>DNA extract</code></li><li class="list-group-item"><code>skin | skull | skeleton</code></li><li class="list-group-item"><code>whole animal (ETOH) | tissue (EDTA)</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:disposition"></span>
+    <span id="disposition"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">disposition</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/disposition">http://rs.tdwg.org/dwc/terms/disposition</a></td></tr>
+    <tr><td>Definition</td><td>The current state of a dwc:MaterialEntity with respect to a collection.</td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>in collection</code></li><li class="list-group-item"><code>missing</code></li><li class="list-group-item"><code>on loan</code></li><li class="list-group-item"><code>used up</code></li><li class="list-group-item"><code>destroyed</code></li><li class="list-group-item"><code>deaccessioned</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:verbatimLabel"></span>
+    <span id="verbatimLabel"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">verbatimLabel</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimLabel">http://rs.tdwg.org/dwc/terms/verbatimLabel</a></td></tr>
+    <tr><td>Definition</td><td>The content of this term should include no embellishments, prefixes, headers or other additions made to the text. Abbreviations must not be expanded and supposed misspellings must not be corrected. Lines or breakpoints between blocks of text that could be verified by seeing the original labels or images of them may be used. Examples of material entities include preserved specimens, fossil specimens, and material samples. Best practice is to use UTF-8 for all characters. Best practice is to add comment “verbatimLabel derived from human transcription” in dwc:occurrenceRemarks.</td></tr>
+    <tr><td>Comments</td><td>Examples can be found at <a href="https://dwc.tdwg.org/examples/verbatimLabel">https://dwc.tdwg.org/examples/verbatimLabel</a>.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:associatedSequences"></span>
+    <span id="associatedSequences"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">associatedSequences</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/associatedSequences">http://rs.tdwg.org/dwc/terms/associatedSequences</a></td></tr>
+    <tr><td>Definition</td><td>A list (concatenated and separated) of identifiers (publication, global unique identifier, URI) of genetic sequence information associated with the dwc:MaterialEntity.</td></tr>
+    <tr><td>Comments</td><td></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="http://www.ncbi.nlm.nih.gov/nuccore/U34853.1">http://www.ncbi.nlm.nih.gov/nuccore/U34853.1</a></code></li><li class="list-group-item"><code><a href="http://www.ncbi.nlm.nih.gov/nuccore/GU328060">http://www.ncbi.nlm.nih.gov/nuccore/GU328060</a> | <a href="http://www.ncbi.nlm.nih.gov/nuccore/AF326093">http://www.ncbi.nlm.nih.gov/nuccore/AF326093</a></code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:materialEntityRemarks"></span>
+    <span id="materialEntityRemarks"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">materialEntityRemarks</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/materialEntityRemarks">http://rs.tdwg.org/dwc/terms/materialEntityRemarks</a></td></tr>
+    <tr><td>Definition</td><td>Comments or notes about the MaterialEntity instance.</td></tr>
+    <tr><td>Comments</td><td></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>found in association with charred remains</code></li><li class="list-group-item"><code>some original fragments missing</code></li></ul></td></tr>
+  </tbody>
+</table>
+
+
 ## MaterialSample
 
 <div class="my-4">
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:materialSampleID">materialSampleID</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimLabel">verbatimLabel</a>
   </div>
 
 <table class="table">
   <tbody>
     <tr class="table-primary"><th colspan="2">MaterialSample <span class="badge bg-primary float-end">Class</span></th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/MaterialSample">http://rs.tdwg.org/dwc/terms/MaterialSample</a></td></tr>
-    <tr><td>Definition</td><td>A physical result of a sampling (or subsampling) event. In biological collections, the material sample is typically collected, and either preserved or destructively processed.</td></tr>
+    <tr><td>Definition</td><td>A material entity that represents an entity of interest in whole or in part.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td>A whole organism preserved in a collection. A part of an organism isolated for some purpose. A soil sample. A marine microbial sample.</td></tr>
+    <tr><td>Examples</td><td><code>a whole organism preserved in a collection</code>; <code>a part of an organism isolated for some purpose</code>; <code>a soil sample</code>; <code>a marine microbial sample</code></td></tr>
   </tbody>
 </table>
 
@@ -824,19 +884,6 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Definition</td><td>An identifier for the dwc:MaterialSample (as opposed to a particular digital record of the dwc:MaterialSample). In the absence of a persistent global unique identifier, construct one from a combination of identifiers in the record that will most closely make the dwc:materialSampleID globally unique.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to use a persistent, globally unique identifier.</td></tr>
     <tr><td>Examples</td><td><code>06809dc5-f143-459a-be1a-6f03e63fc083</code></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:verbatimLabel"></span>
-    <span id="verbatimLabel"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">verbatimLabel</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimLabel">http://rs.tdwg.org/dwc/terms/verbatimLabel</a></td></tr>
-    <tr><td>Definition</td><td>A serialized encoding intended to represent the literal, i.e., character by character, textual content of a label affixed on, near, or explicitly associated with a material entity, free from interpretation, translation, or transliteration.</td></tr>
-    <tr><td>Comments</td><td>The content of this term should include no embellishments, prefixes, headers or other additions made to the text. Abbreviations must not be expanded and supposed misspellings must not be corrected. Lines or breakpoints between blocks of text that could be verified by seeing the original labels or images of them may be used. Examples of material entities include preserved specimens, fossil specimens, and material samples. Best practice is to use UTF-8 for all characters. Best practice is to add comment “verbatimLabel derived from human transcription” in dwc:occurrenceRemarks.</td></tr>
-    <tr><td>Examples</td><td>Examples can be found at <a href="https://dwc.tdwg.org/examples/verbatimLabel">https://dwc.tdwg.org/examples/verbatimLabel</a>.</td></tr>
   </tbody>
 </table>
 
@@ -1811,7 +1858,7 @@ This category contains terms that are generic in that they might apply to any ty
   <tbody>
     <tr class="table-secondary"><th colspan="2">earliestEonOrLowestEonothem</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/earliestEonOrLowestEonothem">http://rs.tdwg.org/dwc/terms/earliestEonOrLowestEonothem</a></td></tr>
-    <tr><td>Definition</td><td>The full name of the earliest possible geochronologic eon or lowest chrono-stratigraphic eonothem or the informal name ("Precambrian") attributable to the stratigraphic horizon from which the cataloged item was collected.</td></tr>
+    <tr><td>Definition</td><td>The full name of the earliest possible geochronologic eon or lowest chrono-stratigraphic eonothem or the informal name ("Precambrian") attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.</td></tr>
     <tr><td>Comments</td><td></td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Phanerozoic</code></li><li class="list-group-item"><code>Proterozoic</code></li></ul></td></tr>
   </tbody>
@@ -1824,7 +1871,7 @@ This category contains terms that are generic in that they might apply to any ty
   <tbody>
     <tr class="table-secondary"><th colspan="2">latestEonOrHighestEonothem</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/latestEonOrHighestEonothem">http://rs.tdwg.org/dwc/terms/latestEonOrHighestEonothem</a></td></tr>
-    <tr><td>Definition</td><td>The full name of the latest possible geochronologic eon or highest chrono-stratigraphic eonothem or the informal name ("Precambrian") attributable to the stratigraphic horizon from which the cataloged item was collected.</td></tr>
+    <tr><td>Definition</td><td>The full name of the latest possible geochronologic eon or highest chrono-stratigraphic eonothem or the informal name ("Precambrian") attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.</td></tr>
     <tr><td>Comments</td><td></td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Phanerozoic</code></li><li class="list-group-item"><code>Proterozoic</code></li></ul></td></tr>
   </tbody>
@@ -1837,7 +1884,7 @@ This category contains terms that are generic in that they might apply to any ty
   <tbody>
     <tr class="table-secondary"><th colspan="2">earliestEraOrLowestErathem</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/earliestEraOrLowestErathem">http://rs.tdwg.org/dwc/terms/earliestEraOrLowestErathem</a></td></tr>
-    <tr><td>Definition</td><td>The full name of the earliest possible geochronologic era or lowest chronostratigraphic erathem attributable to the stratigraphic horizon from which the cataloged item was collected.</td></tr>
+    <tr><td>Definition</td><td>The full name of the earliest possible geochronologic era or lowest chronostratigraphic erathem attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.</td></tr>
     <tr><td>Comments</td><td></td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Cenozoic</code></li><li class="list-group-item"><code>Mesozoic</code></li></ul></td></tr>
   </tbody>
@@ -1850,7 +1897,7 @@ This category contains terms that are generic in that they might apply to any ty
   <tbody>
     <tr class="table-secondary"><th colspan="2">latestEraOrHighestErathem</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/latestEraOrHighestErathem">http://rs.tdwg.org/dwc/terms/latestEraOrHighestErathem</a></td></tr>
-    <tr><td>Definition</td><td>The full name of the latest possible geochronologic era or highest chronostratigraphic erathem attributable to the stratigraphic horizon from which the cataloged item was collected.</td></tr>
+    <tr><td>Definition</td><td>The full name of the latest possible geochronologic era or highest chronostratigraphic erathem attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.</td></tr>
     <tr><td>Comments</td><td></td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Cenozoic</code></li><li class="list-group-item"><code>Mesozoic</code></li></ul></td></tr>
   </tbody>
@@ -1863,7 +1910,7 @@ This category contains terms that are generic in that they might apply to any ty
   <tbody>
     <tr class="table-secondary"><th colspan="2">earliestPeriodOrLowestSystem</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/earliestPeriodOrLowestSystem">http://rs.tdwg.org/dwc/terms/earliestPeriodOrLowestSystem</a></td></tr>
-    <tr><td>Definition</td><td>The full name of the earliest possible geochronologic period or lowest chronostratigraphic system attributable to the stratigraphic horizon from which the cataloged item was collected.</td></tr>
+    <tr><td>Definition</td><td>The full name of the earliest possible geochronologic period or lowest chronostratigraphic system attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.</td></tr>
     <tr><td>Comments</td><td></td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Neogene</code></li><li class="list-group-item"><code>Tertiary</code></li><li class="list-group-item"><code>Quaternary</code></li></ul></td></tr>
   </tbody>
@@ -1876,7 +1923,7 @@ This category contains terms that are generic in that they might apply to any ty
   <tbody>
     <tr class="table-secondary"><th colspan="2">latestPeriodOrHighestSystem</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/latestPeriodOrHighestSystem">http://rs.tdwg.org/dwc/terms/latestPeriodOrHighestSystem</a></td></tr>
-    <tr><td>Definition</td><td>The full name of the latest possible geochronologic period or highest chronostratigraphic system attributable to the stratigraphic horizon from which the cataloged item was collected.</td></tr>
+    <tr><td>Definition</td><td>The full name of the latest possible geochronologic period or highest chronostratigraphic system attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.</td></tr>
     <tr><td>Comments</td><td></td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Neogene</code></li><li class="list-group-item"><code>Tertiary</code></li><li class="list-group-item"><code>Quaternary</code></li></ul></td></tr>
   </tbody>
@@ -1889,7 +1936,7 @@ This category contains terms that are generic in that they might apply to any ty
   <tbody>
     <tr class="table-secondary"><th colspan="2">earliestEpochOrLowestSeries</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/earliestEpochOrLowestSeries">http://rs.tdwg.org/dwc/terms/earliestEpochOrLowestSeries</a></td></tr>
-    <tr><td>Definition</td><td>The full name of the earliest possible geochronologic epoch or lowest chronostratigraphic series attributable to the stratigraphic horizon from which the cataloged item was collected.</td></tr>
+    <tr><td>Definition</td><td>The full name of the earliest possible geochronologic epoch or lowest chronostratigraphic series attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.</td></tr>
     <tr><td>Comments</td><td></td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Holocene</code></li><li class="list-group-item"><code>Pleistocene</code></li><li class="list-group-item"><code>Ibexian Series</code></li></ul></td></tr>
   </tbody>
@@ -1902,7 +1949,7 @@ This category contains terms that are generic in that they might apply to any ty
   <tbody>
     <tr class="table-secondary"><th colspan="2">latestEpochOrHighestSeries</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/latestEpochOrHighestSeries">http://rs.tdwg.org/dwc/terms/latestEpochOrHighestSeries</a></td></tr>
-    <tr><td>Definition</td><td>The full name of the latest possible geochronologic epoch or highest chronostratigraphic series attributable to the stratigraphic horizon from which the cataloged item was collected.</td></tr>
+    <tr><td>Definition</td><td>The full name of the latest possible geochronologic epoch or highest chronostratigraphic series attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.</td></tr>
     <tr><td>Comments</td><td></td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Holocene</code></li><li class="list-group-item"><code>Pleistocene</code></li><li class="list-group-item"><code>Ibexian Series</code></li></ul></td></tr>
   </tbody>
@@ -1915,7 +1962,7 @@ This category contains terms that are generic in that they might apply to any ty
   <tbody>
     <tr class="table-secondary"><th colspan="2">earliestAgeOrLowestStage</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/earliestAgeOrLowestStage">http://rs.tdwg.org/dwc/terms/earliestAgeOrLowestStage</a></td></tr>
-    <tr><td>Definition</td><td>The full name of the earliest possible geochronologic age or lowest chronostratigraphic stage attributable to the stratigraphic horizon from which the cataloged item was collected.</td></tr>
+    <tr><td>Definition</td><td>The full name of the earliest possible geochronologic age or lowest chronostratigraphic stage attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.</td></tr>
     <tr><td>Comments</td><td></td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Atlantic</code></li><li class="list-group-item"><code>Boreal</code></li><li class="list-group-item"><code>Skullrockian</code></li></ul></td></tr>
   </tbody>
@@ -1928,7 +1975,7 @@ This category contains terms that are generic in that they might apply to any ty
   <tbody>
     <tr class="table-secondary"><th colspan="2">latestAgeOrHighestStage</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/latestAgeOrHighestStage">http://rs.tdwg.org/dwc/terms/latestAgeOrHighestStage</a></td></tr>
-    <tr><td>Definition</td><td>The full name of the latest possible geochronologic age or highest chronostratigraphic stage attributable to the stratigraphic horizon from which the cataloged item was collected.</td></tr>
+    <tr><td>Definition</td><td>The full name of the latest possible geochronologic age or highest chronostratigraphic stage attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.</td></tr>
     <tr><td>Comments</td><td></td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Atlantic</code></li><li class="list-group-item"><code>Boreal</code></li><li class="list-group-item"><code>Skullrockian</code></li></ul></td></tr>
   </tbody>
@@ -1941,7 +1988,7 @@ This category contains terms that are generic in that they might apply to any ty
   <tbody>
     <tr class="table-secondary"><th colspan="2">lowestBiostratigraphicZone</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/lowestBiostratigraphicZone">http://rs.tdwg.org/dwc/terms/lowestBiostratigraphicZone</a></td></tr>
-    <tr><td>Definition</td><td>The full name of the lowest possible geological biostratigraphic zone of the stratigraphic horizon from which the cataloged item was collected.</td></tr>
+    <tr><td>Definition</td><td>The full name of the lowest possible geological biostratigraphic zone of the stratigraphic horizon from which the dwc:MaterialEntity was collected.</td></tr>
     <tr><td>Comments</td><td></td></tr>
     <tr><td>Examples</td><td><code>Maastrichtian</code></td></tr>
   </tbody>
@@ -1954,7 +2001,7 @@ This category contains terms that are generic in that they might apply to any ty
   <tbody>
     <tr class="table-secondary"><th colspan="2">highestBiostratigraphicZone</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/highestBiostratigraphicZone">http://rs.tdwg.org/dwc/terms/highestBiostratigraphicZone</a></td></tr>
-    <tr><td>Definition</td><td>The full name of the highest possible geological biostratigraphic zone of the stratigraphic horizon from which the cataloged item was collected.</td></tr>
+    <tr><td>Definition</td><td>The full name of the highest possible geological biostratigraphic zone of the stratigraphic horizon from which the dwc:MaterialEntity was collected.</td></tr>
     <tr><td>Comments</td><td></td></tr>
     <tr><td>Examples</td><td><code>Blancan</code></td></tr>
   </tbody>
@@ -1967,7 +2014,7 @@ This category contains terms that are generic in that they might apply to any ty
   <tbody>
     <tr class="table-secondary"><th colspan="2">lithostratigraphicTerms</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/lithostratigraphicTerms">http://rs.tdwg.org/dwc/terms/lithostratigraphicTerms</a></td></tr>
-    <tr><td>Definition</td><td>The combination of all litho-stratigraphic names for the rock from which the cataloged item was collected.</td></tr>
+    <tr><td>Definition</td><td>The combination of all litho-stratigraphic names for the rock from which the dwc:MaterialEntity was collected.</td></tr>
     <tr><td>Comments</td><td></td></tr>
     <tr><td>Examples</td><td><code>Pleistocene-Weichselien</code></td></tr>
   </tbody>
@@ -1980,7 +2027,7 @@ This category contains terms that are generic in that they might apply to any ty
   <tbody>
     <tr class="table-secondary"><th colspan="2">group</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/group">http://rs.tdwg.org/dwc/terms/group</a></td></tr>
-    <tr><td>Definition</td><td>The full name of the lithostratigraphic group from which the cataloged item was collected.</td></tr>
+    <tr><td>Definition</td><td>The full name of the lithostratigraphic group from which the dwc:MaterialEntity was collected.</td></tr>
     <tr><td>Comments</td><td></td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Bathurst</code></li><li class="list-group-item"><code>Lower Wealden</code></li></ul></td></tr>
   </tbody>
@@ -1993,7 +2040,7 @@ This category contains terms that are generic in that they might apply to any ty
   <tbody>
     <tr class="table-secondary"><th colspan="2">formation</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/formation">http://rs.tdwg.org/dwc/terms/formation</a></td></tr>
-    <tr><td>Definition</td><td>The full name of the lithostratigraphic formation from which the cataloged item was collected.</td></tr>
+    <tr><td>Definition</td><td>The full name of the lithostratigraphic formation from which the dwc:MaterialEntity was collected.</td></tr>
     <tr><td>Comments</td><td></td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Notch Peak Formation</code></li><li class="list-group-item"><code>House Limestone</code></li><li class="list-group-item"><code>Fillmore Formation</code></li></ul></td></tr>
   </tbody>
@@ -2006,7 +2053,7 @@ This category contains terms that are generic in that they might apply to any ty
   <tbody>
     <tr class="table-secondary"><th colspan="2">member</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/member">http://rs.tdwg.org/dwc/terms/member</a></td></tr>
-    <tr><td>Definition</td><td>The full name of the lithostratigraphic member from which the cataloged item was collected.</td></tr>
+    <tr><td>Definition</td><td>The full name of the lithostratigraphic member from which the dwc:MaterialEntity was collected.</td></tr>
     <tr><td>Comments</td><td></td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Lava Dam Member</code></li><li class="list-group-item"><code>Hellnmaria Member</code></li></ul></td></tr>
   </tbody>
@@ -2019,7 +2066,7 @@ This category contains terms that are generic in that they might apply to any ty
   <tbody>
     <tr class="table-secondary"><th colspan="2">bed</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/bed">http://rs.tdwg.org/dwc/terms/bed</a></td></tr>
-    <tr><td>Definition</td><td>The full name of the lithostratigraphic bed from which the cataloged item was collected.</td></tr>
+    <tr><td>Definition</td><td>The full name of the lithostratigraphic bed from which the dwc:MaterialEntity was collected.</td></tr>
     <tr><td>Comments</td><td></td></tr>
     <tr><td>Examples</td><td><code>Harlem coal</code></td></tr>
   </tbody>
@@ -2780,8 +2827,8 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-primary"><th colspan="2">MeasurementOrFact <span class="badge bg-primary float-end">Class</span></th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/MeasurementOrFact">http://rs.tdwg.org/dwc/terms/MeasurementOrFact</a></td></tr>
     <tr><td>Definition</td><td>A measurement of or fact about an rdfs:Resource (<a href="http://www.w3.org/2000/01/rdf-schema#Resource">http://www.w3.org/2000/01/rdf-schema#Resource</a>).</td></tr>
-    <tr><td>Comments</td><td>Resources can be thought of as identifiable records or instances of classes and may include, but need not be limited to dwc:Occurrence, dwc:Organism, dwc:MaterialSample, dwc:Event, dcterms:Location, dwc:GeologicalContext, dwc:Identification, or dwc:Taxon.</td></tr>
-    <tr><td>Examples</td><td>The weight of an organism in grams. The number of placental scars. Surface water temperature in Celsius.</td></tr>
+    <tr><td>Comments</td><td>Resources can be thought of as identifiable records or instances of classes and may include, but need not be limited to instances of dwc:Occurrence, dwc:Organism, dwc:MaterialEntity, dwc:Event, dcterms:Location, dwc:GeologicalContext, dwc:Identification, or dwc:Taxon.</td></tr>
+    <tr><td>Examples</td><td><code>the weight of a dwc:Organism in grams</code>; <code>the number of placental scars</code>; <code>surface water temperature in Celsius</code></td></tr>
   </tbody>
 </table>
 
@@ -2935,8 +2982,8 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-primary"><th colspan="2">ResourceRelationship <span class="badge bg-primary float-end">Class</span></th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/ResourceRelationship">http://rs.tdwg.org/dwc/terms/ResourceRelationship</a></td></tr>
     <tr><td>Definition</td><td>A relationship of one rdfs:Resource (<a href="http://www.w3.org/2000/01/rdf-schema#Resource">http://www.w3.org/2000/01/rdf-schema#Resource</a>) to another.</td></tr>
-    <tr><td>Comments</td><td>Resources can be thought of as identifiable records or instances of classes and may include, but need not be limited to dwc:Occurrence, dwc:Organism, dwc:MaterialSample, dwc:Event, dcterms:Location, dwc:GeologicalContext, dwc:Identification, or dwc:Taxon.</td></tr>
-    <tr><td>Examples</td><td>An instance of an Organism is the mother of another instance of an Organism. A uniquely identified Occurrence represents the same Occurrence as another uniquely identified Occurrence. A MaterialSample is a subsample of another MaterialSample.</td></tr>
+    <tr><td>Comments</td><td>Resources can be thought of as identifiable records or instances of classes and may include, but need not be limited to instances of dwc:Occurrence, dwc:Organism, dwc:MaterialEntity, dwc:Event, dcterms:Location, dwc:GeologicalContext, dwc:Identification, or dwc:Taxon.</td></tr>
+    <tr><td>Examples</td><td><code>an instance of a dwc:Organism is the mother of another instance of a dwc:Organism</code>; <code>a uniquely identified dwc:Occurrence represents the same dwc:Occurrence as another uniquely identified dwc:Occurrence</code>; <code>a dwc:MaterialEntity is a subsample of another dwc:MaterialEntity</code></td></tr>
   </tbody>
 </table>
 
@@ -3256,7 +3303,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
   <tbody>
     <tr class="table-secondary"><th colspan="2">earliestGeochronologicalEra</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/earliestGeochronologicalEra">http://rs.tdwg.org/dwc/iri/earliestGeochronologicalEra</a></td></tr>
-    <tr><td>Definition</td><td>Use to link a dwc:GeologicalContext instance to chronostratigraphic time periods at the lowest possible level in a standardized hierarchy.   Use this property to point to the earliest possible geological time period from which the cataloged item was collected.</td></tr>
+    <tr><td>Definition</td><td>Use to link a dwc:GeologicalContext instance to chronostratigraphic time periods at the lowest possible level in a standardized hierarchy. Use this property to point to the earliest possible geological time period from which the dwc:MaterialEntity was collected.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to use an IRI from a controlled vocabulary. A "convenience property" that replaces Darwin Core literal-value terms related to geological context. See Section 2.7.6 of the Darwin Core RDF Guide for details.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
@@ -3460,7 +3507,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
   <tbody>
     <tr class="table-secondary"><th colspan="2">latestGeochronologicalEra</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/latestGeochronologicalEra">http://rs.tdwg.org/dwc/iri/latestGeochronologicalEra</a></td></tr>
-    <tr><td>Definition</td><td>Use to link a dwc:GeologicalContext instance to chronostratigraphic time periods at the lowest possible level in a standardized hierarchy.   Use this property to point to the latest possible geological time period from which the cataloged item was collected.</td></tr>
+    <tr><td>Definition</td><td>Use to link a dwc:GeologicalContext instance to chronostratigraphic time periods at the lowest possible level in a standardized hierarchy. Use this property to point to the latest possible geological time period from which the dwc:MaterialEntity was collected.</td></tr>
     <tr><td>Comments</td><td>Recommended best practice is to use an IRI from a controlled vocabulary. A "convenience property" that replaces Darwin Core literal-value terms related to geological context. See Section 2.7.6 of the Darwin Core RDF Guide for details.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
@@ -3713,7 +3760,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr class="table-secondary"><th colspan="2">vitality</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/vitality">http://rs.tdwg.org/dwc/iri/vitality</a></td></tr>
     <tr><td>Definition</td><td>An indication of whether a dwc:Organism was alive or dead at the time of collection or observation.</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. Intended to be used with records having a dwc:basisOfRecord of <code>PreservedSpecimen</code>, <code>MaterialSample</code>, or <code>HumanObservation</code>. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. Intended to be used with records having a dwc:basisOfRecord of <code>PreservedSpecimen</code>, <code>MaterialEntity</code>, <code>MaterialSample</code>, or <code>HumanObservation</code>. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>

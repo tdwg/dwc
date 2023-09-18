@@ -1,0 +1,41 @@
+- contributor_iri: https://orcid.org/0000-0003-4365-3135
+  contributor_literal: Steve Baskauf
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Vanderbilt University Department of Biological Sciences
+  affiliation_uri: http://www.wikidata.org/entity/Q78041310
+
+- contributor_iri: https://orcid.org/0000-0003-1144-0290
+  contributor_literal: John Wieczorek
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: VertNet
+  affiliation_uri: http://www.wikidata.org/entity/Q98382028
+
+- contributor_iri: https://orcid.org/0000-0002-5905-1617
+  contributor_literal: John Deck
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Genomic Biodiversity Working Group
+  affiliation_uri: http://www.wikidata.org/entity/Q98382041
+
+- contributor_iri: https://orcid.org/0000-0003-1031-3249
+  contributor_literal: Campbell Webb
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: TDWG RDF/OWL Task Group
+  affiliation_uri: http://www.wikidata.org/entity/Q4914768
+
+- contributor_iri: http://purl.oclc.org/net/edu.harvard.huh/guid/uuid/5e51de22-d841-4c47-b0c4-d5ad0bd03035
+  contributor_literal: Paul J. Morris
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Harvard University Herbaria/Museum of Comparative Zoölogy
+  affiliation_uri: http://www.wikidata.org/entity/Q51926077
+
+- contributor_iri: https://orcid.org/0000-0003-0632-7576
+  contributor_literal: Mark Schildhauer
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: National Center for Ecological Analysis and Synthesis
+  affiliation_uri: http://www.wikidata.org/entity/Q6971323

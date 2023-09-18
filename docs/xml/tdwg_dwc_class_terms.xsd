@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema 
-    version="2021-07-15" 
+    version="2023-09-14" 
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     targetNamespace="http://rs.tdwg.org/dwc/terms/"
     xmlns:chrono="http://rs.tdwg.org/chrono/terms/"
@@ -32,6 +32,17 @@
             <xs:choice maxOccurs="unbounded">
                 <xs:element ref="dwc:anyIdentifier"/>
                 <xs:element ref="dwc:anyOrganismTerm"/>
+                <xs:element ref="dwc:anyRecordLevelTerm"/>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+    
+    <!-- MATERIALSAMPLE domain -->
+    <xs:element name="MaterialEntity" substitutionGroup="dwc:anyClass">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element ref="dwc:anyIdentifier"/>
+                <xs:element ref="dwc:anyMaterialEntityTerm"/>
                 <xs:element ref="dwc:anyRecordLevelTerm"/>
             </xs:choice>
         </xs:complexType>
