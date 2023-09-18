@@ -773,7 +773,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/MaterialEntity">http://rs.tdwg.org/dwc/terms/MaterialEntity</a></td></tr>
     <tr><td>Definition</td><td>An entity that can be identified, exists for some period of time, and consists in whole or in part of physical matter while it exists.</td></tr>
     <tr><td>Comments</td><td>The term is defined at the most general level to admit descriptions of any subtype of material entity within the scope of Darwin Core. In particular, any kind of material sample, preserved specimen, fossil, or exemplar from living collections is intended to be subsumed under this term.</td></tr>
-    <tr><td>Examples</td><td><code>an instance of a fossil</code>; <code>an instance of a herbarium sheet with its attached plant specimen</code>; <code>a particular part of the plant-derived material affixed to a herbarium sheet</code>; <code>an instance of a frozen tissue sample</code>; <code>a specific water sample</code>; <code>an instance of a meteorite fragment</code>; <code>a particular wolf in a zoo</code>; <code>a particular pack of wolves in the wild</code>; <code>an isolated molecule of DNA</code>; <code>a specific deep-frozen DNA sample</code>; <code>a particular field notebook</code>; <code>a particular paper page from a field notebook</code>; <code>an instance of a printed photograph</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>an instance of a fossil</code></li><li class="list-group-item"><code>an instance of a herbarium sheet with its attached plant specimen</code></li><li class="list-group-item"><code>a particular part of the plant-derived material affixed to a herbarium sheet</code></li><li class="list-group-item"><code>an instance of a frozen tissue sample</code></li><li class="list-group-item"><code>a specific water sample</code></li><li class="list-group-item"><code>an instance of a meteorite fragment</code></li><li class="list-group-item"><code>a particular wolf in a zoo</code></li><li class="list-group-item"><code>a particular pack of wolves in the wild</code></li><li class="list-group-item"><code>an isolated molecule of DNA</code></li><li class="list-group-item"><code>a specific deep-frozen DNA sample</code></li><li class="list-group-item"><code>a particular field notebook</code></li><li class="list-group-item"><code>a particular paper page from a field notebook</code></li><li class="list-group-item"><code>an instance of a printed photograph</code></li></ul></td></tr>
   </tbody>
 </table>
 
@@ -869,7 +869,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/MaterialSample">http://rs.tdwg.org/dwc/terms/MaterialSample</a></td></tr>
     <tr><td>Definition</td><td>A material entity that represents an entity of interest in whole or in part.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td><code>a whole organism preserved in a collection</code>; <code>a part of an organism isolated for some purpose</code>; <code>a soil sample</code>; <code>a marine microbial sample</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>a whole organism preserved in a collection</code></li><li class="list-group-item"><code>a part of an organism isolated for some purpose</code></li><li class="list-group-item"><code>a soil sample</code></li><li class="list-group-item"><code>a marine microbial sample</code></li></ul></td></tr>
   </tbody>
 </table>
 
@@ -2828,7 +2828,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/MeasurementOrFact">http://rs.tdwg.org/dwc/terms/MeasurementOrFact</a></td></tr>
     <tr><td>Definition</td><td>A measurement of or fact about an rdfs:Resource (<a href="http://www.w3.org/2000/01/rdf-schema#Resource">http://www.w3.org/2000/01/rdf-schema#Resource</a>).</td></tr>
     <tr><td>Comments</td><td>Resources can be thought of as identifiable records or instances of classes and may include, but need not be limited to instances of dwc:Occurrence, dwc:Organism, dwc:MaterialEntity, dwc:Event, dcterms:Location, dwc:GeologicalContext, dwc:Identification, or dwc:Taxon.</td></tr>
-    <tr><td>Examples</td><td><code>the weight of a dwc:Organism in grams</code>; <code>the number of placental scars</code>; <code>surface water temperature in Celsius</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>the weight of a dwc:Organism in grams</code></li><li class="list-group-item"><code>the number of placental scars</code></li><li class="list-group-item"><code>surface water temperature in Celsius</code></li></ul></td></tr>
   </tbody>
 </table>
 
@@ -2983,7 +2983,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/ResourceRelationship">http://rs.tdwg.org/dwc/terms/ResourceRelationship</a></td></tr>
     <tr><td>Definition</td><td>A relationship of one rdfs:Resource (<a href="http://www.w3.org/2000/01/rdf-schema#Resource">http://www.w3.org/2000/01/rdf-schema#Resource</a>) to another.</td></tr>
     <tr><td>Comments</td><td>Resources can be thought of as identifiable records or instances of classes and may include, but need not be limited to instances of dwc:Occurrence, dwc:Organism, dwc:MaterialEntity, dwc:Event, dcterms:Location, dwc:GeologicalContext, dwc:Identification, or dwc:Taxon.</td></tr>
-    <tr><td>Examples</td><td><code>an instance of a dwc:Organism is the mother of another instance of a dwc:Organism</code>; <code>a uniquely identified dwc:Occurrence represents the same dwc:Occurrence as another uniquely identified dwc:Occurrence</code>; <code>a dwc:MaterialEntity is a subsample of another dwc:MaterialEntity</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>an instance of a dwc:Organism is the mother of another instance of a dwc:Organism</code></li><li class="list-group-item"><code>a uniquely identified dwc:Occurrence represents the same dwc:Occurrence as another uniquely identified dwc:Occurrence</code></li><li class="list-group-item"><code>a dwc:MaterialEntity is a subsample of another dwc:MaterialEntity</code></li></ul></td></tr>
   </tbody>
 </table>
 
