@@ -785,7 +785,7 @@ This category contains terms that are generic in that they might apply to any ty
   <tbody>
     <tr class="table-secondary"><th colspan="2">materialEntityID</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/materialEntityID">http://rs.tdwg.org/dwc/terms/materialEntityID</a></td></tr>
-    <tr><td>Definition</td><td>An identifier for a particular instance of a MaterialEntity.</td></tr>
+    <tr><td>Definition</td><td>An identifier for a particular instance of a dwc:MaterialEntity.</td></tr>
     <tr><td>Comments</td><td>Values of dwc:materialEntityID are intended to uniquely and persistently identify a particular dwc:MaterialEntity within some context. Examples of context include a particular sample collection, an organization, or the worldwide scale. Recommended best practice is to use a persistent, globally unique identifier. The identifier is bound to a physical object (the dwc:MaterialEntity) as opposed to a particular digital record (representation) of that physical object.</td></tr>
     <tr><td>Examples</td><td><code>06809dc5-f143-459a-be1a-6f03e63fc083</code></td></tr>
   </tbody>
@@ -850,7 +850,7 @@ This category contains terms that are generic in that they might apply to any ty
   <tbody>
     <tr class="table-secondary"><th colspan="2">materialEntityRemarks</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/materialEntityRemarks">http://rs.tdwg.org/dwc/terms/materialEntityRemarks</a></td></tr>
-    <tr><td>Definition</td><td>Comments or notes about the MaterialEntity instance.</td></tr>
+    <tr><td>Definition</td><td>Comments or notes about the dwc:MaterialEntity instance.</td></tr>
     <tr><td>Comments</td><td></td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>found in association with charred remains</code></li><li class="list-group-item"><code>some original fragments missing</code></li></ul></td></tr>
   </tbody>

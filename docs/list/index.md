@@ -9705,7 +9705,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>An identifier for a particular instance of a MaterialEntity.</td>
+			<td>An identifier for a particular instance of a dwc:MaterialEntity.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
@@ -9755,7 +9755,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>Comments or notes about the MaterialEntity instance.</td>
+			<td>Comments or notes about the dwc:MaterialEntity instance.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
