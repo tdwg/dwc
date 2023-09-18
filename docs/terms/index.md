@@ -324,7 +324,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/Occurrence">http://rs.tdwg.org/dwc/terms/Occurrence</a></td></tr>
     <tr><td>Definition</td><td>An existence of a dwc:Organism at a particular place at a particular time.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td>A wolf pack on the shore of Kluane Lake in 1988. A virus in a plant leaf in the New York Botanical Garden at 15:29 on 2014-10-23. A fungus in Central Park in the summer of 1929.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>a wolf pack on the shore of Kluane Lake in 1988</code></li><li class="list-group-item"><code>a virus in a plant leaf in the New York Botanical Garden at 15:29 on 2014-10-23</code></li><li class="list-group-item"><code>a fungus in Central Park in the summer of 1929</code></li></ul></td></tr>
   </tbody>
 </table>
 
@@ -672,7 +672,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/Organism">http://rs.tdwg.org/dwc/terms/Organism</a></td></tr>
     <tr><td>Definition</td><td>A particular organism or defined group of organisms considered to be taxonomically homogeneous.</td></tr>
     <tr><td>Comments</td><td>Instances of the dwc:Organism class are intended to facilitate linking one or more dwc:Identification instances to one or more dwc:Occurrence instances. Therefore, things that are typically assigned scientific names (such as viruses, hybrids, and lichens) and aggregates whose dwc:Occurrences are typically recorded (such as packs, clones, and colonies) are included in the scope of this class.</td></tr>
-    <tr><td>Examples</td><td>A specific bird. A specific wolf pack. A specific instance of a bacterial culture.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>a specific bird</code></li><li class="list-group-item"><code>a specific wolf pack</code></li><li class="list-group-item"><code>a specific instance of a bacterial culture</code></li></ul></td></tr>
   </tbody>
 </table>
 
@@ -785,7 +785,7 @@ This category contains terms that are generic in that they might apply to any ty
   <tbody>
     <tr class="table-secondary"><th colspan="2">materialEntityID</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/materialEntityID">http://rs.tdwg.org/dwc/terms/materialEntityID</a></td></tr>
-    <tr><td>Definition</td><td>An identifier for a particular instance of a MaterialEntity.</td></tr>
+    <tr><td>Definition</td><td>An identifier for a particular instance of a dwc:MaterialEntity.</td></tr>
     <tr><td>Comments</td><td>Values of dwc:materialEntityID are intended to uniquely and persistently identify a particular dwc:MaterialEntity within some context. Examples of context include a particular sample collection, an organization, or the worldwide scale. Recommended best practice is to use a persistent, globally unique identifier. The identifier is bound to a physical object (the dwc:MaterialEntity) as opposed to a particular digital record (representation) of that physical object.</td></tr>
     <tr><td>Examples</td><td><code>06809dc5-f143-459a-be1a-6f03e63fc083</code></td></tr>
   </tbody>
@@ -850,7 +850,7 @@ This category contains terms that are generic in that they might apply to any ty
   <tbody>
     <tr class="table-secondary"><th colspan="2">materialEntityRemarks</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/materialEntityRemarks">http://rs.tdwg.org/dwc/terms/materialEntityRemarks</a></td></tr>
-    <tr><td>Definition</td><td>Comments or notes about the MaterialEntity instance.</td></tr>
+    <tr><td>Definition</td><td>Comments or notes about the dwc:MaterialEntity instance.</td></tr>
     <tr><td>Comments</td><td></td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>found in association with charred remains</code></li><li class="list-group-item"><code>some original fragments missing</code></li></ul></td></tr>
   </tbody>
@@ -918,7 +918,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/Event">http://rs.tdwg.org/dwc/terms/Event</a></td></tr>
     <tr><td>Definition</td><td>An action that occurs at some location during some time.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td>A specimen collection process. A camera trap image capture.  A marine trawl.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>a specimen collecting event</code></li><li class="list-group-item"><code>a camera trap image capture</code></li><li class="list-group-item"> <code>a marine trawl</code></li></ul></td></tr>
   </tbody>
 </table>
 
@@ -1226,7 +1226,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://purl.org/dc/terms/Location">http://purl.org/dc/terms/Location</a></td></tr>
     <tr><td>Definition</td><td>A spatial region or named place.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td>The municipality of San Carlos de Bariloche, Río Negro, Argentina. The place defined by a georeference.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>the municipality of San Carlos de Bariloche, Río Negro, Argentina</code></li><li class="list-group-item"><code>the place defined by a georeference</code></li></ul></td></tr>
   </tbody>
 </table>
 
@@ -1833,7 +1833,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/GeologicalContext">http://rs.tdwg.org/dwc/terms/GeologicalContext</a></td></tr>
     <tr><td>Definition</td><td>Geological information, such as stratigraphy, that qualifies a region or place.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td>A lithostratigraphic layer.</td></tr>
+    <tr><td>Examples</td><td><code>a lithostratigraphic layer</code></td></tr>
   </tbody>
 </table>
 
@@ -2094,7 +2094,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/Identification">http://rs.tdwg.org/dwc/terms/Identification</a></td></tr>
     <tr><td>Definition</td><td>A taxonomic determination (e.g., the assignment to a dwc:Taxon).</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td>A subspecies determination of an organism.</td></tr>
+    <tr><td>Examples</td><td><code>a subspecies determination of an organism</code></td></tr>
   </tbody>
 </table>
 
@@ -2281,7 +2281,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/Taxon">http://rs.tdwg.org/dwc/terms/Taxon</a></td></tr>
     <tr><td>Definition</td><td>A group of organisms (sensu <a href="http://purl.obolibrary.org/obo/OBI_0100026">http://purl.obolibrary.org/obo/OBI_0100026</a>) considered by taxonomists to form a homogeneous unit.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td>The genus Truncorotaloides as published by Brönnimann et al. in 1953 in the Journal of Paleontology Vol. 27(6) p. 817-820.</td></tr>
+    <tr><td>Examples</td><td><code>the genus Truncorotaloides as published by Brönnimann et al. in 1953 in the Journal of Paleontology Vol. 27(6) p. 817-820</code></td></tr>
   </tbody>
 </table>
 
@@ -3777,7 +3777,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/LivingSpecimen">http://rs.tdwg.org/dwc/terms/LivingSpecimen</a></td></tr>
     <tr><td>Definition</td><td>A specimen that is alive.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td>A living plant in a botanical garden. A living animal in a zoo.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>a living plant in a botanical garden</code></li><li class="list-group-item"><code>a living animal in a zoo</code></li></ul></td></tr>
   </tbody>
 </table>
 
@@ -3794,7 +3794,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/PreservedSpecimen">http://rs.tdwg.org/dwc/terms/PreservedSpecimen</a></td></tr>
     <tr><td>Definition</td><td>A specimen that has been preserved.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td>A plant on an herbarium sheet. A cataloged lot of fish in a jar.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>a plant on an herbarium sheet</code></li><li class="list-group-item"><code>a cataloged lot of fish in a jar</code></li></ul></td></tr>
   </tbody>
 </table>
 
@@ -3811,7 +3811,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/FossilSpecimen">http://rs.tdwg.org/dwc/terms/FossilSpecimen</a></td></tr>
     <tr><td>Definition</td><td>A preserved specimen that is a fossil.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td>A body fossil. A coprolite. A gastrolith. An ichnofossil. A piece of a petrified tree.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>a body fossil</code></li><li class="list-group-item"><code>a coprolite</code></li><li class="list-group-item"><code>a gastrolith</code></li><li class="list-group-item"><code>an ichnofossil</code></li><li class="list-group-item"><code>a piece of a petrified tree</code></li></ul></td></tr>
   </tbody>
 </table>
 
@@ -3827,8 +3827,8 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr class="table-primary"><th colspan="2">MaterialCitation <span class="badge bg-primary float-end">Class</span></th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/MaterialCitation">http://rs.tdwg.org/dwc/terms/MaterialCitation</a></td></tr>
     <tr><td>Definition</td><td>A reference to or citation of one, a part of, or multiple specimens in scholarly publications.</td></tr>
-    <tr><td>Comments</td><td>This class constitutes a new value for the controlled vocabulary in the recommendations for basisOfRecord. When importing Darwin Core Archives of literature-based datasets to GBIF, the basisOfRecord should be changed from “Occurrence”, "PreservedSpecimen" or "Literature" to “MaterialCitation”.</td></tr>
-    <tr><td>Examples</td><td>A citation of a physical specimen from a scientific collection in a taxonomic treatment in a scientific publication. A citation of a group of physical specimens, such as paratypes in a taxonomic treatment in a scientific publication. An occurrence mentioned in a field note book.</td></tr>
+    <tr><td>Comments</td><td>This class constitutes a new value for the controlled vocabulary in the recommendations for basisOfRecord. When importing Darwin Core Archives of literature-based datasets to GBIF, the basisOfRecord should be changed from "Occurrence", "PreservedSpecimen" or "Literature" to "MaterialCitation".</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>a citation of a physical specimen from a scientific collection in a taxonomic treatment in a scientific publication</code></li><li class="list-group-item"><code>a citation of a group of physical specimens, such as paratypes in a taxonomic treatment in a scientific publication</code></li></ul></td></tr>
   </tbody>
 </table>
 
@@ -3845,7 +3845,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/HumanObservation">http://rs.tdwg.org/dwc/terms/HumanObservation</a></td></tr>
     <tr><td>Definition</td><td>An output of a human observation process.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td>Evidence of an Occurrence taken from field notes or literature. A record of an Occurrence without physical evidence nor evidence captured with a machine. </td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>evidence of a dwc:Occurrence taken from field notes or literature</code></li><li class="list-group-item"><code>a record of a dwc:Occurrence without physical evidence or evidence captured with a machine</code></li></ul></td></tr>
   </tbody>
 </table>
 
@@ -3862,7 +3862,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/MachineObservation">http://rs.tdwg.org/dwc/terms/MachineObservation</a></td></tr>
     <tr><td>Definition</td><td>An output of a machine observation process.</td></tr>
     <tr><td>Comments</td><td></td></tr>
-    <tr><td>Examples</td><td>A photograph. A video. An audio recording. A remote sensing image. A Occurrence record based on telemetry.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>a photograph</code></li><li class="list-group-item"><code>a video</code></li><li class="list-group-item"><code>an audio recording</code></li><li class="list-group-item"><code>a remote sensing image</code></li><li class="list-group-item"><code>a dwc:Occurrence record based on telemetry</code></li></ul></td></tr>
   </tbody>
 </table>
 
