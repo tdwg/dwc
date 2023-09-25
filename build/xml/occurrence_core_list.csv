@@ -14,7 +14,7 @@ Record-level,http://rs.tdwg.org/dwc/terms/institutionCode,,,,,,
 Record-level,http://rs.tdwg.org/dwc/terms/collectionCode,,,,,,
 Record-level,http://rs.tdwg.org/dwc/terms/datasetName,,,,,,
 Record-level,http://rs.tdwg.org/dwc/terms/ownerInstitutionCode,,,,,,
-Record-level,http://rs.tdwg.org/dwc/terms/basisOfRecord,,http://rs.gbif.org/vocabulary/dwc/basis_of_record_2023-09-14.xml,,,,true
+Record-level,http://rs.tdwg.org/dwc/terms/basisOfRecord,,http://rs.gbif.org/sandbox/vocabulary/dwc/basis_of_record_2023-09-14.xml,,,,true
 Record-level,http://rs.tdwg.org/dwc/terms/informationWithheld,,,,,,
 Record-level,http://rs.tdwg.org/dwc/terms/dataGeneralizations,,,,,,
 Record-level,http://rs.tdwg.org/dwc/terms/dynamicProperties,,,,,,
