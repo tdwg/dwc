@@ -35,7 +35,8 @@ NAMESPACES = {
     'http://rs.tdwg.org/eco/terms/' : 'eco',
     'http://purl.org/dc/elements/1.1/' : 'dc',
     'http://purl.org/dc/terms/' : 'dcterms',
-    'http://rs.tdwg.org/dwc/terms/attributes/' : 'tdwgutility'}
+    'http://rs.tdwg.org/dwc/terms/attributes/' : 'tdwgutility',
+    'http://rs.tdwg.org/ac/terms/' : 'ac'}
 
 class ProvidedTermsError(Exception):
     """inconsistency in the available terms Error"""
@@ -418,6 +419,9 @@ class DwcDigester(object):
                 elif namespace=='http://rs.tdwg.org/eco/terms/':
                     # Example: https://tdwg.github.io/eco/terms/#eco:samplingPerformedBy
                     dc_relation = f'https://eco.tdwg.org/terms/#eco:{name}'
+                elif namespace=='http://rs.tdwg.org/ac/terms/':
+                    # Example: https://ac.tdwg.org/terms/#ac:hasServiceAccessPointPerformedBy
+                    dc_relation = f'https://ac.tdwg.org/termlist/#ac:{name}'
 
                 # Get the term definition (dc:description) from the description field of
                 # the Extension term list file. Later we'll check if this is blank, and
