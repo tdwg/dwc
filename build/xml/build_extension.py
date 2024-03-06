@@ -14,9 +14,9 @@
 # limitations under the License.
 
 __author__ = "John Wieczorek"
-__copyright__ = "Copyright 2023 Rauthiflor LLC"
+__copyright__ = "Copyright 2024 Rauthiflor LLC"
 __filename__ = 'build_extension.py'
-__version__ = f'{__filename__} 2023-09-15T16:52-03:00'
+__version__ = f'{__filename__} 2024-03-06T12:43-03:00'
 
 import io
 import os
@@ -449,7 +449,11 @@ class DwcDigester(object):
 #                    print(f"{term['iri']}")
                     term_data = self.get_term_definition(term['iri'])
                 except:
-                    print(f"{term['iri']} not found in get_term_definitions({term['iri']})")
+                    s = f"{term['iri']} not found in get_term_definitions()."
+                    s += "If this is a term from another vocabulary, be sure to copy the "
+                    s += "definition, comments, and examples from the original source "
+                    s += f"into the output file {file_output}."
+                    print(s)
                     pass
                 
                 # Fill in dc:description, comments, or examples from the standard if it is
