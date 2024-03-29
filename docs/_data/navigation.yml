@@ -15,6 +15,8 @@
     href: /pw/
   - text: Chronometric Age
     href: https://chrono.tdwg.org/list/
+  - text: Humboldt Extension
+    href: https://eco.tdwg.org/list/
 - text: Guides
   menu:
   - text: Darwin Core Quick Reference
@@ -22,6 +24,8 @@
   - text: "---"
   - text: Chronometric Age Quick Reference
     href: https://chrono.tdwg.org/terms/
+  - text: Humboldt Extension Quick Reference
+    href: https://eco.tdwg.org/terms/
   - text: Simple Darwin Core
     href: /simple/
   - text: Text (Darwin Core Archive)
