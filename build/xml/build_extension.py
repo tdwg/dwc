@@ -32,6 +32,7 @@ NAMESPACES = {
     'http://rs.tdwg.org/dwc/iri/' : 'dwciri',
     'http://rs.tdwg.org/dwc/terms/' : 'dwc',
     'http://rs.tdwg.org/chrono/terms/' : 'chrono',
+    'http://rs.tdwg.org/eco/iri/' : 'ecoiri',
     'http://rs.tdwg.org/eco/terms/' : 'eco',
     'http://purl.org/dc/elements/1.1/' : 'dc',
     'http://purl.org/dc/terms/' : 'dcterms',
