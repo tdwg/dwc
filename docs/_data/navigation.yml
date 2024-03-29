@@ -7,25 +7,27 @@
   - text: Darwin Core
     href: /list/
   - text: "---"
-  - text: Establishment Means
-    href: /em/
-  - text: Degree of Establishment
-    href: /doe/
-  - text: Pathway
-    href: /pw/
-  - text: Chronometric Age
+  - text: Chronometric Age Extension
     href: https://chrono.tdwg.org/list/
   - text: Humboldt Extension
     href: https://eco.tdwg.org/list/
+  - text: "---"
+  - text: Establishment Means Controlled Vocabulary
+    href: /em/
+  - text: Degree of Establishment Controlled Vocabulary
+    href: /doe/
+  - text: Pathway Controlled Vocabulary
+    href: /pw/
 - text: Guides
   menu:
   - text: Darwin Core Quick Reference
     href: /terms/
   - text: "---"
-  - text: Chronometric Age Quick Reference
+  - text: Chronometric Age Extension Quick Reference
     href: https://chrono.tdwg.org/terms/
   - text: Humboldt Extension Quick Reference
     href: https://eco.tdwg.org/terms/
+  - text: "---"
   - text: Simple Darwin Core
     href: /simple/
   - text: Text (Darwin Core Archive)
