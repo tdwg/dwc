@@ -22,7 +22,7 @@ Creator
 : Darwin Core Maintenance Group
 
 Bibliographic citation
-: Darwin Core Maintenance Group. 2023. verbatimLabel examples. Biodiversity Information Standards (TDWG). <https://dwc.tdwg.org/examples/verbatimLabel/>
+: Darwin Core Maintenance Group. 2023. verbatimLabel examples. Biodiversity Information Standards (TDWG). <https://dwc.tdwg.org/examples/verbatimLabel>
 
 The following provides examples and guidance for the use of Darwin Core verbatimLabel.
 
