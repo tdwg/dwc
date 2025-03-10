@@ -56,10 +56,11 @@ class TermList:
         self.load_contributors()
         self.load_document_configuration()
 
+        self.decisions_df = pd.read_csv(githubBaseUri + 'decisions/decisions-links.csv', na_filter=False)
+        self.decisions_df = self.decisions_df[['linked_affected_resource', 'decision_localName']]
+
         self.retrieve_term_list_metadata()
         self.create_metadata_table()
-
-        self.decisions_df = pd.read_csv(githubBaseUri + 'decisions/decisions-links.csv', na_filter=False)
         pass
 
 
@@ -103,23 +104,21 @@ class TermList:
         """
         Retrieve term list metadata from GitHub
         """
+        termLists = pd.DataFrame(self.termLists, columns=['database'])
+
         print('Retrieving term list metadata from GitHub')
-        term_lists_info = []
-
         frame = pd.read_csv(githubBaseUri + 'term-lists/term-lists.csv', na_filter=False)
-        for termList in self.termLists:
-            term_list_dict = {'list_iri': termList}
-            term_list_dict = {'database': termList}
-            for index,row in frame.iterrows():
-                if row['database'] == termList:
-                    term_list_dict['pref_ns_prefix'] = row['vann_preferredNamespacePrefix']
-                    term_list_dict['pref_ns_uri'] = row['vann_preferredNamespaceUri']
-                    term_list_dict['list_iri'] = row['list']
-            term_lists_info.append(term_list_dict)
-        print(term_lists_info)
-        print()
-        self.term_lists_info = term_lists_info
 
+        frame = frame.rename(columns={'vann_preferredNamespacePrefix': 'pref_ns_prefix',
+                                      'vann_preferredNamespaceUri': 'pref_ns_uri',
+                                      'list': 'list_iri'})
+
+        frame = frame[['database', 'pref_ns_prefix', 'pref_ns_uri', 'list_iri']]
+
+        frame = pd.merge(termLists, frame, on='database', how='inner')
+
+        self.term_lists_info = frame
+        print("term_lists_info\n", self.term_lists_info, '\n')
 
     def create_metadata_table(self):
         """
@@ -138,73 +137,87 @@ class TermList:
         column_list.append('version_iri')
 
         print('Retrieving metadata about terms from all namespaces from GitHub')
-        # Create list of lists metadata table
-        table_list = []
-        for term_list in self.term_lists_info:
+        for i, term_list in self.term_lists_info.iterrows():
+            # retrieve current term metadata for term list
+            metadata_url = githubBaseUri + term_list['database'] + '/' + term_list['database'] + '.csv'
+            print("Reading metadata", metadata_url)
+            metadata_df = pd.read_csv(metadata_url, keep_default_na=False)
+            #print('metadata_df', metadata_df)
+            metadata_df = metadata_df.assign(pref_ns_prefix=term_list['pref_ns_prefix'],
+                                             pref_ns_uri=term_list['pref_ns_uri'])
+            #print('metadata_df', metadata_df)
+            # TODO    if self.vocab_type == 2:
+            #        row_list += [row['controlled_value_string']]
+            #    elif self.vocab_type == 3:
+            #        if row['skos_broader'] =='':
+            #            row_list += [row['controlled_value_string'], '']
+            #        else:
+            #            row_list += [row['controlled_value_string'], term_list['pref_ns_prefix'] + ':' + row['skos_broader']]
+
             # retrieve versions metadata for term list
             versions_url = githubBaseUri + term_list['database'] + '-versions/' + term_list['database'] + '-versions.csv'
             print("Reading versions", versions_url)
             versions_df = pd.read_csv(versions_url, na_filter=False)
+            versions_df = versions_df.query('version_status == "recommended"')
+            #print("Vrec\n", versions_df)
+            versions_df = versions_df[['term_localName', 'version']]
+            versions_df = versions_df.rename(columns={'version': 'version_iri'})
+            # TODO NOTE: the current hack for non-TDWG terms without a version is to append # to the end of the term IRI
+            # if version_iri[len(version_iri)-1] == '#':
+            #     version_iri = ''
+            #print("Vsmall\n", versions_df)
 
-            # retrieve current term metadata for term list
-            data_url = githubBaseUri + term_list['database'] + '/' + term_list['database'] + '.csv'
-            frame = pd.read_csv(data_url, na_filter=False)
-            print("Reading metadata", data_url)
-            for index,row in frame.iterrows():
-                row_list = [term_list['pref_ns_prefix'], term_list['pref_ns_uri'], row['term_localName'], row['label'], row['rdfs_comment'], row['dcterms_description'], row['examples'], row['term_modified'], row['term_deprecated'], row['rdf_type'], row['tdwgutility_abcdEquivalence'], row['replaces_term'], row['replaces1_term']]
-                #row_list = [term_list['pref_ns_prefix'], term_list['pref_ns_uri'], row['term_localName'], row['label'], row['definition'], row['usage'], row['notes'], row['term_modified'], row['term_deprecated'], row['type']]
-                if self.vocab_type == 2:
-                    row_list += [row['controlled_value_string']]
-                elif self.vocab_type == 3:
-                    if row['skos_broader'] =='':
-                        row_list += [row['controlled_value_string'], '']
-                    else:
-                        row_list += [row['controlled_value_string'], term_list['pref_ns_prefix'] + ':' + row['skos_broader']]
-                if self.organized_in_categories:
-                    row_list.append(row['tdwgutility_organizedInClass'])
+            metadata_df = pd.merge(metadata_df, versions_df,
+                                   on='term_localName',
+                                   how='left')
 
-                # Borrowed terms really don't have implemented versions. They may be lacking values for version_status.
-                # In their case, their version IRI will be omitted.
-                found = False
-                for vindex, vrow in versions_df.iterrows():
-                    if vrow['term_localName']==row['term_localName'] and vrow['version_status']=='recommended':
-                        found = True
-                        version_iri = vrow['version']
-                        # NOTE: the current hack for non-TDWG terms without a version is to append # to the end of the term IRI
-                        if version_iri[len(version_iri)-1] == '#':
-                            version_iri = ''
-                if not found:
-                    version_iri = ''
-                row_list.append(version_iri)
+            # retrieve translated term metadata for term list
+            if term_list['database'] == 'terms':
+                translations_url = githubBaseUri + term_list['database'] + '/' + term_list['database'] + '-translations.csv'
+                print("Reading translated metadata", translations_url)
+                translations_df = pd.read_csv(translations_url, keep_default_na=False)
+                metadata_df = pd.merge(metadata_df, translations_df,
+                                       on='term_localName',
+                                       how='left')
 
-                table_list.append(row_list)
+            if i == 0:
+                frame = metadata_df
+            else:
+                frame = pd.concat([frame, metadata_df])
 
-        print('processing data')
-        # Turn list of lists into dataframe
-        terms_df = pd.DataFrame(table_list, columns = column_list)
+        frame = frame.fillna('')
 
-        self.terms_sorted_by_label = terms_df.sort_values(by='label')
-        #terms_sorted_by_localname = terms_df.sort_values(by='term_localName')
+        print("M frame\n", frame)
+
+        self.terms_sorted_by_label = frame.sort_values(by='label')
+        #terms_sorted_by_localname = frame.sort_values(by='term_localName')
 
         # This makes sort case insensitive
-        self.terms_sorted_by_localname = terms_df.iloc[terms_df.term_localName.str.lower().argsort()]
-        #terms_sorted_by_localname
+        self.terms_sorted_by_localname = frame.iloc[frame.term_localName.str.lower().argsort()]
         print('done retrieving')
+        print('terms_sorted_by_localname', self.terms_sorted_by_localname.columns.values)
         print()
 
 
-    def generate_index_by_name(self, terms_sorted_by_localname):
+    def t(self, key):
+        if key in self.dictionary:
+            return self.dictionary[key]
+        else:
+            raise Exception("Value %s not present in translation dictionary" % key)
+
+
+    def generate_index_by_name(self):
         """
         generate the index of terms grouped by category and sorted alphabetically by lowercase term local name
         """
 
         print('Generating term index by CURIE')
-        text = '### 3.1 Index By Term Name\n\n'
-        text += '(See also [3.2 Index By Label](#32-index-by-label))\n\n'
+        text = '### 3.1 %s\n\n' % self.t('index_by_term_name')
+        text += '%s\n\n' % self.t('see_also_index_by_label')
 
-        text += '**Classes**\n'
+        text += '**%s**\n' % self.t('classes')
         text += '\n'
-        for row_index,row in terms_sorted_by_localname.iterrows():
+        for row_index,row in self.terms_sorted_by_localname.iterrows():
             if row['rdf_type'] == 'http://www.w3.org/2000/01/rdf-schema#Class':
                 curie = row['pref_ns_prefix'] + ":" + row['term_localName']
                 curie_anchor = curie.replace(':','_')
@@ -213,13 +226,13 @@ class TermList:
         text += '\n\n' # put back removed newline
 
         for category in range(0,len(self.display_order)):
-            text += '**' + self.display_label[category] + '**\n'
+            text += '**%s**\n' % self.display_label[category]
             text += '\n'
             if self.organized_in_categories:
-                filtered_table = terms_sorted_by_localname[terms_sorted_by_localname['tdwgutility_organizedInClass']==self.display_order[category]]
+                filtered_table = self.terms_sorted_by_localname[self.terms_sorted_by_localname['tdwgutility_organizedInClass']==self.display_order[category]]
                 filtered_table.reset_index(drop=True, inplace=True)
             else:
-                filtered_table = terms_sorted_by_localname
+                filtered_table = self.terms_sorted_by_localname
 
             for row_index,row in filtered_table.iterrows():
                 if row['rdf_type'] != 'http://www.w3.org/2000/01/rdf-schema#Class':
@@ -236,7 +249,7 @@ class TermList:
         return index_by_name
 
 
-    def generate_index_by_label(self, terms_sorted_by_label):
+    def generate_index_by_label(self):
         """
         generate the index of terms by label
         """
@@ -245,12 +258,12 @@ class TermList:
         text = '\n\n'
 
         # Comment out the following two lines if there is no index by local names
-        text = '### 3.2 Index By Label\n\n'
-        text += '(See also [3.1 Index By Term Name](#31-index-by-term-name))\n\n'
+        text = '### 3.2 %s\n\n' % self.t('index_by_label')
+        text += '%s\n\n' % self.t('see_also_index_by_term_name')
 
-        text += '**Classes**\n'
+        text += '**%s**\n' % self.t('classes')
         text += '\n'
-        for row_index,row in terms_sorted_by_label.iterrows():
+        for row_index,row in self.terms_sorted_by_label.iterrows():
             if row['rdf_type'] == 'http://www.w3.org/2000/01/rdf-schema#Class':
                 curie_anchor = row['pref_ns_prefix'] + "_" + row['term_localName']
                 text += '[' + row['label'] + '](#' + curie_anchor + ') |\n'
@@ -259,12 +272,12 @@ class TermList:
 
         for category in range(0,len(self.display_order)):
             if self.organized_in_categories:
-                text += '**' + self.display_label[category] + '**\n'
+                text += '**%s**\n' % self.display_label[category]
                 text += '\n'
-                filtered_table = terms_sorted_by_label[terms_sorted_by_label['tdwgutility_organizedInClass']==self.display_order[category]]
+                filtered_table = self.terms_sorted_by_label[self.terms_sorted_by_label['tdwgutility_organizedInClass']==self.display_order[category]]
                 filtered_table.reset_index(drop=True, inplace=True)
             else:
-                filtered_table = terms_sorted_by_label
+                filtered_table = self.terms_sorted_by_label
 
             for row_index,row in filtered_table.iterrows():
                 if row_index == 0 or (row_index != 0 and row['label'] != filtered_table.iloc[row_index - 1].loc['label']): # this is a hack to prevent duplicate labels
@@ -281,140 +294,138 @@ class TermList:
         return index_by_label
 
 
-    def generate_vocabulary_tables(self, terms_sorted_by_localname):
+    def generate_vocabulary_tables(self, locale):
         """
         generate a table for each term, with terms grouped by category
         """
 
-        print('Generating terms table')
+        print('Generating terms table in', locale)
+        if locale == 'en':
+            l = ''
+        else:
+            l = '_' + locale
 
         # generate the Markdown for the terms table
-        text = '## 4 Vocabulary\n'
+        text = '## 4 %s\n' % self.t('vocabulary')
         if True:
-            filtered_table = terms_sorted_by_localname
+            filtered_table = self.terms_sorted_by_localname
 
         #for category in range(0,len(display_order)):
         #    if organized_in_categories:
         #        text += '### 4.' + str(category + 1) + ' ' + display_label[category] + '\n'
         #        text += '\n'
         #        text += display_comments[category] # insert the comments for the category, if any.
-        #        filtered_table = terms_sorted_by_localname[terms_sorted_by_localname['tdwgutility_organizedInClass']==display_order[category]]
+        #        filtered_table = self.terms_sorted_by_localname[self.terms_sorted_by_localname['tdwgutility_organizedInClass']==display_order[category]]
         #        filtered_table.reset_index(drop=True, inplace=True)
         #    else:
-        #        filtered_table = terms_sorted_by_localname
+        #        filtered_table = self.terms_sorted_by_localname
 
             for row_index,row in filtered_table.iterrows():
                 text += '<table>\n'
-                curie = row['pref_ns_prefix'] + ":" + row['term_localName']
-                curieAnchor = curie.replace(':','_')
                 text += '\t<thead>\n'
                 text += '\t\t<tr>\n'
-                text += '\t\t\t<th colspan="2"><a id="' + curieAnchor + '"></a>Term Name  ' + curie + '</th>\n'
+                curie = row['pref_ns_prefix'] + ":" + row['term_localName']
+                curieAnchor = curie.replace(':','_')
+                text += '\t\t\t<th colspan="2"><a id="%s"></a>%s  %s</th>\n' % (curieAnchor, self.t('term_name'), curie) # TODO double space
                 text += '\t\t</tr>\n'
                 text += '\t</thead>\n'
                 text += '\t<tbody>\n'
                 text += '\t\t<tr>\n'
-                text += '\t\t\t<td>Term IRI</td>\n'
+                text += '\t\t\t<td>%s</td>\n' % self.t('term_iri')
                 uri = row['pref_ns_uri'] + row['term_localName']
-                text += '\t\t\t<td><a href="' + uri + '">' + uri + '</a></td>\n'
+                text += '\t\t\t<td><a href="%s">%s</a></td>\n' % (uri, uri)
                 text += '\t\t</tr>\n'
                 text += '\t\t<tr>\n'
-                text += '\t\t\t<td>Modified</td>\n'
-                text += '\t\t\t<td>' + row['term_modified'] + '</td>\n'
+                text += '\t\t\t<td>%s</td>\n' % self.t('modified')
+                text += '\t\t\t<td>%s</td>\n' % row['term_modified']
                 text += '\t\t</tr>\n'
 
                 if row['version_iri'] != '':
                     text += '\t\t<tr>\n'
-                    text += '\t\t\t<td>Term version IRI</td>\n'
-                    text += '\t\t\t<td><a href="' + row['version_iri'] + '">' + row['version_iri'] + '</a></td>\n'
+                    text += '\t\t\t<td>%s</td>\n' % self.t('term_version_iri')
+                    text += '\t\t\t<td><a href="%s">%s</a></td>\n' % (row['version_iri'], row['version_iri'])
                     text += '\t\t</tr>\n'
 
                 text += '\t\t<tr>\n'
-                text += '\t\t\t<td>Label</td>\n'
-                text += '\t\t\t<td>' + row['label'] + '</td>\n'
+                text += '\t\t\t<td>%s</td>\n' % self.t('label')
+                text += '\t\t\t<td>%s</td>\n' % row['label'+l]
                 text += '\t\t</tr>\n'
 
                 if row['term_deprecated'] != '':
                     text += '\t\t<tr>\n'
                     text += '\t\t\t<td></td>\n'
-                    text += '\t\t\t<td><strong>This term is deprecated and should no longer be used.</strong></td>\n'
+                    text += '\t\t\t<td><strong>%s</strong></td>\n' % self.t('term_deprecated')
                     text += '\t\t</tr>\n'
 
-                    for dep_index,dep_row in filtered_table.iterrows():
-                        if dep_row['replaces_term'] == uri:
-                            text += '\t\t<tr>\n'
-                            text += '\t\t\t<td>Is replaced by</td>\n'
-                            text += '\t\t\t<td><a href="#' + dep_row['pref_ns_prefix'] + "_" + dep_row['term_localName'] + '">' + dep_row['pref_ns_uri'] + dep_row['term_localName'] + '</a></td>\n'
-                            text += '\t\t</tr>\n'
-                        if dep_row['replaces1_term'] == uri:
-                            text += '\t\t<tr>\n'
-                            text += '\t\t\t<td>Is replaced by</td>\n'
-                            text += '\t\t\t<td><a href="#' + dep_row['pref_ns_prefix'] + "_" + dep_row['term_localName'] + '">' + dep_row['pref_ns_uri'] + dep_row['term_localName'] + '</a></td>\n'
-                            text += '\t\t</tr>\n'
+                    for i,dep_row in filtered_table.loc[(filtered_table['replaces_term'] == uri) | (filtered_table['replaces1_term'] == uri)].iterrows():
+                        text += '\t\t<tr>\n'
+                        text += '\t\t\t<td>%s</td>\n' % self.t('term_replaced_by')
+                        text += '\t\t\t<td><a href="#%s_%s">%s%s</a></td>\n' % (dep_row['pref_ns_prefix'], dep_row['term_localName'], dep_row['pref_ns_uri'], dep_row['term_localName'])
+                        text += '\t\t</tr>\n'
 
                 text += '\t\t<tr>\n'
-                text += '\t\t\t<td>Definition</td>\n'
-                text += '\t\t\t<td>' + row['rdfs_comment'] + '</td>\n'
+                text += '\t\t\t<td>%s</td>\n' % self.t('definition')
+                text += '\t\t\t<td>%s</td>\n' % row['rdfs_comment'+l]
                 #text += '\t\t\t<td>' + row['definition'] + '</td>\n'
                 text += '\t\t</tr>\n'
 
                 if row['dcterms_description'] != '':
                 #if row['notes'] != '':
                     text += '\t\t<tr>\n'
-                    text += '\t\t\t<td>Notes</td>\n'
-                    text += '\t\t\t<td>' + convert_link(convert_code(row['dcterms_description'])) + '</td>\n'
+                    text += '\t\t\t<td>%s</td>\n' % self.t('notes')
+                    text += '\t\t\t<td>%s</td>\n' % convert_link(convert_code(row['dcterms_description'+l]))
                     #text += '\t\t\t<td>' + convert_link(convert_code(row['notes'])) + '</td>\n'
                     text += '\t\t</tr>\n'
 
                 if row['examples'] != '':
                 #if row['usage'] != '':
                     text += '\t\t<tr>\n'
-                    text += '\t\t\t<td>Examples</td>\n'
-                    text += '\t\t\t<td>' + convert_examples(convert_link(convert_code(row['examples']))) + '</td>\n'
+                    text += '\t\t\t<td>%s</td>\n' % self.t('examples')
+                    text += '\t\t\t<td>%s</td>\n' % convert_examples(convert_link(convert_code(row['examples'+l])))
                     #text += '\t\t\t<td>' + convert_link(convert_code(row['usage'])) + '</td>\n'
                     text += '\t\t</tr>\n'
 
                 if row['tdwgutility_abcdEquivalence'] != '':
                     text += '\t\t<tr>\n'
-                    text += '\t\t\t<td>ABCD equivalence</td>\n'
-                    text += '\t\t\t<td>' + convert_link(convert_code(row['tdwgutility_abcdEquivalence'])) + '</td>\n'
+                    text += '\t\t\t<td>%s</td>\n' % self.t('abcd_equivalence')
+                    text += '\t\t\t<td>%s</td>\n' % convert_link(convert_code(row['tdwgutility_abcdEquivalence']))
                     text += '\t\t</tr>\n'
 
                 if self.vocab_type == 2 or self.vocab_type ==3: # controlled vocabulary
                     text += '\t\t<tr>\n'
-                    text += '\t\t\t<td>Controlled value</td>\n'
-                    text += '\t\t\t<td>' + row['controlled_value_string'] + '</td>\n'
+                    text += '\t\t\t<td>%s</td>\n' % self.t('controlled_value')
+                    text += '\t\t\t<td>%s</td>\n' % row['controlled_value_string']
                     text += '\t\t</tr>\n'
 
                 if self.vocab_type == 3 and row['skos_broader'] != '': # controlled vocabulary with skos:broader relationships
                     text += '\t\t<tr>\n'
-                    text += '\t\t\t<td>Has broader concept</td>\n'
+                    text += '\t\t\t<td>%s</td>\n' % self.t('has_broader_concept')
                     curieAnchor = row['skos_broader'].replace(':','_')
-                    text += '\t\t\t<td><a href="#' + curieAnchor + '">' + row['skos_broader'] + '</a></td>\n'
+                    text += '\t\t\t<td><a href="#%s">%s</a></td>\n' % (curieAnchor, row['skos_broader'])
                     text += '\t\t</tr>\n'
 
                 text += '\t\t<tr>\n'
-                text += '\t\t\t<td>Type</td>\n'
+                text += '\t\t\t<td>%s</td>\n' % self.t('type')
                 if row['rdf_type'] == 'http://www.w3.org/1999/02/22-rdf-syntax-ns#Property':
                 #if row['type'] == 'http://www.w3.org/1999/02/22-rdf-syntax-ns#Property':
-                    text += '\t\t\t<td>Property</td>\n'
+                    text += '\t\t\t<td>%s</td>\n' % self.t('property')
                 elif row['rdf_type'] == 'http://www.w3.org/2000/01/rdf-schema#Class':
                 #elif row['type'] == 'http://www.w3.org/2000/01/rdf-schema#Class':
-                    text += '\t\t\t<td>Class</td>\n'
+                    text += '\t\t\t<td>%s</td>\n' % self.t('class')
                 elif row['rdf_type'] == 'http://www.w3.org/2004/02/skos/core#Concept':
                 #elif row['type'] == 'http://www.w3.org/2004/02/skos/core#Concept':
-                    text += '\t\t\t<td>Concept</td>\n'
+                    text += '\t\t\t<td>%s</td>\n' % self.t('concept')
                 else:
-                    text += '\t\t\t<td>' + row['rdf_type'] + '</td>\n' # this should rarely happen
+                    text += '\t\t\t<td>%s</td>\n' % row['rdf_type'] # this should rarely happen
                     #text += '\t\t\t<td>' + row['type'] + '</td>\n' # this should rarely happen
                 text += '\t\t</tr>\n'
 
                 # Look up decisions related to this term
-                for drow_index,drow in decisions_df.iterrows():
-                    if drow['linked_affected_resource'] == uri:
+                for j, decision in self.decisions_df.loc[self.decisions_df['linked_affected_resource'] == uri].iterrows():
+                    if decision['decision_localName'] != '':
                         text += '\t\t<tr>\n'
-                        text += '\t\t\t<td>Executive Committee decision</td>\n'
-                        text += '\t\t\t<td><a href="http://rs.tdwg.org/decisions/' + drow['decision_localName'] + '">http://rs.tdwg.org/decisions/' + drow['decision_localName'] + '</a></td>\n'
+                        text += '\t\t\t<td>%s</td>\n' % self.t('executive_committee_decision')
+                        text += '\t\t\t<td><a href="http://rs.tdwg.org/decisions/%s">http://rs.tdwg.org/decisions/%s</a></td>\n' % (decision['decision_localName'], decision['decision_localName'])
                         text += '\t\t</tr>\n'
 
                 text += '\t</tbody>\n'
@@ -429,20 +440,23 @@ class TermList:
         return term_table
 
 
-    def generate_term_list_markdown(self, outFileName, headerFileName, footerFileName):
+    def generate_term_list_markdown(self, locale, outFileName, dictionaryFileName, headerFileName, footerFileName):
         """
         Merge term table with header and footer Markdown, then save file
         """
 
+        # read in header and footer, merge with terms table, and output
+        with open(dictionaryFileName, encoding='utf-8') as jsonFile:
+            self.dictionary = json.load(jsonFile)
+
         print('Merging term table with header and footer and saving file')
-        index_by_name = self.generate_index_by_name(self.terms_sorted_by_localname)
-        index_by_label = self.generate_index_by_label(self.terms_sorted_by_label)
-        term_table = self.generate_vocabulary_tables(self.terms_sorted_by_localname)
+        index_by_name = self.generate_index_by_name()
+        index_by_label = self.generate_index_by_label()
+        term_table = self.generate_vocabulary_tables(locale)
         #text = index_by_label + term_table
         text = index_by_name + index_by_label + term_table
 
         # read in header and footer, merge with terms table, and output
-
         headerObject = open(headerFileName, 'rt', encoding='utf-8')
         header = headerObject.read()
         headerObject.close()
@@ -597,8 +611,10 @@ def generate_term_list_markdown(locales):
 
     for locale in locales:
         print("Generating list/index.md in", locale)
+        dictionaryFileName = 'termlist-dictionary.%s.json' % locale
         headerFileName = 'termlist-header.%s.md' % locale
         footerFileName = 'termlist-footer.%s.md' % locale
+
         if locale == 'en':
             outFileName = '../docs/list/index.md'
         else:
@@ -606,7 +622,8 @@ def generate_term_list_markdown(locales):
             os.makedirs(outFilePath, exist_ok=True)
             outFileName = outFilePath + '/index.md'
 
-        term_list_generator.generate_term_list_markdown(outFileName, headerFileName, footerFileName)
+        term_list_generator.generate_term_list_markdown(locale, outFileName, dictionaryFileName, headerFileName, footerFileName)
         print("")
 
-generate_term_list_markdown(['en'])
+#generate_term_list_markdown(['cs', 'es', 'fr', 'ko', 'zh-hant'])
+generate_term_list_markdown(['fr', 'en'])

@@ -170,7 +170,7 @@ class DwcDigester(object):
             url = inputstring.group()
             return "<a href=\"{}\">{}</a>".format(url, url)
 
-        regx = "(http[s]?://[\w\d:#@%/;$()~_?\+-;=\\\.&]*)(?<![\)\.,])"
+        regx = r"(http[s]?://[\w\d:#@%/;$()~_?\+-;=\\\.&]*)(?<![\)\.,])"
         return re.sub(regx, _handle_matched, text_with_urls)
 
     def process_terms(self):
