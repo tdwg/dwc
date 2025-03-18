@@ -6,9 +6,9 @@
 
 1. **Fix link** Create a source data CSV file for each of the namespaces that has terms that have changed. [This directory]() has examples for all of the namespaces currently being used in the main Darwin Core vocabulary. You can get the column header by starting with the appropriate file here and deleting all of the data rows. The file names can be anything, but typically we've been appending the change date to the end of the file as seen in these examples.
 2. A source data CSV MUST have a row for each term that has changed (modified or added). For existing terms that have changed, it is safest to start by copying the existing data cells for a term and then modifying them with the changes. The CSVs that contain the existing data for various namespaces are as follows. The `dwc:` namespace terms are [here](https://github.com/tdwg/rs.tdwg.org/blob/master/terms/terms.csv), `dwciri:` terms are [here](https://github.com/tdwg/rs.tdwg.org/blob/master/iri/iri.csv), `dc:` terms are [here](https://github.com/tdwg/rs.tdwg.org/blob/master/dc-for-dwc/dc-for-dwc.csv), and the `dcterms:` terms are [here](https://github.com/tdwg/rs.tdwg.org/blob/master/dcterms-for-dwc/dcterms-for-dwc.csv).
-3. If a new term is being added, fill in a new row anywhere below the header row. The row order is unimportant. 
-5. Create a new branch (or fork if you don't have push rights) of the [rs.tdwg.org repo](https://github.com/tdwg/rs.tdwg.org). We have been saving copies of the changes in [this directory](https://github.com/tdwg/rs.tdwg.org/tree/master/process/dwc-revisions) so that we can easily see what's been changed for each past version. 
+3. If a new term is being added, fill in a new row anywhere below the header row. The row order is unimportant.
 4. **Fix link** Special care must be taken if columns are added (i.e. metadata properties are added). This is not for the faint of heart! The new columns must be added to every file used as source data for the various scripts and the column header mapping files also need to be edited. See [this page](for more details). This should be a rare event. DO NOT ever delete columns! If you want to elimite values for a property, just leave empty strings in all of the cells of that property's column.
+5. Create a new branch (or fork if you don't have push rights) of the [rs.tdwg.org repo](https://github.com/tdwg/rs.tdwg.org). We have been saving copies of the changes in [this directory](https://github.com/tdwg/rs.tdwg.org/tree/master/process/dwc-revisions) so that we can easily see what's been changed for each past version.
 6. **Fix link** Modify the [configuration file](https://github.com/tdwg/rs.tdwg.org/blob/master/process/config.json) so that it points to each CSV for each namespace. We have been saving copies of the config file with each update, so you can look at [the file that goes along with the CSV files linked as examples above]() to see what needs to be there. Only include data for the namespaces that will be updated.
 7. Run the [processing script](https://github.com/tdwg/rs.tdwg.org/blob/master/process/process.py), which needs to be in the same directory as the configuration file. It's good to look at the diffs for all of the files to make sure that they look sensible.
 8. **Dublin Core changes only.** There are some manual edits that need to be made if there are changes to either of the Dublin Core namespace terms. The versions don't get handled very automatically, so make the same changes to the [dcterms: version CSV](https://github.com/tdwg/rs.tdwg.org/blob/master/dcterms-for-dwc-versions/dcterms-for-dwc-versions.csv) or [dc: version CSV](https://github.com/tdwg/rs.tdwg.org/blob/master/dc-for-dwc-versions/dc-for-dwc-versions.csv) as were made to the main term CSVs.
@@ -61,9 +61,11 @@ The script `generate_normative_csv.py` pulls source data from the [rs.tdwg.org](
 
 It generates the file `term_versions.csv`, which is used as the input for the `build.py` script above.
 
-## Generating the "list of terms" document
+## Generating the "list of terms" and vocabulary documents
 
-The Python script `build-termlist.py` inputs the header information from `termlist-header.md`, then builds the list of terms and their metadata from data in the [rs.tdwg.org](http://github.com/tdwg/rs.tdwg.org) repository. The script also inputs `termlist-footer.md` and appends it to the end of the generated document, but currently it has no content. The constructed Markdown document is saved as `/docs/list/index.md`. 
+The Python script `build-termlist.py` uses the header information from `*/termlist-header.en.md`, then builds the list of terms and their metadata from data in the [rs.tdwg.org](http://github.com/tdwg/rs.tdwg.org) repository. The script also inputs `termlist-footer.en.md` and appends it to the end of the generated document, but currently it has no content. The constructed Markdown documents are saved as `/docs/list/index.md`, `/docs/em/index.md`, `/docs/doe/index.md` and `/docs/pathway/index.md`.
+
+This script will be run whenever translations to the header text or term values are changed.
 
 ------
-Last edited: 2023-06-28
+Last edited: 2025-03-18

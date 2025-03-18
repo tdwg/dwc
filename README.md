@@ -31,21 +31,21 @@ The repository structure is described below. Files/directories indicated with `G
 │   ├── build_other_doc_header.py : Script to build non-list of terms documents from their editable templates
 │   ├── build.py                  : Build script to generate distribution files from the normative document
 │   ├── build-termlist.py         : Script to build Markdown pages that provide term metadata for complex vocabularies
-│   ├── doe-cv-build              : Directory of build scripts for the degreeOfEstablishment controlled vocabulary
+│   ├── doe-template              : Templates for the degreeOfEstablishment controlled vocabulary document
 │   ├── dwc_terms_guides_rdf      : Directory containing editable template for generating RDF guide
 │   ├── dwc_terms_guides_text     : Directory containing editable template for generating text guide
 │   ├── dwc_terms_guides_xml      : Directory containing editable template for generating XML guide
 │   ├── dwc_terms_namespace       : Directory containing editable template for generating namespace policy
 │   ├── dwc_terms_simple          : Directory containing editable template for generating Simple DwC guide
-│   ├── em-cv-build               : Directory of build scripts for the establishmentMeans controlled vocabulary
+│   ├── em-template               : Templates for the establishmentMeans controlled vocabulary document
 │   ├── ext                       : Directory for GENERATED XML extension definitions
 │   ├── generate_term_versions.py : Script to build the terms_versions.csv file
-│   ├── pw-cv-build               : Directory of build scripts for the pathway controlled vocabulary
+│   ├── list-template             : Templates for the generated term list document
+│   ├── pw-template               : Templates for the pathway controlled vocabulary document
 │   ├── qrg-list.csv              : List of the term IRIs in the order that they are to appear in the Quick Reference Guide
 │   ├── README.md                 : Workflow for generating a new version of the vocabulary
 │   ├── requirements.txt          : List of libraries required by the build scripts
-│   ├── termlist-footer.md        : Footer to append to the generated term list document
-│   ├── termlist-header.md        : Header to prepend to the generated term list document
+│   ├── termlist-dictionary.en.json : Values available for translation for term list documents.
 │   ├── terms.tmpl                : A Jinja2 template to format the Quick Reference Guide
 │   ├── update_previous_doc.py    : Script to move current doc to a version and update version links in it
 │   ├── workflow_diagram.png      : Figure used in README.md to show how to create a new version of the standard

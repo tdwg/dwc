@@ -1,6 +1,7 @@
 # Script to build Markdown pages that provide term metadata for complex vocabularies
 # Steve Baskauf 2020-08-12 CC0
 # updated 2021-02-11
+# Updated by Matthew Blissett 2025-03.
 # This script merges static Markdown header and footer documents with term information tables (in Markdown) generated from data in the rs.tdwg.org repo from the TDWG Github site
 
 import re
@@ -14,14 +15,6 @@ import yaml
 # -----------------
 # Configuration section
 # -----------------
-
-# !!!! NOTE !!!!
-# There is not currently an example of a complex vocabulary that has the column headers
-# used in the sample files. In order to test this script, it uses the Audubon Core files,
-# which have headers that differ from the samples. So throughout the code, there are
-# pairs of lines where the default header names are commented out and the Audubon Core
-# headers are not. To build a page using the sample files, you will need to reverse the
-# commenting of these pairs.
 
 github_branch = 'master' # "master" for production, something else for development
 
@@ -125,17 +118,6 @@ class TermList:
         Create metadata table and populate using data from namespace databases in GitHub
         """
 
-        # Create column list
-        column_list = ['pref_ns_prefix', 'pref_ns_uri', 'term_localName', 'label', 'rdfs_comment', 'dcterms_description', 'examples', 'term_modified', 'term_deprecated', 'rdf_type', 'tdwgutility_abcdEquivalence', 'replaces_term', 'replaces1_term']
-        #column_list = ['pref_ns_prefix', 'pref_ns_uri', 'term_localName', 'label', 'definition', 'usage', 'notes', 'term_modified', 'term_deprecated', 'type']
-        if self.vocab_type == 2:
-            column_list += ['controlled_value_string']
-        elif self.vocab_type == 3:
-            column_list += ['controlled_value_string', 'skos_broader']
-        if self.organized_in_categories:
-            column_list.append('tdwgutility_organizedInClass')
-        column_list.append('version_iri')
-
         print('Retrieving metadata about terms from all namespaces from GitHub')
         for i, term_list in self.term_lists_info.iterrows():
             # retrieve current term metadata for term list
@@ -145,14 +127,8 @@ class TermList:
             #print('metadata_df', metadata_df)
             metadata_df = metadata_df.assign(pref_ns_prefix=term_list['pref_ns_prefix'],
                                              pref_ns_uri=term_list['pref_ns_uri'])
-            #print('metadata_df', metadata_df)
-            # TODO    if self.vocab_type == 2:
-            #        row_list += [row['controlled_value_string']]
-            #    elif self.vocab_type == 3:
-            #        if row['skos_broader'] =='':
-            #            row_list += [row['controlled_value_string'], '']
-            #        else:
-            #            row_list += [row['controlled_value_string'], term_list['pref_ns_prefix'] + ':' + row['skos_broader']]
+            # Rename columns in vocabularies to match the columns in the DWC term list.
+            metadata_df = metadata_df.rename(columns={'type': 'rdf_type'})
 
             # retrieve versions metadata for term list
             versions_url = githubBaseUri + term_list['database'] + '-versions/' + term_list['database'] + '-versions.csv'
@@ -187,15 +163,12 @@ class TermList:
 
         frame = frame.fillna('')
 
-        print("M frame\n", frame)
-
         self.terms_sorted_by_label = frame.sort_values(by='label')
-        #terms_sorted_by_localname = frame.sort_values(by='term_localName')
 
         # This makes sort case insensitive
         self.terms_sorted_by_localname = frame.iloc[frame.term_localName.str.lower().argsort()]
         print('done retrieving')
-        print('terms_sorted_by_localname', self.terms_sorted_by_localname.columns.values)
+        #print('Columns of terms_sorted_by_localname:', self.terms_sorted_by_localname.columns.values)
         print()
 
 
@@ -205,6 +178,13 @@ class TermList:
         else:
             raise Exception("Value %s not present in translation dictionary" % key)
 
+    def first(self, row, column_names):
+        """
+        Return the value of the first extant column in the row.
+        """
+        for name in column_names:
+            if name in row:
+                return row[name]
 
     def generate_index_by_name(self):
         """
@@ -222,7 +202,7 @@ class TermList:
                 curie = row['pref_ns_prefix'] + ":" + row['term_localName']
                 curie_anchor = curie.replace(':','_')
                 text += '[' + curie + '](#' + curie_anchor + ') |\n'
-        text = text[:len(text)-2] # remove final trailing vertical bar and newline
+        text = text[:len(text)-3] # remove final trailing " |\n"
         text += '\n\n' # put back removed newline
 
         for category in range(0,len(self.display_order)):
@@ -239,7 +219,7 @@ class TermList:
                     curie = row['pref_ns_prefix'] + ":" + row['term_localName']
                     curie_anchor = curie.replace(':','_')
                     text += '[' + curie + '](#' + curie_anchor + ') |\n'
-            text = text[:len(text)-2] # remove final trailing vertical bar and newline
+            text = text[:len(text)-3] # remove final trailing " |\n"
             text += '\n\n' # put back removed newline
 
         index_by_name = text
@@ -257,39 +237,39 @@ class TermList:
         print('Generating term index by label')
         text = '\n\n'
 
-        # Comment out the following two lines if there is no index by local names
-        text = '### 3.2 %s\n\n' % self.t('index_by_label')
-        text += '%s\n\n' % self.t('see_also_index_by_term_name')
+        if self.organized_in_categories:
+            text += '### 3.2 %s\n\n' % self.t('index_by_label')
+            text += '%s\n\n' % self.t('see_also_index_by_term_name')
 
-        text += '**%s**\n' % self.t('classes')
-        text += '\n'
+        seen_class = False
         for row_index,row in self.terms_sorted_by_label.iterrows():
             if row['rdf_type'] == 'http://www.w3.org/2000/01/rdf-schema#Class':
+                if not seen_class:
+                    text += '**%s**\n' % self.t('classes')
+                    text += '\n'
+                    seen_class = True
                 curie_anchor = row['pref_ns_prefix'] + "_" + row['term_localName']
                 text += '[' + row['label'] + '](#' + curie_anchor + ') |\n'
-        text = text[:len(text)-2] # remove final trailing vertical bar and newline
+        text = text[:len(text)-3] # remove final trailing " |\n"
         text += '\n\n' # put back removed newline
 
         for category in range(0,len(self.display_order)):
             if self.organized_in_categories:
-                text += '**%s**\n' % self.display_label[category]
-                text += '\n'
+                text += '**%s**\n\n' % self.display_label[category]
                 filtered_table = self.terms_sorted_by_label[self.terms_sorted_by_label['tdwgutility_organizedInClass']==self.display_order[category]]
                 filtered_table.reset_index(drop=True, inplace=True)
             else:
                 filtered_table = self.terms_sorted_by_label
 
             for row_index,row in filtered_table.iterrows():
-                if row_index == 0 or (row_index != 0 and row['label'] != filtered_table.iloc[row_index - 1].loc['label']): # this is a hack to prevent duplicate labels
-                    if row['rdf_type'] != 'http://www.w3.org/2000/01/rdf-schema#Class':
-                        curie_anchor = row['pref_ns_prefix'] + "_" + row['term_localName']
-                        text += '[' + row['label'] + '](#' + curie_anchor + ') |\n'
-            text = text[:len(text)-2] # remove final trailing vertical bar and newline
+                if 'rdf_type' in row and row['rdf_type'] != 'http://www.w3.org/2000/01/rdf-schema#Class':
+                    curie_anchor = row['pref_ns_prefix'] + "_" + row['term_localName']
+                    text += '[' + row['label'] + '](#' + curie_anchor + ') |\n'
+            text = text[:len(text)-3] # remove final trailing " |\n"
             text += '\n\n' # put back removed newline
 
         index_by_label = text
         print()
-
         #print(index_by_label)
         return index_by_label
 
@@ -326,7 +306,7 @@ class TermList:
                 text += '\t\t<tr>\n'
                 curie = row['pref_ns_prefix'] + ":" + row['term_localName']
                 curieAnchor = curie.replace(':','_')
-                text += '\t\t\t<th colspan="2"><a id="%s"></a>%s  %s</th>\n' % (curieAnchor, self.t('term_name'), curie) # TODO double space
+                text += '\t\t\t<th colspan="2"><a id="%s"></a>%s %s</th>\n' % (curieAnchor, self.t('term_name'), curie)
                 text += '\t\t</tr>\n'
                 text += '\t</thead>\n'
                 text += '\t<tbody>\n'
@@ -365,33 +345,38 @@ class TermList:
 
                 text += '\t\t<tr>\n'
                 text += '\t\t\t<td>%s</td>\n' % self.t('definition')
-                text += '\t\t\t<td>%s</td>\n' % row['rdfs_comment'+l]
-                #text += '\t\t\t<td>' + row['definition'] + '</td>\n'
+                if 'rdfs_comment' in row:
+                    text += '\t\t\t<td>%s</td>\n' % row['rdfs_comment'+l]
+                else:
+                    text += '\t\t\t<td>' + row['definition'+l] + '</td>\n'
                 text += '\t\t</tr>\n'
 
-                if row['dcterms_description'] != '':
-                #if row['notes'] != '':
+                if 'usage' in row and row['usage'] != '':
                     text += '\t\t<tr>\n'
-                    text += '\t\t\t<td>%s</td>\n' % self.t('notes')
-                    text += '\t\t\t<td>%s</td>\n' % convert_link(convert_code(row['dcterms_description'+l]))
-                    #text += '\t\t\t<td>' + convert_link(convert_code(row['notes'])) + '</td>\n'
+                    text += '\t\t\t<td>%s</td>\n' % self.t('usage')
+                    text += '\t\t\t<td>%s</td>\n' % convert_examples(convert_link(convert_code(row['usage'+l])))
                     text += '\t\t</tr>\n'
 
-                if row['examples'] != '':
-                #if row['usage'] != '':
+                notes = self.first(row, ['dcterms_description'+l, 'notes'+l])
+                if notes != '':
+                    text += '\t\t<tr>\n'
+                    text += '\t\t\t<td>%s</td>\n' % self.t('notes')
+                    text += '\t\t\t<td>%s</td>\n' % convert_link(convert_code(notes))
+                    text += '\t\t</tr>\n'
+
+                if 'examples' in row and row['examples'] != '':
                     text += '\t\t<tr>\n'
                     text += '\t\t\t<td>%s</td>\n' % self.t('examples')
                     text += '\t\t\t<td>%s</td>\n' % convert_examples(convert_link(convert_code(row['examples'+l])))
-                    #text += '\t\t\t<td>' + convert_link(convert_code(row['usage'])) + '</td>\n'
                     text += '\t\t</tr>\n'
 
-                if row['tdwgutility_abcdEquivalence'] != '':
+                if 'tdwgutility_abcdEquivalence' in row and row['tdwgutility_abcdEquivalence'] != '':
                     text += '\t\t<tr>\n'
                     text += '\t\t\t<td>%s</td>\n' % self.t('abcd_equivalence')
                     text += '\t\t\t<td>%s</td>\n' % convert_link(convert_code(row['tdwgutility_abcdEquivalence']))
                     text += '\t\t</tr>\n'
 
-                if self.vocab_type == 2 or self.vocab_type ==3: # controlled vocabulary
+                if (self.vocab_type == 2 or self.vocab_type == 3) and row['controlled_value_string'] != '': # controlled vocabulary
                     text += '\t\t<tr>\n'
                     text += '\t\t\t<td>%s</td>\n' % self.t('controlled_value')
                     text += '\t\t\t<td>%s</td>\n' % row['controlled_value_string']
@@ -400,24 +385,19 @@ class TermList:
                 if self.vocab_type == 3 and row['skos_broader'] != '': # controlled vocabulary with skos:broader relationships
                     text += '\t\t<tr>\n'
                     text += '\t\t\t<td>%s</td>\n' % self.t('has_broader_concept')
-                    curieAnchor = row['skos_broader'].replace(':','_')
-                    text += '\t\t\t<td><a href="#%s">%s</a></td>\n' % (curieAnchor, row['skos_broader'])
+                    text += '\t\t\t<td><a href="#%s_%s">%s:%s</a></td>\n' % (row['pref_ns_prefix'], row['skos_broader'], row['pref_ns_prefix'], row['skos_broader'])
                     text += '\t\t</tr>\n'
 
                 text += '\t\t<tr>\n'
                 text += '\t\t\t<td>%s</td>\n' % self.t('type')
                 if row['rdf_type'] == 'http://www.w3.org/1999/02/22-rdf-syntax-ns#Property':
-                #if row['type'] == 'http://www.w3.org/1999/02/22-rdf-syntax-ns#Property':
                     text += '\t\t\t<td>%s</td>\n' % self.t('property')
                 elif row['rdf_type'] == 'http://www.w3.org/2000/01/rdf-schema#Class':
-                #elif row['type'] == 'http://www.w3.org/2000/01/rdf-schema#Class':
                     text += '\t\t\t<td>%s</td>\n' % self.t('class')
                 elif row['rdf_type'] == 'http://www.w3.org/2004/02/skos/core#Concept':
-                #elif row['type'] == 'http://www.w3.org/2004/02/skos/core#Concept':
                     text += '\t\t\t<td>%s</td>\n' % self.t('concept')
                 else:
                     text += '\t\t\t<td>%s</td>\n' % row['rdf_type'] # this should rarely happen
-                    #text += '\t\t\t<td>' + row['type'] + '</td>\n' # this should rarely happen
                 text += '\t\t</tr>\n'
 
                 # Look up decisions related to this term
@@ -450,11 +430,11 @@ class TermList:
             self.dictionary = json.load(jsonFile)
 
         print('Merging term table with header and footer and saving file')
-        index_by_name = self.generate_index_by_name()
-        index_by_label = self.generate_index_by_label()
-        term_table = self.generate_vocabulary_tables(locale)
-        #text = index_by_label + term_table
-        text = index_by_name + index_by_label + term_table
+        text = ''
+        if self.organized_in_categories:
+            text += self.generate_index_by_name()
+        text += self.generate_index_by_label()
+        text += self.generate_vocabulary_tables(locale)
 
         # read in header and footer, merge with terms table, and output
         headerObject = open(headerFileName, 'rt', encoding='utf-8')
@@ -572,58 +552,91 @@ def convert_examples(text_with_list_of_examples: str) -> str:
         return output
 
 
-
-
-def generate_term_list_markdown(locales):
+def generate_markdown(path, locales, termLists, hasNamespace, vocabType, organizedInCategories, displayOrder, displayLabel, displayComments, displayId):
     """
-    Generate the Darwin Core term list, https://dwc.tdwg.org/list/
+    Generate a Darwin Core term list for DWC terms or one of its vocabularies.
+
+    Keyword arguments:
+    path -- Path fragment used for output and finding templates
+    locales -- Locales to generate
+    termLists -- list of database names of the term lists to be included in the document
+    hasNamespace -- set to True for a list of terms containing multiple namespaces
+    vocabType -- 1 is simple vocabulary, 2 is simple controlled vocabulary, 3 is a c.v. with broader hierarchy
+    organizedInCategories -- Terms in large vocabularies like Darwin and AV Cores may be organized into categories using tdwgutility_organizedInClass.  If so, those categories can be used to group terms in the generated term list document.
+    displayOrder -- If organized in categories, the display_order list must contain the IRIs that are values of tdwgutility_organizedInClass. Otherwise set to [''].
+    displayLabel -- these are the section labels for the categories in the page
+    displayComments -- these are the comments about the category to be appended following the section labels
+    displayId -- these are the fragment identifiers for the associated sections for the categories
+
     """
 
-    # This is a Python list of the database names of the term lists to be included in the document.
-    termLists = ['terms', 'iri', 'dc-for-dwc', 'dcterms-for-dwc']
-    #termLists = ['pathway']
-
-    # If this list of terms is for terms in a single namespace, set the value of has_namespace to True. The value
-    # of has_namespace should be False for a list of terms that contains multiple namespaces.
-    has_namespace = False
-
-    # NOTE! There may be problems unless every term list is of the same vocabulary type since the number of columns will differ
-    # However, there probably aren't any circumstances where mixed types will be used to generate the same page.
-    vocab_type = 1 # 1 is simple vocabulary, 2 is simple controlled vocabulary, 3 is c.v. with broader hierarchy
-
-    # Terms in large vocabularies like Darwin and Audubon Cores may be organized into categories using tdwgutility_organizedInClass
-    # If so, those categories can be used to group terms in the generated term list document.
-    organized_in_categories = True
-
-    # If organized in categories, the display_order list must contain the IRIs that are values of tdwgutility_organizedInClass
-    # If not organized into categories, the value is irrelevant. There just needs to be one item in the list.
-    display_order = ['', 'http://purl.org/dc/elements/1.1/', 'http://purl.org/dc/terms/', 'http://rs.tdwg.org/dwc/terms/Occurrence', 'http://rs.tdwg.org/dwc/terms/Organism', 'http://rs.tdwg.org/dwc/terms/MaterialEntity', 'http://rs.tdwg.org/dwc/terms/MaterialSample', 'http://rs.tdwg.org/dwc/terms/Event', 'http://purl.org/dc/terms/Location', 'http://rs.tdwg.org/dwc/terms/GeologicalContext', 'http://rs.tdwg.org/dwc/terms/Identification', 'http://rs.tdwg.org/dwc/terms/Taxon', 'http://rs.tdwg.org/dwc/terms/MeasurementOrFact', 'http://rs.tdwg.org/dwc/terms/ResourceRelationship', 'http://rs.tdwg.org/dwc/terms/attributes/UseWithIRI']
-    display_label = ['Record level', 'Dublin Core legacy namespace', 'Dublin Core terms namespace', 'Occurrence', 'Organism', 'Material Entity', 'Material Sample', 'Event', 'Location', 'Geological Context', 'Identification', 'Taxon', 'Measurement or Fact', 'Resource Relationship', 'IRI-value terms']
-    display_comments = ['','','','','','','','','','','','','','','']
-    display_id = ['record_level', 'dc', 'dcterms', 'occurrence', 'organism', 'material_entity', 'material_sample', 'event', 'location', 'geological_context', 'identification', 'taxon', 'measurement_or_fact', 'resource_relationship', 'use_with_iri']
-
-    #display_order = ['']
-    #display_label = ['Vocabulary'] # these are the section labels for the categories in the page
-    #display_comments = [''] # these are the comments about the category to be appended following the section labels
-    #display_id = ['Vocabulary'] # these are the fragment identifiers for the associated sections for the categories
-
-    term_list_generator = TermList(termLists, has_namespace, vocab_type, organized_in_categories, display_order, display_label, display_comments, display_id)
+    term_list_generator = TermList(termLists, hasNamespace, vocabType, organizedInCategories, displayOrder, displayLabel, displayComments, displayId)
 
     for locale in locales:
-        print("Generating list/index.md in", locale)
+        print("Generating %s/index.md in" % path, locale)
         dictionaryFileName = 'termlist-dictionary.%s.json' % locale
-        headerFileName = 'termlist-header.%s.md' % locale
-        footerFileName = 'termlist-footer.%s.md' % locale
+        headerFileName = path + '-template/termlist-header.%s.md' % locale
+        footerFileName = path + '-template/termlist-footer.%s.md' % locale
 
         if locale == 'en':
-            outFileName = '../docs/list/index.md'
+            outFileName = '../docs/%s/index.md' % path
         else:
-            outFilePath = '../docs/%s/list' % locale
+            outFilePath = '../docs/%s/%s' % (locale, path)
             os.makedirs(outFilePath, exist_ok=True)
             outFileName = outFilePath + '/index.md'
 
         term_list_generator.generate_term_list_markdown(locale, outFileName, dictionaryFileName, headerFileName, footerFileName)
         print("")
 
-#generate_term_list_markdown(['cs', 'es', 'fr', 'ko', 'zh-hant'])
-generate_term_list_markdown(['fr', 'en'])
+
+# Darwin Core Terms
+generate_markdown(path = 'list',
+                  locales=['fr', 'en'],
+                  termLists = ['terms', 'iri', 'dc-for-dwc', 'dcterms-for-dwc'],
+                  hasNamespace = False,
+                  vocabType = 1,
+                  organizedInCategories = True,
+                  displayOrder = ['', 'http://purl.org/dc/elements/1.1/', 'http://purl.org/dc/terms/', 'http://rs.tdwg.org/dwc/terms/Occurrence', 'http://rs.tdwg.org/dwc/terms/Organism', 'http://rs.tdwg.org/dwc/terms/MaterialEntity', 'http://rs.tdwg.org/dwc/terms/MaterialSample', 'http://rs.tdwg.org/dwc/terms/Event', 'http://purl.org/dc/terms/Location', 'http://rs.tdwg.org/dwc/terms/GeologicalContext', 'http://rs.tdwg.org/dwc/terms/Identification', 'http://rs.tdwg.org/dwc/terms/Taxon', 'http://rs.tdwg.org/dwc/terms/MeasurementOrFact', 'http://rs.tdwg.org/dwc/terms/ResourceRelationship', 'http://rs.tdwg.org/dwc/terms/attributes/UseWithIRI'],
+                  displayLabel = ['Record level', 'Dublin Core legacy namespace', 'Dublin Core terms namespace', 'Occurrence', 'Organism', 'Material Entity', 'Material Sample', 'Event', 'Location', 'Geological Context', 'Identification', 'Taxon', 'Measurement or Fact', 'Resource Relationship', 'IRI-value terms'],
+                  displayComments = ['','','','','','','','','','','','','','',''],
+                  displayId = ['record_level', 'dc', 'dcterms', 'occurrence', 'organism', 'material_entity', 'material_sample', 'event', 'location', 'geological_context', 'identification', 'taxon', 'measurement_or_fact', 'resource_relationship', 'use_with_iri'],
+                  )
+
+# Darwin Core — Establishment Means
+generate_markdown(path = 'em',
+                  locales=['en'],
+                  termLists = ['establishmentMeans'],
+                  hasNamespace = True,
+                  vocabType = 2,
+                  organizedInCategories = False,
+                  displayOrder = [''],
+                  displayLabel = ['Vocabulary'],
+                  displayComments = [''],
+                  displayId = ['Vocabulary'],
+                  )
+
+# Darwin Core — Degree of Establishment
+generate_markdown(path = 'doe',
+                  locales=['en'],
+                  termLists = ['degreeOfEstablishment'],
+                  hasNamespace = True,
+                  vocabType = 2,
+                  organizedInCategories = False,
+                  displayOrder = [''],
+                  displayLabel = ['Vocabulary'],
+                  displayComments = [''],
+                  displayId = ['Vocabulary'],
+                  )
+
+# Darwin Core — Pathway
+generate_markdown(path = 'pw',
+                  locales=['en'],
+                  termLists = ['pathway'],
+                  hasNamespace = True,
+                  vocabType = 3,
+                  organizedInCategories = False,
+                  displayOrder = [''],
+                  displayLabel = ['Vocabulary'],
+                  displayComments = [''],
+                  displayId = ['Vocabulary'],
+                  )
