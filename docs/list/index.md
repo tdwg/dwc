@@ -691,6 +691,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [Accepted Scientific Name ID](#dwc_acceptedScientificNameID) |
 [Accepted Taxon](#dwc_AcceptedTaxon) |
 [Accepted Taxon ID](#dwc_AcceptedTaxonID) |
+[Accepted Taxon ID](#dwc_acceptedTaxonID) |
 [Accepted Taxon Name](#dwc_acceptedTaxonName) |
 [Accepted Taxon Name ID](#dwc_acceptedTaxonNameID) |
 [Basionym](#dwc_basionym) |
@@ -737,6 +738,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [Taxon Attributes](#dwc_taxonAttributes) |
 [Taxon Concept ID](#dwc_taxonConceptID) |
 [Taxon ID](#dwc_TaxonID) |
+[Taxon ID](#dwc_taxonID) |
 [Taxon Name ID](#dwc_taxonNameID) |
 [Taxon Rank](#dwc_taxonRank) |
 [Taxon Remarks](#dwc_taxonRemarks) |
