@@ -58,6 +58,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 ## 3 Term index
 
 
+
 [agriculture (including biofuel feedstocks)](#dwcpw_p009) |
 [angling/fishing equipment](#dwcpw_p031) |
 [aquaculture/mariculture](#dwcpw_p010) |
@@ -117,7 +118,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p"></a>Term Name  dwcpw:p</th>
+			<th colspan="2"><a id="dwcpw_p"></a>Term Name dwcpw:p</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -155,7 +156,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p001"></a>Term Name  dwcpw:p001</th>
+			<th colspan="2"><a id="dwcpw_p001"></a>Term Name dwcpw:p001</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -205,7 +206,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p002"></a>Term Name  dwcpw:p002</th>
+			<th colspan="2"><a id="dwcpw_p002"></a>Term Name dwcpw:p002</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -255,7 +256,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p003"></a>Term Name  dwcpw:p003</th>
+			<th colspan="2"><a id="dwcpw_p003"></a>Term Name dwcpw:p003</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -305,7 +306,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p004"></a>Term Name  dwcpw:p004</th>
+			<th colspan="2"><a id="dwcpw_p004"></a>Term Name dwcpw:p004</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -355,7 +356,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p005"></a>Term Name  dwcpw:p005</th>
+			<th colspan="2"><a id="dwcpw_p005"></a>Term Name dwcpw:p005</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -405,7 +406,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p006"></a>Term Name  dwcpw:p006</th>
+			<th colspan="2"><a id="dwcpw_p006"></a>Term Name dwcpw:p006</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -455,7 +456,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p007"></a>Term Name  dwcpw:p007</th>
+			<th colspan="2"><a id="dwcpw_p007"></a>Term Name dwcpw:p007</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -505,7 +506,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p008"></a>Term Name  dwcpw:p008</th>
+			<th colspan="2"><a id="dwcpw_p008"></a>Term Name dwcpw:p008</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -555,7 +556,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p009"></a>Term Name  dwcpw:p009</th>
+			<th colspan="2"><a id="dwcpw_p009"></a>Term Name dwcpw:p009</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -605,7 +606,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p010"></a>Term Name  dwcpw:p010</th>
+			<th colspan="2"><a id="dwcpw_p010"></a>Term Name dwcpw:p010</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -655,7 +656,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p011"></a>Term Name  dwcpw:p011</th>
+			<th colspan="2"><a id="dwcpw_p011"></a>Term Name dwcpw:p011</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -705,7 +706,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p012"></a>Term Name  dwcpw:p012</th>
+			<th colspan="2"><a id="dwcpw_p012"></a>Term Name dwcpw:p012</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -759,7 +760,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p013"></a>Term Name  dwcpw:p013</th>
+			<th colspan="2"><a id="dwcpw_p013"></a>Term Name dwcpw:p013</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -809,7 +810,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p014"></a>Term Name  dwcpw:p014</th>
+			<th colspan="2"><a id="dwcpw_p014"></a>Term Name dwcpw:p014</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -859,7 +860,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p015"></a>Term Name  dwcpw:p015</th>
+			<th colspan="2"><a id="dwcpw_p015"></a>Term Name dwcpw:p015</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -909,7 +910,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p016"></a>Term Name  dwcpw:p016</th>
+			<th colspan="2"><a id="dwcpw_p016"></a>Term Name dwcpw:p016</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -963,7 +964,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p017"></a>Term Name  dwcpw:p017</th>
+			<th colspan="2"><a id="dwcpw_p017"></a>Term Name dwcpw:p017</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1013,7 +1014,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p018"></a>Term Name  dwcpw:p018</th>
+			<th colspan="2"><a id="dwcpw_p018"></a>Term Name dwcpw:p018</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1063,7 +1064,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p019"></a>Term Name  dwcpw:p019</th>
+			<th colspan="2"><a id="dwcpw_p019"></a>Term Name dwcpw:p019</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1113,7 +1114,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p020"></a>Term Name  dwcpw:p020</th>
+			<th colspan="2"><a id="dwcpw_p020"></a>Term Name dwcpw:p020</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1163,7 +1164,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p021"></a>Term Name  dwcpw:p021</th>
+			<th colspan="2"><a id="dwcpw_p021"></a>Term Name dwcpw:p021</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1213,7 +1214,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p022"></a>Term Name  dwcpw:p022</th>
+			<th colspan="2"><a id="dwcpw_p022"></a>Term Name dwcpw:p022</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1263,7 +1264,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p023"></a>Term Name  dwcpw:p023</th>
+			<th colspan="2"><a id="dwcpw_p023"></a>Term Name dwcpw:p023</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1313,7 +1314,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p024"></a>Term Name  dwcpw:p024</th>
+			<th colspan="2"><a id="dwcpw_p024"></a>Term Name dwcpw:p024</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1367,7 +1368,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p025"></a>Term Name  dwcpw:p025</th>
+			<th colspan="2"><a id="dwcpw_p025"></a>Term Name dwcpw:p025</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1417,7 +1418,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p026"></a>Term Name  dwcpw:p026</th>
+			<th colspan="2"><a id="dwcpw_p026"></a>Term Name dwcpw:p026</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1471,7 +1472,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p027"></a>Term Name  dwcpw:p027</th>
+			<th colspan="2"><a id="dwcpw_p027"></a>Term Name dwcpw:p027</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1521,7 +1522,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p028"></a>Term Name  dwcpw:p028</th>
+			<th colspan="2"><a id="dwcpw_p028"></a>Term Name dwcpw:p028</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1571,7 +1572,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p029"></a>Term Name  dwcpw:p029</th>
+			<th colspan="2"><a id="dwcpw_p029"></a>Term Name dwcpw:p029</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1625,7 +1626,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p030"></a>Term Name  dwcpw:p030</th>
+			<th colspan="2"><a id="dwcpw_p030"></a>Term Name dwcpw:p030</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1675,7 +1676,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p031"></a>Term Name  dwcpw:p031</th>
+			<th colspan="2"><a id="dwcpw_p031"></a>Term Name dwcpw:p031</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1725,7 +1726,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p032"></a>Term Name  dwcpw:p032</th>
+			<th colspan="2"><a id="dwcpw_p032"></a>Term Name dwcpw:p032</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1775,7 +1776,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p033"></a>Term Name  dwcpw:p033</th>
+			<th colspan="2"><a id="dwcpw_p033"></a>Term Name dwcpw:p033</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1825,7 +1826,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p034"></a>Term Name  dwcpw:p034</th>
+			<th colspan="2"><a id="dwcpw_p034"></a>Term Name dwcpw:p034</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1875,7 +1876,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p035"></a>Term Name  dwcpw:p035</th>
+			<th colspan="2"><a id="dwcpw_p035"></a>Term Name dwcpw:p035</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1925,7 +1926,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p036"></a>Term Name  dwcpw:p036</th>
+			<th colspan="2"><a id="dwcpw_p036"></a>Term Name dwcpw:p036</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1979,7 +1980,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p037"></a>Term Name  dwcpw:p037</th>
+			<th colspan="2"><a id="dwcpw_p037"></a>Term Name dwcpw:p037</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2029,7 +2030,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p038"></a>Term Name  dwcpw:p038</th>
+			<th colspan="2"><a id="dwcpw_p038"></a>Term Name dwcpw:p038</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2079,7 +2080,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p039"></a>Term Name  dwcpw:p039</th>
+			<th colspan="2"><a id="dwcpw_p039"></a>Term Name dwcpw:p039</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2129,7 +2130,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p040"></a>Term Name  dwcpw:p040</th>
+			<th colspan="2"><a id="dwcpw_p040"></a>Term Name dwcpw:p040</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2179,7 +2180,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p041"></a>Term Name  dwcpw:p041</th>
+			<th colspan="2"><a id="dwcpw_p041"></a>Term Name dwcpw:p041</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2229,7 +2230,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p042"></a>Term Name  dwcpw:p042</th>
+			<th colspan="2"><a id="dwcpw_p042"></a>Term Name dwcpw:p042</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2283,7 +2284,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p043"></a>Term Name  dwcpw:p043</th>
+			<th colspan="2"><a id="dwcpw_p043"></a>Term Name dwcpw:p043</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2333,7 +2334,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p044"></a>Term Name  dwcpw:p044</th>
+			<th colspan="2"><a id="dwcpw_p044"></a>Term Name dwcpw:p044</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2383,7 +2384,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p045"></a>Term Name  dwcpw:p045</th>
+			<th colspan="2"><a id="dwcpw_p045"></a>Term Name dwcpw:p045</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2433,7 +2434,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p046"></a>Term Name  dwcpw:p046</th>
+			<th colspan="2"><a id="dwcpw_p046"></a>Term Name dwcpw:p046</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2483,7 +2484,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p047"></a>Term Name  dwcpw:p047</th>
+			<th colspan="2"><a id="dwcpw_p047"></a>Term Name dwcpw:p047</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2533,7 +2534,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p048"></a>Term Name  dwcpw:p048</th>
+			<th colspan="2"><a id="dwcpw_p048"></a>Term Name dwcpw:p048</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2583,7 +2584,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p049"></a>Term Name  dwcpw:p049</th>
+			<th colspan="2"><a id="dwcpw_p049"></a>Term Name dwcpw:p049</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2633,7 +2634,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p050"></a>Term Name  dwcpw:p050</th>
+			<th colspan="2"><a id="dwcpw_p050"></a>Term Name dwcpw:p050</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2683,7 +2684,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p051"></a>Term Name  dwcpw:p051</th>
+			<th colspan="2"><a id="dwcpw_p051"></a>Term Name dwcpw:p051</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2729,7 +2730,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p052"></a>Term Name  dwcpw:p052</th>
+			<th colspan="2"><a id="dwcpw_p052"></a>Term Name dwcpw:p052</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2775,7 +2776,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcpw_p053"></a>Term Name  dwcpw:p053</th>
+			<th colspan="2"><a id="dwcpw_p053"></a>Term Name dwcpw:p053</th>
 		</tr>
 	</thead>
 	<tbody>
