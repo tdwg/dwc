@@ -25,5 +25,6 @@
     "executive_committee_decision": "Décision du Comité exécutif",
     "term_deprecated": "Ce terme est obsolète et ne doit plus être utilisé",
     "term_replaced_by": "Est remplacé par",
-    "has_broader_concept": "FRHas broader concept"
+    "has_broader_concept": "FRHas broader concept",
+    "record-level": "Niveau de record"
 }

@@ -1,0 +1,51 @@
+# Links listed below will be included in your site's navbar (navigation at the top)
+
+- text: FHome
+  href: /fr/
+- text: FTerms
+  menu:
+  - text: FDarwin Core
+    href: /fr/list/
+  - text: "---"
+  - text: FChronometric Age Extension
+    href: https://chrono.tdwg.org/list/
+  - text: FHumboldt Extension
+    href: https://eco.tdwg.org/list/
+  - text: "---"
+  - text: FEstablishment Means Controlled Vocabulary
+    href: /fr/em/
+  - text: FDegree of Establishment Controlled Vocabulary
+    href: /fr/doe/
+  - text: FPathway Controlled Vocabulary
+    href: /fr/pw/
+- text: FGuides
+  menu:
+  - text: FDarwin Core Quick Reference
+    href: /fr/terms/
+  - text: "---"
+  - text: FChronometric Age Extension Quick Reference
+    href: https://chrono.tdwg.org/terms/
+  - text: FHumboldt Extension Quick Reference
+    href: https://eco.tdwg.org/terms/
+  - text: "---"
+  - text: FSimple Darwin Core
+    href: /simple/
+  - text: FText (Darwin Core Archive)
+    href: /text/
+  - text: FRDF
+    href: /rdf/
+  - text: FXML
+    href: /xml/
+  - text: FNamespace policy
+    href: /namespace/
+  - text: "---"
+  - text: FQuestions & Answers
+    href: https://github.com/tdwg/dwc-qa/blob/master/README.md
+- text: FGitHub
+  href: https://github.com/tdwg/dwc
+- text: 文A
+  menu:
+  - text: English
+    href: /
+  - text: Français
+    href: /fr/

@@ -1,7 +1,7 @@
 #
 # Author: S. Van Hoey
 # Contributors: John Wieczorek
-# 
+#
 # Build script for tdwg dwc handling
 #
 __version__ = '2023-09-14T-03:00'
@@ -76,9 +76,6 @@ class DwcDigester(object):
         self.term_versions_data = {}
         self._store_versions()
 
-        # create the defined data-object for the different outputs
-        self.template_data = self.process_terms()
-
     def versions(self):
         """Iterator providing the terms as represented in the normative term
         versions file
@@ -106,29 +103,6 @@ class DwcDigester(object):
         """
         return self.term_versions_data[term_iri]
 
-    @staticmethod
-    def split_iri(term_iri):
-        """Split an iri field into the namespace url and the local name
-        of the term
-        """
-        prog = re.compile("(.*/)([^/]*$)")
-        namespace, local_name = prog.findall(term_iri)[0]
-        return namespace, local_name
-
-    @staticmethod
-    def resolve_namespace_abbrev(namespace):
-        """Using the NAMESPACE constant, get the namespace abbreviation by
-        providing the namespace link
-
-        Parameters
-        -----------
-        namespace : str
-            valid key of the NAMESPACES variable
-        """
-        if namespace not in NAMESPACES.keys():
-            raise DwcNamespaceError("The namespace url is currently not supported in NAMESPACES")
-        return NAMESPACES[namespace]
-
     def get_term_definition(self, term_iri):
         """Extract the required information from the terms table to show on
         the webpage of a single term by using the term_iri as the identifier
@@ -145,129 +119,8 @@ class DwcDigester(object):
         term_data["label"] = vs_term['term_localName'] # See https://github.com/tdwg/dwc/issues/253#issuecomment-670098202
         term_data["iri"] = term_iri
         term_data["class"] = vs_term['organized_in']
-        term_data["definition"] = self.convert_link(vs_term['definition'])
-        term_data["comments"] = self.convert_link(self.convert_code(vs_term['comments']))
-        term_data["examples"] = self.convert_link(self.convert_code(vs_term['examples']))
         term_data["rdf_type"] = vs_term['rdf_type']
-        namespace_url, _ = self.split_iri(term_iri)
-        term_data["namespace"] = self.resolve_namespace_abbrev(namespace_url)
         return term_data
-
-    @staticmethod
-    def convert_code(text_with_backticks):
-        """Takes all back-quoted sections in a text field and converts it to
-        the html tagged version of code blocks <code>...</code>
-        """
-        return re.sub(r'`([^`]*)`', r'<code>\1</code>', text_with_backticks)
-
-    @staticmethod
-    def convert_link(text_with_urls):
-        """Takes all links in a text field and converts it to the html tagged
-        version of the link
-        """
-        def _handle_matched(inputstring):
-            """quick hack version of url handling on the current prime versions data"""
-            url = inputstring.group()
-            return "<a href=\"{}\">{}</a>".format(url, url)
-
-        regx = r"(http[s]?://[\w\d:#@%/;$()~_?\+-;=\\\.&]*)(?<![\)\.,])"
-        return re.sub(regx, _handle_matched, text_with_urls)
-
-    def process_terms(self):
-        """Parse the config terms (sequence matters!)
-
-        Collect all required data from both the normative versions file and
-        the config file and return the template ready data.
-
-        Returns
-        -------
-        Data object that can be digested by the html-template file. Contains
-        the term data formatted to create the indidivual outputs, each list
-        element is a dictionary representing a class group. Hence, the data
-        object is structured as follows:
-
-            [
-                {'name' : class_group_name_1, 'label': xxxx,...,
-                    'terms':
-                        [
-                            {'name' : term_1, 'label': xxxx,...},
-                            {'name' : term_2, 'label': xxxx,...},
-                            ...
-                        ]}
-                {'name' : class_group_name_2,...
-                ...},
-                ...
-            ]
-        """
-        template_data = []
-        in_class = "Record-level"
-        # sequence matters in config and it starts with Record-level which we populate here ad-hoc
-        class_group = {}
-        class_group["label"] = "Record-level"
-        class_group["iri"] = None
-        class_group["class"] = None
-        class_group["definition"] = None
-        class_group["comments"] = None
-        class_group["rdf_type"] = None
-        class_group["terms"] = []
-        class_group["namespace"] = None
-
-        addedUseWithIRI = False
-        for term in self.versions(): # sequence of the terms file used as order
-            term_data = self.get_term_definition(term['term_iri'])
-            test = term['term_iri']
-            if term_data["rdf_type"] == "http://www.w3.org/2000/01/rdf-schema#Class":
-                # new class encountered
-                # store previous section in template_data
-                template_data.append(class_group)
-                #start new class group
-                class_group = term_data
-                class_group["terms"] = []
-                in_class = term_data["label"] # check on the class working in
-            elif term['term_iri']=='http://purl.org/dc/terms/language':
-                # Vulnerable to ordering terms in term_versions.csv, but...
-                # This is the first row of dwciri terms
-                # store previous section in template_data
-                template_data.append(class_group)
-                #start a class group for UseWithIRI
-                class_group = {"label":"UseWithIRI"}
-                class_group["terms"] = []
-                in_class = "UseWithIRI" # check on the class working in
-                addedUseWithIRI = True
-                class_group['terms'].append(term_data)
-            else:
-                class_group['terms'].append(term_data)
-        # save the last class to template_data
-        template_data.append(class_group)
-        return template_data
-
-    def create_html(self, html_template="terms.tmpl",
-                    html_output="../docs/terms/index.md"):
-        """build html with the processed term info, by filling in the
-        tmpl-template
-
-        Parameters
-        -----------
-        html_template : str
-            relative path and filename to the Jinja2 compatible
-            template
-        html_output : str
-            relative path and filename to write the resulting index.html
-        """
-
-        data = {}
-        data["class_groups"] = self.template_data
-
-        env = Environment(
-            loader = FileSystemLoader(os.path.dirname(html_template)),
-            trim_blocks = True
-        )
-        template = env.get_template(os.path.basename(html_template))
-        html = template.render(data)
-
-        index_page = open(html_output, "w")
-        index_page.write(str(html))
-        index_page.close()
 
     def simple_dwc_terms(self):
         """Only extract those terms that are simple dwc, defined as `simple`
@@ -331,14 +184,12 @@ class DwcDigester(object):
             dwc_header_file.write("\n")
 
 def main():
-    """Building up the Quick Reference Guide html and derivatives"""
+    """Building up the Quick Reference Guide HTML and derivatives"""
 
     term_versions_file = "../vocabulary/term_versions.csv"
 
     print("Running build process:")
     my_dwc = DwcDigester(term_versions_file)
-    print("Building Quick Reference Guide")
-    my_dwc.create_html()
     print("Building simple DwC CSV files")
     my_dwc.create_simple_dwc_list()
     my_dwc.create_all_dwc_list()

@@ -2,7 +2,7 @@
 # Steve Baskauf 2020-08-12 CC0
 # updated 2021-02-11
 # Updated by Matthew Blissett 2025-03.
-# This script merges static Markdown header and footer documents with term information tables (in Markdown) generated from data in the rs.tdwg.org repo from the TDWG Github site
+# This script merges static Markdown header documents with term information tables (in Markdown) generated from data in the rs.tdwg.org repo from the TDWG Github site
 
 import re
 import requests   # best library to manage HTTP transactions
@@ -11,6 +11,8 @@ import json       # library to convert JSON to Python data structures
 import os
 import pandas as pd
 import yaml
+
+from jinja2 import FileSystemLoader, Environment
 
 # -----------------
 # Configuration section
@@ -35,15 +37,29 @@ document_configuration_yaml_file = 'document_configuration.yaml'
 
 class TermList:
 
-    def __init__(self, termLists, has_namespace, vocab_type, organized_in_categories, display_order, display_label, display_comments, display_id):
+    def __init__(self, termLists, hasNamespace, vocabType, organizedInCategories, displayOrder, displayLabel, displayComments, displayId):
+        """
+        Tables of terms.
+
+        Keyword arguments:
+        termLists -- list of database names of the term lists to be loaded
+        hasNamespace -- set to True for a list of terms containing multiple namespaces
+        vocabType -- 1 is simple vocabulary, 2 is simple controlled vocabulary, 3 is a c.v. with broader hierarchy
+        organizedInCategories -- Terms in large vocabularies like Darwin and AV Cores may be organized into categories using tdwgutility_organizedInClass.  If so, those categories can be used to group terms in the generated term list document.
+        displayOrder -- If organized in categories, the display_order list must contain the IRIs that are values of tdwgutility_organizedInClass. Otherwise set to [''].
+        displayLabel -- these are the section labels for the categories in the page
+        displayComments -- these are the comments about the category to be appended following the section labels
+        displayId -- these are the fragment identifiers for the associated sections for the categories
+        """
+
         self.termLists = termLists
-        self.has_namespace = has_namespace
-        self.vocab_type = vocab_type
-        self.organized_in_categories = organized_in_categories
-        self.display_order = display_order
-        self.display_label = display_label
-        self.display_comments = display_comments
-        self.display_id = display_id
+        self.has_namespace = hasNamespace
+        self.vocab_type = vocabType
+        self.organized_in_categories = organizedInCategories
+        self.display_order = displayOrder
+        self.display_label = displayLabel
+        self.display_comments = displayComments
+        self.display_id = displayId
 
         self.load_namespace_metadata()
         self.load_contributors()
@@ -126,7 +142,8 @@ class TermList:
             metadata_df = pd.read_csv(metadata_url, keep_default_na=False)
             #print('metadata_df', metadata_df)
             metadata_df = metadata_df.assign(pref_ns_prefix=term_list['pref_ns_prefix'],
-                                             pref_ns_uri=term_list['pref_ns_uri'])
+                                             pref_ns_uri=term_list['pref_ns_uri'],
+                                             term_iri=lambda x: term_list['pref_ns_uri'] + x['term_localName'])
             # Rename columns in vocabularies to match the columns in the DWC term list.
             metadata_df = metadata_df.rename(columns={'type': 'rdf_type'})
 
@@ -148,13 +165,15 @@ class TermList:
                                    how='left')
 
             # retrieve translated term metadata for term list
-            if term_list['database'] == 'terms':
-                translations_url = githubBaseUri + term_list['database'] + '/' + term_list['database'] + '-translations.csv'
-                print("Reading translated metadata", translations_url)
+            translations_url = githubBaseUri + term_list['database'] + '/' + term_list['database'] + '-translations.csv'
+            print("Reading translated metadata", translations_url)
+            try:
                 translations_df = pd.read_csv(translations_url, keep_default_na=False)
                 metadata_df = pd.merge(metadata_df, translations_df,
                                        on='term_localName',
                                        how='left')
+            except:
+                print("No translations found for", term_list['database'])
 
             if i == 0:
                 frame = metadata_df
@@ -178,13 +197,67 @@ class TermList:
         else:
             raise Exception("Value %s not present in translation dictionary" % key)
 
-    def first(self, row, column_names):
+    @staticmethod
+    def first(row, column_names):
         """
         Return the value of the first extant column in the row.
         """
         for name in column_names:
             if name in row:
                 return row[name]
+
+    @staticmethod
+    def createLinks(text):
+        """
+        replace URL with link (function used with Audubon Core list of terms build script)
+        Does not correctly handle URLs with close parens ) characters, so no longer used.
+        """
+        def repl(match):
+            if match.group(1)[-1] == '.':
+                return '<a href="' + match.group(1)[:-1] + '">' + match.group(1)[:-1] + '</a>.'
+            return '<a href="' + match.group(1) + '">' + match.group(1) + '</a>'
+
+        pattern = r'(https?://[^\s,;\)"<]*)'
+        result = re.sub(pattern, repl, text)
+        return result
+
+
+    # 2021-08-06 Replace the createLinks() function with functions copied from the QRG build script written by S. Van Hoey
+    @staticmethod
+    def convert_code(text_with_backticks):
+        """Takes all back-quoted sections in a text field and converts it to
+        the html tagged version of code blocks <code>...</code>
+        """
+        return re.sub(r'`([^`]*)`', r'<code>\1</code>', text_with_backticks)
+
+    @staticmethod
+    def convert_link(text_with_urls):
+        """Takes all links in a text field and converts it to the html tagged
+        version of the link
+        """
+        def _handle_matched(inputstring):
+            """quick hack version of url handling on the current prime versions data"""
+            url = inputstring.group()
+            return "<a href=\"{}\">{}</a>".format(url, url)
+
+        regx = r"(http[s]?://[\w\d:#@%/;$()~_?\+-;=\\\.&]*)(?<![\)\.,])"
+        return re.sub(regx, _handle_matched, text_with_urls)
+
+    # Hack the code taken from the terms.tmpl template to insert the HTML necessary to make the semicolon-separated
+    # lists of examples into an HTML list.
+    # {% set examples = term.examples.split("; ") %}
+    # {% if examples | length == 1 %}{{ examples | first }}{% else %}<ul class="list-group list-group-flush">{% for example in examples %}<li class="list-group-item">{{ example }}</li>{% endfor %}</ul>{% endif %}
+    @staticmethod
+    def convert_examples(text_with_list_of_examples: str) -> str:
+        examples_list = text_with_list_of_examples.split('; ')
+        if len(examples_list) == 1:
+            return examples_list[0]
+        else:
+            output = '<ul class="list-group list-group-flush">\n'
+            for example in examples_list:
+                output += '  <li class="list-group-item">' + example + '</li>\n'
+            output += '</ul>'
+            return output
 
     def generate_index_by_name(self):
         """
@@ -354,26 +427,26 @@ class TermList:
                 if 'usage' in row and row['usage'] != '':
                     text += '\t\t<tr>\n'
                     text += '\t\t\t<td>%s</td>\n' % self.t('usage')
-                    text += '\t\t\t<td>%s</td>\n' % convert_examples(convert_link(convert_code(row['usage'+l])))
+                    text += '\t\t\t<td>%s</td>\n' % self.convert_examples(self.convert_link(self.convert_code(row['usage'+l])))
                     text += '\t\t</tr>\n'
 
                 notes = self.first(row, ['dcterms_description'+l, 'notes'+l])
                 if notes != '':
                     text += '\t\t<tr>\n'
                     text += '\t\t\t<td>%s</td>\n' % self.t('notes')
-                    text += '\t\t\t<td>%s</td>\n' % convert_link(convert_code(notes))
+                    text += '\t\t\t<td>%s</td>\n' % self.convert_link(self.convert_code(notes))
                     text += '\t\t</tr>\n'
 
                 if 'examples' in row and row['examples'] != '':
                     text += '\t\t<tr>\n'
                     text += '\t\t\t<td>%s</td>\n' % self.t('examples')
-                    text += '\t\t\t<td>%s</td>\n' % convert_examples(convert_link(convert_code(row['examples'+l])))
+                    text += '\t\t\t<td>%s</td>\n' % self.convert_examples(self.convert_link(self.convert_code(row['examples'+l])))
                     text += '\t\t</tr>\n'
 
                 if 'tdwgutility_abcdEquivalence' in row and row['tdwgutility_abcdEquivalence'] != '':
                     text += '\t\t<tr>\n'
                     text += '\t\t\t<td>%s</td>\n' % self.t('abcd_equivalence')
-                    text += '\t\t\t<td>%s</td>\n' % convert_link(convert_code(row['tdwgutility_abcdEquivalence']))
+                    text += '\t\t\t<td>%s</td>\n' % self.convert_link(self.convert_code(row['tdwgutility_abcdEquivalence']))
                     text += '\t\t</tr>\n'
 
                 if (self.vocab_type == 2 or self.vocab_type == 3) and row['controlled_value_string'] != '': # controlled vocabulary
@@ -420,23 +493,23 @@ class TermList:
         return term_table
 
 
-    def generate_term_list_markdown(self, locale, outFileName, dictionaryFileName, headerFileName, footerFileName):
+    def generate_term_list_markdown(self, locale, outFileName, dictionaryFileName, headerFileName):
         """
-        Merge term table with header and footer Markdown, then save file
+        Merge term table with header Markdown, then save file
         """
 
-        # read in header and footer, merge with terms table, and output
+        # read in header, merge with terms table, and output
         with open(dictionaryFileName, encoding='utf-8') as jsonFile:
             self.dictionary = json.load(jsonFile)
 
-        print('Merging term table with header and footer and saving file')
+        print('Merging term table with header and saving file')
         text = ''
         if self.organized_in_categories:
             text += self.generate_index_by_name()
         text += self.generate_index_by_label()
         text += self.generate_vocabulary_tables(locale)
 
-        # read in header and footer, merge with terms table, and output
+        # read in header, merge with terms table, and output
         headerObject = open(headerFileName, 'rt', encoding='utf-8')
         header = headerObject.read()
         headerObject.close()
@@ -486,97 +559,154 @@ class TermList:
             # If there was no previous version, remove the slot from the header.
             header = header.replace('{previous_version_slot}\n\n', '')
 
-        footerObject = open(footerFileName, 'rt', encoding='utf-8')
-        footer = footerObject.read()
-        footerObject.close()
-
-        output = header + text + footer
+        output = header + text
         outputObject = open(outFileName, 'wt', encoding='utf-8')
         outputObject.write(output)
         outputObject.close()
 
         print('done')
 
-# ---------------
-# Function definitions
-# ---------------
 
-def createLinks(text):
-    """
-    replace URL with link (function used with Audubon Core list of terms build script)
-    Does not correctly handle URLs with close parens ) characters, so no longer used.
-    """
-    def repl(match):
-        if match.group(1)[-1] == '.':
-            return '<a href="' + match.group(1)[:-1] + '">' + match.group(1)[:-1] + '</a>.'
-        return '<a href="' + match.group(1) + '">' + match.group(1) + '</a>'
+    def get_term_definition(self, locale, term_iri):
+        """Extract the required information from the terms table to show on
+        the webpage of a single term by using the term_iri as the identifier
+        """
 
-    pattern = r'(https?://[^\s,;\)"<]*)'
-    result = re.sub(pattern, repl, text)
-    return result
+        if locale == 'en':
+            l = ''
+        else:
+            l = '_' + locale
 
+        term_data = {}
 
-# 2021-08-06 Replace the createLinks() function with functions copied from the QRG build script written by S. Van Hoey
-def convert_code(text_with_backticks):
-    """Takes all back-quoted sections in a text field and converts it to
-    the html tagged version of code blocks <code>...</code>
-    """
-    return re.sub(r'`([^`]*)`', r'<code>\1</code>', text_with_backticks)
+        term = self.terms_sorted_by_localname.loc[self.terms_sorted_by_localname['term_iri'] == term_iri].iloc[0]
 
-
-def convert_link(text_with_urls):
-    """Takes all links in a text field and converts it to the html tagged
-    version of the link
-    """
-    def _handle_matched(inputstring):
-        """quick hack version of url handling on the current prime versions data"""
-        url = inputstring.group()
-        return "<a href=\"{}\">{}</a>".format(url, url)
-
-    regx = r"(http[s]?://[\w\d:#@%/;$()~_?\+-;=\\\.&]*)(?<![\)\.,])"
-    return re.sub(regx, _handle_matched, text_with_urls)
-
-# Hack the code taken from the terms.tmpl template to insert the HTML necessary to make the semicolon-separated
-# lists of examples into an HTML list.
-# {% set examples = term.examples.split("; ") %}
-# {% if examples | length == 1 %}{{ examples | first }}{% else %}<ul class="list-group list-group-flush">{% for example in examples %}<li class="list-group-item">{{ example }}</li>{% endfor %}</ul>{% endif %}
-def convert_examples(text_with_list_of_examples: str) -> str:
-    examples_list = text_with_list_of_examples.split('; ')
-    if len(examples_list) == 1:
-        return examples_list[0]
-    else:
-        output = '<ul class="list-group list-group-flush">\n'
-        for example in examples_list:
-            output += '  <li class="list-group-item">' + example + '</li>\n'
-        output += '</ul>'
-        return output
+        term_data["label"] = term['term_localName'] # See https://github.com/tdwg/dwc/issues/253#issuecomment-670098202
+        term_data["iri"] = term['pref_ns_uri'] + term['term_localName']
+        term_data["class"] = term['tdwgutility_organizedInClass']
+        term_data["definition"] = self.convert_link(term['rdfs_comment'+l])
+        term_data["comments"] = self.convert_link(self.convert_code(term['dcterms_description'+l]))
+        term_data["examples"] = self.convert_link(self.convert_code(term['examples'+l]))
+        term_data["rdf_type"] = term['rdf_type']
+        term_data["namespace"] = term['pref_ns_prefix']
+        return term_data
 
 
-def generate_markdown(path, locales, termLists, hasNamespace, vocabType, organizedInCategories, displayOrder, displayLabel, displayComments, displayId):
+    def process_terms(self, locale):
+        """Parse the config terms (sequence matters!)
+
+        Collect all required data from both the normative versions file and
+        the config file and return the template ready data.  Choose the
+        relevant locale.
+
+        Returns
+        -------
+        Data object that can be digested by the html-template file. Contains
+        the term data formatted to create the indidivual outputs, each list
+        element is a dictionary representing a class group. Hence, the data
+        object is structured as follows:
+
+            [
+                {'name' : class_group_name_1, 'label': xxxx,...,
+                    'terms':
+                        [
+                            {'name' : term_1, 'label': xxxx,...},
+                            {'name' : term_2, 'label': xxxx,...},
+                            ...
+                        ]}
+                {'name' : class_group_name_2,...
+                ...},
+                ...
+            ]
+        """
+        template_data = []
+        in_class = "Record-level"
+        # sequence matters in config and it starts with Record-level which we populate here ad-hoc
+        class_group = {}
+        class_group["isRecordLevel"] = True
+        class_group["label"] = self.t('record-level')
+        class_group["iri"] = None
+        class_group["class"] = None
+        class_group["definition"] = None
+        class_group["comments"] = None
+        class_group["rdf_type"] = None
+        class_group["terms"] = []
+        class_group["namespace"] = None
+
+        qrg_df = pd.read_csv('qrg-template/qrg-list.csv', na_filter=False)
+
+        addedUseWithIRI = False
+        for term_index,term in qrg_df.iterrows(): # sequence of the terms used as order
+            term_data = self.get_term_definition(locale, term['recommended_term_iri'])
+            if term_data["rdf_type"] == "http://www.w3.org/2000/01/rdf-schema#Class":
+                # new class encountered
+                # store previous section in template_data
+                template_data.append(class_group)
+                #start new class group
+                class_group = term_data
+                class_group["terms"] = []
+                in_class = term_data["label"] # check on the class working in
+            elif term_data['iri']=='http://purl.org/dc/terms/language':
+                # Vulnerable to ordering terms in term_versions.csv, but...
+                # This is the first row of dwciri terms
+                # store previous section in template_data
+                template_data.append(class_group)
+                #start a class group for UseWithIRI
+                class_group = {"label":"UseWithIRI"}
+                class_group["terms"] = []
+                in_class = "UseWithIRI" # check on the class working in
+                addedUseWithIRI = True
+                class_group['terms'].append(term_data)
+            else:
+                class_group['terms'].append(term_data)
+        # save the last class to template_data
+        template_data.append(class_group)
+        return template_data
+
+    def generate_qrg(self, locale, outFileName, dictionaryFileName, htmlTemplate):
+        """
+        Generate Markdown with the processed term info, by filling in the template.
+
+        Keyword arguments:
+        locale -- Locale to use
+        outFileName -- Output file name
+        htmlTemplate -- Path to Jinja2 templaet
+        """
+
+        with open(dictionaryFileName, encoding='utf-8') as jsonFile:
+            self.dictionary = json.load(jsonFile)
+
+        data = {}
+        data["class_groups"] = self.process_terms(locale)
+
+        env = Environment(
+            loader = FileSystemLoader(os.path.dirname(htmlTemplate)),
+            trim_blocks = True
+        )
+        template = env.get_template(os.path.basename(htmlTemplate))
+        print(template)
+
+        html = template.render(data)
+
+        index_page = open(outFileName, "w")
+        index_page.write(str(html))
+        index_page.close()
+
+
+def generate_all_markdown(termList, path, locales):
     """
     Generate a Darwin Core term list for DWC terms or one of its vocabularies.
 
     Keyword arguments:
+    termList -- Term data to use
     path -- Path fragment used for output and finding templates
     locales -- Locales to generate
-    termLists -- list of database names of the term lists to be included in the document
-    hasNamespace -- set to True for a list of terms containing multiple namespaces
-    vocabType -- 1 is simple vocabulary, 2 is simple controlled vocabulary, 3 is a c.v. with broader hierarchy
-    organizedInCategories -- Terms in large vocabularies like Darwin and AV Cores may be organized into categories using tdwgutility_organizedInClass.  If so, those categories can be used to group terms in the generated term list document.
-    displayOrder -- If organized in categories, the display_order list must contain the IRIs that are values of tdwgutility_organizedInClass. Otherwise set to [''].
-    displayLabel -- these are the section labels for the categories in the page
-    displayComments -- these are the comments about the category to be appended following the section labels
-    displayId -- these are the fragment identifiers for the associated sections for the categories
-
     """
-
-    term_list_generator = TermList(termLists, hasNamespace, vocabType, organizedInCategories, displayOrder, displayLabel, displayComments, displayId)
 
     for locale in locales:
         print("Generating %s/index.md in" % path, locale)
         dictionaryFileName = 'termlist-dictionary.%s.json' % locale
         headerFileName = path + '-template/termlist-header.%s.md' % locale
-        footerFileName = path + '-template/termlist-footer.%s.md' % locale
 
         if locale == 'en':
             outFileName = '../docs/%s/index.md' % path
@@ -585,58 +715,90 @@ def generate_markdown(path, locales, termLists, hasNamespace, vocabType, organiz
             os.makedirs(outFilePath, exist_ok=True)
             outFileName = outFilePath + '/index.md'
 
-        term_list_generator.generate_term_list_markdown(locale, outFileName, dictionaryFileName, headerFileName, footerFileName)
+        termList.generate_term_list_markdown(locale, outFileName, dictionaryFileName, headerFileName)
+        print("")
+
+
+def generate_all_qrg(termList, locales):
+    """
+    Generate the Darwin Core Quick Reference Guide.
+
+    Keyword arguments:
+    termList -- Term data to use
+    locales -- Locales to generate
+    """
+
+    for locale in locales:
+        print("Generating terms/index.md in", locale)
+        dictionaryFileName = 'termlist-dictionary.%s.json' % locale
+        templateFileName = 'qrg-template/terms.%s.jinja' % locale
+
+        if locale == 'en':
+            outFileName = '../docs/terms/index.md'
+        else:
+            outFilePath = '../docs/%s/terms' % (locale)
+            os.makedirs(outFilePath, exist_ok=True)
+            outFileName = outFilePath + '/index.md'
+
+        termList.generate_qrg(locale, outFileName, dictionaryFileName, templateFileName)
         print("")
 
 
 # Darwin Core Terms
-generate_markdown(path = 'list',
-                  locales=['fr', 'en'],
-                  termLists = ['terms', 'iri', 'dc-for-dwc', 'dcterms-for-dwc'],
-                  hasNamespace = False,
-                  vocabType = 1,
-                  organizedInCategories = True,
-                  displayOrder = ['', 'http://purl.org/dc/elements/1.1/', 'http://purl.org/dc/terms/', 'http://rs.tdwg.org/dwc/terms/Occurrence', 'http://rs.tdwg.org/dwc/terms/Organism', 'http://rs.tdwg.org/dwc/terms/MaterialEntity', 'http://rs.tdwg.org/dwc/terms/MaterialSample', 'http://rs.tdwg.org/dwc/terms/Event', 'http://purl.org/dc/terms/Location', 'http://rs.tdwg.org/dwc/terms/GeologicalContext', 'http://rs.tdwg.org/dwc/terms/Identification', 'http://rs.tdwg.org/dwc/terms/Taxon', 'http://rs.tdwg.org/dwc/terms/MeasurementOrFact', 'http://rs.tdwg.org/dwc/terms/ResourceRelationship', 'http://rs.tdwg.org/dwc/terms/attributes/UseWithIRI'],
-                  displayLabel = ['Record level', 'Dublin Core legacy namespace', 'Dublin Core terms namespace', 'Occurrence', 'Organism', 'Material Entity', 'Material Sample', 'Event', 'Location', 'Geological Context', 'Identification', 'Taxon', 'Measurement or Fact', 'Resource Relationship', 'IRI-value terms'],
-                  displayComments = ['','','','','','','','','','','','','','',''],
-                  displayId = ['record_level', 'dc', 'dcterms', 'occurrence', 'organism', 'material_entity', 'material_sample', 'event', 'location', 'geological_context', 'identification', 'taxon', 'measurement_or_fact', 'resource_relationship', 'use_with_iri'],
-                  )
+dwc_list = TermList(
+    termLists = ['terms', 'iri', 'dc-for-dwc', 'dcterms-for-dwc'],
+    hasNamespace = False,
+    vocabType = 1,
+    organizedInCategories = True,
+    displayOrder = ['', 'http://purl.org/dc/elements/1.1/', 'http://purl.org/dc/terms/', 'http://rs.tdwg.org/dwc/terms/Occurrence', 'http://rs.tdwg.org/dwc/terms/Organism', 'http://rs.tdwg.org/dwc/terms/MaterialEntity', 'http://rs.tdwg.org/dwc/terms/MaterialSample', 'http://rs.tdwg.org/dwc/terms/Event', 'http://purl.org/dc/terms/Location', 'http://rs.tdwg.org/dwc/terms/GeologicalContext', 'http://rs.tdwg.org/dwc/terms/Identification', 'http://rs.tdwg.org/dwc/terms/Taxon', 'http://rs.tdwg.org/dwc/terms/MeasurementOrFact', 'http://rs.tdwg.org/dwc/terms/ResourceRelationship', 'http://rs.tdwg.org/dwc/terms/attributes/UseWithIRI'],
+    displayLabel = ['Record level', 'Dublin Core legacy namespace', 'Dublin Core terms namespace', 'Occurrence', 'Organism', 'Material Entity', 'Material Sample', 'Event', 'Location', 'Geological Context', 'Identification', 'Taxon', 'Measurement or Fact', 'Resource Relationship', 'IRI-value terms'],
+    displayComments = ['','','','','','','','','','','','','','',''],
+    displayId = ['record_level', 'dc', 'dcterms', 'occurrence', 'organism', 'material_entity', 'material_sample', 'event', 'location', 'geological_context', 'identification', 'taxon', 'measurement_or_fact', 'resource_relationship', 'use_with_iri'])
 
-# Darwin Core — Establishment Means
-generate_markdown(path = 'em',
-                  locales=['en'],
-                  termLists = ['establishmentMeans'],
-                  hasNamespace = True,
-                  vocabType = 2,
-                  organizedInCategories = False,
-                  displayOrder = [''],
-                  displayLabel = ['Vocabulary'],
-                  displayComments = [''],
-                  displayId = ['Vocabulary'],
-                  )
+# Darwin Core Terms HTML
+generate_all_markdown(dwc_list, 'list', ['fr', 'en'])
 
-# Darwin Core — Degree of Establishment
-generate_markdown(path = 'doe',
-                  locales=['en'],
-                  termLists = ['degreeOfEstablishment'],
-                  hasNamespace = True,
-                  vocabType = 2,
-                  organizedInCategories = False,
-                  displayOrder = [''],
-                  displayLabel = ['Vocabulary'],
-                  displayComments = [''],
-                  displayId = ['Vocabulary'],
-                  )
+# Darwin Core Terms QRG
+generate_all_qrg(dwc_list, ['en', 'fr'])
 
-# Darwin Core — Pathway
-generate_markdown(path = 'pw',
-                  locales=['en'],
-                  termLists = ['pathway'],
-                  hasNamespace = True,
-                  vocabType = 3,
-                  organizedInCategories = False,
-                  displayOrder = [''],
-                  displayLabel = ['Vocabulary'],
-                  displayComments = [''],
-                  displayId = ['Vocabulary'],
-                  )
+# Establishment Means Vocabulary
+em_list = TermList(
+    termLists = ['establishmentMeans'],
+    hasNamespace = True,
+    vocabType = 2,
+    organizedInCategories = False,
+    displayOrder = [''],
+    displayLabel = ['Vocabulary'],
+    displayComments = [''],
+    displayId = ['Vocabulary'])
+
+# Establishment Means HTML
+generate_all_markdown(em_list, 'em', ['en', 'fr'])
+
+# Degree of Establishment Vocabulary
+doe_list = TermList(
+    termLists = ['degreeOfEstablishment'],
+    hasNamespace = True,
+    vocabType = 2,
+    organizedInCategories = False,
+    displayOrder = [''],
+    displayLabel = ['Vocabulary'],
+    displayComments = [''],
+    displayId = ['Vocabulary'])
+
+# Degree of Establishment HTML
+generate_all_markdown(doe_list, 'doe', ['en'])
+
+# Pathway Vocabulary
+pw_list = TermList(
+    termLists = ['pathway'],
+    hasNamespace = True,
+    vocabType = 3,
+    organizedInCategories = False,
+    displayOrder = [''],
+    displayLabel = ['Vocabulary'],
+    displayComments = [''],
+    displayId = ['Vocabulary'])
+
+# Pathway HTML
+generate_all_markdown(pw_list, 'pw', ['en'])

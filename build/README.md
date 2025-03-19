@@ -22,8 +22,8 @@
 16. Run the script [build-termlist.py](https://github.com/tdwg/dwc/blob/master/build/build-termlist.py). Be patient since some steps take a few seconds. When the `Done` message appears, it's finished. NOTE: the value of `githubBaseUri` in the configuration section of the script is set to the master branch in production. However, if you are generating provisional versions of the docs (e.g. for public or Executive Committee review), you may need to change the branch part of the path to the correct branch.
 17. Check the diff for the newly generated `index.md` file in the [docs/list/](https://github.com/tdwg/dwc/tree/master/docs/list) directory and make sure that the changes are appropriate.
 18. The structure and order of listing of terms in the Quick Reference Guide is controlled by the file [qrg-list.csv](https://github.com/tdwg/dwc/blob/master/build/qrg-list.csv). It is very sensitive to the position of the class terms, which controls the division of the QRG into sections. Also, `http://purl.org/dc/terms/language` must be the first term in the section that will be labeled "Use with IRI". So it must be edited with some care. If new terms are added, their IRIs must be added in the proper place in this document in order for them to appear in the QRG.
-19. Run the [generate_term_versions.py](https://github.com/tdwg/dwc/blob/master/build/generate_term_versions.py) script to generate a new version of [term_versions.csv](https://github.com/tdwg/dwc/blob/master/vocabulary/term_versions.csv). This file serves as the source of data for the build script in the next step. At some point, that script may be modified to eliminate this intermediate step. 
-20. Run the [build.py](https://github.com/tdwg/dwc/blob/master/build/build.py) script to build the Quick Reference Guide.
+19. Run the [generate_term_versions.py](https://github.com/tdwg/dwc/blob/master/build/generate_term_versions.py) script to generate a new version of [term_versions.csv](https://github.com/tdwg/dwc/blob/master/vocabulary/term_versions.csv). This file serves as the source of data for the build script in the next step. At some point, that script may be modified to eliminate this intermediate step.
+20. Run the [build-derivatives.py](https://github.com/tdwg/dwc/blob/master/build/build-derivatives.py) script to build the Quick Reference Guide.
 21. Create a pull request for the new branch.
 22. When the branch has been reviewed carefully, merge the branch. The new pages shuld be live as soon as Jekyll rebuilds them on GitHub.
 23. Term dereferencing to human and machine readable representations is handled by a server managed by GBIF. The new metadata gets fed into the production version of the server when there is a new release of the `rs.tdwg.org` repo, so when everything is done, make sure there a new release has been made. Because dereferencing of current terms to human-readable web pages is handled by a redirect, there won't be any noticeable difference whether the data are reloaded in this step or not. But dereferencing the term versions, or dereferencing to acquire machine readable metadata will not reflect the new changes until the release process completes.
@@ -31,15 +31,7 @@
 
 ## Build script
 
-The build script `build.py` uses as input:
-
-- [vocabulary/term_versions.csv](../vocabulary/term_versions.csv): the list of terms
-- [terms.tmpl](terms.tmpl): a Jinja2 template for the Quick Reference Guide
-
-And creates:
-
-- The Quick Reference Guide is a Markdown file at [docs/terms/index.md](../docs/terms/index.md). The guide is built as Markdown (with a lot of included html) rather than html, so it can be incorporated by Jekyll in the Darwin Core website (including a header, footer and table of contents).
-- Two simple Darwin Core CSV files in [dist/](../dist/)
+The build script `build-derivatives.py` uses as input the list of terms, [vocabulary/term_versions.csv](../vocabulary/term_versions.csv), and creates two simple Darwin Core CSV files in [dist/](../dist/).
 
 ## Run the build script
 
@@ -52,20 +44,22 @@ And creates:
 2. Run the script from the command line:
 
     ```bash
-    python build.py
+    python build-derivatives.py
     ```
 
 ## Generating the "normative document"
 
 The script `generate_normative_csv.py` pulls source data from the [rs.tdwg.org](http://github.com/tdwg/rs.tdwg.org) repository. The local file `qrg-list.csv` contains a list of the term IRIs in the order that they are to appear in the Quick Reference Guide. This list needs to be changed whenever terms are added to or deprecated from Darwin Core.
 
-It generates the file `term_versions.csv`, which is used as the input for the `build.py` script above.
+It generates the file `term_versions.csv`, which is used as the input for the `build-derivatives.py` script above.
 
-## Generating the "list of terms" and vocabulary documents
+## Generating the "list of terms" and vocabulary documents and the "quick reference guide".
 
 The Python script `build-termlist.py` uses the header information from `*/termlist-header.en.md`, then builds the list of terms and their metadata from data in the [rs.tdwg.org](http://github.com/tdwg/rs.tdwg.org) repository. The script also inputs `termlist-footer.en.md` and appends it to the end of the generated document, but currently it has no content. The constructed Markdown documents are saved as `/docs/list/index.md`, `/docs/em/index.md`, `/docs/doe/index.md` and `/docs/pathway/index.md`.
 
-This script will be run whenever translations to the header text or term values are changed.
+It also builds the Quick Reference guide with the terms listed in [qrg-template/qrg-list.csv](qrg-template/qrg-list.csv) and the template `qrg-template/terms.en.jinja`.
+
+This script is run as part of the site build to keep translations into other languages up-to-date.
 
 ------
 Last edited: 2025-03-18

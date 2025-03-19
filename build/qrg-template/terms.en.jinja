@@ -1,12 +1,11 @@
 {#
-  This template is NOT used by jekyll, but by the Darwin Core build script
+  This template is NOT used by jekyll, but by the Darwin Core build script build-termlist.py
   to create the terms/index.md file, which mostly contains html.
 #}
 
 # Darwin Core Quick Reference Guide
 
 This document is intended to be an easy-to-read reference of the currently (as of 2023-09-18) recommended terms maintained as part of the [Darwin Core standard](https://www.tdwg.org/standards/dwc/) and is maintained by the [Darwin Core Maintenance Group](https://www.tdwg.org/community/dwc/).
-
 
 **Need help?** Read more about how to use Darwin Core in the [Darwin Core Questions & Answers site](https://github.com/tdwg/dwc-qa/blob/master/README.md). Still have questions? Submit a new issue (question/problem) to the [dwc-qa issues page in GitHub](https://github.com/tdwg/dwc-qa/issues), or use the [form](https://tinyurl.com/darwin-qa). See the bottom of this document for [how to cite Darwin Core](https://dwc.tdwg.org/terms/#cite-darwin-core)."
 
@@ -20,7 +19,7 @@ Additional [files with just the current term names](https://github.com/tdwg/dwc/
 
 ## {{ class_group.label }}
 
-{% if class_group.label == 'Record-level' %}
+{% if class_group.isRecordLevel %}
 This category contains terms that are generic in that they might apply to any type of record in a dataset.
 {% endif %}
 {% if class_group.label == 'UseWithIRI' %}
@@ -32,7 +31,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
   {% endfor %}
 </div>
 
-{% if class_group.label != 'Record-level' and class_group.label != 'UseWithIRI' %}
+{% if not class_group.isRecordLevel and class_group.label != 'UseWithIRI' %}
 {# Class #}
 {% set examples = class_group.examples.split("; ") %}
 <table class="table">
