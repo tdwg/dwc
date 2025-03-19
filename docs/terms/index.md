@@ -3,7 +3,6 @@
 
 This document is intended to be an easy-to-read reference of the currently (as of 2023-09-18) recommended terms maintained as part of the [Darwin Core standard](https://www.tdwg.org/standards/dwc/) and is maintained by the [Darwin Core Maintenance Group](https://www.tdwg.org/community/dwc/).
 
-
 **Need help?** Read more about how to use Darwin Core in the [Darwin Core Questions & Answers site](https://github.com/tdwg/dwc-qa/blob/master/README.md). Still have questions? Submit a new issue (question/problem) to the [dwc-qa issues page in GitHub](https://github.com/tdwg/dwc-qa/issues), or use the [form](https://tinyurl.com/darwin-qa). See the bottom of this document for [how to cite Darwin Core](https://dwc.tdwg.org/terms/#cite-darwin-core)."
 
 **Want to contribute?** For information about how to contribute to the Darwin Core Standard, including how to propose changes, see the [Guidelines for contributing](https://github.com/tdwg/dwc/blob/master/.github/CONTRIBUTING.md).
@@ -74,7 +73,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">language</th></tr>
     <tr><td>Identifier</td><td><a href="http://purl.org/dc/elements/1.1/language">http://purl.org/dc/elements/1.1/language</a></td></tr>
     <tr><td>Definition</td><td>A language of the resource.</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary such as RFC 5646.</td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary such as RFC 5646. This term has an equivalent in the dcterms: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>en</code> (for English)</li><li class="list-group-item"><code>es</code> (for Spanish)</li></ul></td></tr>
   </tbody>
 </table>
@@ -126,7 +125,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">bibliographicCitation</th></tr>
     <tr><td>Identifier</td><td><a href="http://purl.org/dc/terms/bibliographicCitation">http://purl.org/dc/terms/bibliographicCitation</a></td></tr>
     <tr><td>Definition</td><td>A bibliographic reference for the resource.</td></tr>
-    <tr><td>Comments</td><td>From Dublin Core, "Recommended practice is to include sufficient bibliographic detail to identify the resource as unambiguously as possible." The intended usage of this term in Darwin Core is to provide the preferred way to cite the resource itself - "how to cite this record". Note that the intended usage of dcterms:references in Darwin Core, by contrast, is to point to the definitive source representation of the resource - "where to find the as-close-to-original reference, if one is available.</td></tr>
+    <tr><td>Comments</td><td>From Dublin Core, "Recommended practice is to include sufficient bibliographic detail to identify the resource as unambiguously as possible." The intended usage of this term in Darwin Core is to provide the preferred way to cite the resource itself - "how to cite this record". Note that the intended usage of dcterms:references in Darwin Core, by contrast, is to point to the definitive source representation of the resource - "where to find the as-close-to-original reference", if one is available.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Museum of Vertebrate Zoology, UC Berkeley. MVZ Mammal Collection (Arctos). Record ID: <a href="http://arctos.database.museum/guid/MVZ:Mamm:165861?seid=101356">http://arctos.database.museum/guid/MVZ:Mamm:165861?seid=101356</a>. Source: <a href="http://ipt.vertnet.org:8080/ipt/resource.do?r=mvz_mammal">http://ipt.vertnet.org:8080/ipt/resource.do?r=mvz_mammal</a>.</code> (Occurrence example)</li><li class="list-group-item"><code><a href="https://www.gbif.org/species/2439608">https://www.gbif.org/species/2439608</a> Source: GBIF Taxonomic Backbone</code> (Taxon example)</li><li class="list-group-item"><code>Rand, K.M., Logerwell, E.A. The first demersal trawl survey of benthic fish and invertebrates in the Beaufort Sea since the late 1970s. Polar Biol 34, 475–488 (2011). <a href="https://doi.org/10.1007/s00300-010-0900-2">https://doi.org/10.1007/s00300-010-0900-2</a></code> (Event example)</li></ul></td></tr>
   </tbody>
 </table>
@@ -139,7 +138,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">references</th></tr>
     <tr><td>Identifier</td><td><a href="http://purl.org/dc/terms/references">http://purl.org/dc/terms/references</a></td></tr>
     <tr><td>Definition</td><td>A related resource that is referenced, cited, or otherwise pointed to by the described resource.</td></tr>
-    <tr><td>Comments</td><td>From Dublin Core, "This property is intended to be used with non-literal values. This property is an inverse property of Is Referenced By." The intended usage of this term in Darwin Core is to point to the definitive source representation of the resource (e.g.,Taxon, Occurrence, Event in Darwin Core), if one is available. Note that the intended usage of dcterms:bibliographicCitation in Darwin Core, by contrast, is to provide the preferred way to cite the resource itself.</td></tr>
+    <tr><td>Comments</td><td>From Dublin Core, "This property is intended to be used with non-literal values. This property is an inverse property of Is Referenced By." The intended usage of this term in Darwin Core is to point to the definitive source representation of the resource (e.g.,dwc:Taxon, dwc:Occurrence, dwc:Event), if one is available. Note that the intended usage of dcterms:bibliographicCitation in Darwin Core, by contrast, is to provide the preferred way to cite the resource itself.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="http://arctos.database.museum/guid/MVZ:Mamm:165861">http://arctos.database.museum/guid/MVZ:Mamm:165861</a></code> (MaterialEntity example)</li><li class="list-group-item"><code><a href="https://www.catalogueoflife.org/data/taxon/32664">https://www.catalogueoflife.org/data/taxon/32664</a></code> (Taxon example)</li></ul></td></tr>
   </tbody>
 </table>
@@ -152,7 +151,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">institutionID</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/institutionID">http://rs.tdwg.org/dwc/terms/institutionID</a></td></tr>
     <tr><td>Definition</td><td>An identifier for the institution having custody of the object(s) or information referred to in the record.</td></tr>
-    <tr><td>Comments</td><td>For physical specimens, the recommended best practice is to use a globally unique and resolvable identifier from a collections registry such as the Research Organization Registry (ROR) or the Global Registry of Scientific Collections (<a href="https://www.gbif.org/grscicoll">https://www.gbif.org/grscicoll</a>).</td></tr>
+    <tr><td>Comments</td><td>For physical specimens, the recommended best practice is to use a globally unique and resolvable identifier from a collections registry such as the Research Organization Registry (ROR) or the GBIF Registry of Scientific Collections (<a href="https://www.gbif.org/grscicoll">https://www.gbif.org/grscicoll</a>).</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="https://ror.org/015hz7p22">https://ror.org/015hz7p22</a></code></li><li class="list-group-item"><code><a href="http://grscicoll.org/institution/museum-southwestern-biology">http://grscicoll.org/institution/museum-southwestern-biology</a></code></li><li class="list-group-item"><code><a href="https://www.gbif.org/grscicoll/institution/e3d4dcc4-81e2-444c-8a5c-41d1044b5381">https://www.gbif.org/grscicoll/institution/e3d4dcc4-81e2-444c-8a5c-41d1044b5381</a></code></li></ul></td></tr>
   </tbody>
 </table>
@@ -165,7 +164,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">collectionID</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/collectionID">http://rs.tdwg.org/dwc/terms/collectionID</a></td></tr>
     <tr><td>Definition</td><td>An identifier for the collection or dataset from which the record was derived.</td></tr>
-    <tr><td>Comments</td><td>For physical specimens, the recommended best practice is to use a globally unique and resolvable identifier from a collections registry such as the Global Registry of Scientific Collections (<a href="https://www.gbif.org/grscicoll">https://www.gbif.org/grscicoll</a>).</td></tr>
+    <tr><td>Comments</td><td>For physical specimens, the recommended best practice is to use a globally unique and resolvable identifier from a collections registry such as the GBIF Registry of Scientific Collections (<a href="https://www.gbif.org/grscicoll">https://www.gbif.org/grscicoll</a>).</td></tr>
     <tr><td>Examples</td><td><code><a href="https://www.gbif.org/grscicoll/collection/fbd3ed74-5a21-4e01-b86a-33d36f032d9c">https://www.gbif.org/grscicoll/collection/fbd3ed74-5a21-4e01-b86a-33d36f032d9c</a></code></td></tr>
   </tbody>
 </table>
