@@ -30,3 +30,8 @@ defaults:
     values:
       layout: default
       toc: true
+  - scope:
+      path: fr
+    values:
+      language: fr
+      navigation: navigation_fr
