@@ -192,10 +192,22 @@ class TermList:
 
 
     def t(self, key):
+        """
+        Retrieve the translation for the given dictionary key.
+        """
         if key in self.dictionary:
             return self.dictionary[key]
         else:
             raise Exception("Value %s not present in translation dictionary" % key)
+
+    def t_val(self, row, key, l):
+        """
+        Retrieve the value of the given term in the given locale.  Fall back to English.
+        """
+        if key+l in row and row[key+l] != '':
+            return row[key+l]
+        else:
+            return row[key]
 
     @staticmethod
     def first(row, column_names):
@@ -401,7 +413,7 @@ class TermList:
 
                 text += '\t\t<tr>\n'
                 text += '\t\t\t<td>%s</td>\n' % self.t('label')
-                text += '\t\t\t<td>%s</td>\n' % row['label'+l]
+                text += '\t\t\t<td>%s</td>\n' % self.t_val(row, 'label', l)
                 text += '\t\t</tr>\n'
 
                 if row['term_deprecated'] != '':
@@ -419,28 +431,32 @@ class TermList:
                 text += '\t\t<tr>\n'
                 text += '\t\t\t<td>%s</td>\n' % self.t('definition')
                 if 'rdfs_comment' in row:
-                    text += '\t\t\t<td>%s</td>\n' % row['rdfs_comment'+l]
+                    text += '\t\t\t<td>%s</td>\n' % self.t_val(row, 'rdfs_comment', l)
                 else:
-                    text += '\t\t\t<td>' + row['definition'+l] + '</td>\n'
+                    text += '\t\t\t<td>' + self.t_val(row, 'definition', l) + '</td>\n'
                 text += '\t\t</tr>\n'
 
                 if 'usage' in row and row['usage'] != '':
                     text += '\t\t<tr>\n'
                     text += '\t\t\t<td>%s</td>\n' % self.t('usage')
-                    text += '\t\t\t<td>%s</td>\n' % self.convert_examples(self.convert_link(self.convert_code(row['usage'+l])))
+                    text += '\t\t\t<td>%s</td>\n' % self.convert_examples(self.convert_link(self.convert_code(self.t_val(row, 'usage', l))))
                     text += '\t\t</tr>\n'
 
-                notes = self.first(row, ['dcterms_description'+l, 'notes'+l])
-                if notes != '':
+                if 'dcterms_description' in row and row['dcterms_description'] != '':
                     text += '\t\t<tr>\n'
                     text += '\t\t\t<td>%s</td>\n' % self.t('notes')
-                    text += '\t\t\t<td>%s</td>\n' % self.convert_link(self.convert_code(notes))
+                    text += '\t\t\t<td>%s</td>\n' % self.convert_link(self.convert_code(self.t_val(row, 'dcterms_description', l)))
+                    text += '\t\t</tr>\n'
+                elif 'notes' in row and row['notes'] != '':
+                    text += '\t\t<tr>\n'
+                    text += '\t\t\t<td>%s</td>\n' % self.t('notes')
+                    text += '\t\t\t<td>%s</td>\n' % self.convert_link(self.convert_code(self.t_val(row, 'notes', l)))
                     text += '\t\t</tr>\n'
 
                 if 'examples' in row and row['examples'] != '':
                     text += '\t\t<tr>\n'
                     text += '\t\t\t<td>%s</td>\n' % self.t('examples')
-                    text += '\t\t\t<td>%s</td>\n' % self.convert_examples(self.convert_link(self.convert_code(row['examples'+l])))
+                    text += '\t\t\t<td>%s</td>\n' % self.convert_examples(self.convert_link(self.convert_code(self.t_val(row, 'examples', l))))
                     text += '\t\t</tr>\n'
 
                 if 'tdwgutility_abcdEquivalence' in row and row['tdwgutility_abcdEquivalence'] != '':
@@ -584,9 +600,9 @@ class TermList:
         term_data["label"] = term['term_localName'] # See https://github.com/tdwg/dwc/issues/253#issuecomment-670098202
         term_data["iri"] = term['pref_ns_uri'] + term['term_localName']
         term_data["class"] = term['tdwgutility_organizedInClass']
-        term_data["definition"] = self.convert_link(term['rdfs_comment'+l])
-        term_data["comments"] = self.convert_link(self.convert_code(term['dcterms_description'+l]))
-        term_data["examples"] = self.convert_link(self.convert_code(term['examples'+l]))
+        term_data["definition"] = self.convert_link(self.t_val(term, 'rdfs_comment', l))
+        term_data["comments"] = self.convert_link(self.convert_code(self.t_val(term, 'dcterms_description', l)))
+        term_data["examples"] = self.convert_link(self.convert_code(self.t_val(term, 'examples', l)))
         term_data["rdf_type"] = term['rdf_type']
         term_data["namespace"] = term['pref_ns_prefix']
         return term_data

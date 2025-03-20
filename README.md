@@ -43,10 +43,10 @@ The repository structure is described below. Files/directories indicated with `G
 │   ├── list-template             : Templates for the generated term list document
 │   ├── pw-template               : Templates for the pathway controlled vocabulary document
 │   ├── qrg-list.csv              : List of the term IRIs in the order that they are to appear in the Quick Reference Guide
+│   ├── qrg-template/terms.en.jinja : A Jinja2 template to format the Quick Reference Guide
 │   ├── README.md                 : Workflow for generating a new version of the vocabulary
 │   ├── requirements.txt          : List of libraries required by the build scripts
 │   ├── termlist-dictionary.en.json : Values available for translation for term list documents.
-│   ├── terms.tmpl                : A Jinja2 template to format the Quick Reference Guide
 │   ├── update_previous_doc.py    : Script to move current doc to a version and update version links in it
 │   ├── workflow_diagram.png      : Figure used in README.md to show how to create a new version of the standard
 │   └── xml                       : Directory of build script and configs for XML extension definitions
