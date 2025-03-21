@@ -99,7 +99,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [dwc:SampleAttribute](#dwc_SampleAttribute) |
 [dwc:SamplingEvent](#dwc_SamplingEvent) |
 [dwc:SamplingLocation](#dwc_SamplingLocation) |
-[dwc:Taxon](#dwc_Taxon) 
+[dwc:Taxon](#dwc_Taxon)
 
 **Record level**
 
@@ -117,12 +117,12 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [dwc:informationWithheld](#dwc_informationWithheld) |
 [dwc:institutionCode](#dwc_institutionCode) |
 [dwc:institutionID](#dwc_institutionID) |
-[dwc:ownerInstitutionCode](#dwc_ownerInstitutionCode) 
+[dwc:ownerInstitutionCode](#dwc_ownerInstitutionCode)
 
 **Dublin Core legacy namespace**
 
 [dc:language](#dc_language) |
-[dc:type](#dc_type) 
+[dc:type](#dc_type)
 
 **Dublin Core terms namespace**
 
@@ -134,7 +134,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [dcterms:references](#dcterms_references) |
 [dcterms:rights](#dcterms_rights) |
 [dcterms:rightsHolder](#dcterms_rightsHolder) |
-[dcterms:type](#dcterms_type) 
+[dcterms:type](#dcterms_type)
 
 **Occurrence**
 
@@ -166,7 +166,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [dwc:recordNumber](#dwc_recordNumber) |
 [dwc:reproductiveCondition](#dwc_reproductiveCondition) |
 [dwc:sex](#dwc_sex) |
-[dwc:vitality](#dwc_vitality) 
+[dwc:vitality](#dwc_vitality)
 
 **Organism**
 
@@ -175,7 +175,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [dwc:organismName](#dwc_organismName) |
 [dwc:organismRemarks](#dwc_organismRemarks) |
 [dwc:organismScope](#dwc_organismScope) |
-[dwc:previousIdentifications](#dwc_previousIdentifications) 
+[dwc:previousIdentifications](#dwc_previousIdentifications)
 
 **Material Entity**
 
@@ -184,11 +184,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [dwc:materialEntityID](#dwc_materialEntityID) |
 [dwc:materialEntityRemarks](#dwc_materialEntityRemarks) |
 [dwc:preparations](#dwc_preparations) |
-[dwc:verbatimLabel](#dwc_verbatimLabel) 
+[dwc:verbatimLabel](#dwc_verbatimLabel)
 
 **Material Sample**
 
-[dwc:materialSampleID](#dwc_materialSampleID) 
+[dwc:materialSampleID](#dwc_materialSampleID)
 
 **Event**
 
@@ -215,7 +215,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [dwc:startDayOfYear](#dwc_startDayOfYear) |
 [dwc:StartTimeOfDay](#dwc_StartTimeOfDay) |
 [dwc:verbatimEventDate](#dwc_verbatimEventDate) |
-[dwc:year](#dwc_year) 
+[dwc:year](#dwc_year)
 
 **Location**
 
@@ -265,7 +265,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [dwc:verbatimLongitude](#dwc_verbatimLongitude) |
 [dwc:verbatimSRS](#dwc_verbatimSRS) |
 [dwc:verticalDatum](#dwc_verticalDatum) |
-[dwc:waterBody](#dwc_waterBody) 
+[dwc:waterBody](#dwc_waterBody)
 
 **Geological Context**
 
@@ -286,7 +286,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [dwc:latestPeriodOrHighestSystem](#dwc_latestPeriodOrHighestSystem) |
 [dwc:lithostratigraphicTerms](#dwc_lithostratigraphicTerms) |
 [dwc:lowestBiostratigraphicZone](#dwc_lowestBiostratigraphicZone) |
-[dwc:member](#dwc_member) 
+[dwc:member](#dwc_member)
 
 **Identification**
 
@@ -301,7 +301,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [dwc:identifiedByID](#dwc_identifiedByID) |
 [dwc:PreviousIdentifications](#dwc_PreviousIdentifications) |
 [dwc:typeStatus](#dwc_typeStatus) |
-[dwc:verbatimIdentification](#dwc_verbatimIdentification) 
+[dwc:verbatimIdentification](#dwc_verbatimIdentification)
 
 **Taxon**
 
@@ -366,7 +366,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [dwc:tribe](#dwc_tribe) |
 [dwc:verbatimScientificNameRank](#dwc_verbatimScientificNameRank) |
 [dwc:verbatimTaxonRank](#dwc_verbatimTaxonRank) |
-[dwc:vernacularName](#dwc_vernacularName) 
+[dwc:vernacularName](#dwc_vernacularName)
 
 **Measurement or Fact**
 
@@ -379,7 +379,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [dwc:measurementType](#dwc_measurementType) |
 [dwc:measurementUnit](#dwc_measurementUnit) |
 [dwc:measurementValue](#dwc_measurementValue) |
-[dwc:parentMeasurementID](#dwc_parentMeasurementID) 
+[dwc:parentMeasurementID](#dwc_parentMeasurementID)
 
 **Resource Relationship**
 
@@ -392,7 +392,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [dwc:relationshipOfResourceID](#dwc_relationshipOfResourceID) |
 [dwc:relationshipRemarks](#dwc_relationshipRemarks) |
 [dwc:resourceID](#dwc_resourceID) |
-[dwc:resourceRelationshipID](#dwc_resourceRelationshipID) 
+[dwc:resourceRelationshipID](#dwc_resourceRelationshipID)
 
 **IRI-value terms**
 
@@ -445,7 +445,9 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [dwciri:verbatimCoordinateSystem](#dwciri_verbatimCoordinateSystem) |
 [dwciri:verbatimSRS](#dwciri_verbatimSRS) |
 [dwciri:verticalDatum](#dwciri_verticalDatum) |
-[dwciri:vitality](#dwciri_vitality) 
+[dwciri:vitality](#dwciri_vitality)
+
+
 
 ### 3.2 Index By Label
 
@@ -477,7 +479,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [Sample Attribute](#dwc_SampleAttribute) |
 [Sampling Event](#dwc_SamplingEvent) |
 [Sampling Location](#dwc_SamplingLocation) |
-[Taxon](#dwc_Taxon) 
+[Taxon](#dwc_Taxon)
 
 **Record level**
 
@@ -495,12 +497,12 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [Information Withheld](#dwc_informationWithheld) |
 [Institution Code](#dwc_institutionCode) |
 [Institution ID](#dwc_institutionID) |
-[Owner Institution Code](#dwc_ownerInstitutionCode) 
+[Owner Institution Code](#dwc_ownerInstitutionCode)
 
 **Dublin Core legacy namespace**
 
 [Language](#dc_language) |
-[Type](#dc_type) 
+[Type](#dc_type)
 
 **Dublin Core terms namespace**
 
@@ -512,7 +514,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [References](#dcterms_references) |
 [Rights](#dcterms_rights) |
 [Rights Holder](#dcterms_rightsHolder) |
-[Type](#dcterms_type) 
+[Type](#dcterms_type)
 
 **Occurrence**
 
@@ -544,7 +546,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [Recorded By ID](#dwc_recordedByID) |
 [Reproductive Condition](#dwc_reproductiveCondition) |
 [Sex](#dwc_sex) |
-[Vitality](#dwc_vitality) 
+[Vitality](#dwc_vitality)
 
 **Organism**
 
@@ -553,7 +555,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [Organism Name](#dwc_organismName) |
 [Organism Remarks](#dwc_organismRemarks) |
 [Organism Scope](#dwc_organismScope) |
-[Previous Identifications](#dwc_previousIdentifications) 
+[Previous Identifications](#dwc_previousIdentifications)
 
 **Material Entity**
 
@@ -562,11 +564,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [Material Entity ID](#dwc_materialEntityID) |
 [Material Entity Remarks](#dwc_materialEntityRemarks) |
 [Preparations](#dwc_preparations) |
-[Verbatim Label](#dwc_verbatimLabel) 
+[Verbatim Label](#dwc_verbatimLabel)
 
 **Material Sample**
 
-[Material Sample ID](#dwc_materialSampleID) 
+[Material Sample ID](#dwc_materialSampleID)
 
 **Event**
 
@@ -593,7 +595,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [Start Day Of Year](#dwc_startDayOfYear) |
 [Start Time of Day](#dwc_StartTimeOfDay) |
 [Verbatim EventDate](#dwc_verbatimEventDate) |
-[Year](#dwc_year) 
+[Year](#dwc_year)
 
 **Location**
 
@@ -643,7 +645,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [Verbatim Longitude](#dwc_verbatimLongitude) |
 [Verbatim SRS](#dwc_verbatimSRS) |
 [Vertical Datum](#dwc_verticalDatum) |
-[Water Body](#dwc_waterBody) 
+[Water Body](#dwc_waterBody)
 
 **Geological Context**
 
@@ -664,7 +666,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [Lithostratigraphic Terms](#dwc_lithostratigraphicTerms) |
 [Llatest Eon Or Highest Eonothem](#dwc_latestEonOrHighestEonothem) |
 [Lowest Biostratigraphic Zone](#dwc_lowestBiostratigraphicZone) |
-[Member](#dwc_member) 
+[Member](#dwc_member)
 
 **Identification**
 
@@ -679,7 +681,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [Identified By ID](#dwc_identifiedByID) |
 [Previous Identifications](#dwc_PreviousIdentifications) |
 [Type Status](#dwc_typeStatus) |
-[Verbatim Identification](#dwc_verbatimIdentification) 
+[Verbatim Identification](#dwc_verbatimIdentification)
 
 **Taxon**
 
@@ -689,6 +691,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [Accepted Scientific Name ID](#dwc_acceptedScientificNameID) |
 [Accepted Taxon](#dwc_AcceptedTaxon) |
 [Accepted Taxon ID](#dwc_AcceptedTaxonID) |
+[Accepted Taxon ID](#dwc_acceptedTaxonID) |
 [Accepted Taxon Name](#dwc_acceptedTaxonName) |
 [Accepted Taxon Name ID](#dwc_acceptedTaxonNameID) |
 [Basionym](#dwc_basionym) |
@@ -735,6 +738,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [Taxon Attributes](#dwc_taxonAttributes) |
 [Taxon Concept ID](#dwc_taxonConceptID) |
 [Taxon ID](#dwc_TaxonID) |
+[Taxon ID](#dwc_taxonID) |
 [Taxon Name ID](#dwc_taxonNameID) |
 [Taxon Rank](#dwc_taxonRank) |
 [Taxon Remarks](#dwc_taxonRemarks) |
@@ -742,7 +746,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [Tribe](#dwc_tribe) |
 [Verbatim Scientific Name Rank](#dwc_verbatimScientificNameRank) |
 [Verbatim Taxon Rank](#dwc_verbatimTaxonRank) |
-[Vernacular Name](#dwc_vernacularName) 
+[Vernacular Name](#dwc_vernacularName)
 
 **Measurement or Fact**
 
@@ -755,7 +759,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [Measurement Type](#dwc_measurementType) |
 [Measurement Unit](#dwc_measurementUnit) |
 [Measurement Value](#dwc_measurementValue) |
-[Parent Measurement ID](#dwc_parentMeasurementID) 
+[Parent Measurement ID](#dwc_parentMeasurementID)
 
 **Resource Relationship**
 
@@ -768,7 +772,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [Relationship Of Resource ID](#dwc_relationshipOfResourceID) |
 [Relationship Remarks](#dwc_relationshipRemarks) |
 [Resource ID](#dwc_resourceID) |
-[Resource Relationship ID](#dwc_resourceRelationshipID) 
+[Resource Relationship ID](#dwc_resourceRelationshipID)
 
 **IRI-value terms**
 
@@ -821,13 +825,13 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [Verbatim Coordinate System (IRI)](#dwciri_verbatimCoordinateSystem) |
 [Verbatim SRS (IRI)](#dwciri_verbatimSRS) |
 [Vertical Datum (IRI)](#dwciri_verticalDatum) |
-[Vitality (IRI)](#dwciri_vitality) 
+[Vitality (IRI)](#dwciri_vitality)
 
 ## 4 Vocabulary
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_acceptedNameUsage"></a>Term Name  dwc:acceptedNameUsage</th>
+			<th colspan="2"><a id="dwc_acceptedNameUsage"></a>Term Name dwc:acceptedNameUsage</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -873,7 +877,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_acceptedNameUsageID"></a>Term Name  dwc:acceptedNameUsageID</th>
+			<th colspan="2"><a id="dwc_acceptedNameUsageID"></a>Term Name dwc:acceptedNameUsageID</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -924,7 +928,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_acceptedScientificName"></a>Term Name  dwc:acceptedScientificName</th>
+			<th colspan="2"><a id="dwc_acceptedScientificName"></a>Term Name dwc:acceptedScientificName</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -970,7 +974,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_acceptedScientificNameID"></a>Term Name  dwc:acceptedScientificNameID</th>
+			<th colspan="2"><a id="dwc_acceptedScientificNameID"></a>Term Name dwc:acceptedScientificNameID</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1012,7 +1016,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_AcceptedTaxon"></a>Term Name  dwc:AcceptedTaxon</th>
+			<th colspan="2"><a id="dwc_AcceptedTaxon"></a>Term Name dwc:AcceptedTaxon</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1054,7 +1058,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_AcceptedTaxonID"></a>Term Name  dwc:AcceptedTaxonID</th>
+			<th colspan="2"><a id="dwc_AcceptedTaxonID"></a>Term Name dwc:AcceptedTaxonID</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1096,7 +1100,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_acceptedTaxonID"></a>Term Name  dwc:acceptedTaxonID</th>
+			<th colspan="2"><a id="dwc_acceptedTaxonID"></a>Term Name dwc:acceptedTaxonID</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1142,7 +1146,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_acceptedTaxonName"></a>Term Name  dwc:acceptedTaxonName</th>
+			<th colspan="2"><a id="dwc_acceptedTaxonName"></a>Term Name dwc:acceptedTaxonName</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1188,7 +1192,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_acceptedTaxonNameID"></a>Term Name  dwc:acceptedTaxonNameID</th>
+			<th colspan="2"><a id="dwc_acceptedTaxonNameID"></a>Term Name dwc:acceptedTaxonNameID</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1230,7 +1234,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_AccessConstraints"></a>Term Name  dwc:AccessConstraints</th>
+			<th colspan="2"><a id="dwc_AccessConstraints"></a>Term Name dwc:AccessConstraints</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1276,7 +1280,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dcterms_accessRights"></a>Term Name  dcterms:accessRights</th>
+			<th colspan="2"><a id="dcterms_accessRights"></a>Term Name dcterms:accessRights</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1325,7 +1329,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_accordingTo"></a>Term Name  dwc:accordingTo</th>
+			<th colspan="2"><a id="dwc_accordingTo"></a>Term Name dwc:accordingTo</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1363,7 +1367,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_accuracy"></a>Term Name  dwc:accuracy</th>
+			<th colspan="2"><a id="dwc_accuracy"></a>Term Name dwc:accuracy</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1401,7 +1405,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_associatedMedia"></a>Term Name  dwc:associatedMedia</th>
+			<th colspan="2"><a id="dwc_associatedMedia"></a>Term Name dwc:associatedMedia</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1447,7 +1451,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_associatedOccurrences"></a>Term Name  dwc:associatedOccurrences</th>
+			<th colspan="2"><a id="dwc_associatedOccurrences"></a>Term Name dwc:associatedOccurrences</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1504,7 +1508,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_associatedOrganisms"></a>Term Name  dwc:associatedOrganisms</th>
+			<th colspan="2"><a id="dwc_associatedOrganisms"></a>Term Name dwc:associatedOrganisms</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1557,7 +1561,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_associatedReferences"></a>Term Name  dwc:associatedReferences</th>
+			<th colspan="2"><a id="dwc_associatedReferences"></a>Term Name dwc:associatedReferences</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1611,7 +1615,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_associatedSequences"></a>Term Name  dwc:associatedSequences</th>
+			<th colspan="2"><a id="dwc_associatedSequences"></a>Term Name dwc:associatedSequences</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1660,7 +1664,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_associatedTaxa"></a>Term Name  dwc:associatedTaxa</th>
+			<th colspan="2"><a id="dwc_associatedTaxa"></a>Term Name dwc:associatedTaxa</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1714,7 +1718,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_basionym"></a>Term Name  dwc:basionym</th>
+			<th colspan="2"><a id="dwc_basionym"></a>Term Name dwc:basionym</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1760,7 +1764,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_basionymID"></a>Term Name  dwc:basionymID</th>
+			<th colspan="2"><a id="dwc_basionymID"></a>Term Name dwc:basionymID</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1802,7 +1806,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_basisOfRecord"></a>Term Name  dwc:basisOfRecord</th>
+			<th colspan="2"><a id="dwc_basisOfRecord"></a>Term Name dwc:basisOfRecord</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1876,7 +1880,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_bed"></a>Term Name  dwc:bed</th>
+			<th colspan="2"><a id="dwc_bed"></a>Term Name dwc:bed</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1922,7 +1926,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_behavior"></a>Term Name  dwciri:behavior</th>
+			<th colspan="2"><a id="dwciri_behavior"></a>Term Name dwciri:behavior</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1964,7 +1968,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_behavior"></a>Term Name  dwc:behavior</th>
+			<th colspan="2"><a id="dwc_behavior"></a>Term Name dwc:behavior</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2014,7 +2018,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dcterms_bibliographicCitation"></a>Term Name  dcterms:bibliographicCitation</th>
+			<th colspan="2"><a id="dcterms_bibliographicCitation"></a>Term Name dcterms:bibliographicCitation</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2064,7 +2068,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_binomial"></a>Term Name  dwc:binomial</th>
+			<th colspan="2"><a id="dwc_binomial"></a>Term Name dwc:binomial</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2106,7 +2110,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_caste"></a>Term Name  dwciri:caste</th>
+			<th colspan="2"><a id="dwciri_caste"></a>Term Name dwciri:caste</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2152,7 +2156,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_caste"></a>Term Name  dwc:caste</th>
+			<th colspan="2"><a id="dwc_caste"></a>Term Name dwc:caste</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2209,7 +2213,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_catalogNumber"></a>Term Name  dwc:catalogNumber</th>
+			<th colspan="2"><a id="dwc_catalogNumber"></a>Term Name dwc:catalogNumber</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2256,7 +2260,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_CatalogNumberNumeric"></a>Term Name  dwc:CatalogNumberNumeric</th>
+			<th colspan="2"><a id="dwc_CatalogNumberNumeric"></a>Term Name dwc:CatalogNumberNumeric</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2294,7 +2298,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_class"></a>Term Name  dwc:class</th>
+			<th colspan="2"><a id="dwc_class"></a>Term Name dwc:class</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2339,7 +2343,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_collectionCode"></a>Term Name  dwc:collectionCode</th>
+			<th colspan="2"><a id="dwc_collectionCode"></a>Term Name dwc:collectionCode</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2386,7 +2390,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_collectionID"></a>Term Name  dwc:collectionID</th>
+			<th colspan="2"><a id="dwc_collectionID"></a>Term Name dwc:collectionID</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2432,7 +2436,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_continent"></a>Term Name  dwc:continent</th>
+			<th colspan="2"><a id="dwc_continent"></a>Term Name dwc:continent</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2490,7 +2494,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_coordinatePrecision"></a>Term Name  dwc:coordinatePrecision</th>
+			<th colspan="2"><a id="dwc_coordinatePrecision"></a>Term Name dwc:coordinatePrecision</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2537,7 +2541,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_coordinateUncertaintyInMeters"></a>Term Name  dwc:coordinateUncertaintyInMeters</th>
+			<th colspan="2"><a id="dwc_coordinateUncertaintyInMeters"></a>Term Name dwc:coordinateUncertaintyInMeters</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2583,7 +2587,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_country"></a>Term Name  dwc:country</th>
+			<th colspan="2"><a id="dwc_country"></a>Term Name dwc:country</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2633,7 +2637,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_countryCode"></a>Term Name  dwc:countryCode</th>
+			<th colspan="2"><a id="dwc_countryCode"></a>Term Name dwc:countryCode</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2686,7 +2690,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_county"></a>Term Name  dwc:county</th>
+			<th colspan="2"><a id="dwc_county"></a>Term Name dwc:county</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2740,7 +2744,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_cultivarEpithet"></a>Term Name  dwc:cultivarEpithet</th>
+			<th colspan="2"><a id="dwc_cultivarEpithet"></a>Term Name dwc:cultivarEpithet</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2794,7 +2798,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_dataGeneralizations"></a>Term Name  dwc:dataGeneralizations</th>
+			<th colspan="2"><a id="dwc_dataGeneralizations"></a>Term Name dwc:dataGeneralizations</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2840,7 +2844,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_dataGeneralizations"></a>Term Name  dwciri:dataGeneralizations</th>
+			<th colspan="2"><a id="dwciri_dataGeneralizations"></a>Term Name dwciri:dataGeneralizations</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2882,7 +2886,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_Dataset"></a>Term Name  dwc:Dataset</th>
+			<th colspan="2"><a id="dwc_Dataset"></a>Term Name dwc:Dataset</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2920,7 +2924,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_datasetID"></a>Term Name  dwc:datasetID</th>
+			<th colspan="2"><a id="dwc_datasetID"></a>Term Name dwc:datasetID</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2962,7 +2966,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_datasetName"></a>Term Name  dwc:datasetName</th>
+			<th colspan="2"><a id="dwc_datasetName"></a>Term Name dwc:datasetName</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -3007,7 +3011,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_dateIdentified"></a>Term Name  dwc:dateIdentified</th>
+			<th colspan="2"><a id="dwc_dateIdentified"></a>Term Name dwc:dateIdentified</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -3067,7 +3071,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_day"></a>Term Name  dwc:day</th>
+			<th colspan="2"><a id="dwc_day"></a>Term Name dwc:day</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -3112,7 +3116,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_decimalLatitude"></a>Term Name  dwc:decimalLatitude</th>
+			<th colspan="2"><a id="dwc_decimalLatitude"></a>Term Name dwc:decimalLatitude</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -3154,7 +3158,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_decimalLongitude"></a>Term Name  dwc:decimalLongitude</th>
+			<th colspan="2"><a id="dwc_decimalLongitude"></a>Term Name dwc:decimalLongitude</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -3196,7 +3200,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_degreeOfEstablishment"></a>Term Name  dwciri:degreeOfEstablishment</th>
+			<th colspan="2"><a id="dwciri_degreeOfEstablishment"></a>Term Name dwciri:degreeOfEstablishment</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -3249,7 +3253,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_degreeOfEstablishment"></a>Term Name  dwc:degreeOfEstablishment</th>
+			<th colspan="2"><a id="dwc_degreeOfEstablishment"></a>Term Name dwc:degreeOfEstablishment</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -3307,7 +3311,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_disposition"></a>Term Name  dwc:disposition</th>
+			<th colspan="2"><a id="dwc_disposition"></a>Term Name dwc:disposition</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -3364,7 +3368,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_disposition"></a>Term Name  dwciri:disposition</th>
+			<th colspan="2"><a id="dwciri_disposition"></a>Term Name dwciri:disposition</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -3406,7 +3410,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_DwCType"></a>Term Name  dwc:DwCType</th>
+			<th colspan="2"><a id="dwc_DwCType"></a>Term Name dwc:DwCType</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -3444,7 +3448,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_dynamicProperties"></a>Term Name  dwc:dynamicProperties</th>
+			<th colspan="2"><a id="dwc_dynamicProperties"></a>Term Name dwc:dynamicProperties</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -3501,7 +3505,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_earliestAgeOrLowestStage"></a>Term Name  dwc:earliestAgeOrLowestStage</th>
+			<th colspan="2"><a id="dwc_earliestAgeOrLowestStage"></a>Term Name dwc:earliestAgeOrLowestStage</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -3551,7 +3555,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_EarliestDateCollected"></a>Term Name  dwc:EarliestDateCollected</th>
+			<th colspan="2"><a id="dwc_EarliestDateCollected"></a>Term Name dwc:EarliestDateCollected</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -3597,7 +3601,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_earliestEonOrLowestEonothem"></a>Term Name  dwc:earliestEonOrLowestEonothem</th>
+			<th colspan="2"><a id="dwc_earliestEonOrLowestEonothem"></a>Term Name dwc:earliestEonOrLowestEonothem</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -3646,7 +3650,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_earliestEpochOrLowestSeries"></a>Term Name  dwc:earliestEpochOrLowestSeries</th>
+			<th colspan="2"><a id="dwc_earliestEpochOrLowestSeries"></a>Term Name dwc:earliestEpochOrLowestSeries</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -3696,7 +3700,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_earliestEraOrLowestErathem"></a>Term Name  dwc:earliestEraOrLowestErathem</th>
+			<th colspan="2"><a id="dwc_earliestEraOrLowestErathem"></a>Term Name dwc:earliestEraOrLowestErathem</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -3745,7 +3749,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_earliestGeochronologicalEra"></a>Term Name  dwciri:earliestGeochronologicalEra</th>
+			<th colspan="2"><a id="dwciri_earliestGeochronologicalEra"></a>Term Name dwciri:earliestGeochronologicalEra</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -3791,7 +3795,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_earliestPeriodOrLowestSystem"></a>Term Name  dwc:earliestPeriodOrLowestSystem</th>
+			<th colspan="2"><a id="dwc_earliestPeriodOrLowestSystem"></a>Term Name dwc:earliestPeriodOrLowestSystem</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -3841,7 +3845,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_endDayOfYear"></a>Term Name  dwc:endDayOfYear</th>
+			<th colspan="2"><a id="dwc_endDayOfYear"></a>Term Name dwc:endDayOfYear</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -3888,7 +3892,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_EndTimeOfDay"></a>Term Name  dwc:EndTimeOfDay</th>
+			<th colspan="2"><a id="dwc_EndTimeOfDay"></a>Term Name dwc:EndTimeOfDay</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -3934,7 +3938,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_establishmentMeans"></a>Term Name  dwciri:establishmentMeans</th>
+			<th colspan="2"><a id="dwciri_establishmentMeans"></a>Term Name dwciri:establishmentMeans</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -3987,7 +3991,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_establishmentMeans"></a>Term Name  dwc:establishmentMeans</th>
+			<th colspan="2"><a id="dwc_establishmentMeans"></a>Term Name dwc:establishmentMeans</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -4044,7 +4048,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_Event"></a>Term Name  dwc:Event</th>
+			<th colspan="2"><a id="dwc_Event"></a>Term Name dwc:Event</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -4094,7 +4098,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_EventAttribute"></a>Term Name  dwc:EventAttribute</th>
+			<th colspan="2"><a id="dwc_EventAttribute"></a>Term Name dwc:EventAttribute</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -4132,7 +4136,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_EventAttributeAccuracy"></a>Term Name  dwc:EventAttributeAccuracy</th>
+			<th colspan="2"><a id="dwc_EventAttributeAccuracy"></a>Term Name dwc:EventAttributeAccuracy</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -4178,7 +4182,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_EventAttributeDeterminedBy"></a>Term Name  dwc:EventAttributeDeterminedBy</th>
+			<th colspan="2"><a id="dwc_EventAttributeDeterminedBy"></a>Term Name dwc:EventAttributeDeterminedBy</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -4224,7 +4228,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_EventAttributeDeterminedDate"></a>Term Name  dwc:EventAttributeDeterminedDate</th>
+			<th colspan="2"><a id="dwc_EventAttributeDeterminedDate"></a>Term Name dwc:EventAttributeDeterminedDate</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -4270,7 +4274,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_EventAttributeID"></a>Term Name  dwc:EventAttributeID</th>
+			<th colspan="2"><a id="dwc_EventAttributeID"></a>Term Name dwc:EventAttributeID</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -4312,7 +4316,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_EventAttributeRemarks"></a>Term Name  dwc:EventAttributeRemarks</th>
+			<th colspan="2"><a id="dwc_EventAttributeRemarks"></a>Term Name dwc:EventAttributeRemarks</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -4354,7 +4358,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_eventAttributes"></a>Term Name  dwc:eventAttributes</th>
+			<th colspan="2"><a id="dwc_eventAttributes"></a>Term Name dwc:eventAttributes</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -4396,7 +4400,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_EventAttributeType"></a>Term Name  dwc:EventAttributeType</th>
+			<th colspan="2"><a id="dwc_EventAttributeType"></a>Term Name dwc:EventAttributeType</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -4446,7 +4450,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_EventAttributeUnit"></a>Term Name  dwc:EventAttributeUnit</th>
+			<th colspan="2"><a id="dwc_EventAttributeUnit"></a>Term Name dwc:EventAttributeUnit</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -4492,7 +4496,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_EventAttributeValue"></a>Term Name  dwc:EventAttributeValue</th>
+			<th colspan="2"><a id="dwc_EventAttributeValue"></a>Term Name dwc:EventAttributeValue</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -4538,7 +4542,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_eventDate"></a>Term Name  dwc:eventDate</th>
+			<th colspan="2"><a id="dwc_eventDate"></a>Term Name dwc:eventDate</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -4594,7 +4598,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_eventID"></a>Term Name  dwc:eventID</th>
+			<th colspan="2"><a id="dwc_eventID"></a>Term Name dwc:eventID</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -4636,7 +4640,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_EventMeasurement"></a>Term Name  dwc:EventMeasurement</th>
+			<th colspan="2"><a id="dwc_EventMeasurement"></a>Term Name dwc:EventMeasurement</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -4678,7 +4682,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_eventMeasurementAccuracy"></a>Term Name  dwc:eventMeasurementAccuracy</th>
+			<th colspan="2"><a id="dwc_eventMeasurementAccuracy"></a>Term Name dwc:eventMeasurementAccuracy</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -4724,7 +4728,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_eventMeasurementDeterminedBy"></a>Term Name  dwc:eventMeasurementDeterminedBy</th>
+			<th colspan="2"><a id="dwc_eventMeasurementDeterminedBy"></a>Term Name dwc:eventMeasurementDeterminedBy</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -4770,7 +4774,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_eventMeasurementDeterminedDate"></a>Term Name  dwc:eventMeasurementDeterminedDate</th>
+			<th colspan="2"><a id="dwc_eventMeasurementDeterminedDate"></a>Term Name dwc:eventMeasurementDeterminedDate</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -4816,7 +4820,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_eventMeasurementID"></a>Term Name  dwc:eventMeasurementID</th>
+			<th colspan="2"><a id="dwc_eventMeasurementID"></a>Term Name dwc:eventMeasurementID</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -4858,7 +4862,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_eventMeasurementRemarks"></a>Term Name  dwc:eventMeasurementRemarks</th>
+			<th colspan="2"><a id="dwc_eventMeasurementRemarks"></a>Term Name dwc:eventMeasurementRemarks</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -4904,7 +4908,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_eventMeasurementType"></a>Term Name  dwc:eventMeasurementType</th>
+			<th colspan="2"><a id="dwc_eventMeasurementType"></a>Term Name dwc:eventMeasurementType</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -4950,7 +4954,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_eventMeasurementUnit"></a>Term Name  dwc:eventMeasurementUnit</th>
+			<th colspan="2"><a id="dwc_eventMeasurementUnit"></a>Term Name dwc:eventMeasurementUnit</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -4996,7 +5000,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_eventMeasurementValue"></a>Term Name  dwc:eventMeasurementValue</th>
+			<th colspan="2"><a id="dwc_eventMeasurementValue"></a>Term Name dwc:eventMeasurementValue</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -5042,7 +5046,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_eventRemarks"></a>Term Name  dwc:eventRemarks</th>
+			<th colspan="2"><a id="dwc_eventRemarks"></a>Term Name dwc:eventRemarks</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -5084,7 +5088,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_eventTime"></a>Term Name  dwc:eventTime</th>
+			<th colspan="2"><a id="dwc_eventTime"></a>Term Name dwc:eventTime</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -5138,7 +5142,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_eventType"></a>Term Name  dwc:eventType</th>
+			<th colspan="2"><a id="dwc_eventType"></a>Term Name dwc:eventType</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -5197,7 +5201,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_eventType"></a>Term Name  dwciri:eventType</th>
+			<th colspan="2"><a id="dwciri_eventType"></a>Term Name dwciri:eventType</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -5243,7 +5247,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_family"></a>Term Name  dwc:family</th>
+			<th colspan="2"><a id="dwc_family"></a>Term Name dwc:family</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -5288,7 +5292,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_fieldNotes"></a>Term Name  dwciri:fieldNotes</th>
+			<th colspan="2"><a id="dwciri_fieldNotes"></a>Term Name dwciri:fieldNotes</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -5330,7 +5334,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_fieldNotes"></a>Term Name  dwc:fieldNotes</th>
+			<th colspan="2"><a id="dwc_fieldNotes"></a>Term Name dwc:fieldNotes</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -5376,7 +5380,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_fieldNumber"></a>Term Name  dwciri:fieldNumber</th>
+			<th colspan="2"><a id="dwciri_fieldNumber"></a>Term Name dwciri:fieldNumber</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -5418,7 +5422,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_fieldNumber"></a>Term Name  dwc:fieldNumber</th>
+			<th colspan="2"><a id="dwc_fieldNumber"></a>Term Name dwc:fieldNumber</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -5464,7 +5468,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_footprintSpatialFit"></a>Term Name  dwc:footprintSpatialFit</th>
+			<th colspan="2"><a id="dwc_footprintSpatialFit"></a>Term Name dwc:footprintSpatialFit</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -5518,7 +5522,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_footprintSRS"></a>Term Name  dwciri:footprintSRS</th>
+			<th colspan="2"><a id="dwciri_footprintSRS"></a>Term Name dwciri:footprintSRS</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -5564,7 +5568,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_footprintSRS"></a>Term Name  dwc:footprintSRS</th>
+			<th colspan="2"><a id="dwc_footprintSRS"></a>Term Name dwc:footprintSRS</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -5617,7 +5621,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_footprintWKT"></a>Term Name  dwciri:footprintWKT</th>
+			<th colspan="2"><a id="dwciri_footprintWKT"></a>Term Name dwciri:footprintWKT</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -5659,7 +5663,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_footprintWKT"></a>Term Name  dwc:footprintWKT</th>
+			<th colspan="2"><a id="dwc_footprintWKT"></a>Term Name dwc:footprintWKT</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -5705,7 +5709,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_formation"></a>Term Name  dwc:formation</th>
+			<th colspan="2"><a id="dwc_formation"></a>Term Name dwc:formation</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -5755,7 +5759,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_FossilSpecimen"></a>Term Name  dwc:FossilSpecimen</th>
+			<th colspan="2"><a id="dwc_FossilSpecimen"></a>Term Name dwc:FossilSpecimen</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -5807,7 +5811,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_fromLithostratigraphicUnit"></a>Term Name  dwciri:fromLithostratigraphicUnit</th>
+			<th colspan="2"><a id="dwciri_fromLithostratigraphicUnit"></a>Term Name dwciri:fromLithostratigraphicUnit</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -5849,7 +5853,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_Generalizations"></a>Term Name  dwc:Generalizations</th>
+			<th colspan="2"><a id="dwc_Generalizations"></a>Term Name dwc:Generalizations</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -5895,7 +5899,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_genericName"></a>Term Name  dwc:genericName</th>
+			<th colspan="2"><a id="dwc_genericName"></a>Term Name dwc:genericName</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -5945,7 +5949,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_genus"></a>Term Name  dwc:genus</th>
+			<th colspan="2"><a id="dwc_genus"></a>Term Name dwc:genus</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -5990,7 +5994,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_geodeticDatum"></a>Term Name  dwciri:geodeticDatum</th>
+			<th colspan="2"><a id="dwciri_geodeticDatum"></a>Term Name dwciri:geodeticDatum</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -6036,7 +6040,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_geodeticDatum"></a>Term Name  dwc:geodeticDatum</th>
+			<th colspan="2"><a id="dwc_geodeticDatum"></a>Term Name dwc:geodeticDatum</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -6090,7 +6094,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_GeologicalContext"></a>Term Name  dwc:GeologicalContext</th>
+			<th colspan="2"><a id="dwc_GeologicalContext"></a>Term Name dwc:GeologicalContext</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -6136,7 +6140,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_geologicalContextID"></a>Term Name  dwc:geologicalContextID</th>
+			<th colspan="2"><a id="dwc_geologicalContextID"></a>Term Name dwc:geologicalContextID</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -6178,7 +6182,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_georeferencedBy"></a>Term Name  dwc:georeferencedBy</th>
+			<th colspan="2"><a id="dwc_georeferencedBy"></a>Term Name dwc:georeferencedBy</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -6231,7 +6235,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_georeferencedBy"></a>Term Name  dwciri:georeferencedBy</th>
+			<th colspan="2"><a id="dwciri_georeferencedBy"></a>Term Name dwciri:georeferencedBy</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -6273,7 +6277,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_georeferencedDate"></a>Term Name  dwc:georeferencedDate</th>
+			<th colspan="2"><a id="dwc_georeferencedDate"></a>Term Name dwc:georeferencedDate</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -6333,7 +6337,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_georeferenceProtocol"></a>Term Name  dwciri:georeferenceProtocol</th>
+			<th colspan="2"><a id="dwciri_georeferenceProtocol"></a>Term Name dwciri:georeferenceProtocol</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -6375,7 +6379,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_georeferenceProtocol"></a>Term Name  dwc:georeferenceProtocol</th>
+			<th colspan="2"><a id="dwc_georeferenceProtocol"></a>Term Name dwc:georeferenceProtocol</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -6421,7 +6425,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_georeferenceRemarks"></a>Term Name  dwc:georeferenceRemarks</th>
+			<th colspan="2"><a id="dwc_georeferenceRemarks"></a>Term Name dwc:georeferenceRemarks</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -6463,7 +6467,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_georeferenceSources"></a>Term Name  dwciri:georeferenceSources</th>
+			<th colspan="2"><a id="dwciri_georeferenceSources"></a>Term Name dwciri:georeferenceSources</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -6505,7 +6509,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_georeferenceSources"></a>Term Name  dwc:georeferenceSources</th>
+			<th colspan="2"><a id="dwc_georeferenceSources"></a>Term Name dwc:georeferenceSources</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -6559,7 +6563,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_georeferenceVerificationStatus"></a>Term Name  dwciri:georeferenceVerificationStatus</th>
+			<th colspan="2"><a id="dwciri_georeferenceVerificationStatus"></a>Term Name dwciri:georeferenceVerificationStatus</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -6605,7 +6609,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_georeferenceVerificationStatus"></a>Term Name  dwc:georeferenceVerificationStatus</th>
+			<th colspan="2"><a id="dwc_georeferenceVerificationStatus"></a>Term Name dwc:georeferenceVerificationStatus</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -6661,7 +6665,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_group"></a>Term Name  dwc:group</th>
+			<th colspan="2"><a id="dwc_group"></a>Term Name dwc:group</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -6710,7 +6714,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_habitat"></a>Term Name  dwciri:habitat</th>
+			<th colspan="2"><a id="dwciri_habitat"></a>Term Name dwciri:habitat</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -6752,7 +6756,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_habitat"></a>Term Name  dwc:habitat</th>
+			<th colspan="2"><a id="dwc_habitat"></a>Term Name dwc:habitat</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -6801,7 +6805,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_higherClassification"></a>Term Name  dwc:higherClassification</th>
+			<th colspan="2"><a id="dwc_higherClassification"></a>Term Name dwc:higherClassification</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -6855,7 +6859,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_higherGeography"></a>Term Name  dwc:higherGeography</th>
+			<th colspan="2"><a id="dwc_higherGeography"></a>Term Name dwc:higherGeography</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -6908,7 +6912,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_higherGeographyID"></a>Term Name  dwc:higherGeographyID</th>
+			<th colspan="2"><a id="dwc_higherGeographyID"></a>Term Name dwc:higherGeographyID</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -6954,7 +6958,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_HigherTaxon"></a>Term Name  dwc:HigherTaxon</th>
+			<th colspan="2"><a id="dwc_HigherTaxon"></a>Term Name dwc:HigherTaxon</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -6996,7 +7000,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_higherTaxonconceptID"></a>Term Name  dwc:higherTaxonconceptID</th>
+			<th colspan="2"><a id="dwc_higherTaxonconceptID"></a>Term Name dwc:higherTaxonconceptID</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -7034,7 +7038,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_HigherTaxonID"></a>Term Name  dwc:HigherTaxonID</th>
+			<th colspan="2"><a id="dwc_HigherTaxonID"></a>Term Name dwc:HigherTaxonID</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -7076,7 +7080,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_higherTaxonName"></a>Term Name  dwc:higherTaxonName</th>
+			<th colspan="2"><a id="dwc_higherTaxonName"></a>Term Name dwc:higherTaxonName</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -7122,7 +7126,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_higherTaxonNameID"></a>Term Name  dwc:higherTaxonNameID</th>
+			<th colspan="2"><a id="dwc_higherTaxonNameID"></a>Term Name dwc:higherTaxonNameID</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -7164,7 +7168,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_highestBiostratigraphicZone"></a>Term Name  dwc:highestBiostratigraphicZone</th>
+			<th colspan="2"><a id="dwc_highestBiostratigraphicZone"></a>Term Name dwc:highestBiostratigraphicZone</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -7210,7 +7214,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_HumanObservation"></a>Term Name  dwc:HumanObservation</th>
+			<th colspan="2"><a id="dwc_HumanObservation"></a>Term Name dwc:HumanObservation</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -7259,7 +7263,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_Identification"></a>Term Name  dwc:Identification</th>
+			<th colspan="2"><a id="dwc_Identification"></a>Term Name dwc:Identification</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -7305,7 +7309,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_identificationAttributes"></a>Term Name  dwc:identificationAttributes</th>
+			<th colspan="2"><a id="dwc_identificationAttributes"></a>Term Name dwc:identificationAttributes</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -7347,7 +7351,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_identificationID"></a>Term Name  dwc:identificationID</th>
+			<th colspan="2"><a id="dwc_identificationID"></a>Term Name dwc:identificationID</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -7389,7 +7393,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_identificationQualifier"></a>Term Name  dwc:identificationQualifier</th>
+			<th colspan="2"><a id="dwc_identificationQualifier"></a>Term Name dwc:identificationQualifier</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -7442,7 +7446,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_identificationQualifier"></a>Term Name  dwciri:identificationQualifier</th>
+			<th colspan="2"><a id="dwciri_identificationQualifier"></a>Term Name dwciri:identificationQualifier</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -7484,7 +7488,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_identificationReferences"></a>Term Name  dwc:identificationReferences</th>
+			<th colspan="2"><a id="dwc_identificationReferences"></a>Term Name dwc:identificationReferences</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -7537,7 +7541,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_identificationRemarks"></a>Term Name  dwc:identificationRemarks</th>
+			<th colspan="2"><a id="dwc_identificationRemarks"></a>Term Name dwc:identificationRemarks</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -7579,7 +7583,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_identificationVerificationStatus"></a>Term Name  dwciri:identificationVerificationStatus</th>
+			<th colspan="2"><a id="dwciri_identificationVerificationStatus"></a>Term Name dwciri:identificationVerificationStatus</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -7621,7 +7625,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_identificationVerificationStatus"></a>Term Name  dwc:identificationVerificationStatus</th>
+			<th colspan="2"><a id="dwc_identificationVerificationStatus"></a>Term Name dwc:identificationVerificationStatus</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -7671,7 +7675,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_identifiedBy"></a>Term Name  dwciri:identifiedBy</th>
+			<th colspan="2"><a id="dwciri_identifiedBy"></a>Term Name dwciri:identifiedBy</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -7713,7 +7717,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_identifiedBy"></a>Term Name  dwc:identifiedBy</th>
+			<th colspan="2"><a id="dwc_identifiedBy"></a>Term Name dwc:identifiedBy</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -7770,7 +7774,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_identifiedByID"></a>Term Name  dwc:identifiedByID</th>
+			<th colspan="2"><a id="dwc_identifiedByID"></a>Term Name dwc:identifiedByID</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -7823,7 +7827,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_inCollection"></a>Term Name  dwciri:inCollection</th>
+			<th colspan="2"><a id="dwciri_inCollection"></a>Term Name dwciri:inCollection</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -7865,7 +7869,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_inDataset"></a>Term Name  dwciri:inDataset</th>
+			<th colspan="2"><a id="dwciri_inDataset"></a>Term Name dwciri:inDataset</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -7907,7 +7911,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_inDescribedPlace"></a>Term Name  dwciri:inDescribedPlace</th>
+			<th colspan="2"><a id="dwciri_inDescribedPlace"></a>Term Name dwciri:inDescribedPlace</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -7953,7 +7957,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_individualCount"></a>Term Name  dwc:individualCount</th>
+			<th colspan="2"><a id="dwc_individualCount"></a>Term Name dwc:individualCount</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -7999,7 +8003,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_individualID"></a>Term Name  dwc:individualID</th>
+			<th colspan="2"><a id="dwc_individualID"></a>Term Name dwc:individualID</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -8053,7 +8057,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_informationWithheld"></a>Term Name  dwciri:informationWithheld</th>
+			<th colspan="2"><a id="dwciri_informationWithheld"></a>Term Name dwciri:informationWithheld</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -8095,7 +8099,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_informationWithheld"></a>Term Name  dwc:informationWithheld</th>
+			<th colspan="2"><a id="dwc_informationWithheld"></a>Term Name dwc:informationWithheld</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -8144,7 +8148,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_infragenericEpithet"></a>Term Name  dwc:infragenericEpithet</th>
+			<th colspan="2"><a id="dwc_infragenericEpithet"></a>Term Name dwc:infragenericEpithet</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -8197,7 +8201,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_infraspecificEpithet"></a>Term Name  dwc:infraspecificEpithet</th>
+			<th colspan="2"><a id="dwc_infraspecificEpithet"></a>Term Name dwc:infraspecificEpithet</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -8252,7 +8256,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_institutionCode"></a>Term Name  dwc:institutionCode</th>
+			<th colspan="2"><a id="dwc_institutionCode"></a>Term Name dwc:institutionCode</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -8299,7 +8303,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_institutionID"></a>Term Name  dwc:institutionID</th>
+			<th colspan="2"><a id="dwc_institutionID"></a>Term Name dwc:institutionID</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -8349,7 +8353,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_island"></a>Term Name  dwc:island</th>
+			<th colspan="2"><a id="dwc_island"></a>Term Name dwc:island</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -8401,7 +8405,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_islandGroup"></a>Term Name  dwc:islandGroup</th>
+			<th colspan="2"><a id="dwc_islandGroup"></a>Term Name dwc:islandGroup</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -8451,7 +8455,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_kingdom"></a>Term Name  dwc:kingdom</th>
+			<th colspan="2"><a id="dwc_kingdom"></a>Term Name dwc:kingdom</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -8502,7 +8506,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dcterms_language"></a>Term Name  dcterms:language</th>
+			<th colspan="2"><a id="dcterms_language"></a>Term Name dcterms:language</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -8548,7 +8552,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dc_language"></a>Term Name  dc:language</th>
+			<th colspan="2"><a id="dc_language"></a>Term Name dc:language</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -8601,7 +8605,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_latestAgeOrHighestStage"></a>Term Name  dwc:latestAgeOrHighestStage</th>
+			<th colspan="2"><a id="dwc_latestAgeOrHighestStage"></a>Term Name dwc:latestAgeOrHighestStage</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -8651,7 +8655,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_LatestDateCollected"></a>Term Name  dwc:LatestDateCollected</th>
+			<th colspan="2"><a id="dwc_LatestDateCollected"></a>Term Name dwc:LatestDateCollected</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -8697,7 +8701,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_latestEonOrHighestEonothem"></a>Term Name  dwc:latestEonOrHighestEonothem</th>
+			<th colspan="2"><a id="dwc_latestEonOrHighestEonothem"></a>Term Name dwc:latestEonOrHighestEonothem</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -8746,7 +8750,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_latestEpochOrHighestSeries"></a>Term Name  dwc:latestEpochOrHighestSeries</th>
+			<th colspan="2"><a id="dwc_latestEpochOrHighestSeries"></a>Term Name dwc:latestEpochOrHighestSeries</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -8796,7 +8800,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_latestEraOrHighestErathem"></a>Term Name  dwc:latestEraOrHighestErathem</th>
+			<th colspan="2"><a id="dwc_latestEraOrHighestErathem"></a>Term Name dwc:latestEraOrHighestErathem</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -8845,7 +8849,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_latestGeochronologicalEra"></a>Term Name  dwciri:latestGeochronologicalEra</th>
+			<th colspan="2"><a id="dwciri_latestGeochronologicalEra"></a>Term Name dwciri:latestGeochronologicalEra</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -8891,7 +8895,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_latestPeriodOrHighestSystem"></a>Term Name  dwc:latestPeriodOrHighestSystem</th>
+			<th colspan="2"><a id="dwc_latestPeriodOrHighestSystem"></a>Term Name dwc:latestPeriodOrHighestSystem</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -8941,7 +8945,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dcterms_license"></a>Term Name  dcterms:license</th>
+			<th colspan="2"><a id="dcterms_license"></a>Term Name dcterms:license</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -8990,7 +8994,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_lifeStage"></a>Term Name  dwc:lifeStage</th>
+			<th colspan="2"><a id="dwc_lifeStage"></a>Term Name dwc:lifeStage</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -9048,7 +9052,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_lifeStage"></a>Term Name  dwciri:lifeStage</th>
+			<th colspan="2"><a id="dwciri_lifeStage"></a>Term Name dwciri:lifeStage</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -9090,7 +9094,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_lithostratigraphicTerms"></a>Term Name  dwc:lithostratigraphicTerms</th>
+			<th colspan="2"><a id="dwc_lithostratigraphicTerms"></a>Term Name dwc:lithostratigraphicTerms</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -9136,7 +9140,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_LivingSpecimen"></a>Term Name  dwc:LivingSpecimen</th>
+			<th colspan="2"><a id="dwc_LivingSpecimen"></a>Term Name dwc:LivingSpecimen</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -9185,7 +9189,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_locality"></a>Term Name  dwc:locality</th>
+			<th colspan="2"><a id="dwc_locality"></a>Term Name dwc:locality</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -9234,7 +9238,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dcterms_Location"></a>Term Name  dcterms:Location</th>
+			<th colspan="2"><a id="dcterms_Location"></a>Term Name dcterms:Location</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -9279,7 +9283,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_locationAccordingTo"></a>Term Name  dwc:locationAccordingTo</th>
+			<th colspan="2"><a id="dwc_locationAccordingTo"></a>Term Name dwc:locationAccordingTo</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -9328,7 +9332,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_locationAccordingTo"></a>Term Name  dwciri:locationAccordingTo</th>
+			<th colspan="2"><a id="dwciri_locationAccordingTo"></a>Term Name dwciri:locationAccordingTo</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -9370,7 +9374,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_locationAttributes"></a>Term Name  dwc:locationAttributes</th>
+			<th colspan="2"><a id="dwc_locationAttributes"></a>Term Name dwc:locationAttributes</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -9412,7 +9416,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_locationID"></a>Term Name  dwc:locationID</th>
+			<th colspan="2"><a id="dwc_locationID"></a>Term Name dwc:locationID</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -9454,7 +9458,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_locationRemarks"></a>Term Name  dwc:locationRemarks</th>
+			<th colspan="2"><a id="dwc_locationRemarks"></a>Term Name dwc:locationRemarks</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -9496,7 +9500,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_lowestBiostratigraphicZone"></a>Term Name  dwc:lowestBiostratigraphicZone</th>
+			<th colspan="2"><a id="dwc_lowestBiostratigraphicZone"></a>Term Name dwc:lowestBiostratigraphicZone</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -9542,7 +9546,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_MachineObservation"></a>Term Name  dwc:MachineObservation</th>
+			<th colspan="2"><a id="dwc_MachineObservation"></a>Term Name dwc:MachineObservation</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -9594,7 +9598,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_MaterialCitation"></a>Term Name  dwc:MaterialCitation</th>
+			<th colspan="2"><a id="dwc_MaterialCitation"></a>Term Name dwc:MaterialCitation</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -9647,7 +9651,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_MaterialEntity"></a>Term Name  dwc:MaterialEntity</th>
+			<th colspan="2"><a id="dwc_MaterialEntity"></a>Term Name dwc:MaterialEntity</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -9711,7 +9715,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_materialEntityID"></a>Term Name  dwc:materialEntityID</th>
+			<th colspan="2"><a id="dwc_materialEntityID"></a>Term Name dwc:materialEntityID</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -9761,7 +9765,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_materialEntityRemarks"></a>Term Name  dwc:materialEntityRemarks</th>
+			<th colspan="2"><a id="dwc_materialEntityRemarks"></a>Term Name dwc:materialEntityRemarks</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -9810,7 +9814,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_MaterialSample"></a>Term Name  dwc:MaterialSample</th>
+			<th colspan="2"><a id="dwc_MaterialSample"></a>Term Name dwc:MaterialSample</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -9869,7 +9873,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_materialSampleID"></a>Term Name  dwc:materialSampleID</th>
+			<th colspan="2"><a id="dwc_materialSampleID"></a>Term Name dwc:materialSampleID</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -9919,7 +9923,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_maximumDepthInMeters"></a>Term Name  dwc:maximumDepthInMeters</th>
+			<th colspan="2"><a id="dwc_maximumDepthInMeters"></a>Term Name dwc:maximumDepthInMeters</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -9964,7 +9968,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_maximumDistanceAboveSurfaceInMeters"></a>Term Name  dwc:maximumDistanceAboveSurfaceInMeters</th>
+			<th colspan="2"><a id="dwc_maximumDistanceAboveSurfaceInMeters"></a>Term Name dwc:maximumDistanceAboveSurfaceInMeters</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -10010,7 +10014,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_maximumElevationInMeters"></a>Term Name  dwc:maximumElevationInMeters</th>
+			<th colspan="2"><a id="dwc_maximumElevationInMeters"></a>Term Name dwc:maximumElevationInMeters</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -10055,7 +10059,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_measurementAccuracy"></a>Term Name  dwc:measurementAccuracy</th>
+			<th colspan="2"><a id="dwc_measurementAccuracy"></a>Term Name dwc:measurementAccuracy</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -10100,7 +10104,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_measurementDeterminedBy"></a>Term Name  dwc:measurementDeterminedBy</th>
+			<th colspan="2"><a id="dwc_measurementDeterminedBy"></a>Term Name dwc:measurementDeterminedBy</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -10153,7 +10157,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_measurementDeterminedBy"></a>Term Name  dwciri:measurementDeterminedBy</th>
+			<th colspan="2"><a id="dwciri_measurementDeterminedBy"></a>Term Name dwciri:measurementDeterminedBy</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -10195,7 +10199,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_measurementDeterminedDate"></a>Term Name  dwc:measurementDeterminedDate</th>
+			<th colspan="2"><a id="dwc_measurementDeterminedDate"></a>Term Name dwc:measurementDeterminedDate</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -10251,7 +10255,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_measurementID"></a>Term Name  dwc:measurementID</th>
+			<th colspan="2"><a id="dwc_measurementID"></a>Term Name dwc:measurementID</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -10293,7 +10297,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_measurementMethod"></a>Term Name  dwc:measurementMethod</th>
+			<th colspan="2"><a id="dwc_measurementMethod"></a>Term Name dwc:measurementMethod</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -10342,7 +10346,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_measurementMethod"></a>Term Name  dwciri:measurementMethod</th>
+			<th colspan="2"><a id="dwciri_measurementMethod"></a>Term Name dwciri:measurementMethod</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -10384,7 +10388,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_MeasurementOrFact"></a>Term Name  dwc:MeasurementOrFact</th>
+			<th colspan="2"><a id="dwc_MeasurementOrFact"></a>Term Name dwc:MeasurementOrFact</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -10442,7 +10446,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_measurementRemarks"></a>Term Name  dwc:measurementRemarks</th>
+			<th colspan="2"><a id="dwc_measurementRemarks"></a>Term Name dwc:measurementRemarks</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -10484,7 +10488,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_measurementType"></a>Term Name  dwciri:measurementType</th>
+			<th colspan="2"><a id="dwciri_measurementType"></a>Term Name dwciri:measurementType</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -10526,7 +10530,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_measurementType"></a>Term Name  dwc:measurementType</th>
+			<th colspan="2"><a id="dwc_measurementType"></a>Term Name dwc:measurementType</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -10578,7 +10582,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_measurementUnit"></a>Term Name  dwciri:measurementUnit</th>
+			<th colspan="2"><a id="dwciri_measurementUnit"></a>Term Name dwciri:measurementUnit</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -10620,7 +10624,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_measurementUnit"></a>Term Name  dwc:measurementUnit</th>
+			<th colspan="2"><a id="dwc_measurementUnit"></a>Term Name dwc:measurementUnit</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -10675,7 +10679,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_measurementValue"></a>Term Name  dwciri:measurementValue</th>
+			<th colspan="2"><a id="dwciri_measurementValue"></a>Term Name dwciri:measurementValue</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -10725,7 +10729,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_measurementValue"></a>Term Name  dwc:measurementValue</th>
+			<th colspan="2"><a id="dwc_measurementValue"></a>Term Name dwc:measurementValue</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -10777,7 +10781,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_member"></a>Term Name  dwc:member</th>
+			<th colspan="2"><a id="dwc_member"></a>Term Name dwc:member</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -10826,7 +10830,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_minimumDepthInMeters"></a>Term Name  dwc:minimumDepthInMeters</th>
+			<th colspan="2"><a id="dwc_minimumDepthInMeters"></a>Term Name dwc:minimumDepthInMeters</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -10871,7 +10875,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_minimumDistanceAboveSurfaceInMeters"></a>Term Name  dwc:minimumDistanceAboveSurfaceInMeters</th>
+			<th colspan="2"><a id="dwc_minimumDistanceAboveSurfaceInMeters"></a>Term Name dwc:minimumDistanceAboveSurfaceInMeters</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -10917,7 +10921,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_minimumElevationInMeters"></a>Term Name  dwc:minimumElevationInMeters</th>
+			<th colspan="2"><a id="dwc_minimumElevationInMeters"></a>Term Name dwc:minimumElevationInMeters</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -10962,7 +10966,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dcterms_modified"></a>Term Name  dcterms:modified</th>
+			<th colspan="2"><a id="dcterms_modified"></a>Term Name dcterms:modified</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -11022,7 +11026,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_month"></a>Term Name  dwc:month</th>
+			<th colspan="2"><a id="dwc_month"></a>Term Name dwc:month</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -11067,7 +11071,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_municipality"></a>Term Name  dwc:municipality</th>
+			<th colspan="2"><a id="dwc_municipality"></a>Term Name dwc:municipality</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -11121,7 +11125,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_nameAccordingTo"></a>Term Name  dwc:nameAccordingTo</th>
+			<th colspan="2"><a id="dwc_nameAccordingTo"></a>Term Name dwc:nameAccordingTo</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -11171,7 +11175,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_nameAccordingToID"></a>Term Name  dwc:nameAccordingToID</th>
+			<th colspan="2"><a id="dwc_nameAccordingToID"></a>Term Name dwc:nameAccordingToID</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -11213,7 +11217,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_namePublicationID"></a>Term Name  dwc:namePublicationID</th>
+			<th colspan="2"><a id="dwc_namePublicationID"></a>Term Name dwc:namePublicationID</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -11259,7 +11263,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_namePublishedIn"></a>Term Name  dwc:namePublishedIn</th>
+			<th colspan="2"><a id="dwc_namePublishedIn"></a>Term Name dwc:namePublishedIn</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -11312,7 +11316,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_namePublishedInID"></a>Term Name  dwc:namePublishedInID</th>
+			<th colspan="2"><a id="dwc_namePublishedInID"></a>Term Name dwc:namePublishedInID</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -11358,7 +11362,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_namePublishedInYear"></a>Term Name  dwc:namePublishedInYear</th>
+			<th colspan="2"><a id="dwc_namePublishedInYear"></a>Term Name dwc:namePublishedInYear</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -11407,7 +11411,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_nomenclaturalCode"></a>Term Name  dwc:nomenclaturalCode</th>
+			<th colspan="2"><a id="dwc_nomenclaturalCode"></a>Term Name dwc:nomenclaturalCode</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -11459,7 +11463,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_nomenclaturalStatus"></a>Term Name  dwc:nomenclaturalStatus</th>
+			<th colspan="2"><a id="dwc_nomenclaturalStatus"></a>Term Name dwc:nomenclaturalStatus</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -11505,7 +11509,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_Occurrence"></a>Term Name  dwc:Occurrence</th>
+			<th colspan="2"><a id="dwc_Occurrence"></a>Term Name dwc:Occurrence</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -11555,7 +11559,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_occurrenceAttributes"></a>Term Name  dwc:occurrenceAttributes</th>
+			<th colspan="2"><a id="dwc_occurrenceAttributes"></a>Term Name dwc:occurrenceAttributes</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -11597,7 +11601,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_occurrenceDetails"></a>Term Name  dwc:occurrenceDetails</th>
+			<th colspan="2"><a id="dwc_occurrenceDetails"></a>Term Name dwc:occurrenceDetails</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -11643,7 +11647,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_occurrenceID"></a>Term Name  dwc:occurrenceID</th>
+			<th colspan="2"><a id="dwc_occurrenceID"></a>Term Name dwc:occurrenceID</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -11693,7 +11697,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_OccurrenceMeasurement"></a>Term Name  dwc:OccurrenceMeasurement</th>
+			<th colspan="2"><a id="dwc_OccurrenceMeasurement"></a>Term Name dwc:OccurrenceMeasurement</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -11731,7 +11735,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_occurrenceMeasurementAccuracy"></a>Term Name  dwc:occurrenceMeasurementAccuracy</th>
+			<th colspan="2"><a id="dwc_occurrenceMeasurementAccuracy"></a>Term Name dwc:occurrenceMeasurementAccuracy</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -11777,7 +11781,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_occurrenceMeasurementDeterminedBy"></a>Term Name  dwc:occurrenceMeasurementDeterminedBy</th>
+			<th colspan="2"><a id="dwc_occurrenceMeasurementDeterminedBy"></a>Term Name dwc:occurrenceMeasurementDeterminedBy</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -11819,7 +11823,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_occurrenceMeasurementDeterminedDate"></a>Term Name  dwc:occurrenceMeasurementDeterminedDate</th>
+			<th colspan="2"><a id="dwc_occurrenceMeasurementDeterminedDate"></a>Term Name dwc:occurrenceMeasurementDeterminedDate</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -11865,7 +11869,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_occurrenceMeasurementID"></a>Term Name  dwc:occurrenceMeasurementID</th>
+			<th colspan="2"><a id="dwc_occurrenceMeasurementID"></a>Term Name dwc:occurrenceMeasurementID</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -11907,7 +11911,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_occurrenceMeasurementRemarks"></a>Term Name  dwc:occurrenceMeasurementRemarks</th>
+			<th colspan="2"><a id="dwc_occurrenceMeasurementRemarks"></a>Term Name dwc:occurrenceMeasurementRemarks</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -11953,7 +11957,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_occurrenceMeasurementType"></a>Term Name  dwc:occurrenceMeasurementType</th>
+			<th colspan="2"><a id="dwc_occurrenceMeasurementType"></a>Term Name dwc:occurrenceMeasurementType</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -11999,7 +12003,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_occurrenceMeasurementUnit"></a>Term Name  dwc:occurrenceMeasurementUnit</th>
+			<th colspan="2"><a id="dwc_occurrenceMeasurementUnit"></a>Term Name dwc:occurrenceMeasurementUnit</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -12045,7 +12049,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_occurrenceMeasurementValue"></a>Term Name  dwc:occurrenceMeasurementValue</th>
+			<th colspan="2"><a id="dwc_occurrenceMeasurementValue"></a>Term Name dwc:occurrenceMeasurementValue</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -12091,7 +12095,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_occurrenceRemarks"></a>Term Name  dwc:occurrenceRemarks</th>
+			<th colspan="2"><a id="dwc_occurrenceRemarks"></a>Term Name dwc:occurrenceRemarks</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -12133,7 +12137,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_occurrenceStatus"></a>Term Name  dwc:occurrenceStatus</th>
+			<th colspan="2"><a id="dwc_occurrenceStatus"></a>Term Name dwc:occurrenceStatus</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -12182,7 +12186,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_occurrenceStatus"></a>Term Name  dwciri:occurrenceStatus</th>
+			<th colspan="2"><a id="dwciri_occurrenceStatus"></a>Term Name dwciri:occurrenceStatus</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -12224,7 +12228,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_order"></a>Term Name  dwc:order</th>
+			<th colspan="2"><a id="dwc_order"></a>Term Name dwc:order</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -12269,7 +12273,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_Organism"></a>Term Name  dwc:Organism</th>
+			<th colspan="2"><a id="dwc_Organism"></a>Term Name dwc:Organism</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -12323,7 +12327,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_organismID"></a>Term Name  dwc:organismID</th>
+			<th colspan="2"><a id="dwc_organismID"></a>Term Name dwc:organismID</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -12369,7 +12373,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_organismName"></a>Term Name  dwc:organismName</th>
+			<th colspan="2"><a id="dwc_organismName"></a>Term Name dwc:organismName</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -12419,7 +12423,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_organismQuantity"></a>Term Name  dwc:organismQuantity</th>
+			<th colspan="2"><a id="dwc_organismQuantity"></a>Term Name dwc:organismQuantity</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -12474,7 +12478,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_organismQuantityType"></a>Term Name  dwc:organismQuantityType</th>
+			<th colspan="2"><a id="dwc_organismQuantityType"></a>Term Name dwc:organismQuantityType</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -12529,7 +12533,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_organismQuantityType"></a>Term Name  dwciri:organismQuantityType</th>
+			<th colspan="2"><a id="dwciri_organismQuantityType"></a>Term Name dwciri:organismQuantityType</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -12571,7 +12575,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_organismRemarks"></a>Term Name  dwc:organismRemarks</th>
+			<th colspan="2"><a id="dwc_organismRemarks"></a>Term Name dwc:organismRemarks</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -12617,7 +12621,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_organismScope"></a>Term Name  dwc:organismScope</th>
+			<th colspan="2"><a id="dwc_organismScope"></a>Term Name dwc:organismScope</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -12673,7 +12677,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_originalNameUsage"></a>Term Name  dwc:originalNameUsage</th>
+			<th colspan="2"><a id="dwc_originalNameUsage"></a>Term Name dwc:originalNameUsage</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -12722,7 +12726,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_originalNameUsageID"></a>Term Name  dwc:originalNameUsageID</th>
+			<th colspan="2"><a id="dwc_originalNameUsageID"></a>Term Name dwc:originalNameUsageID</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -12773,7 +12777,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_otherCatalogNumbers"></a>Term Name  dwc:otherCatalogNumbers</th>
+			<th colspan="2"><a id="dwc_otherCatalogNumbers"></a>Term Name dwc:otherCatalogNumbers</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -12826,7 +12830,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_ownerInstitutionCode"></a>Term Name  dwc:ownerInstitutionCode</th>
+			<th colspan="2"><a id="dwc_ownerInstitutionCode"></a>Term Name dwc:ownerInstitutionCode</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -12872,7 +12876,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_parentEventID"></a>Term Name  dwc:parentEventID</th>
+			<th colspan="2"><a id="dwc_parentEventID"></a>Term Name dwc:parentEventID</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -12922,7 +12926,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_parentMeasurementID"></a>Term Name  dwc:parentMeasurementID</th>
+			<th colspan="2"><a id="dwc_parentMeasurementID"></a>Term Name dwc:parentMeasurementID</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -12975,7 +12979,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_parentNameUsage"></a>Term Name  dwc:parentNameUsage</th>
+			<th colspan="2"><a id="dwc_parentNameUsage"></a>Term Name dwc:parentNameUsage</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -13021,7 +13025,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_parentNameUsageID"></a>Term Name  dwc:parentNameUsageID</th>
+			<th colspan="2"><a id="dwc_parentNameUsageID"></a>Term Name dwc:parentNameUsageID</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -13072,7 +13076,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_pathway"></a>Term Name  dwciri:pathway</th>
+			<th colspan="2"><a id="dwciri_pathway"></a>Term Name dwciri:pathway</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -13125,7 +13129,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_pathway"></a>Term Name  dwc:pathway</th>
+			<th colspan="2"><a id="dwc_pathway"></a>Term Name dwc:pathway</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -13178,7 +13182,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_phylum"></a>Term Name  dwc:phylum</th>
+			<th colspan="2"><a id="dwc_phylum"></a>Term Name dwc:phylum</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -13223,7 +13227,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_pointRadiusSpatialFit"></a>Term Name  dwc:pointRadiusSpatialFit</th>
+			<th colspan="2"><a id="dwc_pointRadiusSpatialFit"></a>Term Name dwc:pointRadiusSpatialFit</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -13277,7 +13281,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_preparations"></a>Term Name  dwc:preparations</th>
+			<th colspan="2"><a id="dwc_preparations"></a>Term Name dwc:preparations</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -13342,7 +13346,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_preparations"></a>Term Name  dwciri:preparations</th>
+			<th colspan="2"><a id="dwciri_preparations"></a>Term Name dwciri:preparations</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -13384,7 +13388,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_PreservedSpecimen"></a>Term Name  dwc:PreservedSpecimen</th>
+			<th colspan="2"><a id="dwc_PreservedSpecimen"></a>Term Name dwc:PreservedSpecimen</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -13433,7 +13437,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_previousIdentifications"></a>Term Name  dwc:previousIdentifications</th>
+			<th colspan="2"><a id="dwc_previousIdentifications"></a>Term Name dwc:previousIdentifications</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -13491,7 +13495,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_PreviousIdentifications"></a>Term Name  dwc:PreviousIdentifications</th>
+			<th colspan="2"><a id="dwc_PreviousIdentifications"></a>Term Name dwc:PreviousIdentifications</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -13537,7 +13541,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_recordedBy"></a>Term Name  dwciri:recordedBy</th>
+			<th colspan="2"><a id="dwciri_recordedBy"></a>Term Name dwciri:recordedBy</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -13579,7 +13583,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_recordedBy"></a>Term Name  dwc:recordedBy</th>
+			<th colspan="2"><a id="dwc_recordedBy"></a>Term Name dwc:recordedBy</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -13632,7 +13636,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_recordedByID"></a>Term Name  dwc:recordedByID</th>
+			<th colspan="2"><a id="dwc_recordedByID"></a>Term Name dwc:recordedByID</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -13685,7 +13689,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_recordNumber"></a>Term Name  dwciri:recordNumber</th>
+			<th colspan="2"><a id="dwciri_recordNumber"></a>Term Name dwciri:recordNumber</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -13727,7 +13731,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_recordNumber"></a>Term Name  dwc:recordNumber</th>
+			<th colspan="2"><a id="dwc_recordNumber"></a>Term Name dwc:recordNumber</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -13773,7 +13777,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dcterms_references"></a>Term Name  dcterms:references</th>
+			<th colspan="2"><a id="dcterms_references"></a>Term Name dcterms:references</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -13830,7 +13834,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_RelatedBasisOfRecord"></a>Term Name  dwc:RelatedBasisOfRecord</th>
+			<th colspan="2"><a id="dwc_RelatedBasisOfRecord"></a>Term Name dwc:RelatedBasisOfRecord</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -13872,7 +13876,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_relatedResourceID"></a>Term Name  dwc:relatedResourceID</th>
+			<th colspan="2"><a id="dwc_relatedResourceID"></a>Term Name dwc:relatedResourceID</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -13914,7 +13918,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_relatedResourceType"></a>Term Name  dwc:relatedResourceType</th>
+			<th colspan="2"><a id="dwc_relatedResourceType"></a>Term Name dwc:relatedResourceType</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -13956,7 +13960,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_relationshipAccordingTo"></a>Term Name  dwc:relationshipAccordingTo</th>
+			<th colspan="2"><a id="dwc_relationshipAccordingTo"></a>Term Name dwc:relationshipAccordingTo</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -13998,7 +14002,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_relationshipEstablishedDate"></a>Term Name  dwc:relationshipEstablishedDate</th>
+			<th colspan="2"><a id="dwc_relationshipEstablishedDate"></a>Term Name dwc:relationshipEstablishedDate</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -14054,7 +14058,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_relationshipOfResource"></a>Term Name  dwc:relationshipOfResource</th>
+			<th colspan="2"><a id="dwc_relationshipOfResource"></a>Term Name dwc:relationshipOfResource</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -14114,7 +14118,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_relationshipOfResourceID"></a>Term Name  dwc:relationshipOfResourceID</th>
+			<th colspan="2"><a id="dwc_relationshipOfResourceID"></a>Term Name dwc:relationshipOfResourceID</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -14168,7 +14172,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_relationshipRemarks"></a>Term Name  dwc:relationshipRemarks</th>
+			<th colspan="2"><a id="dwc_relationshipRemarks"></a>Term Name dwc:relationshipRemarks</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -14213,7 +14217,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_reproductiveCondition"></a>Term Name  dwciri:reproductiveCondition</th>
+			<th colspan="2"><a id="dwciri_reproductiveCondition"></a>Term Name dwciri:reproductiveCondition</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -14255,7 +14259,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_reproductiveCondition"></a>Term Name  dwc:reproductiveCondition</th>
+			<th colspan="2"><a id="dwc_reproductiveCondition"></a>Term Name dwc:reproductiveCondition</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -14306,7 +14310,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_resourceID"></a>Term Name  dwc:resourceID</th>
+			<th colspan="2"><a id="dwc_resourceID"></a>Term Name dwc:resourceID</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -14348,7 +14352,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_ResourceRelationship"></a>Term Name  dwc:ResourceRelationship</th>
+			<th colspan="2"><a id="dwc_ResourceRelationship"></a>Term Name dwc:ResourceRelationship</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -14406,7 +14410,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_resourceRelationshipID"></a>Term Name  dwc:resourceRelationshipID</th>
+			<th colspan="2"><a id="dwc_resourceRelationshipID"></a>Term Name dwc:resourceRelationshipID</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -14448,7 +14452,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dcterms_rights"></a>Term Name  dcterms:rights</th>
+			<th colspan="2"><a id="dcterms_rights"></a>Term Name dcterms:rights</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -14502,7 +14506,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dcterms_rightsHolder"></a>Term Name  dcterms:rightsHolder</th>
+			<th colspan="2"><a id="dcterms_rightsHolder"></a>Term Name dcterms:rightsHolder</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -14544,7 +14548,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_Sample"></a>Term Name  dwc:Sample</th>
+			<th colspan="2"><a id="dwc_Sample"></a>Term Name dwc:Sample</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -14586,7 +14590,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_SampleAttribute"></a>Term Name  dwc:SampleAttribute</th>
+			<th colspan="2"><a id="dwc_SampleAttribute"></a>Term Name dwc:SampleAttribute</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -14624,7 +14628,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_SampleAttributeAccuracy"></a>Term Name  dwc:SampleAttributeAccuracy</th>
+			<th colspan="2"><a id="dwc_SampleAttributeAccuracy"></a>Term Name dwc:SampleAttributeAccuracy</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -14670,7 +14674,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_SampleAttributeDeterminedBy"></a>Term Name  dwc:SampleAttributeDeterminedBy</th>
+			<th colspan="2"><a id="dwc_SampleAttributeDeterminedBy"></a>Term Name dwc:SampleAttributeDeterminedBy</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -14716,7 +14720,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_SampleAttributeDeterminedDate"></a>Term Name  dwc:SampleAttributeDeterminedDate</th>
+			<th colspan="2"><a id="dwc_SampleAttributeDeterminedDate"></a>Term Name dwc:SampleAttributeDeterminedDate</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -14762,7 +14766,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_SampleAttributeRemarks"></a>Term Name  dwc:SampleAttributeRemarks</th>
+			<th colspan="2"><a id="dwc_SampleAttributeRemarks"></a>Term Name dwc:SampleAttributeRemarks</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -14804,7 +14808,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_SampleAttributeUnit"></a>Term Name  dwc:SampleAttributeUnit</th>
+			<th colspan="2"><a id="dwc_SampleAttributeUnit"></a>Term Name dwc:SampleAttributeUnit</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -14850,7 +14854,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_SampleAttributeValue"></a>Term Name  dwc:SampleAttributeValue</th>
+			<th colspan="2"><a id="dwc_SampleAttributeValue"></a>Term Name dwc:SampleAttributeValue</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -14896,7 +14900,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_SampleRemarks"></a>Term Name  dwc:SampleRemarks</th>
+			<th colspan="2"><a id="dwc_SampleRemarks"></a>Term Name dwc:SampleRemarks</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -14942,7 +14946,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_sampleSizeUnit"></a>Term Name  dwc:sampleSizeUnit</th>
+			<th colspan="2"><a id="dwc_sampleSizeUnit"></a>Term Name dwc:sampleSizeUnit</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -14999,7 +15003,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_sampleSizeUnit"></a>Term Name  dwciri:sampleSizeUnit</th>
+			<th colspan="2"><a id="dwciri_sampleSizeUnit"></a>Term Name dwciri:sampleSizeUnit</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -15041,7 +15045,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_sampleSizeValue"></a>Term Name  dwc:sampleSizeValue</th>
+			<th colspan="2"><a id="dwc_sampleSizeValue"></a>Term Name dwc:sampleSizeValue</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -15091,7 +15095,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_SamplingAttributeID"></a>Term Name  dwc:SamplingAttributeID</th>
+			<th colspan="2"><a id="dwc_SamplingAttributeID"></a>Term Name dwc:SamplingAttributeID</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -15129,7 +15133,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_SamplingAttributeType"></a>Term Name  dwc:SamplingAttributeType</th>
+			<th colspan="2"><a id="dwc_SamplingAttributeType"></a>Term Name dwc:SamplingAttributeType</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -15171,7 +15175,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_samplingEffort"></a>Term Name  dwc:samplingEffort</th>
+			<th colspan="2"><a id="dwc_samplingEffort"></a>Term Name dwc:samplingEffort</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -15218,7 +15222,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_SamplingEvent"></a>Term Name  dwc:SamplingEvent</th>
+			<th colspan="2"><a id="dwc_SamplingEvent"></a>Term Name dwc:SamplingEvent</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -15260,7 +15264,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_SamplingEventAttributes"></a>Term Name  dwc:SamplingEventAttributes</th>
+			<th colspan="2"><a id="dwc_SamplingEventAttributes"></a>Term Name dwc:SamplingEventAttributes</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -15302,7 +15306,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_SamplingEventID"></a>Term Name  dwc:SamplingEventID</th>
+			<th colspan="2"><a id="dwc_SamplingEventID"></a>Term Name dwc:SamplingEventID</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -15344,7 +15348,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_SamplingEventRemarks"></a>Term Name  dwc:SamplingEventRemarks</th>
+			<th colspan="2"><a id="dwc_SamplingEventRemarks"></a>Term Name dwc:SamplingEventRemarks</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -15386,7 +15390,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_SamplingLocation"></a>Term Name  dwc:SamplingLocation</th>
+			<th colspan="2"><a id="dwc_SamplingLocation"></a>Term Name dwc:SamplingLocation</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -15424,7 +15428,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_SamplingLocationID"></a>Term Name  dwc:SamplingLocationID</th>
+			<th colspan="2"><a id="dwc_SamplingLocationID"></a>Term Name dwc:SamplingLocationID</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -15470,7 +15474,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_SamplingLocationRemarks"></a>Term Name  dwc:SamplingLocationRemarks</th>
+			<th colspan="2"><a id="dwc_SamplingLocationRemarks"></a>Term Name dwc:SamplingLocationRemarks</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -15516,7 +15520,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_samplingProtocol"></a>Term Name  dwciri:samplingProtocol</th>
+			<th colspan="2"><a id="dwciri_samplingProtocol"></a>Term Name dwciri:samplingProtocol</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -15566,7 +15570,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_samplingProtocol"></a>Term Name  dwc:samplingProtocol</th>
+			<th colspan="2"><a id="dwc_samplingProtocol"></a>Term Name dwc:samplingProtocol</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -15623,7 +15627,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_scientificName"></a>Term Name  dwc:scientificName</th>
+			<th colspan="2"><a id="dwc_scientificName"></a>Term Name dwc:scientificName</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -15688,7 +15692,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_scientificNameAuthorship"></a>Term Name  dwc:scientificNameAuthorship</th>
+			<th colspan="2"><a id="dwc_scientificNameAuthorship"></a>Term Name dwc:scientificNameAuthorship</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -15734,7 +15738,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_scientificNameID"></a>Term Name  dwc:scientificNameID</th>
+			<th colspan="2"><a id="dwc_scientificNameID"></a>Term Name dwc:scientificNameID</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -15780,7 +15784,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_scientificNameRank"></a>Term Name  dwc:scientificNameRank</th>
+			<th colspan="2"><a id="dwc_scientificNameRank"></a>Term Name dwc:scientificNameRank</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -15826,7 +15830,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_sex"></a>Term Name  dwc:sex</th>
+			<th colspan="2"><a id="dwc_sex"></a>Term Name dwc:sex</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -15880,7 +15884,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_sex"></a>Term Name  dwciri:sex</th>
+			<th colspan="2"><a id="dwciri_sex"></a>Term Name dwciri:sex</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -15922,7 +15926,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_specificEpithet"></a>Term Name  dwc:specificEpithet</th>
+			<th colspan="2"><a id="dwc_specificEpithet"></a>Term Name dwc:specificEpithet</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -15967,7 +15971,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_startDayOfYear"></a>Term Name  dwc:startDayOfYear</th>
+			<th colspan="2"><a id="dwc_startDayOfYear"></a>Term Name dwc:startDayOfYear</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -16013,7 +16017,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_StartTimeOfDay"></a>Term Name  dwc:StartTimeOfDay</th>
+			<th colspan="2"><a id="dwc_StartTimeOfDay"></a>Term Name dwc:StartTimeOfDay</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -16059,7 +16063,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_stateProvince"></a>Term Name  dwc:stateProvince</th>
+			<th colspan="2"><a id="dwc_stateProvince"></a>Term Name dwc:stateProvince</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -16113,7 +16117,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_subfamily"></a>Term Name  dwc:subfamily</th>
+			<th colspan="2"><a id="dwc_subfamily"></a>Term Name dwc:subfamily</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -16163,7 +16167,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_subgenus"></a>Term Name  dwc:subgenus</th>
+			<th colspan="2"><a id="dwc_subgenus"></a>Term Name dwc:subgenus</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -16209,7 +16213,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_subtribe"></a>Term Name  dwc:subtribe</th>
+			<th colspan="2"><a id="dwc_subtribe"></a>Term Name dwc:subtribe</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -16258,7 +16262,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_superfamily"></a>Term Name  dwc:superfamily</th>
+			<th colspan="2"><a id="dwc_superfamily"></a>Term Name dwc:superfamily</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -16315,7 +16319,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_Taxon"></a>Term Name  dwc:Taxon</th>
+			<th colspan="2"><a id="dwc_Taxon"></a>Term Name dwc:Taxon</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -16361,7 +16365,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_taxonAccordingTo"></a>Term Name  dwc:taxonAccordingTo</th>
+			<th colspan="2"><a id="dwc_taxonAccordingTo"></a>Term Name dwc:taxonAccordingTo</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -16403,7 +16407,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_taxonAttributes"></a>Term Name  dwc:taxonAttributes</th>
+			<th colspan="2"><a id="dwc_taxonAttributes"></a>Term Name dwc:taxonAttributes</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -16445,7 +16449,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_taxonConceptID"></a>Term Name  dwc:taxonConceptID</th>
+			<th colspan="2"><a id="dwc_taxonConceptID"></a>Term Name dwc:taxonConceptID</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -16487,7 +16491,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_TaxonID"></a>Term Name  dwc:TaxonID</th>
+			<th colspan="2"><a id="dwc_TaxonID"></a>Term Name dwc:TaxonID</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -16529,7 +16533,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_taxonID"></a>Term Name  dwc:taxonID</th>
+			<th colspan="2"><a id="dwc_taxonID"></a>Term Name dwc:taxonID</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -16575,7 +16579,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_taxonNameID"></a>Term Name  dwc:taxonNameID</th>
+			<th colspan="2"><a id="dwc_taxonNameID"></a>Term Name dwc:taxonNameID</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -16613,7 +16617,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_taxonomicStatus"></a>Term Name  dwc:taxonomicStatus</th>
+			<th colspan="2"><a id="dwc_taxonomicStatus"></a>Term Name dwc:taxonomicStatus</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -16664,7 +16668,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_taxonRank"></a>Term Name  dwc:taxonRank</th>
+			<th colspan="2"><a id="dwc_taxonRank"></a>Term Name dwc:taxonRank</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -16723,7 +16727,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_taxonRemarks"></a>Term Name  dwc:taxonRemarks</th>
+			<th colspan="2"><a id="dwc_taxonRemarks"></a>Term Name dwc:taxonRemarks</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -16765,7 +16769,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_toTaxon"></a>Term Name  dwciri:toTaxon</th>
+			<th colspan="2"><a id="dwciri_toTaxon"></a>Term Name dwciri:toTaxon</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -16807,7 +16811,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_tribe"></a>Term Name  dwc:tribe</th>
+			<th colspan="2"><a id="dwc_tribe"></a>Term Name dwc:tribe</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -16856,7 +16860,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dc_type"></a>Term Name  dc:type</th>
+			<th colspan="2"><a id="dc_type"></a>Term Name dc:type</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -16917,7 +16921,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dcterms_type"></a>Term Name  dcterms:type</th>
+			<th colspan="2"><a id="dcterms_type"></a>Term Name dcterms:type</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -16975,7 +16979,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_typeStatus"></a>Term Name  dwciri:typeStatus</th>
+			<th colspan="2"><a id="dwciri_typeStatus"></a>Term Name dwciri:typeStatus</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -17017,7 +17021,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_typeStatus"></a>Term Name  dwc:typeStatus</th>
+			<th colspan="2"><a id="dwc_typeStatus"></a>Term Name dwc:typeStatus</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -17070,7 +17074,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_verbatimCoordinates"></a>Term Name  dwc:verbatimCoordinates</th>
+			<th colspan="2"><a id="dwc_verbatimCoordinates"></a>Term Name dwc:verbatimCoordinates</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -17115,7 +17119,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_verbatimCoordinateSystem"></a>Term Name  dwc:verbatimCoordinateSystem</th>
+			<th colspan="2"><a id="dwc_verbatimCoordinateSystem"></a>Term Name dwc:verbatimCoordinateSystem</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -17166,7 +17170,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_verbatimCoordinateSystem"></a>Term Name  dwciri:verbatimCoordinateSystem</th>
+			<th colspan="2"><a id="dwciri_verbatimCoordinateSystem"></a>Term Name dwciri:verbatimCoordinateSystem</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -17208,7 +17212,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_verbatimDepth"></a>Term Name  dwc:verbatimDepth</th>
+			<th colspan="2"><a id="dwc_verbatimDepth"></a>Term Name dwc:verbatimDepth</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -17250,7 +17254,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_verbatimElevation"></a>Term Name  dwc:verbatimElevation</th>
+			<th colspan="2"><a id="dwc_verbatimElevation"></a>Term Name dwc:verbatimElevation</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -17292,7 +17296,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_verbatimEventDate"></a>Term Name  dwc:verbatimEventDate</th>
+			<th colspan="2"><a id="dwc_verbatimEventDate"></a>Term Name dwc:verbatimEventDate</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -17339,7 +17343,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_verbatimIdentification"></a>Term Name  dwc:verbatimIdentification</th>
+			<th colspan="2"><a id="dwc_verbatimIdentification"></a>Term Name dwc:verbatimIdentification</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -17401,7 +17405,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_verbatimLabel"></a>Term Name  dwc:verbatimLabel</th>
+			<th colspan="2"><a id="dwc_verbatimLabel"></a>Term Name dwc:verbatimLabel</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -17451,7 +17455,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_verbatimLatitude"></a>Term Name  dwc:verbatimLatitude</th>
+			<th colspan="2"><a id="dwc_verbatimLatitude"></a>Term Name dwc:verbatimLatitude</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -17493,7 +17497,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_verbatimLocality"></a>Term Name  dwc:verbatimLocality</th>
+			<th colspan="2"><a id="dwc_verbatimLocality"></a>Term Name dwc:verbatimLocality</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -17535,7 +17539,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_verbatimLongitude"></a>Term Name  dwc:verbatimLongitude</th>
+			<th colspan="2"><a id="dwc_verbatimLongitude"></a>Term Name dwc:verbatimLongitude</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -17577,7 +17581,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_verbatimScientificNameRank"></a>Term Name  dwc:verbatimScientificNameRank</th>
+			<th colspan="2"><a id="dwc_verbatimScientificNameRank"></a>Term Name dwc:verbatimScientificNameRank</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -17623,7 +17627,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_verbatimSRS"></a>Term Name  dwciri:verbatimSRS</th>
+			<th colspan="2"><a id="dwciri_verbatimSRS"></a>Term Name dwciri:verbatimSRS</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -17665,7 +17669,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_verbatimSRS"></a>Term Name  dwc:verbatimSRS</th>
+			<th colspan="2"><a id="dwc_verbatimSRS"></a>Term Name dwc:verbatimSRS</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -17719,7 +17723,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_verbatimTaxonRank"></a>Term Name  dwc:verbatimTaxonRank</th>
+			<th colspan="2"><a id="dwc_verbatimTaxonRank"></a>Term Name dwc:verbatimTaxonRank</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -17770,7 +17774,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_vernacularName"></a>Term Name  dwc:vernacularName</th>
+			<th colspan="2"><a id="dwc_vernacularName"></a>Term Name dwc:vernacularName</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -17821,7 +17825,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_verticalDatum"></a>Term Name  dwc:verticalDatum</th>
+			<th colspan="2"><a id="dwc_verticalDatum"></a>Term Name dwc:verticalDatum</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -17881,7 +17885,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_verticalDatum"></a>Term Name  dwciri:verticalDatum</th>
+			<th colspan="2"><a id="dwciri_verticalDatum"></a>Term Name dwciri:verticalDatum</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -17927,7 +17931,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_vitality"></a>Term Name  dwc:vitality</th>
+			<th colspan="2"><a id="dwc_vitality"></a>Term Name dwc:vitality</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -17987,7 +17991,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_vitality"></a>Term Name  dwciri:vitality</th>
+			<th colspan="2"><a id="dwciri_vitality"></a>Term Name dwciri:vitality</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -18037,7 +18041,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_waterBody"></a>Term Name  dwc:waterBody</th>
+			<th colspan="2"><a id="dwc_waterBody"></a>Term Name dwc:waterBody</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -18088,7 +18092,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_year"></a>Term Name  dwc:year</th>
+			<th colspan="2"><a id="dwc_year"></a>Term Name dwc:year</th>
 		</tr>
 	</thead>
 	<tbody>

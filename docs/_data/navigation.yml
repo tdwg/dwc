@@ -43,3 +43,9 @@
     href: https://github.com/tdwg/dwc-qa/blob/master/README.md
 - text: GitHub
   href: https://github.com/tdwg/dwc
+- text: 文A
+  menu:
+  - text: English
+    href: /
+  - text: Français
+    href: /fr/

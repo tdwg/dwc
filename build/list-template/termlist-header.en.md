@@ -1,7 +1,7 @@
-# {document_title}
+# Darwin Core List of Terms
 
 Title
-: {document_title}
+: Darwin Core List of Terms
 
 Date version issued
 : {ratification_date}
@@ -21,7 +21,7 @@ Latest version
 {previous_version_slot}
 
 Abstract
-: {abstract}
+: Darwin Core is a vocabulary standard for transmitting information about biodiversity. This document lists all terms in namespaces currently used in the vocabulary.
 
 Contributors
 : {contributors}
