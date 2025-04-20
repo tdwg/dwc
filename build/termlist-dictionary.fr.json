@@ -15,6 +15,7 @@
     "definition": "Définition",
     "notes": "Remarques",
     "controlled_value": "Controlled value",
+    "usage": "Usage",
     "examples": "Exemples",
     "abcd_equivalence": "Équivalence ABCD",
     "not_in_abcd": "Pas dans ABCD",

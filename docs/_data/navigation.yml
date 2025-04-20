@@ -47,5 +47,7 @@
   menu:
   - text: English
     href: /
+  - text: Čeština
+    href: /cs/
   - text: Français
     href: /fr/

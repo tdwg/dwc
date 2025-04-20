@@ -772,10 +772,10 @@ dwc_list = TermList(
     displayId = ['record_level', 'dc', 'dcterms', 'occurrence', 'organism', 'material_entity', 'material_sample', 'event', 'location', 'geological_context', 'identification', 'taxon', 'measurement_or_fact', 'resource_relationship', 'use_with_iri'])
 
 # Darwin Core Terms HTML
-generate_all_markdown(dwc_list, 'list', ['fr', 'en'])
+generate_all_markdown(dwc_list, 'list', ['en', 'cs', 'fr'])
 
 # Darwin Core Terms QRG
-generate_all_qrg(dwc_list, ['en', 'fr'])
+generate_all_qrg(dwc_list, ['en', 'cs', 'fr'])
 
 # Establishment Means Vocabulary
 em_list = TermList(
@@ -789,7 +789,7 @@ em_list = TermList(
     displayId = ['Vocabulary'])
 
 # Establishment Means HTML
-generate_all_markdown(em_list, 'em', ['en', 'fr'])
+generate_all_markdown(em_list, 'em', ['en', 'cs', 'fr'])
 
 # Degree of Establishment Vocabulary
 doe_list = TermList(
@@ -803,7 +803,7 @@ doe_list = TermList(
     displayId = ['Vocabulary'])
 
 # Degree of Establishment HTML
-generate_all_markdown(doe_list, 'doe', ['en'])
+generate_all_markdown(doe_list, 'doe', ['en', 'cs', 'fr'])
 
 # Pathway Vocabulary
 pw_list = TermList(
@@ -817,4 +817,4 @@ pw_list = TermList(
     displayId = ['Vocabulary'])
 
 # Pathway HTML
-generate_all_markdown(pw_list, 'pw', ['en'])
+generate_all_markdown(pw_list, 'pw', ['en', 'cs', 'fr'])
