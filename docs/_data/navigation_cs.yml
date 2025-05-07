@@ -1,36 +1,17 @@
-- # Links listed below will be included in your site's navbar (navigation at the top)
-text: CSHome
-  href: /cs/
-- text: CSTerms
-  menu:
-  - text: CSDarwin Core
-    href: /cs/list/
-  -   - text: CSChronometric Age Extension
-  - text: CSHumboldt Extension
-  -   - text: CSEstablishment Means Controlled Vocabulary
-    href: /cs/em/
-  - text: CSDegree of Establishment Controlled Vocabulary
-    href: /cs/doe/
-  - text: CSPathway Controlled Vocabulary
-    href: /cs/pw/
-- text: CSGuides
-  menu:
-  - text: CSDarwin Core Quick Reference
-    href: /cs/terms/
-  -   - text: CSChronometric Age Extension Quick Reference
-  - text: CSHumboldt Extension Quick Reference
-  -   - text: CSSimple Darwin Core
-    href: /cs/simple/
-  - text: CSText (Darwin Core Archive)
-    href: /cs/text/
-  - text: CSRDF
-    href: /cs/rdf/
-  - text: CSXML
-    href: /cs/xml/
-  - text: CSNamespace policy
-    href: /cs/namespace/
-  -   - text: CSQuestions & Answers
-- text: CSGitHub
+- href: /cs/
+- menu:
+  - href: /cs/list/
+  -   -   -   -   - href: /cs/em/
+  - href: /cs/doe/
+  - href: /cs/pw/
+- menu:
+  - href: /cs/terms/
+  -   -   -   -   - href: /cs/simple/
+  - href: /cs/text/
+  - href: /cs/rdf/
+  - href: /cs/xml/
+  - href: /cs/namespace/
+  -   - - text: CSGitHub
 - menu:
   - href: /cs/
   -   - href: /cs/
