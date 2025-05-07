@@ -1,35 +1,16 @@
-- # Links listed below will be included in your site's navbar (navigation at the top)
-text: FRHome
-  href: /fr/
-- text: FRTerms
-  menu:
-  - text: FRDarwin Core
-    href: /fr/list/
-  -   - text: FRChronometric Age Extension
-  - text: FRHumboldt Extension
-  -   - text: FREstablishment Means Controlled Vocabulary
-    href: /fr/em/
-  - text: FRDegree of Establishment Controlled Vocabulary
-    href: /fr/doe/
-  - text: FRPathway Controlled Vocabulary
-    href: /fr/pw/
-- text: FRGuides
-  menu:
-  - text: FRDarwin Core Quick Reference
-    href: /fr/terms/
-  -   - text: FRChronometric Age Extension Quick Reference
-  - text: FRHumboldt Extension Quick Reference
-  -   - text: FRSimple Darwin Core
-    href: /fr/simple/
-  - text: FRText (Darwin Core Archive)
-    href: /fr/text/
-  - text: FRRDF
-    href: /fr/rdf/
-  - text: FRXML
-    href: /fr/xml/
-  - text: FRNamespace policy
-    href: /fr/namespace/
-  -   - text: FRQuestions & Answers
-- - menu:
+- href: /fr/
+- menu:
+  - href: /fr/list/
+  -   -   -   -   - href: /fr/em/
+  - href: /fr/doe/
+  - href: /fr/pw/
+- menu:
+  - href: /fr/terms/
+  -   -   -   -   - href: /fr/simple/
+  - href: /fr/text/
+  - href: /fr/rdf/
+  - href: /fr/xml/
+  - href: /fr/namespace/
+  -   - - - menu:
   - href: /
   -   - 
