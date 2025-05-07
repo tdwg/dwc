@@ -198,7 +198,7 @@ class TermList:
         if key in self.dictionary:
             return self.dictionary[key]
         else:
-            raise Exception("Value %s not present in translation dictionary" % key)
+            return key
 
     def t_val(self, row, key, l):
         """
