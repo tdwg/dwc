@@ -39,7 +39,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
 <table class="table">
   <tbody>
     <tr class="table-primary"><th colspan="2">{{ class_group.label }} <span class="badge bg-primary float-end">Class</span></th></tr>
-    <tr><td>Identifier</td><td><a href="{{ class_group.iri }}">{{ class_group.iri }}</a></td></tr>
+    <tr><td>Identificador</td><td><a href="{{ class_group.iri }}">{{ class_group.iri }}</a></td></tr>
     <tr><td>Definition</td><td>{{ class_group.definition }}</td></tr>
     <tr><td>Comments</td><td>{{ class_group.comments }}</td></tr>
     <tr><td>Examples</td><td>{% if examples | length == 1 %}{{ examples | first }}{% else %}<ul class="list-group list-group-flush">{% for example in examples %}<li class="list-group-item">{{ example }}</li>{% endfor %}</ul>{% endif %}</td></tr>
@@ -59,7 +59,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
 <table class="table">
   <tbody>
     <tr class="table-secondary"><th colspan="2">{{ term.label }}</th></tr>
-    <tr><td>Identifier</td><td><a href="{{ term.iri }}">{{ term.iri }}</a></td></tr>
+    <tr><td>Identificador</td><td><a href="{{ term.iri }}">{{ term.iri }}</a></td></tr>
     <tr><td>Definition</td><td>{{ term.definition }}</td></tr>
     <tr><td>Comments</td><td>{{ term.comments }}</td></tr>
     <tr><td>Examples</td><td>{% if examples | length == 1 %}{{ examples | first }}{% else %}<ul class="list-group list-group-flush">{% for example in examples %}<li class="list-group-item">{{ example }}</li>{% endfor %}</ul>{% endif %}</td></tr>
