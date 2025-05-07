@@ -1,354 +1,298 @@
-{
-    "preserve_hierarchy": true,
-
-    "files": [
-        {
-            "source": "/build/*/*.en.md",
-            "translation": "/%original_path%/%file_name%.%locale%.md",
-            "translation_replace": {
-                ".en": ""
-            },
-            "type": "md",
-            "languages_mapping": {
-                "locale": {
-                    "ar": "ar",
-                    "ar-SA": "ar",
-                    "cs": "cs",
-                    "cs-CZ": "cs",
-                    "de": "de",
-                    "de-DE": "de",
-                    "es": "es",
-                    "es-ES": "es",
-                    "fr": "fr",
-                    "fr-FR": "fr",
-                    "ja": "ja",
-                    "ja-JP": "ja",
-                    "km": "km",
-                    "km-KH": "km",
-                    "ko": "ko",
-                    "ko-KR": "ko",
-                    "nl": "nl",
-                    "nl-NL": "nl",
-                    "pt": "pt",
-                    "pt-PT": "pt",
-                    "ru": "ru",
-                    "ru-RU": "ru",
-                    "zh-CN": "zh-Hans",
-                    "zh-TW": "zh-Hant"
-                }
-            }
-        },
-
-        {
-            "source": "/build/*/*.en.jinja",
-            "translation": "/%original_path%/%file_name%.%locale%.jinja",
-            "translation_replace": {
-                ".en": ""
-            },
-            "type": "md",
-            "languages_mapping": {
-                "locale": {
-                    "ar": "ar",
-                    "ar-SA": "ar",
-                    "cs": "cs",
-                    "cs-CZ": "cs",
-                    "de": "de",
-                    "de-DE": "de",
-                    "es": "es",
-                    "es-ES": "es",
-                    "fr": "fr",
-                    "fr-FR": "fr",
-                    "ja": "ja",
-                    "ja-JP": "ja",
-                    "km": "km",
-                    "km-KH": "km",
-                    "ko": "ko",
-                    "ko-KR": "ko",
-                    "nl": "nl",
-                    "nl-NL": "nl",
-                    "pt": "pt",
-                    "pt-PT": "pt",
-                    "ru": "ru",
-                    "ru-RU": "ru",
-                    "zh-CN": "zh-Hans",
-                    "zh-TW": "zh-Hant"
-                }
-            }
-        },
-
-        {
-            "source": "/build/*/*.en.json",
-            "translation": "/%original_path%/%file_name%.%locale%.json",
-            "translation_replace": {
-                ".en": ""
-            },
-            "type": "json",
-            "languages_mapping": {
-                "locale": {
-                    "ar": "ar",
-                    "ar-SA": "ar",
-                    "cs": "cs",
-                    "cs-CZ": "cs",
-                    "de": "de",
-                    "de-DE": "de",
-                    "es": "es",
-                    "es-ES": "es",
-                    "fr": "fr",
-                    "fr-FR": "fr",
-                    "ja": "ja",
-                    "ja-JP": "ja",
-                    "km": "km",
-                    "km-KH": "km",
-                    "ko": "ko",
-                    "ko-KR": "ko",
-                    "nl": "nl",
-                    "nl-NL": "nl",
-                    "pt": "pt",
-                    "pt-PT": "pt",
-                    "ru": "ru",
-                    "ru-RU": "ru",
-                    "zh-CN": "zh-Hans",
-                    "zh-TW": "zh-Hant"
-                }
-            }
-        },
-
-        {
-            "source": "/docs/index.md",
-            "translation": "/docs/%locale%/%original_file_name%",
-            "type": "md",
-            "languages_mapping": {
-                "locale": {
-                    "ar": "ar",
-                    "ar-SA": "ar",
-                    "cs": "cs",
-                    "cs-CZ": "cs",
-                    "de": "de",
-                    "de-DE": "de",
-                    "es": "es",
-                    "es-ES": "es",
-                    "fr": "fr",
-                    "fr-FR": "fr",
-                    "ja": "ja",
-                    "ja-JP": "ja",
-                    "km": "km",
-                    "km-KH": "km",
-                    "ko": "ko",
-                    "ko-KR": "ko",
-                    "nl": "nl",
-                    "nl-NL": "nl",
-                    "pt": "pt",
-                    "pt-PT": "pt",
-                    "ru": "ru",
-                    "ru-RU": "ru",
-                    "zh-CN": "zh-Hans",
-                    "zh-TW": "zh-Hant"
-                }
-            }
-        },
-
-        {
-            "source": "/docs/namespace/index.md",
-            "translation": "/docs/%locale%/namespace/%original_file_name%",
-            "type": "md",
-            "languages_mapping": {
-                "locale": {
-                    "ar": "ar",
-                    "ar-SA": "ar",
-                    "cs": "cs",
-                    "cs-CZ": "cs",
-                    "de": "de",
-                    "de-DE": "de",
-                    "es": "es",
-                    "es-ES": "es",
-                    "fr": "fr",
-                    "fr-FR": "fr",
-                    "ja": "ja",
-                    "ja-JP": "ja",
-                    "km": "km",
-                    "km-KH": "km",
-                    "ko": "ko",
-                    "ko-KR": "ko",
-                    "nl": "nl",
-                    "nl-NL": "nl",
-                    "pt": "pt",
-                    "pt-PT": "pt",
-                    "ru": "ru",
-                    "ru-RU": "ru",
-                    "zh-CN": "zh-Hans",
-                    "zh-TW": "zh-Hant"
-                }
-            }
-        },
-
-        {
-            "source": "/docs/rdf/index.md",
-            "translation": "/docs/%locale%/rdf/%original_file_name%",
-            "type": "md",
-            "languages_mapping": {
-                "locale": {
-                    "ar": "ar",
-                    "ar-SA": "ar",
-                    "cs": "cs",
-                    "cs-CZ": "cs",
-                    "de": "de",
-                    "de-DE": "de",
-                    "es": "es",
-                    "es-ES": "es",
-                    "fr": "fr",
-                    "fr-FR": "fr",
-                    "ja": "ja",
-                    "ja-JP": "ja",
-                    "km": "km",
-                    "km-KH": "km",
-                    "ko": "ko",
-                    "ko-KR": "ko",
-                    "nl": "nl",
-                    "nl-NL": "nl",
-                    "pt": "pt",
-                    "pt-PT": "pt",
-                    "ru": "ru",
-                    "ru-RU": "ru",
-                    "zh-CN": "zh-Hans",
-                    "zh-TW": "zh-Hant"
-                }
-            }
-        },
-
-        {
-            "source": "/docs/simple/index.md",
-            "translation": "/docs/%locale%/simple/%original_file_name%",
-            "type": "md",
-            "languages_mapping": {
-                "locale": {
-                    "ar": "ar",
-                    "ar-SA": "ar",
-                    "cs": "cs",
-                    "cs-CZ": "cs",
-                    "de": "de",
-                    "de-DE": "de",
-                    "es": "es",
-                    "es-ES": "es",
-                    "fr": "fr",
-                    "fr-FR": "fr",
-                    "ja": "ja",
-                    "ja-JP": "ja",
-                    "km": "km",
-                    "km-KH": "km",
-                    "ko": "ko",
-                    "ko-KR": "ko",
-                    "nl": "nl",
-                    "nl-NL": "nl",
-                    "pt": "pt",
-                    "pt-PT": "pt",
-                    "ru": "ru",
-                    "ru-RU": "ru",
-                    "zh-CN": "zh-Hans",
-                    "zh-TW": "zh-Hant"
-                }
-            }
-        },
-
-        {
-            "source": "/docs/text/index.md",
-            "translation": "/docs/%locale%/text/%original_file_name%",
-            "type": "md",
-            "languages_mapping": {
-                "locale": {
-                    "ar": "ar",
-                    "ar-SA": "ar",
-                    "cs": "cs",
-                    "cs-CZ": "cs",
-                    "de": "de",
-                    "de-DE": "de",
-                    "es": "es",
-                    "es-ES": "es",
-                    "fr": "fr",
-                    "fr-FR": "fr",
-                    "ja": "ja",
-                    "ja-JP": "ja",
-                    "km": "km",
-                    "km-KH": "km",
-                    "ko": "ko",
-                    "ko-KR": "ko",
-                    "nl": "nl",
-                    "nl-NL": "nl",
-                    "pt": "pt",
-                    "pt-PT": "pt",
-                    "ru": "ru",
-                    "ru-RU": "ru",
-                    "zh-CN": "zh-Hans",
-                    "zh-TW": "zh-Hant"
-                }
-            }
-        },
-
-        {
-            "source": "/docs/xml/index.md",
-            "translation": "/docs/%locale%/xml/%original_file_name%",
-            "type": "md",
-            "languages_mapping": {
-                "locale": {
-                    "ar": "ar",
-                    "ar-SA": "ar",
-                    "cs": "cs",
-                    "cs-CZ": "cs",
-                    "de": "de",
-                    "de-DE": "de",
-                    "es": "es",
-                    "es-ES": "es",
-                    "fr": "fr",
-                    "fr-FR": "fr",
-                    "ja": "ja",
-                    "ja-JP": "ja",
-                    "km": "km",
-                    "km-KH": "km",
-                    "ko": "ko",
-                    "ko-KR": "ko",
-                    "nl": "nl",
-                    "nl-NL": "nl",
-                    "pt": "pt",
-                    "pt-PT": "pt",
-                    "ru": "ru",
-                    "ru-RU": "ru",
-                    "zh-CN": "zh-Hans",
-                    "zh-TW": "zh-Hant"
-                }
-            }
-        },
-
-        {
-            "source": "/docs/_data/navigation.yml",
-            "translation": "/%original_path%/%file_name%_%locale%.yml",
-            "type": "yaml",
-            "languages_mapping": {
-                "locale": {
-                    "ar": "ar",
-                    "ar-SA": "ar",
-                    "cs": "cs",
-                    "cs-CZ": "cs",
-                    "de": "de",
-                    "de-DE": "de",
-                    "es": "es",
-                    "es-ES": "es",
-                    "fr": "fr",
-                    "fr-FR": "fr",
-                    "ja": "ja",
-                    "ja-JP": "ja",
-                    "km": "km",
-                    "km-KH": "km",
-                    "ko": "ko",
-                    "ko-KR": "ko",
-                    "nl": "nl",
-                    "nl-NL": "nl",
-                    "pt": "pt",
-                    "pt-PT": "pt",
-                    "ru": "ru",
-                    "ru-RU": "ru",
-                    "zh-CN": "zh-Hans",
-                    "zh-TW": "zh-Hant"
-                }
-            }
-        }
-    ]
-}
+preserve_hierarchy: 1
+files:
+  - source: /build/*/*.en.md
+    translation: /%original_path%/%file_name%.%locale%.md
+    translation_replace:
+      .en: ''
+    type: md
+    languages_mapping:
+      locale:
+        ar: ar
+        ar-SA: ar
+        cs: cs
+        cs-CZ: cs
+        de: de
+        de-DE: de
+        es: es
+        es-ES: es
+        fr: fr
+        fr-FR: fr
+        ja: ja
+        ja-JP: ja
+        km: km
+        km-KH: km
+        ko: ko
+        ko-KR: ko
+        nl: nl
+        nl-NL: nl
+        pt: pt
+        pt-PT: pt
+        ru: ru
+        ru-RU: ru
+        zh-CN: zh-Hans
+        zh-TW: zh-Hant
+  - source: /build/*/*.en.jinja
+    translation: /%original_path%/%file_name%.%locale%.jinja
+    translation_replace:
+      .en: ''
+    type: md
+    languages_mapping:
+      locale:
+        ar: ar
+        ar-SA: ar
+        cs: cs
+        cs-CZ: cs
+        de: de
+        de-DE: de
+        es: es
+        es-ES: es
+        fr: fr
+        fr-FR: fr
+        ja: ja
+        ja-JP: ja
+        km: km
+        km-KH: km
+        ko: ko
+        ko-KR: ko
+        nl: nl
+        nl-NL: nl
+        pt: pt
+        pt-PT: pt
+        ru: ru
+        ru-RU: ru
+        zh-CN: zh-Hans
+        zh-TW: zh-Hant
+  - source: /build/*/*.en.json
+    translation: /%original_path%/%file_name%.%locale%.json
+    translation_replace:
+      .en: ''
+    type: json
+    languages_mapping:
+      locale:
+        ar: ar
+        ar-SA: ar
+        cs: cs
+        cs-CZ: cs
+        de: de
+        de-DE: de
+        es: es
+        es-ES: es
+        fr: fr
+        fr-FR: fr
+        ja: ja
+        ja-JP: ja
+        km: km
+        km-KH: km
+        ko: ko
+        ko-KR: ko
+        nl: nl
+        nl-NL: nl
+        pt: pt
+        pt-PT: pt
+        ru: ru
+        ru-RU: ru
+        zh-CN: zh-Hans
+        zh-TW: zh-Hant
+  - source: /docs/index.md
+    translation: /docs/%locale%/%original_file_name%
+    type: md
+    languages_mapping:
+      locale:
+        ar: ar
+        ar-SA: ar
+        cs: cs
+        cs-CZ: cs
+        de: de
+        de-DE: de
+        es: es
+        es-ES: es
+        fr: fr
+        fr-FR: fr
+        ja: ja
+        ja-JP: ja
+        km: km
+        km-KH: km
+        ko: ko
+        ko-KR: ko
+        nl: nl
+        nl-NL: nl
+        pt: pt
+        pt-PT: pt
+        ru: ru
+        ru-RU: ru
+        zh-CN: zh-Hans
+        zh-TW: zh-Hant
+  - source: /docs/namespace/index.md
+    translation: /docs/%locale%/namespace/%original_file_name%
+    type: md
+    languages_mapping:
+      locale:
+        ar: ar
+        ar-SA: ar
+        cs: cs
+        cs-CZ: cs
+        de: de
+        de-DE: de
+        es: es
+        es-ES: es
+        fr: fr
+        fr-FR: fr
+        ja: ja
+        ja-JP: ja
+        km: km
+        km-KH: km
+        ko: ko
+        ko-KR: ko
+        nl: nl
+        nl-NL: nl
+        pt: pt
+        pt-PT: pt
+        ru: ru
+        ru-RU: ru
+        zh-CN: zh-Hans
+        zh-TW: zh-Hant
+  - source: /docs/rdf/index.md
+    translation: /docs/%locale%/rdf/%original_file_name%
+    type: md
+    languages_mapping:
+      locale:
+        ar: ar
+        ar-SA: ar
+        cs: cs
+        cs-CZ: cs
+        de: de
+        de-DE: de
+        es: es
+        es-ES: es
+        fr: fr
+        fr-FR: fr
+        ja: ja
+        ja-JP: ja
+        km: km
+        km-KH: km
+        ko: ko
+        ko-KR: ko
+        nl: nl
+        nl-NL: nl
+        pt: pt
+        pt-PT: pt
+        ru: ru
+        ru-RU: ru
+        zh-CN: zh-Hans
+        zh-TW: zh-Hant
+  - source: /docs/simple/index.md
+    translation: /docs/%locale%/simple/%original_file_name%
+    type: md
+    languages_mapping:
+      locale:
+        ar: ar
+        ar-SA: ar
+        cs: cs
+        cs-CZ: cs
+        de: de
+        de-DE: de
+        es: es
+        es-ES: es
+        fr: fr
+        fr-FR: fr
+        ja: ja
+        ja-JP: ja
+        km: km
+        km-KH: km
+        ko: ko
+        ko-KR: ko
+        nl: nl
+        nl-NL: nl
+        pt: pt
+        pt-PT: pt
+        ru: ru
+        ru-RU: ru
+        zh-CN: zh-Hans
+        zh-TW: zh-Hant
+  - source: /docs/text/index.md
+    translation: /docs/%locale%/text/%original_file_name%
+    type: md
+    languages_mapping:
+      locale:
+        ar: ar
+        ar-SA: ar
+        cs: cs
+        cs-CZ: cs
+        de: de
+        de-DE: de
+        es: es
+        es-ES: es
+        fr: fr
+        fr-FR: fr
+        ja: ja
+        ja-JP: ja
+        km: km
+        km-KH: km
+        ko: ko
+        ko-KR: ko
+        nl: nl
+        nl-NL: nl
+        pt: pt
+        pt-PT: pt
+        ru: ru
+        ru-RU: ru
+        zh-CN: zh-Hans
+        zh-TW: zh-Hant
+  - source: /docs/xml/index.md
+    translation: /docs/%locale%/xml/%original_file_name%
+    type: md
+    languages_mapping:
+      locale:
+        ar: ar
+        ar-SA: ar
+        cs: cs
+        cs-CZ: cs
+        de: de
+        de-DE: de
+        es: es
+        es-ES: es
+        fr: fr
+        fr-FR: fr
+        ja: ja
+        ja-JP: ja
+        km: km
+        km-KH: km
+        ko: ko
+        ko-KR: ko
+        nl: nl
+        nl-NL: nl
+        pt: pt
+        pt-PT: pt
+        ru: ru
+        ru-RU: ru
+        zh-CN: zh-Hans
+        zh-TW: zh-Hant
+  - source: /docs/_data/navigation.yml
+    translation: /%original_path%/%file_name%_%locale%.yml
+    type: yaml
+    languages_mapping:
+      locale:
+        ar: ar
+        ar-SA: ar
+        cs: cs
+        cs-CZ: cs
+        de: de
+        de-DE: de
+        es: es
+        es-ES: es
+        fr: fr
+        fr-FR: fr
+        ja: ja
+        ja-JP: ja
+        km: km
+        km-KH: km
+        ko: ko
+        ko-KR: ko
+        nl: nl
+        nl-NL: nl
+        pt: pt
+        pt-PT: pt
+        ru: ru
+        ru-RU: ru
+        zh-CN: zh-Hans
+        zh-TW: zh-Hant
