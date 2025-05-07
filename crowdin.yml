@@ -67,7 +67,6 @@ files:
     translation_replace:
       .en: ''
     type: json
-    skip_untranslated_strings: false
     languages_mapping:
       locale:
         ar: ar
@@ -271,7 +270,6 @@ files:
   - source: /docs/_data/navigation.yml
     translation: /%original_path%/%file_name%_%locale%.yml
     type: yaml
-    skip_untranslated_strings: false
     languages_mapping:
       locale:
         ar: ar
