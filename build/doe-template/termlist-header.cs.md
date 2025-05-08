@@ -1,42 +1,41 @@
-# Degree of Establishment Controlled Vocabulary List of Terms
+# Seznam termínů Řízeného slovníku Stupňů rozšíření
 
-Title
-: Degree of Establishment Controlled Vocabulary List of Terms
+Nadpis: Seznam termínů Řízeného slovníku Stupňů rozšíření
 
-Namespace URI
+URI jmenného prostoru
 : <http://rs.tdwg.org/dwcdoe/values/>
 
-Preferred namespace abbreviation
+Preferovaná zkratka jmenného prostoru
 : dwcdoe:
 
-Date version issued
+Datum vydání verze
 : 2021-09-01
 
-Date created
+Datum vytvoření
 : 2020-10-13
 
-Part of TDWG Standard
+Součást TDWG Standardu
 : <http://www.tdwg.org/standards/450>
 
-This document version
+Tato verze dokumentu
 : <http://rs.tdwg.org/dwc/doc/doe/2021-09-01>
 
-Latest version of document
+Aktuální verze dokumentu
 : <http://rs.tdwg.org/dwc/doc/doe/>
 
-Previous version
+Předchozí verze
 : <http://rs.tdwg.org/dwc/doc/doe/2020-10-13>
 
-Abstract
-: The Darwin Core term `degreeOfEstablishment` provides information about degree to which an Organism survives, reproduces, and expands its range at the given place and time.. The Degree of Establishment Controlled Vocabulary provides terms that should be used as values for `dwc:degreeOfEstablishment` and `dwciri:degreeOfEstablishment`.
+Abstrakt
+: Darwin Core termín `degreeOfEstablishment` poskytuje informace o tom, do jaké míry organismus přežívá, rozmnožuje se a rozšiřuje svůj areál v daném místě a čase.. Řízený slovník Stupně rozšíření poskytuje termíny, které by se měly používat jako hodnoty pro `dwc:degreeOfEstablishment` a `dwciri:degreeOfEstablishment`.
 
-Contributors
-: Quentin Groom, Peter Desmet, Lien Reyserhove, Tim Adriaens, Damiano Oldoni, Sonia Vanderhoeven, Steven J Baskauf, Arthur Chapman, Melodie McGeoch, Ramona Walls, John Wieczorek, John R.U. Wilson, Paula F Zermoglio, Annie Simpson
+Přispěvatelé
+: Quentin Groom, Peter Desmet, Lien Reyserhove, Tim Adriaens, Damiano Oldoni, Sonia Vanderhoeven, Steven J. Baskauf, Arthur Chapman, Melodie McGeoch, Ramona Walls, John Wieczorek, John R.U. Wilson, Paula F Zermoglio, Annie Simpson
 
-Creator
+Tvůrce
 : TDWG Darwin Core Maintenance Group
 
-Bibliographic citation
+Bibliografická citace
 : Darwin Core Maintenance Group. 2021. Degree of Establishment Controlled Vocabulary List of Terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/doe/2021-09-01>
 
 ## 1 Introduction
