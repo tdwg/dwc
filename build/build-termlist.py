@@ -20,6 +20,8 @@ from jinja2 import FileSystemLoader, Environment
 
 github_branch = 'master' # "master" for production, something else for development
 
+languages = ['en', 'cs', 'es', 'fr', 'ko', 'zh-Hant']
+
 # This is the base URL for raw files from the branch of the repo that has been pushed to GitHub
 githubBaseUri = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/' + github_branch + '/'
 # Optionally, use a local copy, useful during development.
@@ -772,10 +774,10 @@ dwc_list = TermList(
     displayId = ['record_level', 'dc', 'dcterms', 'occurrence', 'organism', 'material_entity', 'material_sample', 'event', 'location', 'geological_context', 'identification', 'taxon', 'measurement_or_fact', 'resource_relationship', 'use_with_iri'])
 
 # Darwin Core Terms HTML
-generate_all_markdown(dwc_list, 'list', ['en', 'cs', 'fr'])
+generate_all_markdown(dwc_list, 'list', languages)
 
 # Darwin Core Terms QRG
-generate_all_qrg(dwc_list, ['en', 'cs', 'fr'])
+generate_all_qrg(dwc_list, languages)
 
 # Establishment Means Vocabulary
 em_list = TermList(
@@ -789,7 +791,7 @@ em_list = TermList(
     displayId = ['Vocabulary'])
 
 # Establishment Means HTML
-generate_all_markdown(em_list, 'em', ['en', 'cs', 'fr'])
+generate_all_markdown(em_list, 'em', languages)
 
 # Degree of Establishment Vocabulary
 doe_list = TermList(
@@ -803,7 +805,7 @@ doe_list = TermList(
     displayId = ['Vocabulary'])
 
 # Degree of Establishment HTML
-generate_all_markdown(doe_list, 'doe', ['en', 'cs', 'fr'])
+generate_all_markdown(doe_list, 'doe', languages)
 
 # Pathway Vocabulary
 pw_list = TermList(
@@ -817,4 +819,4 @@ pw_list = TermList(
     displayId = ['Vocabulary'])
 
 # Pathway HTML
-generate_all_markdown(pw_list, 'pw', ['en', 'cs', 'fr'])
+generate_all_markdown(pw_list, 'pw', languages)
