@@ -7,7 +7,7 @@ to create the terms/index.md file, which mostly contains html.
 
 This document is intended to be an easy-to-read reference of the currently (as of 2023-09-18) recommended terms maintained as part of the [Darwin Core standard](https://www.tdwg.org/standards/dwc/) and is maintained by the [Darwin Core Maintenance Group](https://www.tdwg.org/community/dwc/).
 
-**Need help?** Read more about how to use Darwin Core in the [Darwin Core Questions & Answers site](https://github.com/tdwg/dwc-qa/blob/master/README.md). Still have questions? Submit a new issue (question/problem) to the [dwc-qa issues page in GitHub](https://github.com/tdwg/dwc-qa/issues), or use the [form](https://tinyurl.com/darwin-qa). See the bottom of this document for [how to cite Darwin Core](https://dwc.tdwg.org/terms/#cite-darwin-core)."
+**Need help?** Read more about how to use Darwin Core in the [Darwin Core Questions & Answers site](https://github.com/tdwg/dwc-qa/blob/master/README.md). Máš další otázky? Submit a new issue (question/problem) to the [dwc-qa issues page in GitHub](https://github.com/tdwg/dwc-qa/issues), or use the [form](https://tinyurl.com/darwin-qa). See the bottom of this document for [how to cite Darwin Core](https://dwc.tdwg.org/terms/#cite-darwin-core)."
 
 **Want to contribute?** For information about how to contribute to the Darwin Core Standard, including how to propose changes, see the [Guidelines for contributing](https://github.com/tdwg/dwc/blob/master/.github/CONTRIBUTING.md).
 
@@ -40,9 +40,9 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
   <tbody>
     <tr class="table-primary"><th colspan="2">{{ class_group.label }} <span class="badge bg-primary float-end">Class</span></th></tr>
     <tr><td>Identifikátor</td><td><a href="{{ class_group.iri }}">{{ class_group.iri }}</a></td></tr>
-    <tr><td>Definition</td><td>{{ class_group.definition }}</td></tr>
-    <tr><td>Comments</td><td>{{ class_group.comments }}</td></tr>
-    <tr><td>Examples</td><td>{% if examples | length == 1 %}{{ examples | first }}{% else %}<ul class="list-group list-group-flush">{% for example in examples %}<li class="list-group-item">{{ example }}</li>{% endfor %}</ul>{% endif %}</td></tr>
+    <tr><td>Definice</td><td>{{ class_group.definition }}</td></tr>
+    <tr><td>Komentáře</td><td>{{ class_group.comments }}</td></tr>
+    <tr><td>Příklady</td><td>{% if examples | length == 1 %}{{ examples | first }}{% else %}<ul class="list-group list-group-flush">{% for example in examples %}<li class="list-group-item">{{ example }}</li>{% endfor %}</ul>{% endif %}</td></tr>
   </tbody>
 </table>
 {%endif %}
@@ -60,25 +60,25 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
   <tbody>
     <tr class="table-secondary"><th colspan="2">{{ term.label }}</th></tr>
     <tr><td>Identifikátor</td><td><a href="{{ term.iri }}">{{ term.iri }}</a></td></tr>
-    <tr><td>Definition</td><td>{{ term.definition }}</td></tr>
-    <tr><td>Comments</td><td>{{ term.comments }}</td></tr>
-    <tr><td>Examples</td><td>{% if examples | length == 1 %}{{ examples | first }}{% else %}<ul class="list-group list-group-flush">{% for example in examples %}<li class="list-group-item">{{ example }}</li>{% endfor %}</ul>{% endif %}</td></tr>
+    <tr><td>Definice</td><td>{{ term.definition }}</td></tr>
+    <tr><td>Komentáře</td><td>{{ term.comments }}</td></tr>
+    <tr><td>Příklady</td><td>{% if examples | length == 1 %}{{ examples | first }}{% else %}<ul class="list-group list-group-flush">{% for example in examples %}<li class="list-group-item">{{ example }}</li>{% endfor %}</ul>{% endif %}</td></tr>
   </tbody>
 </table>
 {% endfor %}
 
 {% endfor %}
 
-## Cite Darwin Core
+## Citace Darwin Core
 
-To cite Darwin Core in general, use the peer-reviewed article on Darwin Core:
+Chcete-li citovat Darwin Core obecně, použijte recenzovaný článek o Darwin Core:
 
 > Wieczorek J, Bloom D, Guralnick R, Blum S, Döring M, et al. (2012) Darwin Core: An Evolving Community-Developed Biodiversity Data Standard. PLoS ONE 7(1): e29715. <https://doi.org/10.1371/journal.pone.0029715>
 
-To cite the standard document upon which this page is built, use the following:
+Chcete-li citovat dokument standardu, na kterém je tato stránka postavena, použijte následující:
 
 > Darwin Core Maintenance Group. 2021. List of Darwin Core terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/list/>
 
-To cite this document specifically, use the following:
+Chcete-li citovat konkrétně tento dokument, použijte následující:
 
-> Darwin Core Maintenance Group. 2021. Darwin Core Quick Reference Guide. Biodiversity Information Standards (TDWG). <https://dwc.tdwg.org/terms/>
+> Darwin Core Maintenance Group. 2021. Stručná referenční příručka k Darwin Core. Biodiversity Information Standards (TDWG). <https://dwc.tdwg.org/terms/>
