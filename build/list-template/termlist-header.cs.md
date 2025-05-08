@@ -6,22 +6,22 @@ Název
 Datum vydání verze
 : {ratification_date}
 
-Date created
+Datum vytvoření
 : {created_date}
 
-Part of TDWG Standard
+Část standardu TDWG
 : <{standard_iri}>
 
-This version
+Tato verze
 : <{current_iri}{ratification_date}>
 
-Latest version
+Aktuální verze
 : <{current_iri}>
 
 {previous_version_slot}
 
-Abstract
-: Darwin Core is a vocabulary standard for transmitting information about biodiversity. This document lists all terms in namespaces currently used in the vocabulary.
+Abstrakt
+: Darwin Core je slovníkový standard pro předávání informací o biologické rozmanitosti. V tomto dokumentu jsou uvedeny všechny termíny ve jmenných prostorech, které se v současné době používají ve slovníku.
 
 Contributors
 : {contributors}
@@ -58,8 +58,8 @@ The following namespace abbreviations are used in this document:
 
 | abbreviation             | IRI                                                                              |
 | ------------------------ | -------------------------------------------------------------------------------- |
-| dwc:     | http://rs.tdwg.org/dwc/terms/    |
-| dwciri:  | http://rs.tdwg.org/dwc/iri/      |
+| dwc:     | http://rs.tdwg.org/dwc/cs/terms/ |
+| dwciri:  | http://rs.tdwg.org/dwc/cs/iri/   |
 | dc:      | http://purl.org/dc/elements/1.1/ |
 | dcterms: | http://purl.org/dc/terms/                        |
 
