@@ -1,5 +1,12 @@
 {
     "term_name": "Název termínu",
+    "definition": "Definice",
+    "usage": "Použití",
+    "examples": "Příklady",
+    "abcd_equivalence": "ABCD ekvivalence",
+    "not_in_abcd": "Není v ABCD",
     "type": "Typ",
-    "class": "Třída"
+    "property": "Vlastnost",
+    "class": "Třída",
+    "concept": "Koncept"
 }
