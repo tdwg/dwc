@@ -18,13 +18,13 @@ Datum vytvoření
 Součást TDWG Standardu
 : <http://www.tdwg.org/standards/450>
 
-This document version
+Tato verze dokumentu
 : <http://rs.tdwg.org/dwc/doc/pw/2021-09-01>
 
-Latest version of document
+Aktuální verze dokumentu
 : <http://rs.tdwg.org/dwc/doc/pw/>
 
-Previous version
+Předchozí verze
 : <http://rs.tdwg.org/dwc/doc/pw/2020-10-13>
 
 Abstract
