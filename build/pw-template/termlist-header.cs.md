@@ -9,13 +9,13 @@ Namespace URI
 Preferred namespace abbreviation
 : dwcpw:
 
-Date version issued
+Datum vydání verze
 : 2021-09-01
 
-Date created
+Datum vytvoření
 : 2020-10-13
 
-Part of TDWG Standard
+Součást TDWG Standardu
 : <http://www.tdwg.org/standards/450>
 
 This document version
@@ -30,13 +30,13 @@ Previous version
 Abstract
 : The Darwin Core term `pathway` provides information about the process by which an Organism came to be in a given place at a given time. The Pathway Controlled Vocabulary provides terms that should be used as values for `dwc:pathway` and `dwciri:pathway`.
 
-Contributors
-: Quentin Groom, Peter Desmet, Lien Reyserhove, Tim Adriaens, Damiano Oldoni, Sonia Vanderhoeven, Steven J Baskauf, Arthur Chapman, Melodie McGeoch, Ramona Walls, John Wieczorek, John R.U. Wilson, Paula F Zermoglio, Annie Simpson
+Přispěvatelé
+: Quentin Groom, Peter Desmet, Lien Reyserhove, Tim Adriaens, Damiano Oldoni, Sonia Vanderhoeven, Steven J. Baskauf, Arthur Chapman, Melodie McGeoch, Ramona Walls, John Wieczorek, John R.U. Wilson, Paula F Zermoglio, Annie Simpson
 
-Creator
+Tvůrce
 : TDWG Darwin Core Maintenance Group
 
-Bibliographic citation
+Bibliografická citace
 : Darwin Core Maintenance Group. 2021. Pathway Controlled Vocabulary List of Terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/pw/2021-09-01>
 
 ## 1 Introduction
