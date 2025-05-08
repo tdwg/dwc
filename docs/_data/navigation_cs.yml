@@ -1,7 +1,8 @@
 - href: /cs/
 - menu:
   - href: /cs/list/
-  -   -   -   -   - href: /cs/em/
+  -   -   -   -   - text: Řízený slovník Způsob zavlečení
+    href: /cs/em/
   - href: /cs/doe/
   - href: /cs/pw/
 - menu:
