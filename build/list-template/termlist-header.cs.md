@@ -23,18 +23,18 @@ Aktuální verze
 Abstrakt
 : Darwin Core je slovníkový standard pro předávání informací o biologické rozmanitosti. V tomto dokumentu jsou uvedeny všechny termíny ve jmenných prostorech, které se v současné době používají ve slovníku.
 
-Contributors
+Přispěvatelé
 : {contributors}
 
-Creator
+Tvůrce
 : {creator}
 
-Bibliographic citation
+Bibliografická citace
 : {creator}. {year}. {document_title}. {publisher}. <{current_iri}{ratification_date}>
 
 ## 1 Introduction (Informative)
 
-This document contains terms that are part of the most recent version of the Darwin Core vocabulary (<http://rs.tdwg.org/version/dwc/{ratification_date}>).
+Tento dokument obsahuje termíny, které jsou součástí nejnovější verze slovníku Darwin Core (<http://rs.tdwg.org/version/dwc/{ratification_date}>).
 
 This document includes terms in four namespaces that contain recommended terms: `dwc:`, `dwciri:`, `dc:`, and `dcterms:`. However, some terms in these namespaces are deprecated or superseded and should no longer be used. Deprecation or supersession is noted in the term metadata. Namespaces that contain only deprecated terms are not included in this document, but metadata about those terms can be retrieved by dereferencing their IRIs.
 
@@ -56,7 +56,7 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 
 The following namespace abbreviations are used in this document:
 
-| abbreviation             | IRI                                                                              |
+| zkratka                  | IRI                                                                              |
 | ------------------------ | -------------------------------------------------------------------------------- |
 | dwc:     | http://rs.tdwg.org/dwc/cs/terms/ |
 | dwciri:  | http://rs.tdwg.org/dwc/cs/iri/   |
