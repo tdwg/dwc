@@ -24,14 +24,89 @@ exclude:
   - LICENSE
 
 # FRONTMATTER DEFAULTS
+# The language-specific navigation menus must be commented until their translation
+# is completed and merged.
 defaults:
   - scope:
       path: ""
     values:
       layout: default
       toc: true
+# Arabic
+  - scope:
+      path: ar
+    values:
+      language: ar
+#      navigation: navigation_ar
+# Czech
+  - scope:
+      path: cs
+    values:
+      language: cs
+#      navigation: navigation_cs
+# German
+  - scope:
+      path: de
+    values:
+      language: de
+#      navigation: navigation_de
+# Spanish
+  - scope:
+      path: es
+    values:
+      language: es
+#      navigation: navigation_es
+# French
   - scope:
       path: fr
     values:
       language: fr
-      navigation: navigation_fr
+#      navigation: navigation_fr
+# Japanese
+  - scope:
+      path: ja
+    values:
+      language: ja
+#      navigation: navigation_ja
+# Khmer
+  - scope:
+      path: km
+    values:
+      language: km
+#      navigation: navigation_km
+# Korean
+  - scope:
+      path: ko
+    values:
+      language: ko
+#      navigation: navigation_ko
+# Dutch
+  - scope:
+      path: nl
+    values:
+      language: nl
+#      navigation: navigation_nl
+# Portuguese
+  - scope:
+      path: pt
+    values:
+      language: pt
+#      navigation: navigation_pt
+# Russian
+  - scope:
+      path: ru
+    values:
+      language: ru
+#      navigation: navigation_ru
+# Simplified Chinese
+  - scope:
+      path: zh-Hans
+    values:
+      language: zh-Hans
+#      navigation: navigation_zh-Hans
+# Traditional Chinese
+  - scope:
+      path: zh-Hant
+    values:
+      language: zh-Hant
+#      navigation: navigation_zh-Hant
