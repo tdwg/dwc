@@ -9,13 +9,13 @@ Namespace URI
 Preferred namespace abbreviation
 : dwcem:
 
-Date version issued
+Datum vydání verze
 : 2021-09-01
 
-Date created
+Datum vytvoření
 : 2020-10-13
 
-Part of TDWG Standard
+Součást TDWG Standardu
 : <http://www.tdwg.org/standards/450>
 
 This document version
@@ -30,13 +30,13 @@ Previous version
 Abstract
 : The Darwin Core term `establishmentMeans` provides information about whether an organism or organisms have been introduced to a given place and time through the direct or indirect activity of modern humans. The Establishment Means Controlled Vocabulary provides terms that should be used as values for `dwc:establishmentMeans` and `dwciri:establishmentMeans`.
 
-Contributors
-: Quentin Groom, Peter Desmet, Lien Reyserhove, Tim Adriaens, Damiano Oldoni, Sonia Vanderhoeven, Steven J Baskauf, Arthur Chapman, Melodie McGeoch, Ramona Walls, John Wieczorek, John R.U. Wilson, Paula F Zermoglio, Annie Simpson
+Přispěvatelé
+: Quentin Groom, Peter Desmet, Lien Reyserhove, Tim Adriaens, Damiano Oldoni, Sonia Vanderhoeven, Steven J. Baskauf, Arthur Chapman, Melodie McGeoch, Ramona Walls, John Wieczorek, John R.U. Wilson, Paula F Zermoglio, Annie Simpson
 
-Creator
+Tvůrce
 : TDWG Darwin Core Maintenance Group
 
-Bibliographic citation
+Bibliografická citace
 : Darwin Core Maintenance Group. 2021. Establishment Means Controlled Vocabulary List of Terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/em/2021-09-01>
 
 ## 1 Introduction
