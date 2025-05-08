@@ -1,16 +1,24 @@
-- href: /fr/
-- menu:
-  - href: /fr/list/
+- # Links listed below will be included in your site's navbar (navigation at the top)
+text: Accueil
+  href: /fr/
+- text: Termes
+  menu:
+  - text: Darwin Core
+    href: /fr/list/
   -   -   -   -   - href: /fr/em/
   - href: /fr/doe/
   - href: /fr/pw/
-- menu:
+- text: Guides
+  menu:
   - href: /fr/terms/
   -   -   -   -   - href: /fr/simple/
   - href: /fr/text/
-  - href: /fr/rdf/
-  - href: /fr/xml/
+  - text: RDF
+    href: /fr/rdf/
+  - text: XML
+    href: /fr/xml/
   - href: /fr/namespace/
-  -   - - - menu:
+  -   - text: Questions & Réponses
+- - menu:
   - href: /
   -   - 
