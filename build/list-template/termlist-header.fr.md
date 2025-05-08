@@ -56,7 +56,7 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 
 The following namespace abbreviations are used in this document:
 
-| abbreviation             | IRI                                                                              |
+| abréviation              | IRI                                                                              |
 | ------------------------ | -------------------------------------------------------------------------------- |
 | dwc:     | http://rs.tdwg.org/dwc/terms/    |
 | dwciri:  | http://rs.tdwg.org/dwc/iri/      |
