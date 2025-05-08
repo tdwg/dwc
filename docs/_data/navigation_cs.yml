@@ -1,7 +1,13 @@
-- href: /cs/
-- menu:
-  - href: /cs/list/
-  -   -   -   -   - text: Řízený slovník Způsob zavlečení
+- # Links listed below will be included in your site's navbar (navigation at the top)
+text: Domů
+  href: /cs/
+- text: Termíny
+  menu:
+  - text: Darwin Core
+    href: /cs/list/
+  -   - text: Rozšíření chronometrického věku
+  - text: Rozšíření Humboldt
+  -   - text: Řízený slovník Způsob zavlečení
     href: /cs/em/
   - href: /cs/doe/
   - href: /cs/pw/
@@ -9,8 +15,10 @@
   - href: /cs/terms/
   -   -   -   -   - href: /cs/simple/
   - href: /cs/text/
-  - href: /cs/rdf/
-  - href: /cs/xml/
+  - text: RDF
+    href: /cs/rdf/
+  - text: XML
+    href: /cs/xml/
   - href: /cs/namespace/
   -   - - text: CSGitHub
 - menu:
