@@ -1,12 +1,12 @@
-# Pathway Controlled Vocabulary List of Terms
+# Seznam termínů pro řízený slovník Pathway
 
-Title
-: Pathway Controlled Vocabulary List of Terms
+Název
+: Seznam termínů řízeného slovníku Pathway
 
 URI jmenného prostoru
 : <http://rs.tdwg.org/dwcpw/values/>
 
-Preferred namespace abbreviation
+Preferovaná zkratka jmenného prostoru
 : dwcpw:
 
 Datum vydání verze
@@ -27,8 +27,8 @@ Aktuální verze dokumentu
 Předchozí verze
 : <http://rs.tdwg.org/dwc/doc/pw/2020-10-13>
 
-Abstract
-: The Darwin Core term `pathway` provides information about the process by which an Organism came to be in a given place at a given time. The Pathway Controlled Vocabulary provides terms that should be used as values for `dwc:pathway` and `dwciri:pathway`.
+Abstrakt
+: Darwin Core termín "pathway" poskytuje informace o procesu, kterým se organismus dostal na dané místo v daném čase. Řízený slovník Pathway poskytuje termíny, které by se měly používat jako hodnoty pro `dwc:pathway` a `dwciri:pathway`.
 
 Přispěvatelé
 : Quentin Groom, Peter Desmet, Lien Reyserhove, Tim Adriaens, Damiano Oldoni, Sonia Vanderhoeven, Steven J. Baskauf, Arthur Chapman, Melodie McGeoch, Ramona Walls, John Wieczorek, John R.U. Wilson, Paula F Zermoglio, Annie Simpson
@@ -37,7 +37,7 @@ Tvůrce
 : TDWG Darwin Core Maintenance Group
 
 Bibliografická citace
-: Darwin Core Maintenance Group. 2021. Pathway Controlled Vocabulary List of Terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/pw/2021-09-01>
+: Darwin Core Maintenance Group. 2021. Seznam termínů řízeného slovníku Pathway. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/pw/2021-09-01>
 
 ## 1. Úvod
 
