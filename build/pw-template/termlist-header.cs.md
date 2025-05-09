@@ -3,7 +3,7 @@
 Title
 : Pathway Controlled Vocabulary List of Terms
 
-Namespace URI
+URI jmenného prostoru
 : <http://rs.tdwg.org/dwcpw/values/>
 
 Preferred namespace abbreviation
