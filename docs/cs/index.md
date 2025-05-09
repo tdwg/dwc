@@ -1,11 +1,11 @@
 ---
-layout: domů
+layout: home
 ---
 
 # Darwin Core
 
 {:.lead}
-Darwin Core je standard udržovaný skupinou [Darwin Core Maintenance Interest Group](https://www.tdwg.org/standards/dwc/#maintenance-group">). Obsahuje slovník pojmů (v jiných kontextech by se mohly nazývat vlastnosti, prvky, pole, sloupce, atributy nebo koncepty), který má **usnadnit sdílení informací o biologické rozmanitosti** tím, že poskytuje identifikátory, označení a definice. Darwin Core vychází především z taxonů, jejich výskytu v přírodě, který je doložen pozorováními, exempláři, vzorky a souvisejícími informacemi.
+Darwin Core is a standard maintained by the [Darwin Core Maintenance Group](https://www.tdwg.org/standards/dwc/#maintenance-group). Obsahuje slovník pojmů (v jiných kontextech by se mohly nazývat vlastnosti, prvky, pole, sloupce, atributy nebo koncepty), který má **usnadnit sdílení informací o biologické rozmanitosti** tím, že poskytuje identifikátory, označení a definice. Darwin Core vychází především z taxonů, jejich výskytu v přírodě, který je doložen pozorováními, exempláři, vzorky a souvisejícími informacemi.
 
 ## Začínáme
 
