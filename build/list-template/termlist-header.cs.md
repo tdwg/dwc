@@ -32,11 +32,11 @@ Tvůrce
 Bibliografická citace
 : {creator}. {year}. {document_title}. {publisher}. <{current_iri}{ratification_date}>
 
-## 1 Introduction (Informative)
+## 1 Úvod (informativní)
 
 Tento dokument obsahuje termíny, které jsou součástí nejnovější verze slovníku Darwin Core (<http://rs.tdwg.org/version/dwc/{ratification_date}>).
 
-This document includes terms in four namespaces that contain recommended terms: `dwc:`, `dwciri:`, `dc:`, and `dcterms:`. However, some terms in these namespaces are deprecated or superseded and should no longer be used. Deprecation or supersession is noted in the term metadata. Namespaces that contain only deprecated terms are not included in this document, but metadata about those terms can be retrieved by dereferencing their IRIs.
+Tento dokument obsahuje termíny ve čtyřech jmenných prostorech, které obsahují doporučené termíny: `dwc:`, `dwciri:`, `dc:` a `dcterms:`. Některé termíny v těchto jmenných prostorech jsou však zastaralé nebo překonané a neměly by se již používat. Vyřazení nebo nahrazení je uvedeno v metadatech termínu. Jmenné prostory, které obsahují pouze zastaralé termíny, nejsou v tomto dokumentu zahrnuty, ale metadata o těchto termínech lze získat dereferencováním jejich IRI.
 
 For a simplified list that contains only the currently recommended terms, see the [Darwin Core Quick Reference Guide](../terms/).
 
