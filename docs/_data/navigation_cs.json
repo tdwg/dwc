@@ -1,0 +1,112 @@
+[
+  {
+    "text": "Domů",
+    "href": "/cs/"
+  },
+  {
+    "text": "Termíny",
+    "menu": [
+      {
+        "text": "Darwin Core",
+        "href": "/cs/list/"
+      },
+      {
+        "text": ""
+      },
+      {
+        "text": "Rozšíření chronometrického věku",
+        "href": ""
+      },
+      {
+        "text": "Rozšíření Humboldt",
+        "href": ""
+      },
+      {
+        "text": ""
+      },
+      {
+        "text": "Řízený slovník Způsob zavlečení",
+        "href": "/cs/em/"
+      },
+      {
+        "text": "",
+        "href": "/cs/doe/"
+      },
+      {
+        "text": "",
+        "href": "/cs/pw/"
+      }
+    ]
+  },
+  {
+    "text": "",
+    "menu": [
+      {
+        "text": "",
+        "href": "/cs/terms/"
+      },
+      {
+        "text": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": ""
+      },
+      {
+        "text": "",
+        "href": "/cs/simple/"
+      },
+      {
+        "text": "",
+        "href": "/cs/text/"
+      },
+      {
+        "text": "RDF",
+        "href": "/cs/rdf/"
+      },
+      {
+        "text": "XML",
+        "href": "/cs/xml/"
+      },
+      {
+        "text": "",
+        "href": "/cs/namespace/"
+      },
+      {
+        "text": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      }
+    ]
+  },
+  {
+    "text": "CSGitHub",
+    "href": ""
+  },
+  {
+    "text": "",
+    "menu": [
+      {
+        "text": "",
+        "href": "/cs/"
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": "/cs/"
+      }
+    ]
+  }
+]
