@@ -1,11 +1,20 @@
 {
     "term_index": "Index termínů",
+    "term_indices": "Indexy termínů",
+    "index_by_term_name": "Index podle názvu termínu",
+    "index_by_label": "Index podle štítku",
+    "see_also_index_by_label": "(Viz také [3.2 Index podle štítku](#32-index-by-label))",
+    "see_also_index_by_term_name": "(Viz také [3.1 Index podle názvu termínu](#31-index-by-term-name))",
+    "classes": "Třídy",
     "vocabulary": "Slovník",
     "term_name": "Název termínu",
+    "term_iri": "Termín IRI",
     "modified": "Změněno",
+    "term_version_iri": "Verze termínu IRI",
     "label": "Štítek",
     "definition": "Definice",
     "notes": "Poznámky",
+    "controlled_value": "Řízená hodnota",
     "usage": "Použití",
     "examples": "Příklady",
     "abcd_equivalence": "ABCD ekvivalence",
@@ -13,5 +22,9 @@
     "type": "Typ",
     "property": "Vlastnost",
     "class": "Třída",
-    "concept": "Koncept"
+    "concept": "Koncept",
+    "executive_committee_decision": "Rozhodnutí výkonného výboru",
+    "term_deprecated": "Tento termín je zastaralý a již by se neměl používat.",
+    "term_replaced_by": "Je nahrazen",
+    "has_broader_concept": "Má širší pojem"
 }
