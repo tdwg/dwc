@@ -5,25 +5,25 @@ to create the terms/index.md file, which mostly contains html.
 
 # Stručná referenční příručka k Darwin Core
 
-This document is intended to be an easy-to-read reference of the currently (as of 2023-09-18) recommended terms maintained as part of the [Darwin Core standard](https://www.tdwg.org/standards/dwc/) and is maintained by the [Darwin Core Maintenance Group](https://www.tdwg.org/community/dwc/).
+Tento dokument má sloužit jako přehledný odkaz na aktuálně (k 2023-09-18) doporučené termíny udržované jako součást standardu [Darwin Core](https://www.tdwg.org/standards/dwc/) a je spravován skupinou [Darwin Core Maintenance Group](https://www.tdwg.org/community/dwc/).
 
-**Need help?** Read more about how to use Darwin Core in the [Darwin Core Questions & Answers site](https://github.com/tdwg/dwc-qa/blob/master/README.md). Máš další otázky? Submit a new issue (question/problem) to the [dwc-qa issues page in GitHub](https://github.com/tdwg/dwc-qa/issues), or use the [form](https://tinyurl.com/darwin-qa). See the bottom of this document for [how to cite Darwin Core](https://dwc.tdwg.org/terms/#cite-darwin-core)."
+**Potřebujete pomoc?** Více informací o používání Darwin Core najdete na stránce [Darwin Core Questions & Answers](https://github.com/tdwg/dwc-qa/blob/master/README.md). Máš další otázky? Odešlete novou otázku (dotaz/problém) na [dwc-qa issues page in GitHub](https://github.com/tdwg/dwc-qa/issues) nebo použijte [formulář](https://tinyurl.com/darwin-qa). Informace o tom, [jak citovat Darwin Core](https://dwc.tdwg.org/terms/#cite-darwin-core), naleznete na konci tohoto dokumentu."
 
-**Want to contribute?** For information about how to contribute to the Darwin Core Standard, including how to propose changes, see the [Guidelines for contributing](https://github.com/tdwg/dwc/blob/master/.github/CONTRIBUTING.md).
+**Chcete přispět?** Informace o tom, jak přispět k Darwin Core Standard, včetně toho, jak navrhovat změny, najdete v [Pokynech pro přispívání](https://github.com/tdwg/dwc/blob/master/.github/CONTRIBUTING.md).
 
-This page is not part of the standard, but combines the normative term names and definitions with the non-normative comments and examples that are meant to help people to use the terms consistently. Definitions, comments, and examples may include namespace abbreviations (e.g., "dwc:"). These are included to show that the meaning for the word it is attached to very specifically means the term as defined in that namespace. Thus, dwc:Event means Event as defined by Darwin Core at https://dwc.tdwg.org/terms/#event. Capitalized terms that follow a namespace abbreviation, such as dwc:Occurrence, are Darwin Core class terms, which are a special category of terms used to group sets of property terms (terms that being with lower case names that follow the namespace abbreviation, e.g., dwc:eventID) for convenience. Comprehensive metadata for current and obsolete terms in human readable form are found in the document [List of Darwin Core terms](../list/).
+Tato stránka není součástí normy, ale kombinuje normativní názvy a definice termínů s nenormativními komentáři a příklady, které mají pomoci lidem používat termíny konzistentně. Definice, komentáře a příklady mohou obsahovat zkratky jmenného prostoru (např. "dwc:"). Ty jsou uvedeny proto, aby bylo zřejmé, že význam slova, ke kterému je připojen, znamená zcela konkrétně termín definovaný v daném jmenném prostoru. Tedy dwc:Event znamená Událost podle definice Darwin Core na adrese https://dwc.tdwg.org/terms/#event. Termíny psané velkými písmeny, které následují za zkratkou jmenného prostoru, např. dwc:Occurrence, jsou termíny třídy Darwin Core, což je speciální kategorie termínů, která se používá k seskupování množin termínů vlastností (termíny s malými písmeny, které následují za zkratkou jmenného prostoru, např. dwc:eventID) pro přehlednost. Komplexní metadata pro současné a zastaralé termíny v čitelné podobě najdete v dokumentu [Seznam termínů Darwin Core](../list/).
 
-Additional [files with just the current term names](https://github.com/tdwg/dwc/tree/master/dist) and a [file with the full term history](https://github.com/tdwg/dwc/blob/master/vocabulary/term_versions.csv) can be found in the [Darwin Core repository](https://github.com/tdwg/dwc).
+Další [soubory obsahující pouze aktuální názvy termínů](https://github.com/tdwg/dwc/tree/master/dist) a [soubor s úplnou historií termínů](https://github.com/tdwg/dwc/blob/master/vocabulary/term_versions.csv) lze nalézt v [úložišti Darwin Core](https://github.com/tdwg/dwc).
 
 {% for class_group in class_groups %}
 
 ## {{ class_group.label }}
 
 {% if class_group.isRecordLevel %}
-This category contains terms that are generic in that they might apply to any type of record in a dataset.
+Tato kategorie obsahuje pojmy, které jsou obecné, protože se mohou vztahovat na jakýkoli typ záznamu v datové sadě.
 {% endif %}
 {% if class_group.label == 'UseWithIRI' %}
-For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https://dwc.tdwg.org/rdf/#25-terms-in-the-dwciri-namespace-normative).
+Další informace o `UseWithIRI` naleznete v [oddílu 2.5 Příručky RDF](https://dwc.tdwg.org/rdf/#25-terms-in-the-dwciri-namespace-normative).
 {% endif %}
 
 <div class="my-4">
@@ -38,7 +38,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
 
 <table class="table">
   <tbody>
-    <tr class="table-primary"><th colspan="2">{{ class_group.label }} <span class="badge bg-primary float-end">Class</span></th></tr>
+    <tr class="table-primary"><th colspan="2">{{ class_group.label }} <span class="badge bg-primary float-end">Třída</span></th></tr>
     <tr><td>Identifikátor</td><td><a href="{{ class_group.iri }}">{{ class_group.iri }}</a></td></tr>
     <tr><td>Definice</td><td>{{ class_group.definition }}</td></tr>
     <tr><td>Komentáře</td><td>{{ class_group.comments }}</td></tr>
