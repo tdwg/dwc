@@ -23,16 +23,13 @@ Latest version
 Abstract
 : Darwin Core is a vocabulary standard for transmitting information about biodiversity. This document lists all terms in namespaces currently used in the vocabulary.
 
-Contributors
-: {contributors}
+Contributeurs : {contributors}
 
-Creator
-: {creator}
+Créateur : {creator}
 
-Bibliographic citation
-: {creator}. {year}. {document_title}. {publisher}. <{current_iri}{ratification_date}>
+Citation : {creator}. {year}. {document_title}. {publisher}. <{current_iri}{ratification_date}>
 
-## 1 Introduction (Informative)
+## 1 Introduction (À titre informatif)
 
 This document contains terms that are part of the most recent version of the Darwin Core vocabulary (<http://rs.tdwg.org/version/dwc/{ratification_date}>).
 
