@@ -1,6 +1,11 @@
 {
+    "term_index": "Index termínů",
+    "vocabulary": "Slovník",
     "term_name": "Název termínu",
+    "modified": "Změněno",
+    "label": "Štítek",
     "definition": "Definice",
+    "notes": "Poznámky",
     "usage": "Použití",
     "examples": "Příklady",
     "abcd_equivalence": "ABCD ekvivalence",
