@@ -26,5 +26,6 @@
     "executive_committee_decision": "Rozhodnutí výkonného výboru",
     "term_deprecated": "Tento termín je zastaralý a již by se neměl používat.",
     "term_replaced_by": "Je nahrazen",
-    "has_broader_concept": "Má širší pojem"
+    "has_broader_concept": "Má širší pojem",
+    "record-level": "Úroveň záznamu"
 }
