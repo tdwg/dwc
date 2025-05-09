@@ -38,23 +38,23 @@ Tento dokument obsahuje termíny, které jsou součástí nejnovější verze sl
 
 Tento dokument obsahuje termíny ve čtyřech jmenných prostorech, které obsahují doporučené termíny: `dwc:`, `dwciri:`, `dc:` a `dcterms:`. Některé termíny v těchto jmenných prostorech jsou však zastaralé nebo překonané a neměly by se již používat. Vyřazení nebo nahrazení je uvedeno v metadatech termínu. Jmenné prostory, které obsahují pouze zastaralé termíny, nejsou v tomto dokumentu zahrnuty, ale metadata o těchto termínech lze získat dereferencováním jejich IRI.
 
-For a simplified list that contains only the currently recommended terms, see the [Darwin Core Quick Reference Guide](../terms/).
+Zjednodušený seznam, který obsahuje pouze aktuálně doporučené termíny, naleznete v [Stručná referenční příručka Darwin Core](../terms/).
 
 ### 1.1 Status obsahu tohoto dokumentu
 
-Sections 1 and 3 are non-normative.
+Oddíly 1 a 3 nejsou normativní.
 
-Section 2 is normative.
+Oddíl 2 je normativní.
 
-In Section 4, the values of the `Term IRI` and `Definition` are normative. Hodnoty `Název termínu` nejsou normativní, ačkoli lze očekávat, že prefix zkratky jmenného prostoru je prefix běžně používaný pro jmenný prostor termínu.  `Label` and the values of all other properties (such as `Examples` and `Notes`) are non-normative.
+V oddíle 4 jsou hodnoty `Term IRI` a `Definice` normativní. Hodnoty `Název termínu` nejsou normativní, ačkoli lze očekávat, že prefix zkratky jmenného prostoru je prefix běžně používaný pro jmenný prostor termínu.  `Štítek` a hodnoty všech ostatních vlastností (například `Příklady` a `Poznámky`) nejsou normativní.
 
 ### 1.2 Klíčová slova RFC 2119
 
-The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [BCP 14](https://www.rfc-editor.org/info/bcp14) [\[RFC 2119\]](https://datatracker.ietf.org/doc/html/rfc2119) and [\[RFC 8174\]](https://datatracker.ietf.org/doc/html/rfc8174) when, and only when, they appear in all capitals, as shown here.
+Klíčová slova "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY" a "OPTIONAL" v tomto dokumentu je třeba interpretovat tak, jak je popsáno v [BCP 14](https://www.rfc-editor.org/info/bcp14) [\[RFC 2119\]](https://datatracker.ietf.org/doc/html/rfc2119) a [\[RFC 8174\]](https://datatracker.ietf.org/doc/html/rfc8174), pokud a pouze pokud jsou uvedena velkými písmeny, jak je uvedeno zde.
 
-### 1.3 Namespace abbreviations
+### 1.3 Zkratky jmenného prostoru
 
-The following namespace abbreviations are used in this document:
+V tomto dokumentu se používají následující zkratky jmenných prostorů:
 
 | zkratka                  | IRI                                                                              |
 | ------------------------ | -------------------------------------------------------------------------------- |
@@ -65,6 +65,6 @@ The following namespace abbreviations are used in this document:
 
 ## 2 Použití termínů
 
-Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#143-use-of-darwin-core-terms-in-rdf-normative), terms in the `dwciri:` namespace MUST be used with IRI values. Terms in the `dwc:` and `dc:` namespaces are generally expected to have string literal values. Values for terms in the `dcterms:` namespace will depend on the details of the term. See [Section 3 of the Darwin Core RDF Guide](../rdf/#3-term-reference-normative) for details.
+Vzhledem k požadavkům [oddílu 1.4.3 Průvodce Darwin Core RDF](../rdf/#143-use-of-darwin-core-terms-in-rdf-normative) se termíny ve jmenném prostoru `dwciri:` MUSÍ používat s hodnotami IRI. Od termínů ve jmenných prostorech `dwc:` a `dc:` se obecně očekává, že budou mít řetězcové literální hodnoty. Hodnoty termínů ve jmenném prostoru `dcterms:` závisí na podrobnostech termínu. Podrobnosti naleznete v [oddílu 3 Darwin Core RDF Guide](../rdf/#3-term-reference-normative).
 
-## 3 Term indices
+## 3 Indexy termínů
