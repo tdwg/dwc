@@ -41,11 +41,11 @@ Bibliografická citace
 
 ## 1. Úvod
 
-This document includes terms intended to be used as a controlled value for Darwin Core terms with local name `pathway`. Podrobnosti a zdůvodnění viz Groom et al. 2019. Zlepšení Darwin Core pro výzkum a řízení nepůvodních druhů. <https://doi.org/10.3897/biss.3.38084>
+Tento dokument obsahuje termíny určené k použití jako řízená hodnota pro termíny Darwin Core s místním názvem `pathway`. Podrobnosti a zdůvodnění viz Groom et al. 2019. Zlepšení Darwin Core pro výzkum a řízení nepůvodních druhů. <https://doi.org/10.3897/biss.3.38084>
 
 ### 1.1 Status obsahu tohoto dokumentu
 
-V oddíle 4 jsou hodnoty `Term IRI`, `Definice` a `Kontrolovaná hodnota` normativní. Hodnota `Použití` (pokud pro daný termín existuje) je normativní.  The value of `Has broader concept` is normative. Hodnoty `Název termínu` nejsou normativní, ačkoli lze očekávat, že prefix zkratky jmenného prostoru je prefix běžně používaný pro jmenný prostor termínu.  `Štítek` a hodnoty všech ostatních vlastností (např. `Poznámky`) nejsou normativní.
+V oddíle 4 jsou hodnoty `Term IRI`, `Definice` a `Kontrolovaná hodnota` normativní. Hodnota `Použití` (pokud pro daný termín existuje) je normativní.  Hodnota `Má širší pojem` je normativní. Hodnoty `Název termínu` nejsou normativní, ačkoli lze očekávat, že prefix zkratky jmenného prostoru je prefix běžně používaný pro jmenný prostor termínu.  `Štítek` a hodnoty všech ostatních vlastností (např. `Poznámky`) nejsou normativní.
 
 ### 1.2 Klíčová slova RFC 2119
 
@@ -53,6 +53,6 @@ Klíčová slova "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD",
 
 ## 2 Použití termínů
 
-Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://dwc.tdwg.org/rdf/#143-use-of-darwin-core-terms-in-rdf-normative), term IRIs MUST be used as values of `dwciri:pathway`. Controlled value strings MUST be used as values of `dwc:pathway`.
+Vzhledem k požadavkům [oddílu 1.4.3 Darwin Core RDF Guide](https://dwc.tdwg.org/rdf/#143-use-of-darwin-core-terms-in-rdf-normative) se jako hodnoty `dwciri:pathway` MUSÍ používat termín IRI. Řetězce řízených hodnot MUSÍ být použity jako hodnoty `dwc:pathway`.
 
 ## 3 Index termínů
