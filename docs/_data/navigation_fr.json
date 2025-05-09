@@ -1,0 +1,112 @@
+[
+  {
+    "text": "Accueil",
+    "href": "/fr/"
+  },
+  {
+    "text": "Termes",
+    "menu": [
+      {
+        "text": "Darwin Core",
+        "href": "/fr/list/"
+      },
+      {
+        "text": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": ""
+      },
+      {
+        "text": "",
+        "href": "/fr/em/"
+      },
+      {
+        "text": "",
+        "href": "/fr/doe/"
+      },
+      {
+        "text": "",
+        "href": "/fr/pw/"
+      }
+    ]
+  },
+  {
+    "text": "Guides",
+    "menu": [
+      {
+        "text": "",
+        "href": "/fr/terms/"
+      },
+      {
+        "text": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": ""
+      },
+      {
+        "text": "",
+        "href": "/fr/simple/"
+      },
+      {
+        "text": "",
+        "href": "/fr/text/"
+      },
+      {
+        "text": "RDF",
+        "href": "/fr/rdf/"
+      },
+      {
+        "text": "XML",
+        "href": "/fr/xml/"
+      },
+      {
+        "text": "",
+        "href": "/fr/namespace/"
+      },
+      {
+        "text": ""
+      },
+      {
+        "text": "Questions & Réponses",
+        "href": ""
+      }
+    ]
+  },
+  {
+    "text": "",
+    "href": ""
+  },
+  {
+    "text": "",
+    "menu": [
+      {
+        "text": "",
+        "href": "/fr/"
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      }
+    ]
+  }
+]
