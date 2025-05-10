@@ -11,18 +11,18 @@
         "href": "/fr/list/"
       },
       {
-        "text": ""
+        "text": "---"
       },
       {
         "text": "",
-        "href": ""
+        "href": "https://chrono.tdwg.org/list/"
       },
       {
         "text": "Extension Humboldt",
-        "href": ""
+        "href": "https://eco.tdwg.org/list/"
       },
       {
-        "text": ""
+        "text": "---"
       },
       {
         "text": "",
@@ -46,18 +46,18 @@
         "href": "/fr/terms/"
       },
       {
-        "text": ""
+        "text": "---"
       },
       {
         "text": "",
-        "href": ""
+        "href": "https://chrono.tdwg.org/terms/"
       },
       {
         "text": "",
-        "href": ""
+        "href": "https://eco.tdwg.org/terms/"
       },
       {
-        "text": ""
+        "text": "---"
       },
       {
         "text": "",
@@ -80,32 +80,32 @@
         "href": "/fr/namespace/"
       },
       {
-        "text": ""
+        "text": "---"
       },
       {
         "text": "Questions & Réponses",
-        "href": ""
+        "href": "https://github.com/tdwg/dwc-qa/blob/master/README.md"
       }
     ]
   },
   {
-    "text": "",
-    "href": ""
+    "text": "GitHub",
+    "href": "https://github.com/tdwg/dwc"
   },
   {
-    "text": "",
+    "text": "文A",
     "menu": [
       {
-        "text": "",
+        "text": "English",
+        "href": "/"
+      },
+      {
+        "text": "Čeština",
+        "href": "/cs/"
+      },
+      {
+        "text": "Français",
         "href": "/fr/"
-      },
-      {
-        "text": "",
-        "href": ""
-      },
-      {
-        "text": "",
-        "href": ""
       }
     ]
   }
