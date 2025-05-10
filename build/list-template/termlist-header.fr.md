@@ -13,8 +13,7 @@ Part of TDWG Standard
 This version
 : <{current_iri}{ratification_date}>
 
-Latest version
-: <{current_iri}>
+Dernière version : <{current_iri}>
 
 {previous_version_slot}
 
