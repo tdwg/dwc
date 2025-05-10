@@ -33,7 +33,7 @@
         "href": "/cs/doe/"
       },
       {
-        "text": "",
+        "text": "Řízený slovník Pathway",
         "href": "/cs/pw/"
       }
     ]
@@ -42,7 +42,7 @@
     "text": "Návody",
     "menu": [
       {
-        "text": "Řízený slovník Pathway",
+        "text": "Stručná referenční příručka k Darwin Core",
         "href": "/cs/terms/"
       },
       {
