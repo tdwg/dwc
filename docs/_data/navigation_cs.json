@@ -11,18 +11,18 @@
         "href": "/cs/list/"
       },
       {
-        "text": ""
+        "text": "---"
       },
       {
         "text": "Rozšíření chronometrického věku",
-        "href": ""
+        "href": "https://chrono.tdwg.org/list/"
       },
       {
         "text": "Rozšíření Humboldt",
-        "href": ""
+        "href": "https://eco.tdwg.org/list/"
       },
       {
-        "text": ""
+        "text": "---"
       },
       {
         "text": "Řízený slovník Způsob zavlečení",
@@ -46,18 +46,18 @@
         "href": "/cs/terms/"
       },
       {
-        "text": ""
+        "text": "---"
       },
       {
         "text": "Rychlý odkaz na rozšíření chronometrického věku",
-        "href": ""
+        "href": "https://chrono.tdwg.org/terms/"
       },
       {
         "text": "Rychlý odkaz na rozšíření Humboldt Extension",
-        "href": ""
+        "href": "https://eco.tdwg.org/terms/"
       },
       {
-        "text": ""
+        "text": "---"
       },
       {
         "text": "Jednoduché Darwin Core",
@@ -80,32 +80,32 @@
         "href": "/cs/namespace/"
       },
       {
-        "text": ""
+        "text": "---"
       },
       {
         "text": "Otázky a odpovědi",
-        "href": ""
+        "href": "https://github.com/tdwg/dwc-qa/blob/master/README.md"
       }
     ]
   },
   {
-    "text": "",
-    "href": ""
+    "text": "GitHub",
+    "href": "https://github.com/tdwg/dwc"
   },
   {
-    "text": "",
+    "text": "文A",
     "menu": [
       {
-        "text": "",
+        "text": "English",
         "href": "/"
       },
       {
-        "text": "",
-        "href": ""
+        "text": "Čeština",
+        "href": "/cs/"
       },
       {
-        "text": "",
-        "href": ""
+        "text": "Français",
+        "href": "/fr/"
       }
     ]
   }
