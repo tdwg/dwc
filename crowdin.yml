@@ -62,8 +62,8 @@ files:
         ru-RU: ru
         zh-CN: zh-Hans
         zh-TW: zh-Hant
-  - source: /build/*/*.en.json
-    translation: /%original_path%/%file_name%.%locale%.json
+  - source: /build/*.en.json
+    translation: /build/%file_name%.%locale%.json
     translation_replace:
       .en: ''
     type: json
@@ -267,9 +267,9 @@ files:
         ru-RU: ru
         zh-CN: zh-Hans
         zh-TW: zh-Hant
-  - source: /docs/_data/navigation.yml
-    translation: /%original_path%/%file_name%_%locale%.yml
-    type: yaml
+  - source: /docs/_data/navigation.json
+    translation: /%original_path%/%file_name%_%locale%.json
+    type: json
     languages_mapping:
       locale:
         ar: ar
