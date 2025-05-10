@@ -1,0 +1,112 @@
+[
+  {
+    "text": "Home",
+    "href": "/"
+  },
+  {
+    "text": "Terms",
+    "menu": [
+      {
+        "text": "Darwin Core",
+        "href": "/list/"
+      },
+      {
+        "text": "---"
+      },
+      {
+        "text": "Chronometric Age Extension",
+        "href": "https://chrono.tdwg.org/list/"
+      },
+      {
+        "text": "Humboldt Extension",
+        "href": "https://eco.tdwg.org/list/"
+      },
+      {
+        "text": "---"
+      },
+      {
+        "text": "Establishment Means Controlled Vocabulary",
+        "href": "/em/"
+      },
+      {
+        "text": "Degree of Establishment Controlled Vocabulary",
+        "href": "/doe/"
+      },
+      {
+        "text": "Pathway Controlled Vocabulary",
+        "href": "/pw/"
+      }
+    ]
+  },
+  {
+    "text": "Guides",
+    "menu": [
+      {
+        "text": "Darwin Core Quick Reference",
+        "href": "/terms/"
+      },
+      {
+        "text": "---"
+      },
+      {
+        "text": "Chronometric Age Extension Quick Reference",
+        "href": "https://chrono.tdwg.org/terms/"
+      },
+      {
+        "text": "Humboldt Extension Quick Reference",
+        "href": "https://eco.tdwg.org/terms/"
+      },
+      {
+        "text": "---"
+      },
+      {
+        "text": "Simple Darwin Core",
+        "href": "/simple/"
+      },
+      {
+        "text": "Text (Darwin Core Archive)",
+        "href": "/text/"
+      },
+      {
+        "text": "RDF",
+        "href": "/rdf/"
+      },
+      {
+        "text": "XML",
+        "href": "/xml/"
+      },
+      {
+        "text": "Namespace policy",
+        "href": "/namespace/"
+      },
+      {
+        "text": "---"
+      },
+      {
+        "text": "Questions & Answers",
+        "href": "https://github.com/tdwg/dwc-qa/blob/master/README.md"
+      }
+    ]
+  },
+  {
+    "text": "GitHub",
+    "href": "https://github.com/tdwg/dwc"
+  },
+  {
+    "text": "文A",
+    "menu": [
+      {
+        "text": "English",
+        "href": "/"
+      },
+      {
+        "text": "Čeština",
+        "href": "/cs/"
+      },
+      {
+        "text": "Français",
+        "href": "/fr/"
+      }
+    ]
+  }
+]

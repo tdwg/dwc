@@ -9,7 +9,9 @@ __pycache__/
 .ipynb_checkpoints
 
 # Jekyll
+.jekyll-cache
 docs/_site/*
+_site/*
 
 # All built extension xml files
 ext/

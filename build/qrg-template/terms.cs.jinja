@@ -1,0 +1,84 @@
+{#
+This template is NOT used by jekyll, but by the Darwin Core build script build-termlist.py
+to create the terms/index.md file, which mostly contains html.
+\#}
+
+# Stručná referenční příručka k Darwin Core
+
+Tento dokument má sloužit jako přehledný odkaz na aktuálně (k 2023-09-18) doporučené termíny udržované jako součást standardu [Darwin Core](https://www.tdwg.org/standards/dwc/) a je spravován skupinou [Darwin Core Maintenance Group](https://www.tdwg.org/community/dwc/).
+
+**Potřebujete pomoc?** Více informací o používání Darwin Core najdete na stránce [Darwin Core Questions & Answers](https://github.com/tdwg/dwc-qa/blob/master/README.md). Máš další otázky? Odešlete novou otázku (dotaz/problém) na [dwc-qa issues page in GitHub](https://github.com/tdwg/dwc-qa/issues) nebo použijte [formulář](https://tinyurl.com/darwin-qa). Informace o tom, [jak citovat Darwin Core](https://dwc.tdwg.org/terms/#cite-darwin-core), naleznete na konci tohoto dokumentu."
+
+**Chcete přispět?** Informace o tom, jak přispět k Darwin Core Standard, včetně toho, jak navrhovat změny, najdete v [Pokynech pro přispívání](https://github.com/tdwg/dwc/blob/master/.github/CONTRIBUTING.md).
+
+Tato stránka není součástí normy, ale kombinuje normativní názvy a definice termínů s nenormativními komentáři a příklady, které mají pomoci lidem používat termíny konzistentně. Definice, komentáře a příklady mohou obsahovat zkratky jmenného prostoru (např. "dwc:"). Ty jsou uvedeny proto, aby bylo zřejmé, že význam slova, ke kterému je připojen, znamená zcela konkrétně termín definovaný v daném jmenném prostoru. Tedy dwc:Event znamená Událost podle definice Darwin Core na adrese https://dwc.tdwg.org/terms/#event. Termíny psané velkými písmeny, které následují za zkratkou jmenného prostoru, např. dwc:Occurrence, jsou termíny třídy Darwin Core, což je speciální kategorie termínů, která se používá k seskupování množin termínů vlastností (termíny s malými písmeny, které následují za zkratkou jmenného prostoru, např. dwc:eventID) pro přehlednost. Komplexní metadata pro současné a zastaralé termíny v čitelné podobě najdete v dokumentu [Seznam termínů Darwin Core](../list/).
+
+Další [soubory obsahující pouze aktuální názvy termínů](https://github.com/tdwg/dwc/tree/master/dist) a [soubor s úplnou historií termínů](https://github.com/tdwg/dwc/blob/master/vocabulary/term_versions.csv) lze nalézt v [úložišti Darwin Core](https://github.com/tdwg/dwc).
+
+{% for class_group in class_groups %}
+
+## {{ class_group.label }}
+
+{% if class_group.isRecordLevel %}
+Tato kategorie obsahuje pojmy, které jsou obecné, protože se mohou vztahovat na jakýkoli typ záznamu v datové sadě.
+{% endif %}
+{% if class_group.label == 'UseWithIRI' %}
+Další informace o `UseWithIRI` naleznete v [oddílu 2.5 Příručky RDF](https://dwc.tdwg.org/rdf/#25-terms-in-the-dwciri-namespace-normative).
+{% endif %}
+
+<div class="my-4">
+  {% for term in class_group.terms %}
+    <a class="btn btn-sm btn-outline-primary m-1" href="#{{ term.namespace }}:{{ term.label }}">{{ term.label }}</a>
+  {% endfor %}
+</div>
+
+{% if not class_group.isRecordLevel and class_group.label != 'UseWithIRI' %}
+{# Class #}
+{% set examples = class_group.examples.split("; ") %}
+
+<table class="table">
+  <tbody>
+    <tr class="table-primary"><th colspan="2">{{ class_group.label }} <span class="badge bg-primary float-end">Třída</span></th></tr>
+    <tr><td>Identifikátor</td><td><a href="{{ class_group.iri }}">{{ class_group.iri }}</a></td></tr>
+    <tr><td>Definice</td><td>{{ class_group.definition }}</td></tr>
+    <tr><td>Komentáře</td><td>{{ class_group.comments }}</td></tr>
+    <tr><td>Příklady</td><td>{% if examples | length == 1 %}{{ examples | first }}{% else %}<ul class="list-group list-group-flush">{% for example in examples %}<li class="list-group-item">{{ example }}</li>{% endfor %}</ul>{% endif %}</td></tr>
+  </tbody>
+</table>
+{%endif %}
+
+{% for term in class_group.terms %}
+{# Term #}
+
+<p class="invisible"><span id="{{ term.namespace }}:{{ term.label }}"></span>
+  {% if term.namespace != "dwciri" %}
+  <span id="{{ term.label }}"></span>
+  {% endif %}
+</p>
+{% set examples = term.examples.split("; ") %}
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">{{ term.label }}</th></tr>
+    <tr><td>Identifikátor</td><td><a href="{{ term.iri }}">{{ term.iri }}</a></td></tr>
+    <tr><td>Definice</td><td>{{ term.definition }}</td></tr>
+    <tr><td>Komentáře</td><td>{{ term.comments }}</td></tr>
+    <tr><td>Příklady</td><td>{% if examples | length == 1 %}{{ examples | first }}{% else %}<ul class="list-group list-group-flush">{% for example in examples %}<li class="list-group-item">{{ example }}</li>{% endfor %}</ul>{% endif %}</td></tr>
+  </tbody>
+</table>
+{% endfor %}
+
+{% endfor %}
+
+## Citace Darwin Core
+
+Chcete-li citovat Darwin Core obecně, použijte recenzovaný článek o Darwin Core:
+
+> Wieczorek J, Bloom D, Guralnick R, Blum S, Döring M, et al. (2012) Darwin Core: An Evolving Community-Developed Biodiversity Data Standard. PLoS ONE 7(1): e29715. <https://doi.org/10.1371/journal.pone.0029715>
+
+Chcete-li citovat dokument standardu, na kterém je tato stránka postavena, použijte následující:
+
+> Darwin Core Maintenance Group. 2021. List of Darwin Core terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/list/>
+
+Chcete-li citovat konkrétně tento dokument, použijte následující:
+
+> Darwin Core Maintenance Group. 2021. Stručná referenční příručka k Darwin Core. Biodiversity Information Standards (TDWG). <https://dwc.tdwg.org/terms/>

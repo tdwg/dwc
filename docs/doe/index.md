@@ -58,6 +58,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://r
 ## 3 Term index
 
 
+
 [captive (category B1)](#dwcdoe_d002) |
 [casual (category C1)](#dwcdoe_d006) |
 [colonising (category D1)](#dwcdoe_d009) |
@@ -75,7 +76,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://r
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcdoe_d"></a>Term Name  dwcdoe:d</th>
+			<th colspan="2"><a id="dwcdoe_d"></a>Term Name dwcdoe:d</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -113,7 +114,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://r
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcdoe_d001"></a>Term Name  dwcdoe:d001</th>
+			<th colspan="2"><a id="dwcdoe_d001"></a>Term Name dwcdoe:d001</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -159,7 +160,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://r
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcdoe_d002"></a>Term Name  dwcdoe:d002</th>
+			<th colspan="2"><a id="dwcdoe_d002"></a>Term Name dwcdoe:d002</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -209,7 +210,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://r
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcdoe_d003"></a>Term Name  dwcdoe:d003</th>
+			<th colspan="2"><a id="dwcdoe_d003"></a>Term Name dwcdoe:d003</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -255,7 +256,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://r
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcdoe_d004"></a>Term Name  dwcdoe:d004</th>
+			<th colspan="2"><a id="dwcdoe_d004"></a>Term Name dwcdoe:d004</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -301,7 +302,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://r
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcdoe_d005"></a>Term Name  dwcdoe:d005</th>
+			<th colspan="2"><a id="dwcdoe_d005"></a>Term Name dwcdoe:d005</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -347,7 +348,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://r
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcdoe_d006"></a>Term Name  dwcdoe:d006</th>
+			<th colspan="2"><a id="dwcdoe_d006"></a>Term Name dwcdoe:d006</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -393,7 +394,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://r
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcdoe_d007"></a>Term Name  dwcdoe:d007</th>
+			<th colspan="2"><a id="dwcdoe_d007"></a>Term Name dwcdoe:d007</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -439,7 +440,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://r
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcdoe_d008"></a>Term Name  dwcdoe:d008</th>
+			<th colspan="2"><a id="dwcdoe_d008"></a>Term Name dwcdoe:d008</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -485,7 +486,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://r
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcdoe_d009"></a>Term Name  dwcdoe:d009</th>
+			<th colspan="2"><a id="dwcdoe_d009"></a>Term Name dwcdoe:d009</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -531,7 +532,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://r
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcdoe_d010"></a>Term Name  dwcdoe:d010</th>
+			<th colspan="2"><a id="dwcdoe_d010"></a>Term Name dwcdoe:d010</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -577,7 +578,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://r
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwcdoe_d011"></a>Term Name  dwcdoe:d011</th>
+			<th colspan="2"><a id="dwcdoe_d011"></a>Term Name dwcdoe:d011</th>
 		</tr>
 	</thead>
 	<tbody>
