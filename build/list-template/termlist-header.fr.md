@@ -10,8 +10,7 @@ Date de création : {created_date}
 Part of TDWG Standard
 : <{standard_iri}>
 
-This version
-: <{current_iri}{ratification_date}>
+Cette version : <{current_iri}{ratification_date}>
 
 Dernière version : <{current_iri}>
 
