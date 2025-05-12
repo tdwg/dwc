@@ -1,4 +1,4 @@
-# Seznam termínů pro řízený slovník Pathway
+# Seznam termínů Řízeného slovníku Pathway
 
 Název
 : Seznam termínů řízeného slovníku Pathway
