@@ -2,22 +2,19 @@
 
 Titre : Liste des termes du Darwin Core
 
-Date version issued
-: {ratification_date}
+Date de publication de la dernière mise à jour : {ratification_date}
 
 Date de création : {created_date}
 
-Part of TDWG Standard
-: <{standard_iri}>
+Fait partie du standard TDWG : <{standard_iri}>
 
 Cette version : <{current_iri}{ratification_date}>
 
 Dernière version : <{current_iri}>
 
-{previous_version_slot}
+Version précédente : {previous_version_slot}
 
-Abstract
-: Darwin Core is a vocabulary standard for transmitting information about biodiversity. This document lists all terms in namespaces currently used in the vocabulary.
+Résumé : le Darwin Core est un standard conçu pour la transmission de données sur la biodiversité. Ce document dresse la liste de tous les termes des espaces de noms actuellement utilisés dans le vocabulaire.
 
 Contributeurs : {contributors}
 
@@ -27,23 +24,23 @@ Citation : {creator}. {year}. {document_title}. {publisher}. <{current_iri}{rati
 
 ## 1 Introduction (À titre informatif)
 
-This document contains terms that are part of the most recent version of the Darwin Core vocabulary (<http://rs.tdwg.org/version/dwc/{ratification_date}>).
+Ce document contient les termes qui font partie de la version la plus récente du standard Darwin Core (<http://rs.tdwg.org/version/dwc/{ratification_date}>).
 
-This document includes terms in four namespaces that contain recommended terms: `dwc:`, `dwciri:`, `dc:`, and `dcterms:`. However, some terms in these namespaces are deprecated or superseded and should no longer be used. Deprecation or supersession is noted in the term metadata. Namespaces that contain only deprecated terms are not included in this document, but metadata about those terms can be retrieved by dereferencing their IRIs.
+Ce document inclut des termes dans quatre espaces de noms qui contiennent les termes recommandés `dwc:`, `dwciri:`, `dc:`, et `dcterms:`. Cependant, certains termes de ces espaces de noms sont obsolètes ou remplacés et ne doivent plus être utilisés. La dépréciation ou le remplacement d’un terme est indiqué dans les métadonnées de ce dernier. Les espaces de noms qui ne contiennent que des termes obsolètes ne sont pas inclus dans ce document, mais les métadonnées de ces termes peuvent être récupérées en déréférençant leurs IRI.
 
-For a simplified list that contains only the currently recommended terms, see the [Darwin Core Quick Reference Guide](../terms/).
+Pour une liste simplifiée ne contenant que les termes actuellement recommandés, voir le [Guide de référence rapide du Darwin Core](../terms/).
 
-### 1.1 Status of the content of this document
+### 1.1 Statut du contenu de ce document
 
-Sections 1 and 3 are non-normative.
+Les sections 1 et 3 ne sont pas normatives.
 
-Section 2 is normative.
+La section 2 est normative.
 
-In Section 4, the values of the `Term IRI` and `Definition` are normative. The values of `Term Name` are non-normative, although one can expect that the namespace abbreviation prefix is one commonly used for the term namespace.  `Label` and the values of all other properties (such as `Examples` and `Notes`) are non-normative.
+Dans la section 4, les valeurs de l'`IRI du terme` et de la `Définition` sont normatives. Les valeurs de `Nom du Terme` ne sont pas normatives, bien que l'on puisse s'attendre à ce que le préfixe de l'abréviation de l'espace de noms soit celui couramment utilisé pour l'espace de noms du terme.  `Label` and the values of all other properties (such as `Examples` and `Notes`) are non-normative.
 
-### 1.2 RFC 2119 key words
+### 1.2 Mots clés RFC 2119
 
-The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [BCP 14](https://www.rfc-editor.org/info/bcp14) [\[RFC 2119\]](https://datatracker.ietf.org/doc/html/rfc2119) and [\[RFC 8174\]](https://datatracker.ietf.org/doc/html/rfc8174) when, and only when, they appear in all capitals, as shown here.
+Les mots clés "MUST/DOIT", "MUST NOT/NE DOIT PAS", "REQUIRED/OBLIGATOIRE", "SHALL/DEVRA", "SHALL NOT/NE DEVRA PAS", "SHOULD/DEVRAIT", "SHOULD NOT/NE DEVRAIT PAS", "RECOMMENDED/RECOMMANDÉ", "MAY/POURRAIT", et "OPTIONAL/OPTIONNEL" dans ce document doivent être interprétés comme défini dans les références [BCP 14](https://www.rfc-editor.org/info/bcp14) [\[RFC 2119\]](https://datatracker.ietf.org/doc/html/rfc2119) et [\[RFC 8174\]](https://datatracker.ietf.org/doc/html/rfc8174)] uniquement lorsqu’ils apparaissent en majuscules, comme ci-dessus.
 
 ### 1.3 Namespace abbreviations
 
