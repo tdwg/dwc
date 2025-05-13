@@ -1,8 +1,10 @@
 {
     "term_index": "Index des termes",
+    "term_indices": "Index des termes",
     "index_by_term_name": "Index par Noms des Termes",
     "index_by_label": "Index par Labels",
     "see_also_index_by_label": "(Voir aussi [3.2 Index Par Labels](#32-index-by-label))",
+    "see_also_index_by_term_name": "(Voir aussi [3.1 Index par la dénomination des termes](#31-index-by-term-name))",
     "classes": "Classes",
     "vocabulary": "Vocabulaire",
     "term_name": "Nom du Terme",
@@ -24,5 +26,6 @@
     "executive_committee_decision": "Décision du Comité Exécutif",
     "term_deprecated": "Ce terme est obsolète et ne doit plus être utilisé.",
     "term_replaced_by": "Est remplacé par",
-    "has_broader_concept": "A pour concept plus large"
+    "has_broader_concept": "A pour concept plus large",
+    "record-level": "Niveau d'enregistrement"
 }
