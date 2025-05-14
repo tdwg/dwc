@@ -41,7 +41,7 @@ Bibliographic citation
 
 ## 1 Introduction
 
-This document includes terms intended to be used as a controlled value for Darwin Core terms with local name `degreeOfEstablishment`. Pour plus de détails et de précisions, voir Groom et al. 2019. Improving Darwin Core for research and management of alien species. <https://doi.org/10.3897/biss.3.38084>
+Ce document contient des termes destinés à être utilisés comme vocabulaire contrôlée pour les termes du Darwin Core portant le nom local `degreeOfEstablishment`. Pour plus de détails et de précisions, voir Groom et al. 2019. Improving Darwin Core for research and management of alien species. <https://doi.org/10.3897/biss.3.38084>
 
 ### 1.1 Statut du contenu de ce document
 
@@ -53,6 +53,6 @@ Les mots clés "MUST/DOIT", "MUST NOT/NE DOIT PAS", "REQUIRED/OBLIGATOIRE", "SHA
 
 ## 2 Utilisation des termes
 
-Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://rs.tdwg.org/dwc/terms/guides/rdf/#143-use-of-darwin-core-terms-in-rdf-normative), term IRIs MUST be used as values of `dwciri:degreeOfEstablishment`. Controlled value strings MUST be used as values of `dwc:degreeOfEstablishment`.
+Conformément aux exigences de la [Section 1.4.3 du Darwin Core RDF Guide](http://rs.tdwg.org/dwc/terms/guides/rdf/#143-use-of-darwin-core-terms-in-rdf-normative), les IRI des termes DOIVENT être utilisés comme valeurs de `dwciri:degreeOfEstablishment`. Des chaînes de caractères contrôlées DOIVENT être utilisées comme valeurs de `dwc:degreeOfEstablishment`.
 
 ## 3 Index des termes
