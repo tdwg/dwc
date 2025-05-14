@@ -3,27 +3,27 @@ This template is NOT used by jekyll, but by the Darwin Core build script build-t
 to create the terms/index.md file, which mostly contains html.
 \#}
 
-# Darwin Core Quick Reference Guide
+# Guide de Référence Rapide du Darwin Core
 
-This document is intended to be an easy-to-read reference of the currently (as of 2023-09-18) recommended terms maintained as part of the [Darwin Core standard](https://www.tdwg.org/standards/dwc/) and is maintained by the [Darwin Core Maintenance Group](https://www.tdwg.org/community/dwc/).
+Ce document se veut une référence facile à lire des termes actuellement (au 2023-09-18) recommandés dans le cadre du [standard Darwin Core](https://www.tdwg.org/standards/dwc/) et est maintenu par le [Groupe de maintenance du Darwin Core](https://www.tdwg.org/community/dwc/).
 
-**Need help?** Read more about how to use Darwin Core in the [Darwin Core Questions & Answers site](https://github.com/tdwg/dwc-qa/blob/master/README.md). Still have questions? Submit a new issue (question/problem) to the [dwc-qa issues page in GitHub](https://github.com/tdwg/dwc-qa/issues), or use the [form](https://tinyurl.com/darwin-qa). See the bottom of this document for [how to cite Darwin Core](https://dwc.tdwg.org/terms/#cite-darwin-core)."
+**Besoin d'aide ?** Pour en savoir plus sur l'utilisation du Darwin Core, consultez le [site de questions et réponses sur le Darwin Core](https://github.com/tdwg/dwc-qa/blob/master/README.md). Vous avez d'autres questions ? Soumettez un nouveau sujet (question/problème) à la [page des demandes dwc-qa sur GitHub](https://github.com/tdwg/dwc-qa/issues), ou utilisez le [formulaire](https://tinyurl.com/darwin-qa). Voir au bas de ce document [comment citer le Darwin Core](https://dwc.tdwg.org/terms/#cite-darwin-core)."
 
-**Want to contribute?** For information about how to contribute to the Darwin Core Standard, including how to propose changes, see the [Guidelines for contributing](https://github.com/tdwg/dwc/blob/master/.github/CONTRIBUTING.md).
+**Vous voulez contribuer** ? Pour plus d'informations sur la manière de contribuer au standard Darwin Core, y compris sur la manière de proposer des changements, voir le [guide pour contribuer](https://github.com/tdwg/dwc/blob/master/.github/CONTRIBUTING.md).
 
-This page is not part of the standard, but combines the normative term names and definitions with the non-normative comments and examples that are meant to help people to use the terms consistently. Definitions, comments, and examples may include namespace abbreviations (e.g., "dwc:"). These are included to show that the meaning for the word it is attached to very specifically means the term as defined in that namespace. Thus, dwc:Event means Event as defined by Darwin Core at https://dwc.tdwg.org/terms/#event. Capitalized terms that follow a namespace abbreviation, such as dwc:Occurrence, are Darwin Core class terms, which are a special category of terms used to group sets of property terms (terms that being with lower case names that follow the namespace abbreviation, e.g., dwc:eventID) for convenience. Comprehensive metadata for current and obsolete terms in human readable form are found in the document [List of Darwin Core terms](../list/).
+Cette page ne fait pas partie du standard, mais combine les noms et définitions des termes normatifs avec les commentaires et exemples non normatifs destinés à aider les utilisateurs à se servir des termes de manière cohérente. Les définitions, les commentaires et les exemples peuvent inclure des abréviations de l'espace de noms (par exemple, « dwc : »). Ils sont inclus pour montrer que le sens du mot auquel ils sont attachés signifie très précisément le terme tel qu'il est défini dans cet espace de noms. Ainsi, dwc:Event signifie Event tel que défini par Darwin Core à l'adresse https://dwc.tdwg.org/terms/#event. Les termes en majuscules qui suivent l'abréviation d'un espace de nommage, comme dwc:Occurrence, sont des termes de classes Darwin Core, qui constituent une catégorie spéciale de termes utilisés pour regrouper des ensembles de termes de propriétés (termes dont le nom en minuscules suit l'abréviation de l'espace de noms, par exemple dwc:eventID) pour des raisons pratiques. Des métadonnées complètes pour les termes actuels et obsolètes sous une forme humainement lisible se trouvent dans le document [Liste des termes du Darwin Core](../list/).
 
-Additional [files with just the current term names](https://github.com/tdwg/dwc/tree/master/dist) and a [file with the full term history](https://github.com/tdwg/dwc/blob/master/vocabulary/term_versions.csv) can be found in the [Darwin Core repository](https://github.com/tdwg/dwc).
+Des [fichiers supplémentaires contenant uniquement les noms des termes actuels](https://github.com/tdwg/dwc/tree/master/dist) et un [fichier avec l'historique complet des termes](https://github.com/tdwg/dwc/blob/master/vocabulary/term_versions.csv) sont disponibles dans le [dépôt Darwin Core](https://github.com/tdwg/dwc).
 
 {% for class_group in class_groups %}
 
 ## {{ class_group.label }}
 
 {% if class_group.isRecordLevel %}
-This category contains terms that are generic in that they might apply to any type of record in a dataset.
+Cette catégorie contient des termes génériques qui peuvent s'appliquer à n'importe quel type d'enregistrement dans un jeu de données.
 {% endif %}
 {% if class_group.label == 'UseWithIRI' %}
-For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https://dwc.tdwg.org/rdf/#25-terms-in-the-dwciri-namespace-normative).
+Pour plus d'information sur `UseWithIRI`, voir la [Section 2.5 du Guide RDF](https://dwc.tdwg.org/rdf/#25-terms-in-the-dwciri-namespace-normative).
 {% endif %}
 
 <div class="my-4">

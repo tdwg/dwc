@@ -14,7 +14,7 @@
         "text": "---"
       },
       {
-        "text": "",
+        "text": "Extension Âge Chronométrique",
         "href": "https://chrono.tdwg.org/list/"
       },
       {
@@ -25,15 +25,15 @@
         "text": "---"
       },
       {
-        "text": "",
+        "text": "Vocabulaire contrôlé des Moyens d'Implantation",
         "href": "/fr/em/"
       },
       {
-        "text": "",
+        "text": "Vocabulaire contrôlé du Degré d'Implantation",
         "href": "/fr/doe/"
       },
       {
-        "text": "",
+        "text": "Vocabulaire contrôlé de la Voie d'Accès",
         "href": "/fr/pw/"
       }
     ]
@@ -42,18 +42,18 @@
     "text": "Guides",
     "menu": [
       {
-        "text": "",
+        "text": "Guide de référence rapide du Darwin Core",
         "href": "/fr/terms/"
       },
       {
         "text": "---"
       },
       {
-        "text": "",
+        "text": "Guide de référence rapide de l'extension Âge Chronométrique",
         "href": "https://chrono.tdwg.org/terms/"
       },
       {
-        "text": "",
+        "text": "Guide de référence rapide de l'extension Humboldt",
         "href": "https://eco.tdwg.org/terms/"
       },
       {

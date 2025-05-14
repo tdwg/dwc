@@ -10,7 +10,7 @@ Le Darwin Core est un standard maintenu par le [Darwin Core Maintenance Group](h
 ## Pour commencer
 
 - [Guide de Référence Rapide](terms/)
-- Guides d'utilisation: Comment utiliser le Darwin Core comme [ Darwin Core Simple](simple/), [Texte (Darwin Core Archives)](text/), [XML](xml/) ou [RDF](rdf/)
+- Guides d'utilisation : Comment utiliser le Darwin Core comme [ Darwin Core Simple](simple/), [Texte (Darwin Core Archives)](text/), [XML](xml/) ou [RDF](rdf/)
 - [Dépôt GitHub](https://github.com/tdwg/dwc) : Lieu de maintenance du Darwin Core
-- [Normative term list](list/): the document containing the full history of normative Darwin Core term definitions
-- [Distribution files](https://github.com/tdwg/dwc/tree/master/dist): convenient files to start using Darwin Core
+- [Liste des termes normatifs](list/) : le document contenant l'historique complet des définitions des termes du Darwin Core
+- [Fichiers de partage](https://github.com/tdwg/dwc/tree/master/dist): fichiers pratiques pour commencer à utiliser le Darwin Core

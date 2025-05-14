@@ -1,26 +1,37 @@
 # Liste des termes du Darwin Core
 
-Titre : Liste des termes du Darwin Core
+Titre
+: Liste des termes du Darwin Core
 
-Date de publication de la dernière mise à jour : {ratification_date}
+Date de publication de la dernière mise à jour
+: {ratification_date}
 
-Date de création : {created_date}
+Date de création
+: {created_date}
 
-Fait partie du standard TDWG : <{standard_iri}>
+Fait partie du standard TDWG
+: <{standard_iri}>
 
-Cette version : <{current_iri}{ratification_date}>
+Cette version
+: <{current_iri}{ratification_date}>
 
-Dernière version : <{current_iri}>
+Dernière version
+: <{current_iri}>
 
-Version précédente : {previous_version_slot}
+Version précédente
+: {previous_version_slot}
 
-Résumé : le Darwin Core est un standard conçu pour la transmission de données sur la biodiversité. Ce document dresse la liste de tous les termes des espaces de noms actuellement utilisés dans le vocabulaire.
+Résumé :
+le Darwin Core est un standard conçu pour la transmission de données sur la biodiversité. Ce document dresse la liste de tous les termes des espaces de noms actuellement utilisés dans le vocabulaire.
 
-Contributeurs : {contributors}
+Contributeurs
+: {contributors}
 
-Créateur : {creator}
+Créateur :
+{creator}
 
-Citation : {creator}. {year}. {document_title}. {publisher}. <{current_iri}{ratification_date}>
+Citation :
+{creator}. {year}. {document_title}. {publisher}. <{current_iri}{ratification_date}>
 
 ## 1 Introduction (À titre informatif)
 
