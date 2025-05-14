@@ -1,0 +1,112 @@
+[
+  {
+    "text": "Domů",
+    "href": "/cs/"
+  },
+  {
+    "text": "Termíny",
+    "menu": [
+      {
+        "text": "Darwin Core",
+        "href": "/cs/list/"
+      },
+      {
+        "text": "---"
+      },
+      {
+        "text": "Rozšíření chronometrického věku",
+        "href": "https://chrono.tdwg.org/list/"
+      },
+      {
+        "text": "Rozšíření Humboldt",
+        "href": "https://eco.tdwg.org/list/"
+      },
+      {
+        "text": "---"
+      },
+      {
+        "text": "Řízený slovník Způsob zavlečení",
+        "href": "/cs/em/"
+      },
+      {
+        "text": "Řízený slovník stupně zavlečení",
+        "href": "/cs/doe/"
+      },
+      {
+        "text": "Řízený slovník Pathway",
+        "href": "/cs/pw/"
+      }
+    ]
+  },
+  {
+    "text": "Návody",
+    "menu": [
+      {
+        "text": "Stručná referenční příručka k Darwin Core",
+        "href": "/cs/terms/"
+      },
+      {
+        "text": "---"
+      },
+      {
+        "text": "Rychlý odkaz na rozšíření chronometrického věku",
+        "href": "https://chrono.tdwg.org/terms/"
+      },
+      {
+        "text": "Rychlý odkaz na rozšíření Humboldt Extension",
+        "href": "https://eco.tdwg.org/terms/"
+      },
+      {
+        "text": "---"
+      },
+      {
+        "text": "Jednoduché Darwin Core",
+        "href": "/cs/simple/"
+      },
+      {
+        "text": "Text (Darwin Core Archiv)",
+        "href": "/cs/text/"
+      },
+      {
+        "text": "RDF",
+        "href": "/cs/rdf/"
+      },
+      {
+        "text": "XML",
+        "href": "/cs/xml/"
+      },
+      {
+        "text": "Zásady pro jmenný prostor",
+        "href": "/cs/namespace/"
+      },
+      {
+        "text": "---"
+      },
+      {
+        "text": "Otázky a odpovědi",
+        "href": "https://github.com/tdwg/dwc-qa/blob/master/README.md"
+      }
+    ]
+  },
+  {
+    "text": "GitHub",
+    "href": "https://github.com/tdwg/dwc"
+  },
+  {
+    "text": "文A",
+    "menu": [
+      {
+        "text": "English",
+        "href": "/"
+      },
+      {
+        "text": "Čeština",
+        "href": "/cs/"
+      },
+      {
+        "text": "Français",
+        "href": "/fr/"
+      }
+    ]
+  }
+]

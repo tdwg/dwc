@@ -1,0 +1,112 @@
+[
+  {
+    "text": "Accueil",
+    "href": "/fr/"
+  },
+  {
+    "text": "Termes",
+    "menu": [
+      {
+        "text": "Darwin Core",
+        "href": "/fr/list/"
+      },
+      {
+        "text": "---"
+      },
+      {
+        "text": "",
+        "href": "https://chrono.tdwg.org/list/"
+      },
+      {
+        "text": "Extension Humboldt",
+        "href": "https://eco.tdwg.org/list/"
+      },
+      {
+        "text": "---"
+      },
+      {
+        "text": "",
+        "href": "/fr/em/"
+      },
+      {
+        "text": "",
+        "href": "/fr/doe/"
+      },
+      {
+        "text": "",
+        "href": "/fr/pw/"
+      }
+    ]
+  },
+  {
+    "text": "Guides",
+    "menu": [
+      {
+        "text": "",
+        "href": "/fr/terms/"
+      },
+      {
+        "text": "---"
+      },
+      {
+        "text": "",
+        "href": "https://chrono.tdwg.org/terms/"
+      },
+      {
+        "text": "",
+        "href": "https://eco.tdwg.org/terms/"
+      },
+      {
+        "text": "---"
+      },
+      {
+        "text": "Simple Darwin Core",
+        "href": "/fr/simple/"
+      },
+      {
+        "text": "Texte (Archive Darwin Core)",
+        "href": "/fr/text/"
+      },
+      {
+        "text": "RDF",
+        "href": "/fr/rdf/"
+      },
+      {
+        "text": "XML",
+        "href": "/fr/xml/"
+      },
+      {
+        "text": "Politique des espaces de nom",
+        "href": "/fr/namespace/"
+      },
+      {
+        "text": "---"
+      },
+      {
+        "text": "Questions & Réponses",
+        "href": "https://github.com/tdwg/dwc-qa/blob/master/README.md"
+      }
+    ]
+  },
+  {
+    "text": "GitHub",
+    "href": "https://github.com/tdwg/dwc"
+  },
+  {
+    "text": "文A",
+    "menu": [
+      {
+        "text": "English",
+        "href": "/"
+      },
+      {
+        "text": "Čeština",
+        "href": "/cs/"
+      },
+      {
+        "text": "Français",
+        "href": "/fr/"
+      }
+    ]
+  }
+]
