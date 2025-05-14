@@ -1,34 +1,34 @@
-# Degree of Establishment Controlled Vocabulary List of Terms
+# Liste des termes du vocabulaire contrôlé du Degré d'Implantation
 
-Title
-: Degree of Establishment Controlled Vocabulary List of Terms
+Titre
+: Liste des termes du vocabulaire contrôlé du Degré d'Implantation
 
-Namespace URI
+URI de l'espace de nom
 : <http://rs.tdwg.org/dwcdoe/values/>
 
-Preferred namespace abbreviation
+Abréviation de l'espace de noms privilégié
 : dwcdoe:
 
-Date version issued
-: 2021-09-01
+Date de publication de la dernière mise à jour
+: 1 septembre 2021
 
-Date created
-: 2020-10-13
+Date de création
+: 13 octobre 2020
 
-Part of TDWG Standard
+Fait partie du standard TDWG
 : <http://www.tdwg.org/standards/450>
 
-This document version
+Cette version
 : <http://rs.tdwg.org/dwc/doc/doe/2021-09-01>
 
-Latest version of document
+Dernière version
 : <http://rs.tdwg.org/dwc/doc/doe/>
 
-Previous version
+Version précédente
 : <http://rs.tdwg.org/dwc/doc/doe/2020-10-13>
 
-Abstract
-: The Darwin Core term `degreeOfEstablishment` provides information about degree to which an Organism survives, reproduces, and expands its range at the given place and time.. The Degree of Establishment Controlled Vocabulary provides terms that should be used as values for `dwc:degreeOfEstablishment` and `dwciri:degreeOfEstablishment`.
+Résumé
+: Le terme Darwin Core `degreeOfEstablishment` fournit des informations sur le degré de survie, de reproduction et d'expansion de l'aire de répartition d'un organisme à un endroit et à un moment donnés. Le Vocabulaire Contrôlé du Degré d'Établissement fournit des termes qui devraient être utilisés comme valeurs pour `dwc:degreeOfEstablishment` et `dwciri:degreeOfEstablishment`.
 
 Contributeurs
 : Quentin Groom, Peter Desmet, Lien Reyserhove, Tim Adriaens, Damiano Oldoni, Sonia Vanderhoeven, Steven J Baskauf, Arthur Chapman, Melodie McGeoch, Ramona Walls, John Wieczorek, John R.U. Wilson, Paula F Zermoglio, Annie Simpson
@@ -36,7 +36,7 @@ Contributeurs
 Créateur
 : TDWG Darwin Core Maintenance Group
 
-Bibliographic citation
+Citation
 : Darwin Core Maintenance Group. 2021. Degree of Establishment Controlled Vocabulary List of Terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/doe/2021-09-01>
 
 ## 1 Introduction
@@ -45,7 +45,7 @@ Ce document contient des termes destinés à être utilisés comme vocabulaire c
 
 ### 1.1 Statut du contenu de ce document
 
-In Section 4, the values of the `Term IRI`, `Definition`, and `Controlled value` are normative. The value of `Usage` (if it exists for a given term) is normative.  The values of `Term Name` are non-normative, although one can expect that the namespace abbreviation prefix is one commonly used for the term namespace.  `Label` and the values of all other properties (such as `Notes`) are non-normative.
+Dans la section 4, les valeurs de l'`IRI du terme`, de la `Définition` et de la `Valeur contrôlée` sont normatives. La valeur de `Utilisation` (si elle existe pour un terme donné) est normative.  Les valeurs de `Nom du Terme` ne sont pas normatives, bien que l'on puisse s'attendre à ce que le préfixe de l'abréviation de l'espace de noms soit celui couramment utilisé pour l'espace de noms du terme.  Le `Label` et les valeurs de toutes les autres propriétés (telles que les `Notes`) ne sont pas normatives.
 
 ### 1.2 Mots clés RFC 2119
 
@@ -53,6 +53,6 @@ Les mots clés "MUST/DOIT", "MUST NOT/NE DOIT PAS", "REQUIRED/OBLIGATOIRE", "SHA
 
 ## 2 Utilisation des termes
 
-Conformément aux exigences de la [Section 1.4.3 du Darwin Core RDF Guide](http://rs.tdwg.org/dwc/terms/guides/rdf/#143-use-of-darwin-core-terms-in-rdf-normative), les IRI des termes DOIVENT être utilisés comme valeurs de `dwciri:degreeOfEstablishment`. Des chaînes de caractères contrôlées DOIVENT être utilisées comme valeurs de `dwc:degreeOfEstablishment`.
+Conformément aux exigences de la [Section 1.4.3 du Darwin Core RDF Guide](http://rs.tdwg.org/dwc/terms/guides/rdf/#143-use-of-darwin-core-terms-in-rdf-normative), les IRI des termes DOIVENT être utilisés comme valeurs de `dwciri:degreeOfEstablishment`. Les chaînes de caractères permises DOIVENT être utilisées comme valeurs de `dwc:establishmentMeans`.
 
 ## 3 Index des termes
