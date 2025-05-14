@@ -1,34 +1,34 @@
-# Pathway Controlled Vocabulary List of Terms
+# Liste des termes du Vocabulaire Contrôlé de la Voie d'Accès
 
-Title
-: Pathway Controlled Vocabulary List of Terms
+Titre
+: Liste des termes du Vocabulaire Contrôlé de la Voie d'Accès
 
-Namespace URI
+URI de l'espace de nom
 : <http://rs.tdwg.org/dwcpw/values/>
 
-Preferred namespace abbreviation
+Abréviation de l'espace de noms privilégié
 : dwcpw:
 
-Date version issued
-: 2021-09-01
+Date de publication de la dernière mise à jour
+: 1 septembre 2021
 
-Date created
-: 2020-10-13
+Date de création
+: 13 octobre 2020
 
-Part of TDWG Standard
+Fait partie du standard TDWG
 : <http://www.tdwg.org/standards/450>
 
-This document version
+Cette version
 : <http://rs.tdwg.org/dwc/doc/pw/2021-09-01>
 
-Latest version of document
+Dernière version
 : <http://rs.tdwg.org/dwc/doc/pw/>
 
-Previous version
+Version précédente
 : <http://rs.tdwg.org/dwc/doc/pw/2020-10-13>
 
-Abstract
-: The Darwin Core term `pathway` provides information about the process by which an Organism came to be in a given place at a given time. The Pathway Controlled Vocabulary provides terms that should be used as values for `dwc:pathway` and `dwciri:pathway`.
+Résumé
+: Le terme `pathway` du Darwin Core fournit des informations sur le processus par lequel un organisme s'est retrouvé à un endroit donné à un moment donné. Le vocabulaire contrôlé de la Voie d'Accès fournit des termes qui doivent être utilisés comme valeurs pour `dwc:pathway` et `dwciri:pathway`.
 
 Contributeurs
 : Quentin Groom, Peter Desmet, Lien Reyserhove, Tim Adriaens, Damiano Oldoni, Sonia Vanderhoeven, Steven J Baskauf, Arthur Chapman, Melodie McGeoch, Ramona Walls, John Wieczorek, John R.U. Wilson, Paula F Zermoglio, Annie Simpson
@@ -36,16 +36,16 @@ Contributeurs
 Créateur
 : TDWG Darwin Core Maintenance Group
 
-Bibliographic citation
+Citation
 : Darwin Core Maintenance Group. 2021. Pathway Controlled Vocabulary List of Terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/pw/2021-09-01>
 
 ## 1 Introduction
 
-This document includes terms intended to be used as a controlled value for Darwin Core terms with local name `pathway`. Pour plus de détails et de précisions, voir Groom et al. 2019. Improving Darwin Core for research and management of alien species. <https://doi.org/10.3897/biss.3.38084>
+Ce document contient des termes destinés à être utilisés comme vocabulaire contrôlée pour les termes du Darwin Core portant le nom local `pathway`. Pour plus de détails et de précisions, voir Groom et al. 2019. Improving Darwin Core for research and management of alien species. <https://doi.org/10.3897/biss.3.38084>
 
 ### 1.1 Statut du contenu de ce document
 
-In Section 4, the values of the `Term IRI`, `Definition`, and `Controlled value` are normative. The value of `Usage` (if it exists for a given term) is normative.  The value of `Has broader concept` is normative. The values of `Term Name` are non-normative, although one can expect that the namespace abbreviation prefix is one commonly used for the term namespace.  `Label` and the values of all other properties (such as `Notes`) are non-normative.
+Dans la section 4, les valeurs de l'`IRI du terme`, de la `Définition` et de la `Valeur contrôlée` sont normatives. La valeur de `Utilisation` (si elle existe pour un terme donné) est normative.  La valeur de `Has broader concept` (a pour concept plus large) est normative. Les valeurs de `Nom du Terme` ne sont pas normatives, bien que l'on puisse s'attendre à ce que le préfixe de l'abréviation de l'espace de noms soit celui couramment utilisé pour l'espace de noms du terme.  Le `Label` et les valeurs de toutes les autres propriétés (telles que les `Notes`) ne sont pas normatives.
 
 ### 1.2 Mots clés RFC 2119
 
@@ -53,6 +53,6 @@ Les mots clés "MUST/DOIT", "MUST NOT/NE DOIT PAS", "REQUIRED/OBLIGATOIRE", "SHA
 
 ## 2 Utilisation des termes
 
-Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://dwc.tdwg.org/rdf/#143-use-of-darwin-core-terms-in-rdf-normative), term IRIs MUST be used as values of `dwciri:pathway`. Controlled value strings MUST be used as values of `dwc:pathway`.
+Conformément aux exigences de la [Section 1.4.3 du Darwin Core RDF Guide](https://dwc.tdwg.org/rdf/#143-use-of-darwin-core-terms-in-rdf-normative), les IRI des termes DOIVENT être utilisés comme valeurs de `dwciri:pathway`. Les chaînes de caractères permises DOIVENT être utilisées comme valeurs de `dwc:pathway`.
 
 ## 3 Index des termes
