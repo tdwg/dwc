@@ -1,63 +1,52 @@
 [
   {
-    "text": "",
-    "href": ""
+    "text": "Inicio",
+    "href": "/es/"
   },
   {
-    "text": "",
+    "text": "Términos",
     "menu": [
       {
-        "text": "",
-        "href": ""
+        "text": "Darwin Core",
+        "href": "/es/list/"
       },
       {
-        "text": ""
+        "text": "---"
       },
       {
-        "text": "",
-        "href": ""
+        "text": "Extensión de Edad Cronométrica",
+        "href": "https://chrono.tdwg.org/list/"
       },
       {
-        "text": "",
-        "href": ""
+        "text": "Extensión Humboldt",
+        "href": "https://eco.tdwg.org/list/"
       },
       {
-        "text": ""
-      },
-      {
-        "text": "",
-        "href": ""
+        "text": "---"
       },
       {
         "text": "",
-        "href": ""
+        "href": "/es/em/"
       },
       {
         "text": "",
-        "href": ""
+        "href": "/es/doe/"
+      },
+      {
+        "text": "",
+        "href": "/es/pw/"
       }
     ]
   },
   {
-    "text": "",
+    "text": "Guías",
     "menu": [
       {
-        "text": "",
-        "href": ""
+        "text": "Guía de Referencia Rápida de Darwin Core",
+        "href": "/es/terms/"
       },
       {
-        "text": ""
-      },
-      {
-        "text": "",
-        "href": ""
-      },
-      {
-        "text": "",
-        "href": ""
-      },
-      {
-        "text": ""
+        "text": "---"
       },
       {
         "text": "",
@@ -68,44 +57,55 @@
         "href": ""
       },
       {
-        "text": "",
-        "href": ""
+        "text": "---"
       },
       {
         "text": "",
-        "href": ""
+        "href": "/es/simple/"
       },
       {
         "text": "",
-        "href": ""
+        "href": "/es/text/"
       },
       {
-        "text": ""
+        "text": "RDF",
+        "href": "/es/rdf/"
+      },
+      {
+        "text": "XML",
+        "href": "/es/xml/"
       },
       {
         "text": "",
-        "href": ""
+        "href": "/es/namespace/"
+      },
+      {
+        "text": "---"
+      },
+      {
+        "text": "Preguntas y respuestas",
+        "href": "https://github.com/tdwg/dwc-qa/blob/master/README.md"
       }
     ]
   },
   {
-    "text": "",
-    "href": ""
+    "text": "GitHub",
+    "href": "https://github.com/tdwg/dwc"
   },
   {
-    "text": "",
+    "text": "文A",
     "menu": [
       {
-        "text": "",
-        "href": ""
+        "text": "English",
+        "href": "/"
       },
       {
-        "text": "",
-        "href": ""
+        "text": "Čeština",
+        "href": "/cs/"
       },
       {
-        "text": "",
-        "href": ""
+        "text": "Français",
+        "href": "/fr/"
       }
     ]
   }
