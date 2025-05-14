@@ -24,8 +24,6 @@ exclude:
   - LICENSE
 
 # FRONTMATTER DEFAULTS
-# The language-specific navigation menus must be commented until their translation
-# is completed and merged.
 defaults:
   - scope:
       path: ""

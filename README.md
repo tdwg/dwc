@@ -56,24 +56,25 @@ The repository structure is described below. Files/directories indicated with `G
 │   ├── simple_dwc_horizontal.csv : GENERATED CSV file with Simple Darwin Core terms as a row
 │   └── simple_dwc_vertical.csv   : GENERATED CSV file with Simple Darwin Core terms as a column
 │
-├── docs (GENERATED except for index.md)
+├── docs ('+' means GENERATED, ':' means manually maintained)
+│   ├── ar, cs, etc       + Translations of the English pages, managed by Crowdin
 │   ├── CNAME             : Canonical Name record for dwc.tdwg.org
 │   ├── _config.yml       : Jekyll site configuration
 │   ├── _data             : Website navigation and footer
-│   ├── doe               : Degree of Establishment Controlled Vocabulary List of Terms
-│   ├── em                : Establishment Means Controlled Vocabulary List of Terms
+│   ├── doe               + Degree of Establishment Controlled Vocabulary List of Terms
+│   ├── em                + Establishment Means Controlled Vocabulary List of Terms
 │   ├── examples          : Longer examples linked from other documents
 │   ├── favicon.ico       : Web page icon
 │   ├── Gemfile           : Ruby Gem configuration
 │   ├── Gemfile.lock      : Ruby Gem configuration
 │   ├── index.md          : Website home page (manually maintained)
-│   ├── list              : Darwin Core List of Terms documents
+│   ├── list              + Darwin Core List of Terms documents
 │   ├── namespace         : Darwin Core namespace policy
-│   ├── pw                : Pathway Controlled Vocabulary List of Terms
+│   ├── pw                + Pathway Controlled Vocabulary List of Terms
 │   ├── rdf               : Darwin Core RDF Guide
 │   ├── _sass             : Stylesheets
 │   ├── simple            : Simple Darwin Core Guide
-│   ├── terms             : GENERATED Quick Reference Guide
+│   ├── terms             + GENERATED Quick Reference Guide
 │   ├── text              : Darwin Core Text Guide (Darwin Core Archive specification)
 │   └── xml               : Darwin Core XML Guide
 │
@@ -81,9 +82,22 @@ The repository structure is described below. Files/directories indicated with `G
 │   └── term_versions.csv : GENERATED Darwin Core term versions, contains the complete history of the terms
 │
 ├── .gitignore            : Files and directories to be ignored by git
+├── crowdin.yml           : Crowdin Git integration configuration
 ├── LICENSE               : Repository license
 └── README.md             : Description of this repository
 ```
+
+## Website translation
+
+The Darwin Core website is available in multiple languages, see the "文A" menu.  Translations are managed within [Crowdin](https://crowdin.com/project/darwin-core), if you wish to contribute please go to the [Crowdin project](https://crowdin.com/project/darwin-core) and request to join, then email the Darwin Core Maintenance Group.
+
+Translations of term data (labels, definitions, examples, comments) are retrieved from the [rs.tdwg.org repository](https://github.com/tdwg/rs.tdwg.org), see [rs.tdwg.org/TRANSLATIONS.md](https://github.com/tdwg/rs.tdwg.org/blob/master/TRANSLATIONS.md) for details on that process.
+
+Translations of the rest of the Darwin Core website (guides, prose sections, navigation menu etc) is managed here.  [crowdin.yml](crowdin.yml) configures files required for translation, and as content is translated Crowdin will create pull requests.  The only manual edits required are for building a new language (configured at the top of [build/build-termlist.py](build/build-termlist.py) and, once the translation is ready, adding it to the end of the [navigation menu](docs/_data/navigation.json).
+
+GitHub Actions are configured to rebuild the website automatically as translations are created/updated.
+
+Note that **edits to translations should only be made in Crowdin** to avoid conflicts.
 
 ## Contributors
 
