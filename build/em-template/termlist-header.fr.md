@@ -1,6 +1,7 @@
 # Vocabulaire contrôlé des Moyens d'Implantation
 
-Titre: Liste des termes du Vocabulaire Contrôlé des Moyens d'Implantation
+Titre
+: Liste des termes du Vocabulaire Contrôlé des Moyens d'Implantation
 
 URI de l'espace de nom
 : <http://rs.tdwg.org/dwcem/values/>
