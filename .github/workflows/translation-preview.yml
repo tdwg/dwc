@@ -1,0 +1,55 @@
+name: Deploy preview translation pages
+
+on:
+  # Runs on pushes targeting the translation_master branch
+  push:
+    branches:
+      - 'translation_master'
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "translation-pages"
+  cancel-in-progress: false
+
+jobs:
+  # Build job
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.12
+          cache: 'pip'
+          cache-dependency-path: build/requirements.txt
+      - name: Install dependencies
+        run: |
+          cd build && pip3 install -r requirements.txt
+      - name: execute py script # run file
+        run: |
+          cd build && python3 build-termlist.py
+
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./docs
+          destination: ./_site
+
+      - name: Deploy site to https://dwc-translation-preview.tdwg.org
+        run: |
+          mkdir -p ~/.ssh/
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_ed25519
+          chmod 0600 ~/.ssh/id_ed25519
+          echo "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+          rsync -rv --delete --checksum ./_site/ dwc-translation-preview@tdwgstatic-vh.tdwg.org:/
+        shell: bash
+        env:
+          SSH_PRIVATE_KEY: ${{secrets.DWC_TRANSLATION_PREVIEW_TDWG_ORG}}
+          SSH_KNOWN_HOSTS: ${{vars.SSH_KNOWN_HOSTS}}
