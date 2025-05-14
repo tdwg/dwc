@@ -29,7 +29,7 @@
         "href": "/fr/em/"
       },
       {
-        "text": "",
+        "text": "Vocabulaire contrôlé du Degré d'Implantation",
         "href": "/fr/doe/"
       },
       {
@@ -42,18 +42,18 @@
     "text": "Guides",
     "menu": [
       {
-        "text": "",
+        "text": "Guide de référence rapide du Darwin Core",
         "href": "/fr/terms/"
       },
       {
         "text": "---"
       },
       {
-        "text": "",
+        "text": "Guide de référence rapide de l'extension Âge Chronométrique",
         "href": "https://chrono.tdwg.org/terms/"
       },
       {
-        "text": "",
+        "text": "Guide de référence rapide de l'extension Humboldt",
         "href": "https://eco.tdwg.org/terms/"
       },
       {
