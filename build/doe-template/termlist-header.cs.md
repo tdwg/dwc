@@ -1,6 +1,6 @@
-# Seznam termínů Řízeného slovníku Stupňů rozšíření
+# Seznam termínů Řízeného slovníku Stupňů zavlečení
 
-Nadpis: Seznam termínů Řízeného slovníku Stupňů rozšíření
+Nadpis: Seznam termínů Řízeného slovníku Stupňů zavlečení
 
 URI jmenného prostoru
 : <http://rs.tdwg.org/dwcdoe/values/>
@@ -36,7 +36,7 @@ Tvůrce
 : TDWG Darwin Core Maintenance Group
 
 Bibliografická citace
-: Darwin Core Maintenance Group. 2021. Seznam termínů Řízeného slovníku Stupňů rozšíření. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/doe/2021-09-01>
+: Darwin Core Maintenance Group. 2021. Seznam termínů Řízeného slovníku Stupňů zavlečení. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/doe/2021-09-01>
 
 ## 1. Úvod
 
