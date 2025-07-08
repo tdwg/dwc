@@ -184,7 +184,7 @@ class DwcDigester(object):
             dwc_header_file.write("\n")
 
 def main():
-    """Building up the Quick Reference Guide HTML and derivatives"""
+    """Building up the derivative files"""
 
     term_versions_file = "../vocabulary/term_versions.csv"
 

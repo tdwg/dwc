@@ -39,13 +39,12 @@ document_configuration_yaml_file = 'document_configuration.yaml'
 
 class TermList:
 
-    def __init__(self, termLists, hasNamespace, vocabType, organizedInCategories, displayOrder, displayLabel, displayComments, displayId):
+    def __init__(self, termLists, vocabType, organizedInCategories, displayOrder, displayLabel, displayComments, displayId):
         """
         Tables of terms.
 
         Keyword arguments:
         termLists -- list of database names of the term lists to be loaded
-        hasNamespace -- set to True for a list of terms containing multiple namespaces
         vocabType -- 1 is simple vocabulary, 2 is simple controlled vocabulary, 3 is a c.v. with broader hierarchy
         organizedInCategories -- Terms in large vocabularies like Darwin and AV Cores may be organized into categories using tdwgutility_organizedInClass.  If so, those categories can be used to group terms in the generated term list document.
         displayOrder -- If organized in categories, the display_order list must contain the IRIs that are values of tdwgutility_organizedInClass. Otherwise set to [''].
@@ -55,7 +54,6 @@ class TermList:
         """
 
         self.termLists = termLists
-        self.has_namespace = hasNamespace
         self.vocab_type = vocabType
         self.organized_in_categories = organizedInCategories
         self.display_order = displayOrder
@@ -63,7 +61,6 @@ class TermList:
         self.display_comments = displayComments
         self.display_id = displayId
 
-        self.load_namespace_metadata()
         self.load_contributors()
         self.load_document_configuration()
 
@@ -73,18 +70,6 @@ class TermList:
         self.retrieve_term_list_metadata()
         self.create_metadata_table()
         pass
-
-
-    def load_namespace_metadata(self):
-        if self.has_namespace:
-            # Load the configuration file used in the metadata creation process.
-            if localGithub:
-                with open(githubBaseUri + 'process/config.yaml') as file: metadata_config_text = file.read()
-            else:
-                metadata_config_text = requests.get(githubBaseUri + 'process/config.yaml').text
-            metadata_config = yaml.load(metadata_config_text, Loader=yaml.FullLoader)
-            self.namespace_uri = metadata_config['namespaces'][0]['namespace_uri']
-            self.pref_namespace_prefix = metadata_config['namespaces'][0]['pref_namespace_prefix']
 
 
     def load_contributors(self):
@@ -551,9 +536,6 @@ class TermList:
         header = header.replace('{publisher}', self.document_configuration_yaml['publisher'])
         year = self.document_configuration_yaml['doc_modified'].split('-')[0]
         header = header.replace('{year}', year)
-        if self.has_namespace:
-            header = header.replace('{namespace_uri}', self.namespace_uri)
-            header = header.replace('{pref_namespace_prefix}', self.pref_namespace_prefix)
 
         # Determine whether there was a previous version of the document.
         if self.document_configuration_yaml['doc_created'] != self.document_configuration_yaml['doc_modified']:
@@ -664,7 +646,7 @@ class TermList:
                 class_group = term_data
                 class_group["terms"] = []
                 in_class = term_data["label"] # check on the class working in
-            elif term_data['iri']=='http://purl.org/dc/terms/language':
+            elif term_data['iri']=='http://rs.tdwg.org/dwc/iri/behavior':
                 # Vulnerable to ordering terms in term_versions.csv, but...
                 # This is the first row of dwciri terms
                 # store previous section in template_data
@@ -764,8 +746,7 @@ def generate_all_qrg(termList, locales):
 
 # Darwin Core Terms
 dwc_list = TermList(
-    termLists = ['terms', 'iri', 'dc-for-dwc', 'dcterms-for-dwc'],
-    hasNamespace = False,
+    termLists = ['terms', 'iri', 'dc-for-dwc', 'dcterms-for-dwc', 'ac-for-dwc'],
     vocabType = 1,
     organizedInCategories = True,
     displayOrder = ['', 'http://purl.org/dc/elements/1.1/', 'http://purl.org/dc/terms/', 'http://rs.tdwg.org/dwc/terms/Occurrence', 'http://rs.tdwg.org/dwc/terms/Organism', 'http://rs.tdwg.org/dwc/terms/MaterialEntity', 'http://rs.tdwg.org/dwc/terms/MaterialSample', 'http://rs.tdwg.org/dwc/terms/Event', 'http://purl.org/dc/terms/Location', 'http://rs.tdwg.org/dwc/terms/GeologicalContext', 'http://rs.tdwg.org/dwc/terms/Identification', 'http://rs.tdwg.org/dwc/terms/Taxon', 'http://rs.tdwg.org/dwc/terms/MeasurementOrFact', 'http://rs.tdwg.org/dwc/terms/ResourceRelationship', 'http://rs.tdwg.org/dwc/terms/attributes/UseWithIRI'],
@@ -782,7 +763,6 @@ generate_all_qrg(dwc_list, languages)
 # Establishment Means Vocabulary
 em_list = TermList(
     termLists = ['establishmentMeans'],
-    hasNamespace = True,
     vocabType = 2,
     organizedInCategories = False,
     displayOrder = [''],
@@ -796,7 +776,6 @@ generate_all_markdown(em_list, 'em', languages)
 # Degree of Establishment Vocabulary
 doe_list = TermList(
     termLists = ['degreeOfEstablishment'],
-    hasNamespace = True,
     vocabType = 2,
     organizedInCategories = False,
     displayOrder = [''],
@@ -810,7 +789,6 @@ generate_all_markdown(doe_list, 'doe', languages)
 # Pathway Vocabulary
 pw_list = TermList(
     termLists = ['pathway'],
-    hasNamespace = True,
     vocabType = 3,
     organizedInCategories = False,
     displayOrder = [''],
