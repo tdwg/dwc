@@ -1,14 +1,14 @@
 [
   {
-    "text": "",
-    "href": ""
+    "text": "ホーム",
+    "href": "/"
   },
   {
     "text": "",
     "menu": [
       {
-        "text": "",
-        "href": ""
+        "text": "Darwin Core",
+        "href": "/リスト/"
       },
       {
         "text": ""
@@ -97,7 +97,7 @@
     "menu": [
       {
         "text": "",
-        "href": ""
+        "href": "/"
       },
       {
         "text": "",
