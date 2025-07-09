@@ -1,14 +1,14 @@
 [
   {
     "text": "ホーム",
-    "href": "/"
+    "href": "/ja/"
   },
   {
     "text": "",
     "menu": [
       {
         "text": "Darwin Core",
-        "href": "/リスト/"
+        "href": "/ja/list/"
       },
       {
         "text": ""
@@ -26,15 +26,15 @@
       },
       {
         "text": "",
-        "href": ""
+        "href": "/ja/em/"
       },
       {
         "text": "",
-        "href": ""
+        "href": "/ja/doe/"
       },
       {
         "text": "",
-        "href": ""
+        "href": "/ja/pw/"
       }
     ]
   },
@@ -43,7 +43,7 @@
     "menu": [
       {
         "text": "",
-        "href": ""
+        "href": "/ja/terms/"
       },
       {
         "text": ""
@@ -61,23 +61,23 @@
       },
       {
         "text": "",
-        "href": ""
+        "href": "/ja/simple/"
       },
       {
         "text": "",
-        "href": ""
+        "href": "/ja/text/"
       },
       {
         "text": "",
-        "href": ""
+        "href": "/ja/rdf/"
       },
       {
         "text": "",
-        "href": ""
+        "href": "/ja/xml/"
       },
       {
         "text": "",
-        "href": ""
+        "href": "/ja/namespace/"
       },
       {
         "text": ""
@@ -97,7 +97,7 @@
     "menu": [
       {
         "text": "",
-        "href": "/"
+        "href": "/ja/"
       },
       {
         "text": "",
