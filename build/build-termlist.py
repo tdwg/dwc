@@ -20,7 +20,7 @@ from jinja2 import FileSystemLoader, Environment
 
 github_branch = 'master' # "master" for production, something else for development
 
-languages = ['en', 'cs', 'es', 'fr', 'ko', 'zh-Hant']
+languages = ['en', 'cs', 'es', 'fr', 'ja', 'ko', 'zh-Hant']
 
 # This is the base URL for raw files from the branch of the repo that has been pushed to GitHub
 githubBaseUri = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/' + github_branch + '/'
