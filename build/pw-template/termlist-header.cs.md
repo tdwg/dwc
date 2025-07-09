@@ -9,8 +9,8 @@ URI jmenného prostoru
 Preferovaná zkratka jmenného prostoru
 : dwcpw:
 
-Datum vydání verze
-: 2021-09-01
+Date version issued
+: 2025-06-12
 
 Datum vytvoření
 : 2020-10-13
@@ -18,14 +18,14 @@ Datum vytvoření
 Součást TDWG Standardu
 : <http://www.tdwg.org/standards/450>
 
-Tato verze dokumentu
-: <http://rs.tdwg.org/dwc/doc/pw/2021-09-01>
+This document version
+: <http://rs.tdwg.org/dwc/doc/pw/2025-06-12>
 
 Aktuální verze dokumentu
 : <http://rs.tdwg.org/dwc/doc/pw/>
 
-Předchozí verze
-: <http://rs.tdwg.org/dwc/doc/pw/2020-10-13>
+Previous version
+: <http://rs.tdwg.org/dwc/doc/pw/2021-09-01>
 
 Abstrakt
 : Darwin Core termín "pathway" poskytuje informace o procesu, kterým se organismus dostal na dané místo v daném čase. Řízený slovník Pathway poskytuje termíny, které by se měly používat jako hodnoty pro `dwc:pathway` a `dwciri:pathway`.
@@ -37,7 +37,7 @@ Tvůrce
 : TDWG Darwin Core Maintenance Group
 
 Bibliografická citace
-: Darwin Core Maintenance Group. 2021. Seznam termínů řízeného slovníku Pathway. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/pw/2021-09-01>
+: Darwin Core Maintenance Group. 2025. Seznam termínů řízeného slovníku Pathway. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/pw/2025-06-12>
 
 ## 1. Úvod
 
