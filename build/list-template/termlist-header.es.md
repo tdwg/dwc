@@ -1,12 +1,12 @@
-# Darwin Core List of Terms
+# Lista de Términos Darwin Core
 
-Title
-: Darwin Core List of Terms
+Título
+: Lista de Términos Darwin Core
 
-Date version issued
+Fecha de publicación de la versión
 : {ratification_date}
 
-Date created
+Fecha de creación
 : {created_date}
 
 Part of TDWG Standard
