@@ -1,4 +1,4 @@
-# Darwin Core List of Terms
+# Darwin Core 用語一覧
 
 Title
 : Darwin Core List of Terms
