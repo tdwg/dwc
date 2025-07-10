@@ -11,18 +11,18 @@
         "href": "/ja/list/"
       },
       {
-        "text": ""
+        "text": "---"
       },
       {
         "text": "",
-        "href": ""
+        "href": "https://chrono.tdwg.org/list/"
       },
       {
         "text": "",
-        "href": ""
+        "href": "https://eco.tdwg.org/list/"
       },
       {
-        "text": ""
+        "text": "---"
       },
       {
         "text": "",
@@ -46,18 +46,18 @@
         "href": "/ja/terms/"
       },
       {
-        "text": ""
+        "text": "---"
       },
       {
         "text": "",
-        "href": ""
+        "href": "https://chrono.tdwg.org/terms/"
       },
       {
         "text": "",
-        "href": ""
+        "href": "https://eco.tdwg.org/terms/"
       },
       {
-        "text": ""
+        "text": "---"
       },
       {
         "text": "",
@@ -80,7 +80,7 @@
         "href": "/ja/namespace/"
       },
       {
-        "text": ""
+        "text": "---"
       },
       {
         "text": "",
@@ -90,22 +90,22 @@
   },
   {
     "text": "",
-    "href": ""
+    "href": "https://github.com/tdwg/dwc"
   },
   {
-    "text": "",
+    "text": "文A",
     "menu": [
       {
-        "text": "",
+        "text": "English",
         "href": "/ja/"
       },
       {
-        "text": "",
-        "href": ""
+        "text": "Čeština",
+        "href": "/cs/"
       },
       {
-        "text": "",
-        "href": ""
+        "text": "Français",
+        "href": "/fr/"
       }
     ]
   }
