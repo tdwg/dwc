@@ -9,7 +9,7 @@ Namespace URI
 Preferred namespace abbreviation
 : dwcpw:
 
-Date version issued
+Fecha de publicación de la versión
 : 2025-06-12
 
 Date created
@@ -18,13 +18,13 @@ Date created
 Part of TDWG Standard
 : <http://www.tdwg.org/standards/450>
 
-This document version
+Versión de este documento
 : <http://rs.tdwg.org/dwc/doc/pw/2025-06-12>
 
 Latest version of document
 : <http://rs.tdwg.org/dwc/doc/pw/>
 
-Previous version
+Versión anterior
 : <http://rs.tdwg.org/dwc/doc/pw/2021-09-01>
 
 Abstract
