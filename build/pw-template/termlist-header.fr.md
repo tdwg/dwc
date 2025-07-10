@@ -9,8 +9,8 @@ URI de l'espace de nom
 Abréviation de l'espace de noms privilégié
 : dwcpw:
 
-Date version issued
-: 2025-06-12
+Date de publication de la dernière mise à jour
+: 12 juin 2025
 
 Date de création
 : 13 octobre 2020
