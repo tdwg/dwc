@@ -57,6 +57,7 @@ http://rs.tdwg.org/dwc/terms/MaterialEntity
 http://rs.tdwg.org/dwc/terms/materialEntityID
 http://rs.tdwg.org/dwc/terms/digitalSpecimenID
 http://rs.tdwg.org/dwc/terms/materialEntityType
+http://rs.tdwg.org/dwc/terms/discipline
 http://rs.tdwg.org/dwc/terms/preparations
 http://rs.tdwg.org/dwc/terms/disposition
 http://rs.tdwg.org/dwc/terms/verbatimLabel
