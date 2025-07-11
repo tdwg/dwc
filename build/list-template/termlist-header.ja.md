@@ -1,14 +1,13 @@
 # Darwin Core 用語一覧
 
-タイトル：Darwin Core 用語一覧
+タイトル
+: Darwin Core 用語一覧
 
-Date version issued
-: {ratification_date}
+バージョン発行日：{ratification_date}
 
-Date created
-: {created_date}
+作成日：{created_date}
 
-Part of TDWG Standard
+TDWGスタンダードでの部分
 : <{standard_iri}>
 
 This version
@@ -19,8 +18,8 @@ Latest version
 
 {previous_version_slot}
 
-Abstract
-: Darwin Core is a vocabulary standard for transmitting information about biodiversity. This document lists all terms in namespaces currently used in the vocabulary.
+要旨
+: Darwin Core は生物多様性に関する情報を伝えるための語彙の標準です。 この文書では、この語彙で現在使用されている名前空間のすべての用語を一覧にしています。
 
 Contributors
 : {contributors}
