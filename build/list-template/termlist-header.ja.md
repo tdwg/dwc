@@ -3,17 +3,19 @@
 タイトル
 : Darwin Core 用語一覧
 
-バージョン発行日：{ratification_date}
+バージョン発行日
+: {ratification_date}
 
-作成日：{created_date}
+作成日
+: {created_date}
 
 TDWGスタンダードでの部分
 : <{standard_iri}>
 
-This version
+このバージョン
 : <{current_iri}{ratification_date}>
 
-Latest version
+最新のバージョン
 : <{current_iri}>
 
 {previous_version_slot}
@@ -21,13 +23,13 @@ Latest version
 要旨
 : Darwin Core は生物多様性に関する情報を伝えるための語彙の標準です。 この文書では、この語彙で現在使用されている名前空間のすべての用語を一覧にしています。
 
-Contributors
+協力者
 : {contributors}
 
-Creator
+作成者
 : {creator}
 
-Bibliographic citation
+書誌的引用
 : {creator}. {year}. {document_title}. {publisher}. <{current_iri}{ratification_date}>
 
 ## 1 Introduction (Informative)
