@@ -9,7 +9,7 @@
 作成日
 : {created_date}
 
-TDWGスタンダードでの部分
+TDWGスタンダードでのパート
 : <{standard_iri}>
 
 このバージョン
