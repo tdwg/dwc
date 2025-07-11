@@ -32,15 +32,15 @@ TDWGスタンダードでのパート
 書誌的引用
 : {creator}. {year}. {document_title}. {publisher}. <{current_iri}{ratification_date}>
 
-## 1 イントロダクション（有用情報）
+## 1 イントロダクション（参考情報）
 
 この文書には、Darwin Core 語彙の最新のバージョン（<http://rs.tdwg.org/version/dwc/{ratification_date}>）の用語が含まれています。
 
-This document includes terms in four namespaces that contain recommended terms: `dwc:`, `dwciri:`, `dc:`, and `dcterms:`. However, some terms in these namespaces are deprecated or superseded and should no longer be used. Deprecation or supersession is noted in the term metadata. Namespaces that contain only deprecated terms are not included in this document, but metadata about those terms can be retrieved by dereferencing their IRIs.
+この文書は、推奨される用語を含む以下の4つの名前空間の用語で構成されています： `dwc:`、`dwciri:`、`dc:`、 `dcterms:` しかし、これらの名前空間に属するいくつかの用語は、非推奨であったり差し替えられたりしていて、もはや使用すべきではありません。 非推奨や差し替えについては用語のメタデータに記載されています。 非推奨の用語のみを含む名前空間はこの文書では取り扱っていませんが、それらの用語のメタデータは、それらのIRIを逆参照することで取得できます。
 
-For a simplified list that contains only the currently recommended terms, see the [Darwin Core Quick Reference Guide](../terms/).
+現在推奨されている用語のみの簡易な一覧は、[Darwin Core クイックリファレンスガイド](../terms/) でご覧になれます。
 
-### 1.1 Status of the content of this document
+### 1.1 この文書の内容のステータス
 
 Sections 1 and 3 are non-normative.
 
