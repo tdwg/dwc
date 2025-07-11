@@ -53,6 +53,6 @@ Las palabras clave "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD
 
 ## 2 Uso de los Términos
 
-Debido a los requisitos de la [Sección 1.4.3 de la Guñia RDF Darwin Core](http://rs.tdwg.org/dwc/terms/guides/rdf/#143-use-of-darwin-core-terms-in-rdf-normative), los términos IRIs DEBEN utilizarse como valores de `dwciri:degreeOfEstablishment`. Las cadenas de texto con valores controlados DEBEN utilizarse como valores de `dwc:degreeOfEstablishment`.
+Debido a los requisitos de la [Sección 1.4.3 de la Guía RDF Darwin Core](http://rs.tdwg.org/dwc/terms/guides/rdf/#143-use-of-darwin-core-terms-in-rdf-normative), los términos IRIs DEBEN utilizarse como valores de `dwciri:degreeOfEstablishment`. Las cadenas de texto con valores controlados DEBEN utilizarse como valores de `dwc:degreeOfEstablishment`.
 
 ## 3 Índice de Términos
