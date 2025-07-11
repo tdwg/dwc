@@ -45,14 +45,14 @@ Este documento incluye términos destinados a ser utilizados como valores contro
 
 ### 1.1 Estado del contenido de este documento
 
-En la Sección 4, los valores de `Término IRI`, `Definición` y `Valor controlado` son normativos. El valor de `Uso` (si existe para un término determinado) también es normativo.  Los valores del `Nombre del término` no son normativos, aunque se puede esperar que el prefijo del namespace abreviado sea uno comúnmente utilizado para ese namespace.  `Label` and the values of all other properties (such as `Notes`) are non-normative.
+En la Sección 4, los valores de `Término IRI`, `Definición` y `Valor controlado` son normativos. El valor de `Uso` (si existe para un término determinado) también es normativo.  Los valores del `Nombre del término` no son normativos, aunque se puede esperar que el prefijo del namespace abreviado sea uno comúnmente utilizado para ese namespace.  La `Etiqueta` y los valores de todas las demás propiedades (como `Notas`) no son normativos.
 
 ### 1.2 RFC 2119 key words
 
-The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [RFC 2119](https://tools.ietf.org/html/rfc2119).
+Las palabras clave "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY" y "OPTIONAL" en este documento deben interpretarse como se describe en la [RFC 2119](https://tools.ietf.org/html/rfc2119).
 
-## 2 Use of Terms
+## 2 Uso de los Términos
 
-Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://rs.tdwg.org/dwc/terms/guides/rdf/#143-use-of-darwin-core-terms-in-rdf-normative), term IRIs MUST be used as values of `dwciri:degreeOfEstablishment`. Controlled value strings MUST be used as values of `dwc:degreeOfEstablishment`.
+Debido a los requisitos de la [Sección 1.4.3 de la Guñia RDF Darwin Core](http://rs.tdwg.org/dwc/terms/guides/rdf/#143-use-of-darwin-core-terms-in-rdf-normative), los términos IRIs DEBEN utilizarse como valores de `dwciri:degreeOfEstablishment`. Las cadenas de texto con valores controlados DEBEN utilizarse como valores de `dwc:degreeOfEstablishment`.
 
-## 3 Term index
+## 3 Índice de Términos
