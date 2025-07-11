@@ -1,7 +1,6 @@
 # Darwin Core 用語一覧
 
-Title
-: Darwin Core List of Terms
+タイトル：Darwin Core 用語一覧
 
 Date version issued
 : {ratification_date}
