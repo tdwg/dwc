@@ -18,13 +18,13 @@ Date de création
 Fait partie du standard TDWG
 : <http://www.tdwg.org/standards/450>
 
-This document version
+Cette version
 : <http://rs.tdwg.org/dwc/doc/pw/2025-06-12>
 
 Dernière version
 : <http://rs.tdwg.org/dwc/doc/pw/>
 
-Previous version
+Version précédente
 : <http://rs.tdwg.org/dwc/doc/pw/2021-09-01>
 
 Résumé
