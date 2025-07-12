@@ -10,7 +10,7 @@ Abréviation de l'espace de noms privilégié
 : dwcpw:
 
 Date de publication de la dernière mise à jour
-: 1 septembre 2021
+: 12 juin 2025
 
 Date de création
 : 13 octobre 2020
@@ -19,13 +19,13 @@ Fait partie du standard TDWG
 : <http://www.tdwg.org/standards/450>
 
 Cette version
-: <http://rs.tdwg.org/dwc/doc/pw/2021-09-01>
+: <http://rs.tdwg.org/dwc/doc/pw/2025-06-12>
 
 Dernière version
 : <http://rs.tdwg.org/dwc/doc/pw/>
 
 Version précédente
-: <http://rs.tdwg.org/dwc/doc/pw/2020-10-13>
+: <http://rs.tdwg.org/dwc/doc/pw/2021-09-01>
 
 Résumé
 : Le terme `pathway` du Darwin Core fournit des informations sur le processus par lequel un organisme s'est retrouvé à un endroit donné à un moment donné. Le vocabulaire contrôlé de la Voie d'Accès fournit des termes qui doivent être utilisés comme valeurs pour `dwc:pathway` et `dwciri:pathway`.
@@ -37,7 +37,7 @@ Créateur
 : TDWG Darwin Core Maintenance Group
 
 Citation
-: Darwin Core Maintenance Group. 2021. Pathway Controlled Vocabulary List of Terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/pw/2021-09-01>
+: Darwin Core Maintenance Group. 2025. Pathway Controlled Vocabulary List of Terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/pw/2025-06-12>
 
 ## 1 Introduction
 

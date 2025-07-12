@@ -9,8 +9,8 @@ URI jmenného prostoru
 Preferovaná zkratka jmenného prostoru
 : dwcem:
 
-Datum vydání verze
-: 2021-09-01
+Date version issued
+: 2025-06-12
 
 Datum vytvoření
 : 2020-10-13
@@ -18,14 +18,14 @@ Datum vytvoření
 Součást TDWG Standardu
 : <http://www.tdwg.org/standards/450>
 
-Tato verze dokumentu
-: <http://rs.tdwg.org/dwc/doc/em/2021-09-01>
+This document version
+: <http://rs.tdwg.org/dwc/doc/em/2025-06-12>
 
 Aktuální verze dokumentu
 : <http://rs.tdwg.org/dwc/doc/em/>
 
-Předchozí verze
-: <http://rs.tdwg.org/dwc/doc/em/2020-10-13>
+Previous version
+: <http://rs.tdwg.org/dwc/doc/em/2021-09-01>
 
 Abstrakt
 : Darwin Core termín `establishmentMeans` poskytuje informace o tom, zda byl organismus nebo organismy zavlečeny na dané místo a do daného času přímou nebo nepřímou činností moderního člověka. Řízený slovník Způsob zavlečení poskytuje termíny, které by se měly používat jako hodnoty pro `dwc:degreeOfEstablishment` a `dwciri:degreeOfEstablishment`.
@@ -37,7 +37,7 @@ Tvůrce
 : TDWG Darwin Core Maintenance Group
 
 Bibliografická citace
-: Darwin Core Maintenance Group. 2021. Seznam termínů Řízeného slovníku Způsobu zavlečení. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/em/2021-09-01>
+: Darwin Core Maintenance Group. 2025. Seznam termínů Řízeného slovníku Způsobu zavlečení. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/em/2025-06-12>
 
 ## 1. Úvod
 
