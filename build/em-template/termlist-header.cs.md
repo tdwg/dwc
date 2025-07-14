@@ -9,7 +9,7 @@ URI jmenného prostoru
 Preferovaná zkratka jmenného prostoru
 : dwcem:
 
-Date version issued
+Datum vydání verze
 : 2025-06-12
 
 Datum vytvoření
@@ -18,13 +18,13 @@ Datum vytvoření
 Součást TDWG Standardu
 : <http://www.tdwg.org/standards/450>
 
-This document version
+Verze tohoto dokumentu
 : <http://rs.tdwg.org/dwc/doc/em/2025-06-12>
 
 Aktuální verze dokumentu
 : <http://rs.tdwg.org/dwc/doc/em/>
 
-Previous version
+Předchozí verze
 : <http://rs.tdwg.org/dwc/doc/em/2021-09-01>
 
 Abstrakt
