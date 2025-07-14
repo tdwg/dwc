@@ -18,8 +18,7 @@ TDWGスタンダードでのパート
 最新のバージョン
 : <{current_iri}>
 
-以前のバージョン
-: {previous_version_slot}
+{previous_version_slot}
 
 要旨
 : Darwin Core は生物多様性に関する情報を伝えるための語彙の標準です。 この文書では、この語彙で現在使用されている名前空間のすべての用語を一覧にしています。
