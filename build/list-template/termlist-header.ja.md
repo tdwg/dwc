@@ -42,21 +42,21 @@ TDWGスタンダードでのパート
 
 ### 1.1 この文書の内容のステータス
 
-Sections 1 and 3 are non-normative.
+セクション 1 および 3 は非規範的なものです。
 
-Section 2 is normative.
+セクション 2 は規範的な内容です。
 
-In Section 4, the values of the `Term IRI` and `Definition` are normative. The values of `Term Name` are non-normative, although one can expect that the namespace abbreviation prefix is one commonly used for the term namespace.  `Label` and the values of all other properties (such as `Examples` and `Notes`) are non-normative.
+セクション 4 では、`用語のIRI（Term IRI）`と`定義（Definition）`の値は規範的です。 `用語の名前（Term Name）`の値は非規範的ですが、名前空間の略語の接頭辞はその用語の名前空間で一般的に使われるものであると予想できます。  `ラベル（Label）`とそのほかのすべての属性（`例（Examples）`や`備考（Notes）`など）は非規範的なものです。
 
-### 1.2 RFC 2119 key words
+### 1.2 RFC 2119 キーワード
 
-The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [BCP 14](https://www.rfc-editor.org/info/bcp14) [\[RFC 2119\]](https://datatracker.ietf.org/doc/html/rfc2119) and [\[RFC 8174\]](https://datatracker.ietf.org/doc/html/rfc8174) when, and only when, they appear in all capitals, as shown here.
+この文書における "MUST"、"MUST NOT"、"REQUIRED"、"SHALL"、"SHALL NOT"、"SHOULD"、"SHOULD NOT"、"RECOMMENDED"、"MAY"、"OPTIONAL" というキーワードは、ここに示されているようにすべて大文字で記載されている場合に限り、[BCP 14](https://www.rfc-editor.org/info/bcp14)、[\[RFC 2119\]](https://datatracker.ietf.org/doc/html/rfc2119) 、[\[RFC 8174\]](https://datatracker.ietf.org/doc/html/rfc8174) に記述されているように解釈されます。
 
-### 1.3 Namespace abbreviations
+### 1.3 名前空間の略語
 
 The following namespace abbreviations are used in this document:
 
-| abbreviation             | IRI                                                                              |
+| 略語                       | IRI                                                                              |
 | ------------------------ | -------------------------------------------------------------------------------- |
 | dwc:     | http://rs.tdwg.org/dwc/terms/    |
 | dwciri:  | http://rs.tdwg.org/dwc/iri/      |
