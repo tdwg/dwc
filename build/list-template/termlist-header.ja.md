@@ -18,7 +18,8 @@ TDWGスタンダードでのパート
 最新のバージョン
 : <{current_iri}>
 
-{previous_version_slot}
+以前のバージョン
+: {previous_version_slot}
 
 要旨
 : Darwin Core は生物多様性に関する情報を伝えるための語彙の標準です。 この文書では、この語彙で現在使用されている名前空間のすべての用語を一覧にしています。
@@ -54,7 +55,7 @@ TDWGスタンダードでのパート
 
 ### 1.3 名前空間の略語
 
-The following namespace abbreviations are used in this document:
+以下の名前空間の略語がこの文書で使用されています：
 
 | 略語                       | IRI                                                                              |
 | ------------------------ | -------------------------------------------------------------------------------- |
@@ -63,8 +64,8 @@ The following namespace abbreviations are used in this document:
 | dc:      | http://purl.org/dc/elements/1.1/ |
 | dcterms: | http://purl.org/dc/terms/                        |
 
-## 2 Use of Terms
+## 2 用語の使い方
 
-Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#143-use-of-darwin-core-terms-in-rdf-normative), terms in the `dwciri:` namespace MUST be used with IRI values. Terms in the `dwc:` and `dc:` namespaces are generally expected to have string literal values. Values for terms in the `dcterms:` namespace will depend on the details of the term. See [Section 3 of the Darwin Core RDF Guide](../rdf/#3-term-reference-normative) for details.
+[セクション 1.4.3 の Darwin Core RDF ガイド](../rdf/#143-use-of-darwin-core-terms-in-rdf-normative) の要件により、 `dwciri:` 名前空間の用語は、IRI値と共に使用しなければなりません（MUST）。 `dwc:` と `dc:` 名前空間の用語は通常、文字列リテラル値を持つことを想定されています。 `dcterms:` 名前空間の用語の値は、用語の詳細により異なります。 詳細は[セクション 3 のDarwin Core RDF ガイド](../rdf/#3-term-reference-normative)をご覧ください。
 
-## 3 Term indices
+## 3 用語の索引
