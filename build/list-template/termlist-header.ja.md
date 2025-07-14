@@ -65,6 +65,6 @@ TDWGスタンダードでのパート
 
 ## 2 用語の使い方
 
-[セクション 1.4.3 の Darwin Core RDF ガイド](../rdf/#143-use-of-darwin-core-terms-in-rdf-normative) の要件により、 `dwciri:` 名前空間の用語は、IRI値と共に使用しなければなりません（MUST）。 `dwc:` と `dc:` 名前空間の用語は通常、文字列リテラル値を持つことを想定されています。 `dcterms:` 名前空間の用語の値は、用語の詳細により異なります。 詳細は[セクション 3 のDarwin Core RDF ガイド](../rdf/#3-term-reference-normative)をご覧ください。
+[Darwin Core RDF ガイドのセクション 1.4.3](../rdf/#143-use-of-darwin-core-terms-in-rdf-normative) の要件により、 `dwciri:` 名前空間の用語は、IRI値と共に使用しなければなりません（MUST）。 `dwc:` と `dc:` 名前空間の用語は通常、文字列リテラル値を持つことを想定されています。 `dcterms:` 名前空間の用語の値は、用語の詳細により異なります。 詳細は [Darwin Core RDF ガイドのセクション 3](../rdf/#3-term-reference-normative) をご覧ください。
 
 ## 3 用語の索引
