@@ -27,8 +27,8 @@ TDWGスタンダードでのパート
 以前のバージョン
 : <http://rs.tdwg.org/dwc/doc/doe/2020-10-13>
 
-Abstract
-: The Darwin Core term `degreeOfEstablishment` provides information about degree to which an Organism survives, reproduces, and expands its range at the given place and time.. The Degree of Establishment Controlled Vocabulary provides terms that should be used as values for `dwc:degreeOfEstablishment` and `dwciri:degreeOfEstablishment`.
+要旨
+: Darwin Core の用語である `degreeOfEstablishment` は、特定の場所と時間において、ある生物がどの程度生存し、繁殖し、その生息範囲を広げるかについての情報を提供します。 The Degree of Establishment Controlled Vocabulary provides terms that should be used as values for `dwc:degreeOfEstablishment` and `dwciri:degreeOfEstablishment`.
 
 貢献者
 : Quentin Groom, Peter Desmet, Lien Reyserhove, Tim Adriaens, Damiano Oldoni, Sonia Vanderhoeven, Steven J Baskauf, Arthur Chapman, Melodie McGeoch, Ramona Walls, John Wieczorek, John R.U. Wilson, Paula F Zermoglio, Annie Simpson
@@ -45,7 +45,7 @@ This document includes terms intended to be used as a controlled value for Darwi
 
 ### 1.1 この文書の内容のステータス
 
-In Section 4, the values of the `Term IRI`, `Definition`, and `Controlled value` are normative. The value of `Usage` (if it exists for a given term) is normative.  The values of `Term Name` are non-normative, although one can expect that the namespace abbreviation prefix is one commonly used for the term namespace.  `Label` and the values of all other properties (such as `Notes`) are non-normative.
+In Section 4, the values of the `Term IRI`, `Definition`, and `Controlled value` are normative. `使用法（Usage）`の値がもし存在する場合、それは規範的なものです。  `用語の名前（Term Name）`の値は非規範的ですが、名前空間の略語の接頭辞はその用語の名前空間で一般的に使われるものであると予想できます。  `ラベル（Label）`とそのほかのすべての属性（`備考（Notes）`など）は非規範的なものです。
 
 ### 1.2 RFC 2119 キーワード
 
@@ -53,6 +53,6 @@ In Section 4, the values of the `Term IRI`, `Definition`, and `Controlled value`
 
 ## 2 用語の使い方
 
-Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://rs.tdwg.org/dwc/terms/guides/rdf/#143-use-of-darwin-core-terms-in-rdf-normative), term IRIs MUST be used as values of `dwciri:degreeOfEstablishment`. Controlled value strings MUST be used as values of `dwc:degreeOfEstablishment`.
+[Darwin Core RDF ガイドのセクション 1.4.3](http://rs.tdwg.org/dwc/terms/guides/rdf/#143-use-of-darwin-core-terms-in-rdf-normative) の要件により、用語のIRIは `dwciri:degreeOfEstablishment` の値として使用しなければなりません（MUST）。 Controlled value strings MUST be used as values of `dwc:degreeOfEstablishment`.
 
 ## 3 用語索引
