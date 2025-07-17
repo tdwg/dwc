@@ -41,7 +41,7 @@ Abstract
 
 ## 1 イントロダクション
 
-This document includes terms intended to be used as a controlled value for Darwin Core terms with local name `pathway`. For details and rationale, see Groom et al. 2019. Improving Darwin Core for research and management of alien species. <https://doi.org/10.3897/biss.3.38084>
+This document includes terms intended to be used as a controlled value for Darwin Core terms with local name `pathway`. 詳細と根拠については、以下をご覧ください：Groom et al. 2019. Improving Darwin Core for research and management of alien species. <https://doi.org/10.3897/biss.3.38084>
 
 ### 1.1 この文書の内容のステータス
 
