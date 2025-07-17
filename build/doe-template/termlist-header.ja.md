@@ -1,7 +1,7 @@
-# Degree of Establishment Controlled Vocabulary List of Terms
+# Degree of Establishment 制御語彙 用語一覧
 
-Title
-: Degree of Establishment Controlled Vocabulary List of Terms
+タイトル
+: Degree of Establishment 制御語彙 用語一覧
 
 名前空間 URI
 : <http://rs.tdwg.org/dwcdoe/values/>
@@ -28,7 +28,7 @@ TDWGスタンダードでのパート
 : <http://rs.tdwg.org/dwc/doc/doe/2020-10-13>
 
 要旨
-: Darwin Core の用語である `degreeOfEstablishment` は、特定の場所と時間において、ある生物がどの程度生存し、繁殖し、その生息範囲を広げるかについての情報を提供します。 The Degree of Establishment Controlled Vocabulary provides terms that should be used as values for `dwc:degreeOfEstablishment` and `dwciri:degreeOfEstablishment`.
+: Darwin Core の用語である `degreeOfEstablishment` は、特定の場所と時間において、ある生物がどの程度生存し、繁殖し、その生息範囲を広げるかについての情報を提供します。 Degree of Establishment 制御語彙は、`dwc:degreeOfEstablishment` と `dwciri:degreeOfEstablishment` の値として使用すべき用語を提供します。
 
 貢献者
 : Quentin Groom, Peter Desmet, Lien Reyserhove, Tim Adriaens, Damiano Oldoni, Sonia Vanderhoeven, Steven J Baskauf, Arthur Chapman, Melodie McGeoch, Ramona Walls, John Wieczorek, John R.U. Wilson, Paula F Zermoglio, Annie Simpson
@@ -41,7 +41,7 @@ TDWGスタンダードでのパート
 
 ## 1 イントロダクション
 
-This document includes terms intended to be used as a controlled value for Darwin Core terms with local name `degreeOfEstablishment`. For details and rationale, see Groom et al. 2019. Improving Darwin Core for research and management of alien species. <https://doi.org/10.3897/biss.3.38084>
+This document includes terms intended to be used as a controlled value for Darwin Core terms with local name `degreeOfEstablishment`. 詳細と根拠については、以下をご覧ください：Groom et al. 2019. Improving Darwin Core for research and management of alien species. <https://doi.org/10.3897/biss.3.38084>
 
 ### 1.1 この文書の内容のステータス
 
