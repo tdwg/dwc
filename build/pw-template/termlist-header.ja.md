@@ -9,7 +9,7 @@ Namespace URI
 Preferred namespace abbreviation
 : dwcpw:
 
-Date version issued
+バージョン発行日
 : 2025-06-12
 
 作成日
