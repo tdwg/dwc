@@ -3,13 +3,13 @@
 Title
 : Establishment Means Controlled Vocabulary List of Terms
 
-Namespace URI
+名前空間 URI
 : <http://rs.tdwg.org/dwcem/values/>
 
 Preferred namespace abbreviation
 : dwcem:
 
-Date version issued
+バージョン発行日
 : 2025-06-12
 
 作成日
@@ -18,13 +18,13 @@ Date version issued
 TDWGスタンダードでのパート
 : <http://www.tdwg.org/standards/450>
 
-This document version
+この文書のバージョン
 : <http://rs.tdwg.org/dwc/doc/em/2025-06-12>
 
-Latest version of document
+文書の最新バージョン
 : <http://rs.tdwg.org/dwc/doc/em/>
 
-Previous version
+以前のバージョン
 : <http://rs.tdwg.org/dwc/doc/em/2021-09-01>
 
 Abstract
@@ -53,6 +53,6 @@ In Section 4, the values of the `Term IRI`, `Definition`, and `Controlled value`
 
 ## 2 用語の使い方
 
-Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://dwc.tdwg.org/rdf/#143-use-of-darwin-core-terms-in-rdf-normative), term IRIs MUST be used as values of `dwciri:establishmentMeans`. Controlled value strings MUST be used as values of `dwc:establishmentMeans`.
+[Darwin Core RDF ガイドのセクション 1.4.3](https://dwc.tdwg.org/rdf/#143-use-of-darwin-core-terms-in-rdf-normative) の要件により、用語のIRIは `dwciri:establishmentMeans` の値として使用しなければなりません（MUST）。 Controlled value strings MUST be used as values of `dwc:establishmentMeans`.
 
 ## 3 用語索引
