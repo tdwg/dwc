@@ -1,7 +1,7 @@
-# Establishment Means Controlled Vocabulary List of Terms
+# Establishment Means 制御語彙 用語一覧
 
-Title
-: Establishment Means Controlled Vocabulary List of Terms
+タイトル
+: Establishment Means 制御語彙 用語一覧
 
 名前空間 URI
 : <http://rs.tdwg.org/dwcem/values/>
@@ -41,7 +41,7 @@ Abstract
 
 ## 1 イントロダクション
 
-This document includes terms intended to be used as a controlled value for Darwin Core terms with local name `establishmentMeans`. 詳細と根拠については、以下をご覧ください：Groom et al. 2019. Improving Darwin Core for research and management of alien species. <https://doi.org/10.3897/biss.3.38084>
+この文書には、ローカル名`establishmentMeans`を持つ Darwin Core 用語の制御値として使用するよう意図された用語が含まれています。 詳細と根拠については、以下をご覧ください：Groom et al. 2019. Improving Darwin Core for research and management of alien species. <https://doi.org/10.3897/biss.3.38084>
 
 ### 1.1 この文書の内容のステータス
 
@@ -53,6 +53,6 @@ This document includes terms intended to be used as a controlled value for Darwi
 
 ## 2 用語の使い方
 
-[Darwin Core RDF ガイドのセクション 1.4.3](https://dwc.tdwg.org/rdf/#143-use-of-darwin-core-terms-in-rdf-normative) の要件により、用語のIRIは `dwciri:establishmentMeans` の値として使用しなければなりません（MUST）。 Controlled value strings MUST be used as values of `dwc:establishmentMeans`.
+[Darwin Core RDF ガイドのセクション 1.4.3](https://dwc.tdwg.org/rdf/#143-use-of-darwin-core-terms-in-rdf-normative) の要件により、用語のIRIは `dwciri:establishmentMeans` の値として使用しなければなりません（MUST）。 制御値の文字列は、`dwc:establishmentMeans`の値として使用しなければなりません（MUST）。
 
 ## 3 用語索引
