@@ -28,7 +28,7 @@ TDWGスタンダードでのパート
 : <http://rs.tdwg.org/dwc/doc/em/2021-09-01>
 
 Abstract
-: The Darwin Core term `establishmentMeans` provides information about whether an organism or organisms have been introduced to a given place and time through the direct or indirect activity of modern humans. The Establishment Means Controlled Vocabulary provides terms that should be used as values for `dwc:establishmentMeans` and `dwciri:establishmentMeans`.
+: The Darwin Core term `establishmentMeans` provides information about whether an organism or organisms have been introduced to a given place and time through the direct or indirect activity of modern humans. Establishment Means 制御語彙は、`dwc:establishmentMeans` と `dwciri:establishmentMeans` の値として使用すべき用語を提供します。
 
 貢献者
 : Quentin Groom, Peter Desmet, Lien Reyserhove, Tim Adriaens, Damiano Oldoni, Sonia Vanderhoeven, Steven J Baskauf, Arthur Chapman, Melodie McGeoch, Ramona Walls, John Wieczorek, John R.U. Wilson, Paula F Zermoglio, Annie Simpson
