@@ -1,4 +1,9 @@
 {
+    "term_name": "用語の名前",
+    "term_iri": "用語のIRI",
+    "modified": "変更日",
+    "label": "ラベル",
     "definition": "定義",
+    "notes": "備考",
     "examples": "例"
 }
