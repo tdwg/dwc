@@ -5,5 +5,7 @@
     "label": "ラベル",
     "definition": "定義",
     "notes": "備考",
+    "controlled_value": "制御値",
+    "usage": "使用法",
     "examples": "例"
 }
