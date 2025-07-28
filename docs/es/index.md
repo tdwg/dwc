@@ -5,12 +5,12 @@ layout: home
 # Darwin Core
 
 {:.lead}
-Darwin Core is a standard maintained by the [Darwin Core Maintenance Group](https://www.tdwg.org/standards/dwc/#maintenance-group). It includes a glossary of terms (in other contexts these might be called properties, elements, fields, columns, attributes, or concepts) intended to **facilitate the sharing of information about biological diversity** by providing identifiers, labels, and definitions. Darwin Core is primarily based on taxa, their occurrence in nature as documented by observations, specimens, samples, and related information.
+Darwin Core es un estándar mantenido por el [Darwin Core Maintenance Group](https://www.tdwg.org/standards/dwc/#maintenance-group). Incluye un glosario de términos (que en otros contextos podrían llamarse propiedades, elementos, campos, columnas, atributos o conceptos) diseñado para **facilitar el intercambio de información sobre la diversidad biológica**, mediante el uso de identificadores, etiquetas y definiciones. Darwin Core se basa principalmente en los taxones, su ocurrencia en la naturaleza documentada a través de observaciones, especímenes, muestras e información relacionada.
 
-## Getting started
+## Para comenzar
 
-- [Quick Reference Guide](terms/)
-- Usage guides: how to use Darwin Core as [Simple Darwin Core](simple/), [Text (Darwin Core Archives)](text/), [XML](xml/) or [RDF](rdf/)
-- [GitHub repository](https://github.com/tdwg/dwc): where Darwin Core is maintained
-- [Normative term list](list/): the document containing the full history of normative Darwin Core term definitions
-- [Distribution files](https://github.com/tdwg/dwc/tree/master/dist): convenient files to start using Darwin Core
+- [Guía Rápida de Referencia](terms/)
+- Guías de uso: cómo utilizar Darwin Core como [Darwin Core Simple](simple/), [(Archivos Darwin Core) de Texto](text/), [XML](xml/) o [RDF](rdf/)
+- [Repositorio en GitHub](https://github.com/tdwg/dwc): donde se mantiene el Darwin Core
+- [Lista normativa de términos](list/): documento que contiene el historial completo de las definiciones normativas de términos Darwin Core
+- [Archivos de distribución](https://github.com/tdwg/dwc/tree/master/dist): archivos prácticos para comenzar a utilizar Darwin Core
