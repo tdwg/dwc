@@ -1,16 +1,26 @@
 {
+    "term_indices": "用語の索引",
     "index_by_term_name": "用語の名前による索引",
     "index_by_label": "ラベルによる索引",
     "see_also_index_by_label": "(参照：[3.2 ラベルによる索引](#32-index-by-label))",
-    "see_also_index_by_term_name": "(参照：[3.1 用語の名称による索引](#31-index-by-term-name))",
+    "see_also_index_by_term_name": "(参照：[3.1 用語の名称による索引](#31-用語の名前による索引))",
+    "classes": "クラス",
     "vocabulary": "語彙",
     "term_name": "用語の名前",
     "term_iri": "用語のIRI",
     "modified": "変更日",
+    "term_version_iri": "用語のバージョンのIRI",
     "label": "ラベル",
     "definition": "定義",
     "notes": "備考",
     "controlled_value": "制御値",
     "usage": "使用法",
-    "examples": "例"
+    "examples": "例",
+    "not_in_abcd": "ABCDにはありません",
+    "type": "タイプ",
+    "property": "プロパティ",
+    "class": "クラス",
+    "executive_committee_decision": "実行委員会の決定",
+    "term_deprecated": "この用語は非推奨であり使用すべきではありません。",
+    "term_replaced_by": "以下に置き換え"
 }
