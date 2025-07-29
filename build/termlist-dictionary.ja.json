@@ -1,4 +1,9 @@
 {
+    "index_by_term_name": "用語の名前による索引",
+    "index_by_label": "ラベルによる索引",
+    "see_also_index_by_label": "(参照：[3.2 ラベルによる索引](#32-index-by-label))",
+    "see_also_index_by_term_name": "(参照：[3.1 用語の名称による索引](#31-index-by-term-name))",
+    "vocabulary": "語彙",
     "term_name": "用語の名前",
     "term_iri": "用語のIRI",
     "modified": "変更日",
