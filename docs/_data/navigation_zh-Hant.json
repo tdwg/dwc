@@ -39,7 +39,7 @@
     ]
   },
   {
-    "text": "",
+    "text": "指南",
     "menu": [
       {
         "text": "",
@@ -76,14 +76,14 @@
         "href": "/zh-Hant/xml/"
       },
       {
-        "text": "",
+        "text": "命名空間政策",
         "href": "/zh-Hant/namespace/"
       },
       {
         "text": "---"
       },
       {
-        "text": "",
+        "text": "問與答",
         "href": "https://github.com/tdwg/dwc-qa/blob/master/README.md"
       }
     ]
