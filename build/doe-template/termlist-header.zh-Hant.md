@@ -1,10 +1,8 @@
-# Degree of Establishment Controlled Vocabulary List of Terms
+# 建立程度控制詞彙術語清單
 
-Title
-: Degree of Establishment Controlled Vocabulary List of Terms
+建立程度控制詞彙術語清單
 
-Namespace URI
-: <http://rs.tdwg.org/dwcdoe/values/>
+命名空間 統一資源識別碼 : <http://rs.tdwg.org/dwcdoe/values/>
 
 Preferred namespace abbreviation
 : dwcdoe:
