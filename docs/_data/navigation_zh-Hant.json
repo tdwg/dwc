@@ -1,6 +1,6 @@
 [
   {
-    "text": "",
+    "text": "首頁",
     "href": "/zh-Hant/"
   },
   {
@@ -14,26 +14,26 @@
         "text": "---"
       },
       {
-        "text": "",
+        "text": "定年延伸資料集",
         "href": "https://chrono.tdwg.org/list/"
       },
       {
-        "text": "",
+        "text": "洪堡延伸資料集",
         "href": "https://eco.tdwg.org/list/"
       },
       {
         "text": "---"
       },
       {
-        "text": "",
+        "text": "建立方法控制詞彙",
         "href": "/zh-Hant/em/"
       },
       {
-        "text": "",
+        "text": "建立程度控制詞彙",
         "href": "/zh-Hant/doe/"
       },
       {
-        "text": "",
+        "text": "途徑控制詞彙",
         "href": "/zh-Hant/pw/"
       }
     ]
@@ -42,37 +42,37 @@
     "text": "指南",
     "menu": [
       {
-        "text": "",
+        "text": "達爾文核心標準快速參照",
         "href": "/zh-Hant/terms/"
       },
       {
         "text": "---"
       },
       {
-        "text": "",
+        "text": "定年延伸資料集快速參照",
         "href": "https://chrono.tdwg.org/terms/"
       },
       {
-        "text": "",
+        "text": "洪堡延伸資料集快速參照",
         "href": "https://eco.tdwg.org/terms/"
       },
       {
         "text": "---"
       },
       {
-        "text": "",
+        "text": "簡易達爾文核心標準",
         "href": "/zh-Hant/simple/"
       },
       {
-        "text": "",
+        "text": "純文字 (達爾文核心標準檔案)",
         "href": "/zh-Hant/text/"
       },
       {
-        "text": "",
+        "text": "資源描述框架",
         "href": "/zh-Hant/rdf/"
       },
       {
-        "text": "",
+        "text": "可延伸標記語言",
         "href": "/zh-Hant/xml/"
       },
       {
@@ -89,7 +89,7 @@
     ]
   },
   {
-    "text": "",
+    "text": "GitHub",
     "href": "https://github.com/tdwg/dwc"
   },
   {
