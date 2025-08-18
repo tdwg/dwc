@@ -5,7 +5,6 @@
 import re
 import requests   # best library to manage HTTP transactions
 import csv        # library to read/write/parse CSV files
-import json       # library to convert JSON to Python data structures
 import os
 import pandas as pd
 import yaml

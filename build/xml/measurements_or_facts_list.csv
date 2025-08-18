@@ -2,6 +2,7 @@ group,iri,type,thesaurus,description,comments,examples,required
 MeasurementOrFact,http://rs.tdwg.org/dwc/terms/measurementID,,,,,,
 MeasurementOrFact,http://rs.tdwg.org/dwc/terms/parentMeasurementID,,,,,,
 MeasurementOrFact,http://rs.tdwg.org/dwc/terms/measurementType,,,,,,true
+MeasurementOrFact,http://rs.tdwg.org/dwc/terms/verbatimMeasurementType,,,,,,
 MeasurementOrFact,http://rs.tdwg.org/dwc/terms/measurementValue,,,,,,
 MeasurementOrFact,http://rs.tdwg.org/dwc/terms/measurementAccuracy,,,,,,
 MeasurementOrFact,http://rs.tdwg.org/dwc/terms/measurementUnit,,,,,,

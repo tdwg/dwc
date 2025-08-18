@@ -2,7 +2,7 @@
 
 ![workflow diagram](workflow_diagram.png)
 
-**Note:** *It is highly recommended that you do not hand-edit the raw CSVs with a text editor. Use Libre Office or Open Office (NOT Excel). They will reliably open, close, and edit the file while preserving and escaping commas, quotes, etc. and also not mess up the UTF-8 encoding if you set them up properly.*
+**Note:** *It is highly recommended that you do not hand-edit the raw CSVs with a text editor. Use Libre Office (NOT Excel). This will reliably open, close, and edit the file while preserving and escaping commas, quotes, etc. and also not mess up the UTF-8 encoding if you set it up properly.*
 
 The definitive versions of term definitions are stored in the [rs.tdwg.org repository](https://github.com/tdwg/rs.tdwg.org/).  Generating a new version of Darwin Core requires us to make changes to that repository, then to ensure downstream results are updated (the Darwin Core website, IPT extensions etc).
 
