@@ -5,14 +5,13 @@
 # This script merges static Markdown header documents with term information tables (in Markdown) generated from data in the rs.tdwg.org repo from the TDWG Github site
 
 import re
-import requests   # best library to manage HTTP transactions
-import csv        # library to read/write/parse CSV files
 import json       # library to convert JSON to Python data structures
 import os
 import pandas as pd
-import yaml
 
 from jinja2 import FileSystemLoader, Environment
+
+import dwcterms
 
 # -----------------
 # Configuration section
@@ -29,22 +28,13 @@ localGithub = False
 if localGithub:
     githubBaseUri = '../../rs.tdwg.org/'
 
-# ---------------
-# Load header data
-# ---------------
-
-config_file_path = 'process/document_metadata_processing/dwc_doc_list/'
-contributors_yaml_file = 'authors_configuration.yaml'
-document_configuration_yaml_file = 'document_configuration.yaml'
-
 class TermList:
-
-    def __init__(self, termLists, vocabType, organizedInCategories, displayOrder, displayLabel, displayComments, displayId):
+    def __init__(self, terms, vocabType, organizedInCategories, displayOrder, displayLabel, displayComments, displayId):
         """
         Tables of terms.
 
         Keyword arguments:
-        termLists -- list of database names of the term lists to be loaded
+        terms -- the loaded dwcterms term lists
         vocabType -- 1 is simple vocabulary, 2 is simple controlled vocabulary, 3 is a c.v. with broader hierarchy
         organizedInCategories -- Terms in large vocabularies like Darwin and AV Cores may be organized into categories using tdwgutility_organizedInClass.  If so, those categories can be used to group terms in the generated term list document.
         displayOrder -- If organized in categories, the display_order list must contain the IRIs that are values of tdwgutility_organizedInClass. Otherwise set to [''].
@@ -53,130 +43,14 @@ class TermList:
         displayId -- these are the fragment identifiers for the associated sections for the categories
         """
 
-        self.termLists = termLists
+        self.terms = terms
         self.vocab_type = vocabType
         self.organized_in_categories = organizedInCategories
         self.display_order = displayOrder
         self.display_label = displayLabel
         self.display_comments = displayComments
         self.display_id = displayId
-
-        self.load_contributors()
-        self.load_document_configuration()
-
-        self.decisions_df = pd.read_csv(githubBaseUri + 'decisions/decisions-links.csv', na_filter=False)
-        self.decisions_df = self.decisions_df[['linked_affected_resource', 'decision_localName']]
-
-        self.retrieve_term_list_metadata()
-        self.create_metadata_table()
         pass
-
-
-    def load_contributors(self):
-        # Load the contributors YAML file from its GitHub URL
-        contributors_yaml_url = githubBaseUri + config_file_path + contributors_yaml_file
-        if localGithub:
-            with open(contributors_yaml_url) as file: contributors_yaml = file.read()
-        else:
-            contributors_yaml = requests.get(contributors_yaml_url).text
-        if contributors_yaml == '404: Not Found':
-            print('Contributors YAML file not found. Check the URL.')
-            print(contributors_yaml_url)
-            exit()
-        self.contributors_yaml = yaml.load(contributors_yaml, Loader=yaml.FullLoader)
-
-
-    def load_document_configuration(self):
-        # Load the document configuration YAML file from its GitHub URL
-        document_configuration_yaml_url = githubBaseUri + config_file_path + document_configuration_yaml_file
-        if localGithub:
-            with open(document_configuration_yaml_url) as file: document_configuration_yaml = file.read()
-        else:
-            document_configuration_yaml = requests.get(document_configuration_yaml_url).text
-        self.document_configuration_yaml = yaml.load(document_configuration_yaml, Loader=yaml.FullLoader)
-
-
-    def retrieve_term_list_metadata(self):
-        """
-        Retrieve term list metadata from GitHub
-        """
-        termLists = pd.DataFrame(self.termLists, columns=['database'])
-
-        print('Retrieving term list metadata from GitHub')
-        frame = pd.read_csv(githubBaseUri + 'term-lists/term-lists.csv', na_filter=False)
-
-        frame = frame.rename(columns={'vann_preferredNamespacePrefix': 'pref_ns_prefix',
-                                      'vann_preferredNamespaceUri': 'pref_ns_uri',
-                                      'list': 'list_iri'})
-
-        frame = frame[['database', 'pref_ns_prefix', 'pref_ns_uri', 'list_iri']]
-
-        frame = pd.merge(termLists, frame, on='database', how='inner')
-
-        self.term_lists_info = frame
-        print("term_lists_info\n", self.term_lists_info, '\n')
-
-    def create_metadata_table(self):
-        """
-        Create metadata table and populate using data from namespace databases in GitHub
-        """
-
-        print('Retrieving metadata about terms from all namespaces from GitHub')
-        for i, term_list in self.term_lists_info.iterrows():
-            # retrieve current term metadata for term list
-            metadata_url = githubBaseUri + term_list['database'] + '/' + term_list['database'] + '.csv'
-            print("Reading metadata", metadata_url)
-            metadata_df = pd.read_csv(metadata_url, keep_default_na=False)
-            #print('metadata_df', metadata_df)
-            metadata_df = metadata_df.assign(pref_ns_prefix=term_list['pref_ns_prefix'],
-                                             pref_ns_uri=term_list['pref_ns_uri'],
-                                             term_iri=lambda x: term_list['pref_ns_uri'] + x['term_localName'])
-            # Rename columns in vocabularies to match the columns in the DWC term list.
-            metadata_df = metadata_df.rename(columns={'type': 'rdf_type'})
-
-            # retrieve versions metadata for term list
-            versions_url = githubBaseUri + term_list['database'] + '-versions/' + term_list['database'] + '-versions.csv'
-            print("Reading versions", versions_url)
-            versions_df = pd.read_csv(versions_url, na_filter=False)
-            versions_df = versions_df.query('version_status == "recommended"')
-            #print("Vrec\n", versions_df)
-            versions_df = versions_df[['term_localName', 'version']]
-            versions_df = versions_df.rename(columns={'version': 'version_iri'})
-            # TODO NOTE: the current hack for non-TDWG terms without a version is to append # to the end of the term IRI
-            # if version_iri[len(version_iri)-1] == '#':
-            #     version_iri = ''
-            #print("Vsmall\n", versions_df)
-
-            metadata_df = pd.merge(metadata_df, versions_df,
-                                   on='term_localName',
-                                   how='left')
-
-            # retrieve translated term metadata for term list
-            translations_url = githubBaseUri + term_list['database'] + '/' + term_list['database'] + '-translations.csv'
-            print("Reading translated metadata", translations_url)
-            try:
-                translations_df = pd.read_csv(translations_url, keep_default_na=False)
-                metadata_df = pd.merge(metadata_df, translations_df,
-                                       on='term_localName',
-                                       how='left')
-            except:
-                print("No translations found for", term_list['database'])
-
-            if i == 0:
-                frame = metadata_df
-            else:
-                frame = pd.concat([frame, metadata_df])
-
-        frame = frame.fillna('')
-
-        self.terms_sorted_by_label = frame.sort_values(by='label')
-
-        # This makes sort case insensitive
-        self.terms_sorted_by_localname = frame.iloc[frame.term_localName.str.lower().argsort()]
-        print('done retrieving')
-        #print('Columns of terms_sorted_by_localname:', self.terms_sorted_by_localname.columns.values)
-        print()
-
 
     def t(self, key):
         """
@@ -269,7 +143,7 @@ class TermList:
 
         text += '**%s**\n' % self.t('classes')
         text += '\n'
-        for row_index,row in self.terms_sorted_by_localname.iterrows():
+        for row_index,row in self.terms.terms_sorted_by_localname.iterrows():
             if row['rdf_type'] == 'http://www.w3.org/2000/01/rdf-schema#Class':
                 curie = row['pref_ns_prefix'] + ":" + row['term_localName']
                 curie_anchor = curie.replace(':','_')
@@ -281,10 +155,10 @@ class TermList:
             text += '**%s**\n' % self.display_label[category]
             text += '\n'
             if self.organized_in_categories:
-                filtered_table = self.terms_sorted_by_localname[self.terms_sorted_by_localname['tdwgutility_organizedInClass']==self.display_order[category]]
+                filtered_table = self.terms.terms_sorted_by_localname[self.terms.terms_sorted_by_localname['tdwgutility_organizedInClass']==self.display_order[category]]
                 filtered_table.reset_index(drop=True, inplace=True)
             else:
-                filtered_table = self.terms_sorted_by_localname
+                filtered_table = self.terms.terms_sorted_by_localname
 
             for row_index,row in filtered_table.iterrows():
                 if row['rdf_type'] != 'http://www.w3.org/2000/01/rdf-schema#Class':
@@ -314,7 +188,7 @@ class TermList:
             text += '%s\n\n' % self.t('see_also_index_by_term_name')
 
         seen_class = False
-        for row_index,row in self.terms_sorted_by_label.iterrows():
+        for row_index,row in self.terms.terms_sorted_by_label.iterrows():
             if row['rdf_type'] == 'http://www.w3.org/2000/01/rdf-schema#Class':
                 if not seen_class:
                     text += '**%s**\n' % self.t('classes')
@@ -328,10 +202,10 @@ class TermList:
         for category in range(0,len(self.display_order)):
             if self.organized_in_categories:
                 text += '**%s**\n\n' % self.display_label[category]
-                filtered_table = self.terms_sorted_by_label[self.terms_sorted_by_label['tdwgutility_organizedInClass']==self.display_order[category]]
+                filtered_table = self.terms.terms_sorted_by_label[self.terms.terms_sorted_by_label['tdwgutility_organizedInClass']==self.display_order[category]]
                 filtered_table.reset_index(drop=True, inplace=True)
             else:
-                filtered_table = self.terms_sorted_by_label
+                filtered_table = self.terms.terms_sorted_by_label
 
             for row_index,row in filtered_table.iterrows():
                 if 'rdf_type' in row and row['rdf_type'] != 'http://www.w3.org/2000/01/rdf-schema#Class':
@@ -360,7 +234,7 @@ class TermList:
         # generate the Markdown for the terms table
         text = '## 4 %s\n' % self.t('vocabulary')
         if True:
-            filtered_table = self.terms_sorted_by_localname
+            filtered_table = self.terms.terms_sorted_by_localname
 
         #for category in range(0,len(display_order)):
         #    if organized_in_categories:
@@ -477,7 +351,7 @@ class TermList:
                 text += '\t\t</tr>\n'
 
                 # Look up decisions related to this term
-                for j, decision in self.decisions_df.loc[self.decisions_df['linked_affected_resource'] == uri].iterrows():
+                for j, decision in self.terms.decisions_df.loc[self.terms.decisions_df['linked_affected_resource'] == uri].iterrows():
                     if decision['decision_localName'] != '':
                         text += '\t\t<tr>\n'
                         text += '\t\t\t<td>%s</td>\n' % self.t('executive_committee_decision')
@@ -519,31 +393,31 @@ class TermList:
 
         # Build the Markdown for the contributors list
         contributors = ''
-        for contributor in self.contributors_yaml:
+        for contributor in self.terms.contributors_yaml:
             contributors += '[' + contributor['contributor_literal'] + '](' + contributor['contributor_iri'] + ') '
             contributors += '([' + contributor['affiliation'] + '](' + contributor['affiliation_uri'] + ')), '
         contributors = contributors[:-2] # Remove the last comma and space
 
         # Substitute values of ratification_date and contributors into the header template
-        header = header.replace('{document_title}', self.document_configuration_yaml['documentTitle'])
-        header = header.replace('{ratification_date}', self.document_configuration_yaml['doc_modified'])
-        header = header.replace('{created_date}', self.document_configuration_yaml['doc_created'])
+        header = header.replace('{document_title}', self.terms.document_configuration_yaml['documentTitle'])
+        header = header.replace('{ratification_date}', self.terms.document_configuration_yaml['doc_modified'])
+        header = header.replace('{created_date}', self.terms.document_configuration_yaml['doc_created'])
         header = header.replace('{contributors}', contributors)
-        header = header.replace('{standard_iri}', self.document_configuration_yaml['dcterms_isPartOf'])
-        header = header.replace('{current_iri}', self.document_configuration_yaml['current_iri'])
-        header = header.replace('{abstract}', self.document_configuration_yaml['abstract'])
-        header = header.replace('{creator}', self.document_configuration_yaml['creator'])
-        header = header.replace('{publisher}', self.document_configuration_yaml['publisher'])
-        year = self.document_configuration_yaml['doc_modified'].split('-')[0]
+        header = header.replace('{standard_iri}', self.terms.document_configuration_yaml['dcterms_isPartOf'])
+        header = header.replace('{current_iri}', self.terms.document_configuration_yaml['current_iri'])
+        header = header.replace('{abstract}', self.terms.document_configuration_yaml['abstract'])
+        header = header.replace('{creator}', self.terms.document_configuration_yaml['creator'])
+        header = header.replace('{publisher}', self.terms.document_configuration_yaml['publisher'])
+        year = self.terms.document_configuration_yaml['doc_modified'].split('-')[0]
         header = header.replace('{year}', year)
 
         # Determine whether there was a previous version of the document.
-        if self.document_configuration_yaml['doc_created'] != self.document_configuration_yaml['doc_modified']:
+        if self.terms.document_configuration_yaml['doc_created'] != self.terms.document_configuration_yaml['doc_modified']:
             # Load versions list from document versions data in the rs.tdwg.org repo and find most recent version.
             versions_data_url = githubBaseUri + 'docs/docs-versions.csv'
             versions_list_df = pd.read_csv(versions_data_url, na_filter=False)
             # Slice all rows for versions of this document.
-            matching_versions = versions_list_df[versions_list_df['current_iri']==self.document_configuration_yaml['current_iri']]
+            matching_versions = versions_list_df[versions_list_df['current_iri']==self.terms.document_configuration_yaml['current_iri']]
             # Sort the matching versions by version IRI in descending order so that the most recent version is first.
             matching_versions = matching_versions.sort_values(by=['version_iri'], ascending=[False])
             # The previous version is the second row in the dataframe (row 1).
@@ -579,7 +453,7 @@ class TermList:
 
         term_data = {}
 
-        term = self.terms_sorted_by_localname.loc[self.terms_sorted_by_localname['term_iri'] == term_iri].iloc[0]
+        term = self.terms.terms_sorted_by_localname.loc[self.terms.terms_sorted_by_localname['term_iri'] == term_iri].iloc[0]
 
         term_data["label"] = term['term_localName'] # See https://github.com/tdwg/dwc/issues/253#issuecomment-670098202
         term_data["iri"] = term['pref_ns_uri'] + term['term_localName']
@@ -743,10 +617,13 @@ def generate_all_qrg(termList, locales):
         termList.generate_qrg(locale, outFileName, dictionaryFileName, templateFileName)
         print("")
 
-
 # Darwin Core Terms
+dwc = dwcterms.DwcTerms(
+    githubBaseUri = githubBaseUri,
+    termLists = ['terms', 'iri', 'dc-for-dwc', 'dcterms-for-dwc', 'ac-for-dwc'])
+
 dwc_list = TermList(
-    termLists = ['terms', 'iri', 'dc-for-dwc', 'dcterms-for-dwc', 'ac-for-dwc'],
+    terms = dwc,
     vocabType = 1,
     organizedInCategories = True,
     displayOrder = ['', 'http://purl.org/dc/elements/1.1/', 'http://purl.org/dc/terms/', 'http://rs.tdwg.org/dwc/terms/Occurrence', 'http://rs.tdwg.org/dwc/terms/Organism', 'http://rs.tdwg.org/dwc/terms/MaterialEntity', 'http://rs.tdwg.org/dwc/terms/MaterialSample', 'http://rs.tdwg.org/dwc/terms/Event', 'http://purl.org/dc/terms/Location', 'http://rs.tdwg.org/dwc/terms/GeologicalContext', 'http://rs.tdwg.org/dwc/terms/Identification', 'http://rs.tdwg.org/dwc/terms/Taxon', 'http://rs.tdwg.org/dwc/terms/MeasurementOrFact', 'http://rs.tdwg.org/dwc/terms/ResourceRelationship', 'http://rs.tdwg.org/dwc/terms/attributes/UseWithIRI'],
@@ -761,8 +638,11 @@ generate_all_markdown(dwc_list, 'list', languages)
 generate_all_qrg(dwc_list, languages)
 
 # Establishment Means Vocabulary
+em = dwcterms.DwcTerms(
+    githubBaseUri = githubBaseUri,
+    termLists = ['establishmentMeans'])
 em_list = TermList(
-    termLists = ['establishmentMeans'],
+    terms = em,
     vocabType = 2,
     organizedInCategories = False,
     displayOrder = [''],
@@ -774,8 +654,11 @@ em_list = TermList(
 generate_all_markdown(em_list, 'em', languages)
 
 # Degree of Establishment Vocabulary
+doe = dwcterms.DwcTerms(
+    githubBaseUri = githubBaseUri,
+    termLists = ['degreeOfEstablishment'])
 doe_list = TermList(
-    termLists = ['degreeOfEstablishment'],
+    terms = doe,
     vocabType = 2,
     organizedInCategories = False,
     displayOrder = [''],
@@ -787,8 +670,11 @@ doe_list = TermList(
 generate_all_markdown(doe_list, 'doe', languages)
 
 # Pathway Vocabulary
+pw = dwcterms.DwcTerms(
+    githubBaseUri = githubBaseUri,
+    termLists = ['pathway'])
 pw_list = TermList(
-    termLists = ['pathway'],
+    terms = pw,
     vocabType = 3,
     organizedInCategories = False,
     displayOrder = [''],
