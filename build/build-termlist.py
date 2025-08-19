@@ -5,6 +5,7 @@
 # This script merges static Markdown header documents with term information tables (in Markdown) generated from data in the rs.tdwg.org repo from the TDWG Github site
 
 import re
+import sys
 import requests   # best library to manage HTTP transactions
 import csv        # library to read/write/parse CSV files
 import json       # library to convert JSON to Python data structures
@@ -15,10 +16,22 @@ import yaml
 from jinja2 import FileSystemLoader, Environment
 
 # -----------------
-# Configuration section
+# Command line arguments
 # -----------------
 
-github_branch = 'master' # "master" for production, something else for development
+arg_vals = sys.argv[1:]
+opts = [opt for opt in arg_vals if opt.startswith('-')]
+args = [arg for arg in arg_vals if not arg.startswith('-')]
+
+# "master" for production, something else for development
+if '--branch' in opts:
+    github_branch = args[opts.index('--branch')]
+else:
+    github_branch = 'master'
+
+# -----------------
+# Configuration section
+# -----------------
 
 languages = ['en', 'cs', 'es', 'fr', 'ko', 'zh-Hant']
 
