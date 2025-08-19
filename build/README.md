@@ -84,4 +84,4 @@ It also builds the Quick Reference guide with the terms listed in [qrg-template/
 This script is run as part of the site build to keep translations into other languages up-to-date.
 
 ------
-Last edited: 2025-07-08
+Last edited: 2025-08-19
