@@ -33,7 +33,7 @@ else:
 if '--dir' in opts:
     directory_name = args[opts.index('--dir')]
 else:
-    print('Must specify name of directory containing template and configs using --dir option')
+    print('Must specify name of directory containing document_configuration.yaml using --dir option')
     exit()
 
 # "master" for production, something else for development
