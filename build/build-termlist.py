@@ -46,13 +46,13 @@ if localGithub:
 # Load header data
 # ---------------
 
-config_file_path = 'process/document_metadata_processing/dwc_doc_list/'
+config_file_path = 'process/document_metadata_processing/'
 contributors_yaml_file = 'authors_configuration.yaml'
 document_configuration_yaml_file = 'document_configuration.yaml'
 
 class TermList:
 
-    def __init__(self, termLists, vocabType, organizedInCategories, displayOrder, displayLabel, displayComments, displayId):
+    def __init__(self, termLists, vocabType, organizedInCategories, displayOrder, displayLabel, displayComments, displayId, config_dir):
         """
         Tables of terms.
 
@@ -64,6 +64,7 @@ class TermList:
         displayLabel -- these are the section labels for the categories in the page
         displayComments -- these are the comments about the category to be appended following the section labels
         displayId -- these are the fragment identifiers for the associated sections for the categories
+        config_dir -- the subdirectory of process/document_metadata_processing/ in the rs.tdwg.org repo that contains the authors and document configuration YAML files
         """
 
         self.termLists = termLists
@@ -74,8 +75,8 @@ class TermList:
         self.display_comments = displayComments
         self.display_id = displayId
 
-        self.load_contributors()
-        self.load_document_configuration()
+        self.load_contributors(config_dir)
+        self.load_document_configuration(config_dir)
 
         self.decisions_df = pd.read_csv(githubBaseUri + 'decisions/decisions-links.csv', na_filter=False)
         self.decisions_df = self.decisions_df[['linked_affected_resource', 'decision_localName']]
@@ -85,9 +86,9 @@ class TermList:
         pass
 
 
-    def load_contributors(self):
+    def load_contributors(self, config_dir):
         # Load the contributors YAML file from its GitHub URL
-        contributors_yaml_url = githubBaseUri + config_file_path + contributors_yaml_file
+        contributors_yaml_url = githubBaseUri + config_file_path + config_dir + '/' + contributors_yaml_file
         if localGithub:
             with open(contributors_yaml_url) as file: contributors_yaml = file.read()
         else:
@@ -99,9 +100,9 @@ class TermList:
         self.contributors_yaml = yaml.load(contributors_yaml, Loader=yaml.FullLoader)
 
 
-    def load_document_configuration(self):
+    def load_document_configuration(self, config_dir):
         # Load the document configuration YAML file from its GitHub URL
-        document_configuration_yaml_url = githubBaseUri + config_file_path + document_configuration_yaml_file
+        document_configuration_yaml_url = githubBaseUri + config_file_path + config_dir + '/' + document_configuration_yaml_file
         if localGithub:
             with open(document_configuration_yaml_url) as file: document_configuration_yaml = file.read()
         else:
@@ -765,7 +766,9 @@ dwc_list = TermList(
     displayOrder = ['', 'http://purl.org/dc/elements/1.1/', 'http://purl.org/dc/terms/', 'http://rs.tdwg.org/dwc/terms/Occurrence', 'http://rs.tdwg.org/dwc/terms/Organism', 'http://rs.tdwg.org/dwc/terms/MaterialEntity', 'http://rs.tdwg.org/dwc/terms/MaterialSample', 'http://rs.tdwg.org/dwc/terms/Event', 'http://purl.org/dc/terms/Location', 'http://rs.tdwg.org/dwc/terms/GeologicalContext', 'http://rs.tdwg.org/dwc/terms/Identification', 'http://rs.tdwg.org/dwc/terms/Taxon', 'http://rs.tdwg.org/dwc/terms/MeasurementOrFact', 'http://rs.tdwg.org/dwc/terms/ResourceRelationship', 'http://rs.tdwg.org/dwc/terms/attributes/UseWithIRI'],
     displayLabel = ['Record level', 'Dublin Core legacy namespace', 'Dublin Core terms namespace', 'Occurrence', 'Organism', 'Material Entity', 'Material Sample', 'Event', 'Location', 'Geological Context', 'Identification', 'Taxon', 'Measurement or Fact', 'Resource Relationship', 'IRI-value terms'],
     displayComments = ['','','','','','','','','','','','','','',''],
-    displayId = ['record_level', 'dc', 'dcterms', 'occurrence', 'organism', 'material_entity', 'material_sample', 'event', 'location', 'geological_context', 'identification', 'taxon', 'measurement_or_fact', 'resource_relationship', 'use_with_iri'])
+    displayId = ['record_level', 'dc', 'dcterms', 'occurrence', 'organism', 'material_entity', 'material_sample', 'event', 'location', 'geological_context', 'identification', 'taxon', 'measurement_or_fact', 'resource_relationship', 'use_with_iri'],
+    config_dir = 'dwc_doc_list'
+)
 
 # Darwin Core Terms HTML
 generate_all_markdown(dwc_list, 'list', languages)
@@ -781,7 +784,9 @@ em_list = TermList(
     displayOrder = [''],
     displayLabel = ['Vocabulary'],
     displayComments = [''],
-    displayId = ['Vocabulary'])
+    displayId = ['Vocabulary'],
+    config_dir = 'dwc_doc_em'
+)
 
 # Establishment Means HTML
 generate_all_markdown(em_list, 'em', languages)
@@ -794,7 +799,9 @@ doe_list = TermList(
     displayOrder = [''],
     displayLabel = ['Vocabulary'],
     displayComments = [''],
-    displayId = ['Vocabulary'])
+    displayId = ['Vocabulary'],
+    config_dir = 'dwc_doc_doe'
+)
 
 # Degree of Establishment HTML
 generate_all_markdown(doe_list, 'doe', languages)
@@ -807,7 +814,9 @@ pw_list = TermList(
     displayOrder = [''],
     displayLabel = ['Vocabulary'],
     displayComments = [''],
-    displayId = ['Vocabulary'])
+    displayId = ['Vocabulary'],
+    config_dir = 'dwc_doc_pw'
+)
 
 # Pathway HTML
 generate_all_markdown(pw_list, 'pw', languages)
