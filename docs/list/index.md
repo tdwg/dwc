@@ -6274,7 +6274,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2025-06-12</td>
+			<td>2020-01-27</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/ac/terms/version/fundingAttribution-2020-01-27 ">http://rs.tdwg.org/ac/terms/version/fundingAttribution-2020-01-27 </a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
