@@ -789,6 +789,7 @@ This category contains terms that are generic in that they might apply to any ty
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:materialEntityID">materialEntityID</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:digitalSpecimenID">digitalSpecimenID</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:materialEntityType">materialEntityType</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:discipline">discipline</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:preparations">preparations</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:disposition">disposition</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimLabel">verbatimLabel</a>
@@ -843,6 +844,19 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Definition</td><td>A category that best matches the nature of a dwc:MaterialEntity.</td></tr>
     <tr><td>Comments</td><td>A more generic classification of a dwc:MaterialEntity than dwc:preparations. Recommended best practice is to use a controlled vocabulary. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Macro-object</code></li><li class="list-group-item"><code>Micro-object</code></li><li class="list-group-item"><code>Oversized object</code></li><li class="list-group-item"><code>Cut/polished gemstone</code></li><li class="list-group-item"><code>Compound Specimen</code></li><li class="list-group-item"><code>Core</code></li><li class="list-group-item"><code>Mixed Materials</code></li><li class="list-group-item"><code>Environmental sample</code></li><li class="list-group-item"><code>Microscope slide</code></li><li class="list-group-item"><code>Spore print</code></li><li class="list-group-item"><code>Macrofossil</code></li><li class="list-group-item"><code>Mesofossil</code></li><li class="list-group-item"><code>Microfossil</code></li><li class="list-group-item"><code>Pinned object/specimen</code></li><li class="list-group-item"><code>Taxidermy mount</code></li><li class="list-group-item"><code>Blood sampling cards</code></li><li class="list-group-item"><code>Oversized fossil</code></li><li class="list-group-item"><code>Anthropogenic Artifact</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:discipline"></span>
+    <span id="discipline"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">discipline</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/discipline">http://rs.tdwg.org/dwc/terms/discipline</a></td></tr>
+    <tr><td>Definition</td><td>The primary branch or branches of knowledge represented by the record.</td></tr>
+    <tr><td>Comments</td><td>This term can be used to classify records according to branches of knowledge. Recommended best practice is to use a controlled vocabulary and to separate the values in a list with space vertical bar space ( | ).This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.  It is also recommended to use this field to describe specimenType in MIDS.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Botany</code></li><li class="list-group-item"><code>Botany | Virology | Taxonomy</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -3300,7 +3314,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr class="table-secondary"><th colspan="2">behavior</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/behavior">http://rs.tdwg.org/dwc/iri/behavior</a></td></tr>
     <tr><td>Definition</td><td>A description of the behavior shown by the subject at the time the dwc:Occurrence was recorded.</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
@@ -3312,7 +3326,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr class="table-secondary"><th colspan="2">caste</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/caste">http://rs.tdwg.org/dwc/iri/caste</a></td></tr>
     <tr><td>Definition</td><td>Categorisation of individuals for eusocial species (including some mammals and arthropods).</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary that aligns best with the dwc:Taxon. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary that aligns best with the dwc:Taxon. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
@@ -3324,7 +3338,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr class="table-secondary"><th colspan="2">dataGeneralizations</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/dataGeneralizations">http://rs.tdwg.org/dwc/iri/dataGeneralizations</a></td></tr>
     <tr><td>Definition</td><td>Actions taken to make the shared data less specific or complete than in its original form. Suggests that alternative data of higher quality may be available on request.</td></tr>
-    <tr><td>Comments</td><td>Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Comments</td><td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
@@ -3336,7 +3350,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr class="table-secondary"><th colspan="2">degreeOfEstablishment</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/degreeOfEstablishment">http://rs.tdwg.org/dwc/iri/degreeOfEstablishment</a></td></tr>
     <tr><td>Definition</td><td>The degree to which a dwc:Organism survives, reproduces, and expands its range at the given place and time.</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to use IRIs from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/doe/">http://rs.tdwg.org/dwc/doc/doe/</a>. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a> . Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to use IRIs from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/doe/">http://rs.tdwg.org/dwc/doc/doe/</a>. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a> . Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="http://rs.tdwg.org/dwcdoe/values/d003">http://rs.tdwg.org/dwcdoe/values/d003</a></code></li><li class="list-group-item"><code><a href="http://rs.tdwg.org/dwcdoe/values/d005">http://rs.tdwg.org/dwcdoe/values/d005</a></code></li></ul></td></tr>
   </tbody>
 </table>
@@ -3348,7 +3362,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr class="table-secondary"><th colspan="2">disposition</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/disposition">http://rs.tdwg.org/dwc/iri/disposition</a></td></tr>
     <tr><td>Definition</td><td>The current state of a specimen with respect to the collection identified in dwc:collectionCode or dwc:collectionID.</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
@@ -3372,7 +3386,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr class="table-secondary"><th colspan="2">establishmentMeans</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/establishmentMeans">http://rs.tdwg.org/dwc/iri/establishmentMeans</a></td></tr>
     <tr><td>Definition</td><td>Statement about whether a dwc:Organism has been introduced to a given place and time through the direct or indirect activity of modern humans.</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to use IRIs from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/em/">http://rs.tdwg.org/dwc/doc/em/</a>. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a> . Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to use IRIs from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/em/">http://rs.tdwg.org/dwc/doc/em/</a>. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a> . Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="http://rs.tdwg.org/dwcem/values/e001">http://rs.tdwg.org/dwcem/values/e001</a></code></li><li class="list-group-item"><code><a href="http://rs.tdwg.org/dwcem/values/e005">http://rs.tdwg.org/dwcem/values/e005</a></code></li></ul></td></tr>
   </tbody>
 </table>
@@ -3384,7 +3398,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr class="table-secondary"><th colspan="2">eventType</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/eventType">http://rs.tdwg.org/dwc/iri/eventType</a></td></tr>
     <tr><td>Definition</td><td>The nature of the dwc:Event.</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. Regardless of the dwc:eventType, the interval of the dwc:Event can be captured in dwc:eventDate. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. Regardless of the dwc:eventType, the interval of the dwc:Event can be captured in dwc:eventDate. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
@@ -3432,7 +3446,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr class="table-secondary"><th colspan="2">footprintWKT</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/footprintWKT">http://rs.tdwg.org/dwc/iri/footprintWKT</a></td></tr>
     <tr><td>Definition</td><td>A Well-Known Text (WKT) representation of the shape (footprint, geometry) that defines the dcterms:Location. A dcterms:Location may have both a point-radius representation (see dwc:decimalLatitude) and a footprint representation, and they may differ from each other.</td></tr>
-    <tr><td>Comments</td><td>Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Comments</td><td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
@@ -3444,7 +3458,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr class="table-secondary"><th colspan="2">fundingAttribution</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/fundingAttribution">http://rs.tdwg.org/dwc/iri/fundingAttribution</a></td></tr>
     <tr><td>Definition</td><td>An organization or agency that provided funding for a project.</td></tr>
-    <tr><td>Comments</td><td>Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Comments</td><td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
@@ -3480,7 +3494,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr class="table-secondary"><th colspan="2">georeferencedBy</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/georeferencedBy">http://rs.tdwg.org/dwc/iri/georeferencedBy</a></td></tr>
     <tr><td>Definition</td><td>A person, group, or organization who determined the georeference (spatial representation) for the dcterms:Location.</td></tr>
-    <tr><td>Comments</td><td>Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Comments</td><td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
@@ -3492,7 +3506,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr class="table-secondary"><th colspan="2">georeferenceProtocol</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/georeferenceProtocol">http://rs.tdwg.org/dwc/iri/georeferenceProtocol</a></td></tr>
     <tr><td>Definition</td><td>A description or reference to the methods used to determine the spatial footprint, coordinates, and uncertainties.</td></tr>
-    <tr><td>Comments</td><td>Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Comments</td><td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
@@ -3504,7 +3518,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr class="table-secondary"><th colspan="2">georeferenceSources</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/georeferenceSources">http://rs.tdwg.org/dwc/iri/georeferenceSources</a></td></tr>
     <tr><td>Definition</td><td>A map, gazetteer, or other resource used to georeference the dcterms:Location.</td></tr>
-    <tr><td>Comments</td><td>Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Comments</td><td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
@@ -3516,7 +3530,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr class="table-secondary"><th colspan="2">georeferenceVerificationStatus</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/georeferenceVerificationStatus">http://rs.tdwg.org/dwc/iri/georeferenceVerificationStatus</a></td></tr>
     <tr><td>Definition</td><td>A categorical description of the extent to which the georeference has been verified to represent the best possible spatial description for the dcterms:Location of the dwc:Occurrence.</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
@@ -3528,7 +3542,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr class="table-secondary"><th colspan="2">habitat</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/habitat">http://rs.tdwg.org/dwc/iri/habitat</a></td></tr>
     <tr><td>Definition</td><td>A category or description of the habitat in which the dwc:Event occurred.</td></tr>
-    <tr><td>Comments</td><td>Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Comments</td><td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
@@ -3540,7 +3554,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr class="table-secondary"><th colspan="2">identificationQualifier</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/identificationQualifier">http://rs.tdwg.org/dwc/iri/identificationQualifier</a></td></tr>
     <tr><td>Definition</td><td>A controlled value to express the determiner's doubts about the dwc:Identification.</td></tr>
-    <tr><td>Comments</td><td>Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Comments</td><td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
@@ -3552,7 +3566,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr class="table-secondary"><th colspan="2">identificationVerificationStatus</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/identificationVerificationStatus">http://rs.tdwg.org/dwc/iri/identificationVerificationStatus</a></td></tr>
     <tr><td>Definition</td><td>A categorical indicator of the extent to which the taxonomic identification has been verified to be correct.</td></tr>
-    <tr><td>Comments</td><td>Terms in the dwciri namespace are intended to be used in RDF with non-literal objects. Recommended best practice is to use a controlled vocabulary such as that used in HISPID and ABCD.</td></tr>
+    <tr><td>Comments</td><td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects. Recommended best practice is to use a controlled vocabulary such as that used in HISPID and ABCD.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
@@ -3564,7 +3578,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr class="table-secondary"><th colspan="2">identifiedBy</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/identifiedBy">http://rs.tdwg.org/dwc/iri/identifiedBy</a></td></tr>
     <tr><td>Definition</td><td>A person, group, or organization who assigned the dwc:Taxon to the subject.</td></tr>
-    <tr><td>Comments</td><td>When used in the context of an Event (such as in the Humboldt Extension), the subject consists of all of the dwc:Organisms related to the Event. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Comments</td><td>When used in the context of an Event (such as in the Humboldt Extension), the subject consists of all of the dwc:Organisms related to the Event. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
@@ -3612,7 +3626,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr class="table-secondary"><th colspan="2">informationWithheld</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/informationWithheld">http://rs.tdwg.org/dwc/iri/informationWithheld</a></td></tr>
     <tr><td>Definition</td><td>Additional information that exists, but that has not been shared in the given record.</td></tr>
-    <tr><td>Comments</td><td>Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Comments</td><td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
@@ -3649,7 +3663,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr class="table-secondary"><th colspan="2">lifeStage</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/lifeStage">http://rs.tdwg.org/dwc/iri/lifeStage</a></td></tr>
     <tr><td>Definition</td><td>The age class or life stage of the dwc:Organism(s) at the time the dwc:Occurrence was recorded.</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
@@ -3661,7 +3675,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr class="table-secondary"><th colspan="2">locationAccordingTo</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/locationAccordingTo">http://rs.tdwg.org/dwc/iri/locationAccordingTo</a></td></tr>
     <tr><td>Definition</td><td>Information about the source of this dcterms:Location information. Could be a publication (gazetteer), institution, or team of individuals.</td></tr>
-    <tr><td>Comments</td><td>Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Comments</td><td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
@@ -3673,7 +3687,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr class="table-secondary"><th colspan="2">measurementDeterminedBy</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/measurementDeterminedBy">http://rs.tdwg.org/dwc/iri/measurementDeterminedBy</a></td></tr>
     <tr><td>Definition</td><td>A person, group, or organization who determined the value of the dwc:MeasurementOrFact.</td></tr>
-    <tr><td>Comments</td><td>Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Comments</td><td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
@@ -3685,7 +3699,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr class="table-secondary"><th colspan="2">measurementMethod</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/measurementMethod">http://rs.tdwg.org/dwc/iri/measurementMethod</a></td></tr>
     <tr><td>Definition</td><td>The method or protocol used to determine the measurement, fact, characteristic, or assertion.</td></tr>
-    <tr><td>Comments</td><td>Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Comments</td><td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
@@ -3697,7 +3711,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr class="table-secondary"><th colspan="2">measurementType</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/measurementType">http://rs.tdwg.org/dwc/iri/measurementType</a></td></tr>
     <tr><td>Definition</td><td>The nature of the measurement, fact, characteristic, or assertion.</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
@@ -3721,7 +3735,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr class="table-secondary"><th colspan="2">measurementValue</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/measurementValue">http://rs.tdwg.org/dwc/iri/measurementValue</a></td></tr>
     <tr><td>Definition</td><td>The value of the measurement, fact, characteristic, or assertion.</td></tr>
-    <tr><td>Comments</td><td>Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Comments</td><td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td><code><a href="http://vocab.nerc.ac.uk/collection/L22/current/TOOL0960/">http://vocab.nerc.ac.uk/collection/L22/current/TOOL0960/</a></code></td></tr>
   </tbody>
 </table>
@@ -3733,7 +3747,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr class="table-secondary"><th colspan="2">occurrenceStatus</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/occurrenceStatus">http://rs.tdwg.org/dwc/iri/occurrenceStatus</a></td></tr>
     <tr><td>Definition</td><td>A statement about the presence or absence of a dwc:Taxon at a dcterms:Location.</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
@@ -3757,7 +3771,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr class="table-secondary"><th colspan="2">pathway</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/pathway">http://rs.tdwg.org/dwc/iri/pathway</a></td></tr>
     <tr><td>Definition</td><td>The process by which a dwc:Organism came to be in a given place at a given time.</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to use IRIs from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/pw/">http://rs.tdwg.org/dwc/doc/pw/</a>. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a> . Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to use IRIs from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/pw/">http://rs.tdwg.org/dwc/doc/pw/</a>. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a> . Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="http://rs.tdwg.org/dwcpw/values/p002">http://rs.tdwg.org/dwcpw/values/p002</a></code></li><li class="list-group-item"><code><a href="http://rs.tdwg.org/dwcpw/values/p046">http://rs.tdwg.org/dwcpw/values/p046</a></code></li></ul></td></tr>
   </tbody>
 </table>
@@ -3769,7 +3783,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr class="table-secondary"><th colspan="2">preparations</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/preparations">http://rs.tdwg.org/dwc/iri/preparations</a></td></tr>
     <tr><td>Definition</td><td>A preparation or preservation method for a specimen.</td></tr>
-    <tr><td>Comments</td><td>Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Comments</td><td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
@@ -3781,7 +3795,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr class="table-secondary"><th colspan="2">recordedBy</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/recordedBy">http://rs.tdwg.org/dwc/iri/recordedBy</a></td></tr>
     <tr><td>Definition</td><td>A person, group, or organization responsible for recording the original dwc:Occurrence.</td></tr>
-    <tr><td>Comments</td><td>Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Comments</td><td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
@@ -3805,7 +3819,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr class="table-secondary"><th colspan="2">reproductiveCondition</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/reproductiveCondition">http://rs.tdwg.org/dwc/iri/reproductiveCondition</a></td></tr>
     <tr><td>Definition</td><td>The reproductive condition of the biological individual(s) represented in the dwc:Occurrence.</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
@@ -3841,7 +3855,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr class="table-secondary"><th colspan="2">sex</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/sex">http://rs.tdwg.org/dwc/iri/sex</a></td></tr>
     <tr><td>Definition</td><td>The sex of the biological individual(s) represented in the dwc:Occurrence.</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
@@ -3877,7 +3891,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr class="table-secondary"><th colspan="2">typeStatus</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/typeStatus">http://rs.tdwg.org/dwc/iri/typeStatus</a></td></tr>
     <tr><td>Definition</td><td>A nomenclatural type (type status, typified scientific name, publication) applied to the subject.</td></tr>
-    <tr><td>Comments</td><td>Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Comments</td><td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
@@ -3889,7 +3903,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr class="table-secondary"><th colspan="2">verbatimCoordinateSystem</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/verbatimCoordinateSystem">http://rs.tdwg.org/dwc/iri/verbatimCoordinateSystem</a></td></tr>
     <tr><td>Definition</td><td>The spatial coordinate system for the dwc:verbatimLatitude and dwc:verbatimLongitude or the dwc:verbatimCoordinates of the dcterms:Location.</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
@@ -3913,7 +3927,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr class="table-secondary"><th colspan="2">verticalDatum</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/verticalDatum">http://rs.tdwg.org/dwc/iri/verticalDatum</a></td></tr>
     <tr><td>Definition</td><td>The vertical datum used as the reference upon which the values in the elevation terms are based.</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
@@ -3925,7 +3939,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr class="table-secondary"><th colspan="2">vitality</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/vitality">http://rs.tdwg.org/dwc/iri/vitality</a></td></tr>
     <tr><td>Definition</td><td>An indication of whether a dwc:Organism was alive or dead at the time of collection or observation.</td></tr>
-    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. Intended to be used with records having a dwc:basisOfRecord of <code>PreservedSpecimen</code>, <code>MaterialEntity</code>, <code>MaterialSample</code>, or <code>HumanObservation</code>. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Comments</td><td>Recommended best practice is to use a controlled vocabulary. Intended to be used with records having a dwc:basisOfRecord of <code>PreservedSpecimen</code>, <code>MaterialEntity</code>, <code>MaterialSample</code>, or <code>HumanObservation</code>. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
