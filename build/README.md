@@ -2,13 +2,14 @@
 
 ![workflow diagram](workflow_diagram.png)
 
-**Note:** *It is highly recommended that you do not hand-edit the raw CSVs with a text editor. Use Libre Office (NOT Excel). This will reliably open, close, and edit the file while preserving and escaping commas, quotes, etc. and also not mess up the UTF-8 encoding if you set it up properly.*
+> [!WARNING]
+> *It is highly recommended that you do not hand-edit the raw CSVs with a text editor.* Use Libre Office (NOT Excel). This will reliably open, close, and edit the file while preserving and escaping commas, quotes, etc. and also not mess up the UTF-8 encoding if you set it up properly.
 
 The definitive versions of term definitions are stored in the [rs.tdwg.org repository](https://github.com/tdwg/rs.tdwg.org/).  Generating a new version of Darwin Core requires us to make changes to that repository, then to ensure downstream results are updated (the Darwin Core website, IPT extensions etc).
 
 ## Prepare source CSV files
 
-1. Create a source data CSV file for each of the namespaces that has terms that have changed. [This directory](https://github.com/tdwg/rs.tdwg.org/tree/master/process/dwc-revisions/) has examples from previous updates to Darwin Core. You can get the column headers by downloading a CSV for a previous update to that namespace, then deleting all of the data rows. For example, [here](https://github.com/tdwg/rs.tdwg.org/blob/master/process/dwc-revisions/eco-2025-07-10/ecoiri.csv) is an update to terms in the `ecoiri:` namespace and [here](https://github.com/tdwg/rs.tdwg.org/blob/master/process/dwc-revisions/em-2025-06-12/establishmentmeans_terms_2025-06-12.csv) is an update to the `dwcem:` namespace. For historical reasons, different column headers have been used for the main vocabularies and the controlled vocabularies, so that's why you should use a previous example. 
+1. Create a source data CSV file for each of the namespaces that has terms that have changed. [This directory](https://github.com/tdwg/rs.tdwg.org/tree/master/process/dwc-revisions/) has examples from previous updates to Darwin Core. You can get the column headers by downloading a CSV for a previous update to that namespace, then deleting all of the data rows. For example, [here](https://github.com/tdwg/rs.tdwg.org/blob/master/process/dwc-revisions/eco-2025-07-10/ecoiri.csv) is an update to terms in the `ecoiri:` namespace and [here](https://github.com/tdwg/rs.tdwg.org/blob/master/process/dwc-revisions/em-2025-06-12/establishmentmeans_terms_2025-06-12.csv) is an update to the `dwcem:` namespace. For historical reasons, different column headers have been used for the main vocabularies and the controlled vocabularies, so that's why you should use a previous example.
 2. A source data CSV MUST have a row for each term that has changed (modified or added). For existing terms that have changed, it is safest to start by copying the existing data cells for a term and then modifying them with the changes. The CSVs that contain the existing data for various namespaces are as follows:
    * [`dwc:` terms](https://github.com/tdwg/rs.tdwg.org/blob/master/terms/terms.csv),
    * [`dwciri:` terms](https://github.com/tdwg/rs.tdwg.org/blob/master/iri/iri.csv),
@@ -24,7 +25,9 @@ Note that these CSVs contain some columns with machine-generated metadata, so ma
 
 ## Run the processing script
 
-**NOTE: In the future, this part of the update process may be managed centrally by someone outside of the DwC Maintenance Group.** In that case, you would just pass off the source CSVs to them and pick up the process with the section on updating the Darwin Core website. Currently Steve Baskauf and Matt Blissett are familiar with setting up and running the processing scripts described in the following section. This process is described in more detail [here](https://github.com/tdwg/rs.tdwg.org/blob/master/process/process-vocabulary.md).
+> [!NOTE]
+> **In the future, this part of the update process may be managed centrally by someone outside of the DwC Maintenance Group.** In that case, you would just pass off the source CSVs to them and pick up the process with the section on updating the Darwin Core website.
+> Currently Steve Baskauf and Matt Blissett are familiar with setting up and running the processing scripts described in the following section. This process is described in more detail [here](https://github.com/tdwg/rs.tdwg.org/blob/master/process/process-vocabulary.md).
 
 5. Create a new branch (or fork if you don't have push rights) of the [rs.tdwg.org repo](https://github.com/tdwg/rs.tdwg.org). We have been saving copies of the changes in [this directory](https://github.com/tdwg/rs.tdwg.org/tree/master/process/dwc-revisions) so that we can easily see what's been changed for each past version. We create a dated subdirectory for each revision so that it's easier to see what changes were made in past updates.
 6. You need to have two YAML files before starting: config.yaml and vocab.yaml . There are examples in the saved data folders. Provide an appropriate path as a value for the `modifications_file_path` key for each namespace in the configuration file [config.yaml](https://github.com/tdwg/rs.tdwg.org/blob/master/process/config.yaml) so that the path points to the subdirectory and filename of the source CSV for changes in that namespace. We have been saving copies of these configuration files with each update in the appropriate update subfolder, so you can look at [the configuration file that goes along with the CSV files in the same directory](https://github.com/tdwg/rs.tdwg.org/blob/master/process/dwc-revisions/dwc-revisions-2023-09-18/config.yaml). Only include data for the namespaces that will be updated.
@@ -43,45 +46,33 @@ Note that these CSVs contain some columns with machine-generated metadata, so ma
 
 13. Create a branch of the [Darwin Core repo](https://github.com/tdwg/dwc).
 14. There is a script called [update_previous_doc.py](https://github.com/tdwg/dwc/blob/master/build/update_previous_doc.py) that must be run before actually building the term list. It requires the updated documents metadata uploaded to rs.tdwg.org in step 10 above. It takes the current document (index.md) and transforms it into a previous version (named by the version date). There are two command line arguments that are required `--slug`, which provides the last part of the document URL, and `--dir`, which gives the name of the directory within the process/document_metadata_processing/ folder of the rs.tdwg.org GitHub repo that contains the document_configuration.yaml file. NOTE: the default branch of rs.tdwg.org is set to the master branch in production. However, if you are generating provisional versions of the docs (e.g. for public or Executive Committee review), you may need to use the `--branch` command line argument to specify a different branch.
-15. The structure and order of listing of terms in the Quick Reference Guide is controlled by the file [qrg-list.csv](https://github.com/tdwg/dwc/blob/master/build/qrg-list.csv). It is very sensitive to the position of the class terms, which controls the division of the QRG into sections. Also, `http://rs.tdwg.org/dwc/iri/behavior` must be the first term in the section that will be labeled "Use with IRI". So it must be edited with some care. If new terms are added, their IRIs must be added in the proper place in this document in order for them to appear in the QRG.
-16. Run the script [build-termlist.py](https://github.com/tdwg/dwc/blob/master/build/build-termlist.py). As with the previous script, if the branch is other than the master, use the `--branch` command line option to specify a different branch.
-17. Check the diffs for the newly generated files in the [docs/](https://github.com/tdwg/dwc/tree/master/docs) directory and make sure that the changes are appropriate.
-18. **I think the function of term_versions.csv with respect to building the QRG is no longer relevant. It still seems necessary to build the derivative files in step 19, but perhaps that script could be modified to use the same source files as everything else and we just wouldn't need term_version.csv any more?** Run the [generate_term_versions.py](https://github.com/tdwg/dwc/blob/master/build/generate_term_versions.py) script to generate a new version of [term_versions.csv](https://github.com/tdwg/dwc/blob/master/vocabulary/term_versions.csv). At some point, this script maybe integrated into `build-termlist.py`.
-19. Run the [build-derivatives.py](https://github.com/tdwg/dwc/blob/master/build/build-derivatives.py) script to build the derivative files.
-20. Create a pull request for the new branch.
-21. When the branch has been reviewed carefully, merge the branch. The new pages should be live as soon as Jekyll rebuilds them on GitHub.
+15. The structure and order of listing of terms in the Quick Reference Guide and derivative CSVs is controlled by the file [qrg-list.csv](https://github.com/tdwg/dwc/blob/master/build/qrg-list.csv). It is very sensitive to the position of the class terms, which controls the division of the QRG into sections. Also, `http://rs.tdwg.org/dwc/iri/behavior` must be the first term in the section that will be labeled "Use with IRI". So it must be edited with some care. If new terms are added, their IRIs must be added in the proper place in this document in order for them to appear in the QRG and derivative CSVs.
+16. Run the three scripts (in any order) and check the diffs for the newly generated files.  As with the previous script, if the branch is other than the master, use the `--branch` command line option to specify a different branch.
+   i. [build-csv_derivatives.py](https://github.com/tdwg/dwc/blob/master/build/build-csv_derivatives.py) builds the derivative CSV files in the [dist/](https://github.com/tdwg/dwc/tree/master/dist) directory.
+   ii. [build-webpages.py](https://github.com/tdwg/dwc/blob/master/build/build-webpages.py) updates the website documents (HTML and Markdown) in the [docs/](https://github.com/tdwg/dwc/tree/master/docs) directory.
+   iii. [build-term_versions.py](https://github.com/tdwg/dwc/blob/master/build/build-term_versions.py) updates the [term_versions.csv](https://github.com/tdwg/dwc/blob/master/vocabulary/term_versions.csv) file in the [vocabulary/](https://github.com/tdwg/dwc/tree/master/vocabulary) directory.
+17. Create a pull request for the new branch.
+18. When the branch has been reviewed carefully, merge the branch. The new pages should be live as soon as Jekyll rebuilds them on GitHub.
 
-## Build script
+## Build scripts
 
-The build script `build-derivatives.py` uses as input the list of terms, [vocabulary/term_versions.csv](../vocabulary/term_versions.csv), and creates two simple Darwin Core CSV files in [dist/](../dist/).
+The build scripts `build-csv_derivatives.py`, `build-webpages.py` and `build-term_versions.py` use as input the [rs.tdwg.org](http://github.com/tdwg/rs.tdwg.org) repository, either online (branch given by `--branch`) or local (path given by `--rs-path`).
 
-## Run the build script
+The `build-webpages.py` script also uses header information from `*/termlist-header.en.md` and `termlist-footer.en.md`. The constructed Markdown documents are saved as `/docs/list/index.md`, `/docs/em/index.md`, `/docs/doe/index.md` and `/docs/pathway/index.md`.  In addition it builds the Quick Reference guide with the terms listed in [qrg-template/qrg-list.csv](qrg-template/qrg-list.csv) and the template `qrg-template/terms.en.jinja`. All of these are also built in other languages, configured within the script. This script is run automatically as a GitHub Action as translations are added in Crowdin.
 
-1. Install the required libraries (once):
+The first time any of these scripts is run, install the required libraries:
 
-    ```bash
-    pip install -r requirements.txt
-    ```
+```bash
+pip install -r requirements.txt
+```
 
-2. Run the script from the command line:
+Then run the scripts from the `build` directory:
 
-    ```bash
-    python build-derivatives.py
-    ```
-
-## Generating the "normative document"
-
-The script `generate_term_versions.py` pulls source data from the [rs.tdwg.org](http://github.com/tdwg/rs.tdwg.org) repository. The local file `qrg-list.csv` contains a list of the term IRIs in the order that they are to appear in the Quick Reference Guide. This list needs to be changed whenever terms are added to or deprecated from Darwin Core.
-
-It generates the file `term_versions.csv`, which is used as the input for the `build-derivatives.py` script above.
-
-## Generating the "list of terms" and vocabulary documents and the "quick reference guide".
-
-The Python script `build-termlist.py` uses the header information from `*/termlist-header.en.md`, then builds the list of terms and their metadata from data in the [rs.tdwg.org](http://github.com/tdwg/rs.tdwg.org) repository. The script also inputs `termlist-footer.en.md` and appends it to the end of the generated document, but currently it has no content. The constructed Markdown documents are saved as `/docs/list/index.md`, `/docs/em/index.md`, `/docs/doe/index.md` and `/docs/pathway/index.md`.
-
-It also builds the Quick Reference guide with the terms listed in [qrg-template/qrg-list.csv](qrg-template/qrg-list.csv) and the template `qrg-template/terms.en.jinja`.
-
-This script is run as part of the site build to keep translations into other languages up-to-date.
+```bash
+python3 build-csv_derivatives.py
+python3 build-webpages.py
+python3 build-term_versions.py
+```
 
 ------
-Last edited: 2025-08-19
+Last edited: 2025-08-20

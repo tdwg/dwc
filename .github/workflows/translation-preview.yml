@@ -34,7 +34,7 @@ jobs:
           cd build && pip3 install -r requirements.txt
       - name: execute py script # run file
         run: |
-          cd build && python3 build-termlist.py
+          cd build && python3 build-webpages.py
 
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
