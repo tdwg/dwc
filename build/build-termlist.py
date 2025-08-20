@@ -5,6 +5,7 @@
 # This script merges static Markdown header documents with term information tables (in Markdown) generated from data in the rs.tdwg.org repo from the TDWG Github site
 
 import re
+import sys
 import json       # library to convert JSON to Python data structures
 import os
 import pandas as pd
@@ -14,19 +15,33 @@ from jinja2 import FileSystemLoader, Environment
 import dwcterms
 
 # -----------------
-# Configuration section
+# Command line arguments
 # -----------------
 
-github_branch = 'master' # "master" for production, something else for development
+arg_vals = sys.argv[1:]
+opts = [opt for opt in arg_vals if opt.startswith('-')]
+args = [arg for arg in arg_vals if not arg.startswith('-')]
 
-languages = ['en', 'cs', 'es', 'fr', 'ko', 'zh-Hant']
+# "master" for production, something else for development
+if '--branch' in opts:
+    github_branch = args[opts.index('--branch')]
+else:
+    github_branch = 'master'
 
 # This is the base URL for raw files from the branch of the repo that has been pushed to GitHub
-githubBaseUri = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/' + github_branch + '/'
-# Optionally, use a local copy, useful during development.
-localGithub = False
-if localGithub:
-    githubBaseUri = '../../rs.tdwg.org/'
+if '--rs-path' in opts:
+    # Optionally, use a local copy of rs.tdwg.org, useful during development.
+    # e.g. '../../rs.tdwg.org/'
+    githubBaseUri = args[opts.index('--rs-path')]
+    localGithub = True
+else:
+    githubBaseUri = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/' + github_branch + '/'
+    localGithub = False
+
+# -----------------
+# Configuration section
+# -----------------
+languages = ['en', 'cs', 'es', 'fr', 'ko', 'zh-Hant']
 
 class TermList:
     def __init__(self, terms, vocabType, organizedInCategories, displayOrder, displayLabel, displayComments, displayId):
@@ -41,6 +56,7 @@ class TermList:
         displayLabel -- these are the section labels for the categories in the page
         displayComments -- these are the comments about the category to be appended following the section labels
         displayId -- these are the fragment identifiers for the associated sections for the categories
+        config_dir -- the subdirectory of process/document_metadata_processing/ in the rs.tdwg.org repo that contains the authors and document configuration YAML files
         """
 
         self.terms = terms
@@ -630,7 +646,8 @@ dwc_list = TermList(
     displayOrder = ['', 'http://purl.org/dc/elements/1.1/', 'http://purl.org/dc/terms/', 'http://rs.tdwg.org/dwc/terms/Occurrence', 'http://rs.tdwg.org/dwc/terms/Organism', 'http://rs.tdwg.org/dwc/terms/MaterialEntity', 'http://rs.tdwg.org/dwc/terms/MaterialSample', 'http://rs.tdwg.org/dwc/terms/Event', 'http://purl.org/dc/terms/Location', 'http://rs.tdwg.org/dwc/terms/GeologicalContext', 'http://rs.tdwg.org/dwc/terms/Identification', 'http://rs.tdwg.org/dwc/terms/Taxon', 'http://rs.tdwg.org/dwc/terms/MeasurementOrFact', 'http://rs.tdwg.org/dwc/terms/ResourceRelationship', 'http://rs.tdwg.org/dwc/terms/attributes/UseWithIRI'],
     displayLabel = ['Record level', 'Dublin Core legacy namespace', 'Dublin Core terms namespace', 'Occurrence', 'Organism', 'Material Entity', 'Material Sample', 'Event', 'Location', 'Geological Context', 'Identification', 'Taxon', 'Measurement or Fact', 'Resource Relationship', 'IRI-value terms'],
     displayComments = ['','','','','','','','','','','','','','',''],
-    displayId = ['record_level', 'dc', 'dcterms', 'occurrence', 'organism', 'material_entity', 'material_sample', 'event', 'location', 'geological_context', 'identification', 'taxon', 'measurement_or_fact', 'resource_relationship', 'use_with_iri'])
+    displayId = ['record_level', 'dc', 'dcterms', 'occurrence', 'organism', 'material_entity', 'material_sample', 'event', 'location', 'geological_context', 'identification', 'taxon', 'measurement_or_fact', 'resource_relationship', 'use_with_iri']
+)
 
 # Darwin Core Terms HTML
 generate_all_markdown(dwc_list, 'list', languages)
@@ -650,7 +667,8 @@ em_list = TermList(
     displayOrder = [''],
     displayLabel = ['Vocabulary'],
     displayComments = [''],
-    displayId = ['Vocabulary'])
+    displayId = ['Vocabulary']
+)
 
 # Establishment Means HTML
 generate_all_markdown(em_list, 'em', languages)
@@ -667,7 +685,8 @@ doe_list = TermList(
     displayOrder = [''],
     displayLabel = ['Vocabulary'],
     displayComments = [''],
-    displayId = ['Vocabulary'])
+    displayId = ['Vocabulary']
+)
 
 # Degree of Establishment HTML
 generate_all_markdown(doe_list, 'doe', languages)
@@ -684,7 +703,8 @@ pw_list = TermList(
     displayOrder = [''],
     displayLabel = ['Vocabulary'],
     displayComments = [''],
-    displayId = ['Vocabulary'])
+    displayId = ['Vocabulary']
+)
 
 # Pathway HTML
 generate_all_markdown(pw_list, 'pw', languages)
