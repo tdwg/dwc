@@ -10,34 +10,33 @@
 : dwcem:
 
 バージョン発行日
-: 2025-06-12
+: {ratification_date}
 
 作成日
-: 2020-10-13
+: {created_date}
 
 TDWGスタンダードでのパート
-: <http://www.tdwg.org/standards/450>
+: <{standard_iri}>
 
-この文書のバージョン
-: <http://rs.tdwg.org/dwc/doc/em/2025-06-12>
+This document version
+: <{current_iri}{ratification_date}>
 
-文書の最新バージョン
-: <http://rs.tdwg.org/dwc/doc/em/>
+Latest version of document
+: <{current_iri}>
 
-以前のバージョン
-: <http://rs.tdwg.org/dwc/doc/em/2021-09-01>
+{previous_version_slot}
 
 要旨
 : Darwin Core の用語である `establishmentMeans` は、現代の人類の直接または間接的な活動を通じて生物が特定の場所や時間に持ち込まれたかどうかについての情報を提供します。 Establishment Means 制御語彙は、`dwc:establishmentMeans` と `dwciri:establishmentMeans` の値として使用すべき用語を提供します。
 
 貢献者
-: Quentin Groom, Peter Desmet, Lien Reyserhove, Tim Adriaens, Damiano Oldoni, Sonia Vanderhoeven, Steven J Baskauf, Arthur Chapman, Melodie McGeoch, Ramona Walls, John Wieczorek, John R.U. Wilson, Paula F Zermoglio, Annie Simpson
+: {contributors}
 
 作成者
-: TDWG Darwin Core Maintenance Group
+: {creator}
 
 書誌的引用
-: Darwin Core Maintenance Group. 2025. Establishment Means Controlled Vocabulary List of Terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/em/2025-06-12>
+: {creator}. {year}. {document_title}. {publisher}. <{current_iri}{ratification_date}>
 
 ## 1 イントロダクション
 
