@@ -25,7 +25,6 @@ Latest version of document
 : <http://rs.tdwg.org/dwc/doc/pw/>
 
 Previous version
-: Previous version
 : <http://rs.tdwg.org/dwc/doc/pw/2025-06-12>
 
 Abstract
