@@ -9,34 +9,32 @@
 : dwcdoe:
 
 版本發行日期
-: 2021-09-01
+: {ratification_date}
 
 建立日期
-: 2020-10-13
 
 生物多樣性訊息標準的一部分
-: <http://www.tdwg.org/standards/450>
+: <{standard_iri}>
 
-本文件版本
-: <http://rs.tdwg.org/dwc/doc/doe/2021-09-01>
+This document version
+: <{current_iri}{ratification_date}>
 
-文件的最新版本
-: <http://rs.tdwg.org/dwc/doc/doe/>
+Latest version of document
+: <{current_iri}>
 
-先前版本
-: <0>
+{previous_version_slot}
 
-摘要
-: 達爾文核心詞彙「degreeOfEstablishment」提供了生物在特定地點和時間存活、繁殖和擴展其範圍的程度的資訊。 建立程度控制詞彙提供了應用於「dwc:degreeOfEstablishment」和「dwciri:degreeOfEstablishment」值的術語。
+Abstract
+: The Darwin Core term `degreeOfEstablishment` provides information about degree to which an Organism survives, reproduces, and expands its range at the given place and time. 建立程度控制詞彙提供了應用於「dwc:degreeOfEstablishment」和「dwciri:degreeOfEstablishment」值的術語。
 
 貢獻者
-: Quentin Groom、Peter Desmet、Lien Reyserhove、Tim Adriaens、Damiano Oldoni、Sonia Vanderhoeven、Steven J Baskauf、Arthur Chapman、Melodie McGeoch、Ramona Walls、John Wieczorek、John R.U. Wilson, Paula F Zermoglio, Annie Simpson
+: {contributors}
 
-創建者
-：TDWG 達爾文核心標準維護小組
+Creator
+: {creator}
 
 書目引用
-: Darwin Core Maintenance Group. 2021. Degree of Establishment Controlled Vocabulary List of Terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/doe/2021-09-01>
+: {creator}. {year}. {document_title}. {publisher}. <{current_iri}{ratification_date}>
 
 ## 1 引言
 
