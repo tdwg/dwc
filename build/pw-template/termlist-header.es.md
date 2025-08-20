@@ -18,10 +18,10 @@ Fecha de creación
 Parte del Estándar TDWG
 : <{standard_iri}>
 
-This document version
+Esta versión del documento
 : <{current_iri}{ratification_date}>
 
-Latest version of document
+Última versión del documento
 : <{current_iri}>
 
 {previous_version_slot}
