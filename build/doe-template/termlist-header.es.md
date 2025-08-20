@@ -9,35 +9,34 @@ Namespace URI
 Abreviatura preferida del namespace
 : dwcdoe:
 
-Fecha de publicación de esta versión
-: 2021-09-01
+Fecha de publicación de la versión
+: {ratification_date}
 
 Fecha de creación
-: 2020-10-13
+: {created_date}
 
 Parte del Estándar TDWG
-: <http://www.tdwg.org/standards/450>
+: <{standard_iri}>
 
-Versión de este documento
-: <http://rs.tdwg.org/dwc/doc/doe/2021-09-01>
+This document version
+: <{current_iri}{ratification_date}>
 
-Última versión del documento
-: <http://rs.tdwg.org/dwc/doc/doe/>
+Latest version of document
+: <{current_iri}>
 
-Versión anterior
-: <http://rs.tdwg.org/dwc/doc/doe/2020-10-13>
+{previous_version_slot}
 
-Resumen
-El término de Darwin Core `degreeOfEstablishment` proporciona información sobre el grado en que un organismo sobrevive, se reproduce y expande su distribución en un lugar y momento determinados. El vocabulario controlado para el Grado de Establecimiento ofrece los términos que deben utilizarse como valores para `dwc:degreeOfEstablishment` y `dwciri:degreeOfEstablishment`.
+Abstract
+: The Darwin Core term `degreeOfEstablishment` provides information about degree to which an Organism survives, reproduces, and expands its range at the given place and time. El vocabulario controlado para el Grado de Establecimiento ofrece los términos que deben utilizarse como valores para `dwc:degreeOfEstablishment` y `dwciri:degreeOfEstablishment`.
 
 Colaboradores
-: Quentin Groom, Peter Desmet, Lien Reyserhove, Tim Adriaens, Damiano Oldoni, Sonia Vanderhoeven, Steven J Baskauf, Arthur Chapman, Melodie McGeoch, Ramona Walls, John Wieczorek, John R.U. Wilson, Paula F Zermoglio, Annie Simpson
+: {contributors}
 
-Autor
-: TDWG Darwin Core Maintenance Group
+Creador
+: {creator}
 
-Bibliographic citation
-: Darwin Core Maintenance Group. 2021. Degree of Establishment Controlled Vocabulary List of Terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/doe/2021-09-01>
+Cita bibliográfica
+: {creator}. {year}. {document_title}. {publisher}. <{current_iri}{ratification_date}>
 
 ## 1 Introducción
 
