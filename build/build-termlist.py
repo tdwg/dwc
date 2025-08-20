@@ -5,7 +5,6 @@
 # This script merges static Markdown header documents with term information tables (in Markdown) generated from data in the rs.tdwg.org repo from the TDWG Github site
 
 import re
-import sys
 import json       # library to convert JSON to Python data structures
 import os
 import pandas as pd
@@ -13,30 +12,6 @@ import pandas as pd
 from jinja2 import FileSystemLoader, Environment
 
 import dwcterms
-
-# -----------------
-# Command line arguments
-# -----------------
-
-arg_vals = sys.argv[1:]
-opts = [opt for opt in arg_vals if opt.startswith('-')]
-args = [arg for arg in arg_vals if not arg.startswith('-')]
-
-# "master" for production, something else for development
-if '--branch' in opts:
-    github_branch = args[opts.index('--branch')]
-else:
-    github_branch = 'master'
-
-# This is the base URL for raw files from the branch of the repo that has been pushed to GitHub
-if '--rs-path' in opts:
-    # Optionally, use a local copy of rs.tdwg.org, useful during development.
-    # e.g. '../../rs.tdwg.org/'
-    githubBaseUri = args[opts.index('--rs-path')]
-    localGithub = True
-else:
-    githubBaseUri = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/' + github_branch + '/'
-    localGithub = False
 
 # -----------------
 # Configuration section
@@ -430,7 +405,7 @@ class TermList:
         # Determine whether there was a previous version of the document.
         if self.terms.document_configuration_yaml['doc_created'] != self.terms.document_configuration_yaml['doc_modified']:
             # Load versions list from document versions data in the rs.tdwg.org repo and find most recent version.
-            versions_data_url = githubBaseUri + 'docs/docs-versions.csv'
+            versions_data_url = dwcterms.githubBaseUri + 'docs/docs-versions.csv'
             versions_list_df = pd.read_csv(versions_data_url, na_filter=False)
             # Slice all rows for versions of this document.
             matching_versions = versions_list_df[versions_list_df['current_iri']==self.terms.document_configuration_yaml['current_iri']]
@@ -537,7 +512,6 @@ class TermList:
                 class_group["terms"] = []
                 in_class = term_data["label"] # check on the class working in
             elif term_data['iri']=='http://rs.tdwg.org/dwc/iri/behavior':
-                # Vulnerable to ordering terms in term_versions.csv, but...
                 # This is the first row of dwciri terms
                 # store previous section in template_data
                 template_data.append(class_group)
@@ -635,7 +609,6 @@ def generate_all_qrg(termList, locales):
 
 # Darwin Core Terms
 dwc = dwcterms.DwcTerms(
-    githubBaseUri = githubBaseUri,
     termLists = ['terms', 'iri', 'dc-for-dwc', 'dcterms-for-dwc', 'ac-for-dwc'],
     docMetadataFilePath = 'dwc_doc_list/')
 
@@ -657,7 +630,6 @@ generate_all_qrg(dwc_list, languages)
 
 # Establishment Means Vocabulary
 em = dwcterms.DwcTerms(
-    githubBaseUri = githubBaseUri,
     termLists = ['establishmentMeans'],
     docMetadataFilePath = 'dwc_doc_em/')
 em_list = TermList(
@@ -675,7 +647,6 @@ generate_all_markdown(em_list, 'em', languages)
 
 # Degree of Establishment Vocabulary
 doe = dwcterms.DwcTerms(
-    githubBaseUri = githubBaseUri,
     termLists = ['degreeOfEstablishment'],
     docMetadataFilePath = 'dwc_doc_doe/')
 doe_list = TermList(
@@ -693,7 +664,6 @@ generate_all_markdown(doe_list, 'doe', languages)
 
 # Pathway Vocabulary
 pw = dwcterms.DwcTerms(
-    githubBaseUri = githubBaseUri,
     termLists = ['pathway'],
     docMetadataFilePath = 'dwc_doc_pw/')
 pw_list = TermList(

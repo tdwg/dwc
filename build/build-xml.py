@@ -23,24 +23,12 @@ import os
 import pandas as pd
 import html
 
-from jinja2 import FileSystemLoader, Environment
-
 import dwcterms
 
 # -----------------
 # Configuration section
 # -----------------
-
-github_branch = 'master' # "master" for production, something else for development
-
 languages = ['en', 'cs', 'es', 'fr', 'ja', 'ko', 'zh-Hant']
-
-# This is the base URL for raw files from the branch of the repo that has been pushed to GitHub
-githubBaseUri = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/' + github_branch + '/'
-# Optionally, use a local copy, useful during development.
-localGithub = False
-if localGithub:
-    githubBaseUri = '../../rs.tdwg.org/'
 
 class DwcaXml:
     def __init__(self, terms, xmlTemplate, xmlTerms=None, gbifAlternatives=None):
@@ -380,24 +368,21 @@ class DwcaXml:
             output_file.write("</thesaurus>\n")
             output_file.close()
 
-# Audiovisual Core
-ac = dwcterms.DwcTerms(
-    githubBaseUri = githubBaseUri,
-    termLists = ['audubon'],
-    docMetadataFilePath = 'ac_doc_termlist/')
-
-# Humboldt Extension
-ac_xml = DwcaXml(
-    terms = ac,
-    xmlTemplate = "xml/audiovisual.tmpl",
-    xmlTerms = "xml/audiovisual_list.csv"
-    )
-ac_xml.create_extension_xml(languages, 'audiovisual_')
+# # Audiovisual Core
+# ac = dwcterms.DwcTerms(
+#     termLists = ['audubon'],
+#     docMetadataFilePath = 'ac_doc_termlist/')
+#
+# # Audiovisual Extension
+# ac_xml = DwcaXml(
+#     terms = ac,
+#     xmlTemplate = "xml/audiovisual.tmpl",
+#     )
+# ac_xml.create_extension_xml(languages, 'audiovisual_')
 
 
 # Darwin Core
 dwc = dwcterms.DwcTerms(
-    githubBaseUri = githubBaseUri,
     termLists = ['terms', 'dc-for-dwc', 'dcterms-for-dwc', 'ac-for-dwc'],
     docMetadataFilePath = 'dwc_doc_list/')
 
@@ -452,7 +437,6 @@ dwc_xml.create_extension_xml(languages, 'identification_history_')
 
 # Humboldt
 eco = dwcterms.DwcTerms(
-    githubBaseUri = githubBaseUri,
     termLists = ['terms', 'humboldt'],
     docMetadataFilePath = 'dwc_doc_eco/')
 
@@ -467,7 +451,6 @@ eco_xml.create_extension_xml(languages, 'humboldt_')
 
 # Establishment Means Vocabulary
 em = dwcterms.DwcTerms(
-    githubBaseUri = githubBaseUri,
     termLists = ['establishmentMeans'],
     docMetadataFilePath = 'dwc_doc_em/')
 em_xml = DwcaXml(
@@ -479,7 +462,6 @@ em_xml.create_vocabulary_xml(languages, 'establishment_means_')
 
 # Degree of Establishment Vocabulary
 em = dwcterms.DwcTerms(
-    githubBaseUri = githubBaseUri,
     termLists = ['degreeOfEstablishment'],
     docMetadataFilePath = 'dwc_doc_doe/')
 em_xml = DwcaXml(
@@ -491,7 +473,6 @@ em_xml.create_vocabulary_xml(languages, 'degree_of_establishment_')
 
 # Pathway Vocabulary
 em = dwcterms.DwcTerms(
-    githubBaseUri = githubBaseUri,
     termLists = ['pathway'],
     docMetadataFilePath = 'dwc_doc_pw/')
 em_xml = DwcaXml(
