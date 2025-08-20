@@ -11,7 +11,7 @@ github_baseUri = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/' + github_
 
 # This is a Python list of the database names of the term version lists to be included in the document.
 #term_lists = ['iri']
-term_lists = ['terms', 'iri', 'dc-for-dwc', 'dcterms-for-dwc', 'curatorial', 'dwcore', 'dwctype', 'geospatial']
+term_lists = ['terms', 'iri', 'dc-for-dwc', 'dcterms-for-dwc', 'ac-for-dwc', 'curatorial', 'dwcore', 'dwctype', 'geospatial']
 
 column_mappings = [
     {'norm': 'iri', 'accum': 'version'},
