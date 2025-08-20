@@ -10,34 +10,34 @@ Abréviation de l'espace de noms privilégié
 : dwcem:
 
 Date de publication de la dernière mise à jour
-: 12 juin 2025
+: {ratification_date}
 
 Date de création
-: 13 octobre 2020
+: {created_date}
 
 Fait partie du standard TDWG
-: <http://www.tdwg.org/standards/450>
+: <{standard_iri}>
 
-Cette version
-: <http://rs.tdwg.org/dwc/doc/em/2025-06-12>
+This document version
+: <{current_iri}{ratification_date}>
 
-Dernière version
-: <http://rs.tdwg.org/dwc/doc/em/>
+Latest version of document
+: <{current_iri}>
 
 Version précédente
-: <http://rs.tdwg.org/dwc/doc/em/2021-09-01>
+: {previous_version_slot}
 
 Résumé
 : Le terme du Darwin Core `establishmentMeans` indique si un ou plusieurs organismes ont été introduits en un lieu et à un moment donnés par l'activité directe ou indirecte de l'humain moderne. Le Vocabulaire Contrôlé des Moyens d'Implantations fournit des termes qui devraient être utilisés comme valeurs pour `dwc:establishmentMeans et `dwciri:establishmentMeans\`.
 
 Contributeurs
-: Quentin Groom, Peter Desmet, Lien Reyserhove, Tim Adriaens, Damiano Oldoni, Sonia Vanderhoeven, Steven J Baskauf, Arthur Chapman, Melodie McGeoch, Ramona Walls, John Wieczorek, John R.U. Wilson, Paula F Zermoglio, Annie Simpson
+: {contributors}
 
-Créateur
-: TDWG Darwin Core Maintenance Group
+Créateur :
+{creator}
 
-Citation
-: Darwin Core Maintenance Group. 2025. Establishment Means Controlled Vocabulary List of Terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/em/2025-06-12>
+Citation :
+{creator}. {year}. {document_title}. {publisher}. <{current_iri}{ratification_date}>
 
 ## 1 Introduction
 
