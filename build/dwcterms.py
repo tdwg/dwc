@@ -13,13 +13,12 @@ import yaml
 # Load header data
 # ---------------
 
-config_file_path = 'process/document_metadata_processing/dwc_doc_list/'
 contributors_yaml_file = 'authors_configuration.yaml'
 document_configuration_yaml_file = 'document_configuration.yaml'
 
 class DwcTerms:
 
-    def __init__(self, githubBaseUri, termLists): #, vocabType, organizedInCategories, displayOrder, displayLabel, displayComments, displayId):
+    def __init__(self, githubBaseUri, termLists, docMetadataFilePath):
         """
         Tables of terms.
 
@@ -30,6 +29,7 @@ class DwcTerms:
 
         self.githubBaseUri = githubBaseUri
         self.localGithub = not githubBaseUri.startswith("https://")
+        self.doc_metadata_file_path = docMetadataFilePath
 
         self.termLists = termLists
 
@@ -46,7 +46,7 @@ class DwcTerms:
 
     def load_contributors(self):
         # Load the contributors YAML file from its GitHub URL
-        contributors_yaml_url = self.githubBaseUri + config_file_path + contributors_yaml_file
+        contributors_yaml_url = self.githubBaseUri + 'process/document_metadata_processing/' + self.doc_metadata_file_path + contributors_yaml_file
         if self.localGithub:
             with open(contributors_yaml_url) as file: contributors_yaml = file.read()
         else:
@@ -60,7 +60,7 @@ class DwcTerms:
 
     def load_document_configuration(self):
         # Load the document configuration YAML file from its GitHub URL
-        document_configuration_yaml_url = self.githubBaseUri + config_file_path + document_configuration_yaml_file
+        document_configuration_yaml_url = self.githubBaseUri + 'process/document_metadata_processing/' + self.doc_metadata_file_path + document_configuration_yaml_file
         if self.localGithub:
             with open(document_configuration_yaml_url) as file: document_configuration_yaml = file.read()
         else:

@@ -620,7 +620,8 @@ def generate_all_qrg(termList, locales):
 # Darwin Core Terms
 dwc = dwcterms.DwcTerms(
     githubBaseUri = githubBaseUri,
-    termLists = ['terms', 'iri', 'dc-for-dwc', 'dcterms-for-dwc', 'ac-for-dwc'])
+    termLists = ['terms', 'iri', 'dc-for-dwc', 'dcterms-for-dwc', 'ac-for-dwc'],
+    docMetadataFilePath = 'dwc_doc_list/')
 
 dwc_list = TermList(
     terms = dwc,
@@ -640,7 +641,8 @@ generate_all_qrg(dwc_list, languages)
 # Establishment Means Vocabulary
 em = dwcterms.DwcTerms(
     githubBaseUri = githubBaseUri,
-    termLists = ['establishmentMeans'])
+    termLists = ['establishmentMeans'],
+    docMetadataFilePath = 'dwc_doc_em/')
 em_list = TermList(
     terms = em,
     vocabType = 2,
@@ -656,7 +658,8 @@ generate_all_markdown(em_list, 'em', languages)
 # Degree of Establishment Vocabulary
 doe = dwcterms.DwcTerms(
     githubBaseUri = githubBaseUri,
-    termLists = ['degreeOfEstablishment'])
+    termLists = ['degreeOfEstablishment'],
+    docMetadataFilePath = 'dwc_doc_doe/')
 doe_list = TermList(
     terms = doe,
     vocabType = 2,
@@ -672,7 +675,8 @@ generate_all_markdown(doe_list, 'doe', languages)
 # Pathway Vocabulary
 pw = dwcterms.DwcTerms(
     githubBaseUri = githubBaseUri,
-    termLists = ['pathway'])
+    termLists = ['pathway'],
+    docMetadataFilePath = 'dwc_doc_pw/')
 pw_list = TermList(
     terms = pw,
     vocabType = 3,
