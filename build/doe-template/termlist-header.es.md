@@ -18,16 +18,16 @@ Fecha de creación
 Parte del Estándar TDWG
 : <{standard_iri}>
 
-This document version
+Esta versión del documento
 : <{current_iri}{ratification_date}>
 
-Latest version of document
+Última versión del documento
 : <{current_iri}>
 
 {previous_version_slot}
 
-Abstract
-: The Darwin Core term `degreeOfEstablishment` provides information about degree to which an Organism survives, reproduces, and expands its range at the given place and time. El vocabulario controlado para el Grado de Establecimiento ofrece los términos que deben utilizarse como valores para `dwc:degreeOfEstablishment` y `dwciri:degreeOfEstablishment`.
+Resumen
+: El término Darwin Core «degreeOfEstablishment» proporciona información sobre el grado en que un organismo sobrevive, se reproduce y expande su área de distribución en un lugar y momento determinados. El vocabulario controlado para el Grado de Establecimiento ofrece los términos que deben utilizarse como valores para `dwc:degreeOfEstablishment` y `dwciri:degreeOfEstablishment`.
 
 Colaboradores
 : {contributors}
