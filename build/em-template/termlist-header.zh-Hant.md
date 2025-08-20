@@ -10,34 +10,32 @@
 : dwcem:
 
 版本發行日期
-: 2025-06-12
+: {ratification_date}
 
 建立日期
-: 2020-10-13
 
 生物多樣性訊息標準的一部分
-: <http://www.tdwg.org/standards/450>
+: <{standard_iri}>
 
-本文件版本
-: <http://rs.tdwg.org/dwc/doc/em/2025-06-12>
+This document version
+: <{current_iri}{ratification_date}>
 
-文件的最新版本
-: <http://rs.tdwg.org/dwc/doc/em/>
+Latest version of document
+: <{current_iri}>
 
-先前版本
-: <http://rs.tdwg.org/dwc/doc/em/2021-09-01>
+{previous_version_slot}
 
 摘要
 : 達爾文核心標準詞彙「establishmentMeans」提供資訊，說明一種或多種生物是否透過現代人類的直接或間接活動，傳入特定地點與時間。 建立手段控制詞彙提供了應用於「dwc:establishmentMeans」和 「dwciri:establishmentMeans」值的術語。
 
 貢獻者
-: Quentin Groom、Peter Desmet、Lien Reyserhove、Tim Adriaens、Damiano Oldoni、Sonia Vanderhoeven、Steven J Baskauf、Arthur Chapman、Melodie McGeoch、Ramona Walls、John Wieczorek、John R.U. Wilson, Paula F Zermoglio, Annie Simpson
+: {contributors}
 
-創建者
-：TDWG 達爾文核心標準維護小組
+Creator
+: {creator}
 
 書目引用
-: Darwin Core Maintenance Group. 2025. Establishment Means Controlled Vocabulary List of Terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/em/2025-06-12>
+: {creator}. {year}. {document_title}. {publisher}. <{current_iri}{ratification_date}>
 
 ## 1 引言
 
