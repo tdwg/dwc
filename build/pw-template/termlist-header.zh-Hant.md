@@ -10,34 +10,32 @@
 : dwcpw:
 
 版本發行日期
-: 2025-06-12
+: {ratification_date}
 
 建立日期
-: 2020-10-13
 
 生物多樣性訊息標準的一部分
-: <http://www.tdwg.org/standards/450>
+: <{standard_iri}>
 
 This document version
-: <http://rs.tdwg.org/dwc/doc/pw/2025-06-12>
+: <{current_iri}{ratification_date}>
 
 Latest version of document
-: <http://rs.tdwg.org/dwc/doc/pw/>
+: <{current_iri}>
 
-Previous version
-: <http://rs.tdwg.org/dwc/doc/pw/2021-09-01>
+{previous_version_slot}
 
 Abstract
 : The Darwin Core term `pathway` provides information about the process by which an Organism came to be in a given place at a given time. The Pathway Controlled Vocabulary provides terms that should be used as values for `dwc:pathway` and `dwciri:pathway`.
 
 貢獻者
-: Quentin Groom、Peter Desmet、Lien Reyserhove、Tim Adriaens、Damiano Oldoni、Sonia Vanderhoeven、Steven J Baskauf、Arthur Chapman、Melodie McGeoch、Ramona Walls、John Wieczorek、John R.U. Wilson, Paula F Zermoglio, Annie Simpson
+: {contributors}
 
-創建者
-：TDWG 達爾文核心標準維護小組
+Creator
+: {creator}
 
 書目引用
-: Darwin Core Maintenance Group. 2025. Pathway Controlled Vocabulary List of Terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/pw/2025-06-12>
+: {creator}. {year}. {document_title}. {publisher}. <{current_iri}{ratification_date}>
 
 ## 1 引言
 
