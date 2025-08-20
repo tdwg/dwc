@@ -31,7 +31,7 @@ Creator
 : Darwin Core and RDF/OWL Task Groups
 
 Bibliographic citation
-: Darwin Core and RDF/OWL Task Groups. 2021. Darwin Core RDF guide. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/terms/guides/rdf/2021-07-15>
+: Darwin Core and RDF/OWL Task Groups. Darwin Core Maintenance Group. Darwin Core RDF guide. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/terms/guides/rdf/2021-07-15>
 
 ## 1 Introduction (non-normative)
 
@@ -800,8 +800,8 @@ Terms in the namespace `dwciri:` (`http://rs.tdwg.org/dwc/iri/`) are intended fo
 
 If a term in the `dwciri:` namespace has a corresponding term with the same [local name](http://www.w3.org/TR/swbp-vocab-pub/#naming) in the `dwc:` namespace, the `dwciri:` namespace term is defined to have the same meaning as its `dwc:` namespace term analogue. In defining a `dwciri:` term that has a `dwc:` analogue, the definition of the `dwc:` term is understood to be modified in the following ways:
 
-- when a `dwciri:` term is used as an RDF predicate, its non-literal object SHALL be identified by an IRI reference rather than a string literal
-- the object of the `dwciri:` term predicate SHOULD be a single resource. If the `dwc:` term definition specifies that multiple values should be a concatenated list, the resource described by a `dwciri:` property SHOULD be the subject of a triple for each value on the list. Alternatively, a single triple MAY be used to describe the subject if the object is a single resource composed of component resources described using additional RDF triples.
+ - when a `dwciri:` term is used as an RDF predicate, its non-literal object SHALL be identified by an IRI reference rather than a string literal
+ - the object of the `dwciri:` term predicate SHOULD be a single resource. If the `dwc:` term definition specifies that multiple values should be a concatenated list, the resource described by a `dwciri:` property SHOULD be the subject of a triple for each value on the list. Alternatively, a single triple MAY be used to describe the subject if the object is a single resource composed of component resources described using additional RDF triples.
 
 Several terms in the `dwciri:` namespace do not have `dwc:` namespace analogues (`dwciri:inCollection`, `dwciri:toTaxon`, `dwciri:inDescribedPlace`, `dwciri:earliestGeochronologicalEra`, `dwciri:latestGeochronologicalEra`, `dwciri:fromLithostratigraphicUnit`, and `dwciri:inDataset`). Their definitions are given in [Section 3.6](#36-dwciri-terms-having-local-names-that-dont-correspond-to-terms-in-the-dwc-darwin-core-namespace-normative).
 
@@ -963,9 +963,9 @@ When expressing the data about resources collected in Robertson County in RDF, i
 
 In general, it should not be necessary for a data provider to recreate hierarchical RDF relationships that have already been expressed by a centralized service. For that reason, this guide does not describe best-practices for expressing such relationships in RDF. Nevertheless, there are several reasons why it may be convenient for a data provider to expose literal values from existing text-based data:
 
-- the provider may be unable or unwilling to discover and link to an IRI for the lowest level of the hierarchy, yet wish to facilitate future discovery of such IRIs through string matching by applications or aggregators.
-- the provider may want to facilitate simple string-based queries (e.g., [SPARQL](http://www.w3.org/TR/sparql11-query/)) at any level of the hierarchy.
-- the provider may wish to make it easier for consuming applications to create human-friendly representations of the data in which presenting the string hierarchy would be meaningful.
+ - the provider may be unable or unwilling to discover and link to an IRI for the lowest level of the hierarchy, yet wish to facilitate future discovery of such IRIs through string matching by applications or aggregators.
+ - the provider may want to facilitate simple string-based queries (e.g., [SPARQL](http://www.w3.org/TR/sparql11-query/)) at any level of the hierarchy.
+ - the provider may wish to make it easier for consuming applications to create human-friendly representations of the data in which presenting the string hierarchy would be meaningful.
 
 #### 2.7.2 Literal convenience terms versus a single object property reference (normative)
 
@@ -1164,9 +1164,9 @@ Darwin Core contains a number of terms whose local name begins with "associated"
 
 The information encoded by a Darwin Core association term property/value pair can be broken down into three components:
 
-- a link to a related resource
-- a designation of the type of the related resource
-- (for some terms) a description of the nature of the relationship including its direction
+ - a link to a related resource
+ - a designation of the type of the related resource
+ - (for some terms) a description of the nature of the relationship including its direction
 
 The related resource is designated by some sort of identifier present in the literal value. The type of the related resource is implied by the second part of the local name (e.g., "Media", "Occurrences", etc.). The definitions of some of the terms (`dwc:associatedTaxa`, `dwc:associatedOccurrences`, and `dwc:associatedOrganisms`) also specify that the nature of the association with the subject resource should also be included in the literal value ("sibling of", "predator of ", etc.).
 
