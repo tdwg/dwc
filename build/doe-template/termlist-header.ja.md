@@ -10,34 +10,33 @@
 : dwcdoe:
 
 バージョン発行日
-: 2021-09-01
+: {ratification_date}
 
 作成日
-: 2020-10-13
+: {created_date}
 
 TDWGスタンダードでのパート
-: <http://www.tdwg.org/standards/450>
+: <{standard_iri}>
 
-この文書のバージョン
-: <http://rs.tdwg.org/dwc/doc/doe/2021-09-01>
+This document version
+: <{current_iri}{ratification_date}>
 
-文書の最新バージョン
-: <http://rs.tdwg.org/dwc/doc/doe/>
+Latest version of document
+: <{current_iri}>
 
-以前のバージョン
-: <http://rs.tdwg.org/dwc/doc/doe/2020-10-13>
+{previous_version_slot}
 
-要旨
-: Darwin Core の用語である `degreeOfEstablishment` は、特定の場所と時間において、ある生物がどの程度生存し、繁殖し、その生息範囲を広げるかについての情報を提供します。 Degree of Establishment 制御語彙は、`dwc:degreeOfEstablishment` と `dwciri:degreeOfEstablishment` の値として使用すべき用語を提供します。
+Abstract
+: The Darwin Core term `degreeOfEstablishment` provides information about degree to which an Organism survives, reproduces, and expands its range at the given place and time. Degree of Establishment 制御語彙は、`dwc:degreeOfEstablishment` と `dwciri:degreeOfEstablishment` の値として使用すべき用語を提供します。
 
 貢献者
-: Quentin Groom, Peter Desmet, Lien Reyserhove, Tim Adriaens, Damiano Oldoni, Sonia Vanderhoeven, Steven J Baskauf, Arthur Chapman, Melodie McGeoch, Ramona Walls, John Wieczorek, John R.U. Wilson, Paula F Zermoglio, Annie Simpson
+: {contributors}
 
 作成者
-: TDWG Darwin Core Maintenance Group
+: {creator}
 
 書誌的引用
-: Darwin Core Maintenance Group. 2021. Degree of Establishment Controlled Vocabulary List of Terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/doe/2021-09-01>
+: {creator}. {year}. {document_title}. {publisher}. <{current_iri}{ratification_date}>
 
 ## 1 イントロダクション
 
