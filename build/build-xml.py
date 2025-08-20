@@ -33,7 +33,7 @@ import dwcterms
 
 github_branch = 'master' # "master" for production, something else for development
 
-languages = ['en', 'cs', 'es', 'fr', 'ko', 'zh-Hant']
+languages = ['en', 'cs', 'es', 'fr', 'ja', 'ko', 'zh-Hant']
 
 # This is the base URL for raw files from the branch of the repo that has been pushed to GitHub
 githubBaseUri = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/' + github_branch + '/'
@@ -265,7 +265,7 @@ class DwcaXml:
                 output_file.write(s)
                 previous_group = group
 
-            output_file.write("</extension>")
+            output_file.write("</extension>\n")
             output_file.close()
 
     def create_vocabulary_xml(self, languages, file_output):
@@ -324,7 +324,7 @@ class DwcaXml:
                 qualName = term['term_iri']
                 controlled_value_string = term['controlled_value_string']
                 dc_issued = term['term_created']
-                dc_title = term['label']
+                dc_title = html.escape(term['label'])
                 dc_description = html.escape(term['definition'])
                 comments = html.escape(term['notes'])
                 usage = html.escape(term['usage'])
@@ -346,7 +346,12 @@ class DwcaXml:
                 s += f"    <preferred>\n"
                 for lang in languages:
                     if 'label_'+lang in term:
-                        title_lang = term['label_'+lang]
+                        title_lang = html.escape(term['label_'+lang])
+                        # Currently the IPT only supports Traditional Chinese with the code zh.
+                        if lang == 'zh-Hant':
+                            lang = 'zh'
+                        elif lang == 'zh-Hans':
+                            continue
                         if title_lang.strip() != '':
                             s += f"      <term dc:source='Darwin Core' dc:title='{title_lang}' xml:lang='{lang}'/>\n"
                 s += f"    </preferred>\n"
@@ -360,7 +365,7 @@ class DwcaXml:
                         if not present:
                             s += f"    <alternative>\n"
                             present = True
-                        title = alt['value']
+                        title = html.escape(alt['value'])
                         lang = alt['language'].split('-')[0]
                         s += f"      <term dc:title='{title}' xml:lang='{lang}'  />\n"
                     if present:
@@ -372,13 +377,29 @@ class DwcaXml:
                 output_file.write(s)
                 print()
 
-            output_file.write("</thesaurus>")
+            output_file.write("</thesaurus>\n")
             output_file.close()
+
+# Audiovisual Core
+ac = dwcterms.DwcTerms(
+    githubBaseUri = githubBaseUri,
+    termLists = ['audubon'],
+    docMetadataFilePath = 'ac_doc_termlist/')
+
+# Humboldt Extension
+ac_xml = DwcaXml(
+    terms = ac,
+    xmlTemplate = "xml/audiovisual.tmpl",
+    xmlTerms = "xml/audiovisual_list.csv"
+    )
+ac_xml.create_extension_xml(languages, 'audiovisual_')
+
 
 # Darwin Core
 dwc = dwcterms.DwcTerms(
     githubBaseUri = githubBaseUri,
-    termLists = ['terms', 'dc-for-dwc', 'dcterms-for-dwc', 'ac-for-dwc'])
+    termLists = ['terms', 'dc-for-dwc', 'dcterms-for-dwc', 'ac-for-dwc'],
+    docMetadataFilePath = 'dwc_doc_list/')
 
 # Occurrence Core
 dwc_xml = DwcaXml(
@@ -429,24 +450,26 @@ dwc_xml = DwcaXml(
 dwc_xml.create_extension_xml(languages, 'identification_history_')
 
 
-# Humboldt Core
-dwc = dwcterms.DwcTerms(
+# Humboldt
+eco = dwcterms.DwcTerms(
     githubBaseUri = githubBaseUri,
-    termLists = ['terms', 'humboldt'])
+    termLists = ['terms', 'humboldt'],
+    docMetadataFilePath = 'dwc_doc_eco/')
 
 # Humboldt Extension
-dwc_xml = DwcaXml(
-    terms = dwc,
+eco_xml = DwcaXml(
+    terms = eco,
     xmlTemplate = "xml/humboldt_eco.tmpl",
     xmlTerms = "xml/humboldt_eco_list.csv"
     )
-dwc_xml.create_extension_xml(languages, 'humboldt_')
+eco_xml.create_extension_xml(languages, 'humboldt_')
 
 
 # Establishment Means Vocabulary
 em = dwcterms.DwcTerms(
     githubBaseUri = githubBaseUri,
-    termLists = ['establishmentMeans'])
+    termLists = ['establishmentMeans'],
+    docMetadataFilePath = 'dwc_doc_em/')
 em_xml = DwcaXml(
     terms = em,
     xmlTemplate = "xml/establishment_means.tmpl",
@@ -457,7 +480,8 @@ em_xml.create_vocabulary_xml(languages, 'establishment_means_')
 # Degree of Establishment Vocabulary
 em = dwcterms.DwcTerms(
     githubBaseUri = githubBaseUri,
-    termLists = ['degreeOfEstablishment'])
+    termLists = ['degreeOfEstablishment'],
+    docMetadataFilePath = 'dwc_doc_doe/')
 em_xml = DwcaXml(
     terms = em,
     xmlTemplate = "xml/degree_of_establishment.tmpl",
@@ -468,7 +492,8 @@ em_xml.create_vocabulary_xml(languages, 'degree_of_establishment_')
 # Pathway Vocabulary
 em = dwcterms.DwcTerms(
     githubBaseUri = githubBaseUri,
-    termLists = ['pathway'])
+    termLists = ['pathway'],
+    docMetadataFilePath = 'dwc_doc_pw/')
 em_xml = DwcaXml(
     terms = em,
     xmlTemplate = "xml/pathway.tmpl",
