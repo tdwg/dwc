@@ -53,6 +53,7 @@ Note that these CSVs contain some columns with machine-generated metadata, so ma
    iii. [build-term_versions.py](https://github.com/tdwg/dwc/blob/master/build/build-term_versions.py) updates the [term_versions.csv](https://github.com/tdwg/dwc/blob/master/vocabulary/term_versions.csv) file in the [vocabulary/](https://github.com/tdwg/dwc/tree/master/vocabulary) directory.
 17. Create a pull request for the new branch.
 18. When the branch has been reviewed carefully, merge the branch. The new pages should be live as soon as Jekyll rebuilds them on GitHub.
+19. Prompt GBIF to update the Darwin Core Archive extensions in https://rs.gbif.org, if necessary by opening an issue in [the rs.gbif.org repository](https://github.com/gbif/rs.gbif.org).
 
 ## Build scripts
 
