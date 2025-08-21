@@ -70,11 +70,11 @@ Implementors MUST use [XML Namespaces](http://www.w3.org/TR/1999/REC-xml-names-1
 
 The Darwin Core follows the [Dublin Core Metadata Initiative Abstract Model](http://dublincore.org/documents/abstract-model/) except that the Darwin Core _record_ is roughly equivalent to the Dublin Core _resource_.
 
-- A Darwin Core term MUST be either a `class` or a `property` where `class` is defined as http://www.w3.org/2000/01/rdf-schema#Class and `property` is defined as http://www.w3.org/1999/02/22-rdf-syntax-ns#Property.
-- A `Darwin Core record` MUST be made up of zero or more `classes` and one or more `properties` with their associated `values`.
-- Each `value` MUST be a literal string.
-- The `values` of `properties` within a `Darwin Core record` describe that record.
-- A `Darwin Core record` MUST include all required `properties`, if any, and their associated `values`.
+ - A Darwin Core term MUST be either a `class` or a `property` where `class` is defined as http://www.w3.org/2000/01/rdf-schema#Class and `property` is defined as http://www.w3.org/1999/02/22-rdf-syntax-ns#Property.
+ - A `Darwin Core record` MUST be made up of zero or more `classes` and one or more `properties` with their associated `values`.
+ - Each `value` MUST be a literal string.
+ - The `values` of `properties` within a `Darwin Core record` describe that record.
+ - A `Darwin Core record` MUST include all required `properties`, if any, and their associated `values`.
 
 ### 2.4 Properties and values
 
@@ -158,8 +158,8 @@ Following is a brief example of an XML document for a single specimen complying 
 
 Many Darwin Core terms (`properties`) are defined as being associated with another term (a `class`). For example, [`scientificName`](http://rs.tdwg.org/dwc/terms/scientificName) and [`Taxon`](http://rs.tdwg.org/dwc/terms/Taxon) are both Darwin Core terms, but `scientificName` is a property organized within the `Taxon` class. When constructing schemas that take advantage of classes in structures, implementors SHOULD maintain the property/class organization for the terms whenever possible (refer to the grouping of the term within a class in the [Quick Reference Guide](../../terms/). To promote reuse, Darwin Core provides a set of xml schemas to use as the basis of additional schemas:
 
-- [Terms XML Schema](tdwg_dwcterms.xsd) - property term definitions as typed global elements and named groups for all terms for a given class to be referenced. The schema makes use of substitution groups `anyClass`, `anyProperty`, `anyIdentifier` and `anyXYZTerm` for each class, e.g. `anyTaxonTerm`. This is the schema upon which the [Simple Darwin Core XML Schema](tdwg_dwc_simple.xsd) is based.
-- [Class Terms XML Schema](tdwg_dwc_class_terms.xsd) - class term definitions as typed global elements with subelements referencing all corresponding property terms via their substitution group.
+ - [Terms XML Schema](tdwg_dwcterms.xsd) - property term definitions as typed global elements and named groups for all terms for a given class to be referenced. The schema makes use of substitution groups `anyClass`, `anyProperty`, `anyIdentifier` and `anyXYZTerm` for each class, e.g. `anyTaxonTerm`. This is the schema upon which the [Simple Darwin Core XML Schema](tdwg_dwc_simple.xsd) is based.
+ - [Class Terms XML Schema](tdwg_dwc_class_terms.xsd) - class term definitions as typed global elements with subelements referencing all corresponding property terms via their substitution group.
 
 Classes SHOULD be used in a normalized way to avoid deep nesting. An [XML schema](tdwg_dwc_classes.xsd) is provided to freely mix any Darwin Core Class in a global list and allow them to reference each other using the respective class identifier terms.
 

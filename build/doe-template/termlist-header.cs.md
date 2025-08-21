@@ -9,34 +9,33 @@ Preferovaná zkratka jmenného prostoru
 : dwcdoe:
 
 Datum vydání verze
-: 2021-09-01
+: {ratification_date}
 
 Datum vytvoření
-: 2020-10-13
+: {created_date}
 
-Součást TDWG Standardu
-: <http://www.tdwg.org/standards/450>
+Část standardu TDWG
+: <{standard_iri}>
 
-Tato verze dokumentu
-: <http://rs.tdwg.org/dwc/doc/doe/2021-09-01>
+This document version
+: <{current_iri}{ratification_date}>
 
-Aktuální verze dokumentu
-: <http://rs.tdwg.org/dwc/doc/doe/>
+Latest version of document
+: <{current_iri}>
 
-Předchozí verze
-: <http://rs.tdwg.org/dwc/doc/doe/2020-10-13>
+{previous_version_slot}
 
-Abstrakt
-: Darwin Core termín `degreeOfEstablishment` poskytuje informace o tom, do jaké míry organismus přežívá, rozmnožuje se a rozšiřuje svůj areál v daném místě a čase.. Řízený slovník Stupně rozšíření poskytuje termíny, které by se měly používat jako hodnoty pro `dwc:degreeOfEstablishment` a `dwciri:degreeOfEstablishment`.
+Abstract
+: The Darwin Core term `degreeOfEstablishment` provides information about degree to which an Organism survives, reproduces, and expands its range at the given place and time. Řízený slovník Stupně rozšíření poskytuje termíny, které by se měly používat jako hodnoty pro `dwc:degreeOfEstablishment` a `dwciri:degreeOfEstablishment`.
 
 Přispěvatelé
-: Quentin Groom, Peter Desmet, Lien Reyserhove, Tim Adriaens, Damiano Oldoni, Sonia Vanderhoeven, Steven J. Baskauf, Arthur Chapman, Melodie McGeoch, Ramona Walls, John Wieczorek, John R.U. Wilson, Paula F Zermoglio, Annie Simpson
+: {contributors}
 
 Tvůrce
-: TDWG Darwin Core Maintenance Group
+: {creator}
 
 Bibliografická citace
-: Darwin Core Maintenance Group. 2021. Seznam termínů Řízeného slovníku Stupňů zavlečení. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/doe/2021-09-01>
+: {creator}. {year}. {document_title}. {publisher}. <{current_iri}{ratification_date}>
 
 ## 1. Úvod
 

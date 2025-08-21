@@ -3,27 +3,27 @@ This template is NOT used by jekyll, but by the Darwin Core build script build-t
 to create the terms/index.md file, which mostly contains html.
 \#}
 
-# Darwin Core Quick Reference Guide
+# Guía de Referencia Rápida de Darwin Core
 
-This document is intended to be an easy-to-read reference of the currently (as of 2023-09-18) recommended terms maintained as part of the [Darwin Core standard](https://www.tdwg.org/standards/dwc/) and is maintained by the [Darwin Core Maintenance Group](https://www.tdwg.org/community/dwc/).
+Este documento está pensado como una guía de fácil lectura de los términos actualmente recomendados (al 2023-09-18) que se mantienen como parte del [Estándar Darwin Core](https://www.tdwg.org/standards/dwc/), y es mantenido por el [Darwin Core Maintenance Group](https://www.tdwg.org/community/dwc/).
 
-**Need help?** Read more about how to use Darwin Core in the [Darwin Core Questions & Answers site](https://github.com/tdwg/dwc-qa/blob/master/README.md). Still have questions? Submit a new issue (question/problem) to the [dwc-qa issues page in GitHub](https://github.com/tdwg/dwc-qa/issues), or use the [form](https://tinyurl.com/darwin-qa). See the bottom of this document for [how to cite Darwin Core](https://dwc.tdwg.org/terms/#cite-darwin-core)."
+¿Necesitas ayuda? Lee más sobre cómo usar Darwin Core en el [sitio de Preguntas & Respuestas del Darwin Core](https://github.com/tdwg/dwc-qa/blob/master/README.md). ¿Aún tienes preguntas? Envía una nueva consulta (pregunta o problema) a la [página de dwc-qa issues en GitHub](https://github.com/tdwg/dwc-qa/issues), o utiliza el [formulario correspondiente](https://tinyurl.com/darwin-qa). Consulta al final de este documento para saber [cómo citar Darwin Core](https://dwc.tdwg.org/terms/#cite-darwin-core).
 
-**Want to contribute?** For information about how to contribute to the Darwin Core Standard, including how to propose changes, see the [Guidelines for contributing](https://github.com/tdwg/dwc/blob/master/.github/CONTRIBUTING.md).
+¿Quieres contribuir? Para obtener información sobre cómo contribuir al estándar Darwin Core, incluyendo cómo proponer cambios, consulta los [Lineamientos para contribuir](https://github.com/tdwg/dwc/blob/master/.github/CONTRIBUTING.md).
 
-Esta página no forma parte del estándar, pero combina los nombres y definiciones de los términos normativos con los comentarios y ejemplos no normativos que están destinados a ayudar a las personas a utilizar los términos de forma coherente. Definitions, comments, and examples may include namespace abbreviations (e.g., "dwc:"). These are included to show that the meaning for the word it is attached to very specifically means the term as defined in that namespace. Thus, dwc:Event means Event as defined by Darwin Core at https://dwc.tdwg.org/terms/#event. Capitalized terms that follow a namespace abbreviation, such as dwc:Occurrence, are Darwin Core class terms, which are a special category of terms used to group sets of property terms (terms that being with lower case names that follow the namespace abbreviation, e.g., dwc:eventID) for convenience. Comprehensive metadata for current and obsolete terms in human readable form are found in the document [List of Darwin Core terms](../list/).
+Esta página no forma parte del estándar, pero combina los nombres y definiciones de los términos normativos con los comentarios y ejemplos no normativos que están destinados a ayudar a las personas a utilizar los términos de forma coherente. Las definiciones, comentarios y ejemplos pueden incluir abreviaciones de espacios de nombres (e.g., "dwc:"). Estas se incluyen para indicar que el significado de la palabra a la que están asociadas corresponde específicamente con la definición del término en ese espacio de nombres. Por lo tanto, dwc:Event significa Event tal como está definido por Darwin Core en https://dwc.tdwg.org/terms/#event. Los términos capitalizados que siguen a una abreviación de espacio de nombres, como dwc:Occurrence, son términos de clase de Darwin Core, los cuales constituyen una categoría especial de términos usados para agrupar conjuntos de términos de propiedad (términos que comienzan con minúscula y siguen la abreviación del espacio de nombres, por ejemplo, dwc:eventID) por conveniencia. Los metadatos completos de los términos actuales y obsoletos en formato legible para humanos se encuentran en el documento [Lista de términos Darwin Core](../list/).
 
-Additional [files with just the current term names](https://github.com/tdwg/dwc/tree/master/dist) and a [file with the full term history](https://github.com/tdwg/dwc/blob/master/vocabulary/term_versions.csv) can be found in the [Darwin Core repository](https://github.com/tdwg/dwc).
+[Archivos adicionales con solo los nombres de los términos actuales](https://github.com/tdwg/dwc/tree/master/dist), así como un [archivo con el historial completo de términos](https://github.com/tdwg/dwc/blob/master/vocabulary/term_versions.csv), pueden encontrarse en el [repositorio de Darwin Core](https://github.com/tdwg/dwc).
 
 {% for class_group in class_groups %}
 
 ## {{ class_group.label }}
 
 {% if class_group.isRecordLevel %}
-This category contains terms that are generic in that they might apply to any type of record in a dataset.
+Esta categoría contiene términos genéricos que podrían aplicarse a cualquier tipo de registro en un conjunto de datos.
 {% endif %}
 {% if class_group.label == 'UseWithIRI' %}
-For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https://dwc.tdwg.org/rdf/#25-terms-in-the-dwciri-namespace-normative).
+Para más información sobre `UseWithIRI`, consulta la [Sección 2.5 de la Guía RDF](https://dwc.tdwg.org/rdf/#25-terms-in-the-dwciri-namespace-normative).
 {% endif %}
 
 <div class="my-4">
@@ -40,9 +40,9 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
   <tbody>
     <tr class="table-primary"><th colspan="2">{{ class_group.label }} <span class="badge bg-primary float-end">Class</span></th></tr>
     <tr><td>Identificador</td><td><a href="{{ class_group.iri }}">{{ class_group.iri }}</a></td></tr>
-    <tr><td>Definition</td><td>{{ class_group.definition }}</td></tr>
-    <tr><td>Comments</td><td>{{ class_group.comments }}</td></tr>
-    <tr><td>Examples</td><td>{% if examples | length == 1 %}{{ examples | first }}{% else %}<ul class="list-group list-group-flush">{% for example in examples %}<li class="list-group-item">{{ example }}</li>{% endfor %}</ul>{% endif %}</td></tr>
+    <tr><td>Definición</td><td>{{ class_group.definition }}</td></tr>
+    <tr><td>Comentarios</td><td>{{ class_group.comments }}</td></tr>
+    <tr><td>Ejemplos</td><td>{% if examples | length == 1 %}{{ examples | first }}{% else %}<ul class="list-group list-group-flush">{% for example in examples %}<li class="list-group-item">{{ example }}</li>{% endfor %}</ul>{% endif %}</td></tr>
   </tbody>
 </table>
 {%endif %}
@@ -60,25 +60,25 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
   <tbody>
     <tr class="table-secondary"><th colspan="2">{{ term.label }}</th></tr>
     <tr><td>Identificador</td><td><a href="{{ term.iri }}">{{ term.iri }}</a></td></tr>
-    <tr><td>Definition</td><td>{{ term.definition }}</td></tr>
-    <tr><td>Comments</td><td>{{ term.comments }}</td></tr>
-    <tr><td>Examples</td><td>{% if examples | length == 1 %}{{ examples | first }}{% else %}<ul class="list-group list-group-flush">{% for example in examples %}<li class="list-group-item">{{ example }}</li>{% endfor %}</ul>{% endif %}</td></tr>
+    <tr><td>Definición</td><td>{{ term.definition }}</td></tr>
+    <tr><td>Comentarios</td><td>{{ term.comments }}</td></tr>
+    <tr><td>Ejemplos</td><td>{% if examples | length == 1 %}{{ examples | first }}{% else %}<ul class="list-group list-group-flush">{% for example in examples %}<li class="list-group-item">{{ example }}</li>{% endfor %}</ul>{% endif %}</td></tr>
   </tbody>
 </table>
 {% endfor %}
 
 {% endfor %}
 
-## Cite Darwin Core
+## Cómo citar Darwin Core
 
-To cite Darwin Core in general, use the peer-reviewed article on Darwin Core:
+Para citar Darwin Core en general, utiliza el artículo revisado por pares sobre el estándar:
 
 > Wieczorek J, Bloom D, Guralnick R, Blum S, Döring M, et al. (2012) Darwin Core: An Evolving Community-Developed Biodiversity Data Standard. PLoS ONE 7(1): e29715. <https://doi.org/10.1371/journal.pone.0029715>
 
-To cite the standard document upon which this page is built, use the following:
+Para citar el documento base del estándar sobre el cual se construye esta página, utiliza la siguiente referencia:
 
-> Darwin Core Maintenance Group. Darwin Core Maintenance Group. List of Darwin Core terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/list/>
+> Darwin Core Maintenance Group. 2021. List of Darwin Core terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/list/>
 
-To cite this document specifically, use the following:
+Para citar específicamente este documento, utiliza la siguiente referencia:
 
-> Darwin Core Maintenance Group. 2021. Darwin Core Quick Reference Guide. Biodiversity Information Standards (TDWG). <https://dwc.tdwg.org/terms/>
+> Darwin Core Maintenance Group. 2021. Guía de Referencia Rápida de Darwin Core. Biodiversity Information Standards (TDWG). <https://dwc.tdwg.org/terms/>
