@@ -10,7 +10,7 @@ Preferred namespace abbreviation
 : dwcpw:
 
 Date version issued
-: 2025-06-12
+: 2025-07-10
 
 Date created
 : 2020-10-13
@@ -19,25 +19,25 @@ Part of TDWG Standard
 : <http://www.tdwg.org/standards/450>
 
 This document version
-: <http://rs.tdwg.org/dwc/doc/pw/2025-06-12>
+: <http://rs.tdwg.org/dwc/doc/pw/2025-07-10>
 
 Latest version of document
 : <http://rs.tdwg.org/dwc/doc/pw/>
 
 Previous version
-: <http://rs.tdwg.org/dwc/doc/pw/2021-09-01>
+: <http://rs.tdwg.org/dwc/doc/pw/2025-06-12>
 
 Abstract
 : The Darwin Core term `pathway` provides information about the process by which an Organism came to be in a given place at a given time. The Pathway Controlled Vocabulary provides terms that should be used as values for `dwc:pathway` and `dwciri:pathway`.
 
 Contributors
-: Quentin Groom, Peter Desmet, Lien Reyserhove, Tim Adriaens, Damiano Oldoni, Sonia Vanderhoeven, Steven J Baskauf, Arthur Chapman, Melodie McGeoch, Ramona Walls, John Wieczorek, John R.U. Wilson, Paula F Zermoglio, Annie Simpson
+: [Quentin Groom](https://orcid.org/0000-0002-0596-5376) ([Botanic Garden Meise](http://www.wikidata.org/entity/Q3052500)), [Peter Desmet](https://orcid.org/0000-0002-8442-8025) ([Instituut voor Natuur- en Bosonderzoek (INBO)](http://www.wikidata.org/entity/Q7315097)), [Lien Reyserhove](https://orcid.org/0000-0001-7484-9267) ([Instituut voor Natuur- en Bosonderzoek (INBO)](http://www.wikidata.org/entity/Q7315097)), [Tim Adriaens](https://orcid.org/0000-0001-7268-4200) ([Instituut voor Natuur- en Bosonderzoek (INBO)](http://www.wikidata.org/entity/Q7315097)), [Damiano Oldoni](https://orcid.org/0000-0003-3445-7562) ([Instituut voor Natuur- en Bosonderzoek (INBO)](http://www.wikidata.org/entity/Q7315097)), [Sonia Vanderhoeven](https://orcid.org/0000-0002-6298-5373) ([Belgian Biodiversity Platform](http://www.wikidata.org/entity/Q100600896)), [Steven J Baskauf](https://orcid.org/0000-0003-4365-3135) ([Vanderbilt University Libraries](http://www.wikidata.org/entity/Q16849893)), [Arthur Chapman](https://orcid.org/0000-0003-1700-6962) ([Australian Biodiversity Information Services](http://www.wikidata.org/entity/Q100600913)), [Melodie McGeoch](https://orcid.org/0000-0003-3388-2241) ([McGeoch Research Group](http://www.wikidata.org/entity/Q100600923)), [Ramona Walls](https://orcid.org/0000-0001-8815-0078) ([University of Arizona](http://www.wikidata.org/entity/Q503419)), [John Wieczorek](https://orcid.org/0000-0003-1144-0290) ([VertNet](http://www.wikidata.org/entity/Q98382028)), [John R.U. Wilson](https://orcid.org/0000-0003-0174-3239) ([South African National Biodiversity Institute](http://www.wikidata.org/entity/Q30296386)), [Paula F Zermoglio](https://orcid.org/0000-0002-6056-5084) ([VertNet](http://www.wikidata.org/entity/Q98382028)), [Annie Simpson](https://orcid.org/0000-0001-8338-5134) ([U.S. Geological Survey](http://www.wikidata.org/entity/Q193755))
 
 Creator
 : TDWG Darwin Core Maintenance Group
 
 Bibliographic citation
-: Darwin Core Maintenance Group. 2025. Pathway Controlled Vocabulary List of Terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/pw/2025-06-12>
+: TDWG Darwin Core Maintenance Group. 2025. Pathway Controlled Vocabulary List of Terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/pw/2025-07-10>
 
 
 ## 1 Introduction

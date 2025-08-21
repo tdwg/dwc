@@ -6,6 +6,7 @@ rightsHolder
 accessRights
 bibliographicCitation
 references
+feedbackURL
 institutionID
 collectionID
 datasetID
@@ -45,10 +46,14 @@ occurrenceRemarks
 organismID
 organismName
 organismScope
+causeOfDeath
 associatedOrganisms
 previousIdentifications
 organismRemarks
 materialEntityID
+digitalSpecimenID
+materialEntityType
+discipline
 preparations
 disposition
 verbatimLabel
@@ -59,6 +64,10 @@ eventID
 parentEventID
 eventType
 fieldNumber
+projectTitle
+projectID
+fundingAttribution
+fundingAttributionID
 eventDate
 eventTime
 startDayOfYear
@@ -140,6 +149,7 @@ identificationID
 verbatimIdentification
 identificationQualifier
 typeStatus
+typifiedName
 identifiedBy
 identifiedByID
 dateIdentified
@@ -189,6 +199,7 @@ taxonRemarks
 measurementID
 parentMeasurementID
 measurementType
+verbatimMeasurementType
 measurementValue
 measurementAccuracy
 measurementUnit

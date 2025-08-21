@@ -2,16 +2,34 @@
 # file import and configuration
 # -----------------------------
 
+import sys
 import pandas as pd
 
-github_branch = 'master' # "master" for production, something else for development
+arg_vals = sys.argv[1:]
+opts = [opt for opt in arg_vals if opt.startswith('-')]
+args = [arg for arg in arg_vals if not arg.startswith('-')]
+
+# "master" for production, something else for development
+if '--branch' in opts:
+    github_branch = args[opts.index('--branch')]
+else:
+    github_branch = 'master'
 
 # This is the base URL for raw files from the branch of the repo that has been pushed to GitHub
-github_baseUri = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/' + github_branch + '/'
+if '--rs-path' in opts:
+    # Optionally, use a local copy of rs.tdwg.org, useful during development.
+    # e.g. '../../rs.tdwg.org/'
+    githubBaseUri = args[opts.index('--rs-path')]
+    if not githubBaseUri.endswith('/'):
+        githubBaseUri += '/'
+    localGithub = True
+else:
+    githubBaseUri = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/' + github_branch + '/'
+    localGithub = False
 
 # This is a Python list of the database names of the term version lists to be included in the document.
 #term_lists = ['iri']
-term_lists = ['terms', 'iri', 'dc-for-dwc', 'dcterms-for-dwc', 'curatorial', 'dwcore', 'dwctype', 'geospatial']
+term_lists = ['terms', 'iri', 'dc-for-dwc', 'dcterms-for-dwc', 'ac-for-dwc', 'curatorial', 'dwcore', 'dwctype', 'geospatial']
 
 column_mappings = [
     {'norm': 'iri', 'accum': 'version'},
@@ -37,19 +55,19 @@ column_mappings = [
 print('Loading namespace CSV files from GitHub:')
 for term_list_index in range(len(term_lists)):
     # retrieve configuration metadata for term list
-    config_url = github_baseUri + term_lists[term_list_index] + '/constants.csv'
+    config_url = githubBaseUri + term_lists[term_list_index] + '/constants.csv'
     config_df = pd.read_csv(config_url, na_filter=False)
     term_namespace = config_df.iloc[0].loc['domainRoot']
     # print(term_namespace)
-    
+
     # Retrieve versions metadata for term list
-    versions_url = github_baseUri + term_lists[term_list_index] + '-versions/' + term_lists[term_list_index] + '-versions.csv'
+    versions_url = githubBaseUri + term_lists[term_list_index] + '-versions/' + term_lists[term_list_index] + '-versions.csv'
     print(versions_url)
     versions_df = pd.read_csv(versions_url, na_filter=False)
-    
+
     # Add a column for the term IRI by concatenating the term namespace with the local name value for each row
     versions_df['term_iri'] = term_namespace + versions_df['term_localName']
-    
+
     if term_list_index == 0:
         # start the DataFrame with the first term list versions data
         accumulated_frame = versions_df.copy()
@@ -57,15 +75,15 @@ for term_list_index in range(len(term_lists)):
         # append subsequent term lists data to the DataFrame
         #accumulated_frame = accumulated_frame.append(versions_df.copy(), sort=True)
         accumulated_frame = pd.concat([accumulated_frame, versions_df], sort=True)
-        
+
 # Special procedure for obsolete terms
 # Retrieve versions metadata
-versions_url = github_baseUri + 'dwc-obsolete-versions/dwc-obsolete-versions.csv'
+versions_url = githubBaseUri + 'dwc-obsolete-versions/dwc-obsolete-versions.csv'
 print(versions_url)
 versions_df = pd.read_csv(versions_url, na_filter=False)
 
 # Retrieve term/version join data
-join_url = github_baseUri + 'dwc-obsolete/dwc-obsolete-versions.csv'
+join_url = githubBaseUri + 'dwc-obsolete/dwc-obsolete-versions.csv'
 join_df = pd.read_csv(join_url, na_filter=False)
 
 # Find the term IRI for each version and add it to a list
@@ -76,7 +94,7 @@ for row_index,row in versions_df.iterrows():
         if join_row['version'] == row['version']:
             term_iri_list.append(join_row['term'])
             break
-'''    
+'''
     # Locate the row in the join data where the version matches the row in the versions DataFrame
     term_iri_row = join_df.loc[join_df['version'] == row['version']]
     # Add the current term IRI from the join data row to the list
@@ -124,25 +142,6 @@ for row_index,row in accumulated_frame.iterrows():
             normative_doc_row.append(row[column_mapping['accum']])
     normative_doc_list.append(normative_doc_row)
 
-''' NO LONGER NEEDED FOR HANDLING OF IRI VALUED TERMS
-# special handling for http://rs.tdwg.org/dwc/terms/attributes/UseWithIRI. Eventually we want to eliminate this.
-use_with_iri_row = ['http://rs.tdwg.org/dwc/terms/attributes/UseWithIRI-2017-10-06',
-  'UseWithIRI',
-  'UseWithIRI',
-  'The category of terms that are recommended to have an IRI as a value.',
-  'A utility class to organize the dwciri: terms.',
-  '',
-  'http://www.w3.org/2000/01/rdf-schema#Class',
-  '2017-10-06',
-  'recommended',
-  '',
-  'http://www.w3.org/2000/01/rdf-schema#Class',
-  'http://rs.tdwg.org/dwc/terms/attributes/UseWithIRI',
-  'not in ABCD',
-  '']
-normative_doc_list.append(use_with_iri_row)
-'''
-
 # Turn list of lists into dataframe
 normative_doc_df = pd.DataFrame(normative_doc_list, columns = column_headers)
 # Set the row label as the version IRI
@@ -163,7 +162,7 @@ remaining_rows_df = normative_doc_df.copy()
 
 # Load the ordered list of terms in the Quick Reference Guide (single column named recommended_term_iri)
 print('ordering rows for output document')
-qrg_df = pd.read_csv('qrg-list.csv', na_filter=False)
+qrg_df = pd.read_csv('qrg-template/qrg-list.csv', na_filter=False)
 for qrg_index,qrg_row in qrg_df.iterrows():
     found = False
     for row_index,row in normative_doc_df.iterrows():
