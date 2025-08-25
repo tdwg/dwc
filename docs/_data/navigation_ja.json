@@ -1,111 +1,111 @@
 [
   {
     "text": "ホーム",
-    "href": "/"
+    "href": "/ja/"
   },
   {
-    "text": "",
+    "text": "用語",
     "menu": [
       {
         "text": "Darwin Core",
-        "href": "/リスト/"
+        "href": "/ja/list/"
       },
       {
-        "text": ""
+        "text": "---"
       },
       {
-        "text": "",
-        "href": ""
+        "text": "Chronometric Age  拡張形式",
+        "href": "https://chrono.tdwg.org/list/"
       },
       {
-        "text": "",
-        "href": ""
+        "text": "Humboldt 拡張形式 ",
+        "href": "https://eco.tdwg.org/list/"
       },
       {
-        "text": ""
+        "text": "---"
       },
       {
-        "text": "",
-        "href": ""
+        "text": "Establishment Means の制御語彙",
+        "href": "/ja/em/"
       },
       {
-        "text": "",
-        "href": ""
+        "text": "Degree of Establishment の制御語彙",
+        "href": "/ja/doe/"
       },
       {
-        "text": "",
+        "text": "Pathway の制御語彙",
+        "href": "/ja/pw/"
+      }
+    ]
+  },
+  {
+    "text": "ガイド",
+    "menu": [
+      {
+        "text": "Darwin Core クイックリファレンス",
+        "href": "/ja/terms/"
+      },
+      {
+        "text": "---"
+      },
+      {
+        "text": "Chronometric Age 拡張形式 クイックリファレンス",
+        "href": "https://chrono.tdwg.org/terms/"
+      },
+      {
+        "text": "Humboldt 拡張形式 クイックリファレンス",
+        "href": "https://eco.tdwg.org/terms/"
+      },
+      {
+        "text": "---"
+      },
+      {
+        "text": "シンプルな Darwin Core",
+        "href": "/ja/simple/"
+      },
+      {
+        "text": "テキスト (Darwin Core Archive)",
+        "href": "/ja/text/"
+      },
+      {
+        "text": "RDF",
+        "href": "/ja/rdf/"
+      },
+      {
+        "text": "XML",
+        "href": "/ja/xml/"
+      },
+      {
+        "text": "名前空間ポリシー",
+        "href": "/ja/namespace/"
+      },
+      {
+        "text": "---"
+      },
+      {
+        "text": "質問と回答",
         "href": ""
       }
     ]
   },
   {
-    "text": "",
-    "menu": [
-      {
-        "text": "",
-        "href": ""
-      },
-      {
-        "text": ""
-      },
-      {
-        "text": "",
-        "href": ""
-      },
-      {
-        "text": "",
-        "href": ""
-      },
-      {
-        "text": ""
-      },
-      {
-        "text": "",
-        "href": ""
-      },
-      {
-        "text": "",
-        "href": ""
-      },
-      {
-        "text": "",
-        "href": ""
-      },
-      {
-        "text": "",
-        "href": ""
-      },
-      {
-        "text": "",
-        "href": ""
-      },
-      {
-        "text": ""
-      },
-      {
-        "text": "",
-        "href": ""
-      }
-    ]
+    "text": "GitHub",
+    "href": "https://github.com/tdwg/dwc"
   },
   {
-    "text": "",
-    "href": ""
-  },
-  {
-    "text": "",
+    "text": "文A",
     "menu": [
       {
-        "text": "",
-        "href": "/"
+        "text": "English",
+        "href": "/ja/"
       },
       {
-        "text": "",
-        "href": ""
+        "text": "Čeština",
+        "href": "/cs/"
       },
       {
-        "text": "",
-        "href": ""
+        "text": "Français",
+        "href": "/fr/"
       }
     ]
   }

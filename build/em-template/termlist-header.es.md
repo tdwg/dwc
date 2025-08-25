@@ -9,50 +9,49 @@ Namespace URI
 Preferred namespace abbreviation
 : dwcem:
 
-Date version issued
-: 2021-09-01
+Fecha de publicación de la versión
+: {ratification_date}
 
-Date created
-: 2020-10-13
+Fecha de creación
+: {created_date}
 
-Part of TDWG Standard
-: <http://www.tdwg.org/standards/450>
+Parte del Estándar TDWG
+: <{standard_iri}>
 
-This document version
-: <http://rs.tdwg.org/dwc/doc/em/2021-09-01>
+Esta versión del documento
+: <{current_iri}{ratification_date}>
 
-Latest version of document
-: <http://rs.tdwg.org/dwc/doc/em/>
+Última versión del documento
+: <{current_iri}>
 
-Previous version
-: <http://rs.tdwg.org/dwc/doc/em/2020-10-13>
+{previous_version_slot}
 
 Abstract
 : The Darwin Core term `establishmentMeans` provides information about whether an organism or organisms have been introduced to a given place and time through the direct or indirect activity of modern humans. The Establishment Means Controlled Vocabulary provides terms that should be used as values for `dwc:establishmentMeans` and `dwciri:establishmentMeans`.
 
-Contributors
-: Quentin Groom, Peter Desmet, Lien Reyserhove, Tim Adriaens, Damiano Oldoni, Sonia Vanderhoeven, Steven J Baskauf, Arthur Chapman, Melodie McGeoch, Ramona Walls, John Wieczorek, John R.U. Wilson, Paula F Zermoglio, Annie Simpson
+Colaboradores
+: {contributors}
 
-Creator
-: TDWG Darwin Core Maintenance Group
+Creador
+: {creator}
 
-Bibliographic citation
-: Darwin Core Maintenance Group. 2021. Establishment Means Controlled Vocabulary List of Terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/em/2021-09-01>
+Cita bibliográfica
+: {creator}. {year}. {document_title}. {publisher}. <{current_iri}{ratification_date}>
 
-## 1 Introduction
+## 1 Introducción
 
-This document includes terms intended to be used as a controlled value for Darwin Core terms with local name `establishmentMeans`. For details and rationale, see Groom et al. 2019. Improving Darwin Core for research and management of alien species. <https://doi.org/10.3897/biss.3.38084>
+This document includes terms intended to be used as a controlled value for Darwin Core terms with local name `establishmentMeans`. Para más detalles y justificación, véase Groom et al. 2019. Improving Darwin Core for research and management of alien species. <https://doi.org/10.3897/biss.3.38084>
 
-### 1.1 Status of the content of this document
+### 1.1 Estado del contenido de este documento
 
-In Section 4, the values of the `Term IRI`, `Definition`, and `Controlled value` are normative. The value of `Usage` (if it exists for a given term) is normative.  The values of `Term Name` are non-normative, although one can expect that the namespace abbreviation prefix is one commonly used for the term namespace.  `Label` and the values of all other properties (such as `Notes`) are non-normative.
+En la Sección 4, los valores de `Término IRI`, `Definición` y `Valor controlado` son normativos. El valor de `Uso` (si existe para un término determinado) también es normativo.  Los valores del `Nombre del término` no son normativos, aunque se puede esperar que el prefijo del namespace abreviado sea uno comúnmente utilizado para ese namespace.  La `Etiqueta` y los valores de todas las demás propiedades (como `Notas`) no son normativos.
 
 ### 1.2 RFC 2119 key words
 
-The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [RFC 2119](https://tools.ietf.org/html/rfc2119).
+Las palabras clave "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY" y "OPTIONAL" en este documento deben interpretarse como se describe en la [RFC 2119](https://tools.ietf.org/html/rfc2119).
 
-## 2 Use of Terms
+## 2 Uso de los Términos
 
 Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://dwc.tdwg.org/rdf/#143-use-of-darwin-core-terms-in-rdf-normative), term IRIs MUST be used as values of `dwciri:establishmentMeans`. Controlled value strings MUST be used as values of `dwc:establishmentMeans`.
 
-## 3 Term index
+## 3 Índice de Términos

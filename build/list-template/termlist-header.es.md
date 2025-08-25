@@ -1,70 +1,70 @@
-# Darwin Core List of Terms
+# Lista de Términos Darwin Core
 
-Title
-: Darwin Core List of Terms
+Título
+: Lista de Términos Darwin Core
 
-Date version issued
+Fecha de publicación de la versión
 : {ratification_date}
 
-Date created
+Fecha de creación
 : {created_date}
 
-Part of TDWG Standard
+Parte del Estándar TDWG
 : <{standard_iri}>
 
-This version
+Esta versión
 : <{current_iri}{ratification_date}>
 
-Latest version
+Última versión
 : <{current_iri}>
 
 {previous_version_slot}
 
-Abstract
-: Darwin Core is a vocabulary standard for transmitting information about biodiversity. This document lists all terms in namespaces currently used in the vocabulary.
+Resumen:
+Darwin Core es vocabulario estándar para la transmisión de información sobre biodiversidad. Este documento lista todos los términos en los espacios de nombres actualmente utilizados en el vocabulario.
 
-Contributors
+Colaboradores
 : {contributors}
 
-Creator
+Creador
 : {creator}
 
-Bibliographic citation
+Cita bibliográfica
 : {creator}. {year}. {document_title}. {publisher}. <{current_iri}{ratification_date}>
 
-## 1 Introduction (Informative)
+## 1. Introducción (Informativa)
 
-This document contains terms that are part of the most recent version of the Darwin Core vocabulary (<http://rs.tdwg.org/version/dwc/{ratification_date}>).
+Este documento contiene los términos que forman parte de la versión más reciente del vocabulario Darwin Core (<http://rs.tdwg.org/version/dwc/{ratification_date}>).
 
-This document includes terms in four namespaces that contain recommended terms: `dwc:`, `dwciri:`, `dc:`, and `dcterms:`. However, some terms in these namespaces are deprecated or superseded and should no longer be used. Deprecation or supersession is noted in the term metadata. Namespaces that contain only deprecated terms are not included in this document, but metadata about those terms can be retrieved by dereferencing their IRIs.
+Este documento incluye términos en cuatro espacios de nombres que contienen términos recomendados: `dwc:`, `dwciri:`, `dc:`, and `dcterms:`. Sin embargo, algunos términos en estos espacios de nombres están obsoletos o han sido reemplazados, y no deberían utilizarse más. La obsolescencia o reemplazo se indica en los metadatos del término. Los espacios de nombres que contienen únicamente términos obsoletos no están incluidos en este documento, pero los metadatos de dichos términos pueden recuperarse accediendo a sus IRIs.
 
-For a simplified list that contains only the currently recommended terms, see the [Darwin Core Quick Reference Guide](../terms/).
+Para una lista simplificada que solo contiene los términos actualmente recomendados, consulte la [Guía de Referencia Rápida de Darwin Core](../terms/).
 
-### 1.1 Status of the content of this document
+### 1.1 Estado del contenido de este documento
 
-Sections 1 and 3 are non-normative.
+Las secciones 1 y 3 son no normativas.
 
-Section 2 is normative.
+La sección 2 es normativa.
 
-In Section 4, the values of the `Term IRI` and `Definition` are normative. The values of `Term Name` are non-normative, although one can expect that the namespace abbreviation prefix is one commonly used for the term namespace.  `Label` and the values of all other properties (such as `Examples` and `Notes`) are non-normative.
+En la sección 4, los valores del `Término IRI` y la `Definición` son normativos. Los valores del 'Nombre del Término' no son normativos, aunque se espera que el prefijo abreviado del espacio de nombre utilizado sea el más comúnmente asociado a ese espacio.  La `Etiqueta` y los valores de todas las demás propiedades (como `Ejemplos` y `Notas`) son no normativos.
 
-### 1.2 RFC 2119 key words
+### 1.2 Palabras clave RFC 2119
 
-The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [BCP 14](https://www.rfc-editor.org/info/bcp14) [\[RFC 2119\]](https://datatracker.ietf.org/doc/html/rfc2119) and [\[RFC 8174\]](https://datatracker.ietf.org/doc/html/rfc8174) when, and only when, they appear in all capitals, as shown here.
+Las palabras clave "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY" y "OPTIONAL" en este documento deben interpretarse como se describe en [BCP 14](https://www.rfc-editor.org/info/bcp14) [\[RFC 2119\]](https://datatracker.ietf.org/doc/html/rfc2119) y [\[RFC 8174\]](https://datatracker.ietf.org/doc/html/rfc8174), únicamente cuando aparezcan en mayúsculas, tal como se muestra aquí.
 
-### 1.3 Namespace abbreviations
+### 1.3 Abreviaciones de espacio de nombres
 
-The following namespace abbreviations are used in this document:
+Se utilizan las siguientes abreviaciones de espacios de nombres en este documento:
 
-| abbreviation             | IRI                                                                              |
+| Abreviación              | IRI                                                                              |
 | ------------------------ | -------------------------------------------------------------------------------- |
 | dwc:     | http://rs.tdwg.org/dwc/terms/    |
 | dwciri:  | http://rs.tdwg.org/dwc/iri/      |
 | dc:      | http://purl.org/dc/elements/1.1/ |
 | dcterms: | http://purl.org/dc/terms/                        |
 
-## 2 Use of Terms
+## 2 Uso de los Términos
 
-Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#143-use-of-darwin-core-terms-in-rdf-normative), terms in the `dwciri:` namespace MUST be used with IRI values. Terms in the `dwc:` and `dc:` namespaces are generally expected to have string literal values. Values for terms in the `dcterms:` namespace will depend on the details of the term. See [Section 3 of the Darwin Core RDF Guide](../rdf/#3-term-reference-normative) for details.
+De acuerdo con los requisitos de la [Sección 1.4.3 de la Guía RDF de Darwin Core](../rdf/#143-use-of-darwin-core-terms-in-rdf-normative), los términos en el espacio de nombres `dwciri:` DEBEN usarse con valores IRI. Se espera que los términos en los espacios de nombres `dwc:` y `dc:` tengan generalmente valores literales tipo cadena. Los valores de los términos en los espacios de nombre `dcterms:` dependerán de los detalles de cada término. Consulte la [Sección 3 de la Guía RDF de Darwin Core](../rdf/#3-term-reference-normative) para más detalles.
 
-## 3 Term indices
+## 3. Índices de términos

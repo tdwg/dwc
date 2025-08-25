@@ -38,7 +38,7 @@ jobs:
       - name: Install dependencies
         run: |
           cd build && pip3 install -r requirements.txt
-      - name: execute py script # run file
+      - name: Create Python-generated pages
         run: |
           cd build && python3 build-webpages.py
 

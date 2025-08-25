@@ -1,58 +1,56 @@
-# Establishment Means Controlled Vocabulary List of Terms
+# 建立手段控制詞彙術語清單
 
-Title
-: Establishment Means Controlled Vocabulary List of Terms
+標題
+: 建立手段控制詞彙術語清單
 
-Namespace URI
+命名空間 URI
 : <http://rs.tdwg.org/dwcem/values/>
 
-Preferred namespace abbreviation
+首選命名空間縮寫
 : dwcem:
 
-Date version issued
-: 2021-09-01
+版本發行日期
+: {ratification_date}
 
-Date created
-: 2020-10-13
+建立日期
 
-Part of TDWG Standard
-: <http://www.tdwg.org/standards/450>
+生物多樣性訊息標準的一部分
+: <{standard_iri}>
 
 This document version
-: <http://rs.tdwg.org/dwc/doc/em/2021-09-01>
+: <{current_iri}{ratification_date}>
 
 Latest version of document
-: <http://rs.tdwg.org/dwc/doc/em/>
+: <{current_iri}>
 
-Previous version
-: <http://rs.tdwg.org/dwc/doc/em/2020-10-13>
+{previous_version_slot}
 
-Abstract
-: The Darwin Core term `establishmentMeans` provides information about whether an organism or organisms have been introduced to a given place and time through the direct or indirect activity of modern humans. The Establishment Means Controlled Vocabulary provides terms that should be used as values for `dwc:establishmentMeans` and `dwciri:establishmentMeans`.
+摘要
+: 達爾文核心標準詞彙「establishmentMeans」提供資訊，說明一種或多種生物是否透過現代人類的直接或間接活動，傳入特定地點與時間。 建立手段控制詞彙提供了應用於「dwc:establishmentMeans」和 「dwciri:establishmentMeans」值的術語。
 
-Contributors
-: Quentin Groom, Peter Desmet, Lien Reyserhove, Tim Adriaens, Damiano Oldoni, Sonia Vanderhoeven, Steven J Baskauf, Arthur Chapman, Melodie McGeoch, Ramona Walls, John Wieczorek, John R.U. Wilson, Paula F Zermoglio, Annie Simpson
+貢獻者
+: {contributors}
 
 Creator
-: TDWG Darwin Core Maintenance Group
+: {creator}
 
-Bibliographic citation
-: Darwin Core Maintenance Group. 2021. Establishment Means Controlled Vocabulary List of Terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/em/2021-09-01>
+書目引用
+: {creator}. {year}. {document_title}. {publisher}. <{current_iri}{ratification_date}>
 
-## 1 Introduction
+## 1 引言
 
-This document includes terms intended to be used as a controlled value for Darwin Core terms with local name `establishmentMeans`. For details and rationale, see Groom et al. 2019. Improving Darwin Core for research and management of alien species. <https://doi.org/10.3897/biss.3.38084>
+本文件所包含的詞彙是用來作為本地名稱為 「establishmentMeans」的達爾文核心標準詞彙的控制值。 如需詳細資訊和理由，請參閱 Groom et al. 2019. Improving Darwin Core for research and management of alien species. <https://doi.org/10.3897/biss.3.38084>
 
-### 1.1 Status of the content of this document
+### 1.1 本文件內容的現況
 
-In Section 4, the values of the `Term IRI`, `Definition`, and `Controlled value` are normative. The value of `Usage` (if it exists for a given term) is normative.  The values of `Term Name` are non-normative, although one can expect that the namespace abbreviation prefix is one commonly used for the term namespace.  `Label` and the values of all other properties (such as `Notes`) are non-normative.
+在第 4 節中，「Term IRI」、「Definition」和「Controlled value」的值是規範性的。 「Usage」的值 (如果它存在於特定術語中) 是規範性的。  「Term Name」的值是非規範性的，不過可以預期命名空間縮寫是術語命名空間的常用前綴。  「Label」和所有其他屬性 (例如「Notes」) 的值都是非規範性。
 
-### 1.2 RFC 2119 key words
+### 1.2 RFC 2119 關鍵字
 
-The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [RFC 2119](https://tools.ietf.org/html/rfc2119).
+本文件中的關鍵詞「MUST」、「MUST NOT」、「REQUIRED」、「SHALL」、「SHALL NOT」、「SHOULD」、「SHOULD NOT」、「RECOMMENDED」、「MAY」和「OPTIONAL」應按照 [RFC 2119](https://tools.ietf.org/html/rfc2119) 中的描述進行解釋。
 
-## 2 Use of Terms
+## 2 使用條款
 
-Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://dwc.tdwg.org/rdf/#143-use-of-darwin-core-terms-in-rdf-normative), term IRIs MUST be used as values of `dwciri:establishmentMeans`. Controlled value strings MUST be used as values of `dwc:establishmentMeans`.
+由於 [《達爾文核心標準RDF指南》第 1.4.3 節](https://dwc.tdwg.org/rdf/#143-use-of-darwin-core-terms-in-rdf-normative) 的要求，術語 IRI 必須用作「dwciri:establishmentMeans」的值。 受控制的值字串必須用作「dwc:establishmentMeans」的值。
 
-## 3 Term index
+## 3 術語索引

@@ -10,34 +10,33 @@ Preferovaná zkratka jmenného prostoru
 : dwcpw:
 
 Datum vydání verze
-: 2021-09-01
+: {ratification_date}
 
 Datum vytvoření
-: 2020-10-13
+: {created_date}
 
-Součást TDWG Standardu
-: <http://www.tdwg.org/standards/450>
+Část standardu TDWG
+: <{standard_iri}>
 
-Tato verze dokumentu
-: <http://rs.tdwg.org/dwc/doc/pw/2021-09-01>
+This document version
+: <{current_iri}{ratification_date}>
 
-Aktuální verze dokumentu
-: <http://rs.tdwg.org/dwc/doc/pw/>
+Latest version of document
+: <{current_iri}>
 
-Předchozí verze
-: <http://rs.tdwg.org/dwc/doc/pw/2020-10-13>
+{previous_version_slot}
 
 Abstrakt
 : Darwin Core termín "pathway" poskytuje informace o procesu, kterým se organismus dostal na dané místo v daném čase. Řízený slovník Pathway poskytuje termíny, které by se měly používat jako hodnoty pro `dwc:pathway` a `dwciri:pathway`.
 
 Přispěvatelé
-: Quentin Groom, Peter Desmet, Lien Reyserhove, Tim Adriaens, Damiano Oldoni, Sonia Vanderhoeven, Steven J. Baskauf, Arthur Chapman, Melodie McGeoch, Ramona Walls, John Wieczorek, John R.U. Wilson, Paula F Zermoglio, Annie Simpson
+: {contributors}
 
 Tvůrce
-: TDWG Darwin Core Maintenance Group
+: {creator}
 
 Bibliografická citace
-: Darwin Core Maintenance Group. 2021. Seznam termínů řízeného slovníku Pathway. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/pw/2021-09-01>
+: {creator}. {year}. {document_title}. {publisher}. <{current_iri}{ratification_date}>
 
 ## 1. Úvod
 

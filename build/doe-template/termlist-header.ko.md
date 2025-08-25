@@ -10,34 +10,33 @@ Preferred namespace abbreviation
 : dwcdoe:
 
 Date version issued
-: 2021-09-01
+: {ratification_date}
 
 Date created
-: 2020-10-13
+: {created_date}
 
 Part of TDWG Standard
-: <http://www.tdwg.org/standards/450>
+: <{standard_iri}>
 
 This document version
-: <http://rs.tdwg.org/dwc/doc/doe/2021-09-01>
+: <{current_iri}{ratification_date}>
 
 Latest version of document
-: <http://rs.tdwg.org/dwc/doc/doe/>
+: <{current_iri}>
 
-Previous version
-: <http://rs.tdwg.org/dwc/doc/doe/2020-10-13>
+{previous_version_slot}
 
 Abstract
-: The Darwin Core term `degreeOfEstablishment` provides information about degree to which an Organism survives, reproduces, and expands its range at the given place and time.. The Degree of Establishment Controlled Vocabulary provides terms that should be used as values for `dwc:degreeOfEstablishment` and `dwciri:degreeOfEstablishment`.
+: The Darwin Core term `degreeOfEstablishment` provides information about degree to which an Organism survives, reproduces, and expands its range at the given place and time. The Degree of Establishment Controlled Vocabulary provides terms that should be used as values for `dwc:degreeOfEstablishment` and `dwciri:degreeOfEstablishment`.
 
 Contributors
-: Quentin Groom, Peter Desmet, Lien Reyserhove, Tim Adriaens, Damiano Oldoni, Sonia Vanderhoeven, Steven J Baskauf, Arthur Chapman, Melodie McGeoch, Ramona Walls, John Wieczorek, John R.U. Wilson, Paula F Zermoglio, Annie Simpson
+: {contributors}
 
 Creator
-: TDWG Darwin Core Maintenance Group
+: {creator}
 
 Bibliographic citation
-: Darwin Core Maintenance Group. 2021. Degree of Establishment Controlled Vocabulary List of Terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/doe/2021-09-01>
+: {creator}. {year}. {document_title}. {publisher}. <{current_iri}{ratification_date}>
 
 ## 1 Introduction
 

@@ -1,58 +1,57 @@
-# Degree of Establishment Controlled Vocabulary List of Terms
+# Degree of Establishment 制御語彙 用語一覧
 
-Title
-: Degree of Establishment Controlled Vocabulary List of Terms
+タイトル
+: Degree of Establishment 制御語彙 用語一覧
 
-Namespace URI
+名前空間 URI
 : <http://rs.tdwg.org/dwcdoe/values/>
 
-Preferred namespace abbreviation
+望ましい名前空間の略語
 : dwcdoe:
 
-Date version issued
-: 2021-09-01
+バージョン発行日
+: {ratification_date}
 
-Date created
-: 2020-10-13
+作成日
+: {created_date}
 
-Part of TDWG Standard
-: <http://www.tdwg.org/standards/450>
+TDWGスタンダードでのパート
+: <{standard_iri}>
 
 This document version
-: <http://rs.tdwg.org/dwc/doc/doe/2021-09-01>
+: <{current_iri}{ratification_date}>
 
 Latest version of document
-: <http://rs.tdwg.org/dwc/doc/doe/>
+: <{current_iri}>
 
-Previous version
-: <http://rs.tdwg.org/dwc/doc/doe/2020-10-13>
+{previous_version_slot}
 
 Abstract
-: The Darwin Core term `degreeOfEstablishment` provides information about degree to which an Organism survives, reproduces, and expands its range at the given place and time.. The Degree of Establishment Controlled Vocabulary provides terms that should be used as values for `dwc:degreeOfEstablishment` and `dwciri:degreeOfEstablishment`.
+: The Darwin Core term `degreeOfEstablishment` provides information about degree to which an Organism survives, reproduces, and expands its range at the given place and time. Degree of Establishment 制御語彙は、`dwc:degreeOfEstablishment` と `dwciri:degreeOfEstablishment` の値として使用すべき用語を提供します。
 
-Contributors
-: Quentin Groom, Peter Desmet, Lien Reyserhove, Tim Adriaens, Damiano Oldoni, Sonia Vanderhoeven, Steven J Baskauf, Arthur Chapman, Melodie McGeoch, Ramona Walls, John Wieczorek, John R.U. Wilson, Paula F Zermoglio, Annie Simpson
+貢献者
+: {contributors}
 
-Creator
-: TDWG Darwin Core Maintenance Group
+作成者
+: {creator}
 
-Bibliographic citation
-: Darwin Core Maintenance Group. 2021. Degree of Establishment Controlled Vocabulary List of Terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/doe/2021-09-01>
+書誌的引用
+: {creator}. {year}. {document_title}. {publisher}. <{current_iri}{ratification_date}>
 
-## 1 Introduction
+## 1 イントロダクション
 
-This document includes terms intended to be used as a controlled value for Darwin Core terms with local name `degreeOfEstablishment`. For details and rationale, see Groom et al. 2019. Improving Darwin Core for research and management of alien species. <https://doi.org/10.3897/biss.3.38084>
+この文書には、ローカル名`degreeOfEstablishment`を持つ Darwin Core 用語の制御値として使用するよう意図された用語が含まれています。 詳細と根拠については、以下をご覧ください：Groom et al. 2019. Improving Darwin Core for research and management of alien species. <https://doi.org/10.3897/biss.3.38084>
 
-### 1.1 Status of the content of this document
+### 1.1 この文書の内容のステータス
 
-In Section 4, the values of the `Term IRI`, `Definition`, and `Controlled value` are normative. The value of `Usage` (if it exists for a given term) is normative.  The values of `Term Name` are non-normative, although one can expect that the namespace abbreviation prefix is one commonly used for the term namespace.  `Label` and the values of all other properties (such as `Notes`) are non-normative.
+セクション 4 では、`用語のIRI（Term IRI）`、`定義（Definition）`、`制御値（Controlled value）`の値が規範的なものです。 `使用法（Usage）`の値がもし存在する場合、それは規範的なものです。  `用語の名前（Term Name）`の値は非規範的ですが、名前空間の略語の接頭辞はその用語の名前空間で一般的に使われるものであると予想できます。  `ラベル（Label）`とそのほかのすべての属性（`備考（Notes）`など）は非規範的なものです。
 
-### 1.2 RFC 2119 key words
+### 1.2 RFC 2119 キーワード
 
-The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [RFC 2119](https://tools.ietf.org/html/rfc2119).
+この文書における “MUST”、”MUST NOT”、”REQUIRED”、”SHALL”、”SHALL NOT”、”SHOULD”、”SHOULD NOT”、”RECOMMENDED”、”MAY”、”OPTIONAL” というキーワードは、[RFC 2119](https://tools.ietf.org/html/rfc2119) に記述されているように解釈されます。
 
-## 2 Use of Terms
+## 2 用語の使い方
 
-Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://rs.tdwg.org/dwc/terms/guides/rdf/#143-use-of-darwin-core-terms-in-rdf-normative), term IRIs MUST be used as values of `dwciri:degreeOfEstablishment`. Controlled value strings MUST be used as values of `dwc:degreeOfEstablishment`.
+[Darwin Core RDF ガイドのセクション 1.4.3](http://rs.tdwg.org/dwc/terms/guides/rdf/#143-use-of-darwin-core-terms-in-rdf-normative) の要件により、用語のIRIは `dwciri:degreeOfEstablishment` の値として使用しなければなりません（MUST）。 制御値の文字列は、`dwc:degreeOfEstablishment`の値として使用しなければなりません（MUST）。
 
-## 3 Term index
+## 3 用語索引
