@@ -18,10 +18,9 @@ Date de création
 Fait partie du standard TDWG
 : <{standard_iri}>
 
-This document version
-: <{current_iri}{ratification_date}>
+La version de ce document : <{current_iri}{ratification_date}>
 
-Latest version of document
+Dernière version de ce document
 : <{current_iri}>
 
 Version précédente
