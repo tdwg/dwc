@@ -17,16 +17,16 @@ Datum vytvoření
 Část standardu TDWG
 : <{standard_iri}>
 
-This document version
+Tato verze dokumentu
 : <{current_iri}{ratification_date}>
 
-Latest version of document
+Aktuální verze dokumentu
 : <{current_iri}>
 
 {previous_version_slot}
 
-Abstract
-: The Darwin Core term `degreeOfEstablishment` provides information about degree to which an Organism survives, reproduces, and expands its range at the given place and time. Řízený slovník Stupně rozšíření poskytuje termíny, které by se měly používat jako hodnoty pro `dwc:degreeOfEstablishment` a `dwciri:degreeOfEstablishment`.
+Abstrakt
+: Darwin Core termín `degreeOfEstablishment` poskytuje informace o tom, do jaké míry organismus přežívá, rozmnožuje se a rozšiřuje svůj areál v daném místě a čase. Řízený slovník Stupně rozšíření poskytuje termíny, které by se měly používat jako hodnoty pro `dwc:degreeOfEstablishment` a `dwciri:degreeOfEstablishment`.
 
 Přispěvatelé
 : {contributors}
