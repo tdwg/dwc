@@ -18,10 +18,10 @@ Datum vytvoření
 Část standardu TDWG
 : <{standard_iri}>
 
-This document version
+Tato verze dokumentu
 : <{current_iri}{ratification_date}>
 
-Latest version of document
+Aktuální verze dokumentu
 : <{current_iri}>
 
 {previous_version_slot}
