@@ -18,10 +18,10 @@
 TDWGスタンダードでのパート
 : <{standard_iri}>
 
-This document version
+この文書のバージョン
 : <{current_iri}{ratification_date}>
 
-Latest version of document
+文書の最新バージョン
 : <{current_iri}>
 
 {previous_version_slot}
