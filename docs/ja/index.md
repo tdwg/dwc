@@ -9,8 +9,8 @@ Darwin Core is a standard maintained by the [Darwin Core Maintenance Group](http
 
 ## Getting started
 
-- [Quick Reference Guide](terms/)
-- Usage guides: how to use Darwin Core as [Simple Darwin Core](simple/), [Text (Darwin Core Archives)](text/), [XML](xml/) or [RDF](rdf/)
-- [GitHub repository](https://github.com/tdwg/dwc): where Darwin Core is maintained
-- [Normative term list](list/): the document containing the full history of normative Darwin Core term definitions
+- [クイックリファレンスガイド](terms/)
+- 使用ガイド: Darwin core を [シンプルな Darwin core](simple/)、[テキスト（Darwin core アーカイブ）](text/)、[XML](xml/)、[RDF](rdf/) として使用するには
+- [GitHub レポジトリ](https://github.com/tdwg/dwc): Darwin Coreが管理されている場所
+- [規範的な用語の一覧](list/): 規範的なダーウィンコア用語定義の完全な履歴を含む文書
 - [Distribution files](https://github.com/tdwg/dwc/tree/master/dist): convenient files to start using Darwin Core
