@@ -7,7 +7,7 @@ layout: home
 {:.lead}
 Darwin Coreは、[Darwin Core Maintenance Group](https://www.tdwg.org/standards/dwc/#maintenance-group) により管理されている標準です。 **生物多様性に関する情報の共有を円滑にする**ため、識別子、ラベル、定義を提供する用語集（他の文脈ではこれらはプロパティ、要素、フィールド、カラム、属性、概念と呼ばれることもあります）が含まれます。 Darwin Core は主に分類群と、観察・標本・試料・関連情報によって裏付けされた自然界におけるそれらの発生に基づいています。
 
-## Getting started
+## はじめに
 
 - [クイックリファレンスガイド](terms/)
 - 使用ガイド: Darwin core を [シンプルな Darwin core](simple/)、[テキスト（Darwin core アーカイブ）](text/)、[XML](xml/)、[RDF](rdf/) として使用するには
