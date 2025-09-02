@@ -7,23 +7,23 @@ to create the terms/index.md file, which mostly contains html.
 
 この文書は、[Darwin Core 標準](https://www.tdwg.org/standards/dwc/)の一部として管理されている、現在（2023年9月18日時点）推奨されている用語の読みやすい参考資料として作成されたものであり、[Darwin Core Maintenance Group](https://www.tdwg.org/community/dwc/) によって管理されています。
 
-**助けが必要ですか？** Darwin Core の使い方の詳細については [Darwin Core Q&A サイト](https://github.com/tdwg/dwc-qa/blob/master/README.md)をご覧ください。 まだ質問がありますか？ [GitHub の dwc-qa issues ページ](https://github.com/tdwg/dwc-qa/issues)に新しいイシュー（質問/問題）を投稿するか、あるいは[フォーム](https://tinyurl.com/darwin-qa)を使用してください。 [Darwin Core の引用方法](https://dwc.tdwg.org/terms/#cite-darwin-core)についてはこの文書の下部をご覧ください。
+**助けが必要ですか？** Darwin Core の使い方の詳細については [Darwin Core Q&A サイト](https://github.com/tdwg/dwc-qa/blob/master/README.md)をご覧ください。 この他の質問がありますか？ [GitHub の dwc-qa issues ページ](https://github.com/tdwg/dwc-qa/issues)に新しいイシュー（質問/問題）を投稿するか、あるいは[フォーム](https://tinyurl.com/darwin-qa)を使用してください。 [Darwin Core の引用方法](https://dwc.tdwg.org/terms/#cite-darwin-core)についてはこの文書の下部をご覧ください。
 
 **貢献したいですか？** 変更の提案方法も含め、Darwin Core 標準に貢献する方法については、[貢献のためのガイドライン](https://github.com/tdwg/dwc/blob/master/.github/CONTRIBUTING.md)をご覧ください。
 
-このページは標準の一部ではありませんが、規範的な用語と定義を、用語を一貫して使用するための助けとなる非規範的な備考や例と結び付けています。 定義、備考、例には名前空間の略語が含まれることがあります（例：“dwc:”）。 These are included to show that the meaning for the word it is attached to very specifically means the term as defined in that namespace. Thus, dwc:Event means Event as defined by Darwin Core at https://dwc.tdwg.org/terms/#event. Capitalized terms that follow a namespace abbreviation, such as dwc:Occurrence, are Darwin Core class terms, which are a special category of terms used to group sets of property terms (terms that being with lower case names that follow the namespace abbreviation, e.g., dwc:eventID) for convenience. Comprehensive metadata for current and obsolete terms in human readable form are found in the document [List of Darwin Core terms](../list/).
+このページは標準の一部ではありませんが、規範的な用語と定義を、用語を一貫して使用するための助けとなる非規範的な備考や例と結び付けています。 定義、備考、例には名前空間の略語が含まれることがあります（例：“dwc:”）。 これらは、その単語の持つ意味が、その名前空間で定義された用語を非常に厳密に指すということを示すために含まれています。 したがって、dwc:Event は https://dwc.tdwg.org/terms/#event で定義されている、Darwin Core の Event を意味します。 名前空間の略語に続き大文字で始まる、例えば dwc:Occurrence のような用語は、プロパティ用語（名前の略語に続き小文字で始まる名前を持つ用語、例えば dwc:eventID）のセットをグループ化するために便宜上使用される特別な用語カテゴリである Darwin Core のクラス用語です。 現行の用語と廃止された用語に関する、人間が読みやすい形式の包括的なメタデータは、[Darwin Core 用語一覧](../list/)文書でご覧になれます。
 
-Additional [files with just the current term names](https://github.com/tdwg/dwc/tree/master/dist) and a [file with the full term history](https://github.com/tdwg/dwc/blob/master/vocabulary/term_versions.csv) can be found in the [Darwin Core repository](https://github.com/tdwg/dwc).
+追加の[現行の用語の名前のみのファイル](https://github.com/tdwg/dwc/tree/master/dist)と[完全な用語の履歴のファイル](https://github.com/tdwg/dwc/blob/master/vocabulary/term_versions.csv)は、[Darwin Core レポジトリ](https://github.com/tdwg/dwc)でご覧になれます。
 
 {% for class_group in class_groups %}
 
 ## {{ class_group.label }}
 
 {% if class_group.isRecordLevel %}
-This category contains terms that are generic in that they might apply to any type of record in a dataset.
+このカテゴリには、データセット内のあらゆる種類のレコードに適用される可能性がある一般的な用語が含まれています。
 {% endif %}
 {% if class_group.label == 'UseWithIRI' %}
-For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https://dwc.tdwg.org/rdf/#25-terms-in-the-dwciri-namespace-normative).
+`UseWithIRI`に関する詳細情報については、[RDF ガイドのセクション 2.5](https://dwc.tdwg.org/rdf/#25-terms-in-the-dwciri-namespace-normative) をご覧ください。
 {% endif %}
 
 <div class="my-4">
