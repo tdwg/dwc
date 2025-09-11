@@ -16,7 +16,7 @@ import dwcterms
 # -----------------
 # Configuration section
 # -----------------
-languages = ['en', 'cs', 'es', 'fr', 'ja', 'ko', 'zh-Hant']
+languages = ['en', 'cs', 'es', 'fr', 'ja', 'ko', 'ru', 'zh-Hant']
 
 class TermList:
     def __init__(self, terms, vocabType, organizedInCategories, displayOrder, displayLabel, displayComments, displayId):

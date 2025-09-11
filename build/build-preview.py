@@ -7,6 +7,7 @@ languages = [
   {'text': 'Español', 'href': '/es/'},
   {'text': '日本語', 'href': '/ja/'},
   {'text': '한국어', 'href': '/ko/'},
+  {'text': 'Русский', 'href': '/ru/'},
   {'text': '繁體中文', 'href': '/zh-Hant/'}
 ]
 
