@@ -67,6 +67,7 @@ The repository structure is described below. Files/directories indicated with `G
 │   ├── favicon.ico       : Web page icon
 │   ├── Gemfile           : Ruby Gem configuration
 │   ├── Gemfile.lock      : Ruby Gem configuration
+│   ├── _includes         : (Temporary) override of the theme footer to add analytics
 │   ├── index.md          : Website home page (manually maintained)
 │   ├── list              + Darwin Core List of Terms documents
 │   ├── namespace         : Darwin Core namespace policy
