@@ -26,7 +26,7 @@ Aktuální verze dokumentu
 {previous_version_slot}
 
 Abstrakt
-: Darwin Core termín `degreeOfEstablishment` poskytuje informace o tom, do jaké míry organismus přežívá, rozmnožuje se a rozšiřuje svůj areál v daném místě a čase. Řízený slovník Stupně rozšíření poskytuje termíny, které by se měly používat jako hodnoty pro `dwc:degreeOfEstablishment` a `dwciri:degreeOfEstablishment`.
+: Darwin Core termín `degreeOfEstablishment` poskytuje informace o tom, do jaké míry organismus přežívá, rozmnožuje se a rozšiřuje svůj areál v daném místě a čase. Řízený slovník Stupňů zavlečení poskytuje termíny, které by se měly používat jako hodnoty pro `dwc:degreeOfEstablishment` a `dwciri:degreeOfEstablishment`.
 
 Přispěvatelé
 : {contributors}
