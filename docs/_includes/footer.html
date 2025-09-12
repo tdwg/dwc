@@ -1,0 +1,148 @@
+<footer class="d-print-none">
+  <div class="container">
+    <div class="row">
+      {% if site.social %}
+        <div class="col-lg">
+          <ul class="list-inline">
+            {% if site.social.email %}
+              <li class="list-inline-item mb-2">
+                <a href="mailto:{{ site.social.email }}">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa-solid fa-circle fa-stack-2x"></i>
+                    <i class="fa-regular fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.social.bluesky %}
+              <li class="list-inline-item mb-2">
+                <a href="https://bsky.app/profile/{{ site.social.bluesky }}">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa-solid fa-circle fa-stack-2x"></i>
+                    <i class="fa-brands fa-bluesky fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.social.mastodon %}
+              <li class="list-inline-item mb-2">
+                <a rel="me" href="{{ site.social.mastodon }}">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa-solid fa-circle fa-stack-2x"></i>
+                    <i class="fa-brands fa-mastodon fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.social.twitter %}
+              <li class="list-inline-item mb-2">
+                <a href="https://twitter.com/{{ site.social.twitter }}">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa-solid fa-circle fa-stack-2x"></i>
+                    <i class="fa-brands fa-x-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.social.linkedin %}
+              <li class="list-inline-item mb-2">
+                <a href="{{ site.social.linkedin }}">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa-solid fa-circle fa-stack-2x"></i>
+                    <i class="fa-brands fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.social.facebook %}
+              <li class="list-inline-item mb-2">
+                <a href="{{ site.social.facebook }}">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa-solid fa-circle fa-stack-2x"></i>
+                    <i class="fa-brands fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.social.github %}
+              <li class="list-inline-item mb-2">
+                <a href="https://github.com/{{ site.social.github }}">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa-solid fa-circle fa-stack-2x"></i>
+                    <i class="fa-brands fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.archive_permalink %}
+              <li class="list-inline-item mb-2">
+                <a href="{{ '/feed.xml' | absolute_url }}">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa-solid fa-circle fa-stack-2x"></i>
+                    <i class="fa-solid fa-rss fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            {% endif %}
+          </ul>
+        </div>
+      {% endif %}
+
+      {% for col in site.data.footer.columns %}
+        <div class="col-lg">
+          {{ col.description | markdownify }}
+
+          {% if col.links %}
+            <ul class="fa-ul">
+              {% for item in col.links %}
+                <li>
+                  <i class="fa-li fa fa-chevron-circle-right"></i>
+                  <a href="{{ item.href | relative_url }}"{% if item.new_window %} target="_blank"{% endif %}>{{ item.text }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+
+    <div class="small mt-2">
+      {% if site.author %}
+        <p>© {{ site.author }}</p>
+      {% endif %}
+      {% if site.data.footer.license %}
+        {{ site.data.footer.license | markdownify }}
+      {% endif %}
+      {% if site.github_edit %}
+        {% if site.github_edit contains '' %}
+          {% assign branch = site.github_edit %}
+        {% else %}
+          {% assign branch = 'main' %}
+        {% endif %}
+        <p>
+          <a href="{{ site.github.repository_url }}/edit/{{ branch }}/{{ page.path }}">
+            <i class="fa-solid fa-pen-to-square"></i> Edit this page
+          </a>
+        </p>
+      {% endif %}
+    </div>
+  </div>
+</footer>
+
+<script src="{{ '/assets/theme/js/anchor.min.js' | relative_url }}"></script>
+<script>
+  // Show anchors when hovering over headings, using anchor.js
+  (function () {
+    const headings = ".content h2[id], .content h3[id], .content h4[id], .content h5[id], .content h6[id]";
+    anchors.options = { placement: "right" };
+    anchors.add(headings);
+  })();
+</script>
+<script defer data-domain="dwc.tdwg.org" src="https://plausible.io/js/script.js"></script>
