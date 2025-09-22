@@ -1,111 +1,111 @@
 [
   {
-    "text": "",
-    "href": ""
+    "text": "首頁",
+    "href": "/zh-Hant/"
   },
   {
-    "text": "",
+    "text": "條款",
     "menu": [
       {
-        "text": "",
-        "href": ""
+        "text": "達爾文核心集",
+        "href": "/zh-Hant/list/"
       },
       {
-        "text": ""
+        "text": "---"
       },
       {
-        "text": "",
-        "href": ""
+        "text": "定年延伸資料集",
+        "href": "https://chrono.tdwg.org/list/"
       },
       {
-        "text": "",
-        "href": ""
+        "text": "洪堡延伸資料集",
+        "href": "https://eco.tdwg.org/list/"
       },
       {
-        "text": ""
+        "text": "---"
       },
       {
-        "text": "",
-        "href": ""
+        "text": "建立方法控制詞彙",
+        "href": "/zh-Hant/em/"
       },
       {
-        "text": "",
-        "href": ""
+        "text": "建立程度控制詞彙",
+        "href": "/zh-Hant/doe/"
       },
       {
-        "text": "",
-        "href": ""
+        "text": "途徑控制詞彙",
+        "href": "/zh-Hant/pw/"
       }
     ]
   },
   {
-    "text": "",
+    "text": "指南",
     "menu": [
       {
-        "text": "",
-        "href": ""
+        "text": "達爾文核心標準快速參照",
+        "href": "/zh-Hant/terms/"
       },
       {
-        "text": ""
+        "text": "---"
       },
       {
-        "text": "",
-        "href": ""
+        "text": "定年延伸資料集快速參照",
+        "href": "https://chrono.tdwg.org/terms/"
       },
       {
-        "text": "",
-        "href": ""
+        "text": "洪堡延伸資料集快速參照",
+        "href": "https://eco.tdwg.org/terms/"
       },
       {
-        "text": ""
+        "text": "---"
       },
       {
-        "text": "",
-        "href": ""
+        "text": "簡易達爾文核心標準",
+        "href": "/zh-Hant/simple/"
       },
       {
-        "text": "",
-        "href": ""
+        "text": "純文字 (達爾文核心標準檔案)",
+        "href": "/zh-Hant/text/"
       },
       {
-        "text": "",
-        "href": ""
+        "text": "資源描述框架",
+        "href": "/zh-Hant/rdf/"
       },
       {
-        "text": "",
-        "href": ""
+        "text": "可延伸標記語言",
+        "href": "/zh-Hant/xml/"
       },
       {
-        "text": "",
-        "href": ""
+        "text": "命名空間政策",
+        "href": "/zh-Hant/namespace/"
       },
       {
-        "text": ""
+        "text": "---"
       },
       {
-        "text": "",
-        "href": ""
+        "text": "問與答",
+        "href": "https://github.com/tdwg/dwc-qa/blob/master/README.md"
       }
     ]
   },
   {
-    "text": "",
-    "href": ""
+    "text": "GitHub",
+    "href": "https://github.com/tdwg/dwc"
   },
   {
-    "text": "",
+    "text": "文A",
     "menu": [
       {
-        "text": "",
-        "href": ""
+        "text": "English",
+        "href": "/"
       },
       {
-        "text": "",
-        "href": ""
+        "text": "Čeština",
+        "href": "/cs/"
       },
       {
-        "text": "",
-        "href": ""
+        "text": "Français",
+        "href": "/fr/"
       }
     ]
   }

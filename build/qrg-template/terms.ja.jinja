@@ -3,27 +3,27 @@ This template is NOT used by jekyll, but by the Darwin Core build script build-t
 to create the terms/index.md file, which mostly contains html.
 \#}
 
-# Darwin Core Quick Reference Guide
+# Darwin Core クイックリファレンスガイド
 
-This document is intended to be an easy-to-read reference of the currently (as of 2023-09-18) recommended terms maintained as part of the [Darwin Core standard](https://www.tdwg.org/standards/dwc/) and is maintained by the [Darwin Core Maintenance Group](https://www.tdwg.org/community/dwc/).
+この文書は、[Darwin Core 標準](https://www.tdwg.org/standards/dwc/)の一部として管理されている、現在（2023年9月18日時点）推奨されている用語の読みやすい参考資料として作成されたものであり、[Darwin Core Maintenance Group](https://www.tdwg.org/community/dwc/) によって管理されています。
 
-**Need help?** Read more about how to use Darwin Core in the [Darwin Core Questions & Answers site](https://github.com/tdwg/dwc-qa/blob/master/README.md). Still have questions? Submit a new issue (question/problem) to the [dwc-qa issues page in GitHub](https://github.com/tdwg/dwc-qa/issues), or use the [form](https://tinyurl.com/darwin-qa). See the bottom of this document for [how to cite Darwin Core](https://dwc.tdwg.org/terms/#cite-darwin-core)."
+**助けが必要ですか？** Darwin Core の使い方の詳細については [Darwin Core Q&A サイト](https://github.com/tdwg/dwc-qa/blob/master/README.md)をご覧ください。 この他の質問がありますか？ [GitHub の dwc-qa issues ページ](https://github.com/tdwg/dwc-qa/issues)に新しいイシュー（質問/問題）を投稿するか、あるいは[フォーム](https://tinyurl.com/darwin-qa)を使用してください。 [Darwin Core の引用方法](https://dwc.tdwg.org/terms/#cite-darwin-core)についてはこの文書の下部をご覧ください。
 
-**Want to contribute?** For information about how to contribute to the Darwin Core Standard, including how to propose changes, see the [Guidelines for contributing](https://github.com/tdwg/dwc/blob/master/.github/CONTRIBUTING.md).
+**貢献したいですか？** 変更の提案方法も含め、Darwin Core 標準に貢献する方法については、[貢献のためのガイドライン](https://github.com/tdwg/dwc/blob/master/.github/CONTRIBUTING.md)をご覧ください。
 
-This page is not part of the standard, but combines the normative term names and definitions with the non-normative comments and examples that are meant to help people to use the terms consistently. Definitions, comments, and examples may include namespace abbreviations (e.g., "dwc:"). These are included to show that the meaning for the word it is attached to very specifically means the term as defined in that namespace. Thus, dwc:Event means Event as defined by Darwin Core at https://dwc.tdwg.org/terms/#event. Capitalized terms that follow a namespace abbreviation, such as dwc:Occurrence, are Darwin Core class terms, which are a special category of terms used to group sets of property terms (terms that being with lower case names that follow the namespace abbreviation, e.g., dwc:eventID) for convenience. Comprehensive metadata for current and obsolete terms in human readable form are found in the document [List of Darwin Core terms](../list/).
+このページは標準の一部ではありませんが、規範的な用語と定義を、用語を一貫して使用するための助けとなる非規範的な備考や例と結び付けています。 定義、備考、例には名前空間の略語が含まれることがあります（例：“dwc:”）。 これらは、その単語の持つ意味が、その名前空間で定義された用語を非常に厳密に指すということを示すために含まれています。 したがって、dwc:Event は https://dwc.tdwg.org/terms/#event で定義されている、Darwin Core の Event を意味します。 名前空間の略語に続き大文字で始まる、例えば dwc:Occurrence のような用語は、プロパティ用語（名前の略語に続き小文字で始まる名前を持つ用語、例えば dwc:eventID）のセットをグループ化するために便宜上使用される特別な用語カテゴリである Darwin Core のクラス用語です。 現行の用語と廃止された用語に関する、人間が読みやすい形式の包括的なメタデータは、[Darwin Core 用語一覧](../list/)文書でご覧になれます。
 
-Additional [files with just the current term names](https://github.com/tdwg/dwc/tree/master/dist) and a [file with the full term history](https://github.com/tdwg/dwc/blob/master/vocabulary/term_versions.csv) can be found in the [Darwin Core repository](https://github.com/tdwg/dwc).
+追加の[現行の用語の名前のみのファイル](https://github.com/tdwg/dwc/tree/master/dist)と[完全な用語の履歴のファイル](https://github.com/tdwg/dwc/blob/master/vocabulary/term_versions.csv)は、[Darwin Core レポジトリ](https://github.com/tdwg/dwc)でご覧になれます。
 
 {% for class_group in class_groups %}
 
 ## {{ class_group.label }}
 
 {% if class_group.isRecordLevel %}
-This category contains terms that are generic in that they might apply to any type of record in a dataset.
+このカテゴリには、データセット内のあらゆる種類のレコードに適用される可能性がある一般的な用語が含まれています。
 {% endif %}
 {% if class_group.label == 'UseWithIRI' %}
-For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https://dwc.tdwg.org/rdf/#25-terms-in-the-dwciri-namespace-normative).
+`UseWithIRI`に関する詳細情報については、[RDF ガイドのセクション 2.5](https://dwc.tdwg.org/rdf/#25-terms-in-the-dwciri-namespace-normative) をご覧ください。
 {% endif %}
 
 <div class="my-4">
@@ -38,11 +38,11 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
 
 <table class="table">
   <tbody>
-    <tr class="table-primary"><th colspan="2">{{ class_group.label }} <span class="badge bg-primary float-end">Class</span></th></tr>
-    <tr><td>Identifier</td><td><a href="{{ class_group.iri }}">{{ class_group.iri }}</a></td></tr>
-    <tr><td>Definition</td><td>{{ class_group.definition }}</td></tr>
-    <tr><td>Comments</td><td>{{ class_group.comments }}</td></tr>
-    <tr><td>Examples</td><td>{% if examples | length == 1 %}{{ examples | first }}{% else %}<ul class="list-group list-group-flush">{% for example in examples %}<li class="list-group-item">{{ example }}</li>{% endfor %}</ul>{% endif %}</td></tr>
+    <tr class="table-primary"><th colspan="2">{{ class_group.label }} <span class="badge bg-primary float-end">クラス</span></th></tr>
+    <tr><td>識別子</td><td><a href="{{ class_group.iri }}">{{ class_group.iri }}</a></td></tr>
+    <tr><td>定義</td><td>{{ class_group.definition }}</td></tr>
+    <tr><td>備考</td><td>{{ class_group.comments }}</td></tr>
+    <tr><td>例</td><td>{% if examples | length == 1 %}{{ examples | first }}{% else %}<ul class="list-group list-group-flush">{% for example in examples %}<li class="list-group-item">{{ example }}</li>{% endfor %}</ul>{% endif %}</td></tr>
   </tbody>
 </table>
 {%endif %}
@@ -59,26 +59,26 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
 <table class="table">
   <tbody>
     <tr class="table-secondary"><th colspan="2">{{ term.label }}</th></tr>
-    <tr><td>Identifier</td><td><a href="{{ term.iri }}">{{ term.iri }}</a></td></tr>
-    <tr><td>Definition</td><td>{{ term.definition }}</td></tr>
-    <tr><td>Comments</td><td>{{ term.comments }}</td></tr>
-    <tr><td>Examples</td><td>{% if examples | length == 1 %}{{ examples | first }}{% else %}<ul class="list-group list-group-flush">{% for example in examples %}<li class="list-group-item">{{ example }}</li>{% endfor %}</ul>{% endif %}</td></tr>
+    <tr><td>識別子</td><td><a href="{{ term.iri }}">{{ term.iri }}</a></td></tr>
+    <tr><td>定義</td><td>{{ term.definition }}</td></tr>
+    <tr><td>備考</td><td>{{ term.comments }}</td></tr>
+    <tr><td>例</td><td>{% if examples | length == 1 %}{{ examples | first }}{% else %}<ul class="list-group list-group-flush">{% for example in examples %}<li class="list-group-item">{{ example }}</li>{% endfor %}</ul>{% endif %}</td></tr>
   </tbody>
 </table>
 {% endfor %}
 
 {% endfor %}
 
-## Cite Darwin Core
+## Darwin Coreの引用
 
-To cite Darwin Core in general, use the peer-reviewed article on Darwin Core:
+Darwin Core全般については、Darwin Coreに関する査読論文を引用してください：
 
 > Wieczorek J, Bloom D, Guralnick R, Blum S, Döring M, et al. (2012) Darwin Core: An Evolving Community-Developed Biodiversity Data Standard. PLoS ONE 7(1): e29715. <https://doi.org/10.1371/journal.pone.0029715>
 
-To cite the standard document upon which this page is built, use the following:
+本ページを作成する上で基礎となった標準文書については、こちらを引用してください：
 
 > Darwin Core Maintenance Group. Darwin Core Maintenance Group. List of Darwin Core terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/list/>
 
-To cite this document specifically, use the following:
+この文書については、こちらを引用してください：
 
-> Darwin Core Maintenance Group. 2021. Darwin Core Quick Reference Guide. Biodiversity Information Standards (TDWG). <https://dwc.tdwg.org/terms/>
+> Darwin Core Maintenance Group. 2021. Darwin Core クイックリファレンスガイド. Biodiversity Information Standards (TDWG). <https://dwc.tdwg.org/terms/>
