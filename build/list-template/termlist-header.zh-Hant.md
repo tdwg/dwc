@@ -24,7 +24,7 @@
 貢獻者
 : {contributors}
 
-Creator
+建立者
 : {creator}
 
 書目引用
@@ -44,7 +44,7 @@ Creator
 
 第 2 節為規範性。
 
-在第 4 節中，「Term IRI」和「Definition」的值為規範性。 「Term Name」的值為非規範性，不過可以預期命名空間縮寫是術語命名空間的常用前綴。  `Label` and the values of all other properties (such as `Examples` and `Notes`) are non-normative.
+在第 4 節中，「Term IRI」和「Definition」的值為規範性。 「Term Name」的值為非規範性，不過可以預期命名空間縮寫是術語命名空間的常用前綴。  標籤（`Label`）及其他所有屬性（例如範例（`Examples`）與備註（`Notes`））的值均屬非規範性內容。
 
 ### 1.2 RFC 2119 關鍵字
 
