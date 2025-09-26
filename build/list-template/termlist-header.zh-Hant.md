@@ -44,25 +44,25 @@
 
 第 2 節為規範性。
 
-在第 4 節中，「Term IRI」和「Definition」的值為規範性。 「Term Name」的值為非規範性，不過可以預期命名空間縮寫是術語命名空間的常用前綴。  標籤（`Label`）及其他所有屬性（例如範例（`Examples`）與備註（`Notes`））的值均屬非規範性內容。
+在第 4 節中，「Term IRI」和「Definition」的值為規範性。 「Term Name」的值為非規範性，不過可以預期命名空間縮寫是術語命名空間的常用前綴。  標籤`Label`及其他所有屬性（例如範例`Examples`與備註`Notes`）的值均為非規範性。
 
 ### 1.2 RFC 2119 關鍵字
 
-The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [BCP 14](https://www.rfc-editor.org/info/bcp14) [\[RFC 2119\]](https://datatracker.ietf.org/doc/html/rfc2119) and [\[RFC 8174\]](https://datatracker.ietf.org/doc/html/rfc8174) when, and only when, they appear in all capitals, as shown here.
+關鍵字「必須」、「不得」、「要求」、「應」、「不應」、「應當」、「不應當」、「建議」、「可」、「可選」的定義，請參照[BCP 14](https://www.rfc-editor.org/info/bcp14) [\[RFC 2119\]](https://datatracker.ietf.org/doc/html/rfc2119) 及 [\[RFC 8174\]](https://datatracker.ietf.org/doc/html/rfc8174) 所定義之含義，惟詞彙須以全大寫形式呈現時方適用。
 
-### 1.3 Namespace abbreviations
+### 1.3 命名空間縮寫
 
-The following namespace abbreviations are used in this document:
+本文件使用以下命名空間縮寫：
 
-| abbreviation             | IRI                                                                              |
-| ------------------------ | -------------------------------------------------------------------------------- |
-| dwc:     | http://rs.tdwg.org/dwc/terms/    |
-| dwciri:  | http://rs.tdwg.org/dwc/iri/      |
-| dc:      | http://purl.org/dc/elements/1.1/ |
-| dcterms: | http://purl.org/dc/terms/                        |
+| 縮寫                                                                            | IRI                                                                              |
+| ----------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| http://rs.tdwg.org/dwc/terms/ | http://rs.tdwg.org/dwc/terms/    |
+| dwciri:                                                       | http://rs.tdwg.org/dwc/iri/      |
+| dc:                                                           | http://purl.org/dc/elements/1.1/ |
+| dcterms:                                                      | http://purl.org/dc/terms/                        |
 
 ## 2 使用條款
 
-Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#143-use-of-darwin-core-terms-in-rdf-normative), terms in the `dwciri:` namespace MUST be used with IRI values. Terms in the `dwc:` and `dc:` namespaces are generally expected to have string literal values. Values for terms in the `dcterms:` namespace will depend on the details of the term. See [Section 3 of the Darwin Core RDF Guide](../rdf/#3-term-reference-normative) for details.
+根據[《達爾文核心標準 RDF 指南》第 1.4.3 節](../rdf/#143-use-of-darwin-core-terms-in-rdf-normative) 的規範要求，`dwciri:` 命名空間中的術語必須搭配 IRI 值使用。 `dwc:` 和 `dc:` 命名空間中的術語通常預期具有字串文字值。 `dcterms:` 命名空間中術語的值將取決於該術語的具體細節。 詳情請參閱[達爾文核心 RDF 指南第 3 節](../rdf/#3-term-reference-normative)。
 
-## 3 Term indices
+## 3 術語索引
