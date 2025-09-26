@@ -31,7 +31,7 @@ Abstract
 貢獻者
 : {contributors}
 
-Creator
+建立者
 : {creator}
 
 書目引用
