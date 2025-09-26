@@ -17,10 +17,10 @@
 生物多樣性訊息標準的一部分
 : <{standard_iri}>
 
-This document version
+此文件版本
 : <{current_iri}{ratification_date}>
 
-Latest version of document
+文件的最新版本
 : <{current_iri}>
 
 {previous_version_slot}
