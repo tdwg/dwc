@@ -7,7 +7,7 @@
     "text": "條款",
     "menu": [
       {
-        "text": "達爾文核心集",
+        "text": "達爾文核心標準",
         "href": "/zh-Hant/list/"
       },
       {
@@ -33,7 +33,7 @@
         "href": "/zh-Hant/doe/"
       },
       {
-        "text": "途徑控制詞彙",
+        "text": "路徑控制詞彙",
         "href": "/zh-Hant/pw/"
       }
     ]
@@ -68,11 +68,11 @@
         "href": "/zh-Hant/text/"
       },
       {
-        "text": "資源描述框架",
+        "text": "RDF",
         "href": "/zh-Hant/rdf/"
       },
       {
-        "text": "可延伸標記語言",
+        "text": "XML",
         "href": "/zh-Hant/xml/"
       },
       {
