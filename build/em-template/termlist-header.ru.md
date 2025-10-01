@@ -9,13 +9,13 @@ Namespace URI
 Preferred namespace abbreviation
 : dwcem:
 
-Date version issued
+Дата публикации версии
 : {ratification_date}
 
-Date created
+Дата создания
 : {created_date}
 
-Part of TDWG Standard
+Часть стандарта TDWG
 : <{standard_iri}>
 
 This document version
