@@ -1,18 +1,18 @@
-# Darwin Core List of Terms
+# Перечень терминов стандарта Darwin Core
 
 Title
 : Darwin Core List of Terms
 
-Date version issued
+Дата публикации версии
 : {ratification_date}
 
-Date created
+Дата создания
 : {created_date}
 
-Part of TDWG Standard
+Часть стандарта TDWG
 : <{standard_iri}>
 
-This version
+Настоящая версия
 : <{current_iri}{ratification_date}>
 
 Latest version
