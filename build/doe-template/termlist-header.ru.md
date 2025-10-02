@@ -1,13 +1,12 @@
-# Degree of Establishment Controlled Vocabulary List of Terms
+# Список терминов контролируемого словаря "Degree of Establishment" (Степень акклиматизации)
 
-Title
-: Degree of Establishment Controlled Vocabulary List of Terms
+Заголовок
+: Список терминов контролируемого словаря "Degree of Establishment" (Степень акклиматизации)
 
-Namespace URI
+URI пространства имен
 : <http://rs.tdwg.org/dwcdoe/values/>
 
-Preferred namespace abbreviation
-: dwcdoe:
+Предпочтительная аббревиатура пространства имён: dwcdoe:
 
 Дата публикации версии
 : {ratification_date}
@@ -18,37 +17,40 @@ Preferred namespace abbreviation
 Часть стандарта TDWG
 : <{standard_iri}>
 
-This document version
+Текущая версия
 : <{current_iri}{ratification_date}>
 
-Latest version of document
+Последняя версия документа
 : <{current_iri}>
 
-Предыдущая версия {previous_version_slot}
+{previous_version_slot}
 
-Abstract
-: The Darwin Core term `degreeOfEstablishment` provides information about degree to which an Organism survives, reproduces, and expands its range at the given place and time. The Degree of Establishment Controlled Vocabulary provides terms that should be used as values for `dwc:degreeOfEstablishment` and `dwciri:degreeOfEstablishment`.
+Аннотация
+: Термин DwC «degreeOfEstablishment» даёт информацию об успехе выживания, размножения и расширения ареала организма в данном месте и времени. Словарь Degree of Establishment (степень акклиматизации) содержит термины, которые следует использовать в качестве значений для `dwc:degreeOfEstablishment` и `dwciri:degreeOfEstablishment`.
 
-Авторы: {contributors}
+Авторы
+: {contributors}
 
-Создатель:{creator}
+Создатель
+:{creator}
 
-Библиографическая ссылка:{creator}. Год{year}. {document_title}. {publisher}. <{current_iri}{ratification_date}>
+Библиографическая ссылка
+:{creator}. {year}. {document_title}. {publisher}. <{current_iri}{ratification_date}>
 
-## 1 Introduction
+## 1. Введение
 
-This document includes terms intended to be used as a controlled value for Darwin Core terms with local name `degreeOfEstablishment`. For details and rationale, see Groom et al. 2019. Improving Darwin Core for research and management of alien species. <https://doi.org/10.3897/biss.3.38084>
+В документ включены термины, предназначенные для использования в словаре `degreeOfEstablishment`. Подробности и обоснование см. в Groom et al. 2019. Расширение Darwin Core для исследования и управления чужеродными видами. <https://doi.org/10.3897/biss.3.38084>
 
-### 1.1 Status of the content of this document
+### 1.1 Статус содержания документа
 
-In Section 4, the values of the `Term IRI`, `Definition`, and `Controlled value` are normative. The value of `Usage` (if it exists for a given term) is normative.  The values of `Term Name` are non-normative, although one can expect that the namespace abbreviation prefix is one commonly used for the term namespace.  `Label` and the values of all other properties (such as `Notes`) are non-normative.
+В разделе 4 значения `Термина IRI` и `Определения` являются нормативными. Значение `Использование` (если оно существует для данного термина) является нормативным.  Значения `Term Name` не являются нормативными, хотя можно ожидать, что префикс сокращения пространства имен является одним из общепринятых префиксов, используемых для термина пространство имен.  `Label` и значения всех остальных свойств (таких, как `Examples` и `Notes`) являются ненормативными.
 
-### 1.2 RFC 2119 key words
+### 1.2 Ключевые слова RFC 2119
 
-The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [RFC 2119](https://tools.ietf.org/html/rfc2119).
+Ключевые слова "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", и "OPTIONAL" в настоящем документе следует понимать так, как описано в [RFC 2119](https://tools.ietf.org/html/rfc2119).
 
-## 2 Use of Terms
+## 2 Применение терминов
 
-Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://rs.tdwg.org/dwc/terms/guides/rdf/#143-use-of-darwin-core-terms-in-rdf-normative), term IRIs MUST be used as values of `dwciri:degreeOfEstablishment`. Controlled value strings MUST be used as values of `dwc:degreeOfEstablishment`.
+В соответствии с требованиями [Раздела 1.4.3 руководства Darwin Core RDF](http://rs.tdwg.org/dwc/terms/guides/rdf/#143-use-of-darwin-core-terms-in-rdf-normative) в качестве значений `dwciri:degreeOfEstablishment` ДОЛЖНЫ использоваться IRI терминов. Строки контролируемых значений ДОЛЖНЫ использоваться в качестве значений `dwc:degreeOfEstablishment`.
 
-## 3 Term index
+## 3 Индексы терминов
