@@ -26,8 +26,7 @@ Preferred namespace abbreviation
 
 Предыдущая версия {previous_version_slot}
 
-Abstract
-: The Darwin Core term `pathway` provides information about the process by which an Organism came to be in a given place at a given time. The Pathway Controlled Vocabulary provides terms that should be used as values for `dwc:pathway` and `dwciri:pathway`.
+Аннотация: Термин Darwin Core "путь" (pathway) предоставляет информацию о процессе, в результате которого Организм (Organism) оказался в определённом месте в определённое время. Контролируемый словарь термина Путь (Pathway) содержит допустимые значения для полей dwc:pathway и dwciri:pathway.
 
 Авторы: {contributors}
 
