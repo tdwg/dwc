@@ -1,12 +1,12 @@
-# Pathway Controlled Vocabulary List of Terms
+# Список терминов контролируемого словаря Путь (Pathway)
 
-Title
-: Pathway Controlled Vocabulary List of Terms
+Заглавие
+: Список терминов контролируемого словаря Путь (Pathway)
 
-Namespace URI
+URI пространства имен
 : <http://rs.tdwg.org/dwcpw/values/>
 
-Preferred namespace abbreviation
+Предпочтительная аббревиатура для пространства имён
 : dwcpw:
 
 Дата публикации версии
@@ -36,18 +36,18 @@ Preferred namespace abbreviation
 
 ## 1. Введение
 
-This document includes terms intended to be used as a controlled value for Darwin Core terms with local name `pathway`. Подробности и обоснование см. в Groom et al. 2019. Расширение Darwin Core для исследования и управления чужеродными видами. <https://doi.org/10.3897/biss.3.38084>
+Настоящий документ содержит значения (контролируемый словарь), которые должны использоваться для терминов Darwin Core с локальным именем `pathway` (`путь`). Подробности и обоснование см. в Groom et al. 2019. Расширение Darwin Core для исследования и управления чужеродными видами. <https://doi.org/10.3897/biss.3.38084>
 
 ### 1.1 Статус содержания документа
 
-В разделе 4 значения `Термина IRI` и `Определения` являются нормативными. Значение `Использование` (если оно существует для данного термина) является нормативным.  The value of `Has broader concept` is normative. Значения `Term Name` не являются нормативными, хотя можно ожидать, что префикс сокращения пространства имен является одним из общепринятых префиксов, используемых для термина пространство имен.  `Label` и значения всех остальных свойств (таких, как `Examples` и `Notes`) являются ненормативными.
+В Разделе 4 значения полей: `IRI Термина`, `Определение` и `Контролируемое значение` являются нормативными. Значение поля `Использование` (если оно существует для данного термина) является нормативным.  Значение поля `Имеет более широкое значение` является нормативным. Значения поля `Название термина` не являются нормативными, при этом ожидается использование общепринятого префикса для пространства имён термина.  Значения поля `Метка` и значения всех остальных полей (таких, как `Примечания`) являются ненормативными.
 
 ### 1.2 Ключевые слова RFC 2119
 
-Ключевые слова "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", и "OPTIONAL" в настоящем документе следует понимать так, как описано в [RFC 2119](https://tools.ietf.org/html/rfc2119).
+Ключевые слова "MUST" (ОБЯЗАТЕЛЬНО), "MUST NOT" (НЕ ДОПУСКАЕТСЯ), "REQUIRED" (ТРЕБУЕТСЯ), "SHALL" (ДОЛЖЕН), "SHALL NOT" (НЕ ДОЛЖЕН), "SHOULD" (СЛЕДУЕТ), "SHOULD NOT" (НЕ СЛЕДУЕТ), "RECOMMENDED" (РЕКОМЕНДУЕТСЯ), "MAY" (МОЖЕТ) и "OPTIONAL" (НЕОБЯЗАТЕЛЬНО) должны толковаться в соответствии с RFC 2119. [RFC 2119](https://tools.ietf.org/html/rfc2119).
 
 ## 2 Применение терминов
 
-Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://dwc.tdwg.org/rdf/#143-use-of-darwin-core-terms-in-rdf-normative), term IRIs MUST be used as values of `dwciri:pathway`. Controlled value strings MUST be used as values of `dwc:pathway`.
+Согласно требованиям Раздела [1.4.3 Руководства по Darwin Core RDF] (https://dwc.tdwg.org/rdf/#143-use-of-darwin-core-terms-in-rdf-normative), значениями `dwciri:pathway` ОБЯЗАТЕЛЬНО должны быть IRI терминов. Для `dwc:pathway` ОБЯЗАТЕЛЬНО применение строковых значений, взятых из контролируемого словаря.
 
-## 3 Индексы терминов
+## 3 Указатель терминов
