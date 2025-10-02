@@ -24,19 +24,16 @@ This document version
 Latest version of document
 : <{current_iri}>
 
-{previous_version_slot}
+Предыдущая версия {previous_version_slot}
 
 Abstract
 : The Darwin Core term `degreeOfEstablishment` provides information about degree to which an Organism survives, reproduces, and expands its range at the given place and time. The Degree of Establishment Controlled Vocabulary provides terms that should be used as values for `dwc:degreeOfEstablishment` and `dwciri:degreeOfEstablishment`.
 
-Contributors
-: {contributors}
+Авторы: {contributors}
 
-Creator
-: {creator}
+Создатель:{creator}
 
-Bibliographic citation
-: {creator}. {year}. {document_title}. {publisher}. <{current_iri}{ratification_date}>
+Библиографическая ссылка:{creator}. Год{year}. {document_title}. {publisher}. <{current_iri}{ratification_date}>
 
 ## 1 Introduction
 
