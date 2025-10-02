@@ -24,19 +24,16 @@ This document version
 Latest version of document
 : <{current_iri}>
 
-{previous_version_slot}
+Предыдущая версия {previous_version_slot}
 
 Abstract
 : The Darwin Core term `establishmentMeans` provides information about whether an organism or organisms have been introduced to a given place and time through the direct or indirect activity of modern humans. The Establishment Means Controlled Vocabulary provides terms that should be used as values for `dwc:establishmentMeans` and `dwciri:establishmentMeans`.
 
-Contributors
-: {contributors}
+Авторы: {contributors}
 
-Creator
-: {creator}
+Создатель:{creator}
 
-Bibliographic citation
-: {creator}. {year}. {document_title}. {publisher}. <{current_iri}{ratification_date}>
+Библиографическая ссылка:{creator}. Год{year}. {document_title}. {publisher}. <{current_iri}{ratification_date}>
 
 ## 1 Introduction
 
