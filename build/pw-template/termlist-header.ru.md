@@ -24,19 +24,16 @@ This document version
 Latest version of document
 : <{current_iri}>
 
-{previous_version_slot}
+Предыдущая версия {previous_version_slot}
 
 Abstract
 : The Darwin Core term `pathway` provides information about the process by which an Organism came to be in a given place at a given time. The Pathway Controlled Vocabulary provides terms that should be used as values for `dwc:pathway` and `dwciri:pathway`.
 
-Contributors
-: {contributors}
+Авторы: {contributors}
 
-Creator
-: {creator}
+Создатель:{creator}
 
-Bibliographic citation
-: {creator}. {year}. {document_title}. {publisher}. <{current_iri}{ratification_date}>
+Библиографическая ссылка:{creator}. Год{year}. {document_title}. {publisher}. <{current_iri}{ratification_date}>
 
 ## 1 Introduction
 
