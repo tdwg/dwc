@@ -20,10 +20,10 @@ to create the terms/index.md file, which mostly contains html.
 ## {{ class_group.label }}
 
 {% if class_group.isRecordLevel %}
-This category contains terms that are generic in that they might apply to any type of record in a dataset.
+Эта категория включает общие термины, которые могут относиться к любому типу записей в наборе данных.
 {% endif %}
 {% if class_group.label == 'UseWithIRI' %}
-For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https://dwc.tdwg.org/rdf/#25-terms-in-the-dwciri-namespace-normative).
+Для получения дополнительной информации о `UseWithIRI` см. [Раздел 2.5 Руководства по RDF](https://dwc.tdwg.org/rdf/#25-terms-in-the-dwciri-namespace-normative).
 {% endif %}
 
 <div class="my-4">
@@ -38,11 +38,11 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
 
 <table class="table">
   <tbody>
-    <tr class="table-primary"><th colspan="2">{{ class_group.label }} <span class="badge bg-primary float-end">Class</span></th></tr>
-    <tr><td>Identifier</td><td><a href="{{ class_group.iri }}">{{ class_group.iri }}</a></td></tr>
-    <tr><td>Definition</td><td>{{ class_group.definition }}</td></tr>
-    <tr><td>Comments</td><td>{{ class_group.comments }}</td></tr>
-    <tr><td>Examples</td><td>{% if examples | length == 1 %}{{ examples | first }}{% else %}<ul class="list-group list-group-flush">{% for example in examples %}<li class="list-group-item">{{ example }}</li>{% endfor %}</ul>{% endif %}</td></tr>
+    <tr class="table-primary"><th colspan="2">{{ class_group.label }} <span class="badge bg-primary float-end">Класс</span></th></tr>
+    <tr><td>Идентификатор</td><td><a href="{{ class_group.iri }}">{{ class_group.iri }}</a></td></tr>
+    <tr><td>Определение</td><td>{{ class_group.definition }}</td></tr>
+    <tr><td>Комментарии</td><td>{{ class_group.comments }}</td></tr>
+    <tr><td>Примеры</td><td>{% if examples | length == 1 %}{{ examples | first }}{% else %}<ul class="list-group list-group-flush">{% for example in examples %}<li class="list-group-item">{{ example }}</li>{% endfor %}</ul>{% endif %}</td></tr>
   </tbody>
 </table>
 {%endif %}
@@ -59,26 +59,26 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
 <table class="table">
   <tbody>
     <tr class="table-secondary"><th colspan="2">{{ term.label }}</th></tr>
-    <tr><td>Identifier</td><td><a href="{{ term.iri }}">{{ term.iri }}</a></td></tr>
-    <tr><td>Definition</td><td>{{ term.definition }}</td></tr>
-    <tr><td>Comments</td><td>{{ term.comments }}</td></tr>
-    <tr><td>Examples</td><td>{% if examples | length == 1 %}{{ examples | first }}{% else %}<ul class="list-group list-group-flush">{% for example in examples %}<li class="list-group-item">{{ example }}</li>{% endfor %}</ul>{% endif %}</td></tr>
+    <tr><td>Идентификатор</td><td><a href="{{ term.iri }}">{{ term.iri }}</a></td></tr>
+    <tr><td>Определение</td><td>{{ term.definition }}</td></tr>
+    <tr><td>Комментарии</td><td>{{ term.comments }}</td></tr>
+    <tr><td>Примеры</td><td>{% if examples | length == 1 %}{{ examples | first }}{% else %}<ul class="list-group list-group-flush">{% for example in examples %}<li class="list-group-item">{{ example }}</li>{% endfor %}</ul>{% endif %}</td></tr>
   </tbody>
 </table>
 {% endfor %}
 
 {% endfor %}
 
-## Cite Darwin Core
+## Ссылайтесь на Darwin Core
 
-To cite Darwin Core in general, use the peer-reviewed article on Darwin Core:
+Чтобы сослаться на Darwin Core в общем случае, следует использовать статью о Darwin Core в рецензируемом журнале:
 
 > Wieczorek J, Bloom D, Guralnick R, Blum S, Döring M, et al. (2012) Darwin Core: An Evolving Community-Developed Biodiversity Data Standard. PLoS ONE 7(1): e29715. <https://doi.org/10.1371/journal.pone.0029715>
 
-To cite the standard document upon which this page is built, use the following:
+Чтобы процитировать документ стандарта, лежащий в основе данной страницы, используйте следующую ссылку:
 
-> Darwin Core Maintenance Group. Darwin Core Maintenance Group. List of Darwin Core terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/list/>
+> Darwin Core Maintenance Group. 2021. List of Darwin Core terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/list/>
 
-To cite this document specifically, use the following:
+Для ссылки на настоящий документ следует использовать:
 
-> Darwin Core Maintenance Group. Darwin Core Maintenance Group. Darwin Core Quick Reference Guide. Biodiversity Information Standards (TDWG). <https://dwc.tdwg.org/terms/>
+> Darwin Core Maintenance Group. 2021. Darwin Core Quick Reference Guide. Biodiversity Information Standards (TDWG). <https://dwc.tdwg.org/terms/>
