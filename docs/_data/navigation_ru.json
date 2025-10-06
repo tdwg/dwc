@@ -1,40 +1,40 @@
 [
   {
     "text": "Главная",
-    "href": ""
+    "href": "/ru/"
   },
   {
     "text": "Условия использования",
     "menu": [
       {
         "text": "Darwin Core",
-        "href": ""
+        "href": "/ru/list/"
       },
       {
-        "text": ""
+        "text": "---"
       },
       {
         "text": "Расширение \"Chronometric Age\" (Хронометрический возраст)",
-        "href": ""
+        "href": "https://chrono.tdwg.org/list/"
       },
       {
         "text": "Расширение Гумбольдта",
-        "href": ""
+        "href": "https://eco.tdwg.org/list/"
       },
       {
-        "text": ""
+        "text": "---"
       },
       {
         "text": "Контролируемый словарь \"Establishment Means\" (Способ закрепления)",
-        "href": ""
+        "href": "/ru/em/"
       },
       {
         "text": "Контролируемый словарь \"Degree of Establishment\" (Степень акклиматизации)",
-        "href": ""
+        "href": "/ru/doe/"
       },
       {
         "text": "Контролируемый словарь \"Pathway\" (Путь)",
-        "href": ""
+        "href": "/ru/pw/"
       }
     ]
   },
@@ -43,69 +43,69 @@
     "menu": [
       {
         "text": "Darwin Core: краткая справка",
-        "href": ""
+        "href": "/ru/terms/"
       },
       {
-        "text": ""
+        "text": "---"
       },
       {
         "text": "Расширение \"Chronometric Age\" (Хронометрический возраст): краткая справка",
-        "href": ""
+        "href": "https://chrono.tdwg.org/terms/"
       },
       {
         "text": "Расширение Гумбольдта: краткая справка",
-        "href": ""
+        "href": "https://eco.tdwg.org/terms/"
       },
       {
-        "text": ""
+        "text": "---"
       },
       {
         "text": "Упрощенный Darwin Core",
-        "href": ""
+        "href": "/ru/simple/"
       },
       {
         "text": "Текст (Darwin Core архив)",
-        "href": ""
+        "href": "/ru/text/"
       },
       {
         "text": "RDF",
-        "href": ""
+        "href": "/ru/rdf/"
       },
       {
         "text": "XML",
-        "href": ""
+        "href": "/ru/xml/"
       },
       {
         "text": "Правила использования пространств имен",
-        "href": ""
+        "href": "/ru/namespace/"
       },
       {
-        "text": ""
+        "text": "---"
       },
       {
         "text": "Вопросы и ответы",
-        "href": ""
+        "href": "https://github.com/tdwg/dwc-qa/blob/master/README.md"
       }
     ]
   },
   {
     "text": "GitHub",
-    "href": ""
+    "href": "https://github.com/tdwg/dwc"
   },
   {
-    "text": "",
+    "text": "文A",
     "menu": [
       {
-        "text": "",
-        "href": ""
+        "text": "English",
+        "href": "/ru/"
       },
       {
-        "text": "",
-        "href": ""
+        "text": "Čeština",
+        "href": "/cs/"
       },
       {
-        "text": "",
-        "href": ""
+        "text": "Français",
+        "href": "/fr/"
       }
     ]
   }
