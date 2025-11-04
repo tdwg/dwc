@@ -1,12 +1,12 @@
-# Pathway Controlled Vocabulary List of Terms
+# Lista de Términos Vocabulario Controlado Ruta
 
-Title
-: Pathway Controlled Vocabulary List of Terms
+Título
+: Lista de Términos Vocabulario Controlado Ruta
 
 Namespace URI
 : <http://rs.tdwg.org/dwcpw/values/>
 
-Preferred namespace abbreviation
+Abreviatura preferida del namespce
 : dwcpw:
 
 Fecha de publicación de la versión
@@ -26,8 +26,8 @@ Esta versión del documento
 
 {previous_version_slot}
 
-Abstract
-: The Darwin Core term `pathway` provides information about the process by which an Organism came to be in a given place at a given time. The Pathway Controlled Vocabulary provides terms that should be used as values for `dwc:pathway` and `dwciri:pathway`.
+Resumen
+: El término Darwin Core `pathway` ofrece información sobre el proceso por el cual un Organismo llega a estar en un lugar y en un tiempo dado. The Pathway Controlled Vocabulary provides terms that should be used as values for `dwc:pathway` and `dwciri:pathway`.
 
 Colaboradores
 : {contributors}
@@ -46,7 +46,7 @@ This document includes terms intended to be used as a controlled value for Darwi
 
 En la Sección 4, los valores de `Término IRI`, `Definición` y `Valor controlado` son normativos. El valor de `Uso` (si existe para un término determinado) también es normativo.  The value of `Has broader concept` is normative. Los valores del `Nombre del término` no son normativos, aunque se puede esperar que el prefijo del namespace abreviado sea uno comúnmente utilizado para ese namespace.  La `Etiqueta` y los valores de todas las demás propiedades (como `Notas`) no son normativos.
 
-### 1.2 RFC 2119 key words
+### 1.2 Palabras clave RFC 2119
 
 Las palabras clave "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY" y "OPTIONAL" en este documento deben interpretarse como se describe en la [RFC 2119](https://tools.ietf.org/html/rfc2119).
 
