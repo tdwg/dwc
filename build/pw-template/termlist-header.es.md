@@ -27,7 +27,7 @@ Esta versión del documento
 {previous_version_slot}
 
 Resumen
-: El término Darwin Core `pathway` ofrece información sobre el proceso por el cual un Organismo llega a estar en un lugar y en un tiempo dado. The Pathway Controlled Vocabulary provides terms that should be used as values for `dwc:pathway` and `dwciri:pathway`.
+: El término Darwin Core `pathway` ofrece información sobre el proceso por el cual un Organismo llega a estar en un lugar y en un tiempo dado. El Vocabulario Controlado Ruta ofrece términos que deben ser usados como valores para `dwc:pathway` y `dwciri:pathway`.
 
 Colaboradores
 : {contributors}
@@ -40,11 +40,11 @@ Cita bibliográfica
 
 ## 1 Introducción
 
-This document includes terms intended to be used as a controlled value for Darwin Core terms with local name `pathway`. Para más detalles y justificación, véase Groom et al. 2019. Improving Darwin Core for research and management of alien species. <https://doi.org/10.3897/biss.3.38084>
+Este documento incluye términos destinados a ser utilizados como valores controlados para los términos de Darwin Core con nombre local `pathway`. Para más detalles y justificación, véase Groom et al. 2019. Improving Darwin Core for research and management of alien species. <https://doi.org/10.3897/biss.3.38084>
 
 ### 1.1 Estado del contenido de este documento
 
-En la Sección 4, los valores de `Término IRI`, `Definición` y `Valor controlado` son normativos. El valor de `Uso` (si existe para un término determinado) también es normativo.  The value of `Has broader concept` is normative. Los valores del `Nombre del término` no son normativos, aunque se puede esperar que el prefijo del namespace abreviado sea uno comúnmente utilizado para ese namespace.  La `Etiqueta` y los valores de todas las demás propiedades (como `Notas`) no son normativos.
+En la Sección 4, los valores de `Término IRI`, `Definición` y `Valor controlado` son normativos. El valor de `Uso` (si existe para un término determinado) también es normativo.  El valor de `tiene un concepto más amplio` es normativo. Los valores del `Nombre del término` no son normativos, aunque se puede esperar que el prefijo del namespace abreviado sea uno comúnmente utilizado para ese namespace.  La `Etiqueta` y los valores de todas las demás propiedades (como `Notas`) no son normativos.
 
 ### 1.2 Palabras clave RFC 2119
 
@@ -52,6 +52,6 @@ Las palabras clave "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD
 
 ## 2 Uso de los Términos
 
-Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://dwc.tdwg.org/rdf/#143-use-of-darwin-core-terms-in-rdf-normative), term IRIs MUST be used as values of `dwciri:pathway`. Controlled value strings MUST be used as values of `dwc:pathway`.
+Debido a los requisitos de la [Sección 1.4.3 de la Guía RDF Darwin Core](https://dwc.tdwg.org/rdf/#143-use-of-darwin-core-terms-in-rdf-normative), los términos IRIs DEBEN utilizarse como valores de `dwciri:pathway`. Las cadenas de texto con valores controlados DEBEN utilizarse como valores de `dwc:pathway`.
 
 ## 3 Índice de Términos
