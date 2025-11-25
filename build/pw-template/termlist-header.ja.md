@@ -45,11 +45,11 @@ TDWG標準での該当箇所
 
 ### 1.1 この文書の内容のステータス
 
-第4章の`用語のIRI（Term IRI）`、`定義（Definition）`、`制御値（Controlled value）`は、規範的な値です。 特定の用語に `使用法（Usage）`が定義されている場合、その値は規範的です。  `上位概念（Has broader concept）`の値は規範的です。 `用語の名前（Term Name）`の値は非規範的ですが、名前空間の略語の接頭辞はその用語の名前空間で一般的に使われるものであると予想できます。  `ラベル（Label）`とそのほかのすべての属性（`備考（Notes）`など）は非規範的なものです。
+第4章の`用語のIRI（Term IRI）`、`定義（Definition）`、`制御値（Controlled value）`は、規範的な値です。 特定の用語に `使用法（Usage）`が定義されている場合、その値は規範的です。  `上位概念（Has broader concept）`の値は規範的です。 `用語の名前（Term Name）`の値は規範的ではありませんが、名前空間の略語の接頭辞はその用語の名前空間で一般的に使われるものであると考えられます。  `ラベル（Label）`と他の属性（`備考（Notes）`など）は全て規範的ではありません。
 
 ### 1.2 RFC 2119 キーワード
 
-この文書における “MUST”、”MUST NOT”、”REQUIRED”、”SHALL”、”SHALL NOT”、”SHOULD”、”SHOULD NOT”、”RECOMMENDED”、”MAY”、”OPTIONAL” というキーワードは、[RFC 2119](https://tools.ietf.org/html/rfc2119) に記述されているように解釈されます。
+この文書における “MUST”、”MUST NOT”、”REQUIRED”、”SHALL”、”SHALL NOT”、”SHOULD”、”SHOULD NOT”、”RECOMMENDED”、”MAY”、”OPTIONAL” というキーワードは、[RFC 2119](https://tools.ietf.org/html/rfc2119) に記述されている意味で解釈してください。
 
 ## 2 用語の使い方
 
