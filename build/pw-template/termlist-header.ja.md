@@ -1,12 +1,12 @@
-# Pathway 制御語彙 用語一覧
+# Pathway 制御語彙 用語リスト
 
 タイトル
-: Pathway 制御語彙 用語一覧
+: Pathway 制御語彙 用語リスト
 
 名前空間 URI
 : <http://rs.tdwg.org/dwcpw/values/>
 
-望ましい名前空間の略語
+推奨される名前空間の略称
 : dwcpw:
 
 バージョン発行日
@@ -15,7 +15,7 @@
 作成日
 : {created_date}
 
-TDWGスタンダードでのパート
+TDWG標準での該当箇所
 : <{standard_iri}>
 
 この文書のバージョン
@@ -24,6 +24,7 @@ TDWGスタンダードでのパート
 文書の最新バージョン
 : <{current_iri}>
 
+前のバージョン
 {previous_version_slot}
 
 要旨
