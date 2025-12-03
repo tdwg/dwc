@@ -43,7 +43,7 @@
 
 ### 1.1 本文件內容的現況
 
-在第 4 節中，`Term IRI`、`Definition`和`Controlled value`的值為規範性。 `Usage`的值 (如果它存在於特定術語中) 為規範性。  `Term Name`的值為非規範性，不過可以預期命名空間縮寫是術語命名空間的常用前綴。  `Label`和所有其他屬性 (例如`Notes`) 的值都是非規範性。
+在第 4 節中，「Term IRI」、「Definition」和「Controlled value」的值為規範性。 「Usage」的值 (如果它存在於特定術語中) 為規範性。  `Term Name`的值為非規範性，不過可以預期命名空間縮寫是術語命名空間的常用前綴。  「Label」和所有其他屬性 (例如「Notes」) 的值都是非規範性。
 
 ### 1.2 RFC 2119 關鍵字
 
