@@ -39,11 +39,11 @@
 
 ## 1 引言
 
-本文件包含旨在作為達爾文核心標準術語之控制值使用的術語，其本地名稱為「路徑」。 如需詳細資訊和理由，請參閱 Groom et al. 2019. Improving Darwin Core for research and management of alien species. <https://doi.org/10.3897/biss.3.38084>
+本文件包含旨在作為達爾文核心標準術語之控制值使用的術語，其本地名稱為「pathway」。 如需詳細資訊和理由，請參閱 Groom et al. 2019. Improving Darwin Core for research and management of alien species. <https://doi.org/10.3897/biss.3.38084>
 
 ### 1.1 本文件內容的現況
 
-在第 4 節中，`Term IRI`、`Definition`和`Controlled value`的值為規範性。 `Usage`的值 (如果它存在於特定術語中) 為規範性。  「Has broader concept」的值為規範性。 `Term Name`的值為非規範性，不過可以預期命名空間縮寫是術語命名空間的常用前綴。  `Label`和所有其他屬性 (例如`Notes`) 的值都是非規範性。
+在第 4 節中，`Term IRI`、`Definition`和`Controlled value`的值為規範性。 `Usage`的值 (如果它存在於特定術語中) 為規範性。  「Has broader concept」的值為規範性。 「Term Name」的值為非規範性，不過可以預期命名空間縮寫是術語命名空間的常用前綴。  `Label`和所有其他屬性 (例如`Notes`) 的值都是非規範性。
 
 ### 1.2 RFC 2119 關鍵字
 
