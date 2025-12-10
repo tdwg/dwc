@@ -31,7 +31,7 @@ Creator
 : Darwin Core and RDF/OWL Task Groups
 
 Bibliographic citation
-: Darwin Core and RDF/OWL Task Groups. Darwin Core Maintenance Group. Darwin Core RDF guide. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/terms/guides/rdf/2021-07-15>
+: Darwin Core and RDF/OWL Task Groups. 2021. Darwin Core RDF guide. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/terms/guides/rdf/2021-07-15>
 
 ## 1 Introduction (non-normative)
 
