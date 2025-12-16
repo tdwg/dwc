@@ -3,27 +3,27 @@ This template is NOT used by jekyll, but by the Darwin Core build script build-t
 to create the terms/index.md file, which mostly contains html.
 \#}
 
-# Darwin Core Quick Reference Guide
+# 達爾文核心標準快速參考指南
 
-This document is intended to be an easy-to-read reference of the currently (as of 2023-09-18) recommended terms maintained as part of the [Darwin Core standard](https://www.tdwg.org/standards/dwc/) and is maintained by the [Darwin Core Maintenance Group](https://www.tdwg.org/community/dwc/).
+本文件旨在作為易於閱讀的參考指南，收錄截至2023年9月18日現行推薦術語，這些術語作為[達爾文核心標準](https://www.tdwg.org/standards/dwc/)的一部分，且由[達爾文核心標準維護小組](https://www.tdwg.org/community/dwc/)維護。
 
-**Need help?** Read more about how to use Darwin Core in the [Darwin Core Questions & Answers site](https://github.com/tdwg/dwc-qa/blob/master/README.md). Still have questions? Submit a new issue (question/problem) to the [dwc-qa issues page in GitHub](https://github.com/tdwg/dwc-qa/issues), or use the [form](https://tinyurl.com/darwin-qa). See the bottom of this document for [how to cite Darwin Core](https://dwc.tdwg.org/terms/#cite-darwin-core)."
+**需要協助嗎？** 欲進一步瞭解如何使用達爾文核心標準，請參閱[達爾文核心標準問答網站](https://github.com/tdwg/dwc-qa/blob/master/README.md)。 仍有疑問？ 請將新問題（疑問/狀況）提交至 [GitHub 上的 dwc-qa 問題頁面](https://github.com/tdwg/dwc-qa/issues)，或使用 [表單](https://tinyurl.com/darwin-qa)。 請參閱本文件末尾的[如何引用達爾文核心標準](https://dwc.tdwg.org/terms/#cite-darwin-core)。
 
-**Want to contribute?** For information about how to contribute to the Darwin Core Standard, including how to propose changes, see the [Guidelines for contributing](https://github.com/tdwg/dwc/blob/master/.github/CONTRIBUTING.md).
+**想貢獻心力嗎？** 欲瞭解如何為達爾文核心標準貢獻心力（包括如何提出變更建議），請參閱[貢獻指南](https://github.com/tdwg/dwc/blob/master/.github/CONTRIBUTING.md)。
 
-This page is not part of the standard, but combines the normative term names and definitions with the non-normative comments and examples that are meant to help people to use the terms consistently. Definitions, comments, and examples may include namespace abbreviations (e.g., "dwc:"). These are included to show that the meaning for the word it is attached to very specifically means the term as defined in that namespace. Thus, dwc:Event means Event as defined by Darwin Core at https://dwc.tdwg.org/terms/#event. Capitalized terms that follow a namespace abbreviation, such as dwc:Occurrence, are Darwin Core class terms, which are a special category of terms used to group sets of property terms (terms that being with lower case names that follow the namespace abbreviation, e.g., dwc:eventID) for convenience. Comprehensive metadata for current and obsolete terms in human readable form are found in the document [List of Darwin Core terms](../list/).
+本頁並非標準的一部分，而是將規範性術語名稱與定義，與旨在協助使用者一致運用術語的非規範性註解及範例合併呈現。 定義、註解與範例中可能包含命名空間縮寫（例如「dwc:」）。 這些內容的加入，旨在表明該詞所附屬的詞義，非常明確地指涉該命名空間中定義的術語。 因此，dwc:Event 指的是由達爾文核心標準在 https://dwc.tdwg.org/terms/#event 定義的 Event。 以命名空間縮寫後接大寫開頭（例如 dwc:Occurrence）的術語，屬於達爾文核心標準類型術語。此類特殊術語用於將屬性術語（即以小寫名稱開頭且接續命名空間縮寫的術語，例如 dwc:eventID）進行分組，以便利使用。 當前及已廢棄術語的完整詮釋資料，以人類可讀形式呈現於文件[達爾文核心標準術語清單](../list/)中。
 
-Additional [files with just the current term names](https://github.com/tdwg/dwc/tree/master/dist) and a [file with the full term history](https://github.com/tdwg/dwc/blob/master/vocabulary/term_versions.csv) can be found in the [Darwin Core repository](https://github.com/tdwg/dwc).
+附加的 [僅含當前術語名稱的檔案] (https://github.com/tdwg/dwc/tree/master/dist) 以及一份[完整術語歷史檔案](https://github.com/tdwg/dwc/blob/master/vocabulary/term_versions.csv) 可於[達爾文核心標準儲存庫](https://github.com/tdwg/dwc)中找到。
 
 {% for class_group in class_groups %}
 
 ## {{ class_group.label }}
 
 {% if class_group.isRecordLevel %}
-This category contains terms that are generic in that they might apply to any type of record in a dataset.
+此類別包含通用術語，這些術語可能適用於資料集中的任何類型記錄。
 {% endif %}
 {% if class_group.label == 'UseWithIRI' %}
-For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https://dwc.tdwg.org/rdf/#25-terms-in-the-dwciri-namespace-normative).
+有關 「UseWithIRI」的詳細資訊，請參閱 [RDF 指南第 2.5 節](https://dwc.tdwg.org/rdf/#25-terms-in-the-dwciri-namespace-normative)。
 {% endif %}
 
 <div class="my-4">
@@ -38,11 +38,11 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
 
 <table class="table">
   <tbody>
-    <tr class="table-primary"><th colspan="2">{{ class_group.label }} <span class="badge bg-primary float-end">Class</span></th></tr>
-    <tr><td>Identifier</td><td><a href="{{ class_group.iri }}">{{ class_group.iri }}</a></td></tr>
-    <tr><td>Definition</td><td>{{ class_group.definition }}</td></tr>
-    <tr><td>Comments</td><td>{{ class_group.comments }}</td></tr>
-    <tr><td>Examples</td><td>{% if examples | length == 1 %}{{ examples | first }}{% else %}<ul class="list-group list-group-flush">{% for example in examples %}<li class="list-group-item">{{ example }}</li>{% endfor %}</ul>{% endif %}</td></tr>
+    <tr class="table-primary"><th colspan="2">{{ class_group.label }} <span class="badge bg-primary float-end">類別</span></th></tr>
+    <tr><td>識別碼</td><td><a href="{{ class_group.iri }}">{{ class_group.iri }}</a></td></tr>
+    <tr><td>定義</td><td>{{ class_group.definition }}</td></tr>
+    <tr><td>註釋</td><td>{{ class_group.comments }}</td></tr>
+    <tr><td>範例</td><td>{% if examples | length == 1 %}{{ examples | first }}{% else %}<ul class="list-group list-group-flush">{% for example in examples %}<li class="list-group-item">{{ example }}</li>{% endfor %}</ul>{% endif %}</td></tr>
   </tbody>
 </table>
 {%endif %}
@@ -59,26 +59,26 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
 <table class="table">
   <tbody>
     <tr class="table-secondary"><th colspan="2">{{ term.label }}</th></tr>
-    <tr><td>Identifier</td><td><a href="{{ term.iri }}">{{ term.iri }}</a></td></tr>
-    <tr><td>Definition</td><td>{{ term.definition }}</td></tr>
-    <tr><td>Comments</td><td>{{ term.comments }}</td></tr>
-    <tr><td>Examples</td><td>{% if examples | length == 1 %}{{ examples | first }}{% else %}<ul class="list-group list-group-flush">{% for example in examples %}<li class="list-group-item">{{ example }}</li>{% endfor %}</ul>{% endif %}</td></tr>
+    <tr><td>識別碼</td><td><a href="{{ term.iri }}">{{ term.iri }}</a></td></tr>
+    <tr><td>定義</td><td>{{ term.definition }}</td></tr>
+    <tr><td>註釋</td><td>{{ term.comments }}</td></tr>
+    <tr><td>範例</td><td>{% if examples | length == 1 %}{{ examples | first }}{% else %}<ul class="list-group list-group-flush">{% for example in examples %}<li class="list-group-item">{{ example }}</li>{% endfor %}</ul>{% endif %}</td></tr>
   </tbody>
 </table>
 {% endfor %}
 
 {% endfor %}
 
-## Cite Darwin Core
+## 引用達爾文核心標準
 
-To cite Darwin Core in general, use the peer-reviewed article on Darwin Core:
+要引用達爾文核心標準的一般資訊，請參照經同行評審的達爾文核心標準文件：
 
 > Wieczorek J, Bloom D, Guralnick R, Blum S, Döring M, et al. (2012) Darwin Core: An Evolving Community-Developed Biodiversity Data Standard. PLoS ONE 7(1): e29715. <https://doi.org/10.1371/journal.pone.0029715>
 
-To cite the standard document upon which this page is built, use the following:
+若要引用本頁所依據的標準文件，請使用以下格式：
 
-> Darwin Core Maintenance Group. Darwin Core Maintenance Group. List of Darwin Core terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/list/>
+> Darwin Core Maintenance Group. 2021. List of Darwin Core terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/list/>
 
-To cite this document specifically, use the following:
+如需具體引用本文件，請使用以下格式：
 
-> Darwin Core Maintenance Group. Darwin Core Maintenance Group. Darwin Core Quick Reference Guide. Biodiversity Information Standards (TDWG). <https://dwc.tdwg.org/terms/>
+> Darwin Core Maintenance Group. 2021. Darwin Core Quick Reference Guide. Biodiversity Information Standards (TDWG). <https://dwc.tdwg.org/terms/>

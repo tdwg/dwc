@@ -1,112 +1,95 @@
 [
   {
-    "text": "",
-    "href": ""
+    "text": "Главная",
+    "href": "/ru/"
   },
   {
-    "text": "",
+    "text": "Условия использования",
     "menu": [
       {
-        "text": "",
-        "href": ""
+        "text": "Darwin Core",
+        "href": "/ru/list/"
       },
       {
-        "text": ""
+        "text": "---"
       },
       {
-        "text": "",
-        "href": ""
+        "text": "Расширение \"Chronometric Age\" (Хронометрический возраст)",
+        "href": "https://chrono.tdwg.org/list/"
       },
       {
-        "text": "",
-        "href": ""
+        "text": "Расширение Гумбольдта",
+        "href": "https://eco.tdwg.org/list/"
       },
       {
-        "text": ""
+        "text": "---"
       },
       {
-        "text": "",
-        "href": ""
+        "text": "Контролируемый словарь \"Establishment Means\" (Способ закрепления)",
+        "href": "/ru/em/"
       },
       {
-        "text": "",
-        "href": ""
+        "text": "Контролируемый словарь \"Degree of Establishment\" (Степень акклиматизации)",
+        "href": "/ru/doe/"
       },
       {
-        "text": "",
-        "href": ""
+        "text": "Контролируемый словарь \"Pathway\" (Путь)",
+        "href": "/ru/pw/"
       }
     ]
   },
   {
-    "text": "",
+    "text": "Инструкции",
     "menu": [
       {
-        "text": "",
-        "href": ""
+        "text": "Darwin Core: краткая справка",
+        "href": "/ru/terms/"
       },
       {
-        "text": ""
+        "text": "---"
       },
       {
-        "text": "",
-        "href": ""
+        "text": "Расширение \"Chronometric Age\" (Хронометрический возраст): краткая справка",
+        "href": "https://chrono.tdwg.org/terms/"
       },
       {
-        "text": "",
-        "href": ""
+        "text": "Расширение Гумбольдта: краткая справка",
+        "href": "https://eco.tdwg.org/terms/"
       },
       {
-        "text": ""
+        "text": "---"
       },
       {
-        "text": "",
-        "href": ""
+        "text": "Упрощенный Darwin Core",
+        "href": "/ru/simple/"
       },
       {
-        "text": "",
-        "href": ""
+        "text": "Текст (Darwin Core архив)",
+        "href": "/ru/text/"
       },
       {
-        "text": "",
-        "href": ""
+        "text": "RDF",
+        "href": "/ru/rdf/"
       },
       {
-        "text": "",
-        "href": ""
+        "text": "XML",
+        "href": "/ru/xml/"
       },
       {
-        "text": "",
-        "href": ""
+        "text": "Правила использования пространств имен",
+        "href": "/ru/namespace/"
       },
       {
-        "text": ""
+        "text": "---"
       },
       {
-        "text": "",
-        "href": ""
+        "text": "Вопросы и ответы",
+        "href": "https://github.com/tdwg/dwc-qa/blob/master/README.md"
       }
     ]
   },
   {
-    "text": "",
-    "href": ""
-  },
-  {
-    "text": "",
-    "menu": [
-      {
-        "text": "",
-        "href": ""
-      },
-      {
-        "text": "",
-        "href": ""
-      },
-      {
-        "text": "",
-        "href": ""
-      }
-    ]
+    "text": "GitHub",
+    "href": "https://github.com/tdwg/dwc"
   }
 ]

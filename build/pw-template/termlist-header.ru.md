@@ -1,57 +1,53 @@
-# Pathway Controlled Vocabulary List of Terms
+# Список терминов контролируемого словаря Путь (Pathway)
 
-Title
-: Pathway Controlled Vocabulary List of Terms
+Заглавие
+: Список терминов контролируемого словаря Путь (Pathway)
 
-Namespace URI
+URI пространства имен
 : <http://rs.tdwg.org/dwcpw/values/>
 
-Preferred namespace abbreviation
+Предпочтительная аббревиатура для пространства имён
 : dwcpw:
 
-Date version issued
+Дата публикации версии
 : {ratification_date}
 
-Date created
+Дата создания
 : {created_date}
 
-Part of TDWG Standard
+Часть стандарта TDWG
 : <{standard_iri}>
 
-This document version
+Текущая версия
 : <{current_iri}{ratification_date}>
 
-Latest version of document
+Последняя версия документа
 : <{current_iri}>
 
-{previous_version_slot}
+Предыдущая версия {previous_version_slot}
 
-Abstract
-: The Darwin Core term `pathway` provides information about the process by which an Organism came to be in a given place at a given time. The Pathway Controlled Vocabulary provides terms that should be used as values for `dwc:pathway` and `dwciri:pathway`.
+Аннотация: Термин Darwin Core "путь" (pathway) предоставляет информацию о процессе, в результате которого Организм (Organism) оказался в определённом месте в определённое время. Контролируемый словарь термина Путь (Pathway) содержит допустимые значения для полей dwc:pathway и dwciri:pathway.
 
-Contributors
-: {contributors}
+Авторы: {contributors}
 
-Creator
-: {creator}
+Создатель:{creator}
 
-Bibliographic citation
-: {creator}. {year}. {document_title}. {publisher}. <{current_iri}{ratification_date}>
+Библиографическая ссылка:{creator}. Год{year}. {document_title}. {publisher}. <{current_iri}{ratification_date}>
 
-## 1 Introduction
+## 1. Введение
 
-This document includes terms intended to be used as a controlled value for Darwin Core terms with local name `pathway`. For details and rationale, see Groom et al. 2019. Improving Darwin Core for research and management of alien species. <https://doi.org/10.3897/biss.3.38084>
+Настоящий документ содержит значения (контролируемый словарь), которые должны использоваться для терминов Darwin Core с локальным именем `pathway` (`путь`). Подробности и обоснование см. в Groom et al. 2019. Расширение Darwin Core для исследования и управления чужеродными видами. <https://doi.org/10.3897/biss.3.38084>
 
-### 1.1 Status of the content of this document
+### 1.1 Статус содержания документа
 
-In Section 4, the values of the `Term IRI`, `Definition`, and `Controlled value` are normative. The value of `Usage` (if it exists for a given term) is normative.  The value of `Has broader concept` is normative. The values of `Term Name` are non-normative, although one can expect that the namespace abbreviation prefix is one commonly used for the term namespace.  `Label` and the values of all other properties (such as `Notes`) are non-normative.
+В Разделе 4 значения полей: `IRI Термина`, `Определение` и `Контролируемое значение` являются нормативными. Значение поля `Использование` (если оно существует для данного термина) является нормативным.  Значение поля `Имеет более широкое значение` является нормативным. Значения поля `Название термина` не являются нормативными, при этом ожидается использование общепринятого префикса для пространства имён термина.  Значения поля `Метка` и значения всех остальных полей (таких, как `Примечания`) являются ненормативными.
 
-### 1.2 RFC 2119 key words
+### 1.2 Ключевые слова RFC 2119
 
-The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [RFC 2119](https://tools.ietf.org/html/rfc2119).
+Ключевые слова "MUST" (ОБЯЗАТЕЛЬНО), "MUST NOT" (НЕ ДОПУСКАЕТСЯ), "REQUIRED" (ТРЕБУЕТСЯ), "SHALL" (ДОЛЖЕН), "SHALL NOT" (НЕ ДОЛЖЕН), "SHOULD" (СЛЕДУЕТ), "SHOULD NOT" (НЕ СЛЕДУЕТ), "RECOMMENDED" (РЕКОМЕНДУЕТСЯ), "MAY" (МОЖЕТ) и "OPTIONAL" (НЕОБЯЗАТЕЛЬНО) должны толковаться в соответствии с RFC 2119. [RFC 2119](https://tools.ietf.org/html/rfc2119).
 
-## 2 Use of Terms
+## 2 Применение терминов
 
-Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://dwc.tdwg.org/rdf/#143-use-of-darwin-core-terms-in-rdf-normative), term IRIs MUST be used as values of `dwciri:pathway`. Controlled value strings MUST be used as values of `dwc:pathway`.
+Согласно требованиям Раздела [1.4.3 Руководства по Darwin Core RDF] (https://dwc.tdwg.org/rdf/#143-use-of-darwin-core-terms-in-rdf-normative), значениями `dwciri:pathway` ОБЯЗАТЕЛЬНО должны быть IRI терминов. Для `dwc:pathway` ОБЯЗАТЕЛЬНО применение строковых значений, взятых из контролируемого словаря.
 
-## 3 Term index
+## 3 Указатель терминов

@@ -15,7 +15,7 @@
 作成日
 : {created_date}
 
-TDWGスタンダードでのパート
+TDWG標準での該当箇所
 : <{standard_iri}>
 
 この文書のバージョン
@@ -24,6 +24,7 @@ TDWGスタンダードでのパート
 文書の最新バージョン
 : <{current_iri}>
 
+前のバージョン
 {previous_version_slot}
 
 要旨

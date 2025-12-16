@@ -1,70 +1,64 @@
-# Darwin Core List of Terms
+# Список терминов стандарта Darwin Core
 
-Title
-: Darwin Core List of Terms
+Список терминов DwC
 
-Date version issued
+Дата публикации версии
 : {ratification_date}
 
-Date created
+Дата создания
 : {created_date}
 
-Part of TDWG Standard
+Часть стандарта TDWG
 : <{standard_iri}>
 
-This version
+Текущая версия
 : <{current_iri}{ratification_date}>
 
-Latest version
-: <{current_iri}>
+Последняя версия: {current_iri}
 
-{previous_version_slot}
+Предыдущая версия {previous_version_slot}
 
-Abstract
-: Darwin Core is a vocabulary standard for transmitting information about biodiversity. This document lists all terms in namespaces currently used in the vocabulary.
+DwC это словарь терминов для обмена данными о биоразнообразии. Этот документ содержит перечень всех терминов, используемых в словаре.
 
-Contributors
-: {contributors}
+Авторы: {contributors}
 
-Creator
-: {creator}
+Создатель:{creator}
 
-Bibliographic citation
-: {creator}. {year}. {document_title}. {publisher}. <{current_iri}{ratification_date}>
+Библиографическая ссылка:{creator}. Год{year}. {document_title}. {publisher}. <{current_iri}{ratification_date}>
 
-## 1 Introduction (Informative)
+## 1 Введение (Информативное)
 
-This document contains terms that are part of the most recent version of the Darwin Core vocabulary (<http://rs.tdwg.org/version/dwc/{ratification_date}>).
+В этом документе содержатся термины, входящие в последнюю версию словаря Darwin Core (<http://rs.tdwg.org/version/dwc/{ratification_date}>).
 
-This document includes terms in four namespaces that contain recommended terms: `dwc:`, `dwciri:`, `dc:`, and `dcterms:`. However, some terms in these namespaces are deprecated or superseded and should no longer be used. Deprecation or supersession is noted in the term metadata. Namespaces that contain only deprecated terms are not included in this document, but metadata about those terms can be retrieved by dereferencing their IRIs.
+Данный документ включает термины в четырех пространствах имен, которые содержат рекомендуемые термины: dwc:, dwciri:, dc:, и dcterms:. Однако, некоторые термины в этих пространствах имен устарели или заменены и не должны использоваться. Устаревание или замена отмечается в метаданных. Поля, которые содержат только устаревшие термины, не включены в данный документ, однако метаданные об этих терминах можно получить, обратившись по их IRI.
 
-For a simplified list that contains only the currently recommended terms, see the [Darwin Core Quick Reference Guide](../terms/).
+Для упрощенного списка, содержащего только рекомендуемые в настоящее время термины, обратитесь к [Darwin Core Quick Reference Guide](../terms/).
 
-### 1.1 Status of the content of this document
+### 1.1 Статус содержания документа
 
-Sections 1 and 3 are non-normative.
+Разделы 1 и 3 являются ненормативными.
 
-Section 2 is normative.
+Раздел 2 является нормативным.
 
-In Section 4, the values of the `Term IRI` and `Definition` are normative. The values of `Term Name` are non-normative, although one can expect that the namespace abbreviation prefix is one commonly used for the term namespace.  `Label` and the values of all other properties (such as `Examples` and `Notes`) are non-normative.
+В разделе 4 значения `Термина IRI` и `Определения` являются нормативными. Значения `Term Name` не являются нормативными, хотя можно ожидать, что префикс сокращения пространства имен является одним из общепринятых префиксов, используемых для термина пространство имен.  `Label` и значения всех остальных свойств (таких, как `Examples` и `Notes`) являются ненормативными.
 
-### 1.2 RFC 2119 key words
+### 1.2 Ключевые слова RFC 2119
 
-The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [BCP 14](https://www.rfc-editor.org/info/bcp14) [\[RFC 2119\]](https://datatracker.ietf.org/doc/html/rfc2119) and [\[RFC 8174\]](https://datatracker.ietf.org/doc/html/rfc8174) when, and only when, they appear in all capitals, as shown here.
+Ключевые слова «MUST», «MUST NOT», «REQUIRED», «SHALL», «SHALL NOT», «SHOULD», «SHOULD NOT», «RECOMMENDED», «MAY» и «OPTIONAL» в настоящем документе должны толковаться так, как это описано в [BCP 14](https://www.rfc-editor.org/info/bcp14) [\[RFC 2119\]](https://datatracker.ietf.org/doc/html/rfc2119) и [\[RFC 8174\]](https://datatracker.ietf.org/doc/html/rfc8174) только тогда, когда они написаны заглавными буквами.
 
-### 1.3 Namespace abbreviations
+### 1.3 Сокращения пространств имен
 
-The following namespace abbreviations are used in this document:
+В этом документе используются следующие сокращения пространств имен:
 
-| abbreviation             | IRI                                                                              |
+| сокращение               | IRI                                                                              |
 | ------------------------ | -------------------------------------------------------------------------------- |
 | dwc:     | http://rs.tdwg.org/dwc/terms/    |
 | dwciri:  | http://rs.tdwg.org/dwc/iri/      |
 | dc:      | http://purl.org/dc/elements/1.1/ |
 | dcterms: | http://purl.org/dc/terms/                        |
 
-## 2 Use of Terms
+## 2 Применение терминов
 
-Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#143-use-of-darwin-core-terms-in-rdf-normative), terms in the `dwciri:` namespace MUST be used with IRI values. Terms in the `dwc:` and `dc:` namespaces are generally expected to have string literal values. Values for terms in the `dcterms:` namespace will depend on the details of the term. See [Section 3 of the Darwin Core RDF Guide](../rdf/#3-term-reference-normative) for details.
+В соответствии с требованиями [Раздела 1.4.3 руководства Darwin Core RDF](../rdf/#143-use-of-darwin-core-terms-in-rdf-normative) термины в пространстве имен `dwciri:` ДОЛЖНЫ использоваться со значениями IRI. Обычно предполагается, что термины в пространствах имен `dwc:` и `dc:` будут иметь строковые буквальные значения. Значения терминов в пространстве имен `dcterms:` будут зависеть от деталей термина. Подробности см. в [Разделе 3 руководства Darwin Core RDF](../rdf/#3-term-reference-normative).
 
-## 3 Term indices
+## 3 Индексы терминов
