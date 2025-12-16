@@ -8,6 +8,7 @@ import sys
 languages = [
   {'text': 'English', 'href': '/'},
   {'text': 'Čeština', 'href': '/cs/'},
+  {'text': 'Español', 'href': '/es/'},
   {'text': 'Français', 'href': '/fr/'},
   {'text': 'Русский', 'href': '/ru/'}
 ]
@@ -15,7 +16,6 @@ languages = [
 # Additional languages for dwc-translation-preview.tdwg.org
 previewLanguages = [
   {'text': '---'},
-  {'text': 'Español', 'href': '/es/'},
   {'text': '日本語', 'href': '/ja/'},
   {'text': '한국어', 'href': '/ko/'},
   {'text': '繁體中文', 'href': '/zh-Hant/'}
