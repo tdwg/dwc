@@ -178,7 +178,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>Organisms occuring in an area because they were introduced for the purpose of biological control of another organism.</td>
+			<td>Organisms occurring in an area because they were introduced for the purpose of biological control of another organism.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
@@ -2256,7 +2256,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>Organisms that dispersed through artificial waterways created to connect previosuly unconnected water bodies.</td>
+			<td>Organisms that dispersed through artificial waterways created to connect previously unconnected water bodies.</td>
 		</tr>
 		<tr>
 			<td>Usage</td>

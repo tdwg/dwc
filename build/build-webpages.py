@@ -534,7 +534,7 @@ class TermList:
         Keyword arguments:
         locale -- Locale to use
         outFileName -- Output file name
-        htmlTemplate -- Path to Jinja2 templaet
+        htmlTemplate -- Path to Jinja2 template
         """
 
         with open(dictionaryFileName, encoding='utf-8') as jsonFile:
