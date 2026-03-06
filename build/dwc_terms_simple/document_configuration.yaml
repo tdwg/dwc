@@ -15,7 +15,7 @@ creator: Darwin Core Maintenance Group
 # These Markdown documents are then converted to HTML by GitHub Pages. To match the TDWG theme, the 
 # document maintainers will need to work with the Infrastructure team to set up the repository so 
 # that it can host the ancillary website for the standard or vocabulary. 
-# The exact setup of the repository will determinethe values of accessUrl and browserRedirectUri.
+# The exact setup of the repository will determine the values of accessUrl and browserRedirectUri.
 
 # Media type of source document used to generate the HTML version of the document.
 mediaType: text/markdown
