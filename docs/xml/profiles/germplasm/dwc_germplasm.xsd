@@ -10,7 +10,7 @@
     <!-- 
         **********************
         WARNING! DRAFT SCHEMA!
-        UNDER DEVELOPMENT
+        UNDER DEVELOPEMENT
         NOT FOR PRODUCTION!
         **********************
     -->
@@ -71,7 +71,7 @@
     <!-- 
         NOTE: Enumeration NOT USED BELOW YET!
         Note that the Enumeration defined below is not used as type definition for any of the relevant terms yet.
-        Conflicting with the default type for generic Darwin Core schema...?
+        Conflicing with the default type for generic Darwin Core schema...?
         How to solve this to be explored at a higher Darwin Core development/modelling level...
         (Dag Endresen, January 2009, May 2009)
     -->
@@ -84,7 +84,7 @@
             <xs:enumeration value="300"><xs:annotation><xs:documentation>Traditional cultivar/landrace</xs:documentation></xs:annotation></xs:enumeration>
             <xs:enumeration value="400"><xs:annotation><xs:documentation>Breeding/research material</xs:documentation></xs:annotation></xs:enumeration>
             <xs:enumeration value="410"><xs:annotation><xs:documentation>Breeders line</xs:documentation></xs:annotation></xs:enumeration>
-            <xs:enumeration value="411"><xs:annotation><xs:documentation>Syntheticpopulation</xs:documentation></xs:annotation></xs:enumeration>
+            <xs:enumeration value="411"><xs:annotation><xs:documentation>Syntetic population</xs:documentation></xs:annotation></xs:enumeration>
             <xs:enumeration value="412"><xs:annotation><xs:documentation>Hybrid</xs:documentation></xs:annotation></xs:enumeration>
             <xs:enumeration value="413"><xs:annotation><xs:documentation>Founder stock/base population</xs:documentation></xs:annotation></xs:enumeration>
             <xs:enumeration value="414"><xs:annotation><xs:documentation>Inbred line (parent of hybrid cultivar)</xs:documentation></xs:annotation></xs:enumeration>
@@ -250,7 +250,7 @@
     <!--
         List treaty/regulation name, and issuing body, 
         and perhaps when sample was included under the regulations
-        NB! This class desperately need to be developed further...!
+        NB! This class desperatly need to be developed further...!
         Example: ITPGRFA, International Treaty for Plant Genetic Resources
         The ITPGRFA Annex 1 list the crops regulated by this treaty.
     -->
@@ -424,7 +424,7 @@
         dwc:measurementUnit              SCORE_UNIT
         dwc:measurementDeterminedDate    SCORE_DATE
         dwc:measurementDeterminedBy      SCORE_PERSON
-        dwc:measurementMethod            GermplasmExperimentClass defined below for more details (atomized according to EPGRIS3 C&E)
+        dwc:measurementMethod            GermplasmExperimentClass defined below for more details (atomized acording to EPGRIS3 C&E)
         dwc:measurementRemarks           SCORE_REMARKS (not in the draft Germplasm Trait format, EPGRIS3 C&E)
     -->
 

@@ -15,7 +15,7 @@
             (tdwg_dwc_classes.xsd) with the same namespace. There are two ways in which 
             references to domains can be defined:
             a) through an abstract base term anyXXXTerm, which is derived from the type 
-               dwc:anyProperty and which all properties for that domain use as their 
+               dwc:anyPropery and which all properties for that domain use as their 
                substitution group. If you refer to dwc:anyXXXTerm in your schema, you 
                will be able to reference any of the terms, but it will be impossible to 
                create a sequence of all terms occurring only once. 

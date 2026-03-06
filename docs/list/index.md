@@ -12404,7 +12404,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The category of information pertaining to measurements associated with an occurrence.</td>
+			<td>The category of information pertaining to measurements accociated with an occurrence.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
