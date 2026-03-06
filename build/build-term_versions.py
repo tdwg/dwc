@@ -100,7 +100,7 @@ for row_index,row in versions_df.iterrows():
     # Add the current term IRI from the join data row to the list
     term_iri_list.append(term_iri_row['term'])
 '''
-# Add the curren term IRI list to the DataFrame as the term_iri column
+# Add the current term IRI list to the DataFrame as the term_iri column
 versions_df['term_iri'] = term_iri_list
 # Add the obsolete terms DataFrame to the accumulated DataFrame
 #accumulated_frame = accumulated_frame.append(versions_df.copy(), sort=True)
