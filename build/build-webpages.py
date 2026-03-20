@@ -434,7 +434,7 @@ class TermList:
         # Determine whether there was a previous version of the document.
         if self.terms.document_configuration_yaml['doc_created'] != self.terms.document_configuration_yaml['doc_modified']:
             # Load versions list from document versions data in the rs.tdwg.org repo and find most recent version.
-            versions_data_url = dwcterms.githubBaseUri + 'docs/docs-versions.csv'
+            versions_data_url = self.terms.githubBaseUri + 'docs/docs-versions.csv'
             versions_list_df = pd.read_csv(versions_data_url, na_filter=False)
             # Slice all rows for versions of this document.
             matching_versions = versions_list_df[versions_list_df['current_iri']==self.terms.document_configuration_yaml['current_iri']]
