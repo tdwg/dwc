@@ -7,6 +7,7 @@
 import re
 import json       # library to convert JSON to Python data structures
 import os
+import sys
 import pandas as pd
 
 from jinja2 import FileSystemLoader, Environment
@@ -18,6 +19,34 @@ import dwcterms
 # -----------------
 languages = ['en', 'ar', 'cs', 'es', 'fr', 'ja', 'ko', 'ru', 'zh-Hant']
 
+# -----------------
+# Command line arguments
+# -----------------
+
+arg_vals = sys.argv[1:]
+opts = [opt for opt in arg_vals if opt.startswith('-')]
+args = [arg for arg in arg_vals if not arg.startswith('-')]
+
+# "master" for production, something else for development
+if '--branch' in opts:
+    github_branch = args[opts.index('--branch')]
+else:
+    github_branch = 'master'
+
+if '--ghuser' in opts:
+    github_user = args[opts.index('--ghuser')]
+else:
+    github_user = 'tdwg'
+
+if '--rspath' in opts:
+    local_path_to_rs = args[opts.index('--rspath')]
+else:
+    local_path_to_rs = None
+
+
+# -----------------
+# Classes
+# -----------------
 class TermList:
     def __init__(self, terms, vocabType, organizedInCategories, displayOrder, displayLabel, displayComments, displayId):
         """
@@ -405,7 +434,7 @@ class TermList:
         # Determine whether there was a previous version of the document.
         if self.terms.document_configuration_yaml['doc_created'] != self.terms.document_configuration_yaml['doc_modified']:
             # Load versions list from document versions data in the rs.tdwg.org repo and find most recent version.
-            versions_data_url = dwcterms.githubBaseUri + 'docs/docs-versions.csv'
+            versions_data_url = self.terms.githubBaseUri + 'docs/docs-versions.csv'
             versions_list_df = pd.read_csv(versions_data_url, na_filter=False)
             # Slice all rows for versions of this document.
             matching_versions = versions_list_df[versions_list_df['current_iri']==self.terms.document_configuration_yaml['current_iri']]
@@ -610,7 +639,10 @@ def generate_all_qrg(termList, locales):
 # Darwin Core Terms
 dwc = dwcterms.DwcTerms(
     termLists = ['terms', 'iri', 'dc-for-dwc', 'dcterms-for-dwc', 'ac-for-dwc'],
-    docMetadataFilePath = 'dwc_doc_list/')
+    docMetadataFilePath = 'dwc_doc_list/',
+    rsPath = local_path_to_rs,
+    githubBranch = github_branch,
+    githubUser = github_user)
 
 dwc_list = TermList(
     terms = dwc,
@@ -631,7 +663,10 @@ generate_all_qrg(dwc_list, languages)
 # Establishment Means Vocabulary
 em = dwcterms.DwcTerms(
     termLists = ['establishmentMeans'],
-    docMetadataFilePath = 'dwc_doc_em/')
+    docMetadataFilePath = 'dwc_doc_em/',
+    rsPath = local_path_to_rs,
+    githubBranch = github_branch,
+    githubUser = github_user)
 em_list = TermList(
     terms = em,
     vocabType = 2,
@@ -648,7 +683,10 @@ generate_all_markdown(em_list, 'em', languages)
 # Degree of Establishment Vocabulary
 doe = dwcterms.DwcTerms(
     termLists = ['degreeOfEstablishment'],
-    docMetadataFilePath = 'dwc_doc_doe/')
+    docMetadataFilePath = 'dwc_doc_doe/',
+    rsPath = local_path_to_rs,
+    githubBranch = github_branch,
+    githubUser = github_user)
 doe_list = TermList(
     terms = doe,
     vocabType = 2,
@@ -665,7 +703,10 @@ generate_all_markdown(doe_list, 'doe', languages)
 # Pathway Vocabulary
 pw = dwcterms.DwcTerms(
     termLists = ['pathway'],
-    docMetadataFilePath = 'dwc_doc_pw/')
+    docMetadataFilePath = 'dwc_doc_pw/',
+    rsPath = local_path_to_rs,
+    githubBranch = github_branch,
+    githubUser = github_user)
 pw_list = TermList(
     terms = pw,
     vocabType = 3,
