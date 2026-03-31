@@ -117,7 +117,7 @@ To avoid conflicts, **edits to translations should only be made in Crowdin**.
 
 Translations of term data (labels, definitions, examples, comments) are retrieved from the [rs.tdwg.org repository](https://github.com/tdwg/rs.tdwg.org), see [rs.tdwg.org/TRANSLATIONS.md](https://github.com/tdwg/rs.tdwg.org/blob/master/TRANSLATIONS.md) for details on that process.
 
-Translations of the rest of the Darwin Core website (guides, prose sections, navigation menu etc) is managed here.  [crowdin.yml](crowdin.yml) configures files required for translation, and as content is translated Crowdin will create pull requests.  The only manual edits required are for building a new language (configured at the top of [build/build-termlist.py](build/build-termlist.py) and, once the translation is ready, adding it to the end of the [navigation menu](docs/_data/navigation.json).
+Translations of the rest of the Darwin Core website (guides, prose sections, navigation menu etc) is managed here.  [crowdin.yml](crowdin.yml) configures files required for translation, and as content is translated Crowdin will create pull requests.  The only manual edits required are for building a new language (configured at the top of [build/build-webpages.py](build/build-webpages.py) and, once the translation is ready, adding it to the end of the [navigation menu](docs/_data/navigation.json).
 
 GitHub Actions are configured to rebuild the website automatically as translations are created and updated.  Changes are automatically deployed to https://dwc-translation-preview.tdwg.org/, when the pull request is approved they will appear on https://dwc.tdwg.org/.  (Note if the navigation menu hasn't been translated it will be necessary to edit the URL to get to each page.)
 
