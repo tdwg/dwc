@@ -36,6 +36,12 @@ else:
     print('Must specify name of directory containing document_configuration.yaml using --dir option')
     exit()
 
+# "tdwg" for production, some other username if using a fork
+if '--ghuser' in opts:
+    github_user = args[opts.index('--ghuser')]
+else:
+    github_user = 'tdwg'
+
 # "master" for production, something else for development
 if '--branch' in opts:
     github_branch = args[opts.index('--branch')]
@@ -47,7 +53,7 @@ else:
 # Configuration section
 # -----------------
 
-githubBaseUri = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/' + github_branch + '/'
+githubBaseUri = 'https://raw.githubusercontent.com/' + github_user + '/rs.tdwg.org/' + github_branch + '/'
 
 config_file_path = 'process/document_metadata_processing/' + directory_name + '/'
 document_configuration_yaml_file = 'document_configuration.yaml'

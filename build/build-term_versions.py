@@ -15,6 +15,11 @@ if '--branch' in opts:
 else:
     github_branch = 'master'
 
+if '--ghuser' in opts:
+    github_user = args[opts.index('--ghuser')]
+else:
+    github_user = 'tdwg'
+
 # This is the base URL for raw files from the branch of the repo that has been pushed to GitHub
 if '--rs-path' in opts:
     # Optionally, use a local copy of rs.tdwg.org, useful during development.
@@ -24,7 +29,7 @@ if '--rs-path' in opts:
         githubBaseUri += '/'
     localGithub = True
 else:
-    githubBaseUri = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/' + github_branch + '/'
+    githubBaseUri = 'https://raw.githubusercontent.com/' + github_user + '/rs.tdwg.org/' + github_branch + '/'
     localGithub = False
 
 # This is a Python list of the database names of the term version lists to be included in the document.

@@ -10,6 +10,7 @@ import os
 import pandas as pd
 import yaml
 
+''' Since this is being used exclusively as a module, the mutable values are passed via arguments when the class is instantiated.
 # -----------------
 # Command line arguments
 # -----------------
@@ -35,6 +36,7 @@ if '--rs-path' in opts:
 else:
     githubBaseUri = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/' + github_branch + '/'
     localGithub = False
+'''
 
 # ---------------
 # Load header data
@@ -47,14 +49,31 @@ document_configuration_yaml_file = 'document_configuration.yaml'
 
 class DwcTerms:
 
-    def __init__(self, termLists, docMetadataFilePath):
+    def __init__(self, termLists, docMetadataFilePath, rsPath, githubBranch, githubUser):
         """
         Tables of terms.
 
         Keyword arguments:
         githubBaseUri -- GitHub URL, or local path.
         termLists -- list of database names of the term lists to be loaded
+        docMetadataFilePath -- subdirectory of document_metadata_processing for the particular 
+            document, e.g. ac_doc_termlist
+        rsPath -- local directory path from this directory to the rs.tdwg.org repo directory, 
+            e.g. '../../rs.tdwg.org/'. If None data will be retrieved from GitHub via HTTP.
+        githubBranch -- the branch at GitHub to use. 'master' for production, something else for testing.
+        githubUser -- the GitHub user account to use. 'tdwg' for production, some other account where there's a fork for testing.
         """
+
+        if rsPath is not None:
+            githubBaseUri = rsPath
+            if not githubBaseUri.endswith('/'):
+                githubBaseUri += '/'
+            localGithub = True
+        else:
+            githubBaseUri = 'https://raw.githubusercontent.com/' + githubUser + '/rs.tdwg.org/' + githubBranch + '/'
+            localGithub = False
+        self.localGithub = localGithub
+        self.githubBaseUri = githubBaseUri
 
         self.doc_metadata_file_path = docMetadataFilePath
         if not self.doc_metadata_file_path.endswith('/'):
@@ -75,8 +94,8 @@ class DwcTerms:
 
     def load_contributors(self):
         # Load the contributors YAML file from its GitHub URL
-        contributors_yaml_url = githubBaseUri + document_config_file_path + self.doc_metadata_file_path + contributors_yaml_file
-        if localGithub:
+        contributors_yaml_url = self.githubBaseUri + document_config_file_path + self.doc_metadata_file_path + contributors_yaml_file
+        if self.localGithub:
             with open(contributors_yaml_url) as file: contributors_yaml = file.read()
         else:
             contributors_yaml = requests.get(contributors_yaml_url).text
@@ -89,8 +108,8 @@ class DwcTerms:
 
     def load_document_configuration(self):
         # Load the document configuration YAML file from its GitHub URL
-        document_configuration_yaml_url = githubBaseUri + document_config_file_path + self.doc_metadata_file_path + document_configuration_yaml_file
-        if localGithub:
+        document_configuration_yaml_url = self.githubBaseUri + document_config_file_path + self.doc_metadata_file_path + document_configuration_yaml_file
+        if self.localGithub:
             with open(document_configuration_yaml_url) as file: document_configuration_yaml = file.read()
         else:
             document_configuration_yaml = requests.get(document_configuration_yaml_url).text
@@ -104,7 +123,7 @@ class DwcTerms:
         termLists = pd.DataFrame(self.termLists, columns=['database'])
 
         print('Retrieving term list metadata from GitHub')
-        frame = pd.read_csv(githubBaseUri + 'term-lists/term-lists.csv', na_filter=False)
+        frame = pd.read_csv(self.githubBaseUri + 'term-lists/term-lists.csv', na_filter=False)
 
         frame = frame.rename(columns={'vann_preferredNamespacePrefix': 'pref_ns_prefix',
                                       'vann_preferredNamespaceUri': 'pref_ns_uri',
@@ -125,7 +144,7 @@ class DwcTerms:
         print('Retrieving metadata about terms from all namespaces from GitHub')
         for i, term_list in self.term_lists_info.iterrows():
             # retrieve current term metadata for term list
-            metadata_url = githubBaseUri + term_list['database'] + '/' + term_list['database'] + '.csv'
+            metadata_url = self.githubBaseUri + term_list['database'] + '/' + term_list['database'] + '.csv'
             print("Reading metadata", metadata_url)
             metadata_df = pd.read_csv(metadata_url, keep_default_na=False)
             #print('metadata_df', metadata_df)
@@ -136,7 +155,7 @@ class DwcTerms:
             metadata_df = metadata_df.rename(columns={'type': 'rdf_type'})
 
             # retrieve versions metadata for term list
-            versions_url = githubBaseUri + term_list['database'] + '-versions/' + term_list['database'] + '-versions.csv'
+            versions_url = self.githubBaseUri + term_list['database'] + '-versions/' + term_list['database'] + '-versions.csv'
             print("Reading versions", versions_url)
             versions_df = pd.read_csv(versions_url, na_filter=False)
             versions_df = versions_df.query('version_status == "recommended"')
@@ -153,7 +172,7 @@ class DwcTerms:
                                    how='left')
 
             # retrieve translated term metadata for term list
-            translations_url = githubBaseUri + term_list['database'] + '/' + term_list['database'] + '-translations.csv'
+            translations_url = self.githubBaseUri + term_list['database'] + '/' + term_list['database'] + '-translations.csv'
             print("Reading translated metadata", translations_url)
             try:
                 translations_df = pd.read_csv(translations_url, keep_default_na=False)

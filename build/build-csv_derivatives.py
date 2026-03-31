@@ -4,11 +4,39 @@
 
 import pandas as pd
 import dwcterms
+import sys
+
+# -----------------
+# Command line arguments
+# -----------------
+
+arg_vals = sys.argv[1:]
+opts = [opt for opt in arg_vals if opt.startswith('-')]
+args = [arg for arg in arg_vals if not arg.startswith('-')]
+
+# "master" for production, something else for development
+if '--branch' in opts:
+    github_branch = args[opts.index('--branch')]
+else:
+    github_branch = 'master'
+
+if '--ghuser' in opts:
+    github_user = args[opts.index('--ghuser')]
+else:
+    github_user = 'tdwg'
+
+if '--rspath' in opts:
+    local_path_to_rs = args[opts.index('--rspath')]
+else:
+    local_path_to_rs = None
 
 # Darwin Core
 dwc = dwcterms.DwcTerms(
     termLists = ['terms', 'iri', 'dc-for-dwc', 'dcterms-for-dwc', 'ac-for-dwc'],
-    docMetadataFilePath = 'dwc_doc_list/')
+    docMetadataFilePath = 'dwc_doc_list/',
+    rsPath = local_path_to_rs,
+    githubBranch = github_branch,
+    githubUser = github_user)
 
 # Use QRG list for term ordering
 qrg_df = pd.read_csv('qrg-template/qrg-list.csv', na_filter=False)
