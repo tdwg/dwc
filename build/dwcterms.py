@@ -10,34 +10,6 @@ import os
 import pandas as pd
 import yaml
 
-''' Since this is being used exclusively as a module, the mutable values are passed via arguments when the class is instantiated.
-# -----------------
-# Command line arguments
-# -----------------
-
-arg_vals = sys.argv[1:]
-opts = [opt for opt in arg_vals if opt.startswith('-')]
-args = [arg for arg in arg_vals if not arg.startswith('-')]
-
-# "master" for production, something else for development
-if '--branch' in opts:
-    github_branch = args[opts.index('--branch')]
-else:
-    github_branch = 'master'
-
-# This is the base URL for raw files from the branch of the repo that has been pushed to GitHub
-if '--rs-path' in opts:
-    # Optionally, use a local copy of rs.tdwg.org, useful during development.
-    # e.g. '../../rs.tdwg.org/'
-    githubBaseUri = args[opts.index('--rs-path')]
-    if not githubBaseUri.endswith('/'):
-        githubBaseUri += '/'
-    localGithub = True
-else:
-    githubBaseUri = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/' + github_branch + '/'
-    localGithub = False
-'''
-
 # ---------------
 # Load header data
 # ---------------
@@ -49,16 +21,16 @@ document_configuration_yaml_file = 'document_configuration.yaml'
 
 class DwcTerms:
 
-    def __init__(self, termLists, docMetadataFilePath, rsPath, githubBranch, githubUser):
+    def __init__(self, termLists, docMetadataFilePath, rsPath, githubBranch = 'master', githubUser = 'tdwg'):
         """
         Tables of terms.
 
         Keyword arguments:
         githubBaseUri -- GitHub URL, or local path.
         termLists -- list of database names of the term lists to be loaded
-        docMetadataFilePath -- subdirectory of document_metadata_processing for the particular 
+        docMetadataFilePath -- subdirectory of document_metadata_processing for the particular
             document, e.g. ac_doc_termlist
-        rsPath -- local directory path from this directory to the rs.tdwg.org repo directory, 
+        rsPath -- local directory path from this directory to the rs.tdwg.org repo directory,
             e.g. '../../rs.tdwg.org/'. If None data will be retrieved from GitHub via HTTP.
         githubBranch -- the branch at GitHub to use. 'master' for production, something else for testing.
         githubUser -- the GitHub user account to use. 'tdwg' for production, some other account where there's a fork for testing.
