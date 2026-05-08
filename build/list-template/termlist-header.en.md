@@ -58,6 +58,7 @@ The following namespace abbreviations are used in this document:
 
 | abbreviation | IRI |
 | --- | --- |
+| ac: | http://rs.tdwg.org/ac/terms/ |
 | dwc: | http://rs.tdwg.org/dwc/terms/ |
 | dwciri: | http://rs.tdwg.org/dwc/iri/ |
 | dc: | http://purl.org/dc/elements/1.1/ |
