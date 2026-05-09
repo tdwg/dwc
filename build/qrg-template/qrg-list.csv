@@ -126,6 +126,7 @@ http://rs.tdwg.org/dwc/terms/Identification
 http://rs.tdwg.org/dwc/terms/identificationID
 http://rs.tdwg.org/dwc/terms/identificationType
 http://rs.tdwg.org/dwc/terms/isAcceptedIdentification
+http://rs.tdwg.org/dwc/terms/taxonFormula
 http://rs.tdwg.org/dwc/terms/verbatimIdentification
 http://rs.tdwg.org/dwc/terms/identificationQualifier
 http://rs.tdwg.org/dwc/terms/typeStatus
@@ -133,11 +134,9 @@ http://rs.tdwg.org/dwc/terms/typifiedName
 http://rs.tdwg.org/dwc/terms/identifiedBy
 http://rs.tdwg.org/dwc/terms/identifiedByID
 http://rs.tdwg.org/dwc/terms/dateIdentified
-http://rs.tdwg.org/dwc/terms/identificationProtocolID
 http://rs.tdwg.org/dwc/terms/identificationReferences
 http://rs.tdwg.org/dwc/terms/identificationVerificationStatus
 http://rs.tdwg.org/dwc/terms/identificationRemarks
-http://rs.tdwg.org/dwc/terms/taxonFormula	
 http://rs.tdwg.org/dwc/terms/Occurrence
 http://rs.tdwg.org/dwc/terms/occurrenceID
 http://rs.tdwg.org/dwc/terms/catalogNumber
@@ -224,7 +223,6 @@ http://rs.tdwg.org/dwc/terms/agentRoleOrder
 http://rs.tdwg.org/dwc/terms/agentRemarks
 http://rs.tdwg.org/dwc/terms/Assertion
 http://rs.tdwg.org/dwc/terms/assertionID
-http://rs.tdwg.org/dwc/terms/assertion
 http://rs.tdwg.org/dwc/terms/assertionType
 http://rs.tdwg.org/dwc/terms/verbatimAssertionType
 http://rs.tdwg.org/dwc/terms/assertionMadeDate
@@ -233,7 +231,6 @@ http://rs.tdwg.org/dwc/terms/assertionValue
 http://rs.tdwg.org/dwc/terms/assertionUnit
 http://rs.tdwg.org/dwc/terms/assertionError
 http://rs.tdwg.org/dwc/terms/assertionBy
-http://rs.tdwg.org/dwc/terms/assertionByID
 http://rs.tdwg.org/dwc/terms/assertionProtocols
 http://rs.tdwg.org/dwc/terms/assertionReferences
 http://rs.tdwg.org/dwc/terms/assertionRemarks
