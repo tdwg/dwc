@@ -529,6 +529,19 @@ class TermList:
 
         qrg_df = pd.read_csv('qrg-template/qrg-list.csv', na_filter=False)
 
+        # --- DIAGNOSTIC CHECK for QRG terms not in terms list ---
+        available = set(self.terms.terms_sorted_by_localname['term_iri'])
+        requested = set(qrg_df['recommended_term_iri'])
+        
+        missing = sorted(requested - available)
+        
+        if missing:
+            print("Missing recommended_term_iri values:")
+            for iri in missing:
+                print(iri)
+            raise SystemExit("QRG term list contains IRIs not found in loaded term metadata.")
+        # --- END DIAGNOSTIC CHECK ---
+
         addedUseWithIRI = False
         for term_index,term in qrg_df.iterrows(): # sequence of the terms used as order
             term_data = self.get_term_definition(locale, term['recommended_term_iri'])
