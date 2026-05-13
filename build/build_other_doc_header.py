@@ -40,13 +40,25 @@ if '--branch' in opts:
 else:
     github_branch = 'master'
 
+# "tdwg" for production, some other username if using a fork
+if '--ghuser' in opts:
+    github_user = args[opts.index('--ghuser')]
+else:
+    github_user = 'tdwg'
+
 
 # -----------------
 # Configuration section
 # -----------------
 
 # This is the base URL for raw files from the branch of the repo that has been pushed to GitHub
-github_base_url = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/' + github_branch + '/'
+github_base_url = (
+    'https://raw.githubusercontent.com/'
+    + github_user
+    + '/rs.tdwg.org/'
+    + github_branch
+    + '/'
+)
 
 document_template_name = 'index_template.md' # This is the input file into which the header metadata will be inserted.
 out_filename = '../docs/' + document_slug + '/index.md' # This is where the document rendered by GitHub Pages will be created.
@@ -102,7 +114,7 @@ header = header.replace('{year}', year)
 # Determine whether there was a previous version of the document.
 if document_configuration_yaml['doc_created'] != document_configuration_yaml['doc_modified']:
     # Load versions list from document versions data in the rs.tdwg.org repo and find most recent version.
-    versions_data_url = github_base_url + 'docs/docs-versions.csv'
+    versions_data_url = github_base_url + 'docs-versions/docs-versions.csv'
     versions_list_df = pd.read_csv(versions_data_url, na_filter=False)
     # Slice all rows for versions of this document.
     matching_versions = versions_list_df[versions_list_df['current_iri']==document_configuration_yaml['current_iri']]
