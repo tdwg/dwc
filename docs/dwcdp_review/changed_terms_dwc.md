@@ -1,7 +1,7 @@
-# Changed terms report
+# Darwin Core changed terms report
 
-New file: `../docs/list/index.md`
-Old file: `../docs/list/2025-07-10.md`
+New file: `dwc/docs/list/index.md`
+Old file: `dwc/docs/list/2025-07-10.md`
 
 Changed rows: 609
 

@@ -1,4 +1,4 @@
-| number | title | state | labels | url |
+| issue | title | state | labels | url |
 |---:|---|---|---|---|
 | #822 | Single issue for two errata: "e.g. " to "e.g., " | OPEN | Class - Taxon; Process - prepare for Executive review; non-normative; DwC-DP Public Review | https://github.com/tdwg/dwc/issues/822 |
 | #820 | Typo: Schenzhen -> Shenzhen | OPEN | Class - Taxon; Process - prepare for Executive review; non-normative; DwC-DP Public Review | https://github.com/tdwg/dwc/issues/820 |

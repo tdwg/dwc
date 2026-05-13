@@ -1,7 +1,7 @@
-# Changed terms report
+# Eco changed terms report
 
-New file: `/Users/johnwieczorek/Projects/hc/docs/list/index.md`
-Old file: `/Users/johnwieczorek/Projects/hc/docs/list/2025-07-10.md`
+New file: `/hc/docs/list/index.md`
+Old file: `/hc/docs/list/2025-07-10.md`
 
 Changed rows: 12
 

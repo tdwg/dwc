@@ -1,7 +1,7 @@
-# Changed terms report
+# Chronometric Age changed terms report
 
-New file: `/Users/johnwieczorek/Projects/chrono/docs/list/index.md`
-Old file: `/Users/johnwieczorek/Projects/chrono/docs/list/2025-07-10.md`
+New file: `/chrono/docs/list/index.md`
+Old file: `/chrono/docs/list/2025-07-10.md`
 
 Changed rows: 33
 
