@@ -30,7 +30,11 @@ ROW_RE = re.compile(r"<tr\b[^>]*>(.*?)</tr>", re.IGNORECASE | re.DOTALL)
 CELL_RE = re.compile(r"<td\b[^>]*>(.*?)</td>", re.IGNORECASE | re.DOTALL)
 TAG_RE = re.compile(r"<[^>]+>")
 WHITESPACE_RE = re.compile(r"\s+")
-
+EXCLUDED_METADATA_ELEMENTS = {
+    "executive committee decision",
+    "modified",
+    "term version iri",
+}
 
 def html_cell_to_text(value: str) -> str:
     """Convert a simple HTML table cell to plain text for comparison/reporting."""
@@ -102,13 +106,22 @@ def compare_terms(new_terms: TermMap, old_terms: TermMap) -> List[Tuple[str, str
 
         new_metadata = new_terms[term_name]
         old_metadata = old_terms[term_name]
-        all_metadata_elements = sorted(set(new_metadata) | set(old_metadata), key=str.casefold)
+        all_metadata_elements = sorted(
+            set(new_metadata) | set(old_metadata),
+            key=str.casefold
+        )
 
         for element in all_metadata_elements:
+            if canonicalize(element).casefold() in EXCLUDED_METADATA_ELEMENTS:
+                continue
+
             new_value = new_metadata.get(element, "")
             old_value = old_metadata.get(element, "")
+
             if canonicalize(new_value) != canonicalize(old_value):
                 rows.append((term_name, element, new_value, old_value))
+
+    rows.sort(key=lambda r: (r[0].casefold(), r[1].casefold()))
 
     return rows
 
