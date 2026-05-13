@@ -1,36 +1,34 @@
-# {document_title}
+# Darwin Core conceptual model
 
 Title
-: {document_title}
+: Darwin Core conceptual model
 
 Date version issued
-: {ratification_date}
+: 2026-04-17
 
 Date created
-: {created_date}
+: 2026-04-17
 
 Part of TDWG Standard
-: <{standard_iri}>
+: <http://www.tdwg.org/standards/450>
 
 This version
-: <{current_iri}{ratification_date}>
+: <http://rs.tdwg.org/dwc/doc/cm/2026-04-17>
 
 Latest version
-: <{current_iri}>
-
-{previous_version_slot}
+: <http://rs.tdwg.org/dwc/doc/cm/>
 
 Abstract
-: {abstract}
+: Guidelines for the semantics of relationships between Darwin Core classes.
 
 Contributors
-: {contributors}
+: [John Wieczorek](https://orcid.org/0000-0003-1144-0290) ([Rauthiflor LLC, Global Biodiversity Information Facility](http://www.wikidata.org/entity/Q1531570)), [Tim Robertson](https://orcid.org/0000-0001-6215-3617) ([Global Biodiversity Information Facility](http://www.wikidata.org/entity/Q1531570)), [Paula Zermoglio](https://orcid.org/0000-0002-6056-5084) ([Instituto de Investigaciones en Recursos Naturales, Agroecología y Desarrollo Rural (IRNAD, CONICET - Universidad Nacional de Río Negro)](https://www.wikidata.org/wiki/Q6978293)), [Cecilie Svenningsen](https://orcid.org/0000-0002-9216-2917) ([Global Biodiversity Information Facility](http://www.wikidata.org/entity/Q1531570)), [Kate Ingenloff](https://orcid.org/0000-0001-5942-9053) ([Global Biodiversity Information Facility](http://www.wikidata.org/entity/Q1531570)), [Markus Döring](https://orcid.org/0000-0001-7757-1889) ([Global Biodiversity Information Facility](http://www.wikidata.org/entity/Q1531570)), [Peter Desmet](https://orcid.org/0000-0002-8442-8025) ([Instituut voor Natuur- en Bosonderzoek (INBO)](http://www.wikidata.org/entity/Q7315097)), [Tobias Guldberg Frøslev](https://orcid.org/0000-0002-3530-013X) ([Global Biodiversity Information Facility](http://www.wikidata.org/entity/Q1531570))
 
 Creator
-: {creator}
+: Darwin Core Maintenance Group
 
 Bibliographic citation
-: {creator}. {year}. {document_title}. {publisher}. <{current_iri}{ratification_date}>
+: Darwin Core Maintenance Group. 2026. Darwin Core conceptual model. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/cm/2026-04-17>
 
 ## 1 Introduction
 
