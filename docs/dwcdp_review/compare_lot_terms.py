@@ -5,6 +5,9 @@ The script parses the HTML term metadata tables in Section 4 of each file,
 compares metadata values by term name and metadata element, and writes a
 markdown report containing only changed values.
 
+For changed values, text added in the new file is bolded in the new_value
+column and text removed from the old file is bolded in the old_value column.
+
 Usage:
     python compare_lot_terms.py --new index.md --old 2025-07-10.md
     python compare_lot_terms.py --new index.md --old 2025-07-10.md --out changes.md
@@ -13,11 +16,12 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import difflib
 import html
 import re
 import sys
 from pathlib import Path
-from typing import Dict, List, Tuple
+from typing import Dict, Iterable, List, Tuple
 
 TermMap = Dict[str, Dict[str, str]]
 
@@ -28,18 +32,54 @@ TERM_HEADING_RE = re.compile(
 )
 ROW_RE = re.compile(r"<tr\b[^>]*>(.*?)</tr>", re.IGNORECASE | re.DOTALL)
 CELL_RE = re.compile(r"<td\b[^>]*>(.*?)</td>", re.IGNORECASE | re.DOTALL)
+LI_RE = re.compile(r"<li\b[^>]*>(.*?)</li>", re.IGNORECASE | re.DOTALL)
+CODE_RE = re.compile(r"<code\b[^>]*>(.*?)</code>", re.IGNORECASE | re.DOTALL)
 TAG_RE = re.compile(r"<[^>]+>")
 WHITESPACE_RE = re.compile(r"\s+")
+TOKEN_RE = re.compile(r"`[^`]*`|\s+|;|[^;\s`]+", re.UNICODE)
+
 EXCLUDED_METADATA_ELEMENTS = {
     "executive committee decision",
     "modified",
     "term version iri",
 }
 
+
+def strip_tags(value: str) -> str:
+    """Remove HTML tags and normalize HTML entities, preserving text content."""
+    value = re.sub(r"<br\s*/?>", "\n", value, flags=re.IGNORECASE)
+    value = TAG_RE.sub("", value)
+    value = html.unescape(value)
+    return WHITESPACE_RE.sub(" ", value).strip()
+
+
+def code_to_backticks(value: str) -> str:
+    """Convert HTML code spans to markdown code spans before stripping tags."""
+    def repl(match: re.Match[str]) -> str:
+        code_text = strip_tags(match.group(1))
+        # Use double backticks if the code text itself contains a backtick.
+        if "`" in code_text:
+            return f"`` {code_text} ``"
+        return f"`{code_text}`"
+
+    return CODE_RE.sub(repl, value)
+
+
 def html_cell_to_text(value: str) -> str:
-    """Convert a simple HTML table cell to plain text for comparison/reporting."""
-    # For generated List of Terms tables, link text duplicates href text. Keeping
-    # the rendered text gives stable comparisons without embedding HTML in output.
+    """Convert a generated List of Terms HTML table cell to report text.
+
+    In particular, Examples cells may be rendered either as a single sequence of
+    <code>...</code> spans or as a <ul><li>...</li></ul>. This function converts
+    code spans to markdown backticks and separates list items with semicolons.
+    """
+    value = value.strip()
+
+    list_items = LI_RE.findall(value)
+    if list_items:
+        parts = [strip_tags(code_to_backticks(item)) for item in list_items]
+        return "; ".join(part for part in parts if part)
+
+    value = code_to_backticks(value)
     value = re.sub(r"<br\s*/?>", "\n", value, flags=re.IGNORECASE)
     value = TAG_RE.sub("", value)
     value = html.unescape(value)
@@ -50,6 +90,11 @@ def html_cell_to_text(value: str) -> str:
 def canonicalize(value: str) -> str:
     """Normalize insignificant whitespace before comparison."""
     return WHITESPACE_RE.sub(" ", value).strip()
+
+
+def canonical_metadata_element(value: str) -> str:
+    """Normalize metadata element names for filtering."""
+    return canonicalize(value).casefold()
 
 
 def parse_terms(markdown_text: str) -> TermMap:
@@ -73,7 +118,13 @@ def parse_terms(markdown_text: str) -> TermMap:
                 continue
             key = html_cell_to_text(cells[0])
             value = html_cell_to_text(cells[1])
-            if key:
+            if not key:
+                continue
+            if canonical_metadata_element(key) in EXCLUDED_METADATA_ELEMENTS:
+                continue
+            if key in metadata and value:
+                metadata[key] = f"{metadata[key]}; {value}"
+            else:
                 metadata[key] = value
 
         terms[term_name] = metadata
@@ -81,8 +132,76 @@ def parse_terms(markdown_text: str) -> TermMap:
     return terms
 
 
+def tokenize_for_diff(value: str) -> List[str]:
+    """Tokenize text while preserving whitespace and punctuation for reconstruction."""
+    return TOKEN_RE.findall(value)
+
+
+def bold_tokens(tokens: Iterable[str]) -> str:
+    """Bold a token sequence unless it is empty or only whitespace.
+
+    Markdown code spans are tokenized atomically by TOKEN_RE, so bold markers
+    are placed outside complete code spans rather than inside the backtick pair.
+    If the changed sequence ends with a list separator, keep that separator
+    outside the bolded text so Examples render naturally, e.g.
+
+    **`a`; `b`**; `c`
+    """
+    text = "".join(tokens)
+    if not text or text.isspace():
+        return text
+
+    leading = text[: len(text) - len(text.lstrip())]
+    trailing = text[len(text.rstrip()) :]
+    core = text.strip()
+
+    if not core:
+        return text
+
+    separator_suffix = ""
+    separator_match = re.search(r"(\s*;\s*)$", core)
+    if separator_match:
+        separator_suffix = separator_match.group(1)
+        core = core[: separator_match.start()].rstrip()
+
+    if not core:
+        return text
+
+    return f"{leading}**{core}**{separator_suffix}{trailing}"
+
+def mark_changed_parts(new_value: str, old_value: str) -> Tuple[str, str]:
+    """Bold additions in new_value and removals in old_value."""
+    new_tokens = tokenize_for_diff(new_value)
+    old_tokens = tokenize_for_diff(old_value)
+    matcher = difflib.SequenceMatcher(a=old_tokens, b=new_tokens, autojunk=False)
+
+    marked_old: List[str] = []
+    marked_new: List[str] = []
+
+    for tag, i1, i2, j1, j2 in matcher.get_opcodes():
+        old_part = old_tokens[i1:i2]
+        new_part = new_tokens[j1:j2]
+
+        if tag == "equal":
+            marked_old.extend(old_part)
+            marked_new.extend(new_part)
+        elif tag == "delete":
+            marked_old.append(bold_tokens(old_part))
+        elif tag == "insert":
+            marked_new.append(bold_tokens(new_part))
+        elif tag == "replace":
+            marked_old.append(bold_tokens(old_part))
+            marked_new.append(bold_tokens(new_part))
+
+    return "".join(marked_new), "".join(marked_old)
+
+
 def markdown_escape(value: str) -> str:
-    """Escape content enough to keep a markdown pipe table valid."""
+    """Escape content enough to keep a markdown pipe table valid.
+
+    Asterisks are intentionally not escaped, because the report uses **bold**
+    markup to show changed segments.
+    """
     if value == "":
         return ""
     value = value.replace("\\", "\\\\")
@@ -98,31 +217,27 @@ def compare_terms(new_terms: TermMap, old_terms: TermMap) -> List[Tuple[str, str
     all_term_names = sorted(set(new_terms) | set(old_terms), key=str.casefold)
     for term_name in all_term_names:
         if term_name not in old_terms:
-            rows.append((term_name, "term_status", "added", ""))
+            rows.append((term_name, "term_status", "**added**", ""))
             continue
         if term_name not in new_terms:
-            rows.append((term_name, "term_status", "", "removed"))
+            rows.append((term_name, "term_status", "", "**removed**"))
             continue
 
         new_metadata = new_terms[term_name]
         old_metadata = old_terms[term_name]
-        all_metadata_elements = sorted(
-            set(new_metadata) | set(old_metadata),
-            key=str.casefold
-        )
+        all_metadata_elements = sorted(set(new_metadata) | set(old_metadata), key=str.casefold)
 
         for element in all_metadata_elements:
-            if canonicalize(element).casefold() in EXCLUDED_METADATA_ELEMENTS:
+            if canonical_metadata_element(element) in EXCLUDED_METADATA_ELEMENTS:
                 continue
 
             new_value = new_metadata.get(element, "")
             old_value = old_metadata.get(element, "")
-
             if canonicalize(new_value) != canonicalize(old_value):
-                rows.append((term_name, element, new_value, old_value))
+                marked_new, marked_old = mark_changed_parts(new_value, old_value)
+                rows.append((term_name, element, marked_new, marked_old))
 
     rows.sort(key=lambda r: (r[0].casefold(), r[1].casefold()))
-
     return rows
 
 
@@ -142,9 +257,7 @@ def write_report(rows: List[Tuple[str, str, str, str]], output_path: Path, new_p
     for term_name, element, new_value, old_value in rows:
         lines.append(
             "| "
-            + " | ".join(
-                markdown_escape(x) for x in (term_name, element, new_value, old_value)
-            )
+            + " | ".join(markdown_escape(x) for x in (term_name, element, new_value, old_value))
             + " |"
         )
 
