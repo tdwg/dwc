@@ -86,7 +86,7 @@ Throughout the diagrams in this document, classes are referred to with the label
 
 Figure 1 provides an overview of the DwC-CM. To avoid clutter, the nature of the relationships (directionality, cardinality and predicates) are omitted. This diagram also omits the vast number of possible relationships between the classes *Agent*, *Media Entity*, and *Protocol* to all of the other classes in the model. Relationships are described in detail in the thematic sections that follow the Overview. 
 
-<img src="{{ 'dwc-cm.png' | relative_url }}" alt="Darwin Core Conceptual Model"
+<img src="dwc-cm.png" alt="Darwin Core Conceptual Model"
      style="max-width:100%;height:auto;width:100%;">
 
 **Figure 1.** An overview of the Darwin Core Conceptual Model. Boxes represent classes and lines represent relationships between classes.
@@ -95,7 +95,7 @@ Figure 1 provides an overview of the DwC-CM. To avoid clutter, the nature of the
 
 In Darwin Core, an *Event* is an action, a process, or a set of circumstances occurring at some place during some interval of time. Figure 2 illustrates the basic types of *Events* in the DwC-CM. 
 
-<img src="{{ 'event.png' | relative_url }}" alt="Event Conceptual Model"
+<img src="event.png" alt="Event Conceptual Model"
      style="max-width:100%;height:auto;width:65%;">
 
 **Figure 2.** Details of the fundamental relationships of *Events*, of which there are four basic types – *Occurrences*, *Organism Interactions*, *Surveys*, and generic *Events*. Material gathering is considered here as a generic *Event*.
@@ -128,7 +128,7 @@ Depending on the intended use of *Event* data, it may simplify data sharing mode
 
 In Darwin Core, a *Survey* refers to an *Event* that is a biotic survey or inventory, which, with sufficiently detailed information, can support not only evidence of presence of *Organisms* but also absences of detection and estimations of abundance. Figure 3 illustrates the part of the DwC-CM most closely related to *Surveys*. 
 
-<img src="{{ 'survey.png' | relative_url }}" alt="Survey Conceptual Model"
+<img src="survey.png" alt="Survey Conceptual Model"
      style="max-width:100%;height:auto;width:65%;">
 
 **Figure 3.** Details of the fundamental relationships associated with *Surveys*.
@@ -161,7 +161,7 @@ An *Organism* is defined in Darwin Core as "A particular organism or defined gro
 
 Figure 4 illustrates how the DwC-CM relates *Occurrence*, *Organism*, and *Organism Interaction*.
 
-<img src="{{ 'occurrence-organism.png' | relative_url }}" alt="Occurrence Conceptual Model"
+<img src="occurrence-organism.png" alt="Occurrence Conceptual Model"
      style="max-width:100%;height:auto;width:60%;">
 
 **Figure 4.** Details of the fundamental relationships relating *Occurrence* and *Organism*.
@@ -194,7 +194,7 @@ Depending on the intended use of *Occurrence* and *Organism* data, it may simpli
 
 In Darwin Core, a *Material Entity* is defined as "An entity that can be identified, exists for some period of time, and consists in whole or in part of physical matter while it exists." The DwC-CM provides a framework for representing the relationships between *Material Entities* and other classes that provide the contexts in which they are found and used, as shown in Figure 5.
 
-<img src="{{ 'material.png' | relative_url }}" alt="Material Entity Conceptual Model"
+<img src="material.png" alt="Material Entity Conceptual Model"
      style="max-width:100%;height:auto;width:100%;">
 
 **Figure 5.** Details of the fundamental relationships of specimens and material samples expressed as *Material Entities*.
@@ -221,7 +221,7 @@ In DwC-CM, the Darwin Core *Material Sample* class is omitted in favor of *Mater
 
 In Darwin Core, an *Identification* is defined as "A classification of a resource according to a classification scheme." For Organisms, this means, "A taxonomic determination (i.e., the assignment of a dwc:Taxon to a dwc:Organism)". Figure 6 illustrates how DwC-CM relates *Identification* to other classes.
 
-<img src="{{ 'identification.png' | relative_url }}" alt="Identification Conceptual Model"
+<img src="identification.png" alt="Identification Conceptual Model"
      style="max-width:100%;height:auto;width:90%;">
 
 **Figure 6.** Details of the fundamental relationships between *Identification* and other classes.
@@ -262,7 +262,7 @@ The DwC-CM provides a framework for representing *Nucleotide Analyses*, accommod
 
 These cases are represented within the model as depicted in Figure 7.
 
-<img src="{{ 'nucleotide.png' | relative_url }}" alt="Nucleotide Conceptual Model"
+<img src="nucleotide.png" alt="Nucleotide Conceptual Model"
      style="max-width:100%;height:auto;width:100%;">
 
 **Figure 7.** Details of the fundamental relationships associated with *Nucleotide Analyses*.
@@ -306,7 +306,7 @@ A person, group, organization, machine, software or other entity that can act. M
 
 *Agents* have the capacity to act in relation to any other class as well as to be related to each other. Figure 8 shows a few examples that illustrate the ways in which *Agents* can be related to other classes in the DwC-CM. 
 
-<img src="{{ 'agent.png' | relative_url }}" alt="Agent Conceptual Model"
+<img src="agent.png" alt="Agent Conceptual Model"
      style="max-width:100%;height:auto;width:65%;">
 
 **Figure 8.** Details of the ways in which *Agents* can be related to other classes. The labels on the relationships all represent well-established *Agent* relationships, but constitute only a few of the many relationships one might want to establish.
@@ -333,7 +333,7 @@ In addition to direct relationships through properties of classes as described i
 
 In Darwin Core, *Media Entities* are things that are recorded (e.g, instances of the Dublin Core type vocabulary terms *Still Image*, *Moving Image*, *Sound*, and *Text*). The DwC-CM provides a framework for representing the relationships of *Media Entities* to other classes as shown in Figure 9.
 
-<img src="{{ 'media.png' | relative_url }}" alt="Media Conceptual Model"
+<img src="media.png" alt="Media Conceptual Model"
      style="max-width:100%;height:auto;width:60%;">
 
 **Figure 9.** Details of the fundamental relationships associated with *Media Entity*.
