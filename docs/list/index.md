@@ -4,7 +4,7 @@ Title
 : Darwin Core List of Terms
 
 Date version issued
-: 2025-07-10
+: 2026-04-07
 
 Date created
 : 2020-08-12
@@ -13,13 +13,13 @@ Part of TDWG Standard
 : <http://www.tdwg.org/standards/450>
 
 This version
-: <http://rs.tdwg.org/dwc/doc/list/2025-07-10>
+: <http://rs.tdwg.org/dwc/doc/list/2026-04-07>
 
 Latest version
 : <http://rs.tdwg.org/dwc/doc/list/>
 
 Previous version
-: <http://rs.tdwg.org/dwc/doc/list/2025-06-12>
+: <http://rs.tdwg.org/dwc/doc/list/2025-07-10>
 
 Abstract
 : Darwin Core is a vocabulary standard for transmitting information about biodiversity. This document lists all terms in namespaces currently used in the vocabulary.
@@ -31,12 +31,12 @@ Creator
 : Darwin Core Maintenance Group
 
 Bibliographic citation
-: Darwin Core Maintenance Group. 2025. Darwin Core List of Terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/list/2025-07-10>
+: Darwin Core Maintenance Group. 2026. Darwin Core List of Terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/list/2026-04-07>
 
 
 ## 1 Introduction (Informative)
 
-This document contains terms that are part of the most recent version of the Darwin Core vocabulary (<http://rs.tdwg.org/version/dwc/2025-07-10>).
+This document contains terms that are part of the most recent version of the Darwin Core vocabulary (<http://rs.tdwg.org/version/dwc/2026-04-07>).
 
 This document includes terms in four namespaces that contain recommended terms: `dwc:`, `dwciri:`, `dc:`, and `dcterms:`. However, some terms in these namespaces are deprecated or superseded and should no longer be used. Deprecation or supersession is noted in the term metadata. Namespaces that contain only deprecated terms are not included in this document, but metadata about those terms can be retrieved by dereferencing their IRIs.
 
@@ -59,6 +59,7 @@ The following namespace abbreviations are used in this document:
 
 | abbreviation | IRI |
 | --- | --- |
+| ac: | http://rs.tdwg.org/ac/terms/ |
 | dwc: | http://rs.tdwg.org/dwc/terms/ |
 | dwciri: | http://rs.tdwg.org/dwc/iri/ |
 | dc: | http://purl.org/dc/elements/1.1/ |
@@ -75,6 +76,9 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 
 **Classes**
 
+[dcterms:Agent](#dcterms_Agent) |
+[dwc:Assertion](#dwc_Assertion) |
+[dcterms:BibliographicResource](#dcterms_BibliographicResource) |
 [dwc:Dataset](#dwc_Dataset) |
 [dwc:Event](#dwc_Event) |
 [dwc:EventAttribute](#dwc_EventAttribute) |
@@ -90,28 +94,36 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [dwc:MaterialEntity](#dwc_MaterialEntity) |
 [dwc:MaterialSample](#dwc_MaterialSample) |
 [dwc:MeasurementOrFact](#dwc_MeasurementOrFact) |
+[ac:Media](#ac_Media) |
+[dwc:MolecularProtocol](#dwc_MolecularProtocol) |
+[dwc:NucleotideAnalysis](#dwc_NucleotideAnalysis) |
+[dwc:NucleotideSequence](#dwc_NucleotideSequence) |
 [dwc:Occurrence](#dwc_Occurrence) |
 [dwc:OccurrenceMeasurement](#dwc_OccurrenceMeasurement) |
 [dwc:Organism](#dwc_Organism) |
+[dwc:OrganismInteraction](#dwc_OrganismInteraction) |
 [dwc:PreservedSpecimen](#dwc_PreservedSpecimen) |
+[dwc:Protocol](#dwc_Protocol) |
+[dwc:Provenance](#dwc_Provenance) |
 [dwc:ResourceRelationship](#dwc_ResourceRelationship) |
 [dwc:Sample](#dwc_Sample) |
 [dwc:SampleAttribute](#dwc_SampleAttribute) |
 [dwc:SamplingEvent](#dwc_SamplingEvent) |
 [dwc:SamplingLocation](#dwc_SamplingLocation) |
-[dwc:Taxon](#dwc_Taxon)
+[dwc:Taxon](#dwc_Taxon) |
+[dwc:UsagePolicy](#dwc_UsagePolicy)
 
 **Record level**
 
 [dwc:accordingTo](#dwc_accordingTo) |
 [dwc:accuracy](#dwc_accuracy) |
+[dwc:agentRoleOrder](#dwc_agentRoleOrder) |
 [dwc:basisOfRecord](#dwc_basisOfRecord) |
 [dwc:collectionCode](#dwc_collectionCode) |
 [dwc:collectionID](#dwc_collectionID) |
 [dwc:dataGeneralizations](#dwc_dataGeneralizations) |
 [dwc:datasetID](#dwc_datasetID) |
 [dwc:datasetName](#dwc_datasetName) |
-[dwc:discipline](#dwc_discipline) |
 [dwc:DwCType](#dwc_DwCType) |
 [dwc:dynamicProperties](#dwc_dynamicProperties) |
 [dwc:feedbackURL](#dwc_feedbackURL) |
@@ -138,62 +150,32 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [dcterms:rightsHolder](#dcterms_rightsHolder) |
 [dcterms:type](#dcterms_type)
 
-**Occurrence**
+**Agent**
 
-[dwc:associatedMedia](#dwc_associatedMedia) |
-[dwc:associatedOccurrences](#dwc_associatedOccurrences) |
-[dwc:associatedReferences](#dwc_associatedReferences) |
-[dwc:associatedTaxa](#dwc_associatedTaxa) |
-[dwc:behavior](#dwc_behavior) |
-[dwc:caste](#dwc_caste) |
-[dwc:catalogNumber](#dwc_catalogNumber) |
-[dwc:CatalogNumberNumeric](#dwc_CatalogNumberNumeric) |
-[dwc:degreeOfEstablishment](#dwc_degreeOfEstablishment) |
-[dwc:establishmentMeans](#dwc_establishmentMeans) |
-[dwc:georeferenceVerificationStatus](#dwc_georeferenceVerificationStatus) |
-[dwc:individualCount](#dwc_individualCount) |
-[dwc:individualID](#dwc_individualID) |
-[dwc:lifeStage](#dwc_lifeStage) |
-[dwc:occurrenceAttributes](#dwc_occurrenceAttributes) |
-[dwc:occurrenceDetails](#dwc_occurrenceDetails) |
-[dwc:occurrenceID](#dwc_occurrenceID) |
-[dwc:occurrenceRemarks](#dwc_occurrenceRemarks) |
-[dwc:occurrenceStatus](#dwc_occurrenceStatus) |
-[dwc:organismQuantity](#dwc_organismQuantity) |
-[dwc:organismQuantityType](#dwc_organismQuantityType) |
-[dwc:otherCatalogNumbers](#dwc_otherCatalogNumbers) |
-[dwc:pathway](#dwc_pathway) |
-[dwc:recordedBy](#dwc_recordedBy) |
-[dwc:recordedByID](#dwc_recordedByID) |
-[dwc:recordNumber](#dwc_recordNumber) |
-[dwc:reproductiveCondition](#dwc_reproductiveCondition) |
-[dwc:sex](#dwc_sex) |
-[dwc:vitality](#dwc_vitality)
+[dwc:agentID](#dwc_agentID) |
+[dwc:agentRemarks](#dwc_agentRemarks) |
+[dwc:agentType](#dwc_agentType)
 
-**Organism**
+**Assertion**
 
-[dwc:associatedOrganisms](#dwc_associatedOrganisms) |
-[dwc:causeOfDeath](#dwc_causeOfDeath) |
-[dwc:organismID](#dwc_organismID) |
-[dwc:organismName](#dwc_organismName) |
-[dwc:organismRemarks](#dwc_organismRemarks) |
-[dwc:organismScope](#dwc_organismScope) |
-[dwc:previousIdentifications](#dwc_previousIdentifications)
+[dwc:assertionBy](#dwc_assertionBy) |
+[dwc:assertionEffectiveDate](#dwc_assertionEffectiveDate) |
+[dwc:assertionError](#dwc_assertionError) |
+[dwc:assertionID](#dwc_assertionID) |
+[dwc:assertionMadeDate](#dwc_assertionMadeDate) |
+[dwc:assertionProtocols](#dwc_assertionProtocols) |
+[dwc:assertionReferences](#dwc_assertionReferences) |
+[dwc:assertionRemarks](#dwc_assertionRemarks) |
+[dwc:assertionType](#dwc_assertionType) |
+[dwc:assertionUnit](#dwc_assertionUnit) |
+[dwc:assertionValue](#dwc_assertionValue) |
+[dwc:verbatimAssertionType](#dwc_verbatimAssertionType)
 
-**Material Entity**
+**Bibliographic Resource**
 
-[dwc:associatedSequences](#dwc_associatedSequences) |
-[dwc:digitalSpecimenID](#dwc_digitalSpecimenID) |
-[dwc:disposition](#dwc_disposition) |
-[dwc:materialEntityID](#dwc_materialEntityID) |
-[dwc:materialEntityRemarks](#dwc_materialEntityRemarks) |
-[dwc:materialEntityType](#dwc_materialEntityType) |
-[dwc:preparations](#dwc_preparations) |
-[dwc:verbatimLabel](#dwc_verbatimLabel)
-
-**Material Sample**
-
-[dwc:materialSampleID](#dwc_materialSampleID)
+[dwc:referenceID](#dwc_referenceID) |
+[dwc:referenceRemarks](#dwc_referenceRemarks) |
+[dwc:referenceType](#dwc_referenceType)
 
 **Event**
 
@@ -202,6 +184,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [dwc:endDayOfYear](#dwc_endDayOfYear) |
 [dwc:EndTimeOfDay](#dwc_EndTimeOfDay) |
 [dwc:eventAttributes](#dwc_eventAttributes) |
+[dwc:eventCategory](#dwc_eventCategory) |
 [dwc:eventDate](#dwc_eventDate) |
 [dwc:eventID](#dwc_eventID) |
 [dwc:eventRemarks](#dwc_eventRemarks) |
@@ -209,14 +192,12 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [dwc:eventType](#dwc_eventType) |
 [dwc:fieldNotes](#dwc_fieldNotes) |
 [dwc:fieldNumber](#dwc_fieldNumber) |
-[ac:fundingAttribution](#ac_fundingAttribution) |
-[dwc:fundingAttributionID](#dwc_fundingAttributionID) |
 [dwc:habitat](#dwc_habitat) |
 [dwc:LatestDateCollected](#dwc_LatestDateCollected) |
 [dwc:month](#dwc_month) |
 [dwc:parentEventID](#dwc_parentEventID) |
-[dwc:projectID](#dwc_projectID) |
-[dwc:projectTitle](#dwc_projectTitle) |
+[dwc:sampledSubstrateCategory](#dwc_sampledSubstrateCategory) |
+[dwc:sampledSubstrateLayer](#dwc_sampledSubstrateLayer) |
 [dwc:sampleSizeUnit](#dwc_sampleSizeUnit) |
 [dwc:sampleSizeValue](#dwc_sampleSizeValue) |
 [dwc:samplingEffort](#dwc_samplingEffort) |
@@ -225,6 +206,45 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [dwc:StartTimeOfDay](#dwc_StartTimeOfDay) |
 [dwc:verbatimEventDate](#dwc_verbatimEventDate) |
 [dwc:year](#dwc_year)
+
+**Geological Context**
+
+[dwc:bed](#dwc_bed) |
+[dwc:earliestAgeOrLowestStage](#dwc_earliestAgeOrLowestStage) |
+[dwc:earliestEonOrLowestEonothem](#dwc_earliestEonOrLowestEonothem) |
+[dwc:earliestEpochOrLowestSeries](#dwc_earliestEpochOrLowestSeries) |
+[dwc:earliestEraOrLowestErathem](#dwc_earliestEraOrLowestErathem) |
+[dwc:earliestPeriodOrLowestSystem](#dwc_earliestPeriodOrLowestSystem) |
+[dwc:formation](#dwc_formation) |
+[dwc:geologicalContextID](#dwc_geologicalContextID) |
+[dwc:group](#dwc_group) |
+[dwc:highestBiostratigraphicZone](#dwc_highestBiostratigraphicZone) |
+[dwc:latestAgeOrHighestStage](#dwc_latestAgeOrHighestStage) |
+[dwc:latestEonOrHighestEonothem](#dwc_latestEonOrHighestEonothem) |
+[dwc:latestEpochOrHighestSeries](#dwc_latestEpochOrHighestSeries) |
+[dwc:latestEraOrHighestErathem](#dwc_latestEraOrHighestErathem) |
+[dwc:latestPeriodOrHighestSystem](#dwc_latestPeriodOrHighestSystem) |
+[dwc:lithostratigraphicTerms](#dwc_lithostratigraphicTerms) |
+[dwc:lowestBiostratigraphicZone](#dwc_lowestBiostratigraphicZone) |
+[dwc:member](#dwc_member)
+
+**Identification**
+
+[dwc:dateIdentified](#dwc_dateIdentified) |
+[dwc:identificationAttributes](#dwc_identificationAttributes) |
+[dwc:identificationID](#dwc_identificationID) |
+[dwc:identificationQualifier](#dwc_identificationQualifier) |
+[dwc:identificationReferences](#dwc_identificationReferences) |
+[dwc:identificationRemarks](#dwc_identificationRemarks) |
+[dwc:identificationType](#dwc_identificationType) |
+[dwc:identificationVerificationStatus](#dwc_identificationVerificationStatus) |
+[dwc:identifiedBy](#dwc_identifiedBy) |
+[dwc:identifiedByID](#dwc_identifiedByID) |
+[dwc:isAcceptedIdentification](#dwc_isAcceptedIdentification) |
+[dwc:PreviousIdentifications](#dwc_PreviousIdentifications) |
+[dwc:taxonFormula](#dwc_taxonFormula) |
+[dwc:typeStatus](#dwc_typeStatus) |
+[dwc:verbatimIdentification](#dwc_verbatimIdentification)
 
 **Location**
 
@@ -262,8 +282,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [dwc:minimumElevationInMeters](#dwc_minimumElevationInMeters) |
 [dwc:municipality](#dwc_municipality) |
 [dwc:pointRadiusSpatialFit](#dwc_pointRadiusSpatialFit) |
+[dwc:preferredSpatialRepresentation](#dwc_preferredSpatialRepresentation) |
 [dwc:SamplingLocationID](#dwc_SamplingLocationID) |
 [dwc:SamplingLocationRemarks](#dwc_SamplingLocationRemarks) |
+[dwc:siteNumber](#dwc_siteNumber) |
 [dwc:stateProvince](#dwc_stateProvince) |
 [dwc:verbatimCoordinates](#dwc_verbatimCoordinates) |
 [dwc:verbatimCoordinateSystem](#dwc_verbatimCoordinateSystem) |
@@ -276,42 +298,133 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [dwc:verticalDatum](#dwc_verticalDatum) |
 [dwc:waterBody](#dwc_waterBody)
 
-**Geological Context**
+**Material Entity**
 
-[dwc:bed](#dwc_bed) |
-[dwc:earliestAgeOrLowestStage](#dwc_earliestAgeOrLowestStage) |
-[dwc:earliestEonOrLowestEonothem](#dwc_earliestEonOrLowestEonothem) |
-[dwc:earliestEpochOrLowestSeries](#dwc_earliestEpochOrLowestSeries) |
-[dwc:earliestEraOrLowestErathem](#dwc_earliestEraOrLowestErathem) |
-[dwc:earliestPeriodOrLowestSystem](#dwc_earliestPeriodOrLowestSystem) |
-[dwc:formation](#dwc_formation) |
-[dwc:geologicalContextID](#dwc_geologicalContextID) |
-[dwc:group](#dwc_group) |
-[dwc:highestBiostratigraphicZone](#dwc_highestBiostratigraphicZone) |
-[dwc:latestAgeOrHighestStage](#dwc_latestAgeOrHighestStage) |
-[dwc:latestEonOrHighestEonothem](#dwc_latestEonOrHighestEonothem) |
-[dwc:latestEpochOrHighestSeries](#dwc_latestEpochOrHighestSeries) |
-[dwc:latestEraOrHighestErathem](#dwc_latestEraOrHighestErathem) |
-[dwc:latestPeriodOrHighestSystem](#dwc_latestPeriodOrHighestSystem) |
-[dwc:lithostratigraphicTerms](#dwc_lithostratigraphicTerms) |
-[dwc:lowestBiostratigraphicZone](#dwc_lowestBiostratigraphicZone) |
-[dwc:member](#dwc_member)
-
-**Identification**
-
-[dwc:dateIdentified](#dwc_dateIdentified) |
-[dwc:identificationAttributes](#dwc_identificationAttributes) |
-[dwc:identificationID](#dwc_identificationID) |
-[dwc:identificationQualifier](#dwc_identificationQualifier) |
-[dwc:identificationReferences](#dwc_identificationReferences) |
-[dwc:identificationRemarks](#dwc_identificationRemarks) |
-[dwc:identificationVerificationStatus](#dwc_identificationVerificationStatus) |
-[dwc:identifiedBy](#dwc_identifiedBy) |
-[dwc:identifiedByID](#dwc_identifiedByID) |
-[dwc:PreviousIdentifications](#dwc_PreviousIdentifications) |
-[dwc:typeStatus](#dwc_typeStatus) |
+[dwc:associatedSequences](#dwc_associatedSequences) |
+[dwc:catalogNumber](#dwc_catalogNumber) |
+[dwc:digitalSpecimenID](#dwc_digitalSpecimenID) |
+[dwc:discipline](#dwc_discipline) |
+[dwc:disposition](#dwc_disposition) |
+[dwc:materialEntityCategory](#dwc_materialEntityCategory) |
+[dwc:materialEntityID](#dwc_materialEntityID) |
+[dwc:materialEntityRemarks](#dwc_materialEntityRemarks) |
+[dwc:materialEntityType](#dwc_materialEntityType) |
+[dwc:objectQuantity](#dwc_objectQuantity) |
+[dwc:objectQuantityType](#dwc_objectQuantityType) |
+[dwc:otherCatalogNumbers](#dwc_otherCatalogNumbers) |
+[dwc:preparations](#dwc_preparations) |
+[dwc:typeOfType](#dwc_typeOfType) |
 [dwc:typifiedName](#dwc_typifiedName) |
-[dwc:verbatimIdentification](#dwc_verbatimIdentification)
+[dwc:verbatimLabel](#dwc_verbatimLabel)
+
+**Material Sample**
+
+[dwc:materialSampleID](#dwc_materialSampleID)
+
+**Measurement or Fact**
+
+[dwc:measurementAccuracy](#dwc_measurementAccuracy) |
+[dwc:measurementDeterminedBy](#dwc_measurementDeterminedBy) |
+[dwc:measurementDeterminedDate](#dwc_measurementDeterminedDate) |
+[dwc:measurementID](#dwc_measurementID) |
+[dwc:measurementMethod](#dwc_measurementMethod) |
+[dwc:measurementRemarks](#dwc_measurementRemarks) |
+[dwc:measurementType](#dwc_measurementType) |
+[dwc:measurementUnit](#dwc_measurementUnit) |
+[dwc:measurementValue](#dwc_measurementValue) |
+[dwc:parentMeasurementID](#dwc_parentMeasurementID) |
+[dwc:verbatimMeasurementType](#dwc_verbatimMeasurementType)
+
+**Media*
+
+**Molecular Protocol**
+
+[dwc:assayType](#dwc_assayType) |
+[dwc:molecularProtocolID](#dwc_molecularProtocolID)
+
+**Nucleotide Analysis**
+
+[dwc:processedTotalReadCount](#dwc_processedTotalReadCount) |
+[dwc:readCount](#dwc_readCount)
+
+**Nucleotide Sequence**
+
+[dwc:nucleotideSequenceRemarks](#dwc_nucleotideSequenceRemarks) |
+[dwc:sequence](#dwc_sequence)
+
+**Occurrence**
+
+[dwc:associatedMedia](#dwc_associatedMedia) |
+[dwc:associatedOccurrences](#dwc_associatedOccurrences) |
+[dwc:associatedReferences](#dwc_associatedReferences) |
+[dwc:associatedTaxa](#dwc_associatedTaxa) |
+[dwc:behavior](#dwc_behavior) |
+[dwc:caste](#dwc_caste) |
+[dwc:CatalogNumberNumeric](#dwc_CatalogNumberNumeric) |
+[dwc:degreeOfEstablishment](#dwc_degreeOfEstablishment) |
+[dwc:establishmentMeans](#dwc_establishmentMeans) |
+[dwc:georeferenceVerificationStatus](#dwc_georeferenceVerificationStatus) |
+[dwc:individualCount](#dwc_individualCount) |
+[dwc:individualID](#dwc_individualID) |
+[dwc:lifeStage](#dwc_lifeStage) |
+[dwc:occurrenceAttributes](#dwc_occurrenceAttributes) |
+[dwc:occurrenceDetails](#dwc_occurrenceDetails) |
+[dwc:occurrenceID](#dwc_occurrenceID) |
+[dwc:occurrenceRemarks](#dwc_occurrenceRemarks) |
+[dwc:occurrenceStatus](#dwc_occurrenceStatus) |
+[dwc:organismQuantity](#dwc_organismQuantity) |
+[dwc:organismQuantityType](#dwc_organismQuantityType) |
+[dwc:pathway](#dwc_pathway) |
+[dwc:recordedBy](#dwc_recordedBy) |
+[dwc:recordedByID](#dwc_recordedByID) |
+[dwc:recordNumber](#dwc_recordNumber) |
+[dwc:reproductiveCondition](#dwc_reproductiveCondition) |
+[dwc:sex](#dwc_sex) |
+[dwc:vitality](#dwc_vitality)
+
+**Organism**
+
+[dwc:associatedOrganisms](#dwc_associatedOrganisms) |
+[dwc:causeOfDeath](#dwc_causeOfDeath) |
+[dwc:organismID](#dwc_organismID) |
+[dwc:organismName](#dwc_organismName) |
+[dwc:organismRemarks](#dwc_organismRemarks) |
+[dwc:organismScope](#dwc_organismScope) |
+[dwc:previousIdentifications](#dwc_previousIdentifications)
+
+**Organism Interaction**
+
+[dwc:organismInteractionDescription](#dwc_organismInteractionDescription) |
+[dwc:organismInteractionID](#dwc_organismInteractionID) |
+[dwc:organismInteractionType](#dwc_organismInteractionType)
+
+**Protocol**
+
+[dwc:protocolDescription](#dwc_protocolDescription) |
+[dwc:protocolID](#dwc_protocolID) |
+[dwc:protocolReferences](#dwc_protocolReferences) |
+[dwc:protocolRemarks](#dwc_protocolRemarks) |
+[dwc:protocolType](#dwc_protocolType)
+
+**Provenance**
+
+[ac:fundingAttribution](#ac_fundingAttribution) |
+[dwc:fundingAttributionID](#dwc_fundingAttributionID) |
+[dwc:projectID](#dwc_projectID) |
+[dwc:projectTitle](#dwc_projectTitle)
+
+**Resource Relationship**
+
+[dwc:RelatedBasisOfRecord](#dwc_RelatedBasisOfRecord) |
+[dwc:relatedResourceID](#dwc_relatedResourceID) |
+[dwc:relatedResourceType](#dwc_relatedResourceType) |
+[dwc:relationshipAccordingTo](#dwc_relationshipAccordingTo) |
+[dwc:relationshipEstablishedDate](#dwc_relationshipEstablishedDate) |
+[dwc:relationshipOfResource](#dwc_relationshipOfResource) |
+[dwc:relationshipOfResourceID](#dwc_relationshipOfResourceID) |
+[dwc:relationshipRemarks](#dwc_relationshipRemarks) |
+[dwc:resourceID](#dwc_resourceID) |
+[dwc:resourceRelationshipID](#dwc_resourceRelationshipID)
 
 **Taxon**
 
@@ -378,35 +491,15 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [dwc:verbatimTaxonRank](#dwc_verbatimTaxonRank) |
 [dwc:vernacularName](#dwc_vernacularName)
 
-**Measurement or Fact**
-
-[dwc:measurementAccuracy](#dwc_measurementAccuracy) |
-[dwc:measurementDeterminedBy](#dwc_measurementDeterminedBy) |
-[dwc:measurementDeterminedDate](#dwc_measurementDeterminedDate) |
-[dwc:measurementID](#dwc_measurementID) |
-[dwc:measurementMethod](#dwc_measurementMethod) |
-[dwc:measurementRemarks](#dwc_measurementRemarks) |
-[dwc:measurementType](#dwc_measurementType) |
-[dwc:measurementUnit](#dwc_measurementUnit) |
-[dwc:measurementValue](#dwc_measurementValue) |
-[dwc:parentMeasurementID](#dwc_parentMeasurementID) |
-[dwc:verbatimMeasurementType](#dwc_verbatimMeasurementType)
-
-**Resource Relationship**
-
-[dwc:RelatedBasisOfRecord](#dwc_RelatedBasisOfRecord) |
-[dwc:relatedResourceID](#dwc_relatedResourceID) |
-[dwc:relatedResourceType](#dwc_relatedResourceType) |
-[dwc:relationshipAccordingTo](#dwc_relationshipAccordingTo) |
-[dwc:relationshipEstablishedDate](#dwc_relationshipEstablishedDate) |
-[dwc:relationshipOfResource](#dwc_relationshipOfResource) |
-[dwc:relationshipOfResourceID](#dwc_relationshipOfResourceID) |
-[dwc:relationshipRemarks](#dwc_relationshipRemarks) |
-[dwc:resourceID](#dwc_resourceID) |
-[dwc:resourceRelationshipID](#dwc_resourceRelationshipID)
+**Usage Policy*
 
 **IRI-value terms**
 
+[dwciri:assayType](#dwciri_assayType) |
+[dwciri:assertionBy](#dwciri_assertionBy) |
+[dwciri:assertionType](#dwciri_assertionType) |
+[dwciri:assertionUnit](#dwciri_assertionUnit) |
+[dwciri:assertionValue](#dwciri_assertionValue) |
 [dwciri:behavior](#dwciri_behavior) |
 [dwciri:caste](#dwciri_caste) |
 [dwciri:dataGeneralizations](#dwciri_dataGeneralizations) |
@@ -415,6 +508,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [dwciri:disposition](#dwciri_disposition) |
 [dwciri:earliestGeochronologicalEra](#dwciri_earliestGeochronologicalEra) |
 [dwciri:establishmentMeans](#dwciri_establishmentMeans) |
+[dwciri:eventCategory](#dwciri_eventCategory) |
 [dwciri:eventType](#dwciri_eventType) |
 [dwciri:fieldNotes](#dwciri_fieldNotes) |
 [dwciri:fieldNumber](#dwciri_fieldNumber) |
@@ -429,6 +523,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [dwciri:georeferenceVerificationStatus](#dwciri_georeferenceVerificationStatus) |
 [dwciri:habitat](#dwciri_habitat) |
 [dwciri:identificationQualifier](#dwciri_identificationQualifier) |
+[dwciri:identificationType](#dwciri_identificationType) |
 [dwciri:identificationVerificationStatus](#dwciri_identificationVerificationStatus) |
 [dwciri:identifiedBy](#dwciri_identifiedBy) |
 [dwciri:inCollection](#dwciri_inCollection) |
@@ -438,21 +533,32 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [dwciri:latestGeochronologicalEra](#dwciri_latestGeochronologicalEra) |
 [dwciri:lifeStage](#dwciri_lifeStage) |
 [dwciri:locationAccordingTo](#dwciri_locationAccordingTo) |
+[dwciri:materialEntityCategory](#dwciri_materialEntityCategory) |
+[dwciri:materialEntityType](#dwciri_materialEntityType) |
 [dwciri:measurementDeterminedBy](#dwciri_measurementDeterminedBy) |
 [dwciri:measurementMethod](#dwciri_measurementMethod) |
 [dwciri:measurementType](#dwciri_measurementType) |
 [dwciri:measurementUnit](#dwciri_measurementUnit) |
 [dwciri:measurementValue](#dwciri_measurementValue) |
+[dwciri:objectQuantityType](#dwciri_objectQuantityType) |
 [dwciri:occurrenceStatus](#dwciri_occurrenceStatus) |
+[dwciri:organismInteractionType](#dwciri_organismInteractionType) |
 [dwciri:organismQuantityType](#dwciri_organismQuantityType) |
+[dwciri:organismScope](#dwciri_organismScope) |
 [dwciri:pathway](#dwciri_pathway) |
+[dwciri:preferredSpatialRepresentation](#dwciri_preferredSpatialRepresentation) |
 [dwciri:preparations](#dwciri_preparations) |
+[dwciri:protocolType](#dwciri_protocolType) |
 [dwciri:recordedBy](#dwciri_recordedBy) |
 [dwciri:recordNumber](#dwciri_recordNumber) |
 [dwciri:reproductiveCondition](#dwciri_reproductiveCondition) |
+[dwciri:sampledSubstrateCategory](#dwciri_sampledSubstrateCategory) |
+[dwciri:sampledSubstrateLayer](#dwciri_sampledSubstrateLayer) |
 [dwciri:sampleSizeUnit](#dwciri_sampleSizeUnit) |
 [dwciri:samplingProtocol](#dwciri_samplingProtocol) |
 [dwciri:sex](#dwciri_sex) |
+[dwciri:siteNumber](#dwciri_siteNumber) |
+[dwciri:taxonFormula](#dwciri_taxonFormula) |
 [dwciri:toDigitalSpecimen](#dwciri_toDigitalSpecimen) |
 [dwciri:toTaxon](#dwciri_toTaxon) |
 [dwciri:typeStatus](#dwciri_typeStatus) |
@@ -469,6 +575,9 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 
 **Classes**
 
+[Agent](#dcterms_Agent) |
+[Assertion](#dwc_Assertion) |
+[Bibliographic Resource](#dcterms_BibliographicResource) |
 [Dataset](#dwc_Dataset) |
 [Event](#dwc_Event) |
 [Event Attribute](#dwc_EventAttribute) |
@@ -484,21 +593,30 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [Material Entity](#dwc_MaterialEntity) |
 [Material Sample](#dwc_MaterialSample) |
 [Measurement Or Fact](#dwc_MeasurementOrFact) |
+[Media Entity](#ac_Media) |
+[Molecular Protocol](#dwc_MolecularProtocol) |
+[Nucleotide Analysis](#dwc_NucleotideAnalysis) |
+[Nucleotide Sequence](#dwc_NucleotideSequence) |
 [Occurrence](#dwc_Occurrence) |
 [Occurrence Measurement](#dwc_OccurrenceMeasurement) |
 [Organism](#dwc_Organism) |
+[Organism Interaction](#dwc_OrganismInteraction) |
 [Preserved Specimen](#dwc_PreservedSpecimen) |
+[Protocol](#dwc_Protocol) |
+[Provenance](#dwc_Provenance) |
 [Resource Relationship](#dwc_ResourceRelationship) |
 [Sample](#dwc_Sample) |
 [Sample Attribute](#dwc_SampleAttribute) |
 [Sampling Event](#dwc_SamplingEvent) |
 [Sampling Location](#dwc_SamplingLocation) |
-[Taxon](#dwc_Taxon)
+[Taxon](#dwc_Taxon) |
+[Usage Policy](#dwc_UsagePolicy)
 
 **Record level**
 
 [According To](#dwc_accordingTo) |
 [Accuracy](#dwc_accuracy) |
+[Agent Role Order](#dwc_agentRoleOrder) |
 [Basis Of Record](#dwc_basisOfRecord) |
 [Collection Code](#dwc_collectionCode) |
 [Collection ID](#dwc_collectionID) |
@@ -506,7 +624,6 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [Data Generalizations](#dwc_dataGeneralizations) |
 [Dataset ID](#dwc_datasetID) |
 [Dataset Name](#dwc_datasetName) |
-[Discipline](#dwc_discipline) |
 [Dynamic Properties](#dwc_dynamicProperties) |
 [Feedback URL](#dwc_feedbackURL) |
 [Generalizations](#dwc_Generalizations) |
@@ -532,62 +649,32 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [Rights Holder](#dcterms_rightsHolder) |
 [Type](#dcterms_type)
 
-**Occurrence**
+**Agent**
 
-[Associated Media](#dwc_associatedMedia) |
-[Associated Occurrences](#dwc_associatedOccurrences) |
-[Associated References](#dwc_associatedReferences) |
-[Associated Taxa](#dwc_associatedTaxa) |
-[Behavior](#dwc_behavior) |
-[Caste](#dwc_caste) |
-[Catalog Number](#dwc_catalogNumber) |
-[Catalog Number Numeric](#dwc_CatalogNumberNumeric) |
-[Degree of Establishment](#dwc_degreeOfEstablishment) |
-[Establishment Means](#dwc_establishmentMeans) |
-[Georeference Verification Status](#dwc_georeferenceVerificationStatus) |
-[Individual Count](#dwc_individualCount) |
-[Individual ID](#dwc_individualID) |
-[Life Stage](#dwc_lifeStage) |
-[Occurrence Attributes](#dwc_occurrenceAttributes) |
-[Occurrence Details](#dwc_occurrenceDetails) |
-[Occurrence ID](#dwc_occurrenceID) |
-[Occurrence Remarks](#dwc_occurrenceRemarks) |
-[Occurrence Status](#dwc_occurrenceStatus) |
-[Organism Quantity](#dwc_organismQuantity) |
-[Organism Quantity Type](#dwc_organismQuantityType) |
-[Other Catalog Numbers](#dwc_otherCatalogNumbers) |
-[Pathway](#dwc_pathway) |
-[Record Number](#dwc_recordNumber) |
-[Recorded By](#dwc_recordedBy) |
-[Recorded By ID](#dwc_recordedByID) |
-[Reproductive Condition](#dwc_reproductiveCondition) |
-[Sex](#dwc_sex) |
-[Vitality](#dwc_vitality)
+[Agent ID](#dwc_agentID) |
+[Agent Remarks](#dwc_agentRemarks) |
+[Agent Type](#dwc_agentType)
 
-**Organism**
+**Assertion**
 
-[Associated Organisms](#dwc_associatedOrganisms) |
-[Cause Of Death](#dwc_causeOfDeath) |
-[Organism ID](#dwc_organismID) |
-[Organism Name](#dwc_organismName) |
-[Organism Remarks](#dwc_organismRemarks) |
-[Organism Scope](#dwc_organismScope) |
-[Previous Identifications](#dwc_previousIdentifications)
+[Assertion By](#dwc_assertionBy) |
+[Assertion Effective Date](#dwc_assertionEffectiveDate) |
+[Assertion Error](#dwc_assertionError) |
+[Assertion ID](#dwc_assertionID) |
+[Assertion Made Date](#dwc_assertionMadeDate) |
+[Assertion Protocols](#dwc_assertionProtocols) |
+[Assertion References](#dwc_assertionReferences) |
+[Assertion Remarks](#dwc_assertionRemarks) |
+[Assertion Type](#dwc_assertionType) |
+[Assertion Unit](#dwc_assertionUnit) |
+[Assertion Value](#dwc_assertionValue) |
+[Verbatim Assertion Type](#dwc_verbatimAssertionType)
 
-**Material Entity**
+**Bibliographic Resource**
 
-[Associated Sequences](#dwc_associatedSequences) |
-[Digital Specimen Identifier](#dwc_digitalSpecimenID) |
-[Disposition](#dwc_disposition) |
-[Material Entity ID](#dwc_materialEntityID) |
-[Material Entity Remarks](#dwc_materialEntityRemarks) |
-[Material Entity Type](#dwc_materialEntityType) |
-[Preparations](#dwc_preparations) |
-[Verbatim Label](#dwc_verbatimLabel)
-
-**Material Sample**
-
-[Material Sample ID](#dwc_materialSampleID)
+[Reference ID](#dwc_referenceID) |
+[Reference Remarks](#dwc_referenceRemarks) |
+[Reference Type](#dwc_referenceType)
 
 **Event**
 
@@ -596,6 +683,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [End Day Of Year](#dwc_endDayOfYear) |
 [End Time of Day](#dwc_EndTimeOfDay) |
 [Event Attributes](#dwc_eventAttributes) |
+[Event Category](#dwc_eventCategory) |
 [Event Date](#dwc_eventDate) |
 [Event ID](#dwc_eventID) |
 [Event Remarks](#dwc_eventRemarks) |
@@ -603,72 +691,20 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [Event Type](#dwc_eventType) |
 [Field Notes](#dwc_fieldNotes) |
 [Field Number](#dwc_fieldNumber) |
-[Funding Attribution](#ac_fundingAttribution) |
-[Funding Attribution ID](#dwc_fundingAttributionID) |
 [Habitat](#dwc_habitat) |
 [Latest Date Collected](#dwc_LatestDateCollected) |
 [Month](#dwc_month) |
 [Parent Event ID](#dwc_parentEventID) |
-[Project ID](#dwc_projectID) |
-[Project Title](#dwc_projectTitle) |
 [Sample Size Unit](#dwc_sampleSizeUnit) |
 [Sample Size Value](#dwc_sampleSizeValue) |
+[Sampled Substrate Category](#dwc_sampledSubstrateCategory) |
+[Sampled Substrate Layer](#dwc_sampledSubstrateLayer) |
 [Sampling Effort](#dwc_samplingEffort) |
 [Sampling Protocol](#dwc_samplingProtocol) |
 [Start Day Of Year](#dwc_startDayOfYear) |
 [Start Time of Day](#dwc_StartTimeOfDay) |
 [Verbatim EventDate](#dwc_verbatimEventDate) |
 [Year](#dwc_year)
-
-**Location**
-
-[Continent](#dwc_continent) |
-[Coordinate Precision](#dwc_coordinatePrecision) |
-[Coordinate Uncertainty In Meters](#dwc_coordinateUncertaintyInMeters) |
-[Country](#dwc_country) |
-[Country Code](#dwc_countryCode) |
-[Decimal Latitude](#dwc_decimalLatitude) |
-[Decimal Longitude](#dwc_decimalLongitude) |
-[First Order Division](#dwc_stateProvince) |
-[Footprint SRS](#dwc_footprintSRS) |
-[Footprint Spatial Fit](#dwc_footprintSpatialFit) |
-[Footprint WKT](#dwc_footprintWKT) |
-[Geodetic Datum](#dwc_geodeticDatum) |
-[Georeference Protocol](#dwc_georeferenceProtocol) |
-[Georeference Remarks](#dwc_georeferenceRemarks) |
-[Georeference Sources](#dwc_georeferenceSources) |
-[Georeferenced By](#dwc_georeferencedBy) |
-[Georeferenced Date](#dwc_georeferencedDate) |
-[Higher Geography](#dwc_higherGeography) |
-[Higher Geography ID](#dwc_higherGeographyID) |
-[Island](#dwc_island) |
-[Island Group](#dwc_islandGroup) |
-[Locality](#dwc_locality) |
-[Location According To](#dwc_locationAccordingTo) |
-[Location Attributes](#dwc_locationAttributes) |
-[Location ID](#dwc_locationID) |
-[Location Remarks](#dwc_locationRemarks) |
-[Maximum Depth In Meters](#dwc_maximumDepthInMeters) |
-[Maximum Distance Above Surface In Meters](#dwc_maximumDistanceAboveSurfaceInMeters) |
-[Maximum Elevation In Meters](#dwc_maximumElevationInMeters) |
-[Minimum Depth In Meters](#dwc_minimumDepthInMeters) |
-[Minimum Distance Above Surface In Meters](#dwc_minimumDistanceAboveSurfaceInMeters) |
-[Minimum Elevation In Meters](#dwc_minimumElevationInMeters) |
-[Point Radius Spatial Fit](#dwc_pointRadiusSpatialFit) |
-[Sampling Location ID](#dwc_SamplingLocationID) |
-[Sampling Location Remarks](#dwc_SamplingLocationRemarks) |
-[Second Order Division](#dwc_county) |
-[Third Order Division](#dwc_municipality) |
-[Verbatim Coordinate System](#dwc_verbatimCoordinateSystem) |
-[Verbatim Coordinates](#dwc_verbatimCoordinates) |
-[Verbatim Depth](#dwc_verbatimDepth) |
-[Verbatim Elevation](#dwc_verbatimElevation) |
-[Verbatim Latitude](#dwc_verbatimLatitude) |
-[Verbatim Locality](#dwc_verbatimLocality) |
-[Verbatim Longitude](#dwc_verbatimLongitude) |
-[Verbatim SRS](#dwc_verbatimSRS) |
-[Vertical Datum](#dwc_verticalDatum) |
-[Water Body](#dwc_waterBody)
 
 **Geological Context**
 
@@ -699,13 +735,195 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [Identification Qualifier](#dwc_identificationQualifier) |
 [Identification References](#dwc_identificationReferences) |
 [Identification Remarks](#dwc_identificationRemarks) |
+[Identification Type](#dwc_identificationType) |
 [Identification Verification Status](#dwc_identificationVerificationStatus) |
 [Identified By](#dwc_identifiedBy) |
 [Identified By ID](#dwc_identifiedByID) |
+[Is Accepted Identification](#dwc_isAcceptedIdentification) |
 [Previous Identifications](#dwc_PreviousIdentifications) |
+[Taxon Formula](#dwc_taxonFormula) |
 [Type Status](#dwc_typeStatus) |
-[Typified Name](#dwc_typifiedName) |
 [Verbatim Identification](#dwc_verbatimIdentification)
+
+**Location**
+
+[Continent](#dwc_continent) |
+[Coordinate Precision](#dwc_coordinatePrecision) |
+[Coordinate Uncertainty In Meters](#dwc_coordinateUncertaintyInMeters) |
+[Country](#dwc_country) |
+[County Code](#dwc_countryCode) |
+[Decimal Latitude](#dwc_decimalLatitude) |
+[Decimal Longitude](#dwc_decimalLongitude) |
+[First Order Division](#dwc_stateProvince) |
+[Footprint SRS](#dwc_footprintSRS) |
+[Footprint Spatial Fit](#dwc_footprintSpatialFit) |
+[Footprint WKT](#dwc_footprintWKT) |
+[Geodetic Datum](#dwc_geodeticDatum) |
+[Georeference Protocol](#dwc_georeferenceProtocol) |
+[Georeference Remarks](#dwc_georeferenceRemarks) |
+[Georeference Sources](#dwc_georeferenceSources) |
+[Georeferenced By](#dwc_georeferencedBy) |
+[Georeferenced Date](#dwc_georeferencedDate) |
+[Higher Geography](#dwc_higherGeography) |
+[Higher Geography ID](#dwc_higherGeographyID) |
+[Island](#dwc_island) |
+[Island Group](#dwc_islandGroup) |
+[Locality](#dwc_locality) |
+[Location According To](#dwc_locationAccordingTo) |
+[Location Attributes](#dwc_locationAttributes) |
+[Location ID](#dwc_locationID) |
+[Location Remarks](#dwc_locationRemarks) |
+[Maximum Depth In Meters](#dwc_maximumDepthInMeters) |
+[Maximum Distance Above Surface In Meters](#dwc_maximumDistanceAboveSurfaceInMeters) |
+[Maximum Elevation In Meters](#dwc_maximumElevationInMeters) |
+[Minimum Depth In Meters](#dwc_minimumDepthInMeters) |
+[Minimum Distance Above Surface In Meters](#dwc_minimumDistanceAboveSurfaceInMeters) |
+[Minimum Elevation In Meters](#dwc_minimumElevationInMeters) |
+[Point Radius Spatial Fit](#dwc_pointRadiusSpatialFit) |
+[Preferred Spatial Representation](#dwc_preferredSpatialRepresentation) |
+[Sampling Location ID](#dwc_SamplingLocationID) |
+[Sampling Location Remarks](#dwc_SamplingLocationRemarks) |
+[Second Order Division](#dwc_county) |
+[Site Number](#dwc_siteNumber) |
+[Third Order Division](#dwc_municipality) |
+[Verbatim Coordinate System](#dwc_verbatimCoordinateSystem) |
+[Verbatim Coordinates](#dwc_verbatimCoordinates) |
+[Verbatim Depth](#dwc_verbatimDepth) |
+[Verbatim Elevation](#dwc_verbatimElevation) |
+[Verbatim Latitude](#dwc_verbatimLatitude) |
+[Verbatim Locality](#dwc_verbatimLocality) |
+[Verbatim Longitude](#dwc_verbatimLongitude) |
+[Verbatim SRS](#dwc_verbatimSRS) |
+[Vertical Datum](#dwc_verticalDatum) |
+[Water Body](#dwc_waterBody)
+
+**Material Entity**
+
+[Associated Sequences](#dwc_associatedSequences) |
+[Catalog Number](#dwc_catalogNumber) |
+[Digital Specimen ID](#dwc_digitalSpecimenID) |
+[Discipline](#dwc_discipline) |
+[Disposition](#dwc_disposition) |
+[Material Entity Category](#dwc_materialEntityCategory) |
+[Material Entity ID](#dwc_materialEntityID) |
+[Material Entity Remarks](#dwc_materialEntityRemarks) |
+[Material Entity Type](#dwc_materialEntityType) |
+[Object Quantity](#dwc_objectQuantity) |
+[Object Quantity Type](#dwc_objectQuantityType) |
+[Other Catalog Numbers](#dwc_otherCatalogNumbers) |
+[Preparations](#dwc_preparations) |
+[Type Of Type](#dwc_typeOfType) |
+[Typified Name](#dwc_typifiedName) |
+[Verbatim Label](#dwc_verbatimLabel)
+
+**Material Sample**
+
+[Material Sample ID](#dwc_materialSampleID)
+
+**Measurement or Fact**
+
+[Measurement Accuracy](#dwc_measurementAccuracy) |
+[Measurement Determined By](#dwc_measurementDeterminedBy) |
+[Measurement Determined Date](#dwc_measurementDeterminedDate) |
+[Measurement ID](#dwc_measurementID) |
+[Measurement Method](#dwc_measurementMethod) |
+[Measurement Remarks](#dwc_measurementRemarks) |
+[Measurement Type](#dwc_measurementType) |
+[Measurement Unit](#dwc_measurementUnit) |
+[Measurement Value](#dwc_measurementValue) |
+[Parent Measurement ID](#dwc_parentMeasurementID) |
+[Verbatim Measurement Type](#dwc_verbatimMeasurementType)
+
+**Media*
+
+**Molecular Protocol**
+
+[Assay Type](#dwc_assayType) |
+[Molecular Protocol ID](#dwc_molecularProtocolID)
+
+**Nucleotide Analysis**
+
+[Processed Total Read Count](#dwc_processedTotalReadCount) |
+[Read Count](#dwc_readCount)
+
+**Nucleotide Sequence**
+
+[Nucleotide Sequence Remarks](#dwc_nucleotideSequenceRemarks) |
+[Sequence](#dwc_sequence)
+
+**Occurrence**
+
+[Associated Media](#dwc_associatedMedia) |
+[Associated Occurrences](#dwc_associatedOccurrences) |
+[Associated References](#dwc_associatedReferences) |
+[Associated Taxa](#dwc_associatedTaxa) |
+[Behavior](#dwc_behavior) |
+[Caste](#dwc_caste) |
+[Catalog Number Numeric](#dwc_CatalogNumberNumeric) |
+[Degree of Establishment](#dwc_degreeOfEstablishment) |
+[Establishment Means](#dwc_establishmentMeans) |
+[Georeference Verification Status](#dwc_georeferenceVerificationStatus) |
+[Individual Count](#dwc_individualCount) |
+[Individual ID](#dwc_individualID) |
+[Life Stage](#dwc_lifeStage) |
+[Occurrence Attributes](#dwc_occurrenceAttributes) |
+[Occurrence Details](#dwc_occurrenceDetails) |
+[Occurrence ID](#dwc_occurrenceID) |
+[Occurrence Remarks](#dwc_occurrenceRemarks) |
+[Occurrence Status](#dwc_occurrenceStatus) |
+[Organism Quantity](#dwc_organismQuantity) |
+[Organism Quantity Type](#dwc_organismQuantityType) |
+[Pathway](#dwc_pathway) |
+[Record Number](#dwc_recordNumber) |
+[Recorded By](#dwc_recordedBy) |
+[Recorded By ID](#dwc_recordedByID) |
+[Reproductive Condition](#dwc_reproductiveCondition) |
+[Sex](#dwc_sex) |
+[Vitality](#dwc_vitality)
+
+**Organism**
+
+[Associated Organisms](#dwc_associatedOrganisms) |
+[Cause Of Death](#dwc_causeOfDeath) |
+[Organism ID](#dwc_organismID) |
+[Organism Name](#dwc_organismName) |
+[Organism Remarks](#dwc_organismRemarks) |
+[Organism Scope](#dwc_organismScope) |
+[Previous Identifications](#dwc_previousIdentifications)
+
+**Organism Interaction**
+
+[Organism Interaction Description](#dwc_organismInteractionDescription) |
+[Organism Interaction ID](#dwc_organismInteractionID) |
+[Organism Interaction Type](#dwc_organismInteractionType)
+
+**Protocol**
+
+[Protocol Description](#dwc_protocolDescription) |
+[Protocol ID](#dwc_protocolID) |
+[Protocol References](#dwc_protocolReferences) |
+[Protocol Remarks](#dwc_protocolRemarks) |
+[Protocol Type](#dwc_protocolType)
+
+**Provenance**
+
+[Funding Attribution](#ac_fundingAttribution) |
+[Funding Attribution ID](#dwc_fundingAttributionID) |
+[Project ID](#dwc_projectID) |
+[Project Title](#dwc_projectTitle)
+
+**Resource Relationship**
+
+[Related Basis of Record](#dwc_RelatedBasisOfRecord) |
+[Related Resource ID](#dwc_relatedResourceID) |
+[Related Resource Type](#dwc_relatedResourceType) |
+[Relationship According To](#dwc_relationshipAccordingTo) |
+[Relationship Established Date](#dwc_relationshipEstablishedDate) |
+[Relationship Of Resource](#dwc_relationshipOfResource) |
+[Relationship Of Resource ID](#dwc_relationshipOfResourceID) |
+[Relationship Remarks](#dwc_relationshipRemarks) |
+[Resource ID](#dwc_resourceID) |
+[Resource Relationship ID](#dwc_resourceRelationshipID)
 
 **Taxon**
 
@@ -772,35 +990,15 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [Verbatim Taxon Rank](#dwc_verbatimTaxonRank) |
 [Vernacular Name](#dwc_vernacularName)
 
-**Measurement or Fact**
-
-[Measurement Accuracy](#dwc_measurementAccuracy) |
-[Measurement Determined By](#dwc_measurementDeterminedBy) |
-[Measurement Determined Date](#dwc_measurementDeterminedDate) |
-[Measurement ID](#dwc_measurementID) |
-[Measurement Method](#dwc_measurementMethod) |
-[Measurement Remarks](#dwc_measurementRemarks) |
-[Measurement Type](#dwc_measurementType) |
-[Measurement Unit](#dwc_measurementUnit) |
-[Measurement Value](#dwc_measurementValue) |
-[Parent Measurement ID](#dwc_parentMeasurementID) |
-[Verbatim Measurement Type](#dwc_verbatimMeasurementType)
-
-**Resource Relationship**
-
-[Related Basis of Record](#dwc_RelatedBasisOfRecord) |
-[Related Resource ID](#dwc_relatedResourceID) |
-[Related Resource Type](#dwc_relatedResourceType) |
-[Relationship According To](#dwc_relationshipAccordingTo) |
-[Relationship Established Date](#dwc_relationshipEstablishedDate) |
-[Relationship Of Resource](#dwc_relationshipOfResource) |
-[Relationship Of Resource ID](#dwc_relationshipOfResourceID) |
-[Relationship Remarks](#dwc_relationshipRemarks) |
-[Resource ID](#dwc_resourceID) |
-[Resource Relationship ID](#dwc_resourceRelationshipID)
+**Usage Policy*
 
 **IRI-value terms**
 
+[Assay Type (IRI)](#dwciri_assayType) |
+[Assertion By (IRI)](#dwciri_assertionBy) |
+[Assertion Type (IRI)](#dwciri_assertionType) |
+[Assertion Unit (IRI)](#dwciri_assertionUnit) |
+[Assertion Value (IRI)](#dwciri_assertionValue) |
 [Behavior (IRI)](#dwciri_behavior) |
 [Caste (IRI)](#dwciri_caste) |
 [Data Generalizations (IRI)](#dwciri_dataGeneralizations) |
@@ -809,6 +1007,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [Disposition (IRI)](#dwciri_disposition) |
 [Earliest Geochronological Era](#dwciri_earliestGeochronologicalEra) |
 [Establishment Means (IRI)](#dwciri_establishmentMeans) |
+[Event Category (IRI)](#dwciri_eventCategory) |
 [Event Type (IRI)](#dwciri_eventType) |
 [Field Notes (IRI)](#dwciri_fieldNotes) |
 [Field Number (IRI)](#dwciri_fieldNumber) |
@@ -823,6 +1022,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [Georeferenced By (IRI)](#dwciri_georeferencedBy) |
 [Habitat (IRI)](#dwciri_habitat) |
 [Identification Qualifier (IRI)](#dwciri_identificationQualifier) |
+[Identification Type (IRI)](#dwciri_identificationType) |
 [Identification Verification Status (IRI)](#dwciri_identificationVerificationStatus) |
 [Identified By (IRI)](#dwciri_identifiedBy) |
 [In Collection](#dwciri_inCollection) |
@@ -832,21 +1032,32 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [Latest Geochronological Era](#dwciri_latestGeochronologicalEra) |
 [Life Stage (IRI)](#dwciri_lifeStage) |
 [Location According To (IRI)](#dwciri_locationAccordingTo) |
+[Material Entity Category (IRI)](#dwciri_materialEntityCategory) |
+[Material Entity Type (IRI)](#dwciri_materialEntityType) |
 [Measurement Determined By (IRI)](#dwciri_measurementDeterminedBy) |
 [Measurement Method (IRI)](#dwciri_measurementMethod) |
 [Measurement Type (IRI)](#dwciri_measurementType) |
 [Measurement Unit (IRI)](#dwciri_measurementUnit) |
 [Measurement Value (IRI)](#dwciri_measurementValue) |
+[Object Quantity Type (IRI)](#dwciri_objectQuantityType) |
 [Occurrence Status (IRI)](#dwciri_occurrenceStatus) |
+[Organism Interaction Type (IRI)](#dwciri_organismInteractionType) |
 [Organism Quantity Type (IRI)](#dwciri_organismQuantityType) |
+[Organism Scope (IRI)](#dwciri_organismScope) |
 [Pathway (IRI)](#dwciri_pathway) |
+[Preferred Spatial Representation (IRI)](#dwciri_preferredSpatialRepresentation) |
 [Preparations (IRI)](#dwciri_preparations) |
+[Protocol Type (IRI)](#dwciri_protocolType) |
 [Record Number (IRI)](#dwciri_recordNumber) |
 [Recorded By (IRI)](#dwciri_recordedBy) |
 [Reproductive Condition (IRI)](#dwciri_reproductiveCondition) |
+[Sampled Substrate Category (IRI)](#dwciri_sampledSubstrateCategory) |
+[Sampled Substrate Layer (IRI)](#dwciri_sampledSubstrateLayer) |
 [Sampling Protocol (IRI)](#dwciri_samplingProtocol) |
 [Sampling Size Unit (IRI)](#dwciri_sampleSizeUnit) |
 [Sex (IRI)](#dwciri_sex) |
+[Site Number (IRI)](#dwciri_siteNumber) |
+[Taxon Formula (IRI)](#dwciri_taxonFormula) |
 [To Digital Specimen](#dwciri_toDigitalSpecimen) |
 [To Taxon](#dwciri_toTaxon) |
 [Type Status (IRI)](#dwciri_typeStatus) |
@@ -1437,6 +1648,1161 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
+			<th colspan="2"><a id="dcterms_Agent"></a>Term Name dcterms:Agent</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://purl.org/dc/terms/Agent">http://purl.org/dc/terms/Agent</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Agent</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A resource that acts or has the power to act.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>A person, group, organization, machine, software or other entity that can act. Membership in the dcterms:Agent class is determined by the capacity to act, even if not doing so in a specific context. To act: To participate in an event or process by contributing through behavior, operation, or an effect resulting from active participation — regardless of whether that contribution is intentional, volitional, or conscious.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>a person</code></li>
+  <li class="list-group-item"><code>a team of participants on an expedition</code></li>
+  <li class="list-group-item"><code>a funding agency</code></li>
+  <li class="list-group-item"><code>a particular bioacoustic monitoring installation</code></li>
+  <li class="list-group-item"><code>a software instance</code></li>
+  <li class="list-group-item"><code>a particular camera trap</code></li>
+</ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Class</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_agentID"></a>Term Name dwc:agentID</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/agentID">http://rs.tdwg.org/dwc/terms/agentID</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/agentID-2026-04-07">http://rs.tdwg.org/dwc/terms/version/agentID-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Agent ID</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>An identifier for a dcterms:Agent.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a globally unique identifier.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_agentRemarks"></a>Term Name dwc:agentRemarks</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/agentRemarks">http://rs.tdwg.org/dwc/terms/agentRemarks</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/agentRemarks-2026-04-07">http://rs.tdwg.org/dwc/terms/version/agentRemarks-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Agent Remarks</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>Comments or notes about a dcterms:Agent.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_agentRoleOrder"></a>Term Name dwc:agentRoleOrder</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/agentRoleOrder">http://rs.tdwg.org/dwc/terms/agentRoleOrder</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/agentRoleOrder-2026-04-07">http://rs.tdwg.org/dwc/terms/version/agentRoleOrder-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Agent Role Order</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A numerical position of an AgentRole in a set of AgentRoles.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>One could use dwc:agentRoleOrder to create an ordered list of collectors (agentRole = 'collector') for a dwc:MaterialEntity in a Darwin Core Data Package, for example. The first would have dwc:agentRoleOrder=1, the second would have dwc:agentRoleOrder=2.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>1</code></li>
+  <li class="list-group-item"><code>2</code></li>
+</ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_agentType"></a>Term Name dwc:agentType</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/agentType">http://rs.tdwg.org/dwc/terms/agentType</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/agentType-2026-04-07">http://rs.tdwg.org/dwc/terms/version/agentType-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Agent Type</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A category that best matches the nature of a dcterms:Agent.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a controlled vocabulary.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>person</code></li>
+  <li class="list-group-item"><code>group</code></li>
+  <li class="list-group-item"><code>organization</code></li>
+  <li class="list-group-item"><code>camera</code></li>
+</ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_assayType"></a>Term Name dwciri:assayType</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/assayType">http://rs.tdwg.org/dwc/iri/assayType</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/assayType-2026-04-07">http://rs.tdwg.org/dwc/iri/version/assayType-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Assay Type (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A type of method used in a study to detect taxon/taxa of interest in a dwc:MaterialEntity.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_assayType"></a>Term Name dwc:assayType</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/assayType">http://rs.tdwg.org/dwc/terms/assayType</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/assayType-2026-04-07">http://rs.tdwg.org/dwc/terms/version/assayType-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Assay Type</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A type of method used in a study to detect taxon/taxa of interest in a dwc:MaterialEntity.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a controlled vocabulary. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>targeted</code></li>
+  <li class="list-group-item"><code>metabarcoding</code></li>
+  <li class="list-group-item"><code>other</code></li>
+</ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_Assertion"></a>Term Name dwc:Assertion</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/Assertion">http://rs.tdwg.org/dwc/terms/Assertion</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/Assertion-2026-04-07">http://rs.tdwg.org/dwc/terms/version/Assertion-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Assertion</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A statement about an rdfs:Resource (http://www.w3.org/2000/01/rdf-schema#Resource).</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Resources can be thought of as identifiable records or instances of classes and may include, but need not be limited to instances of dwc:Occurrence, dwc:Organism, dwc:MaterialEntity, dwc:Event, dcterms:Location, dwc:GeologicalContext, dwc:Identification, or dwc:Taxon.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>the weight of a dwc:Organism in grams</code></li>
+  <li class="list-group-item"><code>the number of placental scars</code></li>
+  <li class="list-group-item"><code>surface water temperature in Celsius</code></li>
+</ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>Datasets/Dataset/Units/Unit/MeasurementsOrFacts or DataSets/DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Class</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_assertionBy"></a>Term Name dwciri:assertionBy</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/assertionBy">http://rs.tdwg.org/dwc/iri/assertionBy</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/assertionBy-2026-04-07">http://rs.tdwg.org/dwc/iri/version/assertionBy-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Assertion By (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A name for a dcterms:Agent responsible for making a dwc:Assertion.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_assertionBy"></a>Term Name dwc:assertionBy</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/assertionBy">http://rs.tdwg.org/dwc/terms/assertionBy</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/assertionBy-2026-04-07">http://rs.tdwg.org/dwc/terms/version/assertionBy-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Assertion By</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A name for a dcterms:Agent responsible for making a dwc:Assertion.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>Rob Guralnick</code></li>
+  <li class="list-group-item"><code>Peter Desmet | Stijn Van Hoey</code></li>
+  <li class="list-group-item"><code>ChatGPT</li>
+  <li class="list-group-item">Notes From Nature</li>
+  <li class="list-group-item">ROV SuBastian</code></li>
+</ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>DataSets/DataSet/Units/Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/MeasuredBy or DataSets/DataSet/Units/Unit/Gathering/Altitude/MeasurementOrFactAtomised/MeasuredBy or DataSets/DataSet/Units/Unit/Gathering/Depth/MeasurementOrFactAtomised/MeasuredBy or DataSets/DataSet/Units/Unit/Gathering/Height/MeasurementOrFactAtomised/MeasuredBy or DataSets/DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts/SiteMeasurementOrFact/MeasurementOrFactAtomised/MeasuredBy or DataSets/DataSet/Units/Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFactAtomised/MeasuredBy</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_assertionEffectiveDate"></a>Term Name dwc:assertionEffectiveDate</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/assertionEffectiveDate">http://rs.tdwg.org/dwc/terms/assertionEffectiveDate</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/assertionEffectiveDate-2026-04-07">http://rs.tdwg.org/dwc/terms/version/assertionEffectiveDate-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Assertion Effective Date</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A date on which a state or measurement of a dwc:Assertion was deemed to first be in effect.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a date that conforms to ISO 8601-1:2019.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>1963-03-08T14:07-06:00</code> (8 Mar 1963 at or after 2:07pm and before 2:08pm in the time zone six hours earlier than UTC)</li>
+  <li class="list-group-item"><code>2009-02-20T08:40Z</code> (20 February 2009 at or after 8:40am and before 8:41 UTC)</li>
+  <li class="list-group-item"><code>2018-08-29T15:19</code> (29 August 2018 at or after 3:19pm and before 3:20pm local time)</li>
+  <li class="list-group-item"><code>1809-02-12</code> (within the day 12 February 1809)</li>
+  <li class="list-group-item"><code>1906-06</code> (in the month of June 1906)</li>
+  <li class="list-group-item"><code>1971</code> (in the year 1971)</li>
+  <li class="list-group-item"><code>2007-03-01T13:00:00Z/2008-05-11T15:30:00Z</code> (some time within the interval beginning 1 March 2007 at 1pm UTC and before 11 May 2008 at 3:30pm UTC)</li>
+  <li class="list-group-item"><code>1900/1909</code> (some time within the interval between the beginning of the year 1900 and before the year 1909)</li>
+  <li class="list-group-item"><code>2007-11-13/15</code> (some time in the interval between the beginning of 13 November 2007 and before 15 November 2007)</li>
+</ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>DataSets/DataSet/Units/Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/MeasurementDateTime or DataSets/DataSet/Units/Unit/Gathering/Altitude/MeasurementOrFactAtomised/MeasurementDateTime or DataSets/DataSet/Units/Unit/Gathering/Depth/MeasurementOrFactAtomised/MeasurementDateTime or DataSets/DataSet/Units/Unit/Gathering/Height/MeasurementOrFactAtomised/MeasurementDateTime or DataSets/DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts/SiteMeasurementOrFact/MeasurementOrFactAtomised/MeasurementDateTime or DataSets/DataSet/Units/Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFactAtomised/MeasurementDateTime</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_assertionError"></a>Term Name dwc:assertionError</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/assertionError">http://rs.tdwg.org/dwc/terms/assertionError</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/assertionError-2026-04-07">http://rs.tdwg.org/dwc/terms/version/assertionError-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Assertion Error</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A description of the potential error associated with a dwc:assertionValue.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>0.01</code></li>
+  <li class="list-group-item"><code>normal distribution with variation of 2 m</code></li>
+</ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>DataSets/DataSet/Units/Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/Accuracy or DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts/SiteMeasurementOrFact/MeasurementOrFactAtomised/Accuracy or DataSets/DataSet/Units/Unit/Gathering/Aspect/Accuracy or DataSets/DataSet/Units/Unit/Gathering/Altitude/MeasurementOrFactAtomised/Accuracy or DataSets/DataSet/Units/Unit/Gathering/Depth/MeasurementOrFactAtomised/Accuracy or DataSets/DataSet/Units/Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFactAtomised/Accuracy or DataSets/DataSet/Units/Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/Accuracy</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_assertionID"></a>Term Name dwc:assertionID</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/assertionID">http://rs.tdwg.org/dwc/terms/assertionID</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/assertionID-2026-04-07">http://rs.tdwg.org/dwc/terms/version/assertionID-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Assertion ID</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>An identifier for a dwc:Assertion.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a globally unique identifier.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_assertionMadeDate"></a>Term Name dwc:assertionMadeDate</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/assertionMadeDate">http://rs.tdwg.org/dwc/terms/assertionMadeDate</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/assertionMadeDate-2026-04-07">http://rs.tdwg.org/dwc/terms/version/assertionMadeDate-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Assertion Made Date</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A date on which a dwc:Assertion was created.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a date that conforms to ISO 8601-1:2019.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>1963-03-08T14:07-06:00</code> (8 Mar 1963 at or after 2:07pm and before 2:08pm in the time zone six hours earlier than UTC)</li>
+  <li class="list-group-item"><code>2009-02-20T08:40Z</code> (20 February 2009 at or after 8:40am and before 8:41 UTC)</li>
+  <li class="list-group-item"><code>2018-08-29T15:19</code> (29 August 2018 at or after 3:19pm and before 3:20pm local time)</li>
+  <li class="list-group-item"><code>1809-02-12</code> (within the day 12 February 1809)</li>
+  <li class="list-group-item"><code>1906-06</code> (in the month of June 1906)</li>
+  <li class="list-group-item"><code>1971</code> (in the year 1971)</li>
+  <li class="list-group-item"><code>2007-03-01T13:00:00Z/2008-05-11T15:30:00Z</code> (some time within the interval beginning 1 March 2007 at 1pm UTC and before 11 May 2008 at 3:30pm UTC)</li>
+  <li class="list-group-item"><code>1900/1909</code> (some time within the interval between the beginning of the year 1900 and before the year 1909)</li>
+  <li class="list-group-item"><code>2007-11-13/15</code> (some time in the interval between the beginning of 13 November 2007 and before 15 November 2007)</li>
+</ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_assertionProtocols"></a>Term Name dwc:assertionProtocols</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/assertionProtocols">http://rs.tdwg.org/dwc/terms/assertionProtocols</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/assertionProtocols-2026-04-07">http://rs.tdwg.org/dwc/terms/version/assertionProtocols-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Assertion Protocols</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>Names of, references to, or descriptions of dwc:Protocols used in making a dwc:Assertion.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>/DataSets/DataSet/Units/Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/Method or /DataSets/DataSet/Units/Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFactAtomised/Method or /DataSets/DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts/SiteMeasurementOrFact/MeasurementOrFactAtomised/Method</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_assertionReferences"></a>Term Name dwc:assertionReferences</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/assertionReferences">http://rs.tdwg.org/dwc/terms/assertionReferences</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/assertionReferences-2026-04-07">http://rs.tdwg.org/dwc/terms/version/assertionReferences-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Assertion References</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A list (concatenated and separated) of dcterms:BibliographicResources associated with a dwc:Assertion.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_assertionRemarks"></a>Term Name dwc:assertionRemarks</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/assertionRemarks">http://rs.tdwg.org/dwc/terms/assertionRemarks</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/assertionRemarks-2026-04-07">http://rs.tdwg.org/dwc/terms/version/assertionRemarks-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Assertion Remarks</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>Comments or notes about a dwc:Assertion.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>tip of tail missing</code></li>
+  <li class="list-group-item"><code>error determined by independently calibrated measurements</code></li>
+  <li class="list-group-item"><code>error provided is from the manufacturer’s standard instrument specification</code></li>
+</ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_assertionType"></a>Term Name dwciri:assertionType</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/assertionType">http://rs.tdwg.org/dwc/iri/assertionType</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/assertionType-2026-04-07">http://rs.tdwg.org/dwc/iri/version/assertionType-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Assertion Type (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A category that best matches the nature of a dwc:Assertion.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_assertionType"></a>Term Name dwc:assertionType</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/assertionType">http://rs.tdwg.org/dwc/terms/assertionType</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/assertionType-2026-04-07">http://rs.tdwg.org/dwc/terms/version/assertionType-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Assertion Type</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A category that best matches the nature of a dwc:Assertion.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a controlled vocabulary. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>tailLength</code></li>
+  <li class="list-group-item"><code>waterTemperature</code></li>
+  <li class="list-group-item"><code>trapLineLength</code></li>
+  <li class="list-group-item"><code>surveyArea</code></li>
+  <li class="list-group-item"><code>trapType</code></li>
+</ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>DataSets/DataSet/Units/Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/Parameter or DataSets/DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/Parameter</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_assertionUnit"></a>Term Name dwciri:assertionUnit</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/assertionUnit">http://rs.tdwg.org/dwc/iri/assertionUnit</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/assertionUnit-2026-04-07">http://rs.tdwg.org/dwc/iri/version/assertionUnit-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Assertion Unit (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A unit associated with the value in dwc:assertionValue.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a controlled vocabulary such as the Ontology of Units of Measure <a href="http://www.wurvoc.org/vocabularies/om-1.8/">http://www.wurvoc.org/vocabularies/om-1.8/</a> of SI units, derived units, or other non-SI units accepted for use within the SI. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_assertionUnit"></a>Term Name dwc:assertionUnit</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/assertionUnit">http://rs.tdwg.org/dwc/terms/assertionUnit</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/assertionUnit-2026-04-07">http://rs.tdwg.org/dwc/terms/version/assertionUnit-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Assertion Unit</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A unit associated with the value in dwc:assertionValue.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a controlled vocabulary such as the Ontology of Units of Measure <a href="http://www.wurvoc.org/vocabularies/om-1.8/">http://www.wurvoc.org/vocabularies/om-1.8/</a> of SI units, derived units, or other non-SI units accepted for use within the SI. For units that are composed of multiple parts, use the patterns as given in "A Primer for Communicating Mathematics via Plain Text" (<a href="https://cse.sc.edu/~fenner/latex-ASCII.pdf">https://cse.sc.edu/~fenner/latex-ASCII.pdf</a>) by Stephen Fenner (e.g., <code>g/cm^3</code> for grams per cubic centimeter). For other units, provide the value as a recognizable standard (e.g., '%') or written out in full and in the plural (e.g., <code>individuals</code>). It is fine to provide non-SI units in the original language of the dataset. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>m</code></li>
+  <li class="list-group-item"><code>s</code></li>
+  <li class="list-group-item"><code>g</code></li>
+  <li class="list-group-item"><code>ml</code></li>
+  <li class="list-group-item"><code>%</code></li>
+  <li class="list-group-item"><code>individuals</code></li>
+</ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>DataSets/DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/UnitOfMeasurement or DataSets/DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/UnitOfMeasurement</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_assertionValue"></a>Term Name dwc:assertionValue</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/assertionValue">http://rs.tdwg.org/dwc/terms/assertionValue</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/assertionValue-2026-04-07">http://rs.tdwg.org/dwc/terms/version/assertionValue-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Assertion Value</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>An asserted value.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>DataSets/DataSet/Units/Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/UpperValue or DataSets/DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts/SiteMeasurementOrFact/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts/SiteMeasurementOrFact/MeasurementOrFactAtomised/UpperValue or DataSets/DataSet/Units/Unit/Gathering/Altitude/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/Gathering/Altitude/MeasurementOrFactAtomised/UpperValue or DataSets/DataSet/Units/Unit/Gathering/Depth/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/Gathering/Depth/MeasurementOrFactAtomised/UpperValue or DataSets/DataSet/Units/Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFactAtomised/UpperValue or DataSets/DataSet/Units/Unit/Gathering/Height/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/Gathering/Height/MeasurementOrFactAtomised/UpperValue</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_assertionValue"></a>Term Name dwciri:assertionValue</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/assertionValue">http://rs.tdwg.org/dwc/iri/assertionValue</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/assertionValue-2026-04-07">http://rs.tdwg.org/dwc/iri/version/assertionValue-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Assertion Value (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>An asserted value.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
 			<th colspan="2"><a id="dwc_associatedMedia"></a>Term Name dwc:associatedMedia</th>
 		</tr>
 	</thead>
@@ -1657,11 +3023,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-13</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/associatedSequences-2023-09-13">http://rs.tdwg.org/dwc/terms/version/associatedSequences-2023-09-13</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/associatedSequences-2026-04-07">http://rs.tdwg.org/dwc/terms/version/associatedSequences-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1669,7 +3035,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>A list (concatenated and separated) of identifiers (publication, global unique identifier, URI) of genetic sequence information associated with the dwc:MaterialEntity.</td>
+			<td>A list (concatenated and separated) of dcterms:BibiographicResources for dwc:NucleotideSequences associated with a dwc:MaterialEntity.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -1689,6 +3055,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -1952,51 +3322,9 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
 		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
-			<th colspan="2"><a id="dwciri_behavior"></a>Term Name dwciri:behavior</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/behavior">http://rs.tdwg.org/dwc/iri/behavior</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2025-07-10</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/behavior-2025-07-10">http://rs.tdwg.org/dwc/iri/version/behavior-2025-07-10</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Behavior (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>A description of the behavior shown by the subject at the time the dwc:Occurrence was recorded.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_43">http://rs.tdwg.org/decisions/decision-2024-02-28_43</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -2014,11 +3342,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/behavior-2023-06-28">http://rs.tdwg.org/dwc/terms/version/behavior-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/behavior-2026-04-07">http://rs.tdwg.org/dwc/terms/version/behavior-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2026,7 +3354,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The behavior shown by the subject at the time the dwc:Occurrence was recorded.</td>
+			<td>A behavior shown by a dwc:Organism.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
@@ -2047,6 +3375,60 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_behavior"></a>Term Name dwciri:behavior</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/behavior">http://rs.tdwg.org/dwc/iri/behavior</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/behavior-2026-04-07">http://rs.tdwg.org/dwc/iri/version/behavior-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Behavior (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A behavior shown by a dwc:Organism.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -2104,6 +3486,44 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
+			<th colspan="2"><a id="dcterms_BibliographicResource"></a>Term Name dcterms:BibliographicResource</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://purl.org/dc/terms/BibliographicResource">http://purl.org/dc/terms/BibliographicResource</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Bibliographic Resource</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A book, article, or other documentary resource.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Class</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
 			<th colspan="2"><a id="dwc_binomial"></a>Term Name dwc:binomial</th>
 		</tr>
 	</thead>
@@ -2146,6 +3566,60 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
+			<th colspan="2"><a id="dwciri_caste"></a>Term Name dwciri:caste</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/caste">http://rs.tdwg.org/dwc/iri/caste</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/caste-2026-04-07">http://rs.tdwg.org/dwc/iri/version/caste-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Caste (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A social caste of a dwc:Organism.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a controlled vocabulary that aligns best with a dwc:Taxon. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-06-28_40">http://rs.tdwg.org/decisions/decision-2023-06-28_40</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
 			<th colspan="2"><a id="dwc_caste"></a>Term Name dwc:caste</th>
 		</tr>
 	</thead>
@@ -2156,11 +3630,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/caste-2023-06-28">http://rs.tdwg.org/dwc/terms/version/caste-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/caste-2026-04-07">http://rs.tdwg.org/dwc/terms/version/caste-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2168,11 +3642,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>Categorisation of individuals for eusocial species (including some mammals and arthropods).</td>
+			<td>A social caste of a dwc:Organism.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to use a controlled vocabulary that aligns best with the dwc:Taxon. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+			<td>Recommended best practice is to use a controlled vocabulary that aligns best with a dwc:Taxon. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -2197,55 +3671,9 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2023-06-28_40">http://rs.tdwg.org/decisions/decision-2023-06-28_40</a></td>
 		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
-			<th colspan="2"><a id="dwciri_caste"></a>Term Name dwciri:caste</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/caste">http://rs.tdwg.org/dwc/iri/caste</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2025-07-10</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/caste-2025-07-10">http://rs.tdwg.org/dwc/iri/version/caste-2025-07-10</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Caste (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>Categorisation of individuals for eusocial species (including some mammals and arthropods).</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Recommended best practice is to use a controlled vocabulary that aligns best with the dwc:Taxon. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2023-06-28_40">http://rs.tdwg.org/decisions/decision-2023-06-28_40</a></td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -2263,11 +3691,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/catalogNumber-2023-06-28">http://rs.tdwg.org/dwc/terms/version/catalogNumber-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/catalogNumber-2026-04-07">http://rs.tdwg.org/dwc/terms/version/catalogNumber-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2275,7 +3703,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>An identifier (preferably unique) for the record within the data set or collection.</td>
+			<td>An identifier (preferably unique) for a resource within a collection.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -2293,6 +3721,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -2455,11 +3887,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/collectionCode-2023-06-28">http://rs.tdwg.org/dwc/terms/version/collectionCode-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/collectionCode-2026-04-07">http://rs.tdwg.org/dwc/terms/version/collectionCode-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2467,7 +3899,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The name, acronym, coden, or initialism identifying the collection or data set from which the record was derived.</td>
+			<td>A name, acronym, coden, or initialism identifying a collection.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -2486,6 +3918,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -2502,11 +3938,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2025-06-12</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/collectionID-2025-06-12">http://rs.tdwg.org/dwc/terms/version/collectionID-2025-06-12</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/collectionID-2026-04-07">http://rs.tdwg.org/dwc/terms/version/collectionID-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2514,7 +3950,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>An identifier for the collection or dataset from which the record was derived.</td>
+			<td>An identifier for a collection.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
@@ -2535,6 +3971,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2025-06-12_44">http://rs.tdwg.org/decisions/decision-2025-06-12_44</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -2593,6 +4033,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2023-06-28_40">http://rs.tdwg.org/decisions/decision-2023-06-28_40</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_43">http://rs.tdwg.org/decisions/decision-2024-02-28_43</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -2657,11 +4101,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/coordinateUncertaintyInMeters-2023-06-28">http://rs.tdwg.org/dwc/terms/version/coordinateUncertaintyInMeters-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/coordinateUncertaintyInMeters-2026-04-07">http://rs.tdwg.org/dwc/terms/version/coordinateUncertaintyInMeters-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2669,7 +4113,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The horizontal distance (in meters) from the given dwc:decimalLatitude and dwc:decimalLongitude describing the smallest circle containing the whole of the dcterms:Location. Leave the value empty if the uncertainty is unknown, cannot be estimated, or is not applicable (because there are no coordinates). Zero is not a valid value for this term.</td>
+			<td>A horizontal distance (in meters) from a given dwc:decimalLatitude and dwc:decimalLongitude describing the smallest circle containing the whole of the dcterms:Location. Zero is not a valid value for this term.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Leave the value empty if the uncertainty is unknown, cannot be estimated, or is not applicable (because there are no coordinates). Zero is not a valid value for this term.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -2686,6 +4134,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -2737,6 +4189,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_43">http://rs.tdwg.org/decisions/decision-2024-02-28_43</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -2753,15 +4209,15 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2025-06-12</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/countryCode-2025-06-12">http://rs.tdwg.org/dwc/terms/version/countryCode-2025-06-12</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/countryCode-2026-04-07">http://rs.tdwg.org/dwc/terms/version/countryCode-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
-			<td>Country Code</td>
+			<td>County Code</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -2769,7 +4225,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to use an ISO 3166-1-alpha-2 country code, or <code>ZZ</code> (for an unknown location or a location unassignable to a single country code), or <code>XZ</code> (for the high seas beyond national jurisdictions).</td>
+			<td>Recommended best practice is to use an ISO 3166-1-alpha-2 country code, or 'ZZ' (for an unknown location or a location unassignable to a single country code), or 'XZ' (for the high seas beyond national jurisdictions). Multiplicity and uncertainty of the geographic entity can be captured either in the term dwc:higherGeography or in the term dwc:locality, or both.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -2794,7 +4250,15 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_43">http://rs.tdwg.org/decisions/decision-2024-02-28_43</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2025-06-12_44">http://rs.tdwg.org/decisions/decision-2025-06-12_44</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -2850,6 +4314,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2023-06-28_40">http://rs.tdwg.org/decisions/decision-2023-06-28_40</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_43">http://rs.tdwg.org/decisions/decision-2024-02-28_43</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -2866,11 +4334,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/cultivarEpithet-2023-06-28">http://rs.tdwg.org/dwc/terms/version/cultivarEpithet-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/cultivarEpithet-2026-04-07">http://rs.tdwg.org/dwc/terms/version/cultivarEpithet-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2882,7 +4350,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>According to the Rules of the Cultivated Plant Code, a cultivar name consists of a botanical name followed by a cultivar epithet. The value given as the dwc:cultivarEpithet should exclude any quotes. The term dwc:taxonRank should be used to indicate which type of cultivated plant name (e.g. cultivar, cultivar group, grex) is concerned. This epithet, including any enclosing apostrophes or suffix, should be provided in dwc:scientificName as well.</td>
+			<td>According to the Rules of the Cultivated Plant Code, a cultivar name consists of a botanical name followed by a cultivar epithet. The value given as the dwc:cultivarEpithet should exclude any quotes. The term dwc:taxonRank should be used to indicate which type of cultivated plant name (e.g., cultivar, cultivar group, grex) is concerned. This epithet, including any enclosing apostrophes or suffix, should be provided in dwc:scientificName as well.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -2904,51 +4372,13 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2021-07-15_34">http://rs.tdwg.org/decisions/decision-2021-07-15_34</a></td>
 		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_dataGeneralizations"></a>Term Name dwciri:dataGeneralizations</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/dataGeneralizations">http://rs.tdwg.org/dwc/iri/dataGeneralizations</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2025-07-10</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/dataGeneralizations-2025-07-10">http://rs.tdwg.org/dwc/iri/version/dataGeneralizations-2025-07-10</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Data Generalizations (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>Actions taken to make the shared data less specific or complete than in its original form. Suggests that alternative data of higher quality may be available on request.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-12-11_54">http://rs.tdwg.org/decisions/decision-2025-12-11_54</a></td>
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -2995,6 +4425,52 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_dataGeneralizations"></a>Term Name dwciri:dataGeneralizations</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/dataGeneralizations">http://rs.tdwg.org/dwc/iri/dataGeneralizations</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2025-07-10</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/dataGeneralizations-2025-07-10">http://rs.tdwg.org/dwc/iri/version/dataGeneralizations-2025-07-10</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Data Generalizations (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>Actions taken to make the shared data less specific or complete than in its original form. Suggests that alternative data of higher quality may be available on request.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -3092,11 +4568,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/datasetName-2023-06-28">http://rs.tdwg.org/dwc/terms/version/datasetName-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/datasetName-2026-04-07">http://rs.tdwg.org/dwc/terms/version/datasetName-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3104,7 +4580,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The name identifying the data set from which the record was derived.</td>
+			<td>A name of a source dataset.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -3120,6 +4596,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -3246,11 +4726,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/decimalLatitude-2023-06-28">http://rs.tdwg.org/dwc/terms/version/decimalLatitude-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/decimalLatitude-2026-04-07">http://rs.tdwg.org/dwc/terms/version/decimalLatitude-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3258,7 +4738,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The geographic latitude (in decimal degrees, using the spatial reference system given in dwc:geodeticDatum) of the geographic center of a dcterms:Location. Positive values are north of the Equator, negative values are south of it. Legal values lie between -90 and 90, inclusive.</td>
+			<td>A geographic latitude (in decimal degrees, using the spatial reference system given in dwc:geodeticDatum) of a dcterms:Location.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Positive values are north of the Equator, negative values are south of it. Valid values lie between -90 and 90, inclusive.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -3271,6 +4755,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -3288,11 +4776,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/decimalLongitude-2023-06-28">http://rs.tdwg.org/dwc/terms/version/decimalLongitude-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/decimalLongitude-2026-04-07">http://rs.tdwg.org/dwc/terms/version/decimalLongitude-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3300,7 +4788,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The geographic longitude (in decimal degrees, using the spatial reference system given in dwc:geodeticDatum) of the geographic center of a dcterms:Location. Positive values are east of the Greenwich Meridian, negative values are west of it. Legal values lie between -180 and 180, inclusive.</td>
+			<td>A geographic longitude (in decimal degrees, using the spatial reference system given in dwc:geodeticDatum) of a dcterms:Location.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Positive values are east of the Greenwich Meridian, negative values are west of it. Valid values lie between -180 and 180, inclusive.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -3313,6 +4805,72 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_degreeOfEstablishment"></a>Term Name dwc:degreeOfEstablishment</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/degreeOfEstablishment">http://rs.tdwg.org/dwc/terms/degreeOfEstablishment</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2023-06-28</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/degreeOfEstablishment-2023-06-28">http://rs.tdwg.org/dwc/terms/version/degreeOfEstablishment-2023-06-28</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Degree of Establishment</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The degree to which a dwc:Organism survives, reproduces, and expands its range at the given place and time.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use controlled value strings from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/doe/">http://rs.tdwg.org/dwc/doc/doe/</a>. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a>. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>native</code></li>
+  <li class="list-group-item"><code>captive</code></li>
+  <li class="list-group-item"><code>cultivated</code></li>
+  <li class="list-group-item"><code>released</code></li>
+  <li class="list-group-item"><code>failing</code></li>
+  <li class="list-group-item"><code>casual</code></li>
+  <li class="list-group-item"><code>reproducing</code></li>
+  <li class="list-group-item"><code>established</code></li>
+  <li class="list-group-item"><code>colonising</code></li>
+  <li class="list-group-item"><code>invasive</code></li>
+  <li class="list-group-item"><code>widespreadInvasive</code></li>
+</ul></td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2020-10-13_27">http://rs.tdwg.org/decisions/decision-2020-10-13_27</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_43">http://rs.tdwg.org/decisions/decision-2024-02-28_43</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -3377,64 +4935,6 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_degreeOfEstablishment"></a>Term Name dwc:degreeOfEstablishment</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/degreeOfEstablishment">http://rs.tdwg.org/dwc/terms/degreeOfEstablishment</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2023-06-28</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/degreeOfEstablishment-2023-06-28">http://rs.tdwg.org/dwc/terms/version/degreeOfEstablishment-2023-06-28</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Degree of Establishment</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>The degree to which a dwc:Organism survives, reproduces, and expands its range at the given place and time.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Recommended best practice is to use controlled value strings from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/doe/">http://rs.tdwg.org/dwc/doc/doe/</a>. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a>. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
-		</tr>
-		<tr>
-			<td>Examples</td>
-			<td><ul class="list-group list-group-flush">
-  <li class="list-group-item"><code>native</code></li>
-  <li class="list-group-item"><code>captive</code></li>
-  <li class="list-group-item"><code>cultivated</code></li>
-  <li class="list-group-item"><code>released</code></li>
-  <li class="list-group-item"><code>failing</code></li>
-  <li class="list-group-item"><code>casual</code></li>
-  <li class="list-group-item"><code>reproducing</code></li>
-  <li class="list-group-item"><code>established</code></li>
-  <li class="list-group-item"><code>colonising</code></li>
-  <li class="list-group-item"><code>invasive</code></li>
-  <li class="list-group-item"><code>widespreadInvasive</code></li>
-</ul></td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2020-10-13_27">http://rs.tdwg.org/decisions/decision-2020-10-13_27</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="dwc_digitalSpecimenID"></a>Term Name dwc:digitalSpecimenID</th>
 		</tr>
 	</thead>
@@ -3445,19 +4945,19 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2025-06-12</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/digitalSpecimenID-2025-06-12">http://rs.tdwg.org/dwc/terms/version/digitalSpecimenID-2025-06-12</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/digitalSpecimenID-2026-04-07">http://rs.tdwg.org/dwc/terms/version/digitalSpecimenID-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
-			<td>Digital Specimen Identifier</td>
+			<td>Digital Specimen ID</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>An identifier for a particular instance of a Digital Specimen.</td>
+			<td>An identifier for a Digital Specimen resource.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
@@ -3484,58 +4984,9 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2025-06-12_44">http://rs.tdwg.org/decisions/decision-2025-06-12_44</a></td>
 		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
-			<th colspan="2"><a id="dwc_discipline"></a>Term Name dwc:discipline</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/discipline">http://rs.tdwg.org/dwc/terms/discipline</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2025-06-12</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/discipline-2025-06-12">http://rs.tdwg.org/dwc/terms/version/discipline-2025-06-12</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Discipline</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>The primary branch or branches of knowledge represented by the record.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>This term can be used to classify records according to branches of knowledge. Recommended best practice is to use a controlled vocabulary and to separate the values in a list with space vertical bar space ( | ).This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.  It is also recommended to use this field to describe specimenType in MIDS.</td>
-		</tr>
-		<tr>
-			<td>Examples</td>
-			<td><ul class="list-group list-group-flush">
-  <li class="list-group-item"><code>Botany</code></li>
-  <li class="list-group-item"><code>Botany | Virology | Taxonomy</code></li>
-</ul></td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2025-06-12_44">http://rs.tdwg.org/decisions/decision-2025-06-12_44</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -3589,6 +5040,63 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
+			<th colspan="2"><a id="dwc_discipline"></a>Term Name dwc:discipline</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/discipline">http://rs.tdwg.org/dwc/terms/discipline</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/discipline-2026-04-07">http://rs.tdwg.org/dwc/terms/version/discipline-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Discipline</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The primary branch or branches of knowledge represented by a dwc:MaterialEntity.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>This term can be used to classify records according to branches of knowledge. Recommended best practice is to use a controlled vocabulary and to separate the values in a list with space vertical bar space (<code> | </code>). It is also recommended to use this field to describe specimenType in MIDS. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>Botany</code></li>
+  <li class="list-group-item"><code>Botany | Virology | Taxonomy</code></li>
+</ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-06-12_44">http://rs.tdwg.org/decisions/decision-2025-06-12_44</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
 			<th colspan="2"><a id="dwciri_disposition"></a>Term Name dwciri:disposition</th>
 		</tr>
 	</thead>
@@ -3599,11 +5107,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2025-07-10</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/disposition-2025-07-10">http://rs.tdwg.org/dwc/iri/version/disposition-2025-07-10</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/disposition-2026-04-07">http://rs.tdwg.org/dwc/iri/version/disposition-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3611,7 +5119,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The current state of a specimen with respect to the collection identified in dwc:collectionCode or dwc:collectionID.</td>
+			<td>A current state of a dwc:MaterialEntity with respect to where it can be found.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
@@ -3629,6 +5137,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -3645,11 +5157,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-13</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/disposition-2023-09-13">http://rs.tdwg.org/dwc/terms/version/disposition-2023-09-13</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/disposition-2026-04-07">http://rs.tdwg.org/dwc/terms/version/disposition-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3657,7 +5169,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The current state of a dwc:MaterialEntity with respect to a collection.</td>
+			<td>A current state of a dwc:MaterialEntity with respect to where it can be found.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
@@ -3685,6 +5197,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -3831,6 +5347,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_43">http://rs.tdwg.org/decisions/decision-2024-02-28_43</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -3893,11 +5413,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-13</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/earliestEonOrLowestEonothem-2023-09-13">http://rs.tdwg.org/dwc/terms/version/earliestEonOrLowestEonothem-2023-09-13</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/earliestEonOrLowestEonothem-2026-04-07">http://rs.tdwg.org/dwc/terms/version/earliestEonOrLowestEonothem-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3905,13 +5425,14 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The full name of the earliest possible geochronologic eon or lowest chrono-stratigraphic eonothem or the informal name ("Precambrian") attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.</td>
+			<td>The full name of the earliest possible geochronologic eon or lowest chronostratigraphic eonothem or the informal name attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
 			<td><ul class="list-group list-group-flush">
   <li class="list-group-item"><code>Phanerozoic</code></li>
   <li class="list-group-item"><code>Proterozoic</code></li>
+  <li class="list-group-item"><code>Precambrian</code></li>
 </ul></td>
 		</tr>
 		<tr>
@@ -3925,6 +5446,14 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_43">http://rs.tdwg.org/decisions/decision-2024-02-28_43</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -3976,6 +5505,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_43">http://rs.tdwg.org/decisions/decision-2024-02-28_43</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -4024,6 +5557,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_43">http://rs.tdwg.org/decisions/decision-2024-02-28_43</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -4121,6 +5658,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_43">http://rs.tdwg.org/decisions/decision-2024-02-28_43</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -4137,11 +5678,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/endDayOfYear-2023-06-28">http://rs.tdwg.org/dwc/terms/version/endDayOfYear-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/endDayOfYear-2026-04-07">http://rs.tdwg.org/dwc/terms/version/endDayOfYear-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -4149,7 +5690,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The latest integer day of the year on which the dwc:Event occurred (1 for January 1, 365 for December 31, except in a leap year, in which case it is 366).</td>
+			<td>The latest integer day of the year on which a dwc:Event occurred.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>The value is 1 for January 1 and 365 for December 31, except in a leap year, in which case it is 366.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -4167,6 +5712,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -4287,11 +5836,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/establishmentMeans-2023-06-28">http://rs.tdwg.org/dwc/terms/version/establishmentMeans-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/establishmentMeans-2026-04-07">http://rs.tdwg.org/dwc/terms/version/establishmentMeans-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -4309,6 +5858,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Examples</td>
 			<td><ul class="list-group list-group-flush">
   <li class="list-group-item"><code>native</code></li>
+  <li class="list-group-item"><code>nativeEndemic</code></li>
   <li class="list-group-item"><code>nativeReintroduced</code></li>
   <li class="list-group-item"><code>introduced</code></li>
   <li class="list-group-item"><code>introducedAssistedColonisation</code></li>
@@ -4328,6 +5878,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2020-10-13_25">http://rs.tdwg.org/decisions/decision-2020-10-13_25</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -4344,11 +5898,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-18</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/Event-2023-09-18">http://rs.tdwg.org/dwc/terms/version/Event-2023-09-18</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/Event-2026-04-07">http://rs.tdwg.org/dwc/terms/version/Event-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -4356,14 +5910,16 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>An action that occurs at some location during some time.</td>
+			<td>An action, process, or set of circumstances occurring at a dcterms:Location during a period of time.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
 			<td><ul class="list-group list-group-flush">
-  <li class="list-group-item"><code>a specimen collecting event</code></li>
+  <li class="list-group-item"><code>a material collecting event</code></li>
+  <li class="list-group-item"><code>a bird observation</code></li>
   <li class="list-group-item"><code>a camera trap image capture</code></li>
-  <li class="list-group-item"> <code>a marine trawl</code></li>
+  <li class="list-group-item"><code>an organism occurrence</code></li>
+  <li class="list-group-item"><code>a biotic survey</code></li>
 </ul></td>
 		</tr>
 		<tr>
@@ -4377,6 +5933,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2014-10-26_15">http://rs.tdwg.org/decisions/decision-2014-10-26_15</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -4828,6 +6388,108 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
+			<th colspan="2"><a id="dwciri_eventCategory"></a>Term Name dwciri:eventCategory</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/eventCategory">http://rs.tdwg.org/dwc/iri/eventCategory</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/eventCategory-2026-04-07">http://rs.tdwg.org/dwc/iri/version/eventCategory-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Event Category (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A broad category that best matches the nature of a dwc:Event.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a limited, tightly controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_eventCategory"></a>Term Name dwc:eventCategory</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/eventCategory">http://rs.tdwg.org/dwc/terms/eventCategory</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/eventCategory-2026-04-07">http://rs.tdwg.org/dwc/terms/version/eventCategory-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Event Category</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A broad category that best matches the nature of a dwc:Event.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a limited, tightly controlled vocabulary. Recommended best practice is to use one of the following controlled values: <code>Event</code>, <code>MaterialGathering</code>, <code>Occurrence</code>, <code>OrganismInteraction</code>, or <code>Survey</code>. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>Event</code></li>
+  <li class="list-group-item"><code>MaterialGathering</code></li>
+  <li class="list-group-item"><code>Occurrence</code></li>
+  <li class="list-group-item"><code>OrganismInteraction</code></li>
+  <li class="list-group-item"><code>Survey</code></li>
+</ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
 			<th colspan="2"><a id="dwc_eventDate"></a>Term Name dwc:eventDate</th>
 		</tr>
 	</thead>
@@ -4838,11 +6500,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2025-06-12</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/eventDate-2025-06-12">http://rs.tdwg.org/dwc/terms/version/eventDate-2025-06-12</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/eventDate-2026-04-07">http://rs.tdwg.org/dwc/terms/version/eventDate-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -4850,11 +6512,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The date-time or interval during which a dwc:Event occurred. For occurrences, this is the date-time when the dwc:Event was recorded. Not suitable for a time in a geological context.</td>
+			<td>A date-time or time interval during which a dwc:Event occurred.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to use a date that conforms to ISO 8601-1:2019.</td>
+			<td>Recommended best practice is to use a date that conforms to ISO 8601-1:2019. Not suitable for a time in a geological context.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -4872,7 +6534,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
-			<td>accessible from DataSets/DataSet/Units/Unit/Gathering/ISODateTimeBegin and DataSets/DataSet/Units/Unit/Gathering/ISODateTimeEnd</td>
+			<td>DataSets/DataSet/Units/Unit/Gathering/ISODateTimeBegin and DataSets/DataSet/Units/Unit/Gathering/ISODateTimeEnd</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -4881,6 +6543,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2025-06-12_44">http://rs.tdwg.org/decisions/decision-2025-06-12_44</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -5446,11 +7112,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2025-07-10</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/eventType-2025-07-10">http://rs.tdwg.org/dwc/iri/version/eventType-2025-07-10</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/eventType-2026-04-07">http://rs.tdwg.org/dwc/iri/version/eventType-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -5458,11 +7124,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The nature of the dwc:Event.</td>
+			<td>A narrow category that best matches the nature of a dwc:Event.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to use a controlled vocabulary. Regardless of the dwc:eventType, the interval of the dwc:Event can be captured in dwc:eventDate. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+			<td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -5480,6 +7146,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -5496,11 +7166,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/eventType-2023-06-28">http://rs.tdwg.org/dwc/terms/version/eventType-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/eventType-2026-04-07">http://rs.tdwg.org/dwc/terms/version/eventType-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -5508,23 +7178,21 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The nature of the dwc:Event.</td>
+			<td>A narrow category that best matches the nature of a dwc:Event.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to use a controlled vocabulary. Regardless of the dwc:eventType, the interval of the dwc:Event can be captured in dwc:eventDate. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+			<td>Recommended best practice is to use a controlled vocabulary. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
 			<td><ul class="list-group list-group-flush">
-  <li class="list-group-item"><code>Sample</code></li>
-  <li class="list-group-item"><code>Observation</code></li>
-  <li class="list-group-item"><code>Site Visit</code></li>
-  <li class="list-group-item"><code>Biotic Interaction</code></li>
-  <li class="list-group-item"><code>Bioblitz</code></li>
-  <li class="list-group-item"><code>Expedition</code></li>
-  <li class="list-group-item"><code>Survey</code></li>
-  <li class="list-group-item"><code>Project</code></li>
+  <li class="list-group-item"><code>bioBlitz</code></li>
+  <li class="list-group-item"><code>cameraTrapDeployment</code></li>
+  <li class="list-group-item"><code>expedition</code></li>
+  <li class="list-group-item"><code>project</code></li>
+  <li class="list-group-item"><code>siteVisit</code></li>
+  <li class="list-group-item"><code>trawl</code></li>
 </ul></td>
 		</tr>
 		<tr>
@@ -5538,6 +7206,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2023-06-28_40">http://rs.tdwg.org/decisions/decision-2023-06-28_40</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -5728,48 +7400,6 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_fieldNumber"></a>Term Name dwciri:fieldNumber</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/fieldNumber">http://rs.tdwg.org/dwc/iri/fieldNumber</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2023-06-28</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/fieldNumber-2023-06-28">http://rs.tdwg.org/dwc/iri/version/fieldNumber-2023-06-28</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Field Number (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>An identifier given to the event in the field. Often serves as a link between field notes and the dwc:Event.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>The subject is a (possibly IRI-identified) resource that is the field notes and the object is a dwc:Event instance.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="dwc_fieldNumber"></a>Term Name dwc:fieldNumber</th>
 		</tr>
 	</thead>
@@ -5780,11 +7410,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/fieldNumber-2023-06-28">http://rs.tdwg.org/dwc/terms/version/fieldNumber-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/fieldNumber-2026-04-07">http://rs.tdwg.org/dwc/terms/version/fieldNumber-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -5792,11 +7422,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>An identifier given to the dwc:Event in the field. Often serves as a link between field notes and the dwc:Event.</td>
+			<td>An identifier given to a dwc:Event in the field.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+			<td>Often serves as a link between field notes and a dwc:Event. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -5809,6 +7439,56 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_fieldNumber"></a>Term Name dwciri:fieldNumber</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/fieldNumber">http://rs.tdwg.org/dwc/iri/fieldNumber</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/fieldNumber-2026-04-07">http://rs.tdwg.org/dwc/iri/version/fieldNumber-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Field Number (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>An identifier given to a dwc:Event in the field.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Often serves as a link between field notes and a dwc:Event. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -5826,11 +7506,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/footprintSpatialFit-2023-06-28">http://rs.tdwg.org/dwc/terms/version/footprintSpatialFit-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/footprintSpatialFit-2026-04-07">http://rs.tdwg.org/dwc/terms/version/footprintSpatialFit-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -5838,11 +7518,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The ratio of the area of the dwc:footprintWKT to the area of the true (original, or most specific) spatial representation of the dcterms:Location. Legal values are 0, greater than or equal to 1, or undefined. A value of 1 is an exact match or 100% overlap. A value of 0 should be used if the given dwc:footprintWKT does not completely contain the original representation. The dwc:footprintSpatialFit is undefined (and should be left empty) if the original representation is any geometry without area (e.g., a point or polyline) and without uncertainty and the given georeference is not that same geometry (without uncertainty). If both the original and the given georeference are the same point, the dwc:footprintSpatialFit is 1.</td>
+			<td>A ratio of the area of a footprint (dwc:footprintWKT) to the area of a true (original, or most specific) spatial representation of a dcterms:Location.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Detailed explanations with graphical examples can be found in the Georeferencing Best Practices, Chapman and Wieczorek, 2020 (<a href="https://doi.org/10.15468/doc-gg7h-s853">https://doi.org/10.15468/doc-gg7h-s853</a>).</td>
+			<td>Legal values are 0, greater than or equal to 1, or undefined. A value of 1 is an exact match or 100% overlap. A value of 0 should be used if the given footprint does not completely contain the original representation. A dwc:footprintSpatialFit is undefined (and should be left empty) if the original representation is any geometry without area (e.g., a point or polyline) and without uncertainty and the given georeference is not that same geometry (without uncertainty). If both the original and the given georeference are the same point, a dwc:footprintSpatialFit is 1. Detailed explanations with graphical examples can be found in the Georeferencing Best Practices, Chapman and Wieczorek, 2020 (<a href="https://doi.org/10.15468/doc-gg7h-s853">https://doi.org/10.15468/doc-gg7h-s853</a>).</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -5864,55 +7544,9 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2023-06-28_40">http://rs.tdwg.org/decisions/decision-2023-06-28_40</a></td>
 		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
-			<th colspan="2"><a id="dwciri_footprintSRS"></a>Term Name dwciri:footprintSRS</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/footprintSRS">http://rs.tdwg.org/dwc/iri/footprintSRS</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2025-06-12</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/footprintSRS-2025-06-12">http://rs.tdwg.org/dwc/iri/version/footprintSRS-2025-06-12</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Footprint SRS (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which the geometry given in dwc:footprintWKT is based.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Recommended best practice is to use an IRI for the EPSG code of the SRS, if known. Otherwise use a controlled vocabulary IRI for the name or code of the geodetic datum, if known. Otherwise use a controlled vocabulary IRI for the name or code of the ellipsoid, if known. Otherwise use an IRI for the value corresponding to <code>not recorded</code>.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2021-07-15_34">http://rs.tdwg.org/decisions/decision-2021-07-15_34</a></td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2025-06-12_44">http://rs.tdwg.org/decisions/decision-2025-06-12_44</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -5978,6 +7612,106 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
+			<th colspan="2"><a id="dwciri_footprintSRS"></a>Term Name dwciri:footprintSRS</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/footprintSRS">http://rs.tdwg.org/dwc/iri/footprintSRS</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2025-06-12</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/footprintSRS-2025-06-12">http://rs.tdwg.org/dwc/iri/version/footprintSRS-2025-06-12</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Footprint SRS (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which the geometry given in dwc:footprintWKT is based.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use an IRI for the EPSG code of the SRS, if known. Otherwise use a controlled vocabulary IRI for the name or code of the geodetic datum, if known. Otherwise use a controlled vocabulary IRI for the name or code of the ellipsoid, if known. Otherwise use an IRI for the value corresponding to <code>not recorded</code>.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2021-07-15_34">http://rs.tdwg.org/decisions/decision-2021-07-15_34</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-06-12_44">http://rs.tdwg.org/decisions/decision-2025-06-12_44</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_footprintWKT"></a>Term Name dwc:footprintWKT</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/footprintWKT">http://rs.tdwg.org/dwc/terms/footprintWKT</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/footprintWKT-2026-04-07">http://rs.tdwg.org/dwc/terms/version/footprintWKT-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Footprint WKT</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A Well-Known Text (WKT) representation of the shape (footprint, geometry) that defines a dcterms:Location.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>A dcterms:Location may have both a point-radius representation (see dwc:decimalLatitude) and a footprint representation, and they may differ from each other.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><code>POLYGON ((10 20, 11 20, 11 21, 10 21, 10 20))</code> (the one-degree bounding box with opposite corners at longitude=10, latitude=20 and longitude=11, latitude=21)</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>DataSets/DataSet/Units/Unit/Gathering/FootprintWKT (ABCD v2.06b)</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
 			<th colspan="2"><a id="dwciri_footprintWKT"></a>Term Name dwciri:footprintWKT</th>
 		</tr>
 	</thead>
@@ -6017,52 +7751,6 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
-			<th colspan="2"><a id="dwc_footprintWKT"></a>Term Name dwc:footprintWKT</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/footprintWKT">http://rs.tdwg.org/dwc/terms/footprintWKT</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2023-06-28</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/footprintWKT-2023-06-28">http://rs.tdwg.org/dwc/terms/version/footprintWKT-2023-06-28</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Footprint WKT</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>A Well-Known Text (WKT) representation of the shape (footprint, geometry) that defines the dcterms:Location. A dcterms:Location may have both a point-radius representation (see dwc:decimalLatitude) and a footprint representation, and they may differ from each other.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
-		</tr>
-		<tr>
-			<td>Examples</td>
-			<td><code>POLYGON ((10 20, 11 20, 11 21, 10 21, 10 20))</code> (the one-degree bounding box with opposite corners at longitude=10, latitude=20 and longitude=11, latitude=21)</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>DataSets/DataSet/Units/Unit/Gathering/FootprintWKT (ABCD v2.06b)</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
 		</tr>
 	</tbody>
 </table>
@@ -6113,6 +7801,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_43">http://rs.tdwg.org/decisions/decision-2024-02-28_43</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -6274,11 +7966,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2020-01-27</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ac/terms/version/fundingAttribution-2020-01-27 ">http://rs.tdwg.org/ac/terms/version/fundingAttribution-2020-01-27 </a></td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -6290,13 +7978,14 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Specify the full official name of the funding body. This should include the complete name without abbreviations, unless the abbreviation is an official and commonly recognized form (e.g., NSF for the National Science Foundation). The recommended best practice is to separate the values in a list with space vertical bar space ( | ).</td>
+			<td>Specify the full official name of the funding body. This should include the complete name without abbreviations, unless the abbreviation is an official and commonly recognized form (e.g., NSF for the National Science Foundation). The recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
 			<td><ul class="list-group list-group-flush">
-  <li class="list-group-item"><code>Norges forskningsråd</code></li>
   <li class="list-group-item"><code>Artsdatabanken</code></li>
+  <li class="list-group-item"><code>National Science Foundation</code></li>
+  <li class="list-group-item"><code>Norges forskningsråd</code></li>
   <li class="list-group-item"><code>Ocean Census | Nippon Foundation</code></li>
 </ul></td>
 		</tr>
@@ -6311,6 +8000,14 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2019-12-01_19">http://rs.tdwg.org/decisions/decision-2019-12-01_19</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-06-12_44">http://rs.tdwg.org/decisions/decision-2025-06-12_44</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -6328,11 +8025,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2025-06-12</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/fundingAttributionID-2025-06-12">http://rs.tdwg.org/dwc/terms/version/fundingAttributionID-2025-06-12</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/fundingAttributionID-2026-04-07">http://rs.tdwg.org/dwc/terms/version/fundingAttributionID-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -6340,11 +8037,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>A list (concatenated and separated) of the globally unique identifiers for the funding organizations or agencies that supported the project.</td>
+			<td>An identifier for a dcterms:Agent that financially supported a project.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Provide a unique identifier for the funding body, such as an identifier used in governmental or international databases. If no official identifier exists, use a persistent and unique identifier within your organization or dataset. The recommended best practice is to separate the values in a list with space vertical bar space ( | ).</td>
+			<td>Provide a unique identifier for the funding body, such as an identifier used in governmental or international databases. If no official identifier exists, use a persistent and unique identifier within your organization or dataset. Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -6365,6 +8062,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2025-06-12_44">http://rs.tdwg.org/decisions/decision-2025-06-12_44</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -6462,6 +8163,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2021-07-15_34">http://rs.tdwg.org/decisions/decision-2021-07-15_34</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-12-11_54">http://rs.tdwg.org/decisions/decision-2025-12-11_54</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -6506,6 +8211,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_43">http://rs.tdwg.org/decisions/decision-2024-02-28_43</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -6627,11 +8336,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-18</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/GeologicalContext-2023-09-18">http://rs.tdwg.org/dwc/terms/version/GeologicalContext-2023-09-18</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/GeologicalContext-2026-04-07">http://rs.tdwg.org/dwc/terms/version/GeologicalContext-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -6639,11 +8348,14 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>Geological information, such as stratigraphy, that qualifies a region or place.</td>
+			<td>A set of geological designations, such as stratigraphy, that qualifies a dcterms:Location or source of a dwc:MaterialEntity.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td><code>a lithostratigraphic layer</code></td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>a particular lithostratigraphic layer</code></li>
+  <li class="list-group-item"><code>a specific chronostratigraphic unit</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -6656,6 +8368,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2014-10-26_15">http://rs.tdwg.org/decisions/decision-2014-10-26_15</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -6705,52 +8421,6 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_georeferencedBy"></a>Term Name dwciri:georeferencedBy</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/georeferencedBy">http://rs.tdwg.org/dwc/iri/georeferencedBy</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2025-07-10</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/georeferencedBy-2025-07-10">http://rs.tdwg.org/dwc/iri/version/georeferencedBy-2025-07-10</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Georeferenced By (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>A person, group, or organization who determined the georeference (spatial representation) for the dcterms:Location.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="dwc_georeferencedBy"></a>Term Name dwc:georeferencedBy</th>
 		</tr>
 	</thead>
@@ -6761,11 +8431,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/georeferencedBy-2023-06-28">http://rs.tdwg.org/dwc/terms/version/georeferencedBy-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/georeferencedBy-2026-04-07">http://rs.tdwg.org/dwc/terms/version/georeferencedBy-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -6773,7 +8443,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>A list (concatenated and separated) of names of people, groups, or organizations who determined the georeference (spatial representation) for the dcterms:Location.</td>
+			<td>A name for a dcterms:Agent responsible for providing a georeference.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
@@ -6797,6 +8467,60 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2014-10-30_16">http://rs.tdwg.org/decisions/decision-2014-10-30_16</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_georeferencedBy"></a>Term Name dwciri:georeferencedBy</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/georeferencedBy">http://rs.tdwg.org/dwc/iri/georeferencedBy</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/georeferencedBy-2026-04-07">http://rs.tdwg.org/dwc/iri/version/georeferencedBy-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Georeferenced By (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A name for a dcterms:Agent responsible for providing a georeference.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>). Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -6878,11 +8602,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2025-07-10</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/georeferenceProtocol-2025-07-10">http://rs.tdwg.org/dwc/iri/version/georeferenceProtocol-2025-07-10</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/georeferenceProtocol-2026-04-07">http://rs.tdwg.org/dwc/iri/version/georeferenceProtocol-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -6890,7 +8614,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>A description or reference to the methods used to determine the spatial footprint, coordinates, and uncertainties.</td>
+			<td>A description or reference to a dwc:Protocol used to determine a spatial footprint, coordinates, and uncertainties.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
@@ -6908,6 +8632,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -6924,11 +8652,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/georeferenceProtocol-2023-06-28">http://rs.tdwg.org/dwc/terms/version/georeferenceProtocol-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/georeferenceProtocol-2026-04-07">http://rs.tdwg.org/dwc/terms/version/georeferenceProtocol-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -6936,7 +8664,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>A description or reference to the methods used to determine the spatial footprint, coordinates, and uncertainties.</td>
+			<td>A description or reference to a dwc:Protocol used to determine a spatial footprint, coordinates, and uncertainties.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
@@ -6953,6 +8681,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -7006,52 +8738,6 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_georeferenceSources"></a>Term Name dwciri:georeferenceSources</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/georeferenceSources">http://rs.tdwg.org/dwc/iri/georeferenceSources</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2025-07-10</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/georeferenceSources-2025-07-10">http://rs.tdwg.org/dwc/iri/version/georeferenceSources-2025-07-10</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Georeference Sources (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>A map, gazetteer, or other resource used to georeference the dcterms:Location.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="dwc_georeferenceSources"></a>Term Name dwc:georeferenceSources</th>
 		</tr>
 	</thead>
@@ -7062,11 +8748,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/georeferenceSources-2023-06-28">http://rs.tdwg.org/dwc/terms/version/georeferenceSources-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/georeferenceSources-2026-04-07">http://rs.tdwg.org/dwc/terms/version/georeferenceSources-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -7074,7 +8760,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>A list (concatenated and separated) of maps, gazetteers, or other resources used to georeference the dcterms:Location, described specifically enough to allow anyone in the future to use the same resources.</td>
+			<td>A list (concatenated and separated) of maps, gazetteers, or other resources used to georeference a dcterms:Location, described specifically enough to allow anyone in the future to use the same resources.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
@@ -7083,9 +8769,9 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Examples</td>
 			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>GeoLocate</code>, <code>GeoPick</code></li>
   <li class="list-group-item"><code><a href="https://www.geonames.org/">https://www.geonames.org/</a></code></li>
   <li class="list-group-item"><code>USGS 1:24000 Florence Montana Quad 1967 | Terrametrics 2008 on Google Earth</code></li>
-  <li class="list-group-item"><code>GeoLocate</code></li>
 </ul></td>
 		</tr>
 		<tr>
@@ -7099,6 +8785,110 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2014-10-30_16">http://rs.tdwg.org/decisions/decision-2014-10-30_16</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_georeferenceSources"></a>Term Name dwciri:georeferenceSources</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/georeferenceSources">http://rs.tdwg.org/dwc/iri/georeferenceSources</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/georeferenceSources-2026-04-07">http://rs.tdwg.org/dwc/iri/version/georeferenceSources-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Georeference Sources (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A list (concatenated and separated) of maps, gazetteers, or other resources used to georeference a dcterms:Location, described specifically enough to allow anyone in the future to use the same resources.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>). Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_georeferenceVerificationStatus"></a>Term Name dwciri:georeferenceVerificationStatus</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/georeferenceVerificationStatus">http://rs.tdwg.org/dwc/iri/georeferenceVerificationStatus</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2025-07-10</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/georeferenceVerificationStatus-2025-07-10">http://rs.tdwg.org/dwc/iri/version/georeferenceVerificationStatus-2025-07-10</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Georeference Verification Status (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A categorical description of the extent to which the georeference has been verified to represent the best possible spatial description for the dcterms:Location of the dwc:Occurrence.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2021-07-15_34">http://rs.tdwg.org/decisions/decision-2021-07-15_34</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -7162,56 +8952,6 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_georeferenceVerificationStatus"></a>Term Name dwciri:georeferenceVerificationStatus</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/georeferenceVerificationStatus">http://rs.tdwg.org/dwc/iri/georeferenceVerificationStatus</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2025-07-10</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/georeferenceVerificationStatus-2025-07-10">http://rs.tdwg.org/dwc/iri/version/georeferenceVerificationStatus-2025-07-10</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Georeference Verification Status (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>A categorical description of the extent to which the georeference has been verified to represent the best possible spatial description for the dcterms:Location of the dwc:Occurrence.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2021-07-15_34">http://rs.tdwg.org/decisions/decision-2021-07-15_34</a></td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="dwc_group"></a>Term Name dwc:group</th>
 		</tr>
 	</thead>
@@ -7254,6 +8994,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_43">http://rs.tdwg.org/decisions/decision-2024-02-28_43</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -7824,11 +9568,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-18</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/Identification-2023-09-18">http://rs.tdwg.org/dwc/terms/version/Identification-2023-09-18</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/Identification-2026-04-07">http://rs.tdwg.org/dwc/terms/version/Identification-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -7836,11 +9580,18 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>A taxonomic determination (e.g., the assignment to a dwc:Taxon).</td>
+			<td>A classification of a resource according to a classification scheme.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>For biology, the assignment of a scientific name or taxon concept to a dwc:Organism.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td><code>a subspecies determination of an organism</code></td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>a subspecies determination of an organism</code></li>
+  <li class="list-group-item"><code>a nomenclatural act designating a specimen as a holotype</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -7853,6 +9604,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2014-10-26_15">http://rs.tdwg.org/decisions/decision-2014-10-26_15</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -7912,11 +9667,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/identificationID-2023-06-28">http://rs.tdwg.org/dwc/terms/version/identificationID-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/identificationID-2026-04-07">http://rs.tdwg.org/dwc/terms/version/identificationID-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -7924,7 +9679,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>An identifier for the dwc:Identification (the body of information associated with the assignment of a scientific name). May be a global unique identifier or an identifier specific to the data set.</td>
+			<td>An identifier for a dwc:Identification.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a globally unique identifier.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -7937,6 +9696,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -8053,11 +9816,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2025-06-12</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/identificationReferences-2025-06-12">http://rs.tdwg.org/dwc/terms/version/identificationReferences-2025-06-12</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/identificationReferences-2026-04-07">http://rs.tdwg.org/dwc/terms/version/identificationReferences-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8065,11 +9828,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>A list (concatenated and separated) of references (publication, global unique identifier, URI) used in the dwc:Identification.</td>
+			<td>A list (concatenated and separated) of dcterms:BibliographicResources used in a dwc:Identification.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>When used in the context of an Event (such as in the Humboldt Extension), the subject consists of all of the dwc:Organisms related to the Event. Recommended best practice is to separate the values in a list with space vertical bar space ( | ).</td>
+			<td>When used in the context of an eco:Survey, the subject consists of all of the dwc:Identifications related to the eco:Survey. Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -8093,6 +9856,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2025-06-12_44">http://rs.tdwg.org/decisions/decision-2025-06-12_44</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -8142,33 +9909,48 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_identificationVerificationStatus"></a>Term Name dwciri:identificationVerificationStatus</th>
+			<th colspan="2"><a id="dwc_identificationType"></a>Term Name dwc:identificationType</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/identificationVerificationStatus">http://rs.tdwg.org/dwc/iri/identificationVerificationStatus</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/identificationType">http://rs.tdwg.org/dwc/terms/identificationType</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2025-07-10</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/identificationVerificationStatus-2025-07-10">http://rs.tdwg.org/dwc/iri/version/identificationVerificationStatus-2025-07-10</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/identificationType-2026-04-07">http://rs.tdwg.org/dwc/terms/version/identificationType-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
-			<td>Identification Verification Status (IRI)</td>
+			<td>Identification Type</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>A categorical indicator of the extent to which the taxonomic identification has been verified to be correct.</td>
+			<td>A category that best matches the nature of a dwc:Identification.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects. Recommended best practice is to use a controlled vocabulary such as that used in HISPID and ABCD.</td>
+			<td>The evidentiary basis, analytical approach, or inferential method by which an identification was determined. Values describe the dominant source of information supporting the identification (e.g., morphology, geography, molecular data, functional attributes, relationships, or taxonomic revision), independent of confidence level or taxonomic outcome. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>geography</code></li>
+  <li class="list-group-item"><code>taxonomicRevision</code></li>
+  <li class="list-group-item"><code>functionalAttributes</code></li>
+  <li class="list-group-item"><code>nucleotideAnalysis</code></li>
+  <li class="list-group-item"><code>karyotype</code></li>
+  <li class="list-group-item"><code>media</code></li>
+  <li class="list-group-item"><code>relationship</code></li>
+  <li class="list-group-item"><code>features</code></li>
+  <li class="list-group-item"><code>fine features</code></li>
+  <li class="list-group-item"><code>unknown</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -8180,7 +9962,53 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_identificationType"></a>Term Name dwciri:identificationType</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/identificationType">http://rs.tdwg.org/dwc/iri/identificationType</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/identificationType-2026-04-07">http://rs.tdwg.org/dwc/iri/version/identificationType-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Identification Type (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A category that best matches the nature of a dwc:Identification.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>The evidentiary basis, analytical approach, or inferential method by which an identification was determined. Values describe the dominant source of information supporting the identification (e.g., morphology, geography, molecular data, functional attributes, relationships, or taxonomic revision), independent of confidence level or taxonomic outcome. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -8198,11 +10026,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/identificationVerificationStatus-2023-06-28">http://rs.tdwg.org/dwc/terms/version/identificationVerificationStatus-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/identificationVerificationStatus-2026-04-07">http://rs.tdwg.org/dwc/terms/version/identificationVerificationStatus-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8210,7 +10038,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>A categorical indicator of the extent to which the taxonomic identification has been verified to be correct.</td>
+			<td>A categorical indicator of the extent to which a taxonomic determination has been verified to be correct.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
@@ -8218,7 +10046,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td><code>0</code> ("unverified" in HISPID/ABCD).</td>
+			<td><code>0</code> (unverified in HISPID/ABCD)</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -8232,39 +10060,43 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2011-10-16_10">http://rs.tdwg.org/decisions/decision-2011-10-16_10</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_identifiedBy"></a>Term Name dwciri:identifiedBy</th>
+			<th colspan="2"><a id="dwciri_identificationVerificationStatus"></a>Term Name dwciri:identificationVerificationStatus</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/identifiedBy">http://rs.tdwg.org/dwc/iri/identifiedBy</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/identificationVerificationStatus">http://rs.tdwg.org/dwc/iri/identificationVerificationStatus</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2025-07-10</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/identifiedBy-2025-07-10">http://rs.tdwg.org/dwc/iri/version/identifiedBy-2025-07-10</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/identificationVerificationStatus-2026-04-07">http://rs.tdwg.org/dwc/iri/version/identificationVerificationStatus-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
-			<td>Identified By (IRI)</td>
+			<td>Identification Verification Status (IRI)</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>A person, group, or organization who assigned the dwc:Taxon to the subject.</td>
+			<td>A categorical indicator of the extent to which a taxonomic determination has been verified to be correct.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>When used in the context of an Event (such as in the Humboldt Extension), the subject consists of all of the dwc:Organisms related to the Event. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+			<td>Recommended best practice is to use a controlled vocabulary such as that used in HISPID and ABCD. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -8276,11 +10108,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2025-06-12_44">http://rs.tdwg.org/decisions/decision-2025-06-12_44</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -8298,11 +10130,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2025-06-12</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/identifiedBy-2025-06-12">http://rs.tdwg.org/dwc/terms/version/identifiedBy-2025-06-12</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/identifiedBy-2026-04-07">http://rs.tdwg.org/dwc/terms/version/identifiedBy-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8310,15 +10142,19 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>A list (concatenated and separated) of names of people, groups, or organizations who assigned the dwc:Taxon to the subject.</td>
+			<td>A name for a dcterms:Agent responsible for making a dwc:Identification.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>When used in the context of an Event (such as in the Humboldt Extension), the subject consists of all of the dwc:Organisms related to the Event. Recommended best practice is to separate the values in a list with space vertical bar space ( | ). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+			<td>When used in the context of an eco:Survey, the subject consists of all of the dwc:Identifications related to the eco:Survey. Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td><code>James L. Patton</code>| <code>Theodore Pappenfuss | Robert Macey</code></td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>James L. Patton</code></li>
+  <li class="list-group-item"><code>Theodore Pappenfuss | Robert Macey</code></li>
+  <li class="list-group-item"><code>MegaDetector V5</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -8340,6 +10176,64 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2025-06-12_44">http://rs.tdwg.org/decisions/decision-2025-06-12_44</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_identifiedBy"></a>Term Name dwciri:identifiedBy</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/identifiedBy">http://rs.tdwg.org/dwc/iri/identifiedBy</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/identifiedBy-2026-04-07">http://rs.tdwg.org/dwc/iri/version/identifiedBy-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Identified By (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A name for a dcterms:Agent responsible for making a dwc:Identification.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>When used in the context of an eco:Survey, the subject consists of all of the dwc:Identifications related to the eco:Survey. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-06-12_44">http://rs.tdwg.org/decisions/decision-2025-06-12_44</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -8356,11 +10250,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/identifiedByID-2023-06-28">http://rs.tdwg.org/dwc/terms/version/identifiedByID-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/identifiedByID-2026-04-07">http://rs.tdwg.org/dwc/terms/version/identifiedByID-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8368,11 +10262,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>A list (concatenated and separated) of the globally unique identifier for the person, people, groups, or organizations responsible for assigning the dwc:Taxon to the subject.</td>
+			<td>An identifier for a dcterms:Agent responsible for making a dwc:Identification.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to provide a single identifier that disambiguates the details of the identifying agent. If a list is used, the order of the identifiers on the list should not be assumed to convey any semantics. Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td>
+			<td>When used in the context of an eco:Survey, the subject consists of all of the dwc:Identifications related to the eco:Survey. Recommended best practice is to provide a single identifier that disambiguates the details of the identifying dcterms:Agent. If a list is used, the order of the identifiers on the list should not be assumed to convey any semantics. Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -8392,6 +10286,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2021-07-15_34">http://rs.tdwg.org/decisions/decision-2021-07-15_34</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -8629,6 +10527,56 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
+			<th colspan="2"><a id="dwciri_informationWithheld"></a>Term Name dwciri:informationWithheld</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/informationWithheld">http://rs.tdwg.org/dwc/iri/informationWithheld</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/informationWithheld-2026-04-07">http://rs.tdwg.org/dwc/iri/version/informationWithheld-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Information Withheld (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>Additional information that exists about a resource, but that is not shared publicly. Suggests that alternative data of higher quality may be available on request.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
 			<th colspan="2"><a id="dwc_informationWithheld"></a>Term Name dwc:informationWithheld</th>
 		</tr>
 	</thead>
@@ -8639,11 +10587,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/informationWithheld-2023-06-28">http://rs.tdwg.org/dwc/terms/version/informationWithheld-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/informationWithheld-2026-04-07">http://rs.tdwg.org/dwc/terms/version/informationWithheld-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8651,7 +10599,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>Additional information that exists, but that has not been shared in the given record.</td>
+			<td>Additional information that exists about a resource, but that is not shared publicly. Suggests that alternative data of higher quality may be available on request.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
@@ -8672,51 +10620,9 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
-			<th colspan="2"><a id="dwciri_informationWithheld"></a>Term Name dwciri:informationWithheld</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/informationWithheld">http://rs.tdwg.org/dwc/iri/informationWithheld</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2025-07-10</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/informationWithheld-2025-07-10">http://rs.tdwg.org/dwc/iri/version/informationWithheld-2025-07-10</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Information Withheld (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>Additional information that exists, but that has not been shared in the given record.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -8771,6 +10677,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2021-07-15_34">http://rs.tdwg.org/decisions/decision-2021-07-15_34</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-12-11_54">http://rs.tdwg.org/decisions/decision-2025-12-11_54</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -8787,11 +10697,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/infraspecificEpithet-2023-06-28">http://rs.tdwg.org/dwc/terms/version/infraspecificEpithet-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/infraspecificEpithet-2026-04-07">http://rs.tdwg.org/dwc/terms/version/infraspecificEpithet-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8799,19 +10709,19 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The name of the lowest or terminal infraspecific epithet of the dwc:scientificName, excluding any rank designation.</td>
+			<td>The name of the lowest or terminal infraspecific of the dwc:scientificName.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>In botany, name strings in literature and identifications may have multiple infraspecific ranks. According to the International Code of Nomenclature for algae, fungi, and plants (Schenzhen Code Articles 6.7 & Art. 24.1), valid names only have two epithets, with the lowest rank being the dwc:infraspecificEpithet. For example: the dwc:infraspecificEpithet in the string <code>Indigofera charlieriana subsp. sessilis var. scaberrima</code> is <code>scaberrima</code> and the dwc:scientificName is <code>Indigofera charlieriana var. scaberrima (Schinz) J.B.Gillett</code>. Use dwc:verbatimIdentification for the full name string used in a dwc:Identification.</td>
+			<td>In botany, name strings in literature and identifications may have multiple infraspecific ranks. According to the International Code of Nomenclature for algae, fungi, and plants (Shenzhen Code Articles 6.7 & Art. 24.1), valid names only have two epithets, with the lowest rank being the dwc:infraspecificEpithet. For example: the dwc:infraspecificEpithet in the string <code>Indigofera charlieriana subsp. sessilis var. scaberrima</code> is <code>scaberrima</code> and the dwc:scientificName is *<code>Indigofera charlieriana var. scaberrima</code>*. Use dwc:verbatimIdentification for the full name string used in a dwc:Identification. </td>
 		</tr>
 		<tr>
 			<td>Examples</td>
 			<td><ul class="list-group list-group-flush">
-  <li class="list-group-item"><code>concolor</code> (for scientificName <code>Puma concolor concolor (Linnaeus, 1771)</code>)</li>
-  <li class="list-group-item"><code>oxyadenia</code> (for scientificName <code>Quercus agrifolia var. oxyadenia (Torr.) J.T. Howell</code>)</li>
-  <li class="list-group-item"><code>laxa</code> (for scientificName <code>Cheilanthes hirta f. laxa (Kunze) W.Jacobsen & N.Jacobsen</code>)</li>
-  <li class="list-group-item"><code>scaberrima</code> (for scientificName <code>Indigofera charlieriana var. scaberrima (Schinz) J.B.Gillett</code>)</li>
+  <li class="list-group-item"><code>concolor</code> (for scientificName <code>Puma concolor concolor</code>)</li>
+  <li class="list-group-item"><code>oxyadenia</code> (for scientificName <code>Quercus agrifolia var. oxyadenia</code>)</li>
+  <li class="list-group-item"><code>laxa</code> (for scientificName <code>Cheilanthes hirta f. laxa</code>)</li>
+  <li class="list-group-item"><code>scaberrima</code> (for scientificName <code>Indigofera charlieriana var. scaberrima</code>)</li>
 </ul></td>
 		</tr>
 		<tr>
@@ -8825,6 +10735,14 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2023-06-28_40">http://rs.tdwg.org/decisions/decision-2023-06-28_40</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-12-11_54">http://rs.tdwg.org/decisions/decision-2025-12-11_54</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -8842,11 +10760,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/institutionCode-2023-06-28">http://rs.tdwg.org/dwc/terms/version/institutionCode-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/institutionCode-2026-04-07">http://rs.tdwg.org/dwc/terms/version/institutionCode-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8854,7 +10772,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The name (or acronym) in use by the institution having custody of the object(s) or information referred to in the record.</td>
+			<td>A name (or acronym) in use by an institution having custody of a resource.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>The institution having ownership of a resource should be given in dwc:ownerInstitutionCode.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -8863,6 +10785,8 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
   <li class="list-group-item"><code>FMNH</code></li>
   <li class="list-group-item"><code>CLO</code></li>
   <li class="list-group-item"><code>UCMP</code></li>
+  <li class="list-group-item"><code>National Museum of Kenya</code></li>
+  <li class="list-group-item"><code>Kew Gardens</code></li>
 </ul></td>
 		</tr>
 		<tr>
@@ -8872,6 +10796,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -8889,11 +10817,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2025-06-12</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/institutionID-2025-06-12">http://rs.tdwg.org/dwc/terms/version/institutionID-2025-06-12</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/institutionID-2026-04-07">http://rs.tdwg.org/dwc/terms/version/institutionID-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8901,11 +10829,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>An identifier for the institution having custody of the object(s) or information referred to in the record.</td>
+			<td>An identifier for an organization.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>For physical specimens, the recommended best practice is to use a globally unique and resolvable identifier from a collections registry such as the Research Organization Registry (ROR) or the Global Registry of Scientific Collections (<a href="https://scientific-collections.gbif.org/">https://scientific-collections.gbif.org/</a>)</td>
+			<td>For physical specimens, the recommended best practice is to use a globally unique and resolvable identifier from a collections registry such as the Research Organization Registry (ROR) or the Global Registry of Scientific Collections (<a href="https://scientific-collections.gbif.org/">https://scientific-collections.gbif.org/</a>).</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -8926,6 +10854,63 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2025-06-12_44">http://rs.tdwg.org/decisions/decision-2025-06-12_44</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_isAcceptedIdentification"></a>Term Name dwc:isAcceptedIdentification</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/isAcceptedIdentification">http://rs.tdwg.org/dwc/terms/isAcceptedIdentification</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/isAcceptedIdentification-2026-04-07">http://rs.tdwg.org/dwc/terms/version/isAcceptedIdentification-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Is Accepted Identification</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>An indicator that a dwc:Identification of a dwc:Organism is a currently an accepted or preferred one.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to follow the TDWG Boolean Controlled Vocabulary <a href="http://rs.tdwg.org/tag/doc/boolean/">http://rs.tdwg.org/tag/doc/boolean/</a>.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>true</code></li>
+  <li class="list-group-item"><code>false</code></li>
+</ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -8979,6 +10964,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_43">http://rs.tdwg.org/decisions/decision-2024-02-28_43</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -9028,6 +11017,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_43">http://rs.tdwg.org/decisions/decision-2024-02-28_43</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -9079,6 +11072,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_43">http://rs.tdwg.org/decisions/decision-2024-02-28_43</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -9229,6 +11226,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_43">http://rs.tdwg.org/decisions/decision-2024-02-28_43</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -9291,11 +11292,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2025-06-12</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/latestEonOrHighestEonothem-2025-06-12">http://rs.tdwg.org/dwc/terms/version/latestEonOrHighestEonothem-2025-06-12</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/latestEonOrHighestEonothem-2026-04-07">http://rs.tdwg.org/dwc/terms/version/latestEonOrHighestEonothem-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -9303,13 +11304,14 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The full name of the latest possible geochronologic eon or highest chrono-stratigraphic eonothem or the informal name ("Precambrian") attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.</td>
+			<td>The full name of the latest possible geochronologic eon or highest chronostratigraphic eonothem or the informal name attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
 			<td><ul class="list-group list-group-flush">
   <li class="list-group-item"><code>Phanerozoic</code></li>
   <li class="list-group-item"><code>Proterozoic</code></li>
+  <li class="list-group-item"><code>Precambrian</code></li>
 </ul></td>
 		</tr>
 		<tr>
@@ -9326,7 +11328,15 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_43">http://rs.tdwg.org/decisions/decision-2024-02-28_43</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2025-06-12_44">http://rs.tdwg.org/decisions/decision-2025-06-12_44</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -9378,6 +11388,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_43">http://rs.tdwg.org/decisions/decision-2024-02-28_43</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -9426,6 +11440,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_43">http://rs.tdwg.org/decisions/decision-2024-02-28_43</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -9523,6 +11541,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_43">http://rs.tdwg.org/decisions/decision-2024-02-28_43</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -9572,51 +11594,9 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2014-11-06_17">http://rs.tdwg.org/decisions/decision-2014-11-06_17</a></td>
 		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
-			<th colspan="2"><a id="dwciri_lifeStage"></a>Term Name dwciri:lifeStage</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/lifeStage">http://rs.tdwg.org/dwc/iri/lifeStage</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2025-07-10</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/lifeStage-2025-07-10">http://rs.tdwg.org/dwc/iri/version/lifeStage-2025-07-10</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Life Stage (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>The age class or life stage of the dwc:Organism(s) at the time the dwc:Occurrence was recorded.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_43">http://rs.tdwg.org/decisions/decision-2024-02-28_43</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -9634,11 +11614,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/lifeStage-2023-06-28">http://rs.tdwg.org/dwc/terms/version/lifeStage-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/lifeStage-2026-04-07">http://rs.tdwg.org/dwc/terms/version/lifeStage-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -9646,7 +11626,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The age class or life stage of the dwc:Organism(s) at the time the dwc:Occurrence was recorded.</td>
+			<td>An age class or life stage of a dwc:Organism.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
@@ -9675,6 +11655,64 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2019-12-01_19">http://rs.tdwg.org/decisions/decision-2019-12-01_19</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-02-24_55">http://rs.tdwg.org/decisions/decision-2026-02-24_55</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_lifeStage"></a>Term Name dwciri:lifeStage</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/lifeStage">http://rs.tdwg.org/dwc/iri/lifeStage</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/lifeStage-2026-04-07">http://rs.tdwg.org/dwc/iri/version/lifeStage-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Life Stage (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>An age class or life stage of a dwc:Organism.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -9824,6 +11862,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_43">http://rs.tdwg.org/decisions/decision-2024-02-28_43</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -9875,6 +11917,52 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
+			<th colspan="2"><a id="dwciri_locationAccordingTo"></a>Term Name dwciri:locationAccordingTo</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/locationAccordingTo">http://rs.tdwg.org/dwc/iri/locationAccordingTo</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2025-07-10</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/locationAccordingTo-2025-07-10">http://rs.tdwg.org/dwc/iri/version/locationAccordingTo-2025-07-10</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Location According To (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>Information about the source of this dcterms:Location information. Could be a publication (gazetteer), institution, or team of individuals.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
 			<th colspan="2"><a id="dwc_locationAccordingTo"></a>Term Name dwc:locationAccordingTo</th>
 		</tr>
 	</thead>
@@ -9917,52 +12005,6 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
-			<th colspan="2"><a id="dwciri_locationAccordingTo"></a>Term Name dwciri:locationAccordingTo</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/locationAccordingTo">http://rs.tdwg.org/dwc/iri/locationAccordingTo</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2025-07-10</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/locationAccordingTo-2025-07-10">http://rs.tdwg.org/dwc/iri/version/locationAccordingTo-2025-07-10</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Location According To (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>Information about the source of this dcterms:Location information. Could be a publication (gazetteer), institution, or team of individuals.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -10022,11 +12064,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/locationID-2023-06-28">http://rs.tdwg.org/dwc/terms/version/locationID-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/locationID-2026-04-07">http://rs.tdwg.org/dwc/terms/version/locationID-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -10034,7 +12076,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>An identifier for the set of dcterms:Location information. May be a global unique identifier or an identifier specific to the data set.</td>
+			<td>An identifier for a dcterms:Location.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a globally unique identifier.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -10047,6 +12093,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -10257,11 +12307,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-13</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/MaterialEntity-2023-09-13">http://rs.tdwg.org/dwc/terms/version/MaterialEntity-2023-09-13</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/MaterialEntity-2026-04-07">http://rs.tdwg.org/dwc/terms/version/MaterialEntity-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -10273,29 +12323,27 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>The term is defined at the most general level to admit descriptions of any subtype of material entity within the scope of Darwin Core. In particular, any kind of material sample, preserved specimen, fossil, or exemplar from living collections is intended to be subsumed under this term.</td>
+			<td>The term is defined at the most general level to admit descriptions of any subtype of material entity within the scope of Darwin Core. In particular, any kind of material sample, preserved specimen, fossil, or exemplar from living collections is intended to be subsumed under this term. In Darwin Core, dwc:Organism, dwc:Occurrence, and dwc:MaterialEntity are related, but distinct concepts. A dwc:Organism is a biological individual or group with an identity and life history that persists independently of the particular dwc:MaterialEntities through which it is manifested. A dwc:Occurrence is a dwc:Event that represents the presence or state of a dwc:Organism at a place during an interval of time, with no explicit dependency on any dwc:MaterialEntity. A dwc:MaterialEntity represents physical matter, including whole bodies, parts, or derivatives of dwc:Organisms, that may directly or indirectly serve as evidence of a dwc:Occurrence.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
 			<td><ul class="list-group list-group-flush">
-  <li class="list-group-item"><code>an instance of a fossil</code></li>
-  <li class="list-group-item"><code>an instance of a herbarium sheet with its attached plant specimen</code></li>
-  <li class="list-group-item"><code>a particular part of the plant-derived material affixed to a herbarium sheet</code></li>
-  <li class="list-group-item"><code>an instance of a frozen tissue sample</code></li>
+  <li class="list-group-item"><code>the entire contents of a trawl</code></li>
+  <li class="list-group-item"><code>a subset of the contents of a trawl</code></li>
+  <li class="list-group-item"><code>the body of a fish</code></li>
+  <li class="list-group-item"><code>the stomach contents of a fish</code></li>
+  <li class="list-group-item"><code>a rock containing fossils</code></li>
+  <li class="list-group-item"><code>a fossil within a rock</code></li>
+  <li class="list-group-item"><code>an herbarium sheet with its attached plant specimen</code></li>
+  <li class="list-group-item"><code>a flower on a plant specimen</code></li>
+  <li class="list-group-item"><code>a pollen grain</code></li>
   <li class="list-group-item"><code>a specific water sample</code></li>
-  <li class="list-group-item"><code>an instance of a meteorite fragment</code></li>
-  <li class="list-group-item"><code>a particular wolf in a zoo</code></li>
-  <li class="list-group-item"><code>a particular pack of wolves in the wild</code></li>
   <li class="list-group-item"><code>an isolated molecule of DNA</code></li>
-  <li class="list-group-item"><code>a specific deep-frozen DNA sample</code></li>
-  <li class="list-group-item"><code>a particular field notebook</code></li>
-  <li class="list-group-item"><code>a particular paper page from a field notebook</code></li>
-  <li class="list-group-item"><code>an instance of a printed photograph</code></li>
 </ul></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
-			<td>None (Specimen Unit, when used to denote a class of things, appears to be a broadly construed subclass.)</td>
+			<td>not in ABCD (Specimen Unit, when used to denote a class of things, appears to be a broadly construed subclass.)</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -10304,6 +12352,106 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_materialEntityCategory"></a>Term Name dwciri:materialEntityCategory</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/materialEntityCategory">http://rs.tdwg.org/dwc/iri/materialEntityCategory</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/materialEntityCategory-2026-04-07">http://rs.tdwg.org/dwc/iri/version/materialEntityCategory-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Material Entity Category (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A high-level, mutually exclusive classification describing the fundamental substance and origin of a dwc:MaterialEntity.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a limited, tightly controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_materialEntityCategory"></a>Term Name dwc:materialEntityCategory</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/materialEntityCategory">http://rs.tdwg.org/dwc/terms/materialEntityCategory</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/materialEntityCategory-2026-04-07">http://rs.tdwg.org/dwc/terms/version/materialEntityCategory-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Material Entity Category</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A high-level, mutually exclusive classification describing the fundamental substance and origin of a dwc:MaterialEntity.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a limited, tightly controlled vocabulary. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><code>liveOrganism</code>, <code>deadOrganism</code>, <code>partOfOrganism</code>, <code>nonMolecularBiologicalExtract</code>, <code>molecularBiologicalExtract</code>, <code>mineral</code>, <code>rock</code>, <code>fossil</code>, <code>chemical</code>, <code>humanArtifactWithBiologicalConstituent</code>, <code>humanArtifactWithoutBiologicalConstituent</code>, and <code>mixed</code></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -10371,11 +12519,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-13</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/materialEntityRemarks-2023-09-13">http://rs.tdwg.org/dwc/terms/version/materialEntityRemarks-2023-09-13</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/materialEntityRemarks-2026-04-07">http://rs.tdwg.org/dwc/terms/version/materialEntityRemarks-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -10383,7 +12531,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>Comments or notes about the dwc:MaterialEntity instance.</td>
+			<td>Comments or notes about a dwc:MaterialEntity.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -10404,6 +12552,56 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_materialEntityType"></a>Term Name dwciri:materialEntityType</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/materialEntityType">http://rs.tdwg.org/dwc/iri/materialEntityType</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/materialEntityType-2026-04-07">http://rs.tdwg.org/dwc/iri/version/materialEntityType-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Material Entity Type (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A more generic classification of a dwc:MaterialEntity than dwc:preparations but less broad than dwc:materialCategory.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>A more generic classification of a dwc:MaterialEntity than dwc:preparations. Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -10420,11 +12618,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2025-06-12</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/materialEntityType-2025-06-12">http://rs.tdwg.org/dwc/terms/version/materialEntityType-2025-06-12</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/materialEntityType-2026-04-07">http://rs.tdwg.org/dwc/terms/version/materialEntityType-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -10432,34 +12630,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>A category that best matches the nature of a dwc:MaterialEntity.</td>
+			<td>A more generic classification of a dwc:MaterialEntity than dwc:preparations but less broad than dwc:materialCategory.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
 			<td>A more generic classification of a dwc:MaterialEntity than dwc:preparations. Recommended best practice is to use a controlled vocabulary. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
-		</tr>
-		<tr>
-			<td>Examples</td>
-			<td><ul class="list-group list-group-flush">
-  <li class="list-group-item"><code>Macro-object</code></li>
-  <li class="list-group-item"><code>Micro-object</code></li>
-  <li class="list-group-item"><code>Oversized object</code></li>
-  <li class="list-group-item"><code>Cut/polished gemstone</code></li>
-  <li class="list-group-item"><code>Compound Specimen</code></li>
-  <li class="list-group-item"><code>Core</code></li>
-  <li class="list-group-item"><code>Mixed Materials</code></li>
-  <li class="list-group-item"><code>Environmental sample</code></li>
-  <li class="list-group-item"><code>Microscope slide</code></li>
-  <li class="list-group-item"><code>Spore print</code></li>
-  <li class="list-group-item"><code>Macrofossil</code></li>
-  <li class="list-group-item"><code>Mesofossil</code></li>
-  <li class="list-group-item"><code>Microfossil</code></li>
-  <li class="list-group-item"><code>Pinned object/specimen</code></li>
-  <li class="list-group-item"><code>Taxidermy mount</code></li>
-  <li class="list-group-item"><code>Blood sampling cards</code></li>
-  <li class="list-group-item"><code>Oversized fossil</code></li>
-  <li class="list-group-item"><code>Anthropogenic Artifact</code></li>
-</ul></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -10472,6 +12647,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2025-06-12_44">http://rs.tdwg.org/decisions/decision-2025-06-12_44</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -10598,11 +12777,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/maximumDepthInMeters-2023-06-28">http://rs.tdwg.org/dwc/terms/version/maximumDepthInMeters-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/maximumDepthInMeters-2026-04-07">http://rs.tdwg.org/dwc/terms/version/maximumDepthInMeters-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -10610,7 +12789,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The greater depth of a range of depth below the local surface, in meters.</td>
+			<td>The greatest depth within a range of depths, measured relative to the vertical reference surface indicated by the value of dwc:verticalDatum.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>See <a href="https://docs.gbif.org/georeferencing-best-practices/1.0/en/#img-depth-elevation-distance-above-surface">https://docs.gbif.org/georeferencing-best-practices/1.0/en/#img-depth-elevation-distance-above-surface</a>.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -10626,6 +12809,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -10689,11 +12876,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/maximumElevationInMeters-2023-06-28">http://rs.tdwg.org/dwc/terms/version/maximumElevationInMeters-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/maximumElevationInMeters-2026-04-07">http://rs.tdwg.org/dwc/terms/version/maximumElevationInMeters-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -10701,7 +12888,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The upper limit of the range of elevation (altitude, usually above sea level), in meters.</td>
+			<td>The greatest elevation within a range of elevations, measured relative to the vertical reference surface indicated by the value of dwc:verticalDatum.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>See <a href="https://docs.gbif.org/georeferencing-best-practices/1.0/en/#img-depth-elevation-distance-above-surface">https://docs.gbif.org/georeferencing-best-practices/1.0/en/#img-depth-elevation-distance-above-surface</a>.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -10717,6 +12908,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -10762,6 +12957,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_43">http://rs.tdwg.org/decisions/decision-2024-02-28_43</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -11013,6 +13212,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_43">http://rs.tdwg.org/decisions/decision-2024-02-28_43</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -11159,6 +13362,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_43">http://rs.tdwg.org/decisions/decision-2024-02-28_43</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -11257,47 +13464,9 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_measurementUnit"></a>Term Name dwciri:measurementUnit</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/measurementUnit">http://rs.tdwg.org/dwc/iri/measurementUnit</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2023-06-28</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/measurementUnit-2023-06-28">http://rs.tdwg.org/dwc/iri/version/measurementUnit-2023-06-28</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Measurement Unit (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>The units associated with the dwc:measurementValue.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Recommended best practice is to use a controlled vocabulary such as the Ontology of Units of Measure <a href="http://www.wurvoc.org/vocabularies/om-1.8/">http://www.wurvoc.org/vocabularies/om-1.8/</a> of SI units, derived units, or other non-SI units accepted for use within the SI.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_43">http://rs.tdwg.org/decisions/decision-2024-02-28_43</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -11353,6 +13522,108 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_43">http://rs.tdwg.org/decisions/decision-2024-02-28_43</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_measurementUnit"></a>Term Name dwciri:measurementUnit</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/measurementUnit">http://rs.tdwg.org/dwc/iri/measurementUnit</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2023-06-28</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/measurementUnit-2023-06-28">http://rs.tdwg.org/dwc/iri/version/measurementUnit-2023-06-28</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Measurement Unit (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The units associated with the dwc:measurementValue.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a controlled vocabulary such as the Ontology of Units of Measure <a href="http://www.wurvoc.org/vocabularies/om-1.8/">http://www.wurvoc.org/vocabularies/om-1.8/</a> of SI units, derived units, or other non-SI units accepted for use within the SI.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_measurementValue"></a>Term Name dwc:measurementValue</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/measurementValue">http://rs.tdwg.org/dwc/terms/measurementValue</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2023-06-28</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/measurementValue-2023-06-28">http://rs.tdwg.org/dwc/terms/version/measurementValue-2023-06-28</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Measurement Value</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The value of the measurement, fact, characteristic, or assertion.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>45</code></li>
+  <li class="list-group-item"><code>20</code></li>
+  <li class="list-group-item"><code>1</code></li>
+  <li class="list-group-item"><code>14.5</code></li>
+  <li class="list-group-item"><code>UV-light</code></li>
+</ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>DataSets/DataSet/Units/Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/UpperValue or DataSets/DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts/SiteMeasurementOrFact/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts/SiteMeasurementOrFact/MeasurementOrFactAtomised/UpperValue or DataSets/DataSet/Units/Unit/Gathering/Altitude/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/Gathering/Altitude/MeasurementOrFactAtomised/UpperValue or DataSets/DataSet/Units/Unit/Gathering/Depth/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/Gathering/Depth/MeasurementOrFactAtomised/UpperValue or DataSets/DataSet/Units/Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFactAtomised/UpperValue or DataSets/DataSet/Units/Unit/Gathering/Height/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/Gathering/Height/MeasurementOrFactAtomised/UpperValue</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_43">http://rs.tdwg.org/decisions/decision-2024-02-28_43</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -11414,51 +13685,55 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_measurementValue"></a>Term Name dwc:measurementValue</th>
+			<th colspan="2"><a id="ac_Media"></a>Term Name ac:Media</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/measurementValue">http://rs.tdwg.org/dwc/terms/measurementValue</a></td>
+			<td><a href="http://rs.tdwg.org/ac/terms/Media">http://rs.tdwg.org/ac/terms/Media</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/measurementValue-2023-06-28">http://rs.tdwg.org/dwc/terms/version/measurementValue-2023-06-28</a></td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Label</td>
-			<td>Measurement Value</td>
+			<td>Media Entity</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The value of the measurement, fact, characteristic, or assertion.</td>
+			<td>A digital or physical media resource.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+			<td>An instance of digital textual media may be better represented as a dcterms:BibliographicResource.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
 			<td><ul class="list-group list-group-flush">
-  <li class="list-group-item"><code>45</code></li>
-  <li class="list-group-item"><code>20</code></li>
-  <li class="list-group-item"><code>1</code></li>
-  <li class="list-group-item"><code>14.5</code></li>
-  <li class="list-group-item"><code>UV-light</code></li>
+  <li class="list-group-item"><code>dcmi:Sound</code></li>
+  <li class="list-group-item"><code>dcmi:StillImage</code></li>
+  <li class="list-group-item"><code>dcmi:MovingImage</code></li>
+  <li class="list-group-item"><code>dcmi:InteractiveResource</code></li>
+  <li class="list-group-item"><code>ac:Digital3DResource</code></li>
 </ul></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
-			<td>DataSets/DataSet/Units/Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/UpperValue or DataSets/DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts/SiteMeasurementOrFact/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts/SiteMeasurementOrFact/MeasurementOrFactAtomised/UpperValue or DataSets/DataSet/Units/Unit/Gathering/Altitude/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/Gathering/Altitude/MeasurementOrFactAtomised/UpperValue or DataSets/DataSet/Units/Unit/Gathering/Depth/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/Gathering/Depth/MeasurementOrFactAtomised/UpperValue or DataSets/DataSet/Units/Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFactAtomised/UpperValue or DataSets/DataSet/Units/Unit/Gathering/Height/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/Gathering/Height/MeasurementOrFactAtomised/UpperValue</td>
+			<td>This term is equivalent to the ABCD term <a href="http://rs.tdwg.org/abcd/terms/MultimediaObject">http://rs.tdwg.org/abcd/terms/MultimediaObject</a> .</td>
 		</tr>
 		<tr>
 			<td>Type</td>
-			<td>Property</td>
+			<td>Class</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-02-24_55">http://rs.tdwg.org/decisions/decision-2026-02-24_55</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -11509,6 +13784,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_43">http://rs.tdwg.org/decisions/decision-2024-02-28_43</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -11525,11 +13804,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/minimumDepthInMeters-2023-06-28">http://rs.tdwg.org/dwc/terms/version/minimumDepthInMeters-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/minimumDepthInMeters-2026-04-07">http://rs.tdwg.org/dwc/terms/version/minimumDepthInMeters-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -11537,7 +13816,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The lesser depth of a range of depth below the local surface, in meters.</td>
+			<td>The least depth within a range of depths, measured relative to the vertical reference surface indicated by the value of dwc:verticalDatum.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>See <a href="https://docs.gbif.org/georeferencing-best-practices/1.0/en/#img-depth-elevation-distance-above-surface">https://docs.gbif.org/georeferencing-best-practices/1.0/en/#img-depth-elevation-distance-above-surface</a>.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -11553,6 +13836,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -11616,11 +13903,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/minimumElevationInMeters-2023-06-28">http://rs.tdwg.org/dwc/terms/version/minimumElevationInMeters-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/minimumElevationInMeters-2026-04-07">http://rs.tdwg.org/dwc/terms/version/minimumElevationInMeters-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -11628,7 +13915,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The lower limit of the range of elevation (altitude, usually above sea level), in meters.</td>
+			<td>The least elevation within a range of elevations, measured relative to the vertical reference surface indicated by the value of dwc:verticalDatum.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>See <a href="https://docs.gbif.org/georeferencing-best-practices/1.0/en/#img-depth-elevation-distance-above-surface">https://docs.gbif.org/georeferencing-best-practices/1.0/en/#img-depth-elevation-distance-above-surface</a>.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -11644,6 +13935,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -11704,6 +13999,110 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2019-12-01_19">http://rs.tdwg.org/decisions/decision-2019-12-01_19</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-06-12_44">http://rs.tdwg.org/decisions/decision-2025-06-12_44</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-02-24_55">http://rs.tdwg.org/decisions/decision-2026-02-24_55</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_MolecularProtocol"></a>Term Name dwc:MolecularProtocol</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/MolecularProtocol">http://rs.tdwg.org/dwc/terms/MolecularProtocol</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/MolecularProtocol-2026-04-07">http://rs.tdwg.org/dwc/terms/version/MolecularProtocol-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Molecular Protocol</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A protocol used to perform a dwc:NucleotideAnalysis and potentially derive a dwc:NucleotideSequence from a dwc:MaterialEntity.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>a standard DNA barcoding workflow using Sanger sequencing</code></li>
+  <li class="list-group-item"><code>a shotgun metagenomics pipeline for microbial community profiling</code></li>
+  <li class="list-group-item"><code>a high-throughput amplicon sequencing protocol targeting 16S rRNA</code></li>
+</ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Class</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_molecularProtocolID"></a>Term Name dwc:molecularProtocolID</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/molecularProtocolID">http://rs.tdwg.org/dwc/terms/molecularProtocolID</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/molecularProtocolID-2026-04-07">http://rs.tdwg.org/dwc/terms/version/molecularProtocolID-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Molecular Protocol ID</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>An identifier for a dwc:MolecularProtocol.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a globally unique identifier.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -11804,6 +14203,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2023-06-28_40">http://rs.tdwg.org/decisions/decision-2023-06-28_40</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_43">http://rs.tdwg.org/decisions/decision-2024-02-28_43</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -11820,11 +14223,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/nameAccordingTo-2023-06-28">http://rs.tdwg.org/dwc/terms/version/nameAccordingTo-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/nameAccordingTo-2026-04-07">http://rs.tdwg.org/dwc/terms/version/nameAccordingTo-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -11836,7 +14239,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>This term provides context to the dwc:scientificName. Together with the dwc:scientificName, separated by <code>sensu</code> or <code>sec.</code>, it forms the taxon concept label, which may be seen as having the same relationship to dwc:taxonConceptID as, for example, dwc:acceptedNameUsage has to dwc:acceptedNameUsageID. When not provided, in Taxon Core data sets the dwc:nameAccordingTo can be taken to be the data set. In this case the data set mostly provides sufficient context to infer the delimitation of the taxon and its relationship with other taxa. In Occurrence Core data sets, when not provided, dwc:nameAccordingTo can be an underlying taxonomy of the data set, e.g. Plants of the World Online (<a href="http://powo.science.kew.org/">http://powo.science.kew.org/</a>) for vascular plant records in iNaturalist (in which case it should be provided), or, which is the case for most dwc:PreservedSpecimen data sets, the dwc:Identification, in which case there is no further context.</td>
+			<td>This term provides context to the dwc:scientificName. Together with the dwc:scientificName, separated by <code>sensu</code> or <code>sec.</code>, it forms the taxon concept label, which may be seen as having the same relationship to dwc:taxonConceptID as, for example, dwc:acceptedNameUsage has to dwc:acceptedNameUsageID. When not provided, in Taxon Core data sets the dwc:nameAccordingTo can be taken to be the data set. In this case the data set mostly provides sufficient context to infer the delimitation of the taxon and its relationship with other taxa. In Occurrence Core data sets, when not provided, dwc:nameAccordingTo can be an underlying taxonomy of the data set, e.g., Plants of the World Online (<a href="http://powo.science.kew.org/">http://powo.science.kew.org/</a>) for vascular plant records in iNaturalist (in which case it should be provided), or, which is the case for most dwc:PreservedSpecimen data sets, the dwc:Identification, in which case there is no further context.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -11853,6 +14256,14 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2019-12-01_19">http://rs.tdwg.org/decisions/decision-2019-12-01_19</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-02-24_55">http://rs.tdwg.org/decisions/decision-2026-02-24_55</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -11995,6 +14406,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2023-06-28_40">http://rs.tdwg.org/decisions/decision-2023-06-28_40</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-12-11_54">http://rs.tdwg.org/decisions/decision-2025-12-11_54</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -12089,6 +14504,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2011-10-16_8">http://rs.tdwg.org/decisions/decision-2011-10-16_8</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-12-11_54">http://rs.tdwg.org/decisions/decision-2025-12-11_54</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -12194,6 +14613,286 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
+			<th colspan="2"><a id="dwc_NucleotideAnalysis"></a>Term Name dwc:NucleotideAnalysis</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/NucleotideAnalysis">http://rs.tdwg.org/dwc/terms/NucleotideAnalysis</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/NucleotideAnalysis-2026-04-07">http://rs.tdwg.org/dwc/terms/version/NucleotideAnalysis-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Nucleotide Analysis</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A link between a dwc:NucleotideSequence or a dwc:Identification and a dwc:Event and a dwc:MaterialEntity from which it was derived, using a specified dwc:Protocol.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Class</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_NucleotideSequence"></a>Term Name dwc:NucleotideSequence</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/NucleotideSequence">http://rs.tdwg.org/dwc/terms/NucleotideSequence</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/NucleotideSequence-2026-04-07">http://rs.tdwg.org/dwc/terms/version/NucleotideSequence-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Nucleotide Sequence</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A digital representation of a nucleotide sequence.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Class</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_nucleotideSequenceRemarks"></a>Term Name dwc:nucleotideSequenceRemarks</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/nucleotideSequenceRemarks">http://rs.tdwg.org/dwc/terms/nucleotideSequenceRemarks</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/nucleotideSequenceRemarks-2026-04-07">http://rs.tdwg.org/dwc/terms/version/nucleotideSequenceRemarks-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Nucleotide Sequence Remarks</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>Comments or notes about a dwc:NucleotideSequence.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_objectQuantity"></a>Term Name dwc:objectQuantity</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/objectQuantity">http://rs.tdwg.org/dwc/terms/objectQuantity</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/objectQuantity-2026-04-07">http://rs.tdwg.org/dwc/terms/version/objectQuantity-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Object Quantity</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A number or enumeration value for the quantity of differentiable dwc:MaterialEntities comprising this dwc:MaterialEntity.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>An dwc:objectQuantity must have a corresponding dwc:objectQuantityType.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>27</code> (objectQuantity) with <code>individuals</code> (objectQuantityType)</li>
+  <li class="list-group-item"><code>many</code> (objectQuantity) with <code>individuals</code> (objectQuantityType)</li>
+  <li class="list-group-item"><code>3</code> (objectQuantity) with <code>legs</code> (objectQuantityType)</li>
+</ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_objectQuantityType"></a>Term Name dwciri:objectQuantityType</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/objectQuantityType">http://rs.tdwg.org/dwc/iri/objectQuantityType</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/objectQuantityType-2026-04-07">http://rs.tdwg.org/dwc/iri/version/objectQuantityType-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Object Quantity Type (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The type of quantification system used for the quantity of dwc:MaterialEntities.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>An dwc:objectQuantityType must have a corresponding dwc:objectQuantity. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_objectQuantityType"></a>Term Name dwc:objectQuantityType</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/objectQuantityType">http://rs.tdwg.org/dwc/terms/objectQuantityType</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/objectQuantityType-2026-04-07">http://rs.tdwg.org/dwc/terms/version/objectQuantityType-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Object Quantity Type</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The type of quantification system used for the quantity of dwc:MaterialEntities.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>An dwc:objectQuantityType must have a corresponding dwc:objectQuantity. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>27</code> (objectQuantity) with <code>individuals</code> (objectQuantityType)</li>
+  <li class="list-group-item"><code>many</code> (objectQuantity) with <code>individuals</code> (objectQuantityType)</li>
+  <li class="list-group-item"><code>3</code> (objectQuantity) with <code>legs</code> (objectQuantityType)</li>
+</ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
 			<th colspan="2"><a id="dwc_Occurrence"></a>Term Name dwc:Occurrence</th>
 		</tr>
 	</thead>
@@ -12204,11 +14903,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-18</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/Occurrence-2023-09-18">http://rs.tdwg.org/dwc/terms/version/Occurrence-2023-09-18</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/Occurrence-2026-04-07">http://rs.tdwg.org/dwc/terms/version/Occurrence-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -12216,7 +14915,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>An existence of a dwc:Organism at a particular place at a particular time.</td>
+			<td>A dwc:Event that establishes the state of a dwc:Organism at a particular place and time.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>In Darwin Core, dwc:Organism, dwc:Occurrence, and dwc:MaterialEntity are related, but distinct concepts. A dwc:Organism is a biological individual or group with an identity and life history that persists independently of the particular dwc:MaterialEntities through which it is manifested. A dwc:Occurrence is a dwc:Event that represents the presence or state of a dwc:Organism at a place during an interval of time, with no explicit dependency on any dwc:MaterialEntity. A dwc:MaterialEntity represents physical matter, including whole bodies, parts, or derivatives of dwc:Organisms, that may directly or indirectly serve as evidence of a dwc:Occurrence.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -12224,6 +14927,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
   <li class="list-group-item"><code>a wolf pack on the shore of Kluane Lake in 1988</code></li>
   <li class="list-group-item"><code>a virus in a plant leaf in the New York Botanical Garden at 15:29 on 2014-10-23</code></li>
   <li class="list-group-item"><code>a fungus in Central Park in the summer of 1929</code></li>
+  <li class="list-group-item"><code>a male lance-tailed manakin in a courtship display on Isla Boca Brava</code></li>
 </ul></td>
 		</tr>
 		<tr>
@@ -12237,6 +14941,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2014-10-26_15">http://rs.tdwg.org/decisions/decision-2014-10-26_15</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -12342,11 +15050,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/occurrenceID-2023-06-28">http://rs.tdwg.org/dwc/terms/version/occurrenceID-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/occurrenceID-2026-04-07">http://rs.tdwg.org/dwc/terms/version/occurrenceID-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -12354,18 +15062,18 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>An identifier for the dwc:Occurrence (as opposed to a particular digital record of the dwc:Occurrence). In the absence of a persistent global unique identifier, construct one from a combination of identifiers in the record that will most closely make the dwc:occurrenceID globally unique.</td>
+			<td>An identifier for a dwc:Occurrence (as opposed to a particular digital record of a dwc:Occurrence).</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to use a persistent, globally unique identifier.</td>
+			<td>In the absence of a persistent global unique identifier, construct one from a combination of identifiers in the record that will most closely make the dwc:occurrenceID globally unique.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
 			<td><ul class="list-group list-group-flush">
-  <li class="list-group-item"><code><a href="http://arctos.database.museum/guid/MSB:Mamm:233627">http://arctos.database.museum/guid/MSB:Mamm:233627</a></code></li>
-  <li class="list-group-item"><code>000866d2-c177-4648-a200-ead4007051b9</code></li>
-  <li class="list-group-item"><code>urn:catalog:UWBM:Bird:89776</code></li>
+  <li class="list-group-item"><code><a href="https://arctos.database.museum/guid/MSB:Mamm:231731?seid=966527">https://arctos.database.museum/guid/MSB:Mamm:231731?seid=966527</a></code></li>
+  <li class="list-group-item"><code>3854b337a-da0b-483f-a1c7-107403bdbb40</code></li>
+  <li class="list-group-item"><code><a href="http://n2t.net/ark:/65665/3854b337a-da0b-483f-a1c7-107403bdbb40">http://n2t.net/ark:/65665/3854b337a-da0b-483f-a1c7-107403bdbb40</a></code></li>
 </ul></td>
 		</tr>
 		<tr>
@@ -12375,6 +15083,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -12832,11 +15544,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2025-07-10</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/occurrenceStatus-2025-07-10">http://rs.tdwg.org/dwc/iri/version/occurrenceStatus-2025-07-10</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/occurrenceStatus-2026-04-07">http://rs.tdwg.org/dwc/iri/version/occurrenceStatus-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -12844,11 +15556,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>A statement about the presence or absence of a dwc:Taxon at a dcterms:Location.</td>
+			<td>A statement about the detection or non-detection of a dwc:Organism during a dwc:Event.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+			<td>For dwc:Occurrences, the default vocabulary is recommended to consist of detected and notDetected, but can be extended by implementers with good justification. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -12861,6 +15573,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -12878,11 +15594,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/occurrenceStatus-2023-06-28">http://rs.tdwg.org/dwc/terms/version/occurrenceStatus-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/occurrenceStatus-2026-04-07">http://rs.tdwg.org/dwc/terms/version/occurrenceStatus-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -12890,17 +15606,17 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>A statement about the presence or absence of a dwc:Taxon at a dcterms:Location.</td>
+			<td>A statement about the detection or non-detection of a dwc:Organism during a dwc:Event.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>For dwc:Occurrences, the default vocabulary is recommended to consist of <code>present</code> and <code>absent</code>, but can be extended by implementers with good justification. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+			<td>For dwc:Occurrences, the default vocabulary is recommended to consist of detected and notDetected, but can be extended by implementers with good justification. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
 			<td><ul class="list-group list-group-flush">
-  <li class="list-group-item"><code>present</code></li>
-  <li class="list-group-item"><code>absent</code></li>
+  <li class="list-group-item"><code>detected</code></li>
+  <li class="list-group-item"><code>notDetected</code></li>
 </ul></td>
 		</tr>
 		<tr>
@@ -12910,6 +15626,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -12972,11 +15692,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-18</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/Organism-2023-09-18">http://rs.tdwg.org/dwc/terms/version/Organism-2023-09-18</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/Organism-2026-04-07">http://rs.tdwg.org/dwc/terms/version/Organism-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -12988,7 +15708,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Instances of the dwc:Organism class are intended to facilitate linking one or more dwc:Identification instances to one or more dwc:Occurrence instances. Therefore, things that are typically assigned scientific names (such as viruses, hybrids, and lichens) and aggregates whose dwc:Occurrences are typically recorded (such as packs, clones, and colonies) are included in the scope of this class.</td>
+			<td>Instances of the dwc:Organism class are intended to facilitate linking one or more dwc:Identification instances to one or more dwc:Occurrence instances. Therefore, things that are typically assigned scientific names (such as viruses, hybrids, and lichens) and aggregates whose dwc:Occurrences are typically recorded (such as packs, clones, and colonies) are included in the scope of this class. In Darwin Core, dwc:Organism, dwc:Occurrence, and dwc:MaterialEntity are related, but distinct concepts. A dwc:Organism is a biological individual or group with an identity and life history that persists independently of the particular dwc:MaterialEntities through which it is manifested. A dwc:Occurrence is a dwc:Event that represents the presence or state of a dwc:Organism at a place during an interval of time, with no explicit dependency on any dwc:MaterialEntity. A dwc:MaterialEntity represents physical matter, including whole bodies, parts, or derivatives of dwc:Organisms, that may directly or indirectly serve as evidence of a dwc:Occurrence.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -12996,6 +15716,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
   <li class="list-group-item"><code>a specific bird</code></li>
   <li class="list-group-item"><code>a specific wolf pack</code></li>
   <li class="list-group-item"><code>a specific instance of a bacterial culture</code></li>
+  <li class="list-group-item"><code>a particular plant gathered in the wild, transplanted to a botanical garden, and preserved as a specimen in a collection</code></li>
 </ul></td>
 		</tr>
 		<tr>
@@ -13009,6 +15730,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2014-10-26_14">http://rs.tdwg.org/decisions/decision-2014-10-26_14</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -13055,6 +15780,257 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2014-10-26_14">http://rs.tdwg.org/decisions/decision-2014-10-26_14</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_OrganismInteraction"></a>Term Name dwc:OrganismInteraction</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/OrganismInteraction">http://rs.tdwg.org/dwc/terms/OrganismInteraction</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/OrganismInteraction-2026-04-07">http://rs.tdwg.org/dwc/terms/version/OrganismInteraction-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Organism Interaction</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>An interaction between two dwc:Organisms during a dwc:Event.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Supports only primary observed interactions, not habitual or derived taxon-level interactions. Pairwise interactions must be used to represent multi-organism interactions. When possible, typify the action rather than the state from which an action is inferred, with the actor as the subject dwc:Occurrence and the acted-upon as the related dwc:Occurrence. Only one direction of a two-way interaction is necessary, though both are permissible as distinct OrganismInteractions with distinct subject dwc:Occurrences.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>a bee visiting a flower</code></li>
+  <li class="list-group-item"><code>a Mallophora ruficauda hunting an Apis mellifera in flight</code></li>
+  <li class="list-group-item"><code>a viral infection in a plant</code></li>
+  <li class="list-group-item"><code>a female spider mating with a male spider</code></li>
+  <li class="list-group-item"><code>a lion cub nursing from its mother</code></li>
+  <li class="list-group-item"><code>a mosquito sucking blood from a chimpanzee's arm</code></li>
+  <li class="list-group-item"><code>a slug eating a fungus growing on decomposing stump (2 interactions)</code></li>
+</ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>/abcd:DataSets/abcd:DataSet/abcd:Units/abcd:Unit/abcd:Associations/abcd:UnitAssociation</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Class</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_organismInteractionDescription"></a>Term Name dwc:organismInteractionDescription</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/organismInteractionDescription">http://rs.tdwg.org/dwc/terms/organismInteractionDescription</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/organismInteractionDescription-2026-04-07">http://rs.tdwg.org/dwc/terms/version/organismInteractionDescription-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Organism Interaction Description</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A verbatim description of a dwc:OrganismInteraction.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><code>Mallophora ruficauda captured an Apis mellifera worker in flight.</code></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_organismInteractionID"></a>Term Name dwc:organismInteractionID</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/organismInteractionID">http://rs.tdwg.org/dwc/terms/organismInteractionID</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/organismInteractionID-2026-04-07">http://rs.tdwg.org/dwc/terms/version/organismInteractionID-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Organism Interaction ID</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>An identifier for a dwc:OrganismInteraction.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a globally unique identifier.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_organismInteractionType"></a>Term Name dwc:organismInteractionType</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/organismInteractionType">http://rs.tdwg.org/dwc/terms/organismInteractionType</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/organismInteractionType-2026-04-07">http://rs.tdwg.org/dwc/terms/version/organismInteractionType-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Organism Interaction Type</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A category that best matches the nature of a dwc:OrganismInteraction.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a controlled vocabulary. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>visitedFlowerOf</code></li>
+  <li class="list-group-item"><code>parasitized</code></li>
+  <li class="list-group-item"><code>matedWith</code></li>
+  <li class="list-group-item"><code>wasAttachedTo</code></li>
+</ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_organismInteractionType"></a>Term Name dwciri:organismInteractionType</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/organismInteractionType">http://rs.tdwg.org/dwc/iri/organismInteractionType</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/organismInteractionType-2026-04-07">http://rs.tdwg.org/dwc/iri/version/organismInteractionType-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Organism Interaction Type (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A category that best matches the nature of a dwc:OrganismInteraction.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -13310,6 +16286,52 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
+			<th colspan="2"><a id="dwciri_organismScope"></a>Term Name dwciri:organismScope</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/organismScope">http://rs.tdwg.org/dwc/iri/organismScope</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/organismScope-2026-04-07">http://rs.tdwg.org/dwc/iri/version/organismScope-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Organism Scope (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A description of the kind of dwc:Organism instance. Can be used to indicate whether the dwc:Organism instance represents a discrete organism or if it represents a particular type of aggregation.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a controlled vocabulary. This term is not intended to be used to specify a type of dwc:Taxon. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
 			<th colspan="2"><a id="dwc_organismScope"></a>Term Name dwc:organismScope</th>
 		</tr>
 	</thead>
@@ -13476,11 +16498,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/otherCatalogNumbers-2023-06-28">http://rs.tdwg.org/dwc/terms/version/otherCatalogNumbers-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/otherCatalogNumbers-2026-04-07">http://rs.tdwg.org/dwc/terms/version/otherCatalogNumbers-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -13488,7 +16510,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>A list (concatenated and separated) of previous or alternate fully qualified catalog numbers or other human-used identifiers for the same dwc:Occurrence, whether in the current or any other data set or collection.</td>
+			<td>A list (concatenated and separated) of previous or alternate fully qualified catalog numbers or other human-used identifiers for the same dwc:MaterialEntity, whether in the current or any other data set or collection.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
@@ -13513,6 +16535,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2014-10-30_16">http://rs.tdwg.org/decisions/decision-2014-10-30_16</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -13529,11 +16555,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/ownerInstitutionCode-2023-06-28">http://rs.tdwg.org/dwc/terms/version/ownerInstitutionCode-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/ownerInstitutionCode-2026-04-07">http://rs.tdwg.org/dwc/terms/version/ownerInstitutionCode-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -13541,7 +16567,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The name (or acronym) in use by the institution having ownership of the object(s) or information referred to in the record.</td>
+			<td>A name (or acronym) in use by an institution having ownership of a resource.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -13559,6 +16585,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -13575,11 +16605,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/parentEventID-2023-06-28">http://rs.tdwg.org/dwc/terms/version/parentEventID-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/parentEventID-2026-04-07">http://rs.tdwg.org/dwc/terms/version/parentEventID-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -13587,11 +16617,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>An identifier for the broader dwc:Event that groups this and potentially other dwc:Events.</td>
+			<td>An identifier for a broader dwc:Event that contains this and potentially other dwc:Events.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Use a globally unique identifier for a dwc:Event or an identifier for a dwc:Event that is specific to the data set.</td>
+			<td>Recommended best practice is to use a globally unique identifier.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -13608,6 +16638,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2015-03-19_18">http://rs.tdwg.org/decisions/decision-2015-03-19_18</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -13765,59 +16799,6 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_pathway"></a>Term Name dwc:pathway</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/pathway">http://rs.tdwg.org/dwc/terms/pathway</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2023-06-28</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/pathway-2023-06-28">http://rs.tdwg.org/dwc/terms/version/pathway-2023-06-28</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Pathway</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>The process by which a dwc:Organism came to be in a given place at a given time.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Recommended best practice is to use controlled value strings from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/pw/">http://rs.tdwg.org/dwc/doc/pw/</a>. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a>. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
-		</tr>
-		<tr>
-			<td>Examples</td>
-			<td><ul class="list-group list-group-flush">
-  <li class="list-group-item"><code>releasedForUse</code></li>
-  <li class="list-group-item"><code>otherEscape</code></li>
-  <li class="list-group-item"><code>transportContaminant</code></li>
-  <li class="list-group-item"><code>transportStowaway</code></li>
-  <li class="list-group-item"><code>corridor</code></li>
-  <li class="list-group-item"><code>unaided</code></li>
-</ul></td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2020-10-13_23">http://rs.tdwg.org/decisions/decision-2020-10-13_23</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="dwciri_pathway"></a>Term Name dwciri:pathway</th>
 		</tr>
 	</thead>
@@ -13868,6 +16849,59 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_pathway"></a>Term Name dwc:pathway</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/pathway">http://rs.tdwg.org/dwc/terms/pathway</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2023-06-28</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/pathway-2023-06-28">http://rs.tdwg.org/dwc/terms/version/pathway-2023-06-28</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Pathway</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The process by which a dwc:Organism came to be in a given place at a given time.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use controlled value strings from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/pw/">http://rs.tdwg.org/dwc/doc/pw/</a>. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a>. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>releasedForUse</code></li>
+  <li class="list-group-item"><code>otherEscape</code></li>
+  <li class="list-group-item"><code>transportContaminant</code></li>
+  <li class="list-group-item"><code>transportStowaway</code></li>
+  <li class="list-group-item"><code>corridor</code></li>
+  <li class="list-group-item"><code>unaided</code></li>
+</ul></td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2020-10-13_23">http://rs.tdwg.org/decisions/decision-2020-10-13_23</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -13930,11 +16964,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/pointRadiusSpatialFit-2023-06-28">http://rs.tdwg.org/dwc/terms/version/pointRadiusSpatialFit-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/pointRadiusSpatialFit-2026-04-07">http://rs.tdwg.org/dwc/terms/version/pointRadiusSpatialFit-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -13942,11 +16976,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The ratio of the area of the point-radius (dwc:decimalLatitude, dwc:decimalLongitude, dwc:coordinateUncertaintyInMeters) to the area of the true (original, or most specific) spatial representation of the dcterms:Location. Legal values are 0, greater than or equal to 1, or undefined. A value of 1 is an exact match or 100% overlap. A value of 0 should be used if the given point-radius does not completely contain the original representation. The dwc:pointRadiusSpatialFit is undefined (and should be left empty) if the original representation is any geometry without area (e.g., a point or polyline) and without uncertainty and the given georeference is not that same geometry (without uncertainty). If both the original and the given georeference are the same point, the dwc:pointRadiusSpatialFit is 1.</td>
+			<td>A ratio of the area of a point-radius (dwc:decimalLatitude, dwc:decimalLongitude, dwc:coordinateUncertaintyInMeters) to the area of a true (original, or most specific) spatial representation of a dcterms:Location.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Detailed explanations with graphical examples can be found in the Georeferencing Best Practices, Chapman and Wieczorek, 2020 (<a href="https://doi.org/10.15468/doc-gg7h-s853">https://doi.org/10.15468/doc-gg7h-s853</a>).</td>
+			<td>Legal values are 0, greater than or equal to 1, or undefined. A value of 1 is an exact match or 100% overlap. A value of 0 should be used if the given point-radius does not completely contain the original representation. The pointRadiusSpatialFit is undefined (and should be left empty) if the original representation is any geometry without area (e.g., a point or polyline) and without uncertainty and the given georeference is not that same geometry (without uncertainty). If both the original and the given georeference are the same point, the pointRadiusSpatialFit is 1. Detailed explanations with graphical examples can be found in the Georeferencing Best Practices, Chapman and Wieczorek, 2020 (<a href="https://doi.org/10.15468/doc-gg7h-s853">https://doi.org/10.15468/doc-gg7h-s853</a>).</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -13967,6 +17001,178 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2023-06-28_40">http://rs.tdwg.org/decisions/decision-2023-06-28_40</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_preferredSpatialRepresentation"></a>Term Name dwc:preferredSpatialRepresentation</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/preferredSpatialRepresentation">http://rs.tdwg.org/dwc/terms/preferredSpatialRepresentation</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/preferredSpatialRepresentation-2026-04-07">http://rs.tdwg.org/dwc/terms/version/preferredSpatialRepresentation-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Preferred Spatial Representation</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>An indication of which spatial representation best represents the dcterms:Location.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>point-radius</code></li>
+  <li class="list-group-item"><code>footprint</code></li>
+</ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_preferredSpatialRepresentation"></a>Term Name dwciri:preferredSpatialRepresentation</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/preferredSpatialRepresentation">http://rs.tdwg.org/dwc/iri/preferredSpatialRepresentation</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/preferredSpatialRepresentation-2026-04-07">http://rs.tdwg.org/dwc/iri/version/preferredSpatialRepresentation-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Preferred Spatial Representation (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>An indication of which spatial representation best represents the dcterms:Location.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_preparations"></a>Term Name dwc:preparations</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/preparations">http://rs.tdwg.org/dwc/terms/preparations</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/preparations-2026-04-07">http://rs.tdwg.org/dwc/terms/version/preparations-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Preparations</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A list (concatenated and separated) of preparations and preservation methods for a dwc:MaterialEntity.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>fossil</code></li>
+  <li class="list-group-item"><code>cast</code></li>
+  <li class="list-group-item"><code>photograph</code></li>
+  <li class="list-group-item"><code>DNA extract</code></li>
+  <li class="list-group-item"><code>skin | skull | skeleton</code></li>
+  <li class="list-group-item"><code>whole animal (EtOH) | tissue (EDTA)</code></li>
+</ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>DataSets/DataSet/Units/Unit/SpecimenUnit/Preparations/PreparationsText</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2014-10-30_16">http://rs.tdwg.org/decisions/decision-2014-10-30_16</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2019-12-01_19">http://rs.tdwg.org/decisions/decision-2019-12-01_19</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-06-12_44">http://rs.tdwg.org/decisions/decision-2025-06-12_44</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -14020,75 +17226,6 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_preparations"></a>Term Name dwc:preparations</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/preparations">http://rs.tdwg.org/dwc/terms/preparations</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2025-06-12</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/preparations-2025-06-12">http://rs.tdwg.org/dwc/terms/version/preparations-2025-06-12</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Preparations</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>A list (concatenated and separated) of preparations and preservation methods for a dwc:MaterialEntity.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Recommended best practice is to separate the values in a list with space vertical bar space ( | ). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
-		</tr>
-		<tr>
-			<td>Examples</td>
-			<td><ul class="list-group list-group-flush">
-  <li class="list-group-item"><code>fossil</code></li>
-  <li class="list-group-item"><code>cast</code></li>
-  <li class="list-group-item"><code>photograph</code></li>
-  <li class="list-group-item"><code>DNA extract</code></li>
-  <li class="list-group-item"><code>skin | skull | skeleton</code></li>
-  <li class="list-group-item"><code>whole animal (EtOH) | tissue (EDTA)</code></li>
-</ul></td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>DataSets/DataSet/Units/Unit/SpecimenUnit/Preparations/PreparationsText</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2014-10-30_16">http://rs.tdwg.org/decisions/decision-2014-10-30_16</a></td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2019-12-01_19">http://rs.tdwg.org/decisions/decision-2019-12-01_19</a></td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2025-06-12_44">http://rs.tdwg.org/decisions/decision-2025-06-12_44</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="dwc_PreservedSpecimen"></a>Term Name dwc:PreservedSpecimen</th>
 		</tr>
 	</thead>
@@ -14131,6 +17268,52 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2014-10-26_15">http://rs.tdwg.org/decisions/decision-2014-10-26_15</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_PreviousIdentifications"></a>Term Name dwc:PreviousIdentifications</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/PreviousIdentifications">http://rs.tdwg.org/dwc/terms/PreviousIdentifications</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2009-04-24</td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Previous Identifications</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><strong>This term is deprecated and should no longer be used.</strong></td>
+		</tr>
+		<tr>
+			<td>Is replaced by</td>
+			<td><a href="#dwc_previousIdentifications">http://rs.tdwg.org/dwc/terms/previousIdentifications</a></td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A list (concatenated and separated) of previous ScientificNames to which the sample was identified.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Example: "Anthus correndera".</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>DataSets/DataSet/Units/Unit/Identifications/Identification with PreferredFlag = false</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
 		</tr>
 	</tbody>
 </table>
@@ -14196,45 +17379,45 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_PreviousIdentifications"></a>Term Name dwc:PreviousIdentifications</th>
+			<th colspan="2"><a id="dwc_processedTotalReadCount"></a>Term Name dwc:processedTotalReadCount</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/PreviousIdentifications">http://rs.tdwg.org/dwc/terms/PreviousIdentifications</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/processedTotalReadCount">http://rs.tdwg.org/dwc/terms/processedTotalReadCount</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2009-04-24</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/processedTotalReadCount-2026-04-07">http://rs.tdwg.org/dwc/terms/version/processedTotalReadCount-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
-			<td>Previous Identifications</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><strong>This term is deprecated and should no longer be used.</strong></td>
-		</tr>
-		<tr>
-			<td>Is replaced by</td>
-			<td><a href="#dwc_previousIdentifications">http://rs.tdwg.org/dwc/terms/previousIdentifications</a></td>
+			<td>Processed Total Read Count</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>A list (concatenated and separated) of previous ScientificNames to which the sample was identified.</td>
+			<td>The total number of reads obtained for a processed dwc:NucleotideSequence during a dwc:NucleotideAnalysis.</td>
 		</tr>
 		<tr>
-			<td>Notes</td>
-			<td>Example: "Anthus correndera".</td>
+			<td>Examples</td>
+			<td><code>50638</code>, <code>345987</code>, <code>764032</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
-			<td>DataSets/DataSet/Units/Unit/Identifications/Identification with PreferredFlag = false</td>
+			<td>not in ABCD</td>
 		</tr>
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -14252,11 +17435,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2025-06-12</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/projectID-2025-06-12">http://rs.tdwg.org/dwc/terms/version/projectID-2025-06-12</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/projectID-2026-04-07">http://rs.tdwg.org/dwc/terms/version/projectID-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -14268,22 +17451,22 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>A projectID may be shared in multiple distinct datasets. The nature of the association can be described in the metadata project description element. This term should be used to provide a globally unique identifier (GUID) for a project, if available. This could be a DOI, URI, or any other persistent identifier that ensures a project can be uniquely distinguished from others. The recommended best practice is to separate the values in a list with space vertical bar space ( | ).</td>
+			<td>A projectID may be shared in multiple distinct datasets. The nature of the association can be described in the metadata project description element. This term should be used to provide a globally unique identifier (GUID) for a project, if available. This could be a DOI, URI, or any other persistent identifier that ensures a project can be uniquely distinguished from others. The Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
 			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code><a href="https://arvenetternansen.com/">https://arvenetternansen.com/</a></code></li>
+  <li class="list-group-item"><code><a href="https://doi.org/10.26259/3b15eca7">https://doi.org/10.26259/3b15eca7</a></code></li>
+  <li class="list-group-item"><code><a href="https://doi.org/10.3030/101180559">https://doi.org/10.3030/101180559</a></code></li>
+  <li class="list-group-item"><code>OC202405</code></li>
   <li class="list-group-item"><code>RCN276730</code></li>
   <li class="list-group-item"><code>RCN276730 | Artsproject_7-24</code></li>
-  <li class="list-group-item"><code>OC202405</code></li>
-  <li class="list-group-item"><code><a href="https://arvenetternansen.com/">https://arvenetternansen.com/</a></code></li>
-  <li class="list-group-item"><code><a href="https://doi.org/10.3030/101180559">https://doi.org/10.3030/101180559</a></code></li>
-  <li class="list-group-item"><code><a href="https://doi.org/10.26259/3b15eca7">https://doi.org/10.26259/3b15eca7</a></code></li>
 </ul></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
-			<td>DataSets/DataSet/Units/Unit/Gathering/Project</td>
+			<td>not in ABCD</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -14292,6 +17475,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2025-06-12_44">http://rs.tdwg.org/decisions/decision-2025-06-12_44</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -14309,11 +17496,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2025-06-12</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/projectTitle-2025-06-12">http://rs.tdwg.org/dwc/terms/version/projectTitle-2025-06-12</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/projectTitle-2026-04-07">http://rs.tdwg.org/dwc/terms/version/projectTitle-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -14325,14 +17512,15 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Use this term to provide the official name or title of a project as it is commonly known and cited. Avoid abbreviations unless they are widely understood. The recommended best practice is to separate the values in a list with space vertical bar space ( | ).</td>
+			<td>Use this term to provide the official name or title of a project as it is commonly known and cited. Avoid abbreviations unless they are widely understood. The recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
 			<td><ul class="list-group list-group-flush">
-  <li class="list-group-item"><code>The Nansen Legacy</code></li>
-  <li class="list-group-item"><code>Scalidophora i Noreg</code></li>
   <li class="list-group-item"><code>Arctic Deep</code></li>
+  <li class="list-group-item"><code>Scalidophora i Noreg</code></li>
+  <li class="list-group-item"><code>The Nansen Legacy</code></li>
+  <li class="list-group-item"><code>Underwater Oases of the Mar del Plata Canyon: Talud Continental IV</code></li>
 </ul></td>
 		</tr>
 		<tr>
@@ -14346,6 +17534,443 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2025-06-12_44">http://rs.tdwg.org/decisions/decision-2025-06-12_44</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_Protocol"></a>Term Name dwc:Protocol</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/Protocol">http://rs.tdwg.org/dwc/terms/Protocol</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/Protocol-2026-04-07">http://rs.tdwg.org/dwc/terms/version/Protocol-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Protocol</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A method used during an action.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>a pitfall trap method for sampling ground-dwelling arthropods</code></li>
+  <li class="list-group-item"><code>a point-radius georeferencing method</code></li>
+  <li class="list-group-item"><code>a linear regression model to estimate body mass from skeletal measurements</code></li>
+  <li class="list-group-item"><code>a Bayesian phylogenetic inference method</code></li>
+</ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Class</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_protocolDescription"></a>Term Name dwc:protocolDescription</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/protocolDescription">http://rs.tdwg.org/dwc/terms/protocolDescription</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/protocolDescription-2026-04-07">http://rs.tdwg.org/dwc/terms/version/protocolDescription-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Protocol Description</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A detailed description of a dwc:Protocol.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><code>Georeference following Zermoglio et al. 2020 (<a href="https://doi.org/10.35035/e09p-h128">https://doi.org/10.35035/e09p-h128</a>), using GeoPick (<a href="https://geopick.gbif.org/">https://geopick.gbif.org/</a>) for named place determinations and Georeferencing Calculator (<a href="https://github.com/VertNet/georefcalculator">https://github.com/VertNet/georefcalculator</a>) for complex uncertainties.</code></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_protocolID"></a>Term Name dwc:protocolID</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/protocolID">http://rs.tdwg.org/dwc/terms/protocolID</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/protocolID-2026-04-07">http://rs.tdwg.org/dwc/terms/version/protocolID-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Protocol ID</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>An identifier for a dwc:Protocol.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a globally unique identifier.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_protocolReferences"></a>Term Name dwc:protocolReferences</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/protocolReferences">http://rs.tdwg.org/dwc/terms/protocolReferences</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/protocolReferences-2026-04-07">http://rs.tdwg.org/dwc/terms/version/protocolReferences-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Protocol References</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A list (concatenated and separated) of dcterms:BibliographicResources used in a dwc:Protocol.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to separate multiple values in a list with space vertical bar space (<code> | </code>).</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><code>Penguins from space: faecal stains reveal the location of emperor penguin colonies, <a href="https://doi.org/10.1111/j.1466-8238.2009.00467.x">https://doi.org/10.1111/j.1466-8238.2009.00467.x</a></code></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_protocolRemarks"></a>Term Name dwc:protocolRemarks</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/protocolRemarks">http://rs.tdwg.org/dwc/terms/protocolRemarks</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/protocolRemarks-2026-04-07">http://rs.tdwg.org/dwc/terms/version/protocolRemarks-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Protocol Remarks</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>Comments or notes about a dwc:Protocol.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_protocolType"></a>Term Name dwc:protocolType</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/protocolType">http://rs.tdwg.org/dwc/terms/protocolType</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/protocolType-2026-04-07">http://rs.tdwg.org/dwc/terms/version/protocolType-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Protocol Type</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A category that best matches the nature of a dwc:Protocol.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a controlled vocabulary. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>measurement</code></li>
+  <li class="list-group-item"><code>georeference</code></li>
+  <li class="list-group-item"><code>chronometricAge</code></li>
+  <li class="list-group-item"><code>chronometricAgeConversion</code></li>
+  <li class="list-group-item"><code>samplingEffort</code></li>
+</ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_protocolType"></a>Term Name dwciri:protocolType</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/protocolType">http://rs.tdwg.org/dwc/iri/protocolType</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/protocolType-2026-04-07">http://rs.tdwg.org/dwc/iri/version/protocolType-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Protocol Type (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A category that best matches the nature of a dwc:Protocol.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_Provenance"></a>Term Name dwc:Provenance</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/Provenance">http://rs.tdwg.org/dwc/terms/Provenance</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/Provenance-2026-04-07">http://rs.tdwg.org/dwc/terms/version/Provenance-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Provenance</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>Information about an entity’s origins.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>This is a convenience class to group related properties.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Class</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_readCount"></a>Term Name dwc:readCount</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/readCount">http://rs.tdwg.org/dwc/terms/readCount</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/readCount-2026-04-07">http://rs.tdwg.org/dwc/terms/version/readCount-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Read Count</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The number of reads obtained for a processed dwc:NucleotideSequence during a dwc:NucleotideAnalysis.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>325</code></li>
+  <li class="list-group-item"><code>73591</code></li>
+  <li class="list-group-item"><code>8302</code></li>
+</ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -14363,11 +17988,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/recordedBy-2023-06-28">http://rs.tdwg.org/dwc/terms/version/recordedBy-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/recordedBy-2026-04-07">http://rs.tdwg.org/dwc/terms/version/recordedBy-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -14375,7 +18000,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>A list (concatenated and separated) of names of people, groups, or organizations responsible for recording the original dwc:Occurrence. The primary collector or observer, especially one who applies a personal identifier (dwc:recordNumber), should be listed first.</td>
+			<td>A name for a dcterms:Agent responsible for recording a dwc:Occurrence.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
@@ -14385,7 +18010,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Examples</td>
 			<td><ul class="list-group list-group-flush">
   <li class="list-group-item"><code>José E. Crespo</code></li>
-  <li class="list-group-item"><code>Oliver P. Pearson | Anita K. Pearson</code> (where the value in recordNumber <code>OPP 7101</code> corresponds to the collector number for the specimen in the field catalog of Oliver P. Pearson)</li>
+  <li class="list-group-item"><code>Oliver P. Pearson | Anita K. Pearson</code></li>
+  <li class="list-group-item"><code>Megatherium Club</code></li>
+  <li class="list-group-item"><code>The Natural History Society of Northumbria</code></li>
+  <li class="list-group-item"><code>ROV SuBastian</code></li>
 </ul></td>
 		</tr>
 		<tr>
@@ -14399,6 +18027,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2014-10-30_16">http://rs.tdwg.org/decisions/decision-2014-10-30_16</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -14416,11 +18048,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2025-07-10</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/recordedBy-2025-07-10">http://rs.tdwg.org/dwc/iri/version/recordedBy-2025-07-10</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/recordedBy-2026-04-07">http://rs.tdwg.org/dwc/iri/version/recordedBy-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -14428,7 +18060,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>A person, group, or organization responsible for recording the original dwc:Occurrence.</td>
+			<td>A name for a dcterms:Agent responsible for recording a dwc:Occurrence.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
@@ -14446,6 +18078,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -14462,11 +18098,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/recordedByID-2023-06-28">http://rs.tdwg.org/dwc/terms/version/recordedByID-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/recordedByID-2026-04-07">http://rs.tdwg.org/dwc/terms/version/recordedByID-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -14474,11 +18110,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>A list (concatenated and separated) of the globally unique identifier for the person, people, groups, or organizations responsible for recording the original dwc:Occurrence.</td>
+			<td>An identifier for a dcterms:Agent responsible for recording a dwc:Occurrence.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to provide a single identifier that disambiguates the details of the identifying agent. If a list is used, it is recommended to separate the values in the list with space vertical bar space (<code> | </code>). The order of the identifiers on any list for this term can not be guaranteed to convey any semantics.</td>
+			<td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -14498,6 +18134,52 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2021-07-15_34">http://rs.tdwg.org/decisions/decision-2021-07-15_34</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_recordNumber"></a>Term Name dwciri:recordNumber</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/recordNumber">http://rs.tdwg.org/dwc/iri/recordNumber</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2023-06-28</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/recordNumber-2023-06-28">http://rs.tdwg.org/dwc/iri/version/recordNumber-2023-06-28</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Record Number (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>An identifier given to the dwc:Occurrence at the time it was recorded. Often serves as a link between field notes and a dwc:Occurrence record, such as a specimen collector's number.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>The subject is a dwc:Occurrence and the object is a (possibly IRI-identified) resource that is the field notes.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
 		</tr>
 	</tbody>
 </table>
@@ -14551,33 +18233,33 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_recordNumber"></a>Term Name dwciri:recordNumber</th>
+			<th colspan="2"><a id="dwc_referenceID"></a>Term Name dwc:referenceID</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/recordNumber">http://rs.tdwg.org/dwc/iri/recordNumber</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/referenceID">http://rs.tdwg.org/dwc/terms/referenceID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/recordNumber-2023-06-28">http://rs.tdwg.org/dwc/iri/version/recordNumber-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/referenceID-2026-04-07">http://rs.tdwg.org/dwc/terms/version/referenceID-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
-			<td>Record Number (IRI)</td>
+			<td>Reference ID</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>An identifier given to the dwc:Occurrence at the time it was recorded. Often serves as a link between field notes and a dwc:Occurrence record, such as a specimen collector's number.</td>
+			<td>An identifier for a dcterms:BibliographicResource.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>The subject is a dwc:Occurrence and the object is a (possibly IRI-identified) resource that is the field notes.</td>
+			<td>Recommended best practice is to use a globally unique identifier.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -14586,6 +18268,52 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_referenceRemarks"></a>Term Name dwc:referenceRemarks</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/referenceRemarks">http://rs.tdwg.org/dwc/terms/referenceRemarks</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/referenceRemarks-2026-04-07">http://rs.tdwg.org/dwc/terms/version/referenceRemarks-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Reference Remarks</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>Comments or notes about a dcterms:BibliographicResource.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -14603,7 +18331,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-13</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
@@ -14619,13 +18347,13 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>From Dublin Core, "This property is intended to be used with non-literal values. This property is an inverse property of Is Referenced By." The intended usage of this term in Darwin Core is to point to the definitive source representation of the resource (e.g.,dwc:Taxon, dwc:Occurrence, dwc:Event), if one is available. Note that the intended usage of dcterms:bibliographicCitation in Darwin Core, by contrast, is to provide the preferred way to cite the resource itself.</td>
+			<td>From Dublin Core, "This property is intended to be used with non-literal values. This property is an inverse property of Is Referenced By." The intended usage of this term in Darwin Core is to point to the definitive source representation of the resource (e.g., dwc:Taxon, dwc:Occurrence, dwc:Event), if one is available. Note that the intended usage of dcterms:bibliographicCitation in Darwin Core, by contrast, is to provide the preferred way to cite the resource itself.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
 			<td><ul class="list-group list-group-flush">
   <li class="list-group-item"><code><a href="http://arctos.database.museum/guid/MVZ:Mamm:165861">http://arctos.database.museum/guid/MVZ:Mamm:165861</a></code> (MaterialEntity example)</li>
-  <li class="list-group-item"><code><a href="https://www.catalogueoflife.org/data/taxon/32664">https://www.catalogueoflife.org/data/taxon/32664</a></code> (Taxon example)</li>
+  <li class="list-group-item"><code><a href="https://www.catalogueoflife.org/data/taxon/32664">https://www.catalogueoflife.org/data/taxon/32664</a> (Taxon example)</code></li>
 </ul></td>
 		</tr>
 		<tr>
@@ -14643,6 +18371,68 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_referenceType"></a>Term Name dwc:referenceType</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/referenceType">http://rs.tdwg.org/dwc/terms/referenceType</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/referenceType-2026-04-07">http://rs.tdwg.org/dwc/terms/version/referenceType-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Reference Type</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A category that best matches the nature of a dcterms:BibliographicResource.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a controlled vocabulary.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>book</code>, <code>bookSection</code>, <code>journalArticle</code>, <code>thesis</code></li>
+  <li class="list-group-item"><code>proceedingsPaper</code></li>
+  <li class="list-group-item"><code>report</code></li>
+  <li class="list-group-item"><code>poster</code></li>
+  <li class="list-group-item"><code>fieldNotebook</code></li>
+  <li class="list-group-item"><code>log</code></li>
+  <li class="list-group-item"><code>oralCommunication</code></li>
+</ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -14702,11 +18492,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2018-09-06</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/relatedResourceID-2018-09-06">http://rs.tdwg.org/dwc/terms/version/relatedResourceID-2018-09-06</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/relatedResourceID-2026-04-07">http://rs.tdwg.org/dwc/terms/version/relatedResourceID-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -14714,7 +18504,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>An identifier for a related resource (the object, rather than the subject of the relationship).</td>
+			<td>An identifier for the related resource (the object) of a dwc:ResourceRelationship.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a globally unique identifier.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -14727,6 +18521,14 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_43">http://rs.tdwg.org/decisions/decision-2024-02-28_43</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -14812,6 +18614,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_43">http://rs.tdwg.org/decisions/decision-2024-02-28_43</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -14867,6 +18673,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_43">http://rs.tdwg.org/decisions/decision-2024-02-28_43</a></td>
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
@@ -15031,6 +18841,60 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_43">http://rs.tdwg.org/decisions/decision-2024-02-28_43</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_reproductiveCondition"></a>Term Name dwciri:reproductiveCondition</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/reproductiveCondition">http://rs.tdwg.org/dwc/iri/reproductiveCondition</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/reproductiveCondition-2026-04-07">http://rs.tdwg.org/dwc/iri/version/reproductiveCondition-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Reproductive Condition (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A reproductive condition of a dwc:Organism.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -15047,11 +18911,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/reproductiveCondition-2023-06-28">http://rs.tdwg.org/dwc/terms/version/reproductiveCondition-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/reproductiveCondition-2026-04-07">http://rs.tdwg.org/dwc/terms/version/reproductiveCondition-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -15059,7 +18923,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The reproductive condition of the biological individual(s) represented in the dwc:Occurrence.</td>
+			<td>A reproductive condition of a dwc:Organism.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
@@ -15082,51 +18946,9 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
-			<th colspan="2"><a id="dwciri_reproductiveCondition"></a>Term Name dwciri:reproductiveCondition</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/reproductiveCondition">http://rs.tdwg.org/dwc/iri/reproductiveCondition</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2025-07-10</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/reproductiveCondition-2025-07-10">http://rs.tdwg.org/dwc/iri/version/reproductiveCondition-2025-07-10</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Reproductive Condition (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>The reproductive condition of the biological individual(s) represented in the dwc:Occurrence.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -15169,6 +18991,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_43">http://rs.tdwg.org/decisions/decision-2024-02-28_43</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -15244,11 +19070,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/resourceRelationshipID-2023-06-28">http://rs.tdwg.org/dwc/terms/version/resourceRelationshipID-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/resourceRelationshipID-2026-04-07">http://rs.tdwg.org/dwc/terms/version/resourceRelationshipID-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -15256,11 +19082,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>An identifier for an instance of relationship between one resource (the subject) and another (dwc:relatedResource, the object).</td>
+			<td>An identifier for a dwc:ResourceRelationship.</td>
 		</tr>
 		<tr>
-			<td>Examples</td>
-			<td><code>04b16710-b09c-11e8-96f8-529269fb1459</code></td>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a globally unique identifier.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -15269,6 +19095,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -15324,6 +19154,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2019-12-01_19">http://rs.tdwg.org/decisions/decision-2019-12-01_19</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_43">http://rs.tdwg.org/decisions/decision-2024-02-28_43</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -15365,6 +19199,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_43">http://rs.tdwg.org/decisions/decision-2024-02-28_43</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -15717,6 +19555,217 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_sampledSubstrateCategory"></a>Term Name dwciri:sampledSubstrateCategory</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/sampledSubstrateCategory">http://rs.tdwg.org/dwc/iri/sampledSubstrateCategory</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/sampledSubstrateCategory-2026-04-07">http://rs.tdwg.org/dwc/iri/version/sampledSubstrateCategory-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Sampled Substrate Category (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A category or type of substrate sampled during a dwc:Event.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_sampledSubstrateCategory"></a>Term Name dwc:sampledSubstrateCategory</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/sampledSubstrateCategory">http://rs.tdwg.org/dwc/terms/sampledSubstrateCategory</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/sampledSubstrateCategory-2026-04-07">http://rs.tdwg.org/dwc/terms/version/sampledSubstrateCategory-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Sampled Substrate Category</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A category or type of substrate sampled during a dwc:Event.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a controlled vocabulary and separate the values in a list with space vertical bar space (<code> | </code>). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>vegetation</code></li>
+  <li class="list-group-item"><code>soil</code></li>
+  <li class="list-group-item"><code>ocean</code></li>
+</ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_sampledSubstrateLayer"></a>Term Name dwc:sampledSubstrateLayer</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/sampledSubstrateLayer">http://rs.tdwg.org/dwc/terms/sampledSubstrateLayer</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/sampledSubstrateLayer-2026-04-07">http://rs.tdwg.org/dwc/terms/version/sampledSubstrateLayer-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Sampled Substrate Layer</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A list (concatenated and separated) of substrate layers sampled during a dwc:Event.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a controlled vocabulary and separate the values in a list with space vertical bar space (<code> | </code>). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>forest floor</code></li>
+  <li class="list-group-item"><code>herbaceous | shrub</code></li>
+  <li class="list-group-item"><code>understory</code></li>
+  <li class="list-group-item"><code>canopy</code></li>
+  <li class="list-group-item"><code>organic (O)</code></li>
+  <li class="list-group-item"><code>surface (A)</code></li>
+  <li class="list-group-item"><code>eluviated (E)</code></li>
+  <li class="list-group-item"><code>subsoil (B)</code></li>
+  <li class="list-group-item"><code>parent material (C)</code></li>
+  <li class="list-group-item"><code>bedrock (R)</code></li>
+  <li class="list-group-item"><code>epipelagic | mesopelagic</code></li>
+  <li class="list-group-item"><code>bathypelagic</code></li>
+  <li class="list-group-item"><code>abysopelagic</code></li>
+  <li class="list-group-item"><code>hadalpelagic</code></li>
+</ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_sampledSubstrateLayer"></a>Term Name dwciri:sampledSubstrateLayer</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/sampledSubstrateLayer">http://rs.tdwg.org/dwc/iri/sampledSubstrateLayer</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/sampledSubstrateLayer-2026-04-07">http://rs.tdwg.org/dwc/iri/version/sampledSubstrateLayer-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Sampled Substrate Layer (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A list (concatenated and separated) of substrate layers sampled during a dwc:Event.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -16348,56 +20397,6 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_samplingProtocol"></a>Term Name dwciri:samplingProtocol</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/samplingProtocol">http://rs.tdwg.org/dwc/iri/samplingProtocol</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2023-06-28</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/samplingProtocol-2023-06-28">http://rs.tdwg.org/dwc/iri/version/samplingProtocol-2023-06-28</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Sampling Protocol (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>The methods or protocols used during a dwc:Event, denoted by an IRI.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Recommended best practice is describe a dwc:Event with no more than one sampling protocol. In the case of a summary dwc:Event in which a specific protocol can not be attributed to specific dwc:Occurrences, the recommended best practice is to repeat the property for each IRI that denotes a different sampling protocol that applies to the dwc:Occurrence.</td>
-		</tr>
-		<tr>
-			<td>Examples</td>
-			<td><code><a href="https://doi.org/10.1111/j.1466-8238.2009.00467.x">https://doi.org/10.1111/j.1466-8238.2009.00467.x</a></code></td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2021-07-15_34">http://rs.tdwg.org/decisions/decision-2021-07-15_34</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="dwc_samplingProtocol"></a>Term Name dwc:samplingProtocol</th>
 		</tr>
 	</thead>
@@ -16408,11 +20407,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/samplingProtocol-2023-06-28">http://rs.tdwg.org/dwc/terms/version/samplingProtocol-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/samplingProtocol-2026-04-07">http://rs.tdwg.org/dwc/terms/version/samplingProtocol-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -16424,7 +20423,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is describe a dwc:Event with no more than one sampling protocol. In the case of a summary Event with multiple protocols, in which a specific protocol can not be attributed to specific dwc:Occurrences, the recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+			<td>Recommended best practice is to describe a dwc:Event with no more than one sampling protocol. In the case of a summary Event with multiple protocols, in which a specific protocol can not be attributed to specific dwc:Occurrences, the recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -16449,6 +20448,64 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2021-07-15_34">http://rs.tdwg.org/decisions/decision-2021-07-15_34</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_43">http://rs.tdwg.org/decisions/decision-2024-02-28_43</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_samplingProtocol"></a>Term Name dwciri:samplingProtocol</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/samplingProtocol">http://rs.tdwg.org/dwc/iri/samplingProtocol</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/samplingProtocol-2026-04-07">http://rs.tdwg.org/dwc/iri/version/samplingProtocol-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Sampling Protocol (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The methods or protocols used during a dwc:Event, denoted by an IRI.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to describe a dwc:Event with no more than one sampling protocol. In the case of a summary dwc:Event in which a specific protocol can not be attributed to specific dwc:Occurrences, the recommended best practice is to repeat the property for each IRI that denotes a different sampling protocol that applies to the dwc:Occurrence.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2021-07-15_34">http://rs.tdwg.org/decisions/decision-2021-07-15_34</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -16465,11 +20522,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/scientificName-2023-06-28">http://rs.tdwg.org/dwc/terms/version/scientificName-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/scientificName-2026-04-07">http://rs.tdwg.org/dwc/terms/version/scientificName-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -16477,11 +20534,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The full scientific name, with authorship and date information if known. When forming part of a dwc:Identification, this should be the name in lowest level taxonomic rank that can be determined. This term should not contain identification qualifications, which should instead be supplied in the dwc:identificationQualifier term.</td>
+			<td>The full scientific name, with authorship and date information if known. When forming part of a dwc:Identification, this should be the name in lowest level taxonomic rank that can be determined.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>This term should not contain identification qualifications, which should instead be supplied in the IdentificationQualifier term. When applied to an Organism or Occurrence, this term should be used to represent the scientific name that was applied to the associated Organism in accordance with the Taxon to which it was or is currently identified. Names should be compliant to the most recent nomenclatural code. For example, names of hybrids for algae, fungi and plants should follow the rules of the International Code of Nomenclature for algae, fungi, and plants (Schenzhen Code Articles H.1, H.2 and H.3). Thus, use the multiplication sign <code>×</code> (Unicode <code>U+00D7</code>, HTML <code>&times;</code>) to identify a hybrid, not <code>x</code> or <code>X</code>, if possible.</td>
+			<td>This term should not contain identification qualifications, which should instead be supplied in the IdentificationQualifier term. When applied to an Organism or Occurrence, this term should be used to represent the scientific name that was applied to the associated Organism in accordance with the Taxon to which it was or is currently identified. Names should be compliant to the most recent nomenclatural code. For example, names of hybrids for algae, fungi and plants should follow the rules of the International Code of Nomenclature for algae, fungi, and plants (Shenzhen Code Articles H.1, H.2 and H.3). Thus, use the multiplication sign <code>×</code> (Unicode <code>U+00D7</code>, HTML <code>&times;</code>) to identify a hybrid, not <code>x</code> or <code>X</code>, if possible.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -16495,7 +20552,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
   <li class="list-group-item"><code>Quercus agrifolia var. oxyadenia (Torr.) J.T. Howell</code> (genus + specificEpithet + taxonRank + infraspecificEpithet + scientificNameAuthorship)</li>
   <li class="list-group-item"><code>×Agropogon littoralis (Sm.) C. E. Hubb.</code></li>
   <li class="list-group-item"><code>Mentha ×smithiana R. A. Graham</code></li>
-  <li class="list-group-item"><code>Agrostis stolonifera L. × Polypogon monspeliensis (L.) Desf.</code></li>
+  <li class="list-group-item">`Agrostis stolonifera L. × Polypogon monspeliensis (L.) Desf.</li>
 </ul></td>
 		</tr>
 		<tr>
@@ -16513,6 +20570,14 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2023-06-28_40">http://rs.tdwg.org/decisions/decision-2023-06-28_40</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_43">http://rs.tdwg.org/decisions/decision-2024-02-28_43</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -16559,6 +20624,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-12-11_54">http://rs.tdwg.org/decisions/decision-2025-12-11_54</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -16658,33 +20727,37 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_sex"></a>Term Name dwciri:sex</th>
+			<th colspan="2"><a id="dwc_sequence"></a>Term Name dwc:sequence</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/sex">http://rs.tdwg.org/dwc/iri/sex</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/sequence">http://rs.tdwg.org/dwc/terms/sequence</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2025-07-10</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/sex-2025-07-10">http://rs.tdwg.org/dwc/iri/version/sex-2025-07-10</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/sequence-2026-04-07">http://rs.tdwg.org/dwc/terms/version/sequence-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
-			<td>Sex (IRI)</td>
+			<td>Sequence</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The sex of the biological individual(s) represented in the dwc:Occurrence.</td>
+			<td>A string representing nucleotide base pairs.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+			<td>Recommended best practice is to use IUPAC single character symbols (<a href="https://www.bioinformatics.org/sms/iupac.html">https://www.bioinformatics.org/sms/iupac.html</a>). Use "N" for an unknown or missing nucleotide, and avoid using "?". The sequence should be written in the 5' to 3' direction.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><code>TCTATCCTCAATTATAGGTCATAATTCACCATCAG</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -16696,7 +20769,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -16714,11 +20787,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/sex-2023-06-28">http://rs.tdwg.org/dwc/terms/version/sex-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/sex-2026-04-07">http://rs.tdwg.org/dwc/terms/version/sex-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -16726,7 +20799,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The sex of the biological individual(s) represented in the dwc:Occurrence.</td>
+			<td>A sex of a dwc:Organism.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
@@ -16751,6 +20824,163 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2019-12-01_19">http://rs.tdwg.org/decisions/decision-2019-12-01_19</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-02-24_55">http://rs.tdwg.org/decisions/decision-2026-02-24_55</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_sex"></a>Term Name dwciri:sex</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/sex">http://rs.tdwg.org/dwc/iri/sex</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/sex-2026-04-07">http://rs.tdwg.org/dwc/iri/version/sex-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Sex (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A sex of a dwc:Organism.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_siteNumber"></a>Term Name dwciri:siteNumber</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/siteNumber">http://rs.tdwg.org/dwc/iri/siteNumber</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/siteNumber-2026-04-07">http://rs.tdwg.org/dwc/iri/version/siteNumber-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Site Number (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>An identifier for a named site.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Usually an institutional identifier for a specific named place as opposed to dwc:locationID, which is an identifier for the entire set of distinct information for an instance of dcterms:Location. This term differs from dwciri:fieldNumber in that dwciri:siteNumber is not related strictly to one dwc:Event. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_siteNumber"></a>Term Name dwc:siteNumber</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/siteNumber">http://rs.tdwg.org/dwc/terms/siteNumber</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/siteNumber-2026-04-07">http://rs.tdwg.org/dwc/terms/version/siteNumber-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Site Number</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>An identifier for a named site.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Usually an institutional identifier for a specific named place as opposed to dwc:locationID, which is an identifier for the entire set of distinct information for an instance of dcterms:Location. This term differs from dwc:fieldNumber in that dwc:siteNumber is not related strictly to one dwc:Event. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>USGS CENO LOC 21387</code></li>
+  <li class="list-group-item"><code>UCM 2025001</code></li>
+</ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -16797,6 +21027,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-12-11_54">http://rs.tdwg.org/decisions/decision-2025-12-11_54</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -16813,11 +21047,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/startDayOfYear-2023-06-28">http://rs.tdwg.org/dwc/terms/version/startDayOfYear-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/startDayOfYear-2026-04-07">http://rs.tdwg.org/dwc/terms/version/startDayOfYear-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -16825,12 +21059,17 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The earliest integer day of the year on which the dwc:Event occurred (1 for January 1, 365 for December 31, except in a leap year, in which case it is 366).</td>
+			<td>The earliest integer day of the year on which a dwc:Event occurred.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>The value is 1 for January 1 and 365 for December 31, except in a leap year, in which case it is 366.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
 			<td><ul class="list-group list-group-flush">
   <li class="list-group-item"><code>1</code> (1 January)</li>
+  <li class="list-group-item"><code>32</code> (1 February)</li>
   <li class="list-group-item"><code>366</code> (31 December)</li>
   <li class="list-group-item"><code>365</code> (30 December in a leap year, 31 December in a non-leap year)</li>
 </ul></td>
@@ -16842,6 +21081,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -16942,6 +21185,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2023-06-28_40">http://rs.tdwg.org/decisions/decision-2023-06-28_40</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_43">http://rs.tdwg.org/decisions/decision-2024-02-28_43</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -17330,6 +21577,124 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
+			<th colspan="2"><a id="dwc_taxonFormula"></a>Term Name dwc:taxonFormula</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/taxonFormula">http://rs.tdwg.org/dwc/terms/taxonFormula</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/taxonFormula-2026-04-07">http://rs.tdwg.org/dwc/terms/version/taxonFormula-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Taxon Formula</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A string representing the pattern to use to construct a dwc:Identification from dwc:Taxon names and identification qualifiers.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a controlled vocabulary.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>A</code></li>
+  <li class="list-group-item"><code>not A</code></li>
+  <li class="list-group-item"><code>A ?</code></li>
+  <li class="list-group-item"><code>A or B</code></li>
+  <li class="list-group-item"><code>A and B</code></li>
+  <li class="list-group-item"><code>A x B</code></li>
+  <li class="list-group-item"><code>A cf.</code></li>
+  <li class="list-group-item"><code>A aff.</code></li>
+</ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_taxonFormula"></a>Term Name dwciri:taxonFormula</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/taxonFormula">http://rs.tdwg.org/dwc/iri/taxonFormula</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/taxonFormula-2026-04-07">http://rs.tdwg.org/dwc/iri/version/taxonFormula-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Taxon Formula (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A pattern to use to construct a dwc:Identification from dwc:Taxon names and identification qualifiers.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>A</code></li>
+  <li class="list-group-item"><code>not A</code></li>
+  <li class="list-group-item"><code>A ?</code></li>
+  <li class="list-group-item"><code>A or B</code></li>
+  <li class="list-group-item"><code>A and B</code></li>
+  <li class="list-group-item"><code>A x B</code></li>
+  <li class="list-group-item"><code>A cf.</code></li>
+  <li class="list-group-item"><code>A aff.</code></li>
+</ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
 			<th colspan="2"><a id="dwc_TaxonID"></a>Term Name dwc:TaxonID</th>
 		</tr>
 	</thead>
@@ -17382,11 +21747,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/taxonID-2023-06-28">http://rs.tdwg.org/dwc/terms/version/taxonID-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/taxonID-2026-04-07">http://rs.tdwg.org/dwc/terms/version/taxonID-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -17394,13 +21759,13 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>An identifier for the set of dwc:Taxon information. May be a global unique identifier or an identifier specific to the data set.</td>
+			<td>An identifier for a dwc:Taxon.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
 			<td><ul class="list-group list-group-flush">
-  <li class="list-group-item"><code>8fa58e08-08de-4ac1-b69c-1235340b7001</code></li>
-  <li class="list-group-item"><code>32567</code></li>
+  <li class="list-group-item"><code>8fa58e08-08de-4ac1-b69c-1235340b7001</li>
+  <li class="list-group-item">32567</code></li>
   <li class="list-group-item"><code><a href="https://www.gbif.org/species/212">https://www.gbif.org/species/212</a></code></li>
 </ul></td>
 		</tr>
@@ -17411,6 +21776,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -17517,11 +21886,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/taxonRank-2023-06-28">http://rs.tdwg.org/dwc/terms/version/taxonRank-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/taxonRank-2026-04-07">http://rs.tdwg.org/dwc/terms/version/taxonRank-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -17533,7 +21902,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to use a controlled vocabulary. The taxon ranks of algae, fungi and plants are defined in the International Code of Nomenclature for algae, fungi, and plants (Schenzhen Code Articles H3.2, H4.4 and H.3.1).</td>
+			<td>Recommended best practice is to use a controlled vocabulary. The taxon ranks of algae, fungi and plants are defined in the International Code of Nomenclature for algae, fungi, and plants (Shenzhen Code Articles H3.2, H4.4 and H.3.1).</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -17559,6 +21928,14 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2023-06-28_40">http://rs.tdwg.org/decisions/decision-2023-06-28_40</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_43">http://rs.tdwg.org/decisions/decision-2024-02-28_43</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -17800,6 +22177,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2019-12-01_20">http://rs.tdwg.org/decisions/decision-2019-12-01_20</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-06-12_44">http://rs.tdwg.org/decisions/decision-2025-06-12_44</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -17858,43 +22239,54 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2019-12-01_20">http://rs.tdwg.org/decisions/decision-2019-12-01_20</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-02-24_55">http://rs.tdwg.org/decisions/decision-2026-02-24_55</a></td>
+		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_typeStatus"></a>Term Name dwciri:typeStatus</th>
+			<th colspan="2"><a id="dwc_typeOfType"></a>Term Name dwc:typeOfType</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/typeStatus">http://rs.tdwg.org/dwc/iri/typeStatus</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/typeOfType">http://rs.tdwg.org/dwc/terms/typeOfType</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2025-07-10</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/typeStatus-2025-07-10">http://rs.tdwg.org/dwc/iri/version/typeStatus-2025-07-10</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/typeOfType-2026-04-07">http://rs.tdwg.org/dwc/terms/version/typeOfType-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
-			<td>Type Status (IRI)</td>
+			<td>Type Of Type</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>A nomenclatural type (type status, typified scientific name, publication) applied to the subject.</td>
+			<td>A category of nomenclatural type of a dwc:MaterialEntity.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+			<td>The term dwc:typeOfType must be used in combination with dwc:typifiedName. Together they make up the type status of a specimen. Note that relatively very few specimens are nomenclatural types (types of names), so in most cases this term will have no value. Unlike dwc:typeStatus, dwc:typeOfType can only have a single value. Recommended best practice is to use a controlled vocabulary such as the GBIF Nomenclatural Type Status Vocabulary. This term has an equivalent in the tcs: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>holotype</code></li>
+  <li class="list-group-item"><code>isotype</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
+			<td>DataSets/DataSet/Units/Unit/SpecimenUnit/NomenclaturalTypeDesignations/TypeStatus</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -17902,7 +22294,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -17963,108 +22355,13 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwc_typifiedName"></a>Term Name dwc:typifiedName</th>
+			<th colspan="2"><a id="dwciri_typeStatus"></a>Term Name dwciri:typeStatus</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/typifiedName">http://rs.tdwg.org/dwc/terms/typifiedName</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2025-06-12</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/typifiedName-2025-06-12">http://rs.tdwg.org/dwc/terms/version/typifiedName-2025-06-12</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Typified Name</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>A scientific name that is based on a type specimen.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Recommended best practice is also to indicate the dwc:typeStatus of the specimen.</td>
-		</tr>
-		<tr>
-			<td>Examples</td>
-			<td><code>Polysiphonia amphibolis Womersley</code></td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>DataSets/DataSet/Units/Unit/SpecimenUnit/NomenclaturalTypeDesignations/NomenclaturalTypeDesignation/TypifiedName</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2025-06-12_44">http://rs.tdwg.org/decisions/decision-2025-06-12_44</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
-			<th colspan="2"><a id="dwc_verbatimCoordinates"></a>Term Name dwc:verbatimCoordinates</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/verbatimCoordinates">http://rs.tdwg.org/dwc/terms/verbatimCoordinates</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2023-06-28</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/verbatimCoordinates-2023-06-28">http://rs.tdwg.org/dwc/terms/version/verbatimCoordinates-2023-06-28</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Verbatim Coordinates</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>The verbatim original spatial coordinates of the dcterms:Location. The coordinate ellipsoid, geodeticDatum, or full Spatial Reference System (SRS) for these coordinates should be stored in dwc:verbatimSRS and the coordinate system should be stored in dwc:verbatimCoordinateSystem.</td>
-		</tr>
-		<tr>
-			<td>Examples</td>
-			<td><ul class="list-group list-group-flush">
-  <li class="list-group-item"><code>41 05 54S 121 05 34W</code></li>
-  <li class="list-group-item"><code>17T 630000 4833400</code></li>
-</ul></td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>{DataSets/DataSet/Units/Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesLatLon/CoordinatesText or DataSets/DataSet/Units/Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesUTM/UTMText}</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
-			<th colspan="2"><a id="dwciri_verbatimCoordinateSystem"></a>Term Name dwciri:verbatimCoordinateSystem</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/verbatimCoordinateSystem">http://rs.tdwg.org/dwc/iri/verbatimCoordinateSystem</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/typeStatus">http://rs.tdwg.org/dwc/iri/typeStatus</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -18072,19 +22369,19 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/verbatimCoordinateSystem-2025-07-10">http://rs.tdwg.org/dwc/iri/version/verbatimCoordinateSystem-2025-07-10</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/typeStatus-2025-07-10">http://rs.tdwg.org/dwc/iri/version/typeStatus-2025-07-10</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
-			<td>Verbatim Coordinate System (IRI)</td>
+			<td>Type Status (IRI)</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The spatial coordinate system for the dwc:verbatimLatitude and dwc:verbatimLongitude or the dwc:verbatimCoordinates of the dcterms:Location.</td>
+			<td>A nomenclatural type (type status, typified scientific name, publication) applied to the subject.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+			<td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -18104,6 +22401,255 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
+			<th colspan="2"><a id="dwc_typifiedName"></a>Term Name dwc:typifiedName</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/typifiedName">http://rs.tdwg.org/dwc/terms/typifiedName</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/typifiedName-2026-04-07">http://rs.tdwg.org/dwc/terms/version/typifiedName-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Typified Name</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A scientific name for which a specimen or other name is the type.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>The term dwc:typifiedName must be used in combination with dwc:typeOfType. Together they make up the type status of a specimen. Note that relatively very few specimens are nomenclatural types (types of names), so in most cases this term will have no value. Unlike dwc:typeStatus, dwc:typifiedName can only have a single value, so a dwc:MaterialEntity can only have a single dwc:typifiedName.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><code>Polysiphonia amphibolis Womersley</code></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>DataSets/DataSet/Units/Unit/SpecimenUnit/NomenclaturalTypeDesignations/NomenclaturalTypeDesignation/TypifiedName</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-06-12_44">http://rs.tdwg.org/decisions/decision-2025-06-12_44</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_UsagePolicy"></a>Term Name dwc:UsagePolicy</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/UsagePolicy">http://rs.tdwg.org/dwc/terms/UsagePolicy</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/UsagePolicy-2026-04-07">http://rs.tdwg.org/dwc/terms/version/UsagePolicy-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Usage Policy</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>Information about rights, usage, and attribution statements applicable to an entity.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>This is a convenience class to group related properties.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Class</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_verbatimAssertionType"></a>Term Name dwc:verbatimAssertionType</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/verbatimAssertionType">http://rs.tdwg.org/dwc/terms/verbatimAssertionType</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/verbatimAssertionType-2026-04-07">http://rs.tdwg.org/dwc/terms/version/verbatimAssertionType-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Verbatim Assertion Type</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A string representing the type of dwc:Assertion as it appeared in an original record.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>This term is meant to allow the capture of an unaltered original name for a dwc:assertionType. This term is meant to be used in addition to dwc:assertionType, not instead of it.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwc_verbatimCoordinates"></a>Term Name dwc:verbatimCoordinates</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/verbatimCoordinates">http://rs.tdwg.org/dwc/terms/verbatimCoordinates</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/verbatimCoordinates-2026-04-07">http://rs.tdwg.org/dwc/terms/version/verbatimCoordinates-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Verbatim Coordinates</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>Verbatim original spatial coordinates of a dcterms:Location.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>The coordinate ellipsoid, geodeticDatum, or full Spatial Reference System (SRS) for these coordinates should be stored in dwc:verbatimSRS and the coordinate system should be stored in dwc:verbatimCoordinateSystem.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>41 05 54S 121 05 34W</code></li>
+  <li class="list-group-item"><code>17T 630000 4833400</code></li>
+</ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>{DataSets/DataSet/Units/Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesLatLon/CoordinatesText or DataSets/DataSet/Units/Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesUTM/UTMText}</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_verbatimCoordinateSystem"></a>Term Name dwciri:verbatimCoordinateSystem</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/verbatimCoordinateSystem">http://rs.tdwg.org/dwc/iri/verbatimCoordinateSystem</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/verbatimCoordinateSystem-2026-04-07">http://rs.tdwg.org/dwc/iri/version/verbatimCoordinateSystem-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Verbatim Coordinate System (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A coordinate format for dwc:verbatimLatitude and dwc:verbatimLongitude or dwc:verbatimCoordinates.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
 			<th colspan="2"><a id="dwc_verbatimCoordinateSystem"></a>Term Name dwc:verbatimCoordinateSystem</th>
 		</tr>
 	</thead>
@@ -18114,11 +22660,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/verbatimCoordinateSystem-2023-06-28">http://rs.tdwg.org/dwc/terms/version/verbatimCoordinateSystem-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/verbatimCoordinateSystem-2026-04-07">http://rs.tdwg.org/dwc/terms/version/verbatimCoordinateSystem-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -18126,7 +22672,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The coordinate format for the dwc:verbatimLatitude and dwc:verbatimLongitude or the dwc:verbatimCoordinates of the dcterms:Location.</td>
+			<td>A coordinate format for dwc:verbatimLatitude and dwc:verbatimLongitude or dwc:verbatimCoordinates.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
@@ -18143,11 +22689,15 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
-			<td>(partly) DataSets/DataSet/Units/Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesGrid/GridCellSystem</td>
+			<td>DataSets/DataSet/Units/Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesGrid/GridCellSystem</td>
 		</tr>
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -18207,11 +22757,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2017-10-06</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/verbatimElevation-2017-10-06">http://rs.tdwg.org/dwc/terms/version/verbatimElevation-2017-10-06</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/verbatimElevation-2026-04-07">http://rs.tdwg.org/dwc/terms/version/verbatimElevation-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -18219,7 +22769,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The original description of the elevation (altitude, usually above sea level) of the Location.</td>
+			<td>An original description of the elevation of a dcterms:Location.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -18232,6 +22782,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -18279,6 +22833,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_43">http://rs.tdwg.org/decisions/decision-2024-02-28_43</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -18358,11 +22916,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-13</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/verbatimLabel-2023-09-13">http://rs.tdwg.org/dwc/terms/version/verbatimLabel-2023-09-13</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/verbatimLabel-2026-04-07">http://rs.tdwg.org/dwc/terms/version/verbatimLabel-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -18370,11 +22928,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The content of this term should include no embellishments, prefixes, headers or other additions made to the text. Abbreviations must not be expanded and supposed misspellings must not be corrected. Lines or breakpoints between blocks of text that could be verified by seeing the original labels or images of them may be used. Examples of material entities include preserved specimens, fossil specimens, and material samples. Best practice is to use UTF-8 for all characters. Best practice is to add comment “verbatimLabel derived from human transcription” in dwc:occurrenceRemarks.</td>
+			<td>A verbatim original representation of the written information affixed or related to a dwc:MaterialEntity.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Examples can be found at <a href="https://dwc.tdwg.org/examples/verbatimLabel">https://dwc.tdwg.org/examples/verbatimLabel</a>.</td>
+			<td>The content of this term should include no embellishments, prefixes, headers or other additions made to the text. Abbreviations must not be expanded and supposed misspellings must not be corrected. Lines or breakpoints between blocks of text that could be verified by seeing the original labels or images of them may be used. Examples of material entities include preserved specimens, fossil specimens, and material samples. Best practice is to use UTF-8 for all characters. Best practice is to add comment “verbatimLabel derived from human transcription” in dwc:materialEntityRemarks. Examples can be found at <a href="https://dwc.tdwg.org/examples/verbatimLabel">https://dwc.tdwg.org/examples/verbatimLabel</a>.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -18392,6 +22950,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -18408,11 +22970,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/verbatimLatitude-2023-06-28">http://rs.tdwg.org/dwc/terms/version/verbatimLatitude-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/verbatimLatitude-2026-04-07">http://rs.tdwg.org/dwc/terms/version/verbatimLatitude-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -18420,7 +22982,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The verbatim original latitude of the dcterms:Location. The coordinate ellipsoid, geodeticDatum, or full Spatial Reference System (SRS) for these coordinates should be stored in dwc:verbatimSRS and the coordinate system should be stored in dwc:verbatimCoordinateSystem.</td>
+			<td>A verbatim original latitude of a dcterms:Location.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>The coordinate ellipsoid, geodeticDatum, or full Spatial Reference System (SRS) for these coordinates should be stored in dwc:verbatimSRS and the coordinate system should be stored in dwc:verbatimCoordinateSystem.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -18433,6 +22999,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -18450,11 +23020,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2021-07-15</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/verbatimLocality-2021-07-15">http://rs.tdwg.org/dwc/terms/version/verbatimLocality-2021-07-15</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/verbatimLocality-2026-04-07">http://rs.tdwg.org/dwc/terms/version/verbatimLocality-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -18462,7 +23032,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The original textual description of the place.</td>
+			<td>An original textual description of a dcterms:Location.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -18475,6 +23045,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -18492,11 +23066,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/verbatimLongitude-2023-06-28">http://rs.tdwg.org/dwc/terms/version/verbatimLongitude-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/verbatimLongitude-2026-04-07">http://rs.tdwg.org/dwc/terms/version/verbatimLongitude-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -18504,7 +23078,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The verbatim original longitude of the dcterms:Location. The coordinate ellipsoid, geodeticDatum, or full Spatial Reference System (SRS) for these coordinates should be stored in dwc:verbatimSRS and the coordinate system should be stored in dwc:verbatimCoordinateSystem.</td>
+			<td>A verbatim original longitude of a dcterms:Location.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>The coordinate ellipsoid, geodeticDatum, or full Spatial Reference System (SRS) for these coordinates should be stored in dwc:verbatimSRS and the coordinate system should be stored in dwc:verbatimCoordinateSystem.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -18517,6 +23095,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -18624,6 +23206,52 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
+			<th colspan="2"><a id="dwciri_verbatimSRS"></a>Term Name dwciri:verbatimSRS</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/verbatimSRS">http://rs.tdwg.org/dwc/iri/verbatimSRS</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2025-06-12</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/verbatimSRS-2025-06-12">http://rs.tdwg.org/dwc/iri/version/verbatimSRS-2025-06-12</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Verbatim SRS (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which coordinates given in dwc:verbatimLatitude and dwc:verbatimLongitude, or dwc:verbatimCoordinates are based.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use an IRI for the EPSG code of the SRS, if known. Otherwise use a controlled vocabulary IRI for the name or code of the geodetic datum, if known. Otherwise use a controlled vocabulary IRI for the name or code of the ellipsoid, if known. Otherwise use an IRI for the value corresponding to <code>not recorded</code>.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-06-12_44">http://rs.tdwg.org/decisions/decision-2025-06-12_44</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
 			<th colspan="2"><a id="dwc_verbatimSRS"></a>Term Name dwc:verbatimSRS</th>
 		</tr>
 	</thead>
@@ -18663,52 +23291,6 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
   <li class="list-group-item"><code>Clarke 1866</code></li>
   <li class="list-group-item"><code>not recorded</code></li>
 </ul></td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2025-06-12_44">http://rs.tdwg.org/decisions/decision-2025-06-12_44</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
-			<th colspan="2"><a id="dwciri_verbatimSRS"></a>Term Name dwciri:verbatimSRS</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/verbatimSRS">http://rs.tdwg.org/dwc/iri/verbatimSRS</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2025-06-12</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/verbatimSRS-2025-06-12">http://rs.tdwg.org/dwc/iri/version/verbatimSRS-2025-06-12</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Verbatim SRS (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which coordinates given in dwc:verbatimLatitude and dwc:verbatimLongitude, or dwc:verbatimCoordinates are based.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Recommended best practice is to use an IRI for the EPSG code of the SRS, if known. Otherwise use a controlled vocabulary IRI for the name or code of the geodetic datum, if known. Otherwise use a controlled vocabulary IRI for the name or code of the ellipsoid, if known. Otherwise use an IRI for the value corresponding to <code>not recorded</code>.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -18773,6 +23355,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-12-11_54">http://rs.tdwg.org/decisions/decision-2025-12-11_54</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -18789,11 +23375,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-06-28</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/vernacularName-2023-06-28">http://rs.tdwg.org/dwc/terms/version/vernacularName-2023-06-28</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/vernacularName-2026-04-07">http://rs.tdwg.org/dwc/terms/version/vernacularName-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -18806,10 +23392,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Examples</td>
 			<td><ul class="list-group list-group-flush">
-  <li class="list-group-item"><code>Andean Condor</code></li>
-  <li class="list-group-item"><code>Condor Andino</code></li>
-  <li class="list-group-item"><code>American Eagle</code></li>
+  <li class="list-group-item"><code>cóndor andino</code></li>
+  <li class="list-group-item"><code>death cap</code></li>
+  <li class="list-group-item"><code>rainbow trout</code></li>
   <li class="list-group-item"><code>Gänsegeier</code></li>
+  <li class="list-group-item"><code>smoky quartz</code></li>
 </ul></td>
 		</tr>
 		<tr>
@@ -18823,6 +23410,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2019-12-01_19">http://rs.tdwg.org/decisions/decision-2019-12-01_19</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -18944,6 +23535,64 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 <table>
 	<thead>
 		<tr>
+			<th colspan="2"><a id="dwciri_vitality"></a>Term Name dwciri:vitality</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/vitality">http://rs.tdwg.org/dwc/iri/vitality</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/vitality-2026-04-07">http://rs.tdwg.org/dwc/iri/version/vitality-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Vitality (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>An indication of whether a dwc:Organism was alive or dead at the time of collection or observation.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-06-28_40">http://rs.tdwg.org/decisions/decision-2023-06-28_40</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
 			<th colspan="2"><a id="dwc_vitality"></a>Term Name dwc:vitality</th>
 		</tr>
 	</thead>
@@ -18954,11 +23603,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-13</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/vitality-2023-09-13">http://rs.tdwg.org/dwc/terms/version/vitality-2023-09-13</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/vitality-2026-04-07">http://rs.tdwg.org/dwc/terms/version/vitality-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -18970,7 +23619,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to use a controlled vocabulary. Intended to be used with records having a dwc:basisOfRecord of <code>PreservedSpecimen</code>, <code>MaterialEntity</code>, <code>MaterialSample</code>, or <code>HumanObservation</code>. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+			<td>Recommended best practice is to use a controlled vocabulary. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -18998,59 +23647,9 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
 		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
-			<th colspan="2"><a id="dwciri_vitality"></a>Term Name dwciri:vitality</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/vitality">http://rs.tdwg.org/dwc/iri/vitality</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2025-07-10</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/vitality-2025-07-10">http://rs.tdwg.org/dwc/iri/version/vitality-2025-07-10</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Vitality (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>An indication of whether a dwc:Organism was alive or dead at the time of collection or observation.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Recommended best practice is to use a controlled vocabulary. Intended to be used with records having a dwc:basisOfRecord of <code>PreservedSpecimen</code>, <code>MaterialEntity</code>, <code>MaterialSample</code>, or <code>HumanObservation</code>. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2023-06-28_40">http://rs.tdwg.org/decisions/decision-2023-06-28_40</a></td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2023-09-13_41">http://rs.tdwg.org/decisions/decision-2023-09-13_41</a></td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -19102,6 +23701,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_43">http://rs.tdwg.org/decisions/decision-2024-02-28_43</a></td>
 		</tr>
 	</tbody>
 </table>
