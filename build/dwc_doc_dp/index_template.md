@@ -79,9 +79,8 @@ All sections of this document are normative (define what is required to comply w
 
 ### 1.3 RFC 2119 key words
 
-The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to be interpreted as described in [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [BCP 14](https://www.rfc-editor.org/info/bcp14) [\[RFC 2119\]](https://datatracker.ietf.org/doc/html/rfc2119) and [\[RFC 8174\]](https://datatracker.ietf.org/doc/html/rfc8174) when, and only when, they appear in all capitals, as shown here.
 
-{:id="example"}
 ## 2 DwC-DP Data Package example (non-normative)
 
 Consider a dataset containing four bird *Occurrences* observed during a single parent *Event*. The data can be captured in two CSV files, each representing a DwC-DP table:
@@ -392,7 +391,6 @@ A **field descriptor** describes a single field in a table schema (e.g., its nam
 {:.alert .alert-info}
 (non-normative) You will be guaranteed to meet the requirements for field descriptors by copying field descriptors directly from the table schemas provided at `rs.tdwg.org`.
 
-{:id="dwc-dp-tables"}
 ## 4. DwC-DP tables (non-normative)
 
 - **Reserved table names**: see the `enum` values for `dwc-dp-resource-names` in the Darwin Core Profile at http://rs.tdwg.org/dwc-dp/1.0/dwc-dp-profile.json
