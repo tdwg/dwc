@@ -27,5 +27,6 @@
     "term_deprecated": "This term is deprecated and should no longer be used.",
     "term_replaced_by": "Is replaced by",
     "has_broader_concept": "Has broader concept",
-    "record-level": "Record-level"
+    "record-level": "Record-level",
+    "no_terms_organized_in_class": "No properties are currently organized in this class."
 }

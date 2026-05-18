@@ -335,7 +335,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [dwc:parentMeasurementID](#dwc_parentMeasurementID) |
 [dwc:verbatimMeasurementType](#dwc_verbatimMeasurementType)
 
-**Media*
+**Media**
+
+No properties are currently organized in this class.
+
 
 **Molecular Protocol**
 
@@ -491,7 +494,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [dwc:verbatimTaxonRank](#dwc_verbatimTaxonRank) |
 [dwc:vernacularName](#dwc_vernacularName)
 
-**Usage Policy*
+**Usage Policy**
+
+No properties are currently organized in this class.
+
 
 **IRI-value terms**
 
@@ -834,7 +840,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [Parent Measurement ID](#dwc_parentMeasurementID) |
 [Verbatim Measurement Type](#dwc_verbatimMeasurementType)
 
-**Media*
+**Media**
+
+No properties are currently organized in this class.
+
 
 **Molecular Protocol**
 
@@ -990,7 +999,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [Verbatim Taxon Rank](#dwc_verbatimTaxonRank) |
 [Vernacular Name](#dwc_vernacularName)
 
-**Usage Policy*
+**Usage Policy**
+
+No properties are currently organized in this class.
+
 
 **IRI-value terms**
 
@@ -2073,7 +2085,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>A name for a dcterms:Agent responsible for making a dwc:Assertion.</td>
+			<td>An IRI identifying a dcterms:Agent responsible for making a dwc:Assertion.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
@@ -2634,7 +2646,14 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to use a controlled vocabulary such as the Ontology of Units of Measure <a href="http://www.wurvoc.org/vocabularies/om-1.8/">http://www.wurvoc.org/vocabularies/om-1.8/</a> of SI units, derived units, or other non-SI units accepted for use within the SI. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+			<td>Recommended best practice is to use a controlled vocabulary such as the Ontology of Units of Measure <a href="http://www.ontology-of-units-of-measure.org">http://www.ontology-of-units-of-measure.org</a> for SI units, derived units, or other non-SI units accepted for use within the SI. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code><a href="http://www.ontology-of-units-of-measure.org/resource/om-2/metre">http://www.ontology-of-units-of-measure.org/resource/om-2/metre</a></code></li>
+  <li class="list-group-item"><code><a href="http://www.ontology-of-units-of-measure.org/resource/om-2/second-Time">http://www.ontology-of-units-of-measure.org/resource/om-2/second-Time</a></code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -2680,7 +2699,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to use a controlled vocabulary such as the Ontology of Units of Measure <a href="http://www.wurvoc.org/vocabularies/om-1.8/">http://www.wurvoc.org/vocabularies/om-1.8/</a> of SI units, derived units, or other non-SI units accepted for use within the SI. For units that are composed of multiple parts, use the patterns as given in "A Primer for Communicating Mathematics via Plain Text" (<a href="https://cse.sc.edu/~fenner/latex-ASCII.pdf">https://cse.sc.edu/~fenner/latex-ASCII.pdf</a>) by Stephen Fenner (e.g., <code>g/cm^3</code> for grams per cubic centimeter). For other units, provide the value as a recognizable standard (e.g., '%') or written out in full and in the plural (e.g., <code>individuals</code>). It is fine to provide non-SI units in the original language of the dataset. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+			<td>Recommended best practice is to use a controlled vocabulary such as the Ontology of Units of Measure <a href="http://www.ontology-of-units-of-measure.org">http://www.ontology-of-units-of-measure.org</a> for SI units, derived units, or other non-SI units accepted for use within the SI. For units that are composed of multiple parts, use the patterns as given in "A Primer for Communicating Mathematics via Plain Text" (<a href="https://cse.sc.edu/~fenner/latex-ASCII.pdf">https://cse.sc.edu/~fenner/latex-ASCII.pdf</a>) by Stephen Fenner (e.g., <code>g/cm^3</code> for grams per cubic centimeter). For other units, provide the value as a recognizable standard (e.g., '%') or written out in full and in the plural (e.g., <code>individuals</code>). It is fine to provide non-SI units in the original language of the dataset. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -2740,6 +2759,17 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 			<td>This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
 		</tr>
 		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>45</code></li>
+  <li class="list-group-item"><code>20</code></li>
+  <li class="list-group-item"><code>1</code></li>
+  <li class="list-group-item"><code>14.5</code></li>
+  <li class="list-group-item"><code>UV-light</code></li>
+  <li class="list-group-item"><code>Hamon grab</code></li>
+</ul></td>
+		</tr>
+		<tr>
 			<td>ABCD equivalence</td>
 			<td>DataSets/DataSet/Units/Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/UpperValue or DataSets/DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts/SiteMeasurementOrFact/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts/SiteMeasurementOrFact/MeasurementOrFactAtomised/UpperValue or DataSets/DataSet/Units/Unit/Gathering/Altitude/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/Gathering/Altitude/MeasurementOrFactAtomised/UpperValue or DataSets/DataSet/Units/Unit/Gathering/Depth/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/Gathering/Depth/MeasurementOrFactAtomised/UpperValue or DataSets/DataSet/Units/Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFactAtomised/UpperValue or DataSets/DataSet/Units/Unit/Gathering/Height/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/Gathering/Height/MeasurementOrFactAtomised/UpperValue</td>
 		</tr>
@@ -2784,6 +2814,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Notes</td>
 			<td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><code><a href="http://vocab.nerc.ac.uk/collection/L22/current/TOOL0960/">http://vocab.nerc.ac.uk/collection/L22/current/TOOL0960/</a></code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -8500,11 +8534,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>A name for a dcterms:Agent responsible for providing a georeference.</td>
+			<td>An IRI identifying a dcterms:Agent responsible for providing a georeference.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>). Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+			<td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -8818,11 +8852,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>A list (concatenated and separated) of maps, gazetteers, or other resources used to georeference a dcterms:Location, described specifically enough to allow anyone in the future to use the same resources.</td>
+			<td>An IRI for a map, gazetteer, or other resource used to georeference a dcterms:Location.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>). Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+			<td>Recommended best practice is describe a georeference with no more than one sampled georeference source. In the case of a georeference that cannot be attributed to a specific source, the recommended best practice is to repeat the property for each IRI that denotes a different source that applies to the georeference. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -9948,7 +9982,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
   <li class="list-group-item"><code>media</code></li>
   <li class="list-group-item"><code>relationship</code></li>
   <li class="list-group-item"><code>features</code></li>
-  <li class="list-group-item"><code>fine features</code></li>
+  <li class="list-group-item"><code>fineFeatures</code></li>
   <li class="list-group-item"><code>unknown</code></li>
 </ul></td>
 		</tr>
@@ -10208,7 +10242,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>A name for a dcterms:Agent responsible for making a dwc:Identification.</td>
+			<td>An IRI identifying a dcterms:Agent responsible for making a dwc:Identification.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
@@ -15560,7 +15594,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>For dwc:Occurrences, the default vocabulary is recommended to consist of detected and notDetected, but can be extended by implementers with good justification. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+			<td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -18060,7 +18094,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>A name for a dcterms:Agent responsible for recording a dwc:Occurrence.</td>
+			<td>An IRI identifying a dcterms:Agent responsible for recording a dwc:Occurrence.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
@@ -19749,11 +19783,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>A list (concatenated and separated) of substrate layers sampled during a dwc:Event.</td>
+			<td>An IRI identifying a substrate layer sampled during a dwc:Event.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+			<td>Recommended best practice is describe a dwc:Event with no more than one sampled substrate layer. In the case of a dwc:Event that cannot be attributed to a specific layer, the recommended best practice is to repeat the property for each IRI that denotes a different layer that applies to the dwc:Event. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -21663,19 +21697,6 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		<tr>
 			<td>Notes</td>
 			<td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>Examples</td>
-			<td><ul class="list-group list-group-flush">
-  <li class="list-group-item"><code>A</code></li>
-  <li class="list-group-item"><code>not A</code></li>
-  <li class="list-group-item"><code>A ?</code></li>
-  <li class="list-group-item"><code>A or B</code></li>
-  <li class="list-group-item"><code>A and B</code></li>
-  <li class="list-group-item"><code>A x B</code></li>
-  <li class="list-group-item"><code>A cf.</code></li>
-  <li class="list-group-item"><code>A aff.</code></li>
-</ul></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>

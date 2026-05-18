@@ -478,7 +478,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/assertionValue">http://rs.tdwg.org/dwc/terms/assertionValue</a></td></tr>
     <tr><td>Definition</td><td>An asserted value.</td></tr>
     <tr><td>Notes</td><td>This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
-    <tr><td>Examples</td><td></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>45</code></li><li class="list-group-item"><code>20</code></li><li class="list-group-item"><code>1</code></li><li class="list-group-item"><code>14.5</code></li><li class="list-group-item"><code>UV-light</code></li><li class="list-group-item"><code>Hamon grab</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -490,7 +490,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">assertionUnit</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/assertionUnit">http://rs.tdwg.org/dwc/terms/assertionUnit</a></td></tr>
     <tr><td>Definition</td><td>A unit associated with the value in dwc:assertionValue.</td></tr>
-    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary such as the Ontology of Units of Measure <a href="http://www.wurvoc.org/vocabularies/om-1.8/">http://www.wurvoc.org/vocabularies/om-1.8/</a> of SI units, derived units, or other non-SI units accepted for use within the SI. For units that are composed of multiple parts, use the patterns as given in "A Primer for Communicating Mathematics via Plain Text" (<a href="https://cse.sc.edu/~fenner/latex-ASCII.pdf">https://cse.sc.edu/~fenner/latex-ASCII.pdf</a>) by Stephen Fenner (e.g., <code>g/cm^3</code> for grams per cubic centimeter). For other units, provide the value as a recognizable standard (e.g., '%') or written out in full and in the plural (e.g., <code>individuals</code>). It is fine to provide non-SI units in the original language of the dataset. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary such as the Ontology of Units of Measure <a href="http://www.ontology-of-units-of-measure.org">http://www.ontology-of-units-of-measure.org</a> for SI units, derived units, or other non-SI units accepted for use within the SI. For units that are composed of multiple parts, use the patterns as given in "A Primer for Communicating Mathematics via Plain Text" (<a href="https://cse.sc.edu/~fenner/latex-ASCII.pdf">https://cse.sc.edu/~fenner/latex-ASCII.pdf</a>) by Stephen Fenner (e.g., <code>g/cm^3</code> for grams per cubic centimeter). For other units, provide the value as a recognizable standard (e.g., '%') or written out in full and in the plural (e.g., <code>individuals</code>). It is fine to provide non-SI units in the original language of the dataset. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>m</code></li><li class="list-group-item"><code>s</code></li><li class="list-group-item"><code>g</code></li><li class="list-group-item"><code>ml</code></li><li class="list-group-item"><code>%</code></li><li class="list-group-item"><code>individuals</code></li></ul></td></tr>
   </tbody>
 </table>
@@ -1910,7 +1910,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/identificationType">http://rs.tdwg.org/dwc/terms/identificationType</a></td></tr>
     <tr><td>Definition</td><td>A category that best matches the nature of a dwc:Identification.</td></tr>
     <tr><td>Notes</td><td>The evidentiary basis, analytical approach, or inferential method by which an identification was determined. Values describe the dominant source of information supporting the identification (e.g., morphology, geography, molecular data, functional attributes, relationships, or taxonomic revision), independent of confidence level or taxonomic outcome. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>geography</code></li><li class="list-group-item"><code>taxonomicRevision</code></li><li class="list-group-item"><code>functionalAttributes</code></li><li class="list-group-item"><code>nucleotideAnalysis</code></li><li class="list-group-item"><code>karyotype</code></li><li class="list-group-item"><code>media</code></li><li class="list-group-item"><code>relationship</code></li><li class="list-group-item"><code>features</code></li><li class="list-group-item"><code>fine features</code></li><li class="list-group-item"><code>unknown</code></li></ul></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>geography</code></li><li class="list-group-item"><code>taxonomicRevision</code></li><li class="list-group-item"><code>functionalAttributes</code></li><li class="list-group-item"><code>nucleotideAnalysis</code></li><li class="list-group-item"><code>karyotype</code></li><li class="list-group-item"><code>media</code></li><li class="list-group-item"><code>relationship</code></li><li class="list-group-item"><code>features</code></li><li class="list-group-item"><code>fineFeatures</code></li><li class="list-group-item"><code>unknown</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -4117,7 +4117,7 @@ This category contains terms that are generic in that they might apply to any ty
   <tbody>
     <tr class="table-secondary"><th colspan="2">assertionBy</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/assertionBy">http://rs.tdwg.org/dwc/iri/assertionBy</a></td></tr>
-    <tr><td>Definition</td><td>A name for a dcterms:Agent responsible for making a dwc:Assertion.</td></tr>
+    <tr><td>Definition</td><td>An IRI identifying a dcterms:Agent responsible for making a dwc:Assertion.</td></tr>
     <tr><td>Notes</td><td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
@@ -4142,8 +4142,8 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">assertionUnit</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/assertionUnit">http://rs.tdwg.org/dwc/iri/assertionUnit</a></td></tr>
     <tr><td>Definition</td><td>A unit associated with the value in dwc:assertionValue.</td></tr>
-    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary such as the Ontology of Units of Measure <a href="http://www.wurvoc.org/vocabularies/om-1.8/">http://www.wurvoc.org/vocabularies/om-1.8/</a> of SI units, derived units, or other non-SI units accepted for use within the SI. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
-    <tr><td>Examples</td><td></td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary such as the Ontology of Units of Measure <a href="http://www.ontology-of-units-of-measure.org">http://www.ontology-of-units-of-measure.org</a> for SI units, derived units, or other non-SI units accepted for use within the SI. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="http://www.ontology-of-units-of-measure.org/resource/om-2/metre">http://www.ontology-of-units-of-measure.org/resource/om-2/metre</a></code></li><li class="list-group-item"><code><a href="http://www.ontology-of-units-of-measure.org/resource/om-2/second-Time">http://www.ontology-of-units-of-measure.org/resource/om-2/second-Time</a></code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -4155,7 +4155,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/assertionValue">http://rs.tdwg.org/dwc/iri/assertionValue</a></td></tr>
     <tr><td>Definition</td><td>An asserted value.</td></tr>
     <tr><td>Notes</td><td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
-    <tr><td>Examples</td><td></td></tr>
+    <tr><td>Examples</td><td><code><a href="http://vocab.nerc.ac.uk/collection/L22/current/TOOL0960/">http://vocab.nerc.ac.uk/collection/L22/current/TOOL0960/</a></code></td></tr>
   </tbody>
 </table>
 
@@ -4431,8 +4431,8 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
   <tbody>
     <tr class="table-secondary"><th colspan="2">georeferencedBy</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/georeferencedBy">http://rs.tdwg.org/dwc/iri/georeferencedBy</a></td></tr>
-    <tr><td>Definition</td><td>A name for a dcterms:Agent responsible for providing a georeference.</td></tr>
-    <tr><td>Notes</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>). Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Definition</td><td>An IRI identifying a dcterms:Agent responsible for providing a georeference.</td></tr>
+    <tr><td>Notes</td><td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
@@ -4455,8 +4455,8 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
   <tbody>
     <tr class="table-secondary"><th colspan="2">georeferenceSources</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/georeferenceSources">http://rs.tdwg.org/dwc/iri/georeferenceSources</a></td></tr>
-    <tr><td>Definition</td><td>A list (concatenated and separated) of maps, gazetteers, or other resources used to georeference a dcterms:Location, described specifically enough to allow anyone in the future to use the same resources.</td></tr>
-    <tr><td>Notes</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>). Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Definition</td><td>An IRI for a map, gazetteer, or other resource used to georeference a dcterms:Location.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is describe a georeference with no more than one sampled georeference source. In the case of a georeference that cannot be attributed to a specific source, the recommended best practice is to repeat the property for each IRI that denotes a different source that applies to the georeference. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
@@ -4527,7 +4527,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
   <tbody>
     <tr class="table-secondary"><th colspan="2">identifiedBy</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/identifiedBy">http://rs.tdwg.org/dwc/iri/identifiedBy</a></td></tr>
-    <tr><td>Definition</td><td>A name for a dcterms:Agent responsible for making a dwc:Identification.</td></tr>
+    <tr><td>Definition</td><td>An IRI identifying a dcterms:Agent responsible for making a dwc:Identification.</td></tr>
     <tr><td>Notes</td><td>When used in the context of an eco:Survey, the subject consists of all of the dwc:Identifications related to the eco:Survey. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
@@ -4721,7 +4721,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr class="table-secondary"><th colspan="2">occurrenceStatus</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/occurrenceStatus">http://rs.tdwg.org/dwc/iri/occurrenceStatus</a></td></tr>
     <tr><td>Definition</td><td>A statement about the detection or non-detection of a dwc:Organism during a dwc:Event.</td></tr>
-    <tr><td>Notes</td><td>For dwc:Occurrences, the default vocabulary is recommended to consist of detected and notDetected, but can be extended by implementers with good justification. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Notes</td><td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
@@ -4816,7 +4816,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
   <tbody>
     <tr class="table-secondary"><th colspan="2">recordedBy</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/recordedBy">http://rs.tdwg.org/dwc/iri/recordedBy</a></td></tr>
-    <tr><td>Definition</td><td>A name for a dcterms:Agent responsible for recording a dwc:Occurrence.</td></tr>
+    <tr><td>Definition</td><td>An IRI identifying a dcterms:Agent responsible for recording a dwc:Occurrence.</td></tr>
     <tr><td>Notes</td><td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
@@ -4864,8 +4864,8 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
   <tbody>
     <tr class="table-secondary"><th colspan="2">sampledSubstrateLayer</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/sampledSubstrateLayer">http://rs.tdwg.org/dwc/iri/sampledSubstrateLayer</a></td></tr>
-    <tr><td>Definition</td><td>A list (concatenated and separated) of substrate layers sampled during a dwc:Event.</td></tr>
-    <tr><td>Notes</td><td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Definition</td><td>An IRI identifying a substrate layer sampled during a dwc:Event.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is describe a dwc:Event with no more than one sampled substrate layer. In the case of a dwc:Event that cannot be attributed to a specific layer, the recommended best practice is to repeat the property for each IRI that denotes a different layer that applies to the dwc:Event. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
@@ -4926,7 +4926,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/taxonFormula">http://rs.tdwg.org/dwc/iri/taxonFormula</a></td></tr>
     <tr><td>Definition</td><td>A pattern to use to construct a dwc:Identification from dwc:Taxon names and identification qualifiers.</td></tr>
     <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>A</code></li><li class="list-group-item"><code>not A</code></li><li class="list-group-item"><code>A ?</code></li><li class="list-group-item"><code>A or B</code></li><li class="list-group-item"><code>A and B</code></li><li class="list-group-item"><code>A x B</code></li><li class="list-group-item"><code>A cf.</code></li><li class="list-group-item"><code>A aff.</code></li></ul></td></tr>
+    <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
 <p class="invisible">

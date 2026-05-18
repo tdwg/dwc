@@ -2,6 +2,8 @@
 # Steve Baskauf 2020-08-12 CC0
 # updated 2021-02-11
 # Updated by Matthew Blissett 2025-03.
+# Updated by John Wieczorek 2026-05-18.
+#
 # This script merges static Markdown header documents with term information tables (in Markdown) generated from data in the rs.tdwg.org repo from the TDWG Github site
 
 import re
@@ -180,13 +182,18 @@ class TermList:
             else:
                 filtered_table = self.terms.terms_sorted_by_localname
 
+            added_terms = False
             for row_index,row in filtered_table.iterrows():
                 if row['rdf_type'] != 'http://www.w3.org/2000/01/rdf-schema#Class':
                     curie = row['pref_ns_prefix'] + ":" + row['term_localName']
                     curie_anchor = curie.replace(':','_')
                     text += '[' + curie + '](#' + curie_anchor + ') |\n'
-            text = text[:len(text)-3] # remove final trailing " |\n"
-            text += '\n\n' # put back removed newline
+                    added_terms = True
+            if added_terms:
+                text = text[:len(text)-3] # remove final trailing " |\n"
+            else:
+                text += self.t('no_terms_organized_in_class') + '\n'
+            text += '\n\n'
 
         index_by_name = text
 
@@ -227,12 +234,17 @@ class TermList:
             else:
                 filtered_table = self.terms.terms_sorted_by_label
 
+            added_terms = False
             for row_index,row in filtered_table.iterrows():
                 if 'rdf_type' in row and row['rdf_type'] != 'http://www.w3.org/2000/01/rdf-schema#Class':
                     curie_anchor = row['pref_ns_prefix'] + "_" + row['term_localName']
                     text += '[' + row['label'] + '](#' + curie_anchor + ') |\n'
-            text = text[:len(text)-3] # remove final trailing " |\n"
-            text += '\n\n' # put back removed newline
+                    added_terms = True
+            if added_terms:
+                text = text[:len(text)-3] # remove final trailing " |\n"
+            else:
+                text += self.t('no_terms_organized_in_class') + '\n'
+            text += '\n\n'
 
         index_by_label = text
         print()
