@@ -3,7 +3,7 @@
 New file: `/Users/johnwieczorek/Projects/dwc/docs/list/index.md`
 Old file: `/Users/johnwieczorek/Projects/dwc/docs/list/2025-07-10.md`
 
-Changed rows: 259
+Changed rows: 258
 
 | term_name | metadata_element | new_value | old_value |
 | --- | --- | --- | --- |
@@ -234,15 +234,14 @@ Changed rows: 259
 | dwciri:eventType | Notes | Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects. | Recommended best practice is to use a controlled vocabulary. **Regardless of the dwc:eventType, the interval of the dwc:Event can be captured in dwc:eventDate.** Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects. |
 | dwciri:fieldNumber | Definition | An identifier given to **a** **dwc:Event** in the field. | An identifier given to **the** **event** in the field. **Often serves as a link between field notes and the dwc:Event.** |
 | dwciri:fieldNumber | Notes | **Often** **serves** **as** a **link** **between** field notes and **a dwc:Event. Terms in** the **dwciri:** **namespace** **are** **intended** **to be used in RDF with non-literal objects.** | **The** **subject** **is** a **(possibly** **IRI-identified) resource that is the** field notes and the **object** **is** **a** **dwc:Event** **instance.** |
-| dwciri:georeferencedBy | Definition | A **name** for **a** **dcterms:Agent responsible for providing a georeference.** | A **person, group, or organization who determined the georeference (spatial representation)** for **the** **dcterms:Location.** |
-| dwciri:georeferencedBy | Notes | **Recommended best practice is to separate the values in a list with space vertical bar space (`\|`).** Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects. | Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects. |
+| dwciri:georeferencedBy | Definition | **An** **IRI** **identifying** **a** **dcterms:Agent** **responsible** for **providing** **a georeference.** | **A** **person,** **group,** **or** **organization** **who determined the georeference (spatial representation)** for **the** **dcterms:Location.** |
 | dwciri:georeferenceProtocol | Definition | A description or reference to **a** **dwc:Protocol** used to determine **a** spatial footprint, coordinates, and uncertainties. | A description or reference to **the** **methods** used to determine **the** spatial footprint, coordinates, and uncertainties. |
-| dwciri:georeferenceSources | Definition | A **list** **(concatenated and separated) of maps, gazetteers,** or other **resources** used to georeference **a dcterms:Location, described specifically enough to allow anyone in** the **future to use the same resources.** | A **map,** **gazetteer,** or other **resource** used to georeference the **dcterms:Location.** |
-| dwciri:georeferenceSources | Notes | **Recommended best practice is to separate the values in a list with space vertical bar space (`\|`).** Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects. | Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects. |
+| dwciri:georeferenceSources | Definition | **An IRI for a** map, gazetteer, or other resource used to georeference **a** dcterms:Location. | **A** map, gazetteer, or other resource used to georeference **the** dcterms:Location. |
+| dwciri:georeferenceSources | Notes | **Recommended best practice is describe a georeference with no more than one sampled georeference source. In the case of a georeference that cannot be attributed to a specific source, the recommended best practice is to repeat the property for each IRI that denotes a different source that applies to the georeference.** Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects. | Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects. |
 | dwciri:identificationType | term_status | **added** |  |
 | dwciri:identificationVerificationStatus | Definition | A categorical indicator of the extent to which **a** taxonomic **determination** has been verified to be correct. | A categorical indicator of the extent to which **the** taxonomic **identification** has been verified to be correct. |
 | dwciri:identificationVerificationStatus | Notes | Recommended best practice is to use a controlled vocabulary such as that used in HISPID and ABCD. **Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.** | **Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.** Recommended best practice is to use a controlled vocabulary such as that used in HISPID and ABCD. |
-| dwciri:identifiedBy | Definition | A **name** **for** **a** **dcterms:Agent** **responsible** **for** **making** **a** **dwc:Identification.** | A **person,** **group,** **or** **organization** **who** **assigned** **the** **dwc:Taxon** **to the subject.** |
+| dwciri:identifiedBy | Definition | **An** **IRI** **identifying** **a** **dcterms:Agent** **responsible** **for** **making** **a** **dwc:Identification.** | **A** **person,** **group,** **or** **organization** **who** **assigned** **the** **dwc:Taxon** **to the subject.** |
 | dwciri:identifiedBy | Notes | When used in the context of an **eco:Survey,** the subject consists of all of the **dwc:Identifications** related to the **eco:Survey.** Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects. | When used in the context of an **Event (such as in the Humboldt Extension),** the subject consists of all of the **dwc:Organisms** related to the **Event.** Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects. |
 | dwciri:informationWithheld | Definition | Additional information that **exists about a resource,** but that **is** not shared **publicly.** **Suggests** **that** **alternative data of higher quality may be available on request.** | Additional information that **exists,** but that **has** not **been** shared **in** **the** **given** **record.** |
 | dwciri:lifeStage | Definition | **An** age class or life stage of **a** **dwc:Organism.** | **The** age class or life stage of **the** **dwc:Organism(s) at the time the dwc:Occurrence was recorded.** |
@@ -250,12 +249,12 @@ Changed rows: 259
 | dwciri:materialEntityType | term_status | **added** |  |
 | dwciri:objectQuantityType | term_status | **added** |  |
 | dwciri:occurrenceStatus | Definition | A statement about the **detection** or **non-detection** of a **dwc:Organism** **during** a **dwc:Event.** | A statement about the **presence** or **absence** of a **dwc:Taxon** **at** a **dcterms:Location.** |
-| dwciri:occurrenceStatus | Notes | **For** **dwc:Occurrences,** **the default vocabulary** is **recommended** to **consist** **of** **detected** **and notDetected, but can be extended by implementers with good justification.** Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects. | **Recommended** **best** **practice** is to **use** **a** **controlled** **vocabulary.** Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects. |
+| dwciri:occurrenceStatus | Notes | Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects. | **Recommended best practice is to use a controlled vocabulary.** Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects. |
 | dwciri:organismInteractionType | term_status | **added** |  |
 | dwciri:organismScope | term_status | **added** |  |
 | dwciri:preferredSpatialRepresentation | term_status | **added** |  |
 | dwciri:protocolType | term_status | **added** |  |
-| dwciri:recordedBy | Definition | A **name** **for** **a** **dcterms:Agent** responsible for recording **a** dwc:Occurrence. | A **person,** **group,** **or** **organization** responsible for recording **the original** dwc:Occurrence. |
+| dwciri:recordedBy | Definition | **An** **IRI** **identifying** **a** **dcterms:Agent** responsible for recording **a** dwc:Occurrence. | **A** **person,** **group,** **or** **organization** responsible for recording **the original** dwc:Occurrence. |
 | dwciri:reproductiveCondition | Definition | **A** reproductive condition of **a** **dwc:Organism.** | **The** reproductive condition of **the** **biological individual(s) represented in the dwc:Occurrence.** |
 | dwciri:sampledSubstrateCategory | term_status | **added** |  |
 | dwciri:sampledSubstrateLayer | term_status | **added** |  |
