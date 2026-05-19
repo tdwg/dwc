@@ -15,27 +15,28 @@ Additional [files with just the current term names](https://github.com/tdwg/dwc/
 ## Record-level
 
 This category contains terms that are generic in that they might apply to any type of record in a dataset.
+
 <div class="my-4">
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dc:type">type</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dcterms:modified">modified</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dcterms:accessRights">accessRights</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:basisOfRecord">basisOfRecord</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dcterms:bibliographicCitation">bibliographicCitation</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:collectionCode">collectionCode</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:collectionID">collectionID</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:dataGeneralizations">dataGeneralizations</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:datasetID">datasetID</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:datasetName">datasetName</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:dynamicProperties">dynamicProperties</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:feedbackURL">feedbackURL</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:informationWithheld">informationWithheld</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:institutionCode">institutionCode</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:institutionID">institutionID</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dc:language">language</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dcterms:license">license</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dcterms:rightsHolder">rightsHolder</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dcterms:accessRights">accessRights</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dcterms:bibliographicCitation">bibliographicCitation</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dcterms:references">references</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:feedbackURL">feedbackURL</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:institutionID">institutionID</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:collectionID">collectionID</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:datasetID">datasetID</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:institutionCode">institutionCode</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:collectionCode">collectionCode</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:datasetName">datasetName</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dcterms:modified">modified</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:ownerInstitutionCode">ownerInstitutionCode</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:basisOfRecord">basisOfRecord</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:informationWithheld">informationWithheld</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:dataGeneralizations">dataGeneralizations</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:dynamicProperties">dynamicProperties</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dcterms:references">references</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dcterms:rightsHolder">rightsHolder</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dc:type">type</a>
   </div>
 
 
@@ -303,32 +304,33 @@ This category contains terms that are generic in that they might apply to any ty
 
 ## Occurrence
 
+
 <div class="my-4">
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:occurrenceID">occurrenceID</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:catalogNumber">catalogNumber</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:recordNumber">recordNumber</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:recordedBy">recordedBy</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:recordedByID">recordedByID</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:individualCount">individualCount</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:organismQuantity">organismQuantity</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:organismQuantityType">organismQuantityType</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:sex">sex</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:lifeStage">lifeStage</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:reproductiveCondition">reproductiveCondition</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:caste">caste</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:behavior">behavior</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:vitality">vitality</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:establishmentMeans">establishmentMeans</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:degreeOfEstablishment">degreeOfEstablishment</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:pathway">pathway</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:georeferenceVerificationStatus">georeferenceVerificationStatus</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:occurrenceStatus">occurrenceStatus</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:associatedMedia">associatedMedia</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:associatedOccurrences">associatedOccurrences</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:associatedReferences">associatedReferences</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:associatedTaxa">associatedTaxa</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:otherCatalogNumbers">otherCatalogNumbers</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:behavior">behavior</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:caste">caste</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:catalogNumber">catalogNumber</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:degreeOfEstablishment">degreeOfEstablishment</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:establishmentMeans">establishmentMeans</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:georeferenceVerificationStatus">georeferenceVerificationStatus</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:individualCount">individualCount</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:lifeStage">lifeStage</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:occurrenceID">occurrenceID</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:occurrenceRemarks">occurrenceRemarks</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:occurrenceStatus">occurrenceStatus</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:organismQuantity">organismQuantity</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:organismQuantityType">organismQuantityType</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:otherCatalogNumbers">otherCatalogNumbers</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:pathway">pathway</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:recordedBy">recordedBy</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:recordedByID">recordedByID</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:recordNumber">recordNumber</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:reproductiveCondition">reproductiveCondition</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:sex">sex</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:vitality">vitality</a>
   </div>
 
 <table class="table">
@@ -670,14 +672,15 @@ This category contains terms that are generic in that they might apply to any ty
 
 ## Organism
 
+
 <div class="my-4">
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:associatedOrganisms">associatedOrganisms</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:causeOfDeath">causeOfDeath</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:organismID">organismID</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:organismName">organismName</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:organismScope">organismScope</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:causeOfDeath">causeOfDeath</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:associatedOrganisms">associatedOrganisms</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:previousIdentifications">previousIdentifications</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:organismRemarks">organismRemarks</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:organismScope">organismScope</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:previousIdentifications">previousIdentifications</a>
   </div>
 
 <table class="table">
@@ -785,16 +788,17 @@ This category contains terms that are generic in that they might apply to any ty
 
 ## MaterialEntity
 
+
 <div class="my-4">
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:materialEntityID">materialEntityID</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:digitalSpecimenID">digitalSpecimenID</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:materialEntityType">materialEntityType</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:discipline">discipline</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:preparations">preparations</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:disposition">disposition</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimLabel">verbatimLabel</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:associatedSequences">associatedSequences</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:digitalSpecimenID">digitalSpecimenID</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:discipline">discipline</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:disposition">disposition</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:materialEntityID">materialEntityID</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:materialEntityRemarks">materialEntityRemarks</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:materialEntityType">materialEntityType</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:preparations">preparations</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimLabel">verbatimLabel</a>
   </div>
 
 <table class="table">
@@ -928,6 +932,7 @@ This category contains terms that are generic in that they might apply to any ty
 
 ## MaterialSample
 
+
 <div class="my-4">
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:materialSampleID">materialSampleID</a>
   </div>
@@ -959,30 +964,31 @@ This category contains terms that are generic in that they might apply to any ty
 
 ## Event
 
+
 <div class="my-4">
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:day">day</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:endDayOfYear">endDayOfYear</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:eventDate">eventDate</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:eventID">eventID</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:parentEventID">parentEventID</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:eventRemarks">eventRemarks</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:eventTime">eventTime</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:eventType">eventType</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:fieldNotes">fieldNotes</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:fieldNumber">fieldNumber</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:projectTitle">projectTitle</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:projectID">projectID</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#ac:fundingAttribution">fundingAttribution</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:fundingAttributionID">fundingAttributionID</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:eventDate">eventDate</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:eventTime">eventTime</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:startDayOfYear">startDayOfYear</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:endDayOfYear">endDayOfYear</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:year">year</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:month">month</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:day">day</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimEventDate">verbatimEventDate</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:habitat">habitat</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:samplingProtocol">samplingProtocol</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:sampleSizeValue">sampleSizeValue</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:month">month</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:parentEventID">parentEventID</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:projectID">projectID</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:projectTitle">projectTitle</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:sampleSizeUnit">sampleSizeUnit</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:sampleSizeValue">sampleSizeValue</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:samplingEffort">samplingEffort</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:fieldNotes">fieldNotes</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:eventRemarks">eventRemarks</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:samplingProtocol">samplingProtocol</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:startDayOfYear">startDayOfYear</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimEventDate">verbatimEventDate</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:year">year</a>
   </div>
 
 <table class="table">
@@ -1298,51 +1304,52 @@ This category contains terms that are generic in that they might apply to any ty
 
 ## Location
 
+
 <div class="my-4">
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:locationID">locationID</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:higherGeographyID">higherGeographyID</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:higherGeography">higherGeography</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:continent">continent</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:waterBody">waterBody</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:islandGroup">islandGroup</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:island">island</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:coordinatePrecision">coordinatePrecision</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:coordinateUncertaintyInMeters">coordinateUncertaintyInMeters</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:country">country</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:countryCode">countryCode</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:stateProvince">stateProvince</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:county">county</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:municipality">municipality</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:locality">locality</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimLocality">verbatimLocality</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:minimumElevationInMeters">minimumElevationInMeters</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:maximumElevationInMeters">maximumElevationInMeters</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimElevation">verbatimElevation</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verticalDatum">verticalDatum</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:minimumDepthInMeters">minimumDepthInMeters</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:maximumDepthInMeters">maximumDepthInMeters</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimDepth">verbatimDepth</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:minimumDistanceAboveSurfaceInMeters">minimumDistanceAboveSurfaceInMeters</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:maximumDistanceAboveSurfaceInMeters">maximumDistanceAboveSurfaceInMeters</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:locationAccordingTo">locationAccordingTo</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:locationRemarks">locationRemarks</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:decimalLatitude">decimalLatitude</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:decimalLongitude">decimalLongitude</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:geodeticDatum">geodeticDatum</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:coordinateUncertaintyInMeters">coordinateUncertaintyInMeters</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:coordinatePrecision">coordinatePrecision</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:pointRadiusSpatialFit">pointRadiusSpatialFit</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimCoordinates">verbatimCoordinates</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimLatitude">verbatimLatitude</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimLongitude">verbatimLongitude</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimCoordinateSystem">verbatimCoordinateSystem</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimSRS">verbatimSRS</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:footprintWKT">footprintWKT</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:footprintSRS">footprintSRS</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:footprintSpatialFit">footprintSpatialFit</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:footprintSRS">footprintSRS</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:footprintWKT">footprintWKT</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:geodeticDatum">geodeticDatum</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:georeferencedBy">georeferencedBy</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:georeferencedDate">georeferencedDate</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:georeferenceProtocol">georeferenceProtocol</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:georeferenceSources">georeferenceSources</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:georeferenceRemarks">georeferenceRemarks</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:georeferenceSources">georeferenceSources</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:higherGeography">higherGeography</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:higherGeographyID">higherGeographyID</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:island">island</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:islandGroup">islandGroup</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:locality">locality</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:locationAccordingTo">locationAccordingTo</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:locationID">locationID</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:locationRemarks">locationRemarks</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:maximumDepthInMeters">maximumDepthInMeters</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:maximumDistanceAboveSurfaceInMeters">maximumDistanceAboveSurfaceInMeters</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:maximumElevationInMeters">maximumElevationInMeters</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:minimumDepthInMeters">minimumDepthInMeters</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:minimumDistanceAboveSurfaceInMeters">minimumDistanceAboveSurfaceInMeters</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:minimumElevationInMeters">minimumElevationInMeters</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:municipality">municipality</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:pointRadiusSpatialFit">pointRadiusSpatialFit</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:stateProvince">stateProvince</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimCoordinates">verbatimCoordinates</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimCoordinateSystem">verbatimCoordinateSystem</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimDepth">verbatimDepth</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimElevation">verbatimElevation</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimLatitude">verbatimLatitude</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimLocality">verbatimLocality</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimLongitude">verbatimLongitude</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimSRS">verbatimSRS</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verticalDatum">verticalDatum</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:waterBody">waterBody</a>
   </div>
 
 <table class="table">
@@ -1931,25 +1938,26 @@ This category contains terms that are generic in that they might apply to any ty
 
 ## GeologicalContext
 
+
 <div class="my-4">
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:geologicalContextID">geologicalContextID</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:earliestEonOrLowestEonothem">earliestEonOrLowestEonothem</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:latestEonOrHighestEonothem">latestEonOrHighestEonothem</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:earliestEraOrLowestErathem">earliestEraOrLowestErathem</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:latestEraOrHighestErathem">latestEraOrHighestErathem</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:earliestPeriodOrLowestSystem">earliestPeriodOrLowestSystem</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:latestPeriodOrHighestSystem">latestPeriodOrHighestSystem</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:earliestEpochOrLowestSeries">earliestEpochOrLowestSeries</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:latestEpochOrHighestSeries">latestEpochOrHighestSeries</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:earliestAgeOrLowestStage">earliestAgeOrLowestStage</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:latestAgeOrHighestStage">latestAgeOrHighestStage</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:lowestBiostratigraphicZone">lowestBiostratigraphicZone</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:highestBiostratigraphicZone">highestBiostratigraphicZone</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:lithostratigraphicTerms">lithostratigraphicTerms</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:group">group</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:formation">formation</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:member">member</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:bed">bed</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:earliestAgeOrLowestStage">earliestAgeOrLowestStage</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:earliestEonOrLowestEonothem">earliestEonOrLowestEonothem</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:earliestEpochOrLowestSeries">earliestEpochOrLowestSeries</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:earliestEraOrLowestErathem">earliestEraOrLowestErathem</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:earliestPeriodOrLowestSystem">earliestPeriodOrLowestSystem</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:formation">formation</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:geologicalContextID">geologicalContextID</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:group">group</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:highestBiostratigraphicZone">highestBiostratigraphicZone</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:latestAgeOrHighestStage">latestAgeOrHighestStage</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:latestEonOrHighestEonothem">latestEonOrHighestEonothem</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:latestEpochOrHighestSeries">latestEpochOrHighestSeries</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:latestEraOrHighestErathem">latestEraOrHighestErathem</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:latestPeriodOrHighestSystem">latestPeriodOrHighestSystem</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:lithostratigraphicTerms">lithostratigraphicTerms</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:lowestBiostratigraphicZone">lowestBiostratigraphicZone</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:member">member</a>
   </div>
 
 <table class="table">
@@ -2200,18 +2208,19 @@ This category contains terms that are generic in that they might apply to any ty
 
 ## Identification
 
+
 <div class="my-4">
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:dateIdentified">dateIdentified</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:identificationID">identificationID</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimIdentification">verbatimIdentification</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:identificationQualifier">identificationQualifier</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:typeStatus">typeStatus</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:typifiedName">typifiedName</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:identificationReferences">identificationReferences</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:identificationRemarks">identificationRemarks</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:identificationVerificationStatus">identificationVerificationStatus</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:identifiedBy">identifiedBy</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:identifiedByID">identifiedByID</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:dateIdentified">dateIdentified</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:identificationReferences">identificationReferences</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:identificationVerificationStatus">identificationVerificationStatus</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:identificationRemarks">identificationRemarks</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:typeStatus">typeStatus</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:typifiedName">typifiedName</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimIdentification">verbatimIdentification</a>
   </div>
 
 <table class="table">
@@ -2371,47 +2380,48 @@ This category contains terms that are generic in that they might apply to any ty
 
 ## Taxon
 
+
 <div class="my-4">
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:taxonID">taxonID</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:scientificNameID">scientificNameID</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:acceptedNameUsageID">acceptedNameUsageID</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:parentNameUsageID">parentNameUsageID</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:originalNameUsageID">originalNameUsageID</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:nameAccordingToID">nameAccordingToID</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:namePublishedInID">namePublishedInID</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:taxonConceptID">taxonConceptID</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:scientificName">scientificName</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:acceptedNameUsage">acceptedNameUsage</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:parentNameUsage">parentNameUsage</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:originalNameUsage">originalNameUsage</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:nameAccordingTo">nameAccordingTo</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:namePublishedIn">namePublishedIn</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:namePublishedInYear">namePublishedInYear</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:higherClassification">higherClassification</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:kingdom">kingdom</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:phylum">phylum</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:acceptedNameUsageID">acceptedNameUsageID</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:class">class</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:order">order</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:superfamily">superfamily</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:family">family</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:subfamily">subfamily</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:tribe">tribe</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:subtribe">subtribe</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:genus">genus</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:genericName">genericName</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:subgenus">subgenus</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:infragenericEpithet">infragenericEpithet</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:specificEpithet">specificEpithet</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:infraspecificEpithet">infraspecificEpithet</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:cultivarEpithet">cultivarEpithet</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:taxonRank">taxonRank</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimTaxonRank">verbatimTaxonRank</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:scientificNameAuthorship">scientificNameAuthorship</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:vernacularName">vernacularName</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:family">family</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:genericName">genericName</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:genus">genus</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:higherClassification">higherClassification</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:infragenericEpithet">infragenericEpithet</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:infraspecificEpithet">infraspecificEpithet</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:kingdom">kingdom</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:nameAccordingTo">nameAccordingTo</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:nameAccordingToID">nameAccordingToID</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:namePublishedIn">namePublishedIn</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:namePublishedInID">namePublishedInID</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:namePublishedInYear">namePublishedInYear</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:nomenclaturalCode">nomenclaturalCode</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:taxonomicStatus">taxonomicStatus</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:nomenclaturalStatus">nomenclaturalStatus</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:order">order</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:originalNameUsage">originalNameUsage</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:originalNameUsageID">originalNameUsageID</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:parentNameUsage">parentNameUsage</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:parentNameUsageID">parentNameUsageID</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:phylum">phylum</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:scientificName">scientificName</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:scientificNameAuthorship">scientificNameAuthorship</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:scientificNameID">scientificNameID</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:specificEpithet">specificEpithet</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:subfamily">subfamily</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:subgenus">subgenus</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:subtribe">subtribe</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:superfamily">superfamily</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:taxonConceptID">taxonConceptID</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:taxonID">taxonID</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:taxonomicStatus">taxonomicStatus</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:taxonRank">taxonRank</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:taxonRemarks">taxonRemarks</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:tribe">tribe</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimTaxonRank">verbatimTaxonRank</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:vernacularName">vernacularName</a>
   </div>
 
 <table class="table">
@@ -2948,18 +2958,19 @@ This category contains terms that are generic in that they might apply to any ty
 
 ## MeasurementOrFact
 
+
 <div class="my-4">
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:measurementID">measurementID</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:parentMeasurementID">parentMeasurementID</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:measurementType">measurementType</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimMeasurementType">verbatimMeasurementType</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:measurementValue">measurementValue</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:measurementAccuracy">measurementAccuracy</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:measurementUnit">measurementUnit</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:measurementDeterminedBy">measurementDeterminedBy</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:measurementDeterminedDate">measurementDeterminedDate</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:measurementID">measurementID</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:measurementMethod">measurementMethod</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:measurementRemarks">measurementRemarks</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:measurementType">measurementType</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:measurementUnit">measurementUnit</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:measurementValue">measurementValue</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:parentMeasurementID">parentMeasurementID</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimMeasurementType">verbatimMeasurementType</a>
   </div>
 
 <table class="table">
@@ -3119,15 +3130,16 @@ This category contains terms that are generic in that they might apply to any ty
 
 ## ResourceRelationship
 
+
 <div class="my-4">
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:resourceRelationshipID">resourceRelationshipID</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:resourceID">resourceID</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:relationshipOfResourceID">relationshipOfResourceID</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:relatedResourceID">relatedResourceID</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:relationshipOfResource">relationshipOfResource</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:relationshipAccordingTo">relationshipAccordingTo</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:relationshipEstablishedDate">relationshipEstablishedDate</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:relationshipOfResource">relationshipOfResource</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:relationshipOfResourceID">relationshipOfResourceID</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:relationshipRemarks">relationshipRemarks</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:resourceID">resourceID</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:resourceRelationshipID">resourceRelationshipID</a>
   </div>
 
 <table class="table">
@@ -3249,6 +3261,7 @@ This category contains terms that are generic in that they might apply to any ty
 ## UseWithIRI
 
 For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https://dwc.tdwg.org/rdf/#25-terms-in-the-dwciri-namespace-normative).
+
 <div class="my-4">
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:behavior">behavior</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:caste">caste</a>
@@ -3262,8 +3275,8 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:fieldNumber">fieldNumber</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:footprintSRS">footprintSRS</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:footprintWKT">footprintWKT</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:fundingAttribution">fundingAttribution</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:fromLithostratigraphicUnit">fromLithostratigraphicUnit</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:fundingAttribution">fundingAttribution</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:geodeticDatum">geodeticDatum</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:georeferencedBy">georeferencedBy</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:georeferenceProtocol">georeferenceProtocol</a>
@@ -3947,6 +3960,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
 
 ## LivingSpecimen
 
+
 <div class="my-4">
   </div>
 
@@ -3963,6 +3977,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
 
 
 ## PreservedSpecimen
+
 
 <div class="my-4">
   </div>
@@ -3981,6 +3996,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
 
 ## FossilSpecimen
 
+
 <div class="my-4">
   </div>
 
@@ -3997,6 +4013,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
 
 
 ## MaterialCitation
+
 
 <div class="my-4">
   </div>
@@ -4015,6 +4032,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
 
 ## HumanObservation
 
+
 <div class="my-4">
   </div>
 
@@ -4031,6 +4049,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
 
 
 ## MachineObservation
+
 
 <div class="my-4">
   </div>

@@ -27,7 +27,7 @@ to create the terms/index.md file, which mostly contains html.
 {% endif %}
 
 <div class="my-4">
-  {% for term in class_group.terms %}
+  {% for term in class_group.terms | sort(attribute='label', case_sensitive=false) %}
     <a class="btn btn-sm btn-outline-primary m-1" href="#{{ term.namespace }}:{{ term.label }}">{{ term.label }}</a>
   {% endfor %}
 </div>

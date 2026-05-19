@@ -27,7 +27,7 @@ Para más información sobre `UseWithIRI`, consulta la [Sección 2.5 de la Guía
 {% endif %}
 
 <div class="my-4">
-  {% for term in class_group.terms %}
+  {% for term in class_group.terms | sort(attribute='label', case_sensitive=false) %}
     <a class="btn btn-sm btn-outline-primary m-1" href="#{{ term.namespace }}:{{ term.label }}">{{ term.label }}</a>
   {% endfor %}
 </div>

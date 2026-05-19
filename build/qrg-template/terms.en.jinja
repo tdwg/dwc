@@ -25,8 +25,9 @@ This category contains terms that are generic in that they might apply to any ty
 {% if class_group.label == 'UseWithIRI' %}
 For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https://dwc.tdwg.org/rdf/#25-terms-in-the-dwciri-namespace-normative).
 {% endif %}
+
 <div class="my-4">
-  {% for term in class_group.terms %}
+  {% for term in class_group.terms | sort(attribute='label', case_sensitive=false) %}
     <a class="btn btn-sm btn-outline-primary m-1" href="#{{ term.namespace }}:{{ term.label }}">{{ term.label }}</a>
   {% endfor %}
 </div>
