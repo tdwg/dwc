@@ -140,7 +140,7 @@ This dataset can be described as a DwC-DP with the following **descriptor** (`da
           {
             "name": "locationID",
             "title": "Location ID",
-            "description": "An identifier a dcterms:Location.",
+            "description": "An identifier for a dcterms:Location.",
             "type": "string",
             "format": "default",
             "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/locationID",
@@ -270,7 +270,7 @@ All requirements and examples in this guide use [version 1][dp.v1] of the Data P
 
 Each data file included in DwC-DP is a **resource**. Each resource MUST follow the [Data Resource specification][resource].
 
-Of special interest are resources with data organized in tables that implement the [Darwin Core Conceptual Model](../cm/) (DwC-CM)]. These resources/tables (hereafter referred to as “**DwC-DP table files**”) have additional requirements.
+Of special interest are resources with data organized in tables that implement the [Darwin Core Conceptual Model](../cm/) (DwC-CM). These resources/tables (hereafter referred to as “**DwC-DP table files**”) have additional requirements.
 
 #### 3.2.1 DwC-DP table files
 

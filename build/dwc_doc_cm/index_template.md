@@ -244,7 +244,7 @@ In Darwin Core, an *Identification* is defined as "A classification of a resourc
   * the inspection or processing of a *Media Entity* of an *Occurrence* by an *Agent*,   
   * the inspection or processing of a *Material Entity* by an *Agent*,   
   * the inspection or processing of a *Media Entity* of a *Material Entity* by an *Agent*, or
-  * a *Nucleotide Analysis* that detects a *Nucleotide Sequence* or confirms the presence of evidence of an *Organism* representing a *Taxon*. This may subsequently be used to infer an *Occurrence* (see the *Nucleotide Analysis* section).
+  * a *Nucleotide Analysis* that detects a *Nucleotide Sequence* or confirms the presence of evidence of an *Organism* representing a *Taxon*. This may subsequently be used to infer an *Occurrence* (see the *NucleotideAnalysis, NucleotideSequence and MolecularProtocol* section).
 
 #### Simplifications
 
