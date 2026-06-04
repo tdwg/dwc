@@ -4,19 +4,19 @@ Title
 : Darwin Core Data Package guide
 
 Date version issued
-: 2026-04-17
+: 2026-05-26
 
 Date created
-: 2026-04-17
+: 2026-05-26
 
 Part of TDWG Standard
 : <http://www.tdwg.org/standards/450>
 
 This version
-: <http://rs.tdwg.org/dwc/doc/dp/2026-04-17>
+: <http://rs.tdwg.org/dwc/terms/guides/dp/2026-05-26>
 
 Latest version
-: <http://rs.tdwg.org/dwc/doc/dp/>
+: <http://rs.tdwg.org/dwc/terms/guides/dp/>
 
 Abstract
 : Specification for creating a Darwin Core Data Package.
@@ -28,7 +28,7 @@ Creator
 : Darwin Core Maintenance Group
 
 Bibliographic citation
-: Darwin Core Maintenance Group. 2026. Darwin Core Data Package guide. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/dp/2026-04-17>
+: Darwin Core Maintenance Group. 2026. Darwin Core Data Package guide. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/terms/guides/dp/2026-05-26>
 
 [dp.v1]: https://specs.frictionlessdata.io/
 [dp.v2]: https://datapackage.org/
@@ -138,7 +138,7 @@ This dataset can be described as a DwC-DP with the following **descriptor** (`da
           {
             "name": "locationID",
             "title": "Location ID",
-            "description": "An identifier a dcterms:Location.",
+            "description": "An identifier for a dcterms:Location.",
             "type": "string",
             "format": "default",
             "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/locationID",
@@ -268,7 +268,7 @@ All requirements and examples in this guide use [version 1][dp.v1] of the Data P
 
 Each data file included in DwC-DP is a **resource**. Each resource MUST follow the [Data Resource specification][resource].
 
-Of special interest are resources with data organized in tables that implement the [Darwin Core Conceptual Model](../cm/) (DwC-CM)]. These resources/tables (hereafter referred to as “**DwC-DP table files**”) have additional requirements.
+Of special interest are resources with data organized in tables that implement the [Darwin Core Conceptual Model](../cm/) (DwC-CM). These resources/tables (hereafter referred to as “**DwC-DP table files**”) have additional requirements.
 
 #### 3.2.1 DwC-DP table files
 
