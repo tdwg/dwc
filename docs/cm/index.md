@@ -4,19 +4,19 @@ Title
 : Darwin Core conceptual model
 
 Date version issued
-: 2026-04-17
+: 2026-05-26
 
 Date created
-: 2026-04-17
+: 2026-05-26
 
 Part of TDWG Standard
 : <http://www.tdwg.org/standards/450>
 
 This version
-: <http://rs.tdwg.org/dwc/doc/cm/2026-04-17>
+: <http://rs.tdwg.org/dwc/terms/cm/2026-05-26>
 
 Latest version
-: <http://rs.tdwg.org/dwc/doc/cm/>
+: <http://rs.tdwg.org/dwc/terms/cm/>
 
 Abstract
 : Guidelines for the semantics of relationships between Darwin Core classes.
@@ -28,7 +28,7 @@ Creator
 : Darwin Core Maintenance Group
 
 Bibliographic citation
-: Darwin Core Maintenance Group. 2026. Darwin Core conceptual model. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/cm/2026-04-17>
+: Darwin Core Maintenance Group. 2026. Darwin Core conceptual model. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/terms/cm/2026-05-26>
 
 ## 1 Introduction
 
@@ -242,7 +242,7 @@ In Darwin Core, an *Identification* is defined as "A classification of a resourc
   * the inspection or processing of a *Media Entity* of an *Occurrence* by an *Agent*,   
   * the inspection or processing of a *Material Entity* by an *Agent*,   
   * the inspection or processing of a *Media Entity* of a *Material Entity* by an *Agent*, or
-  * a *Nucleotide Analysis* that detects a *Nucleotide Sequence* or confirms the presence of evidence of an *Organism* representing a *Taxon*. This may subsequently be used to infer an *Occurrence* (see the *Nucleotide Analysis* section).
+  * a *Nucleotide Analysis* that detects a *Nucleotide Sequence* or confirms the presence of evidence of an *Organism* representing a *Taxon*. This may subsequently be used to infer an *Occurrence* (see the *NucleotideAnalysis, NucleotideSequence and MolecularProtocol* section).
 
 #### Simplifications
 
