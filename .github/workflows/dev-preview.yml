@@ -34,7 +34,7 @@ jobs:
           cd build && pip3 install -r requirements.txt
       - name: Create Python-generated pages
         run: |
-          cd build && python3 build-language-menu.py preview && python3 build-webpages.py
+          cd build && python3 build-language-menu.py prod && python3 build-webpages.py --ghuser tucotuco --branch dwc-changes-2026-05-26
 
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
