@@ -4,7 +4,7 @@ Title
 : Darwin Core List of Terms
 
 Date version issued
-: 2026-04-07
+: 2026-05-26
 
 Date created
 : 2020-08-12
@@ -13,7 +13,7 @@ Part of TDWG Standard
 : <http://www.tdwg.org/standards/450>
 
 This version
-: <http://rs.tdwg.org/dwc/doc/list/2026-04-07>
+: <http://rs.tdwg.org/dwc/doc/list/2026-05-26>
 
 Latest version
 : <http://rs.tdwg.org/dwc/doc/list/>
@@ -31,14 +31,14 @@ Creator
 : Darwin Core Maintenance Group
 
 Bibliographic citation
-: Darwin Core Maintenance Group. 2026. Darwin Core List of Terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/list/2026-04-07>
+: Darwin Core Maintenance Group. 2026. Darwin Core List of Terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/list/2026-05-26>
 
 
 ## 1 Introduction (Informative)
 
-This document contains terms that are part of the most recent version of the Darwin Core vocabulary (<http://rs.tdwg.org/version/dwc/2026-04-07>).
+This document contains terms that are part of the most recent version of the Darwin Core vocabulary (<http://rs.tdwg.org/version/dwc/2026-05-26>).
 
-This document includes terms in four namespaces that contain recommended terms: `dwc:`, `dwciri:`, `dc:`, and `dcterms:`. However, some terms in these namespaces are deprecated or superseded and should no longer be used. Deprecation or supersession is noted in the term metadata. Namespaces that contain only deprecated terms are not included in this document, but metadata about those terms can be retrieved by dereferencing their IRIs.
+This document provides a comprehensive list of terms, from multiple namespaces, that have ever been recommended for use in Darwin Core. The status of some terms, as noted in their metadata, is deprecated or superseded and such terms should no longer be used. Terms from namespaces that contain only deprecated terms are not included in this document, but metadata about those terms can be retrieved by dereferencing their IRIs.
 
 For a simplified list that contains only the currently recommended terms, see the [Darwin Core Quick Reference Guide](../terms/).
 
@@ -67,7 +67,7 @@ The following namespace abbreviations are used in this document:
 
 ## 2 Use of Terms
 
-Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#143-use-of-darwin-core-terms-in-rdf-normative), terms in the `dwciri:` namespace MUST be used with IRI values. Terms in the `dwc:` and `dc:` namespaces are generally expected to have string literal values. Values for terms in the `dcterms:` namespace will depend on the details of the term. See [Section 3 of the Darwin Core RDF Guide](../rdf/#3-term-reference-normative) for details.
+Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#143-use-of-darwin-core-terms-in-rdf-normative), properties in the `dwciri:` namespace MUST be used with IRI values. Properties in the `dwc:` and `dc:` namespaces are generally expected to have string literal values. Values for properties in the `dcterms:` namespace will depend on the details of the term. See [Section 3 of the Darwin Core RDF Guide](../rdf/#3-term-reference-normative) for details.
 
 ## 3 Term indices
 ### 3.1 Index By Term Name
@@ -757,7 +757,7 @@ No properties are currently organized in this class.
 [Coordinate Precision](#dwc_coordinatePrecision) |
 [Coordinate Uncertainty In Meters](#dwc_coordinateUncertaintyInMeters) |
 [Country](#dwc_country) |
-[County Code](#dwc_countryCode) |
+[Country Code](#dwc_countryCode) |
 [Decimal Latitude](#dwc_decimalLatitude) |
 [Decimal Longitude](#dwc_decimalLongitude) |
 [First Order Division](#dwc_stateProvince) |
@@ -1670,7 +1670,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://dublincore.org/usage/terms/history/#Agent-001">http://dublincore.org/usage/terms/history/#Agent-001</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1705,7 +1709,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -1723,11 +1727,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/agentID-2026-04-07">http://rs.tdwg.org/dwc/terms/version/agentID-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/agentID-2026-05-26">http://rs.tdwg.org/dwc/terms/version/agentID-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1751,7 +1755,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -1769,11 +1773,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/agentRemarks-2026-04-07">http://rs.tdwg.org/dwc/terms/version/agentRemarks-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/agentRemarks-2026-05-26">http://rs.tdwg.org/dwc/terms/version/agentRemarks-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1793,7 +1797,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -1811,11 +1815,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/agentRoleOrder-2026-04-07">http://rs.tdwg.org/dwc/terms/version/agentRoleOrder-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/agentRoleOrder-2026-05-26">http://rs.tdwg.org/dwc/terms/version/agentRoleOrder-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1846,7 +1850,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -1864,11 +1868,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/agentType-2026-04-07">http://rs.tdwg.org/dwc/terms/version/agentType-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/agentType-2026-05-26">http://rs.tdwg.org/dwc/terms/version/agentType-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1901,7 +1905,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -1919,11 +1923,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/assayType-2026-04-07">http://rs.tdwg.org/dwc/iri/version/assayType-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/assayType-2026-05-26">http://rs.tdwg.org/dwc/iri/version/assayType-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1947,7 +1951,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -1965,11 +1969,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/assayType-2026-04-07">http://rs.tdwg.org/dwc/terms/version/assayType-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/assayType-2026-05-26">http://rs.tdwg.org/dwc/terms/version/assayType-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2001,7 +2005,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -2019,11 +2023,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/Assertion-2026-04-07">http://rs.tdwg.org/dwc/terms/version/Assertion-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/Assertion-2026-05-26">http://rs.tdwg.org/dwc/terms/version/Assertion-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2055,7 +2059,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -2073,11 +2077,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/assertionBy-2026-04-07">http://rs.tdwg.org/dwc/iri/version/assertionBy-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/assertionBy-2026-05-26">http://rs.tdwg.org/dwc/iri/version/assertionBy-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2101,7 +2105,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -2119,11 +2123,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/assertionBy-2026-04-07">http://rs.tdwg.org/dwc/terms/version/assertionBy-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/assertionBy-2026-05-26">http://rs.tdwg.org/dwc/terms/version/assertionBy-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2157,7 +2161,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -2175,11 +2179,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/assertionEffectiveDate-2026-04-07">http://rs.tdwg.org/dwc/terms/version/assertionEffectiveDate-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/assertionEffectiveDate-2026-05-26">http://rs.tdwg.org/dwc/terms/version/assertionEffectiveDate-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2217,7 +2221,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -2235,11 +2239,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/assertionError-2026-04-07">http://rs.tdwg.org/dwc/terms/version/assertionError-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/assertionError-2026-05-26">http://rs.tdwg.org/dwc/terms/version/assertionError-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2266,7 +2270,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -2284,11 +2288,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/assertionID-2026-04-07">http://rs.tdwg.org/dwc/terms/version/assertionID-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/assertionID-2026-05-26">http://rs.tdwg.org/dwc/terms/version/assertionID-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2312,7 +2316,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -2330,11 +2334,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/assertionMadeDate-2026-04-07">http://rs.tdwg.org/dwc/terms/version/assertionMadeDate-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/assertionMadeDate-2026-05-26">http://rs.tdwg.org/dwc/terms/version/assertionMadeDate-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2372,7 +2376,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -2390,11 +2394,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/assertionProtocols-2026-04-07">http://rs.tdwg.org/dwc/terms/version/assertionProtocols-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/assertionProtocols-2026-05-26">http://rs.tdwg.org/dwc/terms/version/assertionProtocols-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2414,7 +2418,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -2432,11 +2436,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/assertionReferences-2026-04-07">http://rs.tdwg.org/dwc/terms/version/assertionReferences-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/assertionReferences-2026-05-26">http://rs.tdwg.org/dwc/terms/version/assertionReferences-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2460,7 +2464,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -2478,11 +2482,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/assertionRemarks-2026-04-07">http://rs.tdwg.org/dwc/terms/version/assertionRemarks-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/assertionRemarks-2026-05-26">http://rs.tdwg.org/dwc/terms/version/assertionRemarks-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2510,7 +2514,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -2528,11 +2532,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/assertionType-2026-04-07">http://rs.tdwg.org/dwc/iri/version/assertionType-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/assertionType-2026-05-26">http://rs.tdwg.org/dwc/iri/version/assertionType-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2556,7 +2560,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -2574,11 +2578,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/assertionType-2026-04-07">http://rs.tdwg.org/dwc/terms/version/assertionType-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/assertionType-2026-05-26">http://rs.tdwg.org/dwc/terms/version/assertionType-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2612,7 +2616,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -2630,11 +2634,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/assertionUnit-2026-04-07">http://rs.tdwg.org/dwc/iri/version/assertionUnit-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/assertionUnit-2026-05-26">http://rs.tdwg.org/dwc/iri/version/assertionUnit-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2665,7 +2669,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -2683,11 +2687,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/assertionUnit-2026-04-07">http://rs.tdwg.org/dwc/terms/version/assertionUnit-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/assertionUnit-2026-05-26">http://rs.tdwg.org/dwc/terms/version/assertionUnit-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2722,7 +2726,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -2740,11 +2744,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/assertionValue-2026-04-07">http://rs.tdwg.org/dwc/terms/version/assertionValue-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/assertionValue-2026-05-26">http://rs.tdwg.org/dwc/terms/version/assertionValue-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2779,7 +2783,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -2797,11 +2801,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/assertionValue-2026-04-07">http://rs.tdwg.org/dwc/iri/version/assertionValue-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/assertionValue-2026-05-26">http://rs.tdwg.org/dwc/iri/version/assertionValue-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2829,7 +2833,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -3057,11 +3061,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/associatedSequences-2026-04-07">http://rs.tdwg.org/dwc/terms/version/associatedSequences-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/associatedSequences-2026-05-26">http://rs.tdwg.org/dwc/terms/version/associatedSequences-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3069,7 +3073,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>A list (concatenated and separated) of dcterms:BibiographicResources for dwc:NucleotideSequences associated with a dwc:MaterialEntity.</td>
+			<td>A list (concatenated and separated) of dcterms:BibliographicResources for dwc:NucleotideSequences associated with a dwc:MaterialEntity.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -3092,7 +3096,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -3376,11 +3380,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/behavior-2026-04-07">http://rs.tdwg.org/dwc/terms/version/behavior-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/behavior-2026-05-26">http://rs.tdwg.org/dwc/terms/version/behavior-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3412,7 +3416,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -3430,11 +3434,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/behavior-2026-04-07">http://rs.tdwg.org/dwc/iri/version/behavior-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/behavior-2026-05-26">http://rs.tdwg.org/dwc/iri/version/behavior-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3462,7 +3466,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -3530,7 +3534,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://dublincore.org/usage/terms/history/#BibliographicResource-001">http://dublincore.org/usage/terms/history/#BibliographicResource-001</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3550,7 +3558,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -3610,11 +3618,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/caste-2026-04-07">http://rs.tdwg.org/dwc/iri/version/caste-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/caste-2026-05-26">http://rs.tdwg.org/dwc/iri/version/caste-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3646,7 +3654,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -3664,11 +3672,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/caste-2026-04-07">http://rs.tdwg.org/dwc/terms/version/caste-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/caste-2026-05-26">http://rs.tdwg.org/dwc/terms/version/caste-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3707,7 +3715,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -3725,11 +3733,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/catalogNumber-2026-04-07">http://rs.tdwg.org/dwc/terms/version/catalogNumber-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/catalogNumber-2026-05-26">http://rs.tdwg.org/dwc/terms/version/catalogNumber-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3758,7 +3766,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -3921,11 +3929,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/collectionCode-2026-04-07">http://rs.tdwg.org/dwc/terms/version/collectionCode-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/collectionCode-2026-05-26">http://rs.tdwg.org/dwc/terms/version/collectionCode-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3954,7 +3962,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -3972,11 +3980,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/collectionID-2026-04-07">http://rs.tdwg.org/dwc/terms/version/collectionID-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/collectionID-2026-05-26">http://rs.tdwg.org/dwc/terms/version/collectionID-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -4008,7 +4016,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -4135,11 +4143,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/coordinateUncertaintyInMeters-2026-04-07">http://rs.tdwg.org/dwc/terms/version/coordinateUncertaintyInMeters-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/coordinateUncertaintyInMeters-2026-05-26">http://rs.tdwg.org/dwc/terms/version/coordinateUncertaintyInMeters-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -4171,7 +4179,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -4243,15 +4251,15 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/countryCode-2026-04-07">http://rs.tdwg.org/dwc/terms/version/countryCode-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/countryCode-2026-05-26">http://rs.tdwg.org/dwc/terms/version/countryCode-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
-			<td>County Code</td>
+			<td>Country Code</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -4292,7 +4300,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -4368,11 +4376,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/cultivarEpithet-2026-04-07">http://rs.tdwg.org/dwc/terms/version/cultivarEpithet-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/cultivarEpithet-2026-05-26">http://rs.tdwg.org/dwc/terms/version/cultivarEpithet-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -4412,7 +4420,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -4602,11 +4610,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/datasetName-2026-04-07">http://rs.tdwg.org/dwc/terms/version/datasetName-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/datasetName-2026-05-26">http://rs.tdwg.org/dwc/terms/version/datasetName-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -4633,7 +4641,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -4760,11 +4768,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/decimalLatitude-2026-04-07">http://rs.tdwg.org/dwc/terms/version/decimalLatitude-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/decimalLatitude-2026-05-26">http://rs.tdwg.org/dwc/terms/version/decimalLatitude-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -4792,7 +4800,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -4810,11 +4818,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/decimalLongitude-2026-04-07">http://rs.tdwg.org/dwc/terms/version/decimalLongitude-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/decimalLongitude-2026-05-26">http://rs.tdwg.org/dwc/terms/version/decimalLongitude-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -4842,7 +4850,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -4979,11 +4987,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/digitalSpecimenID-2026-04-07">http://rs.tdwg.org/dwc/terms/version/digitalSpecimenID-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/digitalSpecimenID-2026-05-26">http://rs.tdwg.org/dwc/terms/version/digitalSpecimenID-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -5020,7 +5028,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -5084,11 +5092,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/discipline-2026-04-07">http://rs.tdwg.org/dwc/terms/version/discipline-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/discipline-2026-05-26">http://rs.tdwg.org/dwc/terms/version/discipline-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -5123,7 +5131,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -5141,11 +5149,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/disposition-2026-04-07">http://rs.tdwg.org/dwc/iri/version/disposition-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/disposition-2026-05-26">http://rs.tdwg.org/dwc/iri/version/disposition-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -5173,7 +5181,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -5191,11 +5199,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/disposition-2026-04-07">http://rs.tdwg.org/dwc/terms/version/disposition-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/disposition-2026-05-26">http://rs.tdwg.org/dwc/terms/version/disposition-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -5234,7 +5242,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -5447,11 +5455,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/earliestEonOrLowestEonothem-2026-04-07">http://rs.tdwg.org/dwc/terms/version/earliestEonOrLowestEonothem-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/earliestEonOrLowestEonothem-2026-05-26">http://rs.tdwg.org/dwc/terms/version/earliestEonOrLowestEonothem-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -5487,7 +5495,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -5712,11 +5720,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/endDayOfYear-2026-04-07">http://rs.tdwg.org/dwc/terms/version/endDayOfYear-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/endDayOfYear-2026-05-26">http://rs.tdwg.org/dwc/terms/version/endDayOfYear-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -5749,7 +5757,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -5870,11 +5878,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/establishmentMeans-2026-04-07">http://rs.tdwg.org/dwc/terms/version/establishmentMeans-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/establishmentMeans-2026-05-26">http://rs.tdwg.org/dwc/terms/version/establishmentMeans-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -5914,7 +5922,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -5932,11 +5940,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/Event-2026-04-07">http://rs.tdwg.org/dwc/terms/version/Event-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/Event-2026-05-26">http://rs.tdwg.org/dwc/terms/version/Event-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -5970,7 +5978,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -6432,11 +6440,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/eventCategory-2026-04-07">http://rs.tdwg.org/dwc/iri/version/eventCategory-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/eventCategory-2026-05-26">http://rs.tdwg.org/dwc/iri/version/eventCategory-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -6460,7 +6468,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -6478,11 +6486,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/eventCategory-2026-04-07">http://rs.tdwg.org/dwc/terms/version/eventCategory-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/eventCategory-2026-05-26">http://rs.tdwg.org/dwc/terms/version/eventCategory-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -6516,7 +6524,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -6534,11 +6542,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/eventDate-2026-04-07">http://rs.tdwg.org/dwc/terms/version/eventDate-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/eventDate-2026-05-26">http://rs.tdwg.org/dwc/terms/version/eventDate-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -6580,7 +6588,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -7146,11 +7154,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/eventType-2026-04-07">http://rs.tdwg.org/dwc/iri/version/eventType-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/eventType-2026-05-26">http://rs.tdwg.org/dwc/iri/version/eventType-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -7182,7 +7190,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -7200,11 +7208,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/eventType-2026-04-07">http://rs.tdwg.org/dwc/terms/version/eventType-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/eventType-2026-05-26">http://rs.tdwg.org/dwc/terms/version/eventType-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -7243,7 +7251,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -7444,11 +7452,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/fieldNumber-2026-04-07">http://rs.tdwg.org/dwc/terms/version/fieldNumber-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/fieldNumber-2026-05-26">http://rs.tdwg.org/dwc/terms/version/fieldNumber-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -7476,7 +7484,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -7494,11 +7502,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/fieldNumber-2026-04-07">http://rs.tdwg.org/dwc/iri/version/fieldNumber-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/fieldNumber-2026-05-26">http://rs.tdwg.org/dwc/iri/version/fieldNumber-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -7522,7 +7530,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -7540,11 +7548,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/footprintSpatialFit-2026-04-07">http://rs.tdwg.org/dwc/terms/version/footprintSpatialFit-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/footprintSpatialFit-2026-05-26">http://rs.tdwg.org/dwc/terms/version/footprintSpatialFit-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -7580,7 +7588,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -7706,11 +7714,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/footprintWKT-2026-04-07">http://rs.tdwg.org/dwc/terms/version/footprintWKT-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/footprintWKT-2026-05-26">http://rs.tdwg.org/dwc/terms/version/footprintWKT-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -7738,7 +7746,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -8000,7 +8008,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/ac/terms/version/fundingAttribution-2020-01-27">http://rs.tdwg.org/ac/terms/version/fundingAttribution-2020-01-27</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8041,7 +8053,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -8059,11 +8071,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/fundingAttributionID-2026-04-07">http://rs.tdwg.org/dwc/terms/version/fundingAttributionID-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/fundingAttributionID-2026-05-26">http://rs.tdwg.org/dwc/terms/version/fundingAttributionID-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8099,7 +8111,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -8370,11 +8382,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/GeologicalContext-2026-04-07">http://rs.tdwg.org/dwc/terms/version/GeologicalContext-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/GeologicalContext-2026-05-26">http://rs.tdwg.org/dwc/terms/version/GeologicalContext-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8405,7 +8417,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -8465,11 +8477,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/georeferencedBy-2026-04-07">http://rs.tdwg.org/dwc/terms/version/georeferencedBy-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/georeferencedBy-2026-05-26">http://rs.tdwg.org/dwc/terms/version/georeferencedBy-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8504,7 +8516,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -8522,11 +8534,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/georeferencedBy-2026-04-07">http://rs.tdwg.org/dwc/iri/version/georeferencedBy-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/georeferencedBy-2026-05-26">http://rs.tdwg.org/dwc/iri/version/georeferencedBy-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8554,7 +8566,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -8636,11 +8648,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/georeferenceProtocol-2026-04-07">http://rs.tdwg.org/dwc/iri/version/georeferenceProtocol-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/georeferenceProtocol-2026-05-26">http://rs.tdwg.org/dwc/iri/version/georeferenceProtocol-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8668,7 +8680,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -8686,11 +8698,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/georeferenceProtocol-2026-04-07">http://rs.tdwg.org/dwc/terms/version/georeferenceProtocol-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/georeferenceProtocol-2026-05-26">http://rs.tdwg.org/dwc/terms/version/georeferenceProtocol-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8718,7 +8730,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -8782,11 +8794,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/georeferenceSources-2026-04-07">http://rs.tdwg.org/dwc/terms/version/georeferenceSources-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/georeferenceSources-2026-05-26">http://rs.tdwg.org/dwc/terms/version/georeferenceSources-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8822,7 +8834,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -8840,11 +8852,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/georeferenceSources-2026-04-07">http://rs.tdwg.org/dwc/iri/version/georeferenceSources-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/georeferenceSources-2026-05-26">http://rs.tdwg.org/dwc/iri/version/georeferenceSources-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8872,7 +8884,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -9602,11 +9614,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/Identification-2026-04-07">http://rs.tdwg.org/dwc/terms/version/Identification-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/Identification-2026-05-26">http://rs.tdwg.org/dwc/terms/version/Identification-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -9641,7 +9653,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -9701,11 +9713,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/identificationID-2026-04-07">http://rs.tdwg.org/dwc/terms/version/identificationID-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/identificationID-2026-05-26">http://rs.tdwg.org/dwc/terms/version/identificationID-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -9733,7 +9745,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -9850,11 +9862,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/identificationReferences-2026-04-07">http://rs.tdwg.org/dwc/terms/version/identificationReferences-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/identificationReferences-2026-05-26">http://rs.tdwg.org/dwc/terms/version/identificationReferences-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -9893,7 +9905,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -9953,11 +9965,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/identificationType-2026-04-07">http://rs.tdwg.org/dwc/terms/version/identificationType-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/identificationType-2026-05-26">http://rs.tdwg.org/dwc/terms/version/identificationType-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -9996,7 +10008,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -10014,11 +10026,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/identificationType-2026-04-07">http://rs.tdwg.org/dwc/iri/version/identificationType-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/identificationType-2026-05-26">http://rs.tdwg.org/dwc/iri/version/identificationType-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -10042,7 +10054,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -10060,11 +10072,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/identificationVerificationStatus-2026-04-07">http://rs.tdwg.org/dwc/terms/version/identificationVerificationStatus-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/identificationVerificationStatus-2026-05-26">http://rs.tdwg.org/dwc/terms/version/identificationVerificationStatus-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -10096,7 +10108,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -10114,11 +10126,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/identificationVerificationStatus-2026-04-07">http://rs.tdwg.org/dwc/iri/version/identificationVerificationStatus-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/identificationVerificationStatus-2026-05-26">http://rs.tdwg.org/dwc/iri/version/identificationVerificationStatus-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -10146,7 +10158,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -10164,11 +10176,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/identifiedBy-2026-04-07">http://rs.tdwg.org/dwc/terms/version/identifiedBy-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/identifiedBy-2026-05-26">http://rs.tdwg.org/dwc/terms/version/identifiedBy-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -10212,7 +10224,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -10230,11 +10242,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/identifiedBy-2026-04-07">http://rs.tdwg.org/dwc/iri/version/identifiedBy-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/identifiedBy-2026-05-26">http://rs.tdwg.org/dwc/iri/version/identifiedBy-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -10266,7 +10278,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -10284,11 +10296,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/identifiedByID-2026-04-07">http://rs.tdwg.org/dwc/terms/version/identifiedByID-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/identifiedByID-2026-05-26">http://rs.tdwg.org/dwc/terms/version/identifiedByID-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -10323,7 +10335,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -10571,11 +10583,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/informationWithheld-2026-04-07">http://rs.tdwg.org/dwc/iri/version/informationWithheld-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/informationWithheld-2026-05-26">http://rs.tdwg.org/dwc/iri/version/informationWithheld-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -10603,7 +10615,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -10621,11 +10633,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/informationWithheld-2026-04-07">http://rs.tdwg.org/dwc/terms/version/informationWithheld-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/informationWithheld-2026-05-26">http://rs.tdwg.org/dwc/terms/version/informationWithheld-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -10656,7 +10668,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -10731,11 +10743,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/infraspecificEpithet-2026-04-07">http://rs.tdwg.org/dwc/terms/version/infraspecificEpithet-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/infraspecificEpithet-2026-05-26">http://rs.tdwg.org/dwc/terms/version/infraspecificEpithet-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -10747,7 +10759,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>In botany, name strings in literature and identifications may have multiple infraspecific ranks. According to the International Code of Nomenclature for algae, fungi, and plants (Shenzhen Code Articles 6.7 & Art. 24.1), valid names only have two epithets, with the lowest rank being the dwc:infraspecificEpithet. For example: the dwc:infraspecificEpithet in the string <code>Indigofera charlieriana subsp. sessilis var. scaberrima</code> is <code>scaberrima</code> and the dwc:scientificName is *<code>Indigofera charlieriana var. scaberrima</code>*. Use dwc:verbatimIdentification for the full name string used in a dwc:Identification. </td>
+			<td>In botany, name strings in literature and identifications may have multiple infraspecific ranks. According to the International Code of Nomenclature for algae, fungi, and plants (Shenzhen Code Articles 6.7 & Art. 24.1), valid names only have two epithets, with the lowest rank being the dwc:infraspecificEpithet. For example: the dwc:infraspecificEpithet in the string <code>Indigofera charlieriana subsp. sessilis var. scaberrima</code> is <code>scaberrima</code> and the dwc:scientificName is <code>Indigofera charlieriana var. scaberrima</code>. Use dwc:verbatimIdentification for the full name string used in a dwc:Identification. </td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -10776,7 +10788,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -10794,11 +10806,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/institutionCode-2026-04-07">http://rs.tdwg.org/dwc/terms/version/institutionCode-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/institutionCode-2026-05-26">http://rs.tdwg.org/dwc/terms/version/institutionCode-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -10833,7 +10845,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -10851,11 +10863,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/institutionID-2026-04-07">http://rs.tdwg.org/dwc/terms/version/institutionID-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/institutionID-2026-05-26">http://rs.tdwg.org/dwc/terms/version/institutionID-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -10891,7 +10903,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -10909,11 +10921,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/isAcceptedIdentification-2026-04-07">http://rs.tdwg.org/dwc/terms/version/isAcceptedIdentification-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/isAcceptedIdentification-2026-05-26">http://rs.tdwg.org/dwc/terms/version/isAcceptedIdentification-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -10944,7 +10956,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -11326,11 +11338,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/latestEonOrHighestEonothem-2026-04-07">http://rs.tdwg.org/dwc/terms/version/latestEonOrHighestEonothem-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/latestEonOrHighestEonothem-2026-05-26">http://rs.tdwg.org/dwc/terms/version/latestEonOrHighestEonothem-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -11370,7 +11382,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -11648,11 +11660,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/lifeStage-2026-04-07">http://rs.tdwg.org/dwc/terms/version/lifeStage-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/lifeStage-2026-05-26">http://rs.tdwg.org/dwc/terms/version/lifeStage-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -11696,7 +11708,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -11714,11 +11726,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/lifeStage-2026-04-07">http://rs.tdwg.org/dwc/iri/version/lifeStage-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/lifeStage-2026-05-26">http://rs.tdwg.org/dwc/iri/version/lifeStage-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -11746,7 +11758,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -12098,11 +12110,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/locationID-2026-04-07">http://rs.tdwg.org/dwc/terms/version/locationID-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/locationID-2026-05-26">http://rs.tdwg.org/dwc/terms/version/locationID-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -12130,7 +12142,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -12341,11 +12353,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/MaterialEntity-2026-04-07">http://rs.tdwg.org/dwc/terms/version/MaterialEntity-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/MaterialEntity-2026-05-26">http://rs.tdwg.org/dwc/terms/version/MaterialEntity-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -12389,7 +12401,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -12407,11 +12419,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/materialEntityCategory-2026-04-07">http://rs.tdwg.org/dwc/iri/version/materialEntityCategory-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/materialEntityCategory-2026-05-26">http://rs.tdwg.org/dwc/iri/version/materialEntityCategory-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -12435,7 +12447,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -12453,11 +12465,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/materialEntityCategory-2026-04-07">http://rs.tdwg.org/dwc/terms/version/materialEntityCategory-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/materialEntityCategory-2026-05-26">http://rs.tdwg.org/dwc/terms/version/materialEntityCategory-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -12485,7 +12497,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -12553,11 +12565,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/materialEntityRemarks-2026-04-07">http://rs.tdwg.org/dwc/terms/version/materialEntityRemarks-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/materialEntityRemarks-2026-05-26">http://rs.tdwg.org/dwc/terms/version/materialEntityRemarks-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -12588,7 +12600,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -12606,11 +12618,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/materialEntityType-2026-04-07">http://rs.tdwg.org/dwc/iri/version/materialEntityType-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/materialEntityType-2026-05-26">http://rs.tdwg.org/dwc/iri/version/materialEntityType-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -12634,7 +12646,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -12652,11 +12664,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/materialEntityType-2026-04-07">http://rs.tdwg.org/dwc/terms/version/materialEntityType-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/materialEntityType-2026-05-26">http://rs.tdwg.org/dwc/terms/version/materialEntityType-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -12684,7 +12696,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -12811,11 +12823,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/maximumDepthInMeters-2026-04-07">http://rs.tdwg.org/dwc/terms/version/maximumDepthInMeters-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/maximumDepthInMeters-2026-05-26">http://rs.tdwg.org/dwc/terms/version/maximumDepthInMeters-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -12846,7 +12858,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -12910,11 +12922,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/maximumElevationInMeters-2026-04-07">http://rs.tdwg.org/dwc/terms/version/maximumElevationInMeters-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/maximumElevationInMeters-2026-05-26">http://rs.tdwg.org/dwc/terms/version/maximumElevationInMeters-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -12945,7 +12957,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -13729,7 +13741,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/ac/terms/version/Media-2026-02-24">http://rs.tdwg.org/ac/terms/version/Media-2026-02-24</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -13767,7 +13783,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -13838,11 +13854,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/minimumDepthInMeters-2026-04-07">http://rs.tdwg.org/dwc/terms/version/minimumDepthInMeters-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/minimumDepthInMeters-2026-05-26">http://rs.tdwg.org/dwc/terms/version/minimumDepthInMeters-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -13873,7 +13889,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -13937,11 +13953,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/minimumElevationInMeters-2026-04-07">http://rs.tdwg.org/dwc/terms/version/minimumElevationInMeters-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/minimumElevationInMeters-2026-05-26">http://rs.tdwg.org/dwc/terms/version/minimumElevationInMeters-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -13972,7 +13988,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -14058,11 +14074,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/MolecularProtocol-2026-04-07">http://rs.tdwg.org/dwc/terms/version/MolecularProtocol-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/MolecularProtocol-2026-05-26">http://rs.tdwg.org/dwc/terms/version/MolecularProtocol-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -14090,7 +14106,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -14108,11 +14124,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/molecularProtocolID-2026-04-07">http://rs.tdwg.org/dwc/terms/version/molecularProtocolID-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/molecularProtocolID-2026-05-26">http://rs.tdwg.org/dwc/terms/version/molecularProtocolID-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -14136,7 +14152,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -14257,11 +14273,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/nameAccordingTo-2026-04-07">http://rs.tdwg.org/dwc/terms/version/nameAccordingTo-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/nameAccordingTo-2026-05-26">http://rs.tdwg.org/dwc/terms/version/nameAccordingTo-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -14297,7 +14313,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -14657,11 +14673,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/NucleotideAnalysis-2026-04-07">http://rs.tdwg.org/dwc/terms/version/NucleotideAnalysis-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/NucleotideAnalysis-2026-05-26">http://rs.tdwg.org/dwc/terms/version/NucleotideAnalysis-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -14681,7 +14697,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -14699,11 +14715,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/NucleotideSequence-2026-04-07">http://rs.tdwg.org/dwc/terms/version/NucleotideSequence-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/NucleotideSequence-2026-05-26">http://rs.tdwg.org/dwc/terms/version/NucleotideSequence-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -14723,7 +14739,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -14741,11 +14757,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/nucleotideSequenceRemarks-2026-04-07">http://rs.tdwg.org/dwc/terms/version/nucleotideSequenceRemarks-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/nucleotideSequenceRemarks-2026-05-26">http://rs.tdwg.org/dwc/terms/version/nucleotideSequenceRemarks-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -14765,7 +14781,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -14783,11 +14799,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/objectQuantity-2026-04-07">http://rs.tdwg.org/dwc/terms/version/objectQuantity-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/objectQuantity-2026-05-26">http://rs.tdwg.org/dwc/terms/version/objectQuantity-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -14819,7 +14835,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -14837,11 +14853,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/objectQuantityType-2026-04-07">http://rs.tdwg.org/dwc/iri/version/objectQuantityType-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/objectQuantityType-2026-05-26">http://rs.tdwg.org/dwc/iri/version/objectQuantityType-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -14865,7 +14881,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -14883,11 +14899,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/objectQuantityType-2026-04-07">http://rs.tdwg.org/dwc/terms/version/objectQuantityType-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/objectQuantityType-2026-05-26">http://rs.tdwg.org/dwc/terms/version/objectQuantityType-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -14919,7 +14935,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -14937,11 +14953,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/Occurrence-2026-04-07">http://rs.tdwg.org/dwc/terms/version/Occurrence-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/Occurrence-2026-05-26">http://rs.tdwg.org/dwc/terms/version/Occurrence-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -14978,7 +14994,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -15084,11 +15100,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/occurrenceID-2026-04-07">http://rs.tdwg.org/dwc/terms/version/occurrenceID-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/occurrenceID-2026-05-26">http://rs.tdwg.org/dwc/terms/version/occurrenceID-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -15120,7 +15136,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -15578,11 +15594,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/occurrenceStatus-2026-04-07">http://rs.tdwg.org/dwc/iri/version/occurrenceStatus-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/occurrenceStatus-2026-05-26">http://rs.tdwg.org/dwc/iri/version/occurrenceStatus-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -15610,7 +15626,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -15628,11 +15644,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/occurrenceStatus-2026-04-07">http://rs.tdwg.org/dwc/terms/version/occurrenceStatus-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/occurrenceStatus-2026-05-26">http://rs.tdwg.org/dwc/terms/version/occurrenceStatus-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -15663,7 +15679,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -15726,11 +15742,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/Organism-2026-04-07">http://rs.tdwg.org/dwc/terms/version/Organism-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/Organism-2026-05-26">http://rs.tdwg.org/dwc/terms/version/Organism-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -15767,7 +15783,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -15831,11 +15847,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/OrganismInteraction-2026-04-07">http://rs.tdwg.org/dwc/terms/version/OrganismInteraction-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/OrganismInteraction-2026-05-26">http://rs.tdwg.org/dwc/terms/version/OrganismInteraction-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -15871,7 +15887,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -15889,11 +15905,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/organismInteractionDescription-2026-04-07">http://rs.tdwg.org/dwc/terms/version/organismInteractionDescription-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/organismInteractionDescription-2026-05-26">http://rs.tdwg.org/dwc/terms/version/organismInteractionDescription-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -15917,7 +15933,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -15935,11 +15951,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/organismInteractionID-2026-04-07">http://rs.tdwg.org/dwc/terms/version/organismInteractionID-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/organismInteractionID-2026-05-26">http://rs.tdwg.org/dwc/terms/version/organismInteractionID-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -15963,7 +15979,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -15981,11 +15997,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/organismInteractionType-2026-04-07">http://rs.tdwg.org/dwc/terms/version/organismInteractionType-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/organismInteractionType-2026-05-26">http://rs.tdwg.org/dwc/terms/version/organismInteractionType-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -16018,7 +16034,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -16036,11 +16052,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/organismInteractionType-2026-04-07">http://rs.tdwg.org/dwc/iri/version/organismInteractionType-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/organismInteractionType-2026-05-26">http://rs.tdwg.org/dwc/iri/version/organismInteractionType-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -16064,7 +16080,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -16330,11 +16346,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/organismScope-2026-04-07">http://rs.tdwg.org/dwc/iri/version/organismScope-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/organismScope-2026-05-26">http://rs.tdwg.org/dwc/iri/version/organismScope-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -16358,7 +16374,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -16532,11 +16548,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/otherCatalogNumbers-2026-04-07">http://rs.tdwg.org/dwc/terms/version/otherCatalogNumbers-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/otherCatalogNumbers-2026-05-26">http://rs.tdwg.org/dwc/terms/version/otherCatalogNumbers-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -16571,7 +16587,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -16589,11 +16605,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/ownerInstitutionCode-2026-04-07">http://rs.tdwg.org/dwc/terms/version/ownerInstitutionCode-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/ownerInstitutionCode-2026-05-26">http://rs.tdwg.org/dwc/terms/version/ownerInstitutionCode-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -16621,7 +16637,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -16639,11 +16655,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/parentEventID-2026-04-07">http://rs.tdwg.org/dwc/terms/version/parentEventID-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/parentEventID-2026-05-26">http://rs.tdwg.org/dwc/terms/version/parentEventID-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -16675,7 +16691,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -16998,11 +17014,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/pointRadiusSpatialFit-2026-04-07">http://rs.tdwg.org/dwc/terms/version/pointRadiusSpatialFit-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/pointRadiusSpatialFit-2026-05-26">http://rs.tdwg.org/dwc/terms/version/pointRadiusSpatialFit-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -17038,7 +17054,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -17056,11 +17072,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/preferredSpatialRepresentation-2026-04-07">http://rs.tdwg.org/dwc/terms/version/preferredSpatialRepresentation-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/preferredSpatialRepresentation-2026-05-26">http://rs.tdwg.org/dwc/terms/version/preferredSpatialRepresentation-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -17087,7 +17103,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -17105,11 +17121,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/preferredSpatialRepresentation-2026-04-07">http://rs.tdwg.org/dwc/iri/version/preferredSpatialRepresentation-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/preferredSpatialRepresentation-2026-05-26">http://rs.tdwg.org/dwc/iri/version/preferredSpatialRepresentation-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -17133,7 +17149,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -17151,11 +17167,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/preparations-2026-04-07">http://rs.tdwg.org/dwc/terms/version/preparations-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/preparations-2026-05-26">http://rs.tdwg.org/dwc/terms/version/preparations-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -17206,7 +17222,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -17423,11 +17439,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/processedTotalReadCount-2026-04-07">http://rs.tdwg.org/dwc/terms/version/processedTotalReadCount-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/processedTotalReadCount-2026-05-26">http://rs.tdwg.org/dwc/terms/version/processedTotalReadCount-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -17451,7 +17467,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -17469,11 +17485,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/projectID-2026-04-07">http://rs.tdwg.org/dwc/terms/version/projectID-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/projectID-2026-05-26">http://rs.tdwg.org/dwc/terms/version/projectID-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -17512,7 +17528,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -17530,11 +17546,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/projectTitle-2026-04-07">http://rs.tdwg.org/dwc/terms/version/projectTitle-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/projectTitle-2026-05-26">http://rs.tdwg.org/dwc/terms/version/projectTitle-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -17571,7 +17587,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -17589,11 +17605,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/Protocol-2026-04-07">http://rs.tdwg.org/dwc/terms/version/Protocol-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/Protocol-2026-05-26">http://rs.tdwg.org/dwc/terms/version/Protocol-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -17622,7 +17638,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -17640,11 +17656,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/protocolDescription-2026-04-07">http://rs.tdwg.org/dwc/terms/version/protocolDescription-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/protocolDescription-2026-05-26">http://rs.tdwg.org/dwc/terms/version/protocolDescription-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -17668,7 +17684,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -17686,11 +17702,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/protocolID-2026-04-07">http://rs.tdwg.org/dwc/terms/version/protocolID-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/protocolID-2026-05-26">http://rs.tdwg.org/dwc/terms/version/protocolID-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -17714,7 +17730,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -17732,11 +17748,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/protocolReferences-2026-04-07">http://rs.tdwg.org/dwc/terms/version/protocolReferences-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/protocolReferences-2026-05-26">http://rs.tdwg.org/dwc/terms/version/protocolReferences-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -17764,7 +17780,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -17782,11 +17798,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/protocolRemarks-2026-04-07">http://rs.tdwg.org/dwc/terms/version/protocolRemarks-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/protocolRemarks-2026-05-26">http://rs.tdwg.org/dwc/terms/version/protocolRemarks-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -17806,7 +17822,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -17824,11 +17840,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/protocolType-2026-04-07">http://rs.tdwg.org/dwc/terms/version/protocolType-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/protocolType-2026-05-26">http://rs.tdwg.org/dwc/terms/version/protocolType-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -17862,7 +17878,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -17880,11 +17896,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/protocolType-2026-04-07">http://rs.tdwg.org/dwc/iri/version/protocolType-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/protocolType-2026-05-26">http://rs.tdwg.org/dwc/iri/version/protocolType-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -17908,7 +17924,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -17926,11 +17942,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/Provenance-2026-04-07">http://rs.tdwg.org/dwc/terms/version/Provenance-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/Provenance-2026-05-26">http://rs.tdwg.org/dwc/terms/version/Provenance-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -17954,7 +17970,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -17972,11 +17988,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/readCount-2026-04-07">http://rs.tdwg.org/dwc/terms/version/readCount-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/readCount-2026-05-26">http://rs.tdwg.org/dwc/terms/version/readCount-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -18004,7 +18020,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -18022,11 +18038,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/recordedBy-2026-04-07">http://rs.tdwg.org/dwc/terms/version/recordedBy-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/recordedBy-2026-05-26">http://rs.tdwg.org/dwc/terms/version/recordedBy-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -18064,7 +18080,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -18082,11 +18098,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/recordedBy-2026-04-07">http://rs.tdwg.org/dwc/iri/version/recordedBy-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/recordedBy-2026-05-26">http://rs.tdwg.org/dwc/iri/version/recordedBy-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -18114,7 +18130,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -18132,11 +18148,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/recordedByID-2026-04-07">http://rs.tdwg.org/dwc/terms/version/recordedByID-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/recordedByID-2026-05-26">http://rs.tdwg.org/dwc/terms/version/recordedByID-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -18171,7 +18187,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -18277,11 +18293,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/referenceID-2026-04-07">http://rs.tdwg.org/dwc/terms/version/referenceID-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/referenceID-2026-05-26">http://rs.tdwg.org/dwc/terms/version/referenceID-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -18305,7 +18321,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -18323,11 +18339,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/referenceRemarks-2026-04-07">http://rs.tdwg.org/dwc/terms/version/referenceRemarks-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/referenceRemarks-2026-05-26">http://rs.tdwg.org/dwc/terms/version/referenceRemarks-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -18347,7 +18363,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -18365,7 +18381,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
@@ -18408,7 +18424,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -18426,11 +18442,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/referenceType-2026-04-07">http://rs.tdwg.org/dwc/terms/version/referenceType-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/referenceType-2026-05-26">http://rs.tdwg.org/dwc/terms/version/referenceType-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -18466,7 +18482,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -18526,11 +18542,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/relatedResourceID-2026-04-07">http://rs.tdwg.org/dwc/terms/version/relatedResourceID-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/relatedResourceID-2026-05-26">http://rs.tdwg.org/dwc/terms/version/relatedResourceID-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -18562,7 +18578,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -18895,11 +18911,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/reproductiveCondition-2026-04-07">http://rs.tdwg.org/dwc/iri/version/reproductiveCondition-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/reproductiveCondition-2026-05-26">http://rs.tdwg.org/dwc/iri/version/reproductiveCondition-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -18927,7 +18943,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -18945,11 +18961,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/reproductiveCondition-2026-04-07">http://rs.tdwg.org/dwc/terms/version/reproductiveCondition-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/reproductiveCondition-2026-05-26">http://rs.tdwg.org/dwc/terms/version/reproductiveCondition-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -18982,7 +18998,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -19104,11 +19120,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/resourceRelationshipID-2026-04-07">http://rs.tdwg.org/dwc/terms/version/resourceRelationshipID-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/resourceRelationshipID-2026-05-26">http://rs.tdwg.org/dwc/terms/version/resourceRelationshipID-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -19132,7 +19148,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -19606,11 +19622,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/sampledSubstrateCategory-2026-04-07">http://rs.tdwg.org/dwc/iri/version/sampledSubstrateCategory-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/sampledSubstrateCategory-2026-05-26">http://rs.tdwg.org/dwc/iri/version/sampledSubstrateCategory-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -19634,7 +19650,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -19652,11 +19668,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/sampledSubstrateCategory-2026-04-07">http://rs.tdwg.org/dwc/terms/version/sampledSubstrateCategory-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/sampledSubstrateCategory-2026-05-26">http://rs.tdwg.org/dwc/terms/version/sampledSubstrateCategory-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -19688,7 +19704,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -19706,11 +19722,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/sampledSubstrateLayer-2026-04-07">http://rs.tdwg.org/dwc/terms/version/sampledSubstrateLayer-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/sampledSubstrateLayer-2026-05-26">http://rs.tdwg.org/dwc/terms/version/sampledSubstrateLayer-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -19753,7 +19769,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -19771,11 +19787,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/sampledSubstrateLayer-2026-04-07">http://rs.tdwg.org/dwc/iri/version/sampledSubstrateLayer-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/sampledSubstrateLayer-2026-05-26">http://rs.tdwg.org/dwc/iri/version/sampledSubstrateLayer-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -19799,7 +19815,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -20441,11 +20457,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/samplingProtocol-2026-04-07">http://rs.tdwg.org/dwc/terms/version/samplingProtocol-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/samplingProtocol-2026-05-26">http://rs.tdwg.org/dwc/terms/version/samplingProtocol-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -20488,7 +20504,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -20506,11 +20522,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/samplingProtocol-2026-04-07">http://rs.tdwg.org/dwc/iri/version/samplingProtocol-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/samplingProtocol-2026-05-26">http://rs.tdwg.org/dwc/iri/version/samplingProtocol-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -20538,7 +20554,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -20556,11 +20572,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/scientificName-2026-04-07">http://rs.tdwg.org/dwc/terms/version/scientificName-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/scientificName-2026-05-26">http://rs.tdwg.org/dwc/terms/version/scientificName-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -20611,7 +20627,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -20771,11 +20787,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/sequence-2026-04-07">http://rs.tdwg.org/dwc/terms/version/sequence-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/sequence-2026-05-26">http://rs.tdwg.org/dwc/terms/version/sequence-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -20803,7 +20819,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -20821,11 +20837,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/sex-2026-04-07">http://rs.tdwg.org/dwc/terms/version/sex-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/sex-2026-05-26">http://rs.tdwg.org/dwc/terms/version/sex-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -20865,7 +20881,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -20883,11 +20899,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/sex-2026-04-07">http://rs.tdwg.org/dwc/iri/version/sex-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/sex-2026-05-26">http://rs.tdwg.org/dwc/iri/version/sex-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -20915,7 +20931,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -20933,11 +20949,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/siteNumber-2026-04-07">http://rs.tdwg.org/dwc/iri/version/siteNumber-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/siteNumber-2026-05-26">http://rs.tdwg.org/dwc/iri/version/siteNumber-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -20961,7 +20977,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -20979,11 +20995,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/siteNumber-2026-04-07">http://rs.tdwg.org/dwc/terms/version/siteNumber-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/siteNumber-2026-05-26">http://rs.tdwg.org/dwc/terms/version/siteNumber-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -21014,7 +21030,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -21081,11 +21097,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/startDayOfYear-2026-04-07">http://rs.tdwg.org/dwc/terms/version/startDayOfYear-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/startDayOfYear-2026-05-26">http://rs.tdwg.org/dwc/terms/version/startDayOfYear-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -21118,7 +21134,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -21621,11 +21637,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/taxonFormula-2026-04-07">http://rs.tdwg.org/dwc/terms/version/taxonFormula-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/taxonFormula-2026-05-26">http://rs.tdwg.org/dwc/terms/version/taxonFormula-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -21662,7 +21678,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -21680,11 +21696,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/taxonFormula-2026-04-07">http://rs.tdwg.org/dwc/iri/version/taxonFormula-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/taxonFormula-2026-05-26">http://rs.tdwg.org/dwc/iri/version/taxonFormula-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -21708,7 +21724,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -21768,11 +21784,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/taxonID-2026-04-07">http://rs.tdwg.org/dwc/terms/version/taxonID-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/taxonID-2026-05-26">http://rs.tdwg.org/dwc/terms/version/taxonID-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -21800,7 +21816,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -21907,11 +21923,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/taxonRank-2026-04-07">http://rs.tdwg.org/dwc/terms/version/taxonRank-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/taxonRank-2026-05-26">http://rs.tdwg.org/dwc/terms/version/taxonRank-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -21956,7 +21972,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -22280,11 +22296,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/typeOfType-2026-04-07">http://rs.tdwg.org/dwc/terms/version/typeOfType-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/typeOfType-2026-05-26">http://rs.tdwg.org/dwc/terms/version/typeOfType-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -22315,7 +22331,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -22432,11 +22448,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/typifiedName-2026-04-07">http://rs.tdwg.org/dwc/terms/version/typifiedName-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/typifiedName-2026-05-26">http://rs.tdwg.org/dwc/terms/version/typifiedName-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -22468,7 +22484,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -22486,11 +22502,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/UsagePolicy-2026-04-07">http://rs.tdwg.org/dwc/terms/version/UsagePolicy-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/UsagePolicy-2026-05-26">http://rs.tdwg.org/dwc/terms/version/UsagePolicy-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -22514,7 +22530,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -22532,11 +22548,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/verbatimAssertionType-2026-04-07">http://rs.tdwg.org/dwc/terms/version/verbatimAssertionType-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/verbatimAssertionType-2026-05-26">http://rs.tdwg.org/dwc/terms/version/verbatimAssertionType-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -22560,7 +22576,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -22578,11 +22594,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/verbatimCoordinates-2026-04-07">http://rs.tdwg.org/dwc/terms/version/verbatimCoordinates-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/verbatimCoordinates-2026-05-26">http://rs.tdwg.org/dwc/terms/version/verbatimCoordinates-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -22613,7 +22629,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -22631,11 +22647,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/verbatimCoordinateSystem-2026-04-07">http://rs.tdwg.org/dwc/iri/version/verbatimCoordinateSystem-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/verbatimCoordinateSystem-2026-05-26">http://rs.tdwg.org/dwc/iri/version/verbatimCoordinateSystem-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -22663,7 +22679,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -22681,11 +22697,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/verbatimCoordinateSystem-2026-04-07">http://rs.tdwg.org/dwc/terms/version/verbatimCoordinateSystem-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/verbatimCoordinateSystem-2026-05-26">http://rs.tdwg.org/dwc/terms/version/verbatimCoordinateSystem-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -22718,7 +22734,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -22778,11 +22794,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/verbatimElevation-2026-04-07">http://rs.tdwg.org/dwc/terms/version/verbatimElevation-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/verbatimElevation-2026-05-26">http://rs.tdwg.org/dwc/terms/version/verbatimElevation-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -22806,7 +22822,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -22937,11 +22953,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/verbatimLabel-2026-04-07">http://rs.tdwg.org/dwc/terms/version/verbatimLabel-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/verbatimLabel-2026-05-26">http://rs.tdwg.org/dwc/terms/version/verbatimLabel-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -22973,7 +22989,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -22991,11 +23007,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/verbatimLatitude-2026-04-07">http://rs.tdwg.org/dwc/terms/version/verbatimLatitude-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/verbatimLatitude-2026-05-26">http://rs.tdwg.org/dwc/terms/version/verbatimLatitude-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -23023,7 +23039,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -23041,11 +23057,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/verbatimLocality-2026-04-07">http://rs.tdwg.org/dwc/terms/version/verbatimLocality-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/verbatimLocality-2026-05-26">http://rs.tdwg.org/dwc/terms/version/verbatimLocality-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -23069,7 +23085,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -23087,11 +23103,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/verbatimLongitude-2026-04-07">http://rs.tdwg.org/dwc/terms/version/verbatimLongitude-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/verbatimLongitude-2026-05-26">http://rs.tdwg.org/dwc/terms/version/verbatimLongitude-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -23119,7 +23135,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -23396,11 +23412,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/vernacularName-2026-04-07">http://rs.tdwg.org/dwc/terms/version/vernacularName-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/vernacularName-2026-05-26">http://rs.tdwg.org/dwc/terms/version/vernacularName-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -23434,7 +23450,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -23566,11 +23582,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/vitality-2026-04-07">http://rs.tdwg.org/dwc/iri/version/vitality-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/vitality-2026-05-26">http://rs.tdwg.org/dwc/iri/version/vitality-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -23606,7 +23622,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -23624,11 +23640,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/vitality-2026-04-07">http://rs.tdwg.org/dwc/terms/version/vitality-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/vitality-2026-05-26">http://rs.tdwg.org/dwc/terms/version/vitality-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -23670,7 +23686,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-04-07_58">http://rs.tdwg.org/decisions/decision-2026-04-07_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
