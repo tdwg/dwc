@@ -10,7 +10,7 @@ Preferred namespace abbreviation
 : dwcem:
 
 Date version issued
-: 2025-07-10
+: 2026-05-26
 
 Date created
 : 2020-10-13
@@ -19,13 +19,13 @@ Part of TDWG Standard
 : <http://www.tdwg.org/standards/450>
 
 This document version
-: <http://rs.tdwg.org/dwc/doc/em/2025-07-10>
+: <http://rs.tdwg.org/dwc/doc/em/2026-05-26>
 
 Latest version of document
 : <http://rs.tdwg.org/dwc/doc/em/>
 
 Previous version
-: <http://rs.tdwg.org/dwc/doc/em/2025-06-12>
+: <http://rs.tdwg.org/dwc/doc/em/2025-07-10>
 
 Abstract
 : The Darwin Core term `establishmentMeans` provides information about whether an organism or organisms have been introduced to a given place and time through the direct or indirect activity of modern humans. The Establishment Means Controlled Vocabulary provides terms that should be used as values for `dwc:establishmentMeans` and `dwciri:establishmentMeans`.
@@ -37,7 +37,7 @@ Creator
 : TDWG Darwin Core Maintenance Group
 
 Bibliographic citation
-: TDWG Darwin Core Maintenance Group. 2025. Establishment Means Controlled Vocabulary List of Terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/em/2025-07-10>
+: TDWG Darwin Core Maintenance Group. 2026. Establishment Means Controlled Vocabulary List of Terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/em/2026-05-26>
 
 
 ## 1 Introduction
@@ -166,11 +166,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2025-06-12</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwcem/values/version/e002-2025-06-12">http://rs.tdwg.org/dwcem/values/version/e002-2025-06-12</a></td>
+			<td><a href="http://rs.tdwg.org/dwcem/values/version/e002-2026-05-26">http://rs.tdwg.org/dwcem/values/version/e002-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -199,6 +199,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2025-06-12_47">http://rs.tdwg.org/decisions/decision-2025-06-12_47</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_59">http://rs.tdwg.org/decisions/decision-2026-05-26_59</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -400,11 +404,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2025-06-12</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwcem/values/version/e007-2025-06-12">http://rs.tdwg.org/dwcem/values/version/e007-2025-06-12</a></td>
+			<td><a href="http://rs.tdwg.org/dwcem/values/version/e007-2026-05-26">http://rs.tdwg.org/dwcem/values/version/e007-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -429,6 +433,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2025-06-12_47">http://rs.tdwg.org/decisions/decision-2025-06-12_47</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_59">http://rs.tdwg.org/decisions/decision-2026-05-26_59</a></td>
 		</tr>
 	</tbody>
 </table>
