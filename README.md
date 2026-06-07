@@ -61,7 +61,9 @@ The repository structure is described below. Files/directories indicated with `G
 │   ├── CNAME             : Canonical Name record for dwc.tdwg.org
 │   ├── _config.yml       : Jekyll site configuration
 │   ├── _data             : Website navigation and footer
+│   ├── cm                + Conceptual Model
 │   ├── doe               + Degree of Establishment Controlled Vocabulary List of Terms
+│   ├── dp                + Darwin Core Data Package guide
 │   ├── em                + Establishment Means Controlled Vocabulary List of Terms
 │   ├── examples          : Longer examples linked from other documents
 │   ├── favicon.ico       : Web page icon
