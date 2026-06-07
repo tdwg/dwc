@@ -1711,6 +1711,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -1757,6 +1761,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -1798,6 +1806,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -1851,6 +1863,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -1907,6 +1923,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -1952,6 +1972,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -2007,6 +2031,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -2061,6 +2089,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -2107,6 +2139,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -2146,9 +2182,9 @@ No properties are currently organized in this class.
 			<td><ul class="list-group list-group-flush">
   <li class="list-group-item"><code>Rob Guralnick</code></li>
   <li class="list-group-item"><code>Peter Desmet | Stijn Van Hoey</code></li>
-  <li class="list-group-item"><code>ChatGPT</li>
-  <li class="list-group-item">Notes From Nature</li>
-  <li class="list-group-item">ROV SuBastian</code></li>
+  <li class="list-group-item"><code>ChatGPT</code></li>
+  <li class="list-group-item"><code>Notes From Nature</code></li>
+  <li class="list-group-item"><code>ROV SuBastian</code></li>
 </ul></td>
 		</tr>
 		<tr>
@@ -2162,6 +2198,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -2223,6 +2263,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -2272,6 +2316,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -2317,6 +2365,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -2378,6 +2430,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -2419,6 +2475,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -2465,6 +2525,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -2516,6 +2580,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -2561,6 +2629,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -2618,6 +2690,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -2670,6 +2746,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -2728,6 +2808,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -2785,6 +2869,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -2834,6 +2922,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -3097,6 +3189,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -3418,6 +3514,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -3467,6 +3567,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -3559,6 +3663,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -3656,6 +3764,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -3717,6 +3829,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -3767,6 +3883,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -3964,6 +4084,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -4017,6 +4141,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -4181,6 +4309,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -4302,6 +4434,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -4421,6 +4557,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -4643,6 +4783,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -4802,6 +4946,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -4851,6 +4999,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -5030,6 +5182,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -5133,6 +5289,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -5182,6 +5342,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -5243,6 +5407,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -5496,6 +5664,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -5759,6 +5931,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -5924,6 +6100,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -5979,6 +6159,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -6470,6 +6654,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -6525,6 +6713,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -6589,6 +6781,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -7192,6 +7388,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -7252,6 +7452,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -7486,6 +7690,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -7531,6 +7739,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -7589,6 +7801,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -7747,6 +7963,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -8055,6 +8275,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -8112,6 +8336,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -8419,6 +8647,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -8518,6 +8750,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -8567,6 +8803,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -8682,6 +8922,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -8731,6 +8975,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -8836,6 +9084,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -8885,6 +9137,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -9655,6 +9911,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -9746,6 +10006,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -9907,6 +10171,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -10010,6 +10278,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -10055,6 +10327,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -10110,6 +10386,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -10159,6 +10439,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -10226,6 +10510,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -10279,6 +10567,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -10336,6 +10628,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -10617,6 +10913,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -10669,6 +10969,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -10790,6 +11094,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -10846,6 +11154,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -10905,6 +11217,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -10957,6 +11273,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -11384,6 +11704,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -11710,6 +12034,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -11759,6 +12087,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -12144,6 +12476,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -12403,6 +12739,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -12448,6 +12788,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -12498,6 +12842,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -12602,6 +12950,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -12647,6 +12999,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -12697,6 +13053,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -12860,6 +13220,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -12958,6 +13322,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -13785,6 +14153,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -13891,6 +14263,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -13989,6 +14365,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -14108,6 +14488,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -14153,6 +14537,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -14314,6 +14702,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -14699,6 +15091,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -14741,6 +15137,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -14782,6 +15182,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -14837,6 +15241,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -14882,6 +15290,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -14936,6 +15348,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -14995,6 +15411,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -15137,6 +15557,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -15628,6 +16052,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -15680,6 +16108,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -15785,6 +16217,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -15889,6 +16325,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -15935,6 +16375,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -15980,6 +16424,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -16036,6 +16484,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -16081,6 +16533,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -16376,6 +16832,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -16589,6 +17049,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -16638,6 +17102,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -16692,6 +17160,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -17056,6 +17528,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -17105,6 +17581,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -17150,6 +17630,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -17223,6 +17707,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -17469,6 +17957,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -17530,6 +18022,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -17589,6 +18085,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -17640,6 +18140,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -17686,6 +18190,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -17731,6 +18239,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -17782,6 +18294,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -17823,6 +18339,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -17880,6 +18400,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -17926,6 +18450,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -17971,6 +18499,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -18021,6 +18553,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -18082,6 +18618,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -18131,6 +18671,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -18188,6 +18732,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -18323,6 +18871,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -18364,6 +18916,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -18426,6 +18982,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -18483,6 +19043,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -18579,6 +19143,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -18945,6 +19513,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -18999,6 +19571,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -19149,6 +19725,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -19652,6 +20232,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -19705,6 +20289,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -19771,6 +20359,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -19816,6 +20408,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -20506,6 +21102,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -20555,6 +21155,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -20628,6 +21232,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -20821,6 +21429,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -20883,6 +21495,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -20933,6 +21549,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -20978,6 +21598,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -21031,6 +21655,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -21135,6 +21763,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -21680,6 +22312,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -21725,6 +22361,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -21817,6 +22457,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -21973,6 +22617,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -22333,6 +22981,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -22486,6 +23138,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -22532,6 +23188,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -22577,6 +23237,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -22631,6 +23295,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -22680,6 +23348,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -22735,6 +23407,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -22823,6 +23499,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -22991,6 +23671,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -23041,6 +23725,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -23086,6 +23774,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -23136,6 +23828,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -23452,6 +24148,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -23624,6 +24324,10 @@ No properties are currently organized in this class.
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -23687,6 +24391,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>

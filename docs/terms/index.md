@@ -517,7 +517,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/assertionBy">http://rs.tdwg.org/dwc/terms/assertionBy</a></td></tr>
     <tr><td>Definition</td><td>A name for a dcterms:Agent responsible for making a dwc:Assertion.</td></tr>
     <tr><td>Notes</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Rob Guralnick</code></li><li class="list-group-item"><code>Peter Desmet | Stijn Van Hoey</code></li><li class="list-group-item"><code>ChatGPT</li><li class="list-group-item">Notes From Nature</li><li class="list-group-item">ROV SuBastian</code></li></ul></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Rob Guralnick</code></li><li class="list-group-item"><code>Peter Desmet | Stijn Van Hoey</code></li><li class="list-group-item"><code>ChatGPT</code></li><li class="list-group-item"><code>Notes From Nature</code></li><li class="list-group-item"><code>ROV SuBastian</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
