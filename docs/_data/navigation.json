@@ -60,12 +60,21 @@
         "text": "---"
       },
       {
+        "text": "
+        conceptual Model",
+        "href": "/cm/"
+      },
+      {
         "text": "Simple Darwin Core",
         "href": "/simple/"
       },
       {
         "text": "Text (Darwin Core Archive)",
         "href": "/text/"
+      },
+      {
+        "text": "Data Package (Darwin Core Data Package)",
+        "href": "/dp/"
       },
       {
         "text": "RDF",

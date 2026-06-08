@@ -153,7 +153,7 @@ In Darwin Core, a *Survey* refers to an *Event* that is a biotic survey or inven
 
 #### Simplifications
 
-Figure 3 is a small subset of the DwC-CM focusing on S*urveys*. Additional relationships such as *Media Entities* recorded, *Material Entities* gathered, and *Identifications* of *Organisms*, among others, are omitted here. Those relationships are covered in further thematic sections below.
+Figure 3 is a small subset of the DwC-CM focusing on *Surveys*. Additional relationships such as *Media Entities* recorded, *Material Entities* gathered, and *Identifications* of *Organisms*, among others, are omitted here. Those relationships are covered in further thematic sections below.
 
 ### 2.3 Occurrence, Organism, and OrganismInteraction (non-normative)
 

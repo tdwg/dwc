@@ -12,7 +12,7 @@ This page is not part of the standard, but combines the normative term names and
 Additional [files with just the current term names](https://github.com/tdwg/dwc/tree/master/dist) and a [file with the full term history](https://github.com/tdwg/dwc/blob/master/vocabulary/term_versions.csv) can be found in the [Darwin Core repository](https://github.com/tdwg/dwc).
 
 
-## Record-level
+<h2 id="record-level">Record-level</h2>
 
 This category contains terms that are generic in that they might apply to any type of record in a dataset.
 <div class="my-4">
@@ -329,7 +329,7 @@ This category contains terms that are generic in that they might apply to any ty
 </table>
 
 
-## Agent
+<h2 id="agent">Agent</h2>
 
 <div class="my-4">
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:agentID">agentID</a>
@@ -402,7 +402,7 @@ This category contains terms that are generic in that they might apply to any ty
 </table>
 
 
-## Assertion
+<h2 id="assertion">Assertion</h2>
 
 <div class="my-4">
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:assertionID">assertionID</a>
@@ -587,7 +587,7 @@ This category contains terms that are generic in that they might apply to any ty
 </table>
 
 
-## BibliographicResource
+<h2 id="bibliographicresource">BibliographicResource</h2>
 
 <div class="my-4">
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:referenceID">referenceID</a>
@@ -646,7 +646,7 @@ This category contains terms that are generic in that they might apply to any ty
 </table>
 
 
-## Event
+<h2 id="event">Event</h2>
 
 <div class="my-4">
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:eventID">eventID</a>
@@ -1041,7 +1041,7 @@ This category contains terms that are generic in that they might apply to any ty
 </table>
 
 
-## Location
+<h2 id="location">Location</h2>
 
 <div class="my-4">
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:locationID">locationID</a>
@@ -1590,7 +1590,7 @@ This category contains terms that are generic in that they might apply to any ty
 </table>
 
 
-## GeologicalContext
+<h2 id="geologicalcontext">GeologicalContext</h2>
 
 <div class="my-4">
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:geologicalContextID">geologicalContextID</a>
@@ -1859,7 +1859,7 @@ This category contains terms that are generic in that they might apply to any ty
 </table>
 
 
-## Identification
+<h2 id="identification">Identification</h2>
 
 <div class="my-4">
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:identificationID">identificationID</a>
@@ -2058,7 +2058,7 @@ This category contains terms that are generic in that they might apply to any ty
 </table>
 
 
-## MaterialEntity
+<h2 id="materialentity">MaterialEntity</h2>
 
 <div class="my-4">
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:materialEntityID">materialEntityID</a>
@@ -2313,7 +2313,7 @@ This category contains terms that are generic in that they might apply to any ty
 </table>
 
 
-## MaterialSample
+<h2 id="materialsample">MaterialSample</h2>
 
 <div class="my-4">
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:materialSampleID">materialSampleID</a>
@@ -2344,7 +2344,7 @@ This category contains terms that are generic in that they might apply to any ty
 </table>
 
 
-## Occurrence
+<h2 id="occurrence">Occurrence</h2>
 
 <div class="my-4">
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:occurrenceID">occurrenceID</a>
@@ -2627,7 +2627,7 @@ This category contains terms that are generic in that they might apply to any ty
 </table>
 
 
-## Organism
+<h2 id="organism">Organism</h2>
 
 <div class="my-4">
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:organismID">organismID</a>
@@ -2742,7 +2742,7 @@ This category contains terms that are generic in that they might apply to any ty
 </table>
 
 
-## OrganismInteraction
+<h2 id="organisminteraction">OrganismInteraction</h2>
 
 <div class="my-4">
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:organismInteractionID">organismInteractionID</a>
@@ -2801,7 +2801,7 @@ This category contains terms that are generic in that they might apply to any ty
 </table>
 
 
-## MeasurementOrFact
+<h2 id="measurementorfact">MeasurementOrFact</h2>
 
 <div class="my-4">
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:measurementID">measurementID</a>
@@ -2972,10 +2972,8 @@ This category contains terms that are generic in that they might apply to any ty
 </table>
 
 
-## Media
+<h2 id="media">Media</h2>
 
-<div class="my-4">
-  </div>
 
 <table class="table">
   <tbody>
@@ -2989,7 +2987,7 @@ This category contains terms that are generic in that they might apply to any ty
 
 
 
-## MolecularProtocol
+<h2 id="molecularprotocol">MolecularProtocol</h2>
 
 <div class="my-4">
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:molecularProtocolID">molecularProtocolID</a>
@@ -3034,7 +3032,7 @@ This category contains terms that are generic in that they might apply to any ty
 </table>
 
 
-## NucleotideAnalysis
+<h2 id="nucleotideanalysis">NucleotideAnalysis</h2>
 
 <div class="my-4">
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:readCount">readCount</a>
@@ -3079,7 +3077,7 @@ This category contains terms that are generic in that they might apply to any ty
 </table>
 
 
-## NucleotideSequence
+<h2 id="nucleotidesequence">NucleotideSequence</h2>
 
 <div class="my-4">
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:sequence">sequence</a>
@@ -3124,7 +3122,7 @@ This category contains terms that are generic in that they might apply to any ty
 </table>
 
 
-## Protocol
+<h2 id="protocol">Protocol</h2>
 
 <div class="my-4">
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:protocolID">protocolID</a>
@@ -3197,7 +3195,7 @@ This category contains terms that are generic in that they might apply to any ty
 </table>
 
 
-## Provenance
+<h2 id="provenance">Provenance</h2>
 
 <div class="my-4">
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:projectTitle">projectTitle</a>
@@ -3270,7 +3268,7 @@ This category contains terms that are generic in that they might apply to any ty
 </table>
 
 
-## ResourceRelationship
+<h2 id="resourcerelationship">ResourceRelationship</h2>
 
 <div class="my-4">
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:resourceRelationshipID">resourceRelationshipID</a>
@@ -3399,7 +3397,7 @@ This category contains terms that are generic in that they might apply to any ty
 </table>
 
 
-## Taxon
+<h2 id="taxon">Taxon</h2>
 
 <div class="my-4">
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:taxonID">taxonID</a>
@@ -3976,10 +3974,8 @@ This category contains terms that are generic in that they might apply to any ty
 </table>
 
 
-## UsagePolicy
+<h2 id="usagepolicy">UsagePolicy</h2>
 
-<div class="my-4">
-  </div>
 
 <table class="table">
   <tbody>
@@ -3993,10 +3989,8 @@ This category contains terms that are generic in that they might apply to any ty
 
 
 
-## LivingSpecimen
+<h2 id="livingspecimen">LivingSpecimen</h2>
 
-<div class="my-4">
-  </div>
 
 <table class="table">
   <tbody>
@@ -4010,10 +4004,8 @@ This category contains terms that are generic in that they might apply to any ty
 
 
 
-## PreservedSpecimen
+<h2 id="preservedspecimen">PreservedSpecimen</h2>
 
-<div class="my-4">
-  </div>
 
 <table class="table">
   <tbody>
@@ -4027,10 +4019,8 @@ This category contains terms that are generic in that they might apply to any ty
 
 
 
-## FossilSpecimen
+<h2 id="fossilspecimen">FossilSpecimen</h2>
 
-<div class="my-4">
-  </div>
 
 <table class="table">
   <tbody>
@@ -4044,10 +4034,8 @@ This category contains terms that are generic in that they might apply to any ty
 
 
 
-## MaterialCitation
+<h2 id="materialcitation">MaterialCitation</h2>
 
-<div class="my-4">
-  </div>
 
 <table class="table">
   <tbody>
@@ -4061,10 +4049,8 @@ This category contains terms that are generic in that they might apply to any ty
 
 
 
-## HumanObservation
+<h2 id="humanobservation">HumanObservation</h2>
 
-<div class="my-4">
-  </div>
 
 <table class="table">
   <tbody>
@@ -4078,15 +4064,8 @@ This category contains terms that are generic in that they might apply to any ty
 
 
 
-## MachineObservation
+<h2 id="machineobservation">MachineObservation</h2>
 
-<div class="my-4">
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:assayType">assayType</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:assertionBy">assertionBy</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:assertionType">assertionType</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:assertionUnit">assertionUnit</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:assertionValue">assertionValue</a>
-  </div>
 
 <table class="table">
   <tbody>
@@ -4098,72 +4077,17 @@ This category contains terms that are generic in that they might apply to any ty
   </tbody>
 </table>
 
-<p class="invisible">
-  <span id="dwciri:assayType"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">assayType</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/assayType">http://rs.tdwg.org/dwc/iri/assayType</a></td></tr>
-    <tr><td>Definition</td><td>A type of method used in a study to detect taxon/taxa of interest in a dwc:MaterialEntity.</td></tr>
-    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
-    <tr><td>Examples</td><td></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwciri:assertionBy"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">assertionBy</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/assertionBy">http://rs.tdwg.org/dwc/iri/assertionBy</a></td></tr>
-    <tr><td>Definition</td><td>An IRI identifying a dcterms:Agent responsible for making a dwc:Assertion.</td></tr>
-    <tr><td>Notes</td><td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
-    <tr><td>Examples</td><td></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwciri:assertionType"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">assertionType</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/assertionType">http://rs.tdwg.org/dwc/iri/assertionType</a></td></tr>
-    <tr><td>Definition</td><td>A category that best matches the nature of a dwc:Assertion.</td></tr>
-    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
-    <tr><td>Examples</td><td></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwciri:assertionUnit"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">assertionUnit</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/assertionUnit">http://rs.tdwg.org/dwc/iri/assertionUnit</a></td></tr>
-    <tr><td>Definition</td><td>A unit associated with the value in dwc:assertionValue.</td></tr>
-    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary such as the Ontology of Units of Measure <a href="http://www.ontology-of-units-of-measure.org">http://www.ontology-of-units-of-measure.org</a> for SI units, derived units, or other non-SI units accepted for use within the SI. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="http://www.ontology-of-units-of-measure.org/resource/om-2/metre">http://www.ontology-of-units-of-measure.org/resource/om-2/metre</a></code></li><li class="list-group-item"><code><a href="http://www.ontology-of-units-of-measure.org/resource/om-2/second-Time">http://www.ontology-of-units-of-measure.org/resource/om-2/second-Time</a></code></li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwciri:assertionValue"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">assertionValue</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/assertionValue">http://rs.tdwg.org/dwc/iri/assertionValue</a></td></tr>
-    <tr><td>Definition</td><td>An asserted value.</td></tr>
-    <tr><td>Notes</td><td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
-    <tr><td>Examples</td><td><code><a href="http://vocab.nerc.ac.uk/collection/L22/current/TOOL0960/">http://vocab.nerc.ac.uk/collection/L22/current/TOOL0960/</a></code></td></tr>
-  </tbody>
-</table>
 
 
-## UseWithIRI
+<h2 id="usewithiri">UseWithIRI</h2>
 
 For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https://dwc.tdwg.org/rdf/#25-terms-in-the-dwciri-namespace-normative).
 <div class="my-4">
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:assayType">assayType</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:assertionBy">assertionBy</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:assertionType">assertionType</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:assertionUnit">assertionUnit</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:assertionValue">assertionValue</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:behavior">behavior</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:caste">caste</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:dataGeneralizations">dataGeneralizations</a>
@@ -4232,6 +4156,66 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
   </div>
 
 
+<p class="invisible">
+  <span id="dwciri:assayType"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">assayType</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/assayType">http://rs.tdwg.org/dwc/iri/assayType</a></td></tr>
+    <tr><td>Definition</td><td>A type of method used in a study to detect taxon/taxa of interest in a dwc:MaterialEntity.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwciri:assertionBy"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">assertionBy</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/assertionBy">http://rs.tdwg.org/dwc/iri/assertionBy</a></td></tr>
+    <tr><td>Definition</td><td>An IRI identifying a dcterms:Agent responsible for making a dwc:Assertion.</td></tr>
+    <tr><td>Notes</td><td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwciri:assertionType"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">assertionType</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/assertionType">http://rs.tdwg.org/dwc/iri/assertionType</a></td></tr>
+    <tr><td>Definition</td><td>A category that best matches the nature of a dwc:Assertion.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwciri:assertionUnit"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">assertionUnit</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/assertionUnit">http://rs.tdwg.org/dwc/iri/assertionUnit</a></td></tr>
+    <tr><td>Definition</td><td>A unit associated with the value in dwc:assertionValue.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary such as the Ontology of Units of Measure <a href="http://www.ontology-of-units-of-measure.org">http://www.ontology-of-units-of-measure.org</a> for SI units, derived units, or other non-SI units accepted for use within the SI. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="http://www.ontology-of-units-of-measure.org/resource/om-2/metre">http://www.ontology-of-units-of-measure.org/resource/om-2/metre</a></code></li><li class="list-group-item"><code><a href="http://www.ontology-of-units-of-measure.org/resource/om-2/second-Time">http://www.ontology-of-units-of-measure.org/resource/om-2/second-Time</a></code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwciri:assertionValue"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">assertionValue</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/assertionValue">http://rs.tdwg.org/dwc/iri/assertionValue</a></td></tr>
+    <tr><td>Definition</td><td>An asserted value.</td></tr>
+    <tr><td>Notes</td><td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td><code><a href="http://vocab.nerc.ac.uk/collection/L22/current/TOOL0960/">http://vocab.nerc.ac.uk/collection/L22/current/TOOL0960/</a></code></td></tr>
+  </tbody>
+</table>
 <p class="invisible">
   <span id="dwciri:behavior"></span>
   </p>
@@ -5015,16 +4999,41 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
 </table>
 
 
-## Cite Darwin Core
+<h2 id="cite-darwin-core">Cite Darwin Core</h2>
 
-To cite Darwin Core in general, use the peer-reviewed article on Darwin Core:
+<p>To cite Darwin Core in general, use the peer-reviewed article on Darwin Core:</p>
 
-> Wieczorek J, Bloom D, Guralnick R, Blum S, Döring M, et al. (2012) Darwin Core: An Evolving Community-Developed Biodiversity Data Standard. PLoS ONE 7(1): e29715. <https://doi.org/10.1371/journal.pone.0029715>
+<blockquote>
+  <p>
+    Wieczorek J, Bloom D, Guralnick R, Blum S, Döring M, et al. (2012)
+    Darwin Core: An Evolving Community-Developed Biodiversity Data Standard.
+    PLoS ONE 7(1): e29715.
+    <a href="https://doi.org/10.1371/journal.pone.0029715">
+      https://doi.org/10.1371/journal.pone.0029715
+    </a>
+  </p>
+</blockquote>
 
-To cite the standard document upon which this page is built, use the following:
+<p>To cite the standard document upon which this page is built, use the following:</p>
 
-> Darwin Core Maintenance Group. 2021. List of Darwin Core terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/list/>
+<blockquote>
+  <p>
+    Darwin Core Maintenance Group. 2021. List of Darwin Core terms.
+    Biodiversity Information Standards (TDWG).
+    <a href="http://rs.tdwg.org/dwc/doc/list/">
+      http://rs.tdwg.org/dwc/doc/list/
+    </a>
+  </p>
+</blockquote>
 
-To cite this document specifically, use the following:
+<p>To cite this document specifically, use the following:</p>
 
-> Darwin Core Maintenance Group. 2021. Darwin Core Quick Reference Guide. Biodiversity Information Standards (TDWG). <https://dwc.tdwg.org/terms/>
+<blockquote>
+  <p>
+    Darwin Core Maintenance Group. 2021. Darwin Core Quick Reference Guide.
+    Biodiversity Information Standards (TDWG).
+    <a href="https://dwc.tdwg.org/terms/">
+      https://dwc.tdwg.org/terms/
+    </a>
+  </p>
+</blockquote>

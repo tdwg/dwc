@@ -565,14 +565,19 @@ class TermList:
                 class_group = term_data
                 class_group["terms"] = []
                 in_class = term_data["label"] # check on the class working in
-            elif term_data['iri']=='http://rs.tdwg.org/dwc/iri/behavior':
-                # This is the first row of dwciri terms
-                # store previous section in template_data
+            elif ( term_data['iri'].startswith('http://rs.tdwg.org/dwc/iri/')
+                and not addedUseWithIRI):
                 template_data.append(class_group)
-                #start a class group for UseWithIRI
-                class_group = {"label":"UseWithIRI"}
-                class_group["terms"] = []
-                in_class = "UseWithIRI" # check on the class working in
+                class_group = {
+                    "label": "UseWithIRI",
+                    "iri": "http://rs.tdwg.org/dwc/terms/attributes/UseWithIRI",
+                    "class": None,
+                    "definition": None,
+                    "comments": None,
+                    "rdf_type": None,
+                    "namespace": "dwciri",
+                    "terms": []
+                }
                 addedUseWithIRI = True
                 class_group['terms'].append(term_data)
             else:
