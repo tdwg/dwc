@@ -17,7 +17,7 @@ Additional [files with just the current term names](https://github.com/tdwg/dwc/
 
 {% for class_group in class_groups %}
 
-## {{ class_group.label }}
+<h2 id="{{ class_group.label | lower }}">{{ class_group.label }}</h2>
 
 {% if class_group.isRecordLevel %}
 This category contains terms that are generic in that they might apply to any type of record in a dataset.
@@ -25,11 +25,13 @@ This category contains terms that are generic in that they might apply to any ty
 {% if class_group.label == 'UseWithIRI' %}
 For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https://dwc.tdwg.org/rdf/#25-terms-in-the-dwciri-namespace-normative).
 {% endif %}
+{% if class_group.terms | length > 0 %}
 <div class="my-4">
   {% for term in class_group.terms %}
     <a class="btn btn-sm btn-outline-primary m-1" href="#{{ term.namespace }}:{{ term.label }}">{{ term.label }}</a>
   {% endfor %}
 </div>
+{% endif %}
 
 {% if not class_group.isRecordLevel and class_group.label != 'UseWithIRI' %}
 {# Class #}
