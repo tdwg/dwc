@@ -13,10 +13,10 @@ Part of TDWG Standard
 : <http://www.tdwg.org/standards/450>
 
 This version
-: <http://rs.tdwg.org/dwc/terms/cm/2026-05-26>
+: <http://rs.tdwg.org/dwc/doc/cm/2026-05-26>
 
 Latest version
-: <http://rs.tdwg.org/dwc/terms/cm/>
+: <http://rs.tdwg.org/dwc/doc/cm/>
 
 Abstract
 : Guidelines for the semantics of relationships between Darwin Core classes.
@@ -28,7 +28,7 @@ Creator
 : Darwin Core Maintenance Group
 
 Bibliographic citation
-: Darwin Core Maintenance Group. 2026. Darwin Core conceptual model. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/terms/cm/2026-05-26>
+: Darwin Core Maintenance Group. 2026. Darwin Core conceptual model. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/cm/2026-05-26>
 
 ## 1 Introduction
 
@@ -151,7 +151,7 @@ In Darwin Core, a *Survey* refers to an *Event* that is a biotic survey or inven
 
 #### Simplifications
 
-Figure 3 is a small subset of the DwC-CM focusing on S*urveys*. Additional relationships such as *Media Entities* recorded, *Material Entities* gathered, and *Identifications* of *Organisms*, among others, are omitted here. Those relationships are covered in further thematic sections below.
+Figure 3 is a small subset of the DwC-CM focusing on *Surveys*. Additional relationships such as *Media Entities* recorded, *Material Entities* gathered, and *Identifications* of *Organisms*, among others, are omitted here. Those relationships are covered in further thematic sections below.
 
 ### 2.3 Occurrence, Organism, and OrganismInteraction (non-normative)
 
