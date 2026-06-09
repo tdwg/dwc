@@ -5,12 +5,20 @@ layout: home
 # Darwin Core
 
 {:.lead}
-Darwin Core is a standard maintained by the [Darwin Core Maintenance Group](https://www.tdwg.org/standards/dwc/#maintenance-group). It includes a glossary of terms (in other contexts these might be called properties, elements, fields, columns, attributes, or concepts) intended to **facilitate the sharing of information about biological diversity** by providing identifiers, labels, and definitions. Darwin Core is primarily based on taxa, their occurrence in nature as documented by observations, specimens, samples, and related information.
+Darwin Core is a standard for biodiversity data sharing maintained by the [Darwin Core Maintenance Group](https://www.tdwg.org/standards/dwc/#maintenance-group). It includes a conceptual model, specifications and schemas for sharing via various data formats, and a glossary of terms (in other contexts these might be called properties, elements, fields, columns, attributes, or concepts) by providing identifiers, labels, and definitions.
 
 ## Getting started
 
-- [Quick Reference Guide](terms/)
-- Usage guides: how to use Darwin Core as [Simple Darwin Core](simple/), [Text (Darwin Core Archives)](text/), [XML](xml/) or [RDF](rdf/)
+- [Quick Reference Guide](terms/): easy entry to term definitions
+- [Conceptual Model](cm/): classes of information and how they are related
+- [Normative term list](list/): full history of term definitions
+- Usage guides:
+  - [Simple Darwin Core](simple/)
+  - [Text (Darwin Core Archive)](text/)
+  - [Data Package (Darwin Core Data Package)](dp/)
+  - [XML](xml/)
+  - [RDF](rdf/)
 - [GitHub repository](https://github.com/tdwg/dwc): where Darwin Core is maintained
-- [Normative term list](list/): the document containing the full history of normative Darwin Core term definitions
-- [Distribution files](https://github.com/tdwg/dwc/tree/master/dist): convenient files to start using Darwin Core
+  - [List of open issues](https://github.com/tdwg/dwc/issues)
+  - [List of open milestones](https://github.com/tdwg/dwc/milestones)
+- [Distribution files](https://github.com/tdwg/dwc/tree/master/dist): CSV files of lists of term names
