@@ -36,7 +36,7 @@ Cita bibliográfica
 
 Este documento contiene los términos que forman parte de la versión más reciente del vocabulario Darwin Core (<http://rs.tdwg.org/version/dwc/{ratification_date}>).
 
-Este documento incluye términos en cuatro espacios de nombres que contienen términos recomendados: `dwc:`, `dwciri:`, `dc:`, and `dcterms:`. Sin embargo, algunos términos en estos espacios de nombres están obsoletos o han sido reemplazados, y no deberían utilizarse más. La obsolescencia o reemplazo se indica en los metadatos del término. Los espacios de nombres que contienen únicamente términos obsoletos no están incluidos en este documento, pero los metadatos de dichos términos pueden recuperarse accediendo a sus IRIs.
+This document provides a comprehensive list of terms, from multiple namespaces, that have ever been recommended for use in Darwin Core. The status of some terms, as noted in their metadata, is deprecated or superseded and such terms should no longer be used. Terms from namespaces that contain only deprecated terms are not included in this document, but metadata about those terms can be retrieved by dereferencing their IRIs.
 
 Para una lista simplificada que solo contiene los términos actualmente recomendados, consulte la [Guía de Referencia Rápida de Darwin Core](../terms/).
 
@@ -58,6 +58,7 @@ Se utilizan las siguientes abreviaciones de espacios de nombres en este document
 
 | Abreviación              | IRI                                                                              |
 | ------------------------ | -------------------------------------------------------------------------------- |
+| ac:      | http://rs.tdwg.org/ac/terms/     |
 | dwc:     | http://rs.tdwg.org/dwc/terms/    |
 | dwciri:  | http://rs.tdwg.org/dwc/iri/      |
 | dc:      | http://purl.org/dc/elements/1.1/ |
@@ -65,6 +66,6 @@ Se utilizan las siguientes abreviaciones de espacios de nombres en este document
 
 ## 2 Uso de los Términos
 
-De acuerdo con los requisitos de la [Sección 1.4.3 de la Guía RDF de Darwin Core](../rdf/#143-use-of-darwin-core-terms-in-rdf-normative), los términos en el espacio de nombres `dwciri:` DEBEN usarse con valores IRI. Se espera que los términos en los espacios de nombres `dwc:` y `dc:` tengan generalmente valores literales tipo cadena. Los valores de los términos en los espacios de nombre `dcterms:` dependerán de los detalles de cada término. Consulte la [Sección 3 de la Guía RDF de Darwin Core](../rdf/#3-term-reference-normative) para más detalles.
+Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#143-use-of-darwin-core-terms-in-rdf-normative), properties in the `dwciri:` namespace MUST be used with IRI values. Properties in the `dwc:` and `dc:` namespaces are generally expected to have string literal values. Values for properties in the `dcterms:` namespace will depend on the details of the term. Consulte la [Sección 3 de la Guía RDF de Darwin Core](../rdf/#3-term-reference-normative) para más detalles.
 
 ## 3. Índices de términos
