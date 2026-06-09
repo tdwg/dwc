@@ -60,31 +60,39 @@
         "text": "---"
       },
       {
-        "text": "Darwin Core Simple",
-        "href": "/es/simple/"
+        "text": "",
+        "href": ""
       },
       {
-        "text": "Texto (Archivo Darwin Core)",
-        "href": "/es/text/"
+        "text": "",
+        "href": ""
       },
       {
-        "text": "RDF",
-        "href": "/es/rdf/"
+        "text": "",
+        "href": ""
       },
       {
-        "text": "XML",
-        "href": "/es/xml/"
+        "text": "",
+        "href": ""
       },
       {
-        "text": "Política de Espacio de nombres",
-        "href": "/es/namespace/"
+        "text": "",
+        "href": ""
       },
       {
-        "text": "---"
+        "text": "",
+        "href": ""
       },
       {
-        "text": "Preguntas y respuestas",
-        "href": "https://github.com/tdwg/dwc-qa/blob/master/README.md"
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": ""
+      },
+      {
+        "text": "",
+        "href": ""
       }
     ]
   },
