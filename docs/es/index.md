@@ -5,12 +5,20 @@ layout: home
 # Darwin Core
 
 {:.lead}
-Darwin Core es un estándar mantenido por el [Darwin Core Maintenance Group](https://www.tdwg.org/standards/dwc/#maintenance-group). Incluye un glosario de términos (que en otros contextos podrían llamarse propiedades, elementos, campos, columnas, atributos o conceptos) diseñado para **facilitar el intercambio de información sobre la diversidad biológica**, mediante el uso de identificadores, etiquetas y definiciones. Darwin Core se basa principalmente en los taxones, su ocurrencia en la naturaleza documentada a través de observaciones, especímenes, muestras e información relacionada.
+Darwin Core is a standard for biodiversity data sharing maintained by the [Darwin Core Maintenance Group](https://www.tdwg.org/standards/dwc/#maintenance-group). It includes a conceptual model, specifications and schemas for sharing via various data formats, and a glossary of terms (in other contexts these might be called properties, elements, fields, columns, attributes, or concepts) by providing identifiers, labels, and definitions.
 
 ## Para comenzar
 
-- [Guía Rápida de Referencia](terms/)
-- Guías de uso: cómo utilizar Darwin Core como [Darwin Core Simple](simple/), [(Archivos Darwin Core) de Texto](text/), [XML](xml/) o [RDF](rdf/)
+- [Quick Reference Guide](terms/): easy entry to term definitions
+- [Conceptual Model](cm/): classes of information and how they are related
+- [Normative term list](list/): full history of term definitions
+- Usage guides:
+  - [Simple Darwin Core](simple/)
+  - [Text (Darwin Core Archive)](text/)
+  - [Data Package (Darwin Core Data Package)](dp/)
+  - [XML](xml/)
+  - [RDF](rdf/)
 - [Repositorio en GitHub](https://github.com/tdwg/dwc): donde se mantiene el Darwin Core
-- [Lista normativa de términos](list/): documento que contiene el historial completo de las definiciones normativas de términos Darwin Core
-- [Archivos de distribución](https://github.com/tdwg/dwc/tree/master/dist): archivos prácticos para comenzar a utilizar Darwin Core
+  - [List of open issues](https://github.com/tdwg/dwc/issues)
+  - [List of open milestones](https://github.com/tdwg/dwc/milestones)
+- [Distribution files](https://github.com/tdwg/dwc/tree/master/dist): CSV files of lists of term names
