@@ -60,31 +60,39 @@
         "text": "---"
       },
       {
-        "text": "Jednoduché Darwin Core",
-        "href": "/cs/simple/"
+        "text": "",
+        "href": ""
       },
       {
-        "text": "Text (Darwin Core Archiv)",
-        "href": "/cs/text/"
+        "text": "",
+        "href": ""
       },
       {
-        "text": "RDF",
-        "href": "/cs/rdf/"
+        "text": "",
+        "href": ""
       },
       {
-        "text": "XML",
-        "href": "/cs/xml/"
+        "text": "",
+        "href": ""
       },
       {
-        "text": "Zásady pro jmenný prostor",
-        "href": "/cs/namespace/"
+        "text": "",
+        "href": ""
       },
       {
-        "text": "---"
+        "text": "",
+        "href": ""
       },
       {
-        "text": "Otázky a odpovědi",
-        "href": "https://github.com/tdwg/dwc-qa/blob/master/README.md"
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": ""
+      },
+      {
+        "text": "",
+        "href": ""
       }
     ]
   },
