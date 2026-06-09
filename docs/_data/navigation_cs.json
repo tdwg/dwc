@@ -61,38 +61,38 @@
       },
       {
         "text": "",
-        "href": ""
+        "href": "/cs/cm/"
+      },
+      {
+        "text": "/cs/simple/",
+        "href": "/cs/simple/"
       },
       {
         "text": "",
-        "href": ""
+        "href": "/cs/text/"
       },
       {
         "text": "",
-        "href": ""
+        "href": "/cs/dp/"
       },
       {
         "text": "",
-        "href": ""
+        "href": "/cs/rdf/"
       },
       {
         "text": "",
-        "href": ""
+        "href": "/cs/xml/"
       },
       {
         "text": "",
-        "href": ""
+        "href": "/cs/namespace/"
+      },
+      {
+        "text": "---"
       },
       {
         "text": "",
-        "href": ""
-      },
-      {
-        "text": ""
-      },
-      {
-        "text": "",
-        "href": ""
+        "href": "https://github.com/tdwg/dwc-qa/blob/master/README.md"
       }
     ]
   },
