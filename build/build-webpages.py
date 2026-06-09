@@ -2,6 +2,8 @@
 # Steve Baskauf 2020-08-12 CC0
 # updated 2021-02-11
 # Updated by Matthew Blissett 2025-03.
+# Updated by John Wieczorek 2026-05-18.
+#
 # This script merges static Markdown header documents with term information tables (in Markdown) generated from data in the rs.tdwg.org repo from the TDWG Github site
 
 import re
@@ -180,13 +182,18 @@ class TermList:
             else:
                 filtered_table = self.terms.terms_sorted_by_localname
 
+            added_terms = False
             for row_index,row in filtered_table.iterrows():
                 if row['rdf_type'] != 'http://www.w3.org/2000/01/rdf-schema#Class':
                     curie = row['pref_ns_prefix'] + ":" + row['term_localName']
                     curie_anchor = curie.replace(':','_')
                     text += '[' + curie + '](#' + curie_anchor + ') |\n'
-            text = text[:len(text)-3] # remove final trailing " |\n"
-            text += '\n\n' # put back removed newline
+                    added_terms = True
+            if added_terms:
+                text = text[:len(text)-3] # remove final trailing " |\n"
+            else:
+                text += self.t('no_terms_organized_in_class') + '\n'
+            text += '\n\n'
 
         index_by_name = text
 
@@ -227,12 +234,17 @@ class TermList:
             else:
                 filtered_table = self.terms.terms_sorted_by_label
 
+            added_terms = False
             for row_index,row in filtered_table.iterrows():
                 if 'rdf_type' in row and row['rdf_type'] != 'http://www.w3.org/2000/01/rdf-schema#Class':
                     curie_anchor = row['pref_ns_prefix'] + "_" + row['term_localName']
                     text += '[' + row['label'] + '](#' + curie_anchor + ') |\n'
-            text = text[:len(text)-3] # remove final trailing " |\n"
-            text += '\n\n' # put back removed newline
+                    added_terms = True
+            if added_terms:
+                text = text[:len(text)-3] # remove final trailing " |\n"
+            else:
+                text += self.t('no_terms_organized_in_class') + '\n'
+            text += '\n\n'
 
         index_by_label = text
         print()
@@ -529,6 +541,19 @@ class TermList:
 
         qrg_df = pd.read_csv('qrg-template/qrg-list.csv', na_filter=False)
 
+        # --- DIAGNOSTIC CHECK for QRG terms not in terms list ---
+        available = set(self.terms.terms_sorted_by_localname['term_iri'])
+        requested = set(qrg_df['recommended_term_iri'])
+        
+        missing = sorted(requested - available)
+        
+        if missing:
+            print("Missing recommended_term_iri values:")
+            for iri in missing:
+                print(iri)
+            raise SystemExit("QRG term list contains IRIs not found in loaded term metadata.")
+        # --- END DIAGNOSTIC CHECK ---
+
         addedUseWithIRI = False
         for term_index,term in qrg_df.iterrows(): # sequence of the terms used as order
             term_data = self.get_term_definition(locale, term['recommended_term_iri'])
@@ -540,14 +565,19 @@ class TermList:
                 class_group = term_data
                 class_group["terms"] = []
                 in_class = term_data["label"] # check on the class working in
-            elif term_data['iri']=='http://rs.tdwg.org/dwc/iri/behavior':
-                # This is the first row of dwciri terms
-                # store previous section in template_data
+            elif ( term_data['iri'].startswith('http://rs.tdwg.org/dwc/iri/')
+                and not addedUseWithIRI):
                 template_data.append(class_group)
-                #start a class group for UseWithIRI
-                class_group = {"label":"UseWithIRI"}
-                class_group["terms"] = []
-                in_class = "UseWithIRI" # check on the class working in
+                class_group = {
+                    "label": "UseWithIRI",
+                    "iri": "http://rs.tdwg.org/dwc/terms/attributes/UseWithIRI",
+                    "class": None,
+                    "definition": None,
+                    "comments": None,
+                    "rdf_type": None,
+                    "namespace": "dwciri",
+                    "terms": []
+                }
                 addedUseWithIRI = True
                 class_group['terms'].append(term_data)
             else:
@@ -648,10 +678,90 @@ dwc_list = TermList(
     terms = dwc,
     vocabType = 1,
     organizedInCategories = True,
-    displayOrder = ['', 'http://purl.org/dc/elements/1.1/', 'http://purl.org/dc/terms/', 'http://rs.tdwg.org/dwc/terms/Occurrence', 'http://rs.tdwg.org/dwc/terms/Organism', 'http://rs.tdwg.org/dwc/terms/MaterialEntity', 'http://rs.tdwg.org/dwc/terms/MaterialSample', 'http://rs.tdwg.org/dwc/terms/Event', 'http://purl.org/dc/terms/Location', 'http://rs.tdwg.org/dwc/terms/GeologicalContext', 'http://rs.tdwg.org/dwc/terms/Identification', 'http://rs.tdwg.org/dwc/terms/Taxon', 'http://rs.tdwg.org/dwc/terms/MeasurementOrFact', 'http://rs.tdwg.org/dwc/terms/ResourceRelationship', 'http://rs.tdwg.org/dwc/terms/attributes/UseWithIRI'],
-    displayLabel = ['Record level', 'Dublin Core legacy namespace', 'Dublin Core terms namespace', 'Occurrence', 'Organism', 'Material Entity', 'Material Sample', 'Event', 'Location', 'Geological Context', 'Identification', 'Taxon', 'Measurement or Fact', 'Resource Relationship', 'IRI-value terms'],
-    displayComments = ['','','','','','','','','','','','','','',''],
-    displayId = ['record_level', 'dc', 'dcterms', 'occurrence', 'organism', 'material_entity', 'material_sample', 'event', 'location', 'geological_context', 'identification', 'taxon', 'measurement_or_fact', 'resource_relationship', 'use_with_iri']
+    displayOrder = [
+      '', 
+      'http://purl.org/dc/elements/1.1/', 
+      'http://purl.org/dc/terms/', 
+      'http://purl.org/dc/terms/Agent', 
+      'http://rs.tdwg.org/dwc/terms/Assertion', 
+      'http://purl.org/dc/terms/BibliographicResource', 
+      'http://rs.tdwg.org/dwc/terms/Event', 
+      'http://rs.tdwg.org/dwc/terms/GeologicalContext', 
+      'http://rs.tdwg.org/dwc/terms/Identification', 
+      'http://purl.org/dc/terms/Location', 
+      'http://rs.tdwg.org/dwc/terms/MaterialEntity', 
+      'http://rs.tdwg.org/dwc/terms/MaterialSample', 
+      'http://rs.tdwg.org/dwc/terms/MeasurementOrFact', 
+      'http://rs.tdwg.org/ac/terms/Media', 
+      'http://rs.tdwg.org/dwc/terms/MolecularProtocol', 
+      'http://rs.tdwg.org/dwc/terms/NucleotideAnalysis', 
+      'http://rs.tdwg.org/dwc/terms/NucleotideSequence', 
+      'http://rs.tdwg.org/dwc/terms/Occurrence', 
+      'http://rs.tdwg.org/dwc/terms/Organism', 
+      'http://rs.tdwg.org/dwc/terms/OrganismInteraction', 
+      'http://rs.tdwg.org/dwc/terms/Protocol', 
+      'http://rs.tdwg.org/dwc/terms/Provenance', 
+      'http://rs.tdwg.org/dwc/terms/ResourceRelationship', 
+      'http://rs.tdwg.org/dwc/terms/Taxon', 
+      'http://rs.tdwg.org/dwc/terms/UsagePolicy', 
+      'http://rs.tdwg.org/dwc/terms/attributes/UseWithIRI'
+      ],
+    displayLabel = [
+      'Record level', 
+      'Dublin Core legacy namespace', 
+      'Dublin Core terms namespace', 
+      'Agent', 
+      'Assertion', 
+      'Bibliographic Resource', 
+      'Event', 
+      'Geological Context', 
+      'Identification', 
+      'Location', 
+      'Material Entity', 
+      'Material Sample', 
+      'Measurement or Fact', 
+      'Media',
+      'Molecular Protocol',
+      'Nucleotide Analysis',
+      'Nucleotide Sequence',
+      'Occurrence', 
+      'Organism', 
+      'Organism Interaction', 
+      'Protocol', 
+      'Provenance', 
+      'Resource Relationship', 
+      'Taxon', 
+      'Usage Policy', 
+      'IRI-value terms'
+      ],
+    displayComments = ['','','','','','','','','','','','','','','','','','','','','','','','','',''],
+    displayId = [
+      'record_level', 
+      'dc', 
+      'dcterms', 
+      'agent', 
+      'assertion', 
+      'bibliographic_resource', 
+      'event', 
+      'geological_context', 
+      'identification', 
+      'location', 
+      'material_entity', 
+      'material_sample', 
+      'measurement_or_fact', 
+      'media',
+      'molecular_protocol',
+      'nucleotide_analysis',
+      'nucleotide_sequence',
+      'occurrence', 
+      'organism', 
+      'organism_interaction', 
+      'protocol', 
+      'provenance', 
+      'resource_relationship', 
+      'taxon', 
+      'usage_policy', 
+      'use_with_iri']
 )
 
 # Darwin Core Terms HTML

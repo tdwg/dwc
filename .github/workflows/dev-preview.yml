@@ -1,0 +1,55 @@
+name: Deploy dev preview pages
+
+on:
+  # Runs on pushes targeting this branch
+  push:
+    branches:
+      - 'dwc-changes-2026-05-26'
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "dev-preview"
+  cancel-in-progress: false
+
+jobs:
+  # Build job
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.12
+          cache: 'pip'
+          cache-dependency-path: build/requirements.txt
+      - name: Install dependencies
+        run: |
+          cd build && pip3 install -r requirements.txt
+      - name: Create Python-generated pages
+        run: |
+          cd build && python3 build-language-menu.py prod && python3 build-webpages.py --ghuser tucotuco --branch dwc-changes-2026-05-26
+
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./docs
+          destination: ./_site
+
+      - name: Deploy site to https://dwc-dev-preview.tdwg.org
+        run: |
+          mkdir -p ~/.ssh/
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_ed25519
+          chmod 0600 ~/.ssh/id_ed25519
+          echo "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+          rsync -rv --delete --checksum ./_site/ dwc-dev-preview@tdwgstatic-vh.tdwg.org:/
+        shell: bash
+        env:
+          SSH_PRIVATE_KEY: ${{secrets.DWC_DEV_PREVIEW_TDWG_ORG}}
+          SSH_KNOWN_HOSTS: ${{vars.SSH_KNOWN_HOSTS}}
