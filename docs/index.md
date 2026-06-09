@@ -13,12 +13,12 @@ Darwin Core is a standard for biodiversity data sharing maintained by the [Darwi
 - [Conceptual Model](cm/): classes of information and how they are related
 - [Normative term list](list/): full history of term definitions
 - Usage guides: 
-  - [Simple Darwin Core](simple/)
-  - [Text (Darwin Core Archive)](text/)
-  - [Data Package (Darwin Core Data Package)](dp/)
-  - [XML](xml/)
-  - [RDF](rdf/)
+    - [Simple Darwin Core](simple/)
+    - [Text (Darwin Core Archive)](text/)
+    - [Data Package (Darwin Core Data Package)](dp/)
+    - [XML](xml/)
+    - [RDF](rdf/)
 - [GitHub repository](https://github.com/tdwg/dwc): where Darwin Core is maintained
-  - [List of open issues](https://github.com/tdwg/dwc/issues)
-  - [List of open milestones](https://github.com/tdwg/dwc/milestones)
+    - [List of open issues](https://github.com/tdwg/dwc/issues)
+    - [List of open milestones](https://github.com/tdwg/dwc/milestones)
 - [Distribution files](https://github.com/tdwg/dwc/tree/master/dist): CSV files of lists of term names
