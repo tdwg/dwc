@@ -5,7 +5,7 @@ to create the terms/index.md file, which mostly contains html.
 
 # Guía de Referencia Rápida de Darwin Core
 
-This document is intended to be an easy-to-read reference of the currently recommended terms maintained as part of the [Darwin Core standard](https://www.tdwg.org/standards/dwc/) and is maintained by the [Darwin Core Maintenance Group](https://www.tdwg.org/community/dwc/).
+Este documento tiene como propósito servir como una referencia de fácil lectura de los términos actualmente recomendados, mantenidos como parte del [estándar Darwin Core](https://www.tdwg.org/standards/dwc/), y es mantenido por el [Grupo de Mantenimiento de Darwin Core](https://www.tdwg.org/community/dwc/).
 
 ¿Necesitas ayuda? Lee más sobre cómo usar Darwin Core en el [sitio de Preguntas & Respuestas del Darwin Core](https://github.com/tdwg/dwc-qa/blob/master/README.md). ¿Aún tienes preguntas? Envía una nueva consulta (pregunta o problema) a la [página de dwc-qa issues en GitHub](https://github.com/tdwg/dwc-qa/issues), o utiliza el [formulario correspondiente](https://tinyurl.com/darwin-qa). Consulta al final de este documento para saber [cómo citar Darwin Core](https://dwc.tdwg.org/terms/#cite-darwin-core).
 
@@ -43,7 +43,7 @@ Para más información sobre `UseWithIRI`, consulta la [Sección 2.5 de la Guía
     <tr class="table-primary"><th colspan="2">{{ class_group.label }} <span class="badge bg-primary float-end">Class</span></th></tr>
     <tr><td>Identificador</td><td><a href="{{ class_group.iri }}">{{ class_group.iri }}</a></td></tr>
     <tr><td>Definición</td><td>{{ class_group.definition }}</td></tr>
-    <tr><td>Notes</td><td>{{ class_group.comments }}</td></tr>
+    <tr><td>Notas</td><td>{{ class_group.comments }}</td></tr>
     <tr><td>Ejemplos</td><td>{% if examples | length == 1 %}{{ examples | first }}{% else %}<ul class="list-group list-group-flush">{% for example in examples %}<li class="list-group-item">{{ example }}</li>{% endfor %}</ul>{% endif %}</td></tr>
   </tbody>
 </table>
@@ -63,7 +63,7 @@ Para más información sobre `UseWithIRI`, consulta la [Sección 2.5 de la Guía
     <tr class="table-secondary"><th colspan="2">{{ term.label }}</th></tr>
     <tr><td>Identificador</td><td><a href="{{ term.iri }}">{{ term.iri }}</a></td></tr>
     <tr><td>Definición</td><td>{{ term.definition }}</td></tr>
-    <tr><td>Notes</td><td>{{ term.comments }}</td></tr>
+    <tr><td>Notas</td><td>{{ term.comments }}</td></tr>
     <tr><td>Ejemplos</td><td>{% if examples | length == 1 %}{{ examples | first }}{% else %}<ul class="list-group list-group-flush">{% for example in examples %}<li class="list-group-item">{{ example }}</li>{% endfor %}</ul>{% endif %}</td></tr>
   </tbody>
 </table>
