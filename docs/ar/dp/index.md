@@ -13,10 +13,10 @@ Part of TDWG Standard
 : <http://www.tdwg.org/standards/450>
 
 This version
-: <http://rs.tdwg.org/dwc/terms/guides/dp/2026-05-26>
+: <http://rs.tdwg.org/dwc/doc/dp/2026-05-26>
 
 Latest version
-: <http://rs.tdwg.org/dwc/terms/guides/dp/>
+: <http://rs.tdwg.org/dwc/doc/dp/>
 
 Abstract
 : Specification for creating a Darwin Core Data Package.
@@ -28,7 +28,7 @@ Creator
 : Darwin Core Maintenance Group
 
 Bibliographic citation
-: Darwin Core Maintenance Group. 2026. Darwin Core Data Package guide. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/terms/guides/dp/2026-05-26>
+: Darwin Core Maintenance Group. 2026. Darwin Core Data Package guide. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/dp/2026-05-26>
 
 [dp.v1]: https://specs.frictionlessdata.io/
 [dp.v2]: https://datapackage.org/
