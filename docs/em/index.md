@@ -202,7 +202,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_61">http://rs.tdwg.org/decisions/decision-2026-05-26_61</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -436,7 +436,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_61">http://rs.tdwg.org/decisions/decision-2026-05-26_61</a></td>
 		</tr>
 	</tbody>
 </table>
