@@ -36,7 +36,7 @@ Bibliografická citace
 
 Tento dokument obsahuje termíny, které jsou součástí nejnovější verze slovníku Darwin Core (<http://rs.tdwg.org/version/dwc/{ratification_date}>).
 
-Tento dokument obsahuje termíny ve čtyřech jmenných prostorech, které obsahují doporučené termíny: `dwc:`, `dwciri:`, `dc:` a `dcterms:`. Některé termíny v těchto jmenných prostorech jsou však zastaralé nebo překonané a neměly by se již používat. Vyřazení nebo nahrazení je uvedeno v metadatech termínu. Jmenné prostory, které obsahují pouze zastaralé termíny, nejsou v tomto dokumentu zahrnuty, ale metadata o těchto termínech lze získat dereferencováním jejich IRI.
+This document provides a comprehensive list of terms, from multiple namespaces, that have ever been recommended for use in Darwin Core. The status of some terms, as noted in their metadata, is deprecated or superseded and such terms should no longer be used. Terms from namespaces that contain only deprecated terms are not included in this document, but metadata about those terms can be retrieved by dereferencing their IRIs.
 
 Zjednodušený seznam, který obsahuje pouze aktuálně doporučené termíny, naleznete v [Stručná referenční příručka Darwin Core](../terms/).
 
@@ -58,6 +58,7 @@ V tomto dokumentu se používají následující zkratky jmenných prostorů:
 
 | zkratka                  | IRI                                                                              |
 | ------------------------ | -------------------------------------------------------------------------------- |
+| ac:      | http://rs.tdwg.org/ac/terms/     |
 | dwc:     | http://rs.tdwg.org/dwc/cs/terms/ |
 | dwciri:  | http://rs.tdwg.org/dwc/cs/iri/   |
 | dc:      | http://purl.org/dc/elements/1.1/ |
@@ -65,6 +66,6 @@ V tomto dokumentu se používají následující zkratky jmenných prostorů:
 
 ## 2 Použití termínů
 
-Vzhledem k požadavkům [oddílu 1.4.3 Průvodce Darwin Core RDF](../rdf/#143-use-of-darwin-core-terms-in-rdf-normative) se termíny ve jmenném prostoru `dwciri:` MUSÍ používat s hodnotami IRI. Od termínů ve jmenných prostorech `dwc:` a `dc:` se obecně očekává, že budou mít řetězcové literální hodnoty. Hodnoty termínů ve jmenném prostoru `dcterms:` závisí na podrobnostech termínu. Podrobnosti naleznete v [oddílu 3 Darwin Core RDF Guide](../rdf/#3-term-reference-normative).
+Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#143-use-of-darwin-core-terms-in-rdf-normative), properties in the `dwciri:` namespace MUST be used with IRI values. Properties in the `dwc:` and `dc:` namespaces are generally expected to have string literal values. Values for properties in the `dcterms:` namespace will depend on the details of the term. Podrobnosti naleznete v [oddílu 3 Darwin Core RDF Guide](../rdf/#3-term-reference-normative).
 
 ## 3 Indexy termínů
