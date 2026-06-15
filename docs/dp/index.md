@@ -389,6 +389,7 @@ A **field descriptor** describes a single field in a table schema (e.g., its nam
 {:.alert .alert-info}
 (non-normative) You will be guaranteed to meet the requirements for field descriptors by copying field descriptors directly from the table schemas provided at `rs.tdwg.org`.
 
+{:id="dwc-dp-tables"}
 ## 4. DwC-DP tables (non-normative)
 
 - **Reserved table names**: see the `enum` values for `dwc-dp-resource-names` in the Darwin Core Profile at http://rs.tdwg.org/dwc-dp/1.0/dwc-dp-profile.json
