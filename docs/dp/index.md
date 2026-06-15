@@ -22,7 +22,7 @@ Abstract
 : Specification for creating a Darwin Core Data Package.
 
 Contributors
-: [Peter Desmet](https://orcid.org/0000-0002-8442-8025) ([Instituut voor Natuur- en Bosonderzoek (INBO)](http://www.wikidata.org/entity/Q7315097)), [Tim Robertson](https://orcid.org/0000-0001-6215-3617) ([Global Biodiversity Information Facility](http://www.wikidata.org/entity/Q1531570)), [John Wieczorek](https://orcid.org/0000-0003-1144-0290) ([Rauthiflor LLC, Global Biodiversity Information Facility](http://www.wikidata.org/entity/Q1531570))
+: [Peter Desmet](https://orcid.org/0000-0002-8442-8025) ([Research Institute for Nature and Forest (INBO)](http://www.wikidata.org/entity/Q7315097)), [Tim Robertson](https://orcid.org/0000-0001-6215-3617) ([Global Biodiversity Information Facility](http://www.wikidata.org/entity/Q1531570)), [John Wieczorek](https://orcid.org/0000-0003-1144-0290) ([Rauthiflor LLC, Global Biodiversity Information Facility](http://www.wikidata.org/entity/Q1531570))
 
 Creator
 : Darwin Core Maintenance Group
@@ -79,6 +79,7 @@ All sections of this document are normative (define what is required to comply w
 
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [BCP 14](https://www.rfc-editor.org/info/bcp14) [\[RFC 2119\]](https://datatracker.ietf.org/doc/html/rfc2119) and [\[RFC 8174\]](https://datatracker.ietf.org/doc/html/rfc8174) when, and only when, they appear in all capitals, as shown here.
 
+{:id="example"}
 ## 2 DwC-DP Data Package example (non-normative)
 
 Consider a dataset containing four bird *Occurrences* observed during a single parent *Event*. The data can be captured in two CSV files, each representing a DwC-DP table:
@@ -389,6 +390,7 @@ A **field descriptor** describes a single field in a table schema (e.g., its nam
 {:.alert .alert-info}
 (non-normative) You will be guaranteed to meet the requirements for field descriptors by copying field descriptors directly from the table schemas provided at `rs.tdwg.org`.
 
+{:id="dwc-dp-tables"}
 ## 4. DwC-DP tables (non-normative)
 
 - **Reserved table names**: see the `enum` values for `dwc-dp-resource-names` in the Darwin Core Profile at http://rs.tdwg.org/dwc-dp/1.0/dwc-dp-profile.json
