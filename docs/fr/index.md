@@ -5,12 +5,20 @@ layout: home
 # Darwin Core
 
 {:.lead}
-Le Darwin Core est un standard maintenu par le [Darwin Core Maintenance Group](https://www.tdwg.org/standards/dwc/#maintenance-group). Il comprend un glossaire de termes (dans d'autres contextes, ces termes pourraient être appelés propriétés, éléments, champs, colonnes, attributs ou concepts) destinés à **faciliter le partage d'informations sur la diversité biologique** en fournissant des identifiants, des labels et des définitions. Le Darwin Core est principalement basé sur les taxons, leur occurrence dans la nature telle que documentée par des observations, des spécimens, des échantillons et des informations connexes.
+Darwin Core is a standard for biodiversity data sharing maintained by the [Darwin Core Maintenance Group](https://www.tdwg.org/standards/dwc/#maintenance-group). It includes a conceptual model, specifications and schemas for sharing via various data formats, and a glossary of terms (in other contexts these might be called properties, elements, fields, columns, attributes, or concepts) by providing identifiers, labels, and definitions.
 
 ## Pour commencer
 
-- [Guide de Référence Rapide](terms/)
-- Guides d'utilisation : Comment utiliser le Darwin Core comme [ Darwin Core Simple](simple/), [Texte (Darwin Core Archives)](text/), [XML](xml/) ou [RDF](rdf/)
+- [Quick Reference Guide](terms/): easy entry to term definitions
+- [Conceptual Model](cm/): classes of information and how they are related
+- [Normative term list](list/): full history of term definitions
+- Usage guides:
+  - [Simple Darwin Core](simple/)
+  - [Text (Darwin Core Archive)](text/)
+  - [Data Package (Darwin Core Data Package)](dp/)
+  - [XML](xml/)
+  - [RDF](rdf/)
 - [Dépôt GitHub](https://github.com/tdwg/dwc) : Lieu de maintenance du Darwin Core
-- [Liste des termes normatifs](list/) : le document contenant l'historique complet des définitions des termes du Darwin Core
-- [Fichiers de partage](https://github.com/tdwg/dwc/tree/master/dist): fichiers pratiques pour commencer à utiliser le Darwin Core
+  - [List of open issues](https://github.com/tdwg/dwc/issues)
+  - [List of open milestones](https://github.com/tdwg/dwc/milestones)
+- [Distribution files](https://github.com/tdwg/dwc/tree/master/dist): CSV files of lists of term names

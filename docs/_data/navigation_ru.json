@@ -60,30 +60,38 @@
         "text": "---"
       },
       {
-        "text": "Упрощенный Darwin Core",
+        "text": "",
+        "href": "/ru/cm/"
+      },
+      {
+        "text": "",
         "href": "/ru/simple/"
       },
       {
-        "text": "Текст (Darwin Core архив)",
+        "text": "",
         "href": "/ru/text/"
       },
       {
-        "text": "RDF",
+        "text": "",
+        "href": "/ru/dp/"
+      },
+      {
+        "text": "",
         "href": "/ru/rdf/"
       },
       {
-        "text": "XML",
+        "text": "",
         "href": "/ru/xml/"
       },
       {
-        "text": "Правила использования пространств имен",
+        "text": "",
         "href": "/ru/namespace/"
       },
       {
         "text": "---"
       },
       {
-        "text": "Вопросы и ответы",
+        "text": "",
         "href": "https://github.com/tdwg/dwc-qa/blob/master/README.md"
       }
     ]
