@@ -8815,7 +8815,8 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Examples</td>
 			<td><ul class="list-group list-group-flush">
-  <li class="list-group-item"><code>GeoLocate</code>, <code>GeoPick</code></li>
+  <li class="list-group-item"><code>GeoLocate</code></li>
+  <li class="list-group-item"><code>GeoPick</code></li>
   <li class="list-group-item"><code><a href="https://www.geonames.org/">https://www.geonames.org/</a></code></li>
   <li class="list-group-item"><code>USGS 1:24000 Florence Montana Quad 1967 | Terrametrics 2008 on Google Earth</code></li>
 </ul></td>
@@ -21801,8 +21802,8 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Examples</td>
 			<td><ul class="list-group list-group-flush">
-  <li class="list-group-item"><code>8fa58e08-08de-4ac1-b69c-1235340b7001</li>
-  <li class="list-group-item">32567</code></li>
+  <li class="list-group-item"><code>8fa58e08-08de-4ac1-b69c-1235340b7001</code></li>
+  <li class="list-group-item"><code>32567</code></li>
   <li class="list-group-item"><code><a href="https://www.gbif.org/species/212">https://www.gbif.org/species/212</a></code></li>
 </ul></td>
 		</tr>
@@ -22565,6 +22566,14 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Notes</td>
 			<td>This term is meant to allow the capture of an unaltered original name for a dwc:assertionType. This term is meant to be used in addition to dwc:assertionType, not instead of it.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>water_temp</code></li>
+  <li class="list-group-item"><code>Fish biomass</code></li>
+  <li class="list-group-item"><code>sampling net mesh size</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>

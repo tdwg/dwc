@@ -437,7 +437,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimAssertionType">http://rs.tdwg.org/dwc/terms/verbatimAssertionType</a></td></tr>
     <tr><td>Definition</td><td>A string representing the type of dwc:Assertion as it appeared in an original record.</td></tr>
     <tr><td>Notes</td><td>This term is meant to allow the capture of an unaltered original name for a dwc:assertionType. This term is meant to be used in addition to dwc:assertionType, not instead of it.</td></tr>
-    <tr><td>Examples</td><td></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>water_temp</code></li><li class="list-group-item"><code>Fish biomass</code></li><li class="list-group-item"><code>sampling net mesh size</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -1586,7 +1586,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/georeferenceSources">http://rs.tdwg.org/dwc/terms/georeferenceSources</a></td></tr>
     <tr><td>Definition</td><td>A list (concatenated and separated) of maps, gazetteers, or other resources used to georeference a dcterms:Location, described specifically enough to allow anyone in the future to use the same resources.</td></tr>
     <tr><td>Notes</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>GeoLocate</code>, <code>GeoPick</code></li><li class="list-group-item"><code><a href="https://www.geonames.org/">https://www.geonames.org/</a></code></li><li class="list-group-item"><code>USGS 1:24000 Florence Montana Quad 1967 | Terrametrics 2008 on Google Earth</code></li></ul></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>GeoLocate</code></li><li class="list-group-item"><code>GeoPick</code></li><li class="list-group-item"><code><a href="https://www.geonames.org/">https://www.geonames.org/</a></code></li><li class="list-group-item"><code>USGS 1:24000 Florence Montana Quad 1967 | Terrametrics 2008 on Google Earth</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -3532,7 +3532,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/taxonID">http://rs.tdwg.org/dwc/terms/taxonID</a></td></tr>
     <tr><td>Definition</td><td>An identifier for a dwc:Taxon.</td></tr>
     <tr><td>Notes</td><td></td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>8fa58e08-08de-4ac1-b69c-1235340b7001</li><li class="list-group-item">32567</code></li><li class="list-group-item"><code><a href="https://www.gbif.org/species/212">https://www.gbif.org/species/212</a></code></li></ul></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>8fa58e08-08de-4ac1-b69c-1235340b7001</code></li><li class="list-group-item"><code>32567</code></li><li class="list-group-item"><code><a href="https://www.gbif.org/species/212">https://www.gbif.org/species/212</a></code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
