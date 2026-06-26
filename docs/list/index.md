@@ -20603,7 +20603,7 @@ No properties are currently organized in this class.
   <li class="list-group-item"><code>Quercus agrifolia var. oxyadenia (Torr.) J.T. Howell</code> (genus + specificEpithet + taxonRank + infraspecificEpithet + scientificNameAuthorship)</li>
   <li class="list-group-item"><code>×Agropogon littoralis (Sm.) C. E. Hubb.</code></li>
   <li class="list-group-item"><code>Mentha ×smithiana R. A. Graham</code></li>
-  <li class="list-group-item">`Agrostis stolonifera L. × Polypogon monspeliensis (L.) Desf.</li>
+  <li class="list-group-item"><code>Agrostis stolonifera L. × Polypogon monspeliensis (L.) Desf.</code></li>
 </ul></td>
 		</tr>
 		<tr>
