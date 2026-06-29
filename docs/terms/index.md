@@ -24,8 +24,6 @@ This category contains terms that are generic in that they might apply to any ty
       <a class="btn btn-sm btn-outline-primary m-1" href="#dcterms:accessRights">accessRights</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dcterms:bibliographicCitation">bibliographicCitation</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dcterms:references">references</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:associatedMedia">associatedMedia</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:associatedReferences">associatedReferences</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:feedbackURL">feedbackURL</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:institutionID">institutionID</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:collectionID">collectionID</a>
@@ -143,32 +141,6 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Definition</td><td>A related resource that is referenced, cited, or otherwise pointed to by the described resource.</td></tr>
     <tr><td>Notes</td><td>From Dublin Core, "This property is intended to be used with non-literal values. This property is an inverse property of Is Referenced By." The intended usage of this term in Darwin Core is to point to the definitive source representation of the resource (e.g., dwc:Taxon, dwc:Occurrence, dwc:Event), if one is available. Note that the intended usage of dcterms:bibliographicCitation in Darwin Core, by contrast, is to provide the preferred way to cite the resource itself.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="http://arctos.database.museum/guid/MVZ:Mamm:165861">http://arctos.database.museum/guid/MVZ:Mamm:165861</a></code> (MaterialEntity example)</li><li class="list-group-item"><code><a href="https://www.catalogueoflife.org/data/taxon/32664">https://www.catalogueoflife.org/data/taxon/32664</a> (Taxon example)</code></li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:associatedMedia"></span>
-    <span id="associatedMedia"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">associatedMedia</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/associatedMedia">http://rs.tdwg.org/dwc/terms/associatedMedia</a></td></tr>
-    <tr><td>Definition</td><td>A list (concatenated and separated) of identifiers (publication, global unique identifier, URI) of media associated with the dwc:Occurrence.</td></tr>
-    <tr><td>Notes</td><td></td></tr>
-    <tr><td>Examples</td><td><code><a href="https://arctos.database.museum/media/10520962">https://arctos.database.museum/media/10520962</a> | <a href="https://arctos.database.museum/media/10520964">https://arctos.database.museum/media/10520964</a></code></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:associatedReferences"></span>
-    <span id="associatedReferences"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">associatedReferences</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/associatedReferences">http://rs.tdwg.org/dwc/terms/associatedReferences</a></td></tr>
-    <tr><td>Definition</td><td>A list (concatenated and separated) of identifiers (publication, bibliographic reference, global unique identifier, URI) of literature associated with the dwc:Occurrence.</td></tr>
-    <tr><td>Notes</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>). Note that the dwc:ResourceRelationship class is an alternative means of representing associations, and with more detail. Note also that the intended usage of the term dcterms:references in Darwin Core when applied to a dwc:Occurrence is to point to the definitive source representation of that dwc:Occurrence if one is available. Note also that the intended usage of dcterms:bibliographicCitation in Darwin Core when applied to a dwc:Occurrence is to provide the preferred way to cite the dwc:Occurrence itself.</td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="http://www.sciencemag.org/cgi/content/abstract/322/5899/261">http://www.sciencemag.org/cgi/content/abstract/322/5899/261</a></code></li><li class="list-group-item"><code>Christopher J. Conroy, Jennifer L. Neuwald. 2008. Phylogeographic study of the California vole, Microtus californicus Journal of Mammalogy, 89(3):755-767.</code></li><li class="list-group-item"><code>Steven R. Hoofer and Ronald A. Van Den Bussche. 2001. Phylogenetic Relationships of Plecotine Bats and Allies Based on Mitochondrial Ribosomal Sequences. Journal of Mammalogy 82(1):131-137. | Walker, Faith M., Jeffrey T. Foster, Kevin P. Drees, Carol L. Chambers. 2014. Spotted bat (Euderma maculatum) microsatellite discovery using illumina sequencing. Conservation Genetics Resources.</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -465,7 +437,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimAssertionType">http://rs.tdwg.org/dwc/terms/verbatimAssertionType</a></td></tr>
     <tr><td>Definition</td><td>A string representing the type of dwc:Assertion as it appeared in an original record.</td></tr>
     <tr><td>Notes</td><td>This term is meant to allow the capture of an unaltered original name for a dwc:assertionType. This term is meant to be used in addition to dwc:assertionType, not instead of it.</td></tr>
-    <tr><td>Examples</td><td></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>water_temp</code></li><li class="list-group-item"><code>Fish biomass</code></li><li class="list-group-item"><code>sampling net mesh size</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -662,18 +634,13 @@ This category contains terms that are generic in that they might apply to any ty
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:month">month</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:day">day</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimEventDate">verbatimEventDate</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimLocality">verbatimLocality</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimElevation">verbatimElevation</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimDepth">verbatimDepth</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimCoordinates">verbatimCoordinates</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimLatitude">verbatimLatitude</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimLongitude">verbatimLongitude</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimCoordinateSystem">verbatimCoordinateSystem</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimSRS">verbatimSRS</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:georeferenceVerificationStatus">georeferenceVerificationStatus</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:habitat">habitat</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:sampledSubstrateCategory">sampledSubstrateCategory</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:sampledSubstrateLayer">sampledSubstrateLayer</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:samplingProtocol">samplingProtocol</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:sampleSizeValue">sampleSizeValue</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:sampleSizeUnit">sampleSizeUnit</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:samplingEffort">samplingEffort</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:fieldNotes">fieldNotes</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:eventRemarks">eventRemarks</a>
   </div>
@@ -858,123 +825,6 @@ This category contains terms that are generic in that they might apply to any ty
   </tbody>
 </table>
 <p class="invisible">
-  <span id="dwc:verbatimLocality"></span>
-    <span id="verbatimLocality"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">verbatimLocality</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimLocality">http://rs.tdwg.org/dwc/terms/verbatimLocality</a></td></tr>
-    <tr><td>Definition</td><td>An original textual description of a dcterms:Location.</td></tr>
-    <tr><td>Notes</td><td></td></tr>
-    <tr><td>Examples</td><td><code>25 km NNE Bariloche por R. Nac. 237</code></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:verbatimElevation"></span>
-    <span id="verbatimElevation"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">verbatimElevation</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimElevation">http://rs.tdwg.org/dwc/terms/verbatimElevation</a></td></tr>
-    <tr><td>Definition</td><td>An original description of the elevation of a dcterms:Location.</td></tr>
-    <tr><td>Notes</td><td></td></tr>
-    <tr><td>Examples</td><td><code>100-200 m</code></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:verbatimDepth"></span>
-    <span id="verbatimDepth"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">verbatimDepth</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimDepth">http://rs.tdwg.org/dwc/terms/verbatimDepth</a></td></tr>
-    <tr><td>Definition</td><td>The original description of the depth below the local surface.</td></tr>
-    <tr><td>Notes</td><td></td></tr>
-    <tr><td>Examples</td><td><code>100-200 m</code></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:verbatimCoordinates"></span>
-    <span id="verbatimCoordinates"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">verbatimCoordinates</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimCoordinates">http://rs.tdwg.org/dwc/terms/verbatimCoordinates</a></td></tr>
-    <tr><td>Definition</td><td>Verbatim original spatial coordinates of a dcterms:Location.</td></tr>
-    <tr><td>Notes</td><td>The coordinate ellipsoid, geodeticDatum, or full Spatial Reference System (SRS) for these coordinates should be stored in dwc:verbatimSRS and the coordinate system should be stored in dwc:verbatimCoordinateSystem.</td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>41 05 54S 121 05 34W</code></li><li class="list-group-item"><code>17T 630000 4833400</code></li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:verbatimLatitude"></span>
-    <span id="verbatimLatitude"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">verbatimLatitude</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimLatitude">http://rs.tdwg.org/dwc/terms/verbatimLatitude</a></td></tr>
-    <tr><td>Definition</td><td>A verbatim original latitude of a dcterms:Location.</td></tr>
-    <tr><td>Notes</td><td>The coordinate ellipsoid, geodeticDatum, or full Spatial Reference System (SRS) for these coordinates should be stored in dwc:verbatimSRS and the coordinate system should be stored in dwc:verbatimCoordinateSystem.</td></tr>
-    <tr><td>Examples</td><td><code>41 05 54.03S</code></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:verbatimLongitude"></span>
-    <span id="verbatimLongitude"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">verbatimLongitude</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimLongitude">http://rs.tdwg.org/dwc/terms/verbatimLongitude</a></td></tr>
-    <tr><td>Definition</td><td>A verbatim original longitude of a dcterms:Location.</td></tr>
-    <tr><td>Notes</td><td>The coordinate ellipsoid, geodeticDatum, or full Spatial Reference System (SRS) for these coordinates should be stored in dwc:verbatimSRS and the coordinate system should be stored in dwc:verbatimCoordinateSystem.</td></tr>
-    <tr><td>Examples</td><td><code>121d 10' 34" W</code></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:verbatimCoordinateSystem"></span>
-    <span id="verbatimCoordinateSystem"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">verbatimCoordinateSystem</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimCoordinateSystem">http://rs.tdwg.org/dwc/terms/verbatimCoordinateSystem</a></td></tr>
-    <tr><td>Definition</td><td>A coordinate format for dwc:verbatimLatitude and dwc:verbatimLongitude or dwc:verbatimCoordinates.</td></tr>
-    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>decimal degrees</code></li><li class="list-group-item"><code>degrees decimal minutes</code></li><li class="list-group-item"><code>degrees minutes seconds</code></li><li class="list-group-item"><code>UTM</code></li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:verbatimSRS"></span>
-    <span id="verbatimSRS"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">verbatimSRS</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimSRS">http://rs.tdwg.org/dwc/terms/verbatimSRS</a></td></tr>
-    <tr><td>Definition</td><td>The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which coordinates given in dwc:verbatimLatitude and dwc:verbatimLongitude, or dwc:verbatimCoordinates are based.</td></tr>
-    <tr><td>Notes</td><td>Recommended best practice is to use the EPSG code of the SRS, if known. Otherwise use a controlled vocabulary for the name or code of the geodetic datum, if known. Otherwise use a controlled vocabulary for the name or code of the ellipsoid, if known. If none of these is known, use the value <code>not recorded</code>. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>EPSG:4326</code></li><li class="list-group-item"><code>WGS84</code></li><li class="list-group-item"><code>NAD27</code></li><li class="list-group-item"><code>Campo Inchauspe</code></li><li class="list-group-item"><code>European 1950</code></li><li class="list-group-item"><code>Clarke 1866</code></li><li class="list-group-item"><code>not recorded</code></li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:georeferenceVerificationStatus"></span>
-    <span id="georeferenceVerificationStatus"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">georeferenceVerificationStatus</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/georeferenceVerificationStatus">http://rs.tdwg.org/dwc/terms/georeferenceVerificationStatus</a></td></tr>
-    <tr><td>Definition</td><td>A categorical description of the extent to which the georeference has been verified to represent the best possible spatial description for the dcterms:Location of the dwc:Occurrence.</td></tr>
-    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>unable to georeference</code></li><li class="list-group-item"><code>requires georeference</code></li><li class="list-group-item"><code>requires verification</code></li><li class="list-group-item"><code>verified by data custodian</code></li><li class="list-group-item"><code>verified by contributor</code></li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
   <span id="dwc:habitat"></span>
     <span id="habitat"></span>
   </p>
@@ -1011,6 +861,58 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Definition</td><td>A list (concatenated and separated) of substrate layers sampled during a dwc:Event.</td></tr>
     <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary and separate the values in a list with space vertical bar space (<code> | </code>). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>forest floor</code></li><li class="list-group-item"><code>herbaceous | shrub</code></li><li class="list-group-item"><code>understory</code></li><li class="list-group-item"><code>canopy</code></li><li class="list-group-item"><code>organic (O)</code></li><li class="list-group-item"><code>surface (A)</code></li><li class="list-group-item"><code>eluviated (E)</code></li><li class="list-group-item"><code>subsoil (B)</code></li><li class="list-group-item"><code>parent material (C)</code></li><li class="list-group-item"><code>bedrock (R)</code></li><li class="list-group-item"><code>epipelagic | mesopelagic</code></li><li class="list-group-item"><code>bathypelagic</code></li><li class="list-group-item"><code>abysopelagic</code></li><li class="list-group-item"><code>hadalpelagic</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:samplingProtocol"></span>
+    <span id="samplingProtocol"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">samplingProtocol</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/samplingProtocol">http://rs.tdwg.org/dwc/terms/samplingProtocol</a></td></tr>
+    <tr><td>Definition</td><td>The names of, references to, or descriptions of the methods or protocols used during a dwc:Event.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to describe a dwc:Event with no more than one sampling protocol. In the case of a summary Event with multiple protocols, in which a specific protocol can not be attributed to specific dwc:Occurrences, the recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>UV light trap</code></li><li class="list-group-item"><code>mist net</code></li><li class="list-group-item"><code>bottom trawl</code></li><li class="list-group-item"><code>ad hoc observation | point count</code></li><li class="list-group-item"><code>Penguins from space: faecal stains reveal the location of emperor penguin colonies, <a href="https://doi.org/10.1111/j.1466-8238.2009.00467.x">https://doi.org/10.1111/j.1466-8238.2009.00467.x</a></code></li><li class="list-group-item"><code>Takats et al. 2001. Guidelines for Nocturnal Owl Monitoring in North America. Beaverhill Bird Observatory and Bird Studies Canada, Edmonton, Alberta. 32 pp., <a href="http://www.bsc-eoc.org/download/Owl.pdf">http://www.bsc-eoc.org/download/Owl.pdf</a></code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:sampleSizeValue"></span>
+    <span id="sampleSizeValue"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">sampleSizeValue</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/sampleSizeValue">http://rs.tdwg.org/dwc/terms/sampleSizeValue</a></td></tr>
+    <tr><td>Definition</td><td>A numeric value for a measurement of the size (time duration, length, area, or volume) of a sample in a sampling dwc:Event.</td></tr>
+    <tr><td>Notes</td><td>A dwc:sampleSizeValue must have a corresponding dwc:sampleSizeUnit.</td></tr>
+    <tr><td>Examples</td><td><code>5</code> (sampleSizeValue) with <code>metre</code> (sampleSizeUnit)</td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:sampleSizeUnit"></span>
+    <span id="sampleSizeUnit"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">sampleSizeUnit</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/sampleSizeUnit">http://rs.tdwg.org/dwc/terms/sampleSizeUnit</a></td></tr>
+    <tr><td>Definition</td><td>The unit of measurement of the size (time duration, length, area, or volume) of a sample in a sampling dwc:Event.</td></tr>
+    <tr><td>Notes</td><td>A dwc:sampleSizeUnit must have a corresponding dwc:sampleSizeValue, e.g., <code>5</code> for dwc:sampleSizeValue with <code>m</code> for dwc:sampleSizeUnit. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>minute</code></li><li class="list-group-item"><code>hour</code></li><li class="list-group-item"><code>day</code></li><li class="list-group-item"><code>metre</code></li><li class="list-group-item"><code>square metre</code></li><li class="list-group-item"><code>cubic metre</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:samplingEffort"></span>
+    <span id="samplingEffort"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">samplingEffort</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/samplingEffort">http://rs.tdwg.org/dwc/terms/samplingEffort</a></td></tr>
+    <tr><td>Definition</td><td>The amount of effort expended during a dwc:Event.</td></tr>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>40 trap-nights</code></li><li class="list-group-item"><code>10 observer-hours</code></li><li class="list-group-item"><code>10 km by foot</code></li><li class="list-group-item"><code>30 km by car</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -1058,11 +960,14 @@ This category contains terms that are generic in that they might apply to any ty
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:county">county</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:municipality">municipality</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:locality">locality</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimLocality">verbatimLocality</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:minimumElevationInMeters">minimumElevationInMeters</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:maximumElevationInMeters">maximumElevationInMeters</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimElevation">verbatimElevation</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verticalDatum">verticalDatum</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:minimumDepthInMeters">minimumDepthInMeters</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:maximumDepthInMeters">maximumDepthInMeters</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimDepth">verbatimDepth</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:minimumDistanceAboveSurfaceInMeters">minimumDistanceAboveSurfaceInMeters</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:maximumDistanceAboveSurfaceInMeters">maximumDistanceAboveSurfaceInMeters</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:locationAccordingTo">locationAccordingTo</a>
@@ -1074,6 +979,11 @@ This category contains terms that are generic in that they might apply to any ty
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:coordinateUncertaintyInMeters">coordinateUncertaintyInMeters</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:coordinatePrecision">coordinatePrecision</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:pointRadiusSpatialFit">pointRadiusSpatialFit</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimCoordinates">verbatimCoordinates</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimLatitude">verbatimLatitude</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimLongitude">verbatimLongitude</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimCoordinateSystem">verbatimCoordinateSystem</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimSRS">verbatimSRS</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:footprintWKT">footprintWKT</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:footprintSRS">footprintSRS</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:footprintSpatialFit">footprintSpatialFit</a>
@@ -1277,6 +1187,19 @@ This category contains terms that are generic in that they might apply to any ty
   </tbody>
 </table>
 <p class="invisible">
+  <span id="dwc:verbatimLocality"></span>
+    <span id="verbatimLocality"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">verbatimLocality</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimLocality">http://rs.tdwg.org/dwc/terms/verbatimLocality</a></td></tr>
+    <tr><td>Definition</td><td>An original textual description of a dcterms:Location.</td></tr>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td>Examples</td><td><code>25 km NNE Bariloche por R. Nac. 237</code></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
   <span id="dwc:minimumElevationInMeters"></span>
     <span id="minimumElevationInMeters"></span>
   </p>
@@ -1300,6 +1223,19 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Definition</td><td>The greatest elevation within a range of elevations, measured relative to the vertical reference surface indicated by the value of dwc:verticalDatum.</td></tr>
     <tr><td>Notes</td><td>See <a href="https://docs.gbif.org/georeferencing-best-practices/1.0/en/#img-depth-elevation-distance-above-surface">https://docs.gbif.org/georeferencing-best-practices/1.0/en/#img-depth-elevation-distance-above-surface</a>.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>-205</code></li><li class="list-group-item"><code>1236</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:verbatimElevation"></span>
+    <span id="verbatimElevation"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">verbatimElevation</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimElevation">http://rs.tdwg.org/dwc/terms/verbatimElevation</a></td></tr>
+    <tr><td>Definition</td><td>An original description of the elevation of a dcterms:Location.</td></tr>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td>Examples</td><td><code>100-200 m</code></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -1339,6 +1275,19 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Definition</td><td>The greatest depth within a range of depths, measured relative to the vertical reference surface indicated by the value of dwc:verticalDatum.</td></tr>
     <tr><td>Notes</td><td>See <a href="https://docs.gbif.org/georeferencing-best-practices/1.0/en/#img-depth-elevation-distance-above-surface">https://docs.gbif.org/georeferencing-best-practices/1.0/en/#img-depth-elevation-distance-above-surface</a>.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>0</code></li><li class="list-group-item"><code>200</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:verbatimDepth"></span>
+    <span id="verbatimDepth"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">verbatimDepth</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimDepth">http://rs.tdwg.org/dwc/terms/verbatimDepth</a></td></tr>
+    <tr><td>Definition</td><td>The original description of the depth below the local surface.</td></tr>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td>Examples</td><td><code>100-200 m</code></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -1485,6 +1434,71 @@ This category contains terms that are generic in that they might apply to any ty
   </tbody>
 </table>
 <p class="invisible">
+  <span id="dwc:verbatimCoordinates"></span>
+    <span id="verbatimCoordinates"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">verbatimCoordinates</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimCoordinates">http://rs.tdwg.org/dwc/terms/verbatimCoordinates</a></td></tr>
+    <tr><td>Definition</td><td>Verbatim original spatial coordinates of a dcterms:Location.</td></tr>
+    <tr><td>Notes</td><td>The coordinate ellipsoid, geodeticDatum, or full Spatial Reference System (SRS) for these coordinates should be stored in dwc:verbatimSRS and the coordinate system should be stored in dwc:verbatimCoordinateSystem.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>41 05 54S 121 05 34W</code></li><li class="list-group-item"><code>17T 630000 4833400</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:verbatimLatitude"></span>
+    <span id="verbatimLatitude"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">verbatimLatitude</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimLatitude">http://rs.tdwg.org/dwc/terms/verbatimLatitude</a></td></tr>
+    <tr><td>Definition</td><td>A verbatim original latitude of a dcterms:Location.</td></tr>
+    <tr><td>Notes</td><td>The coordinate ellipsoid, geodeticDatum, or full Spatial Reference System (SRS) for these coordinates should be stored in dwc:verbatimSRS and the coordinate system should be stored in dwc:verbatimCoordinateSystem.</td></tr>
+    <tr><td>Examples</td><td><code>41 05 54.03S</code></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:verbatimLongitude"></span>
+    <span id="verbatimLongitude"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">verbatimLongitude</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimLongitude">http://rs.tdwg.org/dwc/terms/verbatimLongitude</a></td></tr>
+    <tr><td>Definition</td><td>A verbatim original longitude of a dcterms:Location.</td></tr>
+    <tr><td>Notes</td><td>The coordinate ellipsoid, geodeticDatum, or full Spatial Reference System (SRS) for these coordinates should be stored in dwc:verbatimSRS and the coordinate system should be stored in dwc:verbatimCoordinateSystem.</td></tr>
+    <tr><td>Examples</td><td><code>121d 10' 34" W</code></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:verbatimCoordinateSystem"></span>
+    <span id="verbatimCoordinateSystem"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">verbatimCoordinateSystem</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimCoordinateSystem">http://rs.tdwg.org/dwc/terms/verbatimCoordinateSystem</a></td></tr>
+    <tr><td>Definition</td><td>A coordinate format for dwc:verbatimLatitude and dwc:verbatimLongitude or dwc:verbatimCoordinates.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>decimal degrees</code></li><li class="list-group-item"><code>degrees decimal minutes</code></li><li class="list-group-item"><code>degrees minutes seconds</code></li><li class="list-group-item"><code>UTM</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:verbatimSRS"></span>
+    <span id="verbatimSRS"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">verbatimSRS</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimSRS">http://rs.tdwg.org/dwc/terms/verbatimSRS</a></td></tr>
+    <tr><td>Definition</td><td>The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which coordinates given in dwc:verbatimLatitude and dwc:verbatimLongitude, or dwc:verbatimCoordinates are based.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use the EPSG code of the SRS, if known. Otherwise use a controlled vocabulary for the name or code of the geodetic datum, if known. Otherwise use a controlled vocabulary for the name or code of the ellipsoid, if known. If none of these is known, use the value <code>not recorded</code>. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>EPSG:4326</code></li><li class="list-group-item"><code>WGS84</code></li><li class="list-group-item"><code>NAD27</code></li><li class="list-group-item"><code>Campo Inchauspe</code></li><li class="list-group-item"><code>European 1950</code></li><li class="list-group-item"><code>Clarke 1866</code></li><li class="list-group-item"><code>not recorded</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
   <span id="dwc:footprintWKT"></span>
     <span id="footprintWKT"></span>
   </p>
@@ -1572,7 +1586,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/georeferenceSources">http://rs.tdwg.org/dwc/terms/georeferenceSources</a></td></tr>
     <tr><td>Definition</td><td>A list (concatenated and separated) of maps, gazetteers, or other resources used to georeference a dcterms:Location, described specifically enough to allow anyone in the future to use the same resources.</td></tr>
     <tr><td>Notes</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>GeoLocate</code>, <code>GeoPick</code></li><li class="list-group-item"><code><a href="https://www.geonames.org/">https://www.geonames.org/</a></code></li><li class="list-group-item"><code>USGS 1:24000 Florence Montana Quad 1967 | Terrametrics 2008 on Google Earth</code></li></ul></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>GeoLocate</code></li><li class="list-group-item"><code>GeoPick</code></li><li class="list-group-item"><code><a href="https://www.geonames.org/">https://www.geonames.org/</a></code></li><li class="list-group-item"><code>USGS 1:24000 Florence Montana Quad 1967 | Terrametrics 2008 on Google Earth</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2362,8 +2376,11 @@ This category contains terms that are generic in that they might apply to any ty
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:establishmentMeans">establishmentMeans</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:degreeOfEstablishment">degreeOfEstablishment</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:pathway">pathway</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:georeferenceVerificationStatus">georeferenceVerificationStatus</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:occurrenceStatus">occurrenceStatus</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:associatedMedia">associatedMedia</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:associatedOccurrences">associatedOccurrences</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:associatedReferences">associatedReferences</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:associatedTaxa">associatedTaxa</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:occurrenceRemarks">occurrenceRemarks</a>
   </div>
@@ -2574,6 +2591,19 @@ This category contains terms that are generic in that they might apply to any ty
   </tbody>
 </table>
 <p class="invisible">
+  <span id="dwc:georeferenceVerificationStatus"></span>
+    <span id="georeferenceVerificationStatus"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">georeferenceVerificationStatus</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/georeferenceVerificationStatus">http://rs.tdwg.org/dwc/terms/georeferenceVerificationStatus</a></td></tr>
+    <tr><td>Definition</td><td>A categorical description of the extent to which the georeference has been verified to represent the best possible spatial description for the dcterms:Location of the dwc:Occurrence.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>unable to georeference</code></li><li class="list-group-item"><code>requires georeference</code></li><li class="list-group-item"><code>requires verification</code></li><li class="list-group-item"><code>verified by data custodian</code></li><li class="list-group-item"><code>verified by contributor</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
   <span id="dwc:occurrenceStatus"></span>
     <span id="occurrenceStatus"></span>
   </p>
@@ -2587,6 +2617,19 @@ This category contains terms that are generic in that they might apply to any ty
   </tbody>
 </table>
 <p class="invisible">
+  <span id="dwc:associatedMedia"></span>
+    <span id="associatedMedia"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">associatedMedia</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/associatedMedia">http://rs.tdwg.org/dwc/terms/associatedMedia</a></td></tr>
+    <tr><td>Definition</td><td>A list (concatenated and separated) of identifiers (publication, global unique identifier, URI) of media associated with the dwc:Occurrence.</td></tr>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td>Examples</td><td><code><a href="https://arctos.database.museum/media/10520962">https://arctos.database.museum/media/10520962</a> | <a href="https://arctos.database.museum/media/10520964">https://arctos.database.museum/media/10520964</a></code></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
   <span id="dwc:associatedOccurrences"></span>
     <span id="associatedOccurrences"></span>
   </p>
@@ -2597,6 +2640,19 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Definition</td><td>A list (concatenated and separated) of identifiers of other dwc:Occurrence records and their associations to this dwc:Occurrence.</td></tr>
     <tr><td>Notes</td><td>This term can be used to provide a list of associations to other dwc:Occurrences. Note that the dwc:ResourceRelationship class is an alternative means of representing associations, and with more detail. Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>"parasite collected from":"<a href="https://arctos.database.museum/guid/MSB:Mamm:215895?seid=950760">https://arctos.database.museum/guid/MSB:Mamm:215895?seid=950760</a>"</code></li><li class="list-group-item"><code>"encounter previous to":"<a href="http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3175067">http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3175067</a>" | "encounter previous to":"<a href="http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3177393">http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3177393</a>" | "encounter previous to":"<a href="http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3177394">http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3177394</a>" | "encounter previous to":"<a href="http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3177392">http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3177392</a>" | "encounter previous to":"<a href="http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3609139">http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3609139</a>"</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:associatedReferences"></span>
+    <span id="associatedReferences"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">associatedReferences</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/associatedReferences">http://rs.tdwg.org/dwc/terms/associatedReferences</a></td></tr>
+    <tr><td>Definition</td><td>A list (concatenated and separated) of identifiers (publication, bibliographic reference, global unique identifier, URI) of literature associated with the dwc:Occurrence.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>). Note that the dwc:ResourceRelationship class is an alternative means of representing associations, and with more detail. Note also that the intended usage of the term dcterms:references in Darwin Core when applied to a dwc:Occurrence is to point to the definitive source representation of that dwc:Occurrence if one is available. Note also that the intended usage of dcterms:bibliographicCitation in Darwin Core when applied to a dwc:Occurrence is to provide the preferred way to cite the dwc:Occurrence itself.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="http://www.sciencemag.org/cgi/content/abstract/322/5899/261">http://www.sciencemag.org/cgi/content/abstract/322/5899/261</a></code></li><li class="list-group-item"><code>Christopher J. Conroy, Jennifer L. Neuwald. 2008. Phylogeographic study of the California vole, Microtus californicus Journal of Mammalogy, 89(3):755-767.</code></li><li class="list-group-item"><code>Steven R. Hoofer and Ronald A. Van Den Bussche. 2001. Phylogenetic Relationships of Plecotine Bats and Allies Based on Mitochondrial Ribosomal Sequences. Journal of Mammalogy 82(1):131-137. | Walker, Faith M., Jeffrey T. Foster, Kevin P. Drees, Carol L. Chambers. 2014. Spotted bat (Euderma maculatum) microsatellite discovery using illumina sequencing. Conservation Genetics Resources.</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -3128,6 +3184,7 @@ This category contains terms that are generic in that they might apply to any ty
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:protocolID">protocolID</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:protocolType">protocolType</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:protocolDescription">protocolDescription</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:protocolReferences">protocolReferences</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:protocolRemarks">protocolRemarks</a>
   </div>
 
@@ -3178,6 +3235,19 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Definition</td><td>A detailed description of a dwc:Protocol.</td></tr>
     <tr><td>Notes</td><td></td></tr>
     <tr><td>Examples</td><td><code>Georeference following Zermoglio et al. 2020 (<a href="https://doi.org/10.35035/e09p-h128">https://doi.org/10.35035/e09p-h128</a>), using GeoPick (<a href="https://geopick.gbif.org/">https://geopick.gbif.org/</a>) for named place determinations and Georeferencing Calculator (<a href="https://github.com/VertNet/georefcalculator">https://github.com/VertNet/georefcalculator</a>) for complex uncertainties.</code></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:protocolReferences"></span>
+    <span id="protocolReferences"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">protocolReferences</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/protocolReferences">http://rs.tdwg.org/dwc/terms/protocolReferences</a></td></tr>
+    <tr><td>Definition</td><td>A list (concatenated and separated) of dcterms:BibliographicResources used in a dwc:Protocol.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to separate multiple values in a list with space vertical bar space (<code> | </code>).</td></tr>
+    <tr><td>Examples</td><td><code>Penguins from space: faecal stains reveal the location of emperor penguin colonies, <a href="https://doi.org/10.1111/j.1466-8238.2009.00467.x">https://doi.org/10.1111/j.1466-8238.2009.00467.x</a></code></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -3462,7 +3532,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/taxonID">http://rs.tdwg.org/dwc/terms/taxonID</a></td></tr>
     <tr><td>Definition</td><td>An identifier for a dwc:Taxon.</td></tr>
     <tr><td>Notes</td><td></td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>8fa58e08-08de-4ac1-b69c-1235340b7001</li><li class="list-group-item">32567</code></li><li class="list-group-item"><code><a href="https://www.gbif.org/species/212">https://www.gbif.org/species/212</a></code></li></ul></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>8fa58e08-08de-4ac1-b69c-1235340b7001</code></li><li class="list-group-item"><code>32567</code></li><li class="list-group-item"><code><a href="https://www.gbif.org/species/212">https://www.gbif.org/species/212</a></code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -3566,7 +3636,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/scientificName">http://rs.tdwg.org/dwc/terms/scientificName</a></td></tr>
     <tr><td>Definition</td><td>The full scientific name, with authorship and date information if known. When forming part of a dwc:Identification, this should be the name in lowest level taxonomic rank that can be determined.</td></tr>
     <tr><td>Notes</td><td>This term should not contain identification qualifications, which should instead be supplied in the IdentificationQualifier term. When applied to an Organism or Occurrence, this term should be used to represent the scientific name that was applied to the associated Organism in accordance with the Taxon to which it was or is currently identified. Names should be compliant to the most recent nomenclatural code. For example, names of hybrids for algae, fungi and plants should follow the rules of the International Code of Nomenclature for algae, fungi, and plants (Shenzhen Code Articles H.1, H.2 and H.3). Thus, use the multiplication sign <code>×</code> (Unicode <code>U+00D7</code>, HTML <code>&times;</code>) to identify a hybrid, not <code>x</code> or <code>X</code>, if possible.</td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Coleoptera</code> (order)</li><li class="list-group-item"><code>Vespertilionidae</code> (family)</li><li class="list-group-item"><code>Manis</code> (genus)</li><li class="list-group-item"><code>Ctenomys sociabilis</code> (genus + specificEpithet)</li><li class="list-group-item"><code>Ambystoma tigrinum diaboli</code> (genus + specificEpithet + infraspecificEpithet)</li><li class="list-group-item"><code>Roptrocerus typographi (Györfi, 1952)</code> (genus + specificEpithet + scientificNameAuthorship)</li><li class="list-group-item"><code>Quercus agrifolia var. oxyadenia (Torr.) J.T. Howell</code> (genus + specificEpithet + taxonRank + infraspecificEpithet + scientificNameAuthorship)</li><li class="list-group-item"><code>×Agropogon littoralis (Sm.) C. E. Hubb.</code></li><li class="list-group-item"><code>Mentha ×smithiana R. A. Graham</code></li><li class="list-group-item">`Agrostis stolonifera L. × Polypogon monspeliensis (L.) Desf.</li></ul></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Coleoptera</code> (order)</li><li class="list-group-item"><code>Vespertilionidae</code> (family)</li><li class="list-group-item"><code>Manis</code> (genus)</li><li class="list-group-item"><code>Ctenomys sociabilis</code> (genus + specificEpithet)</li><li class="list-group-item"><code>Ambystoma tigrinum diaboli</code> (genus + specificEpithet + infraspecificEpithet)</li><li class="list-group-item"><code>Roptrocerus typographi (Györfi, 1952)</code> (genus + specificEpithet + scientificNameAuthorship)</li><li class="list-group-item"><code>Quercus agrifolia var. oxyadenia (Torr.) J.T. Howell</code> (genus + specificEpithet + taxonRank + infraspecificEpithet + scientificNameAuthorship)</li><li class="list-group-item"><code>×Agropogon littoralis (Sm.) C. E. Hubb.</code></li><li class="list-group-item"><code>Mentha ×smithiana R. A. Graham</code></li><li class="list-group-item"><code>Agrostis stolonifera L. × Polypogon monspeliensis (L.) Desf.</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -4092,6 +4162,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:caste">caste</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:dataGeneralizations">dataGeneralizations</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:degreeOfEstablishment">degreeOfEstablishment</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:discipline">discipline</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:disposition">disposition</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:earliestGeochronologicalEra">earliestGeochronologicalEra</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:establishmentMeans">establishmentMeans</a>
@@ -4101,8 +4172,8 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:fieldNumber">fieldNumber</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:footprintSRS">footprintSRS</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:footprintWKT">footprintWKT</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:fundingAttribution">fundingAttribution</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:fromLithostratigraphicUnit">fromLithostratigraphicUnit</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:fundingAttribution">fundingAttribution</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:geodeticDatum">geodeticDatum</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:georeferencedBy">georeferencedBy</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:georeferenceProtocol">georeferenceProtocol</a>
@@ -4128,6 +4199,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:measurementType">measurementType</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:measurementUnit">measurementUnit</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:measurementValue">measurementValue</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:objectQuantityType">objectQuantityType</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:occurrenceStatus">occurrenceStatus</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:organismInteractionType">organismInteractionType</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:organismQuantityType">organismQuantityType</a>
@@ -4265,6 +4337,18 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
   </tbody>
 </table>
 <p class="invisible">
+  <span id="dwciri:discipline"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">discipline</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/discipline">http://rs.tdwg.org/dwc/iri/discipline</a></td></tr>
+    <tr><td>Definition</td><td>The primary branch or branches of knowledge represented by the record.</td></tr>
+    <tr><td>Notes</td><td>This term can be used to classify records according to branches of knowledge. Recommended best practice is to use a controlled vocabulary. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
   <span id="dwciri:disposition"></span>
   </p>
 <table class="table">
@@ -4373,18 +4457,6 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
   </tbody>
 </table>
 <p class="invisible">
-  <span id="dwciri:fundingAttribution"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">fundingAttribution</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/fundingAttribution">http://rs.tdwg.org/dwc/iri/fundingAttribution</a></td></tr>
-    <tr><td>Definition</td><td>An organization or agency that provided funding for a project.</td></tr>
-    <tr><td>Notes</td><td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
-    <tr><td>Examples</td><td></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
   <span id="dwciri:fromLithostratigraphicUnit"></span>
   </p>
 <table class="table">
@@ -4393,6 +4465,18 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/fromLithostratigraphicUnit">http://rs.tdwg.org/dwc/iri/fromLithostratigraphicUnit</a></td></tr>
     <tr><td>Definition</td><td>Use to link a dwc:GeologicalContext instance to an IRI-identified lithostratigraphic unit at the lowest possible level in a hierarchy.</td></tr>
     <tr><td>Notes</td><td>Recommended best practice is to use an IRI from a controlled vocabulary. A "convenience property" that replaces Darwin Core literal-value terms related to geological context. See Section 2.7.7 of the Darwin Core RDF Guide for details.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwciri:fundingAttribution"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">fundingAttribution</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/fundingAttribution">http://rs.tdwg.org/dwc/iri/fundingAttribution</a></td></tr>
+    <tr><td>Definition</td><td>An organization or agency that provided funding for a project.</td></tr>
+    <tr><td>Notes</td><td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
@@ -4695,6 +4779,18 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr><td>Definition</td><td>The value of the measurement, fact, characteristic, or assertion.</td></tr>
     <tr><td>Notes</td><td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td><code><a href="http://vocab.nerc.ac.uk/collection/L22/current/TOOL0960/">http://vocab.nerc.ac.uk/collection/L22/current/TOOL0960/</a></code></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwciri:objectQuantityType"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">objectQuantityType</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/objectQuantityType">http://rs.tdwg.org/dwc/iri/objectQuantityType</a></td></tr>
+    <tr><td>Definition</td><td>The type of quantification system used for the quantity of dwc:MaterialEntities.</td></tr>
+    <tr><td>Notes</td><td>An dwc:objectQuantityType must have a corresponding dwc:objectQuantity. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
 <p class="invisible">
