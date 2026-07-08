@@ -14,7 +14,9 @@ assignees: ''
 * Efficacy Justification (why is this term necessary?): 
 * Demand Justification (name at least two organizations that independently need this term): 
 * Stability Justification (what concerns are there that this might affect existing implementations?): 
-* Implications for dwciri: namespace (does this change affect a dwciri term version)?: 
+* Implications for Darwin Core Archive schemas (which XML schemas would require changes)?
+* Implications for Darwin Core DP schemas (which JSON table schemas would require changes)?
+* Implications for IRI namespaces (does this change affect an IRI term version)?: 
 
 Proposed attributes of the new term:
 
