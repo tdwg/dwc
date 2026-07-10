@@ -42,6 +42,10 @@ There are several related term proposals that clarify how values should be provi
 
 Two terms that were ratified recently had value recommendations that were not usable. The proposal in [issue 925](https://github.com/tdwg/dwc/issues/925) corrects that problem.
 
-### 2.5 Remaining issues not falling in the previous categories
+### 2.5 Organization of Humboldt extension terms within new classes.
 
-The remaining issues not included in the categories above can be filtered using [this link](https://github.com/tdwg/dwc/issues?q=is%3Aissue%20state%3Aopen%20milestone%3A%22First%20post-DwC-DP%20release%22%20-parent-issue%3Atdwg%2Fdwc%23900%20-parent-issue%3Atdwg%2Fdwc%23901%20-parent-issue%3Atdwg%2Fdwc%23902%20-parent-issue%3Atdwg%2Fdwc%23903).
+Previously, all Humboldt extension terms were organized within the dwc:Event class. However, for use with DwC-DP, it is better to organize them within classes so that they make sense when used with DwC-DP. The [umbrella issue 933](https://github.com/tdwg/dwc/issues/933) contains subissues organizing Humboldt terms accordingly.
+
+### 2.6 Remaining issues not falling in the previous categories
+
+The remaining issues not included in the categories above can be filtered using [this link](https://github.com/tdwg/dwc/issues?q=is%3Aissue%20state%3Aopen%20milestone%3A%22First%20post-DwC-DP%20release%22%20-parent-issue%3Atdwg%2Fdwc%23900%20-parent-issue%3Atdwg%2Fdwc%23901%20-parent-issue%3Atdwg%2Fdwc%23902%20-parent-issue%3Atdwg%2Fdwc%23903%20-parent-issue%3Atdwg%2Fdwc%23933)
