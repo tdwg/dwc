@@ -2,13 +2,13 @@
 
 ## 1 Introduction
 
-This is the first public review that is part of a three-times-per-year update and release cycle for the Darwin Core Standard. It follows the change procedures established by the [TDWG Vocabulary Maintenance Specification](http://rs.tdwg.org/vms/doc/specification/). 
+This is the first public review that is part of a three-times-per-year update and release cycle for the Darwin Core Standard. It follows the change procedures established in the [TDWG Vocabulary Maintenance Specification](http://rs.tdwg.org/vms/doc/specification/). 
 
 ### 1.1 Timeline
 
 The public review will consist of 30 days of active discussion during which the proposed changes may be modified, followed by a 30 day period with no dissenting opinion. Any proposals for which consensus is reached during the first 30 day discussion period will be included in this release cycle. Those proposals for which dissent and discussion continues beyond the first 30 day period will be considered for the following release cycle. 
 
-It is anticipated that changes achieving consensus in this cycle will be published in early October 2026, subject to Executive Committee ratification, with public review for the next cycle beginning in early November.
+It is anticipated that changes achieving consensus in this cycle will be published in early October 2026, subject to Executive Committee ratification of the changes, with public review for the next cycle beginning in early November.
 
 ### 1.2 Categories of changes included in this review
 
@@ -16,13 +16,13 @@ Because of the extended review of the Darwin Core Data Package (DwC-DP) and Conc
 
 ### 1.3 How to participate
 
-Each proposed change is described in an issue in the Darwin Core GitHub issues tracker. To participate in the discussion of a proposed change, enter a comment in the issue for that change. The Darwin Core Maintenance Group will monitor the discussion and work with the community and those who created the proposals to modify the proposals in a way that achieves consensus. 
+Each proposed change is described in an issue in the Darwin Core GitHub issues tracker. To participate in the discussion of a proposed change, enter a comment in the issue for that change. The Darwin Core Maintenance Group will monitor the discussion and work with the community and those who created the proposals to modify the proposals in a way that achieves consensus. If you have any questions about the review, contact the Darwin Core Maintenance Group convener at [steve.baskauf@gmail.com](mailto:steve.baskauf@gmail.com) or any [member of the Maintenance Group](https://www.tdwg.org/community/dwc/). 
 
 ## 2 Proposed changes by category
 
 To make it easier to find and comment on issues of relevance to different parts of the community, similar issues have been grouped under categorical umbrella issues linked in the following sections. To view all issues under consideration during this cycle without categorization, see the [First post-DwC-DP release milestone](https://github.com/tdwg/dwc/issues?q=is%3Aissue%20state%3Aopen%20milestone%3A%22First%20post-DwC-DP%20release%22).
 
-Note: some [issues in this milestone are only related to document maintenance](https://github.com/tdwg/dwc/issues/902) and do not include proposals for comment. 
+Note: some [issues in this milestone are only related to document maintenance](https://github.com/tdwg/dwc/issues/902) and do not include proposals that require public comment. 
 
 ### 2.1 Mineralogy extension term proposals
 
