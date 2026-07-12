@@ -26,7 +26,11 @@ Note: some [issues in this milestone are only related to document maintenance](h
 
 ### 2.1 Mineralogy extension term proposals
 
-There are a number of term addition proposals that have been made as a result of the Mineralogy Task Group's work over the past several years. To better understand the rationale and testing of their proposed extension, see their [user feedback and implementation experience report](https://docs.google.com/document/d/1SaX-MOtBA_JNdnoz8b-cwpUYswu48qogLFxVqO4BYeo/edit?usp=sharing). The terms that have been proposed to be added to Darwin Core to support the Mineralogy extension have been grouped under the umbrella [issue 900](https://github.com/tdwg/dwc/issues/900).
+There are a number of term addition proposals that have been made as a result of the work of the [Mineralogy Extension Task Group](https://www.tdwg.org/community/esp/mineralogy/) over the past several years. Although the extension primarily serves earth science collections, several of its terms have broader applicability across botanical and zoological collections. Reviewers from all disciplines are therefore encouraged to comment. 
+
+The part of the Task Group's work included in this review consists only of term additions to Darwin Core. Other aspects of the Task Group's work (such as controlled vocabularies and guides) are not included in this review but may be proposed in future reviews. The terms that are currently proposed to be added to Darwin Core to support the Mineralogy extension have been grouped under the umbrella [issue 900](https://github.com/tdwg/dwc/issues/900).
+
+The Task Group has prepared a [user feedback and implementation experience report](https://docs.google.com/document/d/1SaX-MOtBA_JNdnoz8b-cwpUYswu48qogLFxVqO4BYeo/edit?usp=sharing) that provides background on how they established the scope of their work and describes implementation testing. Please note that that term names, IRIs, and metadata given in the report may differ from what is proposed here, since the report reflects the state of their work at the time of testing.  
 
 ### 2.2 Initial Darwin Core Data Package (DwC-DP) schemas
 
