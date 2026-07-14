@@ -6,7 +6,7 @@ This is the first public review that is part of a three-times-per-year update an
 
 ### 1.1 Timeline
 
-The public review will consist of 30 days of active discussion during which the proposed changes may be modified, followed by a 30 day period with no dissenting opinion. Any proposals for which consensus is reached during the first 30 day discussion period will be included in this release cycle. Those proposals for which dissent and discussion continues beyond the first 30 day period will be considered for the following release cycle. 
+The public review will consist of 30 days (16 July - 15 August) of active discussion during which the proposed changes may be modified, followed by a 30 day period (16 August - 15 September) with no dissenting opinion. Any proposals for which consensus is reached during the first 30 day discussion period will be included in this release cycle. Those proposals for which dissent and discussion continues beyond the first 30 day period will be considered for the following release cycle. 
 
 It is anticipated that changes achieving consensus in this cycle will be published in early October 2026, subject to Executive Committee ratification of the changes, with public review for the next cycle beginning in early November.
 
