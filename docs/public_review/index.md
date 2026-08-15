@@ -40,11 +40,11 @@ The schemas are linked to [issue 903](https://github.com/tdwg/dwc/issues/903). G
 
 ### 2.3 Guidance for values of Humboldt vocabulary terms having boolean values
 
-There are several related term proposals that clarify how values should be provided for terms in the Humboldt vocabulary for ecological inventories. They are grouped in [issue 901](https://github.com/tdwg/dwc/issues/901)
+Term proposals with this concern have been listed under the [Organization of Humboldt extension terms within new classes](https://github.com/tdwg/dwc/issues/933), since they generally share that concern as well.
 
 ### 2.4 Corrections to terms related to units
 
-Two terms that were ratified recently had value recommendations that were not usable. The proposal in [issue 925](https://github.com/tdwg/dwc/issues/925) corrects that problem.
+This issue [issue 925](https://github.com/tdwg/dwc/issues/925) has been deferred to the next review cycle due to unresolved concerns.
 
 ### 2.5 Organization of Humboldt extension terms within new classes.
 
@@ -52,4 +52,4 @@ Previously, all Humboldt extension terms were organized within the dwc:Event cla
 
 ### 2.6 Remaining issues not falling in the previous categories
 
-The remaining issues not included in the categories above can be filtered using [this link](https://github.com/tdwg/dwc/issues?q=is%3Aissue%20state%3Aopen%20milestone%3A%22First%20post-DwC-DP%20release%22%20-parent-issue%3Atdwg%2Fdwc%23900%20-parent-issue%3Atdwg%2Fdwc%23901%20-parent-issue%3Atdwg%2Fdwc%23902%20-parent-issue%3Atdwg%2Fdwc%23903%20-parent-issue%3Atdwg%2Fdwc%23933)
+The remaining issues not included in the categories above can be filtered using [this link](https://github.com/tdwg/dwc/issues?q=is%3Aissue%20state%3Aopen%20milestone%3A%22First%20post-DwC-DP%20release%22%20-parent-issue%3Atdwg%2Fdwc%23900%20-parent-issue%3Atdwg%2Fdwc%23902%20-parent-issue%3Atdwg%2Fdwc%23903%20-parent-issue%3Atdwg%2Fdwc%23933)
