@@ -30,6 +30,8 @@ Creator
 Bibliographic citation
 : Darwin Core Maintenance Group. 2026. Darwin Core Schemas. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/schemas/2026-xx-xx>
 
+*Note: hyperlinks to schema tables, profiles, and table schemas will be added when the document is published.*
+
 ## 1 Introduction
 
 The Darwin Core Maintenance Group manages a collection of schemas used to support the exchange of biodiversity data through Darwin Core Archives (DwC-A) and Darwin Core Data Packages (DwC-DP).
@@ -70,4 +72,4 @@ Each version of DwC-DP consists of a Frictionless Data [1] profile listing the a
 
 ## 5 References
 
-- [1] https://frictionlessdata.io/
+- [1] <https://frictionlessdata.io/>
