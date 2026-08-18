@@ -60,30 +60,38 @@
         "text": "---"
       },
       {
-        "text": "簡易達爾文核心標準",
+        "text": "",
+        "href": "/zh-Hant/cm/"
+      },
+      {
+        "text": "",
         "href": "/zh-Hant/simple/"
       },
       {
-        "text": "純文字 (達爾文核心標準檔案)",
+        "text": "",
         "href": "/zh-Hant/text/"
       },
       {
-        "text": "RDF",
+        "text": "",
+        "href": "/zh-Hant/dp/"
+      },
+      {
+        "text": "",
         "href": "/zh-Hant/rdf/"
       },
       {
-        "text": "XML",
+        "text": "",
         "href": "/zh-Hant/xml/"
       },
       {
-        "text": "命名空間政策",
+        "text": "",
         "href": "/zh-Hant/namespace/"
       },
       {
         "text": "---"
       },
       {
-        "text": "問與答",
+        "text": "",
         "href": "https://github.com/tdwg/dwc-qa/blob/master/README.md"
       }
     ]

@@ -5,7 +5,7 @@ to create the terms/index.md file, which mostly contains html.
 
 # 達爾文核心標準快速參考指南
 
-本文件旨在作為易於閱讀的參考指南，收錄截至2023年9月18日現行推薦術語，這些術語作為[達爾文核心標準](https://www.tdwg.org/standards/dwc/)的一部分，且由[達爾文核心標準維護小組](https://www.tdwg.org/community/dwc/)維護。
+This document is intended to be an easy-to-read reference of the currently recommended terms maintained as part of the [Darwin Core standard](https://www.tdwg.org/standards/dwc/) and is maintained by the [Darwin Core Maintenance Group](https://www.tdwg.org/community/dwc/).
 
 **需要協助嗎？** 欲進一步瞭解如何使用達爾文核心標準，請參閱[達爾文核心標準問答網站](https://github.com/tdwg/dwc-qa/blob/master/README.md)。 仍有疑問？ 請將新問題（疑問/狀況）提交至 [GitHub 上的 dwc-qa 問題頁面](https://github.com/tdwg/dwc-qa/issues)，或使用 [表單](https://tinyurl.com/darwin-qa)。 請參閱本文件末尾的[如何引用達爾文核心標準](https://dwc.tdwg.org/terms/#cite-darwin-core)。
 
@@ -17,7 +17,7 @@ to create the terms/index.md file, which mostly contains html.
 
 {% for class_group in class_groups %}
 
-## {{ class_group.label }}
+<h2 id="{{ class_group.label | lower }}">{{ class_group.label }}</h2>
 
 {% if class_group.isRecordLevel %}
 此類別包含通用術語，這些術語可能適用於資料集中的任何類型記錄。
@@ -25,12 +25,14 @@ to create the terms/index.md file, which mostly contains html.
 {% if class_group.label == 'UseWithIRI' %}
 有關 「UseWithIRI」的詳細資訊，請參閱 [RDF 指南第 2.5 節](https://dwc.tdwg.org/rdf/#25-terms-in-the-dwciri-namespace-normative)。
 {% endif %}
+{% if class_group.terms | length > 0 %}
 
 <div class="my-4">
   {% for term in class_group.terms %}
     <a class="btn btn-sm btn-outline-primary m-1" href="#{{ term.namespace }}:{{ term.label }}">{{ term.label }}</a>
   {% endfor %}
 </div>
+{% endif %}
 
 {% if not class_group.isRecordLevel and class_group.label != 'UseWithIRI' %}
 {# Class #}
@@ -41,7 +43,7 @@ to create the terms/index.md file, which mostly contains html.
     <tr class="table-primary"><th colspan="2">{{ class_group.label }} <span class="badge bg-primary float-end">類別</span></th></tr>
     <tr><td>識別碼</td><td><a href="{{ class_group.iri }}">{{ class_group.iri }}</a></td></tr>
     <tr><td>定義</td><td>{{ class_group.definition }}</td></tr>
-    <tr><td>註釋</td><td>{{ class_group.comments }}</td></tr>
+    <tr><td>Notes</td><td>{{ class_group.comments }}</td></tr>
     <tr><td>範例</td><td>{% if examples | length == 1 %}{{ examples | first }}{% else %}<ul class="list-group list-group-flush">{% for example in examples %}<li class="list-group-item">{{ example }}</li>{% endfor %}</ul>{% endif %}</td></tr>
   </tbody>
 </table>
@@ -61,7 +63,7 @@ to create the terms/index.md file, which mostly contains html.
     <tr class="table-secondary"><th colspan="2">{{ term.label }}</th></tr>
     <tr><td>識別碼</td><td><a href="{{ term.iri }}">{{ term.iri }}</a></td></tr>
     <tr><td>定義</td><td>{{ term.definition }}</td></tr>
-    <tr><td>註釋</td><td>{{ term.comments }}</td></tr>
+    <tr><td>Notes</td><td>{{ term.comments }}</td></tr>
     <tr><td>範例</td><td>{% if examples | length == 1 %}{{ examples | first }}{% else %}<ul class="list-group list-group-flush">{% for example in examples %}<li class="list-group-item">{{ example }}</li>{% endfor %}</ul>{% endif %}</td></tr>
   </tbody>
 </table>
@@ -69,16 +71,41 @@ to create the terms/index.md file, which mostly contains html.
 
 {% endfor %}
 
-## 引用達爾文核心標準
+<h2 id="cite-darwin-core">引用達爾文核心標準</h2>
 
-要引用達爾文核心標準的一般資訊，請參照經同行評審的達爾文核心標準文件：
+<p>要引用達爾文核心標準的一般資訊，請參照經同行評審的達爾文核心標準文件：</p>
 
-> Wieczorek J, Bloom D, Guralnick R, Blum S, Döring M, et al. (2012) Darwin Core: An Evolving Community-Developed Biodiversity Data Standard. PLoS ONE 7(1): e29715. <https://doi.org/10.1371/journal.pone.0029715>
+<blockquote>
+  <p>
+    Wieczorek J, Bloom D, Guralnick R, Blum S, Döring M, et al. (2012)
+    Darwin Core: An Evolving Community-Developed Biodiversity Data Standard.
+    PLoS ONE 7(1): e29715.
+    <a href="https://doi.org/10.1371/journal.pone.0029715">
+      https://doi.org/10.1371/journal.pone.0029715
+    </a>  
+</p>
+</blockquote>
 
-若要引用本頁所依據的標準文件，請使用以下格式：
+<p>若要引用本頁所依據的標準文件，請使用以下格式：</p>
 
-> Darwin Core Maintenance Group. 2021. List of Darwin Core terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/list/>
+<blockquote>
+  <p>
+    Darwin Core Maintenance Group. 2021. List of Darwin Core terms.
+    Biodiversity Information Standards (TDWG).
+    <a href="http://rs.tdwg.org/dwc/doc/list/">
+      http://rs.tdwg.org/dwc/doc/list/
+    </a>  
+</p>
+</blockquote>
 
-如需具體引用本文件，請使用以下格式：
+<p>如需具體引用本文件，請使用以下格式：</p>
 
-> Darwin Core Maintenance Group. 2021. Darwin Core Quick Reference Guide. Biodiversity Information Standards (TDWG). <https://dwc.tdwg.org/terms/>
+<blockquote>
+  <p>
+    Darwin Core Maintenance Group. 2021. Darwin Core Quick Reference Guide.
+    Biodiversity Information Standards (TDWG).
+    <a href="https://dwc.tdwg.org/terms/">
+      https://dwc.tdwg.org/terms/
+    </a>  
+</p>
+</blockquote>

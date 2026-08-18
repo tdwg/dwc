@@ -60,30 +60,38 @@
         "text": "---"
       },
       {
-        "text": "Simple Darwin Core",
+        "text": "",
+        "href": "/fr/cm/"
+      },
+      {
+        "text": "",
         "href": "/fr/simple/"
       },
       {
-        "text": "Texte (Archive Darwin Core)",
+        "text": "",
         "href": "/fr/text/"
       },
       {
-        "text": "RDF",
+        "text": "",
+        "href": "/fr/dp/"
+      },
+      {
+        "text": "",
         "href": "/fr/rdf/"
       },
       {
-        "text": "XML",
+        "text": "",
         "href": "/fr/xml/"
       },
       {
-        "text": "Politique des espaces de nom",
+        "text": "",
         "href": "/fr/namespace/"
       },
       {
         "text": "---"
       },
       {
-        "text": "Questions & Réponses",
+        "text": "",
         "href": "https://github.com/tdwg/dwc-qa/blob/master/README.md"
       }
     ]
