@@ -118,7 +118,12 @@ class DwcTerms:
             # retrieve current term metadata for term list
             metadata_url = self.githubBaseUri + term_list['database'] + '/' + term_list['database'] + '.csv'
             print("Reading metadata", metadata_url)
-            metadata_df = pd.read_csv(metadata_url, keep_default_na=False)
+            # dtype=str: term_localName is a merge key below and is used with the .str
+            # accessor when sorting, so it must stay a string. Without this, a term list
+            # whose local names are all digits (e.g. MIxS, which identifies samp_name as
+            # https://w3id.org/mixs/0001107) is read as int64, losing the leading zeros
+            # and breaking the term_iri concatenation.
+            metadata_df = pd.read_csv(metadata_url, keep_default_na=False, dtype=str)
             #print('metadata_df', metadata_df)
             metadata_df = metadata_df.assign(pref_ns_prefix=term_list['pref_ns_prefix'],
                                              pref_ns_uri=term_list['pref_ns_uri'],
@@ -129,7 +134,7 @@ class DwcTerms:
             # retrieve versions metadata for term list
             versions_url = self.githubBaseUri + term_list['database'] + '-versions/' + term_list['database'] + '-versions.csv'
             print("Reading versions", versions_url)
-            versions_df = pd.read_csv(versions_url, na_filter=False)
+            versions_df = pd.read_csv(versions_url, na_filter=False, dtype=str)
             versions_df = versions_df.query('version_status == "recommended"')
             #print("Vrec\n", versions_df)
             versions_df = versions_df[['term_localName', 'version', 'version_status']]
@@ -147,7 +152,7 @@ class DwcTerms:
             translations_url = self.githubBaseUri + term_list['database'] + '/' + term_list['database'] + '-translations.csv'
             print("Reading translated metadata", translations_url)
             try:
-                translations_df = pd.read_csv(translations_url, keep_default_na=False)
+                translations_df = pd.read_csv(translations_url, keep_default_na=False, dtype=str)
                 metadata_df = pd.merge(metadata_df, translations_df,
                                        on='term_localName',
                                        how='left')
