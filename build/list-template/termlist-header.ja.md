@@ -37,7 +37,7 @@ TDWG標準での該当箇所
 
 本文書には、Darwin Core 語彙の最新バージョン（<http://rs.tdwg.org/version/dwc/{ratification_date}>）の用語が含まれています。
 
-この文書は、推奨される用語を含む以下の4つの名前空間の用語で構成されています： `dwc:`、`dwciri:`、`dc:`、 `dcterms:`。 しかし、これらの名前空間に含まれる一部の用語は、廃止されたか、別の用語に置き換えられており、使用すべきではありません。 廃止や置換については、用語のメタデータに記載されています。 廃止された用語のみを含む名前空間はこの文書では取り扱っていませんが、それらの用語に関するメタデータは、IRI を参照することで取得できます。
+This document provides a comprehensive list of terms, from multiple namespaces, that have ever been recommended for use in Darwin Core. The status of some terms, as noted in their metadata, is deprecated or superseded and such terms should no longer be used. Terms from namespaces that contain only deprecated terms are not included in this document, but metadata about those terms can be retrieved by dereferencing their IRIs.
 
 現在推奨されている用語のみの簡易な一覧は、[Darwin Core クイックリファレンスガイド](../terms/) をご覧ください。
 
@@ -59,6 +59,7 @@ TDWG標準での該当箇所
 
 | 略語                       | IRI                                                                              |
 | ------------------------ | -------------------------------------------------------------------------------- |
+| ac:      | http://rs.tdwg.org/ac/terms/     |
 | dwc:     | http://rs.tdwg.org/dwc/terms/    |
 | dwciri:  | http://rs.tdwg.org/dwc/iri/      |
 | dc:      | http://purl.org/dc/elements/1.1/ |
@@ -66,6 +67,6 @@ TDWG標準での該当箇所
 
 ## 2 用語の使い方
 
-[Darwin Core RDF ガイドのセクション 1.4.3](../rdf/#143-use-of-darwin-core-terms-in-rdf-normative) の要件により、 `dwciri:` 名前空間の用語は、IRI値と共に使用しなければなりません（MUST）。 `dwc:` と `dc:` 名前空間の用語は通常、文字列リテラル値を持つことを想定されています。 `dcterms:` 名前空間の用語の値は、用語の詳細により異なります。 詳細は [Darwin Core RDF ガイドのセクション 3](../rdf/#3-term-reference-normative) をご覧ください。
+Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#143-use-of-darwin-core-terms-in-rdf-normative), properties in the `dwciri:` namespace MUST be used with IRI values. Properties in the `dwc:` and `dc:` namespaces are generally expected to have string literal values. Values for properties in the `dcterms:` namespace will depend on the details of the term. 詳細は [Darwin Core RDF ガイドのセクション 3](../rdf/#3-term-reference-normative) をご覧ください。
 
 ## 3 用語の索引

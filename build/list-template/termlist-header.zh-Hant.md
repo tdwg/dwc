@@ -34,7 +34,7 @@
 
 本文件包含的術語是達爾文核心標準詞彙 (<http://rs.tdwg.org/version/dwc/{ratification_date}>) 最新版本的一部分。
 
-本文件包含四個命名空間中的術語，這些命名空間包含推薦的術語：`dwc:`、`dwciri:`、`dc:`和`dcterms:`。 但是，這些命名空間中的某些術語已被廢棄或取代，不應再使用。 詞彙的詮釋資料會註明已廢棄或已取代。 本文件不包含只有已廢棄術語的命名空間，但可以透過取消參照其 IRI 來檢索這些術語的詮釋資料。
+This document provides a comprehensive list of terms, from multiple namespaces, that have ever been recommended for use in Darwin Core. The status of some terms, as noted in their metadata, is deprecated or superseded and such terms should no longer be used. Terms from namespaces that contain only deprecated terms are not included in this document, but metadata about those terms can be retrieved by dereferencing their IRIs.
 
 如需只包含目前推薦術語的簡化清單，請參閱 [達爾文核心標準快速參考指南](../terms/)。
 
@@ -56,6 +56,7 @@
 
 | 縮寫                       | IRI                                                                              |
 | ------------------------ | -------------------------------------------------------------------------------- |
+| ac:      | http://rs.tdwg.org/ac/terms/     |
 | dwc:     | http://rs.tdwg.org/dwc/terms/    |
 | dwciri:  | http://rs.tdwg.org/dwc/iri/      |
 | dc:      | http://purl.org/dc/elements/1.1/ |
@@ -63,6 +64,6 @@
 
 ## 2 使用條款
 
-根據[《達爾文核心標準 RDF 指南》第 1.4.3 節](../rdf/#143-use-of-darwin-core-terms-in-rdf-normative) 的規範要求，`dwciri:` 命名空間中的術語必須搭配 IRI 值使用。 `dwc:` 和 `dc:` 命名空間中的術語通常應有字串文字值。 `dcterms:` 命名空間中術語的值將取決於該術語的具體細節。 詳情請參閱[達爾文核心 RDF 指南第 3 節](../rdf/#3-term-reference-normative)。
+Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#143-use-of-darwin-core-terms-in-rdf-normative), properties in the `dwciri:` namespace MUST be used with IRI values. Properties in the `dwc:` and `dc:` namespaces are generally expected to have string literal values. Values for properties in the `dcterms:` namespace will depend on the details of the term. 詳情請參閱[達爾文核心 RDF 指南第 3 節](../rdf/#3-term-reference-normative)。
 
 ## 3 術語索引

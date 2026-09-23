@@ -5,7 +5,7 @@ to create the terms/index.md file, which mostly contains html.
 
 # Guide de Référence Rapide du Darwin Core
 
-Ce document se veut une référence facile à lire des termes actuellement (au 2023-09-18) recommandés dans le cadre du [standard Darwin Core](https://www.tdwg.org/standards/dwc/) et est maintenu par le [Groupe de maintenance du Darwin Core](https://www.tdwg.org/community/dwc/).
+This document is intended to be an easy-to-read reference of the currently recommended terms maintained as part of the [Darwin Core standard](https://www.tdwg.org/standards/dwc/) and is maintained by the [Darwin Core Maintenance Group](https://www.tdwg.org/community/dwc/).
 
 **Besoin d'aide ?** Pour en savoir plus sur l'utilisation du Darwin Core, consultez le [site de questions et réponses sur le Darwin Core](https://github.com/tdwg/dwc-qa/blob/master/README.md). Vous avez d'autres questions ? Soumettez un nouveau sujet (question/problème) à la [page des demandes dwc-qa sur GitHub](https://github.com/tdwg/dwc-qa/issues), ou utilisez le [formulaire](https://tinyurl.com/darwin-qa). Voir au bas de ce document [comment citer le Darwin Core](https://dwc.tdwg.org/terms/#cite-darwin-core)."
 
@@ -17,7 +17,7 @@ Des [fichiers supplémentaires contenant uniquement les noms des termes actuels]
 
 {% for class_group in class_groups %}
 
-## {{ class_group.label }}
+<h2 id="{{ class_group.label | lower }}">{{ class_group.label }}</h2>
 
 {% if class_group.isRecordLevel %}
 Cette catégorie contient des termes génériques qui peuvent s'appliquer à n'importe quel type d'enregistrement dans un jeu de données.
@@ -25,12 +25,14 @@ Cette catégorie contient des termes génériques qui peuvent s'appliquer à n'i
 {% if class_group.label == 'UseWithIRI' %}
 Pour plus d'information sur `UseWithIRI`, voir la [Section 2.5 du Guide RDF](https://dwc.tdwg.org/rdf/#25-terms-in-the-dwciri-namespace-normative).
 {% endif %}
+{% if class_group.terms | length > 0 %}
 
 <div class="my-4">
   {% for term in class_group.terms %}
     <a class="btn btn-sm btn-outline-primary m-1" href="#{{ term.namespace }}:{{ term.label }}">{{ term.label }}</a>
   {% endfor %}
 </div>
+{% endif %}
 
 {% if not class_group.isRecordLevel and class_group.label != 'UseWithIRI' %}
 {# Class #}
@@ -41,7 +43,7 @@ Pour plus d'information sur `UseWithIRI`, voir la [Section 2.5 du Guide RDF](htt
     <tr class="table-primary"><th colspan="2">{{ class_group.label }} <span class="badge bg-primary float-end">Classe</span></th></tr>
     <tr><td>Identifiant</td><td><a href="{{ class_group.iri }}">{{ class_group.iri }}</a></td></tr>
     <tr><td>Définition</td><td>{{ class_group.definition }}</td></tr>
-    <tr><td>Commentaires</td><td>{{ class_group.comments }}</td></tr>
+    <tr><td>Notes</td><td>{{ class_group.comments }}</td></tr>
     <tr><td>Exemples</td><td>{% if examples | length == 1 %}{{ examples | first }}{% else %}<ul class="list-group list-group-flush">{% for example in examples %}<li class="list-group-item">{{ example }}</li>{% endfor %}</ul>{% endif %}</td></tr>
   </tbody>
 </table>
@@ -61,7 +63,7 @@ Pour plus d'information sur `UseWithIRI`, voir la [Section 2.5 du Guide RDF](htt
     <tr class="table-secondary"><th colspan="2">{{ term.label }}</th></tr>
     <tr><td>Identifiant</td><td><a href="{{ term.iri }}">{{ term.iri }}</a></td></tr>
     <tr><td>Définition</td><td>{{ term.definition }}</td></tr>
-    <tr><td>Commentaires</td><td>{{ term.comments }}</td></tr>
+    <tr><td>Notes</td><td>{{ term.comments }}</td></tr>
     <tr><td>Exemples</td><td>{% if examples | length == 1 %}{{ examples | first }}{% else %}<ul class="list-group list-group-flush">{% for example in examples %}<li class="list-group-item">{{ example }}</li>{% endfor %}</ul>{% endif %}</td></tr>
   </tbody>
 </table>
@@ -69,16 +71,41 @@ Pour plus d'information sur `UseWithIRI`, voir la [Section 2.5 du Guide RDF](htt
 
 {% endfor %}
 
-## Citer le Darwin Core
+<h2 id="cite-darwin-core">Citer le Darwin Core</h2>
 
-Pour citer le Darwin Core en général, veuillez utiliser l'article revu par les pairs suivant :
+<p>Pour citer le Darwin Core en général, veuillez utiliser l'article revu par les pairs suivant :</p>
 
-> Wieczorek J, Bloom D, Guralnick R, Blum S, Döring M, et al. (2012) Darwin Core: An Evolving Community-Developed Biodiversity Data Standard. PLoS ONE 7(1): e29715. <https://doi.org/10.1371/journal.pone.0029715>
+<blockquote>
+  <p>
+    Wieczorek J, Bloom D, Guralnick R, Blum S, Döring M, et al. (2012)
+    Darwin Core: An Evolving Community-Developed Biodiversity Data Standard.
+    PLoS ONE 7(1): e29715.
+    <a href="https://doi.org/10.1371/journal.pone.0029715">
+      https://doi.org/10.1371/journal.pone.0029715
+    </a>  
+</p>
+</blockquote>
 
-Pour citer le document du standard sur lequel cette page est construite, utilisez ce qui suit :
+<p>Pour citer le document du standard sur lequel cette page est construite, utilisez ce qui suit :</p>
 
-> Darwin Core Maintenance Group. 2021. List of Darwin Core terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/list/>
+<blockquote>
+  <p>
+    Darwin Core Maintenance Group. 2021. List of Darwin Core terms.
+    Biodiversity Information Standards (TDWG).
+    <a href="http://rs.tdwg.org/dwc/doc/list/">
+      http://rs.tdwg.org/dwc/doc/list/
+    </a>  
+</p>
+</blockquote>
 
-Pour citer expressément ce document, utilisez la référence suivante :
+<p>Pour citer expressément ce document, utilisez la référence suivante :</p>
 
-> Darwin Core Maintenance Group. 2021. Darwin Core Quick Reference Guide. Biodiversity Information Standards (TDWG). <https://dwc.tdwg.org/terms/>
+<blockquote>
+  <p>
+    Darwin Core Maintenance Group. 2021. Darwin Core Quick Reference Guide.
+    Biodiversity Information Standards (TDWG).
+    <a href="https://dwc.tdwg.org/terms/">
+      https://dwc.tdwg.org/terms/
+    </a>  
+</p>
+</blockquote>

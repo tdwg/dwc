@@ -60,12 +60,20 @@
         "text": "---"
       },
       {
-        "text": "Darwin Core Simple",
+        "text": "Modelo conceptual",
+        "href": "/es/cm/"
+      },
+      {
+        "text": "Darwin Core simple",
         "href": "/es/simple/"
       },
       {
-        "text": "Texto (Archivo Darwin Core)",
+        "text": "Texto (archivo Darwin Core)",
         "href": "/es/text/"
+      },
+      {
+        "text": "Data Package (Darwin Core Data Package)",
+        "href": "/es/dp/"
       },
       {
         "text": "RDF",
@@ -76,14 +84,14 @@
         "href": "/es/xml/"
       },
       {
-        "text": "Política de Espacio de nombres",
+        "text": "Política de espacios de nombres",
         "href": "/es/namespace/"
       },
       {
         "text": "---"
       },
       {
-        "text": "Preguntas y respuestas",
+        "text": "Preguntas & respuestas",
         "href": "https://github.com/tdwg/dwc-qa/blob/master/README.md"
       }
     ]

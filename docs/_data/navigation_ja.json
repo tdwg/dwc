@@ -60,31 +60,39 @@
         "text": "---"
       },
       {
-        "text": "シンプルな Darwin Core",
+        "text": "",
+        "href": "/ja/cm/"
+      },
+      {
+        "text": "",
         "href": "/ja/simple/"
       },
       {
-        "text": "テキスト (Darwin Core Archive)",
+        "text": "",
         "href": "/ja/text/"
       },
       {
-        "text": "RDF",
+        "text": "",
+        "href": "/ja/dp/"
+      },
+      {
+        "text": "",
         "href": "/ja/rdf/"
       },
       {
-        "text": "XML",
+        "text": "",
         "href": "/ja/xml/"
       },
       {
-        "text": "名前空間ポリシー",
+        "text": "",
         "href": "/ja/namespace/"
       },
       {
         "text": "---"
       },
       {
-        "text": "質問と回答",
-        "href": ""
+        "text": "",
+        "href": "https://github.com/tdwg/dwc-qa/blob/master/README.md"
       }
     ]
   },
