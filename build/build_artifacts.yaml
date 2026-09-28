@@ -1,0 +1,428 @@
+# Authoritative source repository for term and document metadata.
+# Set local_path to an rs.tdwg.org checkout for local/offline builds; otherwise
+# github_user and github_branch identify the remote rs.tdwg.org source.
+source_repository:
+  github_user: tdwg
+  github_branch: master
+  local_path: null
+
+# Named collections of term databases used by generated products. A collection
+# identifies participating databases; recommendation/deprecation status is still
+# determined from the term metadata itself.
+term_sources:
+  # Complete source population for the combined Darwin Core List of Terms and
+  # products derived from that same population, including term_versions.csv.
+  darwin_core_list:
+  - terms
+  - iri
+  - dc-for-dwc
+  - dcterms-for-dwc
+  - ac-for-dwc
+  - chronometricage
+  - chronoiri
+  - humboldt
+  - humboldt_iri
+
+# Complete version history. Current participating databases are taken from
+# term_sources.darwin_core_list; only additional historical databases belong here.
+term_versions:
+  output: vocabulary/term_versions.csv
+  term_source_collection: darwin_core_list
+  historical_term_lists:
+  - curatorial
+  - dwcore
+  - dwctype
+  - geospatial
+  obsolete_terms:
+    versions: dwc-obsolete-versions/dwc-obsolete-versions.csv
+    term_version_map: dwc-obsolete/dwc-obsolete-versions.csv
+# Locales generated for localized term-list documents and the QRG.
+languages:
+- en
+- ar
+- cs
+- de
+- es
+- fr
+- ja
+- ko
+- pt
+- ru
+- zh-Hant
+# Machine-readable Darwin Core artifacts. Each source declares both the term
+# databases it consumes and the document metadata governing that artifact.
+artifacts:
+- name: Darwin Core Occurrence Core
+  update: true
+  type: core
+  source:
+    term_lists:
+    - terms
+    - dc-for-dwc
+    - dcterms-for-dwc
+    - ac-for-dwc
+    - humboldt
+    document_metadata_path: dwc_doc_list/
+  template: dwca_template/occurrence_core.tmpl
+  term_list: dwca_template/occurrence_core_list.csv
+  output: dwca/core/dwc_occurrence_
+  relation_style: qrg
+- name: Darwin Core Taxon Core
+  update: true
+  type: core
+  source:
+    term_lists:
+    - terms
+    - dc-for-dwc
+    - dcterms-for-dwc
+    - ac-for-dwc
+    document_metadata_path: dwc_doc_list/
+  template: dwca_template/taxon_core.tmpl
+  term_list: dwca_template/taxon_core_list.csv
+  output: dwca/core/dwc_taxon_
+  relation_style: qrg
+- name: Darwin Core Event Core
+  update: true
+  type: core
+  source:
+    term_lists:
+    - terms
+    - dc-for-dwc
+    - dcterms-for-dwc
+    - ac-for-dwc
+    - humboldt
+    document_metadata_path: dwc_doc_list/
+  template: dwca_template/event_core.tmpl
+  term_list: dwca_template/event_core_list.csv
+  output: dwca/core/dwc_event_
+  relation_style: qrg
+- name: Darwin Core Resource Relationship extension
+  update: true
+  type: extension
+  source:
+    term_lists:
+    - terms
+    - dc-for-dwc
+    - dcterms-for-dwc
+    - ac-for-dwc
+    document_metadata_path: dwc_doc_list/
+  template: dwca_template/resource_relationship.tmpl
+  term_list: dwca_template/resource_relationship_list.csv
+  output: dwca/extension/resource_relationship_
+  relation_style: qrg
+- name: Darwin Core Measurements or Facts extension
+  update: true
+  type: extension
+  source:
+    term_lists:
+    - terms
+    - dc-for-dwc
+    - dcterms-for-dwc
+    - ac-for-dwc
+    document_metadata_path: dwc_doc_list/
+  template: dwca_template/measurements_or_facts.tmpl
+  term_list: dwca_template/measurements_or_facts_list.csv
+  output: dwca/extension/measurements_or_facts_
+  relation_style: qrg
+- name: Darwin Core Identification History extension
+  update: true
+  type: extension
+  source:
+    term_lists:
+    - terms
+    - dc-for-dwc
+    - dcterms-for-dwc
+    - ac-for-dwc
+    document_metadata_path: dwc_doc_list/
+  template: dwca_template/identification_history.tmpl
+  term_list: dwca_template/identification_history_list.csv
+  output: dwca/extension/identification_history_
+  relation_style: qrg
+- name: Humboldt extension
+  update: true
+  type: extension
+  source:
+    term_lists:
+    - terms
+    - humboldt
+    document_metadata_path: dwc_doc_eco/
+  template: dwca_template/humboldt_eco.tmpl
+  term_list: dwca_template/humboldt_eco_list.csv
+  output: dwca/extension/humboldt_
+  relation_style: qrg
+- name: Chronometric Age extension
+  update: true
+  type: extension
+  source:
+    term_lists:
+    - terms
+    - chronometricage
+    document_metadata_path: dwc_doc_chrono/
+  template: dwca_template/chronometric_age.tmpl
+  term_list: dwca_template/chronometric_age_list.csv
+  output: dwca/extension/chronometric_age_
+  relation_style: qrg
+- name: Establishment Means vocabulary
+  update: true
+  type: vocabulary
+  source:
+    term_lists:
+    - establishmentMeans
+    document_metadata_path: dwc_doc_em/
+  template: dwca_template/establishment_means.tmpl
+  gbif_alternatives: https://api.gbif.org/v1/vocabularies/EstablishmentMeans/concepts/%s/alternativeLabels
+  vocabulary_cache: vocabularies/cache/EstablishmentMeans.json
+  output: dwca/vocabulary/dwc/establishment_means_
+- name: Degree of Establishment vocabulary
+  update: true
+  type: vocabulary
+  source:
+    term_lists:
+    - degreeOfEstablishment
+    document_metadata_path: dwc_doc_doe/
+  template: dwca_template/degree_of_establishment.tmpl
+  gbif_alternatives: https://api.gbif.org/v1/vocabularies/DegreeOfEstablishment/concepts/%s/alternativeLabels
+  vocabulary_cache: vocabularies/cache/DegreeOfEstablishment.json
+  output: dwca/vocabulary/dwc/degree_of_establishment_
+- name: Pathway vocabulary
+  update: true
+  type: vocabulary
+  source:
+    term_lists:
+    - pathway
+    document_metadata_path: dwc_doc_pw/
+  template: dwca_template/pathway.tmpl
+  gbif_alternatives: https://api.gbif.org/v1/vocabularies/Pathway/concepts/%s/alternativeLabels
+  vocabulary_cache: vocabularies/cache/Pathway.json
+  output: dwca/vocabulary/dwc/pathway_
+# Rules for turning term IRIs into links in generated XML/documentation.
+relation_styles:
+  qrg:
+    namespaces:
+      http://rs.tdwg.org/dwc/terms/: https://dwc.tdwg.org/terms/#dwc:{name}
+      http://rs.tdwg.org/dwc/iri/: https://dwc.tdwg.org/terms/#dwciri:{name}
+      http://purl.org/dc/elements/1.1/: https://dwc.tdwg.org/terms/#dc:{name}
+      http://purl.org/dc/terms/: https://dwc.tdwg.org/terms/#dcterms:{name}
+      http://purl.org/chrono/terms/: https://chrono.tdwg.org/terms/#chrono:{name}
+      http://rs.tdwg.org/eco/terms/: https://eco.tdwg.org/terms/#eco:{name}
+  term_list:
+    template: '{base}#{prefix}_{name}'
+# Standard documents maintained by this build. update: false leaves both the
+# current document and its archive untouched. document_metadata_path selects the
+# document's own authors_configuration.yaml and document_configuration.yaml.
+documents:
+- name: Darwin Core List of Terms
+  update: true
+  renderer: term_list
+  # Explicit reference to term_sources.darwin_core_list above. The included terms
+  # span several namespaces, but together they are rendered as this one document.
+  term_source_collection: darwin_core_list
+  # Metadata belongs to the combined List of Terms document, not to the former
+  # standalone eco: or chrono: term-list documents.
+  document_metadata_path: dwc_doc_list/
+  path: list
+  vocab_type: 1
+  header_template: list-template/termlist-header.{locale}.md
+- name: Establishment Means vocabulary
+  update: true
+  renderer: term_list
+  artifact: Establishment Means vocabulary
+  document_metadata_path: dwc_doc_em/
+  path: em
+  vocab_type: 2
+  header_template: em-template/termlist-header.{locale}.md
+- name: Degree of Establishment vocabulary
+  update: true
+  renderer: term_list
+  artifact: Degree of Establishment vocabulary
+  document_metadata_path: dwc_doc_doe/
+  path: doe
+  vocab_type: 2
+  header_template: doe-template/termlist-header.{locale}.md
+- name: Pathway vocabulary
+  update: true
+  renderer: term_list
+  artifact: Pathway vocabulary
+  document_metadata_path: dwc_doc_pw/
+  path: pw
+  vocab_type: 3
+  header_template: pw-template/termlist-header.{locale}.md
+- name: Darwin Core Conceptual Model
+  update: false
+  renderer: document_template
+  document_metadata_path: dwc_doc_cm/
+  path: cm
+  template: dwc_doc_cm/index_template.md
+- name: Darwin Core Data Package
+  update: false
+  renderer: document_template
+  document_metadata_path: dwc_doc_dp/
+  path: dp
+  template: dwc_doc_dp/index_template.md
+- name: Darwin Core RDF Guide
+  update: false
+  renderer: document_template
+  document_metadata_path: dwc_terms_guides_rdf/
+  path: rdf
+  template: dwc_terms_guides_rdf/index_template.md
+- name: Darwin Core Text Guide
+  update: false
+  renderer: document_template
+  document_metadata_path: dwc_terms_guides_text/
+  path: text
+  template: dwc_terms_guides_text/index_template.md
+- name: Darwin Core XML Guide
+  update: false
+  renderer: document_template
+  document_metadata_path: dwc_terms_guides_xml/
+  path: xml
+  template: dwc_terms_guides_xml/index_template.md
+- name: Darwin Core Namespace Policy
+  update: false
+  renderer: document_template
+  document_metadata_path: dwc_terms_namespace/
+  path: namespace
+  template: dwc_terms_namespace/index_template.md
+- name: Simple Darwin Core
+  update: false
+  renderer: document_template
+  document_metadata_path: dwc_terms_simple/
+  path: simple
+  template: dwc_terms_simple/index_template.md
+# Shared presentation resources and generated site-level documentation that are
+# not themselves standard documents. The QRG therefore has no document lifecycle.
+webpages:
+  qrg:
+    path: terms
+    term_list: qrg-template/qrg-list.csv
+    template: qrg-template/terms.{locale}.jinja
+    update: true
+  term_list_categories:
+  - iri: ''
+    label: Record level
+    id: record_level
+    comment: ''
+  - iri: http://purl.org/dc/elements/1.1/
+    label: Dublin Core legacy namespace
+    id: dc
+    comment: ''
+  - iri: http://purl.org/dc/terms/
+    label: Dublin Core terms namespace
+    id: dcterms
+    comment: ''
+  - iri: http://purl.org/dc/terms/Agent
+    label: Agent
+    id: agent
+    comment: ''
+  - iri: http://rs.tdwg.org/dwc/terms/Assertion
+    label: Assertion
+    id: assertion
+    comment: ''
+  - iri: http://purl.org/dc/terms/BibliographicResource
+    label: Bibliographic Resource
+    id: bibliographic_resource
+    comment: ''
+  - iri: http://rs.tdwg.org/dwc/terms/Event
+    label: Event
+    id: event
+    comment: ''
+  - iri: http://rs.tdwg.org/dwc/terms/GeologicalContext
+    label: Geological Context
+    id: geological_context
+    comment: ''
+  - iri: http://rs.tdwg.org/dwc/terms/Identification
+    label: Identification
+    id: identification
+    comment: ''
+  - iri: http://purl.org/dc/terms/Location
+    label: Location
+    id: location
+    comment: ''
+  - iri: http://rs.tdwg.org/dwc/terms/MaterialEntity
+    label: Material Entity
+    id: material_entity
+    comment: ''
+  - iri: http://rs.tdwg.org/dwc/terms/MaterialSample
+    label: Material Sample
+    id: material_sample
+    comment: ''
+  - iri: http://rs.tdwg.org/dwc/terms/MeasurementOrFact
+    label: Measurement or Fact
+    id: measurement_or_fact
+    comment: ''
+  - iri: http://rs.tdwg.org/ac/terms/Media
+    label: Media
+    id: media
+    comment: ''
+  - iri: http://rs.tdwg.org/dwc/terms/MolecularProtocol
+    label: Molecular Protocol
+    id: molecular_protocol
+    comment: ''
+  - iri: http://rs.tdwg.org/dwc/terms/NucleotideAnalysis
+    label: Nucleotide Analysis
+    id: nucleotide_analysis
+    comment: ''
+  - iri: http://rs.tdwg.org/dwc/terms/NucleotideSequence
+    label: Nucleotide Sequence
+    id: nucleotide_sequence
+    comment: ''
+  - iri: http://rs.tdwg.org/dwc/terms/Occurrence
+    label: Occurrence
+    id: occurrence
+    comment: ''
+  - iri: http://rs.tdwg.org/dwc/terms/Organism
+    label: Organism
+    id: organism
+    comment: ''
+  - iri: http://rs.tdwg.org/dwc/terms/OrganismInteraction
+    label: Organism Interaction
+    id: organism_interaction
+    comment: ''
+  - iri: http://rs.tdwg.org/dwc/terms/Protocol
+    label: Protocol
+    id: protocol
+    comment: ''
+  - iri: http://rs.tdwg.org/dwc/terms/Provenance
+    label: Provenance
+    id: provenance
+    comment: ''
+  - iri: http://rs.tdwg.org/dwc/terms/ResourceRelationship
+    label: Resource Relationship
+    id: resource_relationship
+    comment: ''
+  - iri: http://rs.tdwg.org/dwc/terms/Taxon
+    label: Taxon
+    id: taxon
+    comment: ''
+  - iri: http://rs.tdwg.org/dwc/terms/UsagePolicy
+    label: Usage Policy
+    id: usage_policy
+    comment: ''
+  - iri: http://rs.tdwg.org/dwc/terms/attributes/UseWithIRI
+    label: IRI-value terms
+    id: use_with_iri
+    comment: ''
+  dictionary: termlist-dictionary.{locale}.json
+  docs_root: docs
+  language_menu:
+    update: true
+    mode: production
+    production_languages:
+    - text: English
+      href: /
+    - text: Čeština
+      href: /cs/
+    - text: Español
+      href: /es/
+    - text: Français
+      href: /fr/
+    - text: Русский
+      href: /ru/
+    preview_languages:
+    - text: '---'
+    - text: 日本語
+      href: /ja/
+    - text: 한국어
+      href: /ko/
+    - text: 繁體中文
+      href: /zh-Hant/

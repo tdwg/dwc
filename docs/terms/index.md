@@ -3,13 +3,15 @@
 
 This document is intended to be an easy-to-read reference of the currently recommended terms maintained as part of the [Darwin Core standard](https://www.tdwg.org/standards/dwc/) and is maintained by the [Darwin Core Maintenance Group](https://www.tdwg.org/community/dwc/).
 
-**Need help?** Read more about how to use Darwin Core in the [Darwin Core Questions & Answers site](https://github.com/tdwg/dwc-qa/blob/master/README.md). Still have questions? Submit a new issue (question/problem) to the [dwc-qa issues page in GitHub](https://github.com/tdwg/dwc-qa/issues), or use the [form](https://tinyurl.com/darwin-qa). See the bottom of this document for [how to cite Darwin Core](https://dwc.tdwg.org/terms/#cite-darwin-core)."
+**Need help?** Read more about how to use Darwin Core in the [Darwin Core Questions & Answers site](https://github.com/tdwg/dwc-qa/blob/master/README.md). Still have questions? Submit a new issue (question/problem) to the [dwc-qa issues page in GitHub](https://github.com/tdwg/dwc-qa/issues), or use the [form](https://tinyurl.com/darwin-qa). 
+
+**Need to cite Darwin Core?** See the [Cite Darwin Core](https://dwc.tdwg.org/terms/#cite-darwin-core) section at the bottom of this document.
 
 **Want to contribute?** For information about how to contribute to the Darwin Core Standard, including how to propose changes, see the [Guidelines for contributing](https://github.com/tdwg/dwc/blob/master/.github/CONTRIBUTING.md).
 
-This page is not part of the standard, but combines the normative term names and definitions with the non-normative comments and examples that are meant to help people to use the terms consistently. Definitions, comments, and examples may include namespace abbreviations (e.g., "dwc:"). These are included to show that the meaning for the word it is attached to very specifically means the term as defined in that namespace. Thus, dwc:Event means Event as defined by Darwin Core at https://dwc.tdwg.org/terms/#event. Capitalized terms that follow a namespace abbreviation, such as dwc:Occurrence, are Darwin Core class terms, which are a special category of terms used to group sets of property terms (terms that being with lower case names that follow the namespace abbreviation, e.g., dwc:eventID) for convenience. Comprehensive metadata for current and obsolete terms in human readable form are found in the document [List of Darwin Core terms](../list/).
+This page is not part of the standard, but combines the normative term names and definitions with the non-normative notes and examples that are meant to help people to use the terms consistently. Definitions, notes, and examples may include namespace abbreviations (e.g., "dwc:"). These are included to show that the meaning for the word it is attached to very specifically means the term as defined in that namespace. Thus, dwc:Event means Event as defined by Darwin Core at https://dwc.tdwg.org/terms/#event. Capitalized terms that follow a namespace abbreviation, such as dwc:Occurrence, are class terms, which are a special category of terms used to group sets of property terms (terms that begin with lower case names that follow the namespace abbreviation, e.g., dwc:eventID) for convenience. Comprehensive metadata for current and obsolete terms from Darwin Core and borrowed standards are found in the document [List of Darwin Core terms](../list/).
 
-Additional [files with just the current term names](https://github.com/tdwg/dwc/tree/master/dist) and a [file with the full term history](https://github.com/tdwg/dwc/blob/master/vocabulary/term_versions.csv) can be found in the [Darwin Core repository](https://github.com/tdwg/dwc).
+Additional resources can be found in the [Darwin Core GitHub repository](https://github.com/tdwg/dwc), including a [directory](https://github.com/tdwg/dwc/tree/master/dist) of CSV header and list of terms files for Darwin Core Archive Cores and Extensions.
 
 
 <h2 id="record-level">Record-level</h2>
@@ -19,23 +21,11 @@ This category contains terms that are generic in that they might apply to any ty
       <a class="btn btn-sm btn-outline-primary m-1" href="#dc:type">type</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dcterms:modified">modified</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dc:language">language</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dcterms:license">license</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dcterms:rightsHolder">rightsHolder</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dcterms:accessRights">accessRights</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dcterms:bibliographicCitation">bibliographicCitation</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dcterms:references">references</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:feedbackURL">feedbackURL</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:institutionID">institutionID</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:collectionID">collectionID</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:datasetID">datasetID</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:institutionCode">institutionCode</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:collectionCode">collectionCode</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:ownerInstitutionCode">ownerInstitutionCode</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:datasetName">datasetName</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:basisOfRecord">basisOfRecord</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:informationWithheld">informationWithheld</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:dataGeneralizations">dataGeneralizations</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:dynamicProperties">dynamicProperties</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:feedbackURL">feedbackURL</a>
   </div>
 
 
@@ -76,175 +66,6 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Definition</td><td>A language of the resource.</td></tr>
     <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary such as RFC 5646. This term has an equivalent in the dcterms: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>en</code> (for English)</li><li class="list-group-item"><code>es</code> (for Spanish)</li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dcterms:license"></span>
-    <span id="license"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">license</th></tr>
-    <tr><td>Identifier</td><td><a href="http://purl.org/dc/terms/license">http://purl.org/dc/terms/license</a></td></tr>
-    <tr><td>Definition</td><td>A legal document giving official permission to do something with the resource.</td></tr>
-    <tr><td>Notes</td><td></td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="http://creativecommons.org/publicdomain/zero/1.0/legalcode">http://creativecommons.org/publicdomain/zero/1.0/legalcode</a></code></li><li class="list-group-item"><code><a href="http://creativecommons.org/licenses/by/4.0/legalcode">http://creativecommons.org/licenses/by/4.0/legalcode</a></code></li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dcterms:rightsHolder"></span>
-    <span id="rightsHolder"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">rightsHolder</th></tr>
-    <tr><td>Identifier</td><td><a href="http://purl.org/dc/terms/rightsHolder">http://purl.org/dc/terms/rightsHolder</a></td></tr>
-    <tr><td>Definition</td><td>A person or organization owning or managing rights over the resource.</td></tr>
-    <tr><td>Notes</td><td></td></tr>
-    <tr><td>Examples</td><td><code>The Regents of the University of California</code></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dcterms:accessRights"></span>
-    <span id="accessRights"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">accessRights</th></tr>
-    <tr><td>Identifier</td><td><a href="http://purl.org/dc/terms/accessRights">http://purl.org/dc/terms/accessRights</a></td></tr>
-    <tr><td>Definition</td><td>Information about who can access the resource or an indication of its security status.</td></tr>
-    <tr><td>Notes</td><td>Access Rights may include information regarding access or restrictions based on privacy, security, or other policies.</td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>not-for-profit use only</code> (string literal example)</li><li class="list-group-item"><code><a href="https://www.fieldmuseum.org/field-museum-natural-history-conditions-and-suggested-norms-use-collections-data-and-images">https://www.fieldmuseum.org/field-museum-natural-history-conditions-and-suggested-norms-use-collections-data-and-images</a></code> (URI example)</li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dcterms:bibliographicCitation"></span>
-    <span id="bibliographicCitation"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">bibliographicCitation</th></tr>
-    <tr><td>Identifier</td><td><a href="http://purl.org/dc/terms/bibliographicCitation">http://purl.org/dc/terms/bibliographicCitation</a></td></tr>
-    <tr><td>Definition</td><td>A bibliographic reference for the resource.</td></tr>
-    <tr><td>Notes</td><td>From Dublin Core, "Recommended practice is to include sufficient bibliographic detail to identify the resource as unambiguously as possible." The intended usage of this term in Darwin Core is to provide the preferred way to cite the resource itself - "how to cite this record". Note that the intended usage of dcterms:references in Darwin Core, by contrast, is to point to the definitive source representation of the resource - "where to find the as-close-to-original reference", if one is available.</td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Museum of Vertebrate Zoology, UC Berkeley. MVZ Mammal Collection (Arctos). Record ID: <a href="http://arctos.database.museum/guid/MVZ:Mamm:165861?seid=101356">http://arctos.database.museum/guid/MVZ:Mamm:165861?seid=101356</a>. Source: <a href="http://ipt.vertnet.org:8080/ipt/resource.do?r=mvz_mammal">http://ipt.vertnet.org:8080/ipt/resource.do?r=mvz_mammal</a>.</code> (Occurrence example)</li><li class="list-group-item"><code><a href="https://www.gbif.org/species/2439608">https://www.gbif.org/species/2439608</a> Source: GBIF Taxonomic Backbone</code> (Taxon example)</li><li class="list-group-item"><code>Rand, K.M., Logerwell, E.A. The first demersal trawl survey of benthic fish and invertebrates in the Beaufort Sea since the late 1970s. Polar Biol 34, 475–488 (2011). <a href="https://doi.org/10.1007/s00300-010-0900-2">https://doi.org/10.1007/s00300-010-0900-2</a></code> (Event example)</li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dcterms:references"></span>
-    <span id="references"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">references</th></tr>
-    <tr><td>Identifier</td><td><a href="http://purl.org/dc/terms/references">http://purl.org/dc/terms/references</a></td></tr>
-    <tr><td>Definition</td><td>A related resource that is referenced, cited, or otherwise pointed to by the described resource.</td></tr>
-    <tr><td>Notes</td><td>From Dublin Core, "This property is intended to be used with non-literal values. This property is an inverse property of Is Referenced By." The intended usage of this term in Darwin Core is to point to the definitive source representation of the resource (e.g., dwc:Taxon, dwc:Occurrence, dwc:Event), if one is available. Note that the intended usage of dcterms:bibliographicCitation in Darwin Core, by contrast, is to provide the preferred way to cite the resource itself.</td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="http://arctos.database.museum/guid/MVZ:Mamm:165861">http://arctos.database.museum/guid/MVZ:Mamm:165861</a></code> (MaterialEntity example)</li><li class="list-group-item"><code><a href="https://www.catalogueoflife.org/data/taxon/32664">https://www.catalogueoflife.org/data/taxon/32664</a> (Taxon example)</code></li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:feedbackURL"></span>
-    <span id="feedbackURL"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">feedbackURL</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/feedbackURL">http://rs.tdwg.org/dwc/terms/feedbackURL</a></td></tr>
-    <tr><td>Definition</td><td>A uniform resource locator (URL) that points to a webpage on which a form may be submitted to gather feedback about the record.</td></tr>
-    <tr><td>Notes</td><td>Recommended best practice is to optionally include query strings that act to pre-populate web page form elements and communicate the context.</td></tr>
-    <tr><td>Examples</td><td><code><a href="https://example.com/new?title=New+issue&body=This+comment+is+about+CAN12345">https://example.com/new?title=New+issue&body=This+comment+is+about+CAN12345</a></code></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:institutionID"></span>
-    <span id="institutionID"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">institutionID</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/institutionID">http://rs.tdwg.org/dwc/terms/institutionID</a></td></tr>
-    <tr><td>Definition</td><td>An identifier for an organization.</td></tr>
-    <tr><td>Notes</td><td>For physical specimens, the recommended best practice is to use a globally unique and resolvable identifier from a collections registry such as the Research Organization Registry (ROR) or the Global Registry of Scientific Collections (<a href="https://scientific-collections.gbif.org/">https://scientific-collections.gbif.org/</a>).</td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="https://ror.org/015hz7p22">https://ror.org/015hz7p22</a></code></li><li class="list-group-item"><code><a href="http://grscicoll.org/institution/museum-southwestern-biology">http://grscicoll.org/institution/museum-southwestern-biology</a></code></li><li class="list-group-item"><code><a href="https://www.gbif.org/grscicoll/institution/e3d4dcc4-81e2-444c-8a5c-41d1044b5381">https://www.gbif.org/grscicoll/institution/e3d4dcc4-81e2-444c-8a5c-41d1044b5381</a></code></li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:collectionID"></span>
-    <span id="collectionID"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">collectionID</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/collectionID">http://rs.tdwg.org/dwc/terms/collectionID</a></td></tr>
-    <tr><td>Definition</td><td>An identifier for a collection.</td></tr>
-    <tr><td>Notes</td><td>For physical specimens, the recommended best practice is to use a globally unique and resolvable identifier from a collections registry such as the Global Registry of Scientific Collections (<a href="https://scientific-collections.gbif.org/">https://scientific-collections.gbif.org/</a>).</td></tr>
-    <tr><td>Examples</td><td><code><a href="https://scientific-collections.gbif.org/collection/fbd3ed74-5a21-4e01-b86a-33d36f032d9c">https://scientific-collections.gbif.org/collection/fbd3ed74-5a21-4e01-b86a-33d36f032d9c</a></code></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:datasetID"></span>
-    <span id="datasetID"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">datasetID</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/datasetID">http://rs.tdwg.org/dwc/terms/datasetID</a></td></tr>
-    <tr><td>Definition</td><td>An identifier for the set of data. May be a global unique identifier or an identifier specific to a collection or institution.</td></tr>
-    <tr><td>Notes</td><td></td></tr>
-    <tr><td>Examples</td><td><code>b15d4952-7d20-46f1-8a3e-556a512b04c5</code></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:institutionCode"></span>
-    <span id="institutionCode"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">institutionCode</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/institutionCode">http://rs.tdwg.org/dwc/terms/institutionCode</a></td></tr>
-    <tr><td>Definition</td><td>A name (or acronym) in use by an institution having custody of a resource.</td></tr>
-    <tr><td>Notes</td><td>The institution having ownership of a resource should be given in dwc:ownerInstitutionCode.</td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>MVZ</code></li><li class="list-group-item"><code>FMNH</code></li><li class="list-group-item"><code>CLO</code></li><li class="list-group-item"><code>UCMP</code></li><li class="list-group-item"><code>National Museum of Kenya</code></li><li class="list-group-item"><code>Kew Gardens</code></li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:collectionCode"></span>
-    <span id="collectionCode"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">collectionCode</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/collectionCode">http://rs.tdwg.org/dwc/terms/collectionCode</a></td></tr>
-    <tr><td>Definition</td><td>A name, acronym, coden, or initialism identifying a collection.</td></tr>
-    <tr><td>Notes</td><td></td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Mammals</code></li><li class="list-group-item"><code>Hildebrandt</code></li><li class="list-group-item"><code>EBIRD</code></li><li class="list-group-item"><code>VP</code></li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:ownerInstitutionCode"></span>
-    <span id="ownerInstitutionCode"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">ownerInstitutionCode</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/ownerInstitutionCode">http://rs.tdwg.org/dwc/terms/ownerInstitutionCode</a></td></tr>
-    <tr><td>Definition</td><td>A name (or acronym) in use by an institution having ownership of a resource.</td></tr>
-    <tr><td>Notes</td><td></td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>NPS</code></li><li class="list-group-item"><code>APN</code></li><li class="list-group-item"><code>InBio</code></li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:datasetName"></span>
-    <span id="datasetName"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">datasetName</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/datasetName">http://rs.tdwg.org/dwc/terms/datasetName</a></td></tr>
-    <tr><td>Definition</td><td>A name of a source dataset.</td></tr>
-    <tr><td>Notes</td><td></td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Grinnell Resurvey Mammals</code></li><li class="list-group-item"><code>Lacey Ctenomys Recaptures</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -297,6 +118,19 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Definition</td><td>A list of additional measurements, facts, characteristics, or assertions about the record. Meant to provide a mechanism for structured content.</td></tr>
     <tr><td>Notes</td><td>Recommended best practice is to use a key:value encoding schema for a data interchange format such as JSON.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>{"heightInMeters":1.5}</code></li><li class="list-group-item"><code>{"targusLengthInMeters":0.014, "weightInGrams":120}</code></li><li class="list-group-item"><code>{"natureOfID":"expert identification", "identificationEvidence":"cytochrome B sequence"}</code></li><li class="list-group-item"><code>{"relativeHumidity":28, "airTemperatureInCelsius":22, "sampleSizeInKilograms":10}</code></li><li class="list-group-item"><code>{"aspectHeading":277, "slopeInDegrees":6}</code></li><li class="list-group-item"><code>{"iucnStatus":"vulnerable", "taxonDistribution":"Neuquén, Argentina"}</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:feedbackURL"></span>
+    <span id="feedbackURL"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">feedbackURL</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/feedbackURL">http://rs.tdwg.org/dwc/terms/feedbackURL</a></td></tr>
+    <tr><td>Definition</td><td>A uniform resource locator (URL) that points to a webpage on which a form may be submitted to gather feedback about the record.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to optionally include query strings that act to pre-populate web page form elements and communicate the context.</td></tr>
+    <tr><td>Examples</td><td><code><a href="https://example.com/new?title=New+issue&body=This+comment+is+about+CAN12345">https://example.com/new?title=New+issue&body=This+comment+is+about+CAN12345</a></code></td></tr>
   </tbody>
 </table>
 
@@ -513,7 +347,7 @@ This category contains terms that are generic in that they might apply to any ty
   <tbody>
     <tr class="table-secondary"><th colspan="2">assertionEffectiveDate</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/assertionEffectiveDate">http://rs.tdwg.org/dwc/terms/assertionEffectiveDate</a></td></tr>
-    <tr><td>Definition</td><td>A date on which a state or measurement of a dwc:Assertion was deemed to first be in effect.</td></tr>
+    <tr><td>Definition</td><td>A date-time or time interval during which an asserted state or measurement was deemed to be in effect.</td></tr>
     <tr><td>Notes</td><td>Recommended best practice is to use a date that conforms to ISO 8601-1:2019.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>1963-03-08T14:07-06:00</code> (8 Mar 1963 at or after 2:07pm and before 2:08pm in the time zone six hours earlier than UTC)</li><li class="list-group-item"><code>2009-02-20T08:40Z</code> (20 February 2009 at or after 8:40am and before 8:41 UTC)</li><li class="list-group-item"><code>2018-08-29T15:19</code> (29 August 2018 at or after 3:19pm and before 3:20pm local time)</li><li class="list-group-item"><code>1809-02-12</code> (within the day 12 February 1809)</li><li class="list-group-item"><code>1906-06</code> (in the month of June 1906)</li><li class="list-group-item"><code>1971</code> (in the year 1971)</li><li class="list-group-item"><code>2007-03-01T13:00:00Z/2008-05-11T15:30:00Z</code> (some time within the interval beginning 1 March 2007 at 1pm UTC and before 11 May 2008 at 3:30pm UTC)</li><li class="list-group-item"><code>1900/1909</code> (some time within the interval between the beginning of the year 1900 and before the year 1909)</li><li class="list-group-item"><code>2007-11-13/15</code> (some time in the interval between the beginning of 13 November 2007 and before 15 November 2007)</li></ul></td></tr>
   </tbody>
@@ -563,6 +397,9 @@ This category contains terms that are generic in that they might apply to any ty
 
 <div class="my-4">
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:referenceID">referenceID</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dcterms:bibliographicCitation">bibliographicCitation</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:bibliographicIdentifier">bibliographicIdentifier</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:bibliographicIdentifierType">bibliographicIdentifierType</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:referenceType">referenceType</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:referenceRemarks">referenceRemarks</a>
   </div>
@@ -588,6 +425,45 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Definition</td><td>An identifier for a dcterms:BibliographicResource.</td></tr>
     <tr><td>Notes</td><td>Recommended best practice is to use a globally unique identifier.</td></tr>
     <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dcterms:bibliographicCitation"></span>
+    <span id="bibliographicCitation"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">bibliographicCitation</th></tr>
+    <tr><td>Identifier</td><td><a href="http://purl.org/dc/terms/bibliographicCitation">http://purl.org/dc/terms/bibliographicCitation</a></td></tr>
+    <tr><td>Definition</td><td>A bibliographic reference for the resource.</td></tr>
+    <tr><td>Notes</td><td>From Dublin Core, "Recommended practice is to include sufficient bibliographic detail to identify the resource as unambiguously as possible." The intended usage of this term in Darwin Core is to provide the preferred way to cite the resource itself - "how to cite this record". Note that the intended usage of dcterms:references in Darwin Core, by contrast, is to point to the definitive source representation of the resource - "where to find the as-close-to-original reference", if one is available.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Museum of Vertebrate Zoology, UC Berkeley. MVZ Mammal Collection (Arctos). Record ID: <a href="http://arctos.database.museum/guid/MVZ:Mamm:165861?seid=101356">http://arctos.database.museum/guid/MVZ:Mamm:165861?seid=101356</a>. Source: <a href="http://ipt.vertnet.org:8080/ipt/resource.do?r=mvz_mammal">http://ipt.vertnet.org:8080/ipt/resource.do?r=mvz_mammal</a>.</code> (Occurrence example)</li><li class="list-group-item"><code><a href="https://www.gbif.org/species/2439608">https://www.gbif.org/species/2439608</a> Source: GBIF Taxonomic Backbone</code> (Taxon example)</li><li class="list-group-item"><code>Rand, K.M., Logerwell, E.A. The first demersal trawl survey of benthic fish and invertebrates in the Beaufort Sea since the late 1970s. Polar Biol 34, 475–488 (2011). <a href="https://doi.org/10.1007/s00300-010-0900-2">https://doi.org/10.1007/s00300-010-0900-2</a></code> (Event example)</li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:bibliographicIdentifier"></span>
+    <span id="bibliographicIdentifier"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">bibliographicIdentifier</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/bibliographicIdentifier">http://rs.tdwg.org/dwc/terms/bibliographicIdentifier</a></td></tr>
+    <tr><td>Definition</td><td>A number or symbol to uniquely identify a dcterms:BibliographicResource.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a globally unique identifier issued by recognizable authority (e.g., International ISBN Agency, International DOI Foundation).</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>978-0565095024</code></li><li class="list-group-item"><code>10998406</code></li><li class="list-group-item"><code>10.1046/j.1420-9101.1997.10010039.x</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:bibliographicIdentifierType"></span>
+    <span id="bibliographicIdentifierType"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">bibliographicIdentifierType</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/bibliographicIdentifierType">http://rs.tdwg.org/dwc/terms/bibliographicIdentifierType</a></td></tr>
+    <tr><td>Definition</td><td>A code that best matches the nature of an identifier for a dcterms:BibliographicResource.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a limited, tightly controlled vocabulary of identifier issuers. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>ISBN</code></li><li class="list-group-item"><code>DOI</code></li><li class="list-group-item"><code>ISSN</code></li><li class="list-group-item"><code>OCN</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -618,6 +494,275 @@ This category contains terms that are generic in that they might apply to any ty
 </table>
 
 
+<h2 id="chronometricage">ChronometricAge</h2>
+
+<div class="my-4">
+      <a class="btn btn-sm btn-outline-primary m-1" href="#chrono:chronometricAgeID">chronometricAgeID</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#chrono:verbatimChronometricAge">verbatimChronometricAge</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#chrono:chronometricAgeProtocol">chronometricAgeProtocol</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#chrono:uncalibratedChronometricAge">uncalibratedChronometricAge</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#chrono:chronometricAgeConversionProtocol">chronometricAgeConversionProtocol</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#chrono:earliestChronometricAge">earliestChronometricAge</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#chrono:earliestChronometricAgeReferenceSystem">earliestChronometricAgeReferenceSystem</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#chrono:latestChronometricAge">latestChronometricAge</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#chrono:latestChronometricAgeReferenceSystem">latestChronometricAgeReferenceSystem</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#chrono:chronometricAgeUncertaintyInYears">chronometricAgeUncertaintyInYears</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#chrono:chronometricAgeUncertaintyMethod">chronometricAgeUncertaintyMethod</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#chrono:materialDated">materialDated</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#chrono:materialDatedID">materialDatedID</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#chrono:materialDatedRelationship">materialDatedRelationship</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#chrono:chronometricAgeDeterminedBy">chronometricAgeDeterminedBy</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#chrono:chronometricAgeDeterminedDate">chronometricAgeDeterminedDate</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#chrono:chronometricAgeReferences">chronometricAgeReferences</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#chrono:chronometricAgeRemarks">chronometricAgeRemarks</a>
+  </div>
+
+<table class="table">
+  <tbody>
+    <tr class="table-primary"><th colspan="2">ChronometricAge <span class="badge bg-primary float-end">Class</span></th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/chrono/terms/ChronometricAge">http://rs.tdwg.org/chrono/terms/ChronometricAge</a></td></tr>
+    <tr><td>Definition</td><td>An approximation of a temporal position (in the sense conveyed by <a href="https://www.w3.org/TR/owl-time/#time:TemporalPosition">https://www.w3.org/TR/owl-time/#time:TemporalPosition</a>) that is supported via evidence.</td></tr>
+    <tr><td>Notes</td><td>The age of a specimen and how this age is known, whether by a dating assay, a relative association with dated material, or legacy collections information.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>An age range associated with a specimen derived from an AMS dating assay applied to an oyster shell in the same stratum</code></li><li class="list-group-item"><code>An age range associated with a specimen derived from a ceramics analysis based on other materials found in the same stratum</code></li><li class="list-group-item"><code>A maximum age associated with a specimen derived from K-Ar dating applied to a proximal volcanic tuff found stratigraphically below the specimen</code></li><li class="list-group-item"><code>An age range of a specimen based on its biostratigraphic context</code></li><li class="list-group-item"><code>An age of a specimen based on what is reported in legacy collections data</code>.</li></ul></td></tr>
+  </tbody>
+</table>
+
+<p class="invisible">
+  <span id="chrono:chronometricAgeID"></span>
+    <span id="chronometricAgeID"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">chronometricAgeID</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/chrono/terms/chronometricAgeID">http://rs.tdwg.org/chrono/terms/chronometricAgeID</a></td></tr>
+    <tr><td>Definition</td><td>An identifier for the set of information associated with a chrono:ChronometricAge.</td></tr>
+    <tr><td>Notes</td><td>May be a global unique identifier or an identifier specific to the dataset. This can be used to link this record to another repository where more information about the dataset is shared.</td></tr>
+    <tr><td>Examples</td><td><code><a href="https://www.canadianarchaeology.ca/samples/70673">https://www.canadianarchaeology.ca/samples/70673</a></code></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="chrono:verbatimChronometricAge"></span>
+    <span id="verbatimChronometricAge"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">verbatimChronometricAge</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/chrono/terms/verbatimChronometricAge">http://rs.tdwg.org/chrono/terms/verbatimChronometricAge</a></td></tr>
+    <tr><td>Definition</td><td>The verbatim age for a specimen, whether reported by a dating assay, associated references, or legacy information.</td></tr>
+    <tr><td>Notes</td><td>For example, this could be the radiocarbon age as given in an AMS dating report. This could also be simply what is reported as the age of a specimen in legacy collections data.</td></tr>
+    <tr><td>Examples</td><td><code>27 BC to 14 AD</code>, <code>stratigraphically pre-1104</code></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="chrono:chronometricAgeProtocol"></span>
+    <span id="chronometricAgeProtocol"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">chronometricAgeProtocol</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/chrono/terms/chronometricAgeProtocol">http://rs.tdwg.org/chrono/terms/chronometricAgeProtocol</a></td></tr>
+    <tr><td>Definition</td><td>A description of or reference to the methods used to determine the chrono:ChronometricAge.</td></tr>
+    <tr><td>Notes</td><td> This term has an equivalent in the chronoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>radiocarbon AMS</code></li><li class="list-group-item"><code>K-Ar dates for the lower most marker tuff</code></li><li class="list-group-item"><code>historic documentation</code></li><li class="list-group-item"><code>ceramic seriation</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="chrono:uncalibratedChronometricAge"></span>
+    <span id="uncalibratedChronometricAge"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">uncalibratedChronometricAge</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/chrono/terms/uncalibratedChronometricAge">http://rs.tdwg.org/chrono/terms/uncalibratedChronometricAge</a></td></tr>
+    <tr><td>Definition</td><td>The output of a dating assay before it is calibrated into an age using a specific conversion protocol.</td></tr>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td>Examples</td><td><code>1510 +/- 25 14C yr BP</code>, <code>16.26 Ma +/- 0.016</code></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="chrono:chronometricAgeConversionProtocol"></span>
+    <span id="chronometricAgeConversionProtocol"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">chronometricAgeConversionProtocol</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/chrono/terms/chronometricAgeConversionProtocol">http://rs.tdwg.org/chrono/terms/chronometricAgeConversionProtocol</a></td></tr>
+    <tr><td>Definition</td><td>The method used for converting the chrono:uncalibratedChronometricAge into a chronometric age in years, as captured in the chrono:earliestChronometricAge, chrono:earliestChronometricAgeReferenceSystem, chrono:latestChronometricAge, and chrono:latestChronometricAgeReferenceSystem fields.</td></tr>
+    <tr><td>Notes</td><td>For example, calibration of conventional radiocarbon age or the currently accepted age range of a cultural or geological period. This term has an equivalent in the chronoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>INTCAL13</code></li><li class="list-group-item"><code>sequential 6 phase Bayesian model and IntCal13 calibration</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="chrono:earliestChronometricAge"></span>
+    <span id="earliestChronometricAge"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">earliestChronometricAge</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/chrono/terms/earliestChronometricAge">http://rs.tdwg.org/chrono/terms/earliestChronometricAge</a></td></tr>
+    <tr><td>Definition</td><td>The maximum/earliest/oldest possible age of a specimen as determined by a dating method.</td></tr>
+    <tr><td>Notes</td><td>The expected unit for this field is years. This field, if populated, must have an associated chrono:earliestChronometricAgeReferenceSystem.</td></tr>
+    <tr><td>Examples</td><td><code>100</code></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="chrono:earliestChronometricAgeReferenceSystem"></span>
+    <span id="earliestChronometricAgeReferenceSystem"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">earliestChronometricAgeReferenceSystem</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/chrono/terms/earliestChronometricAgeReferenceSystem">http://rs.tdwg.org/chrono/terms/earliestChronometricAgeReferenceSystem</a></td></tr>
+    <tr><td>Definition</td><td>The reference system associated with the chrono:earliestChronometricAge.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary. This term has an equivalent in the chronoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>kya</code></li><li class="list-group-item"><code>mya</code></li><li class="list-group-item"><code>BP</code></li><li class="list-group-item"><code>AD</code></li><li class="list-group-item"><code>BCE</code></li><li class="list-group-item"><code>ka</code></li><li class="list-group-item"><code>Ma</code></li><li class="list-group-item"><code>Ga</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="chrono:latestChronometricAge"></span>
+    <span id="latestChronometricAge"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">latestChronometricAge</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/chrono/terms/latestChronometricAge">http://rs.tdwg.org/chrono/terms/latestChronometricAge</a></td></tr>
+    <tr><td>Definition</td><td>The minimum/latest/youngest possible age of a specimen as determined by a dating method.</td></tr>
+    <tr><td>Notes</td><td>The expected unit for this field is years. This field, if populated, must have an associated chrono:latestChronometricAgeReferenceSystem.</td></tr>
+    <tr><td>Examples</td><td><code>27</code></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="chrono:latestChronometricAgeReferenceSystem"></span>
+    <span id="latestChronometricAgeReferenceSystem"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">latestChronometricAgeReferenceSystem</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/chrono/terms/latestChronometricAgeReferenceSystem">http://rs.tdwg.org/chrono/terms/latestChronometricAgeReferenceSystem</a></td></tr>
+    <tr><td>Definition</td><td>The reference system associated with the chrono:latestChronometricAge.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary. This term has an equivalent in the chronoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>kya</code></li><li class="list-group-item"><code>mya</code></li><li class="list-group-item"><code>BP</code></li><li class="list-group-item"><code>AD</code></li><li class="list-group-item"><code>BCE</code></li><li class="list-group-item"><code>ka</code></li><li class="list-group-item"><code>Ma</code></li><li class="list-group-item"><code>Ga</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="chrono:chronometricAgeUncertaintyInYears"></span>
+    <span id="chronometricAgeUncertaintyInYears"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">chronometricAgeUncertaintyInYears</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/chrono/terms/chronometricAgeUncertaintyInYears">http://rs.tdwg.org/chrono/terms/chronometricAgeUncertaintyInYears</a></td></tr>
+    <tr><td>Definition</td><td>The temporal uncertainty of the chrono:earliestChronometricAge and chrono:latestChronometricAge in years.</td></tr>
+    <tr><td>Notes</td><td>The expected unit for this field is years. The value in this field is number of years before and after the values given in the chrono:earliestChronometricAge and chrono:latestChronometricAge fields within which the actual values are estimated to be.</td></tr>
+    <tr><td>Examples</td><td><code>100</code></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="chrono:chronometricAgeUncertaintyMethod"></span>
+    <span id="chronometricAgeUncertaintyMethod"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">chronometricAgeUncertaintyMethod</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/chrono/terms/chronometricAgeUncertaintyMethod">http://rs.tdwg.org/chrono/terms/chronometricAgeUncertaintyMethod</a></td></tr>
+    <tr><td>Definition</td><td>The method used to generate the value of chrono:chronometricAgeUncertaintyInYears.</td></tr>
+    <tr><td>Notes</td><td> This term has an equivalent in the chronoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>2-sigma calibrated range</code></li><li class="list-group-item"><code>Half of 95% confidence interval</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="chrono:materialDated"></span>
+    <span id="materialDated"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">materialDated</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/chrono/terms/materialDated">http://rs.tdwg.org/chrono/terms/materialDated</a></td></tr>
+    <tr><td>Definition</td><td>A description of the material on which the chrono:chronometricAgeProtocol was actually performed, if known.</td></tr>
+    <tr><td>Notes</td><td> This term has an equivalent in the chronoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Double Tuff</code></li><li class="list-group-item"><code>Charcoal found in Stratum V</code></li><li class="list-group-item"><code>charred wood</code></li><li class="list-group-item"><code>tooth</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="chrono:materialDatedID"></span>
+    <span id="materialDatedID"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">materialDatedID</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/chrono/terms/materialDatedID">http://rs.tdwg.org/chrono/terms/materialDatedID</a></td></tr>
+    <tr><td>Definition</td><td>An identifier for the dwc:MaterialEntity on which the chrono:chronometricAgeProtocol was performed, if applicable.</td></tr>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td>Examples</td><td><code>dwc:materialEntityID: <a href="https://www.ebi.ac.uk/metagenomics/samples/SRS1930158">https://www.ebi.ac.uk/metagenomics/samples/SRS1930158</a></code></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="chrono:materialDatedRelationship"></span>
+    <span id="materialDatedRelationship"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">materialDatedRelationship</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/chrono/terms/materialDatedRelationship">http://rs.tdwg.org/chrono/terms/materialDatedRelationship</a></td></tr>
+    <tr><td>Definition</td><td>The relationship of the chrono:materialDated to the subject of the chrono:ChronometricAge record, from which the chrono:ChronometricAge of the subject is inferred.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>sameAs</code> (cases where the subject material was completely destructively subsampled to get the ChronometricAge)</li><li class="list-group-item"><code>subsampleOf</code> (cases where part of the original specimen was extracted as the material used to determine the ChronometricAge)</li><li class="list-group-item"><code>inContextWith</code> (cases where the ChronometricAge is inferred from materialDated, such as sediments or cultural objects, in related temporal context)</li><li class="list-group-item"><code>stratigraphicallyCorrelatedWith</code> (cases where the ChronometricAge is inferred from materialDated in a stratigraphically correlated context)</li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="chrono:chronometricAgeDeterminedBy"></span>
+    <span id="chronometricAgeDeterminedBy"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">chronometricAgeDeterminedBy</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/chrono/terms/chronometricAgeDeterminedBy">http://rs.tdwg.org/chrono/terms/chronometricAgeDeterminedBy</a></td></tr>
+    <tr><td>Definition</td><td>A list (concatenated and separated) of names of people, groups, or organizations who determined the chrono:ChronometricAge.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to separate the values in a list with space vertical bar space ( | ). This term has an equivalent in the chronoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><code>Michelle LeFebvre | Neill Wallis</code></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="chrono:chronometricAgeDeterminedDate"></span>
+    <span id="chronometricAgeDeterminedDate"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">chronometricAgeDeterminedDate</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/chrono/terms/chronometricAgeDeterminedDate">http://rs.tdwg.org/chrono/terms/chronometricAgeDeterminedDate</a></td></tr>
+    <tr><td>Definition</td><td>The date on which the chrono:ChronometricAge was determined.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a date that conforms to ISO 8601-1:2019.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>1963-03-08T14:07-0600</code> (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC)</li><li class="list-group-item"><code>2009-02-20T08:40Z</code> (20 February 2009 8:40am UTC)</li><li class="list-group-item"><code>2018-08-29T15:19</code> (3:19pm local time on 29 August 2018)</li><li class="list-group-item"><code>1809-02-12</code> (some time during 12 February 1809)</li><li class="list-group-item"><code>1906-06</code> (some time in June 1906)</li><li class="list-group-item"><code>1971</code> (some time in the year 1971)</li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="chrono:chronometricAgeReferences"></span>
+    <span id="chronometricAgeReferences"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">chronometricAgeReferences</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/chrono/terms/chronometricAgeReferences">http://rs.tdwg.org/chrono/terms/chronometricAgeReferences</a></td></tr>
+    <tr><td>Definition</td><td>A list (concatenated and separated) of identifiers (publication, bibliographic reference, global unique identifier, URI) of literature associated with the chrono:ChronometricAge.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to separate the values in a list with space vertical bar space ( | ).</td></tr>
+    <tr><td>Examples</td><td><code>Pluckhahn, Thomas J., Neill J. Wallis, and Victor D. Thompson. 2020 The History and Future of Migrationist Explanation in the Archaeology of the Eastern Woodlands: A Review and Case Study of the Woodland Period Gulf Coast. Journal of Archaeological Research. <a href="https://doi.org/10.1007/s10814-019-09140-x">https://doi.org/10.1007/s10814-019-09140-x</a></code></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="chrono:chronometricAgeRemarks"></span>
+    <span id="chronometricAgeRemarks"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">chronometricAgeRemarks</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/chrono/terms/chronometricAgeRemarks">http://rs.tdwg.org/chrono/terms/chronometricAgeRemarks</a></td></tr>
+    <tr><td>Definition</td><td>Notes or comments about the chrono:ChronometricAge.</td></tr>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td>Examples</td><td><code>Beta Analytic number: 323913 | One of the Crassostrea virginica right valve specimens from North Midden Feature 17 was chosen for AMS dating, but it is unclear exactly which specimen it was.</code></td></tr>
+  </tbody>
+</table>
+
+
 <h2 id="event">Event</h2>
 
 <div class="my-4">
@@ -626,6 +771,8 @@ This category contains terms that are generic in that they might apply to any ty
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:eventCategory">eventCategory</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:eventType">eventType</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:fieldNumber">fieldNumber</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:eventDurationValue">eventDurationValue</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:eventDurationUnit">eventDurationUnit</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:eventDate">eventDate</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:eventTime">eventTime</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:startDayOfYear">startDayOfYear</a>
@@ -635,6 +782,7 @@ This category contains terms that are generic in that they might apply to any ty
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:day">day</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimEventDate">verbatimEventDate</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:habitat">habitat</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:isVegetationCoverReported">isVegetationCoverReported</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:sampledSubstrateCategory">sampledSubstrateCategory</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:sampledSubstrateLayer">sampledSubstrateLayer</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:samplingProtocol">samplingProtocol</a>
@@ -642,6 +790,8 @@ This category contains terms that are generic in that they might apply to any ty
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:sampleSizeUnit">sampleSizeUnit</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:samplingEffort">samplingEffort</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:fieldNotes">fieldNotes</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:reportedExtremeConditions">reportedExtremeConditions</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:reportedWeather">reportedWeather</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:eventRemarks">eventRemarks</a>
   </div>
 
@@ -718,6 +868,32 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Definition</td><td>An identifier given to a dwc:Event in the field.</td></tr>
     <tr><td>Notes</td><td>Often serves as a link between field notes and a dwc:Event. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><code>RV Sol 87-03-08</code></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:eventDurationValue"></span>
+    <span id="eventDurationValue"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">eventDurationValue</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/eventDurationValue">http://rs.tdwg.org/eco/terms/eventDurationValue</a></td></tr>
+    <tr><td>Definition</td><td>The numeric value for the duration of the dwc:Event.</td></tr>
+    <tr><td>Notes</td><td>An eco:eventDurationValue must have a corresponding eco:eventDurationUnit.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>1</code></li><li class="list-group-item"><code>30</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:eventDurationUnit"></span>
+    <span id="eventDurationUnit"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">eventDurationUnit</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/eventDurationUnit">http://rs.tdwg.org/eco/terms/eventDurationUnit</a></td></tr>
+    <tr><td>Definition</td><td>The units associated with the eco:eventDurationValue.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary. This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>minutes</code></li><li class="list-group-item"><code>hours</code></li><li class="list-group-item"><code>days</code></li><li class="list-group-item"><code>months</code></li><li class="list-group-item"><code>years</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -838,6 +1014,19 @@ This category contains terms that are generic in that they might apply to any ty
   </tbody>
 </table>
 <p class="invisible">
+  <span id="eco:isVegetationCoverReported"></span>
+    <span id="isVegetationCoverReported"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">isVegetationCoverReported</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/isVegetationCoverReported">http://rs.tdwg.org/eco/terms/isVegetationCoverReported</a></td></tr>
+    <tr><td>Definition</td><td>A vegetation cover metric was reported.</td></tr>
+    <tr><td>Notes</td><td>Typically values or descriptions of vegetation cover would be captured under the term eco:verbatimSiteDescriptions. Recommended best practice is to follow the TDWG Boolean Controlled Vocabulary <a href="http://rs.tdwg.org/tag/doc/boolean/">http://rs.tdwg.org/tag/doc/boolean/</a>.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>true</code></li><li class="list-group-item"><code>false</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
   <span id="dwc:sampledSubstrateCategory"></span>
     <span id="sampledSubstrateCategory"></span>
   </p>
@@ -871,8 +1060,8 @@ This category contains terms that are generic in that they might apply to any ty
   <tbody>
     <tr class="table-secondary"><th colspan="2">samplingProtocol</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/samplingProtocol">http://rs.tdwg.org/dwc/terms/samplingProtocol</a></td></tr>
-    <tr><td>Definition</td><td>The names of, references to, or descriptions of the methods or protocols used during a dwc:Event.</td></tr>
-    <tr><td>Notes</td><td>Recommended best practice is to describe a dwc:Event with no more than one sampling protocol. In the case of a summary Event with multiple protocols, in which a specific protocol can not be attributed to specific dwc:Occurrences, the recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Definition</td><td>The names of, references to, or descriptions of the methods or protocols used during an eco:Survey.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to describe an eco:Survey with no more than one sampling protocol. In the case of a summary eco:Survey with multiple protocols, in which a specific protocol can not be attributed to specific dwc:Occurrences, the recommended best practice is to separate the values in a list with space vertical bar space ( | ). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>UV light trap</code></li><li class="list-group-item"><code>mist net</code></li><li class="list-group-item"><code>bottom trawl</code></li><li class="list-group-item"><code>ad hoc observation | point count</code></li><li class="list-group-item"><code>Penguins from space: faecal stains reveal the location of emperor penguin colonies, <a href="https://doi.org/10.1111/j.1466-8238.2009.00467.x">https://doi.org/10.1111/j.1466-8238.2009.00467.x</a></code></li><li class="list-group-item"><code>Takats et al. 2001. Guidelines for Nocturnal Owl Monitoring in North America. Beaverhill Bird Observatory and Bird Studies Canada, Edmonton, Alberta. 32 pp., <a href="http://www.bsc-eoc.org/download/Owl.pdf">http://www.bsc-eoc.org/download/Owl.pdf</a></code></li></ul></td></tr>
   </tbody>
 </table>
@@ -910,7 +1099,7 @@ This category contains terms that are generic in that they might apply to any ty
   <tbody>
     <tr class="table-secondary"><th colspan="2">samplingEffort</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/samplingEffort">http://rs.tdwg.org/dwc/terms/samplingEffort</a></td></tr>
-    <tr><td>Definition</td><td>The amount of effort expended during a dwc:Event.</td></tr>
+    <tr><td>Definition</td><td>The amount of effort expended during an eco:Survey.</td></tr>
     <tr><td>Notes</td><td></td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>40 trap-nights</code></li><li class="list-group-item"><code>10 observer-hours</code></li><li class="list-group-item"><code>10 km by foot</code></li><li class="list-group-item"><code>30 km by car</code></li></ul></td></tr>
   </tbody>
@@ -926,6 +1115,32 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Definition</td><td>One of a) an indicator of the existence of, b) a reference to (publication, URI), or c) the text of notes taken in the field about the dwc:Event.</td></tr>
     <tr><td>Notes</td><td>This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><code>Notes available in the Grinnell-Miller Library.</code></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:reportedExtremeConditions"></span>
+    <span id="reportedExtremeConditions"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">reportedExtremeConditions</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/reportedExtremeConditions">http://rs.tdwg.org/eco/terms/reportedExtremeConditions</a></td></tr>
+    <tr><td>Definition</td><td>A description of any extreme weather or environmental conditions that may have affected the dwc:Event.</td></tr>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>flooding during week 3 of surveys</code></li><li class="list-group-item"><code>rockslide at site 2</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:reportedWeather"></span>
+    <span id="reportedWeather"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">reportedWeather</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/reportedWeather">http://rs.tdwg.org/eco/terms/reportedWeather</a></td></tr>
+    <tr><td>Definition</td><td>A list of weather or climatic conditions present during the dwc:Event.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a key:value encoding schema for a data interchange format such as JSON.</td></tr>
+    <tr><td>Examples</td><td><code>{"minimumTemperatureInDegreesFahrenheit": 18, "maximumTemperatureInDegreesFahrenheit": 32}</code></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -961,6 +1176,7 @@ This category contains terms that are generic in that they might apply to any ty
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:municipality">municipality</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:locality">locality</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimLocality">verbatimLocality</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:namedPlace">namedPlace</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:minimumElevationInMeters">minimumElevationInMeters</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:maximumElevationInMeters">maximumElevationInMeters</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimElevation">verbatimElevation</a>
@@ -1197,6 +1413,19 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Definition</td><td>An original textual description of a dcterms:Location.</td></tr>
     <tr><td>Notes</td><td></td></tr>
     <tr><td>Examples</td><td><code>25 km NNE Bariloche por R. Nac. 237</code></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:namedPlace"></span>
+    <span id="namedPlace"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">namedPlace</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/namedPlace">http://rs.tdwg.org/dwc/terms/namedPlace</a></td></tr>
+    <tr><td>Definition</td><td>The full, unabbreviated name of a geographic location not otherwise categorized by a dcterms:Location property that is naturally occurring or anthropogenic in origin within a historical, administrative, or cultural context in which a dcterms:Location occurs.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to leave this field blank if the dcterms:Location spans multiple entities or may be in multiple possible entities that meet the term definition.  For named places represented as URIs or global unique identifiers, please use dwc:locationID.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>11th Level, Bergwerksglücker Lode, Wiemannsbucht Mine</code></li><li class="list-group-item"><code>Craigleith Quarry</code></li><li class="list-group-item"><code>Red Cloud Mine</code></li><li class="list-group-item"><code>NEON Niwot Ridge Mountain Research Station (NIWO)</code></li><li class="list-group-item"><code>Hagerman Fossil Beds</code></li><li class="list-group-item"><code>Mauna Kea</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -1625,13 +1854,17 @@ This category contains terms that are generic in that they might apply to any ty
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:formation">formation</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:member">member</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:bed">bed</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:geologicEvent">geologicEvent</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:geologicProvince">geologicProvince</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:lithodemicUnit">lithodemicUnit</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:tectonicUnits">tectonicUnits</a>
   </div>
 
 <table class="table">
   <tbody>
     <tr class="table-primary"><th colspan="2">GeologicalContext <span class="badge bg-primary float-end">Class</span></th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/GeologicalContext">http://rs.tdwg.org/dwc/terms/GeologicalContext</a></td></tr>
-    <tr><td>Definition</td><td>A set of geological designations, such as stratigraphy, that qualifies a dcterms:Location or source of a dwc:MaterialEntity.</td></tr>
+    <tr><td>Definition</td><td>A set of geological designations, such as stratigraphy, that qualify a dcterms:Location or source of a dwc:MaterialEntity.</td></tr>
     <tr><td>Notes</td><td></td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>a particular lithostratigraphic layer</code></li><li class="list-group-item"><code>a specific chronostratigraphic unit</code></li></ul></td></tr>
   </tbody>
@@ -1645,8 +1878,8 @@ This category contains terms that are generic in that they might apply to any ty
   <tbody>
     <tr class="table-secondary"><th colspan="2">geologicalContextID</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/geologicalContextID">http://rs.tdwg.org/dwc/terms/geologicalContextID</a></td></tr>
-    <tr><td>Definition</td><td>An identifier for the set of information associated with a dwc:GeologicalContext (the location within a geological context, such as stratigraphy). May be a global unique identifier or an identifier specific to the data set.</td></tr>
-    <tr><td>Notes</td><td></td></tr>
+    <tr><td>Definition</td><td>An identifier for a dwc:GeologicalContext.</td></tr>
+    <tr><td>Notes</td><td>May be a global unique identifier or an identifier specific to the data set.</td></tr>
     <tr><td>Examples</td><td><code><a href="https://opencontext.org/subjects/e54377f7-4452-4315-b676-40679b10c4d9">https://opencontext.org/subjects/e54377f7-4452-4315-b676-40679b10c4d9</a></code></td></tr>
   </tbody>
 </table>
@@ -1871,6 +2104,58 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Examples</td><td><code>Harlem coal</code></td></tr>
   </tbody>
 </table>
+<p class="invisible">
+  <span id="dwc:geologicEvent"></span>
+    <span id="geologicEvent"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">geologicEvent</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/geologicEvent">http://rs.tdwg.org/dwc/terms/geologicEvent</a></td></tr>
+    <tr><td>Definition</td><td>A name of an identifiable event during which one or more geologic processes acted to create or modify one or more dwc:GeologicalMaterials. </td></tr>
+    <tr><td>Notes</td><td>This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Sevier orogeny</code></li><li class="list-group-item"><code>Alleghanian orogeny</code></li><li class="list-group-item"><code>Alpine orogeny</code></li><li class="list-group-item"><code>Variscan orogeny</code></li><li class="list-group-item"><code>Vredefort impact</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:geologicProvince"></span>
+    <span id="geologicProvince"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">geologicProvince</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/geologicProvince">http://rs.tdwg.org/dwc/terms/geologicProvince</a></td></tr>
+    <tr><td>Definition</td><td>An extensive named region with similar geologic history, structural, petrographic, or physiographic features throughout in which the GeologicalContext was located.</td></tr>
+    <tr><td>Notes</td><td>This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Northwest Province</code></li><li class="list-group-item"><code>Surprise Paleovalley</code></li><li class="list-group-item"><code>Basin and Range</code> ;<code>Coastal Plain</code></li><li class="list-group-item"><code>Piedmont</code></li><li class="list-group-item"><code>Blue Ridge</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:lithodemicUnit"></span>
+    <span id="lithodemicUnit"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">lithodemicUnit</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/lithodemicUnit">http://rs.tdwg.org/dwc/terms/lithodemicUnit</a></td></tr>
+    <tr><td>Definition</td><td>A geologic unit that lacks stratification, is primarily comprised of intrusive, deformed, and/or metamorphosed rock, and is characterized by irregularly mixed lithology or highly complicated structural relations.</td></tr>
+    <tr><td>Notes</td><td>Due to the unstructured nature of complexes, both named units and lithological descriptive terms are acceptable values.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Catalina Core Complex</code></li><li class="list-group-item"><code>injection complex</code></li><li class="list-group-item"><code>New England Plutonic Suite</code></li><li class="list-group-item"><code>Sierra Nevada batholith</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:tectonicUnits"></span>
+    <span id="tectonicUnits"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">tectonicUnits</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/tectonicUnits">http://rs.tdwg.org/dwc/terms/tectonicUnits</a></td></tr>
+    <tr><td>Definition</td><td>The combination of all tectonic unit names for the rock from which a dwc:MaterialEntity was collected.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use an authoritative tectonic unit lexicon such as the Tectonic Map of Switzerland (TK500). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Upper Helvetic</code></li><li class="list-group-item"><code>Wildhorn Nappe Complex</code></li><li class="list-group-item"><code>Sublage Nappe</code></li></ul></td></tr>
+  </tbody>
+</table>
 
 
 <h2 id="identification">Identification</h2>
@@ -1881,6 +2166,7 @@ This category contains terms that are generic in that they might apply to any ty
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimIdentification">verbatimIdentification</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:isAcceptedIdentification">isAcceptedIdentification</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:taxonFormula">taxonFormula</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:taxonSortOrder">taxonSortOrder</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:identificationQualifier">identificationQualifier</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:typeStatus">typeStatus</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:identifiedBy">identifiedBy</a>
@@ -1935,8 +2221,8 @@ This category contains terms that are generic in that they might apply to any ty
   <tbody>
     <tr class="table-secondary"><th colspan="2">verbatimIdentification</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimIdentification">http://rs.tdwg.org/dwc/terms/verbatimIdentification</a></td></tr>
-    <tr><td>Definition</td><td>A string representing the taxonomic identification as it appeared in the original record.</td></tr>
-    <tr><td>Notes</td><td>This term is meant to allow the capture of an unaltered original identification/determination, including identification qualifiers, hybrid formulas, uncertainties, etc. This term is meant to be used in addition to dwc:scientificName (and dwc:identificationQualifier etc.), not instead of it.</td></tr>
+    <tr><td>Definition</td><td>A string representing the classification as it appeared in the original record.</td></tr>
+    <tr><td>Notes</td><td>This term is meant to allow the capture of an unaltered original identification/determination, including identification qualifiers, hybrid formulas, uncertainties, etc. This term is meant to be used in addition to dwc:geologicalMaterialName or dwc:scientificName (and dwc:identificationQualifier etc.), not instead of it.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Peromyscus sp.</code></li><li class="list-group-item"><code>Ministrymon sp. nov. 1</code></li><li class="list-group-item"><code>Anser anser × Branta canadensis</code></li><li class="list-group-item"><code>Pachyporidae?</code></li><li class="list-group-item"><code>Potentilla × pantotricha Soják</code></li><li class="list-group-item"><code>Aconitum pilipes × A. variegatum</code></li><li class="list-group-item"><code>Lepomis auritus x cyanellus</code></li></ul></td></tr>
   </tbody>
 </table>
@@ -1964,6 +2250,19 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Definition</td><td>A string representing the pattern to use to construct a dwc:Identification from dwc:Taxon names and identification qualifiers.</td></tr>
     <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>A</code></li><li class="list-group-item"><code>not A</code></li><li class="list-group-item"><code>A ?</code></li><li class="list-group-item"><code>A or B</code></li><li class="list-group-item"><code>A and B</code></li><li class="list-group-item"><code>A x B</code></li><li class="list-group-item"><code>A cf.</code></li><li class="list-group-item"><code>A aff.</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:taxonSortOrder"></span>
+    <span id="taxonSortOrder"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">taxonSortOrder</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/taxonSortOrder">http://rs.tdwg.org/dwc/terms/taxonSortOrder</a></td></tr>
+    <tr><td>Definition</td><td>A numerical position of a dwc:Taxon in a dwc:taxonFormula.</td></tr>
+    <tr><td>Notes</td><td>The number signifies which dwc:Taxon in the related dwc:taxonFormula this record refers to (e.g., <code>1</code> refs to the <code>A</code> in the dwc:taxonFormula "A x B").</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>1</code></li><li class="list-group-item"><code>2</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2026,7 +2325,7 @@ This category contains terms that are generic in that they might apply to any ty
   <tbody>
     <tr class="table-secondary"><th colspan="2">dateIdentified</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/dateIdentified">http://rs.tdwg.org/dwc/terms/dateIdentified</a></td></tr>
-    <tr><td>Definition</td><td>The date on which the subject was determined as representing the dwc:Taxon.</td></tr>
+    <tr><td>Definition</td><td>The date on which the dwc:Identification was made.</td></tr>
     <tr><td>Notes</td><td>Recommended best practice is to use a date that conforms to ISO 8601-1:2019.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>1963-03-08T14:07-06:00</code> (8 Mar 1963 at or after 2:07pm and before 2:08pm in the time zone six hours earlier than UTC)</li><li class="list-group-item"><code>2009-02-20T08:40Z</code> (20 February 2009 at or after 8:40am and before 8:41 UTC)</li><li class="list-group-item"><code>2018-08-29T15:19</code> (29 August 2018 at or after 3:19pm and before 3:20pm local time)</li><li class="list-group-item"><code>1809-02-12</code> (within the day 12 February 1809)</li><li class="list-group-item"><code>1906-06</code> (in the month of June 1906)</li><li class="list-group-item"><code>1971</code> (in the year 1971)</li><li class="list-group-item"><code>2007-03-01T13:00:00Z/2008-05-11T15:30:00Z</code> (some time within the interval beginning 1 March 2007 at 1pm UTC and before 11 May 2008 at 3:30pm UTC)</li><li class="list-group-item"><code>1900/1909</code> (some time within the interval between the beginning of the year 1900 and before the year 1909)</li><li class="list-group-item"><code>2007-11-13/15</code> (some time in the interval between the beginning of 13 November 2007 and before 15 November 2007)</li></ul></td></tr>
   </tbody>
@@ -2052,7 +2351,7 @@ This category contains terms that are generic in that they might apply to any ty
   <tbody>
     <tr class="table-secondary"><th colspan="2">identificationVerificationStatus</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/identificationVerificationStatus">http://rs.tdwg.org/dwc/terms/identificationVerificationStatus</a></td></tr>
-    <tr><td>Definition</td><td>A categorical indicator of the extent to which a taxonomic determination has been verified to be correct.</td></tr>
+    <tr><td>Definition</td><td>A categorical indicator of the extent to which a dwc:Identification has been verified to be correct.</td></tr>
     <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary such as that used in HISPID and ABCD. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><code>0</code> (unverified in HISPID/ABCD)</td></tr>
   </tbody>
@@ -2077,9 +2376,18 @@ This category contains terms that are generic in that they might apply to any ty
 <div class="my-4">
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:materialEntityID">materialEntityID</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:digitalSpecimenID">digitalSpecimenID</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:isPartOfMaterialEntityID">isPartOfMaterialEntityID</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:materialRole">materialRole</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:materialProportion">materialProportion</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:materialEntityCategory">materialEntityCategory</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:materialEntityType">materialEntityType</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:discipline">discipline</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:sampledFeatureType">sampledFeatureType</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:institutionID">institutionID</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:collectionID">collectionID</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:institutionCode">institutionCode</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:collectionCode">collectionCode</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:ownerInstitutionCode">ownerInstitutionCode</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:typeOfType">typeOfType</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:typifiedName">typifiedName</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:catalogNumber">catalogNumber</a>
@@ -2089,8 +2397,16 @@ This category contains terms that are generic in that they might apply to any ty
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:objectQuantityType">objectQuantityType</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:preparations">preparations</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:disposition">disposition</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:measuredMassInGrams">measuredMassInGrams</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimMass">verbatimMass</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimLabel">verbatimLabel</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:associatedSequences">associatedSequences</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:treatments">treatments</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:handlingRequirements">handlingRequirements</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:hazardType">hazardType</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:hazardRemarks">hazardRemarks</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:damageRemarks">damageRemarks</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:materialDescription">materialDescription</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:materialEntityRemarks">materialEntityRemarks</a>
   </div>
 
@@ -2131,6 +2447,45 @@ This category contains terms that are generic in that they might apply to any ty
   </tbody>
 </table>
 <p class="invisible">
+  <span id="dwc:isPartOfMaterialEntityID"></span>
+    <span id="isPartOfMaterialEntityID"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">isPartOfMaterialEntityID</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/isPartOfMaterialEntityID">http://rs.tdwg.org/dwc/terms/isPartOfMaterialEntityID</a></td></tr>
+    <tr><td>Definition</td><td>An identifier for a dwc:MaterialEntity of which this dwc:MaterialEntity is a part.</td></tr>
+    <tr><td>Notes</td><td>A dwc:MaterialEntity was not taken from (derived from) a dwc:MaterialEntity of which it is a part. Recommended best practice is to use a globally unique identifier. The hierarchical relationship supported by this term allows for the atomization of individual parts of a dwc:MaterialEntity, such as a specimen composed of two minerals (Pyrite and Quartz), each with its own characteristics and potential dwc:Assertions.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:materialRole"></span>
+    <span id="materialRole"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">materialRole</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/materialRole">http://rs.tdwg.org/dwc/terms/materialRole</a></td></tr>
+    <tr><td>Definition</td><td>A category that best matches the nature of the relationship between a dwc:MaterialEntity and another dwc:MaterialEntity of which it is a part.</td></tr>
+    <tr><td>Notes</td><td>Roles depend on both the part and the parent object. For instance, a rock (material category) within the parent specimen serves as a clast and depends on both the specimen part and the parent specimen for its existence. Recommended best practice is to use a controlled vocabulary such as IUGS CGI Compound Material Consituent Part, <a href="http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole">http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole</a>. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>matrix</code></li><li class="list-group-item"><code>groundmass</code></li><li class="list-group-item"><code>phenocryst</code></li><li class="list-group-item"><code>xenolith</code></li><li class="list-group-item"><code>vein</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:materialProportion"></span>
+    <span id="materialProportion"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">materialProportion</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/materialProportion">http://rs.tdwg.org/dwc/terms/materialProportion</a></td></tr>
+    <tr><td>Definition</td><td>The qualitative or quantitative abundance of a dwc:MaterialEntity with respect to another dwc:MaterialEntity of which it is a part.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary such as <a href="http://resource.geosciml.org/classifier/cgi/proportionterm">http://resource.geosciml.org/classifier/cgi/proportionterm</a>. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>20%</code></li><li class="list-group-item"><code>minor</code></li><li class="list-group-item"> <code>dominant</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
   <span id="dwc:materialEntityCategory"></span>
     <span id="materialEntityCategory"></span>
   </p>
@@ -2167,6 +2522,84 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Definition</td><td>The primary branch or branches of knowledge represented by a dwc:MaterialEntity.</td></tr>
     <tr><td>Notes</td><td>This term can be used to classify records according to branches of knowledge. Recommended best practice is to use a controlled vocabulary and to separate the values in a list with space vertical bar space (<code> | </code>). It is also recommended to use this field to describe specimenType in MIDS. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Botany</code></li><li class="list-group-item"><code>Botany | Virology | Taxonomy</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:sampledFeatureType"></span>
+    <span id="sampledFeatureType"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">sampledFeatureType</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/sampledFeatureType">http://rs.tdwg.org/dwc/terms/sampledFeatureType</a></td></tr>
+    <tr><td>Definition</td><td>The type of naturally occurring or anthropogenic physical feature from which a dwc:MaterialEntity was sampled.</td></tr>
+    <tr><td>Notes</td><td>This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>float</code></li><li class="list-group-item"><code>mine dump</code></li><li class="list-group-item"><code>mine/quarry pit</code></li><li class="list-group-item"><code>outcrop</code></li><li class="list-group-item"><code>erratic boulder</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:institutionID"></span>
+    <span id="institutionID"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">institutionID</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/institutionID">http://rs.tdwg.org/dwc/terms/institutionID</a></td></tr>
+    <tr><td>Definition</td><td>An identifier for an organization.</td></tr>
+    <tr><td>Notes</td><td>For physical specimens, the recommended best practice is to use a globally unique and resolvable identifier from a collections registry such as the Research Organization Registry (ROR) or the Global Registry of Scientific Collections (<a href="https://scientific-collections.gbif.org/">https://scientific-collections.gbif.org/</a>).</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="https://ror.org/015hz7p22">https://ror.org/015hz7p22</a></code></li><li class="list-group-item"><code><a href="http://grscicoll.org/institution/museum-southwestern-biology">http://grscicoll.org/institution/museum-southwestern-biology</a></code></li><li class="list-group-item"><code><a href="https://www.gbif.org/grscicoll/institution/e3d4dcc4-81e2-444c-8a5c-41d1044b5381">https://www.gbif.org/grscicoll/institution/e3d4dcc4-81e2-444c-8a5c-41d1044b5381</a></code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:collectionID"></span>
+    <span id="collectionID"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">collectionID</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/collectionID">http://rs.tdwg.org/dwc/terms/collectionID</a></td></tr>
+    <tr><td>Definition</td><td>An identifier for a collection.</td></tr>
+    <tr><td>Notes</td><td>For physical specimens, the recommended best practice is to use a globally unique and resolvable identifier from a collections registry such as the Global Registry of Scientific Collections (<a href="https://scientific-collections.gbif.org/">https://scientific-collections.gbif.org/</a>).</td></tr>
+    <tr><td>Examples</td><td><code><a href="https://scientific-collections.gbif.org/collection/fbd3ed74-5a21-4e01-b86a-33d36f032d9c">https://scientific-collections.gbif.org/collection/fbd3ed74-5a21-4e01-b86a-33d36f032d9c</a></code></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:institutionCode"></span>
+    <span id="institutionCode"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">institutionCode</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/institutionCode">http://rs.tdwg.org/dwc/terms/institutionCode</a></td></tr>
+    <tr><td>Definition</td><td>A name (or acronym) in use by an institution having custody of a resource.</td></tr>
+    <tr><td>Notes</td><td>The institution having ownership of a resource should be given in dwc:ownerInstitutionCode.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>MVZ</code></li><li class="list-group-item"><code>FMNH</code></li><li class="list-group-item"><code>CLO</code></li><li class="list-group-item"><code>UCMP</code></li><li class="list-group-item"><code>National Museum of Kenya</code></li><li class="list-group-item"><code>Kew Gardens</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:collectionCode"></span>
+    <span id="collectionCode"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">collectionCode</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/collectionCode">http://rs.tdwg.org/dwc/terms/collectionCode</a></td></tr>
+    <tr><td>Definition</td><td>A name, acronym, coden, or initialism identifying a collection.</td></tr>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Mammals</code></li><li class="list-group-item"><code>Hildebrandt</code></li><li class="list-group-item"><code>EBIRD</code></li><li class="list-group-item"><code>VP</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:ownerInstitutionCode"></span>
+    <span id="ownerInstitutionCode"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">ownerInstitutionCode</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/ownerInstitutionCode">http://rs.tdwg.org/dwc/terms/ownerInstitutionCode</a></td></tr>
+    <tr><td>Definition</td><td>A name (or acronym) in use by an institution having ownership of a resource.</td></tr>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>NPS</code></li><li class="list-group-item"><code>APN</code></li><li class="list-group-item"><code>InBio</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2229,7 +2662,7 @@ This category contains terms that are generic in that they might apply to any ty
   <tbody>
     <tr class="table-secondary"><th colspan="2">recordNumber</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/recordNumber">http://rs.tdwg.org/dwc/terms/recordNumber</a></td></tr>
-    <tr><td>Definition</td><td>An identifier given to the dwc:Occurrence at the time it was recorded. Often serves as a link between field notes and a dwc:Occurrence record, such as a specimen collector's number.</td></tr>
+    <tr><td>Definition</td><td>An identifier given to the dwc:Occurrence at the time it was recorded. Often serves as a link between field notes and a dwc:MaterialEntity record, such as a specimen collector's number.</td></tr>
     <tr><td>Notes</td><td>This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><code>OPP 7101</code></td></tr>
   </tbody>
@@ -2287,6 +2720,32 @@ This category contains terms that are generic in that they might apply to any ty
   </tbody>
 </table>
 <p class="invisible">
+  <span id="dwc:measuredMassInGrams"></span>
+    <span id="measuredMassInGrams"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">measuredMassInGrams</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/measuredMassInGrams">http://rs.tdwg.org/dwc/terms/measuredMassInGrams</a></td></tr>
+    <tr><td>Definition</td><td>Mass of a dwc:MaterialEntity, measured in grams.</td></tr>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>0.03</code></li><li class="list-group-item"><code>2.34</code></li><li class="list-group-item"><code>56.6</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:verbatimMass"></span>
+    <span id="verbatimMass"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">verbatimMass</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimMass">http://rs.tdwg.org/dwc/terms/verbatimMass</a></td></tr>
+    <tr><td>Definition</td><td>The verbatim original representation of the mass of a dwc:MaterialEntity, including original units of measurement.</td></tr>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>11.01 Lbs</code></li><li class="list-group-item"><code>105.07 g</code></li><li class="list-group-item"><code>2.45 kg</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
   <span id="dwc:verbatimLabel"></span>
     <span id="verbatimLabel"></span>
   </p>
@@ -2313,6 +2772,84 @@ This category contains terms that are generic in that they might apply to any ty
   </tbody>
 </table>
 <p class="invisible">
+  <span id="dwc:treatments"></span>
+    <span id="treatments"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">treatments</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/treatments">http://rs.tdwg.org/dwc/terms/treatments</a></td></tr>
+    <tr><td>Definition</td><td>Description of any processes or curatorial actions taken specifically to mitigate damage to a dwc:MaterialEntity.</td></tr>
+    <tr><td>Notes</td><td>Includes both proactive and reactive actions.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:handlingRequirements"></span>
+    <span id="handlingRequirements"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">handlingRequirements</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/handlingRequirements">http://rs.tdwg.org/dwc/terms/handlingRequirements</a></td></tr>
+    <tr><td>Definition</td><td>A description of the procedures required to preserve and protect a dwc:MaterialEntity during handling.</td></tr>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>handle with gloves</code></li><li class="list-group-item"><code>not to be taken out of storage medium</code></li><li class="list-group-item"><code>avoid contact with direct sunlight</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:hazardType"></span>
+    <span id="hazardType"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">hazardType</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/hazardType">http://rs.tdwg.org/dwc/terms/hazardType</a></td></tr>
+    <tr><td>Definition</td><td>A term that belongs to a hazard classification scheme based on a set of unique characteristics and negative health outcomes.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary such as <a href="https://kos.geospecimens.org/vocab/hazard-type">https://kos.geospecimens.org/vocab/hazard-type</a>. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>carcinogen</code></li><li class="list-group-item"><code>skin irritant</code></li><li class="list-group-item"><code>radioactive</code></li><li class="list-group-item"><code>toxic</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:hazardRemarks"></span>
+    <span id="hazardRemarks"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">hazardRemarks</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/hazardRemarks">http://rs.tdwg.org/dwc/terms/hazardRemarks</a></td></tr>
+    <tr><td>Definition</td><td>Comments or notes about the type of hazards associated with a dwc:MaterialEntity.</td></tr>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>asbestos</code></li><li class="list-group-item"><code>slightly radioactive</code></li><li class="list-group-item"><code>requires skin protection</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:damageRemarks"></span>
+    <span id="damageRemarks"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">damageRemarks</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/damageRemarks">http://rs.tdwg.org/dwc/terms/damageRemarks</a></td></tr>
+    <tr><td>Definition</td><td>A general description of any physical changes to a dwc:MaterialEntity that have negatively affected its value.</td></tr>
+    <tr><td>Notes</td><td>See Royce, K., Baars, C., & Viles, H. (2021). Defining Damage and Susceptibility, with Implications for Mineral Specimens and Objects: Introducing the Mineral Susceptibility Database. Studies in Conservation, 68(3), 298-317. <a href="https://doi.org/10.1080/00393630.2021.2015947">https://doi.org/10.1080/00393630.2021.2015947</a></td></tr>
+    <tr><td>Examples</td><td><code>Due to oxidation and hydration of the pyrite in the coal, the sample has largely decayed to a coal powder with some larger coal pieces | Some terminations broken off | Attached label not legible (or torn, or covered)</code></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:materialDescription"></span>
+    <span id="materialDescription"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">materialDescription</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/materialDescription">http://rs.tdwg.org/dwc/terms/materialDescription</a></td></tr>
+    <tr><td>Definition</td><td>Remarks on the physical characteristics of a dwc:MaterialEntity, particularly those that distinguish it from otherwise similar dwc:MaterialEntities.</td></tr>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Showpiece</code></li><li class="list-group-item"><code>Historically valuable</code></li><li class="list-group-item"><code>Extraordinary composition</code></li><li class="list-group-item"><code>Two generations of quartz</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
   <span id="dwc:materialEntityRemarks"></span>
     <span id="materialEntityRemarks"></span>
   </p>
@@ -2327,33 +2864,145 @@ This category contains terms that are generic in that they might apply to any ty
 </table>
 
 
-<h2 id="materialsample">MaterialSample</h2>
+<h2 id="geologicalmaterial">GeologicalMaterial</h2>
 
 <div class="my-4">
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:materialSampleID">materialSampleID</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:geologicalMaterialNames">geologicalMaterialNames</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:geologicMaterialNameID">geologicMaterialNameID</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:geologicalMaterialNameTypes">geologicalMaterialNameTypes</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:classificationCodes">classificationCodes</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:mineralSequence">mineralSequence</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:measuredChemistry">measuredChemistry</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:measuredChemistrySource">measuredChemistrySource</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:mineralogicalAnalysisProtocol">mineralogicalAnalysisProtocol</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:chemistryRemarks">chemistryRemarks</a>
   </div>
 
 <table class="table">
   <tbody>
-    <tr class="table-primary"><th colspan="2">MaterialSample <span class="badge bg-primary float-end">Class</span></th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/MaterialSample">http://rs.tdwg.org/dwc/terms/MaterialSample</a></td></tr>
-    <tr><td>Definition</td><td>A material entity that represents an entity of interest in whole or in part.</td></tr>
+    <tr class="table-primary"><th colspan="2">GeologicalMaterial <span class="badge bg-primary float-end">Class</span></th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/GeologicalMaterial">http://rs.tdwg.org/dwc/terms/GeologicalMaterial</a></td></tr>
+    <tr><td>Definition</td><td>A dwc:MaterialEntity that is geological in nature.</td></tr>
     <tr><td>Notes</td><td></td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>a whole organism preserved in a collection</code></li><li class="list-group-item"><code>a part of an organism isolated for some purpose</code></li><li class="list-group-item"><code>a soil sample</code></li><li class="list-group-item"><code>a marine microbial sample</code></li></ul></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>a specific mineral</code></li><li class="list-group-item"><code>a specific rock</code></li><li class="list-group-item"><code>a specific ore</code></li></ul></td></tr>
   </tbody>
 </table>
 
 <p class="invisible">
-  <span id="dwc:materialSampleID"></span>
-    <span id="materialSampleID"></span>
+  <span id="dwc:geologicalMaterialNames"></span>
+    <span id="geologicalMaterialNames"></span>
   </p>
 <table class="table">
   <tbody>
-    <tr class="table-secondary"><th colspan="2">materialSampleID</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/materialSampleID">http://rs.tdwg.org/dwc/terms/materialSampleID</a></td></tr>
-    <tr><td>Definition</td><td>An identifier for the dwc:MaterialSample (as opposed to a particular digital record of the dwc:MaterialSample). In the absence of a persistent global unique identifier, construct one from a combination of identifiers in the record that will most closely make the dwc:materialSampleID globally unique.</td></tr>
+    <tr class="table-secondary"><th colspan="2">geologicalMaterialNames</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/geologicalMaterialNames">http://rs.tdwg.org/dwc/terms/geologicalMaterialNames</a></td></tr>
+    <tr><td>Definition</td><td>A list (concatenated and separated) of mineral or lithotaxon names for a dwc:GeologicalMaterial.</td></tr>
+    <tr><td>Notes</td><td>May includes both informal (e.g., variety, synonym) and formal (classification) names. The first name in the list should be considered the preferred name. Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>quartz | smoky quartz</code></li><li class="list-group-item"><code>muscovite</code></li><li class="list-group-item"><code>garnet group</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:geologicMaterialNameID"></span>
+    <span id="geologicMaterialNameID"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">geologicMaterialNameID</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/geologicMaterialNameID">http://rs.tdwg.org/dwc/terms/geologicMaterialNameID</a></td></tr>
+    <tr><td>Definition</td><td>An identifier for a mineral or lithotaxon name for a dwc:GeologicalMaterial. May be a global unique identifier or an identifier specific to the data set.</td></tr>
     <tr><td>Notes</td><td>Recommended best practice is to use a persistent, globally unique identifier.</td></tr>
-    <tr><td>Examples</td><td><code>06809dc5-f143-459a-be1a-6f03e63fc083</code></td></tr>
+    <tr><td>Examples</td><td><code><a href="https://geospecimens.org/api/v1/catalog/resource/mineral-name/ba673bdf-7228-11f0-a057-52f8e1bb0628">https://geospecimens.org/api/v1/catalog/resource/mineral-name/ba673bdf-7228-11f0-a057-52f8e1bb0628</a></code></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:geologicalMaterialNameTypes"></span>
+    <span id="geologicalMaterialNameTypes"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">geologicalMaterialNameTypes</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/geologicalMaterialNameTypes">http://rs.tdwg.org/dwc/terms/geologicalMaterialNameTypes</a></td></tr>
+    <tr><td>Definition</td><td>A list (concatenated and separated) of the types of names provided in dwc:geologicalMaterialNames.</td></tr>
+    <tr><td>Notes</td><td>If this term is populated, it should have an equal number of items in the list as for the list in dwc:geologicalMaterialNames and the types should have the same order as the names to which they refer. Recommended best practice is to use a controlled vocabulary for the values in a list (e.g., <a href="https://kos.geospecimens.org/def/geological-specimen-name-type">https://kos.geospecimens.org/def/geological-specimen-name-type</a>). See Gavryliv (2023), <a href="https://doi.org/10.1180/mgm.2023.23">https://doi.org/10.1180/mgm.2023.23</a>, for a detailed breakdown of informal, alternate names.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>species | variety</code></li><li class="list-group-item"><code>species</code></li><li class="list-group-item"><code>group</code></li><li class="list-group-item"> <code>synonym</code></li><li class="list-group-item"><code>classification</code></li><li class="list-group-item"><code>historical</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:classificationCodes"></span>
+    <span id="classificationCodes"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">classificationCodes</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/classificationCodes">http://rs.tdwg.org/dwc/terms/classificationCodes</a></td></tr>
+    <tr><td>Definition</td><td>A list (concatenated and separated) of codes that each identifies a name from a classification system applied to a dwc:GeologicalMaterial.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>71.02.02a.01</code> ("muscovite" in the Dana classification system)</li><li class="list-group-item"><code>9.AD.25</code> ("garnet group" in the Nickel-Strunz classification system)</li><li class="list-group-item"><code>75.01.03.01 | 4.DA.05</code> ("quartz" the Dana classification system and "quartz group" in the Nickel-Strunz classification system)</li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:mineralSequence"></span>
+    <span id="mineralSequence"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">mineralSequence</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/mineralSequence">http://rs.tdwg.org/dwc/terms/mineralSequence</a></td></tr>
+    <tr><td>Definition</td><td>A list (concatenated and separated) of minerals in a dwc:GeologicalMaterial, ordered in a manner that illustrates the relative timing of mineral formation.</td></tr>
+    <tr><td>Notes</td><td>The list should only contain minerals that belong to a readily identifiable sequence of formation. Therefore, a list may contain a subset of the minerals in a specimen. Minerals that formed in-situ with one another are separated by a plus. Minerals that formed in the sequence are separated by a greater than (' > ') symbol.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Sphalerite > Quartz > Pyrite</code></li><li class="list-group-item"><code>Calcite > Quartz > Sphalerite > Pyrite</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:measuredChemistry"></span>
+    <span id="measuredChemistry"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">measuredChemistry</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/measuredChemistry">http://rs.tdwg.org/dwc/terms/measuredChemistry</a></td></tr>
+    <tr><td>Definition</td><td>A concise expression of the chemical composition of a mineral that shows the number of atoms of each element in a molecule, their spatial arrangement, and their linkage to each other.</td></tr>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>SiO2 (65.76)</code></li><li class="list-group-item"><code>TiO2 (32.120)</code></li><li class="list-group-item"><code>Al2O3 (2.21)</code></li><li class="list-group-item"><code>(Mg0.77Fe0.23)2SiO4</code></li><li class="list-group-item"><code>An6.4 Ab73.6 Or20</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:measuredChemistrySource"></span>
+    <span id="measuredChemistrySource"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">measuredChemistrySource</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/measuredChemistrySource">http://rs.tdwg.org/dwc/terms/measuredChemistrySource</a></td></tr>
+    <tr><td>Definition</td><td>A list (concatenated and separated) of resources associated with the reported measured chemistry described specifically enough to allow anyone in the future to use the same resources.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use full bibliographic citations, global unique identifiers, or resolvable and persistent IRIs. See the broader concept <a href="http://rs.tdwg.org/dwc/terms/associatedReferences">http://rs.tdwg.org/dwc/terms/associatedReferences</a>. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><code>Novak, G. A., & Gibbs, G. V. (1971). The crystal chemistry of the silicate garnets. American Mineralogist: Journal of Earth and Planetary Materials, 56(5-6), 791-825.</code></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:mineralogicalAnalysisProtocol"></span>
+    <span id="mineralogicalAnalysisProtocol"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">mineralogicalAnalysisProtocol</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/mineralogicalAnalysisProtocol">http://rs.tdwg.org/dwc/terms/mineralogicalAnalysisProtocol</a></td></tr>
+    <tr><td>Definition</td><td>A technique used to determine the chemical composition or crystallography of a mineral.</td></tr>
+    <tr><td>Notes</td><td>Acronyms should be avoided even for widely recognized annotations. Recommended best practice is to use a controlled vocabulary such as <a href="https://vocabs.ardc.edu.au/viewById/650">https://vocabs.ardc.edu.au/viewById/650</a>. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Wet Chemistry</code></li><li class="list-group-item"><code>X-ray fluorescence</code></li><li class="list-group-item"><code>Electron probe microanalysis</code></li><li class="list-group-item"><code>Scanning electron microscopy with energy-dispersive X-ray spectroscopy</code></li><li class="list-group-item"><code>X-ray diffraction</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:chemistryRemarks"></span>
+    <span id="chemistryRemarks"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">chemistryRemarks</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/chemistryRemarks">http://rs.tdwg.org/dwc/terms/chemistryRemarks</a></td></tr>
+    <tr><td>Definition</td><td>General remarks about the chemical and isotopic composition of a dwc:GeologicalMaterial.</td></tr>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
 
@@ -2376,6 +3025,7 @@ This category contains terms that are generic in that they might apply to any ty
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:establishmentMeans">establishmentMeans</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:degreeOfEstablishment">degreeOfEstablishment</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:pathway">pathway</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:substrate">substrate</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:georeferenceVerificationStatus">georeferenceVerificationStatus</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:occurrenceStatus">occurrenceStatus</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:associatedMedia">associatedMedia</a>
@@ -2416,7 +3066,7 @@ This category contains terms that are generic in that they might apply to any ty
   <tbody>
     <tr class="table-secondary"><th colspan="2">recordedBy</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/recordedBy">http://rs.tdwg.org/dwc/terms/recordedBy</a></td></tr>
-    <tr><td>Definition</td><td>A name for a dcterms:Agent responsible for recording a dwc:Occurrence.</td></tr>
+    <tr><td>Definition</td><td>A name for a dcterms:Agent responsible for recording a dwc:Event.</td></tr>
     <tr><td>Notes</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>José E. Crespo</code></li><li class="list-group-item"><code>Oliver P. Pearson | Anita K. Pearson</code></li><li class="list-group-item"><code>Megatherium Club</code></li><li class="list-group-item"><code>The Natural History Society of Northumbria</code></li><li class="list-group-item"><code>ROV SuBastian</code></li></ul></td></tr>
   </tbody>
@@ -2429,7 +3079,7 @@ This category contains terms that are generic in that they might apply to any ty
   <tbody>
     <tr class="table-secondary"><th colspan="2">recordedByID</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/recordedByID">http://rs.tdwg.org/dwc/terms/recordedByID</a></td></tr>
-    <tr><td>Definition</td><td>An identifier for a dcterms:Agent responsible for recording a dwc:Occurrence.</td></tr>
+    <tr><td>Definition</td><td>An identifier for a dcterms:Agent responsible for recording a dwc:Event.</td></tr>
     <tr><td>Notes</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="https://orcid.org/0000-0002-1825-0097">https://orcid.org/0000-0002-1825-0097</a></code> (for an individual)</li><li class="list-group-item"><code><a href="https://orcid.org/0000-0002-1825-0097">https://orcid.org/0000-0002-1825-0097</a> | <a href="https://orcid.org/0000-0002-1825-0098">https://orcid.org/0000-0002-1825-0098</a></code> (for a list of people)</li></ul></td></tr>
   </tbody>
@@ -2591,6 +3241,19 @@ This category contains terms that are generic in that they might apply to any ty
   </tbody>
 </table>
 <p class="invisible">
+  <span id="dwc:substrate"></span>
+    <span id="substrate"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">substrate</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/substrate">http://rs.tdwg.org/dwc/terms/substrate</a></td></tr>
+    <tr><td>Definition</td><td>A type of biotic or abiotic material to which a dwc:Organism was attached during a dwc:Occurrence.</td></tr>
+    <tr><td>Notes</td><td>No inference can be made from this term that a dwc:Organism interacted in any other way than being connected to some (not a particular) material resource of the substrate type (such as during parasitization or decomposition). A host-parasite relationship is better expressed as a dwc:OrganismInteraction. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>stone</code></li><li class="list-group-item"><code>wall</code></li><li class="list-group-item"><code>decaying wood</code></li><li class="list-group-item"><code>wooden board fence</code></li><li class="list-group-item"><code>animal bones</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
   <span id="dwc:georeferenceVerificationStatus"></span>
     <span id="georeferenceVerificationStatus"></span>
   </p>
@@ -2624,9 +3287,9 @@ This category contains terms that are generic in that they might apply to any ty
   <tbody>
     <tr class="table-secondary"><th colspan="2">associatedMedia</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/associatedMedia">http://rs.tdwg.org/dwc/terms/associatedMedia</a></td></tr>
-    <tr><td>Definition</td><td>A list (concatenated and separated) of identifiers (publication, global unique identifier, URI) of media associated with the dwc:Occurrence.</td></tr>
-    <tr><td>Notes</td><td></td></tr>
-    <tr><td>Examples</td><td><code><a href="https://arctos.database.museum/media/10520962">https://arctos.database.museum/media/10520962</a> | <a href="https://arctos.database.museum/media/10520964">https://arctos.database.museum/media/10520964</a></code></td></tr>
+    <tr><td>Definition</td><td>A list (concatenated and separated) of associated ac:Media resources.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to separate the values in a list with space vertical bar space ( | ).</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="https://arctos.database.museum/media/10520962">https://arctos.database.museum/media/10520962</a> | <a href="https://arctos.database.museum/media/10520964">https://arctos.database.museum/media/10520964</a></code></li><li class="list-group-item"><code><a href="https://inaturalist-open-data.s3.amazonaws.com/photos/606894376/original.jpg">https://inaturalist-open-data.s3.amazonaws.com/photos/606894376/original.jpg</a></code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2650,9 +3313,9 @@ This category contains terms that are generic in that they might apply to any ty
   <tbody>
     <tr class="table-secondary"><th colspan="2">associatedReferences</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/associatedReferences">http://rs.tdwg.org/dwc/terms/associatedReferences</a></td></tr>
-    <tr><td>Definition</td><td>A list (concatenated and separated) of identifiers (publication, bibliographic reference, global unique identifier, URI) of literature associated with the dwc:Occurrence.</td></tr>
-    <tr><td>Notes</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>). Note that the dwc:ResourceRelationship class is an alternative means of representing associations, and with more detail. Note also that the intended usage of the term dcterms:references in Darwin Core when applied to a dwc:Occurrence is to point to the definitive source representation of that dwc:Occurrence if one is available. Note also that the intended usage of dcterms:bibliographicCitation in Darwin Core when applied to a dwc:Occurrence is to provide the preferred way to cite the dwc:Occurrence itself.</td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="http://www.sciencemag.org/cgi/content/abstract/322/5899/261">http://www.sciencemag.org/cgi/content/abstract/322/5899/261</a></code></li><li class="list-group-item"><code>Christopher J. Conroy, Jennifer L. Neuwald. 2008. Phylogeographic study of the California vole, Microtus californicus Journal of Mammalogy, 89(3):755-767.</code></li><li class="list-group-item"><code>Steven R. Hoofer and Ronald A. Van Den Bussche. 2001. Phylogenetic Relationships of Plecotine Bats and Allies Based on Mitochondrial Ribosomal Sequences. Journal of Mammalogy 82(1):131-137. | Walker, Faith M., Jeffrey T. Foster, Kevin P. Drees, Carol L. Chambers. 2014. Spotted bat (Euderma maculatum) microsatellite discovery using illumina sequencing. Conservation Genetics Resources.</code></li></ul></td></tr>
+    <tr><td>Definition</td><td>A list (concatenated and separated) of associated dcterms:BibliographicResources.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to separate the values in a list with space vertical bar space ( | ). Note that the intended usage of the term dcterms:references in Darwin Core is to point to the definitive source representation of the resource, if one is available. Note also that the intended usage of dcterms:bibliographicCitation in Darwin Core is to provide the preferred way to cite the resource itself.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Christopher J. Conroy, Jennifer L. Neuwald. 2008. Phylogeographic study of the California vole, Microtus californicus Journal of Mammalogy, 89(3):755-767.</code></li><li class="list-group-item"><code>Steven R. Hoofer and Ronald A. Van Den Bussche. 2001. Phylogenetic Relationships of Plecotine Bats and Allies Based on Mitochondrial Ribosomal Sequences. Journal of Mammalogy 82(1):131-137. | Walker, Faith M., Jeffrey T. Foster, Kevin P. Drees, Carol L. Chambers. 2014. Spotted bat (Euderma maculatum) microsatellite discovery using illumina sequencing. Conservation Genetics Resources.</code></li><li class="list-group-item"><code><a href="https://doi.org/10.3897/BDJ.14.e177525">https://doi.org/10.3897/BDJ.14.e177525</a></code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2690,6 +3353,7 @@ This category contains terms that are generic in that they might apply to any ty
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:organismScope">organismScope</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:organismName">organismName</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:causeOfDeath">causeOfDeath</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:organismPart">organismPart</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:associatedOrganisms">associatedOrganisms</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:previousIdentifications">previousIdentifications</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:organismRemarks">organismRemarks</a>
@@ -2727,7 +3391,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">organismScope</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/organismScope">http://rs.tdwg.org/dwc/terms/organismScope</a></td></tr>
     <tr><td>Definition</td><td>A description of the kind of dwc:Organism instance. Can be used to indicate whether the dwc:Organism instance represents a discrete organism or if it represents a particular type of aggregation.</td></tr>
-    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary. This term is not intended to be used to specify a type of dwc:Taxon. To describe the kind of dwc:Organism using a URI object in RDF, use rdf:type (<a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</a>) instead.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>multicellular organism</code></li><li class="list-group-item"><code>virus</code></li><li class="list-group-item"><code>clone</code></li><li class="list-group-item"><code>pack</code></li><li class="list-group-item"><code>colony</code></li></ul></td></tr>
   </tbody>
 </table>
@@ -2755,6 +3419,19 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Definition</td><td>An indication of the known or suspected cause of death of a dwc:Organism.</td></tr>
     <tr><td>Notes</td><td>The cause may be due to natural causes (e.g., disease, predation), human-related activities (e.g., roadkill, pollution), or other environmental factors (e.g., extreme weather events).</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>trap</code></li><li class="list-group-item"><code>poison</code></li><li class="list-group-item"><code>starvation</code></li><li class="list-group-item"><code>drowning</code></li><li class="list-group-item"><code>shooting</code></li><li class="list-group-item"><code>old age</code></li><li class="list-group-item"><code>vehicle collision</code></li><li class="list-group-item"><code>disease</code></li><li class="list-group-item"><code>herbicide</code></li><li class="list-group-item"><code>burning</code></li><li class="list-group-item"><code>infanticide</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:organismPart"></span>
+    <span id="organismPart"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">organismPart</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/organismPart">http://rs.tdwg.org/dwc/terms/organismPart</a></td></tr>
+    <tr><td>Definition</td><td>An anatomical part of a dwc:Organism.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary such as the controlled vocabulary for ac:subjectPart (<a href="http://rs.tdwg.org/ac/doc/part/">http://rs.tdwg.org/ac/doc/part/</a>). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>leaf</code></li><li class="list-group-item"><code>stomach</code></li><li class="list-group-item"><code>stamen</code></li><li class="list-group-item"><code>leg</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -3093,6 +3770,7 @@ This category contains terms that are generic in that they might apply to any ty
 <div class="my-4">
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:readCount">readCount</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:processedTotalReadCount">processedTotalReadCount</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:rawTotalReadCount">rawTotalReadCount</a>
   </div>
 
 <table class="table">
@@ -3128,7 +3806,20 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/processedTotalReadCount">http://rs.tdwg.org/dwc/terms/processedTotalReadCount</a></td></tr>
     <tr><td>Definition</td><td>The total number of reads obtained for a processed dwc:NucleotideSequence during a dwc:NucleotideAnalysis.</td></tr>
     <tr><td>Notes</td><td></td></tr>
-    <tr><td>Examples</td><td><code>50638</code>, <code>345987</code>, <code>764032</code></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>50638</code></li><li class="list-group-item"><code>345987</code></li><li class="list-group-item"><code>764032</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:rawTotalReadCount"></span>
+    <span id="rawTotalReadCount"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">rawTotalReadCount</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/rawTotalReadCount">http://rs.tdwg.org/dwc/terms/rawTotalReadCount</a></td></tr>
+    <tr><td>Definition</td><td>A total number of raw, unprocessed reads from a dwc:NucleotideAnalysis.</td></tr>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>70463</code></li><li class="list-group-item"><code>150456</code></li><li class="list-group-item"><code>586031</code></li></ul></td></tr>
   </tbody>
 </table>
 
@@ -3268,10 +3959,14 @@ This category contains terms that are generic in that they might apply to any ty
 <h2 id="provenance">Provenance</h2>
 
 <div class="my-4">
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:provenanceID">provenanceID</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:projectTitle">projectTitle</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:projectID">projectID</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:datasetName">datasetName</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:datasetID">datasetID</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#ac:fundingAttribution">fundingAttribution</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:fundingAttributionID">fundingAttributionID</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dcterms:references">references</a>
   </div>
 
 <table class="table">
@@ -3284,6 +3979,19 @@ This category contains terms that are generic in that they might apply to any ty
   </tbody>
 </table>
 
+<p class="invisible">
+  <span id="dwc:provenanceID"></span>
+    <span id="provenanceID"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">provenanceID</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/provenanceID">http://rs.tdwg.org/dwc/terms/provenanceID</a></td></tr>
+    <tr><td>Definition</td><td>An identifier for a dwc:Provenance.</td></tr>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
 <p class="invisible">
   <span id="dwc:projectTitle"></span>
     <span id="projectTitle"></span>
@@ -3311,6 +4019,32 @@ This category contains terms that are generic in that they might apply to any ty
   </tbody>
 </table>
 <p class="invisible">
+  <span id="dwc:datasetName"></span>
+    <span id="datasetName"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">datasetName</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/datasetName">http://rs.tdwg.org/dwc/terms/datasetName</a></td></tr>
+    <tr><td>Definition</td><td>A name of a source dataset.</td></tr>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Grinnell Resurvey Mammals</code></li><li class="list-group-item"><code>Lacey Ctenomys Recaptures</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:datasetID"></span>
+    <span id="datasetID"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">datasetID</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/datasetID">http://rs.tdwg.org/dwc/terms/datasetID</a></td></tr>
+    <tr><td>Definition</td><td>An identifier for the set of data. May be a global unique identifier or an identifier specific to a collection or institution.</td></tr>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td>Examples</td><td><code>b15d4952-7d20-46f1-8a3e-556a512b04c5</code></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
   <span id="ac:fundingAttribution"></span>
     <span id="fundingAttribution"></span>
   </p>
@@ -3334,6 +4068,19 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Definition</td><td>An identifier for a dcterms:Agent that financially supported a project.</td></tr>
     <tr><td>Notes</td><td>Provide a unique identifier for the funding body, such as an identifier used in governmental or international databases. If no official identifier exists, use a persistent and unique identifier within your organization or dataset. Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="https://ror.org/00epmv149">https://ror.org/00epmv149</a></code></li><li class="list-group-item"><code><a href="https://ror.org/00epmv149">https://ror.org/00epmv149</a> | <a href="https://ror.org/04jnzhb65">https://ror.org/04jnzhb65</a></code></li><li class="list-group-item"><code><a href="https://www.wikidata.org/wiki/Q13102615">https://www.wikidata.org/wiki/Q13102615</a></code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dcterms:references"></span>
+    <span id="references"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">references</th></tr>
+    <tr><td>Identifier</td><td><a href="http://purl.org/dc/terms/references">http://purl.org/dc/terms/references</a></td></tr>
+    <tr><td>Definition</td><td>A related resource that is referenced, cited, or otherwise pointed to by the described resource.</td></tr>
+    <tr><td>Notes</td><td>From Dublin Core, "This property is intended to be used with non-literal values. This property is an inverse property of Is Referenced By." The intended usage of this term in Darwin Core is to point to the definitive source representation of the resource (e.g., dwc:Taxon, dwc:Occurrence, dwc:Event), if one is available. Note that the intended usage of dcterms:bibliographicCitation in Darwin Core, by contrast, is to provide the preferred way to cite the resource itself.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="http://arctos.database.museum/guid/MVZ:Mamm:165861">http://arctos.database.museum/guid/MVZ:Mamm:165861</a></code> (MaterialEntity example)</li><li class="list-group-item"><code><a href="https://www.catalogueoflife.org/data/taxon/32664">https://www.catalogueoflife.org/data/taxon/32664</a> (Taxon example)</code></li></ul></td></tr>
   </tbody>
 </table>
 
@@ -3382,7 +4129,7 @@ This category contains terms that are generic in that they might apply to any ty
   <tbody>
     <tr class="table-secondary"><th colspan="2">resourceID</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/resourceID">http://rs.tdwg.org/dwc/terms/resourceID</a></td></tr>
-    <tr><td>Definition</td><td>An identifier for the resource that is the subject of the relationship.</td></tr>
+    <tr><td>Definition</td><td>An identifier for the subject of a dwc:ResourceRelationship.</td></tr>
     <tr><td>Notes</td><td></td></tr>
     <tr><td>Examples</td><td><code>f809b9e0-b09b-11e8-96f8-529269fb1459</code></td></tr>
   </tbody>
@@ -3447,7 +4194,7 @@ This category contains terms that are generic in that they might apply to any ty
   <tbody>
     <tr class="table-secondary"><th colspan="2">relationshipEstablishedDate</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/relationshipEstablishedDate">http://rs.tdwg.org/dwc/terms/relationshipEstablishedDate</a></td></tr>
-    <tr><td>Definition</td><td>The date-time on which the relationship between the two resources was established.</td></tr>
+    <tr><td>Definition</td><td>A date-time or time interval during which a dwc:ResourceRelationship was established.</td></tr>
     <tr><td>Notes</td><td>Recommended best practice is to use a date that conforms to ISO 8601-1:2019.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>1963-03-08T14:07-06:00</code> (8 Mar 1963 at or after 2:07pm and before 2:08pm in the time zone six hours earlier than UTC)</li><li class="list-group-item"><code>2009-02-20T08:40Z</code> (20 February 2009 at or after 8:40am and before 8:41 UTC)</li><li class="list-group-item"><code>2018-08-29T15:19</code> (29 August 2018 at or after 3:19pm and before 3:20pm local time)</li><li class="list-group-item"><code>1809-02-12</code> (within the day 12 February 1809)</li><li class="list-group-item"><code>1906-06</code> (in the month of June 1906)</li><li class="list-group-item"><code>1971</code> (in the year 1971)</li><li class="list-group-item"><code>2007-03-01T13:00:00Z/2008-05-11T15:30:00Z</code> (some time within the interval beginning 1 March 2007 at 1pm UTC and before 11 May 2008 at 3:30pm UTC)</li><li class="list-group-item"><code>1900/1909</code> (some time within the interval between the beginning of the year 1900 and before the year 1909)</li><li class="list-group-item"><code>2007-11-13/15</code> (some time in the interval between the beginning of 13 November 2007 and before 15 November 2007)</li></ul></td></tr>
   </tbody>
@@ -3460,9 +4207,883 @@ This category contains terms that are generic in that they might apply to any ty
   <tbody>
     <tr class="table-secondary"><th colspan="2">relationshipRemarks</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/relationshipRemarks">http://rs.tdwg.org/dwc/terms/relationshipRemarks</a></td></tr>
-    <tr><td>Definition</td><td>Comments or notes about the relationship between the two resources.</td></tr>
+    <tr><td>Definition</td><td>Comments or notes about a dwc:ResourceRelationship.</td></tr>
     <tr><td>Notes</td><td></td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>mother and offspring collected from the same nest</code></li><li class="list-group-item"><code>pollinator captured in the act</code></li></ul></td></tr>
+  </tbody>
+</table>
+
+
+<h2 id="survey">Survey</h2>
+
+<div class="my-4">
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:surveyID">surveyID</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:surveySiteType">surveySiteType</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:siteCount">siteCount</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:siteNestingDescription">siteNestingDescription</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:verbatimSiteDescriptions">verbatimSiteDescriptions</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:verbatimSiteNames">verbatimSiteNames</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:geospatialScopeAreaValue">geospatialScopeAreaValue</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:geospatialScopeAreaUnit">geospatialScopeAreaUnit</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:totalAreaSampledValue">totalAreaSampledValue</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:totalAreaSampledUnit">totalAreaSampledUnit</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:targetHabitatScope">targetHabitatScope</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:excludedHabitatScope">excludedHabitatScope</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:targetTaxonomicScope">targetTaxonomicScope</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:excludedTaxonomicScope">excludedTaxonomicScope</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:taxonCompletenessReported">taxonCompletenessReported</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:taxonCompletenessProtocols">taxonCompletenessProtocols</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:isTaxonomicScopeFullyReported">isTaxonomicScopeFullyReported</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:isAbsenceReported">isAbsenceReported</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:absentTaxa">absentTaxa</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:hasNonTargetTaxa">hasNonTargetTaxa</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:nonTargetTaxa">nonTargetTaxa</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:areNonTargetTaxaFullyReported">areNonTargetTaxaFullyReported</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:targetLifeStageScope">targetLifeStageScope</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:excludedLifeStageScope">excludedLifeStageScope</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:isLifeStageScopeFullyReported">isLifeStageScopeFullyReported</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:targetDegreeOfEstablishmentScope">targetDegreeOfEstablishmentScope</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:excludedDegreeOfEstablishmentScope">excludedDegreeOfEstablishmentScope</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:isDegreeOfEstablishmentScopeFullyReported">isDegreeOfEstablishmentScopeFullyReported</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:targetGrowthFormScope">targetGrowthFormScope</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:excludedGrowthFormScope">excludedGrowthFormScope</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:isGrowthFormScopeFullyReported">isGrowthFormScopeFullyReported</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:hasNonTargetOrganisms">hasNonTargetOrganisms</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:verbatimTargetScope">verbatimTargetScope</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:compilationTypes">compilationTypes</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:compilationSourceTypes">compilationSourceTypes</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:inventoryTypes">inventoryTypes</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:protocolNames">protocolNames</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:protocolDescriptions">protocolDescriptions</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:protocolReferences">protocolReferences</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:isAbundanceReported">isAbundanceReported</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:isAbundanceCapReported">isAbundanceCapReported</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:isLeastSpecificTargetCategoryQuantityInclusive">isLeastSpecificTargetCategoryQuantityInclusive</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:hasVouchers">hasVouchers</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:voucherInstitutions">voucherInstitutions</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:hasMaterialSamples">hasMaterialSamples</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:materialSampleTypes">materialSampleTypes</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:samplingPerformedBy">samplingPerformedBy</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:samplingPerformedByID">samplingPerformedByID</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:isSamplingEffortReported">isSamplingEffortReported</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:samplingEffortValue">samplingEffortValue</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:samplingEffortUnit">samplingEffortUnit</a>
+  </div>
+
+<table class="table">
+  <tbody>
+    <tr class="table-primary"><th colspan="2">Survey <span class="badge bg-primary float-end">Class</span></th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/Survey">http://rs.tdwg.org/eco/terms/Survey</a></td></tr>
+    <tr><td>Definition</td><td>A dwc:Event intentionally designed to characterize a defined biotic target or domain in such a way that the resulting dwc:Occurrences can be interpreted collectively to support ecological and monitoring inference (such as detectability, abundance, species co-occurence, spatial distribution, or temporal trends), rather than merely documenting individual observations or gathered material.</td></tr>
+    <tr><td>Notes</td><td>Many terms from the Humboldt Extension for Ecological Inventories (eco: namespace) are organized in this class, particularly those that help describe and document the sampling process.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>a botanical survey of a protected area to assess native and invasive plant species</code></li><li class="list-group-item"><code>a wetland vegetation mapping</code></li><li class="list-group-item"><code>a camera trap deployment in a rainforest to monitor large mammals</code></li><li class="list-group-item"><code>a frog call survey in wetlands across breeding seasons</code></li><li class="list-group-item"><code>a coverboard survey for reptiles in forested environments</code></li><li class="list-group-item"><code>a pollinator survey in an agricultural landscape</code></li><li class="list-group-item"><code>a macroinvertebrate sampling in a freshwater stream to assess water quality</code></li><li class="list-group-item"><code>a habitat- or ecosystem-level survey (e.g., coral reef health assessment, forest biodiversity assessment)</code></li><li class="list-group-item"><code>an environmental impact assessment (e.g., pre-construction biological baseline survey for a wind farm project)</code></li></ul></td></tr>
+  </tbody>
+</table>
+
+<p class="invisible">
+  <span id="eco:surveyID"></span>
+    <span id="surveyID"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">surveyID</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/surveyID">http://rs.tdwg.org/eco/terms/surveyID</a></td></tr>
+    <tr><td>Definition</td><td>An identifier for an eco:Survey.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a globally unique identifier.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:surveySiteType"></span>
+    <span id="surveySiteType"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">surveySiteType</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/surveySiteType">http://rs.tdwg.org/eco/terms/surveySiteType</a></td></tr>
+    <tr><td>Definition</td><td>A spatial category of a sampling location for an eco:Survey.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary. This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>horizontalTransect</code></li><li class="list-group-item"><code>verticalTransect</code></li><li class="list-group-item"><code>arealPlot</code></li><li class="list-group-item"><code>observationPoint</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:siteCount"></span>
+    <span id="siteCount"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">siteCount</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/siteCount">http://rs.tdwg.org/eco/terms/siteCount</a></td></tr>
+    <tr><td>Definition</td><td>Total number of individual sites surveyed during an eco:Survey.</td></tr>
+    <tr><td>Notes</td><td>Site refers to the dcterms:Location at which observations are made or samples/measurements are taken. The site can be at any level of hierarchy.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>1</code></li><li class="list-group-item"><code>15</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:siteNestingDescription"></span>
+    <span id="siteNestingDescription"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">siteNestingDescription</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/siteNestingDescription">http://rs.tdwg.org/eco/terms/siteNestingDescription</a></td></tr>
+    <tr><td>Definition</td><td>Textual description of the hierarchical sampling design.</td></tr>
+    <tr><td>Notes</td><td>Site refers to the location at which observations are made or samples/measurements are taken. The site can be at any level of hierarchy.</td></tr>
+    <tr><td>Examples</td><td><code>5 sampling sites of 3-5 plots each</code></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:verbatimSiteDescriptions"></span>
+    <span id="verbatimSiteDescriptions"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">verbatimSiteDescriptions</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/verbatimSiteDescriptions">http://rs.tdwg.org/eco/terms/verbatimSiteDescriptions</a></td></tr>
+    <tr><td>Definition</td><td>Original textual description of the site(s).</td></tr>
+    <tr><td>Notes</td><td>Site refers to the dcterms:Location at which observations are made or samples/measurements are taken. The site can be at any level of hierarchy. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ).</td></tr>
+    <tr><td>Examples</td><td><code>Wet flatwoods | Wet depression surrounded by mesic longleaf pine flatwoods | Ground cover of thick Andropogon spp., Sporobolus floridanus, Vaccinium spp, Rhynchospora spp., Centella erecta, Panicum rigidulum.</code></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:verbatimSiteNames"></span>
+    <span id="verbatimSiteNames"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">verbatimSiteNames</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/verbatimSiteNames">http://rs.tdwg.org/eco/terms/verbatimSiteNames</a></td></tr>
+    <tr><td>Definition</td><td>A list (concatenated and separated) of original site names.</td></tr>
+    <tr><td>Notes</td><td>Site refers to the dcterms:Location at which observations are made or samples/measurements are taken. The site can be at any level of hierarchy. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ).</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>East Coastal Fringe | St. Marks Wildlife Management Area</code></li><li class="list-group-item"><code>S1 | S2 | C1 | C2 | R14 | R22 | W1</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:geospatialScopeAreaValue"></span>
+    <span id="geospatialScopeAreaValue"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">geospatialScopeAreaValue</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/geospatialScopeAreaValue">http://rs.tdwg.org/eco/terms/geospatialScopeAreaValue</a></td></tr>
+    <tr><td>Definition</td><td>The numeric value for the total area of the geospatial scope of an eco:Survey.</td></tr>
+    <tr><td>Notes</td><td>Geospatial scope refers to the place described by a dcterms:Location. This area is always greater than or equal to the eco:totalAreaSampledValue because it reflects the targeted location for which an inventory is intended and informs the sampling design. An eco:geospatialScopeAreaValue must have a corresponding eco:geospatialScopeAreaUnit.</td></tr>
+    <tr><td>Examples</td><td><code>25</code></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:geospatialScopeAreaUnit"></span>
+    <span id="geospatialScopeAreaUnit"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">geospatialScopeAreaUnit</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/geospatialScopeAreaUnit">http://rs.tdwg.org/eco/terms/geospatialScopeAreaUnit</a></td></tr>
+    <tr><td>Definition</td><td>The units associated with eco:geospatialScopeAreaValue.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary. For units containing exponents, use characters from the Unicode Latin-1 Supplement character set (hex 00B2 for squared and 00B3 for cubed). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><code>km²</code></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:totalAreaSampledValue"></span>
+    <span id="totalAreaSampledValue"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">totalAreaSampledValue</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/totalAreaSampledValue">http://rs.tdwg.org/eco/terms/totalAreaSampledValue</a></td></tr>
+    <tr><td>Definition</td><td>A numeric value for the total area, volume or distance surveyed during the dwc:Survey.</td></tr>
+    <tr><td>Notes</td><td>This value is always less than or equal to the eco:geospatialScopeAreaValue because it reflects the portion of the geospatialScope that was actually sampled. An eco:totalAreaSampledValue must have a corresponding eco:totalAreaSampledUnit.</td></tr>
+    <tr><td>Examples</td><td><code>0.8</code></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:totalAreaSampledUnit"></span>
+    <span id="totalAreaSampledUnit"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">totalAreaSampledUnit</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/totalAreaSampledUnit">http://rs.tdwg.org/eco/terms/totalAreaSampledUnit</a></td></tr>
+    <tr><td>Definition</td><td>The units associated with eco:totalAreaSampledValue</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary. For units containing exponents, use characters from the Unicode Latin-1 Supplement character set (hex 00B2 for squared and 00B3 for cubed). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><code>km²</code></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:targetHabitatScope"></span>
+    <span id="targetHabitatScope"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">targetHabitatScope</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/targetHabitatScope">http://rs.tdwg.org/eco/terms/targetHabitatScope</a></td></tr>
+    <tr><td>Definition</td><td>The habitats targeted for sampling during an eco:Survey.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary and separate the values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>dunes</code></li><li class="list-group-item"><code>pineForest</code></li><li class="list-group-item"><code>riparian</code></li><li class="list-group-item"><code>scrub | grassland</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:excludedHabitatScope"></span>
+    <span id="excludedHabitatScope"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">excludedHabitatScope</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/excludedHabitatScope">http://rs.tdwg.org/eco/terms/excludedHabitatScope</a></td></tr>
+    <tr><td>Definition</td><td>The habitats explicitly excluded from sampling during an eco:Survey.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>wetFlatwoods</code></li><li class="list-group-item"><code>swamp | estuary</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:targetTaxonomicScope"></span>
+    <span id="targetTaxonomicScope"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">targetTaxonomicScope</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/targetTaxonomicScope">http://rs.tdwg.org/eco/terms/targetTaxonomicScope</a></td></tr>
+    <tr><td>Definition</td><td>The taxonomic group(s) targeted for sampling during an eco:Survey.</td></tr>
+    <tr><td>Notes</td><td>An eco:Survey to which the eco:targetTaxonomicScope refers could be at any level of hierarchy. In the case of a higher level (parent) eco:Survey, include all taxonomic groups surveyed in the child eco:Surveys that contributed to the parent eco:Survey. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Aves</code></li><li class="list-group-item"><code>Aves | Mammalia</code></li><li class="list-group-item"><code>Procellariformes</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:excludedTaxonomicScope"></span>
+    <span id="excludedTaxonomicScope"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">excludedTaxonomicScope</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/excludedTaxonomicScope">http://rs.tdwg.org/eco/terms/excludedTaxonomicScope</a></td></tr>
+    <tr><td>Definition</td><td>The taxonomic group(s) explicitly excluded from sampling during an eco:Survey.</td></tr>
+    <tr><td>Notes</td><td>An eco:Survey to which the eco:excludedTaxonomicScope refers could be at any level of hierarchy. In the case of a higher level (parent) eco:Survey, include all the taxonomic groups explicitly excluded from the child eco:Surveys that contributed to the parent eco:Survey. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Aves</code></li><li class="list-group-item"><code>Quercus | Acer</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:taxonCompletenessReported"></span>
+    <span id="taxonCompletenessReported"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">taxonCompletenessReported</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/taxonCompletenessReported">http://rs.tdwg.org/eco/terms/taxonCompletenessReported</a></td></tr>
+    <tr><td>Definition</td><td>Statement about whether the taxonomic completeness of an eco:Survey was assessed.</td></tr>
+    <tr><td>Notes</td><td>This term is meant to alert users that the inventory was conducted in such a way that all of the target taxa (the combination of eco:targetTaxonomicScope and eco:excludedTaxonomicScope) should have been detectable if they were present during an eco:Survey. This term can provide data users with a qualitative measure of how comprehensively an area has been surveyed, which assists in interpreting species populations, areas of occupancy, inferring species absences, etc. This term is only relevant if an eco:Survey used restricted search or open search methods. If taxonomic completeness was assessed, the methods used or an explanation of the basis of the completeness should be stated in eco:taxonCompletenessProtocols. Recommended best practice is to use controlled value strings from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/tcr/">http://rs.tdwg.org/dwc/doc/tcr/</a>. This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>notReported</code></li><li class="list-group-item"><code>reportedComplete</code></li><li class="list-group-item"><code>reportedIncomplete</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:taxonCompletenessProtocols"></span>
+    <span id="taxonCompletenessProtocols"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">taxonCompletenessProtocols</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/taxonCompletenessProtocols">http://rs.tdwg.org/eco/terms/taxonCompletenessProtocols</a></td></tr>
+    <tr><td>Definition</td><td>A description of or reference (publication, URL) to the methods used to determine eco:taxonCompletenessReported.</td></tr>
+    <tr><td>Notes</td><td>This term allows users to determine how comprehensively an area has been sampled. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>census | based on sampling effort</code></li><li class="list-group-item"><code>based on species accumulation curves</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:isTaxonomicScopeFullyReported"></span>
+    <span id="isTaxonomicScopeFullyReported"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">isTaxonomicScopeFullyReported</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/isTaxonomicScopeFullyReported">http://rs.tdwg.org/eco/terms/isTaxonomicScopeFullyReported</a></td></tr>
+    <tr><td>Definition</td><td>Every dwc:Occurrence that was included within the taxonomic scope, and was detected during an eco:Survey, was reported.</td></tr>
+    <tr><td>Notes</td><td>This term is only relevant if an eco:Survey used restricted search or open search methods. If all dwc:Occurrences included within the taxonomic scope and detected during an eco:Survey were reported, the value should be 'true'. Taxonomic scope is based on the combination of eco:targetTaxonomicScope and eco:excludedTaxonomicScope. Recommended best practice is to follow the TDWG Boolean Controlled Vocabulary <a href="http://rs.tdwg.org/tag/doc/boolean/">http://rs.tdwg.org/tag/doc/boolean/</a>.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>true</code></li><li class="list-group-item"><code>false</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:isAbsenceReported"></span>
+    <span id="isAbsenceReported"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">isAbsenceReported</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/isAbsenceReported">http://rs.tdwg.org/eco/terms/isAbsenceReported</a></td></tr>
+    <tr><td>Definition</td><td>Taxonomic absences were reported.</td></tr>
+    <tr><td>Notes</td><td>Absences can be reported at any taxonomic level. Recommended best practice is to follow the TDWG Boolean Controlled Vocabulary <a href="http://rs.tdwg.org/tag/doc/boolean/">http://rs.tdwg.org/tag/doc/boolean/</a>.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>true</code></li><li class="list-group-item"><code>false</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:absentTaxa"></span>
+    <span id="absentTaxa"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">absentTaxa</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/absentTaxa">http://rs.tdwg.org/eco/terms/absentTaxa</a></td></tr>
+    <tr><td>Definition</td><td>A list (concatenated and separated) of taxa reported absent during an eco:Survey.</td></tr>
+    <tr><td>Notes</td><td>Absences can be reported at any taxonomic level. This term refers to the list of taxa within an eco:targetTaxonomicScope that were not detected in an eco:Survey. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Parabuteo unicinctus | Geranoaetus melanoleucus</code></li><li class="list-group-item"><code>Cetoniinae | Aclopinae | Cyclocephala modesta</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:hasNonTargetTaxa"></span>
+    <span id="hasNonTargetTaxa"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">hasNonTargetTaxa</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/hasNonTargetTaxa">http://rs.tdwg.org/eco/terms/hasNonTargetTaxa</a></td></tr>
+    <tr><td>Definition</td><td>One or more dwc:Occurrences of taxa outside the target taxonomic scope (the combination of eco:targetTaxonomicScope and eco:excludedTaxonomicScope) were detected and reported for an eco:Survey.</td></tr>
+    <tr><td>Notes</td><td>This term is meant to alert users to the presence of non-target taxa (in some disciplines called “bycatch”) reported in an eco:Survey. This term is relevant only if a target taxonomic scope is declared. Taxonomic scope is based on the combination of eco:targetTaxonomicScope and eco:excludedTaxonomicScope. Examination of the taxonomic scope is needed in order to identify the non-target taxa. It should be possible to confirm the expectations by investigating the dwc:Occurrences in an eco:Survey and in its child eco:Surveys (if available) or by exploring eco:nonTargetTaxa for an eco:Survey (if populated). The value of this term should be 'true' if dwc:Occurrences of taxa outside the taxonomic scope as defined at the time of an eco:Survey are reported, otherwise the value of this term should be 'false'. Recommended best practice is to follow the TDWG Boolean Controlled Vocabulary <a href="http://rs.tdwg.org/tag/doc/boolean/">http://rs.tdwg.org/tag/doc/boolean/</a>.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>true</code></li><li class="list-group-item"><code>false</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:nonTargetTaxa"></span>
+    <span id="nonTargetTaxa"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">nonTargetTaxa</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/nonTargetTaxa">http://rs.tdwg.org/eco/terms/nonTargetTaxa</a></td></tr>
+    <tr><td>Definition</td><td>A list (concatenated and separated) of taxa reported during an eco:Survey that are outside of the target taxonomic scope (the combination of eco:targetTaxonomicScope and eco:excludedTaxonomicScope).</td></tr>
+    <tr><td>Notes</td><td>This term is meant to allow the full list of taxa that are considered outside of the taxonomic scope and yet were reported in an eco:Survey. This term is relevant only if a target taxonomic scope is declared and eco:hasNonTargetTaxa is ‘true’. Taxonomic scope is based on the combination of eco:targetTaxonomicScope and eco:excludedTaxonomicScope. Non-target taxa (in some disciplines called “bycatch”) can be reported at any taxonomic level. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Parabuteo unicinctus | Geranoaetus melanoleucus</code></li><li class="list-group-item"><code>Cetoniinae | Aclopinae | Cyclocephala modesta</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:areNonTargetTaxaFullyReported"></span>
+    <span id="areNonTargetTaxaFullyReported"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">areNonTargetTaxaFullyReported</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/areNonTargetTaxaFullyReported">http://rs.tdwg.org/eco/terms/areNonTargetTaxaFullyReported</a></td></tr>
+    <tr><td>Definition</td><td>Every dwc:Occurrence that was outside of the target taxonomic scope (the combination of eco:targetTaxonomicScope and eco:excludedTaxonomicScope) and detected during an eco:Survey, and that was detectable using the given protocol (given in eco:protocolDescriptions and dwc:samplingProtocol), was reported.</td></tr>
+    <tr><td>Notes</td><td>This term is meant to inform a user of the data whether there were non-target taxa that were detected, but left unreported. This term is only relevant if an eco:Survey used restricted search or open search methods and if a target taxonomic scope is declared. Taxonomic scope is based on the combination of eco:targetTaxonomicScope and eco:excludedTaxonomicScope. Within eco:Surveys that used either a restricted search or an open search method and declared a taxonomic scope, if all dwc:Occurrences that are not included within the target taxonomic scope and that were detected during an eco:Survey were reported, the value of this term should be 'true', otherwise the value of this term should be ‘false'. Recommended best practice is to follow the TDWG Boolean Controlled Vocabulary <a href="http://rs.tdwg.org/tag/doc/boolean/">http://rs.tdwg.org/tag/doc/boolean/</a>.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>true</code></li><li class="list-group-item"><code>false</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:targetLifeStageScope"></span>
+    <span id="targetLifeStageScope"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">targetLifeStageScope</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/targetLifeStageScope">http://rs.tdwg.org/eco/terms/targetLifeStageScope</a></td></tr>
+    <tr><td>Definition</td><td>The age classes or life stages of the dwc:Organisms targeted for sampling during an eco:Survey.</td></tr>
+    <tr><td>Notes</td><td>This term is defined based on dwc:lifeStage. Recommended best practice is to use the same controlled vocabulary as for dwc:lifeStage and to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>larva</code></li><li class="list-group-item"><code>adult | juvenile</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:excludedLifeStageScope"></span>
+    <span id="excludedLifeStageScope"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">excludedLifeStageScope</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/excludedLifeStageScope">http://rs.tdwg.org/eco/terms/excludedLifeStageScope</a></td></tr>
+    <tr><td>Definition</td><td>The age classes or life stages of the dwc:Organisms explicitly excluded from sampling during an eco:Survey.</td></tr>
+    <tr><td>Notes</td><td>This term is defined based on dwc:lifeStage (<a href="http://rs.tdwg.org/dwc/terms/lifeStage">http://rs.tdwg.org/dwc/terms/lifeStage</a>). Recommended best practice is to use the same controlled vocabulary as for dwc:lifeStage and to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>seedling</code></li><li class="list-group-item"><code>nestling | fledgling</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:isLifeStageScopeFullyReported"></span>
+    <span id="isLifeStageScopeFullyReported"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">isLifeStageScopeFullyReported</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/isLifeStageScopeFullyReported">http://rs.tdwg.org/eco/terms/isLifeStageScopeFullyReported</a></td></tr>
+    <tr><td>Definition</td><td>Every dwc:Occurrence that was included within the life stage scope, and was detected during an eco:Survey, was reported.</td></tr>
+    <tr><td>Notes</td><td>This term is only relevant if an dwc:Survey used restricted search or open search methods. If all dwc:Occurrences included within the life stage scope and detected during an eco:Survey were reported, the value should be 'true'. Life stage scope is based on the combination of eco:targetLifeStageScope and eco:excludedLifeStageScope. Recommended best practice is to follow the TDWG Boolean Controlled Vocabulary <a href="http://rs.tdwg.org/tag/doc/boolean/">http://rs.tdwg.org/tag/doc/boolean/</a>.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>true</code></li><li class="list-group-item"><code>false</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:targetDegreeOfEstablishmentScope"></span>
+    <span id="targetDegreeOfEstablishmentScope"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">targetDegreeOfEstablishmentScope</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/targetDegreeOfEstablishmentScope">http://rs.tdwg.org/eco/terms/targetDegreeOfEstablishmentScope</a></td></tr>
+    <tr><td>Definition</td><td>The degrees of establishment of the dwc:Organisms targeted for sampling during an eco:Survey.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use controlled value strings from the controlled vocabulary (<a href="http://rs.tdwg.org/dwcdoe/">http://rs.tdwg.org/dwcdoe/</a>) for dwc:degreeOfEstablishment. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a>. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>native</code></li><li class="list-group-item"><code>invasive | widespreadInvasive</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:excludedDegreeOfEstablishmentScope"></span>
+    <span id="excludedDegreeOfEstablishmentScope"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">excludedDegreeOfEstablishmentScope</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/excludedDegreeOfEstablishmentScope">http://rs.tdwg.org/eco/terms/excludedDegreeOfEstablishmentScope</a></td></tr>
+    <tr><td>Definition</td><td>The degrees of establishment of the dwc:Organisms explicitly excluded from sampling during an eco:Survey.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use controlled value strings from the controlled vocabulary (<a href="http://rs.tdwg.org/dwcdoe/">http://rs.tdwg.org/dwcdoe/</a>) for dwc:degreeOfEstablishment. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a>. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>native</code></li><li class="list-group-item"><code>invasive | widespreadInvasive</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:isDegreeOfEstablishmentScopeFullyReported"></span>
+    <span id="isDegreeOfEstablishmentScopeFullyReported"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">isDegreeOfEstablishmentScopeFullyReported</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/isDegreeOfEstablishmentScopeFullyReported">http://rs.tdwg.org/eco/terms/isDegreeOfEstablishmentScopeFullyReported</a></td></tr>
+    <tr><td>Definition</td><td>Every dwc:Occurrence that was included within the degree of establishment scope, and was detected during an eco:Survey, was reported.</td></tr>
+    <tr><td>Notes</td><td>This term is only relevant if an eco:Survey used restricted search or open search methods. If all dwc:Occurrence included within the degree of establishment scope and detected during an dwc:Survey were reported, the value should be 'true'. Degree of establishment scope is based on the combination of eco:targetDegreeOfEstablishmentScope and eco:excludedDegreeOfEstablishmentScope. Recommended best practice is to follow the TDWG Boolean Controlled Vocabulary <a href="http://rs.tdwg.org/tag/doc/boolean/">http://rs.tdwg.org/tag/doc/boolean/</a>.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>true</code></li><li class="list-group-item"><code>false</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:targetGrowthFormScope"></span>
+    <span id="targetGrowthFormScope"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">targetGrowthFormScope</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/targetGrowthFormScope">http://rs.tdwg.org/eco/terms/targetGrowthFormScope</a></td></tr>
+    <tr><td>Definition</td><td>The growth forms or habits of the dwc:Organisms targeted for sampling during the eco:Survey.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>tree</code></li><li class="list-group-item"><code>shrub | subShrub</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:excludedGrowthFormScope"></span>
+    <span id="excludedGrowthFormScope"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">excludedGrowthFormScope</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/excludedGrowthFormScope">http://rs.tdwg.org/eco/terms/excludedGrowthFormScope</a></td></tr>
+    <tr><td>Definition</td><td>The growth forms or habits of the dwc:Organisms explicitly excluded from sampling during an eco:Survey.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>tree</code></li><li class="list-group-item"><code>shrub | subShrub</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:isGrowthFormScopeFullyReported"></span>
+    <span id="isGrowthFormScopeFullyReported"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">isGrowthFormScopeFullyReported</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/isGrowthFormScopeFullyReported">http://rs.tdwg.org/eco/terms/isGrowthFormScopeFullyReported</a></td></tr>
+    <tr><td>Definition</td><td>Every dwc:Occurrence that was included within the growth form scope, and was detected during an eco:Survey, was reported.</td></tr>
+    <tr><td>Notes</td><td>This term is only relevant if an eco:Survey used restricted search or open search methods. If all dwc:Occurrences included within the growth form scope and detected during an eco:Survey were reported, the value should be 'true'. Growth form scope is based on the combination of eco:targetGrowthFormScope and eco:excludedGrowthFormScope. Recommended best practice is to follow the TDWG Boolean Controlled Vocabulary <a href="http://rs.tdwg.org/tag/doc/boolean/">http://rs.tdwg.org/tag/doc/boolean/</a>.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>true</code></li><li class="list-group-item"><code>false</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:hasNonTargetOrganisms"></span>
+    <span id="hasNonTargetOrganisms"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">hasNonTargetOrganisms</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/hasNonTargetOrganisms">http://rs.tdwg.org/eco/terms/hasNonTargetOrganisms</a></td></tr>
+    <tr><td>Definition</td><td>One or more dwc:Occurrences outside the target organismal scopes (eco:targetDegreeOfEstablishmentScope, eco:targetGrowthFormScope, and eco:targetLifeStageScope) were detected and reported for an eco:Survey.</td></tr>
+    <tr><td>Notes</td><td>This term is meant to alert users to the presence of non-target organisms (in some disciplines called “bycatch”) reported in an eco:Survey. This term is relevant only if a target organismal scope is declared. Organismal scope is based on the combination of all of the following terms: eco:targetLifeStageScope, eco:excludedLifeStageScope, eco:targetDegreeOfEstablishmentScope, eco:excludedDegreeOfEstablishmentScope, eco:targetGrowthFormScope, and eco:excludedGrowthFormScope. Examination of the organismal scope is needed in order to identify the non-target dwc:Occurrences. It should be possible to confirm the expectations by investigating dwc:Occurrences in an eco:Survey and in its child eco:Surveys (if available). The value of this term should be 'true' if dwc:Occurrences outside the organismal scope(s) as defined at the time of an eco:Survey are reported, otherwise the value of this term should be 'false'. Recommended best practice is to follow the TDWG Boolean Controlled Vocabulary <a href="http://rs.tdwg.org/tag/doc/boolean/">http://rs.tdwg.org/tag/doc/boolean/</a>.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>true</code></li><li class="list-group-item"><code>false</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:verbatimTargetScope"></span>
+    <span id="verbatimTargetScope"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">verbatimTargetScope</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/verbatimTargetScope">http://rs.tdwg.org/eco/terms/verbatimTargetScope</a></td></tr>
+    <tr><td>Definition</td><td>The verbatim original description of an eco:Survey scope.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is first to populate explicit scope terms to the fullest extent possible (e.g., eco:targetTaxonomicScope). It is not recommended to use this term in assessing absence or completeness.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>small mammals</code></li><li class="list-group-item"><code>freshwater macroinvertebrates</code></li><li class="list-group-item"><code>dead animals</code>, <code>ground-living insects</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:compilationTypes"></span>
+    <span id="compilationTypes"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">compilationTypes</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/compilationTypes">http://rs.tdwg.org/eco/terms/compilationTypes</a></td></tr>
+    <tr><td>Definition</td><td>A statement specifying whether data reported are derived from sampling events, ancillary data compiled from other sources, or a combination of both.</td></tr>
+    <tr><td>Notes</td><td>This term is only relevant if an eco:Survey is an inventory. Recommended best practice is to use a controlled vocabulary. Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>samplingEvents</code></li><li class="list-group-item"><code>compilationOfExistingSourcesAndSamplingEvents</code></li><li class="list-group-item"><code>compilationOfExistingSources</code></li><li class="list-group-item"><code>compilationOfExistingSourcesAndSamplingEvents | compilationOfExistingSources</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:compilationSourceTypes"></span>
+    <span id="compilationSourceTypes"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">compilationSourceTypes</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/compilationSourceTypes">http://rs.tdwg.org/eco/terms/compilationSourceTypes</a></td></tr>
+    <tr><td>Definition</td><td>The types of data sources contributing to the compilation reported.</td></tr>
+    <tr><td>Notes</td><td>This term is only relevant if an eco:Survey is a compilation in which one or more types of data sources were used. Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>museumSpecimens</code></li><li class="list-group-item"><code>literature</code></li><li class="list-group-item"><code>expertKnowledge | localKnowledge</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:inventoryTypes"></span>
+    <span id="inventoryTypes"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">inventoryTypes</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/inventoryTypes">http://rs.tdwg.org/eco/terms/inventoryTypes</a></td></tr>
+    <tr><td>Definition</td><td>The types of search processes used to conduct an eco:Survey.</td></tr>
+    <tr><td>Notes</td><td>This term is only relevant if an eco:Survey represents an inventory. Recommended best practice is to use a controlled vocabulary. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>restrictedSearch</code></li><li class="list-group-item"><code>openSearch</code></li><li class="list-group-item"><code>compilation</code></li><li class="list-group-item"><code>openSearch | opportunisticSearch</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:protocolNames"></span>
+    <span id="protocolNames"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">protocolNames</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/protocolNames">http://rs.tdwg.org/eco/terms/protocolNames</a></td></tr>
+    <tr><td>Definition</td><td>Categorical descriptive names for the methods used during an eco:Survey.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>boxTrapping</code></li><li class="list-group-item"><code>floraInventory</code></li><li class="list-group-item"><code>boxTrapping | funnelTrapping</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:protocolDescriptions"></span>
+    <span id="protocolDescriptions"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">protocolDescriptions</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/protocolDescriptions">http://rs.tdwg.org/eco/terms/protocolDescriptions</a></td></tr>
+    <tr><td>Definition</td><td>A detailed description of the methods used during an eco:Survey.</td></tr>
+    <tr><td>Notes</td><td>This description should be associated with protocols provided in eco:protocolNames. The description may include deviations from a protocol referred to in eco:protocolReferences. Recommended good practice is to provide information about instruments used, calibration, etc. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ).</td></tr>
+    <tr><td>Examples</td><td><code>Three conventional harp traps (3.2m ht x 2.2m w) were established in flight path zones for a period of 4 hrs at dawn and dusk for a total of 10 trap nights. Traps were visited on an hourly basis during each deployment period and the trap catch recorded for species, size, weight, sex, age and maternal status.</code></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:protocolReferences"></span>
+    <span id="protocolReferences"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">protocolReferences</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/protocolReferences">http://rs.tdwg.org/eco/terms/protocolReferences</a></td></tr>
+    <tr><td>Definition</td><td>The references to the methods used during an eco:Survey.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ).</td></tr>
+    <tr><td>Examples</td><td><code>Penguins from space: faecal stains reveal the location of emperor penguin colonies, <a href="https://doi.org/10.1111/j.1466-8238.2009.00467.x">https://doi.org/10.1111/j.1466-8238.2009.00467.x</a></code></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:isAbundanceReported"></span>
+    <span id="isAbundanceReported"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">isAbundanceReported</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/isAbundanceReported">http://rs.tdwg.org/eco/terms/isAbundanceReported</a></td></tr>
+    <tr><td>Definition</td><td>The number of dwc:Organisms collected or observed was reported.</td></tr>
+    <tr><td>Notes</td><td>Typically the abundance values would be reported in the dwc:organismQuantity and dwc:organismQuantityType terms for the child dwc:Occurrence records for an eco:Survey. Recommended best practice is to follow the TDWG Boolean Controlled Vocabulary <a href="http://rs.tdwg.org/tag/doc/boolean/">http://rs.tdwg.org/tag/doc/boolean/</a>.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>true</code></li><li class="list-group-item"><code>false</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:isAbundanceCapReported"></span>
+    <span id="isAbundanceCapReported"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">isAbundanceCapReported</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/isAbundanceCapReported">http://rs.tdwg.org/eco/terms/isAbundanceCapReported</a></td></tr>
+    <tr><td>Definition</td><td>A maximum number of dwc:Organisms was reported, as specified or restricted by the protocol used.</td></tr>
+    <tr><td>Notes</td><td>Values of abundance cap should be captured under the term eco:abundanceCap. Recommended best practice is to follow the TDWG Boolean Controlled Vocabulary <a href="http://rs.tdwg.org/tag/doc/boolean/">http://rs.tdwg.org/tag/doc/boolean/</a>.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>true</code></li><li class="list-group-item"><code>false</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:isLeastSpecificTargetCategoryQuantityInclusive"></span>
+    <span id="isLeastSpecificTargetCategoryQuantityInclusive"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">isLeastSpecificTargetCategoryQuantityInclusive</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/isLeastSpecificTargetCategoryQuantityInclusive">http://rs.tdwg.org/eco/terms/isLeastSpecificTargetCategoryQuantityInclusive</a></td></tr>
+    <tr><td>Definition</td><td>The total detected quantity for a dwc:Taxon (including subcategories thereof) in an eco:Survey is given explicitly in a single record (dwc:organismQuantity value) for that dwc:Taxon.</td></tr>
+    <tr><td>Notes</td><td>This term is only relevant if dwc:organismQuantity is a number. For a detailed explanation, see <a href="http://rs.tdwg.org/dwc/doc/inclusive/">http://rs.tdwg.org/dwc/doc/inclusive/</a>. Recommended best practice is to follow the TDWG Boolean Controlled Vocabulary <a href="http://rs.tdwg.org/tag/doc/boolean/">http://rs.tdwg.org/tag/doc/boolean/</a>.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>true</code></li><li class="list-group-item"><code>false</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:hasVouchers"></span>
+    <span id="hasVouchers"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">hasVouchers</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/hasVouchers">http://rs.tdwg.org/eco/terms/hasVouchers</a></td></tr>
+    <tr><td>Definition</td><td>One or more specimen vouchers were collected during an eco:Survey.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to follow the TDWG Boolean Controlled Vocabulary <a href="http://rs.tdwg.org/tag/doc/boolean/">http://rs.tdwg.org/tag/doc/boolean/</a>.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>true</code></li><li class="list-group-item"><code>false</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:voucherInstitutions"></span>
+    <span id="voucherInstitutions"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">voucherInstitutions</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/voucherInstitutions">http://rs.tdwg.org/eco/terms/voucherInstitutions</a></td></tr>
+    <tr><td>Definition</td><td>A list (concatenated and separated) of the names or acronyms of the institutions where vouchers collected during an eco:Survey were deposited.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ).</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>FMNH</code></li><li class="list-group-item"><code>AMNH | MVZ</code></li><li class="list-group-item"><code>Nairobi National Museum</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:hasMaterialSamples"></span>
+    <span id="hasMaterialSamples"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">hasMaterialSamples</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/hasMaterialSamples">http://rs.tdwg.org/eco/terms/hasMaterialSamples</a></td></tr>
+    <tr><td>Definition</td><td>One or more dwc:MaterialEntities were collected during an eco:Survey.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to follow the TDWG Boolean Controlled Vocabulary <a href="http://rs.tdwg.org/tag/doc/boolean/">http://rs.tdwg.org/tag/doc/boolean/</a>.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>true</code></li><li class="list-group-item"><code>false</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:materialSampleTypes"></span>
+    <span id="materialSampleTypes"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">materialSampleTypes</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/materialSampleTypes">http://rs.tdwg.org/eco/terms/materialSampleTypes</a></td></tr>
+    <tr><td>Definition</td><td>A list (concatenated and separated) of material sample types collected during an eco:Survey.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>wholeOrganism</code></li><li class="list-group-item"><code>skeleton</code></li><li class="list-group-item"><code>tissue | blood | fecal | stomachContent</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:samplingPerformedBy"></span>
+    <span id="samplingPerformedBy"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">samplingPerformedBy</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/samplingPerformedBy">http://rs.tdwg.org/eco/terms/samplingPerformedBy</a></td></tr>
+    <tr><td>Definition</td><td>A person, group, or organization responsible for recording an eco:Survey.</td></tr>
+    <tr><td>Notes</td><td>An eco:Survey could be at any level of hierarchy. In the case of a higher level (parent) eco:Survey, include all the organizations or people involved in the child eco:Surveys that contributed to the parent eco:Survey. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>North American Butterfly Association</code></li><li class="list-group-item"><code>KK Wall</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:samplingPerformedByID"></span>
+    <span id="samplingPerformedByID"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">samplingPerformedByID</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/samplingPerformedByID">http://rs.tdwg.org/eco/terms/samplingPerformedByID</a></td></tr>
+    <tr><td>Definition</td><td>An identifier for a dcterms:Agent responsible for sampling.</td></tr>
+    <tr><td>Notes</td><td>The sampling eco:Survey could be at any level of hierarchy. In the case of a higher level (parent) eco:Survey, include all the organizations or people involved in the child eco:Surveys that contributed to the parent eco:Survey. Recommended best practice is to separate multiple values in a list with space vertical bar space (<code> | </code>). </td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="https://orcid.org/0000-0003-0243-2379">https://orcid.org/0000-0003-0243-2379</a></code></li><li class="list-group-item"><code> <a href="http://orcid.org/0000-0002-0786-4069">http://orcid.org/0000-0002-0786-4069</a> | <a href="http://orcid.org/0000-0003-4639-823X">http://orcid.org/0000-0003-4639-823X</a></code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:isSamplingEffortReported"></span>
+    <span id="isSamplingEffortReported"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">isSamplingEffortReported</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/isSamplingEffortReported">http://rs.tdwg.org/eco/terms/isSamplingEffortReported</a></td></tr>
+    <tr><td>Definition</td><td>The sampling effort associated with an eco:Survey was reported.</td></tr>
+    <tr><td>Notes</td><td>Typically values of effort would be captured under the terms eco:samplingEffortValue and eco:samplingEffortUnit. Recommended best practice is to follow the TDWG Boolean Controlled Vocabulary <a href="http://rs.tdwg.org/tag/doc/boolean/">http://rs.tdwg.org/tag/doc/boolean/</a>.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>true</code></li><li class="list-group-item"><code>false</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:samplingEffortValue"></span>
+    <span id="samplingEffortValue"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">samplingEffortValue</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/samplingEffortValue">http://rs.tdwg.org/eco/terms/samplingEffortValue</a></td></tr>
+    <tr><td>Definition</td><td>The numeric value for the sampling effort expended during an eco:Survey.</td></tr>
+    <tr><td>Notes</td><td>This term is meant to capture the total sampling effort value. To express details of how the effort was determined use eco:samplingEffortProtocol. For compilations it is recommend not to infer effort. An eco:samplingEffortValue must have a corresponding eco:samplingEffortUnit.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>1900</code></li><li class="list-group-item"><code>40</code></li><li class="list-group-item"><code>5.5</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:samplingEffortUnit"></span>
+    <span id="samplingEffortUnit"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">samplingEffortUnit</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/samplingEffortUnit">http://rs.tdwg.org/eco/terms/samplingEffortUnit</a></td></tr>
+    <tr><td>Definition</td><td>The units associated with an eco:samplingEffortValue.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary. This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>trapHours</code></li><li class="list-group-item"><code>personHours</code></li><li class="list-group-item"><code>trapDays</code></li></ul></td></tr>
+  </tbody>
+</table>
+
+
+<h2 id="surveytarget">SurveyTarget</h2>
+
+<div class="my-4">
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:surveyTargetID">surveyTargetID</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:surveyTargetType">surveyTargetType</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:surveyTargetValue">surveyTargetValue</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:surveyTargetUnit">surveyTargetUnit</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:surveyTargetDescription">surveyTargetDescription</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:isSurveyTargetFullyReported">isSurveyTargetFullyReported</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:abundanceCap">abundanceCap</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:includeOrExclude">includeOrExclude</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:surveyTargetRemarks">surveyTargetRemarks</a>
+  </div>
+
+<table class="table">
+  <tbody>
+    <tr class="table-primary"><th colspan="2">SurveyTarget <span class="badge bg-primary float-end">Class</span></th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/SurveyTarget">http://rs.tdwg.org/eco/terms/SurveyTarget</a></td></tr>
+    <tr><td>Definition</td><td>One or more scopes that describe a target for dwc:Occurrences in an eco:Survey.</td></tr>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>all bird species</code></li><li class="list-group-item"><code>all bird species except Larus gulls, fulmars and kittiwakes</code></li><li class="list-group-item"><code>reproductive female Ctenomys sociabilis (only)</code></li><li class="list-group-item"><code>Oncorhynchus mykiss and Oncorhynchus clarkii (only)</code>, <code>all total lengths except < 12 inches</code></li></ul></td></tr>
+  </tbody>
+</table>
+
+<p class="invisible">
+  <span id="eco:surveyTargetID"></span>
+    <span id="surveyTargetID"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">surveyTargetID</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/surveyTargetID">http://rs.tdwg.org/eco/terms/surveyTargetID</a></td></tr>
+    <tr><td>Definition</td><td>An identifier for an eco:SurveyTarget.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a globally unique identifier. Note: values of this term are not meant to be unique within an eco:SurveyTarget. A full eco:SurveyTarget is composed of all records that share the same eco:surveyTargetID.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:surveyTargetType"></span>
+    <span id="surveyTargetType"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">surveyTargetType</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/surveyTargetType">http://rs.tdwg.org/eco/terms/surveyTargetType</a></td></tr>
+    <tr><td>Definition</td><td>A category that best matches the nature of a scope in an eco:SurveyTarget.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>taxon</code></li><li class="list-group-item"><code>habitat</code></li><li class="list-group-item"><code>establishmentMeans</code></li><li class="list-group-item"><code>growthForm</code></li><li class="list-group-item"><code>sex</code></li><li class="list-group-item"><code>lifeStage</code></li><li class="list-group-item"><code>minimum length</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:surveyTargetValue"></span>
+    <span id="surveyTargetValue"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">surveyTargetValue</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/surveyTargetValue">http://rs.tdwg.org/eco/terms/surveyTargetValue</a></td></tr>
+    <tr><td>Definition</td><td>A value to include or exclude in a scope categorized by eco:surveyTargetType.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Aves</code></li><li class="list-group-item"><code>oak savannah</code></li><li class="list-group-item"><code>native</code></li><li class="list-group-item"><code>tree</code></li><li class="list-group-item"><code>female</code></li><li class="list-group-item"><code>adult</code></li><li class="list-group-item"><code>height</code></li><li class="list-group-item"><code>weight</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:surveyTargetUnit"></span>
+    <span id="surveyTargetUnit"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">surveyTargetUnit</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/surveyTargetUnit">http://rs.tdwg.org/eco/terms/surveyTargetUnit</a></td></tr>
+    <tr><td>Definition</td><td>Unit associated with a value in eco:surveyTargetValue.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>m</code></li><li class="list-group-item"><code>g</code></li><li class="list-group-item"><code>years</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:surveyTargetDescription"></span>
+    <span id="surveyTargetDescription"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">surveyTargetDescription</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/surveyTargetDescription">http://rs.tdwg.org/eco/terms/surveyTargetDescription</a></td></tr>
+    <tr><td>Definition</td><td>A verbatim description of an eco:SurveyTarget.</td></tr>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>all passerine birds</code></li><li class="list-group-item"><code>all flowering Rosaceae</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:isSurveyTargetFullyReported"></span>
+    <span id="isSurveyTargetFullyReported"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">isSurveyTargetFullyReported</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/isSurveyTargetFullyReported">http://rs.tdwg.org/eco/terms/isSurveyTargetFullyReported</a></td></tr>
+    <tr><td>Definition</td><td>Whether an eco:SurveyTarget can be used to infer absence of detection because all counts of detected dwc:Occurrences matching an eco:SurveyTarget were fully reported.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to follow the TDWG Boolean Controlled Vocabulary <a href="http://rs.tdwg.org/tag/doc/boolean/">http://rs.tdwg.org/tag/doc/boolean/</a>. If True (the survey target is fully reported - nothing was left unreported), then this enables inference of absence of detection for everything in that eco:SurveyTarget that is included but that does not appear in the counts (absent counts signify absence of detection).</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>true</code></li><li class="list-group-item"><code>false</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:abundanceCap"></span>
+    <span id="abundanceCap"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">abundanceCap</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/abundanceCap">http://rs.tdwg.org/eco/terms/abundanceCap</a></td></tr>
+    <tr><td>Definition</td><td>The reported maximum number of dwc:Occurrences matching an eco:SurveyTarget.</td></tr>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>300</code></li><li class="list-group-item"><code>700</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:includeOrExclude"></span>
+    <span id="includeOrExclude"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">includeOrExclude</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/includeOrExclude">http://rs.tdwg.org/eco/terms/includeOrExclude</a></td></tr>
+    <tr><td>Definition</td><td>Whether to include or exclude eco:surveyTargetValue in a scope categorized by eco:surveyTargetType.</td></tr>
+    <tr><td>Notes</td><td>Combinations of eco:SurveyTarget records of inclusions and exclusions can define complex scopes such as all flying adult Aves except Passeriformes. Recommended best practice is to use a controlled vocabulary consisting of 'include' and 'exclude' only.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>include</code></li><li class="list-group-item"><code>exclude</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:surveyTargetRemarks"></span>
+    <span id="surveyTargetRemarks"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">surveyTargetRemarks</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/surveyTargetRemarks">http://rs.tdwg.org/eco/terms/surveyTargetRemarks</a></td></tr>
+    <tr><td>Definition</td><td>Comments or notes about an eco:SurveyTarget.</td></tr>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td>Examples</td><td><code>Survey target scopes reflect post-facto filtering, not original survey design.</code></td></tr>
   </tbody>
 </table>
 
@@ -3486,6 +5107,7 @@ This category contains terms that are generic in that they might apply to any ty
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:namePublishedIn">namePublishedIn</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:namePublishedInYear">namePublishedInYear</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:higherClassification">higherClassification</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:classificationSystem">classificationSystem</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:kingdom">kingdom</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:phylum">phylum</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:class">class</a>
@@ -3728,6 +5350,19 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Definition</td><td>A list (concatenated and separated) of taxa names terminating at the rank immediately superior to the referenced dwc:Taxon.</td></tr>
     <tr><td>Notes</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>), with terms in order from the highest taxonomic rank to the lowest.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Plantae | Tracheophyta | Magnoliopsida | Ranunculales | Ranunculaceae | Ranunculus</code></li><li class="list-group-item"><code>Animalia</code></li><li class="list-group-item"><code>Animalia | Chordata | Vertebrata | Mammalia | Theria | Eutheria | Rodentia | Hystricognatha | Hystricognathi | Ctenomyidae | Ctenomyini | Ctenomys</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:classificationSystem"></span>
+    <span id="classificationSystem"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">classificationSystem</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/classificationSystem">http://rs.tdwg.org/dwc/terms/classificationSystem</a></td></tr>
+    <tr><td>Definition</td><td>A reference to the classification system in which an authoritative name or formal classification belongs.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to provide a formal citation or IRI. This term should not be confused with dwc:namePublishedIn as a classification system is not equivalent to a publication in which a taxon is first described. This term should not be confused with dwc:nameAccordingTo as a classification system is not equivalent to a publication or other source in which a specific taxon concept circumscription is defined or implied. This term should not be confused with dwc:nomenclaturalCode as a classification system is not equivalent to code of nomenclature, which states the rules for naming rather than an organized source of names. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Strunz, H., Nickel, E.H. (2001): Strunz Mineralogical Tables. Chemical-Structural Mineral Classification System. 9th edition. E. Schweizerbart’sche Verlagsbuchhandlung, Stuttgart, ix + 870 p. (ISBN 3-510-65188-X)</code></li><li class="list-group-item"><code>Gaines, R.V., Skinner, H.C.W., Foord, E.E., Mason, B., Rosenzweig, A. (1997): Dana's New Mineralogy: The System of Mineralogy of James Dwight Dana and Edward Salisbury Dana. 8th edition. John Wiley & Sons, New York, xlv + 1819 p. (ISBN 0-471-19310-0).</code></li><li class="list-group-item"><code><a href="https://kos.geospecimens.org/vocab/meteorite-classification">https://kos.geospecimens.org/vocab/meteorite-classification</a></code></li><li class="list-group-item"><code>Mammal Diversity Database. (2026). Mammal Diversity Database (Version 2.5) [Data set]. [Zenodo](<a href="https://zenodo.org/records/10595931">https://zenodo.org/records/10595931</a>). <a href="https://doi.org/10.5281/zenodo.17033774">https://doi.org/10.5281/zenodo.17033774</a></code></li><li class="list-group-item"><code>Index Fungorum. (2026). Index Fungorum electronic database. Royal Botanic Gardens, Kew. Retrieved August 17, 2026, from indexfungorum.org.</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -4046,6 +5681,12 @@ This category contains terms that are generic in that they might apply to any ty
 
 <h2 id="usagepolicy">UsagePolicy</h2>
 
+<div class="my-4">
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:usagePolicyID">usagePolicyID</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dcterms:rightsHolder">rightsHolder</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dcterms:accessRights">accessRights</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dcterms:license">license</a>
+  </div>
 
 <table class="table">
   <tbody>
@@ -4057,6 +5698,58 @@ This category contains terms that are generic in that they might apply to any ty
   </tbody>
 </table>
 
+<p class="invisible">
+  <span id="dwc:usagePolicyID"></span>
+    <span id="usagePolicyID"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">usagePolicyID</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/usagePolicyID">http://rs.tdwg.org/dwc/terms/usagePolicyID</a></td></tr>
+    <tr><td>Definition</td><td>An identifier for a dwc:UsagePolicy.</td></tr>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td>Examples</td><td><code><a href="https://localcontextshub.org/projects/54be05d7-aa5c-4886-abd9-dc45b2fa8df4/">https://localcontextshub.org/projects/54be05d7-aa5c-4886-abd9-dc45b2fa8df4/</a></code></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dcterms:rightsHolder"></span>
+    <span id="rightsHolder"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">rightsHolder</th></tr>
+    <tr><td>Identifier</td><td><a href="http://purl.org/dc/terms/rightsHolder">http://purl.org/dc/terms/rightsHolder</a></td></tr>
+    <tr><td>Definition</td><td>A person or organization owning or managing rights over the resource.</td></tr>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td>Examples</td><td><code>The Regents of the University of California</code></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dcterms:accessRights"></span>
+    <span id="accessRights"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">accessRights</th></tr>
+    <tr><td>Identifier</td><td><a href="http://purl.org/dc/terms/accessRights">http://purl.org/dc/terms/accessRights</a></td></tr>
+    <tr><td>Definition</td><td>Information about who can access the resource or an indication of its security status.</td></tr>
+    <tr><td>Notes</td><td>Access Rights may include information regarding access or restrictions based on privacy, security, or other policies.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>not-for-profit use only</code> (string literal example)</li><li class="list-group-item"><code><a href="https://www.fieldmuseum.org/field-museum-natural-history-conditions-and-suggested-norms-use-collections-data-and-images">https://www.fieldmuseum.org/field-museum-natural-history-conditions-and-suggested-norms-use-collections-data-and-images</a></code> (URI example)</li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dcterms:license"></span>
+    <span id="license"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">license</th></tr>
+    <tr><td>Identifier</td><td><a href="http://purl.org/dc/terms/license">http://purl.org/dc/terms/license</a></td></tr>
+    <tr><td>Definition</td><td>A legal document giving official permission to do something with the resource.</td></tr>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="http://creativecommons.org/publicdomain/zero/1.0/legalcode">http://creativecommons.org/publicdomain/zero/1.0/legalcode</a></code></li><li class="list-group-item"><code><a href="http://creativecommons.org/licenses/by/4.0/legalcode">http://creativecommons.org/licenses/by/4.0/legalcode</a></code></li></ul></td></tr>
+  </tbody>
+</table>
 
 
 <h2 id="livingspecimen">LivingSpecimen</h2>
@@ -4136,6 +5829,9 @@ This category contains terms that are generic in that they might apply to any ty
 
 <h2 id="machineobservation">MachineObservation</h2>
 
+<div class="my-4">
+      <a class="btn btn-sm btn-outline-primary m-1" href="#ecoiri:absentTaxa">absentTaxa</a>
+  </div>
 
 <table class="table">
   <tbody>
@@ -4147,6 +5843,19 @@ This category contains terms that are generic in that they might apply to any ty
   </tbody>
 </table>
 
+<p class="invisible">
+  <span id="ecoiri:absentTaxa"></span>
+    <span id="absentTaxa"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">absentTaxa</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/absentTaxa">http://rs.tdwg.org/eco/iri/absentTaxa</a></td></tr>
+    <tr><td>Definition</td><td>A taxon reported absent during an eco:Survey.</td></tr>
+    <tr><td>Notes</td><td>Absences can be reported at any taxonomic level. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
 
 
 <h2 id="usewithiri">UseWithIRI</h2>
@@ -4159,15 +5868,30 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:assertionUnit">assertionUnit</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:assertionValue">assertionValue</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:behavior">behavior</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:bibliographicIdentifierType">bibliographicIdentifierType</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:caste">caste</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#chronoiri:chronometricAgeConversionProtocol">chronometricAgeConversionProtocol</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#chronoiri:chronometricAgeDeterminedBy">chronometricAgeDeterminedBy</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#chronoiri:chronometricAgeProtocol">chronometricAgeProtocol</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#chronoiri:chronometricAgeUncertaintyMethod">chronometricAgeUncertaintyMethod</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:classificationSystem">classificationSystem</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#ecoiri:compilationSourceTypes">compilationSourceTypes</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#ecoiri:compilationTypes">compilationTypes</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:dataGeneralizations">dataGeneralizations</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:degreeOfEstablishment">degreeOfEstablishment</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:discipline">discipline</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:disposition">disposition</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#chronoiri:earliestChronometricAgeReferenceSystem">earliestChronometricAgeReferenceSystem</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:earliestGeochronologicalEra">earliestGeochronologicalEra</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:establishmentMeans">establishmentMeans</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:eventCategory">eventCategory</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#ecoiri:eventDurationUnit">eventDurationUnit</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:eventType">eventType</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#ecoiri:excludedDegreeOfEstablishmentScope">excludedDegreeOfEstablishmentScope</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#ecoiri:excludedGrowthFormScope">excludedGrowthFormScope</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#ecoiri:excludedHabitatScope">excludedHabitatScope</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#ecoiri:excludedLifeStageScope">excludedLifeStageScope</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#ecoiri:excludedTaxonomicScope">excludedTaxonomicScope</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:fieldNotes">fieldNotes</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:fieldNumber">fieldNumber</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:footprintSRS">footprintSRS</a>
@@ -4175,11 +5899,15 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:fromLithostratigraphicUnit">fromLithostratigraphicUnit</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:fundingAttribution">fundingAttribution</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:geodeticDatum">geodeticDatum</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:geologicEvent">geologicEvent</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:geologicProvince">geologicProvince</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:georeferencedBy">georeferencedBy</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:georeferenceProtocol">georeferenceProtocol</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:georeferenceSources">georeferenceSources</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:georeferenceVerificationStatus">georeferenceVerificationStatus</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#ecoiri:geospatialScopeAreaUnit">geospatialScopeAreaUnit</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:habitat">habitat</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:hazardType">hazardType</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:identificationQualifier">identificationQualifier</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:identificationType">identificationType</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:identificationVerificationStatus">identificationVerificationStatus</a>
@@ -4188,36 +5916,64 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:inDataset">inDataset</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:inDescribedPlace">inDescribedPlace</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:informationWithheld">informationWithheld</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#ecoiri:inventoryTypes">inventoryTypes</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dcterms:language">language</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#chronoiri:latestChronometricAgeReferenceSystem">latestChronometricAgeReferenceSystem</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:latestGeochronologicalEra">latestGeochronologicalEra</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:lifeStage">lifeStage</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:locationAccordingTo">locationAccordingTo</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#chronoiri:materialDated">materialDated</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:materialEntityCategory">materialEntityCategory</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:materialEntityType">materialEntityType</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:materialProportion">materialProportion</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:materialRole">materialRole</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#ecoiri:materialSampleTypes">materialSampleTypes</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:measuredChemistrySource">measuredChemistrySource</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:measurementDeterminedBy">measurementDeterminedBy</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:measurementMethod">measurementMethod</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:measurementType">measurementType</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:measurementUnit">measurementUnit</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:measurementValue">measurementValue</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:mineralogicalAnalysisProtocol">mineralogicalAnalysisProtocol</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#ecoiri:nonTargetTaxa">nonTargetTaxa</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:objectQuantityType">objectQuantityType</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:occurrenceStatus">occurrenceStatus</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:organismInteractionType">organismInteractionType</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:organismPart">organismPart</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:organismQuantityType">organismQuantityType</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:organismScope">organismScope</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:pathway">pathway</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:preferredSpatialRepresentation">preferredSpatialRepresentation</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:preparations">preparations</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#ecoiri:protocolNames">protocolNames</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:protocolType">protocolType</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:recordedBy">recordedBy</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:recordNumber">recordNumber</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:reproductiveCondition">reproductiveCondition</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:sampledFeatureType">sampledFeatureType</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:sampledSubstrateCategory">sampledSubstrateCategory</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:sampledSubstrateLayer">sampledSubstrateLayer</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:sampleSizeUnit">sampleSizeUnit</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#ecoiri:samplingEffortProtocol">samplingEffortProtocol</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#ecoiri:samplingEffortUnit">samplingEffortUnit</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#ecoiri:samplingPerformedBy">samplingPerformedBy</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:samplingProtocol">samplingProtocol</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:sex">sex</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:siteNumber">siteNumber</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:substrate">substrate</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#ecoiri:surveySiteType">surveySiteType</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#ecoiri:surveyTargetType">surveyTargetType</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#ecoiri:surveyTargetUnit">surveyTargetUnit</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#ecoiri:surveyTargetValue">surveyTargetValue</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#ecoiri:targetDegreeOfEstablishmentScope">targetDegreeOfEstablishmentScope</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#ecoiri:targetGrowthFormScope">targetGrowthFormScope</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#ecoiri:targetHabitatScope">targetHabitatScope</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#ecoiri:targetLifeStageScope">targetLifeStageScope</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#ecoiri:targetTaxonomicScope">targetTaxonomicScope</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#ecoiri:taxonCompletenessProtocols">taxonCompletenessProtocols</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#ecoiri:taxonCompletenessReported">taxonCompletenessReported</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:taxonFormula">taxonFormula</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#ecoiri:totalAreaSampledUnit">totalAreaSampledUnit</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:toDigitalSpecimen">toDigitalSpecimen</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:toTaxon">toTaxon</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwciri:typeStatus">typeStatus</a>
@@ -4301,6 +6057,18 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
   </tbody>
 </table>
 <p class="invisible">
+  <span id="dwciri:bibliographicIdentifierType"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">bibliographicIdentifierType</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/bibliographicIdentifierType">http://rs.tdwg.org/dwc/iri/bibliographicIdentifierType</a></td></tr>
+    <tr><td>Definition</td><td>A code that best matches the nature of an identifier for a dcterms:BibliographicResource.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a limited, tightly controlled vocabulary of identifier issuers. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
   <span id="dwciri:caste"></span>
   </p>
 <table class="table">
@@ -4309,6 +6077,96 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/caste">http://rs.tdwg.org/dwc/iri/caste</a></td></tr>
     <tr><td>Definition</td><td>A social caste of a dwc:Organism.</td></tr>
     <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary that aligns best with a dwc:Taxon. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="chronoiri:chronometricAgeConversionProtocol"></span>
+    <span id="chronometricAgeConversionProtocol"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">chronometricAgeConversionProtocol</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/chrono/iri/chronometricAgeConversionProtocol">http://rs.tdwg.org/chrono/iri/chronometricAgeConversionProtocol</a></td></tr>
+    <tr><td>Definition</td><td>The method used to convert the chrono:uncalibratedChronometricAge into a chronometric age in years, as captured in chrono:earliestChronometricAge, chrono:earliestChronometricAgeReferenceSystem, chrono:latestChronometricAge, and chrono:latestChronometricAgeReferenceSystem.</td></tr>
+    <tr><td>Notes</td><td>Terms in the chronoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="chronoiri:chronometricAgeDeterminedBy"></span>
+    <span id="chronometricAgeDeterminedBy"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">chronometricAgeDeterminedBy</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/chrono/iri/chronometricAgeDeterminedBy">http://rs.tdwg.org/chrono/iri/chronometricAgeDeterminedBy</a></td></tr>
+    <tr><td>Definition</td><td>A person, group, or organization that determined the chrono:ChronometricAge.</td></tr>
+    <tr><td>Notes</td><td>Terms in the chronoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="chronoiri:chronometricAgeProtocol"></span>
+    <span id="chronometricAgeProtocol"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">chronometricAgeProtocol</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/chrono/iri/chronometricAgeProtocol">http://rs.tdwg.org/chrono/iri/chronometricAgeProtocol</a></td></tr>
+    <tr><td>Definition</td><td>A method used to determine the chrono:ChronometricAge.</td></tr>
+    <tr><td>Notes</td><td>Terms in the chronoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="chronoiri:chronometricAgeUncertaintyMethod"></span>
+    <span id="chronometricAgeUncertaintyMethod"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">chronometricAgeUncertaintyMethod</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/chrono/iri/chronometricAgeUncertaintyMethod">http://rs.tdwg.org/chrono/iri/chronometricAgeUncertaintyMethod</a></td></tr>
+    <tr><td>Definition</td><td>The method used to generate the value of chrono:chronometricAgeUncertaintyInYears.</td></tr>
+    <tr><td>Notes</td><td>Terms in the chronoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwciri:classificationSystem"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">classificationSystem</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/classificationSystem">http://rs.tdwg.org/dwc/iri/classificationSystem</a></td></tr>
+    <tr><td>Definition</td><td>A reference to the classification system in which an authoritative name or formal classification belongs.</td></tr>
+    <tr><td>Notes</td><td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="ecoiri:compilationSourceTypes"></span>
+    <span id="compilationSourceTypes"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">compilationSourceTypes</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/compilationSourceTypes">http://rs.tdwg.org/eco/iri/compilationSourceTypes</a></td></tr>
+    <tr><td>Definition</td><td>The type of data source contributing to the compilation reported.</td></tr>
+    <tr><td>Notes</td><td>This term is only relevant if the eco:Survey is a compilation in which one or more types of data sources were used. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="ecoiri:compilationTypes"></span>
+    <span id="compilationTypes"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">compilationTypes</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/compilationTypes">http://rs.tdwg.org/eco/iri/compilationTypes</a></td></tr>
+    <tr><td>Definition</td><td>A statement specifying whether data reported are derived from sampling events, ancillary data compiled from other sources, or a combination of both.</td></tr>
+    <tr><td>Notes</td><td>This term is only relevant if the eco:Survey is an inventory. Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
@@ -4361,6 +6219,19 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
   </tbody>
 </table>
 <p class="invisible">
+  <span id="chronoiri:earliestChronometricAgeReferenceSystem"></span>
+    <span id="earliestChronometricAgeReferenceSystem"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">earliestChronometricAgeReferenceSystem</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/chrono/iri/earliestChronometricAgeReferenceSystem">http://rs.tdwg.org/chrono/iri/earliestChronometricAgeReferenceSystem</a></td></tr>
+    <tr><td>Definition</td><td>The reference system associated with the chrono:earliestChronometricAge.</td></tr>
+    <tr><td>Notes</td><td>Terms in the chronoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
   <span id="dwciri:earliestGeochronologicalEra"></span>
   </p>
 <table class="table">
@@ -4397,6 +6268,19 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
   </tbody>
 </table>
 <p class="invisible">
+  <span id="ecoiri:eventDurationUnit"></span>
+    <span id="eventDurationUnit"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">eventDurationUnit</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/eventDurationUnit">http://rs.tdwg.org/eco/iri/eventDurationUnit</a></td></tr>
+    <tr><td>Definition</td><td>The units associated with the eco:eventDurationValue.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use an IRI from a controlled vocabulary of SI units, derived units, or other non-SI units accepted for use within the SI.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
   <span id="dwciri:eventType"></span>
   </p>
 <table class="table">
@@ -4405,6 +6289,71 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/eventType">http://rs.tdwg.org/dwc/iri/eventType</a></td></tr>
     <tr><td>Definition</td><td>A narrow category that best matches the nature of a dwc:Event.</td></tr>
     <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="ecoiri:excludedDegreeOfEstablishmentScope"></span>
+    <span id="excludedDegreeOfEstablishmentScope"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">excludedDegreeOfEstablishmentScope</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/excludedDegreeOfEstablishmentScope">http://rs.tdwg.org/eco/iri/excludedDegreeOfEstablishmentScope</a></td></tr>
+    <tr><td>Definition</td><td>The degree of establishment of the dwc:Organisms explicitly excluded from sampling during an eco:Survey.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use an IRI from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/doe/">http://rs.tdwg.org/dwc/doc/doe/</a>. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a> . Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="http://rs.tdwg.org/dwcem/values/e001">http://rs.tdwg.org/dwcem/values/e001</a></code></li><li class="list-group-item"><code><a href="http://rs.tdwg.org/dwcem/values/e005">http://rs.tdwg.org/dwcem/values/e005</a></code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="ecoiri:excludedGrowthFormScope"></span>
+    <span id="excludedGrowthFormScope"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">excludedGrowthFormScope</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/excludedGrowthFormScope">http://rs.tdwg.org/eco/iri/excludedGrowthFormScope</a></td></tr>
+    <tr><td>Definition</td><td>The growth form or habit of the dwc:Organisms explicitly excluded from sampling during an eco:Survey.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="ecoiri:excludedHabitatScope"></span>
+    <span id="excludedHabitatScope"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">excludedHabitatScope</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/excludedHabitatScope">http://rs.tdwg.org/eco/iri/excludedHabitatScope</a></td></tr>
+    <tr><td>Definition</td><td>The habitat explicitly excluded from sampling during an eco:Survey.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="ecoiri:excludedLifeStageScope"></span>
+    <span id="excludedLifeStageScope"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">excludedLifeStageScope</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/excludedLifeStageScope">http://rs.tdwg.org/eco/iri/excludedLifeStageScope</a></td></tr>
+    <tr><td>Definition</td><td>The age class or life stage of the dwc:Organisms explicitly excluded from sampling during an eco:Survey.</td></tr>
+    <tr><td>Notes</td><td>This term is defined based on dwciri:lifeStage (<a href="http://rs.tdwg.org/dwc/terms/iri/lifeStage">http://rs.tdwg.org/dwc/terms/iri/lifeStage</a>). Recommended best practice is to use an IRI from the same controlled vocabulary as for dwciri:lifeStage. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="ecoiri:excludedTaxonomicScope"></span>
+    <span id="excludedTaxonomicScope"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">excludedTaxonomicScope</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/excludedTaxonomicScope">http://rs.tdwg.org/eco/iri/excludedTaxonomicScope</a></td></tr>
+    <tr><td>Definition</td><td>The taxonomic group explicitly excluded from sampling during an eco:Survey.</td></tr>
+    <tr><td>Notes</td><td>The eco:Survey to which the ecoiri:excludedTaxonomicScope refers could be at any level of hierarchy. In the case of a higher level (parent) eco:Survey, include all the taxonomic groups explicitly excluded from the child eco:Surveys that contributed to the parent eco:Survey. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
@@ -4493,6 +6442,30 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
   </tbody>
 </table>
 <p class="invisible">
+  <span id="dwciri:geologicEvent"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">geologicEvent</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/geologicEvent">http://rs.tdwg.org/dwc/iri/geologicEvent</a></td></tr>
+    <tr><td>Definition</td><td>A name of an identifiable event during which one or more geologic processes acted to create or modify one or more dwc:GeologicalMaterials. </td></tr>
+    <tr><td>Notes</td><td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwciri:geologicProvince"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">geologicProvince</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/geologicProvince">http://rs.tdwg.org/dwc/iri/geologicProvince</a></td></tr>
+    <tr><td>Definition</td><td>An extensive named region with similar geologic history, structural, petrographic, or physiographic features throughout in which the GeologicalContext was located.</td></tr>
+    <tr><td>Notes</td><td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
   <span id="dwciri:georeferencedBy"></span>
   </p>
 <table class="table">
@@ -4541,6 +6514,19 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
   </tbody>
 </table>
 <p class="invisible">
+  <span id="ecoiri:geospatialScopeAreaUnit"></span>
+    <span id="geospatialScopeAreaUnit"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">geospatialScopeAreaUnit</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/geospatialScopeAreaUnit">http://rs.tdwg.org/eco/iri/geospatialScopeAreaUnit</a></td></tr>
+    <tr><td>Definition</td><td>The units associated with eco:geospatialScopeAreaValue.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
   <span id="dwciri:habitat"></span>
   </p>
 <table class="table">
@@ -4549,6 +6535,18 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/habitat">http://rs.tdwg.org/dwc/iri/habitat</a></td></tr>
     <tr><td>Definition</td><td>A category or description of the habitat in which the dwc:Event occurred.</td></tr>
     <tr><td>Notes</td><td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwciri:hazardType"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">hazardType</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/hazardType">http://rs.tdwg.org/dwc/iri/hazardType</a></td></tr>
+    <tr><td>Definition</td><td>A term that belongs to a hazard classification scheme based on a set of unique characteristics and negative health outcomes.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary such as <a href="https://kos.geospecimens.org/vocab/hazard-type">https://kos.geospecimens.org/vocab/hazard-type</a>. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
@@ -4583,7 +6581,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
   <tbody>
     <tr class="table-secondary"><th colspan="2">identificationVerificationStatus</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/identificationVerificationStatus">http://rs.tdwg.org/dwc/iri/identificationVerificationStatus</a></td></tr>
-    <tr><td>Definition</td><td>A categorical indicator of the extent to which a taxonomic determination has been verified to be correct.</td></tr>
+    <tr><td>Definition</td><td>A categorical indicator of the extent to which a dwc:Identification has been verified to be correct.</td></tr>
     <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary such as that used in HISPID and ABCD. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
@@ -4649,6 +6647,19 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
   </tbody>
 </table>
 <p class="invisible">
+  <span id="ecoiri:inventoryTypes"></span>
+    <span id="inventoryTypes"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">inventoryTypes</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/inventoryTypes">http://rs.tdwg.org/eco/iri/inventoryTypes</a></td></tr>
+    <tr><td>Definition</td><td>The type of search process used to conduct an eco:Survey.</td></tr>
+    <tr><td>Notes</td><td>This term is only relevant if the eco:Survey represents an inventory. Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
   <span id="dcterms:language"></span>
     <span id="language"></span>
   </p>
@@ -4658,6 +6669,19 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr><td>Identifier</td><td><a href="http://purl.org/dc/terms/language">http://purl.org/dc/terms/language</a></td></tr>
     <tr><td>Definition</td><td>A language of the resource.</td></tr>
     <tr><td>Notes</td><td>Recommended best practice is to use an IRI from the Library of Congress ISO 639-2 scheme <a href="http://id.loc.gov/vocabulary/iso639-2">http://id.loc.gov/vocabulary/iso639-2</a></td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="chronoiri:latestChronometricAgeReferenceSystem"></span>
+    <span id="latestChronometricAgeReferenceSystem"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">latestChronometricAgeReferenceSystem</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/chrono/iri/latestChronometricAgeReferenceSystem">http://rs.tdwg.org/chrono/iri/latestChronometricAgeReferenceSystem</a></td></tr>
+    <tr><td>Definition</td><td>The reference system associated with the chrono:latestChronometricAge.</td></tr>
+    <tr><td>Notes</td><td>Terms in the chronoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
@@ -4698,6 +6722,19 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
   </tbody>
 </table>
 <p class="invisible">
+  <span id="chronoiri:materialDated"></span>
+    <span id="materialDated"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">materialDated</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/chrono/iri/materialDated">http://rs.tdwg.org/chrono/iri/materialDated</a></td></tr>
+    <tr><td>Definition</td><td>The material on which the chrono:chronometricAgeProtocol was actually performed.</td></tr>
+    <tr><td>Notes</td><td>Terms in the chronoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
   <span id="dwciri:materialEntityCategory"></span>
   </p>
 <table class="table">
@@ -4718,6 +6755,55 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/materialEntityType">http://rs.tdwg.org/dwc/iri/materialEntityType</a></td></tr>
     <tr><td>Definition</td><td>A more generic classification of a dwc:MaterialEntity than dwc:preparations but less broad than dwc:materialCategory.</td></tr>
     <tr><td>Notes</td><td>A more generic classification of a dwc:MaterialEntity than dwc:preparations. Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwciri:materialProportion"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">materialProportion</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/materialProportion">http://rs.tdwg.org/dwc/iri/materialProportion</a></td></tr>
+    <tr><td>Definition</td><td>The qualitative or quantitative abundance of a dwc:MaterialEntity with respect to another dwc:MaterialEntity of which it is a part.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary such as <a href="http://resource.geosciml.org/classifier/cgi/proportionterm">http://resource.geosciml.org/classifier/cgi/proportionterm</a>. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwciri:materialRole"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">materialRole</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/materialRole">http://rs.tdwg.org/dwc/iri/materialRole</a></td></tr>
+    <tr><td>Definition</td><td>A category that best matches the nature of the relationship between a dwc:MaterialEntity and another dwc:MaterialEntity of which it is a part.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary such as IUGS CGI Compound Material Consituent Part, <a href="http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole">http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole</a>. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="ecoiri:materialSampleTypes"></span>
+    <span id="materialSampleTypes"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">materialSampleTypes</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/materialSampleTypes">http://rs.tdwg.org/eco/iri/materialSampleTypes</a></td></tr>
+    <tr><td>Definition</td><td>A material sample type collected during the eco:Survey.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwciri:measuredChemistrySource"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">measuredChemistrySource</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/measuredChemistrySource">http://rs.tdwg.org/dwc/iri/measuredChemistrySource</a></td></tr>
+    <tr><td>Definition</td><td>A list (concatenated and separated) of resources associated with the reported measured chemistry described specifically enough to allow anyone in the future to use the same resources.</td></tr>
+    <tr><td>Notes</td><td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
@@ -4782,6 +6868,31 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
   </tbody>
 </table>
 <p class="invisible">
+  <span id="dwciri:mineralogicalAnalysisProtocol"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">mineralogicalAnalysisProtocol</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/mineralogicalAnalysisProtocol">http://rs.tdwg.org/dwc/iri/mineralogicalAnalysisProtocol</a></td></tr>
+    <tr><td>Definition</td><td>A technique used to determine the chemical composition or crystallography of a mineral.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary such as <a href="https://vocabs.ardc.edu.au/viewById/650">https://vocabs.ardc.edu.au/viewById/650</a>. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="ecoiri:nonTargetTaxa"></span>
+    <span id="nonTargetTaxa"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">nonTargetTaxa</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/nonTargetTaxa">http://rs.tdwg.org/eco/iri/nonTargetTaxa</a></td></tr>
+    <tr><td>Definition</td><td>A taxon reported during the dwc:Survey that is outside of the target taxonomic scope (the combination of ecoiri:targetTaxonomicScope and ecoiri:excludedTaxonomicScope).</td></tr>
+    <tr><td>Notes</td><td>This term is meant to allow a taxon that is considered outside of the taxonomic scope and yet was reported in the dataset to be shared. This term is relevant only if a target taxonomic scope is declared and eco:hasNonTargetTaxa is ‘true’. Taxonomic scope is based on the combination of ecoiri:targetTaxonomicScope and ecoiri:excludedTaxonomicScope. Non-target taxa (in some disciplines called “bycatch”) can be reported at any taxonomic level. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
   <span id="dwciri:objectQuantityType"></span>
   </p>
 <table class="table">
@@ -4818,6 +6929,18 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
   </tbody>
 </table>
 <p class="invisible">
+  <span id="dwciri:organismPart"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">organismPart</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/organismPart">http://rs.tdwg.org/dwc/iri/organismPart</a></td></tr>
+    <tr><td>Definition</td><td>An anatomical part of a dwc:Organism.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary such as the controlled vocabulary for ac:subjectPart (<a href="http://rs.tdwg.org/ac/doc/part/">http://rs.tdwg.org/ac/doc/part/</a>). Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
   <span id="dwciri:organismQuantityType"></span>
   </p>
 <table class="table">
@@ -4837,7 +6960,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr class="table-secondary"><th colspan="2">organismScope</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/organismScope">http://rs.tdwg.org/dwc/iri/organismScope</a></td></tr>
     <tr><td>Definition</td><td>A description of the kind of dwc:Organism instance. Can be used to indicate whether the dwc:Organism instance represents a discrete organism or if it represents a particular type of aggregation.</td></tr>
-    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary. This term is not intended to be used to specify a type of dwc:Taxon. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
@@ -4878,6 +7001,19 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
   </tbody>
 </table>
 <p class="invisible">
+  <span id="ecoiri:protocolNames"></span>
+    <span id="protocolNames"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">protocolNames</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/protocolNames">http://rs.tdwg.org/eco/iri/protocolNames</a></td></tr>
+    <tr><td>Definition</td><td>An IRI identifying a categorical descriptive name for the methods used during an eco:Survey.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
   <span id="dwciri:protocolType"></span>
   </p>
 <table class="table">
@@ -4896,7 +7032,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
   <tbody>
     <tr class="table-secondary"><th colspan="2">recordedBy</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/recordedBy">http://rs.tdwg.org/dwc/iri/recordedBy</a></td></tr>
-    <tr><td>Definition</td><td>An IRI identifying a dcterms:Agent responsible for recording a dwc:Occurrence.</td></tr>
+    <tr><td>Definition</td><td>An IRI identifying a dcterms:Agent responsible for recording a dwc:Event.</td></tr>
     <tr><td>Notes</td><td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
@@ -4908,7 +7044,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
   <tbody>
     <tr class="table-secondary"><th colspan="2">recordNumber</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/recordNumber">http://rs.tdwg.org/dwc/iri/recordNumber</a></td></tr>
-    <tr><td>Definition</td><td>An identifier given to the dwc:Occurrence at the time it was recorded. Often serves as a link between field notes and a dwc:Occurrence record, such as a specimen collector's number.</td></tr>
+    <tr><td>Definition</td><td>An identifier given to the dwc:Occurrence at the time it was recorded. Often serves as a link between field notes and a dwc:MaterialEntity record, such as a specimen collector's number.</td></tr>
     <tr><td>Notes</td><td>The subject is a dwc:Occurrence and the object is a (possibly IRI-identified) resource that is the field notes.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
@@ -4922,6 +7058,18 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/reproductiveCondition">http://rs.tdwg.org/dwc/iri/reproductiveCondition</a></td></tr>
     <tr><td>Definition</td><td>A reproductive condition of a dwc:Organism.</td></tr>
     <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwciri:sampledFeatureType"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">sampledFeatureType</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/sampledFeatureType">http://rs.tdwg.org/dwc/iri/sampledFeatureType</a></td></tr>
+    <tr><td>Definition</td><td>The type of naturally occurring or anthropogenic physical feature from which a dwc:MaterialEntity was sampled.</td></tr>
+    <tr><td>Notes</td><td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
@@ -4962,14 +7110,53 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
   </tbody>
 </table>
 <p class="invisible">
+  <span id="ecoiri:samplingEffortProtocol"></span>
+    <span id="samplingEffortProtocol"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">samplingEffortProtocol</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/samplingEffortProtocol">http://rs.tdwg.org/eco/iri/samplingEffortProtocol</a></td></tr>
+    <tr><td>Definition</td><td>A method or protocol used to determine the sampling effort, denoted by an IRI.</td></tr>
+    <tr><td>Notes</td><td>This protocol should be associated with the values reported in eco:samplingEffortValue and eco:samplingEffortUnit. This is a specialization of eco:protocolDescriptions focused on effort, distinct from the survey method. The effort relates to the intensity of sampling and therefore can assist in interpreting estimates of completeness. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="ecoiri:samplingEffortUnit"></span>
+    <span id="samplingEffortUnit"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">samplingEffortUnit</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/samplingEffortUnit">http://rs.tdwg.org/eco/iri/samplingEffortUnit</a></td></tr>
+    <tr><td>Definition</td><td>The units associated with an eco:samplingEffortValue.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="ecoiri:samplingPerformedBy"></span>
+    <span id="samplingPerformedBy"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">samplingPerformedBy</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/samplingPerformedBy">http://rs.tdwg.org/eco/iri/samplingPerformedBy</a></td></tr>
+    <tr><td>Definition</td><td>A person, group, or organization responsible for recording an eco:Survey.</td></tr>
+    <tr><td>Notes</td><td>An eco:Survey could be at any level of hierarchy. In the case of a higher level (parent) eco:Survey, include all the organizations or people involved in the child eco:Surveys that contributed to the parent eco:Survey. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
   <span id="dwciri:samplingProtocol"></span>
   </p>
 <table class="table">
   <tbody>
     <tr class="table-secondary"><th colspan="2">samplingProtocol</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/samplingProtocol">http://rs.tdwg.org/dwc/iri/samplingProtocol</a></td></tr>
-    <tr><td>Definition</td><td>The methods or protocols used during a dwc:Event, denoted by an IRI.</td></tr>
-    <tr><td>Notes</td><td>Recommended best practice is to describe a dwc:Event with no more than one sampling protocol. In the case of a summary dwc:Event in which a specific protocol can not be attributed to specific dwc:Occurrences, the recommended best practice is to repeat the property for each IRI that denotes a different sampling protocol that applies to the dwc:Occurrence.</td></tr>
+    <tr><td>Definition</td><td>The methods or protocols used during an eco:Survey, denoted by an IRI.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to describe an eco:Survey with no more than one sampling protocol. In the case of a summary eco:Survey in which a specific protocol can not be attributed to specific dwc:Occurrences, the recommended best practice is to repeat the property for each IRI that denotes a different sampling protocol that applies to the dwc:Occurrence.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
@@ -4998,6 +7185,161 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
   </tbody>
 </table>
 <p class="invisible">
+  <span id="dwciri:substrate"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">substrate</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/substrate">http://rs.tdwg.org/dwc/iri/substrate</a></td></tr>
+    <tr><td>Definition</td><td>A type of biotic or abiotic material to which a dwc:Organism was attached during a dwc:Occurrence.</td></tr>
+    <tr><td>Notes</td><td>No inference can be made from this term that a dwc:Organism interacted in any other way than being connected to some (not a particular) material resource of the substrate type (such as during parasitization or decomposition). A host-parasite relationship is better expressed as a dwc:OrganismInteraction. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="ecoiri:surveySiteType"></span>
+    <span id="surveySiteType"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">surveySiteType</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/surveySiteType">http://rs.tdwg.org/eco/iri/surveySiteType</a></td></tr>
+    <tr><td>Definition</td><td>A spatial category of a sampling location for an eco:Survey.</td></tr>
+    <tr><td>Notes</td><td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="ecoiri:surveyTargetType"></span>
+    <span id="surveyTargetType"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">surveyTargetType</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/surveyTargetType">http://rs.tdwg.org/eco/iri/surveyTargetType</a></td></tr>
+    <tr><td>Definition</td><td>A category that best matches the nature of a scope in an eco:SurveyTarget.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="ecoiri:surveyTargetUnit"></span>
+    <span id="surveyTargetUnit"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">surveyTargetUnit</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/surveyTargetUnit">http://rs.tdwg.org/eco/iri/surveyTargetUnit</a></td></tr>
+    <tr><td>Definition</td><td>Unit associated with a value in eco:surveyTargetValue.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="ecoiri:surveyTargetValue"></span>
+    <span id="surveyTargetValue"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">surveyTargetValue</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/surveyTargetValue">http://rs.tdwg.org/eco/iri/surveyTargetValue</a></td></tr>
+    <tr><td>Definition</td><td>A value to include or exclude in a scope categorized by eco:surveyTargetType.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="ecoiri:targetDegreeOfEstablishmentScope"></span>
+    <span id="targetDegreeOfEstablishmentScope"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">targetDegreeOfEstablishmentScope</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/targetDegreeOfEstablishmentScope">http://rs.tdwg.org/eco/iri/targetDegreeOfEstablishmentScope</a></td></tr>
+    <tr><td>Definition</td><td>The degree of establishment of the dwc:Organisms targeted for sampling during an eco:Survey.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use an IRI from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/doe/">http://rs.tdwg.org/dwc/doc/doe/</a>. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a> . Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="http://rs.tdwg.org/dwcem/values/e001">http://rs.tdwg.org/dwcem/values/e001</a></code></li><li class="list-group-item"><code><a href="http://rs.tdwg.org/dwcem/values/e005">http://rs.tdwg.org/dwcem/values/e005</a></code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="ecoiri:targetGrowthFormScope"></span>
+    <span id="targetGrowthFormScope"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">targetGrowthFormScope</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/targetGrowthFormScope">http://rs.tdwg.org/eco/iri/targetGrowthFormScope</a></td></tr>
+    <tr><td>Definition</td><td>The growth form or habit of the dwc:Organisms targeted for sampling during the eco:Survey.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="ecoiri:targetHabitatScope"></span>
+    <span id="targetHabitatScope"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">targetHabitatScope</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/targetHabitatScope">http://rs.tdwg.org/eco/iri/targetHabitatScope</a></td></tr>
+    <tr><td>Definition</td><td>The habitat targeted for sampling during an eco:Survey.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="ecoiri:targetLifeStageScope"></span>
+    <span id="targetLifeStageScope"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">targetLifeStageScope</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/targetLifeStageScope">http://rs.tdwg.org/eco/iri/targetLifeStageScope</a></td></tr>
+    <tr><td>Definition</td><td>The age class or life stage of the dwc:Organisms targeted for sampling during an eco:Survey.</td></tr>
+    <tr><td>Notes</td><td>This term is defined based on dwciri:lifeStage (<a href="http://rs.tdwg.org/dwc/terms/iri/lifeStage">http://rs.tdwg.org/dwc/terms/iri/lifeStage</a>). Recommended best practice is to use an IRI from the same controlled vocabulary as for dwciri:lifeStage. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="ecoiri:targetTaxonomicScope"></span>
+    <span id="targetTaxonomicScope"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">targetTaxonomicScope</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/targetTaxonomicScope">http://rs.tdwg.org/eco/iri/targetTaxonomicScope</a></td></tr>
+    <tr><td>Definition</td><td>The taxonomic group targeted for sampling during an eco:Survey.</td></tr>
+    <tr><td>Notes</td><td>The eco:Survey to which the ecoiri:targetTaxonomicScope refers could be at any level of hierarchy. In the case of a higher level (parent) eco:Survey, include all taxonomic groups surveyed in the child eco:Surveys that contributed to the parent eco:Survey. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="ecoiri:taxonCompletenessProtocols"></span>
+    <span id="taxonCompletenessProtocols"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">taxonCompletenessProtocols</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/taxonCompletenessProtocols">http://rs.tdwg.org/eco/iri/taxonCompletenessProtocols</a></td></tr>
+    <tr><td>Definition</td><td>A method or protocol used to determine ecoiri:taxonCompletenessReported, denoted by an IRI.</td></tr>
+    <tr><td>Notes</td><td>This term allows users to determine how comprehensively an area has been sampled. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="ecoiri:taxonCompletenessReported"></span>
+    <span id="taxonCompletenessReported"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">taxonCompletenessReported</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/taxonCompletenessReported">http://rs.tdwg.org/eco/iri/taxonCompletenessReported</a></td></tr>
+    <tr><td>Definition</td><td>Statement about whether the taxonomic completeness of an eco:Survey was assessed.</td></tr>
+    <tr><td>Notes</td><td>This term is meant to alert users that the inventory was conducted in such a way that all of the target taxa (the combination of ecoiri:targetTaxonomicScope and ecoiri:excludedTaxonomicScope) should have been detectable if they were present during the dwc:Event. This term can provide data users with a qualitative measure of how comprehensively an area has been surveyed, which assists in interpreting species populations, areas of occupancy, inferring species absences, etc. This term is only relevant if the dwc:Event used restricted search or open search methods. If taxonomic completeness was assessed, the methods used or an explanation of the basis of the completeness should covered by ecoiri:taxonCompletenessProtocols. Recommended best practice is to use an IRI from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/tcr/">http://rs.tdwg.org/dwc/doc/tcr/</a>. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="http://rs.tdwg.org/ecotcr/values/tcr01">http://rs.tdwg.org/ecotcr/values/tcr01</a></code></li><li class="list-group-item"><code><a href="http://rs.tdwg.org/ecotcr/values/tcr02">http://rs.tdwg.org/ecotcr/values/tcr02</a></code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
   <span id="dwciri:taxonFormula"></span>
   </p>
 <table class="table">
@@ -5005,6 +7347,19 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr class="table-secondary"><th colspan="2">taxonFormula</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/taxonFormula">http://rs.tdwg.org/dwc/iri/taxonFormula</a></td></tr>
     <tr><td>Definition</td><td>A pattern to use to construct a dwc:Identification from dwc:Taxon names and identification qualifiers.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="ecoiri:totalAreaSampledUnit"></span>
+    <span id="totalAreaSampledUnit"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">totalAreaSampledUnit</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/totalAreaSampledUnit">http://rs.tdwg.org/eco/iri/totalAreaSampledUnit</a></td></tr>
+    <tr><td>Definition</td><td>The units associated with eco:totalAreaSampledValue</td></tr>
     <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>

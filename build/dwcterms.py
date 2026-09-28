@@ -65,7 +65,7 @@ class DwcTerms:
 
 
     def load_contributors(self):
-        # Load the contributors YAML file from its GitHub URL
+        # Load the contributors YAML file from the configured metadata source
         contributors_yaml_url = self.githubBaseUri + document_config_file_path + self.doc_metadata_file_path + contributors_yaml_file
         if self.localGithub:
             with open(contributors_yaml_url) as file: contributors_yaml = file.read()
@@ -79,7 +79,7 @@ class DwcTerms:
 
 
     def load_document_configuration(self):
-        # Load the document configuration YAML file from its GitHub URL
+        # Load the document configuration YAML file from the configured metadata source
         document_configuration_yaml_url = self.githubBaseUri + document_config_file_path + self.doc_metadata_file_path + document_configuration_yaml_file
         if self.localGithub:
             with open(document_configuration_yaml_url) as file: document_configuration_yaml = file.read()
@@ -90,11 +90,11 @@ class DwcTerms:
 
     def retrieve_term_list_metadata(self):
         """
-        Retrieve term list metadata from GitHub
+        Retrieve term list metadata from the configured metadata source
         """
         termLists = pd.DataFrame(self.termLists, columns=['database'])
 
-        print('Retrieving term list metadata from GitHub')
+        print('Loading term list metadata...')
         frame = pd.read_csv(self.githubBaseUri + 'term-lists/term-lists.csv', na_filter=False)
 
         frame = frame.rename(columns={'vann_preferredNamespacePrefix': 'pref_ns_prefix',
@@ -110,15 +110,20 @@ class DwcTerms:
 
     def create_metadata_table(self):
         """
-        Create metadata table and populate using data from namespace databases in GitHub
+        Create metadata table and populate using data from the configured metadata source
         """
 
-        print('Retrieving metadata about terms from all namespaces from GitHub')
+        print('Loading term metadata...')
         for i, term_list in self.term_lists_info.iterrows():
             # retrieve current term metadata for term list
             metadata_url = self.githubBaseUri + term_list['database'] + '/' + term_list['database'] + '.csv'
-            print("Reading metadata", metadata_url)
-            metadata_df = pd.read_csv(metadata_url, keep_default_na=False)
+            print("Reading term metadata", metadata_url)
+            # dtype=str: term_localName is a merge key below and is used with the .str
+            # accessor when sorting, so it must stay a string. Without this, a term list
+            # whose local names are all digits (e.g. MIxS, which identifies samp_name as
+            # https://w3id.org/mixs/0001107) is read as int64, losing the leading zeros
+            # and breaking the term_iri concatenation.
+            metadata_df = pd.read_csv(metadata_url, keep_default_na=False, dtype=str)
             #print('metadata_df', metadata_df)
             metadata_df = metadata_df.assign(pref_ns_prefix=term_list['pref_ns_prefix'],
                                              pref_ns_uri=term_list['pref_ns_uri'],
@@ -128,8 +133,8 @@ class DwcTerms:
 
             # retrieve versions metadata for term list
             versions_url = self.githubBaseUri + term_list['database'] + '-versions/' + term_list['database'] + '-versions.csv'
-            print("Reading versions", versions_url)
-            versions_df = pd.read_csv(versions_url, na_filter=False)
+            print("Reading term versions", versions_url)
+            versions_df = pd.read_csv(versions_url, na_filter=False, dtype=str)
             versions_df = versions_df.query('version_status == "recommended"')
             #print("Vrec\n", versions_df)
             versions_df = versions_df[['term_localName', 'version', 'version_status']]
@@ -145,14 +150,14 @@ class DwcTerms:
 
             # retrieve translated term metadata for term list
             translations_url = self.githubBaseUri + term_list['database'] + '/' + term_list['database'] + '-translations.csv'
-            print("Reading translated metadata", translations_url)
+            print("Reading term translations", translations_url)
             try:
-                translations_df = pd.read_csv(translations_url, keep_default_na=False)
+                translations_df = pd.read_csv(translations_url, keep_default_na=False, dtype=str)
                 metadata_df = pd.merge(metadata_df, translations_df,
                                        on='term_localName',
                                        how='left')
             except:
-                print("No translations found for", term_list['database'])
+                print("No term translations found for", term_list['database'])
 
             if i == 0:
                 frame = metadata_df
@@ -165,7 +170,7 @@ class DwcTerms:
 
         # This makes sort case insensitive
         self.terms_sorted_by_localname = frame.iloc[frame.term_localName.str.lower().argsort()]
-        print('done retrieving')
+        print('Term metadata loaded.')
         #print('Columns of terms_sorted_by_localname:', self.terms_sorted_by_localname.columns.values)
         print()
 

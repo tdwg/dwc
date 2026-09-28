@@ -1,0 +1,114 @@
+{
+  "concepts": {
+    "introduced": [
+      {
+        "language": "en",
+        "value": "Alien"
+      },
+      {
+        "language": "en",
+        "value": "Exotic"
+      },
+      {
+        "language": "en",
+        "value": "Introduced"
+      },
+      {
+        "language": "en",
+        "value": "Non-native"
+      },
+      {
+        "language": "en",
+        "value": "Nonindigenous"
+      },
+      {
+        "language": "es-ES",
+        "value": "Exótica"
+      },
+      {
+        "language": "es-ES",
+        "value": "No-nativa"
+      }
+    ],
+    "introducedAssistedColonisation": [
+      {
+        "language": "en",
+        "value": "Assisted colonisation"
+      },
+      {
+        "language": "es-ES",
+        "value": "Colonización asistida"
+      }
+    ],
+    "native": [
+      {
+        "language": "en",
+        "value": "Indigenous"
+      },
+      {
+        "language": "en",
+        "value": "Native"
+      },
+      {
+        "language": "es-ES",
+        "value": "Autóctona"
+      },
+      {
+        "language": "es-ES",
+        "value": "Nativa"
+      }
+    ],
+    "nativeEndemic": [],
+    "nativeReintroduced": [
+      {
+        "language": "en",
+        "value": "Reintroduced"
+      },
+      {
+        "language": "es-ES",
+        "value": "Reintroducida"
+      }
+    ],
+    "uncertain": [
+      {
+        "language": "en",
+        "value": "Cryptogenic"
+      },
+      {
+        "language": "en",
+        "value": "Uncertain"
+      },
+      {
+        "language": "en",
+        "value": "Unknown"
+      },
+      {
+        "language": "es-ES",
+        "value": "Desconocido"
+      },
+      {
+        "language": "es-ES",
+        "value": "Incierto"
+      }
+    ],
+    "vagrant": [
+      {
+        "language": "en",
+        "value": "Casual"
+      },
+      {
+        "language": "en",
+        "value": "Vagrant"
+      },
+      {
+        "language": "es-ES",
+        "value": "Casual"
+      },
+      {
+        "language": "es-ES",
+        "value": "Transitoria"
+      }
+    ]
+  },
+  "source": "https://api.gbif.org/v1/vocabularies/EstablishmentMeans/concepts/%s/alternativeLabels"
+}

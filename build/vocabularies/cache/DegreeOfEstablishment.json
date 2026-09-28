@@ -1,0 +1,16 @@
+{
+  "concepts": {
+    "captive": [],
+    "casual": [],
+    "colonising": [],
+    "cultivated": [],
+    "established": [],
+    "failing": [],
+    "invasive": [],
+    "native": [],
+    "released": [],
+    "reproducing": [],
+    "widespreadInvasive": []
+  },
+  "source": "https://api.gbif.org/v1/vocabularies/DegreeOfEstablishment/concepts/%s/alternativeLabels"
+}
