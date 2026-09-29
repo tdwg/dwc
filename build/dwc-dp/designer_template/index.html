@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Darwin Core Data Package Designer (Experimental)</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+  <script src="https://unpkg.com/cytoscape@3.24.0/dist/cytoscape.min.js"></script>
+</head>
+
+<body id="top">
+  <div class="sticky-shell">
+    <div class="header-row">
+      <h1>Darwin Core Data Package Designer (Experimental)</h1>
+    </div>
+
+    <div id="designSummary" class="design-summary">
+      <strong>Design summary</strong>
+      <span id="designSummaryText">Tables selected: 0  Fields selected: 0  Tables enabled: 0  Filter: All fields</span>
+      <div class="design-summary-actions">
+        <button id="btnResetWorkspace" class="btn btn-top" type="button">Clear all</button>
+        <button id="btnCopyLink" class="btn btn-top" type="button" title="Save a shareable link for this selection">Save link</button>
+        <a href="https://gbif.github.io/dwc-dp/dp/" target="_blank" class="btn btn-top">DwC-DP Guide</a>
+        <span id="headerVersion" class="small">Version: loading…</span>
+      </div>
+    </div>
+
+      <div id="linkNotice" class="panel link-notice-panel" style="display:none;">
+        <div class="panel-head">
+          <div>
+            <h2 style="margin:0;">Link reconciliation</h2>
+            <div id="linkNoticeText" class="small" style="margin-top:8px;"></div>
+          </div>
+          <div class="actions">
+            <button id="btnDismissLinkNotice" class="btn" type="button">Dismiss</button>
+          </div>
+        </div>
+      </div>
+
+  <div id="tabBar" class="tabbar">
+    <button class="tabbtn active" type="button" data-tab="fieldTab">Select tables and fields</button>
+    <button class="tabbtn" type="button" data-tab="graphTab">Visualize relationships</button>
+    <button class="tabbtn" type="button" data-tab="outputTab">Generate outputs</button>
+  </div>
+
+  <div id="tabParking" style="display:none;"></div>
+
+  <div id="tabPanels">
+    <div id="fieldTab" class="tabpanel active"></div>
+    <div id="graphTab" class="tabpanel"></div>
+    <div id="outputTab" class="tabpanel"></div>
+  </div>
+
+
+
+  <div id="fieldFinder" class="panel" style="margin: 14px 0;">
+    <div class="panel-head">
+      <div>
+        <h2>Find a field</h2>
+      </div>
+    </div>
+
+    <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+      <input id="fieldQuery"
+             type="text"
+             placeholder="Search for a field, e.g., decimalLatitude, eventID, recordedBy"
+             style="flex: 1; min-width: 180px; padding: 10px 12px; border: 1px solid #ddd; border-radius: 10px; font-size: 14px;" />
+      <button id="btnFieldSearchInfo" class="info" type="button" title="About field search">i</button>
+      <button id="btnClearFieldQuery" class="btn" type="button">Clear</button>
+    </div>
+    <div style="margin-top: 10px;">
+      <label style="display: inline-flex; align-items: center; gap: 8px;">
+        <input id="includeFieldMetadata" type="checkbox" />
+        <span>Also include definitions, usage notes, and examples in search</span>
+      </label>
+    </div>
+
+    <div id="fieldGuidance" class="small" style="margin-top: 10px;"></div>
+
+    <div id="fieldResults"></div>
+  </div>
+
+  <div id="selectTablesShell" class="panel">
+  <div id="appSectionIntro" style="margin-bottom: 8px;">
+    <div class="panel-head">
+      <div>
+        <h2 id="selectTables" style="margin:0;">Select tables</h2>
+        <div class="meta">Use this section to select the DwC-DP tables needed for your dataset. Start with at least one table from the first column (tables with no required dependencies). Only tables whose required dependencies are already selected can be checked. The field search above can help you identify and select which tables you need. Table selections affect relationship visualizations, table mapping order, and output generation.</div>
+      </div>
+      <div class="actions"></div>
+    </div>
+  </div>
+
+  <div id="app" class="loading">Loading DwC-DP profile and schemas…</div>
+  </div>
+
+
+  <div id="graphPanel" class="panel" style="margin-top: 14px; display: none;">
+    <div class="panel-head">
+      <div>
+        <h2>Visualize relationships</h2>
+        <div class="meta">This section shows how tables relate to each other. Each table is represented as a node in the graph, while each relationship is represented by an arrow between nodes (an "edge"). Weak foreign-key relationships are hidden by default and can be shown with the "Show weak foreign keys" option. Click on a node or edge to see a popup showing detailed information about it. By default, only tables that have been specifically selected (either with its checkbox, or by selecting a field from that table) show in the graph. "Enabled" tables are those that have all of the other tables they depend on selected. These can be revealed by clicking on "Show enabled tables". Right-click on an enabled table to select that table (and potentially enable more tables). Right-click on a "Selected" table to deselect it and any fields that might have been selected within it.</div>
+      </div>
+      <div class="actions">
+        <button id="btnToggleEnabledTables" class="btn" type="button">Show enabled tables</button>
+        <label style="display:inline-flex; align-items:center; gap:6px; font-size:12px; cursor:pointer;">
+          <input id="inputShowWeakForeignKeys" type="checkbox" />
+          Show weak foreign keys
+        </label>
+        <label style="display:inline-flex; align-items:center; gap:6px; font-size:12px;">
+          Packing factor
+          <input id="inputPackingFactor" type="number" value="0.5" min="0.1" max="10" step="0.1"
+                 style="width:60px; padding:4px 6px; border:1px solid #ccc; border-radius:8px; font-size:12px;" />
+        </label>
+        <button id="btnFitGraph" class="btn" type="button">Fit graph</button>
+      </div>
+    </div>
+    <div id="graphStatus" class="small" style="margin-bottom: 8px;">Select or enable tables to populate the graph.</div>
+    <div id="graphCy" style="width: 100%; height: 520px; border: 1px solid #eee; border-radius: 8px;"></div>
+  </div>
+
+
+  <div id="outputDual" class="output-dual">
+
+  <div id="orderPanel" class="panel" style="margin-top: 14px; display: none;">
+    <div class="panel-head">
+      <div>
+        <h2>Recommended table mapping order</h2>
+        <div class="meta">Use this section after selecting tables. It generates a recommended order for mapping data into the selected tables based on all foreign-key relationships among them. This does not change the selected tables, it only helps you plan the sequence of mapping work.</div>
+      </div>
+      <div class="actions">
+        <button id="btnCopyOrder" class="btn" type="button" disabled>Copy to clipboard</button>
+      </div>
+    </div>
+<textarea id="orderText"
+              class="mono"
+              readonly
+              style="width: 100%; height: 180px; box-sizing: border-box; padding: 10px; border: 1px solid #eee; border-radius: 8px;"></textarea>
+
+    <div id="orderStatus" class="small" style="margin-top: 8px;"></div>
+  </div>
+
+
+  <div id="dpPanel" class="panel" style="margin-top: 14px; display: none;">
+    <div class="panel-head">
+      <div>
+        <h2>Generate outputs</h2>
+        <div class="meta">Use this section after selecting tables. Generate a <span class="mono">datapackage.json</span> for inspection and copying, or download a bundle containing the <span class="mono">datapackage.json</span> plus one empty CSV file with headers for each selected table. The outputs always reflect the current table selection.</div>
+      </div>
+      <div class="actions">
+        <button id="btnCopyDp" class="btn" type="button" disabled>Copy to clipboard</button>
+        <button id="btnDownloadDp" class="btn" type="button" disabled>Download bundle</button>
+      </div>
+    </div>
+    <div style="margin: 10px 0 8px 0;">
+      <label style="display: inline-flex; align-items: center; gap: 8px;">
+        <input id="dpSelectedRequiredOnly" type="checkbox" />
+        <span>Selected fields only</span>
+      </label>
+    </div>
+<textarea id="dpText" class="mono" readonly style="width: 100%; height: 260px; box-sizing: border-box; padding: 10px; border: 1px solid #eee; border-radius: 8px;"></textarea>
+    <div id="dpStatus" class="small" style="margin-top: 8px;"></div>
+  </div>
+
+  </div>
+
+
+  <div id="backdrop" class="modal-backdrop" role="dialog" aria-modal="true">
+    <div class="modal">
+      <header>
+        <h3 id="modalTitle">Table</h3>
+        <button id="modalCloseBtn" type="button">Close</button>
+      </header>
+      <div class="content" id="modalContent"></div>
+    </div>
+  </div>
+
+<script src="data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -35,6 +35,18 @@ This makes it possible to build and review draft Darwin Core artifacts
 before proposed changes have been merged into the authoritative
 repository.
 
+Darwin Core Data Package (DwC-DP) build inputs are maintained directly
+in this repository under:
+
+``` text
+build/dwc-dp/
+```
+
+These include the authoritative DwC-DP table and field CSVs, the profile
+and Quick Reference Guide templates, SQL generation configuration, and
+Designer template. Their paths and output destinations are configured
+under `dwc_dp` in `build_artifacts.yaml`.
+
 ## Installation
 
 Install the required Python packages:
@@ -125,9 +137,9 @@ Generated changes are staged and committed to their target locations
 only after successful generation, so a failed build does not
 intentionally leave a partially updated set of artifacts.
 
-## Quick Reference Guide
+## Darwin Core Quick Reference Guide
 
-The structure and ordering of terms in the Darwin Core Quick Reference
+The structure and ordering of terms in the classic Darwin Core Quick Reference
 Guide and associated derivative CSVs are controlled by:
 
 ``` text
@@ -138,6 +150,30 @@ The positions of class terms in this file determine the sections of the
 Quick Reference Guide. When new terms are introduced, their IRIs must be
 added in the appropriate positions for them to appear in the Quick
 Reference Guide and its derivatives.
+
+## Darwin Core Data Package artifacts
+
+The unified build also generates the configured DwC-DP artifacts. These
+have three different roles and destinations:
+
+-   `dwcdp/` contains generated profile and table-schema resources. These
+    are intermediate release artifacts intended for publication to their
+    canonical locations in `rs.tdwg.org`; the directory is Git-ignored.
+-   `docs/dwc-dp/` contains persistent web artifacts, currently the
+    DwC-DP Quick Reference Guide and Designer.
+-   `dist/dwcdp/` contains persistent implementation and distribution
+    artifacts, currently the PostgreSQL DDL.
+
+The profile and table schemas are generated and validated before
+dependent DwC-DP artifacts are built. Validation includes JSON and
+required metadata checks, Frictionless Table Schema validation, DwC-DP
+profile constraints, and foreign-key integrity checks.
+
+The DwC-DP Quick Reference Guide, PostgreSQL DDL, and Designer are
+generated from the validated schema resources. Generated directories
+that must represent a complete set are replaced transactionally when
+their contents change, preventing stale generated files from remaining
+in the repository.
 
 ## Generated documents
 

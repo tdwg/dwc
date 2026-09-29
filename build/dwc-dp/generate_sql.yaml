@@ -1,0 +1,216 @@
+metadata:
+  title: Darwin Core Data Package PostgreSQL schema
+  source_table_schemas: dwcdp/table-schemas/
+  generated_by: build_artifacts.py
+  notes:
+  - Generated from DwC-DP table schemas plus PostgreSQL YAML configuration.
+  - foreignKeys are rendered as PostgreSQL FOREIGN KEY constraints.
+  - weakPrimaryKeys are rendered as plain columns with indexes but without REFERENCES.
+  - weakForeignKeys are rendered as plain columns with indexes but without REFERENCES.
+enums:
+  degree_of_establishment:
+    vocabulary_path: degreeOfEstablishment/degreeOfEstablishment.csv
+  establishment_means:
+    vocabulary_path: establishmentMeans/establishmentMeans.csv
+  pathway:
+    vocabulary_path: pathway/pathway.csv
+  taxon_completeness_reported:
+    vocabulary_path: taxonCompletenessReported/taxonCompletenessReported.csv
+
+  event_category:
+    values:
+    - Event
+    - MaterialGathering
+    - Occurrence
+    - OrganismInteraction
+    - Survey
+  include_or_exclude:
+    values:
+    - include
+    - exclude
+  occurrence_status:
+    values:
+    - detected
+    - present
+    - notDetected
+    - absent
+  relationship_targets:
+    values:
+    - Agent
+    - BibliographicResource
+    - ChronometricAge
+    - Event
+    - GeologicalContext
+    - Identification
+    - Material
+    - Media
+    - MolecularProtocol
+    - NucleotideAnalysis
+    - NucleotideSequence
+    - Occurrence
+    - Organism
+    - OrganismInteraction
+    - Protocol
+    - Provenance
+    - Survey
+    - SurveyTarget
+    - SurveyTargetDescriptor
+    - UsagePolicy
+defaults:
+  columns:
+    agent-agent-role:
+      agentRoleOrder:
+        value: 1
+    chronometric-age-agent-role:
+      agentRoleOrder:
+        value: 1
+    collection-agent-role:
+      agentRoleOrder:
+        value: 1
+    event-agent-role:
+      agentRoleOrder:
+        value: 1
+    identification:
+      taxonFormula:
+        value: '''A'''
+    identification-agent-role:
+      agentRoleOrder:
+        value: 1
+    material-agent-role:
+      agentRoleOrder:
+        value: 1
+    media-agent-role:
+      agentRoleOrder:
+        value: 1
+    molecular-protocol-agent-role:
+      agentRoleOrder:
+        value: 1
+    occurrence:
+      occurrenceStatus:
+        value: '''detected'''
+      organismScope:
+        value: '''multicellular organism'''
+      taxonFormula:
+        value: '''A'''
+    occurrence-agent-role:
+      agentRoleOrder:
+        value: 1
+    organism-interaction-agent-role:
+      agentRoleOrder:
+        value: 1
+    resource-relationship:
+      relationshipOrder:
+        value: 1
+    survey:
+      taxonCompletenessReported:
+        value: '''notReported'''
+    survey-agent-role:
+      agentRoleOrder:
+        value: 1
+    survey-target-descriptor:
+      includeOrExclude:
+        value: '''include'''
+checks:
+  columns:
+    collection-agent-role:
+      agentRoleOrder:
+      - name: collection_agent_role_order_valid
+        sql: agent_role_order >= 1
+    event:
+      startDayOfYear:
+      - name: event_start_day_of_year_valid
+        sql: start_day_of_year BETWEEN 1 AND 366
+      endDayOfYear:
+      - name: event_end_day_of_year_valid
+        sql: end_day_of_year BETWEEN 1 AND 366
+      coordinateUncertaintyInMeters:
+      - name: event_coordinate_uncertainty_in_meters_valid
+        sql: coordinate_uncertainty_in_meters > 0 AND coordinate_uncertainty_in_meters
+          <= 20037509
+      coordinatePrecision:
+      - name: event_coordinate_precision_valid
+        sql: coordinate_precision >= 0 AND coordinate_precision <= 90
+      footprintSpatialFit:
+      - name: event_footprint_spatial_fit_valid
+        sql: footprint_spatial_fit >= 0
+      pointRadiusSpatialFit:
+      - name: event_point_radius_spatial_fit_valid
+        sql: point_radius_spatial_fit = 0 OR point_radius_spatial_fit >= 1
+types:
+  columns:
+    agent-agent-role:
+      agentRoleOrder:
+        sql_type: SMALLINT
+    chronometric-age-agent-role:
+      agentRoleOrder:
+        sql_type: SMALLINT
+    collection-agent-role:
+      agentRoleOrder:
+        sql_type: SMALLINT
+    event:
+      startDayOfYear:
+        sql_type: SMALLINT
+      endDayOfYear:
+        sql_type: SMALLINT
+      year:
+        sql_type: SMALLINT
+      month:
+        sql_type: SMALLINT
+      day:
+        sql_type: SMALLINT
+    event-agent-role:
+      agentRoleOrder:
+        sql_type: SMALLINT
+    identification-agent-role:
+      agentRoleOrder:
+        sql_type: SMALLINT
+    identification-taxon:
+      taxonSortOrder:
+        sql_type: SMALLINT
+    material-agent-role:
+      agentRoleOrder:
+        sql_type: SMALLINT
+    media-agent-role:
+      agentRoleOrder:
+        sql_type: SMALLINT
+    molecular-protocol-agent-role:
+      agentRoleOrder:
+        sql_type: SMALLINT
+    occurrence-agent-role:
+      agentRoleOrder:
+        sql_type: SMALLINT
+    organism-interaction-agent-role:
+      agentRoleOrder:
+        sql_type: SMALLINT
+    resource-relationship:
+      relationshipOrder:
+        sql_type: SMALLINT
+    survey:
+      siteCount:
+        sql_type: SMALLINT
+      abundanceCap:
+        sql_type: SMALLINT
+    survey-agent-role:
+      agentRoleOrder:
+        sql_type: SMALLINT
+enum_bindings:
+  occurrence:
+    occurrenceStatus:
+      enum: occurrence_status
+    establishmentMeans:
+      enum: establishment_means
+    degreeOfEstablishment:
+      enum: degree_of_establishment
+    pathway:
+      enum: pathway
+  resource-relationship:
+    subjectResourceType:
+      enum: relationship_targets
+    relatedResourceType:
+      enum: relationship_targets
+  survey:
+    taxonCompletenessReported:
+      enum: taxon_completeness_reported
+  survey-target-descriptor:
+    includeOrExclude:
+      enum: include_or_exclude

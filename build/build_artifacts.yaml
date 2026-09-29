@@ -289,6 +289,54 @@ documents:
   document_metadata_path: dwc_terms_simple/
   path: simple
   template: dwc_terms_simple/index_template.md
+
+# Darwin Core Data Package build inputs and destinations.
+# Paths are repository-relative.
+dwc_dp:
+  version: http://rs.tdwg.org/dwc-dp/1.0-dwc
+
+  sources:
+    tables: build/dwc-dp/dwc-dp-tables.csv
+    fields: build/dwc-dp/dwc-dp-fields.csv
+
+  profile:
+    template: build/dwc-dp/dwc-dp-profile_template.json
+    output: dwcdp/dwc-dp-profile.json
+    table_schemas: dwcdp/table-schemas
+
+  qrg:
+    template: build/dwc-dp/qrg_template.html
+    output: docs/dwc-dp/qrg/index.html
+    images_source: build/dwc-dp/images
+    images_output: docs/dwc-dp/images
+    # Every recommended table must occur exactly once. Non-recommended names warn and are skipped.
+    table_groups:
+      - [event, chronometric-age, geological-context, occurrence, organism, organism-interaction]
+      - [survey, survey-survey-target, survey-target, survey-target-descriptor]
+      - [identification, identification-taxon]
+      - [material, geological-material, material-geological-context]
+      - [nucleotide-analysis, molecular-protocol, nucleotide-sequence]
+      - [agent, agent-agent-role, chronometric-age-agent-role, event-agent-role, identification-agent-role, material-agent-role, media-agent-role, molecular-protocol-agent-role, occurrence-agent-role, organism-interaction-agent-role, survey-agent-role]
+      - [media, agent-media, chronometric-age-media, event-media, geological-context-media, material-media, occurrence-media, organism-interaction-media]
+      - [protocol, chronometric-age-protocol, event-protocol, material-protocol, occurrence-protocol, survey-protocol]
+      - [bibliographic-resource, chronometric-age-reference, event-reference, identification-reference, material-reference, molecular-protocol-reference, occurrence-reference, organism-reference, organism-interaction-reference, protocol-reference, survey-reference]
+      - [chronometric-age-assertion, event-assertion, material-assertion, media-assertion, molecular-protocol-assertion, nucleotide-analysis-assertion, occurrence-assertion, organism-assertion, organism-interaction-assertion, survey-assertion]
+      - [agent-identifier, event-identifier, material-identifier, media-identifier, occurrence-identifier, organism-identifier, survey-identifier]
+      - [provenance, event-provenance, material-provenance, media-provenance]
+      - [usage-policy, event-usage-policy, material-usage-policy, media-usage-policy]
+      - [organism-relationship, resource-relationship]
+
+  sql:
+    config: build/dwc-dp/generate_sql.yaml
+    output: dist/dwcdp/dwc-dp.sql
+
+  csv_headers:
+    output: dist/dwcdp/csv
+
+  designer:
+    template: build/dwc-dp/designer_template
+    output: docs/dwc-dp/designer
+
 # Shared presentation resources and generated site-level documentation that are
 # not themselves standard documents. The QRG therefore has no document lifecycle.
 webpages:

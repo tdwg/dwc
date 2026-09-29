@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darwin Core Data Package - Quick Reference Guide</title>
+    <style>
+        html, body {{ margin: 0; padding: 0; box-sizing: border-box; overflow-x: hidden; height: 100%; }}
+        body {{ font-family: Arial, sans-serif; line-height: 1.4; display: flex; align-items: flex-start; }}
+        main {{ flex: 1; padding: 20px; max-width: calc(100% - 260px); box-sizing: border-box; }}
+        aside.nav-menu {{
+            width: 240px;
+            border-left: 1px solid #ccc;
+            padding: 15px;
+            height: 100vh;
+            overflow-y: auto;
+            position: sticky;
+            top: 0;
+            box-sizing: border-box;
+            background: #fafafa;
+        }}
+        h1 {{ border-bottom: 1px solid #ccc; padding-bottom: 4px; margin: 12px 0 8px; }}
+        h2 {{ padding-bottom: 4px; margin: 12px 0 8px; }}
+        .intro {{ margin: 12px 0; font-size: 1.02em; color: #333; }}
+        .intro img {{ display: block; width: 100%; height: auto; border: 1px solid #ccc; box-sizing: border-box; }}
+        .figure-caption {{ font-size: 1.02em; color: #555; text-align: left; margin-top: 4px; }}
+        nav.class-index a.class-box {{
+            display: inline-block;
+            margin: 2px;
+            padding: 2px 6px;
+            border: 1px solid #8da7b5;
+            border-radius: 4px;
+            background: #f1f6f9;
+            color: #003c71;
+            text-decoration: none;
+            font-size: 0.8em;
+        }}
+        nav.class-index a.class-box:hover {{ background: #e1ecf4; }}
+        nav.field-index {{ margin: 12px 0; }}
+        nav.field-index a.field-box {{ display: inline-block; margin: 3px; padding: 3px 6px; border: 1px solid #8da7b5; border-radius: 4px; background: #f1f6f9; color: #003c71; text-decoration: none; font-size: 0.85em; }}
+        nav.field-index a.field-box:hover {{ background: #e1ecf4; }}
+        .menu-separator {{ border-top: 1px solid #ccc; margin: 5px 0; }}
+        section.term {{ border-top: 1px solid #ddd; padding: 6px 0; margin-bottom: 8px; }}
+        .class-header-wrapper {{
+            width: 100vw;
+            position: relative;
+            left: -20px;
+            background: #dfe5d8;
+            padding: 8px 20px;
+            box-sizing: border-box;
+            margin-bottom: 8px;
+            border-bottom: 1px solid #ccc;
+            border-top: 1px solid #ccc;
+        }}
+        .class-header-wrapper h2 {{
+            margin: 0;
+            font-size: 1.1em;
+            color: #003c71;
+        }}
+        .foreign-key-summary h4 {{
+            margin-top: 20px;
+            font-size: 1.1em;
+            color: #003c71;
+        }}
+        .foreign-key-summary table td.label {{
+            font-weight: bold;
+            color: #003c71;
+        }}
+        .field-header-wrapper {{
+            width: 100vw;
+            position: relative;
+            left: -20px;
+            background: #cdd8de;
+            padding: 4px 20px;
+            box-sizing: border-box;
+        }}
+        .field-header-wrapper h3 {{
+            margin: 0;
+            font-size: 1em;
+            color: #003c71;
+        }}
+        table.term-table {{ width: 100%; border-collapse: collapse; margin-top: 2px; }}
+        table.term-table td {{ vertical-align: top; padding: 2px 3px; border-top: 1px solid #ccc; font-size: 0.9em; }}
+        table.term-table td:first-child {{ border-left: none; }}
+        table.term-table td.label {{ width: 20%; font-weight: bold; color: #003c71; }}
+        .examples-content {{ color: #d63384; padding: 1px 0; }}
+        .examples-separator {{ border-top: 1px solid #ccc; margin: 2px 0; }}
+        footer {{ margin-top: 25px; font-size: 0.85em; color: #555; border-top: 1px solid #ccc; padding-top: 6px; }}
+        .top-link {{ display: block; margin-bottom: 6px; font-weight: bold; text-decoration: none; color: #007BFF; }}
+
+#table1-scope ol{{margin:0;padding:0}}
+#table1-scope table td, #table1-scope table th{{padding:0}}
+#table1-scope .c3{{border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;background-color:#b6d7a8;border-left-style:solid;border-bottom-width:1pt;width:214.5pt;border-top-color:#000000;border-bottom-style:solid}}
+#table1-scope .c6{{border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:69.8pt;border-top-color:#000000;border-bottom-style:solid}}
+#table1-scope .c11{{border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:45%;border-top-color:#000000;border-bottom-style:solid}}
+#table1-scope .c7{{border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:45%;border-top-color:#000000;border-bottom-style:solid}}
+#table1-scope .c17{{border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:0pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:0pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:10%;border-top-color:#000000;border-bottom-style:solid}}
+#table1-scope .c5{{background-color:#ffffff;padding-top:0pt;padding-bottom:1.3em;line-height:1.15;orphans:2;widows:2;text-align:left;height:1.2em}}
+#table1-scope .c8{{color:#1f2328;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:1.3em;font-family:"Arial";font-style:normal}}
+#table1-scope .c14{{color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:1.2em;font-family:"Arial";font-style:normal}}
+#table1-scope .c1{{color:#1f2328;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:.90em;font-family:"Arial";font-style:normal}}
+#table1-scope .c15{{background-color:#ffffff;padding-top:0pt;padding-bottom:1.3em;line-height:1.15;orphans:2;widows:2;text-align:left}}
+#table1-scope .c0{{text-decoration-skip-ink:none;font-size:.90em;-webkit-text-decoration-skip:none;color:#1155cc;text-decoration:underline}}
+#table1-scope .c2{{padding-top:0pt;padding-bottom:0pt;line-height:1.0;text-align:left}}
+#table1-scope .c12{{border-spacing:0;border-collapse:collapse;margin-right:auto}}
+#table1-scope .c9{{padding-top:0pt;padding-bottom:0pt;line-height:1.0;text-align:center}}
+#table1-scope .c19{{text-decoration:none;vertical-align:baseline;font-family:"Arial";font-style:normal}}
+#table1-scope .c13{{color:#1f2328;font-size:1.3em;font-weight:700}}
+#table1-scope .c10{{background-color:#ffffff;max-width:468pt;padding:72pt 72pt 72pt 72pt}}
+#table1-scope .c20{{color:inherit;text-decoration:inherit}}
+#table1-scope .c16{{height:1.2em}}
+#table1-scope .c4{{height:0pt}}
+#table1-scope .c18{{background-color:#a2c4c9}}
+#table1-scope .title{{padding-top:0pt;color:#000000;font-size:26pt;padding-bottom:3pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}}
+#table1-scope .subtitle{{padding-top:0pt;color:#666666;font-size:15pt;padding-bottom:16pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}}
+#table1-scope li{{color:#000000;font-size:1.2em;font-family:"Arial"}}
+#table1-scope p{{margin:0;color:#000000;font-size:1.2em;font-family:"Arial"}}
+#table1-scope h1{{padding-top:20pt;color:#000000;font-size:20pt;padding-bottom:6pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}}
+#table1-scope h2{{padding-top:18pt;color:#000000;font-size:16pt;padding-bottom:6pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}}
+#table1-scope h3{{padding-top:16pt;color:#434343;font-size:14pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}}
+#table1-scope h4{{padding-top:14pt;color:#666666;font-size:1.3em;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}}
+#table1-scope h5{{padding-top:1.3em;color:#666666;font-size:1.2em;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}}
+#table1-scope h6{{padding-top:1.3em;color:#666666;font-size:1.2em;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;font-style:italic;orphans:2;widows:2;text-align:left}}
+    </style>
+</head>
+<body>
+    <main>
+        <h1 id="top">Darwin Core Data Package - Quick Reference Guide</h1>
+        <h2 id="introduction">Introduction</h2>
+        <div class="intro">
+            <p>This guide is provided to assist users to understand the structure and content of Darwin Core Data Packages. The Darwin Core Data Package (DwC-DP) is an implementation of the Darwin Core Conceptual Model following the specifications in the <a href="https://dwc.tdwg.org/dp/" target="_blank">Darwin Core Data Package Guide</a>.</p>
+
+This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdwg.org/terms/" target="_blank">Darwin Core Quick Reference Guide</a> in that this guide contains information beyond the simple term definitions. It includes all the information about how to use Darwin Core in the context of a Darwin Core Data Package. That means it includes data types, value constraints, table relationship constraints and repeats these everywhere in the structure that a given term is found. This guide makes reference to numerous terms borrowed from standard vocabularies, both internal and external to TDWG, other than the Darwin Core. In general these terms are not in the classical Darwin Core reference guide nor in the Darwin Core list of terms as they are externally managed and reused in this context.
+
+<p>DwC-DP is implemented using tables, most of which correspond directly to classes in Darwin Core. The sidebar at the right provides quick access to table definitions, and the definitions of available fields for each table. For an overview of the tables and their relationships, see the <a href="#model">Visual Summary</a>. Supplementary to this document is the <a href="../designer/index.html" target="_blank">Darwin Core Data Package Designer</a>, which provides an interactive tool for finding fields, visualizing table relationship, and building templates for Darwin Core Data Packages from selected tables and fields.</p>
+        </div>
+        {content}
+        <h1 id="model">Visual Summary</h1>
+        <p>The diagram below shows an overview of the DwC-DP tables (boxes) and the relationships between them (arrows). To avoid clutter, the diagram simplifies the representation of the model in a variety of ways. First, myriad join tables (tables that connect two classes in many-to-many relationships, e.g., EventMedia, MaterialMedia, OccurrenceMedia, etc.) are represented with stacks of boxes by category (e.g., under the box labeled ...Media) rather than with separate boxes for each join table. The relationships to the tables connected through the join tables are represented by single arrows (e.g., to the Media table) and the label "join to" rather than the myriad arrows that would otherwise be required.
+        Second, the directionality of the relationships are shown with arrows, but the fields that connect the tables (keys), the cardinality of those connections (uniqueness and whether they are required), and the nature of the relationships (predicates) are not shown. The keys, cardinality and predicates are all shown in the sections for each table titled "Relationships to Other Tables".</p>
+        <div class="intro">
+            <img src="../images/dwc-dp-schema-overview.png" alt="How tables relate to each other.">
+            <div class="figure-caption"><b>Figure 1</b>. Overview of the Darwin Core Data Package (DwC-DP), showing tables (classes) and their relationships to each other. To further explore the relationships between tables, see the <a href="../designer/index.html" target="_blank">Darwin Core Data Package Designer</a>.</div>
+        </div>
+        <h1 id="dwca">Darwin Core Data Packages (DwC-DP) vs Darwin Core Archives (DwC-A)</h1>
+        <p>Both Darwin Core Data Packages (DwC-DP) and Darwin Core Archives (DwC-A) are implementation schemas that use the Darwin Core Standard to share biodiversity-related data.</p>
+        <p>DwC-DP fully supports non-checklist datasets traditionally published as DwC-As (observations and physical specimens, with extensions), but it goes far beyond, allowing richer data to be shared from these traditional datasets than was hitherto supported. Also, it empowers those who desire to share entirely new types of data (biotic surveys with inferred absence and abundance, hierarchical material entities, organism interactions, and nucleotide analyses, among others) via Darwin Core.</p>
+        <p><b>Table 1</b>. Main differences between DwC-A and DwC-DP.</p>
+
+<div id="table1-scope">
+<!-- Begin Table 1 -->
+<table class="c12">
+  <tr class="c4">
+    <td class="c17" colspan="1" rowspan="1">
+      <p class="c2 c16">
+        <span class="c1"></span>
+      </p>
+    </td>
+    <td class="c7 c18" colspan="1" rowspan="1">
+      <p class="c9">
+        <span class="c13 c19">DwC-A</span>
+      </p>
+    </td>
+    <td class="c3" colspan="1" rowspan="1">
+      <p class="c9">
+        <span class="c19 c13">DwC-DP</span>
+      </p>
+    </td>
+  </tr>
+  <tr class="c4">
+    <td class="c6" colspan="1" rowspan="1">
+      <p class="c2">
+        <span class="c1">Guide</span>
+      </p>
+    </td>
+    <td class="c7" colspan="1" rowspan="1">
+      <p class="c9">
+        <span class="c0">
+          <a class="c20" href="https://www.google.com/url?q=https://dwc.tdwg.org/text/&amp;sa=D&amp;source=editors&amp;ust=1757646648470339&amp;usg=AOvVaw0zaty2v3h6OXNdwceNwCNA">Darwin Core Text Guide</a>
+        </span>
+      </p>
+    </td>
+    <td class="c11" colspan="1" rowspan="1">
+      <p class="c9">
+        <span class="c0">
+          <a class="c20" href="https://www.google.com/url?q=https://gbif.github.io/dwc-dp/dp/&amp;sa=D&amp;source=editors&amp;ust=1757646648470904&amp;usg=AOvVaw3ra1ABtWFfnxHblBoA1JiV">Darwin Core Data Package Guide</a>
+        </span>
+      </p>
+    </td>
+  </tr>
+  <tr class="c4">
+    <td class="c6" colspan="1" rowspan="1">
+      <p class="c2">
+        <span class="c1">Data structure</span>
+      </p>
+    </td>
+    <td class="c7" colspan="1" rowspan="1">
+      <p class="c9">
+        <span class="c1">Limited&#58; &ldquo;Star schema&rdquo;, with a &ldquo;Core&rdquo; file and optional &ldquo;Extensions&rdquo;.<br><br>Relationships only <b>from</b> Extensions <b>to</b> the Core.<br><br>Flattened, &ldquo;spreadsheet-like&rdquo;<br><br>Defined in&#58; meta.xml</span>
+      </p>
+    </td>
+    <td class="c11" colspan="1" rowspan="1">
+      <p class="c9">
+        <span class="c1">Relational&#58; No &ldquo;Core&rdquo;, no &ldquo;Extensions&rdquo;, just tables.<br><br>Multiple relationships <b>between</b> tables (Figure 1), details in the table definitions.<br><br>Relational, &ldquo;database-like&rdquo;<br><br>Defined in&#58; datapackage.json</span>
+      </p>
+    </td>
+  </tr>
+  <tr class="c4">
+    <td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c1">Table types</span></p></td>
+    <td class="c7" colspan="1" rowspan="1"><p class="c9"><span class="c1">Cores&#58; Event, Occurrence, Taxon<br><br>Extensions&#58; Chronometric Age, DNA, Identification, Identifier, Literature Reference, Media, MeasurementsOrFact, Survey</span></p></td>
+    <td class="c11" colspan="1" rowspan="1"><p class="c9"><span class="c1">Agent, Assertion, Bibliographic Resource, Chronometric Age, Event, Geological Context, Identification, Identifier, Material, Media, Molecular Protocol, Nucleotide Analysis, Nucleotide Sequence, Occurrence, Organism, Organism Interaction, Protocol, Provenance, Survey, Survey Target, Usage Policy</span></p></td>
+  </tr>
+  <tr class="c4">
+    <td class="c6" colspan="1" rowspan="1">
+      <p class="c2">
+        <span class="c1">Semantics</span>
+      </p>
+    </td>
+    <td class="c7" colspan="1" rowspan="1">
+      <p class="c9">
+        <span class="c1">No explicit semantics</span>
+      </p>
+    </td>
+        <td class="c11" colspan="1" rowspan="1">
+      <p class="c9">
+        <span class="c1"><a href="https://gbif.github.io/dwc-dp/cm/" target="_blank">Darwin Core Conceptual Model</a>
+        </span>
+      </p>
+    </td>
+  </tr>
+  <tr class="c4">
+    <td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c1">Dataset metadata</span></p></td>
+    <td class="c7" colspan="1" rowspan="1"><p class="c9"><span class="c1">eml.xml</span></p></td>
+    <td class="c11" colspan="1" rowspan="1"><p class="c9"><span class="c1">eml.xml</span></p></td>
+  </tr>
+  <tr class="c4">
+    <td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c1">Data format</span></p></td>
+    <td class="c7" colspan="1" rowspan="1"><p class="c9"><span class="c1">CSV, TSV</span></p></td>
+    <td class="c11" colspan="1" rowspan="1"><p class="c9"><span class="c1">CSV, TSV</span></p></td>
+  </tr>
+</table>
+  <!-- End Table 1 -->
+</div>
+
+        <div class="intro">
+            <img src="../images/dwca_vs_dwcdp.png" alt="How tables relate to each other.">
+            <div class="figure-caption"><b>Figure 2</b>. Schematic representations of DwC-A and DwC-DP. In DwC-A, "Extension" files can only be connected to "Core" file via the unique identifier for a row in the "Core" file. In DwC-DP, files can be connected in all of the ways shown in Figure 1.</div>
+        </div>
+
+        <footer>
+            <p>Version: {version}</p>
+        </footer>
+    </main>
+    <aside class="nav-menu">
+        <a class="top-link" href="#top">&uarr; Top</a>
+        <a class="top-link" href="#model">&darr; Visual Summary</a>
+        <a class="top-link" href="#dwca">&darr; DwC-DP vs DwC-A</a>
+        <a class="top-link" href="../designer/index.html" target="_blank">Data Package Designer</a>
+        <h3>Tables</h3>
+        <nav class="class-index">
+            {class_links}
+        </nav>
+    </aside>
+</body>
+</html>

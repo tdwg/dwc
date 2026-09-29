@@ -1,0 +1,1 @@
+nucleotideAnalysis_pk,nucleotideAnalysisID,event_fk,molecularProtocol_fk,nucleotideSequence_fk,materialEntity_fk,readCount,processedTotalReadCount,rawTotalReadCount

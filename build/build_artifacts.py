@@ -12,12 +12,26 @@ import sys
 import shutil
 import tempfile
 import filecmp
+import copy
+import csv
+from pathlib import Path
+from collections import defaultdict
+from dataclasses import dataclass, field
+from typing import Any
+import hashlib
+import io
+from urllib.request import Request, urlopen
+from urllib.error import URLError
 import pandas as pd
 import yaml
 import html
 from datetime import date, datetime
 from contextlib import redirect_stdout
 from jinja2 import FileSystemLoader, Environment
+from frictionless import Schema
+from jsonschema import Draft4Validator, FormatChecker
+from referencing import Registry
+from referencing.jsonschema import DRAFT4
 
 import dwcterms
 
@@ -157,7 +171,7 @@ class DwcaXml:
             template_file = open(scriptDir + '/' + self.xmlTemplate, 'r')
             # Write the entire XML declaration section to the output file
             header = template_file.read()
-            header = header.replace('{issued_date}', date.today().isoformat())
+            header = header.replace('{issued_date}', ratification_date)
             output_file.write(header)
 
             # Process the list of terms for the extension combining properties from the
@@ -452,7 +466,7 @@ class DwcaXml:
             template_file = open(scriptDir + '/' + self.xmlTemplate, 'r')
             # Write the entire XML declaration section to the output file
             header = template_file.read()
-            header = header.replace('{issued_date}', date.today().isoformat())
+            header = header.replace('{issued_date}', ratification_date)
             output_file.write(header)
             output_file.write("\n")
 
@@ -639,8 +653,8 @@ def _csv_derivative_basename(artifact):
 
 def _csv_derivative_paths(artifact):
     basename = _csv_derivative_basename(artifact)
-    return (os.path.join(outputRoot, 'dist', f"{basename}_horizontal.csv"),
-            os.path.join(outputRoot, 'dist', f"{basename}_vertical.csv"))
+    return (os.path.join(outputRoot, 'dist', 'dwca', f"{basename}_horizontal.csv"),
+            os.path.join(outputRoot, 'dist', 'dwca', f"{basename}_vertical.csv"))
 
 def _schema_field_names(terms, term_list_path):
     termlist = pd.read_csv(term_list_path, keep_default_na=False, dtype=str)
@@ -706,7 +720,7 @@ def _list_of_terms_csv_paths(terms):
         if str(prefix).strip()
     }, key=str.lower)
     paths.extend(
-        os.path.join(repoRoot, 'dist', f'all_{prefix}_vertical.csv')
+        os.path.join(repoRoot, 'dist', f'{prefix}_vertical.csv')
         for prefix in prefixes
     )
     return paths
@@ -738,7 +752,7 @@ def create_list_of_terms_csv_derivatives(terms):
         vertical_path, index=False, header=False, encoding='utf-8', lineterminator='\n'
     )
 
-    # The all_<namespace> derivatives are property lists, not complete namespace
+    # The per-namespace derivatives are property lists, not complete namespace
     # inventories. Exclude class terms and any other non-property resources.
     property_terms = all_terms[all_terms['rdf_type'] == rdf_property]
 
@@ -751,7 +765,7 @@ def create_list_of_terms_csv_derivatives(terms):
     for prefix in prefixes:
         namespace_terms = property_terms[property_terms['pref_ns_prefix'] == prefix]
         names = namespace_terms['term_localName'].astype(str).tolist()
-        path = os.path.join(dist_dir, f'all_{prefix}_vertical.csv')
+        path = os.path.join(dist_dir, f'{prefix}_vertical.csv')
         pd.DataFrame(names).to_csv(
             path, index=False, header=False, encoding='utf-8', lineterminator='\n'
         )
@@ -764,7 +778,12 @@ def create_list_of_terms_csv_derivatives(terms):
 class TermList:
     def __init__(self, terms, vocab_type, categories=None, versions_df=None):
         """Render List-of-Terms documentation from preflight-validated metadata."""
-        self.terms = terms
+        # Keep renderer-specific ordering local: the same DwcTerms object is also
+        # reused by other artifact generators in this build.
+        self.terms = copy.copy(terms)
+        self.terms.terms_sorted_by_localname = terms.terms_sorted_by_localname.copy()
+        self.terms.terms_sorted_by_label = terms.terms_sorted_by_label.copy()
+        self._normalize_term_ordering()
         self.vocab_type = vocab_type
         self.versions_df = versions_df
         categories = categories or [{'iri': '', 'label': 'Vocabulary', 'comment': '', 'id': 'vocabulary'}]
@@ -773,6 +792,33 @@ class TermList:
         self.display_label = [item.get('label', '') for item in categories]
         self.display_comments = [item.get('comment', '') for item in categories]
         self.display_id = [item.get('id', '') for item in categories]
+
+    def _normalize_term_ordering(self):
+        """Make List-of-Terms ordering deterministic when sort keys are tied.
+
+        DwcTerms exposes data frames sorted by local name and by label, but terms
+        from different namespaces can share the same local name or label.  Their
+        relative order must not depend on pandas' handling of equal sort keys or
+        on the order in which source term lists happened to be assembled.
+
+        Use the namespace prefix as an explicit secondary key.  This keeps the
+        primary alphabetical ordering unchanged while giving counterpart terms a
+        stable, predictable order (for example dwc before dwciri, eco before
+        ecoiri, and chrono before chronoiri).
+        """
+        local = self.terms.terms_sorted_by_localname
+        self.terms.terms_sorted_by_localname = local.sort_values(
+            by=['term_localName', 'pref_ns_prefix'],
+            key=lambda column: column.astype(str).str.lower(),
+            kind='stable',
+        ).reset_index(drop=True)
+
+        label = self.terms.terms_sorted_by_label
+        self.terms.terms_sorted_by_label = label.sort_values(
+            by=['label', 'pref_ns_prefix', 'term_localName'],
+            key=lambda column: column.astype(str).str.lower(),
+            kind='stable',
+        ).reset_index(drop=True)
 
     def t(self, key):
         """
@@ -1577,7 +1623,8 @@ def generate_language_menu(state):
     return written
 
 
-def _preflight_webpage_configuration(config, dwc_list_terms, artifact_state, errors,
+def _preflight_webpage_configuration(config, dwc_list_terms, dwc_list_databases,
+                                     artifact_state, errors,
                                      local_path_to_rs, github_user, github_branch):
     """Preflight all update:true standard documents and the optional QRG."""
     webpages=config.get('webpages',{})
@@ -1945,6 +1992,1756 @@ def create_term_versions_csv(state):
     return output_path, len(result), len(recommended), len(historical)
 
 
+# -----------------
+# Darwin Core Data Package preflight
+# -----------------
+
+DWC_DP_EXPECTED_HEADERS = {
+    "dwc-dp-tables.csv": {
+        "name", "title", "description", "notes", "example", "namespace",
+        "dcterms:isVersionOf", "status",
+    },
+    "dwc-dp-fields.csv": {
+        "table", "name", "key", "predicate", "related_table", "related_field",
+        "title", "description", "notes", "example", "type", "format",
+        "unique", "required", "minimum", "maximum", "namespace",
+        "dcterms:isVersionOf", "status",
+    },
+}
+
+
+def _dwc_dp_resolve_path(value, property_name):
+    """Resolve one repository-relative path from the integrated dwc_dp config."""
+    if not isinstance(value, str) or not value.strip():
+        raise ValueError(
+            f"Configuration property 'dwc_dp.{property_name}' must be a non-empty path string"
+        )
+    path = Path(value.strip())
+    return path if path.is_absolute() else (Path(repoRoot) / path).resolve()
+
+
+def _dwc_dp_preflight(config):
+    """Validate DwC-DP configuration and maintained inputs without writing outputs."""
+    dwc_dp = config.get('dwc_dp')
+    if not isinstance(dwc_dp, dict):
+        raise ValueError("Build configuration must contain a 'dwc_dp' mapping.")
+
+    version = dwc_dp.get('version')
+    if not isinstance(version, str) or not version.strip():
+        raise ValueError("Configuration property 'dwc_dp.version' must be a non-empty string")
+
+    required = {
+        'sources.tables': ('sources', 'tables'),
+        'sources.fields': ('sources', 'fields'),
+        'profile.template': ('profile', 'template'),
+        'profile.output': ('profile', 'output'),
+        'profile.table_schemas': ('profile', 'table_schemas'),
+        'qrg.template': ('qrg', 'template'),
+        'qrg.output': ('qrg', 'output'),
+        'qrg.images_source': ('qrg', 'images_source'),
+        'qrg.images_output': ('qrg', 'images_output'),
+        'sql.config': ('sql', 'config'),
+        'sql.output': ('sql', 'output'),
+        'csv_headers.output': ('csv_headers', 'output'),
+        'designer.template': ('designer', 'template'),
+        'designer.output': ('designer', 'output'),
+    }
+    paths = {}
+    for label, keys in required.items():
+        node = dwc_dp
+        for key in keys:
+            if not isinstance(node, dict) or key not in node:
+                raise ValueError(f"Missing required configuration property 'dwc_dp.{label}'")
+            node = node[key]
+        paths[label] = _dwc_dp_resolve_path(node, label)
+
+    groups = dwc_dp.get('qrg', {}).get('table_groups')
+    if not isinstance(groups, list) or not groups or any(
+        not isinstance(group, list) or not group for group in groups
+    ):
+        raise ValueError(
+            "Configuration property 'dwc_dp.qrg.table_groups' must be a non-empty list of non-empty lists"
+        )
+    if any(not isinstance(name, str) or not name.strip() for group in groups for name in group):
+        raise ValueError("Every entry in 'dwc_dp.qrg.table_groups' must be a non-empty table name")
+    paths['qrg.table_groups'] = groups
+
+    for label in ('sources.tables', 'sources.fields', 'profile.template', 'qrg.template', 'sql.config'):
+        if not paths[label].is_file():
+            raise FileNotFoundError(f"Configured DwC-DP input '{label}' not found: {paths[label]}")
+        if not os.access(paths[label], os.R_OK):
+            raise OSError(f"Configured DwC-DP input '{label}' is not readable: {paths[label]}")
+
+    designer_template = paths['designer.template']
+    if not designer_template.is_dir():
+        raise FileNotFoundError(
+            f"Configured DwC-DP Designer template directory not found: {designer_template}"
+        )
+    for relative in (Path('index.html'), Path('styles.css'), Path('js') / 'app.js'):
+        candidate = designer_template / relative
+        if not candidate.is_file():
+            raise FileNotFoundError(f"Required Designer template file not found: {candidate}")
+
+    qrg_images_source = paths['qrg.images_source']
+    if not qrg_images_source.is_dir():
+        raise FileNotFoundError(
+            f"Configured DwC-DP QRG image source directory not found: {qrg_images_source}"
+        )
+    qrg_image_files = [path for path in qrg_images_source.rglob('*') if path.is_file()]
+    if not qrg_image_files:
+        raise ValueError(
+            f"Configured DwC-DP QRG image source directory is empty: {qrg_images_source}"
+        )
+    for image_path in qrg_image_files:
+        if not os.access(image_path, os.R_OK):
+            raise OSError(f"DwC-DP QRG image is not readable: {image_path}")
+
+    tables_csv = paths['sources.tables']
+    fields_csv = paths['sources.fields']
+    if tables_csv.parent != fields_csv.parent:
+        raise ValueError("Configured DwC-DP table and field CSV files must currently share one directory")
+
+    expected_by_path = {
+        tables_csv: DWC_DP_EXPECTED_HEADERS['dwc-dp-tables.csv'],
+        fields_csv: DWC_DP_EXPECTED_HEADERS['dwc-dp-fields.csv'],
+    }
+    for csv_path, expected in expected_by_path.items():
+        with csv_path.open('r', encoding='utf-8-sig', newline='') as handle:
+            reader = csv.DictReader(handle)
+            actual = set(reader.fieldnames or [])
+        missing = expected - actual
+        extra = actual - expected
+        if missing:
+            raise ValueError(f"Missing required columns in {csv_path}: {sorted(missing)}")
+        if extra:
+            print(
+                f"Warning: Unexpected columns in {csv_path.name} "
+                f"(will be ignored): {sorted(extra)}"
+            )
+
+    tables = {}
+    with tables_csv.open('r', encoding='utf-8-sig', newline='') as handle:
+        for row in csv.DictReader(handle):
+            if (row.get('status', '') or '').strip().lower() != 'recommended':
+                continue
+            name = (row.get('name', '') or '').strip()
+            if name:
+                tables[name] = row
+
+    fields = defaultdict(list)
+    with fields_csv.open('r', encoding='utf-8-sig', newline='') as handle:
+        for row in csv.DictReader(handle):
+            if (row.get('status', '') or '').strip().lower() != 'recommended':
+                continue
+            table = (row.get('table', '') or '').strip()
+            name = (row.get('name', '') or '').strip()
+            if table and name:
+                fields[table].append(row)
+
+    field_names_by_table = {
+        table_name: {(row.get('name', '') or '').strip() for row in rows}
+        for table_name, rows in fields.items()
+    }
+    relationship_errors = []
+    for table_name, rows in fields.items():
+        if table_name not in tables:
+            relationship_errors.append(
+                f"Recommended field rows exist for table '{table_name}', but that table is not recommended"
+            )
+        for row in rows:
+            field_name = (row.get('name', '') or '').strip()
+            key_value = (row.get('key', '') or '').strip().lower()
+            relationship_values = {
+                'predicate': (row.get('predicate', '') or '').strip(),
+                'related_table': (row.get('related_table', '') or '').strip(),
+                'related_field': (row.get('related_field', '') or '').strip(),
+            }
+            label = f"{table_name}.{field_name}"
+            if key_value in {'fk', 'wfk'}:
+                missing = [key for key, value in relationship_values.items() if not value]
+                if missing:
+                    relationship_errors.append(
+                        f"Relationship field {label} with key='{key_value}' is missing: {', '.join(missing)}"
+                    )
+                    continue
+                related_table = relationship_values['related_table']
+                related_field = relationship_values['related_field']
+                if related_table not in tables:
+                    relationship_errors.append(
+                        f"Relationship field {label} points to unknown or non-recommended table '{related_table}'"
+                    )
+                elif related_field not in field_names_by_table.get(related_table, set()):
+                    relationship_errors.append(
+                        f"Relationship field {label} points to missing field '{related_field}' in table '{related_table}'"
+                    )
+            else:
+                populated = [key for key, value in relationship_values.items() if value]
+                if populated:
+                    relationship_errors.append(
+                        f"Non-relationship field {label} has relationship metadata populated: {', '.join(populated)}"
+                    )
+    if relationship_errors:
+        raise ValueError(
+            "Relationship metadata validation failed in dwc-dp-fields.csv\n  - "
+            + "\n  - ".join(relationship_errors)
+        )
+
+    grouped = [name for group in groups for name in group]
+    seen = set()
+    duplicates = []
+    for name in grouped:
+        if name in seen:
+            duplicates.append(name)
+        seen.add(name)
+    if duplicates:
+        raise ValueError(f"dwc_dp.qrg.table_groups contains duplicate table names: {duplicates}")
+    grouped_set = set(grouped)
+    missing_from_groups = set(tables) - grouped_set
+    if missing_from_groups:
+        raise ValueError(
+            "Recommended DwC-DP tables are missing from dwc_dp.qrg.table_groups: "
+            f"{sorted(missing_from_groups)}"
+        )
+    unknown_in_groups = grouped_set - set(tables)
+    if unknown_in_groups:
+        print(
+            "Warning: dwc_dp.qrg.table_groups references non-recommended tables "
+            f"(they will be skipped): {sorted(unknown_in_groups)}"
+        )
+
+    paths['version'] = version.strip()
+    paths['recommended_table_count'] = len(tables)
+    paths['recommended_field_count'] = sum(len(rows) for rows in fields.values())
+    paths['owned_outputs'] = [
+        paths['profile.output'], paths['profile.table_schemas'], paths['qrg.output'],
+        paths['sql.output'], paths['csv_headers.output'], paths['designer.output'],
+    ]
+    return paths
+
+
+
+# ---------------------------------------------------------------------------
+# Darwin Core Data Package schema generation and validation
+# ---------------------------------------------------------------------------
+DWC_DP_BOOLEAN_COLUMNS = {"required", "unique"}
+DWC_DP_REQUIRED_FIELD_PROPERTIES = ("description", "type")
+DWC_DP_FRICTIONLESS_DATA_PACKAGE_SCHEMA_URI = "https://specs.frictionlessdata.io/schemas/data-package.json"
+DWC_DP_PROFILE_ENUM_PATH = ("$defs", "dwc-dp-resource-names", "enum")
+DWC_DP_PROFILE_ENUM_PLACEHOLDER = "{{DWC_DP_RESOURCE_NAMES}}"
+DWC_DP_PROFILE_VERSION_PATH = ("version",)
+DWC_DP_PROFILE_VERSION_PLACEHOLDER = "{{DWC_DP_VERSION}}"
+
+def _dwc_dp_parse_scalar(s, *, column_name: str=''):
+    """Coerce a CSV cell to a proper JSON scalar.
+
+    Boolean coercion (true/yes -> True, false/no -> False) is applied ONLY to
+    columns listed in BOOLEAN_COLUMNS.  All other columns receive numeric
+    coercion or are returned as plain strings.
+    """
+    if s is None:
+        return None
+    t = str(s).strip()
+    if t == '':
+        return None
+    low = t.lower()
+    if column_name in DWC_DP_BOOLEAN_COLUMNS:
+        if low in ('true', 'yes', '1'):
+            return True
+        if low in ('false', 'no', '0'):
+            return False
+    try:
+        if '.' in t or ('e' in low and any((c.isdigit() for c in t)) and low.replace('e', '', 1).replace('.', '', 1).replace('-', '', 1).replace('+', '', 1).isdigit()):
+            return float(t)
+        return int(t)
+    except ValueError:
+        return t
+
+def _dwc_dp_validate_csv_headers(vocabulary_dir: Path) -> None:
+    """Check that required CSVs exist and contain all expected column names.
+
+    Column *order* is not enforced.  Extra (unexpected) columns trigger a
+    warning; missing required columns raise ValueError.
+    """
+    for filename, expected in DWC_DP_EXPECTED_HEADERS.items():
+        path = vocabulary_dir / filename
+        if not path.is_file():
+            raise FileNotFoundError(f'Required input not found: {path}')
+        with path.open('r', encoding='utf-8-sig', newline='') as fh:
+            reader = csv.DictReader(fh)
+            actual = set(reader.fieldnames or [])
+        missing = expected - actual
+        extra = actual - expected
+        if missing:
+            raise ValueError(f'Missing required columns in {path}:\n  {sorted(missing)}')
+        if extra:
+            print(f'Warning: Unexpected columns in {path.name} (will be ignored): {sorted(extra)}')
+
+
+def _dwc_dp_load_recommended_tables_map(vocabulary_dir: Path) -> dict:
+    """Return {table_name: row_dict} for every recommended table."""
+    tables_csv = vocabulary_dir / 'dwc-dp-tables.csv'
+    tables = {}
+    with tables_csv.open('r', encoding='utf-8-sig', newline='') as fh:
+        reader = csv.DictReader(fh)
+        for row in reader:
+            if (row.get('status', '') or '').strip().lower() != 'recommended':
+                continue
+            name = (row.get('name', '') or '').strip()
+            if name:
+                tables[name] = row
+    return tables
+
+def _dwc_dp_load_recommended_fields_map(vocabulary_dir: Path) -> dict:
+    """Return {table_name: [ordered field rows]} for every recommended field."""
+    fields_csv = vocabulary_dir / 'dwc-dp-fields.csv'
+    fields_by_table = defaultdict(list)
+    with fields_csv.open('r', encoding='utf-8-sig', newline='') as fh:
+        reader = csv.DictReader(fh)
+        for row in reader:
+            if (row.get('status', '') or '').strip().lower() != 'recommended':
+                continue
+            table = (row.get('table', '') or '').strip()
+            name = (row.get('name', '') or '').strip()
+            if table and name:
+                fields_by_table[table].append(row)
+    return dict(fields_by_table)
+
+def _dwc_dp_validate_field_relationship_metadata(recommended_tables: dict, recommended_fields: dict) -> None:
+    """Validate relationship metadata embedded in dwc-dp-fields.csv."""
+    field_names_by_table = {table_name: {(row.get('name', '') or '').strip() for row in rows} for table_name, rows in recommended_fields.items()}
+    errors = []
+    relationship_keys = {'fk', 'wfk'}
+    for table_name, rows in recommended_fields.items():
+        if table_name not in recommended_tables:
+            errors.append(f"Recommended field rows exist for table '{table_name}', but that table is not recommended in dwc-dp-tables.csv")
+        for row in rows:
+            field_name = (row.get('name', '') or '').strip()
+            key_val = (row.get('key', '') or '').strip().lower()
+            predicate = (row.get('predicate', '') or '').strip()
+            related_table = (row.get('related_table', '') or '').strip()
+            related_field = (row.get('related_field', '') or '').strip()
+            row_label = f'{table_name}.{field_name}'
+            if key_val in relationship_keys:
+                missing = [col for col, value in (('predicate', predicate), ('related_table', related_table), ('related_field', related_field)) if not value]
+                if missing:
+                    errors.append(f"Relationship field {row_label} with key='{key_val}' is missing required columns: {', '.join(missing)}")
+                    continue
+                if related_table not in recommended_tables:
+                    errors.append(f"Relationship field {row_label} points to unknown or non-recommended related_table '{related_table}'")
+                    continue
+                target_fields = field_names_by_table.get(related_table, set())
+                if related_field not in target_fields:
+                    errors.append(f"Relationship field {row_label} points to missing related_field '{related_field}' in related_table '{related_table}'")
+            else:
+                populated = [col for col, value in (('predicate', predicate), ('related_table', related_table), ('related_field', related_field)) if value]
+                if populated:
+                    errors.append(f"Non-relationship field {row_label} has relationship metadata populated: {', '.join(populated)}")
+    if errors:
+        raise ValueError('Relationship metadata validation failed in dwc-dp-fields.csv\n  - ' + '\n  - '.join(errors))
+
+def _dwc_dp_build_table_schemas(vocabulary_dir: Path, version: str) -> list:
+    """Build the tableSchemas list from recommended rows in dwc-dp-tables.csv."""
+    tables_csv = vocabulary_dir / 'dwc-dp-tables.csv'
+    table_schemas = []
+    with tables_csv.open('r', encoding='utf-8-sig', newline='') as fh:
+        reader = csv.DictReader(fh)
+        for row in reader:
+            if (row.get('status', '') or '').strip().lower() != 'recommended':
+                continue
+            name = (row.get('name', '') or '').strip()
+            title = (row.get('title', '') or '').strip()
+            description = (row.get('description', '') or '').strip()
+            notes = (row.get('notes', '') or '').strip()
+            example = (row.get('example', '') or '').strip()
+            namespace = (row.get('namespace', '') or '').strip()
+            iri = (row.get('dcterms:isVersionOf', '') or '').strip()
+            if not iri:
+                iri = f'http://example.com/term-pending/{namespace}/{name}'
+            ts = {'identifier': f'{version}/{name}', 'dcterms:isPartOf': 'http://www.tdwg.org/standards/450', 'url': f'table-schemas/{name}.json', 'name': name, 'title': title, 'description': description, 'notes': notes, 'examples': example, 'namespace': namespace, 'dcterms:isVersionOf': iri}
+            table_schemas.append(ts)
+    return table_schemas
+
+def _dwc_dp_build_fields_for_table(fields_by_table: dict, table_name: str) -> tuple:
+    """Return (fields, pk_names, foreign_keys, weak_foreign_keys) for one table.
+
+    Accepts the pre-loaded fields map to avoid repeated CSV reads.
+    """
+    rows = fields_by_table.get(table_name, [])
+    fields = []
+    pk_names = []
+    weak_pk_names = []
+    foreign_keys = []
+    weak_foreign_keys = []
+    for row in rows:
+        name = (row.get('name', '') or '').strip()
+        title = (row.get('title', '') or '').strip()
+        description = (row.get('description', '') or '').strip()
+        notes = (row.get('notes', '') or '').strip()
+        example = (row.get('example', '') or '').strip()
+        ftype = (row.get('type', '') or '').strip()
+        fmt = (row.get('format', '') or '').strip()
+        namespace = (row.get('namespace', '') or '').strip()
+        iri = (row.get('dcterms:isVersionOf', '') or '').strip()
+        if not iri:
+            iri = f'http://example.com/term-pending/{namespace}/{name}'
+        key_val = (row.get('key', '') or '').strip().lower()
+        if key_val == 'pk':
+            pk_names.append(name)
+        elif key_val == 'wpk':
+            weak_pk_names.append(name)
+        elif key_val in {'fk', 'wfk'}:
+            predicate = (row.get('predicate', '') or '').strip()
+            related_table = (row.get('related_table', '') or '').strip()
+            related_field = (row.get('related_field', '') or '').strip()
+            resource = '' if related_table == table_name else related_table
+            rel_obj = {'fields': name, 'predicate': predicate, 'reference': {'resource': resource, 'fields': related_field}}
+            if key_val == 'fk':
+                foreign_keys.append(rel_obj)
+            else:
+                weak_foreign_keys.append(rel_obj)
+        constraints_candidates = {'required': _dwc_dp_parse_scalar(row.get('required'), column_name='required'), 'unique': _dwc_dp_parse_scalar(row.get('unique'), column_name='unique'), 'minimum': _dwc_dp_parse_scalar(row.get('minimum'), column_name='minimum'), 'maximum': _dwc_dp_parse_scalar(row.get('maximum'), column_name='maximum')}
+        constraints = {k: v for k, v in constraints_candidates.items() if v is not None}
+        field_obj = {'name': name, 'title': title, 'description': description, 'notes': notes, 'examples': example, 'type': ftype, 'format': fmt, 'namespace': namespace, 'dcterms:isVersionOf': iri}
+        if constraints:
+            field_obj['constraints'] = constraints
+        fields.append(field_obj)
+    return (fields, pk_names, weak_pk_names, foreign_keys, weak_foreign_keys)
+
+def _dwc_dp_write_table_schema_files(out_dir: Path, table_schemas: list, fields_by_table: dict) -> None:
+    """Write one JSON schema file per table using the pre-loaded fields map."""
+    ts_dir = out_dir / 'table-schemas'
+    ts_dir.mkdir(parents=True, exist_ok=True)
+    for ts in table_schemas:
+        name = ts.get('name', '')
+        fields, pk_names, weak_pk_names, foreign_keys, weak_foreign_keys = _dwc_dp_build_fields_for_table(fields_by_table, name)
+        payload = dict(ts)
+        payload['fields'] = fields
+        if pk_names:
+            payload['primaryKey'] = pk_names[0] if len(pk_names) == 1 else pk_names
+        if weak_pk_names:
+            payload['weakPrimaryKey'] = weak_pk_names[0] if len(weak_pk_names) == 1 else weak_pk_names
+        if foreign_keys:
+            payload['foreignKeys'] = foreign_keys
+        if weak_foreign_keys:
+            payload['weakForeignKeys'] = weak_foreign_keys
+        dest = ts_dir / f'{name}.json'
+        with dest.open('w', encoding='utf-8') as fh:
+            json.dump(payload, fh, ensure_ascii=False, indent=2)
+            fh.write('\n')
+
+
+def _dwc_dp_generate_csv_headers(table_schemas_dir: Path, output_dir: Path) -> int:
+    """Generate one header-only CSV per validated DwC-DP table schema.
+
+    Column order is exactly the order of the schema's ``fields`` array. The
+    output directory is a complete generated set and is replaced transactionally.
+    """
+    if output_dir.exists():
+        shutil.rmtree(output_dir)
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    schema_files = sorted(table_schemas_dir.glob('*.json'))
+    if not schema_files:
+        raise ValueError(f'No DwC-DP table schemas available for CSV header generation: {table_schemas_dir}')
+
+    generated = 0
+    for schema_path in schema_files:
+        with schema_path.open('r', encoding='utf-8') as handle:
+            schema = json.load(handle)
+        table_name = str(schema.get('name', '')).strip()
+        fields = schema.get('fields')
+        if not table_name:
+            raise ValueError(f'DwC-DP table schema has no name: {schema_path}')
+        if not isinstance(fields, list) or not fields:
+            raise ValueError(f'DwC-DP table schema has no fields: {schema_path}')
+        field_names = []
+        for field in fields:
+            if not isinstance(field, dict) or not str(field.get('name', '')).strip():
+                raise ValueError(f'DwC-DP table schema contains a field without a name: {schema_path}')
+            field_names.append(str(field['name']).strip())
+
+        destination = output_dir / f'{table_name}.csv'
+        with destination.open('w', encoding='utf-8', newline='') as handle:
+            writer = csv.writer(handle, lineterminator='\n')
+            writer.writerow(field_names)
+        generated += 1
+
+    return generated
+
+def _dwc_dp_load_profile_template(profile_template_path: Path) -> dict:
+    """Load and parse the DwC-DP profile template from disk."""
+    if not profile_template_path.is_file():
+        raise FileNotFoundError(f'Configured DwC-DP profile template not found: {profile_template_path}')
+    with profile_template_path.open('r', encoding='utf-8') as fh:
+        try:
+            template = json.load(fh)
+        except json.JSONDecodeError as exc:
+            raise ValueError(f'Profile template is not valid JSON: {profile_template_path}\n  {exc}') from exc
+    if not isinstance(template, dict):
+        raise ValueError(f'Profile template must be a JSON object: {profile_template_path}')
+    return template
+
+def _dwc_dp_locate_profile_container(profile: dict, path: tuple) -> tuple:
+    """Return (container_object, final_key) for path within profile.
+
+    Raises ValueError if the path does not resolve, so a drifted template fails
+    loudly rather than producing a profile with an unfilled placeholder.
+    """
+    container = profile
+    for depth, key in enumerate(path[:-1]):
+        nxt = container.get(key) if isinstance(container, dict) else None
+        if not isinstance(nxt, dict):
+            traversed = '/'.join(path[:depth + 1])
+            raise ValueError(f"Profile template does not contain the expected object at '{traversed}'.  Expected path: {'/'.join(path)}")
+        container = nxt
+    return (container, path[-1])
+
+def _dwc_dp_build_profile_payload(template: dict, recommended_table_names, version: str) -> dict:
+    """Return a copy of the template with both placeholders filled in.
+
+    The enum at PROFILE_ENUM_PATH is populated with the sorted names of the
+    recommended tables, which are exactly the tables that make up the version.
+    The string at PROFILE_VERSION_PATH is replaced with the version given on the
+    command line, used verbatim.  Nothing else in the template is altered.
+    """
+    if not recommended_table_names:
+        raise ValueError('Cannot build the profile: no recommended tables were found in dwc-dp-tables.csv')
+    if not str(version or '').strip():
+        raise ValueError('Cannot build the profile: version is empty')
+    payload = copy.deepcopy(template)
+    container, enum_key = _dwc_dp_locate_profile_container(payload, DWC_DP_PROFILE_ENUM_PATH)
+    current = container.get(enum_key)
+    if current != [DWC_DP_PROFILE_ENUM_PLACEHOLDER]:
+        raise ValueError(f'''Profile template placeholder not found at {'/'.join(DWC_DP_PROFILE_ENUM_PATH)}.  Expected exactly ["{DWC_DP_PROFILE_ENUM_PLACEHOLDER}"], found: {json.dumps(current, ensure_ascii=False)}''')
+    container[enum_key] = sorted(recommended_table_names)
+    container, version_key = _dwc_dp_locate_profile_container(payload, DWC_DP_PROFILE_VERSION_PATH)
+    current = container.get(version_key)
+    if current != DWC_DP_PROFILE_VERSION_PLACEHOLDER:
+        raise ValueError(f'''Profile template placeholder not found at {'/'.join(DWC_DP_PROFILE_VERSION_PATH)}.  Expected exactly "{DWC_DP_PROFILE_VERSION_PLACEHOLDER}", found: {json.dumps(current, ensure_ascii=False)}''')
+    container[version_key] = version
+    return payload
+
+def _dwc_dp_write_profile_json(profile_json_path: Path, profile_template_path: Path, recommended_table_names, version: str) -> None:
+    """Render the profile from its template and write it to disk."""
+    template = _dwc_dp_load_profile_template(profile_template_path)
+    payload = _dwc_dp_build_profile_payload(template, recommended_table_names, version)
+    profile_json_path.parent.mkdir(parents=True, exist_ok=True)
+    with profile_json_path.open('w', encoding='utf-8') as fh:
+        json.dump(payload, fh, ensure_ascii=False, indent=2)
+        fh.write('\n')
+
+def _dwc_dp_make_schema_stage(table_schemas_dir: Path, version: str, profile_json_path: Path, profile_template_path: Path, tables_csv: Path, fields_csv: Path) -> None:
+    """Validate CSVs, build table schemas, and write the DwC-DP profile."""
+    out_dir = table_schemas_dir.parent
+    out_dir.mkdir(parents=True, exist_ok=True)
+    table_schemas_dir.mkdir(parents=True, exist_ok=True)
+    if tables_csv.parent != fields_csv.parent:
+        raise ValueError('Configured table and field CSV files must currently share one directory')
+    if tables_csv.name != 'dwc-dp-tables.csv' or fields_csv.name != 'dwc-dp-fields.csv':
+        raise ValueError('Configured source filenames must be dwc-dp-tables.csv and dwc-dp-fields.csv')
+    vocabulary_dir = tables_csv.parent
+    _dwc_dp_validate_csv_headers(vocabulary_dir)
+    recommended_tables = _dwc_dp_load_recommended_tables_map(vocabulary_dir)
+    recommended_fields = _dwc_dp_load_recommended_fields_map(vocabulary_dir)
+    _dwc_dp_validate_field_relationship_metadata(recommended_tables, recommended_fields)
+    table_schemas = _dwc_dp_build_table_schemas(vocabulary_dir, version)
+    _dwc_dp_write_profile_json(profile_json_path, profile_template_path, set(recommended_tables.keys()), version)
+    _dwc_dp_write_table_schema_files(out_dir, table_schemas, recommended_fields)
+
+class DwcdpValidationResult:
+    """Accumulate validation errors and warnings."""
+
+    def __init__(self):
+        self.errors = []
+        self.warnings = []
+
+    def error(self, msg: str) -> None:
+        print(f'Error: {msg}')
+        self.errors.append(msg)
+
+    def warning(self, msg: str) -> None:
+        print(f'Warning: {msg}')
+        self.warnings.append(msg)
+
+    @property
+    def has_errors(self) -> bool:
+        return bool(self.errors)
+
+def _dwc_dp_load_json_for_validation(file_path: Path, result: DwcdpValidationResult) -> dict | None:
+    """Load JSON for validation, recording parse or file errors."""
+    try:
+        with file_path.open('r', encoding='utf-8') as fh:
+            return json.load(fh)
+    except FileNotFoundError:
+        result.error(f'File not found: {file_path}')
+    except json.JSONDecodeError as exc:
+        result.error(f'Invalid JSON in {file_path}: {exc}')
+    return None
+
+def _dwc_dp_check_schema_json(table_schemas_dir: Path, result: DwcdpValidationResult) -> dict[str, dict]:
+    """Load generated schemas and check required field metadata."""
+    loaded: dict[str, dict] = {}
+    schema_files = sorted(table_schemas_dir.glob('*.json'))
+    if not schema_files:
+        result.error(f'No JSON table schemas found in: {table_schemas_dir}')
+        return loaded
+    for file_path in schema_files:
+        data = _dwc_dp_load_json_for_validation(file_path, result)
+        if data is None:
+            continue
+        schema_name = file_path.stem
+        loaded[schema_name] = data
+        fields = data.get('fields', [])
+        if not isinstance(fields, list):
+            result.error(f"Schema '{schema_name}' has a non-list 'fields' property")
+            continue
+        for field in fields:
+            if not isinstance(field, dict):
+                result.error(f"Schema '{schema_name}' contains a non-object field descriptor")
+                continue
+            field_name = field.get('name', '<unnamed>')
+            for prop in DWC_DP_REQUIRED_FIELD_PROPERTIES:
+                if prop not in field:
+                    result.error(f"Field '{field_name}' in {file_path.name} is missing required property '{prop}'")
+    return loaded
+
+def _dwc_dp_check_frictionless(loaded_schemas: dict[str, dict], result: DwcdpValidationResult) -> None:
+    """Validate every generated descriptor as a Frictionless Table Schema."""
+    valid_count = 0
+    for name, descriptor in loaded_schemas.items():
+        try:
+            Schema.from_descriptor(descriptor)
+            valid_count += 1
+        except Exception as exc:
+            result.error(f"Frictionless validation failed for '{name}': {exc}")
+
+def _dwc_dp_check_dwc_dp_profile(loaded_schemas: dict[str, dict], profile_json_path: Path, result: DwcdpValidationResult) -> None:
+    """Validate generated schemas against DwC-DP-specific profile constraints.
+
+    ``dwc-dp-profile.json`` is formally a Data Package profile, while the build
+    produces standalone Table Schema descriptors.  To exercise the profile
+    rules that apply to recognized DwC-DP resources, this function constructs
+    an in-memory Data Package whose resources contain the generated schemas.
+
+    The external Frictionless Data Package ``$ref`` is resolved locally to an
+    empty schema.  Frictionless Table Schema validity is checked separately by
+    ``check_frictionless``; this pass therefore enforces the additional
+    DwC-DP-specific constraints expressed by the generated local profile.
+    """
+    profile = _dwc_dp_load_json_for_validation(profile_json_path, result)
+    if profile is None:
+        return
+    synthetic_package = {'profile': profile.get('version', 'urn:dwc-dp:profile'), 'resources': [{'name': name, 'profile': 'tabular-data-resource', 'schema': descriptor} for name, descriptor in loaded_schemas.items()]}
+    registry = Registry().with_resource(DWC_DP_FRICTIONLESS_DATA_PACKAGE_SCHEMA_URI, DRAFT4.create_resource({}))
+    try:
+        Draft4Validator.check_schema(profile)
+    except Exception as exc:
+        result.error(f"Invalid DwC-DP profile schema '{profile_json_path}': {exc}")
+        return
+    validator = Draft4Validator(profile, registry=registry, format_checker=FormatChecker())
+    errors = sorted(validator.iter_errors(synthetic_package), key=lambda error: tuple((str(part) for part in error.absolute_path)))
+    if not errors:
+        return
+    leaf_errors = []
+
+    def collect_leaves(error):
+        if error.context:
+            for child in error.context:
+                collect_leaves(child)
+        else:
+            leaf_errors.append(error)
+    for error in errors:
+        collect_leaves(error)
+    seen = set()
+    for error in leaf_errors:
+        if error.validator == 'not':
+            continue
+        path = '/'.join((str(part) for part in error.absolute_path)) or '<package>'
+        key = (path, error.message)
+        if key in seen:
+            continue
+        seen.add(key)
+        result.error(f"DwC-DP profile validation failed at '{path}': {error.message}")
+    if not seen:
+        for error in errors:
+            path = '/'.join((str(part) for part in error.absolute_path)) or '<package>'
+            result.error(f"DwC-DP profile validation failed at '{path}': {error.message}")
+
+def _dwc_dp_check_foreign_keys(loaded_schemas: dict[str, dict], result: DwcdpValidationResult) -> None:
+    """Validate foreign-key source/target existence and PK alignment."""
+
+    def resolve_field(value) -> str | None:
+        """Normalize a fields value that may be a string or a list."""
+        if isinstance(value, list):
+            return value[0] if value else None
+        return value or None
+    for schema_name, schema_data in loaded_schemas.items():
+        source_fields = {field.get('name') for field in schema_data.get('fields', []) if isinstance(field, dict)}
+        for fk in schema_data.get('foreignKeys', []):
+            src_field = resolve_field(fk.get('fields'))
+            if not src_field or src_field not in source_fields:
+                result.error(f"Foreign key in '{schema_name}' references non-existent source field '{src_field}'")
+                continue
+            ref = fk.get('reference') or {}
+            tgt_field = resolve_field(ref.get('fields'))
+            tgt_resource = ref.get('resource', '').strip() or schema_name
+            if tgt_resource not in loaded_schemas:
+                result.error(f"Foreign key {schema_name}/{src_field} references non-existent target schema '{tgt_resource}'")
+                continue
+            ref_schema = loaded_schemas[tgt_resource]
+            target_field_names = {field.get('name') for field in ref_schema.get('fields', []) if isinstance(field, dict)}
+            if not tgt_field or tgt_field not in target_field_names:
+                result.error(f"Foreign key {schema_name}/{src_field} references non-existent target field '{tgt_resource}/{tgt_field}'")
+                continue
+            tgt_primary_key = ref_schema.get('primaryKey')
+            if tgt_primary_key is not None and tgt_field != tgt_primary_key:
+                result.error(f"Foreign key {schema_name}/{src_field} targets '{tgt_resource}/{tgt_field}' which is not the primary key (primaryKey='{tgt_primary_key}')")
+
+def _dwc_dp_validate_generated_artifacts(table_schemas_dir: Path, profile_json_path: Path) -> DwcdpValidationResult:
+    """Run all validation passes on the generated DwC-DP artifacts."""
+    result = DwcdpValidationResult()
+    loaded_schemas = _dwc_dp_check_schema_json(table_schemas_dir, result)
+    if loaded_schemas:
+        _dwc_dp_check_frictionless(loaded_schemas, result)
+        _dwc_dp_check_dwc_dp_profile(loaded_schemas, profile_json_path, result)
+        _dwc_dp_check_foreign_keys(loaded_schemas, result)
+    if result.has_errors:
+        print(f'Validation failed: {len(result.errors)} error(s), {len(result.warnings)} warning(s).')
+    else:
+        warning_note = f' ({len(result.warnings)} warning(s))' if result.warnings else ''
+        print(f'Validation passed{warning_note}.')
+    return result
+
+
+# ---------------------------------------------------------------------------
+# DwC-DP Quick Reference Guide generation
+# ---------------------------------------------------------------------------
+
+def _dwc_dp_load_template(template_path: Path) -> str:
+    """Load the HTML template from disk."""
+    if not template_path.is_file():
+        raise FileNotFoundError(
+            f"HTML template not found: {template_path}\n"
+            "Check the configured DwC-DP QRG template path."
+        )
+    return template_path.read_text(encoding="utf-8")
+
+
+def _dwc_dp_build_foreign_key_summary(table_schema: dict, current_table_name: str = None) -> str:
+    """Build the relationship summary in the same order as key fields occur.
+
+    The table schema's ``fields`` array preserves the row order from
+    dwc-dp-fields.csv.  Relationship metadata is stored separately as primaryKey,
+    weakPrimaryKey, foreignKeys, and weakForeignKeys, so iterating those structures
+    directly groups rows by relationship type.  Instead, collect relationship rows
+    by source field and then emit them while walking ``fields`` in schema order.
+    """
+    relationships_by_field = defaultdict(list)
+
+    primary_key = table_schema.get("primaryKey")
+    if primary_key:
+        pk_fields = primary_key if isinstance(primary_key, list) else [primary_key]
+        for pk in pk_fields:
+            relationships_by_field[pk].append(
+                (pk, "", "", "", "primary key", "Yes")
+            )
+
+    weak_primary_key = table_schema.get("weakPrimaryKey")
+    if weak_primary_key:
+        wpk_fields = weak_primary_key if isinstance(weak_primary_key, list) else [weak_primary_key]
+        for wpk in wpk_fields:
+            relationships_by_field[wpk].append(
+                (wpk, "", "", "", "weak primary key", "No")
+            )
+
+    for rel_name, rel_type, enforced in [
+        ("foreignKeys", "foreign key", "Yes"),
+        ("weakForeignKeys", "weak foreign key", "No"),
+    ]:
+        for rel in (table_schema.get(rel_name) or []):
+            predicate = rel.get("predicate", "")
+            src_fields = rel.get("fields")
+            ref = rel.get("reference", {}) or {}
+            tgt_table = ref.get("resource", "")
+            tgt_fields = ref.get("fields")
+
+            src_fields = [src_fields] if isinstance(src_fields, str) else src_fields
+            tgt_fields = [tgt_fields] if isinstance(tgt_fields, str) else tgt_fields
+
+            # Empty resource means self-referential (same table).
+            tgt_table_display = (
+                tgt_table
+                if (isinstance(tgt_table, str) and tgt_table.strip())
+                else (current_table_name or tgt_table)
+            )
+
+            for src, tgt in zip(src_fields or [], tgt_fields or []):
+                relationships_by_field[src].append(
+                    (src, predicate, tgt_table_display, tgt, rel_type, enforced)
+                )
+
+    # Emit relationship rows in exactly the order their source fields occur in the
+    # schema fields array, which preserves dwc-dp-fields.csv order for this table.
+    relationships = []
+    emitted_fields = set()
+    for field in (table_schema.get("fields") or []):
+        if not isinstance(field, dict):
+            continue
+        field_name = (field.get("name") or "").strip()
+        if not field_name:
+            continue
+        relationships.extend(relationships_by_field.get(field_name, []))
+        emitted_fields.add(field_name)
+
+    # Defensive fallback: retain any relationship whose source field was not found
+    # in the fields array rather than silently dropping it.
+    for field_name, field_relationships in relationships_by_field.items():
+        if field_name not in emitted_fields:
+            relationships.extend(field_relationships)
+
+    if not relationships:
+        return ""
+
+    # Build required-field lookup from constraints or top-level field["required"].
+    field_required_map = {}
+    for f in (table_schema.get("fields") or []):
+        if not isinstance(f, dict):
+            continue
+        name = (f.get("name") or "").strip()
+        if not name:
+            continue
+        cons = f.get("constraints") if isinstance(f.get("constraints"), dict) else {}
+        val = cons.get("required", f.get("required", False))
+        if isinstance(val, bool):
+            req = val
+        elif isinstance(val, (int, float)):
+            req = bool(val)
+        elif isinstance(val, str):
+            req = val.strip().lower() in {"true", "1", "yes", "y"}
+        else:
+            req = False
+        field_required_map[name] = req
+
+    rows = [
+        '<div class="foreign-key-summary">',
+        '<h4>Relationships to Other Tables</h4>',
+        '<table class="term-table">',
+        '<tr><td class="label">Field</td><td><b>Predicate</b></td>'
+        '<td><b>Target Table</b></td><td><b>Target Field</b></td>'
+        '<td><b>Relationship Type</b></td><td><b>Enforced</b></td>'
+        '<td><b>Required</b></td></tr>',
+    ]
+    for src, predicate, tgt_table, tgt_field, rel_type, enforced in relationships:
+        required = "Yes" if field_required_map.get(src, False) else "No"
+        rows.append(
+            f'<tr><td class="label">{src}</td><td>{predicate}</td>'
+            f'<td>{tgt_table}</td><td>{tgt_field}</td>'
+            f'<td>{rel_type}</td><td>{enforced}</td><td>{required}</td></tr>'
+        )
+    rows.append("</table></div>")
+    return "\n".join(rows)
+
+
+def _dwc_dp_build_term_section(field: dict, class_name: str) -> str:
+    if not isinstance(field, dict):
+        return ""
+
+    order = [
+        "title", "namespace", "class", "description", "notes", "examples",
+        "type", "default", "constraints", "format", "dcterms:isVersionOf",
+    ]
+    labels = {
+        "title": "Title (Label)",
+        "class": "Table:",
+        "namespace": "Namespace",
+        "dcterms:isVersionOf": "dcterms:isVersionOf",
+        "description": "Description",
+        "notes": "Notes",
+        "examples": "Examples",
+        "type": "Type",
+        "default": "Default",
+        "constraints": "Constraints",
+        "format": "Format",
+    }
+
+    rows = []
+    for key in order:
+        value = field.get(key)
+
+        # Suppress Format when it is the default value.
+        if key == "format" and str(value or "").strip().lower() == "default":
+            continue
+
+        if value is None:
+            if key == "class":
+                value = class_name
+            else:
+                continue
+
+        if key == "constraints" and isinstance(value, dict):
+            value = json.dumps(value, ensure_ascii=False)
+        else:
+            value = str(value).strip()
+
+        if not value:
+            continue
+
+        if key == "dcterms:isVersionOf":
+            if not (
+                value.startswith("http://example.com/term-pending/")
+                or value.startswith("https://example.com/term-pending/")
+            ):
+                value = f'<a href="{value}" target="_blank">{value}</a>'
+        elif key == "class":
+            value = f'<a href="#{value}" target="_blank">{value}</a>'
+        elif key == "examples":
+            parts = [ex.strip() for ex in str(value).split(";") if ex.strip()]
+            value = ""
+            for i, ex in enumerate(parts):
+                if i > 0:
+                    value += '<div class="examples-separator"></div>'
+                value += f'<div class="examples-content">{ex}</div>'
+
+        rows.append(f'<tr><td class="label">{labels[key]}</td><td>{value}</td></tr>')
+
+    if not rows:
+        return ""
+
+    field_name = field.get("name", "").strip()
+    full_id = f"{class_name}__{field_name}"
+    display_name = field.get("name", "(no name)")
+    return (
+        f'<section class="term" id="{full_id}">\n'
+        f'<div class="field-header-wrapper">'
+        f'<h3 id="{full_id}">{display_name}</h3>'
+        f'</div>\n'
+        f'<table class="term-table">'
+        + "".join(rows)
+        + "</table>\n</section>"
+    )
+
+
+def _dwc_dp_generate_field_links(fields: list, class_name: str) -> str:
+    return "".join(
+        f'<a class="field-box" href="#{class_name}__{field.get("name", "").strip()}">'
+        f'{field.get("name", "").strip()}</a>'
+        for field in fields
+        if isinstance(field, dict) and field.get("name")
+    )
+
+
+# ---------------------------------------------------------------------------
+# DwC-DP profile and table-schema generation
+# ---------------------------------------------------------------------------
+
+def _dwc_dp_generate_qrg(
+    table_schemas_dir: Path,
+    output_html_path: Path,
+    template_path: Path,
+    version: str,
+    ordered_groups: list[list[str]],
+) -> None:
+    """Read the generated DwC-DP table schemas and render the QRG HTML."""
+    content_parts = []
+    class_links_parts = []
+
+    for group in ordered_groups:
+        for table_name in group:
+            schema_file = table_schemas_dir / f"{table_name}.json"
+            if not schema_file.is_file():
+                print(
+                    f"Warning: Schema file for '{table_name}' not found at "
+                    f"{schema_file} — skipping."
+                )
+                continue
+            with schema_file.open("r", encoding="utf-8") as f:
+                schema = json.load(f)
+
+            table = schema
+            fields = schema.get("fields", [])
+            class_name = table.get("title", table_name)
+
+            # --- Table header ---
+            content_parts.append(
+                f'<div class="class-header-wrapper">'
+                f'<h2 id="{class_name}" class="class-header">{class_name}</h2>'
+                f'</div>'
+            )
+
+            if table.get("identifier"):
+                content_parts.append(
+                    f'<p><strong>Identifier:</strong> {table["identifier"]}</p>'
+                )
+
+            content_parts.append(
+                f'<p><strong>Description:</strong> '
+                f'{table.get("description", "No description.")}</p>'
+            )
+
+            if table.get("notes"):
+                content_parts.append(
+                    f'<p><strong>Notes:</strong> {table["notes"]}</p>'
+                )
+
+            ex_val = table.get("examples") or table.get("example")
+            if ex_val:
+                content_parts.append("<p><strong>Examples:</strong></p>")
+                parts = [ex.strip() for ex in str(ex_val).split(";") if ex.strip()]
+                ex_html = ""
+                for i, ex in enumerate(parts):
+                    if i > 0:
+                        ex_html += '<div class="examples-separator"></div>'
+                    ex_html += f'<div class="examples-content">{ex}</div>'
+                content_parts.append(ex_html)
+
+            # dcterms:isVersionOf for the table.
+            src = str(table.get("dcterms:isVersionOf") or "").strip()
+            if src:
+                if src.startswith(("http://", "https://")) and "example.com" not in src:
+                    content_parts.append(
+                        f'<p><strong>dcterms:isVersionOf:</strong> '
+                        f'<a href="{src}" target="_blank">{src}</a></p>'
+                    )
+                else:
+                    content_parts.append(
+                        f'<p><strong>dcterms:isVersionOf:</strong> {src}</p>'
+                    )
+
+            # Relationship summary (schema already loaded above).
+            content_parts.append(_dwc_dp_build_foreign_key_summary(schema, table_name))
+
+            # Field index and term sections.
+            field_links = _dwc_dp_generate_field_links(fields, class_name)
+            if field_links:
+                content_parts.append(
+                    f'<nav class="field-index"><strong>Fields:</strong><br>'
+                    f'{field_links}</nav>'
+                )
+            for field in fields:
+                term_html = _dwc_dp_build_term_section(field, class_name)
+                if term_html:
+                    content_parts.append(term_html)
+
+            class_links_parts.append(
+                f'<a class="class-box" href="#{class_name}">{class_name}</a>'
+            )
+
+        class_links_parts.append('<div class="menu-separator"></div>')
+    template = _dwc_dp_load_template(template_path)
+    html = template.format(
+        content="\n".join(content_parts),
+        class_links="\n".join(class_links_parts),
+        version=version,
+    )
+
+    output_html_path.parent.mkdir(parents=True, exist_ok=True)
+    with output_html_path.open("w", encoding="utf-8") as out:
+        out.write(html)
+
+
+# ---------------------------------------------------------------------------
+# DwC-DP PostgreSQL DDL generation
+# ---------------------------------------------------------------------------
+
+DWC_DP_POSTGRES_RESERVED = {
+    "all", "analyse", "analyze", "and", "any", "array", "as", "asc", "asymmetric",
+    "authorization", "between", "bigint", "binary", "bit", "boolean", "both", "case",
+    "cast", "char", "character", "check", "coalesce", "collate", "column", "constraint",
+    "create", "cross", "current_catalog", "current_date", "current_role", "current_schema",
+    "current_time", "current_timestamp", "current_user", "default", "deferrable", "desc",
+    "distinct", "do", "else", "end", "except", "exists", "extract", "false", "fetch",
+    "for", "foreign", "freeze", "from", "full", "grant", "group", "having", "ilike",
+    "in", "initially", "inner", "intersect", "into", "is", "isnull", "join", "lateral",
+    "leading", "left", "like", "limit", "localtime", "localtimestamp", "natural", "not",
+    "notnull", "null", "offset", "on", "only", "or", "order", "outer", "overlaps",
+    "placing", "primary", "references", "returning", "right", "select", "session_user",
+    "similar", "smallint", "some", "symmetric", "table", "then", "to", "trailing", "true",
+    "union", "unique", "user", "using", "variadic", "verbose", "when", "where", "window",
+    "with", "class",
+}
+
+
+@dataclass
+class _DwcDpColumn:
+    logical_name: str
+    sql_name: str
+    logical_type: str
+    constraints: dict[str, Any] = field(default_factory=dict)
+    description: str | None = None
+
+
+@dataclass
+class _DwcDpForeignKey:
+    source_fields: list[str]
+    target_resource: str
+    target_fields: list[str]
+    weak: bool = False
+
+
+@dataclass
+class _DwcDpTable:
+    logical_name: str
+    sql_name: str
+    columns: list[_DwcDpColumn]
+    primary_key: list[str] = field(default_factory=list)
+    weak_primary_key: list[str] = field(default_factory=list)
+    foreign_keys: list[_DwcDpForeignKey] = field(default_factory=list)
+    weak_foreign_keys: list[_DwcDpForeignKey] = field(default_factory=list)
+    title: str | None = None
+    description: str | None = None
+
+
+class _DwcDpSqlGeneratorError(Exception):
+    pass
+
+
+def _dwc_dp_snake_case(name: str) -> str:
+    name = name.replace("-", "_")
+    name = re.sub(r"(.)([A-Z][a-z]+)", r"\1_\2", name)
+    name = re.sub(r"([a-z0-9])([A-Z])", r"\1_\2", name)
+    name = re.sub(r"__+", "_", name)
+    return name.lower()
+
+
+def _dwc_dp_quote_ident(name: str) -> str:
+    if re.fullmatch(r"[a-z_][a-z0-9_]*", name) and name not in DWC_DP_POSTGRES_RESERVED:
+        return name
+    return '"' + name.replace('"', '""') + '"'
+
+
+def _dwc_dp_make_constraint_name(table: str, base: str) -> str:
+    raw = f"{table}_{base}"
+    if len(raw) <= 63:
+        return raw
+    digest = hashlib.sha1(raw.encode("utf-8")).hexdigest()[:8]
+    head = raw[: 63 - 1 - len(digest)]
+    return f"{head}_{digest}"
+
+
+def _dwc_dp_normalize_listish(value: Any) -> list[str]:
+    """Coerce None, a scalar, or a list into a flat list of strings."""
+    if value is None:
+        return []
+    if isinstance(value, list):
+        return [str(v) for v in value]
+    return [str(value)]
+
+
+def _dwc_dp_fetch_url_text(url: str) -> str:
+    headers = {
+        "Accept": "text/csv, text/plain;q=0.9, */*;q=0.8",
+        "User-Agent": "build_artifacts.py DwC-DP SQL generator/1.0",
+    }
+    req = Request(url, headers=headers)
+    try:
+        with urlopen(req, timeout=30) as response:  # nosec B310
+            raw = response.read()
+            charset = response.headers.get_content_charset() or "utf-8"
+            return raw.decode(charset, errors="replace")
+    except URLError as exc:  # pragma: no cover
+        raise _DwcDpSqlGeneratorError(f"Failed to fetch vocabulary URL {url}: {exc}") from exc
+
+
+def _dwc_dp_read_rs_text(
+    relative_path: str,
+    local_path_to_rs: str | None,
+    github_user: str,
+    github_branch: str,
+) -> tuple[str, str]:
+    """Read a DwC-DP SQL resource from the selected rs.tdwg.org source.
+
+    Local builds read only from the configured rs.tdwg.org checkout. Remote
+    builds use the same GitHub user and branch selected for the rest of the
+    Darwin Core build.
+    """
+    normalized = str(relative_path).strip().lstrip("/")
+    if not normalized:
+        raise _DwcDpSqlGeneratorError("Empty rs.tdwg.org resource path")
+
+    if local_path_to_rs:
+        source = Path(local_path_to_rs).expanduser().resolve() / normalized
+        if not source.is_file():
+            raise _DwcDpSqlGeneratorError(
+                f"DwC-DP SQL vocabulary resource not found in local rs.tdwg.org checkout: {source}"
+            )
+        try:
+            return source.read_text(encoding="utf-8"), str(source)
+        except OSError as exc:
+            raise _DwcDpSqlGeneratorError(
+                f"Unable to read DwC-DP SQL vocabulary resource {source}: {exc}"
+            ) from exc
+
+    url = (
+        f"https://raw.githubusercontent.com/{github_user}/rs.tdwg.org/"
+        f"{github_branch}/{normalized}"
+    )
+    return _dwc_dp_fetch_url_text(url), url
+
+
+def _dwc_dp_extract_controlled_values_from_csv(text: str, url: str) -> list[str]:
+    """Extract controlled value strings from a TDWG rs.tdwg.org CSV vocabulary file.
+
+    Expects a header row containing 'controlled_value_string' and 'type' columns.
+    Rows where type is skos:Concept and the term is not deprecated are included.
+    """
+    skos_concept = "http://www.w3.org/2004/02/skos/core#Concept"
+    reader = csv.DictReader(io.StringIO(text))
+    if reader.fieldnames is None or "controlled_value_string" not in reader.fieldnames:
+        raise _DwcDpSqlGeneratorError(
+            f"CSV at {url} has no 'controlled_value_string' column — "
+            "check that the vocabulary_path points to a TDWG rs.tdwg.org CSV file"
+        )
+    values: list[str] = []
+    for row in reader:
+        if row.get("term_deprecated", "").strip():
+            continue
+        if row.get("type", "").strip() != skos_concept:
+            continue
+        cv = row.get("controlled_value_string", "").strip()
+        if cv:
+            values.append(cv)
+    return values
+
+
+def _dwc_dp_parse_fk_items(items: list[dict[str, Any]], *, weak: bool) -> list[_DwcDpForeignKey]:
+    output: list[_DwcDpForeignKey] = []
+    for item in items or []:
+        ref = item.get("reference", {})
+        source_fields = _dwc_dp_normalize_listish(item.get("fields"))
+        target_resource = ref.get("resource", "")
+        target_fields = _dwc_dp_normalize_listish(ref.get("fields"))
+        if not source_fields or not target_fields:
+            raise _DwcDpSqlGeneratorError(f"Malformed foreign key entry: {item}")
+        output.append(
+            _DwcDpForeignKey(
+                source_fields=source_fields,
+                target_resource=str(target_resource),
+                target_fields=target_fields,
+                weak=weak,
+            )
+        )
+    return output
+
+
+def _dwc_dp_read_schema_file(path: Path) -> _DwcDpTable:
+    with path.open("r", encoding="utf-8") as handle:
+        try:
+            data = json.load(handle)
+        except json.JSONDecodeError as exc:
+            raise _DwcDpSqlGeneratorError(f"Invalid JSON in schema file {path}: {exc}") from exc
+
+    try:
+        logical_name = data["name"]
+        sql_name = _dwc_dp_snake_case(logical_name)
+        columns: list[_DwcDpColumn] = []
+        for field_obj in data.get("fields", []):
+            logical_field = field_obj["name"]
+            sql_field = _dwc_dp_snake_case(logical_field)
+            columns.append(
+                _DwcDpColumn(
+                    logical_name=logical_field,
+                    sql_name=sql_field,
+                    logical_type=field_obj.get("type", "string"),
+                    constraints=field_obj.get("constraints", {}) or {},
+                    description=field_obj.get("description"),
+                )
+            )
+    except KeyError as exc:
+        raise _DwcDpSqlGeneratorError(f"Schema file {path} is missing required key {exc}") from exc
+
+    return _DwcDpTable(
+        logical_name=logical_name,
+        sql_name=sql_name,
+        columns=columns,
+        primary_key=_dwc_dp_normalize_listish(data.get("primaryKey")),
+        weak_primary_key=_dwc_dp_normalize_listish(data.get("weakPrimaryKey")),
+        foreign_keys=_dwc_dp_parse_fk_items(data.get("foreignKeys", []), weak=False),
+        weak_foreign_keys=_dwc_dp_parse_fk_items(data.get("weakForeignKeys", []), weak=True),
+        title=data.get("title"),
+        description=data.get("description"),
+    )
+
+
+def _dwc_dp_collect_schema_files(input_path: Path) -> list[Path]:
+    """Return JSON table schema files from the generated schema directory."""
+    if not input_path.is_dir():
+        raise _DwcDpSqlGeneratorError(f"Table schema directory not found: {input_path}")
+
+    files = [
+        p for p in input_path.glob("*.json")
+        if p.is_file() and not p.name.startswith("._")
+    ]
+    if not files:
+        raise _DwcDpSqlGeneratorError(f"No JSON schema files found in {input_path}")
+    return sorted(files)
+
+
+def _dwc_dp_load_tables(input_path: Path) -> dict[str, _DwcDpTable]:
+    """Load all generated table schemas from the fixed schema directory."""
+    tables: dict[str, _DwcDpTable] = {}
+    for path in _dwc_dp_collect_schema_files(input_path):
+        table = _dwc_dp_read_schema_file(path)
+        if table.logical_name in tables:
+            raise _DwcDpSqlGeneratorError(f"Duplicate table name found: {table.logical_name}")
+        tables[table.logical_name] = table
+    return tables
+
+def _dwc_dp_load_sidecar(path: Path) -> dict[str, Any]:
+    with path.open("r", encoding="utf-8") as handle:
+        data = yaml.safe_load(handle) or {}
+    if not isinstance(data, dict):
+        raise _DwcDpSqlGeneratorError("YAML sidecar root must be a mapping/object")
+    return data
+
+
+class _DwcDpSqlGenerator:
+    def __init__(
+        self,
+        tables: dict[str, _DwcDpTable],
+        config: dict[str, Any],
+        local_path_to_rs: str | None,
+        github_user: str,
+        github_branch: str,
+    ) -> None:
+        self.tables = tables
+        self.config = config
+        self.local_path_to_rs = local_path_to_rs
+        self.github_user = github_user
+        self.github_branch = github_branch
+        self.column_name_map = {
+            table.logical_name: {column.logical_name: column.sql_name for column in table.columns}
+            for table in tables.values()
+        }
+        self.validate_references()
+
+    def validate_references(self) -> None:
+        for table in self.tables.values():
+            column_names = {column.logical_name for column in table.columns}
+            for logical_pk in table.primary_key:
+                if logical_pk not in column_names:
+                    raise _DwcDpSqlGeneratorError(
+                        f"Table {table.logical_name}: primaryKey references missing field {logical_pk}"
+                    )
+            for fk in [*table.foreign_keys, *table.weak_foreign_keys]:
+                for source in fk.source_fields:
+                    if source not in column_names:
+                        raise _DwcDpSqlGeneratorError(
+                            f"Table {table.logical_name}: FK source field {source} does not exist"
+                        )
+                target_table_name = table.logical_name if fk.target_resource == "" else fk.target_resource
+                if target_table_name not in self.tables:
+                    raise _DwcDpSqlGeneratorError(
+                        f"Table {table.logical_name}: FK target resource {target_table_name} does not exist"
+                    )
+                target_table = self.tables[target_table_name]
+                target_columns = {column.logical_name for column in target_table.columns}
+                for target in fk.target_fields:
+                    if target not in target_columns:
+                        raise _DwcDpSqlGeneratorError(
+                            f"Table {table.logical_name}: FK target field {target_table_name}.{target} does not exist"
+                        )
+                # Check that target fields form a key (primary key or unique) on the target table.
+                target_fields_set = set(fk.target_fields)
+                is_pk = target_fields_set == set(target_table.primary_key)
+                is_weak_pk = target_fields_set == set(target_table.weak_primary_key)
+
+                unique_cols = {
+                    col.logical_name
+                    for col in target_table.columns
+                    if (col.constraints or {}).get("unique")
+                }
+                is_unique = len(fk.target_fields) == 1 and fk.target_fields[0] in unique_cols
+                if not (is_pk or is_weak_pk or is_unique):
+                    msg = (
+                        f"Table {table.logical_name}: FK target fields {fk.target_fields} "
+                        f"on {target_table_name} are not a primary key or unique column"
+                    )
+                    if fk.weak:
+                        print(f"Warning: {msg}", file=sys.stderr)
+                    else:
+                        raise _DwcDpSqlGeneratorError(msg)
+
+    def type_override(self, table: str, column: str) -> str | None:
+        return (
+            self.config.get("types", {})
+            .get("columns", {})
+            .get(table, {})
+            .get(column, {})
+            .get("sql_type")
+        )
+
+    def enum_binding(self, table: str, column: str) -> str | None:
+        return (
+            self.config.get("enum_bindings", {})
+            .get(table, {})
+            .get(column, {})
+            .get("enum")
+        )
+
+    def default_value(self, table: str, column: str) -> Any:
+        return (
+            self.config.get("defaults", {})
+            .get("columns", {})
+            .get(table, {})
+            .get(column, {})
+            .get("value")
+        )
+
+    def pg_type_for_column(self, table: str, column: _DwcDpColumn) -> str:
+        enum_name = self.enum_binding(table, column.logical_name)
+        if enum_name:
+            if enum_name not in self.config.get("enums", {}):
+                raise _DwcDpSqlGeneratorError(
+                    f"Column {table}.{column.logical_name} binds to undefined enum {enum_name}"
+                )
+            return _dwc_dp_quote_ident(_dwc_dp_snake_case(enum_name))
+
+        override = self.type_override(table, column.logical_name)
+        if override:
+            return override
+
+        type_map = {
+            "string": "TEXT",
+            "integer": "INTEGER",
+            "number": "NUMERIC",
+            "boolean": "BOOLEAN",
+        }
+        try:
+            return type_map[column.logical_type]
+        except KeyError as exc:
+            raise _DwcDpSqlGeneratorError(
+                f"Unsupported logical type {column.logical_type!r} for {table}.{column.logical_name}"
+            ) from exc
+
+    def column_checks_from_schema(self, column: _DwcDpColumn) -> list[str]:
+        checks: list[str] = []
+        constraints = column.constraints or {}
+        minimum = constraints.get("minimum")
+        maximum = constraints.get("maximum")
+        if minimum is not None:
+            checks.append(f"value >= {minimum}")
+        if maximum is not None:
+            checks.append(f"value <= {maximum}")
+        return checks
+
+    def render_header_comment(self) -> str:
+        metadata = self.config.get("metadata", {})
+        lines = ["/*"]
+        preferred_order = ["title", "version", "source_table_schemas", "generated_by"]
+        seen: set[str] = set()
+        for key in preferred_order:
+            if key in metadata:
+                label = key.replace("_", " ").capitalize()
+                lines.append(f"{label}: {metadata[key]}")
+                seen.add(key)
+        for key, value in metadata.items():
+            if key in ("notes", "example_run") or key in seen:
+                continue
+            label = key.replace("_", " ").capitalize()
+            lines.append(f"{label}: {value}")
+        notes = metadata.get("notes", [])
+        if notes:
+            lines.append("")
+            lines.append("Notes:")
+            for note in notes:
+                lines.append(f"- {note}")
+        example_run = metadata.get("example_run", "").strip()
+        if example_run:
+            lines.append("")
+            lines.append("Example run:")
+            for run_line in example_run.splitlines():
+                lines.append(f"  {run_line}")
+        lines.append("*/")
+        return "\n".join(lines)
+
+    def resolve_enum_values(self, enum_name: str, spec: dict[str, Any]) -> list[str]:
+        values = [str(v) for v in spec.get("values", []) or []]
+        if values:
+            return values
+
+        vocabulary_path = spec.get("vocabulary_path")
+        if vocabulary_path:
+            text, source = _dwc_dp_read_rs_text(
+                str(vocabulary_path),
+                self.local_path_to_rs,
+                self.github_user,
+                self.github_branch,
+            )
+            values = _dwc_dp_extract_controlled_values_from_csv(text, source)
+            if values:
+                action = "loaded" if self.local_path_to_rs else "fetched"
+                print(
+                    f"Enum '{enum_name}': {action} {len(values)} value(s) from {source}",
+                    file=sys.stderr,
+                )
+                return values
+            raise _DwcDpSqlGeneratorError(
+                f"Enum {enum_name} could not extract controlled values from {source}"
+            )
+
+        raise _DwcDpSqlGeneratorError(
+            f"Enum {enum_name} must define either 'values' or 'vocabulary_path'"
+        )
+
+    def render_enums(self) -> str:
+        enums = self.config.get("enums", {})
+        if not enums:
+            return ""
+        statements: list[str] = []
+        for enum_name, spec in enums.items():
+            values = self.resolve_enum_values(enum_name, spec)
+            if not values:
+                raise _DwcDpSqlGeneratorError(f"Enum {enum_name} has no values")
+            qname = _dwc_dp_quote_ident(_dwc_dp_snake_case(enum_name))
+            literal_list = ",\n  ".join("'" + str(v).replace("'", "''") + "'" for v in values)
+            statements.append(f"CREATE TYPE {qname} AS ENUM (\n  {literal_list}\n);")
+        return "\n\n".join(statements)
+
+    def render_create_table(self, table: _DwcDpTable) -> str:
+        lines: list[str] = []
+        if table.title or table.description:
+            if table.title:
+                lines.append(f"-- {table.title}")
+            if table.description:
+                for desc_line in str(table.description).splitlines():
+                    lines.append(f"-- {desc_line}")
+        column_defs: list[str] = []
+        pk_sql_names = [self.column_name_map[table.logical_name][name] for name in table.primary_key]
+        single_pk = pk_sql_names[0] if len(pk_sql_names) == 1 else None
+
+        for column in table.columns:
+            parts = [_dwc_dp_quote_ident(column.sql_name), self.pg_type_for_column(table.logical_name, column)]
+            constraints = column.constraints or {}
+            if constraints.get("required"):
+                parts.append("NOT NULL")
+            if constraints.get("unique") and column.sql_name != single_pk:
+                parts.append("UNIQUE")
+            default_value = self.default_value(table.logical_name, column.logical_name)
+            if default_value is not None:
+                parts.append(f"DEFAULT {default_value}")
+            checks = self.column_checks_from_schema(column)
+            for expr in checks:
+                parts.append(f"CHECK ({expr})")
+            if column.sql_name == single_pk:
+                parts.append("PRIMARY KEY")
+            column_defs.append("  " + " ".join(parts))
+
+        if len(pk_sql_names) > 1:
+            pk_expr = ", ".join(_dwc_dp_quote_ident(name) for name in pk_sql_names)
+            column_defs.append(f"  PRIMARY KEY ({pk_expr})")
+
+        lines.append(f"CREATE TABLE {_dwc_dp_quote_ident(table.sql_name)} (")
+        lines.append(",\n".join(column_defs))
+        lines.append(");")
+        return "\n".join(lines)
+
+    def per_table_foreign_key_statements(self, table: _DwcDpTable) -> list[str]:
+        statements: list[str] = []
+        for fk in table.foreign_keys:
+            src_cols = [self.column_name_map[table.logical_name][name] for name in fk.source_fields]
+            target_table_logical = table.logical_name if fk.target_resource == "" else fk.target_resource
+            target_table = self.tables[target_table_logical]
+            tgt_cols = [self.column_name_map[target_table_logical][name] for name in fk.target_fields]
+            base = "_".join(src_cols + ["fkey"])
+            cname = _dwc_dp_make_constraint_name(table.sql_name, base)
+            statements.append(
+                "ALTER TABLE {table_name} ADD CONSTRAINT {cname} FOREIGN KEY ({src}) "
+                "REFERENCES {target} ({tgt}) ON DELETE CASCADE DEFERRABLE;".format(
+                    table_name=_dwc_dp_quote_ident(table.sql_name),
+                    cname=_dwc_dp_quote_ident(cname),
+                    src=", ".join(_dwc_dp_quote_ident(c) for c in src_cols),
+                    target=_dwc_dp_quote_ident(target_table.sql_name),
+                    tgt=", ".join(_dwc_dp_quote_ident(c) for c in tgt_cols),
+                )
+            )
+        return statements
+
+    def per_table_extra_check_statements(self, table: _DwcDpTable) -> list[str]:
+        checks_cfg = self.config.get("checks", {})
+        statements: list[str] = []
+
+        for item in checks_cfg.get("tables", {}).get(table.logical_name, []):
+            name = item["name"]
+            sql_expr = item["sql"]
+            statements.append(
+                f"ALTER TABLE {_dwc_dp_quote_ident(table.sql_name)} "
+                f"ADD CONSTRAINT {_dwc_dp_quote_ident(_dwc_dp_make_constraint_name(table.sql_name, name))} "
+                f"CHECK ({sql_expr});"
+            )
+
+        for logical_col, items in checks_cfg.get("columns", {}).get(table.logical_name, {}).items():
+            if logical_col not in self.column_name_map[table.logical_name]:
+                raise _DwcDpSqlGeneratorError(f"Unknown column in checks.columns: {table.logical_name}.{logical_col}")
+            for item in items:
+                name = item["name"]
+                sql_expr = item["sql"]
+                statements.append(
+                    f"ALTER TABLE {_dwc_dp_quote_ident(table.sql_name)} "
+                    f"ADD CONSTRAINT {_dwc_dp_quote_ident(_dwc_dp_make_constraint_name(table.sql_name, name))} "
+                    f"CHECK ({sql_expr});"
+                )
+        return statements
+
+    def per_table_index_statements(self, table: _DwcDpTable) -> list[str]:
+        statements: list[str] = []
+        seen: set[tuple[str, ...]] = set()
+        for fk in [*table.foreign_keys, *table.weak_foreign_keys]:
+            src_cols = tuple(self.column_name_map[table.logical_name][name] for name in fk.source_fields)
+            if src_cols in seen:
+                continue
+            seen.add(src_cols)
+            idx_name = _dwc_dp_make_constraint_name(table.sql_name, "_".join([*src_cols, "idx"]))
+            statements.append(
+                f"CREATE INDEX {_dwc_dp_quote_ident(idx_name)} ON {_dwc_dp_quote_ident(table.sql_name)} "
+                f"({', '.join(_dwc_dp_quote_ident(c) for c in src_cols)});"
+            )
+        return statements
+
+    def render_table_section(self, table: _DwcDpTable) -> str:
+        parts = [self.render_create_table(table)]
+        fk_statements = self.per_table_foreign_key_statements(table)
+        if fk_statements:
+            parts.append("\n".join(fk_statements))
+        check_statements = self.per_table_extra_check_statements(table)
+        if check_statements:
+            parts.append("\n".join(check_statements))
+        index_statements = self.per_table_index_statements(table)
+        if index_statements:
+            parts.append("\n".join(index_statements))
+        return "\n\n".join(parts)
+
+    def generate(self) -> str:
+        sections = [self.render_header_comment()]
+        enums = self.render_enums()
+        if enums:
+            sections.extend(["", "-- ENUMs", enums])
+        sections.append("")
+        sections.append("-- Tables, constraints, and indexes")
+        sections.append(
+            "\n\n".join(
+                self.render_table_section(table)
+                for table in sorted(self.tables.values(), key=lambda t: t.sql_name)
+            )
+        )
+        return "\n".join(sections)
+
+
+# ---------------------------------------------------------------------------
+# PostgreSQL DDL generation
+# ---------------------------------------------------------------------------
+
+
+
+
+def _dwc_dp_generate_postgresql_ddl(
+    table_schemas_dir: Path,
+    config_path: Path,
+    output_path: Path,
+    version: str,
+    local_path_to_rs: str | None,
+    github_user: str,
+    github_branch: str,
+) -> None:
+    """Generate PostgreSQL DDL from the validated DwC-DP table schemas."""
+    if not config_path.is_file():
+        raise _DwcDpSqlGeneratorError(f"SQL configuration file not found: {config_path}")
+
+    tables = _dwc_dp_load_tables(table_schemas_dir)
+    config = _dwc_dp_load_sidecar(config_path)
+
+    # The SQL metadata version is derived from the same version argument used
+    # to generate the DwC-DP profile and table schemas.  It is intentionally
+    # not maintained independently in generate_sql.yaml.
+    metadata = config.setdefault("metadata", {})
+    metadata["version"] = version
+
+    generator = _DwcDpSqlGenerator(
+        tables, config, local_path_to_rs, github_user, github_branch
+    )
+    sql = generator.generate() + "\n"
+
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    output_path.write_text(sql, encoding="utf-8")
+
+
+# ---------------------------------------------------------------------------
+# DwC-DP Designer generation
+# ---------------------------------------------------------------------------
+
+DWC_DP_DESIGNER_DATA_FILENAME = "data.js"
+
+
+def _dwc_dp_generate_designer(
+    designer_template_dir: Path,
+    designer_output_dir: Path,
+    version: str,
+    profile_json_path: Path,
+    table_schemas_dir: Path,
+) -> None:
+    """Publish the Designer and embed the current DwC-DP model in data.js."""
+    required_files = (
+        Path("index.html"),
+        Path("styles.css"),
+        Path("js") / "app.js",
+    )
+
+    missing = [
+        str(designer_template_dir / rel)
+        for rel in required_files
+        if not (designer_template_dir / rel).is_file()
+    ]
+    if missing:
+        raise FileNotFoundError(
+            "Designer template is incomplete. Missing:\n  " + "\n  ".join(missing)
+        )
+
+    profile = _dwc_dp_load_json_for_validation(profile_json_path, DwcdpValidationResult())
+    if profile is None:
+        raise FileNotFoundError(
+            f"Could not load generated DwC-DP profile: {profile_json_path}"
+        )
+
+    table_names = (
+        profile.get("$defs", {})
+        .get("dwc-dp-resource-names", {})
+        .get("enum", [])
+    )
+    if not isinstance(table_names, list) or not table_names:
+        raise ValueError(
+            "Generated DwC-DP profile does not contain "
+            "$defs.dwc-dp-resource-names.enum"
+        )
+
+    schemas = {}
+    for table_name in table_names:
+        schema_path = table_schemas_dir / f"{table_name}.json"
+        if not schema_path.is_file():
+            raise FileNotFoundError(
+                f"Designer source schema not found: {schema_path}"
+            )
+        with schema_path.open("r", encoding="utf-8") as fh:
+            schemas[table_name] = json.load(fh)
+
+    designer_output_dir.mkdir(parents=True, exist_ok=True)
+    (designer_output_dir / "js").mkdir(parents=True, exist_ok=True)
+
+    for rel in required_files:
+        shutil.copy2(designer_template_dir / rel, designer_output_dir / rel)
+
+    normalized_version = str(version).rstrip("/")
+    designer_data = {
+        "dwcDpVersion": version,
+        "profileIdentifier": normalized_version + "/dwc-dp-profile.json",
+        "profile": profile,
+        "schemas": schemas,
+    }
+
+    data_path = designer_output_dir / DWC_DP_DESIGNER_DATA_FILENAME
+    with data_path.open("w", encoding="utf-8") as fh:
+        fh.write("window.DWC_DP_DESIGNER_DATA = ")
+        json.dump(designer_data, fh, ensure_ascii=False, indent=2)
+        fh.write(";\n")
+
 def preflight_configuration(config, log_file):
     """Resolve and validate every build input before any output or cache is written."""
     languages = config.get('languages', DEFAULT_LANGUAGES)
@@ -1958,6 +3755,12 @@ def preflight_configuration(config, log_file):
     new_versions = []
     terms_cache = {}
     artifact_state = {}
+    dwc_dp_state = None
+
+    try:
+        dwc_dp_state = _dwc_dp_preflight(config)
+    except Exception as exc:
+        errors.append(f"Darwin Core Data Package: {exc}")
 
     try:
         term_list_registry = _all_term_list_metadata(
@@ -2167,7 +3970,7 @@ def preflight_configuration(config, log_file):
     # Validate documentation configuration and bind it to the term metadata
     # already loaded above. Webpage inputs are validated before any artifact files are generated.
     webpage_state = _preflight_webpage_configuration(
-        config, dwc_list_terms, artifact_state, errors,
+        config, dwc_list_terms, dwc_list_databases, artifact_state, errors,
         local_path_to_rs, github_user, github_branch
     )
 
@@ -2199,6 +4002,7 @@ def preflight_configuration(config, log_file):
         'dwc_list_conf_source': dwc_list_conf_source,
         'webpage_state': webpage_state,
         'term_versions_state': term_versions_state,
+        'dwc_dp_state': dwc_dp_state,
     }
 
 
@@ -2256,27 +4060,88 @@ def _prepare_transaction_stage(state, config, stage_root):
 
     language_menu = webpage_state.get('language_menu') or {}
     for item in language_menu.get('files', []):
+        _seed_stage_file(item['path'])
         item['path'] = _stage_path(item['path'])
 
 
-def _commit_transaction(stage_root):
-    """Commit the staged tree, rolling back the whole commit if any replacement fails."""
+
+def _directory_trees_equal(left, right):
+    """Return True when two directory trees contain the same files with identical bytes."""
+    left = os.path.abspath(left)
+    right = os.path.abspath(right)
+    if not os.path.isdir(left) or not os.path.isdir(right):
+        return False
+
+    def relative_files(root):
+        files = []
+        for current_root, _, filenames in os.walk(root):
+            for filename in filenames:
+                path = os.path.join(current_root, filename)
+                files.append(os.path.relpath(path, root))
+        return sorted(files)
+
+    left_files = relative_files(left)
+    right_files = relative_files(right)
+    if left_files != right_files:
+        return False
+
+    return all(
+        filecmp.cmp(
+            os.path.join(left, relative),
+            os.path.join(right, relative),
+            shallow=False,
+        )
+        for relative in left_files
+    )
+
+def _commit_transaction(stage_root, replace_directories=None):
+    """Commit staged files, replacing complete generated directories only when they differ."""
+    requested_replace_directories = [
+        os.path.abspath(path) for path in (replace_directories or [])
+    ]
+    replace_directories = []
+    for directory in requested_replace_directories:
+        relative = os.path.relpath(directory, repoRoot)
+        staged_directory = os.path.join(stage_root, relative)
+        if not _directory_trees_equal(staged_directory, directory):
+            replace_directories.append(directory)
+
+    def in_replaced_directory(path):
+        absolute = os.path.abspath(path)
+        return any(absolute == directory or absolute.startswith(directory + os.sep)
+                   for directory in replace_directories)
+
     changes = []
     for root, _, files in os.walk(stage_root):
         for filename in files:
             staged = os.path.join(root, filename)
             relative = os.path.relpath(staged, stage_root)
             destination = os.path.join(repoRoot, relative)
-            if os.path.isfile(destination) and filecmp.cmp(staged, destination, shallow=False):
+            if (not in_replaced_directory(destination) and os.path.isfile(destination)
+                    and filecmp.cmp(staged, destination, shallow=False)):
                 continue
             changes.append((staged, destination, relative))
 
     backup_root = tempfile.mkdtemp(prefix='build_artifacts_backup_')
-    committed = []
     created = []
+    replaced_directory_backups = []
     try:
-        # Capture every file that could be replaced before changing the repository.
+        # Back up complete generated directories before removing them, so stale
+        # generated files disappear on success and the original tree is restored
+        # intact if any later replacement fails.
+        for index, directory in enumerate(replace_directories):
+            backup = os.path.join(backup_root, '__replace_directories__', str(index))
+            existed = os.path.isdir(directory)
+            if existed:
+                os.makedirs(os.path.dirname(backup), exist_ok=True)
+                shutil.copytree(directory, backup)
+                shutil.rmtree(directory)
+            replaced_directory_backups.append((directory, backup, existed))
+
+        # Capture every ordinary file that could be replaced before changing it.
         for _, destination, relative in changes:
+            if in_replaced_directory(destination):
+                continue
             if os.path.isfile(destination):
                 backup = os.path.join(backup_root, relative)
                 os.makedirs(os.path.dirname(backup), exist_ok=True)
@@ -2284,6 +4149,7 @@ def _commit_transaction(stage_root):
             else:
                 created.append(destination)
 
+        committed = []
         for staged, destination, _ in changes:
             os.makedirs(os.path.dirname(destination), exist_ok=True)
             temporary = destination + '.build-artifacts.tmp'
@@ -2292,11 +4158,21 @@ def _commit_transaction(stage_root):
             committed.append(destination)
         return committed
     except BaseException:
-        # Restore every original and remove files created by the failed commit.
         for destination in created:
             if os.path.isfile(destination):
                 os.remove(destination)
-        for root, _, files in os.walk(backup_root):
+
+        # Remove partially committed replacement trees, then restore originals.
+        for directory, backup, existed in replaced_directory_backups:
+            if os.path.isdir(directory):
+                shutil.rmtree(directory)
+            if existed:
+                os.makedirs(os.path.dirname(directory), exist_ok=True)
+                shutil.copytree(backup, directory)
+
+        # Restore ordinary files, excluding the private directory backups above.
+        for root, dirs, files in os.walk(backup_root):
+            dirs[:] = [d for d in dirs if d != '__replace_directories__']
             for filename in files:
                 backup = os.path.join(root, filename)
                 relative = os.path.relpath(backup, backup_root)
@@ -2306,7 +4182,6 @@ def _commit_transaction(stage_root):
         raise
     finally:
         shutil.rmtree(backup_root, ignore_errors=True)
-
 
 def build_from_configuration(config):
     """Preflight the complete build, then build every update:true artifact."""
@@ -2331,10 +4206,108 @@ def build_from_configuration(config):
         online = state['online']
 
         print(f"Pre-flight passed ({mode} mode): all required resources are accessible.")
+        if state['dwc_dp_state'] is not None:
+            dwc_dp_state = state['dwc_dp_state']
+            print(
+                f"    DwC-DP: {dwc_dp_state['recommended_table_count']} recommended tables; "
+                f"{dwc_dp_state['recommended_field_count']} recommended fields."
+            )
+            log_line(log_file, f"DwC-DP version: {dwc_dp_state['version']}")
+            log_line(
+                log_file,
+                f"DwC-DP preflight: {dwc_dp_state['recommended_table_count']} recommended tables; "
+                f"{dwc_dp_state['recommended_field_count']} recommended fields."
+            )
+            log_line(log_file, "DwC-DP build-owned outputs:")
+            for path in dwc_dp_state['owned_outputs']:
+                log_line(log_file, f"  - {path}")
 
         stage_directory = tempfile.mkdtemp(prefix='build_artifacts_stage_')
         _prepare_transaction_stage(state, config, stage_directory)
         print("Transaction: generating all outputs in staging; repository files remain unchanged until commit.")
+
+        dwc_dp_state = state.get('dwc_dp_state')
+        if dwc_dp_state is not None:
+            dwc_dp_paths = dwc_dp_state
+            staged_profile = Path(_stage_path(dwc_dp_paths['profile.output']))
+            staged_schemas = Path(_stage_path(dwc_dp_paths['profile.table_schemas']))
+            if staged_schemas.exists():
+                shutil.rmtree(staged_schemas)
+
+            print("Build: generating Darwin Core Data Package profile and table schemas...")
+            _dwc_dp_make_schema_stage(
+                staged_schemas,
+                dwc_dp_state['version'],
+                staged_profile,
+                dwc_dp_paths['profile.template'],
+                dwc_dp_paths['sources.tables'],
+                dwc_dp_paths['sources.fields'],
+            )
+            validation = _dwc_dp_validate_generated_artifacts(staged_schemas, staged_profile)
+            if validation.has_errors:
+                raise RuntimeError(
+                    f"DwC-DP validation failed with {len(validation.errors)} error(s)."
+                )
+            schema_count = len(list(staged_schemas.glob('*.json')))
+            print(f"    -> {_display_output_path(staged_profile)}")
+            print(f"    -> {_display_output_path(staged_schemas)} ({schema_count} schemas)")
+            print(f"DwC-DP validation passed: {schema_count} table schemas.")
+            log_line(log_file, f"DwC-DP profile -> {staged_profile}")
+            log_line(log_file, f"DwC-DP table schemas -> {staged_schemas} ({schema_count} schemas)")
+            log_line(log_file, f"DwC-DP validation passed: {schema_count} table schemas")
+
+            staged_csv_headers = Path(_stage_path(dwc_dp_paths['csv_headers.output']))
+            print("Build: generating Darwin Core Data Package header-only CSVs...")
+            csv_header_count = _dwc_dp_generate_csv_headers(staged_schemas, staged_csv_headers)
+            print(f"    -> {_display_output_path(staged_csv_headers)} ({csv_header_count} CSV files)")
+            log_line(log_file, f"DwC-DP header-only CSVs -> {staged_csv_headers} ({csv_header_count} files)")
+
+            staged_qrg = Path(_stage_path(dwc_dp_paths['qrg.output']))
+            print("Build: generating Darwin Core Data Package Quick Reference Guide...")
+            _dwc_dp_generate_qrg(
+                staged_schemas,
+                staged_qrg,
+                dwc_dp_paths['qrg.template'],
+                dwc_dp_state['version'],
+                dwc_dp_paths['qrg.table_groups'],
+            )
+            print(f"    -> {_display_output_path(staged_qrg)}")
+            log_line(log_file, f"DwC-DP Quick Reference Guide -> {staged_qrg}")
+
+            staged_qrg_images = Path(_stage_path(dwc_dp_paths['qrg.images_output']))
+            if staged_qrg_images.exists():
+                shutil.rmtree(staged_qrg_images)
+            shutil.copytree(dwc_dp_paths['qrg.images_source'], staged_qrg_images)
+            qrg_image_count = sum(1 for path in staged_qrg_images.rglob('*') if path.is_file())
+            print("Build: copying Darwin Core Data Package Quick Reference Guide images...")
+            print(f"    -> {_display_output_path(staged_qrg_images)} ({qrg_image_count} images)")
+            log_line(log_file, f"DwC-DP Quick Reference Guide images -> {staged_qrg_images} ({qrg_image_count} images)")
+
+            staged_sql = Path(_stage_path(dwc_dp_paths['sql.output']))
+            print("Build: generating Darwin Core Data Package PostgreSQL DDL...")
+            _dwc_dp_generate_postgresql_ddl(
+                staged_schemas,
+                dwc_dp_paths['sql.config'],
+                staged_sql,
+                dwc_dp_state['version'],
+                state['local_path_to_rs'],
+                state['github_user'],
+                state['github_branch'],
+            )
+            print(f"    -> {_display_output_path(staged_sql)}")
+            log_line(log_file, f"DwC-DP PostgreSQL DDL -> {staged_sql}")
+
+            staged_designer = Path(_stage_path(dwc_dp_paths['designer.output']))
+            print("Build: generating Darwin Core Data Package Designer...")
+            _dwc_dp_generate_designer(
+                dwc_dp_paths['designer.template'],
+                staged_designer,
+                dwc_dp_state['version'],
+                staged_profile,
+                staged_schemas,
+            )
+            print(f"    -> {_display_output_path(staged_designer / 'index.html')}")
+            log_line(log_file, f"DwC-DP Designer -> {staged_designer}")
         if permitNewVersion:
             log_line(log_file, "Creation of new versioned outputs is permitted.")
 
@@ -2424,14 +4397,44 @@ def build_from_configuration(config):
                     print(f"       {_display_output_path(path)}")
                     log_line(log_file, f"Language menu ({mode}) -> {path}")
 
-        configured_file_count = term_versions_file_count + len(list_csv_paths) + webpage_file_count
+        dwc_dp_generated_file_count = 0
+        if state.get('dwc_dp_state') is not None:
+            dwc_dp_state = state['dwc_dp_state']
+            dwc_dp_single_files = (
+                dwc_dp_state['profile.output'],
+                dwc_dp_state['qrg.output'],
+                dwc_dp_state['sql.output'],
+            )
+            dwc_dp_generated_file_count += sum(
+                1 for path in dwc_dp_single_files if os.path.isfile(_stage_path(path))
+            )
+            for directory in (
+                dwc_dp_state['profile.table_schemas'],
+                dwc_dp_state['qrg.images_output'],
+                dwc_dp_state['csv_headers.output'],
+                dwc_dp_state['designer.output'],
+            ):
+                staged_directory = _stage_path(directory)
+                if os.path.isdir(staged_directory):
+                    dwc_dp_generated_file_count += sum(
+                        len(filenames)
+                        for _, _, filenames in os.walk(staged_directory)
+                    )
+
+        configured_file_count = (
+            term_versions_file_count + len(list_csv_paths) + webpage_file_count
+            + dwc_dp_generated_file_count
+        )
         for artifact in config['artifacts']:
             if not artifact.get('update', True):
                 continue
             configured_file_count += 3 if artifact.get('type') in ('core', 'extension') else 1
 
         print(f"Build: generating {configured_file_count} files...")
-        generated_file_count = term_versions_file_count + len(list_csv_paths) + webpage_file_count
+        generated_file_count = (
+            term_versions_file_count + len(list_csv_paths) + webpage_file_count
+            + dwc_dp_generated_file_count
+        )
 
         for index, artifact in enumerate(config['artifacts']):
             if not artifact.get('update', True):
@@ -2483,7 +4486,15 @@ def build_from_configuration(config):
             # a vocabulary produces one XML file. List-of-Terms CSVs were counted above.
             generated_file_count += 3 if artifact_type in ('core', 'extension') else 1
 
-        committed_paths = _commit_transaction(stage_directory)
+        replace_directories = []
+        if state.get('dwc_dp_state') is not None:
+            replace_directories.extend([
+                state['dwc_dp_state']['profile.table_schemas'],
+                state['dwc_dp_state']['qrg.images_output'],
+                state['dwc_dp_state']['csv_headers.output'],
+                state['dwc_dp_state']['designer.output'],
+            ])
+        committed_paths = _commit_transaction(stage_directory, replace_directories=replace_directories)
         print(f"Transaction committed: {len(committed_paths)} repository files updated.")
         log_line(log_file, f"Transaction committed files: {len(committed_paths)}")
 

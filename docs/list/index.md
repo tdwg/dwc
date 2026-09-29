@@ -129,8 +129,6 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [dwc:associatedMedia](#dwc_associatedMedia) |
 [dwc:associatedReferences](#dwc_associatedReferences) |
 [dwc:basisOfRecord](#dwc_basisOfRecord) |
-[dwciri:bibliographicIdentifierType](#dwciri_bibliographicIdentifierType) |
-[dwciri:classificationSystem](#dwciri_classificationSystem) |
 [dwc:collectionCode](#dwc_collectionCode) |
 [dwc:collectionID](#dwc_collectionID) |
 [dwc:dataGeneralizations](#dwc_dataGeneralizations) |
@@ -140,27 +138,12 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [dwc:dynamicProperties](#dwc_dynamicProperties) |
 [dwc:feedbackURL](#dwc_feedbackURL) |
 [dwc:Generalizations](#dwc_Generalizations) |
-[dwciri:geologicEvent](#dwciri_geologicEvent) |
-[dwciri:geologicProvince](#dwciri_geologicProvince) |
-[dwciri:hazardType](#dwciri_hazardType) |
-[dwciri:identificationVerificationStatus](#dwciri_identificationVerificationStatus) |
 [dwc:informationWithheld](#dwc_informationWithheld) |
 [dwc:institutionCode](#dwc_institutionCode) |
 [dwc:institutionID](#dwc_institutionID) |
-[dwciri:materialProportion](#dwciri_materialProportion) |
-[dwciri:materialRole](#dwciri_materialRole) |
-[dwciri:measuredChemistrySource](#dwciri_measuredChemistrySource) |
-[dwciri:mineralogicalAnalysisProtocol](#dwciri_mineralogicalAnalysisProtocol) |
 [dwc:organismPart](#dwc_organismPart) |
-[dwciri:organismPart](#dwciri_organismPart) |
-[dwciri:organismScope](#dwciri_organismScope) |
 [dwc:ownerInstitutionCode](#dwc_ownerInstitutionCode) |
-[dwciri:recordedBy](#dwciri_recordedBy) |
-[dwciri:recordNumber](#dwciri_recordNumber) |
-[dwciri:sampledFeatureType](#dwciri_sampledFeatureType) |
-[eco:samplingEffortProtocol](#eco_samplingEffortProtocol) |
-[dwciri:samplingProtocol](#dwciri_samplingProtocol) |
-[dwciri:substrate](#dwciri_substrate)
+[eco:samplingEffortProtocol](#eco_samplingEffortProtocol)
 
 **Dublin Core legacy namespace**
 
@@ -560,7 +543,9 @@ No properties are currently organized in this class.
 [dwciri:assertionUnit](#dwciri_assertionUnit) |
 [dwciri:assertionValue](#dwciri_assertionValue) |
 [dwciri:behavior](#dwciri_behavior) |
+[dwciri:bibliographicIdentifierType](#dwciri_bibliographicIdentifierType) |
 [dwciri:caste](#dwciri_caste) |
+[dwciri:classificationSystem](#dwciri_classificationSystem) |
 [ecoiri:compilationSourceTypes](#ecoiri_compilationSourceTypes) |
 [ecoiri:compilationTypes](#ecoiri_compilationTypes) |
 [dwciri:dataGeneralizations](#dwciri_dataGeneralizations) |
@@ -584,14 +569,18 @@ No properties are currently organized in this class.
 [dwciri:fromLithostratigraphicUnit](#dwciri_fromLithostratigraphicUnit) |
 [dwciri:fundingAttribution](#dwciri_fundingAttribution) |
 [dwciri:geodeticDatum](#dwciri_geodeticDatum) |
+[dwciri:geologicEvent](#dwciri_geologicEvent) |
+[dwciri:geologicProvince](#dwciri_geologicProvince) |
 [dwciri:georeferencedBy](#dwciri_georeferencedBy) |
 [dwciri:georeferenceProtocol](#dwciri_georeferenceProtocol) |
 [dwciri:georeferenceSources](#dwciri_georeferenceSources) |
 [dwciri:georeferenceVerificationStatus](#dwciri_georeferenceVerificationStatus) |
 [ecoiri:geospatialScopeAreaUnit](#ecoiri_geospatialScopeAreaUnit) |
 [dwciri:habitat](#dwciri_habitat) |
+[dwciri:hazardType](#dwciri_hazardType) |
 [dwciri:identificationQualifier](#dwciri_identificationQualifier) |
 [dwciri:identificationType](#dwciri_identificationType) |
+[dwciri:identificationVerificationStatus](#dwciri_identificationVerificationStatus) |
 [dwciri:identifiedBy](#dwciri_identifiedBy) |
 [dwciri:inCollection](#dwciri_inCollection) |
 [dwciri:inDataset](#dwciri_inDataset) |
@@ -603,31 +592,42 @@ No properties are currently organized in this class.
 [dwciri:locationAccordingTo](#dwciri_locationAccordingTo) |
 [dwciri:materialEntityCategory](#dwciri_materialEntityCategory) |
 [dwciri:materialEntityType](#dwciri_materialEntityType) |
+[dwciri:materialProportion](#dwciri_materialProportion) |
+[dwciri:materialRole](#dwciri_materialRole) |
 [ecoiri:materialSampleTypes](#ecoiri_materialSampleTypes) |
+[dwciri:measuredChemistrySource](#dwciri_measuredChemistrySource) |
 [dwciri:measurementDeterminedBy](#dwciri_measurementDeterminedBy) |
 [dwciri:measurementMethod](#dwciri_measurementMethod) |
 [dwciri:measurementType](#dwciri_measurementType) |
 [dwciri:measurementUnit](#dwciri_measurementUnit) |
 [dwciri:measurementValue](#dwciri_measurementValue) |
+[dwciri:mineralogicalAnalysisProtocol](#dwciri_mineralogicalAnalysisProtocol) |
 [ecoiri:nonTargetTaxa](#ecoiri_nonTargetTaxa) |
 [dwciri:objectQuantityType](#dwciri_objectQuantityType) |
 [dwciri:occurrenceStatus](#dwciri_occurrenceStatus) |
 [dwciri:organismInteractionType](#dwciri_organismInteractionType) |
+[dwciri:organismPart](#dwciri_organismPart) |
 [dwciri:organismQuantityType](#dwciri_organismQuantityType) |
+[dwciri:organismScope](#dwciri_organismScope) |
 [dwciri:pathway](#dwciri_pathway) |
 [dwciri:preferredSpatialRepresentation](#dwciri_preferredSpatialRepresentation) |
 [dwciri:preparations](#dwciri_preparations) |
 [ecoiri:protocolNames](#ecoiri_protocolNames) |
 [dwciri:protocolType](#dwciri_protocolType) |
+[dwciri:recordedBy](#dwciri_recordedBy) |
+[dwciri:recordNumber](#dwciri_recordNumber) |
 [dwciri:reproductiveCondition](#dwciri_reproductiveCondition) |
+[dwciri:sampledFeatureType](#dwciri_sampledFeatureType) |
 [dwciri:sampledSubstrateCategory](#dwciri_sampledSubstrateCategory) |
 [dwciri:sampledSubstrateLayer](#dwciri_sampledSubstrateLayer) |
 [dwciri:sampleSizeUnit](#dwciri_sampleSizeUnit) |
 [ecoiri:samplingEffortProtocol](#ecoiri_samplingEffortProtocol) |
 [ecoiri:samplingEffortUnit](#ecoiri_samplingEffortUnit) |
 [ecoiri:samplingPerformedBy](#ecoiri_samplingPerformedBy) |
+[dwciri:samplingProtocol](#dwciri_samplingProtocol) |
 [dwciri:sex](#dwciri_sex) |
 [dwciri:siteNumber](#dwciri_siteNumber) |
+[dwciri:substrate](#dwciri_substrate) |
 [ecoiri:surveySiteType](#ecoiri_surveySiteType) |
 [ecoiri:surveyTargetType](#ecoiri_surveyTargetType) |
 [ecoiri:surveyTargetUnit](#ecoiri_surveyTargetUnit) |
@@ -706,8 +706,6 @@ No properties are currently organized in this class.
 [Associated Media](#dwc_associatedMedia) |
 [Associated References](#dwc_associatedReferences) |
 [Basis Of Record](#dwc_basisOfRecord) |
-[Bibliographic Identifier Type (IRI)](#dwciri_bibliographicIdentifierType) |
-[Classification System (IRI)](#dwciri_classificationSystem) |
 [Collection Code](#dwc_collectionCode) |
 [Collection ID](#dwc_collectionID) |
 [Darwin Core Type](#dwc_DwCType) |
@@ -717,27 +715,12 @@ No properties are currently organized in this class.
 [Dynamic Properties](#dwc_dynamicProperties) |
 [Feedback URL](#dwc_feedbackURL) |
 [Generalizations](#dwc_Generalizations) |
-[Geologic Event (IRI)](#dwciri_geologicEvent) |
-[Geologic Province (IRI)](#dwciri_geologicProvince) |
-[Hazard Type (IRI)](#dwciri_hazardType) |
-[Identification Verification Status (IRI)](#dwciri_identificationVerificationStatus) |
 [Information Withheld](#dwc_informationWithheld) |
 [Institution Code](#dwc_institutionCode) |
 [Institution ID](#dwc_institutionID) |
-[Material Proportion (IRI)](#dwciri_materialProportion) |
-[Material Role (IRI)](#dwciri_materialRole) |
-[Measured Chemistry Source (IRI)](#dwciri_measuredChemistrySource) |
-[Mineralogical Analysis Protocol (IRI)](#dwciri_mineralogicalAnalysisProtocol) |
 [Organism Part](#dwc_organismPart) |
-[Organism Part (IRI)](#dwciri_organismPart) |
-[Organism Scope (IRI)](#dwciri_organismScope) |
 [Owner Institution Code](#dwc_ownerInstitutionCode) |
-[Record Number (IRI)](#dwciri_recordNumber) |
-[Recorded By (IRI)](#dwciri_recordedBy) |
-[Sampled Feature Type (IRI)](#dwciri_sampledFeatureType) |
-[Sampling Effort Protocol](#eco_samplingEffortProtocol) |
-[Sampling Protocol (IRI)](#dwciri_samplingProtocol) |
-[Substrate (IRI)](#dwciri_substrate)
+[Sampling Effort Protocol](#eco_samplingEffortProtocol)
 
 **Dublin Core legacy namespace**
 
@@ -874,8 +857,8 @@ No properties are currently organized in this class.
 [Decimal Latitude](#dwc_decimalLatitude) |
 [Decimal Longitude](#dwc_decimalLongitude) |
 [First Order Division](#dwc_stateProvince) |
-[Footprint SRS](#dwc_footprintSRS) |
 [Footprint Spatial Fit](#dwc_footprintSpatialFit) |
+[Footprint SRS](#dwc_footprintSRS) |
 [Footprint WKT](#dwc_footprintWKT) |
 [Geodetic Datum](#dwc_geodeticDatum) |
 [Georeference Protocol](#dwc_georeferenceProtocol) |
@@ -1137,7 +1120,9 @@ No properties are currently organized in this class.
 [Assertion Unit (IRI)](#dwciri_assertionUnit) |
 [Assertion Value (IRI)](#dwciri_assertionValue) |
 [Behavior (IRI)](#dwciri_behavior) |
+[Bibliographic Identifier Type (IRI)](#dwciri_bibliographicIdentifierType) |
 [Caste (IRI)](#dwciri_caste) |
+[Classification System (IRI)](#dwciri_classificationSystem) |
 [Compilation Source Types](#ecoiri_compilationSourceTypes) |
 [Compilation Types](#ecoiri_compilationTypes) |
 [Data Generalizations (IRI)](#dwciri_dataGeneralizations) |
@@ -1161,14 +1146,18 @@ No properties are currently organized in this class.
 [From Lithostratigraphic Unit](#dwciri_fromLithostratigraphicUnit) |
 [Funding Attribution (IRI)](#dwciri_fundingAttribution) |
 [Geodetic Datum (IRI)](#dwciri_geodeticDatum) |
+[Geologic Event (IRI)](#dwciri_geologicEvent) |
+[Geologic Province (IRI)](#dwciri_geologicProvince) |
 [Georeference Protocol (IRI)](#dwciri_georeferenceProtocol) |
 [Georeference Sources (IRI)](#dwciri_georeferenceSources) |
 [Georeference Verification Status (IRI)](#dwciri_georeferenceVerificationStatus) |
 [Georeferenced By (IRI)](#dwciri_georeferencedBy) |
 [Geospatial Scope Area Unit](#ecoiri_geospatialScopeAreaUnit) |
 [Habitat (IRI)](#dwciri_habitat) |
+[Hazard Type (IRI)](#dwciri_hazardType) |
 [Identification Qualifier (IRI)](#dwciri_identificationQualifier) |
 [Identification Type (IRI)](#dwciri_identificationType) |
+[Identification Verification Status (IRI)](#dwciri_identificationVerificationStatus) |
 [Identified By (IRI)](#dwciri_identifiedBy) |
 [In Collection](#dwciri_inCollection) |
 [In Dataset](#dwciri_inDataset) |
@@ -1180,31 +1169,42 @@ No properties are currently organized in this class.
 [Location According To (IRI)](#dwciri_locationAccordingTo) |
 [Material Entity Category (IRI)](#dwciri_materialEntityCategory) |
 [Material Entity Type (IRI)](#dwciri_materialEntityType) |
+[Material Proportion (IRI)](#dwciri_materialProportion) |
+[Material Role (IRI)](#dwciri_materialRole) |
 [Material Sample Types](#ecoiri_materialSampleTypes) |
+[Measured Chemistry Source (IRI)](#dwciri_measuredChemistrySource) |
 [Measurement Determined By (IRI)](#dwciri_measurementDeterminedBy) |
 [Measurement Method (IRI)](#dwciri_measurementMethod) |
 [Measurement Type (IRI)](#dwciri_measurementType) |
 [Measurement Unit (IRI)](#dwciri_measurementUnit) |
 [Measurement Value (IRI)](#dwciri_measurementValue) |
+[Mineralogical Analysis Protocol (IRI)](#dwciri_mineralogicalAnalysisProtocol) |
 [Non-target Taxa](#ecoiri_nonTargetTaxa) |
 [Object Quantity Type (IRI)](#dwciri_objectQuantityType) |
 [Occurrence Status (IRI)](#dwciri_occurrenceStatus) |
 [Organism Interaction Type (IRI)](#dwciri_organismInteractionType) |
+[Organism Part (IRI)](#dwciri_organismPart) |
 [Organism Quantity Type (IRI)](#dwciri_organismQuantityType) |
+[Organism Scope (IRI)](#dwciri_organismScope) |
 [Pathway (IRI)](#dwciri_pathway) |
 [Preferred Spatial Representation (IRI)](#dwciri_preferredSpatialRepresentation) |
 [Preparations (IRI)](#dwciri_preparations) |
 [Protocol Names](#ecoiri_protocolNames) |
 [Protocol Type (IRI)](#dwciri_protocolType) |
+[Record Number (IRI)](#dwciri_recordNumber) |
+[Recorded By (IRI)](#dwciri_recordedBy) |
 [Reproductive Condition (IRI)](#dwciri_reproductiveCondition) |
+[Sampled Feature Type (IRI)](#dwciri_sampledFeatureType) |
 [Sampled Substrate Category (IRI)](#dwciri_sampledSubstrateCategory) |
 [Sampled Substrate Layer (IRI)](#dwciri_sampledSubstrateLayer) |
 [Sampling Effort Protocol (IRI)](#ecoiri_samplingEffortProtocol) |
 [Sampling Effort Unit](#ecoiri_samplingEffortUnit) |
 [Sampling Performed By](#ecoiri_samplingPerformedBy) |
+[Sampling Protocol (IRI)](#dwciri_samplingProtocol) |
 [Sampling Size Unit (IRI)](#dwciri_sampleSizeUnit) |
 [Sex (IRI)](#dwciri_sex) |
 [Site Number (IRI)](#dwciri_siteNumber) |
+[Substrate (IRI)](#dwciri_substrate) |
 [Survey Site Type (IRI)](#ecoiri_surveySiteType) |
 [Survey Target Type (IRI)](#ecoiri_surveyTargetType) |
 [Survey Target Unit (IRI)](#ecoiri_surveyTargetUnit) |
@@ -1227,60 +1227,6 @@ No properties are currently organized in this class.
 [Vitality (IRI)](#dwciri_vitality)
 
 ## 4 Vocabulary
-<table>
-	<thead>
-		<tr>
-			<th colspan="2"><a id="ecoiri_absentTaxa"></a>Term Name ecoiri:absentTaxa</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/absentTaxa">http://rs.tdwg.org/eco/iri/absentTaxa</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2026-09-17</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/version/absentTaxa-2026-09-17">http://rs.tdwg.org/eco/iri/version/absentTaxa-2026-09-17</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Absent Taxa</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>A taxon reported absent during an eco:Survey.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Absences can be reported at any taxonomic level. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-09-17_62">http://rs.tdwg.org/decisions/decision-2026-09-17_62</a></td>
-		</tr>
-	</tbody>
-</table>
-
 <table>
 	<thead>
 		<tr>
@@ -1330,6 +1276,60 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-09-17_62">http://rs.tdwg.org/decisions/decision-2026-09-17_62</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="ecoiri_absentTaxa"></a>Term Name ecoiri:absentTaxa</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/iri/absentTaxa">http://rs.tdwg.org/eco/iri/absentTaxa</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-09-17</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/absentTaxa-2026-09-17">http://rs.tdwg.org/eco/iri/version/absentTaxa-2026-09-17</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Absent Taxa</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A taxon reported absent during an eco:Survey.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Absences can be reported at any taxonomic level. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
@@ -2294,52 +2294,6 @@ No properties are currently organized in this class.
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_assayType"></a>Term Name dwciri:assayType</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/assayType">http://rs.tdwg.org/dwc/iri/assayType</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2026-05-26</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/assayType-2026-05-26">http://rs.tdwg.org/dwc/iri/version/assayType-2026-05-26</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Assay Type (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>A type of method used in a study to detect taxon/taxa of interest in a dwc:MaterialEntity.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="dwc_assayType"></a>Term Name dwc:assayType</th>
 		</tr>
 	</thead>
@@ -2375,6 +2329,52 @@ No properties are currently organized in this class.
   <li class="list-group-item"><code>metabarcoding</code></li>
   <li class="list-group-item"><code>other</code></li>
 </ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_assayType"></a>Term Name dwciri:assayType</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/assayType">http://rs.tdwg.org/dwc/iri/assayType</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-05-26</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/assayType-2026-05-26">http://rs.tdwg.org/dwc/iri/version/assayType-2026-05-26</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Assay Type (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A type of method used in a study to detect taxon/taxa of interest in a dwc:MaterialEntity.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -3119,56 +3119,6 @@ No properties are currently organized in this class.
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_assertionValue"></a>Term Name dwciri:assertionValue</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/assertionValue">http://rs.tdwg.org/dwc/iri/assertionValue</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2026-05-26</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/assertionValue-2026-05-26">http://rs.tdwg.org/dwc/iri/version/assertionValue-2026-05-26</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Assertion Value (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>An asserted value.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>Examples</td>
-			<td><code><a href="http://vocab.nerc.ac.uk/collection/L22/current/TOOL0960/">http://vocab.nerc.ac.uk/collection/L22/current/TOOL0960/</a></code></td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="dwc_assertionValue"></a>Term Name dwc:assertionValue</th>
 		</tr>
 	</thead>
@@ -3211,6 +3161,56 @@ No properties are currently organized in this class.
 		<tr>
 			<td>ABCD equivalence</td>
 			<td>DataSets/DataSet/Units/Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised/UpperValue or DataSets/DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts/SiteMeasurementOrFact/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/Gathering/SiteMeasurementsOrFacts/SiteMeasurementOrFact/MeasurementOrFactAtomised/UpperValue or DataSets/DataSet/Units/Unit/Gathering/Altitude/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/Gathering/Altitude/MeasurementOrFactAtomised/UpperValue or DataSets/DataSet/Units/Unit/Gathering/Depth/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/Gathering/Depth/MeasurementOrFactAtomised/UpperValue or DataSets/DataSet/Units/Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFactAtomised/UpperValue or DataSets/DataSet/Units/Unit/Gathering/Height/MeasurementOrFactAtomised/LowerValue or DataSets/DataSet/Units/Unit/Gathering/Height/MeasurementOrFactAtomised/UpperValue</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_assertionValue"></a>Term Name dwciri:assertionValue</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/assertionValue">http://rs.tdwg.org/dwc/iri/assertionValue</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-05-26</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/assertionValue-2026-05-26">http://rs.tdwg.org/dwc/iri/version/assertionValue-2026-05-26</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Assertion Value (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>An asserted value.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><code><a href="http://vocab.nerc.ac.uk/collection/L22/current/TOOL0960/">http://vocab.nerc.ac.uk/collection/L22/current/TOOL0960/</a></code></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -3770,56 +3770,6 @@ No properties are currently organized in this class.
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_behavior"></a>Term Name dwciri:behavior</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/behavior">http://rs.tdwg.org/dwc/iri/behavior</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2026-05-26</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/behavior-2026-05-26">http://rs.tdwg.org/dwc/iri/version/behavior-2026-05-26</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Behavior (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>A behavior shown by a dwc:Organism.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="dwc_behavior"></a>Term Name dwc:behavior</th>
 		</tr>
 	</thead>
@@ -3863,6 +3813,56 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_behavior"></a>Term Name dwciri:behavior</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/behavior">http://rs.tdwg.org/dwc/iri/behavior</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-05-26</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/behavior-2026-05-26">http://rs.tdwg.org/dwc/iri/version/behavior-2026-05-26</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Behavior (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A behavior shown by a dwc:Organism.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
@@ -4527,64 +4527,6 @@ No properties are currently organized in this class.
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="chronoiri_chronometricAgeConversionProtocol"></a>Term Name chronoiri:chronometricAgeConversionProtocol</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/iri/chronometricAgeConversionProtocol">http://rs.tdwg.org/chrono/iri/chronometricAgeConversionProtocol</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2026-05-26</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/iri/version/chronometricAgeConversionProtocol-2026-05-26">http://rs.tdwg.org/chrono/iri/version/chronometricAgeConversionProtocol-2026-05-26</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Chronometric Age Conversion Protocol (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>The method used to convert the chrono:uncalibratedChronometricAge into a chronometric age in years, as captured in chrono:earliestChronometricAge, chrono:earliestChronometricAgeReferenceSystem, chrono:latestChronometricAge, and chrono:latestChronometricAgeReferenceSystem.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Terms in the chronoiri: namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2021-04-27_33">http://rs.tdwg.org/decisions/decision-2021-04-27_33</a></td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2025-06-12_45">http://rs.tdwg.org/decisions/decision-2025-06-12_45</a></td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_49">http://rs.tdwg.org/decisions/decision-2025-07-10_49</a></td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="chrono_chronometricAgeConversionProtocol"></a>Term Name chrono:chronometricAgeConversionProtocol</th>
 		</tr>
 	</thead>
@@ -4642,13 +4584,13 @@ No properties are currently organized in this class.
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="chronoiri_chronometricAgeDeterminedBy"></a>Term Name chronoiri:chronometricAgeDeterminedBy</th>
+			<th colspan="2"><a id="chronoiri_chronometricAgeConversionProtocol"></a>Term Name chronoiri:chronometricAgeConversionProtocol</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/iri/chronometricAgeDeterminedBy">http://rs.tdwg.org/chrono/iri/chronometricAgeDeterminedBy</a></td>
+			<td><a href="http://rs.tdwg.org/chrono/iri/chronometricAgeConversionProtocol">http://rs.tdwg.org/chrono/iri/chronometricAgeConversionProtocol</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -4656,15 +4598,15 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/iri/version/chronometricAgeDeterminedBy-2026-05-26">http://rs.tdwg.org/chrono/iri/version/chronometricAgeDeterminedBy-2026-05-26</a></td>
+			<td><a href="http://rs.tdwg.org/chrono/iri/version/chronometricAgeConversionProtocol-2026-05-26">http://rs.tdwg.org/chrono/iri/version/chronometricAgeConversionProtocol-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
-			<td>Chronometric Age Determined By (IRI)</td>
+			<td>Chronometric Age Conversion Protocol (IRI)</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>A person, group, or organization that determined the chrono:ChronometricAge.</td>
+			<td>The method used to convert the chrono:uncalibratedChronometricAge into a chronometric age in years, as captured in chrono:earliestChronometricAge, chrono:earliestChronometricAgeReferenceSystem, chrono:latestChronometricAge, and chrono:latestChronometricAgeReferenceSystem.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
@@ -4747,6 +4689,64 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2025-06-12_45">http://rs.tdwg.org/decisions/decision-2025-06-12_45</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="chronoiri_chronometricAgeDeterminedBy"></a>Term Name chronoiri:chronometricAgeDeterminedBy</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/chrono/iri/chronometricAgeDeterminedBy">http://rs.tdwg.org/chrono/iri/chronometricAgeDeterminedBy</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-05-26</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/chrono/iri/version/chronometricAgeDeterminedBy-2026-05-26">http://rs.tdwg.org/chrono/iri/version/chronometricAgeDeterminedBy-2026-05-26</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Chronometric Age Determined By (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A person, group, or organization that determined the chrono:ChronometricAge.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Terms in the chronoiri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2021-04-27_33">http://rs.tdwg.org/decisions/decision-2021-04-27_33</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-06-12_45">http://rs.tdwg.org/decisions/decision-2025-06-12_45</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_49">http://rs.tdwg.org/decisions/decision-2025-07-10_49</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -8465,52 +8465,6 @@ No properties are currently organized in this class.
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_eventCategory"></a>Term Name dwciri:eventCategory</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/eventCategory">http://rs.tdwg.org/dwc/iri/eventCategory</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2026-05-26</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/eventCategory-2026-05-26">http://rs.tdwg.org/dwc/iri/version/eventCategory-2026-05-26</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Event Category (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>A broad category that best matches the nature of a dwc:Event.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Recommended best practice is to use a limited, tightly controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="dwc_eventCategory"></a>Term Name dwc:eventCategory</th>
 		</tr>
 	</thead>
@@ -8548,6 +8502,52 @@ No properties are currently organized in this class.
   <li class="list-group-item"><code>OrganismInteraction</code></li>
   <li class="list-group-item"><code>Survey</code></li>
 </ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_eventCategory"></a>Term Name dwciri:eventCategory</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/eventCategory">http://rs.tdwg.org/dwc/iri/eventCategory</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-05-26</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/eventCategory-2026-05-26">http://rs.tdwg.org/dwc/iri/version/eventCategory-2026-05-26</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Event Category (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A broad category that best matches the nature of a dwc:Event.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a limited, tightly controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -8631,52 +8631,6 @@ No properties are currently organized in this class.
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ecoiri_eventDurationUnit"></a>Term Name ecoiri:eventDurationUnit</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/eventDurationUnit">http://rs.tdwg.org/eco/iri/eventDurationUnit</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2024-03-26</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/version/eventDurationUnit-2024-03-26">http://rs.tdwg.org/eco/iri/version/eventDurationUnit-2024-03-26</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Event Duration Unit (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>The units associated with the eco:eventDurationValue.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Recommended best practice is to use an IRI from a controlled vocabulary of SI units, derived units, or other non-SI units accepted for use within the SI.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="eco_eventDurationUnit"></a>Term Name eco:eventDurationUnit</th>
 		</tr>
 	</thead>
@@ -8734,6 +8688,52 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="ecoiri_eventDurationUnit"></a>Term Name ecoiri:eventDurationUnit</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/iri/eventDurationUnit">http://rs.tdwg.org/eco/iri/eventDurationUnit</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2024-03-26</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/eventDurationUnit-2024-03-26">http://rs.tdwg.org/eco/iri/version/eventDurationUnit-2024-03-26</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Event Duration Unit (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The units associated with the eco:eventDurationValue.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use an IRI from a controlled vocabulary of SI units, derived units, or other non-SI units accepted for use within the SI.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -9457,67 +9457,6 @@ No properties are currently organized in this class.
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ecoiri_excludedDegreeOfEstablishmentScope"></a>Term Name ecoiri:excludedDegreeOfEstablishmentScope</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/excludedDegreeOfEstablishmentScope">http://rs.tdwg.org/eco/iri/excludedDegreeOfEstablishmentScope</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2026-09-17</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/version/excludedDegreeOfEstablishmentScope-2026-09-17">http://rs.tdwg.org/eco/iri/version/excludedDegreeOfEstablishmentScope-2026-09-17</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Excluded Degree of Establishment Scope</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>The degree of establishment of the dwc:Organisms explicitly excluded from sampling during an eco:Survey.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Recommended best practice is to use an IRI from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/doe/">http://rs.tdwg.org/dwc/doc/doe/</a>. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a> . Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>Examples</td>
-			<td><ul class="list-group list-group-flush">
-  <li class="list-group-item"><code><a href="http://rs.tdwg.org/dwcem/values/e001">http://rs.tdwg.org/dwcem/values/e001</a></code></li>
-  <li class="list-group-item"><code><a href="http://rs.tdwg.org/dwcem/values/e005">http://rs.tdwg.org/dwcem/values/e005</a></code></li>
-</ul></td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-09-17_62">http://rs.tdwg.org/decisions/decision-2026-09-17_62</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="eco_excludedDegreeOfEstablishmentScope"></a>Term Name eco:excludedDegreeOfEstablishmentScope</th>
 		</tr>
 	</thead>
@@ -9564,6 +9503,67 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-09-17_62">http://rs.tdwg.org/decisions/decision-2026-09-17_62</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="ecoiri_excludedDegreeOfEstablishmentScope"></a>Term Name ecoiri:excludedDegreeOfEstablishmentScope</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/iri/excludedDegreeOfEstablishmentScope">http://rs.tdwg.org/eco/iri/excludedDegreeOfEstablishmentScope</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-09-17</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/excludedDegreeOfEstablishmentScope-2026-09-17">http://rs.tdwg.org/eco/iri/version/excludedDegreeOfEstablishmentScope-2026-09-17</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Excluded Degree of Establishment Scope</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The degree of establishment of the dwc:Organisms explicitly excluded from sampling during an eco:Survey.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use an IRI from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/doe/">http://rs.tdwg.org/dwc/doc/doe/</a>. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a> . Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code><a href="http://rs.tdwg.org/dwcem/values/e001">http://rs.tdwg.org/dwcem/values/e001</a></code></li>
+  <li class="list-group-item"><code><a href="http://rs.tdwg.org/dwcem/values/e005">http://rs.tdwg.org/dwcem/values/e005</a></code></li>
+</ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
@@ -9702,60 +9702,6 @@ No properties are currently organized in this class.
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ecoiri_excludedHabitatScope"></a>Term Name ecoiri:excludedHabitatScope</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/excludedHabitatScope">http://rs.tdwg.org/eco/iri/excludedHabitatScope</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2026-09-17</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/version/excludedHabitatScope-2026-09-17">http://rs.tdwg.org/eco/iri/version/excludedHabitatScope-2026-09-17</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Excluded Habitat Scope</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>The habitat explicitly excluded from sampling during an eco:Survey.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-09-17_62">http://rs.tdwg.org/decisions/decision-2026-09-17_62</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="eco_excludedHabitatScope"></a>Term Name eco:excludedHabitatScope</th>
 		</tr>
 	</thead>
@@ -9821,13 +9767,13 @@ No properties are currently organized in this class.
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ecoiri_excludedLifeStageScope"></a>Term Name ecoiri:excludedLifeStageScope</th>
+			<th colspan="2"><a id="ecoiri_excludedHabitatScope"></a>Term Name ecoiri:excludedHabitatScope</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/excludedLifeStageScope">http://rs.tdwg.org/eco/iri/excludedLifeStageScope</a></td>
+			<td><a href="http://rs.tdwg.org/eco/iri/excludedHabitatScope">http://rs.tdwg.org/eco/iri/excludedHabitatScope</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -9835,19 +9781,19 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/version/excludedLifeStageScope-2026-09-17">http://rs.tdwg.org/eco/iri/version/excludedLifeStageScope-2026-09-17</a></td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/excludedHabitatScope-2026-09-17">http://rs.tdwg.org/eco/iri/version/excludedHabitatScope-2026-09-17</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
-			<td>Excluded Life Stage Scope</td>
+			<td>Excluded Habitat Scope</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The age class or life stage of the dwc:Organisms explicitly excluded from sampling during an eco:Survey.</td>
+			<td>The habitat explicitly excluded from sampling during an eco:Survey.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>This term is defined based on dwciri:lifeStage (<a href="http://rs.tdwg.org/dwc/terms/iri/lifeStage">http://rs.tdwg.org/dwc/terms/iri/lifeStage</a>). Recommended best practice is to use an IRI from the same controlled vocabulary as for dwciri:lifeStage. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
+			<td>Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -9940,13 +9886,13 @@ No properties are currently organized in this class.
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ecoiri_excludedTaxonomicScope"></a>Term Name ecoiri:excludedTaxonomicScope</th>
+			<th colspan="2"><a id="ecoiri_excludedLifeStageScope"></a>Term Name ecoiri:excludedLifeStageScope</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/excludedTaxonomicScope">http://rs.tdwg.org/eco/iri/excludedTaxonomicScope</a></td>
+			<td><a href="http://rs.tdwg.org/eco/iri/excludedLifeStageScope">http://rs.tdwg.org/eco/iri/excludedLifeStageScope</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -9954,19 +9900,19 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/version/excludedTaxonomicScope-2026-09-17">http://rs.tdwg.org/eco/iri/version/excludedTaxonomicScope-2026-09-17</a></td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/excludedLifeStageScope-2026-09-17">http://rs.tdwg.org/eco/iri/version/excludedLifeStageScope-2026-09-17</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
-			<td>Excluded Taxonomic Scope</td>
+			<td>Excluded Life Stage Scope</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The taxonomic group explicitly excluded from sampling during an eco:Survey.</td>
+			<td>The age class or life stage of the dwc:Organisms explicitly excluded from sampling during an eco:Survey.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>The eco:Survey to which the ecoiri:excludedTaxonomicScope refers could be at any level of hierarchy. In the case of a higher level (parent) eco:Survey, include all the taxonomic groups explicitly excluded from the child eco:Surveys that contributed to the parent eco:Survey. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
+			<td>This term is defined based on dwciri:lifeStage (<a href="http://rs.tdwg.org/dwc/terms/iri/lifeStage">http://rs.tdwg.org/dwc/terms/iri/lifeStage</a>). Recommended best practice is to use an IRI from the same controlled vocabulary as for dwciri:lifeStage. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -10040,6 +9986,60 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-09-17_62">http://rs.tdwg.org/decisions/decision-2026-09-17_62</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="ecoiri_excludedTaxonomicScope"></a>Term Name ecoiri:excludedTaxonomicScope</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/iri/excludedTaxonomicScope">http://rs.tdwg.org/eco/iri/excludedTaxonomicScope</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-09-17</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/excludedTaxonomicScope-2026-09-17">http://rs.tdwg.org/eco/iri/version/excludedTaxonomicScope-2026-09-17</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Excluded Taxonomic Scope</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The taxonomic group explicitly excluded from sampling during an eco:Survey.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>The eco:Survey to which the ecoiri:excludedTaxonomicScope refers could be at any level of hierarchy. In the case of a higher level (parent) eco:Survey, include all the taxonomic groups explicitly excluded from the child eco:Surveys that contributed to the parent eco:Survey. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
@@ -10242,52 +10242,6 @@ No properties are currently organized in this class.
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_fieldNumber"></a>Term Name dwciri:fieldNumber</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/fieldNumber">http://rs.tdwg.org/dwc/iri/fieldNumber</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2026-05-26</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/fieldNumber-2026-05-26">http://rs.tdwg.org/dwc/iri/version/fieldNumber-2026-05-26</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Field Number (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>An identifier given to a dwc:Event in the field.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Often serves as a link between field notes and a dwc:Event. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="dwc_fieldNumber"></a>Term Name dwc:fieldNumber</th>
 		</tr>
 	</thead>
@@ -10323,6 +10277,52 @@ No properties are currently organized in this class.
 		<tr>
 			<td>ABCD equivalence</td>
 			<td>DataSets/DataSet/Units/Unit/Gathering/Code</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_fieldNumber"></a>Term Name dwciri:fieldNumber</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/fieldNumber">http://rs.tdwg.org/dwc/iri/fieldNumber</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-05-26</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/fieldNumber-2026-05-26">http://rs.tdwg.org/dwc/iri/version/fieldNumber-2026-05-26</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Field Number (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>An identifier given to a dwc:Event in the field.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Often serves as a link between field notes and a dwc:Event. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -10504,52 +10504,6 @@ No properties are currently organized in this class.
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_footprintWKT"></a>Term Name dwciri:footprintWKT</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/footprintWKT">http://rs.tdwg.org/dwc/iri/footprintWKT</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2025-07-10</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/footprintWKT-2025-07-10">http://rs.tdwg.org/dwc/iri/version/footprintWKT-2025-07-10</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Footprint WKT (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>A Well-Known Text (WKT) representation of the shape (footprint, geometry) that defines the dcterms:Location. A dcterms:Location may have both a point-radius representation (see dwc:decimalLatitude) and a footprint representation, and they may differ from each other.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="dwc_footprintWKT"></a>Term Name dwc:footprintWKT</th>
 		</tr>
 	</thead>
@@ -10593,6 +10547,52 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_footprintWKT"></a>Term Name dwciri:footprintWKT</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/footprintWKT">http://rs.tdwg.org/dwc/iri/footprintWKT</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2025-07-10</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/footprintWKT-2025-07-10">http://rs.tdwg.org/dwc/iri/version/footprintWKT-2025-07-10</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Footprint WKT (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A Well-Known Text (WKT) representation of the shape (footprint, geometry) that defines the dcterms:Location. A dcterms:Location may have both a point-radius representation (see dwc:decimalLatitude) and a footprint representation, and they may differ from each other.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -11440,52 +11440,6 @@ No properties are currently organized in this class.
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_geologicEvent"></a>Term Name dwciri:geologicEvent</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/geologicEvent">http://rs.tdwg.org/dwc/iri/geologicEvent</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2026-09-17</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/geologicEvent-2026-09-17">http://rs.tdwg.org/dwc/iri/version/geologicEvent-2026-09-17</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Geologic Event (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>A name of an identifiable event during which one or more geologic processes acted to create or modify one or more dwc:GeologicalMaterials. </td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-09-17_62">http://rs.tdwg.org/decisions/decision-2026-09-17_62</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="dwc_geologicEvent"></a>Term Name dwc:geologicEvent</th>
 		</tr>
 	</thead>
@@ -11523,6 +11477,52 @@ No properties are currently organized in this class.
   <li class="list-group-item"><code>Variscan orogeny</code></li>
   <li class="list-group-item"><code>Vredefort impact</code></li>
 </ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-09-17_62">http://rs.tdwg.org/decisions/decision-2026-09-17_62</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_geologicEvent"></a>Term Name dwciri:geologicEvent</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/geologicEvent">http://rs.tdwg.org/dwc/iri/geologicEvent</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-09-17</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/geologicEvent-2026-09-17">http://rs.tdwg.org/dwc/iri/version/geologicEvent-2026-09-17</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Geologic Event (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A name of an identifiable event during which one or more geologic processes acted to create or modify one or more dwc:GeologicalMaterials. </td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -11592,52 +11592,6 @@ No properties are currently organized in this class.
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_geologicProvince"></a>Term Name dwciri:geologicProvince</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/geologicProvince">http://rs.tdwg.org/dwc/iri/geologicProvince</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2026-09-17</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/geologicProvince-2026-09-17">http://rs.tdwg.org/dwc/iri/version/geologicProvince-2026-09-17</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Geologic Province (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>An extensive named region with similar geologic history, structural, petrographic, or physiographic features throughout in which the GeologicalContext was located.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-09-17_62">http://rs.tdwg.org/decisions/decision-2026-09-17_62</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="dwc_geologicProvince"></a>Term Name dwc:geologicProvince</th>
 		</tr>
 	</thead>
@@ -11675,6 +11629,52 @@ No properties are currently organized in this class.
   <li class="list-group-item"><code>Piedmont</code></li>
   <li class="list-group-item"><code>Blue Ridge</code></li>
 </ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-09-17_62">http://rs.tdwg.org/decisions/decision-2026-09-17_62</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_geologicProvince"></a>Term Name dwciri:geologicProvince</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/geologicProvince">http://rs.tdwg.org/dwc/iri/geologicProvince</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-09-17</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/geologicProvince-2026-09-17">http://rs.tdwg.org/dwc/iri/version/geologicProvince-2026-09-17</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Geologic Province (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>An extensive named region with similar geologic history, structural, petrographic, or physiographic features throughout in which the GeologicalContext was located.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -11865,56 +11865,6 @@ No properties are currently organized in this class.
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_georeferenceProtocol"></a>Term Name dwciri:georeferenceProtocol</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/georeferenceProtocol">http://rs.tdwg.org/dwc/iri/georeferenceProtocol</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2026-05-26</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/georeferenceProtocol-2026-05-26">http://rs.tdwg.org/dwc/iri/version/georeferenceProtocol-2026-05-26</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Georeference Protocol (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>A description or reference to a dwc:Protocol used to determine a spatial footprint, coordinates, and uncertainties.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="dwc_georeferenceProtocol"></a>Term Name dwc:georeferenceProtocol</th>
 		</tr>
 	</thead>
@@ -11954,6 +11904,56 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_georeferenceProtocol"></a>Term Name dwciri:georeferenceProtocol</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/georeferenceProtocol">http://rs.tdwg.org/dwc/iri/georeferenceProtocol</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-05-26</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/georeferenceProtocol-2026-05-26">http://rs.tdwg.org/dwc/iri/version/georeferenceProtocol-2026-05-26</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Georeference Protocol (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A description or reference to a dwc:Protocol used to determine a spatial footprint, coordinates, and uncertainties.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
@@ -12011,56 +12011,6 @@ No properties are currently organized in this class.
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_georeferenceSources"></a>Term Name dwciri:georeferenceSources</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/georeferenceSources">http://rs.tdwg.org/dwc/iri/georeferenceSources</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2026-05-26</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/georeferenceSources-2026-05-26">http://rs.tdwg.org/dwc/iri/version/georeferenceSources-2026-05-26</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Georeference Sources (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>An IRI for a map, gazetteer, or other resource used to georeference a dcterms:Location.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Recommended best practice is describe a georeference with no more than one sampled georeference source. In the case of a georeference that cannot be attributed to a specific source, the recommended best practice is to repeat the property for each IRI that denotes a different source that applies to the georeference. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="dwc_georeferenceSources"></a>Term Name dwc:georeferenceSources</th>
 		</tr>
 	</thead>
@@ -12109,6 +12059,56 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2014-10-30_16">http://rs.tdwg.org/decisions/decision-2014-10-30_16</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_georeferenceSources"></a>Term Name dwciri:georeferenceSources</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/georeferenceSources">http://rs.tdwg.org/dwc/iri/georeferenceSources</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-05-26</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/georeferenceSources-2026-05-26">http://rs.tdwg.org/dwc/iri/version/georeferenceSources-2026-05-26</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Georeference Sources (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>An IRI for a map, gazetteer, or other resource used to georeference a dcterms:Location.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is describe a georeference with no more than one sampled georeference source. In the case of a georeference that cannot be attributed to a specific source, the recommended best practice is to repeat the property for each IRI that denotes a different source that applies to the georeference. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
@@ -13576,52 +13576,6 @@ No properties are currently organized in this class.
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_identificationQualifier"></a>Term Name dwciri:identificationQualifier</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/identificationQualifier">http://rs.tdwg.org/dwc/iri/identificationQualifier</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2025-07-10</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/identificationQualifier-2025-07-10">http://rs.tdwg.org/dwc/iri/version/identificationQualifier-2025-07-10</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Identification Qualifier (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>A controlled value to express the determiner's doubts about the dwc:Identification.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="dwc_identificationQualifier"></a>Term Name dwc:identificationQualifier</th>
 		</tr>
 	</thead>
@@ -13668,6 +13622,52 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2019-12-01_19">http://rs.tdwg.org/decisions/decision-2019-12-01_19</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_identificationQualifier"></a>Term Name dwciri:identificationQualifier</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/identificationQualifier">http://rs.tdwg.org/dwc/iri/identificationQualifier</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2025-07-10</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/identificationQualifier-2025-07-10">http://rs.tdwg.org/dwc/iri/version/identificationQualifier-2025-07-10</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Identification Qualifier (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A controlled value to express the determiner's doubts about the dwc:Identification.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -13885,60 +13885,6 @@ No properties are currently organized in this class.
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_identificationVerificationStatus"></a>Term Name dwciri:identificationVerificationStatus</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/identificationVerificationStatus">http://rs.tdwg.org/dwc/iri/identificationVerificationStatus</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2026-09-17</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/identificationVerificationStatus-2026-09-17">http://rs.tdwg.org/dwc/iri/version/identificationVerificationStatus-2026-09-17</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Identification Verification Status (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>A categorical indicator of the extent to which a dwc:Identification has been verified to be correct.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Recommended best practice is to use a controlled vocabulary such as that used in HISPID and ABCD. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-09-17_62">http://rs.tdwg.org/decisions/decision-2026-09-17_62</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="dwc_identificationVerificationStatus"></a>Term Name dwc:identificationVerificationStatus</th>
 		</tr>
 	</thead>
@@ -13982,6 +13928,60 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2011-10-16_10">http://rs.tdwg.org/decisions/decision-2011-10-16_10</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-09-17_62">http://rs.tdwg.org/decisions/decision-2026-09-17_62</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_identificationVerificationStatus"></a>Term Name dwciri:identificationVerificationStatus</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/identificationVerificationStatus">http://rs.tdwg.org/dwc/iri/identificationVerificationStatus</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-09-17</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/identificationVerificationStatus-2026-09-17">http://rs.tdwg.org/dwc/iri/version/identificationVerificationStatus-2026-09-17</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Identification Verification Status (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A categorical indicator of the extent to which a dwc:Identification has been verified to be correct.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a controlled vocabulary such as that used in HISPID and ABCD. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
@@ -14795,60 +14795,6 @@ No properties are currently organized in this class.
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ecoiri_inventoryTypes"></a>Term Name ecoiri:inventoryTypes</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/inventoryTypes">http://rs.tdwg.org/eco/iri/inventoryTypes</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2026-09-17</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/version/inventoryTypes-2026-09-17">http://rs.tdwg.org/eco/iri/version/inventoryTypes-2026-09-17</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Inventory Types</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>The type of search process used to conduct an eco:Survey.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>This term is only relevant if the eco:Survey represents an inventory. Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-09-17_62">http://rs.tdwg.org/decisions/decision-2026-09-17_62</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="eco_inventoryTypes"></a>Term Name eco:inventoryTypes</th>
 		</tr>
 	</thead>
@@ -14897,6 +14843,60 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-09-17_62">http://rs.tdwg.org/decisions/decision-2026-09-17_62</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="ecoiri_inventoryTypes"></a>Term Name ecoiri:inventoryTypes</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/iri/inventoryTypes">http://rs.tdwg.org/eco/iri/inventoryTypes</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-09-17</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/inventoryTypes-2026-09-17">http://rs.tdwg.org/eco/iri/version/inventoryTypes-2026-09-17</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Inventory Types</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The type of search process used to conduct an eco:Survey.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>This term is only relevant if the eco:Survey represents an inventory. Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
@@ -16507,56 +16507,6 @@ No properties are currently organized in this class.
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_lifeStage"></a>Term Name dwciri:lifeStage</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/lifeStage">http://rs.tdwg.org/dwc/iri/lifeStage</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2026-05-26</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/lifeStage-2026-05-26">http://rs.tdwg.org/dwc/iri/version/lifeStage-2026-05-26</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Life Stage (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>An age class or life stage of a dwc:Organism.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="dwc_lifeStage"></a>Term Name dwc:lifeStage</th>
 		</tr>
 	</thead>
@@ -16612,6 +16562,56 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-02-24_55">http://rs.tdwg.org/decisions/decision-2026-02-24_55</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_lifeStage"></a>Term Name dwciri:lifeStage</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/lifeStage">http://rs.tdwg.org/dwc/iri/lifeStage</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-05-26</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/lifeStage-2026-05-26">http://rs.tdwg.org/dwc/iri/version/lifeStage-2026-05-26</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Life Stage (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>An age class or life stage of a dwc:Organism.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
@@ -17255,64 +17255,6 @@ No properties are currently organized in this class.
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="chronoiri_materialDated"></a>Term Name chronoiri:materialDated</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/iri/materialDated">http://rs.tdwg.org/chrono/iri/materialDated</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2026-05-26</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/iri/version/materialDated-2026-05-26">http://rs.tdwg.org/chrono/iri/version/materialDated-2026-05-26</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Material Dated (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>The material on which the chrono:chronometricAgeProtocol was actually performed.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Terms in the chronoiri: namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2021-04-27_33">http://rs.tdwg.org/decisions/decision-2021-04-27_33</a></td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2025-06-12_45">http://rs.tdwg.org/decisions/decision-2025-06-12_45</a></td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_49">http://rs.tdwg.org/decisions/decision-2025-07-10_49</a></td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="chrono_materialDated"></a>Term Name chrono:materialDated</th>
 		</tr>
 	</thead>
@@ -17365,6 +17307,64 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2025-06-12_45">http://rs.tdwg.org/decisions/decision-2025-06-12_45</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="chronoiri_materialDated"></a>Term Name chronoiri:materialDated</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/chrono/iri/materialDated">http://rs.tdwg.org/chrono/iri/materialDated</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-05-26</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/chrono/iri/version/materialDated-2026-05-26">http://rs.tdwg.org/chrono/iri/version/materialDated-2026-05-26</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Material Dated (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The material on which the chrono:chronometricAgeProtocol was actually performed.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Terms in the chronoiri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2021-04-27_33">http://rs.tdwg.org/decisions/decision-2021-04-27_33</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-06-12_45">http://rs.tdwg.org/decisions/decision-2025-06-12_45</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_49">http://rs.tdwg.org/decisions/decision-2025-07-10_49</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_60">http://rs.tdwg.org/decisions/decision-2026-05-26_60</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -17893,52 +17893,6 @@ No properties are currently organized in this class.
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_materialProportion"></a>Term Name dwciri:materialProportion</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/materialProportion">http://rs.tdwg.org/dwc/iri/materialProportion</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2026-09-17</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/materialProportion-2026-09-17">http://rs.tdwg.org/dwc/iri/version/materialProportion-2026-09-17</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Material Proportion (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>The qualitative or quantitative abundance of a dwc:MaterialEntity with respect to another dwc:MaterialEntity of which it is a part.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Recommended best practice is to use a controlled vocabulary such as <a href="http://resource.geosciml.org/classifier/cgi/proportionterm">http://resource.geosciml.org/classifier/cgi/proportionterm</a>. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-09-17_62">http://rs.tdwg.org/decisions/decision-2026-09-17_62</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="dwc_materialProportion"></a>Term Name dwc:materialProportion</th>
 		</tr>
 	</thead>
@@ -17974,6 +17928,52 @@ No properties are currently organized in this class.
   <li class="list-group-item"><code>minor</code></li>
   <li class="list-group-item"> <code>dominant</code></li>
 </ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-09-17_62">http://rs.tdwg.org/decisions/decision-2026-09-17_62</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_materialProportion"></a>Term Name dwciri:materialProportion</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/materialProportion">http://rs.tdwg.org/dwc/iri/materialProportion</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-09-17</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/materialProportion-2026-09-17">http://rs.tdwg.org/dwc/iri/version/materialProportion-2026-09-17</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Material Proportion (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The qualitative or quantitative abundance of a dwc:MaterialEntity with respect to another dwc:MaterialEntity of which it is a part.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a controlled vocabulary such as <a href="http://resource.geosciml.org/classifier/cgi/proportionterm">http://resource.geosciml.org/classifier/cgi/proportionterm</a>. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -18212,60 +18212,6 @@ No properties are currently organized in this class.
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ecoiri_materialSampleTypes"></a>Term Name ecoiri:materialSampleTypes</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/materialSampleTypes">http://rs.tdwg.org/eco/iri/materialSampleTypes</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2026-09-17</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/version/materialSampleTypes-2026-09-17">http://rs.tdwg.org/eco/iri/version/materialSampleTypes-2026-09-17</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Material Sample Types</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>A material sample type collected during the eco:Survey.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-09-17_62">http://rs.tdwg.org/decisions/decision-2026-09-17_62</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="eco_materialSampleTypes"></a>Term Name eco:materialSampleTypes</th>
 		</tr>
 	</thead>
@@ -18313,6 +18259,60 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-09-17_62">http://rs.tdwg.org/decisions/decision-2026-09-17_62</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="ecoiri_materialSampleTypes"></a>Term Name ecoiri:materialSampleTypes</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/iri/materialSampleTypes">http://rs.tdwg.org/eco/iri/materialSampleTypes</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-09-17</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/materialSampleTypes-2026-09-17">http://rs.tdwg.org/eco/iri/version/materialSampleTypes-2026-09-17</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Material Sample Types</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A material sample type collected during the eco:Survey.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
@@ -19036,52 +19036,6 @@ No properties are currently organized in this class.
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_measurementMethod"></a>Term Name dwciri:measurementMethod</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/measurementMethod">http://rs.tdwg.org/dwc/iri/measurementMethod</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2025-07-10</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/measurementMethod-2025-07-10">http://rs.tdwg.org/dwc/iri/version/measurementMethod-2025-07-10</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Measurement Method (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>The method or protocol used to determine the measurement, fact, characteristic, or assertion.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="dwc_measurementMethod"></a>Term Name dwc:measurementMethod</th>
 		</tr>
 	</thead>
@@ -19128,6 +19082,52 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_43">http://rs.tdwg.org/decisions/decision-2024-02-28_43</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_measurementMethod"></a>Term Name dwciri:measurementMethod</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/measurementMethod">http://rs.tdwg.org/dwc/iri/measurementMethod</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2025-07-10</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/measurementMethod-2025-07-10">http://rs.tdwg.org/dwc/iri/version/measurementMethod-2025-07-10</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Measurement Method (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The method or protocol used to determine the measurement, fact, characteristic, or assertion.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -19442,60 +19442,6 @@ No properties are currently organized in this class.
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_measurementValue"></a>Term Name dwciri:measurementValue</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/measurementValue">http://rs.tdwg.org/dwc/iri/measurementValue</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2025-07-10</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/measurementValue-2025-07-10">http://rs.tdwg.org/dwc/iri/version/measurementValue-2025-07-10</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Measurement Value (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>The value of the measurement, fact, characteristic, or assertion.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>Examples</td>
-			<td><code><a href="http://vocab.nerc.ac.uk/collection/L22/current/TOOL0960/">http://vocab.nerc.ac.uk/collection/L22/current/TOOL0960/</a></code></td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2021-07-15_34">http://rs.tdwg.org/decisions/decision-2021-07-15_34</a></td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="dwc_measurementValue"></a>Term Name dwc:measurementValue</th>
 		</tr>
 	</thead>
@@ -19545,6 +19491,60 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_43">http://rs.tdwg.org/decisions/decision-2024-02-28_43</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_measurementValue"></a>Term Name dwciri:measurementValue</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/measurementValue">http://rs.tdwg.org/dwc/iri/measurementValue</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2025-07-10</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/measurementValue-2025-07-10">http://rs.tdwg.org/dwc/iri/version/measurementValue-2025-07-10</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Measurement Value (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The value of the measurement, fact, characteristic, or assertion.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><code><a href="http://vocab.nerc.ac.uk/collection/L22/current/TOOL0960/">http://vocab.nerc.ac.uk/collection/L22/current/TOOL0960/</a></code></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2021-07-15_34">http://rs.tdwg.org/decisions/decision-2021-07-15_34</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -22550,48 +22550,6 @@ No properties are currently organized in this class.
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_organismQuantityType"></a>Term Name dwciri:organismQuantityType</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/organismQuantityType">http://rs.tdwg.org/dwc/iri/organismQuantityType</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2015-03-27</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/organismQuantityType-2015-03-27">http://rs.tdwg.org/dwc/iri/version/organismQuantityType-2015-03-27</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Organism Quantity Type (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>The type of quantification system used for the quantity of organisms.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>A dwc:organismQuantityType must have a corresponding dwc:organismQuantity.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="dwc_organismQuantityType"></a>Term Name dwc:organismQuantityType</th>
 		</tr>
 	</thead>
@@ -22647,6 +22605,48 @@ No properties are currently organized in this class.
 <table>
 	<thead>
 		<tr>
+			<th colspan="2"><a id="dwciri_organismQuantityType"></a>Term Name dwciri:organismQuantityType</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/organismQuantityType">http://rs.tdwg.org/dwc/iri/organismQuantityType</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2015-03-27</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/organismQuantityType-2015-03-27">http://rs.tdwg.org/dwc/iri/version/organismQuantityType-2015-03-27</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Organism Quantity Type (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The type of quantification system used for the quantity of organisms.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>A dwc:organismQuantityType must have a corresponding dwc:organismQuantity.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
 			<th colspan="2"><a id="dwc_organismRemarks"></a>Term Name dwc:organismRemarks</th>
 		</tr>
 	</thead>
@@ -22686,56 +22686,6 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2014-10-26_14">http://rs.tdwg.org/decisions/decision-2014-10-26_14</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
-			<th colspan="2"><a id="dwciri_organismScope"></a>Term Name dwciri:organismScope</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/organismScope">http://rs.tdwg.org/dwc/iri/organismScope</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2026-09-17</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/organismScope-2026-09-17">http://rs.tdwg.org/dwc/iri/version/organismScope-2026-09-17</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Organism Scope (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>A description of the kind of dwc:Organism instance. Can be used to indicate whether the dwc:Organism instance represents a discrete organism or if it represents a particular type of aggregation.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-09-17_62">http://rs.tdwg.org/decisions/decision-2026-09-17_62</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -22792,6 +22742,56 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2014-10-26_14">http://rs.tdwg.org/decisions/decision-2014-10-26_14</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-09-17_62">http://rs.tdwg.org/decisions/decision-2026-09-17_62</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_organismScope"></a>Term Name dwciri:organismScope</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/organismScope">http://rs.tdwg.org/dwc/iri/organismScope</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-09-17</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/organismScope-2026-09-17">http://rs.tdwg.org/dwc/iri/version/organismScope-2026-09-17</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Organism Scope (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A description of the kind of dwc:Organism instance. Can be used to indicate whether the dwc:Organism instance represents a discrete organism or if it represents a particular type of aggregation.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
@@ -23214,6 +23214,59 @@ No properties are currently organized in this class.
 <table>
 	<thead>
 		<tr>
+			<th colspan="2"><a id="dwc_pathway"></a>Term Name dwc:pathway</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/pathway">http://rs.tdwg.org/dwc/terms/pathway</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2023-06-28</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/pathway-2023-06-28">http://rs.tdwg.org/dwc/terms/version/pathway-2023-06-28</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Pathway</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The process by which a dwc:Organism came to be in a given place at a given time.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use controlled value strings from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/pw/">http://rs.tdwg.org/dwc/doc/pw/</a>. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a>. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>releasedForUse</code></li>
+  <li class="list-group-item"><code>otherEscape</code></li>
+  <li class="list-group-item"><code>transportContaminant</code></li>
+  <li class="list-group-item"><code>transportStowaway</code></li>
+  <li class="list-group-item"><code>corridor</code></li>
+  <li class="list-group-item"><code>unaided</code></li>
+</ul></td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2020-10-13_23">http://rs.tdwg.org/decisions/decision-2020-10-13_23</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
 			<th colspan="2"><a id="dwciri_pathway"></a>Term Name dwciri:pathway</th>
 		</tr>
 	</thead>
@@ -23264,59 +23317,6 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
-			<th colspan="2"><a id="dwc_pathway"></a>Term Name dwc:pathway</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/pathway">http://rs.tdwg.org/dwc/terms/pathway</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2023-06-28</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/pathway-2023-06-28">http://rs.tdwg.org/dwc/terms/version/pathway-2023-06-28</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Pathway</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>The process by which a dwc:Organism came to be in a given place at a given time.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Recommended best practice is to use controlled value strings from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/pw/">http://rs.tdwg.org/dwc/doc/pw/</a>. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a>. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
-		</tr>
-		<tr>
-			<td>Examples</td>
-			<td><ul class="list-group list-group-flush">
-  <li class="list-group-item"><code>releasedForUse</code></li>
-  <li class="list-group-item"><code>otherEscape</code></li>
-  <li class="list-group-item"><code>transportContaminant</code></li>
-  <li class="list-group-item"><code>transportStowaway</code></li>
-  <li class="list-group-item"><code>corridor</code></li>
-  <li class="list-group-item"><code>unaided</code></li>
-</ul></td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2020-10-13_23">http://rs.tdwg.org/decisions/decision-2020-10-13_23</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -23427,52 +23427,6 @@ No properties are currently organized in this class.
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_preferredSpatialRepresentation"></a>Term Name dwciri:preferredSpatialRepresentation</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/preferredSpatialRepresentation">http://rs.tdwg.org/dwc/iri/preferredSpatialRepresentation</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2026-05-26</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/preferredSpatialRepresentation-2026-05-26">http://rs.tdwg.org/dwc/iri/version/preferredSpatialRepresentation-2026-05-26</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Preferred Spatial Representation (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>An indication of which spatial representation best represents the dcterms:Location.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="dwc_preferredSpatialRepresentation"></a>Term Name dwc:preferredSpatialRepresentation</th>
 		</tr>
 	</thead>
@@ -23503,6 +23457,52 @@ No properties are currently organized in this class.
   <li class="list-group-item"><code>point-radius</code></li>
   <li class="list-group-item"><code>footprint</code></li>
 </ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_preferredSpatialRepresentation"></a>Term Name dwciri:preferredSpatialRepresentation</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/preferredSpatialRepresentation">http://rs.tdwg.org/dwc/iri/preferredSpatialRepresentation</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-05-26</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/preferredSpatialRepresentation-2026-05-26">http://rs.tdwg.org/dwc/iri/version/preferredSpatialRepresentation-2026-05-26</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Preferred Spatial Representation (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>An indication of which spatial representation best represents the dcterms:Location.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -23690,6 +23690,52 @@ No properties are currently organized in this class.
 <table>
 	<thead>
 		<tr>
+			<th colspan="2"><a id="dwc_PreviousIdentifications"></a>Term Name dwc:PreviousIdentifications</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/PreviousIdentifications">http://rs.tdwg.org/dwc/terms/PreviousIdentifications</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2009-04-24</td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Previous Identifications</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><strong>This term is deprecated and should no longer be used.</strong></td>
+		</tr>
+		<tr>
+			<td>Is replaced by</td>
+			<td><a href="#dwc_previousIdentifications">http://rs.tdwg.org/dwc/terms/previousIdentifications</a></td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A list (concatenated and separated) of previous ScientificNames to which the sample was identified.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Example: "Anthus correndera".</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>DataSets/DataSet/Units/Unit/Identifications/Identification with PreferredFlag = false</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
 			<th colspan="2"><a id="dwc_previousIdentifications"></a>Term Name dwc:previousIdentifications</th>
 		</tr>
 	</thead>
@@ -23741,52 +23787,6 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2014-10-30_16">http://rs.tdwg.org/decisions/decision-2014-10-30_16</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
-			<th colspan="2"><a id="dwc_PreviousIdentifications"></a>Term Name dwc:PreviousIdentifications</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/PreviousIdentifications">http://rs.tdwg.org/dwc/terms/PreviousIdentifications</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2009-04-24</td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Previous Identifications</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><strong>This term is deprecated and should no longer be used.</strong></td>
-		</tr>
-		<tr>
-			<td>Is replaced by</td>
-			<td><a href="#dwc_previousIdentifications">http://rs.tdwg.org/dwc/terms/previousIdentifications</a></td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>A list (concatenated and separated) of previous ScientificNames to which the sample was identified.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Example: "Anthus correndera".</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>DataSets/DataSet/Units/Unit/Identifications/Identification with PreferredFlag = false</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
 		</tr>
 	</tbody>
 </table>
@@ -24285,6 +24285,56 @@ No properties are currently organized in this class.
 <table>
 	<thead>
 		<tr>
+			<th colspan="2"><a id="dwc_protocolReferences"></a>Term Name dwc:protocolReferences</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/protocolReferences">http://rs.tdwg.org/dwc/terms/protocolReferences</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-05-26</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/protocolReferences-2026-05-26">http://rs.tdwg.org/dwc/terms/version/protocolReferences-2026-05-26</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Protocol References</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A list (concatenated and separated) of dcterms:BibliographicResources used in a dwc:Protocol.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to separate multiple values in a list with space vertical bar space (<code> | </code>).</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><code>Penguins from space: faecal stains reveal the location of emperor penguin colonies, <a href="https://doi.org/10.1111/j.1466-8238.2009.00467.x">https://doi.org/10.1111/j.1466-8238.2009.00467.x</a></code></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
 			<th colspan="2"><a id="eco_protocolReferences"></a>Term Name eco:protocolReferences</th>
 		</tr>
 	</thead>
@@ -24332,56 +24382,6 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-09-17_62">http://rs.tdwg.org/decisions/decision-2026-09-17_62</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
-			<th colspan="2"><a id="dwc_protocolReferences"></a>Term Name dwc:protocolReferences</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/protocolReferences">http://rs.tdwg.org/dwc/terms/protocolReferences</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2026-05-26</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/protocolReferences-2026-05-26">http://rs.tdwg.org/dwc/terms/version/protocolReferences-2026-05-26</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Protocol References</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>A list (concatenated and separated) of dcterms:BibliographicResources used in a dwc:Protocol.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Recommended best practice is to separate multiple values in a list with space vertical bar space (<code> | </code>).</td>
-		</tr>
-		<tr>
-			<td>Examples</td>
-			<td><code>Penguins from space: faecal stains reveal the location of emperor penguin colonies, <a href="https://doi.org/10.1111/j.1466-8238.2009.00467.x">https://doi.org/10.1111/j.1466-8238.2009.00467.x</a></code></td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -24721,60 +24721,6 @@ No properties are currently organized in this class.
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_recordedBy"></a>Term Name dwciri:recordedBy</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/recordedBy">http://rs.tdwg.org/dwc/iri/recordedBy</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2026-09-17</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/recordedBy-2026-09-17">http://rs.tdwg.org/dwc/iri/version/recordedBy-2026-09-17</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Recorded By (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>An IRI identifying a dcterms:Agent responsible for recording a dwc:Event.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-09-17_62">http://rs.tdwg.org/decisions/decision-2026-09-17_62</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="dwc_recordedBy"></a>Term Name dwc:recordedBy</th>
 		</tr>
 	</thead>
@@ -24824,6 +24770,60 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2014-10-30_16">http://rs.tdwg.org/decisions/decision-2014-10-30_16</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-09-17_62">http://rs.tdwg.org/decisions/decision-2026-09-17_62</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_recordedBy"></a>Term Name dwciri:recordedBy</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/recordedBy">http://rs.tdwg.org/dwc/iri/recordedBy</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-09-17</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/recordedBy-2026-09-17">http://rs.tdwg.org/dwc/iri/version/recordedBy-2026-09-17</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Recorded By (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>An IRI identifying a dcterms:Agent responsible for recording a dwc:Event.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
@@ -26436,52 +26436,6 @@ No properties are currently organized in this class.
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_sampledFeatureType"></a>Term Name dwciri:sampledFeatureType</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/sampledFeatureType">http://rs.tdwg.org/dwc/iri/sampledFeatureType</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2026-09-17</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/sampledFeatureType-2026-09-17">http://rs.tdwg.org/dwc/iri/version/sampledFeatureType-2026-09-17</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Sampled Feature Type (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>The type of naturally occurring or anthropogenic physical feature from which a dwc:MaterialEntity was sampled.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-09-17_62">http://rs.tdwg.org/decisions/decision-2026-09-17_62</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="dwc_sampledFeatureType"></a>Term Name dwc:sampledFeatureType</th>
 		</tr>
 	</thead>
@@ -26519,6 +26473,52 @@ No properties are currently organized in this class.
   <li class="list-group-item"><code>outcrop</code></li>
   <li class="list-group-item"><code>erratic boulder</code></li>
 </ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-09-17_62">http://rs.tdwg.org/decisions/decision-2026-09-17_62</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_sampledFeatureType"></a>Term Name dwciri:sampledFeatureType</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/sampledFeatureType">http://rs.tdwg.org/dwc/iri/sampledFeatureType</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-09-17</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/sampledFeatureType-2026-09-17">http://rs.tdwg.org/dwc/iri/version/sampledFeatureType-2026-09-17</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Sampled Feature Type (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The type of naturally occurring or anthropogenic physical feature from which a dwc:MaterialEntity was sampled.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -27079,60 +27079,6 @@ No properties are currently organized in this class.
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ecoiri_samplingEffortProtocol"></a>Term Name ecoiri:samplingEffortProtocol</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/samplingEffortProtocol">http://rs.tdwg.org/eco/iri/samplingEffortProtocol</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2025-07-10</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/version/samplingEffortProtocol-2025-07-10">http://rs.tdwg.org/eco/iri/version/samplingEffortProtocol-2025-07-10</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Sampling Effort Protocol (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>A method or protocol used to determine the sampling effort, denoted by an IRI.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>This protocol should be associated with the values reported in eco:samplingEffortValue and eco:samplingEffortUnit. This is a specialization of eco:protocolDescriptions focused on effort, distinct from the survey method. The effort relates to the intensity of sampling and therefore can assist in interpreting estimates of completeness. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2025-06-12_46">http://rs.tdwg.org/decisions/decision-2025-06-12_46</a></td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="eco_samplingEffortProtocol"></a>Term Name eco:samplingEffortProtocol</th>
 		</tr>
 	</thead>
@@ -27187,33 +27133,33 @@ No properties are currently organized in this class.
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ecoiri_samplingEffortUnit"></a>Term Name ecoiri:samplingEffortUnit</th>
+			<th colspan="2"><a id="ecoiri_samplingEffortProtocol"></a>Term Name ecoiri:samplingEffortProtocol</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/samplingEffortUnit">http://rs.tdwg.org/eco/iri/samplingEffortUnit</a></td>
+			<td><a href="http://rs.tdwg.org/eco/iri/samplingEffortProtocol">http://rs.tdwg.org/eco/iri/samplingEffortProtocol</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-09-17</td>
+			<td>2025-07-10</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/version/samplingEffortUnit-2026-09-17">http://rs.tdwg.org/eco/iri/version/samplingEffortUnit-2026-09-17</a></td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/samplingEffortProtocol-2025-07-10">http://rs.tdwg.org/eco/iri/version/samplingEffortProtocol-2025-07-10</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
-			<td>Sampling Effort Unit</td>
+			<td>Sampling Effort Protocol (IRI)</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The units associated with an eco:samplingEffortValue.</td>
+			<td>A method or protocol used to determine the sampling effort, denoted by an IRI.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+			<td>This protocol should be associated with the values reported in eco:samplingEffortValue and eco:samplingEffortUnit. This is a specialization of eco:protocolDescriptions focused on effort, distinct from the survey method. The effort relates to the intensity of sampling and therefore can assist in interpreting estimates of completeness. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -27229,7 +27175,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-09-17_62">http://rs.tdwg.org/decisions/decision-2026-09-17_62</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-06-12_46">http://rs.tdwg.org/decisions/decision-2025-06-12_46</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -27292,6 +27242,56 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-09-17_62">http://rs.tdwg.org/decisions/decision-2026-09-17_62</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="ecoiri_samplingEffortUnit"></a>Term Name ecoiri:samplingEffortUnit</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/iri/samplingEffortUnit">http://rs.tdwg.org/eco/iri/samplingEffortUnit</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-09-17</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/samplingEffortUnit-2026-09-17">http://rs.tdwg.org/eco/iri/version/samplingEffortUnit-2026-09-17</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Sampling Effort Unit</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The units associated with an eco:samplingEffortValue.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
@@ -27835,60 +27835,6 @@ No properties are currently organized in this class.
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_samplingProtocol"></a>Term Name dwciri:samplingProtocol</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/samplingProtocol">http://rs.tdwg.org/dwc/iri/samplingProtocol</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2026-09-17</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/samplingProtocol-2026-09-17">http://rs.tdwg.org/dwc/iri/version/samplingProtocol-2026-09-17</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Sampling Protocol (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>The methods or protocols used during an eco:Survey, denoted by an IRI.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Recommended best practice is to describe an eco:Survey with no more than one sampling protocol. In the case of a summary eco:Survey in which a specific protocol can not be attributed to specific dwc:Occurrences, the recommended best practice is to repeat the property for each IRI that denotes a different sampling protocol that applies to the dwc:Occurrence.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2021-07-15_34">http://rs.tdwg.org/decisions/decision-2021-07-15_34</a></td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-09-17_62">http://rs.tdwg.org/decisions/decision-2026-09-17_62</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="dwc_samplingProtocol"></a>Term Name dwc:samplingProtocol</th>
 		</tr>
 	</thead>
@@ -27943,6 +27889,60 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_43">http://rs.tdwg.org/decisions/decision-2024-02-28_43</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-09-17_62">http://rs.tdwg.org/decisions/decision-2026-09-17_62</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_samplingProtocol"></a>Term Name dwciri:samplingProtocol</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/samplingProtocol">http://rs.tdwg.org/dwc/iri/samplingProtocol</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-09-17</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/samplingProtocol-2026-09-17">http://rs.tdwg.org/dwc/iri/version/samplingProtocol-2026-09-17</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Sampling Protocol (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The methods or protocols used during an eco:Survey, denoted by an IRI.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to describe an eco:Survey with no more than one sampling protocol. In the case of a summary eco:Survey in which a specific protocol can not be attributed to specific dwc:Occurrences, the recommended best practice is to repeat the property for each IRI that denotes a different sampling protocol that applies to the dwc:Occurrence.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2021-07-15_34">http://rs.tdwg.org/decisions/decision-2021-07-15_34</a></td>
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
@@ -28446,52 +28446,6 @@ No properties are currently organized in this class.
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_siteNumber"></a>Term Name dwciri:siteNumber</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/siteNumber">http://rs.tdwg.org/dwc/iri/siteNumber</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2026-05-26</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/siteNumber-2026-05-26">http://rs.tdwg.org/dwc/iri/version/siteNumber-2026-05-26</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Site Number (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>An identifier for a named site.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Usually an institutional identifier for a specific named place as opposed to dwc:locationID, which is an identifier for the entire set of distinct information for an instance of dcterms:Location. This term differs from dwciri:fieldNumber in that dwciri:siteNumber is not related strictly to one dwc:Event. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="dwc_siteNumber"></a>Term Name dwc:siteNumber</th>
 		</tr>
 	</thead>
@@ -28526,6 +28480,52 @@ No properties are currently organized in this class.
   <li class="list-group-item"><code>USGS CENO LOC 21387</code></li>
   <li class="list-group-item"><code>UCM 2025001</code></li>
 </ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_siteNumber"></a>Term Name dwciri:siteNumber</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/siteNumber">http://rs.tdwg.org/dwc/iri/siteNumber</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-05-26</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/siteNumber-2026-05-26">http://rs.tdwg.org/dwc/iri/version/siteNumber-2026-05-26</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Site Number (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>An identifier for a named site.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Usually an institutional identifier for a specific named place as opposed to dwc:locationID, which is an identifier for the entire set of distinct information for an instance of dcterms:Location. This term differs from dwciri:fieldNumber in that dwciri:siteNumber is not related strictly to one dwc:Event. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -29174,52 +29174,6 @@ No properties are currently organized in this class.
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ecoiri_surveySiteType"></a>Term Name ecoiri:surveySiteType</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/surveySiteType">http://rs.tdwg.org/eco/iri/surveySiteType</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2026-09-17</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/version/surveySiteType-2026-09-17">http://rs.tdwg.org/eco/iri/version/surveySiteType-2026-09-17</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Survey Site Type (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>A spatial category of a sampling location for an eco:Survey.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-09-17_62">http://rs.tdwg.org/decisions/decision-2026-09-17_62</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="eco_surveySiteType"></a>Term Name eco:surveySiteType</th>
 		</tr>
 	</thead>
@@ -29256,6 +29210,52 @@ No properties are currently organized in this class.
   <li class="list-group-item"><code>arealPlot</code></li>
   <li class="list-group-item"><code>observationPoint</code></li>
 </ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-09-17_62">http://rs.tdwg.org/decisions/decision-2026-09-17_62</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="ecoiri_surveySiteType"></a>Term Name ecoiri:surveySiteType</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/iri/surveySiteType">http://rs.tdwg.org/eco/iri/surveySiteType</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-09-17</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/surveySiteType-2026-09-17">http://rs.tdwg.org/eco/iri/version/surveySiteType-2026-09-17</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Survey Site Type (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A spatial category of a sampling location for an eco:Survey.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -29467,52 +29467,6 @@ No properties are currently organized in this class.
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ecoiri_surveyTargetType"></a>Term Name ecoiri:surveyTargetType</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/surveyTargetType">http://rs.tdwg.org/eco/iri/surveyTargetType</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2026-05-26</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/version/surveyTargetType-2026-05-26">http://rs.tdwg.org/eco/iri/version/surveyTargetType-2026-05-26</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Survey Target Type (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>A category that best matches the nature of a scope in an eco:SurveyTarget.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Recommended best practice is to use a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_59">http://rs.tdwg.org/decisions/decision-2026-05-26_59</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="eco_surveyTargetType"></a>Term Name eco:surveyTargetType</th>
 		</tr>
 	</thead>
@@ -29571,13 +29525,13 @@ No properties are currently organized in this class.
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ecoiri_surveyTargetUnit"></a>Term Name ecoiri:surveyTargetUnit</th>
+			<th colspan="2"><a id="ecoiri_surveyTargetType"></a>Term Name ecoiri:surveyTargetType</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/surveyTargetUnit">http://rs.tdwg.org/eco/iri/surveyTargetUnit</a></td>
+			<td><a href="http://rs.tdwg.org/eco/iri/surveyTargetType">http://rs.tdwg.org/eco/iri/surveyTargetType</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -29585,15 +29539,15 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/version/surveyTargetUnit-2026-05-26">http://rs.tdwg.org/eco/iri/version/surveyTargetUnit-2026-05-26</a></td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/surveyTargetType-2026-05-26">http://rs.tdwg.org/eco/iri/version/surveyTargetType-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
-			<td>Survey Target Unit (IRI)</td>
+			<td>Survey Target Type (IRI)</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>Unit associated with a value in eco:surveyTargetValue.</td>
+			<td>A category that best matches the nature of a scope in an eco:SurveyTarget.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
@@ -29652,6 +29606,52 @@ No properties are currently organized in this class.
   <li class="list-group-item"><code>g</code></li>
   <li class="list-group-item"><code>years</code></li>
 </ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_59">http://rs.tdwg.org/decisions/decision-2026-05-26_59</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="ecoiri_surveyTargetUnit"></a>Term Name ecoiri:surveyTargetUnit</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/iri/surveyTargetUnit">http://rs.tdwg.org/eco/iri/surveyTargetUnit</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-05-26</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/surveyTargetUnit-2026-05-26">http://rs.tdwg.org/eco/iri/version/surveyTargetUnit-2026-05-26</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Survey Target Unit (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>Unit associated with a value in eco:surveyTargetValue.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -29776,67 +29776,6 @@ No properties are currently organized in this class.
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ecoiri_targetDegreeOfEstablishmentScope"></a>Term Name ecoiri:targetDegreeOfEstablishmentScope</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/targetDegreeOfEstablishmentScope">http://rs.tdwg.org/eco/iri/targetDegreeOfEstablishmentScope</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2026-09-17</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/version/targetDegreeOfEstablishmentScope-2026-09-17">http://rs.tdwg.org/eco/iri/version/targetDegreeOfEstablishmentScope-2026-09-17</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Target Degree of Establishment Scope</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>The degree of establishment of the dwc:Organisms targeted for sampling during an eco:Survey.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Recommended best practice is to use an IRI from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/doe/">http://rs.tdwg.org/dwc/doc/doe/</a>. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a> . Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>Examples</td>
-			<td><ul class="list-group list-group-flush">
-  <li class="list-group-item"><code><a href="http://rs.tdwg.org/dwcem/values/e001">http://rs.tdwg.org/dwcem/values/e001</a></code></li>
-  <li class="list-group-item"><code><a href="http://rs.tdwg.org/dwcem/values/e005">http://rs.tdwg.org/dwcem/values/e005</a></code></li>
-</ul></td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-09-17_62">http://rs.tdwg.org/decisions/decision-2026-09-17_62</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="eco_targetDegreeOfEstablishmentScope"></a>Term Name eco:targetDegreeOfEstablishmentScope</th>
 		</tr>
 	</thead>
@@ -29902,13 +29841,13 @@ No properties are currently organized in this class.
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ecoiri_targetGrowthFormScope"></a>Term Name ecoiri:targetGrowthFormScope</th>
+			<th colspan="2"><a id="ecoiri_targetDegreeOfEstablishmentScope"></a>Term Name ecoiri:targetDegreeOfEstablishmentScope</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/targetGrowthFormScope">http://rs.tdwg.org/eco/iri/targetGrowthFormScope</a></td>
+			<td><a href="http://rs.tdwg.org/eco/iri/targetDegreeOfEstablishmentScope">http://rs.tdwg.org/eco/iri/targetDegreeOfEstablishmentScope</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -29916,19 +29855,26 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/version/targetGrowthFormScope-2026-09-17">http://rs.tdwg.org/eco/iri/version/targetGrowthFormScope-2026-09-17</a></td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/targetDegreeOfEstablishmentScope-2026-09-17">http://rs.tdwg.org/eco/iri/version/targetDegreeOfEstablishmentScope-2026-09-17</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
-			<td>Target Growth Form Scope</td>
+			<td>Target Degree of Establishment Scope</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The growth form or habit of the dwc:Organisms targeted for sampling during the eco:Survey.</td>
+			<td>The degree of establishment of the dwc:Organisms targeted for sampling during an eco:Survey.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
+			<td>Recommended best practice is to use an IRI from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/doe/">http://rs.tdwg.org/dwc/doc/doe/</a>. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a> . Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code><a href="http://rs.tdwg.org/dwcem/values/e001">http://rs.tdwg.org/dwcem/values/e001</a></code></li>
+  <li class="list-group-item"><code><a href="http://rs.tdwg.org/dwcem/values/e005">http://rs.tdwg.org/dwcem/values/e005</a></code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -30021,13 +29967,13 @@ No properties are currently organized in this class.
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ecoiri_targetHabitatScope"></a>Term Name ecoiri:targetHabitatScope</th>
+			<th colspan="2"><a id="ecoiri_targetGrowthFormScope"></a>Term Name ecoiri:targetGrowthFormScope</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/targetHabitatScope">http://rs.tdwg.org/eco/iri/targetHabitatScope</a></td>
+			<td><a href="http://rs.tdwg.org/eco/iri/targetGrowthFormScope">http://rs.tdwg.org/eco/iri/targetGrowthFormScope</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -30035,15 +29981,15 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/version/targetHabitatScope-2026-09-17">http://rs.tdwg.org/eco/iri/version/targetHabitatScope-2026-09-17</a></td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/targetGrowthFormScope-2026-09-17">http://rs.tdwg.org/eco/iri/version/targetGrowthFormScope-2026-09-17</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
-			<td>Target Habitat Scope</td>
+			<td>Target Growth Form Scope</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The habitat targeted for sampling during an eco:Survey.</td>
+			<td>The growth form or habit of the dwc:Organisms targeted for sampling during the eco:Survey.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
@@ -30142,13 +30088,13 @@ No properties are currently organized in this class.
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ecoiri_targetLifeStageScope"></a>Term Name ecoiri:targetLifeStageScope</th>
+			<th colspan="2"><a id="ecoiri_targetHabitatScope"></a>Term Name ecoiri:targetHabitatScope</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/targetLifeStageScope">http://rs.tdwg.org/eco/iri/targetLifeStageScope</a></td>
+			<td><a href="http://rs.tdwg.org/eco/iri/targetHabitatScope">http://rs.tdwg.org/eco/iri/targetHabitatScope</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -30156,19 +30102,19 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/version/targetLifeStageScope-2026-09-17">http://rs.tdwg.org/eco/iri/version/targetLifeStageScope-2026-09-17</a></td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/targetHabitatScope-2026-09-17">http://rs.tdwg.org/eco/iri/version/targetHabitatScope-2026-09-17</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
-			<td>Target Life Stage Scope</td>
+			<td>Target Habitat Scope</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The age class or life stage of the dwc:Organisms targeted for sampling during an eco:Survey.</td>
+			<td>The habitat targeted for sampling during an eco:Survey.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>This term is defined based on dwciri:lifeStage (<a href="http://rs.tdwg.org/dwc/terms/iri/lifeStage">http://rs.tdwg.org/dwc/terms/iri/lifeStage</a>). Recommended best practice is to use an IRI from the same controlled vocabulary as for dwciri:lifeStage. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
+			<td>Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -30242,6 +30188,60 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-09-17_62">http://rs.tdwg.org/decisions/decision-2026-09-17_62</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="ecoiri_targetLifeStageScope"></a>Term Name ecoiri:targetLifeStageScope</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/iri/targetLifeStageScope">http://rs.tdwg.org/eco/iri/targetLifeStageScope</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-09-17</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/targetLifeStageScope-2026-09-17">http://rs.tdwg.org/eco/iri/version/targetLifeStageScope-2026-09-17</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Target Life Stage Scope</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The age class or life stage of the dwc:Organisms targeted for sampling during an eco:Survey.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>This term is defined based on dwciri:lifeStage (<a href="http://rs.tdwg.org/dwc/terms/iri/lifeStage">http://rs.tdwg.org/dwc/terms/iri/lifeStage</a>). Recommended best practice is to use an IRI from the same controlled vocabulary as for dwciri:lifeStage. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
@@ -30630,67 +30630,6 @@ No properties are currently organized in this class.
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ecoiri_taxonCompletenessReported"></a>Term Name ecoiri:taxonCompletenessReported</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/taxonCompletenessReported">http://rs.tdwg.org/eco/iri/taxonCompletenessReported</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2026-09-17</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/version/taxonCompletenessReported-2026-09-17">http://rs.tdwg.org/eco/iri/version/taxonCompletenessReported-2026-09-17</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Taxon Completeness Reported</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>Statement about whether the taxonomic completeness of an eco:Survey was assessed.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>This term is meant to alert users that the inventory was conducted in such a way that all of the target taxa (the combination of ecoiri:targetTaxonomicScope and ecoiri:excludedTaxonomicScope) should have been detectable if they were present during the dwc:Event. This term can provide data users with a qualitative measure of how comprehensively an area has been surveyed, which assists in interpreting species populations, areas of occupancy, inferring species absences, etc. This term is only relevant if the dwc:Event used restricted search or open search methods. If taxonomic completeness was assessed, the methods used or an explanation of the basis of the completeness should covered by ecoiri:taxonCompletenessProtocols. Recommended best practice is to use an IRI from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/tcr/">http://rs.tdwg.org/dwc/doc/tcr/</a>. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>Examples</td>
-			<td><ul class="list-group list-group-flush">
-  <li class="list-group-item"><code><a href="http://rs.tdwg.org/ecotcr/values/tcr01">http://rs.tdwg.org/ecotcr/values/tcr01</a></code></li>
-  <li class="list-group-item"><code><a href="http://rs.tdwg.org/ecotcr/values/tcr02">http://rs.tdwg.org/ecotcr/values/tcr02</a></code></li>
-</ul></td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-09-17_62">http://rs.tdwg.org/decisions/decision-2026-09-17_62</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="eco_taxonCompletenessReported"></a>Term Name eco:taxonCompletenessReported</th>
 		</tr>
 	</thead>
@@ -30757,6 +30696,67 @@ No properties are currently organized in this class.
 <table>
 	<thead>
 		<tr>
+			<th colspan="2"><a id="ecoiri_taxonCompletenessReported"></a>Term Name ecoiri:taxonCompletenessReported</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/iri/taxonCompletenessReported">http://rs.tdwg.org/eco/iri/taxonCompletenessReported</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-09-17</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/taxonCompletenessReported-2026-09-17">http://rs.tdwg.org/eco/iri/version/taxonCompletenessReported-2026-09-17</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Taxon Completeness Reported</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>Statement about whether the taxonomic completeness of an eco:Survey was assessed.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>This term is meant to alert users that the inventory was conducted in such a way that all of the target taxa (the combination of ecoiri:targetTaxonomicScope and ecoiri:excludedTaxonomicScope) should have been detectable if they were present during the dwc:Event. This term can provide data users with a qualitative measure of how comprehensively an area has been surveyed, which assists in interpreting species populations, areas of occupancy, inferring species absences, etc. This term is only relevant if the dwc:Event used restricted search or open search methods. If taxonomic completeness was assessed, the methods used or an explanation of the basis of the completeness should covered by ecoiri:taxonCompletenessProtocols. Recommended best practice is to use an IRI from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/tcr/">http://rs.tdwg.org/dwc/doc/tcr/</a>. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code><a href="http://rs.tdwg.org/ecotcr/values/tcr01">http://rs.tdwg.org/ecotcr/values/tcr01</a></code></li>
+  <li class="list-group-item"><code><a href="http://rs.tdwg.org/ecotcr/values/tcr02">http://rs.tdwg.org/ecotcr/values/tcr02</a></code></li>
+</ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-09-17_62">http://rs.tdwg.org/decisions/decision-2026-09-17_62</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
 			<th colspan="2"><a id="dwc_taxonConceptID"></a>Term Name dwc:taxonConceptID</th>
 		</tr>
 	</thead>
@@ -30792,52 +30792,6 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
-			<th colspan="2"><a id="dwciri_taxonFormula"></a>Term Name dwciri:taxonFormula</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/taxonFormula">http://rs.tdwg.org/dwc/iri/taxonFormula</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2026-05-26</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/taxonFormula-2026-05-26">http://rs.tdwg.org/dwc/iri/version/taxonFormula-2026-05-26</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Taxon Formula (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>A pattern to use to construct a dwc:Identification from dwc:Taxon names and identification qualifiers.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -30885,6 +30839,52 @@ No properties are currently organized in this class.
   <li class="list-group-item"><code>A cf.</code></li>
   <li class="list-group-item"><code>A aff.</code></li>
 </ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_taxonFormula"></a>Term Name dwciri:taxonFormula</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/taxonFormula">http://rs.tdwg.org/dwc/iri/taxonFormula</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-05-26</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/taxonFormula-2026-05-26">http://rs.tdwg.org/dwc/iri/version/taxonFormula-2026-05-26</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Taxon Formula (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A pattern to use to construct a dwc:Identification from dwc:Taxon names and identification qualifiers.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -31830,52 +31830,6 @@ No properties are currently organized in this class.
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_typeStatus"></a>Term Name dwciri:typeStatus</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/typeStatus">http://rs.tdwg.org/dwc/iri/typeStatus</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2025-07-10</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/typeStatus-2025-07-10">http://rs.tdwg.org/dwc/iri/version/typeStatus-2025-07-10</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Type Status (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>A nomenclatural type (type status, typified scientific name, publication) applied to the subject.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="dwc_typeStatus"></a>Term Name dwc:typeStatus</th>
 		</tr>
 	</thead>
@@ -31922,6 +31876,52 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2014-10-30_16">http://rs.tdwg.org/decisions/decision-2014-10-30_16</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_typeStatus"></a>Term Name dwciri:typeStatus</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/typeStatus">http://rs.tdwg.org/dwc/iri/typeStatus</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2025-07-10</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/typeStatus-2025-07-10">http://rs.tdwg.org/dwc/iri/version/typeStatus-2025-07-10</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Type Status (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A nomenclatural type (type status, typified scientific name, publication) applied to the subject.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_50">http://rs.tdwg.org/decisions/decision-2025-07-10_50</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -33053,52 +33053,6 @@ No properties are currently organized in this class.
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="dwciri_verbatimSRS"></a>Term Name dwciri:verbatimSRS</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/verbatimSRS">http://rs.tdwg.org/dwc/iri/verbatimSRS</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2025-06-12</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/verbatimSRS-2025-06-12">http://rs.tdwg.org/dwc/iri/version/verbatimSRS-2025-06-12</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Verbatim SRS (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which coordinates given in dwc:verbatimLatitude and dwc:verbatimLongitude, or dwc:verbatimCoordinates are based.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Recommended best practice is to use an IRI for the EPSG code of the SRS, if known. Otherwise use a controlled vocabulary IRI for the name or code of the geodetic datum, if known. Otherwise use a controlled vocabulary IRI for the name or code of the ellipsoid, if known. Otherwise use an IRI for the value corresponding to <code>not recorded</code>.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2025-06-12_44">http://rs.tdwg.org/decisions/decision-2025-06-12_44</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="dwc_verbatimSRS"></a>Term Name dwc:verbatimSRS</th>
 		</tr>
 	</thead>
@@ -33138,6 +33092,52 @@ No properties are currently organized in this class.
   <li class="list-group-item"><code>Clarke 1866</code></li>
   <li class="list-group-item"><code>not recorded</code></li>
 </ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-06-12_44">http://rs.tdwg.org/decisions/decision-2025-06-12_44</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="dwciri_verbatimSRS"></a>Term Name dwciri:verbatimSRS</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/verbatimSRS">http://rs.tdwg.org/dwc/iri/verbatimSRS</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2025-06-12</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/verbatimSRS-2025-06-12">http://rs.tdwg.org/dwc/iri/version/verbatimSRS-2025-06-12</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Verbatim SRS (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which coordinates given in dwc:verbatimLatitude and dwc:verbatimLongitude, or dwc:verbatimCoordinates are based.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use an IRI for the EPSG code of the SRS, if known. Otherwise use a controlled vocabulary IRI for the name or code of the geodetic datum, if known. Otherwise use a controlled vocabulary IRI for the name or code of the ellipsoid, if known. Otherwise use an IRI for the value corresponding to <code>not recorded</code>.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
