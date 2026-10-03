@@ -1,0 +1,62 @@
+{
+  "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/material-usage-policy",
+  "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
+  "url": "table-schemas/material-usage-policy.json",
+  "name": "material-usage-policy",
+  "title": "Material Usage Policy",
+  "description": "Rights, usage, and attribution statements applicable to a dwc:MaterialEntity.",
+  "notes": "",
+  "examples": "",
+  "namespace": "",
+  "dcterms:isVersionOf": "http://example.com/term-pending//material-usage-policy",
+  "fields": [
+    {
+      "name": "materialEntity_fk",
+      "title": "Material Entity (Foreign Key)",
+      "description": "An identifier for a dwc:MaterialEntity.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/materialEntityID",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    },
+    {
+      "name": "usagePolicy_fk",
+      "title": "Usage Policy (Foreign Key)",
+      "description": "An identifier for a dwc:UsagePolicy.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/usagePolicyID",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    }
+  ],
+  "foreignKeys": [
+    {
+      "fields": "materialEntity_fk",
+      "predicate": "for",
+      "reference": {
+        "resource": "material",
+        "fields": "materialEntity_pk"
+      }
+    },
+    {
+      "fields": "usagePolicy_fk",
+      "predicate": "has",
+      "reference": {
+        "resource": "usage-policy",
+        "fields": "usagePolicy_pk"
+      }
+    }
+  ]
+}

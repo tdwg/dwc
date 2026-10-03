@@ -1,0 +1,62 @@
+{
+  "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/material-protocol",
+  "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
+  "url": "table-schemas/material-protocol.json",
+  "name": "material-protocol",
+  "title": "Material Protocol",
+  "description": "A dwc:Protocol used for a dwc:MaterialEntity.",
+  "notes": "",
+  "examples": "",
+  "namespace": "",
+  "dcterms:isVersionOf": "http://example.com/term-pending//material-protocol",
+  "fields": [
+    {
+      "name": "protocol_fk",
+      "title": "Protocol (Foreign Key)",
+      "description": "An identifier for a dwc:Protocol.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/protocolID",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    },
+    {
+      "name": "materialEntity_fk",
+      "title": "Material Entity (Foreign Key)",
+      "description": "An identifier for a dwc:MaterialEntity.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/materialEntityID",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    }
+  ],
+  "foreignKeys": [
+    {
+      "fields": "protocol_fk",
+      "predicate": "followed",
+      "reference": {
+        "resource": "protocol",
+        "fields": "protocol_pk"
+      }
+    },
+    {
+      "fields": "materialEntity_fk",
+      "predicate": "used for",
+      "reference": {
+        "resource": "material",
+        "fields": "materialEntity_pk"
+      }
+    }
+  ]
+}

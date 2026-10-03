@@ -1,0 +1,73 @@
+{
+  "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/event-reference",
+  "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
+  "url": "table-schemas/event-reference.json",
+  "name": "event-reference",
+  "title": "Event Reference",
+  "description": "A dcterms:BibliographicResource related to a dwc:Event.",
+  "notes": "",
+  "examples": "",
+  "namespace": "",
+  "dcterms:isVersionOf": "http://example.com/term-pending//event-reference",
+  "fields": [
+    {
+      "name": "reference_fk",
+      "title": "Reference (Foreign Key)",
+      "description": "An identifier for a dcterms:BibliographicResource.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/referenceID",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "event_fk",
+      "title": "Event (Foreign Key)",
+      "description": "An identifier for a dwc:Event.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/eventID",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    },
+    {
+      "name": "relationshipType",
+      "title": "Relationship Type",
+      "description": "A relationship of a subject resource to a dcterms:BibliographicResource.",
+      "notes": "Recommended best practice is to use a controlled vocabulary.",
+      "examples": "`cited in`; `referenced`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/relationshipOfResource"
+    }
+  ],
+  "foreignKeys": [
+    {
+      "fields": "reference_fk",
+      "predicate": "mentioned in",
+      "reference": {
+        "resource": "bibliographic-resource",
+        "fields": "reference_pk"
+      }
+    },
+    {
+      "fields": "event_fk",
+      "predicate": "mentioned",
+      "reference": {
+        "resource": "event",
+        "fields": "event_pk"
+      }
+    }
+  ]
+}

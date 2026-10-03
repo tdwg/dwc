@@ -1,0 +1,64 @@
+{
+  "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/nucleotide-sequence",
+  "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
+  "url": "table-schemas/nucleotide-sequence.json",
+  "name": "nucleotide-sequence",
+  "title": "Nucleotide Sequence",
+  "description": "A digital representation of a nucleotide sequence.",
+  "notes": "",
+  "examples": "",
+  "namespace": "dwc",
+  "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/NucleotideSequence",
+  "fields": [
+    {
+      "name": "nucleotideSequence_pk",
+      "title": "Nucleotide Sequence (Primary Key)",
+      "description": "A unique identifier for a dwc:NucleotideSequence.",
+      "notes": "The value in this field MAY be changed in aggregation to guarantee uniqueness.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/identifier",
+      "constraints": {
+        "required": true,
+        "unique": true
+      }
+    },
+    {
+      "name": "nucleotideSequenceID",
+      "title": "Nucleotide Sequence ID",
+      "description": "An identifier for a dwc:NucleotideSequence.",
+      "notes": "The value in this field MUST be preserved in aggregation. Recommended best practice is to use a globally unique identifier.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/identifier"
+    },
+    {
+      "name": "sequence",
+      "title": "Sequence",
+      "description": "A string representing nucleotide base pairs.",
+      "notes": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/sequence"
+    },
+    {
+      "name": "nucleotideSequenceRemarks",
+      "title": "Nucleotide Sequence Remarks",
+      "description": "Comments or notes about a dwc:NucleotideSequence.",
+      "notes": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/nucleotideSequenceRemarks"
+    }
+  ],
+  "primaryKey": "nucleotideSequence_pk",
+  "weakPrimaryKey": "nucleotideSequenceID"
+}

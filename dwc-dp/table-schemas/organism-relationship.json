@@ -1,0 +1,233 @@
+{
+  "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/organism-relationship",
+  "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
+  "url": "table-schemas/organism-relationship.json",
+  "name": "organism-relationship",
+  "title": "Organism Relationship",
+  "description": "A dwc:ResourceRelationship of one dwc:Organism to another dwc:Organism.",
+  "notes": "An OrganismRelationship must be a permanent relationship. Ephemeral relationships between dwc:Organisms should be recorded as dwc:OrganismInteractions.",
+  "examples": "`an instance of a dwc:Organism is the mother of another instance of a dwc:Organism`",
+  "namespace": "dwc",
+  "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/ResourceRelationship",
+  "fields": [
+    {
+      "name": "organismRelationshipID",
+      "title": "Organism Relationship ID",
+      "description": "An identifier for a dwc:ResourceRelationship.",
+      "notes": "The value in this field MUST be preserved in aggregation. Recommended best practice is to use a globally unique identifier.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/resourceRelationshipID"
+    },
+    {
+      "name": "subjectOrganism_fk",
+      "title": "Subject Organism (Foreign Key)",
+      "description": "An identifier for the dwc:Organism that is the subject of a dwc:ResourceRelationship.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/organismID",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    },
+    {
+      "name": "relationshipType",
+      "title": "Relationship Type",
+      "description": "A relationship of a subject resource (identified by dwc:subjectOrganismID) to a related resource (identified by dwc:relatedOrganismID).",
+      "notes": "Recommended best practice is to use a controlled vocabulary.",
+      "examples": "`same as`; `duplicate of`; `mother of`; `offspring of`; `sibling of`; `parasite of`; `host of`; `valid synonym of`; `located within`; `pollinator of members of taxon`; `pollinated specific plant`; `pollinated by members of taxon`; `on slab with`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/relationshipOfResource"
+    },
+    {
+      "name": "relationshipTypeIRI",
+      "title": "Relationship Type IRI",
+      "description": "An IRI of a controlled vocabulary value for the type of a dwc:ResourceRelationship.",
+      "notes": "Recommended best practice is to use an IRI for a term in a controlled vocabulary.",
+      "examples": "`http://purl.obolibrary.org/obo/RO_0002456` (for the relation pollinated by); `http://purl.obolibrary.org/obo/RO_0002455` (for the relation pollinates); `https://www.inaturalist.org/observation_fields/879` (for the relation eaten by)",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/relationshipOfResource"
+    },
+    {
+      "name": "relationshipTypeSource",
+      "title": "Relationship Type Source",
+      "description": "A reference to a controlled vocabulary in which the definition of a value in dwc:relationshipType is given.",
+      "notes": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dc",
+      "dcterms:isVersionOf": "http://purl.org/dc/elements/1.1/source"
+    },
+    {
+      "name": "relatedOrganism_fk",
+      "title": "Related Organism (Foreign Key)",
+      "description": "An identifier for the related dwc:Organism (the object) of a dwc:ResourceRelationship.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/organismID",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "relatedOrganismID",
+      "title": "Related Organism ID",
+      "description": "An identifier for the related dwc:Organism (the object) of a dwc:ResourceRelationship.",
+      "notes": "The value in this field MAY refer to a dwc:Organism within or external to the dataset in which this record originated.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/organismID",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "externalRelatedOrganismID",
+      "title": "External Related Organism ID",
+      "description": "An identifier for the related dwc:Organism (the object) of a dwc:ResourceRelationship that is not within the same dataset.",
+      "notes": "Recommended best practice is to use a globally unique identifier.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/organismID"
+    },
+    {
+      "name": "externalRelatedOrganismSource",
+      "title": "External Related Organism Source",
+      "description": "A reference to a source outside the dataset where the related dwc:Organism record can be found.",
+      "notes": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dc",
+      "dcterms:isVersionOf": "http://purl.org/dc/elements/1.1/source"
+    },
+    {
+      "name": "relationshipAccordingTo",
+      "title": "Relationship According To",
+      "description": "A name of a dcterms:Agent responsible for asserting a dwc:ResourceRelationship.",
+      "notes": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/relationshipAccordingTo"
+    },
+    {
+      "name": "relationshipAccordingTo_fk",
+      "title": "Relationship According To (Foreign Key)",
+      "description": "An identifier for a dcterms:Agent responsible for asserting a dwc:ResourceRelationship.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/agentID",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "relationshipAccordingToID",
+      "title": "Relationship According To ID",
+      "description": "An identifier for a dcterms:Agent responsible for asserting a dwc:ResourceRelationship.",
+      "notes": "The value in this field MAY refer to a dcterms:Agent within or external to the dataset in which this record originated.",
+      "examples": "`https://orcid.org/0000-0002-1825-0097`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/agentID",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "relationshipEstablishedDate",
+      "title": "Relationship Established Date",
+      "description": "A date on which a dwc:ResourceRelationship was established.",
+      "notes": "Recommended best practice is to use a date that conforms to ISO 8601-1:2019.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/relationshipEstablishedDate"
+    },
+    {
+      "name": "relationshipRemarks",
+      "title": "Relationship Remarks",
+      "description": "Comments or notes about a dwc:ResourceRelationship.",
+      "notes": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/relationshipRemarks"
+    }
+  ],
+  "weakPrimaryKey": "organismRelationshipID",
+  "foreignKeys": [
+    {
+      "fields": "subjectOrganism_fk",
+      "predicate": "of",
+      "reference": {
+        "resource": "organism",
+        "fields": "organism_pk"
+      }
+    },
+    {
+      "fields": "relatedOrganism_fk",
+      "predicate": "to",
+      "reference": {
+        "resource": "organism",
+        "fields": "organism_pk"
+      }
+    },
+    {
+      "fields": "relationshipAccordingTo_fk",
+      "predicate": "according to",
+      "reference": {
+        "resource": "agent",
+        "fields": "agent_pk"
+      }
+    }
+  ],
+  "weakForeignKeys": [
+    {
+      "fields": "relatedOrganismID",
+      "predicate": "to",
+      "reference": {
+        "resource": "organism",
+        "fields": "organismID"
+      }
+    },
+    {
+      "fields": "relationshipAccordingToID",
+      "predicate": "according to",
+      "reference": {
+        "resource": "agent",
+        "fields": "agentID"
+      }
+    }
+  ]
+}

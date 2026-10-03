@@ -1,0 +1,217 @@
+{
+  "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/resource-relationship",
+  "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
+  "url": "table-schemas/resource-relationship.json",
+  "name": "resource-relationship",
+  "title": "Resource Relationship",
+  "description": "A relationship of one rdfs:Resource (http://www.w3.org/2000/01/rdf-schema#Resource) to another.",
+  "notes": "Resources can be thought of as identifiable records or instances of classes and may include, but need not be limited to instances of dwc:Occurrence, dwc:Organism, dwc:MaterialEntity, dwc:Event, dcterms:Location, dwc:GeologicalContext, dwc:Identification, or dwc:Taxon.",
+  "examples": "`an instance of a dwc:Organism is the mother of another instance of a dwc:Organism`; `a uniquely identified dwc:Occurrence represents the same dwc:Occurrence as another uniquely identified dwc:Occurrence`; `a dwc:MaterialEntity is a subsample of another dwc:MaterialEntity`",
+  "namespace": "dwc",
+  "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/ResourceRelationship",
+  "fields": [
+    {
+      "name": "resourceRelationshipID",
+      "title": "Resource Relationship ID",
+      "description": "An identifier for a dwc:ResourceRelationship.",
+      "notes": "The value in this field MUST be preserved in aggregation. Recommended best practice is to use a globally unique identifier.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/resourceRelationshipID"
+    },
+    {
+      "name": "subjectResourceID",
+      "title": "Subject Resource ID",
+      "description": "An identifier for the resource that is the subject of a dwc:ResourceRelationship.",
+      "notes": "Recommended best practice is to use a globally unique identifier.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/resourceID",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    },
+    {
+      "name": "subjectResourceType",
+      "title": "Subject Resource Type",
+      "description": "A category that best matches the nature of a subject resource.",
+      "notes": "Recommended best practice is to use a controlled vocabulary consisting of the classes of resources that can be related to each other.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dc",
+      "dcterms:isVersionOf": "http://purl.org/dc/elements/1.1/type"
+    },
+    {
+      "name": "subjectResourceTypeIRI",
+      "title": "Subject Resource Type IRI",
+      "description": "An IRI of a controlled vocabulary value for the type of a subject resource.",
+      "notes": "Recommended best practice is to use an IRI for a term in a controlled vocabulary.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/type"
+    },
+    {
+      "name": "subjectResourceTypeSource",
+      "title": "Subject Resource Type Source",
+      "description": "A reference to a controlled vocabulary in which the definition of a value in dwc:subjectResourceType is given.",
+      "notes": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dc",
+      "dcterms:isVersionOf": "http://purl.org/dc/elements/1.1/source"
+    },
+    {
+      "name": "relationshipType",
+      "title": "Relationship Type",
+      "description": "A relationship of a subject resource (identified by dwc:subjectResourceID) to a related resource (identified by dwc:relatedResourceID).",
+      "notes": "Recommended best practice is to use a controlled vocabulary.",
+      "examples": "`same as`; `duplicate of`; `mother of`; `offspring of`; `sibling of`; `parasite of`; `host of`; `valid synonym of`; `located within`; `pollinator of members of taxon`; `pollinated specific plant`; `pollinated by members of taxon`; `on slab with`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/relationshipOfResource"
+    },
+    {
+      "name": "relationshipTypeIRI",
+      "title": "Relationship Type IRI",
+      "description": "An IRI of a controlled vocabulary value for the type of a dwc:ResourceRelationship.",
+      "notes": "Recommended best practice is to use an IRI for a term in a controlled vocabulary.",
+      "examples": "`http://purl.obolibrary.org/obo/RO_0002456` (for the relation pollinated by); `http://purl.obolibrary.org/obo/RO_0002455` (for the relation pollinates); `https://www.inaturalist.org/observation_fields/879` (for the relation eaten by)",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/relationshipOfResourceID"
+    },
+    {
+      "name": "relationshipTypeSource",
+      "title": "Relationship Type Source",
+      "description": "A reference to a controlled vocabulary in which the definition of a value in dwc:relationshipType is given.",
+      "notes": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dc",
+      "dcterms:isVersionOf": "http://purl.org/dc/elements/1.1/source"
+    },
+    {
+      "name": "relatedResourceID",
+      "title": "Related Resource ID",
+      "description": "An identifier for the related resource (the object) of a dwc:ResourceRelationship.",
+      "notes": "Recommended best practice is to use a globally unique identifier.",
+      "examples": "`dc609808-b09b-11e8-96f8-529269fb1459`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/relatedResourceID"
+    },
+    {
+      "name": "externalRelatedResourceID",
+      "title": "External Related Resource ID",
+      "description": "An identifier for the related resource (the object) of a dwc:ResourceRelationship that is not within the same dataset.",
+      "notes": "Recommended best practice is to use a globally unique identifier.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/identifier"
+    },
+    {
+      "name": "externalRelatedResourceSource",
+      "title": "External Related Resource Source",
+      "description": "A reference to a source outside the dataset where the related resource can be found.",
+      "notes": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dc",
+      "dcterms:isVersionOf": "http://purl.org/dc/elements/1.1/source"
+    },
+    {
+      "name": "relatedResourceType",
+      "title": "Related Resource Type",
+      "description": "A category that best matches the nature of a related resource.",
+      "notes": "Recommended best practice is to use a controlled vocabulary consisting of the classes of resources that can be related to each other.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dc",
+      "dcterms:isVersionOf": "http://purl.org/dc/elements/1.1/type"
+    },
+    {
+      "name": "relatedResourceTypeIRI",
+      "title": "Related Resource Type IRI",
+      "description": "An IRI of a controlled vocabulary value for a type of related resource.",
+      "notes": "Recommended best practice is to use an IRI for a term in a controlled vocabulary.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/type"
+    },
+    {
+      "name": "relatedResourceTypeSource",
+      "title": "Related Resource Type Source",
+      "description": "A reference to a controlled vocabulary in which the definition of a value in dwc:relatedResourceType is given.",
+      "notes": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dc",
+      "dcterms:isVersionOf": "http://purl.org/dc/elements/1.1/source"
+    },
+    {
+      "name": "relationshipAccordingTo",
+      "title": "Relationship According To",
+      "description": "A name of a dcterms:Agent responsible for asserting a dwc:ResourceRelationship.",
+      "notes": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/relationshipAccordingTo"
+    },
+    {
+      "name": "relationshipAccordingToID",
+      "title": "Relationship According To ID",
+      "description": "An identifier for a dcterms:Agent responsible for asserting a dwc:ResourceRelationship.",
+      "notes": "Recommended best practice is to use a globally unique identifier.",
+      "examples": "`https://orcid.org/0000-0002-1825-0097`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/agentID"
+    },
+    {
+      "name": "relationshipEstablishedDate",
+      "title": "Relationship Established Date",
+      "description": "A date-time or time interval during which a dwc:ResourceRelationship was established.",
+      "notes": "Recommended best practice is to use a date that conforms to ISO 8601-1:2019.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/relationshipEstablishedDate"
+    },
+    {
+      "name": "relationshipRemarks",
+      "title": "Relationship Remarks",
+      "description": "Comments or notes about a dwc:ResourceRelationship.",
+      "notes": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/relationshipRemarks"
+    }
+  ],
+  "weakPrimaryKey": "resourceRelationshipID"
+}

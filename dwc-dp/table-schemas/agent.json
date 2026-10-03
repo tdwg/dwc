@@ -1,0 +1,75 @@
+{
+  "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/agent",
+  "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
+  "url": "table-schemas/agent.json",
+  "name": "agent",
+  "title": "Agent",
+  "description": "A resource that acts or has the power to act.",
+  "notes": "A person, group, organization, machine, software or other entity that can act. Membership in the dcterms:Agent class is determined by the capacity to act, even if not doing so in a specific context. To act: To participate in an event or process by contributing through behavior, operation, or an effect resulting from active participation — regardless of whether that contribution is intentional, volitional, or conscious.",
+  "examples": "`Carl Linnaeus`; `The Terra Nova Expedition`; `The National Science Foundation`; `The El Yunque National Forest ARBIMON System`; `ChatGPT`",
+  "namespace": "dcterms",
+  "dcterms:isVersionOf": "http://purl.org/dc/terms/Agent",
+  "fields": [
+    {
+      "name": "agent_pk",
+      "title": "Agent (Primary Key)",
+      "description": "A unique identifier for a dcterms:Agent.",
+      "notes": "The value in this field MAY be changed in aggregation to guarantee uniqueness.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/agentID",
+      "constraints": {
+        "required": true,
+        "unique": true
+      }
+    },
+    {
+      "name": "agentID",
+      "title": "Agent ID",
+      "description": "An identifier for a dcterms:Agent.",
+      "notes": "The value in this field MUST be preserved in aggregation. Recommended best practice is to use a globally unique identifier.",
+      "examples": "`https://orcid.org/0000-0002-1825-0097`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/agentID"
+    },
+    {
+      "name": "agentType",
+      "title": "Agent Type",
+      "description": "A category that best matches the nature of a dcterms:Agent.",
+      "notes": "Recommended best practice is to use a controlled vocabulary.",
+      "examples": "`person`; `group`; `organization`; `camera`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/agentType"
+    },
+    {
+      "name": "preferredAgentName",
+      "title": "Preferred Agent Name",
+      "description": "A name of a dcterms:Agent preferred in searches and results.",
+      "notes": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/title"
+    },
+    {
+      "name": "agentRemarks",
+      "title": "Agent Remarks",
+      "description": "Comments or notes about a dcterms:Agent.",
+      "notes": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/agentRemarks"
+    }
+  ],
+  "primaryKey": "agent_pk",
+  "weakPrimaryKey": "agentID"
+}

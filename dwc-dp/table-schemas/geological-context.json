@@ -1,0 +1,273 @@
+{
+  "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/geological-context",
+  "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
+  "url": "table-schemas/geological-context.json",
+  "name": "geological-context",
+  "title": "Geological Context",
+  "description": "A set of geological designations, such as stratigraphy, that qualify a dcterms:Location or source of a dwc:MaterialEntity.",
+  "notes": "",
+  "examples": "`a particular lithostratigraphic layer`; `a specific chronostratigraphic unit`",
+  "namespace": "dwc",
+  "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/GeologicalContext",
+  "fields": [
+    {
+      "name": "geologicalContext_pk",
+      "title": "Geological Context (Primary Key)",
+      "description": "A unique identifier for a dwc:GeologicalContext.",
+      "notes": "The value in this field MAY be changed in aggregation to guarantee uniqueness.",
+      "examples": "`https://opencontext.org/subjects/e54377f7-4452-4315-b676-40679b10c4d9`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/geologicalContextID",
+      "constraints": {
+        "required": true,
+        "unique": true
+      }
+    },
+    {
+      "name": "geologicalContextID",
+      "title": "Geological Context ID",
+      "description": "An identifier for a dwc:GeologicalContext.",
+      "notes": "The value in this field MUST be preserved in aggregation. Recommended best practice is to use a globally unique identifier.",
+      "examples": "`https://opencontext.org/subjects/e54377f7-4452-4315-b676-40679b10c4d9`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/geologicalContextID"
+    },
+    {
+      "name": "earliestEonOrLowestEonothem",
+      "title": "Earliest Eon Or Lowest Eonothem",
+      "description": "The full name of the earliest possible geochronologic eon or lowest chronostratigraphic eonothem or the informal name attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.",
+      "notes": "",
+      "examples": "`Phanerozoic`; `Proterozoic`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/earliestEonOrLowestEonothem"
+    },
+    {
+      "name": "latestEonOrHighestEonothem",
+      "title": "Latest Eon Or Highest Eonothem",
+      "description": "The full name of the latest possible geochronologic eon or highest chronostratigraphic eonothem or the informal name attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.",
+      "notes": "",
+      "examples": "`Phanerozoic`; `Proterozoic`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/latestEonOrHighestEonothem"
+    },
+    {
+      "name": "earliestEraOrLowestErathem",
+      "title": "Earliest Era Or Lowest Erathem",
+      "description": "The full name of the earliest possible geochronologic era or lowest chronostratigraphic erathem attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.",
+      "notes": "",
+      "examples": "`Cenozoic`; `Mesozoic`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/earliestEraOrLowestErathem"
+    },
+    {
+      "name": "latestEraOrHighestErathem",
+      "title": "Latest Era Or Highest Erathem",
+      "description": "The full name of the latest possible geochronologic era or highest chronostratigraphic erathem attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.",
+      "notes": "",
+      "examples": "`Cenozoic`; `Mesozoic`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/latestEraOrHighestErathem"
+    },
+    {
+      "name": "earliestPeriodOrLowestSystem",
+      "title": "Earliest Period Or Lowest System",
+      "description": "The full name of the earliest possible geochronologic period or lowest chronostratigraphic system attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.",
+      "notes": "",
+      "examples": "`Neogene`; `Tertiary`; `Quaternary`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/earliestPeriodOrLowestSystem"
+    },
+    {
+      "name": "latestPeriodOrHighestSystem",
+      "title": "Latest Period Or Highest System",
+      "description": "The full name of the latest possible geochronologic period or highest chronostratigraphic system attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.",
+      "notes": "",
+      "examples": "`Neogene`; `Tertiary`; `Quaternary`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/latestPeriodOrHighestSystem"
+    },
+    {
+      "name": "earliestEpochOrLowestSeries",
+      "title": "Earliest Epoch Or Lowest Series",
+      "description": "The full name of the earliest possible geochronologic epoch or lowest chronostratigraphic series attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.",
+      "notes": "",
+      "examples": "`Holocene`; `Pleistocene`; `Ibexian Series`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/earliestEpochOrLowestSeries"
+    },
+    {
+      "name": "latestEpochOrHighestSeries",
+      "title": "Latest Epoch Or Highest Series",
+      "description": "The full name of the latest possible geochronologic epoch or highest chronostratigraphic series attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.",
+      "notes": "",
+      "examples": "`Holocene`; `Pleistocene`; `Ibexian Series`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/latestEpochOrHighestSeries"
+    },
+    {
+      "name": "earliestAgeOrLowestStage",
+      "title": "Earliest Age Or Lowest Stage",
+      "description": "The full name of the earliest possible geochronologic age or lowest chronostratigraphic stage attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.",
+      "notes": "",
+      "examples": "`Atlantic`; `Boreal`; `Skullrockian`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/earliestAgeOrLowestStage"
+    },
+    {
+      "name": "latestAgeOrHighestStage",
+      "title": "Latest Age Or Highest Stage",
+      "description": "The full name of the latest possible geochronologic age or highest chronostratigraphic stage attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.",
+      "notes": "",
+      "examples": "`Atlantic`; `Boreal`; `Skullrockian`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/latestAgeOrHighestStage"
+    },
+    {
+      "name": "lowestBiostratigraphicZone",
+      "title": "Lowest Biostratigraphic Zone",
+      "description": "The full name of the lowest possible geological biostratigraphic zone of the stratigraphic horizon from which the dwc:MaterialEntity was collected.",
+      "notes": "",
+      "examples": "`Maastrichtian`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/lowestBiostratigraphicZone"
+    },
+    {
+      "name": "highestBiostratigraphicZone",
+      "title": "Highest Biostratigraphic Zone",
+      "description": "The full name of the highest possible geological biostratigraphic zone of the stratigraphic horizon from which the dwc:MaterialEntity was collected.",
+      "notes": "",
+      "examples": "`Blancan`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/highestBiostratigraphicZone"
+    },
+    {
+      "name": "lithostratigraphicTerms",
+      "title": "Lithostratigraphic Terms",
+      "description": "The combination of all lithostratigraphic names for the rock from which the dwc:MaterialEntity was collected.",
+      "notes": "",
+      "examples": "`Pleistocene-Weichselien`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/lithostratigraphicTerms"
+    },
+    {
+      "name": "group",
+      "title": "Group",
+      "description": "The full name of the lithostratigraphic group from which the dwc:MaterialEntity was collected.",
+      "notes": "",
+      "examples": "`Bathurst`; `Lower Wealden`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/group"
+    },
+    {
+      "name": "formation",
+      "title": "Formation",
+      "description": "The full name of the lithostratigraphic formation from which the dwc:MaterialEntity was collected.",
+      "notes": "",
+      "examples": "`Notch Peak Formation`; `House Limestone`; `Fillmore Formation`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/formation"
+    },
+    {
+      "name": "member",
+      "title": "Member",
+      "description": "The full name of the lithostratigraphic member from which the dwc:MaterialEntity was collected.",
+      "notes": "",
+      "examples": "`Lava Dam Member`; `Hellnmaria Member`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/member"
+    },
+    {
+      "name": "bed",
+      "title": "Bed",
+      "description": "The full name of the lithostratigraphic bed from which the dwc:MaterialEntity was collected.",
+      "notes": "",
+      "examples": "`Harlem coal`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/bed"
+    },
+    {
+      "name": "geologicEvent",
+      "title": "Geologic Event",
+      "description": "A name of an identifiable event during which one or more geologic processes acted to create or modify one or more dwc:GeologicalMaterials.",
+      "notes": "This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.",
+      "examples": "`Sevier orogeny`; `Alleghanian orogeny`; `Alpine orogeny`; `Variscan orogeny`; `Vredefort impact`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/geologicEvent"
+    },
+    {
+      "name": "geologicProvince",
+      "title": "Geologic Province",
+      "description": "An extensive named region with similar geologic history, structural, petrographic, or physiographic features throughout in which the GeologicalContext was located.",
+      "notes": "This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.",
+      "examples": "`Northwest Province`; `Surprise Paleovalley`; `Basin and Range` ;`Coastal Plain`; `Piedmont`; `Blue Ridge`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/geologicProvince"
+    },
+    {
+      "name": "lithodemicUnit",
+      "title": "Lithodemic Unit",
+      "description": "A geologic unit that lacks stratification, is primarily comprised of intrusive, deformed, and/or metamorphosed rock, and is characterized by irregularly mixed lithology or highly complicated structural relations.",
+      "notes": "Due to the unstructured nature of complexes, both named units and lithological descriptive terms are acceptable values.",
+      "examples": "`Catalina Core Complex`; `injection complex`; `New England Plutonic Suite`; `Sierra Nevada batholith`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/lithodemicUnit"
+    },
+    {
+      "name": "tectonicUnits",
+      "title": "Tectonic Units",
+      "description": "The combination of all tectonic unit names for the rock from which a dwc:MaterialEntity was collected.",
+      "notes": "Recommended best practice is to use an authoritative tectonic unit lexicon such as the Tectonic Map of Switzerland (TK500). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.",
+      "examples": "`Upper Helvetic`; `Wildhorn Nappe Complex`; `Sublage Nappe`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/tectonicUnits"
+    }
+  ],
+  "primaryKey": "geologicalContext_pk",
+  "weakPrimaryKey": "geologicalContextID"
+}

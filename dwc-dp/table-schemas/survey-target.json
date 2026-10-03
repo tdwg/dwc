@@ -1,0 +1,93 @@
+{
+  "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/survey-target",
+  "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
+  "url": "table-schemas/survey-target.json",
+  "name": "survey-target",
+  "title": "Survey Target",
+  "description": "One or more scopes that describe a target for dwc:Occurrences in an eco:Survey.",
+  "notes": "",
+  "examples": "`all bird species`; `all bird species except Larus gulls, fulmars and kittiwakes`; `reproductive female Ctenomys sociabilis (only)`; `Oncorhynchus mykiss and Oncorhynchus clarkii (only)`, `all total lengths except < 12 inches`",
+  "namespace": "eco",
+  "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/SurveyTarget",
+  "fields": [
+    {
+      "name": "surveyTarget_pk",
+      "title": "Survey Target (Primary Key)",
+      "description": "A unique identifier for an eco:SurveyTarget.",
+      "notes": "The value in this field MAY be changed in aggregation to guarantee uniqueness.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "eco",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/surveyTargetID",
+      "constraints": {
+        "required": true,
+        "unique": true
+      }
+    },
+    {
+      "name": "surveyTargetID",
+      "title": "Survey Target ID",
+      "description": "An identifier for an eco:SurveyTarget.",
+      "notes": "The value in this field MUST be preserved in aggregation. Recommended best practice is to use a globally unique identifier.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "eco",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/surveyTargetID"
+    },
+    {
+      "name": "surveyTargetDescription",
+      "title": "Survey Target Description",
+      "description": "A verbatim description of an eco:SurveyTarget.",
+      "notes": "",
+      "examples": "`all passerine birds`; `all flowering Rosaceae`",
+      "type": "string",
+      "format": "default",
+      "namespace": "eco",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/surveyTargetDescription"
+    },
+    {
+      "name": "isSurveyTargetFullyReported",
+      "title": "Is Survey Target Fully Reported",
+      "description": "Whether an eco:SurveyTarget can be used to infer absence of detection because all counts of detected dwc:Occurrences matching an eco:SurveyTarget were fully reported.",
+      "notes": "Recommended best practice is to follow the TDWG Boolean Controlled Vocabulary http://rs.tdwg.org/tag/doc/boolean/. If true (the survey target is fully reported - nothing was left unreported), then this enables inference of absence of detection for everything in that eco:SurveyTarget that is included but that does not appear in the counts (absent counts signify absence of detection).",
+      "examples": "`true`; `false`",
+      "type": "boolean",
+      "format": "default",
+      "namespace": "eco",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/isSurveyTargetFullyReported",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    },
+    {
+      "name": "abundanceCap",
+      "title": "Abundance Cap",
+      "description": "The reported maximum number of dwc:Occurrences matching an eco:SurveyTarget.",
+      "notes": "",
+      "examples": "`300`; `700`",
+      "type": "integer",
+      "format": "default",
+      "namespace": "eco",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/abundanceCap",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "surveyTargetRemarks",
+      "title": "Survey Target Remarks",
+      "description": "Comments or notes about an eco:SurveyTarget.",
+      "notes": "",
+      "examples": "`Survey target scopes reflect post-facto filtering, not original survey design.`",
+      "type": "string",
+      "format": "default",
+      "namespace": "eco",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/surveyTargetRemarks"
+    }
+  ],
+  "primaryKey": "surveyTarget_pk",
+  "weakPrimaryKey": "surveyTargetID"
+}

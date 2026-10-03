@@ -1,0 +1,169 @@
+{
+  "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/nucleotide-analysis",
+  "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
+  "url": "table-schemas/nucleotide-analysis.json",
+  "name": "nucleotide-analysis",
+  "title": "Nucleotide Analysis",
+  "description": "A link between a dwc:NucleotideSequence and a dwc:Event and a dwc:MaterialEntity from which it was derived, using a specified dwc:Protocol.",
+  "notes": "",
+  "examples": "",
+  "namespace": "dwc",
+  "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/NucleotideAnalysis",
+  "fields": [
+    {
+      "name": "nucleotideAnalysis_pk",
+      "title": "Nucleotide Analysis (Primary Key)",
+      "description": "A unique identifier for a dwc:NucleotideAnalysis.",
+      "notes": "The value in this field MAY be changed in aggregation to guarantee uniqueness.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/identifier",
+      "constraints": {
+        "required": true,
+        "unique": true
+      }
+    },
+    {
+      "name": "nucleotideAnalysisID",
+      "title": "Nucleotide Analysis ID",
+      "description": "An identifier for a dwc:NucleotideAnalysis.",
+      "notes": "The value in this field MUST be preserved in aggregation. Recommended best practice is to use a globally unique identifier.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/identifier"
+    },
+    {
+      "name": "event_fk",
+      "title": "Event (Foreign Key)",
+      "description": "An identifier for a dwc:Event.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/eventID",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "molecularProtocol_fk",
+      "title": "Molecular Protocol (Foreign Key)",
+      "description": "An identifier for a dwc:MolecularProtocol.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/molecularProtocolID",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    },
+    {
+      "name": "nucleotideSequence_fk",
+      "title": "Nucleotide Sequence (Foreign Key)",
+      "description": "An identifier for a dwc:NucleotideSequence.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/identifier",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "materialEntity_fk",
+      "title": "Material Entity (Foreign Key)",
+      "description": "An identifier for a dwc:MaterialEntity.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/materialEntityID",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "readCount",
+      "title": "Read Count",
+      "description": "The number of reads obtained for a processed dwc:NucleotideSequence during a dwc:NucleotideAnalysis.",
+      "notes": "",
+      "examples": "`325`; `73591`; `8302`",
+      "type": "integer",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/readCount"
+    },
+    {
+      "name": "processedTotalReadCount",
+      "title": "Processed Total Read Count",
+      "description": "The total number of reads obtained for a processed dwc:NucleotideSequence during a dwc:NucleotideAnalysis.",
+      "notes": "",
+      "examples": "`50638`; `345987`; `764032`",
+      "type": "integer",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/processedTotalReadCount"
+    },
+    {
+      "name": "rawTotalReadCount",
+      "title": "Raw Total Read Count",
+      "description": "A total number of raw, unprocessed reads from a dwc:NucleotideAnalysis.",
+      "notes": "",
+      "examples": "`70463`; `150456`; `586031`",
+      "type": "integer",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/rawTotalReadCount"
+    }
+  ],
+  "primaryKey": "nucleotideAnalysis_pk",
+  "weakPrimaryKey": "nucleotideAnalysisID",
+  "foreignKeys": [
+    {
+      "fields": "event_fk",
+      "predicate": "material collected during",
+      "reference": {
+        "resource": "event",
+        "fields": "event_pk"
+      }
+    },
+    {
+      "fields": "molecularProtocol_fk",
+      "predicate": "followed",
+      "reference": {
+        "resource": "molecular-protocol",
+        "fields": "molecularProtocol_pk"
+      }
+    },
+    {
+      "fields": "nucleotideSequence_fk",
+      "predicate": "produced",
+      "reference": {
+        "resource": "nucleotide-sequence",
+        "fields": "nucleotideSequence_pk"
+      }
+    },
+    {
+      "fields": "materialEntity_fk",
+      "predicate": "based on",
+      "reference": {
+        "resource": "material",
+        "fields": "materialEntity_pk"
+      }
+    }
+  ]
+}

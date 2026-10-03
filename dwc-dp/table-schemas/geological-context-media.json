@@ -1,0 +1,150 @@
+{
+  "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/geological-context-media",
+  "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
+  "url": "table-schemas/geological-context-media.json",
+  "name": "geological-context-media",
+  "title": "Geological Context Media",
+  "description": "A dwc:GeologicalContext as content in an ac:Media entity.",
+  "notes": "",
+  "examples": "",
+  "namespace": "",
+  "dcterms:isVersionOf": "http://example.com/term-pending//geological-context-media",
+  "fields": [
+    {
+      "name": "media_fk",
+      "title": "Media (Foreign Key)",
+      "description": "An identifier for an ac:Media resource.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/identifier",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    },
+    {
+      "name": "geologicalContext_fk",
+      "title": "Geological Context (Foreign Key)",
+      "description": "An identifier for a dwc:GeologicalContext.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/geologicalContextID",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    },
+    {
+      "name": "subjectCategory",
+      "title": "Subject Category",
+      "description": "A term to describe the content of a image or a region of interest within an image using a controlled value string.",
+      "notes": "Recommended best practice is to use a controlled vocabulary.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/CVtermLiteral"
+    },
+    {
+      "name": "subjectCategoryIRI",
+      "title": "Subject Category IRI",
+      "description": "An IRI of a controlled vocabulary value for the subject category of an ac:Media resource.",
+      "notes": "Recommended best practice is to use a controlled vocabulary.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "Iptc4xmpExt",
+      "dcterms:isVersionOf": "http://iptc.org/std/Iptc4xmpExt/2008-02-29/CVterm"
+    },
+    {
+      "name": "subjectCategoryVocabulary",
+      "title": "Subject Category Source",
+      "description": "A reference to a controlled vocabulary in which the definition of a value in dwc:subjectCategory is given.",
+      "notes": "The Audiovisual Core recommended vocabularies do not need to be cited here. There is no required linkage between individual Subject Category terms and the vocabulary; the mechanism is intended to support discovery of the normative URI for a term, but not guarantee it.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/subjectCategoryVocabulary"
+    },
+    {
+      "name": "subjectPartLiteral",
+      "title": "Subject Part Literal",
+      "description": "The portion or product of organism morphology, behaviour, environment, etc. that is either predominantly shown or particularly well exemplified by the ac:Media resource, denoted by a controlled value string.",
+      "notes": "Values SHOULD be selected from the Controlled Vocabulary for ac:subjectPart. It is best practice to use ac:subjectPart instead of ac:subjectPartLiteral whenever practical.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/subjectPartLiteral"
+    },
+    {
+      "name": "subjectPart",
+      "title": "Subject Part",
+      "description": "The portion or product of organism morphology, behaviour, environment, etc. that is either predominantly shown or particularly well exemplified by the ac:Media resource, denoted by an IRI.",
+      "notes": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/subjectPart"
+    },
+    {
+      "name": "subjectOrientationLiteral",
+      "title": "Subject Orientation Literal",
+      "description": "Specific orientation (= direction, view angle) of the subject represented in the ac:Media resource with respect to the acquisition device, denoted by a controlled value string.",
+      "notes": "Values SHOULD be selected from the Controlled Vocabulary for ac:subjectOrientation. It is best practice to use ac:subjectOrientation instead of ac:subjectOrientationLiteral whenever practical.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/subjectOrientationLiteral"
+    },
+    {
+      "name": "subjectOrientation",
+      "title": "Subject Orientation",
+      "description": "Specific orientation (= direction, view angle) of the subject represented in the ac:Media resource with respect to the acquisition device.",
+      "notes": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/subjectOrientation"
+    },
+    {
+      "name": "physicalSetting",
+      "title": "Physical Setting",
+      "description": "The setting of the content represented in an ac:Media resource, such as images, sounds, and movies if the provider deems them relevant.",
+      "notes": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/physicalSetting"
+    }
+  ],
+  "foreignKeys": [
+    {
+      "fields": "media_fk",
+      "predicate": "this media instance",
+      "reference": {
+        "resource": "media",
+        "fields": "media_pk"
+      }
+    },
+    {
+      "fields": "geologicalContext_fk",
+      "predicate": "about",
+      "reference": {
+        "resource": "geological-context",
+        "fields": "geologicalContext_pk"
+      }
+    }
+  ]
+}

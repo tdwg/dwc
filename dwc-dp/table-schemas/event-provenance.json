@@ -1,0 +1,62 @@
+{
+  "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/event-provenance",
+  "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
+  "url": "table-schemas/event-provenance.json",
+  "name": "event-provenance",
+  "title": "Event Provenance",
+  "description": "A dwc:Provenance for a dwc:Event.",
+  "notes": "",
+  "examples": "",
+  "namespace": "",
+  "dcterms:isVersionOf": "http://example.com/term-pending//event-provenance",
+  "fields": [
+    {
+      "name": "provenance_fk",
+      "title": "Provenance (Foreign Key)",
+      "description": "An identifier for a dwc:Provenance.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/provenanceID",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    },
+    {
+      "name": "event_fk",
+      "title": "Event (Foreign Key)",
+      "description": "An identifier for a dwc:Event.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/eventID",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    }
+  ],
+  "foreignKeys": [
+    {
+      "fields": "provenance_fk",
+      "predicate": "has",
+      "reference": {
+        "resource": "provenance",
+        "fields": "provenance_pk"
+      }
+    },
+    {
+      "fields": "event_fk",
+      "predicate": "for",
+      "reference": {
+        "resource": "event",
+        "fields": "event_pk"
+      }
+    }
+  ]
+}

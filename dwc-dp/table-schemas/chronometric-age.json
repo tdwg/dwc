@@ -1,0 +1,383 @@
+{
+  "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/chronometric-age",
+  "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
+  "url": "table-schemas/chronometric-age.json",
+  "name": "chronometric-age",
+  "title": "Chronometric Age",
+  "description": "An approximation of temporal position (in the sense conveyed by https://www.w3.org/TR/owl-time/#time:TemporalPosition) that is supported via evidence.",
+  "notes": "The age of a dwc:MaterialEntity and how this age is known, whether by a dating assay, a relative association with dated material, or legacy collections information.",
+  "examples": "`An age range associated with a specimen derived from an AMS dating assay applied to an oyster shell in the same stratum`; `An age range associated with a specimen derived from a ceramics analysis based on other materials found in the same stratum`; `A maximum age associated with a specimen derived from K-Ar dating applied to a proximal volcanic tuff found stratigraphically below the specimen`; `An age range of a specimen based on its biostratigraphic context`; `An age of a specimen based on what is reported in legacy collections data.`",
+  "namespace": "chrono",
+  "dcterms:isVersionOf": "http://rs.tdwg.org/chrono/terms/ChronometricAge",
+  "fields": [
+    {
+      "name": "chronometricAge_pk",
+      "title": "Chronometric Age (Primary Key)",
+      "description": "A unique identifier for a chrono:ChronometricAge.",
+      "notes": "The value in this field MAY be changed in aggregation to guarantee uniqueness.",
+      "examples": "`https://www.canadianarchaeology.ca/samples/70673`",
+      "type": "string",
+      "format": "default",
+      "namespace": "chrono",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/chrono/terms/chronometricAgeID",
+      "constraints": {
+        "required": true,
+        "unique": true
+      }
+    },
+    {
+      "name": "chronometricAgeID",
+      "title": "Chronometric Age ID",
+      "description": "An identifier for a chrono:ChronometricAge.",
+      "notes": "The value in this field MUST be preserved in aggregation. Recommended best practice is to use a globally unique identifier.",
+      "examples": "`https://www.canadianarchaeology.ca/samples/70673`",
+      "type": "string",
+      "format": "default",
+      "namespace": "chrono",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/chrono/terms/chronometricAgeID"
+    },
+    {
+      "name": "event_fk",
+      "title": "Event (Foreign Key)",
+      "description": "An identifier for a dwc:Event.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/eventID",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    },
+    {
+      "name": "verbatimChronometricAge",
+      "title": "Verbatim Chronometric Age",
+      "description": "A verbatim age for a dwc:Event, whether reported by a dating assay, associated references, or legacy information.",
+      "notes": "For example, this could be the radiocarbon age as given in an AMS dating report. This could also be simply what is reported as the age of a specimen in legacy collections data.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "chrono",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/chrono/terms/verbatimChronometricAge"
+    },
+    {
+      "name": "chronometricAgeProtocol",
+      "title": "Chronometric Age Protocol",
+      "description": "A description of or reference to a dwc:Protocol used to determine a chrono:ChronometricAge.",
+      "notes": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "chrono",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/chrono/terms/chronometricAgeProtocol"
+    },
+    {
+      "name": "chronometricAgeProtocol_fk",
+      "title": "Chronometric Age Protocol (Foreign Key)",
+      "description": "An identifier for a dwc:Protocol used to determine a chrono:ChronometricAge.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/protocolID",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "uncalibratedChronometricAge",
+      "title": "Uncalibrated Chronometric Age",
+      "description": "An output of a dating assay before it is calibrated into an age using a specific conversion protocol.",
+      "notes": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "chrono",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/chrono/terms/uncalibratedChronometricAge"
+    },
+    {
+      "name": "chronometricAgeConversionProtocol",
+      "title": "Chronometric Age Conversion Protocol",
+      "description": "A description of or reference to a dwc:Protocol used to convert a chrono:uncalibratedChronometricAge into a chronometric age in years, as captured in the chrono:earliestChronometricAge, chrono:earliestChronometricAgeReferenceSystem, chrono:latestChronometricAge, and chrono:latestChronometricAgeReferenceSystem fields.",
+      "notes": "For example, calibration of conventional radiocarbon age or the currently accepted age range of a cultural or geological period.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "chrono",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/chrono/terms/chronometricAgeConversionProtocol"
+    },
+    {
+      "name": "chronometricAgeConversionProtocol_fk",
+      "title": "Chronometric Age Conversion Protocol (Foreign Key)",
+      "description": "An identifier for a dwc:Protocol used to convert a chrono:uncalibratedChronometricAge into a chronometric age in years, as captured in the chrono:earliestChronometricAge, chrono:earliestChronometricAgeReferenceSystem, chrono:latestChronometricAge, and chrono:latestChronometricAgeReferenceSystem fields.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/protocolID",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "earliestChronometricAge",
+      "title": "Earliest Chronometric Age",
+      "description": "A maximum/earliest/oldest possible age of a dwc:MaterialEntity as determined by a dating method.",
+      "notes": "The expected unit for this field is years. This field, if populated, must have an associated chrono:earliestChronometricAgeReferenceSystem.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "chrono",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/chrono/terms/earliestChronometricAge"
+    },
+    {
+      "name": "earliestChronometricAgeReferenceSystem",
+      "title": "Earliest Chronometric Age Reference System",
+      "description": "A reference system associated with a chrono:earliestChronometricAge.",
+      "notes": "Recommended best practice is to use a controlled vocabulary.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "chrono",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/chrono/terms/earliestChronometricAgeReferenceSystem"
+    },
+    {
+      "name": "latestChronometricAge",
+      "title": "Latest Chronometric Age",
+      "description": "A minimum/latest/youngest possible age of a dwc:MaterialEntity as determined by a dating method.",
+      "notes": "The expected unit for this field is years. This field, if populated, must have an associated latestChronometricAgeReferenceSystem.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "chrono",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/chrono/terms/latestChronometricAge"
+    },
+    {
+      "name": "latestChronometricAgeReferenceSystem",
+      "title": "Latest Chronometric Age Reference System",
+      "description": "A reference system associated with a chrono:latestChronometricAge.",
+      "notes": "Recommended best practice is to use a controlled vocabulary.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "chrono",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/chrono/terms/latestChronometricAgeReferenceSystem"
+    },
+    {
+      "name": "chronometricAgeUncertaintyInYears",
+      "title": "Chronometric Age Uncertainty In Years",
+      "description": "A temporal uncertainty of a chrono:earliestChronometricAge and chrono:latestChronometricAge in years.",
+      "notes": "The expected unit for this field is years. The value in this field is number of years before and after the values given in the earliest and latest chronometric age fields within which the actual values are estimated to be.",
+      "examples": "",
+      "type": "integer",
+      "format": "default",
+      "namespace": "chrono",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/chrono/terms/chronometricAgeUncertaintyInYears"
+    },
+    {
+      "name": "chronometricAgeUncertaintyMethod",
+      "title": "Chronometric Age Uncertainty Method",
+      "description": "A method used to generate a value of chrono:ChronometricAgeUncertaintyInYears.",
+      "notes": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "chrono",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/chrono/terms/chronometricAgeUncertaintyMethod"
+    },
+    {
+      "name": "materialDated",
+      "title": "Material Dated",
+      "description": "A description of a dwc:MaterialEntity on which a chrono:ChronometricAgeProtocol was actually performed, if known.",
+      "notes": "Recommended best practice is to use a globally unique identifier.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "chrono",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/chrono/terms/materialDated"
+    },
+    {
+      "name": "materialDated_fk",
+      "title": "Material Dated (Foreign Key)",
+      "description": "An identifier for a dwc:MaterialEntity on which a chrono:ChronometricAgeProtocol was performed, if applicable.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "chrono",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/chrono/terms/materialDatedID",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "materialDatedID",
+      "title": "Material Dated ID",
+      "description": "An identifier for a dwc:MaterialEntity on which a chrono:ChronometricAgeProtocol was performed, if applicable.",
+      "notes": "The value in this field MAY refer to a dwc:MaterialEntity within or external to the dataset in which this record originated.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "chrono",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/chrono/terms/materialDatedID",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "materialDatedRelationship",
+      "title": "Material Dated Relationship",
+      "description": "A relationship of a chrono:materialDated to a dwc:MaterialEntity, from which a chrono:ChronometricAge of the related dwc:MaterialEntity and any related dwc:Occurrence is inferred.",
+      "notes": "Recommended best practice is to use a controlled vocabulary.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "chrono",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/chrono/terms/materialDatedRelationship"
+    },
+    {
+      "name": "chronometricAgeDeterminedBy",
+      "title": "Chronometric Age Determined By",
+      "description": "A list (concatenated and separated) of names of dcterms:Agents responsible for determining the chrono:ChronometricAge.",
+      "notes": "Recommended best practice is to separate the values in a list with space vertical bar space (` | `).",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "chrono",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/chrono/terms/chronometricAgeDeterminedBy"
+    },
+    {
+      "name": "chronometricAgeDeterminedBy_fk",
+      "title": "Chronometric Age Determined By (Foreign Key)",
+      "description": "An identifier for a dcterms:Agent responsible for determining a chrono:ChronometricAge.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/agentID",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "chronometricAgeDeterminedByID",
+      "title": "Chronometric Age Determined By ID",
+      "description": "An identifier for a dcterms:Agent responsible for determining a chrono:ChronometricAge.",
+      "notes": "The value in this field MAY refer to a dcterms:Agent within or external to the dataset in which this record originated.",
+      "examples": "`https://orcid.org/0000-0002-1825-0097`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/agentID",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "chronometricAgeDeterminedDate",
+      "title": "Chronometric Age Determined Date",
+      "description": "A date on which a chrono:ChronometricAge was determined.",
+      "notes": "Recommended best practice is to use a date that conforms to ISO 8601-1:2019.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "chrono",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/chrono/terms/chronometricAgeDeterminedDate"
+    },
+    {
+      "name": "chronometricAgeReferences",
+      "title": "Chronometric Age References",
+      "description": "A list (concatenated and separated) of dcterms:BibliographicResources associated with a chrono:ChronometricAge.",
+      "notes": "Recommended best practice is to separate the values in a list with space vertical bar space (` | `).",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "chrono",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/chrono/terms/chronometricAgeReferences"
+    },
+    {
+      "name": "chronometricAgeRemarks",
+      "title": "Chronometric Age Remarks",
+      "description": "Comments or notes about a chrono:ChronometricAge.",
+      "notes": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "chrono",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/chrono/terms/chronometricAgeRemarks"
+    }
+  ],
+  "primaryKey": "chronometricAge_pk",
+  "weakPrimaryKey": "chronometricAgeID",
+  "foreignKeys": [
+    {
+      "fields": "event_fk",
+      "predicate": "for",
+      "reference": {
+        "resource": "event",
+        "fields": "event_pk"
+      }
+    },
+    {
+      "fields": "chronometricAgeProtocol_fk",
+      "predicate": "followed",
+      "reference": {
+        "resource": "protocol",
+        "fields": "protocol_pk"
+      }
+    },
+    {
+      "fields": "chronometricAgeConversionProtocol_fk",
+      "predicate": "followed",
+      "reference": {
+        "resource": "protocol",
+        "fields": "protocol_pk"
+      }
+    },
+    {
+      "fields": "materialDated_fk",
+      "predicate": "dated",
+      "reference": {
+        "resource": "material",
+        "fields": "materialEntity_pk"
+      }
+    },
+    {
+      "fields": "chronometricAgeDeterminedBy_fk",
+      "predicate": "determined by",
+      "reference": {
+        "resource": "agent",
+        "fields": "agent_pk"
+      }
+    }
+  ],
+  "weakForeignKeys": [
+    {
+      "fields": "materialDatedID",
+      "predicate": "dated",
+      "reference": {
+        "resource": "material",
+        "fields": "materialEntityID"
+      }
+    },
+    {
+      "fields": "chronometricAgeDeterminedByID",
+      "predicate": "determined by",
+      "reference": {
+        "resource": "agent",
+        "fields": "agentID"
+      }
+    }
+  ]
+}

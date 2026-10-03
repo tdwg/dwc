@@ -1,0 +1,62 @@
+{
+  "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/survey-protocol",
+  "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
+  "url": "table-schemas/survey-protocol.json",
+  "name": "survey-protocol",
+  "title": "Survey Protocol",
+  "description": "A dwc:Protocol used for an eco:Survey.",
+  "notes": "",
+  "examples": "",
+  "namespace": "",
+  "dcterms:isVersionOf": "http://example.com/term-pending//survey-protocol",
+  "fields": [
+    {
+      "name": "protocol_fk",
+      "title": "Protocol (Foreign Key)",
+      "description": "An identifier for a dwc:Protocol.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/protocolID",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    },
+    {
+      "name": "survey_fk",
+      "title": "Survey (Foreign Key)",
+      "description": "An identifier for an eco:Survey.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "eco",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/surveyID",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    }
+  ],
+  "foreignKeys": [
+    {
+      "fields": "protocol_fk",
+      "predicate": "followed",
+      "reference": {
+        "resource": "protocol",
+        "fields": "protocol_pk"
+      }
+    },
+    {
+      "fields": "survey_fk",
+      "predicate": "used during",
+      "reference": {
+        "resource": "survey",
+        "fields": "survey_pk"
+      }
+    }
+  ]
+}

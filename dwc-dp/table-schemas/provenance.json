@@ -1,0 +1,441 @@
+{
+  "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/provenance",
+  "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
+  "url": "table-schemas/provenance.json",
+  "name": "provenance",
+  "title": "Provenance",
+  "description": "Information about an entity’s origins.",
+  "notes": "This is a convenience class to group related properties.",
+  "examples": "",
+  "namespace": "dwc",
+  "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/Provenance",
+  "fields": [
+    {
+      "name": "provenance_pk",
+      "title": "Provenance (Primary Key)",
+      "description": "A unique identifier for a dwc:Provenance.",
+      "notes": "The value in this field MAY be changed in aggregation to guarantee uniqueness.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/identifier",
+      "constraints": {
+        "required": true,
+        "unique": true
+      }
+    },
+    {
+      "name": "provenanceID",
+      "title": "Provenance ID",
+      "description": "An identifier for a dwc:Provenance.",
+      "notes": "The value in this field MUST be preserved in aggregation. Recommended best practice is to use a globally unique identifier.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/identifier"
+    },
+    {
+      "name": "datasetName",
+      "title": "Dataset Name",
+      "description": "A name of a source dataset.",
+      "notes": "",
+      "examples": "`Grinnell Resurvey Mammals`; `Lacey Ctenomys Recaptures`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/datasetName"
+    },
+    {
+      "name": "datasetID",
+      "title": "Dataset ID",
+      "description": "An identifier for a dataset from which data originated.",
+      "notes": "Recommended best practice is to use a globally unique identifier.",
+      "examples": "`b15d4952-7d20-46f1-8a3e-556a512b04c5`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/datasetID"
+    },
+    {
+      "name": "fundingAttribution",
+      "title": "Funding Attribution",
+      "description": "A list (concatenated and separated) of names of the funding organizations or agencies that provided funding for a project.",
+      "notes": "Specify the full official name of the funding body. This should include the complete name without abbreviations, unless the abbreviation is an official and commonly recognized form (e.g., NSF for the National Science Foundation). Recommended best practice is to separate the values in a list with space vertical bar space (` | `).",
+      "examples": "`Artsdatabanken`; `National Science Foundation`; `Norges forskningsråd`; `Ocean Census | Nippon Foundation`",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/fundingAttribution"
+    },
+    {
+      "name": "fundingAttribution_fk",
+      "title": "Funding Attribution (Foreign Key)",
+      "description": "An identifier for a dcterms:Agent that financially supported a project.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/fundingAttributionID",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "fundingAttributionID",
+      "title": "Funding Attribution ID",
+      "description": "An identifier for a dcterms:Agent that financially supported a project.",
+      "notes": "Provide a unique identifier for the funding body, such as an identifier used in governmental or international databases. If no official identifier exists, use a persistent and unique identifier within your organization or dataset. Recommended best practice is to separate the values in a list with space vertical bar space (` | `). The value in this field MAY refer to a dcterms:Agent within or external to the dataset in which this record originated.",
+      "examples": "`https://ror.org/00epmv149`; `https://ror.org/00epmv149 | https://ror.org/04jnzhb65`; `https://www.wikidata.org/wiki/Q13102615`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/fundingAttributionID",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "source",
+      "title": "Source",
+      "description": "A related resource from which this resource is derived.",
+      "notes": "The described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dc",
+      "dcterms:isVersionOf": "http://purl.org/dc/elements/1.1/source"
+    },
+    {
+      "name": "sourceIRI",
+      "title": "Source IRI",
+      "description": "An identifier for a resource from which this resource is derived.",
+      "notes": "This property is intended to be used with non-literal values. The described resource may be derived from the related resource in whole or in part. Best practice is to identify the related resource by means of a URI or a string conforming to a formal identification system.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/source"
+    },
+    {
+      "name": "creator",
+      "title": "Creator",
+      "description": "A name of a dcterms:Agent primarily responsible for making the resource.",
+      "notes": "Human readable, or doi number, or URL. Simple name of parent for human readable.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dc",
+      "dcterms:isVersionOf": "http://purl.org/dc/elements/1.1/creator"
+    },
+    {
+      "name": "creator_fk",
+      "title": "Creator (Foreign Key)",
+      "description": "An identifier for a dcterms:Agent primarily responsible for making the resource.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/agentID",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "creatorID",
+      "title": "Creator ID",
+      "description": "An identifier for a dcterms:Agent primarily responsible for making the resource.",
+      "notes": "The value in this field MAY refer to a dcterms:Agent within or external to the dataset in which this record originated.",
+      "examples": "`https://orcid.org/0000-0002-1825-0097`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/agentID",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "providerLiteral",
+      "title": "Provider",
+      "description": "A name of a dcterms:Agent responsible for presenting the ac:Media resource.",
+      "notes": "If no separate Metadata Provider is given, this also attributes the metadata.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/providerLiteral"
+    },
+    {
+      "name": "provider_fk",
+      "title": "Provider (Foreign Key)",
+      "description": "An identifier for a dcterms:Agent responsible for presenting the ac:Media resource.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/agentID",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "providerID",
+      "title": "Provider ID",
+      "description": "An identifier for a dcterms:Agent responsible for presenting the ac:Media resource.",
+      "notes": "The value in this field MAY refer to a dcterms:Agent within or external to the dataset in which this record originated.",
+      "examples": "`https://orcid.org/0000-0002-1825-0097`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/agentID",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "metadataCreatorLiteral",
+      "title": "Metadata Creator",
+      "description": "A name of a dcterms:Agent that created the resource metadata.",
+      "notes": "See also the entry for ac:metadataCreator and the section Namespaces, Prefixes and Term Names in the Audiovisual Core Term List document for discussion of the rationale for separate terms taking URI values from those taking Literal values where both are possible. Normal practice is to use the same Label if both are provided. Labels have no effect on information discovery and are only suggestions.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/metadataCreatorLiteral"
+    },
+    {
+      "name": "metadataCreator_fk",
+      "title": "Metadata Creator (Foreign Key)",
+      "description": "An identifier for a dcterms:Agent that created the resource metadata.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/agentID",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "metadataCreatorID",
+      "title": "Metadata Creator ID",
+      "description": "An identifier for a dcterms:Agent that created the resource metadata.",
+      "notes": "See also the entry for ac:metadataCreatorLiteral and the section Namespaces, Prefixes and Term Names in the Audiovisual Core Term List document for discussion of the rationale for separate terms taking URI values from those taking Literal values where both are possible. Normal practice is to use the same Label if both are provided. Labels have no effect on information discovery and are only suggestions. The value in this field MAY refer to a dcterms:Agent within or external to the dataset in which this record originated.",
+      "examples": "`https://orcid.org/0000-0002-1825-0097`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/agentID",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "metadataProviderLiteral",
+      "title": "Metadata Provider",
+      "description": "A name of a dcterms:Agent that provided the resource metadata.",
+      "notes": "Media resources and their metadata may be served from different institutions, e.g., in the case of aggregators adding user annotations, taxon identifications, or ratings. Compare Provider. See also the entry for ac:metadataProvider in this document and the section Namespaces, Prefixes and Term Names for discussion of the rationale for separate terms taking URI values from those taking Literal values where both are possible. Normal practice is to use the same Label if both are provided. Labels have no effect on information discovery and are only suggestions.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/metadataProviderLiteral"
+    },
+    {
+      "name": "metadataProvider_fk",
+      "title": "Metadata Provider (Foreign Key)",
+      "description": "An identifier for a dcterms:Agent that provided the resource metadata.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/agentID",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "metadataProviderID",
+      "title": "Metadata Provider ID",
+      "description": "An identifier for a dcterms:Agent that provided the resource metadata.",
+      "notes": "Media resources and their metadata may be served from different institutions, e.g., in the case of aggregators adding user annotations, taxon identifications, or ratings. Compare Provider. See also the entry for ac:metadataProviderLiteral and the section Namespaces, Prefixes and Term Names in the Audiovisual Core Term List document for discussion of the rationale for separate terms taking URI values from those taking Literal values where both are possible. Normal practice is to use the same Label if both are provided. Labels have no effect on information discovery and are only suggestions. The value in this field MAY refer to a dcterms:Agent within or external to the dataset in which this record originated.",
+      "examples": "`https://orcid.org/0000-0002-1825-0097`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/agentID",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "furtherInformationURL",
+      "title": "Further Information URL",
+      "description": "A URL of a website that provides additional information about the version of the ac:Media resource that is provided by the Service Access Point.",
+      "notes": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/furtherInformationURL"
+    },
+    {
+      "name": "references",
+      "title": "References",
+      "description": "A related resource that is referenced, cited, or otherwise pointed to by the described resource.",
+      "notes": "This property is intended to be used with non-literal values. This property is an inverse property of Is Referenced By.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/references"
+    },
+    {
+      "name": "bibliographicCitation",
+      "title": "Bibliographic Citation",
+      "description": "A bibliographic reference for the resource.",
+      "notes": "From Dublin Core, 'Recommended practice is to include sufficient bibliographic detail to identify the resource as unambiguously as possible.' The intended usage of this term in Darwin Core is to provide the preferred way to cite the resource itself. Note that the intended usage of dcterms:references in Darwin Core, by contrast, is to point to the definitive source representation of the resource, if one is available.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/bibliographicCitation"
+    },
+    {
+      "name": "projectTitle",
+      "title": "Project Title",
+      "description": "A list (concatenated and separated) of titles or names for projects that contributed to a dwc:Event.",
+      "notes": "Use this term to provide the official name or title of a project as it is commonly known and cited. Avoid abbreviations unless they are widely understood. Recommended best practice is to separate the values in a list with space vertical bar space (` | `).",
+      "examples": "`Arctic Deep`; `Scalidophora i Noreg`; `The Nansen Legacy`; `Underwater Oases of the Mar del Plata Canyon: Talud Continental IV`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/projectTitle"
+    },
+    {
+      "name": "projectID",
+      "title": "Project ID",
+      "description": "A list (concatenated and separated) of identifiers for projects that contributed to a dwc:Event.",
+      "notes": "A projectID may be shared in multiple distinct datasets. The nature of the association can be described in the metadata project description element. This term should be used to provide a globally unique identifier (GUID) for a project, if available. This could be a DOI, URI, or any other persistent identifier that ensures a project can be uniquely distinguished from others. Recommended best practice is to separate the values in a list with space vertical bar space (` | `).",
+      "examples": "`https://arvenetternansen.com/`; `https://doi.org/10.26259/3b15eca7`; `https://doi.org/10.3030/101180559`; `OC202405`; `RCN276730`; `RCN276730 | Artsproject_7-24`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/projectID"
+    },
+    {
+      "name": "feedbackURL",
+      "title": "Feedback URL",
+      "description": "A uniform resource locator (URL) that points to a webpage on which a form may be submitted to gather feedback about the record.",
+      "notes": "Recommended best practice is to optionally include query strings that act to pre-populate web page form elements and communicate the context.",
+      "examples": "`https://example.com/new?title=New+issue&body=This+comment+is+about+CAN12345`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/feedbackURL"
+    }
+  ],
+  "primaryKey": "provenance_pk",
+  "weakPrimaryKey": "provenanceID",
+  "foreignKeys": [
+    {
+      "fields": "fundingAttribution_fk",
+      "predicate": "funded by",
+      "reference": {
+        "resource": "agent",
+        "fields": "agent_pk"
+      }
+    },
+    {
+      "fields": "creator_fk",
+      "predicate": "created by",
+      "reference": {
+        "resource": "agent",
+        "fields": "agent_pk"
+      }
+    },
+    {
+      "fields": "provider_fk",
+      "predicate": "provided by",
+      "reference": {
+        "resource": "agent",
+        "fields": "agent_pk"
+      }
+    },
+    {
+      "fields": "metadataCreator_fk",
+      "predicate": "metadata created by",
+      "reference": {
+        "resource": "agent",
+        "fields": "agent_pk"
+      }
+    },
+    {
+      "fields": "metadataProvider_fk",
+      "predicate": "metadata provided by",
+      "reference": {
+        "resource": "agent",
+        "fields": "agent_pk"
+      }
+    }
+  ],
+  "weakForeignKeys": [
+    {
+      "fields": "fundingAttributionID",
+      "predicate": "funded by",
+      "reference": {
+        "resource": "agent",
+        "fields": "agentID"
+      }
+    },
+    {
+      "fields": "creatorID",
+      "predicate": "created by",
+      "reference": {
+        "resource": "agent",
+        "fields": "agentID"
+      }
+    },
+    {
+      "fields": "providerID",
+      "predicate": "provided by",
+      "reference": {
+        "resource": "agent",
+        "fields": "agentID"
+      }
+    },
+    {
+      "fields": "metadataCreatorID",
+      "predicate": "metadata created by",
+      "reference": {
+        "resource": "agent",
+        "fields": "agentID"
+      }
+    },
+    {
+      "fields": "metadataProviderID",
+      "predicate": "metadata provided by",
+      "reference": {
+        "resource": "agent",
+        "fields": "agentID"
+      }
+    }
+  ]
+}

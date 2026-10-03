@@ -1,0 +1,62 @@
+{
+  "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/occurrence-protocol",
+  "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
+  "url": "table-schemas/occurrence-protocol.json",
+  "name": "occurrence-protocol",
+  "title": "Occurrence Protocol",
+  "description": "A dwc:Protocol used for a dwc:Occurrence.",
+  "notes": "",
+  "examples": "",
+  "namespace": "",
+  "dcterms:isVersionOf": "http://example.com/term-pending//occurrence-protocol",
+  "fields": [
+    {
+      "name": "protocol_fk",
+      "title": "Occurrence Protocol (Foreign Key)",
+      "description": "An identifier for a dwc:Protocol.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/protocolID",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    },
+    {
+      "name": "occurrence_fk",
+      "title": "Occurrence (Foreign Key)",
+      "description": "An identifier for a dwc:Occurrence.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/occurrenceID",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    }
+  ],
+  "foreignKeys": [
+    {
+      "fields": "protocol_fk",
+      "predicate": "followed",
+      "reference": {
+        "resource": "protocol",
+        "fields": "protocol_pk"
+      }
+    },
+    {
+      "fields": "occurrence_fk",
+      "predicate": "used during",
+      "reference": {
+        "resource": "occurrence",
+        "fields": "occurrence_pk"
+      }
+    }
+  ]
+}

@@ -1,0 +1,726 @@
+{
+  "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/identification",
+  "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
+  "url": "table-schemas/identification.json",
+  "name": "identification",
+  "title": "Identification",
+  "description": "A classification of a resource according to a classification scheme.",
+  "notes": "For biology, the assignment of a scientific name or taxon concept to a dwc:Organism.",
+  "examples": "`a subspecies determination of an organism`; `a nomenclatural act designating a specimen as a holotype`",
+  "namespace": "dwc",
+  "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/Identification",
+  "fields": [
+    {
+      "name": "identification_pk",
+      "title": "Identification (Primary Key)",
+      "description": "A unique identifier for a dwc:Identification.",
+      "notes": "The value in this field MAY be changed in aggregation to guarantee uniqueness.",
+      "examples": "`9992`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/identificationID",
+      "constraints": {
+        "required": true,
+        "unique": true
+      }
+    },
+    {
+      "name": "identificationID",
+      "title": "Identification ID",
+      "description": "An identifier for a dwc:Identification.",
+      "notes": "The value in this field MUST be preserved in aggregation. Recommended best practice is to use a globally unique identifier.",
+      "examples": "`9992`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/identificationID"
+    },
+    {
+      "name": "identificationType",
+      "title": "Identification Type",
+      "description": "A category that best matches the nature of a dwc:Identification.",
+      "notes": "The evidentiary basis, analytical approach, or inferential method by which an identification was determined. Values describe the dominant source of information supporting the identification (e.g., morphology, geography, molecular data, functional attributes, relationships, or taxonomic revision), independent of confidence level or taxonomic outcome.",
+      "examples": "`geography`; `taxonomicRevision`; `functionalAttributes`; `nucleotideAnalysis`; `karyotype`; `media`; `relationship`; `features`; `fine features`; `unknown`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/identificationType"
+    },
+    {
+      "name": "identificationProtocol_fk",
+      "title": "Identification Protocol (Foreign Key)",
+      "description": "An identifier for a dwc:Protocol used for a dwc:Identification.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/protocolID",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "materialEntity_fk",
+      "title": "Material Entity (Foreign Key)",
+      "description": "An identifier for a dwc:MaterialEntity based on which a dwc:Identification was made.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/materialEntityID",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "media_fk",
+      "title": "Media (Foreign Key)",
+      "description": "An identifier for an ac:Media resource based on which a dwc:Identification was made.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/identifier",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "nucleotideAnalysis_fk",
+      "title": "Nucleotide Analysis (Foreign Key)",
+      "description": "An identifier for a dwc:NucleotideAnalysis based on which a dwc:Identification was made.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/identifier",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "nucleotideSequence_fk",
+      "title": "Nucleotide Sequence (Foreign Key)",
+      "description": "An identifier for a dwc:NucleotideSequence based on which a dwc:Identification was made.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/identifier",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "occurrence_fk",
+      "title": "Occurrence (Foreign Key)",
+      "description": "An identifier for a dwc:Occurrence based on which a dwc:Identification was made.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/occurrenceID",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "organism_fk",
+      "title": "Organism (Foreign Key)",
+      "description": "An identifier for a dwc:Organism based on which a dwc:Identification was made.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/organismID",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "verbatimIdentification",
+      "title": "Verbatim Identification",
+      "description": "A string representing the classification as it appeared in the original record.",
+      "notes": "This term is meant to allow the capture of an unaltered original identification/determination, including identification qualifiers, hybrid formulas, uncertainties, etc. This term is meant to be used in addition to dwc:geologicalMaterialName or dwc:scientificName (and dwc:identificationQualifier etc.), not instead of it.",
+      "examples": "`Peromyscus sp.`; `Ministrymon sp. nov. 1`; `Anser anser × Branta canadensis`; `Pachyporidae?`; `Potentilla × pantotricha Soják`; `Aconitum pilipes × A. variegatum`; `Lepomis auritus x cyanellus`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/verbatimIdentification"
+    },
+    {
+      "name": "isAcceptedIdentification",
+      "title": "Is Accepted Identification",
+      "description": "An indicator that a dwc:Identification of a dwc:Organism is a currently an accepted or preferred one.",
+      "notes": "Recommended best practice is to follow the TDWG Boolean Controlled Vocabulary http://rs.tdwg.org/tag/doc/boolean/.",
+      "examples": "",
+      "type": "boolean",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/isAcceptedIdentification"
+    },
+    {
+      "name": "taxonFormula",
+      "title": "Taxon Formula",
+      "description": "A string representing the pattern to use to construct a dwc:Identification from dwc:Taxon names and identification qualifiers.",
+      "notes": "Recommended best practice is to use a controlled vocabulary such as https://arctos.database.museum/info/ctDocumentation.cfm?table=cttaxa_formula.",
+      "examples": "`A`; `not A`; `A ?`; `A or B`; `A and B`; `A x B`; `A cf.`; `A aff.`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/taxonFormula"
+    },
+    {
+      "name": "typeStatus",
+      "title": "Type Status",
+      "description": "A list (concatenated and separated) of nomenclatural types (type status, typified scientific name, publication) applied to the subject.",
+      "notes": "Recommended best practice is to separate the values in a list with space vertical bar space (` | `). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.",
+      "examples": "`holotype`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/typeStatus"
+    },
+    {
+      "name": "typeDesignationType",
+      "title": "typeDesignationType",
+      "description": "A category that best matches the nature of a type designation.",
+      "notes": "From https://rs.gbif.org/extension/gbif/1.0/typesandspecimen.xml.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "gbif",
+      "dcterms:isVersionOf": "http://rs.gbif.org/terms/1.0/typeDesignationType"
+    },
+    {
+      "name": "identifiedBy",
+      "title": "Identified By",
+      "description": "A name for a dcterms:Agent responsible for making a dwc:Identification.",
+      "notes": "When used in the context of an eco:Survey, the subject consists of all of the dwc:Identifications related to the eco:Survey. Recommended best practice is to separate the values in a list with space vertical bar space (`|`). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.",
+      "examples": "`James L. Patton`; `Theodore Pappenfuss | Robert Macey`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/identifiedBy"
+    },
+    {
+      "name": "identifiedBy_fk",
+      "title": "Identified By (Foreign Key)",
+      "description": "An identifier for a dcterms:Agent responsible for making a dwc:Identification.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/identifiedByID",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "identifiedByID",
+      "title": "Identified By ID",
+      "description": "An identifier for a dcterms:Agent responsible for making a dwc:Identification.",
+      "notes": "The value in this field MAY refer to a dcterms:Agent within or external to the dataset in which this record originated.",
+      "examples": "`https://orcid.org/0000-0002-1825-0097` (for an individual); `https://orcid.org/0000-0002-1825-0097 | https://orcid.org/0000-0002-1825-0098` (for a list of people)",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/identifiedByID",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "dateIdentified",
+      "title": "Date Identified",
+      "description": "The date on which the dwc:Identification was made.",
+      "notes": "Recommended best practice is to use a date that conforms to ISO 8601-1:2019.",
+      "examples": "`1963-03-08T14:07-06:00` (8 Mar 1963 at or after 2:07pm and before 2:08pm in the time zone six hours earlier than UTC); `2009-02-20T08:40Z` (20 February 2009 at or after 8:40am and before 8:41 UTC); `2018-08-29T15:19` (29 August 2018 at or after 3:19pm and before 3:20pm local time); `1809-02-12` (within the day 12 February 1809); `1906-06` (in the month of June 1906); `1971` (in the year 1971); `2007-03-01T13:00:00Z/2008-05-11T15:30:00Z` (some time within the interval beginning 1 March 2007 at 1pm UTC and before 11 May 2008 at 3:30pm UTC); `1900/1909` (some time within the interval between the beginning of the year 1900 and before the year 1909); `2007-11-13/15` (some time in the interval between the beginning of 13 November 2007 and before 15 November 2007)",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/dateIdentified"
+    },
+    {
+      "name": "identificationReferences",
+      "title": "Identification References",
+      "description": "A list (concatenated and separated) of dcterms:BibliographicResources used in a dwc:Identification.",
+      "notes": "When used in the context of an eco:Survey, the subject consists of all of the dwc:Identifications related to the eco:Survey. Recommended best practice is to separate the values in a list with space vertical bar space (` | `).",
+      "examples": "`Aves del Noroeste Patagonico. Christie et al. 2004.`; `Stebbins, R. Field Guide to Western Reptiles and Amphibians. 3rd Edition. 2003. | Irschick, D.J. and Shaffer, H.B. (1997). The polytypic species revisited: Morphological differentiation among tiger salamanders (Ambystoma tigrinum) (Amphibia: Caudata). Herpetologica, 53(1), 30-49.`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/identificationReferences"
+    },
+    {
+      "name": "identificationVerificationStatus",
+      "title": "Identification Verification Status",
+      "description": "A categorical indicator of the extent to which a dwc:Identification has been verified to be correct.",
+      "notes": "Recommended best practice is to use a controlled vocabulary such as that used in HISPID and ABCD. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.",
+      "examples": "`0` (unverified in HISPID/ABCD).",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/identificationVerificationStatus"
+    },
+    {
+      "name": "identificationRemarks",
+      "title": "Identification Remarks",
+      "description": "Comments or notes about the dwc:Identification.",
+      "notes": "",
+      "examples": "`Distinguished between Anthus correndera and Anthus hellmayri based on the comparative lengths of the uñas.`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/identificationRemarks"
+    },
+    {
+      "name": "taxonID",
+      "title": "Taxon ID",
+      "description": "An identifier for a dwc:Taxon.",
+      "notes": "",
+      "examples": "`8fa58e08-08de-4ac1-b69c-1235340b7001`; `32567`; `https://www.gbif.org/species/212`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/taxonID"
+    },
+    {
+      "name": "scientificNameID",
+      "title": "Scientific Name ID",
+      "description": "An identifier for the nomenclatural (not taxonomic) details of a scientific name.",
+      "notes": "",
+      "examples": "`urn:lsid:ipni.org:names:37829-1:1.3`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/scientificNameID"
+    },
+    {
+      "name": "geologicalClassificationCodes",
+      "title": "Geological Classification Codes",
+      "description": "A list (concatenated and separated) of codes that each identifies a name from a classification system applied to a dwc:GeologicalMaterial.",
+      "notes": "Recommended best practice is to separate the values in a list with space vertical bar space (` | `).",
+      "examples": "`71.02.02a.01` (\"muscovite\" in the Dana classification system); `9.AD.25` (\"garnet group\" in the Nickel-Strunz classification system); `75.01.03.01 | 4.DA.05` (\"quartz\" the Dana classification system and \"quartz group\" in the Nickel-Strunz classification system)",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/classificationCodes"
+    },
+    {
+      "name": "geologicalMaterialNames",
+      "title": "Geological Material Names",
+      "description": "A list (concatenated and separated) of mineral or lithotaxon names for a dwc:GeologicalMaterial.",
+      "notes": "May includes both informal (e.g., variety, synonym) and formal (classification) names. The first name in the list should be considered the preferred name. Recommended best practice is to separate the values in a list with space vertical bar space (` | `).",
+      "examples": "`quartz | smoky quartz`; `muscovite`; `garnet group`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/geologicalMaterialNames"
+    },
+    {
+      "name": "scientificName",
+      "title": "Scientific Name",
+      "description": "A scientific name string, not including authorship, date or identification qualifiers.",
+      "notes": "When applied to an Organism or Occurrence, this term should be used to represent the scientific name that was applied to the associated Organism in accordance with the Taxon to which it was or is currently identified. Names should be compliant to the most recent nomenclatural code. For example, names of hybrids for algae, fungi and plants should follow the rules of the International Code of Nomenclature for algae, fungi, and plants (Shenzhen Code Articles H.1, H.2 and H.3). Thus, use the multiplication sign `×` (Unicode `U+00D7`, HTML `&times;`) to identify a hybrid, not `x` or `X`, if possible.",
+      "examples": "`Coleoptera` (order); `Vespertilionidae` (family); `Manis` (genus); `Ctenomys sociabilis` (genus + specificEpithet); `Ambystoma tigrinum diaboli` (genus + specificEpithet + infraspecificEpithet); `Quercus agrifolia var. oxyadenia` (genus + specificEpithet + taxonRank + infraspecificEpithet); `×Agropogon littoralis`; `Mentha ×smithiana`; `Agrostis stolonifera L. × Polypogon monspeliensis`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/scientificName"
+    },
+    {
+      "name": "scientificNameAuthorship",
+      "title": "Scientific Name Authorship",
+      "description": "The authorship information for the dwc:scientificName formatted according to the conventions of the applicable dwc:nomenclaturalCode.",
+      "notes": "",
+      "examples": "`(Torr.) J.T. Howell`; `(Martinovský) Tzvelev`; `(Györfi, 1952)`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/scientificNameAuthorship"
+    },
+    {
+      "name": "vernacularName",
+      "title": "Vernacular Name",
+      "description": "A common or vernacular name.",
+      "notes": "",
+      "examples": "`cóndor andino`; `death cap`; `rainbow trout`; `Gänsegeier`; `smoky quartz`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/vernacularName"
+    },
+    {
+      "name": "taxonRank",
+      "title": "Taxon Rank",
+      "description": "The taxonomic rank of the most specific name in the dwc:scientificName.",
+      "notes": "Recommended best practice is to use a controlled vocabulary. The taxon ranks of algae, fungi and plants are defined in the International Code of Nomenclature for algae, fungi, and plants (Shenzhen Code Articles H3.2, H4.4 and H.3.1).",
+      "examples": "`subspecies`; `varietas`; `forma`; `species`; `genus`; `nothogenus`; `nothospecies`; `nothosubspecies`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/taxonRank"
+    },
+    {
+      "name": "classificationSystem",
+      "title": "Classification System",
+      "description": "A reference to the classification system in which an authoritative name or formal classification belongs.",
+      "notes": "Recommended best practice is to provide a formal citation or IRI. This term should not be confused with dwc:namePublishedIn as a classification system is not equivalent to a publication in which a taxon is first described. This term should not be confused with dwc:nameAccordingTo as a classification system is not equivalent to a publication or other source in which a specific taxon concept circumscription is defined or implied. This term should not be confused with dwc:nomenclaturalCode as a classification system is not equivalent to code of nomenclature, which states the rules for naming rather than an organized source of names. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.",
+      "examples": "`Strunz, H., Nickel, E.H. (2001): Strunz Mineralogical Tables. Chemical-Structural Mineral Classification System. 9th edition. E. Schweizerbart’sche Verlagsbuchhandlung, Stuttgart, ix + 870 p. (ISBN 3-510-65188-X)`; `Gaines, R.V., Skinner, H.C.W., Foord, E.E., Mason, B., Rosenzweig, A. (1997): Dana's New Mineralogy: The System of Mineralogy of James Dwight Dana and Edward Salisbury Dana. 8th edition. John Wiley & Sons, New York, xlv + 1819 p. (ISBN 0-471-19310-0).`; `https://kos.geospecimens.org/vocab/meteorite-classification`; `Mammal Diversity Database. (2026). Mammal Diversity Database (Version 2.5) [Data set]. [Zenodo](https://zenodo.org/records/10595931). https://doi.org/10.5281/zenodo.17033774`; `Index Fungorum. (2026). Index Fungorum electronic database. Royal Botanic Gardens, Kew. Retrieved August 17, 2026, from indexfungorum.org.`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/classificationSystem"
+    },
+    {
+      "name": "kingdom",
+      "title": "Kingdom",
+      "description": "The full scientific name of the kingdom in which the dwc:Taxon is classified.",
+      "notes": "",
+      "examples": "`Animalia`; `Archaea`; `Bacteria`; `Chromista`; `Fungi`; `Plantae`; `Protozoa`; `Viruses`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/kingdom"
+    },
+    {
+      "name": "phylum",
+      "title": "Phylum",
+      "description": "The full scientific name of the phylum or division in which the dwc:Taxon is classified.",
+      "notes": "",
+      "examples": "`Chordata` (phylum); `Bryophyta` (division)",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/phylum"
+    },
+    {
+      "name": "class",
+      "title": "Class",
+      "description": "The full scientific name of the class in which the dwc:Taxon is classified.",
+      "notes": "",
+      "examples": "`Mammalia`; `Hepaticopsida`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/class"
+    },
+    {
+      "name": "order",
+      "title": "Order",
+      "description": "The full scientific name of the order in which the dwc:Taxon is classified.",
+      "notes": "",
+      "examples": "`Carnivora`; `Monocleales`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/order"
+    },
+    {
+      "name": "superfamily",
+      "title": "Superfamily",
+      "description": "The full scientific name of the superfamily in which the dwc:Taxon is classified.",
+      "notes": "A taxonomic category subordinate to an order and superior to a family. According to ICZN article 29.2, the suffix -oidea is used for a superfamily name.",
+      "examples": "`Achatinoidea`; `Cerithioidea`; `Helicoidea`; `Hypsibioidea`; `Valvatoidea`; `Zonitoidea`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/superfamily"
+    },
+    {
+      "name": "family",
+      "title": "Family",
+      "description": "The full scientific name of the family in which the dwc:Taxon is classified.",
+      "notes": "",
+      "examples": "`Felidae`; `Monocleaceae`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/family"
+    },
+    {
+      "name": "subfamily",
+      "title": "Subfamily",
+      "description": "The full scientific name of the subfamily in which the dwc:Taxon is classified.",
+      "notes": "",
+      "examples": "`Periptyctinae`; `Orchidoideae`; `Sphindociinae`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/subfamily"
+    },
+    {
+      "name": "tribe",
+      "title": "Tribe",
+      "description": "The full scientific name of the tribe in which the dwc:Taxon is classified.",
+      "notes": "",
+      "examples": "`Ortaliini`; `Arethuseae`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/tribe"
+    },
+    {
+      "name": "subtribe",
+      "title": "Subtribe",
+      "description": "The full scientific name of the subtribe in which the dwc:Taxon is classified.",
+      "notes": "",
+      "examples": "`Plotinini`; `Typhaeini`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/subtribe"
+    },
+    {
+      "name": "genus",
+      "title": "Genus",
+      "description": "The full scientific name of the genus in which the dwc:Taxon is classified.",
+      "notes": "",
+      "examples": "`Puma`; `Monoclea`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/genus"
+    },
+    {
+      "name": "genericName",
+      "title": "Generic Name",
+      "description": "The genus part of the dwc:scientificName without authorship.",
+      "notes": "For synonyms the accepted genus and the genus part of the name may be different. The term dwc:genericName should be used together with dwc:specificEpithet to form a binomial and with dwc:infraspecificEpithet to form a trinomial. The term dwc:genericName should only be used for combinations. Uninomials of generic rank do not have a dwc:genericName.",
+      "examples": "`Felis` (for scientificName `Felis concolor`, with accompanying values of `Puma concolor` in acceptedNameUsage and `Puma` in genus)",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/genericName"
+    },
+    {
+      "name": "subgenus",
+      "title": "Subgenus",
+      "description": "The full scientific name of the subgenus in which the dwc:Taxon is classified.",
+      "notes": "A value for this term should be a complete subgenus name as required by the appropriate nomenclatural code.",
+      "examples": "`Abacetus (Parastygis)`; `Dicranum subgen. Orthodicranum`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/subgenus"
+    },
+    {
+      "name": "infragenericEpithet",
+      "title": "Infrageneric Epithet",
+      "description": "The infrageneric part of a binomial name at ranks above species but below genus.",
+      "notes": "The term dwc:infragenericEpithet should be used in conjunction with dwc:genericName, dwc:specificEpithet, dwc:infraspecificEpithet, dwc:taxonRank and dwc:scientificNameAuthorship to represent the individual elements of the complete dwc:scientificName. It can be used to indicate the subgenus placement of a species, which in zoology is often given in parentheses. Can also be used to share infrageneric names such as botanical sections (e.g., `Vicia sect. Cracca`).",
+      "examples": "`Abacetillus` (for scientificName `Abacetus (Abacetillus) ambiguus`); `Cracca` (for scientificName `Vicia sect. Cracca`)",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/infragenericEpithet"
+    },
+    {
+      "name": "specificEpithet",
+      "title": "Specific Epithet",
+      "description": "The name of the first or species epithet of the dwc:scientificName.",
+      "notes": "",
+      "examples": "`concolor`; `gottschei`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/specificEpithet"
+    },
+    {
+      "name": "infraspecificEpithet",
+      "title": "Infraspecific Epithet",
+      "description": "The name of the lowest or terminal infraspecific of the dwc:scientificName.",
+      "notes": "In botany, name strings in literature and identifications may have multiple infraspecific ranks. According to the International Code of Nomenclature for algae, fungi, and plants (Shenzhen Code Articles 6.7 & Art. 24.1), valid names only have two epithets, with the lowest rank being the dwc:infraspecificEpithet. For example: the dwc:infraspecificEpithet in the string `Indigofera charlieriana subsp. sessilis var. scaberrima` is `scaberrima` and the dwc:scientificName is `Indigofera charlieriana var. scaberrima (Schinz) J.B.Gillett`. Use dwc:verbatimIdentification for the full name string used in a dwc:Identification.",
+      "examples": "`concolor` (for scientificName `Puma concolor concolor`); `oxyadenia` (for scientificName `Quercus agrifolia var. oxyadenia`); `laxa` (for scientificName `Cheilanthes hirta f. laxa`); `scaberrima` (for scientificName `Indigofera charlieriana var. scaberrima`)",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/infraspecificEpithet"
+    },
+    {
+      "name": "cultivarEpithet",
+      "title": "Cultivar Epithet",
+      "description": "Part of the name of a cultivar, cultivar group or grex that follows the dwc:scientificName.",
+      "notes": "According to the Rules of the Cultivated Plant Code, a cultivar name consists of a botanical name followed by a cultivar epithet. The value given as the dwc:cultivarEpithet should exclude any quotes. The term dwc:taxonRank should be used to indicate which type of cultivated plant name (e.g., cultivar, cultivar group, grex) is concerned. This epithet, including any enclosing apostrophes or suffix, should be provided in dwc:scientificName as well.",
+      "examples": "`King Edward` (for scientificName `Solanum tuberosum 'King Edward'` and taxonRank `cultivar`); `Mishmiense` (for scientificName `Rhododendron boothii Mishmiense Group` and taxonRank `cultivar group`); `Atlantis` (for scientificName `Paphiopedilum Atlantis grex` and taxonRank `grex`)",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/cultivarEpithet"
+    },
+    {
+      "name": "nameAccordingTo",
+      "title": "Name According To",
+      "description": "The reference to the source in which the specific taxon concept circumscription is defined or implied - traditionally signified by the Latin \"sensu\" or \"sec.\" (from secundum, meaning \"according to\"). For taxa that result from identifications, a reference to the keys, monographs, experts and other sources should be given.",
+      "notes": "This term provides context to the dwc:scientificName. Together with the dwc:scientificName, separated by `sensu` or `sec.`, it forms the taxon concept label, which may be seen as having the same relationship to dwc:taxonConceptID as, for example, dwc:acceptedNameUsage has to dwc:acceptedNameUsageID. When not provided, in Taxon Core data sets the dwc:nameAccordingTo can be taken to be the data set. In this case the data set mostly provides sufficient context to infer the delimitation of the taxon and its relationship with other taxa. In Occurrence Core data sets, when not provided, dwc:nameAccordingTo can be an underlying taxonomy of the data set, e.g., Plants of the World Online (http://powo.science.kew.org/) for vascular plant records in iNaturalist (in which case it should be provided), or, which is the case for most dwc:PreservedSpecimen data sets, the dwc:Identification, in which case there is no further context.",
+      "examples": "`Franz NM, Cardona-Duque J (2013) Description of two new species and phylogenetic reassessment of Perelleschus Wibmer & O’Brien, 1986 (Coleoptera: Curculionidae), with a complete taxonomic concept history of Perelleschus sec. Franz & Cardona-Duque, 2013. Syst Biodivers. 11: 209–236.` (as the full citation of the Franz & Cardona-Duque (2013) in Perelleschus splendida sec. Franz & Cardona-Duque (2013))",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/nameAccordingTo"
+    },
+    {
+      "name": "nomenclaturalCode",
+      "title": "Nomenclatural Code",
+      "description": "The nomenclatural code (or codes in the case of an ambiregnal name) under which the dwc:scientificName is constructed.",
+      "notes": "Recommended best practice is to use a controlled vocabulary.",
+      "examples": "`ICN`; `ICZN`; `BC`; `ICNCP`; `BioCode`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/nomenclaturalCode"
+    },
+    {
+      "name": "nomenclaturalStatus",
+      "title": "Nomenclatural Status",
+      "description": "The status related to the original publication of the name and its conformance to the relevant rules of nomenclature. It is based essentially on an algorithm according to the business rules of the code. It requires no taxonomic opinion.",
+      "notes": "",
+      "examples": "`nom. ambig.`; `nom. illeg.`; `nom. subnud.`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/nomenclaturalStatus"
+    },
+    {
+      "name": "namePublishedIn",
+      "title": "Name Published In",
+      "description": "A reference for the publication in which the dwc:scientificName was originally established under the rules of the associated dwc:nomenclaturalCode.",
+      "notes": "A citation of the first publication of the name in its given combination, not the basionym / original name. Recombinations are often not published in zoology, in which case dwc:namePublishedIn should be empty.",
+      "examples": "`Pearson O. P., and M. I. Christie. 1985. Historia Natural, 5(37):388`; `Forel, Auguste, Diagnosies provisoires de quelques espèces nouvelles de fourmis de Madagascar, récoltées par M. Grandidier., Annales de la Societe Entomologique de Belgique, Comptes-rendus des Seances 30, 1886`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/namePublishedIn"
+    },
+    {
+      "name": "namePublishedInYear",
+      "title": "Name Published In Year",
+      "description": "The four-digit year in which the dwc:scientificName was published.",
+      "notes": "",
+      "examples": "`1915`; `2008`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/namePublishedInYear"
+    },
+    {
+      "name": "taxonRemarks",
+      "title": "Taxon Remarks",
+      "description": "Comments or notes about the taxon or name.",
+      "notes": "",
+      "examples": "`this name is a misspelling in common use`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/taxonRemarks"
+    },
+    {
+      "name": "feedbackURL",
+      "title": "Feedback URL",
+      "description": "A uniform resource locator (URL) that points to a webpage on which a form may be submitted to gather feedback about the record.",
+      "notes": "A uniform resource locator (URL) that points to a webpage on which a form may be submitted to gather feedback about the record.",
+      "examples": "`https://example.com/new?title=New+issue&body=This+comment+is+about+CAN12345`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/feedbackURL"
+    }
+  ],
+  "primaryKey": "identification_pk",
+  "weakPrimaryKey": "identificationID",
+  "foreignKeys": [
+    {
+      "fields": "identificationProtocol_fk",
+      "predicate": "followed",
+      "reference": {
+        "resource": "protocol",
+        "fields": "protocol_pk"
+      }
+    },
+    {
+      "fields": "materialEntity_fk",
+      "predicate": "of a",
+      "reference": {
+        "resource": "material",
+        "fields": "materialEntity_pk"
+      }
+    },
+    {
+      "fields": "media_fk",
+      "predicate": "based on",
+      "reference": {
+        "resource": "media",
+        "fields": "media_pk"
+      }
+    },
+    {
+      "fields": "nucleotideAnalysis_fk",
+      "predicate": "based on",
+      "reference": {
+        "resource": "nucleotide-analysis",
+        "fields": "nucleotideAnalysis_pk"
+      }
+    },
+    {
+      "fields": "nucleotideSequence_fk",
+      "predicate": "based on",
+      "reference": {
+        "resource": "nucleotide-sequence",
+        "fields": "nucleotideSequence_pk"
+      }
+    },
+    {
+      "fields": "occurrence_fk",
+      "predicate": "of an",
+      "reference": {
+        "resource": "occurrence",
+        "fields": "occurrence_pk"
+      }
+    },
+    {
+      "fields": "organism_fk",
+      "predicate": "of an",
+      "reference": {
+        "resource": "organism",
+        "fields": "organism_pk"
+      }
+    },
+    {
+      "fields": "identifiedBy_fk",
+      "predicate": "identified by",
+      "reference": {
+        "resource": "agent",
+        "fields": "agent_pk"
+      }
+    }
+  ],
+  "weakForeignKeys": [
+    {
+      "fields": "identifiedByID",
+      "predicate": "identified by",
+      "reference": {
+        "resource": "agent",
+        "fields": "agentID"
+      }
+    }
+  ]
+}

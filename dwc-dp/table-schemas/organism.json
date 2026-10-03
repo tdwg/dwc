@@ -1,0 +1,97 @@
+{
+  "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/organism",
+  "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
+  "url": "table-schemas/organism.json",
+  "name": "organism",
+  "title": "Organism",
+  "description": "A particular organism or defined group of organisms considered to be taxonomically homogeneous.",
+  "notes": "Instances of the dwc:Organism class are intended to facilitate linking one or more dwc:Identification instances to one or more dwc:Occurrence instances. Therefore, things that are typically assigned scientific names (such as viruses, hybrids, and lichens) and aggregates whose dwc:Occurrences are typically recorded (such as packs, clones, and colonies) are included in the scope of this class.",
+  "examples": "`a specific bird`; `a specific wolf pack`; `a specific instance of a bacterial culture`",
+  "namespace": "dwc",
+  "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/Organism",
+  "fields": [
+    {
+      "name": "organism_pk",
+      "title": "Organism (Primary Key)",
+      "description": "A unique identifier for a dwc:Organism.",
+      "notes": "The value in this field MAY be changed in aggregation to guarantee uniqueness.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/organismID",
+      "constraints": {
+        "required": true,
+        "unique": true
+      }
+    },
+    {
+      "name": "organismID",
+      "title": "Organism ID",
+      "description": "An identifier for a dwc:Organism.",
+      "notes": "The value in this field MUST be preserved in aggregation. Recommended best practice is to use a globally unique identifier.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/organismID"
+    },
+    {
+      "name": "organismScope",
+      "title": "Organism Scope",
+      "description": "A description of the kind of dwc:Organism instance. Can be used to indicate whether the dwc:Organism instance represents a discrete organism or if it represents a particular type of aggregation.",
+      "notes": "Recommended best practice is to use a controlled vocabulary. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.",
+      "examples": "`multicellular organism`; `virus`; `clone`; `pack`; `colony`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/organismScope"
+    },
+    {
+      "name": "organismName",
+      "title": "Organism Name",
+      "description": "A textual name or label assigned to a dwc:Organism instance.",
+      "notes": "",
+      "examples": "`Huberta`; `Boab Prison Tree`; `J pod`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/organismName"
+    },
+    {
+      "name": "causeOfDeath",
+      "title": "Cause Of Death",
+      "description": "An indication of the known or suspected cause of death of a dwc:Organism.",
+      "notes": "The cause may be due to natural causes (e.g., disease, predation), human-related activities (e.g., roadkill, pollution), or other environmental factors (e.g., extreme weather events).",
+      "examples": "`trapped`; `poisoned`; `starved`; `drowned`; `shot`; `old age`; `roadkill`; `disease`; `herbicide`; `burned`; `infanticide`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/causeOfDeath"
+    },
+    {
+      "name": "associatedOrganisms",
+      "title": "Associated Organisms",
+      "description": "A list (concatenated and separated) of identifiers of other dwc:Organisms and the associations of this dwc:Organism to each of them.",
+      "notes": "This term can be used to provide a list of associations to other dwc:Organisms. Note that the dwc:ResourceRelationship class is an alternative means of representing associations, and with more detail. Recommended best practice is to separate the values in a list with space vertical bar space (` | `).",
+      "examples": "`\"sibling of\":\"http://arctos.database.museum/guid/DMNS:Mamm:14171\"`; `\"parent of\":\"http://arctos.database.museum/guid/MSB:Mamm:196208\" | \"parent of\":\"http://arctos.database.museum/guid/MSB:Mamm:196523\" | \"sibling of\":\"http://arctos.database.museum/guid/MSB:Mamm:142638\"`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/associatedOrganisms"
+    },
+    {
+      "name": "organismRemarks",
+      "title": "Organism Remarks",
+      "description": "Comments or notes about the dwc:Organism instance.",
+      "notes": "",
+      "examples": "`One of a litter of six`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/organismRemarks"
+    }
+  ],
+  "primaryKey": "organism_pk",
+  "weakPrimaryKey": "organismID"
+}

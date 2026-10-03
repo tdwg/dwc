@@ -1,0 +1,121 @@
+{
+  "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/material-agent-role",
+  "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
+  "url": "table-schemas/material-agent-role.json",
+  "name": "material-agent-role",
+  "title": "Material Agent Role",
+  "description": "A role filled by a dcterms:Agent with respect to a dwc:MaterialEntity.",
+  "notes": "",
+  "examples": "",
+  "namespace": "",
+  "dcterms:isVersionOf": "http://example.com/term-pending//material-agent-role",
+  "fields": [
+    {
+      "name": "materialEntity_fk",
+      "title": "Material Entity (Foreign Key)",
+      "description": "An identifier for a dwc:MaterialEntity.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/materialEntityID",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    },
+    {
+      "name": "agent_fk",
+      "title": "Agent (Foreign Key)",
+      "description": "An identifier for a dcterms:Agent.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/agentID",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    },
+    {
+      "name": "agentRole",
+      "title": "Agent Role",
+      "description": "A category that best matches the nature of a role of a dcterms:Agent.",
+      "notes": "Recommended best practice is to use a controlled vocabulary for the roles appropriate to the class of resource a dcterms:AgentRole is related to.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/relationshipOfResource"
+    },
+    {
+      "name": "agentRoleIRI",
+      "title": "Agent Role IRI",
+      "description": "An IRI of the controlled vocabulary value for a role of a dcterms:Agent.",
+      "notes": "Recommended best practice is to use an IRI for a term in a controlled vocabulary.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwciri",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/relationshipOfResourceID"
+    },
+    {
+      "name": "agentRoleSource",
+      "title": "Agent Role Source",
+      "description": "A reference to a controlled vocabulary in which the definition of a value in dwc:agentRole is given.",
+      "notes": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dc",
+      "dcterms:isVersionOf": "http://purl.org/dc/elements/1.1/source"
+    },
+    {
+      "name": "agentRoleOrder",
+      "title": "Agent Role Order",
+      "description": "A numerical position of an AgentRole in a set of AgentRoles that have the same combination of agentRole, agentRoleIRI, agentRoleSource and related target identifier.",
+      "notes": "One could use dwc:agentRoleOrder to create an ordered list of collectors (dwc:agentRole = 'collector') for a dwc:MaterialEntity, for example. The first would have dwc:agentRoleOrder=1, the second would have dwc:agentRoleOrder=2.",
+      "examples": "",
+      "type": "integer",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/agentRoleOrder",
+      "constraints": {
+        "required": true,
+        "minimum": 1
+      }
+    },
+    {
+      "name": "agentRoleDate",
+      "title": "Agent Role Date",
+      "description": "An interval during which a dcterms:AgentRole was in effect.",
+      "notes": "Recommended best practice is to use a date that conforms to ISO 8601-1:2019.",
+      "examples": "`1963-03-08T14:07-06:00` (8 Mar 1963 at or after 2:07pm and before 2:08pm in the time zone six hours earlier than UTC); `2009-02-20T08:40Z` (20 February 2009 at or after 8:40am and before 8:41 UTC); `2018-08-29T15:19` (29 August 2018 at or after 3:19pm and before 3:20pm local time); `1809-02-12` (within the day 12 February 1809); `1906-06` (in the month of June 1906); `1971` (in the year 1971); `2007-03-01T13:00:00Z/2008-05-11T15:30:00Z` (some time within the interval beginning 1 March 2007 at 1pm UTC and before 11 May 2008 at 3:30pm UTC); `1900/1909` (some time within the interval between the beginning of the year 1900 and before the year 1909); `2007-11-13/15` (some time in the interval between the beginning of 13 November 2007 and before 15 November 2007)",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/assertionEffectiveDate"
+    }
+  ],
+  "foreignKeys": [
+    {
+      "fields": "materialEntity_fk",
+      "predicate": "role for",
+      "reference": {
+        "resource": "material",
+        "fields": "materialEntity_pk"
+      }
+    },
+    {
+      "fields": "agent_fk",
+      "predicate": "role holder",
+      "reference": {
+        "resource": "agent",
+        "fields": "agent_pk"
+      }
+    }
+  ]
+}

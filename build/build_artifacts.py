@@ -25,6 +25,7 @@ from urllib.error import URLError
 import pandas as pd
 import yaml
 import html
+import xml.etree.ElementTree as ET
 from datetime import date, datetime
 from contextlib import redirect_stdout
 from jinja2 import FileSystemLoader, Environment
@@ -151,20 +152,25 @@ class DwcaXml:
         else:
             return None
 
-    def create_extension_xml(self, languages, file_template):
-        """Build a Darwin Core Extension XML file"""
+    def create_extension_xml(self, languages, file_template=None, *, file_output=None,
+                             issued_date=None, source_iri=None, enforce_version_guard=True):
+        """Build a Darwin Core core/extension XML file.
 
-        # Use ratification date in filenames for stability.
-        ratification_date = self.terms.document_configuration_yaml['doc_modified']
+        ``file_output``/``issued_date`` are used by the schema change detector to
+        render a candidate before a release version has been authorized.
+        ``source_iri`` is written only on the mutable canonical representation.
+        """
 
-        file_output = os.path.join(
-            outputRoot,
-            file_template + ratification_date + ".xml"
-        )
+        ratification_date = issued_date or self.terms.document_configuration_yaml['doc_modified']
+        if file_output is None:
+            file_output = os.path.join(
+                outputRoot,
+                file_template + ratification_date + ".xml"
+            )
         os.makedirs(os.path.dirname(file_output), exist_ok=True)
 
-        if not os.path.isfile(file_output) and not permitNewVersion:
-            raise Exception("Standard has a new version, but %s doesn't exist.  Manual review required, e.g. touch the file %s and rerun." % (file_output, file_output))
+        if enforce_version_guard and not os.path.isfile(file_output) and not permitNewVersion:
+            raise Exception("Standard has a new version, but %s doesn't exist. Manual review required." % file_output)
 
         with open(file_output, 'w', encoding='utf-8') as output_file:
             # Open the XML declaration file
@@ -172,6 +178,19 @@ class DwcaXml:
             # Write the entire XML declaration section to the output file
             header = template_file.read()
             header = header.replace('{issued_date}', ratification_date)
+            # The templates use dcterms:isPartOf. Ensure that prefix is declared,
+            # and add provenance only to the mutable canonical schema.
+            if 'xmlns:dcterms=' not in header:
+                header = header.replace(
+                    '<extension ',
+                    "<extension xmlns:dcterms='http://purl.org/dc/terms/' ",
+                    1,
+                )
+            if source_iri:
+                match = re.search(r'<extension\b[^>]*', header, flags=re.DOTALL)
+                if match and 'dcterms:source=' not in match.group(0):
+                    root_start = match.group(0) + f"\n  dcterms:source='{xml_escape(source_iri)}'"
+                    header = header[:match.start()] + root_start + header[match.end():]
             output_file.write(header)
 
             # Process the list of terms for the extension combining properties from the
@@ -554,6 +573,94 @@ def load_build_configuration(path):
     return config
 
 
+def _schema_publication(artifact):
+    """Return configured publication paths for a maintained DwC-A schema."""
+    publication = artifact.get('publication') or {}
+    canonical_path = str(publication.get('canonical_path', '')).strip().lstrip('/')
+    if not canonical_path:
+        raise ValueError("missing publication.canonical_path")
+    if not canonical_path.endswith('.xml'):
+        raise ValueError("publication.canonical_path must end in .xml")
+    canonical_iri = 'http://rs.tdwg.org/' + canonical_path
+    stem, extension = os.path.splitext(canonical_path)
+    return canonical_path, canonical_iri, stem, extension
+
+
+def _schema_delivery_paths(artifact, release_date):
+    """Return local canonical/version deliverables and their public version IRI."""
+    canonical_path, canonical_iri, stem, extension = _schema_publication(artifact)
+    version_path = f"{stem}_{release_date}{extension}"
+    # Stage schema publication deliverables under dwca/, alongside the other
+    # maintained Darwin Core schema artifacts, rather than under dist/.
+    local_canonical = os.path.join(repoRoot, canonical_path)
+    local_version = os.path.join(repoRoot, version_path)
+    version_iri = 'http://rs.tdwg.org/' + version_path
+    return local_canonical, local_version, canonical_iri, version_iri
+
+
+def _load_published_schema(artifact, local_path_to_rs):
+    """Load the canonical schema from rs.tdwg.org; return None when not yet published."""
+    canonical_path, canonical_iri, _, _ = _schema_publication(artifact)
+    if local_path_to_rs:
+        path = os.path.join(os.path.abspath(os.path.expanduser(local_path_to_rs)), canonical_path)
+        if not os.path.isfile(path):
+            return None
+        with open(path, 'r', encoding='utf-8') as handle:
+            return handle.read()
+    response = requests.get(canonical_iri, timeout=30)
+    if response.status_code == 404:
+        return None
+    response.raise_for_status()
+    return response.text
+
+
+def _schema_comparison_form(xml_text):
+    """Canonicalize substantive schema XML, ignoring release bookkeeping metadata."""
+    # These two attributes describe the released representation rather than the
+    # schema definition. They must not manufacture a substantive change.
+    text = re.sub(r"\s+dc:issued=(['\"]).*?\1", '', xml_text)
+    text = re.sub(r"\s+dcterms:source=(['\"]).*?\1", '', text)
+    # Older templates used dcterms:isPartOf without declaring the prefix. Repair
+    # that in-memory so an already-published legacy canonical can still compare.
+    if 'dcterms:' in text and 'xmlns:dcterms=' not in text:
+        text = text.replace(
+            '<extension ',
+            "<extension xmlns:dcterms='http://purl.org/dc/terms/' ",
+            1,
+        )
+    try:
+        return ET.canonicalize(xml_data=text, strip_text=True)
+    except Exception as exc:
+        raise ValueError(f"schema XML cannot be canonicalized for comparison: {exc}") from exc
+
+
+def _schema_changed(candidate_text, published_text):
+    """Return True if the candidate differs substantively from the published canonical."""
+    if published_text is None:
+        return True
+    return _schema_comparison_form(candidate_text) != _schema_comparison_form(published_text)
+
+
+def _published_schema_version_iri(published_text):
+    """Return the immutable version IRI identified by a published canonical schema."""
+    if published_text is None:
+        return None
+    match = re.search(r"\bdcterms:source=(['\"])(.*?)\1", published_text, flags=re.DOTALL)
+    if not match or not match.group(2).strip():
+        raise ValueError(
+            "published canonical schema has no dcterms:source identifying its immutable version"
+        )
+    return html.unescape(match.group(2).strip())
+
+
+def _schema_version_date(version_iri):
+    """Extract the YYYY-MM-DD release date from an immutable schema version IRI."""
+    match = re.search(r'_(\d{4}-\d{2}-\d{2})\.xml$', str(version_iri))
+    if not match:
+        raise ValueError(f"schema version IRI has no YYYY-MM-DD version suffix: {version_iri}")
+    return match.group(1)
+
+
 def _expected_output_path(terms, artifact):
     """Return the versioned output path implied by the artifact metadata."""
     ratification_date = terms.document_configuration_yaml['doc_modified']
@@ -653,8 +760,8 @@ def _csv_derivative_basename(artifact):
 
 def _csv_derivative_paths(artifact):
     basename = _csv_derivative_basename(artifact)
-    return (os.path.join(outputRoot, 'dist', 'dwca', f"{basename}_horizontal.csv"),
-            os.path.join(outputRoot, 'dist', 'dwca', f"{basename}_vertical.csv"))
+    return (os.path.join(outputRoot, 'dist', 'dwc-a', f"{basename}_horizontal.csv"),
+            os.path.join(outputRoot, 'dist', 'dwc-a', f"{basename}_vertical.csv"))
 
 def _schema_field_names(terms, term_list_path):
     termlist = pd.read_csv(term_list_path, keep_default_na=False, dtype=str)
@@ -1509,6 +1616,8 @@ def generate_template_document(document_state):
     rendered=_substitute_document_metadata(
         template,document_state['authors'],document_state['metadata'],
         document_state['lifecycle']['previous_version_iri'])
+    for placeholder, value in document_state.get('template_substitutions', {}).items():
+        rendered = rendered.replace(placeholder, value)
     unresolved=sorted(set(re.findall(r'\{[A-Za-z0-9_]+\}',rendered)))
     if unresolved:
         raise ValueError("Unresolved placeholder(s): "+', '.join(unresolved))
@@ -1776,6 +1885,39 @@ def _preflight_webpage_configuration(config, dwc_list_terms, dwc_list_databases,
             template=os.path.join(scriptDir,str(d.get('template','')))
             if not os.path.isfile(template): errors.append(prefix+f"template not found: {template}")
             ds['template_path']=template
+            if d.get('schema_inventory', False):
+                core_entries = []
+                extension_entries = []
+                for artifact_index, artifact in enumerate(config.get('artifacts', [])):
+                    if not artifact.get('update', True) or artifact.get('type') not in ('core', 'extension'):
+                        continue
+                    schema_state = artifact_state.get(artifact_index)
+                    if schema_state is None:
+                        raise ValueError(
+                            f"schema inventory source was not successfully preflighted: {artifact.get('name', '<unnamed artifact>')}"
+                        )
+                    version_iri = schema_state.get('schema_version_iri')
+                    if not version_iri:
+                        raise ValueError(
+                            f"schema inventory has no current immutable version for {artifact.get('name', '<unnamed artifact>')}"
+                        )
+                    label = str(artifact.get('schema_label') or artifact.get('name') or '').strip()
+                    if not label:
+                        raise ValueError('schema inventory artifact has no schema_label or name')
+                    release = _schema_version_date(version_iri)
+                    entry = (label.lower(), f"- [{label}]({version_iri}) ({release})")
+                    if artifact.get('type') == 'core':
+                        core_entries.append(entry)
+                    else:
+                        extension_entries.append(entry)
+                dp_version = str((config.get('dwc_dp') or {}).get('version', '')).strip()
+                if not dp_version:
+                    raise ValueError('schema inventory requires dwc_dp.version')
+                ds['template_substitutions'] = {
+                    '{dwca_core_schemas}': '\n'.join(value for _, value in sorted(core_entries)),
+                    '{dwca_extension_schemas}': '\n'.join(value for _, value in sorted(extension_entries)),
+                    '{dwcdp_current_version}': f"[Latest Darwin Core Data Package version]({dp_version})",
+                }
         state['documents'].append(ds)
 
     qrg=webpages.get('qrg',{})
@@ -3742,6 +3884,186 @@ def _dwc_dp_generate_designer(
         json.dump(designer_data, fh, ensure_ascii=False, indent=2)
         fh.write(";\n")
 
+
+def _dwca_xsd_paths():
+    """Return the maintained DwC-A validation schema and its local dependency directory."""
+    xsd_dir = os.path.join(scriptDir, 'xsd')
+    return {
+        'directory': xsd_dir,
+        'extension': os.path.join(xsd_dir, 'extension.xsd'),
+        'dcterms_attributes': os.path.join(xsd_dir, 'dcterms-attributes.xsd'),
+        'xml': os.path.join(xsd_dir, 'xml.xsd'),
+    }
+
+
+def _load_dwca_xml_schema():
+    """Load and compile the DwC-A XSD using local dependencies only."""
+    try:
+        from lxml import etree
+    except ImportError as exc:
+        raise RuntimeError(
+            "DwC-A XML validation requires the Python package 'lxml'."
+        ) from exc
+
+    paths = _dwca_xsd_paths()
+    missing = [
+        path for key, path in paths.items()
+        if key != 'directory' and not os.path.isfile(path)
+    ]
+    if missing:
+        raise RuntimeError(
+            "missing DwC-A XSD validation file(s): " + ", ".join(missing)
+        )
+
+    unreadable = [
+        path for key, path in paths.items()
+        if key != 'directory' and not os.access(path, os.R_OK)
+    ]
+    if unreadable:
+        raise RuntimeError(
+            "unreadable DwC-A XSD validation file(s): " + ", ".join(unreadable)
+        )
+
+    parser = etree.XMLParser(no_network=True)
+    try:
+        schema_document = etree.parse(paths['extension'], parser)
+        schema = etree.XMLSchema(schema_document)
+    except (etree.XMLSyntaxError, etree.XMLSchemaParseError) as exc:
+        raise RuntimeError(
+            f"could not compile {paths['extension']} with local dependencies: {exc}"
+        ) from exc
+
+    return etree, schema, paths
+
+
+def _validate_dwca_xml_file(xml_path, artifact_name, etree, schema, xsd_path):
+    """Validate one generated DwC-A XML schema and return human-readable errors."""
+    errors = []
+    parser = etree.XMLParser(no_network=True)
+    try:
+        document = etree.parse(xml_path, parser)
+    except (OSError, etree.XMLSyntaxError) as exc:
+        return [
+            f"{artifact_name}: generated XML could not be parsed: {xml_path}: {exc}"
+        ]
+
+    if schema.validate(document):
+        return errors
+
+    for entry in schema.error_log:
+        location = xml_path
+        if entry.line:
+            location += f":{entry.line}"
+            if entry.column:
+                location += f":{entry.column}"
+        errors.append(
+            f"{artifact_name}: XSD validation failed at {location}: {entry.message} "
+            f"(schema: {xsd_path})"
+        )
+    if not errors:
+        errors.append(
+            f"{artifact_name}: XSD validation failed: {xml_path} "
+            f"(schema: {xsd_path})"
+        )
+    return errors
+
+
+def _validate_generated_dwca_xml(generated_schemas):
+    """Validate all core/extension XML files generated in the current transaction."""
+    if not generated_schemas:
+        return 0
+
+    etree, schema, paths = _load_dwca_xml_schema()
+    errors = []
+    validated = 0
+    for artifact_name, xml_path in generated_schemas:
+        if not os.path.isfile(xml_path):
+            errors.append(
+                f"{artifact_name}: expected generated XML is missing: {xml_path}"
+            )
+            continue
+        validated += 1
+        errors.extend(
+            _validate_dwca_xml_file(
+                xml_path, artifact_name, etree, schema, paths['extension']
+            )
+        )
+
+    if errors:
+        detail = "\n".join(f"  - {error}" for error in errors)
+        raise RuntimeError(
+            f"DwC-A XML Schema validation failed with {len(errors)} error(s):\n{detail}"
+        )
+    return validated
+
+
+
+def _canonicalize_xsd_for_comparison(path):
+    """Return canonical XML bytes for substantive XSD comparison."""
+    from lxml import etree
+    parser = etree.XMLParser(remove_blank_text=True, no_network=True)
+    document = etree.parse(path, parser)
+    return etree.tostring(document, method='c14n', with_comments=True)
+
+
+def _extension_xsd_publication_state(state):
+    """Determine publication state for maintained DwC-A extension.xsd."""
+    source_path = state['dwca_xsd_paths']['extension']
+    release_date = state['release_date']
+    canonical_rel = os.path.join('dwc-a', 'schemas', 'extension.xsd')
+    version_rel = os.path.join('dwc-a', 'schemas', f'extension_{release_date}.xsd')
+    published_path = os.path.join(state['local_path_to_rs'], canonical_rel)
+
+    if not os.path.isfile(published_path):
+        status = 'initial'
+    elif (
+        _canonicalize_xsd_for_comparison(source_path)
+        != _canonicalize_xsd_for_comparison(published_path)
+    ):
+        status = 'changed'
+    else:
+        status = 'unchanged'
+
+    if status in ('initial', 'changed') and not permitNewVersion:
+        kind = 'initial publication' if status == 'initial' else 'new version'
+        raise RuntimeError(
+            f"DwC-A extension.xsd requires {kind}. "
+            f"Checked: {published_path}. "
+            f"Proposed canonical output: {os.path.join(repoRoot, canonical_rel)}. "
+            f"Proposed versioned output: {os.path.join(repoRoot, version_rel)}. "
+            f"Rerun with --permit-new-version only if this publication is intentional."
+        )
+
+    return {
+        'status': status,
+        'canonical_rel': canonical_rel,
+        'version_rel': version_rel,
+        'published_path': published_path,
+    }
+
+
+def _publish_extension_xsd_to_stage(state):
+    """Write extension.xsd and its supporting local schemas into the transaction stage."""
+    publication = state['extension_xsd_publication']
+    if publication['status'] not in ('initial', 'changed'):
+        return 0
+
+    xsd_paths = state['dwca_xsd_paths']
+    outputs = [
+        (xsd_paths['extension'], publication['canonical_rel']),
+        (xsd_paths['extension'], publication['version_rel']),
+        (xsd_paths['dcterms_attributes'],
+         os.path.join('dwc-a', 'schemas', 'dcterms-attributes.xsd')),
+        (xsd_paths['xml'],
+         os.path.join('dwc-a', 'schemas', 'xml.xsd')),
+    ]
+    for source_path, relative_output in outputs:
+        output_path = os.path.join(repoRoot, relative_output)
+        os.makedirs(os.path.dirname(output_path), exist_ok=True)
+        shutil.copy2(source_path, output_path)
+    return len(outputs)
+
+
 def preflight_configuration(config, log_file):
     """Resolve and validate every build input before any output or cache is written."""
     languages = config.get('languages', DEFAULT_LANGUAGES)
@@ -3751,8 +4073,21 @@ def preflight_configuration(config, log_file):
     local_path_to_rs = local_path_to_rs_override if local_path_to_rs_override is not None else source_repository.get('local_path')
     online = not bool(local_path_to_rs)
 
+    release_date = str(config.get('release_date', '')).strip()
     errors = []
+    if not re.fullmatch(r'\d{4}-\d{2}-\d{2}', release_date):
+        errors.append(
+            "Build configuration must define top-level release_date in YYYY-MM-DD form."
+        )
+
+    dwca_xsd_paths = _dwca_xsd_paths()
+    try:
+        _load_dwca_xml_schema()
+    except Exception as exc:
+        errors.append(f"DwC-A XML Schema validation: {exc}")
+
     new_versions = []
+    initial_publications = []
     terms_cache = {}
     artifact_state = {}
     dwc_dp_state = None
@@ -3910,18 +4245,63 @@ def preflight_configuration(config, log_file):
             except Exception as exc:
                 errors.append(prefix + f"could not validate required term IRIs: {exc}")
 
+        schema_changed = None
+        published_schema_found = None
+        schema_version_iri = None
         try:
-            output_path = _expected_output_path(terms, artifact)
-            parent_error = _check_output_parent(output_path)
-            if parent_error:
-                errors.append(prefix + parent_error)
-            if not os.path.isfile(output_path):
-                new_versions.append((name, output_path))
             if artifact_type in ('core', 'extension'):
+                # A core/extension is versioned only when its fully rendered candidate
+                # differs substantively from the canonical schema already published
+                # on rs.tdwg.org. The DwC repository supplies the template and field
+                # membership configuration; rs.tdwg.org supplies the released term
+                # metadata and the comparison baseline.
+                _schema_publication(artifact)  # validates configuration
+                local_canonical, local_version, _, _ = _schema_delivery_paths(
+                    artifact, release_date
+                )
+                for delivery_path in (local_canonical, local_version):
+                    parent_error = _check_output_parent(delivery_path)
+                    if parent_error:
+                        errors.append(prefix + parent_error)
+                relation_style = artifact.get('relation_style', 'qrg')
+                relation_config = config.get('relation_styles', {}).get(relation_style, {})
+                comparison_builder = DwcaXml(
+                    terms=terms,
+                    xmlTemplate=artifact['template'],
+                    xmlTerms=artifact.get('term_list'),
+                    relationStyle=relation_style,
+                    relationConfig=relation_config,
+                    relationBase=artifact.get('relation_base'),
+                )
+                with tempfile.TemporaryDirectory(prefix='dwca_schema_compare_') as compare_dir:
+                    candidate_path = os.path.join(compare_dir, 'candidate.xml')
+                    comparison_builder.create_extension_xml(
+                        languages, file_output=candidate_path, issued_date=release_date,
+                        enforce_version_guard=False,
+                    )
+                    with open(candidate_path, 'r', encoding='utf-8') as handle:
+                        candidate_text = handle.read()
+                published_text = _load_published_schema(artifact, local_path_to_rs)
+                published_schema_found = published_text is not None
+                schema_changed = _schema_changed(candidate_text, published_text)
+                if schema_changed:
+                    schema_version_iri = _schema_delivery_paths(artifact, release_date)[3]
+                    new_versions.append((name, local_version))
+                    if not published_schema_found:
+                        initial_publications.append((name, local_canonical, local_version))
+                else:
+                    schema_version_iri = _published_schema_version_iri(published_text)
                 for csv_path in _csv_derivative_paths(artifact):
                     csv_parent_error = _check_output_parent(csv_path)
                     if csv_parent_error:
                         errors.append(prefix + csv_parent_error)
+            else:
+                output_path = _expected_output_path(terms, artifact)
+                parent_error = _check_output_parent(output_path)
+                if parent_error:
+                    errors.append(prefix + parent_error)
+                if not os.path.isfile(output_path):
+                    new_versions.append((name, output_path))
         except Exception as exc:
             errors.append(prefix + f"cannot determine output version: {exc}")
             continue
@@ -3956,6 +4336,9 @@ def preflight_configuration(config, log_file):
         artifact_state[index] = {
             'terms': terms,
             'vocabulary_cache': vocabulary_cache,
+            'schema_changed': schema_changed,
+            'published_schema_found': published_schema_found,
+            'schema_version_iri': schema_version_iri,
         }
 
     term_versions_state = None
@@ -3975,8 +4358,16 @@ def preflight_configuration(config, log_file):
     )
 
     if new_versions and not permitNewVersion:
+        initial_names = {name for name, _, _ in initial_publications}
         for name, path in new_versions:
-            errors.append(f"{name}: versioned output does not exist: {path}")
+            if name in initial_names:
+                canonical = next(c for n, c, _ in initial_publications if n == name)
+                errors.append(
+                    f"{name}: no published canonical schema found; initial publication required: "
+                    f"canonical={canonical}, version={path}"
+                )
+            else:
+                errors.append(f"{name}: published canonical schema differs; new version required: {path}")
 
     if errors:
         log_line(log_file, "")
@@ -3987,15 +4378,23 @@ def preflight_configuration(config, log_file):
         for error in errors:
             print(f"  - {error}", file=sys.stderr)
         if new_versions and not permitNewVersion:
-            print("If these are intentional new versions, rerun with --permit-new-version.", file=sys.stderr)
+            if initial_publications:
+                print(
+                    "Initial schema publications and intentional new versions require "
+                    "--permit-new-version.", file=sys.stderr
+                )
+            else:
+                print("If these are intentional new versions, rerun with --permit-new-version.", file=sys.stderr)
         raise SystemExit(1)
 
-    return {
+    state = {
         'languages': languages,
         'github_user': github_user,
         'github_branch': github_branch,
         'local_path_to_rs': local_path_to_rs,
         'online': online,
+        'release_date': release_date,
+        'dwca_xsd_paths': dwca_xsd_paths,
         'artifact_state': artifact_state,
         'dwc_list_terms': dwc_list_terms,
         'dwc_list_databases': dwc_list_databases,
@@ -4004,6 +4403,8 @@ def preflight_configuration(config, log_file):
         'term_versions_state': term_versions_state,
         'dwc_dp_state': dwc_dp_state,
     }
+    state['extension_xsd_publication'] = _extension_xsd_publication_state(state)
+    return state
 
 
 def _display_output_path(path):
@@ -4206,6 +4607,7 @@ def build_from_configuration(config):
         online = state['online']
 
         print(f"Pre-flight passed ({mode} mode): all required resources are accessible.")
+        print(f"    Build release date: {state['release_date']}")
         if state['dwc_dp_state'] is not None:
             dwc_dp_state = state['dwc_dp_state']
             print(
@@ -4425,16 +4827,35 @@ def build_from_configuration(config):
             term_versions_file_count + len(list_csv_paths) + webpage_file_count
             + dwc_dp_generated_file_count
         )
-        for artifact in config['artifacts']:
+        for index, artifact in enumerate(config['artifacts']):
             if not artifact.get('update', True):
                 continue
-            configured_file_count += 3 if artifact.get('type') in ('core', 'extension') else 1
+            if artifact.get('type') in ('core', 'extension'):
+                configured_file_count += (
+                    4 if state['artifact_state'][index]['schema_changed'] else 2
+                )
+            else:
+                configured_file_count += 1
 
         print(f"Build: generating {configured_file_count} files...")
         generated_file_count = (
             term_versions_file_count + len(list_csv_paths) + webpage_file_count
             + dwc_dp_generated_file_count
         )
+
+        generated_dwca_xml = []
+
+        xsd_publication_count = _publish_extension_xsd_to_stage(state)
+        if xsd_publication_count:
+            publication = state['extension_xsd_publication']
+            print(f"Build: DwC-A extension.xsd ({publication['status']} publication)")
+            print("    -> dwc-a/schemas/extension.xsd")
+            print(f"    -> {publication['version_rel']}")
+            print("    -> dwc-a/schemas/dcterms-attributes.xsd")
+            print("    -> dwc-a/schemas/xml.xsd")
+            generated_file_count += xsd_publication_count
+        else:
+            print("Build: DwC-A extension.xsd unchanged; retaining published version.")
 
         for index, artifact in enumerate(config['artifacts']):
             if not artifact.get('update', True):
@@ -4459,32 +4880,78 @@ def build_from_configuration(config):
                 relationBase=artifact.get('relation_base'),
             )
 
-            output_path = _expected_output_path(terms, artifact)
-            display_path = _display_output_path(output_path)
             if artifact_type in ('core', 'extension'):
+                release_date = state['release_date']
+                canonical_path, version_path, _, version_iri = _schema_delivery_paths(
+                    artifact, release_date
+                )
+                canonical_path = _stage_path(canonical_path)
+                version_path = _stage_path(version_path)
                 horizontal_path, vertical_path = _csv_derivative_paths(artifact)
+                changed = bool(state['artifact_state'][index]['schema_changed'])
+                published_schema_found = bool(
+                    state['artifact_state'][index]['published_schema_found']
+                )
                 print(f"  Building {name}")
-                print(f"    -> {display_path}")
+                if changed:
+                    if published_schema_found:
+                        print(f"    schema changed -> {_display_output_path(canonical_path)}")
+                        log_line(log_file, f"Schema changed: {name}")
+                    else:
+                        print(f"    initial publication required -> {_display_output_path(canonical_path)}")
+                        log_line(log_file, f"Initial schema publication: {name}")
+                    print(f"                                -> {_display_output_path(version_path)}")
+                    log_line(log_file, f"Canonical deliverable -> {canonical_path}")
+                    log_line(log_file, f"Version deliverable -> {version_path}")
+                else:
+                    print("    no substantive schema changes -> no new XML schema version created")
+                    log_line(log_file, f"No substantive schema changes: {name}; no new XML schema version created")
                 print(f"    -> {_display_output_path(horizontal_path)}")
                 print(f"    -> {_display_output_path(vertical_path)}")
-                log_line(log_file, f"Building {name} -> {output_path}")
                 log_line(log_file, f"CSV horizontal -> {horizontal_path}")
                 log_line(log_file, f"CSV vertical -> {vertical_path}")
             else:
+                output_path = _expected_output_path(terms, artifact)
+                display_path = _display_output_path(output_path)
                 print(f"  Building {name} -> {display_path}")
                 log_line(log_file, f"Building {name} -> {output_path}")
 
             # Keep implementation-level progress (such as cache writes) in the log.
             with redirect_stdout(log_file):
                 if artifact_type in ('core', 'extension'):
-                    xml_builder.create_extension_xml(languages, artifact['output'])
+                    if changed:
+                        # Immutable historical version: no dcterms:source pointer.
+                        xml_builder.create_extension_xml(
+                            languages, file_output=version_path, issued_date=release_date,
+                            enforce_version_guard=False,
+                        )
+                        # Mutable canonical: same released content plus provenance
+                        # identifying the immutable version to which it is equivalent.
+                        xml_builder.create_extension_xml(
+                            languages, file_output=canonical_path, issued_date=release_date,
+                            source_iri=version_iri, enforce_version_guard=False,
+                        )
+                        generated_dwca_xml.extend([
+                            (f"{name} immutable version", version_path),
+                            (f"{name} canonical", canonical_path),
+                        ])
                     create_csv_derivatives(terms, artifact)
                 else:
                     xml_builder.create_vocabulary_xml(languages, artifact['output'])
-            # Count generated artifact files rather than configured artifact definitions.
-            # A core/extension produces one XML file plus two schema CSV derivatives;
-            # a vocabulary produces one XML file. List-of-Terms CSVs were counted above.
-            generated_file_count += 3 if artifact_type in ('core', 'extension') else 1
+            generated_file_count += (4 if changed else 2) if artifact_type in ('core', 'extension') else 1
+
+        if generated_dwca_xml:
+            print("Validation: checking generated DwC-A XML schemas against extension.xsd...")
+            validated_dwca_count = _validate_generated_dwca_xml(generated_dwca_xml)
+            print(f"DwC-A XML Schema validation passed: {validated_dwca_count} generated XML files.")
+            log_line(
+                log_file,
+                f"DwC-A XML Schema validation passed: {validated_dwca_count} generated XML files "
+                f"against {state['dwca_xsd_paths']['extension']}"
+            )
+        else:
+            print("Validation: no new DwC-A core/extension XML schemas to validate.")
+            log_line(log_file, "DwC-A XML Schema validation: no new core/extension XML generated.")
 
         replace_directories = []
         if state.get('dwc_dp_state') is not None:

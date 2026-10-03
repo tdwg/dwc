@@ -1,0 +1,97 @@
+{
+  "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/protocol",
+  "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
+  "url": "table-schemas/protocol.json",
+  "name": "protocol",
+  "title": "Protocol",
+  "description": "A method used during an action.",
+  "notes": "",
+  "examples": "`a pitfall trap method for sampling ground-dwelling arthropods`; `a point-radius georeferencing method`; `a linear regression model to estimate body mass from skeletal measurements`; `a Bayesian phylogenetic inference method`",
+  "namespace": "dwc",
+  "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/Protocol",
+  "fields": [
+    {
+      "name": "protocol_pk",
+      "title": "Protocol (Primary Key)",
+      "description": "A unique identifier for a dwc:Protocol.",
+      "notes": "The value in this field MAY be changed in aggregation to guarantee uniqueness.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/protocolID",
+      "constraints": {
+        "required": true,
+        "unique": true
+      }
+    },
+    {
+      "name": "protocolID",
+      "title": "Protocol ID",
+      "description": "An identifier for a dwc:Protocol.",
+      "notes": "The value in this field MUST be preserved in aggregation. Recommended best practice is to use a globally unique identifier.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/protocolID"
+    },
+    {
+      "name": "protocolType",
+      "title": "Protocol Type",
+      "description": "A category that best matches the nature of a dwc:Protocol.",
+      "notes": "Recommended best practice is to use a controlled vocabulary.",
+      "examples": "`measurement`; `georeference`; `chronometric age`; `chronometric age conversion`; `sampling effort`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/protocolType"
+    },
+    {
+      "name": "protocolName",
+      "title": "Protocol Name",
+      "description": "A name of a dwc:Protocol.",
+      "notes": "`ad hoc observation`; `bottom trawl`; `point count`; `UV light trap`",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/title"
+    },
+    {
+      "name": "protocolDescription",
+      "title": "Protocol Description",
+      "description": "A detailed description of a dwc:Protocol.",
+      "notes": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/protocolDescription"
+    },
+    {
+      "name": "protocolReferences",
+      "title": "Protocol References",
+      "description": "A list (concatenated and separated) of dcterms:BibliographicResources used in a dwc:Protocol.",
+      "notes": "Recommended best practice is to separate multiple values in a list with space vertical bar space (` | `).",
+      "examples": "`Penguins from space: faecal stains reveal the location of emperor penguin colonies, https://doi.org/10.1111/j.1466-8238.2009.00467.x`",
+      "type": "string",
+      "format": "default",
+      "namespace": "eco",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/protocolReferences"
+    },
+    {
+      "name": "protocolRemarks",
+      "title": "Protocol Remarks",
+      "description": "Comments or notes about a dwc:Protocol.",
+      "notes": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/protocolRemarks"
+    }
+  ],
+  "primaryKey": "protocol_pk",
+  "weakPrimaryKey": "protocolID"
+}

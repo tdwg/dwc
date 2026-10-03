@@ -1,0 +1,173 @@
+{
+  "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/geological-material",
+  "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
+  "url": "table-schemas/geological-material.json",
+  "name": "geological-material",
+  "title": "Geological Material",
+  "description": "A dwc:MaterialEntity that is geological in nature.",
+  "notes": "",
+  "examples": "`a specific mineral`; `a specific rock`; `a specific ore`",
+  "namespace": "dwc",
+  "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/GeologicalMaterial",
+  "fields": [
+    {
+      "name": "materialEntity_fk",
+      "title": "Material Entity (Foreign Key)",
+      "description": "A unique identifier for a dwc:MaterialEntity.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/materialEntityID",
+      "constraints": {
+        "required": true,
+        "unique": true
+      }
+    },
+    {
+      "name": "materialEntityID",
+      "title": "Material Entity ID",
+      "description": "An identifier for a dwc:MaterialEntity.",
+      "notes": "The value in this field MUST be preserved in aggregation. Recommended best practice is to use a globally unique identifier.",
+      "examples": "`06809dc5-f143-459a-be1a-6f03e63fc083`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/materialEntityID"
+    },
+    {
+      "name": "geologicalMaterialNames",
+      "title": "Geological Material Names",
+      "description": "A list (concatenated and separated) of mineral or lithotaxon names for a dwc:GeologicalMaterial.",
+      "notes": "May includes both informal (e.g., variety, synonym) and formal (classification) names. The first name in the list should be considered the preferred name. Recommended best practice is to separate the values in a list with space vertical bar space (` | `).",
+      "examples": "`quartz | smoky quartz`; `muscovite`; `garnet group`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/geologicalMaterialNames"
+    },
+    {
+      "name": "geologicMaterialNameID",
+      "title": "Geologic Material Name ID",
+      "description": "An identifier for a mineral or lithotaxon name for a dwc:GeologicalMaterial. May be a global unique identifier or an identifier specific to the data set.",
+      "notes": "Recommended best practice is to use a persistent, globally unique identifier.",
+      "examples": "`https://geospecimens.org/api/v1/catalog/resource/mineral-name/ba673bdf-7228-11f0-a057-52f8e1bb0628`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/geologicMaterialNameID"
+    },
+    {
+      "name": "geologicalMaterialNameTypes",
+      "title": "Geological Material Name Types",
+      "description": "A list (concatenated and separated) of the types of names provided in dwc:geologicalMaterialNames.",
+      "notes": "If this term is populated, it should have an equal number of items in the list as for the list in dwc:geologicalMaterialNames and the types should have the same order as the names to which they refer. Recommended best practice is to use a controlled vocabulary for the values in a list (e.g., https://kos.geospecimens.org/def/geological-specimen-name-type). See Gavryliv (2023), https://doi.org/10.1180/mgm.2023.23, for a detailed breakdown of informal, alternate names.",
+      "examples": "`species | variety`; `species`; `group`;  `synonym`; `classification`; `historical`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/geologicalMaterialNameTypes"
+    },
+    {
+      "name": "classificationCodes",
+      "title": "Classification Codes",
+      "description": "A list (concatenated and separated) of codes that each identifies a name from a classification system applied to a dwc:GeologicalMaterial.",
+      "notes": "Recommended best practice is to separate the values in a list with space vertical bar space (` | `).",
+      "examples": "`71.02.02a.01` (\"muscovite\" in the Dana classification system); `9.AD.25` (\"garnet group\" in the Nickel-Strunz classification system); `75.01.03.01 | 4.DA.05` (\"quartz\" the Dana classification system and \"quartz group\" in the Nickel-Strunz classification system)",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/classificationCodes"
+    },
+    {
+      "name": "mineralSequence",
+      "title": "Mineral Sequence",
+      "description": "A list (concatenated and separated) of minerals in a dwc:GeologicalMaterial, ordered in a manner that illustrates the relative timing of mineral formation.",
+      "notes": "The list should only contain minerals that belong to a readily identifiable sequence of formation. Therefore, a list may contain a subset of the minerals in a specimen. Minerals that formed in-situ with one another are separated by a plus. Minerals that formed in the sequence are separated by a greater than (' > ') symbol.",
+      "examples": "`Sphalerite > Quartz > Pyrite`; `Calcite > Quartz > Sphalerite > Pyrite`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/mineralSequence"
+    },
+    {
+      "name": "measuredChemistry",
+      "title": "Measured Chemistry",
+      "description": "A concise expression of the chemical composition of a mineral that shows the number of atoms of each element in a molecule, their spatial arrangement, and their linkage to each other.",
+      "notes": "",
+      "examples": "`SiO2 (65.76)`; `TiO2 (32.120)`; `Al2O3 (2.21)`; `(Mg0.77Fe0.23)2SiO4`; `An6.4 Ab73.6 Or20`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/measuredChemistry"
+    },
+    {
+      "name": "measuredChemistrySource",
+      "title": "Measured Chemistry Source",
+      "description": "A list (concatenated and separated) of resources associated with the reported measured chemistry described specifically enough to allow anyone in the future to use the same resources.",
+      "notes": "Recommended best practice is to use full bibliographic citations, global unique identifiers, or resolvable and persistent IRIs. See the broader concept http://rs.tdwg.org/dwc/terms/associatedReferences. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.",
+      "examples": "`Novak, G. A., & Gibbs, G. V. (1971). The crystal chemistry of the silicate garnets. American Mineralogist: Journal of Earth and Planetary Materials, 56(5-6), 791-825.`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/measuredChemistrySource"
+    },
+    {
+      "name": "mineralogicalAnalysisProtocol",
+      "title": "Mineralogical Analysis Protocol",
+      "description": "A technique used to determine the chemical composition or crystallography of a mineral.",
+      "notes": "Acronyms should be avoided even for widely recognized annotations. Recommended best practice is to use a controlled vocabulary such as https://vocabs.ardc.edu.au/viewById/650. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.",
+      "examples": "`Wet Chemistry`; `X-ray fluorescence`; `Electron probe microanalysis`; `Scanning electron microscopy with energy-dispersive X-ray spectroscopy`; `X-ray diffraction`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/mineralogicalAnalysisProtocol"
+    },
+    {
+      "name": "mineralogicalAnalysisProtocol_fk",
+      "title": "Mineralogical Analysis Protocol (Foreign Key)",
+      "description": "An identifier for a dwc:Protocol used for a mineralogical analysis.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/protocolID",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    },
+    {
+      "name": "chemistryRemarks",
+      "title": "Chemistry Remarks",
+      "description": "General remarks about the chemical and isotopic composition of a dwc:GeologicalMaterial.",
+      "notes": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/chemistryRemarks"
+    }
+  ],
+  "weakPrimaryKey": "materialEntityID",
+  "foreignKeys": [
+    {
+      "fields": "materialEntity_fk",
+      "predicate": "is a",
+      "reference": {
+        "resource": "material",
+        "fields": "materialEntity_pk"
+      }
+    },
+    {
+      "fields": "mineralogicalAnalysisProtocol_fk",
+      "predicate": "followed",
+      "reference": {
+        "resource": "protocol",
+        "fields": "protocol_pk"
+      }
+    }
+  ]
+}

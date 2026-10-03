@@ -1,0 +1,62 @@
+{
+  "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/media-usage-policy",
+  "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
+  "url": "table-schemas/media-usage-policy.json",
+  "name": "media-usage-policy",
+  "title": "Media Usage Policy",
+  "description": "Rights, usage, and attribution statements applicable to an ac:Media entity.",
+  "notes": "",
+  "examples": "",
+  "namespace": "",
+  "dcterms:isVersionOf": "http://example.com/term-pending//media-usage-policy",
+  "fields": [
+    {
+      "name": "media_fk",
+      "title": "Media (Foreign Key)",
+      "description": "An identifier for an ac:Media resource.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/identifier",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    },
+    {
+      "name": "usagePolicy_fk",
+      "title": "Usage Policy (Foreign Key)",
+      "description": "An identifier for a dwc:UsagePolicy.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/usagePolicyID",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    }
+  ],
+  "foreignKeys": [
+    {
+      "fields": "media_fk",
+      "predicate": "for",
+      "reference": {
+        "resource": "media",
+        "fields": "media_pk"
+      }
+    },
+    {
+      "fields": "usagePolicy_fk",
+      "predicate": "has",
+      "reference": {
+        "resource": "usage-policy",
+        "fields": "usagePolicy_pk"
+      }
+    }
+  ]
+}

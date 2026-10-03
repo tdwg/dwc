@@ -1,0 +1,98 @@
+{
+  "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/organism-identifier",
+  "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
+  "url": "table-schemas/organism-identifier.json",
+  "name": "organism-identifier",
+  "title": "Organism Identifier",
+  "description": "An adms:Identifier for a dwc:Organism.",
+  "notes": "An important point to note is that properties of the adms:Identifier class are properties of the Identifier, not the resource that it identifies or the agency that issued it.",
+  "examples": "",
+  "namespace": "adms",
+  "dcterms:isVersionOf": "http://www.w3.org/ns/adms#Identifier",
+  "fields": [
+    {
+      "name": "organism_fk",
+      "title": "Organism (Foreign Key)",
+      "description": "An identifier for a dwc:Organism.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/organismID",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    },
+    {
+      "name": "identifier",
+      "title": "Identifier",
+      "description": "An unambiguous reference to a resource within a given context.",
+      "notes": "Recommended best practice is to identify a resource by means of a string conforming to a formal identification system.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "skos",
+      "dcterms:isVersionOf": "http://www.w3.org/2004/02/skos/core#notation",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    },
+    {
+      "name": "identifierType",
+      "title": "Identifier Type",
+      "description": "A category or system that best matches the nature of an identifier (skos:notation).",
+      "notes": "Recommended best practice is to use a controlled vocabulary.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dc",
+      "dcterms:isVersionOf": "http://purl.org/dc/elements/1.1/type"
+    },
+    {
+      "name": "identifierTypeIRI",
+      "title": "Identifier Type IRI",
+      "description": "An IRI of a controlled vocabulary value for a type of identifier.",
+      "notes": "Recommended best practice is to use an IRI for a term in a controlled vocabulary.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/type"
+    },
+    {
+      "name": "identifierTypeSource",
+      "title": "Identifier Type Source",
+      "description": "A reference to a controlled vocabulary in which the definition of a value in dwc:identifierType is given.",
+      "notes": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dc",
+      "dcterms:isVersionOf": "http://purl.org/dc/elements/1.1/source"
+    },
+    {
+      "name": "identifierLanguage",
+      "title": "Identifier Language",
+      "description": "A language in which an identifier is presented.",
+      "notes": "Recommended best practice is to use an ISO639-2 three-letter language code.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dc",
+      "dcterms:isVersionOf": "http://purl.org/dc/elements/1.1/language"
+    }
+  ],
+  "foreignKeys": [
+    {
+      "fields": "organism_fk",
+      "predicate": "for",
+      "reference": {
+        "resource": "organism",
+        "fields": "organism_pk"
+      }
+    }
+  ]
+}

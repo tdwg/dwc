@@ -1,3 +1,8 @@
+# Date assigned to any independently versioned artifact that this build
+# determines requires a new version. Unchanged artifacts retain their
+# existing published version and date.
+release_date: 2026-09-17
+
 # Authoritative source repository for term and document metadata.
 # Set local_path to an rs.tdwg.org checkout for local/offline builds; otherwise
 # github_user and github_branch identify the remote rs.tdwg.org source.
@@ -53,6 +58,7 @@ languages:
 # databases it consumes and the document metadata governing that artifact.
 artifacts:
 - name: Darwin Core Occurrence Core
+  schema_label: Occurrence
   update: true
   type: core
   source:
@@ -65,9 +71,12 @@ artifacts:
     document_metadata_path: dwc_doc_list/
   template: dwca_template/occurrence_core.tmpl
   term_list: dwca_template/occurrence_core_list.csv
-  output: dwca/core/dwc_occurrence_
+  output: dwc-a/core/dwc_occurrence_
+  publication:
+    canonical_path: dwc-a/schemas/core/occurrence.xml
   relation_style: qrg
 - name: Darwin Core Taxon Core
+  schema_label: Taxon
   update: true
   type: core
   source:
@@ -79,9 +88,12 @@ artifacts:
     document_metadata_path: dwc_doc_list/
   template: dwca_template/taxon_core.tmpl
   term_list: dwca_template/taxon_core_list.csv
-  output: dwca/core/dwc_taxon_
+  output: dwc-a/core/dwc_taxon_
+  publication:
+    canonical_path: dwc-a/schemas/core/taxon.xml
   relation_style: qrg
 - name: Darwin Core Event Core
+  schema_label: Event
   update: true
   type: core
   source:
@@ -94,9 +106,12 @@ artifacts:
     document_metadata_path: dwc_doc_list/
   template: dwca_template/event_core.tmpl
   term_list: dwca_template/event_core_list.csv
-  output: dwca/core/dwc_event_
+  output: dwc-a/core/dwc_event_
+  publication:
+    canonical_path: dwc-a/schemas/core/event.xml
   relation_style: qrg
 - name: Darwin Core Resource Relationship extension
+  schema_label: Resource Relationship
   update: true
   type: extension
   source:
@@ -108,9 +123,12 @@ artifacts:
     document_metadata_path: dwc_doc_list/
   template: dwca_template/resource_relationship.tmpl
   term_list: dwca_template/resource_relationship_list.csv
-  output: dwca/extension/resource_relationship_
+  output: dwc-a/extension/resource_relationship_
+  publication:
+    canonical_path: dwc-a/schemas/extension/resource_relationship.xml
   relation_style: qrg
 - name: Darwin Core Measurements or Facts extension
+  schema_label: Measurements or Facts
   update: true
   type: extension
   source:
@@ -122,9 +140,12 @@ artifacts:
     document_metadata_path: dwc_doc_list/
   template: dwca_template/measurements_or_facts.tmpl
   term_list: dwca_template/measurements_or_facts_list.csv
-  output: dwca/extension/measurements_or_facts_
+  output: dwc-a/extension/measurements_or_facts_
+  publication:
+    canonical_path: dwc-a/schemas/extension/measurements_or_facts.xml
   relation_style: qrg
 - name: Darwin Core Identification History extension
+  schema_label: Identification History
   update: true
   type: extension
   source:
@@ -136,9 +157,12 @@ artifacts:
     document_metadata_path: dwc_doc_list/
   template: dwca_template/identification_history.tmpl
   term_list: dwca_template/identification_history_list.csv
-  output: dwca/extension/identification_history_
+  output: dwc-a/extension/identification_history_
+  publication:
+    canonical_path: dwc-a/schemas/extension/identification_history.xml
   relation_style: qrg
 - name: Humboldt extension
+  schema_label: Humboldt Ecological Inventory
   update: true
   type: extension
   source:
@@ -148,9 +172,12 @@ artifacts:
     document_metadata_path: dwc_doc_eco/
   template: dwca_template/humboldt_eco.tmpl
   term_list: dwca_template/humboldt_eco_list.csv
-  output: dwca/extension/humboldt_
+  output: dwc-a/extension/humboldt_
+  publication:
+    canonical_path: dwc-a/schemas/extension/humboldt.xml
   relation_style: qrg
 - name: Chronometric Age extension
+  schema_label: Chronometric Age
   update: true
   type: extension
   source:
@@ -160,7 +187,9 @@ artifacts:
     document_metadata_path: dwc_doc_chrono/
   template: dwca_template/chronometric_age.tmpl
   term_list: dwca_template/chronometric_age_list.csv
-  output: dwca/extension/chronometric_age_
+  output: dwc-a/extension/chronometric_age_
+  publication:
+    canonical_path: dwc-a/schemas/extension/chronometric_age.xml
   relation_style: qrg
 - name: Establishment Means vocabulary
   update: true
@@ -172,7 +201,7 @@ artifacts:
   template: dwca_template/establishment_means.tmpl
   gbif_alternatives: https://api.gbif.org/v1/vocabularies/EstablishmentMeans/concepts/%s/alternativeLabels
   vocabulary_cache: vocabularies/cache/EstablishmentMeans.json
-  output: dwca/vocabulary/dwc/establishment_means_
+  output: dwc-a/schemas/vocabulary/dwc/establishment_means_
 - name: Degree of Establishment vocabulary
   update: true
   type: vocabulary
@@ -183,7 +212,7 @@ artifacts:
   template: dwca_template/degree_of_establishment.tmpl
   gbif_alternatives: https://api.gbif.org/v1/vocabularies/DegreeOfEstablishment/concepts/%s/alternativeLabels
   vocabulary_cache: vocabularies/cache/DegreeOfEstablishment.json
-  output: dwca/vocabulary/dwc/degree_of_establishment_
+  output: dwc-a/schemas/vocabulary/dwc/degree_of_establishment_
 - name: Pathway vocabulary
   update: true
   type: vocabulary
@@ -194,7 +223,7 @@ artifacts:
   template: dwca_template/pathway.tmpl
   gbif_alternatives: https://api.gbif.org/v1/vocabularies/Pathway/concepts/%s/alternativeLabels
   vocabulary_cache: vocabularies/cache/Pathway.json
-  output: dwca/vocabulary/dwc/pathway_
+  output: dwc-a/schemas/vocabulary/dwc/pathway_
 # Rules for turning term IRIs into links in generated XML/documentation.
 relation_styles:
   qrg:
@@ -247,6 +276,13 @@ documents:
   path: pw
   vocab_type: 3
   header_template: pw-template/termlist-header.{locale}.md
+- name: Darwin Core Schemas
+  update: true
+  renderer: document_template
+  schema_inventory: true
+  document_metadata_path: dwc_doc_schemas/
+  path: schemas
+  template: dwc_doc_schemas/index_template.md
 - name: Darwin Core Conceptual Model
   update: false
   renderer: document_template
@@ -293,7 +329,7 @@ documents:
 # Darwin Core Data Package build inputs and destinations.
 # Paths are repository-relative.
 dwc_dp:
-  version: http://rs.tdwg.org/dwc-dp/1.0-dwc
+  version: http://rs.tdwg.org/dwc-dp/1.0-RC
 
   sources:
     tables: build/dwc-dp/dwc-dp-tables.csv
@@ -301,8 +337,8 @@ dwc_dp:
 
   profile:
     template: build/dwc-dp/dwc-dp-profile_template.json
-    output: dwcdp/dwc-dp-profile.json
-    table_schemas: dwcdp/table-schemas
+    output: dwc-dp/dwc-dp-profile.json
+    table_schemas: dwc-dp/table-schemas
 
   qrg:
     template: build/dwc-dp/qrg_template.html
@@ -328,10 +364,10 @@ dwc_dp:
 
   sql:
     config: build/dwc-dp/generate_sql.yaml
-    output: dist/dwcdp/dwc-dp.sql
+    output: dist/dwc-dp/dwc-dp.sql
 
   csv_headers:
-    output: dist/dwcdp/csv
+    output: dist/dwc-dp/csv
 
   designer:
     template: build/dwc-dp/designer_template

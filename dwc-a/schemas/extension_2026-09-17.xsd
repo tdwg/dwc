@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:dc="http://purl.org/dc/terms/"
+    xmlns:ext="http://rs.gbif.org/extension/"
+    targetNamespace="http://rs.gbif.org/extension/"
+    elementFormDefault="qualified"
+    attributeFormDefault="unqualified">
+
+    <!--
+        Pending public review and ratification, this schema is intended to become
+        a non-normative part of the Darwin Core standard.
+
+        The machine-readable relationship below is intentionally inactive until
+        that review and ratification are complete.
+    -->
+    <!-- dcterms:isPartOf="http://www.tdwg.org/standards/450" -->
+
+
+    <!--
+        The established DwC-A XML serialization uses selected DCMI Terms as XML
+        attributes. DCMI's own dcterms.xsd represents those terms as elements, so
+        it cannot directly validate this historical DwC-A representation.
+
+        dcterms-attributes.xsd is a local TDWG compatibility schema containing only
+        the DCMI Terms attribute declarations required by this serialization. It is
+        not a replacement for, or authoritative representation of, DCMI Terms.
+
+        DCMI Terms:
+        https://www.dublincore.org/specifications/dublin-core/dcmi-terms/
+
+        Historical DCMI dcterms.xsd:
+        https://www.dublincore.org/schemas/xmls/qdc/2008/02/11/dcterms.xsd
+    -->
+    <xs:import
+        namespace="http://purl.org/dc/terms/"
+        schemaLocation="dcterms-attributes.xsd"/>
+
+    <!--
+        W3C XML namespace schema, required directly for xml:lang.
+        The local copy permits reproducible validation without network access.
+
+        Canonical source:
+        https://www.w3.org/2001/xml.xsd
+    -->
+    <xs:import
+        namespace="http://www.w3.org/XML/1998/namespace"
+        schemaLocation="xml.xsd"/>
+
+    <xs:element name="extension">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="property" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="translation" minOccurs="0" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:attribute ref="xml:lang" use="required"/>
+                                    <xs:attribute name="label" type="xs:string" use="optional"/>
+                                    <xs:attribute ref="dc:description" use="optional"/>
+                                    <xs:attribute name="examples" type="xs:string" use="optional"/>
+                                    <xs:attribute name="comments" type="xs:string" use="optional"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="name" type="xs:NCName" use="required"/>
+                        <xs:attribute name="namespace" type="xs:anyURI" use="required"/>
+                        <xs:attribute name="qualName" type="xs:anyURI" use="required"/>
+                        <xs:attribute name="group" type="xs:string" use="optional"/>
+                        <xs:attribute name="columnLength" type="xs:positiveInteger" default="128"/>
+                        <xs:attribute name="type" type="ext:dataType" default="string" use="optional"/>
+                        <xs:attribute name="label" type="xs:string" use="optional"/>
+                        <xs:attribute name="comments" type="xs:string" use="optional"/>
+                        <xs:attribute name="examples" type="xs:string" use="optional"/>
+                        <xs:attribute ref="dc:relation"/>
+                        <xs:attribute ref="dc:subject" use="optional"/>
+                        <xs:attribute ref="dc:description" use="optional"/>
+                        <xs:attribute name="thesaurus" type="xs:anyURI"/>
+                        <xs:attribute name="required" type="xs:boolean" default="false"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute ref="dc:title" use="required"/>
+            <xs:attribute name="name" type="xs:NCName" use="required"/>
+            <xs:attribute name="namespace" type="xs:anyURI" use="required"/>
+            <xs:attribute name="rowType" type="xs:anyURI" use="required"/>
+            <xs:attribute ref="dc:creator" use="optional"/>
+            <xs:attribute ref="dc:issued" use="required"/>
+            <xs:attribute ref="dc:description" use="optional"/>
+            <xs:attribute ref="dc:relation" use="optional"/>
+            <xs:attribute ref="dc:subject" use="optional"/>
+            <xs:attribute ref="dc:source" use="optional"/>
+            <xs:attribute ref="dc:isPartOf" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:simpleType name="dataType">
+        <xs:restriction base="xs:token">
+            <xs:enumeration value="string"/>
+            <xs:enumeration value="boolean"/>
+            <xs:enumeration value="integer"/>
+            <xs:enumeration value="decimal"/>
+            <xs:enumeration value="date"/>
+            <xs:enumeration value="uri"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

@@ -1,0 +1,313 @@
+{
+  "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/occurrence-assertion",
+  "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
+  "url": "table-schemas/occurrence-assertion.json",
+  "name": "occurrence-assertion",
+  "title": "Occurrence Assertion",
+  "description": "A dwc:Assertion made by a dcterms:Agent about a dwc:Occurrence.",
+  "notes": "",
+  "examples": "",
+  "namespace": "dwc",
+  "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/MeasurementOrFact",
+  "fields": [
+    {
+      "name": "assertionID",
+      "title": "Assertion ID",
+      "description": "An identifier for a dwc:Assertion.",
+      "notes": "Recommended best practice is to use a globally unique identifier.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/assertionID",
+      "constraints": {
+        "required": false,
+        "unique": true
+      }
+    },
+    {
+      "name": "occurrence_fk",
+      "title": "Occurrence (Foreign Key)",
+      "description": "An identifier for a dwc:Occurrence.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/occurrenceID",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    },
+    {
+      "name": "verbatimAssertionType",
+      "title": "Verbatim Assertion Type",
+      "description": "A string representing the type of dwc:Assertion as it appeared in the original record.",
+      "notes": "This term is meant to allow the capture of an unaltered original name for a dwc:assertionType. This term is meant to be used in addition to dwc:assertionType, not instead of it.",
+      "examples": "`water_temp`; `Fish biomass`; `sampling net mesh size`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/verbatimAssertionType"
+    },
+    {
+      "name": "assertionType",
+      "title": "Assertion Type",
+      "description": "A category that best matches the nature of a dwc:Assertion.",
+      "notes": "Recommended best practice is to use a controlled vocabulary. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.",
+      "examples": "`tail length`; `temperature`; `trap line length`; `survey area`; `trap type`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/assertionType"
+    },
+    {
+      "name": "assertionTypeIRI",
+      "title": "Assertion Type IRI",
+      "description": "An IRI of a controlled vocabulary value for a type of dwc:Assertion.",
+      "notes": "Recommended best practice is to use an IRI for a term in a controlled vocabulary.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwciri",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/iri/measurementType"
+    },
+    {
+      "name": "assertionTypeSource",
+      "title": "Assertion Type Source",
+      "description": "A reference to the controlled vocabulary in which the definition of a value in dwc:assertionType is given.",
+      "notes": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dc",
+      "dcterms:isVersionOf": "http://purl.org/dc/elements/1.1/source"
+    },
+    {
+      "name": "assertionMadeDate",
+      "title": "Assertion Made Date",
+      "description": "A date on which a dwc:Assertion was created.",
+      "notes": "Recommended best practice is to use a date that conforms to ISO 8601-1:2019.",
+      "examples": "`1963-03-08T14:07-06:00` (8 Mar 1963 at or after 2:07pm and before 2:08pm in the time zone six hours earlier than UTC); `2009-02-20T08:40Z` (20 February 2009 at or after 8:40am and before 8:41 UTC); `2018-08-29T15:19` (29 August 2018 at or after 3:19pm and before 3:20pm local time); `1809-02-12` (within the day 12 February 1809); `1906-06` (in the month of June 1906); `1971` (in the year 1971); `2007-03-01T13:00:00Z/2008-05-11T15:30:00Z` (some time within the interval beginning 1 March 2007 at 1pm UTC and before 11 May 2008 at 3:30pm UTC); `1900/1909` (some time within the interval between the beginning of the year 1900 and before the year 1909); `2007-11-13/15` (some time in the interval between the beginning of 13 November 2007 and before 15 November 2007)",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/assertionMadeDate"
+    },
+    {
+      "name": "assertionEffectiveDate",
+      "title": "Assertion Effective Date",
+      "description": "A date-time or time interval during which an asserted state or measurement was deemed to be in effect.",
+      "notes": "Recommended best practice is to use a date that conforms to ISO 8601-1:2019.",
+      "examples": "`1963-03-08T14:07-06:00` (8 Mar 1963 at or after 2:07pm and before 2:08pm in the time zone six hours earlier than UTC); `2009-02-20T08:40Z` (20 February 2009 at or after 8:40am and before 8:41 UTC); `2018-08-29T15:19` (29 August 2018 at or after 3:19pm and before 3:20pm local time); `1809-02-12` (within the day 12 February 1809); `1906-06` (in the month of June 1906); `1971` (in the year 1971); `2007-03-01T13:00:00Z/2008-05-11T15:30:00Z` (some time within the interval beginning 1 March 2007 at 1pm UTC and before 11 May 2008 at 3:30pm UTC); `1900/1909` (some time within the interval between the beginning of the year 1900 and before the year 1909); `2007-11-13/15` (some time in the interval between the beginning of 13 November 2007 and before 15 November 2007)",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/assertionEffectiveDate"
+    },
+    {
+      "name": "assertionValue",
+      "title": "Assertion Value",
+      "description": "An asserted value.",
+      "notes": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/assertionValue"
+    },
+    {
+      "name": "assertionValueIRI",
+      "title": "Assertion Value IRI",
+      "description": "An IRI of the controlled vocabulary value for a value of a dwc:Assertion.",
+      "notes": "Recommended best practice is to use an IRI for a term in a controlled vocabulary.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwciri",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/iri/measurementValue"
+    },
+    {
+      "name": "assertionValueSource",
+      "title": "Assertion Value Source",
+      "description": "A reference to a controlled vocabulary in which the definition of a value in dwc:assertionValue is given.",
+      "notes": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dc",
+      "dcterms:isVersionOf": "http://purl.org/dc/elements/1.1/source"
+    },
+    {
+      "name": "assertionUnit",
+      "title": "Assertion Unit",
+      "description": "Unit associated with the value in dwc:assertionValue.",
+      "notes": "Recommended best practice is to use a controlled vocabulary such as the Ontology of Units of Measure http://www.wurvoc.org/vocabularies/om-1.8/ of SI units, derived units, or other non-SI units accepted for use within the SI. For units that are composed of multiple parts, use the patterns as given in \"A Primer for Communicating Mathematics via Plain Text\" (https://cse.sc.edu/~fenner/latex-ASCII.pdf) by Stephen Fenner (e.g., `g/cm^3` for grams per cubic centimeter). For other units, provide the value as a recognizable standard (e.g., '%') or written out in full and in the plural (e.g., `individuals`). It is fine to provide non-SI units in the original language of the dataset.",
+      "examples": "`m`; `s`; `g`; `ml`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/assertionUnit"
+    },
+    {
+      "name": "assertionUnitIRI",
+      "title": "Assertion Unit IRI",
+      "description": "An IRI of a controlled vocabulary value for the unit of a dwc:assertionValue.",
+      "notes": "Recommended best practice is to use an IRI for a term in a controlled vocabulary.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwciri",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/iri/assertionUnit"
+    },
+    {
+      "name": "assertionUnitSource",
+      "title": "Assertion Unit Source",
+      "description": "A reference to a controlled vocabulary in which the definition of the value in dwc:assertionUnit is given.",
+      "notes": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dc",
+      "dcterms:isVersionOf": "http://purl.org/dc/elements/1.1/source"
+    },
+    {
+      "name": "assertionError",
+      "title": "Assertion Error",
+      "description": "A description of the potential error associated with a dwc:assertionValue.",
+      "notes": "",
+      "examples": "`0.01`; `normal distribution with variation of 2 m`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/assertionError"
+    },
+    {
+      "name": "assertionBy",
+      "title": "Assertion By",
+      "description": "A list (concatenated and separated) of names of dcterms:Agents responsible for making a dwc:Assertion.",
+      "notes": "Recommended best practice is to separate the values in a list with space vertical bar space (` | `).",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/assertionBy"
+    },
+    {
+      "name": "assertionBy_fk",
+      "title": "Assertion By (Foreign Key)",
+      "description": "An identifier for a dcterms:Agent responsible for making a dwc:Assertion.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/agentID",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "assertionByID",
+      "title": "Assertion By ID",
+      "description": "An identifier for a dcterms:Agent responsible for making a dwc:Assertion.",
+      "notes": "The value in this field MAY refer to a dcterms:Agent within or external to the dataset in which this record originated.",
+      "examples": "`https://orcid.org/0000-0002-1825-0097`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/agentID",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "assertionProtocols",
+      "title": "Assertion Protocols",
+      "description": "Names of, references to, or descriptions of dwc:Protocols used in making a dwc:Assertion.",
+      "notes": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/assertionProtocols"
+    },
+    {
+      "name": "assertionProtocol_fk",
+      "title": "Assertion Protocol (Foreign Key)",
+      "description": "An identifier for a dwc:Protocol used to make a dwc:Assertion.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/protocolID",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "assertionReferences",
+      "title": "Assertion References",
+      "description": "A list (concatenated and separated) of dcterms:BibliographicResources associated with a dwc:Assertion.",
+      "notes": "Recommended best practice is to separate the values in a list with space vertical bar space (` | `).",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/assertionReferences"
+    },
+    {
+      "name": "assertionRemarks",
+      "title": "Assertion Remarks",
+      "description": "Comments or notes about a dwc:Assertion.",
+      "notes": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/assertionRemarks"
+    }
+  ],
+  "weakPrimaryKey": "assertionID",
+  "foreignKeys": [
+    {
+      "fields": "occurrence_fk",
+      "predicate": "about",
+      "reference": {
+        "resource": "occurrence",
+        "fields": "occurrence_pk"
+      }
+    },
+    {
+      "fields": "assertionBy_fk",
+      "predicate": "asserted by",
+      "reference": {
+        "resource": "agent",
+        "fields": "agent_pk"
+      }
+    },
+    {
+      "fields": "assertionProtocol_fk",
+      "predicate": "followed",
+      "reference": {
+        "resource": "protocol",
+        "fields": "protocol_pk"
+      }
+    }
+  ],
+  "weakForeignKeys": [
+    {
+      "fields": "assertionByID",
+      "predicate": "asserted by",
+      "reference": {
+        "resource": "agent",
+        "fields": "agentID"
+      }
+    }
+  ]
+}

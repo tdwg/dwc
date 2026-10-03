@@ -1,0 +1,281 @@
+{
+  "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/usage-policy",
+  "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
+  "url": "table-schemas/usage-policy.json",
+  "name": "usage-policy",
+  "title": "Usage Policy",
+  "description": "Information about rights, usage, and attribution statements applicable to an entity.",
+  "notes": "This is a convenience class to group related properties.",
+  "examples": "",
+  "namespace": "dwc",
+  "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/UsagePolicy",
+  "fields": [
+    {
+      "name": "usagePolicy_pk",
+      "title": "Usage Policy (Primary Key)",
+      "description": "A unique identifier for a dwc:UsagePolicy.",
+      "notes": "The value in this field MAY be changed in aggregation to guarantee uniqueness.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/identifier",
+      "constraints": {
+        "required": true,
+        "unique": true
+      }
+    },
+    {
+      "name": "usagePolicyID",
+      "title": "Usage Policy ID",
+      "description": "An identifier for a dwc:UsagePolicy.",
+      "notes": "The value in this field MUST be preserved in aggregation. Recommended best practice is to use a globally unique identifier.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/usagePolicyID"
+    },
+    {
+      "name": "rights",
+      "title": "Rights",
+      "description": "Information about rights held in and over the resource. A full-text, readable copyright statement, as required by the national legislation of the copyright holder. On collections, this applies to all contained objects, unless the object itself has a different statement. Examples: “Copyright XY 2008, all rights reserved”, “© 2008 XY Museum” , `Public Domain.`; `Copyright unknown.` Do not place just the name of the copyright holder(s) here! That belongs in a list in the xmpRights:Owner field, which should be supplied if dc:rights is not 'Public Domain', which is appropriate only if the resource is known to be not under copyright. See also the entry for dcterms:rights in this document and see the DCMI FAQ on DC and DCTERMS Namespaces for discussion of the rationale for terms in two namespaces. Normal practice is to use the same Label if both are provided. Labels have no effect on information discovery and are only suggestions.",
+      "notes": "",
+      "examples": "`Copyright 2014 Ron Thomas` or a URI like `http://creativecommons.org/licenses/by/3.0/legalcode`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dc",
+      "dcterms:isVersionOf": "http://purl.org/dc/elements/1.1/rights"
+    },
+    {
+      "name": "rightsIRI",
+      "title": "Rights IRI",
+      "description": "A URI pointing to structured information about rights held in and over the resource. Examples include http://creativecommons.org/licenses/by/3.0/legalcode and http://creativecommons.org/publicdomain/zero/1.0/. At least one of dcterms:rights and dc:rights must be supplied but, when feasible, supplying both may make the metadata more widely useful. They must specify the same rights. In case of ambiguity, dcterms:rights prevails.",
+      "notes": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/rights"
+    },
+    {
+      "name": "rightsHolder",
+      "title": "Rights Holder",
+      "description": "A name of a dcterms:Agent that owns or manages rights over a resource.",
+      "notes": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/rightsHolder"
+    },
+    {
+      "name": "rightsHolder_fk",
+      "title": "Rights Holder (Foreign Key)",
+      "description": "An identifier for a dcterms:Agent that owns or manages rights over a resource.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/agentID",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "rightsHolderID",
+      "title": "Rights Holder ID",
+      "description": "An identifier for a dcterms:Agent that owns or manages rights over a resource.",
+      "notes": "The value in this field MAY refer to a dcterms:Agent within or external to the dataset in which this record originated.",
+      "examples": "`https://orcid.org/0000-0002-1825-0097`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/agentID",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "owner",
+      "title": "Owner",
+      "description": "A list of legal owners of the resource.",
+      "notes": "`unknown`",
+      "examples": "`The names of the owners `Ron Thomas, Roz Thomas` or a URI that identifies the owner`",
+      "type": "string",
+      "format": "default",
+      "namespace": "xmprights",
+      "dcterms:isVersionOf": "http://ns.adobe.com/xap/1.0/rights/Owner"
+    },
+    {
+      "name": "owner_fk",
+      "title": "Owner (Foreign Key)",
+      "description": "An identifier for a dcterms:Agent that is the owner of the resource.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/agentID",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "ownerID",
+      "title": "Owner ID",
+      "description": "An identifier for a dcterms:Agent that owns the copyright for a resource.",
+      "notes": "The value in this field MAY refer to a dcterms:Agent within or external to the dataset in which this record originated.",
+      "examples": "`https://orcid.org/0000-0002-1825-0097`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/agentID",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "usageTerms",
+      "title": "Usage Terms",
+      "description": "A collection of text instructions on how a resource can be legally used, given in a variety of languages.",
+      "notes": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "xmprights",
+      "dcterms:isVersionOf": "http://ns.adobe.com/xap/1.0/rights/UsageTerms"
+    },
+    {
+      "name": "webStatement",
+      "title": "Web Statement",
+      "description": "A URL defining or further elaborating on a license statement (e.g., a web page explaining the precise terms of use).",
+      "notes": "",
+      "examples": "`http://creativecommons.org/licenses/by-nc-sa/3.0/us/`",
+      "type": "string",
+      "format": "default",
+      "namespace": "xmprights",
+      "dcterms:isVersionOf": "http://ns.adobe.com/xap/1.0/rights/WebStatement"
+    },
+    {
+      "name": "accessRights",
+      "title": "Access Rights",
+      "description": "Information about who can access the resource or an indication of its security status.",
+      "notes": "Access Rights may include information regarding access or restrictions based on privacy, security, or other policies.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/accessRights"
+    },
+    {
+      "name": "license",
+      "title": "License",
+      "description": "A legal document giving official permission to do something with the resource.",
+      "notes": "Recommended practice is to identify the license document with a URI. If this is not possible or feasible, a literal value that identifies the license may be provided.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/license"
+    },
+    {
+      "name": "licenseLogoURL",
+      "title": "License Logo URL",
+      "description": "A URL providing access to a logo that symbolizes a dcterms:license.",
+      "notes": "The originating metadata provider is strongly urged to choose a suitable logo as a graphical representation of the license. Failure to do so may leave downstream aggregators in a difficult position to supply a logo that adequately represents the professional, legal, or social aims of the licensors (license givers). Example: http://i.creativecommons.org/l/by-nc-sa/3.0/us/88x31.png provides access to a logo image.",
+      "examples": "`http://i.creativecommons.org/l/by-nc-sa/3.0/us/88x31.png`",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/licenseLogoURL"
+    },
+    {
+      "name": "licensingException",
+      "title": "Licensing Exception",
+      "description": "The licensing statement for this variant of the ac:Media resource if different from that given in the dcterms:license property of the resource.",
+      "notes": "Required only if this version has different licensing than that of a corresponding ac:Media resource. For example, the highest resolution version may be more restricted than lower resolution versions.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/licensingException"
+    },
+    {
+      "name": "credit",
+      "title": "Credit",
+      "description": "The credit to person(s) and/or organisation(s) required by the supplier of the item to be used when published. This is a free-text field.",
+      "notes": "For example, `Please cite this as…`.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "photoshop",
+      "dcterms:isVersionOf": "http://ns.adobe.com/photoshop/1.0/Credit"
+    },
+    {
+      "name": "attributionLogoURL",
+      "title": "Attribution Logo URL",
+      "description": "The URL of the icon or logo image to appear in source attribution.",
+      "notes": "",
+      "examples": "`http://www.morphbank.net/images/userLogos/11a.jpg`",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/attributionLogoURL"
+    },
+    {
+      "name": "attributionLinkURL",
+      "title": "Attribution Link URL",
+      "description": "The URL where information about ownership, attribution, etc. of the resource may be found.",
+      "notes": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/attributionLinkURL"
+    }
+  ],
+  "primaryKey": "usagePolicy_pk",
+  "weakPrimaryKey": "usagePolicyID",
+  "foreignKeys": [
+    {
+      "fields": "rightsHolder_fk",
+      "predicate": "rights held by",
+      "reference": {
+        "resource": "agent",
+        "fields": "agent_pk"
+      }
+    },
+    {
+      "fields": "owner_fk",
+      "predicate": "owned by",
+      "reference": {
+        "resource": "agent",
+        "fields": "agent_pk"
+      }
+    }
+  ],
+  "weakForeignKeys": [
+    {
+      "fields": "rightsHolderID",
+      "predicate": "rights held by",
+      "reference": {
+        "resource": "agent",
+        "fields": "agentID"
+      }
+    },
+    {
+      "fields": "ownerID",
+      "predicate": "owned by",
+      "reference": {
+        "resource": "agent",
+        "fields": "agentID"
+      }
+    }
+  ]
+}

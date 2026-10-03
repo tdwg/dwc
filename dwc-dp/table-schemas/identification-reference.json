@@ -1,0 +1,73 @@
+{
+  "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/identification-reference",
+  "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
+  "url": "table-schemas/identification-reference.json",
+  "name": "identification-reference",
+  "title": "Identification Reference",
+  "description": "A dcterms:BibliographicResource related to a dwc:Identification.",
+  "notes": "",
+  "examples": "",
+  "namespace": "",
+  "dcterms:isVersionOf": "http://example.com/term-pending//identification-reference",
+  "fields": [
+    {
+      "name": "reference_fk",
+      "title": "Reference (Foreign Key)",
+      "description": "An identifier for a dcterms:BibliographicResource.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/referenceID",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "identification_fk",
+      "title": "Identification (Foreign Key)",
+      "description": "An identifier for a dwc:Protocol.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/identificationID",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    },
+    {
+      "name": "relationshipType",
+      "title": "Relationship Type",
+      "description": "A relationship of a subject resource to a dcterms:BibliographicResource.",
+      "notes": "Recommended best practice is to use a controlled vocabulary.",
+      "examples": "`cited in`; `referenced`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/relationshipOfResource"
+    }
+  ],
+  "foreignKeys": [
+    {
+      "fields": "reference_fk",
+      "predicate": "used",
+      "reference": {
+        "resource": "bibliographic-resource",
+        "fields": "reference_pk"
+      }
+    },
+    {
+      "fields": "identification_fk",
+      "predicate": "used for",
+      "reference": {
+        "resource": "identification",
+        "fields": "identification_pk"
+      }
+    }
+  ]
+}

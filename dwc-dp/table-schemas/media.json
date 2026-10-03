@@ -1,0 +1,1048 @@
+{
+  "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/media",
+  "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
+  "url": "table-schemas/media.json",
+  "name": "media",
+  "title": "Media",
+  "description": "A digital or physical media resource.",
+  "notes": "An instance of digital textual media may be better represented as a dcterms:BibliographicResource.",
+  "examples": "`dcmi:Sound`; `dcmi:StillImage`; `dcmi:MovingImage`; `dcmi:InteractiveResource`; `ac:Digital3DResource`",
+  "namespace": "ac",
+  "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/Media",
+  "fields": [
+    {
+      "name": "media_pk",
+      "title": "Media (Primary Key)",
+      "description": "A unique identifier for an ac:Media resource.",
+      "notes": "The value in this field MAY be changed in aggregation to guarantee uniqueness.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/identifier",
+      "constraints": {
+        "required": true,
+        "unique": true
+      }
+    },
+    {
+      "name": "mediaID",
+      "title": "Media ID",
+      "description": "An identifier for an ac:Media resource.",
+      "notes": "The value in this field MUST be preserved in aggregation. Recommended best practice is to use a globally unique identifier.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/identifier"
+    },
+    {
+      "name": "derivedFromMedia_fk",
+      "title": "Derived From Media (Foreign Key)",
+      "description": "An identifier for an ac:Media resource from which this ac:Media resource was derived.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/identifier",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "derivedFromMediaID",
+      "title": "Derived From Media ID",
+      "description": "An identifier for an ac:Media resource from which this ac:Media resource was derived.",
+      "notes": "This term can be used when an ac:Media resource has been separated from its source ac:Media resource. Recommended best practice is to use a globally unique identifier. The value in this field MAY refer to an ac:Media instance within or external to the dataset in which this record originated.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/identifier",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "isPartOfMedia_fk",
+      "title": "Is Part Of Media (Foreign Key)",
+      "description": "An identifier for an ac:Media resource of which this ac:Media resource is a part.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/isROIOf",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "isPartOfMediaID",
+      "title": "Is Part Of Media ID",
+      "description": "An identifier for an ac:Media resource of which this ac:Media resource is a part.",
+      "notes": "This term can be used to define an ac:RegionOfInterest within an ac:Media resource. Recommended best practice is to use a globally unique identifier. The value in this field MAY refer to an ac:Media instance within or external to the dataset in which this record originated.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/isROIOf",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "mediaType",
+      "title": "Media Type",
+      "description": "A category that best matches the nature of an ac:Media resource.",
+      "notes": "Recommended best practice is to use a globally unique identifier.",
+      "examples": "`Sound`; `StillImage`; `MovingImage`; `InteractiveResource`; `Text`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/type"
+    },
+    {
+      "name": "title",
+      "title": "Title",
+      "description": "A name given to the resource.",
+      "notes": "Concise title, name, or brief descriptive label of institution, resource collection, or individual resource. This field SHOULD include the complete title with all the subtitles, if any. It is strongly suggested to provide a title. The title facilitates interactions with humans: e.g., it could be used as display text of hyperlinks or to provide a choice of images in a pick list. The title is therefore highly useful and an effort should be made to provide it where it is not already available. When the resource is a collection without an institutional or official name, but with a thematic content, a descriptive title, e.g., \"Urban Ants of New England,\" would be suitable. In individual media resources depicting taxa, the scientific name or names of taxa often form a good title. Common names in addition to or instead of scientific names are also acceptable. Indications of action or roles captured by the media resource, such as predatory acts, are desirable (\"Rattlesnake eating deer mouse\", \"Pollinators of California Native Plants\").",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/title"
+    },
+    {
+      "name": "description",
+      "title": "Description",
+      "description": "An account of the resource.",
+      "notes": "Description of collection or individual resource, containing the Who, What, When, Where and Why as free-form text. This property optionally allows the presentation of detailed information and will in most cases be shown together with the resource title. If both a description and a caption are present in the metadata, a description is typically displayed instead of the resource, whereas a caption is displayed together with the resource. The description should aim to be a good proxy for the underlying media resource in cases where only text can be shown, whereas the caption may only make sense when shown together with the media. Thus, in HTML it would be appropriate to use dcterms:description values for alt attributes in img elements. Often only one of description or caption is present; choose the term most appropriate for your metadata. It is the role of implementers of an AC concrete representation (e.g., an XML Schema, an RDF representation, etc.) to decide and document how formatting advice will be represented in descriptions serialized according to such representations.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/description"
+    },
+    {
+      "name": "caption",
+      "title": "Caption",
+      "description": "Free-form text to be displayed together with (rather than instead of) a resource that is suitable for captions (especially images).",
+      "notes": "If both description and caption are present in the metadata, a description is typically displayed instead of the resource, a caption together with the resource. Thus, in HTML it would be appropriate to use ac:caption values in figcaption elements. Often only one of description or caption is present; choose the term most appropriate for your metadata.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/caption"
+    },
+    {
+      "name": "subtypeLiteral",
+      "title": "Subtype Literal",
+      "description": "A subcategory that allows further specialization of an ac:Media resource type than mediaType.",
+      "notes": "The subtypeLiteral term MUST NOT be applied to Collection objects. However, the Description term in the Content Coverage Vocabulary might add further description to a Collection object. Controlled string values SHOULD be selected from the Controlled Vocabulary for ac:subtype. Human-readable information about the Controlled Vocabulary for ac:subtype is at http://rs.tdwg.org/ac/doc/subtype/. It is best practice to use ac:subtype instead of ac:subytpeLiteral whenever practical.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/subtypeLiteral"
+    },
+    {
+      "name": "subtypeIRI",
+      "title": "Subtype IRI",
+      "description": "A class, represented by an IRI, that provides for more specialization of an ac:Media resource type than dcterms:type.",
+      "notes": "The subtype term MUST NOT be applied to Collection objects. However, the Description term in the Content Coverage Vocabulary might add further description to a Collection object. IRI values SHOULD be selected from the Controlled Vocabulary for ac:subtype. Human-readable information about the Controlled Vocabulary for ac:subtype is at http://rs.tdwg.org/ac/doc/subtype/. In text-based systems such as tables, IRI values MUST be in unabbreviated form. When an appropriate subtype is not available in the Audiovisual Core controlled vocabulary, a term IRI that is not in a TDWG namespace MAY be used. Conforming applications MAY choose to ignore controlled values not issued by Audiovisual Core. See ac:subtypeLiteral for usage with strings.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/subtype"
+    },
+    {
+      "name": "collectionCode",
+      "title": "Collection Code",
+      "description": "A name, acronym, coden, or initialism identifying a collection.",
+      "notes": "",
+      "examples": "`Mammals`; `Hildebrandt`; `EBIRD`; `VP`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/collectionCode"
+    },
+    {
+      "name": "collectionID",
+      "title": "Collection ID",
+      "description": "An identifier for a collection.",
+      "notes": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/collectionID"
+    },
+    {
+      "name": "createDate",
+      "title": "Original Date and Time",
+      "description": "The date and time the resource was created. For a digital file, this need not match a file-system creation time. For a freshly created resource, it should be close to that time, modulo the time taken to write the file. Later file transfer, copying, and so on, can make the file-system time arbitrarily different.",
+      "notes": "The date of the creation of the original resource from which the digital media was derived or created. The date and time MUST comply with the World Wide Web Consortium (W3C) datetime practice, https://www.w3.org/TR/NOTE-datetime, which requires that date and time representation correspond to ISO 8601:1998, but with year fields always comprising 4 digits. This makes datetime records compliant with 8601:2004, https://www.iso.org/standard/40874.html. AC datetime values MAY also follow 8601:2004 for ranges by separating two ISO 8601 datetime fields by a solidus (\"forward slash\", '/'). When applied to a media resource with temporal extent such as audio or video, this property indicates the startTime of the recording. What constitutes \"original\" is determined by the metadata author. Example: Digitization of a photographic slide of a map would normally give the date at which the map was created; however a photographic work of art including the same map as its content may give the date of the original photographic exposure. Imprecise or unknown dates can be represented as ISO dates or ranges. Compare also Date and Time Digitized in the Resource Creation Vocabulary. See also the Wikipedia ISO 8601 entry, https://en.wikipedia.org/wiki/ISO_8601, for further explanation and examples.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "xmp",
+      "dcterms:isVersionOf": "http://ns.adobe.com/xap/1.0/CreateDate"
+    },
+    {
+      "name": "timeOfDay",
+      "title": "Time Of Day",
+      "description": "Free text information beyond exact clock times.",
+      "notes": "",
+      "examples": "`afternoon`; `twilight`",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/timeOfDay"
+    },
+    {
+      "name": "digitizationDate",
+      "title": "Digitization Date",
+      "description": "A date on which the first digital version of a resource was created, if different from xmp:CreateDate.",
+      "notes": "The date and time MUST comply with the World Wide Web Consortium (W3C) datetime practice, https://www.w3.org/TR/NOTE-datetime, which requires that date and time representation correspond to ISO 8601:1998, but with year fields always comprising 4 digits. This makes datetime records compliant with 8601:2004, https://www.iso.org/standard/40874.html. AC datetime values MAY also follow 8601:2004 for ranges by separating two ISO 8601 datetime fields by a solidus (\"forward slash\", '/'). Use the international (ISO/xml) format yyyy-mm-ddThh:mm (e.g., \"2007-12-31\" or \"2007-12-31T14:59\"). Where available, timezone information SHOULD be added. This is often not the media creation or modification date. For example, if photographic prints have been scanned, the date of that scanning is what this term carries, but Original Date and Time is that depicted in the print. In the case of digital images containing EXIF, whereas the EXIF capture date does not contain time zone information, but EXIF GPSDateStamp and GPSTimeStamp may be relevant as these include time-zone information. See also Metadata Working Group Guidelines for Handling Image Metadata, Version 2.0 (November 2010), https://web.archive.org/web/20180919181934/http://www.metadataworkinggroup.org/pdf/mwg_guidance.pdf, which has best practice advice on handling time-zone-less EXIF date/time data. See also the Wikipedia ISO 8601 entry, https://en.wikipedia.org/wiki/ISO_8601, for further explanation and examples.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/digitizationDate"
+    },
+    {
+      "name": "captureDevice",
+      "title": "Capture Device",
+      "description": "Free form text describing the device or devices used to create the resource.",
+      "notes": "It is best practice to record the device; this may include a combination such as camera plus lens, or camera plus microscope. Examples: \"Canon Supershot 2000\", \"Makroscan Scanner 2000\", \"Zeiss Axioscope with Camera IIIu\", \"SEM (Scanning Electron Microscope)\".",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/captureDevice"
+    },
+    {
+      "name": "frameRate",
+      "title": "Frame Rate",
+      "description": "The decimal fraction representing the frequency (rate) at which consecutive images (frames) were captured in real time for a dcmi:MovingImage, expressed as the number of frames per second.",
+      "notes": "This term represents the rate at which consecutive images were captured in real time, not the rate at which the media is encoded to play back the recording. For example, in a recording where 60 consecutive images (frames) are captured for each second of the real-time recording, this would be 60. In a time-lapse recording where one image (frame) is recorded every 5 seconds of recording, this would be 0.2.",
+      "examples": "`60`; `0.2`",
+      "type": "number",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/frameRate"
+    },
+    {
+      "name": "resourceCreationTechnique",
+      "title": "Resource Creation Technique",
+      "description": "Information about technical aspects of the creation and digitization process of the resource. This includes modification steps (\"retouching\") after the initial resource capture.",
+      "notes": "Annotating whether and how a resource has been modified or edited significantly in ways that are not immediately obvious to, or expected by, consumers is of special significance. Examples for images are: Removing a distracting twig from a picture, moving an object to a different surrounding, changing the color in parts of the image, or blurring the background of an image. Modifications that are standard practice and expected or obvious are not necessary to document; examples of such practices include changing resolution, cropping, minor sharpening or overall color correction, and clearly perceptible modifications (e.g., addition of arrows or labels, or the placement of multiple pictures into a table.) If it is only known that significant modifications were made, but no details are known, a general statement like \"Media may have been manipulated to improve appearance\" may be appropriate. See also Subject Preparation Technique. Encoding method or settings, numbers of channels, lighting, frames per second, data rate, interlaced or progressive, multiflash lighting, remote control, automatic interval exposure.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/resourceCreationTechnique"
+    },
+    {
+      "name": "sample-rate",
+      "title": "Sample Rate",
+      "description": "Associates a digital signal to its sample rate.",
+      "notes": "Numeric value in hertz (Hz). For example, a Service Access Point may have a specific resolution, quality, or format. “Sample rate” is distinct from the related concept of “bit rate” for compressed files such as MP3, and is applicable to both uncompressed and compressed files. See http://musicontology.com/specification/#term-sample_rate for additional information.",
+      "examples": "",
+      "type": "number",
+      "format": "default",
+      "namespace": "mo",
+      "dcterms:isVersionOf": "http://purl.org/ontology/mo/sample_rate"
+    },
+    {
+      "name": "modified",
+      "title": "Modified",
+      "description": "Date on which the resource was changed.",
+      "notes": "Date that the media resource was altered. The date and time MUST comply with the World Wide Web Consortium (W3C) datetime practice, https://www.w3.org/TR/NOTE-datetime, which requires that date and time representation correspond to ISO 8601:1998, https://www.iso.org/standard/40874.html, but with year fields always comprising 4 digits. This makes datetime records compliant with 8601:2004. AC datetime values MAY also follow 8601:2004 for ranges by separating two ISO 8601 datetime fields by a solidus (\"forward slash\", '/'). dcterms:modified permits all modification dates to be recorded, or if only one is recorded, it is assumed to be the latest. See also the Wikipedia ISO 8601 entry, https://en.wikipedia.org/wiki/ISO_8601, for further explanation and examples.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/modified"
+    },
+    {
+      "name": "language",
+      "title": "Language",
+      "description": "A language of the resource.",
+      "notes": "URI from the ISO639-2 list of URIs for ISO 3-letter language codes, http://id.loc.gov/vocabulary/iso639-2. An image may contain language such as superimposed labels. If an image is of a natural scene or organism, without any language included, the resource is language-neutral with URI http://id.loc.gov/vocabulary/iso639-2/zxx corresponding to ISO ISO639-2 code \"zxx\". Resources with present but unknown language are to be coded as undetermined, with URI http://id.loc.gov/vocabulary/iso639-2/und corresponding to ISO639-2 code \"und\". Regional dialects or other special cases should conform to the ISO639-5 Alpha-3 Code for Language Families and Groups, http://id.loc.gov/vocabulary/iso639-5.html, where possible or the IETF Best Practices for Tags Identifying Languages, https://tools.ietf.org/html/rfc5646, where not. See also the entry for dc:language in the Audiovisual Core term list document and see the DCMI FAQ on DC and DCTERMS Namespaces, https://web.archive.org/web/20171126043657/https://github.com/dcmi/repository/blob/master/mediawiki_wiki/FAQ/DC_and_DCTERMS_Namespaces.md, for discussion of the rationale for terms in two namespaces. Normal practice is to use the same Label if both are provided. Labels have no effect on information discovery and are only suggestions.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dc",
+      "dcterms:isVersionOf": "http://purl.org/dc/elements/1.1/language"
+    },
+    {
+      "name": "languageIRI",
+      "title": "Language IRI",
+      "description": "A language of the resource.",
+      "notes": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/language"
+    },
+    {
+      "name": "metadataDate",
+      "title": "Metadata Date",
+      "description": "The date and time that any metadata for this resource was last changed. It should be the same as or more recent than dcterms:modified.",
+      "notes": "Point in time recording when the last modification to metadata (not necessarily the media object itself) occurred. The date and time MUST comply with the World Wide Web Consortium (W3C) datetime practice, https://www.w3.org/TR/NOTE-datetime, which requires that date and time representation correspond to ISO 8601:1998, but with year fields always comprising 4 digits. This makes datetime records compliant with 8601:2004, https://www.iso.org/standard/40874.html. AC datetime values MAY also follow 8601:2004 for ranges by separating two ISO 8601 datetime fields by a solidus (\"forward slash\", '/'). This is not dcterms:modified, which refers to the resource itself rather than its metadata. See also the Wikipedia ISO 8601 entry, https://en.wikipedia.org/wiki/ISO_8601, for further explanation and examples.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "xmp",
+      "dcterms:isVersionOf": "http://ns.adobe.com/xap/1.0/MetadataDate"
+    },
+    {
+      "name": "metadataLanguageLiteral",
+      "title": "Metadata Language Literal",
+      "description": "Language of description and other metadata (but not necessarily of the image itself) represented as an ISO639-2 three letter language code.",
+      "notes": "ISO639-1 two-letter codes are permitted but deprecated. At least one of ac:metadataLanguage and ac:metadataLanguageLiteral MUST be supplied but, when feasible, supplying both might make the metadata more widely useful. They MUST specify the same language. In case of ambiguity, ac:metadataLanguage prevails. This is NOT dc:language, which is about the resource, not the metadata. Metadata Language is deliberately single-valued, imposing on unstructured serializations a requirement that multi-lingual metadata be represented as separate, complete, metadata records. Audiovisual Core requires that each record also contains the language-neutral terms. In the absence of this requirement, metadata consumers would need to know which terms are language-neutral and merge these terms from all provided metadataLanguages into a single record. Metadata consumers may re-combine the information based on the dcterms:identifier that identifies the multimedia resource. Nothing in this document would, however, prevent an implementer, e.g., of an XML-Schema representation, from providing a fully hierarchical schema in which language neutral terms occur only a single time, and only the language-specific terms are repeated in a way that unambiguously relates them to a metadata language. In RDF it may be a simple repetition of plain literals associated with a language (e.g., xml:lang attribute in RDF/XML). The language attribute would then be required in Audiovisual Core and would replace ac:metadataLanguage.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/metadataLanguageLiteral"
+    },
+    {
+      "name": "metadataLanguageIRI",
+      "title": "Metadata Language IRI",
+      "description": "The URI of the language of description and other metadata (but not necessarily of the image itself).",
+      "notes": "Recommended best practice is to use the ISO639-2 list of URIs for ISO 3-letter language codes, http://id.loc.gov/vocabulary/iso639-2. At least one of ac:metadataLanguage and ac:metadataLanguageLiteral should be supplied but, when feasible, supplying both might make the metadata more widely useful. They must specify the same language. In case of ambiguity, ac:metadataLanguage prevails. This is NOT dcterms:language, which is about the resource, not the metadata. Metadata Language is deliberately single-valued, imposing on unstructured serializations a requirement that multi-lingual metadata be represented as separate, complete, metadata records. Audiovisual Core requires that each record also contains the language-neutral terms. In the absence of this requirement, metadata consumers would need to know which terms are language-neutral and merge these terms from all provided metadataLanguages into a single record. Metadata consumers may re-combine the information based on the dcterms:identifier that identifies the multimedia resource. Nothing in this document would, however, prevent an implementer, e.g., of an XML-Schema representation, from providing a fully hierarchical schema in which language neutral terms occur only a single time, and only the language-specific terms are repeated in a way that unambiguously relates them to a metadata language. In RDF it may be a simple repetition of plain literals associated with a language (e.g., xml:lang attribute in RDF/XML). The language attribute would then be required in Audiovisual Core and would replace ac:metadataLanguage.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/metadataLanguage"
+    },
+    {
+      "name": "providerManagedID",
+      "title": "Provider-managed ID",
+      "description": "A free-form identifier (a simple number, an alphanumeric code, a URL, etc.) for the resource that is unique and meaningful primarily for the data provider.",
+      "notes": "Ideally, this would be a globally unique identifier (GUID), but the provider is encouraged to supply any form of identifier that simplifies communications on resources within their project and helps to locate individual data items in the provider's data repositories. It is the provider's decision whether to expose this value or not.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/providerManagedID"
+    },
+    {
+      "name": "available",
+      "title": "Available",
+      "description": "Date (often a range) that the resource became or will become available.",
+      "notes": "The date (often a range) that the resource became or will become available. The date and time MUST comply with the World Wide Web Consortium (W3C) datetime practice, https://www.w3.org/TR/NOTE-datetime, which requires that date and time representation correspond to ISO 8601:1998, but with year fields always comprising 4 digits. This makes datetime records compliant with 8601:2004, https://www.iso.org/standard/40874.html. AC datetime values MAY also follow 8601:2004 for ranges by separating two ISO 8601 datetime fields by a solidus (\"forward slash\", '/'). A use case is the harvesting of metadata published before the media are available, which are pending a formal publication elsewhere. One important example is the case of metadata that documents an occurrence, which metadata harvesters might exploit without use of the media. See also the Wikipedia ISO 8601 entry, https://en.wikipedia.org/wiki/ISO_8601, for further explanation and examples.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/available"
+    },
+    {
+      "name": "hasServiceAccessPoint",
+      "title": "Service Access Point",
+      "description": "In a chosen serialization (RDF, XML Schema, etc.) the potentially multiple service access points (e.g., for different resolutions of an image) might be provided in a referenced or in a nested object.",
+      "notes": "This property identifies one such access point. That is, each of potentially multiple values of hasServiceAccessPoint identifies a set of representation-dependent metadata using the properties defined under the Service Access Point Vocabulary section of the Audiovisual Core Term List document. Some serializations may flatten the model of service-access points by (a) dropping ac:hasServiceAccessPoint, ac:variant and ac:variantLiteral, (b) repeating properties from the Service Access Point Vocabulary and prefixing them with values of ac:variantLiteral. If such a flat serialization is necessary for services, we recommend to select from among term names of the form \"AB\" where \"A\" is one of thumbnail, trailer, lowerQuality, mediumQuality, goodQuality, bestQuality, offline and \"B\" is one of AccessURI, Format, Extent, FurtherInformationURL, LicensingException, ServiceExpectation (example: thumbnailAccessURI). Implementers in specific constraint languages such as XML Schema or RDF may wish to make Access URI and perhaps dcterms:format mandatory on instances of the service access point.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/hasServiceAccessPoint"
+    },
+    {
+      "name": "serviceExpectation",
+      "title": "Service Expectation",
+      "description": "A term that describes what service expectations users may have of the ac:accessURI.",
+      "notes": "Recommended terms include online (denotes that the URL is expected to deliver the resource), authenticate (denotes that the URL delivers a login or other authentication interface requiring completion before delivery of the resource) published (non digital, denotes that the URL is the identifier of a non-digital published work, for example a doi.) Communities should develop their own controlled vocabularies for ac:serviceExpectation.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/serviceExpectation"
+    },
+    {
+      "name": "accessURI",
+      "title": "Access URI",
+      "description": "A URI that uniquely identifies a service that provides a representation of the underlying resource.",
+      "notes": "If this resource can be acquired by an http request, its http URL SHOULD be given. If not, but it has some URI in another URI scheme, that MAY be given here. Value might point to something offline, such as a published CD, etc. For example, the doi of a published CD would be a suitable value.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/accessURI"
+    },
+    {
+      "name": "format",
+      "title": "Format",
+      "description": "The file format, physical medium, or dimensions of the resource, denoted by a controlled value string.",
+      "notes": "A controlled value string describing the technical format of the resource (file format or physical medium). The string SHOULD be a controlled value from the Audiovisual Core Controlled Vocabulary for Dublin Core dcterms:format, although it MAY be any Media Type (MIME type) value from the IANA list of Media Types (https://www.iana.org/assignments/media-types/media-types.xhtml) or any commonly used file extension string. Human-readable information about the Controlled Vocabulary for format is at http://rs.tdwg.org/ac/doc/format/. This term can be used to describe offline digital content. In cases where the provided Service Access Point URL includes a standard file extension from which the format can be inferred, it is permissible to not provide a value for this property. See also the entry for dcterms:format in the Audiovisual Core term list document and see the DCMI FAQ on DC and DCTERMS Namespaces, https://web.archive.org/web/20171126043657/https://github.com/dcmi/repository/blob/master/mediawiki_wiki/FAQ/DC_and_DCTERMS_Namespaces.md, for discussion of the rationale for terms in two namespaces. It is best practice to use dcterms:format instead of dc:format whenever practical. Normal practice is to use the same Label if both are provided. Labels have no effect on information discovery and are only suggestions.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dc",
+      "dcterms:isVersionOf": "http://purl.org/dc/elements/1.1/format"
+    },
+    {
+      "name": "formatIRI",
+      "title": "Format IRI",
+      "description": "The file format, physical medium, or dimensions of the resource, denoted by an IRI.",
+      "notes": "An IRI denoting the technical format of the resource (file format or physical medium). The IRI SHOULD be from the Audiovisual Core Controlled Vocabulary for Dublin Core dcterms:format. Human-readable information about the Controlled Vocabulary for dcterms:format is at http://rs.tdwg.org/ac/doc/format/. In cases where an IRI for the format does not exist in the controlled vocabulary, a provider can omit this property and provide a media type or file extension value for dc:format. See the DCMI FAQ on DC and DCTERMS Namespaces, https://web.archive.org/web/20171126043657/https://github.com/dcmi/repository/blob/master/mediawiki_wiki/FAQ/DC_and_DCTERMS_Namespaces.md, for discussion of the rationale for terms in two namespaces. Labels have no effect on information discovery and are only suggestions.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/format"
+    },
+    {
+      "name": "variantLiteral",
+      "title": "Variant Literal",
+      "description": "The category describing this Service Access Point variant, denoted by a controlled value string.",
+      "notes": "Values SHOULD be selected from the Controlled Vocabulary for ac:variant. Human-readable information about the Controlled Vocabulary for ac:variant is at http://rs.tdwg.org/ac/doc/variant/. It is best practice to use ac:variant instead of ac:variantLiteral whenever practical.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/variantLiteral"
+    },
+    {
+      "name": "variantIRI",
+      "title": "Variant IRI",
+      "description": "The category describing this Service Access Point variant, denoted by an IRI.",
+      "notes": "Values SHOULD be selected from the Controlled Vocabulary for ac:variant. Human-readable information about the Controlled Vocabulary for ac:variant is at http://rs.tdwg.org/ac/doc/variant/. In text-based systems such as tables, IRI values MUST be in unabbreviated form.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/variant"
+    },
+    {
+      "name": "variantDescription",
+      "title": "Variant Description",
+      "description": "Text that describes this Service Access Point variant.",
+      "notes": "Most variants (thumb, low-res, high-res) are self-explanatory and it is best practice to leave this property empty if no special description is needed. It is provided for cases that require additional information (e.g., video shortened instead of simply quality reduced).",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/variantDescription"
+    },
+    {
+      "name": "pixelXDimension",
+      "title": "Image Width",
+      "description": "Information specific to compressed data. When a compressed file is recorded, the valid width of the meaningful image shall be recorded in this tag, whether or not there is padding data or a restart marker. This tag shall not exist in an uncompressed file.",
+      "notes": "The width in pixels of the media specified by the access point. Contrary to the definition, in Audiovisual Core, this term MAY be used with uncompressed files. Audiovisual Core uses this term for any image type, including those to which EXIF does not apply and those that are not a compressed file type like JPEG.",
+      "examples": "",
+      "type": "integer",
+      "format": "default",
+      "namespace": "exif",
+      "dcterms:isVersionOf": "http://ns.adobe.com/exif/1.0/PixelXDimension",
+      "constraints": {
+        "minimum": 1
+      }
+    },
+    {
+      "name": "pixelYDimension",
+      "title": "Image Height",
+      "description": "Information specific to compressed data. When a compressed file is recorded, the valid height of the meaningful image shall be recorded in this tag, whether or not there is padding data or a restart marker. This tag shall not exist in an uncompressed file.",
+      "notes": "The height in pixels of the media specified by the access point. Contrary to the definition, in Audiovisual Core, this term MAY be used with uncompressed files. Audiovisual Core uses this term for any image type, including those to which EXIF does not apply and those that are not a compressed file type like JPEG.",
+      "examples": "",
+      "type": "integer",
+      "format": "default",
+      "namespace": "exif",
+      "dcterms:isVersionOf": "http://ns.adobe.com/exif/1.0/PixelYDimension",
+      "constraints": {
+        "minimum": 1
+      }
+    },
+    {
+      "name": "hashFunction",
+      "title": "Hash Function",
+      "description": "The cryptographic hash function used to compute the value given in the ac:hashValue.",
+      "notes": "Recommended values include MD5, SHA-1, SHA-224,SHA-256, SHA-384, SHA-512, SHA-512/224 and SHA-512/256",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/hashFunction"
+    },
+    {
+      "name": "hashValue",
+      "title": "Hash Value",
+      "description": "The value computed by an ac:hashFunction applied to the media that will be delivered at the access point.",
+      "notes": "Best practice is to also specify the ac:hash Function using one of the standard literals from the Notes there.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/hashValue"
+    },
+    {
+      "name": "furtherInformationURL",
+      "title": "Further Information URL",
+      "description": "The URL of a Web site that provides additional information about the version of the ac:Media resource that is provided by the ac:hasServiceAccessPoint.",
+      "notes": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/furtherInformationURL"
+    },
+    {
+      "name": "commenterLiteral",
+      "title": "Commenter Literal",
+      "description": "A name of a dcterms:Agent primarily responsible for providing the ac:comments",
+      "notes": "See also ac:reviewerComments for the distinction between ac:comments and ac:reviewerComments. See also the entry for ac:commenter and the section Namespaces, Prefixes and Term Names in the Audiovisual Core Term List document for discussion of the rationale for separate terms taking URI values from those taking Literal values where both are possible. Normal practice is to use the same Label if both are provided. Labels have no effect on information discovery and are only suggestions.",
+      "examples": "`anonymous`",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/commenterLiteral"
+    },
+    {
+      "name": "commenter_fk",
+      "title": "Commenter (Foreign Key)",
+      "description": "An identifier for a dcterms:Agent primarily responsible for providing the ac:comments.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/agentID",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "commenterID",
+      "title": "Commenter ID",
+      "description": "An identifier for a dcterms:Agent primarily responsible for providing the ac:comments.",
+      "notes": "Implementers and communities of practice MAY produce restrictions or recommendations on the choice of vocabularies. See also ac:reviewerComments for the distinction between ac:comments and ac:reviewerComments. See also the entry for ac:commenterLiteral and the section Namespaces, Prefixes and Term Names in the Audiovisual Core Term List document for discussion of the rationale for separate terms taking URI values from those taking Literal values where both are possible. Normal practice is to use the same Label if both are provided. Labels have no effect on information discovery and are only suggestions. The value in this field MAY refer to a dcterms:BibliographicResource within or external to the dataset in which this record originated. The value in this field MAY refer to a dcterms:Agent within or external to the dataset in which this record originated.",
+      "examples": "`https://orcid.org/0000-0002-1825-0097`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/agentID",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "comments",
+      "title": "Comments",
+      "description": "Any comment provided on the ac:Media resource, as free-form text.",
+      "notes": "Best practice would also identify the ac:commenter. Comments may refer to the resource itself (e.g., asserting a taxon name or location of a biological subject in an image), or to the relation between resource and associated metadata (e.g., asserting that the taxon name given in the metadata is wrong, without asserting a positive identification). There is a separate item from ac:reviewerComments, which is defined more as an expert-level review. Implementers or communities of practice might establish conventions about the meaning of the absence of an ac:commenter, but this specification is silent on that matter.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/comments"
+    },
+    {
+      "name": "rating",
+      "title": "Rating",
+      "description": "A user-assigned rating for this file. The value shall be -1 or in the range [0..5], where -1 indicates \"rejected\" and 0 indicates \"unrated\". If xmp:Rating is not present, a value of 0 should be assumed.",
+      "notes": "A rating for an ac:Media resource, provided by record originators or editors, with '1' (worst) to '5' (best). Anticipated usage is for a typical 'star rating' UI, with the addition of a notion of rejection. Values MAY be decimal numbers in the permitted range. The origin of the rating is not communicated. It may, e.g., be based on user feedback or on editorial ratings. By \"user-assigned\" is meant assigned by the originator or editor of the record using the term.",
+      "examples": "`1`; `5`",
+      "type": "string",
+      "format": "default",
+      "namespace": "xmp",
+      "dcterms:isVersionOf": "http://ns.adobe.com/xap/1.0/Rating"
+    },
+    {
+      "name": "reviewerLiteral",
+      "title": "Reviewer Literal",
+      "description": "A name of a dcterms:Agent primarily responsible for providing the ac:reviewerComments",
+      "notes": "If present, then resource is peer-reviewed, even if ac:reviewerComments is absent or empty. Its presence tells whether an expert in the subject featured in the media has reviewed an ac:Media resource or collection and approved its metadata description; MUST display a name or the literal \"anonymous\" (= anonymously reviewed). Provider is asserting they accept this review as competent. See also ac:reviewer and the section Namespaces, Prefixes and Term Names in the Audiovisual Core Term List document for discussion of the rationale for separate terms taking URI values from those taking Literal values where both are possible. Normal practice is to use the same Label if both are provided. Labels have no effect on information discovery and are only suggestions.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/reviewerLiteral"
+    },
+    {
+      "name": "reviewer_fk",
+      "title": "Reviewer (Foreign Key)",
+      "description": "An identifier for a dcterms:Agent primarily responsible for providing the ac:reviewerComments.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/agentID",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "reviewerID",
+      "title": "Reviewer ID",
+      "description": "An identifier for a dcterms:Agent primarily responsible for providing the ac:reviewerComments",
+      "notes": "If present, then resource is peer-reviewed, even if ac:reviewerComments is absent or empty. Its presence tells whether an expert in the subject featured in the media has reviewed an ac:Media resource or collection and approved its metadata description; MUST display a name or the literal \"anonymous\" (= anonymously reviewed). Provider is asserting they accept this review as competent. See also ac:reviewerLiteral and the section Namespaces, Prefixes and Term Names in the Audiovisual Core Term List document for discussion of the rationale for separate terms taking URI values from those taking Literal values where both are possible. Normal practice is to use the same Label if both are provided. Labels have no effect on information discovery and are only suggestions. The value in this field MAY refer to a dcterms:Agent within or external to the dataset in which this record originated.",
+      "examples": "`https://orcid.org/0000-0002-1825-0097`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/agentID",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "reviewerComments",
+      "title": "Reviewer Comments",
+      "description": "Any comment provided by a reviewer with expertise in the subject, as free-form text.",
+      "notes": "Reviewer Comments may refer to the resource itself (e.g., asserting a taxon name or location of a biological subject in an image), or to the relation between resource and associated metadata (e.g., asserting that the taxon name given in the metadata is wrong, without asserting a positive identification). There is a separate item \"Comments\" for text from commenters of unrecorded expertise.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/reviewerComments"
+    },
+    {
+      "name": "physicalSetting",
+      "title": "Physical Setting",
+      "description": "The setting of the content represented in an ac:Media resource, such as images, sounds, and movies if the provider deems them relevant.",
+      "notes": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/physicalSetting"
+    },
+    {
+      "name": "subjectCategory",
+      "title": "Subject Category",
+      "description": "A term to describe the content of a image or a region of interest within an image using a controlled value string.",
+      "notes": "Recommended best practice is to use a controlled vocabulary.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/CVtermLiteral"
+    },
+    {
+      "name": "subjectCategoryIRI",
+      "title": "Subject Category IRI",
+      "description": "An IRI of a controlled vocabulary value for the subject category of an ac:Media resource.",
+      "notes": "Recommended best practice is to use a controlled vocabulary.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "Iptc4xmpExt",
+      "dcterms:isVersionOf": "http://iptc.org/std/Iptc4xmpExt/2008-02-29/CVterm"
+    },
+    {
+      "name": "subjectCategoryVocabulary",
+      "title": "Subject Category Source",
+      "description": "A reference to a controlled vocabulary in which the definition of a value in dwc:subjectCategory is given.",
+      "notes": "The Audiovisual Core recommended vocabularies do not need to be cited here. There is no required linkage between individual Subject Category terms and the vocabulary; the mechanism is intended to support discovery of the normative URI for a term, but not guarantee it.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/subjectCategoryVocabulary"
+    },
+    {
+      "name": "tag",
+      "title": "Tag",
+      "description": "General keywords or tags.",
+      "notes": "Tags may be multi-worded phrases. Where scientific names, common names, geographic locations, etc. are separable, those should go into the more specific coverage metadata items provided further below. Examples: \"flower diagram\". Character or part keywords like \"leaf\", or \"flower color\" are especially desirable.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/tag"
+    },
+    {
+      "name": "subjectPartLiteral",
+      "title": "Subject Part Literal",
+      "description": "The portion or product of organism morphology, behaviour, environment, etc. that is either predominantly shown or particularly well exemplified by the ac:Media resource, denoted by a controlled value string.",
+      "notes": "Values SHOULD be selected from the Controlled Vocabulary for ac:subjectPart. It is best practice to use ac:subjectPart instead of ac:subjectPartLiteral whenever practical.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/subjectPartLiteral"
+    },
+    {
+      "name": "subjectPartIRI",
+      "title": "Subject Part IRI",
+      "description": "The portion or product of organism morphology, behaviour, environment, etc. that is either predominantly shown or particularly well exemplified by the ac:Media resource, denoted by an IRI.",
+      "notes": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/subjectPart"
+    },
+    {
+      "name": "subjectOrientationLiteral",
+      "title": "Subject Orientation Literal",
+      "description": "Specific orientation (= direction, view angle) of the subject represented in the ac:Media resource with respect to the acquisition device, denoted by a controlled value string.",
+      "notes": "Values SHOULD be selected from the Controlled Vocabulary for ac:subjectOrientation. It is best practice to use ac:subjectOrientation instead of ac:subjectOrientationLiteral whenever practical.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/subjectOrientationLiteral"
+    },
+    {
+      "name": "subjectOrientationIRI",
+      "title": "Subject Orientation IRI",
+      "description": "Specific orientation (= direction, view angle) of the subject represented in the ac:Media resource with respect to the acquisition device, denoted by an IRI.",
+      "notes": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/subjectOrientation"
+    },
+    {
+      "name": "startTime",
+      "title": "Start Time in Seconds",
+      "description": "The beginning of a temporal region, specified as an absolute offset relative to the beginning of an ac:Media resource (this corresponds to Normal Play Time RFC 2326), specified as seconds, with an optional fractional part to indicate milliseconds or finer.",
+      "notes": "This term MUST only be applied to a region of interest.",
+      "examples": "",
+      "type": "number",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/startTime",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "endTime",
+      "title": "End Time in Seconds",
+      "description": "The end of a temporal region, specified as an absolute offset relative to the beginning of an ac:Media resource (this corresponds to Normal Play Time RFC 2326), specified as seconds, with an optional fractional part to indicate milliseconds or finer.",
+      "notes": "This term MUST only be applied to a region of interest.",
+      "examples": "",
+      "type": "number",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/endTime",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "startTimestamp",
+      "title": "Start Time Stamp",
+      "description": "The beginning of a temporal region, specified as real-world clock time ISO 8601 timestamps, using UTC timezone, with an optional fractional part to indicate milliseconds or finer. There is no limit on the number of decimal places for the decimal fraction.",
+      "notes": "This term MAY be applied to a region of interest or an entire media item.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/startTimestamp"
+    },
+    {
+      "name": "endTimestamp",
+      "title": "End Time Stamp",
+      "description": "The end of a temporal region, specified as real-world clock time ISO 8601 timestamps, using UTC timezone, with an optional fractional part to indicate milliseconds or finer. There is no limit on the number of decimal places for the decimal fraction.",
+      "notes": "This term MAY be applied to a region of interest or an entire media item.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/endTimestamp"
+    },
+    {
+      "name": "mediaDuration",
+      "title": "Media Duration",
+      "description": "The playback duration of an audio or video file in seconds.",
+      "notes": "This might be different from the time in seconds calculated as the difference of ac:endTimestamp and ac:startTimestamp if ac:mediaSpeed is not equal to 1.",
+      "examples": "",
+      "type": "number",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/mediaDuration",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "mediaSpeed",
+      "title": "Media Speed",
+      "description": "The decimal fraction representing the natural speed over the encoded speed.",
+      "notes": "If a value for ac:mediaSpeed is not provided, applications SHOULD assume that 1.0 is the value. For example, in a time-lapse recording where 60 seconds of natural time is represented in 1 second of media this would be 60. In a time-expanded recording where 1 second of recording is represented in 5 seconds of media, this would be 0.2.",
+      "examples": "`60`; `0.2`",
+      "type": "number",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/mediaSpeed"
+    },
+    {
+      "name": "freqHigh",
+      "title": "Upper frequency bound",
+      "description": "The highest frequency of the phenomena reflected in the multimedia item or Region of Interest.",
+      "notes": "Numeric value in hertz (Hz). This term refers to the sound events depicted and not to the constraints of the recording medium, so are in principle independent from sampleRate. If dwc:scientificName is specified and if applied to the entire multimedia item, these frequency bounds refer to the sounds of the species given in the dwc:scientificName throughout the whole recording. Although many users will specify both freqLow and freqHigh, it is permitted to specify just one or the other, for example if only one of the bounds is discernible.",
+      "examples": "`60`",
+      "type": "number",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/freqHigh"
+    },
+    {
+      "name": "freqLow",
+      "title": "Lower frequency bound",
+      "description": "The lowest frequency of the phenomena reflected in the multimedia item or Region of Interest.",
+      "notes": "Numeric value in hertz (Hz). This term refers to the sound events depicted and not to the constraints of the recording medium, so are in principle independent from sampleRate. If dwc:scientificName is specified and if applied to the entire multimedia item, these frequency bounds refer to the sounds of the species given in the dwc:scientificName throughout the whole recording. Although many users will specify both freqLow and freqHigh, it is permitted to specify just one or the other, for example if only one of the bounds is discernible.",
+      "examples": "`60`",
+      "type": "number",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/freqLow"
+    },
+    {
+      "name": "xFrac",
+      "title": "Fractional X",
+      "description": "The horizontal position of a reference point, measured from the left side of an ac:Media resource and expressed as a decimal fraction of the width of an ac:Media resource.",
+      "notes": "A valid value MUST be greater than or equal to zero and less than or equal to one. The precision of this value SHOULD be great enough that when the ac:xFrac value is multiplied by the exif:PixelXDimension of the Best Quality variant of the Service Access point, rounding to the nearest integer results in the same horizontal pixel location originally used to define the point. This point can serve as the horizontal position of the upper left corner of a bounding rectangle, or as the center of a circle.",
+      "examples": "`0.5`; `1`",
+      "type": "number",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/xFrac",
+      "constraints": {
+        "minimum": 0,
+        "maximum": 1
+      }
+    },
+    {
+      "name": "yFrac",
+      "title": "Fractional Y",
+      "description": "The vertical position of a reference point, measured from the top of an ac:Media resource and expressed as a decimal fraction of the height of an ac:Media resource.",
+      "notes": "A valid value MUST be greater than or equal to zero and less than or equal to one. The precision of this value SHOULD be great enough that when the ac:yFrac value is multiplied by the exif:PixelYDimension of the Best Quality variant of the Service Access point, rounding to the nearest integer results in the same vertical pixel originally used to define the point. This point can serve as the vertical position of the upper left corner of a bounding rectangle, or as the center of a circle.",
+      "examples": "`0.5`; `1`",
+      "type": "number",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/yFrac",
+      "constraints": {
+        "minimum": 0,
+        "maximum": 1
+      }
+    },
+    {
+      "name": "heightFrac",
+      "title": "Fractional Height",
+      "description": "The height of the bounding rectangle, expressed as a decimal fraction of the height of an ac:Media resource.",
+      "notes": "The sum of a valid value plus ac:yFrac MUST be greater than zero and less than or equal to one. The precision of this value SHOULD be great enough that when ac:heightFrac and ac:yFrac are used with the exif:PixelYDimension of the Best Quality variant of the Service Access point to calculate the lower right corner of the rectangle, rounding to the nearest integer results in the same vertical pixel originally used to define the point. This term MUST NOT be used with ac:radius to define a region of interest. Zero-sized bounding rectangles are not allowed. To designate a point, use the radius option with a zero value.",
+      "examples": "`0.5`; `1`",
+      "type": "number",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/heightFrac",
+      "constraints": {
+        "minimum": 0,
+        "maximum": 1
+      }
+    },
+    {
+      "name": "widthFrac",
+      "title": "Fractional Width",
+      "description": "The width of the bounding rectangle, expressed as a decimal fraction of the width of an ac:Media resource.",
+      "notes": "The sum of a valid value plus ac:xFrac MUST be greater than zero and less than or equal to one. The precision of this value SHOULD be great enough that when ac:widthFrac and ac:xFrac are used with the exif:PixelXDimension of the Best Quality variant of the Service Access point to calculate the lower right corner of the rectangle, rounding to the nearest integer results in the same horizontal pixel originally used to define the point. This term MUST NOT be used with ac:radius to define a region of interest. Zero-sized bounding rectangles are not allowed. To designate a point, use the radius option with a zero value.",
+      "examples": "`0.5`; `1`",
+      "type": "number",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/widthFrac",
+      "constraints": {
+        "minimum": 0,
+        "maximum": 1
+      }
+    },
+    {
+      "name": "radius",
+      "title": "Radius",
+      "description": "The radius of a bounding circle or arc, expressed as a fraction of the width of an ac:Media resource.",
+      "notes": "A valid value MUST be greater than or equal to zero. A valid value MAY cause the designated circle to extend beyond the bounds of an ac:Media resource. In that case, the arc within an ac:Media resource plus the bounds of an ac:Media resource specify the region of interest. This term MUST NOT be used with ac:widthFrac or ac:heightFrac to define a region of interest. This term may be used with ac:xFrac and ac:yFrac to define a point. In that case, the implication is that the point falls on some object of interest within an ac:Media resource, but nothing more can be assumed about the bounds of that object.",
+      "examples": "`100`",
+      "type": "integer",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/radius",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "provenance_fk",
+      "title": "Provenance (Foreign Key)",
+      "description": "An identifier for a dwc:Provenance.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/provenanceID",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "usagePolicy_fk",
+      "title": "Usage Policy (Foreign Key)",
+      "description": "An identifier for a dwc:UsagePolicy for an ac:Media.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/usagePolicyID",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "owner",
+      "title": "Owner",
+      "description": "A list of legal owners of the resource.",
+      "notes": "`unknown`",
+      "examples": "`The names of the owners `Ron Thomas, Roz Thomas` or a URI that identifies the owner`",
+      "type": "string",
+      "format": "default",
+      "namespace": "xmprights",
+      "dcterms:isVersionOf": "http://ns.adobe.com/xap/1.0/rights/Owner"
+    },
+    {
+      "name": "owner_fk",
+      "title": "Owner (Foreign Key)",
+      "description": "An identifier for a dcterms:Agent that is the owner of the ac:Media resource.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/agentID",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "license",
+      "title": "License",
+      "description": "A legal document giving official permission to do something with the resource.",
+      "notes": "Recommended practice is to identify the license document with a URI. If this is not possible or feasible, a literal value that identifies the license may be provided.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/license"
+    }
+  ],
+  "primaryKey": "media_pk",
+  "weakPrimaryKey": "mediaID",
+  "foreignKeys": [
+    {
+      "fields": "derivedFromMedia_fk",
+      "predicate": "derived from",
+      "reference": {
+        "resource": "",
+        "fields": "media_pk"
+      }
+    },
+    {
+      "fields": "isPartOfMedia_fk",
+      "predicate": "part of",
+      "reference": {
+        "resource": "",
+        "fields": "media_pk"
+      }
+    },
+    {
+      "fields": "commenter_fk",
+      "predicate": "comment by",
+      "reference": {
+        "resource": "agent",
+        "fields": "agent_pk"
+      }
+    },
+    {
+      "fields": "reviewer_fk",
+      "predicate": "reviewed by",
+      "reference": {
+        "resource": "agent",
+        "fields": "agent_pk"
+      }
+    },
+    {
+      "fields": "provenance_fk",
+      "predicate": "has",
+      "reference": {
+        "resource": "provenance",
+        "fields": "provenance_pk"
+      }
+    },
+    {
+      "fields": "usagePolicy_fk",
+      "predicate": "has",
+      "reference": {
+        "resource": "usage-policy",
+        "fields": "usagePolicy_pk"
+      }
+    },
+    {
+      "fields": "owner_fk",
+      "predicate": "owned by",
+      "reference": {
+        "resource": "agent",
+        "fields": "agent_pk"
+      }
+    }
+  ],
+  "weakForeignKeys": [
+    {
+      "fields": "derivedFromMediaID",
+      "predicate": "derived from",
+      "reference": {
+        "resource": "",
+        "fields": "mediaID"
+      }
+    },
+    {
+      "fields": "isPartOfMediaID",
+      "predicate": "part of",
+      "reference": {
+        "resource": "",
+        "fields": "mediaID"
+      }
+    },
+    {
+      "fields": "commenterID",
+      "predicate": "comment by",
+      "reference": {
+        "resource": "agent",
+        "fields": "agentID"
+      }
+    },
+    {
+      "fields": "reviewerID",
+      "predicate": "reviewed by",
+      "reference": {
+        "resource": "agent",
+        "fields": "agentID"
+      }
+    }
+  ]
+}

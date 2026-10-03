@@ -1,0 +1,62 @@
+{
+  "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/chronometric-age-protocol",
+  "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
+  "url": "table-schemas/chronometric-age-protocol.json",
+  "name": "chronometric-age-protocol",
+  "title": "Chronometric Age Protocol",
+  "description": "A dwc:Protocol used for a chrono:ChronometricAge.",
+  "notes": "",
+  "examples": "",
+  "namespace": "",
+  "dcterms:isVersionOf": "http://example.com/term-pending//chronometric-age-protocol",
+  "fields": [
+    {
+      "name": "protocol_fk",
+      "title": "Protocol (Foreign Key)",
+      "description": "An identifier for a dwc:Protocol.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/protocolID",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    },
+    {
+      "name": "chronometricAge_fk",
+      "title": "Chronometric Age (Foreign Key)",
+      "description": "An identifier for a chrono:ChronometricAge.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "chrono",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/chrono/terms/chronometricAgeID",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    }
+  ],
+  "foreignKeys": [
+    {
+      "fields": "protocol_fk",
+      "predicate": "followed",
+      "reference": {
+        "resource": "protocol",
+        "fields": "protocol_pk"
+      }
+    },
+    {
+      "fields": "chronometricAge_fk",
+      "predicate": "used for",
+      "reference": {
+        "resource": "chronometric-age",
+        "fields": "chronometricAge_pk"
+      }
+    }
+  ]
+}

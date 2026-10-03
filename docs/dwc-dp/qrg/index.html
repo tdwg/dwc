@@ -135,7 +135,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <p>DwC-DP is implemented using tables, most of which correspond directly to classes in Darwin Core. The sidebar at the right provides quick access to table definitions, and the definitions of available fields for each table. For an overview of the tables and their relationships, see the <a href="#model">Visual Summary</a>. Supplementary to this document is the <a href="../designer/index.html" target="_blank">Darwin Core Data Package Designer</a>, which provides an interactive tool for finding fields, visualizing table relationship, and building templates for Darwin Core Data Packages from selected tables and fields.</p>
         </div>
         <div class="class-header-wrapper"><h2 id="Event" class="class-header">Event</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/event</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/event</p>
 <p><strong>Description:</strong> An action, process, or set of circumstances occurring at a dcterms:Location during a period of time.</p>
 <p><strong>Examples:</strong></p>
 <div class="examples-content">`a material collecting event`</div><div class="examples-separator"></div><div class="examples-content">`a bird observation`</div><div class="examples-separator"></div><div class="examples-content">`a camera trap image capture`</div><div class="examples-separator"></div><div class="examples-content">`an organism occurrence`</div><div class="examples-separator"></div><div class="examples-content">`a biotic survey`</div>
@@ -515,7 +515,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Feedback URL</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Event" target="_blank">Event</a></td></tr><tr><td class="label">Description</td><td>A uniform resource locator (URL) that points to a webpage on which a form may be submitted to gather feedback about the record.</td></tr><tr><td class="label">Notes</td><td>Recommended best practice is to optionally include query strings that act to pre-populate web page form elements and communicate the context.</td></tr><tr><td class="label">Examples</td><td><div class="examples-content">`https://example.com/new?title=New+issue&body=This+comment+is+about+CAN12345`</div></td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/feedbackURL" target="_blank">http://rs.tdwg.org/dwc/terms/feedbackURL</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Chronometric Age" class="class-header">Chronometric Age</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/chronometric-age</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/chronometric-age</p>
 <p><strong>Description:</strong> An approximation of temporal position (in the sense conveyed by https://www.w3.org/TR/owl-time/#time:TemporalPosition) that is supported via evidence.</p>
 <p><strong>Notes:</strong> The age of a dwc:MaterialEntity and how this age is known, whether by a dating assay, a relative association with dated material, or legacy collections information.</p>
 <p><strong>Examples:</strong></p>
@@ -637,7 +637,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Chronometric Age Remarks</td></tr><tr><td class="label">Namespace</td><td>chrono</td></tr><tr><td class="label">Table:</td><td><a href="#Chronometric Age" target="_blank">Chronometric Age</a></td></tr><tr><td class="label">Description</td><td>Comments or notes about a chrono:ChronometricAge.</td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/chrono/terms/chronometricAgeRemarks" target="_blank">http://rs.tdwg.org/chrono/terms/chronometricAgeRemarks</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Geological Context" class="class-header">Geological Context</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/geological-context</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/geological-context</p>
 <p><strong>Description:</strong> A set of geological designations, such as stratigraphy, that qualify a dcterms:Location or source of a dwc:MaterialEntity.</p>
 <p><strong>Examples:</strong></p>
 <div class="examples-content">`a particular lithostratigraphic layer`</div><div class="examples-separator"></div><div class="examples-content">`a specific chronostratigraphic unit`</div>
@@ -743,7 +743,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Tectonic Units</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Geological Context" target="_blank">Geological Context</a></td></tr><tr><td class="label">Description</td><td>The combination of all tectonic unit names for the rock from which a dwc:MaterialEntity was collected.</td></tr><tr><td class="label">Notes</td><td>Recommended best practice is to use an authoritative tectonic unit lexicon such as the Tectonic Map of Switzerland (TK500). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr><tr><td class="label">Examples</td><td><div class="examples-content">`Upper Helvetic`</div><div class="examples-separator"></div><div class="examples-content">`Wildhorn Nappe Complex`</div><div class="examples-separator"></div><div class="examples-content">`Sublage Nappe`</div></td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/tectonicUnits" target="_blank">http://rs.tdwg.org/dwc/terms/tectonicUnits</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Occurrence" class="class-header">Occurrence</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/occurrence</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/occurrence</p>
 <p><strong>Description:</strong> A dwc:Event that establishes the state of a dwc:Organism at a particular place and time.</p>
 <p><strong>Examples:</strong></p>
 <div class="examples-content">`a wolf pack on the shore of Kluane Lake in 1988`</div><div class="examples-separator"></div><div class="examples-content">`a virus in a plant leaf in the New York Botanical Garden at 15:29 on 2014-10-23`</div><div class="examples-separator"></div><div class="examples-content">`a fungus in Central Park in the summer of 1929`</div>
@@ -949,7 +949,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Feedback URL</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Occurrence" target="_blank">Occurrence</a></td></tr><tr><td class="label">Description</td><td>A uniform resource locator (URL) that points to a webpage on which a form may be submitted to gather feedback about the record.</td></tr><tr><td class="label">Notes</td><td>Recommended best practice is to optionally include query strings that act to pre-populate web page form elements and communicate the context.</td></tr><tr><td class="label">Examples</td><td><div class="examples-content">`https://example.com/new?title=New+issue&body=This+comment+is+about+CAN12345`</div></td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/feedbackURL" target="_blank">http://rs.tdwg.org/dwc/terms/feedbackURL</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Organism" class="class-header">Organism</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/organism</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/organism</p>
 <p><strong>Description:</strong> A particular organism or defined group of organisms considered to be taxonomically homogeneous.</p>
 <p><strong>Notes:</strong> Instances of the dwc:Organism class are intended to facilitate linking one or more dwc:Identification instances to one or more dwc:Occurrence instances. Therefore, things that are typically assigned scientific names (such as viruses, hybrids, and lichens) and aggregates whose dwc:Occurrences are typically recorded (such as packs, clones, and colonies) are included in the scope of this class.</p>
 <p><strong>Examples:</strong></p>
@@ -992,7 +992,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Organism Remarks</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Organism" target="_blank">Organism</a></td></tr><tr><td class="label">Description</td><td>Comments or notes about the dwc:Organism instance.</td></tr><tr><td class="label">Examples</td><td><div class="examples-content">`One of a litter of six`</div></td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/organismRemarks" target="_blank">http://rs.tdwg.org/dwc/terms/organismRemarks</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Organism Interaction" class="class-header">Organism Interaction</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/organism-interaction</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/organism-interaction</p>
 <p><strong>Description:</strong> An interaction between two dwc:Organisms during a dwc:Event.</p>
 <p><strong>Notes:</strong> Supports only primary observed interactions, not habitual or derived taxon-level interactions. Pairwise interactions must be used to represent multi-organism interactions. When possible, typify the action rather than the state from which an action is inferred, with the actor as the subject dwc:Occurrence and the acted-upon as the related dwc:Occurrence. Only one direction of a two-way interaction is necessary, though both are permissible as distinct OrganismInteractions with distinct subject dwc:Occurrences.</p>
 <p><strong>Examples:</strong></p>
@@ -1063,7 +1063,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Feedback URL</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Organism Interaction" target="_blank">Organism Interaction</a></td></tr><tr><td class="label">Description</td><td>A uniform resource locator (URL) that points to a webpage on which a form may be submitted to gather feedback about the record.</td></tr><tr><td class="label">Notes</td><td>Recommended best practice is to optionally include query strings that act to pre-populate web page form elements and communicate the context.</td></tr><tr><td class="label">Examples</td><td><div class="examples-content">`https://example.com/new?title=New+issue&body=This+comment+is+about+CAN12345`</div></td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/feedbackURL" target="_blank">http://rs.tdwg.org/dwc/terms/feedbackURL</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Survey" class="class-header">Survey</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/survey</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/survey</p>
 <p><strong>Description:</strong> A dwc:Event intentionally designed to characterize a defined biotic target or domain in such a way that the resulting dwc:Occurrences can be interpreted collectively to support ecological and monitoring inference (such as detectability, abundance, species co-occurence, spatial distribution, or temporal trends), rather than merely documenting individual observations or gathered material.</p>
 <p><strong>Notes:</strong> Many terms from the Humboldt Extension for Ecological Inventories (eco: namespace) are organized in this class, particularly those that help describe and document the sampling process.</p>
 <p><strong>Examples:</strong></p>
@@ -1297,7 +1297,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Feedback URL</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Survey" target="_blank">Survey</a></td></tr><tr><td class="label">Description</td><td>A uniform resource locator (URL) that points to a webpage on which a form may be submitted to gather feedback about the record.</td></tr><tr><td class="label">Notes</td><td>Recommended best practice is to optionally include query strings that act to pre-populate web page form elements and communicate the context.</td></tr><tr><td class="label">Examples</td><td><div class="examples-content">`https://example.com/new?title=New+issue&body=This+comment+is+about+CAN12345`</div></td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/feedbackURL" target="_blank">http://rs.tdwg.org/dwc/terms/feedbackURL</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Survey Survey Target" class="class-header">Survey Survey Target</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/survey-survey-target</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/survey-survey-target</p>
 <p><strong>Description:</strong> An eco:SurveyTarget used for an eco:Survey.</p>
 <p><strong>dcterms:isVersionOf:</strong> http://example.com/term-pending//survey-survey-target</p>
 <div class="foreign-key-summary">
@@ -1317,7 +1317,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Survey Target (Foreign Key)</td></tr><tr><td class="label">Namespace</td><td>eco</td></tr><tr><td class="label">Table:</td><td><a href="#Survey Survey Target" target="_blank">Survey Survey Target</a></td></tr><tr><td class="label">Description</td><td>An identifier for an eco:SurveyTarget.</td></tr><tr><td class="label">Notes</td><td>The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.</td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">Constraints</td><td>{"required": true, "unique": false}</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/eco/terms/surveyTargetID" target="_blank">http://rs.tdwg.org/eco/terms/surveyTargetID</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Survey Target" class="class-header">Survey Target</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/survey-target</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/survey-target</p>
 <p><strong>Description:</strong> One or more scopes that describe a target for dwc:Occurrences in an eco:Survey.</p>
 <p><strong>Examples:</strong></p>
 <div class="examples-content">`all bird species`</div><div class="examples-separator"></div><div class="examples-content">`all bird species except Larus gulls, fulmars and kittiwakes`</div><div class="examples-separator"></div><div class="examples-content">`reproductive female Ctenomys sociabilis (only)`</div><div class="examples-separator"></div><div class="examples-content">`Oncorhynchus mykiss and Oncorhynchus clarkii (only)`, `all total lengths except < 12 inches`</div>
@@ -1355,7 +1355,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Survey Target Remarks</td></tr><tr><td class="label">Namespace</td><td>eco</td></tr><tr><td class="label">Table:</td><td><a href="#Survey Target" target="_blank">Survey Target</a></td></tr><tr><td class="label">Description</td><td>Comments or notes about an eco:SurveyTarget.</td></tr><tr><td class="label">Examples</td><td><div class="examples-content">`Survey target scopes reflect post-facto filtering, not original survey design.`</div></td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/eco/terms/surveyTargetRemarks" target="_blank">http://rs.tdwg.org/eco/terms/surveyTargetRemarks</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Survey Target Descriptor" class="class-header">Survey Target Descriptor</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/survey-target-descriptor</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/survey-target-descriptor</p>
 <p><strong>Description:</strong> A combination of a survey target value and a survey target type for a given eco:SurveyTarget.</p>
 <p><strong>Examples:</strong></p>
 <div class="examples-content">`taxon: Aves`</div><div class="examples-separator"></div><div class="examples-content">`pathway: transportContaminant`</div><div class="examples-separator"></div><div class="examples-content">`minimumTotalLength: 20 cm`</div>
@@ -1412,7 +1412,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Include Or Exclude</td></tr><tr><td class="label">Namespace</td><td>eco</td></tr><tr><td class="label">Table:</td><td><a href="#Survey Target Descriptor" target="_blank">Survey Target Descriptor</a></td></tr><tr><td class="label">Description</td><td>Whether to include or exclude eco:surveyTargetValue in a scope categorized by eco:surveyTargetType.</td></tr><tr><td class="label">Notes</td><td>Combinations of eco:SurveyTarget records of inclusions and exclusions can define complex scopes such as all flying adult Aves except Passeriformes. Recommended best practice is to use a controlled vocabulary consisting of 'include' and 'exclude' only.</td></tr><tr><td class="label">Examples</td><td><div class="examples-content">`include`</div><div class="examples-separator"></div><div class="examples-content">`exclude`</div></td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">Constraints</td><td>{"required": true, "unique": false}</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/eco/terms/includeOrExclude" target="_blank">http://rs.tdwg.org/eco/terms/includeOrExclude</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Identification" class="class-header">Identification</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/identification</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/identification</p>
 <p><strong>Description:</strong> A classification of a resource according to a classification scheme.</p>
 <p><strong>Notes:</strong> For biology, the assignment of a scientific name or taxon concept to a dwc:Organism.</p>
 <p><strong>Examples:</strong></p>
@@ -1652,7 +1652,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Feedback URL</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Identification" target="_blank">Identification</a></td></tr><tr><td class="label">Description</td><td>A uniform resource locator (URL) that points to a webpage on which a form may be submitted to gather feedback about the record.</td></tr><tr><td class="label">Notes</td><td>A uniform resource locator (URL) that points to a webpage on which a form may be submitted to gather feedback about the record.</td></tr><tr><td class="label">Examples</td><td><div class="examples-content">`https://example.com/new?title=New+issue&body=This+comment+is+about+CAN12345`</div></td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/feedbackURL" target="_blank">http://rs.tdwg.org/dwc/terms/feedbackURL</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Identification Taxon" class="class-header">Identification Taxon</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/identification-taxon</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/identification-taxon</p>
 <p><strong>Description:</strong> A construct of components and positions of dwc:Taxa in a dwc:Identification.</p>
 <p><strong>dcterms:isVersionOf:</strong> http://example.com/term-pending//identification-taxon</p>
 <div class="foreign-key-summary">
@@ -1779,7 +1779,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Name Published In Year</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Identification Taxon" target="_blank">Identification Taxon</a></td></tr><tr><td class="label">Description</td><td>The four-digit year in which the dwc:scientificName was published.</td></tr><tr><td class="label">Examples</td><td><div class="examples-content">`1915`</div><div class="examples-separator"></div><div class="examples-content">`2008`</div></td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/namePublishedInYear" target="_blank">http://rs.tdwg.org/dwc/terms/namePublishedInYear</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Material" class="class-header">Material</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/material</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/material</p>
 <p><strong>Description:</strong> An entity that can be identified, exist for some period of time, and consist in whole or in part of physical matter while it exists.</p>
 <p><strong>Notes:</strong> The term is defined at the most general level to admit descriptions of any subtype of material entity within the scope of Darwin Core. In particular, any kind of material sample, preserved specimen, fossil, or exemplar from living collections is intended to be subsumed under this term.</p>
 <p><strong>Examples:</strong></p>
@@ -2103,7 +2103,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Feedback URL</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Material" target="_blank">Material</a></td></tr><tr><td class="label">Description</td><td>A uniform resource locator (URL) that points to a webpage on which a form may be submitted to gather feedback about the record.</td></tr><tr><td class="label">Notes</td><td>Recommended best practice is to optionally include query strings that act to pre-populate web page form elements and communicate the context.</td></tr><tr><td class="label">Examples</td><td><div class="examples-content">`https://example.com/new?title=New+issue&body=This+comment+is+about+CAN12345`</div></td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/feedbackURL" target="_blank">http://rs.tdwg.org/dwc/terms/feedbackURL</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Geological Material" class="class-header">Geological Material</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/geological-material</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/geological-material</p>
 <p><strong>Description:</strong> A dwc:MaterialEntity that is geological in nature.</p>
 <p><strong>Examples:</strong></p>
 <div class="examples-content">`a specific mineral`</div><div class="examples-separator"></div><div class="examples-content">`a specific rock`</div><div class="examples-separator"></div><div class="examples-content">`a specific ore`</div>
@@ -2166,7 +2166,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Chemistry Remarks</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Geological Material" target="_blank">Geological Material</a></td></tr><tr><td class="label">Description</td><td>General remarks about the chemical and isotopic composition of a dwc:GeologicalMaterial.</td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/chemistryRemarks" target="_blank">http://rs.tdwg.org/dwc/terms/chemistryRemarks</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Material Geological Context" class="class-header">Material Geological Context</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/material-geological-context</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/material-geological-context</p>
 <p><strong>Description:</strong> A dwc:GeologicalContext from which a dwc:MaterialEntify was derived.</p>
 <p><strong>Notes:</strong> Use this table to establish one or more GeologicalContexts represented in a dwc:MaterialEntity.</p>
 <p><strong>dcterms:isVersionOf:</strong> http://example.com/term-pending//material-geological-context</p>
@@ -2187,7 +2187,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Material Entity (Foreign Key)</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Material Geological Context" target="_blank">Material Geological Context</a></td></tr><tr><td class="label">Description</td><td>An identifier for a dwc:MaterialEntity.</td></tr><tr><td class="label">Notes</td><td>The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.</td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">Constraints</td><td>{"required": true, "unique": false}</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/materialEntityID" target="_blank">http://rs.tdwg.org/dwc/terms/materialEntityID</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Nucleotide Analysis" class="class-header">Nucleotide Analysis</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/nucleotide-analysis</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/nucleotide-analysis</p>
 <p><strong>Description:</strong> A link between a dwc:NucleotideSequence and a dwc:Event and a dwc:MaterialEntity from which it was derived, using a specified dwc:Protocol.</p>
 <p><strong>dcterms:isVersionOf:</strong> <a href="http://rs.tdwg.org/dwc/terms/NucleotideAnalysis" target="_blank">http://rs.tdwg.org/dwc/terms/NucleotideAnalysis</a></p>
 <div class="foreign-key-summary">
@@ -2239,7 +2239,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Raw Total Read Count</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Nucleotide Analysis" target="_blank">Nucleotide Analysis</a></td></tr><tr><td class="label">Description</td><td>A total number of raw, unprocessed reads from a dwc:NucleotideAnalysis.</td></tr><tr><td class="label">Examples</td><td><div class="examples-content">`70463`</div><div class="examples-separator"></div><div class="examples-content">`150456`</div><div class="examples-separator"></div><div class="examples-content">`586031`</div></td></tr><tr><td class="label">Type</td><td>integer</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/rawTotalReadCount" target="_blank">http://rs.tdwg.org/dwc/terms/rawTotalReadCount</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Molecular Protocol" class="class-header">Molecular Protocol</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/molecular-protocol</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/molecular-protocol</p>
 <p><strong>Description:</strong> A protocol used to perform a dwc:NucleotideAnalysis and potentially derive a dwc:NucleotideSequence from a dwc:MaterialEntity.</p>
 <p><strong>Examples:</strong></p>
 <div class="examples-content">`a standard DNA barcoding workflow using Sanger sequencing`</div><div class="examples-separator"></div><div class="examples-content">`a shotgun metagenomics pipeline for microbial community profiling`</div><div class="examples-separator"></div><div class="examples-content">`a high-throughput amplicon sequencing protocol targeting 16S rRNA`</div>
@@ -2759,7 +2759,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>pcr_primer_loq</td></tr><tr><td class="label">Namespace</td><td>miqe</td></tr><tr><td class="label">Table:</td><td><a href="#Molecular Protocol" target="_blank">Molecular Protocol</a></td></tr><tr><td class="label">Description</td><td>The assay’s ability to quantify copy number at low levels.</td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.gbif.org/terms/miqe/pcr_primer_loq" target="_blank">http://rs.gbif.org/terms/miqe/pcr_primer_loq</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Nucleotide Sequence" class="class-header">Nucleotide Sequence</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/nucleotide-sequence</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/nucleotide-sequence</p>
 <p><strong>Description:</strong> A digital representation of a nucleotide sequence.</p>
 <p><strong>dcterms:isVersionOf:</strong> <a href="http://rs.tdwg.org/dwc/terms/NucleotideSequence" target="_blank">http://rs.tdwg.org/dwc/terms/NucleotideSequence</a></p>
 <div class="foreign-key-summary">
@@ -2787,7 +2787,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Nucleotide Sequence Remarks</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Nucleotide Sequence" target="_blank">Nucleotide Sequence</a></td></tr><tr><td class="label">Description</td><td>Comments or notes about a dwc:NucleotideSequence.</td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/nucleotideSequenceRemarks" target="_blank">http://rs.tdwg.org/dwc/terms/nucleotideSequenceRemarks</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Agent" class="class-header">Agent</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/agent</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/agent</p>
 <p><strong>Description:</strong> A resource that acts or has the power to act.</p>
 <p><strong>Notes:</strong> A person, group, organization, machine, software or other entity that can act. Membership in the dcterms:Agent class is determined by the capacity to act, even if not doing so in a specific context. To act: To participate in an event or process by contributing through behavior, operation, or an effect resulting from active participation — regardless of whether that contribution is intentional, volitional, or conscious.</p>
 <p><strong>Examples:</strong></p>
@@ -2822,7 +2822,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Agent Remarks</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Agent" target="_blank">Agent</a></td></tr><tr><td class="label">Description</td><td>Comments or notes about a dcterms:Agent.</td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/agentRemarks" target="_blank">http://rs.tdwg.org/dwc/terms/agentRemarks</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Agent Agent Role" class="class-header">Agent Agent Role</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/agent-agent-role</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/agent-agent-role</p>
 <p><strong>Description:</strong> A role filled by a dcterms:Agent with respect to another dcterms:Agent.</p>
 <p><strong>Examples:</strong></p>
 <div class="examples-content">`an instance of a dcterms:Agent that is a person is the director of another instance of a dcterms:Agent that is an organization`</div><div class="examples-separator"></div><div class="examples-content">`an instance of a dcterms:Agent that is a person is a member of another instance of a dcterms:Agent that is a group`</div><div class="examples-separator"></div><div class="examples-content">`an instance of a dcterms:Agent that is a person is the author of another instance of a dcterms:Agent that is software`</div>
@@ -2864,7 +2864,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Agent Role Date</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Agent Agent Role" target="_blank">Agent Agent Role</a></td></tr><tr><td class="label">Description</td><td>An interval during which a dcterms:AgentRole was in effect.</td></tr><tr><td class="label">Notes</td><td>Recommended best practice is to use a date that conforms to ISO 8601-1:2019.</td></tr><tr><td class="label">Examples</td><td><div class="examples-content">`1963-03-08T14:07-06:00` (8 Mar 1963 at or after 2:07pm and before 2:08pm in the time zone six hours earlier than UTC)</div><div class="examples-separator"></div><div class="examples-content">`2009-02-20T08:40Z` (20 February 2009 at or after 8:40am and before 8:41 UTC)</div><div class="examples-separator"></div><div class="examples-content">`2018-08-29T15:19` (29 August 2018 at or after 3:19pm and before 3:20pm local time)</div><div class="examples-separator"></div><div class="examples-content">`1809-02-12` (within the day 12 February 1809)</div><div class="examples-separator"></div><div class="examples-content">`1906-06` (in the month of June 1906)</div><div class="examples-separator"></div><div class="examples-content">`1971` (in the year 1971)</div><div class="examples-separator"></div><div class="examples-content">`2007-03-01T13:00:00Z/2008-05-11T15:30:00Z` (some time within the interval beginning 1 March 2007 at 1pm UTC and before 11 May 2008 at 3:30pm UTC)</div><div class="examples-separator"></div><div class="examples-content">`1900/1909` (some time within the interval between the beginning of the year 1900 and before the year 1909)</div><div class="examples-separator"></div><div class="examples-content">`2007-11-13/15` (some time in the interval between the beginning of 13 November 2007 and before 15 November 2007)</div></td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/assertionEffectiveDate" target="_blank">http://rs.tdwg.org/dwc/terms/assertionEffectiveDate</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Chronometric Age Agent Role" class="class-header">Chronometric Age Agent Role</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/chronometric-age-agent-role</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/chronometric-age-agent-role</p>
 <p><strong>Description:</strong> A role filled by a dcterms:Agent with respect to a chrono:ChronometricAge.</p>
 <p><strong>dcterms:isVersionOf:</strong> http://example.com/term-pending//chronometric-age-agent-role</p>
 <div class="foreign-key-summary">
@@ -2904,7 +2904,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Agent Role Date</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Chronometric Age Agent Role" target="_blank">Chronometric Age Agent Role</a></td></tr><tr><td class="label">Description</td><td>An interval during which a dcterms:AgentRole was in effect.</td></tr><tr><td class="label">Notes</td><td>Recommended best practice is to use a date that conforms to ISO 8601-1:2019.</td></tr><tr><td class="label">Examples</td><td><div class="examples-content">`1963-03-08T14:07-06:00` (8 Mar 1963 at or after 2:07pm and before 2:08pm in the time zone six hours earlier than UTC)</div><div class="examples-separator"></div><div class="examples-content">`2009-02-20T08:40Z` (20 February 2009 at or after 8:40am and before 8:41 UTC)</div><div class="examples-separator"></div><div class="examples-content">`2018-08-29T15:19` (29 August 2018 at or after 3:19pm and before 3:20pm local time)</div><div class="examples-separator"></div><div class="examples-content">`1809-02-12` (within the day 12 February 1809)</div><div class="examples-separator"></div><div class="examples-content">`1906-06` (in the month of June 1906)</div><div class="examples-separator"></div><div class="examples-content">`1971` (in the year 1971)</div><div class="examples-separator"></div><div class="examples-content">`2007-03-01T13:00:00Z/2008-05-11T15:30:00Z` (some time within the interval beginning 1 March 2007 at 1pm UTC and before 11 May 2008 at 3:30pm UTC)</div><div class="examples-separator"></div><div class="examples-content">`1900/1909` (some time within the interval between the beginning of the year 1900 and before the year 1909)</div><div class="examples-separator"></div><div class="examples-content">`2007-11-13/15` (some time in the interval between the beginning of 13 November 2007 and before 15 November 2007)</div></td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/assertionEffectiveDate" target="_blank">http://rs.tdwg.org/dwc/terms/assertionEffectiveDate</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Event Agent Role" class="class-header">Event Agent Role</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/event-agent-role</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/event-agent-role</p>
 <p><strong>Description:</strong> A role filled by a dcterms:Agent with respect to a dwc:Event.</p>
 <p><strong>dcterms:isVersionOf:</strong> http://example.com/term-pending//event-agent-role</p>
 <div class="foreign-key-summary">
@@ -2944,7 +2944,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Agent Role Date</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Event Agent Role" target="_blank">Event Agent Role</a></td></tr><tr><td class="label">Description</td><td>An interval during which a dcterms:AgentRole was in effect.</td></tr><tr><td class="label">Notes</td><td>Recommended best practice is to use a date that conforms to ISO 8601-1:2019.</td></tr><tr><td class="label">Examples</td><td><div class="examples-content">`1963-03-08T14:07-06:00` (8 Mar 1963 at or after 2:07pm and before 2:08pm in the time zone six hours earlier than UTC)</div><div class="examples-separator"></div><div class="examples-content">`2009-02-20T08:40Z` (20 February 2009 at or after 8:40am and before 8:41 UTC)</div><div class="examples-separator"></div><div class="examples-content">`2018-08-29T15:19` (29 August 2018 at or after 3:19pm and before 3:20pm local time)</div><div class="examples-separator"></div><div class="examples-content">`1809-02-12` (within the day 12 February 1809)</div><div class="examples-separator"></div><div class="examples-content">`1906-06` (in the month of June 1906)</div><div class="examples-separator"></div><div class="examples-content">`1971` (in the year 1971)</div><div class="examples-separator"></div><div class="examples-content">`2007-03-01T13:00:00Z/2008-05-11T15:30:00Z` (some time within the interval beginning 1 March 2007 at 1pm UTC and before 11 May 2008 at 3:30pm UTC)</div><div class="examples-separator"></div><div class="examples-content">`1900/1909` (some time within the interval between the beginning of the year 1900 and before the year 1909)</div><div class="examples-separator"></div><div class="examples-content">`2007-11-13/15` (some time in the interval between the beginning of 13 November 2007 and before 15 November 2007)</div></td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/assertionEffectiveDate" target="_blank">http://rs.tdwg.org/dwc/terms/assertionEffectiveDate</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Identification Agent Role" class="class-header">Identification Agent Role</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/identification-agent-role</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/identification-agent-role</p>
 <p><strong>Description:</strong> A role filled by a dcterms:Agent with respect to a dwc:Identification.</p>
 <p><strong>dcterms:isVersionOf:</strong> http://example.com/term-pending//identification-agent-role</p>
 <div class="foreign-key-summary">
@@ -2984,7 +2984,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Agent Role Date</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Identification Agent Role" target="_blank">Identification Agent Role</a></td></tr><tr><td class="label">Description</td><td>An interval during which a dcterms:AgentRole was in effect.</td></tr><tr><td class="label">Notes</td><td>Recommended best practice is to use a date that conforms to ISO 8601-1:2019.</td></tr><tr><td class="label">Examples</td><td><div class="examples-content">`1963-03-08T14:07-06:00` (8 Mar 1963 at or after 2:07pm and before 2:08pm in the time zone six hours earlier than UTC)</div><div class="examples-separator"></div><div class="examples-content">`2009-02-20T08:40Z` (20 February 2009 at or after 8:40am and before 8:41 UTC)</div><div class="examples-separator"></div><div class="examples-content">`2018-08-29T15:19` (29 August 2018 at or after 3:19pm and before 3:20pm local time)</div><div class="examples-separator"></div><div class="examples-content">`1809-02-12` (within the day 12 February 1809)</div><div class="examples-separator"></div><div class="examples-content">`1906-06` (in the month of June 1906)</div><div class="examples-separator"></div><div class="examples-content">`1971` (in the year 1971)</div><div class="examples-separator"></div><div class="examples-content">`2007-03-01T13:00:00Z/2008-05-11T15:30:00Z` (some time within the interval beginning 1 March 2007 at 1pm UTC and before 11 May 2008 at 3:30pm UTC)</div><div class="examples-separator"></div><div class="examples-content">`1900/1909` (some time within the interval between the beginning of the year 1900 and before the year 1909)</div><div class="examples-separator"></div><div class="examples-content">`2007-11-13/15` (some time in the interval between the beginning of 13 November 2007 and before 15 November 2007)</div></td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/assertionEffectiveDate" target="_blank">http://rs.tdwg.org/dwc/terms/assertionEffectiveDate</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Material Agent Role" class="class-header">Material Agent Role</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/material-agent-role</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/material-agent-role</p>
 <p><strong>Description:</strong> A role filled by a dcterms:Agent with respect to a dwc:MaterialEntity.</p>
 <p><strong>dcterms:isVersionOf:</strong> http://example.com/term-pending//material-agent-role</p>
 <div class="foreign-key-summary">
@@ -3024,7 +3024,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Agent Role Date</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Material Agent Role" target="_blank">Material Agent Role</a></td></tr><tr><td class="label">Description</td><td>An interval during which a dcterms:AgentRole was in effect.</td></tr><tr><td class="label">Notes</td><td>Recommended best practice is to use a date that conforms to ISO 8601-1:2019.</td></tr><tr><td class="label">Examples</td><td><div class="examples-content">`1963-03-08T14:07-06:00` (8 Mar 1963 at or after 2:07pm and before 2:08pm in the time zone six hours earlier than UTC)</div><div class="examples-separator"></div><div class="examples-content">`2009-02-20T08:40Z` (20 February 2009 at or after 8:40am and before 8:41 UTC)</div><div class="examples-separator"></div><div class="examples-content">`2018-08-29T15:19` (29 August 2018 at or after 3:19pm and before 3:20pm local time)</div><div class="examples-separator"></div><div class="examples-content">`1809-02-12` (within the day 12 February 1809)</div><div class="examples-separator"></div><div class="examples-content">`1906-06` (in the month of June 1906)</div><div class="examples-separator"></div><div class="examples-content">`1971` (in the year 1971)</div><div class="examples-separator"></div><div class="examples-content">`2007-03-01T13:00:00Z/2008-05-11T15:30:00Z` (some time within the interval beginning 1 March 2007 at 1pm UTC and before 11 May 2008 at 3:30pm UTC)</div><div class="examples-separator"></div><div class="examples-content">`1900/1909` (some time within the interval between the beginning of the year 1900 and before the year 1909)</div><div class="examples-separator"></div><div class="examples-content">`2007-11-13/15` (some time in the interval between the beginning of 13 November 2007 and before 15 November 2007)</div></td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/assertionEffectiveDate" target="_blank">http://rs.tdwg.org/dwc/terms/assertionEffectiveDate</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Media Agent Role" class="class-header">Media Agent Role</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/media-agent-role</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/media-agent-role</p>
 <p><strong>Description:</strong> A role filled by a dcterms:Agent with respect to an ac:Media entity.</p>
 <p><strong>dcterms:isVersionOf:</strong> http://example.com/term-pending//media-agent-role</p>
 <div class="foreign-key-summary">
@@ -3064,7 +3064,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Agent Role Date</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Media Agent Role" target="_blank">Media Agent Role</a></td></tr><tr><td class="label">Description</td><td>An interval during which a dcterms:AgentRole was in effect.</td></tr><tr><td class="label">Notes</td><td>Recommended best practice is to use a date that conforms to ISO 8601-1:2019.</td></tr><tr><td class="label">Examples</td><td><div class="examples-content">`1963-03-08T14:07-06:00` (8 Mar 1963 at or after 2:07pm and before 2:08pm in the time zone six hours earlier than UTC)</div><div class="examples-separator"></div><div class="examples-content">`2009-02-20T08:40Z` (20 February 2009 at or after 8:40am and before 8:41 UTC)</div><div class="examples-separator"></div><div class="examples-content">`2018-08-29T15:19` (29 August 2018 at or after 3:19pm and before 3:20pm local time)</div><div class="examples-separator"></div><div class="examples-content">`1809-02-12` (within the day 12 February 1809)</div><div class="examples-separator"></div><div class="examples-content">`1906-06` (in the month of June 1906)</div><div class="examples-separator"></div><div class="examples-content">`1971` (in the year 1971)</div><div class="examples-separator"></div><div class="examples-content">`2007-03-01T13:00:00Z/2008-05-11T15:30:00Z` (some time within the interval beginning 1 March 2007 at 1pm UTC and before 11 May 2008 at 3:30pm UTC)</div><div class="examples-separator"></div><div class="examples-content">`1900/1909` (some time within the interval between the beginning of the year 1900 and before the year 1909)</div><div class="examples-separator"></div><div class="examples-content">`2007-11-13/15` (some time in the interval between the beginning of 13 November 2007 and before 15 November 2007)</div></td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/assertionEffectiveDate" target="_blank">http://rs.tdwg.org/dwc/terms/assertionEffectiveDate</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Molecular Protocol Agent Role" class="class-header">Molecular Protocol Agent Role</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/molecular-protocol-agent-role</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/molecular-protocol-agent-role</p>
 <p><strong>Description:</strong> A role filled by a dcterms:Agent with respect to a dwc:MolecularProtocol.</p>
 <p><strong>dcterms:isVersionOf:</strong> http://example.com/term-pending//molecular-protocol-agent-role</p>
 <div class="foreign-key-summary">
@@ -3104,7 +3104,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Agent Role Date</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Molecular Protocol Agent Role" target="_blank">Molecular Protocol Agent Role</a></td></tr><tr><td class="label">Description</td><td>An interval during which a dcterms:AgentRole was in effect.</td></tr><tr><td class="label">Notes</td><td>Recommended best practice is to use a date that conforms to ISO 8601-1:2019.</td></tr><tr><td class="label">Examples</td><td><div class="examples-content">`1963-03-08T14:07-06:00` (8 Mar 1963 at or after 2:07pm and before 2:08pm in the time zone six hours earlier than UTC)</div><div class="examples-separator"></div><div class="examples-content">`2009-02-20T08:40Z` (20 February 2009 at or after 8:40am and before 8:41 UTC)</div><div class="examples-separator"></div><div class="examples-content">`2018-08-29T15:19` (29 August 2018 at or after 3:19pm and before 3:20pm local time)</div><div class="examples-separator"></div><div class="examples-content">`1809-02-12` (within the day 12 February 1809)</div><div class="examples-separator"></div><div class="examples-content">`1906-06` (in the month of June 1906)</div><div class="examples-separator"></div><div class="examples-content">`1971` (in the year 1971)</div><div class="examples-separator"></div><div class="examples-content">`2007-03-01T13:00:00Z/2008-05-11T15:30:00Z` (some time within the interval beginning 1 March 2007 at 1pm UTC and before 11 May 2008 at 3:30pm UTC)</div><div class="examples-separator"></div><div class="examples-content">`1900/1909` (some time within the interval between the beginning of the year 1900 and before the year 1909)</div><div class="examples-separator"></div><div class="examples-content">`2007-11-13/15` (some time in the interval between the beginning of 13 November 2007 and before 15 November 2007)</div></td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/assertionEffectiveDate" target="_blank">http://rs.tdwg.org/dwc/terms/assertionEffectiveDate</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Occurrence Agent Role" class="class-header">Occurrence Agent Role</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/occurrence-agent-role</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/occurrence-agent-role</p>
 <p><strong>Description:</strong> A role filled by a dcterms:Agent with respect to a dwc:Occurrence.</p>
 <p><strong>dcterms:isVersionOf:</strong> http://example.com/term-pending//occurrence-agent-role</p>
 <div class="foreign-key-summary">
@@ -3144,7 +3144,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Agent Role Date</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Occurrence Agent Role" target="_blank">Occurrence Agent Role</a></td></tr><tr><td class="label">Description</td><td>An interval during which a dcterms:AgentRole was in effect.</td></tr><tr><td class="label">Notes</td><td>Recommended best practice is to use a date that conforms to ISO 8601-1:2019.</td></tr><tr><td class="label">Examples</td><td><div class="examples-content">`1963-03-08T14:07-06:00` (8 Mar 1963 at or after 2:07pm and before 2:08pm in the time zone six hours earlier than UTC)</div><div class="examples-separator"></div><div class="examples-content">`2009-02-20T08:40Z` (20 February 2009 at or after 8:40am and before 8:41 UTC)</div><div class="examples-separator"></div><div class="examples-content">`2018-08-29T15:19` (29 August 2018 at or after 3:19pm and before 3:20pm local time)</div><div class="examples-separator"></div><div class="examples-content">`1809-02-12` (within the day 12 February 1809)</div><div class="examples-separator"></div><div class="examples-content">`1906-06` (in the month of June 1906)</div><div class="examples-separator"></div><div class="examples-content">`1971` (in the year 1971)</div><div class="examples-separator"></div><div class="examples-content">`2007-03-01T13:00:00Z/2008-05-11T15:30:00Z` (some time within the interval beginning 1 March 2007 at 1pm UTC and before 11 May 2008 at 3:30pm UTC)</div><div class="examples-separator"></div><div class="examples-content">`1900/1909` (some time within the interval between the beginning of the year 1900 and before the year 1909)</div><div class="examples-separator"></div><div class="examples-content">`2007-11-13/15` (some time in the interval between the beginning of 13 November 2007 and before 15 November 2007)</div></td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/assertionEffectiveDate" target="_blank">http://rs.tdwg.org/dwc/terms/assertionEffectiveDate</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Organism Interaction Agent Role" class="class-header">Organism Interaction Agent Role</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/organism-interaction-agent-role</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/organism-interaction-agent-role</p>
 <p><strong>Description:</strong> A role filled by a dcterms:Agent with respect to a dwc:OrganismInteraction.</p>
 <p><strong>dcterms:isVersionOf:</strong> http://example.com/term-pending//organism-interaction-agent-role</p>
 <div class="foreign-key-summary">
@@ -3184,7 +3184,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Agent Role Date</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Organism Interaction Agent Role" target="_blank">Organism Interaction Agent Role</a></td></tr><tr><td class="label">Description</td><td>An interval during which a dcterms:AgentRole was in effect.</td></tr><tr><td class="label">Notes</td><td>Recommended best practice is to use a date that conforms to ISO 8601-1:2019.</td></tr><tr><td class="label">Examples</td><td><div class="examples-content">`1963-03-08T14:07-06:00` (8 Mar 1963 at or after 2:07pm and before 2:08pm in the time zone six hours earlier than UTC)</div><div class="examples-separator"></div><div class="examples-content">`2009-02-20T08:40Z` (20 February 2009 at or after 8:40am and before 8:41 UTC)</div><div class="examples-separator"></div><div class="examples-content">`2018-08-29T15:19` (29 August 2018 at or after 3:19pm and before 3:20pm local time)</div><div class="examples-separator"></div><div class="examples-content">`1809-02-12` (within the day 12 February 1809)</div><div class="examples-separator"></div><div class="examples-content">`1906-06` (in the month of June 1906)</div><div class="examples-separator"></div><div class="examples-content">`1971` (in the year 1971)</div><div class="examples-separator"></div><div class="examples-content">`2007-03-01T13:00:00Z/2008-05-11T15:30:00Z` (some time within the interval beginning 1 March 2007 at 1pm UTC and before 11 May 2008 at 3:30pm UTC)</div><div class="examples-separator"></div><div class="examples-content">`1900/1909` (some time within the interval between the beginning of the year 1900 and before the year 1909)</div><div class="examples-separator"></div><div class="examples-content">`2007-11-13/15` (some time in the interval between the beginning of 13 November 2007 and before 15 November 2007)</div></td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/assertionEffectiveDate" target="_blank">http://rs.tdwg.org/dwc/terms/assertionEffectiveDate</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Survey Agent Role" class="class-header">Survey Agent Role</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/survey-agent-role</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/survey-agent-role</p>
 <p><strong>Description:</strong> A role filled by a dcterms:Agent with respect to an eco:Survey.</p>
 <p><strong>dcterms:isVersionOf:</strong> http://example.com/term-pending//survey-agent-role</p>
 <div class="foreign-key-summary">
@@ -3224,7 +3224,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Agent Role Date</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Survey Agent Role" target="_blank">Survey Agent Role</a></td></tr><tr><td class="label">Description</td><td>An interval during which a dcterms:AgentRole was in effect.</td></tr><tr><td class="label">Notes</td><td>Recommended best practice is to use a date that conforms to ISO 8601-1:2019.</td></tr><tr><td class="label">Examples</td><td><div class="examples-content">`1963-03-08T14:07-06:00` (8 Mar 1963 at or after 2:07pm and before 2:08pm in the time zone six hours earlier than UTC)</div><div class="examples-separator"></div><div class="examples-content">`2009-02-20T08:40Z` (20 February 2009 at or after 8:40am and before 8:41 UTC)</div><div class="examples-separator"></div><div class="examples-content">`2018-08-29T15:19` (29 August 2018 at or after 3:19pm and before 3:20pm local time)</div><div class="examples-separator"></div><div class="examples-content">`1809-02-12` (within the day 12 February 1809)</div><div class="examples-separator"></div><div class="examples-content">`1906-06` (in the month of June 1906)</div><div class="examples-separator"></div><div class="examples-content">`1971` (in the year 1971)</div><div class="examples-separator"></div><div class="examples-content">`2007-03-01T13:00:00Z/2008-05-11T15:30:00Z` (some time within the interval beginning 1 March 2007 at 1pm UTC and before 11 May 2008 at 3:30pm UTC)</div><div class="examples-separator"></div><div class="examples-content">`1900/1909` (some time within the interval between the beginning of the year 1900 and before the year 1909)</div><div class="examples-separator"></div><div class="examples-content">`2007-11-13/15` (some time in the interval between the beginning of 13 November 2007 and before 15 November 2007)</div></td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/assertionEffectiveDate" target="_blank">http://rs.tdwg.org/dwc/terms/assertionEffectiveDate</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Media" class="class-header">Media</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/media</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/media</p>
 <p><strong>Description:</strong> A digital or physical media resource.</p>
 <p><strong>Notes:</strong> An instance of digital textual media may be better represented as a dcterms:BibliographicResource.</p>
 <p><strong>Examples:</strong></p>
@@ -3562,7 +3562,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>License</td></tr><tr><td class="label">Namespace</td><td>dcterms</td></tr><tr><td class="label">Table:</td><td><a href="#Media" target="_blank">Media</a></td></tr><tr><td class="label">Description</td><td>A legal document giving official permission to do something with the resource.</td></tr><tr><td class="label">Notes</td><td>Recommended practice is to identify the license document with a URI. If this is not possible or feasible, a literal value that identifies the license may be provided.</td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://purl.org/dc/terms/license" target="_blank">http://purl.org/dc/terms/license</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Agent Media" class="class-header">Agent Media</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/agent-media</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/agent-media</p>
 <p><strong>Description:</strong> A dcterms:Agent as content in an ac:Media entity.</p>
 <p><strong>Examples:</strong></p>
 <div class="examples-content">`a person shown in a photograph`</div><div class="examples-separator"></div><div class="examples-content">`a group of people in a video`</div>
@@ -3616,7 +3616,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Physical Setting</td></tr><tr><td class="label">Namespace</td><td>ac</td></tr><tr><td class="label">Table:</td><td><a href="#Agent Media" target="_blank">Agent Media</a></td></tr><tr><td class="label">Description</td><td>The setting of the content represented in an ac:Media resource, such as images, sounds, and movies if the provider deems them relevant.</td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/ac/terms/physicalSetting" target="_blank">http://rs.tdwg.org/ac/terms/physicalSetting</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Chronometric Age Media" class="class-header">Chronometric Age Media</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/chronometric-age-media</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/chronometric-age-media</p>
 <p><strong>Description:</strong> A chrono:ChronometricAge as content in an ac:Media entity.</p>
 <p><strong>dcterms:isVersionOf:</strong> http://example.com/term-pending//chronometric-age-media</p>
 <div class="foreign-key-summary">
@@ -3668,7 +3668,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Physical Setting</td></tr><tr><td class="label">Namespace</td><td>ac</td></tr><tr><td class="label">Table:</td><td><a href="#Chronometric Age Media" target="_blank">Chronometric Age Media</a></td></tr><tr><td class="label">Description</td><td>The setting of the content represented in an ac:Media resource, such as images, sounds, and movies if the provider deems them relevant.</td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/ac/terms/physicalSetting" target="_blank">http://rs.tdwg.org/ac/terms/physicalSetting</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Event Media" class="class-header">Event Media</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/event-media</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/event-media</p>
 <p><strong>Description:</strong> A dwc:Event as content in an ac:Media entity.</p>
 <p><strong>dcterms:isVersionOf:</strong> http://example.com/term-pending//event-media</p>
 <div class="foreign-key-summary">
@@ -3720,7 +3720,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Physical Setting</td></tr><tr><td class="label">Namespace</td><td>ac</td></tr><tr><td class="label">Table:</td><td><a href="#Event Media" target="_blank">Event Media</a></td></tr><tr><td class="label">Description</td><td>The setting of the content represented in an ac:Media resource, such as images, sounds, and movies if the provider deems them relevant.</td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/ac/terms/physicalSetting" target="_blank">http://rs.tdwg.org/ac/terms/physicalSetting</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Geological Context Media" class="class-header">Geological Context Media</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/geological-context-media</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/geological-context-media</p>
 <p><strong>Description:</strong> A dwc:GeologicalContext as content in an ac:Media entity.</p>
 <p><strong>dcterms:isVersionOf:</strong> http://example.com/term-pending//geological-context-media</p>
 <div class="foreign-key-summary">
@@ -3772,7 +3772,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Physical Setting</td></tr><tr><td class="label">Namespace</td><td>ac</td></tr><tr><td class="label">Table:</td><td><a href="#Geological Context Media" target="_blank">Geological Context Media</a></td></tr><tr><td class="label">Description</td><td>The setting of the content represented in an ac:Media resource, such as images, sounds, and movies if the provider deems them relevant.</td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/ac/terms/physicalSetting" target="_blank">http://rs.tdwg.org/ac/terms/physicalSetting</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Material Media" class="class-header">Material Media</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/material-media</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/material-media</p>
 <p><strong>Description:</strong> A dwc:MaterialEntity as content in an ac:Media entity.</p>
 <p><strong>dcterms:isVersionOf:</strong> http://example.com/term-pending//material-media</p>
 <div class="foreign-key-summary">
@@ -3824,7 +3824,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Physical Setting</td></tr><tr><td class="label">Namespace</td><td>ac</td></tr><tr><td class="label">Table:</td><td><a href="#Material Media" target="_blank">Material Media</a></td></tr><tr><td class="label">Description</td><td>The setting of the content represented in an ac:Media resource, such as images, sounds, and movies if the provider deems them relevant.</td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/ac/terms/physicalSetting" target="_blank">http://rs.tdwg.org/ac/terms/physicalSetting</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Occurrence Media" class="class-header">Occurrence Media</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/occurrence-media</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/occurrence-media</p>
 <p><strong>Description:</strong> A dwc:Occurrence as content in an ac:Media entity.</p>
 <p><strong>dcterms:isVersionOf:</strong> http://example.com/term-pending//occurrence-media</p>
 <div class="foreign-key-summary">
@@ -3876,7 +3876,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Physical Setting</td></tr><tr><td class="label">Namespace</td><td>ac</td></tr><tr><td class="label">Table:</td><td><a href="#Occurrence Media" target="_blank">Occurrence Media</a></td></tr><tr><td class="label">Description</td><td>The setting of the content represented in an ac:Media resource, such as images, sounds, and movies if the provider deems them relevant.</td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/ac/terms/physicalSetting" target="_blank">http://rs.tdwg.org/ac/terms/physicalSetting</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Organism Interaction Media" class="class-header">Organism Interaction Media</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/organism-interaction-media</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/organism-interaction-media</p>
 <p><strong>Description:</strong> A dwc:OrganismInteraction as content in an ac:Media entity.</p>
 <p><strong>dcterms:isVersionOf:</strong> http://example.com/term-pending//organism-interaction-media</p>
 <div class="foreign-key-summary">
@@ -3928,7 +3928,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Physical Setting</td></tr><tr><td class="label">Namespace</td><td>ac</td></tr><tr><td class="label">Table:</td><td><a href="#Organism Interaction Media" target="_blank">Organism Interaction Media</a></td></tr><tr><td class="label">Description</td><td>The setting of the content represented in an ac:Media resource, such as images, sounds, and movies if the provider deems them relevant.</td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/ac/terms/physicalSetting" target="_blank">http://rs.tdwg.org/ac/terms/physicalSetting</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Protocol" class="class-header">Protocol</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/protocol</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/protocol</p>
 <p><strong>Description:</strong> A method used during an action.</p>
 <p><strong>Examples:</strong></p>
 <div class="examples-content">`a pitfall trap method for sampling ground-dwelling arthropods`</div><div class="examples-separator"></div><div class="examples-content">`a point-radius georeferencing method`</div><div class="examples-separator"></div><div class="examples-content">`a linear regression model to estimate body mass from skeletal measurements`</div><div class="examples-separator"></div><div class="examples-content">`a Bayesian phylogenetic inference method`</div>
@@ -3970,7 +3970,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Protocol Remarks</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Protocol" target="_blank">Protocol</a></td></tr><tr><td class="label">Description</td><td>Comments or notes about a dwc:Protocol.</td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/protocolRemarks" target="_blank">http://rs.tdwg.org/dwc/terms/protocolRemarks</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Chronometric Age Protocol" class="class-header">Chronometric Age Protocol</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/chronometric-age-protocol</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/chronometric-age-protocol</p>
 <p><strong>Description:</strong> A dwc:Protocol used for a chrono:ChronometricAge.</p>
 <p><strong>dcterms:isVersionOf:</strong> http://example.com/term-pending//chronometric-age-protocol</p>
 <div class="foreign-key-summary">
@@ -3990,7 +3990,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Chronometric Age (Foreign Key)</td></tr><tr><td class="label">Namespace</td><td>chrono</td></tr><tr><td class="label">Table:</td><td><a href="#Chronometric Age Protocol" target="_blank">Chronometric Age Protocol</a></td></tr><tr><td class="label">Description</td><td>An identifier for a chrono:ChronometricAge.</td></tr><tr><td class="label">Notes</td><td>The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.</td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">Constraints</td><td>{"required": true, "unique": false}</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/chrono/terms/chronometricAgeID" target="_blank">http://rs.tdwg.org/chrono/terms/chronometricAgeID</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Event Protocol" class="class-header">Event Protocol</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/event-protocol</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/event-protocol</p>
 <p><strong>Description:</strong> A dwc:Protocol used for a dwc:Event.</p>
 <p><strong>dcterms:isVersionOf:</strong> http://example.com/term-pending//event-protocol</p>
 <div class="foreign-key-summary">
@@ -4010,7 +4010,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Event (Foreign Key)</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Event Protocol" target="_blank">Event Protocol</a></td></tr><tr><td class="label">Description</td><td>An identifier for a dwc:Event.</td></tr><tr><td class="label">Notes</td><td>The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.</td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">Constraints</td><td>{"required": true, "unique": false}</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/eventID" target="_blank">http://rs.tdwg.org/dwc/terms/eventID</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Material Protocol" class="class-header">Material Protocol</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/material-protocol</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/material-protocol</p>
 <p><strong>Description:</strong> A dwc:Protocol used for a dwc:MaterialEntity.</p>
 <p><strong>dcterms:isVersionOf:</strong> http://example.com/term-pending//material-protocol</p>
 <div class="foreign-key-summary">
@@ -4030,7 +4030,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Material Entity (Foreign Key)</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Material Protocol" target="_blank">Material Protocol</a></td></tr><tr><td class="label">Description</td><td>An identifier for a dwc:MaterialEntity.</td></tr><tr><td class="label">Notes</td><td>The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.</td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">Constraints</td><td>{"required": true, "unique": false}</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/materialEntityID" target="_blank">http://rs.tdwg.org/dwc/terms/materialEntityID</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Occurrence Protocol" class="class-header">Occurrence Protocol</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/occurrence-protocol</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/occurrence-protocol</p>
 <p><strong>Description:</strong> A dwc:Protocol used for a dwc:Occurrence.</p>
 <p><strong>dcterms:isVersionOf:</strong> http://example.com/term-pending//occurrence-protocol</p>
 <div class="foreign-key-summary">
@@ -4050,7 +4050,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Occurrence (Foreign Key)</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Occurrence Protocol" target="_blank">Occurrence Protocol</a></td></tr><tr><td class="label">Description</td><td>An identifier for a dwc:Occurrence.</td></tr><tr><td class="label">Notes</td><td>The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.</td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">Constraints</td><td>{"required": true, "unique": false}</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/occurrenceID" target="_blank">http://rs.tdwg.org/dwc/terms/occurrenceID</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Survey Protocol" class="class-header">Survey Protocol</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/survey-protocol</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/survey-protocol</p>
 <p><strong>Description:</strong> A dwc:Protocol used for an eco:Survey.</p>
 <p><strong>dcterms:isVersionOf:</strong> http://example.com/term-pending//survey-protocol</p>
 <div class="foreign-key-summary">
@@ -4070,7 +4070,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Survey (Foreign Key)</td></tr><tr><td class="label">Namespace</td><td>eco</td></tr><tr><td class="label">Table:</td><td><a href="#Survey Protocol" target="_blank">Survey Protocol</a></td></tr><tr><td class="label">Description</td><td>An identifier for an eco:Survey.</td></tr><tr><td class="label">Notes</td><td>The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.</td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">Constraints</td><td>{"required": true, "unique": false}</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/eco/terms/surveyID" target="_blank">http://rs.tdwg.org/eco/terms/surveyID</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Bibliographic Resource" class="class-header">Bibliographic Resource</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/bibliographic-resource</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/bibliographic-resource</p>
 <p><strong>Description:</strong> A book, article, or other documentary resource.</p>
 <p><strong>dcterms:isVersionOf:</strong> <a href="http://purl.org/dc/terms/BibliographicResource" target="_blank">http://purl.org/dc/terms/BibliographicResource</a></p>
 <div class="foreign-key-summary">
@@ -4198,7 +4198,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Reference Remarks</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Bibliographic Resource" target="_blank">Bibliographic Resource</a></td></tr><tr><td class="label">Description</td><td>Comments or notes about a dcterms:BibliographicResource.</td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/referenceRemarks" target="_blank">http://rs.tdwg.org/dwc/terms/referenceRemarks</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Chronometric Age Reference" class="class-header">Chronometric Age Reference</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/chronometric-age-reference</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/chronometric-age-reference</p>
 <p><strong>Description:</strong> A dcterms:BibliographicResource related to a chrono:ChronometricAge.</p>
 <p><strong>dcterms:isVersionOf:</strong> http://example.com/term-pending//chronometric-age-reference</p>
 <div class="foreign-key-summary">
@@ -4222,7 +4222,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Relationship Type</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Chronometric Age Reference" target="_blank">Chronometric Age Reference</a></td></tr><tr><td class="label">Description</td><td>A relationship of a subject resource to a dcterms:BibliographicResource.</td></tr><tr><td class="label">Notes</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr><tr><td class="label">Examples</td><td><div class="examples-content">`cited in`</div><div class="examples-separator"></div><div class="examples-content">`referenced`</div></td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/relationshipOfResource" target="_blank">http://rs.tdwg.org/dwc/terms/relationshipOfResource</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Event Reference" class="class-header">Event Reference</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/event-reference</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/event-reference</p>
 <p><strong>Description:</strong> A dcterms:BibliographicResource related to a dwc:Event.</p>
 <p><strong>dcterms:isVersionOf:</strong> http://example.com/term-pending//event-reference</p>
 <div class="foreign-key-summary">
@@ -4246,7 +4246,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Relationship Type</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Event Reference" target="_blank">Event Reference</a></td></tr><tr><td class="label">Description</td><td>A relationship of a subject resource to a dcterms:BibliographicResource.</td></tr><tr><td class="label">Notes</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr><tr><td class="label">Examples</td><td><div class="examples-content">`cited in`</div><div class="examples-separator"></div><div class="examples-content">`referenced`</div></td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/relationshipOfResource" target="_blank">http://rs.tdwg.org/dwc/terms/relationshipOfResource</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Identification Reference" class="class-header">Identification Reference</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/identification-reference</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/identification-reference</p>
 <p><strong>Description:</strong> A dcterms:BibliographicResource related to a dwc:Identification.</p>
 <p><strong>dcterms:isVersionOf:</strong> http://example.com/term-pending//identification-reference</p>
 <div class="foreign-key-summary">
@@ -4270,7 +4270,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Relationship Type</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Identification Reference" target="_blank">Identification Reference</a></td></tr><tr><td class="label">Description</td><td>A relationship of a subject resource to a dcterms:BibliographicResource.</td></tr><tr><td class="label">Notes</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr><tr><td class="label">Examples</td><td><div class="examples-content">`cited in`</div><div class="examples-separator"></div><div class="examples-content">`referenced`</div></td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/relationshipOfResource" target="_blank">http://rs.tdwg.org/dwc/terms/relationshipOfResource</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Material Reference" class="class-header">Material Reference</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/material-reference</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/material-reference</p>
 <p><strong>Description:</strong> A dcterms:BibliographicResource related to a dwc:MaterialEntity.</p>
 <p><strong>dcterms:isVersionOf:</strong> http://example.com/term-pending//material-reference</p>
 <div class="foreign-key-summary">
@@ -4294,7 +4294,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Relationship Type</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Material Reference" target="_blank">Material Reference</a></td></tr><tr><td class="label">Description</td><td>A relationship of a subject resource to a dcterms:BibliographicResource.</td></tr><tr><td class="label">Notes</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr><tr><td class="label">Examples</td><td><div class="examples-content">`cited in`</div><div class="examples-separator"></div><div class="examples-content">`referenced`</div></td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/relationshipOfResource" target="_blank">http://rs.tdwg.org/dwc/terms/relationshipOfResource</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Molecular Protocol Reference" class="class-header">Molecular Protocol Reference</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/molecular-protocol-reference</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/molecular-protocol-reference</p>
 <p><strong>Description:</strong> A dcterms:BibliographicResource related to a dwc:MolecularProtocol.</p>
 <p><strong>dcterms:isVersionOf:</strong> http://example.com/term-pending//molecular-protocol-reference</p>
 <div class="foreign-key-summary">
@@ -4318,7 +4318,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Relationship Type</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Molecular Protocol Reference" target="_blank">Molecular Protocol Reference</a></td></tr><tr><td class="label">Description</td><td>A relationship of a subject resource to a dcterms:BibliographicResource.</td></tr><tr><td class="label">Notes</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr><tr><td class="label">Examples</td><td><div class="examples-content">`cited in`</div><div class="examples-separator"></div><div class="examples-content">`referenced`</div></td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/relationshipOfResource" target="_blank">http://rs.tdwg.org/dwc/terms/relationshipOfResource</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Occurrence Reference" class="class-header">Occurrence Reference</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/occurrence-reference</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/occurrence-reference</p>
 <p><strong>Description:</strong> A dcterms:BibliographicResource related to a dwc:Occurrence.</p>
 <p><strong>dcterms:isVersionOf:</strong> http://example.com/term-pending//occurrence-reference</p>
 <div class="foreign-key-summary">
@@ -4342,7 +4342,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Relationship Type</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Occurrence Reference" target="_blank">Occurrence Reference</a></td></tr><tr><td class="label">Description</td><td>A relationship of a subject resource to a dcterms:BibliographicResource.</td></tr><tr><td class="label">Notes</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr><tr><td class="label">Examples</td><td><div class="examples-content">`cited in`</div><div class="examples-separator"></div><div class="examples-content">`referenced`</div></td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/relationshipOfResource" target="_blank">http://rs.tdwg.org/dwc/terms/relationshipOfResource</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Organism Reference" class="class-header">Organism Reference</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/organism-reference</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/organism-reference</p>
 <p><strong>Description:</strong> A dcterms:BibliographicResource related to a dwc:Organism.</p>
 <p><strong>dcterms:isVersionOf:</strong> http://example.com/term-pending//organism-reference</p>
 <div class="foreign-key-summary">
@@ -4366,7 +4366,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Relationship Type</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Organism Reference" target="_blank">Organism Reference</a></td></tr><tr><td class="label">Description</td><td>A relationship of a subject resource to a dcterms:BibliographicResource.</td></tr><tr><td class="label">Notes</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr><tr><td class="label">Examples</td><td><div class="examples-content">`cited in`</div><div class="examples-separator"></div><div class="examples-content">`referenced`</div></td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/relationshipOfResource" target="_blank">http://rs.tdwg.org/dwc/terms/relationshipOfResource</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Organism Interaction Reference" class="class-header">Organism Interaction Reference</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/organism-interaction-reference</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/organism-interaction-reference</p>
 <p><strong>Description:</strong> A dcterms:BibliographicResource related to a dwc:OrganismInteraction.</p>
 <p><strong>dcterms:isVersionOf:</strong> http://example.com/term-pending//organism-interaction-reference</p>
 <div class="foreign-key-summary">
@@ -4390,7 +4390,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Relationship Type</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Organism Interaction Reference" target="_blank">Organism Interaction Reference</a></td></tr><tr><td class="label">Description</td><td>A relationship of a subject resource to a dcterms:BibliographicResource.</td></tr><tr><td class="label">Notes</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr><tr><td class="label">Examples</td><td><div class="examples-content">`cited in`</div><div class="examples-separator"></div><div class="examples-content">`referenced`</div></td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/relationshipOfResource" target="_blank">http://rs.tdwg.org/dwc/terms/relationshipOfResource</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Protocol Reference" class="class-header">Protocol Reference</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/protocol-reference</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/protocol-reference</p>
 <p><strong>Description:</strong> A dcterms:BibliographicResource related to a dwc:Protocol.</p>
 <p><strong>dcterms:isVersionOf:</strong> http://example.com/term-pending//protocol-reference</p>
 <div class="foreign-key-summary">
@@ -4414,7 +4414,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Relationship Type</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Protocol Reference" target="_blank">Protocol Reference</a></td></tr><tr><td class="label">Description</td><td>A relationship of a subject resource to a dcterms:BibliographicResource.</td></tr><tr><td class="label">Notes</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr><tr><td class="label">Examples</td><td><div class="examples-content">`cited in`</div><div class="examples-separator"></div><div class="examples-content">`referenced`</div></td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/relationshipOfResource" target="_blank">http://rs.tdwg.org/dwc/terms/relationshipOfResource</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Survey Reference" class="class-header">Survey Reference</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/survey-reference</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/survey-reference</p>
 <p><strong>Description:</strong> A dcterms:BibliographicResource related to an eco:Survey.</p>
 <p><strong>dcterms:isVersionOf:</strong> http://example.com/term-pending//survey-reference</p>
 <div class="foreign-key-summary">
@@ -4438,7 +4438,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Relationship Type</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Survey Reference" target="_blank">Survey Reference</a></td></tr><tr><td class="label">Description</td><td>A relationship of a subject resource to a dcterms:BibliographicResource.</td></tr><tr><td class="label">Notes</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr><tr><td class="label">Examples</td><td><div class="examples-content">`cited in`</div><div class="examples-separator"></div><div class="examples-content">`referenced`</div></td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/relationshipOfResource" target="_blank">http://rs.tdwg.org/dwc/terms/relationshipOfResource</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Chronometric Age Assertion" class="class-header">Chronometric Age Assertion</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/chronometric-age-assertion</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/chronometric-age-assertion</p>
 <p><strong>Description:</strong> A dwc:Assertion made by a dcterms:Agent about a chrono:ChronometricAge.</p>
 <p><strong>dcterms:isVersionOf:</strong> <a href="http://rs.tdwg.org/dwc/terms/MeasurementOrFact" target="_blank">http://rs.tdwg.org/dwc/terms/MeasurementOrFact</a></p>
 <div class="foreign-key-summary">
@@ -4541,7 +4541,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Assertion Remarks</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Chronometric Age Assertion" target="_blank">Chronometric Age Assertion</a></td></tr><tr><td class="label">Description</td><td>Comments or notes about a dwc:Assertion.</td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/assertionRemarks" target="_blank">http://rs.tdwg.org/dwc/terms/assertionRemarks</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Event Assertion" class="class-header">Event Assertion</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/event-assertion</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/event-assertion</p>
 <p><strong>Description:</strong> A dwc:Assertion made by a dcterms:Agent about a dwc:Event.</p>
 <p><strong>dcterms:isVersionOf:</strong> <a href="http://rs.tdwg.org/dwc/terms/MeasurementOrFact" target="_blank">http://rs.tdwg.org/dwc/terms/MeasurementOrFact</a></p>
 <div class="foreign-key-summary">
@@ -4644,7 +4644,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Assertion Remarks</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Event Assertion" target="_blank">Event Assertion</a></td></tr><tr><td class="label">Description</td><td>Comments or notes about a dwc:Assertion.</td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/assertionRemarks" target="_blank">http://rs.tdwg.org/dwc/terms/assertionRemarks</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Material Assertion" class="class-header">Material Assertion</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/material-assertion</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/material-assertion</p>
 <p><strong>Description:</strong> A dwc:Assertion made by a dcterms:Agent about a dwc:MaterialEntity.</p>
 <p><strong>dcterms:isVersionOf:</strong> <a href="http://rs.tdwg.org/dwc/terms/MeasurementOrFact" target="_blank">http://rs.tdwg.org/dwc/terms/MeasurementOrFact</a></p>
 <div class="foreign-key-summary">
@@ -4747,7 +4747,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Assertion Remarks</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Material Assertion" target="_blank">Material Assertion</a></td></tr><tr><td class="label">Description</td><td>Comments or notes about a dwc:Assertion.</td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/assertionRemarks" target="_blank">http://rs.tdwg.org/dwc/terms/assertionRemarks</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Media Assertion" class="class-header">Media Assertion</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/media-assertion</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/media-assertion</p>
 <p><strong>Description:</strong> A dwc:Assertion made by a dcterms:Agent about an ac:Media entity.</p>
 <p><strong>dcterms:isVersionOf:</strong> <a href="http://rs.tdwg.org/dwc/terms/MeasurementOrFact" target="_blank">http://rs.tdwg.org/dwc/terms/MeasurementOrFact</a></p>
 <div class="foreign-key-summary">
@@ -4850,7 +4850,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Assertion Remarks</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Media Assertion" target="_blank">Media Assertion</a></td></tr><tr><td class="label">Description</td><td>Comments or notes about a dwc:Assertion.</td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/assertionRemarks" target="_blank">http://rs.tdwg.org/dwc/terms/assertionRemarks</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Molecular Protocol Assertion" class="class-header">Molecular Protocol Assertion</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/molecular-protocol-assertion</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/molecular-protocol-assertion</p>
 <p><strong>Description:</strong> A dwc:Assertion made by a dcterms:Agent about a dwc:MolecularProtocol.</p>
 <p><strong>dcterms:isVersionOf:</strong> <a href="http://rs.tdwg.org/dwc/terms/MeasurementOrFact" target="_blank">http://rs.tdwg.org/dwc/terms/MeasurementOrFact</a></p>
 <div class="foreign-key-summary">
@@ -4953,7 +4953,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Assertion Remarks</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Molecular Protocol Assertion" target="_blank">Molecular Protocol Assertion</a></td></tr><tr><td class="label">Description</td><td>Comments or notes about a dwc:Assertion.</td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/assertionRemarks" target="_blank">http://rs.tdwg.org/dwc/terms/assertionRemarks</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Nucleotide Analysis Assertion" class="class-header">Nucleotide Analysis Assertion</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/nucleotide-analysis-assertion</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/nucleotide-analysis-assertion</p>
 <p><strong>Description:</strong> A dwc:Assertion made by a dcterms:Agent about a dwc:NucleotideSequence.</p>
 <p><strong>dcterms:isVersionOf:</strong> <a href="http://rs.tdwg.org/dwc/terms/MeasurementOrFact" target="_blank">http://rs.tdwg.org/dwc/terms/MeasurementOrFact</a></p>
 <div class="foreign-key-summary">
@@ -5056,7 +5056,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Assertion Remarks</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Nucleotide Analysis Assertion" target="_blank">Nucleotide Analysis Assertion</a></td></tr><tr><td class="label">Description</td><td>Comments or notes about a dwc:Assertion.</td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/assertionRemarks" target="_blank">http://rs.tdwg.org/dwc/terms/assertionRemarks</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Occurrence Assertion" class="class-header">Occurrence Assertion</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/occurrence-assertion</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/occurrence-assertion</p>
 <p><strong>Description:</strong> A dwc:Assertion made by a dcterms:Agent about a dwc:Occurrence.</p>
 <p><strong>dcterms:isVersionOf:</strong> <a href="http://rs.tdwg.org/dwc/terms/MeasurementOrFact" target="_blank">http://rs.tdwg.org/dwc/terms/MeasurementOrFact</a></p>
 <div class="foreign-key-summary">
@@ -5159,7 +5159,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Assertion Remarks</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Occurrence Assertion" target="_blank">Occurrence Assertion</a></td></tr><tr><td class="label">Description</td><td>Comments or notes about a dwc:Assertion.</td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/assertionRemarks" target="_blank">http://rs.tdwg.org/dwc/terms/assertionRemarks</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Organism Assertion" class="class-header">Organism Assertion</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/organism-assertion</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/organism-assertion</p>
 <p><strong>Description:</strong> A dwc:Assertion made by a dcterms:Agent about a dwc:Organism.</p>
 <p><strong>dcterms:isVersionOf:</strong> <a href="http://rs.tdwg.org/dwc/terms/MeasurementOrFact" target="_blank">http://rs.tdwg.org/dwc/terms/MeasurementOrFact</a></p>
 <div class="foreign-key-summary">
@@ -5262,7 +5262,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Assertion Remarks</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Organism Assertion" target="_blank">Organism Assertion</a></td></tr><tr><td class="label">Description</td><td>Comments or notes about a dwc:Assertion.</td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/assertionRemarks" target="_blank">http://rs.tdwg.org/dwc/terms/assertionRemarks</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Organism Interaction Assertion" class="class-header">Organism Interaction Assertion</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/organism-interaction-assertion</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/organism-interaction-assertion</p>
 <p><strong>Description:</strong> A dwc:Assertion made by a dcterms:Agent about a dwc:OrganismInteraction.</p>
 <p><strong>dcterms:isVersionOf:</strong> <a href="http://rs.tdwg.org/dwc/terms/MeasurementOrFact" target="_blank">http://rs.tdwg.org/dwc/terms/MeasurementOrFact</a></p>
 <div class="foreign-key-summary">
@@ -5365,7 +5365,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Assertion Remarks</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Organism Interaction Assertion" target="_blank">Organism Interaction Assertion</a></td></tr><tr><td class="label">Description</td><td>Comments or notes about a dwc:Assertion.</td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/assertionRemarks" target="_blank">http://rs.tdwg.org/dwc/terms/assertionRemarks</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Survey Assertion" class="class-header">Survey Assertion</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/survey-assertion</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/survey-assertion</p>
 <p><strong>Description:</strong> A dwc:Assertion made by a dcterms:Agent about an eco:Survey.</p>
 <p><strong>dcterms:isVersionOf:</strong> <a href="http://rs.tdwg.org/dwc/terms/MeasurementOrFact" target="_blank">http://rs.tdwg.org/dwc/terms/MeasurementOrFact</a></p>
 <div class="foreign-key-summary">
@@ -5468,7 +5468,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Assertion Remarks</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Survey Assertion" target="_blank">Survey Assertion</a></td></tr><tr><td class="label">Description</td><td>Comments or notes about a dwc:Assertion.</td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/assertionRemarks" target="_blank">http://rs.tdwg.org/dwc/terms/assertionRemarks</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Agent Identifier" class="class-header">Agent Identifier</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/agent-identifier</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/agent-identifier</p>
 <p><strong>Description:</strong> An adms:Identifier for a dcterms:Agent.</p>
 <p><strong>Notes:</strong> An important point to note is that properties of the adms:Identifier class are properties of the Identifier, not the resource that it identifies or the agency that issued it.</p>
 <p><strong>Examples:</strong></p>
@@ -5506,7 +5506,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Identifier Language</td></tr><tr><td class="label">Namespace</td><td>dc</td></tr><tr><td class="label">Table:</td><td><a href="#Agent Identifier" target="_blank">Agent Identifier</a></td></tr><tr><td class="label">Description</td><td>A language in which an identifier is presented.</td></tr><tr><td class="label">Notes</td><td>Recommended best practice is to use an ISO639-2 three-letter language code.</td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://purl.org/dc/elements/1.1/language" target="_blank">http://purl.org/dc/elements/1.1/language</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Event Identifier" class="class-header">Event Identifier</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/event-identifier</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/event-identifier</p>
 <p><strong>Description:</strong> An adms:Identifier for a dwc:Event.</p>
 <p><strong>Notes:</strong> An important point to note is that properties of the adms:Identifier class are properties of the Identifier, not the resource that it identifies or the agency that issued it.</p>
 <p><strong>dcterms:isVersionOf:</strong> <a href="http://www.w3.org/ns/adms#Identifier" target="_blank">http://www.w3.org/ns/adms#Identifier</a></p>
@@ -5542,7 +5542,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Identifier Language</td></tr><tr><td class="label">Namespace</td><td>dc</td></tr><tr><td class="label">Table:</td><td><a href="#Event Identifier" target="_blank">Event Identifier</a></td></tr><tr><td class="label">Description</td><td>A language in which an identifier is presented.</td></tr><tr><td class="label">Notes</td><td>Recommended best practice is to use an ISO639-2 three-letter language code.</td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://purl.org/dc/elements/1.1/language" target="_blank">http://purl.org/dc/elements/1.1/language</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Material Identifier" class="class-header">Material Identifier</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/material-identifier</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/material-identifier</p>
 <p><strong>Description:</strong> An adms:Identifier for a dwc:MaterialEntity.</p>
 <p><strong>Notes:</strong> An important point to note is that properties of the adms:Identifier class are properties of the Identifier, not the resource that it identifies or the agency that issued it.</p>
 <p><strong>dcterms:isVersionOf:</strong> <a href="http://www.w3.org/ns/adms#Identifier" target="_blank">http://www.w3.org/ns/adms#Identifier</a></p>
@@ -5578,7 +5578,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Identifier Language</td></tr><tr><td class="label">Namespace</td><td>dc</td></tr><tr><td class="label">Table:</td><td><a href="#Material Identifier" target="_blank">Material Identifier</a></td></tr><tr><td class="label">Description</td><td>A language in which an identifier is presented.</td></tr><tr><td class="label">Notes</td><td>Recommended best practice is to use an ISO639-2 three-letter language code.</td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://purl.org/dc/elements/1.1/language" target="_blank">http://purl.org/dc/elements/1.1/language</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Media Identifier" class="class-header">Media Identifier</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/media-identifier</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/media-identifier</p>
 <p><strong>Description:</strong> An adms:Identifier for an ac:Media entity.</p>
 <p><strong>Notes:</strong> An important point to note is that properties of the adms:Identifier class are properties of the Identifier, not the resource that it identifies or the agency that issued it.</p>
 <p><strong>dcterms:isVersionOf:</strong> <a href="http://www.w3.org/ns/adms#Identifier" target="_blank">http://www.w3.org/ns/adms#Identifier</a></p>
@@ -5614,7 +5614,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Identifier Language</td></tr><tr><td class="label">Namespace</td><td>dc</td></tr><tr><td class="label">Table:</td><td><a href="#Media Identifier" target="_blank">Media Identifier</a></td></tr><tr><td class="label">Description</td><td>A language in which an identifier is presented.</td></tr><tr><td class="label">Notes</td><td>Recommended best practice is to use an ISO639-2 three-letter language code.</td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://purl.org/dc/elements/1.1/language" target="_blank">http://purl.org/dc/elements/1.1/language</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Occurrence Identifier" class="class-header">Occurrence Identifier</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/occurrence-identifier</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/occurrence-identifier</p>
 <p><strong>Description:</strong> An adms:Identifier for a dwc:Occurrence.</p>
 <p><strong>Notes:</strong> An important point to note is that properties of the adms:Identifier class are properties of the Identifier, not the resource that it identifies or the agency that issued it.</p>
 <p><strong>dcterms:isVersionOf:</strong> <a href="http://www.w3.org/ns/adms#Identifier" target="_blank">http://www.w3.org/ns/adms#Identifier</a></p>
@@ -5650,7 +5650,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Identifier Language</td></tr><tr><td class="label">Namespace</td><td>dc</td></tr><tr><td class="label">Table:</td><td><a href="#Occurrence Identifier" target="_blank">Occurrence Identifier</a></td></tr><tr><td class="label">Description</td><td>A language in which an identifier is presented.</td></tr><tr><td class="label">Notes</td><td>Recommended best practice is to use an ISO639-2 three-letter language code.</td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://purl.org/dc/elements/1.1/language" target="_blank">http://purl.org/dc/elements/1.1/language</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Organism Identifier" class="class-header">Organism Identifier</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/organism-identifier</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/organism-identifier</p>
 <p><strong>Description:</strong> An adms:Identifier for a dwc:Organism.</p>
 <p><strong>Notes:</strong> An important point to note is that properties of the adms:Identifier class are properties of the Identifier, not the resource that it identifies or the agency that issued it.</p>
 <p><strong>dcterms:isVersionOf:</strong> <a href="http://www.w3.org/ns/adms#Identifier" target="_blank">http://www.w3.org/ns/adms#Identifier</a></p>
@@ -5686,7 +5686,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Identifier Language</td></tr><tr><td class="label">Namespace</td><td>dc</td></tr><tr><td class="label">Table:</td><td><a href="#Organism Identifier" target="_blank">Organism Identifier</a></td></tr><tr><td class="label">Description</td><td>A language in which an identifier is presented.</td></tr><tr><td class="label">Notes</td><td>Recommended best practice is to use an ISO639-2 three-letter language code.</td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://purl.org/dc/elements/1.1/language" target="_blank">http://purl.org/dc/elements/1.1/language</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Survey Identifier" class="class-header">Survey Identifier</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/survey-identifier</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/survey-identifier</p>
 <p><strong>Description:</strong> An adms:Identifier for an eco:Survey.</p>
 <p><strong>Notes:</strong> An important point to note is that properties of the adms:Identifier class are properties of the Identifier, not the resource that it identifies or the agency that issued it.</p>
 <p><strong>dcterms:isVersionOf:</strong> <a href="http://www.w3.org/ns/adms#Identifier" target="_blank">http://www.w3.org/ns/adms#Identifier</a></p>
@@ -5722,7 +5722,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Identifier Language</td></tr><tr><td class="label">Namespace</td><td>dc</td></tr><tr><td class="label">Table:</td><td><a href="#Survey Identifier" target="_blank">Survey Identifier</a></td></tr><tr><td class="label">Description</td><td>A language in which an identifier is presented.</td></tr><tr><td class="label">Notes</td><td>Recommended best practice is to use an ISO639-2 three-letter language code.</td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://purl.org/dc/elements/1.1/language" target="_blank">http://purl.org/dc/elements/1.1/language</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Provenance" class="class-header">Provenance</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/provenance</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/provenance</p>
 <p><strong>Description:</strong> Information about an entity’s origins.</p>
 <p><strong>Notes:</strong> This is a convenience class to group related properties.</p>
 <p><strong>dcterms:isVersionOf:</strong> <a href="http://rs.tdwg.org/dwc/terms/Provenance" target="_blank">http://rs.tdwg.org/dwc/terms/Provenance</a></p>
@@ -5853,7 +5853,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Feedback URL</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Provenance" target="_blank">Provenance</a></td></tr><tr><td class="label">Description</td><td>A uniform resource locator (URL) that points to a webpage on which a form may be submitted to gather feedback about the record.</td></tr><tr><td class="label">Notes</td><td>Recommended best practice is to optionally include query strings that act to pre-populate web page form elements and communicate the context.</td></tr><tr><td class="label">Examples</td><td><div class="examples-content">`https://example.com/new?title=New+issue&body=This+comment+is+about+CAN12345`</div></td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/feedbackURL" target="_blank">http://rs.tdwg.org/dwc/terms/feedbackURL</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Event Provenance" class="class-header">Event Provenance</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/event-provenance</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/event-provenance</p>
 <p><strong>Description:</strong> A dwc:Provenance for a dwc:Event.</p>
 <p><strong>dcterms:isVersionOf:</strong> http://example.com/term-pending//event-provenance</p>
 <div class="foreign-key-summary">
@@ -5873,7 +5873,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Event (Foreign Key)</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Event Provenance" target="_blank">Event Provenance</a></td></tr><tr><td class="label">Description</td><td>An identifier for a dwc:Event.</td></tr><tr><td class="label">Notes</td><td>The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.</td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">Constraints</td><td>{"required": true, "unique": false}</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/eventID" target="_blank">http://rs.tdwg.org/dwc/terms/eventID</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Material Provenance" class="class-header">Material Provenance</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/material-provenance</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/material-provenance</p>
 <p><strong>Description:</strong> A dwc:Provenance for a dwc:MaterialEntity.</p>
 <p><strong>dcterms:isVersionOf:</strong> http://example.com/term-pending//material-provenance</p>
 <div class="foreign-key-summary">
@@ -5893,7 +5893,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Material Entity (Foreign Key)</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Material Provenance" target="_blank">Material Provenance</a></td></tr><tr><td class="label">Description</td><td>An identifier for a dwc:MaterialEntity.</td></tr><tr><td class="label">Notes</td><td>The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.</td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">Constraints</td><td>{"required": true, "unique": false}</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/materialEntityID" target="_blank">http://rs.tdwg.org/dwc/terms/materialEntityID</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Media Provenance" class="class-header">Media Provenance</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/media-provenance</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/media-provenance</p>
 <p><strong>Description:</strong> A dwc:Provenance for an ac:Media entity.</p>
 <p><strong>dcterms:isVersionOf:</strong> http://example.com/term-pending//media-provenance</p>
 <div class="foreign-key-summary">
@@ -5913,7 +5913,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Media (Foreign Key)</td></tr><tr><td class="label">Namespace</td><td>dcterms</td></tr><tr><td class="label">Table:</td><td><a href="#Media Provenance" target="_blank">Media Provenance</a></td></tr><tr><td class="label">Description</td><td>An identifier for an ac:Media resource.</td></tr><tr><td class="label">Notes</td><td>The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.</td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">Constraints</td><td>{"required": true, "unique": false}</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://purl.org/dc/terms/identifier" target="_blank">http://purl.org/dc/terms/identifier</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Usage Policy" class="class-header">Usage Policy</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/usage-policy</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/usage-policy</p>
 <p><strong>Description:</strong> Information about rights, usage, and attribution statements applicable to an entity.</p>
 <p><strong>Notes:</strong> This is a convenience class to group related properties.</p>
 <p><strong>dcterms:isVersionOf:</strong> <a href="http://rs.tdwg.org/dwc/terms/UsagePolicy" target="_blank">http://rs.tdwg.org/dwc/terms/UsagePolicy</a></p>
@@ -6006,7 +6006,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Attribution Link URL</td></tr><tr><td class="label">Namespace</td><td>ac</td></tr><tr><td class="label">Table:</td><td><a href="#Usage Policy" target="_blank">Usage Policy</a></td></tr><tr><td class="label">Description</td><td>The URL where information about ownership, attribution, etc. of the resource may be found.</td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/ac/terms/attributionLinkURL" target="_blank">http://rs.tdwg.org/ac/terms/attributionLinkURL</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Event Usage Policy" class="class-header">Event Usage Policy</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/event-usage-policy</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/event-usage-policy</p>
 <p><strong>Description:</strong> Rights, usage, and attribution statements applicable to a dwc:MaterialEntity.</p>
 <p><strong>dcterms:isVersionOf:</strong> http://example.com/term-pending//event-usage-policy</p>
 <div class="foreign-key-summary">
@@ -6026,7 +6026,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Usage Policy (Foreign Key)</td></tr><tr><td class="label">Namespace</td><td>dcterms</td></tr><tr><td class="label">Table:</td><td><a href="#Event Usage Policy" target="_blank">Event Usage Policy</a></td></tr><tr><td class="label">Description</td><td>An identifier for a dwc:UsagePolicy.</td></tr><tr><td class="label">Notes</td><td>The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.</td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">Constraints</td><td>{"required": false, "unique": false}</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/usagePolicyID" target="_blank">http://rs.tdwg.org/dwc/terms/usagePolicyID</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Material Usage Policy" class="class-header">Material Usage Policy</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/material-usage-policy</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/material-usage-policy</p>
 <p><strong>Description:</strong> Rights, usage, and attribution statements applicable to a dwc:MaterialEntity.</p>
 <p><strong>dcterms:isVersionOf:</strong> http://example.com/term-pending//material-usage-policy</p>
 <div class="foreign-key-summary">
@@ -6046,7 +6046,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Usage Policy (Foreign Key)</td></tr><tr><td class="label">Namespace</td><td>dcterms</td></tr><tr><td class="label">Table:</td><td><a href="#Material Usage Policy" target="_blank">Material Usage Policy</a></td></tr><tr><td class="label">Description</td><td>An identifier for a dwc:UsagePolicy.</td></tr><tr><td class="label">Notes</td><td>The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.</td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">Constraints</td><td>{"required": true, "unique": false}</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/usagePolicyID" target="_blank">http://rs.tdwg.org/dwc/terms/usagePolicyID</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Media Usage Policy" class="class-header">Media Usage Policy</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/media-usage-policy</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/media-usage-policy</p>
 <p><strong>Description:</strong> Rights, usage, and attribution statements applicable to an ac:Media entity.</p>
 <p><strong>dcterms:isVersionOf:</strong> http://example.com/term-pending//media-usage-policy</p>
 <div class="foreign-key-summary">
@@ -6066,7 +6066,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Usage Policy (Foreign Key)</td></tr><tr><td class="label">Namespace</td><td>dcterms</td></tr><tr><td class="label">Table:</td><td><a href="#Media Usage Policy" target="_blank">Media Usage Policy</a></td></tr><tr><td class="label">Description</td><td>An identifier for a dwc:UsagePolicy.</td></tr><tr><td class="label">Notes</td><td>The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.</td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">Constraints</td><td>{"required": true, "unique": false}</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/usagePolicyID" target="_blank">http://rs.tdwg.org/dwc/terms/usagePolicyID</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Organism Relationship" class="class-header">Organism Relationship</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/organism-relationship</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/organism-relationship</p>
 <p><strong>Description:</strong> A dwc:ResourceRelationship of one dwc:Organism to another dwc:Organism.</p>
 <p><strong>Notes:</strong> An OrganismRelationship must be a permanent relationship. Ephemeral relationships between dwc:Organisms should be recorded as dwc:OrganismInteractions.</p>
 <p><strong>Examples:</strong></p>
@@ -6141,7 +6141,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
 <table class="term-table"><tr><td class="label">Title (Label)</td><td>Relationship Remarks</td></tr><tr><td class="label">Namespace</td><td>dwc</td></tr><tr><td class="label">Table:</td><td><a href="#Organism Relationship" target="_blank">Organism Relationship</a></td></tr><tr><td class="label">Description</td><td>Comments or notes about a dwc:ResourceRelationship.</td></tr><tr><td class="label">Type</td><td>string</td></tr><tr><td class="label">dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/relationshipRemarks" target="_blank">http://rs.tdwg.org/dwc/terms/relationshipRemarks</a></td></tr></table>
 </section>
 <div class="class-header-wrapper"><h2 id="Resource Relationship" class="class-header">Resource Relationship</h2></div>
-<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-dwc/resource-relationship</p>
+<p><strong>Identifier:</strong> http://rs.tdwg.org/dwc-dp/1.0-RC/resource-relationship</p>
 <p><strong>Description:</strong> A relationship of one rdfs:Resource (http://www.w3.org/2000/01/rdf-schema#Resource) to another.</p>
 <p><strong>Notes:</strong> Resources can be thought of as identifiable records or instances of classes and may include, but need not be limited to instances of dwc:Occurrence, dwc:Organism, dwc:MaterialEntity, dwc:Event, dcterms:Location, dwc:GeologicalContext, dwc:Identification, or dwc:Taxon.</p>
 <p><strong>Examples:</strong></p>
@@ -6339,7 +6339,7 @@ This Quick Reference Guide is distinct from the classic <a href="https://dwc.tdw
         </div>
 
         <footer>
-            <p>Version: http://rs.tdwg.org/dwc-dp/1.0-dwc</p>
+            <p>Version: http://rs.tdwg.org/dwc-dp/1.0-RC</p>
         </footer>
     </main>
     <aside class="nav-menu">

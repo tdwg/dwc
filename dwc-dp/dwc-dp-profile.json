@@ -1,0 +1,161 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Darwin Core Data Package (DwC-DP) profile",
+  "version": "http://rs.tdwg.org/dwc-dp/1.0-RC",
+  "description": "Profile for organizing biodiversity data as a Data Package (https://specs.frictionlessdata.io/).",
+  "type": "object",
+  "$defs": {
+    "dwc-dp-resource-names": {
+      "enum": [
+        "agent",
+        "agent-agent-role",
+        "agent-identifier",
+        "agent-media",
+        "bibliographic-resource",
+        "chronometric-age",
+        "chronometric-age-agent-role",
+        "chronometric-age-assertion",
+        "chronometric-age-media",
+        "chronometric-age-protocol",
+        "chronometric-age-reference",
+        "event",
+        "event-agent-role",
+        "event-assertion",
+        "event-identifier",
+        "event-media",
+        "event-protocol",
+        "event-provenance",
+        "event-reference",
+        "event-usage-policy",
+        "geological-context",
+        "geological-context-media",
+        "geological-material",
+        "identification",
+        "identification-agent-role",
+        "identification-reference",
+        "identification-taxon",
+        "material",
+        "material-agent-role",
+        "material-assertion",
+        "material-geological-context",
+        "material-identifier",
+        "material-media",
+        "material-protocol",
+        "material-provenance",
+        "material-reference",
+        "material-usage-policy",
+        "media",
+        "media-agent-role",
+        "media-assertion",
+        "media-identifier",
+        "media-provenance",
+        "media-usage-policy",
+        "molecular-protocol",
+        "molecular-protocol-agent-role",
+        "molecular-protocol-assertion",
+        "molecular-protocol-reference",
+        "nucleotide-analysis",
+        "nucleotide-analysis-assertion",
+        "nucleotide-sequence",
+        "occurrence",
+        "occurrence-agent-role",
+        "occurrence-assertion",
+        "occurrence-identifier",
+        "occurrence-media",
+        "occurrence-protocol",
+        "occurrence-reference",
+        "organism",
+        "organism-assertion",
+        "organism-identifier",
+        "organism-interaction",
+        "organism-interaction-agent-role",
+        "organism-interaction-assertion",
+        "organism-interaction-media",
+        "organism-interaction-reference",
+        "organism-reference",
+        "organism-relationship",
+        "protocol",
+        "protocol-reference",
+        "provenance",
+        "resource-relationship",
+        "survey",
+        "survey-agent-role",
+        "survey-assertion",
+        "survey-identifier",
+        "survey-protocol",
+        "survey-reference",
+        "survey-survey-target",
+        "survey-target",
+        "survey-target-descriptor",
+        "usage-policy"
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://specs.frictionlessdata.io/schemas/data-package.json"
+    },
+    {
+      "required": [
+        "profile"
+      ],
+      "properties": {
+        "profile": {
+          "format": "uri"
+        },
+        "resources": {
+          "items": {
+            "oneOf": [
+              {
+                "properties": {
+                  "name": {
+                    "not": {
+                      "$ref": "#/$defs/dwc-dp-resource-names"
+                    }
+                  }
+                }
+              },
+              {
+                "required": [
+                  "profile"
+                ],
+                "properties": {
+                  "profile": {
+                    "enum": [
+                      "tabular-data-resource"
+                    ]
+                  },
+                  "name": {
+                    "$ref": "#/$defs/dwc-dp-resource-names"
+                  },
+                  "schema": {
+                    "properties": {
+                      "fields": {
+                        "items": {
+                          "required": [
+                            "name",
+                            "title",
+                            "description",
+                            "type",
+                            "dcterms:isVersionOf"
+                          ],
+                          "properties": {
+                            "dcterms:isVersionOf": {
+                              "type": "string",
+                              "format": "uri",
+                              "pattern": "^http.*$"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

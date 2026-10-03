@@ -1,0 +1,62 @@
+{
+  "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/survey-survey-target",
+  "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
+  "url": "table-schemas/survey-survey-target.json",
+  "name": "survey-survey-target",
+  "title": "Survey Survey Target",
+  "description": "An eco:SurveyTarget used for an eco:Survey.",
+  "notes": "",
+  "examples": "",
+  "namespace": "",
+  "dcterms:isVersionOf": "http://example.com/term-pending//survey-survey-target",
+  "fields": [
+    {
+      "name": "survey_fk",
+      "title": "Survey (Foreign Key)",
+      "description": "An identifier for an eco:Survey.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "eco",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/surveyID",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    },
+    {
+      "name": "surveyTarget_fk",
+      "title": "Survey Target (Foreign Key)",
+      "description": "An identifier for an eco:SurveyTarget.",
+      "notes": "The value in this field MAY be changed in aggregation to preserve the relationship to the related primary key.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "eco",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/surveyTargetID",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    }
+  ],
+  "foreignKeys": [
+    {
+      "fields": "survey_fk",
+      "predicate": "target for",
+      "reference": {
+        "resource": "survey",
+        "fields": "survey_pk"
+      }
+    },
+    {
+      "fields": "surveyTarget_fk",
+      "predicate": "has target",
+      "reference": {
+        "resource": "survey-target",
+        "fields": "surveyTarget_pk"
+      }
+    }
+  ]
+}
