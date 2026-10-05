@@ -81,6 +81,8 @@ The repository structure is described below. Files/directories indicated with `G
 │   ├── text              : Darwin Core Text Guide (Darwin Core Archive specification)
 │   └── xml               : Darwin Core XML Guide
 │
+├── records               : historical records documenting meetings and activities
+│
 ├── vocabulary
 │   └── term_versions.csv : GENERATED Darwin Core term versions, contains the complete history of the terms
 │
