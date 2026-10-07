@@ -284,7 +284,7 @@ documents:
   header_template: list-template/termlist-header.{locale}.md
 # ESTABLISHMENT MEANS LIST OF TERMS
 - name: Establishment Means vocabulary
-  update: false
+  update: true
   renderer: term_list
   artifact: Establishment Means vocabulary
   document_metadata_path: dwc_doc_em/
@@ -293,7 +293,7 @@ documents:
   header_template: em-template/termlist-header.{locale}.md
 # DEGREE OF ESTABLISHMENT LIST OF TERMS
 - name: Degree of Establishment vocabulary
-  update: false
+  update: true
   renderer: term_list
   artifact: Degree of Establishment vocabulary
   document_metadata_path: dwc_doc_doe/
@@ -302,7 +302,7 @@ documents:
   header_template: doe-template/termlist-header.{locale}.md
 # PATHWAY LIST OF TERMS
 - name: Pathway vocabulary
-  update: false
+  update: true
   renderer: term_list
   artifact: Pathway vocabulary
   document_metadata_path: dwc_doc_pw/
@@ -328,63 +328,63 @@ documents:
   template: dwc_doc_schemas/index_template.md
 # DARWIN CORE CONCEPTUAL MODEL
 - name: Darwin Core conceptual model
-  update: false
+  update: true
   renderer: document_template
   document_metadata_path: dwc_doc_cm/
   path: cm
   template: dwc_doc_cm/index_template.md
 # DARWIN CORE DATA PACKAGE GUIDE
 - name: Darwin Core Data Package guide
-  update: false
+  update: true
   renderer: document_template
   document_metadata_path: dwc_doc_dp/
   path: dp
   template: dwc_doc_dp/index_template.md
 # DARWIN CORE RDF GUIDE
 - name: Darwin Core RDF guide
-  update: false
+  update: true
   renderer: document_template
   document_metadata_path: dwc_terms_guides_rdf/
   path: rdf
   template: dwc_terms_guides_rdf/index_template.md
 # DARWIN CORE TEXT GUIDE
 - name: Darwin Core Text Guide
-  update: false
+  update: true
   renderer: document_template
   document_metadata_path: dwc_terms_guides_text/
   path: text
   template: dwc_terms_guides_text/index_template.md
 # DARWIN CORE XML GUIDE
 - name: Darwin Core XML Guide
-  update: false
+  update: true
   renderer: document_template
   document_metadata_path: dwc_terms_guides_xml/
   path: xml
   template: dwc_terms_guides_xml/index_template.md
 # DARWIN CORE NAMESPACE POLICY
 - name: Darwin Core Namespace Policy
-  update: false
+  update: true
   renderer: document_template
   document_metadata_path: dwc_terms_namespace/
   path: namespace
   template: dwc_terms_namespace/index_template.md
 # SIMPLE DARWIN CORE
 - name: Simple Darwin Core
-  update: false
+  update: true
   renderer: document_template
   document_metadata_path: dwc_terms_simple/
   path: simple
   template: dwc_terms_simple/index_template.md
 # HIERARCHICAL EVENT GUIDELINES
 - name: Hierarchical Event Guidelines
-  update: false
+  update: true
   renderer: document_template
   document_metadata_path: dwc_doc_hierarchy/
   path: hierarchy
   template: dwc_doc_hierarchy/index_template.md
 # isLeastSpecificTargetCategooryInclusive Guide
 - name: Darwin Core Inclusive Guidelines
-  update: false
+  update: true
   renderer: document_template
   document_metadata_path: dwc_doc_inclusive/
   path: inclusive
