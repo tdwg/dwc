@@ -1531,20 +1531,14 @@ def _localized_destination_summary(page_config, webpages_config, languages):
 
 
 
-def _load_document_metadata(metadata_path, local_path_to_rs, github_user, github_branch):
-    """Load authors_configuration.yaml and document_configuration.yaml."""
-    base = f"process/document_metadata_processing/{metadata_path.strip('/')}/"
-    def load(name):
-        source = _rs_source(base + name, local_path_to_rs, github_user, github_branch)
-        if local_path_to_rs:
-            with open(source, 'r', encoding='utf-8') as handle:
-                return yaml.safe_load(handle), source
-        response = requests.get(source, timeout=30)
-        response.raise_for_status()
-        return yaml.safe_load(response.text), source
-    authors, authors_source = load('authors_configuration.yaml')
-    metadata, metadata_source = load('document_configuration.yaml')
-    return authors, metadata, authors_source, metadata_source
+def _load_document_metadata(document_iri, local_path_to_rs, github_user, github_branch):
+    """Load current Document metadata and contributors from processed rs registries."""
+    return dwcterms.load_document_metadata(
+        document_iri,
+        rsPath=local_path_to_rs,
+        githubBranch=github_branch,
+        githubUser=github_user,
+    )
 
 
 def _matching_document_versions(versions_df, current_iri):
@@ -1874,20 +1868,27 @@ def _preflight_webpage_configuration(config, dwc_list_terms, dwc_list_databases,
         if renderer not in ('term_list','document_template'):
             errors.append(prefix+f"unsupported renderer {renderer!r}"); continue
         page_path=str(d.get('path','')).strip('/')
-        metadata_path=str(d.get('document_metadata_path','')).strip()
+        document_iri=str(d.get('document','')).strip()
         if not page_path: errors.append(prefix+"missing path"); continue
         if page_path in paths: errors.append(prefix+f"duplicate path {page_path!r}")
         paths.add(page_path)
-        if not metadata_path: errors.append(prefix+"missing document_metadata_path"); continue
+        if not document_iri: errors.append(prefix+"missing document"); continue
         output=os.path.join(repoRoot,docs_root,page_path,'index.md')
         parent_error=_check_output_parent(output)
         if parent_error: errors.append(prefix+parent_error)
         try:
             authors,metadata,authors_source,metadata_source=_load_document_metadata(
-                metadata_path,local_path_to_rs,github_user,github_branch)
+                document_iri,local_path_to_rs,github_user,github_branch)
             for key in ('documentTitle','doc_modified','doc_created','dcterms_isPartOf',
                         'current_iri','abstract','creator','publisher'):
                 if key not in metadata: raise ValueError(f"metadata lacks {key!r}")
+            release_date = str(config.get('release_date', '')).strip()
+            if str(metadata['doc_modified']) != release_date:
+                raise ValueError(
+                    f"processed Document metadata has doc_modified "
+                    f"{metadata['doc_modified']!r}; expected build release_date "
+                    f"{release_date!r}"
+                )
         except Exception as exc:
             errors.append(prefix+f"document metadata invalid: {exc}"); continue
 
@@ -1900,8 +1901,8 @@ def _preflight_webpage_configuration(config, dwc_list_terms, dwc_list_databases,
         except Exception as exc:
             errors.append(
                 prefix + f"cannot update {name!r}: {exc}. "
-                "Check this document's document_configuration.yaml, its entries in "
-                "docs/docs-versions.csv, and the existing docs/<path>/index.md. "
+                "Check this document's rows in docs/docs.csv and docs/docs-versions.csv, "
+                "and the existing docs/<path>/index.md. "
                 "If this document should not be updated in this run, set update: false "
                 "for it in build_artifacts.yaml."
             ); continue
@@ -4281,13 +4282,13 @@ def preflight_configuration(config, log_file):
         dwc_list_document = list_documents[0]
         dwc_list_source_name = str(dwc_list_document['term_source_collection']).strip()
         dwc_list_databases = _configured_term_source(config, dwc_list_source_name)
-        dwc_list_metadata_path = str(dwc_list_document.get('document_metadata_path', '')).strip()
-        if not dwc_list_metadata_path:
-            raise ValueError("Darwin Core List of Terms document is missing document_metadata_path")
+        dwc_list_document_iri = str(dwc_list_document.get('document', '')).strip()
+        if not dwc_list_document_iri:
+            raise ValueError("Darwin Core List of Terms document is missing document")
         with redirect_stdout(log_file):
             dwc_list_terms = dwcterms.DwcTerms(
                 termLists=dwc_list_databases,
-                docMetadataFilePath=dwc_list_metadata_path,
+                documentIri=dwc_list_document_iri,
                 rsPath=local_path_to_rs,
                 githubBranch=github_branch,
                 githubUser=github_user,
@@ -4308,7 +4309,7 @@ def preflight_configuration(config, log_file):
         source = artifact.get('source', {})
         prefix = f"{name}: "
 
-        for key in ('term_lists', 'document_metadata_path'):
+        for key in ('term_lists', 'document'):
             if key not in source:
                 errors.append(prefix + f"missing source setting {key!r}")
         if artifact_type not in ('core', 'extension', 'vocabulary'):
@@ -4343,11 +4344,11 @@ def preflight_configuration(config, log_file):
             elif not os.access(term_list_path, os.R_OK):
                 errors.append(prefix + f"term list is not readable: {term_list_path}")
 
-        if any(key not in source for key in ('term_lists', 'document_metadata_path')):
+        if any(key not in source for key in ('term_lists', 'document')):
             continue
 
         cache_key = (
-            tuple(source['term_lists']), source['document_metadata_path'],
+            tuple(source['term_lists']), source['document'],
             local_path_to_rs, github_branch, github_user,
         )
         if cache_key not in terms_cache:
@@ -4357,7 +4358,7 @@ def preflight_configuration(config, log_file):
                 with redirect_stdout(log_file):
                     terms_cache[cache_key] = dwcterms.DwcTerms(
                         termLists=source['term_lists'],
-                        docMetadataFilePath=source['document_metadata_path'],
+                        documentIri=source['document'],
                         rsPath=local_path_to_rs,
                         githubBranch=github_branch,
                         githubUser=github_user,

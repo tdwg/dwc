@@ -55,7 +55,7 @@ languages:
 - ru
 - zh-Hant
 # Machine-readable Darwin Core artifacts. Each source declares both the term
-# databases it consumes and the document metadata governing that artifact.
+# databases it consumes and the current Document IRI governing that artifact.
 artifacts:
 # DARWIN CORE EVENT CORE
 - name: Darwin Core Event Core
@@ -69,7 +69,7 @@ artifacts:
     - dcterms-for-dwc
     - ac-for-dwc
     - humboldt
-    document_metadata_path: dwc_doc_list/
+    document: http://rs.tdwg.org/dwc/doc/list/
   template: dwca_template/event_core.tmpl
   term_list: dwca_template/event_core_list.csv
   output: dwc-a/core/dwc_event_
@@ -88,7 +88,7 @@ artifacts:
     - dcterms-for-dwc
     - ac-for-dwc
     - humboldt
-    document_metadata_path: dwc_doc_list/
+    document: http://rs.tdwg.org/dwc/doc/list/
   template: dwca_template/occurrence_core.tmpl
   term_list: dwca_template/occurrence_core_list.csv
   output: dwc-a/core/dwc_occurrence_
@@ -106,7 +106,7 @@ artifacts:
     - dc-for-dwc
     - dcterms-for-dwc
     - ac-for-dwc
-    document_metadata_path: dwc_doc_list/
+    document: http://rs.tdwg.org/dwc/doc/list/
   template: dwca_template/taxon_core.tmpl
   term_list: dwca_template/taxon_core_list.csv
   output: dwc-a/core/dwc_taxon_
@@ -124,7 +124,7 @@ artifacts:
     - dc-for-dwc
     - dcterms-for-dwc
     - ac-for-dwc
-    document_metadata_path: dwc_doc_list/
+    document: http://rs.tdwg.org/dwc/doc/list/
   template: dwca_template/resource_relationship.tmpl
   term_list: dwca_template/resource_relationship_list.csv
   output: dwc-a/extension/resource_relationship_
@@ -142,7 +142,7 @@ artifacts:
     - dc-for-dwc
     - dcterms-for-dwc
     - ac-for-dwc
-    document_metadata_path: dwc_doc_list/
+    document: http://rs.tdwg.org/dwc/doc/list/
   template: dwca_template/measurements_or_facts.tmpl
   term_list: dwca_template/measurements_or_facts_list.csv
   output: dwc-a/extension/measurements_or_facts_
@@ -160,7 +160,7 @@ artifacts:
     - dc-for-dwc
     - dcterms-for-dwc
     - ac-for-dwc
-    document_metadata_path: dwc_doc_list/
+    document: http://rs.tdwg.org/dwc/doc/list/
   template: dwca_template/identification_history.tmpl
   term_list: dwca_template/identification_history_list.csv
   output: dwc-a/extension/identification_history_
@@ -176,7 +176,7 @@ artifacts:
     term_lists:
     - terms
     - humboldt
-    document_metadata_path: dwc_doc_eco/
+    document: http://rs.tdwg.org/dwc/doc/list/
   template: dwca_template/humboldt_eco.tmpl
   term_list: dwca_template/humboldt_eco_list.csv
   output: dwc-a/extension/humboldt_
@@ -192,7 +192,7 @@ artifacts:
     term_lists:
     - terms
     - chronometricage
-    document_metadata_path: dwc_doc_chrono/
+    document: http://rs.tdwg.org/dwc/doc/list/
   template: dwca_template/chronometric_age.tmpl
   term_list: dwca_template/chronometric_age_list.csv
   output: dwc-a/extension/chronometric_age_
@@ -206,7 +206,7 @@ artifacts:
   source:
     term_lists:
     - establishmentMeans
-    document_metadata_path: dwc_doc_em/
+    document: http://rs.tdwg.org/dwc/doc/em/
   template: dwca_template/establishment_means.tmpl
   gbif_alternatives: https://api.gbif.org/v1/vocabularies/EstablishmentMeans/concepts/%s/alternativeLabels
   vocabulary_cache: vocabularies/cache/EstablishmentMeans.json
@@ -220,7 +220,7 @@ artifacts:
   source:
     term_lists:
     - degreeOfEstablishment
-    document_metadata_path: dwc_doc_doe/
+    document: http://rs.tdwg.org/dwc/doc/doe/
   template: dwca_template/degree_of_establishment.tmpl
   gbif_alternatives: https://api.gbif.org/v1/vocabularies/DegreeOfEstablishment/concepts/%s/alternativeLabels
   vocabulary_cache: vocabularies/cache/DegreeOfEstablishment.json
@@ -234,7 +234,7 @@ artifacts:
   source:
     term_lists:
     - pathway
-    document_metadata_path: dwc_doc_pw/
+    document: http://rs.tdwg.org/dwc/doc/pw/
   template: dwca_template/pathway.tmpl
   gbif_alternatives: https://api.gbif.org/v1/vocabularies/Pathway/concepts/%s/alternativeLabels
   vocabulary_cache: vocabularies/cache/Pathway.json
@@ -248,7 +248,7 @@ artifacts:
   source:
     term_lists:
     - taxonCompletenessReported
-    document_metadata_path: dwc_doc_tcr/
+    document: http://rs.tdwg.org/dwc/doc/tcr/
   template: dwca_template/taxon_completeness_reported.tmpl
   output: dwc-a/schemas/vocabulary/taxon_completeness_reported_
   publication:
@@ -266,8 +266,8 @@ relation_styles:
   term_list:
     template: '{base}#{prefix}_{name}'
 # Standard documents maintained by this build. update: false leaves both the
-# current document and its archive untouched. document_metadata_path selects the
-# document's own authors_configuration.yaml and document_configuration.yaml.
+# current document and its archive untouched. document identifies the current
+# Document whose processed metadata is read from the rs.tdwg.org registries.
 documents:
 # DARWIN CORE LIST OF TERMS
 - name: Darwin Core List of Terms
@@ -278,7 +278,7 @@ documents:
   term_source_collection: darwin_core_list
   # Metadata belongs to the combined List of Terms document, not to the former
   # standalone eco: or chrono: term-list documents.
-  document_metadata_path: dwc_doc_list/
+  document: http://rs.tdwg.org/dwc/doc/list/
   path: list
   vocab_type: 1
   header_template: list-template/termlist-header.{locale}.md
@@ -287,7 +287,7 @@ documents:
   update: true
   renderer: term_list
   artifact: Establishment Means vocabulary
-  document_metadata_path: dwc_doc_em/
+  document: http://rs.tdwg.org/dwc/doc/em/
   path: em
   vocab_type: 2
   header_template: em-template/termlist-header.{locale}.md
@@ -296,7 +296,7 @@ documents:
   update: true
   renderer: term_list
   artifact: Degree of Establishment vocabulary
-  document_metadata_path: dwc_doc_doe/
+  document: http://rs.tdwg.org/dwc/doc/doe/
   path: doe
   vocab_type: 2
   header_template: doe-template/termlist-header.{locale}.md
@@ -305,7 +305,7 @@ documents:
   update: true
   renderer: term_list
   artifact: Pathway vocabulary
-  document_metadata_path: dwc_doc_pw/
+  document: http://rs.tdwg.org/dwc/doc/pw/
   path: pw
   vocab_type: 3
   header_template: pw-template/termlist-header.{locale}.md
@@ -314,7 +314,7 @@ documents:
   update: true
   renderer: term_list
   artifact: Taxon Completeness Reported vocabulary
-  document_metadata_path: dwc_doc_tcr/
+  document: http://rs.tdwg.org/dwc/doc/tcr/
   path: tcr
   vocab_type: 2
   header_template: tcr-template/termlist-header.en.md
@@ -323,70 +323,70 @@ documents:
   update: true
   renderer: document_template
   schema_inventory: true
-  document_metadata_path: dwc_doc_schemas/
+  document: http://rs.tdwg.org/dwc/doc/schemas/
   path: schemas
   template: dwc_doc_schemas/index_template.md
 # DARWIN CORE CONCEPTUAL MODEL
 - name: Darwin Core conceptual model
   update: true
   renderer: document_template
-  document_metadata_path: dwc_doc_cm/
+  document: http://rs.tdwg.org/dwc/doc/cm/
   path: cm
   template: dwc_doc_cm/index_template.md
 # DARWIN CORE DATA PACKAGE GUIDE
 - name: Darwin Core Data Package guide
   update: true
   renderer: document_template
-  document_metadata_path: dwc_doc_dp/
+  document: http://rs.tdwg.org/dwc/doc/dp/
   path: dp
   template: dwc_doc_dp/index_template.md
 # DARWIN CORE RDF GUIDE
 - name: Darwin Core RDF guide
   update: true
   renderer: document_template
-  document_metadata_path: dwc_terms_guides_rdf/
+  document: http://rs.tdwg.org/dwc/terms/guides/rdf/
   path: rdf
   template: dwc_terms_guides_rdf/index_template.md
 # DARWIN CORE TEXT GUIDE
 - name: Darwin Core Text Guide
   update: true
   renderer: document_template
-  document_metadata_path: dwc_terms_guides_text/
+  document: http://rs.tdwg.org/dwc/terms/guides/text/
   path: text
   template: dwc_terms_guides_text/index_template.md
 # DARWIN CORE XML GUIDE
 - name: Darwin Core XML Guide
   update: true
   renderer: document_template
-  document_metadata_path: dwc_terms_guides_xml/
+  document: http://rs.tdwg.org/dwc/terms/guides/xml/
   path: xml
   template: dwc_terms_guides_xml/index_template.md
 # DARWIN CORE NAMESPACE POLICY
 - name: Darwin Core Namespace Policy
   update: true
   renderer: document_template
-  document_metadata_path: dwc_terms_namespace/
+  document: http://rs.tdwg.org/dwc/terms/namespace/
   path: namespace
   template: dwc_terms_namespace/index_template.md
 # SIMPLE DARWIN CORE
 - name: Simple Darwin Core
   update: true
   renderer: document_template
-  document_metadata_path: dwc_terms_simple/
+  document: http://rs.tdwg.org/dwc/terms/simple/
   path: simple
   template: dwc_terms_simple/index_template.md
 # HIERARCHICAL EVENT GUIDELINES
 - name: Hierarchical Event Guidelines
   update: true
   renderer: document_template
-  document_metadata_path: dwc_doc_hierarchy/
+  document: http://rs.tdwg.org/dwc/doc/hierarchy/
   path: hierarchy
   template: dwc_doc_hierarchy/index_template.md
 # isLeastSpecificTargetCategooryInclusive Guide
 - name: Darwin Core Inclusive Guidelines
   update: true
   renderer: document_template
-  document_metadata_path: dwc_doc_inclusive/
+  document: http://rs.tdwg.org/dwc/doc/inclusive/
   path: inclusive
   template: dwc_doc_inclusive/index_template.md
 # Darwin Core Data Package build inputs and destinations.

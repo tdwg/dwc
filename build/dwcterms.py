@@ -19,42 +19,112 @@ contributors_yaml_file = 'authors_configuration.yaml'
 document_configuration_yaml_file = 'document_configuration.yaml'
 
 
+def _repository_base(rsPath, githubBranch='master', githubUser='tdwg'):
+    """Return the rs.tdwg.org source root and whether it is local."""
+    if rsPath is not None:
+        base = os.path.abspath(os.path.expanduser(rsPath))
+        if not base.endswith(os.sep):
+            base += os.sep
+        return base, True
+    return (
+        'https://raw.githubusercontent.com/' + githubUser +
+        '/rs.tdwg.org/' + githubBranch + '/',
+        False,
+    )
+
+
+def load_document_metadata(documentIri, rsPath=None, githubBranch='master', githubUser='tdwg'):
+    """Load current Document metadata and contributors from processed rs registries."""
+    documentIri = str(documentIri or '').strip()
+    if not documentIri:
+        raise ValueError('documentIri must be a non-empty Document IRI')
+
+    githubBaseUri, _ = _repository_base(rsPath, githubBranch, githubUser)
+    metadata_source = githubBaseUri + 'docs/docs.csv'
+    authors_source = githubBaseUri + 'docs/docs-authors.csv'
+
+    metadata_df = pd.read_csv(metadata_source, na_filter=False, dtype=str)
+    if 'current_iri' not in metadata_df.columns:
+        raise ValueError(f"Document registry lacks 'current_iri': {metadata_source}")
+    matches = metadata_df[metadata_df['current_iri'].astype(str) == documentIri]
+    if len(matches) != 1:
+        raise ValueError(
+            f"Expected exactly one current Document row for {documentIri}; "
+            f"found {len(matches)} in {metadata_source}"
+        )
+    metadata = matches.iloc[0].to_dict()
+
+    authors_df = pd.read_csv(authors_source, na_filter=False, dtype=str)
+    if 'document' not in authors_df.columns:
+        raise ValueError(f"Document contributor registry lacks 'document': {authors_source}")
+    authors = (
+        authors_df[authors_df['document'].astype(str) == documentIri]
+        .to_dict(orient='records')
+    )
+
+    return authors, metadata, authors_source, metadata_source
+
+
 class DwcTerms:
 
-    def __init__(self, termLists, docMetadataFilePath, rsPath, githubBranch = 'master', githubUser = 'tdwg'):
+    def __init__(self, termLists, docMetadataFilePath=None, rsPath=None,
+                 githubBranch='master', githubUser='tdwg', documentIri=None):
         """
         Tables of terms.
 
         Keyword arguments:
-        githubBaseUri -- GitHub URL, or local path.
         termLists -- list of database names of the term lists to be loaded
-        docMetadataFilePath -- subdirectory of document_metadata_processing for the particular
-            document, e.g. ac_doc_termlist
-        rsPath -- local directory path from this directory to the rs.tdwg.org repo directory,
-            e.g. '../../rs.tdwg.org/'. If None data will be retrieved from GitHub via HTTP.
-        githubBranch -- the branch at GitHub to use. 'master' for production, something else for testing.
-        githubUser -- the GitHub user account to use. 'tdwg' for production, some other account where there's a fork for testing.
+        documentIri -- current Document IRI whose metadata is loaded from the processed
+            rs.tdwg.org registries (docs/docs.csv and docs/docs-authors.csv)
+        docMetadataFilePath -- legacy subdirectory of document_metadata_processing for
+            callers that still use authors_configuration.yaml and document_configuration.yaml
+        rsPath -- local path to the rs.tdwg.org repository. If None, data are retrieved
+            from the configured GitHub branch via HTTP.
+        githubBranch -- GitHub branch to use when rsPath is None
+        githubUser -- GitHub user or organization to use when rsPath is None
         """
 
-        if rsPath is not None:
-            githubBaseUri = rsPath
-            if not githubBaseUri.endswith('/'):
-                githubBaseUri += '/'
-            localGithub = True
-        else:
-            githubBaseUri = 'https://raw.githubusercontent.com/' + githubUser + '/rs.tdwg.org/' + githubBranch + '/'
-            localGithub = False
+        githubBaseUri, localGithub = _repository_base(
+            rsPath, githubBranch, githubUser
+        )
         self.localGithub = localGithub
         self.githubBaseUri = githubBaseUri
 
-        self.doc_metadata_file_path = docMetadataFilePath
-        if not self.doc_metadata_file_path.endswith('/'):
+        documentIri = str(documentIri or '').strip()
+        legacy_path = str(docMetadataFilePath or '').strip()
+        if documentIri and legacy_path:
+            raise ValueError(
+                'Specify documentIri for processed registry metadata or '
+                'docMetadataFilePath for legacy YAML metadata, not both.'
+            )
+        if not documentIri and not legacy_path:
+            raise ValueError(
+                'A document metadata source is required: specify documentIri or '
+                'docMetadataFilePath.'
+            )
+
+        self.document_iri = documentIri or None
+        self.doc_metadata_file_path = legacy_path or None
+        if self.doc_metadata_file_path and not self.doc_metadata_file_path.endswith('/'):
             self.doc_metadata_file_path += '/'
 
         self.termLists = termLists
 
-        self.load_contributors()
-        self.load_document_configuration()
+        if self.document_iri:
+            (
+                self.contributors_yaml,
+                self.document_configuration_yaml,
+                self.contributors_source,
+                self.document_configuration_source,
+            ) = load_document_metadata(
+                self.document_iri,
+                rsPath=rsPath,
+                githubBranch=githubBranch,
+                githubUser=githubUser,
+            )
+        else:
+            self.load_contributors()
+            self.load_document_configuration()
 
         self.decisions_df = pd.read_csv(githubBaseUri + 'decisions/decisions-links.csv', na_filter=False)
         self.decisions_df = self.decisions_df[['linked_affected_resource', 'decision_localName']]
@@ -67,6 +137,7 @@ class DwcTerms:
     def load_contributors(self):
         # Load the contributors YAML file from the configured metadata source
         contributors_yaml_url = self.githubBaseUri + document_config_file_path + self.doc_metadata_file_path + contributors_yaml_file
+        self.contributors_source = contributors_yaml_url
         if self.localGithub:
             with open(contributors_yaml_url) as file: contributors_yaml = file.read()
         else:
@@ -81,6 +152,7 @@ class DwcTerms:
     def load_document_configuration(self):
         # Load the document configuration YAML file from the configured metadata source
         document_configuration_yaml_url = self.githubBaseUri + document_config_file_path + self.doc_metadata_file_path + document_configuration_yaml_file
+        self.document_configuration_source = document_configuration_yaml_url
         if self.localGithub:
             with open(document_configuration_yaml_url) as file: document_configuration_yaml = file.read()
         else:
