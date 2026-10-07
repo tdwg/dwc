@@ -261,7 +261,7 @@ relation_styles:
       http://rs.tdwg.org/dwc/iri/: https://dwc.tdwg.org/terms/#dwciri:{name}
       http://purl.org/dc/elements/1.1/: https://dwc.tdwg.org/terms/#dc:{name}
       http://purl.org/dc/terms/: https://dwc.tdwg.org/terms/#dcterms:{name}
-      http://purl.org/chrono/terms/: https://dwc.tdwg.org/terms/#chrono:{name}
+      http://rs.tdwg.org/chrono/terms/: https://dwc.tdwg.org/terms/#chrono:{name}
       http://rs.tdwg.org/eco/terms/: https://dwc.tdwg.org/terms/#eco:{name}
   term_list:
     template: '{base}#{prefix}_{name}'
