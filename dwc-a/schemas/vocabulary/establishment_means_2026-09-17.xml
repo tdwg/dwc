@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type='text/xsl' href='/style/human.xsl'?>
+<thesaurus xmlns:dcterms='http://purl.org/dc/terms/'
+  dc:URI='http://rs.gbif.org/vocabulary/dwc/establishment_means/'
+  dc:relation='https://dwc.tdwg.org/terms/#dwc:establishmentMeans'
+  dc:title='Darwin Core Establishment Means Vocabulary'
+  dcterms:isPartOf='http://www.tdwg.org/standards/450'
+  dc:issued='2026-09-17'
+  xmlns='http://rs.gbif.org/thesaurus/'
+  xmlns:dc='http://purl.org/dc/terms/'
+  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  xsi:schemaLocation='http://rs.gbif.org/thesaurus/ http://rs.gbif.org/schema/thesaurus.xsd'>
+
+  <concept
+    dc:identifier='native'
+    dc:URI='http://rs.tdwg.org/dwcem/values/e001'
+    dc:subject='http://rs.tdwg.org/dwcem/values/e001'
+    dc:relation='https://doi.org/10.3897/biss.3.38084'
+    dc:issued='2020-10-13'
+    dc:description='A taxon occurring within its natural range.'
+    comments='What is considered native to an area varies with the biogeographic history of an area and the local interpretation of what is a &quot;natural range&quot;.'>
+    <preferred>
+      <term dc:source='Darwin Core' dc:title='native (indigenous)' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='nativní (původní)' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='nativo (autóctono)' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='natif (indigène)' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='естественный (нативный)' xml:lang='ru'/>
+      <term dc:source='Darwin Core' dc:title='原生' xml:lang='zh'/>
+    </preferred>
+    <alternative>
+      <term dc:source='GBIF Vocabulary Server' dc:title='Indigenous' xml:lang='en'/>
+      <term dc:source='GBIF Vocabulary Server' dc:title='Native' xml:lang='en'/>
+      <term dc:source='GBIF Vocabulary Server' dc:title='Autóctona' xml:lang='es'/>
+      <term dc:source='GBIF Vocabulary Server' dc:title='Nativa' xml:lang='es'/>
+    </alternative>
+  </concept>
+
+  <concept
+    dc:identifier='nativeReintroduced'
+    dc:URI='http://rs.tdwg.org/dwcem/values/e002'
+    dc:subject='http://rs.tdwg.org/dwcem/values/e002'
+    dc:relation='https://doi.org/10.3897/biss.3.38084'
+    dc:issued='2020-10-13'
+    dc:description='A taxon re-established by direct introduction by humans into an area that was once part of its natural range, but from where it had become extinct.'
+    comments='Where a taxon has become extirpated from an area where it had naturally occurred it may be returned to that area deliberately with the intention of re-establishing it.'>
+    <preferred>
+      <term dc:source='Darwin Core' dc:title='native: reintroduced' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='nativní: reintrodukovaný' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='nativo: reintroducido' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='natif : réintroduit' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='естественный: реинтродуцированный' xml:lang='ru'/>
+      <term dc:source='Darwin Core' dc:title='原生：再引進' xml:lang='zh'/>
+    </preferred>
+    <alternative>
+      <term dc:source='GBIF Vocabulary Server' dc:title='Reintroduced' xml:lang='en'/>
+      <term dc:source='GBIF Vocabulary Server' dc:title='Reintroducida' xml:lang='es'/>
+    </alternative>
+  </concept>
+
+  <concept
+    dc:identifier='introduced'
+    dc:URI='http://rs.tdwg.org/dwcem/values/e003'
+    dc:subject='http://rs.tdwg.org/dwcem/values/e003'
+    dc:relation='https://doi.org/10.3897/biss.3.38084'
+    dc:issued='2020-10-13'
+    dc:description='Establishment of a taxon by human agency into an area that is not part of its natural range.'
+    comments='Organisms can be introduced to novel areas and habitats by human activity, either on purpose or by accident. Humans can also inadvertently create corridors that break down natural barriers to dispersal and allow organisms to spread beyond their natural range.'>
+    <preferred>
+      <term dc:source='Darwin Core' dc:title='introduced (alien, exotic, non-native, nonindigenous)' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='zavlečený (introdukovaný, cizí, exotický, nepůvodní)' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='introducido (exótico, no-nativo, no-autóctono)' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='introduit (exotique, non-natif, non-indigène)' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='интродуцирован (чужеродный, экзотичный, не местный, не свойствен для данной территории)' xml:lang='ru'/>
+      <term dc:source='Darwin Core' dc:title='引進（外來、非原生、非原住）' xml:lang='zh'/>
+    </preferred>
+    <alternative>
+      <term dc:source='GBIF Vocabulary Server' dc:title='Alien' xml:lang='en'/>
+      <term dc:source='GBIF Vocabulary Server' dc:title='Exotic' xml:lang='en'/>
+      <term dc:source='GBIF Vocabulary Server' dc:title='Introduced' xml:lang='en'/>
+      <term dc:source='GBIF Vocabulary Server' dc:title='Non-native' xml:lang='en'/>
+      <term dc:source='GBIF Vocabulary Server' dc:title='Nonindigenous' xml:lang='en'/>
+      <term dc:source='GBIF Vocabulary Server' dc:title='Exótica' xml:lang='es'/>
+      <term dc:source='GBIF Vocabulary Server' dc:title='No-nativa' xml:lang='es'/>
+    </alternative>
+  </concept>
+
+  <concept
+    dc:identifier='introducedAssistedColonisation'
+    dc:URI='http://rs.tdwg.org/dwcem/values/e004'
+    dc:subject='http://rs.tdwg.org/dwcem/values/e004'
+    dc:relation='https://doi.org/10.3897/biss.3.38084'
+    dc:issued='2020-10-13'
+    dc:description='Establishment of a taxon specifically with the intention of creating a self-sustaining wild population in an area that is not part of the taxon&#x27;s natural range.'
+    comments='In the event of environmental change and habitat destruction a conservation option is to introduce a taxon into an area it did not naturally occur.'>
+    <preferred>
+      <term dc:source='Darwin Core' dc:title='introduced: assisted colonisation' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='zaveden: asistovaná kolonizace' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='introducido: colonización asistida' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='introduit : colonisation assistée' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='интродуцирован: преднамеренная интродукция' xml:lang='ru'/>
+      <term dc:source='Darwin Core' dc:title='引進（協助拓殖）' xml:lang='zh'/>
+    </preferred>
+    <alternative>
+      <term dc:source='GBIF Vocabulary Server' dc:title='Assisted colonisation' xml:lang='en'/>
+      <term dc:source='GBIF Vocabulary Server' dc:title='Colonización asistida' xml:lang='es'/>
+    </alternative>
+  </concept>
+
+  <concept
+    dc:identifier='vagrant'
+    dc:URI='http://rs.tdwg.org/dwcem/values/e005'
+    dc:subject='http://rs.tdwg.org/dwcem/values/e005'
+    dc:relation='https://doi.org/10.3897/biss.3.38084'
+    dc:issued='2020-10-13'
+    dc:description='The temporary occurrence of a taxon far outside its natural or migratory range.'
+    comments='Natural events and human activity can disperse organisms unpredictably into places where they may stay or survive for a period.'>
+    <preferred>
+      <term dc:source='Darwin Core' dc:title='vagrant (casual)' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='kočovný (příležitostný)' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='vagabundo (incidental)' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='erratique (occasionnel)' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='бродячий (случайная интродукция)' xml:lang='ru'/>
+      <term dc:source='Darwin Core' dc:title='流浪的' xml:lang='zh'/>
+    </preferred>
+    <alternative>
+      <term dc:source='GBIF Vocabulary Server' dc:title='Casual' xml:lang='en'/>
+      <term dc:source='GBIF Vocabulary Server' dc:title='Vagrant' xml:lang='en'/>
+      <term dc:source='GBIF Vocabulary Server' dc:title='Casual' xml:lang='es'/>
+      <term dc:source='GBIF Vocabulary Server' dc:title='Transitoria' xml:lang='es'/>
+    </alternative>
+  </concept>
+
+  <concept
+    dc:identifier='uncertain'
+    dc:URI='http://rs.tdwg.org/dwcem/values/e006'
+    dc:subject='http://rs.tdwg.org/dwcem/values/e006'
+    dc:relation='https://doi.org/10.3897/biss.3.38084'
+    dc:issued='2020-10-13'
+    dc:description='The origin of the occurrence of the taxon in an area is obscure.'
+    comments='When there is a lack of fossil or historical evidence for the occurrence of a taxon in an area it can be impossible to know if the taxon is new to the area or native.'>
+    <preferred>
+      <term dc:source='Darwin Core' dc:title='uncertain (unknown, cryptogenic)' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='nejistý (neznámý, kryptogenní)' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='incierto (desconocido, criptogénico)' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='incertain (inconnu, cryptogénique)' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='неопределенный (неизвестный, криптический)' xml:lang='ru'/>
+      <term dc:source='Darwin Core' dc:title='不確定的（未知、隱源性）' xml:lang='zh'/>
+    </preferred>
+    <alternative>
+      <term dc:source='GBIF Vocabulary Server' dc:title='Cryptogenic' xml:lang='en'/>
+      <term dc:source='GBIF Vocabulary Server' dc:title='Uncertain' xml:lang='en'/>
+      <term dc:source='GBIF Vocabulary Server' dc:title='Unknown' xml:lang='en'/>
+      <term dc:source='GBIF Vocabulary Server' dc:title='Desconocido' xml:lang='es'/>
+      <term dc:source='GBIF Vocabulary Server' dc:title='Incierto' xml:lang='es'/>
+    </alternative>
+  </concept>
+
+  <concept
+    dc:identifier='nativeEndemic'
+    dc:URI='http://rs.tdwg.org/dwcem/values/e007'
+    dc:subject='http://rs.tdwg.org/dwcem/values/e007'
+    dc:relation='https://doi.org/10.3897/biss.3.38084'
+    dc:issued='2025-06-12'
+    dc:description='A taxon with a natural distribution restricted to a single geographical area.'
+    comments='The term endemic is a subcategory of native and relates to geography, such as &quot;areas of endemism&quot;, bioregions, and sometimes administrative boundaries. While a native taxon can naturally occur in several geographical areas an endemic taxon only occurs in one. In Darwin Core terms this would mean, &quot;A dwc:Organism referred to is recognized as a member of a dwc:Taxon endemic to the dcterms:Location at the time of the dwc:Occurrence.&quot;'>
+    <preferred>
+      <term dc:source='Darwin Core' dc:title='native: endemic' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='původní: endemický' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='nativo: endémico' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='natif : endémique' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='аборигенный: эндемичный' xml:lang='ru'/>
+    </preferred>
+  </concept>
+
+</thesaurus>

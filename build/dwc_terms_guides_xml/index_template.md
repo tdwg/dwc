@@ -34,7 +34,7 @@ Bibliographic citation
 
 ## 1 Introduction
 
-This document provides guidelines for implementing application schemas based on [Darwin Core terms](../../terms/) using [XML](http://www.w3.org/XML/). The underlying metadata model is described (in a syntax neutral way), followed by some specific guidelines for XML implementations. Some guidance on the use of non-Darwin Core terms is also provided.
+This document provides guidelines for implementing application schemas based on [Darwin Core terms](../terms/) using [XML](http://www.w3.org/XML/). The underlying metadata model is described (in a syntax neutral way), followed by some specific guidelines for XML implementations. Some guidance on the use of non-Darwin Core terms is also provided.
 
 This document does not provide guidelines for encoding Darwin Core in RDF/XML. Nor does it take a position on the relative merits of encoding metadata in "plain" XML rather than RDF/XML. This document provides guidelines in those cases where RDF/XML is not considered appropriate.
 
@@ -63,7 +63,7 @@ Implementors SHOULD base their XML applications on [XML Schemas](http://www.w3.o
 
 ### 2.2 XML namespaces
 
-Implementors MUST use [XML Namespaces](http://www.w3.org/TR/1999/REC-xml-names-19990114/) to uniquely identify elements. Darwin Core namespaces are defined in the [Darwin Core Namespace Policy](../../namespace/), while Dublin Core namespaces are defined in the [DCMI Namespace Recommendation](http://dublincore.org/documents/dcmi-namespace/).
+Implementors MUST use [XML Namespaces](http://www.w3.org/TR/1999/REC-xml-names-19990114/) to uniquely identify elements. Darwin Core namespaces are defined in the [Darwin Core Namespace Policy](../namespace/), while Dublin Core namespaces are defined in the [DCMI Namespace Recommendation](http://dublincore.org/documents/dcmi-namespace/).
 
 ### 2.3 Abstract model
 
@@ -77,7 +77,7 @@ The Darwin Core follows the [Dublin Core Metadata Initiative Abstract Model](htt
 
 ### 2.4 Properties and values
 
-Darwin Core follows the guidelines for expressing [Dublin Core metadata using XML](http://dublincore.org/documents/dc-xml/) except in that Darwin Core implementors MUST encode `properties` as XML elements and `values` as the content of those elements instead of having each property contain a value representation and its associated value. The name of the XML element MUST be an XML qualified name (QName), which associates the value given in the `Term name` attribute in the [Darwin Core Terms](../../terms/) recommendation with the appropriate namespace name. For example, use:
+Darwin Core follows the guidelines for expressing [Dublin Core metadata using XML](http://dublincore.org/documents/dc-xml/) except in that Darwin Core implementors MUST encode `properties` as XML elements and `values` as the content of those elements instead of having each property contain a value representation and its associated value. The name of the XML element MUST be an XML qualified name (QName), which associates the value given in the `Term name` attribute in the [Darwin Core Terms](../terms/) recommendation with the appropriate namespace name. For example, use:
 
 ```xml
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
@@ -109,13 +109,13 @@ An empty string - an element with no content - MUST NOT be used:
 
 ### 2.6 Simple Darwin Core
 
-[Simple Darwin Core](tdwg_dwc_simple.xsd) most closely models the "flat" nature of many data sets. It is a ready-made schema for sharing information with no structure beyond properties of a _record_ (equivalent to fields in a table, or columns in a spreadsheet). It is meant to accommodate all properties except those that require further structure to be meaningful (auxiliary terms in the classes [ResourceRelationship](http://rs.tdwg.org/dwc/terms/ResourceRelationship), [MeasurementOrFact](http://rs.tdwg.org/dwc/terms/MeasurementOrFact), and [ChronometricAge](http://rs.tdwg.org/chrono/terms/ChronometricAge). The schema has no required terms and no term is repeated within a given _record_. Refer to [Simple Darwin Core](../simple/) for the rationale behind this schema.
+[Simple Darwin Core](tdwg_dwc_simple.xsd) most closely models the "flat" nature of many data sets. It is a ready-made schema for sharing information with no structure beyond properties of a _record_ (equivalent to fields in a table, or columns in a spreadsheet). It is meant to accommodate all properties except those that require further structure to be meaningful (auxiliary terms in the classes [ResourceRelationship](http://rs.tdwg.org/dwc/terms/ResourceRelationship), [MeasurementOrFact](http://rs.tdwg.org/dwc/terms/MeasurementOrFact), and [ChronometricAge](http://rs.tdwg.org/chrono/terms/ChronometricAge)). The schema has no required terms and no term is repeated within a given _record_. Refer to [Simple Darwin Core](../simple/) for the rationale behind this schema.
 
-The term [`dcterms:type`](http://rs.tdwg.org/dwc/terms/dcterms:type) (which is controlled by the [Dublin Core Type Vocabulary](http://dublincore.org/documents/dcmi-type-vocabulary/)), gives the basic category of object (`PhysicalObject`, `StillImage`, `MovingImage`, `Sound`, `Text`) the record is about. The term [`basisOfRecord`](http://rs.tdwg.org/dwc/terms/basisOfRecord), which has a controlled vocabulary distinct from that of `dcterms:type`, shows the name of the Darwin Core class (e.g., [`Event`](http://rs.tdwg.org/dwc/terms/Event), [`LivingSpecimen`](http://rs.tdwg.org/dwc/terms/LivingSpecimen), [`PreservedSpecimen`](http://rs.tdwg.org/dwc/terms/PreservedSpecimen), [`FossilSpecimen`](http://rs.tdwg.org/dwc/terms/FossilSpecimen), [`MaterialEntity`](http://rs.tdwg.org/dwc/terms/MaterialEntity), [`MaterialCitation`](http://rs.tdwg.org/dwc/terms/MaterialCitation), [`HumanObservation`](http://rs.tdwg.org/dwc/terms/HumanObservation), [`MachineObservation`](http://rs.tdwg.org/dwc/terms/MachineObservation), [`Taxon`](http://rs.tdwg.org/dwc/terms/Taxon)) the record is about.
+The term [`dcterms:type`](../terms/#dcterms:type) (which is controlled by the [Dublin Core Type Vocabulary](http://dublincore.org/documents/dcmi-type-vocabulary/)), gives the basic category of object (`PhysicalObject`, `StillImage`, `MovingImage`, `Sound`, `Text`) the record is about. The term [`basisOfRecord`](http://rs.tdwg.org/dwc/terms/basisOfRecord), which has a controlled vocabulary distinct from that of `dcterms:type`, shows the name of the Darwin Core class (e.g., [`Event`](http://rs.tdwg.org/dwc/terms/Event), [`LivingSpecimen`](http://rs.tdwg.org/dwc/terms/LivingSpecimen), [`PreservedSpecimen`](http://rs.tdwg.org/dwc/terms/PreservedSpecimen), [`FossilSpecimen`](http://rs.tdwg.org/dwc/terms/FossilSpecimen), [`MaterialEntity`](http://rs.tdwg.org/dwc/terms/MaterialEntity), [`MaterialCitation`](http://rs.tdwg.org/dwc/terms/MaterialCitation), [`HumanObservation`](http://rs.tdwg.org/dwc/terms/HumanObservation), [`MachineObservation`](http://rs.tdwg.org/dwc/terms/MachineObservation), [`Taxon`](http://rs.tdwg.org/dwc/terms/Taxon)) the record is about.
 
 #### 2.6.1 Simple Darwin Core example (non-normative)
 
-Following is a brief example of an XML document for a single specimen complying with the [Simple Darwin Core Schema](tdwg_dwc_simple.xsd)].
+Following is a brief example of an XML document for a single specimen complying with the [Simple Darwin Core Schema](tdwg_dwc_simple.xsd).
 
 ```xml
 <?xml version="1.0"?>
@@ -136,7 +136,7 @@ Following is a brief example of an XML document for a single specimen complying 
         <dwc:institutionCode>MVZ</dwc:institutionCode>
         <dwc:collectionCode>Mammal specimens</dwc:collectionCode>
         <dwc:catalogNumber>MVZ:Mamm:14523</dwc:catalogNumber>
-        <dec:sex>male</dwc:sex>
+        <dwc:sex>male</dwc:sex>
         <dwc:occurrenceID>http://arctos.database.museum/guid/MVZ:Mamm:14523?seid=770093</dwc:occurrenceID>
         <dwc:country>United States</dwc:country>
         <dwc:countryCode>US</dwc:countryCode>
@@ -145,7 +145,7 @@ Following is a brief example of an XML document for a single specimen complying 
         <dwc:locality>8 mi NE Bakersfield</dwc:locality>
         <dwc:decimalLatitude>35.45038</dwc:decimalLatitude>
         <dwc:decimalLongitude>-118.9092</dwc:decimalLongitude>
-        <dwc:geodeticDatum>epdg:4267</dwc:geodeticDatum>
+        <dwc:geodeticDatum>epsg:4267</dwc:geodeticDatum>
         <dwc:coordinateUncertaintyInMeters>13696</dwc:coordinateUncertaintyInMeters>
         <dwc:eventDate>1911-05-14</dwc:eventDate>
         <dwc:scientificName>Perognathus inornatus inornatus</dwc:scientificName>
@@ -155,7 +155,7 @@ Following is a brief example of an XML document for a single specimen complying 
 
 ### 2.7 Classes and containment
 
-Many Darwin Core terms (`properties`) are defined as being associated with another term (a `class`). For example, [`scientificName`](http://rs.tdwg.org/dwc/terms/scientificName) and [`Taxon`](http://rs.tdwg.org/dwc/terms/Taxon) are both Darwin Core terms, but `scientificName` is a property organized within the `Taxon` class. When constructing schemas that take advantage of classes in structures, implementors SHOULD maintain the property/class organization for the terms whenever possible (refer to the grouping of the term within a class in the [Quick Reference Guide](../../terms/). To promote reuse, Darwin Core provides a set of xml schemas to use as the basis of additional schemas:
+Many Darwin Core terms (`properties`) are defined as being associated with another term (a `class`). For example, [`scientificName`](http://rs.tdwg.org/dwc/terms/scientificName) and [`Taxon`](http://rs.tdwg.org/dwc/terms/Taxon) are both Darwin Core terms, but `scientificName` is a property organized within the `Taxon` class. When constructing schemas that take advantage of classes in structures, implementors SHOULD maintain the property/class organization for the terms whenever possible (refer to the grouping of the term within a class in the [Quick Reference Guide](../terms/)). To promote reuse, Darwin Core provides a set of xml schemas to use as the basis of additional schemas:
 
 - [Terms XML Schema](tdwg_dwcterms.xsd) - property term definitions as typed global elements and named groups for all terms for a given class to be referenced. The schema makes use of substitution groups `anyClass`, `anyProperty`, `anyIdentifier` and `anyXYZTerm` for each class, e.g. `anyTaxonTerm`. This is the schema upon which the [Simple Darwin Core XML Schema](tdwg_dwc_simple.xsd) is based.
 - [Class Terms XML Schema](tdwg_dwc_class_terms.xsd) - class term definitions as typed global elements with subelements referencing all corresponding property terms via their substitution group.
@@ -212,7 +212,7 @@ Following is an example of using a normalized class-based schema to represent tw
       <dwc:scientificName>Thamnophis elegans (Baird &amp; Girard, 1853)</dwc:scientificName>
       <dwc:taxonRank>species</dwc:taxonRank>
       <dwc:genus>Thamnophis</dwc:genus>
-      <dwc:specificEpithet>elgans</dwc:specificEpithet>
+      <dwc:specificEpithet>elegans</dwc:specificEpithet>
    </dwc:Taxon>
    <dwc:Occurrence>
       <dwc:occurrenceID>http://arctos.database.museum/guid/MVZ:Herp:51500?seid=670405</dwc:occurrenceID>

@@ -26,8 +26,11 @@
         "href": "/pw/"
       },
       {
+        "text": "---"
+      },
+      {
         "text": "Taxon Completeness Reported Controlled Vocabulary",
-        "href": "https://eco.tdwg.org/tcr/"
+        "href": "/tcr/"
       }
     ]
   },
@@ -39,6 +42,25 @@
         "href": "/terms/"
       },
       {
+        "text": "Text (Darwin Core Archive)",
+        "href": "/text/"
+      },
+      {
+        "text": "---"
+      },
+      {
+        "text": "Darwin Core Data Package Quick Reference",
+        "href": "/dwc-dp/qrg/"
+      },
+      {
+        "text": "Darwin Core Data Package Designer",
+        "href": "/dwc-dp/designer/"
+      },
+      {
+        "text": "Data Package (Darwin Core Data Package)",
+        "href": "/dp/"
+      },
+      {
         "text": "---"
       },
       {
@@ -47,11 +69,11 @@
       },
       {
         "text": "Hierarchical Event Guidelines",
-        "href": "https://eco.tdwg.org/hierarchy/"
+        "href": "/hierarchy/"
       },
       {
         "text": "isLeastSpecificTargetCategoryQuantityInclusive Guidelines",
-        "href": "https://eco.tdwg.org/inclusive/"
+        "href": "/inclusive/"
       },
       {
         "text": "---"
@@ -59,14 +81,6 @@
       {
         "text": "Simple Darwin Core",
         "href": "/simple/"
-      },
-      {
-        "text": "Text (Darwin Core Archive)",
-        "href": "/text/"
-      },
-      {
-        "text": "Data Package (Darwin Core Data Package)",
-        "href": "/dp/"
       },
       {
         "text": "RDF",

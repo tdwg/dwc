@@ -63,7 +63,7 @@ Below you will find the latest versions of all DwC-A schemas supported by the Da
 
 ## 4 DwC-DP profiles and table schemas
 
-Below you will find the latest versions of the DwC-DP profile and table schemas supported by the Darwin Core Maintenance Group. These are non-normative parts of the Darwin Core standard. You can find historical versions at http://rs.tdwg.org/dwc-dp/.
+Below you will find the latest version of the DwC-DP profile and table schemas supported by the Darwin Core Maintenance Group. These are non-normative parts of the Darwin Core standard. You can find historical versions at http://rs.tdwg.org/dwc-dp/.
 
 [Latest Darwin Core Data Package version](http://rs.tdwg.org/dwc-dp/1.0-RC)
 

@@ -34,7 +34,7 @@ Bibliographic citation
 
 ## 1 Introduction
 
-This document and the policies contained herein are modeled on the [Dublin Core Metadata Initiative Namespace Policy](http://dublincore.org/documents/2007/07/02/dcmi-namespace/). All terms in the Darwin Core must be identified with a unique Uniform Resource Identifier (URI). For convenience, the term URIs are grouped into collections known as _Darwin Core namespaces_. This document describes the policies associated with Darwin Core namespaces and how term URIs are allocated by the [Darwin Core Maintenance Group](http://www.tdwg.org/activities/darwincore/).
+This document and the policies contained herein are modeled on the [Dublin Core Metadata Initiative Namespace Policy](http://dublincore.org/documents/2007/07/02/dcmi-namespace/). All terms defined by Darwin Core must be identified with a unique Uniform Resource Identifier (URI). For convenience, the term URIs assigned and managed by Darwin Core are grouped into collections known as _Darwin Core namespaces_. Darwin Core also uses terms from namespaces maintained by other standards; those borrowed namespaces are not governed by this policy. This document describes the policies associated with Darwin Core namespaces and how term URIs are allocated by the [Darwin Core Maintenance Group](https://www.tdwg.org/community/dwc/).
 
 ### 1.1 Status of the content of this document
 
@@ -46,22 +46,42 @@ This document is targeted toward those who want to make changes to the Darwin Co
 
 ## 2 Namespace URIs
 
-The Darwin Core namespace URI for the collection of general Darwin Core properties, classes, and encoding schemes is:
+The Darwin Core namespace URI for general Darwin Core terms is:
 
 ```
 http://rs.tdwg.org/dwc/terms/
 ```
 
-The Darwin Core namespace URI for the collection Darwin Core properties expected to have IRI values is:
+
+The Darwin Core namespace URI for corresponding terms intended to have IRI values is:
 
 ```
 http://rs.tdwg.org/dwc/iri/
 ```
 
-The Darwin Core namespace URI for the collection of ChronometricAge properties, classes, and encoding schemes is:
+
+The Darwin Core namespace URI for terms originating in the Chronometric Age vocabulary is:
 
 ```
 http://rs.tdwg.org/chrono/terms/
+```
+
+The Darwin Core namespace URI for corresponding Chronometric Age terms intended to have IRI values is:
+
+```
+http://rs.tdwg.org/chrono/iri/
+```
+
+The Darwin Core namespace URI for terms originating in the Humboldt Extension for Ecological Inventories is:
+
+```
+http://rs.tdwg.org/eco/terms/
+```
+
+The Darwin Core namespace URI for corresponding Humboldt terms intended to have IRI values is:
+
+```
+http://rs.tdwg.org/eco/iri/
 ```
 
 The term identifier for the current (recommended) version of a term is a URI based on the namespace and the term name without version information. Some example Darwin Core term identifiers follow:
@@ -82,7 +102,7 @@ All Darwin Core identifiers will dereference to a Darwin Core term declaration f
 
 ## 3 Term change policy
 
-(This section has been superseded by the [Vocabulary Maintenance Specification](https://github.com/tdwg/vocab/blob/master/vms/maintenance-specification.md))
+This section has been superseded by the [Vocabulary Maintenance Specification](http://rs.tdwg.org/vms/doc/specification/).
 
 ## 4 Persistence policy
 

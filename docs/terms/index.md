@@ -1,3 +1,8 @@
+---
+layout: qrg
+toc: true
+---
+
 
 # Darwin Core Quick Reference Guide
 

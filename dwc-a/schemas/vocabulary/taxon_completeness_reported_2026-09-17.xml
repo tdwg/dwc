@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type='text/xsl' href='/style/human.xsl'?>
+<thesaurus xmlns:dcterms='http://purl.org/dc/terms/'
+  dc:URI='http://rs.gbif.org/vocabulary/dwc/taxon_completeness_reported/'
+  dc:relation='https://dwc.tdwg.org/terms/#eco:taxonCompletenessReported'
+  dc:title='Darwin Core Taxon Completeness Reported Vocabulary'
+  dcterms:isPartOf='http://www.tdwg.org/standards/450'
+  dc:issued='2026-09-17'
+  xmlns='http://rs.gbif.org/thesaurus/'
+  xmlns:dc='http://purl.org/dc/terms/'
+  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  xsi:schemaLocation='http://rs.gbif.org/thesaurus/ http://rs.gbif.org/schema/thesaurus.xsd'>
+
+  <concept
+    dc:identifier='notReported'
+    dc:URI='http://rs.tdwg.org/ecotcr/values/tcr00'
+    dc:subject='http://rs.tdwg.org/ecotcr/values/tcr00'
+    dc:relation='https://doi.org/10.3897/biss.3.38084'
+    dc:issued='2024-02-28'
+    dc:description='Taxonomic completeness was not assessed or reported for the dwc:Event.'>
+    <preferred>
+    </preferred>
+  </concept>
+
+  <concept
+    dc:identifier='reportedComplete'
+    dc:URI='http://rs.tdwg.org/ecotcr/values/tcr01'
+    dc:subject='http://rs.tdwg.org/ecotcr/values/tcr01'
+    dc:relation='https://doi.org/10.3897/biss.3.38084'
+    dc:issued='2024-02-28'
+    dc:description='Taxonomic completeness was assessed for the dwc:Event, and it was determined to be complete.'>
+    <preferred>
+    </preferred>
+  </concept>
+
+  <concept
+    dc:identifier='reportedIncomplete'
+    dc:URI='http://rs.tdwg.org/ecotcr/values/tcr02'
+    dc:subject='http://rs.tdwg.org/ecotcr/values/tcr02'
+    dc:relation='https://doi.org/10.3897/biss.3.38084'
+    dc:issued='2024-02-28'
+    dc:description='Taxonomic completeness was assessed for the dwc:Event, and it was determined to be incomplete.'>
+    <preferred>
+    </preferred>
+  </concept>
+
+</thesaurus>

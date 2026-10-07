@@ -81,6 +81,7 @@ All sections of this document are normative (define what is required to comply w
 
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [BCP 14](https://www.rfc-editor.org/info/bcp14) [\[RFC 2119\]](https://datatracker.ietf.org/doc/html/rfc2119) and [\[RFC 8174\]](https://datatracker.ietf.org/doc/html/rfc8174) when, and only when, they appear in all capitals, as shown here.
 
+{:id="example"}
 ## 2 DwC-DP Data Package example (non-normative)
 
 Consider a dataset containing four bird *Occurrences* observed during a single parent *Event*. The data can be captured in two CSV files, each representing a DwC-DP table:
@@ -309,7 +310,7 @@ A **table schema** describes the fields, relationships and missing values of a t
 
 Table schemas are provided at `rs.tdwg.org` for each DwC-DP table. See [section 4](#dwc-dp-tables). These table schemas include all possible fields, primary keys and foreign key relationships a table can have. Use these to select the fields and keys that are applicable to your data.
 
-1. A DwC-DP table schema MUST have a `fields` property, with an array of **field descriptors** describing the fields/columns in the data file. The `fields` property MUST follow the [Table Schema specification][schema.fields]. In addition, the order and number of elements in `fields` MUST be the order and number of fields in the CSV file. See [section 3.4](#3.4-field-descriptors) for details.
+1. A DwC-DP table schema MUST have a `fields` property, with an array of **field descriptors** describing the fields/columns in the data file. The `fields` property MUST follow the [Table Schema specification][schema.fields]. In addition, the order and number of elements in `fields` MUST be the order and number of fields in the CSV file. See [section 3.4](#field-descriptors) for details.
 
 2. Each field in a DwC-DP table schema MUST be described with the field descriptor of the table schema provided at `rs.tdwg.org` for that table. For example, if you want to describe an `eventID` field in an `event` table, you MUST use the field descriptor for `eventID` in the table schema for `event` provided at `rs.tdwg.org`. Fields MUST NOT be misrepresented. Custom fields SHOULD NOT be added.
 
@@ -358,6 +359,7 @@ For brevity, let's name fields as `table_name.field_name` (e.g., `event.eventID`
 
 3. Since `event.eventID` is the target of a foreign key relationship, it must be a primary key.
 
+{:id="field-descriptors"}
 ### 3.4 Field descriptors
 
 A **field descriptor** describes a single field in a table schema (e.g., its name, description, format, constraints).
@@ -374,7 +376,7 @@ A **field descriptor** describes a single field in a table schema (e.g., its nam
 
 6. A field descriptor MUST have a `type` property, indicating the data type of values in the field (e.g., `string`, `number`). A `type` property MUST follow the [Table schema specification][field.type].
 
-7. A field descriptor SHOULD have a `format` property, indicating how values should be parsed. A `format` property MUST follow the [Table schema specification](field.format).
+7. A field descriptor SHOULD have a `format` property, indicating how values should be parsed. A `format` property MUST follow the [Table schema specification][field.format].
 
 8. A field descriptor MAY have a `namespace` property, with an abbreviation of the namespace of the source term (e.g., `dwc`, `dcterms`).
 
@@ -391,6 +393,7 @@ A **field descriptor** describes a single field in a table schema (e.g., its nam
 {:.alert .alert-info}
 (non-normative) You will be guaranteed to meet the requirements for field descriptors by copying field descriptors directly from the table schemas provided at `rs.tdwg.org`.
 
+{:id="dwc-dp-tables"}
 ## 4. DwC-DP tables (non-normative)
 
 - **Reserved table names**: see the `enum` values for `dwc-dp-resource-names` in the Darwin Core Profile at http://rs.tdwg.org/dwc-dp/1.0/dwc-dp-profile.json

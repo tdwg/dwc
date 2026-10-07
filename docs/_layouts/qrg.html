@@ -1,0 +1,81 @@
+---
+layout: base
+description: Full-width Quick Reference Guide layout with compact table of contents.
+---
+
+<style>
+  /*
+   * Quick Reference Guides contain wide metadata and relationship tables.  The
+   * default Petridish layout constrains the outer Bootstrap container and then
+   * assigns 8/12 columns to content and 3/12 to the TOC.  For QRG pages only,
+   * recover that horizontal space while retaining the theme's TOC styling.
+   */
+  @media (min-width: 992px) {
+    .container.content {
+      max-width: none !important;
+      width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .qrg-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 240px;
+      grid-template-areas: "content toc";
+      gap: 24px;
+      align-items: start;
+      width: 100%;
+    }
+
+    .qrg-content {
+      grid-area: content;
+      min-width: 0;
+    }
+
+    .qrg-toc {
+      grid-area: toc;
+      min-width: 0;
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    .qrg-layout {
+      display: block;
+    }
+  }
+</style>
+
+<div class="qrg-layout">
+  {% if page.toc %}
+  <aside class="qrg-toc">
+    <div class="toc">
+      <h6>On this page</h6>
+      {% include toc.html
+        html=content
+        sanitize=true
+        h_min=2
+        h_max=3
+      %}
+    </div>
+  </aside>
+  {% endif %}
+
+  <div class="qrg-content">
+    {{ content }}
+    {% if page.comments %}
+      <div id="disqus_thread"></div>
+      <script>
+        var disqus_config = function () {
+          this.page.url = "{{ page.url | absolute_url }}";
+        };
+        (function() {
+          var d = document, s = d.createElement("script");
+          s.src = "https://{{ site.social.disqus }}.disqus.com/embed.js";
+          s.setAttribute("data-timestamp", +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    {% endif %}
+  </div>
+</div>

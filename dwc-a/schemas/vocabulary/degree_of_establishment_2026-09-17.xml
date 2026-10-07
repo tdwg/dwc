@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <?xml-stylesheet type='text/xsl' href='/style/human.xsl'?>
-<thesaurus
+<thesaurus xmlns:dcterms='http://purl.org/dc/terms/'
   dc:URI='http://rs.gbif.org/vocabulary/dwc/degree_of_establishment/'
   dc:relation='https://dwc.tdwg.org/terms/#dwc:degreeOfEstablishment'
   dc:title='Darwin Core Degree of Establishment Vocabulary'
   dcterms:isPartOf='http://www.tdwg.org/standards/450'
-  dc:issued='2025-07-10'
+  dc:issued='2026-09-17'
   xmlns='http://rs.gbif.org/thesaurus/'
   xmlns:dc='http://purl.org/dc/terms/'
   xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
