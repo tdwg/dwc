@@ -1401,7 +1401,7 @@ class TermList:
             # If there was no previous version, remove the slot from the header.
             header = header.replace('{previous_version_slot}\n\n', '')
 
-        output = header + text
+        output = (header + text).rstrip('\n') + '\n'
         outputObject = open(outFileName, 'wt', encoding='utf-8')
         outputObject.write(output)
         outputObject.close()
