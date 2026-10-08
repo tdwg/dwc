@@ -2,7 +2,8 @@ window.DWC_DP_DESIGNER_DATA = {
   "dwcDpVersion": "http://rs.tdwg.org/dwc-dp/1.0-RC",
   "profileIdentifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/dwc-dp-profile.json",
   "profile": {
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "https://json-schema.org/draft/2020-12/schema#",
+    "$id": "https://rs.tdwg.org/dwc-dp/1.0/dwc-dp-profile.json",
     "title": "Darwin Core Data Package (DwC-DP) profile",
     "version": "http://rs.tdwg.org/dwc-dp/1.0-RC",
     "description": "Profile for organizing biodiversity data as a Data Package (https://specs.frictionlessdata.io/).",
@@ -134,7 +135,9 @@ window.DWC_DP_DESIGNER_DATA = {
                     "schema": {
                       "properties": {
                         "fields": {
+                          "type": "array",
                           "items": {
+                            "type": "object",
                             "required": [
                               "name",
                               "title",
@@ -146,7 +149,7 @@ window.DWC_DP_DESIGNER_DATA = {
                               "dcterms:isVersionOf": {
                                 "type": "string",
                                 "format": "uri",
-                                "pattern": "^http.*$"
+                                "pattern": "^https?://.+$"
                               }
                             }
                           }

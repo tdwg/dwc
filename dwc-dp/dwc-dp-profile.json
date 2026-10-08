@@ -1,5 +1,6 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$schema": "https://json-schema.org/draft/2020-12/schema#",
+  "$id": "https://rs.tdwg.org/dwc-dp/1.0/dwc-dp-profile.json",
   "title": "Darwin Core Data Package (DwC-DP) profile",
   "version": "http://rs.tdwg.org/dwc-dp/1.0-RC",
   "description": "Profile for organizing biodiversity data as a Data Package (https://specs.frictionlessdata.io/).",
@@ -131,7 +132,9 @@
                   "schema": {
                     "properties": {
                       "fields": {
+                        "type": "array",
                         "items": {
+                          "type": "object",
                           "required": [
                             "name",
                             "title",
@@ -143,7 +146,7 @@
                             "dcterms:isVersionOf": {
                               "type": "string",
                               "format": "uri",
-                              "pattern": "^http.*$"
+                              "pattern": "^https?://.+$"
                             }
                           }
                         }

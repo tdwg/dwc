@@ -2540,7 +2540,6 @@ This category contains terms that are generic in that they might apply to any ty
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:typifiedName">typifiedName</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:catalogNumber">catalogNumber</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:otherCatalogNumbers">otherCatalogNumbers</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:recordNumber">recordNumber</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:objectQuantity">objectQuantity</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:objectQuantityType">objectQuantityType</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:preparations">preparations</a>
@@ -2803,19 +2802,6 @@ This category contains terms that are generic in that they might apply to any ty
   </tbody>
 </table>
 <p class="invisible">
-  <span id="dwc:recordNumber"></span>
-    <span id="recordNumber"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">recordNumber</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/recordNumber">http://rs.tdwg.org/dwc/terms/recordNumber</a></td></tr>
-    <tr><td>Definition</td><td>An identifier given to the dwc:Occurrence at the time it was recorded. Often serves as a link between field notes and a dwc:MaterialEntity record, such as a specimen collector's number.</td></tr>
-    <tr><td>Notes</td><td>This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
-    <tr><td>Examples</td><td><code>OPP 7101</code></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
   <span id="dwc:objectQuantity"></span>
     <span id="objectQuantity"></span>
   </p>
@@ -3018,6 +3004,7 @@ This category contains terms that are generic in that they might apply to any ty
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:occurrenceID">occurrenceID</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:recordedBy">recordedBy</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:recordedByID">recordedByID</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:recordNumber">recordNumber</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:individualCount">individualCount</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:organismQuantity">organismQuantity</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:organismQuantityType">organismQuantityType</a>
@@ -3087,6 +3074,19 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Definition</td><td>An identifier for a dcterms:Agent responsible for recording a dwc:Event.</td></tr>
     <tr><td>Notes</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="https://orcid.org/0000-0002-1825-0097">https://orcid.org/0000-0002-1825-0097</a></code> (for an individual)</li><li class="list-group-item"><code><a href="https://orcid.org/0000-0002-1825-0097">https://orcid.org/0000-0002-1825-0097</a> | <a href="https://orcid.org/0000-0002-1825-0098">https://orcid.org/0000-0002-1825-0098</a></code> (for a list of people)</li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:recordNumber"></span>
+    <span id="recordNumber"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">recordNumber</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/recordNumber">http://rs.tdwg.org/dwc/terms/recordNumber</a></td></tr>
+    <tr><td>Definition</td><td>An identifier given to the dwc:Occurrence at the time it was recorded. Often serves as a link between field notes and a dwc:MaterialEntity record, such as a specimen collector's number.</td></tr>
+    <tr><td>Notes</td><td>This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><code>OPP 7101</code></td></tr>
   </tbody>
 </table>
 <p class="invisible">
