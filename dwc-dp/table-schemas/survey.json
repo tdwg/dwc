@@ -148,7 +148,7 @@
     {
       "name": "totalAreaSampledValue",
       "title": "Total Area Sampled Value",
-      "description": "A numeric value for the total area, volume or distance surveyed during the dwc:Survey.",
+      "description": "A numeric value for the total area, volume or distance surveyed during the eco:Survey.",
       "notes": "This value is always less than or equal to the eco:geospatialScopeAreaValue because it reflects the portion of the geospatialScope that was actually sampled. An eco:totalAreaSampledValue must have a corresponding eco:totalAreaSampledUnit.",
       "examples": "`0.8`",
       "type": "number",

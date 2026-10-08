@@ -10,7 +10,7 @@ Preferred namespace abbreviation
 : ecotcr:
 
 Date version issued
-: 2024-02-28
+: 2026-09-17
 
 Date created
 : 2024-02-28
@@ -19,13 +19,16 @@ Part of TDWG Standard
 : <http://www.tdwg.org/standards/450>
 
 This document version
-: <http://rs.tdwg.org/dwc/doc/tcr/2024-02-28>
+: <http://rs.tdwg.org/dwc/doc/tcr/2026-09-17>
 
 Latest version of document
 : <http://rs.tdwg.org/dwc/doc/tcr/>
 
+Previous version
+: <http://rs.tdwg.org/dwc/doc/tcr/2024-02-28>
+
 Abstract
-: The Humboldt Extension for Ecological Inventories term `taxonCompletenessReported` provides information about whether taxonomic completeness was assessed for a survey. The Taxon Completeness Reported Controlled Vocabulary provides terms that should be used as values for `eco:taxonCompletenessReported` and `ecoiri:taxonCompletenessReported`.
+: The Darwin Core term `eco:taxonCompletenessReported` provides information about whether taxonomic completeness was assessed for an `eco:Survey`. The Taxon Completeness Reported Controlled Vocabulary provides terms that should be used as values for `eco:taxonCompletenessReported` and `ecoiri:taxonCompletenessReported`.
 
 Contributors
 : [Yanina V. Sica](https://orcid.org/0000-0002-1720-0127) ([Yale University](http://www.wikidata.org/entity/Q49112)), [Wesley M. Hochachka](https://orcid.org/0000-0002-0595-7827) ([Cornell Lab of Ornithology](http://www.wikidata.org/entity/Q2997535)), [Steven J. Baskauf](https://orcid.org/0000-0003-4365-3135) ([Vanderbilt University Libraries](http://www.wikidata.org/entity/Q16849893))
@@ -34,23 +37,24 @@ Creator
 : TDWG Humboldt Extension Task Group
 
 Bibliographic citation
-: TDWG Humboldt Extension Task Group. 2024. Taxon Completeness Reported Controlled Vocabulary List of Terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/tcr/2024-02-28>
+: TDWG Humboldt Extension Task Group. 2026. Taxon Completeness Reported Controlled Vocabulary List of Terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/tcr/2026-09-17>
 
 
 ## 1 Introduction
 
-This document includes terms intended to be used as controlled values for Darwin Core terms with local name `taxonCompletenessReported`.
+This document includes terms intended to be used as controlled values for the Darwin Core properties `eco:taxonCompletenessReported` and `ecoiri:taxonCompletenessReported`.
 
 ### 1.1 Status of the content of this document
 
 In Section 4, the values of the `Term IRI`, `Definition`, and `Controlled value` are normative. The value of `Usage` (if it exists for a given term) is normative. The values of `Term Name` are non-normative, although one can expect that the namespace abbreviation prefix is one commonly used for the term namespace. `Label` and the values of all other properties (such as `Notes`) are non-normative.
 
 ### 1.2 RFC 2119 key words
-The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [RFC 2119](https://tools.ietf.org/html/rfc2119).
+
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [BCP 14](https://www.rfc-editor.org/info/bcp14) [[RFC 2119]](https://datatracker.ietf.org/doc/html/rfc2119) and [[RFC 8174]](https://datatracker.ietf.org/doc/html/rfc8174) when, and only when, they appear in all capitals, as shown here.
 
 ## 2 Use of Terms
 
-Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://dwc.tdwg.org/rdf/#143-use-of-darwin-core-terms-in-rdf-normative), term IRIs MUST be used as values of `ecoiri:taxonCompletenessReported`. Controlled value strings MUST be used as values of `eco:taxonCompletenessReported`.
+Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#143-use-of-darwin-core-terms-in-rdf-normative), term IRIs MUST be used as values of `ecoiri:taxonCompletenessReported`. Controlled value strings MUST be used as values of `eco:taxonCompletenessReported`.
 
 ## 3 Term index
 
@@ -75,11 +79,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 		</tr>
 		<tr>
 			<td>変更日</td>
-			<td>2024-02-28</td>
+			<td>2026-09-17</td>
 		</tr>
 		<tr>
 			<td>用語のバージョンのIRI</td>
-			<td><a href="http://rs.tdwg.org/ecotcr/values/version/tcr-2024-02-28">http://rs.tdwg.org/ecotcr/values/version/tcr-2024-02-28</a></td>
+			<td><a href="http://rs.tdwg.org/ecotcr/values/version/tcr-2026-09-17">http://rs.tdwg.org/ecotcr/values/version/tcr-2026-09-17</a></td>
 		</tr>
 		<tr>
 			<td>ラベル</td>
@@ -87,7 +91,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 		</tr>
 		<tr>
 			<td>定義</td>
-			<td>a SKOS concept scheme for categorizing taxon completeness reporting</td>
+			<td>A SKOS concept scheme for categorizing taxon completeness reporting.</td>
 		</tr>
 		<tr>
 			<td>タイプ</td>
@@ -96,6 +100,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 		<tr>
 			<td>実行委員会の決定</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
+		<tr>
+			<td>実行委員会の決定</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-09-17_62">http://rs.tdwg.org/decisions/decision-2026-09-17_62</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -113,11 +121,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 		</tr>
 		<tr>
 			<td>変更日</td>
-			<td>2024-02-28</td>
+			<td>2026-09-17</td>
 		</tr>
 		<tr>
 			<td>用語のバージョンのIRI</td>
-			<td><a href="http://rs.tdwg.org/ecotcr/values/version/tcr00-2024-02-28">http://rs.tdwg.org/ecotcr/values/version/tcr00-2024-02-28</a></td>
+			<td><a href="http://rs.tdwg.org/ecotcr/values/version/tcr00-2026-09-17">http://rs.tdwg.org/ecotcr/values/version/tcr00-2026-09-17</a></td>
 		</tr>
 		<tr>
 			<td>ラベル</td>
@@ -125,7 +133,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 		</tr>
 		<tr>
 			<td>定義</td>
-			<td>Taxonomic completeness was not assessed or reported for the dwc:Event.</td>
+			<td>Taxonomic completeness was not assessed or reported for the eco:Survey.</td>
 		</tr>
 		<tr>
 			<td>制御値</td>
@@ -138,6 +146,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 		<tr>
 			<td>実行委員会の決定</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
+		<tr>
+			<td>実行委員会の決定</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-09-17_62">http://rs.tdwg.org/decisions/decision-2026-09-17_62</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -155,11 +167,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 		</tr>
 		<tr>
 			<td>変更日</td>
-			<td>2024-02-28</td>
+			<td>2026-09-17</td>
 		</tr>
 		<tr>
 			<td>用語のバージョンのIRI</td>
-			<td><a href="http://rs.tdwg.org/ecotcr/values/version/tcr01-2024-02-28">http://rs.tdwg.org/ecotcr/values/version/tcr01-2024-02-28</a></td>
+			<td><a href="http://rs.tdwg.org/ecotcr/values/version/tcr01-2026-09-17">http://rs.tdwg.org/ecotcr/values/version/tcr01-2026-09-17</a></td>
 		</tr>
 		<tr>
 			<td>ラベル</td>
@@ -167,7 +179,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 		</tr>
 		<tr>
 			<td>定義</td>
-			<td>Taxonomic completeness was assessed for the dwc:Event, and it was determined to be complete.</td>
+			<td>Taxonomic completeness was assessed for the eco:Survey, and it was determined to be complete.</td>
 		</tr>
 		<tr>
 			<td>制御値</td>
@@ -180,6 +192,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 		<tr>
 			<td>実行委員会の決定</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
+		<tr>
+			<td>実行委員会の決定</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-09-17_62">http://rs.tdwg.org/decisions/decision-2026-09-17_62</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -197,11 +213,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 		</tr>
 		<tr>
 			<td>変更日</td>
-			<td>2024-02-28</td>
+			<td>2026-09-17</td>
 		</tr>
 		<tr>
 			<td>用語のバージョンのIRI</td>
-			<td><a href="http://rs.tdwg.org/ecotcr/values/version/tcr02-2024-02-28">http://rs.tdwg.org/ecotcr/values/version/tcr02-2024-02-28</a></td>
+			<td><a href="http://rs.tdwg.org/ecotcr/values/version/tcr02-2026-09-17">http://rs.tdwg.org/ecotcr/values/version/tcr02-2026-09-17</a></td>
 		</tr>
 		<tr>
 			<td>ラベル</td>
@@ -209,7 +225,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 		</tr>
 		<tr>
 			<td>定義</td>
-			<td>Taxonomic completeness was assessed for the dwc:Event, and it was determined to be incomplete.</td>
+			<td>Taxonomic completeness was assessed for the eco:Survey, and it was determined to be incomplete.</td>
 		</tr>
 		<tr>
 			<td>制御値</td>
@@ -222,6 +238,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 		<tr>
 			<td>実行委員会の決定</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
+		<tr>
+			<td>実行委員会の決定</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-09-17_62">http://rs.tdwg.org/decisions/decision-2026-09-17_62</a></td>
 		</tr>
 	</tbody>
 </table>

@@ -90,8 +90,8 @@
     dc:subject='http://rs.tdwg.org/dwcem/values/e004'
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
-    dc:description='Establishment of a taxon specifically with the intention of creating a self-sustaining wild population in an area that is not part of the taxon&#x27;s natural range.'
-    comments='In the event of environmental change and habitat destruction a conservation option is to introduce a taxon into an area it did not naturally occur.'>
+    dc:description='Establishment of a taxon specifically with the intention of creating a self-sustaining wild population in an area that is not part of the taxon&#x27;s natural range'
+    comments='In the event of environmental change and habitat destruction, a conservation option is to introduce a taxon into an area it did not naturally occur.'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='introduced: assisted colonisation' xml:lang='en'/>
       <term dc:source='Darwin Core' dc:title='zaveden: asistovaná kolonizace' xml:lang='cs'/>

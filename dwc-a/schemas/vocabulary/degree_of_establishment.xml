@@ -37,8 +37,8 @@
     dc:subject='http://rs.tdwg.org/dwcdoe/values/d002'
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
-    dc:description='Individuals in captivity or quarantine (i.e., individuals provided with conditions suitable for them, but explicit measures of containment are in place).'
-    comments='See also &quot;category B1&quot; in Blackburn et al. 2011. https://doi.org/10.1016/j.tree.2011.03.023'>
+    dc:description='Individuals in captivity or quarantine (i.e. individuals provided with conditions suitable for them, but explicit measures of containment are in place)'
+    comments='See also Blackburn et al. 2011 https://doi.org/10.1016/j.tree.2011.03.023 category B1'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='captive (category B1)' xml:lang='en'/>
       <term dc:source='Darwin Core' dc:title='v zajetí (kategorie B1)' xml:lang='cs'/>

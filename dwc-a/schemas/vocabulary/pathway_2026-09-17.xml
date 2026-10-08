@@ -17,8 +17,8 @@
     dc:subject='http://rs.tdwg.org/dwcpw/values/p001'
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
-    dc:description='Organisms occuring in an area because they were introduced for the purpose of biological control of another organism.'
-    comments='Released intentionally into the (semi)natural environment with the purpose of controlling the population(s) of one or more organisms. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    dc:description='Organisms occurring in an area because they were introduced for the purpose of biological control of another organism.'
+    comments='Released intentionally into the (semi)natural environment with the purpose of controlling the population(s) of one or more organisms. See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='biological control' xml:lang='en'/>
       <term dc:source='Darwin Core' dc:title='biologická ochrana' xml:lang='cs'/>
@@ -105,7 +105,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Organisms introduced for conservation purposes or wildlife management.'
-    comments='The organism was released with the intention of improving the conservation status of the species or the conservation status other species in the habitat. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='The organism was released with the intention of improving its conservation status of the species or the conservation status of other species in the habitat. See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='conservation or wildlife management' xml:lang='en'/>
       <term dc:source='Darwin Core' dc:title='ochrana přírody nebo správa volně žijících živočichů' xml:lang='cs'/>
@@ -224,7 +224,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Animals cared for and bred with the specific intention of using their products, such as meat and milk.'
-    comments='Farmed animals are generally kept in a defined area, such as a fields. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='Farmed animals are generally kept in a defined area, such as a field. See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='farmed animals (including animals left under limited control)' xml:lang='en'/>
       <term dc:source='Darwin Core' dc:title='hospodářská zvířata (včetně zvířat ponechaných pod omezenou kontrolou)' xml:lang='cs'/>
@@ -496,7 +496,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Contaminants on unprocessed timber, processed wood and wood-derived products.'
-    comments='Examples include wooden furniture, saw dust and fire wood. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='Examples include wooden furniture, sawdust and firewood. See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='timber trade' xml:lang='en'/>
       <term dc:source='Darwin Core' dc:title='obchod se dřevem' xml:lang='cs'/>
@@ -632,7 +632,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Organic material, particularly unprocessed plant material that is used to pack transported goods.'
-    comments='Examples include woodern pallets, boxes, bags and baskets. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='Examples include wooden pallets, boxes, bags and baskets. See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='organic packing material, in particular wood packaging' xml:lang='en'/>
       <term dc:source='Darwin Core' dc:title='organický obalový materiál, zejména dřevěné obaly' xml:lang='cs'/>
@@ -699,8 +699,8 @@
     dc:subject='http://rs.tdwg.org/dwcpw/values/p041'
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
-    dc:description='A catch-all term for any transport related dispersal that is not covered in other terms.'
-    comments='Examples include fouling from offshore oil and gas platforms, offshore renewable energy sites (such as wind farms, pipelines, cable transport, etc.) See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    dc:description='A catchall term for any transport-related dispersal that is not covered in other terms.'
+    comments='Examples include the movement of offshore installations, such as drilling platforms, but also pipeline and cable transport. See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='other means of transport' xml:lang='en'/>
       <term dc:source='Darwin Core' dc:title='jiné dopravní prostředky' xml:lang='cs'/>
@@ -716,8 +716,8 @@
     dc:subject='http://rs.tdwg.org/dwcpw/values/p042'
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
-    dc:description='Organisms that dispersed through artificial waterways created to connect previosuly unconnected water bodies.'
-    comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    dc:description='Organisms that dispersed through artificial waterways created to connect previously unconnected water bodies.'
+    comments='See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='interconnected waterways/basins/seas' xml:lang='en'/>
       <term dc:source='Darwin Core' dc:title='propojené vodní cesty/povodí/moře' xml:lang='cs'/>
@@ -835,8 +835,8 @@
     dc:subject='http://rs.tdwg.org/dwcpw/values/p049'
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
-    dc:description='Infrastructure, such as bridges, tunnels and canals have removed natural barriers to dispersal and allowed a species to move into a novel location.'
-    comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    dc:description='Infrastructures, such as bridges, tunnels and canals, have removed natural barriers to dispersal and allowed a species to move into a novel location.'
+    comments='See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='corridor' xml:lang='en'/>
       <term dc:source='Darwin Core' dc:title='koridor' xml:lang='cs'/>
@@ -868,8 +868,8 @@
     dc:subject='http://rs.tdwg.org/dwcpw/values/p051'
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
-    dc:description='Organisms were brought to new area with the specific intention of keeping them alive in the new region, regardless of whether they were intended to be cultivated or released into the wild.'
-    comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    dc:description='Organisms were brought to a new area with the specific intention of keeping them alive in the new region, regardless of whether they were intended to be cultivated or released into the wild.'
+    comments='See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='intentional' xml:lang='en'/>
       <term dc:source='Darwin Core' dc:title='záměrný' xml:lang='cs'/>

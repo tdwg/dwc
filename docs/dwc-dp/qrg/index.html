@@ -2756,7 +2756,7 @@ toc: true
     <tr><td>Namespace</td><td>dwc</td></tr>
     <tr><td>Table</td><td><a href="#Occurrence">Occurrence</a></td></tr>
     <tr><td>Description</td><td>A string representing the classification as it appeared in the original record.</td></tr>
-    <tr><td>Notes</td><td>This term is meant to allow the capture of an unaltered original identification/determination, including identification qualifiers, hybrid formulas, uncertainties, etc. This term is meant to be used in addition to dwc:geologicalMaterialName or dwc:scientificName (and dwc:identificationQualifier etc.), not instead of it.</td></tr>
+    <tr><td>Notes</td><td>This term is meant to allow the capture of an unaltered original identification/determination, including identification qualifiers, hybrid formulas, uncertainties, etc. This term is meant to be used in addition to dwc:geologicalMaterialNames or dwc:scientificName (and dwc:identificationQualifier etc.), not instead of it.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item">`Peromyscus sp.`</li><li class="list-group-item">`Ministrymon sp. nov. 1`</li><li class="list-group-item">`Anser anser × Branta canadensis`</li><li class="list-group-item">`Pachyporidae?`, `Potentilla × pantotricha Soják`</li><li class="list-group-item">`Aconitum pilipes × A. variegatum</li><li class="list-group-item">`Lepomis auritus x cyanellus`</li></ul></td></tr>
     <tr><td>Type</td><td>string</td></tr>
     <tr><td>dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimIdentification" target="_blank">http://rs.tdwg.org/dwc/terms/verbatimIdentification</a></td></tr>
@@ -3583,7 +3583,7 @@ toc: true
     <tr><td>Title (Label)</td><td>Total Area Sampled Value</td></tr>
     <tr><td>Namespace</td><td>eco</td></tr>
     <tr><td>Table</td><td><a href="#Survey">Survey</a></td></tr>
-    <tr><td>Description</td><td>A numeric value for the total area, volume or distance surveyed during the dwc:Survey.</td></tr>
+    <tr><td>Description</td><td>A numeric value for the total area, volume or distance surveyed during the eco:Survey.</td></tr>
     <tr><td>Notes</td><td>This value is always less than or equal to the eco:geospatialScopeAreaValue because it reflects the portion of the geospatialScope that was actually sampled. An eco:totalAreaSampledValue must have a corresponding eco:totalAreaSampledUnit.</td></tr>
     <tr><td>Examples</td><td>`0.8`</td></tr>
     <tr><td>Type</td><td>number</td></tr>
@@ -4599,7 +4599,7 @@ toc: true
 <tr><td class="label">media_fk</td><td>based on</td><td>media</td><td>media_pk</td><td>foreign key</td><td>Yes</td><td>No</td></tr>
 <tr><td class="label">nucleotideAnalysis_fk</td><td>based on</td><td>nucleotide-analysis</td><td>nucleotideAnalysis_pk</td><td>foreign key</td><td>Yes</td><td>No</td></tr>
 <tr><td class="label">nucleotideSequence_fk</td><td>based on</td><td>nucleotide-sequence</td><td>nucleotideSequence_pk</td><td>foreign key</td><td>Yes</td><td>No</td></tr>
-<tr><td class="label">occurrence_fk</td><td>of an</td><td>occurrence</td><td>occurrence_pk</td><td>foreign key</td><td>Yes</td><td>No</td></tr>
+<tr><td class="label">occurrence_fk</td><td>based on</td><td>occurrence</td><td>occurrence_pk</td><td>foreign key</td><td>Yes</td><td>No</td></tr>
 <tr><td class="label">organism_fk</td><td>of an</td><td>organism</td><td>organism_pk</td><td>foreign key</td><td>Yes</td><td>No</td></tr>
 <tr><td class="label">identifiedBy_fk</td><td>identified by</td><td>agent</td><td>agent_pk</td><td>foreign key</td><td>Yes</td><td>No</td></tr>
 <tr><td class="label">identifiedByID</td><td>identified by</td><td>agent</td><td>agentID</td><td>weak foreign key</td><td>No</td><td>No</td></tr>
@@ -4776,7 +4776,7 @@ toc: true
     <tr><td>Namespace</td><td>dwc</td></tr>
     <tr><td>Table</td><td><a href="#Identification">Identification</a></td></tr>
     <tr><td>Description</td><td>A string representing the classification as it appeared in the original record.</td></tr>
-    <tr><td>Notes</td><td>This term is meant to allow the capture of an unaltered original identification/determination, including identification qualifiers, hybrid formulas, uncertainties, etc. This term is meant to be used in addition to dwc:geologicalMaterialName or dwc:scientificName (and dwc:identificationQualifier etc.), not instead of it.</td></tr>
+    <tr><td>Notes</td><td>This term is meant to allow the capture of an unaltered original identification/determination, including identification qualifiers, hybrid formulas, uncertainties, etc. This term is meant to be used in addition to dwc:geologicalMaterialNames or dwc:scientificName (and dwc:identificationQualifier etc.), not instead of it.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item">`Peromyscus sp.`</li><li class="list-group-item">`Ministrymon sp. nov. 1`</li><li class="list-group-item">`Anser anser × Branta canadensis`</li><li class="list-group-item">`Pachyporidae?`</li><li class="list-group-item">`Potentilla × pantotricha Soják`</li><li class="list-group-item">`Aconitum pilipes × A. variegatum`</li><li class="list-group-item">`Lepomis auritus x cyanellus`</li></ul></td></tr>
     <tr><td>Type</td><td>string</td></tr>
     <tr><td>dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimIdentification" target="_blank">http://rs.tdwg.org/dwc/terms/verbatimIdentification</a></td></tr>
@@ -6178,8 +6178,8 @@ toc: true
     <tr><td>Title (Label)</td><td>Material Entity Type</td></tr>
     <tr><td>Namespace</td><td>dwc</td></tr>
     <tr><td>Table</td><td><a href="#Material">Material</a></td></tr>
-    <tr><td>Description</td><td>A more generic classification of a dwc:MaterialEntity than dwc:preparations but less broad than dwc:materialCategory.</td></tr>
-    <tr><td>Notes</td><td>A more generic classification of a dwc:MaterialEntity than dwc:preparations. Recommended best practice is to use a controlled vocabulary. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Description</td><td>A more generic classification of a dwc:MaterialEntity than dwc:preparations but less broad than dwc:materialEntityCategory.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item">`Macro-object`</li><li class="list-group-item">`Micro-object`</li><li class="list-group-item">`Oversized object`</li><li class="list-group-item">`Cut/polished gemstone`</li><li class="list-group-item">`Compound Specimen`</li><li class="list-group-item">`Core`</li><li class="list-group-item">`Mixed Materials`</li><li class="list-group-item">`Environmental sample`</li><li class="list-group-item">`Microscope slide`</li><li class="list-group-item">`Spore print`</li><li class="list-group-item">`Macrofossil`</li><li class="list-group-item">`Mesofossil`</li><li class="list-group-item">`Microfossil`</li><li class="list-group-item">`Pinned object/specimen`</li><li class="list-group-item">`Taxidermy mount`</li><li class="list-group-item">`Blood sampling cards`</li><li class="list-group-item">`Oversized fossil`</li><li class="list-group-item">`Anthropogenic Artifact`</li></ul></td></tr>
     <tr><td>Type</td><td>string</td></tr>
     <tr><td>dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/materialEntityType" target="_blank">http://rs.tdwg.org/dwc/terms/materialEntityType</a></td></tr>
@@ -6665,7 +6665,7 @@ toc: true
     <tr><td>Namespace</td><td>dwc</td></tr>
     <tr><td>Table</td><td><a href="#Material">Material</a></td></tr>
     <tr><td>Description</td><td>A string representing the classification as it appeared in the original record.</td></tr>
-    <tr><td>Notes</td><td>This term is meant to allow the capture of an unaltered original identification/determination, including identification qualifiers, hybrid formulas, uncertainties, etc. This term is meant to be used in addition to dwc:geologicalMaterialName or dwc:scientificName (and dwc:identificationQualifier etc.), not instead of it.</td></tr>
+    <tr><td>Notes</td><td>This term is meant to allow the capture of an unaltered original identification/determination, including identification qualifiers, hybrid formulas, uncertainties, etc. This term is meant to be used in addition to dwc:geologicalMaterialNames or dwc:scientificName (and dwc:identificationQualifier etc.), not instead of it.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item">`Peromyscus sp.`</li><li class="list-group-item">`Ministrymon sp. nov. 1`</li><li class="list-group-item">`Anser anser × Branta canadensis`</li><li class="list-group-item">`Pachyporidae?`, `Potentilla × pantotricha Soják`</li><li class="list-group-item">`Aconitum pilipes × A. variegatum</li><li class="list-group-item">`Lepomis auritus x cyanellus`</li></ul></td></tr>
     <tr><td>Type</td><td>string</td></tr>
     <tr><td>dcterms:isVersionOf</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimIdentification" target="_blank">http://rs.tdwg.org/dwc/terms/verbatimIdentification</a></td></tr>

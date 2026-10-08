@@ -2117,7 +2117,7 @@ This category contains terms that are generic in that they might apply to any ty
   <tbody>
     <tr class="table-secondary"><th colspan="2">geologicEvent</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/geologicEvent">http://rs.tdwg.org/dwc/terms/geologicEvent</a></td></tr>
-    <tr><td>Definition</td><td>A name of an identifiable event during which one or more geologic processes acted to create or modify one or more dwc:GeologicalMaterials. </td></tr>
+    <tr><td>Definition</td><td>A name of an identifiable event during which one or more geologic processes acted to create or modify one or more dwc:GeologicalMaterials.</td></tr>
     <tr><td>Notes</td><td>This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Sevier orogeny</code></li><li class="list-group-item"><code>Alleghanian orogeny</code></li><li class="list-group-item"><code>Alpine orogeny</code></li><li class="list-group-item"><code>Variscan orogeny</code></li><li class="list-group-item"><code>Vredefort impact</code></li></ul></td></tr>
   </tbody>
@@ -2227,7 +2227,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">verbatimIdentification</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimIdentification">http://rs.tdwg.org/dwc/terms/verbatimIdentification</a></td></tr>
     <tr><td>Definition</td><td>A string representing the classification as it appeared in the original record.</td></tr>
-    <tr><td>Notes</td><td>This term is meant to allow the capture of an unaltered original identification/determination, including identification qualifiers, hybrid formulas, uncertainties, etc. This term is meant to be used in addition to dwc:geologicalMaterialName or dwc:scientificName (and dwc:identificationQualifier etc.), not instead of it.</td></tr>
+    <tr><td>Notes</td><td>This term is meant to allow the capture of an unaltered original identification/determination, including identification qualifiers, hybrid formulas, uncertainties, etc. This term is meant to be used in addition to dwc:geologicalMaterialNames or dwc:scientificName (and dwc:identificationQualifier etc.), not instead of it.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Peromyscus sp.</code></li><li class="list-group-item"><code>Ministrymon sp. nov. 1</code></li><li class="list-group-item"><code>Anser anser × Branta canadensis</code></li><li class="list-group-item"><code>Pachyporidae?</code></li><li class="list-group-item"><code>Potentilla × pantotricha Soják</code></li><li class="list-group-item"><code>Aconitum pilipes × A. variegatum</code></li><li class="list-group-item"><code>Lepomis auritus x cyanellus</code></li></ul></td></tr>
   </tbody>
 </table>
@@ -2511,9 +2511,9 @@ This category contains terms that are generic in that they might apply to any ty
   <tbody>
     <tr class="table-secondary"><th colspan="2">materialEntityType</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/materialEntityType">http://rs.tdwg.org/dwc/terms/materialEntityType</a></td></tr>
-    <tr><td>Definition</td><td>A more generic classification of a dwc:MaterialEntity than dwc:preparations but less broad than dwc:materialCategory.</td></tr>
+    <tr><td>Definition</td><td>A more generic classification of a dwc:MaterialEntity than dwc:preparations but less broad than dwc:materialEntityCategory.</td></tr>
     <tr><td>Notes</td><td>A more generic classification of a dwc:MaterialEntity than dwc:preparations. Recommended best practice is to use a controlled vocabulary. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
-    <tr><td>Examples</td><td></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Macro-object</code></li><li class="list-group-item"><code>Micro-object</code></li><li class="list-group-item"><code>Oversized object</code></li><li class="list-group-item"><code>Cut/polished gemstone</code></li><li class="list-group-item"><code>Compound Specimen</code></li><li class="list-group-item"><code>Core</code></li><li class="list-group-item"><code>Mixed Materials</code></li><li class="list-group-item"><code>Environmental sample</code></li><li class="list-group-item"><code>Microscope slide</code></li><li class="list-group-item"><code>Spore print</code></li><li class="list-group-item"><code>Macrofossil</code></li><li class="list-group-item"><code>Mesofossil</code></li><li class="list-group-item"><code>Microfossil</code></li><li class="list-group-item"><code>Pinned object/specimen</code></li><li class="list-group-item"><code>Taxidermy mount</code></li><li class="list-group-item"><code>Blood sampling cards</code></li><li class="list-group-item"><code>Oversized fossil</code></li><li class="list-group-item"><code>Anthropogenic Artifact</code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">
@@ -2681,7 +2681,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">objectQuantity</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/objectQuantity">http://rs.tdwg.org/dwc/terms/objectQuantity</a></td></tr>
     <tr><td>Definition</td><td>A number or enumeration value for the quantity of differentiable dwc:MaterialEntities comprising this dwc:MaterialEntity.</td></tr>
-    <tr><td>Notes</td><td>An dwc:objectQuantity must have a corresponding dwc:objectQuantityType.</td></tr>
+    <tr><td>Notes</td><td>A dwc:objectQuantity must have a corresponding dwc:objectQuantityType.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>27</code> (objectQuantity) with <code>individuals</code> (objectQuantityType)</li><li class="list-group-item"><code>many</code> (objectQuantity) with <code>individuals</code> (objectQuantityType)</li><li class="list-group-item"><code>3</code> (objectQuantity) with <code>legs</code> (objectQuantityType)</li></ul></td></tr>
   </tbody>
 </table>
@@ -2694,7 +2694,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">objectQuantityType</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/objectQuantityType">http://rs.tdwg.org/dwc/terms/objectQuantityType</a></td></tr>
     <tr><td>Definition</td><td>The type of quantification system used for the quantity of dwc:MaterialEntities.</td></tr>
-    <tr><td>Notes</td><td>An dwc:objectQuantityType must have a corresponding dwc:objectQuantity. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Notes</td><td>A dwc:objectQuantityType must have a corresponding dwc:objectQuantity. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>27</code> (objectQuantity) with <code>individuals</code> (objectQuantityType)</li><li class="list-group-item"><code>many</code> (objectQuantity) with <code>individuals</code> (objectQuantityType)</li><li class="list-group-item"><code>3</code> (objectQuantity) with <code>legs</code> (objectQuantityType)</li></ul></td></tr>
   </tbody>
 </table>
@@ -4397,7 +4397,7 @@ This category contains terms that are generic in that they might apply to any ty
   <tbody>
     <tr class="table-secondary"><th colspan="2">totalAreaSampledValue</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/totalAreaSampledValue">http://rs.tdwg.org/eco/terms/totalAreaSampledValue</a></td></tr>
-    <tr><td>Definition</td><td>A numeric value for the total area, volume or distance surveyed during the dwc:Survey.</td></tr>
+    <tr><td>Definition</td><td>A numeric value for the total area, volume or distance surveyed during the eco:Survey.</td></tr>
     <tr><td>Notes</td><td>This value is always less than or equal to the eco:geospatialScopeAreaValue because it reflects the portion of the geospatialScope that was actually sampled. An eco:totalAreaSampledValue must have a corresponding eco:totalAreaSampledUnit.</td></tr>
     <tr><td>Examples</td><td><code>0.8</code></td></tr>
   </tbody>
@@ -4606,7 +4606,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">isLifeStageScopeFullyReported</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/isLifeStageScopeFullyReported">http://rs.tdwg.org/eco/terms/isLifeStageScopeFullyReported</a></td></tr>
     <tr><td>Definition</td><td>Every dwc:Occurrence that was included within the life stage scope, and was detected during an eco:Survey, was reported.</td></tr>
-    <tr><td>Notes</td><td>This term is only relevant if an dwc:Survey used restricted search or open search methods. If all dwc:Occurrences included within the life stage scope and detected during an eco:Survey were reported, the value should be 'true'. Life stage scope is based on the combination of eco:targetLifeStageScope and eco:excludedLifeStageScope. Recommended best practice is to follow the TDWG Boolean Controlled Vocabulary <a href="http://rs.tdwg.org/tag/doc/boolean/">http://rs.tdwg.org/tag/doc/boolean/</a>.</td></tr>
+    <tr><td>Notes</td><td>This term is only relevant if an eco:Survey used restricted search or open search methods. If all dwc:Occurrences included within the life stage scope and detected during an eco:Survey were reported, the value should be 'true'. Life stage scope is based on the combination of eco:targetLifeStageScope and eco:excludedLifeStageScope. Recommended best practice is to follow the TDWG Boolean Controlled Vocabulary <a href="http://rs.tdwg.org/tag/doc/boolean/">http://rs.tdwg.org/tag/doc/boolean/</a>.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>true</code></li><li class="list-group-item"><code>false</code></li></ul></td></tr>
   </tbody>
 </table>
@@ -4645,7 +4645,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">isDegreeOfEstablishmentScopeFullyReported</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/isDegreeOfEstablishmentScopeFullyReported">http://rs.tdwg.org/eco/terms/isDegreeOfEstablishmentScopeFullyReported</a></td></tr>
     <tr><td>Definition</td><td>Every dwc:Occurrence that was included within the degree of establishment scope, and was detected during an eco:Survey, was reported.</td></tr>
-    <tr><td>Notes</td><td>This term is only relevant if an eco:Survey used restricted search or open search methods. If all dwc:Occurrence included within the degree of establishment scope and detected during an dwc:Survey were reported, the value should be 'true'. Degree of establishment scope is based on the combination of eco:targetDegreeOfEstablishmentScope and eco:excludedDegreeOfEstablishmentScope. Recommended best practice is to follow the TDWG Boolean Controlled Vocabulary <a href="http://rs.tdwg.org/tag/doc/boolean/">http://rs.tdwg.org/tag/doc/boolean/</a>.</td></tr>
+    <tr><td>Notes</td><td>This term is only relevant if an eco:Survey used restricted search or open search methods. If all dwc:Occurrences included within the degree of establishment scope and detected during an eco:Survey were reported, the value should be 'true'. Degree of establishment scope is based on the combination of eco:targetDegreeOfEstablishmentScope and eco:excludedDegreeOfEstablishmentScope. Recommended best practice is to follow the TDWG Boolean Controlled Vocabulary <a href="http://rs.tdwg.org/tag/doc/boolean/">http://rs.tdwg.org/tag/doc/boolean/</a>.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>true</code></li><li class="list-group-item"><code>false</code></li></ul></td></tr>
   </tbody>
 </table>
@@ -4905,7 +4905,7 @@ This category contains terms that are generic in that they might apply to any ty
     <tr class="table-secondary"><th colspan="2">samplingPerformedByID</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/samplingPerformedByID">http://rs.tdwg.org/eco/terms/samplingPerformedByID</a></td></tr>
     <tr><td>Definition</td><td>An identifier for a dcterms:Agent responsible for sampling.</td></tr>
-    <tr><td>Notes</td><td>The sampling eco:Survey could be at any level of hierarchy. In the case of a higher level (parent) eco:Survey, include all the organizations or people involved in the child eco:Surveys that contributed to the parent eco:Survey. Recommended best practice is to separate multiple values in a list with space vertical bar space (<code> | </code>). </td></tr>
+    <tr><td>Notes</td><td>The sampling eco:Survey could be at any level of hierarchy. In the case of a higher level (parent) eco:Survey, include all the organizations or people involved in the child eco:Surveys that contributed to the parent eco:Survey. Recommended best practice is to separate multiple values in a list with space vertical bar space (<code> | </code>).</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="https://orcid.org/0000-0003-0243-2379">https://orcid.org/0000-0003-0243-2379</a></code></li><li class="list-group-item"><code> <a href="http://orcid.org/0000-0002-0786-4069">http://orcid.org/0000-0002-0786-4069</a> | <a href="http://orcid.org/0000-0003-4639-823X">http://orcid.org/0000-0003-4639-823X</a></code></li></ul></td></tr>
   </tbody>
 </table>
@@ -6453,7 +6453,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
   <tbody>
     <tr class="table-secondary"><th colspan="2">geologicEvent</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/geologicEvent">http://rs.tdwg.org/dwc/iri/geologicEvent</a></td></tr>
-    <tr><td>Definition</td><td>A name of an identifiable event during which one or more geologic processes acted to create or modify one or more dwc:GeologicalMaterials. </td></tr>
+    <tr><td>Definition</td><td>A name of an identifiable event during which one or more geologic processes acted to create or modify one or more dwc:GeologicalMaterials.</td></tr>
     <tr><td>Notes</td><td>Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
@@ -6758,8 +6758,8 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
   <tbody>
     <tr class="table-secondary"><th colspan="2">materialEntityType</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/materialEntityType">http://rs.tdwg.org/dwc/iri/materialEntityType</a></td></tr>
-    <tr><td>Definition</td><td>A more generic classification of a dwc:MaterialEntity than dwc:preparations but less broad than dwc:materialCategory.</td></tr>
-    <tr><td>Notes</td><td>A more generic classification of a dwc:MaterialEntity than dwc:preparations. Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Definition</td><td>A more generic classification of a dwc:MaterialEntity than dwc:preparations but less broad than dwc:materialEntityCategory.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
@@ -6892,7 +6892,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
   <tbody>
     <tr class="table-secondary"><th colspan="2">nonTargetTaxa</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/nonTargetTaxa">http://rs.tdwg.org/eco/iri/nonTargetTaxa</a></td></tr>
-    <tr><td>Definition</td><td>A taxon reported during the dwc:Survey that is outside of the target taxonomic scope (the combination of ecoiri:targetTaxonomicScope and ecoiri:excludedTaxonomicScope).</td></tr>
+    <tr><td>Definition</td><td>A taxon reported during the eco:Survey that is outside of the target taxonomic scope (the combination of ecoiri:targetTaxonomicScope and ecoiri:excludedTaxonomicScope).</td></tr>
     <tr><td>Notes</td><td>This term is meant to allow a taxon that is considered outside of the taxonomic scope and yet was reported in the dataset to be shared. This term is relevant only if a target taxonomic scope is declared and eco:hasNonTargetTaxa is ‘true’. Taxonomic scope is based on the combination of ecoiri:targetTaxonomicScope and ecoiri:excludedTaxonomicScope. Non-target taxa (in some disciplines called “bycatch”) can be reported at any taxonomic level. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
@@ -7340,8 +7340,8 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr class="table-secondary"><th colspan="2">taxonCompletenessReported</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/taxonCompletenessReported">http://rs.tdwg.org/eco/iri/taxonCompletenessReported</a></td></tr>
     <tr><td>Definition</td><td>Statement about whether the taxonomic completeness of an eco:Survey was assessed.</td></tr>
-    <tr><td>Notes</td><td>This term is meant to alert users that the inventory was conducted in such a way that all of the target taxa (the combination of ecoiri:targetTaxonomicScope and ecoiri:excludedTaxonomicScope) should have been detectable if they were present during the dwc:Event. This term can provide data users with a qualitative measure of how comprehensively an area has been surveyed, which assists in interpreting species populations, areas of occupancy, inferring species absences, etc. This term is only relevant if the dwc:Event used restricted search or open search methods. If taxonomic completeness was assessed, the methods used or an explanation of the basis of the completeness should covered by ecoiri:taxonCompletenessProtocols. Recommended best practice is to use an IRI from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/tcr/">http://rs.tdwg.org/dwc/doc/tcr/</a>. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="http://rs.tdwg.org/ecotcr/values/tcr01">http://rs.tdwg.org/ecotcr/values/tcr01</a></code></li><li class="list-group-item"><code><a href="http://rs.tdwg.org/ecotcr/values/tcr02">http://rs.tdwg.org/ecotcr/values/tcr02</a></code></li></ul></td></tr>
+    <tr><td>Notes</td><td>This term is meant to alert users that the inventory was conducted in such a way that all of the target taxa (the combination of ecoiri:targetTaxonomicScope and ecoiri:excludedTaxonomicScope) should have been detectable if they were present during the eco:Survey. This term can provide data users with a qualitative measure of how comprehensively an area has been surveyed, which assists in interpreting species populations, areas of occupancy, inferring species absences, etc. This term is only relevant if the eco:Survey used restricted search or open search methods. If taxonomic completeness was assessed, the methods used or an explanation of the basis of the completeness should be covered by ecoiri:taxonCompletenessProtocols. Recommended best practice is to use an IRI from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/tcr/">http://rs.tdwg.org/dwc/doc/tcr/</a>. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="http://rs.tdwg.org/ecotcr/values/tcr00">http://rs.tdwg.org/ecotcr/values/tcr00</a></code></li><li class="list-group-item"><code><a href="http://rs.tdwg.org/ecotcr/values/tcr01">http://rs.tdwg.org/ecotcr/values/tcr01</a></code></li><li class="list-group-item"><code><a href="http://rs.tdwg.org/ecotcr/values/tcr02">http://rs.tdwg.org/ecotcr/values/tcr02</a></code></li></ul></td></tr>
   </tbody>
 </table>
 <p class="invisible">

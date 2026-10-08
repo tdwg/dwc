@@ -18,7 +18,7 @@
     dc:subject='http://rs.tdwg.org/ecotcr/values/tcr00'
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2024-02-28'
-    dc:description='Taxonomic completeness was not assessed or reported for the dwc:Event.'>
+    dc:description='Taxonomic completeness was not assessed or reported for the eco:Survey.'>
     <preferred>
     </preferred>
   </concept>
@@ -29,7 +29,7 @@
     dc:subject='http://rs.tdwg.org/ecotcr/values/tcr01'
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2024-02-28'
-    dc:description='Taxonomic completeness was assessed for the dwc:Event, and it was determined to be complete.'>
+    dc:description='Taxonomic completeness was assessed for the eco:Survey, and it was determined to be complete.'>
     <preferred>
     </preferred>
   </concept>
@@ -40,7 +40,7 @@
     dc:subject='http://rs.tdwg.org/ecotcr/values/tcr02'
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2024-02-28'
-    dc:description='Taxonomic completeness was assessed for the dwc:Event, and it was determined to be incomplete.'>
+    dc:description='Taxonomic completeness was assessed for the eco:Survey, and it was determined to be incomplete.'>
     <preferred>
     </preferred>
   </concept>

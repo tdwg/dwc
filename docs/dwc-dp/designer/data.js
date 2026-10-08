@@ -4990,7 +4990,7 @@ window.DWC_DP_DESIGNER_DATA = {
           "name": "verbatimIdentification",
           "title": "Verbatim Identification",
           "description": "A string representing the classification as it appeared in the original record.",
-          "notes": "This term is meant to allow the capture of an unaltered original identification/determination, including identification qualifiers, hybrid formulas, uncertainties, etc. This term is meant to be used in addition to dwc:geologicalMaterialName or dwc:scientificName (and dwc:identificationQualifier etc.), not instead of it.",
+          "notes": "This term is meant to allow the capture of an unaltered original identification/determination, including identification qualifiers, hybrid formulas, uncertainties, etc. This term is meant to be used in addition to dwc:geologicalMaterialNames or dwc:scientificName (and dwc:identificationQualifier etc.), not instead of it.",
           "examples": "`Peromyscus sp.`; `Ministrymon sp. nov. 1`; `Anser anser × Branta canadensis`; `Pachyporidae?`; `Potentilla × pantotricha Soják`; `Aconitum pilipes × A. variegatum`; `Lepomis auritus x cyanellus`",
           "type": "string",
           "format": "default",
@@ -5524,7 +5524,7 @@ window.DWC_DP_DESIGNER_DATA = {
         },
         {
           "fields": "occurrence_fk",
-          "predicate": "of an",
+          "predicate": "based on",
           "reference": {
             "resource": "occurrence",
             "fields": "occurrence_pk"
@@ -6308,8 +6308,8 @@ window.DWC_DP_DESIGNER_DATA = {
         {
           "name": "materialEntityType",
           "title": "Material Entity Type",
-          "description": "A more generic classification of a dwc:MaterialEntity than dwc:preparations but less broad than dwc:materialCategory.",
-          "notes": "A more generic classification of a dwc:MaterialEntity than dwc:preparations. Recommended best practice is to use a controlled vocabulary. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.",
+          "description": "A more generic classification of a dwc:MaterialEntity than dwc:preparations but less broad than dwc:materialEntityCategory.",
+          "notes": "Recommended best practice is to use a controlled vocabulary. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.",
           "examples": "`Macro-object`; `Micro-object`; `Oversized object`; `Cut/polished gemstone`; `Compound Specimen`; `Core`; `Mixed Materials`; `Environmental sample`; `Microscope slide`; `Spore print`; `Macrofossil`; `Mesofossil`; `Microfossil`; `Pinned object/specimen`; `Taxidermy mount`; `Blood sampling cards`; `Oversized fossil`; `Anthropogenic Artifact`",
           "type": "string",
           "format": "default",
@@ -6666,7 +6666,7 @@ window.DWC_DP_DESIGNER_DATA = {
           "name": "verbatimIdentification",
           "title": "Verbatim Identification",
           "description": "A string representing the classification as it appeared in the original record.",
-          "notes": "This term is meant to allow the capture of an unaltered original identification/determination, including identification qualifiers, hybrid formulas, uncertainties, etc. This term is meant to be used in addition to dwc:geologicalMaterialName or dwc:scientificName (and dwc:identificationQualifier etc.), not instead of it.",
+          "notes": "This term is meant to allow the capture of an unaltered original identification/determination, including identification qualifiers, hybrid formulas, uncertainties, etc. This term is meant to be used in addition to dwc:geologicalMaterialNames or dwc:scientificName (and dwc:identificationQualifier etc.), not instead of it.",
           "examples": "`Peromyscus sp.`; `Ministrymon sp. nov. 1`; `Anser anser × Branta canadensis`; `Pachyporidae?`, `Potentilla × pantotricha Soják`; `Aconitum pilipes × A. variegatum; `Lepomis auritus x cyanellus`",
           "type": "string",
           "format": "default",
@@ -12683,7 +12683,7 @@ window.DWC_DP_DESIGNER_DATA = {
           "name": "verbatimIdentification",
           "title": "Verbatim Identification",
           "description": "A string representing the classification as it appeared in the original record.",
-          "notes": "This term is meant to allow the capture of an unaltered original identification/determination, including identification qualifiers, hybrid formulas, uncertainties, etc. This term is meant to be used in addition to dwc:geologicalMaterialName or dwc:scientificName (and dwc:identificationQualifier etc.), not instead of it.",
+          "notes": "This term is meant to allow the capture of an unaltered original identification/determination, including identification qualifiers, hybrid formulas, uncertainties, etc. This term is meant to be used in addition to dwc:geologicalMaterialNames or dwc:scientificName (and dwc:identificationQualifier etc.), not instead of it.",
           "examples": "`Peromyscus sp.`; `Ministrymon sp. nov. 1`; `Anser anser × Branta canadensis`; `Pachyporidae?`, `Potentilla × pantotricha Soják`; `Aconitum pilipes × A. variegatum; `Lepomis auritus x cyanellus`",
           "type": "string",
           "format": "default",
@@ -16438,7 +16438,7 @@ window.DWC_DP_DESIGNER_DATA = {
         {
           "name": "totalAreaSampledValue",
           "title": "Total Area Sampled Value",
-          "description": "A numeric value for the total area, volume or distance surveyed during the dwc:Survey.",
+          "description": "A numeric value for the total area, volume or distance surveyed during the eco:Survey.",
           "notes": "This value is always less than or equal to the eco:geospatialScopeAreaValue because it reflects the portion of the geospatialScope that was actually sampled. An eco:totalAreaSampledValue must have a corresponding eco:totalAreaSampledUnit.",
           "examples": "`0.8`",
           "type": "number",

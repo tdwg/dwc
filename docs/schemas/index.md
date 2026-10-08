@@ -7,7 +7,7 @@ Date version issued
 : 2026-09-17
 
 Date created
-: 2026-08-15
+: 2026-09-17
 
 Part of TDWG Standard
 : <http://www.tdwg.org/standards/450>

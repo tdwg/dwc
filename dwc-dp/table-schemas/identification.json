@@ -156,7 +156,7 @@
       "name": "verbatimIdentification",
       "title": "Verbatim Identification",
       "description": "A string representing the classification as it appeared in the original record.",
-      "notes": "This term is meant to allow the capture of an unaltered original identification/determination, including identification qualifiers, hybrid formulas, uncertainties, etc. This term is meant to be used in addition to dwc:geologicalMaterialName or dwc:scientificName (and dwc:identificationQualifier etc.), not instead of it.",
+      "notes": "This term is meant to allow the capture of an unaltered original identification/determination, including identification qualifiers, hybrid formulas, uncertainties, etc. This term is meant to be used in addition to dwc:geologicalMaterialNames or dwc:scientificName (and dwc:identificationQualifier etc.), not instead of it.",
       "examples": "`Peromyscus sp.`; `Ministrymon sp. nov. 1`; `Anser anser × Branta canadensis`; `Pachyporidae?`; `Potentilla × pantotricha Soják`; `Aconitum pilipes × A. variegatum`; `Lepomis auritus x cyanellus`",
       "type": "string",
       "format": "default",
@@ -690,7 +690,7 @@
     },
     {
       "fields": "occurrence_fk",
-      "predicate": "of an",
+      "predicate": "based on",
       "reference": {
         "resource": "occurrence",
         "fields": "occurrence_pk"

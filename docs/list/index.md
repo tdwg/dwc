@@ -22,10 +22,10 @@ Previous version
 : <http://rs.tdwg.org/dwc/doc/list/2026-05-26>
 
 Abstract
-: Darwin Core is standard for transmitting information about biodiversity. This document lists all terms in namespaces currently in or borrowed by the vocabulary.
+: Darwin Core is a vocabulary standard for transmitting information about biodiversity. This document lists all terms currently used in the standard, whether from the Darwin Core vocabulary, other TDWG vocabularies, or vocabularies external to TDWG.
 
 Contributors
-: [John Wieczorek](https://orcid.org/0000-0003-1144-0290) ([VertNet](http://www.wikidata.org/entity/Q98382028)), [Peter Desmet](https://orcid.org/0000-0002-8442-8025) ([Instituut voor Natuur- en Bosonderzoek (INBO)](http://www.wikidata.org/entity/Q7315097)), [Steve Baskauf](https://orcid.org/0000-0003-4365-3135) ([Vanderbilt University Libraries](http://www.wikidata.org/entity/Q16849893)), [Tim Robertson](https://orcid.org/0000-0001-6215-3617) ([Global Biodiversity Information Facility](http://www.wikidata.org/entity/Q1531570)), [Markus Döring](https://orcid.org/0000-0001-7757-1889) ([Global Biodiversity Information Facility](http://www.wikidata.org/entity/Q1531570)), [Quentin Groom](https://orcid.org/0000-0002-0596-5376) ([Botanic Garden Meise](http://www.wikidata.org/entity/Q3052500)), [Stijn Van Hoey](https://orcid.org/0000-0001-6413-3185) ([Instituut voor Natuur- en Bosonderzoek (INBO)](http://www.wikidata.org/entity/Q7315097)), [David Bloom](https://orcid.org/0000-0003-1273-1807) ([VertNet](http://www.wikidata.org/entity/Q98382028)), [Paula Zermoglio](https://orcid.org/0000-0002-6056-5084) ([Instituto de Investigaciones en Recursos Naturales, Agroecología y Desarrollo Rural (IRNAD), UNRN-CONICET](http://www.wikidata.org/entity/Q6156591)), [Robert Guralnick](https://orcid.org/0000-0001-6682-1504) ([University of Florida, Florida Museum of Natural History](http://www.wikidata.org/entity/Q501758)), [John Deck](https://orcid.org/0000-0002-5905-1617) ([Genomic Biodiversity Working Group](http://www.wikidata.org/entity/Q98382041)), [Gail Kampmeier](https://orcid.org/0000-0002-5178-4170) ([Illinois Natural History Survey](http://www.wikidata.org/entity/Q5999587)), [Dave Vieglais](https://orcid.org/0000-0002-6513-4996) ([KU Natural History Museum](http://www.wikidata.org/entity/Q1111807)), [Renato De Giovanni](https://orcid.org/0000-0002-7104-7266) ([Centro de Referência em Informação Ambiental](http://www.wikidata.org/entity/Q29168927)), [Campbell Webb](https://orcid.org/0000-0003-1031-3249) ([TDWG RDF/OWL Task Group](http://www.wikidata.org/entity/Q4914768)), [Paul J. Morris](http://purl.oclc.org/net/edu.harvard.huh/guid/uuid/5e51de22-d841-4c47-b0c4-d5ad0bd03035) ([Harvard University Herbaria/Museum of Comparative Zoölogy](http://www.wikidata.org/entity/Q51926077)), [Mark Schildhauer](https://orcid.org/0000-0003-0632-7576) ([National Center for Ecological Analysis and Synthesis](http://www.wikidata.org/entity/Q6971323)), [Sophia Ratcliffe](https://orcid.org/0000-0001-9284-7900) ([National Biodiversity Network Trust](http://www.wikidata.org/entity/Q6970988)), [Teresa J. Mayfield-Meyer](https://orcid.org/0000-0002-1970-7044) ([The University of New Mexico, Arctos](http://www.wikidata.org/entity/Q1190812)), [Christian Bölling](https://orcid.org/0000-0002-6544-1363) ([Museum für Naturkunde Berlin - Leibniz-Institut für Evolutions- und Biodiversitätsforschung](http://www.wikidata.org/entity/Q233098)), [Laura Brenskelle](https://orcid.org/0000-0002-9284-8871) ([University of Florida](http://www.wikidata.org/entity/Q501758)), [Kitty Emery](https://orcid.org/0000-0002-4031-1968) ([University of Florida](http://www.wikidata.org/entity/Q501758)), [Michelle LeFebvre](https://orcid.org/0000-0002-1741-9997) ([University of Florida](http://www.wikidata.org/entity/Q501758)), [Neill Wallis](https://orcid.org/0000-0003-4740-286X) ([University of Florida](http://www.wikidata.org/entity/Q501758)), [Marie Elise Lecoq](https://orcid.org/0000-0002-8481-9034) ([GBIF France](https://www.wikidata.org/wiki/Q1531570)), [Eric Kansa](https://orcid.org/0000-0001-5620-4764) ([Harvard University](http://www.wikidata.org/entity/Q13371)), [Sarah Kansa](https://orcid.org/0000-0001-7920-5321) ([The Alexandria Archive Institute](https://www.wikidata.org/wiki/Q30257865)), [Denné Reed](https://orcid.org/0000-0001-9325-3100) ([University of Texas at Austin](https://www.wikidata.org/wiki/Q49213)), [Yanina V. Sica](https://orcid.org/0000-0002-1720-0127) ([Yale University](http://www.wikidata.org/entity/Q49112)), [Kate Ingenloff](https://orcid.org/0000-0001-5942-9053) ([Global Biodiversity Information Facility (GBIF)](http://www.wikidata.org/entity/Q1531570)), [Yi-Ming Gan](https://orcid.org/0000-0001-7087-2646) ([Royal Belgian Institute of Natural Sciences](http://www.wikidata.org/entity/Q16665660)), [Peter Brenton](https://orcid.org/0000-0001-9730-8340) ([Atlas of Living Australia, CSIRO](http://www.wikidata.org/entity/Q16335177)), [Wesley M. Hochachka](https://orcid.org/0000-0002-0595-7827) ([Cornell Lab of Ornithology](http://www.wikidata.org/entity/Q2997535)), [Zachary R. Kachian](https://orcid.org/0000-0002-0500-0339) ([Keller Science Action Center, Field Museum of Natural History](http://www.wikidata.org/entity/Q1122595)), [Robert D. Stevenson](https://orcid.org/0000-0003-1617-5895) ([Department of Biology, University of Massachusetts Boston](http://www.wikidata.org/entity/Q15144)), [Anahita J. N. Kazem](https://orcid.org/0000-0003-2475-132X) ([German Centre for Integrative Biodiversity Research, Leipzig and Friedrich Schiller University, Jena](http://www.wikidata.org/entity/Q1206134)), [Dmitry Schigel](https://orcid.org/0000-0002-2919-1168) ([Global Biodiversity Information Facility (GBIF)](http://www.wikidata.org/entity/Q1531570)), [Tomomi Suwa](https://orcid.org/0000-0001-5010-3452) ([Keller Science Action Center, Field Museum of Natural History](http://www.wikidata.org/entity/Q1122595)), [Ramona L. Walls](https://orcid.org/0000-0001-8815-0078) ([University of Arizona](http://www.wikidata.org/entity/Q503419)), [Walter Jetz](https://orcid.org/0000-0002-1971-7277) ([Yale University](http://www.wikidata.org/entity/Q49112)), [Robert A. Morris](https://orcid.org/0000-0002-6992-9446) ([University of Massachusetts at Boston, USA](http://www.wikidata.org/entity/Q15144)), [Gregor Hagedorn](https://orcid.org/0000-0001-7023-7386) ([JKI, Federal Research Institute for Cultivated Plants, Berlin, Germany](http://www.wikidata.org/entity/Q832099)), [Annette Olson](https://orcid.org/0000-0002-0772-0022) ([American Association for the Advancement of Science](http://www.wikidata.org/entity/Q40358)), [Vijay Barve](https://orcid.org/0000-0002-4852-2567) ([]()), [Mihail Carausu](https://orcid.org/0000-0002-8234-0599) ([Danish Biodiversity Information Facility (DanBIF), Copenhagen, Denmark](http://www.wikidata.org/entity/Q1531570)), [Vishwas Chavan](https://orcid.org/0000-0002-3425-6499) ([Global Biodiversity Information Facility, Copenhagen, Denmark](http://www.wikidata.org/entity/Q1531570)), [José Cuadra](http://www.wikidata.org/entity/Q51883873) ([]()), [Chris Freeland](https://orcid.org/0000-0002-2541-5822) ([Missouri Botanical Garden, St. Louis, USA](http://www.wikidata.org/entity/Q1852803)), [Patrick Leary](https://orcid.org/0000-0001-5172-8577) ([]()), [Dimitry Mozzherin](https://orcid.org/0000-0003-1593-1417) ([Encyclopedia of Life, Woods Hole, USA](http://www.wikidata.org/entity/Q82486)), [Greg Riccardi](https://orcid.org/0000-0002-3850-9983) ([Florida State University, Tallahassee, USA](http://www.wikidata.org/entity/Q861548)), [Ivan Teage](https://orcid.org/0000-0003-4176-2274) ([]()), [Dan Stowell](https://orcid.org/0000-0001-8068-3769) ([Queen Mary University of London](http://www.wikidata.org/entity/Q195668)), [Edward Baker](https://orcid.org/0000-0002-5887-9543) ([Natural History Museum, London](http://www.wikidata.org/entity/Q309388)), [Richard Pyle](https://orcid.org/0000-0003-0768-1286) ([Bernice P. Bishop Museum, Honolulu, HI, USA](http://www.wikidata.org/entity/Q826520))
+: [John Wieczorek](https://orcid.org/0000-0003-1144-0290) ([Rauthiflor LLC, Global Biodiversity Information Facility](http://www.wikidata.org/entity/Q1531570)), [Peter Desmet](https://orcid.org/0000-0002-8442-8025) ([Instituut voor Natuur- en Bosonderzoek (INBO)](http://www.wikidata.org/entity/Q7315097)), [Steve Baskauf](https://orcid.org/0000-0003-4365-3135) ([Vanderbilt University Libraries](http://www.wikidata.org/entity/Q16849893)), [Tim Robertson](https://orcid.org/0000-0001-6215-3617) ([Global Biodiversity Information Facility](http://www.wikidata.org/entity/Q1531570)), [Markus Döring](https://orcid.org/0000-0001-7757-1889) ([Global Biodiversity Information Facility](http://www.wikidata.org/entity/Q1531570)), [Quentin Groom](https://orcid.org/0000-0002-0596-5376) ([Botanic Garden Meise](http://www.wikidata.org/entity/Q3052500)), [Stijn Van Hoey](https://orcid.org/0000-0001-6413-3185) ([Instituut voor Natuur- en Bosonderzoek (INBO)](http://www.wikidata.org/entity/Q7315097)), [David Bloom](https://orcid.org/0000-0003-1273-1807) ([VertNet](http://www.wikidata.org/entity/Q98382028)), [Paula F Zermoglio](https://orcid.org/0000-0002-6056-5084) ([Instituto de Investigaciones en Recursos Naturales, Agroecología y Desarrollo Rural (IRNAD, CONICET, Universidad Nacional de Río Negro)](https://www.wikidata.org/wiki/Q6978293)), [Robert Guralnick](https://orcid.org/0000-0001-6682-1504) ([University of Florida, Florida Museum of Natural History](http://www.wikidata.org/entity/Q501758)), [John Deck](https://orcid.org/0000-0002-5905-1617) ([Genomic Biodiversity Working Group](http://www.wikidata.org/entity/Q98382041)), [Gail Kampmeier](https://orcid.org/0000-0002-5178-4170) ([Illinois Natural History Survey](http://www.wikidata.org/entity/Q5999587)), [Dave Vieglais](https://orcid.org/0000-0002-6513-4996) ([KU Natural History Museum](http://www.wikidata.org/entity/Q1111807)), [Renato De Giovanni](https://orcid.org/0000-0002-7104-7266) ([Centro de Referência em Informação Ambiental](http://www.wikidata.org/entity/Q29168927)), [Campbell Webb](https://orcid.org/0000-0003-1031-3249) ([TDWG RDF/OWL Task Group](http://www.wikidata.org/entity/Q4914768)), [Paul J. Morris](http://purl.oclc.org/net/edu.harvard.huh/guid/uuid/5e51de22-d841-4c47-b0c4-d5ad0bd03035) ([Harvard University Herbaria/Museum of Comparative Zoölogy](http://www.wikidata.org/entity/Q51926077)), [Mark Schildhauer](https://orcid.org/0000-0003-0632-7576) ([National Center for Ecological Analysis and Synthesis](http://www.wikidata.org/entity/Q6971323)), [Sophia Ratcliffe](https://orcid.org/0000-0001-9284-7900) ([National Biodiversity Network Trust](http://www.wikidata.org/entity/Q6970988)), [Teresa J. Mayfield-Meyer](https://orcid.org/0000-0002-1970-7044) ([The University of New Mexico, Arctos](http://www.wikidata.org/entity/Q1190812)), [Christian Bölling](https://orcid.org/0000-0002-6544-1363) ([Museum für Naturkunde Berlin - Leibniz-Institut für Evolutions- und Biodiversitätsforschung](http://www.wikidata.org/entity/Q233098)), [Laura Brenskelle](https://orcid.org/0000-0002-9284-8871) ([University of Florida](http://www.wikidata.org/entity/Q501758)), [Kitty Emery](https://orcid.org/0000-0002-4031-1968) ([University of Florida](http://www.wikidata.org/entity/Q501758)), [Michelle LeFebvre](https://orcid.org/0000-0002-1741-9997) ([University of Florida](http://www.wikidata.org/entity/Q501758)), [Neill Wallis](https://orcid.org/0000-0003-4740-286X) ([University of Florida](http://www.wikidata.org/entity/Q501758)), [Marie Elise Lecoq](https://orcid.org/0000-0002-8481-9034) ([GBIF France](https://www.wikidata.org/wiki/Q1531570)), [Eric Kansa](https://orcid.org/0000-0001-5620-4764) ([Harvard University](http://www.wikidata.org/entity/Q13371)), [Sarah Kansa](https://orcid.org/0000-0001-7920-5321) ([The Alexandria Archive Institute](https://www.wikidata.org/wiki/Q30257865)), [Denné Reed](https://orcid.org/0000-0001-9325-3100) ([University of Texas at Austin](https://www.wikidata.org/wiki/Q49213)), [Yanina V. Sica](https://orcid.org/0000-0002-1720-0127) ([Yale University](http://www.wikidata.org/entity/Q49112)), [Kate Ingenloff](https://orcid.org/0000-0001-5942-9053) ([Global Biodiversity Information Facility (GBIF)](http://www.wikidata.org/entity/Q1531570)), [Yi-Ming Gan](https://orcid.org/0000-0001-7087-2646) ([Royal Belgian Institute of Natural Sciences](http://www.wikidata.org/entity/Q16665660)), [Peter Brenton](https://orcid.org/0000-0001-9730-8340) ([Atlas of Living Australia, CSIRO](http://www.wikidata.org/entity/Q16335177)), [Wesley M. Hochachka](https://orcid.org/0000-0002-0595-7827) ([Cornell Lab of Ornithology](http://www.wikidata.org/entity/Q2997535)), [Zachary R. Kachian](https://orcid.org/0000-0002-0500-0339) ([Keller Science Action Center, Field Museum of Natural History](http://www.wikidata.org/entity/Q1122595)), [Robert D. Stevenson](https://orcid.org/0000-0003-1617-5895) ([Department of Biology, University of Massachusetts Boston](http://www.wikidata.org/entity/Q15144)), [Anahita J. N. Kazem](https://orcid.org/0000-0003-2475-132X) ([German Centre for Integrative Biodiversity Research, Leipzig and Friedrich Schiller University, Jena](http://www.wikidata.org/entity/Q1206134)), [Dmitry Schigel](https://orcid.org/0000-0002-2919-1168) ([Global Biodiversity Information Facility (GBIF)](http://www.wikidata.org/entity/Q1531570)), [Tomomi Suwa](https://orcid.org/0000-0001-5010-3452) ([Keller Science Action Center, Field Museum of Natural History](http://www.wikidata.org/entity/Q1122595)), [Ramona L. Walls](https://orcid.org/0000-0001-8815-0078) ([University of Arizona](http://www.wikidata.org/entity/Q503419)), [Walter Jetz](https://orcid.org/0000-0002-1971-7277) ([Yale University](http://www.wikidata.org/entity/Q49112)), [Robert A. Morris](https://orcid.org/0000-0002-6992-9446) ([University of Massachusetts at Boston, USA](http://www.wikidata.org/entity/Q15144)), [Gregor Hagedorn](https://orcid.org/0000-0001-7023-7386) ([JKI, Federal Research Institute for Cultivated Plants, Berlin, Germany](http://www.wikidata.org/entity/Q832099)), [Annette Olson](https://orcid.org/0000-0002-0772-0022) ([American Association for the Advancement of Science](http://www.wikidata.org/entity/Q40358)), [Vijay Barve](https://orcid.org/0000-0002-4852-2567), [Mihail Carausu](https://orcid.org/0000-0002-8234-0599) ([Danish Biodiversity Information Facility (DanBIF), Copenhagen, Denmark](http://www.wikidata.org/entity/Q1531570)), [Vishwas Chavan](https://orcid.org/0000-0002-3425-6499) ([Global Biodiversity Information Facility, Copenhagen, Denmark](http://www.wikidata.org/entity/Q1531570)), [José Cuadra](http://www.wikidata.org/entity/Q51883873), [Chris Freeland](https://orcid.org/0000-0002-2541-5822) ([Missouri Botanical Garden, St. Louis, USA](http://www.wikidata.org/entity/Q1852803)), [Patrick Leary](https://orcid.org/0000-0001-5172-8577), [Dimitry Mozzherin](https://orcid.org/0000-0003-1593-1417) ([Encyclopedia of Life, Woods Hole, USA](http://www.wikidata.org/entity/Q82486)), [Greg Riccardi](https://orcid.org/0000-0002-3850-9983) ([Florida State University, Tallahassee, USA](http://www.wikidata.org/entity/Q861548)), [Ivan Teage](https://orcid.org/0000-0003-4176-2274), [Dan Stowell](https://orcid.org/0000-0001-8068-3769) ([Queen Mary University of London](http://www.wikidata.org/entity/Q195668)), [Edward Baker](https://orcid.org/0000-0002-5887-9543) ([Natural History Museum, London](http://www.wikidata.org/entity/Q309388)), [Richard Pyle](https://orcid.org/0000-0003-0768-1286) ([Bernice P. Bishop Museum, Honolulu, HI, USA](http://www.wikidata.org/entity/Q826520))
 
 Creator
 : Darwin Core Maintenance Group
@@ -36,9 +36,7 @@ Bibliographic citation
 
 ## 1 Introduction (Informative)
 
-This document contains terms that are part of the most recent version of the Darwin Core vocabulary (<http://rs.tdwg.org/version/dwc/2026-09-17>).
-
-This document provides a comprehensive list of terms, from multiple namespaces, that have ever been recommended for use in Darwin Core. The status of some terms, as noted in their metadata, is deprecated or superseded. Such terms should no longer be used. Terms from namespaces that contain only deprecated terms are not included in this document, but metadata about those terms can still be retrieved by dereferencing their IRIs.
+This document provides a comprehensive list of terms, from multiple namespaces, that are or have been recommended for use in Darwin Core as of this vocabulary version. The status of some terms, as noted in their metadata, is deprecated or superseded. Such terms should no longer be used. Terms from namespaces that contain only deprecated terms are not included in this document, but metadata about those terms can still be retrieved by dereferencing their IRIs.
 
 For a simplified list that contains only the currently recommended terms, see the [Darwin Core Quick Reference Guide](../terms/).
 
@@ -59,19 +57,19 @@ The following namespace abbreviations are used in this document:
 
 | abbreviation | IRI |
 | --- | --- |
-| ac: | http://rs.tdwg.org/ac/terms/ |
-| chrono: | http://rs.tdwg.org/chrono/terms/ |
-| chronoiri: | http://rs.tdwg.org/chrono/iri/ |
-| dwc: | http://rs.tdwg.org/dwc/terms/ |
-| dwciri: | http://rs.tdwg.org/dwc/iri/ |
-| dc: | http://purl.org/dc/elements/1.1/ |
-| dcterms: | http://purl.org/dc/terms/ |
-| eco: | http://rs.tdwg.org/eco/terms/ |
-| ecoiri: | http://rs.tdwg.org/eco/iri/ |
+| `ac:` | <http://rs.tdwg.org/ac/terms/> |
+| `chrono:` | <http://rs.tdwg.org/chrono/terms/> |
+| `chronoiri:` | <http://rs.tdwg.org/chrono/iri/> |
+| `dc:` | <http://purl.org/dc/elements/1.1/> |
+| `dcterms:` | <http://purl.org/dc/terms/> |
+| `dwc:` | <http://rs.tdwg.org/dwc/terms/> |
+| `dwciri:` | <http://rs.tdwg.org/dwc/iri/> |
+| `eco:` | <http://rs.tdwg.org/eco/terms/> |
+| `ecoiri:` | <http://rs.tdwg.org/eco/iri/> |
 
 ## 2 Use of Terms
 
-Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#143-use-of-darwin-core-terms-in-rdf-normative), properties in the `chronoiri:`, `dwciri:` and `ecoiri:` namespaces MUST be used with IRI values. Values for properties in the `chrono:`, `dwc:`, `eco:` and `dc:` namespaces are generally expected to have string literal values. Values for properties in the `ac` and `dcterms:` namespaces will depend on the details of the individual terms. See [Section 3 of the Darwin Core RDF Guide](../rdf/#3-term-reference-normative) for details.
+Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#143-use-of-darwin-core-terms-in-rdf-normative), properties in the `chronoiri:`, `dwciri:` and `ecoiri:` namespaces MUST be used with IRI values. Values for properties in the `chrono:`, `dwc:`, `eco:` and `dc:` namespaces are generally expected to have string literal values. Values for properties in the `ac:` and `dcterms:` namespaces will depend on the details of the individual terms. See [Section 3 of the Darwin Core RDF Guide](../rdf/#3-term-reference-normative) for details.
 
 ## 3 Term indices
 ### 3.1 Index By Term Name
@@ -11462,7 +11460,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>A name of an identifiable event during which one or more geologic processes acted to create or modify one or more dwc:GeologicalMaterials. </td>
+			<td>A name of an identifiable event during which one or more geologic processes acted to create or modify one or more dwc:GeologicalMaterials.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
@@ -11518,7 +11516,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>A name of an identifiable event during which one or more geologic processes acted to create or modify one or more dwc:GeologicalMaterials. </td>
+			<td>A name of an identifiable event during which one or more geologic processes acted to create or modify one or more dwc:GeologicalMaterials.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
@@ -15166,7 +15164,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>This term is only relevant if an eco:Survey used restricted search or open search methods. If all dwc:Occurrence included within the degree of establishment scope and detected during an dwc:Survey were reported, the value should be 'true'. Degree of establishment scope is based on the combination of eco:targetDegreeOfEstablishmentScope and eco:excludedDegreeOfEstablishmentScope. Recommended best practice is to follow the TDWG Boolean Controlled Vocabulary <a href="http://rs.tdwg.org/tag/doc/boolean/">http://rs.tdwg.org/tag/doc/boolean/</a>.</td>
+			<td>This term is only relevant if an eco:Survey used restricted search or open search methods. If all dwc:Occurrences included within the degree of establishment scope and detected during an eco:Survey were reported, the value should be 'true'. Degree of establishment scope is based on the combination of eco:targetDegreeOfEstablishmentScope and eco:excludedDegreeOfEstablishmentScope. Recommended best practice is to follow the TDWG Boolean Controlled Vocabulary <a href="http://rs.tdwg.org/tag/doc/boolean/">http://rs.tdwg.org/tag/doc/boolean/</a>.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -15451,7 +15449,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>This term is only relevant if an dwc:Survey used restricted search or open search methods. If all dwc:Occurrences included within the life stage scope and detected during an eco:Survey were reported, the value should be 'true'. Life stage scope is based on the combination of eco:targetLifeStageScope and eco:excludedLifeStageScope. Recommended best practice is to follow the TDWG Boolean Controlled Vocabulary <a href="http://rs.tdwg.org/tag/doc/boolean/">http://rs.tdwg.org/tag/doc/boolean/</a>.</td>
+			<td>This term is only relevant if an eco:Survey used restricted search or open search methods. If all dwc:Occurrences included within the life stage scope and detected during an eco:Survey were reported, the value should be 'true'. Life stage scope is based on the combination of eco:targetLifeStageScope and eco:excludedLifeStageScope. Recommended best practice is to follow the TDWG Boolean Controlled Vocabulary <a href="http://rs.tdwg.org/tag/doc/boolean/">http://rs.tdwg.org/tag/doc/boolean/</a>.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -17807,11 +17805,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-05-26</td>
+			<td>2026-09-17</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/materialEntityType-2026-05-26">http://rs.tdwg.org/dwc/terms/version/materialEntityType-2026-05-26</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/materialEntityType-2026-09-17">http://rs.tdwg.org/dwc/terms/version/materialEntityType-2026-09-17</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -17819,15 +17817,38 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>A more generic classification of a dwc:MaterialEntity than dwc:preparations but less broad than dwc:materialCategory.</td>
+			<td>A more generic classification of a dwc:MaterialEntity than dwc:preparations but less broad than dwc:materialEntityCategory.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
 			<td>A more generic classification of a dwc:MaterialEntity than dwc:preparations. Recommended best practice is to use a controlled vocabulary. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
 		</tr>
 		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>Macro-object</code></li>
+  <li class="list-group-item"><code>Micro-object</code></li>
+  <li class="list-group-item"><code>Oversized object</code></li>
+  <li class="list-group-item"><code>Cut/polished gemstone</code></li>
+  <li class="list-group-item"><code>Compound Specimen</code></li>
+  <li class="list-group-item"><code>Core</code></li>
+  <li class="list-group-item"><code>Mixed Materials</code></li>
+  <li class="list-group-item"><code>Environmental sample</code></li>
+  <li class="list-group-item"><code>Microscope slide</code></li>
+  <li class="list-group-item"><code>Spore print</code></li>
+  <li class="list-group-item"><code>Macrofossil</code></li>
+  <li class="list-group-item"><code>Mesofossil</code></li>
+  <li class="list-group-item"><code>Microfossil</code></li>
+  <li class="list-group-item"><code>Pinned object/specimen</code></li>
+  <li class="list-group-item"><code>Taxidermy mount</code></li>
+  <li class="list-group-item"><code>Blood sampling cards</code></li>
+  <li class="list-group-item"><code>Oversized fossil</code></li>
+  <li class="list-group-item"><code>Anthropogenic Artifact</code></li>
+</ul></td>
+		</tr>
+		<tr>
 			<td>ABCD equivalence</td>
-			<td>skos:closeMatch to /DataSets/DataSet/Units/Unit/KindOfUnit. ABCD structural considerations prevent an exactMatch.</td>
+			<td>not in ABCD</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -17840,6 +17861,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-09-17_62">http://rs.tdwg.org/decisions/decision-2026-09-17_62</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -17857,11 +17882,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-05-26</td>
+			<td>2026-09-17</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/version/materialEntityType-2026-05-26">http://rs.tdwg.org/dwc/iri/version/materialEntityType-2026-05-26</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/iri/version/materialEntityType-2026-09-17">http://rs.tdwg.org/dwc/iri/version/materialEntityType-2026-09-17</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -17869,11 +17894,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>A more generic classification of a dwc:MaterialEntity than dwc:preparations but less broad than dwc:materialCategory.</td>
+			<td>A more generic classification of a dwc:MaterialEntity than dwc:preparations but less broad than dwc:materialEntityCategory.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>A more generic classification of a dwc:MaterialEntity than dwc:preparations. Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
+			<td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri: namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -17886,6 +17911,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-09-17_62">http://rs.tdwg.org/decisions/decision-2026-09-17_62</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -20887,7 +20916,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>A taxon reported during the dwc:Survey that is outside of the target taxonomic scope (the combination of ecoiri:targetTaxonomicScope and ecoiri:excludedTaxonomicScope).</td>
+			<td>A taxon reported during the eco:Survey that is outside of the target taxonomic scope (the combination of ecoiri:targetTaxonomicScope and ecoiri:excludedTaxonomicScope).</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
@@ -21055,11 +21084,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-05-26</td>
+			<td>2026-09-17</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/objectQuantity-2026-05-26">http://rs.tdwg.org/dwc/terms/version/objectQuantity-2026-05-26</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/objectQuantity-2026-09-17">http://rs.tdwg.org/dwc/terms/version/objectQuantity-2026-09-17</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -21071,7 +21100,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>An dwc:objectQuantity must have a corresponding dwc:objectQuantityType.</td>
+			<td>A dwc:objectQuantity must have a corresponding dwc:objectQuantityType.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -21092,6 +21121,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-09-17_62">http://rs.tdwg.org/decisions/decision-2026-09-17_62</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -21109,11 +21142,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-05-26</td>
+			<td>2026-09-17</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/version/objectQuantityType-2026-05-26">http://rs.tdwg.org/dwc/terms/version/objectQuantityType-2026-05-26</a></td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/objectQuantityType-2026-09-17">http://rs.tdwg.org/dwc/terms/version/objectQuantityType-2026-09-17</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -21125,7 +21158,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>An dwc:objectQuantityType must have a corresponding dwc:objectQuantity. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+			<td>A dwc:objectQuantityType must have a corresponding dwc:objectQuantity. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -21146,6 +21179,10 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2026-05-26_58">http://rs.tdwg.org/decisions/decision-2026-05-26_58</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-09-17_62">http://rs.tdwg.org/decisions/decision-2026-09-17_62</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -27808,7 +27845,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>The sampling eco:Survey could be at any level of hierarchy. In the case of a higher level (parent) eco:Survey, include all the organizations or people involved in the child eco:Surveys that contributed to the parent eco:Survey. Recommended best practice is to separate multiple values in a list with space vertical bar space (<code> | </code>). </td>
+			<td>The sampling eco:Survey could be at any level of hierarchy. In the case of a higher level (parent) eco:Survey, include all the organizations or people involved in the child eco:Surveys that contributed to the parent eco:Survey. Recommended best practice is to separate multiple values in a list with space vertical bar space (<code> | </code>).</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -30722,11 +30759,12 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>This term is meant to alert users that the inventory was conducted in such a way that all of the target taxa (the combination of ecoiri:targetTaxonomicScope and ecoiri:excludedTaxonomicScope) should have been detectable if they were present during the dwc:Event. This term can provide data users with a qualitative measure of how comprehensively an area has been surveyed, which assists in interpreting species populations, areas of occupancy, inferring species absences, etc. This term is only relevant if the dwc:Event used restricted search or open search methods. If taxonomic completeness was assessed, the methods used or an explanation of the basis of the completeness should covered by ecoiri:taxonCompletenessProtocols. Recommended best practice is to use an IRI from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/tcr/">http://rs.tdwg.org/dwc/doc/tcr/</a>. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
+			<td>This term is meant to alert users that the inventory was conducted in such a way that all of the target taxa (the combination of ecoiri:targetTaxonomicScope and ecoiri:excludedTaxonomicScope) should have been detectable if they were present during the eco:Survey. This term can provide data users with a qualitative measure of how comprehensively an area has been surveyed, which assists in interpreting species populations, areas of occupancy, inferring species absences, etc. This term is only relevant if the eco:Survey used restricted search or open search methods. If taxonomic completeness was assessed, the methods used or an explanation of the basis of the completeness should be covered by ecoiri:taxonCompletenessProtocols. Recommended best practice is to use an IRI from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/tcr/">http://rs.tdwg.org/dwc/doc/tcr/</a>. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
 			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code><a href="http://rs.tdwg.org/ecotcr/values/tcr00">http://rs.tdwg.org/ecotcr/values/tcr00</a></code></li>
   <li class="list-group-item"><code><a href="http://rs.tdwg.org/ecotcr/values/tcr01">http://rs.tdwg.org/ecotcr/values/tcr01</a></code></li>
   <li class="list-group-item"><code><a href="http://rs.tdwg.org/ecotcr/values/tcr02">http://rs.tdwg.org/ecotcr/values/tcr02</a></code></li>
 </ul></td>
@@ -31481,7 +31519,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>A numeric value for the total area, volume or distance surveyed during the dwc:Survey.</td>
+			<td>A numeric value for the total area, volume or distance surveyed during the eco:Survey.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
@@ -32552,7 +32590,7 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>This term is meant to allow the capture of an unaltered original identification/determination, including identification qualifiers, hybrid formulas, uncertainties, etc. This term is meant to be used in addition to dwc:geologicalMaterialName or dwc:scientificName (and dwc:identificationQualifier etc.), not instead of it.</td>
+			<td>This term is meant to allow the capture of an unaltered original identification/determination, including identification qualifiers, hybrid formulas, uncertainties, etc. This term is meant to be used in addition to dwc:geologicalMaterialNames or dwc:scientificName (and dwc:identificationQualifier etc.), not instead of it.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -33716,5 +33754,3 @@ No properties are currently organized in this class.
 		</tr>
 	</tbody>
 </table>
-
-
