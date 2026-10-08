@@ -408,23 +408,6 @@ dwc_dp:
     output: docs/dwc-dp/qrg/index.html
     images_source: build/dwc-dp/images
     images_output: docs/dwc-dp/images
-    # Every recommended table must occur exactly once. Non-recommended names warn and are skipped.
-    table_groups:
-      - [event, chronometric-age, geological-context, occurrence, organism, organism-interaction]
-      - [survey, survey-survey-target, survey-target, survey-target-descriptor]
-      - [identification, identification-taxon]
-      - [material, geological-material, material-geological-context]
-      - [nucleotide-analysis, molecular-protocol, nucleotide-sequence]
-      - [agent, agent-agent-role, chronometric-age-agent-role, event-agent-role, identification-agent-role, material-agent-role, media-agent-role, molecular-protocol-agent-role, occurrence-agent-role, organism-interaction-agent-role, survey-agent-role]
-      - [media, agent-media, chronometric-age-media, event-media, geological-context-media, material-media, occurrence-media, organism-interaction-media]
-      - [protocol, chronometric-age-protocol, event-protocol, material-protocol, occurrence-protocol, survey-protocol]
-      - [bibliographic-resource, chronometric-age-reference, event-reference, identification-reference, material-reference, molecular-protocol-reference, occurrence-reference, organism-reference, organism-interaction-reference, protocol-reference, survey-reference]
-      - [chronometric-age-assertion, event-assertion, material-assertion, media-assertion, molecular-protocol-assertion, nucleotide-analysis-assertion, occurrence-assertion, organism-assertion, organism-interaction-assertion, survey-assertion]
-      - [agent-identifier, event-identifier, material-identifier, media-identifier, occurrence-identifier, organism-identifier, survey-identifier]
-      - [provenance, event-provenance, material-provenance, media-provenance]
-      - [usage-policy, event-usage-policy, material-usage-policy, media-usage-policy]
-      - [organism-relationship, resource-relationship]
-
   sql:
     config: build/dwc-dp/generate_sql.yaml
     output: dist/dwc-dp/dwc-dp.sql

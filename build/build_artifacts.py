@@ -2244,17 +2244,6 @@ def _dwc_dp_preflight(config):
             node = node[key]
         paths[label] = _dwc_dp_resolve_path(node, label)
 
-    groups = dwc_dp.get('qrg', {}).get('table_groups')
-    if not isinstance(groups, list) or not groups or any(
-        not isinstance(group, list) or not group for group in groups
-    ):
-        raise ValueError(
-            "Configuration property 'dwc_dp.qrg.table_groups' must be a non-empty list of non-empty lists"
-        )
-    if any(not isinstance(name, str) or not name.strip() for group in groups for name in group):
-        raise ValueError("Every entry in 'dwc_dp.qrg.table_groups' must be a non-empty table name")
-    paths['qrg.table_groups'] = groups
-
     for label in ('sources.tables', 'sources.fields', 'profile.template', 'qrg.template', 'sql.config'):
         if not paths[label].is_file():
             raise FileNotFoundError(f"Configured DwC-DP input '{label}' not found: {paths[label]}")
@@ -2373,29 +2362,6 @@ def _dwc_dp_preflight(config):
         raise ValueError(
             "Relationship metadata validation failed in dwc-dp-fields.csv\n  - "
             + "\n  - ".join(relationship_errors)
-        )
-
-    grouped = [name for group in groups for name in group]
-    seen = set()
-    duplicates = []
-    for name in grouped:
-        if name in seen:
-            duplicates.append(name)
-        seen.add(name)
-    if duplicates:
-        raise ValueError(f"dwc_dp.qrg.table_groups contains duplicate table names: {duplicates}")
-    grouped_set = set(grouped)
-    missing_from_groups = set(tables) - grouped_set
-    if missing_from_groups:
-        raise ValueError(
-            "Recommended DwC-DP tables are missing from dwc_dp.qrg.table_groups: "
-            f"{sorted(missing_from_groups)}"
-        )
-    unknown_in_groups = grouped_set - set(tables)
-    if unknown_in_groups:
-        print(
-            "Warning: dwc_dp.qrg.table_groups references non-recommended tables "
-            f"(they will be skipped): {sorted(unknown_in_groups)}"
         )
 
     paths['version'] = version.strip()
@@ -3141,94 +3107,93 @@ def _dwc_dp_generate_qrg(
     output_html_path: Path,
     template_path: Path,
     version: str,
-    ordered_groups: list[list[str]],
 ) -> None:
-    """Read the generated DwC-DP table schemas and render the QRG HTML."""
+    """Read generated DwC-DP table schemas and render the QRG alphabetically by title."""
     content_parts = []
 
-    for group in ordered_groups:
-        for table_name in group:
-            schema_file = table_schemas_dir / f"{table_name}.json"
-            if not schema_file.is_file():
-                print(
-                    f"Warning: Schema file for '{table_name}' not found at "
-                    f"{schema_file} — skipping."
-                )
-                continue
-            with schema_file.open("r", encoding="utf-8") as f:
-                schema = json.load(f)
+    table_schemas = []
+    for schema_file in table_schemas_dir.glob("*.json"):
+        if not schema_file.is_file():
+            continue
+        with schema_file.open("r", encoding="utf-8") as f:
+            schema = json.load(f)
+        table_name = schema_file.stem
+        class_name = str(schema.get("title") or table_name).strip()
+        table_schemas.append((class_name, table_name, schema))
 
-            table = schema
-            fields = schema.get("fields", [])
-            class_name = table.get("title", table_name)
+    table_schemas.sort(key=lambda item: (item[0].casefold(), item[1].casefold()))
 
-            # Table heading and metadata retain the original DwC-DP QRG presentation.
-            # The H2 remains the table anchor and is also discovered by the Petridish TOC.
+    for class_name, table_name, schema in table_schemas:
+        table = schema
+        fields = schema.get("fields", [])
+
+        # Table heading and metadata retain the original DwC-DP QRG presentation.
+        # The H2 remains the table anchor and is also discovered by the Petridish TOC.
+        content_parts.append(
+            f'<div class="class-header-wrapper">'
+            f'<h2 id="{class_name}" class="class-header">{class_name}</h2>'
+            f'</div>'
+        )
+
+        if table.get("identifier"):
             content_parts.append(
-                f'<div class="class-header-wrapper">'
-                f'<h2 id="{class_name}" class="class-header">{class_name}</h2>'
-                f'</div>'
+                f'<p><strong>Identifier:</strong> {table["identifier"]}</p>'
             )
 
-            if table.get("identifier"):
-                content_parts.append(
-                    f'<p><strong>Identifier:</strong> {table["identifier"]}</p>'
-                )
+        content_parts.append(
+            f'<p><strong>Description:</strong> '
+            f'{table.get("description", "No description.")}</p>'
+        )
 
+        if table.get("notes"):
             content_parts.append(
-                f'<p><strong>Description:</strong> '
-                f'{table.get("description", "No description.")}</p>'
+                f'<p><strong>Notes:</strong> {table["notes"]}</p>'
             )
 
-            if table.get("notes"):
+        ex_val = table.get("examples") or table.get("example")
+        if ex_val:
+            content_parts.append("<p><strong>Examples:</strong></p>")
+            parts = [ex.strip() for ex in str(ex_val).split(";") if ex.strip()]
+            ex_html = ""
+            for i, ex in enumerate(parts):
+                if i > 0:
+                    ex_html += '<div class="examples-separator"></div>'
+                ex_html += f'<div class="examples-content">{ex}</div>'
+            content_parts.append(ex_html)
+
+        src = str(table.get("dcterms:isVersionOf") or "").strip()
+        if src:
+            if src.startswith(("http://", "https://")) and "example.com" not in src:
                 content_parts.append(
-                    f'<p><strong>Notes:</strong> {table["notes"]}</p>'
+                    f'<p><strong>dcterms:isVersionOf:</strong> '
+                    f'<a href="{src}" target="_blank">{src}</a></p>'
+                )
+            else:
+                content_parts.append(
+                    f'<p><strong>dcterms:isVersionOf:</strong> {src}</p>'
                 )
 
-            ex_val = table.get("examples") or table.get("example")
-            if ex_val:
-                content_parts.append("<p><strong>Examples:</strong></p>")
-                parts = [ex.strip() for ex in str(ex_val).split(";") if ex.strip()]
-                ex_html = ""
-                for i, ex in enumerate(parts):
-                    if i > 0:
-                        ex_html += '<div class="examples-separator"></div>'
-                    ex_html += f'<div class="examples-content">{ex}</div>'
-                content_parts.append(ex_html)
+        # Relationship summary retains the original DwC-DP presentation.
+        relationship_html = _dwc_dp_build_foreign_key_summary(schema, table_name)
+        if relationship_html:
+            content_parts.append(relationship_html)
 
-            src = str(table.get("dcterms:isVersionOf") or "").strip()
-            if src:
-                if src.startswith(("http://", "https://")) and "example.com" not in src:
-                    content_parts.append(
-                        f'<p><strong>dcterms:isVersionOf:</strong> '
-                        f'<a href="{src}" target="_blank">{src}</a></p>'
-                    )
-                else:
-                    content_parts.append(
-                        f'<p><strong>dcterms:isVersionOf:</strong> {src}</p>'
-                    )
+        # Field buttons use the classic-QRG Bootstrap treatment, with spacing
+        # applied to the Fields block rather than to the Relationships section.
+        field_links = _dwc_dp_generate_field_links(fields, class_name)
+        if field_links:
+            content_parts.append(
+                f'<nav class="field-index mt-4 mb-4"><strong>Fields:</strong><br>'
+                f'{field_links}</nav>'
+            )
 
-            # Relationship summary retains the original DwC-DP presentation.
-            relationship_html = _dwc_dp_build_foreign_key_summary(schema, table_name)
-            if relationship_html:
-                content_parts.append(relationship_html)
-
-            # Field buttons use the classic-QRG Bootstrap treatment, with spacing
-            # applied to the Fields block rather than to the Relationships section.
-            field_links = _dwc_dp_generate_field_links(fields, class_name)
-            if field_links:
-                content_parts.append(
-                    f'<nav class="field-index mt-4 mb-4"><strong>Fields:</strong><br>'
-                    f'{field_links}</nav>'
-                )
-
-            # Field records use the same table-secondary treatment as terms in the
-            # classic QRG. Their anchors are not H3 headings, so they do not flood
-            # the Petridish page TOC.
-            for field in fields:
-                term_html = _dwc_dp_build_term_section(field, class_name)
-                if term_html:
-                    content_parts.append(term_html)
+        # Field records use the same table-secondary treatment as terms in the
+        # classic QRG. Their anchors are not H3 headings, so they do not flood
+        # the Petridish page TOC.
+        for field in fields:
+            term_html = _dwc_dp_build_term_section(field, class_name)
+            if term_html:
+                content_parts.append(term_html)
 
     template = _dwc_dp_load_template(template_path)
     html = template.format(
@@ -4894,7 +4859,6 @@ def build_from_configuration(config):
                 staged_qrg,
                 dwc_dp_paths['qrg.template'],
                 dwc_dp_state['version'],
-                dwc_dp_paths['qrg.table_groups'],
             )
             print(f"    -> {_display_output_path(staged_qrg)}")
             log_line(log_file, f"DwC-DP Quick Reference Guide -> {staged_qrg}")

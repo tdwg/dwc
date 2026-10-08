@@ -35,6 +35,11 @@ description: Full-width Quick Reference Guide layout with compact table of conte
     .qrg-toc {
       grid-area: toc;
       min-width: 0;
+      position: sticky;
+      top: 1rem;
+      align-self: start;
+      max-height: calc(100vh - 2rem);
+      overflow-y: auto;
     }
   }
 
