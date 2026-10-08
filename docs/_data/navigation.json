@@ -102,6 +102,10 @@
         "text": "---"
       },
       {
+        "text": "Maintenance",
+        "href": "/maintenance/"
+      },
+      {
         "text": "Questions & Answers",
         "href": "https://github.com/tdwg/dwc-qa/blob/master/README.md"
       }

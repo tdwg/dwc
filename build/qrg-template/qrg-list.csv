@@ -194,7 +194,6 @@ http://rs.tdwg.org/dwc/terms/typeOfType
 http://rs.tdwg.org/dwc/terms/typifiedName
 http://rs.tdwg.org/dwc/terms/catalogNumber
 http://rs.tdwg.org/dwc/terms/otherCatalogNumbers
-http://rs.tdwg.org/dwc/terms/recordNumber
 http://rs.tdwg.org/dwc/terms/objectQuantity
 http://rs.tdwg.org/dwc/terms/objectQuantityType
 http://rs.tdwg.org/dwc/terms/preparations
@@ -214,6 +213,7 @@ http://rs.tdwg.org/dwc/terms/Occurrence
 http://rs.tdwg.org/dwc/terms/occurrenceID
 http://rs.tdwg.org/dwc/terms/recordedBy
 http://rs.tdwg.org/dwc/terms/recordedByID
+http://rs.tdwg.org/dwc/terms/recordNumber
 http://rs.tdwg.org/dwc/terms/individualCount
 http://rs.tdwg.org/dwc/terms/organismQuantity
 http://rs.tdwg.org/dwc/terms/organismQuantityType
