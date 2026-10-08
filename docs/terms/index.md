@@ -1163,6 +1163,687 @@ This category contains terms that are generic in that they might apply to any ty
 </table>
 
 
+<h2 id="geologicalcontext">GeologicalContext</h2>
+
+<div class="my-4">
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:geologicalContextID">geologicalContextID</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:earliestEonOrLowestEonothem">earliestEonOrLowestEonothem</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:latestEonOrHighestEonothem">latestEonOrHighestEonothem</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:earliestEraOrLowestErathem">earliestEraOrLowestErathem</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:latestEraOrHighestErathem">latestEraOrHighestErathem</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:earliestPeriodOrLowestSystem">earliestPeriodOrLowestSystem</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:latestPeriodOrHighestSystem">latestPeriodOrHighestSystem</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:earliestEpochOrLowestSeries">earliestEpochOrLowestSeries</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:latestEpochOrHighestSeries">latestEpochOrHighestSeries</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:earliestAgeOrLowestStage">earliestAgeOrLowestStage</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:latestAgeOrHighestStage">latestAgeOrHighestStage</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:lowestBiostratigraphicZone">lowestBiostratigraphicZone</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:highestBiostratigraphicZone">highestBiostratigraphicZone</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:lithostratigraphicTerms">lithostratigraphicTerms</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:group">group</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:formation">formation</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:member">member</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:bed">bed</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:geologicEvent">geologicEvent</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:geologicProvince">geologicProvince</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:lithodemicUnit">lithodemicUnit</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:tectonicUnits">tectonicUnits</a>
+  </div>
+
+<table class="table">
+  <tbody>
+    <tr class="table-primary"><th colspan="2">GeologicalContext <span class="badge bg-primary float-end">Class</span></th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/GeologicalContext">http://rs.tdwg.org/dwc/terms/GeologicalContext</a></td></tr>
+    <tr><td>Definition</td><td>A set of geological designations, such as stratigraphy, that qualify a dcterms:Location or source of a dwc:MaterialEntity.</td></tr>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>a particular lithostratigraphic layer</code></li><li class="list-group-item"><code>a specific chronostratigraphic unit</code></li></ul></td></tr>
+  </tbody>
+</table>
+
+<p class="invisible">
+  <span id="dwc:geologicalContextID"></span>
+    <span id="geologicalContextID"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">geologicalContextID</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/geologicalContextID">http://rs.tdwg.org/dwc/terms/geologicalContextID</a></td></tr>
+    <tr><td>Definition</td><td>An identifier for a dwc:GeologicalContext.</td></tr>
+    <tr><td>Notes</td><td>May be a global unique identifier or an identifier specific to the data set.</td></tr>
+    <tr><td>Examples</td><td><code><a href="https://opencontext.org/subjects/e54377f7-4452-4315-b676-40679b10c4d9">https://opencontext.org/subjects/e54377f7-4452-4315-b676-40679b10c4d9</a></code></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:earliestEonOrLowestEonothem"></span>
+    <span id="earliestEonOrLowestEonothem"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">earliestEonOrLowestEonothem</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/earliestEonOrLowestEonothem">http://rs.tdwg.org/dwc/terms/earliestEonOrLowestEonothem</a></td></tr>
+    <tr><td>Definition</td><td>The full name of the earliest possible geochronologic eon or lowest chronostratigraphic eonothem or the informal name attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.</td></tr>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Phanerozoic</code></li><li class="list-group-item"><code>Proterozoic</code></li><li class="list-group-item"><code>Precambrian</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:latestEonOrHighestEonothem"></span>
+    <span id="latestEonOrHighestEonothem"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">latestEonOrHighestEonothem</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/latestEonOrHighestEonothem">http://rs.tdwg.org/dwc/terms/latestEonOrHighestEonothem</a></td></tr>
+    <tr><td>Definition</td><td>The full name of the latest possible geochronologic eon or highest chronostratigraphic eonothem or the informal name attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.</td></tr>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Phanerozoic</code></li><li class="list-group-item"><code>Proterozoic</code></li><li class="list-group-item"><code>Precambrian</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:earliestEraOrLowestErathem"></span>
+    <span id="earliestEraOrLowestErathem"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">earliestEraOrLowestErathem</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/earliestEraOrLowestErathem">http://rs.tdwg.org/dwc/terms/earliestEraOrLowestErathem</a></td></tr>
+    <tr><td>Definition</td><td>The full name of the earliest possible geochronologic era or lowest chronostratigraphic erathem attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.</td></tr>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Cenozoic</code></li><li class="list-group-item"><code>Mesozoic</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:latestEraOrHighestErathem"></span>
+    <span id="latestEraOrHighestErathem"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">latestEraOrHighestErathem</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/latestEraOrHighestErathem">http://rs.tdwg.org/dwc/terms/latestEraOrHighestErathem</a></td></tr>
+    <tr><td>Definition</td><td>The full name of the latest possible geochronologic era or highest chronostratigraphic erathem attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.</td></tr>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Cenozoic</code></li><li class="list-group-item"><code>Mesozoic</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:earliestPeriodOrLowestSystem"></span>
+    <span id="earliestPeriodOrLowestSystem"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">earliestPeriodOrLowestSystem</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/earliestPeriodOrLowestSystem">http://rs.tdwg.org/dwc/terms/earliestPeriodOrLowestSystem</a></td></tr>
+    <tr><td>Definition</td><td>The full name of the earliest possible geochronologic period or lowest chronostratigraphic system attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.</td></tr>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Neogene</code></li><li class="list-group-item"><code>Tertiary</code></li><li class="list-group-item"><code>Quaternary</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:latestPeriodOrHighestSystem"></span>
+    <span id="latestPeriodOrHighestSystem"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">latestPeriodOrHighestSystem</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/latestPeriodOrHighestSystem">http://rs.tdwg.org/dwc/terms/latestPeriodOrHighestSystem</a></td></tr>
+    <tr><td>Definition</td><td>The full name of the latest possible geochronologic period or highest chronostratigraphic system attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.</td></tr>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Neogene</code></li><li class="list-group-item"><code>Tertiary</code></li><li class="list-group-item"><code>Quaternary</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:earliestEpochOrLowestSeries"></span>
+    <span id="earliestEpochOrLowestSeries"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">earliestEpochOrLowestSeries</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/earliestEpochOrLowestSeries">http://rs.tdwg.org/dwc/terms/earliestEpochOrLowestSeries</a></td></tr>
+    <tr><td>Definition</td><td>The full name of the earliest possible geochronologic epoch or lowest chronostratigraphic series attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.</td></tr>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Holocene</code></li><li class="list-group-item"><code>Pleistocene</code></li><li class="list-group-item"><code>Ibexian Series</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:latestEpochOrHighestSeries"></span>
+    <span id="latestEpochOrHighestSeries"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">latestEpochOrHighestSeries</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/latestEpochOrHighestSeries">http://rs.tdwg.org/dwc/terms/latestEpochOrHighestSeries</a></td></tr>
+    <tr><td>Definition</td><td>The full name of the latest possible geochronologic epoch or highest chronostratigraphic series attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.</td></tr>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Holocene</code></li><li class="list-group-item"><code>Pleistocene</code></li><li class="list-group-item"><code>Ibexian Series</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:earliestAgeOrLowestStage"></span>
+    <span id="earliestAgeOrLowestStage"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">earliestAgeOrLowestStage</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/earliestAgeOrLowestStage">http://rs.tdwg.org/dwc/terms/earliestAgeOrLowestStage</a></td></tr>
+    <tr><td>Definition</td><td>The full name of the earliest possible geochronologic age or lowest chronostratigraphic stage attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.</td></tr>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Atlantic</code></li><li class="list-group-item"><code>Boreal</code></li><li class="list-group-item"><code>Skullrockian</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:latestAgeOrHighestStage"></span>
+    <span id="latestAgeOrHighestStage"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">latestAgeOrHighestStage</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/latestAgeOrHighestStage">http://rs.tdwg.org/dwc/terms/latestAgeOrHighestStage</a></td></tr>
+    <tr><td>Definition</td><td>The full name of the latest possible geochronologic age or highest chronostratigraphic stage attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.</td></tr>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Atlantic</code></li><li class="list-group-item"><code>Boreal</code></li><li class="list-group-item"><code>Skullrockian</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:lowestBiostratigraphicZone"></span>
+    <span id="lowestBiostratigraphicZone"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">lowestBiostratigraphicZone</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/lowestBiostratigraphicZone">http://rs.tdwg.org/dwc/terms/lowestBiostratigraphicZone</a></td></tr>
+    <tr><td>Definition</td><td>The full name of the lowest possible geological biostratigraphic zone of the stratigraphic horizon from which the dwc:MaterialEntity was collected.</td></tr>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td>Examples</td><td><code>Maastrichtian</code></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:highestBiostratigraphicZone"></span>
+    <span id="highestBiostratigraphicZone"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">highestBiostratigraphicZone</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/highestBiostratigraphicZone">http://rs.tdwg.org/dwc/terms/highestBiostratigraphicZone</a></td></tr>
+    <tr><td>Definition</td><td>The full name of the highest possible geological biostratigraphic zone of the stratigraphic horizon from which the dwc:MaterialEntity was collected.</td></tr>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td>Examples</td><td><code>Blancan</code></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:lithostratigraphicTerms"></span>
+    <span id="lithostratigraphicTerms"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">lithostratigraphicTerms</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/lithostratigraphicTerms">http://rs.tdwg.org/dwc/terms/lithostratigraphicTerms</a></td></tr>
+    <tr><td>Definition</td><td>The combination of all lithostratigraphic names for the rock from which the dwc:MaterialEntity was collected.</td></tr>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td>Examples</td><td><code>Pleistocene-Weichselien</code></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:group"></span>
+    <span id="group"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">group</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/group">http://rs.tdwg.org/dwc/terms/group</a></td></tr>
+    <tr><td>Definition</td><td>The full name of the lithostratigraphic group from which the dwc:MaterialEntity was collected.</td></tr>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Bathurst</code></li><li class="list-group-item"><code>Lower Wealden</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:formation"></span>
+    <span id="formation"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">formation</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/formation">http://rs.tdwg.org/dwc/terms/formation</a></td></tr>
+    <tr><td>Definition</td><td>The full name of the lithostratigraphic formation from which the dwc:MaterialEntity was collected.</td></tr>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Notch Peak Formation</code></li><li class="list-group-item"><code>House Limestone</code></li><li class="list-group-item"><code>Fillmore Formation</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:member"></span>
+    <span id="member"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">member</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/member">http://rs.tdwg.org/dwc/terms/member</a></td></tr>
+    <tr><td>Definition</td><td>The full name of the lithostratigraphic member from which the dwc:MaterialEntity was collected.</td></tr>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Lava Dam Member</code></li><li class="list-group-item"><code>Hellnmaria Member</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:bed"></span>
+    <span id="bed"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">bed</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/bed">http://rs.tdwg.org/dwc/terms/bed</a></td></tr>
+    <tr><td>Definition</td><td>The full name of the lithostratigraphic bed from which the dwc:MaterialEntity was collected.</td></tr>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td>Examples</td><td><code>Harlem coal</code></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:geologicEvent"></span>
+    <span id="geologicEvent"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">geologicEvent</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/geologicEvent">http://rs.tdwg.org/dwc/terms/geologicEvent</a></td></tr>
+    <tr><td>Definition</td><td>A name of an identifiable event during which one or more geologic processes acted to create or modify one or more dwc:GeologicalMaterials.</td></tr>
+    <tr><td>Notes</td><td>This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Sevier orogeny</code></li><li class="list-group-item"><code>Alleghanian orogeny</code></li><li class="list-group-item"><code>Alpine orogeny</code></li><li class="list-group-item"><code>Variscan orogeny</code></li><li class="list-group-item"><code>Vredefort impact</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:geologicProvince"></span>
+    <span id="geologicProvince"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">geologicProvince</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/geologicProvince">http://rs.tdwg.org/dwc/terms/geologicProvince</a></td></tr>
+    <tr><td>Definition</td><td>An extensive named region with similar geologic history, structural, petrographic, or physiographic features throughout in which the GeologicalContext was located.</td></tr>
+    <tr><td>Notes</td><td>This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Northwest Province</code></li><li class="list-group-item"><code>Surprise Paleovalley</code></li><li class="list-group-item"><code>Basin and Range</code> ;<code>Coastal Plain</code></li><li class="list-group-item"><code>Piedmont</code></li><li class="list-group-item"><code>Blue Ridge</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:lithodemicUnit"></span>
+    <span id="lithodemicUnit"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">lithodemicUnit</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/lithodemicUnit">http://rs.tdwg.org/dwc/terms/lithodemicUnit</a></td></tr>
+    <tr><td>Definition</td><td>A geologic unit that lacks stratification, is primarily comprised of intrusive, deformed, and/or metamorphosed rock, and is characterized by irregularly mixed lithology or highly complicated structural relations.</td></tr>
+    <tr><td>Notes</td><td>Due to the unstructured nature of complexes, both named units and lithological descriptive terms are acceptable values.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Catalina Core Complex</code></li><li class="list-group-item"><code>injection complex</code></li><li class="list-group-item"><code>New England Plutonic Suite</code></li><li class="list-group-item"><code>Sierra Nevada batholith</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:tectonicUnits"></span>
+    <span id="tectonicUnits"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">tectonicUnits</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/tectonicUnits">http://rs.tdwg.org/dwc/terms/tectonicUnits</a></td></tr>
+    <tr><td>Definition</td><td>The combination of all tectonic unit names for the rock from which a dwc:MaterialEntity was collected.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use an authoritative tectonic unit lexicon such as the Tectonic Map of Switzerland (TK500). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Upper Helvetic</code></li><li class="list-group-item"><code>Wildhorn Nappe Complex</code></li><li class="list-group-item"><code>Sublage Nappe</code></li></ul></td></tr>
+  </tbody>
+</table>
+
+
+<h2 id="geologicalmaterial">GeologicalMaterial</h2>
+
+<div class="my-4">
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:geologicalMaterialNames">geologicalMaterialNames</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:geologicMaterialNameID">geologicMaterialNameID</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:geologicalMaterialNameTypes">geologicalMaterialNameTypes</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:classificationCodes">classificationCodes</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:mineralSequence">mineralSequence</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:measuredChemistry">measuredChemistry</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:measuredChemistrySource">measuredChemistrySource</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:mineralogicalAnalysisProtocol">mineralogicalAnalysisProtocol</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:chemistryRemarks">chemistryRemarks</a>
+  </div>
+
+<table class="table">
+  <tbody>
+    <tr class="table-primary"><th colspan="2">GeologicalMaterial <span class="badge bg-primary float-end">Class</span></th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/GeologicalMaterial">http://rs.tdwg.org/dwc/terms/GeologicalMaterial</a></td></tr>
+    <tr><td>Definition</td><td>A dwc:MaterialEntity that is geological in nature.</td></tr>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>a specific mineral</code></li><li class="list-group-item"><code>a specific rock</code></li><li class="list-group-item"><code>a specific ore</code></li></ul></td></tr>
+  </tbody>
+</table>
+
+<p class="invisible">
+  <span id="dwc:geologicalMaterialNames"></span>
+    <span id="geologicalMaterialNames"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">geologicalMaterialNames</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/geologicalMaterialNames">http://rs.tdwg.org/dwc/terms/geologicalMaterialNames</a></td></tr>
+    <tr><td>Definition</td><td>A list (concatenated and separated) of mineral or lithotaxon names for a dwc:GeologicalMaterial.</td></tr>
+    <tr><td>Notes</td><td>May includes both informal (e.g., variety, synonym) and formal (classification) names. The first name in the list should be considered the preferred name. Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>quartz | smoky quartz</code></li><li class="list-group-item"><code>muscovite</code></li><li class="list-group-item"><code>garnet group</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:geologicMaterialNameID"></span>
+    <span id="geologicMaterialNameID"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">geologicMaterialNameID</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/geologicMaterialNameID">http://rs.tdwg.org/dwc/terms/geologicMaterialNameID</a></td></tr>
+    <tr><td>Definition</td><td>An identifier for a mineral or lithotaxon name for a dwc:GeologicalMaterial. May be a global unique identifier or an identifier specific to the data set.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a persistent, globally unique identifier.</td></tr>
+    <tr><td>Examples</td><td><code><a href="https://geospecimens.org/api/v1/catalog/resource/mineral-name/ba673bdf-7228-11f0-a057-52f8e1bb0628">https://geospecimens.org/api/v1/catalog/resource/mineral-name/ba673bdf-7228-11f0-a057-52f8e1bb0628</a></code></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:geologicalMaterialNameTypes"></span>
+    <span id="geologicalMaterialNameTypes"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">geologicalMaterialNameTypes</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/geologicalMaterialNameTypes">http://rs.tdwg.org/dwc/terms/geologicalMaterialNameTypes</a></td></tr>
+    <tr><td>Definition</td><td>A list (concatenated and separated) of the types of names provided in dwc:geologicalMaterialNames.</td></tr>
+    <tr><td>Notes</td><td>If this term is populated, it should have an equal number of items in the list as for the list in dwc:geologicalMaterialNames and the types should have the same order as the names to which they refer. Recommended best practice is to use a controlled vocabulary for the values in a list (e.g., <a href="https://kos.geospecimens.org/def/geological-specimen-name-type">https://kos.geospecimens.org/def/geological-specimen-name-type</a>). See Gavryliv (2023), <a href="https://doi.org/10.1180/mgm.2023.23">https://doi.org/10.1180/mgm.2023.23</a>, for a detailed breakdown of informal, alternate names.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>species | variety</code></li><li class="list-group-item"><code>species</code></li><li class="list-group-item"><code>group</code></li><li class="list-group-item"> <code>synonym</code></li><li class="list-group-item"><code>classification</code></li><li class="list-group-item"><code>historical</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:classificationCodes"></span>
+    <span id="classificationCodes"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">classificationCodes</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/classificationCodes">http://rs.tdwg.org/dwc/terms/classificationCodes</a></td></tr>
+    <tr><td>Definition</td><td>A list (concatenated and separated) of codes that each identifies a name from a classification system applied to a dwc:GeologicalMaterial.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>71.02.02a.01</code> ("muscovite" in the Dana classification system)</li><li class="list-group-item"><code>9.AD.25</code> ("garnet group" in the Nickel-Strunz classification system)</li><li class="list-group-item"><code>75.01.03.01 | 4.DA.05</code> ("quartz" the Dana classification system and "quartz group" in the Nickel-Strunz classification system)</li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:mineralSequence"></span>
+    <span id="mineralSequence"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">mineralSequence</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/mineralSequence">http://rs.tdwg.org/dwc/terms/mineralSequence</a></td></tr>
+    <tr><td>Definition</td><td>A list (concatenated and separated) of minerals in a dwc:GeologicalMaterial, ordered in a manner that illustrates the relative timing of mineral formation.</td></tr>
+    <tr><td>Notes</td><td>The list should only contain minerals that belong to a readily identifiable sequence of formation. Therefore, a list may contain a subset of the minerals in a specimen. Minerals that formed in-situ with one another are separated by a plus. Minerals that formed in the sequence are separated by a greater than (' > ') symbol.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Sphalerite > Quartz > Pyrite</code></li><li class="list-group-item"><code>Calcite > Quartz > Sphalerite > Pyrite</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:measuredChemistry"></span>
+    <span id="measuredChemistry"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">measuredChemistry</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/measuredChemistry">http://rs.tdwg.org/dwc/terms/measuredChemistry</a></td></tr>
+    <tr><td>Definition</td><td>A concise expression of the chemical composition of a mineral that shows the number of atoms of each element in a molecule, their spatial arrangement, and their linkage to each other.</td></tr>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>SiO2 (65.76)</code></li><li class="list-group-item"><code>TiO2 (32.120)</code></li><li class="list-group-item"><code>Al2O3 (2.21)</code></li><li class="list-group-item"><code>(Mg0.77Fe0.23)2SiO4</code></li><li class="list-group-item"><code>An6.4 Ab73.6 Or20</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:measuredChemistrySource"></span>
+    <span id="measuredChemistrySource"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">measuredChemistrySource</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/measuredChemistrySource">http://rs.tdwg.org/dwc/terms/measuredChemistrySource</a></td></tr>
+    <tr><td>Definition</td><td>A list (concatenated and separated) of resources associated with the reported measured chemistry described specifically enough to allow anyone in the future to use the same resources.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use full bibliographic citations, global unique identifiers, or resolvable and persistent IRIs. See the broader concept <a href="http://rs.tdwg.org/dwc/terms/associatedReferences">http://rs.tdwg.org/dwc/terms/associatedReferences</a>. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><code>Novak, G. A., & Gibbs, G. V. (1971). The crystal chemistry of the silicate garnets. American Mineralogist: Journal of Earth and Planetary Materials, 56(5-6), 791-825.</code></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:mineralogicalAnalysisProtocol"></span>
+    <span id="mineralogicalAnalysisProtocol"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">mineralogicalAnalysisProtocol</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/mineralogicalAnalysisProtocol">http://rs.tdwg.org/dwc/terms/mineralogicalAnalysisProtocol</a></td></tr>
+    <tr><td>Definition</td><td>A technique used to determine the chemical composition or crystallography of a mineral.</td></tr>
+    <tr><td>Notes</td><td>Acronyms should be avoided even for widely recognized annotations. Recommended best practice is to use a controlled vocabulary such as <a href="https://vocabs.ardc.edu.au/viewById/650">https://vocabs.ardc.edu.au/viewById/650</a>. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Wet Chemistry</code></li><li class="list-group-item"><code>X-ray fluorescence</code></li><li class="list-group-item"><code>Electron probe microanalysis</code></li><li class="list-group-item"><code>Scanning electron microscopy with energy-dispersive X-ray spectroscopy</code></li><li class="list-group-item"><code>X-ray diffraction</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:chemistryRemarks"></span>
+    <span id="chemistryRemarks"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">chemistryRemarks</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/chemistryRemarks">http://rs.tdwg.org/dwc/terms/chemistryRemarks</a></td></tr>
+    <tr><td>Definition</td><td>General remarks about the chemical and isotopic composition of a dwc:GeologicalMaterial.</td></tr>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td>Examples</td><td></td></tr>
+  </tbody>
+</table>
+
+
+<h2 id="identification">Identification</h2>
+
+<div class="my-4">
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:identificationID">identificationID</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:identificationType">identificationType</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimIdentification">verbatimIdentification</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:isAcceptedIdentification">isAcceptedIdentification</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:taxonFormula">taxonFormula</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:taxonSortOrder">taxonSortOrder</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:identificationQualifier">identificationQualifier</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:typeStatus">typeStatus</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:identifiedBy">identifiedBy</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:identifiedByID">identifiedByID</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:dateIdentified">dateIdentified</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:identificationReferences">identificationReferences</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:identificationVerificationStatus">identificationVerificationStatus</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:identificationRemarks">identificationRemarks</a>
+  </div>
+
+<table class="table">
+  <tbody>
+    <tr class="table-primary"><th colspan="2">Identification <span class="badge bg-primary float-end">Class</span></th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/Identification">http://rs.tdwg.org/dwc/terms/Identification</a></td></tr>
+    <tr><td>Definition</td><td>A classification of a resource according to a classification scheme.</td></tr>
+    <tr><td>Notes</td><td>For biology, the assignment of a scientific name or taxon concept to a dwc:Organism.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>a subspecies determination of an organism</code></li><li class="list-group-item"><code>a nomenclatural act designating a specimen as a holotype</code></li></ul></td></tr>
+  </tbody>
+</table>
+
+<p class="invisible">
+  <span id="dwc:identificationID"></span>
+    <span id="identificationID"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">identificationID</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/identificationID">http://rs.tdwg.org/dwc/terms/identificationID</a></td></tr>
+    <tr><td>Definition</td><td>An identifier for a dwc:Identification.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a globally unique identifier.</td></tr>
+    <tr><td>Examples</td><td><code>9992</code></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:identificationType"></span>
+    <span id="identificationType"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">identificationType</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/identificationType">http://rs.tdwg.org/dwc/terms/identificationType</a></td></tr>
+    <tr><td>Definition</td><td>A category that best matches the nature of a dwc:Identification.</td></tr>
+    <tr><td>Notes</td><td>The evidentiary basis, analytical approach, or inferential method by which an identification was determined. Values describe the dominant source of information supporting the identification (e.g., morphology, geography, molecular data, functional attributes, relationships, or taxonomic revision), independent of confidence level or taxonomic outcome. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>geography</code></li><li class="list-group-item"><code>taxonomicRevision</code></li><li class="list-group-item"><code>functionalAttributes</code></li><li class="list-group-item"><code>nucleotideAnalysis</code></li><li class="list-group-item"><code>karyotype</code></li><li class="list-group-item"><code>media</code></li><li class="list-group-item"><code>relationship</code></li><li class="list-group-item"><code>features</code></li><li class="list-group-item"><code>fineFeatures</code></li><li class="list-group-item"><code>unknown</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:verbatimIdentification"></span>
+    <span id="verbatimIdentification"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">verbatimIdentification</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimIdentification">http://rs.tdwg.org/dwc/terms/verbatimIdentification</a></td></tr>
+    <tr><td>Definition</td><td>A string representing the classification as it appeared in the original record.</td></tr>
+    <tr><td>Notes</td><td>This term is meant to allow the capture of an unaltered original identification/determination, including identification qualifiers, hybrid formulas, uncertainties, etc. This term is meant to be used in addition to dwc:geologicalMaterialNames or dwc:scientificName (and dwc:identificationQualifier etc.), not instead of it.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Peromyscus sp.</code></li><li class="list-group-item"><code>Ministrymon sp. nov. 1</code></li><li class="list-group-item"><code>Anser anser × Branta canadensis</code></li><li class="list-group-item"><code>Pachyporidae?</code></li><li class="list-group-item"><code>Potentilla × pantotricha Soják</code></li><li class="list-group-item"><code>Aconitum pilipes × A. variegatum</code></li><li class="list-group-item"><code>Lepomis auritus x cyanellus</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:isAcceptedIdentification"></span>
+    <span id="isAcceptedIdentification"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">isAcceptedIdentification</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/isAcceptedIdentification">http://rs.tdwg.org/dwc/terms/isAcceptedIdentification</a></td></tr>
+    <tr><td>Definition</td><td>An indicator that a dwc:Identification of a dwc:Organism is a currently an accepted or preferred one.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to follow the TDWG Boolean Controlled Vocabulary <a href="http://rs.tdwg.org/tag/doc/boolean/">http://rs.tdwg.org/tag/doc/boolean/</a>.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>true</code></li><li class="list-group-item"><code>false</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:taxonFormula"></span>
+    <span id="taxonFormula"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">taxonFormula</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/taxonFormula">http://rs.tdwg.org/dwc/terms/taxonFormula</a></td></tr>
+    <tr><td>Definition</td><td>A string representing the pattern to use to construct a dwc:Identification from dwc:Taxon names and identification qualifiers.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>A</code></li><li class="list-group-item"><code>not A</code></li><li class="list-group-item"><code>A ?</code></li><li class="list-group-item"><code>A or B</code></li><li class="list-group-item"><code>A and B</code></li><li class="list-group-item"><code>A x B</code></li><li class="list-group-item"><code>A cf.</code></li><li class="list-group-item"><code>A aff.</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:taxonSortOrder"></span>
+    <span id="taxonSortOrder"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">taxonSortOrder</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/taxonSortOrder">http://rs.tdwg.org/dwc/terms/taxonSortOrder</a></td></tr>
+    <tr><td>Definition</td><td>A numerical position of a dwc:Taxon in a dwc:taxonFormula.</td></tr>
+    <tr><td>Notes</td><td>The number signifies which dwc:Taxon in the related dwc:taxonFormula this record refers to (e.g., <code>1</code> refs to the <code>A</code> in the dwc:taxonFormula "A x B").</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>1</code></li><li class="list-group-item"><code>2</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:identificationQualifier"></span>
+    <span id="identificationQualifier"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">identificationQualifier</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/identificationQualifier">http://rs.tdwg.org/dwc/terms/identificationQualifier</a></td></tr>
+    <tr><td>Definition</td><td>A brief phrase or a standard term ("cf.", "aff.") to express the determiner's doubts about the dwc:Identification.</td></tr>
+    <tr><td>Notes</td><td>This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>aff. agrifolia var. oxyadenia</code> (for <code>Quercus aff. agrifolia var. oxyadenia</code> with accompanying values <code>Quercus</code> in genus, <code>agrifolia</code>  in specificEpithet, <code>oxyadenia</code>  in infraspecificEpithet, and <code>var.</code> in taxonRank)</li><li class="list-group-item"><code>cf. var. oxyadenia</code> (for <code>Quercus agrifolia cf. var. oxyadenia</code> with accompanying values <code>Quercus</code> in genus, <code>agrifolia</code> in specificEpithet, <code>oxyadenia</code> in infraspecificEpithet, and <code>var.</code> in taxonRank)</li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:typeStatus"></span>
+    <span id="typeStatus"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">typeStatus</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/typeStatus">http://rs.tdwg.org/dwc/terms/typeStatus</a></td></tr>
+    <tr><td>Definition</td><td>A list (concatenated and separated) of nomenclatural types (type status, typified scientific name, publication) applied to the subject.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>holotype of Ctenomys sociabilis. Pearson O. P., and M. I. Christie. 1985. Historia Natural, 5(37):388</code></li><li class="list-group-item"><code>holotype of Pinus abies | holotype of Picea abies</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:identifiedBy"></span>
+    <span id="identifiedBy"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">identifiedBy</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/identifiedBy">http://rs.tdwg.org/dwc/terms/identifiedBy</a></td></tr>
+    <tr><td>Definition</td><td>A name for a dcterms:Agent responsible for making a dwc:Identification.</td></tr>
+    <tr><td>Notes</td><td>When used in the context of an eco:Survey, the subject consists of all of the dwc:Identifications related to the eco:Survey. Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>James L. Patton</code></li><li class="list-group-item"><code>Theodore Pappenfuss | Robert Macey</code></li><li class="list-group-item"><code>MegaDetector V5</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:identifiedByID"></span>
+    <span id="identifiedByID"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">identifiedByID</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/identifiedByID">http://rs.tdwg.org/dwc/terms/identifiedByID</a></td></tr>
+    <tr><td>Definition</td><td>An identifier for a dcterms:Agent responsible for making a dwc:Identification.</td></tr>
+    <tr><td>Notes</td><td>When used in the context of an eco:Survey, the subject consists of all of the dwc:Identifications related to the eco:Survey. Recommended best practice is to provide a single identifier that disambiguates the details of the identifying dcterms:Agent. If a list is used, the order of the identifiers on the list should not be assumed to convey any semantics. Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="https://orcid.org/0000-0002-1825-0097">https://orcid.org/0000-0002-1825-0097</a></code> (for an individual)</li><li class="list-group-item"><code><a href="https://orcid.org/0000-0002-1825-0097">https://orcid.org/0000-0002-1825-0097</a> | <a href="https://orcid.org/0000-0002-1825-0098">https://orcid.org/0000-0002-1825-0098</a></code> (for a list of people)</li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:dateIdentified"></span>
+    <span id="dateIdentified"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">dateIdentified</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/dateIdentified">http://rs.tdwg.org/dwc/terms/dateIdentified</a></td></tr>
+    <tr><td>Definition</td><td>The date on which the dwc:Identification was made.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a date that conforms to ISO 8601-1:2019.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>1963-03-08T14:07-06:00</code> (8 Mar 1963 at or after 2:07pm and before 2:08pm in the time zone six hours earlier than UTC)</li><li class="list-group-item"><code>2009-02-20T08:40Z</code> (20 February 2009 at or after 8:40am and before 8:41 UTC)</li><li class="list-group-item"><code>2018-08-29T15:19</code> (29 August 2018 at or after 3:19pm and before 3:20pm local time)</li><li class="list-group-item"><code>1809-02-12</code> (within the day 12 February 1809)</li><li class="list-group-item"><code>1906-06</code> (in the month of June 1906)</li><li class="list-group-item"><code>1971</code> (in the year 1971)</li><li class="list-group-item"><code>2007-03-01T13:00:00Z/2008-05-11T15:30:00Z</code> (some time within the interval beginning 1 March 2007 at 1pm UTC and before 11 May 2008 at 3:30pm UTC)</li><li class="list-group-item"><code>1900/1909</code> (some time within the interval between the beginning of the year 1900 and before the year 1909)</li><li class="list-group-item"><code>2007-11-13/15</code> (some time in the interval between the beginning of 13 November 2007 and before 15 November 2007)</li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:identificationReferences"></span>
+    <span id="identificationReferences"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">identificationReferences</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/identificationReferences">http://rs.tdwg.org/dwc/terms/identificationReferences</a></td></tr>
+    <tr><td>Definition</td><td>A list (concatenated and separated) of dcterms:BibliographicResources used in a dwc:Identification.</td></tr>
+    <tr><td>Notes</td><td>When used in the context of an eco:Survey, the subject consists of all of the dwc:Identifications related to the eco:Survey. Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Aves del Noroeste Patagonico. Christie et al. 2004.</code></li><li class="list-group-item"><code>Stebbins, R. Field Guide to Western Reptiles and Amphibians. 3rd Edition. 2003. | Irschick, D.J. and Shaffer, H.B. (1997). The polytypic species revisited: Morphological differentiation among tiger salamanders (Ambystoma tigrinum) (Amphibia: Caudata). Herpetologica, 53(1), 30-49.</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:identificationVerificationStatus"></span>
+    <span id="identificationVerificationStatus"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">identificationVerificationStatus</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/identificationVerificationStatus">http://rs.tdwg.org/dwc/terms/identificationVerificationStatus</a></td></tr>
+    <tr><td>Definition</td><td>A categorical indicator of the extent to which a dwc:Identification has been verified to be correct.</td></tr>
+    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary such as that used in HISPID and ABCD. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><code>0</code> (unverified in HISPID/ABCD)</td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="dwc:identificationRemarks"></span>
+    <span id="identificationRemarks"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">identificationRemarks</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/identificationRemarks">http://rs.tdwg.org/dwc/terms/identificationRemarks</a></td></tr>
+    <tr><td>Definition</td><td>Comments or notes about the dwc:Identification.</td></tr>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td>Examples</td><td><code>Distinguished between Anthus correndera and Anthus hellmayri based on the comparative lengths of the uñas.</code></td></tr>
+  </tbody>
+</table>
+
+
 <h2 id="location">Location</h2>
 
 <div class="my-4">
@@ -1838,544 +2519,6 @@ This category contains terms that are generic in that they might apply to any ty
 </table>
 
 
-<h2 id="geologicalcontext">GeologicalContext</h2>
-
-<div class="my-4">
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:geologicalContextID">geologicalContextID</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:earliestEonOrLowestEonothem">earliestEonOrLowestEonothem</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:latestEonOrHighestEonothem">latestEonOrHighestEonothem</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:earliestEraOrLowestErathem">earliestEraOrLowestErathem</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:latestEraOrHighestErathem">latestEraOrHighestErathem</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:earliestPeriodOrLowestSystem">earliestPeriodOrLowestSystem</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:latestPeriodOrHighestSystem">latestPeriodOrHighestSystem</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:earliestEpochOrLowestSeries">earliestEpochOrLowestSeries</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:latestEpochOrHighestSeries">latestEpochOrHighestSeries</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:earliestAgeOrLowestStage">earliestAgeOrLowestStage</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:latestAgeOrHighestStage">latestAgeOrHighestStage</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:lowestBiostratigraphicZone">lowestBiostratigraphicZone</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:highestBiostratigraphicZone">highestBiostratigraphicZone</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:lithostratigraphicTerms">lithostratigraphicTerms</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:group">group</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:formation">formation</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:member">member</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:bed">bed</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:geologicEvent">geologicEvent</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:geologicProvince">geologicProvince</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:lithodemicUnit">lithodemicUnit</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:tectonicUnits">tectonicUnits</a>
-  </div>
-
-<table class="table">
-  <tbody>
-    <tr class="table-primary"><th colspan="2">GeologicalContext <span class="badge bg-primary float-end">Class</span></th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/GeologicalContext">http://rs.tdwg.org/dwc/terms/GeologicalContext</a></td></tr>
-    <tr><td>Definition</td><td>A set of geological designations, such as stratigraphy, that qualify a dcterms:Location or source of a dwc:MaterialEntity.</td></tr>
-    <tr><td>Notes</td><td></td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>a particular lithostratigraphic layer</code></li><li class="list-group-item"><code>a specific chronostratigraphic unit</code></li></ul></td></tr>
-  </tbody>
-</table>
-
-<p class="invisible">
-  <span id="dwc:geologicalContextID"></span>
-    <span id="geologicalContextID"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">geologicalContextID</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/geologicalContextID">http://rs.tdwg.org/dwc/terms/geologicalContextID</a></td></tr>
-    <tr><td>Definition</td><td>An identifier for a dwc:GeologicalContext.</td></tr>
-    <tr><td>Notes</td><td>May be a global unique identifier or an identifier specific to the data set.</td></tr>
-    <tr><td>Examples</td><td><code><a href="https://opencontext.org/subjects/e54377f7-4452-4315-b676-40679b10c4d9">https://opencontext.org/subjects/e54377f7-4452-4315-b676-40679b10c4d9</a></code></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:earliestEonOrLowestEonothem"></span>
-    <span id="earliestEonOrLowestEonothem"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">earliestEonOrLowestEonothem</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/earliestEonOrLowestEonothem">http://rs.tdwg.org/dwc/terms/earliestEonOrLowestEonothem</a></td></tr>
-    <tr><td>Definition</td><td>The full name of the earliest possible geochronologic eon or lowest chronostratigraphic eonothem or the informal name attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.</td></tr>
-    <tr><td>Notes</td><td></td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Phanerozoic</code></li><li class="list-group-item"><code>Proterozoic</code></li><li class="list-group-item"><code>Precambrian</code></li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:latestEonOrHighestEonothem"></span>
-    <span id="latestEonOrHighestEonothem"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">latestEonOrHighestEonothem</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/latestEonOrHighestEonothem">http://rs.tdwg.org/dwc/terms/latestEonOrHighestEonothem</a></td></tr>
-    <tr><td>Definition</td><td>The full name of the latest possible geochronologic eon or highest chronostratigraphic eonothem or the informal name attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.</td></tr>
-    <tr><td>Notes</td><td></td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Phanerozoic</code></li><li class="list-group-item"><code>Proterozoic</code></li><li class="list-group-item"><code>Precambrian</code></li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:earliestEraOrLowestErathem"></span>
-    <span id="earliestEraOrLowestErathem"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">earliestEraOrLowestErathem</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/earliestEraOrLowestErathem">http://rs.tdwg.org/dwc/terms/earliestEraOrLowestErathem</a></td></tr>
-    <tr><td>Definition</td><td>The full name of the earliest possible geochronologic era or lowest chronostratigraphic erathem attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.</td></tr>
-    <tr><td>Notes</td><td></td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Cenozoic</code></li><li class="list-group-item"><code>Mesozoic</code></li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:latestEraOrHighestErathem"></span>
-    <span id="latestEraOrHighestErathem"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">latestEraOrHighestErathem</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/latestEraOrHighestErathem">http://rs.tdwg.org/dwc/terms/latestEraOrHighestErathem</a></td></tr>
-    <tr><td>Definition</td><td>The full name of the latest possible geochronologic era or highest chronostratigraphic erathem attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.</td></tr>
-    <tr><td>Notes</td><td></td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Cenozoic</code></li><li class="list-group-item"><code>Mesozoic</code></li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:earliestPeriodOrLowestSystem"></span>
-    <span id="earliestPeriodOrLowestSystem"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">earliestPeriodOrLowestSystem</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/earliestPeriodOrLowestSystem">http://rs.tdwg.org/dwc/terms/earliestPeriodOrLowestSystem</a></td></tr>
-    <tr><td>Definition</td><td>The full name of the earliest possible geochronologic period or lowest chronostratigraphic system attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.</td></tr>
-    <tr><td>Notes</td><td></td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Neogene</code></li><li class="list-group-item"><code>Tertiary</code></li><li class="list-group-item"><code>Quaternary</code></li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:latestPeriodOrHighestSystem"></span>
-    <span id="latestPeriodOrHighestSystem"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">latestPeriodOrHighestSystem</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/latestPeriodOrHighestSystem">http://rs.tdwg.org/dwc/terms/latestPeriodOrHighestSystem</a></td></tr>
-    <tr><td>Definition</td><td>The full name of the latest possible geochronologic period or highest chronostratigraphic system attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.</td></tr>
-    <tr><td>Notes</td><td></td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Neogene</code></li><li class="list-group-item"><code>Tertiary</code></li><li class="list-group-item"><code>Quaternary</code></li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:earliestEpochOrLowestSeries"></span>
-    <span id="earliestEpochOrLowestSeries"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">earliestEpochOrLowestSeries</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/earliestEpochOrLowestSeries">http://rs.tdwg.org/dwc/terms/earliestEpochOrLowestSeries</a></td></tr>
-    <tr><td>Definition</td><td>The full name of the earliest possible geochronologic epoch or lowest chronostratigraphic series attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.</td></tr>
-    <tr><td>Notes</td><td></td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Holocene</code></li><li class="list-group-item"><code>Pleistocene</code></li><li class="list-group-item"><code>Ibexian Series</code></li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:latestEpochOrHighestSeries"></span>
-    <span id="latestEpochOrHighestSeries"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">latestEpochOrHighestSeries</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/latestEpochOrHighestSeries">http://rs.tdwg.org/dwc/terms/latestEpochOrHighestSeries</a></td></tr>
-    <tr><td>Definition</td><td>The full name of the latest possible geochronologic epoch or highest chronostratigraphic series attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.</td></tr>
-    <tr><td>Notes</td><td></td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Holocene</code></li><li class="list-group-item"><code>Pleistocene</code></li><li class="list-group-item"><code>Ibexian Series</code></li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:earliestAgeOrLowestStage"></span>
-    <span id="earliestAgeOrLowestStage"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">earliestAgeOrLowestStage</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/earliestAgeOrLowestStage">http://rs.tdwg.org/dwc/terms/earliestAgeOrLowestStage</a></td></tr>
-    <tr><td>Definition</td><td>The full name of the earliest possible geochronologic age or lowest chronostratigraphic stage attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.</td></tr>
-    <tr><td>Notes</td><td></td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Atlantic</code></li><li class="list-group-item"><code>Boreal</code></li><li class="list-group-item"><code>Skullrockian</code></li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:latestAgeOrHighestStage"></span>
-    <span id="latestAgeOrHighestStage"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">latestAgeOrHighestStage</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/latestAgeOrHighestStage">http://rs.tdwg.org/dwc/terms/latestAgeOrHighestStage</a></td></tr>
-    <tr><td>Definition</td><td>The full name of the latest possible geochronologic age or highest chronostratigraphic stage attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected.</td></tr>
-    <tr><td>Notes</td><td></td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Atlantic</code></li><li class="list-group-item"><code>Boreal</code></li><li class="list-group-item"><code>Skullrockian</code></li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:lowestBiostratigraphicZone"></span>
-    <span id="lowestBiostratigraphicZone"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">lowestBiostratigraphicZone</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/lowestBiostratigraphicZone">http://rs.tdwg.org/dwc/terms/lowestBiostratigraphicZone</a></td></tr>
-    <tr><td>Definition</td><td>The full name of the lowest possible geological biostratigraphic zone of the stratigraphic horizon from which the dwc:MaterialEntity was collected.</td></tr>
-    <tr><td>Notes</td><td></td></tr>
-    <tr><td>Examples</td><td><code>Maastrichtian</code></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:highestBiostratigraphicZone"></span>
-    <span id="highestBiostratigraphicZone"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">highestBiostratigraphicZone</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/highestBiostratigraphicZone">http://rs.tdwg.org/dwc/terms/highestBiostratigraphicZone</a></td></tr>
-    <tr><td>Definition</td><td>The full name of the highest possible geological biostratigraphic zone of the stratigraphic horizon from which the dwc:MaterialEntity was collected.</td></tr>
-    <tr><td>Notes</td><td></td></tr>
-    <tr><td>Examples</td><td><code>Blancan</code></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:lithostratigraphicTerms"></span>
-    <span id="lithostratigraphicTerms"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">lithostratigraphicTerms</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/lithostratigraphicTerms">http://rs.tdwg.org/dwc/terms/lithostratigraphicTerms</a></td></tr>
-    <tr><td>Definition</td><td>The combination of all lithostratigraphic names for the rock from which the dwc:MaterialEntity was collected.</td></tr>
-    <tr><td>Notes</td><td></td></tr>
-    <tr><td>Examples</td><td><code>Pleistocene-Weichselien</code></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:group"></span>
-    <span id="group"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">group</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/group">http://rs.tdwg.org/dwc/terms/group</a></td></tr>
-    <tr><td>Definition</td><td>The full name of the lithostratigraphic group from which the dwc:MaterialEntity was collected.</td></tr>
-    <tr><td>Notes</td><td></td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Bathurst</code></li><li class="list-group-item"><code>Lower Wealden</code></li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:formation"></span>
-    <span id="formation"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">formation</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/formation">http://rs.tdwg.org/dwc/terms/formation</a></td></tr>
-    <tr><td>Definition</td><td>The full name of the lithostratigraphic formation from which the dwc:MaterialEntity was collected.</td></tr>
-    <tr><td>Notes</td><td></td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Notch Peak Formation</code></li><li class="list-group-item"><code>House Limestone</code></li><li class="list-group-item"><code>Fillmore Formation</code></li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:member"></span>
-    <span id="member"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">member</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/member">http://rs.tdwg.org/dwc/terms/member</a></td></tr>
-    <tr><td>Definition</td><td>The full name of the lithostratigraphic member from which the dwc:MaterialEntity was collected.</td></tr>
-    <tr><td>Notes</td><td></td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Lava Dam Member</code></li><li class="list-group-item"><code>Hellnmaria Member</code></li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:bed"></span>
-    <span id="bed"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">bed</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/bed">http://rs.tdwg.org/dwc/terms/bed</a></td></tr>
-    <tr><td>Definition</td><td>The full name of the lithostratigraphic bed from which the dwc:MaterialEntity was collected.</td></tr>
-    <tr><td>Notes</td><td></td></tr>
-    <tr><td>Examples</td><td><code>Harlem coal</code></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:geologicEvent"></span>
-    <span id="geologicEvent"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">geologicEvent</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/geologicEvent">http://rs.tdwg.org/dwc/terms/geologicEvent</a></td></tr>
-    <tr><td>Definition</td><td>A name of an identifiable event during which one or more geologic processes acted to create or modify one or more dwc:GeologicalMaterials.</td></tr>
-    <tr><td>Notes</td><td>This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Sevier orogeny</code></li><li class="list-group-item"><code>Alleghanian orogeny</code></li><li class="list-group-item"><code>Alpine orogeny</code></li><li class="list-group-item"><code>Variscan orogeny</code></li><li class="list-group-item"><code>Vredefort impact</code></li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:geologicProvince"></span>
-    <span id="geologicProvince"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">geologicProvince</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/geologicProvince">http://rs.tdwg.org/dwc/terms/geologicProvince</a></td></tr>
-    <tr><td>Definition</td><td>An extensive named region with similar geologic history, structural, petrographic, or physiographic features throughout in which the GeologicalContext was located.</td></tr>
-    <tr><td>Notes</td><td>This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Northwest Province</code></li><li class="list-group-item"><code>Surprise Paleovalley</code></li><li class="list-group-item"><code>Basin and Range</code> ;<code>Coastal Plain</code></li><li class="list-group-item"><code>Piedmont</code></li><li class="list-group-item"><code>Blue Ridge</code></li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:lithodemicUnit"></span>
-    <span id="lithodemicUnit"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">lithodemicUnit</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/lithodemicUnit">http://rs.tdwg.org/dwc/terms/lithodemicUnit</a></td></tr>
-    <tr><td>Definition</td><td>A geologic unit that lacks stratification, is primarily comprised of intrusive, deformed, and/or metamorphosed rock, and is characterized by irregularly mixed lithology or highly complicated structural relations.</td></tr>
-    <tr><td>Notes</td><td>Due to the unstructured nature of complexes, both named units and lithological descriptive terms are acceptable values.</td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Catalina Core Complex</code></li><li class="list-group-item"><code>injection complex</code></li><li class="list-group-item"><code>New England Plutonic Suite</code></li><li class="list-group-item"><code>Sierra Nevada batholith</code></li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:tectonicUnits"></span>
-    <span id="tectonicUnits"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">tectonicUnits</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/tectonicUnits">http://rs.tdwg.org/dwc/terms/tectonicUnits</a></td></tr>
-    <tr><td>Definition</td><td>The combination of all tectonic unit names for the rock from which a dwc:MaterialEntity was collected.</td></tr>
-    <tr><td>Notes</td><td>Recommended best practice is to use an authoritative tectonic unit lexicon such as the Tectonic Map of Switzerland (TK500). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Upper Helvetic</code></li><li class="list-group-item"><code>Wildhorn Nappe Complex</code></li><li class="list-group-item"><code>Sublage Nappe</code></li></ul></td></tr>
-  </tbody>
-</table>
-
-
-<h2 id="identification">Identification</h2>
-
-<div class="my-4">
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:identificationID">identificationID</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:identificationType">identificationType</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:verbatimIdentification">verbatimIdentification</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:isAcceptedIdentification">isAcceptedIdentification</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:taxonFormula">taxonFormula</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:taxonSortOrder">taxonSortOrder</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:identificationQualifier">identificationQualifier</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:typeStatus">typeStatus</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:identifiedBy">identifiedBy</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:identifiedByID">identifiedByID</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:dateIdentified">dateIdentified</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:identificationReferences">identificationReferences</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:identificationVerificationStatus">identificationVerificationStatus</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:identificationRemarks">identificationRemarks</a>
-  </div>
-
-<table class="table">
-  <tbody>
-    <tr class="table-primary"><th colspan="2">Identification <span class="badge bg-primary float-end">Class</span></th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/Identification">http://rs.tdwg.org/dwc/terms/Identification</a></td></tr>
-    <tr><td>Definition</td><td>A classification of a resource according to a classification scheme.</td></tr>
-    <tr><td>Notes</td><td>For biology, the assignment of a scientific name or taxon concept to a dwc:Organism.</td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>a subspecies determination of an organism</code></li><li class="list-group-item"><code>a nomenclatural act designating a specimen as a holotype</code></li></ul></td></tr>
-  </tbody>
-</table>
-
-<p class="invisible">
-  <span id="dwc:identificationID"></span>
-    <span id="identificationID"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">identificationID</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/identificationID">http://rs.tdwg.org/dwc/terms/identificationID</a></td></tr>
-    <tr><td>Definition</td><td>An identifier for a dwc:Identification.</td></tr>
-    <tr><td>Notes</td><td>Recommended best practice is to use a globally unique identifier.</td></tr>
-    <tr><td>Examples</td><td><code>9992</code></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:identificationType"></span>
-    <span id="identificationType"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">identificationType</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/identificationType">http://rs.tdwg.org/dwc/terms/identificationType</a></td></tr>
-    <tr><td>Definition</td><td>A category that best matches the nature of a dwc:Identification.</td></tr>
-    <tr><td>Notes</td><td>The evidentiary basis, analytical approach, or inferential method by which an identification was determined. Values describe the dominant source of information supporting the identification (e.g., morphology, geography, molecular data, functional attributes, relationships, or taxonomic revision), independent of confidence level or taxonomic outcome. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>geography</code></li><li class="list-group-item"><code>taxonomicRevision</code></li><li class="list-group-item"><code>functionalAttributes</code></li><li class="list-group-item"><code>nucleotideAnalysis</code></li><li class="list-group-item"><code>karyotype</code></li><li class="list-group-item"><code>media</code></li><li class="list-group-item"><code>relationship</code></li><li class="list-group-item"><code>features</code></li><li class="list-group-item"><code>fineFeatures</code></li><li class="list-group-item"><code>unknown</code></li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:verbatimIdentification"></span>
-    <span id="verbatimIdentification"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">verbatimIdentification</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimIdentification">http://rs.tdwg.org/dwc/terms/verbatimIdentification</a></td></tr>
-    <tr><td>Definition</td><td>A string representing the classification as it appeared in the original record.</td></tr>
-    <tr><td>Notes</td><td>This term is meant to allow the capture of an unaltered original identification/determination, including identification qualifiers, hybrid formulas, uncertainties, etc. This term is meant to be used in addition to dwc:geologicalMaterialNames or dwc:scientificName (and dwc:identificationQualifier etc.), not instead of it.</td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Peromyscus sp.</code></li><li class="list-group-item"><code>Ministrymon sp. nov. 1</code></li><li class="list-group-item"><code>Anser anser × Branta canadensis</code></li><li class="list-group-item"><code>Pachyporidae?</code></li><li class="list-group-item"><code>Potentilla × pantotricha Soják</code></li><li class="list-group-item"><code>Aconitum pilipes × A. variegatum</code></li><li class="list-group-item"><code>Lepomis auritus x cyanellus</code></li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:isAcceptedIdentification"></span>
-    <span id="isAcceptedIdentification"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">isAcceptedIdentification</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/isAcceptedIdentification">http://rs.tdwg.org/dwc/terms/isAcceptedIdentification</a></td></tr>
-    <tr><td>Definition</td><td>An indicator that a dwc:Identification of a dwc:Organism is a currently an accepted or preferred one.</td></tr>
-    <tr><td>Notes</td><td>Recommended best practice is to follow the TDWG Boolean Controlled Vocabulary <a href="http://rs.tdwg.org/tag/doc/boolean/">http://rs.tdwg.org/tag/doc/boolean/</a>.</td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>true</code></li><li class="list-group-item"><code>false</code></li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:taxonFormula"></span>
-    <span id="taxonFormula"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">taxonFormula</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/taxonFormula">http://rs.tdwg.org/dwc/terms/taxonFormula</a></td></tr>
-    <tr><td>Definition</td><td>A string representing the pattern to use to construct a dwc:Identification from dwc:Taxon names and identification qualifiers.</td></tr>
-    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>A</code></li><li class="list-group-item"><code>not A</code></li><li class="list-group-item"><code>A ?</code></li><li class="list-group-item"><code>A or B</code></li><li class="list-group-item"><code>A and B</code></li><li class="list-group-item"><code>A x B</code></li><li class="list-group-item"><code>A cf.</code></li><li class="list-group-item"><code>A aff.</code></li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:taxonSortOrder"></span>
-    <span id="taxonSortOrder"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">taxonSortOrder</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/taxonSortOrder">http://rs.tdwg.org/dwc/terms/taxonSortOrder</a></td></tr>
-    <tr><td>Definition</td><td>A numerical position of a dwc:Taxon in a dwc:taxonFormula.</td></tr>
-    <tr><td>Notes</td><td>The number signifies which dwc:Taxon in the related dwc:taxonFormula this record refers to (e.g., <code>1</code> refs to the <code>A</code> in the dwc:taxonFormula "A x B").</td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>1</code></li><li class="list-group-item"><code>2</code></li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:identificationQualifier"></span>
-    <span id="identificationQualifier"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">identificationQualifier</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/identificationQualifier">http://rs.tdwg.org/dwc/terms/identificationQualifier</a></td></tr>
-    <tr><td>Definition</td><td>A brief phrase or a standard term ("cf.", "aff.") to express the determiner's doubts about the dwc:Identification.</td></tr>
-    <tr><td>Notes</td><td>This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>aff. agrifolia var. oxyadenia</code> (for <code>Quercus aff. agrifolia var. oxyadenia</code> with accompanying values <code>Quercus</code> in genus, <code>agrifolia</code>  in specificEpithet, <code>oxyadenia</code>  in infraspecificEpithet, and <code>var.</code> in taxonRank)</li><li class="list-group-item"><code>cf. var. oxyadenia</code> (for <code>Quercus agrifolia cf. var. oxyadenia</code> with accompanying values <code>Quercus</code> in genus, <code>agrifolia</code> in specificEpithet, <code>oxyadenia</code> in infraspecificEpithet, and <code>var.</code> in taxonRank)</li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:typeStatus"></span>
-    <span id="typeStatus"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">typeStatus</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/typeStatus">http://rs.tdwg.org/dwc/terms/typeStatus</a></td></tr>
-    <tr><td>Definition</td><td>A list (concatenated and separated) of nomenclatural types (type status, typified scientific name, publication) applied to the subject.</td></tr>
-    <tr><td>Notes</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>holotype of Ctenomys sociabilis. Pearson O. P., and M. I. Christie. 1985. Historia Natural, 5(37):388</code></li><li class="list-group-item"><code>holotype of Pinus abies | holotype of Picea abies</code></li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:identifiedBy"></span>
-    <span id="identifiedBy"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">identifiedBy</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/identifiedBy">http://rs.tdwg.org/dwc/terms/identifiedBy</a></td></tr>
-    <tr><td>Definition</td><td>A name for a dcterms:Agent responsible for making a dwc:Identification.</td></tr>
-    <tr><td>Notes</td><td>When used in the context of an eco:Survey, the subject consists of all of the dwc:Identifications related to the eco:Survey. Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>James L. Patton</code></li><li class="list-group-item"><code>Theodore Pappenfuss | Robert Macey</code></li><li class="list-group-item"><code>MegaDetector V5</code></li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:identifiedByID"></span>
-    <span id="identifiedByID"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">identifiedByID</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/identifiedByID">http://rs.tdwg.org/dwc/terms/identifiedByID</a></td></tr>
-    <tr><td>Definition</td><td>An identifier for a dcterms:Agent responsible for making a dwc:Identification.</td></tr>
-    <tr><td>Notes</td><td>When used in the context of an eco:Survey, the subject consists of all of the dwc:Identifications related to the eco:Survey. Recommended best practice is to provide a single identifier that disambiguates the details of the identifying dcterms:Agent. If a list is used, the order of the identifiers on the list should not be assumed to convey any semantics. Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="https://orcid.org/0000-0002-1825-0097">https://orcid.org/0000-0002-1825-0097</a></code> (for an individual)</li><li class="list-group-item"><code><a href="https://orcid.org/0000-0002-1825-0097">https://orcid.org/0000-0002-1825-0097</a> | <a href="https://orcid.org/0000-0002-1825-0098">https://orcid.org/0000-0002-1825-0098</a></code> (for a list of people)</li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:dateIdentified"></span>
-    <span id="dateIdentified"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">dateIdentified</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/dateIdentified">http://rs.tdwg.org/dwc/terms/dateIdentified</a></td></tr>
-    <tr><td>Definition</td><td>The date on which the dwc:Identification was made.</td></tr>
-    <tr><td>Notes</td><td>Recommended best practice is to use a date that conforms to ISO 8601-1:2019.</td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>1963-03-08T14:07-06:00</code> (8 Mar 1963 at or after 2:07pm and before 2:08pm in the time zone six hours earlier than UTC)</li><li class="list-group-item"><code>2009-02-20T08:40Z</code> (20 February 2009 at or after 8:40am and before 8:41 UTC)</li><li class="list-group-item"><code>2018-08-29T15:19</code> (29 August 2018 at or after 3:19pm and before 3:20pm local time)</li><li class="list-group-item"><code>1809-02-12</code> (within the day 12 February 1809)</li><li class="list-group-item"><code>1906-06</code> (in the month of June 1906)</li><li class="list-group-item"><code>1971</code> (in the year 1971)</li><li class="list-group-item"><code>2007-03-01T13:00:00Z/2008-05-11T15:30:00Z</code> (some time within the interval beginning 1 March 2007 at 1pm UTC and before 11 May 2008 at 3:30pm UTC)</li><li class="list-group-item"><code>1900/1909</code> (some time within the interval between the beginning of the year 1900 and before the year 1909)</li><li class="list-group-item"><code>2007-11-13/15</code> (some time in the interval between the beginning of 13 November 2007 and before 15 November 2007)</li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:identificationReferences"></span>
-    <span id="identificationReferences"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">identificationReferences</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/identificationReferences">http://rs.tdwg.org/dwc/terms/identificationReferences</a></td></tr>
-    <tr><td>Definition</td><td>A list (concatenated and separated) of dcterms:BibliographicResources used in a dwc:Identification.</td></tr>
-    <tr><td>Notes</td><td>When used in the context of an eco:Survey, the subject consists of all of the dwc:Identifications related to the eco:Survey. Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Aves del Noroeste Patagonico. Christie et al. 2004.</code></li><li class="list-group-item"><code>Stebbins, R. Field Guide to Western Reptiles and Amphibians. 3rd Edition. 2003. | Irschick, D.J. and Shaffer, H.B. (1997). The polytypic species revisited: Morphological differentiation among tiger salamanders (Ambystoma tigrinum) (Amphibia: Caudata). Herpetologica, 53(1), 30-49.</code></li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:identificationVerificationStatus"></span>
-    <span id="identificationVerificationStatus"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">identificationVerificationStatus</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/identificationVerificationStatus">http://rs.tdwg.org/dwc/terms/identificationVerificationStatus</a></td></tr>
-    <tr><td>Definition</td><td>A categorical indicator of the extent to which a dwc:Identification has been verified to be correct.</td></tr>
-    <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary such as that used in HISPID and ABCD. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
-    <tr><td>Examples</td><td><code>0</code> (unverified in HISPID/ABCD)</td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:identificationRemarks"></span>
-    <span id="identificationRemarks"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">identificationRemarks</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/identificationRemarks">http://rs.tdwg.org/dwc/terms/identificationRemarks</a></td></tr>
-    <tr><td>Definition</td><td>Comments or notes about the dwc:Identification.</td></tr>
-    <tr><td>Notes</td><td></td></tr>
-    <tr><td>Examples</td><td><code>Distinguished between Anthus correndera and Anthus hellmayri based on the comparative lengths of the uñas.</code></td></tr>
-  </tbody>
-</table>
-
-
 <h2 id="materialentity">MaterialEntity</h2>
 
 <div class="my-4">
@@ -2865,149 +3008,6 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Definition</td><td>Comments or notes about a dwc:MaterialEntity.</td></tr>
     <tr><td>Notes</td><td></td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>found in association with charred remains</code></li><li class="list-group-item"><code>some original fragments missing</code></li></ul></td></tr>
-  </tbody>
-</table>
-
-
-<h2 id="geologicalmaterial">GeologicalMaterial</h2>
-
-<div class="my-4">
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:geologicalMaterialNames">geologicalMaterialNames</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:geologicMaterialNameID">geologicMaterialNameID</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:geologicalMaterialNameTypes">geologicalMaterialNameTypes</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:classificationCodes">classificationCodes</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:mineralSequence">mineralSequence</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:measuredChemistry">measuredChemistry</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:measuredChemistrySource">measuredChemistrySource</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:mineralogicalAnalysisProtocol">mineralogicalAnalysisProtocol</a>
-      <a class="btn btn-sm btn-outline-primary m-1" href="#dwc:chemistryRemarks">chemistryRemarks</a>
-  </div>
-
-<table class="table">
-  <tbody>
-    <tr class="table-primary"><th colspan="2">GeologicalMaterial <span class="badge bg-primary float-end">Class</span></th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/GeologicalMaterial">http://rs.tdwg.org/dwc/terms/GeologicalMaterial</a></td></tr>
-    <tr><td>Definition</td><td>A dwc:MaterialEntity that is geological in nature.</td></tr>
-    <tr><td>Notes</td><td></td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>a specific mineral</code></li><li class="list-group-item"><code>a specific rock</code></li><li class="list-group-item"><code>a specific ore</code></li></ul></td></tr>
-  </tbody>
-</table>
-
-<p class="invisible">
-  <span id="dwc:geologicalMaterialNames"></span>
-    <span id="geologicalMaterialNames"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">geologicalMaterialNames</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/geologicalMaterialNames">http://rs.tdwg.org/dwc/terms/geologicalMaterialNames</a></td></tr>
-    <tr><td>Definition</td><td>A list (concatenated and separated) of mineral or lithotaxon names for a dwc:GeologicalMaterial.</td></tr>
-    <tr><td>Notes</td><td>May includes both informal (e.g., variety, synonym) and formal (classification) names. The first name in the list should be considered the preferred name. Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>quartz | smoky quartz</code></li><li class="list-group-item"><code>muscovite</code></li><li class="list-group-item"><code>garnet group</code></li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:geologicMaterialNameID"></span>
-    <span id="geologicMaterialNameID"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">geologicMaterialNameID</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/geologicMaterialNameID">http://rs.tdwg.org/dwc/terms/geologicMaterialNameID</a></td></tr>
-    <tr><td>Definition</td><td>An identifier for a mineral or lithotaxon name for a dwc:GeologicalMaterial. May be a global unique identifier or an identifier specific to the data set.</td></tr>
-    <tr><td>Notes</td><td>Recommended best practice is to use a persistent, globally unique identifier.</td></tr>
-    <tr><td>Examples</td><td><code><a href="https://geospecimens.org/api/v1/catalog/resource/mineral-name/ba673bdf-7228-11f0-a057-52f8e1bb0628">https://geospecimens.org/api/v1/catalog/resource/mineral-name/ba673bdf-7228-11f0-a057-52f8e1bb0628</a></code></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:geologicalMaterialNameTypes"></span>
-    <span id="geologicalMaterialNameTypes"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">geologicalMaterialNameTypes</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/geologicalMaterialNameTypes">http://rs.tdwg.org/dwc/terms/geologicalMaterialNameTypes</a></td></tr>
-    <tr><td>Definition</td><td>A list (concatenated and separated) of the types of names provided in dwc:geologicalMaterialNames.</td></tr>
-    <tr><td>Notes</td><td>If this term is populated, it should have an equal number of items in the list as for the list in dwc:geologicalMaterialNames and the types should have the same order as the names to which they refer. Recommended best practice is to use a controlled vocabulary for the values in a list (e.g., <a href="https://kos.geospecimens.org/def/geological-specimen-name-type">https://kos.geospecimens.org/def/geological-specimen-name-type</a>). See Gavryliv (2023), <a href="https://doi.org/10.1180/mgm.2023.23">https://doi.org/10.1180/mgm.2023.23</a>, for a detailed breakdown of informal, alternate names.</td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>species | variety</code></li><li class="list-group-item"><code>species</code></li><li class="list-group-item"><code>group</code></li><li class="list-group-item"> <code>synonym</code></li><li class="list-group-item"><code>classification</code></li><li class="list-group-item"><code>historical</code></li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:classificationCodes"></span>
-    <span id="classificationCodes"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">classificationCodes</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/classificationCodes">http://rs.tdwg.org/dwc/terms/classificationCodes</a></td></tr>
-    <tr><td>Definition</td><td>A list (concatenated and separated) of codes that each identifies a name from a classification system applied to a dwc:GeologicalMaterial.</td></tr>
-    <tr><td>Notes</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>71.02.02a.01</code> ("muscovite" in the Dana classification system)</li><li class="list-group-item"><code>9.AD.25</code> ("garnet group" in the Nickel-Strunz classification system)</li><li class="list-group-item"><code>75.01.03.01 | 4.DA.05</code> ("quartz" the Dana classification system and "quartz group" in the Nickel-Strunz classification system)</li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:mineralSequence"></span>
-    <span id="mineralSequence"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">mineralSequence</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/mineralSequence">http://rs.tdwg.org/dwc/terms/mineralSequence</a></td></tr>
-    <tr><td>Definition</td><td>A list (concatenated and separated) of minerals in a dwc:GeologicalMaterial, ordered in a manner that illustrates the relative timing of mineral formation.</td></tr>
-    <tr><td>Notes</td><td>The list should only contain minerals that belong to a readily identifiable sequence of formation. Therefore, a list may contain a subset of the minerals in a specimen. Minerals that formed in-situ with one another are separated by a plus. Minerals that formed in the sequence are separated by a greater than (' > ') symbol.</td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Sphalerite > Quartz > Pyrite</code></li><li class="list-group-item"><code>Calcite > Quartz > Sphalerite > Pyrite</code></li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:measuredChemistry"></span>
-    <span id="measuredChemistry"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">measuredChemistry</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/measuredChemistry">http://rs.tdwg.org/dwc/terms/measuredChemistry</a></td></tr>
-    <tr><td>Definition</td><td>A concise expression of the chemical composition of a mineral that shows the number of atoms of each element in a molecule, their spatial arrangement, and their linkage to each other.</td></tr>
-    <tr><td>Notes</td><td></td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>SiO2 (65.76)</code></li><li class="list-group-item"><code>TiO2 (32.120)</code></li><li class="list-group-item"><code>Al2O3 (2.21)</code></li><li class="list-group-item"><code>(Mg0.77Fe0.23)2SiO4</code></li><li class="list-group-item"><code>An6.4 Ab73.6 Or20</code></li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:measuredChemistrySource"></span>
-    <span id="measuredChemistrySource"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">measuredChemistrySource</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/measuredChemistrySource">http://rs.tdwg.org/dwc/terms/measuredChemistrySource</a></td></tr>
-    <tr><td>Definition</td><td>A list (concatenated and separated) of resources associated with the reported measured chemistry described specifically enough to allow anyone in the future to use the same resources.</td></tr>
-    <tr><td>Notes</td><td>Recommended best practice is to use full bibliographic citations, global unique identifiers, or resolvable and persistent IRIs. See the broader concept <a href="http://rs.tdwg.org/dwc/terms/associatedReferences">http://rs.tdwg.org/dwc/terms/associatedReferences</a>. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
-    <tr><td>Examples</td><td><code>Novak, G. A., & Gibbs, G. V. (1971). The crystal chemistry of the silicate garnets. American Mineralogist: Journal of Earth and Planetary Materials, 56(5-6), 791-825.</code></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:mineralogicalAnalysisProtocol"></span>
-    <span id="mineralogicalAnalysisProtocol"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">mineralogicalAnalysisProtocol</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/mineralogicalAnalysisProtocol">http://rs.tdwg.org/dwc/terms/mineralogicalAnalysisProtocol</a></td></tr>
-    <tr><td>Definition</td><td>A technique used to determine the chemical composition or crystallography of a mineral.</td></tr>
-    <tr><td>Notes</td><td>Acronyms should be avoided even for widely recognized annotations. Recommended best practice is to use a controlled vocabulary such as <a href="https://vocabs.ardc.edu.au/viewById/650">https://vocabs.ardc.edu.au/viewById/650</a>. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
-    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Wet Chemistry</code></li><li class="list-group-item"><code>X-ray fluorescence</code></li><li class="list-group-item"><code>Electron probe microanalysis</code></li><li class="list-group-item"><code>Scanning electron microscopy with energy-dispersive X-ray spectroscopy</code></li><li class="list-group-item"><code>X-ray diffraction</code></li></ul></td></tr>
-  </tbody>
-</table>
-<p class="invisible">
-  <span id="dwc:chemistryRemarks"></span>
-    <span id="chemistryRemarks"></span>
-  </p>
-<table class="table">
-  <tbody>
-    <tr class="table-secondary"><th colspan="2">chemistryRemarks</th></tr>
-    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/chemistryRemarks">http://rs.tdwg.org/dwc/terms/chemistryRemarks</a></td></tr>
-    <tr><td>Definition</td><td>General remarks about the chemical and isotopic composition of a dwc:GeologicalMaterial.</td></tr>
-    <tr><td>Notes</td><td></td></tr>
-    <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
 
