@@ -11,18 +11,3 @@
     }
   }
 }
-
-@media (min-width: 992px) {
-  .toc {
-    position: sticky;
-    top: 1rem;
-    max-height: calc(100vh - 2rem);
-    overflow-y: auto;
-  }
-
-  .qrg-toc .toc {
-    position: static;
-    max-height: none;
-    overflow-y: visible;
-  }
-}
