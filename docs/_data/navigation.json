@@ -106,6 +106,10 @@
         "href": "/maintenance/"
       },
       {
+        "text": "Contributing",
+        "href": "/contributing/"
+      },
+      {
         "text": "Questions & Answers",
         "href": "https://github.com/tdwg/dwc-qa/blob/master/README.md"
       }
