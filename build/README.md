@@ -126,16 +126,30 @@ For a normal Darwin Core development or release cycle:
 6. **Review the generated result.** Inspect console output, the build log,
    `git status`, the repository diff, generated documents, schemas, and
    derivatives. See [3.6](#36-review-the-generated-result).
-7. **Run the identical build again.** An unchanged same-input rerun should
+7. **Review the rendered website locally.** Serve the generated `docs/` tree
+   with Jekyll and review the site through the browser, including navigation,
+   generated documents, QRG/Designer links, and localized pages. See
+   [3.7](#37-review-the-website-locally).
+8. **Correct and rerun as needed.** Make corrections in authoritative inputs,
+   configuration, templates, translations, or other build sources and rebuild.
+   See [3.8](#38-correct-and-rerun).
+9. **Run the identical build again.** An unchanged same-input rerun should
    report `Transaction committed: 0 repository files updated.` See
-   [3.8](#38-confirm-idempotence).
-8. **Commit and proceed through review/publication.** Commit the intended
-   Darwin Core source/configuration and generated changes, then publish through
-   the normal review and release process. See
-   [3.9](#39-commit-review-and-publish).
+   [3.9](#39-confirm-idempotence).
+10. **Commit the reviewed candidate.** Commit only the intended source,
+    configuration, and generated changes after local review. See
+    [3.10](#310-commit-the-reviewed-candidate).
+11. **Publish the committed candidate to the development preview site.** Push
+    the candidate branch configured by `.github/workflows/dev-preview.yml`; the
+    workflow renders the committed `docs/` tree with Jekyll and deploys it to
+    `https://dwc-dev-preview.tdwg.org/` for public scrutiny. See
+    [3.11](#311-publish-the-development-preview).
+12. **Proceed through formal review and publication.** After review/approval,
+    publish the generated artifacts and documents through the normal Darwin
+    Core/TDWG release process. See [3.12](#312-final-review-and-publication).
 
 When changing build machinery or artifact lifecycle behavior, the
-[clean-build reconstruction test](#311-clean-build-reconstruction-test) is also
+[clean-build reconstruction test](#314-clean-build-reconstruction-test) is also
 recommended.
 
 # 3 Detailed workflow
@@ -307,10 +321,47 @@ Do not hand-edit generated current artifacts to make a persistent change.
 Correct the applicable authoritative input, configuration, or template and
 rerun the build.
 
-## 3.7 Correct and rerun
+## 3.7 Review the website locally
 
-If the proposed or generated result is wrong, correct the authoritative input
-and rerun against the same selected `rs.tdwg.org` state.
+The repository diff is necessary but not sufficient for reviewing generated
+human-readable content. Review the rendered site through Jekyll before
+publishing a candidate for broader scrutiny.
+
+From the repository root:
+
+```bash
+cd docs
+bundle _2.3.23_ exec jekyll serve --livereload
+```
+
+Then review:
+
+```text
+http://127.0.0.1:4000/
+```
+
+Use the rendered website rather than the Markdown source as the primary
+human-readable review surface. Check at least:
+
+- the top-level navigation and all menu destinations;
+- the Darwin Core List of Terms and controlled-vocabulary pages;
+- the Conceptual Model, Data Package Guide, Schemas document, and other
+  configured Standard Documents;
+- the Quick Reference Guide and links between the QRG and Designer;
+- the DwC-DP Designer;
+- localized navigation and localized generated pages where applicable;
+- links to current and dated resources; and
+- obvious layout, missing-resource, or Jekyll-rendering failures.
+
+`--livereload` is useful during correction because the local site refreshes as
+generated or hand-maintained source files change. Stop the server before
+switching branches or performing repository cleanup if doing so would alter the
+served `docs/` tree.
+
+## 3.8 Correct and rerun
+
+If the proposed, generated, or rendered result is wrong, correct the
+authoritative input and rerun against the same selected `rs.tdwg.org` state.
 
 Depending on the problem, the correction may belong in:
 
@@ -318,14 +369,19 @@ Depending on the problem, the correction may belong in:
 - `build_artifacts.yaml`;
 - an artifact term-membership input;
 - a template;
-- a translation or controlled-vocabulary resource; or
+- a translation or controlled-vocabulary resource;
+- website navigation or other hand-maintained site source; or
 - another build source file.
 
+Do not hand-edit a generated current artifact to make a persistent correction.
 The build is intended to converge on the state represented by its current
 inputs. There is no need to preserve a generated Darwin Core output merely so
 that it can serve as the input to the next build.
 
-## 3.8 Confirm idempotence
+After corrections, repeat the dry run, normal build, repository review, and
+rendered-site review as appropriate.
+
+## 3.9 Confirm idempotence
 
 Run the identical normal build again without changing either repository state
 or configuration.
@@ -343,22 +399,93 @@ The intended invariant is stronger than simple file preservation: rebuilding
 from the same authoritative inputs must select the same artifact versions and
 produce the same current generated state.
 
-## 3.9 Commit, review, and publish
+## 3.10 Commit the reviewed candidate
 
-Once the Darwin Core generated state is satisfactory:
+Once the generated repository state and locally rendered website are
+satisfactory:
 
 1. inspect the complete diff;
 2. exclude local development files and build logs;
-3. commit the intended source/configuration and generated changes;
-4. create the appropriate pull request and conduct normal review; and
-5. after approval, publish the generated artifacts and documents through the
-   normal Darwin Core/TDWG release process.
+3. commit the intended source/configuration and generated changes; and
+4. verify that the branch is clean except for any deliberately uncommitted work
+   that is outside the candidate.
+
+The development preview workflow deploys committed repository content. Do not
+rely on uncommitted local files when assessing what will appear on the preview
+site.
+
+## 3.11 Publish the development preview
+
+The Darwin Core repository includes:
+
+```text
+.github/workflows/dev-preview.yml
+```
+
+for publishing a candidate website to:
+
+```text
+https://dwc-dev-preview.tdwg.org/
+```
+
+Before pushing a candidate, verify that the workflow's `on.push.branches`
+setting names the branch intended for preview. The preview workflow should
+render the already-reviewed committed `docs/` tree; it should not rerun the
+Python artifact/page generation step against some other `rs.tdwg.org` source
+state.
+
+Push the reviewed candidate branch, for example:
+
+```bash
+git push -u origin BRANCH
+```
+
+A push to the branch configured in `dev-preview.yml` triggers the preview
+deployment. The workflow:
+
+1. checks out the committed Darwin Core branch;
+2. builds `./docs` with Jekyll into `./_site`; and
+3. synchronizes the rendered `_site/` tree to the TDWG development-preview
+   host.
+
+The deployment uses `rsync --delete`, so the preview site represents the
+rendered contents of the deployed candidate rather than an accumulation of
+files from earlier previews.
+
+After the workflow succeeds, review the public candidate at:
+
+```text
+https://dwc-dev-preview.tdwg.org/
+```
+
+Repeat the same substantive website checks performed locally. The public
+preview is particularly useful for Executive Committee review and other
+external scrutiny before production publication.
+
+If additional corrections are required, make them in the appropriate source,
+rerun the build as needed, repeat local Jekyll review, commit the correction,
+and push the candidate branch again.
+
+## 3.12 Final review and publication
+
+After the candidate has passed local and public preview review:
+
+1. conduct the applicable pull-request, Maintenance Group, Executive Committee,
+   or other required review;
+2. merge or otherwise approve the Darwin Core candidate according to the
+   applicable release procedure; and
+3. publish the generated artifacts and documents through the normal
+   Darwin Core/TDWG release process.
 
 For the `rs.tdwg.org` publication step, copy the reviewed build products to the
-appropriate canonical and immutable/version locations. The next release build
-will then see those published canonical artifacts as its comparison baseline.
+appropriate canonical and immutable/version locations. In particular, the
+configured `dwc-a/` publication products become the published DwC-A canonical
+and versioned resources, and the complete configured `dwc-dp/` package output
+is copied to the appropriate declared DwC-DP version location. The next Darwin
+Core release build will then see the published DwC-A canonical artifacts as its
+comparison baseline.
 
-## 3.10 Generating drafts
+## 3.13 Generating drafts
 
 The same workflow can be used before ratification.
 
@@ -374,14 +501,17 @@ A normal draft cycle is:
 3. run the Darwin Core build with `--dry-run`;
 4. inspect the proposed result;
 5. run the normal build when useful for document/artifact review;
-6. correct authoritative inputs; and
-7. rerun on the same branches.
+6. review the rendered website locally;
+7. correct authoritative inputs;
+8. rerun on the same branches; and
+9. when useful, commit and push the candidate to the development-preview branch
+   for external review.
 
 When the draft is finalized, use the actual ratification/release date and the
 appropriate pre-release publication state for the final release processing and
 build.
 
-## 3.11 Clean-build reconstruction test
+## 3.14 Clean-build reconstruction test
 
 When build machinery or publication lifecycle behavior changes, a clean-build
 test can verify that generated Darwin Core artifacts are truly outputs rather
@@ -416,6 +546,7 @@ stable generated state
     -> reconstruction from authoritative inputs and publication baseline
     -> idempotent build (0 updates)
 ```
+
 
 # 4 What `build_artifacts.py` generates
 
@@ -545,8 +676,8 @@ resources beneath `docs/`, including:
 - the Darwin Core Schemas document; and
 - localized Quick Reference Guide documentation.
 
-Document metadata come from the applicable Document configuration and metadata
-in the selected `rs.tdwg.org` state.
+Document metadata come from the processed authoritative Document metadata in
+the selected `rs.tdwg.org` state.
 
 The Document lifecycle machinery can preserve the preceding current
 `index.md` as a dated historical document when a new Document version is being
@@ -861,8 +992,8 @@ extensions, and controlled-vocabulary XML artifacts.
 ### Documents
 
 Standard and supporting documents enabled in the configuration are generated
-under `docs/`. Their metadata come from the corresponding authoritative
-Document configuration in the selected `rs.tdwg.org` source state.
+under `docs/`. Their metadata come from the processed authoritative Document
+metadata in the selected `rs.tdwg.org` source state.
 
 ### DwC-DP version
 
@@ -911,6 +1042,14 @@ published canonical artifact baselines.
 python build_artifacts.py --config /path/to/config.yaml
 ```
 
+### Removed `--permit-new-version` option
+
+The former `--permit-new-version` gate is no longer supported. Initial or
+changed independently versioned artifacts are generated deterministically from
+the selected authoritative inputs and publication baseline. Use `--dry-run` to
+inspect the complete proposed artifact state without committing generated
+artifact outputs.
+
 ### Perform a dry run
 
 ```bash
@@ -928,7 +1067,22 @@ python build_artifacts.py \
 A dry run performs the complete staged build and validation but does not commit
 the artifact transaction to the Darwin Core working tree.
 
-## 7.4 Term dereferencing
+## 7.4 Local and public website review
+
+Serve the generated website locally from `docs/` with:
+
+```bash
+bundle _2.3.23_ exec jekyll serve --livereload
+```
+
+and review it at `http://127.0.0.1:4000/`.
+
+For public candidate review, `.github/workflows/dev-preview.yml` builds the
+committed `docs/` tree with Jekyll and deploys it to
+`https://dwc-dev-preview.tdwg.org/` when the configured candidate branch is
+pushed.
+
+## 7.5 Term dereferencing
 
 Dereferencing Darwin Core terms to human- and machine-readable representations
 is handled by infrastructure managed by GBIF. Updated authoritative metadata
