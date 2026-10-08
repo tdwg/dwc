@@ -107,7 +107,7 @@ This dataset can be described as a DwC-DP with the following **descriptor** (`da
 
 ```json
 {
-  "profile": "http://rs.tdwg.org/dwc-dp/1.0/dwc-dp-profile.json",
+  "profile": "https://rs.tdwg.org/dwc-dp/1.0/dwc-dp-profile.json",
   "id": "https://doi.org/10.9999/dwc-dp-example-dataset-doi",
   "created": "2025-09-08T09:52:03-03:00",
   "version": "1.0",
@@ -252,7 +252,7 @@ A DwC-DP **descriptor** file (named `datapackage.json`) contains a reference to 
 {:.alert .alert-info}
 All requirements and examples in this guide use [version 1][dp.v1] of the Data Package specification, which is RECOMMENDED for DwC-DPs.
 
-1. The descriptor MUST have a `profile` property, with a URL referencing the [profile][package.profile] the dataset conforms to. This MUST be a string representing the URL to a **DwC-DP profile** served from `http://rs.tdwg.org`. The URL MUST include the version of the profile (e.g., `http://rs.tdwg.org/dwc-dp/1.0/dwc-dp-profile.json`, where `1.0` is the version).
+1. The descriptor MUST have a `profile` property, with a URL referencing the [profile][package.profile] the dataset conforms to. This MUST be a string representing the URL to a **DwC-DP profile** served from `http://rs.tdwg.org`. The URL MUST include the version of the profile (e.g., `https://rs.tdwg.org/dwc-dp/1.0/dwc-dp-profile.json`, where `1.0` is the version).
 
     {:.alert .alert-info}
     (non-normative) The DwC-DP profile imports all [Data Package requirements](https://specs.frictionlessdata.io/schemas/data-package.json). A dataset that conforms to the DwC-DP profile will therefore also conform to the Data Package requirements. In other words: a DwC-DP is also a Data Package.
@@ -396,5 +396,5 @@ A **field descriptor** describes a single field in a table schema (e.g., its nam
 {:id="dwc-dp-tables"}
 ## 4. DwC-DP tables (non-normative)
 
-- **Reserved table names**: see the `enum` values for `dwc-dp-resource-names` in the Darwin Core Profile at http://rs.tdwg.org/dwc-dp/1.0/dwc-dp-profile.json
-- **Table schemas**: see the `tableSchemas` at http://rs.tdwg.org/dwc-dp/1.0/table-schemas
+- **Reserved table names**: see the `enum` values for `dwc-dp-resource-names` in the Darwin Core Profile at https://rs.tdwg.org/dwc-dp/1.0/dwc-dp-profile.json
+- **Table schemas**: see the `tableSchemas` at https://rs.tdwg.org/dwc-dp/1.0/table-schemas
