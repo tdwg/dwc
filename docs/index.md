@@ -35,7 +35,7 @@ Darwin Core term IRIs are the stable identifiers for terms and can be used to re
 
 identifies `dwc:basisOfRecord`. Clients can request a representation of the term through HTTP content negotiation. Explicit serialization URLs are also available by adding a file extension to the term IRI:
 
-- JSON-LD: `http://rs.tdwg.org/dwc/terms/basisOfRecord.json`
+<!-- - JSON-LD: `http://rs.tdwg.org/dwc/terms/basisOfRecord.json` -->
 - RDF/Turtle: `http://rs.tdwg.org/dwc/terms/basisOfRecord.ttl`
 - RDF/XML: `http://rs.tdwg.org/dwc/terms/basisOfRecord.rdf`
 - HTML: `http://rs.tdwg.org/dwc/terms/basisOfRecord.htm`

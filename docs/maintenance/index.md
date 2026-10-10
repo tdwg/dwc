@@ -136,7 +136,7 @@ Boolean value recommendation template:
 
 Examples should illustrate plausible values of the term without adding requirements that are absent from the definition or usage notes.
 
-Examples of literal values should be formatted so that the boundaries of each example are clear. Where several examples are given, they should be distinguishable from a single list-valued example. Examples should not be used as a substitute for a controlled vocabulary or other explicit constraint. Examples of examples (`; ` separates examples, ` | ` separates values in a list for one example):
+Examples of literal values should be formatted so that the boundaries of each example are clear. Where several examples are given, they should be distinguishable from a single list-valued example. Examples should not be used as a substitute for a controlled vocabulary or other explicit constraint. In the examples below, `;`  separates distinct examples, while `|` separates values within a list-valued example:
 
 ``` `José E. Crespo`; `Oliver P. Pearson | Anita K. Pearson` ```
 
