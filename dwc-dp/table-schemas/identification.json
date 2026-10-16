@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/identification",
+  "identifier": "http://rs.tdwg.org/dwc-dp/1.0/identification",
   "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
   "url": "table-schemas/identification.json",
   "name": "identification",

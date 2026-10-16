@@ -4,16 +4,16 @@ Title
 : Darwin Core schemas
 
 Date version issued
-: 2026-09-17
+: 2026-10-13
 
 Date created
-: 2026-09-17
+: 2026-10-13
 
 Part of TDWG Standard
 : <http://www.tdwg.org/standards/450>
 
 This version
-: <http://rs.tdwg.org/dwc/doc/schemas/2026-09-17>
+: <http://rs.tdwg.org/dwc/doc/schemas/2026-10-13>
 
 Latest version
 : <http://rs.tdwg.org/dwc/doc/schemas/>
@@ -28,7 +28,7 @@ Creator
 : Darwin Core Maintenance Group
 
 Bibliographic citation
-: Darwin Core Maintenance Group. 2026. Darwin Core schemas. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/schemas/2026-09-17>
+: Darwin Core Maintenance Group. 2026. Darwin Core schemas. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/schemas/2026-10-13>
 
 ## 1 Introduction
 
@@ -49,23 +49,23 @@ Below you will find the latest versions of all DwC-A schemas supported by the Da
 
 ### 3.1 DwC-A core tables
 
-- [Event](http://rs.tdwg.org/dwc-a/schemas/core/event_2026-09-17.xml) (2026-09-17)
-- [Occurrence](http://rs.tdwg.org/dwc-a/schemas/core/occurrence_2026-09-17.xml) (2026-09-17)
-- [Taxon](http://rs.tdwg.org/dwc-a/schemas/core/taxon_2026-09-17.xml) (2026-09-17)
+- [Event](http://rs.tdwg.org/dwc-a/schemas/core/event_2026-10-13.xml) (2026-10-13)
+- [Occurrence](http://rs.tdwg.org/dwc-a/schemas/core/occurrence_2026-10-13.xml) (2026-10-13)
+- [Taxon](http://rs.tdwg.org/dwc-a/schemas/core/taxon_2026-10-13.xml) (2026-10-13)
 
 ### 3.2 DwC-A extension tables
 
-- [Chronometric Age](http://rs.tdwg.org/dwc-a/schemas/extension/chronometric_age_2026-09-17.xml) (2026-09-17)
-- [Humboldt Ecological Inventory](http://rs.tdwg.org/dwc-a/schemas/extension/humboldt_2026-09-17.xml) (2026-09-17)
-- [Identification History](http://rs.tdwg.org/dwc-a/schemas/extension/identification_history_2026-09-17.xml) (2026-09-17)
-- [Measurements or Facts](http://rs.tdwg.org/dwc-a/schemas/extension/measurements_or_facts_2026-09-17.xml) (2026-09-17)
-- [Resource Relationship](http://rs.tdwg.org/dwc-a/schemas/extension/resource_relationship_2026-09-17.xml) (2026-09-17)
+- [Chronometric Age](http://rs.tdwg.org/dwc-a/schemas/extension/chronometric_age_2026-10-13.xml) (2026-10-13)
+- [Humboldt Ecological Inventory](http://rs.tdwg.org/dwc-a/schemas/extension/humboldt_2026-10-13.xml) (2026-10-13)
+- [Identification History](http://rs.tdwg.org/dwc-a/schemas/extension/identification_history_2026-10-13.xml) (2026-10-13)
+- [Measurements or Facts](http://rs.tdwg.org/dwc-a/schemas/extension/measurements_or_facts_2026-10-13.xml) (2026-10-13)
+- [Resource Relationship](http://rs.tdwg.org/dwc-a/schemas/extension/resource_relationship_2026-10-13.xml) (2026-10-13)
 
 ## 4 DwC-DP profiles and table schemas
 
 Below you will find the latest version of the DwC-DP profile and table schemas supported by the Darwin Core Maintenance Group. These are non-normative parts of the Darwin Core standard. You can find historical versions at http://rs.tdwg.org/dwc-dp/.
 
-[Latest Darwin Core Data Package version](http://rs.tdwg.org/dwc-dp/1.0-RC)
+[Latest Darwin Core Data Package version](http://rs.tdwg.org/dwc-dp/1.0)
 
 ## 5 References
 

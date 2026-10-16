@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/media-identifier",
+  "identifier": "http://rs.tdwg.org/dwc-dp/1.0/media-identifier",
   "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
   "url": "table-schemas/media-identifier.json",
   "name": "media-identifier",

@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/organism-interaction-media",
+  "identifier": "http://rs.tdwg.org/dwc-dp/1.0/organism-interaction-media",
   "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
   "url": "table-schemas/organism-interaction-media.json",
   "name": "organism-interaction-media",

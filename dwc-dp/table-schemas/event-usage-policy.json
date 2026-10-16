@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/event-usage-policy",
+  "identifier": "http://rs.tdwg.org/dwc-dp/1.0/event-usage-policy",
   "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
   "url": "table-schemas/event-usage-policy.json",
   "name": "event-usage-policy",

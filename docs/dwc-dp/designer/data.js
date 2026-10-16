@@ -1,11 +1,11 @@
 window.DWC_DP_DESIGNER_DATA = {
-  "dwcDpVersion": "http://rs.tdwg.org/dwc-dp/1.0-RC",
-  "profileIdentifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/dwc-dp-profile.json",
+  "dwcDpVersion": "http://rs.tdwg.org/dwc-dp/1.0",
+  "profileIdentifier": "http://rs.tdwg.org/dwc-dp/1.0/dwc-dp-profile.json",
   "profile": {
     "$schema": "https://json-schema.org/draft/2020-12/schema#",
     "$id": "https://rs.tdwg.org/dwc-dp/1.0/dwc-dp-profile.json",
     "title": "Darwin Core Data Package (DwC-DP) profile",
-    "version": "http://rs.tdwg.org/dwc-dp/1.0-RC",
+    "version": "http://rs.tdwg.org/dwc-dp/1.0",
     "description": "Profile for organizing biodiversity data as a Data Package (https://specs.frictionlessdata.io/).",
     "type": "object",
     "$defs": {
@@ -167,7 +167,7 @@ window.DWC_DP_DESIGNER_DATA = {
   },
   "schemas": {
     "agent": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/agent",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/agent",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/agent.json",
       "name": "agent",
@@ -242,7 +242,7 @@ window.DWC_DP_DESIGNER_DATA = {
       "weakPrimaryKey": "agentID"
     },
     "agent-agent-role": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/agent-agent-role",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/agent-agent-role",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/agent-agent-role.json",
       "name": "agent-agent-role",
@@ -363,7 +363,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "agent-identifier": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/agent-identifier",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/agent-identifier",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/agent-identifier.json",
       "name": "agent-identifier",
@@ -461,7 +461,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "agent-media": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/agent-media",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/agent-media",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/agent-media.json",
       "name": "agent-media",
@@ -611,7 +611,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "bibliographic-resource": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/bibliographic-resource",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/bibliographic-resource",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/bibliographic-resource.json",
       "name": "bibliographic-resource",
@@ -1028,7 +1028,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "chronometric-age": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/chronometric-age",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/chronometric-age",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/chronometric-age.json",
       "name": "chronometric-age",
@@ -1411,7 +1411,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "chronometric-age-agent-role": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/chronometric-age-agent-role",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/chronometric-age-agent-role",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/chronometric-age-agent-role.json",
       "name": "chronometric-age-agent-role",
@@ -1532,7 +1532,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "chronometric-age-assertion": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/chronometric-age-assertion",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/chronometric-age-assertion",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/chronometric-age-assertion.json",
       "name": "chronometric-age-assertion",
@@ -1845,7 +1845,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "chronometric-age-media": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/chronometric-age-media",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/chronometric-age-media",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/chronometric-age-media.json",
       "name": "chronometric-age-media",
@@ -1995,7 +1995,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "chronometric-age-protocol": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/chronometric-age-protocol",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/chronometric-age-protocol",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/chronometric-age-protocol.json",
       "name": "chronometric-age-protocol",
@@ -2057,7 +2057,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "chronometric-age-reference": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/chronometric-age-reference",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/chronometric-age-reference",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/chronometric-age-reference.json",
       "name": "chronometric-age-reference",
@@ -2130,7 +2130,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "event": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/event",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/event",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/event.json",
       "name": "event",
@@ -3299,7 +3299,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "event-agent-role": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/event-agent-role",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/event-agent-role",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/event-agent-role.json",
       "name": "event-agent-role",
@@ -3420,7 +3420,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "event-assertion": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/event-assertion",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/event-assertion",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/event-assertion.json",
       "name": "event-assertion",
@@ -3733,7 +3733,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "event-identifier": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/event-identifier",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/event-identifier",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/event-identifier.json",
       "name": "event-identifier",
@@ -3831,7 +3831,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "event-media": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/event-media",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/event-media",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/event-media.json",
       "name": "event-media",
@@ -3981,7 +3981,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "event-protocol": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/event-protocol",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/event-protocol",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/event-protocol.json",
       "name": "event-protocol",
@@ -4043,7 +4043,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "event-provenance": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/event-provenance",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/event-provenance",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/event-provenance.json",
       "name": "event-provenance",
@@ -4105,7 +4105,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "event-reference": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/event-reference",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/event-reference",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/event-reference.json",
       "name": "event-reference",
@@ -4178,7 +4178,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "event-usage-policy": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/event-usage-policy",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/event-usage-policy",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/event-usage-policy.json",
       "name": "event-usage-policy",
@@ -4240,7 +4240,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "geological-context": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/geological-context",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/geological-context",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/geological-context.json",
       "name": "geological-context",
@@ -4513,7 +4513,7 @@ window.DWC_DP_DESIGNER_DATA = {
       "weakPrimaryKey": "geologicalContextID"
     },
     "geological-context-media": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/geological-context-media",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/geological-context-media",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/geological-context-media.json",
       "name": "geological-context-media",
@@ -4663,7 +4663,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "geological-material": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/geological-material",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/geological-material",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/geological-material.json",
       "name": "geological-material",
@@ -4836,7 +4836,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "identification": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/identification",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/identification",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/identification.json",
       "name": "identification",
@@ -5562,7 +5562,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "identification-agent-role": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/identification-agent-role",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/identification-agent-role",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/identification-agent-role.json",
       "name": "identification-agent-role",
@@ -5683,7 +5683,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "identification-reference": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/identification-reference",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/identification-reference",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/identification-reference.json",
       "name": "identification-reference",
@@ -5756,7 +5756,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "identification-taxon": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/identification-taxon",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/identification-taxon",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/identification-taxon.json",
       "name": "identification-taxon",
@@ -6107,7 +6107,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "material": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/material",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/material",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/material.json",
       "name": "material",
@@ -7138,7 +7138,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "material-agent-role": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/material-agent-role",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/material-agent-role",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/material-agent-role.json",
       "name": "material-agent-role",
@@ -7259,7 +7259,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "material-assertion": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/material-assertion",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/material-assertion",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/material-assertion.json",
       "name": "material-assertion",
@@ -7572,7 +7572,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "material-geological-context": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/material-geological-context",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/material-geological-context",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/material-geological-context.json",
       "name": "material-geological-context",
@@ -7634,7 +7634,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "material-identifier": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/material-identifier",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/material-identifier",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/material-identifier.json",
       "name": "material-identifier",
@@ -7732,7 +7732,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "material-media": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/material-media",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/material-media",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/material-media.json",
       "name": "material-media",
@@ -7882,7 +7882,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "material-protocol": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/material-protocol",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/material-protocol",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/material-protocol.json",
       "name": "material-protocol",
@@ -7944,7 +7944,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "material-provenance": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/material-provenance",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/material-provenance",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/material-provenance.json",
       "name": "material-provenance",
@@ -8006,7 +8006,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "material-reference": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/material-reference",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/material-reference",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/material-reference.json",
       "name": "material-reference",
@@ -8079,7 +8079,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "material-usage-policy": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/material-usage-policy",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/material-usage-policy",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/material-usage-policy.json",
       "name": "material-usage-policy",
@@ -8141,7 +8141,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "media": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/media",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/media",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/media.json",
       "name": "media",
@@ -9189,7 +9189,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "media-agent-role": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/media-agent-role",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/media-agent-role",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/media-agent-role.json",
       "name": "media-agent-role",
@@ -9310,7 +9310,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "media-assertion": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/media-assertion",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/media-assertion",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/media-assertion.json",
       "name": "media-assertion",
@@ -9623,7 +9623,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "media-identifier": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/media-identifier",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/media-identifier",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/media-identifier.json",
       "name": "media-identifier",
@@ -9721,7 +9721,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "media-provenance": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/media-provenance",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/media-provenance",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/media-provenance.json",
       "name": "media-provenance",
@@ -9783,7 +9783,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "media-usage-policy": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/media-usage-policy",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/media-usage-policy",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/media-usage-policy.json",
       "name": "media-usage-policy",
@@ -9845,7 +9845,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "molecular-protocol": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/molecular-protocol",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/molecular-protocol",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/molecular-protocol.json",
       "name": "molecular-protocol",
@@ -11279,7 +11279,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "molecular-protocol-agent-role": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/molecular-protocol-agent-role",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/molecular-protocol-agent-role",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/molecular-protocol-agent-role.json",
       "name": "molecular-protocol-agent-role",
@@ -11400,7 +11400,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "molecular-protocol-assertion": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/molecular-protocol-assertion",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/molecular-protocol-assertion",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/molecular-protocol-assertion.json",
       "name": "molecular-protocol-assertion",
@@ -11713,7 +11713,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "molecular-protocol-reference": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/molecular-protocol-reference",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/molecular-protocol-reference",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/molecular-protocol-reference.json",
       "name": "molecular-protocol-reference",
@@ -11786,7 +11786,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "nucleotide-analysis": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/nucleotide-analysis",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/nucleotide-analysis",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/nucleotide-analysis.json",
       "name": "nucleotide-analysis",
@@ -11955,7 +11955,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "nucleotide-analysis-assertion": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/nucleotide-analysis-assertion",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/nucleotide-analysis-assertion",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/nucleotide-analysis-assertion.json",
       "name": "nucleotide-analysis-assertion",
@@ -12268,7 +12268,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "nucleotide-sequence": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/nucleotide-sequence",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/nucleotide-sequence",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/nucleotide-sequence.json",
       "name": "nucleotide-sequence",
@@ -12332,7 +12332,7 @@ window.DWC_DP_DESIGNER_DATA = {
       "weakPrimaryKey": "nucleotideSequenceID"
     },
     "occurrence": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/occurrence",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/occurrence",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/occurrence.json",
       "name": "occurrence",
@@ -12961,7 +12961,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "occurrence-agent-role": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/occurrence-agent-role",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/occurrence-agent-role",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/occurrence-agent-role.json",
       "name": "occurrence-agent-role",
@@ -13082,7 +13082,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "occurrence-assertion": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/occurrence-assertion",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/occurrence-assertion",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/occurrence-assertion.json",
       "name": "occurrence-assertion",
@@ -13395,7 +13395,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "occurrence-identifier": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/occurrence-identifier",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/occurrence-identifier",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/occurrence-identifier.json",
       "name": "occurrence-identifier",
@@ -13493,7 +13493,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "occurrence-media": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/occurrence-media",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/occurrence-media",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/occurrence-media.json",
       "name": "occurrence-media",
@@ -13643,7 +13643,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "occurrence-protocol": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/occurrence-protocol",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/occurrence-protocol",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/occurrence-protocol.json",
       "name": "occurrence-protocol",
@@ -13705,7 +13705,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "occurrence-reference": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/occurrence-reference",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/occurrence-reference",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/occurrence-reference.json",
       "name": "occurrence-reference",
@@ -13778,7 +13778,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "organism": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/organism",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/organism",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/organism.json",
       "name": "organism",
@@ -13875,7 +13875,7 @@ window.DWC_DP_DESIGNER_DATA = {
       "weakPrimaryKey": "organismID"
     },
     "organism-assertion": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/organism-assertion",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/organism-assertion",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/organism-assertion.json",
       "name": "organism-assertion",
@@ -14188,7 +14188,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "organism-identifier": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/organism-identifier",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/organism-identifier",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/organism-identifier.json",
       "name": "organism-identifier",
@@ -14286,7 +14286,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "organism-interaction": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/organism-interaction",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/organism-interaction",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/organism-interaction.json",
       "name": "organism-interaction",
@@ -14501,7 +14501,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "organism-interaction-agent-role": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/organism-interaction-agent-role",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/organism-interaction-agent-role",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/organism-interaction-agent-role.json",
       "name": "organism-interaction-agent-role",
@@ -14622,7 +14622,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "organism-interaction-assertion": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/organism-interaction-assertion",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/organism-interaction-assertion",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/organism-interaction-assertion.json",
       "name": "organism-interaction-assertion",
@@ -14935,7 +14935,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "organism-interaction-media": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/organism-interaction-media",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/organism-interaction-media",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/organism-interaction-media.json",
       "name": "organism-interaction-media",
@@ -15085,7 +15085,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "organism-interaction-reference": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/organism-interaction-reference",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/organism-interaction-reference",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/organism-interaction-reference.json",
       "name": "organism-interaction-reference",
@@ -15158,7 +15158,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "organism-reference": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/organism-reference",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/organism-reference",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/organism-reference.json",
       "name": "organism-reference",
@@ -15231,7 +15231,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "organism-relationship": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/organism-relationship",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/organism-relationship",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/organism-relationship.json",
       "name": "organism-relationship",
@@ -15464,7 +15464,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "protocol": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/protocol",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/protocol",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/protocol.json",
       "name": "protocol",
@@ -15561,7 +15561,7 @@ window.DWC_DP_DESIGNER_DATA = {
       "weakPrimaryKey": "protocolID"
     },
     "protocol-reference": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/protocol-reference",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/protocol-reference",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/protocol-reference.json",
       "name": "protocol-reference",
@@ -15634,7 +15634,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "provenance": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/provenance",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/provenance",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/provenance.json",
       "name": "provenance",
@@ -16075,7 +16075,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "resource-relationship": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/resource-relationship",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/resource-relationship",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/resource-relationship.json",
       "name": "resource-relationship",
@@ -16292,7 +16292,7 @@ window.DWC_DP_DESIGNER_DATA = {
       "weakPrimaryKey": "resourceRelationshipID"
     },
     "survey": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/survey",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/survey",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/survey.json",
       "name": "survey",
@@ -16995,7 +16995,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "survey-agent-role": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/survey-agent-role",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/survey-agent-role",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/survey-agent-role.json",
       "name": "survey-agent-role",
@@ -17116,7 +17116,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "survey-assertion": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/survey-assertion",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/survey-assertion",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/survey-assertion.json",
       "name": "survey-assertion",
@@ -17429,7 +17429,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "survey-identifier": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/survey-identifier",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/survey-identifier",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/survey-identifier.json",
       "name": "survey-identifier",
@@ -17527,7 +17527,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "survey-protocol": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/survey-protocol",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/survey-protocol",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/survey-protocol.json",
       "name": "survey-protocol",
@@ -17589,7 +17589,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "survey-reference": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/survey-reference",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/survey-reference",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/survey-reference.json",
       "name": "survey-reference",
@@ -17662,7 +17662,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "survey-survey-target": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/survey-survey-target",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/survey-survey-target",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/survey-survey-target.json",
       "name": "survey-survey-target",
@@ -17724,7 +17724,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "survey-target": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/survey-target",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/survey-target",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/survey-target.json",
       "name": "survey-target",
@@ -17817,7 +17817,7 @@ window.DWC_DP_DESIGNER_DATA = {
       "weakPrimaryKey": "surveyTargetID"
     },
     "survey-target-descriptor": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/survey-target-descriptor",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/survey-target-descriptor",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/survey-target-descriptor.json",
       "name": "survey-target-descriptor",
@@ -17970,7 +17970,7 @@ window.DWC_DP_DESIGNER_DATA = {
       ]
     },
     "usage-policy": {
-      "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/usage-policy",
+      "identifier": "http://rs.tdwg.org/dwc-dp/1.0/usage-policy",
       "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
       "url": "table-schemas/usage-policy.json",
       "name": "usage-policy",

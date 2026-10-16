@@ -4,7 +4,7 @@ Title
 : Darwin Core RDF guide
 
 Date version issued
-: 2026-09-17
+: 2026-10-13
 
 Date created
 : 2015-06-02
@@ -13,7 +13,7 @@ Part of TDWG Standard
 : <http://www.tdwg.org/standards/450>
 
 This version
-: <http://rs.tdwg.org/dwc/terms/guides/rdf/2026-09-17>
+: <http://rs.tdwg.org/dwc/terms/guides/rdf/2026-10-13>
 
 Latest version
 : <http://rs.tdwg.org/dwc/terms/guides/rdf/>
@@ -31,7 +31,7 @@ Creator
 : Darwin Core Maintenance Group and RDF/OWL Task Group
 
 Bibliographic citation
-: Darwin Core Maintenance Group and RDF/OWL Task Group. 2026. Darwin Core RDF guide. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/terms/guides/rdf/2026-09-17>
+: Darwin Core Maintenance Group and RDF/OWL Task Group. 2026. Darwin Core RDF guide. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/terms/guides/rdf/2026-10-13>
 
 ## 1 Introduction (non-normative)
 

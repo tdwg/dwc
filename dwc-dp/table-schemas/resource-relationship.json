@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/resource-relationship",
+  "identifier": "http://rs.tdwg.org/dwc-dp/1.0/resource-relationship",
   "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
   "url": "table-schemas/resource-relationship.json",
   "name": "resource-relationship",

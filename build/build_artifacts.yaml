@@ -1,7 +1,7 @@
 # Date assigned to any independently versioned artifact that this build
 # determines requires a new version. Unchanged artifacts retain their
 # existing published version and date.
-release_date: 2026-09-17
+release_date: 2026-10-13
 
 # Authoritative source repository for term and document metadata.
 # Set local_path to an rs.tdwg.org checkout for local/offline builds; otherwise
@@ -392,7 +392,7 @@ documents:
 # Darwin Core Data Package build inputs and destinations.
 # Paths are repository-relative.
 dwc_dp:
-  version: http://rs.tdwg.org/dwc-dp/1.0-RC
+  version: http://rs.tdwg.org/dwc-dp/1.0
 
   sources:
     tables: build/dwc-dp/dwc-dp-tables.csv

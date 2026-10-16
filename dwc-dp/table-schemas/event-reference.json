@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/event-reference",
+  "identifier": "http://rs.tdwg.org/dwc-dp/1.0/event-reference",
   "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
   "url": "table-schemas/event-reference.json",
   "name": "event-reference",

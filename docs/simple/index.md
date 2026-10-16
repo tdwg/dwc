@@ -4,7 +4,7 @@ Title
 : Simple Darwin Core
 
 Date version issued
-: 2026-09-17
+: 2026-10-13
 
 Date created
 : 2009-04-21
@@ -13,7 +13,7 @@ Part of TDWG Standard
 : <http://www.tdwg.org/standards/450>
 
 This version
-: <http://rs.tdwg.org/dwc/terms/simple/2026-09-17>
+: <http://rs.tdwg.org/dwc/terms/simple/2026-10-13>
 
 Latest version
 : <http://rs.tdwg.org/dwc/terms/simple/>
@@ -31,7 +31,7 @@ Creator
 : Darwin Core Maintenance Group
 
 Bibliographic citation
-: Darwin Core Maintenance Group. 2026. Simple Darwin Core. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/terms/simple/2026-09-17>
+: Darwin Core Maintenance Group. 2026. Simple Darwin Core. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/terms/simple/2026-10-13>
 
 ## 1 Introduction
 

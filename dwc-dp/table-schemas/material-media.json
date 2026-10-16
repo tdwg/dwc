@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/material-media",
+  "identifier": "http://rs.tdwg.org/dwc-dp/1.0/material-media",
   "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
   "url": "table-schemas/material-media.json",
   "name": "material-media",

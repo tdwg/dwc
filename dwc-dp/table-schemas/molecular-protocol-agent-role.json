@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/molecular-protocol-agent-role",
+  "identifier": "http://rs.tdwg.org/dwc-dp/1.0/molecular-protocol-agent-role",
   "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
   "url": "table-schemas/molecular-protocol-agent-role.json",
   "name": "molecular-protocol-agent-role",

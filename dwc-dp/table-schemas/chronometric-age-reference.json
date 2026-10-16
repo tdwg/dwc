@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/chronometric-age-reference",
+  "identifier": "http://rs.tdwg.org/dwc-dp/1.0/chronometric-age-reference",
   "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
   "url": "table-schemas/chronometric-age-reference.json",
   "name": "chronometric-age-reference",

@@ -5,12 +5,12 @@
   dc:relation='https://dwc.tdwg.org/terms/#dwc:establishmentMeans'
   dc:title='Darwin Core Establishment Means Vocabulary'
   dcterms:isPartOf='http://www.tdwg.org/standards/450'
-  dc:issued='2026-09-17'
+  dc:issued='2026-10-13'
   xmlns='http://rs.gbif.org/thesaurus/'
   xmlns:dc='http://purl.org/dc/terms/'
   xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
   xsi:schemaLocation='http://rs.gbif.org/thesaurus/ http://rs.gbif.org/schema/thesaurus.xsd'
-  dcterms:source='http://rs.tdwg.org/dwc-a/schemas/vocabulary/establishment_means_2026-09-17.xml'>
+  dcterms:source='http://rs.tdwg.org/dwc-a/schemas/vocabulary/establishment_means_2026-10-13.xml'>
 
   <concept
     dc:identifier='native'

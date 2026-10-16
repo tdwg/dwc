@@ -4,7 +4,7 @@ Title
 : Degree of Establishment Controlled Vocabulary List of Terms
 
 Date version issued
-: 2026-09-17
+: 2026-10-13
 
 Date created
 : 2020-10-13
@@ -13,7 +13,7 @@ Part of TDWG Standard
 : <http://www.tdwg.org/standards/450>
 
 This version
-: <http://rs.tdwg.org/dwc/doc/doe/2026-09-17>
+: <http://rs.tdwg.org/dwc/doc/doe/2026-10-13>
 
 Latest version
 : <http://rs.tdwg.org/dwc/doc/doe/>
@@ -31,7 +31,7 @@ Creator
 : TDWG Darwin Core Maintenance Group
 
 Bibliographic citation
-: TDWG Darwin Core Maintenance Group. 2026. Degree of Establishment Controlled Vocabulary List of Terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/doe/2026-09-17>
+: TDWG Darwin Core Maintenance Group. 2026. Degree of Establishment Controlled Vocabulary List of Terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/doe/2026-10-13>
 
 
 ## 1 Introduction
@@ -164,11 +164,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://r
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-09-17</td>
+			<td>2026-10-13</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwcdoe/values/version/d002-2026-09-17">http://rs.tdwg.org/dwcdoe/values/version/d002-2026-09-17</a></td>
+			<td><a href="http://rs.tdwg.org/dwcdoe/values/version/d002-2026-10-13">http://rs.tdwg.org/dwcdoe/values/version/d002-2026-10-13</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -200,7 +200,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://r
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-09-17_62">http://rs.tdwg.org/decisions/decision-2026-09-17_62</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-10-13_62">http://rs.tdwg.org/decisions/decision-2026-10-13_62</a></td>
 		</tr>
 	</tbody>
 </table>

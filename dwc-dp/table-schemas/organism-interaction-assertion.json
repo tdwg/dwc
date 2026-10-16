@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/organism-interaction-assertion",
+  "identifier": "http://rs.tdwg.org/dwc-dp/1.0/organism-interaction-assertion",
   "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
   "url": "table-schemas/organism-interaction-assertion.json",
   "name": "organism-interaction-assertion",

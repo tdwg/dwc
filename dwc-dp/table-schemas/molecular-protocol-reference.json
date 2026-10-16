@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/molecular-protocol-reference",
+  "identifier": "http://rs.tdwg.org/dwc-dp/1.0/molecular-protocol-reference",
   "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
   "url": "table-schemas/molecular-protocol-reference.json",
   "name": "molecular-protocol-reference",

@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/protocol",
+  "identifier": "http://rs.tdwg.org/dwc-dp/1.0/protocol",
   "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
   "url": "table-schemas/protocol.json",
   "name": "protocol",

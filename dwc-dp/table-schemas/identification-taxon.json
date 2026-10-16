@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/identification-taxon",
+  "identifier": "http://rs.tdwg.org/dwc-dp/1.0/identification-taxon",
   "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
   "url": "table-schemas/identification-taxon.json",
   "name": "identification-taxon",

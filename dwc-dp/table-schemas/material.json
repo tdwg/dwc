@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/material",
+  "identifier": "http://rs.tdwg.org/dwc-dp/1.0/material",
   "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
   "url": "table-schemas/material.json",
   "name": "material",

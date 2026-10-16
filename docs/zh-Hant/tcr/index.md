@@ -10,7 +10,7 @@ Preferred namespace abbreviation
 : ecotcr:
 
 Date version issued
-: 2026-09-17
+: 2026-10-13
 
 Date created
 : 2024-02-28
@@ -19,7 +19,7 @@ Part of TDWG Standard
 : <http://www.tdwg.org/standards/450>
 
 This document version
-: <http://rs.tdwg.org/dwc/doc/tcr/2026-09-17>
+: <http://rs.tdwg.org/dwc/doc/tcr/2026-10-13>
 
 Latest version of document
 : <http://rs.tdwg.org/dwc/doc/tcr/>
@@ -37,7 +37,7 @@ Creator
 : TDWG Humboldt Extension Task Group
 
 Bibliographic citation
-: TDWG Humboldt Extension Task Group. 2026. Taxon Completeness Reported Controlled Vocabulary List of Terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/tcr/2026-09-17>
+: TDWG Humboldt Extension Task Group. 2026. Taxon Completeness Reported Controlled Vocabulary List of Terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/tcr/2026-10-13>
 
 
 ## 1 Introduction
@@ -79,11 +79,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>已修改</td>
-			<td>2026-09-17</td>
+			<td>2026-10-13</td>
 		</tr>
 		<tr>
 			<td>術語版本IRI</td>
-			<td><a href="http://rs.tdwg.org/ecotcr/values/version/tcr-2026-09-17">http://rs.tdwg.org/ecotcr/values/version/tcr-2026-09-17</a></td>
+			<td><a href="http://rs.tdwg.org/ecotcr/values/version/tcr-2026-10-13">http://rs.tdwg.org/ecotcr/values/version/tcr-2026-10-13</a></td>
 		</tr>
 		<tr>
 			<td>標籤</td>
@@ -103,7 +103,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>執行委員會決議</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-09-17_62">http://rs.tdwg.org/decisions/decision-2026-09-17_62</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-10-13_62">http://rs.tdwg.org/decisions/decision-2026-10-13_62</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -121,11 +121,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>已修改</td>
-			<td>2026-09-17</td>
+			<td>2026-10-13</td>
 		</tr>
 		<tr>
 			<td>術語版本IRI</td>
-			<td><a href="http://rs.tdwg.org/ecotcr/values/version/tcr00-2026-09-17">http://rs.tdwg.org/ecotcr/values/version/tcr00-2026-09-17</a></td>
+			<td><a href="http://rs.tdwg.org/ecotcr/values/version/tcr00-2026-10-13">http://rs.tdwg.org/ecotcr/values/version/tcr00-2026-10-13</a></td>
 		</tr>
 		<tr>
 			<td>標籤</td>
@@ -149,7 +149,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>執行委員會決議</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-09-17_62">http://rs.tdwg.org/decisions/decision-2026-09-17_62</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-10-13_62">http://rs.tdwg.org/decisions/decision-2026-10-13_62</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -167,11 +167,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>已修改</td>
-			<td>2026-09-17</td>
+			<td>2026-10-13</td>
 		</tr>
 		<tr>
 			<td>術語版本IRI</td>
-			<td><a href="http://rs.tdwg.org/ecotcr/values/version/tcr01-2026-09-17">http://rs.tdwg.org/ecotcr/values/version/tcr01-2026-09-17</a></td>
+			<td><a href="http://rs.tdwg.org/ecotcr/values/version/tcr01-2026-10-13">http://rs.tdwg.org/ecotcr/values/version/tcr01-2026-10-13</a></td>
 		</tr>
 		<tr>
 			<td>標籤</td>
@@ -195,7 +195,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>執行委員會決議</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-09-17_62">http://rs.tdwg.org/decisions/decision-2026-09-17_62</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-10-13_62">http://rs.tdwg.org/decisions/decision-2026-10-13_62</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -213,11 +213,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>已修改</td>
-			<td>2026-09-17</td>
+			<td>2026-10-13</td>
 		</tr>
 		<tr>
 			<td>術語版本IRI</td>
-			<td><a href="http://rs.tdwg.org/ecotcr/values/version/tcr02-2026-09-17">http://rs.tdwg.org/ecotcr/values/version/tcr02-2026-09-17</a></td>
+			<td><a href="http://rs.tdwg.org/ecotcr/values/version/tcr02-2026-10-13">http://rs.tdwg.org/ecotcr/values/version/tcr02-2026-10-13</a></td>
 		</tr>
 		<tr>
 			<td>標籤</td>
@@ -241,7 +241,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>執行委員會決議</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-09-17_62">http://rs.tdwg.org/decisions/decision-2026-09-17_62</a></td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-10-13_62">http://rs.tdwg.org/decisions/decision-2026-10-13_62</a></td>
 		</tr>
 	</tbody>
 </table>

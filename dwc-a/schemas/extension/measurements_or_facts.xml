@@ -8,11 +8,11 @@
     name='MeasurementOrFacts' namespace='http://rs.tdwg.org/dwc/terms/'
     dcterms:isPartOf='http://www.tdwg.org/standards/450'
     rowType='http://rs.tdwg.org/dwc/terms/MeasurementOrFact'
-    dc:issued='2026-09-17'
+    dc:issued='2026-10-13'
     dc:subject='dwc:Occurrence dwc:Event dwc:Taxon'
     dc:relation='http://rs.tdwg.org/dwc/terms/MeasurementOrFact'
     dc:description='Extended support for multiple measurements or facts associated with a Darwin Core Occurrence, Event, or Taxon Core.'
-  dcterms:source='http://rs.tdwg.org/dwc-a/schemas/extension/measurements_or_facts_2026-09-17.xml'>
+  dcterms:source='http://rs.tdwg.org/dwc-a/schemas/extension/measurements_or_facts_2026-10-13.xml'>
 
     <!-- MeasurementOrFact -->
     <property group='MeasurementOrFact' name='measurementID' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/measurementID' label='Measurement ID' dc:relation='https://dwc.tdwg.org/terms/#dwc:measurementID' dc:description='An identifier for the dwc:MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.' examples='`9c752d22-b09a-11e8-96f8-529269fb1459`' required='false'>

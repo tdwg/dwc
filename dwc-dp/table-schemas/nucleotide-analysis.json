@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/nucleotide-analysis",
+  "identifier": "http://rs.tdwg.org/dwc-dp/1.0/nucleotide-analysis",
   "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
   "url": "table-schemas/nucleotide-analysis.json",
   "name": "nucleotide-analysis",

@@ -8,11 +8,11 @@
     name="ChronometricAge" namespace='http://rs.tdwg.org/chrono/terms/'
     dcterms:isPartOf='http://www.tdwg.org/standards/450'
     rowType='http://rs.tdwg.org/chrono/terms/ChronometricAge'
-    dc:issued='2026-09-17'
+    dc:issued='2026-10-13'
     dc:subject='dwc:Event dwc:Occurrence'
     dc:relation='http://rs.tdwg.org/chrono/terms/ChronometricAge'
     dc:description='Extended support for Darwin Core Events or Occurrences related to chronometric ages.'
-  dcterms:source='http://rs.tdwg.org/dwc-a/schemas/extension/chronometric_age_2026-09-17.xml'>
+  dcterms:source='http://rs.tdwg.org/dwc-a/schemas/extension/chronometric_age_2026-10-13.xml'>
 
     <!-- ChronometricAge -->
     <property group='ChronometricAge' name='chronometricAgeID' namespace='http://rs.tdwg.org/chrono/terms/' qualName='http://rs.tdwg.org/chrono/terms/chronometricAgeID' label='Chronometric Age ID' dc:relation='https://dwc.tdwg.org/terms/#chrono:chronometricAgeID' dc:description='An identifier for the set of information associated with a chrono:ChronometricAge.' comments='May be a global unique identifier or an identifier specific to the dataset. This can be used to link this record to another repository where more information about the dataset is shared.' examples='`https://www.canadianarchaeology.ca/samples/70673`' required='false'/>

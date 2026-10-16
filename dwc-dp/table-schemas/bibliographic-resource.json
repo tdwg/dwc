@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/bibliographic-resource",
+  "identifier": "http://rs.tdwg.org/dwc-dp/1.0/bibliographic-resource",
   "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
   "url": "table-schemas/bibliographic-resource.json",
   "name": "bibliographic-resource",

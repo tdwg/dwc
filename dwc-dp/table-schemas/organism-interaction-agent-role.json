@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/organism-interaction-agent-role",
+  "identifier": "http://rs.tdwg.org/dwc-dp/1.0/organism-interaction-agent-role",
   "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
   "url": "table-schemas/organism-interaction-agent-role.json",
   "name": "organism-interaction-agent-role",

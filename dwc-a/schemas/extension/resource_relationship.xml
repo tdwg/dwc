@@ -8,11 +8,11 @@
     name='ResourceRelationship' namespace='http://rs.tdwg.org/dwc/terms/'
     dcterms:isPartOf='http://www.tdwg.org/standards/450'
     rowType='http://rs.tdwg.org/dwc/terms/ResourceRelationship'
-    dc:issued='2026-09-17'
+    dc:issued='2026-10-13'
     dc:subject='dwc:Occurrence dwc:Event dwc:Taxon'
     dc:relation='http://rs.tdwg.org/dwc/terms/ResourceRelationship'
     dc:description='Extended support for relationships between resources in a Darwin Core Occurrence, Event, or Taxon Core to resources in an extension or external to the data set. The identifiers for subject (resourceID) and object (relatedResourceID) may exist in the dataset or be accessible via an externally resolvable identifiers.'
-  dcterms:source='http://rs.tdwg.org/dwc-a/schemas/extension/resource_relationship_2026-09-17.xml'>
+  dcterms:source='http://rs.tdwg.org/dwc-a/schemas/extension/resource_relationship_2026-10-13.xml'>
 
     <!-- ResourceRelationship -->
     <property group='ResourceRelationship' name='resourceRelationshipID' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/resourceRelationshipID' label='Resource Relationship ID' dc:relation='https://dwc.tdwg.org/terms/#dwc:resourceRelationshipID' dc:description='An identifier for a dwc:ResourceRelationship.' comments='Recommended best practice is to use a globally unique identifier.' required='false'>

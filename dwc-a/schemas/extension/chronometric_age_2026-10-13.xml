@@ -8,7 +8,7 @@
     name="ChronometricAge" namespace='http://rs.tdwg.org/chrono/terms/'
     dcterms:isPartOf='http://www.tdwg.org/standards/450'
     rowType='http://rs.tdwg.org/chrono/terms/ChronometricAge'
-    dc:issued='2026-09-17'
+    dc:issued='2026-10-13'
     dc:subject='dwc:Event dwc:Occurrence'
     dc:relation='http://rs.tdwg.org/chrono/terms/ChronometricAge'
     dc:description='Extended support for Darwin Core Events or Occurrences related to chronometric ages.'>

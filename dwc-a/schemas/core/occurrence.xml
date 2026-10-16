@@ -8,11 +8,11 @@
     name='Occurrence' namespace='http://rs.tdwg.org/dwc/terms/'
     dcterms:isPartOf='http://www.tdwg.org/standards/450'
     rowType='http://rs.tdwg.org/dwc/terms/Occurrence'
-    dc:issued='2026-09-17'
+    dc:issued='2026-10-13'
     dc:subject='dwc:Event dwc:Taxon'
     dc:relation='http://rs.tdwg.org/dwc/terms/Occurrence'
     dc:description='Support for Darwin Core Occurrence-based records.'
-  dcterms:source='http://rs.tdwg.org/dwc-a/schemas/core/occurrence_2026-09-17.xml'>
+  dcterms:source='http://rs.tdwg.org/dwc-a/schemas/core/occurrence_2026-10-13.xml'>
 
     <!-- Record-level -->
     <property group='Record-level' name='type' thesaurus='http://rs.gbif.org/vocabulary/dcterms/type.xml' namespace='http://purl.org/dc/elements/1.1/' qualName='http://purl.org/dc/elements/1.1/type' label='Type' dc:relation='https://dwc.tdwg.org/terms/#dc:type' dc:description='The nature or genre of the resource.' comments='Must be populated with a value from the DCMI type vocabulary (https://www.dublincore.org/specifications/dublin-core/dcmi-type-vocabulary/2010-10-11/).' examples='`StillImage`; `MovingImage`; `Sound`; `PhysicalObject`; `Event`; `Text`' required='false'>

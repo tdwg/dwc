@@ -8,11 +8,11 @@
     name='Identification' namespace='http://rs.tdwg.org/dwc/terms/'
     dcterms:isPartOf='http://www.tdwg.org/standards/450'
     rowType='http://rs.tdwg.org/dwc/terms/Identification'
-    dc:issued='2026-09-17'
+    dc:issued='2026-10-13'
     dc:subject='dwc:Occurrence'
     dc:relation='http://rs.tdwg.org/dwc/terms/Identification'
     dc:description='Extended support for multiple identifications (determinations) of species Darwin Core Occurrences. All identifications including the most current one should be listed, while the current one should also be repeated in the Darwin Core Occurrence Core.'
-  dcterms:source='http://rs.tdwg.org/dwc-a/schemas/extension/identification_history_2026-09-17.xml'>
+  dcterms:source='http://rs.tdwg.org/dwc-a/schemas/extension/identification_history_2026-10-13.xml'>
 
     <!-- Identification -->
     <property group='Identification' name='identificationID' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/identificationID' label='Identification ID' dc:relation='https://dwc.tdwg.org/terms/#dwc:identificationID' dc:description='An identifier for a dwc:Identification.' comments='Recommended best practice is to use a globally unique identifier.' examples='`9992`' required='false'>

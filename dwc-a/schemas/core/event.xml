@@ -8,11 +8,11 @@
     name='Event' namespace='http://rs.tdwg.org/dwc/terms/'
     dcterms:isPartOf='http://www.tdwg.org/standards/450'
     rowType='http://rs.tdwg.org/dwc/terms/Event'
-    dc:issued='2026-09-17'
+    dc:issued='2026-10-13'
     dc:subject=''
     dc:relation='http://rs.tdwg.org/dwc/terms/Event'
     dc:description='Support for Darwin Core Event-based records.'
-  dcterms:source='http://rs.tdwg.org/dwc-a/schemas/core/event_2026-09-17.xml'>
+  dcterms:source='http://rs.tdwg.org/dwc-a/schemas/core/event_2026-10-13.xml'>
 
     <!-- Record-level -->
     <property group='Record-level' name='modified' type='date' namespace='http://purl.org/dc/terms/' qualName='http://purl.org/dc/terms/modified' label='Date Modified' dc:relation='https://dwc.tdwg.org/terms/#dcterms:modified' dc:description='Date on which the resource was changed.' comments='Recommended best practice is to use a date that conforms to ISO 8601-1:2019.' examples='`1963-03-08T14:07-06:00` (8 Mar 1963 at or after 2:07pm and before 2:08pm in the time zone six hours earlier than UTC); `2009-02-20T08:40Z` (20 February 2009 at or after 8:40am and before 8:41 UTC); `2018-08-29T15:19` (29 August 2018 at or after 3:19pm and before 3:20pm local time); `1809-02-12` (within the day 12 February 1809); `1906-06` (in the month of June 1906); `1971` (in the year 1971); `2007-03-01T13:00:00Z/2008-05-11T15:30:00Z` (some time within the interval beginning 1 March 2007 at 1pm UTC and before 11 May 2008 at 3:30pm UTC); `1900/1909` (some time within the interval between the beginning of the year 1900 and before the year 1909); `2007-11-13/15` (some time in the interval between the beginning of 13 November 2007 and before 15 November 2007)' required='false'>

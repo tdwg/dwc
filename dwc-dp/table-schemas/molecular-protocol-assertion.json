@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/molecular-protocol-assertion",
+  "identifier": "http://rs.tdwg.org/dwc-dp/1.0/molecular-protocol-assertion",
   "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
   "url": "table-schemas/molecular-protocol-assertion.json",
   "name": "molecular-protocol-assertion",

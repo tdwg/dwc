@@ -8,11 +8,11 @@
     name="HumboldtEcologicalInventory" namespace='http://rs.tdwg.org/eco/terms/'
     dcterms:isPartOf='http://www.tdwg.org/standards/450'
     rowType='http://rs.tdwg.org/eco/terms/Event'
-    dc:issued='2026-09-17'
+    dc:issued='2026-10-13'
     dc:subject='dwc:Event'
     dc:relation='http://rs.tdwg.org/eco/terms/Event'
     dc:description='Extended support for Darwin Core Events related to ecological inventories.'
-  dcterms:source='http://rs.tdwg.org/dwc-a/schemas/extension/humboldt_2026-09-17.xml'>
+  dcterms:source='http://rs.tdwg.org/dwc-a/schemas/extension/humboldt_2026-10-13.xml'>
 
     <!-- Survey -->
     <property group='Survey' name='surveyID' namespace='http://rs.tdwg.org/eco/terms/' qualName='http://rs.tdwg.org/eco/terms/surveyID' label='Survey ID' dc:relation='https://dwc.tdwg.org/terms/#eco:surveyID' dc:description='An identifier for an eco:Survey.' comments='Recommended best practice is to use a globally unique identifier.' required='false'>

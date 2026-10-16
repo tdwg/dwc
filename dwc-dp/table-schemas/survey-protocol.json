@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc-dp/1.0-RC/survey-protocol",
+  "identifier": "http://rs.tdwg.org/dwc-dp/1.0/survey-protocol",
   "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
   "url": "table-schemas/survey-protocol.json",
   "name": "survey-protocol",
