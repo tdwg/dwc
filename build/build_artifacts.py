@@ -1935,31 +1935,48 @@ def _preflight_webpage_configuration(config, dwc_list_terms, dwc_list_databases,
             if d.get('schema_inventory', False):
                 core_entries = []
                 extension_entries = []
+                inventory_complete = True
                 for artifact_index, artifact in enumerate(config.get('artifacts', [])):
                     if not artifact.get('update', True) or artifact.get('type') not in ('core', 'extension'):
                         continue
                     schema_state = artifact_state.get(artifact_index)
                     if schema_state is None:
-                        raise ValueError(
-                            f"schema inventory source was not successfully preflighted: {artifact.get('name', '<unnamed artifact>')}"
-                        )
+                        # The artifact's preflight error was already recorded.
+                        # Do not mask it with a secondary inventory exception.
+                        inventory_complete = False
+                        break
                     version_iri = schema_state.get('schema_version_iri')
                     if not version_iri:
-                        raise ValueError(
-                            f"schema inventory has no current immutable version for {artifact.get('name', '<unnamed artifact>')}"
+                        errors.append(
+                            prefix + "schema inventory has no current immutable version for "
+                            + str(artifact.get('name', '<unnamed artifact>'))
                         )
+                        inventory_complete = False
+                        break
                     label = str(artifact.get('schema_label') or artifact.get('name') or '').strip()
                     if not label:
-                        raise ValueError('schema inventory artifact has no schema_label or name')
-                    release = _schema_version_date(version_iri)
+                        errors.append(prefix + 'schema inventory artifact has no schema_label or name')
+                        inventory_complete = False
+                        break
+                    try:
+                        release = _schema_version_date(version_iri)
+                    except ValueError as exc:
+                        errors.append(prefix + str(exc))
+                        inventory_complete = False
+                        break
                     entry = (label.lower(), f"- [{label}]({version_iri}) ({release})")
                     if artifact.get('type') == 'core':
                         core_entries.append(entry)
                     else:
                         extension_entries.append(entry)
+                if not inventory_complete:
+                    # An incomplete inventory must not be rendered; report the
+                    # accumulated preflight errors through the normal path.
+                    continue
                 dp_version = str((config.get('dwc_dp') or {}).get('version', '')).strip()
                 if not dp_version:
-                    raise ValueError('schema inventory requires dwc_dp.version')
+                    errors.append(prefix + 'schema inventory requires dwc_dp.version')
+                    continue
                 ds['template_substitutions'] = {
                     '{dwca_core_schemas}': '\n'.join(value for _, value in sorted(core_entries)),
                     '{dwca_extension_schemas}': '\n'.join(value for _, value in sorted(extension_entries)),

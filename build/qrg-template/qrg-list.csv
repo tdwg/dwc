@@ -346,6 +346,7 @@ http://rs.tdwg.org/eco/terms/samplingPerformedByID
 http://rs.tdwg.org/eco/terms/isSamplingEffortReported
 http://rs.tdwg.org/eco/terms/samplingEffortValue
 http://rs.tdwg.org/eco/terms/samplingEffortUnit
+http://rs.tdwg.org/eco/terms/samplingEffortProtocol
 http://rs.tdwg.org/eco/terms/SurveyTarget
 http://rs.tdwg.org/eco/terms/surveyTargetID
 http://rs.tdwg.org/eco/terms/surveyTargetType

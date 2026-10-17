@@ -140,8 +140,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [dwc:institutionCode](#dwc_institutionCode) |
 [dwc:institutionID](#dwc_institutionID) |
 [dwc:organismPart](#dwc_organismPart) |
-[dwc:ownerInstitutionCode](#dwc_ownerInstitutionCode) |
-[eco:samplingEffortProtocol](#eco_samplingEffortProtocol)
+[dwc:ownerInstitutionCode](#dwc_ownerInstitutionCode)
 
 **Dublin Core legacy namespace**
 
@@ -218,6 +217,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 [dwc:sampledSubstrateLayer](#dwc_sampledSubstrateLayer) |
 [dwc:sampleSizeUnit](#dwc_sampleSizeUnit) |
 [dwc:sampleSizeValue](#dwc_sampleSizeValue) |
+[eco:samplingEffortProtocol](#eco_samplingEffortProtocol) |
 [dwc:startDayOfYear](#dwc_startDayOfYear) |
 [dwc:StartTimeOfDay](#dwc_StartTimeOfDay) |
 [dwc:verbatimEventDate](#dwc_verbatimEventDate) |
@@ -717,8 +717,7 @@ No properties are currently organized in this class.
 [Institution Code](#dwc_institutionCode) |
 [Institution ID](#dwc_institutionID) |
 [Organism Part](#dwc_organismPart) |
-[Owner Institution Code](#dwc_ownerInstitutionCode) |
-[Sampling Effort Protocol](#eco_samplingEffortProtocol)
+[Owner Institution Code](#dwc_ownerInstitutionCode)
 
 **Dublin Core legacy namespace**
 
@@ -795,6 +794,7 @@ No properties are currently organized in this class.
 [Sample Size Value](#dwc_sampleSizeValue) |
 [Sampled Substrate Category](#dwc_sampledSubstrateCategory) |
 [Sampled Substrate Layer](#dwc_sampledSubstrateLayer) |
+[Sampling Effort Protocol](#eco_samplingEffortProtocol) |
 [Start Day Of Year](#dwc_startDayOfYear) |
 [Start Time of Day](#dwc_StartTimeOfDay) |
 [Verbatim EventDate](#dwc_verbatimEventDate) |
@@ -27126,11 +27126,11 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-10-13</td>
+			<td>2025-07-10</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/samplingEffortProtocol-2026-10-13">http://rs.tdwg.org/eco/terms/version/samplingEffortProtocol-2026-10-13</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/samplingEffortProtocol-2025-07-10">http://rs.tdwg.org/eco/terms/version/samplingEffortProtocol-2025-07-10</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -27138,11 +27138,27 @@ No properties are currently organized in this class.
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td></td>
+			<td>A description of or reference (publication or URL) to the methods used to determine the sampling effort.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>This description should be associated with the values reported in eco:samplingEffortValue and eco:samplingEffortUnit. This is a specialization of eco:protocolDescriptions focused on effort, distinct from the survey method. The effort relates to the intensity of sampling and therefore can assist in interpreting estimates of completeness. This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>40 box traps deployed at even spacings along 4 parallel 100m transects placed 50m apart and visited at 6 hourly intervals over a 48 hour period</code></li>
+  <li class="list-group-item"><code>2 people occupying a bird hide for a period of 8 hours and undertaking a 30 minute count of species within the 150 degree field of view every 2 hours</code></li>
+  <li class="list-group-item"><code>A single baited camera trap station with motion sensor trigger, deployed for a period of 10 days and configured for detecting large fauna moving through a known traffic way</code></li>
+</ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
 		</tr>
 		<tr>
 			<td>Type</td>
-			<td></td>
+			<td>Property</td>
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
@@ -27159,10 +27175,6 @@ No properties are currently organized in this class.
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2026-10-13_62">http://rs.tdwg.org/decisions/decision-2026-10-13_62</a></td>
 		</tr>
 	</tbody>
 </table>

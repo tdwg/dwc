@@ -183,7 +183,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Released intentionally into the (semi)natural environment with the purpose of controlling the population(s) of one or more organisms. See also Harrower et al. 2017 <a href="http://nora.nerc.ac.uk/id/eprint/519129">http://nora.nerc.ac.uk/id/eprint/519129</a></td>
+			<td>Released intentionally into the (semi)natural environment with the purpose of controlling the population(s) of one or more organisms. See also Harrower et al. 2017. <a href="http://nora.nerc.ac.uk/id/eprint/519129">http://nora.nerc.ac.uk/id/eprint/519129</a></td>
 		</tr>
 		<tr>
 			<td>Controlled value</td>
@@ -437,7 +437,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>The organism was released with the intention of improving its conservation status of the species or the conservation status of other species in the habitat. See also Harrower et al. 2017 <a href="http://nora.nerc.ac.uk/id/eprint/519129">http://nora.nerc.ac.uk/id/eprint/519129</a></td>
+			<td>The organism was released with the intention of improving its conservation status of the species or the conservation status of other species in the habitat. See also Harrower et al. 2017. <a href="http://nora.nerc.ac.uk/id/eprint/519129">http://nora.nerc.ac.uk/id/eprint/519129</a></td>
 		</tr>
 		<tr>
 			<td>Controlled value</td>
@@ -795,7 +795,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Farmed animals are generally kept in a defined area, such as a field. See also Harrower et al. 2017 <a href="http://nora.nerc.ac.uk/id/eprint/519129">http://nora.nerc.ac.uk/id/eprint/519129</a></td>
+			<td>Farmed animals are generally kept in a defined area, such as a field. See also Harrower et al. 2017. <a href="http://nora.nerc.ac.uk/id/eprint/519129">http://nora.nerc.ac.uk/id/eprint/519129</a></td>
 		</tr>
 		<tr>
 			<td>Controlled value</td>
@@ -1615,7 +1615,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Examples include wooden furniture, sawdust and firewood. See also Harrower et al. 2017 <a href="http://nora.nerc.ac.uk/id/eprint/519129">http://nora.nerc.ac.uk/id/eprint/519129</a></td>
+			<td>Examples include wooden furniture, sawdust and firewood. See also Harrower et al. 2017. <a href="http://nora.nerc.ac.uk/id/eprint/519129">http://nora.nerc.ac.uk/id/eprint/519129</a></td>
 		</tr>
 		<tr>
 			<td>Controlled value</td>
@@ -2023,7 +2023,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Examples include wooden pallets, boxes, bags and baskets. See also Harrower et al. 2017 <a href="http://nora.nerc.ac.uk/id/eprint/519129">http://nora.nerc.ac.uk/id/eprint/519129</a></td>
+			<td>Examples include wooden pallets, boxes, bags and baskets. See also Harrower et al. 2017. <a href="http://nora.nerc.ac.uk/id/eprint/519129">http://nora.nerc.ac.uk/id/eprint/519129</a></td>
 		</tr>
 		<tr>
 			<td>Controlled value</td>
@@ -2227,7 +2227,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Examples include the movement of offshore installations, such as drilling platforms, but also pipeline and cable transport. See also Harrower et al. 2017 <a href="http://nora.nerc.ac.uk/id/eprint/519129">http://nora.nerc.ac.uk/id/eprint/519129</a></td>
+			<td>Examples include fouling from offshore oil and gas platforms, offshore renewable energy sites (such as wind farms, pipelines, cable transport, etc.). See also Harrower et al. 2017. <a href="http://nora.nerc.ac.uk/id/eprint/519129">http://nora.nerc.ac.uk/id/eprint/519129</a></td>
 		</tr>
 		<tr>
 			<td>Controlled value</td>
@@ -2285,11 +2285,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Usage</td>
-			<td>Organisms transported along these corridors in ballast, on as hull fouling SHOULD be categorised under the "ship/boat ballast water" or "ship/boat hull fouling" terms.</td>
+			<td>Organisms transported along these corridors in ballast or as hull fouling SHOULD be categorised under the "ship/boat ballast water" or "ship/boat hull fouling" terms.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>See also Harrower et al. 2017 <a href="http://nora.nerc.ac.uk/id/eprint/519129">http://nora.nerc.ac.uk/id/eprint/519129</a></td>
+			<td>See also Harrower et al. 2017. <a href="http://nora.nerc.ac.uk/id/eprint/519129">http://nora.nerc.ac.uk/id/eprint/519129</a></td>
 		</tr>
 		<tr>
 			<td>Controlled value</td>
@@ -2651,7 +2651,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>See also Harrower et al. 2017 <a href="http://nora.nerc.ac.uk/id/eprint/519129">http://nora.nerc.ac.uk/id/eprint/519129</a></td>
+			<td>See also Harrower et al. 2017. <a href="http://nora.nerc.ac.uk/id/eprint/519129">http://nora.nerc.ac.uk/id/eprint/519129</a></td>
 		</tr>
 		<tr>
 			<td>Controlled value</td>
@@ -2755,7 +2755,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>See also Harrower et al. 2017 <a href="http://nora.nerc.ac.uk/id/eprint/519129">http://nora.nerc.ac.uk/id/eprint/519129</a></td>
+			<td>See also Harrower et al. 2017. <a href="http://nora.nerc.ac.uk/id/eprint/519129">http://nora.nerc.ac.uk/id/eprint/519129</a></td>
 		</tr>
 		<tr>
 			<td>Controlled value</td>

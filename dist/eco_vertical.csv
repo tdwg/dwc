@@ -36,6 +36,7 @@ protocolNames
 protocolReferences
 reportedExtremeConditions
 reportedWeather
+samplingEffortProtocol
 samplingEffortUnit
 samplingEffortValue
 samplingPerformedBy

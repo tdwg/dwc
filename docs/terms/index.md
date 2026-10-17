@@ -4273,6 +4273,7 @@ This category contains terms that are generic in that they might apply to any ty
       <a class="btn btn-sm btn-outline-primary m-1" href="#eco:isSamplingEffortReported">isSamplingEffortReported</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#eco:samplingEffortValue">samplingEffortValue</a>
       <a class="btn btn-sm btn-outline-primary m-1" href="#eco:samplingEffortUnit">samplingEffortUnit</a>
+      <a class="btn btn-sm btn-outline-primary m-1" href="#eco:samplingEffortProtocol">samplingEffortProtocol</a>
   </div>
 
 <table class="table">
@@ -4946,6 +4947,19 @@ This category contains terms that are generic in that they might apply to any ty
     <tr><td>Definition</td><td>The units associated with an eco:samplingEffortValue.</td></tr>
     <tr><td>Notes</td><td>Recommended best practice is to use a controlled vocabulary. This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
     <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>trapHours</code></li><li class="list-group-item"><code>personHours</code></li><li class="list-group-item"><code>trapDays</code></li></ul></td></tr>
+  </tbody>
+</table>
+<p class="invisible">
+  <span id="eco:samplingEffortProtocol"></span>
+    <span id="samplingEffortProtocol"></span>
+  </p>
+<table class="table">
+  <tbody>
+    <tr class="table-secondary"><th colspan="2">samplingEffortProtocol</th></tr>
+    <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/samplingEffortProtocol">http://rs.tdwg.org/eco/terms/samplingEffortProtocol</a></td></tr>
+    <tr><td>Definition</td><td>A description of or reference (publication or URL) to the methods used to determine the sampling effort.</td></tr>
+    <tr><td>Notes</td><td>This description should be associated with the values reported in eco:samplingEffortValue and eco:samplingEffortUnit. This is a specialization of eco:protocolDescriptions focused on effort, distinct from the survey method. The effort relates to the intensity of sampling and therefore can assist in interpreting estimates of completeness. This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+    <tr><td>Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>40 box traps deployed at even spacings along 4 parallel 100m transects placed 50m apart and visited at 6 hourly intervals over a 48 hour period</code></li><li class="list-group-item"><code>2 people occupying a bird hide for a period of 8 hours and undertaking a 30 minute count of species within the 150 degree field of view every 2 hours</code></li><li class="list-group-item"><code>A single baited camera trap station with motion sensor trigger, deployed for a period of 10 days and configured for detecting large fauna moving through a known traffic way</code></li></ul></td></tr>
   </tbody>
 </table>
 
