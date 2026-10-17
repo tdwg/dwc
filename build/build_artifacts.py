@@ -1088,6 +1088,35 @@ class TermList:
         env = Environment(loader=FileSystemLoader(os.path.dirname(template_path)), trim_blocks=True)
         template = env.get_template(os.path.basename(template_path))
         rendered = template.render(data)
+
+        # QRG Identifier rows display the authoritative term IRI, but their
+        # hyperlinks are documentation navigation. Route those links relatively
+        # to the corresponding entry in the combined Darwin Core List of Terms
+        # rather than dereferencing the namespace IRI (which can resolve to
+        # deprecated standalone eco:/chrono: List-of-Terms documents).
+        for class_group in data['class_groups']:
+            group_iri = class_group.get('iri')
+            group_prefix = class_group.get('namespace')
+            group_name = class_group.get('label')
+            if group_iri and group_prefix and group_name:
+                absolute_link = f'<a href="{group_iri}">{group_iri}</a>'
+                relative_link = (
+                    f'<a href="../list/#{group_prefix}_{group_name}">{group_iri}</a>'
+                )
+                rendered = rendered.replace(absolute_link, relative_link)
+
+            for term in class_group.get('terms', []):
+                term_iri = term.get('iri')
+                term_prefix = term.get('namespace')
+                term_name = term.get('label')
+                if not term_iri or not term_prefix or not term_name:
+                    continue
+                absolute_link = f'<a href="{term_iri}">{term_iri}</a>'
+                relative_link = (
+                    f'<a href="../list/#{term_prefix}_{term_name}">{term_iri}</a>'
+                )
+                rendered = rendered.replace(absolute_link, relative_link)
+
         with open(output_path, 'w', encoding='utf-8') as output_file:
             output_file.write(str(rendered))
 
@@ -1228,7 +1257,8 @@ class TermList:
                 text += '\t\t<tr>\n'
                 text += '\t\t\t<td>%s</td>\n' % self.t('term_iri')
                 uri = row['pref_ns_uri'] + row['term_localName']
-                text += '\t\t\t<td><a href="%s">%s</a></td>\n' % (uri, uri)
+                identifier_anchor = '#' + row['pref_ns_prefix'] + '_' + row['term_localName']
+                text += '\t\t\t<td><a href="%s">%s</a></td>\n' % (identifier_anchor, uri)
                 text += '\t\t</tr>\n'
                 text += '\t\t<tr>\n'
                 text += '\t\t\t<td>%s</td>\n' % self.t('modified')

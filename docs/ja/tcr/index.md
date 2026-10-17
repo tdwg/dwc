@@ -75,7 +75,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 	<tbody>
 		<tr>
 			<td>用語のIRI</td>
-			<td><a href="http://rs.tdwg.org/ecotcr/values/tcr">http://rs.tdwg.org/ecotcr/values/tcr</a></td>
+			<td><a href="#ecotcr_tcr">http://rs.tdwg.org/ecotcr/values/tcr</a></td>
 		</tr>
 		<tr>
 			<td>変更日</td>
@@ -117,7 +117,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 	<tbody>
 		<tr>
 			<td>用語のIRI</td>
-			<td><a href="http://rs.tdwg.org/ecotcr/values/tcr00">http://rs.tdwg.org/ecotcr/values/tcr00</a></td>
+			<td><a href="#ecotcr_tcr00">http://rs.tdwg.org/ecotcr/values/tcr00</a></td>
 		</tr>
 		<tr>
 			<td>変更日</td>
@@ -163,7 +163,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 	<tbody>
 		<tr>
 			<td>用語のIRI</td>
-			<td><a href="http://rs.tdwg.org/ecotcr/values/tcr01">http://rs.tdwg.org/ecotcr/values/tcr01</a></td>
+			<td><a href="#ecotcr_tcr01">http://rs.tdwg.org/ecotcr/values/tcr01</a></td>
 		</tr>
 		<tr>
 			<td>変更日</td>
@@ -209,7 +209,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 	<tbody>
 		<tr>
 			<td>用語のIRI</td>
-			<td><a href="http://rs.tdwg.org/ecotcr/values/tcr02">http://rs.tdwg.org/ecotcr/values/tcr02</a></td>
+			<td><a href="#ecotcr_tcr02">http://rs.tdwg.org/ecotcr/values/tcr02</a></td>
 		</tr>
 		<tr>
 			<td>変更日</td>

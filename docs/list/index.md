@@ -1234,7 +1234,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/absentTaxa">http://rs.tdwg.org/eco/terms/absentTaxa</a></td>
+			<td><a href="#eco_absentTaxa">http://rs.tdwg.org/eco/terms/absentTaxa</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -1299,7 +1299,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/absentTaxa">http://rs.tdwg.org/eco/iri/absentTaxa</a></td>
+			<td><a href="#ecoiri_absentTaxa">http://rs.tdwg.org/eco/iri/absentTaxa</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -1353,7 +1353,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/abundanceCap">http://rs.tdwg.org/eco/terms/abundanceCap</a></td>
+			<td><a href="#eco_abundanceCap">http://rs.tdwg.org/eco/terms/abundanceCap</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -1406,7 +1406,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/acceptedNameUsage">http://rs.tdwg.org/dwc/terms/acceptedNameUsage</a></td>
+			<td><a href="#dwc_acceptedNameUsage">http://rs.tdwg.org/dwc/terms/acceptedNameUsage</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -1456,7 +1456,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/acceptedNameUsageID">http://rs.tdwg.org/dwc/terms/acceptedNameUsageID</a></td>
+			<td><a href="#dwc_acceptedNameUsageID">http://rs.tdwg.org/dwc/terms/acceptedNameUsageID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -1507,7 +1507,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/acceptedScientificName">http://rs.tdwg.org/dwc/terms/acceptedScientificName</a></td>
+			<td><a href="#dwc_acceptedScientificName">http://rs.tdwg.org/dwc/terms/acceptedScientificName</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -1553,7 +1553,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/acceptedScientificNameID">http://rs.tdwg.org/dwc/terms/acceptedScientificNameID</a></td>
+			<td><a href="#dwc_acceptedScientificNameID">http://rs.tdwg.org/dwc/terms/acceptedScientificNameID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -1595,7 +1595,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/AcceptedTaxon">http://rs.tdwg.org/dwc/terms/AcceptedTaxon</a></td>
+			<td><a href="#dwc_AcceptedTaxon">http://rs.tdwg.org/dwc/terms/AcceptedTaxon</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -1637,7 +1637,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/AcceptedTaxonID">http://rs.tdwg.org/dwc/terms/AcceptedTaxonID</a></td>
+			<td><a href="#dwc_AcceptedTaxonID">http://rs.tdwg.org/dwc/terms/AcceptedTaxonID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -1679,7 +1679,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/acceptedTaxonID">http://rs.tdwg.org/dwc/terms/acceptedTaxonID</a></td>
+			<td><a href="#dwc_acceptedTaxonID">http://rs.tdwg.org/dwc/terms/acceptedTaxonID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -1725,7 +1725,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/acceptedTaxonName">http://rs.tdwg.org/dwc/terms/acceptedTaxonName</a></td>
+			<td><a href="#dwc_acceptedTaxonName">http://rs.tdwg.org/dwc/terms/acceptedTaxonName</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -1771,7 +1771,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/acceptedTaxonNameID">http://rs.tdwg.org/dwc/terms/acceptedTaxonNameID</a></td>
+			<td><a href="#dwc_acceptedTaxonNameID">http://rs.tdwg.org/dwc/terms/acceptedTaxonNameID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -1813,7 +1813,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/AccessConstraints">http://rs.tdwg.org/dwc/terms/AccessConstraints</a></td>
+			<td><a href="#dwc_AccessConstraints">http://rs.tdwg.org/dwc/terms/AccessConstraints</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -1859,7 +1859,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://purl.org/dc/terms/accessRights">http://purl.org/dc/terms/accessRights</a></td>
+			<td><a href="#dcterms_accessRights">http://purl.org/dc/terms/accessRights</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -1908,7 +1908,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/accordingTo">http://rs.tdwg.org/dwc/terms/accordingTo</a></td>
+			<td><a href="#dwc_accordingTo">http://rs.tdwg.org/dwc/terms/accordingTo</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -1946,7 +1946,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/accuracy">http://rs.tdwg.org/dwc/terms/accuracy</a></td>
+			<td><a href="#dwc_accuracy">http://rs.tdwg.org/dwc/terms/accuracy</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -1984,7 +1984,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://purl.org/dc/terms/Agent">http://purl.org/dc/terms/Agent</a></td>
+			<td><a href="#dcterms_Agent">http://purl.org/dc/terms/Agent</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -2041,7 +2041,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/agentID">http://rs.tdwg.org/dwc/terms/agentID</a></td>
+			<td><a href="#dwc_agentID">http://rs.tdwg.org/dwc/terms/agentID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -2087,7 +2087,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/agentRemarks">http://rs.tdwg.org/dwc/terms/agentRemarks</a></td>
+			<td><a href="#dwc_agentRemarks">http://rs.tdwg.org/dwc/terms/agentRemarks</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -2129,7 +2129,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/agentRoleOrder">http://rs.tdwg.org/dwc/terms/agentRoleOrder</a></td>
+			<td><a href="#dwc_agentRoleOrder">http://rs.tdwg.org/dwc/terms/agentRoleOrder</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -2182,7 +2182,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/agentType">http://rs.tdwg.org/dwc/terms/agentType</a></td>
+			<td><a href="#dwc_agentType">http://rs.tdwg.org/dwc/terms/agentType</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -2237,7 +2237,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/areNonTargetTaxaFullyReported">http://rs.tdwg.org/eco/terms/areNonTargetTaxaFullyReported</a></td>
+			<td><a href="#eco_areNonTargetTaxaFullyReported">http://rs.tdwg.org/eco/terms/areNonTargetTaxaFullyReported</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -2298,7 +2298,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/assayType">http://rs.tdwg.org/dwc/terms/assayType</a></td>
+			<td><a href="#dwc_assayType">http://rs.tdwg.org/dwc/terms/assayType</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -2352,7 +2352,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/assayType">http://rs.tdwg.org/dwc/iri/assayType</a></td>
+			<td><a href="#dwciri_assayType">http://rs.tdwg.org/dwc/iri/assayType</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -2398,7 +2398,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/Assertion">http://rs.tdwg.org/dwc/terms/Assertion</a></td>
+			<td><a href="#dwc_Assertion">http://rs.tdwg.org/dwc/terms/Assertion</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -2452,7 +2452,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/assertionBy">http://rs.tdwg.org/dwc/terms/assertionBy</a></td>
+			<td><a href="#dwc_assertionBy">http://rs.tdwg.org/dwc/terms/assertionBy</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -2508,7 +2508,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/assertionBy">http://rs.tdwg.org/dwc/iri/assertionBy</a></td>
+			<td><a href="#dwciri_assertionBy">http://rs.tdwg.org/dwc/iri/assertionBy</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -2554,7 +2554,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/assertionEffectiveDate">http://rs.tdwg.org/dwc/terms/assertionEffectiveDate</a></td>
+			<td><a href="#dwc_assertionEffectiveDate">http://rs.tdwg.org/dwc/terms/assertionEffectiveDate</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -2618,7 +2618,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/assertionError">http://rs.tdwg.org/dwc/terms/assertionError</a></td>
+			<td><a href="#dwc_assertionError">http://rs.tdwg.org/dwc/terms/assertionError</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -2667,7 +2667,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/assertionID">http://rs.tdwg.org/dwc/terms/assertionID</a></td>
+			<td><a href="#dwc_assertionID">http://rs.tdwg.org/dwc/terms/assertionID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -2713,7 +2713,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/assertionMadeDate">http://rs.tdwg.org/dwc/terms/assertionMadeDate</a></td>
+			<td><a href="#dwc_assertionMadeDate">http://rs.tdwg.org/dwc/terms/assertionMadeDate</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -2773,7 +2773,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/assertionProtocols">http://rs.tdwg.org/dwc/terms/assertionProtocols</a></td>
+			<td><a href="#dwc_assertionProtocols">http://rs.tdwg.org/dwc/terms/assertionProtocols</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -2815,7 +2815,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/assertionReferences">http://rs.tdwg.org/dwc/terms/assertionReferences</a></td>
+			<td><a href="#dwc_assertionReferences">http://rs.tdwg.org/dwc/terms/assertionReferences</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -2861,7 +2861,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/assertionRemarks">http://rs.tdwg.org/dwc/terms/assertionRemarks</a></td>
+			<td><a href="#dwc_assertionRemarks">http://rs.tdwg.org/dwc/terms/assertionRemarks</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -2911,7 +2911,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/assertionType">http://rs.tdwg.org/dwc/terms/assertionType</a></td>
+			<td><a href="#dwc_assertionType">http://rs.tdwg.org/dwc/terms/assertionType</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -2967,7 +2967,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/assertionType">http://rs.tdwg.org/dwc/iri/assertionType</a></td>
+			<td><a href="#dwciri_assertionType">http://rs.tdwg.org/dwc/iri/assertionType</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -3013,7 +3013,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/assertionUnit">http://rs.tdwg.org/dwc/terms/assertionUnit</a></td>
+			<td><a href="#dwc_assertionUnit">http://rs.tdwg.org/dwc/terms/assertionUnit</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -3070,7 +3070,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/assertionUnit">http://rs.tdwg.org/dwc/iri/assertionUnit</a></td>
+			<td><a href="#dwciri_assertionUnit">http://rs.tdwg.org/dwc/iri/assertionUnit</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -3123,7 +3123,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/assertionValue">http://rs.tdwg.org/dwc/terms/assertionValue</a></td>
+			<td><a href="#dwc_assertionValue">http://rs.tdwg.org/dwc/terms/assertionValue</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -3180,7 +3180,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/assertionValue">http://rs.tdwg.org/dwc/iri/assertionValue</a></td>
+			<td><a href="#dwciri_assertionValue">http://rs.tdwg.org/dwc/iri/assertionValue</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -3230,7 +3230,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/associatedMedia">http://rs.tdwg.org/dwc/terms/associatedMedia</a></td>
+			<td><a href="#dwc_associatedMedia">http://rs.tdwg.org/dwc/terms/associatedMedia</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -3287,7 +3287,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/associatedOccurrences">http://rs.tdwg.org/dwc/terms/associatedOccurrences</a></td>
+			<td><a href="#dwc_associatedOccurrences">http://rs.tdwg.org/dwc/terms/associatedOccurrences</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -3344,7 +3344,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/associatedOrganisms">http://rs.tdwg.org/dwc/terms/associatedOrganisms</a></td>
+			<td><a href="#dwc_associatedOrganisms">http://rs.tdwg.org/dwc/terms/associatedOrganisms</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -3397,7 +3397,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/associatedReferences">http://rs.tdwg.org/dwc/terms/associatedReferences</a></td>
+			<td><a href="#dwc_associatedReferences">http://rs.tdwg.org/dwc/terms/associatedReferences</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -3455,7 +3455,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/associatedSequences">http://rs.tdwg.org/dwc/terms/associatedSequences</a></td>
+			<td><a href="#dwc_associatedSequences">http://rs.tdwg.org/dwc/terms/associatedSequences</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -3508,7 +3508,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/associatedTaxa">http://rs.tdwg.org/dwc/terms/associatedTaxa</a></td>
+			<td><a href="#dwc_associatedTaxa">http://rs.tdwg.org/dwc/terms/associatedTaxa</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -3562,7 +3562,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/basionym">http://rs.tdwg.org/dwc/terms/basionym</a></td>
+			<td><a href="#dwc_basionym">http://rs.tdwg.org/dwc/terms/basionym</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -3608,7 +3608,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/basionymID">http://rs.tdwg.org/dwc/terms/basionymID</a></td>
+			<td><a href="#dwc_basionymID">http://rs.tdwg.org/dwc/terms/basionymID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -3650,7 +3650,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/basisOfRecord">http://rs.tdwg.org/dwc/terms/basisOfRecord</a></td>
+			<td><a href="#dwc_basisOfRecord">http://rs.tdwg.org/dwc/terms/basisOfRecord</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -3724,7 +3724,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/bed">http://rs.tdwg.org/dwc/terms/bed</a></td>
+			<td><a href="#dwc_bed">http://rs.tdwg.org/dwc/terms/bed</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -3774,7 +3774,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/behavior">http://rs.tdwg.org/dwc/terms/behavior</a></td>
+			<td><a href="#dwc_behavior">http://rs.tdwg.org/dwc/terms/behavior</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -3828,7 +3828,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/behavior">http://rs.tdwg.org/dwc/iri/behavior</a></td>
+			<td><a href="#dwciri_behavior">http://rs.tdwg.org/dwc/iri/behavior</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -3878,7 +3878,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://purl.org/dc/terms/bibliographicCitation">http://purl.org/dc/terms/bibliographicCitation</a></td>
+			<td><a href="#dcterms_bibliographicCitation">http://purl.org/dc/terms/bibliographicCitation</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -3928,7 +3928,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/bibliographicIdentifier">http://rs.tdwg.org/dwc/terms/bibliographicIdentifier</a></td>
+			<td><a href="#dwc_bibliographicIdentifier">http://rs.tdwg.org/dwc/terms/bibliographicIdentifier</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -3982,7 +3982,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/bibliographicIdentifierType">http://rs.tdwg.org/dwc/terms/bibliographicIdentifierType</a></td>
+			<td><a href="#dwc_bibliographicIdentifierType">http://rs.tdwg.org/dwc/terms/bibliographicIdentifierType</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -4037,7 +4037,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/bibliographicIdentifierType">http://rs.tdwg.org/dwc/iri/bibliographicIdentifierType</a></td>
+			<td><a href="#dwciri_bibliographicIdentifierType">http://rs.tdwg.org/dwc/iri/bibliographicIdentifierType</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -4083,7 +4083,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://purl.org/dc/terms/BibliographicResource">http://purl.org/dc/terms/BibliographicResource</a></td>
+			<td><a href="#dcterms_BibliographicResource">http://purl.org/dc/terms/BibliographicResource</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -4125,7 +4125,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/binomial">http://rs.tdwg.org/dwc/terms/binomial</a></td>
+			<td><a href="#dwc_binomial">http://rs.tdwg.org/dwc/terms/binomial</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -4167,7 +4167,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/caste">http://rs.tdwg.org/dwc/terms/caste</a></td>
+			<td><a href="#dwc_caste">http://rs.tdwg.org/dwc/terms/caste</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -4228,7 +4228,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/caste">http://rs.tdwg.org/dwc/iri/caste</a></td>
+			<td><a href="#dwciri_caste">http://rs.tdwg.org/dwc/iri/caste</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -4282,7 +4282,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/catalogNumber">http://rs.tdwg.org/dwc/terms/catalogNumber</a></td>
+			<td><a href="#dwc_catalogNumber">http://rs.tdwg.org/dwc/terms/catalogNumber</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -4333,7 +4333,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/CatalogNumberNumeric">http://rs.tdwg.org/dwc/terms/CatalogNumberNumeric</a></td>
+			<td><a href="#dwc_CatalogNumberNumeric">http://rs.tdwg.org/dwc/terms/CatalogNumberNumeric</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -4371,7 +4371,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/causeOfDeath">http://rs.tdwg.org/dwc/terms/causeOfDeath</a></td>
+			<td><a href="#dwc_causeOfDeath">http://rs.tdwg.org/dwc/terms/causeOfDeath</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -4433,7 +4433,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/chemistryRemarks">http://rs.tdwg.org/dwc/terms/chemistryRemarks</a></td>
+			<td><a href="#dwc_chemistryRemarks">http://rs.tdwg.org/dwc/terms/chemistryRemarks</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -4475,7 +4475,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/terms/ChronometricAge">http://rs.tdwg.org/chrono/terms/ChronometricAge</a></td>
+			<td><a href="#chrono_ChronometricAge">http://rs.tdwg.org/chrono/terms/ChronometricAge</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -4531,7 +4531,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/terms/chronometricAgeConversionProtocol">http://rs.tdwg.org/chrono/terms/chronometricAgeConversionProtocol</a></td>
+			<td><a href="#chrono_chronometricAgeConversionProtocol">http://rs.tdwg.org/chrono/terms/chronometricAgeConversionProtocol</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -4588,7 +4588,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/iri/chronometricAgeConversionProtocol">http://rs.tdwg.org/chrono/iri/chronometricAgeConversionProtocol</a></td>
+			<td><a href="#chronoiri_chronometricAgeConversionProtocol">http://rs.tdwg.org/chrono/iri/chronometricAgeConversionProtocol</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -4646,7 +4646,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/terms/chronometricAgeDeterminedBy">http://rs.tdwg.org/chrono/terms/chronometricAgeDeterminedBy</a></td>
+			<td><a href="#chrono_chronometricAgeDeterminedBy">http://rs.tdwg.org/chrono/terms/chronometricAgeDeterminedBy</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -4700,7 +4700,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/iri/chronometricAgeDeterminedBy">http://rs.tdwg.org/chrono/iri/chronometricAgeDeterminedBy</a></td>
+			<td><a href="#chronoiri_chronometricAgeDeterminedBy">http://rs.tdwg.org/chrono/iri/chronometricAgeDeterminedBy</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -4758,7 +4758,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/terms/chronometricAgeDeterminedDate">http://rs.tdwg.org/chrono/terms/chronometricAgeDeterminedDate</a></td>
+			<td><a href="#chrono_chronometricAgeDeterminedDate">http://rs.tdwg.org/chrono/terms/chronometricAgeDeterminedDate</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -4819,7 +4819,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/terms/chronometricAgeID">http://rs.tdwg.org/chrono/terms/chronometricAgeID</a></td>
+			<td><a href="#chrono_chronometricAgeID">http://rs.tdwg.org/chrono/terms/chronometricAgeID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -4873,7 +4873,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/terms/chronometricAgeProtocol">http://rs.tdwg.org/chrono/terms/chronometricAgeProtocol</a></td>
+			<td><a href="#chrono_chronometricAgeProtocol">http://rs.tdwg.org/chrono/terms/chronometricAgeProtocol</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -4936,7 +4936,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/iri/chronometricAgeProtocol">http://rs.tdwg.org/chrono/iri/chronometricAgeProtocol</a></td>
+			<td><a href="#chronoiri_chronometricAgeProtocol">http://rs.tdwg.org/chrono/iri/chronometricAgeProtocol</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -4994,7 +4994,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/terms/chronometricAgeReferences">http://rs.tdwg.org/chrono/terms/chronometricAgeReferences</a></td>
+			<td><a href="#chrono_chronometricAgeReferences">http://rs.tdwg.org/chrono/terms/chronometricAgeReferences</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -5048,7 +5048,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/terms/chronometricAgeRemarks">http://rs.tdwg.org/chrono/terms/chronometricAgeRemarks</a></td>
+			<td><a href="#chrono_chronometricAgeRemarks">http://rs.tdwg.org/chrono/terms/chronometricAgeRemarks</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -5102,7 +5102,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/terms/chronometricAgeUncertaintyInYears">http://rs.tdwg.org/chrono/terms/chronometricAgeUncertaintyInYears</a></td>
+			<td><a href="#chrono_chronometricAgeUncertaintyInYears">http://rs.tdwg.org/chrono/terms/chronometricAgeUncertaintyInYears</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -5164,7 +5164,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/terms/chronometricAgeUncertaintyMethod">http://rs.tdwg.org/chrono/terms/chronometricAgeUncertaintyMethod</a></td>
+			<td><a href="#chrono_chronometricAgeUncertaintyMethod">http://rs.tdwg.org/chrono/terms/chronometricAgeUncertaintyMethod</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -5221,7 +5221,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/iri/chronometricAgeUncertaintyMethod">http://rs.tdwg.org/chrono/iri/chronometricAgeUncertaintyMethod</a></td>
+			<td><a href="#chronoiri_chronometricAgeUncertaintyMethod">http://rs.tdwg.org/chrono/iri/chronometricAgeUncertaintyMethod</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -5279,7 +5279,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/class">http://rs.tdwg.org/dwc/terms/class</a></td>
+			<td><a href="#dwc_class">http://rs.tdwg.org/dwc/terms/class</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -5324,7 +5324,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/classificationCodes">http://rs.tdwg.org/dwc/terms/classificationCodes</a></td>
+			<td><a href="#dwc_classificationCodes">http://rs.tdwg.org/dwc/terms/classificationCodes</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -5378,7 +5378,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/classificationSystem">http://rs.tdwg.org/dwc/terms/classificationSystem</a></td>
+			<td><a href="#dwc_classificationSystem">http://rs.tdwg.org/dwc/terms/classificationSystem</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -5434,7 +5434,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/classificationSystem">http://rs.tdwg.org/dwc/iri/classificationSystem</a></td>
+			<td><a href="#dwciri_classificationSystem">http://rs.tdwg.org/dwc/iri/classificationSystem</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -5480,7 +5480,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/collectionCode">http://rs.tdwg.org/dwc/terms/collectionCode</a></td>
+			<td><a href="#dwc_collectionCode">http://rs.tdwg.org/dwc/terms/collectionCode</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -5531,7 +5531,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/collectionID">http://rs.tdwg.org/dwc/terms/collectionID</a></td>
+			<td><a href="#dwc_collectionID">http://rs.tdwg.org/dwc/terms/collectionID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -5585,7 +5585,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/compilationSourceTypes">http://rs.tdwg.org/eco/terms/compilationSourceTypes</a></td>
+			<td><a href="#eco_compilationSourceTypes">http://rs.tdwg.org/eco/terms/compilationSourceTypes</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -5651,7 +5651,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/compilationSourceTypes">http://rs.tdwg.org/eco/iri/compilationSourceTypes</a></td>
+			<td><a href="#ecoiri_compilationSourceTypes">http://rs.tdwg.org/eco/iri/compilationSourceTypes</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -5705,7 +5705,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/compilationTypes">http://rs.tdwg.org/eco/terms/compilationTypes</a></td>
+			<td><a href="#eco_compilationTypes">http://rs.tdwg.org/eco/terms/compilationTypes</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -5772,7 +5772,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/compilationTypes">http://rs.tdwg.org/eco/iri/compilationTypes</a></td>
+			<td><a href="#ecoiri_compilationTypes">http://rs.tdwg.org/eco/iri/compilationTypes</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -5826,7 +5826,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/continent">http://rs.tdwg.org/dwc/terms/continent</a></td>
+			<td><a href="#dwc_continent">http://rs.tdwg.org/dwc/terms/continent</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -5888,7 +5888,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/coordinatePrecision">http://rs.tdwg.org/dwc/terms/coordinatePrecision</a></td>
+			<td><a href="#dwc_coordinatePrecision">http://rs.tdwg.org/dwc/terms/coordinatePrecision</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -5935,7 +5935,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/coordinateUncertaintyInMeters">http://rs.tdwg.org/dwc/terms/coordinateUncertaintyInMeters</a></td>
+			<td><a href="#dwc_coordinateUncertaintyInMeters">http://rs.tdwg.org/dwc/terms/coordinateUncertaintyInMeters</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -5989,7 +5989,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/country">http://rs.tdwg.org/dwc/terms/country</a></td>
+			<td><a href="#dwc_country">http://rs.tdwg.org/dwc/terms/country</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -6043,7 +6043,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/countryCode">http://rs.tdwg.org/dwc/terms/countryCode</a></td>
+			<td><a href="#dwc_countryCode">http://rs.tdwg.org/dwc/terms/countryCode</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -6110,7 +6110,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/county">http://rs.tdwg.org/dwc/terms/county</a></td>
+			<td><a href="#dwc_county">http://rs.tdwg.org/dwc/terms/county</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -6168,7 +6168,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/cultivarEpithet">http://rs.tdwg.org/dwc/terms/cultivarEpithet</a></td>
+			<td><a href="#dwc_cultivarEpithet">http://rs.tdwg.org/dwc/terms/cultivarEpithet</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -6230,7 +6230,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/damageRemarks">http://rs.tdwg.org/dwc/terms/damageRemarks</a></td>
+			<td><a href="#dwc_damageRemarks">http://rs.tdwg.org/dwc/terms/damageRemarks</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -6280,7 +6280,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/dataGeneralizations">http://rs.tdwg.org/dwc/terms/dataGeneralizations</a></td>
+			<td><a href="#dwc_dataGeneralizations">http://rs.tdwg.org/dwc/terms/dataGeneralizations</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -6326,7 +6326,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/dataGeneralizations">http://rs.tdwg.org/dwc/iri/dataGeneralizations</a></td>
+			<td><a href="#dwciri_dataGeneralizations">http://rs.tdwg.org/dwc/iri/dataGeneralizations</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -6372,7 +6372,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/Dataset">http://rs.tdwg.org/dwc/terms/Dataset</a></td>
+			<td><a href="#dwc_Dataset">http://rs.tdwg.org/dwc/terms/Dataset</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -6410,7 +6410,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/datasetID">http://rs.tdwg.org/dwc/terms/datasetID</a></td>
+			<td><a href="#dwc_datasetID">http://rs.tdwg.org/dwc/terms/datasetID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -6452,7 +6452,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/datasetName">http://rs.tdwg.org/dwc/terms/datasetName</a></td>
+			<td><a href="#dwc_datasetName">http://rs.tdwg.org/dwc/terms/datasetName</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -6501,7 +6501,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/dateIdentified">http://rs.tdwg.org/dwc/terms/dateIdentified</a></td>
+			<td><a href="#dwc_dateIdentified">http://rs.tdwg.org/dwc/terms/dateIdentified</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -6569,7 +6569,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/day">http://rs.tdwg.org/dwc/terms/day</a></td>
+			<td><a href="#dwc_day">http://rs.tdwg.org/dwc/terms/day</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -6614,7 +6614,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/decimalLatitude">http://rs.tdwg.org/dwc/terms/decimalLatitude</a></td>
+			<td><a href="#dwc_decimalLatitude">http://rs.tdwg.org/dwc/terms/decimalLatitude</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -6664,7 +6664,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/decimalLongitude">http://rs.tdwg.org/dwc/terms/decimalLongitude</a></td>
+			<td><a href="#dwc_decimalLongitude">http://rs.tdwg.org/dwc/terms/decimalLongitude</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -6714,7 +6714,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/degreeOfEstablishment">http://rs.tdwg.org/dwc/terms/degreeOfEstablishment</a></td>
+			<td><a href="#dwc_degreeOfEstablishment">http://rs.tdwg.org/dwc/terms/degreeOfEstablishment</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -6776,7 +6776,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/degreeOfEstablishment">http://rs.tdwg.org/dwc/iri/degreeOfEstablishment</a></td>
+			<td><a href="#dwciri_degreeOfEstablishment">http://rs.tdwg.org/dwc/iri/degreeOfEstablishment</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -6833,7 +6833,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/digitalSpecimenID">http://rs.tdwg.org/dwc/terms/digitalSpecimenID</a></td>
+			<td><a href="#dwc_digitalSpecimenID">http://rs.tdwg.org/dwc/terms/digitalSpecimenID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -6892,7 +6892,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/discipline">http://rs.tdwg.org/dwc/terms/discipline</a></td>
+			<td><a href="#dwc_discipline">http://rs.tdwg.org/dwc/terms/discipline</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -6949,7 +6949,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/discipline">http://rs.tdwg.org/dwc/iri/discipline</a></td>
+			<td><a href="#dwciri_discipline">http://rs.tdwg.org/dwc/iri/discipline</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -6995,7 +6995,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/disposition">http://rs.tdwg.org/dwc/terms/disposition</a></td>
+			<td><a href="#dwc_disposition">http://rs.tdwg.org/dwc/terms/disposition</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -7056,7 +7056,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/disposition">http://rs.tdwg.org/dwc/iri/disposition</a></td>
+			<td><a href="#dwciri_disposition">http://rs.tdwg.org/dwc/iri/disposition</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -7106,7 +7106,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/DwCType">http://rs.tdwg.org/dwc/terms/DwCType</a></td>
+			<td><a href="#dwc_DwCType">http://rs.tdwg.org/dwc/terms/DwCType</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -7144,7 +7144,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/dynamicProperties">http://rs.tdwg.org/dwc/terms/dynamicProperties</a></td>
+			<td><a href="#dwc_dynamicProperties">http://rs.tdwg.org/dwc/terms/dynamicProperties</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -7201,7 +7201,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/earliestAgeOrLowestStage">http://rs.tdwg.org/dwc/terms/earliestAgeOrLowestStage</a></td>
+			<td><a href="#dwc_earliestAgeOrLowestStage">http://rs.tdwg.org/dwc/terms/earliestAgeOrLowestStage</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -7255,7 +7255,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/terms/earliestChronometricAge">http://rs.tdwg.org/chrono/terms/earliestChronometricAge</a></td>
+			<td><a href="#chrono_earliestChronometricAge">http://rs.tdwg.org/chrono/terms/earliestChronometricAge</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -7313,7 +7313,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/terms/earliestChronometricAgeReferenceSystem">http://rs.tdwg.org/chrono/terms/earliestChronometricAgeReferenceSystem</a></td>
+			<td><a href="#chrono_earliestChronometricAgeReferenceSystem">http://rs.tdwg.org/chrono/terms/earliestChronometricAgeReferenceSystem</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -7380,7 +7380,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/iri/earliestChronometricAgeReferenceSystem">http://rs.tdwg.org/chrono/iri/earliestChronometricAgeReferenceSystem</a></td>
+			<td><a href="#chronoiri_earliestChronometricAgeReferenceSystem">http://rs.tdwg.org/chrono/iri/earliestChronometricAgeReferenceSystem</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -7438,7 +7438,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/EarliestDateCollected">http://rs.tdwg.org/dwc/terms/EarliestDateCollected</a></td>
+			<td><a href="#dwc_EarliestDateCollected">http://rs.tdwg.org/dwc/terms/EarliestDateCollected</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -7484,7 +7484,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/earliestEonOrLowestEonothem">http://rs.tdwg.org/dwc/terms/earliestEonOrLowestEonothem</a></td>
+			<td><a href="#dwc_earliestEonOrLowestEonothem">http://rs.tdwg.org/dwc/terms/earliestEonOrLowestEonothem</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -7542,7 +7542,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/earliestEpochOrLowestSeries">http://rs.tdwg.org/dwc/terms/earliestEpochOrLowestSeries</a></td>
+			<td><a href="#dwc_earliestEpochOrLowestSeries">http://rs.tdwg.org/dwc/terms/earliestEpochOrLowestSeries</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -7596,7 +7596,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/earliestEraOrLowestErathem">http://rs.tdwg.org/dwc/terms/earliestEraOrLowestErathem</a></td>
+			<td><a href="#dwc_earliestEraOrLowestErathem">http://rs.tdwg.org/dwc/terms/earliestEraOrLowestErathem</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -7649,7 +7649,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/earliestGeochronologicalEra">http://rs.tdwg.org/dwc/iri/earliestGeochronologicalEra</a></td>
+			<td><a href="#dwciri_earliestGeochronologicalEra">http://rs.tdwg.org/dwc/iri/earliestGeochronologicalEra</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -7695,7 +7695,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/earliestPeriodOrLowestSystem">http://rs.tdwg.org/dwc/terms/earliestPeriodOrLowestSystem</a></td>
+			<td><a href="#dwc_earliestPeriodOrLowestSystem">http://rs.tdwg.org/dwc/terms/earliestPeriodOrLowestSystem</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -7749,7 +7749,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/endDayOfYear">http://rs.tdwg.org/dwc/terms/endDayOfYear</a></td>
+			<td><a href="#dwc_endDayOfYear">http://rs.tdwg.org/dwc/terms/endDayOfYear</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -7804,7 +7804,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/EndTimeOfDay">http://rs.tdwg.org/dwc/terms/EndTimeOfDay</a></td>
+			<td><a href="#dwc_EndTimeOfDay">http://rs.tdwg.org/dwc/terms/EndTimeOfDay</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -7850,7 +7850,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/establishmentMeans">http://rs.tdwg.org/dwc/terms/establishmentMeans</a></td>
+			<td><a href="#dwc_establishmentMeans">http://rs.tdwg.org/dwc/terms/establishmentMeans</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -7912,7 +7912,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/establishmentMeans">http://rs.tdwg.org/dwc/iri/establishmentMeans</a></td>
+			<td><a href="#dwciri_establishmentMeans">http://rs.tdwg.org/dwc/iri/establishmentMeans</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -7969,7 +7969,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/Event">http://rs.tdwg.org/dwc/terms/Event</a></td>
+			<td><a href="#dwc_Event">http://rs.tdwg.org/dwc/terms/Event</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -8025,7 +8025,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/EventAttribute">http://rs.tdwg.org/dwc/terms/EventAttribute</a></td>
+			<td><a href="#dwc_EventAttribute">http://rs.tdwg.org/dwc/terms/EventAttribute</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -8063,7 +8063,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/EventAttributeAccuracy">http://rs.tdwg.org/dwc/terms/EventAttributeAccuracy</a></td>
+			<td><a href="#dwc_EventAttributeAccuracy">http://rs.tdwg.org/dwc/terms/EventAttributeAccuracy</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -8109,7 +8109,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/EventAttributeDeterminedBy">http://rs.tdwg.org/dwc/terms/EventAttributeDeterminedBy</a></td>
+			<td><a href="#dwc_EventAttributeDeterminedBy">http://rs.tdwg.org/dwc/terms/EventAttributeDeterminedBy</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -8155,7 +8155,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/EventAttributeDeterminedDate">http://rs.tdwg.org/dwc/terms/EventAttributeDeterminedDate</a></td>
+			<td><a href="#dwc_EventAttributeDeterminedDate">http://rs.tdwg.org/dwc/terms/EventAttributeDeterminedDate</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -8201,7 +8201,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/EventAttributeID">http://rs.tdwg.org/dwc/terms/EventAttributeID</a></td>
+			<td><a href="#dwc_EventAttributeID">http://rs.tdwg.org/dwc/terms/EventAttributeID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -8243,7 +8243,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/EventAttributeRemarks">http://rs.tdwg.org/dwc/terms/EventAttributeRemarks</a></td>
+			<td><a href="#dwc_EventAttributeRemarks">http://rs.tdwg.org/dwc/terms/EventAttributeRemarks</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -8285,7 +8285,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/eventAttributes">http://rs.tdwg.org/dwc/terms/eventAttributes</a></td>
+			<td><a href="#dwc_eventAttributes">http://rs.tdwg.org/dwc/terms/eventAttributes</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -8327,7 +8327,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/EventAttributeType">http://rs.tdwg.org/dwc/terms/EventAttributeType</a></td>
+			<td><a href="#dwc_EventAttributeType">http://rs.tdwg.org/dwc/terms/EventAttributeType</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -8377,7 +8377,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/EventAttributeUnit">http://rs.tdwg.org/dwc/terms/EventAttributeUnit</a></td>
+			<td><a href="#dwc_EventAttributeUnit">http://rs.tdwg.org/dwc/terms/EventAttributeUnit</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -8423,7 +8423,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/EventAttributeValue">http://rs.tdwg.org/dwc/terms/EventAttributeValue</a></td>
+			<td><a href="#dwc_EventAttributeValue">http://rs.tdwg.org/dwc/terms/EventAttributeValue</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -8469,7 +8469,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/eventCategory">http://rs.tdwg.org/dwc/terms/eventCategory</a></td>
+			<td><a href="#dwc_eventCategory">http://rs.tdwg.org/dwc/terms/eventCategory</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -8525,7 +8525,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/eventCategory">http://rs.tdwg.org/dwc/iri/eventCategory</a></td>
+			<td><a href="#dwciri_eventCategory">http://rs.tdwg.org/dwc/iri/eventCategory</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -8571,7 +8571,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/eventDate">http://rs.tdwg.org/dwc/terms/eventDate</a></td>
+			<td><a href="#dwc_eventDate">http://rs.tdwg.org/dwc/terms/eventDate</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -8635,7 +8635,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/eventDurationUnit">http://rs.tdwg.org/eco/terms/eventDurationUnit</a></td>
+			<td><a href="#eco_eventDurationUnit">http://rs.tdwg.org/eco/terms/eventDurationUnit</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -8699,7 +8699,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/eventDurationUnit">http://rs.tdwg.org/eco/iri/eventDurationUnit</a></td>
+			<td><a href="#ecoiri_eventDurationUnit">http://rs.tdwg.org/eco/iri/eventDurationUnit</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -8745,7 +8745,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/eventDurationValue">http://rs.tdwg.org/eco/terms/eventDurationValue</a></td>
+			<td><a href="#eco_eventDurationValue">http://rs.tdwg.org/eco/terms/eventDurationValue</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -8798,7 +8798,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/eventID">http://rs.tdwg.org/dwc/terms/eventID</a></td>
+			<td><a href="#dwc_eventID">http://rs.tdwg.org/dwc/terms/eventID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -8840,7 +8840,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/EventMeasurement">http://rs.tdwg.org/dwc/terms/EventMeasurement</a></td>
+			<td><a href="#dwc_EventMeasurement">http://rs.tdwg.org/dwc/terms/EventMeasurement</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -8882,7 +8882,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/eventMeasurementAccuracy">http://rs.tdwg.org/dwc/terms/eventMeasurementAccuracy</a></td>
+			<td><a href="#dwc_eventMeasurementAccuracy">http://rs.tdwg.org/dwc/terms/eventMeasurementAccuracy</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -8928,7 +8928,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/eventMeasurementDeterminedBy">http://rs.tdwg.org/dwc/terms/eventMeasurementDeterminedBy</a></td>
+			<td><a href="#dwc_eventMeasurementDeterminedBy">http://rs.tdwg.org/dwc/terms/eventMeasurementDeterminedBy</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -8974,7 +8974,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/eventMeasurementDeterminedDate">http://rs.tdwg.org/dwc/terms/eventMeasurementDeterminedDate</a></td>
+			<td><a href="#dwc_eventMeasurementDeterminedDate">http://rs.tdwg.org/dwc/terms/eventMeasurementDeterminedDate</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -9020,7 +9020,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/eventMeasurementID">http://rs.tdwg.org/dwc/terms/eventMeasurementID</a></td>
+			<td><a href="#dwc_eventMeasurementID">http://rs.tdwg.org/dwc/terms/eventMeasurementID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -9062,7 +9062,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/eventMeasurementRemarks">http://rs.tdwg.org/dwc/terms/eventMeasurementRemarks</a></td>
+			<td><a href="#dwc_eventMeasurementRemarks">http://rs.tdwg.org/dwc/terms/eventMeasurementRemarks</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -9108,7 +9108,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/eventMeasurementType">http://rs.tdwg.org/dwc/terms/eventMeasurementType</a></td>
+			<td><a href="#dwc_eventMeasurementType">http://rs.tdwg.org/dwc/terms/eventMeasurementType</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -9154,7 +9154,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/eventMeasurementUnit">http://rs.tdwg.org/dwc/terms/eventMeasurementUnit</a></td>
+			<td><a href="#dwc_eventMeasurementUnit">http://rs.tdwg.org/dwc/terms/eventMeasurementUnit</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -9200,7 +9200,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/eventMeasurementValue">http://rs.tdwg.org/dwc/terms/eventMeasurementValue</a></td>
+			<td><a href="#dwc_eventMeasurementValue">http://rs.tdwg.org/dwc/terms/eventMeasurementValue</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -9246,7 +9246,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/eventRemarks">http://rs.tdwg.org/dwc/terms/eventRemarks</a></td>
+			<td><a href="#dwc_eventRemarks">http://rs.tdwg.org/dwc/terms/eventRemarks</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -9288,7 +9288,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/eventTime">http://rs.tdwg.org/dwc/terms/eventTime</a></td>
+			<td><a href="#dwc_eventTime">http://rs.tdwg.org/dwc/terms/eventTime</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -9346,7 +9346,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/eventType">http://rs.tdwg.org/dwc/terms/eventType</a></td>
+			<td><a href="#dwc_eventType">http://rs.tdwg.org/dwc/terms/eventType</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -9407,7 +9407,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/eventType">http://rs.tdwg.org/dwc/iri/eventType</a></td>
+			<td><a href="#dwciri_eventType">http://rs.tdwg.org/dwc/iri/eventType</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -9461,7 +9461,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/excludedDegreeOfEstablishmentScope">http://rs.tdwg.org/eco/terms/excludedDegreeOfEstablishmentScope</a></td>
+			<td><a href="#eco_excludedDegreeOfEstablishmentScope">http://rs.tdwg.org/eco/terms/excludedDegreeOfEstablishmentScope</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -9526,7 +9526,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/excludedDegreeOfEstablishmentScope">http://rs.tdwg.org/eco/iri/excludedDegreeOfEstablishmentScope</a></td>
+			<td><a href="#ecoiri_excludedDegreeOfEstablishmentScope">http://rs.tdwg.org/eco/iri/excludedDegreeOfEstablishmentScope</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -9587,7 +9587,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/excludedGrowthFormScope">http://rs.tdwg.org/eco/terms/excludedGrowthFormScope</a></td>
+			<td><a href="#eco_excludedGrowthFormScope">http://rs.tdwg.org/eco/terms/excludedGrowthFormScope</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -9652,7 +9652,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/excludedGrowthFormScope">http://rs.tdwg.org/eco/iri/excludedGrowthFormScope</a></td>
+			<td><a href="#ecoiri_excludedGrowthFormScope">http://rs.tdwg.org/eco/iri/excludedGrowthFormScope</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -9706,7 +9706,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/excludedHabitatScope">http://rs.tdwg.org/eco/terms/excludedHabitatScope</a></td>
+			<td><a href="#eco_excludedHabitatScope">http://rs.tdwg.org/eco/terms/excludedHabitatScope</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -9771,7 +9771,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/excludedHabitatScope">http://rs.tdwg.org/eco/iri/excludedHabitatScope</a></td>
+			<td><a href="#ecoiri_excludedHabitatScope">http://rs.tdwg.org/eco/iri/excludedHabitatScope</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -9825,7 +9825,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/excludedLifeStageScope">http://rs.tdwg.org/eco/terms/excludedLifeStageScope</a></td>
+			<td><a href="#eco_excludedLifeStageScope">http://rs.tdwg.org/eco/terms/excludedLifeStageScope</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -9890,7 +9890,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/excludedLifeStageScope">http://rs.tdwg.org/eco/iri/excludedLifeStageScope</a></td>
+			<td><a href="#ecoiri_excludedLifeStageScope">http://rs.tdwg.org/eco/iri/excludedLifeStageScope</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -9944,7 +9944,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/excludedTaxonomicScope">http://rs.tdwg.org/eco/terms/excludedTaxonomicScope</a></td>
+			<td><a href="#eco_excludedTaxonomicScope">http://rs.tdwg.org/eco/terms/excludedTaxonomicScope</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -10009,7 +10009,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/excludedTaxonomicScope">http://rs.tdwg.org/eco/iri/excludedTaxonomicScope</a></td>
+			<td><a href="#ecoiri_excludedTaxonomicScope">http://rs.tdwg.org/eco/iri/excludedTaxonomicScope</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -10063,7 +10063,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/family">http://rs.tdwg.org/dwc/terms/family</a></td>
+			<td><a href="#dwc_family">http://rs.tdwg.org/dwc/terms/family</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -10108,7 +10108,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/feedbackURL">http://rs.tdwg.org/dwc/terms/feedbackURL</a></td>
+			<td><a href="#dwc_feedbackURL">http://rs.tdwg.org/dwc/terms/feedbackURL</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -10158,7 +10158,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/fieldNotes">http://rs.tdwg.org/dwc/terms/fieldNotes</a></td>
+			<td><a href="#dwc_fieldNotes">http://rs.tdwg.org/dwc/terms/fieldNotes</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -10204,7 +10204,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/fieldNotes">http://rs.tdwg.org/dwc/iri/fieldNotes</a></td>
+			<td><a href="#dwciri_fieldNotes">http://rs.tdwg.org/dwc/iri/fieldNotes</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -10246,7 +10246,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/fieldNumber">http://rs.tdwg.org/dwc/terms/fieldNumber</a></td>
+			<td><a href="#dwc_fieldNumber">http://rs.tdwg.org/dwc/terms/fieldNumber</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -10296,7 +10296,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/fieldNumber">http://rs.tdwg.org/dwc/iri/fieldNumber</a></td>
+			<td><a href="#dwciri_fieldNumber">http://rs.tdwg.org/dwc/iri/fieldNumber</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -10342,7 +10342,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/footprintSpatialFit">http://rs.tdwg.org/dwc/terms/footprintSpatialFit</a></td>
+			<td><a href="#dwc_footprintSpatialFit">http://rs.tdwg.org/dwc/terms/footprintSpatialFit</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -10400,7 +10400,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/footprintSRS">http://rs.tdwg.org/dwc/terms/footprintSRS</a></td>
+			<td><a href="#dwc_footprintSRS">http://rs.tdwg.org/dwc/terms/footprintSRS</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -10458,7 +10458,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/footprintSRS">http://rs.tdwg.org/dwc/iri/footprintSRS</a></td>
+			<td><a href="#dwciri_footprintSRS">http://rs.tdwg.org/dwc/iri/footprintSRS</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -10508,7 +10508,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/footprintWKT">http://rs.tdwg.org/dwc/terms/footprintWKT</a></td>
+			<td><a href="#dwc_footprintWKT">http://rs.tdwg.org/dwc/terms/footprintWKT</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -10558,7 +10558,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/footprintWKT">http://rs.tdwg.org/dwc/iri/footprintWKT</a></td>
+			<td><a href="#dwciri_footprintWKT">http://rs.tdwg.org/dwc/iri/footprintWKT</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -10604,7 +10604,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/formation">http://rs.tdwg.org/dwc/terms/formation</a></td>
+			<td><a href="#dwc_formation">http://rs.tdwg.org/dwc/terms/formation</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -10658,7 +10658,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/FossilSpecimen">http://rs.tdwg.org/dwc/terms/FossilSpecimen</a></td>
+			<td><a href="#dwc_FossilSpecimen">http://rs.tdwg.org/dwc/terms/FossilSpecimen</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -10710,7 +10710,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/fromLithostratigraphicUnit">http://rs.tdwg.org/dwc/iri/fromLithostratigraphicUnit</a></td>
+			<td><a href="#dwciri_fromLithostratigraphicUnit">http://rs.tdwg.org/dwc/iri/fromLithostratigraphicUnit</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -10752,7 +10752,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/ac/terms/fundingAttribution">http://rs.tdwg.org/ac/terms/fundingAttribution</a></td>
+			<td><a href="#ac_fundingAttribution">http://rs.tdwg.org/ac/terms/fundingAttribution</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -10815,7 +10815,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/fundingAttribution">http://rs.tdwg.org/dwc/iri/fundingAttribution</a></td>
+			<td><a href="#dwciri_fundingAttribution">http://rs.tdwg.org/dwc/iri/fundingAttribution</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -10865,7 +10865,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/fundingAttributionID">http://rs.tdwg.org/dwc/terms/fundingAttributionID</a></td>
+			<td><a href="#dwc_fundingAttributionID">http://rs.tdwg.org/dwc/terms/fundingAttributionID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -10923,7 +10923,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/Generalizations">http://rs.tdwg.org/dwc/terms/Generalizations</a></td>
+			<td><a href="#dwc_Generalizations">http://rs.tdwg.org/dwc/terms/Generalizations</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -10969,7 +10969,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/genericName">http://rs.tdwg.org/dwc/terms/genericName</a></td>
+			<td><a href="#dwc_genericName">http://rs.tdwg.org/dwc/terms/genericName</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -11023,7 +11023,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/genus">http://rs.tdwg.org/dwc/terms/genus</a></td>
+			<td><a href="#dwc_genus">http://rs.tdwg.org/dwc/terms/genus</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -11072,7 +11072,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/geodeticDatum">http://rs.tdwg.org/dwc/terms/geodeticDatum</a></td>
+			<td><a href="#dwc_geodeticDatum">http://rs.tdwg.org/dwc/terms/geodeticDatum</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -11130,7 +11130,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/geodeticDatum">http://rs.tdwg.org/dwc/iri/geodeticDatum</a></td>
+			<td><a href="#dwciri_geodeticDatum">http://rs.tdwg.org/dwc/iri/geodeticDatum</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -11176,7 +11176,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/GeologicalContext">http://rs.tdwg.org/dwc/terms/GeologicalContext</a></td>
+			<td><a href="#dwc_GeologicalContext">http://rs.tdwg.org/dwc/terms/GeologicalContext</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -11233,7 +11233,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/geologicalContextID">http://rs.tdwg.org/dwc/terms/geologicalContextID</a></td>
+			<td><a href="#dwc_geologicalContextID">http://rs.tdwg.org/dwc/terms/geologicalContextID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -11283,7 +11283,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/GeologicalMaterial">http://rs.tdwg.org/dwc/terms/GeologicalMaterial</a></td>
+			<td><a href="#dwc_GeologicalMaterial">http://rs.tdwg.org/dwc/terms/GeologicalMaterial</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -11333,7 +11333,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/geologicalMaterialNames">http://rs.tdwg.org/dwc/terms/geologicalMaterialNames</a></td>
+			<td><a href="#dwc_geologicalMaterialNames">http://rs.tdwg.org/dwc/terms/geologicalMaterialNames</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -11387,7 +11387,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/geologicalMaterialNameTypes">http://rs.tdwg.org/dwc/terms/geologicalMaterialNameTypes</a></td>
+			<td><a href="#dwc_geologicalMaterialNameTypes">http://rs.tdwg.org/dwc/terms/geologicalMaterialNameTypes</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -11444,7 +11444,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/geologicEvent">http://rs.tdwg.org/dwc/terms/geologicEvent</a></td>
+			<td><a href="#dwc_geologicEvent">http://rs.tdwg.org/dwc/terms/geologicEvent</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -11500,7 +11500,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/geologicEvent">http://rs.tdwg.org/dwc/iri/geologicEvent</a></td>
+			<td><a href="#dwciri_geologicEvent">http://rs.tdwg.org/dwc/iri/geologicEvent</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -11546,7 +11546,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/geologicMaterialNameID">http://rs.tdwg.org/dwc/terms/geologicMaterialNameID</a></td>
+			<td><a href="#dwc_geologicMaterialNameID">http://rs.tdwg.org/dwc/terms/geologicMaterialNameID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -11596,7 +11596,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/geologicProvince">http://rs.tdwg.org/dwc/terms/geologicProvince</a></td>
+			<td><a href="#dwc_geologicProvince">http://rs.tdwg.org/dwc/terms/geologicProvince</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -11652,7 +11652,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/geologicProvince">http://rs.tdwg.org/dwc/iri/geologicProvince</a></td>
+			<td><a href="#dwciri_geologicProvince">http://rs.tdwg.org/dwc/iri/geologicProvince</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -11698,7 +11698,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/georeferencedBy">http://rs.tdwg.org/dwc/terms/georeferencedBy</a></td>
+			<td><a href="#dwc_georeferencedBy">http://rs.tdwg.org/dwc/terms/georeferencedBy</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -11755,7 +11755,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/georeferencedBy">http://rs.tdwg.org/dwc/iri/georeferencedBy</a></td>
+			<td><a href="#dwciri_georeferencedBy">http://rs.tdwg.org/dwc/iri/georeferencedBy</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -11805,7 +11805,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/georeferencedDate">http://rs.tdwg.org/dwc/terms/georeferencedDate</a></td>
+			<td><a href="#dwc_georeferencedDate">http://rs.tdwg.org/dwc/terms/georeferencedDate</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -11869,7 +11869,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/georeferenceProtocol">http://rs.tdwg.org/dwc/terms/georeferenceProtocol</a></td>
+			<td><a href="#dwc_georeferenceProtocol">http://rs.tdwg.org/dwc/terms/georeferenceProtocol</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -11919,7 +11919,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/georeferenceProtocol">http://rs.tdwg.org/dwc/iri/georeferenceProtocol</a></td>
+			<td><a href="#dwciri_georeferenceProtocol">http://rs.tdwg.org/dwc/iri/georeferenceProtocol</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -11969,7 +11969,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/georeferenceRemarks">http://rs.tdwg.org/dwc/terms/georeferenceRemarks</a></td>
+			<td><a href="#dwc_georeferenceRemarks">http://rs.tdwg.org/dwc/terms/georeferenceRemarks</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -12015,7 +12015,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/georeferenceSources">http://rs.tdwg.org/dwc/terms/georeferenceSources</a></td>
+			<td><a href="#dwc_georeferenceSources">http://rs.tdwg.org/dwc/terms/georeferenceSources</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -12074,7 +12074,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/georeferenceSources">http://rs.tdwg.org/dwc/iri/georeferenceSources</a></td>
+			<td><a href="#dwciri_georeferenceSources">http://rs.tdwg.org/dwc/iri/georeferenceSources</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -12124,7 +12124,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/georeferenceVerificationStatus">http://rs.tdwg.org/dwc/terms/georeferenceVerificationStatus</a></td>
+			<td><a href="#dwc_georeferenceVerificationStatus">http://rs.tdwg.org/dwc/terms/georeferenceVerificationStatus</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -12180,7 +12180,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/georeferenceVerificationStatus">http://rs.tdwg.org/dwc/iri/georeferenceVerificationStatus</a></td>
+			<td><a href="#dwciri_georeferenceVerificationStatus">http://rs.tdwg.org/dwc/iri/georeferenceVerificationStatus</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -12230,7 +12230,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/geospatialScopeAreaUnit">http://rs.tdwg.org/eco/terms/geospatialScopeAreaUnit</a></td>
+			<td><a href="#eco_geospatialScopeAreaUnit">http://rs.tdwg.org/eco/terms/geospatialScopeAreaUnit</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -12292,7 +12292,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/geospatialScopeAreaUnit">http://rs.tdwg.org/eco/iri/geospatialScopeAreaUnit</a></td>
+			<td><a href="#ecoiri_geospatialScopeAreaUnit">http://rs.tdwg.org/eco/iri/geospatialScopeAreaUnit</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -12342,7 +12342,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/geospatialScopeAreaValue">http://rs.tdwg.org/eco/terms/geospatialScopeAreaValue</a></td>
+			<td><a href="#eco_geospatialScopeAreaValue">http://rs.tdwg.org/eco/terms/geospatialScopeAreaValue</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -12396,7 +12396,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/group">http://rs.tdwg.org/dwc/terms/group</a></td>
+			<td><a href="#dwc_group">http://rs.tdwg.org/dwc/terms/group</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -12449,7 +12449,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/habitat">http://rs.tdwg.org/dwc/terms/habitat</a></td>
+			<td><a href="#dwc_habitat">http://rs.tdwg.org/dwc/terms/habitat</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -12498,7 +12498,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/habitat">http://rs.tdwg.org/dwc/iri/habitat</a></td>
+			<td><a href="#dwciri_habitat">http://rs.tdwg.org/dwc/iri/habitat</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -12544,7 +12544,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/handlingRequirements">http://rs.tdwg.org/dwc/terms/handlingRequirements</a></td>
+			<td><a href="#dwc_handlingRequirements">http://rs.tdwg.org/dwc/terms/handlingRequirements</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -12594,7 +12594,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/hasMaterialSamples">http://rs.tdwg.org/eco/terms/hasMaterialSamples</a></td>
+			<td><a href="#eco_hasMaterialSamples">http://rs.tdwg.org/eco/terms/hasMaterialSamples</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -12651,7 +12651,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/hasNonTargetOrganisms">http://rs.tdwg.org/eco/terms/hasNonTargetOrganisms</a></td>
+			<td><a href="#eco_hasNonTargetOrganisms">http://rs.tdwg.org/eco/terms/hasNonTargetOrganisms</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -12708,7 +12708,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/hasNonTargetTaxa">http://rs.tdwg.org/eco/terms/hasNonTargetTaxa</a></td>
+			<td><a href="#eco_hasNonTargetTaxa">http://rs.tdwg.org/eco/terms/hasNonTargetTaxa</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -12765,7 +12765,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/hasVouchers">http://rs.tdwg.org/eco/terms/hasVouchers</a></td>
+			<td><a href="#eco_hasVouchers">http://rs.tdwg.org/eco/terms/hasVouchers</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -12822,7 +12822,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/hazardRemarks">http://rs.tdwg.org/dwc/terms/hazardRemarks</a></td>
+			<td><a href="#dwc_hazardRemarks">http://rs.tdwg.org/dwc/terms/hazardRemarks</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -12872,7 +12872,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/hazardType">http://rs.tdwg.org/dwc/terms/hazardType</a></td>
+			<td><a href="#dwc_hazardType">http://rs.tdwg.org/dwc/terms/hazardType</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -12927,7 +12927,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/hazardType">http://rs.tdwg.org/dwc/iri/hazardType</a></td>
+			<td><a href="#dwciri_hazardType">http://rs.tdwg.org/dwc/iri/hazardType</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -12973,7 +12973,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/higherClassification">http://rs.tdwg.org/dwc/terms/higherClassification</a></td>
+			<td><a href="#dwc_higherClassification">http://rs.tdwg.org/dwc/terms/higherClassification</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -13027,7 +13027,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/higherGeography">http://rs.tdwg.org/dwc/terms/higherGeography</a></td>
+			<td><a href="#dwc_higherGeography">http://rs.tdwg.org/dwc/terms/higherGeography</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -13080,7 +13080,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/higherGeographyID">http://rs.tdwg.org/dwc/terms/higherGeographyID</a></td>
+			<td><a href="#dwc_higherGeographyID">http://rs.tdwg.org/dwc/terms/higherGeographyID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -13126,7 +13126,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/HigherTaxon">http://rs.tdwg.org/dwc/terms/HigherTaxon</a></td>
+			<td><a href="#dwc_HigherTaxon">http://rs.tdwg.org/dwc/terms/HigherTaxon</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -13168,7 +13168,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/higherTaxonconceptID">http://rs.tdwg.org/dwc/terms/higherTaxonconceptID</a></td>
+			<td><a href="#dwc_higherTaxonconceptID">http://rs.tdwg.org/dwc/terms/higherTaxonconceptID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -13206,7 +13206,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/HigherTaxonID">http://rs.tdwg.org/dwc/terms/HigherTaxonID</a></td>
+			<td><a href="#dwc_HigherTaxonID">http://rs.tdwg.org/dwc/terms/HigherTaxonID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -13248,7 +13248,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/higherTaxonName">http://rs.tdwg.org/dwc/terms/higherTaxonName</a></td>
+			<td><a href="#dwc_higherTaxonName">http://rs.tdwg.org/dwc/terms/higherTaxonName</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -13294,7 +13294,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/higherTaxonNameID">http://rs.tdwg.org/dwc/terms/higherTaxonNameID</a></td>
+			<td><a href="#dwc_higherTaxonNameID">http://rs.tdwg.org/dwc/terms/higherTaxonNameID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -13336,7 +13336,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/highestBiostratigraphicZone">http://rs.tdwg.org/dwc/terms/highestBiostratigraphicZone</a></td>
+			<td><a href="#dwc_highestBiostratigraphicZone">http://rs.tdwg.org/dwc/terms/highestBiostratigraphicZone</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -13382,7 +13382,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/HumanObservation">http://rs.tdwg.org/dwc/terms/HumanObservation</a></td>
+			<td><a href="#dwc_HumanObservation">http://rs.tdwg.org/dwc/terms/HumanObservation</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -13431,7 +13431,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/Identification">http://rs.tdwg.org/dwc/terms/Identification</a></td>
+			<td><a href="#dwc_Identification">http://rs.tdwg.org/dwc/terms/Identification</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -13488,7 +13488,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/identificationAttributes">http://rs.tdwg.org/dwc/terms/identificationAttributes</a></td>
+			<td><a href="#dwc_identificationAttributes">http://rs.tdwg.org/dwc/terms/identificationAttributes</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -13530,7 +13530,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/identificationID">http://rs.tdwg.org/dwc/terms/identificationID</a></td>
+			<td><a href="#dwc_identificationID">http://rs.tdwg.org/dwc/terms/identificationID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -13580,7 +13580,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/identificationQualifier">http://rs.tdwg.org/dwc/terms/identificationQualifier</a></td>
+			<td><a href="#dwc_identificationQualifier">http://rs.tdwg.org/dwc/terms/identificationQualifier</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -13633,7 +13633,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/identificationQualifier">http://rs.tdwg.org/dwc/iri/identificationQualifier</a></td>
+			<td><a href="#dwciri_identificationQualifier">http://rs.tdwg.org/dwc/iri/identificationQualifier</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -13679,7 +13679,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/identificationReferences">http://rs.tdwg.org/dwc/terms/identificationReferences</a></td>
+			<td><a href="#dwc_identificationReferences">http://rs.tdwg.org/dwc/terms/identificationReferences</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -13740,7 +13740,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/identificationRemarks">http://rs.tdwg.org/dwc/terms/identificationRemarks</a></td>
+			<td><a href="#dwc_identificationRemarks">http://rs.tdwg.org/dwc/terms/identificationRemarks</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -13782,7 +13782,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/identificationType">http://rs.tdwg.org/dwc/terms/identificationType</a></td>
+			<td><a href="#dwc_identificationType">http://rs.tdwg.org/dwc/terms/identificationType</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -13843,7 +13843,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/identificationType">http://rs.tdwg.org/dwc/iri/identificationType</a></td>
+			<td><a href="#dwciri_identificationType">http://rs.tdwg.org/dwc/iri/identificationType</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -13889,7 +13889,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/identificationVerificationStatus">http://rs.tdwg.org/dwc/terms/identificationVerificationStatus</a></td>
+			<td><a href="#dwc_identificationVerificationStatus">http://rs.tdwg.org/dwc/terms/identificationVerificationStatus</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -13947,7 +13947,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/identificationVerificationStatus">http://rs.tdwg.org/dwc/iri/identificationVerificationStatus</a></td>
+			<td><a href="#dwciri_identificationVerificationStatus">http://rs.tdwg.org/dwc/iri/identificationVerificationStatus</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -14001,7 +14001,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/identifiedBy">http://rs.tdwg.org/dwc/terms/identifiedBy</a></td>
+			<td><a href="#dwc_identifiedBy">http://rs.tdwg.org/dwc/terms/identifiedBy</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -14067,7 +14067,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/identifiedBy">http://rs.tdwg.org/dwc/iri/identifiedBy</a></td>
+			<td><a href="#dwciri_identifiedBy">http://rs.tdwg.org/dwc/iri/identifiedBy</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -14121,7 +14121,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/identifiedByID">http://rs.tdwg.org/dwc/terms/identifiedByID</a></td>
+			<td><a href="#dwc_identifiedByID">http://rs.tdwg.org/dwc/terms/identifiedByID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -14178,7 +14178,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/includeOrExclude">http://rs.tdwg.org/eco/terms/includeOrExclude</a></td>
+			<td><a href="#eco_includeOrExclude">http://rs.tdwg.org/eco/terms/includeOrExclude</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -14231,7 +14231,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/inCollection">http://rs.tdwg.org/dwc/iri/inCollection</a></td>
+			<td><a href="#dwciri_inCollection">http://rs.tdwg.org/dwc/iri/inCollection</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -14273,7 +14273,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/inDataset">http://rs.tdwg.org/dwc/iri/inDataset</a></td>
+			<td><a href="#dwciri_inDataset">http://rs.tdwg.org/dwc/iri/inDataset</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -14315,7 +14315,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/inDescribedPlace">http://rs.tdwg.org/dwc/iri/inDescribedPlace</a></td>
+			<td><a href="#dwciri_inDescribedPlace">http://rs.tdwg.org/dwc/iri/inDescribedPlace</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -14361,7 +14361,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/individualCount">http://rs.tdwg.org/dwc/terms/individualCount</a></td>
+			<td><a href="#dwc_individualCount">http://rs.tdwg.org/dwc/terms/individualCount</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -14407,7 +14407,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/individualID">http://rs.tdwg.org/dwc/terms/individualID</a></td>
+			<td><a href="#dwc_individualID">http://rs.tdwg.org/dwc/terms/individualID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -14461,7 +14461,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/informationWithheld">http://rs.tdwg.org/dwc/terms/informationWithheld</a></td>
+			<td><a href="#dwc_informationWithheld">http://rs.tdwg.org/dwc/terms/informationWithheld</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -14514,7 +14514,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/informationWithheld">http://rs.tdwg.org/dwc/iri/informationWithheld</a></td>
+			<td><a href="#dwciri_informationWithheld">http://rs.tdwg.org/dwc/iri/informationWithheld</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -14564,7 +14564,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/infragenericEpithet">http://rs.tdwg.org/dwc/terms/infragenericEpithet</a></td>
+			<td><a href="#dwc_infragenericEpithet">http://rs.tdwg.org/dwc/terms/infragenericEpithet</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -14621,7 +14621,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/infraspecificEpithet">http://rs.tdwg.org/dwc/terms/infraspecificEpithet</a></td>
+			<td><a href="#dwc_infraspecificEpithet">http://rs.tdwg.org/dwc/terms/infraspecificEpithet</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -14684,7 +14684,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/institutionCode">http://rs.tdwg.org/dwc/terms/institutionCode</a></td>
+			<td><a href="#dwc_institutionCode">http://rs.tdwg.org/dwc/terms/institutionCode</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -14741,7 +14741,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/institutionID">http://rs.tdwg.org/dwc/terms/institutionID</a></td>
+			<td><a href="#dwc_institutionID">http://rs.tdwg.org/dwc/terms/institutionID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -14799,7 +14799,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/inventoryTypes">http://rs.tdwg.org/eco/terms/inventoryTypes</a></td>
+			<td><a href="#eco_inventoryTypes">http://rs.tdwg.org/eco/terms/inventoryTypes</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -14866,7 +14866,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/inventoryTypes">http://rs.tdwg.org/eco/iri/inventoryTypes</a></td>
+			<td><a href="#ecoiri_inventoryTypes">http://rs.tdwg.org/eco/iri/inventoryTypes</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -14920,7 +14920,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/isAbsenceReported">http://rs.tdwg.org/eco/terms/isAbsenceReported</a></td>
+			<td><a href="#eco_isAbsenceReported">http://rs.tdwg.org/eco/terms/isAbsenceReported</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -14977,7 +14977,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/isAbundanceCapReported">http://rs.tdwg.org/eco/terms/isAbundanceCapReported</a></td>
+			<td><a href="#eco_isAbundanceCapReported">http://rs.tdwg.org/eco/terms/isAbundanceCapReported</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -15034,7 +15034,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/isAbundanceReported">http://rs.tdwg.org/eco/terms/isAbundanceReported</a></td>
+			<td><a href="#eco_isAbundanceReported">http://rs.tdwg.org/eco/terms/isAbundanceReported</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -15091,7 +15091,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/isAcceptedIdentification">http://rs.tdwg.org/dwc/terms/isAcceptedIdentification</a></td>
+			<td><a href="#dwc_isAcceptedIdentification">http://rs.tdwg.org/dwc/terms/isAcceptedIdentification</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -15144,7 +15144,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/isDegreeOfEstablishmentScopeFullyReported">http://rs.tdwg.org/eco/terms/isDegreeOfEstablishmentScopeFullyReported</a></td>
+			<td><a href="#eco_isDegreeOfEstablishmentScopeFullyReported">http://rs.tdwg.org/eco/terms/isDegreeOfEstablishmentScopeFullyReported</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -15201,7 +15201,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/isGrowthFormScopeFullyReported">http://rs.tdwg.org/eco/terms/isGrowthFormScopeFullyReported</a></td>
+			<td><a href="#eco_isGrowthFormScopeFullyReported">http://rs.tdwg.org/eco/terms/isGrowthFormScopeFullyReported</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -15258,7 +15258,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/island">http://rs.tdwg.org/dwc/terms/island</a></td>
+			<td><a href="#dwc_island">http://rs.tdwg.org/dwc/terms/island</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -15314,7 +15314,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/islandGroup">http://rs.tdwg.org/dwc/terms/islandGroup</a></td>
+			<td><a href="#dwc_islandGroup">http://rs.tdwg.org/dwc/terms/islandGroup</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -15368,7 +15368,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/isLeastSpecificTargetCategoryQuantityInclusive">http://rs.tdwg.org/eco/terms/isLeastSpecificTargetCategoryQuantityInclusive</a></td>
+			<td><a href="#eco_isLeastSpecificTargetCategoryQuantityInclusive">http://rs.tdwg.org/eco/terms/isLeastSpecificTargetCategoryQuantityInclusive</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -15429,7 +15429,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/isLifeStageScopeFullyReported">http://rs.tdwg.org/eco/terms/isLifeStageScopeFullyReported</a></td>
+			<td><a href="#eco_isLifeStageScopeFullyReported">http://rs.tdwg.org/eco/terms/isLifeStageScopeFullyReported</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -15486,7 +15486,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/isPartOfMaterialEntityID">http://rs.tdwg.org/dwc/terms/isPartOfMaterialEntityID</a></td>
+			<td><a href="#dwc_isPartOfMaterialEntityID">http://rs.tdwg.org/dwc/terms/isPartOfMaterialEntityID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -15532,7 +15532,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/isSamplingEffortReported">http://rs.tdwg.org/eco/terms/isSamplingEffortReported</a></td>
+			<td><a href="#eco_isSamplingEffortReported">http://rs.tdwg.org/eco/terms/isSamplingEffortReported</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -15589,7 +15589,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/isSurveyTargetFullyReported">http://rs.tdwg.org/eco/terms/isSurveyTargetFullyReported</a></td>
+			<td><a href="#eco_isSurveyTargetFullyReported">http://rs.tdwg.org/eco/terms/isSurveyTargetFullyReported</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -15642,7 +15642,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/isTaxonomicScopeFullyReported">http://rs.tdwg.org/eco/terms/isTaxonomicScopeFullyReported</a></td>
+			<td><a href="#eco_isTaxonomicScopeFullyReported">http://rs.tdwg.org/eco/terms/isTaxonomicScopeFullyReported</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -15699,7 +15699,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/isVegetationCoverReported">http://rs.tdwg.org/eco/terms/isVegetationCoverReported</a></td>
+			<td><a href="#eco_isVegetationCoverReported">http://rs.tdwg.org/eco/terms/isVegetationCoverReported</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -15756,7 +15756,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/kingdom">http://rs.tdwg.org/dwc/terms/kingdom</a></td>
+			<td><a href="#dwc_kingdom">http://rs.tdwg.org/dwc/terms/kingdom</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -15811,7 +15811,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://purl.org/dc/elements/1.1/language">http://purl.org/dc/elements/1.1/language</a></td>
+			<td><a href="#dc_language">http://purl.org/dc/elements/1.1/language</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -15864,7 +15864,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://purl.org/dc/terms/language">http://purl.org/dc/terms/language</a></td>
+			<td><a href="#dcterms_language">http://purl.org/dc/terms/language</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -15910,7 +15910,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/latestAgeOrHighestStage">http://rs.tdwg.org/dwc/terms/latestAgeOrHighestStage</a></td>
+			<td><a href="#dwc_latestAgeOrHighestStage">http://rs.tdwg.org/dwc/terms/latestAgeOrHighestStage</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -15964,7 +15964,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/terms/latestChronometricAge">http://rs.tdwg.org/chrono/terms/latestChronometricAge</a></td>
+			<td><a href="#chrono_latestChronometricAge">http://rs.tdwg.org/chrono/terms/latestChronometricAge</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -16018,7 +16018,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/terms/latestChronometricAgeReferenceSystem">http://rs.tdwg.org/chrono/terms/latestChronometricAgeReferenceSystem</a></td>
+			<td><a href="#chrono_latestChronometricAgeReferenceSystem">http://rs.tdwg.org/chrono/terms/latestChronometricAgeReferenceSystem</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -16085,7 +16085,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/iri/latestChronometricAgeReferenceSystem">http://rs.tdwg.org/chrono/iri/latestChronometricAgeReferenceSystem</a></td>
+			<td><a href="#chronoiri_latestChronometricAgeReferenceSystem">http://rs.tdwg.org/chrono/iri/latestChronometricAgeReferenceSystem</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -16143,7 +16143,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/LatestDateCollected">http://rs.tdwg.org/dwc/terms/LatestDateCollected</a></td>
+			<td><a href="#dwc_LatestDateCollected">http://rs.tdwg.org/dwc/terms/LatestDateCollected</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -16189,7 +16189,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/latestEonOrHighestEonothem">http://rs.tdwg.org/dwc/terms/latestEonOrHighestEonothem</a></td>
+			<td><a href="#dwc_latestEonOrHighestEonothem">http://rs.tdwg.org/dwc/terms/latestEonOrHighestEonothem</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -16251,7 +16251,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/latestEpochOrHighestSeries">http://rs.tdwg.org/dwc/terms/latestEpochOrHighestSeries</a></td>
+			<td><a href="#dwc_latestEpochOrHighestSeries">http://rs.tdwg.org/dwc/terms/latestEpochOrHighestSeries</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -16305,7 +16305,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/latestEraOrHighestErathem">http://rs.tdwg.org/dwc/terms/latestEraOrHighestErathem</a></td>
+			<td><a href="#dwc_latestEraOrHighestErathem">http://rs.tdwg.org/dwc/terms/latestEraOrHighestErathem</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -16358,7 +16358,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/latestGeochronologicalEra">http://rs.tdwg.org/dwc/iri/latestGeochronologicalEra</a></td>
+			<td><a href="#dwciri_latestGeochronologicalEra">http://rs.tdwg.org/dwc/iri/latestGeochronologicalEra</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -16404,7 +16404,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/latestPeriodOrHighestSystem">http://rs.tdwg.org/dwc/terms/latestPeriodOrHighestSystem</a></td>
+			<td><a href="#dwc_latestPeriodOrHighestSystem">http://rs.tdwg.org/dwc/terms/latestPeriodOrHighestSystem</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -16458,7 +16458,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://purl.org/dc/terms/license">http://purl.org/dc/terms/license</a></td>
+			<td><a href="#dcterms_license">http://purl.org/dc/terms/license</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -16511,7 +16511,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/lifeStage">http://rs.tdwg.org/dwc/terms/lifeStage</a></td>
+			<td><a href="#dwc_lifeStage">http://rs.tdwg.org/dwc/terms/lifeStage</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -16577,7 +16577,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/lifeStage">http://rs.tdwg.org/dwc/iri/lifeStage</a></td>
+			<td><a href="#dwciri_lifeStage">http://rs.tdwg.org/dwc/iri/lifeStage</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -16627,7 +16627,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/lithodemicUnit">http://rs.tdwg.org/dwc/terms/lithodemicUnit</a></td>
+			<td><a href="#dwc_lithodemicUnit">http://rs.tdwg.org/dwc/terms/lithodemicUnit</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -16682,7 +16682,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/lithostratigraphicTerms">http://rs.tdwg.org/dwc/terms/lithostratigraphicTerms</a></td>
+			<td><a href="#dwc_lithostratigraphicTerms">http://rs.tdwg.org/dwc/terms/lithostratigraphicTerms</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -16732,7 +16732,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/LivingSpecimen">http://rs.tdwg.org/dwc/terms/LivingSpecimen</a></td>
+			<td><a href="#dwc_LivingSpecimen">http://rs.tdwg.org/dwc/terms/LivingSpecimen</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -16781,7 +16781,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/locality">http://rs.tdwg.org/dwc/terms/locality</a></td>
+			<td><a href="#dwc_locality">http://rs.tdwg.org/dwc/terms/locality</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -16834,7 +16834,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://purl.org/dc/terms/Location">http://purl.org/dc/terms/Location</a></td>
+			<td><a href="#dcterms_Location">http://purl.org/dc/terms/Location</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -16879,7 +16879,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/locationAccordingTo">http://rs.tdwg.org/dwc/terms/locationAccordingTo</a></td>
+			<td><a href="#dwc_locationAccordingTo">http://rs.tdwg.org/dwc/terms/locationAccordingTo</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -16928,7 +16928,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/locationAccordingTo">http://rs.tdwg.org/dwc/iri/locationAccordingTo</a></td>
+			<td><a href="#dwciri_locationAccordingTo">http://rs.tdwg.org/dwc/iri/locationAccordingTo</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -16974,7 +16974,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/locationAttributes">http://rs.tdwg.org/dwc/terms/locationAttributes</a></td>
+			<td><a href="#dwc_locationAttributes">http://rs.tdwg.org/dwc/terms/locationAttributes</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -17016,7 +17016,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/locationID">http://rs.tdwg.org/dwc/terms/locationID</a></td>
+			<td><a href="#dwc_locationID">http://rs.tdwg.org/dwc/terms/locationID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -17066,7 +17066,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/locationRemarks">http://rs.tdwg.org/dwc/terms/locationRemarks</a></td>
+			<td><a href="#dwc_locationRemarks">http://rs.tdwg.org/dwc/terms/locationRemarks</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -17108,7 +17108,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/lowestBiostratigraphicZone">http://rs.tdwg.org/dwc/terms/lowestBiostratigraphicZone</a></td>
+			<td><a href="#dwc_lowestBiostratigraphicZone">http://rs.tdwg.org/dwc/terms/lowestBiostratigraphicZone</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -17154,7 +17154,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/MachineObservation">http://rs.tdwg.org/dwc/terms/MachineObservation</a></td>
+			<td><a href="#dwc_MachineObservation">http://rs.tdwg.org/dwc/terms/MachineObservation</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -17206,7 +17206,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/MaterialCitation">http://rs.tdwg.org/dwc/terms/MaterialCitation</a></td>
+			<td><a href="#dwc_MaterialCitation">http://rs.tdwg.org/dwc/terms/MaterialCitation</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -17259,7 +17259,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/terms/materialDated">http://rs.tdwg.org/chrono/terms/materialDated</a></td>
+			<td><a href="#chrono_materialDated">http://rs.tdwg.org/chrono/terms/materialDated</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -17318,7 +17318,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/iri/materialDated">http://rs.tdwg.org/chrono/iri/materialDated</a></td>
+			<td><a href="#chronoiri_materialDated">http://rs.tdwg.org/chrono/iri/materialDated</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -17376,7 +17376,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/terms/materialDatedID">http://rs.tdwg.org/chrono/terms/materialDatedID</a></td>
+			<td><a href="#chrono_materialDatedID">http://rs.tdwg.org/chrono/terms/materialDatedID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -17426,7 +17426,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/terms/materialDatedRelationship">http://rs.tdwg.org/chrono/terms/materialDatedRelationship</a></td>
+			<td><a href="#chrono_materialDatedRelationship">http://rs.tdwg.org/chrono/terms/materialDatedRelationship</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -17485,7 +17485,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/materialDescription">http://rs.tdwg.org/dwc/terms/materialDescription</a></td>
+			<td><a href="#dwc_materialDescription">http://rs.tdwg.org/dwc/terms/materialDescription</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -17536,7 +17536,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/MaterialEntity">http://rs.tdwg.org/dwc/terms/MaterialEntity</a></td>
+			<td><a href="#dwc_MaterialEntity">http://rs.tdwg.org/dwc/terms/MaterialEntity</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -17602,7 +17602,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/materialEntityCategory">http://rs.tdwg.org/dwc/terms/materialEntityCategory</a></td>
+			<td><a href="#dwc_materialEntityCategory">http://rs.tdwg.org/dwc/terms/materialEntityCategory</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -17652,7 +17652,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/materialEntityCategory">http://rs.tdwg.org/dwc/iri/materialEntityCategory</a></td>
+			<td><a href="#dwciri_materialEntityCategory">http://rs.tdwg.org/dwc/iri/materialEntityCategory</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -17698,7 +17698,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/materialEntityID">http://rs.tdwg.org/dwc/terms/materialEntityID</a></td>
+			<td><a href="#dwc_materialEntityID">http://rs.tdwg.org/dwc/terms/materialEntityID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -17748,7 +17748,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/materialEntityRemarks">http://rs.tdwg.org/dwc/terms/materialEntityRemarks</a></td>
+			<td><a href="#dwc_materialEntityRemarks">http://rs.tdwg.org/dwc/terms/materialEntityRemarks</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -17801,7 +17801,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/materialEntityType">http://rs.tdwg.org/dwc/terms/materialEntityType</a></td>
+			<td><a href="#dwc_materialEntityType">http://rs.tdwg.org/dwc/terms/materialEntityType</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -17878,7 +17878,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/materialEntityType">http://rs.tdwg.org/dwc/iri/materialEntityType</a></td>
+			<td><a href="#dwciri_materialEntityType">http://rs.tdwg.org/dwc/iri/materialEntityType</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -17928,7 +17928,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/materialProportion">http://rs.tdwg.org/dwc/terms/materialProportion</a></td>
+			<td><a href="#dwc_materialProportion">http://rs.tdwg.org/dwc/terms/materialProportion</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -17982,7 +17982,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/materialProportion">http://rs.tdwg.org/dwc/iri/materialProportion</a></td>
+			<td><a href="#dwciri_materialProportion">http://rs.tdwg.org/dwc/iri/materialProportion</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -18028,7 +18028,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/materialRole">http://rs.tdwg.org/dwc/terms/materialRole</a></td>
+			<td><a href="#dwc_materialRole">http://rs.tdwg.org/dwc/terms/materialRole</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -18084,7 +18084,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/materialRole">http://rs.tdwg.org/dwc/iri/materialRole</a></td>
+			<td><a href="#dwciri_materialRole">http://rs.tdwg.org/dwc/iri/materialRole</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -18130,7 +18130,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/MaterialSample">http://rs.tdwg.org/dwc/terms/MaterialSample</a></td>
+			<td><a href="#dwc_MaterialSample">http://rs.tdwg.org/dwc/terms/MaterialSample</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -18197,7 +18197,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/materialSampleID">http://rs.tdwg.org/dwc/terms/materialSampleID</a></td>
+			<td><a href="#dwc_materialSampleID">http://rs.tdwg.org/dwc/terms/materialSampleID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -18247,7 +18247,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/materialSampleTypes">http://rs.tdwg.org/eco/terms/materialSampleTypes</a></td>
+			<td><a href="#eco_materialSampleTypes">http://rs.tdwg.org/eco/terms/materialSampleTypes</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -18313,7 +18313,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/materialSampleTypes">http://rs.tdwg.org/eco/iri/materialSampleTypes</a></td>
+			<td><a href="#ecoiri_materialSampleTypes">http://rs.tdwg.org/eco/iri/materialSampleTypes</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -18367,7 +18367,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/terms/maximumChronometricAge">http://rs.tdwg.org/chrono/terms/maximumChronometricAge</a></td>
+			<td><a href="#chrono_maximumChronometricAge">http://rs.tdwg.org/chrono/terms/maximumChronometricAge</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -18421,7 +18421,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/terms/maximumChronometricAgeReferenceSystem">http://rs.tdwg.org/chrono/terms/maximumChronometricAgeReferenceSystem</a></td>
+			<td><a href="#chrono_maximumChronometricAgeReferenceSystem">http://rs.tdwg.org/chrono/terms/maximumChronometricAgeReferenceSystem</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -18471,7 +18471,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/maximumDepthInMeters">http://rs.tdwg.org/dwc/terms/maximumDepthInMeters</a></td>
+			<td><a href="#dwc_maximumDepthInMeters">http://rs.tdwg.org/dwc/terms/maximumDepthInMeters</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -18524,7 +18524,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/maximumDistanceAboveSurfaceInMeters">http://rs.tdwg.org/dwc/terms/maximumDistanceAboveSurfaceInMeters</a></td>
+			<td><a href="#dwc_maximumDistanceAboveSurfaceInMeters">http://rs.tdwg.org/dwc/terms/maximumDistanceAboveSurfaceInMeters</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -18570,7 +18570,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/maximumElevationInMeters">http://rs.tdwg.org/dwc/terms/maximumElevationInMeters</a></td>
+			<td><a href="#dwc_maximumElevationInMeters">http://rs.tdwg.org/dwc/terms/maximumElevationInMeters</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -18623,7 +18623,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/measuredChemistry">http://rs.tdwg.org/dwc/terms/measuredChemistry</a></td>
+			<td><a href="#dwc_measuredChemistry">http://rs.tdwg.org/dwc/terms/measuredChemistry</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -18675,7 +18675,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/measuredChemistrySource">http://rs.tdwg.org/dwc/terms/measuredChemistrySource</a></td>
+			<td><a href="#dwc_measuredChemistrySource">http://rs.tdwg.org/dwc/terms/measuredChemistrySource</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -18725,7 +18725,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/measuredChemistrySource">http://rs.tdwg.org/dwc/iri/measuredChemistrySource</a></td>
+			<td><a href="#dwciri_measuredChemistrySource">http://rs.tdwg.org/dwc/iri/measuredChemistrySource</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -18771,7 +18771,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/measuredMassInGrams">http://rs.tdwg.org/dwc/terms/measuredMassInGrams</a></td>
+			<td><a href="#dwc_measuredMassInGrams">http://rs.tdwg.org/dwc/terms/measuredMassInGrams</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -18821,7 +18821,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/measurementAccuracy">http://rs.tdwg.org/dwc/terms/measurementAccuracy</a></td>
+			<td><a href="#dwc_measurementAccuracy">http://rs.tdwg.org/dwc/terms/measurementAccuracy</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -18870,7 +18870,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/measurementDeterminedBy">http://rs.tdwg.org/dwc/terms/measurementDeterminedBy</a></td>
+			<td><a href="#dwc_measurementDeterminedBy">http://rs.tdwg.org/dwc/terms/measurementDeterminedBy</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -18923,7 +18923,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/measurementDeterminedBy">http://rs.tdwg.org/dwc/iri/measurementDeterminedBy</a></td>
+			<td><a href="#dwciri_measurementDeterminedBy">http://rs.tdwg.org/dwc/iri/measurementDeterminedBy</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -18969,7 +18969,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/measurementDeterminedDate">http://rs.tdwg.org/dwc/terms/measurementDeterminedDate</a></td>
+			<td><a href="#dwc_measurementDeterminedDate">http://rs.tdwg.org/dwc/terms/measurementDeterminedDate</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -19029,7 +19029,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/measurementID">http://rs.tdwg.org/dwc/terms/measurementID</a></td>
+			<td><a href="#dwc_measurementID">http://rs.tdwg.org/dwc/terms/measurementID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -19071,7 +19071,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/measurementMethod">http://rs.tdwg.org/dwc/terms/measurementMethod</a></td>
+			<td><a href="#dwc_measurementMethod">http://rs.tdwg.org/dwc/terms/measurementMethod</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -19124,7 +19124,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/measurementMethod">http://rs.tdwg.org/dwc/iri/measurementMethod</a></td>
+			<td><a href="#dwciri_measurementMethod">http://rs.tdwg.org/dwc/iri/measurementMethod</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -19170,7 +19170,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/MeasurementOrFact">http://rs.tdwg.org/dwc/terms/MeasurementOrFact</a></td>
+			<td><a href="#dwc_MeasurementOrFact">http://rs.tdwg.org/dwc/terms/MeasurementOrFact</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -19228,7 +19228,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/measurementRemarks">http://rs.tdwg.org/dwc/terms/measurementRemarks</a></td>
+			<td><a href="#dwc_measurementRemarks">http://rs.tdwg.org/dwc/terms/measurementRemarks</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -19274,7 +19274,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/measurementType">http://rs.tdwg.org/dwc/terms/measurementType</a></td>
+			<td><a href="#dwc_measurementType">http://rs.tdwg.org/dwc/terms/measurementType</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -19330,7 +19330,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/measurementType">http://rs.tdwg.org/dwc/iri/measurementType</a></td>
+			<td><a href="#dwciri_measurementType">http://rs.tdwg.org/dwc/iri/measurementType</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -19376,7 +19376,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/measurementUnit">http://rs.tdwg.org/dwc/terms/measurementUnit</a></td>
+			<td><a href="#dwc_measurementUnit">http://rs.tdwg.org/dwc/terms/measurementUnit</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -19435,7 +19435,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/measurementUnit">http://rs.tdwg.org/dwc/iri/measurementUnit</a></td>
+			<td><a href="#dwciri_measurementUnit">http://rs.tdwg.org/dwc/iri/measurementUnit</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -19477,7 +19477,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/measurementValue">http://rs.tdwg.org/dwc/terms/measurementValue</a></td>
+			<td><a href="#dwc_measurementValue">http://rs.tdwg.org/dwc/terms/measurementValue</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -19533,7 +19533,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/measurementValue">http://rs.tdwg.org/dwc/iri/measurementValue</a></td>
+			<td><a href="#dwciri_measurementValue">http://rs.tdwg.org/dwc/iri/measurementValue</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -19587,7 +19587,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/ac/terms/Media">http://rs.tdwg.org/ac/terms/Media</a></td>
+			<td><a href="#ac_Media">http://rs.tdwg.org/ac/terms/Media</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -19647,7 +19647,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/member">http://rs.tdwg.org/dwc/terms/member</a></td>
+			<td><a href="#dwc_member">http://rs.tdwg.org/dwc/terms/member</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -19700,7 +19700,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/mineralogicalAnalysisProtocol">http://rs.tdwg.org/dwc/terms/mineralogicalAnalysisProtocol</a></td>
+			<td><a href="#dwc_mineralogicalAnalysisProtocol">http://rs.tdwg.org/dwc/terms/mineralogicalAnalysisProtocol</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -19756,7 +19756,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/mineralogicalAnalysisProtocol">http://rs.tdwg.org/dwc/iri/mineralogicalAnalysisProtocol</a></td>
+			<td><a href="#dwciri_mineralogicalAnalysisProtocol">http://rs.tdwg.org/dwc/iri/mineralogicalAnalysisProtocol</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -19802,7 +19802,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/mineralSequence">http://rs.tdwg.org/dwc/terms/mineralSequence</a></td>
+			<td><a href="#dwc_mineralSequence">http://rs.tdwg.org/dwc/terms/mineralSequence</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -19855,7 +19855,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/terms/minimumChronometricAge">http://rs.tdwg.org/chrono/terms/minimumChronometricAge</a></td>
+			<td><a href="#chrono_minimumChronometricAge">http://rs.tdwg.org/chrono/terms/minimumChronometricAge</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -19909,7 +19909,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/terms/minimumChronometricAgeReferenceSystem">http://rs.tdwg.org/chrono/terms/minimumChronometricAgeReferenceSystem</a></td>
+			<td><a href="#chrono_minimumChronometricAgeReferenceSystem">http://rs.tdwg.org/chrono/terms/minimumChronometricAgeReferenceSystem</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -19959,7 +19959,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/minimumDepthInMeters">http://rs.tdwg.org/dwc/terms/minimumDepthInMeters</a></td>
+			<td><a href="#dwc_minimumDepthInMeters">http://rs.tdwg.org/dwc/terms/minimumDepthInMeters</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -20012,7 +20012,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/minimumDistanceAboveSurfaceInMeters">http://rs.tdwg.org/dwc/terms/minimumDistanceAboveSurfaceInMeters</a></td>
+			<td><a href="#dwc_minimumDistanceAboveSurfaceInMeters">http://rs.tdwg.org/dwc/terms/minimumDistanceAboveSurfaceInMeters</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -20058,7 +20058,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/minimumElevationInMeters">http://rs.tdwg.org/dwc/terms/minimumElevationInMeters</a></td>
+			<td><a href="#dwc_minimumElevationInMeters">http://rs.tdwg.org/dwc/terms/minimumElevationInMeters</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -20111,7 +20111,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://purl.org/dc/terms/modified">http://purl.org/dc/terms/modified</a></td>
+			<td><a href="#dcterms_modified">http://purl.org/dc/terms/modified</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -20179,7 +20179,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/MolecularProtocol">http://rs.tdwg.org/dwc/terms/MolecularProtocol</a></td>
+			<td><a href="#dwc_MolecularProtocol">http://rs.tdwg.org/dwc/terms/MolecularProtocol</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -20229,7 +20229,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/molecularProtocolID">http://rs.tdwg.org/dwc/terms/molecularProtocolID</a></td>
+			<td><a href="#dwc_molecularProtocolID">http://rs.tdwg.org/dwc/terms/molecularProtocolID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -20275,7 +20275,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/month">http://rs.tdwg.org/dwc/terms/month</a></td>
+			<td><a href="#dwc_month">http://rs.tdwg.org/dwc/terms/month</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -20320,7 +20320,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/municipality">http://rs.tdwg.org/dwc/terms/municipality</a></td>
+			<td><a href="#dwc_municipality">http://rs.tdwg.org/dwc/terms/municipality</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -20378,7 +20378,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/nameAccordingTo">http://rs.tdwg.org/dwc/terms/nameAccordingTo</a></td>
+			<td><a href="#dwc_nameAccordingTo">http://rs.tdwg.org/dwc/terms/nameAccordingTo</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -20436,7 +20436,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/nameAccordingToID">http://rs.tdwg.org/dwc/terms/nameAccordingToID</a></td>
+			<td><a href="#dwc_nameAccordingToID">http://rs.tdwg.org/dwc/terms/nameAccordingToID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -20478,7 +20478,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/namedPlace">http://rs.tdwg.org/dwc/terms/namedPlace</a></td>
+			<td><a href="#dwc_namedPlace">http://rs.tdwg.org/dwc/terms/namedPlace</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -20535,7 +20535,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/namePublicationID">http://rs.tdwg.org/dwc/terms/namePublicationID</a></td>
+			<td><a href="#dwc_namePublicationID">http://rs.tdwg.org/dwc/terms/namePublicationID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -20581,7 +20581,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/namePublishedIn">http://rs.tdwg.org/dwc/terms/namePublishedIn</a></td>
+			<td><a href="#dwc_namePublishedIn">http://rs.tdwg.org/dwc/terms/namePublishedIn</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -20638,7 +20638,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/namePublishedInID">http://rs.tdwg.org/dwc/terms/namePublishedInID</a></td>
+			<td><a href="#dwc_namePublishedInID">http://rs.tdwg.org/dwc/terms/namePublishedInID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -20684,7 +20684,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/namePublishedInYear">http://rs.tdwg.org/dwc/terms/namePublishedInYear</a></td>
+			<td><a href="#dwc_namePublishedInYear">http://rs.tdwg.org/dwc/terms/namePublishedInYear</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -20737,7 +20737,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/nomenclaturalCode">http://rs.tdwg.org/dwc/terms/nomenclaturalCode</a></td>
+			<td><a href="#dwc_nomenclaturalCode">http://rs.tdwg.org/dwc/terms/nomenclaturalCode</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -20789,7 +20789,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/nomenclaturalStatus">http://rs.tdwg.org/dwc/terms/nomenclaturalStatus</a></td>
+			<td><a href="#dwc_nomenclaturalStatus">http://rs.tdwg.org/dwc/terms/nomenclaturalStatus</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -20835,7 +20835,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/nonTargetTaxa">http://rs.tdwg.org/eco/terms/nonTargetTaxa</a></td>
+			<td><a href="#eco_nonTargetTaxa">http://rs.tdwg.org/eco/terms/nonTargetTaxa</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -20900,7 +20900,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/nonTargetTaxa">http://rs.tdwg.org/eco/iri/nonTargetTaxa</a></td>
+			<td><a href="#ecoiri_nonTargetTaxa">http://rs.tdwg.org/eco/iri/nonTargetTaxa</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -20954,7 +20954,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/NucleotideAnalysis">http://rs.tdwg.org/dwc/terms/NucleotideAnalysis</a></td>
+			<td><a href="#dwc_NucleotideAnalysis">http://rs.tdwg.org/dwc/terms/NucleotideAnalysis</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -20996,7 +20996,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/NucleotideSequence">http://rs.tdwg.org/dwc/terms/NucleotideSequence</a></td>
+			<td><a href="#dwc_NucleotideSequence">http://rs.tdwg.org/dwc/terms/NucleotideSequence</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -21038,7 +21038,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/nucleotideSequenceRemarks">http://rs.tdwg.org/dwc/terms/nucleotideSequenceRemarks</a></td>
+			<td><a href="#dwc_nucleotideSequenceRemarks">http://rs.tdwg.org/dwc/terms/nucleotideSequenceRemarks</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -21080,7 +21080,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/objectQuantity">http://rs.tdwg.org/dwc/terms/objectQuantity</a></td>
+			<td><a href="#dwc_objectQuantity">http://rs.tdwg.org/dwc/terms/objectQuantity</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -21138,7 +21138,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/objectQuantityType">http://rs.tdwg.org/dwc/terms/objectQuantityType</a></td>
+			<td><a href="#dwc_objectQuantityType">http://rs.tdwg.org/dwc/terms/objectQuantityType</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -21196,7 +21196,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/objectQuantityType">http://rs.tdwg.org/dwc/iri/objectQuantityType</a></td>
+			<td><a href="#dwciri_objectQuantityType">http://rs.tdwg.org/dwc/iri/objectQuantityType</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -21242,7 +21242,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/Occurrence">http://rs.tdwg.org/dwc/terms/Occurrence</a></td>
+			<td><a href="#dwc_Occurrence">http://rs.tdwg.org/dwc/terms/Occurrence</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -21301,7 +21301,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/occurrenceAttributes">http://rs.tdwg.org/dwc/terms/occurrenceAttributes</a></td>
+			<td><a href="#dwc_occurrenceAttributes">http://rs.tdwg.org/dwc/terms/occurrenceAttributes</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -21343,7 +21343,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/occurrenceDetails">http://rs.tdwg.org/dwc/terms/occurrenceDetails</a></td>
+			<td><a href="#dwc_occurrenceDetails">http://rs.tdwg.org/dwc/terms/occurrenceDetails</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -21389,7 +21389,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/occurrenceID">http://rs.tdwg.org/dwc/terms/occurrenceID</a></td>
+			<td><a href="#dwc_occurrenceID">http://rs.tdwg.org/dwc/terms/occurrenceID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -21443,7 +21443,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/OccurrenceMeasurement">http://rs.tdwg.org/dwc/terms/OccurrenceMeasurement</a></td>
+			<td><a href="#dwc_OccurrenceMeasurement">http://rs.tdwg.org/dwc/terms/OccurrenceMeasurement</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -21481,7 +21481,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/occurrenceMeasurementAccuracy">http://rs.tdwg.org/dwc/terms/occurrenceMeasurementAccuracy</a></td>
+			<td><a href="#dwc_occurrenceMeasurementAccuracy">http://rs.tdwg.org/dwc/terms/occurrenceMeasurementAccuracy</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -21527,7 +21527,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/occurrenceMeasurementDeterminedBy">http://rs.tdwg.org/dwc/terms/occurrenceMeasurementDeterminedBy</a></td>
+			<td><a href="#dwc_occurrenceMeasurementDeterminedBy">http://rs.tdwg.org/dwc/terms/occurrenceMeasurementDeterminedBy</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -21569,7 +21569,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/occurrenceMeasurementDeterminedDate">http://rs.tdwg.org/dwc/terms/occurrenceMeasurementDeterminedDate</a></td>
+			<td><a href="#dwc_occurrenceMeasurementDeterminedDate">http://rs.tdwg.org/dwc/terms/occurrenceMeasurementDeterminedDate</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -21615,7 +21615,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/occurrenceMeasurementID">http://rs.tdwg.org/dwc/terms/occurrenceMeasurementID</a></td>
+			<td><a href="#dwc_occurrenceMeasurementID">http://rs.tdwg.org/dwc/terms/occurrenceMeasurementID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -21657,7 +21657,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/occurrenceMeasurementRemarks">http://rs.tdwg.org/dwc/terms/occurrenceMeasurementRemarks</a></td>
+			<td><a href="#dwc_occurrenceMeasurementRemarks">http://rs.tdwg.org/dwc/terms/occurrenceMeasurementRemarks</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -21703,7 +21703,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/occurrenceMeasurementType">http://rs.tdwg.org/dwc/terms/occurrenceMeasurementType</a></td>
+			<td><a href="#dwc_occurrenceMeasurementType">http://rs.tdwg.org/dwc/terms/occurrenceMeasurementType</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -21749,7 +21749,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/occurrenceMeasurementUnit">http://rs.tdwg.org/dwc/terms/occurrenceMeasurementUnit</a></td>
+			<td><a href="#dwc_occurrenceMeasurementUnit">http://rs.tdwg.org/dwc/terms/occurrenceMeasurementUnit</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -21795,7 +21795,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/occurrenceMeasurementValue">http://rs.tdwg.org/dwc/terms/occurrenceMeasurementValue</a></td>
+			<td><a href="#dwc_occurrenceMeasurementValue">http://rs.tdwg.org/dwc/terms/occurrenceMeasurementValue</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -21841,7 +21841,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/occurrenceRemarks">http://rs.tdwg.org/dwc/terms/occurrenceRemarks</a></td>
+			<td><a href="#dwc_occurrenceRemarks">http://rs.tdwg.org/dwc/terms/occurrenceRemarks</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -21883,7 +21883,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/occurrenceStatus">http://rs.tdwg.org/dwc/terms/occurrenceStatus</a></td>
+			<td><a href="#dwc_occurrenceStatus">http://rs.tdwg.org/dwc/terms/occurrenceStatus</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -21936,7 +21936,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/occurrenceStatus">http://rs.tdwg.org/dwc/iri/occurrenceStatus</a></td>
+			<td><a href="#dwciri_occurrenceStatus">http://rs.tdwg.org/dwc/iri/occurrenceStatus</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -21986,7 +21986,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/order">http://rs.tdwg.org/dwc/terms/order</a></td>
+			<td><a href="#dwc_order">http://rs.tdwg.org/dwc/terms/order</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -22031,7 +22031,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/Organism">http://rs.tdwg.org/dwc/terms/Organism</a></td>
+			<td><a href="#dwc_Organism">http://rs.tdwg.org/dwc/terms/Organism</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -22090,7 +22090,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/organismID">http://rs.tdwg.org/dwc/terms/organismID</a></td>
+			<td><a href="#dwc_organismID">http://rs.tdwg.org/dwc/terms/organismID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -22136,7 +22136,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/OrganismInteraction">http://rs.tdwg.org/dwc/terms/OrganismInteraction</a></td>
+			<td><a href="#dwc_OrganismInteraction">http://rs.tdwg.org/dwc/terms/OrganismInteraction</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -22194,7 +22194,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/organismInteractionDescription">http://rs.tdwg.org/dwc/terms/organismInteractionDescription</a></td>
+			<td><a href="#dwc_organismInteractionDescription">http://rs.tdwg.org/dwc/terms/organismInteractionDescription</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -22240,7 +22240,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/organismInteractionID">http://rs.tdwg.org/dwc/terms/organismInteractionID</a></td>
+			<td><a href="#dwc_organismInteractionID">http://rs.tdwg.org/dwc/terms/organismInteractionID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -22286,7 +22286,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/organismInteractionType">http://rs.tdwg.org/dwc/terms/organismInteractionType</a></td>
+			<td><a href="#dwc_organismInteractionType">http://rs.tdwg.org/dwc/terms/organismInteractionType</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -22341,7 +22341,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/organismInteractionType">http://rs.tdwg.org/dwc/iri/organismInteractionType</a></td>
+			<td><a href="#dwciri_organismInteractionType">http://rs.tdwg.org/dwc/iri/organismInteractionType</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -22387,7 +22387,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/organismName">http://rs.tdwg.org/dwc/terms/organismName</a></td>
+			<td><a href="#dwc_organismName">http://rs.tdwg.org/dwc/terms/organismName</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -22437,7 +22437,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/organismPart">http://rs.tdwg.org/dwc/terms/organismPart</a></td>
+			<td><a href="#dwc_organismPart">http://rs.tdwg.org/dwc/terms/organismPart</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -22492,7 +22492,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/organismPart">http://rs.tdwg.org/dwc/iri/organismPart</a></td>
+			<td><a href="#dwciri_organismPart">http://rs.tdwg.org/dwc/iri/organismPart</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -22538,7 +22538,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/organismQuantity">http://rs.tdwg.org/dwc/terms/organismQuantity</a></td>
+			<td><a href="#dwc_organismQuantity">http://rs.tdwg.org/dwc/terms/organismQuantity</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -22593,7 +22593,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/organismQuantityType">http://rs.tdwg.org/dwc/terms/organismQuantityType</a></td>
+			<td><a href="#dwc_organismQuantityType">http://rs.tdwg.org/dwc/terms/organismQuantityType</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -22648,7 +22648,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/organismQuantityType">http://rs.tdwg.org/dwc/iri/organismQuantityType</a></td>
+			<td><a href="#dwciri_organismQuantityType">http://rs.tdwg.org/dwc/iri/organismQuantityType</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -22690,7 +22690,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/organismRemarks">http://rs.tdwg.org/dwc/terms/organismRemarks</a></td>
+			<td><a href="#dwc_organismRemarks">http://rs.tdwg.org/dwc/terms/organismRemarks</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -22736,7 +22736,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/organismScope">http://rs.tdwg.org/dwc/terms/organismScope</a></td>
+			<td><a href="#dwc_organismScope">http://rs.tdwg.org/dwc/terms/organismScope</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -22796,7 +22796,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/organismScope">http://rs.tdwg.org/dwc/iri/organismScope</a></td>
+			<td><a href="#dwciri_organismScope">http://rs.tdwg.org/dwc/iri/organismScope</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -22846,7 +22846,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/originalNameUsage">http://rs.tdwg.org/dwc/terms/originalNameUsage</a></td>
+			<td><a href="#dwc_originalNameUsage">http://rs.tdwg.org/dwc/terms/originalNameUsage</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -22895,7 +22895,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/originalNameUsageID">http://rs.tdwg.org/dwc/terms/originalNameUsageID</a></td>
+			<td><a href="#dwc_originalNameUsageID">http://rs.tdwg.org/dwc/terms/originalNameUsageID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -22946,7 +22946,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/otherCatalogNumbers">http://rs.tdwg.org/dwc/terms/otherCatalogNumbers</a></td>
+			<td><a href="#dwc_otherCatalogNumbers">http://rs.tdwg.org/dwc/terms/otherCatalogNumbers</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -23003,7 +23003,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/ownerInstitutionCode">http://rs.tdwg.org/dwc/terms/ownerInstitutionCode</a></td>
+			<td><a href="#dwc_ownerInstitutionCode">http://rs.tdwg.org/dwc/terms/ownerInstitutionCode</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -23053,7 +23053,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/parentEventID">http://rs.tdwg.org/dwc/terms/parentEventID</a></td>
+			<td><a href="#dwc_parentEventID">http://rs.tdwg.org/dwc/terms/parentEventID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -23107,7 +23107,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/parentMeasurementID">http://rs.tdwg.org/dwc/terms/parentMeasurementID</a></td>
+			<td><a href="#dwc_parentMeasurementID">http://rs.tdwg.org/dwc/terms/parentMeasurementID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -23160,7 +23160,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/parentNameUsage">http://rs.tdwg.org/dwc/terms/parentNameUsage</a></td>
+			<td><a href="#dwc_parentNameUsage">http://rs.tdwg.org/dwc/terms/parentNameUsage</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -23206,7 +23206,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/parentNameUsageID">http://rs.tdwg.org/dwc/terms/parentNameUsageID</a></td>
+			<td><a href="#dwc_parentNameUsageID">http://rs.tdwg.org/dwc/terms/parentNameUsageID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -23257,7 +23257,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/pathway">http://rs.tdwg.org/dwc/terms/pathway</a></td>
+			<td><a href="#dwc_pathway">http://rs.tdwg.org/dwc/terms/pathway</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -23310,7 +23310,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/pathway">http://rs.tdwg.org/dwc/iri/pathway</a></td>
+			<td><a href="#dwciri_pathway">http://rs.tdwg.org/dwc/iri/pathway</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -23367,7 +23367,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/phylum">http://rs.tdwg.org/dwc/terms/phylum</a></td>
+			<td><a href="#dwc_phylum">http://rs.tdwg.org/dwc/terms/phylum</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -23412,7 +23412,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/pointRadiusSpatialFit">http://rs.tdwg.org/dwc/terms/pointRadiusSpatialFit</a></td>
+			<td><a href="#dwc_pointRadiusSpatialFit">http://rs.tdwg.org/dwc/terms/pointRadiusSpatialFit</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -23470,7 +23470,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/preferredSpatialRepresentation">http://rs.tdwg.org/dwc/terms/preferredSpatialRepresentation</a></td>
+			<td><a href="#dwc_preferredSpatialRepresentation">http://rs.tdwg.org/dwc/terms/preferredSpatialRepresentation</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -23519,7 +23519,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/preferredSpatialRepresentation">http://rs.tdwg.org/dwc/iri/preferredSpatialRepresentation</a></td>
+			<td><a href="#dwciri_preferredSpatialRepresentation">http://rs.tdwg.org/dwc/iri/preferredSpatialRepresentation</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -23565,7 +23565,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/preparations">http://rs.tdwg.org/dwc/terms/preparations</a></td>
+			<td><a href="#dwc_preparations">http://rs.tdwg.org/dwc/terms/preparations</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -23638,7 +23638,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/preparations">http://rs.tdwg.org/dwc/iri/preparations</a></td>
+			<td><a href="#dwciri_preparations">http://rs.tdwg.org/dwc/iri/preparations</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -23684,7 +23684,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/PreservedSpecimen">http://rs.tdwg.org/dwc/terms/PreservedSpecimen</a></td>
+			<td><a href="#dwc_PreservedSpecimen">http://rs.tdwg.org/dwc/terms/PreservedSpecimen</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -23733,7 +23733,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/PreviousIdentifications">http://rs.tdwg.org/dwc/terms/PreviousIdentifications</a></td>
+			<td><a href="#dwc_PreviousIdentifications">http://rs.tdwg.org/dwc/terms/PreviousIdentifications</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -23779,7 +23779,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/previousIdentifications">http://rs.tdwg.org/dwc/terms/previousIdentifications</a></td>
+			<td><a href="#dwc_previousIdentifications">http://rs.tdwg.org/dwc/terms/previousIdentifications</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -23837,7 +23837,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/processedTotalReadCount">http://rs.tdwg.org/dwc/terms/processedTotalReadCount</a></td>
+			<td><a href="#dwc_processedTotalReadCount">http://rs.tdwg.org/dwc/terms/processedTotalReadCount</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -23891,7 +23891,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/projectID">http://rs.tdwg.org/dwc/terms/projectID</a></td>
+			<td><a href="#dwc_projectID">http://rs.tdwg.org/dwc/terms/projectID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -23952,7 +23952,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/projectTitle">http://rs.tdwg.org/dwc/terms/projectTitle</a></td>
+			<td><a href="#dwc_projectTitle">http://rs.tdwg.org/dwc/terms/projectTitle</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -24011,7 +24011,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/Protocol">http://rs.tdwg.org/dwc/terms/Protocol</a></td>
+			<td><a href="#dwc_Protocol">http://rs.tdwg.org/dwc/terms/Protocol</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -24062,7 +24062,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/protocolDescription">http://rs.tdwg.org/dwc/terms/protocolDescription</a></td>
+			<td><a href="#dwc_protocolDescription">http://rs.tdwg.org/dwc/terms/protocolDescription</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -24108,7 +24108,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/protocolDescriptions">http://rs.tdwg.org/eco/terms/protocolDescriptions</a></td>
+			<td><a href="#eco_protocolDescriptions">http://rs.tdwg.org/eco/terms/protocolDescriptions</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -24162,7 +24162,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/protocolID">http://rs.tdwg.org/dwc/terms/protocolID</a></td>
+			<td><a href="#dwc_protocolID">http://rs.tdwg.org/dwc/terms/protocolID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -24208,7 +24208,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/protocolNames">http://rs.tdwg.org/eco/terms/protocolNames</a></td>
+			<td><a href="#eco_protocolNames">http://rs.tdwg.org/eco/terms/protocolNames</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -24274,7 +24274,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/protocolNames">http://rs.tdwg.org/eco/iri/protocolNames</a></td>
+			<td><a href="#ecoiri_protocolNames">http://rs.tdwg.org/eco/iri/protocolNames</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -24328,7 +24328,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/protocolReferences">http://rs.tdwg.org/dwc/terms/protocolReferences</a></td>
+			<td><a href="#dwc_protocolReferences">http://rs.tdwg.org/dwc/terms/protocolReferences</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -24378,7 +24378,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/protocolReferences">http://rs.tdwg.org/eco/terms/protocolReferences</a></td>
+			<td><a href="#eco_protocolReferences">http://rs.tdwg.org/eco/terms/protocolReferences</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -24432,7 +24432,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/protocolRemarks">http://rs.tdwg.org/dwc/terms/protocolRemarks</a></td>
+			<td><a href="#dwc_protocolRemarks">http://rs.tdwg.org/dwc/terms/protocolRemarks</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -24474,7 +24474,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/protocolType">http://rs.tdwg.org/dwc/terms/protocolType</a></td>
+			<td><a href="#dwc_protocolType">http://rs.tdwg.org/dwc/terms/protocolType</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -24530,7 +24530,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/protocolType">http://rs.tdwg.org/dwc/iri/protocolType</a></td>
+			<td><a href="#dwciri_protocolType">http://rs.tdwg.org/dwc/iri/protocolType</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -24576,7 +24576,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/Provenance">http://rs.tdwg.org/dwc/terms/Provenance</a></td>
+			<td><a href="#dwc_Provenance">http://rs.tdwg.org/dwc/terms/Provenance</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -24622,7 +24622,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/provenanceID">http://rs.tdwg.org/dwc/terms/provenanceID</a></td>
+			<td><a href="#dwc_provenanceID">http://rs.tdwg.org/dwc/terms/provenanceID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -24664,7 +24664,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/rawTotalReadCount">http://rs.tdwg.org/dwc/terms/rawTotalReadCount</a></td>
+			<td><a href="#dwc_rawTotalReadCount">http://rs.tdwg.org/dwc/terms/rawTotalReadCount</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -24714,7 +24714,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/readCount">http://rs.tdwg.org/dwc/terms/readCount</a></td>
+			<td><a href="#dwc_readCount">http://rs.tdwg.org/dwc/terms/readCount</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -24764,7 +24764,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/recordedBy">http://rs.tdwg.org/dwc/terms/recordedBy</a></td>
+			<td><a href="#dwc_recordedBy">http://rs.tdwg.org/dwc/terms/recordedBy</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -24828,7 +24828,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/recordedBy">http://rs.tdwg.org/dwc/iri/recordedBy</a></td>
+			<td><a href="#dwciri_recordedBy">http://rs.tdwg.org/dwc/iri/recordedBy</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -24882,7 +24882,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/recordedByID">http://rs.tdwg.org/dwc/terms/recordedByID</a></td>
+			<td><a href="#dwc_recordedByID">http://rs.tdwg.org/dwc/terms/recordedByID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -24943,7 +24943,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/recordNumber">http://rs.tdwg.org/dwc/terms/recordNumber</a></td>
+			<td><a href="#dwc_recordNumber">http://rs.tdwg.org/dwc/terms/recordNumber</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -24993,7 +24993,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/recordNumber">http://rs.tdwg.org/dwc/iri/recordNumber</a></td>
+			<td><a href="#dwciri_recordNumber">http://rs.tdwg.org/dwc/iri/recordNumber</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -25039,7 +25039,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/referenceID">http://rs.tdwg.org/dwc/terms/referenceID</a></td>
+			<td><a href="#dwc_referenceID">http://rs.tdwg.org/dwc/terms/referenceID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -25085,7 +25085,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/referenceRemarks">http://rs.tdwg.org/dwc/terms/referenceRemarks</a></td>
+			<td><a href="#dwc_referenceRemarks">http://rs.tdwg.org/dwc/terms/referenceRemarks</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -25127,7 +25127,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://purl.org/dc/terms/references">http://purl.org/dc/terms/references</a></td>
+			<td><a href="#dcterms_references">http://purl.org/dc/terms/references</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -25188,7 +25188,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/referenceType">http://rs.tdwg.org/dwc/terms/referenceType</a></td>
+			<td><a href="#dwc_referenceType">http://rs.tdwg.org/dwc/terms/referenceType</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -25246,7 +25246,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/RelatedBasisOfRecord">http://rs.tdwg.org/dwc/terms/RelatedBasisOfRecord</a></td>
+			<td><a href="#dwc_RelatedBasisOfRecord">http://rs.tdwg.org/dwc/terms/RelatedBasisOfRecord</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -25288,7 +25288,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/relatedResourceID">http://rs.tdwg.org/dwc/terms/relatedResourceID</a></td>
+			<td><a href="#dwc_relatedResourceID">http://rs.tdwg.org/dwc/terms/relatedResourceID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -25342,7 +25342,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/relatedResourceType">http://rs.tdwg.org/dwc/terms/relatedResourceType</a></td>
+			<td><a href="#dwc_relatedResourceType">http://rs.tdwg.org/dwc/terms/relatedResourceType</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -25384,7 +25384,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/relationshipAccordingTo">http://rs.tdwg.org/dwc/terms/relationshipAccordingTo</a></td>
+			<td><a href="#dwc_relationshipAccordingTo">http://rs.tdwg.org/dwc/terms/relationshipAccordingTo</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -25430,7 +25430,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/relationshipEstablishedDate">http://rs.tdwg.org/dwc/terms/relationshipEstablishedDate</a></td>
+			<td><a href="#dwc_relationshipEstablishedDate">http://rs.tdwg.org/dwc/terms/relationshipEstablishedDate</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -25498,7 +25498,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/relationshipOfResource">http://rs.tdwg.org/dwc/terms/relationshipOfResource</a></td>
+			<td><a href="#dwc_relationshipOfResource">http://rs.tdwg.org/dwc/terms/relationshipOfResource</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -25558,7 +25558,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/relationshipOfResourceID">http://rs.tdwg.org/dwc/terms/relationshipOfResourceID</a></td>
+			<td><a href="#dwc_relationshipOfResourceID">http://rs.tdwg.org/dwc/terms/relationshipOfResourceID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -25612,7 +25612,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/relationshipRemarks">http://rs.tdwg.org/dwc/terms/relationshipRemarks</a></td>
+			<td><a href="#dwc_relationshipRemarks">http://rs.tdwg.org/dwc/terms/relationshipRemarks</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -25665,7 +25665,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/reportedExtremeConditions">http://rs.tdwg.org/eco/terms/reportedExtremeConditions</a></td>
+			<td><a href="#eco_reportedExtremeConditions">http://rs.tdwg.org/eco/terms/reportedExtremeConditions</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -25714,7 +25714,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/reportedWeather">http://rs.tdwg.org/eco/terms/reportedWeather</a></td>
+			<td><a href="#eco_reportedWeather">http://rs.tdwg.org/eco/terms/reportedWeather</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -25764,7 +25764,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/reproductiveCondition">http://rs.tdwg.org/dwc/terms/reproductiveCondition</a></td>
+			<td><a href="#dwc_reproductiveCondition">http://rs.tdwg.org/dwc/terms/reproductiveCondition</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -25819,7 +25819,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/reproductiveCondition">http://rs.tdwg.org/dwc/iri/reproductiveCondition</a></td>
+			<td><a href="#dwciri_reproductiveCondition">http://rs.tdwg.org/dwc/iri/reproductiveCondition</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -25869,7 +25869,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/resourceID">http://rs.tdwg.org/dwc/terms/resourceID</a></td>
+			<td><a href="#dwc_resourceID">http://rs.tdwg.org/dwc/terms/resourceID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -25919,7 +25919,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/ResourceRelationship">http://rs.tdwg.org/dwc/terms/ResourceRelationship</a></td>
+			<td><a href="#dwc_ResourceRelationship">http://rs.tdwg.org/dwc/terms/ResourceRelationship</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -25977,7 +25977,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/resourceRelationshipID">http://rs.tdwg.org/dwc/terms/resourceRelationshipID</a></td>
+			<td><a href="#dwc_resourceRelationshipID">http://rs.tdwg.org/dwc/terms/resourceRelationshipID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -26023,7 +26023,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://purl.org/dc/terms/rights">http://purl.org/dc/terms/rights</a></td>
+			<td><a href="#dcterms_rights">http://purl.org/dc/terms/rights</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -26081,7 +26081,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://purl.org/dc/terms/rightsHolder">http://purl.org/dc/terms/rightsHolder</a></td>
+			<td><a href="#dcterms_rightsHolder">http://purl.org/dc/terms/rightsHolder</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -26127,7 +26127,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/Sample">http://rs.tdwg.org/dwc/terms/Sample</a></td>
+			<td><a href="#dwc_Sample">http://rs.tdwg.org/dwc/terms/Sample</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -26169,7 +26169,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/SampleAttribute">http://rs.tdwg.org/dwc/terms/SampleAttribute</a></td>
+			<td><a href="#dwc_SampleAttribute">http://rs.tdwg.org/dwc/terms/SampleAttribute</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -26207,7 +26207,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/SampleAttributeAccuracy">http://rs.tdwg.org/dwc/terms/SampleAttributeAccuracy</a></td>
+			<td><a href="#dwc_SampleAttributeAccuracy">http://rs.tdwg.org/dwc/terms/SampleAttributeAccuracy</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -26253,7 +26253,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/SampleAttributeDeterminedBy">http://rs.tdwg.org/dwc/terms/SampleAttributeDeterminedBy</a></td>
+			<td><a href="#dwc_SampleAttributeDeterminedBy">http://rs.tdwg.org/dwc/terms/SampleAttributeDeterminedBy</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -26299,7 +26299,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/SampleAttributeDeterminedDate">http://rs.tdwg.org/dwc/terms/SampleAttributeDeterminedDate</a></td>
+			<td><a href="#dwc_SampleAttributeDeterminedDate">http://rs.tdwg.org/dwc/terms/SampleAttributeDeterminedDate</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -26345,7 +26345,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/SampleAttributeRemarks">http://rs.tdwg.org/dwc/terms/SampleAttributeRemarks</a></td>
+			<td><a href="#dwc_SampleAttributeRemarks">http://rs.tdwg.org/dwc/terms/SampleAttributeRemarks</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -26387,7 +26387,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/SampleAttributeUnit">http://rs.tdwg.org/dwc/terms/SampleAttributeUnit</a></td>
+			<td><a href="#dwc_SampleAttributeUnit">http://rs.tdwg.org/dwc/terms/SampleAttributeUnit</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -26433,7 +26433,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/SampleAttributeValue">http://rs.tdwg.org/dwc/terms/SampleAttributeValue</a></td>
+			<td><a href="#dwc_SampleAttributeValue">http://rs.tdwg.org/dwc/terms/SampleAttributeValue</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -26479,7 +26479,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/sampledFeatureType">http://rs.tdwg.org/dwc/terms/sampledFeatureType</a></td>
+			<td><a href="#dwc_sampledFeatureType">http://rs.tdwg.org/dwc/terms/sampledFeatureType</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -26535,7 +26535,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/sampledFeatureType">http://rs.tdwg.org/dwc/iri/sampledFeatureType</a></td>
+			<td><a href="#dwciri_sampledFeatureType">http://rs.tdwg.org/dwc/iri/sampledFeatureType</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -26581,7 +26581,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/sampledSubstrateCategory">http://rs.tdwg.org/dwc/terms/sampledSubstrateCategory</a></td>
+			<td><a href="#dwc_sampledSubstrateCategory">http://rs.tdwg.org/dwc/terms/sampledSubstrateCategory</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -26635,7 +26635,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/sampledSubstrateCategory">http://rs.tdwg.org/dwc/iri/sampledSubstrateCategory</a></td>
+			<td><a href="#dwciri_sampledSubstrateCategory">http://rs.tdwg.org/dwc/iri/sampledSubstrateCategory</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -26681,7 +26681,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/sampledSubstrateLayer">http://rs.tdwg.org/dwc/terms/sampledSubstrateLayer</a></td>
+			<td><a href="#dwc_sampledSubstrateLayer">http://rs.tdwg.org/dwc/terms/sampledSubstrateLayer</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -26746,7 +26746,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/sampledSubstrateLayer">http://rs.tdwg.org/dwc/iri/sampledSubstrateLayer</a></td>
+			<td><a href="#dwciri_sampledSubstrateLayer">http://rs.tdwg.org/dwc/iri/sampledSubstrateLayer</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -26792,7 +26792,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/SampleRemarks">http://rs.tdwg.org/dwc/terms/SampleRemarks</a></td>
+			<td><a href="#dwc_SampleRemarks">http://rs.tdwg.org/dwc/terms/SampleRemarks</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -26838,7 +26838,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/sampleSizeUnit">http://rs.tdwg.org/dwc/terms/sampleSizeUnit</a></td>
+			<td><a href="#dwc_sampleSizeUnit">http://rs.tdwg.org/dwc/terms/sampleSizeUnit</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -26895,7 +26895,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/sampleSizeUnit">http://rs.tdwg.org/dwc/iri/sampleSizeUnit</a></td>
+			<td><a href="#dwciri_sampleSizeUnit">http://rs.tdwg.org/dwc/iri/sampleSizeUnit</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -26941,7 +26941,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/sampleSizeValue">http://rs.tdwg.org/dwc/terms/sampleSizeValue</a></td>
+			<td><a href="#dwc_sampleSizeValue">http://rs.tdwg.org/dwc/terms/sampleSizeValue</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -26991,7 +26991,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/SamplingAttributeID">http://rs.tdwg.org/dwc/terms/SamplingAttributeID</a></td>
+			<td><a href="#dwc_SamplingAttributeID">http://rs.tdwg.org/dwc/terms/SamplingAttributeID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -27029,7 +27029,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/SamplingAttributeType">http://rs.tdwg.org/dwc/terms/SamplingAttributeType</a></td>
+			<td><a href="#dwc_SamplingAttributeType">http://rs.tdwg.org/dwc/terms/SamplingAttributeType</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -27071,7 +27071,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/samplingEffort">http://rs.tdwg.org/dwc/terms/samplingEffort</a></td>
+			<td><a href="#dwc_samplingEffort">http://rs.tdwg.org/dwc/terms/samplingEffort</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -27122,7 +27122,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/samplingEffortProtocol">http://rs.tdwg.org/eco/terms/samplingEffortProtocol</a></td>
+			<td><a href="#eco_samplingEffortProtocol">http://rs.tdwg.org/eco/terms/samplingEffortProtocol</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -27188,7 +27188,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/samplingEffortProtocol">http://rs.tdwg.org/eco/iri/samplingEffortProtocol</a></td>
+			<td><a href="#ecoiri_samplingEffortProtocol">http://rs.tdwg.org/eco/iri/samplingEffortProtocol</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -27242,7 +27242,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/samplingEffortUnit">http://rs.tdwg.org/eco/terms/samplingEffortUnit</a></td>
+			<td><a href="#eco_samplingEffortUnit">http://rs.tdwg.org/eco/terms/samplingEffortUnit</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -27308,7 +27308,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/samplingEffortUnit">http://rs.tdwg.org/eco/iri/samplingEffortUnit</a></td>
+			<td><a href="#ecoiri_samplingEffortUnit">http://rs.tdwg.org/eco/iri/samplingEffortUnit</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -27358,7 +27358,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/samplingEffortValue">http://rs.tdwg.org/eco/terms/samplingEffortValue</a></td>
+			<td><a href="#eco_samplingEffortValue">http://rs.tdwg.org/eco/terms/samplingEffortValue</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -27416,7 +27416,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/SamplingEvent">http://rs.tdwg.org/dwc/terms/SamplingEvent</a></td>
+			<td><a href="#dwc_SamplingEvent">http://rs.tdwg.org/dwc/terms/SamplingEvent</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -27458,7 +27458,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/SamplingEventAttributes">http://rs.tdwg.org/dwc/terms/SamplingEventAttributes</a></td>
+			<td><a href="#dwc_SamplingEventAttributes">http://rs.tdwg.org/dwc/terms/SamplingEventAttributes</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -27500,7 +27500,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/SamplingEventID">http://rs.tdwg.org/dwc/terms/SamplingEventID</a></td>
+			<td><a href="#dwc_SamplingEventID">http://rs.tdwg.org/dwc/terms/SamplingEventID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -27542,7 +27542,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/SamplingEventRemarks">http://rs.tdwg.org/dwc/terms/SamplingEventRemarks</a></td>
+			<td><a href="#dwc_SamplingEventRemarks">http://rs.tdwg.org/dwc/terms/SamplingEventRemarks</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -27584,7 +27584,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/SamplingLocation">http://rs.tdwg.org/dwc/terms/SamplingLocation</a></td>
+			<td><a href="#dwc_SamplingLocation">http://rs.tdwg.org/dwc/terms/SamplingLocation</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -27622,7 +27622,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/SamplingLocationID">http://rs.tdwg.org/dwc/terms/SamplingLocationID</a></td>
+			<td><a href="#dwc_SamplingLocationID">http://rs.tdwg.org/dwc/terms/SamplingLocationID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -27668,7 +27668,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/SamplingLocationRemarks">http://rs.tdwg.org/dwc/terms/SamplingLocationRemarks</a></td>
+			<td><a href="#dwc_SamplingLocationRemarks">http://rs.tdwg.org/dwc/terms/SamplingLocationRemarks</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -27714,7 +27714,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/samplingPerformedBy">http://rs.tdwg.org/eco/terms/samplingPerformedBy</a></td>
+			<td><a href="#eco_samplingPerformedBy">http://rs.tdwg.org/eco/terms/samplingPerformedBy</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -27783,7 +27783,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/samplingPerformedBy">http://rs.tdwg.org/eco/iri/samplingPerformedBy</a></td>
+			<td><a href="#ecoiri_samplingPerformedBy">http://rs.tdwg.org/eco/iri/samplingPerformedBy</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -27837,7 +27837,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/samplingPerformedByID">http://rs.tdwg.org/eco/terms/samplingPerformedByID</a></td>
+			<td><a href="#eco_samplingPerformedByID">http://rs.tdwg.org/eco/terms/samplingPerformedByID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -27890,7 +27890,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/samplingProtocol">http://rs.tdwg.org/dwc/terms/samplingProtocol</a></td>
+			<td><a href="#dwc_samplingProtocol">http://rs.tdwg.org/dwc/terms/samplingProtocol</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -27959,7 +27959,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/samplingProtocol">http://rs.tdwg.org/dwc/iri/samplingProtocol</a></td>
+			<td><a href="#dwciri_samplingProtocol">http://rs.tdwg.org/dwc/iri/samplingProtocol</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -28013,7 +28013,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/scientificName">http://rs.tdwg.org/dwc/terms/scientificName</a></td>
+			<td><a href="#dwc_scientificName">http://rs.tdwg.org/dwc/terms/scientificName</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -28086,7 +28086,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/scientificNameAuthorship">http://rs.tdwg.org/dwc/terms/scientificNameAuthorship</a></td>
+			<td><a href="#dwc_scientificNameAuthorship">http://rs.tdwg.org/dwc/terms/scientificNameAuthorship</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -28136,7 +28136,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/scientificNameID">http://rs.tdwg.org/dwc/terms/scientificNameID</a></td>
+			<td><a href="#dwc_scientificNameID">http://rs.tdwg.org/dwc/terms/scientificNameID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -28182,7 +28182,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/scientificNameRank">http://rs.tdwg.org/dwc/terms/scientificNameRank</a></td>
+			<td><a href="#dwc_scientificNameRank">http://rs.tdwg.org/dwc/terms/scientificNameRank</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -28228,7 +28228,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/sequence">http://rs.tdwg.org/dwc/terms/sequence</a></td>
+			<td><a href="#dwc_sequence">http://rs.tdwg.org/dwc/terms/sequence</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -28278,7 +28278,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/sex">http://rs.tdwg.org/dwc/terms/sex</a></td>
+			<td><a href="#dwc_sex">http://rs.tdwg.org/dwc/terms/sex</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -28340,7 +28340,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/sex">http://rs.tdwg.org/dwc/iri/sex</a></td>
+			<td><a href="#dwciri_sex">http://rs.tdwg.org/dwc/iri/sex</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -28390,7 +28390,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/siteCount">http://rs.tdwg.org/eco/terms/siteCount</a></td>
+			<td><a href="#eco_siteCount">http://rs.tdwg.org/eco/terms/siteCount</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -28447,7 +28447,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/siteNestingDescription">http://rs.tdwg.org/eco/terms/siteNestingDescription</a></td>
+			<td><a href="#eco_siteNestingDescription">http://rs.tdwg.org/eco/terms/siteNestingDescription</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -28501,7 +28501,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/siteNumber">http://rs.tdwg.org/dwc/terms/siteNumber</a></td>
+			<td><a href="#dwc_siteNumber">http://rs.tdwg.org/dwc/terms/siteNumber</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -28554,7 +28554,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/siteNumber">http://rs.tdwg.org/dwc/iri/siteNumber</a></td>
+			<td><a href="#dwciri_siteNumber">http://rs.tdwg.org/dwc/iri/siteNumber</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -28600,7 +28600,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/specificEpithet">http://rs.tdwg.org/dwc/terms/specificEpithet</a></td>
+			<td><a href="#dwc_specificEpithet">http://rs.tdwg.org/dwc/terms/specificEpithet</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -28649,7 +28649,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/startDayOfYear">http://rs.tdwg.org/dwc/terms/startDayOfYear</a></td>
+			<td><a href="#dwc_startDayOfYear">http://rs.tdwg.org/dwc/terms/startDayOfYear</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -28704,7 +28704,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/StartTimeOfDay">http://rs.tdwg.org/dwc/terms/StartTimeOfDay</a></td>
+			<td><a href="#dwc_StartTimeOfDay">http://rs.tdwg.org/dwc/terms/StartTimeOfDay</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -28750,7 +28750,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/stateProvince">http://rs.tdwg.org/dwc/terms/stateProvince</a></td>
+			<td><a href="#dwc_stateProvince">http://rs.tdwg.org/dwc/terms/stateProvince</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -28808,7 +28808,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/subfamily">http://rs.tdwg.org/dwc/terms/subfamily</a></td>
+			<td><a href="#dwc_subfamily">http://rs.tdwg.org/dwc/terms/subfamily</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -28858,7 +28858,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/subgenus">http://rs.tdwg.org/dwc/terms/subgenus</a></td>
+			<td><a href="#dwc_subgenus">http://rs.tdwg.org/dwc/terms/subgenus</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -28911,7 +28911,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/substrate">http://rs.tdwg.org/dwc/terms/substrate</a></td>
+			<td><a href="#dwc_substrate">http://rs.tdwg.org/dwc/terms/substrate</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -28967,7 +28967,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/substrate">http://rs.tdwg.org/dwc/iri/substrate</a></td>
+			<td><a href="#dwciri_substrate">http://rs.tdwg.org/dwc/iri/substrate</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -29013,7 +29013,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/subtribe">http://rs.tdwg.org/dwc/terms/subtribe</a></td>
+			<td><a href="#dwc_subtribe">http://rs.tdwg.org/dwc/terms/subtribe</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -29062,7 +29062,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/superfamily">http://rs.tdwg.org/dwc/terms/superfamily</a></td>
+			<td><a href="#dwc_superfamily">http://rs.tdwg.org/dwc/terms/superfamily</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -29119,7 +29119,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/Survey">http://rs.tdwg.org/eco/terms/Survey</a></td>
+			<td><a href="#eco_Survey">http://rs.tdwg.org/eco/terms/Survey</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -29183,7 +29183,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/surveyID">http://rs.tdwg.org/eco/terms/surveyID</a></td>
+			<td><a href="#eco_surveyID">http://rs.tdwg.org/eco/terms/surveyID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -29229,7 +29229,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/surveySiteType">http://rs.tdwg.org/eco/terms/surveySiteType</a></td>
+			<td><a href="#eco_surveySiteType">http://rs.tdwg.org/eco/terms/surveySiteType</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -29284,7 +29284,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/surveySiteType">http://rs.tdwg.org/eco/iri/surveySiteType</a></td>
+			<td><a href="#ecoiri_surveySiteType">http://rs.tdwg.org/eco/iri/surveySiteType</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -29330,7 +29330,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/SurveyTarget">http://rs.tdwg.org/eco/terms/SurveyTarget</a></td>
+			<td><a href="#eco_SurveyTarget">http://rs.tdwg.org/eco/terms/SurveyTarget</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -29381,7 +29381,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/surveyTargetDescription">http://rs.tdwg.org/eco/terms/surveyTargetDescription</a></td>
+			<td><a href="#eco_surveyTargetDescription">http://rs.tdwg.org/eco/terms/surveyTargetDescription</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -29430,7 +29430,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/surveyTargetID">http://rs.tdwg.org/eco/terms/surveyTargetID</a></td>
+			<td><a href="#eco_surveyTargetID">http://rs.tdwg.org/eco/terms/surveyTargetID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -29476,7 +29476,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/surveyTargetRemarks">http://rs.tdwg.org/eco/terms/surveyTargetRemarks</a></td>
+			<td><a href="#eco_surveyTargetRemarks">http://rs.tdwg.org/eco/terms/surveyTargetRemarks</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -29522,7 +29522,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/surveyTargetType">http://rs.tdwg.org/eco/terms/surveyTargetType</a></td>
+			<td><a href="#eco_surveyTargetType">http://rs.tdwg.org/eco/terms/surveyTargetType</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -29580,7 +29580,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/surveyTargetType">http://rs.tdwg.org/eco/iri/surveyTargetType</a></td>
+			<td><a href="#ecoiri_surveyTargetType">http://rs.tdwg.org/eco/iri/surveyTargetType</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -29626,7 +29626,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/surveyTargetUnit">http://rs.tdwg.org/eco/terms/surveyTargetUnit</a></td>
+			<td><a href="#eco_surveyTargetUnit">http://rs.tdwg.org/eco/terms/surveyTargetUnit</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -29680,7 +29680,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/surveyTargetUnit">http://rs.tdwg.org/eco/iri/surveyTargetUnit</a></td>
+			<td><a href="#ecoiri_surveyTargetUnit">http://rs.tdwg.org/eco/iri/surveyTargetUnit</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -29726,7 +29726,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/surveyTargetValue">http://rs.tdwg.org/eco/terms/surveyTargetValue</a></td>
+			<td><a href="#eco_surveyTargetValue">http://rs.tdwg.org/eco/terms/surveyTargetValue</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -29785,7 +29785,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/surveyTargetValue">http://rs.tdwg.org/eco/iri/surveyTargetValue</a></td>
+			<td><a href="#ecoiri_surveyTargetValue">http://rs.tdwg.org/eco/iri/surveyTargetValue</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -29831,7 +29831,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/targetDegreeOfEstablishmentScope">http://rs.tdwg.org/eco/terms/targetDegreeOfEstablishmentScope</a></td>
+			<td><a href="#eco_targetDegreeOfEstablishmentScope">http://rs.tdwg.org/eco/terms/targetDegreeOfEstablishmentScope</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -29896,7 +29896,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/targetDegreeOfEstablishmentScope">http://rs.tdwg.org/eco/iri/targetDegreeOfEstablishmentScope</a></td>
+			<td><a href="#ecoiri_targetDegreeOfEstablishmentScope">http://rs.tdwg.org/eco/iri/targetDegreeOfEstablishmentScope</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -29957,7 +29957,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/targetGrowthFormScope">http://rs.tdwg.org/eco/terms/targetGrowthFormScope</a></td>
+			<td><a href="#eco_targetGrowthFormScope">http://rs.tdwg.org/eco/terms/targetGrowthFormScope</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -30022,7 +30022,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/targetGrowthFormScope">http://rs.tdwg.org/eco/iri/targetGrowthFormScope</a></td>
+			<td><a href="#ecoiri_targetGrowthFormScope">http://rs.tdwg.org/eco/iri/targetGrowthFormScope</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -30076,7 +30076,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/targetHabitatScope">http://rs.tdwg.org/eco/terms/targetHabitatScope</a></td>
+			<td><a href="#eco_targetHabitatScope">http://rs.tdwg.org/eco/terms/targetHabitatScope</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -30143,7 +30143,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/targetHabitatScope">http://rs.tdwg.org/eco/iri/targetHabitatScope</a></td>
+			<td><a href="#ecoiri_targetHabitatScope">http://rs.tdwg.org/eco/iri/targetHabitatScope</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -30197,7 +30197,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/targetLifeStageScope">http://rs.tdwg.org/eco/terms/targetLifeStageScope</a></td>
+			<td><a href="#eco_targetLifeStageScope">http://rs.tdwg.org/eco/terms/targetLifeStageScope</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -30262,7 +30262,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/targetLifeStageScope">http://rs.tdwg.org/eco/iri/targetLifeStageScope</a></td>
+			<td><a href="#ecoiri_targetLifeStageScope">http://rs.tdwg.org/eco/iri/targetLifeStageScope</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -30316,7 +30316,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/targetTaxonomicScope">http://rs.tdwg.org/eco/terms/targetTaxonomicScope</a></td>
+			<td><a href="#eco_targetTaxonomicScope">http://rs.tdwg.org/eco/terms/targetTaxonomicScope</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -30382,7 +30382,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/targetTaxonomicScope">http://rs.tdwg.org/eco/iri/targetTaxonomicScope</a></td>
+			<td><a href="#ecoiri_targetTaxonomicScope">http://rs.tdwg.org/eco/iri/targetTaxonomicScope</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -30436,7 +30436,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/Taxon">http://rs.tdwg.org/dwc/terms/Taxon</a></td>
+			<td><a href="#dwc_Taxon">http://rs.tdwg.org/dwc/terms/Taxon</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -30482,7 +30482,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/taxonAccordingTo">http://rs.tdwg.org/dwc/terms/taxonAccordingTo</a></td>
+			<td><a href="#dwc_taxonAccordingTo">http://rs.tdwg.org/dwc/terms/taxonAccordingTo</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -30524,7 +30524,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/taxonAttributes">http://rs.tdwg.org/dwc/terms/taxonAttributes</a></td>
+			<td><a href="#dwc_taxonAttributes">http://rs.tdwg.org/dwc/terms/taxonAttributes</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -30566,7 +30566,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/taxonCompletenessProtocols">http://rs.tdwg.org/eco/terms/taxonCompletenessProtocols</a></td>
+			<td><a href="#eco_taxonCompletenessProtocols">http://rs.tdwg.org/eco/terms/taxonCompletenessProtocols</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -30631,7 +30631,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/taxonCompletenessProtocols">http://rs.tdwg.org/eco/iri/taxonCompletenessProtocols</a></td>
+			<td><a href="#ecoiri_taxonCompletenessProtocols">http://rs.tdwg.org/eco/iri/taxonCompletenessProtocols</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -30685,7 +30685,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/taxonCompletenessReported">http://rs.tdwg.org/eco/terms/taxonCompletenessReported</a></td>
+			<td><a href="#eco_taxonCompletenessReported">http://rs.tdwg.org/eco/terms/taxonCompletenessReported</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -30751,7 +30751,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/taxonCompletenessReported">http://rs.tdwg.org/eco/iri/taxonCompletenessReported</a></td>
+			<td><a href="#ecoiri_taxonCompletenessReported">http://rs.tdwg.org/eco/iri/taxonCompletenessReported</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -30813,7 +30813,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/taxonConceptID">http://rs.tdwg.org/dwc/terms/taxonConceptID</a></td>
+			<td><a href="#dwc_taxonConceptID">http://rs.tdwg.org/dwc/terms/taxonConceptID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -30855,7 +30855,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/taxonFormula">http://rs.tdwg.org/dwc/terms/taxonFormula</a></td>
+			<td><a href="#dwc_taxonFormula">http://rs.tdwg.org/dwc/terms/taxonFormula</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -30914,7 +30914,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/taxonFormula">http://rs.tdwg.org/dwc/iri/taxonFormula</a></td>
+			<td><a href="#dwciri_taxonFormula">http://rs.tdwg.org/dwc/iri/taxonFormula</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -30960,7 +30960,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/TaxonID">http://rs.tdwg.org/dwc/terms/TaxonID</a></td>
+			<td><a href="#dwc_TaxonID">http://rs.tdwg.org/dwc/terms/TaxonID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -31002,7 +31002,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/taxonID">http://rs.tdwg.org/dwc/terms/taxonID</a></td>
+			<td><a href="#dwc_taxonID">http://rs.tdwg.org/dwc/terms/taxonID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -31052,7 +31052,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/taxonNameID">http://rs.tdwg.org/dwc/terms/taxonNameID</a></td>
+			<td><a href="#dwc_taxonNameID">http://rs.tdwg.org/dwc/terms/taxonNameID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -31090,7 +31090,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/taxonomicStatus">http://rs.tdwg.org/dwc/terms/taxonomicStatus</a></td>
+			<td><a href="#dwc_taxonomicStatus">http://rs.tdwg.org/dwc/terms/taxonomicStatus</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -31141,7 +31141,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/taxonRank">http://rs.tdwg.org/dwc/terms/taxonRank</a></td>
+			<td><a href="#dwc_taxonRank">http://rs.tdwg.org/dwc/terms/taxonRank</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -31208,7 +31208,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/taxonRemarks">http://rs.tdwg.org/dwc/terms/taxonRemarks</a></td>
+			<td><a href="#dwc_taxonRemarks">http://rs.tdwg.org/dwc/terms/taxonRemarks</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -31250,7 +31250,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/taxonSortOrder">http://rs.tdwg.org/dwc/terms/taxonSortOrder</a></td>
+			<td><a href="#dwc_taxonSortOrder">http://rs.tdwg.org/dwc/terms/taxonSortOrder</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -31303,7 +31303,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/tectonicUnits">http://rs.tdwg.org/dwc/terms/tectonicUnits</a></td>
+			<td><a href="#dwc_tectonicUnits">http://rs.tdwg.org/dwc/terms/tectonicUnits</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -31357,7 +31357,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/toDigitalSpecimen">http://rs.tdwg.org/dwc/iri/toDigitalSpecimen</a></td>
+			<td><a href="#dwciri_toDigitalSpecimen">http://rs.tdwg.org/dwc/iri/toDigitalSpecimen</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -31403,7 +31403,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/totalAreaSampledUnit">http://rs.tdwg.org/eco/terms/totalAreaSampledUnit</a></td>
+			<td><a href="#eco_totalAreaSampledUnit">http://rs.tdwg.org/eco/terms/totalAreaSampledUnit</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -31465,7 +31465,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/totalAreaSampledUnit">http://rs.tdwg.org/eco/iri/totalAreaSampledUnit</a></td>
+			<td><a href="#ecoiri_totalAreaSampledUnit">http://rs.tdwg.org/eco/iri/totalAreaSampledUnit</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -31515,7 +31515,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/totalAreaSampledValue">http://rs.tdwg.org/eco/terms/totalAreaSampledValue</a></td>
+			<td><a href="#eco_totalAreaSampledValue">http://rs.tdwg.org/eco/terms/totalAreaSampledValue</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -31569,7 +31569,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/toTaxon">http://rs.tdwg.org/dwc/iri/toTaxon</a></td>
+			<td><a href="#dwciri_toTaxon">http://rs.tdwg.org/dwc/iri/toTaxon</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -31611,7 +31611,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/treatments">http://rs.tdwg.org/dwc/terms/treatments</a></td>
+			<td><a href="#dwc_treatments">http://rs.tdwg.org/dwc/terms/treatments</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -31657,7 +31657,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/tribe">http://rs.tdwg.org/dwc/terms/tribe</a></td>
+			<td><a href="#dwc_tribe">http://rs.tdwg.org/dwc/terms/tribe</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -31706,7 +31706,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://purl.org/dc/elements/1.1/type">http://purl.org/dc/elements/1.1/type</a></td>
+			<td><a href="#dc_type">http://purl.org/dc/elements/1.1/type</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -31771,7 +31771,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://purl.org/dc/terms/type">http://purl.org/dc/terms/type</a></td>
+			<td><a href="#dcterms_type">http://purl.org/dc/terms/type</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -31833,7 +31833,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/typeOfType">http://rs.tdwg.org/dwc/terms/typeOfType</a></td>
+			<td><a href="#dwc_typeOfType">http://rs.tdwg.org/dwc/terms/typeOfType</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -31886,7 +31886,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/typeStatus">http://rs.tdwg.org/dwc/terms/typeStatus</a></td>
+			<td><a href="#dwc_typeStatus">http://rs.tdwg.org/dwc/terms/typeStatus</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -31939,7 +31939,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/typeStatus">http://rs.tdwg.org/dwc/iri/typeStatus</a></td>
+			<td><a href="#dwciri_typeStatus">http://rs.tdwg.org/dwc/iri/typeStatus</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -31985,7 +31985,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/typifiedName">http://rs.tdwg.org/dwc/terms/typifiedName</a></td>
+			<td><a href="#dwc_typifiedName">http://rs.tdwg.org/dwc/terms/typifiedName</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -32039,7 +32039,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/terms/uncalibratedChronometricAge">http://rs.tdwg.org/chrono/terms/uncalibratedChronometricAge</a></td>
+			<td><a href="#chrono_uncalibratedChronometricAge">http://rs.tdwg.org/chrono/terms/uncalibratedChronometricAge</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -32085,7 +32085,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/UsagePolicy">http://rs.tdwg.org/dwc/terms/UsagePolicy</a></td>
+			<td><a href="#dwc_UsagePolicy">http://rs.tdwg.org/dwc/terms/UsagePolicy</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -32131,7 +32131,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/usagePolicyID">http://rs.tdwg.org/dwc/terms/usagePolicyID</a></td>
+			<td><a href="#dwc_usagePolicyID">http://rs.tdwg.org/dwc/terms/usagePolicyID</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -32177,7 +32177,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/verbatimAssertionType">http://rs.tdwg.org/dwc/terms/verbatimAssertionType</a></td>
+			<td><a href="#dwc_verbatimAssertionType">http://rs.tdwg.org/dwc/terms/verbatimAssertionType</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -32231,7 +32231,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/terms/verbatimChronometricAge">http://rs.tdwg.org/chrono/terms/verbatimChronometricAge</a></td>
+			<td><a href="#chrono_verbatimChronometricAge">http://rs.tdwg.org/chrono/terms/verbatimChronometricAge</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -32285,7 +32285,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/verbatimCoordinates">http://rs.tdwg.org/dwc/terms/verbatimCoordinates</a></td>
+			<td><a href="#dwc_verbatimCoordinates">http://rs.tdwg.org/dwc/terms/verbatimCoordinates</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -32338,7 +32338,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/verbatimCoordinateSystem">http://rs.tdwg.org/dwc/terms/verbatimCoordinateSystem</a></td>
+			<td><a href="#dwc_verbatimCoordinateSystem">http://rs.tdwg.org/dwc/terms/verbatimCoordinateSystem</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -32393,7 +32393,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/verbatimCoordinateSystem">http://rs.tdwg.org/dwc/iri/verbatimCoordinateSystem</a></td>
+			<td><a href="#dwciri_verbatimCoordinateSystem">http://rs.tdwg.org/dwc/iri/verbatimCoordinateSystem</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -32443,7 +32443,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/verbatimDepth">http://rs.tdwg.org/dwc/terms/verbatimDepth</a></td>
+			<td><a href="#dwc_verbatimDepth">http://rs.tdwg.org/dwc/terms/verbatimDepth</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -32485,7 +32485,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/verbatimElevation">http://rs.tdwg.org/dwc/terms/verbatimElevation</a></td>
+			<td><a href="#dwc_verbatimElevation">http://rs.tdwg.org/dwc/terms/verbatimElevation</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -32531,7 +32531,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/verbatimEventDate">http://rs.tdwg.org/dwc/terms/verbatimEventDate</a></td>
+			<td><a href="#dwc_verbatimEventDate">http://rs.tdwg.org/dwc/terms/verbatimEventDate</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -32582,7 +32582,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/verbatimIdentification">http://rs.tdwg.org/dwc/terms/verbatimIdentification</a></td>
+			<td><a href="#dwc_verbatimIdentification">http://rs.tdwg.org/dwc/terms/verbatimIdentification</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -32648,7 +32648,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/verbatimLabel">http://rs.tdwg.org/dwc/terms/verbatimLabel</a></td>
+			<td><a href="#dwc_verbatimLabel">http://rs.tdwg.org/dwc/terms/verbatimLabel</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -32702,7 +32702,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/verbatimLatitude">http://rs.tdwg.org/dwc/terms/verbatimLatitude</a></td>
+			<td><a href="#dwc_verbatimLatitude">http://rs.tdwg.org/dwc/terms/verbatimLatitude</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -32752,7 +32752,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/verbatimLocality">http://rs.tdwg.org/dwc/terms/verbatimLocality</a></td>
+			<td><a href="#dwc_verbatimLocality">http://rs.tdwg.org/dwc/terms/verbatimLocality</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -32798,7 +32798,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/verbatimLongitude">http://rs.tdwg.org/dwc/terms/verbatimLongitude</a></td>
+			<td><a href="#dwc_verbatimLongitude">http://rs.tdwg.org/dwc/terms/verbatimLongitude</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -32848,7 +32848,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/verbatimMass">http://rs.tdwg.org/dwc/terms/verbatimMass</a></td>
+			<td><a href="#dwc_verbatimMass">http://rs.tdwg.org/dwc/terms/verbatimMass</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -32898,7 +32898,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/verbatimMeasurementType">http://rs.tdwg.org/dwc/terms/verbatimMeasurementType</a></td>
+			<td><a href="#dwc_verbatimMeasurementType">http://rs.tdwg.org/dwc/terms/verbatimMeasurementType</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -32952,7 +32952,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/verbatimScientificNameRank">http://rs.tdwg.org/dwc/terms/verbatimScientificNameRank</a></td>
+			<td><a href="#dwc_verbatimScientificNameRank">http://rs.tdwg.org/dwc/terms/verbatimScientificNameRank</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -32998,7 +32998,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/verbatimSiteDescriptions">http://rs.tdwg.org/eco/terms/verbatimSiteDescriptions</a></td>
+			<td><a href="#eco_verbatimSiteDescriptions">http://rs.tdwg.org/eco/terms/verbatimSiteDescriptions</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -33052,7 +33052,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/verbatimSiteNames">http://rs.tdwg.org/eco/terms/verbatimSiteNames</a></td>
+			<td><a href="#eco_verbatimSiteNames">http://rs.tdwg.org/eco/terms/verbatimSiteNames</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -33109,7 +33109,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/verbatimSRS">http://rs.tdwg.org/dwc/terms/verbatimSRS</a></td>
+			<td><a href="#dwc_verbatimSRS">http://rs.tdwg.org/dwc/terms/verbatimSRS</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -33167,7 +33167,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/verbatimSRS">http://rs.tdwg.org/dwc/iri/verbatimSRS</a></td>
+			<td><a href="#dwciri_verbatimSRS">http://rs.tdwg.org/dwc/iri/verbatimSRS</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -33213,7 +33213,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/verbatimTargetScope">http://rs.tdwg.org/eco/terms/verbatimTargetScope</a></td>
+			<td><a href="#eco_verbatimTargetScope">http://rs.tdwg.org/eco/terms/verbatimTargetScope</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -33271,7 +33271,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/verbatimTaxonRank">http://rs.tdwg.org/dwc/terms/verbatimTaxonRank</a></td>
+			<td><a href="#dwc_verbatimTaxonRank">http://rs.tdwg.org/dwc/terms/verbatimTaxonRank</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -33326,7 +33326,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/vernacularName">http://rs.tdwg.org/dwc/terms/vernacularName</a></td>
+			<td><a href="#dwc_vernacularName">http://rs.tdwg.org/dwc/terms/vernacularName</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -33382,7 +33382,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/verticalDatum">http://rs.tdwg.org/dwc/terms/verticalDatum</a></td>
+			<td><a href="#dwc_verticalDatum">http://rs.tdwg.org/dwc/terms/verticalDatum</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -33446,7 +33446,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/verticalDatum">http://rs.tdwg.org/dwc/iri/verticalDatum</a></td>
+			<td><a href="#dwciri_verticalDatum">http://rs.tdwg.org/dwc/iri/verticalDatum</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -33496,7 +33496,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/vitality">http://rs.tdwg.org/dwc/terms/vitality</a></td>
+			<td><a href="#dwc_vitality">http://rs.tdwg.org/dwc/terms/vitality</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -33560,7 +33560,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/iri/vitality">http://rs.tdwg.org/dwc/iri/vitality</a></td>
+			<td><a href="#dwciri_vitality">http://rs.tdwg.org/dwc/iri/vitality</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -33618,7 +33618,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/voucherInstitutions">http://rs.tdwg.org/eco/terms/voucherInstitutions</a></td>
+			<td><a href="#eco_voucherInstitutions">http://rs.tdwg.org/eco/terms/voucherInstitutions</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -33676,7 +33676,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/waterBody">http://rs.tdwg.org/dwc/terms/waterBody</a></td>
+			<td><a href="#dwc_waterBody">http://rs.tdwg.org/dwc/terms/waterBody</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -33731,7 +33731,7 @@ No properties are currently organized in this class.
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwc/terms/year">http://rs.tdwg.org/dwc/terms/year</a></td>
+			<td><a href="#dwc_year">http://rs.tdwg.org/dwc/terms/year</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>

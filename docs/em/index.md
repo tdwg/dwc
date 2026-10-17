@@ -79,7 +79,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwcem/values/e">http://rs.tdwg.org/dwcem/values/e</a></td>
+			<td><a href="#dwcem_e">http://rs.tdwg.org/dwcem/values/e</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -117,7 +117,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwcem/values/e001">http://rs.tdwg.org/dwcem/values/e001</a></td>
+			<td><a href="#dwcem_e001">http://rs.tdwg.org/dwcem/values/e001</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -163,7 +163,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwcem/values/e002">http://rs.tdwg.org/dwcem/values/e002</a></td>
+			<td><a href="#dwcem_e002">http://rs.tdwg.org/dwcem/values/e002</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -217,7 +217,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwcem/values/e003">http://rs.tdwg.org/dwcem/values/e003</a></td>
+			<td><a href="#dwcem_e003">http://rs.tdwg.org/dwcem/values/e003</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -263,7 +263,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwcem/values/e004">http://rs.tdwg.org/dwcem/values/e004</a></td>
+			<td><a href="#dwcem_e004">http://rs.tdwg.org/dwcem/values/e004</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -313,7 +313,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwcem/values/e005">http://rs.tdwg.org/dwcem/values/e005</a></td>
+			<td><a href="#dwcem_e005">http://rs.tdwg.org/dwcem/values/e005</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -359,7 +359,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwcem/values/e006">http://rs.tdwg.org/dwcem/values/e006</a></td>
+			<td><a href="#dwcem_e006">http://rs.tdwg.org/dwcem/values/e006</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -405,7 +405,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwcem/values/e007">http://rs.tdwg.org/dwcem/values/e007</a></td>
+			<td><a href="#dwcem_e007">http://rs.tdwg.org/dwcem/values/e007</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
