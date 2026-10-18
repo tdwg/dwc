@@ -25,8 +25,8 @@ URI пространства имен
 
 {previous_version_slot}
 
-Аннотация
-: Термин DwC `establishmentMeans` (путь появления, путь установления) даёт информацию о том, были ли организмы занесены в определённое место и время в результате прямой или косвенной деятельности современных людей. Словарь Degree of Establishment (степень акклиматизации) содержит термины, которые следует использовать в качестве значений для `dwc:degreeOfEstablishment` и `dwciri:degreeOfEstablishment`.
+Abstract
+: The Darwin Core term `dwc:establishmentMeans` provides information about whether a `dwc:Organism` has been introduced to a given place and time through the direct or indirect activity of modern humans. Словарь Degree of Establishment (степень акклиматизации) содержит термины, которые следует использовать в качестве значений для `dwc:degreeOfEstablishment` и `dwciri:degreeOfEstablishment`.
 
 Авторы
 : {contributors}
@@ -38,7 +38,7 @@ URI пространства имен
 
 ## 1. Введение
 
-В документ включены термины, предназначенные для использования в словаре `degreeOfEstablishment` (степень акклиматизации). Подробности и обоснование см. в Groom et al. 2019. Расширение Darwin Core для исследования и управления чужеродными видами. <https://doi.org/10.3897/biss.3.38084>
+This document includes terms intended to be used as controlled values for the Darwin Core properties `dwc:establishmentMeans` and `dwciri:establishmentMeans`. Подробности и обоснование см. в Groom et al. 2019. Расширение Darwin Core для исследования и управления чужеродными видами. <https://doi.org/10.3897/biss.3.38084>
 
 ### 1.1 Статус содержания документа
 
@@ -46,10 +46,10 @@ URI пространства имен
 
 ### 1.2 Ключевые слова RFC 2119
 
-Ключевые слова "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", и "OPTIONAL" в настоящем документе следует понимать так, как описано в [RFC 2119](https://tools.ietf.org/html/rfc2119).
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [BCP 14](https://www.rfc-editor.org/info/bcp14) [[RFC 2119]](https://datatracker.ietf.org/doc/html/rfc2119) and [[RFC 8174]](https://datatracker.ietf.org/doc/html/rfc8174) when, and only when, they appear in all capitals, as shown here.
 
 ## 2 Применение терминов
 
-В соответствии с требованиями [Раздела 1.4.3 руководства Darwin Core RDF](https://dwc.tdwg.org/rdf/#143-use-of-darwin-core-terms-in-rdf-normative) в качестве значений `dwciri:degreeOfEstablishment` ДОЛЖНЫ использоваться IRI терминов. Строки контролируемых значений ДОЛЖНЫ использоваться в качестве значений `dwc:degreeOfEstablishment`.
+Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#143-use-of-darwin-core-terms-in-rdf-normative), term IRIs MUST be used as values of `dwciri:establishmentMeans`. Строки контролируемых значений ДОЛЖНЫ использоваться в качестве значений `dwc:degreeOfEstablishment`.
 
 ## 3 Индексы терминов
