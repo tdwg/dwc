@@ -14,27 +14,23 @@
         "text": "---"
       },
       {
-        "text": "定年延伸資料集",
-        "href": "https://chrono.tdwg.org/list/"
+        "text": "",
+        "href": ""
       },
       {
-        "text": "洪堡延伸資料集",
-        "href": "https://eco.tdwg.org/list/"
+        "text": "",
+        "href": ""
       },
       {
-        "text": "---"
+        "text": "",
+        "href": ""
       },
       {
-        "text": "建立方法控制詞彙",
-        "href": "/zh-Hant/em/"
+        "text": ""
       },
       {
-        "text": "建立程度控制詞彙",
-        "href": "/zh-Hant/doe/"
-      },
-      {
-        "text": "路徑控制詞彙",
-        "href": "/zh-Hant/pw/"
+        "text": "",
+        "href": ""
       }
     ]
   },
@@ -46,58 +42,106 @@
         "href": "/zh-Hant/terms/"
       },
       {
-        "text": "---"
+        "text": "",
+        "href": ""
       },
       {
-        "text": "定年延伸資料集快速參照",
-        "href": "https://chrono.tdwg.org/terms/"
-      },
-      {
-        "text": "洪堡延伸資料集快速參照",
-        "href": "https://eco.tdwg.org/terms/"
-      },
-      {
-        "text": "---"
+        "text": ""
       },
       {
         "text": "",
-        "href": "/zh-Hant/cm/"
+        "href": ""
       },
       {
         "text": "",
-        "href": "/zh-Hant/simple/"
+        "href": ""
       },
       {
         "text": "",
-        "href": "/zh-Hant/text/"
+        "href": ""
+      },
+      {
+        "text": ""
       },
       {
         "text": "",
-        "href": "/zh-Hant/dp/"
+        "href": ""
       },
       {
         "text": "",
-        "href": "/zh-Hant/rdf/"
+        "href": ""
       },
       {
         "text": "",
-        "href": "/zh-Hant/xml/"
+        "href": ""
       },
       {
         "text": "",
-        "href": "/zh-Hant/namespace/"
+        "href": ""
       },
       {
-        "text": "---"
+        "text": ""
       },
       {
         "text": "",
-        "href": "https://github.com/tdwg/dwc-qa/blob/master/README.md"
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
       }
     ]
   },
   {
     "text": "GitHub",
     "href": "https://github.com/tdwg/dwc"
+  },
+  {
+    "text": "文A",
+    "menu": [
+      {
+        "text": "English",
+        "href": "/zh-Hant/"
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      }
+    ]
   }
 ]
