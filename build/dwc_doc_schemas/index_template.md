@@ -47,7 +47,7 @@ This document is targeted toward those who want to share biodiversity informatio
 
 ## 3 DwC-A table schemas
 
-Below you will find the latest versions of all DwC-A schemas supported by the Darwin Core Maintenance Group. These are non-normative parts of the Darwin Core standard. You can find historical versions of maintained schemas at http://rs.tdwg.org/dwc-a/schemas/.
+Below you will find the latest versions of all DwC-A schemas supported by the Darwin Core Maintenance Group. These are non-normative parts of the Darwin Core standard. You can find historical versions of maintained schemas at <http://rs.tdwg.org/dwc-a/schemas/>.
 
 ### 3.1 DwC-A core tables
 
