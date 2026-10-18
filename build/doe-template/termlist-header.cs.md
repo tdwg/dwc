@@ -1,12 +1,7 @@
-# Seznam termínů Řízeného slovníku Stupňů zavlečení
+# {document_title}
 
-Nadpis: Seznam termínů Řízeného slovníku Stupňů zavlečení
-
-URI jmenného prostoru
-: <http://rs.tdwg.org/dwcdoe/values/>
-
-Preferovaná zkratka jmenného prostoru
-: dwcdoe:
+Title
+: {document_title}
 
 Datum vydání verze
 : {ratification_date}
@@ -17,16 +12,16 @@ Datum vytvoření
 Část standardu TDWG
 : <{standard_iri}>
 
-Tato verze dokumentu
+Tato verze
 : <{current_iri}{ratification_date}>
 
-Aktuální verze dokumentu
+Aktuální verze
 : <{current_iri}>
 
 {previous_version_slot}
 
 Abstrakt
-: Darwin Core termín `degreeOfEstablishment` poskytuje informace o tom, do jaké míry organismus přežívá, rozmnožuje se a rozšiřuje svůj areál v daném místě a čase. Řízený slovník Stupňů zavlečení poskytuje termíny, které by se měly používat jako hodnoty pro `dwc:degreeOfEstablishment` a `dwciri:degreeOfEstablishment`.
+: {abstract}
 
 Přispěvatelé
 : {contributors}
@@ -39,7 +34,7 @@ Bibliografická citace
 
 ## 1. Úvod
 
-Tento dokument obsahuje termíny určené k použití jako řízená hodnota pro termíny Darwin Core s místním názvem `degreeOfEstablishment`. Podrobnosti a zdůvodnění viz Groom et al. 2019. Zlepšení Darwin Core pro výzkum a řízení nepůvodních druhů. <https://doi.org/10.3897/biss.3.38084>
+This document includes terms intended to be used as a controlled value for Darwin Core terms with local name `dwc:degreeOfEstablishment`. Podrobnosti a zdůvodnění viz Groom et al. 2019. Zlepšení Darwin Core pro výzkum a řízení nepůvodních druhů. <https://doi.org/10.3897/biss.3.38084>
 
 ### 1.1 Status obsahu tohoto dokumentu
 
