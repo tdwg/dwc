@@ -26,8 +26,8 @@ Esta versión del documento
 
 {previous_version_slot}
 
-Resumen
-: El término Darwin Core `establishmentMeans` provee información sobre si un organismo u organismos han sido introducidos a un lugar y tiempo dado a través de la actividad directa o indirecta de humanos modernos. El vocabulario controlado para los Medios de Establecimiento ofrece los términos que deben utilizarse como valores para `dwc:establishmentMeans` y `dwciri:establishmentMeans`.
+Abstract
+: The Darwin Core term `dwc:establishmentMeans` provides information about whether a `dwc:Organism` has been introduced to a given place and time through the direct or indirect activity of modern humans. El vocabulario controlado para los Medios de Establecimiento ofrece los términos que deben utilizarse como valores para `dwc:establishmentMeans` y `dwciri:establishmentMeans`.
 
 Colaboradores
 : {contributors}
@@ -40,7 +40,7 @@ Cita bibliográfica
 
 ## 1 Introducción
 
-Este documento incluye términos destinados a ser utilizados como valores controlados para los términos de Darwin Core con nombre local `establishmentMeans`. Para más detalles y justificación, véase Groom et al. 2019. Improving Darwin Core for research and management of alien species. <https://doi.org/10.3897/biss.3.38084>
+This document includes terms intended to be used as controlled values for the Darwin Core properties `dwc:establishmentMeans` and `dwciri:establishmentMeans`. Para más detalles y justificación, véase Groom et al. 2019. Improving Darwin Core for research and management of alien species. <https://doi.org/10.3897/biss.3.38084>
 
 ### 1.1 Estado del contenido de este documento
 
@@ -48,10 +48,10 @@ En la Sección 4, los valores de `Término IRI`, `Definición` y `Valor controla
 
 ### 1.2 Palabras clave RFC 2119
 
-Las palabras clave "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY" y "OPTIONAL" en este documento deben interpretarse como se describe en la [RFC 2119](https://tools.ietf.org/html/rfc2119).
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [BCP 14](https://www.rfc-editor.org/info/bcp14) [[RFC 2119]](https://datatracker.ietf.org/doc/html/rfc2119) and [[RFC 8174]](https://datatracker.ietf.org/doc/html/rfc8174) when, and only when, they appear in all capitals, as shown here.
 
 ## 2 Uso de los Términos
 
-Debido a los requisitos de la [Sección 1.4.3 de la Guía RDF Darwin Core](https://dwc.tdwg.org/rdf/#143-use-of-darwin-core-terms-in-rdf-normative), los términos IRIs DEBEN utilizarse como valores de `dwciri:establishmentMeans`. Las cadenas de texto con valores controlados DEBEN utilizarse como valores de `dwc:establishmentMeans`.
+Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#143-use-of-darwin-core-terms-in-rdf-normative), term IRIs MUST be used as values of `dwciri:establishmentMeans`. Las cadenas de texto con valores controlados DEBEN utilizarse como valores de `dwc:establishmentMeans`.
 
 ## 3 Índice de Términos
