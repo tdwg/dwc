@@ -1,3 +1,8 @@
+---
+layout: qrg
+toc: true
+---
+
 {#
 This template is NOT used by jekyll, but by the Darwin Core build script build-termlist.py
 to create the terms/index.md file, which mostly contains html.
@@ -7,13 +12,15 @@ to create the terms/index.md file, which mostly contains html.
 
 This document is intended to be an easy-to-read reference of the currently recommended terms maintained as part of the [Darwin Core standard](https://www.tdwg.org/standards/dwc/) and is maintained by the [Darwin Core Maintenance Group](https://www.tdwg.org/community/dwc/).
 
-**Potřebujete pomoc?** Více informací o používání Darwin Core najdete na stránce [Darwin Core Questions & Answers](https://github.com/tdwg/dwc-qa/blob/master/README.md). Máte další otázky? Odešlete novou otázku (dotaz/problém) na [dwc-qa issues page in GitHub](https://github.com/tdwg/dwc-qa/issues) nebo použijte [formulář](https://tinyurl.com/darwin-qa). Informace o tom, [jak citovat Darwin Core](https://dwc.tdwg.org/terms/#cite-darwin-core), naleznete na konci tohoto dokumentu."
+**Potřebujete pomoc?** Více informací o používání Darwin Core najdete na stránce [Darwin Core Questions & Answers](https://github.com/tdwg/dwc-qa/blob/master/README.md). Máte další otázky? Odešlete novou otázku (dotaz/problém) na [dwc-qa issues page in GitHub](https://github.com/tdwg/dwc-qa/issues) nebo použijte [formulář](https://tinyurl.com/darwin-qa).
+
+**Need to cite Darwin Core?** See the [Cite Darwin Core](https://dwc.tdwg.org/terms/#cite-darwin-core) section at the bottom of this document.
 
 **Chcete přispět?** Informace o tom, jak přispět k Darwin Core Standard, včetně toho, jak navrhovat změny, najdete v [Pokynech pro přispívání](https://github.com/tdwg/dwc/blob/master/.github/CONTRIBUTING.md).
 
-Tato stránka není součástí normy, ale kombinuje normativní názvy a definice termínů s nenormativními komentáři a příklady, které mají pomoci lidem používat termíny konzistentně. Definice, komentáře a příklady mohou obsahovat zkratky jmenného prostoru (např. "dwc:"). Ty jsou uvedeny proto, aby bylo zřejmé, že význam slova, ke kterému je připojen, znamená zcela konkrétně termín definovaný v daném jmenném prostoru. Tedy dwc:Event znamená Událost podle definice Darwin Core na adrese https://dwc.tdwg.org/terms/#event. Termíny psané velkými písmeny, které následují za zkratkou jmenného prostoru, např. dwc:Occurrence, jsou termíny třídy Darwin Core, což je speciální kategorie termínů, která se používá k seskupování množin termínů vlastností (termíny s malými písmeny, které následují za zkratkou jmenného prostoru, např. dwc:eventID) pro přehlednost. Komplexní metadata pro současné a zastaralé termíny v čitelné podobě najdete v dokumentu [Seznam termínů Darwin Core](../list/).
+This page is not part of the standard, but combines the normative term names and definitions with the non-normative notes and examples that are meant to help people to use the terms consistently. Definitions, notes, and examples may include namespace abbreviations (e.g., "dwc:"). Ty jsou uvedeny proto, aby bylo zřejmé, že význam slova, ke kterému je připojen, znamená zcela konkrétně termín definovaný v daném jmenném prostoru. Tedy dwc:Event znamená Událost podle definice Darwin Core na adrese https://dwc.tdwg.org/terms/#event. Capitalized terms that follow a namespace abbreviation, such as dwc:Occurrence, are class terms, which are a special category of terms used to group sets of property terms (terms that begin with lower case names that follow the namespace abbreviation, e.g., dwc:eventID) for convenience. Comprehensive metadata for current and obsolete terms from Darwin Core and borrowed standards are found in the document [List of Darwin Core terms](../list/).
 
-Další [soubory obsahující pouze aktuální názvy termínů](https://github.com/tdwg/dwc/tree/master/dist) a [soubor s úplnou historií termínů](https://github.com/tdwg/dwc/blob/master/vocabulary/term_versions.csv) lze nalézt v [úložišti Darwin Core](https://github.com/tdwg/dwc).
+Additional resources can be found in the [Darwin Core GitHub repository](https://github.com/tdwg/dwc), including a [directory](https://github.com/tdwg/dwc/tree/master/dist) of CSV header and list of terms files for Darwin Core Archive Cores and Extensions.
 
 {% for class_group in class_groups %}
 
