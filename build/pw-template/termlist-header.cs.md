@@ -26,8 +26,8 @@ Aktuální verze dokumentu
 
 {previous_version_slot}
 
-Abstrakt
-: Darwin Core termín "pathway" poskytuje informace o procesu, kterým se organismus dostal na dané místo v daném čase. Řízený slovník Pathway poskytuje termíny, které by se měly používat jako hodnoty pro `dwc:pathway` a `dwciri:pathway`.
+Abstract
+: The Darwin Core term `dwc:pathway` provides information about the process by which a `dwc:Organism` came to be in a given place at a given time. Řízený slovník Pathway poskytuje termíny, které by se měly používat jako hodnoty pro `dwc:pathway` a `dwciri:pathway`.
 
 Přispěvatelé
 : {contributors}
@@ -40,7 +40,7 @@ Bibliografická citace
 
 ## 1. Úvod
 
-Tento dokument obsahuje termíny určené k použití jako řízená hodnota pro termíny Darwin Core s místním názvem `pathway`. Podrobnosti a zdůvodnění viz Groom et al. 2019. Zlepšení Darwin Core pro výzkum a řízení nepůvodních druhů. <https://doi.org/10.3897/biss.3.38084>
+This document includes terms intended to be used as controlled values for the Darwin Core properties `dwc:pathway` and `dwciri:pathway`. Podrobnosti a zdůvodnění viz Groom et al. 2019. Zlepšení Darwin Core pro výzkum a řízení nepůvodních druhů. <https://doi.org/10.3897/biss.3.38084>
 
 ### 1.1 Status obsahu tohoto dokumentu
 
@@ -48,10 +48,10 @@ V oddíle 4 jsou hodnoty `Term IRI`, `Definice` a `Kontrolovaná hodnota` normat
 
 ### 1.2 Klíčová slova RFC 2119
 
-Klíčová slova "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY" a "OPTIONAL" v tomto dokumentu je třeba interpretovat podle popisu v [RFC 2119](https://tools.ietf.org/html/rfc2119).
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [BCP 14](https://www.rfc-editor.org/info/bcp14) [[RFC 2119]](https://datatracker.ietf.org/doc/html/rfc2119) and [[RFC 8174]](https://datatracker.ietf.org/doc/html/rfc8174) when, and only when, they appear in all capitals, as shown here.
 
 ## 2 Použití termínů
 
-Vzhledem k požadavkům [oddílu 1.4.3 Darwin Core RDF Guide](https://dwc.tdwg.org/rdf/#143-use-of-darwin-core-terms-in-rdf-normative) se jako hodnoty `dwciri:pathway` MUSÍ používat termín IRI. Řetězce řízených hodnot MUSÍ být použity jako hodnoty `dwc:pathway`.
+Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#143-use-of-darwin-core-terms-in-rdf-normative), term IRIs MUST be used as values of `dwciri:pathway`. Řetězce řízených hodnot MUSÍ být použity jako hodnoty `dwc:pathway`.
 
 ## 3 Index termínů
