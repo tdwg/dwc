@@ -14,27 +14,23 @@
         "text": "---"
       },
       {
-        "text": "Extension Âge Chronométrique",
-        "href": "https://chrono.tdwg.org/list/"
+        "text": "",
+        "href": ""
       },
       {
-        "text": "Extension Humboldt",
-        "href": "https://eco.tdwg.org/list/"
+        "text": "",
+        "href": ""
       },
       {
-        "text": "---"
+        "text": "",
+        "href": ""
       },
       {
-        "text": "Vocabulaire contrôlé des Moyens d'Implantation",
-        "href": "/fr/em/"
+        "text": ""
       },
       {
-        "text": "Vocabulaire contrôlé du Degré d'Implantation",
-        "href": "/fr/doe/"
-      },
-      {
-        "text": "Vocabulaire contrôlé de la Voie d'Accès",
-        "href": "/fr/pw/"
+        "text": "",
+        "href": ""
       }
     ]
   },
@@ -46,58 +42,106 @@
         "href": "/fr/terms/"
       },
       {
-        "text": "---"
+        "text": "",
+        "href": ""
       },
       {
-        "text": "Guide de référence rapide de l'extension Âge Chronométrique",
-        "href": "https://chrono.tdwg.org/terms/"
-      },
-      {
-        "text": "Guide de référence rapide de l'extension Humboldt",
-        "href": "https://eco.tdwg.org/terms/"
-      },
-      {
-        "text": "---"
+        "text": ""
       },
       {
         "text": "",
-        "href": "/fr/cm/"
+        "href": ""
       },
       {
         "text": "",
-        "href": "/fr/simple/"
+        "href": ""
       },
       {
         "text": "",
-        "href": "/fr/text/"
+        "href": ""
+      },
+      {
+        "text": ""
       },
       {
         "text": "",
-        "href": "/fr/dp/"
+        "href": ""
       },
       {
         "text": "",
-        "href": "/fr/rdf/"
+        "href": ""
       },
       {
         "text": "",
-        "href": "/fr/xml/"
+        "href": ""
       },
       {
         "text": "",
-        "href": "/fr/namespace/"
+        "href": ""
       },
       {
-        "text": "---"
+        "text": ""
       },
       {
         "text": "",
-        "href": "https://github.com/tdwg/dwc-qa/blob/master/README.md"
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
       }
     ]
   },
   {
     "text": "GitHub",
     "href": "https://github.com/tdwg/dwc"
+  },
+  {
+    "text": "文A",
+    "menu": [
+      {
+        "text": "English",
+        "href": "/fr/"
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      }
+    ]
   }
 ]
