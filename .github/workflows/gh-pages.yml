@@ -27,10 +27,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
-
+        uses: actions/checkout@v5
       - name: Setup python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: 3.12
           cache: 'pip'
@@ -41,7 +40,6 @@ jobs:
       - name: Create Python-generated pages
         run: |
           cd build && python3 build-language-menu.py prod && python3 build-webpages.py
-
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Build with Jekyll
