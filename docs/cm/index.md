@@ -85,7 +85,7 @@ Throughout the text, when a class is referred to in the plural, this is done by 
 
 The Darwin Core Conceptual Model is meant to facilitate understanding of established relationships between Darwin Core classes. This document relies on diagrams of these relationships with accompanying descriptions. 
 
-Throughout the diagrams in this document, classes are referred to with the labels recommended by Darwin Core in bold (e.g., **Material Entity** for the class [http://rs.tdwg.org/dwc/terms/Material Entity](http://rs.tdwg.org/dwc/terms/Material Entity)). In the narrative, classes are referred to by their names in italics, (e.g., *Material Entity*). Thus, for example, when *Organism* is used, it is meant precisely in the sense of [http://rs.tdwg.org/dwc/terms/Organism](http://rs.tdwg.org/dwc/terms/Organism).
+Throughout the diagrams in this document, classes are referred to with the labels recommended by Darwin Core in bold (e.g., **Material Entity** for the class [http://rs.tdwg.org/dwc/terms/MaterialEntity](http://rs.tdwg.org/dwc/terms/MaterialEntity)). In the narrative, classes are referred to by their names in italics, (e.g., *Material Entity*). Thus, for example, when *Organism* is used, it is meant precisely in the sense of [http://rs.tdwg.org/dwc/terms/Organism](http://rs.tdwg.org/dwc/terms/Organism).
 
 Figure 1 provides an overview of the DwC-CM. To avoid clutter, the nature of the relationships (directionality, cardinality and predicates) are omitted. This diagram also omits the vast number of possible relationships between the classes *Agent*, *Media Entity*, and *Protocol* to all of the other classes in the model. Relationships are described in detail in the thematic sections that follow the Overview. 
 
