@@ -26,7 +26,8 @@ URI пространства имен
 
 Предыдущая версия {previous_version_slot}
 
-Аннотация: Термин Darwin Core "путь" (pathway) предоставляет информацию о процессе, в результате которого Организм (Organism) оказался в определённом месте в определённое время. Контролируемый словарь термина Путь (Pathway) содержит допустимые значения для полей dwc:pathway и dwciri:pathway.
+Abstract
+: The Darwin Core term `dwc:pathway` provides information about the process by which a `dwc:Organism` came to be in a given place at a given time. Контролируемый словарь термина Путь (Pathway) содержит допустимые значения для полей dwc:pathway и dwciri:pathway.
 
 Авторы: {contributors}
 
@@ -36,7 +37,7 @@ URI пространства имен
 
 ## 1. Введение
 
-Настоящий документ содержит значения (контролируемый словарь), которые должны использоваться для терминов Darwin Core с локальным именем `pathway` (`путь`). Подробности и обоснование см. в Groom et al. 2019. Расширение Darwin Core для исследования и управления чужеродными видами. <https://doi.org/10.3897/biss.3.38084>
+This document includes terms intended to be used as controlled values for the Darwin Core properties `dwc:pathway` and `dwciri:pathway`. Подробности и обоснование см. в Groom et al. 2019. Расширение Darwin Core для исследования и управления чужеродными видами. <https://doi.org/10.3897/biss.3.38084>
 
 ### 1.1 Статус содержания документа
 
@@ -44,10 +45,10 @@ URI пространства имен
 
 ### 1.2 Ключевые слова RFC 2119
 
-Ключевые слова "MUST" (ОБЯЗАТЕЛЬНО), "MUST NOT" (НЕ ДОПУСКАЕТСЯ), "REQUIRED" (ТРЕБУЕТСЯ), "SHALL" (ДОЛЖЕН), "SHALL NOT" (НЕ ДОЛЖЕН), "SHOULD" (СЛЕДУЕТ), "SHOULD NOT" (НЕ СЛЕДУЕТ), "RECOMMENDED" (РЕКОМЕНДУЕТСЯ), "MAY" (МОЖЕТ) и "OPTIONAL" (НЕОБЯЗАТЕЛЬНО) должны толковаться в соответствии с RFC 2119. [RFC 2119](https://tools.ietf.org/html/rfc2119).
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [BCP 14](https://www.rfc-editor.org/info/bcp14) [[RFC 2119]](https://datatracker.ietf.org/doc/html/rfc2119) and [[RFC 8174]](https://datatracker.ietf.org/doc/html/rfc8174) when, and only when, they appear in all capitals, as shown here.
 
 ## 2 Применение терминов
 
-Согласно требованиям Раздела [1.4.3 Руководства по Darwin Core RDF] (https://dwc.tdwg.org/rdf/#143-use-of-darwin-core-terms-in-rdf-normative), значениями `dwciri:pathway` ОБЯЗАТЕЛЬНО должны быть IRI терминов. Для `dwc:pathway` ОБЯЗАТЕЛЬНО применение строковых значений, взятых из контролируемого словаря.
+Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#143-use-of-darwin-core-terms-in-rdf-normative), term IRIs MUST be used as values of `dwciri:pathway`. Для `dwc:pathway` ОБЯЗАТЕЛЬНО применение строковых значений, взятых из контролируемого словаря.
 
 ## 3 Указатель терминов
