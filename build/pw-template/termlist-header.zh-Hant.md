@@ -25,8 +25,8 @@
 
 {previous_version_slot}
 
-摘要
-：達爾文核心術語「pathway」提供關於生物體如何在特定時間抵達特定地點的過程資訊。 路徑控制詞彙表提供應作為 「dwc:pathway」和 「dwciri:pathway」值使用的術語。
+Abstract
+: The Darwin Core term `dwc:pathway` provides information about the process by which a `dwc:Organism` came to be in a given place at a given time. 路徑控制詞彙表提供應作為 「dwc:pathway」和 「dwciri:pathway」值使用的術語。
 
 貢獻者
 : {contributors}
@@ -39,7 +39,7 @@
 
 ## 1 引言
 
-本文件包含旨在作為達爾文核心標準術語之控制值使用的術語，其本地名稱為「pathway」。 如需詳細資訊和理由，請參閱 Groom et al. 2019. Improving Darwin Core for research and management of alien species. <https://doi.org/10.3897/biss.3.38084>
+This document includes terms intended to be used as controlled values for the Darwin Core properties `dwc:pathway` and `dwciri:pathway`. 如需詳細資訊和理由，請參閱 Groom et al. 2019. Improving Darwin Core for research and management of alien species. <https://doi.org/10.3897/biss.3.38084>
 
 ### 1.1 本文件內容的現況
 
@@ -47,10 +47,10 @@
 
 ### 1.2 RFC 2119 關鍵字
 
-本文件中的關鍵字「必須」、「不得」、「要求」、「應」、「不應」、「應當」、「不應當」、「建議」、「可」、「可選」的定義，應按照 [RFC 2119](https://tools.ietf.org/html/rfc2119) 中的描述進行解釋。
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [BCP 14](https://www.rfc-editor.org/info/bcp14) [[RFC 2119]](https://datatracker.ietf.org/doc/html/rfc2119) and [[RFC 8174]](https://datatracker.ietf.org/doc/html/rfc8174) when, and only when, they appear in all capitals, as shown here.
 
 ## 2 使用條款
 
-根據《達爾文核心 RDF 指南》第 1.4.3 節的要求（https://dwc.tdwg.org/rdf/#143-use-of-darwin-core-terms-in-rdf-normative），「dwciri:pathway」的值必須使用術語 IRI。 「dwc:pathway」的值必須使用控制值字串。
+Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#143-use-of-darwin-core-terms-in-rdf-normative), term IRIs MUST be used as values of `dwciri:pathway`. 「dwc:pathway」的值必須使用控制值字串。
 
 ## 3 術語索引
