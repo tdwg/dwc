@@ -1,7 +1,7 @@
-# Seznam termínů Darwin Core
+# {document_title}
 
-Název
-: Seznam termínů Darwin Core
+Title
+: {document_title}
 
 Datum vydání verze
 : {ratification_date}
@@ -21,7 +21,7 @@ Aktuální verze
 {previous_version_slot}
 
 Abstrakt
-: Darwin Core je slovníkový standard pro předávání informací o biologické rozmanitosti. V tomto dokumentu jsou uvedeny všechny termíny ve jmenných prostorech, které se v současné době používají ve slovníku.
+: {abstract}
 
 Přispěvatelé
 : {contributors}
@@ -34,9 +34,7 @@ Bibliografická citace
 
 ## 1 Úvod (informativní)
 
-Tento dokument obsahuje termíny, které jsou součástí nejnovější verze slovníku Darwin Core (<http://rs.tdwg.org/version/dwc/{ratification_date}>).
-
-This document provides a comprehensive list of terms, from multiple namespaces, that have ever been recommended for use in Darwin Core. The status of some terms, as noted in their metadata, is deprecated or superseded and such terms should no longer be used. Terms from namespaces that contain only deprecated terms are not included in this document, but metadata about those terms can be retrieved by dereferencing their IRIs.
+This document provides a comprehensive list of terms, from multiple namespaces, that are or have been recommended for use in Darwin Core as of this vocabulary version. The status of some terms, as noted in their metadata, is deprecated or superseded. Such terms should no longer be used. Terms from namespaces that contain only deprecated terms are not included in this document, but metadata about those terms can still be retrieved by dereferencing their IRIs.
 
 Zjednodušený seznam, který obsahuje pouze aktuálně doporučené termíny, naleznete v [Stručná referenční příručka Darwin Core](../terms/).
 
@@ -56,16 +54,20 @@ Klíčová slova "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD",
 
 V tomto dokumentu se používají následující zkratky jmenných prostorů:
 
-| zkratka                  | IRI                                                                              |
-| ------------------------ | -------------------------------------------------------------------------------- |
-| ac:      | http://rs.tdwg.org/ac/terms/     |
-| dwc:     | http://rs.tdwg.org/dwc/cs/terms/ |
-| dwciri:  | http://rs.tdwg.org/dwc/cs/iri/   |
-| dc:      | http://purl.org/dc/elements/1.1/ |
-| dcterms: | http://purl.org/dc/terms/                        |
+| zkratka      | IRI                                                                                                         |
+| ------------ | ----------------------------------------------------------------------------------------------------------- |
+| `ac:`        | <http://rs.tdwg.org/ac/terms/>     |
+| `chrono:`    | <http://rs.tdwg.org/chrono/terms/> |
+| `chronoiri:` | <http://rs.tdwg.org/chrono/iri/>   |
+| `dc:`        | <http://purl.org/dc/elements/1.1/> |
+| `dcterms:`   | <http://purl.org/dc/terms/>                        |
+| `dwc:`       | <http://rs.tdwg.org/dwc/terms/>    |
+| `dwciri:`    | <http://rs.tdwg.org/dwc/iri/>      |
+| `eco:`       | <http://rs.tdwg.org/eco/terms/>    |
+| `ecoiri:`    | <http://rs.tdwg.org/eco/iri/>      |
 
 ## 2 Použití termínů
 
-Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#143-use-of-darwin-core-terms-in-rdf-normative), properties in the `dwciri:` namespace MUST be used with IRI values. Properties in the `dwc:` and `dc:` namespaces are generally expected to have string literal values. Values for properties in the `dcterms:` namespace will depend on the details of the term. Podrobnosti naleznete v [oddílu 3 Darwin Core RDF Guide](../rdf/#3-term-reference-normative).
+Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#143-use-of-darwin-core-terms-in-rdf-normative), properties in the `chronoiri:`, `dwciri:` and `ecoiri:` namespaces MUST be used with IRI values. Values for properties in the `chrono:`, `dwc:`, `eco:` and `dc:` namespaces are generally expected to have string literal values. Values for properties in the `ac:` and `dcterms:` namespaces will depend on the details of the individual terms. Podrobnosti naleznete v [oddílu 3 Darwin Core RDF Guide](../rdf/#3-term-reference-normative).
 
 ## 3 Indexy termínů
