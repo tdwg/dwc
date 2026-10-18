@@ -1,3 +1,8 @@
+---
+layout: qrg
+toc: true
+---
+
 {#
 This template is NOT used by jekyll, but by the Darwin Core build script build-termlist.py
 to create the terms/index.md file, which mostly contains html.
@@ -7,13 +12,15 @@ to create the terms/index.md file, which mostly contains html.
 
 Este documento tiene como propósito servir como una referencia de fácil lectura de los términos actualmente recomendados, mantenidos como parte del [estándar Darwin Core](https://www.tdwg.org/standards/dwc/), y es mantenido por el [Grupo de Mantenimiento de Darwin Core](https://www.tdwg.org/community/dwc/).
 
-¿Necesitas ayuda? Lee más sobre cómo usar Darwin Core en el [sitio de Preguntas & Respuestas del Darwin Core](https://github.com/tdwg/dwc-qa/blob/master/README.md). ¿Aún tienes preguntas? Envía una nueva consulta (pregunta o problema) a la [página de dwc-qa issues en GitHub](https://github.com/tdwg/dwc-qa/issues), o utiliza el [formulario correspondiente](https://tinyurl.com/darwin-qa). Consulta al final de este documento para saber [cómo citar Darwin Core](https://dwc.tdwg.org/terms/#cite-darwin-core).
+¿Necesitas ayuda? Lee más sobre cómo usar Darwin Core en el [sitio de Preguntas & Respuestas del Darwin Core](https://github.com/tdwg/dwc-qa/blob/master/README.md). ¿Aún tienes preguntas? Envía una nueva consulta (pregunta o problema) a la [página de dwc-qa issues en GitHub](https://github.com/tdwg/dwc-qa/issues), o utiliza el [formulario correspondiente](https://tinyurl.com/darwin-qa).
+
+**Need to cite Darwin Core?** See the [Cite Darwin Core](https://dwc.tdwg.org/terms/#cite-darwin-core) section at the bottom of this document.
 
 ¿Quieres contribuir? Para obtener información sobre cómo contribuir al estándar Darwin Core, incluyendo cómo proponer cambios, consulta los [Lineamientos para contribuir](https://github.com/tdwg/dwc/blob/master/.github/CONTRIBUTING.md).
 
-Esta página no forma parte del estándar, pero combina los nombres y definiciones de los términos normativos con los comentarios y ejemplos no normativos que están destinados a ayudar a las personas a utilizar los términos de forma coherente. Las definiciones, comentarios y ejemplos pueden incluir abreviaciones de espacios de nombres (e.g., "dwc:"). Estas se incluyen para indicar que el significado de la palabra a la que están asociadas corresponde específicamente con la definición del término en ese espacio de nombres. Por lo tanto, dwc:Event significa Event tal como está definido por Darwin Core en https://dwc.tdwg.org/terms/#event. Los términos capitalizados que siguen a una abreviación de espacio de nombres, como dwc:Occurrence, son términos de clase de Darwin Core, los cuales constituyen una categoría especial de términos usados para agrupar conjuntos de términos de propiedad (términos que comienzan con minúscula y siguen la abreviación del espacio de nombres, por ejemplo, dwc:eventID) por conveniencia. Los metadatos completos de los términos actuales y obsoletos en formato legible para humanos se encuentran en el documento [Lista de términos Darwin Core](../list/).
+This page is not part of the standard, but combines the normative term names and definitions with the non-normative notes and examples that are meant to help people to use the terms consistently. Definitions, notes, and examples may include namespace abbreviations (e.g., "dwc:"). Estas se incluyen para indicar que el significado de la palabra a la que están asociadas corresponde específicamente con la definición del término en ese espacio de nombres. Por lo tanto, dwc:Event significa Event tal como está definido por Darwin Core en https://dwc.tdwg.org/terms/#event. Capitalized terms that follow a namespace abbreviation, such as dwc:Occurrence, are class terms, which are a special category of terms used to group sets of property terms (terms that begin with lower case names that follow the namespace abbreviation, e.g., dwc:eventID) for convenience. Comprehensive metadata for current and obsolete terms from Darwin Core and borrowed standards are found in the document [List of Darwin Core terms](../list/).
 
-[Archivos adicionales con solo los nombres de los términos actuales](https://github.com/tdwg/dwc/tree/master/dist), así como un [archivo con el historial completo de términos](https://github.com/tdwg/dwc/blob/master/vocabulary/term_versions.csv), pueden encontrarse en el [repositorio de Darwin Core](https://github.com/tdwg/dwc).
+Additional resources can be found in the [Darwin Core GitHub repository](https://github.com/tdwg/dwc), including a [directory](https://github.com/tdwg/dwc/tree/master/dist) of CSV header and list of terms files for Darwin Core Archive Cores and Extensions.
 
 {% for class_group in class_groups %}
 
