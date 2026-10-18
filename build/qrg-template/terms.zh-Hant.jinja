@@ -14,11 +14,11 @@ This document is intended to be an easy-to-read reference of the currently recom
 
 **需要協助嗎？** 欲進一步瞭解如何使用達爾文核心標準，請參閱[達爾文核心標準問答網站](https://github.com/tdwg/dwc-qa/blob/master/README.md)。仍有疑問？請將新問題（疑問/狀況）提交至 [GitHub 上的 dwc-qa 問題頁面](https://github.com/tdwg/dwc-qa/issues)，或使用 [表單](https://tinyurl.com/darwin-qa)。
 
-**Need to cite Darwin Core?** See the [Cite Darwin Core](https://dwc.tdwg.org/terms/#cite-darwin-core) section at the bottom of this document.
+**Need to cite Darwin Core?** See the [Cite Darwin Core](#cite-darwin-core) section at the bottom of this document.
 
-**想貢獻心力嗎？** 欲瞭解如何為達爾文核心標準貢獻心力（包括如何提出變更建議），請參閱[貢獻指南](https://github.com/tdwg/dwc/blob/master/.github/CONTRIBUTING.md)。
+**Want to contribute?** For information about how to contribute to the Darwin Core Standard, including how to propose changes, see the [Guidelines for contributing](../contributing/).
 
-This page is not part of the standard, but combines the normative term names and definitions with the non-normative notes and examples that are meant to help people to use the terms consistently. Definitions, notes, and examples may include namespace abbreviations (e.g., "dwc:"). 這些內容的加入，旨在表明該詞所附屬的詞義，非常明確地指涉該命名空間中定義的術語。因此，dwc:Event 指的是由達爾文核心標準在 https://dwc.tdwg.org/terms/#event 定義的 Event。 Capitalized terms that follow a namespace abbreviation, such as dwc:Occurrence, are class terms, which are a special category of terms used to group sets of property terms (terms that begin with lower case names that follow the namespace abbreviation, e.g., dwc:eventID) for convenience. Comprehensive metadata for current and obsolete terms from Darwin Core and borrowed standards are found in the document [List of Darwin Core terms](../list/).
+This page is not part of the standard, but combines the normative term names and definitions with the non-normative notes and examples that are meant to help people to use the terms consistently. Definitions, notes, and examples may include namespace abbreviations (e.g., "dwc:"). 這些內容的加入，旨在表明該詞所附屬的詞義，非常明確地指涉該命名空間中定義的術語。 Thus, dwc:Event means Event as defined by Darwin Core at **https://dwc.tdwg.org/terms/#event**. Capitalized terms that follow a namespace abbreviation, such as dwc:Occurrence, are class terms, which are a special category of terms used to group sets of property terms (terms that begin with lower case names that follow the namespace abbreviation, e.g., dwc:eventID) for convenience. Comprehensive metadata for current and obsolete terms from Darwin Core and borrowed standards are found in the document [List of Darwin Core terms](../list/).
 
 Additional resources can be found in the [Darwin Core GitHub repository](https://github.com/tdwg/dwc), including a [directory](https://github.com/tdwg/dwc/tree/master/dist) of CSV header and list of terms files for Darwin Core Archive Cores and Extensions.
 
@@ -30,7 +30,7 @@ Additional resources can be found in the [Darwin Core GitHub repository](https:/
 此類別包含通用術語，這些術語可能適用於資料集中的任何類型記錄。
 {% endif %}
 {% if class_group.label == 'UseWithIRI' %}
-有關 「UseWithIRI」的詳細資訊，請參閱 [RDF 指南第 2.5 節](https://dwc.tdwg.org/rdf/#25-terms-in-the-dwciri-namespace-normative)。
+For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](../rdf/#25-terms-in-the-dwciri-namespace-normative).
 {% endif %}
 {% if class_group.terms | length > 0 %}
 
