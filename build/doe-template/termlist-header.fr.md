@@ -1,13 +1,7 @@
-# Liste des termes du vocabulaire contrôlé du Degré d'Implantation
+# {document_title}
 
-Titre
-: Liste des termes du vocabulaire contrôlé du Degré d'Implantation
-
-URI de l'espace de nom
-: <http://rs.tdwg.org/dwcdoe/values/>
-
-Abréviation de l'espace de noms privilégié
-: dwcdoe:
+Title
+: {document_title}
 
 Date de publication de la dernière mise à jour
 : {ratification_date}
@@ -18,16 +12,17 @@ Date de création
 Fait partie du standard TDWG
 : <{standard_iri}>
 
-La version de ce document : <{current_iri}{ratification_date}>
+Cette version
+: <{current_iri}{ratification_date}>
 
-Dernière version de ce document
+Dernière version
 : <{current_iri}>
 
 Version précédente
 : {previous_version_slot}
 
-Résumé
-: Le terme Darwin Core `degreeOfEstablishment` fournit des informations sur le degré de survie, de reproduction et d'expansion de l'aire de répartition d'un organisme à un endroit et à un moment donnés. Le Vocabulaire Contrôlé du Degré d'Établissement fournit des termes qui devraient être utilisés comme valeurs pour `dwc:degreeOfEstablishment` et `dwciri:degreeOfEstablishment`.
+Abstract
+: {abstract}
 
 Contributeurs
 : {contributors}
@@ -40,7 +35,7 @@ Citation :
 
 ## 1 Introduction
 
-Ce document contient des termes destinés à être utilisés comme vocabulaire contrôlée pour les termes du Darwin Core portant le nom local `degreeOfEstablishment`. Pour plus de détails et de précisions, voir Groom et al. 2019. Improving Darwin Core for research and management of alien species. <https://doi.org/10.3897/biss.3.38084>
+This document includes terms intended to be used as a controlled value for Darwin Core terms with local name `dwc:degreeOfEstablishment`. Pour plus de détails et de précisions, voir Groom et al. 2019. Improving Darwin Core for research and management of alien species. <https://doi.org/10.3897/biss.3.38084>
 
 ### 1.1 Statut du contenu de ce document
 
