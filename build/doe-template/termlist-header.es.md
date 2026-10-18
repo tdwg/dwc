@@ -1,13 +1,7 @@
-# Lista de Términos del Vocabulario Controlado para el Grado de Establecimiento
+# {document_title}
 
-Título
-: Lista de Términos del Vocabulario Controlado para el Grado de Establecimiento
-
-Namespace URI
-: <http://rs.tdwg.org/dwcdoe/values/>
-
-Abreviatura preferida del namespace
-: dwcdoe:
+Title
+: {document_title}
 
 Fecha de publicación de la versión
 : {ratification_date}
@@ -18,16 +12,16 @@ Fecha de creación
 Parte del Estándar TDWG
 : <{standard_iri}>
 
-Esta versión del documento
+Esta versión
 : <{current_iri}{ratification_date}>
 
-Última versión del documento
+Última versión
 : <{current_iri}>
 
 {previous_version_slot}
 
 Resumen
-: El término Darwin Core «degreeOfEstablishment» proporciona información sobre el grado en que un organismo sobrevive, se reproduce y expande su área de distribución en un lugar y momento determinados. El vocabulario controlado para el Grado de Establecimiento ofrece los términos que deben utilizarse como valores para `dwc:degreeOfEstablishment` y `dwciri:degreeOfEstablishment`.
+: {abstract}
 
 Colaboradores
 : {contributors}
@@ -40,7 +34,7 @@ Cita bibliográfica
 
 ## 1 Introducción
 
-Este documento incluye términos destinados a ser utilizados como valores controlados para los términos de Darwin Core con nombre local `degreeOfEstablishment`. Para más detalles y justificación, véase Groom et al. 2019. Improving Darwin Core for research and management of alien species. <https://doi.org/10.3897/biss.3.38084>
+This document includes terms intended to be used as a controlled value for Darwin Core terms with local name `dwc:degreeOfEstablishment`. Para más detalles y justificación, véase Groom et al. 2019. Improving Darwin Core for research and management of alien species. <https://doi.org/10.3897/biss.3.38084>
 
 ### 1.1 Estado del contenido de este documento
 
