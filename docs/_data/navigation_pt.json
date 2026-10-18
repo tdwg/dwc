@@ -15,26 +15,22 @@
       },
       {
         "text": "",
-        "href": "https://chrono.tdwg.org/list/"
+        "href": ""
       },
       {
         "text": "",
-        "href": "https://eco.tdwg.org/list/"
-      },
-      {
-        "text": "---"
+        "href": ""
       },
       {
         "text": "",
-        "href": "/pt/em/"
+        "href": ""
+      },
+      {
+        "text": ""
       },
       {
         "text": "",
-        "href": "/pt/doe/"
-      },
-      {
-        "text": "",
-        "href": "/pt/pw/"
+        "href": ""
       }
     ]
   },
@@ -46,58 +42,106 @@
         "href": "/pt/terms/"
       },
       {
-        "text": "---"
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": ""
       },
       {
         "text": "",
-        "href": "https://chrono.tdwg.org/terms/"
+        "href": ""
       },
       {
         "text": "",
-        "href": "https://eco.tdwg.org/terms/"
-      },
-      {
-        "text": "---"
+        "href": ""
       },
       {
         "text": "",
-        "href": "/pt/cm/"
+        "href": ""
+      },
+      {
+        "text": ""
       },
       {
         "text": "",
-        "href": "/pt/simple/"
+        "href": ""
       },
       {
         "text": "",
-        "href": "/pt/text/"
+        "href": ""
       },
       {
         "text": "",
-        "href": "/pt/dp/"
+        "href": ""
       },
       {
         "text": "",
-        "href": "/pt/rdf/"
+        "href": ""
+      },
+      {
+        "text": ""
       },
       {
         "text": "",
-        "href": "/pt/xml/"
+        "href": ""
       },
       {
         "text": "",
-        "href": "/pt/namespace/"
-      },
-      {
-        "text": "---"
+        "href": ""
       },
       {
         "text": "",
-        "href": "https://github.com/tdwg/dwc-qa/blob/master/README.md"
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
       }
     ]
   },
   {
     "text": "",
     "href": "https://github.com/tdwg/dwc"
+  },
+  {
+    "text": "文A",
+    "menu": [
+      {
+        "text": "English",
+        "href": "/pt/"
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      }
+    ]
   }
 ]
