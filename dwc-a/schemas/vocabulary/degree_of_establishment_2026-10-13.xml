@@ -2,7 +2,7 @@
 <?xml-stylesheet type='text/xsl' href='/style/human.xsl'?>
 <thesaurus xmlns:dcterms='http://purl.org/dc/terms/'
   dc:URI='http://rs.gbif.org/vocabulary/dwc/degree_of_establishment/'
-  dc:relation='https://dwc.tdwg.org/terms/#dwc:degreeOfEstablishment'
+  dc:relation='https://dwc.tdwg.org/list/#dwc_degreeOfEstablishment'
   dc:title='Darwin Core Degree of Establishment Vocabulary'
   dcterms:isPartOf='http://www.tdwg.org/standards/450'
   dc:issued='2026-10-13'
