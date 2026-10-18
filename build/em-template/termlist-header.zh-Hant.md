@@ -25,8 +25,8 @@
 
 {previous_version_slot}
 
-摘要
-: 達爾文核心標準詞彙「establishmentMeans」提供資訊，說明一種或多種生物是否透過現代人類的直接或間接活動，傳入特定地點與時間。 建立手段控制詞彙提供了應用於「dwc:establishmentMeans」和 「dwciri:establishmentMeans」值的術語。
+Abstract
+: The Darwin Core term `dwc:establishmentMeans` provides information about whether a `dwc:Organism` has been introduced to a given place and time through the direct or indirect activity of modern humans. 建立手段控制詞彙提供了應用於「dwc:establishmentMeans」和 「dwciri:establishmentMeans」值的術語。
 
 貢獻者
 : {contributors}
@@ -39,7 +39,7 @@
 
 ## 1 引言
 
-本文件所包含的詞彙是用來作為本地名稱為 「establishmentMeans」的達爾文核心標準詞彙的控制值。 如需詳細資訊和理由，請參閱 Groom et al. 2019. Improving Darwin Core for research and management of alien species. <https://doi.org/10.3897/biss.3.38084>
+This document includes terms intended to be used as controlled values for the Darwin Core properties `dwc:establishmentMeans` and `dwciri:establishmentMeans`. 如需詳細資訊和理由，請參閱 Groom et al. 2019. Improving Darwin Core for research and management of alien species. <https://doi.org/10.3897/biss.3.38084>
 
 ### 1.1 本文件內容的現況
 
@@ -47,10 +47,10 @@
 
 ### 1.2 RFC 2119 關鍵字
 
-本文件中的關鍵字「必須」、「不得」、「要求」、「應」、「不應」、「應當」、「不應當」、「建議」、「可」、「可選」的定義，應按照 [RFC 2119](https://tools.ietf.org/html/rfc2119) 中的描述進行解釋。
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [BCP 14](https://www.rfc-editor.org/info/bcp14) [[RFC 2119]](https://datatracker.ietf.org/doc/html/rfc2119) and [[RFC 8174]](https://datatracker.ietf.org/doc/html/rfc8174) when, and only when, they appear in all capitals, as shown here.
 
 ## 2 使用條款
 
-由於 [《達爾文核心標準RDF指南》第 1.4.3 節](https://dwc.tdwg.org/rdf/#143-use-of-darwin-core-terms-in-rdf-normative) 的要求，術語 IRI 必須用作「dwciri:establishmentMeans」的值。 受控制的值字串必須用作「dwc:establishmentMeans」的值。
+Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#143-use-of-darwin-core-terms-in-rdf-normative), term IRIs MUST be used as values of `dwciri:establishmentMeans`. 受控制的值字串必須用作「dwc:establishmentMeans」的值。
 
 ## 3 術語索引
