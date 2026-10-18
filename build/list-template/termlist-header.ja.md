@@ -1,7 +1,7 @@
-# Darwin Core 用語一覧
+# {document_title}
 
-タイトル
-: Darwin Core 用語一覧
+Title
+: {document_title}
 
 バージョン発行日
 : {ratification_date}
@@ -21,8 +21,8 @@ TDWG標準での該当箇所
 前のバージョン
 {previous_version_slot}
 
-要旨
-: Darwin Core は生物多様性に関する情報を伝えるための語彙の標準です。 この文書では、この語彙で現在使用されている名前空間のすべての用語を一覧にしています。
+Abstract
+: {abstract}
 
 貢献者
 : {contributors}
@@ -35,9 +35,7 @@ TDWG標準での該当箇所
 
 ## 1 イントロダクション（参考情報）
 
-本文書には、Darwin Core 語彙の最新バージョン（<http://rs.tdwg.org/version/dwc/{ratification_date}>）の用語が含まれています。
-
-This document provides a comprehensive list of terms, from multiple namespaces, that have ever been recommended for use in Darwin Core. The status of some terms, as noted in their metadata, is deprecated or superseded and such terms should no longer be used. Terms from namespaces that contain only deprecated terms are not included in this document, but metadata about those terms can be retrieved by dereferencing their IRIs.
+This document provides a comprehensive list of terms, from multiple namespaces, that are or have been recommended for use in Darwin Core as of this vocabulary version. The status of some terms, as noted in their metadata, is deprecated or superseded. Such terms should no longer be used. Terms from namespaces that contain only deprecated terms are not included in this document, but metadata about those terms can still be retrieved by dereferencing their IRIs.
 
 現在推奨されている用語のみの簡易な一覧は、[Darwin Core クイックリファレンスガイド](../terms/) をご覧ください。
 
@@ -47,7 +45,7 @@ This document provides a comprehensive list of terms, from multiple namespaces, 
 
 第2節は規範的な内容です。
 
-第4節では、`用語のIRI（Term IRI）`と `定義（Definition）`の値は規範的です。 `用語の名前（Term Name）`の値は非規範的ですが、名前空間の略語の接頭辞はその用語の名前空間で一般的に使われるものであると予想できます。  `ラベル（Label）`とそのほかのすべての属性（ `例（Examples）`や `備考（Notes）`など）は非規範的なものです。
+第4節では、`用語のIRI（Term IRI）`と `定義（Definition）`の値は規範的です。`用語の名前（Term Name）`の値は非規範的ですが、名前空間の略語の接頭辞はその用語の名前空間で一般的に使われるものであると予想できます。`ラベル（Label）`とそのほかのすべての属性（ `例（Examples）`や `備考（Notes）`など）は非規範的なものです。
 
 ### 1.2 RFC 2119 キーワード
 
@@ -57,16 +55,20 @@ This document provides a comprehensive list of terms, from multiple namespaces, 
 
 以下の名前空間の略語がこの文書で使用されています：
 
-| 略語                       | IRI                                                                              |
-| ------------------------ | -------------------------------------------------------------------------------- |
-| ac:      | http://rs.tdwg.org/ac/terms/     |
-| dwc:     | http://rs.tdwg.org/dwc/terms/    |
-| dwciri:  | http://rs.tdwg.org/dwc/iri/      |
-| dc:      | http://purl.org/dc/elements/1.1/ |
-| dcterms: | http://purl.org/dc/terms/                        |
+| 略語           | IRI                                                                                                         |
+| ------------ | ----------------------------------------------------------------------------------------------------------- |
+| `ac:`        | <http://rs.tdwg.org/ac/terms/>     |
+| `chrono:`    | <http://rs.tdwg.org/chrono/terms/> |
+| `chronoiri:` | <http://rs.tdwg.org/chrono/iri/>   |
+| `dc:`        | <http://purl.org/dc/elements/1.1/> |
+| `dcterms:`   | <http://purl.org/dc/terms/>                        |
+| `dwc:`       | <http://rs.tdwg.org/dwc/terms/>    |
+| `dwciri:`    | <http://rs.tdwg.org/dwc/iri/>      |
+| `eco:`       | <http://rs.tdwg.org/eco/terms/>    |
+| `ecoiri:`    | <http://rs.tdwg.org/eco/iri/>      |
 
 ## 2 用語の使い方
 
-Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#143-use-of-darwin-core-terms-in-rdf-normative), properties in the `dwciri:` namespace MUST be used with IRI values. Properties in the `dwc:` and `dc:` namespaces are generally expected to have string literal values. Values for properties in the `dcterms:` namespace will depend on the details of the term. 詳細は [Darwin Core RDF ガイドのセクション 3](../rdf/#3-term-reference-normative) をご覧ください。
+Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#143-use-of-darwin-core-terms-in-rdf-normative), properties in the `chronoiri:`, `dwciri:` and `ecoiri:` namespaces MUST be used with IRI values. Values for properties in the `chrono:`, `dwc:`, `eco:` and `dc:` namespaces are generally expected to have string literal values. Values for properties in the `ac:` and `dcterms:` namespaces will depend on the details of the individual terms. 詳細は [Darwin Core RDF ガイドのセクション 3](../rdf/#3-term-reference-normative) をご覧ください。
 
 ## 3 用語の索引
