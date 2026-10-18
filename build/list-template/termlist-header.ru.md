@@ -1,6 +1,7 @@
-# Список терминов стандарта Darwin Core
+# {document_title}
 
-Список терминов DwC
+Title
+: {document_title}
 
 Дата публикации версии
 : {ratification_date}
@@ -18,7 +19,8 @@
 
 Предыдущая версия {previous_version_slot}
 
-DwC это словарь терминов для обмена данными о биоразнообразии. Этот документ содержит перечень всех терминов, используемых в словаре.
+Abstract
+: {abstract}
 
 Авторы: {contributors}
 
@@ -28,9 +30,7 @@ DwC это словарь терминов для обмена данными о
 
 ## 1 Введение (Информативное)
 
-В этом документе содержатся термины, входящие в последнюю версию словаря Darwin Core (<http://rs.tdwg.org/version/dwc/{ratification_date}>).
-
-This document provides a comprehensive list of terms, from multiple namespaces, that have ever been recommended for use in Darwin Core. The status of some terms, as noted in their metadata, is deprecated or superseded and such terms should no longer be used. Terms from namespaces that contain only deprecated terms are not included in this document, but metadata about those terms can be retrieved by dereferencing their IRIs.
+This document provides a comprehensive list of terms, from multiple namespaces, that are or have been recommended for use in Darwin Core as of this vocabulary version. The status of some terms, as noted in their metadata, is deprecated or superseded. Such terms should no longer be used. Terms from namespaces that contain only deprecated terms are not included in this document, but metadata about those terms can still be retrieved by dereferencing their IRIs.
 
 Для упрощенного списка, содержащего только рекомендуемые в настоящее время термины, обратитесь к [Darwin Core Quick Reference Guide](../terms/).
 
@@ -50,16 +50,20 @@ This document provides a comprehensive list of terms, from multiple namespaces, 
 
 В этом документе используются следующие сокращения пространств имен:
 
-| сокращение               | IRI                                                                              |
-| ------------------------ | -------------------------------------------------------------------------------- |
-| ac:      | http://rs.tdwg.org/ac/terms/     |
-| dwc:     | http://rs.tdwg.org/dwc/terms/    |
-| dwciri:  | http://rs.tdwg.org/dwc/iri/      |
-| dc:      | http://purl.org/dc/elements/1.1/ |
-| dcterms: | http://purl.org/dc/terms/                        |
+| сокращение   | IRI                                                                                                         |
+| ------------ | ----------------------------------------------------------------------------------------------------------- |
+| `ac:`        | <http://rs.tdwg.org/ac/terms/>     |
+| `chrono:`    | <http://rs.tdwg.org/chrono/terms/> |
+| `chronoiri:` | <http://rs.tdwg.org/chrono/iri/>   |
+| `dc:`        | <http://purl.org/dc/elements/1.1/> |
+| `dcterms:`   | <http://purl.org/dc/terms/>                        |
+| `dwc:`       | <http://rs.tdwg.org/dwc/terms/>    |
+| `dwciri:`    | <http://rs.tdwg.org/dwc/iri/>      |
+| `eco:`       | <http://rs.tdwg.org/eco/terms/>    |
+| `ecoiri:`    | <http://rs.tdwg.org/eco/iri/>      |
 
 ## 2 Применение терминов
 
-Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#143-use-of-darwin-core-terms-in-rdf-normative), properties in the `dwciri:` namespace MUST be used with IRI values. Properties in the `dwc:` and `dc:` namespaces are generally expected to have string literal values. Values for properties in the `dcterms:` namespace will depend on the details of the term. Подробности см. в [Разделе 3 руководства Darwin Core RDF](../rdf/#3-term-reference-normative).
+Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#143-use-of-darwin-core-terms-in-rdf-normative), properties in the `chronoiri:`, `dwciri:` and `ecoiri:` namespaces MUST be used with IRI values. Values for properties in the `chrono:`, `dwc:`, `eco:` and `dc:` namespaces are generally expected to have string literal values. Values for properties in the `ac:` and `dcterms:` namespaces will depend on the details of the individual terms. Подробности см. в [Разделе 3 руководства Darwin Core RDF](../rdf/#3-term-reference-normative).
 
 ## 3 Индексы терминов
