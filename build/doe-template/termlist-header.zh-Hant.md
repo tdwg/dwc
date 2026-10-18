@@ -1,12 +1,7 @@
-# 建立程度控制詞彙術語清單
+# {document_title}
 
-標題
-: 建立程度控制詞彙術語清單
-
-命名空間 URI : <http://rs.tdwg.org/dwcdoe/values/>
-
-首選命名空間縮寫
-: dwcdoe:
+Title
+: {document_title}
 
 版本發行日期
 : {ratification_date}
@@ -16,16 +11,16 @@
 生物多樣性訊息標準的一部分
 : <{standard_iri}>
 
-此文件版本
+此版本
 : <{current_iri}{ratification_date}>
 
-文件的最新版本
+最新版本
 : <{current_iri}>
 
 {previous_version_slot}
 
-摘要
-: 達爾文核心詞彙`degreeOfEstablishment`提供了生物在特定地點和時間，存活、繁殖和擴展其範圍的程度之資訊。 建立程度控制詞彙提供了應用於`dwc:degreeOfEstablishment`和`dwciri:degreeOfEstablishment`值的術語。
+Abstract
+: {abstract}
 
 貢獻者
 : {contributors}
@@ -38,7 +33,7 @@
 
 ## 1 引言
 
-本文件所包含的詞彙是用來作為本地名稱為 `degreeOfEstablishment`的達爾文核心標準詞彙的控制值。 如需詳細資訊和理由，請參閱 Groom et al. 2019. Improving Darwin Core for research and management of alien species. <https://doi.org/10.3897/biss.3.38084>
+This document includes terms intended to be used as a controlled value for Darwin Core terms with local name `dwc:degreeOfEstablishment`. 如需詳細資訊和理由，請參閱 Groom et al. 2019. Improving Darwin Core for research and management of alien species. <https://doi.org/10.3897/biss.3.38084>
 
 ### 1.1 本文件內容的現況
 
