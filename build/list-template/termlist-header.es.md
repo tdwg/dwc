@@ -1,7 +1,7 @@
-# Lista de Términos Darwin Core
+# {document_title}
 
-Título
-: Lista de Términos Darwin Core
+Title
+: {document_title}
 
 Fecha de publicación de la versión
 : {ratification_date}
@@ -20,8 +20,8 @@ Esta versión
 
 {previous_version_slot}
 
-Resumen:
-Darwin Core es vocabulario estándar para la transmisión de información sobre biodiversidad. Este documento lista todos los términos en los espacios de nombres actualmente utilizados en el vocabulario.
+Resumen
+: {abstract}
 
 Colaboradores
 : {contributors}
@@ -34,9 +34,7 @@ Cita bibliográfica
 
 ## 1. Introducción (Informativa)
 
-Este documento contiene los términos que forman parte de la versión más reciente del vocabulario Darwin Core (<http://rs.tdwg.org/version/dwc/{ratification_date}>).
-
-Este documento proporciona una lista exhaustiva de términos, provenientes de múltiples espacios de nombres, que en algún momento han sido recomendados para su uso en Darwin Core. El estado de algunos términos, según se indica en sus metadatos, es obsoleto o ha sido reemplazado, por lo que dichos términos ya no deben utilizarse. Los términos de espacios de nombres que contienen únicamente términos obsoletos no se incluyen en este documento, pero los metadatos sobre esos términos pueden recuperarse desreferenciando sus IRI.
+This document provides a comprehensive list of terms, from multiple namespaces, that are or have been recommended for use in Darwin Core as of this vocabulary version. The status of some terms, as noted in their metadata, is deprecated or superseded. Such terms should no longer be used. Terms from namespaces that contain only deprecated terms are not included in this document, but metadata about those terms can still be retrieved by dereferencing their IRIs.
 
 Para una lista simplificada que solo contiene los términos actualmente recomendados, consulte la [Guía de Referencia Rápida de Darwin Core](../terms/).
 
@@ -56,16 +54,20 @@ Las palabras clave "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD
 
 Se utilizan las siguientes abreviaciones de espacios de nombres en este documento:
 
-| Abreviación              | IRI                                                                              |
-| ------------------------ | -------------------------------------------------------------------------------- |
-| ac:      | http://rs.tdwg.org/ac/terms/     |
-| dwc:     | http://rs.tdwg.org/dwc/terms/    |
-| dwciri:  | http://rs.tdwg.org/dwc/iri/      |
-| dc:      | http://purl.org/dc/elements/1.1/ |
-| dcterms: | http://purl.org/dc/terms/                        |
+| Abreviación  | IRI                                                                                                         |
+| ------------ | ----------------------------------------------------------------------------------------------------------- |
+| `ac:`        | <http://rs.tdwg.org/ac/terms/>     |
+| `chrono:`    | <http://rs.tdwg.org/chrono/terms/> |
+| `chronoiri:` | <http://rs.tdwg.org/chrono/iri/>   |
+| `dc:`        | <http://purl.org/dc/elements/1.1/> |
+| `dcterms:`   | <http://purl.org/dc/terms/>                        |
+| `dwc:`       | <http://rs.tdwg.org/dwc/terms/>    |
+| `dwciri:`    | <http://rs.tdwg.org/dwc/iri/>      |
+| `eco:`       | <http://rs.tdwg.org/eco/terms/>    |
+| `ecoiri:`    | <http://rs.tdwg.org/eco/iri/>      |
 
 ## 2 Uso de los Términos
 
-Debido a los requisitos de la [Sección 1.4.3 de la Guía RDF de Darwin Core](../rdf/#143-use-of-darwin-core-terms-in-rdf-normative), las propiedades del espacio de nombres `dwciri:` DEBEN utilizarse con valores IRI. Por lo general, se espera que las propiedades de los espacios de nombres `dwc:` y `dc:` tengan valores literales de cadena de texto. Los valores de las propiedades del espacio de nombres dcterms: dependerán de los detalles del término. Consulte la [Sección 3 de la Guía RDF de Darwin Core](../rdf/#3-term-reference-normative) para más detalles.
+Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#143-use-of-darwin-core-terms-in-rdf-normative), properties in the `chronoiri:`, `dwciri:` and `ecoiri:` namespaces MUST be used with IRI values. Values for properties in the `chrono:`, `dwc:`, `eco:` and `dc:` namespaces are generally expected to have string literal values. Values for properties in the `ac:` and `dcterms:` namespaces will depend on the details of the individual terms. Consulte la [Sección 3 de la Guía RDF de Darwin Core](../rdf/#3-term-reference-normative) para más detalles.
 
 ## 3. Índices de términos
