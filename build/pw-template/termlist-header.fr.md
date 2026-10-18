@@ -26,8 +26,8 @@ Dernière version de ce document
 Version précédente
 : {previous_version_slot}
 
-Résumé
-: Le terme `pathway` du Darwin Core fournit des informations sur le processus par lequel un organisme s'est retrouvé à un endroit donné à un moment donné. Le vocabulaire contrôlé de la Voie d'Accès fournit des termes qui doivent être utilisés comme valeurs pour `dwc:pathway` et `dwciri:pathway`.
+Abstract
+: The Darwin Core term `dwc:pathway` provides information about the process by which a `dwc:Organism` came to be in a given place at a given time. Le vocabulaire contrôlé de la Voie d'Accès fournit des termes qui doivent être utilisés comme valeurs pour `dwc:pathway` et `dwciri:pathway`.
 
 Contributeurs
 : {contributors}
@@ -40,7 +40,7 @@ Citation :
 
 ## 1 Introduction
 
-Ce document contient des termes destinés à être utilisés comme vocabulaire contrôlée pour les termes du Darwin Core portant le nom local `pathway`. Pour plus de détails et de précisions, voir Groom et al. 2019. Improving Darwin Core for research and management of alien species. <https://doi.org/10.3897/biss.3.38084>
+This document includes terms intended to be used as controlled values for the Darwin Core properties `dwc:pathway` and `dwciri:pathway`. Pour plus de détails et de précisions, voir Groom et al. 2019. Improving Darwin Core for research and management of alien species. <https://doi.org/10.3897/biss.3.38084>
 
 ### 1.1 Statut du contenu de ce document
 
@@ -48,10 +48,10 @@ Dans la section 4, les valeurs de l'`IRI du terme`, de la `Définition` et de la
 
 ### 1.2 Mots clés RFC 2119
 
-Les mots clés "MUST/DOIT", "MUST NOT/NE DOIT PAS", "REQUIRED/OBLIGATOIRE", "SHALL/DEVRA", "SHALL NOT/NE DEVRA PAS", "SHOULD/DEVRAIT", "SHOULD NOT/NE DEVRAIT PAS", "RECOMMENDED/RECOMMANDÉ", "MAY/POURRAIT", et "OPTIONAL/OPTIONNEL" dans ce document doivent être interprétés comme défini dans [RFC 2119](https://tools.ietf.org/html/rfc2119).
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [BCP 14](https://www.rfc-editor.org/info/bcp14) [[RFC 2119]](https://datatracker.ietf.org/doc/html/rfc2119) and [[RFC 8174]](https://datatracker.ietf.org/doc/html/rfc8174) when, and only when, they appear in all capitals, as shown here.
 
 ## 2 Utilisation des termes
 
-Conformément aux exigences de la [Section 1.4.3 du Darwin Core RDF Guide](https://dwc.tdwg.org/rdf/#143-use-of-darwin-core-terms-in-rdf-normative), les IRI des termes DOIVENT être utilisés comme valeurs de `dwciri:pathway`. Les chaînes de caractères permises DOIVENT être utilisées comme valeurs de `dwc:pathway`.
+Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#143-use-of-darwin-core-terms-in-rdf-normative), term IRIs MUST be used as values of `dwciri:pathway`. Les chaînes de caractères permises DOIVENT être utilisées comme valeurs de `dwc:pathway`.
 
 ## 3 Index des termes
