@@ -14,27 +14,23 @@
         "text": "---"
       },
       {
-        "text": "Chronometric Age 拡張形式",
-        "href": "https://chrono.tdwg.org/list/"
+        "text": "",
+        "href": ""
       },
       {
-        "text": "Humboldt 拡張形式",
-        "href": "https://eco.tdwg.org/list/"
+        "text": "",
+        "href": ""
       },
       {
-        "text": "---"
+        "text": "",
+        "href": ""
       },
       {
-        "text": "Establishment Means の制御語彙",
-        "href": "/ja/em/"
+        "text": ""
       },
       {
-        "text": "Degree of Establishment の制御語彙",
-        "href": "/ja/doe/"
-      },
-      {
-        "text": "Pathway の制御語彙",
-        "href": "/ja/pw/"
+        "text": "",
+        "href": ""
       }
     ]
   },
@@ -46,58 +42,106 @@
         "href": "/ja/terms/"
       },
       {
-        "text": "---"
+        "text": "",
+        "href": ""
       },
       {
-        "text": "Chronometric Age 拡張形式 クイックリファレンス",
-        "href": "https://chrono.tdwg.org/terms/"
-      },
-      {
-        "text": "Humboldt 拡張形式 クイックリファレンス",
-        "href": "https://eco.tdwg.org/terms/"
-      },
-      {
-        "text": "---"
+        "text": ""
       },
       {
         "text": "",
-        "href": "/ja/cm/"
+        "href": ""
       },
       {
         "text": "",
-        "href": "/ja/simple/"
+        "href": ""
       },
       {
         "text": "",
-        "href": "/ja/text/"
+        "href": ""
+      },
+      {
+        "text": ""
       },
       {
         "text": "",
-        "href": "/ja/dp/"
+        "href": ""
       },
       {
         "text": "",
-        "href": "/ja/rdf/"
+        "href": ""
       },
       {
         "text": "",
-        "href": "/ja/xml/"
+        "href": ""
       },
       {
         "text": "",
-        "href": "/ja/namespace/"
+        "href": ""
       },
       {
-        "text": "---"
+        "text": ""
       },
       {
         "text": "",
-        "href": "https://github.com/tdwg/dwc-qa/blob/master/README.md"
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
       }
     ]
   },
   {
     "text": "GitHub",
     "href": "https://github.com/tdwg/dwc"
+  },
+  {
+    "text": "文A",
+    "menu": [
+      {
+        "text": "English",
+        "href": "/ja/"
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      }
+    ]
   }
 ]
