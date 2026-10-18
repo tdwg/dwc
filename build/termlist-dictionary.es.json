@@ -27,5 +27,6 @@
     "term_deprecated": "Este término está obsoleto y no debería utilizarse más.",
     "term_replaced_by": "Es reemplazado por",
     "has_broader_concept": "Tiene un concepto más amplio",
-    "record-level": "Nivel-Registro"
+    "record-level": "Nivel-Registro",
+    "no_terms_organized_in_class": "Actualmente no hay propiedades organizadas en esta clase."
 }

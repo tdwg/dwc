@@ -30,7 +30,7 @@ DwC это словарь терминов для обмена данными о
 
 В этом документе содержатся термины, входящие в последнюю версию словаря Darwin Core (<http://rs.tdwg.org/version/dwc/{ratification_date}>).
 
-Данный документ включает термины в четырех пространствах имен, которые содержат рекомендуемые термины: dwc:, dwciri:, dc:, и dcterms:. Однако, некоторые термины в этих пространствах имен устарели или заменены и не должны использоваться. Устаревание или замена отмечается в метаданных. Поля, которые содержат только устаревшие термины, не включены в данный документ, однако метаданные об этих терминах можно получить, обратившись по их IRI.
+This document provides a comprehensive list of terms, from multiple namespaces, that have ever been recommended for use in Darwin Core. The status of some terms, as noted in their metadata, is deprecated or superseded and such terms should no longer be used. Terms from namespaces that contain only deprecated terms are not included in this document, but metadata about those terms can be retrieved by dereferencing their IRIs.
 
 Для упрощенного списка, содержащего только рекомендуемые в настоящее время термины, обратитесь к [Darwin Core Quick Reference Guide](../terms/).
 
@@ -52,6 +52,7 @@ DwC это словарь терминов для обмена данными о
 
 | сокращение               | IRI                                                                              |
 | ------------------------ | -------------------------------------------------------------------------------- |
+| ac:      | http://rs.tdwg.org/ac/terms/     |
 | dwc:     | http://rs.tdwg.org/dwc/terms/    |
 | dwciri:  | http://rs.tdwg.org/dwc/iri/      |
 | dc:      | http://purl.org/dc/elements/1.1/ |
@@ -59,6 +60,6 @@ DwC это словарь терминов для обмена данными о
 
 ## 2 Применение терминов
 
-В соответствии с требованиями [Раздела 1.4.3 руководства Darwin Core RDF](../rdf/#143-use-of-darwin-core-terms-in-rdf-normative) термины в пространстве имен `dwciri:` ДОЛЖНЫ использоваться со значениями IRI. Обычно предполагается, что термины в пространствах имен `dwc:` и `dc:` будут иметь строковые буквальные значения. Значения терминов в пространстве имен `dcterms:` будут зависеть от деталей термина. Подробности см. в [Разделе 3 руководства Darwin Core RDF](../rdf/#3-term-reference-normative).
+Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#143-use-of-darwin-core-terms-in-rdf-normative), properties in the `dwciri:` namespace MUST be used with IRI values. Properties in the `dwc:` and `dc:` namespaces are generally expected to have string literal values. Values for properties in the `dcterms:` namespace will depend on the details of the term. Подробности см. в [Разделе 3 руководства Darwin Core RDF](../rdf/#3-term-reference-normative).
 
 ## 3 Индексы терминов

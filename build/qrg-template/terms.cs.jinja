@@ -5,7 +5,7 @@ to create the terms/index.md file, which mostly contains html.
 
 # Stručná referenční příručka k Darwin Core
 
-Tento dokument má sloužit jako přehledný odkaz na aktuálně (k 2023-09-18) doporučené termíny udržované jako součást standardu [Darwin Core](https://www.tdwg.org/standards/dwc/) a je spravován skupinou [Darwin Core Maintenance Group](https://www.tdwg.org/community/dwc/).
+This document is intended to be an easy-to-read reference of the currently recommended terms maintained as part of the [Darwin Core standard](https://www.tdwg.org/standards/dwc/) and is maintained by the [Darwin Core Maintenance Group](https://www.tdwg.org/community/dwc/).
 
 **Potřebujete pomoc?** Více informací o používání Darwin Core najdete na stránce [Darwin Core Questions & Answers](https://github.com/tdwg/dwc-qa/blob/master/README.md). Máte další otázky? Odešlete novou otázku (dotaz/problém) na [dwc-qa issues page in GitHub](https://github.com/tdwg/dwc-qa/issues) nebo použijte [formulář](https://tinyurl.com/darwin-qa). Informace o tom, [jak citovat Darwin Core](https://dwc.tdwg.org/terms/#cite-darwin-core), naleznete na konci tohoto dokumentu."
 
@@ -17,7 +17,7 @@ Další [soubory obsahující pouze aktuální názvy termínů](https://github.
 
 {% for class_group in class_groups %}
 
-## {{ class_group.label }}
+<h2 id="{{ class_group.label | lower }}">{{ class_group.label }}</h2>
 
 {% if class_group.isRecordLevel %}
 Tato kategorie obsahuje pojmy, které jsou obecné, protože se mohou vztahovat na jakýkoli typ záznamu v datové sadě.
@@ -25,12 +25,14 @@ Tato kategorie obsahuje pojmy, které jsou obecné, protože se mohou vztahovat 
 {% if class_group.label == 'UseWithIRI' %}
 Další informace o `UseWithIRI` naleznete v [oddílu 2.5 Příručky RDF](https://dwc.tdwg.org/rdf/#25-terms-in-the-dwciri-namespace-normative).
 {% endif %}
+{% if class_group.terms | length > 0 %}
 
 <div class="my-4">
   {% for term in class_group.terms %}
     <a class="btn btn-sm btn-outline-primary m-1" href="#{{ term.namespace }}:{{ term.label }}">{{ term.label }}</a>
   {% endfor %}
 </div>
+{% endif %}
 
 {% if not class_group.isRecordLevel and class_group.label != 'UseWithIRI' %}
 {# Class #}
@@ -41,7 +43,7 @@ Další informace o `UseWithIRI` naleznete v [oddílu 2.5 Příručky RDF](https
     <tr class="table-primary"><th colspan="2">{{ class_group.label }} <span class="badge bg-primary float-end">Třída</span></th></tr>
     <tr><td>Identifikátor</td><td><a href="{{ class_group.iri }}">{{ class_group.iri }}</a></td></tr>
     <tr><td>Definice</td><td>{{ class_group.definition }}</td></tr>
-    <tr><td>Komentáře</td><td>{{ class_group.comments }}</td></tr>
+    <tr><td>Notes</td><td>{{ class_group.comments }}</td></tr>
     <tr><td>Příklady</td><td>{% if examples | length == 1 %}{{ examples | first }}{% else %}<ul class="list-group list-group-flush">{% for example in examples %}<li class="list-group-item">{{ example }}</li>{% endfor %}</ul>{% endif %}</td></tr>
   </tbody>
 </table>
@@ -61,7 +63,7 @@ Další informace o `UseWithIRI` naleznete v [oddílu 2.5 Příručky RDF](https
     <tr class="table-secondary"><th colspan="2">{{ term.label }}</th></tr>
     <tr><td>Identifikátor</td><td><a href="{{ term.iri }}">{{ term.iri }}</a></td></tr>
     <tr><td>Definice</td><td>{{ term.definition }}</td></tr>
-    <tr><td>Komentáře</td><td>{{ term.comments }}</td></tr>
+    <tr><td>Notes</td><td>{{ term.comments }}</td></tr>
     <tr><td>Příklady</td><td>{% if examples | length == 1 %}{{ examples | first }}{% else %}<ul class="list-group list-group-flush">{% for example in examples %}<li class="list-group-item">{{ example }}</li>{% endfor %}</ul>{% endif %}</td></tr>
   </tbody>
 </table>
@@ -69,16 +71,41 @@ Další informace o `UseWithIRI` naleznete v [oddílu 2.5 Příručky RDF](https
 
 {% endfor %}
 
-## Citace Darwin Core
+<h2 id="cite-darwin-core">Citace Darwin Core</h2>
 
-Chcete-li citovat Darwin Core obecně, použijte recenzovaný článek o Darwin Core:
+<p>Chcete-li citovat Darwin Core obecně, použijte recenzovaný článek o Darwin Core:</p>
 
-> Wieczorek J, Bloom D, Guralnick R, Blum S, Döring M, et al. (2012) Darwin Core: An Evolving Community-Developed Biodiversity Data Standard. PLoS ONE 7(1): e29715. <https://doi.org/10.1371/journal.pone.0029715>
+<blockquote>
+  <p>
+    Wieczorek J, Bloom D, Guralnick R, Blum S, Döring M, et al. (2012)
+    Darwin Core: An Evolving Community-Developed Biodiversity Data Standard.
+    PLoS ONE 7(1): e29715.
+    <a href="https://doi.org/10.1371/journal.pone.0029715">
+      https://doi.org/10.1371/journal.pone.0029715
+    </a>  
+</p>
+</blockquote>
 
-Chcete-li citovat dokument standardu, na kterém je tato stránka postavena, použijte následující:
+<p>Chcete-li citovat dokument standardu, na kterém je tato stránka postavena, použijte následující:</p>
 
-> Darwin Core Maintenance Group. 2021. List of Darwin Core terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/list/>
+<blockquote>
+  <p>
+    Darwin Core Maintenance Group. 2021. List of Darwin Core terms.
+    Biodiversity Information Standards (TDWG).
+    <a href="http://rs.tdwg.org/dwc/doc/list/">
+      http://rs.tdwg.org/dwc/doc/list/
+    </a>  
+</p>
+</blockquote>
 
-Chcete-li citovat konkrétně tento dokument, použijte následující:
+<p>Chcete-li citovat konkrétně tento dokument, použijte následující:</p>
 
-> Darwin Core Maintenance Group. 2021. Stručná referenční příručka k Darwin Core. Biodiversity Information Standards (TDWG). <https://dwc.tdwg.org/terms/>
+<blockquote>
+  <p>
+    Darwin Core Maintenance Group. 2021. Stručná referenční příručka k Darwin Core.
+    Biodiversity Information Standards (TDWG).
+    <a href="https://dwc.tdwg.org/terms/">
+      https://dwc.tdwg.org/terms/
+    </a>  
+</p>
+</blockquote>

@@ -5,12 +5,42 @@ layout: home
 # Darwin Core
 
 {:.lead}
-Le Darwin Core est un standard maintenu par le [Darwin Core Maintenance Group](https://www.tdwg.org/standards/dwc/#maintenance-group). Il comprend un glossaire de termes (dans d'autres contextes, ces termes pourraient être appelés propriétés, éléments, champs, colonnes, attributs ou concepts) destinés à **faciliter le partage d'informations sur la diversité biologique** en fournissant des identifiants, des labels et des définitions. Le Darwin Core est principalement basé sur les taxons, leur occurrence dans la nature telle que documentée par des observations, des spécimens, des échantillons et des informations connexes.
+Darwin Core is a standard for biodiversity data sharing maintained by the [Darwin Core Maintenance Group](https://www.tdwg.org/standards/dwc/#maintenance-group). It provides a stable vocabulary, a conceptual model, implementation guides, schemas, and data-exchange specifications for sharing information about biological diversity.
+
+Darwin Core terms provide identifiers, labels, definitions, and usage guidance for concepts used to describe taxa, organisms, occurrences, events, material entities, identifications, locations, geological context, measurements and assertions, agents, media, protocols, references, and related biodiversity information.
 
 ## Pour commencer
 
-- [Guide de Référence Rapide](terms/)
-- Guides d'utilisation : Comment utiliser le Darwin Core comme [ Darwin Core Simple](simple/), [Texte (Darwin Core Archives)](text/), [XML](xml/) ou [RDF](rdf/)
+- [Quick Reference Guide](terms/): current terms organized for human use, with definitions, comments, and examples
+- [Conceptual Model](cm/): classes of information and how they are related
+- [Normative term list](list/): complete metadata for terms used in the Darwin Core vocabulary, including obsolete terms
+- [Darwin Core Schemas](schemas/): machine-readable schemas that are part of or support Darwin Core
+- Usage guides:
+  - [Simple Darwin Core](simple/)
+  - [Text (Darwin Core Archive)](text/)
+  - [Data Package (Darwin Core Data Package)](dp/)
+  - [Darwin Core Data Package Quick Reference Guide](dwc-dp/qrg/)
+  - [XML](xml/)
+  - [RDF](rdf/)
 - [Dépôt GitHub](https://github.com/tdwg/dwc) : Lieu de maintenance du Darwin Core
-- [Liste des termes normatifs](list/) : le document contenant l'historique complet des définitions des termes du Darwin Core
-- [Fichiers de partage](https://github.com/tdwg/dwc/tree/master/dist): fichiers pratiques pour commencer à utiliser le Darwin Core
+  - [List of open issues](https://github.com/tdwg/dwc/issues)
+  - [List of open milestones](https://github.com/tdwg/dwc/milestones)
+- [Distribution files](https://github.com/tdwg/dwc/tree/master/dist): CSV files of lists of term names
+
+## Programmatic access to term metadata
+
+Darwin Core term IRIs are the stable identifiers for terms and can be used to retrieve machine-readable metadata. For example, the term IRI
+
+`http://rs.tdwg.org/dwc/terms/basisOfRecord`
+
+identifies `dwc:basisOfRecord`. Clients can request a representation of the term through HTTP content negotiation. Explicit serialization URLs are also available by adding a file extension to the term IRI:
+
+<!-- - JSON-LD: `http://rs.tdwg.org/dwc/terms/basisOfRecord.json` -->
+
+- RDF/Turtle: `http://rs.tdwg.org/dwc/terms/basisOfRecord.ttl`
+- RDF/XML: `http://rs.tdwg.org/dwc/terms/basisOfRecord.rdf`
+- HTML: `http://rs.tdwg.org/dwc/terms/basisOfRecord.htm`
+
+The same pattern applies to terms in the other Darwin Core namespaces. Metadata for complete term lists and their version histories are available from [rs.tdwg.org](https://rs.tdwg.org/).
+
+For example, a client that has the column header `basisOfRecord` can construct the term IRI `http://rs.tdwg.org/dwc/terms/basisOfRecord` and retrieve its current definition and other metadata in a machine-readable serialization.
