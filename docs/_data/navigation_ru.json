@@ -14,27 +14,23 @@
         "text": "---"
       },
       {
-        "text": "Расширение \"Chronometric Age\" (Хронометрический возраст)",
-        "href": "https://chrono.tdwg.org/list/"
+        "text": "",
+        "href": ""
       },
       {
-        "text": "Расширение Гумбольдта",
-        "href": "https://eco.tdwg.org/list/"
+        "text": "",
+        "href": ""
       },
       {
-        "text": "---"
+        "text": "",
+        "href": ""
       },
       {
-        "text": "Контролируемый словарь \"Establishment Means\" (Способ закрепления)",
-        "href": "/ru/em/"
+        "text": ""
       },
       {
-        "text": "Контролируемый словарь \"Degree of Establishment\" (Степень акклиматизации)",
-        "href": "/ru/doe/"
-      },
-      {
-        "text": "Контролируемый словарь \"Pathway\" (Путь)",
-        "href": "/ru/pw/"
+        "text": "",
+        "href": ""
       }
     ]
   },
@@ -46,58 +42,106 @@
         "href": "/ru/terms/"
       },
       {
-        "text": "---"
+        "text": "",
+        "href": ""
       },
       {
-        "text": "Расширение \"Chronometric Age\" (Хронометрический возраст): краткая справка",
-        "href": "https://chrono.tdwg.org/terms/"
-      },
-      {
-        "text": "Расширение Гумбольдта: краткая справка",
-        "href": "https://eco.tdwg.org/terms/"
-      },
-      {
-        "text": "---"
+        "text": ""
       },
       {
         "text": "",
-        "href": "/ru/cm/"
+        "href": ""
       },
       {
         "text": "",
-        "href": "/ru/simple/"
+        "href": ""
       },
       {
         "text": "",
-        "href": "/ru/text/"
+        "href": ""
+      },
+      {
+        "text": ""
       },
       {
         "text": "",
-        "href": "/ru/dp/"
+        "href": ""
       },
       {
         "text": "",
-        "href": "/ru/rdf/"
+        "href": ""
       },
       {
         "text": "",
-        "href": "/ru/xml/"
+        "href": ""
       },
       {
         "text": "",
-        "href": "/ru/namespace/"
+        "href": ""
       },
       {
-        "text": "---"
+        "text": ""
       },
       {
         "text": "",
-        "href": "https://github.com/tdwg/dwc-qa/blob/master/README.md"
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
       }
     ]
   },
   {
     "text": "GitHub",
     "href": "https://github.com/tdwg/dwc"
+  },
+  {
+    "text": "文A",
+    "menu": [
+      {
+        "text": "English",
+        "href": "/ru/"
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      }
+    ]
   }
 ]
