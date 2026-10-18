@@ -14,27 +14,23 @@
         "text": "---"
       },
       {
-        "text": "Rozšíření chronometrického věku",
-        "href": "https://chrono.tdwg.org/list/"
+        "text": "",
+        "href": ""
       },
       {
-        "text": "Rozšíření Humboldt",
-        "href": "https://eco.tdwg.org/list/"
+        "text": "",
+        "href": ""
       },
       {
-        "text": "---"
+        "text": "",
+        "href": ""
       },
       {
-        "text": "Řízený slovník Způsob zavlečení",
-        "href": "/cs/em/"
+        "text": ""
       },
       {
-        "text": "Řízený slovník stupně zavlečení",
-        "href": "/cs/doe/"
-      },
-      {
-        "text": "Řízený slovník Pathway",
-        "href": "/cs/pw/"
+        "text": "",
+        "href": ""
       }
     ]
   },
@@ -46,58 +42,106 @@
         "href": "/cs/terms/"
       },
       {
-        "text": "---"
+        "text": "",
+        "href": ""
       },
       {
-        "text": "Rychlý odkaz na Rozšíření chronometrického věku",
-        "href": "https://chrono.tdwg.org/terms/"
-      },
-      {
-        "text": "Rychlý odkaz na Rozšíření Humboldt",
-        "href": "https://eco.tdwg.org/terms/"
-      },
-      {
-        "text": "---"
+        "text": ""
       },
       {
         "text": "",
-        "href": "/cs/cm/"
-      },
-      {
-        "text": "/cs/simple/",
-        "href": "/cs/simple/"
+        "href": ""
       },
       {
         "text": "",
-        "href": "/cs/text/"
+        "href": ""
       },
       {
         "text": "",
-        "href": "/cs/dp/"
+        "href": ""
+      },
+      {
+        "text": ""
       },
       {
         "text": "",
-        "href": "/cs/rdf/"
+        "href": ""
       },
       {
         "text": "",
-        "href": "/cs/xml/"
+        "href": ""
       },
       {
         "text": "",
-        "href": "/cs/namespace/"
-      },
-      {
-        "text": "---"
+        "href": ""
       },
       {
         "text": "",
-        "href": "https://github.com/tdwg/dwc-qa/blob/master/README.md"
+        "href": ""
+      },
+      {
+        "text": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
       }
     ]
   },
   {
     "text": "GitHub",
     "href": "https://github.com/tdwg/dwc"
+  },
+  {
+    "text": "文A",
+    "menu": [
+      {
+        "text": "English",
+        "href": "/cs/"
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      }
+    ]
   }
 ]
