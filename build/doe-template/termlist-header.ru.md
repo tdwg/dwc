@@ -1,12 +1,7 @@
-# Список терминов контролируемого словаря "Degree of Establishment" (Степень акклиматизации)
+# {document_title}
 
-Заголовок
-: Список терминов контролируемого словаря "Degree of Establishment" (Степень акклиматизации)
-
-URI пространства имен
-: <http://rs.tdwg.org/dwcdoe/values/>
-
-Предпочтительная аббревиатура пространства имён: dwcdoe:
+Title
+: {document_title}
 
 Дата публикации версии
 : {ratification_date}
@@ -20,13 +15,12 @@ URI пространства имен
 Текущая версия
 : <{current_iri}{ratification_date}>
 
-Последняя версия документа
-: <{current_iri}>
+Последняя версия: {current_iri}
 
 {previous_version_slot}
 
-Аннотация
-: Термин DwC «degreeOfEstablishment» даёт информацию об успехе выживания, размножения и расширения ареала организма в данном месте и времени. Словарь Degree of Establishment (степень акклиматизации) содержит термины, которые следует использовать в качестве значений для `dwc:degreeOfEstablishment` и `dwciri:degreeOfEstablishment`.
+Abstract
+: {abstract}
 
 Авторы
 : {contributors}
@@ -39,7 +33,7 @@ URI пространства имен
 
 ## 1. Введение
 
-В документ включены термины, предназначенные для использования в словаре `degreeOfEstablishment`. Подробности и обоснование см. в Groom et al. 2019. Расширение Darwin Core для исследования и управления чужеродными видами. <https://doi.org/10.3897/biss.3.38084>
+This document includes terms intended to be used as a controlled value for Darwin Core terms with local name `dwc:degreeOfEstablishment`. Подробности и обоснование см. в Groom et al. 2019. Расширение Darwin Core для исследования и управления чужеродными видами. <https://doi.org/10.3897/biss.3.38084>
 
 ### 1.1 Статус содержания документа
 
