@@ -1,0 +1,52 @@
+---
+layout: base
+description: Default template for pages and posts, with contained width.
+---
+
+<style>
+  @media (min-width: 992px) {
+    .page-toc-column {
+      position: sticky;
+      top: 1rem;
+      align-self: flex-start;
+      max-height: calc(100vh - 2rem);
+      overflow-y: auto;
+    }
+  }
+</style>
+
+<div class="row">
+  {% if page.toc %}
+  <div class="col-md-10 col-lg-3 mx-auto page-toc-column">
+    <div class="toc">
+      <h6>On this page</h6>
+      {% include toc.html
+        html=content
+        sanitize=true
+        h_min=2
+        h_max=3
+      %}
+    </div>
+  </div>
+  {% endif %}
+
+  <div class="col-md-10 col-lg-8 order-lg-first mx-auto">
+    {{ content }}
+
+    {% if page.comments %}
+    <div id="disqus_thread"></div>
+    <script>
+      var disqus_config = function () {
+        this.page.url = "{{ page.url | absolute_url }}";
+      };
+      (function() {
+        var d = document, s = d.createElement("script");
+        s.src = "https://{{ site.social.disqus }}.disqus.com/embed.js";
+        s.setAttribute("data-timestamp", +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    {% endif %}
+  </div>
+</div>

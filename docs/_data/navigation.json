@@ -14,17 +14,6 @@
         "text": "---"
       },
       {
-        "text": "Chronometric Age Vocabulary",
-        "href": "https://chrono.tdwg.org/list/"
-      },
-      {
-        "text": "Humboldt Extension Vocabulary",
-        "href": "https://eco.tdwg.org/list/"
-      },
-      {
-        "text": "---"
-      },
-      {
         "text": "Establishment Means Controlled Vocabulary",
         "href": "/em/"
       },
@@ -35,6 +24,13 @@
       {
         "text": "Pathway Controlled Vocabulary",
         "href": "/pw/"
+      },
+      {
+        "text": "---"
+      },
+      {
+        "text": "Taxon Completeness Reported Controlled Vocabulary",
+        "href": "/tcr/"
       }
     ]
   },
@@ -46,15 +42,23 @@
         "href": "/terms/"
       },
       {
+        "text": "Text (Darwin Core Archive)",
+        "href": "/text/"
+      },
+      {
         "text": "---"
       },
       {
-        "text": "Chronometric Age Extension Quick Reference",
-        "href": "https://chrono.tdwg.org/terms/"
+        "text": "Darwin Core Data Package Quick Reference",
+        "href": "/dwc-dp/qrg/"
       },
       {
-        "text": "Humboldt Extension Quick Reference",
-        "href": "https://eco.tdwg.org/terms/"
+        "text": "Darwin Core Data Package Designer",
+        "href": "/dwc-dp/designer/"
+      },
+      {
+        "text": "Data Package (Darwin Core Data Package)",
+        "href": "/dp/"
       },
       {
         "text": "---"
@@ -64,16 +68,23 @@
         "href": "/cm/"
       },
       {
+        "text": "Schemas",
+        "href": "/schemas/"
+      },
+      {
+        "text": "Hierarchical Event Guidelines",
+        "href": "/hierarchy/"
+      },
+      {
+        "text": "isLeastSpecificTargetCategoryQuantityInclusive Guidelines",
+        "href": "/inclusive/"
+      },
+      {
+        "text": "---"
+      },
+      {
         "text": "Simple Darwin Core",
         "href": "/simple/"
-      },
-      {
-        "text": "Text (Darwin Core Archive)",
-        "href": "/text/"
-      },
-      {
-        "text": "Data Package (Darwin Core Data Package)",
-        "href": "/dp/"
       },
       {
         "text": "RDF",
@@ -91,6 +102,14 @@
         "text": "---"
       },
       {
+        "text": "Maintenance",
+        "href": "/maintenance/"
+      },
+      {
+        "text": "Contributing",
+        "href": "/contributing/"
+      },
+      {
         "text": "Questions & Answers",
         "href": "https://github.com/tdwg/dwc-qa/blob/master/README.md"
       }
@@ -99,5 +118,30 @@
   {
     "text": "GitHub",
     "href": "https://github.com/tdwg/dwc"
+  },
+  {
+    "text": "文A",
+    "menu": [
+      {
+        "text": "English",
+        "href": "/"
+      },
+      {
+        "text": "Čeština",
+        "href": "/cs/"
+      },
+      {
+        "text": "Español",
+        "href": "/es/"
+      },
+      {
+        "text": "Français",
+        "href": "/fr/"
+      },
+      {
+        "text": "Русский",
+        "href": "/ru/"
+      }
+    ]
   }
 ]

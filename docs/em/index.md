@@ -10,7 +10,7 @@ Preferred namespace abbreviation
 : dwcem:
 
 Date version issued
-: 2026-05-26
+: 2026-10-13
 
 Date created
 : 2020-10-13
@@ -19,41 +19,42 @@ Part of TDWG Standard
 : <http://www.tdwg.org/standards/450>
 
 This document version
-: <http://rs.tdwg.org/dwc/doc/em/2026-05-26>
+: <http://rs.tdwg.org/dwc/doc/em/2026-10-13>
 
 Latest version of document
 : <http://rs.tdwg.org/dwc/doc/em/>
 
 Previous version
-: <http://rs.tdwg.org/dwc/doc/em/2025-07-10>
+: <http://rs.tdwg.org/dwc/doc/em/2026-05-26>
 
 Abstract
-: The Darwin Core term `establishmentMeans` provides information about whether an organism or organisms have been introduced to a given place and time through the direct or indirect activity of modern humans. The Establishment Means Controlled Vocabulary provides terms that should be used as values for `dwc:establishmentMeans` and `dwciri:establishmentMeans`.
+: The Darwin Core term `dwc:establishmentMeans` provides information about whether a `dwc:Organism` has been introduced to a given place and time through the direct or indirect activity of modern humans. The Establishment Means Controlled Vocabulary provides terms that should be used as values for `dwc:establishmentMeans` and `dwciri:establishmentMeans`.
 
 Contributors
-: [Quentin Groom](https://orcid.org/0000-0002-0596-5376) ([Botanic Garden Meise](http://www.wikidata.org/entity/Q3052500)), [Peter Desmet](https://orcid.org/0000-0002-8442-8025) ([Instituut voor Natuur- en Bosonderzoek (INBO)](http://www.wikidata.org/entity/Q7315097)), [Lien Reyserhove](https://orcid.org/0000-0001-7484-9267) ([Instituut voor Natuur- en Bosonderzoek (INBO)](http://www.wikidata.org/entity/Q7315097)), [Tim Adriaens](https://orcid.org/0000-0001-7268-4200) ([Instituut voor Natuur- en Bosonderzoek (INBO)](http://www.wikidata.org/entity/Q7315097)), [Damiano Oldoni](https://orcid.org/0000-0003-3445-7562) ([Instituut voor Natuur- en Bosonderzoek (INBO)](http://www.wikidata.org/entity/Q7315097)), [Sonia Vanderhoeven](https://orcid.org/0000-0002-6298-5373) ([Belgian Biodiversity Platform](http://www.wikidata.org/entity/Q100600896)), [Steven J Baskauf](https://orcid.org/0000-0003-4365-3135) ([Vanderbilt University Libraries](http://www.wikidata.org/entity/Q16849893)), [Arthur Chapman](https://orcid.org/0000-0003-1700-6962) ([Australian Biodiversity Information Services](http://www.wikidata.org/entity/Q100600913)), [Melodie McGeoch](https://orcid.org/0000-0003-3388-2241) ([McGeoch Research Group](http://www.wikidata.org/entity/Q100600923)), [Ramona Walls](https://orcid.org/0000-0001-8815-0078) ([University of Arizona](http://www.wikidata.org/entity/Q503419)), [John Wieczorek](https://orcid.org/0000-0003-1144-0290) ([VertNet](http://www.wikidata.org/entity/Q98382028)), [John R.U. Wilson](https://orcid.org/0000-0003-0174-3239) ([South African National Biodiversity Institute](http://www.wikidata.org/entity/Q30296386)), [Paula F Zermoglio](https://orcid.org/0000-0002-6056-5084) ([VertNet](http://www.wikidata.org/entity/Q98382028)), [Annie Simpson](https://orcid.org/0000-0001-8338-5134) ([U.S. Geological Survey](http://www.wikidata.org/entity/Q193755))
+: [Quentin Groom](https://orcid.org/0000-0002-0596-5376) ([Botanic Garden Meise](http://www.wikidata.org/entity/Q3052500)), [Peter Desmet](https://orcid.org/0000-0002-8442-8025) ([Instituut voor Natuur- en Bosonderzoek (INBO)](http://www.wikidata.org/entity/Q7315097)), [Lien Reyserhove](https://orcid.org/0000-0001-7484-9267) ([Instituut voor Natuur- en Bosonderzoek (INBO)](http://www.wikidata.org/entity/Q7315097)), [Tim Adriaens](https://orcid.org/0000-0001-7268-4200) ([Instituut voor Natuur- en Bosonderzoek (INBO)](http://www.wikidata.org/entity/Q7315097)), [Damiano Oldoni](https://orcid.org/0000-0003-3445-7562) ([Instituut voor Natuur- en Bosonderzoek (INBO)](http://www.wikidata.org/entity/Q7315097)), [Sonia Vanderhoeven](https://orcid.org/0000-0002-6298-5373) ([Belgian Biodiversity Platform](http://www.wikidata.org/entity/Q100600896)), [Steven J Baskauf](https://orcid.org/0000-0003-4365-3135) ([Vanderbilt University Libraries](http://www.wikidata.org/entity/Q16849893)), [Arthur Chapman](https://orcid.org/0000-0003-1700-6962) ([Australian Biodiversity Information Services](http://www.wikidata.org/entity/Q100600913)), [Melodie McGeoch](https://orcid.org/0000-0003-3388-2241) ([McGeoch Research Group](http://www.wikidata.org/entity/Q100600923)), [Ramona Walls](https://orcid.org/0000-0001-8815-0078) ([University of Arizona](http://www.wikidata.org/entity/Q503419)), [John Wieczorek](https://orcid.org/0000-0003-1144-0290) ([Rauthiflor LLC, Global Biodiversity Information Facility](http://www.wikidata.org/entity/Q1531570)), [John R.U. Wilson](https://orcid.org/0000-0003-0174-3239) ([South African National Biodiversity Institute](http://www.wikidata.org/entity/Q30296386)), [Paula F Zermoglio](https://orcid.org/0000-0002-6056-5084) ([Instituto de Investigaciones en Recursos Naturales, Agroecología y Desarrollo Rural (IRNAD, CONICET, Universidad Nacional de Río Negro)](https://www.wikidata.org/wiki/Q6978293)), [Annie Simpson](https://orcid.org/0000-0001-8338-5134) ([U.S. Geological Survey](http://www.wikidata.org/entity/Q193755))
 
 Creator
 : TDWG Darwin Core Maintenance Group
 
 Bibliographic citation
-: TDWG Darwin Core Maintenance Group. 2026. Establishment Means Controlled Vocabulary List of Terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/em/2026-05-26>
+: TDWG Darwin Core Maintenance Group. 2026. Establishment Means Controlled Vocabulary List of Terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/em/2026-10-13>
 
 
 ## 1 Introduction
 
-This document includes terms intended to be used as a controlled value for Darwin Core terms with local name `establishmentMeans`. For details and rationale, see Groom et al. 2019. Improving Darwin Core for research and management of alien species. <https://doi.org/10.3897/biss.3.38084>
+This document includes terms intended to be used as controlled values for the Darwin Core properties `dwc:establishmentMeans` and `dwciri:establishmentMeans`. For details and rationale, see Groom et al. 2019. Improving Darwin Core for research and management of alien species. <https://doi.org/10.3897/biss.3.38084>
 
 ### 1.1 Status of the content of this document
 
 In Section 4, the values of the `Term IRI`, `Definition`, and `Controlled value` are normative. The value of `Usage` (if it exists for a given term) is normative.  The values of `Term Name` are non-normative, although one can expect that the namespace abbreviation prefix is one commonly used for the term namespace.  `Label` and the values of all other properties (such as `Notes`) are non-normative.
 
 ### 1.2 RFC 2119 key words
-The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [RFC 2119](https://tools.ietf.org/html/rfc2119).
+
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [BCP 14](https://www.rfc-editor.org/info/bcp14) [[RFC 2119]](https://datatracker.ietf.org/doc/html/rfc2119) and [[RFC 8174]](https://datatracker.ietf.org/doc/html/rfc8174) when, and only when, they appear in all capitals, as shown here.
 
 ## 2 Use of Terms
 
-Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://dwc.tdwg.org/rdf/#143-use-of-darwin-core-terms-in-rdf-normative), term IRIs MUST be used as values of `dwciri:establishmentMeans`. Controlled value strings MUST be used as values of `dwc:establishmentMeans`.
+Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](../rdf/#143-use-of-darwin-core-terms-in-rdf-normative), term IRIs MUST be used as values of `dwciri:establishmentMeans`. Controlled value strings MUST be used as values of `dwc:establishmentMeans`.
 
 ## 3 Term index
 
@@ -78,7 +79,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwcem/values/e">http://rs.tdwg.org/dwcem/values/e</a></td>
+			<td><a href="#dwcem_e">http://rs.tdwg.org/dwcem/values/e</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -116,7 +117,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwcem/values/e001">http://rs.tdwg.org/dwcem/values/e001</a></td>
+			<td><a href="#dwcem_e001">http://rs.tdwg.org/dwcem/values/e001</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -162,7 +163,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwcem/values/e002">http://rs.tdwg.org/dwcem/values/e002</a></td>
+			<td><a href="#dwcem_e002">http://rs.tdwg.org/dwcem/values/e002</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -216,7 +217,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwcem/values/e003">http://rs.tdwg.org/dwcem/values/e003</a></td>
+			<td><a href="#dwcem_e003">http://rs.tdwg.org/dwcem/values/e003</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -262,15 +263,15 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwcem/values/e004">http://rs.tdwg.org/dwcem/values/e004</a></td>
+			<td><a href="#dwcem_e004">http://rs.tdwg.org/dwcem/values/e004</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2021-09-01</td>
+			<td>2026-10-13</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/dwcem/values/version/e004-2021-09-01">http://rs.tdwg.org/dwcem/values/version/e004-2021-09-01</a></td>
+			<td><a href="http://rs.tdwg.org/dwcem/values/version/e004-2026-10-13">http://rs.tdwg.org/dwcem/values/version/e004-2026-10-13</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -278,11 +279,11 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>Establishment of a taxon specifically with the intention of creating a self-sustaining wild population in an area that is not part of the taxon's natural range.</td>
+			<td>Establishment of a taxon specifically with the intention of creating a self-sustaining wild population in an area that is not part of the taxon's natural range</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>In the event of environmental change and habitat destruction a conservation option is to introduce a taxon into an area it did not naturally occur.</td>
+			<td>In the event of environmental change and habitat destruction, a conservation option is to introduce a taxon into an area it did not naturally occur.</td>
 		</tr>
 		<tr>
 			<td>Controlled value</td>
@@ -296,6 +297,10 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2020-10-13_24">http://rs.tdwg.org/decisions/decision-2020-10-13_24</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2026-10-13_62">http://rs.tdwg.org/decisions/decision-2026-10-13_62</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -308,7 +313,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwcem/values/e005">http://rs.tdwg.org/dwcem/values/e005</a></td>
+			<td><a href="#dwcem_e005">http://rs.tdwg.org/dwcem/values/e005</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -354,7 +359,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwcem/values/e006">http://rs.tdwg.org/dwcem/values/e006</a></td>
+			<td><a href="#dwcem_e006">http://rs.tdwg.org/dwcem/values/e006</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -400,7 +405,7 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/dwcem/values/e007">http://rs.tdwg.org/dwcem/values/e007</a></td>
+			<td><a href="#dwcem_e007">http://rs.tdwg.org/dwcem/values/e007</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -440,5 +445,3 @@ Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](https://
 		</tr>
 	</tbody>
 </table>
-
-

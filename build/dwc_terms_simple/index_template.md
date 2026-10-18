@@ -65,14 +65,14 @@ Simple Darwin Core has minimal restrictions on which fields are mandatory (none)
 
 There are just a few general guiding principles on how to make the best use of Simple Darwin Core:
 
-1. Any Darwin Core term name can be used as a field name.
+1. Any Darwin Core property term name can be used as a field name.
 2. A field name MUST NOT be repeated in a record.
 3. Class names (e.g., `Occurrence`, `Organism`) MUST NOT be used as field names.
 4. Data SHOULD be provided in as many fields as possible.
 5. The [`dc:type`](http://purl.org/dc/elements/1.1/type) field SHOULD be populated with the name of the most appropriate Dublin Core type class (`PhysicalObject`, `StillImage`, `MovingImage`, `Sound`, `Text`) the record represents.
-6. The [`basisOfRecord`](http://rs.tdwg.org/dwc/terms/basisOfRecord) SHOULD be populated with the name of the most specific Darwin Core class ([`LivingSpecimen`](http://rs.tdwg.org/dwc/terms/LivingSpecimen), [`PreservedSpecimen`](http://rs.tdwg.org/dwc/terms/PreservedSpecimen), [`FossilSpecimen`](http://rs.tdwg.org/dwc/terms/FossilSpecimen), [`MaterialEntity`](http://rs.tdwg.org/dwc/terms/MaterialEntity), [`MaterialSample`](http://rs.tdwg.org/dwc/terms/MaterialSample), [`HumanObservation`](http://rs.tdwg.org/dwc/terms/HumanObservation), [`MachineObservation`](http://rs.tdwg.org/dwc/terms/MachineObservation), [`MaterialCitation`](http://rs.tdwg.org/dwc/terms/MaterialCitation), [`Event`](http://rs.tdwg.org/dwc/terms/Event), [`Occurrence`](http://rs.tdwg.org/dwc/terms/Occurrence), [`Taxon`](http://rs.tdwg.org/dwc/terms/Taxon), [`Organism`](http://rs.tdwg.org/dwc/terms/Organism), [`Location`](http://purl.org/dc/terms/Location), [`GeologicalContext`](http://rs.tdwg.org/dwc/terms/GeologicalContext)) the record represents.
+6. The [`basisOfRecord`](../terms/#dwc:basisOfRecord) field SHOULD be populated with the name of the most specific appropriate Darwin Core class, following the recommendations for that term.
 7. Fields SHOULD be populated with data that match the definition of the field.
-8. Values from a recommended controlled vocabulary SHOULD be used for the values of a field that recommend it.
+8. Values from a recommended controlled vocabulary SHOULD be used for a field whose term recommends one.
 9. If data are withheld, the field [`dwc:informationWithheld`](http://rs.tdwg.org/dwc/terms/informationWithheld) SHOULD be populated to say so.
 10. If data are shared in lower quality than the original, the field [`dwc:dataGeneralizations`](http://rs.tdwg.org/dwc/terms/dataGeneralizations) SHOULD be populated to say so.
 
@@ -102,13 +102,13 @@ The following example shows a `SimpleDarwinRecordSet` containing one `SimpleDarw
 <?xml version="1.0" encoding="UTF-8"?>
 <SimpleDarwinRecordSet
     xmlns="http://rs.tdwg.org/dwc/xsd/simpledarwincore/"
-    xmlns:dc="http://purl.org/dc/terms/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
     xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://rs.tdwg.org/dwc/xsd/simpledarwincore/ http://rs.tdwg.org/dwc/xsd/tdwg_dwc_simple.xsd">
     <SimpleDarwinRecord>
-        <dc:modified>2006-05-04T18:13:51.0Z</dc:modified>
-        <dc:language>en</dc:language>
+        <dcterms:modified>2006-05-04T18:13:51.0Z</dc:modified>
+        <dcterms:language>en</dc:language>
         <dwc:basisOfRecord>Taxon</dwc:basisOfRecord>
         <dwc:scientificNameID>http://research.calacademy.org/research/ichthyology/catalog/fishcatget.asp?spid=53548</dwc:scientificNameID>
         <dwc:acceptedNameUsageID>http://research.calacademy.org/research/ichthyology/catalog/fishcatget.asp?spid=22010</dwc:acceptedNameUsageID>
@@ -149,7 +149,7 @@ One way would be to try to "overload" existing terms by using them to hold infor
 
 ### 7.1 Structured content using dynamicProperties
 
-Another way to get more out of Darwin Core without adding a term is to "payload" the [`dwc:dynamicProperties`](http://rs.tdwg.org/dwc/terms/dynamicProperties) term with structured content, as shown in the example below, using Javascript Open Notation (JSON). This is perfectly legal, since it doesn't compromise the meaning of the term. One of the weaknesses of payloading data in this way is that it is subject to a lack of stable or well-defined semantics. Also, it is strongly suggested to flatten the content into a single string with no non-printing characters (such as line feeds) to facilitate use in the widest variety of data sharing contexts. Still, this might be a reasonable way to at least allow you to share all of your data, even if there might be problems with people using it reliably.
+Another way to get more out of Darwin Core without adding a term is to "payload" the [`dwc:dynamicProperties`](http://rs.tdwg.org/dwc/terms/dynamicProperties) term with structured content, as shown in the example below, using JavaScript Object Notation (JSON). This is perfectly legal, since it doesn't compromise the meaning of the term. One of the weaknesses of payloading data in this way is that it is subject to a lack of stable or well-defined semantics. Also, it is strongly suggested to flatten the content into a single string with no non-printing characters (such as line feeds) to facilitate use in the widest variety of data sharing contexts. Still, this might be a reasonable way to at least allow you to share all of your data, even if there might be problems with people using it reliably.
 
 #### 7.1.1 Example of structured JSON content within XML
 
@@ -157,13 +157,13 @@ Another way to get more out of Darwin Core without adding a term is to "payload"
 <?xml version="1.0" encoding="UTF-8"?>
 <SimpleDarwinRecordSet
     xmlns="http://rs.tdwg.org/dwc/xsd/simpledarwincore/"
-    xmlns:dc="http://purl.org/dc/terms/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
     xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://rs.tdwg.org/dwc/xsd/simpledarwincore/ http://rs.tdwg.org/dwc/xsd/tdwg_dwc_simple.xsd">
     <SimpleDarwinRecord>
-        <dc:modified>2009-02-12T12:43:31</dc:modified>
-        <dc:language>en</dc:language>
+        <dcterms:modified>2009-02-12T12:43:31</dc:modified>
+        <dcterms:language>en</dc:language>
         <dwc:basisOfRecord>Taxon</dwc:basisOfRecord>
         <dwc:scientificName>Ctenomys sociabilis</dwc:scientificName>
         <dwc:acceptedNameUsage>Ctenomys sociabilis Pearson and Christie, 1985</dwc:acceptedNameUsage>
@@ -194,6 +194,10 @@ So, if you really need to extend the capabilities of Darwin Core, the best first
 
 ## 8 Going beyond Simple Darwin Core
 
-For cases where rich data require rich (non-simple) structure, Simple Darwin Core alone is not suitable. When sharing information via [Fielded Text](http://www.fieldedtext.org/), the solution is to use Simple Darwin Core as a core record with one or more associated extensions for the additional information. See the [Text guide](../text/) for an explanation and examples.
+For cases where rich data require rich (non-simple) structure, Simple Darwin Core alone is not suitable.
 
-When sharing information via [XML](http://www.w3.org/XML/), a richer structure such as the Access to Biological Collections Data schema ([ABCD](https://github.com/tdwg/abcd)), or the [Generic Darwin Core](../xml/tdwg_dwcterms.xsd), or another schema built from Darwin Core terms to suit the use of the data in a particular context. See the [XML guide](../xml/) for examples and references to model schemas.
+When sharing information via [Fielded Text](http://www.fieldedtext.org/), the solution is to use Simple Darwin Core as a core record with one or more associated extensions for the additional information. See the [Text guide](../text/) for an explanation and examples.
+
+For cases where rich data require structure beyond that supported by Simple Darwin Core or star schema specified in the [Text guide](../text/), the [Darwin Core Data Package](../dp/) provides a relational representation in which information can be distributed among related tables while retaining Darwin Core semantics.
+
+When sharing information via [XML](http://www.w3.org/XML/), a richer structure such as the Access to Biological Collections Data schema ([ABCD](https://github.com/tdwg/abcd)), the [Generic Darwin Core](../xml/tdwg_dwcterms.xsd), or another schema built from Darwin Core terms can be used to suit the data-sharing context. See the [XML guide](../xml/) for examples and references to model schemas.

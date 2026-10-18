@@ -1,0 +1,1 @@
+reference_pk,referenceID,isPartOfReference_fk,isPartOfReferenceID,referenceType,bibliographicCitation,bibliographicIdentifier,bibliographicIdentifierType,title,author,author_fk,authorID,editor,editor_fk,editorID,publisher,publisher_fk,publisherID,volume,issue,edition,pages,version,issued,accessed,peerReviewStatus,referenceRemarks

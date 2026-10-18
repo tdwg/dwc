@@ -4,7 +4,7 @@ Title
 : Darwin Core Data Package guide
 
 Date version issued
-: 2026-05-26
+: 2026-10-13
 
 Date created
 : 2026-05-26
@@ -13,22 +13,25 @@ Part of TDWG Standard
 : <http://www.tdwg.org/standards/450>
 
 This version
-: <http://rs.tdwg.org/dwc/doc/dp/2026-05-26>
+: <http://rs.tdwg.org/dwc/doc/dp/2026-10-13>
 
 Latest version
 : <http://rs.tdwg.org/dwc/doc/dp/>
+
+Previous version
+: <http://rs.tdwg.org/dwc/doc/dp/2026-05-26>
 
 Abstract
 : Specification for creating a Darwin Core Data Package.
 
 Contributors
-: [Peter Desmet](https://orcid.org/0000-0002-8442-8025) ([Research Institute for Nature and Forest (INBO)](http://www.wikidata.org/entity/Q7315097)), [Tim Robertson](https://orcid.org/0000-0001-6215-3617) ([Global Biodiversity Information Facility](http://www.wikidata.org/entity/Q1531570)), [John Wieczorek](https://orcid.org/0000-0003-1144-0290) ([Rauthiflor LLC, Global Biodiversity Information Facility](http://www.wikidata.org/entity/Q1531570))
+: [Peter Desmet](https://orcid.org/0000-0002-8442-8025) ([Instituut voor Natuur- en Bosonderzoek (INBO)](http://www.wikidata.org/entity/Q7315097)), [Tim Robertson](https://orcid.org/0000-0001-6215-3617) ([Global Biodiversity Information Facility](http://www.wikidata.org/entity/Q1531570)), [John Wieczorek](https://orcid.org/0000-0003-1144-0290) ([Rauthiflor LLC, Global Biodiversity Information Facility](http://www.wikidata.org/entity/Q1531570))
 
 Creator
 : Darwin Core Maintenance Group
 
 Bibliographic citation
-: Darwin Core Maintenance Group. 2026. Darwin Core Data Package guide. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/dp/2026-05-26>
+: Darwin Core Maintenance Group. 2026. Darwin Core Data Package guide. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/dp/2026-10-13>
 
 [dp.v1]: https://specs.frictionlessdata.io/
 [dp.v2]: https://datapackage.org/
@@ -105,7 +108,7 @@ This dataset can be described as a DwC-DP with the following **descriptor** (`da
 
 ```json
 {
-  "profile": "http://rs.tdwg.org/dwc-dp/1.0/dwc-dp-profile.json",
+  "profile": "https://rs.tdwg.org/dwc-dp/1.0/dwc-dp-profile.json",
   "id": "https://doi.org/10.9999/dwc-dp-example-dataset-doi",
   "created": "2025-09-08T09:52:03-03:00",
   "version": "1.0",
@@ -250,7 +253,7 @@ A DwC-DP **descriptor** file (named `datapackage.json`) contains a reference to 
 {:.alert .alert-info}
 All requirements and examples in this guide use [version 1][dp.v1] of the Data Package specification, which is RECOMMENDED for DwC-DPs.
 
-1. The descriptor MUST have a `profile` property, with a URL referencing the [profile][package.profile] the dataset conforms to. This MUST be a string representing the URL to a **DwC-DP profile** served from `http://rs.tdwg.org`. The URL MUST include the version of the profile (e.g., `http://rs.tdwg.org/dwc-dp/1.0/dwc-dp-profile.json`, where `1.0` is the version).
+1. The descriptor MUST have a `profile` property, with a URL referencing the [profile][package.profile] the dataset conforms to. This MUST be a string representing the URL to a **DwC-DP profile** served from `http://rs.tdwg.org`. The URL MUST include the version of the profile (e.g., `https://rs.tdwg.org/dwc-dp/1.0/dwc-dp-profile.json`, where `1.0` is the version).
 
     {:.alert .alert-info}
     (non-normative) The DwC-DP profile imports all [Data Package requirements](https://specs.frictionlessdata.io/schemas/data-package.json). A dataset that conforms to the DwC-DP profile will therefore also conform to the Data Package requirements. In other words: a DwC-DP is also a Data Package.
@@ -308,7 +311,7 @@ A **table schema** describes the fields, relationships and missing values of a t
 
 Table schemas are provided at `rs.tdwg.org` for each DwC-DP table. See [section 4](#dwc-dp-tables). These table schemas include all possible fields, primary keys and foreign key relationships a table can have. Use these to select the fields and keys that are applicable to your data.
 
-1. A DwC-DP table schema MUST have a `fields` property, with an array of **field descriptors** describing the fields/columns in the data file. The `fields` property MUST follow the [Table Schema specification][schema.fields]. In addition, the order and number of elements in `fields` MUST be the order and number of fields in the CSV file. See [section 3.4](#3.4-field-descriptors) for details.
+1. A DwC-DP table schema MUST have a `fields` property, with an array of **field descriptors** describing the fields/columns in the data file. The `fields` property MUST follow the [Table Schema specification][schema.fields]. In addition, the order and number of elements in `fields` MUST be the order and number of fields in the CSV file. See [section 3.4](#field-descriptors) for details.
 
 2. Each field in a DwC-DP table schema MUST be described with the field descriptor of the table schema provided at `rs.tdwg.org` for that table. For example, if you want to describe an `eventID` field in an `event` table, you MUST use the field descriptor for `eventID` in the table schema for `event` provided at `rs.tdwg.org`. Fields MUST NOT be misrepresented. Custom fields SHOULD NOT be added.
 
@@ -357,6 +360,7 @@ For brevity, let's name fields as `table_name.field_name` (e.g., `event.eventID`
 
 3. Since `event.eventID` is the target of a foreign key relationship, it must be a primary key.
 
+{:id="field-descriptors"}
 ### 3.4 Field descriptors
 
 A **field descriptor** describes a single field in a table schema (e.g., its name, description, format, constraints).
@@ -373,7 +377,7 @@ A **field descriptor** describes a single field in a table schema (e.g., its nam
 
 6. A field descriptor MUST have a `type` property, indicating the data type of values in the field (e.g., `string`, `number`). A `type` property MUST follow the [Table schema specification][field.type].
 
-7. A field descriptor SHOULD have a `format` property, indicating how values should be parsed. A `format` property MUST follow the [Table schema specification](field.format).
+7. A field descriptor SHOULD have a `format` property, indicating how values should be parsed. A `format` property MUST follow the [Table schema specification][field.format].
 
 8. A field descriptor MAY have a `namespace` property, with an abbreviation of the namespace of the source term (e.g., `dwc`, `dcterms`).
 
@@ -393,5 +397,5 @@ A **field descriptor** describes a single field in a table schema (e.g., its nam
 {:id="dwc-dp-tables"}
 ## 4. DwC-DP tables (non-normative)
 
-- **Reserved table names**: see the `enum` values for `dwc-dp-resource-names` in the Darwin Core Profile at http://rs.tdwg.org/dwc-dp/1.0/dwc-dp-profile.json
-- **Table schemas**: see the `tableSchemas` at http://rs.tdwg.org/dwc-dp/1.0/table-schemas
+- **Reserved table names**: see the `enum` values for `dwc-dp-resource-names` in the Darwin Core Profile at https://rs.tdwg.org/dwc-dp/1.0/dwc-dp-profile.json
+- **Table schemas**: see the `tableSchemas` at https://rs.tdwg.org/dwc-dp/1.0/table-schemas
