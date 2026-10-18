@@ -14,27 +14,23 @@
         "text": "---"
       },
       {
-        "text": "Vocabulario de Edad Cronométrica",
-        "href": "https://chrono.tdwg.org/list/"
+        "text": "",
+        "href": ""
       },
       {
-        "text": "Vocabulario de Extensión Humboldt",
-        "href": "https://eco.tdwg.org/list/"
+        "text": "",
+        "href": ""
       },
       {
-        "text": "---"
+        "text": "",
+        "href": ""
       },
       {
-        "text": "Vocabulario controlado Medios de establecimiento",
-        "href": "/es/em/"
+        "text": ""
       },
       {
-        "text": "Vocabulario controlado Grado de establecimiento",
-        "href": "/es/doe/"
-      },
-      {
-        "text": "Vocabulario controlado Ruta de introducción",
-        "href": "/es/pw/"
+        "text": "",
+        "href": ""
       }
     ]
   },
@@ -46,58 +42,106 @@
         "href": "/es/terms/"
       },
       {
-        "text": "---"
+        "text": "",
+        "href": ""
       },
       {
-        "text": "Referencia rápida Extensión Edad Cronométrica",
-        "href": "https://chrono.tdwg.org/terms/"
+        "text": ""
       },
       {
-        "text": "Referencia Rápida de la Extensión Humboldt",
-        "href": "https://eco.tdwg.org/terms/"
+        "text": "",
+        "href": ""
       },
       {
-        "text": "---"
+        "text": "",
+        "href": ""
       },
       {
-        "text": "Modelo conceptual",
-        "href": "/es/cm/"
+        "text": "",
+        "href": ""
       },
       {
-        "text": "Darwin Core simple",
-        "href": "/es/simple/"
+        "text": ""
       },
       {
-        "text": "Texto (archivo Darwin Core)",
-        "href": "/es/text/"
+        "text": "",
+        "href": ""
       },
       {
-        "text": "Data Package (Darwin Core Data Package)",
-        "href": "/es/dp/"
+        "text": "",
+        "href": ""
       },
       {
-        "text": "RDF",
-        "href": "/es/rdf/"
+        "text": "",
+        "href": ""
       },
       {
-        "text": "XML",
-        "href": "/es/xml/"
+        "text": "",
+        "href": ""
       },
       {
-        "text": "Política de espacios de nombres",
-        "href": "/es/namespace/"
+        "text": ""
       },
       {
-        "text": "---"
+        "text": "",
+        "href": ""
       },
       {
-        "text": "Preguntas & respuestas",
-        "href": "https://github.com/tdwg/dwc-qa/blob/master/README.md"
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
       }
     ]
   },
   {
     "text": "GitHub",
     "href": "https://github.com/tdwg/dwc"
+  },
+  {
+    "text": "文A",
+    "menu": [
+      {
+        "text": "English",
+        "href": "/es/"
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": ""
+      }
+    ]
   }
 ]
