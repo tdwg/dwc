@@ -14,11 +14,11 @@ This document is intended to be an easy-to-read reference of the currently recom
 
 **助けが必要ですか？** Darwin Core の使い方の詳細については [Darwin Core Q&A サイト](https://github.com/tdwg/dwc-qa/blob/master/README.md)をご覧ください。この他の質問がありますか？ [GitHub の dwc-qa issues ページ](https://github.com/tdwg/dwc-qa/issues)に新しいイシュー（質問/問題）を投稿するか、あるいは[フォーム](https://tinyurl.com/darwin-qa)を使用してください。
 
-**Need to cite Darwin Core?** See the [Cite Darwin Core](https://dwc.tdwg.org/terms/#cite-darwin-core) section at the bottom of this document.
+**Need to cite Darwin Core?** See the [Cite Darwin Core](#cite-darwin-core) section at the bottom of this document.
 
-**貢献したいですか？** 変更の提案方法も含め、Darwin Core 標準に貢献する方法については、[貢献のためのガイドライン](https://github.com/tdwg/dwc/blob/master/.github/CONTRIBUTING.md)をご覧ください。
+**Want to contribute?** For information about how to contribute to the Darwin Core Standard, including how to propose changes, see the [Guidelines for contributing](../contributing/).
 
-This page is not part of the standard, but combines the normative term names and definitions with the non-normative notes and examples that are meant to help people to use the terms consistently. Definitions, notes, and examples may include namespace abbreviations (e.g., "dwc:"). これらは、その単語の持つ意味が、その名前空間で定義された用語を非常に厳密に指すということを示すために含まれています。したがって、dwc:Event は https://dwc.tdwg.org/terms/#event で定義されている、Darwin Core の Event を意味します。 Capitalized terms that follow a namespace abbreviation, such as dwc:Occurrence, are class terms, which are a special category of terms used to group sets of property terms (terms that begin with lower case names that follow the namespace abbreviation, e.g., dwc:eventID) for convenience. Comprehensive metadata for current and obsolete terms from Darwin Core and borrowed standards are found in the document [List of Darwin Core terms](../list/).
+This page is not part of the standard, but combines the normative term names and definitions with the non-normative notes and examples that are meant to help people to use the terms consistently. Definitions, notes, and examples may include namespace abbreviations (e.g., "dwc:"). これらは、その単語の持つ意味が、その名前空間で定義された用語を非常に厳密に指すということを示すために含まれています。 Thus, dwc:Event means Event as defined by Darwin Core at **https://dwc.tdwg.org/terms/#event**. Capitalized terms that follow a namespace abbreviation, such as dwc:Occurrence, are class terms, which are a special category of terms used to group sets of property terms (terms that begin with lower case names that follow the namespace abbreviation, e.g., dwc:eventID) for convenience. Comprehensive metadata for current and obsolete terms from Darwin Core and borrowed standards are found in the document [List of Darwin Core terms](../list/).
 
 Additional resources can be found in the [Darwin Core GitHub repository](https://github.com/tdwg/dwc), including a [directory](https://github.com/tdwg/dwc/tree/master/dist) of CSV header and list of terms files for Darwin Core Archive Cores and Extensions.
 
@@ -30,7 +30,7 @@ Additional resources can be found in the [Darwin Core GitHub repository](https:/
 このカテゴリには、データセット内のあらゆる種類のレコードに適用される可能性がある一般的な用語が含まれています。
 {% endif %}
 {% if class_group.label == 'UseWithIRI' %}
-`UseWithIRI`に関する詳細情報については、[RDF ガイドのセクション 2.5](https://dwc.tdwg.org/rdf/#25-terms-in-the-dwciri-namespace-normative) をご覧ください。
+For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](../rdf/#25-terms-in-the-dwciri-namespace-normative).
 {% endif %}
 {% if class_group.terms | length > 0 %}
 
