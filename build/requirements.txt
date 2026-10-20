@@ -2,3 +2,7 @@ jinja2
 pandas
 PyYAML
 requests
+frictionless
+jsonschema
+referencing
+lxml

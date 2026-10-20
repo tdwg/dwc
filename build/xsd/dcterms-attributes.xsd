@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    targetNamespace="http://purl.org/dc/terms/"
+    elementFormDefault="qualified"
+    attributeFormDefault="unqualified">
+
+    <xs:annotation>
+        <xs:documentation>
+            TDWG compatibility schema for validating the established Darwin Core
+            Archive XML schema serialization.
+
+            This is not the DCMI dcterms.xsd schema and does not define or replace
+            DCMI Metadata Terms. The authoritative DCMI Terms vocabulary is
+            maintained by the Dublin Core Metadata Initiative at:
+            https://www.dublincore.org/specifications/dublin-core/dcmi-terms/
+
+            DCMI's historical XML Schema for the DCMI Terms namespace is:
+            https://www.dublincore.org/schemas/xmls/qdc/2008/02/11/dcterms.xsd
+
+            That schema represents DCMI Terms as XML elements. Darwin Core Archive
+            schema documents have historically serialized selected DCMI Terms as
+            XML attributes. The declarations below exist solely to allow an XML
+            Schema 1.0 validator to validate that established DwC-A serialization.
+        </xs:documentation>
+    </xs:annotation>
+
+    <xs:attribute name="title" type="xs:string"/>
+    <xs:attribute name="creator" type="xs:string"/>
+    <xs:attribute name="issued" type="xs:string"/>
+    <xs:attribute name="description" type="xs:string"/>
+    <xs:attribute name="relation" type="xs:string"/>
+    <xs:attribute name="subject" type="xs:string"/>
+    <xs:attribute name="source" type="xs:string"/>
+    <xs:attribute name="isPartOf" type="xs:string"/>
+
+</xs:schema>

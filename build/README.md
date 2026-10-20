@@ -1,91 +1,1090 @@
-# Workflow for generating a new version of Darwin Core
+# Building Darwin Core artifacts
 
-![workflow diagram](workflow_diagram.png)
+The `build` directory contains the configuration, templates, validation
+resources, and Python code used to generate Darwin Core documentation and
+machine-readable artifacts.
 
-> [!WARNING]
-> *It is highly recommended that you do not hand-edit the raw CSVs with a text editor.* Use Libre Office (NOT Excel). This will reliably open, close, and edit the file while preserving and escaping commas, quotes, etc. and also not mess up the UTF-8 encoding if you set it up properly.
+The build is controlled primarily by:
 
-The definitive versions of term definitions are stored in the [rs.tdwg.org repository](https://github.com/tdwg/rs.tdwg.org/).  Generating a new version of Darwin Core requires us to make changes to that repository, then to ensure downstream results are updated (the Darwin Core website, IPT extensions etc).
+- `build_artifacts.py` — the build script;
+- `build_artifacts.yaml` — the build configuration;
+- `requirements.txt` — required Python packages; and
+- artifact-specific templates and supporting files in this directory.
 
-## Prepare source CSV files
+The build is designed to generate the complete configured Darwin Core artifact
+state in one deterministic, transactional run from authoritative inputs.
 
-> [!NOTE] 
+# 1 Introduction
 
-> These instructions are abbreviated from more detailed instructions [here](https://github.com/tdwg/rs.tdwg.org/blob/master/process/process-vocabulary.md#3-detailed-workflow-steps).
+## 1.1 Audience
 
-1. Create a source data CSV file for each of the namespaces that has terms that have changed. [This directory](https://github.com/tdwg/rs.tdwg.org/tree/master/process/dwc-revisions/) has examples from previous updates to Darwin Core. You can get the column headers by downloading a CSV for a previous update to that namespace, then deleting all of the data rows. For example, [here](https://github.com/tdwg/rs.tdwg.org/blob/master/process/dwc-revisions/eco-2025-07-10/ecoiri.csv) is an update to terms in the `ecoiri:` namespace and [here](https://github.com/tdwg/rs.tdwg.org/blob/master/process/dwc-revisions/em-2025-06-12/establishmentmeans_terms_2025-06-12.csv) is an update to the `dwcem:` namespace. For historical reasons, different column headers have been used for the main vocabularies and the controlled vocabularies, so that's why you should use a previous example.
-2. A source data CSV MUST have a row for each term that has changed (modified or added). For existing terms that have changed, it is safest to start by copying the existing data cells for a term and then modifying them with the changes. The CSVs that contain the existing data for various namespaces are as follows:
-   * [`dwc:` terms](https://github.com/tdwg/rs.tdwg.org/blob/master/terms/terms.csv),
-   * [`dwciri:` terms](https://github.com/tdwg/rs.tdwg.org/blob/master/iri/iri.csv),
-   * [`dc:` terms](https://github.com/tdwg/rs.tdwg.org/blob/master/dc-for-dwc/dc-for-dwc.csv),
-   * [`dcterms:` terms](https://github.com/tdwg/rs.tdwg.org/blob/master/dcterms-for-dwc/dcterms-for-dwc.csv),
-   * [`establishmentMeans:` terms](https://github.com/tdwg/rs.tdwg.org/blob/master/establishmentMeans/establishmentMeans.csv)
-   * [`degreeOfEstablishment:` terms](https://github.com/tdwg/rs.tdwg.org/blob/master/degreeOfEstablishment/degreeOfEstablishment.csv)
-   * [`pathway:` terms](https://github.com/tdwg/rs.tdwg.org/blob/master/pathway/pathway.csv)
-   * [`ac:` terms](https://github.com/tdwg/rs.tdwg.org/blob/master/ac-for-dwc/ac-for-dwc.csv),
-Note that these CSVs contain some columns with machine-generated metadata, so make sure that the data you copy into your source CSV file lines up correctly with the column headers.
-3. If a new term is being added, fill in a new row anywhere below the header row. The row order is unimportant.
-4. Under normal circumstances, you should not have to add new columns to the tables. If the decision is made to add term metadata properties and thus add columns for them, special care must be taken. This is not for the faint of heart! The new columns must be added to every file used as source data for the various scripts and the column header mapping files also need to be edited. See [this page](https://github.com/tdwg/rs.tdwg.org/blob/master/process/process-vocabulary.md#31-modifying-the-column-header-mapping-file) for more details about the relationship between column headers and the RDF properties they represent. In addition to modifying the existing or default column mapping tables, the various document build scripts would also need to be modified in order to make the new term properties show up on the page. DO NOT ever delete columns! If you want to eliminate values for a property, just leave empty strings in all of the cells of that property's column and they will be ignored by the scripts.
+This document is intended primarily for Darwin Core maintainers preparing,
+reviewing, or reconstructing Darwin Core release artifacts. It may also be used
+by developers working on the build machinery or by reviewers generating draft
+artifacts from a fork or working branch.
 
-## Preparing the List of Terms document metadata YAML files
+## 1.2 Scope and current build model
 
-5. Each List of Terms document has two YAML files that contain the information necessary to generate the document header: `authors_configuration.yaml` and `document_configuration.yaml`. For existing lists of terms, these files will only need to be edited if there are changes to the authors, or the document title and abstract. If a new List of Terms document is created for a new vocabulary, these files will need to be created by modifying the values of one of the existing files found in an appropriate subdirectory of [this directory](https://github.com/tdwg/rs.tdwg.org/tree/master/process/document_metadata_processing). For more details, see [steps 7 and 8 here](https://github.com/tdwg/rs.tdwg.org/blob/master/process/process-vocabulary.md#3-detailed-workflow-steps). 
+`build_artifacts.py` is a release-level artifact builder. One invocation uses a
+selected Darwin Core source/configuration state together with one selected
+`rs.tdwg.org` source state to determine and generate the complete configured
+current artifact state.
 
-## Run the processing script
+The selected `rs.tdwg.org` state is an indivisible build input. It supplies:
 
-> [!NOTE]
-> Because the `rs.tdwg.org` repository may be managed by people who are not part of the DwC Maintenance Group, it is likely that people who want to generate draft documents for proposed changes will not have write access to `rs.tdwg.org`. In that case, it is possible to generate the drafts using data that has been updated in a fork of `rs.tdwg.org`. Once the proposed changes have been ratified, the source CSV files can be transferred to the TDWG `rs.tdwg.org` repo through a pull request. The `rs.tdwg.org` maintainers (currently Steve Baskauf and Matt Blissett) can then process the data as described below so that it is available from that authoritative source. For details of this process, see the [Generating drafts](https://github.com/tdwg/rs.tdwg.org/blob/master/process/process-vocabulary.md#23-generating-drafts) summary.
+- current term and term-version metadata;
+- current Document and Document-version metadata;
+- controlled-vocabulary source data and related metadata;
+- metadata required for generated human-readable documents; and
+- for independently versioned DwC-A artifacts, the previously published
+  canonical artifact used as the comparison baseline and as the source of the
+  current immutable publication identity.
 
-The details of the following steps are [here](https://github.com/tdwg/rs.tdwg.org/blob/master/process/process-vocabulary.md#3-detailed-workflow-steps).
+The same source-selection rule applies throughout the build. When `--rspath`
+is supplied, all applicable `rs.tdwg.org` inputs are read from that local
+checkout. Otherwise they are read from the configured `rs.tdwg.org` GitHub
+repository and branch.
 
-6. Create a fork of the [rs.tdwg.org repo](https://github.com/tdwg/rs.tdwg.org). We have been saving copies of the changes in [this directory](https://github.com/tdwg/rs.tdwg.org/tree/master/process/dwc-revisions) so that we can easily see what's been changed for each past version. We create a dated subdirectory for each revision so that it's easier to see what changes were made in past updates.
-7. You need to have two YAML files before starting: config.yaml and vocab.yaml . There are examples in the saved data folders. Provide an appropriate path as a value for the `modifications_file_path` key for each namespace in the configuration file [config.yaml](https://github.com/tdwg/rs.tdwg.org/blob/master/process/config.yaml) so that the path points to the subdirectory and filename of the source CSV for changes in that namespace. We have been saving copies of these configuration files with each update in the appropriate update subfolder, so you can look at [the configuration file that goes along with the CSV files in the same directory](https://github.com/tdwg/rs.tdwg.org/blob/master/process/dwc-revisions/dwc-revisions-2023-09-18/config.yaml). Only include data for the namespaces that will be updated.
-8. If you need to add or modify the `authors_configuration.yaml` or `document_configuration.yaml` files containing metadata about the List of Terms document, place the modified files in an appropriately named subdirectory of the [document_metadata_processing](https://github.com/tdwg/rs.tdwg.org/tree/master/process/document_metadata_processing) directory. 
-9. When all of the source files are in place, make a commit, then create a working branch of the master. This will allow you to view drafts of the documents while retaining the ability to go back to the master if edits of the source data are necessary, and to maintain a copy of the repository containing only the source files.
-10. Run the [processing script](https://github.com/tdwg/rs.tdwg.org/blob/master/process/process.py) from the same directory as the configuration files. It's good to look at the diffs for all of the files to make sure that they look sensible.
-11. **Dublin Core changes only.** There are some manual edits that need to be made if there are changes to either of the Dublin Core namespace terms. The versions don't get handled very automatically, so make the same changes to the [dcterms: version CSV](https://github.com/tdwg/rs.tdwg.org/blob/master/dcterms-for-dwc-versions/dcterms-for-dwc-versions.csv) or [dc: version CSV](https://github.com/tdwg/rs.tdwg.org/blob/master/dc-for-dwc-versions/dc-for-dwc-versions.csv) as were made to the main term CSVs.
-12. **Dublin Core changes only.** The Dublin Core versions also need to be manually added for the new termlist version in the [termlist versions members CSV](https://github.com/tdwg/rs.tdwg.org/blob/master/term-lists-versions/term-lists-versions-members.csv). In the future, this may get automated. The term-list-versions-replacements.csv also must be manually updated.
-13. Run the [document metadata processing script](https://github.com/tdwg/rs.tdwg.org/blob/master/process/document_metadata_processing/tdwg_docs_metadata_update.py). See [these notes](https://github.com/tdwg/rs.tdwg.org/blob/master/process/process-vocabulary.md#5-managing-documents-metadata-via-python-script) for more information. Review the diffs carefully to make sure everything is OK.
-14. Push the branch to GitHub. It can then be used to generate drafts by using appropriate command line options with the build script.
-15. If this is the final processing prior to ratification, create a pull request to merge the master (not the branch containing the processed data) from the fork to the TDWG rs.tdwg.org, with a comment that the changes are going to the Executive Committee for ratification. When ratification is attained, the `rs.tdwg.org` maintainers will update the `config.yaml` file with the final ratification date and run the processing scripts. The updated data in the rs.tdwg.org repo can then be used by the DwC Maintenance Group to build the final List of Terms document.
-16. The structure and order of listing of terms in the Quick Reference Guide and derivative CSVs is controlled by the file [qrg-list.csv](https://github.com/tdwg/dwc/blob/master/build/qrg-list.csv). It is very sensitive to the position of the class terms, which controls the division of the QRG into sections. Also, `http://rs.tdwg.org/dwc/iri/behavior` must be the first term in the section that will be labeled "Use with IRI". So it must be edited with some care. If new terms are added, their IRIs must be added in the proper place in this document in order for them to appear in the QRG and derivative CSVs. Make a commit before proceding so that your edits to `qrg-list.csv` will be saved if you need to revert.
+Publication state for independently versioned DwC-A artifacts is not inferred
+from generated files in the Darwin Core working tree. The selected
+`rs.tdwg.org` state supplies that comparison baseline and publication identity.
+Some document-generation operations are a separate case: when a current
+human-readable Document is being versioned, the build can preserve the existing
+current document as a dated historical publication record.
 
-## Update the Darwin Core website, extensions and so on
+## 1.3 Relationship between `rs.tdwg.org` processing and the Darwin Core build
 
-17. Create a branch of the [Darwin Core repo](https://github.com/tdwg/dwc).
-18. There is a script called [update_previous_doc.py](https://github.com/tdwg/dwc/blob/master/build/update_previous_doc.py) that must be run before actually building the term list. It requires the updated documents metadata uploaded to rs.tdwg.org in step 10 above. It takes the current document (index.md) and transforms it into a previous version (named by the version date). There are two command line arguments that are required `--slug`, which provides the last part of the document URL, and `--dir`, which gives the name of the directory within the process/document_metadata_processing/ folder of the rs.tdwg.org GitHub repo that contains the document_configuration.yaml file. If you are building the List of Terms from a branch, provide the GitHub user name using the `--ghuser` argument (default "tdwg") and the branch using the `--branch` argument (default "master"). If you are building from the final data in TDWG's rs.tdwg.org repo, omit the last two arguments. **Important note:** if you are updating several List of Terms documents, you need to run this script for each document before proceeding to avoid overwriting the past version before it gets renamed.
+Changes to Darwin Core terms, borrowed terms, Document metadata, Standard
+composition, and related authoritative metadata are prepared and processed in
+[`rs.tdwg.org`](https://github.com/tdwg/rs.tdwg.org/) before the corresponding
+Darwin Core artifact build.
 
-19. Run the three scripts (in any order) and check the diffs for the newly generated files.  As with the previous script, if the branch is other than the master, use the `--branch` command line option to specify a different branch and the `--ghuser` option if building from a fork. **NOTE:** when making drafts for proofreading or review by the Executive, only the build-webpages.py script needs to be run.
-   i. [build-csv_derivatives.py](https://github.com/tdwg/dwc/blob/master/build/build-csv_derivatives.py) builds the derivative CSV files in the [dist/](https://github.com/tdwg/dwc/tree/master/dist) directory.
-   ii. [build-webpages.py](https://github.com/tdwg/dwc/blob/master/build/build-webpages.py) updates the website documents (HTML and Markdown) in the [docs/](https://github.com/tdwg/dwc/tree/master/docs) directory.
-   iii. [build-term_versions.py](https://github.com/tdwg/dwc/blob/master/build/build-term_versions.py) updates the [term_versions.csv](https://github.com/tdwg/dwc/blob/master/vocabulary/term_versions.csv) file in the [vocabulary/](https://github.com/tdwg/dwc/tree/master/vocabulary) directory.
-20. Create a pull request for the new branch.
-21. When the branch has been reviewed carefully, merge the branch. The new pages should be live as soon as Jekyll rebuilds them on GitHub.
-22. Prompt GBIF to update the Darwin Core Archive extensions in https://rs.gbif.org, if necessary by opening an issue in [the rs.gbif.org repository](https://github.com/gbif/rs.gbif.org).
+See the [`rs.tdwg.org` vocabulary and Document processing
+documentation](https://github.com/tdwg/rs.tdwg.org/blob/master/process/process-vocabulary.md)
+for that workflow.
 
-## Build scripts
+For a release build, the selected `rs.tdwg.org` state should normally contain:
 
-The build scripts `build-csv_derivatives.py`, `build-webpages.py` and `build-term_versions.py` use as input the [rs.tdwg.org](http://github.com/tdwg/rs.tdwg.org) repository, either online (branch given by `--branch`) or local (path given by `--rs-path`).
+1. the processed authoritative metadata for the target release; and
+2. the previously published canonical DwC-A artifacts and the existing
+   immutable publication records needed to resolve their current identities.
 
-The `build-webpages.py` script also uses header information from `*/termlist-header.en.md` and `termlist-footer.en.md`. The constructed Markdown documents are saved as `/docs/list/index.md`, `/docs/em/index.md`, `/docs/doe/index.md` and `/docs/pathway/index.md`.  In addition it builds the Quick Reference guide with the terms listed in [qrg-template/qrg-list.csv](qrg-template/qrg-list.csv) and the template `qrg-template/terms.en.jinja`. All of these are also built in other languages, configured within the script. This script is run automatically as a GitHub Action as translations are added in Crowdin.
+It should not yet contain the new DwC-A artifact outputs produced by the Darwin
+Core build being performed. Those outputs are generated in the Darwin Core
+repository and can subsequently be copied into the appropriate publication
+locations in `rs.tdwg.org` as part of the release process.
 
-The first time any of these scripts is run, install the required libraries:
+This ordering allows the build to compare a fully rendered target-release
+candidate with the artifact that is actually published in the selected
+`rs.tdwg.org` state.
+
+## 1.4 Determinism, generation, and publication
+
+The intended invariant is:
+
+> Given the same Darwin Core source/configuration state and the same selected
+> `rs.tdwg.org` source state, `build_artifacts.py` determines the same complete
+> generated artifact state.
+
+For independently versioned DwC-A artifacts, version identity is part of that
+deterministic result:
+
+- if no canonical artifact exists in the selected `rs.tdwg.org` state, the
+  build generates an initial publication using the configured `release_date`;
+- if the rendered candidate differs substantively from the published canonical,
+  the build generates a new immutable version using `release_date`; and
+- if the candidate is substantively unchanged, the build retains the immutable
+  publication identity identified by the published canonical and reconstructs
+  that current artifact state.
+
+Generating a local new version is therefore a deterministic build result.
+Publication occurs later when reviewed generated artifacts are incorporated into
+the publication repository and released through the normal TDWG process.
+
+# 2 Build recipe
+
+For a normal Darwin Core development or release cycle:
+
+1. **Prepare and process the authoritative `rs.tdwg.org` release state.** Start
+   from the state that should precede the release, preserve the previously
+   published DwC-A canonical artifacts, and complete the applicable
+   `rs.tdwg.org` release processing. See [3.1](#31-prepare-or-select-the-rstdwgorg-source-state).
+2. **Prepare `build_artifacts.yaml`.** Review `release_date`, the selected
+   source repository, enabled artifacts and documents, languages, and the
+   declared DwC-DP version. See [3.2](#32-prepare-the-build-configuration).
+3. **Run a complete dry run.** Use `--dry-run` so the build performs preflight,
+   generation, version determination, and validation in staging without
+   committing artifact outputs to the Darwin Core working tree. See
+   [3.3](#33-run-a-dry-run).
+4. **Review the proposed artifact state.** Inspect lifecycle decisions,
+   validation results, proposed create/update/remove counts, and the detailed
+   build log. Investigate unexpected initial publications or new versions. See
+   [3.4](#34-review-the-dry-run).
+5. **Run the normal build.** Use the same source and configuration without
+   `--dry-run`. The validated staged transaction is committed transactionally to the
+   Darwin Core working tree. See [3.5](#35-run-the-build).
+6. **Review the generated result.** Inspect console output, the build log,
+   `git status`, the repository diff, generated documents, schemas, and
+   derivatives. See [3.6](#36-review-the-generated-result).
+7. **Review the rendered website locally.** Serve the generated `docs/` tree
+   with Jekyll and review the site through the browser, including navigation,
+   generated documents, QRG/Designer links, and localized pages. See
+   [3.7](#37-review-the-website-locally).
+8. **Correct and rerun as needed.** Make corrections in authoritative inputs,
+   configuration, templates, translations, or other build sources and rebuild.
+   See [3.8](#38-correct-and-rerun).
+9. **Run the identical build again.** An unchanged same-input rerun should
+   report `Transaction committed: 0 repository files updated.` See
+   [3.9](#39-confirm-idempotence).
+10. **Commit the reviewed candidate.** Commit only the intended source,
+    configuration, and generated changes after local review. See
+    [3.10](#310-commit-the-reviewed-candidate).
+11. **Publish the committed candidate to the development preview site.** Push
+    the candidate branch configured by `.github/workflows/dev-preview.yml`; the
+    workflow renders the committed `docs/` tree with Jekyll and deploys it to
+    `https://dwc-dev-preview.tdwg.org/` for public scrutiny. See
+    [3.11](#311-publish-the-development-preview).
+12. **Proceed through formal review and publication.** After review/approval,
+    publish the generated artifacts and documents through the normal Darwin
+    Core/TDWG release process. See [3.12](#312-final-review-and-publication).
+
+When changing build machinery or artifact lifecycle behavior, the
+[clean-build reconstruction test](#314-clean-build-reconstruction-test) is also
+recommended.
+
+# 3 Detailed workflow
+
+## 3.1 Prepare or select the `rs.tdwg.org` source state
+
+The `rs.tdwg.org` source used by the build must represent the release state
+against which the Darwin Core artifacts are to be generated.
+
+For a normal release:
+
+1. begin with the `rs.tdwg.org` state that immediately precedes the release;
+2. preserve the previously published DwC-A canonical and immutable artifacts;
+3. prepare the release inputs and run `process/process.py` as described in the
+   `rs.tdwg.org` processing documentation;
+4. review and correct that processed state until it is stable; and
+5. point the Darwin Core build at that same state.
+
+For local work, use:
+
+```bash
+python build_artifacts.py --rspath /path/to/rs.tdwg.org --dry-run
+```
+
+For a remote branch or fork, configure `source_repository` in
+`build_artifacts.yaml` or use `--ghuser` and `--branch`.
+
+The important rule is that **all `rs.tdwg.org` information for one build must
+come from the same selected source state**. Do not combine target-release term
+metadata from one checkout with canonical artifact baselines from another.
+
+### Previously published canonical artifacts
+
+For each independently versioned DwC-A artifact, the configured canonical path
+is looked up in the selected `rs.tdwg.org` state.
+
+- If the canonical exists, it is the comparison baseline.
+- If it does not exist, the artifact is treated as an initial publication.
+
+For core, extension, and controlled-vocabulary XML artifacts, the published
+canonical also identifies its current immutable version through
+`dcterms:source`.
+
+A local `rs.tdwg.org` checkout intended to support a release build must
+therefore retain previously published canonical artifacts even though the new
+release's generated artifacts have not yet been copied into it.
+
+## 3.2 Prepare the build configuration
+
+`build_artifacts.yaml` is the primary build configuration. Review at least:
+
+- `release_date`;
+- `source_repository`;
+- enabled artifacts;
+- enabled documents;
+- configured languages;
+- DwC-DP source files and declared package version;
+- controlled-vocabulary configuration;
+- Quick Reference Guide configuration; and
+- derivative-output configuration.
+
+The configured `release_date` is the date assigned to independently versioned
+artifacts that are initial publications or are found to have changed
+substantively. It is not imposed on unchanged independently versioned
+artifacts.
+
+Normally, maintainers should change build behavior through authoritative
+source data, `build_artifacts.yaml`, or templates rather than by editing
+`build_artifacts.py`.
+
+## 3.3 Run a dry run
+
+For a local `rs.tdwg.org` source:
+
+```bash
+python build_artifacts.py \
+  --rspath /path/to/rs.tdwg.org \
+  --dry-run
+```
+
+A dry run follows the normal build path through:
+
+1. preflight validation;
+2. artifact lifecycle determination;
+3. complete generation in a temporary staging tree;
+4. DwC-DP validation;
+5. DwC-A XML Schema validation;
+6. construction of the proposed repository transaction; and
+7. transaction reporting.
+
+The final artifact transaction is not committed to the Darwin Core working
+tree.
+
+A successful dry run reports counts of files that the corresponding normal
+build would create, update, and remove. The detailed paths are recorded in the
+timestamped build log.
+
+Build logs are operational outputs and are written outside the artifact
+transaction, so a dry run can create a new log file even though artifact
+outputs remain unchanged.
+
+## 3.4 Review the dry run
+
+Review the console output and the log beneath `build/logs/`.
+
+For independently versioned DwC-A artifacts, confirm that each lifecycle result
+is expected:
+
+- **initial publication** — no canonical artifact exists at the configured path
+  in the selected `rs.tdwg.org` state;
+- **changed** — a published canonical exists but differs substantively from the
+  rendered candidate; or
+- **unchanged** — the candidate is substantively equivalent to the published
+  canonical and retains its existing immutable identity.
+
+An unexpected initial publication usually means either that the configured
+canonical path is wrong or that the selected `rs.tdwg.org` source state does
+not contain the expected previously published artifact.
+
+An unexpected new version should be investigated as a difference in
+source/configuration inputs or rendered artifact content. Do not alter a
+version decision manually merely to make the output look like an expected
+release.
+
+Also review warnings and validation output, including Quick Reference Guide
+coverage warnings and controlled-vocabulary resource checks.
+
+## 3.5 Run the build
+
+After the dry-run result is satisfactory, run the same command without
+`--dry-run`:
+
+```bash
+python build_artifacts.py --rspath /path/to/rs.tdwg.org
+```
+
+The build again performs preflight, generation, and validation in staging. Only
+if the staged build succeeds is the resulting transaction committed to the
+Darwin Core working tree.
+
+A successful run reports the number of repository files actually updated by
+the transaction. This number can be zero even though the build generated many
+files in staging, because byte-identical repository files are not rewritten.
+
+## 3.6 Review the generated result
+
+Review:
+
+```bash
+git diff --check
+git status --short
+git diff --stat
+git diff
+```
+
+Also inspect:
+
+- command-line warnings and validation results;
+- `build/logs/build_artifacts_YYYYMMDD-HHMMSS.log`;
+- generated DwC-A canonical and immutable artifacts;
+- DwC-A CSV derivatives;
+- the Darwin Core Schemas document;
+- DwC-DP profile and table schemas;
+- DwC-DP QRG, SQL, CSV headers, and Designer;
+- generated List-of-Terms and controlled-vocabulary documents; and
+- version dates and provenance pointers on independently versioned artifacts.
+
+Do not hand-edit generated current artifacts to make a persistent change.
+Correct the applicable authoritative input, configuration, or template and
+rerun the build.
+
+## 3.7 Review the website locally
+
+The repository diff is necessary but not sufficient for reviewing generated
+human-readable content. Review the rendered site through Jekyll before
+publishing a candidate for broader scrutiny.
+
+From the repository root:
+
+```bash
+cd docs
+bundle _2.3.23_ exec jekyll serve --livereload
+```
+
+Then review:
+
+```text
+http://127.0.0.1:4000/
+```
+
+Use the rendered website rather than the Markdown source as the primary
+human-readable review surface. Check at least:
+
+- the top-level navigation and all menu destinations;
+- the Darwin Core List of Terms and controlled-vocabulary pages;
+- the Conceptual Model, Data Package Guide, Schemas document, and other
+  configured Standard Documents;
+- the Quick Reference Guide and links between the QRG and Designer;
+- the DwC-DP Designer;
+- localized navigation and localized generated pages where applicable;
+- links to current and dated resources; and
+- obvious layout, missing-resource, or Jekyll-rendering failures.
+
+`--livereload` is useful during correction because the local site refreshes as
+generated or hand-maintained source files change. Stop the server before
+switching branches or performing repository cleanup if doing so would alter the
+served `docs/` tree.
+
+## 3.8 Correct and rerun
+
+If the proposed, generated, or rendered result is wrong, correct the
+authoritative input and rerun against the same selected `rs.tdwg.org` state.
+
+Depending on the problem, the correction may belong in:
+
+- the processed `rs.tdwg.org` state;
+- `build_artifacts.yaml`;
+- an artifact term-membership input;
+- a template;
+- a translation or controlled-vocabulary resource;
+- website navigation or other hand-maintained site source; or
+- another build source file.
+
+Do not hand-edit a generated current artifact to make a persistent correction.
+The build is intended to converge on the state represented by its current
+inputs. There is no need to preserve a generated Darwin Core output merely so
+that it can serve as the input to the next build.
+
+After corrections, repeat the dry run, normal build, repository review, and
+rendered-site review as appropriate.
+
+## 3.9 Confirm idempotence
+
+Run the identical normal build again without changing either repository state
+or configuration.
+
+The expected stable result is:
+
+```text
+Transaction committed: 0 repository files updated.
+```
+
+A non-zero transaction on an otherwise identical second run should be
+investigated before release.
+
+The intended invariant is stronger than simple file preservation: rebuilding
+from the same authoritative inputs must select the same artifact versions and
+produce the same current generated state.
+
+## 3.10 Commit the reviewed candidate
+
+Once the generated repository state and locally rendered website are
+satisfactory:
+
+1. inspect the complete diff;
+2. exclude local development files and build logs;
+3. commit the intended source/configuration and generated changes; and
+4. verify that the branch is clean except for any deliberately uncommitted work
+   that is outside the candidate.
+
+The development preview workflow deploys committed repository content. Do not
+rely on uncommitted local files when assessing what will appear on the preview
+site.
+
+## 3.11 Publish the development preview
+
+The Darwin Core repository includes:
+
+```text
+.github/workflows/dev-preview.yml
+```
+
+for publishing a candidate website to:
+
+```text
+https://dwc-dev-preview.tdwg.org/
+```
+
+Before pushing a candidate, verify that the workflow's `on.push.branches`
+setting names the branch intended for preview. The preview workflow should
+render the already-reviewed committed `docs/` tree; it should not rerun the
+Python artifact/page generation step against some other `rs.tdwg.org` source
+state.
+
+Push the reviewed candidate branch, for example:
+
+```bash
+git push -u origin BRANCH
+```
+
+A push to the branch configured in `dev-preview.yml` triggers the preview
+deployment. The workflow:
+
+1. checks out the committed Darwin Core branch;
+2. builds `./docs` with Jekyll into `./_site`; and
+3. synchronizes the rendered `_site/` tree to the TDWG development-preview
+   host.
+
+The deployment uses `rsync --delete`, so the preview site represents the
+rendered contents of the deployed candidate rather than an accumulation of
+files from earlier previews.
+
+After the workflow succeeds, review the public candidate at:
+
+```text
+https://dwc-dev-preview.tdwg.org/
+```
+
+Repeat the same substantive website checks performed locally. The public
+preview is particularly useful for Executive Committee review and other
+external scrutiny before production publication.
+
+If additional corrections are required, make them in the appropriate source,
+rerun the build as needed, repeat local Jekyll review, commit the correction,
+and push the candidate branch again.
+
+## 3.12 Final review and publication
+
+After the candidate has passed local and public preview review:
+
+1. conduct the applicable pull-request, Maintenance Group, Executive Committee,
+   or other required review;
+2. merge or otherwise approve the Darwin Core candidate according to the
+   applicable release procedure; and
+3. publish the generated artifacts and documents through the normal
+   Darwin Core/TDWG release process.
+
+For the `rs.tdwg.org` publication step, copy the reviewed build products to the
+appropriate canonical and immutable/version locations. In particular, the
+configured `dwc-a/` publication products become the published DwC-A canonical
+and versioned resources, and the complete configured `dwc-dp/` package output
+is copied to the appropriate declared DwC-DP version location. The next Darwin
+Core release build will then see the published DwC-A canonical artifacts as its
+comparison baseline.
+
+## 3.13 Generating drafts
+
+The same workflow can be used before ratification.
+
+Use a fork, branch, or local working copy of `rs.tdwg.org` that contains the
+draft processed metadata and the publication baseline that should apply to the
+draft build. Then use the corresponding Darwin Core branch/configuration to
+produce and review draft artifacts.
+
+A normal draft cycle is:
+
+1. prepare or correct the draft `rs.tdwg.org` release inputs;
+2. process them in `rs.tdwg.org`;
+3. run the Darwin Core build with `--dry-run`;
+4. inspect the proposed result;
+5. run the normal build when useful for document/artifact review;
+6. review the rendered website locally;
+7. correct authoritative inputs;
+8. rerun on the same branches; and
+9. when useful, commit and push the candidate to the development-preview branch
+   for external review.
+
+When the draft is finalized, use the actual ratification/release date and the
+appropriate pre-release publication state for the final release processing and
+build.
+
+## 3.14 Clean-build reconstruction test
+
+When build machinery or publication lifecycle behavior changes, a clean-build
+test can verify that generated Darwin Core artifacts are truly outputs rather
+than hidden inputs.
+
+Historical publication records require care. The build reconstructs the
+complete **current generated state**, not the complete historical archive of
+all old immutable artifacts and dated documents. Perform destructive clean
+build tests in a disposable checkout or remove only outputs that the build is
+responsible for reconstructing.
+
+A useful test sequence is:
+
+1. establish a known-good state and run the build until an identical rerun
+   reports zero repository updates;
+2. preserve the selected `rs.tdwg.org` source state, including its previously
+   published canonical artifact baselines;
+3. remove selected current generated products in the Darwin Core working tree;
+4. run the build again against the same `rs.tdwg.org` source;
+5. confirm that already published artifacts are recognized from
+   `rs.tdwg.org`, not from missing local Darwin Core files;
+6. confirm that the expected current canonical and immutable representations
+   are reconstructed and all validation succeeds; and
+7. run the identical build once more and confirm zero repository updates.
+
+A successful sequence demonstrates:
+
+```text
+stable generated state
+    -> idempotent build (0 updates)
+    -> deliberate deletion of current generated products
+    -> reconstruction from authoritative inputs and publication baseline
+    -> idempotent build (0 updates)
+```
+
+
+# 4 What `build_artifacts.py` generates
+
+This section summarizes the principal generated products. Exact output is
+controlled by `build_artifacts.yaml`.
+
+## 4.1 DwC-A core and extension XML artifacts
+
+Configured DwC-A core schemas are generated beneath:
+
+```text
+dwc-a/schemas/core/
+```
+
+Configured DwC-A extensions are generated beneath:
+
+```text
+dwc-a/schemas/extension/
+```
+
+For each maintained independently versioned artifact, the build generates the
+mutable canonical representation and the applicable immutable dated
+representation.
+
+Configured horizontal and vertical CSV derivatives are generated beneath:
+
+```text
+dist/dwc-a/
+```
+
+The XML core and extension schemas are validated against the generated current
+`extension.xsd` before the artifact transaction is committed.
+
+## 4.2 DwC-A `extension.xsd` and supporting schemas
+
+The build maintains:
+
+```text
+dwc-a/schemas/extension.xsd
+dwc-a/schemas/extension_YYYY-MM-DD.xsd
+dwc-a/schemas/dcterms-attributes.xsd
+dwc-a/schemas/xml.xsd
+```
+
+`extension.xsd` is independently versioned by substantive comparison with the
+canonical `extension.xsd` in the selected `rs.tdwg.org` state. If unchanged,
+the build identifies the applicable immutable dated XSD by matching published
+content. If changed or initial, the configured `release_date` supplies its new
+version date.
+
+`dcterms-attributes.xsd` and `xml.xsd` are supporting compatibility/validation
+resources rather than independently versioned Darwin Core artifacts.
+
+The source `extension.xsd` currently documents its intended future status as a
+non-normative part of Darwin Core, while the machine-readable
+`dcterms:isPartOf` relationship remains intentionally inactive pending the
+applicable review and ratification.
+
+## 4.3 Controlled-vocabulary XML artifacts
+
+Configured controlled-vocabulary XML artifacts are generated beneath:
+
+```text
+dwc-a/schemas/vocabulary/
+```
+
+They use the same independently versioned lifecycle as the core and extension
+XML artifacts: compare a fully rendered candidate with the canonical artifact
+in the selected `rs.tdwg.org` state, create a new dated version only when
+initial or substantively changed, and otherwise reconstruct the current
+published identity.
+
+Some vocabularies use alternative labels obtained from the GBIF Vocabulary
+service and/or a configured local cache. Preflight verifies the required
+resource according to the selected build mode before artifact outputs are
+committed.
+
+Controlled-vocabulary XML artifacts are not validated against `extension.xsd`
+because they use a different XML structure.
+
+## 4.4 Darwin Core Data Package
+
+The DwC-DP build can generate, as configured:
+
+- the Data Package profile;
+- table schemas;
+- header-only CSV files;
+- the Quick Reference Guide;
+- Quick Reference Guide images;
+- PostgreSQL DDL; and
+- the Designer.
+
+Generated package artifacts are written beneath `dwc-dp/`; derivatives are
+written beneath `dist/dwc-dp/` and `docs/dwc-dp/` as configured.
+
+The profile and table schemas are validated as part of the build.
+
+Unlike independently versioned DwC-A artifacts, DwC-DP does not use automatic
+published-state comparison to decide its package version. Its version is the
+value explicitly declared in `build_artifacts.yaml`. The configured `dwc-dp/`
+output is the complete build product for that declared package version and can
+subsequently be published as a unit to the corresponding `rs.tdwg.org/dwc-dp/`
+version location.
+
+## 4.5 Term-version history and CSV derivatives
+
+Depending on configuration, the build generates the complete Darwin Core
+term-version history in:
+
+```text
+vocabulary/term_versions.csv
+```
+
+It also generates configured horizontal and vertical CSV derivatives of the
+current term metadata beneath `dist/`.
+
+These products are derived from the selected authoritative `rs.tdwg.org` term
+and term-version state.
+
+## 4.6 Human-readable documents
+
+Depending on configuration, the build generates current human-readable
+resources beneath `docs/`, including:
+
+- the Darwin Core List of Terms;
+- controlled-vocabulary documents;
+- the Darwin Core Schemas document; and
+- localized Quick Reference Guide documentation.
+
+Document metadata come from the processed authoritative Document metadata in
+the selected `rs.tdwg.org` state.
+
+The Document lifecycle machinery can preserve the preceding current
+`index.md` as a dated historical document when a new Document version is being
+created. Historical dated documents are publication records and are not simply
+reconstructed from current metadata.
+
+## 4.7 Darwin Core Schemas document
+
+The Darwin Core Schemas document is generated from its template and the
+artifact lifecycle state determined during the same build.
+
+For maintained DwC-A schemas, it identifies the current immutable version of
+each configured core and extension schema. For DwC-DP, it links to the current
+package version declared in the build configuration.
+
+The Schemas document has its own Document lifecycle. Its version date is not a
+release clock imposed on the schemas it describes.
+
+## 4.8 Quick Reference Guide and navigation products
+
+The structure and ordering of terms in the Darwin Core Quick Reference Guide
+and associated derivatives are controlled by:
+
+```text
+qrg_template/qrg-list.csv
+```
+
+The positions of class terms in this file determine QRG sections. When new
+recommended terms are introduced, their IRIs must be added in the appropriate
+positions for them to appear in the QRG and its derivatives.
+
+The build reports recommended List-of-Terms properties that are absent from
+`qrg-list.csv`; such warnings should be reviewed during release preparation.
+
+The build also generates configured language-navigation files beneath
+`docs/_data/`.
+
+# 5 Publication lifecycle for independently versioned DwC-A artifacts
+
+## 5.1 Candidate and publication baseline
+
+For each independently versioned DwC-A artifact, preflight renders a complete
+candidate from current authoritative inputs before repository artifact outputs
+are committed.
+
+The candidate is compared with the canonical artifact at the configured
+publication path in the same selected `rs.tdwg.org` source state used for all
+other build metadata.
+
+The publication baseline is therefore external to the generated Darwin Core
+working-tree output. Deleting `dwc-a/` locally does not by itself imply an
+initial publication.
+
+## 5.2 Lifecycle states
+
+The lifecycle is:
+
+| Publication state | Canonical representation | Current immutable representation | New immutable version |
+| --- | --- | --- | --- |
+| Initial publication | generated | generated using `release_date` | yes |
+| Substantively changed | generated | generated using `release_date` | yes |
+| Unchanged | reconstructed | reconstructed using retained published identity | no |
+
+The lifecycle state follows deterministically from the selected inputs.
+
+## 5.3 Substantive XML comparison
+
+For independently versioned DwC-A XML artifacts, release bookkeeping is
+excluded from the substantive comparison. In particular, the comparison
+ignores:
+
+- `dc:issued`; and
+- the canonical `dcterms:source` pointer to the immutable version.
+
+A release-date change alone therefore does not manufacture a new artifact
+version.
+
+The comparison uses canonicalized XML so that irrelevant serialization
+variation does not control versioning.
+
+## 5.4 Canonical and immutable representations
+
+For core, extension, and controlled-vocabulary XML artifacts, the mutable
+canonical representation contains `dcterms:source` identifying the immutable
+dated representation to which it is equivalent. The immutable representation
+does not contain that canonical-to-version provenance pointer.
+
+When an artifact is unchanged, the published canonical representation in the
+selected `rs.tdwg.org` state supplies the identity of the current immutable
+version. The build then regenerates both current representations from
+authoritative inputs while retaining that version identity and date.
+
+The build does not copy the published canonical bytes into the Darwin Core
+working tree. Published state supplies the comparison baseline and publication
+identity; the artifact itself is regenerated.
+
+## 5.5 `extension.xsd`
+
+`extension.xsd` follows the same substantive principle but does not carry the
+same `dcterms:source` mechanism as the generated core/extension XML artifacts.
+
+When the canonical XSD is unchanged, the build determines its current immutable
+identity by locating the newest dated `extension_YYYY-MM-DD.xsd` in the same
+selected `rs.tdwg.org` state whose canonicalized content matches the canonical
+`extension.xsd`.
+
+When the canonical is absent or changed, `release_date` supplies the new
+immutable version date.
+
+## 5.6 Missing Darwin Core output does not affect publication state
+
+Publication state is determined from `rs.tdwg.org`, not from whether a
+corresponding generated file happens to exist in the Darwin Core working tree.
+
+Therefore:
+
+- deleting a generated local canonical does not turn an already published
+  artifact into an initial publication;
+- deleting a generated local immutable current version does not change its
+  retained publication identity; and
+- a clean reconstruction can regenerate the current artifact set from the
+  selected source states.
+
+## 5.7 Historical artifacts
+
+The build reconstructs the current generated artifact state. It does not claim
+to reconstruct every historical immutable artifact ever published.
+
+Historical immutable schema/vocabulary versions and dated historical documents
+may coexist with the current generated state and should be preserved unless a
+separate intentional repository-maintenance operation calls for changing or
+removing them.
+
+# 6 Transaction, validation, and reporting
+
+## 6.1 Preflight
+
+Preflight validates the configuration and the resources required to determine
+the complete build before committing artifact outputs.
+
+Checks include, as applicable:
+
+- build configuration structure;
+- availability and readability of selected `rs.tdwg.org` resources;
+- term metadata required by configured artifacts;
+- Document lifecycle metadata;
+- artifact publication state and current immutable identity;
+- required templates and term-membership files;
+- DwC-DP source structure;
+- controlled-vocabulary resources and caches; and
+- output-path prerequisites.
+
+Preflight also renders comparison candidates for independently versioned
+artifacts so that lifecycle state is known before generation of the staged
+repository transaction.
+
+## 6.2 Staging and generation
+
+After preflight succeeds, the build creates a temporary staging tree and
+generates the complete configured artifact state there. Repository artifact
+outputs remain unchanged during staging.
+
+Build-owned directories that are defined as complete generated products are
+compared as directory trees so that stale generated files can be removed when
+the transaction is committed.
+
+## 6.3 Validation
+
+Validation occurs before the artifact transaction is committed.
+
+The build validates, as configured:
+
+- DwC-DP profile and table schemas; and
+- generated DwC-A core and extension XML schemas against the staged
+  `extension.xsd`.
+
+A validation failure stops the build before staged artifact outputs are
+committed.
+
+## 6.4 Dry run and normal commit
+
+`--dry-run` and a normal build calculate and generate the same proposed artifact
+state.
+
+The difference is only the final transaction step:
+
+```text
+normal build
+  preflight -> generate -> validate -> calculate transaction -> commit
+
+--dry-run
+  preflight -> generate -> validate -> calculate transaction -> report -> discard staging
+```
+
+A dry run reports create/update/remove counts and records the affected paths in
+the build log.
+
+A normal build applies the staged transaction only after successful generation
+and validation. Files that are byte-identical to existing repository files are
+not rewritten.
+
+## 6.5 Failure behavior
+
+If preflight fails, no artifact transaction is started. If generation or
+validation fails, the staged artifact transaction is discarded rather than
+intentionally applied as a partial repository update.
+
+The final commit mechanism also uses backups/restoration logic for generated
+directory replacement so that a failure during transaction publication does
+not intentionally leave a partially replaced artifact state.
+
+Operational log files are outside the artifact transaction and may be written
+even when a build or dry run does not commit artifact outputs.
+
+## 6.6 Build reporting and logs
+
+Each run writes a timestamped log beneath:
+
+```text
+build/logs/
+```
+
+with a name of the form:
+
+```text
+build_artifacts_YYYYMMDD-HHMMSS.log
+```
+
+The console output gives the operational summary. The log contains additional
+detail, including lifecycle decisions and, for dry runs, the paths in the
+proposed create/update/remove transaction.
+
+Build logs are working/review files and are not intended to be committed as
+Darwin Core release artifacts.
+
+# 7 Reference
+
+## 7.1 Installation
+
+Install the required Python packages from the `build` directory:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Then run the scripts from the `build` directory:
+Run the build from this directory.
 
-```bash
-python3 build-csv_derivatives.py
-python3 build-webpages.py
-python3 build-term_versions.py
+DwC-A XML Schema validation requires `lxml`; it is included in
+`requirements.txt`.
+
+## 7.2 Build configuration
+
+`build_artifacts.yaml` documents the configured build inputs and identifies
+which artifacts and documents are generated.
+
+### `release_date`
+
+The top-level setting:
+
+```yaml
+release_date: YYYY-MM-DD
 ```
 
-## Note about term dereferencing
+is the date assigned to an independently versioned artifact when the build
+determines that the artifact is an initial publication or differs
+substantively from the published canonical in the selected `rs.tdwg.org`
+state.
 
-Term dereferencing to human and machine readable representations is handled by a server managed by GBIF. The new metadata gets fed into the production version of the server when there is a new release of the `rs.tdwg.org` repo. 
+It is not a universal date imposed on every generated artifact. Unchanged
+independently versioned artifacts retain their existing published version
+identity and date.
 
-------
-Last edited: 2026-03-20
+The release date is also not derived from the List of Terms document, Humboldt
+document, Chronometric Age document, or Darwin Core Schemas document.
+
+### `source_repository`
+
+`source_repository` defines the default `rs.tdwg.org` source, for example:
+
+```yaml
+source_repository:
+  github_user: tdwg
+  github_branch: master
+  local_path: null
+```
+
+Command-line source options override the corresponding configured values.
+
+The selected source applies consistently to both authoritative metadata and
+DwC-A publication baselines.
+
+### Languages
+
+The configured `languages` list controls localized List of Terms,
+controlled-vocabulary, and Quick Reference Guide pages. English pages are
+written beneath `docs/<resource>/`; non-English pages are written beneath
+`docs/<locale>/<resource>/`.
+
+These current localized pages are generated artifacts. Dated historical
+Document versions are publication records and must not be treated as disposable
+build output merely because current pages are generated.
+
+### Artifact selection
+
+Machine-readable artifacts are declared under `artifacts`. Each enabled
+artifact identifies its source term populations, template and other
+artifact-specific inputs, and publication location.
+
+The current build includes independently versioned DwC-A core schemas,
+extensions, and controlled-vocabulary XML artifacts.
+
+### Documents
+
+Standard and supporting documents enabled in the configuration are generated
+under `docs/`. Their metadata come from the processed authoritative Document
+metadata in the selected `rs.tdwg.org` source state.
+
+### DwC-DP version
+
+The Darwin Core Data Package version is an explicit declaration in the build
+configuration. The build applies that declared version consistently to the
+DwC-DP profile and table schemas.
+
+The build does not discover, compare, increment, or recommend a DwC-DP package
+version from `rs.tdwg.org`.
+
+## 7.3 Command-line options
+
+### Use configured sources
+
+```bash
+python build_artifacts.py
+```
+
+This uses the source repository values declared in `build_artifacts.yaml`.
+
+### Use a local `rs.tdwg.org` checkout
+
+```bash
+python build_artifacts.py --rspath /path/to/rs.tdwg.org
+```
+
+`--rs-path` is retained as a backward-compatible alias.
+
+Supplying a local path puts the build in offline mode for `rs.tdwg.org`
+resources. The same checkout supplies both authoritative metadata and the
+canonical artifact comparison baseline.
+
+### Use a GitHub fork and branch
+
+```bash
+python build_artifacts.py --ghuser USER --branch BRANCH
+```
+
+These options override the corresponding defaults in `build_artifacts.yaml`.
+The selected GitHub `rs.tdwg.org` repository/branch supplies both metadata and
+published canonical artifact baselines.
+
+### Use another build configuration
+
+```bash
+python build_artifacts.py --config /path/to/config.yaml
+```
+
+### Removed `--permit-new-version` option
+
+The former `--permit-new-version` gate is no longer supported. Initial or
+changed independently versioned artifacts are generated deterministically from
+the selected authoritative inputs and publication baseline. Use `--dry-run` to
+inspect the complete proposed artifact state without committing generated
+artifact outputs.
+
+### Perform a dry run
+
+```bash
+python build_artifacts.py --dry-run
+```
+
+Combine this with the desired source options, for example:
+
+```bash
+python build_artifacts.py \
+  --rspath /path/to/rs.tdwg.org \
+  --dry-run
+```
+
+A dry run performs the complete staged build and validation but does not commit
+the artifact transaction to the Darwin Core working tree.
+
+## 7.4 Local and public website review
+
+Serve the generated website locally from `docs/` with:
+
+```bash
+bundle _2.3.23_ exec jekyll serve --livereload
+```
+
+and review it at `http://127.0.0.1:4000/`.
+
+For public candidate review, `.github/workflows/dev-preview.yml` builds the
+committed `docs/` tree with Jekyll and deploys it to
+`https://dwc-dev-preview.tdwg.org/` when the configured candidate branch is
+pushed.
+
+## 7.5 Term dereferencing
+
+Dereferencing Darwin Core terms to human- and machine-readable representations
+is handled by infrastructure managed by GBIF. Updated authoritative metadata
+are incorporated into the production dereferencing service as part of the
+`rs.tdwg.org` release process.

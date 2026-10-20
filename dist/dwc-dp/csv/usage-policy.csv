@@ -1,0 +1,1 @@
+usagePolicy_pk,usagePolicyID,rights,rightsIRI,rightsHolder,rightsHolder_fk,rightsHolderID,owner,owner_fk,ownerID,usageTerms,webStatement,accessRights,license,licenseLogoURL,licensingException,credit,attributionLogoURL,attributionLinkURL

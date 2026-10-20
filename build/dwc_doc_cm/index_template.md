@@ -36,7 +36,7 @@ Bibliographic citation
 
 ### 1.1 Purpose (non-normative)
 
-The **Darwin Core Conceptual Model (DwC-CM)** provides a high‑level framework that shows how [Darwin Core](https://dwc.tdwg.org) (DwC) classes relate to one another in typical biodiversity information workflows. Darwin Core formally defines a [set of terms](https://dwc.tdwg.org/list/) grouped by classes; DwC‑CM **clarifies the conceptual meaning of those classes and the relationships among them** so implementers can make consistent, interoperable design choices across different technologies. 
+The **Darwin Core Conceptual Model (DwC-CM)** provides a high‑level framework that shows how [Darwin Core](../) (DwC) classes relate to one another in typical biodiversity information workflows. Darwin Core formally defines a [set of terms](../list/) grouped by classes; DwC‑CM **clarifies the conceptual meaning of those classes and the relationships among them** so implementers can make consistent, interoperable design choices across different technologies.
 
 The DwC‑CM does not prescribe an ontology of formal predicates for the relationships between classes. Instead, it uses natural‑language labels to convey semantic intent. 
 
@@ -60,11 +60,11 @@ This guide is will also play an important role for scientists (in particular sci
 
 The following resources are closely related and are recommended reading:
 
-* [Darwin Core Quick Reference Guide](https://dwc.tdwg.org/terms/) (abridged presentation of currently recommended Darwin Core term versions)  
-* [Darwin Core List of Terms](https://dwc.tdwg.org/list/) (complete normative definitions of all Darwin Core term versions)  
-* [Darwin Core Data Package Guide](https://gbif.github.io/dwc-dp/dp/) (specification for creating Darwin Core data packages)  
-* [Darwin Core Data Package Quick Reference Guide](https://gbif.github.io/dwc-dp/qrg/) (contextual term definitions for tables and fields for a Darwin Core Data Package implementation of DwC-CM)  
-* [Darwin Core Data Package Designer](https://gbif.github.io/dwc-dp/designer/) (tool to find terms, explore and visualize relationships, and build Darwin Core Data Package descriptors)
+* [Darwin Core Quick Reference Guide](../terms/) (abridged presentation of currently recommended terms used in Darwin Core)
+* [Darwin Core List of Terms](../list/) (complete normative definitions of all Darwin Core term versions)
+* [Darwin Core Data Package Guide](../dp/) (specification for creating Darwin Core data packages)
+* [Darwin Core Data Package Quick Reference Guide](../dwc-dp/qrg/) (contextual term definitions for tables and fields for a Darwin Core Data Package implementation of DwC-CM)
+* [Darwin Core Data Package Designer](../dwc-dp/designer/) (tool to find terms, explore and visualize relationships, and build Darwin Core Data Package descriptors)
 
 ### 1.4 Status of the content of this document (normative)
 
@@ -84,7 +84,7 @@ Throughout the text, when a class is referred to in the plural, this is done by 
 
 The Darwin Core Conceptual Model is meant to facilitate understanding of established relationships between Darwin Core classes. This document relies on diagrams of these relationships with accompanying descriptions. 
 
-Throughout the diagrams in this document, classes are referred to with the labels recommended by Darwin Core in bold (e.g., **Material Entity** for the class [http://rs.tdwg.org/dwc/terms/Material Entity](http://rs.tdwg.org/dwc/terms/Material Entity)). In the narrative, classes are referred to by their names in italics, (e.g., *Material Entity*). Thus, for example, when *Organism* is used, it is meant precisely in the sense of [http://rs.tdwg.org/dwc/terms/Organism](http://rs.tdwg.org/dwc/terms/Organism).
+Throughout the diagrams in this document, classes are referred to with the labels recommended by Darwin Core in bold (e.g., **Material Entity** for the class [http://rs.tdwg.org/dwc/terms/MaterialEntity](http://rs.tdwg.org/dwc/terms/MaterialEntity)). In the narrative, classes are referred to by their names in italics, (e.g., *Material Entity*). Thus, for example, when *Organism* is used, it is meant precisely in the sense of [http://rs.tdwg.org/dwc/terms/Organism](http://rs.tdwg.org/dwc/terms/Organism).
 
 Figure 1 provides an overview of the DwC-CM. To avoid clutter, the nature of the relationships (directionality, cardinality and predicates) are omitted. This diagram also omits the vast number of possible relationships between the classes *Agent*, *Media Entity*, and *Protocol* to all of the other classes in the model. Relationships are described in detail in the thematic sections that follow the Overview. 
 
@@ -141,7 +141,7 @@ In Darwin Core, a *Survey* refers to an *Event* that is a biotic survey or inven
 
 * Complex structured *Surveys* can be expressed through an *Event* hierarchy. For example, a regional monitoring program (*Survey*) could consist of multiple repeated *Surveys* with the same or distinct *Protocols* conducted by different groups of people (*Agents*) with distinct devices (*Agents*) at specific sites (*Locations*).
 
-* Being a special type of *Event*, a *Survey* has special characteristics in addition to those due to its *Event* nature. Many of these characteristics are defined in the [list of terms](https://eco.tdwg.org/list/) for the Humboldt Extension to Darwin Core.
+* Being a special type of *Event*, a *Survey* has special characteristics in addition to those due to its *Event* nature. These characteristics can be seen organized under the [Survey class](../terms/#survey) in the Darwin Core Quick Reference Guide.
 
 * One important aspect of *Surveys* is that they often adhere to documented *Protocols*, where a *Protocol* is a method used during an action. A *Survey* may follow many different kinds of *Protocols*, including protocols for sampling and sampling effort (time spent, area covered, distance travelled, participants involved, etc).
 

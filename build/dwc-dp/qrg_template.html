@@ -1,0 +1,132 @@
+---
+layout: qrg
+title: Darwin Core Data Package Quick Reference Guide
+toc: true
+---
+
+<style>
+.class-header-wrapper {{
+  width: 100%;
+  background: #dfe5d8;
+  padding: 8px 12px;
+  box-sizing: border-box;
+  margin: 1.5rem 0 0.5rem;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}}
+.class-header-wrapper h2 {{
+  margin: 0;
+  padding: 0;
+  font-size: 1.1em;
+  color: #003c71;
+}}
+.foreign-key-summary h4 {{
+  margin-top: 20px;
+  font-size: 1.1em;
+  color: #003c71;
+}}
+.foreign-key-summary table.term-table {{
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2px;
+}}
+.foreign-key-summary table.term-table td {{
+  vertical-align: top;
+  padding: 2px 3px;
+  border-top: 1px solid #ccc;
+  font-size: 0.9em;
+}}
+.foreign-key-summary table.term-table td.label {{
+  font-weight: bold;
+  color: #003c71;
+}}
+.examples-content {{
+  color: #d63384;
+  padding: 1px 0;
+}}
+.examples-separator {{
+  border-top: 1px solid #ccc;
+  margin: 2px 0;
+}}
+</style>
+
+<h1 id="top">Darwin Core Data Package - Quick Reference Guide</h1>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>This guide is provided to assist users to understand the structure and content of Darwin Core Data Packages. The Darwin Core Data Package (DwC-DP) is an implementation of the Darwin Core Conceptual Model following the specifications in the <a href="../../dp/">Darwin Core Data Package Guide</a>.</p>
+
+<p>This Quick Reference Guide is distinct from the classic <a href="../../terms/">Darwin Core Quick Reference Guide</a> in that this guide contains information beyond the simple term definitions. It includes all the information about how to use Darwin Core in the context of a Darwin Core Data Package. That means it includes data types, value constraints, table relationship constraints and repeats these everywhere in the structure that a given term is found. This guide makes reference to numerous terms borrowed from standard vocabularies, both internal and external to TDWG, other than the Darwin Core. In general these terms are not in the classical Darwin Core reference guide nor in the Darwin Core list of terms as they are externally managed and reused in this context.</p>
+
+<p>DwC-DP is implemented using tables, most of which correspond directly to classes in Darwin Core. The page table of contents provides quick access to table definitions, and the field index within each table section provides quick access to the definitions of available fields. For an overview of the tables and their relationships, see the <a href="#model">Visual Summary</a>. Supplementary to this document is the <a href="../designer/">Darwin Core Data Package Designer</a>, which provides an interactive tool for finding fields, visualizing table relationship, and building templates for Darwin Core Data Packages from selected tables and fields.</p>
+
+{content}
+
+<h2 id="model">Visual Summary</h2>
+
+<p>The diagram below shows an overview of the DwC-DP tables (boxes) and the relationships between them (arrows). To avoid clutter, the diagram simplifies the representation of the model in a variety of ways. First, myriad join tables (tables that connect two classes in many-to-many relationships, e.g., EventMedia, MaterialMedia, OccurrenceMedia, etc.) are represented with stacks of boxes by category (e.g., under the box labeled ...Media) rather than with separate boxes for each join table. The relationships to the tables connected through the join tables are represented by single arrows (e.g., to the Media table) and the label "join to" rather than the myriad arrows that would otherwise be required. Second, the directionality of the relationships are shown with arrows, but the fields that connect the tables (keys), the cardinality of those connections (uniqueness and whether they are required), and the nature of the relationships (predicates) are not shown. The keys, cardinality and predicates are all shown in the sections for each table titled "Relationships to Other Tables".</p>
+
+<div class="my-4">
+  <img class="img-fluid border" src="../images/dwc-dp-schema-overview.png" alt="Overview of how Darwin Core Data Package tables relate to each other.">
+  <p class="small text-muted mt-1"><strong>Figure 1.</strong> Overview of the Darwin Core Data Package (DwC-DP), showing tables (classes) and their relationships to each other. To further explore the relationships between tables, see the <a href="../designer/">Darwin Core Data Package Designer</a>.</p>
+</div>
+
+<h2 id="dwca">Darwin Core Data Packages (DwC-DP) vs Darwin Core Archives (DwC-A)</h2>
+
+<p>Both Darwin Core Data Packages (DwC-DP) and Darwin Core Archives (DwC-A) are implementation schemas that use the Darwin Core Standard to share biodiversity-related data.</p>
+
+<p>DwC-DP fully supports non-checklist datasets traditionally published as DwC-As (observations and physical specimens, with extensions), but it goes far beyond, allowing richer data to be shared from these traditional datasets than was hitherto supported. Also, it empowers those who desire to share entirely new types of data (biotic surveys with inferred absence and abundance, hierarchical material entities, organism interactions, and nucleotide analyses, among others) via Darwin Core.</p>
+
+<p><strong>Table 1.</strong> Main differences between DwC-A and DwC-DP.</p>
+
+<div class="table-responsive">
+<table class="table table-bordered">
+  <thead>
+    <tr class="table-primary">
+      <th scope="col"></th>
+      <th scope="col">DwC-A</th>
+      <th scope="col">DwC-DP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Guide</th>
+      <td><a href="../../text/">Darwin Core Text Guide</a></td>
+      <td><a href="../../dp/">Darwin Core Data Package Guide</a></td>
+    </tr>
+    <tr>
+      <th scope="row">Data structure</th>
+      <td>Limited: “Star schema”, with a “Core” file and optional “Extensions”.<br><br>Relationships only <strong>from</strong> Extensions <strong>to</strong> the Core.<br><br>Flattened, “spreadsheet-like”<br><br>Defined in: <code>meta.xml</code></td>
+      <td>Relational: No “Core”, no “Extensions”, just tables.<br><br>Multiple relationships <strong>between</strong> tables (Figure 1), details in the table definitions.<br><br>Relational, “database-like”<br><br>Defined in: <code>datapackage.json</code></td>
+    </tr>
+    <tr>
+      <th scope="row">Table types</th>
+      <td>Cores: Event, Occurrence, Taxon<br><br>Extensions: Chronometric Age, DNA, Identification, Identifier, Literature Reference, Media, MeasurementsOrFact, Survey</td>
+      <td>Agent, Assertion, Bibliographic Resource, Chronometric Age, Event, Geological Context, Identification, Identifier, Material, Media, Molecular Protocol, Nucleotide Analysis, Nucleotide Sequence, Occurrence, Organism, Organism Interaction, Protocol, Provenance, Survey, Survey Target, Usage Policy</td>
+    </tr>
+    <tr>
+      <th scope="row">Semantics</th>
+      <td>No explicit semantics</td>
+      <td><a href="../../cm/">Darwin Core Conceptual Model</a></td>
+    </tr>
+    <tr>
+      <th scope="row">Dataset metadata</th>
+      <td><code>eml.xml</code></td>
+      <td><code>eml.xml</code></td>
+    </tr>
+    <tr>
+      <th scope="row">Data format</th>
+      <td>CSV, TSV</td>
+      <td>CSV, TSV</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="my-4">
+  <img class="img-fluid border" src="../images/dwca_vs_dwcdp.png" alt="Schematic comparison of Darwin Core Archives and Darwin Core Data Packages.">
+  <p class="small text-muted mt-1"><strong>Figure 2.</strong> Schematic representations of DwC-A and DwC-DP. In DwC-A, “Extension” files can only be connected to the “Core” file via the unique identifier for a row in the “Core” file. In DwC-DP, files can be connected in all of the ways shown in Figure 1.</p>
+</div>
+
+<hr>
+<p class="small text-muted">Version: {version}</p>

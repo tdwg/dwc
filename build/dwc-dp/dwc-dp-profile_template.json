@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema#",
+  "$id": "https://rs.tdwg.org/dwc-dp/1.0/dwc-dp-profile.json",
+  "title": "Darwin Core Data Package (DwC-DP) profile",
+  "version": "{{DWC_DP_VERSION}}",
+  "description": "Profile for organizing biodiversity data as a Data Package (https://specs.frictionlessdata.io/).",
+  "type": "object",
+  "$defs": {
+    "dwc-dp-resource-names": {
+      "enum": [
+        "{{DWC_DP_RESOURCE_NAMES}}"
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://specs.frictionlessdata.io/schemas/data-package.json"
+    },
+    {
+      "required": [
+        "profile"
+      ],
+      "properties": {
+        "profile": {
+          "format": "uri"
+        },
+        "resources": {
+          "items": {
+            "oneOf": [
+              {
+                "properties": {
+                  "name": {
+                    "not": {
+                      "$ref": "#/$defs/dwc-dp-resource-names"
+                    }
+                  }
+                }
+              },
+              {
+                "required": [
+                  "profile"
+                ],
+                "properties": {
+                  "profile": {
+                    "enum": [
+                      "tabular-data-resource"
+                    ]
+                  },
+                  "name": {
+                    "$ref": "#/$defs/dwc-dp-resource-names"
+                  },
+                  "schema": {
+                    "properties": {
+                      "fields": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "required": [
+                            "name",
+                            "title",
+                            "description",
+                            "type",
+                            "dcterms:isVersionOf"
+                          ],
+                          "properties": {
+                            "dcterms:isVersionOf": {
+                              "type": "string",
+                              "format": "uri",
+                              "pattern": "^https?://.+$"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

@@ -34,7 +34,7 @@ Bibliographic citation
 
 ## 1 Introduction
 
-This document provides guidelines for formatting and sharing [Darwin Core terms](http://rs.tdwg.org/dwc/terms) in _fielded text_ formats, such as one or more comma separated value (CSV) files. Data conforming to the [Simple Darwin Core](../simple/) (CSV format and having the first row include Darwin Core standard term names) MAY be shared in a single file, while a non-standard text file MAY be understood using an [XML](http://www.w3.org/XML/) metafile to describe its contents and formatting. A [Darwin Core Archive](https://ipt.gbif.org/manual/en/ipt/2.5/dwca-guide) is an example of an implementation of the Darwin Core Text recommendation.
+This document provides guidelines for formatting and sharing [Darwin Core terms](../list/) in _fielded text_ formats, such as one or more comma separated value (CSV) files. Data conforming to the [Simple Darwin Core](../simple/) (CSV format and having the first row include Darwin Core standard term names) MAY be shared in a single file, while a non-standard text file MAY be understood using an [XML](http://www.w3.org/XML/) metafile to describe its contents and formatting. A [Darwin Core Archive](https://ipt.gbif.org/manual/en/ipt/2.5/dwca-guide) is an example of an implementation of the Darwin Core Text recommendation.
 
 ![Usage](usage.png)
 
@@ -73,7 +73,7 @@ can be described with the following Darwin Core metafile (meta.xml):
     xsi:schemaLocation="http://rs.tdwg.org/dwc/text/ http://rs.tdwg.org/dwc/text/tdwg_dwc_text.xsd">
     <core rowType="http://rs.tdwg.org/dwc/xsd/simpledarwincore/SimpleDarwinRecord" ignoreHeaderLines="1">
 	<files>
-	    <location>http://data.gbif.org/download/specimens.csv</location>
+	    <location>http://example.org/download/specimens.csv</location>
     	</files>
     	<field index="0" term="http://rs.tdwg.org/dwc/terms/occurrenceID" />
     	<field index="1" term="http://rs.tdwg.org/dwc/terms/scientificName" />
@@ -119,7 +119,7 @@ Element | Description
 
 Attribute | Description | Required | Default
 --- | --- | --- | ---
-`rowType` | The row type is REQUIRED and MUST be a Unified Resource Identifier (URI) for the term identifying the class of data represented by each row. Classes MAY be defined outside the Darwin Core specification if denoted by a URI. For convenience the URIs for classes defined by the Darwin Core are: `dwc:Occurrence`: <http://rs.tdwg.org/dwc/terms/Occurrence>, `dwc:Organism`: <http://rs.tdwg.org/dwc/terms/Organism>, `dwc:MaterialEntity`: <http://rs.tdwg.org/dwc/terms/MaterialEntity>, `dwc:MaterialSample`: <http://rs.tdwg.org/dwc/terms/MaterialSample>, `dwc:Event`: <http://rs.tdwg.org/dwc/terms/Event>, `dcterms:Location`: <http://purl.org/dc/terms/Location>, `dwc:GeologicalContext`: <http://purl.org/dc/terms/GeologicalContext>, `dwc:Identification`: <http://rs.tdwg.org/dwc/terms/Identification>, `dwc:Taxon`: <http://rs.tdwg.org/dwc/terms/Taxon>, `dwc:ResourceRelationship`: <http://rs.tdwg.org/dwc/terms/ResourceRelationship>, `dwc:MeasurementOrFact`: <http://rs.tdwg.org/dwc/terms/MeasurementOrFact>, `chrono:ChronometricAge`: <http://rs.tdwg.org/chrono/terms/ChronometricAge>,  | yes |
+`rowType` | The row type is REQUIRED and MUST be a Uniform Resource Identifier (URI) for the term identifying the class of data represented by each row. Classes MAY be defined outside the Darwin Core specification if denoted by a URI. For Darwin Core classes, use the class IRIs given in the [Darwin Core List of Terms](../list/). Examples include `dwc:Occurrence`: <http://rs.tdwg.org/dwc/terms/Occurrence>, `dwc:Event`: <http://rs.tdwg.org/dwc/terms/Event>, `dcterms:Location`: <http://purl.org/dc/terms/Location>, `dwc:GeologicalContext`: <http://rs.tdwg.org/dwc/terms/GeologicalContext>, and `chrono:ChronometricAge`: <http://rs.tdwg.org/chrono/terms/ChronometricAge>. | yes |
 `fieldsTerminatedBy` | Specifies the delimiter between fields. Typical values MAY be `,` or `\t` for CSV or Tab files respectively. | no | `,`
 `linesTerminatedBy` | Specifies the row separator character. | no | `\n`
 `fieldsEnclosedBy` | Specifies the character used to enclose (mark the start and end of) each field. CSV files frequently use the double quote character (`"`), which is the default value if none is explicitly provided. Note that a comma separated value file that has commas within the content of any field MUST have an enclosing character. | no | `"`
@@ -144,7 +144,7 @@ The `<files>` element MUST contain one or more `<location>` elements, each defin
 
 Element | Description
 --- | ---
-`<location>` | Specifies the location of the `<file>` being described. The `<location>` element MUST take one of the following forms: 1) a web accessible URL such as `http://www.gbif.org/data/specimen.csv` or `ftp://ftp.gbif.org/tim/specimen.txt`, or 2) a file path relative to the location of the metafile such as `specimen.txt`, `./specimen.txt`, `./data/specimen.txt`.
+`<location>` | Specifies the location of the `<file>` being described. The `<location>` element MUST take one of the following forms: 1) a web accessible URL such as `https://example.org/specimens.csv` or `ftp://ftp.example.org/tim/specimen.txt`, or 2) a file path relative to the location of the metafile such as `specimen.txt`, `./specimen.txt`, `./data/specimen.txt`.
 
 ### 2.4 The `<field>` element
 
@@ -155,9 +155,9 @@ The `<field>` element is used to specify the location and content of data within
 Attribute | Description | Required | Default
 --- | --- | --- | ---
 `index` | Specifies the position of the column in the row. The first column has an index of 0, the second column has an index of 1, etc. If no column index is specified, the term and a default constant value for it MAY be defined for all rows. | no |
-`term` | MUST be a Unified Resource Identifier (URI) for the term represented by this `<field>`. For example, a column containing the scientific name would have `term="http://rs.tdwg.org/dwc/terms/scientificName"`. Terms outside of the Darwin Core specification, such as those from the Dublin Core Metadata Initiative, MAY be used. For example, `dcterms:modified` would be `term="http://purl.org/dc/terms/modified"`. | yes |
+`term` | MUST be a Uniform Resource Identifier (URI) for the term represented by this `<field>`. For example, a column containing the scientific name would have `term="http://rs.tdwg.org/dwc/terms/scientificName"`. Terms outside of the Darwin Core specification, such as those from the Dublin Core Metadata Initiative, MAY be used. For example, `dcterms:modified` would be `term="http://purl.org/dc/terms/modified"`. | yes |
 `default` | Specifies a value to use if one is not supplied for the `<field>` in a given row. If no index is supplied for a given `<field>`, the `<default>` MAY be used to define a constant for all rows for that `<field>`. | no |
-`vocabulary` | When present, MUST be a Unified Resource Identifier (URI) for a vocabulary that the source values for this `<field>` are based on. The URI SHOULD resolve to some machine readable definition such as SKOS or RDF, or a simple text or HTML file such as often found for ISO or RFC standards. For example <http://rs.gbif.org/vocabulary/gbif/nomenclatural_code.xml>, <http://www.ietf.org/rfc/rfc3066.txt> or <http://www.iso.org/iso/list-en1-semic-3.txt>. | no |
+`vocabulary` | When present, MUST be a Uniform Resource Identifier (URI) for a vocabulary that the source values for this `<field>` are based on. The URI SHOULD resolve to some machine readable definition such as SKOS or RDF, or a simple text or HTML file such as often found for ISO or RFC standards. For example <http://rs.gbif.org/vocabulary/gbif/nomenclatural_code.xml>, <http://www.ietf.org/rfc/rfc3066.txt> or <http://www.iso.org/iso/list-en1-semic-3.txt>. | no |
 
 ## 3 Implementation guide (non-normative)
 A [Darwin Core Archive](https://ipt.gbif.org/manual/en/ipt/2.5/dwca-guide) is an example of an implementation of the Darwin Core Text recommendation.

@@ -91,5 +91,30 @@
   {
     "text": "GitHub",
     "href": "https://github.com/tdwg/dwc"
+  },
+  {
+    "text": "文A",
+    "menu": [
+      {
+        "text": "English",
+        "href": "/"
+      },
+      {
+        "text": "Čeština",
+        "href": "/cs/"
+      },
+      {
+        "text": "Español",
+        "href": "/es/"
+      },
+      {
+        "text": "Français",
+        "href": "/fr/"
+      },
+      {
+        "text": "Русский",
+        "href": "/ru/"
+      }
+    ]
   }
 ]
